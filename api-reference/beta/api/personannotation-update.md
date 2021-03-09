@@ -5,17 +5,17 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1685d6ef406af3adb1bb73f1974f3ddcbe45e97b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d9c6503c3aeb5fb52ad0982eabfc29729cc23e6
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969394"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576055"
 ---
 # <a name="update-personannotation"></a>更新 personAnnotation
 命名空间：microsoft.graph
 
-更新用户的[配置文件](../resources/profile.md)中的[personAnnotation](../resources/personannotation.md)对象的属性。
+更新用户配置文件 [中的 personAnnotation](../resources/personannotation.md) 对象 [的属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,9 +23,9 @@ ms.locfileid: "47969394"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,18 +48,18 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-下表显示了可以在用户[配置文件](../resources/profile.md)中的现有[personAnnotation](../resources/personannotation.md)对象内进行更新的属性。
+下表显示了在用户配置文件中的现有 [personAnnotation](../resources/personannotation.md) 对象中可以更新 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|介绍|[itemBody](../resources/itembody.md)|包含注释本身的详细信息。|
-|displayName|String|包含注解的友好名称。|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|detail|[itemBody](../resources/itembody.md)|包含注释本身的详细信息。|
+|displayName|字符串|包含注释的友好名称。|
+|推断|[inferenceData](../resources/inferencedata.md)|包含实体是否由创建或修改应用程序推断的推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [personAnnotation](../resources/personannotation.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [personAnnotation](../resources/personannotation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -71,7 +71,7 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/notes/{id}
 Content-Type: application/json
 Content-length: 413
 

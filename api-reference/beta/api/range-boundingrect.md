@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b8cb44cb502e94505630c6d3f8fc2f49a1bad6e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec947fe34febfd2fc664e489706d99044f2a6896
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017267"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576020"
 ---
 # <a name="range-boundingrect"></a>Range:BoundingRect
 
@@ -31,9 +31,12 @@ ms.locfileid: "48017267"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/BoundingRect
-GET /workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
-GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
+GET /me/drive/items/{id}/workbook/names/{name}/range/BoundingRect
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/BoundingRect
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 
 ```
 ## <a name="request-headers"></a>请求标头

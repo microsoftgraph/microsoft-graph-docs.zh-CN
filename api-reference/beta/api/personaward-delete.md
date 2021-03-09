@@ -1,22 +1,22 @@
 ---
 title: 删除 personAward
-description: 删除一个 personAward 对象。
+description: 删除 personAward 对象。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ec8358fb1015e2816818b28a887a6e7a8c2f9a48
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83f1c3ee61d20edd25af9b66e40b91b62551efde
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969345"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576027"
 ---
 # <a name="delete-personaward"></a>删除 personAward
 
 命名空间：microsoft.graph
 
-从用户的[配置文件](../resources/profile.md)中删除[personAward](../resources/personaward.md)对象。
+从 [用户配置文件中删除 personAward](../resources/personaward.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,8 +24,8 @@ ms.locfileid: "47969345"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -61,7 +61,7 @@ DELETE /users/{id | userPrincipalName}/profile/awards/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwardId}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
