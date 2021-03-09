@@ -5,34 +5,34 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 869933a08580fdae4d55258dfd439fd10ff6015c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: fb2aa01474a5c5d29ed1c87978c2d2aacae9ac92
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176615"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574893"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="c808d-103">call： redirect</span><span class="sxs-lookup"><span data-stu-id="c808d-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="09114-103">call： redirect</span><span class="sxs-lookup"><span data-stu-id="09114-103">call: redirect</span></span>
 
-<span data-ttu-id="c808d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c808d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="09114-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="09114-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c808d-105">重定向尚未应答[或拒绝的传入](./call-answer.md)[呼叫。](./call-reject.md)</span><span class="sxs-lookup"><span data-stu-id="c808d-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="c808d-106">呼叫的术语"重定向"和"转发"可以互换使用。</span><span class="sxs-lookup"><span data-stu-id="c808d-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
+<span data-ttu-id="09114-105">重定向尚未应答[或拒绝的传入](./call-answer.md)[呼叫。](./call-reject.md)</span><span class="sxs-lookup"><span data-stu-id="09114-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="09114-106">呼叫的术语"重定向"和"转发"可以互换使用。</span><span class="sxs-lookup"><span data-stu-id="09114-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
 
-<span data-ttu-id="c808d-107">机器人预期在呼叫退出之前重定向呼叫。当前超时值为 15 秒。</span><span class="sxs-lookup"><span data-stu-id="c808d-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
+<span data-ttu-id="09114-107">机器人预期在呼叫退出之前重定向呼叫。当前超时值为 15 秒。</span><span class="sxs-lookup"><span data-stu-id="09114-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c808d-108">权限</span><span class="sxs-lookup"><span data-stu-id="c808d-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="09114-108">权限</span><span class="sxs-lookup"><span data-stu-id="09114-108">Permissions</span></span>
 
-<span data-ttu-id="c808d-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c808d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="09114-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="09114-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c808d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c808d-111">Permission type</span></span> | <span data-ttu-id="c808d-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c808d-112">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="09114-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="09114-111">Permission type</span></span> | <span data-ttu-id="09114-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="09114-112">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="c808d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c808d-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="c808d-114">不支持</span><span class="sxs-lookup"><span data-stu-id="c808d-114">Not Supported</span></span>                |
-| <span data-ttu-id="c808d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c808d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c808d-116">不支持</span><span class="sxs-lookup"><span data-stu-id="c808d-116">Not Supported</span></span>                |
-| <span data-ttu-id="c808d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="c808d-117">Application</span></span>     | <span data-ttu-id="c808d-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="c808d-118">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="09114-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="09114-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="09114-114">不支持</span><span class="sxs-lookup"><span data-stu-id="09114-114">Not Supported</span></span>                |
+| <span data-ttu-id="09114-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="09114-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="09114-116">不支持</span><span class="sxs-lookup"><span data-stu-id="09114-116">Not Supported</span></span>                |
+| <span data-ttu-id="09114-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="09114-117">Application</span></span>     | <span data-ttu-id="09114-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="09114-118">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="c808d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c808d-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="09114-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="09114-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,38 +40,38 @@ ms.locfileid: "50176615"
 POST /app/calls/{id}/redirect
 POST /communications/calls/{id}/redirect
 ```
-> <span data-ttu-id="c808d-120">**注意：**`/app` 路径已弃用。</span><span class="sxs-lookup"><span data-stu-id="c808d-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="c808d-121">今后将使用 `/communications` 路径。</span><span class="sxs-lookup"><span data-stu-id="c808d-121">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="09114-120">**注意：**`/app` 路径已弃用。</span><span class="sxs-lookup"><span data-stu-id="09114-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="09114-121">今后将使用 `/communications` 路径。</span><span class="sxs-lookup"><span data-stu-id="09114-121">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c808d-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="c808d-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="09114-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="09114-122">Request headers</span></span>
 
-| <span data-ttu-id="c808d-123">名称</span><span class="sxs-lookup"><span data-stu-id="c808d-123">Name</span></span>          | <span data-ttu-id="c808d-124">说明</span><span class="sxs-lookup"><span data-stu-id="c808d-124">Description</span></span>               |
+| <span data-ttu-id="09114-123">名称</span><span class="sxs-lookup"><span data-stu-id="09114-123">Name</span></span>          | <span data-ttu-id="09114-124">说明</span><span class="sxs-lookup"><span data-stu-id="09114-124">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="c808d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="c808d-125">Authorization</span></span> | <span data-ttu-id="c808d-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c808d-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="09114-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="09114-125">Authorization</span></span> | <span data-ttu-id="09114-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="09114-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c808d-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="c808d-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="09114-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="09114-128">Request body</span></span>
 
-<span data-ttu-id="c808d-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="c808d-129">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="09114-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="09114-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="c808d-130">参数</span><span class="sxs-lookup"><span data-stu-id="c808d-130">Parameter</span></span>      | <span data-ttu-id="c808d-131">类型</span><span class="sxs-lookup"><span data-stu-id="c808d-131">Type</span></span>    |<span data-ttu-id="c808d-132">说明</span><span class="sxs-lookup"><span data-stu-id="c808d-132">Description</span></span>|
+| <span data-ttu-id="09114-130">参数</span><span class="sxs-lookup"><span data-stu-id="09114-130">Parameter</span></span>      | <span data-ttu-id="09114-131">类型</span><span class="sxs-lookup"><span data-stu-id="09114-131">Type</span></span>    |<span data-ttu-id="09114-132">说明</span><span class="sxs-lookup"><span data-stu-id="09114-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c808d-133">targets</span><span class="sxs-lookup"><span data-stu-id="c808d-133">targets</span></span>|<span data-ttu-id="c808d-134">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合</span><span class="sxs-lookup"><span data-stu-id="c808d-134">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="c808d-135">重定向操作的目标参与者。</span><span class="sxs-lookup"><span data-stu-id="c808d-135">The target participants of the redirect operation.</span></span> <span data-ttu-id="c808d-136">如果指定了多个目标，则这是一个模拟调用。</span><span class="sxs-lookup"><span data-stu-id="c808d-136">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="c808d-137">这意味着将同时设定所有目标范围，并且只有第一个选取的目标将连接。</span><span class="sxs-lookup"><span data-stu-id="c808d-137">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="c808d-138">我们最多支持 25 个目标进行模拟。</span><span class="sxs-lookup"><span data-stu-id="c808d-138">We support up to 25 targets for simulring.</span></span>
-|<span data-ttu-id="c808d-139">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="c808d-139">targetDisposition</span></span>|<span data-ttu-id="c808d-140">String</span><span class="sxs-lookup"><span data-stu-id="c808d-140">String</span></span>|<span data-ttu-id="c808d-141"> (弃) 可能的值是： `default` ， `simultaneousRing` 。 `forward`</span><span class="sxs-lookup"><span data-stu-id="c808d-141">(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`.</span></span> <span data-ttu-id="c808d-142">此参数已弃用，我们将根据提供的目标数自动标识它是一个转发呼叫还是模拟呼叫。</span><span class="sxs-lookup"><span data-stu-id="c808d-142">This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.</span></span>|
-|<span data-ttu-id="c808d-143">timeout</span><span class="sxs-lookup"><span data-stu-id="c808d-143">timeout</span></span>|<span data-ttu-id="c808d-144">Int32</span><span class="sxs-lookup"><span data-stu-id="c808d-144">Int32</span></span>|<span data-ttu-id="c808d-145">对于重定向 (超时) 秒数。</span><span class="sxs-lookup"><span data-stu-id="c808d-145">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="c808d-146">超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。</span><span class="sxs-lookup"><span data-stu-id="c808d-146">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="c808d-147">对于一个目标，默认超时值为 55 秒，而多个目标的默认超时值为 60 (可能会) 。</span><span class="sxs-lookup"><span data-stu-id="c808d-147">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
-|<span data-ttu-id="c808d-148">maskCallee</span><span class="sxs-lookup"><span data-stu-id="c808d-148">maskCallee</span></span>|<span data-ttu-id="c808d-149">布尔值</span><span class="sxs-lookup"><span data-stu-id="c808d-149">Boolean</span></span>|<span data-ttu-id="c808d-150">指示是否向呼叫者隐藏被叫方。</span><span class="sxs-lookup"><span data-stu-id="c808d-150">Indicates whether the callee is to be hidden from the caller.</span></span> <span data-ttu-id="c808d-151">如果为 true，则被叫方标识为机器人标识。</span><span class="sxs-lookup"><span data-stu-id="c808d-151">If true, then the callee identity is the bot identity.</span></span> <span data-ttu-id="c808d-152">默认值：false。</span><span class="sxs-lookup"><span data-stu-id="c808d-152">Default: false.</span></span>|
-|<span data-ttu-id="c808d-153">maskCaller</span><span class="sxs-lookup"><span data-stu-id="c808d-153">maskCaller</span></span>|<span data-ttu-id="c808d-154">布尔值</span><span class="sxs-lookup"><span data-stu-id="c808d-154">Boolean</span></span>|<span data-ttu-id="c808d-155">指示是否对被叫方隐藏呼叫者。</span><span class="sxs-lookup"><span data-stu-id="c808d-155">Indicates whether the caller is to be hidden from the callee.</span></span> <span data-ttu-id="c808d-156">如果为 true，则呼叫者标识为机器人标识。</span><span class="sxs-lookup"><span data-stu-id="c808d-156">If true, then the caller identity is the bot identity.</span></span> <span data-ttu-id="c808d-157">默认值：false。</span><span class="sxs-lookup"><span data-stu-id="c808d-157">Default: false.</span></span>|
-|<span data-ttu-id="c808d-158">callbackUri</span><span class="sxs-lookup"><span data-stu-id="c808d-158">callbackUri</span></span>|<span data-ttu-id="c808d-159">String</span><span class="sxs-lookup"><span data-stu-id="c808d-159">String</span></span>|<span data-ttu-id="c808d-160">这允许机器人为当前调用提供特定的回调 URI，以接收以后的通知。</span><span class="sxs-lookup"><span data-stu-id="c808d-160">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="c808d-161">如果尚未设置此属性，将改为使用自动程序全局回调 URI。</span><span class="sxs-lookup"><span data-stu-id="c808d-161">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="c808d-162">这必须是 `https` 。</span><span class="sxs-lookup"><span data-stu-id="c808d-162">This must be `https`.</span></span>|
+|<span data-ttu-id="09114-133">targets</span><span class="sxs-lookup"><span data-stu-id="09114-133">targets</span></span>|<span data-ttu-id="09114-134">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合</span><span class="sxs-lookup"><span data-stu-id="09114-134">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="09114-135">重定向操作的目标参与者。</span><span class="sxs-lookup"><span data-stu-id="09114-135">The target participants of the redirect operation.</span></span> <span data-ttu-id="09114-136">如果指定了多个目标，则这是一个模拟调用。</span><span class="sxs-lookup"><span data-stu-id="09114-136">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="09114-137">这意味着所有目标将同时设定范围，并且仅连接第一个选取的目标。</span><span class="sxs-lookup"><span data-stu-id="09114-137">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="09114-138">我们最多支持 25 个目标进行模拟。</span><span class="sxs-lookup"><span data-stu-id="09114-138">We support up to 25 targets for simulring.</span></span>
+|<span data-ttu-id="09114-139">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="09114-139">targetDisposition</span></span>|<span data-ttu-id="09114-140">字符串</span><span class="sxs-lookup"><span data-stu-id="09114-140">String</span></span>|<span data-ttu-id="09114-141"> (弃) 可能的值是： `default` `simultaneousRing` ， `forward` 。</span><span class="sxs-lookup"><span data-stu-id="09114-141">(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`.</span></span> <span data-ttu-id="09114-142">此参数已弃用，我们将从提供的目标数自动标识它是一个转发呼叫还是模拟呼叫。</span><span class="sxs-lookup"><span data-stu-id="09114-142">This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.</span></span>|
+|<span data-ttu-id="09114-143">timeout</span><span class="sxs-lookup"><span data-stu-id="09114-143">timeout</span></span>|<span data-ttu-id="09114-144">Int32</span><span class="sxs-lookup"><span data-stu-id="09114-144">Int32</span></span>|<span data-ttu-id="09114-145">对于重定向 (超时) 秒数。</span><span class="sxs-lookup"><span data-stu-id="09114-145">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="09114-146">超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。</span><span class="sxs-lookup"><span data-stu-id="09114-146">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="09114-147">一个目标的默认超时值为 55 秒，而多个目标的默认超时值为 60 (可能会) 。</span><span class="sxs-lookup"><span data-stu-id="09114-147">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
+|<span data-ttu-id="09114-148">maskCallee</span><span class="sxs-lookup"><span data-stu-id="09114-148">maskCallee</span></span>|<span data-ttu-id="09114-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="09114-149">Boolean</span></span>|<span data-ttu-id="09114-150">指示是否向呼叫者隐藏被叫方。</span><span class="sxs-lookup"><span data-stu-id="09114-150">Indicates whether the callee is to be hidden from the caller.</span></span> <span data-ttu-id="09114-151">如果为 true，则被叫方标识为机器人标识。</span><span class="sxs-lookup"><span data-stu-id="09114-151">If true, then the callee identity is the bot identity.</span></span> <span data-ttu-id="09114-152">默认值：false。</span><span class="sxs-lookup"><span data-stu-id="09114-152">Default: false.</span></span>|
+|<span data-ttu-id="09114-153">maskCaller</span><span class="sxs-lookup"><span data-stu-id="09114-153">maskCaller</span></span>|<span data-ttu-id="09114-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="09114-154">Boolean</span></span>|<span data-ttu-id="09114-155">指示是否向被叫方隐藏呼叫者。</span><span class="sxs-lookup"><span data-stu-id="09114-155">Indicates whether the caller is to be hidden from the callee.</span></span> <span data-ttu-id="09114-156">如果为 true，则呼叫者标识为机器人标识。</span><span class="sxs-lookup"><span data-stu-id="09114-156">If true, then the caller identity is the bot identity.</span></span> <span data-ttu-id="09114-157">默认值：false。</span><span class="sxs-lookup"><span data-stu-id="09114-157">Default: false.</span></span>|
+|<span data-ttu-id="09114-158">callbackUri</span><span class="sxs-lookup"><span data-stu-id="09114-158">callbackUri</span></span>|<span data-ttu-id="09114-159">字符串</span><span class="sxs-lookup"><span data-stu-id="09114-159">String</span></span>|<span data-ttu-id="09114-160">这允许机器人为当前调用提供特定的回调 URI，以接收以后的通知。</span><span class="sxs-lookup"><span data-stu-id="09114-160">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="09114-161">如果尚未设置此属性，将改为使用自动程序全局回调 URI。</span><span class="sxs-lookup"><span data-stu-id="09114-161">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="09114-162">这必须是 `https` 。</span><span class="sxs-lookup"><span data-stu-id="09114-162">This must be `https`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c808d-163">响应</span><span class="sxs-lookup"><span data-stu-id="c808d-163">Response</span></span>
-<span data-ttu-id="c808d-164">如果成功，此方法返回 `202 Accepted` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="c808d-164">If successful, this method returns a `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="09114-163">响应</span><span class="sxs-lookup"><span data-stu-id="09114-163">Response</span></span>
+<span data-ttu-id="09114-164">如果成功，此方法返回 `202 Accepted` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="09114-164">If successful, this method returns a `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c808d-165">示例</span><span class="sxs-lookup"><span data-stu-id="c808d-165">Examples</span></span>
-<span data-ttu-id="c808d-166">这些示例将介绍传入呼叫通知的工作流以及如何重定向该呼叫。</span><span class="sxs-lookup"><span data-stu-id="c808d-166">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
+## <a name="examples"></a><span data-ttu-id="09114-165">示例</span><span class="sxs-lookup"><span data-stu-id="09114-165">Examples</span></span>
+<span data-ttu-id="09114-166">这些示例将介绍传入呼叫通知的工作流以及如何重定向该呼叫。</span><span class="sxs-lookup"><span data-stu-id="09114-166">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
 
-> <span data-ttu-id="c808d-167">**注意：** 为了可读性，可能会缩短此处所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c808d-167">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="c808d-168">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c808d-168">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="09114-167">**注意：** 为了可读性，可能会缩短此处所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="09114-167">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="09114-168">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="09114-168">All the properties will be returned from an actual call.</span></span>
 
-### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="c808d-169">示例 1：将呼叫转发到目标</span><span class="sxs-lookup"><span data-stu-id="c808d-169">Example 1: Forward a call to a target</span></span>
+### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="09114-169">示例 1：将呼叫转发到目标</span><span class="sxs-lookup"><span data-stu-id="09114-169">Example 1: Forward a call to a target</span></span>
 
-#### <a name="notification---incoming"></a><span data-ttu-id="c808d-170">通知 - 传入</span><span class="sxs-lookup"><span data-stu-id="c808d-170">Notification - incoming</span></span>
+#### <a name="notification---incoming"></a><span data-ttu-id="09114-170">通知 - 传入</span><span class="sxs-lookup"><span data-stu-id="09114-170">Notification - incoming</span></span>
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -123,9 +123,9 @@ POST /communications/calls/{id}/redirect
 }
 ```
 
-#### <a name="request"></a><span data-ttu-id="c808d-171">请求</span><span class="sxs-lookup"><span data-stu-id="c808d-171">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="09114-171">请求</span><span class="sxs-lookup"><span data-stu-id="09114-171">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c808d-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="c808d-172">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="09114-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="09114-172">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
@@ -151,25 +151,25 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c808d-173">C#</span><span class="sxs-lookup"><span data-stu-id="c808d-173">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="09114-173">C#</span><span class="sxs-lookup"><span data-stu-id="09114-173">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c808d-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c808d-174">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="09114-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="09114-174">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c808d-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c808d-175">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="09114-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="09114-175">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c808d-176">Java</span><span class="sxs-lookup"><span data-stu-id="c808d-176">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="09114-176">Java</span><span class="sxs-lookup"><span data-stu-id="09114-176">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="c808d-177">响应</span><span class="sxs-lookup"><span data-stu-id="c808d-177">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="09114-177">响应</span><span class="sxs-lookup"><span data-stu-id="09114-177">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -178,7 +178,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="notification---terminated"></a><span data-ttu-id="c808d-178">Notification - 已终止</span><span class="sxs-lookup"><span data-stu-id="c808d-178">Notification - terminated</span></span>
+#### <a name="notification---terminated"></a><span data-ttu-id="09114-178">通知 - 已终止</span><span class="sxs-lookup"><span data-stu-id="09114-178">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -240,9 +240,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="c808d-179">示例 2：将呼叫转发到同时响铃的多个目标</span><span class="sxs-lookup"><span data-stu-id="c808d-179">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="09114-179">示例 2：将呼叫转发到同时响铃的多个目标</span><span class="sxs-lookup"><span data-stu-id="09114-179">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
 
-#### <a name="notification---incoming"></a><span data-ttu-id="c808d-180">通知 - 传入</span><span class="sxs-lookup"><span data-stu-id="c808d-180">Notification - incoming</span></span>
+#### <a name="notification---incoming"></a><span data-ttu-id="09114-180">通知 - 传入</span><span class="sxs-lookup"><span data-stu-id="09114-180">Notification - incoming</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="request"></a><span data-ttu-id="c808d-181">请求</span><span class="sxs-lookup"><span data-stu-id="c808d-181">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="09114-181">请求</span><span class="sxs-lookup"><span data-stu-id="09114-181">Request</span></span>
 
 <!-- {
   "blockType": "ignored", 
@@ -347,7 +347,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="c808d-182">响应</span><span class="sxs-lookup"><span data-stu-id="c808d-182">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="09114-182">响应</span><span class="sxs-lookup"><span data-stu-id="09114-182">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -358,7 +358,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---terminated"></a><span data-ttu-id="c808d-183">Notification - 已终止</span><span class="sxs-lookup"><span data-stu-id="c808d-183">Notification - terminated</span></span>
+#### <a name="notification---terminated"></a><span data-ttu-id="09114-183">通知 - 已终止</span><span class="sxs-lookup"><span data-stu-id="09114-183">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -415,32 +415,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-forward-a-call-to-a-pstn-number"></a><span data-ttu-id="c808d-184">示例 3：将呼叫转发到 PSTN 号码</span><span class="sxs-lookup"><span data-stu-id="c808d-184">Example 3: Forward a call to a PSTN number</span></span>
+### <a name="example-3-forward-a-call-to-a-pstn-number"></a><span data-ttu-id="09114-184">示例 3：将呼叫转发到 PSTN 号码</span><span class="sxs-lookup"><span data-stu-id="09114-184">Example 3: Forward a call to a PSTN number</span></span>
 
-<span data-ttu-id="c808d-185">此呼叫需要分配有 PSTN 号码的应用程序实例。</span><span class="sxs-lookup"><span data-stu-id="c808d-185">This call requires an application instance with a PSTN number assigned.</span></span>
+<span data-ttu-id="09114-185">此呼叫需要分配有 PSTN 号码的应用程序实例。</span><span class="sxs-lookup"><span data-stu-id="09114-185">This call requires an application instance with a PSTN number assigned.</span></span> <span data-ttu-id="09114-186">有关详细信息，请参阅 [为自动程序分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。</span><span class="sxs-lookup"><span data-stu-id="09114-186">For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).</span></span>
 
-#### <a name="step-1-create-application-instance"></a><span data-ttu-id="c808d-186">步骤 1：创建应用程序实例</span><span class="sxs-lookup"><span data-stu-id="c808d-186">Step 1: Create application instance</span></span>
-<span data-ttu-id="c808d-187">使用租户管理员凭据，在租户远程 PowerShell 上调用以下 cmdlet 以创建应用程序实例。</span><span class="sxs-lookup"><span data-stu-id="c808d-187">Using tenant admin credentials, call the following cmdlets on the tenant remote PowerShell to create the application instance.</span></span> <span data-ttu-id="c808d-188">有关详细信息，请参阅 [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) 和 [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)。</span><span class="sxs-lookup"><span data-stu-id="c808d-188">For more information, see [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).</span></span>
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### <a name="step-2-assign-microsoft-365-licenses"></a><span data-ttu-id="c808d-189">步骤 2：分配 Microsoft 365 许可证</span><span class="sxs-lookup"><span data-stu-id="c808d-189">Step 2: Assign Microsoft 365 licenses</span></span>
-1. <span data-ttu-id="c808d-190">使用租户管理员凭据登录并转到"用户 https://admin.microsoft.com/ **->活动用户"** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="c808d-190">Use tenant admin credentials to sign in to https://admin.microsoft.com/ and go to the **Users -> Active users** tab.</span></span>
-2. <span data-ttu-id="c808d-191">选择应用程序实例，分配 **Microsoft 365 国内和国际** 通话套餐和 **Microsoft 365 电话系统 - 虚拟用户** 许可证，然后单击"**保存更改"。**</span><span class="sxs-lookup"><span data-stu-id="c808d-191">Select the application instance, assign **Microsoft 365 Domestic and International Calling Plan** and **Microsoft 365 Phone System - Virtual User** licenses, and click **Save changes**.</span></span> <span data-ttu-id="c808d-192">如果所需的许可证在租户中不可用，可以从"计费-> **购买服务"** 选项卡获取它们。</span><span class="sxs-lookup"><span data-stu-id="c808d-192">If the required licenses are not available in the tenant, you can get them from the **Billing -> Purchase services** tab.</span></span>
-#### <a name="step-3-acquire-pstn-number"></a><span data-ttu-id="c808d-193">步骤 3：获取 PSTN 号码</span><span class="sxs-lookup"><span data-stu-id="c808d-193">Step 3: Acquire PSTN number</span></span>
-1. <span data-ttu-id="c808d-194">使用租户管理员凭据登录并单击左侧面板上的"旧版 https://admin.teams.microsoft.com/ 门户"选项卡。 </span><span class="sxs-lookup"><span data-stu-id="c808d-194">Use tenant admin credentials to sign in to https://admin.teams.microsoft.com/ and click the **Legacy portal** tab on the left panel.</span></span>
-2. <span data-ttu-id="c808d-195">In the new page， go to the **voice -> phone numbers** tab.</span><span class="sxs-lookup"><span data-stu-id="c808d-195">In the new page, go to the **voice -> phone numbers** tab.</span></span>
-3. <span data-ttu-id="c808d-196">单击 **+** 该按钮， **选择"新建服务号码**"，然后转到 **"添加新服务号码"** 页。</span><span class="sxs-lookup"><span data-stu-id="c808d-196">Click the **+** button, select **New Service Numbers**, and go to the **Add new service numbers** page.</span></span>
-4. <span data-ttu-id="c808d-197">选择 **"国家/地区\*\*\*\*"、"省/市/自治区/** 地区"、"**城市**"和"输入 **数量**"，然后单击 **"添加**"进行搜索。</span><span class="sxs-lookup"><span data-stu-id="c808d-197">Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search.</span></span> <span data-ttu-id="c808d-198">单击 **获取号码**。</span><span class="sxs-lookup"><span data-stu-id="c808d-198">Click **acquire numbers**.</span></span> <span data-ttu-id="c808d-199">新获取的号码会显示在 **电话号码选项卡** 上。</span><span class="sxs-lookup"><span data-stu-id="c808d-199">The newly acquired number will show on  the **phone numbers** tab.</span></span>
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a><span data-ttu-id="c808d-200">步骤 4：将 PSTN 号码分配给应用程序实例</span><span class="sxs-lookup"><span data-stu-id="c808d-200">Step 4: Assign PSTN number to application instance</span></span>
-<span data-ttu-id="c808d-201">使用租户管理员凭据，在租户远程 PowerShell 上调用以下 cmdlet，将 PSTN 号码分配给应用程序实例。</span><span class="sxs-lookup"><span data-stu-id="c808d-201">With tenant admin credentials, call the following cmdlets on the tenant remote PowerShell to assign the PSTN number to the application instance.</span></span> <span data-ttu-id="c808d-202">有关详细信息，请参阅 [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) 和 [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)。</span><span class="sxs-lookup"><span data-stu-id="c808d-202">For more information, see [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).</span></span>
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-
-#### <a name="notification---incoming"></a><span data-ttu-id="c808d-203">通知 - 传入</span><span class="sxs-lookup"><span data-stu-id="c808d-203">Notification - incoming</span></span>
+#### <a name="notification---incoming"></a><span data-ttu-id="09114-187">通知 - 传入</span><span class="sxs-lookup"><span data-stu-id="09114-187">Notification - incoming</span></span>
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -497,7 +476,7 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 }
 ```
 
-#### <a name="request"></a><span data-ttu-id="c808d-204">请求</span><span class="sxs-lookup"><span data-stu-id="c808d-204">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="09114-188">请求</span><span class="sxs-lookup"><span data-stu-id="09114-188">Request</span></span>
 
 <!-- {
   "blockType": "request", 
@@ -523,7 +502,7 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-#### <a name="response"></a><span data-ttu-id="c808d-205">响应</span><span class="sxs-lookup"><span data-stu-id="c808d-205">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="09114-189">响应</span><span class="sxs-lookup"><span data-stu-id="09114-189">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -532,7 +511,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="notification---terminated"></a><span data-ttu-id="c808d-206">Notification - 已终止</span><span class="sxs-lookup"><span data-stu-id="c808d-206">Notification - terminated</span></span>
+#### <a name="notification---terminated"></a><span data-ttu-id="09114-190">通知 - 已终止</span><span class="sxs-lookup"><span data-stu-id="09114-190">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 

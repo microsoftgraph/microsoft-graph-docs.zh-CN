@@ -5,52 +5,54 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 24e37908225c2fbb3606f87e1fe4787e79f9332c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d2d7d83fbadd9f86d261ddf918bc4d7bb59f4e33
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402707"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574032"
 ---
-# <a name="get-icon"></a><span data-ttu-id="72590-103">获取图标</span><span class="sxs-lookup"><span data-stu-id="72590-103">Get Icon</span></span>
+# <a name="get-icon"></a><span data-ttu-id="cc2b3-103">获取图标</span><span class="sxs-lookup"><span data-stu-id="cc2b3-103">Get Icon</span></span>
 
-<span data-ttu-id="72590-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="72590-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cc2b3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cc2b3-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="72590-105">检索 icon 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="72590-105">Retrieve the properties and relationships of icon object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="72590-106">权限</span><span class="sxs-lookup"><span data-stu-id="72590-106">Permissions</span></span>
-<span data-ttu-id="72590-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="72590-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cc2b3-105">检索 icon 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="cc2b3-105">Retrieve the properties and relationships of icon object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="cc2b3-106">权限</span><span class="sxs-lookup"><span data-stu-id="cc2b3-106">Permissions</span></span>
+<span data-ttu-id="cc2b3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cc2b3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="72590-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="72590-109">Permission type</span></span>      | <span data-ttu-id="72590-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="72590-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cc2b3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="cc2b3-109">Permission type</span></span>      | <span data-ttu-id="cc2b3-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cc2b3-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="72590-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="72590-111">Delegated (work or school account)</span></span> | <span data-ttu-id="72590-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="72590-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="72590-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="72590-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="72590-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="72590-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="72590-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="72590-115">Application</span></span> | <span data-ttu-id="72590-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="72590-116">Not supported.</span></span> |
+|<span data-ttu-id="cc2b3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cc2b3-111">Delegated (work or school account)</span></span> | <span data-ttu-id="cc2b3-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cc2b3-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="cc2b3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cc2b3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc2b3-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cc2b3-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="cc2b3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="cc2b3-115">Application</span></span> | <span data-ttu-id="cc2b3-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="cc2b3-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="72590-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="72590-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cc2b3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cc2b3-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/sort/fields/icon
-GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+GET /me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/fields/icon
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="72590-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="72590-118">Optional query parameters</span></span>
-<span data-ttu-id="72590-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="72590-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cc2b3-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="cc2b3-118">Optional query parameters</span></span>
+<span data-ttu-id="cc2b3-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="cc2b3-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="72590-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="72590-120">Request headers</span></span>
-| <span data-ttu-id="72590-121">名称</span><span class="sxs-lookup"><span data-stu-id="72590-121">Name</span></span>      |<span data-ttu-id="72590-122">说明</span><span class="sxs-lookup"><span data-stu-id="72590-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cc2b3-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="cc2b3-120">Request headers</span></span>
+| <span data-ttu-id="cc2b3-121">名称</span><span class="sxs-lookup"><span data-stu-id="cc2b3-121">Name</span></span>      |<span data-ttu-id="cc2b3-122">说明</span><span class="sxs-lookup"><span data-stu-id="cc2b3-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="72590-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="72590-123">Authorization</span></span>  | <span data-ttu-id="72590-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="72590-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cc2b3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cc2b3-123">Authorization</span></span>  | <span data-ttu-id="cc2b3-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cc2b3-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="72590-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="72590-126">Request body</span></span>
-<span data-ttu-id="72590-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="72590-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cc2b3-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="cc2b3-126">Request body</span></span>
+<span data-ttu-id="cc2b3-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="cc2b3-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="72590-128">响应</span><span class="sxs-lookup"><span data-stu-id="72590-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cc2b3-128">响应</span><span class="sxs-lookup"><span data-stu-id="cc2b3-128">Response</span></span>
 
-<span data-ttu-id="72590-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookIcon](../resources/workbookicon.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="72590-129">If successful, this method returns a `200 OK` response code and [workbookIcon](../resources/workbookicon.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="72590-130">示例</span><span class="sxs-lookup"><span data-stu-id="72590-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="72590-131">请求</span><span class="sxs-lookup"><span data-stu-id="72590-131">Request</span></span>
-<span data-ttu-id="72590-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="72590-132">Here is an example of the request.</span></span>
+<span data-ttu-id="cc2b3-129">如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [workbookIcon](../resources/workbookicon.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="cc2b3-129">If successful, this method returns a `200 OK` response code and [workbookIcon](../resources/workbookicon.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="cc2b3-130">示例</span><span class="sxs-lookup"><span data-stu-id="cc2b3-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cc2b3-131">请求</span><span class="sxs-lookup"><span data-stu-id="cc2b3-131">Request</span></span>
+<span data-ttu-id="cc2b3-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cc2b3-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_icon"
@@ -58,8 +60,8 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 ```
-##### <a name="response"></a><span data-ttu-id="72590-133">响应</span><span class="sxs-lookup"><span data-stu-id="72590-133">Response</span></span>
-<span data-ttu-id="72590-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="72590-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cc2b3-133">响应</span><span class="sxs-lookup"><span data-stu-id="cc2b3-133">Response</span></span>
+<span data-ttu-id="cc2b3-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cc2b3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
