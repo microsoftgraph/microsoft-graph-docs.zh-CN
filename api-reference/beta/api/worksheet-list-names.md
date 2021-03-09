@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e1bdd7bb0be828320da0a279a3cf6aaab98e69ad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 17f3e342bbeccd23afab63ce8bde4d9fb85f75e7
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972142"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577623"
 ---
 # <a name="list-names"></a>列出名称
 
@@ -24,14 +24,15 @@ ms.locfileid: "48972142"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 读取的文件。读写。所有    |
-|委派（个人 Microsoft 帐户） | 读写文件。读写    |
+|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Sites.Read.All    |
+|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite    |
 |应用程序 | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/names
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/names
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -47,7 +48,7 @@ GET /workbook/worksheets/{id|name}/names
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookNamedItem](../resources/workbooknameditem.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 workbookNamedItem](../resources/workbooknameditem.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

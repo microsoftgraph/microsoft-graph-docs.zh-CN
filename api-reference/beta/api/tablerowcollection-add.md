@@ -1,16 +1,16 @@
 ---
 title: 'TableRowCollection: add'
-description: '将行添加到表的末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理，而不是执行单个行插入。 为获得最佳结果，请收集要插入到应用程序中的行，并执行单行添加操作。 试验行数，以确定要在单个 API 调用中使用的理想行数。 '
+description: '将行添加到表格末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是在单个调用中将行批处理在一起，而不是执行单行插入。 为了获得最佳结果，请收集要插入到应用程序端上的行并执行单行添加操作。 试验行数以确定在单个 API 调用中要使用的理想行数。 '
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e5f94ed5149294c8173948b3ce1ac5d17fd85b28
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc862772907c42560f0ee3fab92a1c4d3a0c230e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994413"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578225"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
@@ -18,7 +18,7 @@ ms.locfileid: "47994413"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将行添加到表的末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理，而不是执行单个行插入。 为获得最佳结果，请收集要插入到应用程序中的行，并执行单行添加操作。 试验行数，以确定要在单个 API 调用中使用的理想行数。 
+将行添加到表格末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是在单个调用中将行批处理在一起，而不是执行单行插入。 为了获得最佳结果，请收集要插入到应用程序端上的行并执行单行添加操作。 试验行数以确定在单个 API 调用中要使用的理想行数。 
 
 ## <a name="error-handling"></a>错误处理
 
@@ -36,8 +36,10 @@ ms.locfileid: "47994413"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows/add
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
+POST /me/drive/items/{id}/workbook/tables/{id|name}/rows/add
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -52,14 +54,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。|
-|值| () 集合中的布尔值或字符串或数字|可选。 表格行无格式值的二维数组。|
+|值| (布尔值、字符串或数字) 集合|可选。 表格行的无格式值的二维数组。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookTableRow](../resources/workbooktablerow.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [workbookTableRow](../resources/workbooktablerow.md) 对象。
 
 ## <a name="example"></a>示例
-在此示例中，将两行数据插入到表的末尾。 
+本示例在表格末尾插入两行数据。 
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

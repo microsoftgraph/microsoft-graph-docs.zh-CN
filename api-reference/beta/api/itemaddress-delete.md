@@ -1,21 +1,21 @@
 ---
 title: 删除 itemAddress
-description: 删除一个 itemAddress 对象。
+description: 删除 itemAddress 对象。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7478633b46309d6e6047ee65314b51c90b9a5384
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ede930a2f76c09ea0b469a6b449b92275abbac28
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980020"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578708"
 ---
 # <a name="delete-itemaddress"></a>删除 itemAddress
 命名空间：microsoft.graph
 
-删除一个 [itemAddress](../resources/itemaddress.md) 对象。
+删除 [itemAddress](../resources/itemaddress.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -23,8 +23,8 @@ ms.locfileid: "47980020"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -60,7 +60,7 @@ DELETE /users/{id | userPrincipalName}/profile/addresses/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/addresses/{id}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/addresses/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]

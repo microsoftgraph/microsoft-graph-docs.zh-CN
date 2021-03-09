@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7c1ff8bbc7f2dc0bf8ed3d32d7beec95a27507b9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 474c6394a1857d10431cac0126e801d0e7296e59
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981202"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577018"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 
@@ -31,9 +31,12 @@ ms.locfileid: "48981202"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/unmerge
-POST /workbook/worksheets/{id|name}/range(address='<address>')/unmerge
-POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
+POST /me/drive/items/{id}/workbook/names/{name}/range/unmerge
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/unmerge
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/unmerge
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/unmerge
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/unmerge
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 
 ```
 ## <a name="request-headers"></a>请求标头

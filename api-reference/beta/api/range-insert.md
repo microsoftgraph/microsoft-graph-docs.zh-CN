@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 003a22525ee17306ee321743480b42279964152d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2f5f9d3952afed0cad6430d1ae35078906f6b00f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974412"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578680"
 ---
 # <a name="range-insert"></a>Range: insert
 
@@ -31,9 +31,12 @@ ms.locfileid: "48974412"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/insert
-POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
-POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
+POST /me/drive/items/{id}/workbook/names/{name}/range/insert
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/insert
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/insert
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/insert
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/insert
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
 ## <a name="request-headers"></a>请求标头

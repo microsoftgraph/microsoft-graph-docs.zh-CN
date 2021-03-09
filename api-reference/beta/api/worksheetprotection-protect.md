@@ -1,18 +1,18 @@
 ---
-title: workbookWorksheetProtection：保护
+title: workbookWorksheetProtection： protect
 description: 保护工作表。 如果工作表处于受保护状态，则会引发它。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 321091e5e23af53955e6d39065540828e83568f5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bfbb6252a13db3afb3cab4f3b21bb947897cd297
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973089"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578092"
 ---
-# <a name="workbookworksheetprotection-protect"></a>workbookWorksheetProtection：保护
+# <a name="workbookworksheetprotection-protect"></a>workbookWorksheetProtection： protect
 
 命名空间：microsoft.graph
 
@@ -31,7 +31,8 @@ ms.locfileid: "48973089"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/protect
 
 ```
 ## <a name="request-headers"></a>请求标头

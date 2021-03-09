@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f8d07c101ecda5cba5c4fe99bdaa752c7143c3e3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04f1bd31358ab03d34a2a15a8b68fe0c28be17cb
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974236"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577833"
 ---
 # <a name="get-rangefill"></a>获取 RangeFill
 
@@ -31,9 +31,12 @@ ms.locfileid: "48974236"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/fill
-GET /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/fill
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/fill
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/fill
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/fill
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/fill
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -49,7 +52,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookRangeFill](../resources/workbookrangefill.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [workbookRangeFill](../resources/workbookrangefill.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

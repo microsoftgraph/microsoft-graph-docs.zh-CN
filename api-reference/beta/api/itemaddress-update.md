@@ -5,17 +5,17 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: df7f695a1aab9343ec8d15d7d0976e3260511ac1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f53f5ad68919898dc337ed9b7c0f106ed3fa6c41
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980001"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578694"
 ---
 # <a name="update-itemaddress"></a>更新 itemAddress
 命名空间：microsoft.graph
 
-更新 [itemAddress](../resources/itemaddress.md) 对象的属性。
+更新 [itemAddress 对象](../resources/itemaddress.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -23,8 +23,8 @@ ms.locfileid: "47980001"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,16 +50,16 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|介绍|[physicalAddress](../resources/physicaladdress.md)|地址本身的详细信息。|
-|displayName|String|用户已分配到此地址的友好名称。 |
-|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的 geocoordinates。|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|detail|[physicalAddress](../resources/physicaladdress.md)|有关地址本身的详细信息。|
+|displayName|字符串|用户已分配给此地址的友好名称。 |
+|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的地理coordinates。|
+|推断|[inferenceData](../resources/inferencedata.md)|包含实体是否由创建或修改应用程序推断的推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [itemAddress](../resources/itemaddress.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [itemAddress](../resources/itemaddress.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -71,7 +71,7 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/addresses/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/addresses/{id}
 Content-Type: application/json
 Content-length: 497
 

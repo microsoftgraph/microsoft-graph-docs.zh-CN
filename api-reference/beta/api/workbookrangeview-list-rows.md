@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: dc5d152820b4e63df38cd717aaa01f0598b27855
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 94286d8e4faeca95a5ba87c653acaeb5f1563715
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975657"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578589"
 ---
 # <a name="list-rangeview-rows"></a>List rangeView rows
 
@@ -32,7 +32,8 @@ ms.locfileid: "48975657"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/rows
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visibleView/rows
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView/rows
 
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

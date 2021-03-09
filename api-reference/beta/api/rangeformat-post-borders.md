@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 35fb2b20127678a6815b5eb36fccad3d70d0c5b3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1c9d7eb22a11710b41d64c3284e4fd72789d8e4b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963479"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577357"
 ---
 # <a name="create-rangeborder"></a>创建 RangeBorder
 
@@ -31,9 +31,12 @@ ms.locfileid: "48963479"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/borders
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/borders
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -47,7 +50,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookRangeBorder](../resources/workbookrangeborder.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回响应代码和 [workbookRangeBorder](../resources/workbookrangeborder.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

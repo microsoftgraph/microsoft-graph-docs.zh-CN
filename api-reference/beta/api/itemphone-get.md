@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 66207a802433720be38e57387084e2ca4fffa5ba
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0622fef3be1d34c6bac46601eb42af2d2420d2c6
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969932"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577420"
 ---
 # <a name="get-itemphonenumber"></a>获取 itemPhoneNumber
 
@@ -18,7 +18,7 @@ ms.locfileid: "48969932"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户的[配置文件](../resources/profile.md)中检索[itemPhone](../resources/itemphone.md)对象的属性和关系。
+检索用户配置文件中的 [itemPhone](../resources/itemphone.md) 对象的属性和 [关系](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48969932"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,12 +36,12 @@ ms.locfileid: "48969932"
 
 ```http
 GET /me/profile/phones/{id}
-GET /user/{userId}/profile/phones/{id}
+GET /users/{userId}/profile/phones/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
+此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -53,7 +53,7 @@ GET /user/{userId}/profile/phones/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [itemPhone](../resources/itemphone.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [itemPhone](../resources/itemphone.md) 对象。
 
 ## <a name="examples"></a>示例
 

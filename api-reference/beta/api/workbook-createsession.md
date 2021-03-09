@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 097dd199e12a94ceb11514818665db5053c6c344
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0a93a602d5f10e3b99b18ed310bdf4c933dcf8aa
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973922"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578814"
 ---
 # <a name="create-session"></a>创建会话
 
@@ -27,11 +27,11 @@ ms.locfileid: "48973922"
 
 >**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改 _仅_ 保持在该文件中。  
 
-在某些情况下，创建新的会话需要不确定的时间才能完成。 Microsoft Graph 还提供了长时间运行的操作模式。 此模式提供了一种方法来轮询创建状态更新，而无需等待创建完成。 步骤如下：
+在某些情况下，创建新会话需要不确定的时间才能完成。 Microsoft Graph 还提供长时间运行的操作模式。 此模式提供了一种轮询创建状态更新的方法，而无需等待创建完成。 步骤如下：
 
-1. 向 `Prefer: respond-async` 请求中添加一个标头，以指示它是一个长时间运行的操作。
-2. 响应返回一个 `Location` 标头，以指定用于轮询创建操作状态的 URL。 您可以通过访问指定的 URL 来获取操作状态。 状态将为以下之一： `notStarted` 、、 `running` `succeeded` 或 `failed` 。
-3. 操作完成后，可以再次请求状态，响应将显示为 `succeeded` 或 `failed` 。
+1. 标头 `Prefer: respond-async` 将添加到请求中，以指示这是长时间运行的操作。
+2. 响应返回一 `Location` 个标头以指定轮询创建操作状态的 URL。 可以通过访问指定的 URL 获取操作状态。 状态将为以下项之一：、、 `notStarted` `running` `succeeded` 或 `failed` 。
+3. 操作完成后，可以再次请求状态，响应将显示或 `succeeded` `failed` 。
 
 ### <a name="error-handling"></a>错误处理
 
@@ -49,7 +49,8 @@ ms.locfileid: "48973922"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/createSession
+POST /me/drive/items/{id}/workbook/createSession
+POST /me/drive/root:/{item-path}:/workbook/createSession
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -61,11 +62,11 @@ POST /workbook/createSession
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookSessionInfo](../resources/workbooksessioninfo.md) 对象。 对于长时间运行的操作，它会 `202 Accepted ` 在响应中返回响应代码和 `Location` 标头，其中包含空正文。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [workbookSessionInfo](../resources/workbooksessioninfo.md) 对象。 对于长时间运行的操作，它会在响应中返回一个响应代码和一个正文为空 `202 Accepted ` `Location` 的标头。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-basic-session-creation"></a>示例1：基本会话创建
+### <a name="example-1-basic-session-creation"></a>示例 1：基本会话创建
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -118,7 +119,7 @@ Content-length: 52
   "persistChanges": true
 }
 ```
-### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>示例2：使用长时间运行的操作模式创建的会话
+### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>示例 2：使用长时间运行的操作模式创建会话
 
 #### <a name="request"></a>请求
 

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b480f7ba45b0b3ea6cea7625af373650ac279414
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 442c5360438755f8d48b156b9ca7911380add017
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999410"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577424"
 ---
 # <a name="update-itempatent"></a>更新 itemPatent
 
 命名空间：microsoft.graph
 
-更新 [itemPatent](../resources/itempatent.md) 对象的属性。
+更新 [itemPatent 对象](../resources/itempatent.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -24,8 +24,8 @@ ms.locfileid: "47999410"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -51,20 +51,20 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|description|String|专利或档案的 Descpription。 |
-|displayName|String|专利或档案的标题。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isPending        |Boolean     |指示专利处于待处理状态。        |
+|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|说明|字符串|专利或归档的反授权。 |
+|displayName|字符串|专利或归档的标题。 |
+|推断|[inferenceData](../resources/inferencedata.md)|包含实体是否由创建或修改应用程序推断的推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|isPending        |Boolean     |指示正在申请专利。        |
 |issuedDate       |日期        |授予专利的日期。   |
-|issuingAuthority |String      |授予专利的证书颁发机构。     |
-|数字           |String      |专利号码。                      |
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|webUrl           |String      |引用专利或档案的 URL。 |
+|issuingAuthority |字符串      |授予专利的颁发机构。     |
+|number           |字符串      |专利号。                      |
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|WebUrl           |String      |引用专利或归档的 URL。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [itemPatent](../resources/itempatent.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [itemPatent](../resources/itempatent.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -76,7 +76,7 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/patents/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 Content-Type: application/json
 Content-length: 497
 

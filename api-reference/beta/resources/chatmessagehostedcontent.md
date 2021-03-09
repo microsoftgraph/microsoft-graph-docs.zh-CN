@@ -1,16 +1,16 @@
 ---
 title: chatMessageHostedContent 资源类型
-description: 聊天消息中托管的内容
+description: 聊天消息中承载的内容
 localization_priority: Normal
-author: clearab
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cc4f61fb0b0e6c174be50c988d1cbb22576c4f27
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3519caeade4c50514fb2d725f21b10ff6efcada3
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159617"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578806"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>chatMessageHostedContent 资源类型
 
@@ -30,11 +30,13 @@ ms.locfileid: "50159617"
 
 ## <a name="properties"></a>属性
 
+chatMessageHostedContent 派生自 [teamworkHostedContent](teamworkhostedcontent.md)
+
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id            |String       | 只读。 表示聊天消息托管的内容标识符。|
+|id            |字符串       | 只读。 表示聊天消息托管的内容标识符。|
 |contentBytes  |Edm.Binary   | 只写。 发布新的聊天消息托管内容时，表示有效负载的字节数。 这些字符串表示为 base64Encoded 字符串。|
-|contentType   |String       | 只写。 发布新的聊天消息托管内容时，表示内容类型，如 image/png。|
+|contentType   |String       | 只写。 发布新的聊天消息托管内容时，表示内容类型，如图像/png。|
 
 ### <a name="instance-attributes"></a>实例属性
 
@@ -43,7 +45,7 @@ ms.locfileid: "50159617"
 
 | 属性名称                     | 类型   | 说明
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.temporaryId      | string | 只写。 表示托管内容的 temporaryId，同时发布消息以引用正在发送的 **chatMessage** 资源中的托管内容。|
+| @microsoft.graph.temporaryId      | string | 只写。 表示托管内容的 temporaryId，同时发布消息以引用要发送的 **chatMessage** 资源中的托管内容。|
 
 ## <a name="relationships"></a>关系
 

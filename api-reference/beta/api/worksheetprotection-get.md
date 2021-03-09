@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 188ca823194e9d895dde498444a2a824ac7fac64
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5741a9ed6e24519f704d0c2df13d62945e36d13b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973099"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578141"
 ---
 # <a name="get-workbookworksheetprotection"></a>获取 workbookWorksheetProtection
 
@@ -31,7 +31,8 @@ ms.locfileid: "48973099"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/protection
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/protection
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -47,7 +48,7 @@ GET /workbook/worksheets/{id|name}/protection
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookWorksheetProtection](../resources/workbookworksheetprotection.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookWorksheetProtection](../resources/workbookworksheetprotection.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

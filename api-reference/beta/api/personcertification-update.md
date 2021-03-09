@@ -5,17 +5,17 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 66c6db323684d9530913e0f6675052ffca78739a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce03e7499cd79f1616c26ea53444a443e39b6f68
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022267"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577348"
 ---
 # <a name="update-personcertification"></a>更新 personCertification
 命名空间：microsoft.graph
 
-从用户的[配置文件](../resources/profile.md)中更新[personCertification](../resources/personcertification.md)对象的属性。
+从用户配置文件 [更新 personCertification](../resources/personcertification.md) 对象 [的属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,8 +23,8 @@ ms.locfileid: "48022267"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,22 +50,22 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|certificationId  |String      |证书的 referenceable 标识符。 |
-|description      |String      |证书的说明。                   |
-|displayName      |String      |证书的标题。                         |
-|endDate          |日期        |证书到期的日期。            |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|issuedDate       |日期        |颁发证书的日期。         |
-|issuingAuthority |String      |授予证书颁发机构的权限。          |
-|issuingCompany   |String      |授予证书颁发机构的权限。          |
-|startDate        |日期        |证书生效的日期。       |
-|thumbnailUrl     |String      |URL 引用证书的缩略图。   |
+|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|certificationId  |字符串      |证书的可引用标识符。 |
+|说明      |字符串      |认证说明。                   |
+|displayName      |字符串      |认证的标题。                         |
+|endDate          |日期        |认证过期的日期。            |
+|推断|[inferenceData](../resources/inferencedata.md)|包含实体是否由创建或修改应用程序推断的推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|issuedDate       |日期        |认证颁发日期。         |
+|issuingAuthority |字符串      |授予证书的颁发机构。          |
+|issuingCompany   |字符串      |授予证书的颁发机构。          |
+|startDate        |日期        |认证生效的日期。       |
+|thumbnailUrl     |字符串      |引用认证缩略图的 URL。   |
 |WebUrl           |String      |引用证书的 URL。                  |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [personCertification](../resources/personcertification.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的 [personCertification](../resources/personcertification.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -77,7 +77,7 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/certifications/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 Content-Type: application/json
 Content-length: 497
 

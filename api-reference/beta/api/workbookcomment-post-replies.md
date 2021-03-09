@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fb76b19dde2034d11b5491a78e883d009d34e70d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fbdb2cac897fe99a7f7aa733bdd0bcf56004a464
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964326"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578607"
 ---
 # <a name="create-workbookcommentreply"></a>创建 workbookCommentReply
 
@@ -33,7 +33,8 @@ ms.locfileid: "48964326"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /workbook/comments/{id}/replies
+POST /me/drive/items/{id}/workbook/comments/{id}/replies
+POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +49,7 @@ POST /workbook/comments/{id}/replies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [workbookCommentReply](../resources/workbookcommentreply.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [workbookCommentReply](../resources/workbookcommentreply.md) 对象。
 
 ## <a name="examples"></a>示例
 

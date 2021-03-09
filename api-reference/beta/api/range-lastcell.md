@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 25ac424d0eafee326dfb5135c8cdf81e6a257186
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9ee4061bb38ec7a452c8a89f99b8e3c317a9d8f9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974397"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577091"
 ---
 # <a name="range-lastcell"></a>Range:LastCell
 
@@ -31,9 +31,12 @@ ms.locfileid: "48974397"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/LastCell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/LastCell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/LastCell
+GET /me/drive/items/{id}/workbook/names/{name}/range/LastCell
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/LastCell
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/LastCell
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/LastCell
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/LastCell
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/LastCell
 
 ```
 ## <a name="request-headers"></a>请求标头

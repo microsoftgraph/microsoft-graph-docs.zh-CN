@@ -1,25 +1,25 @@
 ---
-title: workbookWorksheetProtection：取消保护
+title: workbookWorksheetProtection：unprotect
 description: 解除工作表保护
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 71e00a1a3816ec43a252eb265e73efbc8941b3ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3201961496da64d917f59d8305cee98a0ab9ebfc
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089866"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578085"
 ---
-# <a name="workbookworksheetprotection-unprotect"></a>workbookWorksheetProtection：取消保护
+# <a name="workbookworksheetprotection-unprotect"></a>workbookWorksheetProtection：unprotect
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 解除工作表保护
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,7 +31,8 @@ ms.locfileid: "48089866"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/protection/unprotect
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/unprotect
 
 ```
 ## <a name="request-headers"></a>请求标头

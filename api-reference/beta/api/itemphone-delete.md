@@ -1,16 +1,16 @@
 ---
 title: 删除 itemPhone
-description: 从用户的配置文件中删除 itemPhone 对象。
+description: 从用户配置文件中删除 itemPhone 对象。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f66130b9c898865926acf728e0dfc79447530d83
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b947a7674f73a4351cdb6742587812acd66d253
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999349"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577413"
 ---
 # <a name="delete-itemphonenumber"></a>删除 itemPhoneNumber
 
@@ -18,7 +18,7 @@ ms.locfileid: "47999349"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户的[配置文件](../resources/profile.md)中删除[itemPhone](../resources/itemphone.md)对象。
+从用户配置文件中删除 [itemPhone](../resources/itemphone.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "47999349"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -37,7 +37,7 @@ ms.locfileid: "47999349"
 -->
 ``` http
 DELETE /me/profile/phones/{itemPhoneId}
-DELETE /user/{userId}/profile/phones/{itemPhoneId}
+DELETE /users/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -65,7 +65,7 @@ DELETE /user/{userId}/profile/phones/{itemPhoneId}
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneId}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ### <a name="response"></a>响应

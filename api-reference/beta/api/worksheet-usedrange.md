@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cc587a9a18193dd18756809f7865afd4e809be28
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3da9ece84c8c6fedd36a08bb6f489eaa89bb8b7c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980143"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578146"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet:UsedRange
 
@@ -29,7 +29,8 @@ ms.locfileid: "48980143"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/UsedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/UsedRange
 
 ```
 

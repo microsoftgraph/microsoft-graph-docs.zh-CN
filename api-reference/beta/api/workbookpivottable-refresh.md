@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d63e76dad225273095ae18f8c6b4bc1cacaec015
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7d3ae322acfddc9c2f41388fcb53d208ccb7d6b0
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978566"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578608"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 
@@ -34,7 +34,8 @@ ms.locfileid: "48978566"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 282eda63ed9625eb20f472f32ba3b8f8b0440b81
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22c5455a0e7e935e126e4a05aace34def5f0acff
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081844"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577002"
 ---
 # <a name="range-offsetrange"></a>Range:OffsetRange
 
@@ -19,7 +19,7 @@ ms.locfileid: "48081844"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与该区域匹配。如果强制使生成的区域位于工作表网格的边界之外，则会引发异常。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,9 +31,12 @@ ms.locfileid: "48081844"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/OffsetRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
+GET /me/drive/items/{id}/workbook/names/{name}/range/OffsetRange
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/OffsetRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ```
 ## <a name="request-headers"></a>请求标头

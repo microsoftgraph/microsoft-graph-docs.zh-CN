@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 98ba1cab9b1dc633bc85896e7f0f09fb9295fa33
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82093330409b856f2c893436279260f273c02b5a
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973935"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578827"
 ---
 # <a name="close-session"></a>关闭会话
 
@@ -30,7 +30,8 @@ ms.locfileid: "48973935"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/closeSession
+POST /me/drive/items/{id}/workbook/closeSession
+POST /me/drive/root:/{item-path}:/workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>请求标头

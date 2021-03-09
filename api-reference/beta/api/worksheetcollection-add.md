@@ -1,16 +1,16 @@
 ---
 title: 'WorksheetCollection: add'
-description: '。请在上面激活 ( # A1。'
+description: .activate () 上。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d3162d29d94e5903f85e8f1ea4b5ea6527daa78b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a4c587117beeb6e06e7a683dd119d8199c3e940c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979963"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578155"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -31,7 +31,8 @@ ms.locfileid: "48979963"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/
+POST /me/drive/items/{id}/workbook/worksheets/
+POST /me/drive/root:/{item-path}:/workbook/worksheets/
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -49,7 +50,7 @@ POST /workbook/worksheets/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookWorksheet](../resources/workbookworksheet.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [workbookWorksheet](../resources/workbookworksheet.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
