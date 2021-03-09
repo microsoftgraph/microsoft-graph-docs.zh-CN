@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9137e971aeb1cfcce454af61bba20c54c1537354
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 57fe37109c1308de3cd716a985da0de7b9691f56
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973718"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573927"
 ---
 # <a name="rangeformat-autofitcolumns"></a>RangeFormat: autofitColumns
 
@@ -31,9 +31,12 @@ ms.locfileid: "48973718"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/autofitColumns
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitColumns
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/autofitColumns
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/autofitColumns
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/autofitColumns
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/autofitColumns
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 
 ```
 ## <a name="request-headers"></a>请求标头

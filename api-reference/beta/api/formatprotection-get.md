@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 0e3072458d01ab7986a428752ebfe33285383a24
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8cc761fd685895f1ca509ae0586d9eadcca90c9e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954419"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574053"
 ---
 # <a name="get-formatprotection"></a>获取 FormatProtection
 
@@ -31,9 +31,12 @@ ms.locfileid: "48954419"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/protection
-GET /workbook/worksheets/{id|name}/range(<address>)/format/protection
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/protection
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/protection
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(<address>)/format/protection
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(<address>)/format/protection
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。

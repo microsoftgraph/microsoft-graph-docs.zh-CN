@@ -1,16 +1,16 @@
 ---
-title: workbookChartCollection： ItemAt
-description: 根据其在集合中的位置获取 workbookchart。
+title: workbookChartCollection：ItemAt
+description: 根据工作簿在集合中的位置获取工作簿图表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bb3dfa39d16859068307dde8c744e40b7ab5ad81
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac0d7b125bf4b511dc837bbae220ee8f36e52f28
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983052"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574655"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -31,7 +31,8 @@ ms.locfileid: "47983052"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/ItemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/ItemAt
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -49,7 +50,7 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookChart](../resources/workbookchart.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [workbookChart](../resources/workbookchart.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

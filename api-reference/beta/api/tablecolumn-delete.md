@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 18c32c719916159aef9080d983f80bc6f7e5d378
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 74ff3eca465f01137e1280e0840d7530e3c4c5ec
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515668"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576384"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 
@@ -26,13 +26,15 @@ ms.locfileid: "50515668"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/tables/{id|name}/columns/{id|name}
-DELETE /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+DELETE /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
+DELETE /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ```
 ## <a name="request-headers"></a>请求标头

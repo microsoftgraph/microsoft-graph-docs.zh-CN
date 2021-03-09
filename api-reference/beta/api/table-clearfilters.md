@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 19f4632c77f28356263ee2c4b715b3898fb4374b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 56a05a3b85b7b2dc0536533cbd14cb721f2141d9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971143"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576671"
 ---
 # <a name="table-clearfilters"></a>Table: clearFilters
 
@@ -31,8 +31,10 @@ ms.locfileid: "48971143"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/clearFilters
-POST /workbook/worksheets/{id|name}/tables/{id|name}/clearFilters
+POST /me/drive/items/{id}/workbook/tables/{id|name}/clearFilters
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/clearFilters
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/clearFilters
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/clearFilters
 
 ```
 ## <a name="request-headers"></a>请求标头

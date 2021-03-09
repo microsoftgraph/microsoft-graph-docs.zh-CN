@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 49c0e715f4cbefa01e978690394250af9a86fd41
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 048ea8a4673c09c66bd6cc4a510b8cc778ad10f2
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034294"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576325"
 ---
 # <a name="update-tablecolumn"></a>更新 tablecolumn
 
@@ -19,7 +19,7 @@ ms.locfileid: "50034294"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 tablecolumn 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,8 +31,10 @@ ms.locfileid: "50034294"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/columns/{id|name}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 83746e018d292da5b9f886fbab770af0f35b61d2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 605f3aac4737fc54cd329f3b115df65eb345eb08
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976456"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575766"
 ---
 # <a name="get-nameditem"></a>获取 NamedItem
 
@@ -31,7 +31,8 @@ ms.locfileid: "48976456"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}
+GET /me/drive/items/{id}/workbook/names/{name}
+GET /me/drive/root:/{item-path}:/workbook/names/{name}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -47,7 +48,7 @@ GET /workbook/names/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookNamedItem](../resources/workbooknameditem.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookNamedItem](../resources/workbooknameditem.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

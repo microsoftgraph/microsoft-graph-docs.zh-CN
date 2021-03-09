@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9048ed98e8a7117498c4a02240197b60c722b819
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d9ed64f86a250becac0a7b349c81800b547372d2
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958352"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574340"
 ---
 # <a name="get-charttitle"></a>获取 ChartTitle
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958352"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/title
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/title
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -47,7 +48,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/title
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookChartTitle](../resources/workbookcharttitle.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookChartTitle](../resources/workbookcharttitle.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

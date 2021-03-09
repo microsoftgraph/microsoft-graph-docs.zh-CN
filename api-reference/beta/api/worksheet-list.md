@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5346b0024e109e9b918108cc39f9819459c1d02d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3d1f0921ed196b073f3a21a71c415af5f771c110
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977288"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576846"
 ---
 # <a name="list-worksheetcollection"></a>列出 WorksheetCollection
 
@@ -31,7 +31,8 @@ ms.locfileid: "48977288"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets
+GET /me/drive/items/{id}/workbook/worksheets
+GET /me/drive/root:/{item-path}:/workbook/worksheets
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -47,7 +48,7 @@ GET /workbook/worksheets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookWorksheet](../resources/workbookworksheet.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 workbookWorksheet](../resources/workbookworksheet.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

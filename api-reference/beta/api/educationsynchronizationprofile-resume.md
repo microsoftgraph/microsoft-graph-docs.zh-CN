@@ -1,24 +1,24 @@
 ---
-title: 恢复 educationSynchronizationProfile 上的同步
-description: 在租户中恢复特定学校数据同步配置文件的同步。
+title: 在 educationSynchronizationProfile 上恢复同步
+description: 恢复租户中特定学校数据同步配置文件的同步。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e6cc5739ff0c1ec270c6bf19bb30731cddd4de53
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d88c4a2e9bf6aa719e4cde333764fe32a29bf285
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965816"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574149"
 ---
-# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>恢复 educationSynchronizationProfile 上的同步
+# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>在 educationSynchronizationProfile 上恢复同步
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在租户中恢复特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的同步。
+恢复租户中特定学校数据 [同步](../resources/educationsynchronizationprofile.md) 配置文件的同步。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,7 @@ ms.locfileid: "48965816"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/resume
+POST /education/synchronizationProfiles/{id}/resume
 ```
 
 ## <a name="request-headers"></a>请求标头

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6299de840cef45827a026d0201d1699e047f685c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14671f02929d4750f714cd870f4b76af969ca391
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958610"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574508"
 ---
 # <a name="update-chartlegend"></a>更新 chartlegend
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958610"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
@@ -50,7 +51,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workbookChartLegend](../resources/workbookchartlegend.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [workbookChartLegend](../resources/workbookchartlegend.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

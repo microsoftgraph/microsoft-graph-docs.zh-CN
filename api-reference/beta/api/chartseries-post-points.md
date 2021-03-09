@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e58f0073a5719ac0cf9ef2f34b9fc8552a455ac1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3c9a98f731b58a55b70a27b0d39fd6d0d2b2d240
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958422"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574361"
 ---
 # <a name="create-chartpoint"></a>创建 ChartPoint
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958422"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -45,7 +46,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookChartPoint](../resources/workbookchartpoint.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `201 Created` 和 [workbookChartPoint](../resources/workbookchartpoint.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

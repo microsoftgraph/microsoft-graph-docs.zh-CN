@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0deec734a2868188a60e00646ea1a80c1f803ac8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2d47a8d6416666df4c71fc0b095fbe4856a4423c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973635"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576818"
 ---
 # <a name="list-borders"></a>列出边框
 
@@ -31,9 +31,12 @@ ms.locfileid: "48973635"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/borders
-GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/borders
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -49,7 +52,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookRangeBorder](../resources/workbookrangeborder.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 workbookRangeBorder](../resources/workbookrangeborder.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

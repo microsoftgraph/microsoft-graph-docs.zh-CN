@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0f1ef72789ab6168aefe3e4ef02bf7601bfa8437
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 903842396f417864ef2dcc134ea2af9d8521547c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978661"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576886"
 ---
 # <a name="get-tablerow"></a>获取 TableRow
 
@@ -31,8 +31,10 @@ ms.locfileid: "48978661"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/rows/{index}
-GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -48,7 +50,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookTableRow](../resources/workbooktablerow.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [workbookTableRow](../resources/workbooktablerow.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

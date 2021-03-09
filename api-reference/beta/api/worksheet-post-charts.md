@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 140e44092312e88f05f39532c62be34297d9fb67
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 306d538f06d2a1f2857f745580e9ab0e8cb9a59c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977257"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575131"
 ---
 # <a name="create-chart"></a>创建图表
 
@@ -31,7 +31,8 @@ ms.locfileid: "48977257"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -45,7 +46,7 @@ POST /workbook/worksheets/{id|name}/charts/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookChart](../resources/workbookchart.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `201 Created` 和 [workbookChart](../resources/workbookchart.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

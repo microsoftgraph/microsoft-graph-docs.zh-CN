@@ -1,16 +1,16 @@
 ---
 title: 创建 educationSynchronizationProfile
-description: '在租户中创建新的学校数据同步配置文件的请求。 查询状态，获取配置文件的状态。 '
+description: '在租户中新建学校数据同步配置文件的请求。 查询状态，获取配置文件的状态。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f84d4f66036d3f767182c5e7abf12c231699073f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: fee9dc42f53a19aa40d9af105829b309eada7ccf
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470228"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574200"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>创建 educationSynchronizationProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "50470228"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在租户中创建新的学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的请求。 [查询状态](educationsynchronizationprofilestatus-get.md) ，获取配置文件的状态。 
+在租户中新建学校数据 [同步](../resources/educationsynchronizationprofile.md) 配置文件的请求。 [查询状态](educationsynchronizationprofilestatus-get.md) ，获取配置文件的状态。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,14 +32,14 @@ ms.locfileid: "50470228"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles
+POST /education/synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
-| Content-Type | string | Application/json。 必填。 |
+| Content-Type | string | Application/json。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 对象的 JSON 表示形式。

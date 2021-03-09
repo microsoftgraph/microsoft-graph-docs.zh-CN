@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 577b7d4c2d92e8af60bf5ab26476915edc4c3cbc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be5b461af5a5c8d3586f6af2819d5497a0d0b473
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092888"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576832"
 ---
 # <a name="worksheet-cell"></a>Worksheet:Cell
 
@@ -19,7 +19,7 @@ ms.locfileid: "48092888"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 根据行和列编号获取包含单个单元格的 range 对象。单元格可以位于父区域外部，只要其保持在工作表网格内即可。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,7 +31,8 @@ ms.locfileid: "48092888"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/Cell(row={row},column={column})
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/Cell(row={row},column={column})
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/Cell(row={row},column={column})
 
 ```
 

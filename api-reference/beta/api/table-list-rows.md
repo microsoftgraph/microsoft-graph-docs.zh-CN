@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 74d0017d78caa35b203284dfb4da2e2041e4ac22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a86ae8a48d63516d7d4bef95dfe4f93c50920777
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969414"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576557"
 ---
 # <a name="list-rows"></a>列出行
 
@@ -31,8 +31,10 @@ ms.locfileid: "48969414"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/rows
-GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
+GET /me/drive/items/{id}/workbook/tables/{id|name}/rows
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 为了获得可靠结果，请使用 [$top](/graph/query-parameters#top) 和 [$skip](/graph/query-parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
@@ -48,7 +50,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookTableRow](../resources/workbooktablerow.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 workbookTableRow](../resources/workbooktablerow.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

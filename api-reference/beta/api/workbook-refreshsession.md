@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b630db7ab96ae8c5d8b87e92222bd1034bb9380b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d5036d74ebbfa9759daa440a2b1de5a07873a5bf
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977562"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575264"
 ---
 # <a name="refresh-session"></a>刷新会话
 
@@ -30,7 +30,8 @@ ms.locfileid: "48977562"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/refreshSession
+POST /me/drive/items/{id}/workbook/refreshSession
+POST /me/drive/root:/{item-path}:/workbook/refreshSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>请求标头

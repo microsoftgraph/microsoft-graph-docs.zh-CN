@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 23ad82f1f3341550b3e3a4e37b7d451774b5b2d0
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 8d532beef6c879e4df9c449d2015420c022da803
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516246"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576615"
 ---
 # <a name="table-delete"></a>Table: delete
 
@@ -31,8 +31,10 @@ ms.locfileid: "50516246"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/tables/{id|name}
-DELETE /workbook/worksheets/{id|name}/tables/{id|name}
+DELETE /me/drive/items/{id}/workbook/tables/{id|name}
+DELETE /me/drive/root:/{item-path}:/workbook/tables/{id|name}
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 
 ```
 ## <a name="request-headers"></a>请求标头

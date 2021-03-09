@@ -5,18 +5,18 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 757b1362333110f80831634350b1dda075a327ca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 255acd6d36aa61e3aa044ad1ffe167f007253593
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982114"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575320"
 ---
 # <a name="list-workbookcomments"></a>列出 workbookComments
 
 命名空间：microsoft.graph
 
-检索  [workbookComment](../resources/workbookcomment.md) 对象的列表。
+检索  [workbookComment 对象](../resources/workbookcomment.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -33,7 +33,8 @@ ms.locfileid: "48982114"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /workbook/comments
+GET /me/drive/items/{id}/workbook/comments
+GET /me/drive/root:/{item-path}:/workbook/comments
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +49,7 @@ GET /workbook/comments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookComment](../resources/workbookcomment.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookComment](../resources/workbookcomment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

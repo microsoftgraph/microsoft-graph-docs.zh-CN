@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: af9f49b88ca8be02dc4efd414826a09583e699f0
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: f7f5dee15a8111af1a925c1ece328b41e9b538c9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516414"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573850"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -576,7 +576,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 #### <a name="application"></a>应用程序
 
 * _Contacts.Read_：从组织中任意用户的一个顶层联系人文件夹读取联系人 (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`)。
-* _Contacts.ReadWrite_：更新组织中任意用户的所有联系人的照片 (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。
+* _Contacts.ReadWrite_：更新组织中任意用户的所有联系人的照片 (`PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。
 * _Contacts.ReadWrite_：将联系人添加到组织中任意用户的根文件夹 (`POST /users/{id | userPrincipalName}/contacts`)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
@@ -2213,12 +2213,12 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 * _User.Read_：读取登录用户的完整配置文件 (`GET /me`)。
 * _User.ReadWrite_：更新登录用户的照片 (`PUT /me/photo/$value`)。
 * _User.ReadBasic.All_：查找名称以“David”开头的所有用户 (`GET /users?$filter=startswith(displayName,'David')`)。
-* _User.Read.All_：读取用户的经理 (`GET /user/{id | userPrincipalName}/manager`)。
+* _User.Read.All_：读取用户的经理 (`GET /users/{id | userPrincipalName}/manager`)。
 
 #### <a name="application"></a>应用程序
 
 * _User.Read.All_：通过 delta 查询读取所有用户和关系 (`GET /beta/users/delta?$select=displayName,givenName,surname`)。
-* _User.ReadWrite.All_：更新组织中任意用户的照片 (`PUT /user/{id | userPrincipalName}/photo/$value`)。
+* _User.ReadWrite.All_：更新组织中任意用户的照片 (`PUT /users/{id | userPrincipalName}/photo/$value`)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 

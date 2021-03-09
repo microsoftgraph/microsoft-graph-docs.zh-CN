@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e46269033c06a3dd01b867e76aced48a76c7e1a3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ba01f948a6b21dc2b53c52682f92f428bb2df95
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980431"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576520"
 ---
 # <a name="workbooktable-range"></a>workbookTable： range
 
@@ -31,8 +31,10 @@ ms.locfileid: "48980431"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/Range
-GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/Range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -45,7 +47,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookRange](../resources/workbookrange.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [workbookRange](../resources/workbookrange.md) 对象。
 
 ## <a name="example"></a>示例
 

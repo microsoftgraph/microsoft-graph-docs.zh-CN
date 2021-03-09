@@ -1,16 +1,16 @@
 ---
 title: educationSynchronizationProfile： uploadUrl
-description: 检索共享访问签名 (SAS) ，用于将源文件上载到租户中的特定学校数据同步配置文件的 Azure blob 存储。 SAS 令牌的有效期为1小时。
+description: 检索 SAS (共享) ，以将源文件上传到租户中特定学校数据同步配置文件的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8c85147b5280dbfa623a17e10cfe36463e3c1e1b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e7fe3af888582fc38d617c1445e0e7c5473c528b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965775"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574147"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile： uploadUrl
 
@@ -18,11 +18,11 @@ ms.locfileid: "48965775"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索共享访问签名 (SAS) ，用于将源文件上载到租户中的特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的 Azure blob 存储。 SAS 令牌的有效期为1小时。
+在 SAS (检索共享) 签名，以将源文件上传到租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
 
-仅为 [CSV 数据提供程序](../resources/educationcsvdataprovider.md)提供上载 URL。
+上载 URL 仅为 CSV 数据 [提供程序提供](../resources/educationcsvdataprovider.md)。
 
-> **注意：** 若要使用 SAS 令牌访问 blob 存储，请使用 [Azure 存储 sdk](https://github.com/search?q=org%3AAzure+azure-storage) 或 [AzCopy](/azure/storage/storage-use-azcopy)。
+> **注意：** 若要使用 SAS 令牌访问 blob 存储，请使用 [Azure 存储 SDK](https://github.com/search?q=org%3AAzure+azure-storage)或 [AzCopy。](/azure/storage/storage-use-azcopy)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,7 +36,7 @@ ms.locfileid: "48965775"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /synchronizationProfiles/{id}/uploadUrl
+GET /education/synchronizationProfiles/{id}/uploadUrl
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,9 +47,9 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [EDUCATIONSYNCHRONIZATIONPROFILE](../resources/educationsynchronizationprofile.md) 的 SAS URL。
+如果成功，此方法在响应正文中返回 `200 OK` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 的响应代码和 SAS URL。
 
-如果仍在处理前一个请求，则此方法将返回一个 `409 Conflict` 指示当前已为 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)阻止了上载。
+如果上一个请求仍在处理中，此方法将返回一个指示当前已阻止 `409 Conflict` [educationSynchronizationProfile 的上载。](../resources/educationsynchronizationprofile.md)
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

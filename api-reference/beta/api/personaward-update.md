@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1338c1990ad76611295ac34e13b30b53651839d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 821293e804b5ec56cdde33464695ad0dcec7a103
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969317"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574025"
 ---
 # <a name="update-personaward"></a>更新 personAward
 
 命名空间：microsoft.graph
 
-从用户的[配置文件](../resources/profile.md)中更新[personAward](../resources/personAward.md)对象的属性。
+从用户配置文件 [更新 personAward](../resources/personAward.md) 对象 [的属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,8 +24,8 @@ ms.locfileid: "47969317"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -51,18 +51,18 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|description|String|奖励或荣誉的 Descpription。 |
-|displayName|String|获奖或荣誉的名称。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|issuedDate|日期|授予获奖或荣誉的日期。 |
-|issuingAuthority|String|授予奖项的证书颁发机构。  |
-|thumbnailUrl|String|URL 引用获奖或荣誉的缩略图。  |
-|webUrl|String|引用奖项或荣誉的 URL。 |
+|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|说明|字符串|奖励或特权的授予。 |
+|displayName|字符串|奖励或奖励的名称。 |
+|推断|[inferenceData](../resources/inferencedata.md)|包含实体是否由创建或修改应用程序推断的推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|issuedDate|日期|授予奖励或奖励的日期。 |
+|issuingAuthority|字符串|授予该奖励或奖励的颁发机构。  |
+|thumbnailUrl|字符串|引用奖励或奖励缩略图的 URL。  |
+|WebUrl|String|引用奖励或奖励的 URL。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [personAward](../resources/personaward.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的 [personAward](../resources/personaward.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -74,7 +74,7 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwardId}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 Content-Type: application/json
 Content-length: 497
 

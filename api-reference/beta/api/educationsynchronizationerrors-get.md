@@ -1,22 +1,22 @@
 ---
 title: 获取 educationSynchronizationErrors
-description: '获取在验证过程中生成的错误和/或在租户中同步特定学校数据同步配置文件的过程。 '
+description: '获取验证期间和/或同步租户中特定学校数据同步配置文件期间生成的错误。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2e80af82a7165d708ec119f39746b3d6fcab4eea
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3b2e0b9018d3a6d34073530f8bd846a4d6df64c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955309"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574264"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 
 命名空间：microsoft.graph
 
-获取在验证过程中生成的错误和/或在租户中同步特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的过程。
+获取验证期间和/或同步租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 期间生成的错误。
 
 ## <a name="permissions"></a>权限
 
@@ -24,21 +24,21 @@ ms.locfileid: "48955309"
 
 | 权限类型                       | 权限（从最低特权到最高特权）                 |
 | :------------------------------------ | :---------------------------------------------------------- |
-| 委派（工作或学校帐户）    | EduAdministration、EduAdministration         |
+| 委派（工作或学校帐户）    | EduAdministration.Read、EduAdministration.ReadWrite         |
 | 委派 (个人 Microsoft 帐户 | 不支持。                                              |
-| 应用程序                           | EduAdministration、EduAdministration 和所有 |
+| 应用程序                           | EduAdministration.Read.All、EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /synchronizationProfiles/{id}/errors
+GET /education/synchronizationProfiles/{id}/errors
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应： $filter、$orderby、$top、$skip 和 \$ 计数。
+此方法支持以下 [OData](/graph/query-parameters) 查询参数来帮助自定义响应：$filter、$orderby、$top、$skip和 \$ 计数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,7 +52,7 @@ GET /synchronizationProfiles/{id}/errors
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [同步错误](../resources/educationsynchronizationerror.md) 对象的集合。
+如果成功，此方法在响应正文中返回响应代码和同步 `200 OK` 错误对象集合。 [](../resources/educationsynchronizationerror.md)
 
 ## <a name="example"></a>示例
 

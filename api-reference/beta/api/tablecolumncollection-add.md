@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c560b6f3d326555e514b9bd73f2aef08a665606e
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 85836f056ef755e7fafe1889765544c0cca2599b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034308"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576314"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -19,7 +19,7 @@ ms.locfileid: "50034308"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 向表中添加新列。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,8 +31,10 @@ ms.locfileid: "50034308"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/add
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/add
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -47,11 +49,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|指定新列的相对位置。之前位于此位置的列向右移动。索引值应等于或小于最后一列的索引值，因此不能用于在表末尾附加列。从零开始编制索引。|
-|值| (布尔值、字符串或) 数|可选。未设置格式的表列值的二维数组。|
+|值| (布尔值、字符串或数字) 集合|可选。未设置格式的表列值的二维数组。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [workbookTableColumn](../resources/workbooktablecolumn.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

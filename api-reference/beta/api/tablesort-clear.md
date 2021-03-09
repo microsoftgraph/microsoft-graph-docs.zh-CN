@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 224ab0f518a4011014b57d2ede2fb0956b0cdb3d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3e2e6e30fa0fe457c4ee603d06d02d2f8940e782
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976420"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575341"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear
 
@@ -31,8 +31,10 @@ ms.locfileid: "48976420"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/sort/clear
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
+POST /me/drive/items/{id}/workbook/tables/{id|name}/sort/clear
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
 
 ```
 ## <a name="request-headers"></a>请求标头

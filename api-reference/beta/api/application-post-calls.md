@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2ad6842c4956c10b46421a99c9647f313eec20cd
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 888fb523ad54f840b5ecbc807b5ed46c8f798efb
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472274"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574900"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -561,7 +561,7 @@ Content-Type: application/json
 若要加入计划的会议，我们需要获取计划会议的线程 ID、消息 ID、组织者 ID 和租户 ID。
 此信息可以从 Get Online [Meetings API 获取](../api/onlinemeeting-get.md)。
 
-授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须与从  [Get Online Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，使示例有效。
+必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 Get Online  [Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，使示例有效。
 > **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限。
 
 ##### <a name="request"></a>请求
@@ -959,7 +959,7 @@ Content-Type: application/json
 ### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>示例 7：使用服务托管媒体加入频道会议
 频道内的会议需要特定的详细信息，如线程 ID、messageid 和组织者详细信息，可以使用[Get Online 会议 API 获取。](../api/onlinemeeting-get.md)
 
-授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须与从  [Get Online Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，使示例有效。
+必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 Get Online  [Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，使示例有效。
 
 > **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限。
 
@@ -1142,28 +1142,7 @@ Content-Type: application/json
 
 > **注意：** 此调用需要Calls.Ini平铺。所有权限。
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。
-
-#### <a name="step-1-create-application-instance"></a>步骤 1：创建应用程序实例
-使用租户管理员凭据，在租户远程 PowerShell 上调用以下 cmdlet 以创建应用程序实例。 有关详细信息，请参阅 [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) 和 [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)。
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>步骤 2：分配 Microsoft 365 许可证
-1. 使用租户管理员凭据登录并转到"用户 https://admin.microsoft.com/ **->用户"** 选项卡。
-2. 选择应用程序实例，分配 **Microsoft 365 国内和国际** 通话套餐和 **Microsoft 365 电话系统 - 虚拟用户** 许可证，然后单击"**保存更改"。** 如果所需许可证在租户中不可用，可以从"计费-> **购买服务"选项卡获取** 它们。
-#### <a name="step-3-acquire-pstn-number"></a>步骤 3：获取 PSTN 号码
-1. 使用租户管理员凭据登录并单击左侧面板上的"旧版 https://admin.teams.microsoft.com/ 门户"选项卡。 
-2. In the new page， go to the **voice -> phone numbers** tab.
-3. 单击 **+** 该按钮， **选择"新建服务号码**"，然后转到 **"添加新服务号码"** 页。
-4. 选择 **国家/地区**、 **省/市/自治区/地区**、 **城市**、输入 **数量**，然后单击 **"添加** "进行搜索。 单击 **获取号码**。 新获取的号码会显示在 **电话号码选项卡** 上。
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>步骤 4：将 PSTN 号码分配给应用程序实例
-使用租户管理员凭据，在租户远程 PowerShell 上调用以下 cmdlet，将 PSTN 号码分配给应用程序实例。 有关详细信息，请参阅 [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) 和 [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)。
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为自动程序分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 以下示例显示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，使示例有效。
@@ -1308,10 +1287,10 @@ Content-Type: application/json
 
 > **注意**：此示例要求Calls.Ini平铺。All 和 Calls.AccessMedia.All 权限。
 
-此呼叫需要分配有 PSTN 号码的应用程序实例，如示例 9 中所述。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为自动程序分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
-以下示例显示了在自动程序与 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由应用程序在本地托管。 替换授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值，使示例正常工作。
+以下示例显示一个请求，请求在自动程序与 PSTN 号码之间进行对等呼叫。 本示例中，媒体由应用程序在本地托管。 替换授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值，使示例正常工作。
 
 <!-- {
   "blockType": "request",

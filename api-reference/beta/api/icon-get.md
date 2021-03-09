@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 24e37908225c2fbb3606f87e1fe4787e79f9332c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d2d7d83fbadd9f86d261ddf918bc4d7bb59f4e33
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402707"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574032"
 ---
 # <a name="get-icon"></a>获取图标
 
@@ -31,8 +31,10 @@ ms.locfileid: "48402707"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/sort/fields/icon
-GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+GET /me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/fields/icon
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -47,7 +49,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookIcon](../resources/workbookicon.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [workbookIcon](../resources/workbookicon.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -1,19 +1,19 @@
 ---
 title: 通过 Microsoft Graph 使用 Excel 工作簿函数
-description: 可以使用以下语法调用任何工作簿函数：`POST /workbook/functions/{function-name}`。 使用 JSON 对象提供正文中的函数参数。 该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。 `null` 的 `error` 值表示该函数执行成功。
+description: 可以使用以下语法调用任何工作簿函数：`POST /me/drive/root/workbook/functions/{function-name}`。 使用 JSON 对象提供正文中的函数参数。 该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。 `null` 的 `error` 值表示该函数执行成功。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 38acd639e5364c28292d71aab54de6a89b0058ac
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 0f475b8a1f2a0efece607ea5281504942e0034ea
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37969771"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573556"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>通过 Microsoft Graph 使用 Excel 工作簿函数
 
-可以使用以下语法调用任何工作簿函数：`POST /workbook/functions/{function-name}`。 使用 JSON 对象提供正文中的函数参数。 该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。 `null` 的 `error` 值表示该函数执行成功。
+可以使用以下语法调用任何工作簿函数：`POST /me/drive/root/workbook/functions/{function-name}`。 使用 JSON 对象提供正文中的函数参数。 该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。 `null` 的 `error` 值表示该函数执行成功。
 
 受支持函数的完整列表在 [此处](https://support.office.com/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
 
@@ -25,10 +25,10 @@ _重要说明_：
 
 在 Excel 电子表格中，`vlookup` 函数需要使用以下参数：
 
-1. lookup_value****（必需）要查找的值。
-2. table_array**table_array**（必需）查阅值所在的单元格的区域。 请注意，查阅值应始终位于区域中的第一列，这样 VLOOKUP 才能正常运行。 例如，如果查阅值位于单元格 C2，那么区域应从 C 列开始。
-3. col_index_num****（必需）包含返回值的区域的列号。 例如，如果指定 B2: D11 作为区域，应将 B 计为第一列，将 C 计为第二列，依此类推。
-4. range_lookup****（可选）一个逻辑值，指定希望 VLOOKUP**** 查找近似匹配还是精确的匹配。 如果想要近似匹配，可指定 TRUE****；如果想要返回值的完全匹配，则可指定 FALSE****。 如果未指定，默认值始终为 TRUE 或近似匹配。
+1. lookup_value（必需）要查找的值。
+2. table_array **table_array**（必需）查阅值所在的单元格的区域。 请注意，查阅值应始终位于区域中的第一列，这样 VLOOKUP 才能正常运行。 例如，如果查阅值位于单元格 C2，那么区域应从 C 列开始。
+3. col_index_num（必需）包含返回值的区域的列号。 例如，如果指定 B2: D11 作为区域，应将 B 计为第一列，将 C 计为第二列，依此类推。
+4. range_lookup（可选）一个逻辑值，指定希望 VLOOKUP 查找近似匹配还是精确的匹配。 如果想要近似匹配，可指定 TRUE；如果想要返回值的完全匹配，则可指定 FALSE。 如果未指定，默认值始终为 TRUE 或近似匹配。
 
 在单元格中，`vlookup` 函数如下所示：
 
@@ -80,7 +80,7 @@ content-type: application/json;odata.metadata
 （请参阅 [MEDIAN Excel 函数](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)文档。）
 
 ##### <a name="request"></a>请求
-下面的示例展示了如何使用 Excel `median` REST API 调用函数和一个或多个输入区域。
+以下示例演示如何使用 Excel REST API 调用函数和一个或多个输入 `median` 范围。
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median

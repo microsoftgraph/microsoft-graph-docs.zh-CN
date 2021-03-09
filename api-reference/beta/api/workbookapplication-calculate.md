@@ -1,18 +1,18 @@
 ---
-title: workbookApplication：计算
+title: workbookApplication： calculate
 description: 重新计算 Excel 中当前打开的所有工作簿。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1d5ffa3d4e3da633e25c69f5165b31f782b77803
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 10b3ecd3115b24a6bc614e83a11b48ee12e280d9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977534"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575222"
 ---
-# <a name="workbookapplication-calculate"></a>workbookApplication：计算
+# <a name="workbookapplication-calculate"></a>workbookApplication： calculate
 
 命名空间：microsoft.graph
 
@@ -32,7 +32,8 @@ ms.locfileid: "48977534"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/application/calculate
+POST /me/drive/items/{id}/workbook/application/calculate
+POST /me/drive/root:/{item-path}:/workbook/application/calculate
 
 ```
 ## <a name="request-headers"></a>请求标头

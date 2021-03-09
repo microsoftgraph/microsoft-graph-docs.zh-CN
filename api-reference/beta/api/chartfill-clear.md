@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 468d4e548d950b5b66b2a9633f8f555494437a96
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d850aac5770c12a8d85589e134b53ef04aa40659
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958765"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574611"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -31,9 +31,12 @@ ms.locfileid: "48958765"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title/format/fill/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/title/format/fill/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>请求标头

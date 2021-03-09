@@ -1,21 +1,21 @@
 ---
 title: 删除 personCertification
-description: 删除一个 personCertification 对象。
+description: 删除 personCertification 对象。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 24183622b540934bdf6007d1fe4b3508de323a17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9defbcc8505176c305626dc710b4ba4c13c634fa
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969293"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573955"
 ---
 # <a name="delete-personcertification"></a>删除 personCertification
 命名空间：microsoft.graph
 
-从用户的[配置文件](../resources/profile.md)中删除[personCertification](../resources/personcertification.md)对象。
+从用户配置文件 [中删除 personCertification](../resources/personcertification.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,8 +23,8 @@ ms.locfileid: "47969293"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -60,7 +60,7 @@ DELETE /users/{id | userPrincipalName}/profile/certifications/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/certifications/{id}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]

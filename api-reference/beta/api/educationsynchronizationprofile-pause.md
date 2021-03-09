@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c0dd8f15ea3cccc6abecb8d4293a8bf9d3a4ce35
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 44477aae7799922008b0a7623fd7e4c91c09e0aa
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965858"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574214"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>暂停 educationSynchronizationProfile 上的同步
 
@@ -32,7 +32,7 @@ ms.locfileid: "48965858"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/pause
+POST /education/synchronizationProfiles/{id}/pause
 ```
 
 ## <a name="request-headers"></a>请求标头

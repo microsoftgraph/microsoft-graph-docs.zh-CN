@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 00faf3bb2523ed4cfdd4467dcd1a1d1ce0fa2856
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 323babcfeeb407f7dcfb94445c7cfa65102fde53
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034252"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576545"
 ---
 # <a name="create-tablecolumn"></a>创建 TableColumn
 
@@ -19,7 +19,7 @@ ms.locfileid: "50034252"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的 TableColumn。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,8 +31,10 @@ ms.locfileid: "50034252"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -46,7 +48,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [workbookTableColumn](../resources/workbooktablecolumn.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回响应代码和 [workbookTableColumn](../resources/workbooktablecolumn.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

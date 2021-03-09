@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 1b654bb3ab45610baba80f4e05ac5072b6fcc1da
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 73a50ae5d6b8b34ac73592bb6bc581bdba2053c4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965511"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574064"
 ---
 # <a name="update-formatprotection"></a>更新 formatProtection
 
@@ -31,9 +31,12 @@ ms.locfileid: "48965511"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format/protection
-PATCH /workbook/worksheets/{id|name}/range(<address>)/format/protection
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format/protection
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/protection
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(<address>)/format/protection
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(<address>)/format/protection
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|

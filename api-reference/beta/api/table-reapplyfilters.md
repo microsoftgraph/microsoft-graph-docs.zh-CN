@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 38bdc93f86755a586d2f028d260ef5780dacaf90
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ed01ae399133dc00ccda40f163490514f298e63
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980433"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576482"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 
@@ -31,8 +31,10 @@ ms.locfileid: "48980433"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/reapplyFilters
-POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
+POST /me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/reapplyFilters
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 
 ```
 ## <a name="request-headers"></a>请求标头

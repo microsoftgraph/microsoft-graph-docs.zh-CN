@@ -1,16 +1,16 @@
 ---
 title: 更新 educationSynchronizationProfile
-description: 更新租户中现有 school 数据同步配置文件的属性。
+description: 更新租户中现有学校数据同步配置文件的属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2145db383d919b218a6d86115dba79d9b9e9875b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27210f444228e3feb5bde98b0b048f26612f4493
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007082"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574109"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>更新 educationSynchronizationProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "48007082"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新租户中现有 school 数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的属性。
+更新租户中现有学校 [数据同步配置文件](../resources/educationsynchronizationprofile.md) 的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,7 @@ ms.locfileid: "48007082"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /synchronizationProfiles
+PUT /education/synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -45,7 +45,7 @@ PUT /synchronizationProfiles
 在请求正文中，提供 [synchronizationProfile](../resources/educationsynchronizationprofile.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `202, Accepted` 在响应正文中返回响应代码和 [synchronizationProfile](../resources/educationsynchronizationprofile.md) 对象。
+如果成功，此方法在响应正文中返回响应 `202, Accepted` 代码和 [synchronizationProfile](../resources/educationsynchronizationprofile.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

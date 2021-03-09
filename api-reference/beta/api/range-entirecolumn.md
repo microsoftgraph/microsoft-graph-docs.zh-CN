@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9c1ccce281550c11894374f9f74f5d1eafca4b26
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a6ba8e018e31b001066ae86b6d016bfe21c94cc2
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974461"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573976"
 ---
 # <a name="range-entirecolumn"></a>Range:EntireColumn
 
@@ -31,9 +31,12 @@ ms.locfileid: "48974461"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/EntireColumn
-GET /workbook/worksheets/{id|name}/range(address='<address>')/EntireColumn
-GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
+GET /me/drive/items/{id}/workbook/names/{name}/range/EntireColumn
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/EntireColumn
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/EntireColumn
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/EntireColumn
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
 
 ```
 ## <a name="request-headers"></a>请求标头

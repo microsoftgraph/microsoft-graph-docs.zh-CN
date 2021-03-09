@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d6de79f2e0395899f0c2061eddcd9b5e9e14bad7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3183e393d66c75afd05ccc2226e5217dd6b4a23
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974531"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573980"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -31,9 +31,12 @@ ms.locfileid: "48974531"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/delete
-POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
-POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
+POST /me/drive/items/{id}/workbook/names/{name}/range/delete
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/delete
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/delete
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/delete
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/delete
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
 ## <a name="request-headers"></a>请求标头

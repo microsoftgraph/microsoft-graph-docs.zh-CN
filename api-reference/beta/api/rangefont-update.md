@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d5b178d461b80bcdf5d074754fd727a4e24c5fb6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7554c121eab155449417cd34984dced48ed537d6
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976206"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573969"
 ---
 # <a name="update-rangefont"></a>更新 rangefont
 
@@ -31,9 +31,12 @@ ms.locfileid: "48976206"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format/font
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/font
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
@@ -55,7 +58,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workbookRangeFont](../resources/workbookrangefont.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [workbookRangeFont](../resources/workbookrangefont.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e577b691f1ebf746f4fb90b736924149fa8af770
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 42a6e79e72cd10d17dcfa725cdd29ea7ada798bc
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882898"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575180"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -20,7 +20,7 @@ ms.locfileid: "49882898"
 
 获取给定范围右侧的一定数量的列。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -32,7 +32,8 @@ ms.locfileid: "49882898"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/columnsAfter(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ```
 ## <a name="function-parameters"></a>函数参数

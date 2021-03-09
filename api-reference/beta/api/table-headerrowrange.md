@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 08f96d3b33d612d1498694fdb5db7a547a05e861
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1d97c26714f5eb70a1d3a51e3e17ff1e25ecb03e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440701"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576573"
 ---
 # <a name="table-headerrowrange"></a>Table:HeaderRowRange
 
@@ -19,20 +19,22 @@ ms.locfileid: "50440701"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取与表的标头行相关的 range 对象。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/HeaderRowRange
-GET /workbook/worksheets/{id|name}/tables/{id|name}/HeaderRowRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/HeaderRowRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/HeaderRowRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/HeaderRowRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/HeaderRowRange
 
 ```
 ## <a name="request-headers"></a>请求标头

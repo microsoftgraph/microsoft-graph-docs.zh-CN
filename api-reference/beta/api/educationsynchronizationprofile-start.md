@@ -1,26 +1,26 @@
 ---
-title: 将文件上传到 educationSynchronizationProfile 后开始同步
-description: 验证是否已将文件上载到租户中的特定学校数据同步配置文件。 如果验证成功，将在配置文件上启动同步。 否则，响应中将包含错误和警告。 如果响应中包含错误，同步将不会启动。 如果响应仅包含警告，将启动同步。
+title: 将文件上载到 educationSynchronizationProfile 后开始同步
+description: 验证上传到租户中特定学校数据同步配置文件的文件。 如果验证成功，将在配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应包含错误，将不会启动同步。 如果响应仅包含警告，将启动同步。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7953171f90c5b9297bca1122cfe21b3ad854287a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04f8f9e96422c262ea816a5f24796d4059b0809c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965796"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574145"
 ---
-# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上传到 educationSynchronizationProfile 后开始同步
+# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上载到 educationSynchronizationProfile 后开始同步
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-验证是否已将文件上载到租户中的特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 。 如果验证成功，将在配置文件上启动同步。 否则，响应中将包含错误和警告。 如果响应中包含错误，同步将不会启动。 如果响应仅包含警告，将启动同步。
+验证上传到租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的文件。 如果验证成功，将在配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应包含错误，将不会启动同步。 如果响应仅包含警告，将启动同步。
 
-> **注意：** 仅当数据提供程序的类型为 [educationcsvdataprovider](../resources/educationcsvdataprovider.md)时，才可使用此方法。 此外，还需要先设置配置文件的 state 属性，然后才能启动该属性。 轮询配置文件对象以检查其状态属性。
+> **注意：** 仅在数据提供程序的类型为 [educationcsvdataprovider 时使用此方法](../resources/educationcsvdataprovider.md)。 此外，在可以启动配置文件之前，还需要设置配置文件的状态属性。 轮询配置文件对象以检查其状态属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,7 +34,7 @@ ms.locfileid: "48965796"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/start
+POST /education/synchronizationProfiles/{id}/start
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -45,7 +45,7 @@ POST /synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。 如果不成功，则返回 `400 Bad Request` 。 如果发现任何错误或警告，响应将包含 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) 对象的集合作为响应正文的一部分。
+如果成功，此方法返回 `200 OK` 响应代码。 如果失败，则返回 `400 Bad Request` 一个 。 如果发现任何错误或警告，响应包含 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) 对象的集合作为响应正文的一部分。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

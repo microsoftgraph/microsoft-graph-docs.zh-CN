@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c0dc0d074ea6f960675a8c0dc96ba6a6b01fe558
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 64a1322f32a879b07b987f4a92a742c766354ccc
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433785"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576464"
 ---
 # <a name="table-totalrowrange"></a>Table:TotalRowRange
 
@@ -19,20 +19,22 @@ ms.locfileid: "50433785"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取与表的总计行相关的 range 对象。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/TotalRowRange
-GET /workbook/worksheets/{id|name}/tables/{id|name}/TotalRowRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/TotalRowRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/TotalRowRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/TotalRowRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/TotalRowRange
 
 ```
 ## <a name="request-headers"></a>请求标头

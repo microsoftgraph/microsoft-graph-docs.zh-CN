@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0faed7d6f85d8aa15ee99ac41d283bb69451a764
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d149f550ef3ebb00848b978da2e042ef593e906b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976245"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576685"
 ---
 # <a name="rangefill-clear"></a>RangeFill: clear
 
@@ -31,9 +31,12 @@ ms.locfileid: "48976245"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/fill/clear
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/fill/clear
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/fill/clear
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/fill/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/fill/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/fill/clear
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>请求标头

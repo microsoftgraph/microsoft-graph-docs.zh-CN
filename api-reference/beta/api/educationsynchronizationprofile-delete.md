@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2dc90964e7637a9b80e56d09618d83878aaaecbf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cc7d03b406888022fc8bab935af2b5118357c0c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955350"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574277"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>删除 educationSynchronizationProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "48955350"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据标识符删除租户中的学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 。
+根据 [标识符删除租户](../resources/educationsynchronizationprofile.md) 中的学校数据同步配置文件。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,7 +30,7 @@ ms.locfileid: "48955350"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /synchronizationProfiles/{id}
+DELETE /education/synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -43,7 +43,7 @@ DELETE /synchronizationProfiles/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法将返回 `202 Accepted` 响应代码，不返回任何响应正文。
+如果成功，此方法将返回 `202 Accepted` 响应代码，并且不会返回响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

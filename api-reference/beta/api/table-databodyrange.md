@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f0493b7f5359e97e3b2db8c3b952a0e9f7071c77
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 61473a8bec62188e251c75233fdb073bee333e7d
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445024"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576636"
 ---
 # <a name="table-databodyrange"></a>Table:DataBodyRange
 
@@ -19,20 +19,22 @@ ms.locfileid: "50445024"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取与表的数据体相关的 range 对象。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/DataBodyRange
-GET /workbook/worksheets/{id|name}/tables/{id|name}/DataBodyRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/DataBodyRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/DataBodyRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/DataBodyRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/DataBodyRange
 
 ```
 ## <a name="request-headers"></a>请求标头

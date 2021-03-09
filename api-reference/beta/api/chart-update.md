@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c8e7f25b04869ec80ecad8fc27eff24a6117b621
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 410300b7339e7d9bc0aa6b5ea0bb437263f42971
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958946"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574753"
 ---
 # <a name="update-chart"></a>更新图表
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958946"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
@@ -52,7 +53,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workbookChart](../resources/workbookchart.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的 [workbookChart](../resources/workbookchart.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

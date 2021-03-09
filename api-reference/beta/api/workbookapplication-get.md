@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d8b660e2e12ea7c209a3e38d9f56bc5f89234de4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 75bc2129f7f92c4c4ad48a2ec5d123d026b69188
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977520"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575229"
 ---
 # <a name="get-workbookapplication"></a>获取 workbookApplication
 
@@ -18,7 +18,7 @@ ms.locfileid: "48977520"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [workbookApplication](../resources/workbookapplication.md) 对象的属性和关系。
+检索 [workbookApplication 对象的属性和](../resources/workbookapplication.md) 关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,8 @@ ms.locfileid: "48977520"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/application
+GET /me/drive/items/{id}/workbook/application
+GET /me/drive/root:/{item-path}:/workbook/application
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -46,7 +47,7 @@ GET /workbook/application
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookApplication](../resources/workbookapplication.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [workbookApplication](../resources/workbookapplication.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a513d08877b28528fb701d597feeee36dca9dc29
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2420d2798b3348688d7b1913d2250b17f732f530
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969589"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575212"
 ---
 # <a name="get-workbookpivottable"></a>Get workbookPivotTable
 
@@ -33,7 +33,8 @@ ms.locfileid: "48969589"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
+GET /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/{id}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。

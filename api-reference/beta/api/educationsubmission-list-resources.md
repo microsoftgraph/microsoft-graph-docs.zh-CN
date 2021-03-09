@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1eb9e7ce677f6d04a6c61572f13a7e81bd127a5f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 9f22b67c47afdb96764b2fadb0b1ea1af2344ed0
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470461"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574291"
 ---
 # <a name="list-resources"></a>列出资源
 
@@ -34,7 +34,7 @@ ms.locfileid: "50470461"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /educationClasses/assignments/{id}/submissions/{id}/resources
+GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

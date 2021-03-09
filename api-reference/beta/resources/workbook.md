@@ -1,22 +1,22 @@
 ---
 title: 工作簿资源类型
-description: 包含相关的工作簿对象，如工作表、表、范围等。
+description: 包含相关的工作簿对象，如工作表、表、区域等。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a2940b4b873630f21ceb3c7db21456e81e8c859a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69d04f6ccd5e537c97854abcb1cf2a9c24820a87
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039186"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575705"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
 命名空间：microsoft.graph
 
-包含相关的工作簿对象，如工作表、表、范围等。
+包含相关的工作簿对象，如工作表、表、区域等。
 
 ## <a name="methods"></a>方法
 
@@ -35,12 +35,12 @@ ms.locfileid: "48039186"
 |names|[workbookNamedItem](workbooknameditem.md) 集合 |表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
 |表格|[workbookTable](workbooktable.md) 集合 |表示与工作簿关联的表的集合。只读。|
 |Worksheets|[workbookWorksheet](workbookworksheet.md) 集合 |表示与工作簿关联的工作表的集合。 只读。|
-|workbbookApplication|[workbookApplication](workbookapplication.md) |表示管理工作簿的 Excel workbookApplication。|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |代表管理工作簿的 Excel workbookApplication。|
 |operations|[workbookOperation](workbookoperation.md) 集合|工作簿操作的状态。 不支持获取操作集合，但如果响应中返回 `Location` 标头，可以获取长时间运行操作的状态。 只读。 可为空。|
 
 ## <a name="functions"></a>函数
 
-[Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`null` 的 `error` 值表示该函数执行成功。 
+[Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /me/drive/root/workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`null` 的 `error` 值表示该函数执行成功。 
 
 受支持函数的完整列表在 [此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f1c03853330fcffe216c0aaf5e3a30372373aa94
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 3a937ecbf523c68adc3b8068a06c775c6a0c9449
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034084"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576293"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 
@@ -19,7 +19,7 @@ ms.locfileid: "50034084"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 根据其在集合中的位置获取列。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,8 +31,10 @@ ms.locfileid: "50034084"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/ItemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/ItemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -50,7 +52,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [workbookTableColumn](../resources/workbooktablecolumn.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

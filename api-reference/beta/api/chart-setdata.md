@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5aa0d5a4584a8dafb105e9f64865a135229d3e0d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9d33a6fd047e3f19ca1f93a1a89837edc0ee7586
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958974"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574774"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -31,7 +31,8 @@ ms.locfileid: "48958974"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/setData
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setData
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/setData
 
 ```
 ## <a name="request-headers"></a>请求标头

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a4024f6805780fb3c972019c4957ad14cb404172
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50f6d99cec55a5d0fd60f941bc2c64c2a6d3e0af
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081816"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576692"
 ---
 # <a name="update-range"></a>更新区域
 
@@ -19,7 +19,7 @@ ms.locfileid: "48081816"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 range 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,9 +31,12 @@ ms.locfileid: "48081816"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range
+PATCH /me/drive/items/{id}/workbook/names/{name}/range
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
@@ -56,7 +59,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workbookRange](../resources/workbookrange.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [workbookRange](../resources/workbookrange.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。该示例更新区域 - 值、数字格式和公式。`null` 输入是为了指示 API 忽略单元格的特定输入。值、数字格式和公式可以独立更新，也可以在同一 API 调用中共同更新。 

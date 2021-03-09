@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: b61baa7046e683977744ce4426dbfade60b1c4a0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d2681c588fd28a2ca4cfbcba00b39893da963a9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442442"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576703"
 ---
 # <a name="nameditem-range"></a>NamedItem：Range
 
@@ -19,19 +19,20 @@ ms.locfileid: "50442442"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/Range
+GET /me/drive/items/{id}/workbook/names/{name}/Range
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/Range
 
 ```
 ## <a name="request-headers"></a>请求标头

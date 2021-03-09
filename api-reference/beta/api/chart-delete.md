@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cdd0c5987ce7ee73b3185030d72d97e616c9eebf
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: a270319dcad87451c90258203eb13b4817908783
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515791"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574836"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -26,13 +26,13 @@ ms.locfileid: "50515791"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/worksheets/{id|name}/charts/{name}
-
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
