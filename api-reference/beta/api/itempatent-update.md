@@ -5,30 +5,30 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b480f7ba45b0b3ea6cea7625af373650ac279414
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 442c5360438755f8d48b156b9ca7911380add017
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999410"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577424"
 ---
-# <a name="update-itempatent"></a><span data-ttu-id="4167b-103">更新 itemPatent</span><span class="sxs-lookup"><span data-stu-id="4167b-103">Update itemPatent</span></span>
+# <a name="update-itempatent"></a><span data-ttu-id="95027-103">更新 itemPatent</span><span class="sxs-lookup"><span data-stu-id="95027-103">Update itemPatent</span></span>
 
-<span data-ttu-id="4167b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4167b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="95027-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="95027-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4167b-105">更新 [itemPatent](../resources/itempatent.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="4167b-105">Update the properties of an [itemPatent](../resources/itempatent.md) object.</span></span>
+<span data-ttu-id="95027-105">更新 [itemPatent 对象](../resources/itempatent.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="95027-105">Update the properties of an [itemPatent](../resources/itempatent.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4167b-106">权限</span><span class="sxs-lookup"><span data-stu-id="4167b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="95027-106">权限</span><span class="sxs-lookup"><span data-stu-id="95027-106">Permissions</span></span>
 
-<span data-ttu-id="4167b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4167b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="95027-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="95027-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4167b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4167b-109">Permission type</span></span>                        | <span data-ttu-id="4167b-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4167b-110">Permissions (from least to most privileged)</span></span>                                      |
+| <span data-ttu-id="95027-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="95027-109">Permission type</span></span>                        | <span data-ttu-id="95027-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="95027-110">Permissions (from least to most privileged)</span></span>                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| <span data-ttu-id="4167b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4167b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4167b-112">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="4167b-112">User.ReadWrite, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="4167b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4167b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4167b-114">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="4167b-114">User.ReadWrite, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="4167b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4167b-115">Application</span></span>                            | <span data-ttu-id="4167b-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4167b-116">User.ReadWrite.All</span></span>                            |
+| <span data-ttu-id="95027-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="95027-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="95027-112">User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95027-112">User.ReadWrite, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="95027-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="95027-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95027-114">User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95027-114">User.ReadWrite, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="95027-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="95027-115">Application</span></span>                            | <span data-ttu-id="95027-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95027-116">User.ReadWrite.All</span></span>                            |
 
-## <a name="http-request"></a><span data-ttu-id="4167b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4167b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="95027-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="95027-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,44 +39,44 @@ PATCH /me/profile/patents/{id}
 PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4167b-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4167b-118">Request headers</span></span>
-|<span data-ttu-id="4167b-119">名称</span><span class="sxs-lookup"><span data-stu-id="4167b-119">Name</span></span>|<span data-ttu-id="4167b-120">说明</span><span class="sxs-lookup"><span data-stu-id="4167b-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="95027-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="95027-118">Request headers</span></span>
+|<span data-ttu-id="95027-119">名称</span><span class="sxs-lookup"><span data-stu-id="95027-119">Name</span></span>|<span data-ttu-id="95027-120">说明</span><span class="sxs-lookup"><span data-stu-id="95027-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="4167b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4167b-121">Authorization</span></span>|<span data-ttu-id="4167b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4167b-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="4167b-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4167b-124">Content-Type</span></span>|<span data-ttu-id="4167b-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="4167b-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="95027-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="95027-121">Authorization</span></span>|<span data-ttu-id="95027-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="95027-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="95027-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="95027-124">Content-Type</span></span>|<span data-ttu-id="95027-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="95027-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4167b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4167b-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="95027-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="95027-127">Request body</span></span>
 
-<span data-ttu-id="4167b-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="4167b-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="4167b-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="4167b-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="4167b-130">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="4167b-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="95027-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="95027-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="95027-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="95027-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="95027-130">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="95027-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-|<span data-ttu-id="4167b-131">属性</span><span class="sxs-lookup"><span data-stu-id="4167b-131">Property</span></span>|<span data-ttu-id="4167b-132">类型</span><span class="sxs-lookup"><span data-stu-id="4167b-132">Type</span></span>|<span data-ttu-id="4167b-133">说明</span><span class="sxs-lookup"><span data-stu-id="4167b-133">Description</span></span>|
+|<span data-ttu-id="95027-131">属性</span><span class="sxs-lookup"><span data-stu-id="95027-131">Property</span></span>|<span data-ttu-id="95027-132">类型</span><span class="sxs-lookup"><span data-stu-id="95027-132">Type</span></span>|<span data-ttu-id="95027-133">说明</span><span class="sxs-lookup"><span data-stu-id="95027-133">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4167b-134">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="4167b-134">allowedAudiences</span></span>|<span data-ttu-id="4167b-135">String</span><span class="sxs-lookup"><span data-stu-id="4167b-135">String</span></span>|<span data-ttu-id="4167b-136">能够查看实体中包含的值的访问群体。</span><span class="sxs-lookup"><span data-stu-id="4167b-136">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="4167b-137">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="4167b-137">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="4167b-138">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="4167b-138">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="4167b-139">description</span><span class="sxs-lookup"><span data-stu-id="4167b-139">description</span></span>|<span data-ttu-id="4167b-140">String</span><span class="sxs-lookup"><span data-stu-id="4167b-140">String</span></span>|<span data-ttu-id="4167b-141">专利或档案的 Descpription。</span><span class="sxs-lookup"><span data-stu-id="4167b-141">Descpription of the patent or filing.</span></span> |
-|<span data-ttu-id="4167b-142">displayName</span><span class="sxs-lookup"><span data-stu-id="4167b-142">displayName</span></span>|<span data-ttu-id="4167b-143">String</span><span class="sxs-lookup"><span data-stu-id="4167b-143">String</span></span>|<span data-ttu-id="4167b-144">专利或档案的标题。</span><span class="sxs-lookup"><span data-stu-id="4167b-144">Title of the patent or filing.</span></span> |
-|<span data-ttu-id="4167b-145">推导</span><span class="sxs-lookup"><span data-stu-id="4167b-145">inference</span></span>|[<span data-ttu-id="4167b-146">inferenceData</span><span class="sxs-lookup"><span data-stu-id="4167b-146">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="4167b-147">如果实体是由创建或修改应用程序推断的，则包含推理详细信息。</span><span class="sxs-lookup"><span data-stu-id="4167b-147">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="4167b-148">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="4167b-148">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="4167b-149">isPending</span><span class="sxs-lookup"><span data-stu-id="4167b-149">isPending</span></span>        |<span data-ttu-id="4167b-150">Boolean</span><span class="sxs-lookup"><span data-stu-id="4167b-150">Boolean</span></span>     |<span data-ttu-id="4167b-151">指示专利处于待处理状态。</span><span class="sxs-lookup"><span data-stu-id="4167b-151">Indicates the patent is pending.</span></span>        |
-|<span data-ttu-id="4167b-152">issuedDate</span><span class="sxs-lookup"><span data-stu-id="4167b-152">issuedDate</span></span>       |<span data-ttu-id="4167b-153">日期</span><span class="sxs-lookup"><span data-stu-id="4167b-153">Date</span></span>        |<span data-ttu-id="4167b-154">授予专利的日期。</span><span class="sxs-lookup"><span data-stu-id="4167b-154">The date that the patent was granted.</span></span>   |
-|<span data-ttu-id="4167b-155">issuingAuthority</span><span class="sxs-lookup"><span data-stu-id="4167b-155">issuingAuthority</span></span> |<span data-ttu-id="4167b-156">String</span><span class="sxs-lookup"><span data-stu-id="4167b-156">String</span></span>      |<span data-ttu-id="4167b-157">授予专利的证书颁发机构。</span><span class="sxs-lookup"><span data-stu-id="4167b-157">Authority which granted the patent.</span></span>     |
-|<span data-ttu-id="4167b-158">数字</span><span class="sxs-lookup"><span data-stu-id="4167b-158">number</span></span>           |<span data-ttu-id="4167b-159">String</span><span class="sxs-lookup"><span data-stu-id="4167b-159">String</span></span>      |<span data-ttu-id="4167b-160">专利号码。</span><span class="sxs-lookup"><span data-stu-id="4167b-160">The patent number.</span></span>                      |
-|<span data-ttu-id="4167b-161">source</span><span class="sxs-lookup"><span data-stu-id="4167b-161">source</span></span>|[<span data-ttu-id="4167b-162">personDataSource</span><span class="sxs-lookup"><span data-stu-id="4167b-162">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="4167b-163">值的来源，如果从另一个服务同步。</span><span class="sxs-lookup"><span data-stu-id="4167b-163">Where the values originated if synced from another service.</span></span> <span data-ttu-id="4167b-164">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="4167b-164">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="4167b-165">webUrl</span><span class="sxs-lookup"><span data-stu-id="4167b-165">webUrl</span></span>           |<span data-ttu-id="4167b-166">String</span><span class="sxs-lookup"><span data-stu-id="4167b-166">String</span></span>      |<span data-ttu-id="4167b-167">引用专利或档案的 URL。</span><span class="sxs-lookup"><span data-stu-id="4167b-167">URL referencing the patent or filing.</span></span> |
+|<span data-ttu-id="95027-134">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="95027-134">allowedAudiences</span></span>|<span data-ttu-id="95027-135">字符串</span><span class="sxs-lookup"><span data-stu-id="95027-135">String</span></span>|<span data-ttu-id="95027-136">能够查看实体中包含的值的访问群体。</span><span class="sxs-lookup"><span data-stu-id="95027-136">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="95027-137">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="95027-137">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="95027-138">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="95027-138">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="95027-139">说明</span><span class="sxs-lookup"><span data-stu-id="95027-139">description</span></span>|<span data-ttu-id="95027-140">字符串</span><span class="sxs-lookup"><span data-stu-id="95027-140">String</span></span>|<span data-ttu-id="95027-141">专利或归档的反授权。</span><span class="sxs-lookup"><span data-stu-id="95027-141">Descpription of the patent or filing.</span></span> |
+|<span data-ttu-id="95027-142">displayName</span><span class="sxs-lookup"><span data-stu-id="95027-142">displayName</span></span>|<span data-ttu-id="95027-143">字符串</span><span class="sxs-lookup"><span data-stu-id="95027-143">String</span></span>|<span data-ttu-id="95027-144">专利或归档的标题。</span><span class="sxs-lookup"><span data-stu-id="95027-144">Title of the patent or filing.</span></span> |
+|<span data-ttu-id="95027-145">推断</span><span class="sxs-lookup"><span data-stu-id="95027-145">inference</span></span>|[<span data-ttu-id="95027-146">inferenceData</span><span class="sxs-lookup"><span data-stu-id="95027-146">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="95027-147">包含实体是否由创建或修改应用程序推断的推断详细信息。</span><span class="sxs-lookup"><span data-stu-id="95027-147">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="95027-148">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="95027-148">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="95027-149">isPending</span><span class="sxs-lookup"><span data-stu-id="95027-149">isPending</span></span>        |<span data-ttu-id="95027-150">Boolean</span><span class="sxs-lookup"><span data-stu-id="95027-150">Boolean</span></span>     |<span data-ttu-id="95027-151">指示正在申请专利。</span><span class="sxs-lookup"><span data-stu-id="95027-151">Indicates the patent is pending.</span></span>        |
+|<span data-ttu-id="95027-152">issuedDate</span><span class="sxs-lookup"><span data-stu-id="95027-152">issuedDate</span></span>       |<span data-ttu-id="95027-153">日期</span><span class="sxs-lookup"><span data-stu-id="95027-153">Date</span></span>        |<span data-ttu-id="95027-154">授予专利的日期。</span><span class="sxs-lookup"><span data-stu-id="95027-154">The date that the patent was granted.</span></span>   |
+|<span data-ttu-id="95027-155">issuingAuthority</span><span class="sxs-lookup"><span data-stu-id="95027-155">issuingAuthority</span></span> |<span data-ttu-id="95027-156">字符串</span><span class="sxs-lookup"><span data-stu-id="95027-156">String</span></span>      |<span data-ttu-id="95027-157">授予专利的颁发机构。</span><span class="sxs-lookup"><span data-stu-id="95027-157">Authority which granted the patent.</span></span>     |
+|<span data-ttu-id="95027-158">number</span><span class="sxs-lookup"><span data-stu-id="95027-158">number</span></span>           |<span data-ttu-id="95027-159">字符串</span><span class="sxs-lookup"><span data-stu-id="95027-159">String</span></span>      |<span data-ttu-id="95027-160">专利号。</span><span class="sxs-lookup"><span data-stu-id="95027-160">The patent number.</span></span>                      |
+|<span data-ttu-id="95027-161">source</span><span class="sxs-lookup"><span data-stu-id="95027-161">source</span></span>|[<span data-ttu-id="95027-162">personDataSource</span><span class="sxs-lookup"><span data-stu-id="95027-162">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="95027-163">如果从另一个服务同步，则值源自何处。</span><span class="sxs-lookup"><span data-stu-id="95027-163">Where the values originated if synced from another service.</span></span> <span data-ttu-id="95027-164">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="95027-164">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="95027-165">WebUrl</span><span class="sxs-lookup"><span data-stu-id="95027-165">webUrl</span></span>           |<span data-ttu-id="95027-166">String</span><span class="sxs-lookup"><span data-stu-id="95027-166">String</span></span>      |<span data-ttu-id="95027-167">引用专利或归档的 URL。</span><span class="sxs-lookup"><span data-stu-id="95027-167">URL referencing the patent or filing.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="4167b-168">响应</span><span class="sxs-lookup"><span data-stu-id="4167b-168">Response</span></span>
+## <a name="response"></a><span data-ttu-id="95027-168">响应</span><span class="sxs-lookup"><span data-stu-id="95027-168">Response</span></span>
 
-<span data-ttu-id="4167b-169">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [itemPatent](../resources/itempatent.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4167b-169">If successful, this method returns a `200 OK` response code and an updated [itemPatent](../resources/itempatent.md) object in the response body.</span></span>
+<span data-ttu-id="95027-169">如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [itemPatent](../resources/itempatent.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="95027-169">If successful, this method returns a `200 OK` response code and an updated [itemPatent](../resources/itempatent.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4167b-170">示例</span><span class="sxs-lookup"><span data-stu-id="4167b-170">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="95027-170">示例</span><span class="sxs-lookup"><span data-stu-id="95027-170">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="4167b-171">请求</span><span class="sxs-lookup"><span data-stu-id="4167b-171">Request</span></span>
-# <a name="http"></a>[<span data-ttu-id="4167b-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="4167b-172">HTTP</span></span>](#tab/http)
+### <a name="request"></a><span data-ttu-id="95027-171">请求</span><span class="sxs-lookup"><span data-stu-id="95027-171">Request</span></span>
+# <a name="http"></a>[<span data-ttu-id="95027-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="95027-172">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_itempatent"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/patents/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 Content-Type: application/json
 Content-length: 497
 
@@ -85,22 +85,22 @@ Content-length: 497
   "webUrl": "https://patents.gov/3954432633"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4167b-173">C#</span><span class="sxs-lookup"><span data-stu-id="4167b-173">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="95027-173">C#</span><span class="sxs-lookup"><span data-stu-id="95027-173">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4167b-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4167b-174">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="95027-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="95027-174">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4167b-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4167b-175">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="95027-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="95027-175">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="4167b-176">响应</span><span class="sxs-lookup"><span data-stu-id="4167b-176">Response</span></span>
-<span data-ttu-id="4167b-177">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4167b-177">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="95027-176">响应</span><span class="sxs-lookup"><span data-stu-id="95027-176">Response</span></span>
+<span data-ttu-id="95027-177">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="95027-177">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -271,6 +271,8 @@ items:
           - name: 目录对象
             href: resources/directoryobject.md
             items:
+              - name: 激活服务计划
+                href: api/user-activateserviceplan.md
               - name: 分配许可证
                 href: api/user-assignlicense.md
               - name: 检查成员组
@@ -1592,7 +1594,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
-      - name: 客户预订（预览版）
+      - name: 客户预订（预览）
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: 概述
@@ -6477,7 +6479,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskuwpapp.md
                   - name: Windows Kiosk 访问者
                     href: resources/intune-deviceconfig-windowskioskvisitor.md
-                  - name: Windows 展台 win32 应用
+                  - name: Windows Kiosk win32 应用
                     href: resources/intune-deviceconfig-windowskioskwin32app.md
                   - name: Windows 网络隔离策略
                     href: resources/intune-deviceconfig-windowsnetworkisolationpolicy.md
@@ -10943,7 +10945,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 组的访问评审
                 href: resources/accessreviewsv2-root.md
