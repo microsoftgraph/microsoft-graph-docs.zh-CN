@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: eb45ef827102cea2a43435af4d7f5b7925843729
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91efcaf38191b4f975ce27d1219fc3ba7c862b91
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059871"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573906"
 ---
 # <a name="update-chartdatalabels"></a>更新 chartdatalabels
 
@@ -24,12 +24,13 @@ ms.locfileid: "48059871"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
@@ -42,7 +43,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|position|string|表示数据标签的位置的 DataLabelPosition 值。 可能的值为：、、、、、、、、、、 `None` `Center` `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom` `BestFit` `Callout` 。|
+|position|string|表示数据标签的位置的 DataLabelPosition 值。 可能的值是： `None` ， `Center` ， ， ， ， ， `InsideEnd` ， `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom` `BestFit` `Callout` 。|
 |Separator|string|表示用于图表中数据标签的分隔符的字符串。|
 |showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
 |showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
@@ -53,7 +54,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookChartDataLabels](../resources/chartdatalabels.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [WorkbookChartDataLabels](../resources/chartdatalabels.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

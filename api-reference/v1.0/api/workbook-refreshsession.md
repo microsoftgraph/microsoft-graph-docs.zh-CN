@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 228eb4a122e2c8ab20569047fff811b72a1eac22
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 5e4aaad295abc4ce83b8669f3d4053edafb1ad5d
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292899"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575838"
 ---
 # <a name="refresh-session"></a>刷新会话
 
@@ -25,12 +25,13 @@ ms.locfileid: "50292899"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/refreshSession
+POST /me/drive/items/{id}/workbook/refreshSession
+POST /me/drive/root:/{item-path}:/workbook/refreshSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>请求标头

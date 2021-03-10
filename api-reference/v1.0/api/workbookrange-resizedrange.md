@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9c19dabb01cba3d8277b5d251a9da11ff9bfb160
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 31a7cf1b88f54309bb43c1a021673bd29f290dae
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083160"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573584"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 
-命名空间： microsoft. graph 获取一个 range 对象，该对象与当前的 range 对象类似，但其右下角展开 (或按一定数量的行和列收缩) 。
+命名空间：microsoft.graph 获取一个与当前 range 对象类似的 range 对象，但其右下角展开 (或) 行和列数缩小。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -23,12 +23,13 @@ ms.locfileid: "48083160"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
+POST /me/drive/items/{id}/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 
 ```
 
@@ -37,7 +38,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |deltaRows|Int32|相对于当前范围，右下角展开的行数。使用正数可展开范围，使用负数可合拢范围|
-|deltaColumns|Int32|相对于当前范围，从右下角扩展的列数。 使用正数可展开范围，使用负数可合拢范围。|
+|deltaColumns|Int32|相对于当前区域展开右下角的列数。 使用正数可展开范围，使用负数可合拢范围。|
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

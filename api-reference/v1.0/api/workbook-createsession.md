@@ -1,18 +1,18 @@
 ---
-title: 工作簿： createSession
+title: workbook： createSession
 description: 创建新的工作簿会话。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a7b021173b28826642898d96c889a955f8bd182e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f931313e09068892ebbe167ecb85d5577a148f92
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970899"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575054"
 ---
-# <a name="workbook-createsession"></a>工作簿： createSession
+# <a name="workbook-createsession"></a>workbook： createSession
 
 命名空间：microsoft.graph
 
@@ -25,13 +25,13 @@ ms.locfileid: "47970899"
 
 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 
 
->**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。  
+>**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改 _仅_ 保持在该文件中。  
 
-在某些情况下，创建新的会话需要不确定的时间才能完成。 Microsoft Graph 还提供了长时间运行的操作模式。 此模式提供了一种方法来轮询创建状态更新，而无需等待创建完成。 步骤如下：
+在某些情况下，创建新会话需要不确定的时间才能完成。 Microsoft Graph 还提供长时间运行的操作模式。 此模式提供了一种轮询创建状态更新的方法，而无需等待创建完成。 步骤如下：
 
-1. 向 `Prefer: respond-async` 请求中添加一个标头，以指示它是一个长时间运行的操作。
-2. 响应返回一个 `Location` 标头，以指定用于轮询创建操作状态的 URL。 您可以通过访问指定的 URL 来获取操作状态。 状态将为以下之一： `notStarted` 、、 `running` `succeeded` 或 `failed` 。
-3. 操作完成后，可以再次请求状态，响应将显示为 `succeeded` 或 `failed` 。
+1. 标头 `Prefer: respond-async` 将添加到请求中，以指示这是长时间运行的操作。
+2. 响应返回一 `Location` 个标头以指定轮询创建操作状态的 URL。 可以通过访问指定的 URL 获取操作状态。 状态将为以下项之一：、、 `notStarted` `running` `succeeded` 或 `failed` 。
+3. 操作完成后，可以再次请求状态，响应将显示或 `succeeded` `failed` 。
 
 ## <a name="error-handling"></a>错误处理
 
@@ -44,12 +44,13 @@ ms.locfileid: "47970899"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/createSession
+POST /me/drive/items/{id}/workbook/createSession
+POST /me/drive/root:/{item-path}:/workbook/createSession
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -61,11 +62,11 @@ POST /workbook/createSession
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookSessionInfo](../resources/workbooksessioninfo.md) 对象。 对于长时间运行的操作，它会 `202 Accepted ` 在响应中返回响应代码和 `Location` 标头，其中包含空正文。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [workbookSessionInfo](../resources/workbooksessioninfo.md) 对象。 对于长时间运行的操作，它会在响应中返回一个响应代码和一个正文为空 `202 Accepted ` `Location` 的标头。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-basic-session-creation"></a>示例1：基本会话创建
+### <a name="example-1-basic-session-creation"></a>示例 1：基本会话创建
 #### <a name="request"></a>请求
 
 
@@ -119,7 +120,7 @@ Content-length: 52
 }
 ```
 
-### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>示例2：使用长时间运行的操作模式创建的会话
+### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>示例 2：使用长时间运行的操作模式创建会话
 
 #### <a name="request"></a>请求
 

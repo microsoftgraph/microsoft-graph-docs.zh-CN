@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f5761a90cafafc00abb00ec40318a3fac176b5c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a56aec44618ef160853d058263a31a0d335d8442
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051562"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576146"
 ---
 # <a name="range-usedrange"></a>Range:UsedRange
 
@@ -24,15 +24,18 @@ ms.locfileid: "48051562"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/usedRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/usedRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
+GET /me/drive/items/{id}/workbook/names/{name}/range/usedRange
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/usedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/usedRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -106,7 +109,7 @@ Content-length: 169
 }
 ```
 
-下面是一个指定可选参数的示例 `valuesOnly` 。
+下面是指定可选参数 `valuesOnly` 的示例。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

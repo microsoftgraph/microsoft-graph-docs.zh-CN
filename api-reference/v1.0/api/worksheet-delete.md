@@ -5,31 +5,32 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ee46051e611866c3e18d72396762276eb22f52e7
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: baa6b565e86de889385f39d898f0143c20670def
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515777"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575383"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
 
 命名空间：microsoft.graph
 
 从工作簿中删除工作表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/worksheets/{id|name}
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 
 ```
 ## <a name="request-headers"></a>请求标头

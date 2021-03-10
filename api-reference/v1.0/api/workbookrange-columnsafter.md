@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b8bc3eac6f73f0395fde20eb4e9dd43f36979a98
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 57edb0762d5e0d6b3b2061c52cee4d3374415345
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883157"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577518"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -18,26 +18,27 @@ ms.locfileid: "49883157"
 
 获取给定范围右侧的一定数量的列。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/columnsAfter(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ```
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |count|Int32|可选。 生成的范围中要包含的列数。 一般来说，使用正数可以在当前范围之外创建一个范围。 也可以使用负数在当前范围之内创建一个范围。 默认值为 1|
 

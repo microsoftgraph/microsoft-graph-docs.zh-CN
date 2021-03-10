@@ -5,33 +5,36 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0914de180efce76551e965d4b453e7f35f94a35b
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ebd1f42018ef2d92588a1b4119110fcd287730f9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458477"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577224"
 ---
 # <a name="get-rangeformat"></a>获取 RangeFormat
 
 命名空间：microsoft.graph
 
 检索 rangeformat 对象的属性和关系。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format
-GET /workbook/worksheets/{id|name}/range(address='<address>')/format
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format
+GET /me/drive/items/{id}/workbook/names/{name}/range/format
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -47,7 +50,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookRangeFormat](../resources/rangeformat.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [WorkbookRangeFormat](../resources/rangeformat.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

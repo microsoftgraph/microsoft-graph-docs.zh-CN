@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 49a29f78963758ffad5ffe5bd7236429b52a0d37
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43bc6bc3646dadde3b8438977daa5f1b41682582
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988665"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575866"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet:UsedRange
 
@@ -24,18 +24,19 @@ ms.locfileid: "47988665"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/usedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/usedRange
 
 ```
 
 ## <a name="function-parameters"></a>函数参数
-在请求 URL 中，可以提供可选参数。
+在请求 URL 中，您可以提供可选参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -107,7 +108,7 @@ Content-length: 169
 }
 ```
 
-或者，也可以使用可选参数调用此函数 `valuesOnly` 。
+或者，可以使用可选参数调用此 `valuesOnly` 函数。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

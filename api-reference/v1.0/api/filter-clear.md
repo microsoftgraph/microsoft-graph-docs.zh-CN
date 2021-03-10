@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: cceb7aacf1b06e15397ac9b227f9a595ee4d78b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dbc241b6f93fb36f644d4d6d5e579242ee55b591
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038633"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573885"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
@@ -24,13 +24,15 @@ ms.locfileid: "48038633"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/filter/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
 
 ```
 ## <a name="request-headers"></a>请求标头

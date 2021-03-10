@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 80054510b1bb64ab0bb069ce7b0d5b85512f9ca6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b6a17c5dd650691114e6f6dfba43e70c5ed557c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970760"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573640"
 ---
 # <a name="create-workbookcommentreply"></a>创建 workbookCommentReply
 
@@ -26,14 +26,15 @@ ms.locfileid: "47970760"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Files.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /workbook/comments/{id}/replies
+POST /me/drive/items/{id}/workbook/comments/{id}/replies
+POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +49,7 @@ POST /workbook/comments/{id}/replies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [workbookCommentReply](../resources/workbookcommentreply.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [workbookCommentReply](../resources/workbookcommentreply.md) 对象。
 
 ## <a name="examples"></a>示例
 

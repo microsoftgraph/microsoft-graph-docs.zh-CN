@@ -5,32 +5,34 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f25491b15716522d1ade22781465dfd53c06f610
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 630e794aedac820b11c173462155738642cdc09b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034245"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577112"
 ---
 # <a name="list-tablecolumncollection"></a>列出 TableColumnCollection
 
 命名空间：microsoft.graph
 
 检索 tablecolumn 对象的列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/columns
-GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -46,7 +48,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 WorkbookTableColumn](../resources/workbooktablecolumn.md) 对象集合。
+如果成功，此方法在响应正文中返回一个响应代码和 `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

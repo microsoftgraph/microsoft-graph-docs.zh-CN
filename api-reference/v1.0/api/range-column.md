@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ca1505a9d6d619595b0b87057501ed8b389d959a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5fd63973a74b9ee7f283b1c526f819aac463a859
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971046"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577777"
 ---
 # <a name="range-column"></a>Range:Column
 
@@ -24,15 +24,18 @@ ms.locfileid: "47971046"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/column
-GET /workbook/worksheets/{id|name}/range(address='<address>')/column
-GET /workbook/tables/{id|name}/columns/{id|name}/range/column
+GET /me/drive/items/{id}/workbook/names/{name}/range/column
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/column
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/column
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/column
 
 ```
 ## <a name="request-headers"></a>请求标头

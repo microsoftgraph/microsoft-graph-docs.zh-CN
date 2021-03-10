@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c79bb7be3c8a82fb1d489ffc0602b842f2b1b833
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c2289c29e7e8c69e8838955bbc01fdb33de5391
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970808"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575824"
 ---
 # <a name="create-table"></a>创建表
 
@@ -24,12 +24,13 @@ ms.locfileid: "47970808"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{table-id}/add
+POST /me/drive/items/{id}/workbook/tables/{table-id}/add
+POST /me/drive/root:/{item-path}:/workbook/tables/{table-id}/add
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +49,7 @@ POST /workbook/tables/{table-id}/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [WorkbookTable](../resources/table.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和 [WorkbookTable](../resources/table.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

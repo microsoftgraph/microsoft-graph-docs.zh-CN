@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3a9efc1fbbb2649ce6d0f183e8fc1aeb0fc7d813
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2eb4daf605bdebcf1885def6d2a66ced878ef81c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984780"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577784"
 ---
 # <a name="update-rangeformat"></a>更新 RangeFormat
 
@@ -24,14 +24,17 @@ ms.locfileid: "47984780"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -45,19 +48,19 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |columnWidth|double|获取或设置区域内的所有列的宽度。如果列宽不统一，则返回 NULL。|
-|horizontalAlignment|string|表示指定对象的水平对齐方式。 可能的值为：、、、、、、 `General` `Left` `Center` `Right` `Fill` `Justify` `CenterAcrossSelection` `Distributed` 。|
+|horizontalAlignment|string|表示指定对象的水平对齐方式。 可能的值是： `General` ， `Left` ， ， ， ， `Center` `Right` `Fill` `Justify` `CenterAcrossSelection` 。 `Distributed`|
 |rowHeight|double|获取或设置区域中所有行的高度。如果行高不统一，则返回 NULL。|
 |verticalAlignment|string|表示指定对象的垂直对齐方式。 可能的值包括 `Top`、`Center`、`Bottom`、`Justify`、`Distributed`。|
 |wrapText|boolean|指示 Excel 是否将对象中的文本换行。指示整个区域不具有统一换行设置的空值|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookRangeFormat](../resources/rangeformat.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [WorkbookRangeFormat](../resources/rangeformat.md) 对象。
 ## <a name="example"></a>示例
 
 ### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>更新三个表格单元格的格式、填充和字体属性
 
-下面的示例演示如何更新指定区域的 [WorkbookRangeFormat](../resources/rangeformat.md)、 [WorkbookRangeFill](../resources/rangefill.md)和 [WorkbookRangeFont](../resources/rangefont.md) 属性的属性。
+以下示例演示如何更新指定范围的[WorkbookRangeFormat、WorkbookRangeFill](../resources/rangeformat.md)[](../resources/rangefill.md)和[WorkbookRangeFont](../resources/rangefont.md)属性的属性。
 
 这组请求的结果是一个表格，其中的三个单元格的格式如下图中的前三个单元格所示。
 
@@ -456,7 +459,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request"></a>请求
-此请求更新第三个单元格的字形、大小和颜色。 请注意，下划线属性采用**单**或**双**作为值。
+此请求更新第三个单元格的字形、大小和颜色。 请注意，下划线属性采用 **单** 或 **双** 作为值。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

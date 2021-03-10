@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4a1d5f45fe4979fe6bef50fbf25e823999cbd6f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1b77656aef9bc4e0daeb90705d8394205fd4d4e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015452"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575024"
 ---
 # <a name="update-worksheet"></a>更新工作表
 
@@ -24,12 +24,13 @@ ms.locfileid: "48015452"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
@@ -48,7 +49,7 @@ PATCH /workbook/worksheets/{id|name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookWorksheet](../resources/worksheet.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [WorkbookWorksheet](../resources/worksheet.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

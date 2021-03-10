@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 82bf226d76a0db2f90d91284095a11419f62b0b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e16a81e0c1b1bcc78e2109718638a5e50d12d74d
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978739"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574907"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -24,14 +24,17 @@ ms.locfileid: "47978739"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/delete
-POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
-POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
+POST /me/drive/items/{id}/workbook/names/{name}/range/delete
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/delete
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/delete
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/delete
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/delete
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -45,7 +48,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|Shift|string|指定移动单元格的方式。  可能的值为： `Up` 、 `Left` 。|
+|Shift|string|指定移动单元格的方式。  可能的值是： `Up` `Left` 。|
 
 ## <a name="response"></a>响应
 

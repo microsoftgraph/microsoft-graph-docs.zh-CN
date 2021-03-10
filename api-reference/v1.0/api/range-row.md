@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b83cf8aedb7eced4d6a3388726b0083dff0ff10b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e2ac623e5751b822c7d14be7a63344a0197129dd
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051543"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576160"
 ---
 # <a name="range-row"></a>Range:Row
 
@@ -24,14 +24,17 @@ ms.locfileid: "48051543"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/row
-POST /workbook/worksheets/{id|name}/range(address='<address>')/row
-POST /workbook/tables/{id|name}/columns/{id|name}/range/row
+POST /me/drive/items/{id}/workbook/names/{name}/range/row
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/row
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/row
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/row
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/row
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/row
 
 ```
 ## <a name="request-headers"></a>请求标头

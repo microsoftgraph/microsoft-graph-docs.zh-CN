@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4ba770c4a17dc07b56c91a657a182ce501f2c240
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df9279c091fd2c69a95ebfad72dbee0aa472079b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984857"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576223"
 ---
 # <a name="add-named-item"></a>添加已命名项
 
@@ -25,13 +25,15 @@ ms.locfileid: "47984857"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite、Sites.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Sites.Read.All |
+|Application | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/add
-POST /workbook/worksheets/{id|name}/names/add
+POST /me/drive/items/{id}/workbook/names/add
+POST /me/drive/root:/{item-path}:/workbook/names/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/names/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -51,7 +53,7 @@ POST /workbook/worksheets/{id|name}/names/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookNamedItem](../resources/nameditem.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [WorkbookNamedItem](../resources/nameditem.md) 对象。
 
 
 ## <a name="example"></a>示例

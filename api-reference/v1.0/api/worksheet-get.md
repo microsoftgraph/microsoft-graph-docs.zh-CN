@@ -5,31 +5,32 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bf571ac8d11b4cb16288bfec2104f61a11f52b7c
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 38f6fefba79fa4be74c4912afe4109830a3e6b0e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635451"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575411"
 ---
 # <a name="get-worksheet"></a>获取工作表
 
 命名空间：microsoft.graph
 
 检索 worksheet 对象的属性和关系。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -45,7 +46,7 @@ GET /workbook/worksheets/{id|name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookWorksheet](../resources/worksheet.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [WorkbookWorksheet](../resources/worksheet.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

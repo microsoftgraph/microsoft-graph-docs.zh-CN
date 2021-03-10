@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 04a385e994d48705583e93f755a699d6a426008e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c5b9b48fd552cb8399b4cf04f293db61bbc62678
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012871"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577672"
 ---
 # <a name="update-tablerow"></a>更新 tablerow
 
@@ -24,13 +24,15 @@ ms.locfileid: "48012871"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/rows/{index}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
@@ -43,11 +45,11 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|值|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookTableRow](../resources/tablerow.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [WorkbookTableRow](../resources/tablerow.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

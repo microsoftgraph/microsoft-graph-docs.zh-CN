@@ -5,18 +5,18 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0c1dc01ed5e424297821a985422b9e2ce9855163
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faa089c24e6e332ad6da285400ffa11be2c6b2cd
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970761"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577658"
 ---
 # <a name="list-workbookcommentreplies"></a>列出 workbookCommentReplies
 
 命名空间：microsoft.graph
 
-检索 [workbookCommentReply](../resources/workbookcommentreply.md) 对象的列表。
+检索 [workbookCommentReply 对象](../resources/workbookcommentreply.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,14 +26,15 @@ ms.locfileid: "47970761"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Files.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /workbook/comments/{id}/replies
+GET /me/drive/items/{id}/workbook/comments/{id}/replies
+GET /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +49,7 @@ GET /workbook/comments/{id}/replies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookCommentReply](../resources/workbookcommentreply.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookCommentReply](../resources/workbookcommentreply.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

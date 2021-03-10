@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8c43a64c71fbd21276ac56e8ea273fd37cffb676
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43b04b3404cbebdc893919710f0da3b402bfe8ef
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038373"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577938"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -24,14 +24,17 @@ ms.locfileid: "48038373"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/clear
-POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
-POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
+POST /me/drive/items/{id}/workbook/names/{name}/range/clear
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -45,7 +48,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|applyTo|字符串|可选。 确定清除操作的类型。  可能的值包括 `All`、`Formats`、`Contents`。|
+|applyTo|string|可选。 确定清除操作的类型。  可能的值包括 `All`、`Formats`、`Contents`。|
 
 ## <a name="response"></a>响应
 

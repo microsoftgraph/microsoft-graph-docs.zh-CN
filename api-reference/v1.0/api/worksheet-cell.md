@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4e97fcdde6d15a382a9e2b35c56d2c30ce4e045e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9bae4aed8697f10513b4746f656dfa342b72733
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015517"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575425"
 ---
 # <a name="worksheet-cell"></a>Worksheet:Cell
 
@@ -24,12 +24,13 @@ ms.locfileid: "48015517"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/cell(row={row},column={column})
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/cell(row={row},column={column})
 
 ```
 
