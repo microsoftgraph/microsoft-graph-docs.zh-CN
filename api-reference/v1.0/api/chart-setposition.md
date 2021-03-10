@@ -5,57 +5,58 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a98b7e528074fe0ad234b330222ca01f8ce17691
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b528b58986466479c96c6808df69c2e8b328523c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059997"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575615"
 ---
-# <a name="chart-setposition"></a><span data-ttu-id="0f601-103">Chart: setPosition</span><span class="sxs-lookup"><span data-stu-id="0f601-103">Chart: setPosition</span></span>
+# <a name="chart-setposition"></a><span data-ttu-id="3af7e-103">Chart: setPosition</span><span class="sxs-lookup"><span data-stu-id="3af7e-103">Chart: setPosition</span></span>
 
-<span data-ttu-id="0f601-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0f601-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3af7e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3af7e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0f601-105">相对于工作表上的单元格放置图表。</span><span class="sxs-lookup"><span data-stu-id="0f601-105">Positions the chart relative to cells on the worksheet.</span></span>
-## <a name="permissions"></a><span data-ttu-id="0f601-106">权限</span><span class="sxs-lookup"><span data-stu-id="0f601-106">Permissions</span></span>
-<span data-ttu-id="0f601-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0f601-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3af7e-105">相对于工作表上的单元格放置图表。</span><span class="sxs-lookup"><span data-stu-id="3af7e-105">Positions the chart relative to cells on the worksheet.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3af7e-106">权限</span><span class="sxs-lookup"><span data-stu-id="3af7e-106">Permissions</span></span>
+<span data-ttu-id="3af7e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3af7e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0f601-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="0f601-109">Permission type</span></span>      | <span data-ttu-id="0f601-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0f601-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3af7e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="3af7e-109">Permission type</span></span>      | <span data-ttu-id="3af7e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3af7e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0f601-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0f601-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0f601-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f601-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="0f601-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0f601-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f601-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="0f601-114">Not supported.</span></span>    |
-|<span data-ttu-id="0f601-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="0f601-115">Application</span></span> | <span data-ttu-id="0f601-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0f601-116">Not supported.</span></span> |
+|<span data-ttu-id="3af7e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3af7e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3af7e-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3af7e-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3af7e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3af7e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3af7e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="3af7e-114">Not supported.</span></span>    |
+|<span data-ttu-id="3af7e-115">Application</span><span class="sxs-lookup"><span data-stu-id="3af7e-115">Application</span></span> | <span data-ttu-id="3af7e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="3af7e-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0f601-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0f601-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3af7e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3af7e-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/setPosition
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setPosition
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/setPosition
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="0f601-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="0f601-118">Request headers</span></span>
-| <span data-ttu-id="0f601-119">名称</span><span class="sxs-lookup"><span data-stu-id="0f601-119">Name</span></span>       | <span data-ttu-id="0f601-120">说明</span><span class="sxs-lookup"><span data-stu-id="0f601-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3af7e-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="3af7e-118">Request headers</span></span>
+| <span data-ttu-id="3af7e-119">名称</span><span class="sxs-lookup"><span data-stu-id="3af7e-119">Name</span></span>       | <span data-ttu-id="3af7e-120">说明</span><span class="sxs-lookup"><span data-stu-id="3af7e-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="0f601-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="0f601-121">Authorization</span></span>  | <span data-ttu-id="0f601-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0f601-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="0f601-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="0f601-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="0f601-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="0f601-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="3af7e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3af7e-121">Authorization</span></span>  | <span data-ttu-id="3af7e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3af7e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3af7e-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="3af7e-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="3af7e-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="3af7e-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0f601-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="0f601-127">Request body</span></span>
-<span data-ttu-id="0f601-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="0f601-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3af7e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="3af7e-127">Request body</span></span>
+<span data-ttu-id="3af7e-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="3af7e-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="0f601-129">参数</span><span class="sxs-lookup"><span data-stu-id="0f601-129">Parameter</span></span>    | <span data-ttu-id="0f601-130">类型</span><span class="sxs-lookup"><span data-stu-id="0f601-130">Type</span></span>   |<span data-ttu-id="0f601-131">说明</span><span class="sxs-lookup"><span data-stu-id="0f601-131">Description</span></span>|
+| <span data-ttu-id="3af7e-129">参数</span><span class="sxs-lookup"><span data-stu-id="3af7e-129">Parameter</span></span>    | <span data-ttu-id="3af7e-130">类型</span><span class="sxs-lookup"><span data-stu-id="3af7e-130">Type</span></span>   |<span data-ttu-id="3af7e-131">说明</span><span class="sxs-lookup"><span data-stu-id="3af7e-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0f601-132">startCell</span><span class="sxs-lookup"><span data-stu-id="0f601-132">startCell</span></span>|<span data-ttu-id="0f601-133">Json</span><span class="sxs-lookup"><span data-stu-id="0f601-133">Json</span></span>|<span data-ttu-id="0f601-p104">起始单元格。这是图表将移动到的位置。起始单元格为左上角或右上角的单元格，具体取决于用户的从右到左显示设置。</span><span class="sxs-lookup"><span data-stu-id="0f601-p104">The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.</span></span>|
-|<span data-ttu-id="0f601-137">endCell</span><span class="sxs-lookup"><span data-stu-id="0f601-137">endCell</span></span>|<span data-ttu-id="0f601-138">Json</span><span class="sxs-lookup"><span data-stu-id="0f601-138">Json</span></span>|<span data-ttu-id="0f601-p105">可选。结束单元格。如果已指定，图表的宽度和高度将设置为完全覆盖此单元格/区域。</span><span class="sxs-lookup"><span data-stu-id="0f601-p105">Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.</span></span>|
+|<span data-ttu-id="3af7e-132">startCell</span><span class="sxs-lookup"><span data-stu-id="3af7e-132">startCell</span></span>|<span data-ttu-id="3af7e-133">Json</span><span class="sxs-lookup"><span data-stu-id="3af7e-133">Json</span></span>|<span data-ttu-id="3af7e-p104">起始单元格。这是图表将移动到的位置。起始单元格为左上角或右上角的单元格，具体取决于用户的从右到左显示设置。</span><span class="sxs-lookup"><span data-stu-id="3af7e-p104">The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.</span></span>|
+|<span data-ttu-id="3af7e-137">endCell</span><span class="sxs-lookup"><span data-stu-id="3af7e-137">endCell</span></span>|<span data-ttu-id="3af7e-138">Json</span><span class="sxs-lookup"><span data-stu-id="3af7e-138">Json</span></span>|<span data-ttu-id="3af7e-p105">可选。结束单元格。如果已指定，图表的宽度和高度将设置为完全覆盖此单元格/区域。</span><span class="sxs-lookup"><span data-stu-id="3af7e-p105">Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="0f601-142">响应</span><span class="sxs-lookup"><span data-stu-id="0f601-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3af7e-142">响应</span><span class="sxs-lookup"><span data-stu-id="3af7e-142">Response</span></span>
 
-<span data-ttu-id="0f601-p106">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="0f601-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3af7e-p106">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3af7e-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0f601-145">示例</span><span class="sxs-lookup"><span data-stu-id="0f601-145">Example</span></span>
-<span data-ttu-id="0f601-146">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="0f601-146">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="0f601-147">请求</span><span class="sxs-lookup"><span data-stu-id="0f601-147">Request</span></span>
-<span data-ttu-id="0f601-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0f601-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3af7e-145">示例</span><span class="sxs-lookup"><span data-stu-id="3af7e-145">Example</span></span>
+<span data-ttu-id="3af7e-146">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="3af7e-146">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3af7e-147">请求</span><span class="sxs-lookup"><span data-stu-id="3af7e-147">Request</span></span>
+<span data-ttu-id="3af7e-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3af7e-148">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0f601-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="0f601-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3af7e-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="3af7e-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chart_setposition"
@@ -70,27 +71,27 @@ Content-length: 66
   "endCell": "endCell-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="0f601-150">C#</span><span class="sxs-lookup"><span data-stu-id="0f601-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3af7e-150">C#</span><span class="sxs-lookup"><span data-stu-id="3af7e-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chart-setposition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0f601-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0f601-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3af7e-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3af7e-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chart-setposition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0f601-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0f601-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3af7e-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3af7e-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chart-setposition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0f601-153">Java</span><span class="sxs-lookup"><span data-stu-id="0f601-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3af7e-153">Java</span><span class="sxs-lookup"><span data-stu-id="3af7e-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chart-setposition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="0f601-154">响应</span><span class="sxs-lookup"><span data-stu-id="0f601-154">Response</span></span>
-<span data-ttu-id="0f601-155">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0f601-155">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="3af7e-154">响应</span><span class="sxs-lookup"><span data-stu-id="3af7e-154">Response</span></span>
+<span data-ttu-id="3af7e-155">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="3af7e-155">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response"
 } -->
