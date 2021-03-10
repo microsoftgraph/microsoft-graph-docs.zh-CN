@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 32eff7c8f1621cc67bb46b861778c9bbf9a146e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c039cd79e852a4d3531be808ab83d6a2254e97a6
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978580"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578743"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear
 
@@ -24,13 +24,15 @@ ms.locfileid: "47978580"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/sort/clear
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
+POST /me/drive/items/{id}/workbook/tables/{id|name}/sort/clear
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
 
 ```
 ## <a name="request-headers"></a>请求标头

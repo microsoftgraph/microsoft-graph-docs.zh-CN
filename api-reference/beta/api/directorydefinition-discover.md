@@ -1,18 +1,18 @@
 ---
-title: directoryDefinition：discover
+title: directoryDefinition：发现
 description: '发现用于预配到应用程序的最新架构定义。 '
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8b277d35e1cc83d5a52457cb07ddfe7129eb4cc8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4b83168464b8f8ab563ffa549d601e35929684bb
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130940"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625883"
 ---
-# <a name="directorydefinition-discover"></a>directoryDefinition：discover
+# <a name="directorydefinition-discover"></a>directoryDefinition：发现
 
 命名空间：microsoft.graph
 
@@ -24,11 +24,11 @@ ms.locfileid: "50130940"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权） |
-|:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Directory.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| 仅应用程序                            | 无。 |
+|权限类型                        | 权限（从最低特权到最高特权）              |
+|:--------------------------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）     |Directory.ReadWrite.All  |
+|委派（个人 Microsoft 帐户） |不支持。|
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP 请求
 

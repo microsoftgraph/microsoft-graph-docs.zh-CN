@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ac3df91789bb0be148ace7b5e26d94f8c34fae75
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cd8afffd9de357767c57b55e007551151d47afa8
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443340"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625366"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 
@@ -20,7 +20,7 @@ ms.locfileid: "50443340"
 
 获取已应用[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象的[directoryObject](../resources/directoryObject.md)对象的列表。 tokenLifetimePolicy 只能应用于 [应用程序和](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md) 资源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -67,7 +67,7 @@ GET /policies/tokenLifetimePolicies/{id}/appliesTo
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/tokenLifetimePolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/{id}/appliesTo
 ```
 
 ### <a name="response"></a>响应

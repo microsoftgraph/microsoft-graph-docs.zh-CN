@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: b5a676d3509cd0a2511fb64704ef9b72d3aa15ff
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 64d5b801b7529b94cbc6a02bf20315cf4374eff4
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137506"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625981"
 ---
 # <a name="get-synchronizationjob"></a>获取 synchronizationJob
 
@@ -25,9 +25,9 @@ ms.locfileid: "50137506"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     |Directory.ReadWrite.All  |
+|委派（工作或学校帐户）     |Directory.Read.All  |
 |委派（个人 Microsoft 帐户） |不支持。  |
-|Application                            |不支持。 | 
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

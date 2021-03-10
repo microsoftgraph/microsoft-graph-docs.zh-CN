@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 36e45692dce064ac34662a0030c921f344777df6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e06a26f8c78add6a815a531ce39b5f5c4b443730
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438356"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625805"
 ---
 # <a name="delete-an-identityprovider-from-a-b2cidentityuserflow"></a>从 b2cIdentityUserFlow 中删除 identityProvider
 
@@ -18,9 +18,9 @@ ms.locfileid: "50438356"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [b2cIdentityUserFlow 对象中删除标识](../resources/b2cidentityuserflow.md) 提供程序。 有关可用于用户流的标识提供程序详细信息，请参阅 [identityProviders](../resources/identityprovider.md) API 参考。
+从 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象中删除标识提供程序。 有关可用于用户流的标识提供程序详细信息，请参阅 [identityProviders](../resources/identityprovider.md) API 参考。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "50438356"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2cUserFlows/{id}/identityProviders/{id}/$ref
+DELETE /identity/b2cUserFlows/{id}/identityProviders/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头

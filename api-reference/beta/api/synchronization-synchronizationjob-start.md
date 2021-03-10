@@ -1,16 +1,16 @@
 ---
 title: 启动 synchronizationJob
-description: 启动现有同步作业。 如果作业已暂停，它将从暂停点开始继续处理更改。 如果作业被隔离，则清除隔离状态。
+description: 启动现有同步作业。 如果作业已暂停，它将从暂停点开始继续处理更改。 如果作业位于隔离中，则清除隔离状态。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 1fae704446d35c7a93d850f25f31355f50d332e0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fc70f816dfc1e564d27fe5c9be60580eded415e6
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132758"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626249"
 ---
 # <a name="start-synchronizationjob"></a>启动 synchronizationJob
 
@@ -18,7 +18,7 @@ ms.locfileid: "50132758"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-启动现有同步作业。 如果作业已暂停，它将从暂停点开始继续处理更改。 如果作业被隔离，则清除隔离状态。
+启动现有同步作业。 如果作业已暂停，它将从暂停点开始继续处理更改。 如果作业位于隔离中，则清除隔离状态。 请勿创建脚本以在启动作业运行时持续调用它，因为这可能会导致服务停止运行。 仅在作业当前暂停或隔离时，才使用启动作业。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50132758"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|Application                            |不支持。 | 
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 
 ## <a name="response"></a>响应
 
-如果成功，则返回 `204 No Content` 响应。 它不在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 

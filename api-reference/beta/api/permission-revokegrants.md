@@ -5,19 +5,19 @@ author: learafa
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 42a0a3f61349e5ed2741e26a2cb9817f45b4848c
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 8a60aa04b999009ad279b0715ed97cbc045e268a
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873456"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625500"
 ---
 # <a name="permission-revokegrants"></a>permission： revokeGrants
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过从链接中删除指定收件人，撤销对通过共享链接授予的[listItem][][或][][driveItem][]的访问权限。
+通过从链接中删除指定收件人，撤消对通过共享链接授予的[listItem][][或][][driveItem][]的访问权限。
 
 >**注意：** 此功能仅适用于共享范围为用户的链接。
 
@@ -45,7 +45,7 @@ POST /drives/{drive-id}/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-POST /sites/{site-id}/lists/{list-id}/items/{listItem-id}/permissions/{perm-id}/revokeGrants
+POST /sites/{site-id}/lists/{list-id}/items/{listItem-id}/driveItem/permissions/{perm-id}/revokeGrants
 POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 ```
 
@@ -60,7 +60,7 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |grantees|[driveRecipient](../resources/driverecipient.md) 集合|将撤消对共享链接的访问的收件人集合。|
 
@@ -113,7 +113,7 @@ Content-length: 95
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个 [Permission](../resources/permission.md) 资源，该资源表示共享链接的更新状态。
+如果成功，此方法 [在响应正文](../resources/permission.md) 中返回表示共享链接的更新状态的权限资源。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

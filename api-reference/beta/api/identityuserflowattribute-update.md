@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c53781dba635e583531682f755b5c76be6dfac5e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7f9f5589069e6b96115f73edb653d7262efe445a
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435236"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625812"
 ---
 # <a name="update-identityuserflowattribute"></a>更新 identityUserFlowAttribute
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435236"
 
 更新 [identityUserFlowAttribute 对象](../resources/identityuserflowattribute.md) 的属性。 只能更新自定义用户流属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "50435236"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /userFlowAttributes/{id}
+PATCH /identity/userFlowAttributes/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头

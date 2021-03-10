@@ -5,12 +5,12 @@ title: 关注驱动器项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1c54d52760882ae35838ebadc11717a76c3b5fc8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8294ded183dcd6dfea7d2b3c9f16b18c5412d316
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963773"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625833"
 ---
 # <a name="follow-drive-item"></a>关注驱动器项
 
@@ -20,7 +20,7 @@ ms.locfileid: "48963773"
 
 关注 [driveItem](../resources/driveitem.md)。
 
->**注意：** 若要取消追随某个项目，请参阅取消 [追随项目](driveitem-unfollow.md)。
+>**注意：** 若要取消关注项目，请参阅"取消 [关注项目"。](driveitem-unfollow.md)
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ ms.locfileid: "48963773"
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/follow
-POST /groups/{group-id/drive/items/{item-id}/follow
+POST /groups/{group-id}/drive/items/{item-id}/follow
 POST /me/drive/items/{item-id}/follow
 POST /sites/{site-id}/drive/items/{item-id}/follow
 POST /users/{user-id}/drive/items/{item-id}/follow
@@ -50,11 +50,11 @@ POST /users/{user-id}/drive/items/{item-id}/follow
 
 ## <a name="response"></a>响应
 
-此方法返回正在遵循的项的 [DriveItem](../resources/driveitem.md) 。
+此方法返回[所关注项目的 DriveItem。](../resources/driveitem.md)
 
 ## <a name="example"></a>示例
 
-本示例将遵循由标识的项目 `{item-id}` 。
+本示例遵循由 标识的项目 `{item-id}` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

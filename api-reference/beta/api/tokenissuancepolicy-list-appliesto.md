@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 95e31f704a41250c73f5dc13b5a0e06abc6c47f9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d3d007b0f137e03df1401f00c23a636eccfec9d9
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443438"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626221"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 
@@ -20,7 +20,7 @@ ms.locfileid: "50443438"
 
 获取已应用[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象的[directoryObject](../resources/directoryObject.md)对象的列表。 tokenIssuancePolicy 只能应用于 [应用程序和](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md) 资源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -67,7 +67,7 @@ GET /policies/tokenIssuancePolicies/{id}/appliesTo
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/tokenIssuancePolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}/appliesTo
 ```
 
 ### <a name="response"></a>响应

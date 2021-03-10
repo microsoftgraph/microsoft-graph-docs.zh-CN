@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 4359ded92c7bfa54a07f487554be83e17ee3c064
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 479807c89bbe27cf123234296cecddfd370703ce
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438172"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625735"
 ---
 # <a name="delete-identityprovider-from-b2xidentityuserflow"></a>从 b2xIdentityUserFlow 中删除 identityProvider
 
@@ -20,7 +20,7 @@ ms.locfileid: "50438172"
 
 从 [b2xIdentityUserFlow 对象中删除标识](../resources/b2xidentityuserflow.md) 提供程序。 对于自助注册用户流，值可以是 `Google-OAUTH` 或 `Facebook-OAUTH` 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "50438172"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2xUserFlows/{id}/identityProviders/{id}/$ref
+DELETE /identity/b2xUserFlows/{id}/identityProviders/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头

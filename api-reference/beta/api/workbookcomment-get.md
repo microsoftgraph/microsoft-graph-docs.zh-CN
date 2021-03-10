@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a80122caee0d6b04b24b0a1e4c60818f0ef7bea5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5355a52998e0f3e2f61fa2834bf3e482669a1f56
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977498"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626207"
 ---
 # <a name="get-workbookcomment"></a>获取 workbookComment
 
@@ -26,14 +26,14 @@ ms.locfileid: "48977498"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Files.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/comments/{id}
+GET /me/drive/items/{id}/workbook/comments/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +48,7 @@ GET workbook/comments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [workbookComment](../resources/workbookcomment.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [workbookComment](../resources/workbookcomment.md) 对象。
 
 ## <a name="examples"></a>示例
 

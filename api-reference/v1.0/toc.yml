@@ -1393,7 +1393,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -4949,7 +4949,7 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -5208,6 +5208,10 @@ items:
                 href: api/channel-post-messagereply.md
               - name: 更新邮件
                 href: api/chatmessage-update.md
+              - name: 列出托管内容
+                href: api/chatmessage-list-chatmessagehostedcontents.md
+              - name: 获取托管内容
+                href: api/chatmessagehostedcontent-get.md
           - name: 聊天
             href: resources/chat.md
             items:

@@ -6,12 +6,12 @@ title: 按间隔获取项目活动统计信息
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: c56169132d43843f60a9c53417271faf30f4afb1
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 112c08515e053cde7ff3e2d30965f1c9b1400629
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474692"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626101"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计信息
 
@@ -44,7 +44,7 @@ ms.locfileid: "50474692"
 ```http
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-10',interval='day')
 GET /sites/{site-id}/getActivitiesByInterval(startDateTime='2016',endDateTime='2017',interval='month')
-GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-05-01',interval='week')
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-05-01',endDateTime='2017-05-20',interval='week')
 ```
 
 ## <a name="function-parameters"></a>函数参数

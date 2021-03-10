@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: a1d9e3da3610497e5cb7b85bccb34fdc7f0ab21a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: db326c4fe3ed63b4387d7fb5414312d683f26322
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438055"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625720"
 ---
 # <a name="add-identityprovider-to-a-b2xidentityuserflow"></a>将 identityProvider 添加到 b2xIdentityUserFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "50438055"
 
 更新 [b2xIdentityUserFlow 对象中的标识](../resources/b2xidentityuserflow.md) 提供程序。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "50438055"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /b2xUserFlows/{id}/identityProviders/$ref
+PATCH /identity/b2xUserFlows/{id}/identityProviders/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 9e91c0697c39c031f149477d7dbcac5a35679040
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 84c1dc9112851330be721f425a01228d278d014b
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132711"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625963"
 ---
 # <a name="get-synchronizationschema"></a>获取 synchronizationSchema
 
@@ -25,9 +25,9 @@ ms.locfileid: "50132711"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     |Directory.ReadWrite.All  |
+|委派（工作或学校帐户）     |Directory.Read.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|Application                            |不支持。 | 
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [synchronizationSchema](../resources/synchronization-synchronizationschema.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [synchronizationSchema](../resources/synchronization-synchronizationschema.md) 对象。
 
 ## <a name="example"></a>示例
 
