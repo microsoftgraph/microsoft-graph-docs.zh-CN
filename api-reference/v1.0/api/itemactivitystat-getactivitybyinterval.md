@@ -5,12 +5,12 @@ description: 获取指定时间间隔内在此资源上发生活动的 itemAnaly
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b339458fb65f457c44113957ef541828a1940724
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e5a88a95a892d5b5e8e9404dc461e56eefaa566f
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471690"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626122"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计信息
 
@@ -18,11 +18,11 @@ ms.locfileid: "50471690"
 
 获取指定时间间隔内在此资源上发生活动的 [itemActivityStats][] 资源集合。
 
->**注意：****itemAnalytics** 资源尚未在所有的国家部署 [中可用](/graph/deployments)。 
+>**注意：****itemAnalytics** 资源尚未可用于所有 [的国家部署](/graph/deployments)。 
 
 分析聚合可能并非可用于所有操作类型。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "50471690"
 ```http
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-10',interval='day')
 GET /sites/{site-id}/getActivitiesByInterval(startDateTime='2016-01-01',endDateTime='2017-05-20',interval='month')
-GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-05-01',interval='week')
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-05-01',endDateTime='2017-05-20',interval='week')
 ```
 
 ## <a name="function-parameters"></a>函数参数

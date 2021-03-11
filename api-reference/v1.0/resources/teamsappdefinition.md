@@ -5,18 +5,18 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b247432171f5de9d2624d7793f25ab6bfdce91fe
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8a43083e1f7fb717e2d54caef4017aeae97d9392
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470667"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625931"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition 资源类型
 
 命名空间：microsoft.graph
 
-表示 teamsApp 的一 [个版本的详细信息](teamsapp.md)。
+表示 [teamsApp](teamsapp.md)版本的详细信息。
 
 ## <a name="properties"></a>属性
 

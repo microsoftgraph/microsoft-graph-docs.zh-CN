@@ -5,20 +5,20 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 806016e3ce1bdafe40ffc990947edc1122c6eb75
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 32d58e77fe16bca2db2af3144b4dd033485ae534
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970878"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626179"
 ---
 # <a name="list-workbookcomments"></a>列出 workbookComments
 
 命名空间：microsoft.graph
 
-检索  [workbookComment](../resources/workbookcomment.md) 对象的列表。
+检索  [workbookComment 对象](../resources/workbookcomment.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "47970878"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/comments
+GET /me/drive/items/{id}/workbook/comments
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +48,7 @@ GET workbook/comments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookComment](../resources/workbookcomment.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookComment](../resources/workbookcomment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

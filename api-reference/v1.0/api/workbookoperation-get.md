@@ -5,24 +5,24 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2d5aca6184a392409abe8e103255ebe9999e9478
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5947f24447a96d4f28275322b25b507c95256978
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988644"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626136"
 ---
 # <a name="get-workbookoperation"></a>获取 workbookOperation
 
-检索 [workbookOperation](../resources/workbookoperation.md) 对象的状态。
+检索 [workbookOperation 对象](../resources/workbookoperation.md) 的状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 文件读写。 |
+| 委派（工作或学校帐户）     | Files.ReadWrite。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -31,7 +31,7 @@ ms.locfileid: "47988644"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/operations/{operation-id}
+GET /me/drive/items/{id}/workbook/operations/{operation-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -46,7 +46,7 @@ GET workbook/operations/{operation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [workbookOperation](../resources/workbookoperation.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [workbookOperation](../resources/workbookoperation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 
 ### <a name="response"></a>响应
 
-以下是状态为 "正在运行" 的响应。
+下面是状态为"正在运行"的响应。
 
 
 <!-- {
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-以下是状态为 "已成功" 的响应。
+下面是状态为"已成功"的响应。
 
 ```http
 HTTP/1.1 200 OK
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-以下是状态为 "失败" 的响应。
+下面是状态为"failed"的响应。
 
 ```http
 HTTP/1.1 200 OK

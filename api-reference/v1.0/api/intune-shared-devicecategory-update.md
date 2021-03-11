@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 818a23039bc761072801f83ee1991da25109fca6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8690e7db843c4769a1f3646ec5199240f1e98765
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019143"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625479"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象的属性。
 
@@ -26,7 +26,7 @@ ms.locfileid: "48019143"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp;**载入**和 <br> &nbsp;&nbsp;**设备管理**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**载入** 和 <br> &nbsp;&nbsp;**设备管理**| DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |id|String|设备类别的唯一标识符。 只读。|
 |**载入**|
 |displayName|String|设备类别的显示名称。|
-|description|String|设备类别的可选说明。|
+|说明|String|设备类别的可选说明。|
 
 
 
@@ -75,12 +75,10 @@ Content-length: 82
   "displayName": "Display Name value",
   "description": "Description value"
 }
-
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 响应属性将根据上下文的不同而不同。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 响应属性因上下文而异。
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

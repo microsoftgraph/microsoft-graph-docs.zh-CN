@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6e03a361d3cd8c52c2c9f69d81ee19ba4d82d9bf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cae222b8a44a3493fb35c576aa9251859bde39ee
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132214"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626115"
 ---
 # <a name="list-serviceprincipal-memberof"></a>List servicePrincipal memberOf
 
@@ -146,9 +146,9 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`394`
+394
+```
 
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>示例 3：使用 OData 强制转换以仅获取组成员身份的计数
 
@@ -175,9 +175,9 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`394`
+394
+```
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 强制转换获取显示名称中包含字母“Video”（包括返回的对象数）的组成员身份
 
@@ -190,7 +190,7 @@ Content-type: text/plain
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
-GET iv. https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
+GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
 ConsistencyLevel: eventual
 ```
 

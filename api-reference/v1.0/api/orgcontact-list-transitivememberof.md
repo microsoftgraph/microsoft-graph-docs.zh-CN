@@ -1,32 +1,32 @@
 ---
 title: 列出 transitiveMemberOf
-description: 获取 organziational 联系人所属的组。 此 API 请求是可传递的，并且还将返回用户是其嵌套成员的所有组。
+description: 获取组织联系人是其中一个成员的组。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2387bf17583869f8b5a043d0a8318a424f37af15
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 94a41d23225615a6233b8d37a5cded8f569c7898
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797142"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625988"
 ---
 # <a name="list-transitivememberof"></a>列出 transitiveMemberOf
 
 命名空间：microsoft.graph
 
-获取此 [组织联系人](../resources/orgcontact.md) 所属的组。 API 请求是可传递的，并返回组织联系人是其嵌套成员的所有组。
+获取此 [组织联系人是](../resources/orgcontact.md) 其中一个成员的组。 API 请求是可传递的，并返回组织联系人是嵌套成员的所有组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All  |
+|委派（工作或学校帐户） | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | OrgContact 和 Group. all、Read. All |
+|应用程序 | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +38,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -67,7 +67,7 @@ GET /contacts/{id}/transitiveMemberOf
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/{id}/transitiveMemberOf
+GET https://graph.microsoft.com/v1.0/contacts/{id}/transitiveMemberOf
 ```
 
 ### <a name="response"></a>响应

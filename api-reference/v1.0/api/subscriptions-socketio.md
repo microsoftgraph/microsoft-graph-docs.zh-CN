@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 允许你使用 socket.io 接收驱动器的近实时更改socket.io。
 doc_type: apiPageType
-ms.openlocfilehash: 2868ba963114bc78053c6098996b6cff597572d9
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3c937a9d51073ca89148c9ff8a3b51c8f32d30c5
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238440"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626214"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
@@ -23,7 +23,7 @@ Socket.io JavaScript 的热门通知库，它利用 WebSockets。 若要了解�
 [list]: ../resources/list.md
 [socket.io]: https://socket.io/
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ Socket.io JavaScript 的热门通知库，它利用 WebSockets。 若要了解�
 ```http
 GET /me/drive/root/subscriptions/socketIo
 GET /drives/{driveId}/root/subscriptions/socketIo
-GET /lists/{list-id}/subscriptions/socketIo
+GET /drives/{driveId}/list/subscriptions/socketIo
 GET /groups/{groupId}/drive/root/subscriptions/socketIo
 GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ```
