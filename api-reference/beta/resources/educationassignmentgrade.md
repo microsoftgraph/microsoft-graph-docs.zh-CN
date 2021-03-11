@@ -1,35 +1,35 @@
 ---
 title: educationAssignmentGrade 资源类型
-description: " 但是，所有类型的评分 (点、通过/失败等) 都是此类的子类"
+description: " 但是，所有类型的评分 (分数、通过/失败等) 是此类的子类"
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 41e981d268718a94e6b28df6b43c4c2f931b7ad2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 84baeb3a0e3efeee0e5f7e7f6f7d5f6d8f285f59
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013750"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722452"
 ---
-# <a name="educationassignmentgrade-resource-type"></a><span data-ttu-id="55578-103">educationAssignmentGrade 资源类型</span><span class="sxs-lookup"><span data-stu-id="55578-103">educationAssignmentGrade resource type</span></span>
+# <a name="educationassignmentgrade-resource-type"></a><span data-ttu-id="2bcc8-103">educationAssignmentGrade 资源类型</span><span class="sxs-lookup"><span data-stu-id="2bcc8-103">educationAssignmentGrade resource type</span></span>
 
-<span data-ttu-id="55578-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="55578-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2bcc8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2bcc8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="55578-105">代表提交中的 **年级** 对象。</span><span class="sxs-lookup"><span data-stu-id="55578-105">Represents the **Grade** object on a Submission.</span></span> <span data-ttu-id="55578-106">这是一个永远不会实例化的抽象类型;但是，所有类型的评分 (点、通过/失败等) 是此资源类型的子类。</span><span class="sxs-lookup"><span data-stu-id="55578-106">This is an abstract type that will never be instantiated; however, all types of grading (points, pass/fail, and so on) are subclasses of this resource type.</span></span> <span data-ttu-id="55578-107">此对象还跟踪正在进行评分的团队。</span><span class="sxs-lookup"><span data-stu-id="55578-107">This object also tracks who is doing the grading.</span></span> <span data-ttu-id="55578-108">这在 **提交. 年级** 属性中使用。</span><span class="sxs-lookup"><span data-stu-id="55578-108">This is used in the **submission.grade** property.</span></span>
+<span data-ttu-id="2bcc8-105">代表 **提交上的 Grade** 对象。</span><span class="sxs-lookup"><span data-stu-id="2bcc8-105">Represents the **Grade** object on a Submission.</span></span> <span data-ttu-id="2bcc8-106">这是一个永远不会实例化抽象类型;但是，所有类型的评分 (点、通过/失败等) 是此资源类型的子类。</span><span class="sxs-lookup"><span data-stu-id="2bcc8-106">This is an abstract type that will never be instantiated; however, all types of grading (points, pass/fail, and so on) are subclasses of this resource type.</span></span> <span data-ttu-id="2bcc8-107">此对象还跟踪谁正在评分。</span><span class="sxs-lookup"><span data-stu-id="2bcc8-107">This object also tracks who is doing the grading.</span></span> <span data-ttu-id="2bcc8-108">This is used in the **submission.grade** property.</span><span class="sxs-lookup"><span data-stu-id="2bcc8-108">This is used in the **submission.grade** property.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="55578-109">属性</span><span class="sxs-lookup"><span data-stu-id="55578-109">Properties</span></span>
-| <span data-ttu-id="55578-110">属性</span><span class="sxs-lookup"><span data-stu-id="55578-110">Property</span></span>     | <span data-ttu-id="55578-111">类型</span><span class="sxs-lookup"><span data-stu-id="55578-111">Type</span></span>   |<span data-ttu-id="55578-112">说明</span><span class="sxs-lookup"><span data-stu-id="55578-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2bcc8-109">属性</span><span class="sxs-lookup"><span data-stu-id="2bcc8-109">Properties</span></span>
+| <span data-ttu-id="2bcc8-110">属性</span><span class="sxs-lookup"><span data-stu-id="2bcc8-110">Property</span></span>     | <span data-ttu-id="2bcc8-111">类型</span><span class="sxs-lookup"><span data-stu-id="2bcc8-111">Type</span></span>   |<span data-ttu-id="2bcc8-112">说明</span><span class="sxs-lookup"><span data-stu-id="2bcc8-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="55578-113">gradedBy</span><span class="sxs-lookup"><span data-stu-id="55578-113">gradedBy</span></span>|[<span data-ttu-id="55578-114">identitySet</span><span class="sxs-lookup"><span data-stu-id="55578-114">identitySet</span></span>](identityset.md)| <span data-ttu-id="55578-115">执行评分的用户。</span><span class="sxs-lookup"><span data-stu-id="55578-115">User who did the grading.</span></span> |
-|<span data-ttu-id="55578-116">gradedDateTime</span><span class="sxs-lookup"><span data-stu-id="55578-116">gradedDateTime</span></span>|<span data-ttu-id="55578-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="55578-117">DateTimeOffset</span></span>| <span data-ttu-id="55578-118">将评分应用于此提交对象的时间点。</span><span class="sxs-lookup"><span data-stu-id="55578-118">Moment in time when the grade was applied to this submission object.</span></span> <span data-ttu-id="55578-119">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="55578-119">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="55578-120">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="55578-120">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="2bcc8-113">gradedBy</span><span class="sxs-lookup"><span data-stu-id="2bcc8-113">gradedBy</span></span>|[<span data-ttu-id="2bcc8-114">identitySet</span><span class="sxs-lookup"><span data-stu-id="2bcc8-114">identitySet</span></span>](identityset.md)| <span data-ttu-id="2bcc8-115">评分的用户。</span><span class="sxs-lookup"><span data-stu-id="2bcc8-115">User who did the grading.</span></span> |
+|<span data-ttu-id="2bcc8-116">gradedDateTime</span><span class="sxs-lookup"><span data-stu-id="2bcc8-116">gradedDateTime</span></span>|<span data-ttu-id="2bcc8-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2bcc8-117">DateTimeOffset</span></span>| <span data-ttu-id="2bcc8-118">此提交对象应用成绩的时间。</span><span class="sxs-lookup"><span data-stu-id="2bcc8-118">Moment in time when the grade was applied to this submission object.</span></span> <span data-ttu-id="2bcc8-119">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="2bcc8-119">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="2bcc8-120">例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`</span><span class="sxs-lookup"><span data-stu-id="2bcc8-120">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="55578-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="55578-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2bcc8-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2bcc8-121">JSON representation</span></span>
 
-<span data-ttu-id="55578-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="55578-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2bcc8-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2bcc8-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
