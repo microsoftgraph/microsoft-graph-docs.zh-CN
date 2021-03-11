@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 4fbf23ec1b0f0d25d412cb80389001b15be8de50
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 06eeeed15e6f46c8bbe802e504a1d7b15a83d867
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440977"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721774"
 ---
 # <a name="list-programcontrols-of-a-program"></a>列出程序的 programControls
 
@@ -26,14 +26,14 @@ ms.locfileid: "50440977"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.Read.All、ProgramControl.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | ProgramControl.Read.All、ProgramControl.ReadWrite.All  |
+|应用程序                            | ProgramControl.Read.All、ProgramControl.ReadWrite.All  |
 
  登录用户还必须具有允许其读取程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /programs('{programId}')/controls
+GET /programs/{programId}/controls
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |

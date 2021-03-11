@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ac42a91ec35c1d81d81efa52f4306bbd1cfb2f55
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d83092949e1f27c9dac9744d2b4b16be4bcbae0d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135035"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722046"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>synchronizationTaskExecution 资源类型
 
@@ -23,20 +23,20 @@ ms.locfileid: "50135035"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activityIdentifier           |字符串 |作业运行的标识符。|
+|activityIdentifier           |String |作业运行的标识符。|
 |countEntitled                |Int64  |为此应用程序分配的已处理条目计数。|
 |countEntitledForProvisioning |Int64  |已分配用于预配的已处理条目计数。|
 |countEscrowed                |Int64  |托管的条目数 (错误) 。|
 |countEscrowedRaw             |Int64  |托管的条目计数，包括系统生成的托管。|
-|countExported                |Int64  |已导出条目的计数。|
+|countExported                |Int64  |导出条目的计数。|
 |countExports                 |Int64  |预期要导出的条目计数。|
 |countImported                |Int64  |导入的条目计数。|
 |countImportedDeltas          |Int64  |导入的增量更改计数。|
 |countImportedReferenceDeltas |Int64  |与引用更改相关的导入增量更改计数。|
-|error                        |[synchronizationError](synchronization-synchronizationerror.md)|如果遇到错误，则包含包含详细信息的 **synchronizationError** 对象。|
+|error                        |[synchronizationError](synchronization-synchronizationerror.md)|如果遇到错误，则包含 **包含详细信息的 synchronizationError** 对象。|
 |state                        |String |汇总此运行结果的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
-|timeBegan                    |DateTimeOffset|此作业运行开始的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|timeEnded                    |DateTimeOffset|此作业运行结束的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|timeBegan                    |DateTimeOffset|此作业运行开始的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|timeEnded                    |DateTimeOffset|此作业运行结束的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

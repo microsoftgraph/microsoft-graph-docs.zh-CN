@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: b1e601908a8f12523f9e02549e3fd24903e77bda
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 29b30bd80dba96b061d0c83f2710d224c3da8758
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442220"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721775"
 ---
 # <a name="update-program"></a>更新程序
 
@@ -26,14 +26,14 @@ ms.locfileid: "50442220"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
-登录用户还必须是允许其更新程序的目录角色。
+登录用户还必须具有允许其更新程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /programs('{programId}')
+PATCH /programs/{programId}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |

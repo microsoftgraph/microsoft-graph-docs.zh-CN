@@ -1,16 +1,16 @@
 ---
 title: 列出用户
 description: 检索用户对象列表。
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0439f9ac1e0e1de4772dd300ff064d63c607016a
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 3bf70f9fbb0ee13e207b0f5472cdcf26449b0283
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013421"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722340"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -384,7 +384,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",

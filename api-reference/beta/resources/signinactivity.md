@@ -1,16 +1,16 @@
 ---
 title: signInActivity 资源类型
-description: 提供特定用户的上次登录日期。
+description: 为特定用户提供上次登录日期。
 localization_priority: Normal
 author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e8300e787fe516a9712359f99ebf215f4813a0b9
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: e48d2e64c71e67c623582552224a11636c7c6c7c
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521227"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721857"
 ---
 # <a name="signinactivity-resource-type"></a>signInActivity 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "49521227"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供特定 [用户](user.md)的上次登录日期。
+为特定用户提供上次登录 [日期](user.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|lastSignInDateTime|DateTimeOffset|特定用户的上次登录日期。 您可以使用此字段来计算用户上次登录目录的时间。 此字段可用于生成报表，如非活动用户。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 若要详细了解如何使用此属性的值，请参阅 [管理 AZURE AD 中的非活动用户帐户](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts)。|
-|lastSignInRequestId|String|此用户执行的最后一个登录的请求 ID。|
+|lastSignInDateTime|DateTimeOffset|特定用户的上次交互式登录日期。 可以使用此字段计算用户最后一次使用交互式身份验证方法登录到目录的时间。 此字段可用于生成报告，例如非活动用户。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为： `'2014-01-01T00:00:00Z'` 。 有关使用此属性的值有关详细信息，请参阅在 Azure AD 中管理 [非活动用户帐户](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts)。|
+|lastSignInRequestId|String|此用户执行的最后一次登录的请求 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

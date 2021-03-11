@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: b388c4e63eb30f7ad9fc8cb65a3afed305f12926
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 133f503ee6361619581cea058fbf3a47a8c7de01
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137233"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722018"
 ---
 # <a name="update-synchronizationtemplate"></a>更新 synchronizationTemplate
 
@@ -20,19 +20,19 @@ ms.locfileid: "50137233"
 
 更新 () 与给定应用程序关联的同步模板。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|Application                            |不支持。| 
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH application/{id}/synchronization/templates/{templateId}
+PATCH applications/{id}/synchronization/templates/{templateId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -43,7 +43,7 @@ PATCH application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象以替换现有模板。 确保提供了所有属性。 缺少的属性将被清除。
+在请求正文中，提供 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象以替换现有模板。 确保提供了所有属性。 将清除缺少的属性。
 
 ### <a name="response"></a>响应
 

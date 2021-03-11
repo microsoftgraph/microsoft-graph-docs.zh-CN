@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b61fadf340371b800e1dc093be012ba67f3eaf1b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ce0280eb465474dab26658c9d31bfc90e368ff21
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154943"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722151"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>fileAssessmentRequest 资源类型
 
@@ -38,17 +38,17 @@ ms.locfileid: "50154943"
 |“类别”|[threatCategory](enums.md#threatcategory-values)|威胁类别。 可取值为：`spam`、`phishing`、`malware`。|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|威胁评估的内容类型。 可取值为：`mail`、`url`、`file`。|
 |createdBy|[identitySet](identityset.md)|威胁评估请求创建者。|
-|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|提交者的预期评估。 可能的值是：`block`、`unblock`。|
-|id|String|威胁评估请求 ID 是 GUID (全局) 。|
+|id|String|威胁评估请求 ID 是 GUID (全局唯一) 。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
-|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
+|状态|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下，除非对该属性应用， `GET /threatAssessmentRequests/{id}` 否则不会返回 `$expand` 此属性。|
+|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下，除非 `GET /threatAssessmentRequests/{id}` 应用此属性，否则不会返回 `$expand` 此属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 10a4bd64fd8776b1d50d52d5fd9130076417dc85
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9ed43ccabfbd2b5389525ebec02ecd04edb475b3
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128594"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721815"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem 资源类型
 
@@ -44,10 +44,10 @@ ms.locfileid: "50128594"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categories|String 集合||
-|changeKey|字符串||
-|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|字符串| 只读。|
-|lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|changeKey|String||
+|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|id|String| 只读。|
+|lastModifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>关系
 无

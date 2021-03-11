@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 6513b8bb77316f291268f7a761c0c1ff4f7160ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 928be5ed3245b19c64cd09a61fea6a1ead0054c7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067401"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722175"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -29,38 +29,38 @@ ms.locfileid: "48067401"
 |[获取警报](../api/alert-get.md) | [警报](alert.md) |读取警报对象的属性和关系。|
 |[更新警报](../api/alert-update.md) | [警报](alert.md) |更新警报对象。 |
 |[列出警报](../api/alert-list.md) | [警报](alert.md)集合 |获取警报对象集合。|
-|[更新警报](../api/alert-updatealerts.md)|[警报](alert.md)集合|更新多个 alert 对象。|
+|[更新警报](../api/alert-updatealerts.md)|[警报](alert.md)集合|更新多个警报对象。|
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|activityGroupName|String|此警报归因于的活动组（攻击者）的名称或别名。|
-|assignedTo|字符串|分配警报的分析员名称，用于分类、调查或修复（支持[更新](../api/alert-update.md)）。|
+|activityGroupName|字符串|此警报归因于的活动组（攻击者）的名称或别名。|
+|assignedTo|String|分配警报的分析员名称，用于分类、调查或修复（支持[更新](../api/alert-update.md)）。|
 |azureSubscriptionId|字符串|Azure 订阅 ID，如果此警报与 Azure 资源相关时显示。|
 |azureTenantId |字符串|Azure Active Directory 租户 ID。 必需。 |
 |“类别”|字符串|警报的类别（例如，credentialTheft、ransomware 等）。|
-|closedDateTime|DateTimeOffset|警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`（支持 [更新](../api/alert-update.md)）。|
+|closedDateTime|DateTimeOffset|警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC (`2014-01-01T00:00:00Z` [支持更新) 。](../api/alert-update.md)|
 |cloudAppStates|[cloudAppSecurityState](cloudappsecuritystate.md) 集合|提供程序生成的与此警报相关的云应用程序的安全相关状态信息。|
 |comments|字符串集合|客户提供的警报评论（用于客户警报管理）（支持[更新](../api/alert-update.md)）。|
 |confidence|Int32|检测逻辑的可信度（1-100 之间的百分比）。|
-|createdDateTime |DateTimeOffset|警报提供程序创建警报的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
+|createdDateTime |DateTimeOffset|警报提供程序创建警报的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 必需。|
 |description|String|警报说明。|
 |detectionIds|字符串集合|与此警报实体相关的警报集（每个警报作为单独的记录推送到 SIEM）。|
-|eventDateTime |DateTimeOffset|发生用作生成警报触发器的事件的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
+|eventDateTime |DateTimeOffset|发生用作生成警报触发器的事件的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 必需。|
 |反馈|alertFeedback|分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 （支持[更新](../api/alert-update.md)）|
 |fileStates|[fileSecurityState](filesecuritystate.md) 集合|提供程序生成的与此警报相关的文件的安全相关状态信息。|
-|historyStates|[alertHistoryState](alerthistorystate.md) 集合| 由包含对警报的所有更新的审核日志的 **alertHistoryStates** 组成的集合。 |
+|historyStates|[alertHistoryState](alerthistorystate.md) 集合| **alertHistoryStates 集合**，审核日志警报的所有更新的集合。 |
 |hostStates|[hostSecurityState](hostsecuritystate.md) 集合|提供程序生成的与此警报相关的主机的安全相关状态信息。|
-|id |String|提供程序生成的 GUID/唯一标识符。 只读。 必需。|
-|incidentIds|String 集合|与当前警报相关的事件的 Id。|
-|lastModifiedDateTime|DateTimeOffset|上次修改警告实体的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|id |String|提供程序生成的 GUID/唯一标识符。 只读。 必填。|
+|incidentIds|String collection|与当前警报相关的事件的 ID。|
+|lastModifiedDateTime|DateTimeOffset|上次修改警告实体的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |malwareStates|[malwareState](malwarestate.md) 集合|威胁智能，属于与此警报相关的恶意软件。|
 |networkConnections|[networkConnection](networkconnection.md) 集合|提供程序生成的与此警报相关的网络连接的安全相关状态信息。|
 |processes|[process](process.md) 集合|提供程序生成的与此警报相关的流程的安全相关状态信息。|
 |recommendedActions|字符串集合|供应商/提供程序建议对警报采取的措施（例如，隔离计算机、enforce2FA、重新映像主机）。|
 |registryKeyStates|[registryKeyState](registrykeystate.md) 集合|提供程序生成的与此警报相关的注册表项的安全相关状态信息。|
-|securityResources|[securityResource](securityResource.md) 集合|与当前警报相关的资源。 例如，对于某些警报，这可能具有 Azure 资源值。|
+|securityResources|[securityResource](securityResource.md) collection|与当前警报相关的资源。 例如，对于某些警报，可能有 Azure 资源值。|
 |severity |alertSeverity|警报严重性 - 由供应商/提供程序设置。 可取值为：`unknown`、`informational`、`low`、`medium`、`high`。 必需。|
 |sourceMaterials|字符串集合|与警报相关的源材料的超链接 (URI)，例如，提供程序的警报或日志搜索的用户界面等。|
 |status |alertStatus|警告生命周期的状态（阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 （支持[更新](../api/alert-update.md)）。 必需。|

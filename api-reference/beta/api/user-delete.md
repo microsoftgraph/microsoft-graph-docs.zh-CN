@@ -1,16 +1,16 @@
 ---
 title: 删除用户 - Microsoft Graph API
 description: 介绍删除 Microsoft Graph API (REST) 的用户资源（实体）的方法。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1c3de475fbe57143478d39dde759ecbad45abf59
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 705899489cb754fac5bbaac17fb75417195a484f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136792"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721766"
 ---
 # <a name="delete-a-user"></a>删除用户
 
@@ -32,11 +32,11 @@ ms.locfileid: "50136792"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.ReadWrite.All |
 
-工作或学校帐户必须担任以下角色之一：
+工作或学校帐户必须具有以下角色之一：
 + 全局管理员
 + 用户管理员
 
-只有全局管理员才能删除全局管理员角色中的用户或 _租户_ 中的任意用户。 用户管理员只能删除非管理员或特定有限角色的用户。 有关详细信息，请参阅 [Azure AD 中的管理员角色权限](/azure/active-directory/roles/permissions-reference#available-roles)。
+只有全局管理员才能删除全局管理员角色中的 _用户或租户_ 中的任意用户。 用户管理员只能删除非管理员或特定有限角色的用户。 有关详细信息，请参阅 [Azure AD 中管理员角色权限](/azure/active-directory/roles/permissions-reference#available-roles)。
 
 ## <a name="http-request"></a>HTTP 请求
 

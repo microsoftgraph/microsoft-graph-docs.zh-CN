@@ -1,33 +1,33 @@
 ---
-title: 用户： exportPersonalData
-description: 提交数据策略操作请求，由公司管理员进行导出以导出组织用户的数据。
+title: user： exportPersonalData
+description: 提交由公司管理员提出的数据策略操作请求以导出组织用户的数据。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1b2d4b27929656f0d3531f9c5a98d343a58317e0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bf03a21660a29172d1b55364bbb14d7770414f4a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967895"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721752"
 ---
-# <a name="user-exportpersonaldata"></a>用户： exportPersonalData
+# <a name="user-exportpersonaldata"></a>user： exportPersonalData
 
 命名空间：microsoft.graph
 
 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Export. All 和 User. All  |
+|委派（工作或学校帐户） |  User.Export.All 和 User.Read.All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | Export. All 和 User. All |
+|应用程序 | User.Export.All 和 User.Read.All |
 
->**注意：** 仅当使用委派的权限时，公司管理员才能执行导出。
+>**注意：** 只有在使用委派权限时，公司管理员才能执行导出。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明 |
 |:---------------|:--------|:----------|
-|storageLocation|String|这是 Azure 存储帐户 (SAS) URL 的共享访问签名，可将数据导出到其中。|
+|storageLocation|String|这是一个共享访问签名 (SAS) URL 到 Azure 存储帐户，数据应导出到其中。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 响应包含以下标头。
@@ -53,7 +53,7 @@ POST /users/{id}/exportPersonalData
 | 名称       | 说明 |
 |:---------------|:----------|
 | Location  | 用于检查请求状态的 URL。 |
-| Retry-After  | 以秒为单位的时间段。 在提交请求以检查状态后，请求生成器应等待这长时间。 |
+| Retry-After  | 时间段（以秒表示）。 请求建立者应在提交检查状态的请求后等待很长时间。 |
 
 
 ## <a name="example"></a>示例

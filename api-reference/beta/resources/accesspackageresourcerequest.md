@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7e045a327869432eb58d135262da1a3f4fa91307
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ea0d6ae14d93fbc691af4713cf40452a890d1891
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433255"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722186"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>accessPackageResourceRequest 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50433255"
 
 在 [Azure AD](entitlementmanagement-root.md)权利管理中，访问包资源请求是向目录添加资源的请求，以便资源的角色可在目录的一个或多个访问包中使用，或者从访问包不再需要的目录中删除资源。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -32,7 +32,7 @@ ms.locfileid: "50433255"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |catalogId|String|访问包目录的唯一 ID。|
-|expirationDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |id|String| 只读。|
 |isValidationOnly|布尔|如果设置，则不添加资源。|
 |justification|String|请求者添加或删除资源的理由。|

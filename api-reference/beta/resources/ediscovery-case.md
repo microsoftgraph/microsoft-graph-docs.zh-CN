@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: c03202a2df807bcc9c4d9b0707e50aa5b9d519c1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a7786408d782f4b380ad7761bcc7c91ce6b8340b
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446157"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722473"
 ---
 # <a name="case-resource-type"></a>案例资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446157"
 
 在电子数据展示上下文中，包含保管人、保留项、集合、审阅集和导出。 有关详细信息，请参阅 [高级电子数据展示](/microsoft-365/compliance/overview-ediscovery-20)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -47,16 +47,16 @@ ms.locfileid: "50446157"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |closedBy|[identitySet](/graph/api/resources/identityset)|关闭案例的用户。|
-|closedDateTime|DateTimeOffset|案例关闭的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|closedDateTime|DateTimeOffset|案例关闭的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |createdBy|[identitySet](/graph/api/resources/identityset)|创建案例的用户。|
-|createdDateTime|DateTimeOffset|实体的创建日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|说明|String|案例描述。|
+|createdDateTime|DateTimeOffset|实体的创建日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|说明|String|大小写说明。|
 |displayName|String|大小写名称。|
 |externalId|String|客户参考的外部案例编号。|
 |id|String| 电子数据展示案例的 ID。 只读。 |
 |lastModifiedBy|[identitySet](/graph/api/resources/identityset)|上次修改实体的用户。|
-|lastModifiedDateTime|DateTimeOffset| 修改案例的最新日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|status|microsoft.graph.ediscovery.caseStatus| 大小写状态。 可能的值是 `unknown` ， 、 、 和 `active` `pendingDelete` `closing` `closed` `closedWithError` 。 有关详细信息，请参阅下表。|
+|lastModifiedDateTime|DateTimeOffset| 修改案例的最新日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|状态|microsoft.graph.ediscovery.caseStatus| 大小写状态。 可能的值是 `unknown` ， 、 、 和 `active` `pendingDelete` `closing` `closed` `closedWithError` 。 有关详细信息，请参阅下表。|
 
 ### <a name="casestatus-values"></a>caseStatus 值
 
@@ -73,7 +73,7 @@ ms.locfileid: "50446157"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|保管人|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) 集合| 返回本例的大小写 **保管** 对象 **列表**。  可为 NULL。|
+|保管人|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) 集合| 返回此案例 **的** 大小写保管对象 **列表**。  可为 NULL。|
 |合法保留|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) 集合| 返回此案例的 **case legalHold** 对象 **列表**。  可为 NULL。 |
 |Operations|[microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) 集合| 返回 **大小写操作对象****的列表。** 可为 NULL。 |
 |审阅集|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) 集合| 返回在这种情况下 **reviewSet** 对象的列表。 只读。 可为 NULL。 |
