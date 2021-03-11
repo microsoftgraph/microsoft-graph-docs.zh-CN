@@ -5,75 +5,75 @@ title: 关注驱动器项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e0a60f3c8254eeccb4476c9b27e1bf47e0a3559d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96d979708ea9a1c5a607804cde5f7c4171228916
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009791"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625974"
 ---
-# <a name="follow-drive-item"></a><span data-ttu-id="2879d-103">关注驱动器项</span><span class="sxs-lookup"><span data-stu-id="2879d-103">Follow drive item</span></span>
+# <a name="follow-drive-item"></a><span data-ttu-id="b9cf3-103">关注驱动器项</span><span class="sxs-lookup"><span data-stu-id="b9cf3-103">Follow drive item</span></span>
 
-<span data-ttu-id="2879d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2879d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b9cf3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b9cf3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2879d-105">关注 [driveItem](../resources/driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="2879d-105">Follow a [driveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="b9cf3-105">关注 [driveItem](../resources/driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="b9cf3-105">Follow a [driveItem](../resources/driveitem.md).</span></span>
 
-><span data-ttu-id="2879d-106">**注意：** 若要取消追随某个项目，请参阅取消 [追随项目](driveitem-unfollow.md)。</span><span class="sxs-lookup"><span data-stu-id="2879d-106">**Note:** To unfollow an item, see [Unfollow item](driveitem-unfollow.md).</span></span>
+><span data-ttu-id="b9cf3-106">**注意：** 若要取消关注项目，请参阅"取消 [关注项目"。](driveitem-unfollow.md)</span><span class="sxs-lookup"><span data-stu-id="b9cf3-106">**Note:** To unfollow an item, see [Unfollow item](driveitem-unfollow.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2879d-107">权限</span><span class="sxs-lookup"><span data-stu-id="2879d-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b9cf3-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="b9cf3-107">Permissions</span></span>
 
-<span data-ttu-id="2879d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2879d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b9cf3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b9cf3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2879d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2879d-110">Permission type</span></span>      | <span data-ttu-id="2879d-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2879d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b9cf3-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b9cf3-110">Permission type</span></span>      | <span data-ttu-id="b9cf3-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b9cf3-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2879d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2879d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2879d-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2879d-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2879d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2879d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2879d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="2879d-115">Not supported.</span></span>    |
-|<span data-ttu-id="2879d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2879d-116">Application</span></span> | <span data-ttu-id="2879d-117">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2879d-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="b9cf3-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b9cf3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b9cf3-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9cf3-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b9cf3-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b9cf3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9cf3-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="b9cf3-115">Not supported.</span></span>    |
+|<span data-ttu-id="b9cf3-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b9cf3-116">Application</span></span> | <span data-ttu-id="b9cf3-117">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9cf3-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2879d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2879d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b9cf3-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b9cf3-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/follow
-POST /groups/{group-id/drive/items/{item-id}/follow
+POST /groups/{group-id}/drive/items/{item-id}/follow
 POST /me/drive/items/{item-id}/follow
 POST /sites/{site-id}/drive/items/{item-id}/follow
 POST /users/{user-id}/drive/items/{item-id}/follow
 ```
 
-## <a name="request-body"></a><span data-ttu-id="2879d-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="2879d-119">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b9cf3-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="b9cf3-119">Request body</span></span>
 
-<span data-ttu-id="2879d-120">无需请求正文。</span><span class="sxs-lookup"><span data-stu-id="2879d-120">No request body is required.</span></span>
+<span data-ttu-id="b9cf3-120">无需请求正文。</span><span class="sxs-lookup"><span data-stu-id="b9cf3-120">No request body is required.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2879d-121">响应</span><span class="sxs-lookup"><span data-stu-id="2879d-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b9cf3-121">响应</span><span class="sxs-lookup"><span data-stu-id="b9cf3-121">Response</span></span>
 
-<span data-ttu-id="2879d-122">此方法返回正在遵循的项的 [DriveItem](../resources/driveitem.md) 。</span><span class="sxs-lookup"><span data-stu-id="2879d-122">This method returns a [DriveItem](../resources/driveitem.md) for the item being followed.</span></span>
+<span data-ttu-id="b9cf3-122">此方法返回[所关注项目的 DriveItem。](../resources/driveitem.md)</span><span class="sxs-lookup"><span data-stu-id="b9cf3-122">This method returns a [DriveItem](../resources/driveitem.md) for the item being followed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2879d-123">示例</span><span class="sxs-lookup"><span data-stu-id="2879d-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b9cf3-123">示例</span><span class="sxs-lookup"><span data-stu-id="b9cf3-123">Example</span></span>
 
-<span data-ttu-id="2879d-124">本示例将遵循由标识的项目 `{item-id}` 。</span><span class="sxs-lookup"><span data-stu-id="2879d-124">This example follows an item identified by `{item-id}`.</span></span>
+<span data-ttu-id="b9cf3-124">本示例遵循由 标识的项目 `{item-id}` 。</span><span class="sxs-lookup"><span data-stu-id="b9cf3-124">This example follows an item identified by `{item-id}`.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2879d-125">HTTP</span><span class="sxs-lookup"><span data-stu-id="2879d-125">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b9cf3-125">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9cf3-125">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/follow
 ```
-# <a name="c"></a>[<span data-ttu-id="2879d-126">C#</span><span class="sxs-lookup"><span data-stu-id="2879d-126">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b9cf3-126">C#</span><span class="sxs-lookup"><span data-stu-id="b9cf3-126">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2879d-127">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2879d-127">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b9cf3-127">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9cf3-127">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2879d-128">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2879d-128">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b9cf3-128">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9cf3-128">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2879d-129">Java</span><span class="sxs-lookup"><span data-stu-id="2879d-129">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b9cf3-129">Java</span><span class="sxs-lookup"><span data-stu-id="b9cf3-129">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/follow-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
