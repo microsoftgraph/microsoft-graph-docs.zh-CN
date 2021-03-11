@@ -1393,7 +1393,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -4180,6 +4180,25 @@ items:
                 items:
                   - name: 创建邀请
                     href: api/invitation-post.md
+              - name: 组织品牌
+                href: resources/organizationalbrandingproperties.md
+                items:
+                  - name: 创建
+                    href: api/organizationalbrandingproperties-create.md
+                  - name: 获取
+                    href: api/organizationalbrandingproperties-get.md
+                  - name: 更新
+                    href: api/organizationalbrandingproperties-update.md
+                  - name: 删除
+                    href: api/organizationalbrandingproperties-delete.md
+                  - name: 创建本地化
+                    href: api/organizationalbrandingpropertieslocalization-create.md
+                  - name: 本地化
+                    href: api/organizationalbrandingpropertieslocalization-get.md
+                  - name: 更新本地化
+                    href: api/organizationalbrandingpropertieslocalization-update.md
+                  - name: 删除本地化
+                    href: api/organizationalbrandingpropertieslocalization-delete.md
               - name: Policy
                 href: resources/policy-overview.md
                 items:
@@ -4270,6 +4289,23 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: 更新
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
+      - name: 治理
+        items:
+          - name: 使用条款
+            href: resources/agreement.md
+            items:
+              - name: 列出
+                href: api/agreement-list.md
+              - name: 创建
+                href: api/agreement-post-agreements.md
+              - name: 获取
+                href: api/agreement-get.md
+              - name: 更新
+                href: api/agreement-update.md
+              - name: 删除
+                href: api/agreement-delete.md
+              - name: 列出接受状态
+                href: api/user-list-agreementacceptances.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:
@@ -5259,7 +5295,7 @@ items:
                     href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: 为用户删除应用
                     href: api/userteamwork-delete-installedapps.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

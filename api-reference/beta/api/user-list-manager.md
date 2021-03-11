@@ -2,45 +2,45 @@
 title: 列出经理
 description: 获取用户的经理。 返回指定为用户经理的用户或联系人。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1f04dc23b777906a3ee36bbcefea035e1e8d2422
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 895e14894e6fed97031911744288c3e78dac8b36
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524424"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721199"
 ---
-# <a name="list-manager"></a><span data-ttu-id="0f233-104">列出经理</span><span class="sxs-lookup"><span data-stu-id="0f233-104">List manager</span></span>
+# <a name="list-manager"></a><span data-ttu-id="08fb7-104">列出经理</span><span class="sxs-lookup"><span data-stu-id="08fb7-104">List manager</span></span>
 
-<span data-ttu-id="0f233-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0f233-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="08fb7-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="08fb7-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0f233-106">返回指定为用户经理的用户或组织联系人。</span><span class="sxs-lookup"><span data-stu-id="0f233-106">Returns the user or organizational contact assigned as the user's manager.</span></span> <span data-ttu-id="0f233-107">（可选）您可以将管理器的链展开到根节点。</span><span class="sxs-lookup"><span data-stu-id="0f233-107">Optionally, you can expand the manager's chain up to the root node.</span></span>
+<span data-ttu-id="08fb7-106">返回指定为用户经理的用户或组织联系人。</span><span class="sxs-lookup"><span data-stu-id="08fb7-106">Returns the user or organizational contact assigned as the user's manager.</span></span> <span data-ttu-id="08fb7-107">（可选）可将经理链一直展开到根节点。</span><span class="sxs-lookup"><span data-stu-id="08fb7-107">Optionally, you can expand the manager's chain up to the root node.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0f233-108">权限</span><span class="sxs-lookup"><span data-stu-id="0f233-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="08fb7-108">权限</span><span class="sxs-lookup"><span data-stu-id="08fb7-108">Permissions</span></span>
 
-<span data-ttu-id="0f233-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0f233-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="08fb7-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="08fb7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0f233-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0f233-111">Permission type</span></span>      | <span data-ttu-id="0f233-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0f233-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="08fb7-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="08fb7-111">Permission type</span></span>      | <span data-ttu-id="08fb7-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="08fb7-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0f233-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0f233-113">Delegated (work or school account)</span></span> | <span data-ttu-id="0f233-114">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0f233-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="0f233-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0f233-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f233-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0f233-116">Not supported.</span></span>    |
-|<span data-ttu-id="0f233-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="0f233-117">Application</span></span> | <span data-ttu-id="0f233-118">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0f233-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="08fb7-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="08fb7-113">Delegated (work or school account)</span></span> | <span data-ttu-id="08fb7-114">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="08fb7-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="08fb7-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="08fb7-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08fb7-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="08fb7-116">Not supported.</span></span>    |
+|<span data-ttu-id="08fb7-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="08fb7-117">Application</span></span> | <span data-ttu-id="08fb7-118">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08fb7-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-## <a name="http-request"></a><span data-ttu-id="0f233-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0f233-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="08fb7-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="08fb7-119">HTTP request</span></span>
 
-<span data-ttu-id="0f233-120">获取经理：</span><span class="sxs-lookup"><span data-stu-id="0f233-120">Get the manager:</span></span>
+<span data-ttu-id="08fb7-120">获取经理：</span><span class="sxs-lookup"><span data-stu-id="08fb7-120">Get the manager:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
-<span data-ttu-id="0f233-121">获取管理链：</span><span class="sxs-lookup"><span data-stu-id="0f233-121">Get the management chain:</span></span>
+<span data-ttu-id="08fb7-121">获取管理链：</span><span class="sxs-lookup"><span data-stu-id="08fb7-121">Get the management chain:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
@@ -48,43 +48,43 @@ GET /users?$expand=manager($levels=n)
 GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="0f233-122">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="0f233-122">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="08fb7-122">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="08fb7-122">Optional query parameters</span></span>
 
-<span data-ttu-id="0f233-123">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="0f233-123">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>  
+<span data-ttu-id="08fb7-123">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="08fb7-123">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>  
 
-<span data-ttu-id="0f233-124">如果您的请求包含 `$expand=manager($levels=n)` 用于获取经理的链的参数，则还必须包括以下内容：</span><span class="sxs-lookup"><span data-stu-id="0f233-124">If your request includes the `$expand=manager($levels=n)` parameter to get the manager's chain, you must also include the following:</span></span>
+<span data-ttu-id="08fb7-124">如果请求包含用于获取经理链的 `$expand=manager($levels=n)` 参数，则还必须包括以下内容：</span><span class="sxs-lookup"><span data-stu-id="08fb7-124">If your request includes the `$expand=manager($levels=n)` parameter to get the manager's chain, you must also include the following:</span></span>
 
-- <span data-ttu-id="0f233-125">`$count=true` 查询字符串参数</span><span class="sxs-lookup"><span data-stu-id="0f233-125">`$count=true` query string parameter</span></span>
-- <span data-ttu-id="0f233-126">`ConsistencyLevel=eventual` 请求标头</span><span class="sxs-lookup"><span data-stu-id="0f233-126">`ConsistencyLevel=eventual` request header</span></span>
+- <span data-ttu-id="08fb7-125">`$count=true` 查询字符串参数</span><span class="sxs-lookup"><span data-stu-id="08fb7-125">`$count=true` query string parameter</span></span>
+- <span data-ttu-id="08fb7-126">`ConsistencyLevel=eventual` 请求标头</span><span class="sxs-lookup"><span data-stu-id="08fb7-126">`ConsistencyLevel=eventual` request header</span></span>
 
-><span data-ttu-id="0f233-127">**注意：** `n` `$levels` 可以 (的值 `max` 返回所有经理) 或介于1和1000之间的数字。</span><span class="sxs-lookup"><span data-stu-id="0f233-127">**Note:** the `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.</span></span>  
-> <span data-ttu-id="0f233-128">如果 `$level` 未指定此参数，则仅返回直属管理器。</span><span class="sxs-lookup"><span data-stu-id="0f233-128">When the `$level` parameter is not specified, only the immediate manager is returned.</span></span>  
-> <span data-ttu-id="0f233-129">您可以 `$select` 在内指定 `$expand` ，以选择单个经理的属性： `$expand=manager($levels=max;$select=id,displayName)`</span><span class="sxs-lookup"><span data-stu-id="0f233-129">You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`</span></span>
+><span data-ttu-id="08fb7-127">**注意**：`$levels` 的`n`值可以是 `max`（返回所有管理器）或介于 1 和 1000 之间的数字。</span><span class="sxs-lookup"><span data-stu-id="08fb7-127">**Note:** the `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.</span></span>  
+> <span data-ttu-id="08fb7-128">如果未指定 `$level` 参数，将仅返回直属经理。</span><span class="sxs-lookup"><span data-stu-id="08fb7-128">When the `$level` parameter is not specified, only the immediate manager is returned.</span></span>  
+> <span data-ttu-id="08fb7-129">可在 `$expand` 内指定 `$select` 以选择单独的经理属性：`$expand=manager($levels=max;$select=id,displayName)`</span><span class="sxs-lookup"><span data-stu-id="08fb7-129">You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="0f233-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="0f233-130">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="08fb7-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="08fb7-130">Request headers</span></span>
 
-| <span data-ttu-id="0f233-131">标头</span><span class="sxs-lookup"><span data-stu-id="0f233-131">Header</span></span>       | <span data-ttu-id="0f233-132">值</span><span class="sxs-lookup"><span data-stu-id="0f233-132">Value</span></span>|
+| <span data-ttu-id="08fb7-131">标头</span><span class="sxs-lookup"><span data-stu-id="08fb7-131">Header</span></span>       | <span data-ttu-id="08fb7-132">值</span><span class="sxs-lookup"><span data-stu-id="08fb7-132">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="0f233-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="0f233-133">Authorization</span></span>  | <span data-ttu-id="0f233-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0f233-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="0f233-136">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="0f233-136">ConsistencyLevel</span></span> | <span data-ttu-id="0f233-137">最终。</span><span class="sxs-lookup"><span data-stu-id="0f233-137">eventual.</span></span> <span data-ttu-id="0f233-138">请求包括参数时必需 `$expand=manager($levels=max)` 。</span><span class="sxs-lookup"><span data-stu-id="0f233-138">Required when the request includes the `$expand=manager($levels=max)` parameter.</span></span> |
+| <span data-ttu-id="08fb7-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="08fb7-133">Authorization</span></span>  | <span data-ttu-id="08fb7-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="08fb7-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="08fb7-136">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="08fb7-136">ConsistencyLevel</span></span> | <span data-ttu-id="08fb7-137">最终。</span><span class="sxs-lookup"><span data-stu-id="08fb7-137">eventual.</span></span> <span data-ttu-id="08fb7-138">请求包括 `$expand=manager($levels=max)` 参数时必需。</span><span class="sxs-lookup"><span data-stu-id="08fb7-138">Required when the request includes the `$expand=manager($levels=max)` parameter.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0f233-139">请求正文</span><span class="sxs-lookup"><span data-stu-id="0f233-139">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="08fb7-139">请求正文</span><span class="sxs-lookup"><span data-stu-id="08fb7-139">Request body</span></span>
 
-<span data-ttu-id="0f233-140">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="0f233-140">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="08fb7-140">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="08fb7-140">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0f233-141">响应</span><span class="sxs-lookup"><span data-stu-id="0f233-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="08fb7-141">响应</span><span class="sxs-lookup"><span data-stu-id="08fb7-141">Response</span></span>
 
-<span data-ttu-id="0f233-142">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0f233-142">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="08fb7-142">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="08fb7-142">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0f233-143">示例</span><span class="sxs-lookup"><span data-stu-id="0f233-143">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="08fb7-143">示例</span><span class="sxs-lookup"><span data-stu-id="08fb7-143">Examples</span></span>
 
-### <a name="example-1-get-manager"></a><span data-ttu-id="0f233-144">示例1：获取管理器</span><span class="sxs-lookup"><span data-stu-id="0f233-144">Example 1: Get manager</span></span>
+### <a name="example-1-get-manager"></a><span data-ttu-id="08fb7-144">示例 1：获取经理</span><span class="sxs-lookup"><span data-stu-id="08fb7-144">Example 1: Get manager</span></span>
 
-<span data-ttu-id="0f233-145">下面的示例展示了获取经理的请求。</span><span class="sxs-lookup"><span data-stu-id="0f233-145">The following example shows a request to get the manager.</span></span>
+<span data-ttu-id="08fb7-145">以下示例显示获取经理的请求。</span><span class="sxs-lookup"><span data-stu-id="08fb7-145">The following example shows a request to get the manager.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0f233-146">请求</span><span class="sxs-lookup"><span data-stu-id="0f233-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="08fb7-146">请求</span><span class="sxs-lookup"><span data-stu-id="08fb7-146">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0f233-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="0f233-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="08fb7-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="08fb7-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_manager"
@@ -92,29 +92,29 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
-# <a name="c"></a>[<span data-ttu-id="0f233-148">C#</span><span class="sxs-lookup"><span data-stu-id="0f233-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="08fb7-148">C#</span><span class="sxs-lookup"><span data-stu-id="08fb7-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0f233-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0f233-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="08fb7-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="08fb7-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0f233-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0f233-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="08fb7-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="08fb7-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0f233-151">Java</span><span class="sxs-lookup"><span data-stu-id="0f233-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="08fb7-151">Java</span><span class="sxs-lookup"><span data-stu-id="08fb7-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="0f233-152">响应</span><span class="sxs-lookup"><span data-stu-id="0f233-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="08fb7-152">响应</span><span class="sxs-lookup"><span data-stu-id="08fb7-152">Response</span></span>
 
-<span data-ttu-id="0f233-153">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="0f233-153">The following is an example of the response.</span></span>
-><span data-ttu-id="0f233-154">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="0f233-154">**Note**: The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="08fb7-153">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="08fb7-153">The following is an example of the response.</span></span>
+><span data-ttu-id="08fb7-154">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="08fb7-154">**Note**: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,11 +134,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-manager-chain-up-to-the-root-level"></a><span data-ttu-id="0f233-155">示例2：获取到根级别的管理器链</span><span class="sxs-lookup"><span data-stu-id="0f233-155">Example 2: Get manager chain up to the root level</span></span>
+### <a name="example-2-get-manager-chain-up-to-the-root-level"></a><span data-ttu-id="08fb7-155">示例 2：获取直至根级别的经理链</span><span class="sxs-lookup"><span data-stu-id="08fb7-155">Example 2: Get manager chain up to the root level</span></span>
 
-<span data-ttu-id="0f233-156">下面的示例演示将管理器链向上获取到根级别的请求。</span><span class="sxs-lookup"><span data-stu-id="0f233-156">The following example shows a request to get the manager chain up to the root level.</span></span>
+<span data-ttu-id="08fb7-156">以下示例显示获取直至根级别的经理链的请求。</span><span class="sxs-lookup"><span data-stu-id="08fb7-156">The following example shows a request to get the manager chain up to the root level.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0f233-157">请求</span><span class="sxs-lookup"><span data-stu-id="0f233-157">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="08fb7-157">请求</span><span class="sxs-lookup"><span data-stu-id="08fb7-157">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -149,11 +149,11 @@ GET https://graph.microsoft.com/beta/me?$expand=manager($levels=max;$select=id,d
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="0f233-158">响应</span><span class="sxs-lookup"><span data-stu-id="0f233-158">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="08fb7-158">响应</span><span class="sxs-lookup"><span data-stu-id="08fb7-158">Response</span></span>
 
-<span data-ttu-id="0f233-159">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="0f233-159">The following is an example of the response.</span></span> <span data-ttu-id="0f233-160">可传递的管理器分层显示。</span><span class="sxs-lookup"><span data-stu-id="0f233-160">Transitive managers are displayed hierarchically.</span></span>
+<span data-ttu-id="08fb7-159">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="08fb7-159">The following is an example of the response.</span></span> <span data-ttu-id="08fb7-160">可传递的经理分层显示。</span><span class="sxs-lookup"><span data-stu-id="08fb7-160">Transitive managers are displayed hierarchically.</span></span>
 
-><span data-ttu-id="0f233-161">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="0f233-161">**Note**: The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="08fb7-161">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="08fb7-161">**Note**: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
