@@ -1,16 +1,16 @@
 ---
 title: 列出 scopedAdministratorOf
 description: 检索用户的 scopedRoleMembership 列表。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 390a0963c5c892732da851f6e28e39f87e50c58a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1de486edef0764b528491ed63bd5fd01d2e94895
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968805"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721493"
 ---
 # <a name="list-scopedadministratorof"></a>列出 scopedAdministratorOf
 
@@ -19,7 +19,7 @@ ms.locfileid: "48968805"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索用户的 [scopedRoleMembership](../resources/scopedrolemembership.md) 列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -49,7 +49,7 @@ GET /users/{id}/scopedRoleMemberOf
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

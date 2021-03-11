@@ -1,16 +1,16 @@
 ---
 title: 帖子资源类型
-description: 表示 converstaionThread 实体中的单个张贴项。
+description: 表示 converstaionThread 实体中的单个发布项。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 27e883898a30692ba01de816728f3267bf293a5d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f2cc4a4ca9cdf9b57f835992604b9ac00776b67d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067223"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720958"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48067223"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 [converstaionThread](conversationthread.md) 实体中的单个张贴项。
+表示 [converstaionThread 实体中的单个](conversationthread.md) 发布项。
 
 即使无法显式创建帖子，也可以执行以下任一操作来创建帖子：
 
@@ -70,26 +70,26 @@ ms.locfileid: "48067223"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|帖子的内容。这是默认属性。此属性可为 NULL。|
-|categories|String 集合|与帖子关联的类别。 每个类别对应于已为用户定义的[outlookCategory](outlookcategory.md)的**displayName**属性。|
+|categories|String 集合|与帖子关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md)的 **displayName** 属性。|
 |changeKey|String|标识帖子的版本。每次帖子更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |conversationId|String|对话的唯一 ID。只读。|
 |conversationThreadId|字符串|对话线程的唯一 ID。只读。|
-|createdDateTime|DateTimeOffset|创建帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|创建帖子时指定。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |发件人|[recipient](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
 |hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
 |id|String| 只读。|
-|importance | String | 组帖子的重要性： `low` 、 `normal` 、 `high` 。 |
-|lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|importance | String | 组帖子的重要性： ， `low` `normal` 。 `high` |
+|lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |newParticipants|[recipient](recipient.md) collection|添加到此线程作为帖子一部分的对话参与者。|
-|receivedDateTime|DateTimeOffset|接收到帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|receivedDateTime|DateTimeOffset|接收到帖子时指定。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |sender|[recipient](recipient.md)|包含发件人的地址未指定发件人时，发件人的值假定为已经过验证身份的用户的地址。这是默认属性。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合|张贴内容的 [fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和 [referenceAttachment](referenceattachment.md) 附件的集合。 只读。 可为 NULL。|
+|attachments|[附件](attachment.md) 集合|文章的 [fileAttachment](fileattachment.md) [、itemAttachment](itemattachment.md)和 [referenceAttachment](referenceattachment.md) 附件的集合。 只读。 可为 NULL。|
 |extensions|[Extension](extension.md) 集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
-|inReplyTo|[文章](post.md)|此文章在 [conversationThread](conversationthread.md)中答复的早期帖子。 只读。|
+|inReplyTo|[文章](post.md)|此帖子在 [conversationThread](conversationthread.md)中回复的上一个帖子。 只读。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为帖子定义的单值扩展属性的集合。只读。可为 NULL。|
 
@@ -103,7 +103,7 @@ ms.locfileid: "48067223"
 |[转发](../api/post-forward.md)|无|将帖子转发给收件人。|
 |**附件**| | |
 |[列出附件](../api/post-list-attachments.md) |[attachment](attachment.md) 集合| 获取帖子的所有附件。|
-|[Add attachment](../api/post-post-attachments.md) |[附件](attachment.md)| 将附件添加到帖子中。 |
+|[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| 将附件添加到帖子中。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|

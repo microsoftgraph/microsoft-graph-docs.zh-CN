@@ -1,32 +1,32 @@
 ---
-title: 用户： invalidateAllRefreshTokens
-description: 使用户的浏览器中颁发给应用程序和会话 cookie 的用户的所有刷新令牌失效。
+title: user： invalidateAllRefreshTokens
+description: 使颁发给用户浏览器中的应用程序和会话 Cookie 的所有用户刷新令牌失效。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e711a2979ef5861664f8d5f17fe98812654565e0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b3bd61191cd61c143165b563e8a270af50943adc
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973824"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720065"
 ---
-# <a name="user-invalidateallrefreshtokens"></a>用户： invalidateAllRefreshTokens
+# <a name="user-invalidateallrefreshtokens"></a>user： invalidateAllRefreshTokens
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过将 **refreshTokensValidFromDateTime** 用户属性重置为当前的日期时间来使向应用程序颁发的所有用户的刷新令牌（以及用户浏览器中的会话 cookie）)  (。 通常情况下，如果用户的设备丢失或被盗， (由用户或管理员) 执行此操作。  此操作将阻止访问通过设备上的应用程序访问的任何组织数据，而用户首次无需再次登录。 实际上，此操作会强制用户再次登录到他们之前同意的所有应用程序，而不依赖于设备。
+将 **refreshTokensValidFromDateTime** 用户属性重置为当前日期时间，使颁发给应用程序 (的所有用户刷新令牌以及用户浏览器) 中的会话 cookie 失效。 通常，如果用户的设备丢失 (，则由用户或) 管理员执行此操作。  此操作将阻止访问通过设备上应用程序访问的组织的任何数据，无需用户首先重新登录。 实际上，此操作将强制用户重新登录之前同意的所有应用程序，而与设备无关。
 
-对于开发人员，如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌，应用程序将收到错误。 如果发生这种情况，应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌，这将强制用户登录。
+对于开发人员，如果应用程序尝试使用无效的刷新令牌为此用户兑换委派访问令牌，则应用程序将出现错误。 如果发生这种情况，应用程序将需要通过向授权终结点提出请求来获取新的刷新令牌，这将强制用户登录。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-+ 对于允许已登录用户使已登录的应用程序无效的应用程序，请执行以下操作： User. ReadWrite、Directory.accessasuser.all
-+ 对于允许管理员使用户同意的应用程序无效的应用程序，请执行以下操作： Directory.accessasuser.all
++ 允许登录用户使已同意的应用程序失效的应用程序的应用程序：User.ReadWrite、Directory.ReadWrite.All、Directory.AccessAsUser.All
++ 允许管理员使用户同意的应用程序失效的应用程序的应用程序：Directory.ReadWrite.All、Directory.AccessAsUser.All
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

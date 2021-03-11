@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a8dab67cfff9e695c94c7cbcf4549e49eb9812fa
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 98e9a22137f9f6faaa39fbbb010a32b40f8f0254
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433290"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720835"
 ---
 # <a name="accesspackage-resource-type"></a>accessPackage 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50433290"
 
 若要将用户分配给访问包，请创建引用访问包和访问包分配策略的[accessPackageAssignmentRequest。](../api/accesspackageassignmentrequest-post.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -33,7 +33,7 @@ ms.locfileid: "50433290"
 | [更新 accessPackage](../api/accesspackage-update.md)|无 | 更新 **accesspackage** 对象的属性。 |
 | [删除 accessPackage](../api/accesspackage-delete.md) |无 | 删除 **accesspackage**。 |
 | [列出 accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) 集合 | 检索此访问 **包的 accessPackageResourceRoleScope** 对象列表。 |
-| [创建 accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |无 | 为此访问包 **创建新的 accessPackageResourceRoleScope** 对象。 |
+| [创建 accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |无 | 为此访问 **包创建新的 accessPackageResourceRoleScope** 对象。 |
 
 ## <a name="properties"></a>属性
 
@@ -41,14 +41,14 @@ ms.locfileid: "50433290"
 |:-------------|:------------|:------------|
 |catalogId|String|引用此访问包的访问包目录的 ID。 只读。|
 |createdBy|String|创建此资源的主题的用户或标识的 UPN。 只读。|
-|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
+|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |说明|String|访问包的说明。|
 |displayName|String|访问显示名称的组。|
 |id|String| 只读。|
 |isHidden|布尔|访问包是否对请求程序隐藏。|
 |isRoleScopesVisible|布尔|指示角色作用域是否可见。|
 |modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
-|modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 
 ## <a name="relationships"></a>关系
 

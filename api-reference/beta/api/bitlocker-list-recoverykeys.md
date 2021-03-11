@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b3090c352c009eb071a148fbbd8203752e56aab7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 97b698a2a74925451228dec6c11b167551ec4420
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438230"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719963"
 ---
 # <a name="list-recoverykeys"></a>列出 recoveryKeys
 命名空间：microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "50438230"
 |:---|:---|
 |委派（工作或学校帐户）|BitLocker.ReadBasic.All、BitLocker.Read.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|不支持|
+|应用程序|不支持|
 
 >**注意**：对于允许应用代表登录用户获取 BitLockerRecoveryKey 资源的委派权限，租户管理员必须为用户分配以下角色之一，或者用户必须是最初备份 BitLocker 恢复密钥的设备注册所有者： 
 * 全局管理员
@@ -40,14 +40,14 @@ ms.locfileid: "50438230"
 * 全局读取者
 
 ## <a name="http-request"></a>HTTP 请求
-若要获取租户中的 BitLocker 密钥列表，
+若要获取租户内的 BitLocker 密钥列表，
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys
+GET /informationProtection/bitlocker/recoveryKeys
 ```
 
 若要获取按设备 ID 筛选的租户内的 BitLocker **密钥列表：**
@@ -57,11 +57,11 @@ GET /bitlocker/recoveryKeys
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
+GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData 查询参数按最近备份密钥的设备 `$filter` **ID** 筛选结果。 有关详细信息，请参阅[示例 2。](#example-2) 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData 查询参数，以按最近备份密钥的设备 `$filter` **ID** 筛选结果。 此方法不支持 `$top` 筛选器。 有关详细信息，请参阅[示例 2。](#example-2) 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 该响应可能还包含 `odata.nextLink` 一个 ，您可以使用它分页浏览结果集。 有关详细信息，请参阅 [分页 Microsoft Graph 数据](/graph/paging)。
 
@@ -94,7 +94,7 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -165,7 +165,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```

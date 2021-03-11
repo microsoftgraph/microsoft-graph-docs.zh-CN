@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3fcacacf4d616b1b9e52b9615864de9056bf1592
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e188857a2cc92210d9298d588c7d411e16fb688a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433268"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720282"
 ---
 # <a name="accesspackageassignment-resource-type"></a>accessPackageAssignment 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50433268"
 
 在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包分配是一段时间内向特定主题分配访问包。  例如，访问包分配可以说明，2019 年 1 月到 2019 年 7 月，用户 Alice 已通过访问包 Sales 分配访问权限。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -37,10 +37,10 @@ ms.locfileid: "50433268"
 |assignmentState|String|访问包分配的状态。 可能的值是 `Delivering` ， `Delivered` 或 `Expired` 。 只读。|
 |assignmentStatus|String|有关分配生命周期详细信息。  可能的值包括 `Delivering` 、 `Delivered` 或 `NearExpiry1DayNotificationTriggered` `ExpiredNotificationTriggered` 。  只读。|
 |catalogId|String|包含访问包的目录的标识符。 只读。|
-|expiredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|expiredDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |id|String| 只读。|
-|isExtended|布尔|指示是否扩展访问包分配。 只读。|
-|targetId|String| 工作分配的主题 ID。 只读。|
+|isExtended|布尔|指示是否已扩展访问包分配。 只读。|
+|targetId|String| 工作分配的主题的 ID。 只读。|
 |schedule|[requestSchedule](requestschedule.md)| 访问分配何时就位。 只读。|
 
 ## <a name="relationships"></a>关系

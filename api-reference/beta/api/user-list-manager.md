@@ -2,15 +2,15 @@
 title: 列出经理
 description: 获取用户的经理。 返回指定为用户经理的用户或联系人。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1f04dc23b777906a3ee36bbcefea035e1e8d2422
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 895e14894e6fed97031911744288c3e78dac8b36
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524424"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721199"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -18,7 +18,7 @@ ms.locfileid: "49524424"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回指定为用户经理的用户或组织联系人。 （可选）您可以将管理器的链展开到根节点。
+返回指定为用户经理的用户或组织联系人。 （可选）可将经理链一直展开到根节点。
 
 ## <a name="permissions"></a>权限
 
@@ -52,21 +52,21 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。  
 
-如果您的请求包含 `$expand=manager($levels=n)` 用于获取经理的链的参数，则还必须包括以下内容：
+如果请求包含用于获取经理链的 `$expand=manager($levels=n)` 参数，则还必须包括以下内容：
 
 - `$count=true` 查询字符串参数
 - `ConsistencyLevel=eventual` 请求标头
 
->**注意：** `n` `$levels` 可以 (的值 `max` 返回所有经理) 或介于1和1000之间的数字。  
-> 如果 `$level` 未指定此参数，则仅返回直属管理器。  
-> 您可以 `$select` 在内指定 `$expand` ，以选择单个经理的属性： `$expand=manager($levels=max;$select=id,displayName)`
+>**注意**：`$levels` 的`n`值可以是 `max`（返回所有管理器）或介于 1 和 1000 之间的数字。  
+> 如果未指定 `$level` 参数，将仅返回直属经理。  
+> 可在 `$expand` 内指定 `$select` 以选择单独的经理属性：`$expand=manager($levels=max;$select=id,displayName)`
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
-| ConsistencyLevel | 最终。 请求包括参数时必需 `$expand=manager($levels=max)` 。 |
+| ConsistencyLevel | 最终。 请求包括 `$expand=manager($levels=max)` 参数时必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -78,9 +78,9 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-manager"></a>示例1：获取管理器
+### <a name="example-1-get-manager"></a>示例 1：获取经理
 
-下面的示例展示了获取经理的请求。
+以下示例显示获取经理的请求。
 
 #### <a name="request"></a>请求
 
@@ -134,9 +134,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>示例2：获取到根级别的管理器链
+### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>示例 2：获取直至根级别的经理链
 
-下面的示例演示将管理器链向上获取到根级别的请求。
+以下示例显示获取直至根级别的经理链的请求。
 
 #### <a name="request"></a>请求
 
@@ -151,7 +151,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 可传递的管理器分层显示。
+下面展示了示例响应。 可传递的经理分层显示。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

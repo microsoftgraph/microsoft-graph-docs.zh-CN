@@ -1,16 +1,16 @@
 ---
 title: agreementFile 资源类型
-description: 表示租户使用 Azure Active Directory 和 Azure AD (管理的) 。 它包含有关协议文件的元数据 (例如，名称、语言以及它是否是默认文件) 。
+description: 表示租户使用 Azure AD (Azure Active Directory 管理) 。 它包含有关协议文件的元数据 (例如，名称、语言以及它是否是默认文件) 。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 12c45876558a162b910120e62c6997c251f391e1
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 0c4c84ccdd17be2140d2e72cd0a0c638eef5af6c
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49664021"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721192"
 ---
 # <a name="agreementfile-resource-type"></a>agreementFile 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "49664021"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示租户使用 Azure Active Directory 和 Azure AD (管理的) 。 它包含有关协议文件的元数据 (例如，名称、语言以及它是否是默认文件) 。
+表示租户使用 Azure AD (Azure Active Directory 管理) 。 它包含有关协议文件的元数据 (例如，名称、语言以及它是否是默认文件) 。
 
 <!--
 ## Methods
@@ -36,10 +36,10 @@ ms.locfileid: "49664021"
 |fileData|[agreementFileData](agreementfiledata.md)|表示 PDF 文档的使用条款的数据。 只读。|
 |fileName|String|协议文件的名称 (例如，TOU.pdf) 。 只读。|
 |id|String|只读。|
-|isDefault|Boolean|指示如果没有任何区域性与客户端首选项匹配，这是否是默认协议文件。 如果未将任何文件标记为默认文件，则第一个文件将被视为默认文件。 只读。|
-|language|String|语言代码 2-country/regioncode2 格式的协议文件的区域性。 languagecode2 是派生自 ISO 639-1 的两字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个大写字母或 BCP-47 语言标记 (例如 en-US) 。 只读。|
-|isMajorVersion|Boolean|指示协议文件是否是主要版本更新。 主要版本更新使协议对相应语言的接受无效。 |
-|createdDateTime|DateTimeOffset|表示文件创建时间的日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。|
+|isDefault|Boolean|指示如果没有任何区域性与客户端首选项匹配，则此文件是否是默认协议文件。 如果没有将任何文件标记为默认文件，则第一个文件将被视为默认文件。 只读。|
+|language|String|语言代码2-country/regioncode2 格式的协议文件的区域性。 languagecode2 是派生自 ISO 639-1 的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个大写字母或 BCP-47 语言标记 (例如 en-US) 。 只读。|
+|isMajorVersion|布尔|指示协议文件是否是主要版本更新。 主要版本更新使协议对相应语言的接受无效。 |
+|createdDateTime|DateTimeOffset|表示文件创建时间的日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 <!--
 ## Relationships

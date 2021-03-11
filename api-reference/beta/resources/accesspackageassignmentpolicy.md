@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 269a3a27d83951c82d50dcaf0ba52c6ce7a5a1bb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: db463609803e3547b88f586cc447974846738e22
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433267"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720443"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>accessPackageAssignmentPolicy 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50433267"
 若要将用户分配给访问包，请创建引用访问包和访问包分配策略的[accessPackageAssignmentRequest。](../api/accesspackageassignmentrequest-post.md)
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -38,17 +38,17 @@ ms.locfileid: "50433267"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |accessPackageId|String|访问包的 ID。|
-|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|谁必须查看此策略中对访问包的分配，以及查看其分配多久。 如果不需要审阅，则此属性为 null。|
+|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|谁必须查看此策略中访问包的工作分配以及分配时间。 如果不需要审阅，则此属性为 null。|
 |canExtend|布尔|指示用户是否可以在审批后延长访问包分配持续时间。|
 |createdBy|String|只读。|
-|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |说明|String|策略的说明。|
 |displayName|String|策略显示名称。|
 |durationInDays|Int32|此策略中的分配持续到过期的天数。|
-|expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |id|String| 只读。|
 |modifiedBy|String|只读。|
-|modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|谁必须批准此策略中的访问包请求。|
 |requestorSettings|[requestorSettings](requestorsettings.md)|谁能从此策略请求此访问包。|
 |问题|[accessPackageQuestion](accesspackagequestion.md) 集合|向请求者提出问题。|

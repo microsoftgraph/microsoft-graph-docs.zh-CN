@@ -2,15 +2,15 @@
 title: 'user: getMemberGroups'
 description: 返回用户是其成员的所有组。 检查是可传递的，这不同于读取
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 76b5cb609ca5661e0d9592897723e1fccaa8a0e8
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 1d2819f6475df39b25a27ce5523d201eab162939
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177254"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720079"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -28,7 +28,7 @@ ms.locfileid: "50177254"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | User.ReadBasic.All、User.Read、User.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | User.ReadBasic.All、User.Read、 User.Read.All、Directory.Read.All、 Directory.ReadWrite.All、 Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                       |
 | 应用程序                            | User.Read.All、Directory.Read.All、Directory.ReadWrite.All            |
 

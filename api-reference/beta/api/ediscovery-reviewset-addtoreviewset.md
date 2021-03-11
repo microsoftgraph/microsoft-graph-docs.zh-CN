@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 95a185a8028e35d26513fc90c05d06dbd9d900c1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4eb0a7c2de533332c57f3e26d3b6fba25a68259d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446035"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720373"
 ---
 # <a name="reviewset-addtoreviewset"></a>reviewSet：addToReviewSet
 
@@ -28,7 +28,7 @@ ms.locfileid: "50446035"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +38,7 @@ ms.locfileid: "50446035"
 -->
 
 ``` http
-POST /cases/{caseId}/reviewSets/{reviewsetId}/addToReviewSet
+POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewsetId}/addToReviewSet
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -56,8 +56,8 @@ POST /cases/{caseId}/reviewSets/{reviewsetId}/addToReviewSet
 
 |参数|类型|说明|
 |:---|:---|:---|
-|sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|**sourceCollection** 的 ID。|
-|additionalData|[microsoft.graph.ediscovery.dataCollectionScope](../resources/ediscovery-addtoreviewsetoperation.md#datacollectionscope-values)|集合 **中将包含的 dataCollectionScope。**|
+|sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|**sourceCollection 的** ID。|
+|additionalData|[microsoft.graph.ediscovery.dataCollectionScope](../resources/ediscovery-addtoreviewsetoperation.md#datacollectionscope-values)|**集合中将包含的 dataCollectionScope。**|
 
 ## <a name="response"></a>响应
 

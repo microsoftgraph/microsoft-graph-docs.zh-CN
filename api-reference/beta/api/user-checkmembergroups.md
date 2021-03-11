@@ -1,16 +1,16 @@
 ---
 title: checkMemberGroups
 description: 检查指定组列表中的成员身份。 从列表返回这些组
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8c0c56f83a2a420a88590f36ab4de5f3942e334b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 620d4688cb803e6ed3af1304561c1bd76d23c679
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976602"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720366"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -30,7 +30,7 @@ ms.locfileid: "48976602"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read.All 和 Group.Read.All、User.ReadWrite.All 和 GroupMember.Read.All、User.ReadWrite.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                     |
-| 应用程序                            | GroupMember、user. all 和 Group. all、user. all 和 group. all、all 和 Group。 all，all，Read. all，all，all，all： all，all： all，all： all |
+| 应用程序                            | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、User.ReadWrite.All 和 GroupMember.Read.All、User.ReadWrite.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

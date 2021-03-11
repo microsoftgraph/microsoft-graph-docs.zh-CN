@@ -2,15 +2,15 @@
 title: 'user: getMemberObjects'
 description: 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d5ea5ef17550f5f821f85c8e38a341075639f297
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d6dba0ce77f4e8918f16b9e6f74a82a44a5f87e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970275"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721444"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/getMemberObjects
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|**true** 指定仅应返回用户是其成员的安全组； **false** 指定应返回用户是其成员的所有组。注意：仅当对用户调用这个方法时，才支持将此参数设置为 **true** 。|
+|securityEnabledOnly|Boolean|**true** 指定仅应返回用户是其成员的安全组；**false** 指定应返回用户是其成员的所有组。注意：仅当对用户调用这个方法时，才支持将此参数设置为 **true**。|
 
 ## <a name="response"></a>响应
 

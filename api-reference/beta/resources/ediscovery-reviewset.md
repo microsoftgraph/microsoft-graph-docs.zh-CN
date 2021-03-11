@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 25c33dd911d9c14d91131508fad37c1fea149b9a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bcb21fece207e9e4d98fa7a0fc612f886e5ab0e6
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446152"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720331"
 ---
 # <a name="reviewset-resource-type"></a>reviewSet 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446152"
 
 表示收集用于诉讼、调查或监管请求的静态电子存储信息集。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -36,7 +36,7 @@ ms.locfileid: "50446152"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |createdBy        | [identitySet](/graph/api/resources/identityset) | 创建审阅集的用户。 只读。 |
-|createdDateTime  |DateTimeOffset| 创建审阅集的日期/时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|createdDateTime  |DateTimeOffset| 创建审阅集的日期/时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 |displayName      |String| 审阅集名称。 该名称是唯一的，最大限制为 64 个字符。 |
 |id               |String| 审阅集唯一标识符。 只读。 |
 

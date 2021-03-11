@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: bd580fd2fbb1f4c3b74ab2ad25b7190ce245ccbd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b9e06ddb7a4a92905612d0975d719700c4cc90b6
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016753"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721661"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
 
@@ -42,10 +42,10 @@ conversationThread 是 [帖子](post.md) 集合。
 | ccRecipients          | [recipient](recipient.md) collection | 抄送：线程的收件人。                                                                                                                                                               |
 | topic                 | String                               | 对话的主题。在创建对话时可设置此属性，但无法对其进行更新。                                                                              |
 | hasAttachments        | Boolean                              | 指示此线程中的任意帖子是否至少具有一个附件。                                                                                                               |
-| lastDeliveredDateTime | DateTimeOffset                       | 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` |
+| lastDeliveredDateTime | DateTimeOffset                       | 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` |
 | uniqueSenders         | String collection                    | 向此线程发送邮件的所有用户。                                                                                                                                                |
-| preview               | String                               | 本对话中最新帖子的正文中的简短摘要。                                                                                                                           |
-| Resource.islocked              | Boolean                              | 指示线程是否已锁定。                                                                                                                                                               |
+| preview               | String                               | 此对话中最新文章正文的简短摘要。                                                                                                                           |
+| isLocked              | Boolean                              | 指示线程是否已锁定。                                                                                                                                                               |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

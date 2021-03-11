@@ -1,16 +1,16 @@
 ---
 title: userSettings 资源类型
 description: '内容发现的当前用户设置。 '
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 81391c38f2577fd3f60c57fa40f9671ae710c2a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b03b1b41c466582a219a034d93a16bb887fa356
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057771"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721437"
 ---
 # <a name="usersettings-resource-type"></a>userSettings 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48057771"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表用户对 [区域区域设置和语言](../resources/regionalandlanguagesettings.md)的首选项、用于 [倒班计划](../resources/shiftpreferences.md)以及用于 [真知灼见和内容发现](../resources/officegraphinsights.md)的设置。
+表示区域设置和语言、排班计划以及[](../resources/regionalandlanguagesettings.md)见解和内容发现的用户[首选项的设置](../resources/officegraphinsights.md)。 [](../resources/shiftpreferences.md)
 
-管理用户的基于区域设置的首选项： 
-  - 确定用户在查看应用程序时首选的语言和区域格式。
-  - 更新用户的语言和区域格式设置首选项。
+管理用户基于区域设置首选项： 
+  - 确定用户首选使用哪些语言和区域格式查看应用程序。
+  - 更新用户的语言和区域格式首选项。
 
 管理用户的工作班次首选项： 
-  - 检查是否可将用户分配给计划中的班次。
-  - 更新用户的 shift 首选项。
+  - 检查用户是否可以分配给计划中的班次。
+  - 更新用户的班次首选项。
   
 启用内容发现和以文档为中心的见解：
   - 检查用户及用户的组织是否对内容发现做贡献。
@@ -47,15 +47,15 @@ ms.locfileid: "48057771"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|布尔值|如果设为 true，则会禁用至用户的[趋势](insights-trending.md) API 的委托访问。 如果设为 true，则用户的 Office Delve 中的文档将禁用。 如果设置为 true，则在 Microsoft 365 中显示的内容的关联性（例如，SharePoint 主页中的建议网站和 OneDrive for Business 中的发现视图）将受到影响。 用户可以在 [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout) 中控制此设置。 |
-|contributionToContentDiscoveryAsOrganizationDisabled|布尔值|反映用于控制至[趋势](insights-trending.md) API 的委托访问的[组织级别设置](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff)。 如果设为 true，则组织没有 Office Delve 的访问权限。 Microsoft 365 中显示的内容的相关性（例如，SharePoint 主页中的建议网站和 OneDrive for Business 中的发现视图）对整个组织受到影响。 此设置为只读，并且仅可由管理员在 [SharePoint 管理中心](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US)更改。|
+|contributionToContentDiscoveryDisabled|布尔值|如果设为 true，则会禁用至用户的[趋势](insights-trending.md) API 的委托访问。 如果设为 true，则用户的 Office Delve 中的文档将禁用。 如果设为 true，则 Microsoft 365 中显示的内容相关性（如 SharePoint 家庭版中的建议网站以及 OneDrive for Business 中的发现视图）将受到影响。 用户可以在 [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout) 中控制此设置。 |
+|contributionToContentDiscoveryAsOrganizationDisabled|布尔值|反映用于控制至[趋势](insights-trending.md) API 的委托访问的[组织级别设置](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff)。 如果设为 true，则组织没有 Office Delve 的访问权限。 对整个组织来说，Microsoft 365 中显示的内容相关性（如 SharePoint 家庭版中的建议网站以及 OneDrive for Business 中的发现视图）将受到影响。 此设置为只读，并且仅可由管理员在 [SharePoint 管理中心](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US)更改。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|shiftPreferences|[shiftPreferences](shiftpreferences.md)| 用户的 shift 首选项。 |
-|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| 用户的语言首选项、区域区域设置和日期/时间格式。 |
+|shiftPreferences|[shiftPreferences](shiftpreferences.md)| 用户的班次首选项。 |
+|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| 用户的语言、区域设置和日期/时间格式的首选项。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

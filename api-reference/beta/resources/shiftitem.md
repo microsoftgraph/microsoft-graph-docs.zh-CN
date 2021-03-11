@@ -1,16 +1,16 @@
 ---
 title: shiftItem 资源类型
-description: ShiftItem 代表班次的一个版本。
+description: shiftItem 表示班次的版本。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: aa26da14476559bcba980ae84237369a6aefeb9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3998176fbd001e1136a107dd3aa53ff8442fe8f3
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058027"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721115"
 ---
 # <a name="shiftitem-resource-type"></a>shiftItem 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "48058027"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表 [班次](shift.md)的一个版本。
+表示一个版本的 [班次](shift.md)。
 
 ## <a name="properties"></a>属性
 | 属性                         | 类型                    | 说明                                                                             |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| 注释               | string                  | 的 shift 说明 `shiftItem` 。      |
-| displayName               | string                  | 的 shift 标签 `shiftItem` 。 |
-| startDateTime               | DateTimeOffset                  | 的开始日期和时间 `shiftItem` 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必需。 |
-| endDateTime               | DateTimeOffset                 | 的结束日期和时间 `shiftItem` 。 必需。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
-| theme | scheduleEntityTheme   |  支持的颜色：白色;变为表示紫粉色黄色底纹darkBlue;darkGreen;darkPurple;darkPink;darkYellow. |
-| activities    | [shiftActivity](shiftactivity.md) 集合   | 班次的增量部分，可包含员工在班次中的时间和地点的详细信息。 例如，工作分配或计划工间休息或午餐。 此为必需属性。 |
+| notes               | string                  | 的班次注释 `shiftItem` 。      |
+| displayName               | string                  | 的班次标签 `shiftItem` 。 |
+| startDateTime               | DateTimeOffset                  | 的开始日期和时间 `shiftItem` 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 必需。 |
+| endDateTime               | DateTimeOffset                 | 的结束日期和时间 `shiftItem` 。 必需。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
+| theme | scheduleEntityTheme   |  支持的颜色：白色;蓝色;绿色;紫色;粉红色;黄色;灰色;darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
+| activities    | [shiftActivity](shiftactivity.md) 集合   | 班次的增量部分，可涵盖员工在轮班期间在何时何地工作的详细信息。 例如，工作分配或安排的休息或午餐。 此为必需属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

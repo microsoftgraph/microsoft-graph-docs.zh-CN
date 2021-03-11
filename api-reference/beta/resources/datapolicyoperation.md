@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a1d1b1adb9a7de73ecefc6a4290b386d299d784e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 498d03180eca9a0508f513f0051a6f9b0079b45d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440505"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720702"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50440505"
 
 表示提交的数据策略操作。 它包含跟踪操作状态的必要信息。 例如，公司管理员可以提交数据策略操作请求以导出员工的公司数据，然后跟踪该请求。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -30,12 +30,12 @@ ms.locfileid: "50440505"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|completedDateTime|DateTimeOffset|表示使用 ISO 8601 格式完成此数据策略操作的请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 Null，直到操作完成。|
+|completedDateTime|DateTimeOffset|表示使用 ISO 8601 格式完成此数据策略操作的请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 Null，直到操作完成。|
 |id|String| 此操作的唯一键。 |
 |状态|string| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
 |storageLocation|String|导出数据以用于导出请求的 URL 位置。|
 |userId|String|要执行该操作的用户的 ID。|
-|submittedDateTime|DateTimeOffset|表示使用 ISO 8601 格式提交此数据操作请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|submittedDateTime|DateTimeOffset|表示使用 ISO 8601 格式提交此数据操作请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |progress|双精度|指定操作的进度。|
 
 ## <a name="relationships"></a>关系

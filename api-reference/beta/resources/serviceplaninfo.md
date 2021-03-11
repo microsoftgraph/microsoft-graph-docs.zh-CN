@@ -4,13 +4,13 @@ description: 包含有关与订阅的 SKU 关联的服务计划的信息。 **su
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: directory-management
-author: krbain
-ms.openlocfilehash: f79e943f0303d28542f3f0932b1e59e59c481fc5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: jpettere
+ms.openlocfilehash: 7188c38c8114008ed124440512646ecd53a9705a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133614"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50718450"
 ---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "50133614"
 |servicePlanId|Guid|服务计划的唯一标识符。|
 |servicePlanName|String|服务计划的名称。|
 |provisioningStatus|String|服务计划的预配状态。 可能的值：<br/>"成功"- 服务已完全预配。<br/>"已禁用"- 服务已禁用。<br/>"PendingInput"- 尚未设置服务;等待服务确认。<br/>"PendingActivation"- 服务已设置，但需要管理员 (显式激活，例如，Intune_O365服务) 。<br/>"PendingProvisioning"- Microsoft 向产品 SKU 添加了一个新服务，但尚未在租户中激活它。|
-|appliesTo|String|可以为其分配服务计划的对象。 可能的值：<br/>"用户"- 可以将服务计划分配给单个用户。<br/>"公司"- 可以将服务计划分配给整个租户。|
+|appliesTo|String|可以为其分配服务计划的对象。 可能的值：<br/>"用户"- 服务计划可分配给单个用户。<br/>"公司"- 可以将服务计划分配给整个租户。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

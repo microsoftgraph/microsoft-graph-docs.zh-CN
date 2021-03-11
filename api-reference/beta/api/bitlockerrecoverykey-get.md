@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 97af35852d19211bde53717b12fcdff2f1981cb8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 49c79732c2953f3e6627061b621a99c00315a4ed
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437992"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719953"
 ---
 # <a name="get-bitlockerrecoverykey"></a>获取 bitlockerRecoveryKey
 命名空间：microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "50437992"
 |:---|:---|
 |委派（工作或学校帐户）|BitLocker.ReadBasic.All、BitLocker.Read.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|不支持|
+|应用程序|不支持|
 
 >**注意：** 对于允许应用代表登录用户获取 BitLockerRecoveryKey 资源的委派权限，租户管理员必须为用户分配以下角色之一，或者用户必须是最初备份 BitLocker 密钥的设备注册所有者：  
 * 全局管理员
@@ -46,16 +46,16 @@ ms.locfileid: "50437992"
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
+GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
-若要获取指定的 BitLocker 密钥（包括其 **键** 属性）：
+若要获取指定的 BitLocker 键（包括其 **键** 属性）：
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
+GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -91,7 +91,7 @@ GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -154,7 +154,7 @@ Content-type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]

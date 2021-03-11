@@ -1,16 +1,16 @@
 ---
 title: timeOffReason 资源类型
-description: 在计划中花费时间的有效原因。
+description: 在日程安排中请假的有效原因。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3a08ad02b03b3b39385f6f351e727d8b5ed54af1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b449f2cb4dcfcd73208d58f8e1e969b9a701e54b
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075481"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720184"
 ---
 # <a name="timeoffreason-resource-type"></a>timeOffReason 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48075481"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[计划](schedule.md)中[timeOff](timeoff.md)实例的有效原因。
+计划中的 [timeOff](timeoff.md) 实例的有效 [原因](schedule.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Create](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | 创建新的 **timeOffReason**。|
+|[创建](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | 创建新的 **timeOffReason**。|
 |[List](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md) 集合 | 获取计划中的 **timeOffReason** 列表。|
-|[Get](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | 按 ID 获取 **timeOffReason** 。|
+|[获取](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | 按 **ID 获取 timeOffReason。**|
 |[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | 替换 **timeOffReason**。|
 |[删除](../api/timeoffreason-delete.md) | 无 | 将 **timeOffReason** 标记为非活动状态。|
 
@@ -34,11 +34,11 @@ ms.locfileid: "48075481"
 |名称          |类型           |说明                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            |`string`      |`timeOffReason` 的 ID。|
-| displayName               | `string`                  | 的名称 `timeOffReason` 。 必需。 |
-| iconType | `timeOffReasonIconType`   | 支持的图标类型：无;car式运行planefirstAid;dr.notWorking;构造juryDuty;投放cup of电话气候防护piggyBank;监控桩trafficCone;针sunny. 必需。 |
+| displayName               | `string`                  | `timeOffReason`的名称。 必需。 |
+| iconType | `timeOffReasonIconType`   | 支持的图标类型：无;car;日历;正在运行;plane;firstAid;或notWorking;clock;juryDuty;全球;cup;phone;weather;umbrella;bankgyBank;dog;中;trafficCone;pin;。 必需。 |
 | isActive          |`Boolean`      | 指示在新建实体或更新现有实体时是否可以使用 `timeOffReason`。 必需。 |
-| createdDateTime       |`DateTimeOffset`        |首次在其上创建此项的时间戳 `timeOffReason` 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
-| lastModifiedDateTime      |`DateTimeOffset`         |对其最后更新的时间戳 `timeOffReason` 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
+| createdDateTime       |`DateTimeOffset`        |首次创建此时间戳 `timeOffReason` 的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
+| lastModifiedDateTime      |`DateTimeOffset`         |上次更新时间戳 `timeOffReason` 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedBy        | [identitySet](identityset.md)        |上次更新 `timeOffReason` 的标识。|
 
 ## <a name="json-representation"></a>JSON 表示形式

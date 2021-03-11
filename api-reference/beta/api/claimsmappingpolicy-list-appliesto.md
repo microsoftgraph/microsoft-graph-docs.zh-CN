@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9eb488b931cb5ff89796526f1285fa5454a5bae8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5862cec0cfb7a78a9e7d48fa08998327c7b7a04a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437686"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720100"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 
@@ -28,7 +28,7 @@ ms.locfileid: "50437686"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.All 和 Application.Read.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.Read.All 和 Application.Read.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.Read.All、Directory.Read.All |
+| 应用程序                            | Policy.Read.All 和 Application.Read.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -67,7 +67,7 @@ GET /policies/claimsMappingPolicies/{id}/appliesTo
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/claimsMappingPolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies/{id}/appliesTo
 ```
 
 ### <a name="response"></a>响应

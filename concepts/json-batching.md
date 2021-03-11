@@ -4,12 +4,12 @@ description: JSON 批处理使你能够通过将多个请求合并为一个单�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5737d57ef9256333c6485abe4da400be9e7ec745
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 4e1ad5734d0fefe2cdb7634e461ee9f297aae93e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643986"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721570"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 
@@ -132,8 +132,6 @@ JSON 批处理请求的响应格式与请求格式类似。主要区别如下：
 
 批处理响应中的状态代码通常为 `200` 或 `400`。如果批处理请求本身格式不正确，则状态代码为 `400`。如果批处理请求可分析，则状态代码为 `200`。批处理响应中的 `200` 状态代码并不表示批处理中的单独请求已成功。这就是为什么 `responses` 属性中的每个单独响应都有状态代码。
 
-除 `responses` 属性外，批处理响应中可能还有 `nextLink` 属性。这使 Microsoft Graph 可以在单独请求完成后尽快返回批处理响应。为确保接收所有单独响应，只要其存在，请继续遵循 `nextLink`。
-
 ## <a name="sequencing-requests-with-the-dependson-property"></a>使用 dependsOn 属性对请求进行排序
 
 通过使用 `dependsOn` 属性可按指定顺序执行单独请求。此属性是引用不同的单独请求的 `id` 的字符串数组。出于这个原因，`id` 的值必须唯一。例如，在下面的请求中，客户端指定请求 1 和 3 应该先运行，然后是请求 2，然后是请求 4。
@@ -183,4 +181,4 @@ JSON 批处理的其他用例是绕过 URL 长度限制。如果筛选子句太�
 
 ## <a name="see-also"></a>另请参阅
 
-关于JSON批量请求/响应格式的更多信息，请参见[OData JSON Format 4.01版规范](http://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html#sec_BatchRequestsandResponses) ，章节_Batch Requests and Responses_。
+关于JSON批量请求/响应格式的更多信息，请参见 [OData JSON Format 4.01版规范](http://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html#sec_BatchRequestsandResponses) ，章节 _Batch Requests and Responses_。

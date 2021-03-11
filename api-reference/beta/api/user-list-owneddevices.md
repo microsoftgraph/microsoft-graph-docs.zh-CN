@@ -1,16 +1,16 @@
 ---
 title: List ownedDevices
 description: 获取用户拥有的设备列表。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f4750a0ad3dbf4c98bb3b65cc354416b67fefc0d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fb714f9d570f63c6b55842b32f16e5afcf0752da
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967327"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50718511"
 ---
 # <a name="list-owneddevices"></a>List ownedDevices
 
@@ -19,7 +19,7 @@ ms.locfileid: "48967327"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户拥有的设备列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

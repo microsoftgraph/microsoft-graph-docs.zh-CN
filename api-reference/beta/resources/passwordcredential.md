@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6f7906f2f7411c680eb07c94166e5d324e922d67
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fbc5af586392191e2ab583ad6e723b3ee0789463
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137660"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720542"
 ---
 # <a name="passwordcredential-resource-type"></a>passwordCredential 资源类型
 
@@ -33,12 +33,12 @@ ms.locfileid: "50137660"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | customKeyIdentifier | Binary | 请勿使用。 |
-| displayName | 字符串 | 密码的友好名称。 可选。 |
-| endDateTime | DateTimeOffset | 密码过期的日期和时间使用 ISO 8601 格式表示，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 |
-| 提示 | 字符串 | 包含密码的前三个字符。 只读。 |
+| displayName | String | 密码的友好名称。 可选。 |
+| endDateTime | DateTimeOffset | 密码过期的日期和时间使用 ISO 8601 格式表示，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 可选。 |
+| 提示 | String | 包含密码的前三个字符。 只读。 |
 | keyId | Guid | 密码的唯一标识符。 |
-| secretText | 字符串 | 只读;包含 Azure AD 生成的长度为 16-64 个字符的强密码。 生成的密码值仅在初始 POST 请求期间返回以 [addPassword](../api/application-addpassword.md)。 以后无法检索此密码。 |
-| startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 |
+| secretText | String | 只读;包含 Azure AD 生成的长度为 16-64 个字符的强密码。 生成的密码值仅在初始 POST 请求 [addPassword 期间返回](../api/application-addpassword.md)。 将来无法检索此密码。 |
+| startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 可选。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

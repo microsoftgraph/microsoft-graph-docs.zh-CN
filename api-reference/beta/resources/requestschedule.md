@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 74fa9589552ba860962c73814e66332eda1c8e8f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 33abd221d22d37cc58bcf3770b4e28fa78b77064
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132536"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50718462"
 ---
 # <a name="requestschedule-resource-type"></a>requestSchedule 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50132536"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|startDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|startDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |expiration|[expirationPattern](expirationpattern.md)|访问应过期的时间。|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|对于定期访问。 目前未使用。|
 

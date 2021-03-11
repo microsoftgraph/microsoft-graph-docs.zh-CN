@@ -1,16 +1,16 @@
 ---
 title: assignLicense
-description: 添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此 Technet 文章。
+description: 为用户添加或删除许可证，以启用或禁用他们对 Microsoft 云产品/服务的使用。 例如，组织可以拥有具有 100 个许可证的 Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的更多信息，请参阅此 Technet 文章。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2a0baa7aab8cc6e24b6e2e3d5d3c0e294b0f3933
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ae5e752eed161d78651e5ed9b93e107320f5a815
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976623"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720387"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 
@@ -18,11 +18,11 @@ ms.locfileid: "48976623"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此 [Technet 文章](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)。
+为用户添加或删除许可证，以启用或禁用他们对 Microsoft 云产品/服务的使用。 例如，组织可以拥有具有 100 个许可证的 Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的更多信息，请参阅 [此 Technet 文章](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)。
 
-若要获取目录中可用的订阅，请执行 [Get subscribedsku 请求](subscribedsku-list.md)。 
+若要获取目录中可用的订阅，请执行 [GET subscribedSkus 请求](subscribedsku-list.md)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -47,12 +47,12 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 您可以通过在 [assignedLicense](../resources/assignedlicense.md)对象上设置 **disabledPlans** 属性来禁用与许可证关联的 servicePlans。|
-|removeLicenses|Guid 集合|标识要删除的许可证的 skuIds 的集合。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 可以通过在 assignedLicense 对象上设置 **disabledPlans** 属性来禁用与许可证关联的 [servicePlans。](../resources/assignedlicense.md)|
+|removeLicenses|Guid 集合|标识要删除的许可证的 skuId 集合。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [user](../resources/user.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码[](../resources/user.md)和更新的用户对象。
 
 ## <a name="example"></a>示例
 向用户添加许可证。
@@ -102,7 +102,7 @@ Content-length: 185
 
 
 ## <a name="example"></a>示例
-删除用户的许可证。
+从用户中删除许可证。
 
 ##### <a name="request"></a>请求
 ```http
@@ -117,7 +117,7 @@ Content-length: 185
 ```
 
 ##### <a name="response"></a>响应
-在这两个示例中，响应是更新的用户对象。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+在这两个示例中，响应都是更新的用户对象。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d0d1eaa15d71dfa219271cef74880a092e9522db
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8f53d1ebce8a7a578c067354ba7f89c6c27ea947
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137443"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720828"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>applicationSignInDetailedSummary 资源类型
 
@@ -29,10 +29,10 @@ ms.locfileid: "50137443"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|aggregatedEventDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|aggregatedEventDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |appDisplayName|String|用户登录的应用程序的名称。|
 |appId|String|用户登录的应用程序的 ID。|
-|id|字符串| 表示登录活动的唯一 ID。|
+|id|String| 表示登录活动的唯一 ID。|
 |signInCount|Int64|应用程序进行登录的计数。|
 |status|[signInStatus](signinstatus.md)|登录状态的详细信息。|
 

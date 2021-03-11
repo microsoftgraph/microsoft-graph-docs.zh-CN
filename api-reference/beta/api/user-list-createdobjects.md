@@ -1,16 +1,16 @@
 ---
 title: List createdObjects
 description: 获取由用户创建的 directory 对象列表。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f1612ff1868cf2f5dfe738f0abac3702c9094413
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8ae5c157d363a69db8dadf68103281d995445ecb
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971745"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720039"
 ---
 # <a name="list-createdobjects"></a>List createdObjects
 
@@ -19,7 +19,7 @@ ms.locfileid: "48971745"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取由用户创建的 directory 对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

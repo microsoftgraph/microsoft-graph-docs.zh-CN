@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 1b026bccd18af0dcbc9c0a5128595399a0997474
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: c5fc858e29abf7d649b32991d9e30ce64cc0b632
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033916"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721612"
 ---
 # <a name="cloudpc-resource-type"></a>cloudPC 资源类型
 
@@ -45,7 +45,7 @@ ms.locfileid: "50033916"
 |状态|[cloudPcStatus](#cloudpcstatus-values)|云电脑的状态。 可取值为：`notProvisioned`、`provisioning`、`provisioned`、`upgrading`、`inGracePeriod`、`deprovisioning` 或 `failed`。|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|云电脑状态的详细信息。|
 |userPrincipalName|String|用户主体名称 (分配给) 电脑的用户的 UPN 名称。|
-|lastModifiedDateTime|DateTimeOffset|云电脑上次修改的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。|
+|lastModifiedDateTime|DateTimeOffset|云电脑上次修改的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ### <a name="cloudpcstatus-values"></a>cloudPcStatus 值
 
@@ -54,9 +54,9 @@ ms.locfileid: "50033916"
 |notProvisioned|尚未预配云电脑。|
 |预配|云电脑预配正在进行中。|
 |已设置|云电脑已预配，最终用户可以访问它。|
-|升级|云电脑调整大小正在进行中。|
-|inGracePeriod|云电脑在取消设置前有一周的宽限期。|
-|取消设置|云电脑正在取消设置。|
+|升级|云电脑大小调整正在进行中。|
+|inGracePeriod|云电脑在取消预配前的一周宽限期内。|
+|取消设置|云电脑正在取消预配。|
 |failed|云电脑上的操作失败。|
 
 ## <a name="relationships"></a>关系

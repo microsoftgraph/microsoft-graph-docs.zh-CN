@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f899203fd58174fdb2d7935da3de4105576338d2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8fa3e0a20646f2acf72d26d31c20bac674e751cd
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443200"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720947"
 ---
 # <a name="accesspackageresourcerolescope-resource-type"></a>accessPackageResourceRoleScope 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "50443200"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包资源角色作用域是一个对资源内的作用域的引用，也是该资源中该范围的角色的引用。  访问包将具有其目录中与该访问包相关的资源的访问包资源角色作用域。  当主题收到访问包分配时，主题将在每个访问包资源角色作用域的该范围内使用角色进行预配。
+在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包资源角色作用域是一个对资源中的作用域的引用，也是该资源中该范围的角色的引用。  访问包将具有其目录中与该访问包相关的资源的访问包资源角色作用域。  当主题收到访问包分配时，主题将在每个访问包资源角色作用域的该范围内使用角色进行预配。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -32,10 +32,10 @@ ms.locfileid: "50443200"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |createdBy|String|只读。|
-|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |id|String| 只读。|
 |modifiedBy|String|只读。|
-|modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>关系
 

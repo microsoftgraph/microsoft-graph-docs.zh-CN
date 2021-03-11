@@ -1,27 +1,27 @@
 ---
-title: 用户： reprocessLicenseAssignment
+title: user： reprocessLicenseAssignment
 description: 重新处理用户的所有基于组的许可证分配。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 958e35e270034a2081e7565e7cf4eb4b7feea2d6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 58d2372356f43167b15f2b84d245f9acc98b38c8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981873"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721080"
 ---
-# <a name="user-reprocesslicenseassignment"></a>用户： reprocessLicenseAssignment
+# <a name="user-reprocesslicenseassignment"></a>user： reprocessLicenseAssignment
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重新处理用户的所有基于组的许可证分配。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。 有关更多详细信息，请参阅 [识别和解决 Azure Active Directory 中的组的许可证分配问题](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) 。
+重新处理用户的所有基于组的许可证分配。 若要了解有关基于组的许可，请参阅 [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)中基于组的许可。 有关详细信息，请参阅"确定并解决 [Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) 中组的许可证分配问题"。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,10 +46,10 @@ POST /users/{id}/reprocessLicenseAssignment
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [user](../resources/user.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码[](../resources/user.md)和更新的用户对象。
 
 ## <a name="example"></a>示例
-下面的示例展示了如何重新处理用户的许可证分配。
+以下示例演示如何重新处理用户的许可证分配。
 ### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)

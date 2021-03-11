@@ -1,16 +1,16 @@
 ---
 title: assignedLabel 资源类型
-description: 代表分配给 Microsoft 365 组的敏感度标签。 通过将分类分配到组 (（如机密、高度机密或常规) ），允许管理员强制组中的特定组设置。
+description: 表示分配给 Microsoft 365 组的敏感度标签。 敏感度标签允许管理员通过向组分配分类（如机密、高度机密或常规 (）来强制实施组的特定组) 。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 75cfeb74f8844325019c365b0714ae50dcfed063
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 7c71e59c022eb9a3314771598b47e938a61a946a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352359"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720345"
 ---
 # <a name="assignedlabel-resource-type"></a>assignedLabel 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "49352359"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表分配给 Microsoft 365 组的敏感度标签。 通过将分类分配到组 (（如机密、高度机密或常规) ），允许管理员强制组中的特定组设置。 敏感度标签由 Microsoft 365 Security & 合规性中心中的管理员发布，作为 Microsoft 信息保护功能的一部分。 有关敏感度标签的详细信息，请参阅 [敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels)。
+表示分配给 Microsoft 365 组的敏感度标签。 敏感度标签允许管理员通过向组分配分类（如机密、高度机密或常规 (）来强制实施组的特定组) 。 敏感度标签由 Microsoft 365 安全与合规& Microsoft 信息保护功能的一部分发布。 有关敏感度标签详细信息，请参阅 [敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels)。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|labelId|字符串|标签的唯一标识符。|
-|displayName|字符串|标签的显示名称。 只读。|
+|labelId|String|标签的唯一标识符。|
+|displayName|String|标签显示名称。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

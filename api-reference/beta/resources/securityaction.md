@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9bd20ddb5a228cf6764dc2ecf6ff770218ca916a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: c1adeb6ee5ab3b3ad2165e854b2812e39b8df5ab
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159435"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720625"
 ---
 # <a name="securityaction-resource-type"></a>securityAction 资源类型
 
@@ -37,18 +37,18 @@ ms.locfileid: "50159435"
 |:-------------|:------------|:------------|
 |actionReason|String|调用此操作的原因。|
 |appId|String|在 POST 中提交的调用应用程序 (ID) 操作。 appId 应从身份验证令牌中提取，调用应用程序不应手动输入。|
-|azureTenantId|字符串|实体的 Azure 租户 ID，用于确定实体所属的租户 (多租户支持) 。 azureTenantId 应从身份验证令牌中提取，调用应用程序不应手动输入。|
-|completedDateTime|DateTimeOffset|操作完成时时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|createdDateTime|DateTimeOffset|创建操作时时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|azureTenantId|字符串|实体的 Azure 租户 ID，用于确定实体属于 (租户支持) 。 azureTenantId 应从身份验证令牌中提取，调用应用程序不应手动输入。|
+|completedDateTime|DateTimeOffset|操作完成时时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|createdDateTime|DateTimeOffset|创建操作时时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |errorInfo|[resultInfo](resultinfo.md)| 操作失败时的错误信息。|
 |id|String| 在操作被启用时由系统创建。 生成的 GUID/唯一标识符。 只读。|
-|lastActionDateTime|DateTimeOffset| 上次更新此操作的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|名称|String| 操作名称。|
-|parameters|[keyValuePair](keyvaluepair.md) 集合| 参数集合 (调用操作) 所需的键值对，例如要阻止的 URL 或 fileHash 等) 。 **必需**|
+|lastActionDateTime|DateTimeOffset| 上次更新此操作的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|name|String| 操作名称。|
+|parameters|[keyValuePair](keyvaluepair.md) 集合| 参数集合 (键值对) 操作所必需的，例如要阻止的 URL 或 fileHash 等) 。 **必需**|
 |状态|[securityActionState](securityactionstate.md) 集合|securityActionState 集合，以保留操作历史记录。|
 |状态|string| 操作的状态。 可取值为：`NotStarted`、`Running`、`Completed`、`Failed`。|
-|user|String| 在 POST 中提交的已登录用户的用户主体 () 操作。 用户应从身份验证令牌中提取，调用应用程序不应手动输入。|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|包含安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型 (例如 vendor=Microsoft;provider=Windows Defender ATP;sub-provider=AppLocker) 。|
+|user|String| 在 POST 中提交的已登录用户的用户主体 () 操作。 用户应从身份验证令牌中提取，而不是由调用应用程序手动输入。|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|复杂类型，包含有关安全产品/服务供应商、提供程序和子 (的详细信息，例如 vendor=Microsoft;provider=Windows Defender ATP;sub-provider=AppLocker) 。|
 
 ## <a name="relationships"></a>关系
 

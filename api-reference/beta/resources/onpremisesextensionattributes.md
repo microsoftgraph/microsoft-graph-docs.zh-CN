@@ -1,16 +1,16 @@
 ---
 title: onPremisesExtensionAttributes 资源类型
-description: User 实体的 **onPremisesExtensionAttributes** 属性包含十五个自定义扩展属性的属性。
+description: 用户 **实体的 onPremisesExtensionAttributes** 属性包含十五个自定义扩展属性。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: users
-author: krbain
-ms.openlocfilehash: 2729d6d624f1bde304425229ccf4ae7df8ddf781
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: jpettere
+ms.openlocfilehash: 95d777140210070471c9578399e26e0eda3620d7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052586"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720583"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>onPremisesExtensionAttributes 资源类型
 
@@ -18,29 +18,29 @@ ms.locfileid: "48052586"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[User](user.md)实体的**onPremisesExtensionAttributes**属性包含十五个自定义扩展属性的属性。 对于 **onPremisesSyncEnabled** 用户，此属性集的权威来源是同步到 Azure AD 的本地 Active Directory，并且是只读的。 对于仅限云的用户 (其中 **onPremisesSyncEnabled** 为 false) ，可以在创建或更新期间设置这些属性。
+用户 **实体的 onPremisesExtensionAttributes** 属性包含十五个自定义扩展属性。 [](user.md) 对于 **onPremisesSyncEnabled** 用户，这组属性的颁发机构是同步到 Azure AD 且只读本地 Active Directory。 对于仅云用户 (**onPremisesSyncEnabled** 为 false) ，可以在创建或更新期间设置这些属性。
 
-> **注意：** 这些扩展属性也称为 Exchange 自定义属性1-15。
+> **注意：** 这些扩展属性也称为 Exchange 自定义属性 1-15。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensionAttribute1|String| 第一个可自定义的扩展属性。 |
-|extensionAttribute2|String| 第二个可自定义扩展属性。 |
+|extensionAttribute2|String| 第二个可自定义的扩展属性。 |
 |extensionAttribute3|String| 第三个可自定义的扩展属性。 |
-|extensionAttribute4|String| 第四个可自定义的扩展属性。 |
-|extensionAttribute5|String| 第五个可自定义的扩展属性。 |
-|extensionAttribute6|String| 第六个可自定义的扩展属性。 |
-|extensionAttribute7|String| 第七个可自定义的扩展属性。 |
-|extensionAttribute8|String| 第8个可自定义的扩展属性。 |
-|extensionAttribute9|String| 第九个可自定义的扩展属性。 |
+|extensionAttribute4|String| 第四个可自定义扩展属性。 |
+|extensionAttribute5|String| 第五个可自定义扩展属性。 |
+|extensionAttribute6|String| 第六个可自定义扩展属性。 |
+|extensionAttribute7|String| 第七个可自定义扩展属性。 |
+|extensionAttribute8|String| 第八个可自定义扩展属性。 |
+|extensionAttribute9|String| 第九个可自定义扩展属性。 |
 |extensionAttribute10|String| 第十个可自定义的扩展属性。 |
-|extensionAttribute11|String| 第11个可自定义的扩展属性。 |
+|extensionAttribute11|String| 第十一个可自定义的扩展属性。 |
 |extensionAttribute12|String| 第十二个可自定义的扩展属性。 |
-|extensionAttribute13|String| 第十三个可自定义的扩展属性。 |
-|extensionAttribute14|String| 第十四个可自定义的扩展属性。 |
-|extensionAttribute15|String| 第十五个可自定义的扩展属性。 |
+|extensionAttribute13|String| 第十三个可自定义扩展属性。 |
+|extensionAttribute14|String| 第十四个可自定义扩展属性。 |
+|extensionAttribute15|String| 第十五个可自定义扩展属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

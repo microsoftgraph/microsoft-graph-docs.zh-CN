@@ -1,17 +1,16 @@
 ---
 author: learafa
-ms.author: learafa
 title: 获取 websocket 终结点
 description: 不支持在生产应用程序中使用这些 API。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cce55126e10dfbae981b2118fb8b0cd9543f7491
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e56a4174808a7b30ecf063c2b782e0be272c6046
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982236"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721455"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
@@ -20,21 +19,21 @@ ms.locfileid: "48982236"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 不支持在生产应用程序中使用这些 API。
 
-允许您使用[socket.io][]接收[驱动器][]和[列表][]的近实时更改通知。
-Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 若要了解详细信息，请参阅 [socket.io](https://socket.io)。
+允许你使用 socket.io 接收驱动器和[列表][][的近实时更改socket.io。][] [][]
+Socket.io JavaScript 的热门通知库，它利用 WebSockets。 若要了解更多信息 [，请参阅](https://socket.io)socket.io。
 
 [drive]: ../resources/drive.md
 [list]: ../resources/list.md
 [socket.io]: https://socket.io/
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
-| 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
-| 委派（个人 Microsoft 帐户） | Read，文件. ReadWrite，全部文件。
+| 委派（工作或学校帐户）     | Files.Read、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All
+| 委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.ReadWrite.All
 | 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -44,7 +43,7 @@ Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 �
 ```http
 GET /me/drive/root/subscriptions/socketIo
 GET /drives/{driveId}/root/subscriptions/socketIo
-GET /lists/{list-id}/subscriptions/socketIo
+GET /drives/{driveId}/list/subscriptions/socketIo
 GET /groups/{groupId}/drive/root/subscriptions/socketIo
 GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ```
@@ -80,7 +79,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [订阅](../resources/subscription.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码[](../resources/subscription.md)和订阅对象。
 
 <!-- {
   "blockType": "response",
@@ -97,11 +96,11 @@ Content-type: application/json
 }
 ```
 
-`notificationUrl`返回的是 socket.io 终结点 URL。
-若要将它与 socket.io 客户端一起使用，请拆分令牌上的字符串 `/callback?` 。
-之前的字符串部分 `/callback?` 是 socket.io 终结点 URL，后面的字符串部分是必须向库提供的不透明查询字符串。
+返回 `notificationUrl` 的是一个socket.io URL。
+若要与客户端socket.io，请拆分令牌上的 `/callback?` 字符串。
+之前字符串的一部分是socket.io URL，后一部分是必须赋予库的不透明查询 `/callback?` 字符串。
 
-下面的示例演示如何 `notificationUrl` 在 JavaScript 中将 with socket.io。
+以下示例演示如何在 `notificationUrl` JavaScript 中将 with socket.io。
 
 ```javascript
 // this is the notificationUrl returned from this API

@@ -1,16 +1,16 @@
 ---
 title: List agreementAcceptances
-description: 检索用户的 agreementAcceptance 对象列表。
+description: 检索用户 agreementAcceptance 对象的列表。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 3e7f256b5fb800a17a8d329463f44a5ddc571f33
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b0bc9630d503847832b8fb3ab73e8064fa90c96c
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973810"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720058"
 ---
 # <a name="list-agreementacceptances"></a>List agreementAcceptances
 
@@ -18,8 +18,8 @@ ms.locfileid: "48973810"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户的 [agreementAcceptance](../resources/agreementacceptance.md) 对象列表。
-## <a name="permissions"></a>权限
+检索用户 [agreementAcceptance](../resources/agreementacceptance.md) 对象的列表。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -46,7 +46,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [agreementAcceptance](../resources/agreementacceptance.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [agreementAcceptance](../resources/agreementacceptance.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

@@ -1,16 +1,16 @@
 ---
 title: userActivationCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d81e8078d785761c09aa1070120924b2318415a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 719a73739a64dca2bd7a052cc9cdd51007173eff
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057883"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719897"
 ---
 # <a name="useractivationcounts-resource-type"></a>userActivationCounts 资源类型
 
@@ -20,14 +20,14 @@ ms.locfileid: "48057883"
 
 | 属性          | 类型   | 说明                              |
 | :---------------- | :----- | ---------------------------------------- |
-| productType       | String | 产品类型，如 "Microsoft 365 专业增强版" 或 "Project Client"。 |
+| productType       | String | 产品类型，例如"Microsoft 365 ProPlus"或"Project Client"。 |
 | lastActivatedDate | 日期   | 最新激活的日期。       |
-| 时间           | Int64  | Windows 上的激活计数。 此数字包括任何 Windows 计算机上的每次激活。 |
-| mac               | Int64  | Mac OS 上的激活计数。          |
+| windows           | Int64  | Windows 上的激活计数。 此数字包括任何 Windows 计算机上每次激活。 |
+| mac               | Int64  | Mac 操作系统上的激活计数。          |
 | windows10Mobile   | Int64  | Windows 10 移动版上的激活计数。 |
-| ios               | Int64  | IOS 上的激活计数。             |
+| ios               | Int64  | iOS 上的激活计数。             |
 | android           | Int64  | Android 设备上的激活计数。  |
-| activatedOnSharedComputer   | Boolean | 如此如果用户之前在共享计算机上使用过该产品。 |
+| activatedOnSharedComputer   | 布尔 | 如果用户之前在共享计算机上使用过该产品，则其为 True。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

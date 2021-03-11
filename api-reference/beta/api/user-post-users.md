@@ -1,16 +1,16 @@
 ---
 title: 创建用户
 description: 新建用户。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1bdbe81274b8769839cf97a5cf8025eea5e2f36e
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 9e60e01bcf530533f6827af2d93a90573f39c760
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523656"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720038"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -20,7 +20,7 @@ ms.locfileid: "49523656"
 
 创建新[用户](../resources/user.md)。请求正文包含要创建的用户。至少要为该用户指定必需的属性。可以选择指定其他任意可写属性。
 
-此操作默认情况下仅返回每个用户的属性子集。 这些默认属性将记录在[属性](../resources/user.md#properties)部分中。 若要获取非默认返回的属性，请执行 [GET 操作](user-get.md)，并在 `$select` OData 查询选项中指定这些属性。
+默认情况下，此操作仅返回每个用户的一部分属性。 这些默认属性将记录在[属性](../resources/user.md#properties)部分中。 若要获取非默认返回的属性，请执行 [GET 操作](user-get.md)，并在 `$select` OData 查询选项中指定这些属性。
 
 >[!NOTE]
 >若要创建外部用户，请使用[邀请 API](invitation-post.md)。
@@ -54,7 +54,7 @@ POST /users
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |布尔 |如果帐户已启用，则为 True;否则为 false。|
+|accountEnabled |布尔 |如果启用帐户，则其为 True;否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
@@ -63,10 +63,10 @@ POST /users
 
 由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
 
-默认情况下，通过此 API 创建的联合用户将被强制每隔12小时登录一次。 有关如何更改此操作的信息，请参阅 [令牌生存期异常](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
+默认情况下，将强制通过此 API 创建的联盟用户每 12 小时登录一次。 若要了解如何更改此限制，请参阅 [令牌生存期的例外](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
 
 >[!NOTE]
->不允许将 [B2C 本地帐户](../resources/objectidentity.md) 添加到现有的 **user** 对象，除非该 **用户** 对象已包含本地帐户标识。
+>不允许向现有用户对象添加[B2C](../resources/objectidentity.md)本地帐户，除非用户对象已包含本地帐户标识。 
 
 ## <a name="response"></a>响应
 
@@ -123,7 +123,7 @@ Content-type: application/json
 下面是一个响应示例。 
 
 >[!NOTE]
->为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

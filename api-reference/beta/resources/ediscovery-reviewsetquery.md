@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: f9c535cb1adbb62f33aee1324b6dc06a910f4b46
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8eb674ed70eac47d4e29d127ebfc9f48b7b988a1
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446151"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720317"
 ---
 # <a name="reviewsetquery-resource-type"></a>reviewSetQuery 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446151"
 
 表示审阅集查询，用于查询和剔除电子数据展示 [reviewSet 中存储的数据](ediscovery-reviewset.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -36,11 +36,11 @@ ms.locfileid: "50446151"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | createdBy | [identitySet](/graph/api/resources/identityset) | 创建查询的用户。 |
-| createdDateTime |DateTimeOffset| 创建查询的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+| createdDateTime |DateTimeOffset| 创建查询的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 | displayName | String | 查询的名称。|
 | id |String| 查询的唯一标识符。 只读。|
 | lastModifiedBy | [identitySet](/graph/api/resources/identityset) | 上次修改查询的用户。 |
-| lastModifiedDateTime |DateTimeOffset | 上次修改查询的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+| lastModifiedDateTime |DateTimeOffset | 上次修改查询的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 | 查询 | String | KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅 [高级电子数据展示中的文档元数据字段](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。  此字段直接映射到关键字条件。  您可以使用与值配对的可搜索字段 *名称中列出的字段来* 优化搜索;例如 *，subject："Quarterly Financials" and Date>=06/01/2016 AND Date<=07/01/2016*. |
 
 ## <a name="relationships"></a>关系

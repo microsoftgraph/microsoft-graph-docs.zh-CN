@@ -1,16 +1,16 @@
 ---
 title: offerShiftRequest 资源类型
-description: 表示要向团队中的其他用户提供班次的班次请求类型。
+description: 表示向团队中的其他用户提供班次的轮班请求类型。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d1b26d7801a3eb4570104ff68b9037fd9c553a68
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0f80e8578422aa00d6af1d2df22a0dfb7472c8c8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156707"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721479"
 ---
 # <a name="offershiftrequest-resource-type"></a>offerShiftRequest 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "50156707"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示要向团队中的其他用户提供班次的班次请求类型。
+表示向团队中的其他用户提供班次的轮班请求类型。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [创建](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | 创建 offerShiftRequest 对象的实例。 |
-| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | 读取 offerShiftRequest 对象的属性和关系。 |
-| [列表](../api/offershiftrequest-list.md) | [offerShiftRequest 集合](offershiftrequest.md) | 读取团队中所有 offerShiftRequest 对象的属性和关系。 |
+| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | 创建 offerShiftRequest 对象的实例。 |
+| [获取](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | 读取 offerShiftRequest 对象的属性和关系。 |
+| [List](../api/offershiftrequest-list.md) | [offerShiftRequest 集合](offershiftrequest.md) | 读取团队中所有 offerShiftRequest 对象的属性和关系。 |
 |[批准](../api/offershiftrequest-approve.md)|无|批准 offerShiftRequest。 |
 |[拒绝](../api/offershiftrequest-decline.md)|无|拒绝 offerShiftRequest。 |
 
@@ -34,7 +34,7 @@ ms.locfileid: "50156707"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|recipientActionDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|recipientActionDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |recipientActionMessage|String| 产品/服务班次请求的收件人发送的自定义邮件。 |
 |recipientUserId|String| 产品/服务班次请求的收件人的用户 ID。|
 |senderShiftId|String| 产品/服务班次请求发件人的用户 ID。|

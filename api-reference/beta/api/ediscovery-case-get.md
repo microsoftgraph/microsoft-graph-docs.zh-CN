@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ed5db0f3f402ff8746d21457efe392dec728c3d8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bce23e3efbc6c89a49cb62255c1e71b422ab7dc0
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446101"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720395"
 ---
 # <a name="get-case"></a>获取案例
 
@@ -28,7 +28,7 @@ ms.locfileid: "50446101"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -67,7 +67,7 @@ GET /compliance/ediscovery/cases/{id}
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/cases/061b9a92-8926-4bd9-b41d-abf35edc7583
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583
 ```
 
 ### <a name="response"></a>响应

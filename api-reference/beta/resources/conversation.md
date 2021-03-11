@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 3a9a0e9e509dd27014654445d37d9304d69b8d3b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b3dd263a91552afc4db42cb2cc1791741dc24473
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016768"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721666"
 ---
 # <a name="conversation-resource-type"></a>对话资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "48016768"
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。|
 |id|String|对话的唯一标识符。只读。|
-|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |preview|String|来自此对话中最新帖子的正文的简短摘要。|
 |topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。|
 |uniqueSenders|String collection|发送消息到此对话的所有用户。|

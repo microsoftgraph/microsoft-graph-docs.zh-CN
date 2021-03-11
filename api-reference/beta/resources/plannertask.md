@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: dd3e96e035c0097830e7ce797da0fa91ea28aac5
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 475a258021c5769d1003efbbd26f16d793887471
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883200"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720968"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 
@@ -39,21 +39,21 @@ ms.locfileid: "49883200"
 |bucketId|String|此任务所属的存储桶 ID。 存储桶需要位于任务所在的计划中。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。 |
 |checklistItemCount|Int32|任务上存在的核对清单项的数目。|
 |completedBy|[identitySet](identityset.md)|完成任务的用户的身份。|
-|completedDateTime|DateTimeOffset|只读。任务的 `'percentComplete'` 被设置为 `'100'` 的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|completedDateTime|DateTimeOffset|只读。 任务设置为的 `'percentComplete'` 日期和时间 `'100'` 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |conversationThreadId|字符串|关于任务的对话的线程 ID。此为在组中创建的对话线程对象的 ID。|
 |createdBy|[identitySet](identityset.md)|创建任务的用户的身份|
-|createdDateTime|DateTimeOffset|只读。创建任务的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|只读。 创建任务的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|包含有关任务源的信息。|
-|dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|dueDateTime|DateTimeOffset|任务到期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |hasDescription|Boolean|只读。如果任务的 details 对象具有非空的说明，则值为 `true`，否则为 `false`。|
 |id|String|只读。 任务的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
-|priority|Int32|任务的优先级。 有效值范围介于非独占 (之间) ，而增加的值优先级较低 (优先级最高，优先级最低 `0` `10` `0` `10`) 。  目前，Planner 将值解释为"紧急"，并解释为"重要"、"中"和，以及" `0` `1` `2` `3` `4` `5` `6` `7` `8` `9` `10` 低"。  目前，Planner 会设置 `1` `3` "urgent"、"important"、"medium"和 `5` `9` "low"的值。|
+|priority|Int32|任务的优先级。 有效值范围介于非独占 (之间) ，其中增加的值优先级较低 (优先级最高，优先级最低 `0` `10` `0` `10`) 。  目前，Planner 将值和"紧急"解释为"重要"、"重要"、"中"和"低 `0` `1` `2` `3` `4` `5` `6` `7` `8` `9` `10` "。  目前，Planner 会设置 `1` `3` "urgent"、"important"、"medium"和 `5` `9` "low"的值。|
 |planId|String|任务所属的计划 ID。|
 |previewType|String|这将设置显示在任务上的预览类型。 可取值为：`automatic`、`noPreview`、`checklist`、`description`、`reference`。|
 |referenceCount|Int32|任务上存在的外部引用的数量。|
-|startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|任务开始的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |title|String|任务的标题。|
 
 ## <a name="relationships"></a>关系

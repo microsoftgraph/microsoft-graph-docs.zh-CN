@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2a6fe540d280b7db44f9c3c2488f0ea4ab652175
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 5b6dd45622371277deb40b28763edd0dc2c6275b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516218"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575817"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -487,6 +487,7 @@ ms.locfileid: "50516218"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | v1.0 | 增加了对 `$count`、 `$search`和 `$filter` 查询参数的支持，可将查询功能扩展至： <br><ul><li>[List applications](/graph/api/application-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List devices](/graph/api/device-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List device groups](/graph/api/device-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List device transitive groups](/graph/api/device-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List groups](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List group transitive members](/graph/api/group-list-transitivemembers?view=graph-rest-1.0&preserve-view=true)</li><li>[List orgContacts](/graph/api/orgcontact-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List users](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul><br>添加了介绍如何使用 OData 转换的示例： <ul><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul> |
+| 添加项 | beta | 已将 [activateServicePlan](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) 方法添加到 [用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) 资源. |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 

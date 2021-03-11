@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3992272aa6917aa43d2ffdb4c4c980b88fc60e7e
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a10d262444b0a33dfbeadbb21611d914d9253e0d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159813"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719904"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>userCredentialUsageDetails 资源类型
 
@@ -31,11 +31,11 @@ ms.locfileid: "50159813"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | authMethod | string | 表示用户使用的身份验证方法。 可能的值是： ， ， ， (仅用于自助服务密码重置) 、 、 和 (`email` `mobileSMS` 仅在注册 `mobileCall` `officePhone` `securityQuestion` `appNotification` `appCode` `alternateMobileCall`) 。 |
-| eventDateTime | DateTimeOffset | 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 |
+| eventDateTime | DateTimeOffset | 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | failureReason | String | 提供相应重置或注册工作流的失败原因。 |
 | 功能 | string | 可能的值是： `registration` 和 `reset` 。 |
 | id | String | 只读。 活动的唯一标识符。 只读。|
-| isSuccess | 布尔 | 指示工作流是成功还是失败。 |
+| isSuccess | 布尔 | 指示工作流的成功或失败。 |
 | userDisplayName | String | 执行重置或注册工作流的用户的用户名。 |
 | userPrincipalName | String | 执行重置或注册工作流的用户的用户主体名称。 |
 

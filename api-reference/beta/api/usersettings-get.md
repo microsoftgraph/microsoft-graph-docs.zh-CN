@@ -1,16 +1,16 @@
 ---
 title: 获取设置
 description: 阅读用户和组织设置对象。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 51a9943be51a2127366d91cbf9e5dc0e0fc4a354
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b69ccc9fd16741d7f758069f73774e85db46c64
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022062"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721581"
 ---
 # <a name="get-settings"></a>获取设置
 

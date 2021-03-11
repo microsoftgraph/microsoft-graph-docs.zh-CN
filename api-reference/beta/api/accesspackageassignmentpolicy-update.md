@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6e0c691ce754d0c024dd4a639823f91a7e168035
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5a32ed205a10035e234a540f0048867e3bee4fa4
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439693"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719225"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "50439693"
 |:---|:---|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | EntitlementManagement.ReadWrite.All |
+|应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,10 +54,10 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |说明|String|策略的说明。|
 |canExtend|布尔|指示用户是否可以在审批后延长访问包分配持续时间。|
 |durationInDays|Int32|此策略中的分配持续到过期的天数。|
-|expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|谁能从此策略请求此访问包。|
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|谁必须批准此策略中的访问包请求。|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|谁必须查看此策略中对访问包的分配，以及查看其分配多久。 如果不需要审阅，则此属性为 null。|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|谁必须查看此策略中访问包的工作分配以及分配时间。 如果不需要审阅，则此属性为 null。|
 
 
 ## <a name="response"></a>响应

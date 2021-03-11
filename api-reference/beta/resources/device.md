@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 65c345fef069954c4c4f0a229094c335ca66903a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fa201a61b1b2dd126cd75a9e90be1f6ec4b34d5e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440491"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721641"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "50440491"
 |[列出 transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备是其中一个成员的组。 此操作是可传递的。 |
 |[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) 集合| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
-|[列表 usageRights](../api/device-list-usagerights.md) | [usageRight](usageright.md) 集合 | 获取授予设备的使用权限集合。|
+|[列表 usageRights](../api/device-list-usagerights.md) | [usageRight](usageright.md) 集合 | 获取授予设备的使用权限的集合。|
 |[checkMemberObjects](../api/device-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
@@ -47,12 +47,12 @@ ms.locfileid: "50440491"
 |:---------------|:--------|:----------|
 |accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 默认值为 true。|
 |alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
-|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
-|complianceExpirationDateTime|DateTimeOffset| 设备不再被视为合规的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
+|complianceExpirationDateTime|DateTimeOffset| 设备不再被视为合规的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 |deviceCategory|String|Intune 设置的用户定义属性，用于自动将设备添加到组并简化设备管理。|
 |deviceId|Guid| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 |
 |deviceMetadata|String| 仅供内部使用。 设置为 null。 |
-|deviceOwnership|String|设备的所有权。 此属性由 Intune 设置。 可能的值是：unknown、company、personal。|
+|deviceOwnership|String|设备的所有权。 此属性由 Intune 设置。 可能的值包括：unknown、company、personal。|
 |deviceVersion|Int32| 仅供内部使用。 |
 |displayName|String| 设备显示名称。必需。 |
 |domainName|String|已加入混合 Azure AD 设备的本地域名。 此属性由 Intune 设置。|
@@ -62,17 +62,17 @@ ms.locfileid: "50440491"
 |isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows OS 设备的已批准 [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) 应用更新。|
 |isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows OS 设备的已批准 [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) 应用更新。 |
 |isRooted|布尔|如果设备为根，则 **其为 true;****假** 如果设备已越狱。 这只能由 Intune 更新。|
-|managementType|String|设备的管理通道。  此属性由 Intune 设置。 可能的值是：eas、mdm、easMdm、intuneClient、easIntuneClient、configurationManagerClientClient、configurationManagerClientMdm、configurationManagerClientMdmEas、unknown、jamf、googleCloudDevicePolicyController。|
+|managementType|String|设备的管理通道。  此属性由 Intune 设置。 可能的值是：eas、mdm、easMdm、intuneClient、easIntuneClient、configurationManagerClient、configurationManagerClientMdm、configurationManagerClientMdmEas、unknown、jamf、googleCloudDevicePolicyController。|
 |manufacturer|String| 设备的制造商。 只读。 |
 |mdmAppId|String|用于将设备注册到 MDM 的应用程序标识符。 <br><br>只读。 支持 $filter。|
 |model|String| 设备型号。 只读。 |
-|onPremisesLastSyncDateTime|DateTimeOffset|上次将对象与本地目录同步的时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：`'2014-01-01T00:00:00Z'`。只读。 |
+|onPremisesLastSyncDateTime|DateTimeOffset|上次将对象与本地目录同步的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z` 为只读。 |
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 只读。|
 |operatingSystem|String| 设备上操作系统的类型。必需。 |
 |operatingSystemVersion|String| 设备的操作系统版本。 必需。 |
 |physicalIds|String collection| 仅供内部使用。 不可为 null。 |
 |profileType|String|设备的配置文件类型。 可能的值：<br />**RegisteredDevice (** 默认) <br />**SecureVM**<br />**Printer**<br />**共享**<br />**IoT**|
-|registrationDateTime|DateTimeOffset|注册设备的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
+|registrationDateTime|DateTimeOffset|设备注册的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |systemLabels|字符串集合| 系统应用于设备的标签列表。 |
 |hostNames|字符串集合| 设备的 hostNames 列表。|
 |trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示 *自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |

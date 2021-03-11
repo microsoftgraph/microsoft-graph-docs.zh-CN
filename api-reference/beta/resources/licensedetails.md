@@ -4,13 +4,13 @@ description: 包含有关分配给用户的许可证的信息。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: krbain
-ms.openlocfilehash: 5236a73697ea6969698fa0cdb6a8368188d0271c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: jpettere
+ms.openlocfilehash: 7a00c1aa5de5684c71a1d83f00b303ada6f54056
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029195"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720520"
 ---
 # <a name="licensedetails-resource-type"></a>licenseDetails 资源类型
 
@@ -31,10 +31,10 @@ ms.locfileid: "48029195"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 许可证详细信息对象的唯一标识符。 只读、键、不可为 null |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 有关使用许可证分配的服务计划的信息。 只读，不可为 null |
+|id|String| 许可证详细信息对象的唯一标识符。 只读、Key、Not nullable |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 有关随许可证分配的服务计划的信息。 只读，不可为 null |
 |skuId|Guid| 服务 SKU (GUID) 的唯一标识符。 等于相关 [SubscribedSku](subscribedsku.md) 对象的 skuId 属性。 只读 |
-|skuPartNumber|String| 唯一 SKU 显示名称。 等于相关 [SubscribedSku](subscribedsku.md) 对象上的 skuPartNumber;例如： "AAD_Premium"。 只读 |
+|skuPartNumber|String| 唯一 SKU 显示名称。 等于相关 [SubscribedSku 对象的 skuPartNumber;](subscribedsku.md) 例如："AAD_Premium"。 只读 |
 
 ## <a name="relationships"></a>关系
 无

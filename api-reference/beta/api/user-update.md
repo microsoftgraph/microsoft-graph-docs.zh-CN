@@ -1,16 +1,16 @@
 ---
 title: 更新用户
 description: 更新 user 对象的属性。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5500d22cb6aa587219178dcae839c155ca7744a0
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 8be20928a35865202c98a3df9c3b75360a32d530
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523768"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720009"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -20,12 +20,12 @@ ms.locfileid: "49523768"
 
 更新 [user](../resources/user.md) 对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "ManageIdentities"、"全部"、"全部"、"全部"、"全部"、"全部"    |
+|委派（工作或学校帐户） | User.ReadWrite、User.ReadWrite.All、User.ManageIdentities.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | User.ReadWrite    |
 |应用程序 | User.ReadWrite.All、User.ManageIdentities.All、Directory.ReadWrite.All |
 
@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
 |accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
-|birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|birthday|DateTimeOffset|用户的生日。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |businessPhones| String collection | 用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
 |城市|String|用户所在的城市。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。|
@@ -64,8 +64,8 @@ PATCH /users/{id | userPrincipalName}
 |displayName|String|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |employeeId|String|由组织分配给该用户的员工标识符。|
 |givenName|String|用户的名。|
-|hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对 **标识** 的任何更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType** 标识。|
+|hireDate|DateTimeOffset|用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对标识 **的任何更新** 都将替换整个集合，并且必须在集合中提供 userPrincipalName **signInType** 标识。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
 |mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 <br><br>默认情况下返回。 支持 $filter。|
@@ -90,7 +90,7 @@ PATCH /users/{id | userPrincipalName}
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
 |userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。          |
 
-由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **用户** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **用户** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用该操作在现有用户实例中的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` 应用的数据。
 
 > [!NOTE] 
 > 以下属性无法使用仅限应用程序上下文进行更新：**aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**。
