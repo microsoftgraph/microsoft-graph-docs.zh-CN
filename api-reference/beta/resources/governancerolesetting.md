@@ -32,8 +32,8 @@ ms.locfileid: "50722279"
 |属性               |类型                                      |说明|
 |:--------------------|:---------------------------------------|:----------|
 |id                   |String                                  |roleSetting 的 ID。|
-|resourceId           |String                                  |必填。 角色设置关联的资源的 ID。|
-|roleDefinitionId     |String                                  |必填。 角色设置关联的角色定义的 ID。|
+|resourceId           |String                                  |必需。 角色设置关联的资源的 ID。|
+|roleDefinitionId     |String                                  |必需。 角色设置关联的角色定义的 ID。|
 |isDefault            |Boolean                                 |只读。 指示 roleSetting 是否默认 roleSetting|
 |lastUpdatedDateTime  |DateTimeOffset                          |只读。 上次更新角色设置的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |lastUpdatedBy        |String                                  |只读。 最后显示名称 roleSetting 的管理员的组。|

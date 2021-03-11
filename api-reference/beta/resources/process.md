@@ -29,7 +29,7 @@ ms.locfileid: "50722263"
 |createdDateTime|DateTimeOffset|启动过程的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |fileHash|[fileHash](filehash.md)|包含文件哈希的复杂类型 (加密和位置敏感的) 。|
 |integrityLevel|processIntegrityLevel|进程的完整性级别。 可取值为：`unknown`、`untrusted`、`low`、`medium`、`high`、`system`。|
-|isElevated|布尔|如果提升进程，则其为 True。|
+|isElevated|布尔值|如果提升进程，则其为 True。|
 |name|String|进程的图像文件的名称。|
 |parentProcessCreatedDateTime|DateTimeOffset|启动父进程的 DateTime。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |parentProcessId|Int32|进程 ID (PID) 父进程。|

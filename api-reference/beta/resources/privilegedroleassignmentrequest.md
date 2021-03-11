@@ -27,7 +27,7 @@ ms.locfileid: "50722259"
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
 |[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)  集合|列出角色分配请求。|
-|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|创建管理现有或新数据库生命周期角色分配。|
+|[创建](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|创建管理现有或新数据库生命周期角色分配。|
 |[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |取消挂起角色分配请求。|
 |[My](../api/privilegedroleassignmentrequest-my.md)|  |获取角色分配请求。|
 

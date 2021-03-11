@@ -3,14 +3,56 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 97cd975beeaf1d45dba7d4db9ffd0809ae6c54ae
-ms.sourcegitcommit: cee56ed143e73d1d47cb015b18e01c2808e760ab
+ms.openlocfilehash: ef5f4a45a9c6a48bbf0bec8e96d84dce42b1fb2e
+ms.sourcegitcommit: 59df7b4d5098a49403a315d19a0c048013cd592e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137816"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50723126"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="january-2021-new-in-preview-only"></a>2021 年 1 月：仅限预览版新增功能
+
+### <a name="cloud-communications"></a>云通信
+- 以 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) 的形式组织实时事件 - 参见[示例](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true#example-3-create-a-live-event-with-a-user-token)。 
+- 获取[与会者报告](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-4-retrieve-the-attendee-report-of-a-live-event)、[录制内容](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-5-retrieve-the-recording-of-a-live-event)或实时事件的备选录制的内容流。
+- 获取[外出](/graph/api/resources/outofofficesettings?view=graph-rest-beta&preserve-view=true)用户的[状态](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true)，以及为该状态设置的任何消息。
+
+### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
+- 为成功的[本地网络连接](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true)[更新 Active Directory 域密码](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true)。
+- [在本地网络连接上运行运行状况检查](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true)现在可以在[本地连接运行状态检查](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true)资源中暴露 5 种其他错误类型。 有关错误类型的更多信息，请参阅 2021 年 1 月的[更改日志](https://developer.microsoft.com/graph/changelog)。
+
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+- [ 订阅更改云打印的通知](universal-print-webhook-notifications.md) - 当打印作业启动时，以及当打印机准备下载打印作业时。
+- 获取[打印机](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true)状态的全部[可能值](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values)。
+- 代表已登录用户在应用程序中使用委派权限：
+  - `PrinterShare.ReadBasic.All` 读取打印机共享的基本信息，不包括访问控制信息。
+  - `PrintConnector.Read.All` 读取打印连接器。
+  - `PrintConnector.ReadWrite.All` 读取或写入打印连接器。
+  - `PrintJob.Create` 创建打印作业并将内容上载到打印作业。
+  - `PrintSettings.Read.All` 读取租户范围的打印设置。
+  - `PrintSettings.ReadWrite.All` 读取或写入租户范围的打印设置。
+  - `Reports.Read.All` 读取每个指定用户或每个打印机的打印使用情况摘要。
+
+### <a name="education"></a>教育版
+使用班级[作业设置](/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta&preserve-view=true)来启用或禁用动画来以庆祝交作业。
+
+### <a name="groups"></a>组
+使用 **membershipRuleProcessingStatus** 属性获取基于规则的动态组的处理状态。 当用户的属性发生更改时，此选项非常有用，用户在基于规则的 [Microsoft 365 组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)中的会员资格将根据为组织设置的组会员资格规则重新评估。 
+
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
+获取用户或设备对构建在PowerApps上的第三方软件的[使用权](/graph/api/resources/UsageRight?view=graph-rest-beta&preserve-view=true)，或者，设备对订阅的使用权。 使用权包括相应服务或产品的标识符，以及使用权的当前状态，如激活、未激活、警告或暂停。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- 应用可以使用应用程序权限，让管理员管理用户的 [身份验证方法](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true)。
+- 支持 [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta&preserve-view=true) 作为用户登录或对 Azure AD 执行多因素身份验证的身份验证方法。
+- 使用 [Microsoft Authenticator 策略](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true)可以定义配置设置以及启用 Microsoft Authenticator 作为身份验证方法的用户或组。 使用 Microsoft Authenticator 策略代替已弃用的 [Microsoft Authenticator 无密码手机登录策略](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true)。 
+- 支持 [Windows Hello 企业版](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta&preserve-view=true)作为用户在不使用密码的情况下登录 Windows 设备的身份验证方法。
+
+### <a name="reports--identity-and-access-reports"></a>报告 | 身份和访问报告
+- [获取注册用户数的报告，或能够使用各种注册功能的用户数](/graph/api/authenticationmethodsroot-usersregisteredbyfeature?view=graph-rest-beta&preserve-view=true)，包括多因素认证、自助密码重置或无密码认证。
+- [获取每种认证方式的注册用户数报告](/graph/api/authenticationmethodsroot-usersregisteredbymethod?view=graph-rest-beta&preserve-view=true)，包括密码、Windows Hello 企业版或无密码电话登录。
 
 ## <a name="december-2020-new-and-generally-available"></a>2020 年 12 月：新版本和正式版
 
