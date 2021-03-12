@@ -1,33 +1,33 @@
 ---
-title: 用户： exportPersonalData
-description: 提交数据策略操作请求，由公司管理员进行导出以导出组织用户的数据。
+title: user： exportPersonalData
+description: 提交由公司管理员提出的数据策略操作请求，以导出组织用户的数据。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bd61c123bf566b97a926c6db81169b704e9f0b93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fef9b795e0cf1b3fd162afc4599ad4c245b828e9
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992151"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722347"
 ---
-# <a name="user-exportpersonaldata"></a>用户： exportPersonalData
+# <a name="user-exportpersonaldata"></a>user： exportPersonalData
 
 命名空间：microsoft.graph
 
-提交来自公司管理员或应用程序的数据策略操作请求，以导出组织用户的数据。
+从公司管理员或应用程序提交数据策略操作请求以导出组织用户的数据。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  将用户导出为 All、User、Read。 All  |
+|委派（工作或学校帐户） |  User.Export.All、User.Read.All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | 将用户导出为 All、User、Read。 All |
+|应用程序 | User.Export.All、User.Read.All |
 
->**注意：** 只有在使用委派权限时，公司管理员才能执行导出。
+>**注意：** 只有在使用委派权限时，导出才能由公司管理员执行。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,15 +45,15 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|storageLocation|String|这是 Azure 存储帐户 (SAS) URL 的共享访问签名，可将数据导出到其中。|
+|storageLocation|字符串|这是一个共享访问签名 (SAS) AZURE 存储帐户的 URL，数据应导出到其中。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `202 Accepted` 响应代码。 它不在响应正文中返回任何内容。 响应包含以下响应头。
+如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 该响应包含以下响应标头。
 
 | 名称       | 说明|
 |:---------------|:----------|
-| Location  | 用于检查请求状态的 URL。 |
-| 重试-After  | 以秒为单位的时间段。 在提交请求以检查状态后，请求生成器应等待这长时间。 |
+| Location  | 检查请求状态的 URL。 |
+| Retry-After  | 时间段（以秒表示）。 请求建立者应在提交检查状态的请求后等待此时间。 |
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -1,16 +1,16 @@
 ---
 title: 更新用户
 description: 更新 user 对象的属性。
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ffb7590aa3200559ac1c7ef5186e06edf5654b13
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 4aa48a9deb6023d2d298c3504f12c2122923d8c9
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292579"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721367"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -53,14 +53,14 @@ PATCH /users/{id | userPrincipalName}
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
 |accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
-|birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|birthday|DateTimeOffset|用户的生日。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |businessPhones| String collection | 用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
 |城市|String|用户所在的城市。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。|
 |department|String|用户工作部门的名称。|
 |displayName|String|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |givenName|String|用户的名。|
-|hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|hireDate|DateTimeOffset|用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
 |mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 <br><br>支持 $filter。|

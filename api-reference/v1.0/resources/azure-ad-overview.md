@@ -3,14 +3,14 @@ title: 在 Microsoft Graph 中使用 Azure Active Directory 资源
 description: '借助 Microsoft Graph，用户可以访问 Azure Active Directory (Azure AD) 资源以支持诸多应用场景，如管理管理员（目录）角色，邀请外部用户进入组织，并且，如果你是云解决方案提供商 (CSP)，则可以管理客户的数据。 Microsoft Graph 还提供了可供应用使用的方法；例如，用于发现用户的可传递组和角色成员身份的相关信息的方法。 '
 localization_priority: Priority
 author: dkershaw10
-ms.prod: identity-access
+ms.prod: identity-and-access
 doc_type: conceptualPageType
-ms.openlocfilehash: c18ebf4b140b6103162591fe4848e04aba83a8a0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f6a7d12d374efb9097db3d8d851599bdfd3a66df
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129812"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720448"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
@@ -47,6 +47,7 @@ ms.locfileid: "50129812"
 | 获取组织的相关信息，如商家地址、技术和通知联系人、订阅的服务计划及其关联域。 | [组织](../resources/organization.md) | 无 |
 | 获取公司订阅的服务 SKU 的相关信息。 | [subscribedSku](../resources/subscribedsku.md) | 无 |
 | 邀请外部（来宾）用户加入组织。 | [邀请](../resources/invitation.md) | [什么是 Azure AD B2B 协作？](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
+| 管理组织的登录体验的品牌。 | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [将品牌添加到组织的 Azure Active Directory 登录页面](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

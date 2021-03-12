@@ -5,18 +5,18 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: db45e2a7ed1103e03a22b5f06e16abc6541aec81
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 837e72c52002c0084994b74d3991c69272bdf870
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434249"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721801"
 ---
 # <a name="session-resource-type"></a>会话资源类型
 
 命名空间：microsoft.graph.callRecords
 
-表示User-User呼叫时User-Meeting通信或通信。
+代表User-User电话会议User-Meeting通信的一种通信方式。
 
 ## <a name="methods"></a>Methods
 
@@ -30,12 +30,12 @@ ms.locfileid: "50434249"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|string|会话的唯一标识符。 只读。|
-|调用方|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|启动会话的终结点。|
+|呼叫者|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|启动会话的终结点。|
 |被叫方|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|应答会话的终结点。|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|与会话关联的失败信息（如果会话失败）。|
-|形式|microsoft.graph.callRecords.modality 集合|会话中存在的方式列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`、`screenSharing` 或 `unknownFutureValue`。|
-|startDateTime|DateTimeOffset|第一个用户加入会话的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|最后一个用户离开会话的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|modalities|microsoft.graph.callRecords.modality 集合|会话中呈现的模态列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`、`screenSharing` 或 `unknownFutureValue`。|
+|startDateTime|DateTimeOffset|第一个用户加入会话的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|endDateTime|DateTimeOffset|最后一个用户离开会话的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 
 
 ## <a name="relationships"></a>关系

@@ -1,29 +1,29 @@
 ---
 title: List licenseDetails
 description: 检索 licenseDetails 对象的列表。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 337216a290f41600947bcd83e13b907d80334164
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c0c4f0cebd430b0087f295a5ae4ecd0b92904512
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992144"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719925"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 
 命名空间：microsoft.graph
 
-为企业用户检索 **licenseDetails** 对象的列表。
+检索企业用户的 **licenseDetails** 对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User. read，User. all，All，all，Directory.accessasuser.all，all，all，all，all。 All    |
+|委派（工作或学校帐户） | User.Read、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | User.Read    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -39,14 +39,14 @@ GET /users/{id}/licenseDetails
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者 &lt; 代码&gt;|
+| Authorization  | Bearer &lt; code&gt;|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [licenseDetails](../resources/licensedetails.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [licenseDetails](../resources/licensedetails.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

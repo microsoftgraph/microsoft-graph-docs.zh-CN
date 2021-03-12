@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: f2cef2b7f20367318618c0ced5b926b63db5fea5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e224589453807ef86ba73410f7a9bb817495d9aa
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136659"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721178"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "50136659"
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 | id | 字符串 | **appRoleAssignment** 键的唯一标识符。 不可为空。 只读。 |
-| creationTimestamp | DateTimeOffset | 创建应用角色分配的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 不支持 `$filter`。 |
+| creationTimestamp | DateTimeOffset | 创建应用角色分配的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 不支持 `$filter`。 |
 | principalId | Guid | 被授予应用角色的 [用户](user.md)、[组](group.md)或 [服务主体](serviceprincipal.md)的唯一标识符 (**id**)。 创建时为必需项。 不支持 `$filter`。 |
 | principalType | 字符串 | 已分配的主体的类型。 它可以是“User”、“Group”或“ServicePrincipal”。 只读。 不支持 `$filter`。 |
 | principalDisplayName | 字符串 |已被授予应用角色分配的用户、组或服务主体的显示名称。 只读。 支持 `$filter`（`eq` 和 `startswith`）。 |

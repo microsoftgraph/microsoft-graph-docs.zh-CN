@@ -1,24 +1,24 @@
 ---
 title: List user transitive memberOf
-description: 获取用户所属的组和目录角色。 此 API 请求是可传递的，并且还将返回用户是其嵌套成员的所有组。
-author: krbain
+description: 获取用户是其中一个成员的组、目录角色。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bb5c129a3e719e843e71482f0df27bf556921bca
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: ca29bdc8f33ed7aab9b79f59f8f1b29e3d88a636
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082305"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721920"
 ---
 # <a name="list-user-transitive-memberof"></a>List user transitive memberOf
 
 命名空间：microsoft.graph
 
-获取用户所属的组和目录角色。 此 API 请求是可传递的，并且还将返回用户是其嵌套成员的所有组。
+获取用户是其中一个成员的组、目录角色。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还会启用 OData 强制转换，例如，您可以强制转换以仅获取组中的可传递成员资格。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 例如，还可以启用 OData 转换，以仅获取组的可传递成员身份。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-groups-directory-roles-and-administrative-units-that-the-user-is-a-member-of"></a>示例1：获取用户所属的组、目录角色和管理单元
+### <a name="example-1-get-groups-directory-roles-and-administrative-units-that-the-user-is-a-member-of"></a>示例 1：获取用户是其中一个成员的组、目录角色和管理单元
 
 #### <a name="request"></a>请求
 
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-transitive-membership-in-groups-directory-roles-and-administrative-units"></a>示例2：仅获取组、目录角色和管理单元中可传递成员身份的计数
+### <a name="example-2-get-only-a-count-of-transitive-membership-in-groups-directory-roles-and-administrative-units"></a>示例 2：仅获取组、目录角色和管理单元中的可传递成员身份计数
 
 #### <a name="request"></a>请求
 
@@ -141,7 +141,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response"
@@ -182,7 +182,7 @@ Content-type: text/plain
 
 `588`
 
-### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例4：使用 $search 和 OData cast 以使用包含字母 "层" 的显示名称获取组中的可传递成员身份，包括返回对象的计数
+### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取显示名称包含字母"tier"的组的可传递成员身份，包括返回的对象计数
 
 #### <a name="request"></a>请求
 
@@ -225,7 +225,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例5：使用 $filter 和 OData 强制转换来获取具有以 "a" 开头的显示名称的组中的可传递成员身份，其中包含返回对象的计数
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 转换获取组中以"a"开头显示名称返回对象的计数的可传递成员身份
 
 #### <a name="request"></a>请求
 

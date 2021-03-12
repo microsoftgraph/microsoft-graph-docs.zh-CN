@@ -1,38 +1,38 @@
 ---
-title: 段资源类型
+title: segment 资源类型
 description: 线段类型
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9240e0189bd9cc8a7961894562cdc9178ba07893
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 886ea3661c83d6a84f9e171a11eee927920a8077
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153471"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722242"
 ---
-# <a name="segment-resource-type"></a>段资源类型
+# <a name="segment-resource-type"></a>segment 资源类型
 
 命名空间：microsoft.graph.callRecords
 
-表示电话会议User-User通信或User-Meeting通信的一部分。 典型 VOIP 呼叫将每个会话具有一个段。 在某些情况下（如 PSTN 呼叫）中，由于连接呼叫需要其他服务器到服务器通信，因此每个会话将有多个分段。
+代表电话会议User-User通信或User-Meeting通信的一部分。 典型 VOIP 呼叫将每个会话具有一个段。 在某些情况下（如 PSTN 呼叫）中，由于连接呼叫需要其他服务器到服务器通信，因此每个会话将存在多个分段。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
-不存在直接访问线段的方法。 Please use the [get callRecord](../api/callrecords-callrecord-get.md) api with `$expand=sessions($expand=segments)` or the List [session](../api/callrecords-session-list.md) api with to get the segments for `$expand=segments` a [callRecord.](callrecords-callrecord.md)
+不存在直接访问线段的方法。 Please use the [Get callRecord](../api/callrecords-callrecord-get.md) api with `$expand=sessions($expand=segments)` or the List [session](../api/callrecords-session-list.md) api with to get the segments for `$expand=segments` a [callRecord](callrecords-callrecord.md).
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String|线段的唯一标识符。 只读。|
-|调用方|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|启动此段的终结点。|
+|id|字符串|段的唯一标识符。 只读。|
+|呼叫者|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|启动此段的终结点。|
 |被叫方|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|应答此段的终结点。|
-|failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|与该段关联的失败信息（如果失败）。|
+|failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|与段关联的失败信息（如果失败）。|
 |media|[microsoft.graph.callRecords.media](callrecords-media.md) 集合|与此段关联的媒体。|
-|startDateTime|DateTimeOffset|段开始的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|段结束时的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|段开始的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|endDateTime|DateTimeOffset|段结束的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>关系
 

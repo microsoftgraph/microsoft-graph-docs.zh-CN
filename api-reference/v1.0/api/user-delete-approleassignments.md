@@ -4,19 +4,19 @@ description: 删除已授予用户的 appRoleAssignment。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: users
-author: krbain
-ms.openlocfilehash: 3515e492514d8ac2162f6d988ea6a7c2fbc94e3f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: jpettere
+ms.openlocfilehash: 667a5e93ca2c53c9deacb3b60654d984c357e426
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134741"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722368"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-user"></a>删除授予用户的 appRoleAssignment
 
 命名空间：microsoft.graph
 
-删除已授予用户的[appRoleAssignment。](../resources/approleassignment.md)
+删除[已授予用户的 appRoleAssignment。](../resources/approleassignment.md)
 
 ## <a name="permissions"></a>Permissions
 
@@ -37,7 +37,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> 作为最佳实践，我们建议通过资源服务主体的关系（而不是分配的用户、组或服务主体的关系）删除应用 `appRoleAssignedTo`  `appRoleAssignments` 角色分配。
+> 作为最佳实践，我们建议通过资源服务主体的关系（而不是分配的用户、组或服务主体的关系）删除应用程序 `appRoleAssignedTo`  `appRoleAssignments` 角色分配。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 
 ### <a name="request"></a>请求
 
-下面是一个请求删除应用角色分配。
+下面是一个请求删除应用示例角色分配。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

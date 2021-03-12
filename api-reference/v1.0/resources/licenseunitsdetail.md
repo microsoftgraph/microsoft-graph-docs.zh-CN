@@ -2,15 +2,15 @@
 title: licenseUnitsDetail 资源类型
 description: '**subscribedSku** 实体的 prepaidUnits 属性为 **licenseUnitsDetail** 类型。'
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a942cb72d3830e95f983134a960daa4af1ff1589
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a34b093954915fa49ed7d907e367c7e53133c14f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136648"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722221"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50136648"
 | 属性     | 类型   |说明|
 |:-------------|:-----|:----------|
 |已启用|Int32| 启用的单位数。 |
-|已挂起|Int32| 挂起的单位数。 |
+|已挂起|Int32| 暂停的单位数。 |
 |警告|Int32| 警告状态的单位数。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

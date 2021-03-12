@@ -1,16 +1,16 @@
 ---
 title: userSettings 资源类型
 description: '内容发现的当前用户设置。 '
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 005d157953e7ae8a33505d466a7178a648771c93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 85a1a9556a5bc02224c8add5e97bc6cbd442cf77
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015307"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721874"
 ---
 # <a name="usersettings-resource-type"></a>userSettings 资源类型
 

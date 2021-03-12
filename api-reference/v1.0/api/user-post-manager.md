@@ -2,15 +2,15 @@
 title: 分配管理器
 description: 分配用户的经理。
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 20c4a97c183fc3109721c600a41e16f7b704fbb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 34ffe0a968ef500214d7f987d3a76c7fe4616cf7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972699"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721416"
 ---
 # <a name="assign-manager"></a>分配管理器
 
@@ -18,9 +18,9 @@ ms.locfileid: "47972699"
 
 分配用户的经理。
 > [!NOTE]
-> 您不能分配直接下属，也不能分配。而是使用此 API。
+> 不能分配直接下属;请改为使用此 API。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,7 +41,7 @@ PUT /users/{id}/manager/$ref
 | Content-type   | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、 [用户](../resources/user.md)或 [组织联系人](../resources/orgcontact.md) 对象的 JSON 表示形式。
+在请求正文中，提供要添加的[directoryObject、user](../resources/directoryobject.md)[](../resources/user.md)或[组织联系人](../resources/orgcontact.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 981ff7ce5effe9faa2518d58b72de8d395d4cfd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa9ce48f9b0dd0dd1869a1e31937b70cf4edb975
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018849"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720149"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
 
@@ -20,7 +20,7 @@ conversationThread 是 [帖子](post.md) 集合。
 
 最后一个帖子收件人集合聚合了整个线程的收件人。线程的收件人集合可以不断扩大。从线程中移除某个收件人时将创建一个新的线程。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -35,15 +35,15 @@ conversationThread 是 [帖子](post.md) 集合。
 ## <a name="properties"></a>属性
 | 属性              | 类型                                 | 说明                                                                                                                                                                                      |
 |:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                    | String                               | 只读。                                                                                                                                                                                       |
+| id                    | 字符串                               | 只读。                                                                                                                                                                                       |
 | toRecipients          | [recipient](recipient.md) collection | 收件人：线程的收件人。                                                                                                                                                               |
 | ccRecipients          | [recipient](recipient.md) collection | 抄送：线程的收件人。                                                                                                                                                               |
 | topic                 | String                               | 对话的主题。在创建对话时可设置此属性，但无法对其进行更新。                                                                              |
 | hasAttachments        | Boolean                              | 指示此线程中的任意帖子是否至少具有一个附件。                                                                                                               |
-| lastDeliveredDateTime | DateTimeOffset                       | 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` |
+| lastDeliveredDateTime | DateTimeOffset                       | 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` |
 | uniqueSenders         | String collection                    | 向此线程发送邮件的所有用户。                                                                                                                                                |
-| preview               | String                               | 本对话中最新帖子的正文中的简短摘要。                                                                                                                           |
-| Resource.islocked              | Boolean                              | 指示线程是否已锁定。                                                                                                                                                               |
+| preview               | String                               | 此对话中最新文章正文的简短摘要。                                                                                                                           |
+| isLocked              | Boolean                              | 指示线程是否已锁定。                                                                                                                                                               |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

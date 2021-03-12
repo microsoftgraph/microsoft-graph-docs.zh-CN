@@ -1,16 +1,16 @@
 ---
 title: List createdObjects
 description: 获取由用户创建的 directory 对象列表。
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a65576632169d3eb63d7ce09ad4e05ed0fb8b01a
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: e4389c36adf5d3b54cd419828cb67fc82414c4a6
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635346"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722081"
 ---
 # <a name="list-createdobjects"></a>List createdObjects
 

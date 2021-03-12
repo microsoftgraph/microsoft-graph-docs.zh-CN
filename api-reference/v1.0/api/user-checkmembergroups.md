@@ -1,16 +1,16 @@
 ---
 title: checkMemberGroups
 description: 检查指定组列表中的成员身份。 从列表返回这些组
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fb59d98d78856cf45686a51fe0e7974c6babd6be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5f1a65246b459a9f34632f3db469d8fb252970d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022977"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721031"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 

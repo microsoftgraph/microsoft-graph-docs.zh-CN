@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 27843a57190910584bcc09c4f65aa75314e3ab1c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 18294905754cd962ec1c18136b61ca20799eee3d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50449010"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50718441"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50449010"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 dataPolicyOperation](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |检索 **dataPolicyOperation 对象** 的属性。|
-|[导出个人数据](../api/user-exportpersonaldata.md) | 无 |提交数据策略操作请求以导出组织用户的数据，稍后可以使用[Get dataPolicyOperation](../api/datapolicyoperation-get.md)读取这些数据|
+|[导出个人数据](../api/user-exportpersonaldata.md) | 无 |提交数据策略操作请求以导出组织用户的数据，稍后可以使用[Get dataPolicyOperation](../api/datapolicyoperation-get.md)读取该数据|
 
 ## <a name="properties"></a>属性
 
@@ -31,13 +31,13 @@ ms.locfileid: "50449010"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|completedDateTime|DateTimeOffset|表示使用 ISO 8601 格式完成此数据策略操作的请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 Null，直到操作完成。|
-|id|String| 此操作的唯一键。 |
+|completedDateTime|DateTimeOffset|表示此数据策略操作的请求使用 ISO 8601 格式以 UTC 时间完成的时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 Null，直到操作完成。|
+|id|字符串| 此操作的唯一键。 |
 |状态|string| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
-|storageLocation|String|导出数据以用于导出请求的 URL 位置。|
-|userId|String|要执行该操作的用户的 ID。|
-|submittedDateTime|DateTimeOffset|表示使用 ISO 8601 格式提交此数据操作请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|progress|String|指定操作的进度。|
+|storageLocation|字符串|导出请求将数据导出到的 URL 位置。|
+|userId|字符串|操作所针对的用户的 ID。|
+|submittedDateTime|DateTimeOffset|表示使用 ISO 8601 格式提交此数据操作请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|progress|字符串|指定操作的进度。|
 
 ## <a name="relationships"></a>关系
 无。

@@ -1,22 +1,22 @@
 ---
 title: countryNamedLocation 资源类型
-description: 表示由国家和地区定义的 Azure Active Directory 命名位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
+description: 表示由国家和地区定义的 Azure Active Directory 命名的位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d3ae4c1360c3f3b1bcb9cb1ad50a95afef2098c8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 94d9a422bf7a183fa0d780fbc0197fe4d4655b66
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444418"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721248"
 ---
 # <a name="countrynamedlocation-resource-type"></a>countryNamedLocation 资源类型
 
 命名空间：microsoft.graph
 
-表示由国家和地区定义的 Azure Active Directory 命名位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
+表示由国家和地区定义的 Azure Active Directory 命名的位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 
 继承自 [namedLocation](../resources/namedLocation.md)
 
@@ -34,12 +34,12 @@ ms.locfileid: "50444418"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区和/或地区列表。|
-|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|displayName|String|位置的可读名称。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|id|String|namedLocation 对象的标识符。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|includeUnknownCountriesAndRegions|Boolean|如此 如果未映射到一个或多个国家/地区的 IP 地址应包含在命名位置中。|
-|modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的上次修改日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
+|countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区列表。|
+|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
+|displayName|字符串|位置的可读名称。 继承自 [namedLocation](../resources/namedLocation.md)。|
+|id|字符串|namedLocation 对象的标识符。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
+|includeUnknownCountriesAndRegions|布尔值|如此 如果未映射到国家/地区或地区的 IP 地址应包含在命名的位置。|
+|modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的上次修改日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
 
 ## <a name="relationships"></a>关系
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 21da60af8ef83d2b6a45122106de12d58b9e7518
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bbb38453015f1b00b9a290913eeb9c03a090b045
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432849"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721549"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>conditionalAccessPolicy 资源类型
 
@@ -32,12 +32,12 @@ ms.locfileid: "50432849"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| 指定应用策略时必须满足的规则。 必填。 |
-|createdDateTime|DateTimeOffset| 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
-|displayName|String| 指定显示名称AccessPolicy 对象的属性。 |
-|grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| 指定传递策略必须实现的授予控制。 |
-|id|String| 指定 conditionalAccessPolicy 对象的标识符。 只读。|
-|modifiedDateTime| DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| 指定应用策略时必须满足的规则。 必需。 |
+|createdDateTime|DateTimeOffset| 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
+|displayName|字符串| 为 conditionalAccessPolicy 显示名称指定一个属性。 |
+|grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| 指定必须通过此策略而必须实现的授予控制。 |
+|id|字符串| 指定 conditionalAccessPolicy 对象的标识符。 只读。|
+|modifiedDateTime| DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| 指定登录后强制执行的会话控件。 |
 |state|string| 指定 conditionalAccessPolicy 对象的状态。 可取值为：`enabled`、`disabled`、`enabledForReportingButNotEnforced`。 必填。 |
 
