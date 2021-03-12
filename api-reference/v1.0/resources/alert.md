@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 8f36b328b7d8cb7dbe62014d880b9362b89b4035
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0501a7622a9a687a436a886f94dfe7228417efc8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041706"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721843"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -37,20 +37,20 @@ ms.locfileid: "48041706"
 | azureSubscriptionId  | 字符串                                                       | Azure 订阅 ID，如果此警报与 Azure 资源相关时显示。                                                                                                                                                                                                                        |
 | azureTenantId        | 字符串                                                       | Azure Active Directory 租户 ID。 必需。                                                                                                                                                                                                                                                          |
 | “类别”             | 字符串                                                       | 警报的类别（例如，credentialTheft、ransomware 等）。                                                                                                                                                                                                                              |
-| closedDateTime       | DateTimeOffset                                               | 警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`（支持 [更新](../api/alert-update.md)）。                    |
+| closedDateTime       | DateTimeOffset                                               | 警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` （支持 [更新](../api/alert-update.md)）。                    |
 | cloudAppStates       | [cloudAppSecurityState](cloudappsecuritystate.md) 集合 | 提供程序生成的与此警报相关的云应用程序的安全相关状态信息。                                                                                                                                                                                 |
 | comments             | 字符串集合                                            | 客户提供的警报评论（用于客户警报管理）（支持[更新](../api/alert-update.md)）。                                                                                                                                                                                     |
 | confidence           | Int32                                                        | 检测逻辑的可信度（1-100 之间的百分比）。                                                                                                                                                                                                                                        |
-| createdDateTime      | DateTimeOffset                                               | 警报提供程序创建警报的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。                               |
+| createdDateTime      | DateTimeOffset                                               | 警报提供程序创建警报的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 必需。                               |
 | description          | String                                                       | 警报说明。                                                                                                                                                                                                                                                                                   |
 | detectionIds         | 字符串集合                                            | 与此警报实体相关的警报集（每个警报作为单独的记录推送到 SIEM）。                                                                                                                                                                                                  |
-| eventDateTime        | DateTimeOffset                                               | 发生用作生成警报触发器的事件的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。 |
+| eventDateTime        | DateTimeOffset                                               | 发生用作生成警报触发器的事件的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 必需。 |
 | 反馈             | alertFeedback                                                | 分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 （支持[更新](../api/alert-update.md)）                                                                                                                                        |
 | fileStates           | [fileSecurityState](filesecuritystate.md) 集合         | 提供程序生成的与此警报相关的文件的安全相关状态信息。                                                                                                                                                                                             |
 | hostStates           | [hostSecurityState](hostsecuritystate.md) 集合         | 提供程序生成的与此警报相关的主机的安全相关状态信息。                                                                                                                                                                                             |
 | id                   | String                                                       | 提供程序生成的 GUID/唯一标识符。 只读。 必填。                                                                                                                                                                                                                                      |
 | incidentIds          | String collection                                            | 与当前警报相关的事件的 ID。                                                                                                                                                                                                                                                           |
-| lastModifiedDateTime | DateTimeOffset                                               | 上次修改警告实体的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。                                                  |
+| lastModifiedDateTime | DateTimeOffset                                               | 上次修改警告实体的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。                                                  |
 | malwareStates        | [malwareState](malwarestate.md) 集合                   | 威胁智能，属于与此警报相关的恶意软件。                                                                                                                                                                                                                                     |
 | networkConnections   | [networkConnection](networkconnection.md) 集合         | 提供程序生成的与此警报相关的网络连接的安全相关状态信息。                                                                                                                                                                               |
 | processes            | [process](process.md) 集合                             | 提供程序生成的与此警报相关的流程的安全相关状态信息。                                                                                                                                                                                |
