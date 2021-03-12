@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a965c7cb7afc2961b15b24af3acf3c6597910754
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e82ce58786e23448458e9e1c60fad5d0c54b6388
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135784"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722431"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -48,10 +48,10 @@ ms.locfileid: "50135784"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|MIME 类型。|
-|id|String| 只读。|
+|id|字符串| 只读。|
 |isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。|
-|lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|名称|String|附件的文件名。|
+|lastModifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|name|String|附件的文件名。|
 |size|Int32|附件大小，以字节为单位。|
 
 ## <a name="relationships"></a>关系

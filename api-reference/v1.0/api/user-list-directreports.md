@@ -2,15 +2,15 @@
 title: 列出 directReports
 description: 获取用户的直接下属。
 localization_priority: Priority
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 17b33d0eebd760ca565dfbdd8f1067ec3015a8ad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2be02b4080855877ae2cbbdfc416b36f9374cd49
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059241"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722354"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -38,7 +38,7 @@ GET /users/{id | userPrincipalName}/directReports
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |

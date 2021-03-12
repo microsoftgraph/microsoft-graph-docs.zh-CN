@@ -2,15 +2,15 @@
 title: 'user: delta'
 description: 获得新建、更新或删除的用户，无需对整个用户集合执行完整读取。
 localization_priority: Priority
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7155a1c721ff0b6ce0a879971f37d38f13951a38
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 5f881fd1ee3fd8a80f306c27b37cd4be782598fc
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522949"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722375"
 ---
 # <a name="user-delta"></a>user: delta
 
