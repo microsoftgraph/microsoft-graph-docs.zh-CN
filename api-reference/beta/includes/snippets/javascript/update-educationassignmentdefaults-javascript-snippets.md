@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9296741702c9e14ac554a5d5b28e77b8f88b118e
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f9b631940036d11628b7110c8084fc667b43166f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470317"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800867"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const educationAssignmentDefaults = {
-  addedStudentAction: "assignIfOpen",
-  notificationChannelUrl: "https://graph.microsoft.com/beta/teams('id')/channels('id')"
+  addedStudentAction: 'assignIfOpen',
+  notificationChannelUrl: 'https://graph.microsoft.com/beta/teams(\'id\')/channels(\'id\')'
 };
 
-let res = await client.api('/education/classes/{id}/assignmentDefaults')
+await client.api('/education/classes/{id}/assignmentDefaults')
     .version('beta')
     .update(educationAssignmentDefaults);
 

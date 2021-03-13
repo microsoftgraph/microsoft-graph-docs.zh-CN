@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bb7480cc0f17e6abbd78b95491a8e82c428774bf
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 70660ba52ff51d645d723d3287448f172a586ddf
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910769"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793721"
 ---
 ```javascript
 
@@ -17,13 +17,13 @@ const client = Client.init(options);
 
 const tokenIssuancePolicy = {
   definition: [
-    "definition-value"
+    'definition-value'
   ],
-  displayName: "displayName-value",
+  displayName: 'displayName-value',
   isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/tokenIssuancePolicies/{id}')
+await client.api('/policies/tokenIssuancePolicies/{id}')
     .version('beta')
     .update(tokenIssuancePolicy);
 

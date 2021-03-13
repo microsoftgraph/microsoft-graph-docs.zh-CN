@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 312e339403f562294cb3c466ca884a82a3203cf6
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 5c3d12393dd88cdbca569fb26c425b933acfb462
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636703"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782211"
 ---
 ```javascript
 
@@ -17,16 +17,16 @@ const client = Client.init(options);
 
 const plannerPlanDetails = {
   sharedWith: {
-    "6463a5ce-2119-4198-9f2a-628761df4a62" : true,
-    "d95e6152-f683-4d78-9ff5-67ad180fea4a" : false,
+    '6463a5ce-2119-4198-9f2a-628761df4a62': true,
+    'd95e6152-f683-4d78-9ff5-67ad180fea4a': false,
   },
   categoryDescriptions: {
-    category1: "Indoors",
+    category1: 'Indoors',
     category3: null,
   }
 };
 
-let res = await client.api('/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details')
+await client.api('/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details')
     .version('beta')
     .update(plannerPlanDetails);
 

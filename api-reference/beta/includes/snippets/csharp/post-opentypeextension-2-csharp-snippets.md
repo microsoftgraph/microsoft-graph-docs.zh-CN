@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5786deec5c0576c83e6f07f16e3b56bb8ea54efe
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: ecd122b4dcfdcabaab2f6ff27a3fe0d11aa6d987
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684965"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792639"
 ---
 ```csharp
 
@@ -22,7 +22,7 @@ var extension = new OpenTypeExtension
     }
 };
 
-await graphClient.Me.Messages["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="].Extensions
+await graphClient.Me.Messages["{message-id}"].Extensions
     .Request()
     .AddAsync(extension);
 

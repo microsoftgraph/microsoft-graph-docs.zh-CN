@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1dcbd4d5dd1cb25cccbe8a1e1419d8e7c9a5bf54
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fabe2ce8e2d1e5f96b105124b4d10055b0cee0d9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437995"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50802936"
 ---
 ```javascript
 
@@ -15,11 +15,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/bitlocker/recoveryKeys')
+let bitlockerRecoveryKey = await client.api('/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4')
     .version('beta')
-    .header('ocp-client-name','"My Friendly Client"')
-    .header('ocp-client-version','"1.2"')
-    .filter('deviceId eq \'1ab40ab2-32a8-4b00-b6b5-ba724e407de9\'')
+    .select('key')
     .get();
 
 ```

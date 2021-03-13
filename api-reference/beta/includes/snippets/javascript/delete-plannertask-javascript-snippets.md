@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f14b1115e9a430438fa617649e3eeb7dcd6afcaf
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: fdb5181962cadbb59b69790b78412717d4914dda
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413114"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795223"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/planner/tasks/{id}')
+await client.api('/planner/tasks/{id}')
     .version('beta')
     .delete();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c994f0260f61a4bf213b34b063d5c208cd2cb63f
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 879b167e7096f06226f2718a6f98653137c22e44
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48621647"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804975"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/onenote/pages/{id}')
+await client.api('/me/onenote/pages/{id}')
     .version('beta')
     .delete();
 

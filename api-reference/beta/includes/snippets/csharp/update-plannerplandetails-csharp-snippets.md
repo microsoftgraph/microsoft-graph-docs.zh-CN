@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4fe1f54f5adc2a40d43c2ac177658325682daa12
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: af7b65d79a1f15a5660796ca3d66f72e4d7d97f8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684806"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795807"
 ---
 ```csharp
 
@@ -28,7 +28,7 @@ var plannerPlanDetails = new PlannerPlanDetails
     }
 };
 
-await graphClient.Planner.Plans["xqQg5FS2LkCp935s-FIFm2QAFkHM"].Details
+await graphClient.Planner.Plans["{plannerPlan-id}"].Details
     .Request()
     .Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
     .UpdateAsync(plannerPlanDetails);

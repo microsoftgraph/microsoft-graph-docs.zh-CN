@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 093f0cf9a4d5945918ecc55fc120ca8b774cbf69
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 60068831b4f3edda32a6d78999a9069e94ba2f1e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329490"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796804"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/b2xUserFlows/{id}')
+let b2xIdentityUserFlow = await client.api('/identity/b2xUserFlows/{id}')
     .version('beta')
     .get();
 

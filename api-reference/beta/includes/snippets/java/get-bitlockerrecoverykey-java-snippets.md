@@ -1,23 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 779b58a43c04cbfa71477f7328918d0de7da86be
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 7827acd545bf4af1de037ba21798bd47d87fe3a5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49945458"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806461"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ocp-client-name", "\"My Friendly Client\""));
-requestOptions.add(new HeaderOption("ocp-client-version", "\"1.2\""));
-
-IBitlockerRecoveryKeyCollectionPage recoveryKeys = graphClient.bitlocker().recoveryKeys()
-    .buildRequest( requestOptions )
-    .filter("deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'")
+BitlockerRecoveryKey bitlockerRecoveryKey = graphClient.informationProtection().bitlocker().recoveryKeys("b465e4e8-e4e8-b465-e8e4-65b4e8e465b4")
+    .buildRequest()
+    .select("key")
     .get();
 
 ```
