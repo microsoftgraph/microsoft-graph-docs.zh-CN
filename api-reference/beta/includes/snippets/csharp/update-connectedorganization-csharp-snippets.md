@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: caf5a1438e6bc9ffc8eb00da108732c5b4ba96e9
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 3353f7f1367c465ed34f532bc13aaddceea699ce
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48317944"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50802764"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var connectedOrganization = new ConnectedOrganization
     State = ConnectedOrganizationState.Configured
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{id}"]
+await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{connectedOrganization-id}"]
     .Request()
     .UpdateAsync(connectedOrganization);
 

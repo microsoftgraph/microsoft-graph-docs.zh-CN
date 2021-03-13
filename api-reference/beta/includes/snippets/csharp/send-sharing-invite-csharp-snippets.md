@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 50a7d4b6acaf1f4c1ee7cc187a633f1dcc6b7262
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 13b1c77bbb4b1074c402e67b7712f6bad5f588fd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402177"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50780830"
 ---
 ```csharp
 
@@ -34,7 +34,7 @@ var password = "password123";
 
 var expirationDateTime = "2018-07-15T14:00:00Z";
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
     .Invite(recipients,requireSignIn,roles,sendInvitation,message,expirationDateTime,password)
     .Request()
     .PostAsync();

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 95451e738fc7d0fc0b6d8b15dad2a29c0113ea7e
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: c7b42e093c06caec749cb0ca080c060812935637
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48614126"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790636"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var workbookChartLegend = new WorkbookChartLegend
     Overlay = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Legend
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Legend
     .Request()
     .UpdateAsync(workbookChartLegend);
 

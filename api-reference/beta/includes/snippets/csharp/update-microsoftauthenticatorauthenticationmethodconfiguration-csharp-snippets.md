@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: da130ceaf7edd12dc8d62f5458b6513e61508cb2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f3b1ba450cd07afa329f052d8990fce16da5771c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473016"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790320"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var authenticationMethodConfiguration = new MicrosoftAuthenticatorAuthentication
     State = AuthenticationMethodState.Enabled
 };
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["microsoftAuthenticator"]
+await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
     .Request()
     .UpdateAsync(authenticationMethodConfiguration);
 

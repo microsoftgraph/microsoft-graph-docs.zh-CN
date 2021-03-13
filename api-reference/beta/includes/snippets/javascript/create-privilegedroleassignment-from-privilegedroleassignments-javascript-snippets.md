@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 497dc6fe4c5acaa97007c0753cc4214e49cb4c2d
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: c0070058e69412aa3c03b649830a571f38ca2284
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636698"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782037"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const privilegedRoleAssignment = {
-  userId: "userId-value",
-  roleId: "roleId-value"
+  userId: 'userId-value',
+  roleId: 'roleId-value'
 };
 
-let res = await client.api('/privilegedRoleAssignments')
+await client.api('/privilegedRoleAssignments')
     .version('beta')
     .post(privilegedRoleAssignment);
 

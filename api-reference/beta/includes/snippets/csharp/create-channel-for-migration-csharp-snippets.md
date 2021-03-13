@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 03d61e7902fda22667e2151c40ab00af89cf06a3
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: a0e26dc343cefdd7f9b4b0e7bf74fb5270e2e8b8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753791"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797919"
 ---
 ```csharp
 
@@ -23,7 +23,7 @@ var channel = new Channel
     }
 };
 
-await graphClient.Teams["57fb72d0-d811-46f4-8947-305e6072eaa5"].Channels
+await graphClient.Teams["{team-id}"].Channels
     .Request()
     .AddAsync(channel);
 

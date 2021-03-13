@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 54f180b632477d2ab10d8a3296e9ce4132e02a9c
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: c0e57be288c83b87b06bd383bdc908f2b5ff9edc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636550"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50805275"
 ---
 ```javascript
 
@@ -17,11 +17,11 @@ const client = Client.init(options);
 
 const workbookChartTitle = {
   overlay: true,
-  text: "text-value",
+  text: 'text-value',
   visible: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title')
     .version('beta')
     .update(workbookChartTitle);
 

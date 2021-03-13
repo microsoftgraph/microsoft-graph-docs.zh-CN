@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b34ed6bb8cb4a1c50c0d64b12e0a378bb59ca0ed
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 80311ccb656ae9901418312ee2011d5a62d9905e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912890"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783885"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.OnlineMeetings["550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype"]
+await graphClient.Communications.Calls["{call-id}"]
     .Request()
     .DeleteAsync();
 

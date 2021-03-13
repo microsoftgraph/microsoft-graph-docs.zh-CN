@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: de7c2feea618ecf6f3d8b86eb357d3282e4e03e2
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 4b9df6b3147422ff7ed1a9d2b2db1cc5ee5601b0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48607388"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782290"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var startCell = "startCell-value";
 
 var endCell = "endCell-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"]
     .SetPosition(startCell,endCell)
     .Request()
     .PostAsync();

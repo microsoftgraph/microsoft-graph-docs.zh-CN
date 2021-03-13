@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a7f85b0cb337b8aba0cb3c870f6454a330c6646c
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 84134f2c79dc268058bfabd0191812ca7040a5a7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636557"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50780065"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const workbookChartGridlines = {
   visible: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/minorgridlines')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/minorgridlines')
     .version('beta')
     .update(workbookChartGridlines);
 

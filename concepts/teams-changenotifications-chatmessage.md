@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 186599391599c7ac77f637bcc910339f3087c999
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: e6e859e76e35e4eefd5ef18a26f0f1339c01a8a2
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101879"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761568"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -28,11 +28,11 @@ ms.locfileid: "50101879"
 
 #### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 不支持。 |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | ChannelMessage.Read.All |
+|权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|委派（工作或学校帐户） | 不支持。 | 不支持。 |
+|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
+|应用程序 | ChannelMessage.Read.All | beta, v1.0 |
 
 #### <a name="example"></a>示例
 
@@ -58,11 +58,11 @@ Content-Type: application/json
 
 #### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 不支持。 |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Chat.Read.All |
+|权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|委派（工作或学校帐户） | 不支持。 | 不支持。 |
+|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
+|应用程序 | Chat.Read.All | beta, v1.0 |
 
 #### <a name="example"></a>示例
 
@@ -90,11 +90,11 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | ChannelMessage.Read.All |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | ChannelMessage.Read.All, ChannelMessage.Read.Group* |
+|权限类型      | 权限（从最低特权到最高特权）              |版本支持 |
+|:--------------------|:---------------------------------------------------------|:--------------------|
+|委派（工作或学校帐户） | ChannelMessage.Read.All | beta, v1.0 |
+|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
+|应用程序 | ChannelMessage.Read.All, ChannelMessage.Read.Group* | beta, v1.0 |
 
 >**注意：** ChannelMessage.Read.Group 作为 [资源特定许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)的一部分受支持。
 
@@ -180,11 +180,11 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>权限
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Chat.Read |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Chat.Read.All |
+|权限类型      | 权限（从最低特权到最高特权）              | 版本支持 |
+|:--------------------|:---------------------------------------------------------|:---------------------|
+|委派（工作或学校帐户） | Chat.Read | beta |
+|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
+|应用程序 | Chat.Read.All | beta |
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>示例 1：订阅聊天中的消息
 

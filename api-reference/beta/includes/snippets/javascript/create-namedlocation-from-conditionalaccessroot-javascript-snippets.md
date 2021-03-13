@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 89c95db61f2929a5a0a3269e6e40d80fbcdb1755
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 2f57cf469610976210666370ea79544755293329
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062333"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785357"
 ---
 ```javascript
 
@@ -16,16 +16,16 @@ const options = {
 const client = Client.init(options);
 
 const namedLocation = {
-    @odata.type: "#microsoft.graph.countryNamedLocation",
-    displayName: "Named location with unknown countries and regions",
+    '@odata.type': '#microsoft.graph.countryNamedLocation',
+    displayName: 'Named location with unknown countries and regions',
     countriesAndRegions: [
-        "US",
-        "GB"
+        'US',
+        'GB'
     ],
     includeUnknownCountriesAndRegions: true
 };
 
-let res = await client.api('/identity/conditionalAccess/namedLocations')
+await client.api('/identity/conditionalAccess/namedLocations')
     .version('beta')
     .post(namedLocation);
 

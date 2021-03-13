@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e8669815d1a78d5b00f1c57baabbb88c9bf26bdf
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 181b976fef4e3abe3abd69b57ef8c6bb7d4ec758
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521612"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795070"
 ---
 ```csharp
 
@@ -24,7 +24,7 @@ var cloudPcOnPremisesConnection = new CloudPcOnPremisesConnection
     SubnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
 };
 
-await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{id}"]
+await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{cloudPcOnPremisesConnection-id}"]
     .Request()
     .UpdateAsync(cloudPcOnPremisesConnection);
 

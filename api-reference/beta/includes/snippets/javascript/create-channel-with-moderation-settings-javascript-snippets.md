@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d5e32db7cef17be05df01f959e54842bfdc887db
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 848d9a8a5b841b238e92a3162559d1ae2f4bcbcc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753832"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787293"
 ---
 ```javascript
 
@@ -16,18 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const channel = {
-    displayName: "TestChannelModeration",
-    description: "Test channel moderation.",
-    membershipType: "standard",
+    displayName: 'TestChannelModeration',
+    description: 'Test channel moderation.',
+    membershipType: 'standard',
     moderationSettings: {
-        userNewMessageRestriction: "everyoneExceptGuests",
-        replyRestriction: "everyone",
+        userNewMessageRestriction: 'everyoneExceptGuests',
+        replyRestriction: 'everyone',
         allowNewMessageFromBots: true,
         allowNewMessageFromConnectors: true
     }
 };
 
-let res = await client.api('/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels')
+await client.api('/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels')
     .version('beta')
     .post(channel);
 
