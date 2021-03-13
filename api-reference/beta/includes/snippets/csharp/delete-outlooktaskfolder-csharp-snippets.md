@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4e62784c2834b7e219d3b81754ac7653f4340615
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 1d6a750b10730387d5a6ba0a6d9e5699b61a1ad5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48605093"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50810028"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Outlook.TaskFolders["AAMkADIyAAAhrbPXAAA="]
+await graphClient.Me.Outlook.TaskFolders["{outlookTaskFolder-id}"]
     .Request()
     .DeleteAsync();
 

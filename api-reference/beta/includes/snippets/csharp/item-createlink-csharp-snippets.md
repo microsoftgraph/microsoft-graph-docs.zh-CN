@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 73ad4e9f3f4e33ddc7b687639e7b49ca12683f44
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 2d82a782619e4199396f62b339eb0535fdf1ff0f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402187"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791713"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var password = "ThisIsMyPrivatePassword";
 
 var scope = "anonymous";
 
-await graphClient.Me.Drive.Items["{itemId}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
     .CreateLink(type,scope,null,password,null,null)
     .Request()
     .PostAsync();

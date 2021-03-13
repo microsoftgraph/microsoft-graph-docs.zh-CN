@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f7707fa1aacc8d59f0fee5c8eeb3dce7a2257c8c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 910358da013f57cd9006291ca227fde500fac1e5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937507"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50810101"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var key = "key-value";
 
-await graphClient.TrustFramework.KeySets["{id}"]
+await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"]
     .UploadCertificate(key)
     .Request()
     .PostAsync();

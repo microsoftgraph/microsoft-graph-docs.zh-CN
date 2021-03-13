@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4bc878e8223cf0963dc55d1559f230a3ed741ea9
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 786856547a1a5dd368e204f2c9765c3488bd74e2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48783394"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789873"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-   allowedToUseSSPR:true
+   allowedToUseSSPR: true
 };
 
-let res = await client.api('/policies/authorizationPolicy/authorizationPolicy')
+await client.api('/policies/authorizationPolicy/authorizationPolicy')
     .version('beta')
     .update(authorizationPolicy);
 

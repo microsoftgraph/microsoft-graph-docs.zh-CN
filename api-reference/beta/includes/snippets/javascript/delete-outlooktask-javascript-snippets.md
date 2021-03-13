@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fb24eaac349928e1e0f6570681c65344ba6ee3c0
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 32e39be1b437cd16522aebda2a66921796ac3def
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48616710"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799308"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/outlook/tasks/AAMkADIyAAAhrb_QAAA=')
+await client.api('/me/outlook/tasks/AAMkADIyAAAhrb_QAAA=')
     .version('beta')
     .delete();
 
