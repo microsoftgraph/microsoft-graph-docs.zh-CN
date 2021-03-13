@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f53777be8582d805f2a5aef98ca9e1853ad4cbc0
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 48417e330ccc957dadc227975c829d360be05e4f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43935156"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797452"
 ---
 ```objc
 
@@ -31,12 +31,12 @@ NSMutableArray *includeGroupsList = [[NSMutableArray alloc] init];
 [users setIncludeGroups:includeGroupsList];
 [conditions setUsers:users];
 MSGraphConditionalAccessDevices *devices = [[MSGraphConditionalAccessDevices alloc] init];
-NSMutableArray *includeDeviceStatesList = [[NSMutableArray alloc] init];
-[includeDeviceStatesList addObject: @"All"];
-[devices setIncludeDeviceStates:includeDeviceStatesList];
-NSMutableArray *excludeDeviceStatesList = [[NSMutableArray alloc] init];
-[excludeDeviceStatesList addObject: @"Compliant"];
-[devices setExcludeDeviceStates:excludeDeviceStatesList];
+NSMutableArray *includeDevicesList = [[NSMutableArray alloc] init];
+[includeDevicesList addObject: @"All"];
+[devices setIncludeDevices:includeDevicesList];
+NSMutableArray *excludeDevicesList = [[NSMutableArray alloc] init];
+[excludeDevicesList addObject: @"Compliant"];
+[devices setExcludeDevices:excludeDevicesList];
 [conditions setDevices:devices];
 [conditionalAccessPolicy setConditions:conditions];
 MSGraphConditionalAccessGrantControls *grantControls = [[MSGraphConditionalAccessGrantControls alloc] init];

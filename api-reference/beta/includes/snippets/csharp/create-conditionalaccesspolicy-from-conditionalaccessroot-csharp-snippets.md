@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 605f5d04908be7a0915be50dc3c11a6aee9b2b2e
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: bed666f51f8579697a78e811c3d0d365583925e7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43935222"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792594"
 ---
 ```csharp
 
@@ -33,11 +33,11 @@ var conditionalAccessPolicy = new ConditionalAccessPolicy
         },
         Devices = new ConditionalAccessDevices
         {
-            IncludeDeviceStates = new List<String>()
+            IncludeDevices = new List<String>()
             {
                 "All"
             },
-            ExcludeDeviceStates = new List<String>()
+            ExcludeDevices = new List<String>()
             {
                 "Compliant"
             }

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 80258ba927597036d7fcdcf3519a3f1ceac91662
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 1e1527773359bfdb32a1049354f5afbb4fd326dd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636541"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790852"
 ---
 ```javascript
 
@@ -20,17 +20,17 @@ const device = {
   alternativeSecurityIds: [
     {
       type: 99,
-      identityProvider: "identityProvider-value",
-      key: "base64Y3YxN2E1MWFlYw=="
+      identityProvider: 'identityProvider-value',
+      key: 'base64Y3YxN2E1MWFlYw=='
     }
   ],
-  approximateLastSignInDateTime: "2016-10-19T10:37:00Z",
-  deviceId: "deviceId-value",
-  deviceMetadata: "deviceMetadata-value",
+  approximateLastSignInDateTime: '2016-10-19T10:37:00Z',
+  deviceId: 'deviceId-value',
+  deviceMetadata: 'deviceMetadata-value',
   deviceVersion: 99
 };
 
-let res = await client.api('/devices')
+await client.api('/devices')
     .version('beta')
     .post(device);
 

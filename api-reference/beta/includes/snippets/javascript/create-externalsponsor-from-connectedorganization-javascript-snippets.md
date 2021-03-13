@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 66ff9b4f494f99834d3c5f280dea11285a8222c0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7d8d3d387b66873e8bda7ed5490223220a2f60a7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810182"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804260"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const directoryObject = {
-  @odata.id: "https://graph.microsoft.com/beta/users/{id}"
+  '@odata.id': 'https://graph.microsoft.com/beta/users/{id}'
 };
 
-let res = await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref')
+await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref')
     .version('beta')
     .post(directoryObject);
 

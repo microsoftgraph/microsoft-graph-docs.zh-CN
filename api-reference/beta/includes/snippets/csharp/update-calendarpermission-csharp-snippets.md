@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a6da481dff5a46e6723d163ca8d7f0ae02cbf103
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: fed5d5ec5540a64bd86292b656fd2de2b58ce5a2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41778038"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787286"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var calendarPermission = new CalendarPermission
     Role = CalendarRoleType.Write
 };
 
-await graphClient.Users["{id}"].Calendar.CalendarPermissions["RGVmYXVsdA=="]
+await graphClient.Users["{user-id}"].Calendar.CalendarPermissions["{calendarPermission-id}"]
     .Request()
     .UpdateAsync(calendarPermission);
 

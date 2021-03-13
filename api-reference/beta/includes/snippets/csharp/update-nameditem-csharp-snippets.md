@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 345b3f03bd61d072796099643d122d9541bcbd55
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 2182a28723f14b96f29dc2af7baf54856c0a8b4a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44685090"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796086"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var workbookNamedItem = new WorkbookNamedItem
     Visible = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
     .Request()
     .UpdateAsync(workbookNamedItem);
 

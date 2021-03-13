@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f4caf7eccf501a13c9b9d9c18c3136811051b3ad
-ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
+ms.openlocfilehash: 09ced52f64af45037dbb8065bc91e8cbbbbe0757
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49556228"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789066"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var user = new User
     OfficeLocation = "18/2111"
 };
 
-await graphClient.Users["{id}"]
+await graphClient.Users["{user-id}"]
     .Request()
     .UpdateAsync(user);
 

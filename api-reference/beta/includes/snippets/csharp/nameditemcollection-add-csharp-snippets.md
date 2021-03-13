@@ -1,24 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d8d5ebb00bd0ad547e681af7c151eee538140869
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: df7c1ce67ec930befcf8c10dec811c536f8e1b6e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50015518"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801457"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var name = "test5";
+var name = "test7";
 
-var reference = "=Sheet1!$F$15:$N$27";
+var formula = "=SUM(Sheet2!$A$1+Sheet2!$A$2)";
 
 var comment = "Comment for the named item";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names
-    .Add(name,reference,comment)
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names
+    .AddFormulaLocal(name,formula,comment)
     .Request()
     .PostAsync();
 

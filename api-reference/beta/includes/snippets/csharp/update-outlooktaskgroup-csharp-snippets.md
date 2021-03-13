@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 27310935ac5bee281f55e1d70e572e5e911895cd
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 3e1cbfbf820b73674fb671bd420bfc698a6321cb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48617138"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790961"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var outlookTaskGroup = new OutlookTaskGroup
     Name = "Personal Tasks"
 };
 
-await graphClient.Me.Outlook.TaskGroups["AAMkADIyAAAhrbe-AAA="]
+await graphClient.Me.Outlook.TaskGroups["{outlookTaskGroup-id}"]
     .Request()
     .UpdateAsync(outlookTaskGroup);
 

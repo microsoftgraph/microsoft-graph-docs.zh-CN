@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: ef90ea1f878e5308870830ccbc82f993821285d0
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f6d0aef725281c9501077631ec2ba08b3a92c53e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845922"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798131"
 ---
 ```csharp
 
@@ -21,7 +21,7 @@ var contact = new Contact
     Initials = "initials-value"
 };
 
-await graphClient.Me.ContactFolders["{id}"].Contacts
+await graphClient.Me.ContactFolders["{contactFolder-id}"].Contacts
     .Request()
     .AddAsync(contact);
 

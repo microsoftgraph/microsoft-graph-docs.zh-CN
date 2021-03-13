@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c77e3b9b21a16b8b40268ac2e2a69309d72cf87b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e2b7110f6796b7b383ed8becade4f142dd124c52
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957821"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793665"
 ---
 ```java
 
@@ -26,12 +26,12 @@ includeGroupsList.add("ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba");
 users.includeGroups = includeGroupsList;
 conditions.users = users;
 ConditionalAccessDevices devices = new ConditionalAccessDevices();
-LinkedList<String> includeDeviceStatesList = new LinkedList<String>();
-includeDeviceStatesList.add("All");
-devices.includeDeviceStates = includeDeviceStatesList;
-LinkedList<String> excludeDeviceStatesList = new LinkedList<String>();
-excludeDeviceStatesList.add("Compliant");
-devices.excludeDeviceStates = excludeDeviceStatesList;
+LinkedList<String> includeDevicesList = new LinkedList<String>();
+includeDevicesList.add("All");
+devices.includeDevices = includeDevicesList;
+LinkedList<String> excludeDevicesList = new LinkedList<String>();
+excludeDevicesList.add("Compliant");
+devices.excludeDevices = excludeDevicesList;
 conditions.devices = devices;
 conditionalAccessPolicy.conditions = conditions;
 ConditionalAccessGrantControls grantControls = new ConditionalAccessGrantControls();

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 749ecae73c2aeba28b2234705fa4a153b034721c
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 5057878bd6368b2561b4d18db5cc26b488c71dc1
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48615142"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807318"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var workbookChart = new WorkbookChart
     Left = 99
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"]
     .Request()
     .UpdateAsync(workbookChart);
 

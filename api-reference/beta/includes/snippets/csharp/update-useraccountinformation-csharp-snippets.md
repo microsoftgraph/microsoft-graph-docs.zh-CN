@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 66cde31a971038772b7085713519535ac99ec8b9
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 2638dc3b5d37eb6ce285e226a4b2e070d7aa13c0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46821113"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787519"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var userAccountInformation = new UserAccountInformation
     CountryCode = "NO"
 };
 
-await graphClient.Me.Profile.Account["{id}"]
+await graphClient.Me.Profile.Account["{userAccountInformation-id}"]
     .Request()
     .UpdateAsync(userAccountInformation);
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5540bf65265855088aa1e43e6c1449fd90193d82
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 6c3c50fe5bcd18653de9e64966670f67fd6b9272
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37041740"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800225"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var ids = new List<String>()
     "ac38546e-ddf3-437a-ac5c-27a94cd7a0f1"
 };
 
-await graphClient.Devices["{id}"]
+await graphClient.Devices["{device-id}"]
     .CheckMemberObjects(ids)
     .Request()
     .PostAsync();

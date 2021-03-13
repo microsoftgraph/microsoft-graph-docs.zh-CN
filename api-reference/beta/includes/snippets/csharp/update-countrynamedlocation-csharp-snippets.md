@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9ed7922f83b6ca480e80cfc1e88e34afd913fc3a
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 84ec437672787bc2637578c43e8cc23d5f844b76
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681115"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788761"
 ---
 ```csharp
 
@@ -22,7 +22,7 @@ var namedLocation = new CountryNamedLocation
     IncludeUnknownCountriesAndRegions = false
 };
 
-await graphClient.Identity.ConditionalAccess.NamedLocations["1c4427fd-0885-4a3d-8b23-09a899ffa959"]
+await graphClient.Identity.ConditionalAccess.NamedLocations["{namedLocation-id}"]
     .Request()
     .UpdateAsync(namedLocation);
 

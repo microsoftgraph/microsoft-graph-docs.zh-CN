@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a9c7b0266f5e735e14e35c066156ee33e0f90a9f
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: faffa5166c7732e7c9c59d467c1531b344ec181c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636531"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791876"
 ---
 ```javascript
 
@@ -18,12 +18,12 @@ const client = Client.init(options);
 const domain = {
   isDefault: true,
   supportedServices: [
-    "Email",
-    "OfficeCommunicationsOnline"
+    'Email',
+    'OfficeCommunicationsOnline'
   ]
 };
 
-let res = await client.api('/domains/contoso.com')
+await client.api('/domains/contoso.com')
     .version('beta')
     .update(domain);
 
