@@ -1,24 +1,24 @@
 ---
-title: 应用程序： setVerifiedPublisher
+title: application： setVerifiedPublisher
 description: 设置应用程序的已验证发布者。
 localization_priority: Normal
 author: jesakowi
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 60681396c5f1c7e74b2ef04cd1984815e3a5e7a0
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: ff0558f8618020eca6437d7528f1f6d0f17eafa6
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635543"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761147"
 ---
-# <a name="application-setverifiedpublisher"></a>应用程序： setVerifiedPublisher
+# <a name="application-setverifiedpublisher"></a>application： setVerifiedPublisher
 
 命名空间：microsoft.graph
 
-在[应用程序](../resources/application.md)上设置[verifiedPublisher](../resources/verifiedPublisher.md) 。 有关详细信息，包括设置已验证的发布者的先决条件，请参阅 [publisher 验证](/azure/active-directory/develop/publisher-verification-overview)。
+在应用程序[上设置 verifiedPublisher。](../resources/verifiedPublisher.md) [](../resources/application.md) 有关详细信息，包括设置已验证发布者的先决条件，请参阅 [发布者验证](/azure/active-directory/develop/publisher-verification-overview)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -45,9 +45,9 @@ POST /applications/{id}/setVerifiedPublisher
 
 在请求正文中，提供以下必需属性。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | string | Microsoft 合作伙伴网络 ID 从发布者的合作伙伴中心帐户在应用程序上设置已验证的发布者 (MPNID) 。 |
+| verifiedPublisherId | string | Microsoft 合作伙伴网络 ID (MPNID) 从发布者的合作伙伴中心帐户在应用程序上设置的已验证发布者的 MPNID。 |
 
 ## <a name="response"></a>响应
 

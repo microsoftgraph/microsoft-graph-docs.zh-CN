@@ -1,30 +1,30 @@
 ---
-title: 查看应用程序身份验证库更改
-description: 介绍如何更新身份验证库使用，以便将应用从 Azure Active Directory (Azure AD) API 应用迁移到 Microsoft Graph API。
+title: 查看应用身份验证库更改
+description: 介绍如何更新身份验证库使用，以将应用从 Azure Active Directory (Azure AD) API 迁移到 Microsoft Graph API。
 author: dkershaw10
 localization_priority: Normal
-ms.prod: azure-active-directory
-ms.openlocfilehash: 291b34b848892cb0294cc2e1a30c6452174690cc
-ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
+ms.prod: applications
+ms.openlocfilehash: ef49c6a3448dd63a7c933bb40748f218d6fd2db0
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338142"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760684"
 ---
-# <a name="review-app-authentication-library-changes"></a>查看应用程序身份验证库更改
+# <a name="review-app-authentication-library-changes"></a>查看应用身份验证库更改
 
-本文是 *第3步：查看迁移应用程序的应用程序详细信息的第3步：查看* 该 [过程](migrate-azure-ad-graph-planning-checklist.md)的详细信息。
+本文是步骤 *3：查看应用程序迁移*[过程的详细信息的一部分](migrate-azure-ad-graph-planning-checklist.md)。
 
-大多数应用使用身份验证库来获取和管理访问令牌，以调用 Microsoft Graph。  Microsoft 提供了两个身份验证库：
+大多数应用使用身份验证库获取和管理访问令牌以调用 Microsoft Graph。  Microsoft 提供两个身份验证库：
 
-- [Azure Active Directory 身份验证库](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) 
-- [Microsoft 身份验证库](/azure/active-directory/develop/reference-v2-libraries) (MSAL) 
+- [Azure Active Directory 身份验证库 (](/azure/active-directory/develop/active-directory-authentication-libraries) ADAL) 
+- [MICROSOFT 身份验证库](/azure/active-directory/develop/reference-v2-libraries) (MSAL) 
 
 ## <a name="updating-adal"></a>更新 ADAL
 
 如果你的应用当前使用 ADAL，请使用两阶段迁移方法：
 
-1. 更新您的应用程序以获取 Microsoft Graph 的访问令牌。 继续使用 ADAL 执行此步骤。 更新 **resourceURL**，其中包含表示资源 web API 的 URI，从：
+1. 更新应用以获取 Microsoft Graph 的访问令牌。 继续使用 ADAL 执行此步骤。 更新 **resourceURL**，其中保存了表示资源 Web API 的 URI，网址为：
 
     `https://graph.windows.net`  
 
@@ -32,29 +32,29 @@ ms.locfileid: "48338142"
 
     `https://graph.microsoft.com`
 
-    在此更改之后，新获取的令牌具有相同的作用域，但访问令牌的访问群体现在是 Microsoft Graph。  
+    在此更改后，新获取的令牌具有相同的作用域，但访问令牌的访问群体现在为 Microsoft Graph。  
 
-    更新 **resourceURL** 和已验证的功能后，发布临时更新以获取用户的 up 和 runnning。
+    更新 **resourceURL** 和验证功能后，发布临时更新，让用户启动并运行。
 
-1.  接下来，开始将应用程序迁移到使用 MSAL （即，支持的库可供将来使用），现在将 ADAL 弃用。
+1.  接下来，开始迁移应用以使用 MSAL，这是一个受支持的库，可继续操作，现已弃用 ADAL。
 
 ## <a name="migrating-to-msal"></a>迁移到 MSAL
 
-MSAL 提供了多个优于 ADAL 的优势，包括增量许可、更丰富的单一登录体验、对个人 Microsoft 帐户的支持、使用基于标准的协议等。  
+与 ADAL 相比，MSAL 提供了多个优势，包括增量同意、更丰富的单一登录体验、个人 Microsoft 帐户支持、使用基于标准的协议等。  
 
-当您将应用程序切换到 MSAL 时，您需要进行一些更改，包括在令牌采集请求中设置 **scope** 参数：
+在将应用切换到 MSAL 时，你需要进行一些更改，包括在令牌获取请求中设置 **scopes** 参数：
 
 ``` csharp
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
 ```
 
-上面的表达式将权限范围请求限制为在 Azure 门户中的应用程序注册过程中配置的请求，并将现有用户保存为不得不再次同意您的应用程序。
+上述表达式将权限范围请求限定为在 Azure 门户中注册应用程序期间配置的权限范围请求，并节省现有用户再次同意应用的权限范围。
 
-请参阅 [将 ADAL 迁移到 MSAL](https://aka.ms/adal-net-to-msal-net) ，以在过程中提供直接和广泛的帮助，包括故障排除和帮助常见错误。
+有关 [此过程的直接和广泛](https://aka.ms/adal-net-to-msal-net) 帮助，包括常见错误的疑难解答和帮助，请参阅将 ADAL 迁移到 MSAL。
 
-迁移到 MSAL 后，您可以动态请求其他作用域，并且在下次使用您的应用程序时，系统会提示用户提供增量许可。
+迁移到 MSAL 后，可以动态请求其他范围，并且用户下次使用你的应用时将提示他们提供增量同意。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解 Azure AD Graph 和 Microsoft Graph 之间的 [.net 客户端库](migrate-azure-ad-graph-client-libraries.md) 差异。
-- 再次查看 [检查表](migrate-azure-ad-graph-planning-checklist.md) 。
+- 了解 Azure AD Graph 和 Microsoft Graph 之间的 [.NET](migrate-azure-ad-graph-client-libraries.md) 客户端库差异。
+- 再次查看 [检查](migrate-azure-ad-graph-planning-checklist.md) 表。

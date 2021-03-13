@@ -3,14 +3,14 @@ title: 创建 namedLocation
 description: 创建新的 namedLocation。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a72cdd9d50295e9f7db947cf4d15ed893a40ab91
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd716709ddd12a44814b24f58c9adb53701737d9
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042350"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761694"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
@@ -24,9 +24,9 @@ ms.locfileid: "48042350"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+| 应用程序                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,15 +45,15 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [COUNTRYNAMEDLOCATION](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [IpNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新的 `201 Created` [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-ipnamedlocation"></a>示例1：创建 ipNamedLocation
+### <a name="example-1-create-an-ipnamedlocation"></a>示例 1：创建 ipNamedLocation
 
 #### <a name="request"></a>请求
 
@@ -141,7 +141,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-create-a-countrynamedlocation"></a>示例2：创建 countryNamedLocation
+### <a name="example-2-create-a-countrynamedlocation"></a>示例 2：创建 countryNamedLocation
 
 #### <a name="request"></a>请求
 

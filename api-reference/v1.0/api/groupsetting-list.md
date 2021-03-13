@@ -1,18 +1,18 @@
 ---
-title: 列表组设置
+title: 列出组设置
 description: 检索组设置对象的列表。
 author: yyuank
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5ea98dc5d7fd2db802fb7b27e0e9536ef0830bcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6db805374ce4783ff9d339f128efd7bc416ab161
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973385"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761309"
 ---
-# <a name="list-group-settings"></a>列表组设置
+# <a name="list-group-settings"></a>列出组设置
 
 命名空间：microsoft.graph
 
@@ -53,7 +53,7 @@ GET groups/{id}/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [groupSetting](../resources/groupsetting.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [groupSetting](../resources/groupsetting.md) 对象集合。
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求

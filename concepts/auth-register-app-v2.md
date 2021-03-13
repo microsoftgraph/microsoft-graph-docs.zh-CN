@@ -3,18 +3,18 @@ title: 使用 Azure AD v2.0 终结点注册应用
 description: 应用必须使用 Azure AD 注册。 注册应用会建立一个唯一的应用程序 ID，以及你的应用通过 Azure AD 进行身份验证并获取令牌所用的其他值。
 author: jackson-woods
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 12cf99ba3e97c699ba4531cb7f0a02b6211e9627
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: c4790651e4f963d1d999fc3347f09ea3293f8791
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289496"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760733"
 ---
 # <a name="register-an-application-with-the-microsoft-identity-platform"></a>向 Microsoft 标识平台注册应用程序
 
-在本页中，介绍了如何通过 Azure 门户中的**应用注册**体验添加和注册应用程序，从而让应用能够与 Microsoft 标识平台翔集成并调用 Microsoft Graph。 
+在本页中，介绍了如何通过 Azure 门户中的 **应用注册** 体验添加和注册应用程序，从而让应用能够与 Microsoft 标识平台翔集成并调用 Microsoft Graph。 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
@@ -51,7 +51,7 @@ Azure AD 会将唯一的应用程序（客户端）ID 分配给应用，同时�
 ## <a name="platform-specific-properties"></a>平台特定的属性
 
 
-下表显示了针对不同类型的应用需要配置和复制的属性。_已分配_表示你应该使用由 Azure AD 分配的值。
+下表显示了针对不同类型的应用需要配置和复制的属性。_已分配_ 表示你应该使用由 Azure AD 分配的值。
 
 
 | 应用类型 | 平台 | 应用程序（客户端）ID | 客户端密码 | 重定向 URI/URL | 隐式流 

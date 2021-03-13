@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 44349921023e4197f73709a5b2cae0b0e56e02d8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 10fd30a83f14d0607c14bb8e6c0ce0188cfa7ac2
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722207"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760705"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -45,7 +45,6 @@ ms.locfileid: "50722207"
 | 添加项        | beta          | 添加了 [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta) 资源类型。|
 | 添加项        | beta          | 添加了 [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) 资源类型。|
 | 添加项        | beta          | 添加了 [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) 资源类型。|
-
 
 ### <a name="tasks-and-plans"></a>任务和计划
 
@@ -3669,8 +3668,8 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | beta | 添加了 [governanceSubject](/graph/api/resources/governancesubject?view=graph-rest-beta&preserve-view=true) 实体。|
 | 添加项 | beta | 添加了 [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governanceroledefinition-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/governanceroledefinition-get?view=graph-rest-beta&preserve-view=true) |
 | 添加项 | beta | 添加了 [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governanceroleassignment-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/governanceroleassignment-get?view=graph-rest-beta&preserve-view=true) <br> [Export](/graph/api/governanceroleassignment-export?view=graph-rest-beta&preserve-view=true) |
-| 添加项 | beta | 添加了 [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [获取](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta&preserve-view=true) |
-| 添加项 | beta | 添加了 [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governancerolesetting-list?view=graph-rest-beta&preserve-view=true) <br> [获取](/graph/api/governancerolesetting-get?view=graph-rest-beta&preserve-view=true) <br> [更新](/graph/api/governancerolesetting-update?view=graph-rest-beta&preserve-view=true) |
+| 添加项 | beta | 添加了 [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta&preserve-view=true) |
+| 添加项 | beta | 添加了 [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governancerolesetting-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/governancerolesetting-get?view=graph-rest-beta&preserve-view=true) <br> [更新](/graph/api/governancerolesetting-update?view=graph-rest-beta&preserve-view=true) |
 | 添加项 | beta | 添加了以下复杂类型： <br> [governancePermission](/graph/api/resources/governancepermission?view=graph-rest-beta&preserve-view=true) <br> [governanceRoleAssignmentRequestStatus](/graph/api/resources/governanceroleassignmentrequeststatus?view=graph-rest-beta&preserve-view=true) <br> [governanceRuleSetting](/graph/api/resources/governancerulesetting?view=graph-rest-beta&preserve-view=true) <br> [governanceSchedule](/graph/api/resources/governanceschedule?view=graph-rest-beta&preserve-view=true)|
 
 ### <a name="security"></a>安全性

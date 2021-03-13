@@ -1,36 +1,36 @@
 ---
 title: orgContact： getMemberGroups
-description: 返回组织联系人所属的所有组。
+description: 返回组织联系人是成员的所有组。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e2d4a591a1bc200eb96248fbeed1630fe4d22def
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fc8f9a62656cace7a4dd3e02182a8a2bc454464
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077742"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761644"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact： getMemberGroups
 
 命名空间：microsoft.graph
 
-返回 [组织联系人](../resources/orgcontact.md) 所属的所有组。 检查是可传递的，这和读取 **memberOf** 导航属性不同，后者仅返回用户是其直接成员的组。
+返回组织联系人 [是](../resources/orgcontact.md) 成员的所有组。 检查是可传递的，这和读取 **memberOf** 导航属性不同，后者仅返回用户是其直接成员的组。
 
-此函数支持在 Azure Active Directory (Azure AD) 中预配的 Microsoft 365 和其他类型的组。 每个请求可以返回的最大组数为 2046 组。 
+此函数支持 Microsoft 365 和 Azure AD (Azure Active Directory 中预配) 。 每个请求可以返回的最大组数为 2046 组。 
 
 >[!NOTE]
->Microsoft 365 组不能包含组。 Microsoft 365 组中的成员身份始终是直接的。
+>Microsoft 365 组不能包含组。 Microsoft 365 组的成员身份始终是直接的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All |
+|委派（工作或学校帐户） | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | OrgContact 和 Group. all、Read. All |
+|应用程序 | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

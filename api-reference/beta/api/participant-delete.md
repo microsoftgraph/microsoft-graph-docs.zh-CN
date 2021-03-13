@@ -3,16 +3,15 @@ title: 删除参与者
 description: 删除呼叫中的特定参与者。
 manager: zhengni
 author: jackry6350
-ms.author: yoren
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ece6c6d19ab6513d25d0b176a4563071dafc1cd0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3fd701f9fb346a86c93359cdaa1a360c9b484223
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964382"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50769356"
 ---
 # <a name="delete-participant"></a>删除参与者
 
@@ -20,7 +19,7 @@ ms.locfileid: "48964382"
 
 命名空间：microsoft.graph
 
-删除呼叫中的特定参与者。 在某些情况下，应用程序需要从活动呼叫中删除参与者。 在参与者应答呼叫后，可以完成此操作。 删除活动的呼叫者后，它们将立即从呼叫中删除，无签出或删除后通知。
+删除呼叫中的特定参与者。 在某些情况下，适合应用程序从活动呼叫中删除参与者。 在参与者应答呼叫后，可以完成此操作。 删除活动呼叫者后，会立即从呼叫中删除这些呼叫，同时不会发出删除前或删除后通知。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,9 +28,9 @@ ms.locfileid: "48964382"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | 无                                        |
+| Application                            | 无                                        |
 
-租户级应用程序会议配置是允许应用程序调用此 API 所必需的。 租户管理员应在租户远程 PowerShell 中调用以下 cmdlet，以向应用程序授予调用此 API 的权限。 有关详细信息，请参阅 [CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)。
+需要租户级应用程序会议配置，应用程序才能调用此 API。 租户管理员应在租户远程 PowerShell 上调用以下 cmdlet，以向应用程序授予调用此 API 的权限。 有关详细信息，请参阅 [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)。
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```

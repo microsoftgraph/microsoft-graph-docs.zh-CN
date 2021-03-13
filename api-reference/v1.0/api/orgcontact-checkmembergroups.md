@@ -1,27 +1,27 @@
 ---
 title: orgContact： checkMemberGroups
-description: 检查指定组列表中的成员身份。 从列表中返回，其中组织联系人具有直接或可传递成员身份的组 Id。
+description: 检查指定组列表中的成员身份。 从列表中返回组织联系人具有直接或可传递成员身份的组 ID。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fb91b50b49aca27f75f38586517e118dc0850ee9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5bdafc5ecaf7e2f95017267bf35ff140994bfb1d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063007"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761358"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact： checkMemberGroups
 
 命名空间：microsoft.graph
 
-检查指定组列表中的成员身份。 从列表中返回，其中 [组织联系人](../resources/orgcontact.md) 具有直接或可传递成员身份的组 id。
+检查指定组列表中的成员身份。 从列表中返回组织联系人具有直接或可传递成员身份的[](../resources/orgcontact.md)组 ID。
 
-每个请求最多可检查 20 个组。 此函数支持在 Azure Active Directory (Azure AD) 中预配的 Microsoft 365 和其他类型的组。
+每个请求最多可检查 20 个组。 此函数支持 Microsoft 365 和 Azure AD (Azure Active Directory 中预配) 。
 
 >[!NOTE]
->Microsoft 365 组不能包含组。 Microsoft 365 组中的成员身份始终是直接的。
+>Microsoft 365 组不能包含组。 Microsoft 365 组的成员身份始终是直接的。
 
 
 ## <a name="permissions"></a>权限
@@ -29,9 +29,9 @@ ms.locfileid: "48063007"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All |
+|委派（工作或学校帐户） | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | OrgContact 和 Group. all、Read. All |
+|应用程序 | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,11 +50,11 @@ POST /contacts/{id}/checkMemberGroups
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|groupIds|String collection | 要检查的组 Id 的列表。 |
+|groupIds|String collection | 要检查的组 ID 列表。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
+如果成功，该运营商将返回 `200 OK` 响应代码和响应正文中的字符串集合对象。
 
 ## <a name="example"></a>示例
 

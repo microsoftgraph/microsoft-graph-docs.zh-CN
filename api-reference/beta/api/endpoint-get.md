@@ -3,14 +3,14 @@ title: Get endpoint
 description: 检索特定终结点对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 author: yyuank
-ms.openlocfilehash: 5b2745d2914ccf1ce8c775053358ff12eaabf745
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ab98177176b85101e1122edc52789a7d77d27d15
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955054"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760719"
 ---
 # <a name="get-endpoint"></a>Get endpoint
 
@@ -18,7 +18,7 @@ ms.locfileid: "48955054"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定 [终结点](../resources/endpoint.md) 对象的属性和关系。
+检索特定终结点对象的属性 [和](../resources/endpoint.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "48955054"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All |
+|Application | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /groups/{id}/endpoints/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [终结点](../resources/endpoint.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [Endpoint](../resources/endpoint.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 

@@ -3,29 +3,29 @@ title: 列出 directReports
 description: 获取联系人的直接下属。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f1c530293fd763c1309adbc1d5e082a3a98cbd8b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d294f80b8bf1e55e1575490fb1b888e78afbd47
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083335"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761630"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
 命名空间：microsoft.graph
 
-获取此 [组织联系人](../resources/orgcontact.md)的直接下属。
+获取此组织联系人 [的直接下属](../resources/orgcontact.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All  |
+|委派（工作或学校帐户） | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | OrgContact 和 Group. all、Read. All |
+|应用程序 | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "48083335"
 GET /contacts/{id}/directReports
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |

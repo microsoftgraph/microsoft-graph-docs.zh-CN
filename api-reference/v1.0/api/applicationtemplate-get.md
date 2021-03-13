@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: fa9276b3dffd6ecca8df004e469c0dcd562011d9
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: db1957652d2abd29d79bce8c594b83deaf2992f3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50476419"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50768879"
 ---
 # <a name="get-applicationtemplate"></a>获取 applicationTemplate
 
@@ -28,7 +28,7 @@ ms.locfileid: "50476419"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | 无。                                       |
 
-调用此 API 不需要其他权限，只要您的应用程序具有调用 Microsoft Graph 的有效访问令牌。
+调用此 API 不需要其他权限，只要应用程序具有有效的访问令牌来调用 Microsoft Graph。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [applicationTemplate](../resources/applicationtemplate.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [applicationTemplate](../resources/applicationtemplate.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -64,6 +64,8 @@ GET /applicationTemplates/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplate"
@@ -72,6 +74,24 @@ GET /applicationTemplates/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/applicationTemplates/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

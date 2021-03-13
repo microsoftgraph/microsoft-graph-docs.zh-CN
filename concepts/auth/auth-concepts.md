@@ -3,14 +3,14 @@ title: Microsoft Graph 身份验证和授权基础知识
 description: 要调用 Microsoft Graph，应用必须从 Microsoft 标识平台获取一个访问令牌。
 author: matt-steele
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: fa1f6d243679d4a0a2a4adeb822baa781f490ac0
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 731518e03441562424a09e86a57f61091cdc9cf8
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092582"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760726"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 

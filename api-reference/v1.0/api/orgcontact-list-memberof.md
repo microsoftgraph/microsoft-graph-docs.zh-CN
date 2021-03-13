@@ -1,31 +1,31 @@
 ---
 title: 列出 memberOf
-description: 列出此 organizaitonal 联系人所属的组。
+description: 列出此组织其他联系人是其中一个成员的组。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d194fd78ca7bc8eb713ea06ee18656b888630a68
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4814a7dc4482c87edd3e27c7b8949e7fef388ec0
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461214"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761623"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
 命名空间：microsoft.graph
 
-列出此 [组织联系人](../resources/orgcontact.md) 所属的组。
+列出此组织 [联系人是](../resources/orgcontact.md) 其中一个成员的组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All  |
+|委派（工作或学校帐户） | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | OrgContact 和 Group. all、Read. All |
+|应用程序 | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

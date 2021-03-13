@@ -1,24 +1,24 @@
 ---
-title: 应用程序： unsetVerifiedPublisher
+title: application：unsetVerifiedPublisher
 description: 取消设置应用程序的已验证发布者。
 localization_priority: Normal
 author: jesakowi
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dca739f5086e10fecdfba56cfd1338a9230b4d4d
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 3741529b51912a077bfb7abe217a6828f64d199f
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635509"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761316"
 ---
-# <a name="application-unsetverifiedpublisher"></a>应用程序： unsetVerifiedPublisher
+# <a name="application-unsetverifiedpublisher"></a>application：unsetVerifiedPublisher
 
 命名空间：microsoft.graph
 
-取消设置之前在[应用程序](../resources/application.md)上设置的[verifiedPublisher](../resources/verifiedPublisher.md) ，并删除所有已验证的发布服务器属性。 有关详细信息，请参阅 [Publisher 验证](/azure/active-directory/develop/publisher-verification-overview)。
+取消设置 [之前在应用程序上设置的 verifiedPublisher](../resources/verifiedPublisher.md) [，删除](../resources/application.md)所有已验证的发布者属性。 有关详细信息，请参阅 [发布者验证](/azure/active-directory/develop/publisher-verification-overview)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

@@ -5,23 +5,23 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 3fd3109f914e08d0dd152b2e22ce5f20a84b2d96
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 885190ea6a23ed6c5408f7476f5a4f10463ae012
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517164"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50768759"
 ---
 # <a name="update-printjob"></a>更新 printJob
 命名空间：microsoft.graph
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-更新 [打印作业](../resources/printjob.md)。 只能 **更新配置** 属性。
+更新 [打印作业](../resources/printjob.md)。 只能 **更新 configuration** 属性。
 
-只有在关联的打印作业上存在由请求应用创建的触发器启动的 [printTask](../resources/printTask.md) 时，更新打印作业才能 `processing` 成功。 若要详细了解如何注册任务触发器，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+只有在关联的打印作业上存在由请求应用创建的触发器启动的 [printTask](../resources/printTask.md) 状态时，更新打印作业才能 `processing` 成功。 若要详细了解如何注册任务触发器，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅（Printer.Read.All 或 Printer.ReadWrite.All 应用程序权限）以及下表中列出的权限之一。
@@ -49,17 +49,19 @@ PATCH /print/printers/{printerId}/jobs/{printJobId}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供相关 [printJob 字段](../resources/printjob.md) 的值。 请求正文中不包含的现有属性将保留其以前的值。 
+在请求正文中，提供相关 [printJob 字段](../resources/printjob.md) 的值。 请求正文中未包含的现有属性将保留其以前的值。 
 
-只能 **更新配置** 属性。
+只能 **更新 configuration** 属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回具有更新 `200 OK` [的 printJob](../resources/printjob.md) 对象的响应代码。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [printJob](../resources/printjob.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printjob"
@@ -104,6 +106,24 @@ Content-length: 376
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-printjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-printjob-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-printjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printjob-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

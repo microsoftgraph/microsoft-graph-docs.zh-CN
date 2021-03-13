@@ -1,31 +1,31 @@
 ---
 title: orgContact： getMemberObjects
-description: 返回此组织联系人所属的所有组。 检查是可传递的。
+description: 返回此组织联系人是成员的所有组。 检查是可传递的。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7fd09f86c53252cb0fd7cbcc69b9ac4d3db3d47a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a51cd565b363e1fe080f5a1d48de9f51b38d78f7
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988653"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761637"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact： getMemberObjects
 
 命名空间：microsoft.graph
 
-返回此 [组织联系人](../resources/orgcontact.md) 所属的所有组。 检查是可传递的。 组织联系人不能是目录角色的成员。 将不会返回任何目录角色。
+返回此组织联系人 [是](../resources/orgcontact.md) 成员的所有组。 检查是可传递的。 组织联系人不能是目录角色的成员。 不会返回任何目录角色。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All  |
+|委派（工作或学校帐户） | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | OrgContact 和 Group. all、Read. All |
+|应用程序 | OrgContact.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ POST /contacts/{id}/getMemberObjects
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
+如果成功，该运营商将返回 `200 OK` 响应代码和响应正文中的字符串集合对象。
 
 ## <a name="example"></a>示例
 

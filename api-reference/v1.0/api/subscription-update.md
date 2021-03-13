@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3d8bc3154e0ed2556f319bba78f03ee4703dc8b1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e63f810e6e11d18d2e03fb702a629cee74d768fe
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441667"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759501"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -18,9 +18,9 @@ ms.locfileid: "50441667"
 
 通过延长到期时间续订订阅。
 
-"权限" [部分](#permissions) 中的表列出了支持订阅更改通知的资源。
+"权限 ["部分](#permissions) 中的表列出了支持订阅更改通知的资源。
 
-订阅在时间长度因资源类型而异后过期。 为了避免丢失更改通知，应用应在到期日期之前很好地续订其订阅。 有关 [每种](../resources/subscription.md) 资源类型的订阅的最大长度，请参阅订阅。
+订阅在时间长度因资源类型而异后过期。 为了避免缺少更改通知，应用应在到期日期之前提前续订其订阅。 请参阅 [订阅](../resources/subscription.md) ，了解每种资源类型的订阅的最大长度。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "50441667"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | 不支持 | 不支持 | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | 不支持 | 不支持 |  ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | 不支持 |  ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | 不支持 | 不支持 | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |

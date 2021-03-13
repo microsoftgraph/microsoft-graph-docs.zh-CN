@@ -3,14 +3,14 @@ title: orgContact 资源类型
 description: 代表组织联系人
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 05a78598cb249d203510674ac96b2dd69d236e26
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: fe19b4b840f1f9d9ef5bc3eaff502bf448eb1432
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721542"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761217"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact 资源类型
 
@@ -30,11 +30,11 @@ ms.locfileid: "50721542"
 | [获取组织联系人](../api/orgcontact-get.md)                  | [orgContact](orgcontact.md)                      | 读取组织联系人的属性和关系。                                                             |
 | [获取经理](../api/orgcontact-get-manager.md)                         | [directoryObject](directoryobject.md)            | 获取组织联系人的经理。                                                                                   |
 | [List directReports](../api/orgcontact-list-directreports.md)           | [directoryObject](directoryobject.md) collection | 列出组织联系人的直接下属。                                                                           |
-| [List memberOf](../api/orgcontact-list-memberof.md)                     | [directoryObject](directoryobject.md) collection | 列出组织联系人是其中一个成员的组。                                                                   |
-| [列出 transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | 列出组织联系人是其中一个成员的组，包括组织联系人嵌套在的组。 |
+| [List memberOf](../api/orgcontact-list-memberof.md)                     | [directoryObject](directoryobject.md) 集合 | 列出组织联系人是其中一个成员的组。                                                                   |
+| [列出 transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) | [directoryObject](directoryobject.md) 集合 | 列出组织联系人是其中一个成员的组，包括组织联系人嵌套在的组。 |
 | [checkMemberGroups](../api/orgcontact-checkmembergroups.md)             | 字符串集合                                | 检查组成员身份。                                                                                                 |
-| [getMemberGroups](../api/orgcontact-getmembergroups.md)                 | String collection                                | 返回指定的组织联系人是成员的所有组。                                             |
-| [getMemberObjects](../api/orgcontact-getmemberobjects.md)               | String collection                                | 返回组织联系人是其中一个成员的 directoryObjects 列表。                                               |
+| [getMemberGroups](../api/orgcontact-getmembergroups.md)                 | String 集合                                | 返回指定的组织联系人是成员的所有组。                                             |
+| [getMemberObjects](../api/orgcontact-getmemberobjects.md)               | String 集合                                | 返回组织联系人是其中一个成员的 directoryObjects 列表。                                               |
 
 ## <a name="properties"></a>属性
 
@@ -53,7 +53,7 @@ ms.locfileid: "50721542"
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合 | 此组织联系人的任何同步设置错误的列表。                                                                                                                                                                                                           |
 | onPremisesSyncEnabled        | Boolean                                                                  | 如果此对象从本地目录同步，则其为 **true;** 如果此对象最初从本地目录同步，但不再同步，现在在 Exchange 中控制，则其为 **false;****如果** 从未从本地目录同步此对象， (默认值) 。 |
 | phones                       | [phone](phone.md) collection                                             | 此组织联系人的电话列表。 电话类型可以是移动、商业和 businessFax。 集合中只能存在每种类型之一。                                                                                                                         |
-| proxyAddresses               | String collection                                                        | 例如："SMTP： bob@contoso.com"、"smtp： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持 \$ 筛选器。                                                                                                                |
+| proxyAddresses               | String 集合                                                        | 例如："SMTP： bob@contoso.com"、"smtp： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持 \$ 筛选器。                                                                                                                |
 | surname                      | 字符串                                                                   | 此组织联系人的姓氏。                                                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>关系
@@ -62,8 +62,8 @@ ms.locfileid: "50721542"
 |:-------------------|:-------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 | directReports      | [directoryObject](directoryobject.md) collection | 联系人的直接下属。  (其 manager 属性设置为此联系人的用户和联系人。) 只读。 可为 Null。 |
 | manager            | [directoryObject](directoryobject.md)            | 作为此联系人的经理的用户或联系人。 只读。                                                                     |
-| memberOf           | [directoryObject](directoryobject.md) collection | 此联系人是其中一个成员的组。 只读。 可为空。                                                                      |
-| transitiveMemberOf | [directoryObject](directoryobject.md) collection | 此联系人是其中一个成员的组，包括该联系人嵌套在的组。 只读。 可为 Null。                   |
+| memberOf           | [directoryObject](directoryobject.md) 集合 | 此联系人是其中一个成员的组。 只读。 可为 NULL。                                                                      |
+| transitiveMemberOf | [directoryObject](directoryobject.md) 集合 | 此联系人是其中一个成员的组，包括该联系人嵌套在的组。 只读。 可为 Null。                   |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

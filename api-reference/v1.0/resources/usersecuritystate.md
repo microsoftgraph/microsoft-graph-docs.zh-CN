@@ -3,14 +3,14 @@ title: userSecurityState 资源类型
 description: 包含有关用户帐户的有状态信息。
 author: jpettere
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 54785117a30318154d6ebe1b0a0681fe825368ea
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 10b5043cdadaaa1180e232e0776c26a60f46f507
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721885"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759494"
 ---
 # <a name="usersecuritystate-resource-type"></a>userSecurityState 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "50721885"
 |accountName|字符串|没有 Active Directory 域 (DNS 域的用户帐户名 -)  (也称为 `mailNickName`) 。|
 |domainName|String|用户帐户的 NetBIOS/Active Directory (，即域\帐户格式) 。|
 |emailRole|emailRole|对于电子邮件相关警报 - 用户帐户的电子邮件"角色"。 可取值为：`unknown`、`sender`、`recipient`。|
-|isVpn|布尔值|指示用户是否通过 VPN 登录。|
+|isVpn|Boolean|指示用户是否通过 VPN 登录。|
 |logonDateTime|DateTimeOffset|登录发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |logonId|字符串|用户登录 ID。|
 |logonIp|字符串|IP 地址 源自登录请求。|

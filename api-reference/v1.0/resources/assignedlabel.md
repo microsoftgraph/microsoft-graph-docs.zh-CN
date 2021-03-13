@@ -2,15 +2,15 @@
 title: assignedLabel 资源类型
 description: 表示分配给 Microsoft 365 组的敏感度标签。
 localization_priority: Normal
-author: jpettere
+author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 9602e10dda5d558110c55f1fb4ee166e53187989
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: fa95223aadc4a0b065a3227967a27c8b66b3bff1
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720891"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761519"
 ---
 # <a name="assignedlabel-resource-type"></a>assignedLabel 资源类型
 
