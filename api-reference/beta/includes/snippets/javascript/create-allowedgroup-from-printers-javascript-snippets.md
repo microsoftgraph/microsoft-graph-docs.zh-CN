@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 98a02f0ac939771296b1956f642c00eda4f92970
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 9ffc35165c19637d23c9d5cba81ac5fa287e7f72
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49692783"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806242"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-  @odata.id: "https://graph.microsoft.com/beta/groups/{id}"
+  '@odata.id': 'https://graph.microsoft.com/beta/groups/{id}'
 };
 
-let res = await client.api('/print/shares/{id}/allowedGroups/$ref')
+await client.api('/print/shares/{id}/allowedGroups/$ref')
     .version('beta')
     .post(group);
 

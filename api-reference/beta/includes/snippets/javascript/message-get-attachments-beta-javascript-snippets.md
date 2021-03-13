@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 758d38b9464102ebdfbc425c272494c87398a498
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d8b4a596c0f58307c339dd34b1f57dc3d5a6190c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461470"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807498"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/messages/{id}/attachments')
+let attachments = await client.api('/me/messages/{id}/attachments')
     .version('beta')
     .get();
 
