@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c8d3756c278c2661af108ef705ec8e6b5eb78bb9
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: d406f3b780c0f0e71341725446834f0ecbe372b6
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333416"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788303"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const removeKey = {
-    keyId: "f0b0b335-1d71-4883-8f98-567911bfdca6",
-    proof:"eyJ0eXAiOiJ..."
+    keyId: 'f0b0b335-1d71-4883-8f98-567911bfdca6',
+    proof: 'eyJ0eXAiOiJ...'
 };
 
-let res = await client.api('/serviceprincipals/{id}/removeKey')
+await client.api('/serviceprincipals/{id}/removeKey')
     .version('beta')
     .post(removeKey);
 

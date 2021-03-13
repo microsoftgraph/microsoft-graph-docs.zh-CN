@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ce6c203fa066b480c5319ad077f53a2d5d9b6f30
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: c590a867288f19dab4f7a08a6de4ce9f69b8b083
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "40871769"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794509"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/informationProtection/threatAssessmentRequests')
+let threatAssessmentRequests = await client.api('/informationProtection/threatAssessmentRequests')
     .version('beta')
     .get();
 

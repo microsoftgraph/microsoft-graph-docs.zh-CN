@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d30f9d18a18b9065e108d2c0bbfb082c45ed6503
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 0f3d3ebb482b39074b644177fea19ed5c8cfd8d2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844342"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797396"
 ---
 ```csharp
 
@@ -22,7 +22,7 @@ var identityApiConnector = new IdentityApiConnector
     }
 };
 
-await graphClient.Identity.ApiConnectors["{identityApiConnectorId}"]
+await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"]
     .Request()
     .UpdateAsync(identityApiConnector);
 

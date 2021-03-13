@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 38f6164afc41be8f1724ca48fd2f8c6491edfb0f
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: f227afc17706549bd4d6386b05b32bf075f082b7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620072"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785040"
 ---
 ```csharp
 
@@ -36,7 +36,7 @@ var message = new Message
 
 var comment = "Samantha, Randi, would you name the group if the project is approved, please?";
 
-await graphClient.Me.Messages["AAMkADA1MTAAAAqldOAAA="]
+await graphClient.Me.Messages["{message-id}"]
     .CreateReply(message,comment)
     .Request()
     .PostAsync();

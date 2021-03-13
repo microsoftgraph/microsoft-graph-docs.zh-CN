@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: af591270fcb5528cfa25cf5004ad092fbcc38d26
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 99493eeb64aa33713cb20b270bc1c95e73d500dc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844485"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793010"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/apiConnectors/{id}')
+let identityApiConnector = await client.api('/identity/apiConnectors/{id}')
     .version('beta')
     .get();
 

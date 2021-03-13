@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1f05364a1787db9eac87d3cc5e23eba63d149c0b
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 97d0d2bcd6472e684b249aeeb19d8e772318b7e7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636672"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793323"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const sectionGroup = {
-  displayName: "Section group name"
+  displayName: 'Section group name'
 };
 
-let res = await client.api('/me/onenote/notebooks/{id}/sectionGroups')
+await client.api('/me/onenote/notebooks/{id}/sectionGroups')
     .version('beta')
     .post(sectionGroup);
 

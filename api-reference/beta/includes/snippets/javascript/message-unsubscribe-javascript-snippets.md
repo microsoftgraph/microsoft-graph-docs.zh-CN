@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fcfc6b6f0d660256d3764849facd6330d1e498ab
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: affd2ad1c388199a63c6d64afc5c30114ce500d4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48610861"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790869"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/messages/{id}/unsubscribe')
+await client.api('/me/messages/{id}/unsubscribe')
     .version('beta')
     .post();
 

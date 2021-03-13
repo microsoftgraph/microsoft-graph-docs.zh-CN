@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b70bd7dbba5936408c5ae984ab1ab94559c8ebb3
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 1ab2b39e47a53b810e353aada893cbbcebcdc786
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636674"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788393"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const mailFolder = {
-  displayName: "displayName-value",
+  displayName: 'displayName-value',
 };
 
-let res = await client.api('/me/mailFolders/AAMkAGVmMDEzM')
+await client.api('/me/mailFolders/AAMkAGVmMDEzM')
     .version('beta')
     .update(mailFolder);
 

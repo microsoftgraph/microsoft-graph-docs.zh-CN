@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 15ac9e727d44ca84020b8ba5dbb4d383a7428efe
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: f2a7aba5146a729ef989fb779e813bd1ec2ef84a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329974"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784309"
 ---
 ```javascript
 
@@ -16,19 +16,19 @@ const options = {
 const client = Client.init(options);
 
 const b2cIdentityUserFlow = {
-    id: "Customer",
-    userFlowType: "signUpOrSignIn",
+    id: 'Customer',
+    userFlowType: 'signUpOrSignIn',
     userFlowTypeVersion: 3,
     identityProviders: [
         {
-            id: "Facebook-OAuth",
-            type: "Facebook",
-            Name: "Facebook"
+            id: 'Facebook-OAuth',
+            type: 'Facebook',
+            Name: 'Facebook'
         }
     ]
 };
 
-let res = await client.api('/identity/b2cUserFlows')
+await client.api('/identity/b2cUserFlows')
     .version('beta')
     .post(b2cIdentityUserFlow);
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 3c2de100bddeee8cd1a4f5194150ef089eb2a2c2
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 786336e74df3239b69cd0003017c7cf39556f74c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636485"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784461"
 ---
 ```javascript
 
@@ -16,14 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const inferenceClassificationOverride = {
-  classifyAs: "focused",
+  classifyAs: 'focused',
   senderEmailAddress: {
-    name: "Samantha Booth",
-    address: "samanthab@adatum.onmicrosoft.com"
+    name: 'Samantha Booth',
+    address: 'samanthab@adatum.onmicrosoft.com'
   }
 };
 
-let res = await client.api('/me/inferenceClassification/overrides')
+await client.api('/me/inferenceClassification/overrides')
     .version('beta')
     .post(inferenceClassificationOverride);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1c29bef9d9e8f7012d46432ccfedec9d163e5af0
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: feecf0eedeec6c78e45f0895cead2512b8806f66
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791136"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797551"
 ---
 ```objc
 
@@ -46,6 +46,15 @@ MSGraphRegionalFormatOverrides *regionalFormatOverrides = [[MSGraphRegionalForma
 [regionalFormatOverrides setLongTimeFormat:@"h:mm:ss tt"];
 [regionalFormatOverrides setTimeZone:@"Pacific Standard Time"];
 [regionalAndLanguageSettings setRegionalFormatOverrides:regionalFormatOverrides];
+MSGraphTranslationPreferences *translationPreferences = [[MSGraphTranslationPreferences alloc] init];
+[translationPreferences setTranslationBehavior: [MSGraphTranslationBehavior Yes]];
+NSMutableArray *languageOverridesList = [[NSMutableArray alloc] init];
+MSGraphTranslationLanguageOverride *languageOverrides = [[MSGraphTranslationLanguageOverride alloc] init];
+[languageOverrides setLanguageTag:@"fr"];
+[languageOverrides setTranslationBehavior: [MSGraphTranslationBehavior Yes]];
+[languageOverridesList addObject: languageOverrides];
+[translationPreferences setLanguageOverrides:languageOverridesList];
+[regionalAndLanguageSettings setTranslationPreferences:translationPreferences];
 
 NSError *error;
 NSData *regionalAndLanguageSettingsData = [regionalAndLanguageSettings getSerializedDataWithError:&error];

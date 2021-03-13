@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5dac98282935e36d70514219b5bb2ac79e808bd2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: a564f506a4527f599e98840d389b85682df89bd7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475068"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803540"
 ---
 ```javascript
 
@@ -16,13 +16,13 @@ const options = {
 const client = Client.init(options);
 
 const temporaryAccessPassAuthenticationMethod = {
-  @odata.type: "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-  startDateTime: "2021-01-26T00:00:00.000Z",
+  '@odata.type': '#microsoft.graph.temporaryAccessPassAuthenticationMethod',
+  startDateTime: '2021-01-26T00:00:00.000Z',
   lifetimeInMinutes: 60,
   isUsableOnce: false
 };
 
-let res = await client.api('/users/kim@contoso.com/authentication/temporaryAccessPassMethods')
+await client.api('/users/kim@contoso.com/authentication/temporaryAccessPassMethods')
     .version('beta')
     .post(temporaryAccessPassAuthenticationMethod);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 434a67c82405d35b36cdd5ad9285c2b2efda905d
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 5ff708889bdd350f070066f8dfe05f2ac504ef1e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "36636675"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799682"
 ---
 ```javascript
 
@@ -16,20 +16,20 @@ const options = {
 const client = Client.init(options);
 
 const messageRule = {
-    displayName: "From partner",      
+    displayName: 'From partner',      
     sequence: 2,      
     isEnabled: true,          
     conditions: {
         senderContains: [
-          "adele"       
+          'adele'       
         ]
      },
      actions: {
         forwardTo: [
           {
              emailAddress: {
-                name: "Alex Wilbur",
-                address: "AlexW@contoso.onmicrosoft.com"
+                name: 'Alex Wilbur',
+                address: 'AlexW@contoso.onmicrosoft.com'
               }
            }
         ],
@@ -37,7 +37,7 @@ const messageRule = {
      }    
 };
 
-let res = await client.api('/me/mailFolders/inbox/messagerules')
+await client.api('/me/mailFolders/inbox/messagerules')
     .version('beta')
     .post(messageRule);
 

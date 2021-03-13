@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d952b1f0cbde3504b85df85b141a724fb012f48b
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: e37bc475cf2a74661619f28ab174d323b24d1544
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589709"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807095"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const accessPackageAssignmentPolicy = {
-  accessPackageId: "56ff43fd-6b05-48df-9634-956a777fce6d",
-  displayName: "direct",
-  description: "direct assignments by administrator",
+  accessPackageId: '56ff43fd-6b05-48df-9634-956a777fce6d',
+  displayName: 'direct',
+  description: 'direct assignments by administrator',
   accessReviewSettings: null,
   requestorSettings: {
-    scopeType: "NoSubjects",
+    scopeType: 'NoSubjects',
     acceptRequests: true,
     allowedRequestors: []
   },
@@ -29,12 +29,12 @@ const accessPackageAssignmentPolicy = {
     isApprovalRequired: false,
     isApprovalRequiredForExtension: false,
     isRequestorJustificationRequired: false,
-    approvalMode: "NoApproval",
+    approvalMode: 'NoApproval',
     approvalStages: []
   }
 };
 
-let res = await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies')
+await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies')
     .version('beta')
     .post(accessPackageAssignmentPolicy);
 

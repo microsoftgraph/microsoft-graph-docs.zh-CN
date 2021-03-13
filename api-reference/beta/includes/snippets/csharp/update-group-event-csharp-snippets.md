@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: eeb6496b710bbc28c6bb551d0690d08022fac6c0
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d13e80cef313e7ecb388fbfb1dd2f81bf2828d36
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845918"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785609"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var @event = new Event
     IsReminderOn = true
 };
 
-await graphClient.Groups["{id}"].Events["{id}"]
+await graphClient.Groups["{group-id}"].Events["{event-id}"]
     .Request()
     .UpdateAsync(@event);
 

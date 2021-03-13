@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 47878de99bfd6c4577bd16aa49976be075a5bf00
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: f7293b7c190bdb971cd45419c9cf359e910ecebd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48605732"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803340"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var mailFolder = new MailFolder
     DisplayName = "displayName-value"
 };
 
-await graphClient.Me.MailFolders["AAMkAGVmMDEzM"]
+await graphClient.Me.MailFolders["{mailFolder-id}"]
     .Request()
     .UpdateAsync(mailFolder);
 

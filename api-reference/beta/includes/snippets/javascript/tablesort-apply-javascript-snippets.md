@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d0b275e07926ca26e9d9960f3fc4c5011ea7e1ac
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: e1cd60461c14ce830e86c3807d3621400c29fce0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48606570"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787917"
 ---
 ```javascript
 
@@ -19,21 +19,21 @@ const apply = {
   fields: [
     {
       key: 99,
-      sortOn: "sortOn-value",
+      sortOn: 'sortOn-value',
       ascending: true,
-      color: "color-value",
-      dataOption: "dataOption-value",
+      color: 'color-value',
+      dataOption: 'dataOption-value',
       icon: {
-        set: "set-value",
+        set: 'set-value',
         index: 99
       }
     }
   ],
   matchCase: true,
-  method: "method-value"
+  method: 'method-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/sort/apply')
+await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/sort/apply')
     .version('beta')
     .post(apply);
 

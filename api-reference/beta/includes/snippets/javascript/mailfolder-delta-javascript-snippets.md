@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 76646b569e9c45480d0ac67ff5e62f5c2c9c48f3
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 21c02989a6b0b73fb664a924a2c845b11741b7bd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48613584"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797929"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/delta')
+let delta = await client.api('/me/mailFolders/delta')
     .version('beta')
     .get();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fb539d81ce48d7cf6ecafaecd50a5e927dc83fd6
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 5ae98cbec0c7f8930b1c4fdc0744dfdbef036f5a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684667"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788247"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
     }
 };
 
-await graphClient.ServicePrincipals["{id}"].HomeRealmDiscoveryPolicies
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].HomeRealmDiscoveryPolicies
     .Request()
     .AddAsync(homeRealmDiscoveryPolicy);
 

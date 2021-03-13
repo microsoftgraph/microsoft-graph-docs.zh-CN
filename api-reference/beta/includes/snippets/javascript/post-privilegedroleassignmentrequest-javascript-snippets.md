@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 429e1b6eb3e890ced282001128e6345f8b01b7ef
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: f15b0013d5c7faf0b44441714bdb482e53af8dae
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866143"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788223"
 ---
 ```javascript
 
@@ -16,19 +16,19 @@ const options = {
 const client = Client.init(options);
 
 const privilegedRoleAssignmentRequest = {
-    duration: "2",
-    reason: "Activate the role for business purpose",
-    ticketNumber: "234",
-    ticketSystem: "system",
+    duration: '2',
+    reason: 'Activate the role for business purpose',
+    ticketNumber: '234',
+    ticketSystem: 'system',
     schedule: {
-        startDateTime: "2018-02-08T02:35:17.903Z"
+        startDateTime: '2018-02-08T02:35:17.903Z'
     },
-    type: "UserAdd",
-    assignmentState: "Active",
-    roleId: "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    type: 'UserAdd',
+    assignmentState: 'Active',
+    roleId: '88d8e3e3-8f55-4a1e-953a-9b9898b8876b'
 };
 
-let res = await client.api('/privilegedRoleAssignmentRequests')
+await client.api('/privilegedRoleAssignmentRequests')
     .version('beta')
     .post(privilegedRoleAssignmentRequest);
 

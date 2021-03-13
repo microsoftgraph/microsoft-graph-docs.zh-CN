@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 42c56e9db9c72310d8de905847232bd6658d80d6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7988413cc841327834a1acb8c951cbe0d0d168c2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966827"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786574"
 ---
 ```java
 
@@ -41,6 +41,15 @@ regionalFormatOverrides.shortTimeFormat = "HH:mm";
 regionalFormatOverrides.longTimeFormat = "h:mm:ss tt";
 regionalFormatOverrides.timeZone = "Pacific Standard Time";
 regionalAndLanguageSettings.regionalFormatOverrides = regionalFormatOverrides;
+TranslationPreferences translationPreferences = new TranslationPreferences();
+translationPreferences.translationBehavior = TranslationBehavior.YES;
+LinkedList<TranslationLanguageOverride> languageOverridesList = new LinkedList<TranslationLanguageOverride>();
+TranslationLanguageOverride languageOverrides = new TranslationLanguageOverride();
+languageOverrides.languageTag = "fr";
+languageOverrides.translationBehavior = TranslationBehavior.YES;
+languageOverridesList.add(languageOverrides);
+translationPreferences.languageOverrides = languageOverridesList;
+regionalAndLanguageSettings.translationPreferences = translationPreferences;
 
 graphClient.me().settings().regionalAndLanguageSettings()
     .buildRequest()
