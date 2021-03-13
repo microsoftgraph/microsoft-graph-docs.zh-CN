@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 83d53fbfb7c386a3d6911b74107df3c0f6dfab7a
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a5b1c27c242cd616214996aa985aafe1b0e98906
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636630"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775463"
 ---
 ```javascript
 
@@ -18,36 +18,36 @@ const client = Client.init(options);
 const synchronizationSchema = {
     directories: [
         {
-            name: "Azure Active Directory",
+            name: 'Azure Active Directory',
             objects: [
                 {
-                    name: "User",
+                    name: 'User',
                     attributes: [
                         {
-                            name: "userPrincipalName",
-                            type: "string"
+                            name: 'userPrincipalName',
+                            type: 'string'
                         }
                     ]
                 },
             ]
         },
         {
-            name: "Salesforce",
+            name: 'Salesforce',
         }
     ],
-    synchronizationRules:[
+    synchronizationRules: [
         {
-            name: "USER_TO_USER",
-            sourceDirectoryName: "Azure Active Directory",
-            targetDirectoryName: "Salesforce",
+            name: 'USER_TO_USER',
+            sourceDirectoryName: 'Azure Active Directory',
+            targetDirectoryName: 'Salesforce',
             objectMappings: [
                 {
-                    sourceObjectName: "User",
-                    targetObjectName: "User",
+                    sourceObjectName: 'User',
+                    targetObjectName: 'User',
                     attributeMappings: [
                         {
                             source: {},
-                            targetAttributeName: "userName"
+                            targetAttributeName: 'userName'
                         },
                     ]
                 },
@@ -56,7 +56,7 @@ const synchronizationSchema = {
     ]
 };
 
-let res = await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema')
+await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema')
     .version('beta')
     .put(synchronizationSchema);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ce6582ab4637b1ac18f86919e63a05fca800db59
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: 3ad0f09310c4ee587218356ea14c356e3fd9d580
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335429"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775386"
 ---
 ```objc
 
@@ -32,13 +32,13 @@ MSGraphChannel *channels = [[MSGraphChannel alloc] init];
 [channels setDescription:@"This is a sample training channel, that is favorited by default, and contains an example of pinned website and YouTube tabs."];
 NSMutableArray *tabsList = [[NSMutableArray alloc] init];
 MSGraphTeamsTab *tabs = [[MSGraphTeamsTab alloc] init];
-[tabs setName:@"A Pinned Website"];
+[tabs setDisplayName:@"A Pinned Website"];
 MSGraphTeamsTabConfiguration *configuration = [[MSGraphTeamsTabConfiguration alloc] init];
 [configuration setContentUrl:@"https://docs.microsoft.com/microsoftteams/microsoft-teams"];
 [tabs setConfiguration:configuration];
 [tabsList addObject: tabs];
 MSGraphTeamsTab *tabs = [[MSGraphTeamsTab alloc] init];
-[tabs setName:@"A Pinned YouTube Video"];
+[tabs setDisplayName:@"A Pinned YouTube Video"];
 MSGraphTeamsTabConfiguration *configuration = [[MSGraphTeamsTabConfiguration alloc] init];
 [configuration setContentUrl:@"https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ"];
 [configuration setWebsiteUrl:@"https://www.youtube.com/watch?v=X8krAMdGvCQ"];

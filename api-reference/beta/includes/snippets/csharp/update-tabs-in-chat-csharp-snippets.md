@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b82c388ffd1115e26c59f52f16390e8a7b24d63c
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 37e1e5df790fea4237c7ef08fd090e8c8787dc7d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689807"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775701"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var teamsTab = new TeamsTab
     DisplayName = "My Contoso Tab - updated again"
 };
 
-await graphClient.Chats["19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"].Tabs["794f0e4e-4d10-4bb5-9079-3a465a629eff"]
+await graphClient.Chats["{chat-id}"].Tabs["{teamsTab-id}"]
     .Request()
     .UpdateAsync(teamsTab);
 
