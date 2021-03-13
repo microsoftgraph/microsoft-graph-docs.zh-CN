@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9f40c33d3b2ea36c3939fd0e6d0f6e88a9cc6053
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 237ece246fed7e7723e66cb8e5a4b3139cdc8c2d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912839"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794610"
 ---
 ```javascript
 
@@ -17,13 +17,13 @@ const client = Client.init(options);
 
 const recordOperation = {
   bargeInAllowed: true,
-  clientContext: "d45324c1-fcb5-430a-902c-f20af696537c",
+  clientContext: 'd45324c1-fcb5-430a-902c-f20af696537c',
   prompts: [
     {
-      @odata.type: "#microsoft.graph.mediaPrompt",
+      '@odata.type': '#microsoft.graph.mediaPrompt',
       mediaInfo: {
-        uri: "https://cdn.contoso.com/beep.wav",
-        resourceId: "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+        uri: 'https://cdn.contoso.com/beep.wav',
+        resourceId: '1D6DE2D4-CD51-4309-8DAA-70768651088E'
       }
     }
   ],
@@ -31,10 +31,10 @@ const recordOperation = {
   initialSilenceTimeoutInSeconds: 5,
   maxSilenceTimeoutInSeconds: 2,
   playBeep: true,
-  stopTones: [ "#", "1", "*" ]
+  stopTones: [ '#', '1', '*' ]
 };
 
-let res = await client.api('/communications/calls/{id}/recordResponse')
+await client.api('/communications/calls/{id}/recordResponse')
     .version('beta')
     .post(recordOperation);
 

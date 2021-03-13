@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 64fd80e19e377e51123ac066f4369960e4246cc6
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: e1e683a5c3c9d3c83b1e498c418165d56f8469bf
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48606375"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795055"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var workbookTableRow = new WorkbookTableRow
     Values = "values-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Rows["{index}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows["{workbookTableRow-id}"]
     .Request()
     .UpdateAsync(workbookTableRow);
 

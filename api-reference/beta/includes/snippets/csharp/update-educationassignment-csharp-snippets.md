@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 21e0d8cb6934fc22059f3d0011636afaae2b62c3
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ba7a6123addb0f072395a7b4b17e66f6866e5dac
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845920"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806232"
 ---
 ```csharp
 
@@ -22,7 +22,7 @@ var educationAssignment = new EducationAssignment
     DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z")
 };
 
-await graphClient.Education.Classes["11021"].Assignments["19002"]
+await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"]
     .Request()
     .UpdateAsync(educationAssignment);
 

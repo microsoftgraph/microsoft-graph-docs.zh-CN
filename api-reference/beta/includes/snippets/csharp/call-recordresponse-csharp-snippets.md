@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d54d07bff5fdd5270f2c02193cb4ed2d152c1ddd
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 89859731a72188c542553b20c89ae423cb89d792
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681579"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793161"
 ---
 ```csharp
 
@@ -42,7 +42,7 @@ var stopTones = new List<String>()
     "*"
 };
 
-await graphClient.Communications.Calls["{id}"]
+await graphClient.Communications.Calls["{call-id}"]
     .RecordResponse(prompts,bargeInAllowed,initialSilenceTimeoutInSeconds,maxSilenceTimeoutInSeconds,maxRecordDurationInSeconds,playBeep,null,stopTones,clientContext)
     .Request()
     .PostAsync();

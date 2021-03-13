@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1a03227d1c8b2bb6eced20c7808362cb124fa9c6
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 94673c807e8e94d8e57b5e3776ee085446071968
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49755958"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804178"
 ---
 ```javascript
 
@@ -17,20 +17,20 @@ const client = Client.init(options);
 
 const transfer = {
   transferTarget: {
-    endpointType: "default",
+    endpointType: 'default',
     identity: {
         phone: {
-          @odata.type: "#microsoft.graph.identity",
-          id: "+12345678901"
+          '@odata.type': '#microsoft.graph.identity',
+          id: '+12345678901'
         }
     },
-    languageId: "languageId-value",
-    region: "region-value"
+    languageId: 'languageId-value',
+    region: 'region-value'
   },
-  clientContext: "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  clientContext: '9e90d1c1-f61e-43e7-9f75-d420159aae08'
 };
 
-let res = await client.api('/communications/calls/{id}/transfer')
+await client.api('/communications/calls/{id}/transfer')
     .version('beta')
     .post(transfer);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 880c40a783a5da6bd0b0edacfc9c20a8f7121bbe
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: e2e43e1335384a4bc083ed396c41841adbc3cf6f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681599"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786316"
 ---
 ```csharp
 
@@ -27,7 +27,7 @@ var prompts = new List<Prompt>()
 
 var loop = false;
 
-await graphClient.Communications.Calls["57dab8b1-894c-409a-b240-bd8beae78896"]
+await graphClient.Communications.Calls["{call-id}"]
     .PlayPrompt(prompts,loop,clientContext)
     .Request()
     .PostAsync();
