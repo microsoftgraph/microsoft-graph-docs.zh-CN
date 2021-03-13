@@ -1,16 +1,16 @@
 ---
 title: 更新标记
-description: 更新标记对象的属性。
+description: 更新 tag 对象的属性。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1cfc1fc24ea6e850daac08f9c741b2943b1e34d4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ee8d46d92b7f5e29a4612d3399028dacc36ad6fc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445983"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50776394"
 ---
 # <a name="update-tag"></a>更新标记
 
@@ -18,9 +18,9 @@ ms.locfileid: "50445983"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [标记对象的属性](../resources/ediscovery-tag.md) 。
+更新 [tag](../resources/ediscovery-tag.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,8 +54,8 @@ PATCH /compliance/ediscovery/cases/{caseId}/tags/{tagId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|说明|String|标记的说明。|
-|displayName|String|标记的显示名称。|
+|说明|字符串|标记的说明。|
+|displayName|字符串|标记的显示名称。|
 
 ## <a name="response"></a>响应
 
@@ -65,6 +65,8 @@ PATCH /compliance/ediscovery/cases/{caseId}/tags/{tagId}
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tag"
@@ -80,6 +82,24 @@ Content-length: 210
   "description":"This is an updated description."
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-tag-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tag-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-tag-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

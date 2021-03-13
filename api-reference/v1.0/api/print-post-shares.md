@@ -5,24 +5,24 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: f22101ff6a621a48285f8064595916e491eb996d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: f477ce6c4a45b86677c38d2bc5d438474da46ad5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517006"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777178"
 ---
 # <a name="create-printershare"></a>创建 printerShare
 命名空间：microsoft.graph
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-为指定的 **打印机创建新的 printerShare。** [](../resources/printer.md)
+新建 **printerShare** for the specified [printer](../resources/printer.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -51,19 +51,21 @@ POST /print/shares
 
 下表显示创建 [printerShare](../resources/printershare.md)时提供的属性。
 
-|属性|类型|Description|是否必需？|
+|属性|类型|说明|是否必需？|
 |:---|:---|:---|:---|
 |打印机|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 语法，如以下示例所示。|是|
-|displayName|String|打印客户端应显示的打印机共享的名称。 允许的最大长度为 50 个字符。|是|
-|allowAllUsers|Boolean|If `true` ， all users and groups will be granted access to this printer share. 这将取代 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|否|
+|displayName|字符串|打印客户端应显示的打印机共享的名称。 允许的最大长度为 50 个字符。|是|
+|allowAllUsers|Boolean|如果 `true` 为 ，将授予所有用户和组对此打印机共享的访问权限。 这将取代 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|否|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `201 Created` 代码和 [printerShare](../resources/printershare.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [printerShare](../resources/printershare.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_printershare_from_"
@@ -80,6 +82,24 @@ Content-length: 509
   "printer@odata.bind": "https://graph.microsoft.com/v1.0/print/printers/{printerId}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printershare-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printershare-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printershare-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

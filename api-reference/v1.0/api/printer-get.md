@@ -5,24 +5,24 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7dd7cf1c261565407962f5b7034a469dd7aff4e8
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 547cde8d31870fcc2b0d73c1021f5628ce74c19b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517184"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50776919"
 ---
 # <a name="get-printer"></a>获取打印机
 命名空间：microsoft.graph
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-检索打印机对象 [的属性](../resources/printer.md) 和关系。
+检索打印机对象 [的属性和](../resources/printer.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -42,7 +42,7 @@ GET /print/shares/{id}/printer
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数，包括 `$select` 和， `$expand` 以帮助自定义响应。 例如：
+此方法支持一些 OData 查询参数（包括 和 ） `$select` `$expand` 来帮助自定义响应。 例如：
 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
@@ -58,14 +58,16 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码[](../resources/printer.md)和打印机对象。
-默认情况下，响应将不包含[printerCapabilities。](../resources/printerCapabilities.md) 若要获取 **printerCapabilities，** 请使用 `$select` 查询参数。 
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [printer](../resources/printer.md) 对象。
+默认情况下，该响应将不包含 [printerCapabilities](../resources/printerCapabilities.md)。 若要获取 **printerCapabilities，** 请使用 `$select` 查询参数。 
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-get-a-printer"></a>示例 1：获取打印机
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printer"
@@ -74,6 +76,24 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ``` http
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -158,6 +178,8 @@ Content-Type: application/json
 ### <a name="example-2-get-a-printer-and-its-capabilities"></a>示例 2：获取打印机及其功能
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printer_capabilities"
@@ -166,6 +188,24 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displayName,capabilities
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-capabilities-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printer-capabilities-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printer-capabilities-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printer-capabilities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

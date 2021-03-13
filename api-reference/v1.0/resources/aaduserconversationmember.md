@@ -5,12 +5,12 @@ localization_priority: Priority
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cf678e090f4af26aca1222ba464771111b0b6a60
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: aeb5dd5e21019b06f8757b37505d6e5e9f1a4354
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754297"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777389"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>aadUserConversationMember 资源类型
 
@@ -33,16 +33,22 @@ ms.locfileid: "49754297"
 |[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
 |[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
 |[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
+|[列出聊天成员](../api/chat-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中的所有成员列表。|
+|[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天添加成员。| 
+|[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的成员。|
+|[删除聊天成员](../api/chat-delete-members.md) | 无 | 从聊天中删除成员。| 
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 用户的唯一 ID。|
+|id|字符串| 只读。 用户的唯一 ID。|
 |displayName| string | 用户的显示名称。 |
 |角色| string 集合 | 该用户的角色。 |
 |userId| string | 用户的 GUID。 |
 |email| string  | 用户的电子邮件地址。 |
+|tenantId| string  | Azure AD 用户从属的 TenantId。 |
+|visibleHistoryStartDateTime| DateTimeOffset  | 表示对话历史久远程度的时间戳与对话成员共享。 此属性只对聊天成员可设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -50,17 +56,22 @@ ms.locfileid: "49754297"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.aadUserConversationMember"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.aadUserConversationMember",
+  "baseType": "microsoft.graph.conversationMember",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "string (identifier)",
   "displayName" : "string",
+  "visibleHistoryStartDateTime": "string (timestamp)",
   "roles" : ["string"],
   "userId" : "string",
-  "email" : "string"
+  "email" : "string",
+  "tenantId": "string"
 }
 ```
 

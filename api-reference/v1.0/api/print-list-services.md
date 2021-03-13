@@ -1,26 +1,26 @@
 ---
 title: 列出 printServices
-description: 检索 printService 对象列表，这些对象代表可供租户使用的服务。
+description: 检索 printService 对象的列表，这些对象代表可供租户使用的服务。
 author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c5226eadd4edfd3e8d2d15534eed3fcb5ffc9619
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 72bc0f46df6eccd5462a776f0d38aa70175ab6f0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517008"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777213"
 ---
 # <a name="list-printservices"></a>列出 printServices
 命名空间：microsoft.graph
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-检索 **printService** 对象列表，这些对象代表可供租户使用的服务。
+检索 **printService 对象** 的列表，这些对象代表可供租户使用的服务。
 
-## <a name="permissions"></a>Permissions
-调用 **此** API 需要其中 [](/graph/permissions-reference#universal-print-permissions)一个委派的通用打印权限。
+## <a name="permissions"></a>权限
+调用 **此** API 需要委派 [的通用打印权限](/graph/permissions-reference#universal-print-permissions) 之一。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,11 +45,13 @@ GET /print/services
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [printService](../resources/printservice.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printService](../resources/printservice.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_printservice"
@@ -58,6 +60,24 @@ GET /print/services
 ``` http
 GET https://graph.microsoft.com/v1.0/print/services
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printservice-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printservice-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printservice-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-printservice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

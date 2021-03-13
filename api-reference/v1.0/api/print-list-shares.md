@@ -5,24 +5,24 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 52fa7ceebdfc425cff29c6f9a29a91a4cf796478
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 1841f80be8d5062419f4b12d98f25e062e91ed49
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517009"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777157"
 ---
 # <a name="list-shares"></a>列出共享项
 命名空间：microsoft.graph
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-检索 **printerShares 的列表**。
+检索 **printerShares 列表**。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。
+若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -46,7 +46,7 @@ GET /print/shares
 若要查看每个打印机共享功能的列表，请包含可选的 `$select=capabilities` 查询参数。
 
 ### <a name="exceptions"></a>Exceptions
-不支持某些运算符：、 `$count` `$orderby` 、 `$search` 。
+不支持某些运算符 `$count` `$orderby` ：、、。 `$search`
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -58,13 +58,15 @@ GET /print/shares
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [printerShare](../resources/printershare.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printerShare](../resources/printershare.md) 对象集合。
 
->**注意**：响应将不包含 **默认值****和功能** 属性。 可以通过获取 [printerShare](printershare-get.md) 请求获取这些属性。
+>**注意**：该响应将不包含 **defaults** **和 capabilities** 属性。 可以通过获取 [printerShare](printershare-get.md) 请求获取这些属性。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_printershare"
@@ -73,6 +75,24 @@ GET /print/shares
 ``` http
 GET https://graph.microsoft.com/v1.0/print/shares
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printershare-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printershare-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printershare-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-printershare-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

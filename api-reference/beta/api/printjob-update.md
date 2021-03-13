@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 801db44363d8ba620577594ae358167e55cce4cc
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 6405acd01be075c44c4271c4c3395a83889f9d0e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518141"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777683"
 ---
 # <a name="update-printjob"></a>更新 printJob
 
@@ -18,9 +18,9 @@ ms.locfileid: "50518141"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [打印作业](../resources/printjob.md)。 只能 **更新配置** 属性。
+更新 [打印作业](../resources/printjob.md)。 只能 **更新 configuration** 属性。
 
-只有在状态为 [printTask（](../resources/printTask.md) 由请求应用创建的触发器启动）与打印作业关联时，才能成功更新 `processing` 打印作业。 若要详细了解如何注册任务触发器，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+只有在状态为（由请求应用创建的触发器启动）的 [printTask](../resources/printTask.md) 与打印作业关联时，更新打印作业才能 `processing` 成功。 若要详细了解如何注册任务触发器，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,16 +44,18 @@ PATCH /print/printers/{id}/jobs/{id}
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供相关 [printJob 字段](../resources/printjob.md) 的值。 请求正文中不包含的现有属性将保留其以前的值。 只能更新"configuration"属性。
+在请求正文中，提供相关 [printJob 字段](../resources/printjob.md) 的值。 请求正文中未包含的现有属性将保留其以前的值。 只能更新"configuration"属性。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回具有更新 `200 OK` [的 printJob](../resources/printjob.md) 对象的响应代码。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [printJob](../resources/printjob.md) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-update"
@@ -95,6 +97,24 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-update-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printjob-update-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printjob-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 下面展示了示例响应。 

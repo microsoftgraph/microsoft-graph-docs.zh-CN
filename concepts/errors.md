@@ -2,12 +2,12 @@
 title: Microsoft Graph 错误响应和资源类型
 description: 本主题介绍了 Microsoft Graph 响应中可能返回的一些错误。
 localization_priority: Priority
-ms.openlocfilehash: 2378233090ee63fc41469bc419373a26cf92be0f
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: a893f7e06d89bf50cbcc4cc13a1e394b6da2d72a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289230"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777010"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph 错误响应和资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "48289230"
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | 错误的请求 (Bad Request)                     | 无法处理请求，因为格式有误或者不正确。                                                                       |
 | 401         | 未经授权 (Unauthorized)                    | 资源所需的身份验证信息缺少或无效。                                                   |
-| 403         | 禁止访问 (Forbidden)                       | 对所需资源的访问遭拒。用户权限可能不足。<br /><br /> **重要说明：** 如果向资源应用了条件访问策略，可能会返回 HTTP 403 禁止错误 (error=insufficent_claims)。 有关 Microsoft Graph 和条件访问的详细信息，请参阅 [Azure Active Directory 条件性访问开发人员指南](/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | 禁止访问 (Forbidden)                       | 对于请求的资源，访问被拒绝。用户可能没有足够的权限。<br /><br /> **重要说明：** 如果向资源应用了条件访问策略，可能会返回 HTTP 403 禁止错误 (error=insufficent_claims)。 有关 Microsoft Graph 和条件访问的详细信息，请参阅 [Azure Active Directory 条件性访问开发人员指南](/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | 未找到 (Not Found)                       | 所请求的资源不存在。                                                                                                  |
 | 405         | 方法不允许 (Method Not Allowed)              | 请求中的 HTTP 方法在资源上不允许。                                                                         |
 | 406         | 不接受 (Not Acceptable)                  | 该服务不支持“Accept”标头中请求的格式。                                                                |
@@ -90,7 +90,7 @@ ms.locfileid: "48289230"
 }
 ```
 
-| 属性名称  | 值                  | 说明\                                                                                               |
+| 属性名称  | 值                  | 说明                                                                                                |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
 | **code**       | string                 | 发生的错误的错误代码字符串                                                            |
 | **message**    | string                 | 关于发生的错误的开发人员就绪消息。该内容不应直接显示给用户。 |

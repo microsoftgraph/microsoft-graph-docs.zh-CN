@@ -1,43 +1,76 @@
 ---
 title: 聊天资源类型
-description: 聊天是一个或多个参与者之间的 Chatmessages 集合的集合。
+description: 聊天是一个或多个参与者之间的 chatMessages 集合。
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7f9cc43442e077dfe245fa8422b954859bf1c569
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: f9162e39e1326d89818f959e846ccde5f04350e9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49564068"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50776814"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
 命名空间：microsoft.graph
 
-聊天是一个或多个参与者之间的 [chatmessages 集合](chatmessage.md) 的集合。 参与者可以是用户或应用程序。
+聊天是一个或多个 [参与者之间的 chatMessages](chatmessage.md) 集合。 参与者可以是用户或应用。
+
+> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则列出的一些方法将可传递影响会议。
 
 ## <a name="methods"></a>方法
 
 |  方法       |  返回类型  | 说明|
 |:---------------|:--------|:----------|
-|[在用户和应用之间获取聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 在用户和应用之间获取一对一聊天 | 
+|[创建聊天](../api/chat-post.md) | [聊天](chat.md) | 创建新聊天。| 
+|[获取聊天](../api/chat-get.md) | [聊天](chat.md) | 读取聊天的属性和关系。| 
+|[更新聊天](../api/chat-patch.md) | [聊天](chat.md) | 更新聊天的属性。|
+|[列出聊天成员](../api/chat-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中所有用户的列表。| 
+|[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天中添加用户。| 
+|[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的单个用户。| 
+|[删除聊天成员](../api/chat-delete-members.md)|无|从聊天中删除用户。|
+|[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 获取用户与应用之间的一对一聊天 |
+|[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天网站中安装 (关联的会议) 。|
+|[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取安装在聊天会话和关联会议 (中的特定) 。|
+|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联会议 (中安装) 。|
+|[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和相关会议 (安装的应用的) 。|
+|[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (和) 会议记录中删除 (卸载) 。|
+|[列出聊天中的选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到聊天 (关联的会议选项卡) 。|
+|[在聊天中获取选项卡](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到聊天组和关联 (的特定选项卡) 。|
+|[向聊天添加选项卡](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 将 (固定) 选项卡添加到聊天 (关联的会议) 。|
+|[聊天中的"更新"选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天记录和相关会议 (选项卡) 。|
+|[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (和) 会议记录中删除 (取消固定选项卡) 。|
 
->**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 Id，也可以通过应用程序权限获取 [/chats/getAllMessages 的更改通知](../api/subscription-post-subscriptions.md) 。
+>**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 ID，以及从具有应用程序权限的 [/chats/getAllMessages](../api/subscription-post-subscriptions.md) 更改通知获取。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-| id| String| 聊天的唯一标识符。 只读。|
+| id| 字符串| 聊天的唯一标识符。 只读。|
+| topic| String|   (聊天) 主题或主题。 仅适用于群聊。|
+| createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
+| lastUpdatedDateTime| dateTimeOffset|  上次更改聊天的日期和时间或成员列表。 只读。|
+| chatType| [chatType](../resources/chat.md#chattype-values) | 指定聊天类型。 可能的值是： `group` 和 `oneOnOne` `meeting` 。|
 
+### <a name="chattype-values"></a>chatType 值 
+
+| 成员             | 值 | 说明               |
+| :----------------- | :---- | :------------------------ |
+|oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的;无法删除/添加成员。|
+|group               | 1     | 指示聊天是群聊。 可以针对 (聊天类型更新至少两) 名单大小。 稍后可以删除/添加成员。|
+|meeting             | 2     | 指示聊天与联机会议相关联。 此类聊天仅在创建联机会议时创建。|
+|unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-| messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有邮件的集合。 可为 Null。 |
+| installedApps | [teamsAppInstallation](teamsappinstallation.md) 集合 | 聊天中所有应用的集合。 可为 Null。 |
+| members | [conversationMember](conversationmember.md) 集合 | 聊天中所有成员的集合。 可为 Null。 |
+| messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有消息的集合。 可为 Null。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -52,6 +85,10 @@ ms.locfileid: "49564068"
 ```json
 {
   "id": "string (identifier)",
+  "topic": "string",
+  "createdDateTime": "dateTimeOffset",
+  "lastUpdatedDateTime": "dateTimeOffset",
+  "chatType": "String"
 }
 ```
 

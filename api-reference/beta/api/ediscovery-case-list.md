@@ -1,16 +1,16 @@
 ---
 title: 列出事例
-description: 检索电子数据展示事例的列表。
+description: 检索电子数据展示事例列表。
 localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 18cae9c7306c3e45207f381a7c208c77df0eb434
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f2165f0149bc3389820907341773f78d1840ef26
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446086"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50776569"
 ---
 # <a name="list-cases"></a>列出事例
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446086"
 
 检索 case [对象](../resources/ediscovery-case.md) 的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ GET /compliance/ediscovery/cases
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -74,19 +74,19 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoverycase-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-case-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-ediscoverycase-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-case-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-ediscoverycase-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-case-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-ediscoverycase-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-case-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

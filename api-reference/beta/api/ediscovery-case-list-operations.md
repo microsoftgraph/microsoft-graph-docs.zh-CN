@@ -1,18 +1,18 @@
 ---
-title: 列表操作
-description: 从 case 对象获取列表 caseOperations。
+title: 列出操作
+description: 从 case 对象获取 list caseOperations。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 6f6cd402a88f0ce10e963cab0e3c0d94549f0dbd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ee95efa24aa1f7a3c0254e3da2e22cc43e3568c4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446096"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50776681"
 ---
-# <a name="list-operations"></a>列表操作
+# <a name="list-operations"></a>列出操作
 
 命名空间：microsoft.graph.ediscovery
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446096"
 
 从 case[对象获取 caseOperations](../resources/ediscovery-caseoperation.md)[列表。](../resources/ediscovery-case.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,12 +56,14 @@ GET /compliance/ediscovery/cases/{caseId}/operations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_caseoperation"
@@ -71,6 +73,24 @@ GET /compliance/ediscovery/cases/{caseId}/operations
 ``` http
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583/operations
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-caseoperation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-caseoperation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-caseoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-caseoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

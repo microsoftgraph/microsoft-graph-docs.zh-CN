@@ -1,16 +1,16 @@
 ---
 title: 删除标记
-description: 删除标记对象。
+description: 删除 tag 对象。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1ec395a45ee3720797228952b1f9047822fed11c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8c21df5939cde9b707dd913dbfa383ba1e950d53
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445985"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50776457"
 ---
 # <a name="delete-tag"></a>删除标记
 
@@ -18,9 +18,9 @@ ms.locfileid: "50445985"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 [标记](../resources/ediscovery-tag.md) 对象。
+删除 [tag](../resources/ediscovery-tag.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -43,11 +43,11 @@ DELETE /compliance/ediscovery/cases/{caseId}/tags/{tagId}?forcedelete=true
 
 ## <a name="query-parameters"></a>查询参数
 
-在请求 URL 中，提供以下所需的查询参数。
+在请求 URL 中，提供以下必需的查询参数。
 
 | 参数     | 类型    | 说明                                                                              |
 |:--------------|:--------|:-----------------------------------------------------------------------------------------|
-| forcedelete   | 布尔 | 如果设置为 true，则删除标记和子项（如果为 false）并且标记具有子项，则删除将失败。 |
+| forcedelete   | Boolean | 如果设置为 true，则标记和子项将被删除（如果为 false）并且标记具有子标记，则删除将失败。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -67,6 +67,8 @@ DELETE /compliance/ediscovery/cases/{caseId}/tags/{tagId}?forcedelete=true
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_tag"
@@ -76,6 +78,24 @@ DELETE /compliance/ediscovery/cases/{caseId}/tags/{tagId}?forcedelete=true
 ``` http
 DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/9985bd266f2f459cbebc81522734b452?forcedelete=true
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-tag-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-tag-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-tag-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-tag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

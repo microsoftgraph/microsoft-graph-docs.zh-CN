@@ -1,27 +1,26 @@
 ---
 author: chackman
-ms.author: chackman
-description: 取消追随用户正在关注的项目。
-title: 取消追随驱动器项目
+description: 取消关注用户正在关注的项目。
+title: 取消关注驱动器项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6a186eeee8055a4249db66a588b81d0bebfa57e1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fcaa9f39163daa42e12fbea324f4ecbc93ae0977
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955665"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50776793"
 ---
-# <a name="unfollow-drive-item"></a>取消追随驱动器项目
+# <a name="unfollow-drive-item"></a>取消关注驱动器项
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消追随 [driveItem](../resources/driveitem.md)。
+取消关注 [driveItem](../resources/driveitem.md)。
 
->**注意：** 若要关注某个项目，请参阅 " [关注项](driveitem-follow.md)"。
+>**注意：** 若要关注某个项目，请参阅关注 [项目](driveitem-follow.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -55,7 +54,7 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
-本示例将 unfollows 标识为的项目 `{item-id}` 。
+本示例取消关注由 标识的项目 `{item-id}` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

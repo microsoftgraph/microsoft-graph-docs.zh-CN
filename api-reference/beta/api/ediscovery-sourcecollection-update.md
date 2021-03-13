@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 254d2422c344580e1a02dbbce0d76330d6df3ef8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1ef28e211e434b1806318fe4b4a52d354887bb23
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445995"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50776499"
 ---
 # <a name="update-sourcecollection"></a>更新 sourceCollection
 
@@ -18,9 +18,9 @@ ms.locfileid: "50445995"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [sourceCollection](../resources/ediscovery-sourcecollection.md) 对象的属性。
+更新 [sourceCollection 对象](../resources/ediscovery-sourcecollection.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,9 +54,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|contentQuery|String|KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅内容搜索和电子数据展示的关键字 [查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。  可以使用与值配对的字段来优化搜索;例如 `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016` ，。|
-|说明|String|**sourceCollection 的说明**。|
-|displayName|String|**sourceCollection** 的 显示名称 。|
+|contentQuery|字符串|KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅内容 [搜索和电子数据展示的关键字查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。  您可以通过使用与值配对的字段来优化搜索;例如， `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016` 。|
+|说明|字符串|**sourceCollection 的说明**。|
+|displayName|字符串|**sourceCollection** 的 显示名称 。|
 |tenantSources|microsoft.graph.ediscovery.tenantSources|指定此参数时，集合将跨越整个工作负荷的服务。 可取值为：`allMailboxes`、`allSites`。|
 
 ## <a name="response"></a>响应
@@ -67,6 +67,8 @@ PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionI
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_sourcecollection"
@@ -82,6 +84,24 @@ Content-length: 247
     "displayName": "Quarterly Financials search",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-sourcecollection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-sourcecollection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-sourcecollection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-sourcecollection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
