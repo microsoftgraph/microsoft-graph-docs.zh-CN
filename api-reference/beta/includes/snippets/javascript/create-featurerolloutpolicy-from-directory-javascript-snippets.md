@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: ee825afa353e0edbc274e0d6024694656503afd7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d7888446aa4b08c8f2c1252a072e0bb035908428
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636538"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804585"
 ---
 ```javascript
 
@@ -16,14 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const featureRolloutPolicy = {
-  displayName: "PassthroughAuthentication rollout policy",
-  description: "PassthroughAuthentication rollout policy",
-  feature: "passthroughAuthentication",
+  displayName: 'PassthroughAuthentication rollout policy',
+  description: 'PassthroughAuthentication rollout policy',
+  feature: 'passthroughAuthentication',
   isEnabled: true,
   isAppliedToOrganization: false
 };
 
-let res = await client.api('/directory/featureRolloutPolicies')
+await client.api('/directory/featureRolloutPolicies')
     .version('beta')
     .post(featureRolloutPolicy);
 

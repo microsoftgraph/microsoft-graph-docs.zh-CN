@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7224c66e4ded6041ea99885e084b0dd23bd8e566
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 68aa0860de0465c7f93975a4ff99b221efae083c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636661"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787416"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const outlookTaskFolder = {
-  name: "Volunteer"
+  name: 'Volunteer'
 };
 
-let res = await client.api('/me/outlook/taskfolders')
+await client.api('/me/outlook/taskfolders')
     .version('beta')
     .post(outlookTaskFolder);
 

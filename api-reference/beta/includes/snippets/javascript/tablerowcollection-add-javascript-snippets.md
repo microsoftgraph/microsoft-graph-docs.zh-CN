@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f73d58e3e4c2d0855224b4237ecdfddd317306fb
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 7e0709d1c9cdd322ba58fe0a4e4c6002b1964f9f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49945094"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792799"
 ---
 ```javascript
 
@@ -16,13 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const workbookTableRow = {
+  index: null,
   values: [
     [1, 2, 3],
     [4, 5, 6]
   ]
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/add')
+await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/add')
     .version('beta')
     .post(workbookTableRow);
 

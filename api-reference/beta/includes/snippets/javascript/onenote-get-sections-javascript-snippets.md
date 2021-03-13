@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 24c451257ba51eb7655991d063bfad758aa5d372
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 290e3b3e25e4ef39a3cf7faf1471a78cfb2b87a8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878799"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798269"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/onenote/sections')
+let sections = await client.api('/me/onenote/sections')
     .version('beta')
     .get();
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: c3e705f9bfec8f4f472aad238325fd341439d27d
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: db4f1f517251e0bb5be736e0d786a1fc70b622df
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402598"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801607"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var address = "Sheet1!A1:D5";
 
 var hasHeaders = true;
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables
     .Add(hasHeaders,address)
     .Request()
     .PostAsync();

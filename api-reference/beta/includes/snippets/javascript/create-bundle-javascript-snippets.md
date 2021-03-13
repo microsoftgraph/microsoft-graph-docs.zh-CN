@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 20a0eea5c6f4614f90256847e5a6f73e638402c6
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 44a5fd82924ef9f171c7eadc492b329cdd7b8944
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43127194"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786207"
 ---
 ```javascript
 
@@ -16,16 +16,16 @@ const options = {
 const client = Client.init(options);
 
 const driveItem = {
-  name: "Just some files",
-  "@microsoft.graph.conflictBehavior" : "rename",
+  name: 'Just some files',
+  '@microsoft.graph.conflictBehavior': 'rename',
   bundle: { },
   children: [
-    { id: "1234asdf" },
-    { id: "1234qwerty" }
+    { id: '1234asdf' },
+    { id: '1234qwerty' }
   ]
 };
 
-let res = await client.api('/drive/bundles')
+await client.api('/drive/bundles')
     .version('beta')
     .post(driveItem);
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a59707d81fe3fd08338365eaba83a9caeb59ee5e
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 16840b85f25924bfe77d907faaf75eb4f9547f91
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636534"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796349"
 ---
 ```javascript
 
@@ -18,13 +18,13 @@ const client = Client.init(options);
 const directorySetting = {
   values: [
     {
-      name: "name-value",
-      value: "value-value"
+      name: 'name-value',
+      value: 'value-value'
     }
   ]
 };
 
-let res = await client.api('/settings/{id}')
+await client.api('/settings/{id}')
     .version('beta')
     .update(directorySetting);
 

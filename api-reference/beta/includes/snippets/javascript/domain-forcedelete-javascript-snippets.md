@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cbffeceb7f1572ccc91517881096a3e39f7e4106
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 8df580e4ccae33a089091189eb0b8615c28eecdf
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48622296"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784646"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const forceDelete = {
   disableUserAccounts: true
 };
 
-let res = await client.api('/domains/contoso.com/forceDelete')
+await client.api('/domains/contoso.com/forceDelete')
     .version('beta')
     .post(forceDelete);
 
