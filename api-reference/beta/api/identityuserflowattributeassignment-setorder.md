@@ -1,18 +1,18 @@
 ---
-title: identityUserFlowAttributeAssignment： setOrder
+title: identityUserFlowAttributeAssignment：setOrder
 description: 设置在用户流中收集的 identityUserFlowAttributeAssignments 的顺序。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cc1487246f5a3370ce1b88f50eafcce7029baf4f
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 6470470e9c6933ba421acc9af5a38847f5bc0337
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752734"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759872"
 ---
-# <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment： setOrder
+# <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment：setOrder
 
 命名空间：microsoft.graph
 

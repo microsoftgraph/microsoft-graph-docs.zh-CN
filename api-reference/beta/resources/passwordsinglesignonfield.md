@@ -3,29 +3,29 @@ title: passwordSingleSignOnField 资源类型
 description: 用于捕获密码 SSO 凭据的字段
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d79f2347acabae0323e008a43adb7938d70d3768
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0db6198d61715603acee54e7351c9fd5f2fed88
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998192"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761547"
 ---
 # <a name="passwordsinglesignonfield-resource-type"></a>passwordSingleSignOnField 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含要捕获以填充基于密码的单一登录的使用凭据的字段。
+包含用于填充基于密码的单一登录的使用凭据的要捕获的字段。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|customizedLabel|String|用于自定义的标题/标签覆盖。|
-|defaultLabel|String|未提供 customizedLabel 时将使用的标签。 只读。|
-|fieldId|String|用于标识字段类型的 Id。 这是一个内部 id，可能的值为、、、 `param_1` `param_2` `param_userName` `param_password` 。|
-|type|String|   凭据的类型。 值可以是 `text` ， `password` 。|
+|customizedLabel|String|自定义的标题/标签替代。|
+|defaultLabel|String|如果未提供 customizedLabel，则使用的标签。 只读。|
+|fieldId|String|用于标识字段类型的 ID。 这是一个内部 ID，可能的值是 `param_1` `param_2` `param_userName` 、、、。 `param_password`|
+|type|String|   凭据的类型。 值可以是 `text` `password` 、。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

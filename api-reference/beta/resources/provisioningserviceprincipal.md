@@ -3,14 +3,14 @@ title: provisioningServicePrincipal 资源类型
 description: 表示用于设置的服务主体。
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: aaa4b23a90be458fd3b3159c97159bfa152ff1db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5af9dc46de889eea780ca45eb25463ffafcf1260
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026451"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760993"
 ---
 # <a name="provisioningserviceprincipal-resource-type"></a>provisioningServicePrincipal 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "48026451"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String|唯一标识用于设置的 **servicePrincipal** 。|
-|name|String| 客户为 **servicePrincipal**定义的名称。|
+|id|String|唯一标识 **用于预配的 servicePrincipal。**|
+|name|String| **servicePrincipal 的客户定义名称**。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

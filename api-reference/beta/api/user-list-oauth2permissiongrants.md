@@ -3,14 +3,14 @@ title: List oauth2PermissionGrants
 description: 检索 oAuth2PermissionGrant 对象的列表，表示委派的权限授予。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: ada015bb3ee59b0f52ebf63aaa8d4f5dd11f1459
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a1a4aa0a3a2d588c8bc9a744f59b789eb3796097
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975203"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760909"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -31,7 +31,7 @@ ms.locfileid: "48975203"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | .Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

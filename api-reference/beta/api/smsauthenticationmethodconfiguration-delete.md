@@ -3,21 +3,21 @@ title: 删除 smsAuthenticationMethodConfiguration
 description: 删除 smsAuthenticationMethodConfiguration 对象。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ec22cabd9ca43a6415509f114fa1592855f0b8a8
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b573914ead8df3f5439eb3eddc85315fbca79adc
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475620"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761266"
 ---
 # <a name="delete-smsauthenticationmethodconfiguration"></a>删除 smsAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将策略还原为默认[](../resources/smsauthenticationmethodconfiguration.md)配置，删除对短信身份验证方法策略所做的更改。
+将 [文本消息身份验证](../resources/smsauthenticationmethodconfiguration.md) 方法策略还原为默认配置，以删除对策略所做的更改。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

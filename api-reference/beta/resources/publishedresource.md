@@ -3,14 +3,14 @@ title: publishedResource 资源类型
 description: publishedResource 资源类型。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 1090e985fc9ffdec0c27f9793a361851d2fa5216
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: eb28f345aba008a0f2d5bb5ab4723c2ffbb8aca3
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155564"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760930"
 ---
 # <a name="publishedresource-resource-type"></a>publishedResource 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50155564"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示本地已发布资源。 租户管理员可以发布各种类型的本地资源 - 企业应用程序、域控制器、服务器等。租户管理员安装本地代理可以[](onpremisesagent.md)配置为访问/处理对特定已发布资源的请求。
+表示本地已发布资源。 租户管理员可以发布各种类型的本地资源-企业应用程序、域控制器、服务器等。租户管理员安装本地代理可以配置为访问[](onpremisesagent.md)/处理对特定已发布资源的请求。
 
 ## <a name="methods"></a>方法
 
@@ -45,7 +45,7 @@ ms.locfileid: "50155564"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) 集合| **publishedResource** 分配到的 **onPremisesAgentGroups** 列表。 只读。 可为 Null。|
+|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) 集合| **publishedResource** 分配到 **的 onPremisesAgentGroups** 的列表。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

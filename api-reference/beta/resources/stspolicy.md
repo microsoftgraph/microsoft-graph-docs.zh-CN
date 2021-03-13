@@ -1,16 +1,16 @@
 ---
 title: stsPolicy 资源类型
-description: 表示用于控制 Microsoft identity platform 行为的策略类型的抽象基类型。
+description: 表示控制 Microsoft 标识平台行为的策略类型的抽象基本类型。
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 078284cb4134b0b4fa2f86eb9a09f61ab6655351
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 362b0ec08cfc7b3fe96b67baf4e8ed4aa2b86495
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405279"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761556"
 ---
 # <a name="stspolicy-resource-type"></a>stsPolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48405279"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用于控制 [Microsoft identity platform](/azure/active-directory/develop/) 行为的策略类型的抽象基类型。
+表示控制 Microsoft 标识平台行为的策略类型的 [抽象基本](/azure/active-directory/develop/) 类型。
 
 继承自 [policyBase](policyBase.md)。
 
@@ -30,11 +30,11 @@ ms.locfileid: "48405279"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| 此策略的唯一标识符。 只读。 继承自 [policyBase](policyBase.md)。|
-|说明|字符串| 此策略的说明。 继承自 [policyBase](policyBase.md)。|
-|displayName|字符串| 此策略的显示名称。 继承自 [policyBase](policyBase.md)。|
-|定义|字符串集合| 一个字符串集合，其中包含定义策略的规则和设置的 JSON 字符串。 定义的语法因每个派生策略类型而异。 必需。|
-|isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
+|id|String| 此策略的唯一标识符。 只读。 继承自 [policyBase](policyBase.md)。|
+|说明|String| 此策略的说明。 继承自 [policyBase](policyBase.md)。|
+|displayName|String| 此策略的显示名称。 继承自 [policyBase](policyBase.md)。|
+|definition|字符串集合| 包含 JSON 字符串的字符串集合，用于定义策略的规则和设置。 定义的语法因派生的策略类型不同而不同。 必需。|
+|isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 false。|
 
 ## <a name="relationships"></a>关系
 

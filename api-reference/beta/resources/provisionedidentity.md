@@ -3,14 +3,14 @@ title: provisionedIdentity 资源类型
 description: 描述与设置对象摘要事件关联的标识。
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 03270c0b5e6ea373ad87355612ddfb85b428d61c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2de68bdce990a6a541a5c284672541669cfdebea
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993138"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761105"
 ---
 # <a name="provisionedidentity-resource-type"></a>provisionedIdentity 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "47993138"
 |详细信息|[detailsInfo](detailsinfo.md)|标识的详细信息。|
 |displayName|String|标识的显示名称。 |
 |id|String|唯一标识标识。|
-|identityType|String|已设置的标识类型，如 "user" 或 "group"。|
+|identityType|String|已预配的标识类型，例如"user"或"group"。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

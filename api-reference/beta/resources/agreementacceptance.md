@@ -1,16 +1,16 @@
 ---
 title: agreementAcceptance 资源类型
-description: 表示公司可自定义使用条款范围内的用户当前状态，由 Azure Active Directory (Azure AD) 。
+description: 表示 Azure Active Directory 支持 Azure AD) 受 Azure Active Directory 支持的公司可自定义使用条款范围内的 (状态。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 55e0be212c0f7a9e655acff03606eda851a0e5c6
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4e00ae32078bd004ad4063a0f73ebb94b6a77f9c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722480"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761098"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50722480"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示公司可自定义使用条款范围内的用户当前状态，由 Azure Active Directory (Azure AD) 。
+表示 Azure Active Directory 支持 Azure AD) 受 Azure Active Directory 支持的公司可自定义使用条款范围内的 (状态。
 
 <!--
 ## Methods
@@ -35,7 +35,7 @@ ms.locfileid: "50722480"
 |:-------------|:------------|:------------|
 |agreementFileId|String|用户接受的协议文件的 ID。|
 |agreementId|String|协议的 ID。|
-|deviceDisplayName|String|用于显示名称协议的设备组。|
+|deviceDisplayName|String|用于显示名称协议的设备的设备组。|
 |deviceId|String|用于接受协议的设备的唯一标识符。|
 |deviceOSType|String|用于接受协议的操作系统。|
 |deviceOSVersion|String|用于接受协议的设备的操作系统版本。    |

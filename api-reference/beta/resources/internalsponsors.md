@@ -1,16 +1,16 @@
 ---
 title: internalSponsors 复杂类型
-description: 标识将允许作为审批者的租户中另一个用户的关系。
+description: 标识与租户中将允许其成为审批者的另一个用户的关系。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 56ae53e1b55be0a56a4c021449b8c5f4eb1a7c05
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 84c53bbeacde51afc88f5c0b4b5c13bc4f68b430
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058381"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760895"
 ---
 # <a name="internalsponsors-complex-type"></a>internalSponsors 复杂类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48058381"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [访问包分配策略](accesspackageassignmentpolicy.md)的审批阶段中使用。 它是 [userSet](userset.md)的一个子类型，其中 `@odata.type` 值 `#microsoft.graph.internalSponsors` 表示请求用户的连接的组织内部发起人将成为审批者。 此审批者仅适用于来自属于已连接组织的用户的请求。  在使用 internalSponsors 创建访问包分配策略审批阶段时，还应包括另一个审批者（如单个用户或组成员），以防所连接的组织没有内部赞助者。
+在访问包分配策略的 [审批阶段使用](accesspackageassignmentpolicy.md)。 它是 [userSet](userset.md)的子类型，其中值指示请求用户的已连接组织内部发起 `@odata.type` `#microsoft.graph.internalSponsors` 人将是审批者。 此审批者仅适用于来自已连接组织一部分的用户的请求。  使用 internalSponsors 创建访问包分配策略审批阶段时，还应包括另一个审批者，例如单个用户或组的成员，以防连接的组织没有内部发起人。
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| isBackup | Boolean | 指示发起人是否为备份回退审批者。 |
+| isBackup | 布尔 | 指示发起人是否是备份回退审批者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

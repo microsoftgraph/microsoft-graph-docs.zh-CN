@@ -3,14 +3,14 @@ title: iPv6CidrRange 资源类型
 description: 表示使用 CIDR 表示法的 IPv6 范围。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 353c06222003893ccec787590d59f02b046d843d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a3d3419b786ec1b6186b1eef5403145fcef8ceb
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075691"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761168"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>iPv6CidrRange 资源类型
 

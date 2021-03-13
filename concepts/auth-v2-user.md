@@ -3,14 +3,14 @@ title: 代表用户获取访问
 description: 若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。
 author: jackson-woods
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: af6a2fcd847f77fc3b9f6155a70f39a50e9181f2
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 6a055349efadca015887cfd8ece097c087d42701
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288908"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761456"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
@@ -46,7 +46,7 @@ ms.locfileid: "48288908"
 
 以下示例显示了对 `/authorize` 终结点的请求示例。
 
-借助 Microsoft 标识平台终结点，通过 `scope` 参数请求权限。 在本例中，所请求的 Microsoft Graph 权限可用于 _User.Read_ 和 _Mail.Read_，从而让应用能够读取已登录用户的个人资料和邮件。 已请求_脱机\_访问_权限，这样应用就可获取刷新令牌，后者可用于在当前访问令牌过期时获取新的令牌。
+借助 Microsoft 标识平台终结点，通过 `scope` 参数请求权限。 在本例中，所请求的 Microsoft Graph 权限可用于 _User.Read_ 和 _Mail.Read_，从而让应用能够读取已登录用户的个人资料和邮件。 已请求 _脱机\_访问_ 权限，这样应用就可获取刷新令牌，后者可用于在当前访问令牌过期时获取新的令牌。
 
 ```
 // Line breaks for legibility only
@@ -70,7 +70,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | response_mode | 建议 | 指定用于将结果令牌发送回应用的方法。可以是 `query` 或 `form_post`。                                                                                                                                                                                                                                                                                                                                                                                  |
 | 状态         | 建议 | 请求中包含的值将在令牌响应中返回。它可以是你希望的任何内容的字符串。随机生成的唯一值通常用于[防止跨网站请求伪造攻击](https://tools.ietf.org/html/rfc6749#section-10.12)。此状态还用于在发生身份验证请求前，对应用中的用户状态信息进行编码（如它们所在的页面或视图上）。                                     |
 
-> **重要说明**：Microsoft Graph 公开两种类型的权限：应用程序性权限和委派权限。对于已登录用户运行的应用，在 `scope` 参数中请求委派权限。这些权限将已登录用户的特权委派给应用，允许其代表已登录的用户来调用 Microsoft Graph。有关可通过 Microsoft Graph 使用的权限的详细信息，请参阅[权限引用](./permissions-reference.md)。
+> **重要说明**：Microsoft Graph 公开两种类型的权限：应用程序性权限和委派权限。对于已登录用户运行的应用，在 `scope` 参数中请求委派权限。这些权限将已登录用户的特权委派给应用，允许其代表已登录的用户来调用 Microsoft Graph。有关可通过 Microsoft Graph 使用的权限的详细信息，请参阅 [权限引用](./permissions-reference.md)。
 
 ### <a name="consent-experience"></a>同意体验
 
@@ -271,9 +271,9 @@ Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终
 - 如果应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中通过显式方式将其配置为多租户。
 - 应用必需的所有权限都必须由开发人员进行配置。 Azure AD 终结点不支持动态（增量）同意。
 - Azure AD 终结点使用授权中的 `resource` 参数和令牌请求，指定其需要权限的资源（如 Microsoft Graph）。终结点不支持 `scope` 参数。
-- Azure AD 终结点不会公开管理员同意的特定终结点。反之，应用会使用授权请求中的 `prompt=admin_consent` 参数，为组织获取管理员同意。有关详细信息，请参阅[将应用程序与 Azure Active Directory 相集成](/azure/active-directory/develop/active-directory-integrating-applications)中的**在运行时引发 Azure AD 同意框架**。
+- Azure AD 终结点不会公开管理员同意的特定终结点。反之，应用会使用授权请求中的 `prompt=admin_consent` 参数，为组织获取管理员同意。有关详细信息，请参阅 [将应用程序与 Azure Active Directory 相集成](/azure/active-directory/develop/active-directory-integrating-applications)中的 **在运行时引发 Azure AD 同意框架**。
 
 有关代表用户从 Azure AD 终结点获取对 Microsoft Graph 访问的详细信息：
 
-- 要了解如何将 Microsoft 标识平台终结点与不同类型的应用结合使用，请参阅 [Microsoft 标识平台开发人员文档](/azure/active-directory/develop/active-directory-developers-guide)中的**开始使用**链接。 该文档包含众多链接，可通过它们查看 Microsoft 标识平台终结点支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
+- 要了解如何将 Microsoft 标识平台终结点与不同类型的应用结合使用，请参阅 [Microsoft 标识平台开发人员文档](/azure/active-directory/develop/active-directory-developers-guide)中的 **开始使用** 链接。 该文档包含众多链接，可通过它们查看 Microsoft 标识平台终结点支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
 - 要了解可与 Microsoft 标识平台终结点结合使用的 Microsoft 身份验证库 (MSAL) 和服务器中间件，请参阅 [Microsoft 身份验证库](/azure/active-directory/develop/msal-overview)。

@@ -3,14 +3,14 @@ title: 获取 accessPackageResourceEnvironment
 description: 读取 accessPackageResourceEnvironment 对象的属性和关系。
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0169ad18a24ff27392c5679f91dfaecd43d76567
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 4530eec57a15a871cd7c633dd645c7f9beae2070
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176285"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759424"
 ---
 # <a name="get-accesspackageresourceenvironment"></a>获取 accessPackageResourceEnvironment
 命名空间：microsoft.graph
@@ -51,7 +51,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) 对象。
 
 ## <a name="examples"></a>示例
 

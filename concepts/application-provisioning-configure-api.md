@@ -4,17 +4,17 @@ description: 了解如何通过使用 Microsoft Graph API 自动配置自动预�
 author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 689c95ee31ebfa0402e6c3867d81d479339e6c2b
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.prod: applications
+ms.openlocfilehash: 626593ada6c45de18bb24f9ec107fca7d077fb67
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777734"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761861"
 ---
 # <a name="configure-provisioning-using-microsoft-graph-apis"></a>使用 Microsoft Graph Api 配置预配
 
-Azure 门户是一种为单个应用一次配置预配的便捷方式。 但是，如果你要创建应用程序的几个（甚至数百个）实例，则使用 Microsoft Graph API 自动创建和配置应用会更容易。 本文概述了如何通过 API 自动执行预配配置。 此方法通常用于应用程序，如[Amazon Web Services。](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso)
+Azure 门户是一种一次配置单个应用的预配的便捷方式。 但是，如果你要创建多个甚至数百个应用程序实例，则使用 Microsoft Graph API 自动创建和配置应用会更容易。 本文概述了如何通过 API 自动执行预配配置。 此方法通常用于应用程序，如 [Amazon Web Services](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso)。
 
 **使用 Microsoft Graph API 自动执行预配配置的步骤概述**
 
@@ -22,10 +22,10 @@ Azure 门户是一种为单个应用一次配置预配的便捷方式。 但是�
 |步骤  |详细信息  |
 |---------|---------|
 |[步骤 1.创建库应用程序](#step-1-create-the-gallery-application)     |登录到 API 客户端 <br> 检索库应用程序模板 <br> 创建库应用程序         |
-|[步骤 2.创建基于模板的预配作业](#step-2-create-the-provisioning-job-based-on-the-template)     |检索设置连接器的模板 <br> 创建设置作业         |
+|[步骤 2.创建基于模板的预配作业](#step-2-create-the-provisioning-job-based-on-the-template)     |检索预配连接器的模板 <br> 创建设置作业         |
 |[步骤 3.授权访问](#step-3-authorize-access)     |测试与应用程序的连接 <br> 保存凭据         |
-|[步骤 4.开始预配作业](#step-4-start-the-provisioning-job)     |启动作业         |
-|[步骤 5.监视预配](#step-5-monitor-provisioning)     |检查设置作业的状态 <br> 检索预配日志         |
+|[步骤 4.开始设置作业](#step-4-start-the-provisioning-job)     |启动作业         |
+|[步骤 5.监视预配](#step-5-monitor-provisioning)     |检查预配作业的状态 <br> 检索设置日志         |
 
 ## <a name="step-1-create-the-gallery-application"></a>第 1 步：创建库应用程序
 
@@ -190,9 +190,9 @@ Content-type: application/json
 
 ## <a name="step-2-create-the-provisioning-job-based-on-the-template"></a>步骤 2：基于模板创建预配作业
 
-### <a name="retrieve-the-template-for-the-provisioning-connector"></a>检索设置连接器的模板
+### <a name="retrieve-the-template-for-the-provisioning-connector"></a>检索预配连接器的模板
 
-库中启用了预配的应用程序具有用于简化配置的模板。 使用下面的请求 [检索设置配置的模板](/graph/api/synchronization-synchronizationtemplate-list?tabs=http&view=graph-rest-beta)。 请注意，你需要提供 ID。 ID 引用前面的资源，本例中为 servicePrincipal 资源。 
+库中启用了预配的应用程序具有用于简化配置的模板。 使用以下请求 [检索预配配置的模板](/graph/api/synchronization-synchronizationtemplate-list?tabs=http&view=graph-rest-beta)。 请注意，你将需要提供 ID。 ID 引用上一个资源，本例中为 servicePrincipal 资源。 
 
 #### <a name="request"></a>请求
 
@@ -246,7 +246,7 @@ HTTP/1.1 200 OK
 ```
 
 ### <a name="create-the-provisioning-job"></a>创建设置作业
-若要启用预配，你首先需要 [创建一个作业](/graph/api/synchronization-synchronizationjob-post?tabs=http&view=graph-rest-beta)。 使用以下请求创建设置作业。 指定要用于作业的模板时，请使用上一步骤中的 templateId。
+若要启用预配，你首先需要 [创建一个作业](/graph/api/synchronization-synchronizationjob-post?tabs=http&view=graph-rest-beta)。 使用以下请求创建设置作业。 指定要用于作业的模板时，请使用上一步中的 templateId。
 
 #### <a name="request"></a>请求
 
@@ -316,7 +316,7 @@ Content-type: application/json
 
 ### <a name="test-the-connection-to-the-application"></a>测试与应用程序的连接
 
-测试第三方应用程序的连接。 以下示例适用于需要客户端密码和密码令牌的应用程序。 每个应用程序都有自己的要求。 应用程序通常使用基本地址来代理客户端密码。 若要确定你的应用所需的凭据，请转到应用程序的预配配置页，在开发人员模式下，单击 **测试连接**。 网络流量将显示用于凭据的参数。 有关凭据的完整列表，请参阅 [synchronizationJob：validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta)。 大多数应用程序（如 Azure Datab一s）都依赖于 BaseAddress 和 SecretToken。 BaseAddress 在 Azure 门户中作为租户 URL 引用。 
+测试第三方应用程序的连接。 下面的示例适用于需要客户端密码和密码令牌的应用程序。 每个应用程序都有自己的要求。 应用程序通常使用基地址来表示客户端密码。 若要确定你的应用所需的凭据，请转到应用程序的预配配置页，在开发人员模式下，单击测试 **连接**。 网络流量将显示用于凭据的参数。 有关凭据的完整列表，请参阅 [synchronizationJob： validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta)。 大多数应用程序（如 Azure Datab部署）都依赖于 BaseAddress 和 SecretToken。 BaseAddress 在 Azure 门户中作为租户 URL 引用。 
 
 #### <a name="request"></a>请求
 ```msgraph-interactive
@@ -340,7 +340,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="save-your-credentials"></a>保存凭据
 
-配置预配需要在 Azure AD 和应用程序之间建立信任。 授权访问第三方应用程序。 以下示例适用于需要客户端密码和密码令牌的应用程序。 每个应用程序都有自己的要求。 查看 [API 文档](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta) 以查看可用选项。 
+配置预配需要在 Azure AD 和应用程序之间建立信任。 授权访问第三方应用程序。 下面的示例适用于需要客户端密码和密码令牌的应用程序。 每个应用程序都有自己的要求。 查看 [API 文档](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta) 以查看可用选项。 
 
 #### <a name="request"></a>请求
 ```msgraph-interactive
@@ -365,7 +365,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## <a name="step-4-start-the-provisioning-job"></a>步骤 4：启动预配作业
-配置设置作业后，请使用以下命令 [启动作业](/graph/api/synchronization-synchronizationjob-start?tabs=http&view=graph-rest-beta)。 
+配置设置作业后，使用以下命令 [启动作业](/graph/api/synchronization-synchronizationjob-start?tabs=http&view=graph-rest-beta)。 
 
 
 #### <a name="request"></a>请求

@@ -4,21 +4,21 @@ description: 更新 temporaryAccessPassAuthenticationMethodConfiguration 对象�
 author: inbarckms
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0ddd4536c6a73885c16fb9762cedf47dd0a23528
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1d8d888f71fd59b8b2b00cd45c2c88151e940aea
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471853"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761763"
 ---
 # <a name="update-temporaryaccesspassauthenticationmethodconfiguration"></a>更新 temporaryAccessPassAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [临时AccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure AD 租户的临时访问传递身份验证方法策略。
+更新 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure AD 租户的临时访问传递身份验证方法策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/T
 
 对象的所有属性都可以更新。 有关属性的列表，请参阅 [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)。
 
->**注意：**`@odata.type`属性值必须为 `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` 1 的属性必须包含在正文中。
+>**注意：**`@odata.type`属性值为 的 `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` 属性必须包含在正文中。
 
 ## <a name="response"></a>响应
 

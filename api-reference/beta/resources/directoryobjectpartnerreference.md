@@ -1,16 +1,16 @@
 ---
 title: directoryObjectPartnerReference 资源类型
-description: 表示对合作伙伴租户中的 directory 对象的引用。 继承自 directoryObject。
+description: 表示对合作伙伴租户中的目录对象的引用。 继承自 directoryObject。
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1b9f042f970109a348b637636749778ed95e55e6
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 8b9d6a8826c38171dc7b32c281c371e841906f82
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402567"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761555"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "48402567"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示对合作伙伴组织中的目录对象的引用。 继承自 [directoryObject](directoryobject.md)。
+表示对合作伙伴组织中目录对象的引用。 继承自 [directoryObject](directoryobject.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|说明|字符串| 返回的对象的说明。 只读。 |
-|displayName|字符串| 返回的目录对象的名称，如 group 或 application。 只读。 |
+|说明|String| 返回的对象的说明。 只读。 |
+|displayName|String| 要返回的目录对象的名称，如组或应用程序。 只读。 |
 |externalPartnerTenantId|Guid| 合作伙伴租户的租户标识符。 只读。 |
-|id|字符串| 资源的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 只读。 |
-|objectType|String| 合作伙伴租户中被引用对象的类型。 只读。 |
+|id|String| 资源的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 只读。 |
+|objectType|String| 合作伙伴租户中引用的对象的类型。 只读。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

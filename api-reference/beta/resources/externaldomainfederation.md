@@ -1,16 +1,16 @@
 ---
 title: externalDomainFederation 资源类型
-description: ExternalDomainFederation 类型将具有配置的标识提供程序的非租户域标识为连接的组织的标识源。
+description: externalDomainFederation 类型将已配置的标识提供程序标识为已连接组织的标识源的非租户域。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d81255a3687bf3d6aafe9369f901b209f5827b77
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df88fef22c2acb86cadcfaed9a8f5be25da70f9d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026913"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760986"
 ---
 # <a name="externaldomainfederation-resource-type"></a>externalDomainFederation 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48026913"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [connectedOrganization](connectedOrganization.md)的标识源中使用。 `@odata.type`该值 `#microsoft.graph.externalDomainFederation` 指示此类型将具有已配置标识提供程序的域标识为连接的组织的标识源。
+在 [connectedOrganization 的标识源中使用](connectedOrganization.md)。 `@odata.type`该值指示此类型将已配置的标识提供程序标识为已连接组织的标识 `#microsoft.graph.externalDomainFederation` 源的域。
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
 | displayName |String | 标识源的名称，通常也是域名。 只读。 |
-| domainName |String | 域名称。 只读。 |
-| issuerUri |String | 传入联合身份验证的 issuerURI。 只读。 |
+| domainName |String | 域名。 只读。 |
+| issuerUri |String | 传入联盟的 issuerURI。 只读。 |
 
 ## <a name="relationships"></a>关系
 

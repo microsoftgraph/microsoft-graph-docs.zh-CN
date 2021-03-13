@@ -3,13 +3,13 @@ title: 使用 Microsoft Graph 可覆盖的用户
 description: 'Microsoft 提供了拓展新式工作与新式生活的服务和解决方案。 '
 author: dkershaw10
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b918c346bfc224277f47d5711b056dc462eeae33
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.prod: applications
+ms.openlocfilehash: c114b84871960c4ee890966ef4428d618a88e960
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288768"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761140"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>使用 Microsoft Graph 可覆盖的用户
 
@@ -49,6 +49,6 @@ Microsoft Graph 中的服务是 Microsoft 全球云的一部分。 此外，Micr
 - 查看某些[精选方案](https://developer.microsoft.com/graph/examples)。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的示例请求。
 - 使用[快速入门](https://developer.microsoft.com/graph/quick-start)设置即可运行的示例应用。
-- 在目录的**了解**下，阅读有关你可在应用场景中使用的服务和功能。
+- 在目录的 **了解** 下，阅读有关你可在应用场景中使用的服务和功能。
 - 了解如何在你的应用中[获取身份验证令牌](./auth/index.yml)。
 - 开始[使用 API](use-the-api.md)。

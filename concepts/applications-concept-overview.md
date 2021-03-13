@@ -3,14 +3,14 @@ title: 应用程序 API 概述
 description: 向 Azure AD 注册应用程序，以为其创建标识配置，允许其与 Azure AD 集成。
 author: davidmu1
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 38846c9560fdb02c9e3a8aac8bbd921a4f2c2eac
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: d99f20d5bbf748030576e1cdc28fabb5f666bee0
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288145"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760824"
 ---
 # <a name="applications-api-overview"></a>应用程序 API 概述
 
@@ -22,7 +22,7 @@ Microsoft Graph API 使你能够管理与 Azure Active Directory 中的应用程
 - **应用程序管理** - Azure AD 必须配置为与应用程序集成。 换言之，需要了解哪些应用程序将其用作标识系统。 让 Azure AD 了解这些应用程序，以及应该如何处理这些应用程序的过程称为应用程序管理。
 - **本地发布** - 可将租户管理员安装的本地代理（或应用程序代理的连接器）配置为请求转接到特定的已发布资源。
 - **服务主体管理** - 单个租户或目录中的全局应用程序对象的本地表示或应用程序实例。 服务主体是通过应用程序对象创建的具体实例，并从该应用程序对象继承某些属性。
-- **同步** - Azure Active Directory (Azure AD) 标识同步（也称为*预配*）使你能够自动化云中的标识的创建、维护和删除。
+- **同步** - Azure Active Directory (Azure AD) 标识同步（也称为 *预配*）使你能够自动化云中的标识的创建、维护和删除。
 
 ## <a name="application-management"></a>应用管理
 

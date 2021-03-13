@@ -1,16 +1,16 @@
 ---
 title: singleUser 复杂类型
-description: 标识租户中将允许作为请求者、审批者或审阅者的用户。
+description: 标识租户中将允许其成为请求者、审批者或审阅者的用户。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fb6b665814281629836f4c5148b567de776ef2ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8e1982eef048e1f68f579df7f2ebc6b0975f2f0b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067123"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761042"
 ---
 # <a name="singleuser-complex-type"></a>singleUser 复杂类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48067123"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [访问包分配策略](accesspackageassignmentpolicy.md)的请求、审批和分配审阅设置中使用。 `@odata.type`该值 `#microsoft.graph.singleUser` 指示此用户集标识租户中将允许作为请求者、审批者或审阅者的特定用户。
+在访问包分配策略的请求、审批和分配审阅 [设置中使用](accesspackageassignmentpolicy.md)。 该值指示此用户集标识租户中将允许其成为请求者、审批者或审阅者  `@odata.type` `#microsoft.graph.singleUser` 的特定用户。
 
 ## <a name="properties"></a>属性
 
@@ -26,9 +26,9 @@ ms.locfileid: "48067123"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | Azure AD 中用户的 ID。 |
-| 说明 |String | Azure AD 中的用户的名称。 只读。 |
-| isBackup | Boolean | 对于审批阶段的 **singleUser** ，指示用户是否为备份回退审批者。 |
+| id |String | Azure AD 中的用户 ID。 |
+| 说明 |String | Azure AD 中的用户名。 只读。 |
+| isBackup | 布尔 | 对于 **审批阶段中的 singleUser，** 指示用户是否是备份回退审批者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

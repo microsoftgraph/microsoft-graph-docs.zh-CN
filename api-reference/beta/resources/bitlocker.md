@@ -3,14 +3,14 @@ title: bitlocker 类型
 description: BitLocker 资源
 author: hafowler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3ad8a05e82cd3f300bedf034fe18f67ce3359f16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e714015b3834051371861880355360f02d12166
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038864"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761833"
 ---
 # <a name="bitlocker-resource-type"></a>bitlocker 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48038864"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-存储的 BitLocker 密钥的父资源，其中包含包含实际恢复密钥的 **bitlockerRecoveryKey** 导航属性。
+包含实际恢复密钥的导航属性 **bitlockerRecoveryKey** 的已存储 BitLocker 密钥的父资源。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|

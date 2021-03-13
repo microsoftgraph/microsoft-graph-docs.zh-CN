@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 524adc7d538203569253af52d29d1fa588f00269
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 05f11678242aca85f64c742a3a74b2db287aa7bf
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998371"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721808"
 ---
 # <a name="outlooktask-resource-type-deprecated"></a>outlookTask 资源类型（不推荐使用）
 
@@ -65,14 +65,14 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |类别|String 集合|与任务关联的类别。 每个类别对应于用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
 |changeKey|String|任务的版本。|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|在指定时区内完成任务的日期。|
-|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|要在指定时区内完成任务的日期。|
 |hasAttachments|Boolean|如果任务包含附件，则设置为 true。|
 |id|String| 任务的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
 |importance|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
-|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|所有者|String|任务创建者的姓名。|
+|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|Owner|String|任务创建者的姓名。|
 |parentFolderId|String|任务的父文件夹的唯一标识符。|
 |定期|[patternedRecurrence](patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
@@ -84,8 +84,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) 集合|任务的 [fileAttachment](fileattachment.md)、[itemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。  只读。 可为 Null。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|为任务定义的多值扩展属性的集合。 只读。 可为 Null。|
+|attachments|[attachment](attachment.md) 集合|任务的 [fileAttachment](fileattachment.md)、[itemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。  只读。 可为空。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|为任务定义的多值扩展属性的集合。 只读。 可为空。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合|为任务定义的单值扩展属性的集合。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

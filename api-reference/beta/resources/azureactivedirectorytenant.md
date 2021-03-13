@@ -1,16 +1,16 @@
 ---
 title: azureActiveDirectoryTenant 资源类型
-description: AzureActiveDirectoryTenant 类型将另一个 Azure Active Directory 租户标识为连接的组织的标识源。
+description: azureActiveDirectoryTenant 类型将另一个 Azure Active Directory 租户标识为已连接组织的标识源。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c2fd1b8e1b2fcc2c2fef03db93a54d5d0b69b951
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: acd59c82f1968cbb161b74d1e7c1a551b6b2e397
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089769"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759907"
 ---
 # <a name="azureactivedirectorytenant-resource-type"></a>azureActiveDirectoryTenant 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48089769"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [connectedOrganization](connectedOrganization.md)的标识源中使用。 `@odata.type`该值 `#microsoft.graph.azureActiveDirectoryTenant` 指示此类型将另一个 Azure Active Directory 租户标识为连接的组织的标识源。
+在 [connectedOrganization 的标识源中使用](connectedOrganization.md)。 该值 `@odata.type` `#microsoft.graph.azureActiveDirectoryTenant` 指示此类型将另一个 Azure Active Directory 租户标识为已连接组织的标识源。
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |字符串 | Azure Active Directory 租户的名称。 只读。 |
-| tenantId |字符串 | Azure Active Directory 租户的 ID。 只读。 |
+| displayName |String | Azure Active Directory 租户的名称。 只读。 |
+| tenantId |String | Azure Active Directory 租户的 ID。 只读。 |
 
 ## <a name="relationships"></a>关系
 

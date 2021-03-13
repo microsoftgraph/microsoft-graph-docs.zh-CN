@@ -3,14 +3,14 @@ title: identityUserFlowAttributeAssignment： getOrder
 description: 获取在用户流中收集的 identityUserFlowAttributeAssignments 的顺序。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 19172e8928716cb3f7ad49e67bc2f75de122de46
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 93308846ecf1549efd70ebe8fc4b2915626d7b81
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689250"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759956"
 ---
 # <a name="identityuserflowattributeassignment-getorder"></a>identityUserFlowAttributeAssignment： getOrder
 
@@ -26,7 +26,7 @@ ms.locfileid: "49689250"
 |:---|:---|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ GET /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/getO
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应 `200 OK` 正文中返回响应代码和[assignmentOrder。](../resources/assignmentorder.md)
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和[assignmentOrder。](../resources/assignmentorder.md)
 
 ## <a name="examples"></a>示例
 

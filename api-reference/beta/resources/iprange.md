@@ -3,14 +3,14 @@ title: ipRange 资源类型
 description: 表示 IPV4 和 IPV6 地址范围的 IP 范围基类。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 468ce870c56a7eae0d1f8c5c83b7e5dbd0251f95
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ebe7c636d02bd7e60426bf6926f6b5b7372386d8
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158385"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759809"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 

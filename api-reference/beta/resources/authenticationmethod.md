@@ -1,16 +1,16 @@
 ---
 title: authenticationMethod 资源类型
-description: 表示向用户注册的身份验证方法。
+description: 表示注册到用户的身份验证方法。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f09780904d459ff628f9a13b21f3238611ede6ca
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: cf36866aa0263896a4f7d8a0a4f59146f2f934cb
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159155"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761477"
 ---
 # <a name="authenticationmethod-resource-type"></a>authenticationMethod 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50159155"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示向用户注册的身份验证方法。 [身份验证方法是](/azure/active-directory/authentication/concept-authentication-methods)用户用来向系统进行身份验证或以其他方式证明其身份的方法。 一些示例包括密码、 (短信或语音呼叫) 、FIDO2 安全密钥等。
+表示注册到用户的身份验证方法。 [身份验证方法是](/azure/active-directory/authentication/concept-authentication-methods)用户用来向系统进行身份验证或以其他方式证明其身份的方法。 一些示例包括密码、 (短信或语音呼叫) 、FIDO2 安全密钥等。
 
 ## <a name="methods"></a>方法
 
@@ -31,7 +31,7 @@ ms.locfileid: "50159155"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| 向此用户注册的身份验证方法的此实例的标识符。 只读。 |
+|id|String| 注册到此用户的身份验证方法的此实例的标识符。 只读。 |
 
 ## <a name="relationships"></a>关系
 

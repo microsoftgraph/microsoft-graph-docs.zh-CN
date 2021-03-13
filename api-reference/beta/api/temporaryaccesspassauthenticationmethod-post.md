@@ -4,22 +4,22 @@ description: 创建新的 temporaryAccessPassAuthenticationMethod 对象。
 author: inbarckMS
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fcd0c019e90d326d7b76617e1121fc721b2fe196
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 801f82d30baf5a231b0fea78c3613773d4dd8f53
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515938"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761091"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>创建 temporaryAccessPassAuthenticationMethod
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户上创建新的 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。 用户只能有一个临时访问传递。 密码可在临时访问传递的开始时间和结束时间之间使用。 如果用户需要新的临时访问传递：
-* 当前临时访问传递有效时 ， 管理员需要删除现有的临时访问通行卡，并创建用户的新密码。 删除有效的临时访问传递将撤消用户的会话。 
+在用户上 [创建新的 temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。 用户只能有一个临时访问传递。 可以在临时访问传递的开始时间和结束时间之间使用密码。 如果用户需要新的临时访问通道：
+* 当前临时访问传递有效时 ， 管理员需要删除现有的临时访问通道，并创建用户的新传递。 删除有效的临时访问通道将撤消用户的会话。 
 * 临时访问传递过期后 - 新的临时访问传递将覆盖当前临时访问传递，并且不会撤消用户的会话。
 
 
@@ -33,7 +33,7 @@ ms.locfileid: "50515938"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -41,9 +41,9 @@ ms.locfileid: "50515938"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员
@@ -67,19 +67,19 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象的 JSON 表示形式。
 
-下表介绍在创建 [temporaryAccessPassAuthenticationMethod 时可以使用的可选属性](../resources/temporaryaccesspassauthenticationmethod.md)。
+下表介绍在创建 [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)时可以使用的可选属性。
 
 |属性|类型|说明|必需| 
 |:---|:---|:---|:---|
-|startDateTime|DateTimeOffset|temporaryAccessPass 可用时的日期和时间（如果未设置，则创建时可以使用临时访问传递）。| 否|
-|lifetimeInMinutes|Int32|temporaryAccessPass 的生存期（如果已设置）以分钟计，从创建时开始或 startDateTime 开始。 最少 10 天，最多 43200 (相当于 30 天) 。| 否|
-|isUsableOnce|布尔|确定传递是否限制为一次使用。 如果为 True ，则传递可以使用一次，如果为 False，则传递可以在临时AccessPass 生命周期内多次使用。 A multi-use Temporary Access Pass (isUsableOnce = false) ， can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy.|  否|
+|startDateTime|DateTimeOffset|temporaryAccessPass 可供使用的日期和时间（如果未设置，则创建时可以使用临时访问传递）。| 不支持|
+|lifetimeInMinutes|Int32|temporaryAccessPass 的生存期，以分钟计，从创建时间开始或 startDateTime（如果已设置）。 最少 10 天，最多 43200 (相当于 30 天) 。| 不支持|
+|isUsableOnce|布尔|确定是否将传递限制为一次使用。 如果为 True，则传递可以使用一次，如果为 False，则临时AccessPass 生命周期内可以多次使用传递。 多用途临时访问 (isUsableOnce = false) ，只有在临时访问传递身份验证方法策略允许时，才能创建并用于登录。|  不支持|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

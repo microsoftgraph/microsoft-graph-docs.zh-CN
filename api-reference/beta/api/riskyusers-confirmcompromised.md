@@ -1,27 +1,27 @@
 ---
-title: 确认 riskyUser 已泄露
-description: 确认 riskyUser 对象是否已泄露。
+title: 确认 riskyUser 遭到入侵
+description: 确认 riskyUser 对象已泄露。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: d9f3b141144654e21c47c523c46a3329865c7031
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 06de240619f121671b6fea8883bca0d3fa19e38a
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970939"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760944"
 ---
-# <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
+# <a name="riskyuser-confirmcompromised"></a>riskyUser：confirmComprom一
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**注意：** RiskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意：** riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-确认一个或多个 [riskyUser](../resources/riskyuser.md) 对象已泄露。 此操作将目标用户的风险级别设置为 "高"。
+确认一个或多个 [riskyUser](../resources/riskyuser.md) 对象受到威胁。 此操作将目标用户的风险级别设置得较高。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,13 +46,13 @@ POST /identityProtection/riskyUsers/confirmCompromised
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-指定要在请求正文中消除的有风险的用户 Id。
+在请求正文中指定要消除的风险用户 ID。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="examples"></a>示例
-### <a name="example-1-confirm-users-as-compromised"></a>示例1：确认用户受到威胁
+### <a name="example-1-confirm-users-as-compromised"></a>示例 1：确认用户受到威胁
 #### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -99,7 +99,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-confirm-a-user-as-compromised"></a>示例2：确认用户已受到攻击
+### <a name="example-2-confirm-a-user-as-compromised"></a>示例 2：确认用户遭到入侵
 #### <a name="request"></a>请求
 下面是一个请求示例。
 

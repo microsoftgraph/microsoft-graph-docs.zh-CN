@@ -1,40 +1,40 @@
 ---
-title: 'passwordAuthenticationMethod: resetPassword'
+title: passwordAuthenticationMethod：resetPassword
 description: 重置用户密码
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9ab66da19cbc2034b73476b8c9275f687e729f6a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71f144592ec2d0d99eccbfa2d0627f74982a5fa3
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968679"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761421"
 ---
-# <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
+# <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod：resetPassword
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-启动与 [密码身份验证方法](../resources/passwordauthenticationmethod.md) 对象关联的密码的重置。 这只能由具有相应权限的管理员执行，并且无法在用户自己的帐户上执行。
+为与密码身份验证方法对象关联的 [密码启动重置](../resources/passwordauthenticationmethod.md) 。 这只能由具有适当权限的管理员完成，并且不能对用户自己的帐户执行。
 
-此流将新密码写入 Azure Active Directory，并将其推送到本地 Active Directory （如果使用密码写回进行配置）。 管理员既可以提供新密码，也可以让系统生成一个新密码。 系统会提示用户在下一次登录时更改其密码。
+此流会将新密码写入 Azure Active Directory，如果已使用密码写回进行配置，则推送到本地 Active Directory。 管理员可以提供新密码或使系统生成一个密码。 系统将提示用户在下次登录时更改其密码。
 
-此重置是一个长时间运行的操作，并将返回标头中的一个链接，在 `Location` 此情况下，呼叫者可以定期检查重置的状态。
+此重置是一项长时间运行的操作，它将在标头中返回一个链接，调用方可在其中定期检查 `Location` 重置的状态。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
+| 权限类型                        | 自行操作的权限 (权限从最低权限级别)  | 对他人操作的权限 (权限从最低到最多特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
+| 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
 | 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -61,26 +61,26 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|newPassword|String|管理员输入的新密码。对于具有混合密码方案的租户是必需的。 如果对仅云密码省略，则系统将返回系统生成的密码。 这是不带任何其他编码的 unicode 字符串。 在接受之前，它会针对租户的禁用密码系统进行验证，并且必须遵守租户的云和/或本地密码要求。|
+|newPassword|String|管理员输入的新密码。对于具有混合密码方案的租户，此为必需项。 如果省略仅云密码，系统将返回系统生成的密码。 这是一个没有其他编码的 unicode 字符串。 在验收之前，将针对租户的禁止密码系统验证它，并且必须遵守租户的云和/或本地密码要求。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `202 ACCEPTED` 标头中返回响应代码和 URL `Location` 。
+如果成功，此方法在 标头 `202 ACCEPTED` 中返回 响应代码和 `Location` URL。
 
-如果呼叫者未提交密码，则会在响应正文中的 JSON 对象中提供 Microsoft 生成的密码。
+如果调用方未提交密码，则响应正文中的 JSON 对象中会提供 Microsoft 生成的密码。
 
 ### <a name="response-headers"></a>响应标头
 
 | 名称        | 说明     |
 |:------------|:----------------|
 |Location     | 要调用以检查操作状态的 URL。|
-|重试-after  | 以秒为单位的持续时间。|
+|重试后  | 持续时间（以秒表示）。|
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-user-submitted-password"></a>示例1：用户提交的密码
+### <a name="example-1-user-submitted-password"></a>示例 1：用户提交的密码
 
-下面的示例演示在调用方提交密码时如何调用此 API。
+以下示例显示当调用方提交密码时如何调用此 API。
 
 #### <a name="request"></a>请求
 
@@ -146,9 +146,9 @@ Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authen
   "tocPath": ""
 }-->
 
-### <a name="example-2-system-generated-password"></a>示例2：系统生成的密码
+### <a name="example-2-system-generated-password"></a>示例 2：系统生成的密码
 
-下面的示例演示当调用方不提交密码时如何调用此 API。
+以下示例演示当调用方不提交密码时如何调用此 API。
 
 #### <a name="request"></a>请求
 

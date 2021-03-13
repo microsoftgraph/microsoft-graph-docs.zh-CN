@@ -3,13 +3,13 @@ title: 解决 Microsoft Graph 授权错误
 description: 了解如何解决 Microsoft Graph 401 和 403 授权错误。
 author: davidmu1
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 95d5dfe0a6e3cf3806eceb2240f318b2255dadb9
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.prod: applications
+ms.openlocfilehash: 13e815b72157da2fe5d8db8114a3dac436b40026
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470058"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760937"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>解决 Microsoft Graph 授权错误
 

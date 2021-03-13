@@ -3,21 +3,21 @@ title: 获取 smsAuthenticationMethodConfiguration
 description: 读取 smsAuthenticationMethodConfiguration 对象的属性和关系。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 16a13c62192eedbecd232761fcea55e9a243e988
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: cc09a85fefb46142c46d5383a0d7225636041b8b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475602"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761847"
 ---
 # <a name="get-smsauthenticationmethodconfiguration"></a>获取 smsAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) 对象的属性和关系，该对象代表 Azure AD 租户的文本消息身份验证方法策略。
+读取 [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) 对象的属性和关系，该对象表示 Azure AD 租户的文本消息身份验证方法策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 

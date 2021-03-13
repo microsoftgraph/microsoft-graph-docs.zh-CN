@@ -3,14 +3,14 @@ title: conditionalAccessDevices 资源类型
 description: 表示策略作用域中的设备。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a42e6023ace493c5efb230ffd53eb9c4caee7d16
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 94115e97c597bc34f03d843b8098f707ed39cd51
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440526"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761805"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>conditionalAccessDevices 资源类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "50440526"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeDevices | 字符串集合 | 策略范围内状态。 `All` 是唯一允许的值。 |
-| excludeDevices | 字符串集合 | 策略作用域中排除的国家/省/市/ 可能的值： `Compliant` `DomainJoined` ， 。 |
-| includeDeviceStates (弃) | 字符串集合 | 策略范围内状态。 `All` 是唯一允许的值。 |
-| excludeDeviceStates (已弃) | 字符串集合 | 策略作用域中排除的国家/省/市/ 可能的值： `Compliant` `DomainJoined` ， 。 |
+| includeDevices | 字符串集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
+| excludeDevices | 字符串集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 |
+| includeDeviceStates (弃) | 字符串集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
+| excludeDeviceStates (弃) | 字符串集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 |
 
 ## <a name="relationships"></a>关系
 

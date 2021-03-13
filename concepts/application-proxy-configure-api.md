@@ -4,19 +4,19 @@ description: 使用 Microsoft Graph API 自动配置应用程序代理，以提�
 author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 28bb376b094a648d246bba5401764952d5aec863
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.prod: applications
+ms.openlocfilehash: 98db70f1d5690b3021eb69a73007567c39b80c15
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943680"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761337"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 自动化应用程序代理的配置
 
 本文将了解如何为应用程序创建和配置 Azure Active Directory (Azure AD) 应用程序代理。 [](/azure/active-directory/manage-apps/what-is-application-proxy) 应用程序代理提供对本地 Web 应用程序的安全远程访问和单一登录。 为应用程序配置应用程序代理后，用户可以通过外部 URL、"我的应用程序"门户或其他内部应用程序门户访问其本地应用程序。
 
-本文假定你已安装连接器并完成了应用程序代理的先决条件，以便连接器可以[](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin)与 Azure AD 服务通信。
+本文假定你已安装连接器并已完成应用程序代理的先决条件，以便连接器可以[](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin)与 Azure AD 服务通信。
 
 请确保你具有相应的权限来调用以下 API。
 
@@ -39,7 +39,7 @@ ms.locfileid: "49943680"
 3. 成功登录后，你将在左窗格中看到用户帐户详细信息。
 
 > [!NOTE]
-> 当前不支持使用服务主体登录。 
+> 目前不支持使用服务主体登录。 
 
 ### <a name="create-an-application"></a>创建应用程序
 
@@ -123,14 +123,14 @@ Content-type: application/json
 ```
 
 ### <a name="retrieve-the-application-object-id-and-appid"></a>检索应用程序对象 ID 和 appId
-使用上一次调用的响应检索和保存应用程序对象 ID 和应用 ID。
+使用上一调用的响应来检索和保存应用程序对象 ID 和应用 ID。
 ```
 "application": {
   "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
   "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
 }
 ```
-### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>为应用程序创建 servicePrincipal 并添加所需的标记
+### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>为应用程序创建 servicePrincipal 并添加必需的标记
 使用 **appId** 为应用程序创建服务主体。 然后添加为应用配置应用程序代理所需的标记。
 
 #### <a name="request"></a>请求
@@ -222,7 +222,7 @@ Content-type: application/json
 
 ### <a name="set-the-onpremisespublishing-configuration"></a>设置 onPremisesPublishing 配置
 
-使用上一步中的应用程序对象 ID 为应用配置应用程序代理，将 **onPremisesPublishing** 属性更新为所需的配置。 在此示例中，你将使用具有内部 URL 的应用，并且将默认域 `https://contosoiwaapp.com` 用于外部 URL： `https://contosoiwaapp-contoso.msappproxy.net` 。 
+使用上一步中的应用程序对象 ID 为应用程序配置应用程序代理，将 **onPremisesPublishing** 属性更新为所需配置。 在此例中，你将使用具有内部 URL 的应用：，将默认域 `https://contosoiwaapp.com` 用于外部 URL：。 `https://contosoiwaapp-contoso.msappproxy.net` 
 
 #### <a name="request"></a>请求
 
@@ -271,7 +271,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 ### <a name="complete-the-configuration-of-the-application"></a>完成应用程序的配置
-将应用程序的 **redirectUri、identifierUri** 和 **homepageUrl** 属性更新为 **onPremisesPublishing** 属性中配置的外部 UR。  然后将 [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)更新为 `true` **enabledTokenIssuance** 和 `false` **enabledAccessTokenIssuance。**
+将应用程序的 **redirectUri、identifierUri** 和 **homepageUrl** 属性更新为在 **onPremisesPublishing** 属性中配置的外部 UR。  然后将 [](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) `true` **enabledTokenIssuance** 和 `false` **enabledAccessTokenIssuance** 的 implicitGrantSettings 更新为 。
 
 #### <a name="request"></a>请求
 <!-- {
@@ -380,7 +380,7 @@ Content-type: application/json
 ```
 
 ### <a name="create-a-connectorgroup"></a>创建 connectorGroup
-对于此示例，将创建一个名为"IWA Demo Connector Group"的新 connectorGroup，用于应用程序。 如果连接器已分配给相应的 connectorGroup，也可以跳过此步骤。 检索并保存连接器组对象 ID，以用于下一步。
+对于此示例，将创建一个名为"IWA Demo Connector Group"的新 connectorGroup，用于应用程序。 如果连接器已分配给相应的 connectorGroup，也可以跳过此步骤。 检索并保存 connectorGroup 对象 ID，以用于下一步。
 
 #### <a name="request"></a>请求
 
@@ -599,7 +599,7 @@ Content-type: application/json
 }
 ```
 
-使用上一次调用的响应检索并保存要用于下一步的 appRole ID。
+使用上一个调用的响应检索并保存要用于下一步的 appRole ID。
 ```
       {
             "description": "User",

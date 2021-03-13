@@ -3,14 +3,14 @@ title: userSettings 资源类型
 description: '内容发现的当前用户设置。 '
 author: jpettere
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 7b03b1b41c466582a219a034d93a16bb887fa356
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 12c75691b5b0515fbf8ef49b54ce1e4a0b806c2c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721437"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761770"
 ---
 # <a name="usersettings-resource-type"></a>userSettings 资源类型
 
@@ -25,10 +25,10 @@ ms.locfileid: "50721437"
   - 更新用户的语言和区域格式首选项。
 
 管理用户的工作班次首选项： 
-  - 检查用户是否可以分配给计划中的班次。
+  - 检查是否可以在日程安排中为用户分配班次。
   - 更新用户的班次首选项。
   
-启用内容发现和以文档为中心的见解：
+允许发现内容和以文档为中心的见解：
   - 检查用户及用户的组织是否对内容发现做贡献。
   - 为特定用户禁用或启用内容发现。 这也会禁用 Office Delve 中的文档。
 

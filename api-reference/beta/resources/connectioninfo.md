@@ -3,14 +3,14 @@ title: connectionInfo 资源类型
 description: connectionInfo 对象定义用于与资源通信的连接信息。
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 454dc7fcd045bb91819b39ad30f603191bab8380
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8bbab1e93cf5af0fcfbd401b6b726f3165f595b4
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137714"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761815"
 ---
 # <a name="connectioninfo-resource-type"></a>connectionInfo 资源类型
 

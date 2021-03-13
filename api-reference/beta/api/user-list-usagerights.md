@@ -1,18 +1,18 @@
 ---
-title: 列出用户 usageRights
+title: 列出用户使用情况Rights
 description: 检索用户的 usageRights 对象列表。
 author: jeeshnair
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2662458894fe6dab7fd42e0125c6b4c8f165a4e8
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 2df51b15de635df52ff4b667c3a9266fafea1511
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013644"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761491"
 ---
-# <a name="list-user-usagerights"></a>列出用户 usageRights
+# <a name="list-user-usagerights"></a>列出用户使用情况Rights
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -44,23 +44,23 @@ GET /users/{userId}/usageRights
 - $filter = state eq 'value'
 - $filter = serviceIdentifier eq 'value'
 - $filter = state eq 'value' and serviceIdentifier eq 'value'
-- $filter = ("value1"中的状态，"value2") 
+- $filter = ( value1、value2") 
 - $filter =serviceIdentifier in ('value1'， 'value2') 
-- $filter = ("value1"、"value2") 和 ("value1"中的 serviceIdentifier 中的状态，"value2") 
+- $filter = ( value1、value2") 和 serviceIdentifier 中的 state ( value1"，"value2") 
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|odata.maxpagesize|设置最大结果页大小限制。 可选。|
+|odata.maxpagesize|设置每个结果页的最大大小。 可选。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [usageRight](../resources/usageright.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [usageRight](../resources/usageright.md) 对象集合。
 
-此外，如果响应中有更多的页面，则返回 @odata.nextLink。
+此外，如果响应中有更多的页面，@odata.nextLink。
 
 ## <a name="examples"></a>示例
 

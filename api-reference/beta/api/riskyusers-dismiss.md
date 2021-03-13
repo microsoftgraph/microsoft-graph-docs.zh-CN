@@ -3,17 +3,17 @@ title: 消除 riskyUser
 description: 消除 riskyUser 对象的风险。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: 8ae21d3adb754798ea2332c1b9acc7880b4a6d99
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47b749e1ac5d782d96210b493ed1451db19184c7
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975889"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761484"
 ---
-# <a name="riskyuser-dismiss"></a>riskyUser：消除
+# <a name="riskyuser-dismiss"></a>riskyUser： dismiss
 
 命名空间：microsoft.graph
 
@@ -21,7 +21,8 @@ ms.locfileid: "48975889"
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-消除一个或多个 [riskyUser](../resources/riskyuser.md) 对象的风险。 此操作将目标用户的风险级别设置为 "无"。
+消除一个或多个 [riskyUser 对象](../resources/riskyuser.md) 的风险。 此操作将目标用户的风险级别设定为无。 一次呼叫中要消除的最大用户数为 60。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,13 +46,13 @@ GET /identityProtection/riskyUsers/dismiss
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中指定要消除的 userIds。
+在请求正文中指定要消除的 userId。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="examples"></a>示例
-### <a name="example-1-dismiss-risky-users"></a>示例1：消除有风险的用户
+### <a name="example-1-dismiss-risky-users"></a>示例 1：消除有风险的用户
 #### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -99,7 +100,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-dismiss-a-risky-user"></a>示例2：消除有风险的用户
+### <a name="example-2-dismiss-a-risky-user"></a>示例 2：消除有风险的用户
 #### <a name="request"></a>请求
 下面是一个请求示例。
 

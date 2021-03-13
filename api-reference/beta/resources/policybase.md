@@ -1,16 +1,16 @@
 ---
 title: policyBase 资源类型
-description: 表示要继承的策略类型的抽象基类型。
+description: 表示要继承的策略类型的抽象基本类型。
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f6b3f0951248bcfe3571f218549f952a27cf7b92
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b495503cf01ce13e5f5d44d371b824a1eedfccb5
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153611"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760846"
 ---
 # <a name="policybase-resource-type"></a>policyBase 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50153611"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示要继承的策略类型的抽象基类型。
+表示要继承的策略类型的抽象基本类型。
 
 ## <a name="methods"></a>方法
 

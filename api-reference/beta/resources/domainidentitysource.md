@@ -1,16 +1,16 @@
 ---
 title: domainIdentitySource 资源类型
-description: DomainIdentitySource 类型将非租户域标识为连接的组织的标识源。
+description: domainIdentitySource 类型将非租户域标识为已连接组织的标识源。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 63301dbf42a4589fd204290c157c6e6f63e473d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae616c98b2ca20ec4e5d9c7aceeba5bdeb538e81
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010304"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759662"
 ---
 # <a name="domainidentitysource-resource-type"></a>domainIdentitySource 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48010304"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [connectedOrganization](connectedOrganization.md)的标识源中使用。 `@odata.type`该值 `#microsoft.graph.domainIdentitySource` 指示此类型将域标识为连接的组织的标识源。
+在 [connectedOrganization 的标识源中使用](connectedOrganization.md)。 `@odata.type`该值 `#microsoft.graph.domainIdentitySource` 指示此类型将域标识为已连接组织的标识源。
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
 | displayName |String | 标识源的名称，通常也是域名。 只读。 |
-| domainName |String | 域名称。 只读。 |
+| domainName |String | 域名。 只读。 |
 
 ## <a name="relationships"></a>关系
 

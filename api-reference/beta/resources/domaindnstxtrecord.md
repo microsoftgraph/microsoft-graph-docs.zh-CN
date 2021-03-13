@@ -1,16 +1,16 @@
 ---
 title: domainDnsTxtRecord 资源类型
-description: 表示添加到租户中特定域的 DNS 区域文件中的 TXT 记录。
+description: 表示添加到租户中特定域的 DNS 区域文件的 TXT 记录。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ecd280622a9937e85dfb9079416521853d85cfe4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e59c38028b414208744793945ed480dc708bf6c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010309"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760902"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>domainDnsTxtRecord 资源类型
 
@@ -18,21 +18,21 @@ ms.locfileid: "48010309"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示添加到租户中特定域的 DNS 区域文件中的 TXT 记录。 继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。
+表示添加到租户中特定域的 DNS 区域文件的 TXT 记录。 继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。
 
 ## <a name="methods"></a>方法
-不支持直接向此资源进行查询。 有关如何查询域服务记录的信息，请参阅 [域](domain.md) 主题。
+不支持直接查询此资源。 请参阅 [域主题](domain.md) ，了解如何查询域服务记录。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 分配给此实体的唯一标识符。 不可为 null，只读。 |
-|isOptional|Boolean| 如果为 false，则客户必须在 DNS 主机上配置 TXT 记录才能使 Microsoft Online Services 在域中正常运行。 |
-|label|String| 配置 DNS 主机上的 TXT 记录的 *name* 属性时要使用的值。|
-|recordType|String| DNS 记录的类型。 值始终为 *Txt*。 键 |
-|supportedService|String| Microsoft Online Service 或与此 TXT 记录有依赖关系的功能。</br></br>可以是下列值之一： **null**、 *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune* |
-|text|String| 配置 DNS 主机上的 *文本* 属性时使用的值。 |
-|ttl|Int32| 在 DNS 主机上配置 MX 记录的 *生存时间 (ttl) * 属性时使用的值。 不可为 null |
+|id|String| 分配给此实体的唯一标识符。 不可为空，只读。 |
+|isOptional|布尔| 如果为 false，则客户必须在 DNS 主机上配置 TXT 记录，Microsoft Online Services该域正常运行。 |
+|label|String| 在 DNS 主机上配置TXT 记录的名称属性时要使用的值。|
+|recordType|String| DNS 记录的类型。 该值始终为 *Txt*。 键 |
+|supportedService|String| 依赖此 TXT 记录的 Microsoft Online Service 或功能。</br></br>可以是下列值之一：null、Email、Sharepoint、EmailInternalRelayOnly、OfficeCommunicationsOnline、SharePointDefaultDomain、FullRedelegation、SharePointPublic、OrgIdAuthentication、Yammer、Intune            |
+|text|String| 在 DNS 主机上配置 *文本* 属性时所使用的值。 |
+|ttl|Int32| 在 DNS 主机上配置 MX 记录的 ttl (*ttl*) 时要使用的值。 不可为 null |
 
 ## <a name="relationships"></a>关系
 无

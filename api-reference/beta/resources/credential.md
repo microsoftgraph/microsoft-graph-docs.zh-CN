@@ -1,32 +1,32 @@
 ---
-title: credential 资源类型
+title: 凭据资源类型
 description: 指示用于登录应用程序的单个凭据。
 localization_priority: Normal
 author: bharathramh92
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a281e39850ea18ee3bcbe0d83c5df3b41d0ccd31
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0521f766a7a0da482cf67628c3816935ee9270b8
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016686"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761679"
 ---
-# <a name="credential-resource-type"></a>credential 资源类型
+# <a name="credential-resource-type"></a>凭据资源类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示用于登录应用程序的单个凭据。 例如，username 是一个凭据，即 "密码" 是另一个凭据。
+指示用于登录应用程序的单个凭据。 例如，username 是一个凭据，password 是另一个凭据。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|fieldId|String|此凭据的字段名称。 例如，username、password 或 phoneNumber。 这是由应用程序定义的。 必须与 singleSignOnSettings/password 对象上的 html 字段中的内容相匹配。|
-|type|String|此凭据的类型。 有效值： username、password 或其他值。|
-|value|String|此凭据的值。 例如，mysuperhiddenpassword。 注意：密码的值是只写的，该值永远不能读回。|
+|fieldId|String|此凭据的字段名称。 例如用户名或密码或 phoneNumber。 这由应用程序定义。 必须与 singleSignOnSettings/password 对象上的 html 字段中的项匹配。|
+|type|String|此凭据的类型。 有效值：用户名、密码或其他。|
+|value|String|此凭据的值。 例如，mysuperhiddenpassword。 请注意，密码的值为仅写值，该值永远不能读回。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,16 +1,16 @@
 ---
 title: 获取 passwordAuthenticationMethod
-description: 检索 passwordauthenticationmethod 对象的属性和关系。
+description: 检索 passwordauthentication 方法对象的属性和关系。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2112788ce5127326e0e82ef91c1068b5b56ec14a
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: a34939a59ca265fb7c50b82cf662095052763950
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515590"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761435"
 ---
 # <a name="get-passwordauthenticationmethod"></a>获取 passwordAuthenticationMethod
 
@@ -30,7 +30,7 @@ ms.locfileid: "50515590"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -38,9 +38,9 @@ ms.locfileid: "50515590"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的 passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

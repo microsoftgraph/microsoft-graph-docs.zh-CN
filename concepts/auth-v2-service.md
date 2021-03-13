@@ -3,14 +3,14 @@ title: 在没有用户的情况下获取访问权限
 description: 一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。 在许多情况下，这些是在服务器上运行的后台服务或守护程序，不存在登录用户。
 author: jackson-woods
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4c1726a5f974547e8fbd2c6e927431d8a40659f3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 63b9f184639c3cb7186c65940add3cf9d6b1a47d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288474"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761463"
 ---
 # <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 
@@ -47,7 +47,7 @@ ms.locfileid: "48288474"
 
 对于以它们自己的标识调用 Microsoft Graph 的应用，Microsoft Graph 显示应用程序权限。（Microsoft Graph 还显示代表用户调用 Microsoft Graph 的应用的委派权限。）注册应用时，需要预配置应用所需的应用程序权限。应用程序权限始终需要管理员的同意。当你的应用安装在他们的组织中时，管理员可以使用 [Azure 门户](https://portal.azure.com)同意这些权限，你也可以提供应用注册体验，让管理员同意你配置的权限。Azure AD 记录管理员同意后，你的应用无需再次请求同意即可请求令牌。有关可通过 Microsoft Graph 使用的权限的详细信息，请参阅[权限参考](./permissions-reference.md)
 
-若要在 [Azure 应用注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)为应用配置应用程序权限：在应用程序的 **API 权限**页面中，选择“**添加权限**”，选择“**Microsoft Graph**”，然后在“**应用程序权限**”下选择你的应用所需的权限。
+若要在 [Azure 应用注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)为应用配置应用程序权限：在应用程序的 **API 权限** 页面中，选择“**添加权限**”，选择“**Microsoft Graph**”，然后在“**应用程序权限**”下选择你的应用所需的权限。
 
 下面的屏幕快照显示了 Microsoft Graph 应用程序权限的“**选择权限**”对话框。
 
@@ -218,10 +218,10 @@ Content-Length: 407
 Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终结点和使用 Azure AD 终结点之间存在[诸多区别](/azure/active-directory/develop/azure-ad-endpoint-comparison)。 使用 Azure AD 终结点时：
 
 - 如果你的应用是多租户的，则必须在 [Azure 门户](https://portal.azure.com)中将其明确配置为“多租户”。
-- 没有管理员同意终结点 (`/adminconsent`)。 你的应用转而可在运行时期间请求管理员同意，方式是向授权请求添加 `prompt=admin_consent` 参数。 有关详细信息，请参阅[将应用程序与 Azure Active Directory 相集成](/azure/active-directory/develop/active-directory-integrating-applications)中的**在运行时引发 Azure AD 同意框架**。
+- 没有管理员同意终结点 (`/adminconsent`)。 你的应用转而可在运行时期间请求管理员同意，方式是向授权请求添加 `prompt=admin_consent` 参数。 有关详细信息，请参阅 [将应用程序与 Azure Active Directory 相集成](/azure/active-directory/develop/active-directory-integrating-applications)中的 **在运行时引发 Azure AD 同意框架**。
 - 授权和令牌请求中的参数不相同。例如，Azure AD 终结点请求中没有 `scope` 参数；但是，`resource` 参数可用于指定为其请求的授权（用于管理员同意）或令牌的资源 (`resource=https://graph.microsoft.com`) 的 URI。
 
 可查看下述资源进一步了解此方案：
 
-- 要了解如何将 Microsoft 标识平台与不同类型的应用结合使用，请参阅 [Microsoft 标识平台文档](/azure/active-directory/develop/active-directory-developers-guide)中的**开始使用**链接。 该指南包含众多链接，可通过它们查看 Microsoft 标识平台支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
+- 要了解如何将 Microsoft 标识平台与不同类型的应用结合使用，请参阅 [Microsoft 标识平台文档](/azure/active-directory/develop/active-directory-developers-guide)中的 **开始使用** 链接。 该指南包含众多链接，可通过它们查看 Microsoft 标识平台支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
 - 要了解可与 Microsoft 标识平台终结点结合使用的 Microsoft 身份验证库 (MSAL) 和服务器中间件，请参阅 [Microsoft 身份验证库](/azure/active-directory/develop/active-directory-authentication-libraries)。

@@ -1,16 +1,16 @@
 ---
 title: connectedOrganizationMembers 复杂类型
-description: ConnectedOrganizationMembers 类型标识租户中将允许作为请求者、审批者或审阅者的用户的集合。
+description: connectedOrganizationMembers 类型标识租户中将允许其成为请求者、审批者或审阅者的用户的集合。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d2df6b91ebcbc65f03ee39103768bdfad04df62f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 725926bc39583bda653294f0cc917ea7d2f08a45
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027193"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761812"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>connectedOrganizationMembers 复杂类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48027193"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [访问包分配策略](accesspackageassignmentpolicy.md)的请求设置中使用。 `@odata.type`该值 `#microsoft.graph.connectedOrganizationMembers` 指示此类型标识用户的集合，这些用户与[已连接的组织](connectedorganization.md)相关联，将允许其请求访问包。
+在访问包分配策略 [的请求设置中使用](accesspackageassignmentpolicy.md)。 值指示此类型标识用户的集合，即与已连接组织关联的用户，将允许这些用户 `@odata.type` `#microsoft.graph.connectedOrganizationMembers` 请求访问包。 [](connectedorganization.md)
 
 ## <a name="properties"></a>属性
 
@@ -26,9 +26,9 @@ ms.locfileid: "48027193"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | 在 "权限管理" 中连接的组织的 ID。 |
-| description |String | 连接的组织的名称。 只读。 |
-| isBackup | Boolean | 目前未使用。 |
+| id |String | 权利管理中连接的组织的 ID。 |
+| 说明 |String | 已连接组织的名称。 只读。 |
+| isBackup | 布尔 | 目前未使用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,16 +1,16 @@
 ---
 title: groupMembers 复杂类型
-description: 标识租户中将允许作为请求者、审批者或审阅者的用户的集合。
+description: 标识租户中将允许其成为请求者、审批者或审阅者的用户的集合。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 576fd13962dcafaa876225393cc9165e5ef2ece2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0069cd6a8fd738c17a9035b519c4f141c3a5fa55
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078435"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761414"
 ---
 # <a name="groupmembers-complex-type"></a>groupMembers 复杂类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48078435"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [访问包分配策略](accesspackageassignmentpolicy.md)的请求、审批和分配审阅设置中使用。 `@odata.type`值 " `#microsoft.graph.groupMembers` " 表示此类型标识租户中将允许作为特定组成员的请求者、审批者或审阅者的用户集合。
+在访问包分配策略的请求、审批和分配审阅 [设置中使用](accesspackageassignmentpolicy.md)。 值" " 指示此类型标识租户中将允许作为请求者、审批者或审阅者的用户集合，这些用户是特定 `@odata.type` `#microsoft.graph.groupMembers` 组的成员。
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | Azure AD 中的组 ID。 |
-| 说明 |String | Azure AD 中的组的名称。 只读。 |
-| isBackup | Boolean | 对于审批阶段中的 **groupMembers** ，此属性指示组成员是备份回退审批者。 |
+| id |String | Azure AD 中组的 ID。 |
+| 说明 |String | Azure AD 中的组名称。 只读。 |
+| isBackup | 布尔 | 对于 **处于审批阶段的 groupMembers，** 此属性指示该组的成员是备份回退审批者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

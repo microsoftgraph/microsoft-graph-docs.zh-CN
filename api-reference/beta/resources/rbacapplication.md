@@ -3,14 +3,14 @@ title: rbacApplication 资源类型
 description: 角色管理导航属性
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e7145509745bdb696ebe3342035096af27d89b38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3833d07e0fb9758cc8f4f5418f725889fd784dc
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993047"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760923"
 ---
 # <a name="rbacapplication-resource-type"></a>rbacApplication 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "47993047"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-适用于 Microsoft 365 RBAC 提供程序的统一角色定义和角色分配的角色管理容器。 当前 "目录" 是唯一受支持的 RBAC 应用程序。
+用于 Microsoft 365 RBAC 提供程序的统一角色定义和角色分配的角色管理容器。 目前，"目录"是唯一受支持的 RBAC 应用程序。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [创建 unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | 通过发布到 roleAssignments 集合创建新的 unifiedRoleAssignment。 |
-| [List roleAssignments](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) 集合 | 获取 unifiedRoleAssignment 对象集合。 通过在 roleDefitionId 或 principalId 上进行筛选，只能查询特定的实例。 |
+| [List roleAssignments](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) 集合 | 获取 unifiedRoleAssignment 对象集合。 通过筛选 roleDefitionId 或 principalId，只能查询特定实例。 |
 | [创建 unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | 通过发布到 roleDefinitions 集合创建新的 unifiedRoleDefinition。 |
 | [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) 集合 | 获取 unifiedRoleDefinition 对象集合。 |
 

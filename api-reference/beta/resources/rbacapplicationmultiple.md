@@ -3,14 +3,14 @@ title: rbacApplicationMultiple 资源类型
 description: 角色管理导航属性
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5caf422293a0e06fa9ba524af2a4809b49709140
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba6c4973dd79f328c1d04ea26803a6b2aec39c7f
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026388"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760916"
 ---
 # <a name="rbacapplicationmultiple-resource-type"></a>rbacApplicationMultiple 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48026388"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于在单个角色分配中支持多个主体和多个作用域的 Microsoft 365 RBAC 提供程序的统一角色定义和角色分配的角色管理容器。 这不同于 [rbacApplication](rbacapplication.md) 资源类型。 Microsoft Intune 是此类 RBAC 提供程序的一个示例。 Intune 中的角色分配可以具有主体阵列和作用域组的阵列。
+用于统一角色定义的角色管理容器，以及支持单个作用域中的多个主体和多个作用域的 Microsoft 365 RBAC 提供程序角色分配。 这不同于 [rbacApplication](rbacapplication.md) 资源类型。 Microsoft Intune 是此类 RBAC 提供程序的一个示例。 Intune 角色分配可以有一个主体数组和一组作用域组。
 
 ## <a name="methods"></a>方法
 

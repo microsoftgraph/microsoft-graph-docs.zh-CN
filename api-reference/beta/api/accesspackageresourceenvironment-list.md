@@ -3,14 +3,14 @@ title: 列出 accessPackageResourceEnvironments
 description: 检索 accessPackageResourceEnvironment 对象的列表。
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0c8319198ae13894f6f5498bc4c018a26615ce59
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 823abc8a71cfce4ac7872f4e6e86ae7d08e92411
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50439488"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759409"
 ---
 # <a name="list-accesspackageresourceenvironments"></a>列出 accessPackageResourceEnvironments
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "50439488"
 
 检索 [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|不支持|
+|应用程序|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法需要 `$filter` [OData 查询参数](/graph/query-parameters)。 你必须申请 `$filter` **originSystem** 设置为 `eq` () `SharePointOnline` 。
+此方法需要 `$filter` [OData 查询参数](/graph/query-parameters)。 你必须申请 `$filter` **originSystem** 设置为 (`eq`) `SharePointOnline` 。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -51,7 +51,7 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

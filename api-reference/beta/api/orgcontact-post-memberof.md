@@ -3,14 +3,14 @@ title: 创建 memberOf
 description: 使用此 API 创建新的 memberOf。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4f523427d14f5ae5fdba4eeee33399d895277229
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e88f669020d1566765f9313182ee21bc33fe1dd9
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969429"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759417"
 ---
 # <a name="create-memberof"></a>创建 memberOf
 
