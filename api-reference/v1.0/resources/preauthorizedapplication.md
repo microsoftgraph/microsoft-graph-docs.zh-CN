@@ -3,30 +3,30 @@ title: preAuthorizedApplication 资源类型
 description: 列出预授权的客户端应用程序
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: fdc6b9692076040a4495074456f1b847e3af3c69
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 276b6f618b01d80fd66fda40c0b617a8fd01a6ac
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037246"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760972"
 ---
-# <a name="preauthorizedapplication-resource-type"></a><span data-ttu-id="0b9f9-103">preAuthorizedApplication 资源类型</span><span class="sxs-lookup"><span data-stu-id="0b9f9-103">preAuthorizedApplication resource type</span></span>
+# <a name="preauthorizedapplication-resource-type"></a><span data-ttu-id="dbeec-103">preAuthorizedApplication 资源类型</span><span class="sxs-lookup"><span data-stu-id="dbeec-103">preAuthorizedApplication resource type</span></span>
 
-<span data-ttu-id="0b9f9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0b9f9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dbeec-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dbeec-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0b9f9-105">列出使用指定权限预授权的客户端应用程序，以访问此应用程序的 Api。</span><span class="sxs-lookup"><span data-stu-id="0b9f9-105">Lists the client applications that are pre-authorized with the specified permissions to access this application's APIs.</span></span> <span data-ttu-id="0b9f9-106">用户无需同意) 指定的权限的任何预先授权的应用程序 (。</span><span class="sxs-lookup"><span data-stu-id="0b9f9-106">Users are not required to consent to any pre-authorized application (for the permissions specified).</span></span> <span data-ttu-id="0b9f9-107">但是，preAuthorizedApplications (中未列出的任何其他权限（例如，通过增量许可请求) ）将需要用户同意。</span><span class="sxs-lookup"><span data-stu-id="0b9f9-107">However, any additional permissions not listed in preAuthorizedApplications (requested through incremental consent for example) will require user consent.</span></span>
+<span data-ttu-id="dbeec-105">列出具有访问此应用程序 API 的指定权限的预授权客户端应用程序。</span><span class="sxs-lookup"><span data-stu-id="dbeec-105">Lists the client applications that are pre-authorized with the specified permissions to access this application's APIs.</span></span> <span data-ttu-id="dbeec-106">对于用户指定的权限，用户无需同意任何 (应用程序) 。</span><span class="sxs-lookup"><span data-stu-id="dbeec-106">Users are not required to consent to any pre-authorized application (for the permissions specified).</span></span> <span data-ttu-id="dbeec-107">但是，未在预AuthorizedApplications中 (增量许可请求的其他权限（例如) ）将需要用户同意。</span><span class="sxs-lookup"><span data-stu-id="dbeec-107">However, any additional permissions not listed in preAuthorizedApplications (requested through incremental consent for example) will require user consent.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0b9f9-108">属性</span><span class="sxs-lookup"><span data-stu-id="0b9f9-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="dbeec-108">属性</span><span class="sxs-lookup"><span data-stu-id="dbeec-108">Properties</span></span>
 
-| <span data-ttu-id="0b9f9-109">属性</span><span class="sxs-lookup"><span data-stu-id="0b9f9-109">Property</span></span> | <span data-ttu-id="0b9f9-110">类型</span><span class="sxs-lookup"><span data-stu-id="0b9f9-110">Type</span></span> | <span data-ttu-id="0b9f9-111">说明</span><span class="sxs-lookup"><span data-stu-id="0b9f9-111">Description</span></span> |
+| <span data-ttu-id="dbeec-109">属性</span><span class="sxs-lookup"><span data-stu-id="dbeec-109">Property</span></span> | <span data-ttu-id="dbeec-110">类型</span><span class="sxs-lookup"><span data-stu-id="dbeec-110">Type</span></span> | <span data-ttu-id="dbeec-111">说明</span><span class="sxs-lookup"><span data-stu-id="dbeec-111">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0b9f9-112">appId</span><span class="sxs-lookup"><span data-stu-id="0b9f9-112">appId</span></span>|<span data-ttu-id="0b9f9-113">String</span><span class="sxs-lookup"><span data-stu-id="0b9f9-113">String</span></span>| <span data-ttu-id="0b9f9-114">应用程序的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="0b9f9-114">The unique identifier for the application.</span></span> |
-|<span data-ttu-id="0b9f9-115">delegatedPermissionIds</span><span class="sxs-lookup"><span data-stu-id="0b9f9-115">delegatedPermissionIds</span></span>|<span data-ttu-id="0b9f9-116">String collection</span><span class="sxs-lookup"><span data-stu-id="0b9f9-116">String collection</span></span>| <span data-ttu-id="0b9f9-117">应用程序所需的 [oauth2PermissionScopes](permissionscope.md) 的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="0b9f9-117">The unique identifier for the [oauth2PermissionScopes](permissionscope.md) the application requires.</span></span> |
+|<span data-ttu-id="dbeec-112">appId</span><span class="sxs-lookup"><span data-stu-id="dbeec-112">appId</span></span>|<span data-ttu-id="dbeec-113">String</span><span class="sxs-lookup"><span data-stu-id="dbeec-113">String</span></span>| <span data-ttu-id="dbeec-114">应用程序的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="dbeec-114">The unique identifier for the application.</span></span> |
+|<span data-ttu-id="dbeec-115">delegatedPermissionIds</span><span class="sxs-lookup"><span data-stu-id="dbeec-115">delegatedPermissionIds</span></span>|<span data-ttu-id="dbeec-116">字符串集合</span><span class="sxs-lookup"><span data-stu-id="dbeec-116">String collection</span></span>| <span data-ttu-id="dbeec-117">应用程序所需的 [oauth2PermissionScopes 的唯](permissionscope.md) 一标识符。</span><span class="sxs-lookup"><span data-stu-id="dbeec-117">The unique identifier for the [oauth2PermissionScopes](permissionscope.md) the application requires.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="0b9f9-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0b9f9-118">JSON representation</span></span>
-<span data-ttu-id="0b9f9-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0b9f9-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dbeec-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="dbeec-118">JSON representation</span></span>
+<span data-ttu-id="dbeec-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dbeec-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
