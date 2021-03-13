@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3d73aee81403cf61e81c9fb1488e232447e25589
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 3de9156b2e7d0dd8063da766504015f9eb601774
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302350"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797615"
 ---
 ```objc
 
@@ -28,6 +28,9 @@ payloadDictionary[@"mediaConfig"] = mediaConfig;
 NSMutableArray *acceptedModalitiesList = [[NSMutableArray alloc] init];
 [acceptedModalitiesList addObject: @"audio"];
 payloadDictionary[@"acceptedModalities"] = acceptedModalitiesList;
+
+int32_t participantCapacity = 200;
+payloadDictionary[@"participantCapacity"] = participantCapacity;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];

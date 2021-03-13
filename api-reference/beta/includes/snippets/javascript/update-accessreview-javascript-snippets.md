@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6c8e2ae23f93ec56f3e065ecc7b4f0f6cb4ae27f
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: b7e35223f080e77af8d4d9034f23d6361206030c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636598"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799882"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const accessReview = {
-    displayName:"TestReview new name"
+    displayName: 'TestReview new name'
 };
 
-let res = await client.api('/accessReviews/006111db-0810-4494-a6df-904d368bd81b')
+await client.api('/accessReviews/006111db-0810-4494-a6df-904d368bd81b')
     .version('beta')
     .update(accessReview);
 

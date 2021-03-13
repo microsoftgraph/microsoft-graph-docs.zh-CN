@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: de886246aa436850cbd99e08289481ccd230edfd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 272682e9f32f8ec8b8f6cb88c8cfc416a484dc7d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50465201"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801632"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/reports/getCredentialUsageSummary(period='D30')')
+let getCredentialUsageSummary = await client.api('/reports/getCredentialUsageSummary(period='D30')')
     .version('beta')
     .filter('feature eq \'registration\'')
     .get();

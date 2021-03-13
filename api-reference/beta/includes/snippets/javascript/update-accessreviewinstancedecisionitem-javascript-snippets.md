@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。请勿修改
-ms.openlocfilehash: 7ffa51b48c4b71dd2fc7e6065a026c919c7824fe
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 4aaef54f8e1eaef851c6e58f243789629ead7fed
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214331"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793479"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const accessReviewInstanceDecisionItem = {
-  decision: "Approve",
-  justification: "I trust this person"
+  decision: 'Approve',
+  justification: 'I trust this person'
 };
 
-let res = await client.api('/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/654b34e7-b48f-4772-a2d4-08f1d0dd014c')
+await client.api('/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/654b34e7-b48f-4772-a2d4-08f1d0dd014c')
     .version('beta')
     .update(accessReviewInstanceDecisionItem);
 

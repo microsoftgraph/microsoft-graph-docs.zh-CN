@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 246b574f64b1f4a450134547e046673c50cb0ee0
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: ab9a054a39a564a71168c083b7903a83e9a720a7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48621997"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785658"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const validateProperties = {
-  displayName: "Myprefix_test_mysuffix",
-  mailNickname: "Myprefix_test_mysuffix",
-  onBehalfOfUserId: "onBehalfOfUserId-value"
+  displayName: 'Myprefix_test_mysuffix',
+  mailNickname: 'Myprefix_test_mysuffix',
+  onBehalfOfUserId: 'onBehalfOfUserId-value'
 };
 
-let res = await client.api('/groups/{id}/validateProperties')
+await client.api('/groups/{id}/validateProperties')
     .version('beta')
     .post(validateProperties);
 

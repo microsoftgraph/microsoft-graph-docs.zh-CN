@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 30ee73242b08fbda93126c1ee11dd22914a23674
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 1ace2992316f6704e6fd4cad91e9dacb6ad4a135
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910572"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789322"
 ---
 ```csharp
 
@@ -21,7 +21,7 @@ var activityBasedTimeoutPolicy = new ActivityBasedTimeoutPolicy
     IsOrganizationDefault = true
 };
 
-await graphClient.Policies.ActivityBasedTimeoutPolicies["{id}"]
+await graphClient.Policies.ActivityBasedTimeoutPolicies["{activityBasedTimeoutPolicy-id}"]
     .Request()
     .UpdateAsync(activityBasedTimeoutPolicy);
 

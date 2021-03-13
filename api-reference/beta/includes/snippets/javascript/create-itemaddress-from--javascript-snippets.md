@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c02d668e10afd511dc03a651ddff2acf412d473a
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: e6a6184ac5e450984570ed71b4199dfcb0e0324f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820228"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789103"
 ---
 ```javascript
 
@@ -16,19 +16,19 @@ const options = {
 const client = Client.init(options);
 
 const itemAddress = {
-  displayName: "Home",
+  displayName: 'Home',
   detail: {
-    type: "home",
+    type: 'home',
     postOfficeBox: null,
-    street: "221B Baker Street",
-    city: "London",
+    street: '221B Baker Street',
+    city: 'London',
     state: null,
-    countryOrRegion: "United Kingdom",
-    postalCode: "E14 3TD"
+    countryOrRegion: 'United Kingdom',
+    postalCode: 'E14 3TD'
   }
 };
 
-let res = await client.api('/me/profile/addresses')
+await client.api('/me/profile/addresses')
     .version('beta')
     .post(itemAddress);
 

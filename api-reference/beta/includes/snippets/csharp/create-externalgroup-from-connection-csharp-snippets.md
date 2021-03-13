@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2f0ac3e7838e8d4c56819c4800db5731e1434ef2
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 8d2de86b0f580ab14af1c02ac81e71dd50bce56d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223167"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808113"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var externalGroup = new ExternalGroup
     Description = "The product marketing team"
 };
 
-await graphClient.External.Connections["contosohr"].Groups
+await graphClient.External.Connections["{externalConnection-id}"].Groups
     .Request()
     .AddAsync(externalGroup);
 

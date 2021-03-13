@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: db34c3e42c51a4d39e68b2835a75113846bd233f
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 57548a1a5fb4176ecbe2c93d599e1b63abdc3e77
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302349"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808793"
 ---
 ```javascript
 
@@ -16,17 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const answer = {
-  callbackUri: "callbackUri-value",
+  callbackUri: 'callbackUri-value',
   mediaConfig: {
-    @odata.type: "#microsoft.graph.appHostedMediaConfig",
-    blob: "<Media Session Configuration Blob>"
+    '@odata.type': '#microsoft.graph.appHostedMediaConfig',
+    blob: '<Media Session Configuration Blob>'
   },
   acceptedModalities: [
-    "audio"
-  ]
+    'audio'
+  ],
+  participantCapacity: 200
 };
 
-let res = await client.api('/communications/calls/{id}/answer')
+await client.api('/communications/calls/{id}/answer')
     .version('beta')
     .post(answer);
 

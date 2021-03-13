@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d04a191acfed67716ccb700b1d369fbfc45b87d0
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: b715fed08892659087f7daa4076e6065a00545f0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684241"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784032"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var queryOptions = new List<QueryOption>()
     new QueryOption("endDateTime", "2019-04-30T09:00:00.0000000")
 };
 
-var instances = await graphClient.Me.Events["AAMkAGUzYRgWAAA="].Instances
+var instances = await graphClient.Me.Events["{event-id}"].Instances
     .Request( queryOptions )
     .Select("subject,bodyPreview,seriesMasterId,type,recurrence,start,end")
     .GetAsync();

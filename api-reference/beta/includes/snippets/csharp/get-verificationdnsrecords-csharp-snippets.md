@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f1795572ecdfa9e185dee24715a9ec89945fb13a
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: c939cc9328006f9257da7cc381e41df224e72480
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48603477"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803386"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var verificationDnsRecords = await graphClient.Domains["contoso.com"].VerificationDnsRecords
+var verificationDnsRecords = await graphClient.Domains["{domain-id}"].VerificationDnsRecords
     .Request()
     .GetAsync();
 
