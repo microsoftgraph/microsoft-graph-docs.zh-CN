@@ -5,32 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7a6d446e68125b8be0d750f1c81cfa7d3f11a5c5
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: c88e7eb1b3bd357735689ba36955170372b8b9e4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577385"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770402"
 ---
-# <a name="update-itemphonenumber"></a><span data-ttu-id="a7f72-103">更新 itemphonenumber</span><span class="sxs-lookup"><span data-stu-id="a7f72-103">Update itemphonenumber</span></span>
+# <a name="update-itemphonenumber"></a><span data-ttu-id="655ae-103">更新 itemphonenumber</span><span class="sxs-lookup"><span data-stu-id="655ae-103">Update itemphonenumber</span></span>
 
-<span data-ttu-id="a7f72-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a7f72-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="655ae-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="655ae-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a7f72-105">更新用户配置文件 [中的 itemPhone](../resources/itemphone.md) 对象 [的属性](../resources/profile.md)。</span><span class="sxs-lookup"><span data-stu-id="a7f72-105">Update the properties of an [itemPhone](../resources/itemphone.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="655ae-105">更新用户配置文件 [中的 itemPhone](../resources/itemphone.md) 对象 [的属性](../resources/profile.md)。</span><span class="sxs-lookup"><span data-stu-id="655ae-105">Update the properties of an [itemPhone](../resources/itemphone.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a7f72-106">权限</span><span class="sxs-lookup"><span data-stu-id="a7f72-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="655ae-106">权限</span><span class="sxs-lookup"><span data-stu-id="655ae-106">Permissions</span></span>
 
-<span data-ttu-id="a7f72-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a7f72-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="655ae-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="655ae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a7f72-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a7f72-109">Permission type</span></span>                        | <span data-ttu-id="a7f72-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a7f72-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="655ae-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="655ae-109">Permission type</span></span>                        | <span data-ttu-id="655ae-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="655ae-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a7f72-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a7f72-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a7f72-112">User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a7f72-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="a7f72-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a7f72-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a7f72-114">User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a7f72-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="a7f72-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a7f72-115">Application</span></span>                            | <span data-ttu-id="a7f72-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a7f72-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="655ae-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="655ae-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="655ae-112">User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="655ae-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="655ae-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="655ae-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="655ae-114">User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="655ae-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="655ae-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="655ae-115">Application</span></span>                            | <span data-ttu-id="655ae-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="655ae-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="a7f72-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a7f72-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="655ae-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="655ae-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,35 +41,35 @@ PATCH /me/profile/phones/{id}
 PATCH /users/{userId}/profile/phones/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a7f72-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="a7f72-118">Request headers</span></span>
-|<span data-ttu-id="a7f72-119">名称</span><span class="sxs-lookup"><span data-stu-id="a7f72-119">Name</span></span>|<span data-ttu-id="a7f72-120">说明</span><span class="sxs-lookup"><span data-stu-id="a7f72-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="655ae-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="655ae-118">Request headers</span></span>
+|<span data-ttu-id="655ae-119">名称</span><span class="sxs-lookup"><span data-stu-id="655ae-119">Name</span></span>|<span data-ttu-id="655ae-120">说明</span><span class="sxs-lookup"><span data-stu-id="655ae-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="a7f72-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a7f72-121">Authorization</span></span>|<span data-ttu-id="a7f72-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a7f72-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="a7f72-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a7f72-124">Content-Type</span></span>|<span data-ttu-id="a7f72-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="a7f72-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="655ae-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="655ae-121">Authorization</span></span>|<span data-ttu-id="655ae-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="655ae-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="655ae-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="655ae-124">Content-Type</span></span>|<span data-ttu-id="655ae-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="655ae-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a7f72-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="a7f72-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="655ae-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="655ae-127">Request body</span></span>
 
-<span data-ttu-id="a7f72-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="a7f72-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="a7f72-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="a7f72-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="a7f72-130">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="a7f72-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="655ae-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="655ae-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="655ae-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="655ae-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="655ae-130">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="655ae-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-<span data-ttu-id="a7f72-131">下表显示更新用户配置文件中的 [itemPhone](../resources/itemphone.md) 对象时可以设置的属性。</span><span class="sxs-lookup"><span data-stu-id="a7f72-131">The following table shows the properties that are possible to set when you update an [itemPhone](../resources/itemphone.md) object in a users profile.</span></span>
+<span data-ttu-id="655ae-131">下表显示更新用户配置文件中的 [itemPhone](../resources/itemphone.md) 对象时可能设置的属性。</span><span class="sxs-lookup"><span data-stu-id="655ae-131">The following table shows the properties that are possible to set when you update an [itemPhone](../resources/itemphone.md) object in a users profile.</span></span>
 
-|<span data-ttu-id="a7f72-132">属性</span><span class="sxs-lookup"><span data-stu-id="a7f72-132">Property</span></span>|<span data-ttu-id="a7f72-133">类型</span><span class="sxs-lookup"><span data-stu-id="a7f72-133">Type</span></span>|<span data-ttu-id="a7f72-134">说明</span><span class="sxs-lookup"><span data-stu-id="a7f72-134">Description</span></span>|
+|<span data-ttu-id="655ae-132">属性</span><span class="sxs-lookup"><span data-stu-id="655ae-132">Property</span></span>|<span data-ttu-id="655ae-133">类型</span><span class="sxs-lookup"><span data-stu-id="655ae-133">Type</span></span>|<span data-ttu-id="655ae-134">说明</span><span class="sxs-lookup"><span data-stu-id="655ae-134">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a7f72-135">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="a7f72-135">allowedAudiences</span></span>|<span data-ttu-id="a7f72-136">字符串</span><span class="sxs-lookup"><span data-stu-id="a7f72-136">String</span></span>|<span data-ttu-id="a7f72-137">能够查看实体中包含的值的访问群体。</span><span class="sxs-lookup"><span data-stu-id="a7f72-137">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="a7f72-138">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="a7f72-138">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="a7f72-139">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="a7f72-139">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="a7f72-140">displayName</span><span class="sxs-lookup"><span data-stu-id="a7f72-140">displayName</span></span>|<span data-ttu-id="a7f72-141">字符串</span><span class="sxs-lookup"><span data-stu-id="a7f72-141">String</span></span>|<span data-ttu-id="a7f72-142">用户已分配此电话号码的友好名称。</span><span class="sxs-lookup"><span data-stu-id="a7f72-142">Friendly name the user has assigned this phone number.</span></span> |
-|<span data-ttu-id="a7f72-143">推断</span><span class="sxs-lookup"><span data-stu-id="a7f72-143">inference</span></span>|[<span data-ttu-id="a7f72-144">inferenceData</span><span class="sxs-lookup"><span data-stu-id="a7f72-144">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="a7f72-145">包含实体是否由创建或修改应用程序推断的推断详细信息。</span><span class="sxs-lookup"><span data-stu-id="a7f72-145">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="a7f72-146">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="a7f72-146">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="a7f72-147">number</span><span class="sxs-lookup"><span data-stu-id="a7f72-147">number</span></span>|<span data-ttu-id="a7f72-148">字符串</span><span class="sxs-lookup"><span data-stu-id="a7f72-148">String</span></span>|<span data-ttu-id="a7f72-149">用户提供的电话号码。</span><span class="sxs-lookup"><span data-stu-id="a7f72-149">Phone number provided by the user.</span></span>|
-|<span data-ttu-id="a7f72-150">source</span><span class="sxs-lookup"><span data-stu-id="a7f72-150">source</span></span>|[<span data-ttu-id="a7f72-151">personDataSource</span><span class="sxs-lookup"><span data-stu-id="a7f72-151">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="a7f72-152">如果从另一个服务同步，则值源自何处。</span><span class="sxs-lookup"><span data-stu-id="a7f72-152">Where the values originated if synced from another service.</span></span> <span data-ttu-id="a7f72-153">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="a7f72-153">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="a7f72-154">type</span><span class="sxs-lookup"><span data-stu-id="a7f72-154">type</span></span>|<span data-ttu-id="a7f72-155">phoneType</span><span class="sxs-lookup"><span data-stu-id="a7f72-155">phoneType</span></span>|<span data-ttu-id="a7f72-156">对象中电话号码的类型。</span><span class="sxs-lookup"><span data-stu-id="a7f72-156">The type of phone number within the object.</span></span> <span data-ttu-id="a7f72-157">可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。</span><span class="sxs-lookup"><span data-stu-id="a7f72-157">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
+|<span data-ttu-id="655ae-135">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="655ae-135">allowedAudiences</span></span>|<span data-ttu-id="655ae-136">字符串</span><span class="sxs-lookup"><span data-stu-id="655ae-136">String</span></span>|<span data-ttu-id="655ae-137">能够查看实体中包含的值的访问群体。</span><span class="sxs-lookup"><span data-stu-id="655ae-137">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="655ae-138">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="655ae-138">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="655ae-139">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="655ae-139">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="655ae-140">displayName</span><span class="sxs-lookup"><span data-stu-id="655ae-140">displayName</span></span>|<span data-ttu-id="655ae-141">字符串</span><span class="sxs-lookup"><span data-stu-id="655ae-141">String</span></span>|<span data-ttu-id="655ae-142">用户已分配此电话号码的友好名称。</span><span class="sxs-lookup"><span data-stu-id="655ae-142">Friendly name the user has assigned this phone number.</span></span> |
+|<span data-ttu-id="655ae-143">inference</span><span class="sxs-lookup"><span data-stu-id="655ae-143">inference</span></span>|[<span data-ttu-id="655ae-144">inferenceData</span><span class="sxs-lookup"><span data-stu-id="655ae-144">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="655ae-145">如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。</span><span class="sxs-lookup"><span data-stu-id="655ae-145">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="655ae-146">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="655ae-146">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="655ae-147">number</span><span class="sxs-lookup"><span data-stu-id="655ae-147">number</span></span>|<span data-ttu-id="655ae-148">字符串</span><span class="sxs-lookup"><span data-stu-id="655ae-148">String</span></span>|<span data-ttu-id="655ae-149">用户提供的电话号码。</span><span class="sxs-lookup"><span data-stu-id="655ae-149">Phone number provided by the user.</span></span>|
+|<span data-ttu-id="655ae-150">source</span><span class="sxs-lookup"><span data-stu-id="655ae-150">source</span></span>|[<span data-ttu-id="655ae-151">personDataSource</span><span class="sxs-lookup"><span data-stu-id="655ae-151">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="655ae-152">如果从另一个服务同步，则值源自何处。</span><span class="sxs-lookup"><span data-stu-id="655ae-152">Where the values originated if synced from another service.</span></span> <span data-ttu-id="655ae-153">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="655ae-153">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="655ae-154">type</span><span class="sxs-lookup"><span data-stu-id="655ae-154">type</span></span>|<span data-ttu-id="655ae-155">phoneType</span><span class="sxs-lookup"><span data-stu-id="655ae-155">phoneType</span></span>|<span data-ttu-id="655ae-156">对象中电话号码的类型。</span><span class="sxs-lookup"><span data-stu-id="655ae-156">The type of phone number within the object.</span></span> <span data-ttu-id="655ae-157">可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。</span><span class="sxs-lookup"><span data-stu-id="655ae-157">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a7f72-158">响应</span><span class="sxs-lookup"><span data-stu-id="a7f72-158">Response</span></span>
+## <a name="response"></a><span data-ttu-id="655ae-158">响应</span><span class="sxs-lookup"><span data-stu-id="655ae-158">Response</span></span>
 
-<span data-ttu-id="a7f72-159">如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的 [itemPhone](../resources/itemphone.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a7f72-159">If successful, this method returns a `200 OK` response code and an updated [itemPhone](../resources/itemphone.md) object in the response body.</span></span>
+<span data-ttu-id="655ae-159">如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [itemPhone](../resources/itemphone.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="655ae-159">If successful, this method returns a `200 OK` response code and an updated [itemPhone](../resources/itemphone.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a7f72-160">示例</span><span class="sxs-lookup"><span data-stu-id="a7f72-160">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="655ae-160">示例</span><span class="sxs-lookup"><span data-stu-id="655ae-160">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a7f72-161">请求</span><span class="sxs-lookup"><span data-stu-id="a7f72-161">Request</span></span>
-# <a name="http"></a>[<span data-ttu-id="a7f72-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="a7f72-162">HTTP</span></span>](#tab/http)
+### <a name="request"></a><span data-ttu-id="655ae-161">请求</span><span class="sxs-lookup"><span data-stu-id="655ae-161">Request</span></span>
+# <a name="http"></a>[<span data-ttu-id="655ae-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="655ae-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_itemphone"
@@ -84,22 +84,26 @@ Content-length: 382
   "type": "other"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a7f72-163">C#</span><span class="sxs-lookup"><span data-stu-id="a7f72-163">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="655ae-163">C#</span><span class="sxs-lookup"><span data-stu-id="655ae-163">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-itemphone-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a7f72-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a7f72-164">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="655ae-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="655ae-164">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-itemphone-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a7f72-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a7f72-165">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="655ae-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="655ae-165">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-itemphone-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="655ae-166">Java</span><span class="sxs-lookup"><span data-stu-id="655ae-166">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-itemphone-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="a7f72-166">响应</span><span class="sxs-lookup"><span data-stu-id="a7f72-166">Response</span></span>
-<span data-ttu-id="a7f72-167">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a7f72-167">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="655ae-167">响应</span><span class="sxs-lookup"><span data-stu-id="655ae-167">Response</span></span>
+<span data-ttu-id="655ae-168">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="655ae-168">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
