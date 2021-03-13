@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: c868f7162f171cbb552c216139cc6afdc3aea988
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 07ee284f40264c76ec6156235fab651fff77cfe6
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516239"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777003"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -332,14 +332,11 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出你的团队](/graph/api/user-list-joinedteams)。
 
-### <a name="unable-to-remove-members-from-chat"></a>无法从聊天中删除成员
-在某些情况下，即使聊天成员存在，对 `DELETE /chats/chat-id/members/membership-id` 的呼叫也会失败，错误代码是 `404`。 这是由于 `membership-id` 计算产生的问题。
-
 ### <a name="unable-to-filter-team-members-by-roles"></a>无法按角色筛选团队成员
 基于角色 `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` 获取团队成员的筛选查询可能无法正常工作。 服务可能使用 `BAD REQUEST` 响应。
 
-### <a name="missing-tenantid-for-chat-members"></a>聊天用户缺失 tenantId
-在某些实例中，聊天个体成员的属性 `tenantId` 可能不会据 `GET /chats/chat-id/members` 或 `GET /chats/chat-id/members/membership-id` 请求填充。
+### <a name="missing-properties-for-chat-members"></a>聊天成员缺少属性
+在某些情况下，聊天中`tenantId` / `email` / `displayName`成员的个人属性可能不会填充到请求`GET /chats/chat-id/members``GET /chats/chat-id/members/membership-id`中。
 
 ## <a name="users"></a>用户
 

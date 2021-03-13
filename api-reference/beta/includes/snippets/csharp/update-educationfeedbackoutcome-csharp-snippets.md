@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4e5a2a04d15c4b9e9cc22e8396420ac27c07e79b
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: ac7a3c555c75650fd54cd86d7f71e0273abc14ec
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681701"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787065"
 ---
 ```csharp
 
@@ -23,7 +23,7 @@ var educationOutcome = new EducationFeedbackOutcome
     }
 };
 
-await graphClient.Education.Me.Assignments["{id}"].Submissions["{id}"].Outcomes["{id}"]
+await graphClient.Education.Me.Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes["{educationOutcome-id}"]
     .Request()
     .UpdateAsync(educationOutcome);
 

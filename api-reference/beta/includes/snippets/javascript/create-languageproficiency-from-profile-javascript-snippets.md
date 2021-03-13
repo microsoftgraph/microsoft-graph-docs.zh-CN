@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d77a9851c741112f49e7b21b1d3e93d94e8745e8
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 5816dc2112811a2fa9962e3d6866eb42801f5cf1
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46821096"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800659"
 ---
 ```javascript
 
@@ -16,14 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const languageProficiency = {
-  displayName: "Norwegian Bokmål",
-  tag: "nb-NO",
-  spoken: "nativeOrBilingual",
-  written: "nativeOrBilingual",
-  reading: "nativeOrBilingual"
+  displayName: 'Norwegian Bokmål',
+  tag: 'nb-NO',
+  spoken: 'nativeOrBilingual',
+  written: 'nativeOrBilingual',
+  reading: 'nativeOrBilingual'
 };
 
-let res = await client.api('/me/profile/languages')
+await client.api('/me/profile/languages')
     .version('beta')
     .post(languageProficiency);
 

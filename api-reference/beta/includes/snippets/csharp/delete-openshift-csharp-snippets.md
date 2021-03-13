@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 73e84873b25b7e66b32e66e3bb2e2613c449e139
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: db098d4c635189b88550dd698586f7807fa4472e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44219213"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794771"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Teams["{id}"].Schedule.OpenShifts["OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
+await graphClient.Teams["{team-id}"].Schedule.OpenShifts["{openShift-id}"]
     .Request()
     .DeleteAsync();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8d2653638dc9afc3f2f80d1eaaac5f357d0f16a2
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: c09c69478b0e5b8955075af644c09a1767cf0bc9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620792"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807361"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var parentReference = new ItemReference
 
 var name = "contoso plan (copy).txt";
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
     .Copy(name,parentReference)
     .Request()
     .PostAsync();

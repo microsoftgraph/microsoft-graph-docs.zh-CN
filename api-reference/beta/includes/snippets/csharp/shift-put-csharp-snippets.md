@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 12eecd86f1c63434d6524f6efb47bd92d89552ea
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 480e0b73b04b709f572ca226027cd3764afc7e61
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684484"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806311"
 ---
 ```csharp
 
@@ -72,7 +72,7 @@ var shift = new Shift
     }
 };
 
-await graphClient.Teams["{teamId}"].Schedule.Shifts["{shiftId}"]
+await graphClient.Teams["{team-id}"].Schedule.Shifts["{shift-id}"]
     .Request()
     .Header("Prefer","return=representation")
     .PutAsync(shift);

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e0a94941a932c43ad84af337eb508c91453262c1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d45452c2f348637dc37e9af9109b02ef248e85d3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50465399"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796419"
 ---
 ```csharp
 
@@ -33,7 +33,7 @@ var templateParameters = new List<KeyValuePair>()
     }
 };
 
-await graphClient.Users["{userId}"].Teamwork
+await graphClient.Users["{user-id}"].Teamwork
     .SendActivityNotification(topic,activityType,null,previewText,templateParameters,null)
     .Request()
     .PostAsync();

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7b01cbb78820796b086f8ac715fd38f90b7e33bf
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9c58f4c4fa405d6eccf3f6712ea9b86f724a7037
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636710"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795786"
 ---
 ```javascript
 
@@ -16,18 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const outlookTask = {
-  subject: "Shop for children's weekend",
+  subject: 'Shop for children\'s weekend',
   startDateTime: {
-      dateTime: "2016-05-03T09:00:00",
-      timeZone: "Eastern Standard Time"
+      dateTime: '2016-05-03T09:00:00',
+      timeZone: 'Eastern Standard Time'
   },
-  dueDateTime:  {
-      dateTime: "2016-05-05T16:00:00",
-      timeZone: "Eastern Standard Time"
+  dueDateTime: {
+      dateTime: '2016-05-05T16:00:00',
+      timeZone: 'Eastern Standard Time'
   }
 };
 
-let res = await client.api('/me/outlook/tasks')
+await client.api('/me/outlook/tasks')
     .version('beta')
     .post(outlookTask);
 

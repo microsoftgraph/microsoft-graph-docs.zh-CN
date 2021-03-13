@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 048407e27da9fe2cc54f7e432b663f710a1c0d3f
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 616af720875e7edf01d6fefff0f32eed48a5d611
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44685221"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794268"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var educationUser = new EducationUser
     }
 };
 
-await graphClient.Education.Schools["{id}"].Users.References
+await graphClient.Education.Schools["{educationSchool-id}"].Users.References
     .Request()
     .AddAsync(educationUser);
 

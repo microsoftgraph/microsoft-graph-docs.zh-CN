@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 992306a5fc19c67d40c8d93594f3649e577f82ca
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: b59df0b0cbf4f3066eb6d735bf630e48b58723f6
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37554894"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50780515"
 ---
 ```javascript
 
@@ -16,28 +16,28 @@ const options = {
 const client = Client.init(options);
 
 const educationSchool = {
-  displayName: "Fabrikam High School",
-  description: "Magnate school for the arts. Los Angeles School District",
-  status: "String",
-  externalSource: "String",
-  principalEmail: "AmyR@fabrikam.com",
-  principalName: "Amy Roebuck",
-  externalPrincipalId: "14007",
-  highestGrade: "12",
-  lowestGrade: "9",
-  schoolNumber: "10002",
+  displayName: 'Fabrikam High School',
+  description: 'Magnate school for the arts. Los Angeles School District',
+  status: 'String',
+  externalSource: 'String',
+  principalEmail: 'AmyR@fabrikam.com',
+  principalName: 'Amy Roebuck',
+  externalPrincipalId: '14007',
+  highestGrade: '12',
+  lowestGrade: '9',
+  schoolNumber: '10002',
   address: {
-    city: "Los Angeles",
-    countryOrRegion: "United States",
-    postalCode: "98055",
-    state: "CA",
-    street: "12345 Main St."
+    city: 'Los Angeles',
+    countryOrRegion: 'United States',
+    postalCode: '98055',
+    state: 'CA',
+    street: '12345 Main St.'
   },
-  externalId: "10002",
-  phone: "+1 (253) 555-0102",
+  externalId: '10002',
+  phone: '+1 (253) 555-0102',
 };
 
-let res = await client.api('/education/schools')
+await client.api('/education/schools')
     .version('beta')
     .post(educationSchool);
 

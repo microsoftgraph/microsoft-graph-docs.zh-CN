@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 20f0d353631ac08b4ea8c42143c0e213a017e7d3
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a30eb6cda478d01d5eb159c7932c518d25fee753
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460992"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789251"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/me/rubrics/{id}')
+let educationRubric = await client.api('/education/me/rubrics/{id}')
     .version('beta')
     .get();
 

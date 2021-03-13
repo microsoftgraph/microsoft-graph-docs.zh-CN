@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0fa9e470b6034e7efefb0c4fdf7cae9e403ececf
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e9d2c382e2d7632a672c7197ec1e4238a8455159
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37041850"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785020"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var ids = new List<String>()
     "ac38546e-ddf3-437a-ac5c-27a94cd7a0f1"
 };
 
-await graphClient.ServicePrincipals["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"]
     .CheckMemberObjects(ids)
     .Request()
     .PostAsync();
