@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b0bf1fc96c91f3f2ec7e714bb46251d12ed6df24
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 73d5d258e727dd2ef99812e7c1ec74a1b5902f67
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910608"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808117"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var workforceIntegration = new WorkforceIntegration
     Supports = WorkforceIntegrationSupportedEntities.None
 };
 
-await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegrationId}"]
+await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegration-id}"]
     .Request()
     .UpdateAsync(workforceIntegration);
 

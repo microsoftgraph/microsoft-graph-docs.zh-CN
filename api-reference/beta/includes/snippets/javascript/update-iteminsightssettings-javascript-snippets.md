@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 789abeb2ffc588d5fd9fc2419b49851e8432aa67
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 06a28fc5b4074cefbcbb1a0566dbf0e682b6177a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567062"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789860"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const itemInsightsSettings = {
-  disabledForGroup: "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+  disabledForGroup: 'edbfe4fb-ec70-4300-928f-dbb2ae86c981'
 };
 
-let res = await client.api('/organization/{organizationId}/settings/itemInsights')
+await client.api('/organization/{organizationId}/settings/itemInsights')
     .version('beta')
     .update(itemInsightsSettings);
 

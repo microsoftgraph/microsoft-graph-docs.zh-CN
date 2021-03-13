@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c3bde045b81c501b1649b0abec770a3586420ebe
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: a5f431530531849aa899168983b6632e09f164e8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427861"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789765"
 ---
 ```javascript
 
@@ -16,26 +16,26 @@ const options = {
 const client = Client.init(options);
 
 const reply = {
-  message:{  
-    toRecipients:[
+  message: {  
+    toRecipients: [
       {
         emailAddress: {
-          address:"samanthab@contoso.onmicrosoft.com",
-          name:"Samantha Booth"
+          address: 'samanthab@contoso.onmicrosoft.com',
+          name: 'Samantha Booth'
         }
       },
       {
-        emailAddress:{
-          address:"randiw@contoso.onmicrosoft.com",
-          name:"Randi Welch"
+        emailAddress: {
+          address: 'randiw@contoso.onmicrosoft.com',
+          name: 'Randi Welch'
         }
       }
      ]
   },
-  comment: "Samantha, Randi, would you name the group please?" 
+  comment: 'Samantha, Randi, would you name the group please?' 
 };
 
-let res = await client.api('/me/messages/AAMkADA1MTAAAAqldOAAA=/reply')
+await client.api('/me/messages/AAMkADA1MTAAAAqldOAAA=/reply')
     .version('beta')
     .post(reply);
 

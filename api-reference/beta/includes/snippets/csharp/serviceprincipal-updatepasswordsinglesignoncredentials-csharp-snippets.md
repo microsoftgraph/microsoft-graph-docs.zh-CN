@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0a5b8382f5b51fe26bfc79c6b2da4d3e77ad8faf
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 43cd7844499ea87607aaa969b1fbd5d26475c59f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747806"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793210"
 ---
 ```csharp
 
@@ -29,7 +29,7 @@ var credentials = new List<Credential>()
     }
 };
 
-await graphClient.ServicePrincipals["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"]
     .UpdatePasswordSingleSignOnCredentials(id,credentials)
     .Request()
     .PostAsync();

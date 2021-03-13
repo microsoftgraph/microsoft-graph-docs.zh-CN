@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3b23587857c9568a42ae7bfd134aff305aff13a1
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 5afd066e669d515bac159b28a5b2aa488264616b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910609"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795913"
 ---
 ```javascript
 
@@ -16,18 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const workforceIntegration = {
-  displayName: "displayName-value",
+  displayName: 'displayName-value',
   apiVersion: 99,
   encryption: {
-    protocol: "protocol-value",
-    secret: "secret-value"
+    protocol: 'protocol-value',
+    secret: 'secret-value'
   },
   isActive: true,
-  url: "url-value",
-  supports: "supports-value"
+  url: 'url-value',
+  supports: 'supports-value'
 };
 
-let res = await client.api('/teamwork/workforceIntegrations/{workforceIntegrationId}')
+await client.api('/teamwork/workforceIntegrations/{workforceIntegrationId}')
     .version('beta')
     .update(workforceIntegration);
 

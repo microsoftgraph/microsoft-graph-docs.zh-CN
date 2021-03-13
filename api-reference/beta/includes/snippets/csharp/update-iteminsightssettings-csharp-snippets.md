@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9c6cdaebc0cbc72a511d39c089d82c140f4796e3
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 630b043046dc4cac61a919f5e6a564727b1ef0d8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567065"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794110"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var itemInsightsSettings = new ItemInsightsSettings
     DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 };
 
-await graphClient.Organization["{organizationId}"].Settings.ItemInsights
+await graphClient.Organization["{organization-id}"].Settings.ItemInsights
     .Request()
     .UpdateAsync(itemInsightsSettings);
 
