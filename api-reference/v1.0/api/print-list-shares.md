@@ -5,32 +5,32 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 52fa7ceebdfc425cff29c6f9a29a91a4cf796478
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 1841f80be8d5062419f4b12d98f25e062e91ed49
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517009"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777157"
 ---
-# <a name="list-shares"></a><span data-ttu-id="2f49f-103">列出共享项</span><span class="sxs-lookup"><span data-stu-id="2f49f-103">List shares</span></span>
-<span data-ttu-id="2f49f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f49f-104">Namespace: microsoft.graph</span></span>
+# <a name="list-shares"></a><span data-ttu-id="88a96-103">列出共享项</span><span class="sxs-lookup"><span data-stu-id="88a96-103">List shares</span></span>
+<span data-ttu-id="88a96-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88a96-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-<span data-ttu-id="2f49f-105">检索 **printerShares 的列表**。</span><span class="sxs-lookup"><span data-stu-id="2f49f-105">Retrieve a list of **printerShares**.</span></span>
+<span data-ttu-id="88a96-105">检索 **printerShares 列表**。</span><span class="sxs-lookup"><span data-stu-id="88a96-105">Retrieve a list of **printerShares**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2f49f-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="2f49f-106">Permissions</span></span>
-<span data-ttu-id="2f49f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2f49f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="88a96-106">权限</span><span class="sxs-lookup"><span data-stu-id="88a96-106">Permissions</span></span>
+<span data-ttu-id="88a96-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="88a96-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="2f49f-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="2f49f-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span>
+<span data-ttu-id="88a96-109">若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。</span><span class="sxs-lookup"><span data-stu-id="88a96-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span>
 
-|<span data-ttu-id="2f49f-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2f49f-110">Permission type</span></span> | <span data-ttu-id="2f49f-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2f49f-111">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="88a96-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="88a96-110">Permission type</span></span> | <span data-ttu-id="88a96-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="88a96-111">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="2f49f-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2f49f-112">Delegated (work or school account)</span></span>| <span data-ttu-id="2f49f-113">PrinterShare.Read.All、PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f49f-113">PrinterShare.Read.All, PrinterShare.ReadWrite.All</span></span> |
-|<span data-ttu-id="2f49f-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2f49f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2f49f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="2f49f-115">Not Supported.</span></span>|
-|<span data-ttu-id="2f49f-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2f49f-116">Application</span></span>|<span data-ttu-id="2f49f-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="2f49f-117">Not Supported.</span></span>|
+|<span data-ttu-id="88a96-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="88a96-112">Delegated (work or school account)</span></span>| <span data-ttu-id="88a96-113">PrinterShare.Read.All、PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88a96-113">PrinterShare.Read.All, PrinterShare.ReadWrite.All</span></span> |
+|<span data-ttu-id="88a96-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="88a96-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="88a96-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="88a96-115">Not Supported.</span></span>|
+|<span data-ttu-id="88a96-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="88a96-116">Application</span></span>|<span data-ttu-id="88a96-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="88a96-117">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2f49f-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2f49f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="88a96-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="88a96-118">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -40,31 +40,33 @@ ms.locfileid: "50517009"
 GET /print/shares
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2f49f-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2f49f-119">Optional query parameters</span></span>
-<span data-ttu-id="2f49f-120">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2f49f-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="2f49f-121">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="2f49f-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="88a96-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="88a96-119">Optional query parameters</span></span>
+<span data-ttu-id="88a96-120">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="88a96-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="88a96-121">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="88a96-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-<span data-ttu-id="2f49f-122">若要查看每个打印机共享功能的列表，请包含可选的 `$select=capabilities` 查询参数。</span><span class="sxs-lookup"><span data-stu-id="2f49f-122">To see a list of each printer share's capabilities, include the optional `$select=capabilities` query parameter.</span></span>
+<span data-ttu-id="88a96-122">若要查看每个打印机共享功能的列表，请包含可选的 `$select=capabilities` 查询参数。</span><span class="sxs-lookup"><span data-stu-id="88a96-122">To see a list of each printer share's capabilities, include the optional `$select=capabilities` query parameter.</span></span>
 
-### <a name="exceptions"></a><span data-ttu-id="2f49f-123">Exceptions</span><span class="sxs-lookup"><span data-stu-id="2f49f-123">Exceptions</span></span>
-<span data-ttu-id="2f49f-124">不支持某些运算符：、 `$count` `$orderby` 、 `$search` 。</span><span class="sxs-lookup"><span data-stu-id="2f49f-124">Some operators are not supported: `$count`, `$orderby`, `$search`.</span></span>
+### <a name="exceptions"></a><span data-ttu-id="88a96-123">Exceptions</span><span class="sxs-lookup"><span data-stu-id="88a96-123">Exceptions</span></span>
+<span data-ttu-id="88a96-124">不支持某些运算符 `$count` `$orderby` ：、、。 `$search`</span><span class="sxs-lookup"><span data-stu-id="88a96-124">Some operators are not supported: `$count`, `$orderby`, `$search`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2f49f-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="2f49f-125">Request headers</span></span>
-|<span data-ttu-id="2f49f-126">名称</span><span class="sxs-lookup"><span data-stu-id="2f49f-126">Name</span></span>|<span data-ttu-id="2f49f-127">说明</span><span class="sxs-lookup"><span data-stu-id="2f49f-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="88a96-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="88a96-125">Request headers</span></span>
+|<span data-ttu-id="88a96-126">名称</span><span class="sxs-lookup"><span data-stu-id="88a96-126">Name</span></span>|<span data-ttu-id="88a96-127">说明</span><span class="sxs-lookup"><span data-stu-id="88a96-127">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="2f49f-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f49f-128">Authorization</span></span>|<span data-ttu-id="2f49f-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2f49f-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="88a96-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="88a96-128">Authorization</span></span>|<span data-ttu-id="88a96-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="88a96-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2f49f-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="2f49f-131">Request body</span></span>
-<span data-ttu-id="2f49f-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2f49f-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="88a96-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="88a96-131">Request body</span></span>
+<span data-ttu-id="88a96-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="88a96-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2f49f-133">响应</span><span class="sxs-lookup"><span data-stu-id="2f49f-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="88a96-133">响应</span><span class="sxs-lookup"><span data-stu-id="88a96-133">Response</span></span>
 
-<span data-ttu-id="2f49f-134">如果成功，此方法在响应正文中返回响应代码和 `200 OK` [printerShare](../resources/printershare.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="2f49f-134">If successful, this method returns a `200 OK` response code and a collection of [printerShare](../resources/printershare.md) objects in the response body.</span></span>
+<span data-ttu-id="88a96-134">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printerShare](../resources/printershare.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="88a96-134">If successful, this method returns a `200 OK` response code and a collection of [printerShare](../resources/printershare.md) objects in the response body.</span></span>
 
-><span data-ttu-id="2f49f-135">**注意**：响应将不包含 **默认值\*\*\*\*和功能** 属性。</span><span class="sxs-lookup"><span data-stu-id="2f49f-135">**Note**: The response will not contain the **defaults** and **capabilities** properties.</span></span> <span data-ttu-id="2f49f-136">可以通过获取 [printerShare](printershare-get.md) 请求获取这些属性。</span><span class="sxs-lookup"><span data-stu-id="2f49f-136">You can get these properties via a [Get printerShare](printershare-get.md) request.</span></span>
+><span data-ttu-id="88a96-135">**注意**：该响应将不包含 **defaults** **和 capabilities** 属性。</span><span class="sxs-lookup"><span data-stu-id="88a96-135">**Note**: The response will not contain the **defaults** and **capabilities** properties.</span></span> <span data-ttu-id="88a96-136">可以通过获取 [printerShare](printershare-get.md) 请求获取这些属性。</span><span class="sxs-lookup"><span data-stu-id="88a96-136">You can get these properties via a [Get printerShare](printershare-get.md) request.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2f49f-137">示例</span><span class="sxs-lookup"><span data-stu-id="2f49f-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="88a96-137">示例</span><span class="sxs-lookup"><span data-stu-id="88a96-137">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="2f49f-138">请求</span><span class="sxs-lookup"><span data-stu-id="2f49f-138">Request</span></span>
+### <a name="request"></a><span data-ttu-id="88a96-138">请求</span><span class="sxs-lookup"><span data-stu-id="88a96-138">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="88a96-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="88a96-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_printershare"
@@ -73,10 +75,28 @@ GET /print/shares
 ``` http
 GET https://graph.microsoft.com/v1.0/print/shares
 ```
+# <a name="c"></a>[<span data-ttu-id="88a96-140">C#</span><span class="sxs-lookup"><span data-stu-id="88a96-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printershare-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="88a96-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88a96-141">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printershare-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="88a96-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88a96-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printershare-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="88a96-143">Java</span><span class="sxs-lookup"><span data-stu-id="88a96-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-printershare-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="2f49f-139">响应</span><span class="sxs-lookup"><span data-stu-id="2f49f-139">Response</span></span>
-<span data-ttu-id="2f49f-140">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="2f49f-140">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+### <a name="response"></a><span data-ttu-id="88a96-144">响应</span><span class="sxs-lookup"><span data-stu-id="88a96-144">Response</span></span>
+<span data-ttu-id="88a96-145">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="88a96-145">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
