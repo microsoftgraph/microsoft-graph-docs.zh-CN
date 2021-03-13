@@ -1,16 +1,16 @@
 ---
 title: case： reopen
-description: 重新打开已关闭的电子数据展示案例。
+description: 重新打开已关闭电子数据展示案例。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5eaa03b81502273e6aae914fa699311457df9cd9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2b220e42a6bc7bf69fee34b69bb9d40ed16137de
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446075"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773716"
 ---
 # <a name="case-reopen"></a>case： reopen
 
@@ -18,9 +18,9 @@ ms.locfileid: "50446075"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重新打开已关闭的电子数据展示案例。 有关详细信息，请参阅重新打开 [已关闭的大小写](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case)。
+重新打开已关闭电子数据展示案例。 有关详细信息，请参阅 [重新打开已关闭的案例](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50446075"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,19 +71,19 @@ POST /compliance/ediscovery/cases/{caseId}/reopen
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583/reopen
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverycase-reopen-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/case-reopen-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverycase-reopen-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/case-reopen-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/ediscoverycase-reopen-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/case-reopen-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/ediscoverycase-reopen-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/case-reopen-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a3ff911392d019bb387298dc2fb8252b222ed520
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: caa084ecb1d1d468e9be237f22bed2ab80cd1b41
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714135"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772413"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 
@@ -27,28 +27,28 @@ ms.locfileid: "49714135"
 |:---------------|:--------|:----------|
 |[列出团队成员](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|获取此团队中的成员列表。|
 |[添加团队成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|向团队中添加新成员。|
-|[批量添加团队成员](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) 集合|在单个请求中将多个成员添加到团队中。|
+|[批量添加团队成员。](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) 集合|在单个请求中将多个成员添加到团队中。|
 |[获取团队成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
-|[更新团队成员的角色](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
+|[更新成员角色](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
 |[删除团队成员](../api/team-delete-members.md)|无|删除团队中的一个现有成员。|
-|[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中所有成员的列表。|
+|[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的所有成员列表。|
 |[添加频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
 |[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
 |[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
 |[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
-|[列出聊天成员](../api/chat-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中所有成员的列表。|
+|[列出聊天成员](../api/chat-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中的所有成员列表。|
 |[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天添加成员。| 
 |[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的成员。|
-|[删除聊天成员](../api/chat-delete-members.md) | Node | 从聊天中删除成员。| 
+|[删除聊天成员](../api/chat-delete-members.md) | 无 | 从聊天中删除成员。| 
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 用户的唯一 ID。|
+|id|字符串| 只读。 用户的唯一 ID。|
 |displayName| string | 用户的显示名称。 |
 |角色| string 集合 | 该用户的角色。 |
-|visibleHistoryStartDateTime| DateTimeOffset | 表示对话历史记录与对话成员共享多远的时间戳。 此属性仅对聊天成员可设置。 |
+|visibleHistoryStartDateTime| DateTimeOffset | 表示对话历史久远程度的时间戳与对话成员共享。 此属性只对聊天成员可设置。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

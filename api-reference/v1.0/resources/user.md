@@ -1,16 +1,16 @@
 ---
 title: 用户资源类型
 description: 表示 Azure AD 用户帐户。继承自 directoryObject。
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 7d045aa253a866c5efc81c19fd67a74f5a0692ae
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 59386e9bec4dd00a8cb146e9782fb1c2dfc4fcaf
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516554"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722296"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -56,10 +56,10 @@ ms.locfileid: "50516554"
 | [List contactFolders](../api/user-list-contactfolders.md)                                  | [ContactFolder](contactfolder.md) 集合                                     | 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。                                                                                                                                             |
 | **目录对象**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。                                                                                                            |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | String collection                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                                                                  |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | 字符串集合                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | String 集合                                                                | 检查组、目录角色或管理单元对象列表中的成员身份。 此函数可传递。                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | 无                                                                             | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。                                                                                                                   |
-| [getByIds](../api/directoryobject-getbyids.md)                                             | String collection                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                                                                           |
+| [getByIds](../api/directoryobject-getbyids.md)                                             | 字符串集合                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                                                                           |
 | [getMemberGroups](../api/user-getmembergroups.md)                                          | String collection                                                                | 返回用户是其成员的所有组。检查是可传递的。                                                                                                                                                        |
 | [getMemberObjects](../api/user-getmemberobjects.md)                                        | String collection                                                                | 返回用户所属的所有组和目录角色。检查是可传递的。                                                                                                                                 |
 | [List createdObjects](../api/user-list-createdobjects.md)                                  | [directoryObject](directoryobject.md) collection                                 | 从 createdObjects 导航属性中获取此用户创建的目录对象。                                                                                                                                          |
@@ -138,7 +138,7 @@ ms.locfileid: "50516554"
 |ageGroup|[ageGroup](#agegroup-values)|设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。 |
-|birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|birthday|DateTimeOffset|用户的生日。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |businessPhones|String collection|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。 <br><br>本地目录同步的用户为只读。 默认返回。|
 |城市|String|用户所在的城市。 支持 `$filter`。|
 |companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 此公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。|
@@ -157,14 +157,14 @@ ms.locfileid: "50516554"
 |externalUserStateChangeDateTime|DateTimeOffset|显示最近一次修改 **externalUserState** 属性的时间戳。 <br><br>仅在 `$select` 上返回。|
 |faxNumber|String|用户的传真号。|
 |givenName|String|用户的名。 默认情况下返回。 支持 `$filter`。|
-| hireDate | DateTimeOffset | 用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>仅在 `$select` 上返回。 <br><br> **注意：** 此属性特定于 SharePoint Online。 建议使用本地 **employeeHireDate** 属性来设置和更新使用 Microsoft Graph API 的聘用日期值。 |
-|id|String|用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 键。 <br><br>不可为 null。 只读。|
+| hireDate | DateTimeOffset | 用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>仅在 `$select` 上返回。 <br><br> **注意：** 此属性特定于 SharePoint Online。 建议使用本地 **employeeHireDate** 属性来设置和更新使用 Microsoft Graph API 的聘用日期值。 |
+|id|String|用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 键。 <br><br>不可为空。 只读。|
 |identities|[objectIdentity](objectIdentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br>支持 `$filter`。|
 |imAddresses|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |isResourceAccount|布尔| 请勿使用 – 保留以备今后使用。|
 |jobTitle|String|用户的职务。 默认情况下返回。 支持 `$filter`。|
-|lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”|
+|lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。 只读。|
 |mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 支持 `$filter` 和 `endsWith`。|
@@ -177,7 +177,7 @@ ms.locfileid: "50516554"
 |onPremisesDomainName|String| 包含从本地目录同步的本地 `domainFQDN`（也称为 dnsDomainName）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，这组属性集的授权来源是本地，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为假），可以在创建或更新期间设置这些属性。 这些扩展属性也称 Exchange 自定义属性 1-15。 |
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。 如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，必须在创建新用户帐户时指定此属性。 **重要说明：** 指定此属性时不能使用 **$** 和 **\_** 字符。 支持 `$filter`。                            |
-|onPremisesLastSyncDateTime|DateTimeOffset|表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
+|onPremisesLastSyncDateTime|DateTimeOffset|表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 |
 |onPremisesSamAccountName|String| 包含从本地目录同步的本地 `samAccountName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。|
@@ -251,6 +251,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 
 | 关系 | 类型    |说明|
 |:---------------|:--------|:----------|
+|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户使用条款接受状态。 只读。 可为空。|
 |activities|[userActivity](projectrome-activity.md) 集合|跨设备的用户活动。 只读。 可为 NULL。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示已向应用程序授予用户的应用角色。 |
 |日历|[calendar](calendar.md)|用户的主日历。只读。|
@@ -276,7 +277,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |outlook|[outlookUser](outlookuser.md)| 只读。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
-|people|[person](person.md) 集合| 与用户相关的人员。 只读。 可为 NULL。
+|people|[person](person.md) 集合| 与用户相关的人员。 只读。 可为 Null。
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
 |planner|[plannerUser](planneruser.md)| 用户可能存在的 Planner 资源入口点。 只读。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|

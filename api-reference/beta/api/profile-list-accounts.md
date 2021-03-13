@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ded9150c3896f1b10c0ba0ac9077c4d3aae209ad
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 4852c19fc6b416c8df78960a484e178c6b30520b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474839"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772483"
 ---
 # <a name="list-accounts"></a>列出帐户
 
@@ -18,7 +18,7 @@ ms.locfileid: "50474839"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从配置文件中检索与用户帐户相关的 [属性](../resources/profile.md)。
+从配置文件 中检索与用户帐户相关的 [属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "50474839"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
-| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
+| Application                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,9 +46,9 @@ GET /users/{id | userPrincipalName}/profile/account
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制到仅包含指定条件的对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 $orderby 参数更改 *响应* 的顺序。|
+|$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 $orderby 参数 *更改响应* 的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
-|$skip           |int      |跳过前 n 个结果，对分页很有用。                                                                                                                                |
+|$skip           |int      |跳过前 n 个结果，可用于分页。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
 
 
@@ -65,7 +65,7 @@ GET /users/{id | userPrincipalName}/profile/account
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [userAccountInformation](../resources/useraccountinformation.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userAccountInformation](../resources/useraccountinformation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -73,6 +73,8 @@ GET /users/{id | userPrincipalName}/profile/account
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_account"
@@ -81,6 +83,24 @@ GET /users/{id | userPrincipalName}/profile/account
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/account
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-account-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-account-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-account-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-account-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

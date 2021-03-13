@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8a9d0be04c615c6affc7cf2bb0dfe4a4496e064b
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: e65a154b17a1b7e1491908b03a5125bc69006fcd
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092528"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50773632"
 ---
 # <a name="get-educationassignmentsettings"></a>获取 educationAssignmentSettings
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "50092528"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite|
+|委派（工作或学校帐户）|EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /education/classes/{id}/assignmentSettings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [educationAssignmentSettings](../resources/educationassignmentsettings.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignmentSettings](../resources/educationassignmentsettings.md) 对象。
 
 ## <a name="examples"></a>示例
 

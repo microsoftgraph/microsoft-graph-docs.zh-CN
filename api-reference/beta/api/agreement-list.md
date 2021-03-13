@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 13bc5308f12ce83e03177f79df1264cca9b35bf1
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 620ca66a2f443f1cf935cb9b5accc35c68d7eb1d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471575"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773961"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -46,10 +46,12 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [协议](../resources/agreement.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 agreement](../resources/agreement.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agreements"
@@ -57,6 +59,24 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-agreements-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agreements-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-agreements-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。

@@ -5,17 +5,17 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 45edea76de53e127d6b74de3b680d4b9d8bd9309
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 16993d5919c0d588710ac2835cc2bd0f4f46a1a7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576041"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774213"
 ---
 # <a name="delete-personannotation"></a>删除 personAnnotation
 命名空间：microsoft.graph
 
-从用户配置文件 [中删除 personAnnotation](../resources/personannotation.md) [对象](../resources/profile.md)。
+从用户配置文件中删除 [personAnnotation](../resources/personannotation.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "50576041"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
-| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
+| Application                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -63,15 +63,19 @@ DELETE /users/{id | userPrincipalName}/profile/notes/{id}
 DELETE https://graph.microsoft.com/beta/users/{userId}/profile/notes/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-personannotation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-personannotation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-personannotation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-personannotation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,21 +5,21 @@ description: 获取可添加到列表中的网站内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 2cda6c5e62fc85db8d512d814064fd977fa36b9e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 99ca8f23b153f8835fc841e142b79684601bd293
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446710"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772448"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>site： getApplicableContentTypesForList
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[][][可添加到列表中的网站 contentType。][contentType]
+获取[][][可添加到列表中的][contentType]网站内容类型。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,23 +56,43 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 
 |参数|类型|说明|
 |-|-|-|-|
-|listId| String | 需要获取适用内容类型的列表的 GUID。 必需。 |
+|listId| 字符串 | 需要获取适用内容类型的列表的 GUID。 必需。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回响应 `200 OK` 代码和 [contentType](../resources/contenttype.md) 集合。
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [contentType](../resources/contenttype.md) 集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "site_getapplicablecontenttypesforlist"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{siteId}/getApplicableContentTypesForList(listId='listId')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/site-getapplicablecontenttypesforlist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/site-getapplicablecontenttypesforlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/site-getapplicablecontenttypesforlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/site-getapplicablecontenttypesforlist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -116,4 +136,4 @@ Content-type: application/json
 ```
 
 [contentType]: ../resources/contentType.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md

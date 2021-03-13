@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 285178adb4f0df591e1d1270d60b572f346d57e1
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ae45fb686c3b76156b0423ee3890fd306502aa82
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472893"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774248"
 ---
-# <a name="create-outlooktaskfolder-deprecated"></a>创建 outlookTaskFolder (已弃) 
+# <a name="create-outlooktaskfolder-deprecated"></a>创建已弃 (outlookTaskFolder) 
 
 命名空间：microsoft.graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "50472893"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Tasks.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Tasks.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,12 +47,14 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `201 Created` 和 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例创建一个指定任务 `Cooking` 组中调用的任务文件夹。
+下面的示例创建一个在指定的任务 `Cooking` 组中调用的任务文件夹。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
@@ -66,6 +68,24 @@ Content-length: 131
   "name": "Cooking"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-outlooktaskfolder-from-outlooktaskgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktaskfolder-from-outlooktaskgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-outlooktaskfolder-from-outlooktaskgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-outlooktaskfolder-from-outlooktaskgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 在请求正文中，提供 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应

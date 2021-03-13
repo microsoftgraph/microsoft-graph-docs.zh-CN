@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 92652621016d25d2c712ccdd87b730d7f94d576d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 266ea3603050f34ad77003b9052189abba56baaa
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446038"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772974"
 ---
 # <a name="create-legalhold-usersource"></a>创建 legalHold userSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446038"
 
 将 userSource 添加到 legalHold 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,17 +56,19 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 
 |属性|类型|说明|
 |:---|:---|:---|
-|email|String|用户的 SMTP 地址。|
-|includedSources|microsoft.graph.ediscovery.sourceType|指定此组中包含的源。 目前 `mailbox` `site` ，legalHolds 不支持此值。|
+|email|字符串|用户的 SMTP 地址。|
+|includedSources|microsoft.graph.ediscovery.sourceType|指定此组中包含的源。 此值必须为 `mailbox` ， `site` 目前不支持 legalHolds。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_usersource_from_"
@@ -83,6 +85,24 @@ Content-length: 208
   "includedSources": "mailbox"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-usersource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

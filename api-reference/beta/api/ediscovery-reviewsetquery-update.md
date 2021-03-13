@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 863a64bd0182d43c32756b6b214753a498d400df
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ebb702472756cdaac31281437362c69bdef6690e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515756"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772792"
 ---
 # <a name="update-reviewsetquery"></a>更新 reviewSetQuery
 
@@ -50,8 +50,8 @@ PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| displayName | String | 查看集查询的显示名称。 |
-| 查询 | String | KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅 ["文档元数据"字段](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 |
+| displayName | 字符串 | 他们查看集查询的显示名称。 |
+| 查询 | 字符串 | KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅文档 [元数据字段](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 |
 
 ## <a name="response"></a>响应
 
@@ -62,6 +62,8 @@ PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_reviewsetquery"
@@ -75,6 +77,24 @@ Content-type: application/json
   "displayName": "My Query 1 - Renamed"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-reviewsetquery-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-reviewsetquery-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-reviewsetquery-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-reviewsetquery-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

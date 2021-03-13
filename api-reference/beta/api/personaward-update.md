@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 821293e804b5ec56cdde33464695ad0dcec7a103
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: f1724f0b623c1e2b9b6ea57933509121b72c32cf
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574025"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774094"
 ---
 # <a name="update-personaward"></a>更新 personAward
 
@@ -52,9 +52,9 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|说明|字符串|奖励或特权的授予。 |
+|说明|字符串|奖励或奖励的奖励。 |
 |displayName|字符串|奖励或奖励的名称。 |
-|推断|[inferenceData](../resources/inferencedata.md)|包含实体是否由创建或修改应用程序推断的推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |issuedDate|日期|授予奖励或奖励的日期。 |
 |issuingAuthority|字符串|授予该奖励或奖励的颁发机构。  |
 |thumbnailUrl|字符串|引用奖励或奖励缩略图的 URL。  |
@@ -62,7 +62,7 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的 [personAward](../resources/personaward.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [personAward](../resources/personaward.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,15 +84,19 @@ Content-length: 497
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-personaward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-personaward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-personaward-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-personaward-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,18 +1,18 @@
 ---
-title: 创建保管人 userSource
+title: 创建 custodian userSource
 description: 创建新的保管人 userSource 对象。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 040c4178a269998117e55e86016a4683c5293a2e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bc683082d0839673b7f7f4ef4a8d4e5c41675f7e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446055"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773205"
 ---
-# <a name="create-custodian-usersource"></a>创建保管人 userSource
+# <a name="create-custodian-usersource"></a>创建 custodian userSource
 
 命名空间：microsoft.graph.ediscovery
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446055"
 
 创建新的保管人 [userSource](../resources/ediscovery-usersource.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,17 +56,19 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/userSources
 
 |属性|类型|说明|
 |:---|:---|:---|
-|email|String|用户的 SMTP 地址。|
+|email|字符串|用户的 SMTP 地址。|
 |includedSources|microsoft.graph.ediscovery.sourceType|指定此组中包含的源。 可取值为：`mailbox`、`site`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_usersource_from_"
@@ -83,6 +85,24 @@ Content-length: 233
     "includedSources":"mailbox, site"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-usersource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

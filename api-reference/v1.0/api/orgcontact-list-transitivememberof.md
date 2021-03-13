@@ -3,14 +3,14 @@ title: 列出 transitiveMemberOf
 description: 获取组织联系人是其中一个成员的组。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 94a41d23225615a6233b8d37a5cded8f569c7898
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 5049ecb59180eb6a62137ff2beaa83b42a19f7de
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625988"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773478"
 ---
 # <a name="list-transitivememberof"></a>列出 transitiveMemberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "50625988"
 
 获取此 [组织联系人是](../resources/orgcontact.md) 其中一个成员的组。 API 请求是可传递的，并返回组织联系人是嵌套成员的所有组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -38,7 +38,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,6 +61,8 @@ GET /contacts/{id}/transitiveMemberOf
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgcontact_list_transitivememberof"
@@ -69,6 +71,24 @@ GET /contacts/{id}/transitiveMemberOf
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts/{id}/transitiveMemberOf
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-list-transitivememberof-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-list-transitivememberof-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-list-transitivememberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/orgcontact-list-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 69476c91acffc6d0a1edc8a18cc4208c5239fa26
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1ba26e01cd51a4819fa8947967f5865a9ec84fe3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446080"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773793"
 ---
 # <a name="create-sourcecollection"></a>创建 sourceCollection
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446080"
 
 创建新的 [sourceCollection](../resources/ediscovery-sourcecollection.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,22 +52,24 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 
 在请求正文中，提供 [sourceCollection](../resources/ediscovery-sourcecollection.md) 对象的 JSON 表示形式。
 
-下表显示创建 [sourceCollection](../resources/ediscovery-sourcecollection.md)时所需的属性。
+下表显示创建 [sourceCollection 时所需的属性](../resources/ediscovery-sourcecollection.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|**sourceCollection** 显示名称|
-|custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|要在此搜索中包括的保管人源。 你可以从保管人[siteSources、unifiedGroupSources](../api/ediscovery-custodian-list-sitesources.md)或[userSources](../api/ediscovery-custodian-list-usersources.md)获取 URL 以及源的 ID。 [](../api/ediscovery-custodian-list-unifiedgroupsources.md) **注意：** 创建源集合时，需要一个保管人或指定租户源。 |
+|displayName|字符串|**sourceCollection 显示名称**|
+|custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|要包含在此搜索中的保管人源。 你可以从保管人[siteSources、unifiedGroupSources](../api/ediscovery-custodian-list-sitesources.md)或[userSources](../api/ediscovery-custodian-list-usersources.md)获取 URL 以及源的 ID。 [](../api/ediscovery-custodian-list-unifiedgroupsources.md) **注意：** 创建源集合时，需要一个保管人或指定租户源。 |
 |tenantSources|microsoft.graph.ediscovery.tenantSources|指定此参数时，集合将跨越整个工作负荷的服务。 可取值为：`allMailboxes`、`allSites`。 **注意：** 创建源集合时，需要一个保管人或指定租户源。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_sourcecollection_from_"
@@ -87,6 +89,24 @@ Content-length: 272
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-sourcecollection-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-sourcecollection-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-sourcecollection-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-sourcecollection-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

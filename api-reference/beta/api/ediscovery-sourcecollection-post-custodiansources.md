@@ -1,16 +1,16 @@
 ---
 title: 添加 custodianSources
-description: 将现有 DataSource 对象添加到源集合。
+description: 将实际 dataSource 对象添加到源集合。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 58088bb97f66cf0c5ac379526b641c1bf0985250
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: aa5f895046548e43b982511be36587e989c38b67
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445996"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772574"
 ---
 # <a name="add-custodiansources"></a>添加 custodianSources
 
@@ -18,9 +18,9 @@ ms.locfileid: "50445996"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将保管 [人 DataSource](../resources/ediscovery-datasource.md) 对象添加到源集合。
+将 custodian [dataSource](../resources/ediscovery-datasource.md) 对象添加到源集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,16 +56,18 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |属性|类型|说明|
 |:---|:---|:---|
-|@odata.id|String|定义前向对象的字符串。 请参阅下面的示例。|
+|@odata.id|字符串|定义空心对象的字符串。 请参阅下面的示例。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `204 No Content` [microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `204 No Content` [microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_datasource_from_"
@@ -81,6 +83,24 @@ Content-length: 179
   "@odata.id":"https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/custodians/ab3a628a383045eba344b3caecba3104/userSources/31423539-3846-4333-4136-353644383531"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-datasource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-datasource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-datasource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

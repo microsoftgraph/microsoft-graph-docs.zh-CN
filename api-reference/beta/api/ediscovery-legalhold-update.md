@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 6f44bc276bdc3ae5f23ce3243127a38d4e7a6063
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 21789c048ee18fd604e44110bea7e995c891b17f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446036"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772946"
 ---
 # <a name="update-legalhold"></a>更新 legalHold
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446036"
 
 更新 [legalHold 对象](../resources/ediscovery-legalhold.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,9 +54,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|contentQuery|String|指定要位于指定位置的内容的 KQL 查询。 有关电子数据展示中的 KQL 详细信息，请参阅内容搜索和电子数据展示的关键字查询 [和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。 若要保留指定位置中所有内容，请保留 **contentQuery** 为空。 |
-|说明|String| 法定保留说明。 |
-|displayName|String| 法定显示名称的一部分。 |
+|contentQuery|字符串|指定要位于指定位置的内容的 KQL 查询。 有关电子数据展示中的 KQL 详细信息，请参阅内容搜索和电子数据展示的关键字查询 [和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。 若要保留指定位置中所有的内容，请保留 **contentQuery** 为空。 |
+|说明|字符串| 法定保留说明。 |
+|displayName|字符串| 法定显示名称的保留项。 |
 |isEnabled|Boolean|指示是否启用保留并主动保留内容。 |
 
 ## <a name="response"></a>响应
@@ -67,6 +67,8 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_legalhold"
@@ -82,6 +84,24 @@ Content-length: 295
   "description": "This is a description for a legalHold"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-legalhold-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-legalhold-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-legalhold-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-legalhold-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

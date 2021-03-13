@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 24b2a72efc8e0f36a6cf8f00161a3ca636987805
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 79b2e56cdb0e7e6ad4acf09625af54e413291b08
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446073"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773653"
 ---
 # <a name="update-case"></a>更新案例
 
@@ -18,9 +18,9 @@ ms.locfileid: "50446073"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 case [对象的属性](../resources/ediscovery-case.md) 。
+更新 [case](../resources/ediscovery-case.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,13 +50,13 @@ PATCH /compliance/ediscovery/cases/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|String|案例描述。|
-|displayName|String|大小写名称。|
+|说明|字符串|案例描述。|
+|displayName|字符串|大小写名称。|
 |externalId|String|客户参考的外部案例编号。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` [的 microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -83,19 +83,19 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoverycase-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-case-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-ediscoverycase-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-case-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-ediscoverycase-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-case-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-ediscoverycase-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-case-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

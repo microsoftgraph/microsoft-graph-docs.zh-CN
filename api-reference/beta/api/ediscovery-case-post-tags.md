@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ee08824511ffd3f32b78d5c04726686eee4d4dd4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 412a0cd1ae4f8c38466a6526a5c84eea670897bb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446078"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773758"
 ---
 # <a name="create-tag"></a>创建标记
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446078"
 
 为指定案例创建新标记。  标记在审阅内容时用于审阅集。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,23 +50,25 @@ POST /compliance/ediscovery/cases/{caseId}/tags
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供标记对象的 JSON [表示形式](../resources/ediscovery-tag.md) 。
+在请求正文中，提供 tag 对象的 JSON [表示](../resources/ediscovery-tag.md) 形式。
 
-下表显示创建标记时所需的 [属性](../resources/ediscovery-tag.md)。
+下表显示创建 标记时所需的 [属性](../resources/ediscovery-tag.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|指示单个或多个子标记是否可以与文档关联。 可取值为：`One`、`Many`。  此值控制 UX 是作为复选框还是单选按钮组显示标记。 必需。|
-|displayName|String|标记的显示名称。 必需。|
+|childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|指示是否可以将单个或多个子标记与文档关联。 可取值为：`One`、`Many`。  此值控制 UX 是作为复选框还是单选按钮组显示标记。 必需。|
+|displayName|字符串|标记的显示名称。 必需。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tag_from_"
@@ -84,6 +86,24 @@ Content-length: 235
   "parent@odata.bind":"https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/98fdad78bbce4519b75474bc150575c3"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-tag-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-tag-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-tag-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-tag-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

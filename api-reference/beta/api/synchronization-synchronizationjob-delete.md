@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: d10196464b9662a6ad2c24ec8aaee5ea5cf925fa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d4b154cca11b46c53d6929ea9522a7ff36c3b908
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129669"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50773576"
 ---
 # <a name="delete-synchronizationjob"></a>删除 synchronizationJob
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129669"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-停止同步作业，并永久删除与其关联的所有状态。 已同步的帐户将保持同一状态。
+停止同步作业，并永久删除与其关联的所有状态。 同步的帐户将保持为已同步。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50129669"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。  |
-|Application                            |不支持。 | 
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>响应
 
-如果成功，则返回 `204 No Content` 响应。 它不在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 

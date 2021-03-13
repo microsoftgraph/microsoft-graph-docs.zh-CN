@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7f4de1ad20f683286f177e90386511118bb9acb9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 34834c8ee010c8365a68b587b333bdaae6abe1fd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445994"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772532"
 ---
 # <a name="tag-ashierarchy"></a>tag： asHierarchy
 
@@ -18,9 +18,9 @@ ms.locfileid: "50445994"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回层次结构窗体中的 [标记](../resources/ediscovery-tag.md) 对象列表
+返回层次结构 [窗体中的标记](../resources/ediscovery-tag.md) 对象列表
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,12 +53,14 @@ GET /compliance/ediscovery/cases/{caseId}/tags/asHierarchy
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回响应代码和 `200 OK` [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 集合。
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tag_ashierarchy"
@@ -68,6 +70,24 @@ GET /compliance/ediscovery/cases/{caseId}/tags/asHierarchy
 ``` http
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/asHierarchy
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tag-ashierarchy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tag-ashierarchy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/tag-ashierarchy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tag-ashierarchy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

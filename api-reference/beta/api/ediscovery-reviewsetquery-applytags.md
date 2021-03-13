@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2c3f41d1fbe9851babc582c1f21c9f9673d53541
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 19e9e64d57ec2966ecc3ff1596849f322575a692
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446025"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772820"
 ---
 # <a name="reviewsetquery-applytags"></a>reviewSetQuery：applyTags
 
@@ -18,7 +18,7 @@ ms.locfileid: "50446025"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -55,18 +55,20 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{rev
 |参数|类型|说明|
 |:---|:---|:---|
 |tagsToAdd|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 集合|要添加到与查询匹配的文档的标记的标识。|
-|tagsToRemove|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 集合|要从匹配查询的文档中删除的标记的标识。|
+|tagsToRemove|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 集合|要从与查询匹配的文档中删除的标记的标识。|
 
 ## <a name="response"></a>响应
 
 如果成功，此操作返回 `202 Accepted` 响应代码。
 
-如果标记操作成功启动，此操作将返回 `202 Accepted` 响应代码。 响应还将包含一个标头，其中包含为处理标记而创建的 `Location` [tagOperation](../resources/ediscovery-tagOperation.md) 的位置。 通过向位置提出 GET 请求来检查标记操作的状态，成功完成后， [状态将更改为](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) `succeeded` 。
+如果标记操作成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头，其中包含为处理标记而创建的 `Location` [tagOperation](../resources/ediscovery-tagOperation.md) 的位置。 通过向位置发送 GET 请求来检查标记操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded` 。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reviewsetquery_applytags"
@@ -86,6 +88,24 @@ Content-length: 778
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reviewsetquery-applytags-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reviewsetquery-applytags-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reviewsetquery-applytags-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reviewsetquery-applytags-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

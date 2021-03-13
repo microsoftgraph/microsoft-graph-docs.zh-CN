@@ -1,26 +1,26 @@
 ---
-title: reviewSet：export
+title: reviewSet： export
 description: 从 reviewSet 启动导出。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7ee3744470cf5fac31abad2d4cc53ba47a0feca5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2620f72eced3bc9f5c6fb02e5e034a6116af5f2c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446031"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772855"
 ---
-# <a name="reviewset-export"></a>reviewSet：export
+# <a name="reviewset-export"></a>reviewSet： export
 
 命名空间：microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 **reviewSet** 启动导出。  有关详细信息，请参阅 ["从高级电子数据展示"中的审阅](/microsoft-365/compliance/export-documents-from-review-set)集导出文档。
+从 **reviewSet 中启动导出**。  有关详细信息，请参阅在高级电子数据展示 [中从审阅集导出文档](/microsoft-365/compliance/export-documents-from-review-set)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,21 +56,23 @@ POST /compliance/ediscovery/cases/{caseId}/reviewsets/{reviewsetId}/export
 
 |参数|类型|说明|
 |:---|:---|:---|
-|outputName|String| 导出的名称。 必需。 |
-|description|String| 导出说明 |
-|azureBlobContainer|String| 导出到你自己的 Azure 存储帐户时，这是容器 URL。 |
-|azureBlobToken|String| 导出到你自己的 Azure 存储帐户时，容器 URL 的 SAS 令牌。 |
+|outputName|字符串| 导出的名称。 必需。 |
+|description|字符串| 导出说明 |
+|azureBlobContainer|字符串| 导出到你自己的 Azure 存储帐户时，这是容器 URL。 |
+|azureBlobToken|字符串| 导出到你自己的 Azure 存储帐户时，容器 URL 的 SAS 令牌。 |
 |exportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |指定控制导出格式的选项。 可取值为：`originalFiles`、`text`、`pdfReplacement`、`fileInfo`、`tags`。|
 |exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| 控制导出的文件结构和打包的选项。 可取值为：`none`、`directory`、`pst`。|
 
 ## <a name="response"></a>响应
 
-如果导出成功启动，此操作将返回 `202 Accepted` 响应代码。 响应还将包含一个标头，其中包含为处理导出而创建的 `Location` [caseExportOperation](../resources/ediscovery-caseexportoperation.md) 的位置。 通过向位置提出 GET 请求来检查导出操作的状态，成功完成后， [状态将更改为](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) `succeeded` 。
+如果导出成功启动，此操作将返回 `202 Accepted` 响应代码。 响应还将包含标头，其中包含为处理导出而创建的 `Location` [caseExportOperation](../resources/ediscovery-caseexportoperation.md) 的位置。 通过向位置发送 GET 请求来检查导出操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded` 。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reviewset_export"
@@ -89,6 +91,24 @@ Content-length: 186
   "exportStructure": "directory"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reviewset-export-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reviewset-export-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reviewset-export-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reviewset-export-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -1,18 +1,18 @@
 ---
-title: synchronizationJob：validateCredentials
+title: synchronizationJob： validateCredentials
 description: 验证凭据在租户中是否有效。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 4f36764ca7d6787629299261e6ec42c9454ddc46
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ce507c989ee842040787c77f772d6188d9444a03
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132067"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50773555"
 ---
-# <a name="synchronizationjob-validatecredentials"></a>synchronizationJob：validateCredentials
+# <a name="synchronizationjob-validatecredentials"></a>synchronizationJob： validateCredentials
 
 命名空间：microsoft.graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "50132067"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|Application                            |不支持。| 
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +45,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Boolean|When `true` ， the parameter will be ignored and the previously saved `credentials` credentials (if any) will be validated. |
-|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|要验证的凭据。 当参数为 `useSavedCredentials` 时忽略 `true` 。|
+|useSavedCredentials|Boolean|When `true` ， the parameter will be ignored and the previously saved `credentials` credentials (if any) will be validated instead. |
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|要验证的凭据。 当参数为 时 `useSavedCredentials` 忽略 `true` 。|
 
 ## <a name="response"></a>响应
-如果验证成功，此方法将返回 `204, No Content` 响应代码。 它不在响应正文中返回任何内容。
+如果验证成功，此方法将返回 响应 `204, No Content` 代码。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 

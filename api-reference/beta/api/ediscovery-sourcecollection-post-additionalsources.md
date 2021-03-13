@@ -1,16 +1,16 @@
 ---
 title: 创建 dataSource
-description: 将其他数据源添加到源集合。
+description: 向源集合添加其他数据源。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d2dca8b1b2ae6c6e1fc350f9b7185e16608427a7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 61da920c39cb75583661fde46c9bdbcc0a5d568d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445998"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50772595"
 ---
 # <a name="create-datasource"></a>创建 dataSource
 
@@ -18,9 +18,9 @@ ms.locfileid: "50445998"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将其他数据源添加到源集合。
+向源集合添加其他数据源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,19 +56,21 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|[sourceCollection](../resources/ediscovery-sourcecollection.md)案例的 ID。 只读。 继承自 [实体](../resources/entity.md)|
-|displayName|String|[sourceCollection 的名称](../resources/ediscovery-sourcecollection.md)|
-|createdDateTime|DateTimeOffset|创建 [sourceCollection 的](../resources/ediscovery-sourcecollection.md) 日期和时间。|
+|id|字符串|[sourceCollection](../resources/ediscovery-sourcecollection.md)案例的 ID。 只读。 继承自 [实体](../resources/entity.md)|
+|displayName|字符串|[sourceCollection 的名称](../resources/ediscovery-sourcecollection.md)|
+|createdDateTime|DateTimeOffset|创建 [sourceCollection](../resources/ediscovery-sourcecollection.md) 的日期和时间。|
 |createdBy|[identitySet](../resources/identityset.md)|创建 [sourceCollection 的用户](../resources/ediscovery-sourcecollection.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_datasource_from_"
@@ -85,6 +87,24 @@ Content-length: 179
     "email": "badguy@contoso.com"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-datasource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-datasource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-datasource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
