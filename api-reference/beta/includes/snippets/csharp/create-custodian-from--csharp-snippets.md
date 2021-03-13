@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5e1d5090eb0c15c455a8f48ea9eed2d9a103847f
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: c0dbd0fc32da677ef87c079669ed499f166328b2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50093615"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789607"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var custodian = new Microsoft.Graph.Ediscovery.Custodian
     ApplyHoldToSources = true
 };
 
-await graphClient.Compliance.Ediscovery.Cases["2192ca408ea2410eba3bec8ae873be6b"].Custodians
+await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Custodians
     .Request()
     .AddAsync(custodian);
 

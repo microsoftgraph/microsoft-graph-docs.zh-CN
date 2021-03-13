@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 382feb51cd8778e6e3c43e0e71f40939b9b62472
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 29ed86051753bb6efb631dc742db90a179b2b467
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636649"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799820"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const workbookRangeFont = {
   size: 26
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font')
+await client.api('/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font')
     .version('beta')
     .update(workbookRangeFont);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7a0380cad867628b8e287766045891f473f17596
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 29357a14efe49bc5e3512a278fbe20c5f51166b3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566645"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785685"
 ---
 ```csharp
 
@@ -31,7 +31,7 @@ var profileCardProperty = new ProfileCardProperty
     }
 };
 
-await graphClient.Organization["{organizationId}"].Settings.ProfileCardProperties
+await graphClient.Organization["{organization-id}"].Settings.ProfileCardProperties
     .Request()
     .AddAsync(profileCardProperty);
 

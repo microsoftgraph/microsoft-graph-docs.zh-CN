@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0108ec1872653616bbe4afdf50d9bbc4be845e69
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 41bdfaebcc091a4d7e4c2f27b37f62207a39b7d8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565865"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781267"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var printTaskTrigger = new PrintTaskTrigger
     }
 };
 
-await graphClient.Print.Printers["ae63f617-4856-4b45-8ea9-69dfbeea230e"].TaskTriggers
+await graphClient.Print.Printers["{printer-id}"].TaskTriggers
     .Request()
     .AddAsync(printTaskTrigger);
 

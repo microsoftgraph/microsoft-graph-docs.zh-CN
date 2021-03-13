@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2c1cf0ff945b7cb8050572077fe78716ad18e514
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 0eba89a2362976ae52c64736432e8da219e3c977
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48603488"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795895"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var driveItem = new DriveItem
     Name = "new-item-name.txt"
 };
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
     .Request()
     .UpdateAsync(driveItem);
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f6cb4bf98ac06884e8d1b1aaef4fe4895ff65d8c
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: aa0ab4efa14b62d8abb8afc1a6d8ed262fa15e7b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636527"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791777"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const educationRubric = {
-  @odata.id: "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"
+  '@odata.id': 'https://graph.microsoft.com/v1.0/education/me/rubrics/{id}'
 };
 
-let res = await client.api('/education/classes/{id}/assignments/{id}/rubric/$ref')
+await client.api('/education/classes/{id}/assignments/{id}/rubric/$ref')
     .version('beta')
     .put(educationRubric);
 
