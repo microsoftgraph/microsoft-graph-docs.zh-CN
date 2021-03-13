@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c318ba13b21767311d2cecc5b421cea21a81b2c0
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 93b614c8ba93b5643b5f630294e40fee1edf002c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092594"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761533"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -27,7 +27,7 @@ ms.locfileid: "50092594"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | 不支持 | 不支持 | CallRecords.Read.All |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | 不支持 | 不支持 |  ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | 不支持 |  ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | 不支持 | 不支持 | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
