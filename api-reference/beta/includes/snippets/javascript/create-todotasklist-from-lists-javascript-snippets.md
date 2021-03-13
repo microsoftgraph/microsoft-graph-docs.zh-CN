@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5418e1b56cc93534922125e82701253e73f16ab7
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: da9a341a5d56b2b1be98ac5b8dcac0eeae891da9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48317943"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777945"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const todoTaskList = {
-  displayName: "Travel items"
+  displayName: 'Travel items'
 };
 
-let res = await client.api('/me/todo/lists')
+await client.api('/me/todo/lists')
     .version('beta')
     .post(todoTaskList);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f5040e4e2103cebb341f01bde325f5d3fbfd811b
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1bbf4dbd663f63d50856d5141b9decceb3c15d50
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752798"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779848"
 ---
 ```csharp
 
@@ -134,7 +134,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
     }
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["b2eba9a1-b357-42ee-83a8-336522ed6cbf"]
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["{accessPackageAssignmentPolicy-id}"]
     .Request()
     .PutAsync(accessPackageAssignmentPolicy);
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8b764fa4c9f24b8bfb0973815cdb8b581c3beb75
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 44481a6dea977455fdec749be9be1252199e9230
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636726"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778613"
 ---
 ```javascript
 
@@ -16,18 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-  receivedDateTime: "2016-10-19T10:37:00Z",
-  sentDateTime: "2016-10-19T10:37:00Z",
+  receivedDateTime: '2016-10-19T10:37:00Z',
+  sentDateTime: '2016-10-19T10:37:00Z',
   hasAttachments: true,
-  subject: "subject-value",
+  subject: 'subject-value',
   body: {
-    contentType: "",
-    content: "content-value"
+    contentType: '',
+    content: 'content-value'
   },
-  bodyPreview: "bodyPreview-value"
+  bodyPreview: 'bodyPreview-value'
 };
 
-let res = await client.api('/me/mailFolders/{id}/messages')
+await client.api('/me/mailFolders/{id}/messages')
     .version('beta')
     .post(message);
 

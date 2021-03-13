@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f62f70c6d6eb677561bc53bbc1bea9fe5bbf723b
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: ea57bfb049831aef567d45e51ac54f6548d90301
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428823"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778395"
 ---
 ```javascript
 
@@ -15,9 +15,9 @@ const options = {
 
 const client = Client.init(options);
 
-const copyNotebookModel = {webUrl:"webUrl value"};
+const copyNotebookModel = {webUrl: 'webUrl value'};
 
-let res = await client.api('/me/onenote/notebooks/GetNotebookFromWebUrl')
+await client.api('/me/onenote/notebooks/GetNotebookFromWebUrl')
     .version('beta')
     .post(copyNotebookModel);
 

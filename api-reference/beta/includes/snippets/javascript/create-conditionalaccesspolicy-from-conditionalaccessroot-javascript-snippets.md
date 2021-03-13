@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 18e48b88f2372973f08212012ac013a985e9b2c6
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: c54a8e0db5e0858158e46fc9dde725c13723ea88
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48230743"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778168"
 ---
 ```javascript
 
@@ -16,35 +16,35 @@ const options = {
 const client = Client.init(options);
 
 const conditionalAccessPolicy = {
-    displayName: "Require MFA to EXO from non-complaint devices.",
-    state: "enabled",
+    displayName: 'Require MFA to EXO from non-complaint devices.',
+    state: 'enabled',
     conditions: {
         applications: {
             includeApplications: [
-                "00000002-0000-0ff1-ce00-000000000000"
+                '00000002-0000-0ff1-ce00-000000000000'
             ]
         },
         users: {
-            includeGroups: ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
+            includeGroups: ['ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba']
         },
         devices: {
-            includeDeviceStates: [
-                "All"
+            includeDevices: [
+                'All'
             ],
-            excludeDeviceStates: [
-                "Compliant"
+            excludeDevices: [
+                'Compliant'
             ]
         }
     },
     grantControls: {
-        operator: "OR",
+        operator: 'OR',
         builtInControls: [
-            "mfa"
+            'mfa'
         ]
     }
 };
 
-let res = await client.api('/identity/conditionalAccess/policies')
+await client.api('/identity/conditionalAccess/policies')
     .version('beta')
     .post(conditionalAccessPolicy);
 

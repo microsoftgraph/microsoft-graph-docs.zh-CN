@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cae052c91849c3c57dc7d01a5f8325f98ab1a50c
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: 1aa3a367aa2f0363124d36551763bae7c2e63da5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142568"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778221"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const conversationMember = {
-  @odata.type:"#microsoft.graph.aadUserConversationMember",
-  roles: ["owner"]
+  '@odata.type':'#microsoft.graph.aadUserConversationMember',
+  roles: ['owner']
 };
 
-let res = await client.api('/teams/{id}/channels/{id}/members/{id}')
+await client.api('/teams/{id}/channels/{id}/members/{id}')
     .version('beta')
     .update(conversationMember);
 

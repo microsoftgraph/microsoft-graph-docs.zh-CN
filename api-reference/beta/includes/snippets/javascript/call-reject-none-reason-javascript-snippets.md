@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5568b1172f5622680088ebd789d502919b7bb442
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 048db48c2e9173371917367b74b7e8335dc113ec
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302206"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777906"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const reject = {
-  reason: "none"
+  reason: 'none'
 };
 
-let res = await client.api('/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject')
+await client.api('/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject')
     .version('beta')
     .post(reject);
 

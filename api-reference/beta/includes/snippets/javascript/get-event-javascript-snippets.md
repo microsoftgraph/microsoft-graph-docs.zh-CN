@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8452d9a1ae2b1b680e2942169fad3ae0ea41b888
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: cfd54a99e4fe6a168d0ccc0fa0570e10543c0645
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49756156"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783175"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/events/AAMkAGIAAAoZDOFAAA=/')
+let event = await client.api('/me/events/AAMkAGIAAAoZDOFAAA=/')
     .version('beta')
     .header('Prefer','outlook.timezone="Pacific Standard Time"')
     .select('subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees')

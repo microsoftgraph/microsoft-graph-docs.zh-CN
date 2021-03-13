@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 57ffcd9ce77888fbba7cb4314fa2fe1bbceb539e
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 0b0ba1cfb3d11b96de49ffc54334c4159105fc4a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903979"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779060"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var identityUserFlowAttribute = new IdentityUserFlowAttribute
     Description = "Your new hobby"
 };
 
-await graphClient.Identity.UserFlowAttributes["extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby"]
+await graphClient.Identity.UserFlowAttributes["{identityUserFlowAttribute-id}"]
     .Request()
     .UpdateAsync(identityUserFlowAttribute);
 

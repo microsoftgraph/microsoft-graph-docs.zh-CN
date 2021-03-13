@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9ea8c3540500978bce9c6ac1bc63012d19ed6c76
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d177f50b61272136cdbec063e9ada238e3cb6e9b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470980"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779788"
 ---
 ```csharp
 
@@ -44,7 +44,7 @@ var conversation = new Conversation
     }
 };
 
-await graphClient.Groups["29981b6a-0e57-42dc-94c9-cd24f5306196"].Conversations
+await graphClient.Groups["{group-id}"].Conversations
     .Request()
     .AddAsync(conversation);
 

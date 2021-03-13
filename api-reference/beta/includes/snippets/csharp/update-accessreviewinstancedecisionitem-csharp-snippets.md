@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。请勿修改
-ms.openlocfilehash: 72e96a0f931c9e4fb9a83f1f9c15c9047d09b1fd
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 276827de3b11f84f6fe242de22a1dee53b4b4b2a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214330"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783214"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var accessReviewInstanceDecisionItem = new AccessReviewInstanceDecisionItem
     Justification = "I trust this person"
 };
 
-await graphClient.Me.PendingAccessReviewInstances["70a68410-67f3-4d4c-b946-6989e050be19"].Decisions["654b34e7-b48f-4772-a2d4-08f1d0dd014c"]
+await graphClient.Me.PendingAccessReviewInstances["{accessReviewInstance-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"]
     .Request()
     .UpdateAsync(accessReviewInstanceDecisionItem);
 

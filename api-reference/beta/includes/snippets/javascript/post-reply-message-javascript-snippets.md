@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9ad3ab7e56aff5b4fb1ebd14964f686b9db647b6
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e229aabca94956714ee3642c07c7990bd60d94e5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636566"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779291"
 ---
 ```javascript
 
@@ -17,12 +17,12 @@ const client = Client.init(options);
 
 const chatMessage = {
   body: {
-    contentType: "html",
-    content: "Hello World"
+    contentType: 'html',
+    content: 'Hello World'
   }
 };
 
-let res = await client.api('/teams/{id}/channels/{id}/messages/{id}/replies')
+await client.api('/teams/{id}/channels/{id}/messages/{id}/replies')
     .version('beta')
     .post(chatMessage);
 
