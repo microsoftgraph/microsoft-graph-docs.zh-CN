@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: bdcf3c42e0a7bffbd190d29920b06b263f12d321
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 4aa41ba1561fb823d2b71c02733b7b2e2bf5be79
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723362"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782501"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/auditLogs/provisioning')
+let provisioning = await client.api('/auditLogs/provisioning')
     .version('beta')
     .get();
 

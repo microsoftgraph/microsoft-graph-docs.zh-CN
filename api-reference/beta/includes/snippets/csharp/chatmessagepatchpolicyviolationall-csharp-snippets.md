@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 42a18723a2f25690a86da24579fb5d0a7ccf8572
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 839dc231f398ecf00fd87367ca103d37a3eaa7b1
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223249"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801032"
 ---
 ```csharp
 
@@ -29,7 +29,7 @@ var chatMessage = new ChatMessage
     }
 };
 
-await graphClient.Teams["e1234567-e123-4276-55555-6232b0e3a89a"].Channels["a7654321-e321-0000-0000-123b0e3a00a"].Messages["19:a21b0b0c05194ebc9e30000000000f61@thread.skype"]
+await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"]
     .Request()
     .UpdateAsync(chatMessage);
 

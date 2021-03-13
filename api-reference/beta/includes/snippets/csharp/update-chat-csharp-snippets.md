@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bb3a93d685165d40305e22f18004d665f2f1200f
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 4428429f1ef0f93339389a382675b179db35621b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753918"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806905"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var chat = new Chat
     Topic = "Group chat title update"
 };
 
-await graphClient.Chats["19:1c5b01696d2e4a179c292bc9cf04e63b@thread.v2"]
+await graphClient.Chats["{chat-id}"]
     .Request()
     .UpdateAsync(chat);
 

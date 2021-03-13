@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3ef5db3a7cc6c5d8be24fa30f6f716c81285e649
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 3df15ce3a6b3a311bd2c4e3131847225c52588a5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48230718"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808081"
 ---
 ```javascript
 
@@ -19,25 +19,25 @@ const searchResponse = {
   requests: [
     {
       entityTypes: [
-        "externalItem"
+        'externalItem'
       ],
       contentSources: [
-        "/external/connections/connectionfriendlyname"
+        '/external/connections/connectionfriendlyname'
       ],
       query: {
-        queryString: "contoso product"
+        queryString: 'contoso product'
       },
       from: 0,
       size: 25,
       fields: [
-        "title",
-        "description"
+        'title',
+        'description'
       ]
     }
   ]
 };
 
-let res = await client.api('/search/query')
+await client.api('/search/query')
     .version('beta')
     .post(searchResponse);
 

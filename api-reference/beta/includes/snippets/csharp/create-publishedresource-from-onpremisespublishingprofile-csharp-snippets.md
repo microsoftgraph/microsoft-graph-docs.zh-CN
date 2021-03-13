@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: cbb431c9bca98cc811571c444c1b045aa0c62f5f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 8db4cbb7121c09f122e7e8a4035839f534b9dd0e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875008"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799231"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var publishedResource = new PublishedResource
     ResourceName = "domain1.contoso.com"
 };
 
-await graphClient.OnPremisesPublishingProfiles["provisioning"].PublishedResources
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].PublishedResources
     .Request()
     .AddAsync(publishedResource);
 

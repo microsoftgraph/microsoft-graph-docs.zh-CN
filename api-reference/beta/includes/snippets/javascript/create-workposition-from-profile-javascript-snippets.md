@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 43f87240af5cca11eaa958e2c5f152f66f0b9c70
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: d9fe72754e6fe1342c162323b4a6af67b9806786
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48230754"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781551"
 ---
 ```javascript
 
@@ -18,25 +18,25 @@ const client = Client.init(options);
 const workPosition = {
   detail: {
     company: {
-      displayName: "Adventureworks Ltd.",
-      department: "Consulting",
-      officeLocation: "AW23/344",
+      displayName: 'Adventureworks Ltd.',
+      department: 'Consulting',
+      officeLocation: 'AW23/344',
       address: {
-        type: "business",
-        street: "123 Patriachy Ponds",
-        city: "Moscow",
-        countryOrRegion: "Russian Federation",
-        postalCode: "RU-34621"
+        type: 'business',
+        street: '123 Patriachy Ponds',
+        city: 'Moscow',
+        countryOrRegion: 'Russian Federation',
+        postalCode: 'RU-34621'
       },
-      webUrl: "https://www.adventureworks.com"
+      webUrl: 'https://www.adventureworks.com'
     },
-    jobTitle: "Senior Product Branding Manager II",
-    role: "consulting"
+    jobTitle: 'Senior Product Branding Manager II',
+    role: 'consulting'
   },
   isCurrent: true
 };
 
-let res = await client.api('/me/profile/positions')
+await client.api('/me/profile/positions')
     .version('beta')
     .post(workPosition);
 

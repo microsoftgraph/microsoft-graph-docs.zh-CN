@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: afb3a634a3b18be1c19e774b25b0e8db74a68a09
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 090cdb20174964275a3a332c0125267c7e14fe3b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49756098"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796990"
 ---
 ```javascript
 
@@ -18,20 +18,20 @@ const client = Client.init(options);
 const inviteParticipantsOperation = {
   participants: [
     {
-      @odata.type: "#microsoft.graph.invitationParticipantInfo",
+      '@odata.type': '#microsoft.graph.invitationParticipantInfo',
       identity: {
-        @odata.type: "#microsoft.graph.identitySet",
+        '@odata.type': '#microsoft.graph.identitySet',
         phone: {
-          @odata.type: "#microsoft.graph.identity",
-          id: "+12345678901"
+          '@odata.type': '#microsoft.graph.identity',
+          id: '+12345678901'
         }
       }
     }
   ],
-  clientContext: "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+  clientContext: 'f2fa86af-3c51-4bc2-8fc0-475452d9764f'
 };
 
-let res = await client.api('/communications/calls/{id}/participants/invite')
+await client.api('/communications/calls/{id}/participants/invite')
     .version('beta')
     .post(inviteParticipantsOperation);
 

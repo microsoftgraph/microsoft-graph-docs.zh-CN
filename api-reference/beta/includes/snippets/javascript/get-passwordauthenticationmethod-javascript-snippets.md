@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5c68065cbe4f0da0803a6e12c786c6a814f9afc8
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: f67989a23e6dd19d6f82ab1cc69ad5d8e5ea9442
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806515"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808975"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/authentication/passwordMethods/{id}')
+let passwordAuthenticationMethod = await client.api('/me/authentication/passwordMethods/{id}')
     .version('beta')
     .get();
 

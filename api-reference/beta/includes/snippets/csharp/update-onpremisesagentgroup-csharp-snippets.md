@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 963f0d8b12dc9c70f14d9afbde2f2a38eb758d51
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9e534604e587e766d370e543b6c95114bd0af5de
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878285"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50802886"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var onPremisesAgentGroup = new OnPremisesAgentGroup
     DisplayName = "Group New Name"
 };
 
-await graphClient.OnPremisesPublishingProfiles["provisioning"].AgentGroups["8832388F-3814-4952-B288-FFB62081FE25"]
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].AgentGroups["{onPremisesAgentGroup-id}"]
     .Request()
     .UpdateAsync(onPremisesAgentGroup);
 

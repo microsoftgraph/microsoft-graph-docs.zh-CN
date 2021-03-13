@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ae0e025fae5fe9737da1ab0e644d4498cd7af205
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 08b3fecaeaeeee0f890797a2f1bf8e96a710ddb0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819792"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793545"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const itemPhone = {
-  displayName: "Car Phone",
-  number: "+7 499 342 22 13"
+  displayName: 'Car Phone',
+  number: '+7 499 342 22 13'
 };
 
-let res = await client.api('/me/profile/phones')
+await client.api('/me/profile/phones')
     .version('beta')
     .post(itemPhone);
 

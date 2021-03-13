@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5af4938b8565b3e421a82425a37eed6bc30014bc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 16b9f4b248b81a7475c1a70b8a41cabdad95d362
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438519"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803679"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var queryOptions = new List<QueryOption>()
     new QueryOption("$skiptoken", "c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA=")
 };
 
-var delta = await graphClient.Teams["{id}"].Channels["{id}"].Messages
+var delta = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
     .Delta()
     .Request()
     .GetAsync();

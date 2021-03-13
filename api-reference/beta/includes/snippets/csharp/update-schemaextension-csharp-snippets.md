@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8d2780d88f14407a751d16a599601f3df09c40b6
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: c77c09dc75165cbe1660336fcbe9a810e1793a57
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48612371"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803201"
 ---
 ```csharp
 
@@ -28,7 +28,7 @@ var schemaExtension = new SchemaExtension
     }
 };
 
-await graphClient.SchemaExtensions["{id}"]
+await graphClient.SchemaExtensions["{schemaExtension-id}"]
     .Request()
     .UpdateAsync(schemaExtension);
 

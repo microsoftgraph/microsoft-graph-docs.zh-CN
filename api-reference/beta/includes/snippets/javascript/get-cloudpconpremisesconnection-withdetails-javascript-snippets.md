@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 592581756e770339236b768e81577472fd90dd16
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 0b3160a42649a435421bb61e4d31079bcdbd4420
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50179561"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785345"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections/{id}')
+let cloudPcOnPremisesConnection = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections/{id}')
     .version('beta')
     .select('id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse')
     .get();
