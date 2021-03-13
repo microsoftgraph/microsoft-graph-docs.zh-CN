@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c2f62ccf743f9e444be9574768c307f266012523
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 29cd06ac46ec0b4191eacef9ed631e31edae31b2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46512270"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803181"
 ---
 ```javascript
 
@@ -16,15 +16,15 @@ const options = {
 const client = Client.init(options);
 
 const subscription = {
-   changeType: "created",
-   notificationUrl: "https://webhook.azurewebsites.net/api/send/myNotifyClient",
-   resource: "me/mailFolders('Inbox')/messages",
-   expirationDateTime:"2016-11-20T18:23:45.9356913Z",
-   clientState: "secretClientValue",
-   latestSupportedTlsVersion: "v1_2"
+   changeType: 'created',
+   notificationUrl: 'https://webhook.azurewebsites.net/api/send/myNotifyClient',
+   resource: 'me/mailFolders(\'Inbox\')/messages',
+   expirationDateTime: '2016-11-20T18:23:45.9356913Z',
+   clientState: 'secretClientValue',
+   latestSupportedTlsVersion: 'v1_2'
 };
 
-let res = await client.api('/subscriptions')
+await client.api('/subscriptions')
     .version('beta')
     .post(subscription);
 

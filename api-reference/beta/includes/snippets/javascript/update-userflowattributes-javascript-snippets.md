@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a62208345272abc728092167f2866f693d5d6da2
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 1e8d9c93341724743bca88b04f3cfe7d1dff93ea
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903980"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804516"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const identityUserFlowAttribute = {
-  description: "Your new hobby"
+  description: 'Your new hobby'
 };
 
-let res = await client.api('/identity/userFlowAttributes/extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby')
+await client.api('/identity/userFlowAttributes/extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby')
     .version('beta')
     .update(identityUserFlowAttribute);
 

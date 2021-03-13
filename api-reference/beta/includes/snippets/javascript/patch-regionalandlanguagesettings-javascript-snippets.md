@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 70fcea48626fdf50ae1990571046fc20375a4ecd
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: ec53916445426462e3bafffc1f9911c686237d54
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791142"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784960"
 ---
 ```javascript
 
@@ -18,16 +18,16 @@ const client = Client.init(options);
 const regionalAndLanguageSettings = {
   authoringLanguages: [
     {
-     locale: "en-US" },
+     locale: 'en-US' },
     {
-     locale: "es-MX" }
+     locale: 'es-MX' }
   ],
   defaultRegionalFormat: {
-     locale: "en-US"
+     locale: 'en-US'
    }
 };
 
-let res = await client.api('/me/settings/regionalandlanguagesettings')
+await client.api('/me/settings/regionalandlanguagesettings')
     .version('beta')
     .update(regionalAndLanguageSettings);
 

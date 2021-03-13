@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 82de0fe34d3ff6df39fad1c383868cdd9c5e8796
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: fbb299faab47eeebddbeb235ea98217e35d68e37
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636592"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794138"
 ---
 ```javascript
 
@@ -16,20 +16,20 @@ const options = {
 const client = Client.init(options);
 
 const alert = {
-  assignedTo: "String",
-  closedDateTime: "String (timestamp)",
-  comments: ["String"],
-  feedback: "@odata.type: microsoft.graph.alertFeedback",
-  status: "@odata.type: microsoft.graph.alertStatus",
-  tags: ["String"],
-  vendorInformation:
+  assignedTo: 'String',
+  closedDateTime: 'String (timestamp)',
+  comments: ['String'],
+  feedback: '@odata.type: microsoft.graph.alertFeedback',
+  status: '@odata.type: microsoft.graph.alertStatus',
+  tags: ['String'],
+  vendorInformation: 
     {
-      provider: "String",
-      vendor: "String"
+      provider: 'String',
+      vendor: 'String'
     }
 };
 
-let res = await client.api('/security/alerts/{alert_id}')
+await client.api('/security/alerts/{alert_id}')
     .version('beta')
     .update(alert);
 

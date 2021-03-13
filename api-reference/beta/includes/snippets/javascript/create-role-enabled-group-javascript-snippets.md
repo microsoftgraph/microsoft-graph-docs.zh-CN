@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d47af37d4e0dd2d37ca6a4b5d7c28c32f9ac90d3
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 9b3d502a0b927548f31196d3b621ce7092be10e2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566833"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803095"
 ---
 ```javascript
 
@@ -16,19 +16,19 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-  description: "Group assignable to a role",
-  displayName: "Role assignable group",
+  description: 'Group assignable to a role',
+  displayName: 'Role assignable group',
   groupTypes: [
-    "Unified"
+    'Unified'
   ],
   isAssignableToRole: true,
   mailEnabled: true,
   securityEnabled: true,
-  mailNickname: "contosohelpdeskadministrators",
-  "visibility" : "Private"
+  mailNickname: 'contosohelpdeskadministrators',
+  visibility: 'Private'
 };
 
-let res = await client.api('/groups')
+await client.api('/groups')
     .version('beta')
     .post(group);
 

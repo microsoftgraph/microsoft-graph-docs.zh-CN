@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 42d8cc8ece6e8724773ace6284a27edb933348a5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 0af9970630858b0b98527f1bfbb7194994fb3dd7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880046"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789381"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var childFolders = await graphClient.Me.MailFolders["AAMkAGVmMDEzM"].ChildFolders
+var childFolders = await graphClient.Me.MailFolders["{mailFolder-id}"].ChildFolders
     .Request()
     .GetAsync();
 

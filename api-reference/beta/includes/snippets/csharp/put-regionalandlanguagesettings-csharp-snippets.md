@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5a5fbc5373bf748c9f01733db885e5fd36b60f15
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: c5fdbf4d2bddbf23e62dd99eae8954f6cb972dcb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791139"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789133"
 ---
 ```csharp
 
@@ -49,6 +49,18 @@ var regionalAndLanguageSettings = new RegionalAndLanguageSettings
         ShortTimeFormat = "HH:mm",
         LongTimeFormat = "h:mm:ss tt",
         TimeZone = "Pacific Standard Time"
+    },
+    TranslationPreferences = new TranslationPreferences
+    {
+        TranslationBehavior = TranslationBehavior.Yes,
+        LanguageOverrides = new List<TranslationLanguageOverride>()
+        {
+            new TranslationLanguageOverride
+            {
+                LanguageTag = "fr",
+                TranslationBehavior = TranslationBehavior.Yes
+            }
+        }
     }
 };
 

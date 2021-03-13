@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: db69d5eff7e35e274e53fe433cc9223332daf7e1
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 7dc12db52a40c85c4ed05df2a020facddf1a24b3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49945419"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794970"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var scopedRoleMembership = await graphClient.AdministrativeUnits["{id}"].ScopedRoleMembers["{id}"]
+var scopedRoleMembers = await graphClient.AdministrativeUnits["{administrativeUnit-id}"].ScopedRoleMembers
     .Request()
     .GetAsync();
 

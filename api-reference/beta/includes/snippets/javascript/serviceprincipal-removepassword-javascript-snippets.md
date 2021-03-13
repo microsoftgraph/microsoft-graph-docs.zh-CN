@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 56b1a882dba5413ae4871d4ae38ae617efd6c1bb
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 602f1131fee082f1af81ee31ccc0a6b81f7b6f40
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997643"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798085"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const removePassword = {
-    keyId: "f0b0b335-1d71-4883-8f98-567911bfdca6"
+    keyId: 'f0b0b335-1d71-4883-8f98-567911bfdca6'
 };
 
-let res = await client.api('/servicePrincipals/{id}/removePassword')
+await client.api('/servicePrincipals/{id}/removePassword')
     .version('beta')
     .post(removePassword);
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b0109c81f00bd44ccab9cfd58be24976e0dd612f
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9e75aa5954ea6f16df74678766930beba92fe552
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636683"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787609"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const secureScoreControlProfile = {
-  controlStateUpdates: "controlStateUpdates-value"
+  controlStateUpdates: 'controlStateUpdates-value'
 };
 
-let res = await client.api('/security/secureScoreControlProfiles/AdminMFA')
+await client.api('/security/secureScoreControlProfiles/AdminMFA')
     .version('beta')
     .update(secureScoreControlProfile);
 

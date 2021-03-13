@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fd8db9bb0939fadc6b285cf475380de34dcef0d2
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 1c325a3ff2a105a680987b4fb7d281b9e3f902dc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911568"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796367"
 ---
 ```csharp
 
@@ -33,7 +33,7 @@ var accessPackageResourceRoleScope = new AccessPackageResourceRoleScope
     }
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{id}"].AccessPackageResourceRoleScopes
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"].AccessPackageResourceRoleScopes
     .Request()
     .AddAsync(accessPackageResourceRoleScope);
 

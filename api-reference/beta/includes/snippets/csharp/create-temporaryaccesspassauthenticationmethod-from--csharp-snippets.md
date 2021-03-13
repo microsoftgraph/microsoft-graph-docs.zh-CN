@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 12f4ea6db913b0635ea4bb0457db95e8b48f302d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: a3732a1b0f6dbd844783d4217ff9cdc2747968d3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475075"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800058"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var temporaryAccessPassAuthenticationMethod = new TemporaryAccessPassAuthenticat
     IsUsableOnce = false
 };
 
-await graphClient.Users["kim@contoso.com"].Authentication.TemporaryAccessPassMethods
+await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods
     .Request()
     .AddAsync(temporaryAccessPassAuthenticationMethod);
 
