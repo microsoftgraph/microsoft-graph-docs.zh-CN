@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9bdb8dd59c4aa55c489179bbfb4dcbc3b8d617de
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4c6e7ac23fbd8a8f851201285076a630c09280f8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971687"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807891"
 ---
 ```javascript
 
@@ -16,15 +16,15 @@ const options = {
 const client = Client.init(options);
 
 const place = {
-  @odata.type: "microsoft.graph.roomList",
-  displayName: "Building 1",
-  phone:"555-555-0100",
+  '@odata.type': 'microsoft.graph.roomList',
+  displayName: 'Building 1',
+  phone: '555-555-0100',
   address: {
-    street: "4567 Main Street",
-    city: "Buffalo",
-    state: "NY",
-    postalCode: "98052",
-    countryOrRegion: "USA"
+    street: '4567 Main Street',
+    city: 'Buffalo',
+    state: 'NY',
+    postalCode: '98052',
+    countryOrRegion: 'USA'
   },
   geoCoordinates: {
     altitude: null,
@@ -35,7 +35,7 @@ const place = {
  }
 };
 
-let res = await client.api('/places/Building1RroomList@contoso.onmicrosoft.com')
+await client.api('/places/Building1RroomList@contoso.onmicrosoft.com')
     .version('beta')
     .update(place);
 

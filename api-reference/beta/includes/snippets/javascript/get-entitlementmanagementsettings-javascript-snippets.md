@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9a311f2ea8559aaceef54aff01f03e8b557e9cee
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: a6400b43faf3e06d1a8363083e0df102d209bba7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566889"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799516"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/entitlementManagement/settings')
+let entitlementManagementSettings = await client.api('/identityGovernance/entitlementManagement/settings')
     .version('beta')
     .get();
 

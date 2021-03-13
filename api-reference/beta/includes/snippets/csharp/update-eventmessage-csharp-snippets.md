@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: fcb535e44664ba3fea67ce37dbc20ec012220faa
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 16d57fed848c6fa76e1c5eeb8459071e0446fe2f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845913"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800126"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var message = new Message
     IsRead = true
 };
 
-await graphClient.Me.Messages["{id}"]
+await graphClient.Me.Messages["{message-id}"]
     .Request()
     .UpdateAsync(message);
 

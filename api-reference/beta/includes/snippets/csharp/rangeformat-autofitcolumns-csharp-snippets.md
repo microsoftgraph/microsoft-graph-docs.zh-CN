@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 159dabac73c5c292e6473e76106fec4d0ec50f0b
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: d6a8ec381d863d40d84cfbda0f9da2f49168d7b3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620320"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788274"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
     .Range().Format
     .AutofitColumns()
     .Request()

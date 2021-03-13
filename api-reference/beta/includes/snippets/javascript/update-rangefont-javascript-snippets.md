@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: e3f8c5391e890a2a95db94ec32868a40eb02b590
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 86b0fe6c2f1a5f4fed0ad0f8858489542464784e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636692"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808959"
 ---
 ```javascript
 
@@ -17,14 +17,14 @@ const client = Client.init(options);
 
 const workbookRangeFont = {
   bold: true,
-  color: "color-value",
+  color: 'color-value',
   italic: true,
-  name: "name-value",
+  name: 'name-value',
   size: 99,
-  underline: "underline-value"
+  underline: 'underline-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/font')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/font')
     .version('beta')
     .update(workbookRangeFont);
 

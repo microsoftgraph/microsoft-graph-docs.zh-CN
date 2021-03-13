@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a7317f50118bf5ea405ae0b19c289dd342f4c626
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d464d9a6c0f79f6b61e8c44d2cdd91e81420aa28
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636515"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786112"
 ---
 ```javascript
 
@@ -16,15 +16,15 @@ const options = {
 const client = Client.init(options);
 
 const attachment = {
-    @odata.type: "#microsoft.graph.referenceAttachment",
-    name: "Personal pictures",
-    sourceUrl: "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-    providerType: "oneDriveConsumer",
-    permission: "Edit",
-    isFolder: "True"
+    '@odata.type': '#microsoft.graph.referenceAttachment',
+    name: 'Personal pictures',
+    sourceUrl: 'https://contoso.com/personal/mario_contoso_net/Documents/Pics',
+    providerType: 'oneDriveConsumer',
+    permission: 'Edit',
+    isFolder: 'True'
 };
 
-let res = await client.api('/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments')
+await client.api('/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments')
     .version('beta')
     .post(attachment);
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9b7f51419f9b4b7948f3ad2c3968f7881669ff24
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 03019f4c8dfa96b3e74d91cd22afd64ffdd82925
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874467"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798742"
 ---
 ```csharp
 
@@ -21,7 +21,7 @@ var workbookRangeFont = new WorkbookRangeFont
     Underline = "underline-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
     .Range().Format.Font
     .Request()
     .UpdateAsync(workbookRangeFont);

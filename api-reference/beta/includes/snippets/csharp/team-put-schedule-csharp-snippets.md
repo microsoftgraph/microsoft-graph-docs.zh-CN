@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1079684b3063183e2e93b2ceb9b7e899e2d186b8
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 516f50def09995b3b120b0a5e684f7c3de965ded
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48617058"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783512"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var schedule = new Schedule
     TimeZone = "America/Chicago"
 };
 
-await graphClient.Teams["{teamId}"].Schedule
+await graphClient.Teams["{team-id}"].Schedule
     .Request()
     .PutAsync(schedule);
 
