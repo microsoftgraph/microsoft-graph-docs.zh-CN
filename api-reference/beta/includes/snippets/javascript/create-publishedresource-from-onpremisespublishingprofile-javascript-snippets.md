@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d2b4c5714e500107fc264c58e6a70f7beee84db7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 955f3f46f5bb265e50d458c24fd92cbddc9b3120
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636694"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785835"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const publishedResource = {
-    displayName: "New provisioning",
-    resourceName: "domain1.contoso.com"
+    displayName: 'New provisioning',
+    resourceName: 'domain1.contoso.com'
 };
 
-let res = await client.api('/onPremisesPublishingProfiles/provisioning/publishedResources')
+await client.api('/onPremisesPublishingProfiles/provisioning/publishedResources')
     .version('beta')
     .post(publishedResource);
 

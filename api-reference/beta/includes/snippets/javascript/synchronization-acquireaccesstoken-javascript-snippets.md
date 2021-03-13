@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6d932516807eecd66f73a36b1ee94499ed304a1a
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: a017ea179aa4a2192fe5ea23feff2fc54f67d0ce
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643747"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801581"
 ---
 ```javascript
 
@@ -18,12 +18,12 @@ const client = Client.init(options);
 const acquireAccessToken = {
   credentials: [
     {
-      @odata.type: "microsoft.graph.synchronizationSecretKeyStringValuePair"
+      '@odata.type': 'microsoft.graph.synchronizationSecretKeyStringValuePair'
     }
   ]
 };
 
-let res = await client.api('/applications/{applicationsId}/synchronization/acquireAccessToken')
+await client.api('/applications/{applicationsId}/synchronization/acquireAccessToken')
     .version('beta')
     .post(acquireAccessToken);
 

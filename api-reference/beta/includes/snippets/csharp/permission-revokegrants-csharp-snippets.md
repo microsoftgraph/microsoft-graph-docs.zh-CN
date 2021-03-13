@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ee692b40e410bc3f15752d679bf802fbaa232655
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 56beab12fcdf30833d9e23c91b869af4d14c2749
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753192"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795940"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var grantees = new List<DriveRecipient>()
     }
 };
 
-await graphClient.Me.Drive.Items["{item-id}"].Permissions["{perm-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Permissions["{permission-id}"]
     .RevokeGrants(grantees)
     .Request()
     .PostAsync();

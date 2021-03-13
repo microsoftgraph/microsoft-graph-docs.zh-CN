@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dc995368988ac4493f306a5422994c4190feff33
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
-ms.translationtype: MT
+ms.openlocfilehash: 431d594b786562cb5abcfabfa04596e00b4f487c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931929"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789360"
 ---
 ```csharp
 
@@ -33,7 +33,7 @@ var team = new Team
     }
 };
 
-await graphClient.Groups["{id}"].Team
+await graphClient.Groups["{group-id}"].Team
     .Request()
     .PutAsync(team);
 

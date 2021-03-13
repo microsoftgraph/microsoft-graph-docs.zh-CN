@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 2db47da05b7a5605d5a0d990557efebea1dc4df7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 679bc017e1be1d53daa853a390cfcbae53b2ee9d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636558"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784445"
 ---
 ```javascript
 
@@ -17,14 +17,14 @@ const client = Client.init(options);
 
 const workbookChartFont = {
   bold: true,
-  color: "color-value",
+  color: 'color-value',
   italic: true,
-  name: "name-value",
+  name: 'name-value',
   size: 99,
-  underline: "underline-value"
+  underline: 'underline-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font')
     .version('beta')
     .update(workbookChartFont);
 

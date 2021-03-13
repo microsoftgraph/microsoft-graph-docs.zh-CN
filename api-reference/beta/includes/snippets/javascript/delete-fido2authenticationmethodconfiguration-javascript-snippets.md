@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5c98b9c0865f6a71b1c855415e36576ff3e7a7b3
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 65b2ed3e7bb64deb7b13884b4a3ff3be993f312e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471158"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793400"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2')
+await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2')
     .version('beta')
     .delete();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5e14eb8b568b26fb1a931d86bc40fd340358fe3c
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 1e7762f2ff1896a3e2b4e489ca3102137816e4ae
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48604654"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781672"
 ---
 ```javascript
 
@@ -17,13 +17,13 @@ const client = Client.init(options);
 
 const mailTips = {
     EmailAddresses: [
-        "danas@contoso.onmicrosoft.com", 
-        "fannyd@contoso.onmicrosoft.com"
+        'danas@contoso.onmicrosoft.com', 
+        'fannyd@contoso.onmicrosoft.com'
     ],
-    MailTipsOptions: "automaticReplies, mailboxFullStatus"
+    MailTipsOptions: 'automaticReplies, mailboxFullStatus'
 };
 
-let res = await client.api('/me/getMailTips')
+await client.api('/me/getMailTips')
     .version('beta')
     .post(mailTips);
 

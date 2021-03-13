@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5ad2dd27c0e9b4626a43f9a9024a6629bdf71254
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 919ff9caab7d0aca188a1d306632dfe392db97de
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684753"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792875"
 ---
 ```csharp
 
@@ -23,7 +23,7 @@ var certificateBasedAuthConfiguration = new CertificateBasedAuthConfiguration
     }
 };
 
-await graphClient.Organization["{id}"].CertificateBasedAuthConfiguration
+await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration
     .Request()
     .AddAsync(certificateBasedAuthConfiguration);
 

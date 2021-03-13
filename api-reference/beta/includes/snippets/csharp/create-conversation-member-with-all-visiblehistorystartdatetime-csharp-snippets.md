@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 49fe41b9a08e923d2503a1d92d251729588bd1e3
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: a810786ed450910eeaa47e79c67368e4ba07d6de
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843768"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789898"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var conversationMember = new AadUserConversationMember
     }
 };
 
-await graphClient.Chats["19:cf66807577b149cca1b7af0c32eec122@thread.v2"].Members
+await graphClient.Chats["{chat-id}"].Members
     .Request()
     .AddAsync(conversationMember);
 
