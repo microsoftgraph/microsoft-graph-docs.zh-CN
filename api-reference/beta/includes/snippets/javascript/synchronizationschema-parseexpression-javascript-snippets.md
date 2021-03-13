@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 97f0548e810cea7493d344e46327677d09eb4706
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: e2620a97b4f8f8f7b418e76fb9465bd47f1c2c9e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48622178"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775484"
 ---
 ```javascript
 
@@ -16,56 +16,56 @@ const options = {
 const client = Client.init(options);
 
 const parseExpressionResponse = {
-    expression:"Replace([preferredLanguage], \"-\", , , \"_\", ,  )",
-    targetAttributeDefinition:null,
+    expression: 'Replace([preferredLanguage], \"-\", , , \"_\", ,  )',
+    targetAttributeDefinition: null,
     testInputObject: {
         definition: null,
         properties:[
-            { key: "objectId", value : "66E4A8CC-1B7B-435E-95F8-F06CEA133828" },
-            { key: "IsSoftDeleted", value: "false"},
-            { key: "accountEnabled", value: "true"},
-            { key: "streetAddress", value: "1 Redmond Way"},
-            { key: "city", value: "Redmond"},
-            { key: "state", value: "WA"},
-            { key: "postalCode", value: "98052"},
-            { key: "country", value: "USA"},
-            { key: "department", value: "Sales"},
-            { key: "displayName", value: "John Smith"},
-            { key: "extensionAttribute1", value: "Sample 1"},
-            { key: "extensionAttribute2", value: "Sample 2"},
-            { key: "extensionAttribute3", value: "Sample 3"},
-            { key: "extensionAttribute4", value: "Sample 4"},
-            { key: "extensionAttribute5", value: "Sample 5"},
-            { key: "extensionAttribute6", value: "Sample 6"},
-            { key: "extensionAttribute7", value: "Sample 1"},
-            { key: "extensionAttribute8", value: "Sample 1"},
-            { key: "extensionAttribute9", value: "Sample 1"},
-            { key: "extensionAttribute10", value: "Sample 1"},
-            { key: "extensionAttribute11", value: "Sample 1"},
-            { key: "extensionAttribute12", value: "Sample 1"},
-            { key: "extensionAttribute13", value: "Sample 1"},
-            { key: "extensionAttribute14", value: "Sample 1"},
-            { key: "extensionAttribute15", value: "Sample 1"},
-            { key: "givenName", value: "John"},
-            { key: "jobTitle", value: "Finance manager"},
-            { key: "mail", value: "johns@contoso.com"},
-            { key: "mailNickname", value: "johns"},
-            { key: "manager", value: "maxs@contoso.com"},
-            { key: "mobile", value: "425-555-0010"},
-            { key: "onPremisesSecurityIdentifier", value: "66E4A8CC-1B7B-435E-95F8-F06CEA133828"},
-            { key: "passwordProfile.password", value: ""},
-            { key: "physicalDeliveryOfficeName", value: "Main Office"},
-            { key: "preferredLanguage", value: "EN-US"},
-            { key: "proxyAddresses", value: ""},
-            { key: "surname", value: "Smith"},
-            { key: "telephoneNumber", value: "425-555-0011"},
-            { key: "userPrincipalName", value: "johns@contoso.com"},
-            { key: appRoleAssignments", "value@odata.type:"#Collection(String)", value: ["Default Assignment"] }
+            { key: 'objectId', value : '66E4A8CC-1B7B-435E-95F8-F06CEA133828' },
+            { key: 'IsSoftDeleted', value: 'false'},
+            { key: 'accountEnabled', value: 'true'},
+            { key: 'streetAddress', value: '1 Redmond Way'},
+            { key: 'city', value: 'Redmond'},
+            { key: 'state', value: 'WA'},
+            { key: 'postalCode', value: '98052'},
+            { key: 'country', value: 'USA'},
+            { key: 'department', value: 'Sales'},
+            { key: 'displayName', value: 'John Smith'},
+            { key: 'extensionAttribute1', value: 'Sample 1'},
+            { key: 'extensionAttribute2', value: 'Sample 2'},
+            { key: 'extensionAttribute3', value: 'Sample 3'},
+            { key: 'extensionAttribute4', value: 'Sample 4'},
+            { key: 'extensionAttribute5', value: 'Sample 5'},
+            { key: 'extensionAttribute6', value: 'Sample 6'},
+            { key: 'extensionAttribute7', value: 'Sample 1'},
+            { key: 'extensionAttribute8', value: 'Sample 1'},
+            { key: 'extensionAttribute9', value: 'Sample 1'},
+            { key: 'extensionAttribute10', value: 'Sample 1'},
+            { key: 'extensionAttribute11', value: 'Sample 1'},
+            { key: 'extensionAttribute12', value: 'Sample 1'},
+            { key: 'extensionAttribute13', value: 'Sample 1'},
+            { key: 'extensionAttribute14', value: 'Sample 1'},
+            { key: 'extensionAttribute15', value: 'Sample 1'},
+            { key: 'givenName', value: 'John'},
+            { key: 'jobTitle', value: 'Finance manager'},
+            { key: 'mail', value: 'johns@contoso.com'},
+            { key: 'mailNickname', value: 'johns'},
+            { key: 'manager', value: 'maxs@contoso.com'},
+            { key: 'mobile', value: '425-555-0010'},
+            { key: 'onPremisesSecurityIdentifier', value: '66E4A8CC-1B7B-435E-95F8-F06CEA133828'},
+            { key: 'passwordProfile.password', value: ''},
+            { key: 'physicalDeliveryOfficeName', value: 'Main Office'},
+            { key: 'preferredLanguage', value: 'EN-US'},
+            { key: 'proxyAddresses', value: ''},
+            { key: 'surname', value: 'Smith'},
+            { key: 'telephoneNumber', value: '425-555-0011'},
+            { key: 'userPrincipalName', value: 'johns@contoso.com'},
+            { key: 'appRoleAssignments', 'value@odata.type':'#Collection(String)', value: ['Default Assignment'] }
         ]
     }
 };
 
-let res = await client.api('/servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression')
+await client.api('/servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression')
     .version('beta')
     .post(parseExpressionResponse);
 

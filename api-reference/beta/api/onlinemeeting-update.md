@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e2abb74cee9e57682b1f37ace3bd3f0d7c33c72f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 14d083bb6ed6e74fe1017ab4a7a87ed2bf159cc9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516085"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775603"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -31,7 +31,7 @@ ms.locfileid: "50516085"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户，授权策略中配置的应用代表该用户在请求路径) 中指定的 (用户 ID 更新联机会议。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户更新联机会议 (请求路径) 中指定的用户 ID。
 
 ## <a name="http-request"></a>HTTP 请求
 若要使用委派令牌通过会议 ID 更新指定的 onlineMeeting，请执行以下操作：
@@ -47,8 +47,8 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > **注意：**
-> - `userId`是 Azure 用户管理门户中[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
-> - `meetingId`是[onlineMeeting 对象的](../resources/onlinemeeting.md)ID。
+> - `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明                 |
@@ -60,7 +60,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 下表列出了可更新的属性。 在请求正文中，仅包括需要更新的属性，但以下例外：
 
 - 调整联机会议开始或结束日期/时间始终需要请求正文中的 **startDateTime** 和 **endDateTime** 属性。
-- 调整 **参与者属性的与会者** 字段（例如向会议添加或删除与会者）始终需要请求正文中与会者的完整列表。
+- 调整 **参与者属性** 的 **attendees** 字段（如向会议添加或删除与会者）始终需要请求正文中与会者的完整列表。
 
 | 属性             | 类型                                                         | 说明                                                                                                                                    |
 |----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,7 +70,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | participants         | [meetingParticipants](../resources/meetingparticipants.md)   | 与联机会议关联的参与者。 这包括组织者和与会者。                                            |
 | isEntryExitAnnounced | Boolean                                                      | 呼叫者加入或离开时是否宣布。                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | 指定哪些参与者可以绕过会议厅。                                                                                     |
-| allowedPresenters    | onlineMeetingPresenters                                      | 指定可在会议中成为演示者的人。 可能的值包括所有人、组织、roleIsPresenter、组织者和 unknownFutureValue。 |
+| allowedPresenters    | onlineMeetingPresenters                                      | 指定可在会议中成为演示者的人。 可能的值包括 everyone、organization、roleIsPresenter、organizer 和 unknownFutureValue。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
@@ -83,6 +83,8 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 > **注意：** 为了可读性，会议 ID 已被截断。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
@@ -98,6 +100,24 @@ Content-Type: application/json
   "subject": "Patch Meeting Subject"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-start-end-subject-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-start-end-subject-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-start-end-subject-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-start-end-subject-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -153,6 +173,8 @@ Content-Type: application/json
 #### <a name="example-2-update-the-lobbybypasssettings"></a>示例 2：更新 lobbyBypassSettings
 > **注意：** 为了可读性，会议 ID 已被截断。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
@@ -168,6 +190,24 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-lobbybypasssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-lobbybypasssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-lobbybypasssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-lobbybypasssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

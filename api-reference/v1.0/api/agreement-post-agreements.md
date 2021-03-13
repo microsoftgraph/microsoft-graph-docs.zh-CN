@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: a34d2d78964ca4d50496cfe0850d2ee840f3f04b
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 1a3e30754a9359d26c41bad35407674c9b5c88c5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722582"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774969"
 ---
 # <a name="create-agreement"></a>创建协议
 
 命名空间：microsoft.graph
 
 创建新的 [协议](../resources/agreement.md) 对象。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -45,7 +45,7 @@ POST /identityGovernance/termsOfUse/agreements
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|字符串|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|布尔值|指示用户在接受之前是否必须展开和查看协议。|
+|isViewingBeforeAcceptanceRequired|Boolean|指示用户在接受之前是否必须展开和查看协议。|
 |fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
 |isDefault|Boolean|指示如果语言与客户端首选项匹配，这是否是默认协议文件。 如果未将任何文件标记为默认文件，则第一个文件将被视为默认文件。|
 |language|String|协议文件的语言，格式为 languagecode2-country/regioncode2。 languagecode2 是从 ISO 639-1 派生的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个小写字母或 BCP-47 语言标记 (例如 en-US) 。|
@@ -58,6 +58,8 @@ POST /identityGovernance/termsOfUse/agreements
 ### <a name="request"></a>请求
 在请求正文中，提供协议对象的 JSON [表示](../resources/agreement.md) 形式。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agreement_from_agreements"
@@ -81,6 +83,24 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-agreement-from-agreements-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-agreement-from-agreements-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-agreement-from-agreements-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

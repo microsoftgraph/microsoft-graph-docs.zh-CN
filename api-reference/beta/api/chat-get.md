@@ -1,16 +1,16 @@
 ---
 title: 获取聊天
 description: 检索一个聊天。
-author: nkramer
+author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eddb4570e3027b0a0752964d826e927fc371076a
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 4041abae0053de6adebad2ce57c2a9bcb400bbc5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753524"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775820"
 ---
 # <a name="get-chat"></a>获取聊天
 

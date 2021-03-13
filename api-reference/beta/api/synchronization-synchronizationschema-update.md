@@ -1,16 +1,16 @@
 ---
 title: 更新 synchronizationSchema
-description: 更新给定作业或模板的同步架构。 此方法将当前架构完全替换为请求中提供的架构。 若要更新模板的架构，请对应用程序对象进行调用。 您必须是应用程序的所有者。
+description: 更新给定作业或模板的同步架构。 此方法将当前架构完全替换为请求中提供的架构。 若要更新模板的架构，请调用 application 对象。 您必须是应用程序的所有者。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 9c6ce22d5b6811f777667af53d4b6df82a4b372b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6780a9ef000fee6ea3f9a3c68b74186c69ac696e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136351"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775449"
 ---
 # <a name="update-synchronizationschema"></a>更新 synchronizationSchema
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136351"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新给定作业或模板的同步架构。 此方法将当前架构完全替换为请求中提供的架构。 若要更新模板的架构，请对应用程序对象进行调用。 您必须是应用程序的所有者。
+更新给定作业或模板的同步架构。 此方法将当前架构完全替换为请求中提供的架构。 若要更新模板的架构，请调用 application 对象。 您必须是应用程序的所有者。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50136351"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|Application                            |不支持。| 
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,18 +44,18 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要替换现有架构的 [synchronizationSchema](../resources/synchronization-synchronizationschema.md) 对象。
+在请求正文中，提供 [synchronizationSchema](../resources/synchronization-synchronizationschema.md) 对象以替换现有的架构。
 
 ## <a name="response"></a>响应
 
-如果成功，则返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
 请求示例如下所示。
 
->**注意：** 为了可读性，缩短了此处所示的请求对象。 提供实际调用中的所有属性。
+>**注意：** 为了可读性，缩短了此处显示的请求对象。 在实际调用中提供所有属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

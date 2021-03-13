@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 844fbf0d990a51a199fade3f8bbd9719fd77bae0
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 2f1415e4fc91fead1ed25f66867a3bd08f0dceb8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517276"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775974"
 ---
 # <a name="printjob-redirect"></a>printJob： redirect
 命名空间：microsoft.graph
@@ -19,9 +19,9 @@ ms.locfileid: "50517276"
 
 将 [打印作业重定向到](../resources/printjob.md) 其他 [打印机](../resources/printer.md)。
 
-有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予获取打印机访问权限的权限以及下表中列出的权限之一[](printer-get.md)。
@@ -51,17 +51,19 @@ POST /print/printers/{printerId}/jobs/{printJobId}/redirect
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供打印作业应重定向到的打印机的 ID。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|destinationPrinterId|String|打印作业应重定向到的打印机的 ID。|
+|destinationPrinterId|字符串|打印作业应重定向到的打印机的 ID。|
 |configuration|microsoft.graph.printJobConfiguration|更新了打印作业的配置。|
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回一个响应代码和一个为目标打印机排队 `200 OK` 的 [printJob](../resources/printjob.md) 对象。
+如果成功，此方法返回响应 `200 OK` 代码和一个 [printJob](../resources/printjob.md) 对象排队等待目标打印机。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob_redirect"
@@ -107,6 +109,24 @@ Content-length: 128
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-redirect-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-redirect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

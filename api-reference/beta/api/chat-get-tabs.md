@@ -1,18 +1,18 @@
 ---
-title: 获取聊天中的选项卡
+title: 在聊天中获取选项卡
 description: '检索聊天中指定选项卡的属性和关系。 '
-author: nkramer
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ead58487b90fcb92bd402a8de11e0f58ad438fab
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: d0cdba3257a6008005597dcc7c9f6a1cc60bdf06
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689992"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775841"
 ---
-# <a name="get-tab-in-chat"></a>获取聊天中的选项卡
+# <a name="get-tab-in-chat"></a>在聊天中获取选项卡
 
 命名空间：microsoft.graph
 
@@ -27,10 +27,15 @@ ms.locfileid: "49689992"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
+|Application | TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /chats/{chat-id}/tabs/{tab-id}
 ```
@@ -49,7 +54,7 @@ GET /chats/{chat-id}/tabs/{tab-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [Tab](../resources/teamstab.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [tab](../resources/teamstab.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。

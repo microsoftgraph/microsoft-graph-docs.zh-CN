@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 8dafcb1120190244902c2fc4deaa56ee7d4d274c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 14b77ded78a494f08c457bbedeca4e0defaea272
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137489"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775114"
 ---
 # <a name="list-synchronization-jobs"></a>列出同步作业
 
@@ -27,7 +27,7 @@ ms.locfileid: "50137489"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|Application                            |不支持。 | 
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象集合。
 
 ## <a name="example"></a>示例
 

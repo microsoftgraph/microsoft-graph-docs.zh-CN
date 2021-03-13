@@ -1,16 +1,16 @@
 ---
 title: 列出聊天中的选项卡
 description: '检索指定聊天中的选项卡列表。 '
-author: nkramer
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8d61dc426fd456a356b2838a03c30e3629772ef
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 7f0d7b1feff7205144193a389a3ef84158f570d3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689929"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775771"
 ---
 # <a name="list-tabs-in-chat"></a>列出聊天中的选项卡
 
@@ -29,10 +29,14 @@ ms.locfileid: "49689929"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
+|Application | TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /chats/{chat-id}/tabs
 ```
@@ -50,11 +54,11 @@ GET /chats/{chat-id}/tabs
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和选项卡](../resources/teamstab.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [tabs](../resources/teamstab.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>示例 1：列出聊天中所有选项卡以及关联的 Teams 应用
+### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>示例 1：列出聊天中的所有选项卡以及关联的 Teams 应用
 #### <a name="request"></a>请求
 下面展示了示例请求。
 

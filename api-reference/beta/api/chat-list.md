@@ -1,16 +1,16 @@
 ---
 title: 列出聊天
 description: 检索用户的聊天列表。
-author: nkramer
+author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2e366ab960509bba1408bc7b346f89980fc828c4
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 0416a123b0694b3b2ffcd6756334fcf891da0b82
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752897"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775764"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -41,7 +41,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法仅 (`$expand` **members** 属性和 OData) 参数执行自定义操作， `$filter` [](/graph/query-parameters)以帮助自定义响应。
+此方法仅 (`$expand` **members** 属性和 `$filter` [OData](/graph/query-parameters)) 参数的自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -179,7 +179,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 > [!NOTE]
 > 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
 >
-> 成员资格结果可以映射到不同租户中的用户，如响应中指示的将来。 客户端不应假定所有成员都仅来自当前租户。
+> 成员身份结果可以映射到不同租户中的用户，如响应中将来所指示。 客户端不应假定所有成员都仅来自当前租户。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -311,7 +311,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-all-the-chats-that-have-a-member-with-a-specific-display-name"></a>示例 3：列出具有具有特定用户成员的所有显示名称
+### <a name="example-3-list-all-the-chats-that-have-a-member-with-a-specific-display-name"></a>示例 3：列出成员具有特定名称的所有显示名称
 
 #### <a name="request"></a>请求
 

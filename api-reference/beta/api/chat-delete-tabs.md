@@ -1,16 +1,16 @@
 ---
 title: 从聊天中删除选项卡
-description: '删除 (聊天) 选项卡上取消固定。 '
-author: nkramer
+description: '从 (聊天) 取消固定选项卡。 '
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f32a1afd3fa23a42fee600d2d3243f70957dde55
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: d2020d0fe097be2a02c5b0fba4c47a0d700ca3ae
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690049"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775883"
 ---
 # <a name="delete-tab-from-chat"></a>从聊天中删除选项卡
 
@@ -29,7 +29,7 @@ ms.locfileid: "49690049"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
+|Application | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求

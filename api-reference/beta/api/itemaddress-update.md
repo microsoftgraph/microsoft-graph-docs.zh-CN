@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f53f5ad68919898dc337ed9b7c0f106ed3fa6c41
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 6b761de97ba3c39917f42c0bb110c949f5e6185b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578694"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774655"
 ---
 # <a name="update-itemaddress"></a>更新 itemAddress
 命名空间：microsoft.graph
@@ -53,13 +53,13 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 |allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |detail|[physicalAddress](../resources/physicaladdress.md)|有关地址本身的详细信息。|
 |displayName|字符串|用户已分配给此地址的友好名称。 |
-|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的地理coordinates。|
-|推断|[inferenceData](../resources/inferencedata.md)|包含实体是否由创建或修改应用程序推断的推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的地理序号。|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [itemAddress](../resources/itemaddress.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [itemAddress](../resources/itemaddress.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -81,15 +81,19 @@ Content-length: 497
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-itemaddress-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-itemaddress-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-itemaddress-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-itemaddress-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: dba67adb7ad3c5923b4fb18d3801d69248c4f478
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 589bb3f63e812ee92bf9197112b492e8ef796633
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932694"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774276"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drive/items/{bundle-id}')
+await client.api('/drive/items/{bundle-id}')
     .version('beta')
     .delete();
 

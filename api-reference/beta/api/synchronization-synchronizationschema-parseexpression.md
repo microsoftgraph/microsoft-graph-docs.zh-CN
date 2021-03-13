@@ -1,16 +1,16 @@
 ---
 title: synchronizationSchema： parseExpression
-description: " (。/resources/synchronization_attributemappingsource.md) 对象。 "
+description: " (。。/resources/synchronization_attributemappingsource.md) 对象。 "
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: c53046032ea4927d5f475cbb05961253fd323939
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1de23b474cf2cd12191da9ce5c876417fbaad984
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136358"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775470"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema： parseExpression
 
@@ -20,7 +20,7 @@ ms.locfileid: "50136358"
 
 将给定的字符串表达式解析为 [attributeMappingSource](../resources/synchronization-attributemappingsource.md) 对象。
 
-有关表达式详细信息，请参阅为 [Azure Active Directory 中的属性映射编写表达式](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
+有关表达式详细信息，请参阅在 [Azure Active Directory 中编写属性映射的表达式](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "50136358"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|Application                            |不支持。|
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |将映射到此表达式的属性的定义。 可选。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) 对象。
 
 ## <a name="example"></a>示例
 

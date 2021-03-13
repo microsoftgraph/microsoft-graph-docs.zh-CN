@@ -1,22 +1,22 @@
 ---
-title: 获取团队合作机器人
-description: 读取团队合作Bot 对象的属性和关系。
+title: 获取 teamworkBot
+description: 读取 teamworkBot 对象的属性和关系。
 author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c77153aa36628edeb9b1a4ab2100b6acf38c0ea5
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3efbbf65c12e81f3c1ce243e97ad9e2bc98c4d0d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50476406"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774776"
 ---
-# <a name="get-teamworkbot"></a>获取团队合作机器人
+# <a name="get-teamworkbot"></a>获取 teamworkBot
 
 命名空间：microsoft.graph
 
-获取与[TeamsApp](../resources/teamsapp.md)的特定[定义](../resources/teamsappdefinition.md)相关联的机器人。
+获取与[TeamsApp](../resources/teamsapp.md)[的特定定义](../resources/teamsappdefinition.md)相关联的机器人。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,12 +50,14 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [团队合作Bot](../resources/teamworkbot.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [团队合作Bot](../resources/teamworkbot.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_teamworkbot"
@@ -64,6 +66,24 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ``` http
 GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7c5-b1d98559368b/appDefinitions/ZTRjNWMyNDktYmI0Yi00MTllLWI3YzUtYjFkOTg1NTkzNjhiIyMyLjAuMSMjUHVibGlzaGVk/bot
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-teamworkbot-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-teamworkbot-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-teamworkbot-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-teamworkbot-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -84,7 +104,7 @@ Content-Type: application/json
 ```
 ## <a name="see-also"></a>另请参阅
 
-- 若要在团队中安装机器人，请参阅团队中 [列表应用的示例](team-list-installedapps.md)2。 <!-- - To get bots installed in a chat, see example 2 in [List apps in chat](chat-list-installedapps.md). -->
-- 若要在用户的个人范围内安装自动程序，请参阅为用户安装的列表 [应用中的示例](userteamwork-list-installedapps.md)2。
+- 若要在团队中安装机器人，请参阅在团队中[列出应用中的示例 2。](team-list-installedapps.md) <!-- - To get bots installed in a chat, see example 2 in [List apps in chat](chat-list-installedapps.md). -->
+- 若要在用户的个人范围内安装机器人，请参阅为用户安装的列表 [应用中的示例](userteamwork-list-installedapps.md)2。
 
 

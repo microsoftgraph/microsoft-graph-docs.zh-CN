@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: 删除捆绑包
-description: 删除 Driveitem 的捆绑包
+description: 删除 driveItems 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d5aa0c77a755183582de8f7a798897cd192afbab
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 737a5f7494ea0848e4776058e8f55b78df44e29a
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960269"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50774269"
 ---
 # <a name="delete-bundle"></a>删除捆绑包
 
@@ -19,9 +18,9 @@ ms.locfileid: "48960269"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 **id** 删除 driveitem 的 [捆绑包][]。请注意，使用此方法删除捆绑包将永久删除该捆绑包，而不会将其移动到回收站中。
+使用 [id][] 删除 driveItems **捆绑包**。请注意，使用此方法删除捆绑包会永久删除捆绑包，并且不会将其移动到回收站。
 但是，它不会删除捆绑包引用的项目。
-它们将保留在其父文件夹中。
+它们将保留在父文件夹中。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +45,7 @@ DELETE /drive/items/{bundle-id}
 | 名称          | 说明  |
 |:------------- |:------------ |
 | Authorization | 持有者 \{token\}。 必需。 |
-| if-match      | eTag. 可选。 如果包含此请求标头且提供的 eTag (或 cTag) 与捆绑包中的当前标记不匹配， `412 Precondition Failed` 则会返回响应，并且不会删除该捆绑包。
+| if-match      | eTag。 可选。 如果包含此请求标头，并且提供的 eTag (或 cTag) 与捆绑包上的当前标记不匹配，则返回 响应，并且 `412 Precondition Failed` 不会删除捆绑包。
 
 ## <a name="request-body"></a>请求正文
 
@@ -56,7 +55,7 @@ DELETE /drive/items/{bundle-id}
 
 如果成功，此调用将返回 `204 No Content` 响应，表示资源已被删除，没有可返回的内容。
 
-阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
+请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
 ## <a name="example"></a>示例
 

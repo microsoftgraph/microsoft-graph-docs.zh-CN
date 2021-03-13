@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7278347dce74138b6eb38281f32dc7b968a9aacb
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b5986d4fe2ab77cf8c4634f3d872d966819ebca7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472452"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774304"
 ---
 # <a name="create-outlooktask-deprecated"></a>创建 outlookTask（已弃用）
 
@@ -23,7 +23,7 @@ ms.locfileid: "50472452"
 
 在指定的任务文件夹中创建 Outlook 任务。
 
-POST 方法始终忽略 **请求正文中 startDateTime** 和 **dueDateTime** 的时间部分，并假定时间始终为指定时区中的午夜。
+POST 方法始终忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定时间始终为指定时区中的午夜。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,7 @@ POST 方法始终忽略 **请求正文中 startDateTime** 和 **dueDateTime** �
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Tasks.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Tasks.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,18 +46,20 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | 指定响应中时间属性的时区，如果未指定此标头，则时区为 UTC。 可选。|
+| Prefer: outlook.timezone | 指定响应中时间属性的时区，如果未指定此标头，则其时区为 UTC。 可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [outlookTask](../resources/outlooktask.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `201 Created` 和 [outlookTask](../resources/outlooktask.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlooktaskfolder"
@@ -79,9 +81,27 @@ Content-length: 376
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-outlooktask-from-outlooktaskfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktask-from-outlooktaskfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-outlooktask-from-outlooktaskfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-outlooktask-from-outlooktaskfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 在请求正文中，提供 [outlookTask](../resources/outlooktask.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-POST 方法将忽略请求正文中的时间部分，并假定时间始终为指定时区的午夜 (PST) 。 然后，默认情况下，POST 方法在响应中转换和显示所有与日期相关的属性（采用 UTC 格式）。
+POST 方法忽略请求正文中的时间部分，并假定在 PST (指定时区中始终午夜) 。 然后，默认情况下，POST 方法在响应中转换和显示所有与日期相关的属性（采用 UTC）。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

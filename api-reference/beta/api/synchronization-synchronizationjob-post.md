@@ -1,16 +1,16 @@
 ---
 title: 创建 synchronizationJob
-description: 使用默认同步架构创建新的同步作业。 将处于禁用状态创建作业。 调用"开始"作业以启动同步。
+description: 使用默认同步架构创建新的同步作业。 作业处于禁用状态。 调用"开始"作业以启动同步。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: a565a393715edb2379590b225e0569f4397b9b23
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bc66071c18beeaa62e6f9a336f345cd24be91fdd
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131647"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775093"
 ---
 # <a name="create-synchronizationjob"></a>创建 synchronizationJob
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131647"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用默认同步架构创建新的同步作业。 将处于禁用状态创建作业。 调用 ["开始"作业](synchronization-synchronizationjob-start.md) 以启动同步。
+使用默认同步架构创建新的同步作业。 作业处于禁用状态。 调用 ["开始"](synchronization-synchronizationjob-start.md) 作业以启动同步。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50131647"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|Application                            |不支持。  | 
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要创建的 [synchronizationJob 对象的](../resources/synchronization-synchronizationjob.md) JSON 表示形式。 唯一必需的属性是 `templateId` 。 该属性 `templateId` 必须与为此应用程序/服务主体创建的模板之一匹配。 若要查找可用的模板，请使用 [列表模板](synchronization-synchronizationtemplate-list.md)。
+在请求正文中，提供要创建的 [synchronizationJob 对象的](../resources/synchronization-synchronizationjob.md) JSON 表示形式。 唯一必需的属性是 `templateId` 。 `templateId`属性必须与为此应用程序/服务主体创建的模板之一匹配。 若要查找可用的模板，请使用 [列表模板](synchronization-synchronizationtemplate-list.md)。
 
 ## <a name="response"></a>响应
 
-如果成功，在 `201 Created` 响应正文中返回响应代码和 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象。
+如果成功，在 `201 Created` 响应正文中返回 响应代码和 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象。
 
 ## <a name="example"></a>示例
 

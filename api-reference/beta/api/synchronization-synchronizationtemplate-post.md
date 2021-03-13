@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 054e5dfc672f3336e5c8d633e05c1db82e350fdd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b2c501d0c07e91aa3b0dbb707320f4909db299de
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137240"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775428"
 ---
 # <a name="create-synchronizationtemplate"></a>创建 synchronizationTemplate
 
@@ -27,7 +27,7 @@ ms.locfileid: "50137240"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|Application                            |不支持。| 
+|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [要创建的 synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。 `id`和 `applicationId` `factoryTag` 属性是必需的。 如果 `schema` 模板未提供，则使用与属性关联的 `factoryTag` 默认架构。
+在请求正文中，提供 [要创建的 synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。 `id`和 `applicationId` `factoryTag` 属性是必需的。 如果 `schema` 模板未提供，则使用与 属性关联的 `factoryTag` 默认架构。
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。
 
 ### <a name="example"></a>示例
 

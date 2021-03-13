@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: 删除 DriveItem 访问权限。
 ms.date: 09/10/2017
-title: 删除对项的访问权限
+title: 删除对项目的访问权限
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 69c14288576738b9dfa448cdaefb4b3d2ef87133
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 82092233f6f7a01416ecd6f43d72b5737be45510
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625373"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775505"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
 
@@ -60,10 +60,30 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 本示例从当前用户 OneDrive 的项 {item-id} 中删除标识为 {perm-id} 的权限。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

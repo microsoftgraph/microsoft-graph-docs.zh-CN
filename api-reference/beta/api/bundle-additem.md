@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: 将项目添加到捆绑包
-description: 将项目添加到 Driveitem 捆绑包
+description: 将项目添加到 driveItems 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a5b764bf94894d77ccead6adaa205882f6723fc5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f632b8054c1819c1af8bdd632c0d13092117cb30
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960286"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50774381"
 ---
 # <a name="add-item-to-a-bundle"></a>将项目添加到捆绑包
 
@@ -19,7 +18,7 @@ ms.locfileid: "48960286"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将其他 [driveItem][] 从驱动器添加到 [捆绑包][]中。
+将驱动器中的其他 [driveItem][] 添加到 [捆绑包][]。
 
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
@@ -48,19 +47,19 @@ POST /drive/bundles/{bundle-id}/children
 
 ## <a name="request-body"></a>请求正文
 
-请求正文包括应添加到捆绑的子集合中的项的标识符。
+请求正文包括应添加到捆绑包的子集合中的项目的标识符。
 
 ## <a name="response"></a>响应
 
 如果成功，响应为 `204 No Content` 。
 
-请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+请阅读 [错误响应][error-response] 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-此请求将现有项添加到指定的捆绑包中。
+此请求将现有项添加到指定的捆绑包。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

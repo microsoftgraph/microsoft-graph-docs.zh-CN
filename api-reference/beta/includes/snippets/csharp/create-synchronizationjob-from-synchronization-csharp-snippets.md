@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d6660f4cd63959c9c24ecae1a688bf9cede5ff29
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 91558ecb5b3d0c37ea11664851b730899f361b4a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48622559"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775094"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var synchronizationJob = new SynchronizationJob
     TemplateId = "BoxOutDelta"
 };
 
-await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs
     .Request()
     .AddAsync(synchronizationJob);
 

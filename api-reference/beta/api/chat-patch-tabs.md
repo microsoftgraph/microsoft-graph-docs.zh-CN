@@ -1,16 +1,16 @@
 ---
 title: 聊天中的"更新"选项卡
 description: 更新聊天中指定选项卡的属性。
-author: nkramer
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0225dd70a952d7d977c77c42595d19f7e671f9ff
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: d7d1b1a169e1ba1bc2b9e6b9ad518c2ac4fa48eb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689811"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775715"
 ---
 # <a name="update-tab-in-chat"></a>聊天中的"更新"选项卡
 
@@ -18,7 +18,7 @@ ms.locfileid: "49689811"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新聊天中指定[选项卡](../resources/teamstab.md)[的属性](../resources/chat.md)。 这可用于配置选项卡的内容。
+更新聊天中[指定选项卡](../resources/teamstab.md)[的属性](../resources/chat.md)。 这可用于配置选项卡的内容。
 
 > **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上，将更新固定在会议中的选项卡。
 
@@ -30,10 +30,15 @@ ms.locfileid: "49689811"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
+|Application | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 PATCH /chats/{chat-id}/tabs/{tab-id}
 ```
@@ -45,14 +50,14 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 tab 对象的 JSON [表示形式](../resources/teamstab.md) 。
+在请求正文中，提供 tab 对象的 JSON [表示](../resources/teamstab.md) 形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新的 **teamsTab** 资源。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 **teamsTab** 资源。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a>示例 1：更新聊天中的选项卡名称
+### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a>示例 1：更新聊天中选项卡的名称
 
 #### <a name="request"></a>请求
 下面展示了示例请求。

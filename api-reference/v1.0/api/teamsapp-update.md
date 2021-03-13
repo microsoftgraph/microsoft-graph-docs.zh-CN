@@ -5,20 +5,20 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ca0bb22bf8be1898c376807a5df2e727f282b30d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8610c51922989d96f455073ea824c258d6d454ba
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472011"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774797"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
 命名空间：microsoft.graph
 
-更新 [之前发布到](../resources/teamsapp.md) Microsoft Teams 应用目录的应用。 若要更新应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
+更新 [之前发布到](../resources/teamsapp.md) Microsoft Teams 应用目录的应用。 若要更新应用， **必须将应用的 distributionMethod** 属性设置为 `organization` 。
 
-此 API 专门更新发布到组织应用程序目录的应用 (租户应用程序目录) 。
+此 API 专门更新发布到组织的应用程序目录的应用程序 (租户应用程序目录) 。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |属性|类型|说明|
 |----|----|----|
-|requiresReview| Boolean | 此可选查询参数触发应用审阅过程。 具有管理员权限的用户无需触发评价即可提交应用。 如果用户想要在发布之前请求审阅，则必须设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或设置值，并且应用将被视为已批准 `requiresReview` `false`  ，并且将立即发布。|
+|requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,9 +55,9 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，包括 Teams zip 清单有效负载。 有关详细信息，请参阅 ["创建应用包"](/microsoftteams/platform/concepts/apps/apps-package)
+在请求正文中，包括 Teams zip 清单有效负载。 有关详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)
 
->**注意：** 使用从列表已发布 [应用调用](./appcatalogs-list-teamsapps.md) 返回的 ID 来引用要更新的应用。 请勿使用 zip 应用包清单中的 ID。
+>**注意：** 使用从列表已发布 [应用](./appcatalogs-list-teamsapps.md) 调用返回的 ID 来引用你要更新的应用。 请勿使用 zip 应用包清单中的 ID。
 
 ## <a name="response"></a>响应
 
@@ -79,7 +79,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-有关 Teams 应用程序 zip 文件的详细信息，请参阅["创建应用包"。](/microsoftteams/platform/concepts/apps/apps-package)
+有关 Teams 应用程序 zip 文件的详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
 <!-- markdownlint-disable MD024 -->
 
 #### <a name="response"></a>响应
@@ -88,12 +88,14 @@ Content-length: 244
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-a-new-version-of-an-existing-app-for-admin-review-prior-to-publication-in-the-current-tenant-catalog"></a>示例 2：更新现有应用的新版本，以在当前租户目录中发布之前进行管理员审阅
+### <a name="example-2-update-a-new-version-of-an-existing-app-for-admin-review-prior-to-publication-in-the-current-tenant-catalog"></a>示例 2：在当前租户目录中发布之前，更新现有应用的新版本供管理员审阅
 
 #### <a name="request"></a>请求
 
 <!-- markdownlint-disable MD034 -->
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
@@ -106,12 +108,18 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 
 #### <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码和键/ `publishingState` `submitted` 值对： *请参阅* [teamsappdefinition](../resources/teamsappdefinition.md)。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和键/ `publishingState` `submitted` 值对 ： 。 *请参阅* [teamsappdefinition](../resources/teamsappdefinition.md)。
 
 <!-- {
   "blockType": "response",

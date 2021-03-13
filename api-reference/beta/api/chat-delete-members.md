@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cdfc3dd78a82d4f68c7397840b7a4152db24c46f
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: d8696bbf255621f226409e3e91c4d6b0194f88cc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872903"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775904"
 ---
 # <a name="remove-member-from-chat"></a>从聊天删除成员
 命名空间：microsoft.graph
@@ -53,10 +53,6 @@ DELETE /chats/{chat-id}/members/{membership-id}
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-
-> [!NOTE]
-> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-remove-members-from-chat)。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

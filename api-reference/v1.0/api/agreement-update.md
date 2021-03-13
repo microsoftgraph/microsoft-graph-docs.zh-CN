@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: d7c916e05268e4dfc2a3f080310d274ccaaa7a47
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 53ec2db520eb6933526753c8326f6a4d2ee95f34
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722581"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774935"
 ---
 # <a name="update-agreement"></a>更新协议
 
 命名空间：microsoft.graph
 
 更新 [协议对象的属性](../resources/agreement.md) 。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -42,13 +42,15 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|字符串|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|布尔值|用户是否必须展开和查看协议才能接受。|
+|isViewingBeforeAcceptanceRequired|Boolean|用户是否必须展开和查看协议才能接受。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码[](../resources/agreement.md)和更新的协议对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agreement"
@@ -63,6 +65,24 @@ Content-length: 85
   "isViewingBeforeAcceptanceRequired": true
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-agreement-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-agreement-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-agreement-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。

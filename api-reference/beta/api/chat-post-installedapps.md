@@ -1,16 +1,16 @@
 ---
 title: 将应用添加到聊天
 description: 将应用安装到聊天。
-author: nkramer
+author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8d57ac677ff0a09f3be228a8daa002437a9b498d
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 64b671580dac03ccc83a3a91191fca8b367fdeda
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689776"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775694"
 ---
 # <a name="add-app-to-chat"></a>将应用添加到聊天
 

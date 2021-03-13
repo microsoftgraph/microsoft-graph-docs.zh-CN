@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: 从捆绑包中删除项目
-description: 从 Driveitem 的捆绑包中删除项目
+description: 从 driveItems 捆绑包中删除项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9bf7968d9de8ad1b7cd2e2fc781b196405f9ced5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: edd7647be648b5eda1560157d35c6a7b2d4aa130
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960193"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50774360"
 ---
 # <a name="remove-item-from-bundle"></a>从捆绑包中删除项目
 
@@ -19,7 +18,7 @@ ms.locfileid: "48960193"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [捆绑包][]中删除项目。
+从捆绑包中删除 [项][]。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +50,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 如果成功，响应为 `204 No Content` 。
 
-阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
+请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
 ## <a name="example"></a>示例
 

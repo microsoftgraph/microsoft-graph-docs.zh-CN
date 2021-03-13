@@ -5,22 +5,22 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29867275aa1c10a49b05bb9c52a79c4e78bc5d80
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 975200e5221091f70f8e3f97ee5a6359903620b7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471808"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774864"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
 命名空间：microsoft.graph
 
 列出[](../resources/teamsapp.md) Microsoft Teams 应用目录中的应用。
-这包括来自 Microsoft Teams 应用商店的应用，以及组织的应用程序目录中的应用 (租户应用程序目录) 。 若要仅从组织的应用程序目录中获取应用，请指定为请求 `organization` 中的 **distributionMethod。**
+这包括来自 Microsoft Teams 应用商店的应用，以及租户应用程序目录和租户 (目录中) 。 若要仅从组织的应用程序目录中获取应用程序，请 `organization` 指定为请求中的 **distributionMethod。**
 
 > [!NOTE]
-> teamsApp 资源由服务器生成，与 Teams 应用清单中指定的 `id`  `id` 资源不同。 开发人员作为 Teams 应用清单的一部分提供将标记 `id` 为 `externalId` **teamsApp** 资源。
+> teamsApp 资源的 由服务器生成，与 Teams 应用清单中指定的 `id`  `id` 不同。 开发人员作为 Teams 应用清单的一部分提供的 `id` 标记为 `externalId` **teamsApp** 资源中的 。
 
 ## <a name="permissions"></a>权限
 
@@ -44,9 +44,9 @@ GET /appCatalogs/teamsApps
 
 此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-使用将返回有关应用状态（如 `$expand=AppDefinitions` **publishingState）** 的更多信息，它反映应用提交审阅状态，并返回应用是否已获得批准、被拒绝或仍在审核中。 
+使用 将返回有关应用状态（如 publishingState）的更多信息，它反映应用提交评价状态，并返回应用是否已获得批准、被拒绝或仍在审核 `$expand=AppDefinitions` 中。  
 
-> **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用以下任一筛选操作：等于、不等于和/或。
+> **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用下列任一筛选操作：等于、不等于、和、或、不。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -60,7 +60,7 @@ GET /appCatalogs/teamsApps
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [teamsApp](../resources/teamsapp.md) 对象列表。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [teamsApp](../resources/teamsapp.md) 对象列表。
 
 ## <a name="examples"></a>示例
 
@@ -252,11 +252,13 @@ Content-Type: application/json
 
 ### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例 4：列出具有给定 ID 的应用程序，并返回提交审阅状态
 
-以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState，** 反映应用的提交审阅状态。 `Submitted` 表示评价挂起，表示应用已由管理员批准，并且意味着应用 `published` `rejected` 已遭管理员拒绝。
+以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState**，这反映了应用的提交审阅状态。 `Submitted` 表示评价挂起，表示应用已由管理员批准，并且表示应用 `published` `rejected` 已遭管理员拒绝。
 
 #### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_with_filter_expand_appdefinitions"
@@ -265,6 +267,24 @@ Content-Type: application/json
 ```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-filter-expand-appdefinitions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-with-filter-expand-appdefinitions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-with-filter-expand-appdefinitions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-with-filter-expand-appdefinitions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应
@@ -311,6 +331,8 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_with_bots"
@@ -319,6 +341,24 @@ Content-Type: application/json
 ```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-bots-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-with-bots-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-with-bots-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-with-bots-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

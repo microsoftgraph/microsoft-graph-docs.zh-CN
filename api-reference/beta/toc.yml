@@ -473,6 +473,10 @@ items:
                 href: api/userteamwork-delete-installedapps.md
               - name: 获取用户和应用之间的聊天
                 href: api/userscopeteamsappinstallation-get-chat.md
+              - name: 获取用户的聊天
+                href: api/chat-get.md
+              - name: 列出用户的聊天
+                href: api/chat-list.md
           - name: 待办任务
             items:
               - name: 任务
@@ -925,7 +929,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 删除
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -1802,7 +1806,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -11168,6 +11172,20 @@ items:
                         href: api/connectedorganization-delete-externalsponsors.md
                       - name: 删除内部发起人
                         href: api/connectedorganization-delete-internalsponsors.md
+                  - name: 批准
+                    href: resources/approval.md
+                    items:
+                      - name: 获取
+                        href: api/approval-get.md
+                  - name: 审批步骤
+                    href: resources/approvalstep.md
+                    items:
+                      - name: 列表
+                        href: api/approval-list-steps.md
+                      - name: 获取
+                        href: api/approvalstep-get.md
+                      - name: 更新
+                        href: api/approvalstep-update.md
                   - name: 权利管理设置
                     href: resources/entitlementmanagementsettings.md
                     items:
@@ -13032,7 +13050,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

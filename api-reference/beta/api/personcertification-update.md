@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ce03e7499cd79f1616c26ea53444a443e39b6f68
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: ac176cccb93d7cfce617c30aa7be27c4d061f393
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577348"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774577"
 ---
 # <a name="update-personcertification"></a>更新 personCertification
 命名空间：microsoft.graph
@@ -54,9 +54,9 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 |certificationId  |字符串      |证书的可引用标识符。 |
 |说明      |字符串      |认证说明。                   |
 |displayName      |字符串      |认证的标题。                         |
-|endDate          |日期        |认证过期的日期。            |
-|推断|[inferenceData](../resources/inferencedata.md)|包含实体是否由创建或修改应用程序推断的推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|issuedDate       |日期        |认证颁发日期。         |
+|endDate          |日期        |认证到期的日期。            |
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|issuedDate       |日期        |颁发证书的日期。         |
 |issuingAuthority |字符串      |授予证书的颁发机构。          |
 |issuingCompany   |字符串      |授予证书的颁发机构。          |
 |startDate        |日期        |认证生效的日期。       |
@@ -65,7 +65,7 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的 [personCertification](../resources/personcertification.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [personCertification](../resources/personcertification.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -87,15 +87,19 @@ Content-length: 497
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-personcertification-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-personcertification-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-personcertification-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-personcertification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
