@@ -1,16 +1,16 @@
 ---
 title: 列出聊天中的应用
 description: 列出聊天中安装的应用。
-author: nkramer
+author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f14a13c53771c375b43451234d90c90f5ee28cd1
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 1fc41102d92926e52b5703d3732a4eba02b3b06f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843736"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770111"
 ---
 # <a name="list-apps-in-chat"></a>列出聊天中的应用
 
@@ -250,7 +250,7 @@ GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {

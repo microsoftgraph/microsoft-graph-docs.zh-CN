@@ -1,26 +1,26 @@
 ---
 author: swapnil1993
 title: 列出 columnDefinitions
-description: 列出内容类型的列。
+description: 列出内容类型中的列。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5d3c1c4e64323aa772639d977d0d4dfc18603932
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 67ca1c05a9f92714b31932056d55c889006b129e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446121"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770527"
 ---
 # <a name="list-columndefinitions"></a>列出 columnDefinitions
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-获取内容  [类型中的][columnDefinition] [集合][contentType]。
+获取内容类型中的[columnDefinition] [集合][contentType]。 []
 
   
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
   
 
@@ -63,7 +63,7 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [columnDefinition][] 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [columnDefinition][] 对象集合。
 
   
 
@@ -71,12 +71,32 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_columns_from_contenttype" } -->
  
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}/columns
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-columns-from-contenttype-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-columns-from-contenttype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-columns-from-contenttype-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

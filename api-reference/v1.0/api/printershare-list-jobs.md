@@ -5,26 +5,26 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 9979870573e84d10c552e70205fab2494e289fc7
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 3b0bb574ca78f8fb2679b5724858c0328bfde866
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516985"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50771503"
 ---
 # <a name="list-printjobs-for-a-printershare"></a>列出 printerShare 的 printJobs
 命名空间：microsoft.graph
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-检索与 printerShare 关联的打印 [作业列表](../resources/printershare.md)。
+检索与 [printerShare](../resources/printershare.md)关联的打印作业列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予 [获取 printerShare](printershare-get.md) 访问权限的权限以及下表中列出的权限之一。 登录用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予 [获取 printerShare](printershare-get.md) 访问权限的权限以及下表中列出的权限之一。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
-若要从其他用户读取打印作业，登录用户需要是打印管理员，并且具有 PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All 或 PrintJob.ReadWrite.All 权限。
+若要从其他用户读取打印作业，登录的用户需要是打印管理员，并且具有 PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All 或 PrintJob.ReadWrite.All 权限。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -45,11 +45,11 @@ GET /print/shares/{printerShareId}/jobs
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-* 默认情况下 **，响应** 中将省略 documents 属性。 若要同时返回每个打印作业 [的 printDocuments](../resources/printdocument.md) 列表，请使用 `$expand=documents` 。
-* 此方法支持按创建作业的用户筛选打印作业。 Use `$filter=createdBy/userPrincipalName eq '{upn}'` ，其中 **{upn}** 是关联用户的用户主体名称。 [](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname)
+* 默认情况下 **，响应** 中将省略 documents 属性。 若要同时返回每个 [打印作业的 printDocuments](../resources/printdocument.md) 列表，请使用 `$expand=documents` 。
+* 此方法支持按创建打印作业的用户筛选打印作业。 使用 `$filter=createdBy/userPrincipalName eq '{upn}'` ，其中 **{upn}** 是关联 [用户](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) 的用户主体名称。
 
 ### <a name="exceptions"></a>Exceptions
-不支持某些运算符： `$count` `$search` .
+不支持某些运算符 `$count` `$search` ：、。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -61,11 +61,13 @@ GET /print/shares/{printerShareId}/jobs
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [printJob](../resources/printjob.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printJob](../resources/printjob.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_printjob"
@@ -74,6 +76,24 @@ GET /print/shares/{printerShareId}/jobs
 ``` http
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/jobs
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printjob-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-printjob-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

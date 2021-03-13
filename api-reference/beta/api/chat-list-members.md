@@ -1,16 +1,16 @@
 ---
 title: 列出聊天成员。
 description: 检索聊天成员。
-author: clearab
+author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8343953e48a11500abb302b4cddaf5d1f6203457
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 224cd1dfd0f26eb61a1f1a0a410d9ab315863593
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753465"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770044"
 ---
 # <a name="list-members-of-a-chat"></a>列出聊天成员。
 
@@ -33,7 +33,7 @@ ms.locfileid: "49753465"
 |---------|-------------|
 |委派（工作或学校帐户）| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|Application| 不支持。 |
 
 > [!NOTE]
 > 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -64,7 +64,7 @@ GET /users/{user-id}/chats/{chat-id}/members
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象列表。
 
 > [!NOTE]
-> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues.md#missing-tenantid-for-chat-members)。
+> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues#missing-properties-for-chat-members)。
 
 ## <a name="example"></a>示例
 

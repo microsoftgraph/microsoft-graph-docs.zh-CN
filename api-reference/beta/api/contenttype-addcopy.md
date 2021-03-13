@@ -1,26 +1,26 @@
 ---
 author: swapnil1993
-title: contentType：addCopy
+title: contentType： addCopy
 description: 将网站内容类型的副本添加到列表中。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 955afab160cb5c927771db4132ec208b85e80b2a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 97c93929fbc0c370bd4dac53b068439f5bbd5b82
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446137"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50771146"
 ---
-# <a name="contenttype-addcopy"></a>contentType：addCopy
+# <a name="contenttype-addcopy"></a>contentType： addCopy
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-将网站内容[类型][site][的副本添加到][contentType][列表中][list]。
+将网站内容[类型][site][的副本添加到][contentType][列表][list]。
  
   
 
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>权限  
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
 
@@ -66,6 +66,8 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopy"
@@ -79,6 +81,24 @@ Content-Type: application/json
   "contentType": "https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-addcopy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-addcopy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-addcopy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

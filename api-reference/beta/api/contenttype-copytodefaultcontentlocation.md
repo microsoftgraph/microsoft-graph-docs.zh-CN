@@ -5,20 +5,20 @@ description: 将文件复制到内容类型中的默认内容位置。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 913db69991d176d8537baef5abbbb8734d6c10cc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 879615cac7dce92b4044c0a876006ef9f4edec01
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446133"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50771104"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType：copyToDefaultContentLocation
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-将文件复制到内容类型中的默认 [内容位置][contentType]。 然后，可以通过 POST 操作将该文件添加为默认文件或模板。
+将文件复制到内容类型 中的默认 [内容位置][contentType]。 然后，可以通过 POST 操作将该文件添加为默认文件或模板。
 
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>权限  
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
 
@@ -58,7 +58,7 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 
 |参数|类型|说明|
 |-|-|-|
-|sourceFile| [itemReference](../resources/itemreference.md) |有关需要复制到默认内容位置的源文件的元数据。 必需。|
+|sourceFile| [itemReference](../resources/itemreference.md) |有关需要复制到默认内容位置的源文件的元数据。 必填。|
 |destinationFileName| string |目标文件名。 
 
 ## <a name="response"></a>响应
@@ -69,6 +69,8 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_copytodefaultcontentlocation"
@@ -88,6 +90,24 @@ Content-Type: application/json
     "destinationFileName": "newname.txt"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-copytodefaultcontentlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-copytodefaultcontentlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-copytodefaultcontentlocation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

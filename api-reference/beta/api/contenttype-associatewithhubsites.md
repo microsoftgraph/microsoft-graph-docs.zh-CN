@@ -5,12 +5,12 @@ description: 将内容类型与中心网站列表关联。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8049eb6db5975c2e5c8600a654b6cc533124217f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e60d93b601f4b98eb2434bf1596b31e199fd0d41
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446135"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50771118"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType：associateWithHubSites
 
@@ -22,7 +22,7 @@ ms.locfileid: "50446135"
 >**注意：** 此功能仅限于拥有 SharePoint Syntex 许可证的租户。
   
 
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>权限  
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
 
@@ -58,8 +58,8 @@ POST /sites/id/contentTypes/id/associateWithHubSites
 
 |参数|类型|说明|
 |-|-|-|
-|hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的主要 URL 列表。 必需。|
-|propagateToExistingLists| 布尔 |如果 ，内容类型将在中心网站中的现有列表上强制执行;否则，它将仅应用于 `true` 新创建的列表。 
+|hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的主要 URL 列表。 必填。|
+|propagateToExistingLists| Boolean |如果为 ，内容类型将强制应用于中心网站中的现有列表;否则，将 `true` 仅应用于新创建的列表。 
 
 ## <a name="response"></a>响应
 
@@ -68,6 +68,8 @@ POST /sites/id/contentTypes/id/associateWithHubSites
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_associatewithhubsites"
@@ -86,6 +88,24 @@ Content-Type: application/json
     "propagateToExistingLists": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-associatewithhubsites-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-associatewithhubsites-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-associatewithhubsites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

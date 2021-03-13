@@ -1,16 +1,16 @@
 ---
 title: 在聊天中卸载应用
 description: 卸载（删除）聊天中安装的应用。
-author: nkramer
+author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 212a033198a5bb1b6303b3d1a848ad32da4df5ab
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 014ef8e056ca117bd1680cb5b0be0595f20d8571
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690097"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770064"
 ---
 # <a name="uninstall-app-in-a-chat"></a>在聊天中卸载应用
 
@@ -41,6 +41,14 @@ ms.locfileid: "49690097"
 ```http
 DELETE /chats/{chat-id}/installedApps/{app-installation-id}
 ```
+
+## <a name="request-headers"></a>请求标头
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 

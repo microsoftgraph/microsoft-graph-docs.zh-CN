@@ -1,16 +1,16 @@
 ---
 title: 获取聊天中的 conversationMember
 description: 检索聊天成员。
-author: clearab
+author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a5b37c6cde5c0bf8823a599d1720f3b8c5fcd6ad
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: ba86dc1d4ad5eb5ba6fcc926873d1896d55affb4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753714"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770086"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>获取聊天中的 conversationMember
 
@@ -28,7 +28,7 @@ ms.locfileid: "49753714"
 |---------|-------------|
 |委派（工作或学校帐户）| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|Application| 不支持。 |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
@@ -61,7 +61,7 @@ GET /users/{user-id}/chats/{chat-id}/members/{membership-id}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。
 
 > [!NOTE]
-> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues.md#missing-tenantid-for-chat-members)。
+> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues#missing-properties-for-chat-members)。
 
 ## <a name="example"></a>示例
 

@@ -5,22 +5,22 @@ description: 从 sharepoint 列表或网站中删除内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8c27cfd2e16fc4c3bd7fade3f5546c08951f38c5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5cf3182f16871c4b56026ba10cfa61f6edcbff05
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446129"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770950"
 ---
 # <a name="delete-contenttype"></a>删除 contentType
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [列表或][contentType] 网站 [中删除][] 内容 [类型][]。
+从[列表或][contentType][网站中删除][]内容[类型][]。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -55,6 +55,8 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_contenttype"
@@ -64,6 +66,24 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ```http
 DELETE https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-contenttype-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-contenttype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-contenttype-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 <!-- {
@@ -78,4 +98,4 @@ HTTP/1.1 204 No Content
 
 [list]: ../resources/list.md
 [contentType]: ../resources/contentType.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md

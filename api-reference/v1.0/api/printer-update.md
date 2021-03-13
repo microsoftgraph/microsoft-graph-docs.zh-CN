@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e29335cab6d88c736825684b2ab46e65db64d563
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7adf522284be5778c927c0104889bc42a7674737
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516964"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50771783"
 ---
 # <a name="update-printer"></a>更新打印机
 命名空间：microsoft.graph
@@ -19,10 +19,10 @@ ms.locfileid: "50516964"
 
 更新 [打印机对象的属性](../resources/printer.md) 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 >**注意：** 仅允许注册打印机的应用使用应用程序权限更新打印机。
 
@@ -52,28 +52,28 @@ PATCH /print/printers/{printerId}
 
 ## <a name="request-body"></a>请求正文
 
-### <a name="delegated-permissions-and-json-payload"></a>委派的权限和 JSON 负载
+### <a name="delegated-permissions-and-json-payload"></a>委派的权限和 JSON 有效负载
 
 如果使用委派权限，在请求正文中， [提供应更新](../resources/printer.md) 的相关打印机字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 
 
 可以使用委派权限更新以下属性。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
-|位置|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
-|displayName|String|打印机的名称。|
+|location|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
+|displayName|字符串|打印机的名称。|
 
-### <a name="application-permissions-and-json-payload"></a>应用程序权限和 JSON 负载
+### <a name="application-permissions-and-json-payload"></a>应用程序权限和 JSON 有效负载
 在请求正文中， [提供应更新](../resources/printer.md) 的相关打印机字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 
 
 可以使用应用程序权限更新以下属性。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|与此打印机共享关联的打印机的功能。|
-|displayName|String|打印机的名称。|
+|displayName|字符串|打印机的名称。|
 |manufacturer|String|打印机的制造商。|
 |model|String|打印机的模型名称。|
 |状态|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
@@ -81,19 +81,19 @@ PATCH /print/printers/{printerId}
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
-使用应用程序权限，还可使用 Internet 打印协议或 IPP (更新) 负载。 在这种情况下，请求正文包含一个二进制流，该流代表 [IPP](https://tools.ietf.org/html/rfc8010)编码中的 Printer Attributes 组。
+使用应用程序权限，还可使用 IPP 负载中的 Internet 打印 (更新) 打印机。 在这种情况下，请求正文包含表示 [IPP](https://tools.ietf.org/html/rfc8010)编码中的 Printer Attributes 组的二进制流。
 
-客户端必须为一组打印机属性提供一个或多个值 (包括 [RFC8011 第 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 节"作业模板属性" ("xxx-default"、"xxx-supported"和"xxx-ready"属性) 、 [第 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 节打印机说明属性以及打印机支持的任何属性扩展中定义的显式允许的带外值) 。 每个 (打印机) 的值将替换 (打印机) 打印机属性的值。 对于可以在 1setOf (多个值) ，客户端提供的所有值将替换相应的 Printer 对象属性的所有值。
+客户端必须为一组 Printer 属性提供一个或多个值 (包括 [RFC8011 第 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 节中定义的明确允许的带外值) 作业模板属性 ("xxx-default"、"xxx-supported"和"xxx-ready"属性) 、 [第 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 节打印机说明属性以及打印机支持的任何属性扩展。 提供 (每个 Printer) 的值将替换 (Printer) 的对应 Printer 属性的值。 对于在 1setOf (可以有多个值) ，客户端提供的所有值将替换相应的 Printer 对象属性的所有值。
 
 ## <a name="response"></a>响应
 
-### <a name="delegated-permissions-and-json-payload"></a>委派的权限和 JSON 负载
+### <a name="delegated-permissions-and-json-payload"></a>委派的权限和 JSON 有效负载
 
-如果使用委派权限，如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的打印机对象[](../resources/printer.md)。
+如果使用委派权限，如果成功，此方法在响应正文中返回 响应 `200 OK` 代码和更新的 [printer](../resources/printer.md) 对象。
 
-### <a name="application-permissions-and-json-payload"></a>应用程序权限和 JSON 负载
+### <a name="application-permissions-and-json-payload"></a>应用程序权限和 JSON 有效负载
 
-如果使用委派权限，如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的打印机对象[](../resources/printer.md)。
+如果使用委派权限，如果成功，此方法在响应正文中返回 响应 `200 OK` 代码和更新的 [printer](../resources/printer.md) 对象。
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
@@ -102,6 +102,8 @@ PATCH /print/printers/{printerId}
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printer"
@@ -121,6 +123,16 @@ Content-length: 581
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

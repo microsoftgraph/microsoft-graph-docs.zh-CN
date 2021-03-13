@@ -5,12 +5,12 @@ description: 在网站中创建内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: f84ec9db88917b55f518bbdbd4660bf91e9321ed
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b9ab72a2d757e2d409f98c2aab4e6f7392769dfc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446115"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770460"
 ---
 # <a name="create-contenttype"></a>创建 contentType
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "50446115"
 
 在网站[中创建新的 contentType。][] [][]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,15 +51,17 @@ POST /sites/{site-id}/contentTypes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `201 Created` 代码和 [contentType][] 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [contentType][] 对象。
 
 
 ## <a name="example"></a>示例
 
-以下示例演示如何创建新的通用内容类型。
+以下示例演示如何创建新的泛型内容类型。
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_contenttype"
@@ -80,6 +82,12 @@ Content-Type: application/json
     "group": "Document Set Content Types" 
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-contenttype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -109,7 +117,7 @@ Content-type: application/json
 
 
 [contentType]: ../resources/contentType.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 
 <!--
 {

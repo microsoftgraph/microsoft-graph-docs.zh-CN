@@ -5,12 +5,12 @@ description: 发布内容类型中心网站中的内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 072fb067114f9693f18a63c2d1e881fa55a7ca6b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2137c9fe371103d68785e67cfc815a15dba2ec54
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446114"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770437"
 ---
 # <a name="contenttype-publish"></a>contentType： publish
 命名空间：microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "50446114"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 发布内容类型中心网站中的[contentType。][]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
 
@@ -54,6 +54,8 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_publish"
@@ -62,6 +64,24 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```http
 POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-publish-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-publish-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-publish-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-publish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
