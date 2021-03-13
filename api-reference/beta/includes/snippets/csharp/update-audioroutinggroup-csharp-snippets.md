@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1e532bf9eedc13dc3365fb661364d7afc272c7e9
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: cc73ac9f76467413f6eb5be5b849712b326eaba0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302649"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797905"
 ---
 ```csharp
 
@@ -26,7 +26,7 @@ var audioRoutingGroup = new AudioRoutingGroup
     }
 };
 
-await graphClient.Communications.Calls["{id}"].AudioRoutingGroups["{id}"]
+await graphClient.Communications.Calls["{call-id}"].AudioRoutingGroups["{audioRoutingGroup-id}"]
     .Request()
     .UpdateAsync(audioRoutingGroup);
 

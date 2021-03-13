@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1c8a4690d886fca8e28ba04f33515c578f6d7390
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 0ffc0707372a19494b4bdec07a6e73ce7225f204
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684962"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792352"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var attachment = new FileAttachment
     ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
 };
 
-await graphClient.Me.Outlook.Tasks["AAMkADAAAANXbdnAAA="].Attachments
+await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].Attachments
     .Request()
     .AddAsync(attachment);
 

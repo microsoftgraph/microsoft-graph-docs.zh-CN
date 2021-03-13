@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8b83aafe0407a288c5c523153390d02ba24192a8
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: 5bfd7f152957d6da2641885a1103e69a6c7f91db
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524489"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798106"
 ---
 ```javascript
 
@@ -19,12 +19,12 @@ const group = {
   assignedLabels: 
   [
     {
-        "labelId" : "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+        labelId: '45cd0c48-c540-4358-ad79-a3658cdc5b88'
     }
   ]
 };
 
-let res = await client.api('/groups/{id}')
+await client.api('/groups/{id}')
     .version('beta')
     .update(group);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 04457f89adf27585f436da4d53592a11291bd667
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: b4259a99133c75013f77a921c5dc8670ffbd28da
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428809"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804779"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const _boolean = {
-  groupId: "ffffffff-ffff-ffff-ffff-ffffffffffff"
+  groupId: 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 };
 
-let res = await client.api('/groupLifecyclePolicies/renewGroup')
+await client.api('/groupLifecyclePolicies/renewGroup')
     .version('beta')
     .post(_boolean);
 

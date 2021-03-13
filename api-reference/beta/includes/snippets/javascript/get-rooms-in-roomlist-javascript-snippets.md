@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 119441b1b59c2db0d6eb3b8fabc8236cb48c1518
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 31880b57d458fda3f40572501fe5200aab4afd8f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876756"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787290"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms')
+let rooms = await client.api('/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms')
     .version('beta')
     .get();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fb172798e774a85dd3886b81351ff48c877763e9
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: fc13e83a1739a377356ab080415444bfdcc1259b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46821328"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799935"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var personInterest = new PersonInterest
     }
 };
 
-await graphClient.Me.Profile.Interests["{id}"]
+await graphClient.Me.Profile.Interests["{personInterest-id}"]
     .Request()
     .UpdateAsync(personInterest);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e1b5e7c1327bc8177a36a8eba9a6d4a2ae01619a
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 06555861673234ca830051fb6567938919858585
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683786"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806106"
 ---
 ```csharp
 
@@ -19,13 +19,13 @@ var printConnector = new PrintConnector
     AppVersion = "0.19.7338.23496",
     Location = new PrinterLocation
     {
-        Latitude = 1.1f,
-        Longitude = 2.2f,
+        Latitude = 1.1,
+        Longitude = 2.2,
         AltitudeInMeters = 3
     }
 };
 
-await graphClient.Print.Connectors["{id}"]
+await graphClient.Print.Connectors["{printConnector-id}"]
     .Request()
     .UpdateAsync(printConnector);
 

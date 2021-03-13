@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2af0fe1580fd75ee2b288932176b85374de3a40a
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: ef29c2440a5d1338c1d7a97a8969526f1b5d5c83
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535581"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797140"
 ---
 ```csharp
 
@@ -35,7 +35,7 @@ var removeLicenses = new List<Guid>()
 {
 };
 
-await graphClient.Groups["1ad75eeb-7e5a-4367-a493-9214d90d54d0"]
+await graphClient.Groups["{group-id}"]
     .AssignLicense(addLicenses,removeLicenses)
     .Request()
     .PostAsync();

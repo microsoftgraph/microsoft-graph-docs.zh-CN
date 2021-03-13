@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5ee9271eb6a5410c0dbba0d0c0f017070be7e06e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: fdad7eab666fd60fac0fb4ca3bc067a360b5a6f7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858749"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794902"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups/delta')
+let delta = await client.api('/groups/delta')
     .version('beta')
     .get();
 
