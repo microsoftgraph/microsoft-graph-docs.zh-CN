@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6c6e18dbeee2db8cc8dc8ba04022b505c8559157
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 6e8de5302d9c638729a153610e0b149f3a652cc0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49530590"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784931"
 ---
 ```csharp
 
@@ -23,8 +23,10 @@ var acceptedModalities = new List<Modality>()
     Modality.Audio
 };
 
-await graphClient.Communications.Calls["{id}"]
-    .Answer(callbackUri,mediaConfig,acceptedModalities,null)
+var participantCapacity = 200;
+
+await graphClient.Communications.Calls["{call-id}"]
+    .Answer(callbackUri,mediaConfig,acceptedModalities,participantCapacity)
     .Request()
     .PostAsync();
 

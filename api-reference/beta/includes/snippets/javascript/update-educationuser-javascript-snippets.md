@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 957264892171bd9bebd2562912f88857febe9548
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 63cb20304b7643f0e3aed6ce3f0e230355070403
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636510"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799018"
 ---
 ```javascript
 
@@ -16,13 +16,13 @@ const options = {
 const client = Client.init(options);
 
 const educationUser = {
-  displayName: "Rogelio Cazares",
-  givenName: "Rogelio",
-  middleName: "Fernando",
-  surname: "Cazares",
+  displayName: 'Rogelio Cazares',
+  givenName: 'Rogelio',
+  middleName: 'Fernando',
+  surname: 'Cazares',
 };
 
-let res = await client.api('/education/users/13020')
+await client.api('/education/users/13020')
     .version('beta')
     .update(educationUser);
 

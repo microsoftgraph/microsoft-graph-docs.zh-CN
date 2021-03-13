@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。请勿修改
-ms.openlocfilehash: e971b8049e780f4609fdba8ddaa6811fdef610fe
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e37ad475b84be0357bdc56eb3979b5ee2ecbad9d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222129"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795225"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var accessReviewInstance = await graphClient.IdentityGovernance.AccessReviews.Definitions["60860cdd-fb4d-4054-91ba-444404f3baa6"].Instances["12490cdb-6a18-4c08-ba2c-44442f0a0138"]
+var accessReviewInstance = await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].Instances["{accessReviewInstance-id}"]
     .Request()
     .GetAsync();
 

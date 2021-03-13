@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a1d6c4dd06099c2157d3a41f0068f26a3ddc4b58
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 20c94f06e2a24f19da97140aafec09f82bdad8d0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994516"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799761"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var externalConnection = new ExternalConnection
     Description = "Connection to index HR service tickets"
 };
 
-await graphClient.Connections["contosohr"]
+await graphClient.Connections["{externalConnection-id}"]
     .Request()
     .UpdateAsync(externalConnection);
 

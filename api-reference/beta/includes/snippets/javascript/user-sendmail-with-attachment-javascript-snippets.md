@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1aa033cd5becec64a48f9881b13d217d7ddf436f
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 116c78b298b15be3c1477cd3528e5f913381b586
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774446"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798680"
 ---
 ```javascript
 
@@ -17,30 +17,30 @@ const client = Client.init(options);
 
 const sendMail = {
   message: {
-    subject: "Meet for lunch?",
+    subject: 'Meet for lunch?',
     body: {
-      contentType: "Text",
-      content: "The new cafeteria is open."
+      contentType: 'Text',
+      content: 'The new cafeteria is open.'
     },
     toRecipients: [
       {
         emailAddress: {
-          address: "meganb@contoso.onmicrosoft.com"
+          address: 'meganb@contoso.onmicrosoft.com'
         }
       }
     ],
     attachments: [
       {
-        @odata.type: "#microsoft.graph.fileAttachment",
-        name: "attachment.txt",
-        contentType: "text/plain",
-        contentBytes: "SGVsbG8gV29ybGQh"
+        '@odata.type': '#microsoft.graph.fileAttachment',
+        name: 'attachment.txt',
+        contentType: 'text/plain',
+        contentBytes: 'SGVsbG8gV29ybGQh'
       }
     ]
   }
 };
 
-let res = await client.api('/me/sendMail')
+await client.api('/me/sendMail')
     .version('beta')
     .post(sendMail);
 

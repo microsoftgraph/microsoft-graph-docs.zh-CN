@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2f536cb5fe583ef794b8b3d9c90206f353bbc2cb
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 946e958e05a1101cee2141c96fdcec333a6d4be9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684748"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50805074"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var attachment = new FileAttachment
     ContentBytes = Encoding.ASCII.GetBytes("contentBytes-value")
 };
 
-await graphClient.Me.Messages["{id}"].Attachments
+await graphClient.Me.Messages["{message-id}"].Attachments
     .Request()
     .AddAsync(attachment);
 

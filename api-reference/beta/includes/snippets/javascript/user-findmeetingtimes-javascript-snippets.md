@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 688f49c97a6cdc4db361e293a6b32171ab5cfbbe
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: 82f459bd6c18fd1c62dcaac869e434de6bf16b00
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44533568"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784014"
 ---
 ```javascript
 
@@ -18,45 +18,45 @@ const client = Client.init(options);
 const meetingTimeSuggestionsResult = {
   attendees: [ 
     { 
-      type: "required",  
+      type: 'required',  
       emailAddress: { 
-        name: "Alex Wilbur",
-        address: "alexw@contoso.onmicrosoft.com" 
+        name: 'Alex Wilbur',
+        address: 'alexw@contoso.onmicrosoft.com' 
       } 
     }
   ],  
   locationConstraint: { 
-    isRequired: "false",  
-    suggestLocation: "false",  
+    isRequired: 'false',  
+    suggestLocation: 'false',  
     locations: [ 
       { 
-        resolveAvailability: "false",
-        displayName: "Conf room Hood" 
+        resolveAvailability: 'false',
+        displayName: 'Conf room Hood' 
       } 
     ] 
   },  
   timeConstraint: {
-    activityDomain:"work", 
+    activityDomain: 'work', 
     timeSlots: [ 
       { 
         start: { 
-          dateTime: "2019-04-16T09:00:00",  
-          timeZone: "Pacific Standard Time" 
+          dateTime: '2019-04-16T09:00:00',  
+          timeZone: 'Pacific Standard Time' 
         },  
         end: { 
-          dateTime: "2019-04-18T17:00:00",  
-          timeZone: "Pacific Standard Time" 
+          dateTime: '2019-04-18T17:00:00',  
+          timeZone: 'Pacific Standard Time' 
         } 
       } 
     ] 
   },  
-  isOrganizerOptional: "false",
-  meetingDuration: "PT1H",
-  returnSuggestionReasons: "true",
-  minimumAttendeePercentage: "100"
+  isOrganizerOptional: 'false',
+  meetingDuration: 'PT1H',
+  returnSuggestionReasons: 'true',
+  minimumAttendeePercentage: '100'
 };
 
-let res = await client.api('/me/findMeetingTimes')
+await client.api('/me/findMeetingTimes')
     .version('beta')
     .post(meetingTimeSuggestionsResult);
 

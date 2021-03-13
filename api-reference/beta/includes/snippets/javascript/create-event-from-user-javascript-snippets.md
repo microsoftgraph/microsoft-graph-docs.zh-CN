@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1554605ab5ae37a5fd35949463234eb4600ce36f
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: 55307f7b3ea0258724de033dfb64474b998807b4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42281519"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785598"
 ---
 ```javascript
 
@@ -16,36 +16,36 @@ const options = {
 const client = Client.init(options);
 
 const event = {
-  subject: "Let's go for lunch",
+  subject: 'Let\'s go for lunch',
   body: {
-    contentType: "HTML",
-    content: "Does noon work for you?"
+    contentType: 'HTML',
+    content: 'Does noon work for you?'
   },
   start: {
-      dateTime: "2017-04-15T12:00:00",
-      timeZone: "Pacific Standard Time"
+      dateTime: '2017-04-15T12:00:00',
+      timeZone: 'Pacific Standard Time'
   },
   end: {
-      dateTime: "2017-04-15T14:00:00",
-      timeZone: "Pacific Standard Time"
+      dateTime: '2017-04-15T14:00:00',
+      timeZone: 'Pacific Standard Time'
   },
-  location:{
-      displayName:"Harry's Bar"
+  location: {
+      displayName: 'Harry\'s Bar'
   },
   attendees: [
     {
       emailAddress: {
-        address:"samanthab@contoso.onmicrosoft.com",
-        name: "Samantha Booth"
+        address: 'samanthab@contoso.onmicrosoft.com',
+        name: 'Samantha Booth'
       },
-      type: "required"
+      type: 'required'
     }
   ],
   allowNewTimeProposals: true,
-  transactionId:"7E163156-7762-4BEB-A1C6-729EA81755A7"
+  transactionId: '7E163156-7762-4BEB-A1C6-729EA81755A7'
 };
 
-let res = await client.api('/me/events')
+await client.api('/me/events')
     .version('beta')
     .post(event);
 

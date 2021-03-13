@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ec1acf04135b8fbcb80299f82d7e93128c16133f
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: c1bed413504ae398a38ddaa749520c26f13cb185
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428816"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50809096"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var @string = await graphClient.Education.SynchronizationProfiles["{id}"]
+var @string = await graphClient.Education.SynchronizationProfiles["{educationSynchronizationProfile-id}"]
     .UploadUrl()
     .Request()
     .GetAsync();

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 22c4638a2089da5a1f0b20bfe0d12a92b921558e
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 8da93cfe89d05636b2b5b7e089bd1bf880bec3e3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176349"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791014"
 ---
 ```javascript
 
@@ -16,21 +16,21 @@ const options = {
 const client = Client.init(options);
 
 const accessPackageResourceRequest = {
-    catalogId: "de9315c1-272b-4905-924b-cc112ca180c7",
+    catalogId: 'de9315c1-272b-4905-924b-cc112ca180c7',
     accessPackageResource: {
-        displayName: "Community Outreach",
-        description: "https://contoso.sharepoint.com/sites/CSR",
-        resourceType: "SharePoint Online Site",
-        originId: "https://contoso.sharepoint.com/sites/CSR",
-        originSystem: "SharePointOnline",
+        displayName: 'Community Outreach',
+        description: 'https://contoso.sharepoint.com/sites/CSR',
+        resourceType: 'SharePoint Online Site',
+        originId: 'https://contoso.sharepoint.com/sites/CSR',
+        originSystem: 'SharePointOnline',
         accessPackageResourceEnvironment: {
-            originId: "https://contoso-admin.sharepoint.com/"
+            originId: 'https://contoso-admin.sharepoint.com/'
         }
     },
-    requestType: "AdminAdd"
+    requestType: 'AdminAdd'
 };
 
-let res = await client.api('/identityGovernance/entitlementManagement/accessPackageResourceRequests')
+await client.api('/identityGovernance/entitlementManagement/accessPackageResourceRequests')
     .version('beta')
     .post(accessPackageResourceRequest);
 

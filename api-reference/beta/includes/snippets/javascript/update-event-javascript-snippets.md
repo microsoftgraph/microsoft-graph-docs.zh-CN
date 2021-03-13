@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e7a53593d205e8cecb6968ea8a19234aecffe18e
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 5de47a58c3fc8f7f1efd55684f61bb1afe4a0894
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49755960"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793470"
 ---
 ```javascript
 
@@ -16,23 +16,23 @@ const options = {
 const client = Client.init(options);
 
 const event = {
-  originalStartTimeZone: "originalStartTimeZone-value",
-  originalEndTimeZone: "originalEndTimeZone-value",
+  originalStartTimeZone: 'originalStartTimeZone-value',
+  originalEndTimeZone: 'originalEndTimeZone-value',
   responseStatus: {
-    response: "",
-    time: "2016-10-19T10:37:00Z"
+    response: '',
+    time: '2016-10-19T10:37:00Z'
   },
   recurrence: null,
-  uid: "iCalUId-value",
+  uid: 'iCalUId-value',
   reminderMinutesBeforeStart: 99,
   isOnlineMeeting: true,
-  onlineMeetingProvider: "teamsForBusiness",
+  onlineMeetingProvider: 'teamsForBusiness',
   isReminderOn: true,
   hideAttendees: false,
-  categories: ["Red category"]
+  categories: ['Red category']
 };
 
-let res = await client.api('/me/events/{id}')
+await client.api('/me/events/{id}')
     .version('beta')
     .update(event);
 
