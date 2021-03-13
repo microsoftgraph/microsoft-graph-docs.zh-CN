@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 44cb7e3280e548316d1d1e553518c57390470023
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 04dae46db287e4a92df0a4c0b599250adce41c08
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636663"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778656"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const outlookTaskGroup = {
-  name: "Personal Tasks",
+  name: 'Personal Tasks',
 };
 
-let res = await client.api('/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=')
+await client.api('/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=')
     .version('beta')
     .update(outlookTaskGroup);
 

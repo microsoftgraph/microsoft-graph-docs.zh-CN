@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a718a4244659280aa4b7ed8596ae6ebde95a1e58
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 911499e2147bbc6f8fd3670bc507c56f02e8e8f0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753160"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778265"
 ---
 ```javascript
 
@@ -18,12 +18,12 @@ const client = Client.init(options);
 const permission = {
   grantees: [
     {
-      email: "ryan@contoso.com"
+      email: 'ryan@contoso.com'
     }
   ]
 };
 
-let res = await client.api('/me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants')
+await client.api('/me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants')
     .version('beta')
     .post(permission);
 

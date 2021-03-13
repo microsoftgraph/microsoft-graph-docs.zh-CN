@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 410ee3e8a737a8290a519f05c2d4a78d722c47d3
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: c9581bd497e1ddfbfd850907176c94155c6abffa
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48605107"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778967"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets')
+let worksheets = await client.api('/me/drive/items/{id}/workbook/worksheets')
     .version('beta')
     .get();
 

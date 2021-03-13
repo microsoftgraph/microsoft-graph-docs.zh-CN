@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b7877ea77f412edbea4ec16e8bf631caa167455a
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 0171003dd58b2cc61bece35033c913d2e4435418
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48614875"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783252"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.AccessReviews["2975E9B5-44CE-4E71-93D3-30F03B5AA992"]
+await graphClient.AccessReviews["{accessReview-id}"]
     .ResetDecisions()
     .Request()
     .PostAsync();

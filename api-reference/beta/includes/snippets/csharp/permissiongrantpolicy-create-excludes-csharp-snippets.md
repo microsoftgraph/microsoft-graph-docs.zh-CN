@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3ac13d1c44ecc9918633e211ddeb32d126a37eeb
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 64f1f226892eb46fde53aec664dbfd29c9e50a55
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458701"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782895"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var permissionGrantConditionSet = new PermissionGrantConditionSet
     ResourceApplication = "00000003-0000-0000-c000-000000000000"
 };
 
-await graphClient.Policies.PermissionGrantPolicies["my-custom-consent-policy"].Excludes
+await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].Excludes
     .Request()
     .AddAsync(permissionGrantConditionSet);
 

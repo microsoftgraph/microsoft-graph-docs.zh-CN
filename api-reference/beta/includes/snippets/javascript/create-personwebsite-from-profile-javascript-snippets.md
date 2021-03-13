@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8cd12fb4f48e9f7771db5a965cc8a01cb342d6ef
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 7c577407f5b231f624aa1c754a438e7a37e62ab8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46821404"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779223"
 ---
 ```javascript
 
@@ -17,13 +17,13 @@ const client = Client.init(options);
 
 const personWebsite = {
   categories: [
-    "football"
+    'football'
   ],
-  displayName: "Lyn Damer",
-  webUrl: "www.lyndamer.no"
+  displayName: 'Lyn Damer',
+  webUrl: 'www.lyndamer.no'
 };
 
-let res = await client.api('/me/profile/websites')
+await client.api('/me/profile/websites')
     .version('beta')
     .post(personWebsite);
 

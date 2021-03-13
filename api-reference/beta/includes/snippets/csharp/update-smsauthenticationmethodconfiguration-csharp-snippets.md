@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6b604096aa0e1177b70458e45a718aee951c842c
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b8082e8c23c5f771de592e675ea4c557fdae4b2a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475597"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779610"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var authenticationMethodConfiguration = new SmsAuthenticationMethodConfiguration
     State = AuthenticationMethodState.Enabled
 };
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["sms"]
+await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
     .Request()
     .UpdateAsync(authenticationMethodConfiguration);
 

@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e067ef5387f53a443adbe4184216149c396bf394
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 73a0410a2e0eee488186efd1a0e2ef28941fae8c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684960"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781083"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var @event = await graphClient.Me.Events["AAMkAGI1AAAoZDOFAAA="]
+var @event = await graphClient.Me.Events["{event-id}"]
     .Request()
     .Header("Prefer","outlook.body-content-type=\"text\"")
     .Select("subject,body,bodyPreview")
