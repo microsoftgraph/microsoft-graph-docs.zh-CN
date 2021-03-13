@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5734a0d05bdca25c290876153dca92267e577a6e
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4ff789832ead09249ff26d936ee2623e7448cc90
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460252"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783833"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/permissionGrantPolicies/my-custom-consent-policy')
+await client.api('/policies/permissionGrantPolicies/my-custom-consent-policy')
     .version('beta')
     .delete();
 

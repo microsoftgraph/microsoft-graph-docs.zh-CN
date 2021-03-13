@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b310cf1261000273e699fc4e7ea75e41074c555d
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e192057878dfe9a16ca0ed9699b7c4bcf95e417a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636506"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785642"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const attachment = {
-    @odata.type: "#microsoft.graph.fileAttachment",
-    name: "menu.txt",
-    contentBytes: "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    '@odata.type': '#microsoft.graph.fileAttachment',
+    name: 'menu.txt',
+    contentBytes: 'bWFjIGFuZCBjaGVlc2UgdG9kYXk='
 };
 
-let res = await client.api('/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments')
+await client.api('/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments')
     .version('beta')
     .post(attachment);
 

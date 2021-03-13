@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b5c9c73e6d2328e87542d4e3566b34b71a36665d
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9c7022ff6fb52b31be79192dda9da3a5e3cb084b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458128"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788038"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const emailAuthenticationMethod = {
-  emailAddress: "kim@contoso.com"
+  emailAddress: 'kim@contoso.com'
 };
 
-let res = await client.api('/users/kim@contoso.com/authentication/emailMethods')
+await client.api('/users/kim@contoso.com/authentication/emailMethods')
     .version('beta')
     .post(emailAuthenticationMethod);
 

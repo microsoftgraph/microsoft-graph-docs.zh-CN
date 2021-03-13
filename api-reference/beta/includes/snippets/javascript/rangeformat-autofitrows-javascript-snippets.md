@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d29edbb02d510c1c8440f4337cc3813c59eca3cd
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 449cc25b6715f825eb219361ddf9a521efcf74a7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620794"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784734"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/autofitRows')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/autofitRows')
     .version('beta')
     .post();
 

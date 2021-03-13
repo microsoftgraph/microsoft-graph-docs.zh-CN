@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 49c34c0f3a531f44ab7f7f9ec89488fc6107691a
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: dd487535937e65e3178ca297cb3a4ee0ead4e8dc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636687"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783583"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const timeOffReason = {
-  displayName: "Vacation",
-  iconType: "plane",
+  displayName: 'Vacation',
+  iconType: 'plane',
   isActive: true
 };
 
-let res = await client.api('/teams/{teamId}/schedule/timeOffReasons')
+await client.api('/teams/{teamId}/schedule/timeOffReasons')
     .version('beta')
     .post(timeOffReason);
 
