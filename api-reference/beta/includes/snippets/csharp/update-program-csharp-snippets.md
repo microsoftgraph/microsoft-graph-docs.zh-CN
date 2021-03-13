@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5657fc920e1c31d8015bd711e14502375ec778d4
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 84cc02543cedcbc59ddc550396dd55041751ef31
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48608685"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803972"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var program = new Program
     DisplayName = "testprogram3 new name"
 };
 
-await graphClient.Programs["7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"]
+await graphClient.Programs["{program-id}"]
     .Request()
     .UpdateAsync(program);
 

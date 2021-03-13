@@ -1,25 +1,25 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0758c452988259f9c08365b2a07f458e1e9f3a2e
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: 0329530d8a5ce0a2665c1fca802251f178c713c7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332472"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785199"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{id}/appRoleAssignments"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/cde330e5-2150-4c11-9c5b-14bfdc948c79/appRoleAssignments"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAppRoleAssignment *appRoleAssignment = [[MSGraphAppRoleAssignment alloc] init];
-[appRoleAssignment setPrincipalId:@"principalId-value"];
-[appRoleAssignment setResourceId:@"resourceId-value"];
-[appRoleAssignment setAppRoleId:@"appRoleId-value"];
+[appRoleAssignment setPrincipalId:@"cde330e5-2150-4c11-9c5b-14bfdc948c79"];
+[appRoleAssignment setResourceId:@"8e881353-1735-45af-af21-ee1344582a4d"];
+[appRoleAssignment setAppRoleId:@"00000000-0000-0000-0000-000000000000"];
 
 NSError *error;
 NSData *appRoleAssignmentData = [appRoleAssignment getSerializedDataWithError:&error];

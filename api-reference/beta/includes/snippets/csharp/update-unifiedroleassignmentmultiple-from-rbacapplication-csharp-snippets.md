@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8a52436442380f86d0d9f42544aca9132d982203
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 3bb3c32449db1a2ffd46daee0d6322549a626740
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181326"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781699"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var unifiedRoleAssignmentMultiple = new UnifiedRoleAssignmentMultiple
     }
 };
 
-await graphClient.RoleManagement.DeviceManagement.RoleAssignments["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
+await graphClient.RoleManagement.DeviceManagement.RoleAssignments["{unifiedRoleAssignmentMultiple-id}"]
     .Request()
     .UpdateAsync(unifiedRoleAssignmentMultiple);
 

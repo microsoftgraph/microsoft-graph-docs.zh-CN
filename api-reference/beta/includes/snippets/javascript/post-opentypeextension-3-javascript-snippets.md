@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8bd9bd9e3a94ee4e83f2c88a1f84b00d5e98e506
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: c01f791b75c1406b57d0d5656502a8fe45f2cd18
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636717"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782731"
 ---
 ```javascript
 
@@ -16,14 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const extension = {
-  "@odata.type" : "microsoft.graph.openTypeExtension",
-  "extensionName" : "Com.Contoso.Deal",
-  "companyName" : "Alpine Skis",
-  "dealValue" : 1010100,
-  "expirationDate" : "2015-07-03T13:04:00.000Z"
+  '@odata.type': 'microsoft.graph.openTypeExtension',
+  extensionName: 'Com.Contoso.Deal',
+  companyName: 'Alpine Skis',
+  dealValue: 1010100,
+  expirationDate: '2015-07-03T13:04:00.000Z'
 };
 
-let res = await client.api('/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions')
+await client.api('/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions')
     .version('beta')
     .post(extension);
 

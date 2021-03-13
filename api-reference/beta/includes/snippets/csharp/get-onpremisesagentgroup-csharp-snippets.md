@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8a5ef2f86b1713799a0a590611c87d88724925d9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a983b89dc0171a9e5623a56008a78ac55e6710ec
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878552"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788819"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var onPremisesAgentGroup = await graphClient.OnPremisesPublishingProfiles["provisioning"].AgentGroups["2d55ed41-1619-4848-92bb-0576d3038682"]
+var onPremisesAgentGroup = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].AgentGroups["{onPremisesAgentGroup-id}"]
     .Request()
     .Expand("agents")
     .GetAsync();

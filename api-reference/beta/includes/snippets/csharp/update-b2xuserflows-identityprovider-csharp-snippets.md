@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 44b8a1c442a2796b47564cea46245a1f6f3c004e
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 1d1b4769897891473f8f8a035c829bb214c06df3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329498"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794414"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var identityProviders = new IdentityProvider
     }
 };
 
-await graphClient.Identity.B2xUserFlows["{id}"].IdentityProviders.References
+await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].IdentityProviders.References
     .Request()
     .UpdateAsync(identityProviders);
 

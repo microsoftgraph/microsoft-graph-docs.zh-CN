@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 3d949732fd774399ded97dc83a0bec5ac046d447
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ebbbb71f25de1095ec6cf60654dfa0eee29baf03
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636648"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786367"
 ---
 ```javascript
 
@@ -16,14 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const privilegedApproval = {
-  userId: "userId-value",
-  roleId: "roleId-value",
-  approvalType: "approvalType-value",
-  approvalState: "approvalState-value",
-  approvalDuration: "datetime-value"
+  userId: 'userId-value',
+  roleId: 'roleId-value',
+  approvalType: 'approvalType-value',
+  approvalState: 'approvalState-value',
+  approvalDuration: 'datetime-value'
 };
 
-let res = await client.api('/privilegedApproval')
+await client.api('/privilegedApproval')
     .version('beta')
     .post(privilegedApproval);
 

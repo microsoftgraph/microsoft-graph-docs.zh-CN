@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: cdd46c79a4d91b156bb9f2d1a2a4ab2b65f67460
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f30334690a82a1f3aadf79076f1120e4109c0cdd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461602"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798444"
 ---
 ```csharp
 
@@ -27,7 +27,7 @@ var unifiedRoleDefinition = new UnifiedRoleDefinition
     }
 };
 
-await graphClient.RoleManagement.Directory.RoleDefinitions["0d55728d-3e24-4309-9b1b-5ac09921475a"]
+await graphClient.RoleManagement.Directory.RoleDefinitions["{unifiedRoleDefinition-id}"]
     .Request()
     .UpdateAsync(unifiedRoleDefinition);
 

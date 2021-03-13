@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5719b9988ae5e350728d62dd2ccf7112872957cc
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 533b8ba1d8d68cdac59876b04b02eaa75ab396d2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620461"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791810"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var queryOptions = new List<QueryOption>()
     new QueryOption("end", "2018-05-10T00:00:00Z")
 };
 
-var calendarView = await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].CalendarView
+var calendarView = await graphClient.BookingBusinesses["{bookingBusiness-id}"].CalendarView
     .Request( queryOptions )
     .GetAsync();
 

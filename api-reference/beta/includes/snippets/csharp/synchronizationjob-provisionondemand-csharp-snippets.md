@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4017ee7f5444106aecd87cd802d50ac5cc664b12
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 14e96df1875a5c3f08c3158d6632d8ca7e1f7da5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753425"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50809697"
 ---
 ```csharp
 
@@ -27,7 +27,7 @@ var parameters = new List<SynchronizationJobApplicationParameters>()
     }
 };
 
-await graphClient.ServicePrincipals["{servicePrincipalsId}"].Synchronization.Jobs["{synchronizationJobId}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"]
     .ProvisionOnDemand(parameters)
     .Request()
     .PostAsync();

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 26a22f36d51a70d8c76afe09ec088f914a41a992
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 87df4282b0b3277ec2abab01db665b4a85d0734b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48614424"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781732"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const cancel = {
-  cancellationMessage: "Your appointment has been successfully cancelled. Please call us again."
+  cancellationMessage: 'Your appointment has been successfully cancelled. Please call us again.'
 };
 
-let res = await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel')
+await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel')
     .version('beta')
     .post(cancel);
 

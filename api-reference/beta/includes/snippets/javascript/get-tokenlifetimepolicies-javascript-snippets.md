@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f646e33ee2d18b535652794a211d943bbcb8fa7e
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 98ba91cb984eef6a65d4f8ab333dbdeb19e6863b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41558917"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784760"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/tokenLifetimePolicies')
+let tokenLifetimePolicies = await client.api('/policies/tokenLifetimePolicies')
     .version('beta')
     .get();
 

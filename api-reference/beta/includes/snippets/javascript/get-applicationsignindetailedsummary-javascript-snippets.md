@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 476813818cfb7f4bb9c3b37fad4781c0d733d5ea
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 0a7f8d0d20a8fa15472ccabfa7de965661bd4430
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408219"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808976"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/reports/applicationSignInDetailedSummary/{id}')
+let applicationSignInDetailedSummary = await client.api('/reports/applicationSignInDetailedSummary/{id}')
     .version('beta')
     .get();
 

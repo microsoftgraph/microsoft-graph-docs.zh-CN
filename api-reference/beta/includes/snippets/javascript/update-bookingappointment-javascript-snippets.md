@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 2731f21834a4ac088a42290a5435b3cfc9465dca
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 0861fddfce24a1179b99d4ae98f3d988ea3755df
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636584"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794161"
 ---
 ```javascript
 
@@ -16,25 +16,25 @@ const options = {
 const client = Client.init(options);
 
 const bookingAppointment = {
-    @odata.type:"#microsoft.graph.bookingAppointment",
-    end:{
-        @odata.type:"#microsoft.graph.dateTimeTimeZone",
-        dateTime:"2018-05-06T12:30:00.0000000+00:00",
-        timeZone:"UTC"
+    '@odata.type':'#microsoft.graph.bookingAppointment',
+    end: {
+        '@odata.type':'#microsoft.graph.dateTimeTimeZone',
+        dateTime: '2018-05-06T12:30:00.0000000+00:00',
+        timeZone: 'UTC'
     },
-    invoiceDate:{
-        @odata.type:"#microsoft.graph.dateTimeTimeZone",
-        dateTime:"2018-05-06T12:30:00.0000000+00:00",
-        timeZone:"UTC"
+    invoiceDate: {
+        '@odata.type':'#microsoft.graph.dateTimeTimeZone',
+        dateTime: '2018-05-06T12:30:00.0000000+00:00',
+        timeZone: 'UTC'
     },
-    start:{
-        @odata.type:"#microsoft.graph.dateTimeTimeZone",
-        dateTime:"2018-05-06T12:00:00.0000000+00:00",
-        timeZone:"UTC"
+    start: {
+        '@odata.type':'#microsoft.graph.dateTimeTimeZone',
+        dateTime: '2018-05-06T12:00:00.0000000+00:00',
+        timeZone: 'UTC'
     }
 };
 
-let res = await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=')
+await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=')
     .version('beta')
     .update(bookingAppointment);
 

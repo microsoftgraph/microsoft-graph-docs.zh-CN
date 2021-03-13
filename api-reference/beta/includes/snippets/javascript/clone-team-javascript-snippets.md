@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d7dd6e81944b07273ce56d71a2efb8e49705fbbd
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: a0a9ad258da336230b571392167fbbf6b27c5687
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332462"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799894"
 ---
 ```javascript
 
@@ -16,14 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const clone = {
-     displayName: "Library Assist",
-     description: "Self help community for library",
-     mailNickname: "libassist",
-     partsToClone: "apps,tabs,settings,channels,members",
-     visibility: "public"
+     displayName: 'Library Assist',
+     description: 'Self help community for library',
+     mailNickname: 'libassist',
+     partsToClone: 'apps,tabs,settings,channels,members',
+     visibility: 'public'
 };
 
-let res = await client.api('/teams/{id}/clone')
+await client.api('/teams/{id}/clone')
     .version('beta')
     .post(clone);
 

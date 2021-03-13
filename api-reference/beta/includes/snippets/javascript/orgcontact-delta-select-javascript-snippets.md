@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0b570c8bf66521b3f0ae159db6af9019eb485e7b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: cb7c6f0c9213deb021aab41b7e33fa456253f701
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082428"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799373"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/contacts/delta')
+let delta = await client.api('/contacts/delta')
     .version('beta')
     .select('displayName,jobTitle,mail')
     .get();
