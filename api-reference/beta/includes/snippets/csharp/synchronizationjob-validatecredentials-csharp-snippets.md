@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: dd13459c34623f61b49e796c5cc69e740af39b3e
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 4ca59ca1b3256fb80a5d23c351febbb756579dd5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402541"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773569"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var credentials = new List<SynchronizationSecretKeyStringValuePair>()
     }
 };
 
-await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"]
     .ValidateCredentials(null,null,null,credentials)
     .Request()
     .PostAsync();
