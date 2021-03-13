@@ -3,30 +3,30 @@ title: passwordSingleSignOnSettings 资源类型
 description: 与基于密码的单一登录相关的设置
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a1b2739ecbd5d09358e58203ab61d4e65c48716b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e7e4402e6416166dd7c288cdd9aa9ec5ecbba06
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998171"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761540"
 ---
-# <a name="passwordsinglesignonsettings-resource-type"></a><span data-ttu-id="0f47a-103">passwordSingleSignOnSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="0f47a-103">passwordSingleSignOnSettings resource type</span></span>
+# <a name="passwordsinglesignonsettings-resource-type"></a><span data-ttu-id="d23c0-103">passwordSingleSignOnSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="d23c0-103">passwordSingleSignOnSettings resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0f47a-104">包含基于密码的单一登录设置的集合。</span><span class="sxs-lookup"><span data-stu-id="0f47a-104">Contains the collection of Password-based single sign-on settings.</span></span>
+<span data-ttu-id="d23c0-104">包含基于密码的单一登录设置的集合。</span><span class="sxs-lookup"><span data-stu-id="d23c0-104">Contains the collection of Password-based single sign-on settings.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0f47a-105">属性</span><span class="sxs-lookup"><span data-stu-id="0f47a-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d23c0-105">属性</span><span class="sxs-lookup"><span data-stu-id="d23c0-105">Properties</span></span>
 
-| <span data-ttu-id="0f47a-106">属性</span><span class="sxs-lookup"><span data-stu-id="0f47a-106">Property</span></span>     | <span data-ttu-id="0f47a-107">类型</span><span class="sxs-lookup"><span data-stu-id="0f47a-107">Type</span></span>        | <span data-ttu-id="0f47a-108">说明</span><span class="sxs-lookup"><span data-stu-id="0f47a-108">Description</span></span> |
+| <span data-ttu-id="d23c0-106">属性</span><span class="sxs-lookup"><span data-stu-id="d23c0-106">Property</span></span>     | <span data-ttu-id="d23c0-107">类型</span><span class="sxs-lookup"><span data-stu-id="d23c0-107">Type</span></span>        | <span data-ttu-id="d23c0-108">说明</span><span class="sxs-lookup"><span data-stu-id="d23c0-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="0f47a-109">域</span><span class="sxs-lookup"><span data-stu-id="0f47a-109">fields</span></span>|<span data-ttu-id="0f47a-110">[passwordSingleSignOnField](passwordsinglesignonfield.md) 集合</span><span class="sxs-lookup"><span data-stu-id="0f47a-110">[passwordSingleSignOnField](passwordsinglesignonfield.md) collection</span></span>||
+|<span data-ttu-id="d23c0-109">域</span><span class="sxs-lookup"><span data-stu-id="d23c0-109">fields</span></span>|<span data-ttu-id="d23c0-110">[passwordSingleSignOnField](passwordsinglesignonfield.md) 集合</span><span class="sxs-lookup"><span data-stu-id="d23c0-110">[passwordSingleSignOnField](passwordsinglesignonfield.md) collection</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="0f47a-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0f47a-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d23c0-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d23c0-111">JSON representation</span></span>
 
-<span data-ttu-id="0f47a-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0f47a-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d23c0-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d23c0-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

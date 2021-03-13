@@ -3,35 +3,36 @@ title: 消除 riskyUser
 description: 消除 riskyUser 对象的风险。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: 8ae21d3adb754798ea2332c1b9acc7880b4a6d99
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47b749e1ac5d782d96210b493ed1451db19184c7
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975889"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761484"
 ---
-# <a name="riskyuser-dismiss"></a><span data-ttu-id="899d6-103">riskyUser：消除</span><span class="sxs-lookup"><span data-stu-id="899d6-103">riskyUser: dismiss</span></span>
+# <a name="riskyuser-dismiss"></a><span data-ttu-id="bfccf-103">riskyUser： dismiss</span><span class="sxs-lookup"><span data-stu-id="bfccf-103">riskyUser: dismiss</span></span>
 
-<span data-ttu-id="899d6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="899d6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bfccf-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bfccf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-><span data-ttu-id="899d6-105">**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="899d6-105">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
+><span data-ttu-id="bfccf-105">**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="bfccf-105">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-<span data-ttu-id="899d6-106">消除一个或多个 [riskyUser](../resources/riskyuser.md) 对象的风险。</span><span class="sxs-lookup"><span data-stu-id="899d6-106">Dismiss the risk of one or more [riskyUser](../resources/riskyuser.md) objects.</span></span> <span data-ttu-id="899d6-107">此操作将目标用户的风险级别设置为 "无"。</span><span class="sxs-lookup"><span data-stu-id="899d6-107">This action sets the targeted user's risk level to none.</span></span>
-## <a name="permissions"></a><span data-ttu-id="899d6-108">权限</span><span class="sxs-lookup"><span data-stu-id="899d6-108">Permissions</span></span>
-<span data-ttu-id="899d6-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="899d6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bfccf-106">消除一个或多个 [riskyUser 对象](../resources/riskyuser.md) 的风险。</span><span class="sxs-lookup"><span data-stu-id="bfccf-106">Dismiss the risk of one or more [riskyUser](../resources/riskyuser.md) objects.</span></span> <span data-ttu-id="bfccf-107">此操作将目标用户的风险级别设定为无。</span><span class="sxs-lookup"><span data-stu-id="bfccf-107">This action sets the targeted user's risk level to none.</span></span> <span data-ttu-id="bfccf-108">一次呼叫中要消除的最大用户数为 60。</span><span class="sxs-lookup"><span data-stu-id="bfccf-108">The maximum count of users to dismiss in one call is 60.</span></span>
 
-|<span data-ttu-id="899d6-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="899d6-111">Permission type</span></span>      | <span data-ttu-id="899d6-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="899d6-112">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="bfccf-109">权限</span><span class="sxs-lookup"><span data-stu-id="bfccf-109">Permissions</span></span>
+<span data-ttu-id="bfccf-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bfccf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="bfccf-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="bfccf-112">Permission type</span></span>      | <span data-ttu-id="bfccf-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bfccf-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="899d6-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="899d6-113">Delegated (work or school account)</span></span> | <span data-ttu-id="899d6-114">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="899d6-114">IdentityRiskyUser.ReadWrite.All</span></span>    |
-|<span data-ttu-id="899d6-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="899d6-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="899d6-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="899d6-116">Not supported.</span></span>    |
-|<span data-ttu-id="899d6-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="899d6-117">Application</span></span> | <span data-ttu-id="899d6-118">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="899d6-118">IdentityRiskyUser.ReadWrite.All</span></span> |
+|<span data-ttu-id="bfccf-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bfccf-114">Delegated (work or school account)</span></span> | <span data-ttu-id="bfccf-115">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bfccf-115">IdentityRiskyUser.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bfccf-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bfccf-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bfccf-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="bfccf-117">Not supported.</span></span>    |
+|<span data-ttu-id="bfccf-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="bfccf-118">Application</span></span> | <span data-ttu-id="bfccf-119">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bfccf-119">IdentityRiskyUser.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="899d6-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="899d6-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bfccf-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bfccf-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/dismiss
@@ -39,23 +40,23 @@ GET /identityProtection/riskyUsers/dismiss
 ```
 
 
-## <a name="request-headers"></a><span data-ttu-id="899d6-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="899d6-120">Request headers</span></span>
-| <span data-ttu-id="899d6-121">名称</span><span class="sxs-lookup"><span data-stu-id="899d6-121">Name</span></span>      |<span data-ttu-id="899d6-122">说明</span><span class="sxs-lookup"><span data-stu-id="899d6-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bfccf-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="bfccf-121">Request headers</span></span>
+| <span data-ttu-id="bfccf-122">名称</span><span class="sxs-lookup"><span data-stu-id="bfccf-122">Name</span></span>      |<span data-ttu-id="bfccf-123">说明</span><span class="sxs-lookup"><span data-stu-id="bfccf-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="899d6-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="899d6-123">Authorization</span></span>  | <span data-ttu-id="899d6-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="899d6-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bfccf-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="bfccf-124">Authorization</span></span>  | <span data-ttu-id="bfccf-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bfccf-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="899d6-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="899d6-126">Request body</span></span>
-<span data-ttu-id="899d6-127">在请求正文中指定要消除的 userIds。</span><span class="sxs-lookup"><span data-stu-id="899d6-127">Specify the userIds to dismiss in the request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bfccf-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="bfccf-127">Request body</span></span>
+<span data-ttu-id="bfccf-128">在请求正文中指定要消除的 userId。</span><span class="sxs-lookup"><span data-stu-id="bfccf-128">Specify the userIds to dismiss in the request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="899d6-128">响应</span><span class="sxs-lookup"><span data-stu-id="899d6-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bfccf-129">响应</span><span class="sxs-lookup"><span data-stu-id="bfccf-129">Response</span></span>
 
-<span data-ttu-id="899d6-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="899d6-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
-## <a name="examples"></a><span data-ttu-id="899d6-131">示例</span><span class="sxs-lookup"><span data-stu-id="899d6-131">Examples</span></span>
-### <a name="example-1-dismiss-risky-users"></a><span data-ttu-id="899d6-132">示例1：消除有风险的用户</span><span class="sxs-lookup"><span data-stu-id="899d6-132">Example 1: Dismiss risky users</span></span>
-#### <a name="request"></a><span data-ttu-id="899d6-133">请求</span><span class="sxs-lookup"><span data-stu-id="899d6-133">Request</span></span>
-<span data-ttu-id="899d6-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="899d6-134">Here is an example of the request.</span></span>
+<span data-ttu-id="bfccf-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="bfccf-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="bfccf-132">示例</span><span class="sxs-lookup"><span data-stu-id="bfccf-132">Examples</span></span>
+### <a name="example-1-dismiss-risky-users"></a><span data-ttu-id="bfccf-133">示例 1：消除有风险的用户</span><span class="sxs-lookup"><span data-stu-id="bfccf-133">Example 1: Dismiss risky users</span></span>
+#### <a name="request"></a><span data-ttu-id="bfccf-134">请求</span><span class="sxs-lookup"><span data-stu-id="bfccf-134">Request</span></span>
+<span data-ttu-id="bfccf-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bfccf-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="899d6-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="899d6-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="bfccf-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="bfccf-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "dismiss_riskyuser"
@@ -71,26 +72,26 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="899d6-136">C#</span><span class="sxs-lookup"><span data-stu-id="899d6-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="bfccf-137">C#</span><span class="sxs-lookup"><span data-stu-id="bfccf-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="899d6-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="899d6-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bfccf-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bfccf-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="899d6-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="899d6-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="bfccf-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bfccf-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="899d6-139">Java</span><span class="sxs-lookup"><span data-stu-id="899d6-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="bfccf-140">Java</span><span class="sxs-lookup"><span data-stu-id="bfccf-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="899d6-140">响应</span><span class="sxs-lookup"><span data-stu-id="899d6-140">Response</span></span>
-<span data-ttu-id="899d6-141">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="899d6-141">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="bfccf-141">响应</span><span class="sxs-lookup"><span data-stu-id="bfccf-141">Response</span></span>
+<span data-ttu-id="bfccf-142">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="bfccf-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -99,11 +100,11 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-dismiss-a-risky-user"></a><span data-ttu-id="899d6-142">示例2：消除有风险的用户</span><span class="sxs-lookup"><span data-stu-id="899d6-142">Example 2: Dismiss a risky user</span></span>
-#### <a name="request"></a><span data-ttu-id="899d6-143">请求</span><span class="sxs-lookup"><span data-stu-id="899d6-143">Request</span></span>
-<span data-ttu-id="899d6-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="899d6-144">Here is an example of the request.</span></span>
+### <a name="example-2-dismiss-a-risky-user"></a><span data-ttu-id="bfccf-143">示例 2：消除有风险的用户</span><span class="sxs-lookup"><span data-stu-id="bfccf-143">Example 2: Dismiss a risky user</span></span>
+#### <a name="request"></a><span data-ttu-id="bfccf-144">请求</span><span class="sxs-lookup"><span data-stu-id="bfccf-144">Request</span></span>
+<span data-ttu-id="bfccf-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bfccf-145">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="899d6-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="899d6-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="bfccf-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="bfccf-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "dismiss_riskyuser"
@@ -118,26 +119,26 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="899d6-146">C#</span><span class="sxs-lookup"><span data-stu-id="899d6-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="bfccf-147">C#</span><span class="sxs-lookup"><span data-stu-id="bfccf-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="899d6-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="899d6-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bfccf-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bfccf-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="899d6-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="899d6-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="bfccf-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bfccf-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="899d6-149">Java</span><span class="sxs-lookup"><span data-stu-id="899d6-149">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="bfccf-150">Java</span><span class="sxs-lookup"><span data-stu-id="bfccf-150">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="899d6-150">响应</span><span class="sxs-lookup"><span data-stu-id="899d6-150">Response</span></span>
-<span data-ttu-id="899d6-151">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="899d6-151">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="bfccf-151">响应</span><span class="sxs-lookup"><span data-stu-id="bfccf-151">Response</span></span>
+<span data-ttu-id="bfccf-152">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="bfccf-152">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

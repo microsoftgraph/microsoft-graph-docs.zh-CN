@@ -3,33 +3,33 @@ title: updateWindow 资源类型
 description: updateWindow 资源类型。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b2aa61d5d815d912caa47fd63d5907b62f882d36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d8f12c7cfcb4c83075087d7b894dc95fe92a695
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003449"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761224"
 ---
-# <a name="updatewindow-resource-type"></a><span data-ttu-id="9104d-103">updateWindow 资源类型</span><span class="sxs-lookup"><span data-stu-id="9104d-103">updateWindow resource type</span></span>
+# <a name="updatewindow-resource-type"></a><span data-ttu-id="54469-103">updateWindow 资源类型</span><span class="sxs-lookup"><span data-stu-id="54469-103">updateWindow resource type</span></span>
 
-<span data-ttu-id="9104d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9104d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="54469-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="54469-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9104d-105">表示 [代理](onpremisesagent.md) 可以接收更新的时间窗口。</span><span class="sxs-lookup"><span data-stu-id="9104d-105">Represents time window during which [agents](onpremisesagent.md) can receive updates.</span></span>
+<span data-ttu-id="54469-105">表示代理可接收 [更新](onpremisesagent.md) 的时间窗口。</span><span class="sxs-lookup"><span data-stu-id="54469-105">Represents time window during which [agents](onpremisesagent.md) can receive updates.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9104d-106">属性</span><span class="sxs-lookup"><span data-stu-id="9104d-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="54469-106">属性</span><span class="sxs-lookup"><span data-stu-id="54469-106">Properties</span></span>
 
-| <span data-ttu-id="9104d-107">属性</span><span class="sxs-lookup"><span data-stu-id="9104d-107">Property</span></span>     | <span data-ttu-id="9104d-108">类型</span><span class="sxs-lookup"><span data-stu-id="9104d-108">Type</span></span>        | <span data-ttu-id="9104d-109">说明</span><span class="sxs-lookup"><span data-stu-id="9104d-109">Description</span></span> |
+| <span data-ttu-id="54469-107">属性</span><span class="sxs-lookup"><span data-stu-id="54469-107">Property</span></span>     | <span data-ttu-id="54469-108">类型</span><span class="sxs-lookup"><span data-stu-id="54469-108">Type</span></span>        | <span data-ttu-id="54469-109">说明</span><span class="sxs-lookup"><span data-stu-id="54469-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="9104d-110">updateWindowEndTime</span><span class="sxs-lookup"><span data-stu-id="9104d-110">updateWindowEndTime</span></span>|<span data-ttu-id="9104d-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="9104d-111">TimeOfDay</span></span>|<span data-ttu-id="9104d-112">代理可以在其中接收更新的时间窗口结束</span><span class="sxs-lookup"><span data-stu-id="9104d-112">End of a time window during which agents can receive updates</span></span>|
-|<span data-ttu-id="9104d-113">updateWindowStartTime</span><span class="sxs-lookup"><span data-stu-id="9104d-113">updateWindowStartTime</span></span>|<span data-ttu-id="9104d-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="9104d-114">TimeOfDay</span></span>|<span data-ttu-id="9104d-115">代理可在其中接收更新的时间范围的开始时间</span><span class="sxs-lookup"><span data-stu-id="9104d-115">Start of a time window during which agents can receive updates</span></span>|
+|<span data-ttu-id="54469-110">updateWindowEndTime</span><span class="sxs-lookup"><span data-stu-id="54469-110">updateWindowEndTime</span></span>|<span data-ttu-id="54469-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="54469-111">TimeOfDay</span></span>|<span data-ttu-id="54469-112">代理可以接收更新的时间窗口结束</span><span class="sxs-lookup"><span data-stu-id="54469-112">End of a time window during which agents can receive updates</span></span>|
+|<span data-ttu-id="54469-113">updateWindowStartTime</span><span class="sxs-lookup"><span data-stu-id="54469-113">updateWindowStartTime</span></span>|<span data-ttu-id="54469-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="54469-114">TimeOfDay</span></span>|<span data-ttu-id="54469-115">代理可以接收更新的时间窗口的开始时间</span><span class="sxs-lookup"><span data-stu-id="54469-115">Start of a time window during which agents can receive updates</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9104d-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9104d-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="54469-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="54469-116">JSON representation</span></span>
 
-<span data-ttu-id="9104d-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9104d-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="54469-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="54469-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
