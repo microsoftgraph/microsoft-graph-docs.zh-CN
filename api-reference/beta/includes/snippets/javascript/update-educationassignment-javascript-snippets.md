@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 88b9a645374634f76a6390f542fb0ee4a2804bb1
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9aca20afb9db6076904adff5d63c9f8d60fa0aa1
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636525"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791094"
 ---
 ```javascript
 
@@ -16,15 +16,15 @@ const options = {
 const client = Client.init(options);
 
 const educationAssignment = {
-  displayName: "Week 1 reading assignment",
+  displayName: 'Week 1 reading assignment',
   instructions: {
-    contentType: "Text",
-    content: "Read chapters 1 through 3"
+    contentType: 'Text',
+    content: 'Read chapters 1 through 3'
   },
-  dueDateTime: "2014-02-01T00:00:00Z"
+  dueDateTime: '2014-02-01T00:00:00Z'
 };
 
-let res = await client.api('/education/classes/11021/assignments/19002')
+await client.api('/education/classes/11021/assignments/19002')
     .version('beta')
     .update(educationAssignment);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 791c77ba3afa4971cb654532220e3138f85d61b1
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: a67f19889721770a31cf2c3b78999b9a8e1a9293
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48606813"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796645"
 ---
 ```javascript
 
@@ -18,17 +18,17 @@ const client = Client.init(options);
 const tiIndicator = {
   value: [
     {
-      id: "c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4",
-      additionalInformation: "mytest"
+      id: 'c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4',
+      additionalInformation: 'mytest'
     },
     {
-      id: "e58c072b-c9bb-a5c4-34ce-eb69af44fb1e",
-      additionalInformation: "test again"
+      id: 'e58c072b-c9bb-a5c4-34ce-eb69af44fb1e',
+      additionalInformation: 'test again'
     }
   ]
 };
 
-let res = await client.api('/security/tiIndicators/updateTiIndicators')
+await client.api('/security/tiIndicators/updateTiIndicators')
     .version('beta')
     .post(tiIndicator);
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 29d1abbded3224c3a4c6e70823a6e59024ec8ecd
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a37356ea908dc155f35d57c5e73c4bd1d65dd774
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845957"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808544"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var synchronizationTemplate = new SynchronizationTemplate
     FactoryTag = "CustomSCIM"
 };
 
-await graphClient.Applications["{id}"].Synchronization.Templates["{templateId}"]
+await graphClient.Applications["{application-id}"].Synchronization.Templates["{synchronizationTemplate-id}"]
     .Request()
     .Header("Authorization","Bearer <token>")
     .PutAsync(synchronizationTemplate);

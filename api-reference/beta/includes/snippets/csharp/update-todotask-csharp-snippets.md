@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 563586e1fd834c8c907a5601e58a98c85786bf06
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 86bf9c084873e16d81b531b1258ac8f83576234e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843074"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806489"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var todoTask = new TodoTask
     }
 };
 
-await graphClient.Me.Todo.Lists["AAMkADA1MTHgwAAA="].Tasks["721a35e2-35e2-721a-e235-1a72e2351a72"]
+await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"]
     .Request()
     .UpdateAsync(todoTask);
 

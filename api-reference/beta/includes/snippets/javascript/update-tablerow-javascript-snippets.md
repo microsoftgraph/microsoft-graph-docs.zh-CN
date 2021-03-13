@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: bb5978f8c3df9be8fc795f5018d66589ffaeb097
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 1e7ed168aa1be76bd2ee02b1c542fdc7b8db0084
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636623"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783129"
 ---
 ```javascript
 
@@ -17,10 +17,10 @@ const client = Client.init(options);
 
 const workbookTableRow = {
   index: 99,
-  values: "values-value"
+  values: 'values-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}')
+await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}')
     .version('beta')
     .update(workbookTableRow);
 
