@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d6c8e5da6af93fc1e31d8c22d39135fbf039ec11
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: f0eeb5eb797309dce210d5ccbfd2176bb9ec3903
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302775"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806394"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/communications/calls/{id}/audioRoutingGroups/{id}')
+await client.api('/communications/calls/{id}/audioRoutingGroups/{id}')
     .version('beta')
     .delete();
 

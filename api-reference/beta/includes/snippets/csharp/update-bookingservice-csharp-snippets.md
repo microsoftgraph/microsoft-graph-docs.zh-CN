@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ddabb5c2e8bc5ca539a1e47fe0941f541cad568b
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8d8580c23c1caa60ed4b04e9782f64d19ac8c294
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684781"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50810097"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var bookingService = new BookingService
     DefaultDuration = new Duration("PT30M")
 };
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Services["57da6774-a087-4d69-b0e6-6fb82c339976"]
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services["{bookingService-id}"]
     .Request()
     .UpdateAsync(bookingService);
 

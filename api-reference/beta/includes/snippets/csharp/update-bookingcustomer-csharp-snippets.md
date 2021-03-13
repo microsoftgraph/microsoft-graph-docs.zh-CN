@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b9327c09f777a844b5ef86804b68624d6e3a963a
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: a5729b3f0b084a4f543109b7cae271b0d92b186e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48615171"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808796"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var bookingCustomer = new BookingCustomer
     EmailAddress = "adele@relecloud.com"
 };
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Customers["8bb19078-0f45-4efb-b2c5-da78b860f73a"]
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].Customers["{bookingCustomer-id}"]
     .Request()
     .UpdateAsync(bookingCustomer);
 

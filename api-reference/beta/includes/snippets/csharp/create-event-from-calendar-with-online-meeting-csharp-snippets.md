@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 23535bb0be5e52827217798b20d789b8ad871410
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: b8b8a187fd6a3ad627718d07c2a2aebd8ddea5fa
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "37994919"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786552"
 ---
 ```csharp
 
@@ -49,7 +49,7 @@ var @event = new Event
     OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };
 
-await graphClient.Me.Calendars["AAMkAGViNDU8zAAAAAGtlAAA="].Events
+await graphClient.Me.Calendars["{calendar-id}"].Events
     .Request()
     .AddAsync(@event);
 

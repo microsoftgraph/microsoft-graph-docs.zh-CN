@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dcd45c6f52706ed6b4c917e33a70d4e821f35d73
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 5cdcd4a149a0ae8dd47a7e015aa5e5dffaedeea5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806399"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797492"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Authentication.PhoneMethods["3179e48a-750b-4051-897c-87b9720928f7"]
+await graphClient.Me.Authentication.PhoneMethods["{phoneAuthenticationMethod-id}"]
     .EnableSmsSignIn()
     .Request()
     .PostAsync();

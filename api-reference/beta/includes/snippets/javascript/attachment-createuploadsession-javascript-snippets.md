@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 42d70e72167723a4cad7e4b9598daf7adcdcc6f9
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 60559e74be6b9613242f6dfcee17d3dc903d8f34
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "37637346"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795642"
 ---
 ```javascript
 
@@ -17,13 +17,13 @@ const client = Client.init(options);
 
 const uploadSession = {
   AttachmentItem: {
-    attachmentType: "file",
-    name: "flower", 
+    attachmentType: 'file',
+    name: 'flower', 
     size: 3483322
   }
 };
 
-let res = await client.api('/me/messages/AAMkADI5MAAIT3drCAAA=/attachments/createUploadSession')
+await client.api('/me/messages/AAMkADI5MAAIT3drCAAA=/attachments/createUploadSession')
     .version('beta')
     .post(uploadSession);
 

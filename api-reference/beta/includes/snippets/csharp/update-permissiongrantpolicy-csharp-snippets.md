@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 088086278820f10df34f9a214e91240ccfb17b50
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 22a2ef8c3a3a9d7a45c2f2d26b0cb8afa64a2359
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459608"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50805857"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var permissionGrantPolicy = new PermissionGrantPolicy
     DisplayName = "Custom permission grant policy"
 };
 
-await graphClient.Policies.PermissionGrantPolicies["my-custom-consent-policy"]
+await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"]
     .Request()
     .UpdateAsync(permissionGrantPolicy);
 
