@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d8bd2f45de0b5ad816a5d459eee327b52d39e450
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: f3f6e411b46c4980ca67a171a9ab6db9b6a30c8a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48609706"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781385"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/messages/AAMkADhAAAW-VPeAAA=/')
+let message = await client.api('/me/messages/AAMkADhAAAW-VPeAAA=/')
     .select('internetMessageHeaders')
     .get();
 

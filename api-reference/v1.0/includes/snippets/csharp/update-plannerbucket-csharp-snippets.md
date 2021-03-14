@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 93cb69f7e46d31b89baf90c42f12fb299edf85b0
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 87df7cca3f8ab40e2dc72e3c9c83b115b27c86ea
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48616056"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782688"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var plannerBucket = new PlannerBucket
     Name = "Development"
 };
 
-await graphClient.Planner.Buckets["{bucket-id}"]
+await graphClient.Planner.Buckets["{plannerBucket-id}"]
     .Request()
     .Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
     .UpdateAsync(plannerBucket);

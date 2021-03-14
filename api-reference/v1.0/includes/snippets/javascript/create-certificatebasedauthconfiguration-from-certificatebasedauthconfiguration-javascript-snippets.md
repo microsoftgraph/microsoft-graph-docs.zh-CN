@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3ae15777a283d8a302bfc1d186f0100eb1ef96c5
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: b454bb1651d74fc469b895092639213d7666b107
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905795"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50805025"
 ---
 ```javascript
 
@@ -19,12 +19,12 @@ const certificateBasedAuthConfiguration = {
   certificateAuthorities: [
     {
       isRootAuthority: true,
-      certificate: "Binary"
+      certificate: 'Binary'
     }
   ]
 };
 
-let res = await client.api('/organization/{id}/certificateBasedAuthConfiguration/$ref')
+await client.api('/organization/{id}/certificateBasedAuthConfiguration/$ref')
     .post(certificateBasedAuthConfiguration);
 
 ```

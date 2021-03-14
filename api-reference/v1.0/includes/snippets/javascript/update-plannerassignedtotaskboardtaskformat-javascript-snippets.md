@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 685454a3f8d7430e5cf62e5d8830c39bb833754a
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: f2f95449538ac52a0b3a7b27fda2d80679cb3a4a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36636803"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801560"
 ---
 ```javascript
 
@@ -17,11 +17,11 @@ const client = Client.init(options);
 
 const plannerAssignedToTaskBoardTaskFormat = {
   orderHintsByAssignee: {
-    aaa27244-1db4-476a-a5cb-004607466324: "8566473P 957764Jk!"
+    'aaa27244-1db4-476a-a5cb-004607466324': '8566473P 957764Jk!'
   }
 };
 
-let res = await client.api('/planner/tasks/{task-id}/assignedToTaskBoardFormat')
+await client.api('/planner/tasks/{task-id}/assignedToTaskBoardFormat')
     .update(plannerAssignedToTaskBoardTaskFormat);
 
 ```

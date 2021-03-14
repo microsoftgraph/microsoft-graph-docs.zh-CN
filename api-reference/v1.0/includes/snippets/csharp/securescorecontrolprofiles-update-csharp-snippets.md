@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1703f9e7a8b03c1fdc2f83120c56a3097cac0eee
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: c0725a58fbd28f90ac4679c63e14d1658fdb2475
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683936"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790677"
 ---
 ```csharp
 
@@ -28,7 +28,7 @@ var secureScoreControlProfile = new SecureScoreControlProfile
     }
 };
 
-await graphClient.Security.SecureScoreControlProfiles["NonOwnerAccess"]
+await graphClient.Security.SecureScoreControlProfiles["{secureScoreControlProfile-id}"]
     .Request()
     .UpdateAsync(secureScoreControlProfile);
 

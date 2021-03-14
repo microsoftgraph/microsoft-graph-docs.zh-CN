@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b96fd4b1b44c6c3720dd9df3158f6b6aafc372fa
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 4791a3aa48e9d78ce7cf4ef315100f4972fa8c1c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48605156"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783966"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var sectionGroup = new SectionGroup
     DisplayName = "Section group name"
 };
 
-await graphClient.Me.Onenote.Notebooks["{id}"].SectionGroups
+await graphClient.Me.Onenote.Notebooks["{notebook-id}"].SectionGroups
     .Request()
     .AddAsync(sectionGroup);
 

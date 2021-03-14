@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 78089053c41ae072da631fc6d36c0ebd04cf9612
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: eb9d1f7685bfb89cc0bd5f45ee099829df7b066d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223614"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796679"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const administrativeUnit = {
-    displayName: "Seattle District Technical Schools",
-    description: "Seattle district technical schools administration",
-    visibility: "HiddenMembership"
+    displayName: 'Seattle District Technical Schools',
+    description: 'Seattle district technical schools administration',
+    visibility: 'HiddenMembership'
 };
 
-let res = await client.api('/directory/administrativeUnits')
+await client.api('/directory/administrativeUnits')
     .post(administrativeUnit);
 
 ```

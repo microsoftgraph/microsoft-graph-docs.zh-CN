@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 29b005c7017867e97757316602bf98d0a11dcb4f
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: afba47a4b9e6d5d775985cdb561dd0790f0e55e3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402752"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50809787"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var id = "id-value";
 
 var groupId = "groupId-value";
 
-await graphClient.Me.Onenote.Pages["{id}"]
+await graphClient.Me.Onenote.Pages["{onenotePage-id}"]
     .CopyToSection(id,groupId,null,null)
     .Request()
     .PostAsync();

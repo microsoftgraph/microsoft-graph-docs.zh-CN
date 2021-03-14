@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0b24cb54ce73dfc8e3cd5779c27b04ca17970380
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: a93602cf57ec5c65929cf87c11d84a1e3d5b7b54
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48612973"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789727"
 ---
 ```csharp
 
@@ -40,7 +40,7 @@ var messageRule = new MessageRule
     }
 };
 
-await graphClient.Me.MailFolders["inbox"].MessageRules
+await graphClient.Me.MailFolders["{mailFolder-id}"].MessageRules
     .Request()
     .AddAsync(messageRule);
 
