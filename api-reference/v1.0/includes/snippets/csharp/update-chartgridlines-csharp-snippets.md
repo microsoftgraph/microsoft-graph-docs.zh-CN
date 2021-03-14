@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5a4787b9c0e0e3c395f55e1d980174f20e18ffef
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 4e7ba3a890e6c23af35afc83eafc637cb7f0a69a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48612798"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801343"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var workbookChartGridlines = new WorkbookChartGridlines
     Visible = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Axes.ValueAxis.MinorGridlines
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Axes.ValueAxis.MinorGridlines
     .Request()
     .UpdateAsync(workbookChartGridlines);
 

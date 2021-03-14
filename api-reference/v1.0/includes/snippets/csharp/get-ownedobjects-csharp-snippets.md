@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 31fbac4832f3ebacf87ec9113eb10ca3a93dabdf
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 7df4a487d16d9ea6519f26a936de221c7d315075
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50015740"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806567"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var ownedObjects = await graphClient.ServicePrincipals["{id}"].OwnedObjects
+var ownedObjects = await graphClient.ServicePrincipals["{servicePrincipal-id}"].OwnedObjects
     .Request()
     .GetAsync();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: eaae0779b18198d0a0476f3dd459ddb0f0237760
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: db35041d457e4fadba34d7b8283e40ec92c6774f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566058"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781327"
 ---
 ```csharp
 
@@ -24,7 +24,7 @@ var conditionalAccessPolicy = new ConditionalAccessPolicy
     }
 };
 
-await graphClient.Identity.ConditionalAccess.Policies["{id}"]
+await graphClient.Identity.ConditionalAccess.Policies["{conditionalAccessPolicy-id}"]
     .Request()
     .UpdateAsync(conditionalAccessPolicy);
 

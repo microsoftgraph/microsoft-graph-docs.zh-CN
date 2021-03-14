@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a880c3e8bc48526fea17430970a02ce1cd03ced0
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: a2c22475d853b3015ea362299385d9cfd71c90cb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753987"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791514"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var calendar = new Calendar
     Name = "Marketing calendar"
 };
 
-await graphClient.Me.CalendarGroups["AAMkADYAAAR9NR5AAA="].Calendars
+await graphClient.Me.CalendarGroups["{calendarGroup-id}"].Calendars
     .Request()
     .AddAsync(calendar);
 

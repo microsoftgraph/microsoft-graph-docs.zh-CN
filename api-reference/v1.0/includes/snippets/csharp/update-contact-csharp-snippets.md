@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 369396d02b2335a19438be2e9565b44950744ae3
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 1b71136330b1e5c9dd1aa64023c3c295dd04db86
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36845963"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788002"
 ---
 ```csharp
 
@@ -23,7 +23,7 @@ var contact = new Contact
     Birthday = DateTimeOffset.Parse("1974-07-22")
 };
 
-await graphClient.Me.Contacts["{id}"]
+await graphClient.Me.Contacts["{contact-id}"]
     .Request()
     .UpdateAsync(contact);
 

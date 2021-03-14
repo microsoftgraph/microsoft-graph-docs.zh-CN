@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6b998028d22e54bc520b618181bc82978face298
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 9ffd150a59a0e02448c07df55808d333e1d83d10
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43511118"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779889"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const checkin = {
-  comment: "Updating the latest guidelines"
+  comment: 'Updating the latest guidelines'
 };
 
-let res = await client.api('/drives/{drive-id}/items/{item-id}/checkin')
+await client.api('/drives/{drive-id}/items/{item-id}/checkin')
     .post(checkin);
 
 ```

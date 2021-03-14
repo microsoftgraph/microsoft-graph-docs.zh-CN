@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5ad5ecfad41d37b64a55cbb2eb2438a00877d2a5
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: a74a478ad7630a4607daf3c9007eb9bf7dcf9ee2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48619078"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783951"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryRoleTemplate = await graphClient.DirectoryRoleTemplates["{id}"]
+var directoryRoleTemplate = await graphClient.DirectoryRoleTemplates["{directoryRoleTemplate-id}"]
     .Request()
     .GetAsync();
 

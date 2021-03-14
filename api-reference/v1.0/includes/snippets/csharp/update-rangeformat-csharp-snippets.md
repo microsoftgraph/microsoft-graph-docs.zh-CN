@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9e647cd5ce494f9f92459950e29a68c4284decdd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 3ec63732f14c97e6d32b3c309818cd7304ae418b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324757"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783442"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var workbookRangeFormat = new WorkbookRangeFormat
     WrapText = false
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{sheet-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"]
     .Range("$A$1").Format
     .Request()
     .UpdateAsync(workbookRangeFormat);
