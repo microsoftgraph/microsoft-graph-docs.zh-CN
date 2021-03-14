@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a70b2390dcd80d2c01efea4f428e3f0caab306f4
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 07f245a2555a8a970c5f6252606b7c7010e35fa8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223683"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783026"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var administrativeUnit = new AdministrativeUnit
     Visibility = "visibility-value"
 };
 
-await graphClient.Directory.AdministrativeUnits["{id}"]
+await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"]
     .Request()
     .UpdateAsync(administrativeUnit);
 

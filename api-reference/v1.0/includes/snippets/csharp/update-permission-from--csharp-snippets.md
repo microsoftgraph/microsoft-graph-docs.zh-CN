@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f352a26d3a19a6b66b5bcd98d18b899b4318e1bf
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: b8f36492da37bb5d8745959d1afddd5419fe092e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176735"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50805050"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var permission = new Permission
     }
 };
 
-await graphClient.Sites["{sitesId}"].Permissions["{permissionId}"]
+await graphClient.Sites["{site-id}"].Permissions["{permission-id}"]
     .Request()
     .UpdateAsync(permission);
 

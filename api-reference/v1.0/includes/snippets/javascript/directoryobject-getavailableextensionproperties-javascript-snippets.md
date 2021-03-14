@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 38fb62e8a1569e90999d53aad4b66a1e4015e8fa
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: fe198e42da642ccf8ed54224fffb80240fcb6e0b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754189"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788917"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const extensionProperty = {
-  isSyncedFromOnPremises: "Boolean"
+  isSyncedFromOnPremises: 'Boolean'
 };
 
-let res = await client.api('/directoryObjects/getAvailableExtensionProperties')
+await client.api('/directoryObjects/getAvailableExtensionProperties')
     .post(extensionProperty);
 
 ```

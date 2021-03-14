@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2865322a7a1bd729244ba09c4d52a9e789614b6b
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: cc7191c6ac550283a966c3db67b6f0cd0cd5d443
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636889"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801091"
 ---
 ```javascript
 
@@ -16,14 +16,14 @@ const options = {
 const client = Client.init(options);
 
 const workbookChartDataLabels = {
-  position: "position-value",
+  position: 'position-value',
   showValue: true,
   showSeriesName: true,
   showCategoryName: true,
   showLegendKey: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels')
     .update(workbookChartDataLabels);
 
 ```

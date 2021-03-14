@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bffd51984e24f373ca388b5152b6d58d7267c7c2
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: f52f87b8be46e03c60c50c7eb40c43cc297b895e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218319"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784381"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var timeOffReason = new TimeOffReason
     IsActive = true
 };
 
-await graphClient.Teams["{teamId}"].Schedule.TimeOffReasons
+await graphClient.Teams["{team-id}"].Schedule.TimeOffReasons
     .Request()
     .AddAsync(timeOffReason);
 

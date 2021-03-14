@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 95dc939f74e35fe5e5522c18dd11135f644eae05
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 7d0c48656b447b79810e6a31a12a872697187e0f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50179158"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784929"
 ---
 ```csharp
 
@@ -29,7 +29,7 @@ var stream = new System.IO.MemoryStream(Encoding.UTF8.GetBytes(@"[
 var pages = new OnenotePage();
 pages.Content = stream;
 
-await graphClient.Me.Onenote.Pages["{id}"]
+await graphClient.Me.Onenote.Pages["{onenotePage-id}"]
     .Request()
     .UpdateAsync(pages);
 

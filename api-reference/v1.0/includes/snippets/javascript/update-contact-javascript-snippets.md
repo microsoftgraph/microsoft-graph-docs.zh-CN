@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ffcccf2269a01b6d63e87bbdff4f91a14a9e402c
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: f9efcd6bb1c1b40ffb7c3ce6eebf8d196ba0d6a0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36636879"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784934"
 ---
 ```javascript
 
@@ -17,15 +17,15 @@ const client = Client.init(options);
 
 const contact = {
   homeAddress: {
-    street: "123 Some street",
-    city: "Seattle",
-    state: "WA",
-    postalCode: "98121"
+    street: '123 Some street',
+    city: 'Seattle',
+    state: 'WA',
+    postalCode: '98121'
   },
-  birthday: "1974-07-22"
+  birthday: '1974-07-22'
 };
 
-let res = await client.api('/me/contacts/{id}')
+await client.api('/me/contacts/{id}')
     .update(contact);
 
 ```

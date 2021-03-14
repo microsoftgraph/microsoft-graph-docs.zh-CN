@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b29e2c1d1564d1d68da788ae4bd1199d992ae86a
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 1231f481fbce414b6699bcfc35d98de248819965
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636883"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786627"
 ---
 ```javascript
 
@@ -18,7 +18,7 @@ const client = Client.init(options);
 const workbookChartPoint = {
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points')
     .post(workbookChartPoint);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4262ea3ba91bf7b1f1be0f9d15fb5772ef3a0d19
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 5d84a9c2ad3e700dbe9eb04a35ecb97f9daf42d0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636771"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783324"
 ---
 ```javascript
 
@@ -16,18 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const secureScoreControlProfile = {
-  assignedTo: "",
-  comment: "control is reviewed",
-  state: "Reviewed",
+  assignedTo: '',
+  comment: 'control is reviewed',
+  state: 'Reviewed',
   vendorInformation: {
-    provider: "SecureScore",
+    provider: 'SecureScore',
     providerVersion: null,
     subProvider: null,
-    vendor: "Microsoft"
+    vendor: 'Microsoft'
   }
 };
 
-let res = await client.api('/security/secureScoreControlProfiles/NonOwnerAccess')
+await client.api('/security/secureScoreControlProfiles/NonOwnerAccess')
     .update(secureScoreControlProfile);
 
 ```

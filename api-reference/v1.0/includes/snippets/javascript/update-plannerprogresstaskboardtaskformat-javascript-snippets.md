@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e0b060af7020095e156f1e5a9ac1a9f145f76d64
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: ceb2f7258cbeceafbc51b11f8151ed6e35ecc06d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636797"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779517"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const plannerProgressTaskBoardTaskFormat = {
-  orderHint: "A6673H Ejkl!"
+  orderHint: 'A6673H Ejkl!'
 };
 
-let res = await client.api('/planner/tasks/{task-id}/progressTaskBoardFormat')
+await client.api('/planner/tasks/{task-id}/progressTaskBoardFormat')
     .update(plannerProgressTaskBoardTaskFormat);
 
 ```

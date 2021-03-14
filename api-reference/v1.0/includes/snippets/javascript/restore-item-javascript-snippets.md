@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5c7f6ecd41d7c05bf0e5a6e81d7a0d8e118f8a1f
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: 110c1ecdf3ea9f42c5b0fcb565074e92d1807bc0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007104"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808657"
 ---
 ```javascript
 
@@ -17,12 +17,12 @@ const client = Client.init(options);
 
 const driveItem = {
   parentReference: {
-    id: "String",
+    id: 'String',
   },
-  name: "String"
+  name: 'String'
 };
 
-let res = await client.api('/me/drive/items/{item-id}/restore')
+await client.api('/me/drive/items/{item-id}/restore')
     .version('beta')
     .post(driveItem);
 
