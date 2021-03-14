@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2ac1d772b12f9e11dcba435d99b44c96450948c2
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 688d4380749507e2eb0183a8d045001da431f296
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636742"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778837"
 ---
 ```javascript
 
@@ -16,20 +16,20 @@ const options = {
 const client = Client.init(options);
 
 const contact = {
-  givenName: "Pavel",
-  surname: "Bansky",
+  givenName: 'Pavel',
+  surname: 'Bansky',
   emailAddresses: [
     {
-      address: "pavelb@fabrikam.onmicrosoft.com",
-      name: "Pavel Bansky"
+      address: 'pavelb@fabrikam.onmicrosoft.com',
+      name: 'Pavel Bansky'
     }
   ],
   businessPhones: [
-    "+1 732 555 0102"
+    '+1 732 555 0102'
   ]
 };
 
-let res = await client.api('/me/contacts')
+await client.api('/me/contacts')
     .post(contact);
 
 ```

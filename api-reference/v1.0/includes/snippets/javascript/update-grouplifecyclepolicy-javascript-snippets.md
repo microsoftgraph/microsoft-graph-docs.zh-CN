@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: debd43f70f9518490ee0cdd29a8a2502f360d023
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 55e1c00b2491b6803539f9c18abc5ce47000f064
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636835"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795455"
 ---
 ```javascript
 
@@ -17,11 +17,11 @@ const client = Client.init(options);
 
 const groupLifecyclePolicy = {
   groupLifetimeInDays: 180,
-  managedGroupTypes: "Selected",
-  alternateNotificationEmails: "admin@contoso.com"
+  managedGroupTypes: 'Selected',
+  alternateNotificationEmails: 'admin@contoso.com'
 };
 
-let res = await client.api('/groupLifecyclePolicies/{id}')
+await client.api('/groupLifecyclePolicies/{id}')
     .update(groupLifecyclePolicy);
 
 ```

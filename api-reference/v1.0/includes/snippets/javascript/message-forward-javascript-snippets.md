@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: af518bf1ab80fdf6ee3a6bf86b3b96fa88d5dd6d
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 8c5afb922674d49e69009b54457f64678ecb22ff
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620414"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798860"
 ---
 ```javascript
 
@@ -16,18 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const forward = {
-  comment: "comment-value",
+  comment: 'comment-value',
   toRecipients: [
     {
       emailAddress: {
-        name: "name-value",
-        address: "address-value"
+        name: 'name-value',
+        address: 'address-value'
       }
     }
   ]
 };
 
-let res = await client.api('/me/messages/{id}/forward')
+await client.api('/me/messages/{id}/forward')
     .post(forward);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fe0d529fe790ef41c4f6cb99d25c28ec6ef00c7c
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7095677e1dcfe729bfeb16cb67696ccf0abab8d1
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523092"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793731"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var delegatedPermissionClassification = new DelegatedPermissionClassification
     Classification = PermissionClassificationType.Low
 };
 
-await graphClient.ServicePrincipals["{id}"].DelegatedPermissionClassifications
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].DelegatedPermissionClassifications
     .Request()
     .AddAsync(delegatedPermissionClassification);
 

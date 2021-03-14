@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 63699e3d6b6a4a2afcf2ad57fd04414e28d5c589
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 6ea8c9e36b2deaf7f35e0f21751f3d93f14441ab
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636828"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779674"
 ---
 ```javascript
 
@@ -16,23 +16,23 @@ const options = {
 const client = Client.init(options);
 
 const list = {
-  displayName: "Books",
+  displayName: 'Books',
   columns: [
     {
-      name: "Author",
+      name: 'Author',
       text: { }
     },
     {
-      name: "PageCount",
+      name: 'PageCount',
       number: { }
     }
   ],
   list: {
-    template: "genericList"
+    template: 'genericList'
   }
 };
 
-let res = await client.api('/sites/{site-id}/lists')
+await client.api('/sites/{site-id}/lists')
     .post(list);
 
 ```

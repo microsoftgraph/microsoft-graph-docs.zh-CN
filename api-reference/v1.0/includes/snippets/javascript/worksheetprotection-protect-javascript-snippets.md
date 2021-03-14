@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8e829f0bfba35226b0441f72bb20ed98f456fe1c
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: c4e43a7555a96b56cc601b5756bdc4e3e5fb93eb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48612240"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801487"
 ---
 ```javascript
 
@@ -31,7 +31,7 @@ const protect = {
   }
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect')
     .post(protect);
 
 ```

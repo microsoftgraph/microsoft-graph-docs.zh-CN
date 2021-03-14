@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 20d1eaca19786a777aec590904ae24ab340c7488
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 2cc9e7594b273044a97236293ecafe6fd28e2982
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845967"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808924"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var message = new Message
     BodyPreview = "bodyPreview-value"
 };
 
-await graphClient.Me.MailFolders["{id}"].Messages
+await graphClient.Me.MailFolders["{mailFolder-id}"].Messages
     .Request()
     .AddAsync(message);
 

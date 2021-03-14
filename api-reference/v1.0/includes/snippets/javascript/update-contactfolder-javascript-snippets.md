@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c33bfb022c2b141d179a25cb176e0355b5ca187c
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 844e203907f48cc9579c1212801860e7b5b7dc6f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636876"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797367"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const contactFolder = {
-  parentFolderId: "parentFolderId-value",
-  displayName: "displayName-value"
+  parentFolderId: 'parentFolderId-value',
+  displayName: 'displayName-value'
 };
 
-let res = await client.api('/me/contactFolders/{id}')
+await client.api('/me/contactFolders/{id}')
     .update(contactFolder);
 
 ```

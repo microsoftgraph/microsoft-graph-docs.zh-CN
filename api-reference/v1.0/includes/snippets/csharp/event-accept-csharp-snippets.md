@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bd40d2d91f6d481a30dd2728fd3c5966d571171d
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+ms.openlocfilehash: 0a4e43c6375088de11ae9abaad6a4eb21bd0f1b1
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37045340"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806019"
 ---
 ```csharp
 
@@ -15,8 +15,8 @@ var comment = "comment-value";
 
 var sendResponse = true;
 
-await graphClient.Me.Events["{id}"]
-    .Accept(sendResponse,comment)
+await graphClient.Me.Events["{event-id}"]
+    .Accept(comment,sendResponse)
     .Request()
     .PostAsync();
 

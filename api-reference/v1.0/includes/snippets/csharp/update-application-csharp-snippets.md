@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ca8db5cabf2ee88649dec1ed12461f1477a82ad2
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 1892e4249c36bc9036051aecce0d84020354fad3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995966"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798235"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var application = new Application
     DisplayName = "New display name"
 };
 
-await graphClient.Applications["{id}"]
+await graphClient.Applications["{application-id}"]
     .Request()
     .UpdateAsync(application);
 
