@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 956a08b8bdf852748cee328fd8264b90106d3244
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 56c46547881c394322863e65235d1f9f5c58457d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845910"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791286"
 ---
 ```csharp
 
@@ -32,7 +32,7 @@ var alert = new Alert
     }
 };
 
-await graphClient.Security.Alerts["{alert_id}"]
+await graphClient.Security.Alerts["{alert-id}"]
     .Request()
     .Header("Prefer","return=representation")
     .UpdateAsync(alert);

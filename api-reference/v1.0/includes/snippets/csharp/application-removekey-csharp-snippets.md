@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 09ca117c68ebd9ac9da59e450c89d60c3501cb93
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 7ccad3f01d799538972a9860214d43adeaf99e9f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334696"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792897"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var keyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6");
 
 var proof = "eyJ0eXAiOiJ...";
 
-await graphClient.Applications["{id}"]
+await graphClient.Applications["{application-id}"]
     .RemoveKey(keyId,proof)
     .Request()
     .PostAsync();
