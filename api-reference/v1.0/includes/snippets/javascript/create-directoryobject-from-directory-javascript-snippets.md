@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2899d5e46380611c0f266d35e0cc4d198289795b
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 651d093425a570245ad0ef570a0cf9fc2fda6882
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48604750"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808574"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directory/deletedItems/{object-id}/restore')
+await client.api('/directory/deletedItems/{object-id}/restore')
     .post();
 
 ```

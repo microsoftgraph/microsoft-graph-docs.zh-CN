@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 99785d5e35ea1e50c7e2a9a4876296ff43845794
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: b40049a3bb70cfe2d4e0d1aa9fd5ec9f640b1793
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636790"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779833"
 ---
 ```javascript
 
@@ -16,13 +16,13 @@ const options = {
 const client = Client.init(options);
 
 const workbookRangeBorder = {
-  color: "color-value",
-  style: "style-value",
-  sideIndex: "sideIndex-value",
-  weight: "weight-value"
+  color: 'color-value',
+  style: 'style-value',
+  sideIndex: 'sideIndex-value',
+  weight: 'weight-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders/{sideIndex}')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders/{sideIndex}')
     .update(workbookRangeBorder);
 
 ```

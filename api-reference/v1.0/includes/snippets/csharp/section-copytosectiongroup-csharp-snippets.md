@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: dac991ad6b4085a7bfac01ccace9ee51d9514fdf
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: c42f47815571a78985dcf08df49495ea94d8d5bd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402724"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782686"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var groupId = "groupId-value";
 
 var renameAs = "renameAs-value";
 
-await graphClient.Me.Onenote.Sections["{id}"]
+await graphClient.Me.Onenote.Sections["{onenoteSection-id}"]
     .CopyToSectionGroup(id,groupId,renameAs,null,null)
     .Request()
     .PostAsync();

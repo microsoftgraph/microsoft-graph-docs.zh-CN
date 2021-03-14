@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 762dcc1208c7cf5581f00d42701a4f2bee295d16
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 1bcc72f9c714762fa4ce18cf29704b0814e8863c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45008589"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781167"
 ---
 ```javascript
 
@@ -18,17 +18,17 @@ const client = Client.init(options);
 const schemaExtension = {
   properties: [
     {
-      name:"new-name-value",
-      type:"new-type-value"
+      name: 'new-name-value',
+      type: 'new-type-value'
     },
     {
-      name:"additional-name-value",
-      type:"additional-type-value"
+      name: 'additional-name-value',
+      type: 'additional-type-value'
     }
   ]
 };
 
-let res = await client.api('/schemaExtensions/{id}')
+await client.api('/schemaExtensions/{id}')
     .update(schemaExtension);
 
 ```

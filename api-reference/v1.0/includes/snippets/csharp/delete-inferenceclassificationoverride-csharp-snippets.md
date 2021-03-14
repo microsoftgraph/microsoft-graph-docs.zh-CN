@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 715948128a3f9a6b0ac16785a459219529ff8955
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: dc799b71f63ec6bd5dce237f74aa1cfb0125e4b8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48608528"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808259"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.InferenceClassification.Overrides["98f5bdef-576a-404d-a2ea-07a3cf34af4r"]
+await graphClient.Me.InferenceClassification.Overrides["{inferenceClassificationOverride-id}"]
     .Request()
     .DeleteAsync();
 

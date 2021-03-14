@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dacaa82e4361fc9e3cf9cf405e8251b98c6eeb70
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 5c74033adfde89caac36e05d22c7572c683e5d31
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806579"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806167"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id}/calendar/calendarPermissions/{id}')
+let calendarPermission = await client.api('/users/{id}/calendar/calendarPermissions/{id}')
     .get();
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 157a6f12548f8f47f787b3719a7ac919d88b1507
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 77b6125e7bfca7489f5187bcfcc5b6fa06c2e037
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46512319"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793474"
 ---
 ```javascript
 
@@ -16,51 +16,51 @@ const options = {
 const client = Client.init(options);
 
 const event = {
-  subject: "Plan summer company picnic",
+  subject: 'Plan summer company picnic',
   body: {
-    contentType: "HTML",
-    content: "Let's kick-start this event planning!"
+    contentType: 'HTML',
+    content: 'Let\'s kick-start this event planning!'
   },
   start: {
-      dateTime: "2017-08-30T11:00:00",
-      timeZone: "Pacific Standard Time"
+      dateTime: '2017-08-30T11:00:00',
+      timeZone: 'Pacific Standard Time'
   },
   end: {
-      dateTime: "2017-08-30T12:00:00",
-      timeZone: "Pacific Standard Time"
+      dateTime: '2017-08-30T12:00:00',
+      timeZone: 'Pacific Standard Time'
   },
   attendees: [
     {
       emailAddress: {
-        address: "DanaS@contoso.onmicrosoft.com",
-        name: "Dana Swope"
+        address: 'DanaS@contoso.onmicrosoft.com',
+        name: 'Dana Swope'
       },
-      type: "Required"
+      type: 'Required'
     },
     {
       emailAddress: {
-        address: "AlexW@contoso.onmicrosoft.com",
-        name: "Alex Wilber"
+        address: 'AlexW@contoso.onmicrosoft.com',
+        name: 'Alex Wilber'
       },
-      type: "Required"
+      type: 'Required'
     }
   ],
   location: {
-    displayName: "Conf Room 3; Fourth Coffee; Home Office",
-    locationType: "Default"
+    displayName: 'Conf Room 3; Fourth Coffee; Home Office',
+    locationType: 'Default'
   },
   locations: [
     {
-      displayName: "Conf Room 3"
+      displayName: 'Conf Room 3'
     },
     {
-      displayName: "Fourth Coffee",
+      displayName: 'Fourth Coffee',
       address: {
-        street: "4567 Main St",
-        city: "Redmond",
-        state: "WA",
-        countryOrRegion: "US",
-        postalCode: "32008"
+        street: '4567 Main St',
+        city: 'Redmond',
+        state: 'WA',
+        countryOrRegion: 'US',
+        postalCode: '32008'
       },
       coordinates: {
         latitude: 47.672,
@@ -68,13 +68,13 @@ const event = {
       }
     },
     {
-      displayName: "Home Office"
+      displayName: 'Home Office'
     }
   ],
   allowNewTimeProposals: true
 };
 
-let res = await client.api('/me/events')
+await client.api('/me/events')
     .post(event);
 
 ```

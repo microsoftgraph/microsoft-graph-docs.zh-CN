@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ce9a90e8a7345bf5a58b0de0a18ffbdb9fbf3387
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: c5bddfc99ece03a8b5ed1f9dba0580540cdca72e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903404"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789385"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var linkedResource = new LinkedResource
     DisplayName = "Microsoft"
 };
 
-await graphClient.Me.Todo.Lists["dfsdc-f9dfdfs-dcsda9"].Tasks["e2dc-f9cce2-dce29"].LinkedResources["f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9"]
+await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].LinkedResources["{linkedResource-id}"]
     .Request()
     .UpdateAsync(linkedResource);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7024a2bc21af591064697f77d5c1b5c67cb5e673
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: fd4f3fda3f3c8854e11c4cd29ba05edc1fa186de
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43511123"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795467"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var comment = "Updating the latest guidelines";
 
-await graphClient.Drives["{drive-id}"].Items["{item-id}"]
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"]
     .Checkin(null,comment)
     .Request()
     .PostAsync();
