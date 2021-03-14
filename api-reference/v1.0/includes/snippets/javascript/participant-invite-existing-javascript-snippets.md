@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1c1d04cf79a21b9b3724569c035def2e2a284c49
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: d5288dd37af7e9c77495c4366ef1fa77049b91af
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865819"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799397"
 ---
 ```javascript
 
@@ -18,22 +18,22 @@ const client = Client.init(options);
 const inviteParticipantsOperation = {
   participants: [
     {
-      @odata.type: "#microsoft.graph.invitationParticipantInfo",
-      replacesCallId: "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      '@odata.type': '#microsoft.graph.invitationParticipantInfo',
+      replacesCallId: 'a7ebfb2d-871e-419c-87af-27290b22e8db',
       identity: {
-        @odata.type: "#microsoft.graph.identitySet",
+        '@odata.type': '#microsoft.graph.identitySet',
         user: {
-          @odata.type: "#microsoft.graph.identity",
-          id: "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
-          displayName: "string"
+          '@odata.type': '#microsoft.graph.identity',
+          id: '7e1b4346-85a6-4bdd-abe3-d11c5d420efe',
+          displayName: 'string'
         }
       }
     }
   ],
-  clientContext: "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+  clientContext: 'f2fa86af-3c51-4bc2-8fc0-475452d9764f'
 };
 
-let res = await client.api('/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite')
+await client.api('/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite')
     .post(inviteParticipantsOperation);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 144a9be9652b889f06c6961595b4c28f6c59a2ec
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: ef491076acbfb691d13a11f0b28d66924e3dd976
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684427"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790056"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var tokenLifetimePolicy = new TokenLifetimePolicy
     }
 };
 
-await graphClient.Applications["{id}"].TokenLifetimePolicies.References
+await graphClient.Applications["{application-id}"].TokenLifetimePolicies.References
     .Request()
     .AddAsync(tokenLifetimePolicy);
 

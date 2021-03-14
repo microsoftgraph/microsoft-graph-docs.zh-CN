@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f565f403d89b233c8556b426ad316532e721865b
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: b78d6bea048741e3530c1def052291c0bed0d1c7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635767"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798286"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const invitation = {
-  invitedUserEmailAddress: "yyy@test.com",
-  inviteRedirectUrl: "https://myapp.contoso.com"
+  invitedUserEmailAddress: 'yyy@test.com',
+  inviteRedirectUrl: 'https://myapp.contoso.com'
 };
 
-let res = await client.api('/invitations')
+await client.api('/invitations')
     .post(invitation);
 
 ```

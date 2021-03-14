@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2f8830c001b746892f38d63bea30b3a46ba9e857
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 5f74e83e931d29e09ef4890c0ee772da3de27e43
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620290"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793329"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/inbox/messageRules')
+let messageRules = await client.api('/me/mailFolders/inbox/messageRules')
     .get();
 
 ```

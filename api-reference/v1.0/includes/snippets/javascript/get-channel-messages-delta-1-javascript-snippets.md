@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 319d96d08a8cb647e3551f2f7657d5e10b6e1382
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 876059e3219481f8a77a57f21fca61bccaf198a4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905017"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781793"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/channels/{id}/messages/delta')
+let chatMessage = await client.api('/teams/{id}/channels/{id}/messages/delta')
     .top(2)
     .get();
 

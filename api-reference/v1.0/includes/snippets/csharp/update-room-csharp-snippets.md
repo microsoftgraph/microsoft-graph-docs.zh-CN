@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 340900ce0e32b4600e7f22d8fd1ca0ea1cfa685f
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: e0c0db636a349dfd6a36aba5d88cab9ec9c0926f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059622"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50782764"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var place = new Room
     IsWheelChairAccessible = false
 };
 
-await graphClient.Places["cf100@contoso.com"]
+await graphClient.Places["{place-id}"]
     .Request()
     .UpdateAsync(place);
 

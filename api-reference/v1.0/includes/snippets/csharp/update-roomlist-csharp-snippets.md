@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3d05eea2669d1e3f7217797fd4fb178d7a790562
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 5fae20435028c95ac7469e992d681017bccf03a7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904535"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783809"
 ---
 ```csharp
 
@@ -33,7 +33,7 @@ var place = new RoomList
     }
 };
 
-await graphClient.Places["Building1RroomList@contoso.onmicrosoft.com"]
+await graphClient.Places["{place-id}"]
     .Request()
     .UpdateAsync(place);
 

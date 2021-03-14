@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2aeab188527f0bcc6a15a1c39d55788871b16243
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 74dc758a436cb98876c1f4f23340577eeb8eddb4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636811"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799782"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const outlookCategory = {
-  color:"preset15"
+  color: 'preset15'
 };
 
-let res = await client.api('/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac')
+await client.api('/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac')
     .update(outlookCategory);
 
 ```
