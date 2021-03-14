@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 39ee696851adf9867f47518b35dc1f72cea8b2ad
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: b0c4caac09fe27dc06d58017ae372ee6737b6aeb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36633788"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793013"
 ---
 ```javascript
 
@@ -18,18 +18,18 @@ const client = Client.init(options);
 const reply = {
   post: {
     body: {
-      contentType: "text",
-      content: "Which quarter does that file cover? See my attachment."
+      contentType: 'text',
+      content: 'Which quarter does that file cover? See my attachment.'
     },
     attachments: [{
-      @odata.type: "#microsoft.graph.fileAttachment",
-      name: "Another file as attachment",
-      contentBytes: "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+      '@odata.type': '#microsoft.graph.fileAttachment',
+      name: 'Another file as attachment',
+      contentBytes: 'VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu'
     } ]
   }
 };
 
-let res = await client.api('/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply')
+await client.api('/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply')
     .post(reply);
 
 ```

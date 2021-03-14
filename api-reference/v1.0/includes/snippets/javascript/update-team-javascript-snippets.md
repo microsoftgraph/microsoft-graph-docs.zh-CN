@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d072647bbb7fc68f1ac4a1144ff3f30f1c5f2ed2
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: d7e73bd1ac3ea1dbb626670061ed6ad911b0de61
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636768"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787805"
 ---
 ```javascript
 
@@ -25,11 +25,11 @@ const team = {
   },
   funSettings: {
     allowGiphy: true,
-    giphyContentRating: "strict"
+    giphyContentRating: 'strict'
   }
 };
 
-let res = await client.api('/teams/{id}')
+await client.api('/teams/{id}')
     .update(team);
 
 ```

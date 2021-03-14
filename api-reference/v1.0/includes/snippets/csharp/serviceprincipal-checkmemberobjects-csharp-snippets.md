@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0fa9e470b6034e7efefb0c4fdf7cae9e403ececf
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: e9d2c382e2d7632a672c7197ec1e4238a8455159
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334331"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791977"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var ids = new List<String>()
     "ac38546e-ddf3-437a-ac5c-27a94cd7a0f1"
 };
 
-await graphClient.ServicePrincipals["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"]
     .CheckMemberObjects(ids)
     .Request()
     .PostAsync();

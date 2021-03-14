@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 370b06256fab8c6bf60431c997b81466d25d6de7
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: 920662db877f90736dd68a687352024f9b429eda
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428782"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778855"
 ---
 ```javascript
 
@@ -17,11 +17,11 @@ const client = Client.init(options);
 
 const string = {
   groupIds: [
-    "groupIds-value"
+    'groupIds-value'
   ]
 };
 
-let res = await client.api('/me/checkMemberGroups')
+await client.api('/me/checkMemberGroups')
     .post(string);
 
 ```

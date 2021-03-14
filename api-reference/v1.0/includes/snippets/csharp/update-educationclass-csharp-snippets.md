@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b24f66865b3df7d9b3821c0a45e7f79cb39872a5
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 22aa8f05136e84aff4b7f0206d068d536bc749bf
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48609150"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806736"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var educationClass = new EducationClass
     DisplayName = "World History Level 1"
 };
 
-await graphClient.Education.Classes["{class-id}"]
+await graphClient.Education.Classes["{educationClass-id}"]
     .Request()
     .UpdateAsync(educationClass);
 

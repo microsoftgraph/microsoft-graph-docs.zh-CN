@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9d86c65a0187562659ef7f77ae12c8dba0829945
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 606f9dc35375ab7a2632d5b4970c9b093a980c13
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48608819"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788530"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const exportPersonalData = {
-  storageLocation: "storageLocation-value"
+  storageLocation: 'storageLocation-value'
 };
 
-let res = await client.api('/users/{id}/exportPersonalData')
+await client.api('/users/{id}/exportPersonalData')
     .post(exportPersonalData);
 
 ```

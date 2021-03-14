@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 422ea191006ea70b7dc40ec3c614a8f349ea6b69
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: fc0cc71eee80eb47d12f51eef7665563509f853d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43511060"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788123"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const forceDelete = {
   disableUserAccounts: true
 };
 
-let res = await client.api('/domains/{id}/forceDelete')
+await client.api('/domains/{id}/forceDelete')
     .post(forceDelete);
 
 ```

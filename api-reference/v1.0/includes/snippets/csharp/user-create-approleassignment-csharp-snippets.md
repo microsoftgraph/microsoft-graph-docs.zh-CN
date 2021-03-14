@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 757bb8059d0ca7b394777acd6f652d6c1c55ebec
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: 66503fceb166d8ab98ca5dbea2fd6963d9ffbcac
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333385"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798940"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var appRoleAssignment = new AppRoleAssignment
     AppRoleId = Guid.Parse("appRoleId-value")
 };
 
-await graphClient.Users["{id}"].AppRoleAssignments
+await graphClient.Users["{user-id}"].AppRoleAssignments
     .Request()
     .AddAsync(appRoleAssignment);
 

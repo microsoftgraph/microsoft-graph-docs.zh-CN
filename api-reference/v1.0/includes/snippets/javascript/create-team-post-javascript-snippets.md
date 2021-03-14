@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 42fb61f2aa6bd9d4c089fce06407b6ba65084157
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: e0365c729c8fb329a74f8884b05d7318a5607b63
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "48315291"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788618"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const team = {
-  template@odata.bind: "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-  displayName: "My Sample Team",
-  description: "My Sample Team’s Description"
+  'template@odata.bind': 'https://graph.microsoft.com/v1.0/teamsTemplates(\'standard\')',
+  displayName: 'My Sample Team',
+  description: 'My Sample Team’s Description'
 };
 
-let res = await client.api('/teams')
+await client.api('/teams')
     .post(team);
 
 ```

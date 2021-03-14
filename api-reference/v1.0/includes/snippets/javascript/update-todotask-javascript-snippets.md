@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1083e20ce397dd4e7ea0f2fe1f88b9db96712fda
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 1e6f7a84610d0d50282ddb63299ae8e2db82b06c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905323"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50809450"
 ---
 ```javascript
 
@@ -16,13 +16,13 @@ const options = {
 const client = Client.init(options);
 
 const todoTask = {
-   dueDateTime:{
-      dateTime:"2020-07-25T16:00:00",
-      timeZone:"Eastern Standard Time"
+   dueDateTime: {
+      dateTime: '2020-07-25T16:00:00',
+      timeZone: 'Eastern Standard Time'
    }
 };
 
-let res = await client.api('/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72')
+await client.api('/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72')
     .update(todoTask);
 
 ```

@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 949e3b6806456f40fd4d6e09d985e0418c687d4a
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 7c490762cbabecfe91f740d2468a070e6f1bb2e0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690968"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50780057"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var installedApps = await graphClient.Users["97a5a533-833d-494b-b543-c0afe026cb96"].Teamwork.InstalledApps
+var installedApps = await graphClient.Users["{user-id}"].Teamwork.InstalledApps
     .Request()
     .Filter("teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'")
     .Expand("teamsAppDefinition")
