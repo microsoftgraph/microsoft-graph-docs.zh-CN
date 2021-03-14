@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 19b83c0a85fb4dd8b60d4801b7209a5db2885219
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 8fadf509818616d8aa452df7d85a58bd4b19bb99
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636852"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50780488"
 ---
 ```javascript
 
@@ -16,15 +16,15 @@ const options = {
 const client = Client.init(options);
 
 const attachment = {
-  @odata.type: "microsoft.graph.fileAttachment",
-  name: "name-value",
-  contentType: "contentType-value",
+  '@odata.type': 'microsoft.graph.fileAttachment',
+  name: 'name-value',
+  contentType: 'contentType-value',
   isInline: false,
-  contentLocation: "contentLocation-value",
-  contentBytes: "base64-contentBytes-value"
+  contentLocation: 'contentLocation-value',
+  contentBytes: 'base64-contentBytes-value'
 };
 
-let res = await client.api('/me/messages/{id}/attachments')
+await client.api('/me/messages/{id}/attachments')
     .post(attachment);
 
 ```

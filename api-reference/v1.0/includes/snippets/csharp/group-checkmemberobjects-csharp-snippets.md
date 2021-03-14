@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4fa85959ce04f2a17333fcc4cb6249088a441f06
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 0489d87223061af39991a811c050a8a3faf07910
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39637118"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779743"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var ids = new List<String>()
     "ac38546e-ddf3-437a-ac5c-27a94cd7a0f1"
 };
 
-await graphClient.Groups["{id}"]
+await graphClient.Groups["{group-id}"]
     .CheckMemberObjects(ids)
     .Request()
     .PostAsync();

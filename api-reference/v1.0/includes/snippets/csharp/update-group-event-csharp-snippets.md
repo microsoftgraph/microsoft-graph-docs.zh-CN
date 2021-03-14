@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fdf7267983b422bb3000cc29628f4116a603d6dc
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 3458762cfb082f2e40d6222b541476c06c55753b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48621465"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784463"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var @event = new Event
     }
 };
 
-await graphClient.Groups["01d4ee64-15ce-491e-bad1-b91aa3223df4"].Calendar.Events["AAMkADZlAAAAABERAAA="]
+await graphClient.Groups["{group-id}"].Calendar.Events["{event-id}"]
     .Request()
     .UpdateAsync(@event);
 

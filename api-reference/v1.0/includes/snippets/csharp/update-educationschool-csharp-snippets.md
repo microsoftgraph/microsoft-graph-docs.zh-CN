@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ba842a052edfb19e5f7333912aa979a91a704003
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: af073c534a4bf075e317ec5798eb5eed4b94f6c4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48610198"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791801"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var educationSchool = new EducationSchool
     Description = "Magnate school for the arts. Los Angeles School District"
 };
 
-await graphClient.Education.Schools["{school-id}"]
+await graphClient.Education.Schools["{educationSchool-id}"]
     .Request()
     .UpdateAsync(educationSchool);
 

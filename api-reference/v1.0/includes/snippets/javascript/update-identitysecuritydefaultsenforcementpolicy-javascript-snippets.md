@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 49958ea62c51b1e100182e6fd726accc896b5918
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 447b7e3d9cf6d3d081edcc27038abffe8c0d75f5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567242"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777955"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const identitySecurityDefaultsEnforcementPolicy = {
   isEnabled: false
 };
 
-let res = await client.api('/policies/identitySecurityDefaultsEnforcementPolicy')
+await client.api('/policies/identitySecurityDefaultsEnforcementPolicy')
     .update(identitySecurityDefaultsEnforcementPolicy);
 
 ```
