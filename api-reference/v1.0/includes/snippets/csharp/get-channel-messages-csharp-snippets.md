@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bc23cd3d5428fbd77a022a619c05dc57fbe0afc3
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: bac6ea6efca9ef93f3a94e6055f55adabdce3c0a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905909"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788204"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var messages = await graphClient.Teams["303d2c1c-f1c5-40ce-b68e-544343d7f42b"].Channels["19:fec4b0f2825d4c8c82abc09027a64184@thread.skype"].Messages
+var messages = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
     .Request()
     .GetAsync();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a0c4a68714192abca577bef4f67db185f8cb51df
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 5ad37c15337aeae503b6470848bdf5272f77c76f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334625"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803821"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/places/microsoft.graph.room')
+let room = await client.api('/places/microsoft.graph.room')
     .get();
 
 ```

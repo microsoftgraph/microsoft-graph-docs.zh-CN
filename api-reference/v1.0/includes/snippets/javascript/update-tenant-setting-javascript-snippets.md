@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bdc86ff1b9abaf04024c889184ec1520556b5a4b
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: bf7fa5f09c7a6f5a4c67f6fb3ad250172d8a5f7f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947075"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786190"
 ---
 ```javascript
 
@@ -16,69 +16,69 @@ const options = {
 const client = Client.init(options);
 
 const groupSetting = {
-  displayName: "Group.Unified",
-  templateId: "62375ab9-6b52-47ed-826b-58e47e0e304b",
+  displayName: 'Group.Unified',
+  templateId: '62375ab9-6b52-47ed-826b-58e47e0e304b',
   values: [
     {
-      name: "EnableMIPLabels",
-      value: "false"
+      name: 'EnableMIPLabels',
+      value: 'false'
     },
     {
-      name: "CustomBlockedWordsList",
-      value: ""
+      name: 'CustomBlockedWordsList',
+      value: ''
     },
     {
-      name: "EnableMSStandardBlockedWords",
-      value: "false"
+      name: 'EnableMSStandardBlockedWords',
+      value: 'false'
     },
     {
-      name: "ClassificationDescriptions",
-      value: ""
+      name: 'ClassificationDescriptions',
+      value: ''
     },
     {
-      name: "DefaultClassification",
-      value: ""
+      name: 'DefaultClassification',
+      value: ''
     },
     {
-      name: "PrefixSuffixNamingRequirement",
-      value: ""
+      name: 'PrefixSuffixNamingRequirement',
+      value: ''
     },
     {
-      name: "AllowGuestsToBeGroupOwner",
-      value: "false"
+      name: 'AllowGuestsToBeGroupOwner',
+      value: 'false'
     },
     {
-      name: "AllowGuestsToAccessGroups",
-      value: "true"
+      name: 'AllowGuestsToAccessGroups',
+      value: 'true'
     },
     {
-      name: "GuestUsageGuidelinesUrl",
-      value: ""
+      name: 'GuestUsageGuidelinesUrl',
+      value: ''
     },
     {
-      name: "GroupCreationAllowedGroupId",
-      value: ""
+      name: 'GroupCreationAllowedGroupId',
+      value: ''
     },
     {
-      name: "AllowToAddGuests",
-      value: "true"
+      name: 'AllowToAddGuests',
+      value: 'true'
     },
     {
-      name: "UsageGuidelinesUrl",
-      value: ""
+      name: 'UsageGuidelinesUrl',
+      value: ''
     },
     {
-      name: "ClassificationList",
-      value: ""
+      name: 'ClassificationList',
+      value: ''
     },
     {
-      name: "EnableGroupCreation",
-      value: "true"
+      name: 'EnableGroupCreation',
+      value: 'true'
     }
   ]
 };
 
-let res = await client.api('/groupSettings/{id}')
+await client.api('/groupSettings/{id}')
     .update(groupSetting);
 
 ```

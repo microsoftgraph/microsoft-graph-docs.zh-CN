@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e844b7aa819c6db68bb130e4dee448029e6f8eaf
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 460234d063ff794f2a708ffdfbfda42658dcc5ef
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48907268"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50810405"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const message = {
   isRead: true,
 };
 
-let res = await client.api('/me/messages/{id}')
+await client.api('/me/messages/{id}')
     .update(message);
 
 ```

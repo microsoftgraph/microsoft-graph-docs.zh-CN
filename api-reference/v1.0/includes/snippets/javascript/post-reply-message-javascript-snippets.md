@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 630b5b72cfd1e030bdb526ea82c846418220dabe
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 22b2cdcab8cd0d574243055547d449257aa36003
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335054"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804020"
 ---
 ```javascript
 
@@ -17,12 +17,12 @@ const client = Client.init(options);
 
 const chatMessage = {
   body: {
-    contentType: "html",
-    content: "Hello World"
+    contentType: 'html',
+    content: 'Hello World'
   }
 };
 
-let res = await client.api('/teams/{id}/channels/{id}/messages/{id}/replies')
+await client.api('/teams/{id}/channels/{id}/messages/{id}/replies')
     .post(chatMessage);
 
 ```

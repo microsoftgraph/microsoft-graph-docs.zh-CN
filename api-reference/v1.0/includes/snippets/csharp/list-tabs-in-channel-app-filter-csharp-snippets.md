@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 84cb73794a971bd200a262783f84b24a577bf235
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: a1c5c38d654a9012e3978369fcc745b62d0fef0d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690461"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778178"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var tabs = await graphClient.Teams["6903fa93-605b-43ef-920e-77c4729f8258"].Channels["19:33b76eea88574bd1969dca37e2b7a819@thread.skype"].Tabs
+var tabs = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Tabs
     .Request()
     .Filter("teamsApp/id eq 'com.microsoft.teamspace.tab.planner'")
     .Expand("teamsApp")
