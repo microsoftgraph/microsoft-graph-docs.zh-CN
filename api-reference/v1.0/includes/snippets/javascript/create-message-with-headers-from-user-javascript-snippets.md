@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fc6cdcdb64bc4d66449bc4313484b42145705a86
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 12766df2f4e89a4d84181741da7a8173c06539cc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636739"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806605"
 ---
 ```javascript
 
@@ -16,31 +16,31 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-    subject:"9/8/2018: concert",
-    body:{
-        contentType:"HTML",
-        content:"The group represents Washington."
+    subject: '9/8/2018: concert',
+    body: {
+        contentType: 'HTML',
+        content: 'The group represents Washington.'
     },
-    toRecipients:[
+    toRecipients: [
         {
-            emailAddress:{
-                address:"AlexW@contoso.OnMicrosoft.com"
+            emailAddress: {
+                address: 'AlexW@contoso.OnMicrosoft.com'
             }
         }
     ],
-    internetMessageHeaders:[
+    internetMessageHeaders: [
         {
-            name:"x-custom-header-group-name",
-            value:"Washington"
+            name: 'x-custom-header-group-name',
+            value: 'Washington'
         },
         {
-            name:"x-custom-header-group-id",
-            value:"WA001"
+            name: 'x-custom-header-group-id',
+            value: 'WA001'
         }
     ]
 };
 
-let res = await client.api('/me/messages')
+await client.api('/me/messages')
     .post(message);
 
 ```

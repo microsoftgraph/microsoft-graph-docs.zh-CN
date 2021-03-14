@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ced5764a96549a7e7f7ceaa71831b16bfe101a7b
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: d760c957f0dfeee81fc7a2109d13d5ed4ce259b8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217041"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799235"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teamwork/workforceIntegrations/{workforceintegrationid}')
+let workforceIntegration = await client.api('/teamwork/workforceIntegrations/{workforceintegrationid}')
     .get();
 
 ```

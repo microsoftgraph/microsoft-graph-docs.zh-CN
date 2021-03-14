@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c49a040e44baebf3a911421f5916d9a041efdd70
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 8ae78ebce0d7d95a63dcd5508a90cca4c775a633
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218284"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792549"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const timeOffReason = {
-  displayName: "Vacation",
-  iconType: "plane",
+  displayName: 'Vacation',
+  iconType: 'plane',
   isActive: true
 };
 
-let res = await client.api('/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}')
+await client.api('/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}')
     .put(timeOffReason);
 
 ```

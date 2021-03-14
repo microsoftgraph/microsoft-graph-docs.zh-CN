@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c4195961166e3b37bc242101858ece83a5d4fc37
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 444547e70a3ab00f6647139d258d38eff4fa3329
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36636874"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803261"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const conversationThread = {
-  @odata.type:"#Microsoft.OutlookServices.ConversationThread",
+  '@odata.type':'#Microsoft.OutlookServices.ConversationThread',
   isLocked: true
 };
 
-let res = await client.api('/groups/{id}/threads/{id}')
+await client.api('/groups/{id}/threads/{id}')
     .update(conversationThread);
 
 ```

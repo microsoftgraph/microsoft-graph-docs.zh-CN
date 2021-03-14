@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 39b1b4e191ba1f9b270f5e2e0ac6b0b80a3bae26
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5caa41baeea7309d7399ed2a371c3bb5f69c22a5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37999433"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786612"
 ---
 ```javascript
 
@@ -17,11 +17,11 @@ const client = Client.init(options);
 
 const passwordCredential = {
   passwordCredential: {
-    displayName: "Password friendly name"
+    displayName: 'Password friendly name'
   }
 };
 
-let res = await client.api('/applications/{id}/addPassword')
+await client.api('/applications/{id}/addPassword')
     .post(passwordCredential);
 
 ```

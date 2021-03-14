@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f74bb9512041406fdb5a6506b24e0d9cd0a39845
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 4a153c7a2c0dec1fc9ec5b502a21d86851bee0aa
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48621590"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788800"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const refreshSession = {
 
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/refreshSession')
+await client.api('/me/drive/items/{id}/workbook/refreshSession')
     .post(refreshSession);
 
 ```

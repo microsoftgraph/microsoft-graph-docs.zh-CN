@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6b1f9c9008051a628ec5610138d37d91498e0643
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 6ebf2b85165a1b66917f4403fae15b0decedbcbd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998936"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792886"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const directoryObject = {
-    @odata.id: "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+    '@odata.id': 'https://graph.microsoft.com/v1.0/directoryObjects/{id}'
 };
 
-let res = await client.api('/applications/{id}/owners/$ref')
+await client.api('/applications/{id}/owners/$ref')
     .post(directoryObject);
 
 ```
