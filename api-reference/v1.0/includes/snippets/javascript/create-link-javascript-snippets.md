@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b7583238e24f5fe34739d01d90b2ee0893bd7727
-ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
+ms.openlocfilehash: 582afd513c43182b264ddf98fcad7449412e5bc6
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44055592"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788890"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const permission = {
-  type: "view",
-  password: "ThisIsMyPrivatePassword",
-  scope: "anonymous"
+  type: 'view',
+  password: 'ThisIsMyPrivatePassword',
+  scope: 'anonymous'
 };
 
-let res = await client.api('/me/drive/items/{item-id}/createLink')
+await client.api('/me/drive/items/{item-id}/createLink')
     .post(permission);
 
 ```

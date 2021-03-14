@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5b19241384869cdb2181c774fb633869612bed5c
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: ed9dd5c5fda12366c3e86704792e18f6e1c519f5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635544"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778883"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const setVerifiedPublisher = {
-    verifiedPublisherId: "1234567"
+    verifiedPublisherId: '1234567'
 };
 
-let res = await client.api('/applications/{id}/setVerifiedPublisher')
+await client.api('/applications/{id}/setVerifiedPublisher')
     .post(setVerifiedPublisher);
 
 ```

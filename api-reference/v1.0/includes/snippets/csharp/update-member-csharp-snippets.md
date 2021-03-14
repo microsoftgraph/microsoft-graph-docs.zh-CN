@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cc2e174073f375ed36a19ce41ff06f32c9f7fd29
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 307ff9e9414d8ff6a54caf9c02366805d1127e6b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943626"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793431"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var conversationMember = new AadUserConversationMember
     }
 };
 
-await graphClient.Teams["ece6f0a1-7ca4-498b-be79-edf6c8fc4d82"].Channels["19:56eb04e133944cf69e603c5dac2d292e@thread.skype"].Members["ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk="]
+await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members["{conversationMember-id}"]
     .Request()
     .UpdateAsync(conversationMember);
 

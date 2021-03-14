@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5eea52d59b52032327cab608bdf068370a916bcd
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 4df75a49a7d07edce6fd3e2bb2e244b82e9f9646
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223431"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783883"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var scopedRoleMembership = new ScopedRoleMembership
     }
 };
 
-await graphClient.Directory.AdministrativeUnits["{id}"].ScopedRoleMembers
+await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].ScopedRoleMembers
     .Request()
     .AddAsync(scopedRoleMembership);
 
