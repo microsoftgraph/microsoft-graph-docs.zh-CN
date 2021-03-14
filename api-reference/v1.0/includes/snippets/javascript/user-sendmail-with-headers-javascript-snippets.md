@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 582cec5a8053b3fe046a0f0871a63cce59ef4ab4
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 6a9d980a2188a32013dac9fb4eac17fc49651cac
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48619023"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800747"
 ---
 ```javascript
 
@@ -17,32 +17,32 @@ const client = Client.init(options);
 
 const sendMail = {
   message: {
-    subject: "9/9/2018: concert",
+    subject: '9/9/2018: concert',
     body: {
-      contentType: "HTML",
-      content: "The group represents Nevada."
+      contentType: 'HTML',
+      content: 'The group represents Nevada.'
     },
     toRecipients: [
       {
         emailAddress: {
-          address: "AlexW@contoso.OnMicrosoft.com"
+          address: 'AlexW@contoso.OnMicrosoft.com'
         }
       }
     ],
-    internetMessageHeaders:[
+    internetMessageHeaders: [
       {
-        name:"x-custom-header-group-name",
-        value:"Nevada"
+        name: 'x-custom-header-group-name',
+        value: 'Nevada'
       },
       {
-        name:"x-custom-header-group-id",
-        value:"NV001"
+        name: 'x-custom-header-group-id',
+        value: 'NV001'
       }
     ]
   }
 };
 
-let res = await client.api('/me/sendMail')
+await client.api('/me/sendMail')
     .post(sendMail);
 
 ```

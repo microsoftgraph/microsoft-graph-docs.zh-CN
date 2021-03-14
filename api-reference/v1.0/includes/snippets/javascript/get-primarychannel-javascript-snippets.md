@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b4b411e54a425d1a1c0071b531ee79359a2a9fd7
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: e8bf9a5bfec849e4f8197133c513b2b0fce1cdf8
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863891"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779525"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/primaryChannel')
+let channel = await client.api('/teams/{id}/primaryChannel')
     .get();
 
 ```

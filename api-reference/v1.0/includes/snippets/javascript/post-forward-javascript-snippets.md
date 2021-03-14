@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: eeb8cd0e3a19e639811352a45f9b44e4a6b59bb9
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: bb9cb214bd23f791072ef1ad4639f5e95e49b5a3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48603961"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784345"
 ---
 ```javascript
 
@@ -16,18 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const forward = {
-  comment: "comment-value",
+  comment: 'comment-value',
   toRecipients: [
     {
       emailAddress: {
-        name: "name-value",
-        address: "address-value"
+        name: 'name-value',
+        address: 'address-value'
       }
     }
   ]
 };
 
-let res = await client.api('/groups/{id}/threads/{id}/posts/{id}/forward')
+await client.api('/groups/{id}/threads/{id}/posts/{id}/forward')
     .post(forward);
 
 ```

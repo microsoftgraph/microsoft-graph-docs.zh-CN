@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 531a47e9f0a9fee612cb931e328d55272a5ea301
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 406f8f25ea9a2ba850dc0c42569a6c47441fcce5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48907257"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788631"
 ---
 ```javascript
 
@@ -18,10 +18,10 @@ const client = Client.init(options);
 const meetingTimeSuggestionsResult = {
   attendees: [ 
     { 
-      type: "required",  
+      type: 'required',  
       emailAddress: { 
-        name: "Alex Wilbur",
-        address: "alexw@contoso.onmicrosoft.com" 
+        name: 'Alex Wilbur',
+        address: 'alexw@contoso.onmicrosoft.com' 
       } 
     }
   ],  
@@ -31,32 +31,32 @@ const meetingTimeSuggestionsResult = {
     locations: [ 
       { 
         resolveAvailability: false,
-        displayName: "Conf room Hood" 
+        displayName: 'Conf room Hood' 
       } 
     ] 
   },  
   timeConstraint: {
-    activityDomain:"work", 
+    activityDomain: 'work', 
     timeSlots: [ 
       { 
         start: { 
-          dateTime: "2019-04-16T09:00:00",  
-          timeZone: "Pacific Standard Time" 
+          dateTime: '2019-04-16T09:00:00',  
+          timeZone: 'Pacific Standard Time' 
         },  
         end: { 
-          dateTime: "2019-04-18T17:00:00",  
-          timeZone: "Pacific Standard Time" 
+          dateTime: '2019-04-18T17:00:00',  
+          timeZone: 'Pacific Standard Time' 
         } 
       } 
     ] 
   },  
-  isOrganizerOptional: "false",
-  meetingDuration: "PT1H",
-  returnSuggestionReasons: "true",
-  minimumAttendeePercentage: "100"
+  isOrganizerOptional: 'false',
+  meetingDuration: 'PT1H',
+  returnSuggestionReasons: 'true',
+  minimumAttendeePercentage: '100'
 };
 
-let res = await client.api('/me/findMeetingTimes')
+await client.api('/me/findMeetingTimes')
     .post(meetingTimeSuggestionsResult);
 
 ```

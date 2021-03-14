@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a9478571a989819c105c1f56e2259ae2554da7c5
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: bd93edbb73c447795097fd51a88992ec0a519ca1
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37041901"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796932"
 ---
 ```javascript
 
@@ -16,15 +16,15 @@ const options = {
 const client = Client.init(options);
 
 const convertIdResult = {
-  "inputIds" : [
-    "{rest-formatted-id-1}",
-    "{rest-formatted-id-2}"
+  inputIds: [
+    '{rest-formatted-id-1}',
+    '{rest-formatted-id-2}'
   ],
-  sourceIdType: "restId",
-  targetIdType: "restImmutableEntryId"
+  sourceIdType: 'restId',
+  targetIdType: 'restImmutableEntryId'
 };
 
-let res = await client.api('/me/translateExchangeIds')
+await client.api('/me/translateExchangeIds')
     .post(convertIdResult);
 
 ```

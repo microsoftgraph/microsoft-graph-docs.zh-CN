@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fb63360d8e861bd04b95e542367ce92001f7ee32
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 4a02ac3ce357f3e2fd18559c5b18ce2179018c0a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48616930"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50809282"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var workbookTable = new WorkbookTable
     Style = "style-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"]
     .Request()
     .UpdateAsync(workbookTable);
 

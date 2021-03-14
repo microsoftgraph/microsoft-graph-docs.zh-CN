@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f1bb84002b7367fa35d343e00d0c7dd57fc64185
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: f63e971847cd9a5f61980a0fb533a2e6f03dac55
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636868"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794723"
 ---
 ```javascript
 
@@ -17,12 +17,12 @@ const client = Client.init(options);
 
 const driveItem = {
   parentReference: {
-    id: "{new-parent-folder-id}"
+    id: '{new-parent-folder-id}'
   },
-  name: "new-item-name.txt"
+  name: 'new-item-name.txt'
 };
 
-let res = await client.api('/me/drive/items/{item-id}')
+await client.api('/me/drive/items/{item-id}')
     .update(driveItem);
 
 ```

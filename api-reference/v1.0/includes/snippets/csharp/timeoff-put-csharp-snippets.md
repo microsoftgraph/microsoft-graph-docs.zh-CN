@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e79afc336049b632fe8ef51ca9b0ad5b8a5c106c
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 1a217428b5ed4c21e246eea836df2189410cd401
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217973"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793042"
 ---
 ```csharp
 
@@ -30,7 +30,7 @@ var timeOff = new TimeOff
     }
 };
 
-await graphClient.Teams["{teamId}"].Schedule.TimesOff["{timeOffId}"]
+await graphClient.Teams["{team-id}"].Schedule.TimesOff["{timeOff-id}"]
     .Request()
     .Header("Prefer","return=representation")
     .PutAsync(timeOff);

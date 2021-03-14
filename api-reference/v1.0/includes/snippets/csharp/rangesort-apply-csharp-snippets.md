@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4c851437a8f108f56f5e587b93281094013e1b8d
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9fc2ddf4559c0309019cadaffab8c998cac9ff1c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402878"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785261"
 ---
 ```csharp
 
@@ -36,7 +36,7 @@ var orientation = "orientation-value";
 
 var method = "method-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
     .Range().Sort
     .Apply(matchCase,hasHeaders,orientation,method,fields)
     .Request()

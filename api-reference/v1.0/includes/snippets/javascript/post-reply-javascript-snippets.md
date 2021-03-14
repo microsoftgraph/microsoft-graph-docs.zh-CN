@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9035f29f5d56c7e4154802e39a58afa447bcfea7
-ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
+ms.openlocfilehash: 4de519839c8b488a4a6d41dedbf16826bd0d7683
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50072362"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783393"
 ---
 ```javascript
 
@@ -18,57 +18,57 @@ const client = Client.init(options);
 const reply = {
   post: {
     body: {
-      contentType: "",
-      content: "content-value"
+      contentType: '',
+      content: 'content-value'
     },
-    receivedDateTime: "datetime-value",
+    receivedDateTime: 'datetime-value',
     hasAttachments: true,
     from: {
       emailAddress: {
-        name: "name-value",
-        address: "address-value"
+        name: 'name-value',
+        address: 'address-value'
       }
     },
     sender: {
       emailAddress: {
-        name: "name-value",
-        address: "address-value"
+        name: 'name-value',
+        address: 'address-value'
       }
     },
-    conversationThreadId: "conversationThreadId-value",
+    conversationThreadId: 'conversationThreadId-value',
     newParticipants: [
       {
         emailAddress: {
-          name: "name-value",
-          address: "address-value"
+          name: 'name-value',
+          address: 'address-value'
         }
       }
     ],
-    conversationId: "conversationId-value",
-    createdDateTime: "datetime-value",
-    lastModifiedDateTime: "datetime-value",
-    changeKey: "changeKey-value",
+    conversationId: 'conversationId-value',
+    createdDateTime: 'datetime-value',
+    lastModifiedDateTime: 'datetime-value',
+    changeKey: 'changeKey-value',
     categories: [
-      "categories-value"
+      'categories-value'
     ],
-    id: "id-value",
+    id: 'id-value',
     inReplyTo: {
     },
     attachments: [
       {
-        @odata.type: "#microsoft.graph.fileAttachment",
-        lastModifiedDateTime: "datetime-value",
-        name: "name-value",
-        contentType: "contentType-value",
+        '@odata.type': '#microsoft.graph.fileAttachment',
+        lastModifiedDateTime: 'datetime-value',
+        name: 'name-value',
+        contentType: 'contentType-value',
         size: 99,
         isInline: true,
-        id: "id-value"
+        id: 'id-value'
       }
     ]
   }
 };
 
-let res = await client.api('/groups/{id}/threads/{id}/posts/{id}/reply')
+await client.api('/groups/{id}/threads/{id}/posts/{id}/reply')
     .post(reply);
 
 ```

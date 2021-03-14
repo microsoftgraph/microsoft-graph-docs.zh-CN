@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 988f23fdbf5df753773d021bad7b9af5e5a12c9f
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: b2131cda902ded9046e9bd614d9816d4c355b199
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48621303"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803624"
 ---
 ```javascript
 
@@ -17,30 +17,30 @@ const client = Client.init(options);
 
 const sendMail = {
   message: {
-    subject: "Meet for lunch?",
+    subject: 'Meet for lunch?',
     body: {
-      contentType: "Text",
-      content: "The new cafeteria is open."
+      contentType: 'Text',
+      content: 'The new cafeteria is open.'
     },
     toRecipients: [
       {
         emailAddress: {
-          address: "fannyd@contoso.onmicrosoft.com"
+          address: 'fannyd@contoso.onmicrosoft.com'
         }
       }
     ],
     ccRecipients: [
       {
         emailAddress: {
-          address: "danas@contoso.onmicrosoft.com"
+          address: 'danas@contoso.onmicrosoft.com'
         }
       }
     ]
   },
-  saveToSentItems: "false"
+  saveToSentItems: 'false'
 };
 
-let res = await client.api('/me/sendMail')
+await client.api('/me/sendMail')
     .post(sendMail);
 
 ```

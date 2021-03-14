@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 627dd12386547d937517e6ddc7ff8a8fe37afb21
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 0dc33799b0cace1cef0fcb9459b4be81bae483fe
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41497688"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794160"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const workbookCommentReply = {
-  content: "This is my reply to the comment.",
-  contentType: "plain"
+  content: 'This is my reply to the comment.',
+  contentType: 'plain'
 };
 
-let res = await client.api('/drive/items/{id}/workbook/comments/{id}/replies')
+await client.api('/drive/items/{id}/workbook/comments/{id}/replies')
     .post(workbookCommentReply);
 
 ```
