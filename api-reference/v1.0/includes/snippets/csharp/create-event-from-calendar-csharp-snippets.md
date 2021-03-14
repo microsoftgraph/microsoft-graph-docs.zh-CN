@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b55d032d0cd99a0de37f6fda09a00ecaa3c07731
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 04a13b302a4520254c5cc5e60aa3fe2c7d6f5002
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48230707"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783255"
 ---
 ```csharp
 
@@ -48,7 +48,7 @@ var @event = new Event
     TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
 };
 
-await graphClient.Me.Calendars["AAMkAGViNDU7zAAAAAGtlAAA="].Events
+await graphClient.Me.Calendars["{calendar-id}"].Events
     .Request()
     .AddAsync(@event);
 

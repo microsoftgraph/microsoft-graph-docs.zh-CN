@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1cf84e91157063bbf1a86f766692e779a2599b98
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: f34ed2f24804f525e3d19cda274325b09160ad17
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636817"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800022"
 ---
 ```javascript
 
@@ -16,13 +16,13 @@ const options = {
 const client = Client.init(options);
 
 const messageRule = {
-    displayName: "Important from partner",
+    displayName: 'Important from partner',
     actions: {
-        markImportance: "high"
+        markImportance: 'high'
      }
 };
 
-let res = await client.api('/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=')
+await client.api('/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=')
     .update(messageRule);
 
 ```

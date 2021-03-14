@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: df3548a2fcc33a8b5d1d0d43e8a3f13f5b9635ce
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2991d69b40ba5cc881511c4bae02e1147b0a490e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865870"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50780243"
 ---
 ```javascript
 
@@ -16,16 +16,16 @@ const options = {
 const client = Client.init(options);
 
 const call = {
-  @odata.type: "#microsoft.graph.call",
-  callbackUri: "https://bot.contoso.com/callback",
+  '@odata.type': '#microsoft.graph.call',
+  callbackUri: 'https://bot.contoso.com/callback',
   source: {
-    @odata.type: "#microsoft.graph.participantInfo",
+    '@odata.type': '#microsoft.graph.participantInfo',
     identity: {
-      @odata.type: "#microsoft.graph.identitySet",
+      '@odata.type': '#microsoft.graph.identitySet',
       application: {
-        @odata.type: "#microsoft.graph.identity",
-        displayName: "Calling Bot",
-        id: "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+        '@odata.type': '#microsoft.graph.identity',
+        displayName: 'Calling Bot',
+        id: '2891555a-92ff-42e6-80fa-6e1300c6b5c6'
       }
     },
     region: null,
@@ -33,27 +33,27 @@ const call = {
   },
   targets: [
     {
-      @odata.type: "#microsoft.graph.invitationParticipantInfo",
+      '@odata.type': '#microsoft.graph.invitationParticipantInfo',
       identity: {
-        @odata.type: "#microsoft.graph.identitySet",
+        '@odata.type': '#microsoft.graph.identitySet',
         user: {
-          @odata.type: "#microsoft.graph.identity",
-          displayName: "John",
-          id: "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+          '@odata.type': '#microsoft.graph.identity',
+          displayName: 'John',
+          id: '112f7296-5fa4-42ca-bae8-6a692b15d4b8'
         }
       }
     }
   ],
   requestedModalities: [
-    "audio"
+    'audio'
   ],
  mediaConfig: {
-    @odata.type: "#microsoft.graph.appHostedMediaConfig",
-    blob: "<Media Session Configuration>"
+    '@odata.type': '#microsoft.graph.appHostedMediaConfig',
+    blob: '<Media Session Configuration>'
   }
 };
 
-let res = await client.api('/communications/calls')
+await client.api('/communications/calls')
     .post(call);
 
 ```
