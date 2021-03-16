@@ -35,7 +35,7 @@ ms.locfileid: "50761630"
 GET /contacts/{id}/directReports
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
