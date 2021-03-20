@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a32eef6b106c2607aa2267fb3de6f55d78c947bb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b3cd4e4aa59f9b8d33d4551811ab9f006ccb685
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955656"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951437"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
 
@@ -65,26 +65,26 @@ GET /education/schools
 
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_schools_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/schools
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

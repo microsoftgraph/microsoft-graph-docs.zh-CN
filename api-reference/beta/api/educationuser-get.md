@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 52293a20af20f39cf327af421a7f6db51202f2a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ad690ccb21d49196ee52cf69f9832d87b7a6a7c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955299"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951148"
 ---
 # <a name="get-educationuser"></a>获取 educationUser
 
@@ -25,7 +25,7 @@ ms.locfileid: "48955299"
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 > [!NOTE]
-> 如果使用委派的令牌，则成员只能查看有关其自己的帐户的信息。 在这种情况下，使用 `beta/education/me/users` 资源。
+> 如果使用委派令牌，成员只能看到有关其自己的帐户的信息。 在这种情况下，使用 `beta/education/me/users` 资源。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
@@ -34,7 +34,7 @@ ms.locfileid: "48955299"
 | 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 > [!IMPORTANT]
-> 使用委派权限作用域时，Graph 将仅返回一组有限的属性：、、、、、、、、、、 `id` `primaryRole` `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` 。 如果您的应用程序需要其他属性，则必须使用应用程序权限范围。
+> 使用委派权限范围时，Graph 将仅返回一组有限的属性 `id` `primaryRole` `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` ：、。 如果应用程序需要其他属性，则必须使用应用程序权限范围。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -73,7 +73,7 @@ GET /education/users/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationuser"
+  "name": "get_educationuser_2"
 }-->
 
 ```msgraph-interactive
@@ -81,22 +81,22 @@ GET https://graph.microsoft.com/beta/education/users/13012
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-2-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-2-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-2-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

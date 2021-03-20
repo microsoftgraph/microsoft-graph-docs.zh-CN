@@ -1,16 +1,16 @@
 ---
 title: 获取用户
-description: 检索与此 **educationUser** 对应的简单目录 **user** 。
+description: 检索与此 **educationUser** 对应的简单目录 **user**。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 848f7b2521a93f1fe735d9f5a42f6e7004f27e60
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b0a932d0e90e4ccacacbebba249a2bc6990dc89b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955273"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951204"
 ---
 # <a name="get-user"></a>获取用户
 
@@ -18,10 +18,10 @@ ms.locfileid: "48955273"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与此 **educationUser** 对应的简单目录 **user** 。
+检索与此 **educationUser** 对应的简单目录 **user**。
 
 > [!NOTE]
-> 如果使用委派的令牌，则成员只能查看有关其自己的帐户的信息。 在这种情况下，使用 `beta/education/me/users` 资源。
+> 如果使用委派令牌，成员只能看到有关其自己的帐户的信息。 在这种情况下，使用 `beta/education/me/users` 资源。
 
 ## <a name="permissions"></a>权限
 
@@ -66,7 +66,7 @@ GET /education/users/{id}/user
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationuser"
+  "name": "get_educationuser_1"
 }-->
 
 ```msgraph-interactive
@@ -74,22 +74,22 @@ GET https://graph.microsoft.com/beta/education/me/user
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-1-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-1-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-1-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

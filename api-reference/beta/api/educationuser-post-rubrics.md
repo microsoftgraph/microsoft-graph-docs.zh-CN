@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 60c9f0338cd79db41221efd379227dbbb2055bd5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0ce2f6bc0c284ac14ac4494cfbc506986a4e7cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955161"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951050"
 ---
 # <a name="create-educationrubric"></a>创建 educationRubric
 
@@ -26,7 +26,7 @@ ms.locfileid: "48955161"
 
 | 权限类型                        | 权限（从最低特权到最高特权）             |
 | :------------------------------------- | :------------------------------------------------------ |
-| 委派（工作或学校帐户）     | EduAssignments、ReadWriteBasic、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                          |
 | 应用程序                            | 不支持。                                          |
 
@@ -50,20 +50,20 @@ POST /education/me/rubrics
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [educationRubric](../resources/educationrubric.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和新 [educationRubric](../resources/educationrubric.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-posting-a-credit-rubric"></a>示例1：过帐信用卡 Rubric
+### <a name="example-1-posting-a-credit-rubric"></a>示例 1：发布信用额度
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何将信用卡 rubric 发布 (不带任何点) 的 rubric。
+下面是一个请求发布信用额度， (一个没有分数的) 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_1"
 }-->
 
 ```http
@@ -137,19 +137,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -160,7 +160,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -244,12 +244,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-posting-a-points-rubric"></a>示例2：发布点 Rubric
+### <a name="example-2-posting-a-points-rubric"></a>示例 2：发布点数
 
-下面的示例演示了使用点发布 rubric 的请求。
+下面是一个请求发布带分数的分数的分数的示例。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_2"
 }-->
 
 ```http
@@ -335,13 +337,31 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

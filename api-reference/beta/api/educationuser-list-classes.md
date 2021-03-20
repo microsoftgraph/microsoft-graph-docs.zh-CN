@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 068a06c9f1e778f21138bdcb139b24cc3441ebdc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b544ecfef25b38e1e808c333de49532d20525f58
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955223"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951140"
 ---
 # <a name="list-classes"></a>列出课程
 
@@ -31,7 +31,7 @@ ms.locfileid: "48955223"
 | 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 > [!NOTE]
-> 使用委派权限时，将仅返回身份验证用户为其成员的 educationClass 资源。
+> 使用委派权限时，仅返回身份验证用户是会员的 educationClass 资源。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -70,7 +70,7 @@ GET /education/users/{id}/classes
 
 <!-- {
   "blockType": "request",
-  "name": "get_classes"
+  "name": "get_classes_3"
 }-->
 
 ```msgraph-interactive
@@ -78,22 +78,22 @@ GET https://graph.microsoft.com/beta/education/me/classes
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-3-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-3-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-classes-3-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-classes-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-classes-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

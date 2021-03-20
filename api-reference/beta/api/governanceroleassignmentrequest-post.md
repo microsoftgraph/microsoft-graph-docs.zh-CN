@@ -1,16 +1,16 @@
 ---
 title: 创建 governanceRoleAssignmentRequest
-description: 创建角色分配请求，以表示要执行的操作角色分配。 下表列出了操作。
+description: 创建角色分配一个请求，以表示要处理角色分配。 下表列出了操作。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 2cb6ee71c888e90ee082c1f70ecced2c21199939
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4883fedc71cfdcc6c50ab87b46299fdb173552a5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435859"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950775"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "50435859"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建角色分配请求，以表示要执行的操作角色分配。 下表列出了操作。
+创建角色分配一个请求，以表示要处理角色分配。 下表列出了操作。
 
 | Operation                                   | 类型        |
 |:--------------------------------------------|:------------|
@@ -30,9 +30,9 @@ ms.locfileid: "50435859"
 | 请求扩展我的角色分配        | UserExtend  |
 | 扩展角色分配                    | AdminExtend |
 | 请求续订已过期角色分配 | UserRenew   |
-| 续订已过期角色分配            | AdminRenew  |
+| 续订过期角色分配            | AdminRenew  |
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "50435859"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -50,7 +50,7 @@ ms.locfileid: "50435859"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ### <a name="groups"></a>组
 
@@ -58,7 +58,7 @@ ms.locfileid: "50435859"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -81,17 +81,17 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 属性         | 类型                                                     | 说明 |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | 资源的 ID。 必需。 |
-| roleDefinitionId | String                                                   | 角色定义的 ID。 必需。 |
-| subjectId        | String                                                   | 主题的 ID。 必需。 |
-| assignmentState  | String                                                   | 工作分配的状态。 值可以是 `Eligible` 和 `Active` 。 此为必需属性。 |
-| type             | String                                                   | 请求类型。 值可以是 `AdminAdd` ， `UserAdd` ， ， ， ， `AdminUpdate` 和 `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` 。 必需。 |
-| reason           | String                                                   | 需要为审核和审核角色分配请求提供原因。 |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 请求角色分配计划。 对于 、 `UserAdd` `AdminAdd` 和 的请求类型 `AdminUpdate` `AdminExtend` ，是必需的。 |
+| resourceId       | String                                                   | 资源的 ID。 必填。 |
+| roleDefinitionId | String                                                   | 角色定义的 ID。 必填。 |
+| subjectId        | String                                                   | 主题的 ID。 必填。 |
+| assignmentState  | String                                                   | 工作分配的状态。 值可以是 和 `Eligible` `Active` 。 此为必需属性。 |
+| type             | String                                                   | 请求类型。 值可以是 `AdminAdd` `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` 、、、、、 `UserExtend` `UserRenew` 和 `AdminRenew` `AdminExtend` 。 必填。 |
+| reason           | String                                                   | 需要为请求审核和审核角色分配提供原因。 |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 请求角色分配计划。 对于 、 `UserAdd` `AdminAdd` 、 `AdminUpdate` 和 `AdminExtend` 的请求类型，是必需的。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象。
 
 ### <a name="error-codes"></a>错误代码
 
@@ -99,11 +99,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 错误代码     | 错误消息                               | 详细信息       |
 |:---------------|:--------------------------------------------|:--------------|
-| 400 BadRequest | RoleNotFound                                | 找不到 `roleDefinitionId` 请求正文中提供的信息。 |
-| 400 BadRequest | ResourceIsLocked                            | 请求正文中提供的资源的状态为， `Locked` 无法创建角色分配请求。 |
-| 400 BadRequest | SubjectNotFound                             | 找不到 `subjectId` 请求正文中提供的信息。 |
-| 400 BadRequest | PendingRoleAssignmentRequest                | 系统中已存在挂起的[governanceRoleAssignmentRequest。](../resources/governanceroleassignmentrequest.md) |
-| 400 BadRequest | RoleAssignmentExists                        | [系统中已存在请求创建的 governanceRoleAssignment。](../resources/governanceroleassignment.md) |
+| 400 BadRequest | RoleNotFound                                | `roleDefinitionId`找不到请求正文中提供的 。 |
+| 400 BadRequest | ResourceIsLocked                            | 请求正文中提供的资源的状态为 ， `Locked` 无法创建角色分配请求。 |
+| 400 BadRequest | SubjectNotFound                             | `subjectId`找不到请求正文中提供的 。 |
+| 400 BadRequest | PendingRoleAssignmentRequest                | 系统中已存在待定[governanceRoleAssignmentRequest。](../resources/governanceroleassignmentrequest.md) |
+| 400 BadRequest | RoleAssignmentExists                        | 系统中已存在请求创建的[governanceRoleAssignment。](../resources/governanceroleassignment.md) |
 | 400 BadRequest | RoleAssignmentDoesNotExist                  | 系统中不存在请求更新/扩展的[governanceRoleAssignment。](../resources/governanceroleassignment.md) |
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)不符合内部策略，无法创建。 |
 
@@ -113,9 +113,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 ### <a name="example-1-administrator-assigns-user-to-a-role"></a>示例 1：管理员将用户分配给角色
 
-本示例中，管理员将用户nawu@contoso.com分配给"计费读者"角色。
+本示例中，管理员将 nawu@contoso.com 分配给"计费读取者"角色。
 
- >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源的权限。
+ >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
 
 | 属性         | 类型                                                     | 必需                 | 值 |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
@@ -125,7 +125,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | assignmentState  | 字符串                                                   | 是                      | 符合条件的/活动的 |
 | type             | 字符串                                                   | 是                      | AdminAdd |
 | reason           | String                                                   | 取决于角色设置 |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是的。                      |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                      |   |
 
 #### <a name="request"></a>请求
 
@@ -133,7 +133,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_1"
 }-->
 
 ```http
@@ -155,19 +155,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -227,7 +227,7 @@ Content-type: application/json
 
 ### <a name="example-2-user-activates-eligible-role"></a>示例 2：用户激活符合条件的角色
 
-此示例中，用户nawu@contoso.com激活符合条件的计费阅读器角色。
+本示例中，用户 nawu@contoso.com 激活符合条件的计费读取者角色。
 
 | 属性         | 类型                                                     | 必需                 | 值 |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
@@ -237,13 +237,15 @@ Content-type: application/json
 | assignmentState  | 字符串                                                   | 是                      | 活动 |
 | type             | 字符串                                                   | 是                      | UserAdd |
 | reason           | String                                                   | 取决于角色设置 |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是的。                      |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                      |   |
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_2"
 }-->
 
 ```http
@@ -265,6 +267,24 @@ Content-type: application/json
   "linkedEligibleRoleAssignmentId": "e327f4be-42a0-47a2-8579-0a39b025b394"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -330,7 +350,7 @@ Content-type: application/json
 
 ### <a name="example-3-user-deactivates-an-assigned-role"></a>示例 3：用户停用分配的角色
 
-本示例中，用户nawu@contoso.com停用活动的计费阅读器角色。
+本示例中，用户 nawu@contoso.com 活动"计费读取者"角色。
 
 | 属性         | 类型                                                     | 必需 | 值 |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
@@ -344,9 +364,11 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_3"
 }-->
 
 ```http
@@ -363,6 +385,24 @@ Content-type: application/json
   "linkedEligibleRoleAssignmentId": "cb8a533e-02d5-42ad-8499-916b1e4822ec"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -398,9 +438,9 @@ Content-type: application/json
 
 ### <a name="example-4-administrator-removes-user-from-a-role"></a>示例 4：管理员从角色中删除用户
 
-此示例中，管理员从"nawu@contoso.com读取者"角色中删除用户权限。
+本示例中，管理员从计费读取 nawu@contoso.com 中删除用户角色。
 
- >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源的权限。
+ >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
 
 | 属性         | 类型                                                     | 必需 | 值 |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
@@ -414,9 +454,11 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_4"
 }-->
 
 ```http
@@ -431,6 +473,24 @@ Content-type: application/json
   "type": "AdminRemove"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -466,9 +526,9 @@ Content-type: application/json
 
 ### <a name="example-5-administrator-updates-role-assignment"></a>示例 5：管理员更新角色分配
 
-此示例中，管理员将角色分配所有者nawu@contoso.com更新。
+本示例中，管理员更新角色分配所有者 nawu@contoso.com 权限。
 
- >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源的权限。
+ >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
 
 | 属性         | 类型                                                     | 必需                | 值 |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
@@ -478,13 +538,15 @@ Content-type: application/json
 | assignmentState  | 字符串                                                   | 是                     | 符合条件的/活动的 |
 | type             | 字符串                                                   | 是                     | AdminUpdate |
 | reason           | String                                                   | 取决于 roleSettings |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是的。                     |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                     |   |
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_5"
 }-->
 
 ```http
@@ -504,6 +566,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -557,9 +637,9 @@ Content-type: application/json
 
 ### <a name="example-6-administrator-extends-expiring-role-assignment"></a>示例 6：管理员扩展过期角色分配
 
-此示例将用户 ANUJCUSER 角色分配 API 管理服务参与者的到期期限。
+此示例将用户 ANUJCUSER 角色分配 API 管理服务参与者的到期日期。
 
- >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源的权限。
+ >**注意：** 除了权限之外，此示例还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
 
 | 属性         | 类型                                                     | 必需                | 值 |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
@@ -569,13 +649,15 @@ Content-type: application/json
 | assignmentState  | 字符串                                                   | 是                     | 符合条件的/活动的 |
 | type             | 字符串                                                   | 是                     | AdminExtend |
 | reason           | String                                                   | 取决于 roleSettings |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是的。                     |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                     |   |
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_6"
 }-->
 
 ```http
@@ -596,6 +678,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-6-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

@@ -1,16 +1,16 @@
 ---
 title: 列出资源
-description: 列出与此提交关联的资源。 **submissionResource** 对象是围绕学生正在处理的实际资源对象的包装。 如果在分配过程中从分配中复制了该资源，包装器还包括指向工作分配上的资源的指针。 这些资源是工作分配的工作副本。 **submittedResources** 是已正式提交以评分的资源。
+description: 列出与此提交关联的资源。 **submissionResource** 对象是学生正在处理的实际资源对象的包装。 如果资源是在分配过程中从分配复制的，包装器还包括指向分配上的资源的指针。 这些资源是工作分配的工作副本。 **submittedResources** 是已正式提交进行评分的资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9f22b67c47afdb96764b2fadb0b1ea1af2344ed0
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 935dc844700843bae16cd2da76a09e76f7e81380
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574291"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951259"
 ---
 # <a name="list-resources"></a>列出资源
 
@@ -18,7 +18,7 @@ ms.locfileid: "50574291"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出与此提交关联的资源。 **submissionResource** 对象是围绕学生正在处理的实际资源对象的包装。 如果在分配过程中从分配中复制了该资源，包装器还包括指向工作分配上的资源的指针。 这些资源是工作分配的工作副本。 **submittedResources** 是已正式提交以评分的资源。
+列出与此提交关联的资源。 **submissionResource** 对象是学生正在处理的实际资源对象的包装。 如果资源是在分配过程中从分配复制的，包装器还包括指向分配上的资源的指针。 这些资源是工作分配的工作副本。 **submittedResources** 是已正式提交进行评分的资源。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,26 +65,26 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_resources"
+  "name": "get_resources_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/resources
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-resources-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-resources-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-resources-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-resources-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-resources-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-resources-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

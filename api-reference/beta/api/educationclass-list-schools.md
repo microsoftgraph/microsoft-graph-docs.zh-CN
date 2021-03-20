@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d46b01619272b390346da8fd4afc5171669e1cca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: db96137a067389ca9042cda971bf7ddf41f30e22
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966255"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951595"
 ---
 # <a name="list-schools"></a>列出学校
 
@@ -65,26 +65,26 @@ GET /education/classes/{id}/schools
 
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_schools_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11014/schools
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
