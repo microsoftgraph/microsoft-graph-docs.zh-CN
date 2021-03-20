@@ -5,32 +5,32 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 60c9f0338cd79db41221efd379227dbbb2055bd5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0ce2f6bc0c284ac14ac4494cfbc506986a4e7cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955161"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951050"
 ---
-# <a name="create-educationrubric"></a><span data-ttu-id="bd379-103">创建 educationRubric</span><span class="sxs-lookup"><span data-stu-id="bd379-103">Create educationRubric</span></span>
+# <a name="create-educationrubric"></a><span data-ttu-id="4a67f-103">创建 educationRubric</span><span class="sxs-lookup"><span data-stu-id="4a67f-103">Create educationRubric</span></span>
 
-<span data-ttu-id="bd379-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bd379-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4a67f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4a67f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bd379-105">创建新的 [educationRubric](../resources/educationrubric.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bd379-105">Create a new [educationRubric](../resources/educationrubric.md) object.</span></span>
+<span data-ttu-id="4a67f-105">创建新的 [educationRubric](../resources/educationrubric.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4a67f-105">Create a new [educationRubric](../resources/educationrubric.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bd379-106">权限</span><span class="sxs-lookup"><span data-stu-id="bd379-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4a67f-106">权限</span><span class="sxs-lookup"><span data-stu-id="4a67f-106">Permissions</span></span>
 
-<span data-ttu-id="bd379-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bd379-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4a67f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4a67f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="bd379-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="bd379-109">Permission type</span></span>                        | <span data-ttu-id="bd379-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bd379-110">Permissions (from least to most privileged)</span></span>             |
+| <span data-ttu-id="4a67f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4a67f-109">Permission type</span></span>                        | <span data-ttu-id="4a67f-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4a67f-110">Permissions (from least to most privileged)</span></span>             |
 | :------------------------------------- | :------------------------------------------------------ |
-| <span data-ttu-id="bd379-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bd379-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="bd379-112">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="bd379-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="bd379-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bd379-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bd379-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="bd379-114">Not supported.</span></span>                                          |
-| <span data-ttu-id="bd379-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="bd379-115">Application</span></span>                            | <span data-ttu-id="bd379-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="bd379-116">Not supported.</span></span>                                          |
+| <span data-ttu-id="4a67f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4a67f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4a67f-112">EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a67f-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="4a67f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4a67f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a67f-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4a67f-114">Not supported.</span></span>                                          |
+| <span data-ttu-id="4a67f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4a67f-115">Application</span></span>                            | <span data-ttu-id="4a67f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4a67f-116">Not supported.</span></span>                                          |
 
-## <a name="http-request"></a><span data-ttu-id="bd379-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bd379-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4a67f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4a67f-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,32 +38,32 @@ ms.locfileid: "48955161"
 POST /education/me/rubrics
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bd379-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="bd379-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4a67f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4a67f-118">Request headers</span></span>
 
-| <span data-ttu-id="bd379-119">名称</span><span class="sxs-lookup"><span data-stu-id="bd379-119">Name</span></span>          | <span data-ttu-id="bd379-120">说明</span><span class="sxs-lookup"><span data-stu-id="bd379-120">Description</span></span>    |
+| <span data-ttu-id="4a67f-119">名称</span><span class="sxs-lookup"><span data-stu-id="4a67f-119">Name</span></span>          | <span data-ttu-id="4a67f-120">说明</span><span class="sxs-lookup"><span data-stu-id="4a67f-120">Description</span></span>    |
 | :------------ | :------------- |
-| <span data-ttu-id="bd379-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="bd379-121">Authorization</span></span> | <span data-ttu-id="bd379-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="bd379-122">Bearer {token}</span></span> |
+| <span data-ttu-id="4a67f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4a67f-121">Authorization</span></span> | <span data-ttu-id="4a67f-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="4a67f-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bd379-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="bd379-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4a67f-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="4a67f-123">Request body</span></span>
 
-<span data-ttu-id="bd379-124">在请求正文中，提供 [educationRubric](../resources/educationrubric.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bd379-124">In the request body, supply a JSON representation of an [educationRubric](../resources/educationrubric.md) object.</span></span>
+<span data-ttu-id="4a67f-124">在请求正文中，提供 [educationRubric](../resources/educationrubric.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4a67f-124">In the request body, supply a JSON representation of an [educationRubric](../resources/educationrubric.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bd379-125">响应</span><span class="sxs-lookup"><span data-stu-id="bd379-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4a67f-125">响应</span><span class="sxs-lookup"><span data-stu-id="4a67f-125">Response</span></span>
 
-<span data-ttu-id="bd379-126">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [educationRubric](../resources/educationrubric.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bd379-126">If successful, this method returns `201 Created` response code and a new [educationRubric](../resources/educationrubric.md) object in the response body.</span></span>
+<span data-ttu-id="4a67f-126">如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和新 [educationRubric](../resources/educationrubric.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4a67f-126">If successful, this method returns `201 Created` response code and a new [educationRubric](../resources/educationrubric.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bd379-127">示例</span><span class="sxs-lookup"><span data-stu-id="bd379-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4a67f-127">示例</span><span class="sxs-lookup"><span data-stu-id="4a67f-127">Examples</span></span>
 
-### <a name="example-1-posting-a-credit-rubric"></a><span data-ttu-id="bd379-128">示例1：过帐信用卡 Rubric</span><span class="sxs-lookup"><span data-stu-id="bd379-128">Example 1: Posting a Credit Rubric</span></span>
+### <a name="example-1-posting-a-credit-rubric"></a><span data-ttu-id="4a67f-128">示例 1：发布信用额度</span><span class="sxs-lookup"><span data-stu-id="4a67f-128">Example 1: Posting a Credit Rubric</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bd379-129">请求</span><span class="sxs-lookup"><span data-stu-id="bd379-129">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4a67f-129">请求</span><span class="sxs-lookup"><span data-stu-id="4a67f-129">Request</span></span>
 
-<span data-ttu-id="bd379-130">下面的示例演示如何将信用卡 rubric 发布 (不带任何点) 的 rubric。</span><span class="sxs-lookup"><span data-stu-id="bd379-130">The following is an example of the request to post a credit rubric (a rubric with no points).</span></span>
+<span data-ttu-id="4a67f-130">下面是一个请求发布信用额度， (一个没有分数的) 。</span><span class="sxs-lookup"><span data-stu-id="4a67f-130">The following is an example of the request to post a credit rubric (a rubric with no points).</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bd379-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="bd379-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4a67f-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="4a67f-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_1"
 }-->
 
 ```http
@@ -136,31 +136,31 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bd379-132">C#</span><span class="sxs-lookup"><span data-stu-id="bd379-132">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="4a67f-132">C#</span><span class="sxs-lookup"><span data-stu-id="4a67f-132">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bd379-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bd379-133">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="4a67f-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4a67f-133">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bd379-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bd379-134">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="4a67f-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4a67f-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="bd379-135">Java</span><span class="sxs-lookup"><span data-stu-id="bd379-135">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="4a67f-135">Java</span><span class="sxs-lookup"><span data-stu-id="4a67f-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bd379-136">响应</span><span class="sxs-lookup"><span data-stu-id="bd379-136">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4a67f-136">响应</span><span class="sxs-lookup"><span data-stu-id="4a67f-136">Response</span></span>
 
-<span data-ttu-id="bd379-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bd379-137">The following is an example of the response.</span></span>
+<span data-ttu-id="4a67f-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4a67f-137">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bd379-138">为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="bd379-138">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="bd379-139">所有属性都是从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="bd379-139">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="4a67f-138">为了可读性，可能会缩短此处所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4a67f-138">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="4a67f-139">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4a67f-139">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -244,12 +244,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-posting-a-points-rubric"></a><span data-ttu-id="bd379-140">示例2：发布点 Rubric</span><span class="sxs-lookup"><span data-stu-id="bd379-140">Example 2: Posting a Points Rubric</span></span>
+### <a name="example-2-posting-a-points-rubric"></a><span data-ttu-id="4a67f-140">示例 2：发布点数</span><span class="sxs-lookup"><span data-stu-id="4a67f-140">Example 2: Posting a Points Rubric</span></span>
 
-<span data-ttu-id="bd379-141">下面的示例演示了使用点发布 rubric 的请求。</span><span class="sxs-lookup"><span data-stu-id="bd379-141">The following is an example of the request to post a rubric with points.</span></span>
+<span data-ttu-id="4a67f-141">下面是一个请求发布带分数的分数的分数的示例。</span><span class="sxs-lookup"><span data-stu-id="4a67f-141">The following is an example of the request to post a rubric with points.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="4a67f-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="4a67f-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_2"
 }-->
 
 ```http
@@ -335,13 +337,31 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="4a67f-143">C#</span><span class="sxs-lookup"><span data-stu-id="4a67f-143">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="bd379-142">响应</span><span class="sxs-lookup"><span data-stu-id="bd379-142">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="4a67f-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4a67f-144">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="bd379-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bd379-143">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="4a67f-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4a67f-145">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="4a67f-146">Java</span><span class="sxs-lookup"><span data-stu-id="4a67f-146">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="4a67f-147">响应</span><span class="sxs-lookup"><span data-stu-id="4a67f-147">Response</span></span>
+
+<span data-ttu-id="4a67f-148">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4a67f-148">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bd379-144">为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="bd379-144">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="bd379-145">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="bd379-145">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="4a67f-149">为了可读性，可能会缩短此处所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4a67f-149">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="4a67f-150">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4a67f-150">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

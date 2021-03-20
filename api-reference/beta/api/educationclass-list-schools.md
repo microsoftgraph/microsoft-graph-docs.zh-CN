@@ -5,95 +5,95 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d46b01619272b390346da8fd4afc5171669e1cca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: db96137a067389ca9042cda971bf7ddf41f30e22
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966255"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951595"
 ---
-# <a name="list-schools"></a><span data-ttu-id="a6724-103">列出学校</span><span class="sxs-lookup"><span data-stu-id="a6724-103">List schools</span></span>
+# <a name="list-schools"></a><span data-ttu-id="61477-103">列出学校</span><span class="sxs-lookup"><span data-stu-id="61477-103">List schools</span></span>
 
-<span data-ttu-id="a6724-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a6724-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="61477-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="61477-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a6724-105">检索教授该课程的学校列表。</span><span class="sxs-lookup"><span data-stu-id="a6724-105">Retrieve a list of schools in which the class is taught.</span></span>
+<span data-ttu-id="61477-105">检索教授该课程的学校列表。</span><span class="sxs-lookup"><span data-stu-id="61477-105">Retrieve a list of schools in which the class is taught.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a6724-106">权限</span><span class="sxs-lookup"><span data-stu-id="a6724-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="61477-106">权限</span><span class="sxs-lookup"><span data-stu-id="61477-106">Permissions</span></span>
 
-<span data-ttu-id="a6724-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a6724-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="61477-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="61477-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a6724-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a6724-109">Permission type</span></span>                        | <span data-ttu-id="a6724-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a6724-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="61477-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="61477-109">Permission type</span></span>                        | <span data-ttu-id="61477-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="61477-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="a6724-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a6724-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a6724-112">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="a6724-112">EduRoster.ReadBasic</span></span>                         |
-| <span data-ttu-id="a6724-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a6724-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a6724-114">不支持</span><span class="sxs-lookup"><span data-stu-id="a6724-114">Not supported</span></span>                               |
-| <span data-ttu-id="a6724-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a6724-115">Application</span></span>                            | <span data-ttu-id="a6724-116">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a6724-116">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> |
+| <span data-ttu-id="61477-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="61477-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="61477-112">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="61477-112">EduRoster.ReadBasic</span></span>                         |
+| <span data-ttu-id="61477-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="61477-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="61477-114">不支持</span><span class="sxs-lookup"><span data-stu-id="61477-114">Not supported</span></span>                               |
+| <span data-ttu-id="61477-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="61477-115">Application</span></span>                            | <span data-ttu-id="61477-116">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61477-116">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a6724-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a6724-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="61477-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="61477-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/schools
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a6724-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a6724-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="61477-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="61477-118">Optional query parameters</span></span>
 
-<span data-ttu-id="a6724-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a6724-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="61477-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="61477-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a6724-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="a6724-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="61477-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="61477-120">Request headers</span></span>
 
-| <span data-ttu-id="a6724-121">标头</span><span class="sxs-lookup"><span data-stu-id="a6724-121">Header</span></span>        | <span data-ttu-id="a6724-122">值</span><span class="sxs-lookup"><span data-stu-id="a6724-122">Value</span></span>                     |
+| <span data-ttu-id="61477-121">标头</span><span class="sxs-lookup"><span data-stu-id="61477-121">Header</span></span>        | <span data-ttu-id="61477-122">值</span><span class="sxs-lookup"><span data-stu-id="61477-122">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="a6724-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a6724-123">Authorization</span></span> | <span data-ttu-id="a6724-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a6724-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="61477-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="61477-123">Authorization</span></span> | <span data-ttu-id="61477-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="61477-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a6724-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a6724-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="61477-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="61477-126">Request body</span></span>
 
-<span data-ttu-id="a6724-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a6724-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="61477-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="61477-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a6724-128">响应</span><span class="sxs-lookup"><span data-stu-id="a6724-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="61477-128">响应</span><span class="sxs-lookup"><span data-stu-id="61477-128">Response</span></span>
 
-<span data-ttu-id="a6724-129">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [educationSchool](../resources/educationschool.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="a6724-129">If successful, this method returns a `200 OK` response code and a collection of [educationSchool](../resources/educationschool.md) objects in the response body.</span></span>
+<span data-ttu-id="61477-129">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [educationSchool](../resources/educationschool.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="61477-129">If successful, this method returns a `200 OK` response code and a collection of [educationSchool](../resources/educationschool.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a6724-130">示例</span><span class="sxs-lookup"><span data-stu-id="a6724-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="61477-130">示例</span><span class="sxs-lookup"><span data-stu-id="61477-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a6724-131">请求</span><span class="sxs-lookup"><span data-stu-id="a6724-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="61477-131">请求</span><span class="sxs-lookup"><span data-stu-id="61477-131">Request</span></span>
 
-<span data-ttu-id="a6724-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a6724-132">The following is an example of the request.</span></span>
+<span data-ttu-id="61477-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="61477-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a6724-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="a6724-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="61477-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="61477-133">HTTP</span></span>](#tab/http)
 
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_schools_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11014/schools
 ```
 
-# <a name="c"></a>[<span data-ttu-id="a6724-134">C#</span><span class="sxs-lookup"><span data-stu-id="a6724-134">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="61477-134">C#</span><span class="sxs-lookup"><span data-stu-id="61477-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a6724-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a6724-135">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="61477-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="61477-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a6724-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a6724-136">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="61477-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="61477-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="a6724-137">Java</span><span class="sxs-lookup"><span data-stu-id="a6724-137">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="61477-137">Java</span><span class="sxs-lookup"><span data-stu-id="61477-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="a6724-138">响应</span><span class="sxs-lookup"><span data-stu-id="a6724-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="61477-138">响应</span><span class="sxs-lookup"><span data-stu-id="61477-138">Response</span></span>
 
-<span data-ttu-id="a6724-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a6724-139">The following is an example of the response.</span></span>
+<span data-ttu-id="61477-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="61477-139">The following is an example of the response.</span></span>
 
-><span data-ttu-id="a6724-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a6724-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="61477-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="61477-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
