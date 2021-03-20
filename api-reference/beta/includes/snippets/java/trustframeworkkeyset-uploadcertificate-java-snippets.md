@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9c7ff863b2905a897c048e5efac83f698e20d7cc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 75fb68f02404870ac327aa62cc3a984094c89fe8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980905"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50974752"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String key = "key-value";
 
 graphClient.trustFramework().keySets("{id}")
-    .uploadCertificate(key)
+    .uploadCertificate(TrustFrameworkKeySetUploadCertificateParameterSet
+        .newBuilder()
+        .withKey(key)
+        .build())
     .buildRequest()
     .post();
 

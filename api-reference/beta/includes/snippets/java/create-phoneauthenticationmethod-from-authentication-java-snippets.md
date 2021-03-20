@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a97a76399cd764ad18ec798c1f8d8d0ffac95cbd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 68989a21f933076272d677111ef8f6490accc744
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961414"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975766"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PhoneAuthenticationMethod phoneAuthenticationMethod = new PhoneAuthenticationMethod();
 phoneAuthenticationMethod.phoneNumber = "+1 2065555555";

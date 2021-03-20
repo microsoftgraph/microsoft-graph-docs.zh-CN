@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 36d9d4ec7e6eea1f7ccd140b41d1f8465347d8c9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9406443df0618ab5988eed6a5d599b49a41b21cb
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958263"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50972839"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IChatMessageDeltaCollectionPage delta = graphClient.teams("{id}").channels("{id}").messages()
+ChatMessageDeltaCollectionPage delta = graphClient.teams("{id}").channels("{id}").messages()
     .delta()
     .buildRequest()
     .skipToken("c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA=")

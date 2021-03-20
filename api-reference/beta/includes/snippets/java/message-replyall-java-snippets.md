@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 90b8a5924d741986f26fc7b583ac04ee9385dbc2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ee8a2f85314715e70009e3bbaa98ca3dbc9cec5b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981062"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975667"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
 LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
@@ -25,7 +25,11 @@ message.attachments = attachmentCollectionPage;
 String comment = "Please take a look at the attached guidelines before you decide on the name.";
 
 graphClient.me().messages("AAMkADA1MTAAAH5JaKAAA=")
-    .replyAll(message,comment)
+    .replyAll(MessageReplyAllParameterSet
+        .newBuilder()
+        .withMessage(message)
+        .withComment(comment)
+        .build())
     .buildRequest()
     .post();
 
