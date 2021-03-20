@@ -1,22 +1,22 @@
 ---
 author: swapnil1993
-title: 列出 columnDefinitions
+title: 列出内容类型中的 columnDefinitions
 description: 列出内容类型中的列。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 67ca1c05a9f92714b31932056d55c889006b129e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8e1327f092816fd6ef2d5db88f03af6e3e4973bd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770527"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946978"
 ---
-# <a name="list-columndefinitions"></a>列出 columnDefinitions
+# <a name="list-columns-in-a-content-type"></a>列出内容类型中的列
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-获取内容类型中的[columnDefinition] [集合][contentType]。 []
+获取在内容类型中表示为 [columnDefinition][columnDefinition] 资源的 [列的集合][contentType]。
 
   
 
@@ -32,7 +32,7 @@ ms.locfileid: "50770527"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All  |
+|应用程序 | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All  |
 
   
 

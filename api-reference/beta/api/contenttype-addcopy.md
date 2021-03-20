@@ -5,18 +5,18 @@ description: 将网站内容类型的副本添加到列表中。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 97c93929fbc0c370bd4dac53b068439f5bbd5b82
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f388799e409a5f2037182bb3bc331a6a6adbc45f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771146"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947027"
 ---
 # <a name="contenttype-addcopy"></a>contentType： addCopy
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-将网站内容[类型][site][的副本添加到][contentType][列表][list]。
+将内容类型[contentType] [的副本从][网站添加到][site][列表][list]。
  
   
 
@@ -28,9 +28,9 @@ ms.locfileid: "50771146"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All  |
+|委派（工作或学校帐户） |Sites.Manage.All、Sites.FullControl.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
+|应用程序 | Sites.Manage.All、Sites.FullControl.All |
 
   
 
@@ -40,7 +40,6 @@ ms.locfileid: "50771146"
 }
 -->
 ```http
-
 POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 ```
 
@@ -61,7 +60,7 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 
 ## <a name="response"></a>响应
 
-如果成功，此调用将返回 `204 No Content` 响应。
+如果成功，此调用在响应 `201 Created` 正文中返回 响应代码和 [contentType][] 对象。
 
 ## <a name="example"></a>示例
 
@@ -105,11 +104,30 @@ Content-Type: application/json
 ### <a name="response"></a>响应
 
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "truncated": true} -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 
+{
+    "id": "0x0101",
+    "description": "Create a new custom CSR JavaScript Display Template.",
+    "group": "Display Template Content Types",
+    "hidden": false,
+    "name": "JavaScript Display Template",
+    "parentId": "0x01",
+    "readOnly": false,
+    "sealed": false,
+    "base": {
+        "id": "0x01",
+        "description": "Create a new custom CSR JavaScript Display Template.",
+        "group": "Display Template Content Types",
+        "hidden": false,
+        "name": "JavaScript Display Template",
+        "readOnly": false,
+        "sealed": false
+    }
+}
 ```
 
 [site]: ../resources/site.md

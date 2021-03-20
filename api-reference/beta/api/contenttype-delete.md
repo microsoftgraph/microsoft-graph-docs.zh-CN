@@ -5,12 +5,12 @@ description: 从 sharepoint 列表或网站中删除内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5cf3182f16871c4b56026ba10cfa61f6edcbff05
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 62ff8164a4deca10cc26d22556a00fd207e56fb0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770950"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946999"
 ---
 # <a name="delete-contenttype"></a>删除 contentType
 命名空间：microsoft.graph
@@ -25,9 +25,9 @@ ms.locfileid: "50770950"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All    |
+|委派（工作或学校帐户） | Sites.Manage.All、Sites.FullControl.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
+|应用程序 | Sites.Manage.All、Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

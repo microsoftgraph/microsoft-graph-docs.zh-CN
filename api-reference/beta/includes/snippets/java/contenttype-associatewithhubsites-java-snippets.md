@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9a1b310caf93981c7d8541a640253c03c1eadb4f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3b5d1f5f06977519fa80d4400c5b258688f7d7b3
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771139"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947012"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<String> hubSiteUrlsList = new LinkedList<String>();
 hubSiteUrlsList.add("https://graph.microsoft.com/beta/sites/id");
@@ -17,7 +17,11 @@ hubSiteUrlsList.add("https://graph.microsoft.com/beta/sites/id");
 Boolean propagateToExistingLists = false;
 
 graphClient.sites("id").contentTypes("id")
-    .associateWithHubSites(hubSiteUrlsList,propagateToExistingLists)
+    .associateWithHubSites(ContentTypeAssociateWithHubSitesParameterSet
+        .newBuilder()
+        .withHubSiteUrls(hubSiteUrlsList)
+        .withPropagateToExistingLists(propagateToExistingLists)
+        .build())
     .buildRequest()
     .post();
 

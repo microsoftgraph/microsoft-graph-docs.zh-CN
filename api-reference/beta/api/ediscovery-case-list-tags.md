@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 729f2f9a77722a7f67953dc3c082c879ddf57bf5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f22f34bcb619580476d468cf52b48c2ec5adb792
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776576"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946366"
 ---
 # <a name="list-tags"></a>列出标记
 
@@ -67,7 +67,7 @@ GET /compliance/ediscovery/cases/{caseId}/tags
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tag"
+  "name": "list_tag_1"
 }
 -->
 
@@ -75,19 +75,19 @@ GET /compliance/ediscovery/cases/{caseId}/tags
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-tag-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tag-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-tag-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tag-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-tag-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tag-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-tag-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-tag-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

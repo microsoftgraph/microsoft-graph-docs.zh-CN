@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5eb8d4005e64362955b30c47dbb61acc7c0f28af
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d8d56f8a82ec4a1dee837c239edc5851d20f1d0a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773254"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946259"
 ---
 # <a name="list-custodian-sitesources"></a>列出保管人 siteSources
 
@@ -67,7 +67,7 @@ GET /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/siteSources
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_sitesource"
+  "name": "get_sitesource_1"
 }
 -->
 
@@ -75,19 +75,19 @@ GET /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/siteSources
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/siteSources
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-sitesource-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-sitesource-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-sitesource-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-sitesource-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-sitesource-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-sitesource-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-sitesource-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-sitesource-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

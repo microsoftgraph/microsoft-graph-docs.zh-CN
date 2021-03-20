@@ -5,12 +5,12 @@ description: 更新内容类型
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 52cdcdc18b106c1b09b69d37cc027dc610630611
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: bb7b898a8eb05c70c4c9ec187d36d3d5a4ce69db
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773310"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946932"
 ---
 # <a name="update-contenttype"></a>更新 contentType
 命名空间：microsoft.graph
@@ -29,9 +29,9 @@ ms.locfileid: "50773310"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
+|委派（工作或学校帐户） | Sites.Manage.All、Sites.FullControl.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application |Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
+|应用程序 |Sites.Manage.All、Sites.FullControl.All |
 
   
 

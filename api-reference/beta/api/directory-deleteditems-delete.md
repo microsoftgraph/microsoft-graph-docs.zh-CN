@@ -1,16 +1,16 @@
 ---
 title: 永久删除项目
-description: 从已删除的项目中永久删除项目。
+description: 从已删除的项中永久删除项目。
 author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5fe36d8a129a42dcd139b36577f0ae7fab45a6f6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d31044ce98248ae4759a7c7086e9ec14d336df8f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437056"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946691"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 
@@ -18,11 +18,11 @@ ms.locfileid: "50437056"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从已删除的项 [中永久删除项目](../resources/directory.md)。
+从已删除的项目 [中永久删除项目](../resources/directory.md)。
 
 目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md) 可以永久删除“已删除的项目”中的项目。 但当某个项目永久删除后，将 **无法** 还原。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 对于应用程序：
@@ -33,13 +33,17 @@ ms.locfileid: "50437056"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
+请求程序需要具有以下角色之一：*全局管理员或**应用程序管理员*。
+
 对于用户：
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
+
+登录用户需要具有以下角色之一：全局 *管理员* 或 *用户管理员*。
 
 对于组：
 
@@ -47,7 +51,9 @@ ms.locfileid: "50437056"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
+
+请求程序需要具有以下角色之一： *全局管理员* 或 *组管理员*。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
