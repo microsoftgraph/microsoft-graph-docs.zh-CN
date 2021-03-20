@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a95c35612839f08756cc77e89481c2481076ecbe
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 25383c4ef69d2b595a948dba976656219eccc970
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753028"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975691"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackageAssignmentPolicy accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy();
 accessPackageAssignmentPolicy.accessPackageId = "b2eba9a1-b357-42ee-83a8-336522ed6cbf";
@@ -17,7 +17,7 @@ accessPackageAssignmentPolicy.displayName = "Users from connected organizations 
 accessPackageAssignmentPolicy.description = "Allow users from configured connected organizations to request and be approved by their sponsors";
 accessPackageAssignmentPolicy.canExtend = false;
 accessPackageAssignmentPolicy.durationInDays = 365;
-accessPackageAssignmentPolicy.expirationDateTime = CalendarSerializer.deserialize("null");
+accessPackageAssignmentPolicy.expirationDateTime = OffsetDateTimeSerializer.deserialize("null");
 RequestorSettings requestorSettings = new RequestorSettings();
 requestorSettings.scopeType = "AllExistingConnectedOrganizationSubjects";
 requestorSettings.acceptRequests = true;

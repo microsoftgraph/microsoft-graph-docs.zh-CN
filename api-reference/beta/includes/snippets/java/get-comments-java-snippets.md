@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1dbc6a85d57d30767063ecba4551d626ae74469e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1ded05c8220970a1f6812cbba8f5368ec11d9ad6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982116"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50973677"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IWorkbookCommentCollectionPage comments = graphClient.drive().items("{id}").workbook().comments()
+WorkbookCommentCollectionPage comments = graphClient.drive().items("{id}").workbook().comments()
     .buildRequest()
     .get();
 

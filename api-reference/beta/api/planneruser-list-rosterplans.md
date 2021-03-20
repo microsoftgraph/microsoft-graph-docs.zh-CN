@@ -5,21 +5,21 @@ author: tarkansevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 199697f7cd3ee050caac983e9822007cdc38a557
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 68b62d68620f205f3933f7a876746e19ab8f3e0c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272483"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953221"
 ---
 # <a name="list-rosterplans"></a>列出 rosterPlans
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [用户是其中](../resources/plannerplan.md) 一个成员 [的 plannerRosters](../resources/plannerroster.md) 包含的 plannerPlans 列表。
+获取用户是其中一个成员的[plannerRosters](../resources/plannerroster.md)包含的[plannerPlans](../resources/plannerplan.md)列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -55,7 +55,7 @@ GET /users/{usersId}/planner/rosterPlans
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [plannerPlan](../resources/plannerplan.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [plannerPlan](../resources/plannerplan.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -64,26 +64,26 @@ GET /users/{usersId}/planner/rosterPlans
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_plannerplan"
+  "name": "list_plannerplan_2"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/{usersId}/planner/rosterPlans
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerplan-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerplan-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-plannerplan-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-plannerplan-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-plannerplan-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-plannerplan-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

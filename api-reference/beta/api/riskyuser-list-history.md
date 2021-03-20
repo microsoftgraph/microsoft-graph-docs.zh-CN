@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 28f10f6181d3bfa5091fdb2c98fb584c9bf26452
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f192642793f459911a51e44c4febe1503d496145
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440848"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953106"
 ---
 # <a name="list-history-of-riskyuser"></a>riskyUser 的列表历史记录
 
@@ -18,18 +18,18 @@ ms.locfileid: "50440848"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [riskyUser](../resources/riskyuser.md) 资源的风险历史记录。
+获取 [riskyUser 资源的风险](../resources/riskyuser.md) 历史记录。
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All |
+|应用程序 | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /identityProtection/riskyUsers/{id}/history/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) 对象集合。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-list-history-of-a-specific-user"></a>示例 1：特定用户的列表历史记录
@@ -59,26 +59,26 @@ GET /identityProtection/riskyUsers/{id}/history/
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userriskhitsory",
+  "name": "get_userriskhitsory_1",
   "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -165,26 +165,26 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userriskhitsory",
+  "name": "get_userriskhitsory_2",
   "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 50c73d642536b890937fe55e7d0181a81d406e98
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4dd92cac34386a99dee784177e91c9f9e6e4893f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576279"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943662"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "50576279"
 |[移除 appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md) | 无 | 从用户、组或服务主体中移除此服务主体的应用角色分配。|
 |**证书和密码**| | |
 |[添加密码](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|向 servicePrincipal 添加强密码。|
+|[添加 tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| 向服务主体添加自签名证书。 主要用于从 Azure AD 库中 [基于 SAML 的 SSO](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list)。
 |[删除密码](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|从 servicePrincipal 中移除密码。|
 |[加号键](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|向 servicePrincipal 添加密钥凭据。|
 |[删除键](../api/serviceprincipal-removekey.md)|无|从 servicePrincipal 中移除密钥凭据。|
@@ -121,7 +122,7 @@ ms.locfileid: "50576279"
 |servicePrincipalType|String|标识服务主体是表示应用程序还是托管标识。 这是由 Azure AD 内部设置的。 对于表示 [应用程序](./application.md)的服务主体，此选项设置为“__Application__”。 对于表示 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，此选项设置为“__ManagedIdentity__”。|
 |signInAudience|String| 指定关联应用程序支持的 Microsoft 帐户。 只读。|
 |tags|字符串集合| 可用于分类和标识服务主体的自定义字符串。 不可为 null。 |
-|tokenEncryptionKeyId|字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+|tokenEncryptionKeyId|String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定该服务主体代表的应用程序的已验证发布者。|
 
 ## <a name="relationships"></a>关系
@@ -180,6 +181,7 @@ ms.locfileid: "50576279"
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "loginUrl": "string",
   "logoutUrl": "string",
+  "notes": "String",
   "notificationEmailAddresses": ["string"],
   "notes": "string",
   "publishedPermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],

@@ -5,18 +5,18 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3a8cf2d9c262551beb060c8b412c77ce50ffeeda
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2b6794d9aa4955b5b2260549641e4f7530c23e2a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444397"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944848"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
 命名空间：microsoft.graph
 
-表示 Azure Active Directory (Azure AD) 标识提供程序。 标识提供程序可以是 Microsoft、Google、Facebook、Amazon、领英或 Twitter。 下列标识提供程序处于预览版状态：微博、QQ、微信、GitHub 以及 OpenID Connect 支持的所有提供程序。 
+表示 Azure Active Directory (Azure AD) 标识提供程序。 标识提供者 **Microsoft**、 **Google**、 **Facebook**、 **Amazon**、  **LinkedIn** 或 **Twitter**。 以下标识提供者为预览版： **微博**、 **QQ**、 **微信**、 **GitHub** 以及任何 OpenID Connect 支持的提供商。 
 
 通过在 Azure AD B2C 中配置标识提供程序，使用户能够执行以下操作：
 
@@ -37,13 +37,13 @@ ms.locfileid: "50444397"
 
 ## <a name="properties"></a>属性
 
-|属性|类型|必需|可为空|说明|
-|:---------------|:--------|:--------|:--------|:----------|
-|clientId|字符串|是|否|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
-|clientSecret|字符串|是|否|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。 这是只读的。 读取操作将返回“\*\*\*\*”。|
-|id|字符串|否|否|标识提供程序的 ID。|
-|name|字符串|否|否|标识提供程序的显示名称。|
-|type|字符串|是|否|标识提供程序类型。 它必须是 B2C 方案的下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook<li/>GitHub<li/>Twitter<li/>微博<li/>QQ<li/>微信</ul>在 B2B 方案中，该值必须是 Google 或 Facebook。|
+|属性|类型|说明|
+|:---------------|:--------|:--------|
+|clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。 必填。 不可为空。|
+|clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。 这是只读的。 读取操作将返回“`****`”。  必填。 不可为空。|
+|id|字符串|标识提供程序的 ID。|
+|name|字符串|标识提供程序的显示名称。 不可为空。|
+|type|字符串|身份提供程序类型是必填字段。 对于 B2B 方案： `Google`， `Facebook`。 对于 B2C 方案： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、`QQ`、 `WeChat`、 `OpenIDConnect`。 不可为空。|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>获取客户端 ID 和密码的位置
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: grangeryy
-ms.openlocfilehash: 8ee076b96df14b4d4c4958b4c1d6bdf36fecdde2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 21f2be43bc31d7611cf43ebd228850e3993807fa
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075614"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952783"
 ---
 # <a name="itembody-resource-type"></a>itemBody 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "48075614"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |内容|String|项目的内容。|
-|contentType|String|内容的类型。可能的值为 `text` 和 `html`。|
+|contentType|bodyType|内容的类型。 可能的值为 `text` 和 `html`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

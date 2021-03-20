@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5bac4adf71511a8823a77d8591e4700916308f3d
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: d6d549435cd9350f9baf1136fd10f174eb1d0938
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720544"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952548"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -46,16 +46,16 @@ ms.locfileid: "49720544"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|allowedOnlineMeetingProviders|string 集合| 表示此日历中可用于创建联机会议的联机会议服务提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
-|canEdit |布尔 |如果用户可以写入日历则为 true，否则为 false。对于创建此日历的用户，此属性为 true。此属性对于共享日历并且授予写入访问权限的用户同样为 true。 |
-|canShare |布尔 |如果用户有权共享日历则为 ture，否则为 false。只有创建日历的用户才可以进行共享。 |
-|canViewPrivateItems |Boolean |如果用户可以读取已标记为私有的日历项，则为 true，否则返回 false。 |
+|allowedOnlineMeetingProviders|OnlineMeetingProviderType 集合| 表示此日历中可用于创建联机会议的联机会议服务提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
+|canEdit |Boolean |`true` 如果用户可以写入日历，则 `false` 更改。 此属性 `true` 日历的用户所使用。 此属性也 `true` 已共享日历并授予写入访问权限的用户使用。 |
+|canShare |Boolean |`true` 如果用户有共享日历的权限，则 `false` 更改。 只有创建日历的用户才可以进行共享。 |
+|canViewPrivateItems |Boolean |`true` 如果用户可以阅读标记为私密的日历项目，则 `false` 更改。 |
 |changeKey|字符串|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
-|颜色|calendarColor|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
+|颜色|calendarColor|在 UI 中指定将该日历与其他日历区分开来的颜色主题。 属性值为： `auto`、 `lightBlue`、 `lightGreen`、 `lightOrange`、 `lightGray`、 `lightYellow`、 `lightTeal`、 `lightPink`、 `lightBrown`、 `lightRed`、 `maxColor`。|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|从此日历发送的会议的默认联机会议提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
-|hexColor |String |日历颜色，使用十六进制颜色代码表示，其中包含三个十六进制值，每个值介于 00 到 FF 之间，表示 RGB 颜色空间中颜色的红色、绿色或蓝色组件。 若用户从未明确设置日历的颜色，则此属性为空。 只读。|
+|hexColor |String |日历颜色，以三个十六进制值的六进制值（每个值从 00 到 FF）表示，表示 RGB 颜色空间内颜色的红色、绿色或蓝色组成部分。 若用户从未明确设置日历的颜色，则此属性为空。 只读。|
 |id|String|日历的唯一标识符。只读。|
-|isDefaultCalendar|Boolean|若此为默认用于新建事件的默认日志则为 True，反之为 false。|
+|isDefaultCalendar|Boolean|`true` 如果这是默认情况下创建新事件的默认日历，则 `false` 更改。|
 |isRemovable|Boolean| 表示是否可以从用户邮箱删除此用户日志。|
 |isTallyingResponses|Boolean|表示此用户日历是否支持会议响应跟踪。 仅从用户的主日志发送的会议邀请支持会议响应跟踪。|
 |name|String|日历名称。|
