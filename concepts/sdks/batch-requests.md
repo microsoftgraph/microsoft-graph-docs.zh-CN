@@ -1,33 +1,33 @@
 ---
-title: 使用 Microsoft Graph Sdk 进行批处理请求
-description: 提供有关使用 Microsoft Graph Sdk 创建一批 API 请求的说明。
+title: 使用 Microsoft Graph SDK 批处理请求
+description: 提供有关使用 Microsoft Graph SDK 创建一批 API 请求的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 721adb1631037055a2d2498d321bb06e68b6c257
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: bda68247c0375447913c3c64aae90ba2c88ab563
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932421"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953374"
 ---
-# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>使用 Microsoft Graph Sdk 进行批处理请求
+# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>使用 Microsoft Graph SDK 批处理请求
 
-[批处理](../json-batching.md) 是将多个请求合并为一个 HTTP 请求的一种方法。 请求将组合到单个 JSON 有效负载中，该负载通过 POST 发送到 `\$batch` 终结点。 Microsoft Graph Sdk 具有一组类，可简化批处理负载的创建和分析批处理响应负载的方式。
+[批处理](../json-batching.md) 是一种将多个请求合并到单个 HTTP 请求中的方法。 请求组合在单个 JSON 有效负载中，该负载通过 POST 发送到 `\$batch` 终结点。 Microsoft Graph SDK 具有一组类，用于简化如何创建批处理有效负载和分析批处理响应有效负载。
 
 > [!IMPORTANT]
 > 有关 Microsoft Graph 中 JSON 批处理的当前限制，请参阅 [已知问题](../known-issues.md#json-batching)。
 
 ## <a name="create-a-batch-request"></a>创建批处理请求
 
-Microsoft Graph Sdk 提供了三个类来处理批处理请求和响应。
+Microsoft Graph SDK 提供了三个类，用于处理批处理请求和响应。
 
-- **BatchRequestStep** -表示单个请求 (例如 `GET /me` 批次中) 。 它允许为请求分配一个唯一的标识符，并指定请求之间的依赖关系。
-- **BatchRequestContent** -简化了批处理请求负载的创建。 它包含多个 **BatchRequestStep** 对象。
-- **BatchResponseContent** -简化了对来自批处理请求的响应的分析。 它提供了获取所有响应、按 ID 获取特定响应以及获取属性（如果存在）的功能 `@odata.nextLink` 。
+- **BatchRequestStep** - 表示单个请求 (，) `GET /me` 批处理中的请求。 它支持为请求分配唯一标识符并指定请求之间的依赖关系。
+- **BatchRequestContent** - 简化批处理请求有效负载的创建。 它包含多个 **BatchRequestStep** 对象。
+- **BatchResponseContent** - 简化了分析来自批处理请求的响应。 它提供获取所有响应、按 ID 获取特定响应以及获取 `@odata.nextLink` 属性（如果存在）的能力。
 
-## <a name="simple-batching-example"></a>简单的批处理示例
+## <a name="simple-batching-example"></a>简单批处理示例
 
-此示例演示如何在不相互依赖的批处理中发送多个请求。 这些请求可以按任何顺序由服务运行。 此示例获取用户并获取当前日期的用户日历视图。
+此示例演示如何在一个批处理中发送多个不彼此依赖的请求。 服务可以按任意顺序运行请求。 此示例获取用户并获取当前日期的用户日历视图。
 
 ### <a name="c"></a>[C#](#tab/csharp)
 
@@ -160,15 +160,13 @@ if (calendarResponse.ok) {
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent();
+final BatchRequestContent batchRequestContent = new BatchRequestContent();
 
 // Use the Graph client to generate the request for GET /me
 final String meGetId = batchRequestContent
                         .addBatchRequestStep(graphClient
                                               .me()
-                                              .buildRequest()
-                                              .withHttpMethod(HttpMethod.GET)
-                                              .getHttpRequest());
+                                              .buildRequest());
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -182,69 +180,27 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest());
-
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
+                                          .buildRequest(calendarViewOptions));
 
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(graphClient);
 // Get the user response using the id assigned to the request
-final Response userResponse = batchResponseContent.getResponseById(meGetId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-if (userResponse.isSuccessful()) {
-    final User user = graphSerializer.deserializeObject(userResponse.body().string(), User.class);
-    System.out.println(String.format("Hello %s!", user.displayName));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(userResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting user: %s - %s", error.error.code, error.error.message));
-}
+final User user = batchResponseContent.getResponseById(meGetId).getDeserializedBody(User.class);
+System.out.println(String.format("Hello %s!", user.displayName));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
 ---
 
-## <a name="batches-with-dependent-requests"></a>使用从属请求的批处理
+## <a name="batches-with-dependent-requests"></a>具有相关请求的批处理
 
-此示例演示如何在相互依赖的批次中发送多个请求。 这些请求将按依赖项指定的顺序由服务运行。 本示例在当前日期向用户的日历中添加一个具有开始时间的事件，并获取当前日期的用户日历视图。 若要确保返回的日历审阅包含创建的新事件，则对日历视图的请求配置为依赖于添加新事件的请求。 这将确保先执行添加事件请求。
+此示例演示如何在批处理中发送多个相互依赖的请求。 请求将按依赖项指定的顺序由服务运行。 本示例向用户的日历添加一个事件，其开始时间为当前日期，并获取当前日期的用户日历视图。 若要确保返回的日历审阅包含创建的新事件，将日历视图请求配置为依赖于添加新事件的请求。 这将确保首先执行添加事件请求。
 
 > [!NOTE]
-> 如果添加事件请求失败，获取日历视图请求将失败，并出现 `424 Failed Dependency` 错误。
+> 如果添加事件请求失败，则获取日历视图请求将失败并出现错误 `424 Failed Dependency` 。
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -433,7 +389,7 @@ if (calendarResponse.ok)
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent(batchSteps);
+final BatchRequestContent batchRequestContent = new BatchRequestContent(batchSteps);
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -457,9 +413,7 @@ final String addEventRequestId = batchRequestContent
                                 .addBatchRequestStep(graphClient
                                                 .me()
                                                 .events()
-                                                .buildRequest()
-                                                .withHttpMethod(HttpMethod.POST)
-                                                .getHttpRequest(newEvent));
+                                                .buildRequest(), HttpMethod.POST, newEvent);
 
 // Use the Graph client to generate the request URL for
 // GET /me/calendarview?startDateTime="start"&endDateTime="end"
@@ -469,60 +423,20 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest(),
+                                          .buildRequest(calendarViewOptions),
+                                          HttpMethod.GET,
+                                          null,
                                           addEventRequestId);
 
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
-
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(client);
 // Get the user response using the id assigned to the request
-final Response addEventResponse = batchResponseContent.getResponseById(addEventRequestId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-  if (addEventResponse.isSuccessful()) {
-    final Event event = graphSerializer.deserializeObject(addEventResponse.body().string(), Event.class);
-    System.out.println(String.format("New event created with ID: %s", event.id));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(addEventResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error creating event: %s - %s", error.error.code, error.error.message));
-}
+final Event event = batchResponseContent.getResponseById(addEventRequestId).getDeserializedBody(Event.class);
+System.out.println(String.format("New event created with ID: %s", event.id));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
 ---

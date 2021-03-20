@@ -1,21 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3e01d044280c61aed95973ae845d9e47527a92af
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5be6e2bfa1449215be753d1625ad775dd53647a9
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970890"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978860"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<String> groupIdsList = new LinkedList<String>();
 groupIdsList.add("groupIds-value");
 
 graphClient.servicePrincipals("{id}")
-    .checkMemberGroups(groupIdsList)
+    .checkMemberGroups(DirectoryObjectCheckMemberGroupsParameterSet
+        .newBuilder()
+        .withGroupIds(groupIdsList)
+        .build())
     .buildRequest()
     .post();
 

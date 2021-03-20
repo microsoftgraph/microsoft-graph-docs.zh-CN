@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f98bfcfbeab2931707a5e5e15fc0e1034582eff9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a5bd74b3b6bcaed8b036324f756c4adae3c33d14
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952188"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978041"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackageAssignmentPolicy accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy();
 accessPackageAssignmentPolicy.accessPackageId = "string (identifier)";
@@ -17,7 +17,7 @@ accessPackageAssignmentPolicy.displayName = "Users from connected organizations 
 accessPackageAssignmentPolicy.description = "Allow users from configured connected organizations to request and be approved by their sponsors";
 accessPackageAssignmentPolicy.canExtend = false;
 accessPackageAssignmentPolicy.durationInDays = 365;
-accessPackageAssignmentPolicy.expirationDateTime = CalendarSerializer.deserialize("null");
+accessPackageAssignmentPolicy.expirationDateTime = OffsetDateTimeSerializer.deserialize("null");
 RequestorSettings requestorSettings = new RequestorSettings();
 requestorSettings.scopeType = "AllExistingConnectedOrganizationSubjects";
 requestorSettings.acceptRequests = true;
@@ -82,7 +82,7 @@ AssignmentReviewSettings accessReviewSettings = new AssignmentReviewSettings();
 accessReviewSettings.isEnabled = true;
 accessReviewSettings.recurrenceType = "quarterly";
 accessReviewSettings.reviewerType = "Self";
-accessReviewSettings.startDateTime = CalendarSerializer.deserialize("2020-04-01T07:59:59.998Z");
+accessReviewSettings.startDateTime = OffsetDateTimeSerializer.deserialize("2020-04-01T07:59:59.998Z");
 accessReviewSettings.durationInDays = 25;
 LinkedList<UserSet> reviewersList = new LinkedList<UserSet>();
 accessReviewSettings.reviewers = reviewersList;

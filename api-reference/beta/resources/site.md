@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 587014aa0c9dbe4c05c0e3b946c3f6e44b7cb821
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e754bf9e5199de502672cdf0a0de5279eb5ef80f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442787"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953745"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -42,6 +42,10 @@ ms.locfileid: "50442787"
 | [创建权限][]         | POST /sites/{site-id}/permissions
 | [删除权限][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [更新权限][]         | PATCH /sites/{site-id}/permissions/{permission-id}
+|[列表内容类型][]          | GET /sites/{site-id}/contentTypes
+|[创建 contentType][]        | POST/sites/{site-id}/contentTypes
+|[List columns][]               | 获取 /sites/{site-id}/columns
+|[创建列][]              | 发布 /sites/{site-id}/columns
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -60,6 +64,10 @@ ms.locfileid: "50442787"
 [创建权限]: ../api/site-post-permissions.md
 [删除权限]: ../api/site-delete-permission.md
 [更新权限]: ../api/site-update-permission.md
+[列表内容类型]: ../api/site-list-contenttypes.md
+[创建 contentType]: ../api/site-post-contenttypes.md
+[List columns]: ../api/site-list-columns.md
+[创建列]: ../api/site-post-columns.md
 
 
 ## <a name="properties"></a>属性
