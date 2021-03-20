@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bd158c03914b318e48175db4a75fc89eed240e65
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 34cf6e6b7b3e41c4e318b01fa7699f85b880af54
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971996"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970207"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<TiIndicator> valueList = new LinkedList<TiIndicator>();
 TiIndicator value = new TiIndicator();
@@ -27,7 +27,10 @@ tiIndicatorCollectionResponse.value = valueList;
 TiIndicatorCollectionPage tiIndicatorCollectionPage = new TiIndicatorCollectionPage(tiIndicatorCollectionResponse, null);
 
 graphClient.security().tiIndicators()
-    .updateTiIndicators(valueList)
+    .updateTiIndicators(TiIndicatorUpdateTiIndicatorsParameterSet
+        .newBuilder()
+        .withValue(valueList)
+        .build())
     .buildRequest()
     .post();
 

@@ -5,32 +5,32 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 74fa278f9de4df399a6b016067050499c5f4ce6a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e578cb03aff1cebf1c71f7b815fe008b7694d88b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445982"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951952"
 ---
-# <a name="get-unifiedgroupsource"></a><span data-ttu-id="c97ab-103">获取 unifiedGroupSource</span><span class="sxs-lookup"><span data-stu-id="c97ab-103">Get unifiedGroupSource</span></span>
+# <a name="get-unifiedgroupsource"></a><span data-ttu-id="2a969-103">获取 unifiedGroupSource</span><span class="sxs-lookup"><span data-stu-id="2a969-103">Get unifiedGroupSource</span></span>
 
-<span data-ttu-id="c97ab-104">命名空间：microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="c97ab-104">Namespace: microsoft.graph.ediscovery</span></span>
+<span data-ttu-id="2a969-104">命名空间：microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="2a969-104">Namespace: microsoft.graph.ediscovery</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c97ab-105">读取 [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="c97ab-105">Read the properties and relationships of a [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.</span></span>
+<span data-ttu-id="2a969-105">读取 [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="2a969-105">Read the properties and relationships of a [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c97ab-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="c97ab-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2a969-106">权限</span><span class="sxs-lookup"><span data-stu-id="2a969-106">Permissions</span></span>
 
-<span data-ttu-id="c97ab-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c97ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2a969-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2a969-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c97ab-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c97ab-109">Permission type</span></span>|<span data-ttu-id="c97ab-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c97ab-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="2a969-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="2a969-109">Permission type</span></span>|<span data-ttu-id="2a969-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2a969-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c97ab-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c97ab-111">Delegated (work or school account)</span></span>|<span data-ttu-id="c97ab-112">eDiscovery.Read.All、eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c97ab-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
-|<span data-ttu-id="c97ab-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c97ab-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c97ab-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="c97ab-114">Not supported.</span></span>|
-|<span data-ttu-id="c97ab-115">Application</span><span class="sxs-lookup"><span data-stu-id="c97ab-115">Application</span></span>|<span data-ttu-id="c97ab-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c97ab-116">Not supported.</span></span>|
+|<span data-ttu-id="2a969-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2a969-111">Delegated (work or school account)</span></span>|<span data-ttu-id="2a969-112">eDiscovery.Read.All、eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2a969-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
+|<span data-ttu-id="2a969-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2a969-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2a969-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="2a969-114">Not supported.</span></span>|
+|<span data-ttu-id="2a969-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="2a969-115">Application</span></span>|<span data-ttu-id="2a969-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="2a969-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c97ab-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c97ab-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2a969-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2a969-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,61 +41,61 @@ ms.locfileid: "50445982"
 GET /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources/{unifiedGroupSourceId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c97ab-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c97ab-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2a969-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2a969-118">Optional query parameters</span></span>
 
-<span data-ttu-id="c97ab-119">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c97ab-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="c97ab-120">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="c97ab-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="2a969-119">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2a969-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="2a969-120">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="2a969-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c97ab-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="c97ab-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2a969-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="2a969-121">Request headers</span></span>
 
-|<span data-ttu-id="c97ab-122">名称</span><span class="sxs-lookup"><span data-stu-id="c97ab-122">Name</span></span>|<span data-ttu-id="c97ab-123">说明</span><span class="sxs-lookup"><span data-stu-id="c97ab-123">Description</span></span>|
+|<span data-ttu-id="2a969-122">名称</span><span class="sxs-lookup"><span data-stu-id="2a969-122">Name</span></span>|<span data-ttu-id="2a969-123">说明</span><span class="sxs-lookup"><span data-stu-id="2a969-123">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="c97ab-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c97ab-124">Authorization</span></span>|<span data-ttu-id="c97ab-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c97ab-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="2a969-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a969-124">Authorization</span></span>|<span data-ttu-id="2a969-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2a969-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c97ab-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="c97ab-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2a969-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="2a969-127">Request body</span></span>
 
-<span data-ttu-id="c97ab-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c97ab-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="2a969-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2a969-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c97ab-129">响应</span><span class="sxs-lookup"><span data-stu-id="c97ab-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2a969-129">响应</span><span class="sxs-lookup"><span data-stu-id="2a969-129">Response</span></span>
 
-<span data-ttu-id="c97ab-130">如果成功，此方法在响应正文中返回响应代码和 `200 OK` [microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c97ab-130">If successful, this method returns a `200 OK` response code and a [microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object in the response body.</span></span>
+<span data-ttu-id="2a969-130">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2a969-130">If successful, this method returns a `200 OK` response code and a [microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c97ab-131">示例</span><span class="sxs-lookup"><span data-stu-id="c97ab-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2a969-131">示例</span><span class="sxs-lookup"><span data-stu-id="2a969-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="c97ab-132">请求</span><span class="sxs-lookup"><span data-stu-id="c97ab-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="2a969-132">请求</span><span class="sxs-lookup"><span data-stu-id="2a969-132">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="c97ab-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="c97ab-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2a969-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="2a969-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedgroupsource"
+  "name": "get_unifiedgroupsource_2"
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/unifiedGroupSources/33434233-3030-3739-3043-393039324633
 ```
-# <a name="c"></a>[<span data-ttu-id="c97ab-134">C#</span><span class="sxs-lookup"><span data-stu-id="c97ab-134">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedgroupsource-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="2a969-134">C#</span><span class="sxs-lookup"><span data-stu-id="2a969-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedgroupsource-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c97ab-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c97ab-135">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedgroupsource-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="2a969-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2a969-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedgroupsource-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c97ab-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c97ab-136">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedgroupsource-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="2a969-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2a969-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedgroupsource-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c97ab-137">Java</span><span class="sxs-lookup"><span data-stu-id="c97ab-137">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedgroupsource-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="2a969-137">Java</span><span class="sxs-lookup"><span data-stu-id="2a969-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedgroupsource-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="c97ab-138">响应</span><span class="sxs-lookup"><span data-stu-id="c97ab-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="2a969-138">响应</span><span class="sxs-lookup"><span data-stu-id="2a969-138">Response</span></span>
 
-<span data-ttu-id="c97ab-139">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c97ab-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="2a969-139">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="2a969-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

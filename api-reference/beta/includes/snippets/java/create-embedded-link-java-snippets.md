@@ -1,20 +1,28 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 01666af7421c98ce8a75e3026f6ea8217b599f35
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 60b01cf0bdde903137ce639c43a7fab127edff3f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963880"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970652"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String type = "embed";
 
 graphClient.me().drive().items("{item-id}")
-    .createLink(type,null,null,null,null,null)
+    .createLink(DriveItemCreateLinkParameterSet
+        .newBuilder()
+        .withType(type)
+        .withScope(null)
+        .withExpirationDateTime(null)
+        .withPassword(null)
+        .withMessage(null)
+        .withRecipients(null)
+        .build())
     .buildRequest()
     .post();
 

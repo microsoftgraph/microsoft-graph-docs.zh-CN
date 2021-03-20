@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 64208da9fe260cc14692ef82fd0d663488f6269c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f5b9a26fc8e482a97b2b9fc46ec54dd983d8ef03
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959562"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50972203"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Boolean bargeInAllowed = true;
 
@@ -38,7 +38,18 @@ stopTonesList.add("1");
 stopTonesList.add("*");
 
 graphClient.communications().calls("{id}")
-    .recordResponse(promptsList,bargeInAllowed,initialSilenceTimeoutInSeconds,maxSilenceTimeoutInSeconds,maxRecordDurationInSeconds,playBeep,null,stopTonesList,clientContext)
+    .recordResponse(CallRecordResponseParameterSet
+        .newBuilder()
+        .withPrompts(promptsList)
+        .withBargeInAllowed(bargeInAllowed)
+        .withInitialSilenceTimeoutInSeconds(initialSilenceTimeoutInSeconds)
+        .withMaxSilenceTimeoutInSeconds(maxSilenceTimeoutInSeconds)
+        .withMaxRecordDurationInSeconds(maxRecordDurationInSeconds)
+        .withPlayBeep(playBeep)
+        .withStreamWhileRecording(null)
+        .withStopTones(stopTonesList)
+        .withClientContext(clientContext)
+        .build())
     .buildRequest()
     .post();
 
