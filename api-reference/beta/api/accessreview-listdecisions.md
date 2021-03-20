@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b21a7ac3d10e324835922544232a10fbcade409c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 74ac3d2d9ec8857333beb94d8c5c96f1c4684c6b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439353"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943161"
 ---
 # <a name="list-accessreview-decisions"></a>列出 accessReview 决策
 
@@ -18,20 +18,20 @@ ms.locfileid: "50439353"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，检索 [accessReview](../resources/accessreview.md) 对象的决策。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，检索 [accessReview 对象](../resources/accessreview.md) 的决策。
 
-请注意，定期访问评审没有 `decisions` 关系。  相反，调用方必须导航 `instance` 关系以查找访问评审的当前或过去 `accessReview` 实例的对象。
+请注意，定期访问评审没有 `decisions` 关系。  相反，调用方必须导航 `instance` 关系以查找访问评审 `accessReview` 的当前或过去实例的对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.Membership、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview.Read.All、AccessReview.ReadWrite.Membership |
+|应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.Membership |
 
- 登录用户还必须具有允许其读取访问评审的目录角色。
+ 登录用户还必须具有允许其阅读访问评审的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /accessReviews/{reviewId}/decisions
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码 `200, OK` 和 [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组。
+如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -56,25 +56,25 @@ GET /accessReviews/{reviewId}/decisions
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_accessReview_decisions"
+  "name": "get_accessReview_decisions_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/decisions
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-decisions-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-decisions-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-decisions-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-decisions-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-decisions-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-decisions-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-decisions-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-decisions-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -110,10 +110,10 @@ Content-type: application/json
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  检索访问评审。 |
-|[列出我的 accessReview 决策](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) 集合|    作为审阅者，获取我关于 accessReview 的决定。|
+|[列出我的 accessReview 决策](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) 集合|    作为审阅者，获取我在 accessReview 上的决定。|
 |[发送 accessReview 提醒](accessreview-sendreminder.md) |       无。   |   向 accessReview 的审阅者发送提醒。 |
 |[Stop accessReview](accessreview-stop.md) |        无。   |   停止 accessReview。 |
-|[重置 accessReview 决策](accessreview-reset.md) |        无。   |   重置正在进行中的 accessReview 中的决策。|
+|[重置 accessReview 决策](accessreview-reset.md) |        无。   |   重置进行中的 accessReview 中的决策。|
 |[应用 accessReview 决策](accessreview-apply.md) |        无。   |   从已完成的 accessReview 应用决策。|
 
 

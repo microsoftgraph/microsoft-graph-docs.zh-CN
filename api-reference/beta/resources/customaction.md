@@ -3,14 +3,14 @@ title: customAction 资源类型
 description: 表示标签可能提供的任何自定义操作（如果由管理员配置）。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 5c71454a6647604d4155fc80c72ec48d22d85d03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d9c88715cba6fc8faede1419b3c8809c3ec3f54
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050008"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941804"
 ---
 # <a name="customaction-resource-type"></a>customAction 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48050008"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示标签可能提供的任何自定义操作（如果由管理员配置）。 自定义操作可能是通过 Office 365 安全与合规中心的 PowerShell 模块定义为 [informationProtectionLabel](informationProtectionLabel.md) 的一部分。 操作必须由使用中的应用程序理解。
+表示标签可能提供的任何自定义操作（如果由管理员配置）。 可以通过 Office 365 安全与合规中心的 PowerShell 模块将自定义操作定义为 [信息ProtectionLabel](informationProtectionLabel.md) 的一部分。 使用应用程序必须理解这些操作。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型                                       | 说明                                          |
 | :--------- | :----------------------------------------- | :--------------------------------------------------- |
 | name       | String                                     | 自定义操作的名称。                           |
-| properties | [keyValuePair](keyvaluepair.md) 集合 | 操作的属性（按键值对格式）。 |
+| properties | [keyValuePair](keyvaluepair.md) 集合 | 操作的属性，采用键值对格式。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

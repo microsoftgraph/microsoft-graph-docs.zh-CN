@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 16c2796e94678b4ca0362c3be86268f69cdbcedb
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: b8ef436a9319e7a670e0aa5bdc728b39b53c2709
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760752"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942519"
 ---
 # <a name="update-approvalstep"></a>更新 approvalStep
 
@@ -42,7 +42,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -64,6 +64,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_approvalstep"
@@ -72,6 +74,12 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
 ```
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-approvalstep-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

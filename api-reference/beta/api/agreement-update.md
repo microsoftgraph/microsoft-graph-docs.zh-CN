@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 88bab29854bd474221df81241698b57fa94be79a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: ee62ae7f42c958304549883afbd66e022230bdd5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773926"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942870"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -26,7 +26,12 @@ ms.locfileid: "50773926"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
+
+代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
++ 全局管理员
++ 条件访问管理员
++ 安全管理员
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +48,7 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|协议的显示名称。|
+|displayName|String|协议的显示名称。|
 |isViewingBeforeAcceptanceRequired|Boolean|用户是否必须展开和查看协议才能接受。|
 
 ## <a name="response"></a>响应

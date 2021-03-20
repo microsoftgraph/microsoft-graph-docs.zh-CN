@@ -3,14 +3,14 @@ title: urlAssessmentRequest 资源类型
 description: 用于创建和检索 URL 威胁评估。
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 5af4d3df971931a6119bd35a11ddbf94fefbbe4e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e180d09c2e76b817d2022a7de993b7a98db48d3d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721703"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941384"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>urlAssessmentRequest 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "50721703"
 |createdBy|[identitySet](identityset.md)|威胁评估请求创建者。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|来自提交项的预期评估。 可能的值是：`block`、`unblock`。|
-|id|字符串|威胁评估请求 ID 是 GUID (全局唯一) 。|
+|id|String|威胁评估请求 ID 是 GUID (全局唯一) 。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
 |状态|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
 

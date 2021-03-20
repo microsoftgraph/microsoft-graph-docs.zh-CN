@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 7f96266c1ff774f52e559737fe67f032f1e54fdc
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
-ms.translationtype: HT
+ms.openlocfilehash: cd019a8f13bd0ffe154a2a998d59815addf664e9
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580954"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941391"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
 
@@ -46,15 +46,11 @@ Install-Package Microsoft.Graph.Auth -IncludePrerelease
 ```Gradle
 repository {
     jcenter()
-    jcenter{
-        url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
-    }
 }
 
 dependency {
     // Include the sdk as a dependency
-    implementation 'com.microsoft.graph:microsoft-graph:2.+'
-    implementation 'com.microsoft.graph:microsoft-graph-auth:0.3.0'
+    implementation 'com.microsoft.graph:microsoft-graph:3.+'
 }
 ```
 
@@ -76,18 +72,6 @@ dependency {
             </repository>
         </repositories>
     </profile>
-    <profile>
-       <id>allow-snapshots</id>
-          <activation><activeByDefault>true</activeByDefault></activation>
-       <repositories>
-         <repository>
-           <id>snapshots-repo</id>
-           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-           <releases><enabled>false</enabled></releases>
-           <snapshots><enabled>true</enabled></snapshots>
-         </repository>
-       </repositories>
-     </profile>
 </profiles>
 ```
 
@@ -97,12 +81,7 @@ dependency {
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>[2.0,)</version>
-</dependency>
-<dependency>
-    <groupId>com.microsoft.graph</groupId>
-    <artifactId>microsoft-graph-auth</artifactId>
-    <version>0.3.0</version>
+    <version>[3.0,)</version>
 </dependency>
 ```
 

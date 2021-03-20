@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 620ca66a2f443f1cf935cb9b5accc35c68d7eb1d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8d636cab5663633ba78e76057dc9ba3d555fbdc4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773961"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942887"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -27,6 +27,11 @@ ms.locfileid: "50773961"
 |委派（工作或学校帐户）     | Agreement.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
+
+代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
++ 全局管理员
++ 条件访问管理员
++ 安全管理员
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: eb28f345aba008a0f2d5bb5ab4723c2ffbb8aca3
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: e55abdad4a03319407b1c6e31e37e717739f0d10
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760930"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941762"
 ---
 # <a name="publishedresource-resource-type"></a>publishedResource 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50760930"
 
 表示本地已发布资源。 租户管理员可以发布各种类型的本地资源-企业应用程序、域控制器、服务器等。租户管理员安装本地代理可以配置为访问[](onpremisesagent.md)/处理对特定已发布资源的请求。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -38,7 +38,7 @@ ms.locfileid: "50760930"
 |:-------------|:------------|:------------|
 |displayName|String| publishedResource 的显示名称。|
 |id|String| publishedResource 的对象 ID。 只读。|
-|publishingType|string| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
+|publishingType|String| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 |resourceName|String|publishedResource 的名称。|
 
 ## <a name="relationships"></a>关系

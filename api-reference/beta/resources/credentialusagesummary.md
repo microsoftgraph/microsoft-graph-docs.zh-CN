@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 03ae7b4b03cf58301895e5246fa4cb86d1b79667
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9db31a0d0397f1394a342fb52796a1bec37bae36
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157699"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941822"
 ---
 # <a name="credentialusagesummary-resource-type"></a>credentialUsageSummary 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50157699"
 
 表示组织中使用自助服务密码重置功能的用户数的当前状态。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -30,9 +30,9 @@ ms.locfileid: "50157699"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| authMethod | string | 表示用户使用的身份验证方法。 可能的值是： ， ， ， (仅用于自助服务密码重置) 、 、 和 (仅 `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` `appNotification` `appCode`  `alternateMobileCall` 支持注册) 。 |
+| authMethod | usageAuthMethod | 表示用户使用的身份验证方法。 可能的值是：、 (仅用于自助服务密码重置 `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion`) 、 (仅在注册 `appNotification` `appCode` `alternateMobileCall` `fido` `appPassword` `unknownFutureValue`) 、。 |
 | failureActivityCount | Int64 | 提供失败的重置或注册数据计数。 |
-| 功能 | string | 定义要报告的功能。 可能的值是： `registration` 和 `reset` 。 |
+| 功能 | featureType | 定义要报告的功能。 可取值为：`registration`、`reset`、`unknownFutureValue`。 |
 | id | String | 活动的唯一标识符。 只读。 |
 | successfulActivityCount | Int64 | 提供成功注册或重置的计数。 |
 

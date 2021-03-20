@@ -3,14 +3,14 @@ title: downgradeJustification 资源类型
 description: 表示有关执行降级的原因的用户输入。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7c0e34d70bd91ecd896eba4329d775a95d696bed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc7336469f93de9e6d2b07fe73df9dce2eafd47f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979649"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941797"
 ---
 # <a name="downgradejustification-resource-type"></a>downgradeJustification 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "47979649"
 
 | 属性             | 类型    | 说明                                                                                          |
 | :------------------- | :------ | :--------------------------------------------------------------------------------------------------- |
-| isDowngradeJustified | Boolean | 指示降级是还是未两端对齐。                                              |
-| justificationMessage | String  | 指示降级的原因的消息。 该邮件将显示在 "管理日志" 中。 |
+| isDowngradeJustified | Boolean | 指示降级是否两端对齐。                                              |
+| justificationMessage | String  | 指明理由降级的消息。 该消息将显示在管理日志中。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

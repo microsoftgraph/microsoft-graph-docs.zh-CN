@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ba0b0b2d7c2269358bf6d6cd48d6bf6694fc10ab
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 630c558981b3dc9bbb0ec48c9a81ff74868c43bb
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128842"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941829"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>cloudAppSecuritySessionControl 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "50128842"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | 指定是否启用会话控件。 |
-|cloudAppSecurityType|字符串 | 可取值为：`mcasConfigured`、`monitorOnly`、`blockDownloads`。 在此处了解有关这些值的更多信息： https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| 可取值为：`mcasConfigured`、`monitorOnly`、`blockDownloads`。 在此处了解有关这些值的更多信息： https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
 
 ## <a name="relationships"></a>关系
 

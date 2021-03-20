@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 888fb523ad54f840b5ecbc807b5ed46c8f798efb
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 545c826cc6f01fba24a16da977186db796fd1aeb
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574900"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942677"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -18,7 +18,7 @@ ms.locfileid: "50574900"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 [创建](../resources/call.md) 呼叫，机器人可以创建新的传出对等呼叫或组呼叫，或加入现有会议。 你将需要注册 [调用机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) ，并浏览下面提到的所需权限列表。
+Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call， or join an existing meeting. 你需要注册 [呼叫机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并浏览所需的权限列表，如下所示。
 
 > **注意：** 目前，仅支持 VoIP 呼叫。 
 
@@ -30,9 +30,9 @@ ms.locfileid: "50574900"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                                                           |
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| 应用程序                            | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate。All、Calls.InitiateGroupCalls.All |
+| 应用程序                            | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate。全部，Calls.InitiateGroupCalls.All |
 
-> **注意：** 对于具有应用托管媒体的呼叫，除了列出的其中一个权限之外，还需要 Calls.AccessMedia.All 权限。
+> **注意：** 对于使用应用托管媒体的呼叫，除了列出的权限之一之外，还需要 Calls.AccessMedia.All 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,10 +49,10 @@ POST /communications/calls
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供调用对象的 JSON [表示形式](../resources/call.md) 。
+在请求正文中，提供 call 对象的 JSON [表示](../resources/call.md) 形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码 `201 Created` 和调用对象。 [](../resources/call.md)
+如果成功，此方法在响应 `201 Created` 正文中返回 [响应](../resources/call.md) 代码和 call 对象。
 
 ## <a name="examples"></a>示例
 
@@ -61,13 +61,13 @@ POST /communications/calls
 > **注意：** 此调用需要Calls.Ini平铺。所有权限。
 
 ##### <a name="request"></a>请求
-以下示例显示了在自动程序与指定用户之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，使示例有效。
+下面的示例展示了在机器人和指定用户之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-1",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -99,19 +99,19 @@ Content-Type: application/json
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -272,7 +272,7 @@ Content-Type: application/json
 > **注意**：此示例需要Calls.Ini平铺。All 和 Calls.AccessMedia.All 权限。
 
 ##### <a name="request"></a>请求
-以下示例显示了在自动程序与指定用户之间进行对等呼叫的请求。 本示例中，媒体由应用程序在本地托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，使示例有效。
+下面的示例展示了在机器人和指定用户之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -557,11 +557,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例 5：使用服务托管媒体加入计划会议
-若要加入计划的会议，我们需要获取计划会议的线程 ID、消息 ID、组织者 ID 和租户 ID。
+### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例 5：使用服务托管媒体加入安排的会议
+若要加入安排的会议，我们需要获取主题 ID、消息 ID、组织者 ID 和计划会议的租户 ID。
 此信息可以从 Get Online [Meetings API 获取](../api/onlinemeeting-get.md)。
 
-必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 Get Online  [Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，使示例有效。
+必须将授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 Get Online  [Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，以确保示例有效。
 > **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限。
 
 ##### <a name="request"></a>请求
@@ -908,10 +908,10 @@ Content-Type: application/json
 }
 ```
 
->**注意：** 对于除呼叫状态通知外加入会议方案，我们接收名单通知。
+>**注意：** 对于除呼叫状态通知之外加入会议方案，我们接收名单通知。
 
 ### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>示例 6：使用应用托管媒体加入计划会议
-若要使用应用程序托管媒体加入会议，请通过 [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) 更新媒体配置，如下所示，如上文提供的示例所示。
+若要使用应用程序托管媒体加入会议，请通过 [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) 更新媒体配置，如下所示，在以上示例中提供。
 
 <!-- {
   "blockType": "example",
@@ -957,9 +957,9 @@ Content-Type: application/json
 
 
 ### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>示例 7：使用服务托管媒体加入频道会议
-频道内的会议需要特定的详细信息，如线程 ID、messageid 和组织者详细信息，可以使用[Get Online 会议 API 获取。](../api/onlinemeeting-get.md)
+频道内的会议需要特定的详细信息，如主题 ID、messageid 和组织者详细信息，可以使用 [Get Online Meetings API 获取](../api/onlinemeeting-get.md)。
 
-必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 Get Online  [Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，使示例有效。
+必须将授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 Get Online  [Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，以确保示例有效。
 
 > **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限。
 
@@ -1016,7 +1016,7 @@ Content-Type: application/json
 
 ### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>示例 8：使用服务托管媒体作为来宾加入频道会议
 若要以来宾身份加入频道会议，你需要创建来宾标识，并将其添加到加入[](../resources/identityset.md)会议请求中的呼叫源。
-显示名称是您希望在会议中显示的来宾标识的名称。 ID 可能是标识来宾标识的唯一 ID。
+the 显示名称 is the name you want to be displayed in the meeting for your guest identity. id 可能是标识来宾标识的唯一 ID。
 
 > **注意：** 此示例需要 `Calls.JoinGroupCallsAsGuest.All` 权限。
 
@@ -1081,7 +1081,7 @@ Content-Type: application/json
   }
 }
 ```
-> **注意：** 来宾加入取决于会议租户设置。 应用程序可能会置于大厅中，等待用户进入。 此属性由 `isInLobby` 属性定义
+> **注意：** 来宾加入取决于会议租户设置。 应用程序可能会进入会议厅，等待用户进行注册。 此属性由 `isInLobby` 属性定义
 
 ##### <a name="notification---roster"></a>通知 - 名单
 
@@ -1136,20 +1136,22 @@ Content-Type: application/json
   ]
 }
 ```
-> **注意：** 在从会议厅中获准加入会议之前，应用程序不会收到与会者名单
+> **注意：** 在从会议厅中获准加入会议之前，应用程序不会接收会议参与者名单
 
 ### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>示例 9：使用服务托管媒体创建对等 PSTN 呼叫
 
 > **注意：** 此调用需要Calls.Ini平铺。所有权限。
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为自动程序分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
-以下示例显示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，使示例有效。
+下面的示例展示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-2",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -1194,6 +1196,16 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -1287,14 +1299,16 @@ Content-Type: application/json
 
 > **注意**：此示例要求Calls.Ini平铺。All 和 Calls.AccessMedia.All 权限。
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为自动程序分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
-以下示例显示一个请求，请求在自动程序与 PSTN 号码之间进行对等呼叫。 本示例中，媒体由应用程序在本地托管。 替换授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值，使示例正常工作。
+以下示例显示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 替换授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值，使示例正常工作。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-3",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -1340,6 +1354,16 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

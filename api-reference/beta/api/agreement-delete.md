@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 00429565e3b23547573653186fdea00b6aea760c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 13cf687f49715a74dfae6160ca0c883267f6fdac
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774024"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942915"
 ---
 # <a name="delete-agreement"></a>删除协议
 
@@ -26,7 +26,12 @@ ms.locfileid: "50774024"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
+
+代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
++ 全局管理员
++ 条件访问管理员
++ 安全管理员
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: c62fc34d83f8602cb0da56027e4def5d2d904e7e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 491c91bb36d2ad3ba55f0f9ad8c2ad2765f15a2c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771209"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942888"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -26,7 +26,12 @@ ms.locfileid: "50771209"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
+
+代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
++ 全局管理员
++ 条件访问管理员
++ 安全管理员
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +50,11 @@ POST /identityGovernance/termsOfUse/agreements
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|协议的显示名称。|
+|displayName|String|协议的显示名称。|
 |isViewingBeforeAcceptanceRequired|Boolean|指示用户在接受之前是否必须展开和查看协议。|
-|files/fileName|字符串|协议文件的名称 (例如，TOU.pdf) 。|
+|files/fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
 |files/isDefault|Boolean|指示当没有任何区域性与客户端首选项匹配时，这是否是默认协议文件。 如果没有文件标记为默认文件，则第一个文件将被视为默认文件。|
-|文件/语言|字符串|格式为 languagecode2-country/regioncode2 的协议文件的区域性。 languagecode2 是从 ISO 639-1 派生的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个小写字母或 BCP-47 语言标记 (例如 en-US) 。|
+|文件/语言|String|格式为 languagecode2-country/regioncode2 的协议文件的区域性。 languagecode2 是从 ISO 639-1 派生的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个小写字母或 BCP-47 语言标记 (例如 en-US) 。|
 |files/fileData/data|Binary|表示 PDF 文档的使用条款的数据。|
 
 ## <a name="response"></a>响应
