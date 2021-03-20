@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 17ab44d9b197872d5a4841898d89eb1f409ed0bb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a8f0afb5d3051d6c269810454980c4930ac3dfb7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978337"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945904"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978337"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[plannerPlan](../resources/plannerplan.md)对象包含的[plannerBucket](../resources/plannerbucket.md)对象的列表。
+检索[plannerPlan](../resources/plannerplan.md) [对象包含的 plannerBucket](../resources/plannerbucket.md)对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,7 +44,7 @@ GET /planner/plans/{plan-id}/buckets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [plannerBucket](../resources/plannerbucket.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [plannerBucket](../resources/plannerbucket.md) 对象集合。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 ## <a name="example"></a>示例
@@ -54,25 +54,25 @@ GET /planner/plans/{plan-id}/buckets
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_buckets"
+  "name": "get_buckets_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/buckets
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-buckets-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-buckets-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-buckets-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-buckets-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-buckets-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-buckets-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-buckets-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-buckets-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

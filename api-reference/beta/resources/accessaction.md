@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: ItemActivity 上的 accessAction 资源是否存在指示活动访问了某个项目。
+description: itemActivity 上存在 accessAction 资源指示活动已访问项目。
 ms.date: 09/12/2018
 title: AccessAction
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a09946574973590badc818cf84c2b146e652b3c9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 1c01a989b56e78beccb09930ac67ba262fa374f5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081772"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945721"
 ---
 # <a name="accessaction-resource-type"></a>accessAction 资源类型
 
@@ -19,9 +19,9 @@ ms.locfileid: "48081772"
 
 
 
-[**ItemActivity**][activity]上的**accessAction**资源是否存在指示活动访问了某个项目。
+[**itemActivity**][activity]上 **存在 accessAction** 资源指示活动已访问项目。
 
->**注意：** Access 活动记录目前仅适用于 SharePoint 和 OneDrive for Business。
+>**注意：** 访问活动记录目前仅在 SharePoint 和 OneDrive for Business 上可用。
 
 [activity]: itemactivity.md
 

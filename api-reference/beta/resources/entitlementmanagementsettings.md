@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b4b6ee584e671e070955eb7c065c59cb8481c375
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1b6138bc52e5686af94a94cfa13762b71a6242c4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440351"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945688"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>entitlementManagementSettings 资源类型
 
@@ -31,8 +31,8 @@ ms.locfileid: "50440351"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|externalUserLifecycleAction|String|之一 `None` `BlockSignIn` ， 或 `BlockSignInAndDelete` 。 |
-|daysUntilExternalUserDeletedAfterBlocked|Int64|如果为 ，则删除外部用户的帐户之前阻止其 `externalUserLifecycleAction` `BlockSignInAndDelete` 登录的天数。|
+|externalUserLifecycleAction|String|、 `None` `BlockSignIn` 或 `BlockSignInAndDelete` 之一。 |
+|daysUntilExternalUserDeletedAfterBlocked|Int64|如果 **externalUserLifecycleAction** 为 ，则外部用户在删除其帐户之前被阻止 `BlockSignInAndDelete` 登录的天数。|
 
 ## <a name="relationships"></a>关系
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 211da04ab14accf36269cf92550d0893a75b2679
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 6f0f6d932c8384838b5310082e0fd5d82fd3ceab
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573597"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944905"
 ---
 # <a name="list-tables"></a>列出表格
 
@@ -24,7 +24,7 @@ ms.locfileid: "50573597"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 WorkbookTable](../resources/table.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [WorkbookTable](../resources/table.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -54,25 +54,25 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_tables"
+  "name": "get_tables_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/tables
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-tables-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-tables-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-tables-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-tables-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-tables-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-tables-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-tables-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-tables-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

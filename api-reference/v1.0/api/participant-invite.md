@@ -1,24 +1,24 @@
 ---
-title: 参与者：invite
+title: participant： invite
 description: 邀请参与者加入活动呼叫。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 697a9f6a25b498f6e76b726978b1ce4ccf9636d5
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 33b36c9657e4975f404696ae0451fc7f2c5c54a2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577994"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945144"
 ---
-# <a name="participant-invite"></a>参与者：invite
+# <a name="participant-invite"></a>participant： invite
 
 命名空间：microsoft.graph
 
 邀请参与者加入活动呼叫。
 
-若要详细了解如何处理操作，请参阅[通信。](../resources/commsoperation.md)
+若要详细了解如何处理操作，请参阅 [commsoperation](../resources/commsoperation.md)。
 
 >**注意：** 此 API 仅支持组调用。
 
@@ -29,7 +29,7 @@ ms.locfileid: "50577994"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| Application     | Calls.InitiateGroupCalls.All                               |
+| 应用程序     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,12 +49,12 @@ POST /communications/calls/{id}/participants/invite
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合| 要邀请的参与者。|
-|clientContext|String|唯一客户端上下文字符串。 最大限制为 256 个字符。|
+|clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法会向为此请求创建的 `200 OK` [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 返回响应代码和具有 URI 的位置标头。 
+如果成功，此方法将返回响应代码和具有为此请求创建的 `200 OK` [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 的 URI 的位置标头。 
 
-响应的正文包含已创建的[inviteParticipantsOperation。](../resources/inviteparticipantsoperation.md)
+响应的正文包含已创建的 [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 
@@ -64,14 +64,14 @@ POST /communications/calls/{id}/participants/invite
 
 > **注意：** 为了可读性，可能会缩短响应对象。 所有属性都将通过实际调用返回。
 
-### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>示例 1：邀请一个参与者加入现有组通话
+### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>示例 1：邀请一个参与者加入现有组呼叫
 
 ##### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "participant-invite"
+  "name": "participant-invite-1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
@@ -96,19 +96,19 @@ Content-Type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -252,7 +252,7 @@ Content-Type: application/json
 
 ### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>示例 2：邀请多个参与者加入现有组呼叫
 
-> **注意**：现有组呼叫必须具有有效的 [chatInfo](../resources/chatInfo.md)。 最多支持邀请 5 个参与者。
+> **注意**：现有组调用必须具有有效的 [chatInfo](../resources/chatInfo.md)。 支持邀请最多 5 个参与者。
 
 ##### <a name="request"></a>请求
 
@@ -506,11 +506,11 @@ Content-Type: application/json
 ### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>示例 3：邀请参与者加入现有组呼叫，替换现有的对等呼叫
 
 
-替换现有对等调用时，邀请 API 仅支持一个参与者。 当请求正文中提供了多个参与者时，只会读取第一个参与者，其余参与者将被忽略。
+替换现有的对等调用时，邀请 API 仅支持一个参与者。 当请求正文中提供了多个参与者时，只会读取第一个参与者，其余参与者将被忽略。
 
 
 > **注意：** 提供邀请 API 时，仅支持一 `replacesCallId` 个参与者。 
-> 有关使用替换现有对等呼叫的详细信息，请参阅 `replacesCallId` [invitationParticipantInfo。](../resources/invitationparticipantinfo.md)
+> 有关使用 替换现有对等呼叫的详细信息，请参阅 `replacesCallId` [invitationParticipantInfo](../resources/invitationparticipantinfo.md)。
 
 ##### <a name="request"></a>请求
 
@@ -698,11 +698,11 @@ Content-Type: application/json
 }
 ```
 
->**注意：** 对于"已完成"状态，您可以预期收到有关原始对等呼叫如何终止和删除的通知。
+>**注意：** 在"已完成"状态下，您可以收到有关原始对等呼叫如何终止和删除的通知。
 
 ### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>示例 4：邀请一个 PSTN 参与者加入现有组呼叫
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为自动程序分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 
@@ -710,7 +710,7 @@ Content-Type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "participant-invite"
+  "name": "participant-invite-2"
 }-->
 ```http
 POST /communications/calls/{id}/participants/invite
@@ -734,11 +734,11 @@ Content-Length: 464
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -883,7 +883,7 @@ Content-Type: application/json
 
 ```
 
->**注意：** 在状态中，可以预期收到有关原始对等呼叫如何 `completed` 终止和删除的通知。
+>**注意：** 状态为，可以预期收到有关原始对等呼叫如何 `completed` 终止和删除的通知。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

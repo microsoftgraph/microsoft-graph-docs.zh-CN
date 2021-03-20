@@ -5,23 +5,23 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 97b698a2a74925451228dec6c11b167551ec4420
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a51ffa28290b51539dd8ccbcc95c71917b15db0d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719963"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944348"
 ---
 # <a name="list-recoverykeys"></a>列出 recoveryKeys
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [bitlockerRecoveryKey 对象及其](../resources/bitlockerrecoverykey.md) 属性的列表。 
+获取 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象及其属性的列表。 
 
-此操作不会返回 **键** 属性。 若要了解如何读取键属性 **，** 请参阅 [获取 bitlockerRecoveryKey](bitlockerrecoverykey-get.md)。
+此操作不会返回 **key** 属性。 若要了解如何读取 key 属性 **，请参阅** 获取 [bitlockerRecoveryKey](bitlockerrecoverykey-get.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -30,7 +30,7 @@ ms.locfileid: "50719963"
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|不支持|
 
->**注意**：对于允许应用代表登录用户获取 BitLockerRecoveryKey 资源的委派权限，租户管理员必须为用户分配以下角色之一，或者用户必须是最初备份 BitLocker 恢复密钥的设备注册所有者： 
+>**注意**：对于允许应用代表登录用户获取 BitLockerRecoveryKey 资源的委派权限，租户管理员必须已向用户分配以下角色之一，或者用户必须是最初备份 BitLocker 恢复密钥的设备注册所有者： 
 * 全局管理员
 * 云设备管理员
 * 支持人员管理员
@@ -40,7 +40,7 @@ ms.locfileid: "50719963"
 * 全局读取者
 
 ## <a name="http-request"></a>HTTP 请求
-若要获取租户内的 BitLocker 密钥列表，
+若要获取租户内的 BitLocker 密钥列表，请进行以下操作：
 
 <!-- {
   "blockType": "ignored"
@@ -50,7 +50,7 @@ ms.locfileid: "50719963"
 GET /informationProtection/bitlocker/recoveryKeys
 ```
 
-若要获取按设备 ID 筛选的租户内的 BitLocker **密钥列表：**
+若要获取按设备 ID 筛选的租户内的 BitLocker 密钥 **列表：**
 
 <!-- {
   "blockType": "ignored"
@@ -61,23 +61,23 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData 查询参数，以按最近备份密钥的设备 `$filter` **ID** 筛选结果。 此方法不支持 `$top` 筛选器。 有关详细信息，请参阅[示例 2。](#example-2) 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData 查询参数按最近备份密钥的设备 `$filter` **ID** 筛选结果。 此方法不支持 `$top` 筛选器。 有关详细信息，请参阅示例[2。](#example-2) 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-该响应可能还包含 `odata.nextLink` 一个 ，您可以使用它分页浏览结果集。 有关详细信息，请参阅 [分页 Microsoft Graph 数据](/graph/paging)。
+该响应可能还包含 `odata.nextLink` ，您可以使用 它分页浏览结果集。 有关详细信息，请参阅 [分页 Microsoft Graph 数据](/graph/paging)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|ocp-client-name|执行 API 调用的客户端应用程序的名称。 必需。|
-|ocp-client-version|执行 API 调用的客户端应用程序的版本。 必需。|
+|ocp-client-name|执行 API 调用的客户端应用程序的名称。 必填。|
+|ocp-client-version|执行 API 调用的客户端应用程序的版本。 必填。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -90,7 +90,7 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_1"
 }
 -->
 ``` http
@@ -99,19 +99,19 @@ ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -161,7 +161,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "request",
   "sampleIds": ["1ab40ab2-32a8-4b00-b6b5-ba724e407de9"],
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_2"
 }
 -->
 ``` http
@@ -170,19 +170,19 @@ ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

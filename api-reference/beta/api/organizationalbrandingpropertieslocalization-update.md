@@ -1,24 +1,24 @@
 ---
-title: 更新本地化的 organizationalbrandingproperties
-description: 为特定本地化更新 organizationalbrandingproperties 对象的属性。
+title: 更新本地化的组织品牌设置
+description: 更新特定本地化的 organizationalbrandingproperties 对象的属性。
 localization_priority: Normal
 author: kexia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 42f55715cdb43abec4da9142953c6ccb74722bd2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7beb0ec43fb0369ad958914b966d68a6134ab8a3
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434032"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943787"
 ---
-# <a name="update-localized-organizationalbrandingproperties"></a>更新本地化的 organizationalbrandingproperties
+# <a name="update-localized-organizationalbrandingproperties"></a>更新本地化的组织品牌设置
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为特定本地化更新 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象的属性。
+更新 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象的属性，以用于特定本地化。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "50434032"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,13 +51,13 @@ PUT /organization/{id}/branding/localizations/{locale}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|backgroundColor|String|将出现在低带宽连接中的背景图像的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制值指定 (，例如，白色#FFFFFF) 。|
-|backgroundImage|Stream|显示为登录页背景的图像。 .png 或 .jpg 不大于 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，使页面加载性能提高。|
-|bannerLogo|Stream|显示在登录页面上的公司徽标的横幅版本。 .png 或 .jpg 不大于 36x245px。 我们建议使用透明图像，徽标周围没有填充。|
-|signInPageText|String|显示在登录框底部的文本。 可以使用此信息将其他信息（如电话号码）传达给技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
-|squareLogo|Stream|公司徽标的方形版本。 这将显示在 Windows 10 现 (OOBE) 和启用 Windows Autopilot 进行部署时。 .png 或 .jpg 大小不超过 240x240px，大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
-|usernameHintText|String|在登录屏幕上的用户名文本框中作为提示的字符串。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
-|id|String|要更新其品牌设置区域设置|
+|backgroundColor|String|将出现在低带宽连接中的背景图像上的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制表示 (，例如，白色#FFFFFF) 。|
+|backgroundImage|Stream|显示为登录页背景的图像。 .png 或 .jpg 不大于 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，提高页面加载性能。|
+|bannerLogo|Stream|显示在登录页上的公司徽标的横幅版本。 .png 或 .jpg 不超过 36x245px。 我们建议使用透明图像，徽标周围没有填充。|
+|signInPageText|String|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
+|squareLogo|Stream|公司徽标的方形版本。 这将显示在 Windows 10 现成 (OOBE) 以及启用 Windows Autopilot 进行部署时。 .png 或 .jpg 不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
+|usernameHintText|String|字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
+|id|String|要更新其品牌设置的本地设置|
 
 
 ## <a name="response"></a>响应
@@ -66,9 +66,9 @@ PUT /organization/{id}/branding/localizations/{locale}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-setting-bannerlogo-for-the-fr-localization-using-put"></a>示例 1：使用 PUT 设置 fr 本地化的 **bannerLogo**
+### <a name="example-1-setting-bannerlogo-for-the-fr-localization-using-put"></a>示例 1：使用 PUT 为 fr 本地化设置 **bannerLogo**
 
-以下请求更新 fr 本地化的横幅徽标。 使用 PUT 时，如果 fr 本地化不存在，则返回"未找到 404"。 如果有效负载包含 id 属性或 Content-Language 标头，并且它们与 URL 中的 ID 不匹配，则返回错误请求。
+以下请求更新 fr 本地化的横幅徽标。 使用 PUT，如果 fr 本地化不存在，则返回"找不到 404"。 如果有效负载包含 id 属性或 Content-Language 标头，并且它们与 URL 中的 id 不匹配，则返回错误请求。
 
 #### <a name="request"></a>请求
 
@@ -77,7 +77,7 @@ PUT /organization/{id}/branding/localizations/{locale}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_5"
 }-->
 
 ```http
@@ -87,11 +87,11 @@ Content-Type: image/jpeg
 <Image>
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-5-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
@@ -99,7 +99,7 @@ Content-Type: image/jpeg
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -121,7 +121,7 @@ HTTP/1.1 204 NO CONTENT
 
 ### <a name="example-2-update-bannerlogo-for-the-fr-localization-using-patch"></a>示例 2：使用 PATCH 更新 fr 本地化的 **bannerLogo**
 
-以下请求更新 fr 本地化的横幅徽标。  使用 PATCH，如果指定的本地化不存在，则创建它，并写入属性。
+以下请求更新 fr 本地化的横幅徽标。  使用 PATCH，如果指定的本地化尚未存在，将创建它，并写入属性。
 
 #### <a name="request"></a>请求
 
@@ -130,7 +130,7 @@ HTTP/1.1 204 NO CONTENT
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_6"
 }-->
 
 ```http
@@ -143,19 +143,19 @@ Content-Type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-6-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-6-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-6-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -178,14 +178,14 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-override-default-branding-value-with-a-blank-string"></a>示例 3：使用空字符串替代默认品牌值
 
-如果本地化中的属性值为 null，则该值将继承自默认品牌。 若要防止这种情况发生，请设置一个空字符串或字符串，其中仅包含本地化品牌中的空白。
+如果本地化中的属性值为 null，则该值将继承自默认品牌。 为了防止发生这种情况，请设置一个空字符串或字符串，其中仅包含本地化品牌中的空白。
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_7"
 }-->
 
 ```http
@@ -217,8 +217,8 @@ HTTP/1.1 204 No Content
 ### <a name="example-4-replace-french-localization-with-put"></a>示例 4：将法语本地化替换为 PUT
 
 若要使用 PUT 更新本地化，应在正文中添加所有属性以及需要更新的属性，因为 PUT 将现有对象替换为新对象。 其他不在 PUT 的有效负载正文中的属性将设置为 NULL。 下面的示例中，仅保留 backgroundColor 属性，并更新 signInPageText，而其他属性设置为 null。
-如果指定的本地化不存在，PUT to the URL 指定本地化将创建它。
-如果有效负载包含 id 属性或 Content-Language 标头，并且它们与 URL 中的 ID 不匹配，我们将引发错误请求。
+如果指定的本地化不存在，PUT 到指定本地化创建它的 URL。
+如果有效负载包含 id 属性或 Content-Language 标头，并且它们与 URL 中的 id 不匹配，我们将引发错误请求。
 
 #### <a name="request"></a>请求
 
@@ -227,7 +227,7 @@ HTTP/1.1 204 No Content
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_8"
 }-->
 
 ```http
@@ -240,19 +240,19 @@ Content-Type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-8-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-8-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-8-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-8-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

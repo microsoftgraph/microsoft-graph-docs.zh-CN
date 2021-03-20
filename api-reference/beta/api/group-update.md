@@ -1,16 +1,16 @@
 ---
 title: 更新组
-description: 更新 [组](../resources/group.md) 对象的属性。
+description: 更新 group [对象的属性](../resources/group.md) 。
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ca2f6815f1206807d680100c04951bec6115ea91
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f52ad13f778891614df3ae45ed2bf12ce29ffb75
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953745"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944249"
 ---
 # <a name="update-group"></a>更新组
 
@@ -18,7 +18,7 @@ ms.locfileid: "48953745"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [组](../resources/group.md) 对象的属性。
+更新 group [对象的属性](../resources/group.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -50,23 +50,23 @@ PATCH /groups/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|默认为 **false** 。指明组织外部人员能否向群组发送邮件。|
-|autoSubscribeNewMembers|Boolean|默认为 **false** 。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
+|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
+|autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
 |description|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
-|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified** ，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership** ，则该组具有动态成员身份；否则，成员身份是静态的。 |
+|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
-|securityEnabled|布尔|指定该组是否为安全组，包括 Microsoft 365 组。 |
-|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是： **专用** 、 **公用** 或空（解释为 **公用** ）。|
+|securityEnabled|Boolean|指定组是否是安全组，包括 Microsoft 365 组。 |
+|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|
 
-由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **组** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **组** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有组实例中扩展的自定义属性中你自己的特定于 `PATCH` 应用的数据。
 
 
 > **注意：**
 >
-> - 可以更新 **autoSubscribeNewMembers** ，方法是在其自身的 PATCH 请求中指定它，而不包括上表中的其他属性。
-> - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers** ）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#group)。
+> - 可以更新 **autoSubscribeNewMembers**，方法是在其自身的 PATCH 请求中指定它，而不包括上表中的其他属性。
+> - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#group)。
 > - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。
 
 
@@ -77,7 +77,7 @@ PATCH /groups/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-display-name-and-description-of-a-group"></a>示例1：更新组的显示名称和说明
+### <a name="example-1-update-display-name-and-description-of-a-group"></a>示例 1：显示名称组更新组和说明
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
@@ -86,7 +86,7 @@ PATCH /groups/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_group"
+  "name": "update_group_1"
 }-->
 
 ```http
@@ -100,19 +100,19 @@ Content-length: 211
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-group-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -130,14 +130,16 @@ Content-length: 211
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>示例2：将敏感度标签应用于 Microsoft 365 组
+### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>示例 2：将敏感度标签应用于 Microsoft 365 组
 #### <a name="request"></a>请求
 
-您可以使用 [列表标签](informationprotectionpolicy-list-labels.md)获取要应用于 Microsoft 365 组的标签的 ID。 然后，可以使用标签 ID 更新组的 [assignedLabels](../resources/assignedlabel.md) 属性。 
+可以使用列表标签 获取要应用于 Microsoft 365 组[的标签的 ID。](informationprotectionpolicy-list-labels.md) 然后，可以使用标签 ID 更新组的 [assignedLabels](../resources/assignedlabel.md) 属性。 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_group"
+  "name": "update_group_2"
 }-->
 
 ```http
@@ -154,6 +156,24 @@ Content-length: 211
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-group-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

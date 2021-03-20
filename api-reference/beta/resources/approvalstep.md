@@ -1,16 +1,16 @@
 ---
 title: approvalStep 资源类型
-description: 与 accessPackageAssignmentRequest 关联的 approvalStep 对象。
+description: 与 accessPackageAssignmentRequest 或 userConsentRequest 关联的 approvalStep 对象。
 localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 263e809e5858cdc23b34b8401171bb5fce668721
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 94c37320d17a72e0734d856c24cdff49308c9463
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761252"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945709"
 ---
 # <a name="approvalstep-resource-type"></a>approvalStep 资源类型
 
@@ -20,7 +20,9 @@ ms.locfileid: "50761252"
 
 在 [Azure AD 权利管理](entitlementmanagement-root.md)中，与 关联的决策的 approvalStep 对象 `accessPackageAssignmentRequest` 。 它用于区分审批者可以处理审批工作流的不同步骤的决策。
 
-## <a name="methods"></a>方法
+在 [userConsentRequests](../resources/userconsentrequest.md)中，与请求关联的审批决策。
+
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -31,14 +33,15 @@ ms.locfileid: "50761252"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
+|assignedToMe|Boolean|指示是否将步骤分配给呼叫用户进行审阅。 只读。|
+|displayName|String|策略创建者提供的标签，用于标识审批步骤。 只读。|
 |id|String|与审批对象关联的步骤的标识符。 只读。|
-|displayName|String|策略创建者提供的标签，用于标识审批步骤。 只读|
-|状态|String|步骤状态。 可能的值： `InProgress` 或 `Completed` 。 只读。|
-|assignedToMe|布尔|指示是否将步骤分配给呼叫用户进行审阅。 只读。|
-|reviewedBy|[userIdentity](useridentity.md) 集合 | 审阅者的标识符。 只读。|
-|reviewedDateTime|DateTimeOffset|记录决策的日期和时间。 只读。|
-|reviewResult|String|此审批记录的结果。 可能的值包括 `NotReviewed` `Approved` `Denied` ：、、。|
 |justification|String|与审批步骤决策关联的理由。|
+|reviewResult|String|此审批记录的结果。 可能的值包括 `NotReviewed` `Approved` `Denied` ：、、。|
+|reviewedBy|[userIdentity](useridentity.md) 集合 | 审阅者的标识符。 只读。|
+|reviewedDateTime|DateTimeOffset|记录决策的日期和时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
+|状态|String|步骤状态。 可能的值 `InProgress` `Initializing` `Completed` ：、、、。 `Expired` 只读。|
+
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

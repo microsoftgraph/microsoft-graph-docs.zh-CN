@@ -1,16 +1,16 @@
 ---
 title: identitySecurityDefaultsEnforcementPolicy 资源类型
-description: 代表 Azure Active Directory 安全默认策略。 安全默认设置包含防止常见攻击的预配置安全设置。
+description: 表示 Azure Active Directory 安全默认值策略。 安全默认值包含预配置的安全设置，可抵御常见攻击。
 localization_priority: Normal
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b06fd0b88a87dabb5a12e09b788094b8e00b8960
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 249396b0c2bfc4b39ca21c198958adc3d0b9e228
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440253"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945640"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>identitySecurityDefaultsEnforcementPolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50440253"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表 Azure Active Directory [安全默认](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) 策略。 安全默认设置包含防止常见攻击的预配置安全设置。
+表示 Azure Active Directory [安全默认值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) 策略。 安全默认值包含预配置的安全设置，可抵御常见攻击。
 
 继承自 [policyBase](../resources/policybase.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "50440253"
 |说明|String|此策略的说明。 只读。|
 |displayName|String|此策略的显示名称。 只读。|
 |id|String|此策略的标识符。 只读。|
-|isEnabled|Boolean|如果设置为 true，则为租户启用 Azure Active Directory 安全默认值。|
+|isEnabled|Boolean|如果设置为 `true` ，则为租户启用 Azure Active Directory 安全默认值。|
 
 ## <a name="relationships"></a>关系
 

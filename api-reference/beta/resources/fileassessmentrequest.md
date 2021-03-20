@@ -3,14 +3,14 @@ title: fileAssessmentRequest 资源类型
 description: 用于创建和检索文件威胁评估。
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: ce0280eb465474dab26658c9d31bfc90e368ff21
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 51211fd4ab732525423617bb3bdcb6c00091ac86
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722151"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945653"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>fileAssessmentRequest 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50722151"
 
 该文件可以是在电子邮件附件中收到的文本文件、Word 文档或二进制文件。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -33,7 +33,7 @@ ms.locfileid: "50722151"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|contentData|String|Base64 编码的文件内容。 文件内容无法取回，因为它未存储。|
+|contentData|String|Base64 编码文件内容。 文件内容无法取回，因为它未存储。|
 |fileName|String|文件名。|
 |“类别”|[threatCategory](enums.md#threatcategory-values)|威胁类别。 可取值为：`spam`、`phishing`、`malware`。|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|威胁评估的内容类型。 可取值为：`mail`、`url`、`file`。|
@@ -48,7 +48,7 @@ ms.locfileid: "50722151"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下，除非 `GET /threatAssessmentRequests/{id}` 应用此属性，否则不会返回 `$expand` 此属性。|
+|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下， `GET /threatAssessmentRequests/{id}` 除非对该属性应用 ，否则 不会返回 `$expand` 此属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

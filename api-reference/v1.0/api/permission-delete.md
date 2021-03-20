@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: 删除对项的访问权限
+title: 删除对项目的访问权限
 localization_priority: Normal
 description: 删除 DriveItem 访问权限。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ea5e5eca29db3ffb668f6e4e126e4c127b2a7cfc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: c21c3685aa2471026e5d7ff9e10e6f84370c4673
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240148"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945100"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
 
@@ -60,25 +60,25 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 
 # <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "delete-permission-1", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
 DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

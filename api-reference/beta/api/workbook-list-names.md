@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3be1d42dd4576ab4ab3d20f19256bcd073bda44b
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 799c867a39eb20be48b7d981eb28d548ac05a2fc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578638"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945759"
 ---
 # <a name="list-names"></a>列出名称
 
@@ -48,7 +48,7 @@ GET /me/drive/root:/{item-path}:/workbook/names
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 workbookNamedItem](../resources/workbooknameditem.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [workbookNamedItem](../resources/workbooknameditem.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -56,25 +56,25 @@ GET /me/drive/root:/{item-path}:/workbook/names
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_names"
+  "name": "get_names_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-names-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-names-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-names-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-names-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-names-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-names-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-names-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-names-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

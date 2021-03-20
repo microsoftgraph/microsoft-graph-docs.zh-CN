@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fb05bb2746a68d307a46651498163e570c7ca0f2
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 357d04c3d456dde08f666da0aa05a97c3f67c231
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516155"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945215"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -27,7 +27,7 @@ ms.locfileid: "50516155"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*          |
 
 > [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户，授权策略中配置的应用代表该用户 (用户 ID（在已创建的重新指定路径) 中指定）删除联机会议。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户该策略，授权策略中配置的应用代表该用户 (用户 ID（在) 已创建的重新指定路径中指定）删除联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 若要通过具有委派权限的会议 ID 删除指定的 onlineMeeting，请执行以下操作：
@@ -42,8 +42,8 @@ DELETE /me/onlineMeetings/{meetingId}
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
 > **注意：**
-> - `userId`是 Azure 用户管理门户中[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
-> - `meetingId`是[onlineMeeting 对象的](../resources/onlinemeeting.md)ID。
+> - `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -66,25 +66,25 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
 <!-- {
   "blockType": "request",
   "sampleKeys": ["550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype"],
-  "name": "delete-call"
+  "name": "delete-call-2"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

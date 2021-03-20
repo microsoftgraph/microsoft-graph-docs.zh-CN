@@ -5,23 +5,23 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49c79732c2953f3e6627061b621a99c00315a4ed
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: d55f1889a8134196760b133827bee2ec8c82b20e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719953"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944361"
 ---
 # <a name="get-bitlockerrecoverykey"></a>获取 bitlockerRecoveryKey
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [bitlockerRecoveryKey 对象的属性和](../resources/bitlockerrecoverykey.md) 关系。 
+检索 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象的属性和关系。 
 
-默认情况下，此操作不会返回表示实际恢复密钥的键属性。 若要在 **响应中包括键** 属性，请使用 `$select` OData 查询参数。 包含 `$select` 查询参数将触发操作 Azure AD 审核并生成审核日志。 可以在 KeyManagement 类别下的 [Azure AD 审核](/azure/active-directory/reports-monitoring/concept-audit-logs) 日志中找到日志。
+默认情况下，此操作不会返回表示实际恢复密钥的 key 属性。 若要在 **响应中包括 key** 属性，请使用 `$select` OData 查询参数。 包含 `$select` 查询参数将触发操作 Azure AD 审核，并生成审核日志。 可以在"KeyManagement"类别下的 [Azure AD](/azure/active-directory/reports-monitoring/concept-audit-logs) 审核日志中找到日志。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -40,7 +40,7 @@ ms.locfileid: "50719953"
 * 全局读取者
 
 ## <a name="http-request"></a>HTTP 请求
-若要获取指定的 BitLocker 密钥而不返回 **键** 属性，请执行以下操作：
+在不返回 key 属性的情况下获取指定的 BitLocker **密钥：**
 <!-- {
   "blockType": "ignored"
 }
@@ -49,7 +49,7 @@ ms.locfileid: "50719953"
 GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
-若要获取指定的 BitLocker 键（包括其 **键** 属性）：
+若要获取指定的 BitLocker 密钥（包括其 **key** 属性）：
 <!-- {
   "blockType": "ignored"
 }
@@ -59,26 +59,26 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$s
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` OData 查询参数返回 **键** 属性。 有关详细信息，请参阅[示例 2。](#example-2) 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数返回 **key** 属性。 有关详细信息，请参阅示例[2。](#example-2) 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|ocp-client-name|执行 API 调用的客户端应用程序的名称。 必需。|
-|ocp-client-version|执行 API 调用的客户端应用程序的版本。 必需。|
+|ocp-client-name|执行 API 调用的客户端应用程序的名称。 必填。|
+|ocp-client-version|执行 API 调用的客户端应用程序的版本。 必填。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1"></a>示例 1
-通过指定密钥 ID 获取 BitLocker **密钥**。本示例不返回 **键** 属性。
+通过指定密钥 ID 获取 BitLocker **密钥**。本示例不返回 **key** 属性。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -87,7 +87,7 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$s
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"],
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_3"
 }
 -->
 ``` http
@@ -96,19 +96,19 @@ ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -141,7 +141,7 @@ Content-type: application/json
 ```
 
 ### <a name="example-2"></a>示例 2
-通过指定键 ID 获取具有 **key** 属性的 BitLocker **键**。
+通过指定密钥 ID 获取 **具有 key** 属性的 BitLocker **密钥**。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -150,26 +150,26 @@ Content-type: application/json
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"],
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_4"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
