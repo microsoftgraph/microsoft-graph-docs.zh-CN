@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0aacf6169faf55e9196cb65e3abde4084ae2ac98
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ce5f35560a25f2a57742d93293788038e13cb179
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966570"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951829"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment： getResourcesFolderUrl
 
@@ -19,14 +19,14 @@ ms.locfileid: "48966570"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此函数返回 OneDrive URL，其中所有基于文件的资源 (Word、Excel 等) 应上载。  
-请注意，文件必须位于此文件夹中才能作为资源添加。 只有课堂中的老师可以确定要上载的文件。 
+请注意，文件必须位于此文件夹中才能添加为资源。 只有课堂中的教师可以确定要上载的文件。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、User.readbasic.all、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.Read  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 Ok` 响应代码。 正文将包含要在其中放置所有基于文件的资源的文件夹的 OneDrive URL。
+如果成功，此方法返回 `200 Ok` 响应代码。 正文将包含用于放入所有基于文件的资源的文件夹的 OneDrive URL。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -54,25 +54,25 @@ GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "educationassignment_publish"
+  "name": "educationassignment_publish_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

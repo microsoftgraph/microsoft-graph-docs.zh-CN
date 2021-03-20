@@ -1,20 +1,20 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 31d6ee6995c11a2ece8cc1e0311a78552d631ea3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8face8741b9ad54233f7e64ed57e3844128b0f6f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960768"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50971047"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("query", "Adventure"));
 
-IBookingBusinessCollectionPage bookingBusinesses = graphClient.bookingBusinesses()
+BookingBusinessCollectionPage bookingBusinesses = graphClient.bookingBusinesses()
     .buildRequest( requestOptions )
     .get();
 

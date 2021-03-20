@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 70d76a6cd2b1ea8bb95c3114c8b2ce9f1a398b92
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 457083d824759960e9197066eb8bb6ceed502fbe
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50179062"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50971936"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IAccessReviewCollectionPage accessReviews = graphClient.accessReviews()
+AccessReviewCollectionPage accessReviews = graphClient.accessReviews()
     .buildRequest()
     .filter("businessFlowTemplateId eq '6e4f3d20-c5c3-407f-9695-8460952bcc68'")
     .skip(0)

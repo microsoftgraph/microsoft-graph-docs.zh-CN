@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7376d6fca9abbf246b3ab2fd9b0a7591c32da613
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: a8c05b71c440925425d47fc19e5b836559e42b85
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714289"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950287"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -76,7 +76,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 
 | 属性名称| 类型   | 说明
 |:-----------------------|:-------|:-------------------------|
-|@microsoft. graph teamCreationMode|string|指示团队处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
+|@microsoft. graph teamCreationMode|string|指示团队处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。 **注意**：将来，Microsoft 可能会要求你或你的客户根据导入的数据量支付其他费用。|
 
 有关 POST 请求示例，请参阅[请求（创建处于迁移状态的团队）](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1a9069c33078b89fb818e27a9ce099ec546d1c5c
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: acfcb3dc067f69e8cf7e3e3b9295a6e9e5c8396c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479915"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952541"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -31,12 +31,12 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTg0NmQ3NTctZDVkZC00YzRhL
 https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context={"Tid":"72f988bf-86f1-41af-91ab-2d7cd011db47","Oid":"4b444206-207c-42f8-92a6-e332b41c88a2"}
 ```
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                             | 返回类型                                                 | 说明                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [Get](../api/call-get.md)                                     | [call](call.md)                                             | 读取 **call** 对象的属性。                                         |
-| [删除](../api/call-delete.md)                                    | 无                                                            | 删除或挂断活动**呼叫**。                                           |
+| [删除](../api/call-delete.md)                                    | 无                                                            | 删除或挂断活动 **呼叫**。                                           |
 | [KeepAlive](../api/call-keepalive.md)                             | 无                                                  | 确保通话不中断。
 | **呼叫处理**                                                  |                                                        |                                                                                 |
 | [Answer](../api/call-answer.md)                                    | 无                                                            | 应答传入呼叫。                                                        |
@@ -69,17 +69,17 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | callChainId         | String                                                                                                 | 一个针对会议中所有参与者的通话的唯一标识符，或一个针对 P2P 通话中两位参与者的通话的唯一标识符。  需要从 `Microsoft.Graph.Call.CallChainId` 复制它。 |
 | callRoutes         | [callRoute](callRoute.md) 集合                                                                                                 | 有关如何重定向呼叫的路由信息。 只读。                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天信息。 加入会议所需的信息。                                                                                                                              |
-| direction           | String                                                                                                 | 呼叫的方向。 可取值为 `incoming` 或 `outgoing`。 只读。                                                                                            |
+| direction           | callDirection                                                                                                 | 呼叫的方向。 可取值为 `incoming` 或 `outgoing`。 只读。                                                                                            |
 | id                  | 字符串                                                                                                 | 来电显示。只读。                                                                                                                                                                        |
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。 必需。                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | 只读。 通话媒体状态。 |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) 或 [tokenMeetingInfo](tokenmeetinginfo.md)             | 加入会议所需的会议信息。                                                                                                            |
 transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | 通话的脚本信息。 只读。    |
 | myParticipantId     | String                                                                                                 | 只读。                                                                                                                                                                        |
-| requestedModalities | String 集合                                                                                      | 请求模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
+| requestedModalities | modality 集合                                                                                      | 请求模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果信息。 例如，可以保留终止原因。 只读。                                                                                                        |
 | source              | [participantInfo](participantinfo.md)                                                                  | 呼叫的发起方。                                                                                                                                                                         |
-| state               | String                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 只读。                          |
+| state               | callState                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 只读。                          |
 | subject             | String                                                                                                 | 对话的主题。                                                                                                                                                                    |
 | targets             | [invitationParticipantInfo](participantinfo.md) 集合                                             | 呼叫的目标。 创建对等呼叫所需的信息。                                                                                                            |
 toneInfo            | [toneInfo](toneinfo.md)                                                                                | 只读。                                                                                                                                                                        |

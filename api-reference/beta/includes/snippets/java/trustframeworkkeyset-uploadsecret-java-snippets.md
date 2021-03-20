@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 881072d99366d4c1be509d24237d93a0a735628c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 56b29d065460b6338a2f9021794c0f7877306df6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972171"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50972218"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String use = "use-value";
 
@@ -20,7 +20,13 @@ Long nbf = 1508969811L;
 Long exp = 1508973711L;
 
 graphClient.trustFramework().keySets("{id}")
-    .uploadSecret(use,k,nbf,exp)
+    .uploadSecret(TrustFrameworkKeySetUploadSecretParameterSet
+        .newBuilder()
+        .withUse(use)
+        .withK(k)
+        .withNbf(nbf)
+        .withExp(exp)
+        .build())
     .buildRequest()
     .post();
 

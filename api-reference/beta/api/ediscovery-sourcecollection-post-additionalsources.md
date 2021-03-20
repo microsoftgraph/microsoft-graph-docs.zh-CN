@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 61da920c39cb75583661fde46c9bdbcc0a5d568d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3038f657930bcc92360bf5a60b68db4d6a8398a6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772595"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952068"
 ---
 # <a name="create-datasource"></a>创建 dataSource
 
@@ -28,7 +28,7 @@ ms.locfileid: "50772595"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,8 +56,8 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|[sourceCollection](../resources/ediscovery-sourcecollection.md)案例的 ID。 只读。 继承自 [实体](../resources/entity.md)|
-|displayName|字符串|[sourceCollection 的名称](../resources/ediscovery-sourcecollection.md)|
+|id|String|[sourceCollection](../resources/ediscovery-sourcecollection.md)案例的 ID。 只读。 继承自 [实体](../resources/entity.md)|
+|displayName|String|[sourceCollection 的名称](../resources/ediscovery-sourcecollection.md)|
 |createdDateTime|DateTimeOffset|创建 [sourceCollection](../resources/ediscovery-sourcecollection.md) 的日期和时间。|
 |createdBy|[identitySet](../resources/identityset.md)|创建 [sourceCollection 的用户](../resources/ediscovery-sourcecollection.md)。|
 
@@ -73,7 +73,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_datasource_from_"
+  "name": "create_datasource_from__1"
 }
 -->
 
@@ -88,19 +88,19 @@ Content-length: 179
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-datasource-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-datasource-from--1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-datasource-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-datasource-from--1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-datasource-from--objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-datasource-from--1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

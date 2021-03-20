@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: d9f6d123d13b75a8dde23a47a5119bbb9b87ca06
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 11c793a01cd1b0027e12cd831984dc30cd04961c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440302"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945660"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50440302"
 
 通过在 Azure AD B2C 中配置身份提供程序，可实现新 Azure AD B2B 来宾方案。 例如，某组织在 Microsoft 365 中具有需要与 Gmail 用户共享的资源。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
 
-在 Azure AD B2C 租户中，身份提供程序类型可以是 Microsoft、Google、Facebook、Amazon、LinkedIn、Twitter 或任何 [openIdConnectProvider](../resources/openidconnectprovider.md)。 以下身份提供程序正处于预览阶段：微博、QQ、微信和 GitHub。
+在 Azure AD B2C 租户中，标识提供程序类型可以是 **Microsoft**、 **Google**、 **Facebook**、 **Amazon**、 **LinkedIn**、 **Twitter** 或任何 [openIdConnectProvider](../resources/openidconnectprovider.md)。 以下标识提供者为预览版： **微博**、 **QQ**、 **We用户** 和 **GitHub**。
 
 在 Azure AD B2C 租户中配置身份提供程序，用户可在应用程序中使用社交帐户或自定义 OpenID Connect 支持的提供程序进行注册和登录。 例如，应用程序可使用 Azure AD B2C 让用户能够通过 Facebook 帐户或他们自己的符合 OIDC 协议的自定义身份提供程序注册服务。
 
@@ -46,11 +46,11 @@ ms.locfileid: "50440302"
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|字符串|使用身份提供程序注册应用时获取的应用客户端 ID。 这是必填字段。|
-|clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 这是只读的。 读取操作将返回“\*\*\*\*”。 这是必填字段。|
+|clientId|字符串|使用身份提供程序注册应用时获取的应用客户端 ID。 这是必填字段。  必填。 不可为空。|
+|clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 这是只读的。 读取操作将返回 `****`。 这是必填字段。 必填。 不可为空。|
 |id|字符串|标识提供程序的 ID。|
-|name|字符串|标识提供程序的显示名称。|
-|type|字符串|身份提供程序类型是必填字段。<ul>对于 B2B 方案：<li/>Google<li/>Facebook</ul><ul>对于 B2C 方案：<li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook<li/>GitHub<li/>Twitter<li/>微博<li/>QQ<li/>微信<li/>OpenIDConnect</ul>|
+|name|字符串|标识提供程序的显示名称。 不可为空。|
+|type|字符串|身份提供程序类型是必填字段。 对于 B2B 方案： `Google`， `Facebook`。 对于 B2C 方案： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、`QQ`、 `WeChat`、 `OpenIDConnect`。 不可为空。|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>获取客户端 ID 和密码的位置
 

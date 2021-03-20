@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 84cb01ae1aaa32552bdc6069670cc696e6813e55
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 501290407b08e8fc6f461de5f7ec446dab53bccd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134763"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945741"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -73,16 +73,17 @@ ms.locfileid: "50134763"
 | api | [apiApplication](apiapplication.md) | 指定实现 Web API 的应用程序的设置。 |
 | appId | String | Azure AD 分配给应用程序的唯一标识符。 不可为空。 只读。 |
 | appRoles | [appRole](approle.md) 集合 | 分配给应用程序的角色的集合。 使用[应用角色分配](approleassignment.md)，可将这些角色分配给与其他应用程序关联的用户、组或服务主体。 不可为空。 |
-| createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。 只读。 |
-| deletedDateTime | DateTimeOffset | 删除应用程序的日期和时间。 只读。 |
+| createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
+| deletedDateTime | DateTimeOffset | 删除应用程序的日期和时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 | displayName | String | 应用程序的显示名称。 |
-| groupMembershipClaims | 字符串 | 配置应用程序所需的用户访问令牌或 OAuth 2.0 访问令牌中颁发的 `groups` 声明。 要设置此属性，请使用以下字符串值之一：<ul><li>`None`</li><li>`SecurityGroup`：适用于安全组和 Azure AD 角色</li><li>`All`：该操作可获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色。</li></ul> |
+| groupMembershipClaims | String | 配置应用程序所需的用户访问令牌或 OAuth 2.0 访问令牌中颁发的 `groups` 声明。 若要设置此属性，请使用以下字符串值之一： `None`、 `SecurityGroup` （适用于安全组和 Azure AD 角色）、 `All` （此方法获取登录用户包括的所有安全组、通讯组和 Azure AD 目录角色）。 |
 | id | String | 应用程序的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
 | identifierUris | String collection | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的`any` 运算符。 不可为空。 |
 | info | [informationalUrl](informationalurl.md) | 应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 |
 | isFallbackPublicClient | Boolean | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false`，这意味着，回退应用程序类型为机密客户端，例如 Web 应用。 某些情况下，Azure AD 无法确定客户端应用程序类型。 例如，在未指定重定向 URI 的情况下配置应用程序的 [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) 流。 在这种情况下，Azure AD 将基于此属性的值解释应用程序类型。|
 | keyCredentials | [keyCredential](keycredential.md) 集合 | 与应用程序关联的密钥凭据集合。 不可为空。 |
 | logo | Stream | 应用程序的主徽标。 不可为空。 |
+| notes | String | 与应用程序管理相关的备注。 |
 | oauth2RequiredPostResponse | Boolean | 指定在 OAuth 2.0 令牌请求过程中，Azure AD 是否允许与 GET 请求相反的 POST 请求。 默认值为 `false`，即指定只允许 GET 请求。 |
 | onPremisesPublishing |[onPremisesPublishing](onpremisespublishing.md)| 表示为此应用程序[配置应用程序代理](/graph/application-proxy-configure-api)所需的属性集。 配置这些属性允许你发布本地应用程序以实现安全远程访问。 |
 | optionalClaims | [optionalClaims](optionalclaims.md) | 应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以指定 Microsoft 安全令牌服务发送到他们应用程序中的声明。 有关详细信息，请参阅[如何向你的应用提供可选声明](/azure/active-directory/develop/active-directory-optional-claims)。|
@@ -91,12 +92,21 @@ ms.locfileid: "50134763"
 | publicClient | [publicClientApplication](publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 | publisherDomain | String | 应用程序的已验证发布者域。 只读。|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的 OAuth 权限范围和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 不可为空。|
-| signInAudience | 字符串 | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（多租户）中拥有 Microsoft 工作或学校帐户的用户。</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li><li>`PersonalMicrosoftAccount`：仅限拥有个人 Microsoft 帐户的用户。</li></ul> |
+| signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值有： `AzureADMyOrg`、 `AzureADMultipleOrgs`、 `AzureADandPersonalMicrosoftAccount`、 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |String 集合| 可用于分类和标识应用程序的自定义字符串。 不可为空。|
-| tokenEncryptionKeyId |字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+| tokenEncryptionKeyId |Guid|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定已验证的应用程序发布者。|
 | web |[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
+
+### <a name="signinaudience-values"></a>signInAudience 值
+
+| 值 | 说明 |
+|:---------------|:--------|
+|AzureADMyOrg|在我的组织的 Azure AD 租户（单租户）中拥有 Microsoft 工作或学校帐户的用户。|
+|AzureADMultleOrgs|拥有任何组织的 Azure AD 租户（多租户）中 Microsoft 工作或学校帐户的用户。|
+|AzureADandPersonalMicrosoftAccount|具有个人 Microsoft 帐户或任何组织的 Azure AD 租户中的工作或学校帐户的用户。 要使用 Azure Active Directory B2C 用户流程对用户进行身份验证，请使用 `AzureADandPersonalMicrosoftAccount`。 该值允许最广泛的用户标识集，包括本地账户和 Microsoft、Facebook、谷歌、Twitter 或任何 OpenID Connect 提供商的用户标识。 |
+|PersonalMicrosoftAccount|仅具有个人 Microsoft 帐户的用户。|
 
 ## <a name="relationships"></a>关系
 
@@ -140,6 +150,7 @@ ms.locfileid: "50134763"
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
+  "notes": "String",
   "oauth2RequiredPostResponse": false,
   "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "parentalControlSettings": {"@odata.type": "microsoft.graph.parentalControlSettings"},

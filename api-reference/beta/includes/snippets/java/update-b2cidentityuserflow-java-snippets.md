@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b827259622a50b3af0671ed25ad34b89eadb61d3
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: c5dd5288718d8643c63ddc05c3eb4743c80c180b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843648"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50969748"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 B2cIdentityUserFlow b2cIdentityUserFlow = new B2cIdentityUserFlow();
 b2cIdentityUserFlow.isLanguageCustomizationEnabled = true;

@@ -4,12 +4,12 @@ description: 在 Outlook 中，客户可以与其他用户共享日历，并允�
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: fd231521a36ba761297042bc41f3ee60ef438a01
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e09b3552ca0d4a3ecd85855c471ec1cc16950abf
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475532"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941398"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>在共享或委托日历中创建 Outlook 事件
 
@@ -17,7 +17,7 @@ ms.locfileid: "50475532"
 
 Microsoft Graph 支持以编程方式读取或写入其他用户已共享日历中的事件、读取共享日历以及更新共享者的日历名称。 此支持还适用于已委托的日历。 本文的其余部分介绍了如何在共享或委托日历中创建会议事件。 有关获取事件，请参阅[获取共享日历或委托日历中的 Outlook 事件](outlook-get-shared-events-calendars.md)。
 
-下面的演练使用示例方案，其中 Alex 在 Outlook 中将其主要日历委派给 Adele，并保留默认的 Outlook 邮箱设置以将会议请求和响应仅定向给委托人。 （此设置对应于设置为默认值 `sendToDelegateOnly` 的 Alex [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 的 **delegateMeetingMessageDeliveryOptions** 属性。） 
+下面的演练使用示例方案，其中 Alex 在 Outlook 中将其主要日历委派给 Adele，并保留默认的 Outlook 邮箱设置以将会议请求和响应仅定向给委托人。 （此设置对应于设置为默认值 `sendToDelegateOnly` 的 Alex [mailboxSettings](/graph/api/resources/mailboxsettings) 的 **delegateMeetingMessageDeliveryOptions** 属性。） 
 
 本演练介绍了几个后续步骤：
 1. [Adele 获取由 Alex 委派给她的日历](#step-1-adele-gets-the-delegated-calendar)。
@@ -37,6 +37,9 @@ Microsoft Graph 支持以编程方式读取或写入其他用户已共享日历�
 
 以 Adele 的身份登录，获取她有权访问的日历并识别由 Alex 向她委派的日历，以便在下一步中使用它在该日历中创建事件。 
 
+**Microsoft Graph 权限**
+
+使用权限最 `Calendars.Read.Shared`的权限。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -119,7 +122,11 @@ Content-type: application/json
 
 ## <a name="step-2-adele-creates-and-sends-an-invitation-on-alex-behalf"></a>步骤 2：Adele 代表 Alex 创建并发送邀请
 
-以 Adele 的身份登录，使用从步骤 1 中获得的日历 ID 在委派日历中创建 [event](/graph/api/resources/event?view=graph-rest-1.0)，并代表 Alex 将其发送给 Christie 和 Megan：
+以 Adele 身份登录，使用从步骤 1 获取的日历 ID 在委派日历创建 [事件](/graph/api/resources/event) ，并代表 Alex 将其发送给 Christie 和 Megan。
+
+**Microsoft Graph 权限**
+
+使用权限最 `Calendars.ReadWrite.Shared`的权限。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 <!-- {
   "blockType": "request",
@@ -168,7 +175,7 @@ Content-type: application/json
 }
 ```
 
-请注意，成功响应包括 HTTP 201 和以下 [event](/graph/api/resources/event?view=graph-rest-1.0) 属性：
+请注意，成功响应包括 HTTP 201 和以下 [event](/graph/api/resources/event) 属性：
 
 - **isOrganizer** 设置为 true。 通常情况下，如果日历所有者 (Alex) 是会议的组织者，则此属性为 true。 这也适用于委托人 (Adele) 代表所有者组织会议的情形。
 - **attendees** 集合指定 Megan 和 Christie。
@@ -279,9 +286,13 @@ Content-type: application/json
 
 ## <a name="step-3-christie-receives-meeting-request-and-inspects-the-associated-event-in-her-calendar"></a>步骤 3：Christie 收到会议请求，并检查其日历中的关联事件
 
-传递会议请求时，Outlook 会自动在 Christie 的日历中创建暂定 [event](/graph/api/resources/event?view=graph-rest-1.0)。
+传递会议请求时，Outlook 会自动在 Christie 的日历中创建暂定 [event](/graph/api/resources/event)。
 
-以 Christie 的身份登录，获取与步骤 2 中的会议请求相关联的 [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) 和 **event**：
+以 Christie 的身份登录，获取与步骤 2 中的会议请求相关联的 [eventMessage](/graph/api/resources/eventmessage) 和 **event**：
+
+**Microsoft Graph 权限**
+
+使用权限最少的委派每一个、 `Mail.Read` 和 `Calendar.Read.Shared`。 有关详细信息，请参阅 [权限](permissions-reference.md#mail-permissions) 以及 [权限](permissions-reference.md#calendars-permissions)。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -312,14 +323,14 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADADVj3fyAABZ5hYdAAA=?$expa
 ---
 
 
-请注意，成功响应包括响应代码 HTTP 200 和以下 [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) 属性：
+请注意，成功响应包括响应代码 HTTP 200 和以下 [eventMessage](/graph/api/resources/eventmessage) 属性：
 
 - **meetingMessageType** 指定此邮件为 `meetingRequest`。
 - **sender** 是 Adele。
 - **from** 是 Alex。
 - **toRecipients** 包括 Megan 和 Christie。
 
-添加以下 [event](/graph/api/resources/event?view=graph-rest-1.0) 属性：
+添加以下 [event](/graph/api/resources/event) 属性：
 
 - **attendees** 包括 Alex、Megan 和 Christie。
 - **organizer** 是 Alex。
@@ -506,6 +517,9 @@ Content-type: application/json
 
 以 Christie 的身份登录，将 **event** 答复为暂定，并在响应中包括答复邮件：
 
+**Microsoft Graph 权限**
+
+使用权限最 `Calendars.ReadWrite.Shared`的权限。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -556,7 +570,11 @@ HTTP/1.1 202 Accepted
 
 由于 Adele 是 Alex 的主要日历的委托人，Adele 代表 Alex 收到了该日历的所有会议响应。
 
-以 Adele 的身份登录，获取 [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0)，它表示由 Christie 在步骤 4 中做出的响应：
+以 Adele 的身份登录，获取 [eventMessage](/graph/api/resources/eventmessage)，它表示由 Christie 在步骤 4 中做出的响应：
+
+**Microsoft Graph 权限**
+
+使用权限最 `Mail.Read.Shared`的权限。 有关详细信息，请参阅 [邮件权限](permissions-reference.md#mail-permissions)。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -587,7 +605,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADI4oeRpAABf0HJUAAA=
 ---
 
 
-请注意，成功响应包括响应代码 HTTP 200 和以下 [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) 属性：
+请注意，成功响应包括响应代码 HTTP 200 和以下 [eventMessage](/graph/api/resources/eventmessage) 属性：
 
 - **meetingMessageType** 为 `meetingTenativelyAccepted`。
 - **from** 是 Christie。
@@ -664,9 +682,13 @@ Content-type: application/json
 
 ## <a name="step-6-alex-accesses-responses-as-part-of-the-event"></a>步骤 6：作为活动的一部分，Alex 访问响应
 
-由于 Alex 保留了让 Outlook 将所有会议请求和响应仅定向给委托人的默认设置，Alex 不会收到 Christie 在步骤 4 中做出的响应。 但是，他可以通过其主要日历中的 [event](/graph/api/resources/event?view=graph-rest-1.0) 获取响应。
+由于 Alex 保留了让 Outlook 将所有会议请求和响应仅定向给委托人的默认设置，Alex 不会收到 Christie 在步骤 4 中做出的响应。 但是，他可以通过其主要日历中的 [event](/graph/api/resources/event) 获取响应。
 
-以 Alex 的身份登录，获取 Adele 在步骤 2 中创建的 [event](/graph/api/resources/event?view=graph-rest-1.0)，并从 **attendees** 属性获取响应：
+以 Alex 登录，获取 [Adele 在步骤 2](/graph/api/resources/event) 中创建的  事件，并获取来自 **"** 答复。
+
+**Microsoft Graph 权限**
+
+使用权限最 `Calendars.Read`的权限。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -697,7 +719,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events/AAMkADJXJGu0AABf02qwAAA=
 ---
 
 
-请注意，成功响应包括响应代码 HTTP 200 和以下 [event](/graph/api/resources/event?view=graph-rest-1.0) 属性：
+请注意，成功响应包括响应代码 HTTP 200 和以下 [event](/graph/api/resources/event) 属性：
 
 - **isOrganizer** 为 true。
 - **attendees** 仅包括 Megan 和 Christie。
@@ -816,4 +838,4 @@ Content-type: application/json
 - [获取共享日历或委托日历中的 Outlook 事件](outlook-get-shared-events-calendars.md)
 - [在 Outlook（预览版）中共享或委派日历](outlook-share-or-delegate-calendar.md)
 - [为什么要与 Outlook 日历集成](outlook-calendar-concept-overview.md)
-- Microsoft Graph v1.0 中的[日历 API](/graph/api/resources/calendar?view=graph-rest-1.0)。
+- Microsoft Graph v1.0 中的[日历 API](/graph/api/resources/calendar)。
