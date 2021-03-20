@@ -5,12 +5,12 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 549d4a3657655c9ee8be6be6bb82fee9dc9d769e
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 34576f37e9c635c58843c6f83ace63ced8e48643
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753815"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948308"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -34,6 +34,8 @@ ms.locfileid: "49753815"
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
+> **注意**：将来，Microsoft 可能会要求你或你的客户根据使用团队合作导入的数据量支付额外的费用。Migrate.All 和/或 [迁移 API。](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,7 +51,7 @@ POST /teams/{team-id}/channels
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供通道对象的 JSON [表示](../resources/channel.md) 形式。
+在请求正文中，提供 channel 对象的 JSON [表示](../resources/channel.md) 形式。
 
 ## <a name="response"></a>响应
 
@@ -58,7 +60,7 @@ POST /teams/{team-id}/channels
 如果该请求成功，此方法返回 `400 Bad Request` 响应代码。 下面是出现此响应的常见原因：
 
 * **createdDateTime** 将在未来设置。
-* **createdDateTime** 已正确指定， **但 channelCreationMode** 实例属性缺失或设置为无效值。
+* **已正确指定 createdDateTime，****但 channelCreationMode** 实例属性缺失或设置为无效值。
 
 ## <a name="examples"></a>示例
 
@@ -275,7 +277,7 @@ Content-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelI
 
 #### <a name="request"></a>请求
 
-以下示例显示了使用审核设置创建标准频道的请求。 此操作只能对标准通道执行。
+下面的示例展示了使用审核设置创建标准频道的请求。 只能对标准通道执行此操作。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -349,7 +351,7 @@ Content-length: 201
 
 ## <a name="see-also"></a>另请参阅
 
-* [频道完整迁移](channel-completemigration.md)
+* [频道的完整迁移](channel-completemigration.md)
 * [使用 Microsoft Graph 将第三方平台消息导入 Teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 * [创建团队](team-post.md)
 

@@ -1,16 +1,16 @@
 ---
 title: labelingOptions 资源类型
-description: 表示可提供给评估 Api 的标记选项。
+description: 表示可提供给评估 API 的标签选项。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: da2231ae3eb95260663d2907f56f91b96e08278c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d2409bf538de3d37ca32cdf2fd1afb78a659817
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084016"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950297"
 ---
 # <a name="labelingoptions-resource-type"></a>labelingOptions 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48084016"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示可提供给评估 Api 的标记选项。 **labelingOptions** 必须传递到 [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) API，以指定要应用的标签的详细信息。 
+表示可提供给评估 API 的标签选项。 **labelingOptions** 必须传递到 [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) API，以指定有关要应用的标签的详细信息。 
 
 ## <a name="properties"></a>属性
 
 | 属性               | 类型                                                | 说明                                                                                                                   |
 | :--------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
-| assignmentMethod       | 字符串                                              | 可取值为：`standard`、`privileged`、`auto`。                                                                        |
-| downgradeJustification | [downgradeJustification](downgradejustification.md) | 降级理由对象，该对象指示降级是否已两端对齐，如果是，则指示原因。                          |
-| extendedProperties     | [keyValuePair](keyvaluepair.md) 集合          | 扩展属性将在作为标签信息一部分的标准 MIP 标记元数据格式中进行分析和返回。 |
-| labelId                | Guid                                                | 应应用于信息的标签的 GUID。                                                              |
+| assignmentMethod       | String                                              | 可取值为：`standard`、`privileged`、`auto`。                                                                        |
+| downgradeJustification | [downgradeJustification](downgradejustification.md) | 用于指示降级是否合理以及原因（如果有）的降级理由对象。                          |
+| extendedProperties     | [keyValuePair](keyvaluepair.md) 集合          | 扩展属性将在标签信息中以标准 MIP 标记元数据格式进行分析和返回。 |
+| labelId                | Guid                                                | 应用于信息的标签的 GUID。                                                              |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

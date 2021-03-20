@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 791bf418a525d09c0386b29d2914319f03c7e90b
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: 0c6a6f5c8ee8fe98d1e65163c2c9a30bb5ec7301
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101907"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948273"
 ---
 # <a name="create-chatmessage-in-channel"></a>在频道中创建 chatMessage
 
@@ -18,7 +18,7 @@ ms.locfileid: "50101907"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的频道中创建新的[chatMessage。](../resources/chatmessage.md) [](../resources/channel.md)
+在指定的[频道中创建新的 chatMessage。](../resources/chatmessage.md) [](../resources/channel.md)
 
 > **注意**：使用 Microsoft Teams [](/legal/microsoft-apis/terms-of-use)作为 microsoft Teams 日志文件。 仅发送用户将阅读的邮件。
 
@@ -32,7 +32,8 @@ ms.locfileid: "50101907"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
 
-> **注意**：应用程序权限仅 *受* 迁移 [支持](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+> **注意**：仅迁移 *支持应用程序*[权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+将来，Microsoft 可能会要求你或你的客户根据导入的数据量支付额外的费用。
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
@@ -60,13 +61,13 @@ POST /teams/{id}/channels/{id}/messages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [chatMessage](../resources/chatmessage.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [chatMessage](../resources/chatmessage.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-message-in-a-specified-channel"></a>示例 1：在指定的频道创建邮件
+### <a name="example-1-create-a-message-in-a-specified-channel"></a>示例 1：在指定的频道创建消息
 
-有关示例的更全面的列表，请参阅在频道[或聊天中创建 chatMessage。](chatmessage-post.md)
+有关示例的更全面的列表，请参阅在频道或[聊天中创建 chatMessage。](chatmessage-post.md)
 
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -74,7 +75,7 @@ POST /teams/{id}/channels/{id}/messages
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_1"
 }-->
 
 ```http
@@ -89,19 +90,19 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -164,7 +165,7 @@ Content-length: 160
 
 #### <a name="request"></a>请求
 <!-- { "blockType": "ignored" } -->
-以下示例显示如何使用请求正文中的 and 键导入返回 `createDateTime` `from` 时间邮件。
+以下示例显示如何使用 请求正文中的 和 键导入 `createDateTime` `from` 实时邮件。
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -247,7 +248,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="example-3-import-messages-with-inline-images"></a>示例 3：导入具有内嵌图像的邮件
+### <a name="example-3-import-messages-with-inline-images"></a>示例 3：导入包含内嵌图像的邮件
 
 > [!NOTE]
 > 目前，内联图像是导入邮件 API 架构支持的唯一媒体类型。
@@ -256,7 +257,7 @@ HTTP/1.1 200 OK
 
 #### <a name="request"></a>请求
 <!-- { "blockType": "ignored" } -->
-以下示例演示如何使用请求正文中的和键导入包含内嵌图像的返回 `createDateTime` `from` 时间邮件。
+以下示例演示如何使用 请求正文中的 和 键导入包含内嵌图像的 `createDateTime` `from` 返回时间邮件。
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages

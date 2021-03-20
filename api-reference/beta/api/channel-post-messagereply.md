@@ -1,16 +1,16 @@
 ---
 title: 在频道中回复消息
-description: 回复频道中的现有邮件。
+description: 回复频道中的现有消息。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: db0164be77260c60c2d89c726b048b4af8dc741d
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: 29be6117b229da1d5b3921db7d52ae0e1897741c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101900"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948245"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>在频道中回复消息
 
@@ -35,7 +35,8 @@ ms.locfileid: "50101900"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
 
-> **注意**：应用程序权限仅 *受* 迁移 [支持](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+> **注意**：仅迁移 *支持应用程序*[权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+将来，Microsoft 可能会要求你或你的客户根据导入的数据量支付额外的费用。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,15 +50,15 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供邮件对象的 JSON [表示形式](../resources/chatmessage.md) 。 只有 body 属性是必需的，其他属性是可选的。
+在请求正文中，提供 message 对象的 JSON [表示](../resources/chatmessage.md) 形式。 只有 body 属性是必需的，其他属性是可选的。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `201 Created` 包含已创建 [消息的响应](../resources/chatmessage.md) 代码。
 
-## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>示例 1：创建 chatMessage 的新回复
+## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>示例 1：创建对 chatMessage 的新回复
 
-有关示例的更全面的列表，请参阅在频道[或聊天中创建 chatMessage。](chatmessage-post.md)
+有关示例的更全面的列表，请参阅在频道或[聊天中创建 chatMessage。](chatmessage-post.md)
 
 ### <a name="request"></a>请求
 请求示例如下所示。
@@ -153,7 +154,7 @@ Content-length: 160
 
 #### <a name="request"></a>请求
 
-以下示例显示如何使用请求正文中的 and 键导入返回 `createDateTime` `from` 时间邮件。
+以下示例显示如何使用 请求正文中的 和 键导入 `createDateTime` `from` 实时邮件。
 
 <!-- {
   "blockType": "response",

@@ -2,15 +2,15 @@
 title: 创建邀请
 description: 使用该 API 创建新的邀请。 邀请会将外部用户添加至组织。
 localization_priority: Priority
-author: elisolMS
+author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 58d1036642d83dc881fdf740b996e01594c8433b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bc9c4b0357f2b7ee083bcf37ada5b2db953ebaa0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441814"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50949862"
 ---
 # <a name="create-invitation"></a>创建邀请
 

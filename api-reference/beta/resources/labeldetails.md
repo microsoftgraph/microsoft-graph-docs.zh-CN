@@ -1,16 +1,16 @@
 ---
 title: labelDetails 资源类型
-description: 代表信息保护标签的标签详细信息。
+description: 表示信息保护标签的标签详细信息。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 6b475c96b3ecbc2caa0aa147e3fc8fd0253ac243
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 214589dfcb26497b5271008f8a358d06a4fb700f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084035"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950305"
 ---
 # <a name="labeldetails-resource-type"></a>labelDetails 资源类型
 
@@ -18,19 +18,19 @@ ms.locfileid: "48084035"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表信息保护标签的标签详细信息。 **labelDetails** 提供有关单个信息保护标签的信息。 可以由[evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md)、 [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)和[extractLabel](../api/informationprotectionlabel-extractLabel.md)返回
+表示信息保护标签的标签详细信息。 **labelDetails** 提供有关单个信息保护标签的信息。 可通过[evaluateRemoval、evaluateApplication](../api/informationprotectionlabel-evaluateremoval.md)和[extractLabel 返回](../api/informationprotectionlabel-extractLabel.md)[](../api/informationprotectionlabel-evaluateapplication.md)
 
 ## <a name="properties"></a>属性
 
 | 属性    | 类型    | 说明                                                                                                  |
 | :---------- | :------ | :----------------------------------------------------------------------------------------------------------- |
-| color       | String  | 用户界面针对标签应显示的颜色（如果已配置）。                               |
-| 说明 | 字符串  | 管理员定义的标签说明。                                                                 |
-| id          | 字符串  | 标签 ID 是 (GUID) 的全局唯一标识符。                                                          |
-| isActive    | 布尔 | 指示标签是否处于活动状态。 应在用户界面中隐藏或禁用活动标签。 |
-| 名称        | 字符串  | 标签的纯文本名称。                                                                             |
-| sensitivity | Int32   | 标签的敏感度值，其中较小的是不敏感的。                                           |
-| tooltip     | 字符串  | 应为用户界面中的标签显示的工具提示。                                      |
+| color       | String  | 用户界面应为标签显示的颜色（如果已配置）。                               |
+| 说明 | String  | 管理员定义的标签说明。                                                                 |
+| id          | String  | 标签 ID 是 GUID (全局唯) 。                                                          |
+| isActive    | Boolean | 指示标签是否处于活动状态。 应在用户界面中隐藏或禁用活动标签。 |
+| name        | String  | 标签的纯文本名称。                                                                             |
+| 敏感度 | Int32   | 标签的敏感度值，其中 lower 不太敏感。                                           |
+| tooltip     | String  | 应在用户界面中为标签显示的工具提示。                                      |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

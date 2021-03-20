@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 951ef56ecbe2ff8c2ab9692e4eaa9ddf7811d959
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f486066b150ccd0321f23f47089aab67d87e9f7e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761021"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950294"
 ---
 # <a name="statusbase-resource-type"></a>statusBase 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50761021"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|状态|String| 可取值为：`success`、`warning`、`failure`、`skipped`、`unknownFutureValue`。|
+|状态|provisioningResult| 可取值为：`success`、`warning`、`failure`、`skipped`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

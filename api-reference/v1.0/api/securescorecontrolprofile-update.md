@@ -1,22 +1,22 @@
 ---
 title: 更新 secureScoreControlProfile
-description: 在任何集成的解决方案中更新可编辑的 secureScoreControlProfile 对象，以更改各种属性，如 "分配给" 或 "tenantNote"。
+description: 更新任何集成解决方案中的可编辑 secureScoreControlProfile 对象，以更改各种属性，如 assignedTo 或 tenantNote。
 author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6192d33e2d7d1b98e61a4d9f28f863cd03e234d7
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: ddedbb28f16defa68cecd9d03ac24174c916b175
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330366"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948770"
 ---
 # <a name="update-securescorecontrolprofile"></a>更新 secureScoreControlProfile
 
 命名空间：microsoft.graph
 
-在任何集成的解决方案中更新可编辑的 **secureScoreControlProfile** 对象，以更改各种属性，如 " **分配给** " 或 " **tenantNote**"。
+更新任何集成解决方案中的可编辑 **secureScoreControlProfile** 对象，以更改各种属性，例如 **assignedTo** 或 **tenantNote**。
 
 ## <a name="permissions"></a>权限
 
@@ -41,29 +41,29 @@ PATCH /security/secureScoreControlProfiles/{id}
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}。 必需。|
-|Prefer | 返回 = 表示。 |
+|Prefer | return=representation。 |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 正文 **必须** 包含 `vendorInformation` 具有有效 `provider` 和字段的属性 `vendor` 。 下表列出了可为 **secureScoreControlProfile**更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段值的 JSON 表示形式。 正文 **必须** 包含具有 `vendorInformation` 有效 和 字段 `provider` `vendor` 的属性。 下表列出了可以针对 **secureScoreControlProfile 更新的字段**。 请求正文中不包含的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
-|注释|String|针对客户控件管理) 的控件 (的分析师注释。|
-|state| String|控件上的分析导向设置。 可取值为：`Default`、`Ignored`、`ThirdParty`、`Reviewed`。|
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供商和 subprovider 的详细信息的复杂类型 (例如，供应商 = Microsoft;provider = SecureScore; ) 。 **提供程序和供应商字段是必需的。** |
+|assignedTo|String|分配了该控件的分析员的姓名，用于会审、实施或修正。|
+|注释|String|针对客户控制管理的 (分析员意见) 。|
+|state| String|分析员驱动的控件设置。 可取值为：`Default`、`Ignored`、`ThirdParty`、`Reviewed`。|
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 复杂类型，包含有关安全产品/服务供应商、提供程序和子 (的详细信息，例如，vendor=Microsoft;provider=SecureScore;) 。 **提供程序和供应商字段是必需的。** |
 
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-如果使用可选请求标头，则该方法将 `200 OK` 在响应正文中返回响应代码和更新的 [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) 对象。
+如果使用可选请求标头，则该方法在响应正文中返回 响应代码和更新的 `200 OK` [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
-### <a name="example-1-request-without-prefer-header"></a>示例1：不带首选标头的请求
+### <a name="example-1-request-without-prefer-header"></a>示例 1：不带 Prefer 标头的请求
 
 ### <a name="request"></a>请求
 
@@ -72,7 +72,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update"
+  "name": "securescorecontrolprofiles_update_1"
 }-->
 
 ```http
@@ -93,15 +93,15 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
@@ -124,15 +124,17 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a>示例2：具有首选标头的请求
+### <a name="example-2-request-with-prefer-header"></a>示例 2：具有 Prefer 标头的请求
 
 #### <a name="request"></a>请求
 
-下面的示例演示包含 `Prefer` 请求标头的请求。
+以下示例显示包含请求标头 `Prefer` 的请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update"
+  "name": "securescorecontrolprofiles_update_2"
 }-->
 
 ```http
@@ -151,10 +153,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
-以下是 `Prefer: return=representation` 使用可选请求标头时响应的示例。
+下面是使用可选请求标头 `Prefer: return=representation` 时的响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

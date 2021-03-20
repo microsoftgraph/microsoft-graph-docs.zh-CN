@@ -1,16 +1,16 @@
 ---
 title: justifyAction 资源类型
-description: 指示指定的操作需要理由。
+description: 指示指定操作需要理由。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9e26cd675ecb1a3a50c505c019244c60eaee88c0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1db6a91987fd1345ca6a1503dfbd51e3178e9b89
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039354"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950315"
 ---
 # <a name="justifyaction-resource-type"></a>justifyAction 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48039354"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示指定的操作需要理由。 [EvaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md)或[evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) api 可能返回**justifyAction**。 理由通过 [labelingOptions](../resources/labelingoptions.md)提供。 前一个调用应重复出现，但通过用户输入或应用程序逻辑提供的 **downgradeJustification** 属性为 **labelingOptions** 设置的理由消息。
+指示指定操作需要理由。 [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md) [、evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md)或 [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) API 可能会返回 **justifyAction**。 理由通过 [labelingOptions 提供](../resources/labelingoptions.md)。 上一个调用应重复，但 **labelingOptions** 的 **downgradeJustification** 属性设置有理由消息（通过用户输入或应用程序逻辑提供）。
 
 ## <a name="properties"></a>属性
 

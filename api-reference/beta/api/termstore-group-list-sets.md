@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4d358769f7d4a73c2f01f84e0237747c456307a5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 32c929f5156304e2a36aa64a5fcc8d97cee8468d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873939"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950444"
 ---
 # <a name="list-sets"></a>列表集
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 set 对象 [及其](../resources/termstore-set.md) 属性的列表。
+获取 set [对象及其](../resources/termstore-set.md) 属性的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +52,7 @@ GET /termStore/groups/{groupId}/sets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [set](../resources/termstore-set.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码 `200 OK` [和 set](../resources/termstore-set.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -61,26 +61,26 @@ GET /termStore/groups/{groupId}/sets
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_set"
+  "name": "get_set_1"
 }-->
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-set-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-set-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-set-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-set-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-set-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-set-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-set-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-set-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

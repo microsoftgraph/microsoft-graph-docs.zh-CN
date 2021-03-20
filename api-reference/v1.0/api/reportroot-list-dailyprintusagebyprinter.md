@@ -1,25 +1,25 @@
 ---
 title: 列出 dailyPrintUsageByPrinter
-description: 检索按打印机分组的每日打印使用率摘要列表。
+description: 检索按打印机分组的每日打印使用情况摘要列表。
 author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 093d1180cacfbbc933fca0f3bc7031085ab5f46a
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 54bfa2748831bcadbc59b2f555c6b65d21fd7d27
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517306"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948805"
 ---
 # <a name="list-dailyprintusagebyprinter"></a>列出 dailyPrintUsageByPrinter
 命名空间：microsoft.graph
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-检索按打印机分组的每日打印使用率摘要 [的列表](../resources/printer.md)。
+检索按打印机分组的每日打印使用情况摘要 [列表](../resources/printer.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -53,19 +53,39 @@ GET /reports/dailyPrintUsageByPrinter
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [printUsageByPrinter](../resources/printusagebyprinter.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printUsageByPrinter](../resources/printusagebyprinter.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_printusagebyprinter"
+  "name": "list_printusagebyprinter_1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByPrinter
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printusagebyprinter-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printusagebyprinter-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printusagebyprinter-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-printusagebyprinter-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b40f2aad9c811f8454d77969a14e75cd47e901cc
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: f8034647c80e334e96066afdcf6f44d4cb129dd0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576699"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950561"
 ---
 # <a name="list-phones"></a>列出电话
 
@@ -18,7 +18,7 @@ ms.locfileid: "50576699"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户配置文件 [中检索 itemPhone](../resources/itemphone.md) 对象 [的列表](../resources/profile.md)。
+从用户配置文件中检索 [itemPhone](../resources/itemphone.md) 对象 [的列表](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -45,10 +45,10 @@ GET /users/{id | userPrincipalName}/profile/phones
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |仅将响应限制到包含指定条件的对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 $orderby 参数更改 *响应* 的顺序。|
+|$filter         |string   |将响应限制到仅包含指定条件的对象。                                                                                             |
+|$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 $orderby 参数 *更改响应* 的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
-|$skip           |int      |跳过前 n 个结果，对分页非常有用。                                                                                                                                |
+|$skip           |int      |跳过前 n 个结果，可用于分页。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
 
 ## <a name="request-headers"></a>请求标头
@@ -63,7 +63,7 @@ GET /users/{id | userPrincipalName}/profile/phones
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [itemPhone](../resources/itemphone.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [itemPhone](../resources/itemphone.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -73,7 +73,7 @@ GET /users/{id | userPrincipalName}/profile/phones
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_itemphone"
+  "name": "get_itemphone_2"
 }
 -->
 
@@ -81,19 +81,19 @@ GET /users/{id | userPrincipalName}/profile/phones
 GET https://graph.microsoft.com/beta/me/profile/phones
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-itemphone-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-itemphone-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-itemphone-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-itemphone-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-itemphone-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-itemphone-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-itemphone-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-itemphone-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

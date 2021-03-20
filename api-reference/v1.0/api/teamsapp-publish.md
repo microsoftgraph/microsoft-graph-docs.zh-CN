@@ -5,19 +5,19 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1984ed7226da71ba1baf1bf15a7d83df4e6609a0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1d746d4733301d8fcace84a0dba82a9a7234f320
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471647"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948673"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
 命名空间：microsoft.graph
 
 将 [应用发布到](../resources/teamsapp.md) Microsoft Teams 应用目录。
-具体而言，此 API 将应用发布到组织的目录 (租户应用程序目录) ;创建的资源的 **distributionMethod** 属性值为 `organization` 。
+具体而言，此 API 将应用程序发布到组织的目录 (租户应用程序目录) ;创建的资源将 **具有 的 distributionMethod** 属性值 `organization` 。
 
 **requiresReview** 属性允许任何用户提交应用供管理员审阅。 管理员可以通过此 API 或 Microsoft Teams 管理中心批准或拒绝这些应用。
 
@@ -47,7 +47,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |属性|类型|说明|
 |----|----|----|
-|requiresReview| Boolean | 此可选查询参数触发应用审阅过程。 具有管理员权限的用户无需触发评价即可提交应用。 如果用户想要在发布之前请求审阅，则必须设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或设置值，并且应用将被视为已批准 `requiresReview` `false`  ，并且将立即发布。|
+|requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,23 +58,25 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，包括 Teams zip 清单有效负载。 有关详细信息，请参阅["创建应用包"。](/microsoftteams/platform/concepts/apps/apps-package)
+在请求正文中，包括 Teams zip 清单有效负载。 有关详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
 
-应用程序目录中的每个应用必须具有唯一的清单 ID。
+应用程序目录中的每个应用程序必须具有唯一的清单 ID。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `200 OK` 响应代码和 [teamsApp](../resources/teamsapp.md) 对象。
+如果成功，此方法返回 响应 `200 OK` 代码和 [teamsApp](../resources/teamsapp.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-publish-an-app-to-the-app-catalog"></a>示例 1：将应用发布到应用程序目录
+### <a name="example-1-publish-an-app-to-the-app-catalog"></a>示例 1：将应用程序发布到应用程序目录
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_1"
 }-->
 
 ```http
@@ -84,9 +86,15 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-若要了解如何创建 Microsoft Teams 应用程序 zip 文件，请参阅["创建应用包"。](/microsoftteams/platform/concepts/apps/apps-package)
+
+
+---
+若要了解如何创建 Microsoft Teams 应用程序 zip 文件，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
 
 #### <a name="response"></a>响应
 
@@ -113,9 +121,11 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_2"
 }-->
 
 ```http
@@ -123,6 +133,16 @@ POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
 Content-length: 244
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -148,13 +168,13 @@ Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-4
 }
 ```
 
-### <a name="example-3-approve-or-reject-an-app-pending-review"></a>示例 3：批准或拒绝等待审阅的应用
+### <a name="example-3-approve-or-reject-an-app-pending-review"></a>示例 3：批准或拒绝应用待审阅
 
 #### <a name="request"></a>请求
 
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_3"
 }-->
 
 ```http

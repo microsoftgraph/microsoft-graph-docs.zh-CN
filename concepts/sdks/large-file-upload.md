@@ -3,16 +3,16 @@ title: 使用 Microsoft Graph SDK 上载大文件
 description: 提供有关使用 Microsoft Graph SDK 上载大文件的指南。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 323ee872db1962119a2b34f99ad032b18b5c31f0
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 54ff14071a81ac286cebbd785216c02dc9cf6c23
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777580"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948635"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>使用 Microsoft Graph SDK 上载大文件
 
-Microsoft Graph 中的许多实体支持可 [恢复文件上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) ，以便更轻松地上载大文件。 文件被切片为较小的部分，并且请求用于上载单个切片，而不是尝试在单个请求中上载整个文件。 为了简化此过程，Microsoft Graph SDK 实现了管理切片上载的大型文件上载任务。
+Microsoft Graph 中的许多实体支持可 [恢复文件上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) ，以便更轻松地上载大文件。 文件被切片为较小的片段，并且请求用于上载单个切片，而不是尝试在单个请求中上载整个文件。 为了简化此过程，Microsoft Graph SDK 实现了管理切片上载的大型文件上载任务。
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -114,19 +114,6 @@ IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
             String.format("Uploaded %d bytes of %d total bytes", current, max)
         );
     }
-
-    @Override
-    public void success(final DriveItem result) {
-        System.out.println(
-            String.format("Uploaded file with ID: %s", result.id)
-        );
-    }
-
-    public void failure(final ClientException ex) {
-        System.out.println(
-            String.format("Error uploading file: %s", ex.getMessage())
-        );
-    }
 };
 
 // Create an upload session
@@ -141,8 +128,8 @@ UploadSession uploadSession = graphClient
     .buildRequest()
     .post();
 
-ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
-    new ChunkedUploadProvider<DriveItem>
+LargeFileUploadTask<DriveItem> largeFileUploadTask =
+    new LargeFileUploadTask<DriveItem>
         (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
 
 // Config parameter is an array of integers
@@ -151,7 +138,7 @@ ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
 int[] customConfig = { 320 * 1024 };
 
 // Do the upload
-chunkedUploadProvider.upload(callback, customConfig);
+largeFileUploadTask.upload(callback, customConfig);
 ```
 
 ---

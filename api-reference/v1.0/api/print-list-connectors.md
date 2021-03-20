@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 688ef963a4680351a5ba38f369eef4c88cd45792
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 9ef3bb3f197f8c7f0122993c6ca8cb716ddce92b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776996"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948874"
 ---
 # <a name="list-printconnectors"></a>列出 printConnectors
 命名空间：microsoft.graph
@@ -65,26 +65,26 @@ GET /print/connectors
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_printconnector"
+  "name": "list_printconnector_1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/print/connectors
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-printconnector-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printconnector-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-printconnector-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printconnector-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-printconnector-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printconnector-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-printconnector-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-printconnector-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
