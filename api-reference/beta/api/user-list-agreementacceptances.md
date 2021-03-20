@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b0bc9630d503847832b8fb3ab73e8064fa90c96c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 178e6afe9b9bd62e1f921f6ddc6c3c9148c57cb9
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720058"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943688"
 ---
 # <a name="list-agreementacceptances"></a>List agreementAcceptances
 
@@ -18,13 +18,13 @@ ms.locfileid: "50720058"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户 [agreementAcceptance](../resources/agreementacceptance.md) 对象的列表。
-## <a name="permissions"></a>Permissions
+检索用户 [agreementAcceptance 对象](../resources/agreementacceptance.md) 的列表。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AgreementAcceptance.Read |
+|委派（工作或学校帐户）     | AgreementAcceptance.Read、AgreementAcceptance.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -46,7 +46,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [agreementAcceptance](../resources/agreementacceptance.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [agreementAcceptance](../resources/agreementacceptance.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

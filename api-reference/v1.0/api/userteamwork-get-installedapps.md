@@ -1,18 +1,18 @@
 ---
-title: 获取已安装的用户应用
+title: 获取用户的已安装应用
 description: 检索在指定用户的个人范围内安装的应用。
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bb6d3fe601c3f4ca8aaee2767a928abb4964070a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 609c4081d30e831bca2573d4195e9221e5d42b05
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659790"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961133"
 ---
-# <a name="get-installed-app-for-user"></a>获取已安装的用户应用
+# <a name="get-installed-app-for-user"></a>获取用户的已安装应用
 
 命名空间：microsoft.graph
 
@@ -48,7 +48,7 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/teamsappinstallation.md)和应用。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码](../resources/teamsappinstallation.md) 和应用。
 
 ## <a name="examples"></a>示例
 
@@ -62,25 +62,25 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps"
+  "name": "user_list_teamsApps_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
-  "name": "user_list_teamsApps",
+  "name": "user_list_teamsApps_1",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": false

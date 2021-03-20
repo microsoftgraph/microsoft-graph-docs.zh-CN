@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 739ee7d59ade208bf23feb53593b8e539430c3bc
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 8578083aecaeb34f838bcffad80be4e4c742fe2f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784876"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961805"
 ---
 # <a name="get-group"></a>获取组
 
@@ -66,25 +66,25 @@ GET /groups/{id}
 <!-- {
   "blockType": "request",
   "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
-  "name": "get_group"
+  "name": "get_group_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "name": "get_group"
+  "name": "get_group_1"
 } -->
 ```http
 HTTP/1.1 200 OK

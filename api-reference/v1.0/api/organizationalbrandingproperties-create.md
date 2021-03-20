@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kexia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6f5e16a87f78be5e0664af624d058fff64f70bba
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: de4392b1fb66f174c1f7ca4643100b2ac4fbd9f6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722544"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50949450"
 ---
 # <a name="create-organizationalbrandingproperties"></a>创建 organizationalBrandingProperties
 
 创建 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。 这将创建默认品牌和（可选）本地化品牌。 未为用户的浏览器语言配置本地化品牌打造集时，将加载默认品牌。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,12 +54,12 @@ PATCH /organization/{id}/branding
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|backgroundColor|字符串|在低带宽连接中显示用于背景图像的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制表示 (，例如，白色#FFFFFF) 。|
+|backgroundColor|String|在低带宽连接中显示用于背景图像的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制表示 (，例如，白色#FFFFFF) 。|
 |backgroundImage|Stream|显示为登录页背景的图像。 图像是一个不大于 1920x1080 且小于 300kb 的 .png 或 .jpg。 较小的图像将降低带宽要求，提高页面加载性能。|
 |bannerLogo|Stream|显示在登录页上的公司徽标的横幅版本。 横幅是一个不超过 36x245px 的 .png 或 .jpg。 我们建议使用透明图像，徽标周围没有填充。|
-|signInPageText|字符串|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
+|signInPageText|String|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
 |squareLogo|Stream|公司徽标的方形版本。 这将显示在 Windows 10 现成 (OOBE) 以及启用 Windows Autopilot 进行部署时。 徽标是大小不超过 240x240px 且不超过 10kb 的 .png 或 .jpg。 我们建议使用透明图像，徽标周围没有填充。|
-|usernameHintText|字符串|登录屏幕上用户名文本框中的提示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
+|usernameHintText|String|登录屏幕上用户名文本框中的提示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
 
 ## <a name="response"></a>响应
 
@@ -73,9 +73,11 @@ PATCH /organization/{id}/branding
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_1"
 }-->
 
 ```http
@@ -89,6 +91,24 @@ Content-Language: en-US
     "usernameHintText":"hint"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

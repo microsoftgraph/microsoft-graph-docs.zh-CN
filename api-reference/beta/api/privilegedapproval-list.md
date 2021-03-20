@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 89d7fee2b8123e6f3e706cf6fd0e5c78d5821396
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a806dc46ea34853a7c0182b0c37675541740f6c0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441380"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961431"
 ---
 # <a name="list-privilegedapproval"></a>列出 privilegedApproval
 
@@ -21,7 +21,7 @@ ms.locfileid: "50441380"
 检索 privilegedapproval 对象的列表。
 
 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -29,7 +29,7 @@ ms.locfileid: "50441380"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /privilegedApproval
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 privilegedApproval](../resources/privilegedapproval.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象集合。
 
 请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 
@@ -60,25 +60,25 @@ GET /privilegedApproval
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_privilegedapproval"
+  "name": "get_privilegedapproval_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedApproval
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedapproval-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedapproval-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedapproval-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedapproval-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedapproval-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedapproval-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-privilegedapproval-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-privilegedapproval-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,13 +4,13 @@ description: 删除订阅。
 localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f182d82fdac95480715be2385729b0dec2d5d39
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.prod: change-notifications
+ms.openlocfilehash: 7a2495bb7af062474e653c22005f64bff77f11e8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092744"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961370"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -20,11 +20,11 @@ ms.locfileid: "50092744"
 
 删除订阅。
 
-有关支持订阅更改通知[](#permissions)的资源列表，请参阅"权限"部分中的表。
+请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。
 
 ## <a name="permissions"></a>权限
 
-根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|

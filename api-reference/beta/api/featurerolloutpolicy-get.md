@@ -2,23 +2,25 @@
 title: 获取 featureRolloutPolicy
 description: 检索 featurerolloutpolicy 对象的属性和关系。
 localization_priority: Normal
-author: keylimesoda
-ms.prod: directory-management
+author: madhavpatel6
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d7f73b5c584f5862d272807876d6cd0d76ecc0ea
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 956f5cada595471a1e9425b1399c69b4f4bc728c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471220"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955922"
 ---
 # <a name="get-featurerolloutpolicy"></a>获取 featureRolloutPolicy
 
 命名空间：microsoft.graph
 
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [featureRolloutPolicy 对象的属性和](../resources/featurerolloutpolicy.md) 关系。
+检索 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +37,7 @@ ms.locfileid: "50471220"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /directory/featureRolloutPolicies/{id}
+GET /policies/featureRolloutPolicies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -46,7 +48,7 @@ GET /directory/featureRolloutPolicies/{id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}。 必需 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,43 +56,25 @@ GET /directory/featureRolloutPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` 请求 [的 featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-get-a-feature-rollout-policy"></a>示例 1：获取功能推出策略
+
+#### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_featurerolloutpolicy"
+  "name": "get_featurerolloutpolicy_policies"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
+GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-featurerolloutpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-featurerolloutpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -116,44 +100,26 @@ Content-type: application/json
 }
 ```
 
-### <a name="request"></a>请求
+### <a name="example-2-get-a-feature-rollout-policy-and-expand-appliesto"></a>示例 2：获取功能推出策略并展开 appliesTo
+
+#### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_featurerolloutpolicy"
+  "name": "get_featurerolloutpolicy_expandAppliesTo_policies"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c?$expand=appliesTo
+GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c?$expand=appliesTo
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-featurerolloutpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-featurerolloutpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
-> [!NOTE]
-> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

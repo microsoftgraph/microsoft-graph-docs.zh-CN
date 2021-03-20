@@ -1,19 +1,19 @@
 ---
 title: 允许应用程序代表用户访问联机会议
 description: 了解如何配置应用程序以代表用户访问联机会议。
-author: frankpeng7
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 46a91349a6a19b0caab62c6ea9712a3b5d798ac3
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 23f46fec732895d33b2caa08c51493e9b5999b29
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239287"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961837"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问联机会议
 
-在某些情况下，例如对于在服务器上运行的后台服务或守护程序应用（在没有登录用户的情况下运行）应用，应用可以调用 Microsoft Graph 代表用户执行操作。 例如，应用可能需要调用 Microsoft Graph，以根据已发布的计划安排多个会议 (如课程) 或外部计划工具。 在这些情况下，应用程序代表的用户被标识为会议组织者。
+在某些情况下，例如对于在服务器上运行的后台服务或守护程序应用，在没有登录用户的情况下运行，应用可以代表用户调用 Microsoft Graph 来采取措施。 例如，应用可能需要调用 Microsoft Graph，根据已发布的计划安排多个会议， (课程) 外部计划工具。 在这些情况下，应用程序代表的用户将被标识为会议组织者。
 
 希望允许应用程序代表用户访问联机会议资源的管理员可以使用 **New-CsApplicationAccessPolicy** 和 **Grant-CsApplicationAccessPolicy** PowerShell cmdlet 配置访问控制。 本文介绍了配置应用程序访问策略的基本步骤。
 
@@ -21,26 +21,26 @@ ms.locfileid: "50239287"
 
 ## <a name="configure-application-access-policy"></a>配置应用程序访问策略
 
-若要配置应用程序访问策略并允许应用程序使用应用程序权限访问联机会议，
+要配置应用程序访问策略并允许应用程序访问具有应用程序权限的联机会议，请执行：
 
-1. 标识应用的应用 (客户端) ID 以及将授权应用访问联机会议的用户的用户 ID。
+1. 确定应用的应用 (客户端) ID 以及将授权应用访问联机会议的用户的用户 ID。
 
     - 在 [Azure 应用注册门户](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)中标识应用的应用程序（客户端）ID。
-    - 在 Azure 用户管理门户中 (用户) 对象 [ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
+    - 在 Azure 用户管理门户 (用户) 标识 [用户对象 ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
 
 2. 使用管理员帐户连接到 Skype for Business PowerShell。 有关详细信息，请参阅使用 PowerShell 管理[Skype for Business Online。](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
 
 3. 创建包含应用 ID 列表的应用程序访问策略。
 
-    运行以下 cmdlet，将 **Identity、AppId****和** **Description** (可选) 参数。
+    运行以下 cmdlet，将Identity、AppIds 和 **Description** (可选) 参数。 
 
     ```powershell
     New-CsApplicationAccessPolicy -Identity Test-policy -AppIds "ddb80e06-92f3-4978-bc22-a0eee85e6a9e", "ccb80e06-92f3-4978-bc22-a0eee85e6a9e", "bbb80e06-92f3-4978-bc22-a0eee85e6a9e" -Description "description here"
     ```
 
-4. 向用户授予策略，以允许策略中包含的应用 ID 代表授予的用户访问联机会议。 
+4. 向用户授予策略，以允许策略中包含的应用 ID 代表已授予用户访问联机会议。 
 
-   运行以下 cmdlet，替换 **PolicyName** 和 **Identity** 参数。
+   运行以下 cmdlet，替换 **PolicyName 和** **Identity** 参数。
 
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
@@ -48,12 +48,12 @@ ms.locfileid: "50239287"
 
 > **注意** 
 > 
-> - _标识_ 是指创建策略时的策略名称，但在授予策略时是指用户 ID。
+> - _Identity_ 指创建策略时的策略名称，但在授予策略时指用户 ID。
 > - 对应用程序访问策略的更改最多可能需要 30 分钟才能在 Microsoft Graph REST API 调用中生效。
 
 ## <a name="supported-permissions-and-additional-resources"></a>受支持的权限和其他资源
 
-管理员可以使用 ApplicationAccessPolicy cmdlet 控制已被授予以下任何应用程序权限的应用的邮箱访问权限：
+管理员可以使用 ApplicationAccessPolicy cmdlet 控制已被授予以下任一应用程序权限的应用的邮箱访问权限：
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
@@ -62,7 +62,7 @@ ms.locfileid: "50239287"
 
 ## <a name="errors"></a>错误
 
-当 API 调用由于应用在未配置应用程序访问策略时尝试访问联机会议而被拒绝访问时，可能会遇到以下错误。
+当 API 调用因应用在未配置应用程序访问策略时尝试访问联机会议而被拒绝访问时，可能会遇到以下错误。
 
 ```json
 {

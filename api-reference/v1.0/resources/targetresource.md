@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 66470d9e29bad5c662bfa6aa3227091b2ec739bc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 148591f603a45d0e8752e4af87beaabd39152fae
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130148"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961886"
 ---
 # <a name="targetresource-resource-type"></a>targetResource 资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "50130148"
 |:---------------|:--------|:----------|
 |id|String|指示资源的唯一 ID。|
 |displayName|String|指示为资源定义的可见名称。 通常在创建资源时指定。|
-|type|String|描述资源类型。  示例值包括 `Application` 、 `Group` 和 `ServicePrincipal` `User` 。|
-|userPrincipalName|String|当 **类型** 设置为 `User` 时，这包括启动该操作的用户名; `null` 对于其他类型的用户。|
-|groupType|String|当 **类型** 设置为 `Group` 时，这表示组类型。|
+|type|String|描述资源类型。  示例值包括 `Application` 、 、 和 `Group` `ServicePrincipal` `User` 。|
+|userPrincipalName|String|当 **type** 设置为 `User` 时，这包括启动该操作的用户名; `null` 对于其他类型。|
+|groupType|groupType|当 **type** 设置为 `Group` 时，这表示组类型。 可能的值包括 `unifiedGroups` ：、 `azureAD` 和 `unknownFutureValue`|
 |ModifiedProperties|[modifiedProperty](modifiedproperty.md) 集合|指示更改的每个属性的名称、旧值和新值。 属性值取决于操作 **类型**。|
 
 ## <a name="json-representation"></a>JSON 表示形式

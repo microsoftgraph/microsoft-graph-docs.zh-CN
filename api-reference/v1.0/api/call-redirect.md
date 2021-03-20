@@ -5,18 +5,18 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2f1fce44d9f6aa4ac299497d6d0c6de11cc062c8
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: d7edf057ecb82eb42fa9f5368ef8a26c445a3a08
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576804"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943624"
 ---
 # <a name="call-redirect"></a>call： redirect
 
 命名空间：microsoft.graph
 
-重定向尚未应答[或拒绝的传入](./call-answer.md)[呼叫。](./call-reject.md) 呼叫的术语"重定向"和"转发"可以互换使用。
+重定向尚未[应答或拒绝的](./call-answer.md)[传入](./call-reject.md)呼叫。 呼叫的术语"重定向"和"转发"可以互换使用。
 
 机器人预期在呼叫退出之前重定向呼叫。当前超时值为 15 秒。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50576804"
 | :-------------- | :-------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                |
 | 委派（个人 Microsoft 帐户） | 不支持                |
-| Application     | Calls.Initiate.All                                  |
+| 应用程序     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,9 +50,9 @@ POST /communications/calls/{id}/redirect
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则这是一个模拟调用。 这意味着所有目标将同时设定范围，并且仅连接第一个选取的目标。 我们最多支持 25 个目标进行模拟。
-|timeout|Int32|对于重定向 (超时) 秒数。 超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。 一个目标的默认超时值为 55 秒，而多个目标的默认超时值为 60 (可能会) 。 |
-|callbackUri|String|这允许机器人为当前调用提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。|
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则这是一个同时调用。 这意味着所有目标将同时设定范围，并且只有第一个选取的目标将连接。 我们最多支持 25 个目标用于模拟。
+|timeout|Int32|对于重定向 (超时) 秒数。 超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。 对于一个目标，默认超时值为 55 秒，对于多个目标，默认超时值为 60 秒 (可能会) 。 |
+|callbackUri|String|这允许机器人为当前呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。
@@ -119,7 +119,7 @@ POST /communications/calls/{id}/redirect
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
-  "name": "call-redirect"
+  "name": "call-redirect-1"
 } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
@@ -151,11 +151,11 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -169,11 +169,11 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---terminated"></a>通知 - 已终止
+##### <a name="notification---terminated"></a>Notification - 已终止
 
 <!-- {
   "blockType": "example", 
-  "name": "call-redirect"
+  "name": "call-redirect-2"
 } -->
 ``` http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
@@ -345,7 +345,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---terminated"></a>通知 - 已终止
+##### <a name="notification---terminated"></a>Notification - 已终止
 
 <!-- {
   "blockType": "example", 
@@ -402,7 +402,7 @@ Content-Type: application/json
 
 ### <a name="example-3-forward-a-call-to-a-pstn-number"></a>示例 3：将呼叫转发到 PSTN 号码
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为自动程序分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="notification---incoming"></a>通知 - 传入
 <!-- {
@@ -496,7 +496,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="notification---terminated"></a>通知 - 已终止
+#### <a name="notification---terminated"></a>Notification - 已终止
 
 <!-- {
   "blockType": "example", 

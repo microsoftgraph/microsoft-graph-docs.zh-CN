@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d6308ba07530d8fd3c13e3d9e9e6e089c008176c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e7e0bb9eba36a3b6fdbd6ae03db718dc210d5424
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443614"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955524"
 ---
 # <a name="list-riskdetection"></a>列出 riskDetection
 
@@ -18,12 +18,12 @@ ms.locfileid: "50443614"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 **riskDetection** 对象集合的属性。
+检索 **riskDetection 对象集合** 的属性。
 
 >[!NOTE]
 >必须具有 Azure AD Premium P1 或 P2 许可证才能使用风险检测 API。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "50443614"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskEvent.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | IdentityRiskEvent.Read.All |
+|应用程序 | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +57,7 @@ GET /identityProtection/riskDetections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [riskDetection](../resources/riskdetection.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [riskDetection](../resources/riskdetection.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -71,26 +71,26 @@ GET /identityProtection/riskDetections
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_riskDetection"
+  "name": "list_riskDetection_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-riskdetection-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-riskdetection-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-riskdetection-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-riskdetection-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -152,26 +152,26 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_riskDetection"
+  "name": "list_riskDetection_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-riskdetection-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-riskdetection-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-riskdetection-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-riskdetection-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -228,7 +228,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何用于获取风险级别为中等或风险事件类型为非等式Features 的风险检测集合，这表示登录位于不熟悉或异常 `$filter` 的位置。
+以下示例演示如何使用 获取风险级别为中等或风险事件类型为不固定Features 的风险检测集合，这表示登录位于不熟悉或异常的位置。 `$filter`
 
 
 # <a name="http"></a>[HTTP](#tab/http)
