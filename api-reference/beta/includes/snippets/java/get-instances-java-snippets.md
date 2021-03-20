@@ -1,21 +1,21 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0592608b5d4544b7173f4ccb780d4aed6e54d35b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 62711d6a67db1208272cab1ef2a89ac901b4f98b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954815"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978024"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("startDateTime", "2019-04-08T09:00:00.0000000"));
 requestOptions.add(new QueryOption("endDateTime", "2019-04-30T09:00:00.0000000"));
 
-IEventCollectionPage instances = graphClient.me().events("AAMkAGUzYRgWAAA=").instances()
+EventCollectionPage instances = graphClient.me().events("AAMkAGUzYRgWAAA=").instances()
     .buildRequest( requestOptions )
     .select("subject,bodyPreview,seriesMasterId,type,recurrence,start,end")
     .get();

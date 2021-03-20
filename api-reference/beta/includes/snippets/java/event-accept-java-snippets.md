@@ -1,22 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c5fde4d01e3242d516459a63094072e335ad6f6e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e26b02a0eeee9546f4e110a206e55abf1a37ec6a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954983"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50976378"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String comment = "comment-value";
 
 Boolean sendResponse = true;
 
 graphClient.me().events("{id}")
-    .accept(comment,sendResponse)
+    .accept(EventAcceptParameterSet
+        .newBuilder()
+        .withComment(comment)
+        .withSendResponse(sendResponse)
+        .build())
     .buildRequest()
     .post();
 

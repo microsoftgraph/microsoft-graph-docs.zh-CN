@@ -5,54 +5,54 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3601ccb8c6f46ed3ca48685cc438e41d62710a45
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ddc2e5f73fcc2959b33f401aced09ad90a77042
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038954"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953650"
 ---
-# <a name="add-educationclass-to-educationschool"></a><span data-ttu-id="1148d-103">将 educationClass 添加到 educationSchool</span><span class="sxs-lookup"><span data-stu-id="1148d-103">Add educationClass to educationSchool</span></span>
+# <a name="add-educationclass-to-educationschool"></a><span data-ttu-id="8993b-103">将 educationClass 添加到 educationSchool</span><span class="sxs-lookup"><span data-stu-id="8993b-103">Add educationClass to educationSchool</span></span>
 
-<span data-ttu-id="1148d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1148d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8993b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8993b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1148d-105">向学校添加课程。</span><span class="sxs-lookup"><span data-stu-id="1148d-105">Add a class to a school.</span></span>
+<span data-ttu-id="8993b-105">向学校添加课程。</span><span class="sxs-lookup"><span data-stu-id="8993b-105">Add a class to a school.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1148d-106">权限</span><span class="sxs-lookup"><span data-stu-id="1148d-106">Permissions</span></span>
-<span data-ttu-id="1148d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1148d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8993b-106">权限</span><span class="sxs-lookup"><span data-stu-id="8993b-106">Permissions</span></span>
+<span data-ttu-id="8993b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8993b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1148d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1148d-109">Permission type</span></span>      | <span data-ttu-id="1148d-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1148d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8993b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8993b-109">Permission type</span></span>      | <span data-ttu-id="8993b-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8993b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1148d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1148d-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="1148d-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="1148d-112">Not supported.</span></span>  |
-|<span data-ttu-id="1148d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1148d-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="1148d-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1148d-114">Not supported.</span></span>  |
-|<span data-ttu-id="1148d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1148d-115">Application</span></span> | <span data-ttu-id="1148d-116">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1148d-116">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="8993b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8993b-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="8993b-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="8993b-112">Not supported.</span></span>  |
+|<span data-ttu-id="8993b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8993b-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="8993b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="8993b-114">Not supported.</span></span>  |
+|<span data-ttu-id="8993b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="8993b-115">Application</span></span> | <span data-ttu-id="8993b-116">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8993b-116">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="1148d-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1148d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8993b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8993b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/schools/{id}/classes/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="1148d-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="1148d-118">Request headers</span></span>
-| <span data-ttu-id="1148d-119">标头</span><span class="sxs-lookup"><span data-stu-id="1148d-119">Header</span></span>       | <span data-ttu-id="1148d-120">值</span><span class="sxs-lookup"><span data-stu-id="1148d-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="8993b-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8993b-118">Request headers</span></span>
+| <span data-ttu-id="8993b-119">标头</span><span class="sxs-lookup"><span data-stu-id="8993b-119">Header</span></span>       | <span data-ttu-id="8993b-120">值</span><span class="sxs-lookup"><span data-stu-id="8993b-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1148d-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1148d-121">Authorization</span></span>  | <span data-ttu-id="1148d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1148d-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="1148d-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1148d-124">Content-Type</span></span>  | <span data-ttu-id="1148d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1148d-125">application/json</span></span>  |
+| <span data-ttu-id="8993b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8993b-121">Authorization</span></span>  | <span data-ttu-id="8993b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8993b-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8993b-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8993b-124">Content-Type</span></span>  | <span data-ttu-id="8993b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8993b-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1148d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="1148d-126">Request body</span></span>
-<span data-ttu-id="1148d-127">在请求正文中，提供 [educationClass](../resources/educationclass.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1148d-127">In the request body, supply a JSON representation of an [educationClass](../resources/educationclass.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8993b-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8993b-126">Request body</span></span>
+<span data-ttu-id="8993b-127">在请求正文中，提供 [educationClass](../resources/educationclass.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8993b-127">In the request body, supply a JSON representation of an [educationClass](../resources/educationclass.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="1148d-128">响应</span><span class="sxs-lookup"><span data-stu-id="1148d-128">Response</span></span>
-<span data-ttu-id="1148d-129">如果成功，此方法会在响应正文中返回 `204 No Content` 响应代码和 [educationClass](../resources/educationclass.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1148d-129">If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8993b-128">响应</span><span class="sxs-lookup"><span data-stu-id="8993b-128">Response</span></span>
+<span data-ttu-id="8993b-129">如果成功，此方法会在响应正文中返回 `204 No Content` 响应代码和 [educationClass](../resources/educationclass.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8993b-129">If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1148d-130">示例</span><span class="sxs-lookup"><span data-stu-id="1148d-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1148d-131">请求</span><span class="sxs-lookup"><span data-stu-id="1148d-131">Request</span></span>
-<span data-ttu-id="1148d-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1148d-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8993b-130">示例</span><span class="sxs-lookup"><span data-stu-id="8993b-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8993b-131">请求</span><span class="sxs-lookup"><span data-stu-id="8993b-131">Request</span></span>
+<span data-ttu-id="8993b-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8993b-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="1148d-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="1148d-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8993b-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="8993b-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationclass_from_educationschool"
+  "name": "create_educationclass_from_educationschool_5"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes/$ref
@@ -63,27 +63,27 @@ Content-length: 224
  "@odata.id":"https://graph.microsoft.com/v1.0/education/classes/11006"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="1148d-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1148d-134">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationclass-from-educationschool-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="8993b-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8993b-134">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationclass-from-educationschool-5-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1148d-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1148d-135">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationclass-from-educationschool-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="8993b-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8993b-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationclass-from-educationschool-5-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="1148d-136">C#</span><span class="sxs-lookup"><span data-stu-id="1148d-136">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationclass-from-educationschool-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="8993b-136">C#</span><span class="sxs-lookup"><span data-stu-id="8993b-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationclass-from-educationschool-5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1148d-137">Java</span><span class="sxs-lookup"><span data-stu-id="1148d-137">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationschool-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="8993b-137">Java</span><span class="sxs-lookup"><span data-stu-id="8993b-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationschool-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="1148d-138">响应</span><span class="sxs-lookup"><span data-stu-id="1148d-138">Response</span></span> 
-<span data-ttu-id="1148d-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1148d-139">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="8993b-138">响应</span><span class="sxs-lookup"><span data-stu-id="8993b-138">Response</span></span> 
+<span data-ttu-id="8993b-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8993b-139">The following is an example of the response.</span></span> 
 
 <!-- Add the educationClass resource to the response. -->
 

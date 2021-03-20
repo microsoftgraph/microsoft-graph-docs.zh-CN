@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bf210a66aabd90387eeff1b02c198a1710cd952f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 24d18a13014095bb3d106c11ea3e2a0db5cb7d83
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981467"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975954"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TiIndicator tiIndicator = new TiIndicator();
 tiIndicator.action = TiAction.ALERT;
@@ -17,7 +17,7 @@ LinkedList<String> activityGroupNamesList = new LinkedList<String>();
 tiIndicator.activityGroupNames = activityGroupNamesList;
 tiIndicator.confidence = 0;
 tiIndicator.description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator.";
-tiIndicator.expirationDateTime = CalendarSerializer.deserialize("2019-03-01T21:43:37.5031462+00:00");
+tiIndicator.expirationDateTime = OffsetDateTimeSerializer.deserialize("2019-03-01T21:43:37.5031462+00:00");
 tiIndicator.externalId = "Test--8586509942679764298MS501";
 tiIndicator.fileHashType = FileHashType.SHA256;
 tiIndicator.fileHashValue = "aa64428647b57bf51524d1756b2ed746e5a3f31b67cf7fe5b5d8a9daf07ca313";

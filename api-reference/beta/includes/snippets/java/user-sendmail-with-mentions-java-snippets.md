@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fb3a42a5bbaab0989bb5e748c9508f1e835384c7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71a5e970cdae70b27d4b6db8292238cc430e0133
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980036"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50976149"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
 message.subject = "Project kickoff";
@@ -34,7 +34,11 @@ MentionCollectionPage mentionCollectionPage = new MentionCollectionPage(mentionC
 message.mentions = mentionCollectionPage;
 
 graphClient.me()
-    .sendMail(message,null)
+    .sendMail(UserSendMailParameterSet
+        .newBuilder()
+        .withMessage(message)
+        .withSaveToSentItems(null)
+        .build())
     .buildRequest()
     .post();
 
