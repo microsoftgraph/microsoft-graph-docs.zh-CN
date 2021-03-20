@@ -5,71 +5,91 @@ localization_priority: Normal
 author: kexia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 24ba0c96df393accfefa5930a60b9ca186819ac2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: fd1650c1b4a0aff6b88caad9f63023d3652b605e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722533"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50949217"
 ---
-# <a name="get-localized-organizationalbrandingproperties"></a><span data-ttu-id="7aad1-103">获取本地化的组织BrandingProperties</span><span class="sxs-lookup"><span data-stu-id="7aad1-103">Get Localized organizationalBrandingProperties</span></span>
+# <a name="get-localized-organizationalbrandingproperties"></a><span data-ttu-id="bb6ea-103">获取本地化的组织BrandingProperties</span><span class="sxs-lookup"><span data-stu-id="bb6ea-103">Get Localized organizationalBrandingProperties</span></span>
 
-<span data-ttu-id="7aad1-104">检索 [organizationalBrandingProperties 对象](../resources/organizationalbrandingproperties.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="7aad1-104">Retrieve the properties of the [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.</span></span>
+<span data-ttu-id="bb6ea-104">检索 [organizationalBrandingProperties 对象](../resources/organizationalbrandingproperties.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-104">Retrieve the properties of the [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7aad1-105">Permissions</span><span class="sxs-lookup"><span data-stu-id="7aad1-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bb6ea-105">权限</span><span class="sxs-lookup"><span data-stu-id="bb6ea-105">Permissions</span></span>
 
-<span data-ttu-id="7aad1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7aad1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bb6ea-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7aad1-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7aad1-108">Permission type</span></span>                        | <span data-ttu-id="7aad1-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7aad1-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="bb6ea-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="bb6ea-108">Permission type</span></span>                        | <span data-ttu-id="bb6ea-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bb6ea-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="7aad1-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7aad1-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="7aad1-111">Organization.Read.All、User.Read、User.Read.All、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="7aad1-111">Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All</span></span> |
-| <span data-ttu-id="7aad1-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7aad1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7aad1-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="7aad1-113">Not supported.</span></span> |
-| <span data-ttu-id="7aad1-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="7aad1-114">Application</span></span>                            | <span data-ttu-id="7aad1-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7aad1-115">Not supported.</span></span> |
+| <span data-ttu-id="bb6ea-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bb6ea-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="bb6ea-111">Organization.Read.All、User.Read、User.Read.All、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="bb6ea-111">Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All</span></span> |
+| <span data-ttu-id="bb6ea-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bb6ea-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bb6ea-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-113">Not supported.</span></span> |
+| <span data-ttu-id="bb6ea-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="bb6ea-114">Application</span></span>                            | <span data-ttu-id="bb6ea-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7aad1-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7aad1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bb6ea-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bb6ea-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/localizations/{locale}/{property name}
+GET /organization/{id}/branding/localizations/{locale}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7aad1-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="7aad1-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="bb6ea-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="bb6ea-117">Request headers</span></span>
 
-| <span data-ttu-id="7aad1-118">名称</span><span class="sxs-lookup"><span data-stu-id="7aad1-118">Name</span></span>      |<span data-ttu-id="7aad1-119">说明</span><span class="sxs-lookup"><span data-stu-id="7aad1-119">Description</span></span>|
+| <span data-ttu-id="bb6ea-118">名称</span><span class="sxs-lookup"><span data-stu-id="bb6ea-118">Name</span></span>      |<span data-ttu-id="bb6ea-119">说明</span><span class="sxs-lookup"><span data-stu-id="bb6ea-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7aad1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7aad1-120">Authorization</span></span> | <span data-ttu-id="7aad1-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7aad1-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7aad1-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7aad1-123">Content-Type</span></span>  | <span data-ttu-id="7aad1-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="7aad1-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="bb6ea-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="bb6ea-120">Authorization</span></span> | <span data-ttu-id="bb6ea-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bb6ea-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bb6ea-123">Content-Type</span></span>  | <span data-ttu-id="bb6ea-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="bb6ea-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7aad1-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="7aad1-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="bb6ea-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="bb6ea-126">Request body</span></span>
 
-<span data-ttu-id="7aad1-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7aad1-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="bb6ea-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7aad1-128">响应</span><span class="sxs-lookup"><span data-stu-id="7aad1-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bb6ea-128">响应</span><span class="sxs-lookup"><span data-stu-id="bb6ea-128">Response</span></span>
 
-<span data-ttu-id="7aad1-129">如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7aad1-129">If successful, this method returns a `200 OK` response code and the requested [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object in the response body.</span></span> <span data-ttu-id="7aad1-130">"id"的值对应于请求的本地化。</span><span class="sxs-lookup"><span data-stu-id="7aad1-130">The value of "id" corresponds to the localization requested.</span></span>
+<span data-ttu-id="bb6ea-129">如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-129">If successful, this method returns a `200 OK` response code and the requested [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object in the response body.</span></span> <span data-ttu-id="bb6ea-130">"id"的值对应于请求的本地化。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-130">The value of "id" corresponds to the localization requested.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7aad1-131">示例</span><span class="sxs-lookup"><span data-stu-id="7aad1-131">Examples</span></span>
-### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a><span data-ttu-id="7aad1-132">示例 1：获取特定区域设置或 (本地化) </span><span class="sxs-lookup"><span data-stu-id="7aad1-132">Example 1: Get the localized branding for a specific locale (fr)</span></span>
-<span data-ttu-id="7aad1-133">对特定本地化的 GET 请求仅返回该本地化的值。</span><span class="sxs-lookup"><span data-stu-id="7aad1-133">A GET request to a particular localization returns only the values for that localization.</span></span> <span data-ttu-id="7aad1-134">空值不会替换为默认品牌中的值。</span><span class="sxs-lookup"><span data-stu-id="7aad1-134">Null values will not be replaced by those from the default branding.</span></span>
-#### <a name="request"></a><span data-ttu-id="7aad1-135">请求</span><span class="sxs-lookup"><span data-stu-id="7aad1-135">Request</span></span>
+## <a name="examples"></a><span data-ttu-id="bb6ea-131">示例</span><span class="sxs-lookup"><span data-stu-id="bb6ea-131">Examples</span></span>
+### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a><span data-ttu-id="bb6ea-132">示例 1：获取特定区域设置或 (本地化) </span><span class="sxs-lookup"><span data-stu-id="bb6ea-132">Example 1: Get the localized branding for a specific locale (fr)</span></span>
+<span data-ttu-id="bb6ea-133">对特定本地化的 GET 请求仅返回该本地化的值。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-133">A GET request to a particular localization returns only the values for that localization.</span></span> <span data-ttu-id="bb6ea-134">空值不会替换为默认品牌中的值。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-134">Null values will not be replaced by those from the default branding.</span></span>
+#### <a name="request"></a><span data-ttu-id="bb6ea-135">请求</span><span class="sxs-lookup"><span data-stu-id="bb6ea-135">Request</span></span>
 
-<span data-ttu-id="7aad1-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7aad1-136">The following is an example of the request.</span></span>
+<span data-ttu-id="bb6ea-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-136">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="bb6ea-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb6ea-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_8"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
 ```
+# <a name="c"></a>[<span data-ttu-id="bb6ea-138">C#</span><span class="sxs-lookup"><span data-stu-id="bb6ea-138">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-8-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="7aad1-137">响应</span><span class="sxs-lookup"><span data-stu-id="7aad1-137">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="bb6ea-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb6ea-139">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-8-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="7aad1-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7aad1-138">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="bb6ea-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb6ea-140">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-8-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="7aad1-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7aad1-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="bb6ea-141">Java</span><span class="sxs-lookup"><span data-stu-id="bb6ea-141">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-8-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="bb6ea-142">响应</span><span class="sxs-lookup"><span data-stu-id="bb6ea-142">Response</span></span>
+
+<span data-ttu-id="bb6ea-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-143">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="bb6ea-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -98,25 +118,45 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-all-language-specific-localizations-that-have-been-configured"></a><span data-ttu-id="7aad1-141">示例 2：获取已配置的所有特定语言的本地化</span><span class="sxs-lookup"><span data-stu-id="7aad1-141">Example 2: Get all language-specific localizations that have been configured</span></span>
-#### <a name="request"></a><span data-ttu-id="7aad1-142">请求</span><span class="sxs-lookup"><span data-stu-id="7aad1-142">Request</span></span>
+### <a name="example-2-get-all-language-specific-localizations-that-have-been-configured"></a><span data-ttu-id="bb6ea-146">示例 2：获取已配置的所有特定语言的本地化</span><span class="sxs-lookup"><span data-stu-id="bb6ea-146">Example 2: Get all language-specific localizations that have been configured</span></span>
+#### <a name="request"></a><span data-ttu-id="bb6ea-147">请求</span><span class="sxs-lookup"><span data-stu-id="bb6ea-147">Request</span></span>
 
-<span data-ttu-id="7aad1-143">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7aad1-143">The following is an example of the request.</span></span>
+<span data-ttu-id="bb6ea-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-148">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="bb6ea-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb6ea-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_9"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations
 ```
+# <a name="c"></a>[<span data-ttu-id="bb6ea-150">C#</span><span class="sxs-lookup"><span data-stu-id="bb6ea-150">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-9-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="7aad1-144">响应</span><span class="sxs-lookup"><span data-stu-id="7aad1-144">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="bb6ea-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb6ea-151">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-9-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="7aad1-145">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7aad1-145">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="bb6ea-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb6ea-152">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-9-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="7aad1-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7aad1-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="bb6ea-153">Java</span><span class="sxs-lookup"><span data-stu-id="bb6ea-153">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-9-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="bb6ea-154">响应</span><span class="sxs-lookup"><span data-stu-id="bb6ea-154">Response</span></span>
+
+<span data-ttu-id="bb6ea-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-155">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="bb6ea-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -164,26 +204,46 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-get-the-value-of-signinpagetext-for-a-specific-locale"></a><span data-ttu-id="7aad1-148">示例 3：获取特定区域设置 signInPageText 的值</span><span class="sxs-lookup"><span data-stu-id="7aad1-148">Example 3: Get the value of signInPageText for a specific locale</span></span>
-<span data-ttu-id="7aad1-149">请求本地化的属性将返回该值，如果值为 null，则返回 204。</span><span class="sxs-lookup"><span data-stu-id="7aad1-149">Requesting a property of a localization returns that value, or 204 if the value is null.</span></span>
-#### <a name="request"></a><span data-ttu-id="7aad1-150">请求</span><span class="sxs-lookup"><span data-stu-id="7aad1-150">Request</span></span>
+### <a name="example-3-get-the-value-of-signinpagetext-for-a-specific-locale"></a><span data-ttu-id="bb6ea-158">示例 3：获取特定区域设置 signInPageText 的值</span><span class="sxs-lookup"><span data-stu-id="bb6ea-158">Example 3: Get the value of signInPageText for a specific locale</span></span>
+<span data-ttu-id="bb6ea-159">请求本地化的属性将返回该值，如果值为 null，则返回 204。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-159">Requesting a property of a localization returns that value, or 204 if the value is null.</span></span>
+#### <a name="request"></a><span data-ttu-id="bb6ea-160">请求</span><span class="sxs-lookup"><span data-stu-id="bb6ea-160">Request</span></span>
 
-<span data-ttu-id="7aad1-151">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7aad1-151">The following is an example of the request.</span></span>
+<span data-ttu-id="bb6ea-161">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-161">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="bb6ea-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb6ea-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_10"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/signInPageText
 ```
+# <a name="c"></a>[<span data-ttu-id="bb6ea-163">C#</span><span class="sxs-lookup"><span data-stu-id="bb6ea-163">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-10-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="7aad1-152">响应</span><span class="sxs-lookup"><span data-stu-id="7aad1-152">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="bb6ea-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb6ea-164">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-10-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="7aad1-153">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7aad1-153">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="bb6ea-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb6ea-165">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-10-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="7aad1-p108">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7aad1-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="bb6ea-166">Java</span><span class="sxs-lookup"><span data-stu-id="bb6ea-166">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-10-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="bb6ea-167">响应</span><span class="sxs-lookup"><span data-stu-id="bb6ea-167">Response</span></span>
+
+<span data-ttu-id="bb6ea-168">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-168">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="bb6ea-p108">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="bb6ea-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
