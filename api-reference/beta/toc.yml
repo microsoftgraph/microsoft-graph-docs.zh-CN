@@ -7,8 +7,6 @@ items:
       - name: 概述
         href: /graph/auth/index?context=graph/api/beta
       - name: 基本信息
-        href: /graph/auth/auth-concepts?context=graph/api/beta
-      - name: 注册应用
         href: /graph/auth-register-app-v2?context=graph/api/beta
       - name: 代表用户获取访问权限
         href: /graph/auth-v2-user?context=graph/api/beta
@@ -364,7 +362,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -956,6 +954,8 @@ items:
                     href: api/serviceprincipal-addkey.md
                   - name: 删除键
                     href: api/serviceprincipal-removekey.md
+                  - name: 添加令牌签名证书
+                    href: api/serviceprincipal-addtokensigningcertificate.md
               - name: 委派权限授予
                 items:
                   - name: 列出委派的权限授予
@@ -973,7 +973,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1806,7 +1806,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -10160,11 +10160,11 @@ items:
                 href: resources/featurerolloutpolicy.md
                 items:
                   - name: 列表
-                    href: api/directory-list-featurerolloutpolicies.md
+                    href: api/list-featurerolloutpolicies.md
                   - name: 获取
                     href: api/featurerolloutpolicy-get.md
                   - name: 创建
-                    href: api/directory-post-featurerolloutpolicies.md
+                    href: api/post-featurerolloutpolicies.md
                   - name: 更新
                     href: api/featurerolloutpolicy-update.md
                   - name: 删除
@@ -10696,6 +10696,23 @@ items:
                         href: api/claimsmappingpolicy-delete.md
                       - name: 列出已应用到应用程序的策略
                         href: api/claimsmappingpolicy-list-appliesto.md
+                  - name: 功能推出策略
+                    href: resources/featurerolloutpolicy.md
+                    items:
+                      - name: 列表
+                        href: api/list-featurerolloutpolicies.md
+                      - name: 获取
+                        href: api/featurerolloutpolicy-get.md
+                      - name: 创建
+                        href: api/post-featurerolloutpolicies.md
+                      - name: 更新
+                        href: api/featurerolloutpolicy-update.md
+                      - name: 删除
+                        href: api/featurerolloutpolicy-delete.md
+                      - name: Create appliesTo
+                        href: api/featurerolloutpolicy-post-appliesto.md
+                      - name: Delete appliesTo
+                        href: api/featurerolloutpolicy-delete-appliesto.md
                   - name: 主领域发现策略
                     href: resources/homerealmdiscoverypolicy.md
                     items:
@@ -11059,6 +11076,34 @@ items:
                     items:
                       - name: 列出
                         href: api/programcontroltype-list.md
+              - name: 同意请求
+                href: resources/consentrequests-root.md
+                items:
+                  - name: 管理员同意请求策略
+                    href: resources/adminconsentrequestpolicy.md
+                    items:
+                      - name: 获取
+                        href: api/adminconsentrequestpolicy-get.md
+                      - name: 更新
+                        href: api/adminconsentrequestpolicy-update.md
+                  - name: 应用同意请求
+                    href: resources/appconsentrequest.md
+                    items:
+                      - name: 列表
+                        href: api/appconsentrequest-list.md
+                      - name: 获取
+                        href: api/appconsentrequest-get.md
+                      - name: 按当前用户筛选
+                        href: api/appconsentrequest-filterByCurrentUser.md
+                  - name: 用户同意请求
+                    href: resources/userconsentrequest.md
+                    items:
+                      - name: 列表
+                        href: api/userconsentrequest-list.md
+                      - name: 获取
+                        href: api/userconsentrequest-get.md
+                      - name: 按当前用户筛选
+                        href: api/userconsentrequest-filterByCurrentUser.md
               - name: 权利管理
                 href: resources/entitlementmanagement-root.md
                 items:
@@ -11761,7 +11806,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注释
+              - name: 备注
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -12524,14 +12569,11 @@ items:
           - name: 概述
             href: resources/sharepoint.md
           - name: 网站
-            href: resources/site.md
             items:
+              - name: Site
+                href: resources/site.md
               - name: 获取站点
                 href: api/site-get.md
-              - name: 获取列表
-                href: api/list-list.md
-              - name: 列出子网站
-                href: api/site-list-subsites.md
               - name: 获取网站分析
                 href: api/itemanalytics-get.md
               - name: 按间隔获取活动
@@ -12542,37 +12584,102 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
+              - name: 列出列
+                href: api/site-list-columns.md
+              - name: 创建列
+                href: api/site-post-columns.md
+              - name: 列出内容类型
+                href: api/site-list-contenttypes.md
+              - name: 创建内容类型
+                href: api/site-post-contenttypes.md
               - name: 获取列表的适用内容类型
                 href: api/site-getapplicablecontenttypesforlist.md
+              - name: 获取列表
+                href: api/list-list.md
+              - name: 创建列表
+                href: api/list-create.md
+              - name: 列出子网站
+                href: api/site-list-subsites.md
               - name: 权限
-                href: resources/permission.md
                 items:
-                  - name: 获取网站权限
-                    href: api/site-get-permission.md
+                  - name: 权限
+                    href: resources/permission.md
                   - name: 列出网站权限
                     href: api/site-list-permissions.md
                   - name: 创建网站权限
                     href: api/site-post-permissions.md
+                  - name: 获取网站权限
+                    href: api/site-get-permission.md
                   - name: 更新网站权限
                     href: api/site-update-permission.md
                   - name: 删除网站权限
                     href: api/site-delete-permission.md
           - name: 列表
-            href: resources/list.md
             items:
+              - name: 列表
+                href: resources/list.md
+              - name: 获取网站中的列表
+                href: api/list-list.md
+              - name: 创建列表
+                href: api/list-create.md
               - name: 获取列表
                 href: api/list-get.md
               - name: 获取项目
                 href: api/listitem-list.md
-              - name: 创建列表
-                href: api/list-create.md
-          - name: 列表项目
-            href: resources/listitem.md
+              - name: 列出列
+                href: api/list-list-columns.md
+              - name: 创建列
+                href: api/list-post-columns.md
+              - name: 列出内容类型
+                href: api/list-list-contenttypes.md
+              - name: 添加内容类型副本
+                href: api/contenttype-addcopy.md
+          - name: 列数
             items:
+              - name: 列定义
+                href: resources/columndefinition.md
+              - name: 获取
+                href: api/columndefinition-get.md
+              - name: 更新
+                href: api/columndefinition-update.md
+              - name: 删除
+                href: api/columndefinition-delete.md
+          - name: 内容类型
+            items:
+              - name: 内容类型
+                href: resources/contentType.md
+              - name: 获取
+                href: api/contenttype-get.md
+              - name: 更新
+                href: api/contenttype-update.md
+              - name: 删除
+                href: api/contenttype-delete.md
+              - name: IsPublished
+                href: api/contenttype-ispublished.md
+              - name: 发布
+                href: api/contenttype-publish.md
+              - name: 取消发布
+                href: api/contenttype-unpublish.md
+              - name: 将副本添加到列表
+                href: api/contenttype-addcopy.md
+              - name: 与中心网站关联
+                href: api/contenttype-associatewithhubsites.md
+              - name: 复制到默认内容位置
+                href: api/contenttype-copytodefaultcontentlocation.md
+              - name: 列出列
+                href: api/contenttype-list-columns.md
+              - name: 创建列
+                href: api/contenttype-post-columns.md
+          - name: 列表项目
+            items:
+              - name: 列表项
+                href: resources/listitem.md
               - name: 获取项目
-                href: api/listitem-get.md
+                href: api/listitem-list.md
               - name: 创建项目
                 href: api/listitem-create.md
+              - name: 获取项目
+                href: api/listitem-get.md
               - name: 更新项目
                 href: api/listitem-update.md
               - name: 删除项目
@@ -12584,17 +12691,18 @@ items:
               - name: 按间隔获取活动
                 href: api/itemactivity-getbyinterval.md
           - name: 页面
-            href: resources/sitepage.md
             items:
-              - name: 列出页面
+              - name: 网站页面
+                href: resources/sitepage.md
+              - name: 列表
                 href: api/sitepage-list.md
-              - name: 获取页面
+              - name: 获取
                 href: api/sitepage-get.md
-              - name: 创建页面
+              - name: 创建
                 href: api/sitepage-create.md
-              - name: 删除页面
+              - name: 删除
                 href: api/sitepage-delete.md
-              - name: 发布页面
+              - name: 发布
                 href: api/sitepage-publish.md
           - name: '分类 (预览) '
             displayname: Taxonomy API
@@ -12652,41 +12760,6 @@ items:
                     href: api/termStore-term-list-relations.md
                   - name: 创建
                     href: api/termStore-relation-post.md
-          - name: 内容类型
-            href: resources/contentType.md
-            items:
-              - name: 列出
-                href: api/contenttype-list.md
-              - name: 创建
-                href: api/contenttype-post.md
-              - name: 获取
-                href: api/contenttype-get.md
-              - name: 更新
-                href: api/contenttype-update.md
-              - name: 删除
-                href: api/contenttype-delete.md
-              - name: 发布
-                href: api/contenttype-publish.md
-              - name: 取消发布
-                href: api/contenttype-unpublish.md
-              - name: IsPublished
-                href: api/contenttype-ispublished.md
-              - name: 添加副本
-                href: api/contenttype-addcopy.md
-              - name: 复制到默认内容位置
-                href: api/contenttype-copytodefaultcontentlocation.md
-              - name: 与中心网站关联
-                href: api/contenttype-associatewithhubsites.md
-              - name: 列出内容类型列
-                href: api/contenttype-list-columns.md
-              - name: 创建内容类型列
-                href: api/contenttype-post-columns.md
-              - name: 获取内容类型列
-                href: api/contenttype-get-columns.md
-              - name: 更新内容类型列
-                href: api/contenttype-update-columns.md
-              - name: 删除内容类型列
-                href: api/contenttype-delete-columns.md
       - name: 任务和计划
         displayName: Planner
         items:
@@ -13050,7 +13123,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
