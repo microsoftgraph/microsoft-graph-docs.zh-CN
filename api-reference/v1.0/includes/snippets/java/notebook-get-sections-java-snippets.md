@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: bfa421fdcffb42ec6ba1c6ec56b7100809c5dbdf
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a6db3c77df461efbc43167bc8528c5f01bd7a1b2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892716"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50984151"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IOnenoteSectionCollectionPage sections = graphClient.me().onenote().notebooks("{id}").sections()
+OnenoteSectionCollectionPage sections = graphClient.me().onenote().notebooks("{id}").sections()
     .buildRequest()
     .get();
 

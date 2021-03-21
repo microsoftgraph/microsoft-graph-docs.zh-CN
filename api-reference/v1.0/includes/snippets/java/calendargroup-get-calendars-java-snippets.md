@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a4d2dbb4b4a9d80b7e16b6da98ecd84af752cf83
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 51dda1442c211d9e13ef3f9bcc2477977de03227
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882361"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50967599"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ICalendarCollectionPage calendars = graphClient.me().calendarGroups("{id}").calendars()
+CalendarCollectionPage calendars = graphClient.me().calendarGroups("{id}").calendars()
     .buildRequest()
     .get();
 

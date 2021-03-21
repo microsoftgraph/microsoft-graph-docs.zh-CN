@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d42e04773f7b2d9443faee24fe4b2ca9d298ba65
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3b3803e769296bb8caf95c431f92e9b46817e8f5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983434"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50984020"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String displayName = "Myprefix_test_mysuffix";
 
@@ -18,7 +18,12 @@ String mailNickname = "Myprefix_test_mysuffix";
 UUID onBehalfOfUserId = UUID.fromString("onBehalfOfUserId-value");
 
 graphClient.groups("{id}")
-    .validateProperties(displayName,mailNickname,onBehalfOfUserId)
+    .validateProperties(GroupValidatePropertiesParameterSet
+        .newBuilder()
+        .withDisplayName(displayName)
+        .withMailNickname(mailNickname)
+        .withOnBehalfOfUserId(onBehalfOfUserId)
+        .build())
     .buildRequest()
     .post();
 

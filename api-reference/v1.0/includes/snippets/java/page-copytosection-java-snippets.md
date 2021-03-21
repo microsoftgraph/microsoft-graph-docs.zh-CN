@@ -1,22 +1,28 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0fd34a9f7cdfa424b089b98dc79ddf39e0a6c431
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: c1609e1056c55a44f6f504af1e4ca15955969542
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402753"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50980074"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String id = "id-value";
 
 String groupId = "groupId-value";
 
 graphClient.me().onenote().pages("{id}")
-    .copyToSection(id,groupId,null,null)
+    .copyToSection(OnenotePageCopyToSectionParameterSet
+        .newBuilder()
+        .withId(id)
+        .withGroupId(groupId)
+        .withSiteCollectionId(null)
+        .withSiteId(null)
+        .build())
     .buildRequest()
     .post();
 

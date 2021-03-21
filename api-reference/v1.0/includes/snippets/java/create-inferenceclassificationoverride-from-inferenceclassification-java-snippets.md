@@ -1,15 +1,15 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4ea02f2166fb38e4b3c2f808880b7ee55e85a360
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f5bb151f5ca70ac576f5f885a4ef9ed35d8609b7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880831"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970118"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 InferenceClassificationOverride inferenceClassificationOverride = new InferenceClassificationOverride();
 inferenceClassificationOverride.classifyAs = InferenceClassificationType.FOCUSED;
