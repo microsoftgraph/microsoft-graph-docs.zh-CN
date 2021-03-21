@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a3321b5f0966e3e53ca6a38f79527e5150358a8a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3f02076eda741be4cf3067099046f908179d01d2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984262"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50974576"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AttachmentItem attachmentItem = new AttachmentItem();
 attachmentItem.attachmentType = AttachmentType.FILE;
@@ -17,7 +17,10 @@ attachmentItem.name = "flower";
 attachmentItem.size = 3483322L;
 
 graphClient.me().messages("AAMkADI5MAAIT3drCAAA=").attachments()
-    .createUploadSession(attachmentItem)
+    .createUploadSession(AttachmentCreateUploadSessionParameterSet
+        .newBuilder()
+        .withAttachmentItem(attachmentItem)
+        .build())
     .buildRequest()
     .post();
 

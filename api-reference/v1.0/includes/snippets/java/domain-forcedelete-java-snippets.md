@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4f5e45a58c067e5389af0469cbdb6a7e4a77cf4b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e7d7710ba0b197e65698bac2e2c1399a80f0c00e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983134"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50983509"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Boolean disableUserAccounts = true;
 
 graphClient.domains("{id}")
-    .forceDelete(disableUserAccounts)
+    .forceDelete(DomainForceDeleteParameterSet
+        .newBuilder()
+        .withDisableUserAccounts(disableUserAccounts)
+        .build())
     .buildRequest()
     .post();
 

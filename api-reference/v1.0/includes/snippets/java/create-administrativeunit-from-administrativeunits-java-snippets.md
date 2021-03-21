@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f6c6c495225198c7e8e0fe9cc92bea1f06953f75
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 258dbe36a3fae7323aec048ff15f1876d4342667
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223629"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50968571"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AdministrativeUnit administrativeUnit = new AdministrativeUnit();
 administrativeUnit.displayName = "Seattle District Technical Schools";

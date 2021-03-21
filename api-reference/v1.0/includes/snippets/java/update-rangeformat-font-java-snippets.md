@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 48d8e13b1648094ff6fb99135882b3a64cad4d23
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 979d041e8f66fa0f7a87a6032f12081f83c14d7c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984212"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50971543"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRangeFont workbookRangeFont = new WorkbookRangeFont();
 workbookRangeFont.bold = true;
@@ -17,7 +17,10 @@ workbookRangeFont.color = "#4B180E";
 workbookRangeFont.size = 26d;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
-    .range("$A$1").format().font()
+    .range(WorkbookWorksheetRangeParameterSet
+        .newBuilder()
+        .withAddress("$A$1")
+        .build()).format().font()
     .buildRequest()
     .patch(workbookRangeFont);
 

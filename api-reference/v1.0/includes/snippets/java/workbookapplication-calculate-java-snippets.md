@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 213479637477d1a48f3c1c74aace7746336cd63f
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 56369de1f4bf40544c7ade39aa1399b19f2647cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302277"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50973373"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String calculationType = "calculationType-value";
 
 graphClient.me().drive().items("{id}").workbook().application()
-    .calculate(calculationType)
+    .calculate(WorkbookApplicationCalculateParameterSet
+        .newBuilder()
+        .withCalculationType(calculationType)
+        .build())
     .buildRequest()
     .post();
 

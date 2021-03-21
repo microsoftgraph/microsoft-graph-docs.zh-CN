@@ -1,15 +1,15 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a8228e07c9da540665615b98064712514a44cc0d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 4b240b40f0e9952e61e9b644fceb9fe6757d36f1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884422"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975009"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SchemaExtension schemaExtension = new SchemaExtension();
 LinkedList<ExtensionSchemaProperty> propertiesList = new LinkedList<ExtensionSchemaProperty>();

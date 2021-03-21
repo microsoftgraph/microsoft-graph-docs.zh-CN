@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 32c9c758f2e9966058251aae4b7ec2a95c2bda69
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: ec71cbff1e4feea21548bf3d96abd3ac476ace83
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217629"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50976873"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String message = "Sorry, you can't offer this shift.";
 
 graphClient.teams("{teamId}").schedule().offerShiftRequests("{offerShiftRequestId}")
-    .decline(message)
+    .decline(ScheduleChangeRequestDeclineParameterSet
+        .newBuilder()
+        .withMessage(message)
+        .build())
     .buildRequest()
     .post();
 

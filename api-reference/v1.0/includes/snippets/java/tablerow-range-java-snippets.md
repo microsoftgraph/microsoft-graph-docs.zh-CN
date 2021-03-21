@@ -1,15 +1,15 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 72f663db838d0aeec07ad14e0661be6783d902c9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e8c9594d18faae146aa7be1a2a16af63a35a1cd4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894210"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50974952"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRange workbookRange = graphClient.me().drive().items("{id}").workbook().tables("{id|name}").rows("{index}")
     .range()

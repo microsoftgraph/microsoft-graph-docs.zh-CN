@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e529af33f792aedf0e56250706227afeb2771c28
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5edbc3ced7f06ecb0cd173dc90ab606fd84a8ea5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984117"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50982142"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<String> emailAddressesList = new LinkedList<String>();
 emailAddressesList.add("danas@contoso.onmicrosoft.com");
@@ -18,7 +18,11 @@ emailAddressesList.add("fannyd@contoso.onmicrosoft.com");
 EnumSet<MailTipsType> mailTipsOptions = EnumSet.of(MailTipsType.AUTOMATIC_REPLIES,MailTipsType.MAILBOX_FULL_STATUS);
 
 graphClient.me()
-    .getMailTips(emailAddressesList,mailTipsOptions)
+    .getMailTips(UserGetMailTipsParameterSet
+        .newBuilder()
+        .withEmailAddresses(emailAddressesList)
+        .withMailTipsOptions(mailTipsOptions)
+        .build())
     .buildRequest()
     .post();
 

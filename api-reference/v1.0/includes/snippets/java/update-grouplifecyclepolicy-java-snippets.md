@@ -1,15 +1,15 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: ba4f4f322b45cc3816046bea1b39f73d6950c29f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a991c4eca84a8e1f16412e6f79724e7500882ee2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886801"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50968542"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GroupLifecyclePolicy groupLifecyclePolicy = new GroupLifecyclePolicy();
 groupLifecyclePolicy.groupLifetimeInDays = 180;

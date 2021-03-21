@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3635545a18d9fdbad6fde5879af0ee0aeaee7033
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1681f5e74ff3954d93577d2d54b38091414d5f4e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964305"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50983962"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Post post = new Post();
 ItemBody body = new ItemBody();
@@ -41,7 +41,10 @@ AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage
 post.attachments = attachmentCollectionPage;
 
 graphClient.groups("1848753d-185d-4c08-a4e4-6ee40521d115").threads("AAQkADJUdfolA==")
-    .reply(post)
+    .reply(ConversationThreadReplyParameterSet
+        .newBuilder()
+        .withPost(post)
+        .build())
     .buildRequest()
     .post();
 
