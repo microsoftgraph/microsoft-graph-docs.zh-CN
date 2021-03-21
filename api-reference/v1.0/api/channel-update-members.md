@@ -5,18 +5,18 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: acf81a5733f2a0fd7d7ae0ca2a0ada79789dd1e9
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 04d15bf974fd2a292f7112a4e8d57aa89025565b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49943621"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964183"
 ---
 # <a name="update-member-in-channel"></a>更新频道中的成员
 
 命名空间：microsoft.graph
 
-更新频道 [中 conversationMember](../resources/conversationmember.md) [的角色](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 . `private`
+更新频道 [中 conversationMember](../resources/conversationmember.md) [的角色](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 的通道 `private` 。
 
 ## <a name="permissions"></a>权限
 
@@ -47,23 +47,23 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|角色|string 集合|用户的角色。 必须为或 `owner` 为空。 来宾用户将自动标记 `guest` 角色，并且此值无法更新。 |
+|角色|string 集合|用户的角色。 必须为空 `owner` 。 来宾用户将自动标记 `guest` 角色，并且此值无法更新。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [conversationMember](../resources/conversationmember.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [conversationMember](../resources/conversationmember.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-以下是将角色应用于频道的现有 `owner` 成员的请求。
+下面是一个请求，要求将角色 `owner` 应用于频道的现有成员。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_member"
+  "name": "update_member_1"
 } -->
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
@@ -76,19 +76,19 @@ content-length: 26
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-member-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-member-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-member-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-member-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-member-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-member-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-member-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-member-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

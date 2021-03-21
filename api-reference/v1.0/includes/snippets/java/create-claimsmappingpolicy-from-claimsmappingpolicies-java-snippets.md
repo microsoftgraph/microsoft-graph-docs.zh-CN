@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c29864b5652331c8a04f8d867f4ebc5a5d15123e
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: ffecaac5e4cabca3588b96fca71055c1fbbc875b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863232"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50967072"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ClaimsMappingPolicy claimsMappingPolicy = new ClaimsMappingPolicy();
 LinkedList<String> definitionList = new LinkedList<String>();

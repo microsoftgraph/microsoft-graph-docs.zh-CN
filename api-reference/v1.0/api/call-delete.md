@@ -5,18 +5,18 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e0759edf0a1b21a0c66cec8401c4198213535722
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cd34638570614aa0bae3e66a08f1558f361694a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966357"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964440"
 ---
 # <a name="delete-call"></a>删除呼叫
 
 命名空间：microsoft.graph
 
-删除或挂断活动呼叫。 对于组呼叫，这只会删除您的呼叫线路，基础组呼叫仍将继续进行。
+删除或挂断活动呼叫。 对于组呼叫，这只会删除你的通话记录，基础组呼叫将继续。
 
 ## <a name="permissions"></a>权限
 
@@ -52,25 +52,25 @@ DELETE /communications/calls/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-call"
+  "name": "delete-call-1"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -88,7 +88,7 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a>通知终止
+##### <a name="notification---terminating"></a>通知 - 终止
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -117,7 +117,7 @@ Content-Type: application/json
   
 ```
 
-##### <a name="notification---terminated"></a>通知终止
+##### <a name="notification---terminated"></a>Notification - 已终止
 
 ```http
 POST https://bot.contoso.com/api/calls

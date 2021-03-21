@@ -1,22 +1,22 @@
 ---
-title: 将成员添加到频道
-description: 将成员添加到频道。
+title: 向频道添加成员
+description: 向频道添加成员。
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 66a3d8358ffe6a968f6f7f681e64236c7ecd665e
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 29268cb321dd133ba762be5ccfc625810280f3bf
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523311"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964213"
 ---
-# <a name="add-member-to-channel"></a>将成员添加到频道
+# <a name="add-member-to-channel"></a>向频道添加成员
 
 命名空间：microsoft.graph
 
-将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 仅对 **membershipType** 值为的通道使用此操作 `private` 。
+将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 的通道 `private` 。
 
 ## <a name="permissions"></a>权限
 
@@ -47,8 +47,8 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|角色|string 集合|用户的角色。 必须为 `owner` 或为空。|
-|user|[user](../resources/user.md)|要添加到频道的用户。|
+|角色|string 集合|用户的角色。 必须为空 `owner` 。|
+|用户|[用户](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 
@@ -56,14 +56,14 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-a-member-to-a-channel"></a>示例1：向通道中添加成员
+### <a name="example-1-add-a-member-to-a-channel"></a>示例 1：向频道添加成员
 
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "channel_add_member"
+  "name": "channel_add_member_1"
 } -->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
@@ -77,11 +77,19 @@ Content-length: 100
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -112,17 +120,29 @@ Content-length: 468
 }
 ```
 
-### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>示例2：将具有 owner 角色的成员添加到通道
+### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>示例 2：向频道添加具有所有者角色的成员
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "channel_add_member"
+  "name": "channel_add_member_2"
 } -->
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -153,7 +173,7 @@ Content-length: 468
 
 ## <a name="see-also"></a>另请参阅
 
-- [向团队添加成员](team-post-members.md)
+- [添加成员至团队](team-post-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

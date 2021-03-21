@@ -1,16 +1,16 @@
 ---
 title: cloudCommunications：getPresencesByUserId
 description: 获取多个用户状态信息。
-author: elvinyang-msft
+author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 1eae5f86955732829c3eed56be531588f5155eb5
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 78793623972e5887a1f74184789dbda87ee4dda4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689152"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964009"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 
@@ -25,11 +25,11 @@ ms.locfileid: "49689152"
 | :-------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | Presence.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                         |
-| Application                            | 不支持。                                  |
+| 应用程序                            | 不支持。                                  |
 
 > **注意：**
 > * 每个 API 请求最多支持 650 个用户 ID。
-> * 此 API 的最大请求速率是每个租户每个应用程序的 30 秒内 1500 个 API 请求。
+> * 此 API 的最大请求速率是 30 秒内每个租户每个应用程序 1500 个 API 请求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ POST /communications/getPresencesByUserId
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和状态](../resources/presence.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [presence](../resources/presence.md) 对象集合。
 
 
 ## <a name="examples"></a>示例

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1825a3cf02793c2dcdfabf40e11fa05d60225e9d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ad0f83a685fd38969badc449c7d575806c06c4b2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516001"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963860"
 ---
 # <a name="list-conversationmembers"></a>列出 conversationMembers
 
@@ -70,7 +70,7 @@ GET /chats/{id}/members
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_conversation_members"
+  "name": "list_conversation_members_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/{id}/members

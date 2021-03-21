@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9db7c6b12c4c4fa4f29fafb8e9bc04797e05d969
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 418e1d0485a13419de1ebe80de1ccd7ace6dfaf1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682175"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50974168"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
 
@@ -23,7 +23,11 @@ prompts.mediaInfo = mediaInfo;
 promptsList.add(prompts);
 
 graphClient.communications().calls("57dab8b1-894c-409a-b240-bd8beae78896")
-    .playPrompt(promptsList,clientContext)
+    .playPrompt(CallPlayPromptParameterSet
+        .newBuilder()
+        .withPrompts(promptsList)
+        .withClientContext(clientContext)
+        .build())
     .buildRequest()
     .post();
 

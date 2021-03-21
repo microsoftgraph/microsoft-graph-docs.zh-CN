@@ -3,14 +3,14 @@ title: 删除订阅
 description: 删除订阅。
 localization_priority: Normal
 author: davidmu1
-ms.prod: microsoft-identity-platform
+ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 4a534ec4dd9f11f5e4ff4d10c65c8d06a1659a89
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: fdd46e0b68ae1d7b2afab17cd6ded1c81c1fb7d5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761728"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963673"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
