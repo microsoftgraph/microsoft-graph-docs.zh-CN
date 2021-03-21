@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7fce4f7f40b027116cbac396307e6dcf1020a425
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: f9a200a25e2a6e986d88d89ec018b526eaa7fed6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690349"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50980671"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ITeamsAppCollectionPage teamsApps = graphClient.appCatalogs().teamsApps()
+TeamsAppCollectionPage teamsApps = graphClient.appCatalogs().teamsApps()
     .buildRequest()
     .filter("distributionMethod eq 'organization'")
     .get();

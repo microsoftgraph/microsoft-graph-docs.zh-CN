@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 09ae3e1b99dd791b78de74cdb63ddd33d0a5f8a4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 132c607102210fc14db286aa91ea68ab37818430
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889041"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50983203"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IProfilePhotoCollectionPage photos = graphClient.groups("{id}").photos()
+ProfilePhotoCollectionPage photos = graphClient.groups("{id}").photos()
     .buildRequest()
     .get();
 
