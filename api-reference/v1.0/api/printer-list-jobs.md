@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 75bb3abd105d06118ee33d94bd71670130b3f47e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 747992b4612338e6293339180868f60de3e40ebe
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771965"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956288"
 ---
 # <a name="list-printjobs-for-a-printer"></a>列出打印机的 printJobs
 命名空间：microsoft.graph
@@ -70,26 +70,26 @@ GET /print/printers/{printerId}/jobs
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_printjob"
+  "name": "list_printjob_1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-printjob-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printjob-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-printjob-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printjob-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-printjob-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printjob-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-printjob-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-printjob-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

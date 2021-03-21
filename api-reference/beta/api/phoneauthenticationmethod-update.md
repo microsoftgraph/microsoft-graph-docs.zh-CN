@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: af68131407948d1986a74e6f6d97540891f617b4
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 62d6dfbdf2e9025b3bdd0732b69b54e036045913
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516806"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957282"
 ---
 # <a name="update-phoneauthenticationmethod"></a>更新 phoneAuthenticationMethod
 
@@ -22,7 +22,7 @@ ms.locfileid: "50516806"
 
 你无法更改电话的类型。 若要更改电话的类型，请添加所需类型的新号码，然后删除具有原始类型的对象。
 
-如果策略允许用户使用短信登录，并且号码已更改，系统将尝试注册号码 `mobile` 以用于该系统。
+如果策略允许用户使用短信登录并更改号码，系统将尝试注册用于 `mobile` 该系统的号码。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ ms.locfileid: "50516806"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -42,9 +42,9 @@ ms.locfileid: "50516806"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员
@@ -57,6 +57,10 @@ ms.locfileid: "50516806"
 PUT /me/authentication/phoneMethods/{id}
 PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
+与要 `id` 更新的 phoneType 对应的值是下列值之一：
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` 更新 `alternateMobile` **phoneType**。
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` 更新 `office` **phoneType**。
++ `3179e48a-750b-4051-897c-87b9720928f7` 更新 `mobile` **phoneType**。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -67,16 +71,16 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 请求正文中不包含的现有属性将基于其他属性值的更改重新计算。
+在请求正文中，提供应更新的相关字段的值。 请求正文中未包含的现有属性将基于其他属性值的更改重新计算。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|发短信或呼叫进行身份验证的电话号码。 电话号码使用格式"+ \<country code\> \<number\> \<extension\> x"，分机是可选的。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝这些号码。|
+|phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话号码使用格式"+ \<country code\> \<number\> \<extension\> x"，分机号可选。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
 |phoneType|string| 可能的值为： `mobile`、 `alternateMobile`或 `office`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -1,16 +1,16 @@
 ---
 title: UserFlow 资源类型
-description: 标识用户流是内置身份验证旅程
+description: 标识用户流是内置身份验证之旅
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3a5cb0bfd61e9b99e9837c36484feefc0ff3a635
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c5401aeb67ccc894e2c151507c0a857b14c3dabb
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440246"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957021"
 ---
 # <a name="userflow-resource-type"></a>UserFlow 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50440246"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用户流使您能够为登录、注册、组合注册和登录、密码重置和配置文件更新定义预定义的可配置策略。
+用户流使您能够定义预定义的可配置策略，用于登录、注册、组合注册和登录、密码重置和配置文件更新。
 
 ## <a name="methods"></a>Methods
 
@@ -33,9 +33,9 @@ ms.locfileid: "50440246"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| 用户流的标识符。 前缀 **B2C_1_添加到** 您提供的值。|
-|userFlowType|string| 可取值为：`signUp`、`signIn`、`signUpOrSignIn`、`passwordReset`、`profileUpdate`、`resourceOwner` 或 `unknownFutureValue`。|
-|userFlowTypeVersion|单一| 这是用户流类型的版本。 每个用户流类型可以具有不同的可能版本，如 1、1.1 或 2。  |
+|id|String| 用户流的标识符。 将 **B2C_1_** 前缀添加到您提供的值中。|
+|userFlowType|userFlowType| 可取值为：`signUp`、`signIn`、`signUpOrSignIn`、`passwordReset`、`profileUpdate`、`resourceOwner` 或 `unknownFutureValue`。|
+|userFlowTypeVersion|单一| 这是用户流类型的版本。 每个用户流类型可能具有不同的版本，如 1、1.1 或 2。  |
 
 ## <a name="relationships"></a>关系
 

@@ -3,14 +3,14 @@ title: 创建 threatAssessmentRequest
 description: 创建新的威胁评估请求。
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d26434d06d300fd24bb42d9f6b1a35d93e51b205
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: a31c1a4fc532de2f59132aba8c10eafa397a023f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330013"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956533"
 ---
 # <a name="create-threatassessmentrequest"></a>创建 threatAssessmentRequest
 
@@ -53,11 +53,11 @@ POST /informationProtection/threatAssessmentRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-mail-assessment-request"></a>示例1：创建邮件评估请求
+### <a name="example-1-create-a-mail-assessment-request"></a>示例 1：创建邮件评估请求
 
 #### <a name="request"></a>请求
 
@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-email-assessment-request"></a>示例2：创建电子邮件评估请求
+### <a name="example-2-create-an-email-assessment-request"></a>示例 2：创建电子邮件评估请求
 
 #### <a name="request"></a>请求
 
@@ -221,7 +221,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-a-file-assessment-request"></a>示例3：创建文件评估请求
+### <a name="example-3-create-a-file-assessment-request"></a>示例 3：创建文件评估请求
 
 #### <a name="request"></a>请求
 
@@ -302,7 +302,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-an-url-assessment-request"></a>示例4：创建 url 评估请求
+### <a name="example-4-create-an-url-assessment-request"></a>示例 4：创建 url 评估请求
 
 #### <a name="request"></a>请求
 

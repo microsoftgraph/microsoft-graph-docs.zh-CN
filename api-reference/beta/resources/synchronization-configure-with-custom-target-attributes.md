@@ -1,30 +1,30 @@
 ---
-title: 配置与自定义目标属性的同步
+title: 使用自定义目标属性配置同步
 description: 自定义同步架构以包括目标目录中定义的自定义属性。
 localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ecaecceed2ae45a3a8b5de66497d061227365ffe
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 865cde06cded24f9f2920e63535e037a2b477330
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134692"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956890"
 ---
-# <a name="configure-synchronization-with-custom-target-attributes"></a>配置与自定义目标属性的同步
+# <a name="configure-synchronization-with-custom-target-attributes"></a>使用自定义目标属性配置同步
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以自定义同步架构以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名为 "Salesforce"的新字段来自定义 Salesforce 订阅 `officeCode` 。 设置从 Azure Active Directory (Azure AD) 到 Salesforce 的同步，并且对于每个用户，你将使用 Azure AD 中字段的值填充 `officeCode` Salesforce 中的 `extensionAttribute10` 字段。
+您可以自定义同步架构以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名为 的新字段来自定义 Salesforce 订阅 `officeCode` 。 设置从 Azure Active Directory (Azure AD) 到 Salesforce 的同步，并且对于每个用户，你将使用 Azure AD 中的字段中的值填充 `officeCode` Salesforce 中的 `extensionAttribute10` 字段。
 
-本文假定你已添加支持通过 [Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序显示名称，并且你拥有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅[获取访问令牌以调用 Microsoft Graph。](/graph/auth/)
+本文假定你已添加支持通过 [Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序显示名称，并且你具有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅[获取访问令牌以调用 Microsoft Graph。](/graph/auth/)
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按以下方法查找服务主体显示名称
 
-以下示例演示如何使用 Salesforce 显示名称服务主体对象。
+以下示例演示如何查找 Salesforce 显示名称对象。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -52,12 +52,12 @@ Authorization: Bearer {Token}
 }
 ```
 
-是 `{servicePrincipalId}` `167e33e9-f80e-490e-b4d8-698d4a80fb3e` 。
+`{servicePrincipalId}`为 `167e33e9-f80e-490e-b4d8-698d4a80fb3e` 。
 
 
 ## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>在服务主体上下文中列出同步作业 
 
-以下示例演示如何获取 `jobId` 您需要使用的示例。 通常，响应仅返回一个作业。
+以下示例演示如何获取 `jobId` 您需要的 。 通常，响应仅返回一个作业。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -76,7 +76,7 @@ Authorization: Bearer {Token}
 }
 ```
 
-是 `{jobId}` `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` 。
+`{jobId}`为 `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` 。
 
 
 ## <a name="get-the-synchronization-schema"></a>获取同步架构
@@ -86,26 +86,26 @@ Authorization: Bearer {Token}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_synchronizationschema"
+  "name": "get_synchronizationschema_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -213,16 +213,16 @@ Content-Type: application/json
 
 使用你选择的纯文本编辑器 (例如，记事本 [++](https://notepad-plus-plus.org/) 或 [JSON 编辑器 Online](https://www.jsoneditoronline.org/)) ：
 
-1. 为 [属性添加](synchronization-attributedefinition.md) 属性 `officeCode` 定义。 
+1. 为 [属性添加属性](synchronization-attributedefinition.md) `officeCode` 定义。 
 
     - 在目录下，查找名称为 salesforce.com 的目录，在对象的数组中查找名为 **User 的目录**。
     - 将新属性添加到列表中，并指定名称和类型，如以下示例所示。
 
-2. 添加 [和 之间的属性](synchronization-attributemapping.md) `officeCode` 映射 `extensionAttribute10` 。
+2. 在 和 [之间添加](synchronization-attributemapping.md) 属性 `officeCode` 映射 `extensionAttribute10` 。
 
-    - 在 [synchronizationRules](synchronization-synchronizationrule.md)下，查找将 Azure AD 指定为源目录的规则，Salesforce.com作为目标目录 `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` () 。
+    - 在 [synchronizationRules](synchronization-synchronizationrule.md)下，查找将 Azure AD 指定为源目录的规则，Salesforce.com 指定为目标 `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` () 。
     - 在 [规则的 objectMappings](synchronization-objectmapping.md) 中，查找用户与 `"sourceObjectName": "User",   "targetObjectName": "User"` () 。
-    - 在[objectMapping 的 attributeMappings](synchronization-attributemapping.md)数组中，添加新条目，如以下示例所示。 
+    - 在 **objectMapping** 的 [attributeMappings](synchronization-attributemapping.md)数组中，添加新条目，如以下示例所示。
 
 ```json
 {  

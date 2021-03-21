@@ -1,16 +1,16 @@
 ---
 title: 配置与目录扩展属性的同步
-description: 自定义同步架构以包括 Azure Active Directory (Azure AD) 扩展属性。
+description: 自定义同步架构，以将 Azure Active Directory (Azure AD) 扩展属性。
 localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 1a19db23c5797812c41b10ca281efde887da90fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: db5e2ba4bc715f608d17b8e11067df71141a6142
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131495"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956974"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>配置与目录扩展属性的同步
 
@@ -18,9 +18,9 @@ ms.locfileid: "50131495"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-你可以自定义同步架构以包括 Azure Active Directory (Azure AD) 扩展属性。 本文介绍如何使用目录扩展属性 (extension_9d98asdfl15980a_Nickname) Salesforce 中User.CommunityNickname 的值。 在此方案中，你已设置 Azure AD Connect，以预配从本地 Windows Server Active Directory 到 Azure AD 的很多目录扩展属性。 
+你可以自定义同步架构，以将 Azure Active Directory (Azure AD) 扩展属性。 本文介绍如何使用目录扩展属性 (extension_9d98asdfl15980a_Nickname) Salesforce 中User.CommunityNickname 的值。 在此方案中，你已设置 Azure AD Connect 以预配从本地 Windows Server Active Directory 到 Azure AD 的一些目录扩展属性。 
 
-本文假定你已添加支持通过 [Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序显示名称，并且你拥有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅[获取访问令牌以调用 Microsoft Graph。](/graph/auth/)
+本文假定你已添加支持通过 [Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序显示名称，并且你具有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅[获取访问令牌以调用 Microsoft Graph。](/graph/auth/)
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按以下方法查找服务主体显示名称
 
@@ -54,11 +54,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-是 `{servicePrincipalId}` `60443998-8cf7-4e61-b05c-a53b658cb5e1` 。
+`{servicePrincipalId}`为 `60443998-8cf7-4e61-b05c-a53b658cb5e1` 。
 
 ## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>在服务主体上下文中列出同步作业 
 
-以下示例演示如何获取 `jobId` 您需要使用的示例。 通常，响应仅返回一个作业。
+以下示例演示如何获取 `jobId` 您需要的 。 通常，响应仅返回一个作业。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -79,14 +79,14 @@ Authorization: Bearer {Token}
 }
 ```
 
-是 `{jobId}` `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` 。
+`{jobId}`为 `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` 。
 
 ## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>查找所需的目录扩展属性的名称
 
-你将需要扩展属性的完整名称。 如果不知道应类似于 (的全名extension_9d98asdfl15980a_Nickname) ，请参阅有关目录扩展属性以及如何检查这些属性的以下信息： 
+你将需要扩展属性的完整名称。 如果不知道完整名称 (其外观应类似于 extension_9d98asdfl15980a_Nickname **) ，** 请参阅以下有关目录扩展属性以及如何检查它们的信息： 
 
 * [使用自定义属性扩展 Azure AD 目录架构](/graph/extensibility-overview)
-* [目录架构扩展|图形 API 概念](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [目录架构扩展|Graph API 概念](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
 ## <a name="get-the-synchronization-schema"></a>获取同步架构
@@ -96,26 +96,26 @@ Authorization: Bearer {Token}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_synchronizationschema"
+  "name": "get_synchronizationschema_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -219,20 +219,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>添加目录扩展属性的定义以及属性之间的映射
+## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>为目录扩展属性添加定义，以及属性之间的映射
 
 使用你选择的纯文本编辑器 (例如，记事本 [++](https://notepad-plus-plus.org/) 或 [JSON 编辑器 Online](https://www.jsoneditoronline.org/)) ：
 
-1. 为 [属性添加](synchronization-attributedefinition.md) 属性 `extension_9d98asdfl15980a_Nickname` 定义。 
+1. 为 [属性添加属性](synchronization-attributedefinition.md) `extension_9d98asdfl15980a_Nickname` 定义。 
 
-    - 在目录下，查找名称为"Azure Active Directory"的目录，在对象的数组中查找名为 **User 的目录**。
+    - 在目录下，查找名为"Azure Active Directory"的目录，在对象的数组中查找名为 **User 的目录**。
     - 将新属性添加到列表中，并指定名称和类型，如以下示例所示。
 
-2. 在 [extension_9d98asdfl15980a_Nickname](synchronization-attributemapping.md) 和 CommunityNickname 之间添加属性映射。
+2. 在 [Extension_9d98asdfl15980a_Nickname](synchronization-attributemapping.md) 和 CommunityNickname 之间添加属性映射。
 
-    - 在 [synchronizationRules](synchronization-synchronizationrule.md)下，查找将 Azure AD 指定为源目录的规则，Salesforce.com作为目标 `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` () 。
+    - 在 [synchronizationRules](synchronization-synchronizationrule.md)下，查找将 Azure AD 指定为源目录的规则，Salesforce.com 指定为目标 `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` () 。
     - 在 [规则的 objectMappings](synchronization-objectmapping.md) 中，查找用户与 `"sourceObjectName": "User",   "targetObjectName": "User"` () 。
-    - 在[objectMapping 的 attributeMappings](synchronization-attributemapping.md)数组中，添加新条目，如以下示例所示。 
+    - 在 **objectMapping** 的 [attributeMappings](synchronization-attributemapping.md)数组中，添加新条目，如以下示例所示。
 
     ```json
     {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8377d1d2806bb5ec86f14911c60a6569bd1054e3
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: def7c4409ea38adf1764a7b3f1adf1d9280b992a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516568"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957310"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod：enableSmsSignIn
 
@@ -20,8 +20,8 @@ ms.locfileid: "50516568"
 
 为现有电话号码启用短信 `mobile` 登录。 要成功启用：
 
-* 电话必须具有 `"phoneType": "mobile"` 。
-* 电话在短信登录系统中必须是唯一 (其他人也不得使用该号码) 。
+* 手机必须具有 `"phoneType": "mobile"` 。
+* 手机在短信登录系统中必须是唯一 (其他人也不得使用该号码) 。
 * 必须在身份验证方法策略中为用户启用短信 [登录](/azure/active-directory/authentication/concept-authentication-methods) 。
 
 ## <a name="permissions"></a>权限
@@ -34,7 +34,7 @@ ms.locfileid: "50516568"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -42,9 +42,9 @@ ms.locfileid: "50516568"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员
@@ -57,6 +57,7 @@ ms.locfileid: "50516568"
 POST /me/authentication/phoneMethods/{id}/enableSmsSignIn
 POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/enableSmsSignIn
 ```
+`id`phoneType 的 `mobile` 值为 `3179e48a-750b-4051-897c-87b9720928f7` 。
 
 ## <a name="request-headers"></a>请求标头
 

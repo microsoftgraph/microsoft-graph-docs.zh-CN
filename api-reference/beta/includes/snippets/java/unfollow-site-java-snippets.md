@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c44c7b21678732885702088627588a3b3eb937c4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 217c1ea2f59f350183cc10d6096c20461adcd3a2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973222"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50980340"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Site> valueList = new LinkedList<Site>();
 Site value = new Site();
@@ -25,7 +25,10 @@ siteCollectionResponse.value = valueList;
 SiteCollectionPage siteCollectionPage = new SiteCollectionPage(siteCollectionResponse, null);
 
 graphClient.users("{user-id}").followedSites()
-    .remove(valueList)
+    .remove(SiteRemoveParameterSet
+        .newBuilder()
+        .withValue(valueList)
+        .build())
     .buildRequest()
     .post();
 

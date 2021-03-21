@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1abea19acd14c53d75e51783f8bd01fa8ed74d81
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: bbd08b9da7a75c471e90b9846e3aaa2c1a503879
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516495"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957484"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>删除 phoneAuthenticationMethod
 
@@ -18,13 +18,13 @@ ms.locfileid: "50516495"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除用户 [的电话身份验证方法](../resources/phoneauthenticationmethod.md)。 
+删除用户的电话 [身份验证方法](../resources/phoneauthenticationmethod.md)。 
 
->**注意：** 这将从用户中删除电话号码，他们将不再能够使用该号码进行身份验证，无论是通过短信还是语音呼叫。
+>**注意：** 这将删除用户的电话号码，他们将不再能够使用该号码进行身份验证，无论是通过短信还是语音呼叫。
 
-请记住，用户不能有 `alternateMobile` 没有数字 `mobile` 的号码。 如果要从同样具有号码的用户中删除号码，请首先将号码更新为新号码，然后 `mobile` `alternateMobile` [](phoneauthenticationmethod-update.md) `mobile` 删除该 `alternateMobile` 号码。
+请记住，用户不能有 `alternateMobile` 没有数字 `mobile` 的号码。 如果要从也具有号码的用户中删除号码，请首先将号码更新为新号码，然后 `mobile` `alternateMobile` [](phoneauthenticationmethod-update.md) `mobile` 删除该 `alternateMobile` 号码。
 
-如果电话号码是用户的默认 Azure 多重身份验证 (MFA) 方法，则不能将其删除。 让用户更改其默认身份验证方法，然后删除该号码。
+如果电话号码是用户的默认 Azure 多重身份验证 (MFA) 身份验证方法，则不能删除该号码。 让用户更改其默认身份验证方法，然后删除该号码。
 
 ## <a name="permissions"></a>权限
 
@@ -36,7 +36,7 @@ ms.locfileid: "50516495"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -44,9 +44,9 @@ ms.locfileid: "50516495"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员
@@ -59,6 +59,10 @@ ms.locfileid: "50516495"
 DELETE /me/authentication/phoneMethods/{id}
 DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
+与要 `id` 删除的 phoneType 对应的值是下列值之一：
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` 删除 `alternateMobile` **phoneType**。
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` 删除 `office` **phoneType**。
++ `3179e48a-750b-4051-897c-87b9720928f7` 删除 `mobile` **phoneType**。
 
 ## <a name="request-headers"></a>请求标头
 

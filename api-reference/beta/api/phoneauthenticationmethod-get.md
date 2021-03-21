@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f1239419125e28ec21571e6167a9f732c409ff13
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 4aea872d99deedb3fbf952954e2d6ff691994220
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516068"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957286"
 ---
 # <a name="get-phoneauthenticationmethod"></a>获取 phoneAuthenticationMethod
 
@@ -30,7 +30,7 @@ ms.locfileid: "50516068"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -38,9 +38,9 @@ ms.locfileid: "50516068"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
@@ -54,6 +54,10 @@ ms.locfileid: "50516068"
 GET /me/authentication/phoneMethods/{id}
 GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
+与要 `id` 检索的 phoneType 对应的值是下列值之一：
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` 检索 `alternateMobile` **phoneType**。
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` 检索 `office` **phoneType**。
++ `3179e48a-750b-4051-897c-87b9720928f7` 检索 `mobile` **phoneType**。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -71,7 +75,7 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

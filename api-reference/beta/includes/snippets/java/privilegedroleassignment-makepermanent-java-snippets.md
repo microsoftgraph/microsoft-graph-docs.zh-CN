@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9b00cb9cae5b4edc9d1f9c05060f50a4a502ff6c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 32e01686948f2144371a7b1962cd53f8debeb65e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981986"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978918"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String reason = "reason-value";
 
@@ -18,7 +18,12 @@ String ticketNumber = "ticketNumber-value";
 String ticketSystem = "ticketSystem-value";
 
 graphClient.privilegedRoleAssignments("{id}")
-    .makePermanent(reason,ticketNumber,ticketSystem)
+    .makePermanent(PrivilegedRoleAssignmentMakePermanentParameterSet
+        .newBuilder()
+        .withReason(reason)
+        .withTicketNumber(ticketNumber)
+        .withTicketSystem(ticketSystem)
+        .build())
     .buildRequest()
     .post();
 

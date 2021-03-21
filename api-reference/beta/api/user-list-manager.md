@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 895e14894e6fed97031911744288c3e78dac8b36
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 33865876b1750c13c6f2eec77aa09f4fa57191d2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721199"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957106"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -50,16 +50,12 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。  
+此方法支持`$select` 和 `$expand` [OData 查询参数](/graph/query-parameters)，以帮助自定义响应。  
 
-如果请求包含用于获取经理链的 `$expand=manager($levels=n)` 参数，则还必须包括以下内容：
-
-- `$count=true` 查询字符串参数
-- `ConsistencyLevel=eventual` 请求标头
-
->**注意**：`$levels` 的`n`值可以是 `max`（返回所有管理器）或介于 1 和 1000 之间的数字。  
-> 如果未指定 `$level` 参数，将仅返回直属经理。  
-> 可在 `$expand` 内指定 `$select` 以选择单独的经理属性：`$expand=manager($levels=max;$select=id,displayName)`
+>**注意：** 
+> + 可以使用 `n` 的值 `$levels` 返回 (`max` 1 到 1000 之间的) 或数字。  
+> + 如果未指定 `$levels` 参数，将仅返回直属经理。  
+> + 您可以在内部 `$select` 指定 `$expand` 以选择单个经理的属性。 `$levels`参数是必需的：`$expand=manager($levels=max;$select=id,displayName)`
 
 ## <a name="request-headers"></a>请求标头
 
@@ -87,25 +83,25 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_manager"
+  "name": "get_manager_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

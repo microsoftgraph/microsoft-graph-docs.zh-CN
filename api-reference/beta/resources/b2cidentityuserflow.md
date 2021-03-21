@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 6acc6f575e874836629742456130f212d3af9a04
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8d95fca7096069810c7262eb9a26c91d439c2d55
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443158"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957077"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>b2cIdentityUserFlow 资源类型
 
@@ -52,7 +52,7 @@ ms.locfileid: "50443158"
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |id|String|用户流名称。 这是一个必需的值且在创建之后不可变。 创建后，该名称将以 `B2C_1_` 的值作为前缀。|
-|userFlowType|userFlowType|[用户流类型](/azure/active-directory-b2c/user-flow-versions)。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowType|userFlowType|[用户流类型](/azure/active-directory-b2c/user-flow-versions)。 userFlowType **支持** 为： `signUp`、 `signIn`、 `signUpOrSignIn`、 `passwordReset`、 `profileUpdate`、 `resourceOwner`。|
 |userFlowTypeVersion|单一|用户流版本。|
 |isLanguageCustomizationEnabled|Boolean|此属性决定语言自定义是否在 B2C 用户流中启用。 默认情况下，语言自定义不会在 B2C 用户流中启用。|
 |defaultLanguageTag|String|指示在请求中没有指定 `ui_locale` 标签时使用的 b2cIdentityUserFlow 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|

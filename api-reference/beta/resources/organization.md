@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ea21e90c720962c7fc047edd6f19630c3918b352
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: fda1211b00266f7751bc727a00989a68b9022276
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721339"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956860"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -34,14 +34,14 @@ ms.locfileid: "50721339"
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
 |**架构扩展**| | |
 |[添加架构扩展值](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
-|[创建 organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 通过发布到品牌打造集合创建新的 organizationalBrandingProperties。 |
-|[获取品牌](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) 集合 | 获取 organizationalBrandingProperties 对象集合。 |
+|[创建 organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 通过发布到品牌集合创建新的 organizationalBrandingProperties。 |
+|[进行品牌打造](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) 集合 | 获取 organizationalBrandingProperties 对象集合。 |
 
 ## <a name="properties"></a>属性 
 | 属性 | 类型   | 说明 |
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 与租户相关的服务计划的集合。不可为空。 |
-| businessPhones | 字符串集合 | 组织的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。 |
+| businessPhones | 字符串集合 | 组织的电话号码。 虽然这是一个字符串集合，但只能为此属性设置一个数字。 |
 | 城市 | String | 组织地址所在的城市名称。 |
 | country | String | 组织地址所在的国家/地区名称。 |
 | countryLetterCode | String | 组织所在的国家/地区缩写。 |
@@ -50,13 +50,13 @@ ms.locfileid: "50721339"
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | 组织的目录大小配额信息。 |
 | displayName | String | 租户的显示名称。 |
 | id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
-| isMultipleDataLocationsForServicesEnabled | 布尔值 | 如果组织支持多地理位置，则为 **true**；如果组织不支持多地理位置，则为 **false**；**为空**（默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
+| isMultipleDataLocationsForServicesEnabled | 布尔值 | `true` 如果组织已启用多地理位置; `false` 如果组织未启用多地理位置; `null` (默认) 。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
 | marketingNotificationEmails | String collection | 不可为空。 |
-| objectType | String | 一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |
+| objectType | String | 一个标识对象类型的字符串。 对于租户，该值始终为 `Company` 。|
 | onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-| onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 |
+| onPremisesSyncEnabled | Boolean | `true` 如果此对象从本地目录同步; `false` 如果此对象最初从本地目录同步，但不再同步;可为空。 `null` 如果此对象从未从本地目录同步，则 (同步) 。 |
 | postalCode | String | 组织地址的邮政编码。 |
-| preferredLanguage | String | 组织的首选语言。 应遵循 ISO 639-1 代码；例如“en”。 |
+| preferredLanguage | String | 组织的首选语言。 应遵循 ISO 639-1 代码;例如 `en` 。 |
 | privacyProfile | [privacyProfile](privacyprofile.md) | 组织的隐私配置文件。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 不可为 null。 |
 | securityComplianceNotificationMails | String collection ||
@@ -71,8 +71,8 @@ ms.locfileid: "50721339"
 | 关系  | 类型  |说明|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) 集合| 用于管理基于证书的身份验证配置的导航属性。 只能在集合中创建 certificateBasedAuthConfiguration 的单个实例。  |
-|extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展的集合。 可为 NULL。| 
-|organizationalBranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) 集合| 组织的品牌打造。 可为 Null。|
+|extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展集合。 可为 Null。| 
+|organizationalbranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) 集合| 为组织打造品牌。 可为 Null。|
 |settings|[organizationSettings](organizationsettings.md) | 检索 organizationSettings 对象的属性和关系。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

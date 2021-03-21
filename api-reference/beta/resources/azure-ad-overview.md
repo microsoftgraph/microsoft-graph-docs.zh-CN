@@ -3,14 +3,14 @@ title: 在 Microsoft Graph 中使用 Azure Active Directory 资源
 description: Microsoft Graph Azure Active Directory (Azure AD) 提供 REST API，以帮助管理你的组织、资源和资产。
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: identity-access
+ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: 689ae5e1c4c3c13dff1ae6d5443e8a8b22e3039f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8cc319d05782dbbebad330b48b097c4b0757e9a9
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133383"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957084"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
@@ -62,6 +62,8 @@ ms.locfileid: "50133383"
 | 管理组织的登录体验的品牌。 | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [将品牌添加到组织的 Azure Active Directory 登录页面](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
 | **访问审查** | | |
 | 通过访问审查确保组成员身份和应用程序访问权限是正确的。 | [访问审查 API](../resources/accessreviews-root.md) |[Azure AD 访问审查](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| **许可请求** | | |
+| 管理尝试访问需要管理员授权的用户的请求许可请求工作流。  | [许可请求 API](../resources/consentrequests-root.md) |[配置管理员同意工作流](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

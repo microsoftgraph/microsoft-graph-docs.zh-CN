@@ -1,18 +1,18 @@
 ---
-title: phoneAuthenticationMethod： disableSmsSignIn
+title: phoneAuthenticationMethod：disableSmsSignIn
 description: 禁用移动电话的短信登录
 localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: eb8933a141dcd343ab26a5d5809844ee79c39697
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 5e4c55d5765108d7878d95712e9ea350e1b9d364
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516491"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957470"
 ---
-# <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod： disableSmsSignIn
+# <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod：disableSmsSignIn
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "50516491"
 
 禁用现有电话号码的短信 `mobile` 登录。 
 
->**注意：** 该号码将不再可用于短信登录，这将阻止用户登录。
+>**注意：** 此号码将不再可用于短信登录，从而可能阻止用户登录。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "50516491"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -40,9 +40,9 @@ ms.locfileid: "50516491"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员
@@ -55,6 +55,7 @@ ms.locfileid: "50516491"
 POST /me/authentication/phoneMethods/{id}/disableSmsSignIn
 POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/disableSmsSignIn
 ```
+`id`phoneType 的 `mobile` 值为 `3179e48a-750b-4051-897c-87b9720928f7` 。
 
 ## <a name="request-headers"></a>请求标头
 

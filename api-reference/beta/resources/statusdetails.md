@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 61b0f11fcfb36c3773d196924e675d2e10871b63
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: d817c0aa46dde6b49debd849d8fd2ae61e06a672
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761014"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956818"
 ---
 # <a name="statusdetails-resource-type"></a>statusDetails 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50761014"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|状态|String|可能的值是：`success`、`failure`、`skipped`、`unknownFutureValue`。 继承自 statusBase。|
+|状态|statusBase|可取值为：`success`、`warning`、`failure`、`skipped`、`unknownFutureValue`。 继承自 statusBase。|
 |additionalDetails|String|出现错误时的其他详细信息。|
 |errorCategory|String|对错误代码进行分类。 可取值为 `Failure`、`NonServiceFailure`、`Success`。|
 |errorCode|String|发生任何错误时的唯一错误代码。 [了解更多](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|

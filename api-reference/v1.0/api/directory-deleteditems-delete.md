@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fb34b77a381d22e22813539f0c186078077b3037
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e673ffebf6bfae9c7d4271ef117d9a8c388ab58a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442066"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956757"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 
@@ -31,6 +31,8 @@ ms.locfileid: "50442066"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
+请求程序需要具有以下角色之一：*全局管理员或**应用程序管理员*。
+
 对于用户：
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,6 +41,8 @@ ms.locfileid: "50442066"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | 不支持。 |
 
+登录用户需要具有以下角色之一：全局 *管理员* 或 *用户管理员*。
+
 对于组：
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,6 +50,8 @@ ms.locfileid: "50442066"
 |委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
+
+请求程序需要具有以下角色之一： *全局管理员* 或 *组管理员*。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

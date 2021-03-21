@@ -1,16 +1,16 @@
 ---
 title: protectByTemplateAction 资源类型
-description: 通知应用程序应应用 Azure 信息保护保护模板。
+description: 通知应用程序应应用 Azure 信息保护模板。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 19103cd07404677b680606a6fd0ec9d4caa43600
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6524774af3faa496b141e37ec270f8a73770ee63
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993152"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956825"
 ---
 # <a name="protectbytemplateaction-resource-type"></a>protectByTemplateAction 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "47993152"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通知应用程序应应用 Azure 信息保护保护模板。 如果生成的标签已配置为应用保护，则[evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)或[evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)可能会返回**protectionByTemplateAction** 。 正在使用的应用程序必须从结果中读取 templateId，然后使用客户端库（如 Microsoft 信息保护 SDK）通过 Azure 信息保护来应用保护。
+通知应用程序应应用 Azure 信息保护模板。 如果生成的标签已配置为应用保护，[则 evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)或 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)可能会返回 **protectionByTemplateAction。** 使用应用程序必须从结果中读取 templateId，然后使用客户端库（如 Microsoft 信息保护 SDK）通过 Azure 信息保护应用保护。
 
 ## <a name="properties"></a>属性
 

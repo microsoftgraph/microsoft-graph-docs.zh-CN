@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 3e8707627b09784972a1a578fe4b6b84a623f4dd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8262d8c77d31abbd25aaaae26018c651f0dcfbe5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440239"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957007"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>identityUserFlowAttribute 资源类型
 
@@ -39,8 +39,8 @@ ms.locfileid: "50440239"
 |id|String|用户流属性的标识符。 这是一个自动创建的只读属性。|
 |displayName|String|用户流属性的显示名称。|
 |说明|String|注册时显示给用户的用户流量属性的描述。|
-|userFlowAttributeType|String|用户流属性的类型。 这是一个自动设置的只读属性。 此属性的值将是 `builtIn` 或 `custom`，具体取决于属性的类型。|
-|DataType|String|用户流属性的数据类型。 在创建自定义用户流属性后，不能对此进行修改。 **dataType** 支持的值有：<br/><ul><li>`string` - 表示 identityUserFlowAttribute 的数据类型为字符串。 </li><li>`boolean` - 表示 identityUserFlowAttribute 的数据类型为Boolean。</li><li>`int64` - 表示 identityUserFlowAttribute 的数据类型为整数。</li></ul>|
+|userFlowAttributeType|identityUserFlowAttributeType|用户流属性的类型。 这是一个自动设置的只读属性。 根据属性的类型，此属性的值将为 `builtIn`、 `custom`或 `required`。|
+|DataType|identityUserFlowAttributeDataType|用户流属性的数据类型。 在创建自定义用户流属性后，不能对此进行修改。 数据类型 **支持** 为： `string` 、 `boolean` 、 `int64` 、 `stringCollection` 、 `dateTime`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,16 +1,16 @@
 ---
 title: protectAdhocAction 资源类型
-description: 通知应用程序应应用 ad hoc 保护。
+description: 通知应用程序应应用临时保护。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 77fa6cd57f6887fae16592041d31fd433e1086fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 611e935464006dce61287bdb181828544c37ab10
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078190"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956846"
 ---
 # <a name="protectadhocaction-resource-type"></a>protectAdhocAction 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48078190"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通知应用程序应应用 ad hoc 保护。 **ProtectAdhocAction**通知应用程序该标签应应用临时保护。 临时保护在运行时由用户或应用程序定义。 使用应用程序必须使用 Microsoft 信息保护 SDK 在本地对文件或数据应用保护。
+通知应用程序应应用临时保护。 **protectAdhocAction** 通知应用程序标签应应用临时保护。 临时保护由用户或应用程序在运行时定义。 使用应用程序必须使用 Microsoft 信息保护 SDK 将保护本地应用到文件或数据。
 
 ## <a name="properties"></a>属性
 
