@@ -1,22 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7c3e8835d2a77439edd8f3374d85717d52cedc42
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: def64b0b3dcf4452b71acebefa383643489308f9
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959457"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50980428"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String clientContext = "clientContext-value";
 
 RecordingStatus status = RecordingStatus.NOT_RECORDING;
 
 graphClient.communications().calls("{id}")
-    .updateRecordingStatus(status,clientContext)
+    .updateRecordingStatus(CallUpdateRecordingStatusParameterSet
+        .newBuilder()
+        .withStatus(status)
+        .withClientContext(clientContext)
+        .build())
     .buildRequest()
     .post();
 

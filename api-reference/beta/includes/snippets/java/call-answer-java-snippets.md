@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ac7b7d6409e1c63e2f3323395155f08b312e69c4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 24c66df549f53cb34eae77f54110a42375de7117
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50789932"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50981450"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String callbackUri = "callbackUri-value";
 
@@ -22,7 +22,13 @@ acceptedModalitiesList.add(Modality.AUDIO);
 int participantCapacity = 200;
 
 graphClient.communications().calls("{id}")
-    .answer(callbackUri,mediaConfig,acceptedModalitiesList,participantCapacity)
+    .answer(CallAnswerParameterSet
+        .newBuilder()
+        .withCallbackUri(callbackUri)
+        .withMediaConfig(mediaConfig)
+        .withAcceptedModalities(acceptedModalitiesList)
+        .withParticipantCapacity(participantCapacity)
+        .build())
     .buildRequest()
     .post();
 

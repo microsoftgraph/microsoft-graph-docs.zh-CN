@@ -1,20 +1,20 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7331cac816e38f1128e43489c10a38b5ae2db7c4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 028b106abfeee1a4780c9ff06f350ad40fa23e36
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962309"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50981429"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Alert> valueList = new LinkedList<Alert>();
 Alert value = new Alert();
 value.assignedTo = "String";
-value.closedDateTime = CalendarSerializer.deserialize("String (timestamp)");
+value.closedDateTime = OffsetDateTimeSerializer.deserialize("String (timestamp)");
 LinkedList<String> commentsList = new LinkedList<String>();
 commentsList.add("String");
 value.comments = commentsList;
@@ -37,7 +37,10 @@ alertCollectionResponse.value = valueList;
 AlertCollectionPage alertCollectionPage = new AlertCollectionPage(alertCollectionResponse, null);
 
 graphClient.security().alerts()
-    .updateAlerts(valueList)
+    .updateAlerts(AlertUpdateAlertsParameterSet
+        .newBuilder()
+        .withValue(valueList)
+        .build())
     .buildRequest()
     .post();
 

@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 848297b0dfc10e4d8ffd0a3b18b27201f32ffbca
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 34c2c65fb0a59e53ce4914e1871a5a6ca9a2c05f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092368"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50980990"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var userRegistrationMethodSummary = await graphClient.Reports.AuthenticationMethods
-    .UsersRegisteredByMethod(.all,.all)
+    .UsersRegisteredByMethod(IncludedUserTypes.All,IncludedUserRoles.All)
     .Request()
     .GetAsync();
 
