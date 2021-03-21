@@ -1,33 +1,33 @@
 ---
-title: 'informationProtectionLabel: evaluateRemoval'
-description: 评估要删除的标签以及如何根据现有内容信息将其删除。
+title: informationProtectionLabel：evaluateRemoval
+description: 评估要删除的标签以及如何根据现有内容信息删除它。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2333bd038b59c7e27d78f9f81c06fa2e65c75072
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d86f5cc5bd8d52ea4c902b06bd2f0013d11aaf12
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952865"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954691"
 ---
-# <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel: evaluateRemoval
+# <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel：evaluateRemoval
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向正在使用的应用程序指示删除标签信息应采取的操作。
+向使用应用程序指示删除标签信息应采取的操作。
 
-给定 [contentInfo](../resources/contentinfo.md) 作为输入（其中包括现有的内容元数据 [密钥/值对](../resources/keyvaluepair.md)），API 将返回一个 [informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含以下一个或多个部分的组合： 
+将 [contentInfo](../resources/contentinfo.md) 作为输入（包括现有内容元数据键 [/](../resources/keyvaluepair.md)值对）后，API 将返回 [一个 informationProtectionAction，](../resources/informationprotectionaction.md) 其中包含以下各项之一的某种组合： 
 
 * [justifyAction](../resources/justifyaction.md)
 * [metadataAction](../resources/metadataaction.md)
 * [removeContentFooterAction](../resources/removecontentfooteraction.md)
 * [removeContentHeaderAction](../resources/removecontentheaderaction.md)
 * [removeProtectionAction](../resources/removeprotectionaction.md)
-* [removeWatermarkAction](../resources/removewatermarkaction.md)
+* [remove使用markAction](../resources/removewatermarkaction.md)
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ POST /informationProtection/policy/labels/evaluateRemoval
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                                         |
 | Content-type  | application/json. Required.                                                                                                                                                       |
-| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
+| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -61,17 +61,17 @@ POST /informationProtection/policy/labels/evaluateRemoval
 
 | 参数              | 类型                                                             | 说明                                                                                                                         |
 | :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo            | [contentInfo](../resources/contentinfo.md)                       | 提供有关内容格式、内容状态和现有 [元数据](../resources/keyvaluepair.md) 的详细信息，作为键/值对。 |
+| contentInfo            | [contentInfo](../resources/contentinfo.md)                       | 提供有关内容格式、内容状态和作为键/值对[](../resources/keyvaluepair.md)的现有元数据的详细信息。 |
 | downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | 必须由用户或应用程序逻辑提供的理由。                                                               |
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。 [InformationProtectionAction 对象](../resources/informationprotectionaction.md)将包含一个[metadataAction](../resources/metadataaction.md)对象，该对象通知应用程序要删除的元数据。 
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。 [informationProtectionAction 对象](../resources/informationprotectionaction.md)将包含一个[metadataAction](../resources/metadataaction.md)对象，该对象通知应用程序要删除的元数据。 
 
 ## <a name="examples"></a>示例
 
-下面是一个如何调用此 API 的示例。
+下面是如何调用此 API 的示例。
 
 ### <a name="request"></a>请求
 

@@ -1,27 +1,27 @@
 ---
-title: 'informationProtectionLabel: extractLabel'
-description: 使用来自带标签的对象的元数据检索 informationProtectionContentLabel。
+title: informationProtectionLabel： extractLabel
+description: 使用标记对象的元数据检索 informationProtectionContentLabel。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: aaa9fe32f9ca07efa9dc4703fe9b78ee61443239
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cfc46fcc6ccafadd938ebc7eb6dc1c28fac1f328
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964693"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954670"
 ---
-# <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
+# <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel： extractLabel
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用已标记的信息中存在的元数据，将元数据解析为特定的敏感度标签。 将 [contentInfo](../resources/contentinfo.md) 输入解析为 [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)。
+使用已有标签的一条信息上的元数据，将元数据解析为特定的敏感度标签。 [contentInfo](../resources/contentinfo.md)输入解析为[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)。
 
 >[!NOTE]
->**[InformationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** 资源表示已应用于一条信息的敏感度标签。 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象是组织标记策略的一部分的抽象标签，可应用于信息。
+>**[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** 资源表示已应用于一条信息的敏感度标签。 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象是抽象标签，属于组织标签策略的一部分，可应用于信息。
 
 ## <a name="permissions"></a>权限
 
@@ -46,8 +46,8 @@ POST /informationprotection/policy/labels/extractLabel
 | 名称          | 说明                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                                         |
-| Content-type  | Content-type： application/json。 必填。                                                                                                                                         |
-| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
+| Content-type  | 内容类型：application/json。 必填。                                                                                                                                         |
+| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -55,15 +55,15 @@ POST /informationprotection/policy/labels/extractLabel
 
 | 参数   | 类型                                       | 说明                                                                                                                         |
 | :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo | [contentInfo](../resources/contentinfo.md) | 提供有关内容格式、内容状态和现有 [元数据](../resources/keyvaluepair.md) 的详细信息，作为键/值对。 |
+| contentInfo | [contentInfo](../resources/contentinfo.md) | 提供有关内容格式、内容状态和作为键/值对[](../resources/keyvaluepair.md)的现有元数据的详细信息。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) 对象。
 
 ## <a name="examples"></a>示例
 
-下面是一个如何调用此 API 的示例。
+下面是如何调用此 API 的示例。
 
 ### <a name="request"></a>请求
 

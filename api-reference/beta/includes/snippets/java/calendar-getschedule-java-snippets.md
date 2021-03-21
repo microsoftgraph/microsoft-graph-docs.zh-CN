@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ec7c00675cd4572e61b31f07278bd354890b18a0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3cc081689e105643d930412f8df0c366ebc5d29
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960070"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50982980"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
@@ -29,7 +29,13 @@ endTime.timeZone = "Pacific Standard Time";
 int availabilityViewInterval = 60;
 
 graphClient.me().calendar()
-    .getSchedule(schedulesList,endTime,startTime,availabilityViewInterval)
+    .getSchedule(CalendarGetScheduleParameterSet
+        .newBuilder()
+        .withSchedules(schedulesList)
+        .withEndTime(endTime)
+        .withStartTime(startTime)
+        .withAvailabilityViewInterval(availabilityViewInterval)
+        .build())
     .buildRequest( requestOptions )
     .post();
 

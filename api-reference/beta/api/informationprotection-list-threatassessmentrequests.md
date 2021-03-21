@@ -3,14 +3,14 @@ title: 列出 threatAssessmentRequests
 description: 检索 threatassessmentrequest 对象的列表。
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: eeeb17bd23f5ecf4d840cc20b6aa62b2b03d3829
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ffc58d43be57ec99d7d7ec8dfc7abb4f239bf16a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952938"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954696"
 ---
 # <a name="list-threatassessmentrequests"></a>列出 threatAssessmentRequests
 
@@ -18,7 +18,7 @@ ms.locfileid: "48952938"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象的列表。
+检索 [threatAssessmentRequest 对象](../resources/threatassessmentrequest.md) 的列表。
 
 威胁评估请求可以是以下类型之一：
 
@@ -51,8 +51,8 @@ GET /informationProtection/threatAssessmentRequests
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其 **createdDateTime** 的值进行降序排序。                                                                          |
+|$filter         |string   |将响应限制到仅包含指定条件的对象。                                                                                             |
+|$orderby        |string   |默认情况下，响应中的对象按 **其 createdDateTime** 值降序排序。                                                                          |
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skipToken      |string   |从跨多页的结果集中检索下一页结果。                                                                                               |
 
@@ -68,7 +68,7 @@ GET /informationProtection/threatAssessmentRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

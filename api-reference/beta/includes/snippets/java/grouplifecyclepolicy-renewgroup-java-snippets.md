@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ce2a23dd02f0c82ce5ec4bc443c241a0d1501648
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 19755933229ed8c93ae9608483eb36a6ca59d4a9
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953599"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50976837"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String groupId = "ffffffff-ffff-ffff-ffff-ffffffffffff";
 
 graphClient.groupLifecyclePolicies()
-    .renewGroup(groupId)
+    .renewGroup(GroupLifecyclePolicyRenewGroupParameterSet
+        .newBuilder()
+        .withGroupId(groupId)
+        .build())
     .buildRequest()
     .post();
 

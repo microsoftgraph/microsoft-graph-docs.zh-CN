@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 77ab95337dcf48d001fbfdfb0bfde98383a098e5
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: dce48ceff7ab14c4c72817279d8c41eca6bfd0a4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752796"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50982346"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackageAssignmentPolicy accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy();
 accessPackageAssignmentPolicy.id = "b2eba9a1-b357-42ee-83a8-336522ed6cbf";
@@ -18,7 +18,7 @@ accessPackageAssignmentPolicy.displayName = "All Users";
 accessPackageAssignmentPolicy.description = "All users can request for access to the directory.";
 accessPackageAssignmentPolicy.canExtend = false;
 accessPackageAssignmentPolicy.durationInDays = 365;
-accessPackageAssignmentPolicy.expirationDateTime = CalendarSerializer.deserialize("null");
+accessPackageAssignmentPolicy.expirationDateTime = OffsetDateTimeSerializer.deserialize("null");
 RequestorSettings requestorSettings = new RequestorSettings();
 requestorSettings.scopeType = "AllExistingConnectedOrganizationSubjects";
 requestorSettings.acceptRequests = true;

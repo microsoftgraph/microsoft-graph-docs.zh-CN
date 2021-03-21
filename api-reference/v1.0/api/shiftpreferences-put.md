@@ -1,22 +1,22 @@
 ---
 title: 更新 shiftPreferences
-description: 更新用户的 shift 首选项。
+description: 更新用户的班次首选项。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0b554db9b320e4eb403aa51f67f31006f9a3b0cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44d2b1261ed2984963c4b9ff6e15abb91f7a2ee1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984574"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954747"
 ---
 # <a name="update-shiftpreferences"></a>更新 shiftPreferences
 
 命名空间：microsoft.graph
 
-更新 [shiftPreferences](../resources/shiftpreferences.md) 对象的属性和关系。
+更新 [shiftPreferences 对象的属性和](../resources/shiftpreferences.md) 关系。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "47984574"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | UserShiftPreferences |
+|应用程序 | UserShiftPreferences.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -62,7 +62,7 @@ PATCH /users/{userId}/settings/shiftPreferences
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "shift-get-2"
 }-->
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
@@ -90,19 +90,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/shift-get-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
