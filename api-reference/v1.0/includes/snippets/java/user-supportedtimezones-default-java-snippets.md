@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e6b5f5efb7b54f9a2c6e5bb37b9f31797565e37e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b39a4c18a5e188933bb54a0193a00bc1651b700d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983035"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970820"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IOutlookUserSupportedTimeZonesCollectionPage supportedTimeZones = graphClient.me().outlook()
+OutlookUserSupportedTimeZonesCollectionPage supportedTimeZones = graphClient.me().outlook()
     .supportedTimeZones()
     .buildRequest()
     .get();

@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bc59e46ef37dd01712e227cc65fc2ea560b58274
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 9db73673f3d181ab661824201dc2439edd0bd55b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885045"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50973356"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String destinationId = "deleteditems";
 
 graphClient.me().messages("AAMkADhAAATs28OAAA=")
-    .move(destinationId)
+    .move(MessageMoveParameterSet
+        .newBuilder()
+        .withDestinationId(destinationId)
+        .build())
     .buildRequest()
     .post();
 

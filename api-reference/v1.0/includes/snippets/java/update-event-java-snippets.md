@@ -1,22 +1,22 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f0abbe308f3d5a170eac878202abc9b0145f7e14
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1d36d33b93c22d7482a6092deef47ac3e8e55e03
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49756092"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50967504"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Event event = new Event();
 event.originalStartTimeZone = "originalStartTimeZone-value";
 event.originalEndTimeZone = "originalEndTimeZone-value";
 ResponseStatus responseStatus = new ResponseStatus();
 responseStatus.response = ResponseType.NONE;
-responseStatus.time = CalendarSerializer.deserialize("datetime-value");
+responseStatus.time = OffsetDateTimeSerializer.deserialize("datetime-value");
 event.responseStatus = responseStatus;
 event.recurrence = null;
 event.iCalUId = "iCalUId-value";
