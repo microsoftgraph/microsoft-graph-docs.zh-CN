@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bdc26930e078e4605e08269981d21988eb2228c2
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: b141936c8a84b3c0a132d5a82bd226951772f731
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43935081"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50976933"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
@@ -40,6 +40,7 @@ attendees.emailAddress = emailAddress;
 attendees.type = AttendeeType.REQUIRED;
 attendeesList.add(attendees);
 event.attendees = attendeesList;
+event.allowNewTimeProposals = true;
 event.isOnlineMeeting = true;
 event.onlineMeetingProvider = OnlineMeetingProviderType.TEAMS_FOR_BUSINESS;
 

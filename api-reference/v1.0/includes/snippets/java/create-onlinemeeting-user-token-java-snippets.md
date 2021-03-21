@@ -1,19 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 955a624342965ba80f3c7fa9f877e4d0c1d9ae3f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 77120bfb33fac75d8a487d23f0cd201d2d8680d4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982941"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975180"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OnlineMeeting onlineMeeting = new OnlineMeeting();
-onlineMeeting.startDateTime = CalendarSerializer.deserialize("2019-07-12T21:30:34.2444915+00:00");
-onlineMeeting.endDateTime = CalendarSerializer.deserialize("2019-07-12T22:00:34.2464912+00:00");
+onlineMeeting.startDateTime = OffsetDateTimeSerializer.deserialize("2019-07-12T21:30:34.2444915+00:00");
+onlineMeeting.endDateTime = OffsetDateTimeSerializer.deserialize("2019-07-12T22:00:34.2464912+00:00");
 onlineMeeting.subject = "User Token Meeting";
 
 graphClient.me().onlineMeetings()

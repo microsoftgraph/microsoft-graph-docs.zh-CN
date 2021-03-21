@@ -1,20 +1,20 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7512147f5e7e39aaef6346268b4cc26f8c606b71
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 97cf079b65470c6b82f9dd63276d77c4c00f3467
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884540"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978020"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("expand", "fields(select=Name,Color,Quantity)"));
 
-IListItemCollectionPage items = graphClient.sites("{site-id}").lists("{list-id}").items()
+ListItemCollectionPage items = graphClient.sites("{site-id}").lists("{list-id}").items()
     .buildRequest( requestOptions )
     .get();
 

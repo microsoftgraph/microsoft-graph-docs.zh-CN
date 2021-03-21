@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a3a6b960e9a8e2e055f2d27a3ee90dca9ed42802
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4edb00e13b2e3816aa94d71884767a3def9eb075
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983984"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50966524"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<AssignedLicense> addLicensesList = new LinkedList<AssignedLicense>();
 
@@ -18,7 +18,11 @@ removeLicensesList.add(UUID.fromString("skuId-value-1"));
 removeLicensesList.add(UUID.fromString("skuId-value-2"));
 
 graphClient.groups("1ad75eeb-7e5a-4367-a493-9214d90d54d0")
-    .assignLicense(addLicensesList,removeLicensesList)
+    .assignLicense(GroupAssignLicenseParameterSet
+        .newBuilder()
+        .withAddLicenses(addLicensesList)
+        .withRemoveLicenses(removeLicensesList)
+        .build())
     .buildRequest()
     .post();
 
