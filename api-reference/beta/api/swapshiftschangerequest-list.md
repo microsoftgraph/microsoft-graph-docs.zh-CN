@@ -1,16 +1,16 @@
 ---
 title: 列出 swapShiftsChangeRequest
-description: 检索团队中的 swapShiftsChangeRequest 对象的列表。
+description: 检索团队中的 swapShiftsChangeRequest 对象列表。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 70a14c64ce697d8440292eeb773447961ae76347
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 43037069608f8cbdfa317e9cfbe0b3f82d194d07
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971934"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958890"
 ---
 # <a name="list-swapshiftschangerequest"></a>列出 swapShiftsChangeRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "48971934"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索团队中的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象的列表。
+检索团队中的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,9 @@ ms.locfileid: "48971934"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | Schedule. All *、schedule、all*  |
+| 应用程序 | Schedule.Read.All *、Schedule.ReadWrite.All*  |
 
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
+>\***重要提示：** 应用程序权限目前仅为个人预览版，不可公开使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -67,26 +67,26 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_swapshiftschangerequest"
+  "name": "get_swapshiftschangerequest_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-swapshiftschangerequest-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-swapshiftschangerequest-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-swapshiftschangerequest-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-swapshiftschangerequest-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-swapshiftschangerequest-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-swapshiftschangerequest-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

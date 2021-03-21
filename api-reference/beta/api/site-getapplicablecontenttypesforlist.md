@@ -5,12 +5,12 @@ description: 获取可添加到列表中的网站内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 99ca8f23b153f8835fc841e142b79684601bd293
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8609c15eef73090864f9908aadfb3ffcaf13a2fd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772448"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958976"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>site： getApplicableContentTypesForList
 命名空间：microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "50772448"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All    |
 |委派（个人 Microsoft 帐户） | 不支持    |
-|Application | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
+|应用程序 | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,8 +55,8 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 下表显示了可用于此函数的参数。
 
 |参数|类型|说明|
-|-|-|-|-|
-|listId| 字符串 | 需要获取适用内容类型的列表的 GUID。 必需。 |
+|-|-|-|
+|listId| String | 需要获取适用内容类型的列表的 GUID。 必需。 |
 
 ## <a name="response"></a>响应
 

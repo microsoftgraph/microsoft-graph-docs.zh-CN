@@ -1,26 +1,26 @@
 ---
 title: call： transfer
-description: 转移活动对等呼叫。
+description: 转接活动对等呼叫。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2feec9b37375da3b76191ec84869346c07af36f3
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 52b9d681c9eb56fe7428634d253adf5b6c0cc545
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573766"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958618"
 ---
 # <a name="call-transfer"></a>call： transfer
 
 命名空间：microsoft.graph
 
-转移活动对等呼叫。
+转接活动对等呼叫。
 
-> **注意：** 这仅在被转移方和转移目标都是属于同一租户的 Microsoft Teams 用户时受支持。 仅应用程序实例支持转移到 PSTN 号码。 若要了解有关转移方、被转移方和转移目标更多信息，请参阅[RFC 5589。](https://tools.ietf.org/html/rfc5589#section-2)
+> **注意：** 只有当被转移方和转移目标都是属于同一租户的 Microsoft Teams 用户时，才支持此操作。 仅应用程序实例支持转接到 PSTN 号码。 若要了解有关转移方、被转移方和转移目标有关详细信息，请参阅 [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
 
-咨询转接意味着，在转接之前，转接方可以通知 (呼叫) 转接给被叫方。 这与直接转移呼叫相反。
+咨询转接意味着在转接之前，转接人可以通知要呼叫 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "50573766"
 | :-------------- | :-------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                |
 | 委派（个人 Microsoft 帐户） | 不支持                |
-| Application     | Calls.Initiate.All                                  |
+| 应用程序     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,13 +49,13 @@ POST /communications/calls/{id}/transfer
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|作为转移目标的参与者。|
-|clientContext|String|唯一客户端上下文字符串。 最大限制为 256 个字符。|
+|clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。
 
 ## <a name="examples"></a>示例
-这些示例显示了传入呼叫一路流向不同类型的传输通知。
+这些示例显示传入呼叫一向到不同类型的转移通知的流。
 
 ### <a name="example-1-call-transfer"></a>示例 1：呼叫转移
 
@@ -66,7 +66,7 @@ POST /communications/calls/{id}/transfer
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-transfer"
+  "name": "call-transfer-1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/transfer
@@ -96,7 +96,7 @@ Content-Length: 430
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
@@ -149,7 +149,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-accepted"></a>通知 - 接受转移
 
-> **注意：** 在媒体状态音频处于非活动状态之后或之前，可能会接受传输。
+> **注意：** 接受的转移可能在媒体状态音频处于非活动状态之后或之前发生。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -177,7 +177,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-completed"></a>通知 - 传输已完成
+##### <a name="notification---transfer-completed"></a>通知 - 转移已完成
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -211,7 +211,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-failed"></a>通知 - 传输失败
+##### <a name="notification---transfer-failed"></a>通知 - 转移失败
 
 > **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
 
@@ -255,7 +255,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer"
+  "@odata.type": "call-transfer-2"
 }-->
 
 ```http
@@ -323,7 +323,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-accepted"></a>通知 - 接受转移
 
-> **注意：** 在媒体状态音频处于非活动状态之后或之前，可能会接受传输。
+> **注意：** 接受的转移可能在媒体状态音频处于非活动状态之后或之前发生。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -351,7 +351,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-completed"></a>通知 - 传输已完成
+##### <a name="notification---transfer-completed"></a>通知 - 转移已完成
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -380,7 +380,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-failed"></a>通知 - 传输失败
+##### <a name="notification---transfer-failed"></a>通知 - 转移失败
 
 > **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
 
@@ -419,7 +419,7 @@ Content-Type: application/json
 
 ### <a name="example-3-call-transfer-to-pstn-number"></a>示例 3：呼叫转接到 PSTN 号码
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为自动程序分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 下面为请求示例。
@@ -492,7 +492,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>通知 - 接受转移
 
-> **注意：** 在媒体状态音频处于非活动状态之后或之前，可能会接受传输。
+> **注意：** 接受的转移可能在媒体状态音频处于非活动状态之后或之前发生。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -520,7 +520,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>通知 - 传输已完成
+#### <a name="notification---transfer-completed"></a>通知 - 转移已完成
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -553,7 +553,7 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="notification---transfer-failed"></a>通知 - 传输失败
+### <a name="notification---transfer-failed"></a>通知 - 转移失败
 
 > **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
 
@@ -591,7 +591,7 @@ Content-Type: application/json
 
 ### <a name="example-4-consultative-transfer-to-pstn-number"></a>示例 4：咨询转接到 PSTN 号码
 
-此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [为自动程序分配电话号码](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 下面为请求示例。
@@ -667,7 +667,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>通知 - 接受转移
 
-> **注意：** 在媒体状态音频处于非活动状态之后或之前，可能会接受传输。
+> **注意：** 接受的转移可能在媒体状态音频处于非活动状态之后或之前发生。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -695,7 +695,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>通知 - 传输已完成
+#### <a name="notification---transfer-completed"></a>通知 - 转移已完成
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -724,7 +724,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-failed"></a>通知 - 传输失败
+#### <a name="notification---transfer-failed"></a>通知 - 转移失败
 
 > **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
 

@@ -6,14 +6,14 @@ title: 获取 SharePoint 列表记录的以前版本
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 731a6b2a71fd03790e447dfb331c7cf4e6f5f482
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 81fdde8bf750839a278da9857281d59886407657
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972026"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957938"
 ---
-# <a name="listing-versions-of-a-listitem-preview"></a>列出 ListItem 的版本（预览）
+# <a name="list-versions-of-a-listitem"></a>列出 listItem 的版本
 
 命名空间：microsoft.graph
 

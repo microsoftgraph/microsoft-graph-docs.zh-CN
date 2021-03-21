@@ -5,12 +5,12 @@ description: 返回列表的元数据。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6225e85c751e47cd6c0e499eba2aff4e892fb3f0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 5091e8de36ff357b00a9b2517fab968f4a99cd41
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472907"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958020"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 
@@ -20,7 +20,7 @@ ms.locfileid: "50472907"
 
 返回列表的 [元数据][]。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 
@@ -50,25 +50,25 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=colu
 
 
 # <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-list" } -->
+<!-- { "blockType": "request", "name": "get-list-1" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-list-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-list-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -100,25 +100,25 @@ Content-type: application/json
 下面示例演示如何从 SharePoint Online 列表标题获取列表。
 
 # <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-list" } -->
+<!-- { "blockType": "request", "name": "get-list-2" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-title}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-list-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-list-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

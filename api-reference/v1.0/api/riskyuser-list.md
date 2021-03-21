@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cc72c174b81a5d2442b264026305e28cbb03afdf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c0e47c6de003bdb24cea59bc0f36e76db4e68472
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448058"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958225"
 ---
 # <a name="list-riskyusers"></a>列出 riskyUsers
 命名空间：microsoft.graph
@@ -49,14 +49,14 @@ GET /identityProtection/riskyUsers
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUser](../resources/riskyuser.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [riskyUser](../resources/riskyuser.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser_2"
 }
 -->
 ``` http

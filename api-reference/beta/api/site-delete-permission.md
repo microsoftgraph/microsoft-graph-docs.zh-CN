@@ -5,12 +5,12 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c48468aff4cde7b825134d9e6e9d0c30b9b903f1
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: bcd406d5df1b24fbf4d289baf339fcd181856174
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177160"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958991"
 ---
 # <a name="delete-permission"></a>删除权限
 命名空间：microsoft.graph
@@ -55,26 +55,26 @@ DELETE /sites/{sitesId}/permissions/{permissionId}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_permission"
+  "name": "delete_permission_2"
 }
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

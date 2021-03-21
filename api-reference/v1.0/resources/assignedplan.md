@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9e2c9c3dd04c2c3842fa984308d5f2ba002e607e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 182ef3239437234c74945fa37483924429f2200b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720814"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958092"
 ---
 # <a name="assignedplan-resource-type"></a>assignedPlan 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "50720814"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignedDateTime|DateTimeOffset|分配计划的日期和时间；例如：2013-01-02T19:32:30Z。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|功能分配的条件。 可能的值为 `Enabled` `Warning` `Suspended` `Deleted` `LockedOut` 、、。|
+|assignedDateTime|DateTimeOffset|分配计划的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|capabilityStatus|String|功能分配的条件。 可能的值为 `Enabled` `Warning` `Suspended` `Deleted` `LockedOut` 、、。 请参阅 [每个值的](#capabilitystatus-values) 详细说明。|
 |service|String|服务名称；例如，“Exchange”。|
 |servicePlanId|Guid|用于标识服务计划的 GUID。|
 

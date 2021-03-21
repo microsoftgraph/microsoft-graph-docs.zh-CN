@@ -5,25 +5,25 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d7c2849b1db35213993838a5098def2ee0f43f43
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 2194af555769d8eb5423a5c08a59926cb3e004f4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292950"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958760"
 ---
 # <a name="application-addkey"></a>application： addKey
 
 命名空间：microsoft.graph
 
-向应用程序添加密钥 [凭据](../resources/application.md)。 此方法以及 [removeKey](application-removekey.md) 可用于应用程序自动滚动其过期密钥。
+将密钥凭据添加到 [应用程序](../resources/application.md)。 此方法以及 [removeKey](application-removekey.md) 可用于应用程序自动滚动其过期密钥。
 
 > [!NOTE]
-> [创建应用程序](../api/application-post-applications.md)[和更新应用程序](../api/application-update.md)操作可以继续用于添加和更新具有或不带用户上下文的任何应用程序的密钥凭据。
+> [Create application](../api/application-post-applications.md) and [Update application](../api/application-update.md) operations can continue to be used to add and update key credentials for any application with or without a user's context.
 
-作为此方法的请求验证的一部分，先验证现有密钥的拥有证明，然后才能执行该操作。 
+作为此方法的请求验证的一部分，将先验证现有密钥的证明，然后才能执行该操作。 
 
-没有现有有效证书的应用程序 (尚未添加任何证书，或者所有证书都已过期) 将无法使用此服务操作。 可改用[更新应用程序](../api/application-update.md)操作来执行更新。
+如果没有任何现有有效证书 (尚未添加任何证书，或者所有证书) ，将无法使用此服务操作。 可改用[更新应用程序](../api/application-update.md)操作来执行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -57,13 +57,13 @@ POST /applications/{id}/addKey
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __类型____、用法____和密钥__ 是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify` 。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 只需设置应包含密钥密码的 __secretText。__ 此属性仅对于类型键是必需的 `X509CertAndPassword` 。 设置为 `null` 其他方式。|
-| proof | String | 自签名 JWT 令牌，用于证明拥有现有密钥。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
+| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __type、usage__ 和 __key__ 是此用法的必需属性。  受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify` 。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText。__ 此属性仅对类型 为 的键是必需的 `X509CertAndPassword` 。 否则， `null` 设置为 。|
+| proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [keyCredential](../resources/keycredential.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [keyCredential](../resources/keycredential.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -77,7 +77,7 @@ POST /applications/{id}/addKey
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "application_addkey"
+  "name": "application_addkey_1"
 }-->
 
 ```http
@@ -95,19 +95,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/application-addkey-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/application-addkey-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/application-addkey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-addkey-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/application-addkey-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/application-addkey-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/application-addkey-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/application-addkey-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -138,9 +138,11 @@ Content-Type: application/json
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "application_addkey"
+  "name": "application_addkey_2"
 }-->
 
 ```http
@@ -159,6 +161,24 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/application-addkey-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-addkey-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/application-addkey-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-addkey-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

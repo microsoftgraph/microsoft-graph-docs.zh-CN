@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: applications
 author: japere
 doc_type: resourcePageType
-ms.openlocfilehash: 78716646f4bf5cbba7a66da4cdef88d94d1984aa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: df3a80c6dfd4004daccfe33045c8775c2e2e6e48
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132319"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958806"
 ---
 # <a name="connectorgroup-resource-type"></a>connectorGroup 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "50132319"
 
 每个 [Azure AD 应用程序代理](https://aka.ms/whyappproxy) 连接器始终是连接器组的一部分。 属于同一连接器组的所有连接器都充当高可用性和负载平衡的单独单元。 如果未创建连接器组，则所有连接器都将是默认组的一部分。 使用应用程序代理配置应用程序时，还必须指定要为其分配应用程序的连接器组。
 
-创建连接器组后，可以使用添加连接器向连接器组添加或 [移动连接器](../api/connectorgroup-post-members.md)。 您还可以使用 ["添加应用程序](../api/connectorgroup-post-applications.md) "将应用程序分配给连接器组。
+创建连接器组后，可以使用添加连接器将连接器添加或移动到 [连接器组](../api/connectorgroup-post-members.md)。 您还可以使用 ["添加应用程序](../api/connectorgroup-post-applications.md) "将应用程序分配给连接器组。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -39,11 +39,11 @@ ms.locfileid: "50132319"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| 指示混合代理的类型。 系统预先设置此设置。 只读。 |
+|connectorGroupType|connectorGroupType| 指示混合代理的类型。 此预设置由系统设置。 可能的值是 `applicationProxy` ：。 只读。 |
 |id|string| 此 connectorGroup 的唯一标识符。 只读。 |
-|isDefault|boolean| 指示 connectorGroup 是否默认为 connectorGroup。 只有一个连接器组可以是默认的 connectorGroup，这是由系统预先设置的。 只读。 |
+|isDefault|boolean| 指示 connectorGroup 是否默认为 connectorGroup。 只有一个连接器组可以是默认的 connectorGroup，这由系统预先设置。 只读。 |
 |name|string| 与 connectorGroup 关联的名称。 |
-|region|string| 连接器组分配到的区域，并将优化其流量。 只有未向 connectorGroup分配连接器或应用程序时，才能设置此区域。 可用区域包括：北美、欧洲、澳大利亚、亚洲和印度。 可取值为：`nam`、`eur`、`aus`、`asia`、`ind`。|
+|region|connectorGroupRegion| connectorGroup 分配到的区域，并将优化其流量。 只有未向 connectorGroup **分配连接器** 或应用程序时，才能设置此区域。 可能的值包括：北美 `nam` () 、 (for Europe  `eur` `aus`) 、 (for Australia `asia`) 、 (for Asia `ind`) 、 (for India) `unknownFutureValue` 和 。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

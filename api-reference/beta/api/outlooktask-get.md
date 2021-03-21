@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f3d1c4ac017a00fd4a7665175ac2432d84eccc4a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2fccd7dea62dd0d08f56f119a75dd71037d00c90
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974132"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957599"
 ---
-# <a name="get-outlooktask-deprecated"></a>获取 outlookTask (弃用) 
+# <a name="get-outlooktask-deprecated"></a>获取已 (outlookTask) 
 
 命名空间：microsoft.graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "48974132"
 
 获取用户邮箱中的 Outlook 任务的属性和关系。
 
-默认情况下，此操作 (和 POST、PATCH 和 [complete](../api/outlooktask-complete.md) 任务操作) 返回 UTC 格式的日期相关属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
+默认情况下，此操作 (POST、PATCH 和 [完成](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | 名称                     | 说明                                       |
 |:-------------------------|:--------------------------------------------------|
 | Authorization            | Bearer {token}。必需。                         |
-| Prefer: outlook.timezone | 指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。 可选。 |
+| Prefer: outlook.timezone | 指定响应中时间属性的时区，如果未指定此标头，则其时区为 UTC。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -61,11 +61,11 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-an-outlook-task"></a>示例1：获取 Outlook 任务
+### <a name="example-1-get-an-outlook-task"></a>示例 1：获取 Outlook 任务
 
 #### <a name="request"></a>请求
 
@@ -74,26 +74,26 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask"
+  "name": "get_outlooktask_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -150,17 +150,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>示例2：在太平洋标准时间内使用日期时间属性获取 Outlook 任务
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>示例 2：获取具有太平洋标准时间的日期时间属性的 Outlook 任务
 
 #### <a name="request"></a>请求
 
-此示例使用 `Prefer: outlook.timezone` 标头来指定 API 应在太平洋标准时间的响应中返回日期时间属性。
+此示例使用 标头指定 API 应在太平洋标准时间的响应中返回 `Prefer: outlook.timezone` 日期时间属性。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask"
+  "name": "get_outlooktask_2"
 }-->
 
 ```msgraph-interactive
@@ -168,19 +168,19 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -188,7 +188,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 响应中的日期-时间属性以指定的太平洋标准时间返回。
+下面是一个响应示例。 响应中的日期时间属性以指定的太平洋标准时间返回。
 
 > **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
 

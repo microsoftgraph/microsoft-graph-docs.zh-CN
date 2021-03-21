@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ef50eb61e92f955b1d39dd657af6b91b53eec763
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f9ed6e3610d981d2f260f285415b238a02ae20cd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971313"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50984169"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String webUrl = "webUrl value";
 
 graphClient.me().onenote().notebooks()
-    .getNotebookFromWebUrl(webUrl)
+    .getNotebookFromWebUrl(NotebookGetNotebookFromWebUrlParameterSet
+        .newBuilder()
+        .withWebUrl(webUrl)
+        .build())
     .buildRequest()
     .post();
 
