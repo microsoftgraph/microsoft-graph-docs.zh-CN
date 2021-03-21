@@ -5,18 +5,17 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 937272ee969478b8dfa0cac6c6ce44a1e9644f08
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: eba6202f06b66f75c439e24b5ae7a75aa52fda1c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882932"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962404"
 ---
 # <a name="register-schema-for-the-microsoft-graph-connection"></a>Microsoft Graph 连接的注册架构
 
 连接[架构](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)确定如何将内容用于各种 Microsoft Graph 体验。 架构是计划添加到连接中的所有属性的简单列表及其属性、标签和别名。 向连接添加项目前，必须注册架构。
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 ## <a name="example-schema"></a>示例架构
 

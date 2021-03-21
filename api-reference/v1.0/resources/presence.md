@@ -1,16 +1,16 @@
 ---
 title: 状态资源类型
 description: 包含有关用户状态的信息，包括其可用性和用户活动。
-author: elvinyang-msft
+author: jsandoval-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 1122e14c91a8562757434e4bd36e267ed70790dd
-ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
+ms.openlocfilehash: 6de4f4f63302bfa8e1229f60c6aad77b1abe1fd8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675959"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962425"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "49675959"
 
 此资源支持订阅 [更改通知](/graph/webhooks)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                            | 返回类型                                       | 说明                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
@@ -35,10 +35,10 @@ ms.locfileid: "49675959"
 | 关系        | 类型                                                 | 说明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 |id    |  string     |  用户对象 ID   |
-|availability    |  字符串集合   |   用户的基本状态信息。 可能的值是 `Available` `AvailableIdle` ， ， ， ， ， `Away` `BeRightBack` `Busy` `BusyIdle` ， ， `DoNotDisturb` `Offline``PresenceUnknown`  |
-|activity    |  字符串集合      |    用户可用性的补充信息。 可能的值是 `Available` ， ， ， ， ， ， ， ， `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` ， `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` ， 。       |
+|availability    |  string 集合   |   用户的基本状态信息。 可能的值为 `Available` `AvailableIdle` `Away` `BeRightBack` 、、、、、、、、、 `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`  |
+|活动    |  string 集合      |    用户可用性的补充信息。 可能的值是 `Available` `Away` `BeRightBack` `Busy` 、、、、、、、、、 `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` 。       |
 
->**注意：** 若要详细了解不同的状态，请参阅 [Teams 中的用户状态](/microsoftteams/presence-admins)。 
+>**注意：** 若要详细了解不同的状态，请参阅 Teams [中的用户状态](/microsoftteams/presence-admins)。 
 
 ## <a name="relationships"></a>关系
 

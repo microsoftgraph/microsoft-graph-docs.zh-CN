@@ -1,45 +1,45 @@
 ---
-title: 组： evaluateDynamicMembership
-description: 评估用户或设备是否为动态组的成员。
+title: group： evaluateDynamicMembership
+description: 评估用户或设备是或将是动态组的成员。
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a9dffefdc8a7f967cd44d16168ad83c822bacc69
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 94594d31c4e7630b91905edb244f616cac1b21ab
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965319"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961879"
 ---
-# <a name="group-evaluatedynamicmembership"></a>组： evaluateDynamicMembership
+# <a name="group-evaluatedynamicmembership"></a>group： evaluateDynamicMembership
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-评估用户或设备是否为动态组的成员。 成员身份规则与评估中使用的其他详细信息一起返回。 您可以通过以下方式完成此操作： 
+评估用户或设备是否为动态组的成员。 将返回成员身份规则以及评估中使用的其他详细信息。 可以按照以下方式完成此操作： 
 
-- 评估用户或设备是否为指定的动态组的成员。  
-- 根据用户或设备的 ID 和成员身份规则评估用户或设备是否为动态组的成员。
+- 评估用户或设备是否是指定动态组的成员。  
+- 根据用户或设备的 ID 以及成员身份规则，评估用户或设备是否是动态组的成员。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="evaluate-dynamic-membership-with-member-id-and-group-id"></a>使用成员 ID 和组 ID 评估动态成员身份
+### <a name="evaluate-dynamic-membership-with-member-id-and-group-id"></a>评估具有成员 ID 和组 ID 的动态成员身份
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
-| 委派（工作或学校帐户） | 对于 user： Group. All 和 Read. all、Directory。 All<br>对于 device： Group. All 和 Read. all、Directory。 All |
+| 委派（工作或学校帐户） | 对于用户：Group.Read.All 和 User.Read.All、Directory.Read.All<br>对于设备：Group.Read.All 和 Device.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
-### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>使用成员 ID 和成员身份规则评估动态成员资格
+### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>使用成员 ID 和成员身份规则评估动态成员身份
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
-| 委派（工作或学校帐户） | 对于 user： User： Read. All，Read. All<br>对于 device： Device. all、Directory、Read. All |
+| 委派（工作或学校帐户） | 对于用户：User.Read.All、Directory.Read.All<br>对于设备：Device.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -63,20 +63,20 @@ POST /groups/evaluateDynamicMembership
 
 在请求正文中，提供所需的属性。
 
-下表列出了评估组成员资格时所需的属性。
+下表列出了评估组成员身份时所需的属性。
 
 | 参数 | 类型 | 说明 |
 | :-------- | :--- | :---------- |
-| memberId | String collection | memberId 是要评估的用户或设备的对象 Id。 |
-| membershipRule | String collection | 用于成员资格评估的规则。 如果未提供此属性，则对现有组的规则进行评估。 如果提供了此属性，则将针对具有相同规则的组中的可能成员资格评估用户或设备。 有关详细信息，请参阅 [Azure Active Directory 中的组的动态成员身份规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
+| memberId | String collection | memberId 是要评估的用户或设备的对象 ID。 |
+| membershipRule | String collection | 用于成员评估的规则。 如果未提供此属性，则评估现有组的规则。 如果提供此属性，将评估用户或设备是否具有同一规则组中可能的成员身份。 有关详细信息，请参阅 [Azure Active Directory 中组的动态成员身份规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `200 OK` 响应代码和 [evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) 对象。
+如果成功，此方法返回 `200 OK` 响应代码和 [evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-evaluate-if-a-user-or-device-is-a-member-of-an-existing-group"></a>示例1：评估用户或设备是否为现有组的成员
+### <a name="example-1-evaluate-if-a-user-or-device-is-a-member-of-an-existing-group"></a>示例 1：评估用户或设备是现有组的成员
 
 #### <a name="request"></a>请求
 
@@ -86,7 +86,7 @@ POST /groups/evaluateDynamicMembership
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_evaluatedynamicmembership"
+  "name": "group_evaluatedynamicmembership_1"
 }-->
 
 ```http
@@ -98,19 +98,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -146,7 +146,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-2-evaluate-if-a-user-or-device-would-be-a-member-of-a-group-based-on-a-membership-rule"></a>示例2：评估用户或设备是否是基于成员身份规则的组的成员
+### <a name="example-2-evaluate-if-a-user-or-device-would-be-a-member-of-a-group-based-on-a-membership-rule"></a>示例 2：根据成员身份规则评估用户或设备是否为组的成员
 
 #### <a name="request"></a>请求
 
@@ -156,7 +156,7 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_evaluatedynamicmembership"
+  "name": "group_evaluatedynamicmembership_2"
 }-->
 
 ```http
@@ -169,19 +169,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

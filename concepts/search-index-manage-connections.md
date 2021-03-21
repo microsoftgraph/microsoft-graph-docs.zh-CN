@@ -5,18 +5,16 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: b5d675b8780e7fd7389d8c929d16fcb6756059eb
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 52162b23bbd56544be8bee48fbea1cfa00891e7a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883170"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962390"
 ---
 # <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a>创建、更新和删除 Microsoft Graph 中的连接
 
 外部服务与 Microsoft 搜索服务的连接由 Microsoft Graph 中的 [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) 资源表示。
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 Microsoft Graph 连接器平台提供了一种简单的方法，可将外部数据添加到 Microsoft Graph 中。 连接是外部数据的逻辑容器，管理员可将其作为一个单元进行管理。
 

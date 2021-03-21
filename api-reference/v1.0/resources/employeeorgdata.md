@@ -1,27 +1,27 @@
 ---
 title: employeeOrgData 资源类型
-description: 表示与用户相关联的组织数据。
+description: 表示与用户关联的组织数据。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: users
 author: cmmdesai
-ms.openlocfilehash: 841d3c7965309721d662475f2cba553c378c49ee
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 5e3ea0401730ffc8b15cae8c371d9352995c6f28
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635606"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961991"
 ---
 # <a name="employeeorgdata-resource-type"></a>employeeOrgData 资源类型
 
 命名空间：microsoft.graph
 
-表示与用户相关联的组织数据。 [User](user.md)实体的**employeeOrgData**属性是一个组织属性的集合。
+表示与用户关联的组织数据。 user 实体的 **employeeOrgData** 属性是组织属性的集合。 [](user.md)
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |Description|
+| 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
-| division | String | 用户工作的部门的名称。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
+| division | String | 用户工作部门的名称。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | costCenter | String | 与用户关联的成本中心。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

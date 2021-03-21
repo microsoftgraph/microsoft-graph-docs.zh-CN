@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 8ded2e79f8a9a2004f2ffa412b6d42e3275556b8
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ce334002b58849671ab2e602594af0c8335b1377
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516092"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961942"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50516092"
 
 ## <a name="methods"></a>Methods
 
-| 方法                                                             | 返回类型                       | Description                                                                                                  |
+| 方法                                                             | 返回类型                       | 说明                                                                                                  |
 | :----------------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | [创建 onlineMeeting](../api/application-post-onlineMeetings.md)  | [onlineMeeting](onlinemeeting.md) | 创建联机会议。                                                                                    |
 | [获取 onlineMeeting](../api/onlinemeeting-get.md)                   | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting 对象的属性和** 关系。                                        |
@@ -30,16 +30,16 @@ ms.locfileid: "50516092"
 
 ## <a name="properties"></a>属性
 
-| 属性              | 类型                                          | Description                                                                                                                |
+| 属性              | 类型                                          | 说明                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| allowedPresenters     | onlineMeetingPresenters                       | 指定可在会议中成为演示者的人。 下表列出了可能的值。                          |
-| audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (联机) 拨入信息。 只读。                                                   |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | 指定可在会议中成为演示者的人。 下表列出了可能的值。                          |
+| audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (拨入) 联机会议的信息。 只读。                                                   |
 | chatInfo              | [chatInfo](chatinfo.md)                       | 与此联机会议关联的聊天信息。                                                                  |
 | creationDateTime      | 日期时间                                      | 会议创建时间（UTC）。 只读。                                                                               |
 | endDateTime           | 日期时间                                      | 会议结束时间（UTC）。                                                                                               |
 | id                    | String                                        | 与联机会议关联的默认 ID。 只读。                                                              |
 | isEntryExitAnnounced  | Boolean                                       | 呼叫者加入或离开时是否宣布。                                                                     |
-| joinInformation       | [itemBody](itembody.md)                       | 请求 HTTP 标头中指定的语言和区域设置变量的 `Accept-Language` 联接信息。 只读。 |
+| joinInformation       | [itemBody](itembody.md)                       | 请求 HTTP 标头中指定的语言和区域设置变量中的 `Accept-Language` 联接信息。 只读。 |
 | joinWebUrl            | String                                        | 联机会议加入 URL。 只读。                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。                       |
@@ -49,9 +49,9 @@ ms.locfileid: "50516092"
 
 ### <a name="onlinemeetingpresenters-values"></a>onlineMeetingPresenters 值
 
-| 值              | Description                                                   |
+| 值              | 说明                                                   |
 | ------------------ | ------------------------------------------------------------- |
-| 所有人           | 每个人都是演示者 (这是默认选项) 。             |
+| everyone           | 每个人都是演示者 (这是默认选项) 。             |
 | 组织       | 组织者组织中的每个人都是演示者。          |
 | roleIsPresenter    | 只有其角色为演示者的参与者是演示者。 |
 | organizer － 组织者          | 只有组织者是演示者。                           |

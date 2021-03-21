@@ -1,16 +1,16 @@
 ---
 title: addContentHeaderAction 资源类型
-description: 表示一个操作，该操作指定要添加到信息中的内容标头的详细信息（如果适用）。
+description: 表示一个操作，指定要添加到信息的内容标头的详细信息（如果适用）。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7e7a5675cdf150f03b283f664e248319d49c820d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 65754bffc034611fd319403cd81d931addfea9f0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024514"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962132"
 ---
 # <a name="addcontentheaderaction-resource-type"></a>addContentHeaderAction 资源类型
 
@@ -18,19 +18,19 @@ ms.locfileid: "48024514"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个操作，该操作指定要添加到信息中的内容标头的详细信息（如果适用）。
+表示一个操作，指定要添加到信息的内容标头的详细信息（如果适用）。
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型   | 说明                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
 | alignment     | String | 可取值为：`left`、`right`、`center`。               |
-| fontColor     | String | 标头使用的字体颜色。                      |
-| fontName      | String | 要用于标头的字体的名称。                       |
-| fontSize      | Int32  | 标头使用的字号。                              |
-| margin        | Int32  | 文档顶部的页眉的边距。        |
+| fontColor     | String | 用于标题的字体的颜色。                      |
+| fontName      | String | 要用于标题的字体的名称。                       |
+| fontSize      | Int32  | 用于标题的字体大小。                              |
+| margin        | Int32  | 从文档顶部开始页眉的边距。        |
 | text          | String | 标头本身的内容。                            |
-| uiElementName | String | 应在其中放置标头的 UI 元素的名称。 |
+| uiElementName | String | 应放置标题的 UI 元素的名称。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

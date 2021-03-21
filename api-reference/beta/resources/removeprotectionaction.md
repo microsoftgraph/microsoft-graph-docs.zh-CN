@@ -1,16 +1,16 @@
 ---
 title: removeProtectionAction 资源类型
-description: 表示要移除其对文件的保护的操作或信息。
+description: 表示从文件或信息中删除保护的操作。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: bf4ad367038367d3572f0451bfa7d3eb0a25368d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b315c9d2641524d8a134f0e0b9704c51419ada4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073395"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962033"
 ---
 # <a name="removeprotectionaction-resource-type"></a>removeProtectionAction 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48073395"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示要移除其对文件的保护的操作或信息。 [EvaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或[EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回**removeProtectionAction** ，如果由于更新或删除标签而要删除保护。 该操作指示使用应用程序移除包含之前适用的内容头的特定 UI 元素。 仅当呼叫用户具有足够的权限删除保护时，才应通过客户端库（如 Microsoft 信息保护 SDK）删除保护。
+表示从文件或信息中删除保护的操作。 如果由于更新或删除标签而要删除保护，则 evaluateApplication、evaluateClassificationResults 或 [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) API 可能会返回 **removeProtectionAction。** [](../api/informationprotectionlabel-evaluateapplication.md) [](../api/informationprotectionlabel-evaluateclassificationresults.md) 此操作指示使用应用程序删除包含以前适用的内容标头的特定 UI 元素。 只有在调用用户具有删除保护的足够权限时，才应删除通过客户端库（如 Microsoft 信息保护 SDK）的保护。
 
 ## <a name="properties"></a>属性
 

@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 294bd4cda4104322fedba31ea1f5e6f9b9f7c16d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7ab7704f32c695d3ec2f2fc6fd7719a2ee16654a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972466"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978032"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String displayName = "Test Printer";
 
@@ -28,7 +28,16 @@ certificateSigningRequest.transportKey = "{sampleTransportKey}";
 
 
 graphClient.print().printers()
-    .create(displayName,manufacturer,model,physicalDeviceId,hasPhysicalDevice,certificateSigningRequest,connectorId)
+    .create(PrinterCreateParameterSet
+        .newBuilder()
+        .withDisplayName(displayName)
+        .withManufacturer(manufacturer)
+        .withModel(model)
+        .withPhysicalDeviceId(physicalDeviceId)
+        .withHasPhysicalDevice(hasPhysicalDevice)
+        .withCertificateSigningRequest(certificateSigningRequest)
+        .withConnectorId(connectorId)
+        .build())
     .buildRequest()
     .post();
 

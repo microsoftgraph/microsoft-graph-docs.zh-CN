@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0f50886cb9fffe1dee51be3a751bda5936011cb7
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 51bf43360c3580011ab39e2c385b4c23d3bfc5a1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176631"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962411"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -235,7 +235,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 >- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
 >- [用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
 >
-> 要同时使用 `$orderby` 和 `$filter`，需要：
+> 若要将`$orderby``$filter`、或`$filter`与`endsWith`一，则需要：
 >
 > - 将 `$count=true` 添加到查询参数
 > - 添加 `ConsistencyLevel: eventual` 请求标题

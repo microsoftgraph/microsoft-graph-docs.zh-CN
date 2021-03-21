@@ -1,22 +1,22 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 27225482ef5999a8808d0dcafeab9c80beea3b88
-ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
+ms.openlocfilehash: c9ead84ddf1a21f20ecbb6ac379d4d47295bc8f6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50072403"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50981503"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Post post = new Post();
 ItemBody body = new ItemBody();
 body.contentType = BodyType.TEXT;
 body.content = "content-value";
 post.body = body;
-post.receivedDateTime = CalendarSerializer.deserialize("2016-10-19T10:37:00Z");
+post.receivedDateTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
 post.hasAttachments = true;
 Recipient from = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
@@ -40,8 +40,8 @@ newParticipants.emailAddress = emailAddress2;
 newParticipantsList.add(newParticipants);
 post.newParticipants = newParticipantsList;
 post.conversationId = "conversationId-value";
-post.createdDateTime = CalendarSerializer.deserialize("2016-10-19T10:37:00Z");
-post.lastModifiedDateTime = CalendarSerializer.deserialize("2016-10-19T10:37:00Z");
+post.createdDateTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
+post.lastModifiedDateTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
 post.changeKey = "changeKey-value";
 LinkedList<String> categoriesList = new LinkedList<String>();
 categoriesList.add("categories-value");
@@ -51,7 +51,7 @@ Post inReplyTo = new Post();
 post.inReplyTo = inReplyTo;
 LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
 FileAttachment attachments = new FileAttachment();
-attachments.lastModifiedDateTime = CalendarSerializer.deserialize("2016-10-19T10:37:00Z");
+attachments.lastModifiedDateTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
 attachments.name = "name-value";
 attachments.contentType = "contentType-value";
 attachments.size = 99;
@@ -64,7 +64,10 @@ AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage
 post.attachments = attachmentCollectionPage;
 
 graphClient.groups("{id}").threads("{id}").posts("{id}")
-    .reply(post)
+    .reply(PostReplyParameterSet
+        .newBuilder()
+        .withPost(post)
+        .build())
     .buildRequest()
     .post();
 

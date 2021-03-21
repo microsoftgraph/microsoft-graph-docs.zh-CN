@@ -1,16 +1,16 @@
 ---
 title: removeContentFooterAction 资源类型
-description: 表示一个操作，该操作指定要从信息中删除的内容页脚的详细信息（如果适用）。
+description: 表示一个操作，指定要从信息中删除的内容页脚的详细信息（如果适用）。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 76450b0d6b0f3a532a4e3472d2ce99ead8c933e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e8de130b2ad346e8e1fee2077014eda9e9b94d5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073444"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962071"
 ---
 # <a name="removecontentfooteraction-resource-type"></a>removeContentFooterAction 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48073444"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个操作，该操作指定要从信息中删除的内容页脚的详细信息（如果适用）。 如果由于更新或删除标签而要删除页脚， [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或 [EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回 **removeContentFooterAction** 。 该操作指示使用应用程序移除包含之前适用的内容页脚的特定 UI 元素。
+表示一个操作，指定要从信息中删除的内容页脚的详细信息（如果适用）。 如果由于更新或删除标签而删除页脚，则 evaluateApplication、evaluateClassificationResults 或 [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) API 可能会返回 **removeContentFooterAction。** [](../api/informationprotectionlabel-evaluateApplication.md) [](../api/informationprotectionlabel-evaluateclassificationresults.md) 此操作指示使用应用程序删除包含以前适用的内容页脚的特定 UI 元素。
 
 ## <a name="properties"></a>属性
 
 | 属性       | 类型              | 说明                                                |
 | :------------- | :---------------- | :--------------------------------------------------------- |
-| uiElementNames | String 集合 | 要删除的页脚的 UI 元素的名称。 |
+| uiElementNames | String collection | 要删除的页脚的 UI 元素的名称。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

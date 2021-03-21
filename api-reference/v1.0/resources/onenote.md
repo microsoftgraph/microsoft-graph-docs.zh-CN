@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: cd2d8f52043541684d6c56c706ba9b0e3e3b6c78
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c81804c9ea93e6da9f0f9b7134f5b38aa4afd64
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082957"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961977"
 ---
 # <a name="onenote-resource-type"></a>Onenote 资源类型
 
@@ -52,7 +52,7 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|笔记本|[笔记本](notebook.md)集合|用户或组所有的 OneNote 笔记本集合。 只读。 可为 NULL。|
+|笔记本|[notebook](notebook.md) 集合|用户或组所有的 OneNote 笔记本集合。 只读。 可为 NULL。|
 |operations|[OnenoteOperation](onenoteoperation.md) 集合 |OneNote 操作状态。 不支持获取操作集合，但如果响应中返回 `Operation-Location` 标头，可以获取长时间运行的操作的状态。 只读。 可为 NULL。|
 |pages|[OnenotePage](page.md) 集合|用户或组所有的全部 OneNote 笔记本中的页面。  只读。 可为 NULL。|
 |resources|[OnenoteResource](resource.md) 集合 |OneNote 页面中的图像和其他文件资源。 不支持获取资源集合，但可以[获取特定资源的二进制内容](resource.md)。 只读。 可为 NULL。|

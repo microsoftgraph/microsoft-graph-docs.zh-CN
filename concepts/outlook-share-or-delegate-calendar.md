@@ -4,12 +4,12 @@ description: 在 Outlook 中，日历所有者可与其他用户共享日历，�
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f04b1138fe8967a682ba890a5947c4e861c47717
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8bf08b8d32a53e5b309b2048060a8c64d1cb1ce7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474937"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962446"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>在 Outlook 中共享或委派日历
 
@@ -80,7 +80,8 @@ ms.locfileid: "50474937"
   - **role** 为 `freeBusyRead`，即“我的组织”的默认设置。
   - **emailAddress** 将 **name** 子属性指定为“我的组织”；“我的组织”的 **address** 默认为 null。
 
-#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+**Microsoft Graph 权限**
+
 对此操作视情况使用权限最低的委派或应用程序权限，`Calendars.Read`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -167,7 +168,8 @@ Content-type: application/json
 
 此部分的示例更新了 **role** 属性，将自定义日历“儿童派对”的现有共享者 Adele 的权限从 `read` 更改为 `write`。
 
-#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+**Microsoft Graph 权限**
+
 对此操作视情况使用权限最低的委派或应用程序权限，`Calendars.ReadWrite`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -252,7 +254,8 @@ Content-type: application/json
 - 对于日历所有者，**isSharedWithMe** 始终为 false。
 - **owner** 显示 Alex 为所有者。
 
-#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+**Microsoft Graph 权限**
+
 对此操作视情况使用权限最低的委派或应用程序权限，`Calendars.Read`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -332,7 +335,8 @@ Content-type: application/json
 > [!NOTE] 
 > 共享者或委托人只能自定义共享/委派日历的 **name** 属性。 更新仅对他们自己可见；日历所有者无法查看此类日历名称更改。
 
-#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+**Microsoft Graph 权限**
+
 对此操作视情况使用权限最低的委派权限 `Calendars.Read.Shared` 或应用程序权限 `Calendars.Read`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -422,7 +426,8 @@ Content-type: application/json
 
 此部分的示例将获取日历所有者的 **mailboxSettings**，该所有者仅允许 Outlook 将会议请求和响应定向到日历委托人；即 **delegateMeetingMessageDeliveryOptions** 设置为 `sendToDelegateOnly`。
 
-#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+**Microsoft Graph 权限**
+
 对此操作视情况使用权限最低的委派或应用程序权限，`MailboxSettings.Read`。 有关邮箱权限的详细信息，请参阅[邮件权限](permissions-reference.md#mail-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -505,7 +510,8 @@ Content-type: application/json
 
 此部分的示例将 **delegateMeetingMessageDeliveryOptions** 属性更新为 `sendToDelegateAndPrincipal`，以让 Outlook 将委派日历的会议请求和响应定向到所有委托人和所有者。
 
-#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+**Microsoft Graph 权限**
+
 对此操作视情况使用权限最低的委派或应用程序权限，`MailboxSettings.ReadWrite`。 有关邮箱权限的详细信息，请参阅[邮件权限](permissions-reference.md#mail-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -558,7 +564,8 @@ Content-type: application/json
 
 在下面的示例中，Alex 将删除作为“儿童派对”日历共享者的 Megan。
 
-#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+**Microsoft Graph 权限**
+
 对此操作视情况使用权限最低的委派或应用程序权限，`Calendars.ReadWrite`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)

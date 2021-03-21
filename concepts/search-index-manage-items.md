@@ -5,18 +5,16 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 4ac64724a676c2da2d39a68d842039bd14138161
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: c2cae0ca25d55fd95a7b26c0175f7e5313d6e532
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883177"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962397"
 ---
 # <a name="create-update-and-delete-items-added-by-your-application-in-the-microsoft-graph-connection"></a>创建、更新和删除应用程序在 Microsoft Graph 连接中添加的项目
 
 应用程序添加到 Microsoft 搜索服务的项用 Microsoft Graph 中的 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 资源表示。
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 创建连接后，可以添加内容。 数据源中的每个项目都必须用唯一的项目 id 表示为 Microsoft Graph 中的 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)。此 id 用于在 Microsoft Graph 中创建、更新或删除项目。 你可以将数据源中的主键用作 itemId，或者从一个或多个字段派生。 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 有三个关键组成部分：访问控制列表、属性和内容。
 
