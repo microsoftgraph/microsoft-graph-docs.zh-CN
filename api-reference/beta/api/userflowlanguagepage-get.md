@@ -1,24 +1,24 @@
 ---
 title: 获取 userFlowLanguagePage
-description: 读取用户流中某一语言的 userFlowLanguagePage 对象中的值。
+description: 读取用户流中某种语言的 userFlowLanguagePage 对象中的值。
 author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0848078f889b5d959cadb2ec5c403d1d1edf3cb9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3a47ae23d1cf271c0ebe2a6aa6864226bb9a7d43
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433458"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955138"
 ---
 # <a name="get-userflowlanguagepage"></a>获取 userFlowLanguagePage
 
 命名空间：microsoft.graph
 
-读取用户流中某一语言的 [userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象中的值。 这些值在用户流定义的用户旅程中向用户显示。
+读取用户流中某种语言的 [userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象中的值。 这些值在用户流定义的用户旅程中向用户显示。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "50433458"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -35,7 +35,7 @@ ms.locfileid: "50433458"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要引用对象中的内容，必须使用 `$value` 。 这将返回对象中的内容，并允许你直接引用它。
+若要引用对象中的内容，必须使用 `$value` 。 这将返回 对象中的内容，并允许你直接引用它。
 
 <!-- {
   "blockType": "ignored"
@@ -61,7 +61,7 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -73,7 +73,7 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userflowlanguagepage"
+  "name": "get_userflowlanguagepage_3"
 }
 -->
 
@@ -81,19 +81,19 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/languages/en/defaultPages/idpselections/$value
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowlanguagepage-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowlanguagepage-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-userflowlanguagepage-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userflowlanguagepage-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-userflowlanguagepage-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userflowlanguagepage-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-userflowlanguagepage-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-userflowlanguagepage-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 99dc11faa96221abab6df6c27bac0db840123d5a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cbdc4feb50428fb3007b5a61362381d9c55a78a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071548"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955013"
 ---
 # <a name="callmediastate-resource-type"></a>callMediaState 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48071548"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 [呼叫](call.md)的媒体状态。
+表示呼叫的媒体 [状态](call.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型    | 说明                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| audio           | String  | 音频媒体状态。 可取值为：`active`、`inactive`。 |
+| audio           | mediaState  | 音频媒体状态。 可取值为：`active`、`inactive`、`unknownFutureValue`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

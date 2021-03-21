@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 145154f9ac69c069b6ea27906727642390036378
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44b8f8ab2d9cc6b16b183f8b4cd1c5ca25db1a63
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071626"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955061"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -48,20 +48,20 @@ ms.locfileid: "48071626"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|allowedOnlineMeetingProviders|string 集合| 表示此日历中可用于创建联机会议的联机会议服务提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
+|allowedOnlineMeetingProviders|OnlineMeetingProviderType 集合| 表示此日历中可用于创建联机会议的联机会议服务提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
 |calendarGroupId|字符串|要在其中创建日历的 [calendarGroup](calendargroup.md)。 若用户从未显式设置日历的组，此属性为空。|
-|canEdit |Boolean |如果用户可以写入日历则为 true，否则为 false。对于创建此日历的用户，此属性为 true。通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源，此属性对于共享日历并且授予写入访问权限的用户同样为 true。只读。|
-|canShare |Boolean |如果用户有权共享日历则为 ture，否则为 false。 只有创建日历的用户才可以进行共享。 只读。|
-|canViewPrivateItems |Boolean |如果用户可以读取已标记为私有的日历项，则为 true，否则返回 false。 此属性通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源进行设定。 只读。|
+|canEdit |Boolean |`true` 如果用户可以写入日历，则 `false` 更改。 此属性 `true` 日历的用户所使用。 此属性还可 `true` 已通过 Outlook 客户端或相应的 [Permission 资源进行写入访问的用户](calendarpermission.md) 权限。 只读。|
+|canShare |Boolean |`true` 如果用户有共享日历的权限，则 `false` 更改。 只有创建日历的用户才可以进行共享。 只读。|
+|canViewPrivateItems |Boolean |`true` 如果用户可以阅读标记为私密的日历项目，则 `false` 更改。 此属性通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源进行设定。 只读。|
 |changeKey|字符串|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
-|color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
+|颜色|calendarColor|在 UI 中指定将该日历与其他日历区分开来的颜色主题。 属性值为： `auto`、 `lightBlue`、 `lightGreen`、 `lightOrange`、 `lightGray`、 `lightYellow`、 `lightTeal`、 `lightPink`、 `lightBrown`、 `lightRed`、 `maxColor`。 |
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|从此日历发送的会议的默认联机会议提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
-|hexColor|字符串|日历颜色，使用十六进制颜色代码表示，其中包含三个十六进制值，每个值介于 00 到 FF 之间，表示 RGB 颜色空间中颜色的红色、绿色或蓝色组件。 若用户从未显式设置日历的颜色，此属性为空。 |
+|hexColor|String|日历颜色，以三个十六进制值的六进制值（每个值从 00 到 FF）表示，表示 RGB 颜色空间内颜色的红色、绿色或蓝色组成部分。 若用户从未显式设置日历的颜色，此属性为空。 |
 |id|String|日历的唯一标识符。只读。|
-|isDefaultCalendar|Boolean|若此为默认用于新建事件的默认日志则为 True，反之为 false。|
+|isDefaultCalendar|Boolean|`true` 如果这是默认情况下创建新事件的默认日历，则 `false` 更改。|
 |isRemovable|Boolean| 表示是否可以从用户邮箱删除此用户日志。|
-|isShared |Boolean |如果用户已与其他用户共享日历，则值为 true，否则为 false。 由于只有创建日历的用户才能共享日历，因此同一用户的 **isShared** 和 **isSharedWithMe** 不能为 true。 共享在 Outlook 客户端中发起时，此属性设定，当共享通过客户端或相应的 [calendarPermission](calendarpermission.md) 资源取消时，可重置属性。 只读。|
-|isSharedWithMe |Boolean |如果用户已共享此日历，则值为 true，否则为 false。 对于日历所有者，此属性始终为 false。 共享在 Outlook 客户端中发起时，此属性设定，当共享通过客户端或相应的 [calendarPermission](calendarpermission.md) 资源取消时，可重置属性。 只读。 |
+|isShared |Boolean |`true` 如果用户已与其他用户共享日历，则 `false` 共享。 由于只有创建日历的用户才能共享它，因此 **为共享** ， **为SharedWithMe** 不能为同一 `true` 共享。 共享在 Outlook 客户端中发起时，此属性设定，当共享通过客户端或相应的 [calendarPermission](calendarpermission.md) 资源取消时，可重置属性。 只读。|
+|isSharedWithMe |Boolean |`true` 如果用户已共享此日历，则 `false` 共享。 此属性始终 `false` 所有者使用。 共享在 Outlook 客户端中发起时，此属性设定，当共享通过客户端或相应的 [calendarPermission](calendarpermission.md) 资源取消时，可重置属性。 只读。 |
 |isTallyingResponses|Boolean|表示此用户日历是否支持会议响应跟踪。 仅从用户的主日志发送的会议邀请支持会议响应跟踪。|
 |name|String|日历名称。|
 |owner |[emailAddress](emailaddress.md) | 如果设置，则表示创建或添加日历的用户。 对于用户创建或添加的日历，将 **owner** 属性设置为用户。 对于与用户共享的日历，将 **owner** 属性设置为与此用户共享该日历的人员。 只读。|

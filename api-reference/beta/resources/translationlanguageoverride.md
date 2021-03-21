@@ -3,14 +3,14 @@ title: translationLanguageOverride 资源类型
 description: 表示翻译语言替代列表中的条目的资源。
 localization_priority: Normal
 author: jasonbro
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 791908546c64cbb0ea7ee7434bece3dca5c894cc
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c9fa8d600ee3fb503446965d78491563c4ceae2e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518146"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954949"
 ---
 # <a name="translationlanguageoverride-resource-type"></a>translationLanguageOverride 资源类型
 

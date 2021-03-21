@@ -5,19 +5,19 @@ author: mohitpcad
 ms.prod: Sharepoint
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: ddf7a7ba3419437b300d90ed33f3841e46bae5a0
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6bc2ba250498d6d7ac51914e2f0c072a34fc9bfe
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874450"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955370"
 ---
 # <a name="list-children"></a>列出子项
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用子导航属性获取 [集] 或 [术语资源的第] 一级子级。
+使用 children 导航属性获取 [集] 或 [术语] 资源的第一级子级。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +52,7 @@ GET /termStore/sets/{setId}/terms/{termId}/children
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和术语[](../resources/termstore-term.md)对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [term](../resources/termstore-term.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -61,26 +61,26 @@ GET /termStore/sets/{setId}/terms/{termId}/children
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_term"
+  "name": "get_term_2"
 }-->
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-term-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-term-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-term-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-term-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-term-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-term-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-term-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-term-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

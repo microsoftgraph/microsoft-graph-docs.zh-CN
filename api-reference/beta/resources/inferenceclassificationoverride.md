@@ -1,16 +1,16 @@
 ---
 title: inferenceClassificationOverride 资源类型
-description: 表示用户覆盖如何始终将来自特定发件人的传入邮件分类为
+description: 表示用户应始终将来自特定发件人的传入邮件分类为的用户替代
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: 63149690230f1c83ba62f60e963a64a7300d22dc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 537032c220ed98fc9052afe6a31376359836fa94
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130891"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954985"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "50130891"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用户覆盖如何始终将来自特定发件人的传入邮件分类为重点 [收件箱](manage-focused-inbox.md)。
+表示用户覆盖如何始终将来自特定发件人的传入邮件分类为重点 [收件箱](manage-focused-inbox.md)中。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -31,7 +31,7 @@ ms.locfileid: "50130891"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。可能的值是：`focused`、`other`。|
+|classifyAs|inferenceClassificationType| 指定来自特定发件人的传入邮件始终应如何分类。可能的值是：`focused`、`other`。|
 |id|string| 替代的唯一标识符。只读。|
 |senderEmailAddress|[emailAddress](emailaddress.md)|为其创建替代的发件人的电子邮件地址信息。|
 
