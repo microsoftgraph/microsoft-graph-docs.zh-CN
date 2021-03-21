@@ -5,37 +5,37 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f3d1c4ac017a00fd4a7665175ac2432d84eccc4a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2fccd7dea62dd0d08f56f119a75dd71037d00c90
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974132"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957599"
 ---
-# <a name="get-outlooktask-deprecated"></a><span data-ttu-id="2ae53-103">获取 outlookTask (弃用) </span><span class="sxs-lookup"><span data-stu-id="2ae53-103">Get outlookTask (deprecated)</span></span>
+# <a name="get-outlooktask-deprecated"></a><span data-ttu-id="717a8-103">获取已 (outlookTask) </span><span class="sxs-lookup"><span data-stu-id="717a8-103">Get outlookTask (deprecated)</span></span>
 
-<span data-ttu-id="2ae53-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2ae53-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="717a8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="717a8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-<span data-ttu-id="2ae53-105">获取用户邮箱中的 Outlook 任务的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="2ae53-105">Get the properties and relationships of an Outlook task in the user's mailbox.</span></span>
+<span data-ttu-id="717a8-105">获取用户邮箱中的 Outlook 任务的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="717a8-105">Get the properties and relationships of an Outlook task in the user's mailbox.</span></span>
 
-<span data-ttu-id="2ae53-106">默认情况下，此操作 (和 POST、PATCH 和 [complete](../api/outlooktask-complete.md) 任务操作) 返回 UTC 格式的日期相关属性。</span><span class="sxs-lookup"><span data-stu-id="2ae53-106">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span> <span data-ttu-id="2ae53-107">你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。</span><span class="sxs-lookup"><span data-stu-id="2ae53-107">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span>
+<span data-ttu-id="717a8-106">默认情况下，此操作 (POST、PATCH 和 [完成](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。</span><span class="sxs-lookup"><span data-stu-id="717a8-106">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span> <span data-ttu-id="717a8-107">你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。</span><span class="sxs-lookup"><span data-stu-id="717a8-107">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2ae53-108">权限</span><span class="sxs-lookup"><span data-stu-id="2ae53-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="717a8-108">权限</span><span class="sxs-lookup"><span data-stu-id="717a8-108">Permissions</span></span>
 
-<span data-ttu-id="2ae53-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2ae53-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="717a8-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="717a8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2ae53-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="2ae53-111">Permission type</span></span>                        | <span data-ttu-id="2ae53-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2ae53-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="717a8-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="717a8-111">Permission type</span></span>                        | <span data-ttu-id="717a8-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="717a8-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:------------------------------------|
-| <span data-ttu-id="2ae53-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2ae53-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="2ae53-114">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="2ae53-114">Tasks.Read</span></span>                          |
-| <span data-ttu-id="2ae53-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2ae53-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2ae53-116">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="2ae53-116">Tasks.Read</span></span>                          |
-| <span data-ttu-id="2ae53-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="2ae53-117">Application</span></span>                            | <span data-ttu-id="2ae53-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="2ae53-118">Not supported.</span></span>                      |
+| <span data-ttu-id="717a8-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="717a8-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="717a8-114">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="717a8-114">Tasks.Read</span></span>                          |
+| <span data-ttu-id="717a8-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="717a8-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="717a8-116">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="717a8-116">Tasks.Read</span></span>                          |
+| <span data-ttu-id="717a8-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="717a8-117">Application</span></span>                            | <span data-ttu-id="717a8-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="717a8-118">Not supported.</span></span>                      |
 
-## <a name="http-request"></a><span data-ttu-id="2ae53-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2ae53-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="717a8-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="717a8-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,56 +44,56 @@ GET /me/outlook/tasks/{id}
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2ae53-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2ae53-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="717a8-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="717a8-120">Optional query parameters</span></span>
 
-<span data-ttu-id="2ae53-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2ae53-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="717a8-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="717a8-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2ae53-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="2ae53-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="717a8-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="717a8-122">Request headers</span></span>
 
-| <span data-ttu-id="2ae53-123">名称</span><span class="sxs-lookup"><span data-stu-id="2ae53-123">Name</span></span>                     | <span data-ttu-id="2ae53-124">说明</span><span class="sxs-lookup"><span data-stu-id="2ae53-124">Description</span></span>                                       |
+| <span data-ttu-id="717a8-123">名称</span><span class="sxs-lookup"><span data-stu-id="717a8-123">Name</span></span>                     | <span data-ttu-id="717a8-124">说明</span><span class="sxs-lookup"><span data-stu-id="717a8-124">Description</span></span>                                       |
 |:-------------------------|:--------------------------------------------------|
-| <span data-ttu-id="2ae53-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="2ae53-125">Authorization</span></span>            | <span data-ttu-id="2ae53-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2ae53-p103">Bearer {token}. Required.</span></span>                         |
-| <span data-ttu-id="2ae53-128">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="2ae53-128">Prefer: outlook.timezone</span></span> | <span data-ttu-id="2ae53-129">指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。</span><span class="sxs-lookup"><span data-stu-id="2ae53-129">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="2ae53-130">可选。</span><span class="sxs-lookup"><span data-stu-id="2ae53-130">Optional.</span></span> |
+| <span data-ttu-id="717a8-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="717a8-125">Authorization</span></span>            | <span data-ttu-id="717a8-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="717a8-p103">Bearer {token}. Required.</span></span>                         |
+| <span data-ttu-id="717a8-128">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="717a8-128">Prefer: outlook.timezone</span></span> | <span data-ttu-id="717a8-129">指定响应中时间属性的时区，如果未指定此标头，则其时区为 UTC。</span><span class="sxs-lookup"><span data-stu-id="717a8-129">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="717a8-130">可选。</span><span class="sxs-lookup"><span data-stu-id="717a8-130">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2ae53-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="2ae53-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="717a8-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="717a8-131">Request body</span></span>
 
-<span data-ttu-id="2ae53-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2ae53-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="717a8-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="717a8-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2ae53-133">响应</span><span class="sxs-lookup"><span data-stu-id="2ae53-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="717a8-133">响应</span><span class="sxs-lookup"><span data-stu-id="717a8-133">Response</span></span>
 
-<span data-ttu-id="2ae53-134">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [outlookTask](../resources/outlooktask.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2ae53-134">If successful, this method returns a `200 OK` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
+<span data-ttu-id="717a8-134">如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [outlookTask](../resources/outlooktask.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="717a8-134">If successful, this method returns a `200 OK` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2ae53-135">示例</span><span class="sxs-lookup"><span data-stu-id="2ae53-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="717a8-135">示例</span><span class="sxs-lookup"><span data-stu-id="717a8-135">Examples</span></span>
 
-### <a name="example-1-get-an-outlook-task"></a><span data-ttu-id="2ae53-136">示例1：获取 Outlook 任务</span><span class="sxs-lookup"><span data-stu-id="2ae53-136">Example 1: Get an Outlook task</span></span>
+### <a name="example-1-get-an-outlook-task"></a><span data-ttu-id="717a8-136">示例 1：获取 Outlook 任务</span><span class="sxs-lookup"><span data-stu-id="717a8-136">Example 1: Get an Outlook task</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2ae53-137">请求</span><span class="sxs-lookup"><span data-stu-id="2ae53-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="717a8-137">请求</span><span class="sxs-lookup"><span data-stu-id="717a8-137">Request</span></span>
 
-<span data-ttu-id="2ae53-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2ae53-138">Here is an example of the request.</span></span>
+<span data-ttu-id="717a8-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="717a8-138">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2ae53-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="2ae53-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="717a8-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="717a8-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask"
+  "name": "get_outlooktask_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 ```
-# <a name="c"></a>[<span data-ttu-id="2ae53-140">C#</span><span class="sxs-lookup"><span data-stu-id="2ae53-140">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="717a8-140">C#</span><span class="sxs-lookup"><span data-stu-id="717a8-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2ae53-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2ae53-141">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="717a8-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="717a8-141">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2ae53-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2ae53-142">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="717a8-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="717a8-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2ae53-143">Java</span><span class="sxs-lookup"><span data-stu-id="2ae53-143">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="717a8-143">Java</span><span class="sxs-lookup"><span data-stu-id="717a8-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -101,11 +101,11 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 <!-- markdownlint-disable MD024 -->
 
-#### <a name="response"></a><span data-ttu-id="2ae53-144">响应</span><span class="sxs-lookup"><span data-stu-id="2ae53-144">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="717a8-144">响应</span><span class="sxs-lookup"><span data-stu-id="717a8-144">Response</span></span>
 
-<span data-ttu-id="2ae53-145">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2ae53-145">Here is an example of the response.</span></span> <span data-ttu-id="2ae53-146">默认情况下，响应中的 date-time 属性采用的是 UTC。</span><span class="sxs-lookup"><span data-stu-id="2ae53-146">By default, the date-time properties in the response are in UTC.</span></span>
+<span data-ttu-id="717a8-145">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="717a8-145">Here is an example of the response.</span></span> <span data-ttu-id="717a8-146">默认情况下，响应中的 date-time 属性采用的是 UTC。</span><span class="sxs-lookup"><span data-stu-id="717a8-146">By default, the date-time properties in the response are in UTC.</span></span>
 
-> <span data-ttu-id="2ae53-147">**注意：** 为简洁起见，可能会截断此处展示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="2ae53-147">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="2ae53-148">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2ae53-148">All of the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="717a8-147">**注意：** 为简洁起见，可能会截断此处展示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="717a8-147">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="717a8-148">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="717a8-148">All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -150,47 +150,47 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a><span data-ttu-id="2ae53-149">示例2：在太平洋标准时间内使用日期时间属性获取 Outlook 任务</span><span class="sxs-lookup"><span data-stu-id="2ae53-149">Example 2: Get Outlook task with date-time properties in Pacific Standard Time</span></span>
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a><span data-ttu-id="717a8-149">示例 2：获取具有太平洋标准时间的日期时间属性的 Outlook 任务</span><span class="sxs-lookup"><span data-stu-id="717a8-149">Example 2: Get Outlook task with date-time properties in Pacific Standard Time</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2ae53-150">请求</span><span class="sxs-lookup"><span data-stu-id="2ae53-150">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="717a8-150">请求</span><span class="sxs-lookup"><span data-stu-id="717a8-150">Request</span></span>
 
-<span data-ttu-id="2ae53-151">此示例使用 `Prefer: outlook.timezone` 标头来指定 API 应在太平洋标准时间的响应中返回日期时间属性。</span><span class="sxs-lookup"><span data-stu-id="2ae53-151">This example uses the `Prefer: outlook.timezone` header to specify that the API should return date-time properties in the response in Pacific Standard Time.</span></span>
+<span data-ttu-id="717a8-151">此示例使用 标头指定 API 应在太平洋标准时间的响应中返回 `Prefer: outlook.timezone` 日期时间属性。</span><span class="sxs-lookup"><span data-stu-id="717a8-151">This example uses the `Prefer: outlook.timezone` header to specify that the API should return date-time properties in the response in Pacific Standard Time.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2ae53-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="2ae53-152">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="717a8-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="717a8-152">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask"
+  "name": "get_outlooktask_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
-# <a name="c"></a>[<span data-ttu-id="2ae53-153">C#</span><span class="sxs-lookup"><span data-stu-id="2ae53-153">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="717a8-153">C#</span><span class="sxs-lookup"><span data-stu-id="717a8-153">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2ae53-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2ae53-154">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="717a8-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="717a8-154">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2ae53-155">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2ae53-155">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="717a8-155">Objective-C</span><span class="sxs-lookup"><span data-stu-id="717a8-155">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2ae53-156">Java</span><span class="sxs-lookup"><span data-stu-id="2ae53-156">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="717a8-156">Java</span><span class="sxs-lookup"><span data-stu-id="717a8-156">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="2ae53-157">响应</span><span class="sxs-lookup"><span data-stu-id="2ae53-157">Response</span></span>
+### <a name="response"></a><span data-ttu-id="717a8-157">响应</span><span class="sxs-lookup"><span data-stu-id="717a8-157">Response</span></span>
 
-<span data-ttu-id="2ae53-158">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2ae53-158">Here is an example of the response.</span></span> <span data-ttu-id="2ae53-159">响应中的日期-时间属性以指定的太平洋标准时间返回。</span><span class="sxs-lookup"><span data-stu-id="2ae53-159">The date-time properties in the response are returned in the specified Pacific Standard Time.</span></span>
+<span data-ttu-id="717a8-158">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="717a8-158">Here is an example of the response.</span></span> <span data-ttu-id="717a8-159">响应中的日期时间属性以指定的太平洋标准时间返回。</span><span class="sxs-lookup"><span data-stu-id="717a8-159">The date-time properties in the response are returned in the specified Pacific Standard Time.</span></span>
 
-> <span data-ttu-id="2ae53-160">**注意：** 为简洁起见，可能会截断此处展示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="2ae53-160">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="2ae53-161">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2ae53-161">All of the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="717a8-160">**注意：** 为简洁起见，可能会截断此处展示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="717a8-160">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="717a8-161">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="717a8-161">All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

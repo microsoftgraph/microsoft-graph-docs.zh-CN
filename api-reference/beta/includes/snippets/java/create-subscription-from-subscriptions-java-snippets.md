@@ -1,21 +1,21 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f78a657a602b990667e62df6fb454a6d54b3433b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 632c25635c61c1248fea4797ffee892e8e6f87a5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972024"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970864"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Subscription subscription = new Subscription();
 subscription.changeType = "created";
 subscription.notificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient";
 subscription.resource = "me/mailFolders('Inbox')/messages";
-subscription.expirationDateTime = CalendarSerializer.deserialize("2016-11-20T18:23:45.9356913Z");
+subscription.expirationDateTime = OffsetDateTimeSerializer.deserialize("2016-11-20T18:23:45.9356913Z");
 subscription.clientState = "secretClientValue";
 subscription.latestSupportedTlsVersion = "v1_2";
 

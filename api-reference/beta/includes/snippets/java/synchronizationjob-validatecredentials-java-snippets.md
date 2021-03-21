@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8a690b15c73c05b5391b878134d0ac9c3866cd04
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fff12ef7a7ddcd44f26e77754deb02fdb248291b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979934"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970018"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<SynchronizationSecretKeyStringValuePair> credentialsList = new LinkedList<SynchronizationSecretKeyStringValuePair>();
 SynchronizationSecretKeyStringValuePair credentials = new SynchronizationSecretKeyStringValuePair();
@@ -24,7 +24,13 @@ credentials1.value = "password-value";
 credentialsList.add(credentials1);
 
 graphClient.servicePrincipals("{id}").synchronization().jobs("{id}")
-    .validateCredentials(null,null,null,credentialsList)
+    .validateCredentials(SynchronizationJobValidateCredentialsParameterSet
+        .newBuilder()
+        .withApplicationIdentifier(null)
+        .withTemplateId(null)
+        .withUseSavedCredentials(null)
+        .withCredentials(credentialsList)
+        .build())
     .buildRequest()
     .post();
 
