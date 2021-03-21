@@ -1,35 +1,35 @@
 ---
-title: 获取 shift
-description: 按 ID 获取 shift。
+title: 获取班次
+description: 按 ID 获取班次。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d0044a174c9983bf21a696a428d458dd04cc0cc9
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: be1d3e31d84db29df2e1fe159ff6ff9962d036ee
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315561"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954782"
 ---
-# <a name="get-shift"></a><span data-ttu-id="82f5a-103">获取 shift</span><span class="sxs-lookup"><span data-stu-id="82f5a-103">Get shift</span></span>
+# <a name="get-shift"></a><span data-ttu-id="b9bb8-103">获取班次</span><span class="sxs-lookup"><span data-stu-id="b9bb8-103">Get shift</span></span>
 
-<span data-ttu-id="82f5a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="82f5a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b9bb8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b9bb8-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="82f5a-105">按 ID 检索 [shift](../resources/shift.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="82f5a-105">Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.</span></span>
+<span data-ttu-id="b9bb8-105">按 ID 检索 [shift](../resources/shift.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-105">Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="82f5a-106">权限</span><span class="sxs-lookup"><span data-stu-id="82f5a-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b9bb8-106">权限</span><span class="sxs-lookup"><span data-stu-id="b9bb8-106">Permissions</span></span>
 
-<span data-ttu-id="82f5a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="82f5a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b9bb8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-| <span data-ttu-id="82f5a-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="82f5a-109">Permission type</span></span>                        | <span data-ttu-id="82f5a-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="82f5a-110">Permissions (from least to most privileged)</span></span>                                    |
+| <span data-ttu-id="b9bb8-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b9bb8-109">Permission type</span></span>                        | <span data-ttu-id="b9bb8-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b9bb8-110">Permissions (from least to most privileged)</span></span>                                    |
 |:---------------------------------------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="82f5a-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="82f5a-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="82f5a-112">请参阅 all、Group、Group. all、Schedule、Group、Group。所有</span><span class="sxs-lookup"><span data-stu-id="82f5a-112">Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="82f5a-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="82f5a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82f5a-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="82f5a-114">Not supported.</span></span>                                                                 |
-| <span data-ttu-id="82f5a-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="82f5a-115">Application</span></span>                            | <span data-ttu-id="82f5a-116">Schedule. All、Schedule、All</span><span class="sxs-lookup"><span data-stu-id="82f5a-116">Schedule.Read.All, Schedule.ReadWrite.All</span></span>                                      |
+| <span data-ttu-id="b9bb8-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b9bb8-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="b9bb8-112">Schedule.Read.All、Group.Read.All、Schedule.ReadWrite.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9bb8-112">Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="b9bb8-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b9bb8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9bb8-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-114">Not supported.</span></span>                                                                 |
+| <span data-ttu-id="b9bb8-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="b9bb8-115">Application</span></span>                            | <span data-ttu-id="b9bb8-116">Schedule.Read.All、Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9bb8-116">Schedule.Read.All, Schedule.ReadWrite.All</span></span>                                      |
 
-## <a name="http-request"></a><span data-ttu-id="82f5a-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="82f5a-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b9bb8-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b9bb8-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,62 +37,62 @@ ms.locfileid: "48315561"
 GET /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="82f5a-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="82f5a-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b9bb8-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b9bb8-118">Optional query parameters</span></span>
 
-<span data-ttu-id="82f5a-119">此方法不支持 OData 查询参数来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="82f5a-119">This method does not support OData query parameters to customize the response.</span></span>
+<span data-ttu-id="b9bb8-119">此方法不支持使用 OData 查询参数自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-119">This method does not support OData query parameters to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="82f5a-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="82f5a-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b9bb8-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="b9bb8-120">Request headers</span></span>
 
-| <span data-ttu-id="82f5a-121">标头</span><span class="sxs-lookup"><span data-stu-id="82f5a-121">Header</span></span>       | <span data-ttu-id="82f5a-122">值</span><span class="sxs-lookup"><span data-stu-id="82f5a-122">Value</span></span> |
+| <span data-ttu-id="b9bb8-121">标头</span><span class="sxs-lookup"><span data-stu-id="b9bb8-121">Header</span></span>       | <span data-ttu-id="b9bb8-122">值</span><span class="sxs-lookup"><span data-stu-id="b9bb8-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="82f5a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="82f5a-123">Authorization</span></span>  | <span data-ttu-id="82f5a-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="82f5a-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b9bb8-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b9bb8-123">Authorization</span></span>  | <span data-ttu-id="b9bb8-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="82f5a-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="82f5a-126">Request body</span></span>
-<span data-ttu-id="82f5a-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="82f5a-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b9bb8-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="b9bb8-126">Request body</span></span>
+<span data-ttu-id="b9bb8-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="82f5a-128">响应</span><span class="sxs-lookup"><span data-stu-id="82f5a-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b9bb8-128">响应</span><span class="sxs-lookup"><span data-stu-id="b9bb8-128">Response</span></span>
 
-<span data-ttu-id="82f5a-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [shift](../resources/shift.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="82f5a-129">If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
+<span data-ttu-id="b9bb8-129">如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [shift](../resources/shift.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-129">If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="82f5a-130">示例</span><span class="sxs-lookup"><span data-stu-id="82f5a-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b9bb8-130">示例</span><span class="sxs-lookup"><span data-stu-id="b9bb8-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="82f5a-131">请求</span><span class="sxs-lookup"><span data-stu-id="82f5a-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b9bb8-131">请求</span><span class="sxs-lookup"><span data-stu-id="b9bb8-131">Request</span></span>
 
-<span data-ttu-id="82f5a-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="82f5a-132">The following is an example of the request.</span></span>
+<span data-ttu-id="b9bb8-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="82f5a-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="82f5a-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b9bb8-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9bb8-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "shift-get-1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 ```
-# <a name="c"></a>[<span data-ttu-id="82f5a-134">C#</span><span class="sxs-lookup"><span data-stu-id="82f5a-134">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="b9bb8-134">C#</span><span class="sxs-lookup"><span data-stu-id="b9bb8-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="82f5a-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="82f5a-135">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="b9bb8-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9bb8-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="82f5a-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="82f5a-136">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="b9bb8-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9bb8-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="82f5a-137">Java</span><span class="sxs-lookup"><span data-stu-id="82f5a-137">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="b9bb8-137">Java</span><span class="sxs-lookup"><span data-stu-id="b9bb8-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shift-get-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ---
 
-### <a name="response"></a><span data-ttu-id="82f5a-138">响应</span><span class="sxs-lookup"><span data-stu-id="82f5a-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b9bb8-138">响应</span><span class="sxs-lookup"><span data-stu-id="b9bb8-138">Response</span></span>
 
-<span data-ttu-id="82f5a-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="82f5a-139">The following is an example of the response.</span></span>
+<span data-ttu-id="b9bb8-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-139">The following is an example of the response.</span></span>
 
-><span data-ttu-id="82f5a-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="82f5a-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="b9bb8-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b9bb8-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

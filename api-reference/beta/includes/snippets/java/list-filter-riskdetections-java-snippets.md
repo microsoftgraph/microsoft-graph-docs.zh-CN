@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 595a3d3ec94b9c772b0304598009cb96a6561042
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e9e6a30e58876c5ccf23c3506b9df38a02b3bbed
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977689"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955513"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IRiskDetectionCollectionPage riskDetections = graphClient.identityProtection().riskDetections()
+RiskDetectionCollectionPage riskDetections = graphClient.identityProtection().riskDetections()
     .buildRequest()
     .filter("riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'")
     .get();

@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 99b29291914847f0a7c4034e891b2abb34ecaf88
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8e1bf3b3d59596c6383688d57bf33ff3063694ab
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976904"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50969285"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OnPremisesAgentGroup onPremisesAgentGroup = new OnPremisesAgentGroup();
 onPremisesAgentGroup.displayName = "Group New Name";
