@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 82c23195ea91c71f15e05cb575557ec413a48089
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 214be5b38ec95f6deca76a0a58a7eaf067074adf
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980035"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50981098"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
 message.subject = "9/9/2018: concert";
@@ -36,7 +36,11 @@ internetMessageHeadersList.add(internetMessageHeaders1);
 message.internetMessageHeaders = internetMessageHeadersList;
 
 graphClient.me()
-    .sendMail(message,null)
+    .sendMail(UserSendMailParameterSet
+        .newBuilder()
+        .withMessage(message)
+        .withSaveToSentItems(null)
+        .build())
     .buildRequest()
     .post();
 

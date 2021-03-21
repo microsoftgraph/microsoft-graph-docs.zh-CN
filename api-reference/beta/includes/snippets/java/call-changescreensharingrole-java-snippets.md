@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 18a9b1396c5f0d3aea0025d2d995171c9f14f63b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: af8f85aabbba5dde8b0a93f4ee4f0a1d6d95e43d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959773"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50979707"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ScreenSharingRole role = ScreenSharingRole.VIEWER;
 
 graphClient.communications().calls("{id}")
-    .changeScreenSharingRole(role)
+    .changeScreenSharingRole(CallChangeScreenSharingRoleParameterSet
+        .newBuilder()
+        .withRole(role)
+        .build())
     .buildRequest()
     .post();
 

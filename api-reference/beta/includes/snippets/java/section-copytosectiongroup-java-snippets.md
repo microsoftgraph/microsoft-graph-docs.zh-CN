@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 31d7db2f8e4dc3f0b6eb0154b3665749d25c9b93
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7fea2e7485f45596ea1694edf3e2ff42684e0116
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979543"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50981008"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String id = "id-value";
 
@@ -18,7 +18,14 @@ String groupId = "groupId-value";
 String renameAs = "renameAs-value";
 
 graphClient.me().onenote().sections("{id}")
-    .copyToSectionGroup(id,groupId,renameAs,null,null)
+    .copyToSectionGroup(OnenoteSectionCopyToSectionGroupParameterSet
+        .newBuilder()
+        .withId(id)
+        .withGroupId(groupId)
+        .withRenameAs(renameAs)
+        .withSiteCollectionId(null)
+        .withSiteId(null)
+        .build())
     .buildRequest()
     .post();
 
