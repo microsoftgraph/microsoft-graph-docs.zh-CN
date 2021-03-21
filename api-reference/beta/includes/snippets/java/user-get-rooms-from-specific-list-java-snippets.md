@@ -1,18 +1,21 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c44638a4fe745de1d579b2f1ca3afe61e3568dbf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0a65078cd38656fee3d2f83c241029441bd07b0d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970097"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50971846"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IUserFindRoomsCollectionPage findRooms = graphClient.me()
-    .findRooms("Building2Rooms@contoso.onmicrosoft.com")
+UserFindRoomsCollectionPage findRooms = graphClient.me()
+    .findRooms(UserFindRoomsParameterSet
+        .newBuilder()
+        .withRoomList("Building2Rooms@contoso.onmicrosoft.com")
+        .build())
     .buildRequest()
     .get();
 

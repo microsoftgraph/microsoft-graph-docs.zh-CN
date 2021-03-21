@@ -1,34 +1,34 @@
 ---
 title: removeContentFooterAction 资源类型
-description: 表示一个操作，该操作指定要从信息中删除的内容页脚的详细信息（如果适用）。
+description: 表示一个操作，指定要从信息中删除的内容页脚的详细信息（如果适用）。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 76450b0d6b0f3a532a4e3472d2ce99ead8c933e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e8de130b2ad346e8e1fee2077014eda9e9b94d5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073444"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962071"
 ---
-# <a name="removecontentfooteraction-resource-type"></a><span data-ttu-id="d2b7f-103">removeContentFooterAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="d2b7f-103">removeContentFooterAction resource type</span></span>
+# <a name="removecontentfooteraction-resource-type"></a><span data-ttu-id="24b0a-103">removeContentFooterAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="24b0a-103">removeContentFooterAction resource type</span></span>
 
-<span data-ttu-id="d2b7f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d2b7f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="24b0a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="24b0a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d2b7f-105">表示一个操作，该操作指定要从信息中删除的内容页脚的详细信息（如果适用）。</span><span class="sxs-lookup"><span data-stu-id="d2b7f-105">Represents an action that specifies the details on the content footer to be removed from the information, if applicable.</span></span> <span data-ttu-id="d2b7f-106">如果由于更新或删除标签而要删除页脚， [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或 [EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回 **removeContentFooterAction** 。</span><span class="sxs-lookup"><span data-stu-id="d2b7f-106">The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) APIs may return the **removeContentFooterAction** if the footer is to be removed as a result of updating or removing the label.</span></span> <span data-ttu-id="d2b7f-107">该操作指示使用应用程序移除包含之前适用的内容页脚的特定 UI 元素。</span><span class="sxs-lookup"><span data-stu-id="d2b7f-107">The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content footer.</span></span>
+<span data-ttu-id="24b0a-105">表示一个操作，指定要从信息中删除的内容页脚的详细信息（如果适用）。</span><span class="sxs-lookup"><span data-stu-id="24b0a-105">Represents an action that specifies the details on the content footer to be removed from the information, if applicable.</span></span> <span data-ttu-id="24b0a-106">如果由于更新或删除标签而删除页脚，则 evaluateApplication、evaluateClassificationResults 或 [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) API 可能会返回 **removeContentFooterAction。** [](../api/informationprotectionlabel-evaluateApplication.md) [](../api/informationprotectionlabel-evaluateclassificationresults.md)</span><span class="sxs-lookup"><span data-stu-id="24b0a-106">The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) APIs may return the **removeContentFooterAction** if the footer is to be removed as a result of updating or removing the label.</span></span> <span data-ttu-id="24b0a-107">此操作指示使用应用程序删除包含以前适用的内容页脚的特定 UI 元素。</span><span class="sxs-lookup"><span data-stu-id="24b0a-107">The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content footer.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d2b7f-108">属性</span><span class="sxs-lookup"><span data-stu-id="d2b7f-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="24b0a-108">属性</span><span class="sxs-lookup"><span data-stu-id="24b0a-108">Properties</span></span>
 
-| <span data-ttu-id="d2b7f-109">属性</span><span class="sxs-lookup"><span data-stu-id="d2b7f-109">Property</span></span>       | <span data-ttu-id="d2b7f-110">类型</span><span class="sxs-lookup"><span data-stu-id="d2b7f-110">Type</span></span>              | <span data-ttu-id="d2b7f-111">说明</span><span class="sxs-lookup"><span data-stu-id="d2b7f-111">Description</span></span>                                                |
+| <span data-ttu-id="24b0a-109">属性</span><span class="sxs-lookup"><span data-stu-id="24b0a-109">Property</span></span>       | <span data-ttu-id="24b0a-110">类型</span><span class="sxs-lookup"><span data-stu-id="24b0a-110">Type</span></span>              | <span data-ttu-id="24b0a-111">说明</span><span class="sxs-lookup"><span data-stu-id="24b0a-111">Description</span></span>                                                |
 | :------------- | :---------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="d2b7f-112">uiElementNames</span><span class="sxs-lookup"><span data-stu-id="d2b7f-112">uiElementNames</span></span> | <span data-ttu-id="d2b7f-113">String 集合</span><span class="sxs-lookup"><span data-stu-id="d2b7f-113">String collection</span></span> | <span data-ttu-id="d2b7f-114">要删除的页脚的 UI 元素的名称。</span><span class="sxs-lookup"><span data-stu-id="d2b7f-114">The name of the UI element of the footer to be removed.</span></span> |
+| <span data-ttu-id="24b0a-112">uiElementNames</span><span class="sxs-lookup"><span data-stu-id="24b0a-112">uiElementNames</span></span> | <span data-ttu-id="24b0a-113">String collection</span><span class="sxs-lookup"><span data-stu-id="24b0a-113">String collection</span></span> | <span data-ttu-id="24b0a-114">要删除的页脚的 UI 元素的名称。</span><span class="sxs-lookup"><span data-stu-id="24b0a-114">The name of the UI element of the footer to be removed.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="d2b7f-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d2b7f-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="24b0a-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="24b0a-115">JSON representation</span></span>
 
-<span data-ttu-id="d2b7f-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d2b7f-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="24b0a-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="24b0a-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

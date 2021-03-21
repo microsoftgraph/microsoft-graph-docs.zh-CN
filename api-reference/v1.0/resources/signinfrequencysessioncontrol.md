@@ -1,38 +1,38 @@
 ---
 title: signInFrequencySessionControl 资源类型
-description: 强制登录频率的会话控制。
+description: 强制执行登录频率的会话控制。
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4a89a9337bc032210873de3ceb05949f935693f1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 15255f44971694ff2b815e8f49e1800b91502af3
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137121"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961928"
 ---
-# <a name="signinfrequencysessioncontrol-resource-type"></a><span data-ttu-id="407fa-103">signInFrequencySessionControl 资源类型</span><span class="sxs-lookup"><span data-stu-id="407fa-103">signInFrequencySessionControl resource type</span></span>
+# <a name="signinfrequencysessioncontrol-resource-type"></a><span data-ttu-id="60739-103">signInFrequencySessionControl 资源类型</span><span class="sxs-lookup"><span data-stu-id="60739-103">signInFrequencySessionControl resource type</span></span>
 
-<span data-ttu-id="407fa-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="407fa-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="60739-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="60739-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="407fa-105">强制登录频率的会话控制。</span><span class="sxs-lookup"><span data-stu-id="407fa-105">Session control to enforce sign-in frequency.</span></span> <span data-ttu-id="407fa-106">继承自 [条件访问会话控件](conditionalaccesssessioncontrol.md)。</span><span class="sxs-lookup"><span data-stu-id="407fa-106">Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).</span></span>
+<span data-ttu-id="60739-105">强制执行登录频率的会话控制。</span><span class="sxs-lookup"><span data-stu-id="60739-105">Session control to enforce sign-in frequency.</span></span> <span data-ttu-id="60739-106">继承自 [条件访问会话控件](conditionalaccesssessioncontrol.md)。</span><span class="sxs-lookup"><span data-stu-id="60739-106">Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="407fa-107">属性</span><span class="sxs-lookup"><span data-stu-id="407fa-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="60739-107">属性</span><span class="sxs-lookup"><span data-stu-id="60739-107">Properties</span></span>
 
-| <span data-ttu-id="407fa-108">属性</span><span class="sxs-lookup"><span data-stu-id="407fa-108">Property</span></span>     | <span data-ttu-id="407fa-109">类型</span><span class="sxs-lookup"><span data-stu-id="407fa-109">Type</span></span>        | <span data-ttu-id="407fa-110">说明</span><span class="sxs-lookup"><span data-stu-id="407fa-110">Description</span></span> |
+| <span data-ttu-id="60739-108">属性</span><span class="sxs-lookup"><span data-stu-id="60739-108">Property</span></span>     | <span data-ttu-id="60739-109">类型</span><span class="sxs-lookup"><span data-stu-id="60739-109">Type</span></span>        | <span data-ttu-id="60739-110">说明</span><span class="sxs-lookup"><span data-stu-id="60739-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="407fa-111">isEnabled</span><span class="sxs-lookup"><span data-stu-id="407fa-111">isEnabled</span></span>     |<span data-ttu-id="407fa-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="407fa-112">Boolean</span></span>      | <span data-ttu-id="407fa-113">指定是否启用会话控件。</span><span class="sxs-lookup"><span data-stu-id="407fa-113">Specifies whether the session control is enabled.</span></span> |
-|<span data-ttu-id="407fa-114">type</span><span class="sxs-lookup"><span data-stu-id="407fa-114">type</span></span>          |<span data-ttu-id="407fa-115">String</span><span class="sxs-lookup"><span data-stu-id="407fa-115">String</span></span>       | <span data-ttu-id="407fa-116">可取值为：`days`、`hours`。</span><span class="sxs-lookup"><span data-stu-id="407fa-116">Possible values are: `days`, `hours`.</span></span>|
-|<span data-ttu-id="407fa-117">值</span><span class="sxs-lookup"><span data-stu-id="407fa-117">value</span></span>         |<span data-ttu-id="407fa-118">Int32</span><span class="sxs-lookup"><span data-stu-id="407fa-118">Int32</span></span>        | <span data-ttu-id="407fa-119">或 `days` 的编号 `hours` 。</span><span class="sxs-lookup"><span data-stu-id="407fa-119">The number of `days` or `hours`.</span></span>|
+|<span data-ttu-id="60739-111">isEnabled</span><span class="sxs-lookup"><span data-stu-id="60739-111">isEnabled</span></span>     |<span data-ttu-id="60739-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="60739-112">Boolean</span></span>      | <span data-ttu-id="60739-113">指定是否启用会话控件。</span><span class="sxs-lookup"><span data-stu-id="60739-113">Specifies whether the session control is enabled.</span></span> |
+|<span data-ttu-id="60739-114">type</span><span class="sxs-lookup"><span data-stu-id="60739-114">type</span></span>          |<span data-ttu-id="60739-115">signinFrequencyType</span><span class="sxs-lookup"><span data-stu-id="60739-115">signinFrequencyType</span></span>| <span data-ttu-id="60739-116">可取值为：`days`、`hours`。</span><span class="sxs-lookup"><span data-stu-id="60739-116">Possible values are: `days`, `hours`.</span></span>|
+|<span data-ttu-id="60739-117">值</span><span class="sxs-lookup"><span data-stu-id="60739-117">value</span></span>         |<span data-ttu-id="60739-118">Int32</span><span class="sxs-lookup"><span data-stu-id="60739-118">Int32</span></span>        | <span data-ttu-id="60739-119">或 `days` 的编号 `hours` 。</span><span class="sxs-lookup"><span data-stu-id="60739-119">The number of `days` or `hours`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="407fa-120">关系</span><span class="sxs-lookup"><span data-stu-id="407fa-120">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="60739-120">关系</span><span class="sxs-lookup"><span data-stu-id="60739-120">Relationships</span></span>
 
-<span data-ttu-id="407fa-121">无。</span><span class="sxs-lookup"><span data-stu-id="407fa-121">None.</span></span>
+<span data-ttu-id="60739-121">无。</span><span class="sxs-lookup"><span data-stu-id="60739-121">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="407fa-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="407fa-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="60739-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="60739-122">JSON representation</span></span>
 
-<span data-ttu-id="407fa-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="407fa-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="60739-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="60739-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
