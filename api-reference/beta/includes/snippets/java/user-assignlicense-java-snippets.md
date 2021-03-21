@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1b40ef8e56417bfc8e1405cc277d8c91c5cb45fc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c0b7a0ae373f9f861daef2e718548fcba6b58888
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976624"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50977576"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<AssignedLicense> addLicensesList = new LinkedList<AssignedLicense>();
 AssignedLicense addLicenses = new AssignedLicense();
@@ -30,7 +30,11 @@ addLicensesList.add(addLicenses1);
 LinkedList<UUID> removeLicensesList = new LinkedList<UUID>();
 
 graphClient.me()
-    .assignLicense(addLicensesList,removeLicensesList)
+    .assignLicense(UserAssignLicenseParameterSet
+        .newBuilder()
+        .withAddLicenses(addLicensesList)
+        .withRemoveLicenses(removeLicensesList)
+        .build())
     .buildRequest()
     .post();
 

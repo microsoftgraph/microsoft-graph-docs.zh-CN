@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 34d981567da4b079fe01c5f9be392903cf302f6f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0e3f5bf6b1d7eb0dc7dfdc75a4f74845e352db10
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978002"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50979035"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OutlookTaskGroup outlookTaskGroup = new OutlookTaskGroup();
 outlookTaskGroup.name = "Personal Tasks";
