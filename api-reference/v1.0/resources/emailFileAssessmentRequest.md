@@ -3,14 +3,14 @@ title: emailFileAssessmentRequest 资源类型
 description: 用于创建和检索电子邮件文件威胁评估。
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 956097a95016ce24d0935dea7f770476499052f2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 707cc20666df8d225e0e2f0853cf47cb9b6352c4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721990"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959303"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>emailFileAssessmentRequest 资源类型
 
@@ -29,15 +29,15 @@ ms.locfileid: "50721990"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|contentData|字符串|Base64 编码的 .eml 电子邮件文件内容。 文件内容无法取回，因为它未存储。|
+|contentData|String|Base64 编码的 .eml 电子邮件文件内容。 文件内容无法取回，因为它未存储。|
 |destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|邮件路由到目标的原因。 可能的值是 `none` `mailFlowRule` `safeSender` ：、、、、、、、、、、 `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` 。|
-|recipientEmail|字符串|其策略用于评估邮件的邮件收件人。|
+|recipientEmail|String|其策略用于评估邮件的邮件收件人。|
 |“类别”|[threatCategory](enums.md#threatcategory-values)|威胁类别。 可取值为：`spam`、`phishing`、`malware`。|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|威胁评估的内容类型。 可取值为：`mail`、`url`、`file`。|
 |createdBy|[identitySet](identityset.md)|威胁评估请求创建者。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|提交者的预期评估。 可能的值是：`block`、`unblock`。|
-|id|字符串|威胁评估请求 ID 是 GUID (全局唯一) 。|
+|id|String|威胁评估请求 ID 是 GUID (全局唯一) 。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
 |状态|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
 

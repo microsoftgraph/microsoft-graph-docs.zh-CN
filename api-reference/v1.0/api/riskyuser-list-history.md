@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4115251bbc9644e4f3beb5fdf0ddea0437f6d594
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fb7f5d900ad66a56421db7b0cbf6161aaa0cf460
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448065"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959429"
 ---
 # <a name="list-history"></a>列表历史记录
 命名空间：microsoft.graph
@@ -50,14 +50,14 @@ GET /identityProtection/riskyUsers/{riskyUserId}/history/{riskyUserHistoryItemId
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuserhistoryitem"
+  "name": "get_riskyuserhistoryitem_2"
 }
 -->
 ``` http

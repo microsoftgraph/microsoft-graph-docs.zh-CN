@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 187e88739fc569bba49460c7b278ba7509dc4c2b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dba792f68284acb6db514af88d999d91c83af9ba
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50768722"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959557"
 ---
 # <a name="list-monthlyprintusagebyuser"></a>列出 monthlyPrintUsageByUser
 命名空间：microsoft.graph
@@ -62,26 +62,26 @@ GET /reports/monthlyPrintUsageByUser
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_printusagebyuser"
+  "name": "list_printusagebyuser_2"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/reports/monthlyPrintUsageByUser
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-printusagebyuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printusagebyuser-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-printusagebyuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printusagebyuser-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-printusagebyuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printusagebyuser-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-printusagebyuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-printusagebyuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

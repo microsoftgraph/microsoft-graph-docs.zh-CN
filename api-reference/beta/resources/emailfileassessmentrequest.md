@@ -3,14 +3,14 @@ title: emailFileAssessmentRequest 资源类型
 description: 用于创建和检索电子邮件文件威胁评估。
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0e01d1d475d8480285400db214f85e7f1d988edc
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 77c95b18056487f94a5cb75b946d0ee8f75e46f8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719995"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960444"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>emailFileAssessmentRequest 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50719995"
 
 电子邮件文件可以是 .eml 文件类型。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -34,7 +34,7 @@ ms.locfileid: "50719995"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |contentData|String|Base64 编码的 .eml 电子邮件文件内容。 文件内容无法取回，因为它未存储。|
-|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|邮件路由到其目标的原因。 可能的值是： `none` ， ， ， ， ， ， ， `mailFlowRule` `safeSender` `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` 。|
+|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|邮件路由到目标的原因。 可能的值是 `none` `mailFlowRule` `safeSender` ：、、、、、、、、、、 `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` 。|
 |recipientEmail|String|其策略用于评估邮件的邮件收件人。|
 |“类别”|[threatCategory](enums.md#threatcategory-values)|威胁类别。 可取值为：`spam`、`phishing`、`malware`。|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|威胁评估的内容类型。 可取值为：`mail`、`url`、`file`。|
@@ -49,7 +49,7 @@ ms.locfileid: "50719995"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下，除非 `GET /threatAssessmentRequests/{id}` 应用此属性，否则不会返回 `$expand` 此属性。|
+|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下， `GET /threatAssessmentRequests/{id}` 除非对该属性应用 ，否则 不会返回 `$expand` 此属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

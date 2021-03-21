@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4f193cafab8ee5940e8ea1f300596f07dd9c7fcf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5db1a2d87c5e742df359abc7bfeaa0aeb62ae032
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981131"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50981536"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<WorkbookSortField> fieldsList = new LinkedList<WorkbookSortField>();
 WorkbookSortField fields = new WorkbookSortField();
@@ -35,7 +35,14 @@ String method = "method-value";
 
 graphClient.me().drive().items("{id}").workbook().names("{name}")
     .range().sort()
-    .apply(fieldsList,matchCase,hasHeaders,orientation,method)
+    .apply(WorkbookRangeSortApplyParameterSet
+        .newBuilder()
+        .withFields(fieldsList)
+        .withMatchCase(matchCase)
+        .withHasHeaders(hasHeaders)
+        .withOrientation(orientation)
+        .withMethod(method)
+        .build())
     .buildRequest()
     .post();
 

@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ded8ac4a0b55d189e4695b6f458adc78b5faf7b9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 117ca62f0684eb1fd0f3747b8da40ec7cdb33783
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440106"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959534"
 ---
 # <a name="get-riskdetection"></a>获取 riskDetection
 命名空间：microsoft.graph
@@ -52,14 +52,14 @@ GET /identityProtection/riskDetections/{riskDetectionId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskDetection](../resources/riskdetection.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [riskDetection](../resources/riskdetection.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
-  "name": "get_riskdetection"
+  "name": "get_riskdetection_1"
 }
 -->
 ``` http

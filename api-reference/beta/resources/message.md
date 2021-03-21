@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: dcabaa9fdf9429b7f0b7a0346fee6281d73e9629
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a74d4fb6411c1684528b6b36315782bb52373b19
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720660"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960409"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -111,8 +111,8 @@ ms.locfileid: "50720660"
 |发件人|[recipient](recipient.md)|发送邮件邮箱的所有者。 在多数情况中，此数值与“**发件人**”属性相同，但共享或委派情景除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。 |
 |id|String| 邮件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
-|importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
-|inferenceClassification|String| 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused`、`other`。|
+|importance|importance| 邮件的重要性。 可能的值为： `low`、 `normal`和 `high`。|
+|inferenceClassification|inferenceClassificationType| 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused`、`other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合。 该集合包括指示邮件从发件人发送到收件人所采用的网络路径的邮件头。 还可以包含保存邮件应用数据的自定义邮件头。 <br><br> 仅在应用 `$select` 查询选项时返回。 只读。|
 |internetMessageId | String | 邮件 ID 采用 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 指定的格式。 仅当 **isDraft** 为 true 时才更更新。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|

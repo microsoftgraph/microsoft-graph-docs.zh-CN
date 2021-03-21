@@ -2,19 +2,21 @@
 title: 更新 featureRolloutPolicy
 description: 更新 featurerolloutpolicy 对象的属性。
 localization_priority: Normal
-author: keylimesoda
-ms.prod: directory-management
+author: madhavpatel6
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 26d5f16bd6d61689ff4cfe73b83c4a45add9c2f7
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 91567639b46a369305e8b02a3ee4cdde77f21aad
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471080"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959268"
 ---
 # <a name="update-featurerolloutpolicy"></a>更新 featurerolloutpolicy
 
 命名空间：microsoft.graph
+
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,29 +37,29 @@ ms.locfileid: "50471080"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /directory/featureRolloutPolicies/{id}
+PATCH /policies/featureRolloutPolicies/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}。 必需 |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关属性的值。 未添加到请求正文的现有属性要么保留旧值，要么根据其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|String|此策略的说明。|
 |displayName|String|此显示名称的组。|
 |isAppliedToOrganization|Boolean|指示是否应当将此功能推出策略应用于整个组织。|
-|isEnabled|Boolean|指示是否已启用功能推出。|
+|isEnabled|Boolean|指示是否启用功能推出。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新 [的 featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
+如果成功，此方法返回 `204 No content` 响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -66,11 +68,11 @@ PATCH /directory/featureRolloutPolicies/{id}
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "update_featurerolloutpolicy"
+  "name": "update_featurerolloutpolicy_policies"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
+PATCH https://graph.microsoft.com/beta/policies/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
 Content-type: application/json
 
 {
@@ -85,12 +87,9 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.featureRolloutPolicy"
 } -->
 
 ```http

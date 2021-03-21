@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: eade8383dd6ec9868e529ad1045ec3aa56971385
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 18852d96fe1ba37447c600b20895359584b3580a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776856"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959642"
 ---
 # <a name="create-printjob-for-a-printershare"></a>为 printerShare 创建 printJob
 命名空间：microsoft.graph
@@ -64,7 +64,7 @@ POST /print/shares/{printerShareId}/jobs
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_printjob_from_"
+  "name": "create_printjob_from__2"
 }
 -->
 ``` http
@@ -107,19 +107,19 @@ Content-length: 376
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-from--2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-from--2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-from--objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-from--2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-from--2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,23 +2,25 @@
 title: Assign appliesTo
 description: 将 directoryObject 分配给功能推出。
 localization_priority: Normal
-author: keylimesoda
-ms.prod: directory-management
+author: madhavpatel6
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 684fec8b035fd3df3ed4d33c6549cacae212a6dd
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f845aac0abd8fd8d6f23151ffd4fc99e8b6bdcf3
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471206"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959296"
 ---
 # <a name="assign-appliesto"></a>Assign appliesTo
 
 命名空间：microsoft.graph
 
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象上添加一个 appliesTo，以指定应应用[featureRolloutPolicy 的 directoryObject。](../resources/featurerolloutpolicy.md) [](../resources/directoryobject.md)
+在[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象上添加一个 appliesTo，以指定应应用[featureRolloutPolicy](../resources/featurerolloutpolicy.md)的[directoryObject。](../resources/directoryobject.md)
 
 ## <a name="permissions"></a>权限
 
@@ -35,14 +37,14 @@ ms.locfileid: "50471206"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directory/featureRolloutPolicies/{id}/appliesTo/$ref
+POST /policies/featureRolloutPolicies/{id}/appliesTo/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}。 必需 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -50,7 +52,7 @@ POST /directory/featureRolloutPolicies/{id}/appliesTo/$ref
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [directoryObject](../resources/directoryobject.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [directoryObject](../resources/directoryobject.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -58,38 +60,19 @@ POST /directory/featureRolloutPolicies/{id}/appliesTo/$ref
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_featurerolloutpolicy"
+  "name": "create_directoryobject_from_featurerolloutpolicy_policies"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/directory/featureRolloutPolicies/{id}/appliesTo/$ref
+POST https://graph.microsoft.com/beta/policies/featureRolloutPolicies/{id}/appliesTo/$ref
 Content-type: application/json
 
 {
   "@odata.id": " https://graph.microsoft.com/beta/directoryObjects/2441b489-4f12-4882-b039-8f6006bd66da"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-featurerolloutpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-featurerolloutpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-featurerolloutpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-featurerolloutpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 

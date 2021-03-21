@@ -1,30 +1,30 @@
 ---
-title: removeWatermarkAction 资源类型
-description: 表示一个操作，该操作指定要从信息中删除的内容水印的详细信息（如果适用）。
+title: remove使用markAction 资源类型
+description: 表示一个操作，指定要从信息中删除的内容水印的详细信息（如果适用）。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0b75a001e7673bbeb1513eaac82555d228d712f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a2365b2c9bc1080db9b6bf58b2035d88832881a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023957"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960353"
 ---
-# <a name="removewatermarkaction-resource-type"></a>removeWatermarkAction 资源类型
+# <a name="removewatermarkaction-resource-type"></a>remove使用markAction 资源类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个操作，该操作指定要从信息中删除的内容水印的详细信息（如果适用）。 如果由于更新或删除标签而要删除水印， [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或 [EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回 **removeWatermarkAction** 。 该操作指示使用应用程序移除包含之前适用的内容水印的特定 UI 元素。
+表示一个操作，指定要从信息中删除的内容水印的详细信息（如果适用）。 如果由于更新或删除标签而删除水印，则 evaluateApplication、evaluateClassificationResults 或 [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) API 可能会返回 [](../api/informationprotectionlabel-evaluateapplication.md)[](../api/informationprotectionlabel-evaluateclassificationresults.md)**removeIngmarkAction。** 此操作指示使用应用程序删除包含以前适用的内容水印的特定 UI 元素。
 
 ## <a name="properties"></a>属性
 
 | 属性       | 类型              | 说明                           |
 | :------------- | :---------------- | :------------------------------------ |
-| uiElementNames | String 集合 | 要删除的页脚的 UI 元素的名称。 |
+| uiElementNames | String collection | 要删除的页脚的 UI 元素的名称。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

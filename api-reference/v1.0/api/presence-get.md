@@ -1,16 +1,16 @@
 ---
 title: 获取状态
 description: 获取用户状态信息。
-author: elvinyang-msft
+author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f0b807775de40758514e5a839a3af1b1d3a20a01
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: ccd05e056f4d751184dd2b5fbb9605377a9a64a0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690554"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959684"
 ---
 # <a name="get-presence"></a>获取状态
 
@@ -25,9 +25,9 @@ ms.locfileid: "49690554"
 | :-------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 状态.阅读，状态.阅读.全部      |
 | 委派（个人 Microsoft 帐户） | 不支持。                        |
-| Application                            | 不支持。                        |
+| 应用程序                            | 不支持。                        |
 
-> **注意：** 此 API 的最大请求速率是每个租户每个应用程序的 30 秒内 1500 个 API 请求。
+> **注意：** 此 API 的最大请求速率是 30 秒内每个租户每个应用程序 1500 个 API 请求。
 
 ## <a name="http-requests"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,13 +48,13 @@ GET /communications/presences
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/presence.md)和状态对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应[](../resources/presence.md)代码和 presence 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-get-your-own-presence-information"></a>示例 1：获取你自己的状态信息
 
-以下示例显示如何获取你自己的状态信息。 此操作需要 Presence.Read 权限。
+以下示例显示如何获取您自己的状态信息。 此操作需要 Presence.Read 权限。
 
 #### <a name="request"></a>请求
 

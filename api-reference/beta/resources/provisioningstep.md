@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: bfc0fef09c1dfa8da4161a75449894e391ca1974
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6baf1656cb470cfc8dc01908f5a398ac5d421eb1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135343"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960339"
 ---
 # <a name="provisioningstep-resource-type"></a>provisioningStep 资源类型
 
@@ -24,11 +24,11 @@ ms.locfileid: "50135343"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|字符串|步骤中发生的情况摘要。|
+|说明|String|步骤中发生的情况摘要。|
 |详细信息|[detailsInfo](detailsinfo.md)|步骤中发生的情况的详细信息。|
-|name|字符串|步骤的名称。|
-|provisioningStepType|字符串| 步骤类型。 可取值为：`import`、`scoping`、`matching`、`processing`、`referenceResolution`、`export` 或 `unknownFutureValue`。|
-|status|字符串| 步骤的状态。 可能的值是： `success` `warning` ， ， ，  `failure` `skipped` `unknownFutureValue` 。|
+|name|String|步骤的名称。|
+|provisioningStepType|provisioningStepType| 步骤的类型。 可取值为：`import`、`scoping`、`matching`、`processing`、`referenceResolution`、`export` 或 `unknownFutureValue`。|
+|状态|provisioningResult| 步骤的状态。 可能的值是 `success` `warning` `failure` ：、、、、。 `skipped` `unknownFutureValue`|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
