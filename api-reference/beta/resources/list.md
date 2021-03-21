@@ -6,12 +6,12 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7eae3ca5530b04d004888edf1cfe75e67a83b310
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9bc255a0bcddadbbf9190decc2d429eb88e91e67
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055314"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964553"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -32,15 +32,21 @@ ms.locfileid: "48055314"
 
 | 常见任务               | HTTP 方法
 |:--------------------------|:------------------------------
-| [获取列表][]              | GET /lists/{list-id}
+| [获取网站中的列表][]   | GET /sites/{site-id}/lists
 | [创建列表][]           | POST /列表
+| [获取列表][]              | GET /lists/{list-id}
 | [枚举列表项][]  | GET /lists/{list-id}/items
 | [更新列表项][]      | PATCH /lists/{list-id}/items/{item-id}
 | [删除列表项][]      | DELETE /lists/{list-id}/items/{item-id}
 | [创建列表项][]      | POST /lists/{list-id}
 | [获取最近的活动][] | GET /lists/{list-id}/activities
 | [获取 WebSocket 频道][] | GET /lists/{list-id}/subscriptions/socketIo
+|[列出内容类型][]          | GET /lists/{list-id}/contentTypes
+|[从网站添加内容类型副本][] | POST /lists/{list-id}/contentTypes/addCopy
+|[List columns][]               | GET /lists/{list-id}/columns
+|[创建列][]              | POST /lists/{list-id}/columns
 
+[获取网站中的列表]: ../api/list-list.md
 [获取列表]: ../api/list-get.md
 [创建列表]: ../api/list-create.md
 [枚举列表项]: ../api/listitem-list.md
@@ -49,7 +55,10 @@ ms.locfileid: "48055314"
 [创建列表项]: ../api/listitem-create.md
 [获取最近的活动]: ../api/activities-list.md
 [获取 WebSocket 频道]: ../api/subscriptions-socketio.md
-
+[列出内容类型]: ../api/list-list-contenttypes.md
+[从网站添加内容类型副本]: ../api/contenttype-addCopy.md
+[List columns]: ../api/list-list-columns.md
+[创建列]: ../api/list-post-columns.md
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是 **list** 资源的 JSON 表示形式。
@@ -90,7 +99,7 @@ ms.locfileid: "48055314"
 
 ## <a name="properties"></a>属性
 
-**list **资源具有以下属性。
+**list** 资源具有以下属性。
 
 | 属性名称    | 类型                             | 说明
 |:-----------------|:---------------------------------|:---------------------------
@@ -100,7 +109,7 @@ ms.locfileid: "48055314"
 | **list**         | [listInfo][]                     | 提供关于列表的其他详细信息。
 | **system**       | [systemFacet][]                  | 如果存在，则表示这是系统管理的列表。 只读。
 
-以下属性继承自 ** [baseItem][]**。
+以下属性继承自 **[baseItem][]**。
 
 | 属性名称            | 类型             | 说明
 |:-------------------------|:-----------------|:-------------------------------
