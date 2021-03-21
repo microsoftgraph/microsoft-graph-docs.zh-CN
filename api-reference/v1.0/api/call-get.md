@@ -5,85 +5,85 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3f01e69298e5c42244e3e1937b3ca5458eb63031
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e7760516f248415139403cd404081839b0dbe5d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966371"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964490"
 ---
-# <a name="get-call"></a><span data-ttu-id="9dba5-103">获取呼叫</span><span class="sxs-lookup"><span data-stu-id="9dba5-103">Get call</span></span>
+# <a name="get-call"></a><span data-ttu-id="e4688-103">获取呼叫</span><span class="sxs-lookup"><span data-stu-id="e4688-103">Get call</span></span>
 
-<span data-ttu-id="9dba5-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9dba5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e4688-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e4688-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9dba5-105">检索 call 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="9dba5-105">Retrieve the properties and relationships of a call object.</span></span>
+<span data-ttu-id="e4688-105">检索 call 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="e4688-105">Retrieve the properties and relationships of a call object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9dba5-106">权限</span><span class="sxs-lookup"><span data-stu-id="9dba5-106">Permissions</span></span>
-<span data-ttu-id="9dba5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9dba5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e4688-106">权限</span><span class="sxs-lookup"><span data-stu-id="e4688-106">Permissions</span></span>
+<span data-ttu-id="e4688-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e4688-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="9dba5-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9dba5-109">Permission type</span></span> | <span data-ttu-id="9dba5-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9dba5-110">Permissions (from least to most privileged)</span></span>                  |
+| <span data-ttu-id="e4688-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e4688-109">Permission type</span></span> | <span data-ttu-id="e4688-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e4688-110">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="9dba5-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9dba5-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="9dba5-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="9dba5-112">Not Supported.</span></span>                         |
-| <span data-ttu-id="9dba5-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9dba5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9dba5-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9dba5-114">Not Supported.</span></span>                         |
-| <span data-ttu-id="9dba5-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9dba5-115">Application</span></span>                            | <span data-ttu-id="9dba5-116">无。</span><span class="sxs-lookup"><span data-stu-id="9dba5-116">None.</span></span>                                  |
+| <span data-ttu-id="e4688-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e4688-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="e4688-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="e4688-112">Not Supported.</span></span>                         |
+| <span data-ttu-id="e4688-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e4688-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4688-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e4688-114">Not Supported.</span></span>                         |
+| <span data-ttu-id="e4688-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e4688-115">Application</span></span>                            | <span data-ttu-id="e4688-116">无。</span><span class="sxs-lookup"><span data-stu-id="e4688-116">None.</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="9dba5-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9dba5-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e4688-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e4688-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/calls/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9dba5-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="9dba5-118">Optional query parameters</span></span>
-<span data-ttu-id="9dba5-119">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="9dba5-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e4688-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e4688-118">Optional query parameters</span></span>
+<span data-ttu-id="e4688-119">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e4688-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9dba5-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="9dba5-120">Request headers</span></span>
-| <span data-ttu-id="9dba5-121">名称</span><span class="sxs-lookup"><span data-stu-id="9dba5-121">Name</span></span>          | <span data-ttu-id="9dba5-122">说明</span><span class="sxs-lookup"><span data-stu-id="9dba5-122">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="e4688-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e4688-120">Request headers</span></span>
+| <span data-ttu-id="e4688-121">名称</span><span class="sxs-lookup"><span data-stu-id="e4688-121">Name</span></span>          | <span data-ttu-id="e4688-122">说明</span><span class="sxs-lookup"><span data-stu-id="e4688-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="9dba5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9dba5-123">Authorization</span></span> | <span data-ttu-id="9dba5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9dba5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e4688-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e4688-123">Authorization</span></span> | <span data-ttu-id="e4688-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e4688-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9dba5-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="9dba5-126">Request body</span></span>
-<span data-ttu-id="9dba5-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9dba5-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e4688-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="e4688-126">Request body</span></span>
+<span data-ttu-id="e4688-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e4688-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9dba5-128">响应</span><span class="sxs-lookup"><span data-stu-id="9dba5-128">Response</span></span>
-<span data-ttu-id="9dba5-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [call](../resources/call.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9dba5-129">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e4688-128">响应</span><span class="sxs-lookup"><span data-stu-id="e4688-128">Response</span></span>
+<span data-ttu-id="e4688-129">如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/call.md) 代码和 call 对象。</span><span class="sxs-lookup"><span data-stu-id="e4688-129">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9dba5-130">示例</span><span class="sxs-lookup"><span data-stu-id="9dba5-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e4688-130">示例</span><span class="sxs-lookup"><span data-stu-id="e4688-130">Examples</span></span>
 
-### <a name="example-1-getting-a-peer-to-peer-call"></a><span data-ttu-id="9dba5-131">示例1：获取对等呼叫</span><span class="sxs-lookup"><span data-stu-id="9dba5-131">Example 1: Getting a Peer-to-Peer call</span></span>
+### <a name="example-1-getting-a-peer-to-peer-call"></a><span data-ttu-id="e4688-131">示例 1：获取对等呼叫</span><span class="sxs-lookup"><span data-stu-id="e4688-131">Example 1: Getting a Peer-to-Peer call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9dba5-132">请求</span><span class="sxs-lookup"><span data-stu-id="9dba5-132">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e4688-132">请求</span><span class="sxs-lookup"><span data-stu-id="e4688-132">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9dba5-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="9dba5-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4688-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4688-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-call"
+  "name": "get-call-1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="9dba5-134">C#</span><span class="sxs-lookup"><span data-stu-id="9dba5-134">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="e4688-134">C#</span><span class="sxs-lookup"><span data-stu-id="e4688-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9dba5-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9dba5-135">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="e4688-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4688-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9dba5-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9dba5-136">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="e4688-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4688-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9dba5-137">Java</span><span class="sxs-lookup"><span data-stu-id="9dba5-137">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-call-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="e4688-137">Java</span><span class="sxs-lookup"><span data-stu-id="e4688-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="9dba5-138">响应</span><span class="sxs-lookup"><span data-stu-id="9dba5-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e4688-138">响应</span><span class="sxs-lookup"><span data-stu-id="e4688-138">Response</span></span>
 
-> <span data-ttu-id="9dba5-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="9dba5-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e4688-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e4688-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -154,38 +154,38 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
-### <a name="example-2-getting-a-group-call"></a><span data-ttu-id="9dba5-141">示例2：获取组呼叫</span><span class="sxs-lookup"><span data-stu-id="9dba5-141">Example 2: Getting a group call</span></span>
+### <a name="example-2-getting-a-group-call"></a><span data-ttu-id="e4688-141">示例 2：获取组呼叫</span><span class="sxs-lookup"><span data-stu-id="e4688-141">Example 2: Getting a group call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9dba5-142">请求</span><span class="sxs-lookup"><span data-stu-id="9dba5-142">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e4688-142">请求</span><span class="sxs-lookup"><span data-stu-id="e4688-142">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9dba5-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="9dba5-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4688-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4688-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-call"
+  "name": "get-call-2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
-# <a name="c"></a>[<span data-ttu-id="9dba5-144">C#</span><span class="sxs-lookup"><span data-stu-id="9dba5-144">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="e4688-144">C#</span><span class="sxs-lookup"><span data-stu-id="e4688-144">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9dba5-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9dba5-145">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="e4688-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4688-145">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9dba5-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9dba5-146">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="e4688-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4688-146">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-call-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9dba5-147">Java</span><span class="sxs-lookup"><span data-stu-id="9dba5-147">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-call-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="e4688-147">Java</span><span class="sxs-lookup"><span data-stu-id="e4688-147">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-call-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="9dba5-148">响应</span><span class="sxs-lookup"><span data-stu-id="9dba5-148">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e4688-148">响应</span><span class="sxs-lookup"><span data-stu-id="e4688-148">Response</span></span>
 
 <!-- {
   "blockType": "response",

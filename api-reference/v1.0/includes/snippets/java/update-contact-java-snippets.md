@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8eb0895985b5fcaae38b2c7aea4462ef96f33bf0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: eaf55cacf4b6b652dd7cfcadb9dc5afce5ad4fcc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982895"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978247"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Contact contact = new Contact();
 PhysicalAddress homeAddress = new PhysicalAddress();
@@ -18,7 +18,7 @@ homeAddress.city = "Seattle";
 homeAddress.state = "WA";
 homeAddress.postalCode = "98121";
 contact.homeAddress = homeAddress;
-contact.birthday = CalendarSerializer.deserialize("1974-07-22");
+contact.birthday = OffsetDateTimeSerializer.deserialize("1974-07-22");
 
 graphClient.me().contacts("{id}")
     .buildRequest()
