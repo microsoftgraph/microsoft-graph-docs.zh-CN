@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0b3e775b3069c49841b33b09989ba594cc0af7e6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cf10f5bc086ebbc1e6533d1b64986fd048759a83
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964692"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954671"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("User-Agent", "ContosoLOBApp/1.0"));
@@ -53,7 +53,10 @@ metadataList.add(metadata6);
 contentInfo.metadata = metadataList;
 
 graphClient.informationProtection().policy().labels()
-    .extractLabel(contentInfo)
+    .extractLabel(InformationProtectionLabelExtractLabelParameterSet
+        .newBuilder()
+        .withContentInfo(contentInfo)
+        .build())
     .buildRequest( requestOptions )
     .post();
 

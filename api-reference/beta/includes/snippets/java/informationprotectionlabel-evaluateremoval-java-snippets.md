@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3628502c5f32b3e21cc47c5dda5b2d49b2808f71
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f8bfbdd448e87433e3d1df4fe7dd3054db14637a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952864"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954692"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("User-Agent", "ContosoLOBApp/1.0"));
@@ -57,7 +57,11 @@ downgradeJustification.justificationMessage = "The information has been declassi
 downgradeJustification.isDowngradeJustified = true;
 
 graphClient.informationProtection().policy().labels()
-    .evaluateRemoval(contentInfo,downgradeJustification)
+    .evaluateRemoval(InformationProtectionLabelEvaluateRemovalParameterSet
+        .newBuilder()
+        .withContentInfo(contentInfo)
+        .withDowngradeJustification(downgradeJustification)
+        .build())
     .buildRequest( requestOptions )
     .post();
 
