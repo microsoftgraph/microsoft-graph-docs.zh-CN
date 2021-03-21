@@ -1,30 +1,30 @@
 ---
-title: 'informationProtectionLabel: evaluateApplication'
+title: informationProtectionLabel：evaluateApplication
 description: 根据现有内容信息和所需内容状态评估要应用的标签。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 6f3d4fc5915c79e41fc316d7dd0eeb0a46047c59
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b48fd3e0137e90232b484acd142224a9a8cdc70c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952848"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960956"
 ---
-# <a name="informationprotectionlabel-evaluateapplication"></a>informationProtectionLabel: evaluateApplication
+# <a name="informationprotectionlabel-evaluateapplication"></a>informationProtectionLabel：evaluateApplication
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-计算应应用的 [信息保护标签](../resources/informationprotectionlabel.md) ，并返回正确标记信息所需采取的一组操作。 如果标签应手动设置或由用户或服务显式设置，而不是基于文件内容自动设置，则此 API 非常有用。 
+计算 [应应用](../resources/informationprotectionlabel.md) 的信息保护标签，并返回正确标记信息所必须采取的一组操作。 当用户或服务应手动或显式设置标签，而不是基于文件内容自动设置标签时，此 API 非常有用。 
 
-给定 [contentInfo](../resources/contentInfo.md)（包括现有内容元数据 [密钥/值对](../resources/keyvaluepair.md)）和 [labelingOptions](../resources/labelingoptions.md) 作为输入，API 将返回一个 [informationProtectionAction](../resources/informationprotectionaction.md) 对象，其中包含以下一个或多个内容： 
+在 [给定 contentInfo](../resources/contentInfo.md)（包括现有内容元数据键 [/](../resources/keyvaluepair.md)值对 ）和 [labelingOptions](../resources/labelingoptions.md) 作为输入时，API 将返回一个 [informationProtectionAction](../resources/informationprotectionaction.md) 对象，该对象包含以下项之一： 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
-* [addWatermarkAction](../resources/addWatermarkaction.md)
+* [addActionmarkAction](../resources/addWatermarkaction.md)
 * [applyLabelAction](../resources/applylabelaction.md)
 * [customAction](../resources/customaction.md)
 * [justifyAction](../resources/justifyaction.md)
@@ -36,7 +36,7 @@ ms.locfileid: "48952848"
 * [removeContentFooterAction](../resources/removecontentfooteraction.md)
 * [removeContentHeaderAction](../resources/removecontentheaderaction.md)
 * [removeProtectionAction](../resources/removeprotectionaction.md)
-* [removeWatermarkAction](../resources/removewatermarkaction.md)
+* [remove使用markAction](../resources/removewatermarkaction.md)
 
 ## <a name="permissions"></a>权限
 
@@ -63,7 +63,7 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                             |
 | Content-type  | application/json. Required.                                                                                                                                           |
-| User-Agent    | 描述调用应用程序的名称。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
+| User-Agent    | 描述调用应用程序的名称。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -71,12 +71,12 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 
 | 参数       | 类型                                               | 说明                                                                                                                      |
 | :-------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo     | [contentInfo](../resources/contentinfo.md)         | 提供有关内容格式、内容状态和现有 [元数据](../resources/keyvaluepair.md) 的详细信息，作为键/值对。 |
-| labelingOptions | [labelingOptions](../resources/labelingoptions.md) | 提供有关内容的所需状态的详细信息。                                                                         |
+| contentInfo     | [contentInfo](../resources/contentinfo.md)         | 提供有关内容格式、内容状态和作为键/值对[](../resources/keyvaluepair.md)的现有元数据的详细信息。 |
+| labelingOptions | [labelingOptions](../resources/labelingoptions.md) | 提供有关内容所需状态的详细信息。                                                                         |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。
 
 ## <a name="examples"></a>示例
 

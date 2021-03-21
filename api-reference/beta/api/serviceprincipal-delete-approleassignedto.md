@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b6083a3fdadebfb6d9c5d2541609f9ec870b9051
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 110cfaea393bc60128198852199978b4e43dea04
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132168"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960732"
 ---
 # <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>删除为服务主体授予的 appRoleAssignment
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 
 > [!NOTE]
-> 作为最佳实践，我们建议通过资源服务主体的关系（而不是分配的用户、组或服务主体的关系）删除应用 `appRoleAssignedTo`  `appRoleAssignments` 角色分配。
+> 作为最佳实践，我们建议通过资源服务主体的关系（而不是分配的用户、组或服务主体的关系）删除应用程序 `appRoleAssignedTo`  `appRoleAssignments` 角色分配。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,7 +61,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 
 ### <a name="request"></a>请求
 
-下面是从资源服务主体删除应用角色分配的示例。
+下面是从资源服务主体角色分配应用程序请求的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -71,7 +71,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principal-id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignedto-csharp-snippets.md)]
@@ -91,6 +91,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo
 
 ---
 
+此示例中， 将是资源服务主体的 ID，并且将是分配的用户、组或客户端 `{resource-SP-id}` `{principalId}` 服务主体的 ID。
 
 ### <a name="response"></a>响应
 

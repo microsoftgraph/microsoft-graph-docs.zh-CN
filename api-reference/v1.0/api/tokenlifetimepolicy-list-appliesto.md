@@ -1,16 +1,16 @@
 ---
 title: List appliesTo
-description: 获取已应用 tokenLifetimePolicy 对象的 directoryObject 对象的列表。
+description: 获取 tokenLifetimePolicy 对象已应用到的 directoryObject 对象的列表。
 localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fe643e5608826fae0d659fafc3946b5407e1a5ed
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 13b703d96a6949c5b7056ffb55e32fd5cfc29294
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440008"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961209"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 
@@ -18,7 +18,7 @@ ms.locfileid: "50440008"
 
 
 
-获取已应用[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象的[directoryObject](../resources/directoryObject.md)对象的列表。 tokenLifetimePolicy 只能应用于 [应用程序](../resources/application.md)。
+获取[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象已应用到的[directoryObject](../resources/directoryObject.md)对象的列表。 tokenLifetimePolicy 只能应用于 [应用程序](../resources/application.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /policies/tokenLifetimePolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持和 `$expand` `$select` `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
+此方法支持 `$expand` 、 `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -65,26 +65,26 @@ GET /policies/tokenLifetimePolicies/{id}/appliesTo
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_appliesto"
+  "name": "get_appliesto_4"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/{id}/appliesTo
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-appliesto-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-appliesto-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-appliesto-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-appliesto-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-appliesto-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-appliesto-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-appliesto-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-appliesto-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

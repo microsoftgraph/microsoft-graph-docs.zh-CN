@@ -3,14 +3,14 @@ title: mailAssessmentRequest 资源类型
 description: 用于创建和检索邮件威胁评估。
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 012450bdc57c1c0f944a3dfbfa492320eb6f6d13
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 3e45cddeb7d0a9814a1feb6732828ef7363602bb
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721732"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961270"
 ---
 # <a name="mailassessmentrequest-resource-type"></a>mailAssessmentRequest 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "50721732"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于创建和检索从 [threatAssessmentRequest](threatAssessmentRequest.md)派生的邮件威胁评估。
+用于创建和检索邮件威胁评估，派生自 [threatAssessmentRequest](threatAssessmentRequest.md)。
 
-创建邮件威胁评估请求时，邮件应由在 中指定的用户接收 `recipientEmail` 。 委派 [邮件 (](/graph/permissions-reference#mail-permissions) Mail.Read 或 Mail.Read.Shared) 将重新quried以访问用户接收或其他人共享的邮件。
+创建邮件威胁评估请求时，邮件应由 中指定的用户接收 `recipientEmail` 。 [Mail.Read](/graph/permissions-reference#mail-permissions) (Mail.Read 或 Mail.Read.Shared) 的委派邮件权限将重新进行重新quried，以访问用户接收或其他人共享的邮件。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -34,7 +34,7 @@ ms.locfileid: "50721732"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|邮件路由到其目标的原因。 可能的值是： `none` ， ， ， ， ， ， ， `mailFlowRule` `safeSender` `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` 。|
+|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|邮件路由到目标的原因。 可能的值是 `none` `mailFlowRule` `safeSender` ：、、、、、、、、、、 `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` 。|
 |messageUri|String|要评估的邮件的资源 URI。|
 |recipientEmail|String|其策略用于评估邮件的邮件收件人。|
 |“类别”|[threatCategory](enums.md#threatcategory-values)|威胁类别。 可取值为：`spam`、`phishing`、`malware`。|
@@ -50,7 +50,7 @@ ms.locfileid: "50721732"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下，除非 `GET /threatAssessmentRequests/{id}` 应用此属性，否则不会返回 `$expand` 此属性。|
+|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下， `GET /threatAssessmentRequests/{id}` 除非对该属性应用 ，否则 不会返回 `$expand` 此属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

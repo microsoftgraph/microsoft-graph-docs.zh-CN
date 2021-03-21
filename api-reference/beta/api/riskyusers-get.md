@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 8b5a249d6baaac5fe1234888832633317e049cb3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9582066edadf5fb431bec0f7b3c9701fe71ead8c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440834"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960770"
 ---
 # <a name="get-riskyuser"></a>获取 riskyUser
 
@@ -22,14 +22,14 @@ ms.locfileid: "50440834"
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskyUser.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | IdentityRiskyUser.Read.All |
+|应用程序 | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ GET /identityProtection/riskyUsers/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUser](../resources/riskyuser.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [riskyUser](../resources/riskyuser.md) 对象。
 ## <a name="examples"></a>示例
 ### <a name="example-1-get-a-risky-user"></a>示例 1：获取有风险的用户
 #### <a name="request"></a>请求
@@ -59,26 +59,26 @@ GET /identityProtection/riskyUsers/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser",
+  "name": "get_riskyuser_1",
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-riskyuser-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -113,26 +113,26 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser",
+  "name": "get_riskyuser_2",
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/riskyUsers
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-riskyuser-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

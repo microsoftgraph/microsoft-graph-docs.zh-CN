@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 803a684ef8a1432ffedc43a87b2af5c258a394d1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8a91b4d52dcb3eb9cd889d8406349bd057948208
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435474"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961042"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435474"
 
 检索 [identityProvider 的属性和关系](../resources/identityprovider.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50435474"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|Application|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 * 全局管理员
@@ -53,7 +53,7 @@ GET /identityProviders/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法仅在响应正文中返回 `200 OK` [identityProvider](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md) (的响应代码和 JSON 表示形式) Azure AD B2C) 。
+如果成功，此方法返回响应代码和 `200 OK` [identityProvider](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md) (仅在响应正文中为 Azure AD B2C) JSON 表示形式。
 
 ## <a name="examples"></a>示例
 
@@ -67,7 +67,7 @@ GET /identityProviders/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "get_identityprovider_1"
 }
 -->
 
@@ -75,19 +75,19 @@ GET /identityProviders/{id}
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -115,21 +115,41 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例 2：仅针对 Azure AD B2C (检索特定的 openIDConnectProvider) 
+### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例 2：仅为 Azure AD B2C (检索特定的 openIDConnectProvider) 
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "get_identityprovider_2"
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

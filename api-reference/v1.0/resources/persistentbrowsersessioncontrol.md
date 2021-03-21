@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7b418f16a69e5b97cbb42bc81994dfd87e5a3c1e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 41e84491593040ff44e9f5097fd6c960f9250b45
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135735"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961102"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>persistentBrowserSessionControl 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50135735"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | 指定是否启用会话控件。 |
-|mode|String| 可取值为：`always`、`never`。|
+|mode|persistentBrowserSessionMode| 可取值为：`always`、`never`。|
 
 ## <a name="relationships"></a>关系
 

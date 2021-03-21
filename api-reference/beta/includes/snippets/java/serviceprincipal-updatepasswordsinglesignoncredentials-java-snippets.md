@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a0da41610a13713e8993971f080c720a06746304
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 57446b3bc7ae40697fd5c2324d9958c37eb7cfb1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969260"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50976481"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String id = "5793aa3b-cca9-4794-679a240f8b58";
 
@@ -28,7 +28,11 @@ credentials1.type = "password";
 credentialsList.add(credentials1);
 
 graphClient.servicePrincipals("{id}")
-    .updatePasswordSingleSignOnCredentials(id,credentialsList)
+    .updatePasswordSingleSignOnCredentials(ServicePrincipalUpdatePasswordSingleSignOnCredentialsParameterSet
+        .newBuilder()
+        .withId(id)
+        .withCredentials(credentialsList)
+        .build())
     .buildRequest()
     .post();
 
