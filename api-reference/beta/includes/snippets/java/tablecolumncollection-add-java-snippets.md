@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f0ecdf9753c6c96cfa9e66f89145f332befcfea0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0aab8598989a81787e01a5bb2eec93cb82688632
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972661"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50976997"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 int index = new int();
 
@@ -19,7 +19,12 @@ JsonElement values = new JsonObject();
 valuesList.add(values);
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns()
-    .add(index,values,null)
+    .add(WorkbookTableColumnAddParameterSet
+        .newBuilder()
+        .withIndex(index)
+        .withValues(values)
+        .withName(null)
+        .build())
     .buildRequest()
     .post();
 

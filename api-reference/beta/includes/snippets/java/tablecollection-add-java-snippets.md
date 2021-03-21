@@ -1,22 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 17d719ec361924133699138e7444813c5379e063
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 08c0b59d465d45ff83438e49386e63d9f48d28f1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980395"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50969856"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String address = "Sheet1!A1:D5";
 
 Boolean hasHeaders = true;
 
 graphClient.me().drive().items("{id}").workbook().tables()
-    .add(address,hasHeaders)
+    .add(WorkbookTableAddParameterSet
+        .newBuilder()
+        .withAddress(address)
+        .withHasHeaders(hasHeaders)
+        .build())
     .buildRequest()
     .post();
 
