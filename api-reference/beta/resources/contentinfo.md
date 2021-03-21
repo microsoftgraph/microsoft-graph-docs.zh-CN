@@ -1,16 +1,16 @@
 ---
 title: contentInfo 资源类型
-description: 表示要标记的某些信息的当前状态。
+description: 表示要标记的一些信息的当前状态。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d7e0c159d46cb680329efc6a93896ca3df7270f7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 939d7730c0de2ffb13d4dbdcade6f7c2fbce5de4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998907"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962649"
 ---
 # <a name="contentinfo-resource-type"></a>contentInfo 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "47998907"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示要标记的某些信息的当前状态。 **contentInfo** 将传递到 [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md)、 [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)和 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) api，以向 API 描述信息的当前状态。 此 **contentInfo** 详细说明了如何在应用、更新或删除标签时添加或删除要添加或删除的元数据、内容标记和保护的结果。 
+表示要标记的一些信息的当前状态。 **contentInfo** 传递到 [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) [、evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)和 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) API，以向 API 描述信息的当前状态。 此 **contentInfo** 详细信息将推动在应用、更新或删除标签时应添加或删除哪些元数据、内容标记和保护的结果。 
 
 ## <a name="properties"></a>属性
 
@@ -26,7 +26,7 @@ ms.locfileid: "47998907"
 | :--------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | format     | String                                     | 可取值为：`default`、`email`。                                                                                        |
 | 标识符 | String                                     | 用于 Azure 信息保护分析的标识符。                                                                     |
-| metadata   | [keyValuePair](keyvaluepair.md) 集合 | 现有的 Microsoft 信息保护元数据作为键/值对进行传递，其中的键是 MSIP_Label_GUID_PropName。 |
+| metadata   | [keyValuePair](keyvaluepair.md) 集合 | 现有的 Microsoft 信息保护元数据作为键/值对传递，其中键是MSIP_Label_GUID_PropName。 |
 | state      | String                                     | 可取值为：`rest`、`motion`、`use`。                                                                                   |
 
 ## <a name="json-representation"></a>JSON 表示形式

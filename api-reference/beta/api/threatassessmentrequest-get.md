@@ -1,16 +1,16 @@
 ---
 title: 获取 threatAssessmentRequest
-description: 检索指定的 threatassessmentrequest 对象的属性和关系。
+description: 检索指定 threatassessmentrequest 对象的属性和关系。
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a93923673f9c7629fbe3d1d0e536501dfbf5bd08
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0c4f179243f8fa14ee59e22a07fbd643f9ccb850
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977852"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962799"
 ---
 # <a name="get-threatassessmentrequest"></a>获取 threatAssessmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "48977852"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索指定的 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象的属性和关系。
+检索指定 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象的属性和关系。
 
 威胁评估请求可以是以下类型之一：
 
@@ -51,7 +51,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$expand         |string   |`$expand=results`在查询中使用以检索威胁评估结果。                                                                                              |
+|$expand         |string   |在 `$expand=results` 查询中用于检索威胁评估结果。                                                                                              |
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 
 ## <a name="request-headers"></a>请求标头
@@ -66,11 +66,11 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。 返回该类型的属性： [mailAssessmentRequest](../resources/mailAssessmentRequest.md)、 [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md)、 [fileAssessmentRequest](../resources/fileAssessmentRequest.md)、 [urlAssessmentRequest](../resources/urlAssessmentRequest.md)。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。 返回该类型的属性[：mailAssessmentRequest](../resources/mailAssessmentRequest.md) [、emailFileAssessmentRequest、fileAssessmentRequest](../resources/emailFileAssessmentRequest.md) [、urlAssessmentRequest](../resources/urlAssessmentRequest.md)。 [](../resources/fileAssessmentRequest.md)
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>示例1：获取邮件评估请求的属性
+### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>示例 1：获取邮件评估请求的属性
 
 #### <a name="request"></a>请求
 
@@ -142,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>示例2：获取电子邮件文件评估请求的属性
+### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>示例 2：获取电子邮件文件评估请求的属性
 
 #### <a name="request"></a>请求
 
@@ -214,7 +214,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>示例3：获取文件评估请求的属性
+### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>示例 3：获取文件评估请求的属性
 
 #### <a name="request"></a>请求
 
@@ -285,7 +285,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>示例4：获取 url 评估请求的属性
+### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>示例 4：获取 url 评估请求的属性
 
 #### <a name="request"></a>请求
 
@@ -355,7 +355,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>示例5：展开请求的威胁评估结果
+### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>示例 5：展开请求的威胁评估结果
 
 #### <a name="request"></a>请求
 

@@ -5,12 +5,12 @@ author: jerrysai
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 58c4f913c8a5fc3b4f7c1c129c7126437035cbe7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f34fdacf75b991ff339f4b7cdd823290438e8fea
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444262"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962635"
 ---
 # <a name="continuousaccessevaluationpolicy-resource-type"></a>continuousAccessEvaluationPolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50444262"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-CAE (连续) 实时管理身份验证会话。 CAE 允许客户通过支持即时吊销事件来处理对资源的访问权限。  有关详细信息，请参阅连续 [访问评估](/azure/active-directory/fundamentals/concept-fundamentals-continuous-access-evaluation)。
+CAE (持续访问) 实时管理身份验证会话。 CAE 允许客户通过支持即时吊销事件来处理对资源的访问权限。  有关详细信息，请参阅连续 [访问评估](/azure/active-directory/fundamentals/concept-fundamentals-continuous-access-evaluation)。
 
 ## <a name="methods"></a>Methods
 |方法|返回类型|说明|
@@ -29,12 +29,12 @@ CAE (连续) 实时管理身份验证会话。 CAE 允许客户通过支持即�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|说明|String|当删除用户访问或客户端 IP 地址更改时，连续访问评估会自动阻止对资源和应用程序的近实时访问。 只读。|
-|displayName|String| 该值始终为"连续访问评估"。 只读。|
-|groups|字符串集合|评估范围内组标识符的集合。 当集合为空时，所有组都位于范围内。|
-|id|String|指定 continuousAccessEvaluationPolicy 对象的标识符。 只读。|
-|isEnabled|Boolean| `true` 指示是否应该执行连续访问评估;否则 `false` 。 |
-|users|字符串集合|评估范围内用户标识符的集合。 当集合为空时，所有用户都位于范围内。|
+|说明|String|当用户的访问被删除或客户端 IP 地址更改时，连续访问评估将自动阻止对资源和应用程序的访问。 只读。|
+|displayName|String| 该值始终为 `Continuous Access Evaluation` 。 只读。|
+|groups|String collection|作用域中用于评估的组标识符的集合。 当集合为空时，所有组都位于范围内。|
+|id|String|指定 [continuousAccessEvaluationPolicy 对象的](#continuousaccessevaluationpolicy-resource-type) 标识符。 只读。|
+|isEnabled|Boolean| `true` 指示是否应该执行连续访问评估;否则 `false` 为 。 |
+|users|String collection|评估范围内用户标识符的集合。 当集合为空时，所有用户都位于范围内。|
 
 ## <a name="relationships"></a>关系
 无。

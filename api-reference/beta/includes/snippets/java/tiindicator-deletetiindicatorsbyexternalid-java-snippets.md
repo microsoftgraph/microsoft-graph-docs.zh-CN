@@ -1,22 +1,25 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8dc7c7c3804461f0b7fcc83ae770c0adc7c3aa63
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5034368f082b36b039403362820d8230f4c5efe6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977729"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50981152"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<String> valueList = new LinkedList<String>();
 valueList.add("externalId-value1");
 valueList.add("externalId-value2");
 
 graphClient.security().tiIndicators()
-    .deleteTiIndicatorsByExternalId(valueList)
+    .deleteTiIndicatorsByExternalId(TiIndicatorDeleteTiIndicatorsByExternalIdParameterSet
+        .newBuilder()
+        .withValue(valueList)
+        .build())
     .buildRequest()
     .post();
 

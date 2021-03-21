@@ -1,16 +1,16 @@
 ---
 title: accessReviewScheduleDefinition 资源类型
-description: 表示访问评审或访问评审系列。
+description: 代表访问评审或访问评审系列。
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e4820cf85d3160c04372df79072b4b40708ef868
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 27b5debdbb9e55eafe55a4c1a7bc66d87b7290cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443174"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962663"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>accessReviewScheduleDefinition 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50443174"
 
 表示 Azure AD 访问评审 [的计划](accessreviewsv2-root.md)。 
 
-accessReviewScheduleDefinition 包含 [accessReviewInstance](accessreviewinstance.md) 对象的列表。 计划定义的每次重复都会创建一个实例。 实例还表示要审阅的每个唯一组。 如果计划定义检查多个组，则每个组将具有每个重复周期的唯一实例。 对于一次检查，每个组将仅创建一个实例。
+accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreviewinstance.md) 的列表。 计划定义的每次重复都将创建一个实例。 实例还表示要审阅的每个唯一组。 如果计划定义审阅多个组，则每个组将在每个重复周期中具有一个唯一实例。 对于一次评审，每个组只会创建一个实例。
 
 ## <a name="methods"></a>Methods
 
@@ -39,33 +39,33 @@ accessReviewScheduleDefinition 包含 [accessReviewInstance](accessreviewinstanc
 | :------------------| :-------------- | :---------- |
 | id | String | 访问评审的功能分配的唯一标识符。|
 | displayName | String   | 访问评审系列的名称。 创建时为必需项。 |
-| createdDateTime  |DateTimeOffset  | 创建审阅系列的日期/时间。 |
-| lastModifiedDateTime | DateTimeOffset   | 上次修改审阅系列的日期/时间。|
-| 状态  |string   | 此只读字段指定 accessReview 的状态。 典型状态包括 `Initializing` 、 `NotStarted` `Starting` 、 、 、 `InProgress` `Completing` 和 `Completed` `AutoReviewing` `AutoReviewed` 。 |
-| descriptionForAdmins  |string  |  评价创建者提供的用于向管理员提供更多评价上下文的说明。 |
-| descriptionForReviewers |string | 审阅创建者提供的用于向审阅者提供更多审阅上下文的说明。 审阅者将在发送给其请求审阅的电子邮件中看到此说明。 |
+| createdDateTime  |DateTimeOffset  | 创建审阅系列时时间戳。 |
+| lastModifiedDateTime | DateTimeOffset   | 上次修改审阅系列的时间戳。|
+| 状态  |String   | 此只读字段指定 accessReview 的状态。 典型状态包括 `Initializing` `NotStarted` `Starting` `InProgress` 、、、、、、 `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。 |
+| descriptionForAdmins  |string  |  评价创建者提供的用于向管理员提供评论的更多上下文的说明。 |
+| descriptionForReviewers |string | 审阅创建者提供的说明，用于向审阅者提供审阅的更多上下文。 审阅者将在发送给他们请求审阅的电子邮件中看到此说明。 |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | 创建此评价的用户。 |
-| 范围  |[accessReviewScope](../resources/accessreviewscope.md)  | 定义已审阅用户的范围。 有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 创建时为必需项。 |
-| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | 如果审阅所有 Microsoft 365 组的来宾用户，这将确定将审阅哪些组的范围。 每个组将成为访问评审系列的唯一 accessReviewInstance。  有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 | 
+| 范围  |[accessReviewScope](../resources/accessreviewscope.md)  | 定义被审阅用户的范围。 有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 创建时为必需项。 |
+| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | 如果审阅所有 Microsoft 365 组的来宾用户，这将确定将审核哪些组的范围。 每个组将成为访问评审系列的唯一 accessReviewInstance。  有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 | 
 | settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置，请参阅下面的类型定义。 |
-| 审阅者   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此访问评审范围集合用于定义审阅者。 请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。 创建时为必需项。 |
-| backupReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者作用域集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 如果组所有者被指定为审阅者，但组所有者不存在，或者经理被指定为审阅者，但用户的经理不存在，则可能发生此情况。 请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。 |
-| instances |集合 (microsoft.graph.accessReviewInstance) |  此访问评审系列的访问评审实例集。 不重复的访问评审将只有一个实例;否则，将存在每个重复周期的实例。 |
+| reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此访问评审范围集合用于定义审阅者。 请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。 创建时为必需项。 |
+| backupReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者，但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。 请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。 |
+| instances |集合 (microsoft.graph.accessReviewInstance) |  此访问评审系列的访问评审实例集。 不重复的访问评审将只有一个实例;否则，将针对每个重复周期提供一个实例。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-| `instances`               |[accessReviewInstance](accessreviewinstance.md) 集合         | 如果是 `accessReviewScheduleDefinition` 定期访问评审，则实例表示每个重复周期。 不重复的审阅将只具有一个实例。 实例还表示正在审阅的每个唯一资源 `accessReviewScheduleDefinition` 。 如果审阅具有多个资源和多个实例，则每个资源将具有每个重复周期的唯一实例。 |
+| `instances`               |[accessReviewInstance](accessreviewinstance.md) 集合         | 如果 `accessReviewScheduleDefinition` 为定期访问评审，则实例表示每个重复周期。 不重复的审阅将只具有一个实例。 实例还表示 中正在审阅的每个唯一资源 `accessReviewScheduleDefinition` 。 如果审阅具有多个资源和多个实例，则每个资源将具有每个重复周期的唯一实例。 |
 
 ### <a name="supported-queries-for-accessreviewscheduledefinition"></a>accessReviewScheduleDefinition 支持的查询
-以下是基于[accessReviewScope](accessreviewscope.md)的[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)上支持的查询。
+以下是基于[accessReviewScope](accessreviewscope.md)[的 accessReviewScheduleDefinition](accessreviewscheduledefinition.md)上支持的查询。
 
-|应用场景| 查询 |
+|方案| 查询 |
 |--|--|
-| 列出每个组 (排除作用域为具有来宾用户的所有 `accessReviewScheduleDefinition` Microsoft 365 组)  | /beta/identityGovernance/accessReviews/definitions？$filter=contains (scope/query， '/groups')  |
+| 列出每个单独的组 (不包括作用域为具有来宾用户的所有 `accessReviewScheduleDefinition` Microsoft 365 组)  | /beta/identityGovernance/accessReviews/definitions？$filter=contains (scope/query， '/groups')  |
 | 列出特定组上的每个 (不包括作用域为具有来宾用户的所有 `accessReviewScheduleDefinition` Microsoft 365 组)  | /beta/identityGovernance/accessReviews/definitions？$filter=contains (scope/query， '/groups/{group id}')  |
-| 列出 `accessReviewScheduleDefinition` 每个作用域为具有来宾用户的 Microsoft 365 组 | /beta/identityGovernance/accessReviews/definitions？$filter=contains (scope/query， './members')  |
+| 列出每个 `accessReviewScheduleDefinition` 作用域为包含来宾用户的所有 Microsoft 365 组 | /beta/identityGovernance/accessReviews/definitions？$filter=contains (scope/query， './members')  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

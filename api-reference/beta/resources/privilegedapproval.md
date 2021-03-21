@@ -1,16 +1,16 @@
 ---
 title: privilegedApproval 资源类型
-description: 表示在 Privileged Identity Management 中请求获取角色的审批。
+description: 表示 Privileged Identity Management 中请求进入角色的审批。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 7d7842b89bce06d582aa827b853e4170b0693ff8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8d092d6c877f9fa2bdce2d645ef56a84508c510d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721605"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962586"
 ---
 # <a name="privilegedapproval-resource-type"></a>privilegedApproval 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "50721605"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在 Privileged Identity Management 中请求获取角色的审批。
+表示 Privileged Identity Management 中请求进入角色的审批。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -35,7 +35,7 @@ ms.locfileid: "50721605"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |approvalDuration|持续时间||
-|approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
+|approvalState|approvalState| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
 |approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
@@ -48,8 +48,8 @@ ms.locfileid: "50721605"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 NULL。|
-|request|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 只读。 此角色分配审批对象的请求|
+|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 Null。|
+|request|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 只读。 此角色分配对象的请求|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

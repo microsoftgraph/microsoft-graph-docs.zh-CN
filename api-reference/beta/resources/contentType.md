@@ -5,12 +5,12 @@ title: contentType
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 2af8291f33f62517e33349fb66408131f576e89a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bcd888d01f47b98fa5a55a4b6da2fdfe2028e05b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444292"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962656"
 ---
 # <a name="contenttype-resource-type"></a>contentType 资源类型
 
@@ -18,8 +18,27 @@ ms.locfileid: "50444292"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 SharePoint _中_ 的内容类型。
+表示 SharePoint 中的内容类型。
 内容类型允许您定义一组列，这些列必须存在于列表中的每个 [**listItem**][listItem] [**上**][list]。
+
+## <a name="methods"></a>Methods
+|方法|返回类型|说明|
+|:---|:---|:---|
+|[列出网站中的 contentTypes](../api/site-list-contenttypes.md)|[contentType](../resources/contenttype.md) 集合|获取网站 中的 [contentType](../resources/contenttype.md) 对象及其属性 [的列表](../resources/site.md)。|
+|[列出列表中的 contentTypes](../api/list-list-contenttypes.md)|[contentType](../resources/contenttype.md) 集合|在列表中获取 [contentType](../resources/contenttype.md) 对象及其属性 [的列表](../resources/list.md)。|
+|[为网站创建 contentType](../api/site-post-contenttypes.md)|[contentType](../resources/contenttype.md)|在网站 [中创建新的 contentType](../resources/contenttype.md) [对象](../resources/site.md)。|
+|[获取 contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|读取 [contentType](../resources/contenttype.md) 对象的属性和关系。|
+|[更新 contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|更新 [contentType 对象](../resources/contenttype.md) 的属性。|
+|[删除 contentType](../api/contenttype-delete.md)|无|删除 [contentType](../resources/contenttype.md) 对象。|
+|[isPublished](../api/contenttype-ispublished.md)|Boolean| 检查 [contentType 是否](../resources/contenttype.md) 发布。|
+|[发布](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| 发布 [contentType](../resources/contenttype.md)。|
+|[取消发布](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|取消发布 [contentType](../resources/contenttype.md)。|
+|[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|将网站中的[contentType](../resources/contenttype.md) [副本添加到](../resources/site.md)[列表) 。](../resources/list.md)|
+|[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|将 [contentType](../resources/contenttype.md) 与中心网站列表关联。|
+|[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| 将文件复制到 contentType 中的默认 [内容位置](../resources/contenttype.md)。|
+|[List columns](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columnDefinition.md) 集合|获取 **contentType** 中的列的集合，这些列表示为 [columnDefinition](../resources/columnDefinition.md)资源。|
+|[创建列](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|向网站或 **列表中的内容** 类型添加列。|
+
 
 ## <a name="properties"></a>属性
 
@@ -33,13 +52,13 @@ ms.locfileid: "50444292"
 | **名称**          | string               | 内容类型的名称。
 | **order**         | [contentTypeOrder][] | 指定在选择 UI 中显示内容类型的顺序。
 | **parentId**      | string               | 内容类型的唯一标识符。
-| **readOnly**      | 布尔              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
-| **sealed**        | 布尔              | 如果为 `true`，则不能由用户或通过下推操作修改内容类型。 只有网站集管理员可以密封或解封内容类型。
-| **isBuiltIn**            | 布尔| 指定内容类型是内置内容类型。 
+| **readOnly**      | Boolean              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
+| **sealed**        | Boolean              | 如果为 `true`，则不能由用户或通过下推操作修改内容类型。 只有网站集管理员可以密封或解封内容类型。
+| **isBuiltIn**            | Boolean| 指定内容类型是否内置内容类型。 
 | **documentSet**       | [documentSet][]      | [文档集](https://docs.microsoft.com/sharepoint/governance/document-set-planning#about-document-sets) 元数据。
-| **documentTemplate**  | [documentSetContent][] | 文档模板元数据。 若要确保文档在网站及其子网站中具有一致的内容，可以将 Word、Excel 或 PowerPoint 模板与网站内容类型关联。
-| **associatedHubsUrls**       | 集合 (字符串)  | 与此内容类型关联的中心网站的规范 URL 列表。 这将包含此内容类型已排入队列以强制执行或已强制执行的所有中心网站。 强制执行内容类型意味着内容类型将应用于强制网站中的列表。
-| **propagateChanges**   | 布尔              | 如果 `true` ，对内容类型进行的任何更改都将推送到实现内容类型的继承内容类型和列表。
+| **documentTemplate**  | [documentSetContent][] | 文档模板元数据。 若要确保文档在网站及其子网站中具有一致的内容，您可以将 Word、Excel 或 PowerPoint 模板与网站内容类型关联。
+| **associatedHubsUrls**       | 集合 (字符串)  | 与此内容类型关联的中心网站的规范 URL 列表。 这将包含此内容类型已排队以强制执行或已强制执行的所有中心网站。 强制实施内容类型意味着内容类型将应用于强制网站中的列表。
+| **propagateChanges**   | Boolean              | 如果为 ，则对内容类型进行的任何更改都将推送到实现该内容类型的继承 `true` 内容类型和列表。
 
 
 

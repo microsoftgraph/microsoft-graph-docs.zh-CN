@@ -1,21 +1,21 @@
 ---
 title: 列出 Todo 任务
-description: 从指定 todoTaskList 的任务导航属性获取 todoTask 资源。
+description: 从指定的 todoTaskList 的任务导航属性获取 todoTask 资源。
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eaa56486c1198f58171202ecf4651d9364e42f75
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f95864aa3988f7e5598376e202c9b8d697184458
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873533"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963366"
 ---
 # <a name="list-tasks"></a>列出任务
 命名空间：microsoft.graph
 
-从指定 **todoTaskList** 的任务导航属性获取 [todoTask 资源](../resources/todotasklist.md)。
+从 **指定的 todoTaskList** 的任务导航属性获取 [todoTask 资源](../resources/todotasklist.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [todoTask](../resources/todotask.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [todoTask](../resources/todotask.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -61,26 +61,26 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 <!-- {
   "blockType": "request",
   "sampleKeys": ["35e2-35e2-721a-e235-1a72e2351a7"],
-  "name": "get_todotask"
+  "name": "get_todotask_2"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/todo/lists/35e2-35e2-721a-e235-1a72e2351a7/tasks
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-todotask-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-todotask-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-todotask-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-todotask-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-todotask-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-todotask-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-todotask-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-todotask-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

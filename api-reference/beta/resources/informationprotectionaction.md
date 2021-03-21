@@ -1,16 +1,16 @@
 ---
 title: informationProtectionAction 资源类型
-description: 介绍 abtract informationProtectionAction 实体。
+description: 描述 abtract informationProtectionAction 实体。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 84526bea53b7261960044515f515a7c210333100
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20b7815ec975aae4765c1d35324d73afab24f8b8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016483"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962607"
 ---
 # <a name="informationprotectionaction-resource-type"></a>informationProtectionAction 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48016483"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**InformationProtectionAction**是一个作为任何信息保护评估 api 的结果返回的抽象实体。 对象包含以下一个或多个操作，这些操作指示应用程序如何应用、更新或删除信息保护标签。 
+**informationProtectionAction** 是作为任何信息保护评估 API 的结果返回的抽象实体。 对象包含以下一个或多个操作，用于指示应用程序如何应用、更新或删除信息保护标签。 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
-* [addWatermarkAction](../resources/addwatermarkaction.md)
+* [addActionmarkAction](../resources/addwatermarkaction.md)
 * [applyLabelAction](../resources/applylabelaction.md)
 * [customAction](../resources/customaction.md)
 * [justifyAction](../resources/justifyaction.md)
@@ -34,7 +34,7 @@ ms.locfileid: "48016483"
 * [removeContentFooterAction](../resources/removecontentfooteraction.md)
 * [removeContentHeaderAction](../resources/removecontentheaderaction.md)
 * [removeProtectionAction](../resources/removeprotectionaction.md)
-* [removeWatermarkAction](../resources/removewatermarkaction.md)
+* [remove使用markAction](../resources/removewatermarkaction.md)
 
 ## <a name="properties"></a>属性
 

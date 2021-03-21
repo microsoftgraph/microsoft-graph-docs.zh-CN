@@ -1,22 +1,22 @@
 ---
 title: conditionalAccessConditionSet 资源类型
-description: 表示在应用策略时控制的条件类型。
+description: 表示策略应用时所控制的条件类型。
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ff7159c09b0afcaf223a5840584d531e99be2da6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3d448b2d54fbc94c63588712f06492ce7d38a33a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132132"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962495"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
 命名空间：microsoft.graph
 
-表示在应用策略时控制的条件类型。
+表示策略应用时所控制的条件类型。
 
 ## <a name="properties"></a>属性
 
@@ -24,11 +24,11 @@ ms.locfileid: "50132132"
 |:-------------|:------------|:------------|
 |应用程序|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必填。 |
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必填。 |
-|clientAppTypes|String collection| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。|
+|clientAppTypes|conditionalAccessClientApp 集合| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。 必填。|
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含的位置和从策略中排除的位置。 |
-|平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含的平台和从策略中排除的平台。 |
-|signInRiskLevels|String collection| 策略中包含的登录风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
-|userRiskLevels|String collection| 策略中包含的用户风险级别。 可取值为：`low`、`medium`、`high`。|
+|平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含和排除的平台。 |
+|signInRiskLevels|riskLevel 集合| 策略中包含的登录风险级别。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。 必填。|
+|userRiskLevels|riskLevel 集合| 策略中包含的用户风险级别。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。 必填。|
 
 ## <a name="relationships"></a>关系
 

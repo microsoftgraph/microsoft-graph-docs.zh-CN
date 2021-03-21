@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0e3b0287e74c2f0c34f5a6cba7a321d4392e2780
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7e906a425a98ab77667e2bc47fd2cb8030432eff
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964010"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50969977"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ProfileCardProperty profileCardProperty = new ProfileCardProperty();
 profileCardProperty.directoryPropertyName = "CustomAttribute1";

@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1362f306040c35f7df42021338ed6c1f475e9923
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2030dd0ba575e95c00d470336460b1106335ae2d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978604"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50983439"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String displayName = "Library Assist";
 
@@ -22,7 +22,15 @@ EnumSet<ClonableTeamParts> partsToClone = EnumSet.of(ClonableTeamParts.APPS,Clon
 TeamVisibilityType visibility = TeamVisibilityType.PUBLIC;
 
 graphClient.teams("{id}")
-    .clone(displayName,description,mailNickname,null,visibility,partsToClone)
+    .clone(TeamCloneParameterSet
+        .newBuilder()
+        .withDisplayName(displayName)
+        .withDescription(description)
+        .withMailNickname(mailNickname)
+        .withClassification(null)
+        .withVisibility(visibility)
+        .withPartsToClone(partsToClone)
+        .build())
     .buildRequest()
     .post();
 

@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 386c118504141b7bc1b1dde4cbdaabd2b6b9651e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 614f6ed6478b1cdfc388d9280a0cdcb61506c018
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979948"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50973596"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
 DriveRecipient recipients = new DriveRecipient();
@@ -25,7 +25,11 @@ LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("read");
 
 graphClient.shares("{encoded-sharing-url}").permission()
-    .grant(rolesList,recipientsList)
+    .grant(PermissionGrantParameterSet
+        .newBuilder()
+        .withRoles(rolesList)
+        .withRecipients(recipientsList)
+        .build())
     .buildRequest()
     .post();
 

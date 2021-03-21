@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b1eee93b3f80b6d7d916f38d783ca94cef8e81a1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c52322928b5ef2e2538031ae8c251bc9c1a4caac
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133054"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962509"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>cloudAppSecuritySessionControl 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50133054"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | 指定是否启用会话控件。 |
-|cloudAppSecurityType|String| 可能的值是：`mcasConfigured`、`monitorOnly`、`blockDownloads`、`unknownFutureValue`。 有关详细信息，请参阅为特别推荐 [的应用部署条件访问应用控件](/cloud-app-security/proxy-deployment-aad)。 |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| 可取值为：`mcasConfigured`、`monitorOnly`、`blockDownloads`、`unknownFutureValue`。 有关详细信息，请参阅为特色 [应用部署条件访问应用控制](/cloud-app-security/proxy-deployment-aad)。 |
 
 ## <a name="relationships"></a>关系
 

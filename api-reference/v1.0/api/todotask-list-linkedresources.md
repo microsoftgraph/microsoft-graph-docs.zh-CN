@@ -5,17 +5,17 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 827c0f0065239a89dc1fb4197eb59ddf1b26d18a
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: ab6f7984a7202ebe12cab0be465deb8e6797dee0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874408"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963440"
 ---
 # <a name="list-linkedresources"></a>列出 linkedResources
 命名空间：microsoft.graph
 
-根据创建指定任务的合作伙伴应用程序中的一 [个或多个项目的信息](../resources/todotask.md) 。 信息在每个项目的 [linkedResource](../resources/linkedresource.md) 对象中表示。 它包括合作伙伴应用程序中项的外部 ID，如果适用，还包括指向应用程序中该项目的深层链接。
+根据创建指定任务的合作伙伴应用程序中的一个或多个项目 [的信息](../resources/todotask.md) 。 信息在每个项目的 [linkedResource](../resources/linkedresource.md) 对象中表示。 它包括合作伙伴应用程序中该项目的外部 ID，如果适用，还包括指向应用程序中该项目的深层链接。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/lin
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [linkedResource](../resources/linkedresource.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [linkedResource](../resources/linkedresource.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -61,26 +61,26 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/lin
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29"],
-  "name": "get_linkedresource"
+  "name": "get_linkedresource_2"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-linkedresource-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-linkedresource-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-linkedresource-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-linkedresource-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-linkedresource-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-linkedresource-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-linkedresource-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-linkedresource-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

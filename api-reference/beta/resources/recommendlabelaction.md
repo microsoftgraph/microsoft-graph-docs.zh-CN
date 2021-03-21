@@ -1,16 +1,16 @@
 ---
 title: recommendLabelAction 资源类型
-description: 表示一个标签，应根据敏感信息类型向用户推荐针对该文件的应用程序。
+description: 表示应建议用户根据敏感信息类型向文件应用的标签。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: b5deebaec460bd8c1993cc0c308e68e6f6f986a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 10d3ac687605ab648cdd3d68d6a3721c8fba2e30
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055181"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962572"
 ---
 # <a name="recommendlabelaction-resource-type"></a>recommendLabelAction 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48055181"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个标签，应根据所发现的敏感信息类型向用户推荐针对该文件的应用程序。 如果 Microsoft 信息保护标记策略设置为 "**推荐**" 和 "标签"，而不是 "强制" 标签，则[evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md)可能会返回**recommendLabelAction** 。 用户或 appliation 可以选择忽略或接受建议。 
+表示应建议用户根据发现的敏感信息类型向文件应用的标签。 如果 Microsoft 信息保护标签策略设置为推荐和标签，而不是强制执行标签，[则 evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md)可能会返回 **recommendLabelAction。**  用户或应用可以选择忽略或接受建议。 
 
 ## <a name="properties"></a>属性
 
 | 属性                    | 类型                                                                     | 说明                                                           |
 | :-------------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------- |
 | actionSource                | String                                                                   | 可能的值是：`manual`、`automatic`、`recommended`、`default`。 |
-| actions                     | [informationProtectionAction](informationprotectionaction.md) 集合 | 用户接受标签时要执行的操作。                                                                       |
-| label                       | [labelDetails](labeldetails.md)                                          | 建议使用的标签。                                                                      |
-| responsibleSensitiveTypeIds | Guid 集合                                                          | 导致提供建议的敏感信息类型 Guid。                                                                      |
+| actions                     | [informationProtectionAction](informationprotectionaction.md) 集合 | 用户接受标签时要采取的操作。                                                                       |
+| label                       | [labelDetails](labeldetails.md)                                          | 建议的标签。                                                                      |
+| responsibleSensitiveTypeIds | Guid 集合                                                          | 导致给出建议的敏感信息类型 GUID。                                                                      |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

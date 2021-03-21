@@ -1,29 +1,29 @@
 ---
 title: conditionalAccessPlatforms 资源类型
-description: 策略范围内包含和排除的平台。
+description: 策略作用域中包含和排除的平台。
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6d5a6d85e1341a7c742c1691a8fa126b1d5644dd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b6dac42062d84746196caaa0a11c26af1549b555
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130779"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962481"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>conditionalAccessPlatforms 资源类型
 
 命名空间：microsoft.graph
 
-策略范围内包含和排除的平台。
+策略作用域中包含和排除的平台。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|includePlatforms|String collection| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`all` 或 `unknownFutureValue`。|
-|excludePlatforms|String collection| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`unknownFutureValue`。|
+|includePlatforms|conditionalAccessDevicePlatform 集合| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`all` 或 `unknownFutureValue`。|
+|excludePlatforms|conditionalAccessDevicePlatform 集合| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`all`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 

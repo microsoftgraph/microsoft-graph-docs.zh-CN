@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 531b688fe64f4cadb7a23cbc7db6cba313b86a0c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4eb1cbdcbf0a1256c2bf2bf0cec35479b8bbc2cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440474"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962621"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -30,9 +30,9 @@ ms.locfileid: "50440474"
 |[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| 还原最近删除的项目。 |
 |[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) 集合| 获取最近删除的项目列表。 |
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | 无 | 永久删除项目。 |
-|[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 列出用户拥有的目录项。 |
-|[列出 featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) 集合 | 检索 featureRolloutPolicy 对象的列表。 |
-|[创建 featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 创建新的 featureRolloutPolicy 对象。 |
+|[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 列出用户拥有的目录项。 |
+|[列出 featureRolloutPolicies](../api/list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) 集合 | 检索 featureRolloutPolicy 对象的列表。 |
+|[创建 featureRolloutPolicy](../api/post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 创建新的 featureRolloutPolicy 对象。 |
 | [获取 featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 检索 featurerolloutpolicy 对象的属性和关系。 |
 | [更新 featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 更新 featurerolloutpolicy 对象的属性。 |
 | [删除 featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | 无 | 删除 featureRolloutPolicy 对象。 |
@@ -45,7 +45,7 @@ ms.locfileid: "50440474"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|DeletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 只读。 可为 NULL。|
+|DeletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 只读。 可为 Null。|
 |featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) 集合| 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -1,38 +1,30 @@
 ---
 title: meetingParticipantInfo 资源类型
-description: 会议参与者的相关信息。
+description: 有关会议参与者的信息。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a642532579d127fdeb48b4c69524975b293ff959
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 40209354f1621839bd51a20fcbafa4cd58b4fd8d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48741997"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962453"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo 资源类型
 
 命名空间：microsoft.graph
 
-会议参与者的相关信息。
+有关会议参与者的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型                          | 说明                                                                         |
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
-| 窃取 | [identitySet](identityset.md) | 参与者的标识信息。                                            |
+| identity | [identitySet](identityset.md) | 参与者的身份信息。                                            |
 | upn      | String                        | 参与者的用户主体名称。                                             |
-| role     | onlineMeetingRole             | 指定参与者在会议中的角色。  下表中列出了可能的值。 |
-
-### <a name="onlinemeetingrole-values"></a>onlineMeetingRole 值
-
-| 值              | 说明                     |
-| ------------------ | ------------------------------- |
-| attendee           | 参与者是与会者。 |
-| 演示者          | 参与者是演示者。 |
-| 向 unknownfuturevalue | 未知的未来值。           |
+| role     | onlineMeetingRole             | 指定会议参与者的角色。  可取值为：`attendee`、`presenter` 和 `unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
