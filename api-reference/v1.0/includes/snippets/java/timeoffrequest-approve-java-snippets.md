@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 16a27b3d813f925f5493abe02e1a43d2fbbf43af
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 61e2038a2da4de15e1567afc4d08e84cb460e6b6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217919"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50974634"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String message = "message-value";
 
 graphClient.teams("{teamId}").schedule().timeOffRequests("{timeOffRequestId}")
-    .approve(message)
+    .approve(ScheduleChangeRequestApproveParameterSet
+        .newBuilder()
+        .withMessage(message)
+        .build())
     .buildRequest()
     .post();
 

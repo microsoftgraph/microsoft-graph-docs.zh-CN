@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bdfedcc3e8f4f7eee82edb84b431f42ac2b68ff2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8fa773a711c57b9dda66bc8d8c18b44d1a4d754c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983147"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978969"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRangeFormat workbookRangeFormat = new WorkbookRangeFormat();
 workbookRangeFormat.columnWidth = 135d;
@@ -19,7 +19,10 @@ workbookRangeFormat.rowHeight = 49d;
 workbookRangeFormat.wrapText = false;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
-    .range("$C$1").format()
+    .range(WorkbookWorksheetRangeParameterSet
+        .newBuilder()
+        .withAddress("$C$1")
+        .build()).format()
     .buildRequest()
     .patch(workbookRangeFormat);
 

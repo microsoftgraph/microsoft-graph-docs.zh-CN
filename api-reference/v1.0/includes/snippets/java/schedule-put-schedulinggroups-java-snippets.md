@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 57233e499bc8b6a56965d47d09e605302088df49
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: dfc5ee3fa1e4ee810f4bbcb66e2bc937615c9d02
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684595"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50977793"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "return=representation"));
@@ -24,6 +24,6 @@ schedulingGroup.userIds = userIdsList;
 
 graphClient.teams("{teamId}").schedule().schedulingGroups("{schedulingGroupId}")
     .buildRequest( requestOptions )
-    .patch(schedulingGroup);
+    .put(schedulingGroup);
 
 ```
