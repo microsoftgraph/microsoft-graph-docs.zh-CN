@@ -2,15 +2,15 @@
 title: 删除订阅
 description: 删除订阅。
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 7a2495bb7af062474e653c22005f64bff77f11e8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ec250fe5ea9809e530f04df3d41ad883f30763b4
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961370"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031021"
 ---
 # <a name="delete-subscription"></a>删除订阅
 

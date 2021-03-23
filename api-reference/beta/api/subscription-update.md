@@ -2,15 +2,15 @@
 title: 更新订阅
 description: 通过延长到期时间续订订阅。
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 30bbf91e1e9b1af1d99fee1de638ab6618ac4479
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 4313b3f64bc4e16afc5ac0c1dce4d4fe476b09fd
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092692"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031033"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -20,13 +20,13 @@ ms.locfileid: "50092692"
 
 通过延长到期时间续订订阅。
 
-"权限" [部分](#permissions) 中的表列出了支持订阅更改通知的资源。
+"权限 ["部分](#permissions) 中的表列出了支持订阅更改通知的资源。
 
-订阅在时间长度因资源类型而异后过期。 为了避免缺少更改通知，应用应在到期日期之前很好地续订其订阅。 请参阅 [订阅](../resources/subscription.md) ，了解每种资源类型的订阅的最大长度。
+订阅在时间长度因资源类型而异后过期。 为了避免缺少更改通知，应用应在到期日期之前提前续订其订阅。 请参阅 [订阅](../resources/subscription.md) ，了解每种资源类型的订阅的最大长度。
 
 ## <a name="permissions"></a>权限
 
-根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -160,7 +160,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json"
 }
 ```
 

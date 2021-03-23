@@ -1,16 +1,16 @@
 ---
 title: 列出订阅
-description: " 有关详细信息，请参阅以下方案。"
+description: " 有关详细信息，请参阅下面的方案。"
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 5ce70af9462ab0669dade856725f2589257743e2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: change-notifications
+ms.openlocfilehash: 25b37c652eac03eb827abfc4f6b43481e8d3e8c3
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972039"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031007"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -18,7 +18,7 @@ ms.locfileid: "48972039"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 webhook 订阅的列表。 响应的内容取决于在其中调用应用程序的上下文。有关详细信息，请参阅以下方案。
+检索 webhook 订阅列表。 响应的内容取决于应用调用的上下文;有关详细信息，请参阅下面的方案。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48972039"
 
 | 权限类型  | 权限（从最低特权到最高特权）  |
 |:---------------- |:-------------------------------------------- |
-| [委派](/graph/auth-v2-user) (工作或学校帐户)  | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。读取。所有 (请参阅下面) 。 |
-| [委派](/graph/auth-v2-user) (个人 Microsoft 帐户)  | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。读取。所有 (请参阅下面) 。 |
-| [应用程序](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
+| [委派 (](/graph/auth-v2-user) 工作或学校帐户)  | 创建订阅 [或](subscription-post-subscriptions.md) Subscription.Read.All (请参阅下面的) 。 |
+| [委派 (](/graph/auth-v2-user) 个人 Microsoft 帐户)  | 创建订阅 [或](subscription-post-subscriptions.md) Subscription.Read.All (请参阅下面的) 。 |
+| [应用程序](/graph/auth-v2-service) | 创建订阅 [所需的权限](subscription-post-subscriptions.md)。 |
 
 响应结果基于调用应用的上下文。 以下是常见方案的摘要：
 
@@ -48,8 +48,8 @@ ms.locfileid: "48972039"
 
 | 调用应用程序的上下文 | 响应包含 |
 |:-----|:---------------- |
-| 应用程序代表已登录用户（委派权限）进行调用。 *用户是非管理员* 。 <br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **任何应用** 仅为登录用户创建的订阅。 |
-| 应用程序代表已登录用户（委派权限）进行调用。 *用户是管理员* 。<br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这仅适用于工作/学校帐户。 | **任何应用** 为目录中的 **任何用户** 创建的订阅。|
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是非管理员*。 <br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **任何应用** 仅为登录用户创建的订阅。 |
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是管理员*。<br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这仅适用于工作/学校帐户。 | **任何应用** 为目录中的 **任何用户** 创建的订阅。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应。 将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",
@@ -142,7 +142,8 @@ Content-length: 586
       "latestSupportedTlsVersion": "v1_2",
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
-      "includeResourceData": false
+      "includeResourceData": false,
+      "notificationContentType": "application/json"
     }
   ]
 }

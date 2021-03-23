@@ -5,12 +5,12 @@ author: jahsu
 localization_priority: Priority
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0d4cbaabb6fc05df3d9a58d1ced467bee0b8ef04
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: f5413cc178f220b34c37aa1fc4840596003561bc
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515728"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031105"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>订阅使用 Microsoft Graph 更改云打印 API 的通知
 
@@ -47,11 +47,11 @@ ms.locfileid: "50515728"
 
 若要订阅打印作业通知，应用程序必须具有在客户的 Azure AD 租户中批准的下列权限范围： 
 
-* 对于 printTask 触发（作业启动）事件，"获取任务定义 [中列出的权限](/graph/api/printtaskdefinition-get?view=graph-rest-beta&tabs=http%22%20%5Cl%20%22permissions%22%20%5C)。 
+* 对于 printTask 触发（作业启动）事件，"获取任务定义 [中列出的权限](/graph/api/printtaskdefinition-get?view=graph-rest-v1.0&tabs=http%22%20%5Cl%20%22permissions%22%20%5C)。 
 
-* 对于 JobFable 事件，"创建订阅" [中列出的](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http)。
+* 对于 JobFable 事件，"创建订阅" [中列出的](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http)。
 
-应用程序必须 [Microsoft Graph API 请求标头中生成](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-beta) Azure AD 安全令牌。 安全令牌包含按管理员批准的客户 Azure AD 租户范围内声明声明。  
+应用程序必须 [Microsoft Graph API 请求标头中生成](/graph/auth-v2-service?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) Azure AD 安全令牌。 安全令牌包含按管理员批准的客户 Azure AD 租户范围内声明声明。  
 
 
 ## <a name="create-subscription-printtask-triggered-jobstarted-event"></a>创建订阅：printTask 触发（作业启动）事件 
@@ -60,20 +60,20 @@ ms.locfileid: "50515728"
 
 在创建打印任务 **-** 事件的通知之前，请确保应用程序创建了以下应用程序： 
 
-- 一[Azure AD](/graph/api/print-post-taskdefinitions?view=graph-rest-beta&tabs=http) printTaskDefinition 应用程序。 单个任务定义可在同一 Azure AD 租户中的一个或多个打印机关联。 
+- 一[Azure AD](/graph/api/print-post-taskdefinitions?view=graph-rest-v1.0&tabs=http) printTaskDefinition 应用程序。 单个任务定义可在同一 Azure AD 租户中的一个或多个打印机关联。 
 
-- 针对 [开始新打印作业时，合作伙伴希望接收其通知的每个打印机队列的](/graph/api/printer-post-tasktriggers?view=graph-rest-beta&tabs=http) "PrintTaskTri你邮件"标签。 **printTaskDefinition** 需要绑定到 **PrintTaskDefinition**。 
+- 针对 [开始新打印作业时，合作伙伴希望接收其通知的每个打印机队列的](/graph/api/printer-post-tasktriggers?view=graph-rest-v1.0&tabs=http) "PrintTaskTri你邮件"标签。 **printTaskDefinition** 需要绑定到 **PrintTaskDefinition**。 
 
 >[!NOTE]
 >一个打印机只能与一个 **printTaskTriition** 和一个 **printTaskTriition** 只能与一 **printTaskDefinition**。 但是，一 **printTaskDefinition** 可以具有一 **一个或多个 printTaskTriitions** 与其关联。 
 
-使用客户的 Azure A [D 租户 **printTaskDefinition**，该应用程序可以使用 printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http)为 printTask 触发（作业启动）事件创建订阅。 创建订阅时：  
+使用客户的 Azure A [D 租户 **printTaskDefinition**，该应用程序可以使用 printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http)为 printTask 触发（作业启动）事件创建订阅。 创建订阅时：  
 
 * `resource` 字段需要设置为 `print/taskDefinitions/{printTaskDefinition ID}/tasks`。 
 * `changeType` 字段需要设置为 `created`。 
-* " `expirationDateTime` "字段需要小于 [最大到期日期](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type)。 
+* " `expirationDateTime` "字段需要小于 [最大到期日期](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type)。 
 
-如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/subscription?view=graph-rest-beta#properties)。
+如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/subscription?view=graph-rest-v1.0#properties)。
 
 下面展示了示例请求。
 <!-- {
@@ -81,7 +81,7 @@ ms.locfileid: "50515728"
   "name": "create_subscription"
 }--> 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions 
+POST https://graph.microsoft.com/v1.0/subscriptions 
 Content-Type: application/json
 { 
     "changeType":"created", 
@@ -103,7 +103,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 Content-Type: application/json
 { 
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity", 
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity", 
     "id": "{Subscription ID}", 
     "resource": "print/taskDefinitions/{printTaskDefinition ID}/tasks", 
     "applicationId": "{application ID}", 
@@ -131,9 +131,9 @@ Content-Type: application/json
 * " `resource` "字段需要设置为"print/printer/{printer id}/jobs"。 
 * `changeType` 字段需要设置为 `updated`。 
 * `notificationQueryOptions` 字段需要设置为 `$filter = isFetchable eq true`。 
-* " `expirationDateTime` "字段需要小于 [最大到期日期](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type)。 
+* " `expirationDateTime` "字段需要小于 [最大到期日期](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type)。 
 
-如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/subscription?view=graph-rest-beta#properties)。
+如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/subscription?view=graph-rest-v1.0#properties)。
 
 下面展示了示例请求。
 <!-- {
@@ -141,7 +141,7 @@ Content-Type: application/json
   "name": "create_subscription"
 }--> 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
     "changeType":"updated",
@@ -164,7 +164,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 Content-Type: application/json
 { 
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity", 
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity", 
     "id": "{Subscription ID}", 
     "resource": "print/printers/{printer ID}/jobs", 
     "applicationId": "{Application ID}", 
@@ -185,11 +185,11 @@ Content-Type: application/json
 
 ## <a name="renewing-a-notification-subscription"></a>续订通知订阅
 
-Microsoft Graph 对到期时间有限制。 有关详细信息，请参阅 [的到期日期](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type)。 若要继续接收通知，需使用更新订阅 API 更新 [定期续订](/graph/api/subscription-update?view=graph-rest-beta&tabs=http)。 
+Microsoft Graph 对到期时间有限制。 有关详细信息，请参阅 [的到期日期](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type)。 若要继续接收通知，需使用更新订阅 API 更新 [定期续订](/graph/api/subscription-update?view=graph-rest-v1.0&tabs=http)。 
 
 ## <a name="other-operations-on-notification-subscriptions"></a>通知订阅的其他操作 
 
-应用程序 [获取](/graph/api/subscription-get?view=graph-rest-beta&tabs=http) 的详细信息，或者 [删除](/graph/api/subscription-delete?view=graph-rest-beta&tabs=http) 订阅。 有关详细信息，请参阅 [Microsoft Graph API 通过更改通知](/graph/api/resources/webhooks?view=graph-rest-beta)。
+应用程序 [获取](/graph/api/subscription-get?view=graph-rest-v1.0&tabs=http) 的详细信息，或者 [删除](/graph/api/subscription-delete?view=graph-rest-v1.0&tabs=http) 订阅。 有关详细信息，请参阅 [Microsoft Graph API 通过更改通知](/graph/api/resources/webhooks?view=graph-rest-v1.0)。
 
 
 ## <a name="faqs"></a>常见问题
@@ -201,7 +201,7 @@ Microsoft Graph 将验证创建订阅前订阅请求的 **notificationurl** 属�
 应用程序应处理和确认他们收到的每个更改通知。 有关详细信息，请参阅 [更改通知](/graph/webhooks#processing-the-change-notification)。
 
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>如何获取活动订阅列表？
-若要详细了解如何检索 Web 网站订阅列表，请参阅 [订阅](/graph/api/subscription-list?view=graph-rest-beta&tabs=http)。
+若要详细了解如何检索 Web 网站订阅列表，请参阅 [订阅](/graph/api/subscription-list?view=graph-rest-v1.0&tabs=http)。
 
 
 ## <a name="see-also"></a>另请参阅

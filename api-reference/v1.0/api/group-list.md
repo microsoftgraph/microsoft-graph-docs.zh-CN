@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5e756f71e96f2079ed25b6e856275dbf8385d7d1
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: 206df57a4d095a18395b90ec160ea5208b5194a5
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368185"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031063"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -38,13 +38,13 @@ GET /groups
 ## <a name="optional-query-parameters"></a>可选的查询参数
 若要仅列出 Microsoft 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
 <!-- { "blockType": "ignored" } -->
-```
+```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
 可以使用 OData 查询选项 `$orderby`，按 **displayName** 值对组织中的组进行排序，如下面的示例所示：
 <!-- { "blockType": "ignored" } -->
-```
+```http
 GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```
 
@@ -118,18 +118,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
-  "value": [
-    {
-      "id": "11111111-2222-3333-4444-555555555555",
-      "mail": "group1@contoso.com",
-      "mailEnabled": true,
-      "mailNickname": "ContosoGroup1",
-      "securityEnabled": true
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "value":[
+      {
+         "id":"11111111-2222-3333-4444-555555555555",
+         "mail":"group1@contoso.com",
+         "mailEnabled":true,
+         "mailNickname":"ContosoGroup1",
+         "securityEnabled":true
+      }
+   ]
 }
-
 ```
 
 ### <a name="example-2-get-a-filtered-list-of-groups-including-the-count-of-returned-objects"></a>示例 2：获取组的筛选列表（包括返回的对象数）
@@ -162,18 +161,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
-  "@odata.count":2,
-  "value": [
-    {
-      "id": "11111111-2222-3333-4444-555555555555",
-      "displayName": "Contoso Group 1"
-    },
-    {
-      "id": "22222222-3333-4444-5555-666666666666",
-      "displayName": "Contoso Group 2"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
+   "@odata.count":2,
+   "value":[
+      {
+         "id":"11111111-2222-3333-4444-555555555555",
+         "displayName":"Contoso Group 1"
+      },
+      {
+         "id":"22222222-3333-4444-5555-666666666666",
+         "displayName":"Contoso Group 2"
+      }
+   ]
 }
 ```
 
@@ -202,9 +201,9 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`893`
+893
+```
 
 ### <a name="example-4-use-filter-and-top-to-get-one-group-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 $filter 和 $top 获取显示名称以“a”开头（包括返回的对象数）的组。
 
@@ -238,14 +237,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-  "@odata.count":1,
-  "value":[
-    {
-      "displayName":"a",
-      "mailNickname":"a241"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "@odata.count":1,
+   "value":[
+      {
+         "displayName":"a",
+         "mailNickname":"a241"
+      }
+   ]
 }
 ```
 
@@ -281,15 +280,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-  "@odata.count":1396,
-  "value":[
-    {
-      "displayName":"SFA Videos",
-      "mail":"SFAVideos@service.contoso.com",
-      "mailNickname":"SFAVideos"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "@odata.count":1396,
+   "value":[
+      {
+         "displayName":"SFA Videos",
+         "mail":"SFAVideos@service.contoso.com",
+         "mailNickname":"SFAVideos"
+      }
+   ]
 }
 ```
 
@@ -325,21 +324,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-  "@odata.count":1396,
-  "value":[
-    {
-      "displayName":"SFA Videos",
-      "mail":"SFAVideos@service.contoso.com",
-      "mailNickname":"SFAVideos"
-    },
-    {
-      "description":"Video Production",
-      "displayName":"Video Production",
-      "mail":"videoprod@service.contoso.com",
-      "mailNickname":"VideoProduction"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "@odata.count":1396,
+   "value":[
+      {
+         "displayName":"SFA Videos",
+         "mail":"SFAVideos@service.contoso.com",
+         "mailNickname":"SFAVideos"
+      },
+      {
+         "description":"Video Production",
+         "displayName":"Video Production",
+         "mail":"videoprod@service.contoso.com",
+         "mailNickname":"VideoProduction"
+      }
+   ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

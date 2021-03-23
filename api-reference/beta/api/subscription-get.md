@@ -2,15 +2,15 @@
 title: 获取订阅
 description: 检索订阅的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 058d4e918b629d0ff1572dffb2a38228de56afdf
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: a9ede7680a12864d3b5d0013fac90a4717c8e3b3
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092727"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031014"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -20,11 +20,11 @@ ms.locfileid: "50092727"
 
 检索订阅的属性和关系。
 
-有关支持订阅更改通知[](#permissions)的资源列表，请参阅"权限"部分中的表。
+请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。
 
 ## <a name="permissions"></a>权限
 
-根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -159,7 +159,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json"
 }
 ```
 

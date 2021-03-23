@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft Graph 资源数据发生更改时接收更改通知。
+description: 订阅侦听器应用程序，以在 Microsoft Graph 资源上的数据发生更改时接收更改通知。
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 191036a8df1ab58362bf26138722d7212aa2ee69
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: f89720d18db554a8700e5d14b2bafd15d92d5f0f
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092741"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031028"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -20,13 +20,13 @@ ms.locfileid: "50092741"
 
 订阅侦听器应用程序，以在 Microsoft Graph 中指定资源发生的更改属于请求的更改类型时接收更改通知。
 
-有关支持订阅更改通知[](#permissions)的资源列表，请参阅"权限"部分中的表。
+请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。
 
 ## <a name="permissions"></a>权限
 
 创建订阅需要对资源的读取权限。 例如，若要获取邮件更改通知，您的应用程序需要 Mail.Read 权限。 
 
-根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -90,7 +90,7 @@ POST /subscriptions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码[](../resources/subscription.md)和订阅对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 [响应](../resources/subscription.md) 代码和 subscription 对象。
 
 要详细了解错误返回方式，请参阅[错误响应][error-response]。
 
@@ -158,7 +158,7 @@ Content-type: application/json
 |[组](../resources/group.md)|`groups`|
 |[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[状态](../resources/presence.md)| `/communications/presences/{id}` (单个用户) ， (`/communications/presences?$filter=id in ({id},{id}…)` 多个用户) |
+|[状态](../resources/presence.md)| `/communications/presences/{id}` (单个用户) ， (`/communications/presences?$filter=id in ({id},{id}…)` 多个) |
 |[打印机](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[用户](../resources/user.md)|`users`|
@@ -193,13 +193,14 @@ Content-length: 252
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-  "latestSupportedTlsVersion": "v1_2"
+  "latestSupportedTlsVersion": "v1_2",
+  "notificationContentType": "application/json"
 }
 ```
 
 ### <a name="notification-endpoint-validation"></a>通知终结点验证
 
-notificationUrl (中指定的订阅通知终结点) 必须能够响应验证请求，如"设置用户数据更改通知["中所述](/graph/webhooks#notification-endpoint-validation)。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
+notificationUrl (中指定的订阅通知终结点) 必须能够响应验证请求，如设置用户数据更改[的通知中所述](/graph/webhooks#notification-endpoint-validation)。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
 
 [error-response]: /graph/errors
 

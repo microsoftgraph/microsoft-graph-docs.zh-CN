@@ -1,17 +1,8 @@
 ---
-title: 列出订阅
-description: 根据应用程序 ID、用户和用户的角色（含租户）检索 webhook 订阅的属性和关系。
-localization_priority: Priority
-author: davidmu1
-ms.prod: ''
-doc_type: apiPageType
-ms.openlocfilehash: 98b21b3ee8e049c4c3069406328be364fb89b0e2
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742216"
+title： "List subscriptions" description： "Retrieve the properties and relationships of webhook subscriptions， based on the app ID， the user， and the user's role with a tenant."
+localization_priority： Priority author： "Jumaodhiss" ms.prod： ""change-notifications" doc_type： apiPageType
 ---
+
 # <a name="list-subscriptions"></a>列出订阅
 
 命名空间：microsoft.graph
@@ -46,8 +37,8 @@ ms.locfileid: "48742216"
 
 | 调用应用程序的上下文 | 响应包含 |
 |:-----|:---------------- |
-| 应用程序代表已登录用户（委派权限）进行调用。 *用户是非管理员* 。 <br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **任何应用** 仅为登录用户创建的订阅。 |
-| 应用程序代表已登录用户（委派权限）进行调用。 *用户是管理员* 。<br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这仅适用于工作/学校帐户。 | **任何应用** 为目录中的 **任何用户** 创建的订阅。|
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是非管理员*。 <br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **任何应用** 仅为登录用户创建的订阅。 |
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是管理员*。<br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这仅适用于工作/学校帐户。 | **任何应用** 为目录中的 **任何用户** 创建的订阅。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -114,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription",
   "isCollection": true
 } -->
@@ -140,7 +131,8 @@ Content-length: 586
       "latestSupportedTlsVersion": "v1_2",
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
-      "includeResourceData": false
+      "includeResourceData": false,
+      "notificationContentType": "application/json"
     }
   ]
 }

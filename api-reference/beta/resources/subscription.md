@@ -2,15 +2,15 @@
 title: 订阅资源类型
 description: 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，支持订阅以下资源：
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: e34f6f04545c9f878e5429e54923ef223a883547
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 81bb0e1b914a547b8c9fef55b446158069b77b23
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934802"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51030972"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -20,18 +20,17 @@ ms.locfileid: "49934802"
 
 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，支持订阅以下资源：
 
-- Microsoft Graph 安全性 API 中的[警报][]
-- Microsoft Teams 中的通话或会议后生成的 [callRecord][]
-- 通过 Microsoft Teams 中的团队或频道发送的 [chatMessage][]
-- Microsoft 365 组中的[对话][]
-- OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
-- SharePoint [网站][]下的[列表][] 
-- Outlook 中的[邮件][]、[事件][]或[联系人][]
-- Microsoft [][] Teams 中的用户状态
-- Azure Active Directory 中的[用户][]或[组][]
-- 当 [打印][] 服务中的打印机 (作业进入 JobFetchable 状态时，打印服务中的打印机会进行打印-准备好进行打印) 。
-- [打印服务中的 printTaskDefinition][]
-- Microsoft To Do 中的用户[TodoTask]
+- 来自[][] Microsoft Graph 安全性 API 的警报。
+- 在 Microsoft Teams 中的通话或会议之后生成的[callRecord。][]
+- 通过 Microsoft Teams 中的团队或频道发送的[chatMessage。][]
+- Microsoft [][] 365 组的对话。
+- OneDrive for Business 中根文件夹 [driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中根文件夹或子文件夹 [driveItem][] 的层次结构中的内容。
+- [SharePoint][]网站 下[的列表][]。
+- Outlook[][]中的[邮件][]、[事件或][]联系人。
+- Microsoft [][] Teams 中的用户状态。
+- Azure [][] Active Directory[中的用户][]或组。
+- 当[ (][]的打印作业进入 JobFetchable 状态时，打印机会进行打印- 准备在通用打印中) 打印和[printTaskDefinition。][] 有关详细信息，请参阅订阅 [以从云打印 API 更改通知](https://docs.microsoft.com/en-us/graph/universal-print-webhook-notifications)。
+- Microsoft To Do 中的用户的[todoTask。][]
 
 查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
 
@@ -40,28 +39,30 @@ ms.locfileid: "49934802"
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
 | [创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 订阅侦听器应用程序，在 Microsoft Graph 数据发生更改时接收变更通知。 |
-| [更新订阅](../api/subscription-update.md) | [订阅](subscription.md) | 通过更新订阅的过期时间续订订阅。 |
+| [更新订阅](../api/subscription-update.md) | [订阅](subscription.md) | 通过更新其过期时间续订订阅。 |
 | [列出订阅](../api/subscription-list.md) | [订阅](subscription.md) | 列出有效订阅。 |
 | [获取订阅](../api/subscription-get.md) | [订阅](subscription.md) | 读取 subscription 对象的属性和关系。 |
 | [删除订阅](../api/subscription-delete.md) | 无 | 删除订阅对象。 |
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
-|:---------|:-----|:------------|
-| changeType | string | 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必需。 <br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 |
-| notificationUrl | string | 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必需。 |
-| lifecycleNotificationUrl | string | 接收生命周期通知（包括和通知）的终结点的 `subscriptionRemoved` `missed` URL。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读有关](/graph/webhooks-lifecycle) Outlook 资源如何使用生命周期通知的更多信息。 |
-| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必需。 |
-| expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必需。 |
-| clientState | string | 指定服务在每个更改通知中发送的 **clientState** 属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅一起发送的 **clientState** 属性的值与每个更改通知一起收到的 **clientState** 属性的值进行比较，来检查更改通知是否来自服务。 可选。 |
-| id | string | 订阅的唯一标识符。只读。 |
-| applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
-| creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用使用委派权限创建订阅，则此字段包含代表应用调用的登录用户的 ID。 如果应用使用了应用程序权限，则此字段包含与应用对应的服务主体的 ID。 只读。 |
-| includeResourceData | 布尔值 | 设置为 `true` 时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（例如聊天消息的内容）。 可选。 | 
-| encryptionCertificate | string | 带有公钥的证书 的base64 编码表示形式，用于对更改通知中的资源数据进行加密。 可选。 **includeResourceData** 为 true 时是必需的。 | 
-| encryptionCertificateId | string | 自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 可选。 **includeResourceData** 为 true 时是必需的。 |
-| latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl** 指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |
+| 属性 | 类型 | 说明 | 支持的资源 |
+|:---------|:-----|:------------|:--------------|
+| changeType | string | 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必填。 <br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 | 全部 |
+| notificationUrl | string | 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必填。 | 全部 |
+| lifecycleNotificationUrl | string | 接收生命周期通知的终结点的 URL，包括 `subscriptionRemoved` 和 `missed` 通知。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读有关](/graph/webhooks-lifecycle) Outlook 资源如何使用生命周期通知的更多信息。 | 全部 |
+| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必填。 | 全部 |
+| expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必填。 | 全部 |
+| clientState | string | 指定服务在每个更改通知中发送的 **clientState** 属性的值。 最大长度为 255 个字符。 通过比较与订阅一起发送的 **clientState** 属性的值与每个更改通知一起收到的 **clientState** 属性的值，客户端可以检查更改通知是否来自服务。 可选。 | 全部 |
+| id | string | 订阅的唯一标识符。只读。 | 全部 |
+| applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 | 全部 |
+| creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用使用委派权限创建订阅，则此字段包含代表应用调用的登录用户的 ID。 如果应用程序使用应用程序权限，则此字段包含与应用程序对应的服务主体的 ID。 只读。 | 全部 |
+| includeResourceData | 布尔值 | 设置为 `true` 时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（例如聊天消息的内容）。 可选。 | 全部 |
+| encryptionCertificate | string | 带有公钥的证书 的base64 编码表示形式，用于对更改通知中的资源数据进行加密。 可选。 **includeResourceData** 为 true 时是必需的。 | 全部 |
+| encryptionCertificateId | string | 自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 可选。 **includeResourceData** 为 true 时是必需的。 | 全部 |
+| latestSupportedTlsVersion | string | 指定由 **notificationUrl** 指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 | 全部 |
+| notificationContentType | string | 支持的资源类型的 MS Graph 更改通知的所需内容类型。 默认内容类型为"application/json"内容类型。 | 全部 |
+| notificationQueryOptions | string | 用于指定目标资源值的 OData 查询选项。 当资源达到与此处提供的查询选项匹配的状态时，客户端将收到通知。 使用订阅创建有效负载中的这一新属性以及所有现有属性，Webhook 将在资源达到 notificationQueryOptions 属性中提到的所需状态（例如，打印作业完成时、打印作业资源属性值变为 true 等）时发送通知。 `isFetchable` | [通用打印服务](https://docs.microsoft.com/en-us/graph/universal-print-webhook-notifications) |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
 
@@ -77,7 +78,7 @@ ms.locfileid: "49934802"
 | **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
 | **状态**        | 60 分钟（1 小时） |
 | 打印 **打印机** | 4230 分钟（不到 3 天）    |
-| 打印 **printTaskDefinition** | 4230 分钟（不到 3 天）    |
+| Print **printTaskDefinition** | 4230 分钟（不到 3 天）    |
 | **todoTask**              | 4230 分钟（不到 3 天）    |
 
 
@@ -126,7 +127,9 @@ ms.locfileid: "49934802"
   "includeResourceData": "boolean",
   "encryptionCertificate": "string",
   "encryptionCertificateId": "string",
-  "latestSupportedTlsVersion": "string"
+  "latestSupportedTlsVersion": "string",
+  "notificationContentType": "string",
+  "notificationQueryOptions": "string"
 }
 ```
 
@@ -143,7 +146,7 @@ ms.locfileid: "49934802"
 [chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
 [状态]: ./presence.md
-[printer]: ./printer.md
+[打印机]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [todoTask]: ./todotask.md
 

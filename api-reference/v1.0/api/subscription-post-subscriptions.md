@@ -1,17 +1,8 @@
 ---
-title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收更改通知。
-localization_priority: Priority
-author: davidmu1
-ms.prod: ''
-doc_type: apiPageType
-ms.openlocfilehash: fb6f04b020fd925d1131f2d8f88afe44b185c5c7
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761428"
+title： "Create subscription" description： "Subscribes a listener application to receive change notifications when data on the Microsoft Graph changes."
+localization_priority： Priority author： "Jumaodhiss" ms.prod： ""change-notifications" doc_type： apiPageType
 ---
+
 # <a name="create-subscription"></a>创建订阅
 
 命名空间：microsoft.graph
@@ -41,6 +32,8 @@ ms.locfileid: "50761428"
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
+|[打印机](../resources/printer.md) | 不支持 | 不支持 | Printer.Read.All、Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -145,8 +138,10 @@ Content-type: application/json
 |[组](../resources/group.md)|`groups`|
 |[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[用户](../resources/user.md)|`users`|
+|[打印机](../resources/printer.md) |`print/printers/{id}/jobs`|
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[用户](../resources/user.md)|`users`|
 
 > **注意：** 以 `me` 开头的任何路径也可与 `users/{id}`（而不是 `me`）一起使用，从而以特定用户为目标，而不是以当前用户为目标。
 
@@ -174,7 +169,8 @@ Content-length: 252
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-  "latestSupportedTlsVersion": "v1_2"
+  "latestSupportedTlsVersion": "v1_2",
+  "notificationContentType": "application/json"
 }
 ```
 

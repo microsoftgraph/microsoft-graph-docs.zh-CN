@@ -1,17 +1,8 @@
 ---
-title: 更新订阅
-description: 通过延长到期时间续订订阅。
-localization_priority: Normal
-author: davidmu1
-ms.prod: ''
-doc_type: apiPageType
-ms.openlocfilehash: e63f810e6e11d18d2e03fb702a629cee74d768fe
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759501"
+title： "Update subscription" description： "Renew a subscription by extending its expiry time."
+localization_priority：普通作者："Jumaodhiss" ms.prod：" "change-notifications" doc_type： apiPageType
 ---
+
 # <a name="update-subscription"></a>更新订阅
 
 命名空间：microsoft.graph
@@ -41,6 +32,8 @@ ms.locfileid: "50759501"
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
+|[打印机](../resources/printer.md) | 不支持 | 不支持 | Printer.Read.All、Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -128,7 +121,7 @@ Content-type: application/json
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -150,7 +143,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json"
 }
 ```
 
