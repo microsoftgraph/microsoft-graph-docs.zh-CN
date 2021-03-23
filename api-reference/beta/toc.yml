@@ -362,7 +362,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -927,7 +927,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 删除
+              - name: 增量
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -973,7 +973,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出 transitive memberOf
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -10489,34 +10489,34 @@ items:
                             href: api/namedlocation-get.md
                           - name: 删除
                             href: api/namedlocation-delete.md
-                      - name: 国家/地区命名位置
-                        items:
                           - name: 国家/地区命名位置
-                            href: resources/countrynamedlocation.md
-                          - name: 列出
-                            href: api/conditionalaccessroot-list-namedlocations.md
-                          - name: 创建
-                            href: api/conditionalaccessroot-post-namedlocations.md
-                          - name: 获取
-                            href: api/countrynamedlocation-get.md
-                          - name: 更新
-                            href: api/countrynamedlocation-update.md
-                          - name: 删除
-                            href: api/countrynamedlocation-delete.md
-                      - name: IP 命名位置
-                        items:
+                            items:
+                              - name: 国家/地区命名位置
+                                href: resources/countrynamedlocation.md
+                              - name: 列出
+                                href: api/conditionalaccessroot-list-namedlocations.md
+                              - name: 创建
+                                href: api/conditionalaccessroot-post-namedlocations.md
+                              - name: 获取
+                                href: api/countrynamedlocation-get.md
+                              - name: 更新
+                                href: api/countrynamedlocation-update.md
+                              - name: 删除
+                                href: api/countrynamedlocation-delete.md
                           - name: IP 命名位置
-                            href: resources/ipnamedlocation.md
-                          - name: 列出
-                            href: api/conditionalaccessroot-list-namedlocations.md
-                          - name: 创建
-                            href: api/conditionalaccessroot-post-namedlocations.md
-                          - name: 获取
-                            href: api/ipnamedlocation-get.md
-                          - name: 更新
-                            href: api/ipnamedlocation-update.md
-                          - name: 删除
-                            href: api/ipnamedlocation-delete.md
+                            items:
+                              - name: IP 命名位置
+                                href: resources/ipnamedlocation.md
+                              - name: 列出
+                                href: api/conditionalaccessroot-list-namedlocations.md
+                              - name: 创建
+                                href: api/conditionalaccessroot-post-namedlocations.md
+                              - name: 获取
+                                href: api/ipnamedlocation-get.md
+                              - name: 更新
+                                href: api/ipnamedlocation-update.md
+                              - name: 删除
+                                href: api/ipnamedlocation-delete.md
               - name: 数据策略操作
                 href: resources/datapolicyoperation.md
                 items:
@@ -10968,7 +10968,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 组的访问评审
                 href: resources/accessreviewsv2-root.md
@@ -11076,7 +11076,7 @@ items:
                     items:
                       - name: 列出
                         href: api/programcontroltype-list.md
-              - name: 同意请求
+              - name: 许可请求
                 href: resources/consentrequests-root.md
                 items:
                   - name: 管理员同意请求策略
@@ -11217,7 +11217,7 @@ items:
                         href: api/connectedorganization-delete-externalsponsors.md
                       - name: 删除内部发起人
                         href: api/connectedorganization-delete-internalsponsors.md
-                  - name: 批准
+                  - name: 审批
                     href: resources/approval.md
                     items:
                       - name: 获取
@@ -11806,7 +11806,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: 注释
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -12588,7 +12588,7 @@ items:
                 href: api/site-list-columns.md
               - name: 创建列
                 href: api/site-post-columns.md
-              - name: 列出内容类型
+              - name: 列表内容类型
                 href: api/site-list-contenttypes.md
               - name: 创建内容类型
                 href: api/site-post-contenttypes.md
@@ -12630,7 +12630,7 @@ items:
                 href: api/list-list-columns.md
               - name: 创建列
                 href: api/list-post-columns.md
-              - name: 列出内容类型
+              - name: 列表内容类型
                 href: api/list-list-contenttypes.md
               - name: 添加内容类型副本
                 href: api/contenttype-addcopy.md
@@ -13123,7 +13123,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
