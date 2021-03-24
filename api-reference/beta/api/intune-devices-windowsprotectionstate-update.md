@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c5317326018404986a63243678455c59302683f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2a500c5f1510a28638e58be0ef32d328cc598776
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49212690"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135829"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) 对象的属性。
+更新 [windowsProtectionState 对象](../resources/intune-devices-windowsprotectionstate.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -53,32 +53,32 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|Boolean|已启用反恶意软件|
-|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如干净或挂起的完全扫描或挂起的重新启动等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|Boolean|是否启用了实时保护？|
+|id|String|设备保护状态对象的唯一标识符。 这是设备的设备 ID|
+|malwareProtectionEnabled|Boolean|反恶意软件是否已启用|
+|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (干净或挂起完全扫描或挂起重启等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
+|realTimeProtectionEnabled|Boolean|实时保护是否已启用？|
 |networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
 |quickScanOverdue|Boolean|快速扫描是否过期？|
-|fullScanOverdue|Boolean|完全扫描逾期？|
-|signatureUpdateOverdue|Boolean|签名是否已过期？|
-|rebootRequired|Boolean|是否需要重新启动？|
-|fullScanRequired|Boolean|需要完全扫描吗？|
-|engineVersion|String|当前 endpoint protection 引擎的版本|
+|fullScanOverdue|Boolean|完全扫描是否过期？|
+|signatureUpdateOverdue|Boolean|签名是否过期？|
+|rebootRequired|Boolean|是否要求重新启动？|
+|fullScanRequired|Boolean|是否要求进行完全扫描？|
+|engineVersion|String|当前终结点保护引擎的版本|
 |signatureVersion|String|当前恶意软件定义版本|
 |antiMalwareVersion|String|当前反恶意软件版本|
-|lastQuickScanDateTime|DateTimeOffset|上次快速扫描日期时间|
-|lastFullScanDateTime|DateTimeOffset|上次快速扫描日期时间|
+|lastQuickScanDateTime|DateTimeOffset|上次快速扫描日期/时间|
+|lastFullScanDateTime|DateTimeOffset|上次快速扫描日期/时间|
 |lastQuickScanSignatureVersion|String|上次快速扫描签名版本|
 |lastFullScanSignatureVersion|String|上次完全扫描签名版本|
-|lastReportedDateTime|DateTimeOffset|上次设备运行状况状态报告时间|
-|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Windows Defender 防病毒的产品状态。 可能的值为：、、、、、、、、、、、、、、、、、、、、、、、、、 `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` 。|
-|isVirtualMachine|Boolean|指示设备是否为虚拟机。|
-|tamperProtectionEnabled|Boolean|指示是否已启用 Windows Defender 防篡改保护功能。|
+|lastReportedDateTime|DateTimeOffset|上次设备运行状况报告时间|
+|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|防病毒Windows Defender状态。 可能的值是 `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` ：、、、、、、、、、、 `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` 、|
+|isVirtualMachine|Boolean|指示设备是否是虚拟机。|
+|tamperProtectionEnabled|Boolean|指示是否Windows Defender防篡改保护功能。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) 对象。
 
 ## <a name="example"></a>示例
 

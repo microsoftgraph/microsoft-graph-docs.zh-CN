@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d605f4a18eab5eacb3e8c53070a721952c54f7cf
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e4417c01a435ceb8392eff280992877ebdeb79e4
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49201693"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135731"
 ---
 # <a name="create-deponboardingsetting"></a>创建 depOnboardingSetting
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49201693"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -55,22 +55,22 @@ POST /deviceManagement/depOnboardingSettings
 |:---|:---|:---|
 |id|String|对象的 UUID|
 |appleIdentifier|String|用于获取当前令牌的 Apple ID。|
-|tokenExpirationDateTime|DateTimeOffset|令牌将到期的时间。|
-|lastModifiedDateTime|DateTimeOffset|在载入服务时。|
-|lastSuccessfulSyncDateTime|DateTimeOffset|服务上次使用 Intune syned 时|
+|tokenExpirationDateTime|DateTimeOffset|令牌将过期的时间。|
+|lastModifiedDateTime|DateTimeOffset|载入服务时。|
+|lastSuccessfulSyncDateTime|DateTimeOffset|服务最后一次与 Intune 进行联合时|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune 上次请求同步时。|
-|shareTokenWithSchoolDataSyncService|Boolean|是否启用了与学校数据同步服务的 Dep 令牌共享。|
-|lastSyncErrorCode|Int32|上一次 dep 同步期间 Apple 报告的错误代码。|
+|shareTokenWithSchoolDataSyncService|Boolean|是否使用学校数据同步服务启用 Dep 令牌共享。|
+|lastSyncErrorCode|Int32|Apple 在上次取消同步期间报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 令牌类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
 |tokenName|String|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步的设备计数|
-|dataSharingConsentGranted|Boolean|为使用 Apple Dep 服务进行数据共享而授予的同意|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|dataSharingConsentGranted|Boolean|同意与 Apple Dep 服务共享数据|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 对象。
 
 ## <a name="example"></a>示例
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66a8f19f82186d066dc50eb6309e64c88516eda8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: dbd19f042c6dbfe80a4c02ec224fde5b1e5fb696
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49306021"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51136480"
 ---
 # <a name="create-applogcollectionrequest"></a>创建 appLogCollectionRequest
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49306021"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -53,16 +53,16 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|唯一标识符。 这是 userId_DeviceId_AppId id。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
-|errorMessage|字符串|在上载过程中出现的错误消息|
-|customLogFolders|String 集合|日志文件夹的列表。 |
-|completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
+|id|String|唯一标识符。 这是userId_DeviceId_AppId ID。|
+|状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
+|errorMessage|String|上传过程中出现错误消息（如果有）|
+|customLogFolders|String collection|日志文件夹列表。 |
+|completedDateTime|DateTimeOffset|上载日志请求达到终端状态的时间|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 对象。
 
 ## <a name="example"></a>示例
 

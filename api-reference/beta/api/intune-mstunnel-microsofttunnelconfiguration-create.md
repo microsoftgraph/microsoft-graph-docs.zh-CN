@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa74bc55c739cc7ef8ad735538e9a948cfc2a2a4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d3adc02714b7cc71a210e0279e04cec0fb6c894b
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241522"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135213"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>创建 microsoftTunnelConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49241522"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -53,24 +53,24 @@ POST /deviceManagement/microsoftTunnelConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|MicrosoftTunnelConfiguration 的 Id|
-|displayName|String|MicrosoftTunnelConfiguration 的显示名称|
-|description|String|MicrosoftTunnelConfiguration 的说明|
+|id|String|MicrosoftTunnelConfiguration 的 ID|
+|displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
+|说明|String|MicrosoftTunnelConfiguration 的说明|
 |network|String|将用于为客户端分配虚拟地址的子网|
-|dnsServers|String 集合|客户端将使用的 DNS 服务器|
+|dnsServers|String collection|客户端将使用的 DNS 服务器|
 |defaultDomainSuffix|String|客户端将使用的默认域附录|
-|routesInclude|String 集合|将由服务器路由的将|
-|routesExclude|String 集合|将不会由服务器路由的路由的子集|
-|splitDNS|String 集合|将使用所提供的 dns 服务器进行解析的域|
+|routesInclude|String collection|服务器将路由的路由|
+|routesExclude|String collection|服务器不会路由的路由子集|
+|splitDNS|String collection|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
-|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可能适用于服务器的其他设置|
+|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
