@@ -1,31 +1,31 @@
 ---
 title: enableUnlicensedAdminstrators 操作
-description: 启用后，通过角色分配成员身份分配给管理员的用户将不再需要分配的 Intune 许可证。 对于角色分配中的每个 AAD 安全组，限制为350个无许可证的直接成员，但如果需要支持超过350个未获得授权的管理员，则可以将多个 AAD 安全组分配给一个角色。 许可管理员将继续按中的顺序工作，这是可传递的成员资格应用且不受350成员限制的限制。
+description: 启用后，通过角色分配成员身份分配为管理员的用户将不再需要分配的 Intune 许可证。 角色分配 中每个 AAD 安全组只能有 350 个未授权的直接成员，但如果需要支持 350 多个未授权管理员，可以将多个 AAD 安全组分配给角色。 许可管理员将继续按正常方式工作，因为可传递成员身份适用，并且不受 350 个成员限制的限制。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64dccfbfb99a4abdbd5232c899c736482cfbd119
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 149c14aab5672939174799791f6a4e0af970419d
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226104"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51128024"
 ---
 # <a name="enableunlicensedadminstrators-action"></a>enableUnlicensedAdminstrators 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-启用后，通过角色分配成员身份分配给管理员的用户将不再需要分配的 Intune 许可证。 对于角色分配中的每个 AAD 安全组，限制为350个无许可证的直接成员，但如果需要支持超过350个未获得授权的管理员，则可以将多个 AAD 安全组分配给一个角色。 许可管理员将继续按中的顺序工作，这是可传递的成员资格应用且不受350成员限制的限制。
+启用后，通过角色分配成员身份分配为管理员的用户将不再需要分配的 Intune 许可证。 角色分配 中每个 AAD 安全组只能有 350 个未授权的直接成员，但如果需要支持 350 多个未授权管理员，可以将多个 AAD 安全组分配给角色。 许可管理员将继续按正常方式工作，因为可传递成员身份适用，并且不受 350 个成员限制的限制。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|

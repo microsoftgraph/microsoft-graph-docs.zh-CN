@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cde7ad8536edbcab146a5d93e1a94624491c3b3f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 20cb05e52b7b065f2cbf1768895e9686bd4a49d0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49278273"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51128913"
 ---
 # <a name="create-devicemanagementintent"></a>创建 deviceManagementIntent
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49278273"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -53,18 +53,18 @@ POST /deviceManagement/intents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|意向 ID|
-|displayName|字符串|用户给定的显示名称|
-|description|字符串|用户提供的说明|
-|isAssigned|Boolean|指示是否将意向分配给用户|
-|lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
-|templateId|字符串|如果任何) ，则从 (创建此意向的模板的 ID|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|id|String|意图 ID|
+|displayName|String|给定用户显示名称|
+|说明|String|用户给定的说明|
+|isAssigned|Boolean|表示是否将意图分配给用户|
+|lastModifiedDateTime|DateTimeOffset|上次修改意图时|
+|templateId|String|此意图的模板 ID 是 (（如果有) |
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 对象。
 
 ## <a name="example"></a>示例
 

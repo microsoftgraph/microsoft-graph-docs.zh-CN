@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51a32ebeb45df6598ebf181d3eeb65c71f25aee7
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: eff541671d0f6994b5d020a979c20591088263dd
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790557"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51127793"
 ---
 # <a name="update-windows10generalconfiguration"></a>更新 windows10GeneralConfiguration
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49790557"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -58,29 +58,29 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 如果此值为 false 且实体对范围用户不可见，则不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对作用域用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |taskManagerBlockEndTask|Boolean|指定非管理员是否可以使用任务管理器结束任务。|
-|energySaverOnBatteryThresholdPercentage|Int32|此设置允许你指定节电模式打开的电池充电级别。 使用电池时，节电模式将在 (和低于指定) 电量时自动打开。 有效输入范围 (0-100) 。 有效值为 0 至 100|
-|energySaverPluggedInThresholdPercentage|Int32|此设置允许你指定节电模式打开的电池充电级别。 接通电源时，节电模式将在 (和低于指定) 电量时自动打开。 有效输入范围 (0-100) 。 有效值为 0 至 100|
-|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定用户在使用电池时关闭移动电脑上的灯盖时 Windows 执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|energySaverOnBatteryThresholdPercentage|Int32|此设置允许你指定节电模式打开的电池充电级别。 当使用电池时，节电模式将在 (或低于指定) 电量时自动打开。 有效输入范围 (0-100) 。 有效值为 0 至 100|
+|energySaverPluggedInThresholdPercentage|Int32|此设置允许你指定节电模式打开的电池充电级别。 接通电源时，将在指定的电池充电 (低于) 自动打开节电模式。 有效输入范围 (0-100) 。 有效值为 0 至 100|
+|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户使用电池时关闭移动电脑上的灯盖时 Windows 执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
 |powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户在插入时关闭移动电脑上的灯盖时 Windows 执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
 |powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定用户在使用电池时按下电源按钮时 Windows 所执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
-|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户插入电源按钮时 Windows 所执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
-|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定用户在使用电池时按下"睡眠"按钮时 Windows 所执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
-|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户在插入时按下"睡眠"按钮时 Windows 所执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
-|powerHybridSleepOnBattery|[enablement](../resources/intune-shared-enablement.md)|此设置允许你在使用电池时关闭混合睡眠。 如果将此设置设置为禁用，则当系统转换为休眠模式时，不会生成休眠文件 (独立) 。 如果将此设置设置为启用或不配置此策略设置，则用户可以控制此设置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|powerHybridSleepPluggedIn|[enablement](../resources/intune-shared-enablement.md)|此设置允许你在插入时关闭混合睡眠。 如果将此设置设置为禁用，则当系统转换为休眠模式时，不会生成休眠文件 (独立) 。 如果将此设置设置为启用或不配置此策略设置，则用户可以控制此设置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定用户在接通电源时按下电源按钮时 Windows 所执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定用户在使用电池时按下睡眠按钮时 Windows 所执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定用户在插入时按下"睡眠"按钮时 Windows 所执行的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|powerHybridSleepOnBattery|[enablement](../resources/intune-shared-enablement.md)|此设置允许你在使用电池时关闭混合睡眠。 如果将此设置设置为禁用，则当系统切换为睡眠模式时，不会生成休眠文件 (独立) 。 如果将此设置设置为启用或不配置此策略设置，则用户控制此设置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|powerHybridSleepPluggedIn|[enablement](../resources/intune-shared-enablement.md)|此设置允许你在插入时关闭混合睡眠。 如果将此设置设置为禁用，则当系统切换为睡眠模式时，不会生成休眠文件 (独立) 。 如果将此设置设置为启用或不配置此策略设置，则用户控制此设置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|适用于应用的 Windows 10 强制更新计划。|
 |enableAutomaticRedeployment|Boolean|允许具有管理权限的用户在设备锁屏界面上使用 Ctrl + Win + R 删除所有用户数据和设置，以便设备可以自动重新配置并重新注册到管理中。|
-|microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|控制 microsoft Account Sign-In Assistant (wlidsvc) NT 服务。 可取值为：`notConfigured`、`disabled`。|
-|authenticationAllowSecondaryDevice|Boolean|允许辅助身份验证设备与 Windows 一起使用。|
+|microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|控制 wlidsvc Sign-In NT (的 Microsoft) 助手。 可取值为：`notConfigured`、`disabled`。|
+|authenticationAllowSecondaryDevice|Boolean|允许辅助身份验证设备与 Windows 一起运行。|
 |authenticationWebSignIn|[enablement](../resources/intune-shared-enablement.md)|指示是否将启用 Web 凭据提供程序。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |authenticationPreferredAzureADTenantDomainName|String|指定 Azure AD 租户中可用域之间的首选域。|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|指定是允许还是禁止联邦信息处理标准 (FIPS) 策略。|
@@ -93,11 +93,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|应该从发现终结点查询的打印机最大数量。 此设置仅限移动设备。 有效值为 1 至 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|在 Azure 门户中配置的用于打印机发现服务的 OAuth 资源 URI。|
 |experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|允许或阻止同步 Microsoft Edge 浏览器设置。 供 IT 管理员用于阻止跨设备同步但允许用户替代的选项。 可取值为：`notConfigured`、`blockedWithUserOverride`、`blocked`。|
-|messagingBlockSync|Boolean|指示是否阻止文本邮件备份和还原以及无处不在的消息。|
-|messagingBlockMMS|Boolean|指示是否阻止设备上彩信发送/接收功能。|
+|messagingBlockSync|Boolean|指示是否阻止文本消息备份和还原以及邮件无处不在。|
+|messagingBlockMMS|Boolean|指示是否阻止设备上 MMS 发送/接收功能。|
 |messagingBlockRichCommunicationServices|Boolean|指示是否阻止设备上 RCS 发送/接收功能。|
-|printerNames|String collection|根据打印机的名称自动 (网络主机名) 。|
-|printerDefaultName|String|已安装 (的名称) 网络主机名。|
+|printerNames|String collection|根据打印机的名称自动预配 (网络主机) 。|
+|printerDefaultName|String|名称 (已安装) 的网络主机名。|
 |printerBlockAddition|Boolean|阻止用户从打印机设置安装其他打印机。|
 |searchBlockDiacritics|Boolean|指定搜索是否可以使用音调符号。|
 |searchDisableAutoLanguageDetection|Boolean|指定建立内容和属性索引时是否使用自动语言检测。|
@@ -109,12 +109,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |searchDisableIndexingRemovableDrive|Boolean|指示是否允许用户将可移动驱动器上的位置添加到库并建立索引。|
 |searchEnableAutomaticIndexSizeManangement|Boolean|在建立索引停止之前，指定与索引位置相同的驱动器上的最小硬盘空间量。|
 |searchBlockWebResults|Boolean|指示是否阻止 Web 搜索。|
-|findMyFiles|[enablement](../resources/intune-shared-enablement.md)|控制用户能否将搜索配置为"查找我的文件"模式，该模式可搜索辅助硬盘驱动器和用户配置文件外部的文件。 "查找我的文件"不允许用户搜索他们无法访问的文件或位置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|指定当设备已加入 Azure AD 时，在 OOBE 期间是否允许自动 (桌面) 。|
+|findMyFiles|[enablement](../resources/intune-shared-enablement.md)|控制用户能否将搜索配置为"查找我的文件"模式，该模式在辅助硬盘驱动器和用户配置文件外部搜索文件。 "查找我的文件"不允许用户搜索他们无法访问的文件或位置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|指定当设备加入 Azure AD 时，是否允许在 OOBE 期间自动加密设备 (桌面) 。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|获取或设置允许设备发送诊断和使用遥测数据的值，如 Watson。 可取值为：`userDefined`、`none`、`basic`、`enhanced`、`full`。|
 |oneDriveDisableFileSync|Boolean|获取或设置一个值，允许 IT 管理员阻止应用和功能使用 OneDrive 上的文件。|
-|systemTelemetryProxyServer|String|获取或设置代理服务器的 FQDN (或 IP 地址的完全限定域名) 转发连接用户体验和遥测请求。|
-|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|指定向 Microsoft 365 分析 (Intranet、Internet 和/) 遥测数据的类型。 可取值为：`notConfigured`、`intranet`、`internet`、`intranetAndInternet`。|
+|systemTelemetryProxyServer|String|获取或设置代理服务器的完全限定 (FQDN) IP 地址，以转发连接用户体验和遥测请求。|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|指定向 Microsoft 365 Analytics 发送的遥测 (类型，包括 intranet、) 和/或遥测数据。 可取值为：`notConfigured`、`intranet`、`internet`、`intranetAndInternet`。|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|控制用户从桌面和锁屏界面上方访问墨迹工作区。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|控制用户从桌面和锁屏界面上方访问墨迹工作区。 可取值为：`notConfigured`、`blocked`、`allowed`。|
 |inkWorkspaceBlockSuggestedApps|Boolean|指定是否在墨迹工作区中显示推荐的应用建议。|
@@ -147,19 +147,19 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |edgeBlockEditFavorites|Boolean|指示是否阻止用户对收藏夹进行更改。|
 |edgeNewTabPageURL|String|指定在新建选项卡时打开的页面。|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|使"主页"按钮隐藏、加载默认起始页、加载"新建"选项卡页或自定义 URL|
-|edgeHomeButtonConfigurationEnabled|Boolean|启用"开始"按钮配置。|
-|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|指定开始时打开的页面类型。 可取值为：`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages`。|
+|edgeHomeButtonConfigurationEnabled|Boolean|启用"主页"按钮配置。|
+|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|指定在开始时打开的页面类型。 可取值为：`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages`。|
 |edgeBlockSideloadingExtensions|Boolean|指示用户是否可以旁加载扩展。|
 |edgeRequiredExtensionPackageFamilyNames|String collection|指定需要且用户无法关闭的浏览器扩展的程序包系列名称列表。|
 |edgeBlockPrinting|Boolean|配置 Edge 以允许或阻止打印。|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|获取或设置一个值，该值指定是否将收藏夹栏设置为在任何页面上始终可见或隐藏。 可取值为：`notConfigured`、`hide`、`show`。|
 |edgeBlockSavingHistory|Boolean|配置 Edge 以允许保存浏览历史记录或从不保存浏览历史记录。|
 |edgeBlockFullScreenMode|Boolean|允许或阻止 Edge 进入全屏模式。|
-|edgeBlockWebContentOnNewTabPage|Boolean|配置为在 Edge 中加载空白页，而不是默认的"新建"选项卡页，并阻止用户对其进行更改。|
+|edgeBlockWebContentOnNewTabPage|Boolean|配置为在 Edge 中加载空白页，而不是默认的"新建"选项卡页，并阻止用户更改它。|
 |edgeBlockTabPreloading|Boolean|配置 Edge 是否在 Windows 启动时预加载新选项卡页。|
 |edgeBlockPrelaunch|Boolean|决定是否在 Windows 启动时预启动 Microsoft Edge。|
-|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|在切换到边缘之前，控制 Edge 显示Internet Explorer。 可取值为：`notConfigured`、`disabled`、`enabled`、`keepGoing`。|
-|edgePreventCertificateErrorOverride|Boolean|允许或阻止用户覆盖证书错误。|
+|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|在切换到边缘之前，控制边缘Internet Explorer。 可取值为：`notConfigured`、`disabled`、`enabled`、`keepGoing`。|
+|edgePreventCertificateErrorOverride|Boolean|允许或阻止用户重写证书错误。|
 |edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|根据配置展台模式控制如何限制 Microsoft Edge 设置。 可取值为：`notConfigured`、`digitalSignage`、`normalMode`、`publicBrowsingSingleApp`、`publicBrowsingMultiApp`。|
 |edgeKioskResetAfterIdleTimeInMinutes|Int32|指定从 Microsoft Edge 展台重置之前的最后一个用户活动开始的时间（分钟）。  有效值为 0-1440。 默认值为 5。 0 表示未重置。 有效值为 0 到 1440|
 |cellularBlockDataWhenRoaming|Boolean|是否阻止用户在漫游时通过手机网络使用数据。|
@@ -171,8 +171,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderRequireNetworkInspectionSystem|Boolean|指示是否需要网络检查系统。|
 |defenderScanDownloads|Boolean|指示是否扫描下载内容。|
 |defenderScheduleScanEnableLowCpuPriority|Boolean|启用后，将在计划扫描期间使用低 CPU 优先级。|
-|defenderDisableCatchupQuickScan|Boolean|如果阻止，计划快速扫描的跟进扫描将关闭。|
-|defenderDisableCatchupFullScan|Boolean|如果阻止，计划完整扫描的捕获扫描将关闭。|
+|defenderDisableCatchupQuickScan|Boolean|如果阻止，将关闭计划快速扫描的跟进扫描。|
+|defenderDisableCatchupFullScan|Boolean|如果阻止，将关闭计划完整扫描的跟进扫描。|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|指示是否扫描在 Internet Explorer 浏览器中加载的脚本。|
 |defenderBlockEndUserAccess|Boolean|是否阻止最终用户访问 Defender。|
 |defenderSignatureUpdateIntervalInHours|Int32|签名更新间隔（以小时为单位）。 指定 0 不检查。 有效值为 0 至 24|
@@ -193,9 +193,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Defender 系统扫描类型。 可取值为：`userDefined`、`disabled`、`quick`、`full`。|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender 进行系统扫描的星期几。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan`。|
 |defenderScheduledScanTime|TimeOfDay|系统扫描的 Defender 时间。|
-|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|获取或设置 Defender 对可能不需要的应用程序 (PUA) （包括具有广告注入行为的软件、软件捆绑、持续付款或订阅等）的操作。Defender 在下载 PUA 或尝试自行安装时提醒用户。 在 Windows 10 桌面版中添加。 可取值为：`deviceDefault`、`block`、`audit`。|
-|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|获取或设置 Defender 对可能不需要的应用程序 (PUA) （包括具有广告注入行为的软件、软件捆绑、持续付款或订阅等）的操作。Defender 在下载 PUA 或尝试自行安装时提醒用户。 在 Windows 10 桌面版中添加。 可取值为：`userDefined`、`enable`、`auditMode`、`warn`、`notConfigured`。|
-|defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|检查用户同意级别Windows Defender发送数据。 可取值为：`sendSafeSamplesAutomatically`、`alwaysPrompt`、`neverSend`、`sendAllSamplesAutomatically`。|
+|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|获取或设置 Defender 对可能不需要的应用程序 (PUA) 的操作，其中包括具有广告注入行为、软件捆绑、持续付款或订阅费用等的软件。Defender 在下载 PUA 或尝试自行安装时向用户发出警报。 在 Windows 10 桌面版中添加。 可取值为：`deviceDefault`、`block`、`audit`。|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|获取或设置 Defender 对可能不需要的应用程序 (PUA) 的操作，其中包括具有广告注入行为、软件捆绑、持续付款或订阅费用等的软件。Defender 在下载 PUA 或尝试自行安装时向用户发出警报。 在 Windows 10 桌面版中添加。 可取值为：`userDefined`、`enable`、`auditMode`、`warn`、`notConfigured`。|
+|defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|在发送数据时检查用户Windows Defender级别。 可取值为：`sendSafeSamplesAutomatically`、`alwaysPrompt`、`neverSend`、`sendAllSamplesAutomatically`。|
 |defenderBlockOnAccessProtection|Boolean|允许或禁止Windows Defender访问保护功能。|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|获取或设置要按威胁级别对检测到的恶意软件执行的 Defender 操作。|
 |defenderFileExtensionsToExclude|String 集合|要从扫描和实时保护中排除的文件扩展名。|
@@ -217,10 +217,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordRequireWhenResumeFromIdleState|Boolean|指示从空闲状态恢复时是否需要密码。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前登录失败的次数。 有效值为 0 至 999|
-|passwordMinimumAgeInDays|Int32|此设置确定用户 (之前) 密码的时间段（以天表示）。 有效值为 0 到 998|
+|passwordMinimumAgeInDays|Int32|此安全设置确定 (更改) 之前必须使用密码的时间期限（以天表示）。 有效值为 0 到 998|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|启用或禁用广告 ID 的使用。 已添加到 Windows 10 版本 1607 中。 可取值为：`notConfigured`、`blocked`、`allowed`。|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|指示在启动应用时是否允许自动接受配对和隐私用户许可对话框。|
-|privacyDisableLaunchExperience|Boolean|此策略可防止在用户登录新用户和升级用户期间启动隐私体验。|
+|privacyDisableLaunchExperience|Boolean|此策略阻止在用户登录新用户和已升级用户期间启动隐私体验。|
 |privacyBlockInputPersonalization|Boolean|指示是否阻止 Cortana、Dictation 或 Store 应用程序使用基于云的语音服务。|
 |privacyBlockPublishUserActivities|Boolean|阻止任务切换器等中最近使用的资源的共享体验/发现。|
 |privacyBlockActivityFeed|Boolean|阻止使用 Cortana、听写或应用商店应用程序的基于云的语音服务。|
@@ -291,8 +291,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |edgeBlockPopups|Boolean|指示是否阻止弹出窗口。|
 |edgeBlockSearchSuggestions|Boolean|指示是否阻止用户使用地址栏中的搜索建议。|
 |edgeBlockSearchEngineCustomization|Boolean|指示是否阻止用户添加新搜索引擎或更改默认搜索引擎。|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|指示是否将 Intranet 流量从边缘切换到Internet Explorer。 注意：此属性的名称令人误解;属性已过时，请改为使用 EdgeSendIntranetTrafficToInternetExplorer。|
-|edgeSendIntranetTrafficToInternetExplorer|Boolean|指示是否将 Intranet 流量从边缘切换到Internet Explorer。|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|指示是否将 Intranet 流量从 Edge 切换到 Internet Explorer。 注意：此属性的名称令人误解;属性已过时，请改为使用 EdgeSendIntranetTrafficToInternetExplorer。|
+|edgeSendIntranetTrafficToInternetExplorer|Boolean|指示是否将 Intranet 流量从 Edge 切换到 Internet Explorer。|
 |edgeRequireSmartScreen|Boolean|指示是否要求用户使用智能屏蔽筛选器。|
 |edgeEnterpriseModeSiteListLocation|String|指示企业模式站点列表位置。 可能是本地文件、本地网络或 http 位置。|
 |edgeFirstRunUrl|String|第一次打开 Edge 浏览器时的首个运行 URL。|
@@ -342,9 +342,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |experienceBlockTaskSwitcher|Boolean|指示是否在设备上启用任务切换。|
 |logonBlockFastUserSwitching|Boolean|禁用在不注销的情况下在同时登录的用户之间快速切换的功能。|
 |tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|设备是否需要连接到网络。|
-|appManagementMSIAllowUserControlOverInstall|Boolean|此策略设置允许用户更改通常仅适用于系统管理员的安装选项。|
+|appManagementMSIAllowUserControlOverInstall|Boolean|此策略设置允许用户更改通常仅对系统管理员可用的安装选项。|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|此策略设置指示 Windows Installer 在系统安装任何程序时使用提升的权限。|
-|dataProtectionBlockDirectMemoryAccess|Boolean|此策略设置允许你阻止 DMA (DMA) 所有热可插入 PCI 下游端口，直到用户登录 Windows。|
+|dataProtectionBlockDirectMemoryAccess|Boolean|此策略设置允许你阻止所有可 (PCI) 端口的 DMA 直接内存访问，直到用户登录到 Windows。|
 |appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|以分号分隔的 Windows 应用的程序包系列名称的列表。 列出的 Windows 应用将在登录后启动。|
 |uninstallBuiltInApps|Boolean|指示是否卸载内置 Windows 应用的固定列表。|
 |configureTimeZone|String|指定要应用于设备的时区。 这是目标时区的标准 Windows 名称。|
