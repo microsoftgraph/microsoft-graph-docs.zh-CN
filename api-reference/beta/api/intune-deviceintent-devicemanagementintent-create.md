@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cde7ad8536edbcab146a5d93e1a94624491c3b3f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 20cb05e52b7b065f2cbf1768895e9686bd4a49d0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49278273"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51128913"
 ---
-# <a name="create-devicemanagementintent"></a><span data-ttu-id="43cd4-103">创建 deviceManagementIntent</span><span class="sxs-lookup"><span data-stu-id="43cd4-103">Create deviceManagementIntent</span></span>
+# <a name="create-devicemanagementintent"></a><span data-ttu-id="7426e-103">创建 deviceManagementIntent</span><span class="sxs-lookup"><span data-stu-id="7426e-103">Create deviceManagementIntent</span></span>
 
-<span data-ttu-id="43cd4-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43cd4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7426e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7426e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="43cd4-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="43cd4-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="7426e-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="7426e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="43cd4-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="43cd4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7426e-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7426e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="43cd4-107">创建新的 [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="43cd4-107">Create a new [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object.</span></span>
+<span data-ttu-id="7426e-107">创建新的 [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7426e-107">Create a new [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="43cd4-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="43cd4-108">Prerequisites</span></span>
-<span data-ttu-id="43cd4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="43cd4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7426e-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="7426e-108">Prerequisites</span></span>
+<span data-ttu-id="7426e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7426e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="43cd4-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="43cd4-111">Permission type</span></span>|<span data-ttu-id="43cd4-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="43cd4-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7426e-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="7426e-111">Permission type</span></span>|<span data-ttu-id="7426e-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7426e-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="43cd4-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="43cd4-113">Delegated (work or school account)</span></span>|<span data-ttu-id="43cd4-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43cd4-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="43cd4-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="43cd4-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="43cd4-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="43cd4-116">Not supported.</span></span>|
-|<span data-ttu-id="43cd4-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="43cd4-117">Application</span></span>|<span data-ttu-id="43cd4-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43cd4-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="7426e-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7426e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7426e-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7426e-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="7426e-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7426e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7426e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7426e-116">Not supported.</span></span>|
+|<span data-ttu-id="7426e-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="7426e-117">Application</span></span>|<span data-ttu-id="7426e-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7426e-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="43cd4-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="43cd4-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7426e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7426e-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,36 +40,36 @@ ms.locfileid: "49278273"
 POST /deviceManagement/intents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="43cd4-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="43cd4-120">Request headers</span></span>
-|<span data-ttu-id="43cd4-121">标头</span><span class="sxs-lookup"><span data-stu-id="43cd4-121">Header</span></span>|<span data-ttu-id="43cd4-122">值</span><span class="sxs-lookup"><span data-stu-id="43cd4-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7426e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="7426e-120">Request headers</span></span>
+|<span data-ttu-id="7426e-121">标头</span><span class="sxs-lookup"><span data-stu-id="7426e-121">Header</span></span>|<span data-ttu-id="7426e-122">值</span><span class="sxs-lookup"><span data-stu-id="7426e-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="43cd4-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="43cd4-123">Authorization</span></span>|<span data-ttu-id="43cd4-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="43cd4-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="43cd4-125">接受</span><span class="sxs-lookup"><span data-stu-id="43cd4-125">Accept</span></span>|<span data-ttu-id="43cd4-126">application/json</span><span class="sxs-lookup"><span data-stu-id="43cd4-126">application/json</span></span>|
+|<span data-ttu-id="7426e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7426e-123">Authorization</span></span>|<span data-ttu-id="7426e-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="7426e-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7426e-125">接受</span><span class="sxs-lookup"><span data-stu-id="7426e-125">Accept</span></span>|<span data-ttu-id="7426e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7426e-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="43cd4-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="43cd4-127">Request body</span></span>
-<span data-ttu-id="43cd4-128">在请求正文中，提供 deviceManagementIntent 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="43cd4-128">In the request body, supply a JSON representation for the deviceManagementIntent object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7426e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="7426e-127">Request body</span></span>
+<span data-ttu-id="7426e-128">在请求正文中，提供 deviceManagementIntent 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7426e-128">In the request body, supply a JSON representation for the deviceManagementIntent object.</span></span>
 
-<span data-ttu-id="43cd4-129">下表显示创建 deviceManagementIntent 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="43cd4-129">The following table shows the properties that are required when you create the deviceManagementIntent.</span></span>
+<span data-ttu-id="7426e-129">下表显示创建 deviceManagementIntent 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="7426e-129">The following table shows the properties that are required when you create the deviceManagementIntent.</span></span>
 
-|<span data-ttu-id="43cd4-130">属性</span><span class="sxs-lookup"><span data-stu-id="43cd4-130">Property</span></span>|<span data-ttu-id="43cd4-131">类型</span><span class="sxs-lookup"><span data-stu-id="43cd4-131">Type</span></span>|<span data-ttu-id="43cd4-132">说明</span><span class="sxs-lookup"><span data-stu-id="43cd4-132">Description</span></span>|
+|<span data-ttu-id="7426e-130">属性</span><span class="sxs-lookup"><span data-stu-id="7426e-130">Property</span></span>|<span data-ttu-id="7426e-131">类型</span><span class="sxs-lookup"><span data-stu-id="7426e-131">Type</span></span>|<span data-ttu-id="7426e-132">说明</span><span class="sxs-lookup"><span data-stu-id="7426e-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="43cd4-133">id</span><span class="sxs-lookup"><span data-stu-id="43cd4-133">id</span></span>|<span data-ttu-id="43cd4-134">字符串</span><span class="sxs-lookup"><span data-stu-id="43cd4-134">String</span></span>|<span data-ttu-id="43cd4-135">意向 ID</span><span class="sxs-lookup"><span data-stu-id="43cd4-135">The intent ID</span></span>|
-|<span data-ttu-id="43cd4-136">displayName</span><span class="sxs-lookup"><span data-stu-id="43cd4-136">displayName</span></span>|<span data-ttu-id="43cd4-137">字符串</span><span class="sxs-lookup"><span data-stu-id="43cd4-137">String</span></span>|<span data-ttu-id="43cd4-138">用户给定的显示名称</span><span class="sxs-lookup"><span data-stu-id="43cd4-138">The user given display name</span></span>|
-|<span data-ttu-id="43cd4-139">description</span><span class="sxs-lookup"><span data-stu-id="43cd4-139">description</span></span>|<span data-ttu-id="43cd4-140">字符串</span><span class="sxs-lookup"><span data-stu-id="43cd4-140">String</span></span>|<span data-ttu-id="43cd4-141">用户提供的说明</span><span class="sxs-lookup"><span data-stu-id="43cd4-141">The user given description</span></span>|
-|<span data-ttu-id="43cd4-142">isAssigned</span><span class="sxs-lookup"><span data-stu-id="43cd4-142">isAssigned</span></span>|<span data-ttu-id="43cd4-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="43cd4-143">Boolean</span></span>|<span data-ttu-id="43cd4-144">指示是否将意向分配给用户</span><span class="sxs-lookup"><span data-stu-id="43cd4-144">Signifies whether or not the intent is assigned to users</span></span>|
-|<span data-ttu-id="43cd4-145">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="43cd4-145">lastModifiedDateTime</span></span>|<span data-ttu-id="43cd4-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="43cd4-146">DateTimeOffset</span></span>|<span data-ttu-id="43cd4-147">上次修改意向的时间</span><span class="sxs-lookup"><span data-stu-id="43cd4-147">When the intent was last modified</span></span>|
-|<span data-ttu-id="43cd4-148">templateId</span><span class="sxs-lookup"><span data-stu-id="43cd4-148">templateId</span></span>|<span data-ttu-id="43cd4-149">字符串</span><span class="sxs-lookup"><span data-stu-id="43cd4-149">String</span></span>|<span data-ttu-id="43cd4-150">如果任何) ，则从 (创建此意向的模板的 ID</span><span class="sxs-lookup"><span data-stu-id="43cd4-150">The ID of the template this intent was created from (if any)</span></span>|
-|<span data-ttu-id="43cd4-151">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="43cd4-151">roleScopeTagIds</span></span>|<span data-ttu-id="43cd4-152">String 集合</span><span class="sxs-lookup"><span data-stu-id="43cd4-152">String collection</span></span>|<span data-ttu-id="43cd4-153">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="43cd4-153">List of Scope Tags for this Entity instance.</span></span>|
+|<span data-ttu-id="7426e-133">id</span><span class="sxs-lookup"><span data-stu-id="7426e-133">id</span></span>|<span data-ttu-id="7426e-134">String</span><span class="sxs-lookup"><span data-stu-id="7426e-134">String</span></span>|<span data-ttu-id="7426e-135">意图 ID</span><span class="sxs-lookup"><span data-stu-id="7426e-135">The intent ID</span></span>|
+|<span data-ttu-id="7426e-136">displayName</span><span class="sxs-lookup"><span data-stu-id="7426e-136">displayName</span></span>|<span data-ttu-id="7426e-137">String</span><span class="sxs-lookup"><span data-stu-id="7426e-137">String</span></span>|<span data-ttu-id="7426e-138">给定用户显示名称</span><span class="sxs-lookup"><span data-stu-id="7426e-138">The user given display name</span></span>|
+|<span data-ttu-id="7426e-139">说明</span><span class="sxs-lookup"><span data-stu-id="7426e-139">description</span></span>|<span data-ttu-id="7426e-140">String</span><span class="sxs-lookup"><span data-stu-id="7426e-140">String</span></span>|<span data-ttu-id="7426e-141">用户给定的说明</span><span class="sxs-lookup"><span data-stu-id="7426e-141">The user given description</span></span>|
+|<span data-ttu-id="7426e-142">isAssigned</span><span class="sxs-lookup"><span data-stu-id="7426e-142">isAssigned</span></span>|<span data-ttu-id="7426e-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="7426e-143">Boolean</span></span>|<span data-ttu-id="7426e-144">表示是否将意图分配给用户</span><span class="sxs-lookup"><span data-stu-id="7426e-144">Signifies whether or not the intent is assigned to users</span></span>|
+|<span data-ttu-id="7426e-145">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="7426e-145">lastModifiedDateTime</span></span>|<span data-ttu-id="7426e-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7426e-146">DateTimeOffset</span></span>|<span data-ttu-id="7426e-147">上次修改意图时</span><span class="sxs-lookup"><span data-stu-id="7426e-147">When the intent was last modified</span></span>|
+|<span data-ttu-id="7426e-148">templateId</span><span class="sxs-lookup"><span data-stu-id="7426e-148">templateId</span></span>|<span data-ttu-id="7426e-149">String</span><span class="sxs-lookup"><span data-stu-id="7426e-149">String</span></span>|<span data-ttu-id="7426e-150">此意图的模板 ID 是 (（如果有) </span><span class="sxs-lookup"><span data-stu-id="7426e-150">The ID of the template this intent was created from (if any)</span></span>|
+|<span data-ttu-id="7426e-151">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="7426e-151">roleScopeTagIds</span></span>|<span data-ttu-id="7426e-152">String collection</span><span class="sxs-lookup"><span data-stu-id="7426e-152">String collection</span></span>|<span data-ttu-id="7426e-153">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="7426e-153">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="43cd4-154">响应</span><span class="sxs-lookup"><span data-stu-id="43cd4-154">Response</span></span>
-<span data-ttu-id="43cd4-155">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="43cd4-155">If successful, this method returns a `201 Created` response code and a [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7426e-154">响应</span><span class="sxs-lookup"><span data-stu-id="7426e-154">Response</span></span>
+<span data-ttu-id="7426e-155">如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7426e-155">If successful, this method returns a `201 Created` response code and a [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="43cd4-156">示例</span><span class="sxs-lookup"><span data-stu-id="43cd4-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7426e-156">示例</span><span class="sxs-lookup"><span data-stu-id="7426e-156">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="43cd4-157">请求</span><span class="sxs-lookup"><span data-stu-id="43cd4-157">Request</span></span>
-<span data-ttu-id="43cd4-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="43cd4-158">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="7426e-157">请求</span><span class="sxs-lookup"><span data-stu-id="7426e-157">Request</span></span>
+<span data-ttu-id="7426e-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7426e-158">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents
 Content-type: application/json
@@ -87,8 +87,8 @@ Content-length: 266
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="43cd4-159">响应</span><span class="sxs-lookup"><span data-stu-id="43cd4-159">Response</span></span>
-<span data-ttu-id="43cd4-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="43cd4-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7426e-159">响应</span><span class="sxs-lookup"><span data-stu-id="7426e-159">Response</span></span>
+<span data-ttu-id="7426e-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7426e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
