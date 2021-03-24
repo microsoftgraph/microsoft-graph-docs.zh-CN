@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efe0816dc084dd0ff4f8c95e9a4b3aac8f5a6097
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9ecf2214cd2853112a23c4dab105d32a2e1a839e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49248313"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51143148"
 ---
 # <a name="update-mobileappinstallsummary"></a>更新 mobileAppInstallSummary
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) 对象的属性。
+更新 [mobileAppInstallSummary 对象](../resources/intune-apps-mobileappinstallsummary.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,26 +49,26 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) 对象的 JSON 表示形式。
 
-下表显示创建 [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)时所需的属性。
+下表显示创建 [mobileAppInstallSummary 时所需的属性](../resources/intune-apps-mobileappinstallsummary.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|installedDeviceCount|Int32|已成功安装此应用的设备数量。|
-|failedDeviceCount|Int32|安装此应用失败的设备数量。|
-|notApplicableDeviceCount|Int32|不适用于此应用程序的设备数量。|
-|notInstalledDeviceCount|Int32|未安装此应用的设备数量。|
-|pendingInstallDeviceCount|Int32|已通知安装此应用程序的设备数。|
-|installedUserCount|Int32|其设备已成功安装此应用程序的用户数。|
-|failedUserCount|Int32|具有1个或多个无法安装此应用程序的设备的用户数。|
-|notApplicableUserCount|Int32|其设备全部不适用于此应用的用户数。|
-|notInstalledUserCount|Int32|具有1个或多个未安装此应用程序的设备的用户数。|
-|pendingInstallUserCount|Int32|具有1个或多个设备且已收到安装此应用程序并有0个设备出现故障的用户数量。|
+|installedDeviceCount|Int32|已成功安装此应用的设备数。|
+|failedDeviceCount|Int32|未能安装此应用的设备数。|
+|notApplicableDeviceCount|Int32|不适用于此应用的设备数。|
+|notInstalledDeviceCount|Int32|未安装此应用的设备数。|
+|pendingInstallDeviceCount|Int32|已通知安装此应用的设备数。|
+|installedUserCount|Int32|其设备全部成功安装此应用的用户数。|
+|failedUserCount|Int32|拥有 1 台或多台设备未能安装此应用的用户数量。|
+|notApplicableUserCount|Int32|其设备均不适用于此应用的用户数。|
+|notInstalledUserCount|Int32|具有 1 台或多台设备未安装此应用的用户数量。|
+|pendingInstallUserCount|Int32|拥有 1 台或多台设备且已收到通知安装此应用且设备有 0 台失败的用户数。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) 对象。
 
 ## <a name="example"></a>示例
 
