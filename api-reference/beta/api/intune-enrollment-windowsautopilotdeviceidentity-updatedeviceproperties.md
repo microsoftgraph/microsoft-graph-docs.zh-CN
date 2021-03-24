@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09598a47f945878ccd815f497e30df207db79040
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 58ff137b41ad9ec6c985e9ef23f1c6364464f7bb
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49212368"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51142133"
 ---
-# <a name="updatedeviceproperties-action"></a><span data-ttu-id="b7203-103">updateDeviceProperties 操作</span><span class="sxs-lookup"><span data-stu-id="b7203-103">updateDeviceProperties action</span></span>
+# <a name="updatedeviceproperties-action"></a><span data-ttu-id="98b97-103">updateDeviceProperties 操作</span><span class="sxs-lookup"><span data-stu-id="98b97-103">updateDeviceProperties action</span></span>
 
-<span data-ttu-id="b7203-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7203-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="98b97-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98b97-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="b7203-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="b7203-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="98b97-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="98b97-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b7203-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b7203-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="98b97-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="98b97-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b7203-107">更新 Autopilot 设备上的属性。</span><span class="sxs-lookup"><span data-stu-id="b7203-107">Updates properties on Autopilot devices.</span></span>
+<span data-ttu-id="98b97-107">更新 Autopilot 设备上的属性。</span><span class="sxs-lookup"><span data-stu-id="98b97-107">Updates properties on Autopilot devices.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b7203-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="b7203-108">Prerequisites</span></span>
-<span data-ttu-id="b7203-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b7203-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="98b97-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="98b97-108">Prerequisites</span></span>
+<span data-ttu-id="98b97-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="98b97-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b7203-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="b7203-111">Permission type</span></span>|<span data-ttu-id="b7203-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="b7203-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="98b97-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="98b97-111">Permission type</span></span>|<span data-ttu-id="98b97-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="98b97-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b7203-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b7203-113">Delegated (work or school account)</span></span>|<span data-ttu-id="b7203-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7203-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="b7203-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b7203-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b7203-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="b7203-116">Not supported.</span></span>|
-|<span data-ttu-id="b7203-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="b7203-117">Application</span></span>|<span data-ttu-id="b7203-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7203-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="98b97-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="98b97-113">Delegated (work or school account)</span></span>|<span data-ttu-id="98b97-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98b97-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="98b97-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="98b97-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="98b97-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="98b97-116">Not supported.</span></span>|
+|<span data-ttu-id="98b97-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="98b97-117">Application</span></span>|<span data-ttu-id="98b97-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98b97-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b7203-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b7203-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98b97-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="98b97-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,33 +41,33 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/{windowsAutopilotDeviceIdentityId}/updateDeviceProperties
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b7203-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="b7203-120">Request headers</span></span>
-|<span data-ttu-id="b7203-121">标头</span><span class="sxs-lookup"><span data-stu-id="b7203-121">Header</span></span>|<span data-ttu-id="b7203-122">值</span><span class="sxs-lookup"><span data-stu-id="b7203-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="98b97-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="98b97-120">Request headers</span></span>
+|<span data-ttu-id="98b97-121">标头</span><span class="sxs-lookup"><span data-stu-id="98b97-121">Header</span></span>|<span data-ttu-id="98b97-122">值</span><span class="sxs-lookup"><span data-stu-id="98b97-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b7203-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b7203-123">Authorization</span></span>|<span data-ttu-id="b7203-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="b7203-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b7203-125">接受</span><span class="sxs-lookup"><span data-stu-id="b7203-125">Accept</span></span>|<span data-ttu-id="b7203-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b7203-126">application/json</span></span>|
+|<span data-ttu-id="98b97-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="98b97-123">Authorization</span></span>|<span data-ttu-id="98b97-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="98b97-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="98b97-125">接受</span><span class="sxs-lookup"><span data-stu-id="98b97-125">Accept</span></span>|<span data-ttu-id="98b97-126">application/json</span><span class="sxs-lookup"><span data-stu-id="98b97-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b7203-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="b7203-127">Request body</span></span>
-<span data-ttu-id="b7203-128">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b7203-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="98b97-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="98b97-127">Request body</span></span>
+<span data-ttu-id="98b97-128">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="98b97-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="b7203-129">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="b7203-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="98b97-129">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="98b97-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="b7203-130">属性</span><span class="sxs-lookup"><span data-stu-id="b7203-130">Property</span></span>|<span data-ttu-id="b7203-131">类型</span><span class="sxs-lookup"><span data-stu-id="b7203-131">Type</span></span>|<span data-ttu-id="b7203-132">说明</span><span class="sxs-lookup"><span data-stu-id="b7203-132">Description</span></span>|
+|<span data-ttu-id="98b97-130">属性</span><span class="sxs-lookup"><span data-stu-id="98b97-130">Property</span></span>|<span data-ttu-id="98b97-131">类型</span><span class="sxs-lookup"><span data-stu-id="98b97-131">Type</span></span>|<span data-ttu-id="98b97-132">说明</span><span class="sxs-lookup"><span data-stu-id="98b97-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b7203-133">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="b7203-133">userPrincipalName</span></span>|<span data-ttu-id="b7203-134">String</span><span class="sxs-lookup"><span data-stu-id="b7203-134">String</span></span>|<span data-ttu-id="b7203-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="b7203-135">Not yet documented</span></span>|
-|<span data-ttu-id="b7203-136">addressableUserName</span><span class="sxs-lookup"><span data-stu-id="b7203-136">addressableUserName</span></span>|<span data-ttu-id="b7203-137">String</span><span class="sxs-lookup"><span data-stu-id="b7203-137">String</span></span>|<span data-ttu-id="b7203-138">尚未记录</span><span class="sxs-lookup"><span data-stu-id="b7203-138">Not yet documented</span></span>|
-|<span data-ttu-id="b7203-139">groupTag</span><span class="sxs-lookup"><span data-stu-id="b7203-139">groupTag</span></span>|<span data-ttu-id="b7203-140">String</span><span class="sxs-lookup"><span data-stu-id="b7203-140">String</span></span>|<span data-ttu-id="b7203-141">尚未记录</span><span class="sxs-lookup"><span data-stu-id="b7203-141">Not yet documented</span></span>|
-|<span data-ttu-id="b7203-142">displayName</span><span class="sxs-lookup"><span data-stu-id="b7203-142">displayName</span></span>|<span data-ttu-id="b7203-143">String</span><span class="sxs-lookup"><span data-stu-id="b7203-143">String</span></span>|<span data-ttu-id="b7203-144">尚未记录</span><span class="sxs-lookup"><span data-stu-id="b7203-144">Not yet documented</span></span>|
+|<span data-ttu-id="98b97-133">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="98b97-133">userPrincipalName</span></span>|<span data-ttu-id="98b97-134">String</span><span class="sxs-lookup"><span data-stu-id="98b97-134">String</span></span>|<span data-ttu-id="98b97-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="98b97-135">Not yet documented</span></span>|
+|<span data-ttu-id="98b97-136">addressableUserName</span><span class="sxs-lookup"><span data-stu-id="98b97-136">addressableUserName</span></span>|<span data-ttu-id="98b97-137">String</span><span class="sxs-lookup"><span data-stu-id="98b97-137">String</span></span>|<span data-ttu-id="98b97-138">尚未记录</span><span class="sxs-lookup"><span data-stu-id="98b97-138">Not yet documented</span></span>|
+|<span data-ttu-id="98b97-139">groupTag</span><span class="sxs-lookup"><span data-stu-id="98b97-139">groupTag</span></span>|<span data-ttu-id="98b97-140">String</span><span class="sxs-lookup"><span data-stu-id="98b97-140">String</span></span>|<span data-ttu-id="98b97-141">尚未记录</span><span class="sxs-lookup"><span data-stu-id="98b97-141">Not yet documented</span></span>|
+|<span data-ttu-id="98b97-142">displayName</span><span class="sxs-lookup"><span data-stu-id="98b97-142">displayName</span></span>|<span data-ttu-id="98b97-143">String</span><span class="sxs-lookup"><span data-stu-id="98b97-143">String</span></span>|<span data-ttu-id="98b97-144">尚未记录</span><span class="sxs-lookup"><span data-stu-id="98b97-144">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b7203-145">响应</span><span class="sxs-lookup"><span data-stu-id="b7203-145">Response</span></span>
-<span data-ttu-id="b7203-146">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="b7203-146">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="98b97-145">响应</span><span class="sxs-lookup"><span data-stu-id="98b97-145">Response</span></span>
+<span data-ttu-id="98b97-146">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="98b97-146">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b7203-147">示例</span><span class="sxs-lookup"><span data-stu-id="b7203-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="98b97-147">示例</span><span class="sxs-lookup"><span data-stu-id="98b97-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b7203-148">请求</span><span class="sxs-lookup"><span data-stu-id="b7203-148">Request</span></span>
-<span data-ttu-id="b7203-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b7203-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="98b97-148">请求</span><span class="sxs-lookup"><span data-stu-id="98b97-148">Request</span></span>
+<span data-ttu-id="98b97-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="98b97-149">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/updateDeviceProperties
 
@@ -82,8 +82,8 @@ Content-length: 187
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b7203-150">响应</span><span class="sxs-lookup"><span data-stu-id="b7203-150">Response</span></span>
-<span data-ttu-id="b7203-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b7203-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="98b97-150">响应</span><span class="sxs-lookup"><span data-stu-id="98b97-150">Response</span></span>
+<span data-ttu-id="98b97-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="98b97-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
