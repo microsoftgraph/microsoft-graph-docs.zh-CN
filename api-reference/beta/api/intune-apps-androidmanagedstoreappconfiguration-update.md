@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d310fd4e7e421bd5fbdb8065db18f49135e04ce0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 33fd8915c790e9b45eeaa9ae651e435fe94e5404
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49253514"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51140957"
 ---
 # <a name="update-androidmanagedstoreappconfiguration"></a>更新 androidManagedStoreAppConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) 对象的属性。
+更新 [androidManagedStoreAppConfiguration 对象](../resources/intune-apps-androidmanagedstoreappconfiguration.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,28 +49,28 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) 对象的 JSON 表示形式。
 
-下表显示创建 [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)时所需的属性。
+下表显示创建 [androidManagedStoreAppConfiguration 时所需的属性](../resources/intune-apps-androidmanagedstoreappconfiguration.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String 集合|关联的应用。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|roleScopeTagIds|String 集合|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|String collection|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|description|String|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|说明|String|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |displayName|String|管理员提供的设备配置名称。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|packageId|String|Android 企业应用程序配置包 id。|
+|packageId|String|Android 企业应用配置包 ID。|
 |payloadJson|String|Android 企业应用配置 JSON 有效负载。|
-|permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) 集合|Android 应用程序权限和相应权限操作的列表。|
-|appSupportsOemConfig|Boolean|此 AppConfig 是否为 OEMConfig 策略。|
-|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android 企业配置文件适用性 (AndroidWorkProfile、DeviceOwner 或 default (适用于) # A3。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
+|permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) 集合|Android 应用权限和相应权限操作的列表。|
+|appSupportsOemConfig|Boolean|此 AppConfig 是否是 OEMConfig 策略。|
+|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise 配置文件适用性 (AndroidWorkProfile、DeviceOwner 或默认 (适用于这两) ) 。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 

@@ -1,31 +1,31 @@
 ---
 title: revokeAllLicenses 操作
-description: 为给定的应用程序吊销所有分配的 iOS VPP 许可证。
+description: 撤销给定应用的所有分配 iOS VPP 许可证。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6eae639a694d2e23d437453c07c0c0a71f8bb4b0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 13c4dcd973d7dc14141097056ccbd6c11608dad2
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49252394"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51140677"
 ---
 # <a name="revokealllicenses-action"></a>revokeAllLicenses 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-为给定的应用程序吊销所有分配的 iOS VPP 许可证。
+撤销给定应用的所有分配 iOS VPP 许可证。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -53,9 +53,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|notifyManagedDevices|Boolean|指示是否应将吊销通知发送到设备的布尔值|
+|notifyManagedDevices|Boolean|指示是否应当向设备发送撤销通知的布尔值|
 
 
 
