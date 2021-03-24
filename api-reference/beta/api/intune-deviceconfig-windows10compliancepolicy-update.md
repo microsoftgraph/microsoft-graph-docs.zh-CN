@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 694800595f607b2c2e8d5521c180b360bf7bb34c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2f59254f334d5e7ea32bc35927b70f1d713a2ab0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287107"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51131132"
 ---
 # <a name="update-windows10compliancepolicy"></a>更新 windows10CompliancePolicy
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49287107"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -51,14 +51,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 下表显示创建 [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|需要密码才可解锁 Windows 设备。|
 |passwordBlockSimple|Boolean|指示是否阻止简单密码。|
@@ -80,17 +80,17 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
 |activeFirewallRequired|Boolean|在 Windows 设备上需要活动防火墙。|
-|defenderEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件。|
-|defenderVersion|字符串|在 Windows 设备上要求 Windows Defender 反恶意软件的最低版本。|
-|signatureOutOfDate|Boolean|Windows 设备上要求 Windows Defender 反恶意软件签名为最新。|
-|rtpEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件 Real-Time 保护。|
-|antivirusRequired|Boolean|要求在 Windows Decurity 中心注册的任何防病毒解决方案都处于启用和监控 (例如，Symantec、Windows Defender) 。|
-|antiSpywareRequired|Boolean|需要在 Windows Decurity Center 中注册的任何反间谍软件解决方案在 (（例如 Symantec、Windows Defender) ）上进行监视。|
-|validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) 集合|Windows 设备上的有效操作系统内部版本范围。 该集合最多可包含 10000 个元素。|
+|defenderEnabled|Boolean|要求Windows Defender Windows 设备上使用反恶意软件。|
+|defenderVersion|String|要求Windows Defender Windows 设备上的最低反恶意软件版本。|
+|signatureOutOfDate|Boolean|要求Windows Defender反恶意软件签名在 Windows 设备上是最新的。|
+|rtpEnabled|Boolean|要求Windows Defender Windows Real-Time反恶意软件防护。|
+|antivirusRequired|Boolean|要求在 Windows 递归中心注册的任何防病毒解决方案都打开并监视 (例如 Symantec、Windows Defender) 。|
+|antiSpywareRequired|Boolean|要求在 Windows 递归中心注册的任何 AntiSpyware 解决方案都打开并监视 (例如 Symantec、Windows Defender) 。|
+|validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) 集合|Windows 设备上有效的操作系统生成范围。 该集合最多可包含 10000 个元素。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|需要设备威胁防护最低风险级别来报告不合规。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|configurationManagerComplianceRequired|Boolean|需要考虑将 SCCM 合规性状态考虑到 Intune 合规性状态。|
-|tpmRequired|Boolean|需要受信任的平台模块 (TPM) 存在。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求设备威胁防护最低风险级别来报告不相容情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
+|configurationManagerComplianceRequired|Boolean|需要考虑 Intune 合规性状态中的 SCCM 合规性状态。|
+|tpmRequired|Boolean|需要 TPM (受信任的) 模块。|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|尚未记录|
 
 

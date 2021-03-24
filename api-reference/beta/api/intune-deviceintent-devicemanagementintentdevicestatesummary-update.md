@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 863e7c40940c6abbb9eb6e0f412a0c715ec9db0f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0556f44326e76563374d3e84497f1f9ed3dbf1c2
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275298"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51130964"
 ---
 # <a name="update-devicemanagementintentdevicestatesummary"></a>更新 deviceManagementIntentDeviceStateSummary
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md) 对象的属性。
+更新 [deviceManagementIntentDeviceStateSummary 对象](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,22 +49,22 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStateSummary
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)时所需的属性。
+下表显示创建 [deviceManagementIntentDeviceStateSummary 时所需的属性](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|ID|
+|id|String|The ID|
 |conflictCount|Int32|发生冲突的设备数|
 |errorCount|Int32|错误设备的数量|
 |failedCount|Int32|失败设备的数量|
 |notApplicableCount|Int32|不适用设备的数量|
-|notApplicablePlatformCount|Int32|由于平台和策略不匹配而导致不适用的设备数量|
+|notApplicablePlatformCount|Int32|由于平台和策略不匹配而不适用的设备数量|
 |successCount|Int32|成功设备的数量|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md) 对象。
 
 ## <a name="example"></a>示例
 

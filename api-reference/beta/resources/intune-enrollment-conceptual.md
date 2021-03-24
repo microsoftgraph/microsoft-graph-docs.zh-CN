@@ -1,15 +1,15 @@
 ---
-title: 使用 Intune 注册企业设备-Microsoft Graph API
-description: 列出为租户组织注册设备 (REST) 的适用于 Intune 终结点的 Microsoft Graph API。
+title: 使用 Intune 注册公司设备 - Microsoft Graph API
+description: 列出用于 Intune 终结点的 Microsoft Graph API (为) 组织注册设备的 REST 应用程序。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e8e1a03f5194b5790ba68c10dad8eae23a706945
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a85db8c4397659789feafa395195a39542928f01
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735237"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51131951"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 
@@ -17,7 +17,7 @@ ms.locfileid: "48735237"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 通过 Intune，你可以用多种方式注册要管理的组织拥有或企业拥有的设备，具体取决于设备的类型、设备的购买方式和组织的需求。 你还可以安装公司门户应用，注册和管理企业拥有的设备，例如，在“自带设备”(BYOD) 场景中进行管理。
 
@@ -29,6 +29,7 @@ ms.locfileid: "48735237"
 - [Apple 用户启动的注册配置文件](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
 - [Apple 用户启动的注册类型](intune-enrollment-appleuserinitiatedenrollmenttype.md)
 - [Azure AD Windows AutoPilot Deployment 配置文件](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
+- [已删除的 Windows Autopilot 设备状态](intune-enrollment-deletedwindowsautopilotdevicestate.md)
 - [DEP 注册基准配置文件](intune-enrollment-depenrollmentbaseprofile.md)
 - [DEP 注册配置文件](intune-enrollment-depenrollmentprofile.md)
 - [DEP iOS 注册配置文件](intune-enrollment-depiosenrollmentprofile.md)
@@ -52,6 +53,7 @@ ms.locfileid: "48735237"
 - [平台](intune-enrollment-platform.md)
 - [建议的注册限制](intune-enrollment-suggestedenrollmentlimit.md)
 - [Windows Autopilot Deployment 配置文件分配](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
+- [Windows Autopilot 设备删除状态](intune-enrollment-windowsautopilotdevicedeletionstate.md)
 - [Windows Autopilot 设备标识](intune-enrollment-windowsautopilotdeviceidentity.md)
 - [Windows Autopilot 设备类型](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows Autopilot 配置文件分配详细状态](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
