@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 075e1b96db819072b557e14f5f51fc6eb3f9386e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f3c75d0f6a960f1cf0bc4006b6b864488b8f033c
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49219858"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51137180"
 ---
-# <a name="list-macossoftwareupdatestatesummaries"></a><span data-ttu-id="e7dab-103">列出 macOSSoftwareUpdateStateSummaries</span><span class="sxs-lookup"><span data-stu-id="e7dab-103">List macOSSoftwareUpdateStateSummaries</span></span>
+# <a name="list-macossoftwareupdatestatesummaries"></a><span data-ttu-id="cfd49-103">列出 macOSSoftwareUpdateStateSummaries</span><span class="sxs-lookup"><span data-stu-id="cfd49-103">List macOSSoftwareUpdateStateSummaries</span></span>
 
-<span data-ttu-id="e7dab-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e7dab-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cfd49-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cfd49-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e7dab-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e7dab-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="cfd49-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="cfd49-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e7dab-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e7dab-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cfd49-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cfd49-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e7dab-107">列出 [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="e7dab-107">List properties and relationships of the [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) objects.</span></span>
+<span data-ttu-id="cfd49-107">列出 [macOSSoftwareUpdateStateSummary 对象的属性和](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) 关系。</span><span class="sxs-lookup"><span data-stu-id="cfd49-107">List properties and relationships of the [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e7dab-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="e7dab-108">Prerequisites</span></span>
-<span data-ttu-id="e7dab-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e7dab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cfd49-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="cfd49-108">Prerequisites</span></span>
+<span data-ttu-id="cfd49-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cfd49-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e7dab-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e7dab-111">Permission type</span></span>|<span data-ttu-id="e7dab-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e7dab-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cfd49-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="cfd49-111">Permission type</span></span>|<span data-ttu-id="cfd49-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cfd49-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e7dab-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e7dab-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e7dab-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="e7dab-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="e7dab-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e7dab-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e7dab-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e7dab-116">Not supported.</span></span>|
-|<span data-ttu-id="e7dab-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="e7dab-117">Application</span></span>|<span data-ttu-id="e7dab-118">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="e7dab-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="cfd49-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cfd49-113">Delegated (work or school account)</span></span>|<span data-ttu-id="cfd49-114">DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cfd49-114">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="cfd49-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cfd49-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cfd49-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="cfd49-116">Not supported.</span></span>|
+|<span data-ttu-id="cfd49-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="cfd49-117">Application</span></span>|<span data-ttu-id="cfd49-118">DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cfd49-118">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e7dab-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e7dab-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cfd49-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cfd49-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ ms.locfileid: "49219858"
 GET /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateAccountSummaryId}/categorySummaries/{macOSSoftwareUpdateCategorySummaryId}/updateStateSummaries
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e7dab-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e7dab-120">Request headers</span></span>
-|<span data-ttu-id="e7dab-121">标头</span><span class="sxs-lookup"><span data-stu-id="e7dab-121">Header</span></span>|<span data-ttu-id="e7dab-122">值</span><span class="sxs-lookup"><span data-stu-id="e7dab-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cfd49-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="cfd49-120">Request headers</span></span>
+|<span data-ttu-id="cfd49-121">标头</span><span class="sxs-lookup"><span data-stu-id="cfd49-121">Header</span></span>|<span data-ttu-id="cfd49-122">值</span><span class="sxs-lookup"><span data-stu-id="cfd49-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e7dab-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7dab-123">Authorization</span></span>|<span data-ttu-id="e7dab-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e7dab-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e7dab-125">接受</span><span class="sxs-lookup"><span data-stu-id="e7dab-125">Accept</span></span>|<span data-ttu-id="e7dab-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e7dab-126">application/json</span></span>|
+|<span data-ttu-id="cfd49-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cfd49-123">Authorization</span></span>|<span data-ttu-id="cfd49-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="cfd49-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cfd49-125">接受</span><span class="sxs-lookup"><span data-stu-id="cfd49-125">Accept</span></span>|<span data-ttu-id="cfd49-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cfd49-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e7dab-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e7dab-127">Request body</span></span>
-<span data-ttu-id="e7dab-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e7dab-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cfd49-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="cfd49-127">Request body</span></span>
+<span data-ttu-id="cfd49-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="cfd49-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e7dab-129">响应</span><span class="sxs-lookup"><span data-stu-id="e7dab-129">Response</span></span>
-<span data-ttu-id="e7dab-130">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e7dab-130">If successful, this method returns a `200 OK` response code and a collection of [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cfd49-129">响应</span><span class="sxs-lookup"><span data-stu-id="cfd49-129">Response</span></span>
+<span data-ttu-id="cfd49-130">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="cfd49-130">If successful, this method returns a `200 OK` response code and a collection of [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e7dab-131">示例</span><span class="sxs-lookup"><span data-stu-id="e7dab-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cfd49-131">示例</span><span class="sxs-lookup"><span data-stu-id="cfd49-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e7dab-132">请求</span><span class="sxs-lookup"><span data-stu-id="e7dab-132">Request</span></span>
-<span data-ttu-id="e7dab-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e7dab-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="cfd49-132">请求</span><span class="sxs-lookup"><span data-stu-id="cfd49-132">Request</span></span>
+<span data-ttu-id="cfd49-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cfd49-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateAccountSummaryId}/categorySummaries/{macOSSoftwareUpdateCategorySummaryId}/updateStateSummaries
 ```
 
-### <a name="response"></a><span data-ttu-id="e7dab-134">响应</span><span class="sxs-lookup"><span data-stu-id="e7dab-134">Response</span></span>
-<span data-ttu-id="e7dab-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e7dab-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cfd49-134">响应</span><span class="sxs-lookup"><span data-stu-id="cfd49-134">Response</span></span>
+<span data-ttu-id="cfd49-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cfd49-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
