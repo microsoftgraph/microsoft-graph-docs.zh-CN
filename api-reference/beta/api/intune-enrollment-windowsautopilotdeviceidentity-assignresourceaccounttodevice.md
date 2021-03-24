@@ -1,31 +1,31 @@
 ---
 title: assignResourceAccountToDevice 操作
-description: 向 Autopilot 设备分配资源帐户。
+description: 将资源帐户分配给 Autopilot 设备。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eeeffa76e8038b2645c8a99fd7ed695e09f97206
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6d27c66a6d378a82af6ba81f63b90906fb91f7ca
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49218437"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51142147"
 ---
 # <a name="assignresourceaccounttodevice-action"></a>assignResourceAccountToDevice 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-向 Autopilot 设备分配资源帐户。
+将资源帐户分配给 Autopilot 设备。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -54,7 +54,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|userPrincipalName|字符串|尚未记录|
+|userPrincipalName|String|尚未记录|
 |addressableUserName|String|尚未记录|
 |resourceAccountName|String|尚未记录|
 

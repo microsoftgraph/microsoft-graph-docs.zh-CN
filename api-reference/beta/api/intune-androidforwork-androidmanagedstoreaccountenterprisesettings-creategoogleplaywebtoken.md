@@ -1,31 +1,31 @@
 ---
 title: createGooglePlayWebToken 操作
-description: 生成在可嵌入组件中使用的 web 令牌。
+description: 生成在可嵌入组件中使用的 Web 令牌。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2ec1dc3d6da811f65b70f6a1a265cc0e7bba98f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6cc813873b865eb03c76a68f40141b3b42bac044
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49254480"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141195"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>createGooglePlayWebToken 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-生成在可嵌入组件中使用的 web 令牌。
+生成在可嵌入组件中使用的 Web 令牌。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -51,9 +51,9 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|parentUri|String|承载组件的页面的 https 路径。|
+|parentUri|String|托管组件的页面的 https 路径。|
 
 
 

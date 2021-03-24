@@ -1,26 +1,26 @@
 ---
 title: userExperienceAnalyticsBaseline 资源类型
-description: 用户体验分析基线实体包含比较用户体验分析分数的基准值。
+description: 用户体验分析基线实体包含比较用户体验分析分数的基线值。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 106600e99e7002a39af93a8691980c41c6bf0697
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 8d33eec55a5e7309a0ed80fd7fcf4d62b780a1f8
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158448"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141447"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>userExperienceAnalyticsBaseline 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用户体验分析基线实体包含比较用户体验分析分数的基准值。
+用户体验分析基线实体包含比较用户体验分析分数的基线值。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -37,7 +37,7 @@ ms.locfileid: "50158448"
 |id|String|用户体验分析基线的唯一标识符。|
 |displayName|String|用户体验分析基线的名称。|
 |overallScore|Int32|用户体验分析基线的整体分数。|
-|isBuiltIn|Boolean|表示当前基线是商业中值基线还是自定义比较基准。|
+|isBuiltIn|Boolean|表示当前比较基准是商业中值基线还是自定义比较基准。|
 |createdDateTime|DateTimeOffset|创建自定义比较基准的日期。|
 
 ## <a name="relationships"></a>关系
@@ -48,6 +48,7 @@ ms.locfileid: "50158448"
 |rebootAnalyticsMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|用户体验分析重新启动分析指标。|
 |resourcePerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|用户体验分析资源性能指标。|
 |appHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|用户体验分析应用运行状况指标。|
+|workFromAnywhereMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|用户体验分析从任何指标开始工作。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

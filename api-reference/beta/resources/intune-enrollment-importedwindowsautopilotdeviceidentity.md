@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8632c95ee0ec9700a16fa0ca94d2838285ba768
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3f9b390b2e742418c39015ef44c5a2443b8b977b
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161493"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141391"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -35,7 +35,6 @@ ms.locfileid: "50161493"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|orderIdentifier|String|Windows autopilot 设备订单 Id。 - 弃用|
 |groupTag|String|Windows autopilot 设备的组标记。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
@@ -59,7 +58,6 @@ ms.locfileid: "50161493"
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "String (identifier)",
-  "orderIdentifier": "String",
   "groupTag": "String",
   "serialNumber": "String",
   "productKey": "String",
