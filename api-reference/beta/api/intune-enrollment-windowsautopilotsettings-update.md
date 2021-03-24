@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53560e607bd3cdfe9cc56268d68fa09d9f95ac44
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bff766b56e9c625e2d22247db0612e5e8aeb95fc
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49212347"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51145850"
 ---
 # <a name="update-windowsautopilotsettings"></a>更新 windowsAutopilotSettings
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) 对象的属性。
+更新 [windowsAutopilotSettings 对象](../resources/intune-enrollment-windowsautopilotsettings.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,19 +49,19 @@ PATCH /deviceManagement/windowsAutopilotSettings
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) 对象的 JSON 表示形式。
 
-下表显示创建 [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)时所需的属性。
+下表显示创建 [windowsAutopilotSettings 时所需的属性](../resources/intune-enrollment-windowsautopilotsettings.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|lastSyncDateTime|DateTimeOffset|包含 DDS 服务的上次数据同步日期时间。|
-|lastManualSyncTriggerDateTime|DateTimeOffset|包含 DDS 服务的上次数据同步日期时间。|
-|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|指示与设备数据同步 (DDS) 服务同步的状态。 可取值为：`unknown`、`inProgress`、`completed`、`failed`。|
+|lastSyncDateTime|DateTimeOffset|DDS 服务的上次数据同步日期时间。|
+|lastManualSyncTriggerDateTime|DateTimeOffset|DDS 服务的上次数据同步日期时间。|
+|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|指示与 DDS 服务的设备数据 (同步) 状态。 可取值为：`unknown`、`inProgress`、`completed`、`failed`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) 对象。
 
 ## <a name="example"></a>示例
 

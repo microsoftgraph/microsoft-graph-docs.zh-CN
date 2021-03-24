@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ede6a5cdc8bd4be6f8b5b11a5dec6648497a6ed0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f161e58e8ce571d0c4f83e6dcf7b77683e94d70d
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49233787"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146158"
 ---
 # <a name="create-userexperienceanalyticsscorehistory"></a>创建 userExperienceAnalyticsScoreHistory
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49233787"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -53,18 +53,18 @@ POST /deviceManagement/userExperienceAnalyticsScoreHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动过程的唯一标识符。|
-|startupDateTime|DateTimeOffset|User experience analytics 设备启动日期时间。|
-|startupScore|Int32|用户体验分析设备启动分数。 分数将在范围0-100，100是理想的分数。|
-|coreBootScore|Int32|用户体验分析设备核心启动分数。 分数将在范围0-100，100是理想的分数。|
-|coreSigninScore|Int32|用户体验分析设备核心登录分数。 分数将在范围0-100，100是理想的分数。|
-|recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。 分数将在范围0-100，100是理想的分数。|
-|restartScore|Int32|重启分数。 分数将在范围0-100，100为理想分数，0表示重新启动过多。 有效值为0至9999999|
+|id|String|用户体验分析设备启动过程的唯一标识符。|
+|startupDateTime|DateTimeOffset|用户体验分析设备启动日期时间。|
+|startupScore|Int32|用户体验分析设备启动分数。 分数范围为 0-100，100 是理想分数。|
+|coreBootScore|Int32|用户体验分析设备核心启动分数。 分数范围为 0-100，100 是理想分数。|
+|coreSigninScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
+|recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
+|restartScore|Int32|重启分数。 分数将在 0-100 之间，100 是理想分数，0 表示重启过多。 有效值为 0 到 9999999|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) 对象。
 
 ## <a name="example"></a>示例
 
