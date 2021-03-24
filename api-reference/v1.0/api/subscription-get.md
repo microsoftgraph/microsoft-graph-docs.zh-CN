@@ -2,15 +2,15 @@
 title: 获取订阅
 description: 检索订阅的属性和关系。
 localization_priority: Priority
-author: davidmu1
-ms.prod: ''
+author: Jumaodhiss
+ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 93b614c8ba93b5643b5f630294e40fee1edf002c
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 36eff9ff9f54ad6873d0948d58b7637722d9a97f
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761533"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031119"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -39,6 +39,8 @@ ms.locfileid: "50761533"
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
+|[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -128,7 +130,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions/{id}
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -150,7 +152,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json"
 }
 ```
 

@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7a417a30b8c34da52d151ce64cc9f655fabdbdd
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0d617546464b1333af2b535bbc1c17f61fa03386
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49310991"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146543"
 ---
 # <a name="update-datasharingconsent"></a>更新 dataSharingConsent
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 对象的属性。
+更新 [dataSharingConsent 对象](../resources/intune-devices-datasharingconsent.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,22 +49,22 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 对象的 JSON 表示形式。
 
-下表显示创建 [dataSharingConsent](../resources/intune-devices-datasharingconsent.md)时所需的属性。
+下表显示创建 [dataSharingConsent 时所需的属性](../resources/intune-devices-datasharingconsent.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|数据共享同意 Id|
-|serviceDisplayName|字符串|服务工作流的显示名称|
-|termsUrl|字符串|数据共享同意的 TermsUrl|
-|granted|Boolean|"数据共享同意" 的 "已授予" 状态|
-|grantDateTime|DateTimeOffset|授予此帐户的时间许可|
-|grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
-|grantedByUserId|字符串|授予此帐户同意的用户的用户 Id|
+|id|String|数据共享许可 ID|
+|serviceDisplayName|String|服务显示名称流|
+|termsUrl|String|数据共享同意的 TermsUrl|
+|granted|Boolean|数据共享同意的授予状态|
+|grantDateTime|DateTimeOffset|为此帐户授予许可的时间|
+|grantedByUpn|String|授予此帐户同意的用户的 Upn|
+|grantedByUserId|String|授予此帐户同意的用户的 UserId|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 对象。
 
 ## <a name="example"></a>示例
 
