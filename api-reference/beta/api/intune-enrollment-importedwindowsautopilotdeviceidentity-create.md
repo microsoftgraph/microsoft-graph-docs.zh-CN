@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d807ef8c1eee14242c26959a475f30b53a20a72
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2c39fed44dd8d4d7f0516f2215534ed861e13ec4
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49225332"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51149861"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>创建 importedWindowsAutopilotDeviceIdentity
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49225332"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -54,14 +54,13 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|orderIdentifier|String|Windows autopilot 设备订单 Id。 -弃用|
-|groupTag|String|Windows autopilot 设备的 Group 标记。|
+|groupTag|String|Windows autopilot 设备的组标记。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
-|importId|String|Windows autopilot 设备的导入 Id。|
+|importId|String|Windows autopilot 设备的导入 ID。|
 |hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
-|assignedUserPrincipalName|String|将为设备分配的用户的 UPN|
+|assignedUserPrincipalName|String|将分配设备的用户的 UPN|
 
 
 
@@ -75,11 +74,10 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 679
+Content-length: 631
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -101,12 +99,11 @@ Content-length: 679
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 728
+Content-Length: 680
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",

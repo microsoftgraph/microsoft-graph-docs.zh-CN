@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02383cd8ac10d7c383b3cd84c25d4dc57c9bd71b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: dbe91b8e131e4379c8d658cea6420aad9fbf2c9e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434963"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51149973"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>更新 userExperienceAnalyticsOverview
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,11 +25,11 @@ ms.locfileid: "50434963"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,20 +56,22 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 |id|String|用户体验分析概述的唯一标识符。|
 |overallScore|Int32|用户体验分析总体分数。|
 |deviceBootPerformanceOverallScore|Int32|用户体验分析设备启动性能总体分数。|
-|bestPracticesOverallScore|Int32|用户体验分析最佳做法总体分数。|
+|bestPracticesOverallScore|Int32|用户体验分析最佳实践总体分数。|
+|workFromAnywhereOverallScore|Int32|用户体验分析从任意位置工作总体分数。|
 |appHealthOverallScore|Int32|用户体验分析应用运行状况总体分数。|
 |resourcePerformanceOverallScore|Int32|用户体验分析资源性能总体分数。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) 集合|用户体验分析见解。|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析概述的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BootPerformance"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"ResourcePerformance"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BootPerformance"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"WorkFromAnywhere"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"ResourcePerformance"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和更新的用户 `200 OK` [ExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -78,13 +80,14 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 906
+Content-length: 999
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
   "overallScore": 12,
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
+  "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
   "insights": [
@@ -104,6 +107,7 @@ Content-length: 906
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
   "bestPracticesHealthState": "insufficientData",
+  "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
   "resourcePerformanceState": "insufficientData"
 }
@@ -114,7 +118,7 @@ Content-length: 906
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 955
+Content-Length: 1048
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -122,6 +126,7 @@ Content-Length: 955
   "overallScore": 12,
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
+  "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
   "insights": [
@@ -141,6 +146,7 @@ Content-Length: 955
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
   "bestPracticesHealthState": "insufficientData",
+  "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
   "resourcePerformanceState": "insufficientData"
 }

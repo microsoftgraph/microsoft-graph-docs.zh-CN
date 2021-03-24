@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40bcb746bc4997c2cb0742dd2ef66ff1f84a0634
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2538cc410dbe3b80ea1b2e26c5fe3c4c9bedafca
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160220"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51148671"
 ---
 # <a name="getassignmentfiltersstatusdetails-action"></a>getAssignmentFiltersStatusDetails 操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,11 +25,11 @@ ms.locfileid: "50160220"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,7 +63,7 @@ POST /deviceManagement/getAssignmentFiltersStatusDetails
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应正文中返回响应代码和 `200 OK` [assignmentFilterStatusDetails。](../resources/intune-policyset-assignmentfilterstatusdetails.md)
+如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [assignmentFilterStatusDetails。](../resources/intune-policyset-assignmentfilterstatusdetails.md)
 
 ## <a name="example"></a>示例
 
@@ -92,7 +92,7 @@ Content-length: 214
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 947
+Content-Length: 1216
 
 {
   "value": {
@@ -116,7 +116,14 @@ Content-Length: 947
         "assignmentFilterPlatform": "androidForWork",
         "evaluationResult": "match",
         "evaluationDateTime": "2016-12-31T23:58:01.2047675-08:00",
-        "assignmentFilterType": "include"
+        "assignmentFilterType": "include",
+        "assignmentFilterTypeAndEvaluationResults": [
+          {
+            "@odata.type": "microsoft.graph.assignmentFilterTypeAndEvaluationResult",
+            "assignmentFilterType": "include",
+            "evaluationResult": "match"
+          }
+        ]
       }
     ]
   }
