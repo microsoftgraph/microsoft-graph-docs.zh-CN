@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 184a021eabf8d93144023ba7f5a007853c5dd3c5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6f255230467b3efb6d31a0b1739b699d5e9e7b7b
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49250455"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51140208"
 ---
-# <a name="create-manageddevicemobileappconfigurationassignment"></a><span data-ttu-id="c7d53-103">创建 managedDeviceMobileAppConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="c7d53-103">Create managedDeviceMobileAppConfigurationAssignment</span></span>
+# <a name="create-manageddevicemobileappconfigurationassignment"></a><span data-ttu-id="0420d-103">创建 managedDeviceMobileAppConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="0420d-103">Create managedDeviceMobileAppConfigurationAssignment</span></span>
 
-<span data-ttu-id="c7d53-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c7d53-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0420d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0420d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="c7d53-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c7d53-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0420d-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0420d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c7d53-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c7d53-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0420d-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0420d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c7d53-107">创建新的 [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c7d53-107">Create a new [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object.</span></span>
+<span data-ttu-id="0420d-107">创建新的 [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0420d-107">Create a new [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="c7d53-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="c7d53-108">Prerequisites</span></span>
-<span data-ttu-id="c7d53-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c7d53-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0420d-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="0420d-108">Prerequisites</span></span>
+<span data-ttu-id="0420d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0420d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c7d53-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c7d53-111">Permission type</span></span>|<span data-ttu-id="c7d53-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="c7d53-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0420d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0420d-111">Permission type</span></span>|<span data-ttu-id="0420d-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0420d-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c7d53-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c7d53-113">Delegated (work or school account)</span></span>|<span data-ttu-id="c7d53-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7d53-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="c7d53-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c7d53-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c7d53-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c7d53-116">Not supported.</span></span>|
-|<span data-ttu-id="c7d53-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="c7d53-117">Application</span></span>|<span data-ttu-id="c7d53-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7d53-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="0420d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0420d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="0420d-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0420d-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="0420d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0420d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0420d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0420d-116">Not supported.</span></span>|
+|<span data-ttu-id="0420d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="0420d-117">Application</span></span>|<span data-ttu-id="0420d-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0420d-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c7d53-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c7d53-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0420d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0420d-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +40,31 @@ ms.locfileid: "49250455"
 POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c7d53-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c7d53-120">Request headers</span></span>
-|<span data-ttu-id="c7d53-121">标头</span><span class="sxs-lookup"><span data-stu-id="c7d53-121">Header</span></span>|<span data-ttu-id="c7d53-122">值</span><span class="sxs-lookup"><span data-stu-id="c7d53-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0420d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="0420d-120">Request headers</span></span>
+|<span data-ttu-id="0420d-121">标头</span><span class="sxs-lookup"><span data-stu-id="0420d-121">Header</span></span>|<span data-ttu-id="0420d-122">值</span><span class="sxs-lookup"><span data-stu-id="0420d-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="c7d53-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c7d53-123">Authorization</span></span>|<span data-ttu-id="c7d53-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="c7d53-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="c7d53-125">接受</span><span class="sxs-lookup"><span data-stu-id="c7d53-125">Accept</span></span>|<span data-ttu-id="c7d53-126">application/json</span><span class="sxs-lookup"><span data-stu-id="c7d53-126">application/json</span></span>|
+|<span data-ttu-id="0420d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="0420d-123">Authorization</span></span>|<span data-ttu-id="0420d-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="0420d-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0420d-125">接受</span><span class="sxs-lookup"><span data-stu-id="0420d-125">Accept</span></span>|<span data-ttu-id="0420d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="0420d-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c7d53-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="c7d53-127">Request body</span></span>
-<span data-ttu-id="c7d53-128">在请求正文中，提供 managedDeviceMobileAppConfigurationAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c7d53-128">In the request body, supply a JSON representation for the managedDeviceMobileAppConfigurationAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0420d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="0420d-127">Request body</span></span>
+<span data-ttu-id="0420d-128">在请求正文中，提供 managedDeviceMobileAppConfigurationAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0420d-128">In the request body, supply a JSON representation for the managedDeviceMobileAppConfigurationAssignment object.</span></span>
 
-<span data-ttu-id="c7d53-129">下表显示创建 managedDeviceMobileAppConfigurationAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="c7d53-129">The following table shows the properties that are required when you create the managedDeviceMobileAppConfigurationAssignment.</span></span>
+<span data-ttu-id="0420d-129">下表显示创建 managedDeviceMobileAppConfigurationAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="0420d-129">The following table shows the properties that are required when you create the managedDeviceMobileAppConfigurationAssignment.</span></span>
 
-|<span data-ttu-id="c7d53-130">属性</span><span class="sxs-lookup"><span data-stu-id="c7d53-130">Property</span></span>|<span data-ttu-id="c7d53-131">类型</span><span class="sxs-lookup"><span data-stu-id="c7d53-131">Type</span></span>|<span data-ttu-id="c7d53-132">说明</span><span class="sxs-lookup"><span data-stu-id="c7d53-132">Description</span></span>|
+|<span data-ttu-id="0420d-130">属性</span><span class="sxs-lookup"><span data-stu-id="0420d-130">Property</span></span>|<span data-ttu-id="0420d-131">类型</span><span class="sxs-lookup"><span data-stu-id="0420d-131">Type</span></span>|<span data-ttu-id="0420d-132">说明</span><span class="sxs-lookup"><span data-stu-id="0420d-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c7d53-133">id</span><span class="sxs-lookup"><span data-stu-id="c7d53-133">id</span></span>|<span data-ttu-id="c7d53-134">String</span><span class="sxs-lookup"><span data-stu-id="c7d53-134">String</span></span>|<span data-ttu-id="c7d53-135">实体的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="c7d53-135">Unique identifier of the entity.</span></span>|
-|<span data-ttu-id="c7d53-136">target</span><span class="sxs-lookup"><span data-stu-id="c7d53-136">target</span></span>|[<span data-ttu-id="c7d53-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="c7d53-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="c7d53-138">将 T&C 策略分配到的分配目标。</span><span class="sxs-lookup"><span data-stu-id="c7d53-138">Assignment target that the T&C policy is assigned to.</span></span>|
+|<span data-ttu-id="0420d-133">id</span><span class="sxs-lookup"><span data-stu-id="0420d-133">id</span></span>|<span data-ttu-id="0420d-134">String</span><span class="sxs-lookup"><span data-stu-id="0420d-134">String</span></span>|<span data-ttu-id="0420d-135">实体的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="0420d-135">Unique identifier of the entity.</span></span>|
+|<span data-ttu-id="0420d-136">target</span><span class="sxs-lookup"><span data-stu-id="0420d-136">target</span></span>|[<span data-ttu-id="0420d-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="0420d-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="0420d-138">将 T&C 策略分配到的分配目标。</span><span class="sxs-lookup"><span data-stu-id="0420d-138">Assignment target that the T&C policy is assigned to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="c7d53-139">响应</span><span class="sxs-lookup"><span data-stu-id="c7d53-139">Response</span></span>
-<span data-ttu-id="c7d53-140">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c7d53-140">If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0420d-139">响应</span><span class="sxs-lookup"><span data-stu-id="0420d-139">Response</span></span>
+<span data-ttu-id="0420d-140">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0420d-140">If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c7d53-141">示例</span><span class="sxs-lookup"><span data-stu-id="c7d53-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0420d-141">示例</span><span class="sxs-lookup"><span data-stu-id="0420d-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c7d53-142">请求</span><span class="sxs-lookup"><span data-stu-id="c7d53-142">Request</span></span>
-<span data-ttu-id="c7d53-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c7d53-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0420d-142">请求</span><span class="sxs-lookup"><span data-stu-id="0420d-142">Request</span></span>
+<span data-ttu-id="0420d-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0420d-143">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 346
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c7d53-144">响应</span><span class="sxs-lookup"><span data-stu-id="c7d53-144">Response</span></span>
-<span data-ttu-id="c7d53-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c7d53-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0420d-144">响应</span><span class="sxs-lookup"><span data-stu-id="0420d-144">Response</span></span>
+<span data-ttu-id="0420d-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0420d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
