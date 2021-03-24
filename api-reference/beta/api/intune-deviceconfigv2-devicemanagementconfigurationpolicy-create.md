@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 044059bddb9893fb4c7f2520a56d1774f6b47792
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 94410b8e7b3259a74893e93b450486398c5bef13
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241502"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51129270"
 ---
 # <a name="create-devicemanagementconfigurationpolicy"></a>创建 deviceManagementConfigurationPolicy
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49241502"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -55,20 +55,20 @@ POST /deviceManagement/configurationPolicies
 |:---|:---|:---|
 |id|String|策略文档的键。 自动生成。|
 |name|String|策略名称|
-|description|String|策略说明|
+|说明|String|策略说明|
 |平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
-|技术|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|适用于此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`。|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`。|
 |createdDateTime|DateTimeOffset|策略创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|
-|settingCount|Int32|设置的数目。 此属性是只读的。|
+|settingCount|Int32|设置数。 此属性是只读的。|
 |creationSource|String|策略创建源|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 |isAssigned|Boolean|策略分配状态。 此属性是只读的。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) 对象。
 
 ## <a name="example"></a>示例
 

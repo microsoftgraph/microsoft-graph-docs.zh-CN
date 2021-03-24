@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9dd60940f6bda5525ce214e4679728e7c41d447
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3f8162f20264a2915b97a8f7b437126cf06a4b40
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49239548"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51130411"
 ---
 # <a name="update-androidforworkcompliancepolicy"></a>更新 androidForWorkCompliancePolicy
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) 对象的属性。
+更新 [androidForWorkCompliancePolicy 对象](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,14 +49,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) 对象的 JSON 表示形式。
 
-下表显示创建 [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)时所需的属性。
+下表显示创建 [androidForWorkCompliancePolicy 时所需的属性](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -66,7 +66,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 365|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|在恢复出厂设置之前允许的登录失败次数。 有效值为1至16|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许的登录失败次数。 有效值为 1 到 16|
 |securityPreventInstallAppsFromUnknownSources|Boolean|要求设备不允许安装来自未知源的应用。|
 |securityDisableUsbDebugging|Boolean|在 Android 设备上禁用 USB 调试。|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
@@ -86,7 +86,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) 对象。
 
 ## <a name="example"></a>示例
 

@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 553447bfd38ead0577b0a88726894419a6ee1597
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e8458c2f82562454c16dd73e584de5609a6e8393
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49291398"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51130082"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>更新 deviceConfigurationUserStateSummary
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) 对象的属性。
+更新 [deviceConfigurationUserStateSummary 对象](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,23 +49,23 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)时所需的属性。
+下表显示创建 [deviceConfigurationUserStateSummary 时所需的属性](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|unknownUserCount|Int32|未知用户的数量|
-|notApplicableUserCount|Int32|不适用的用户数|
-|compliantUserCount|Int32|合规用户数|
-|remediatedUserCount|Int32|已修正用户的数量|
-|nonCompliantUserCount|Int32|不符合的用户数|
+|id|String|实体的键。|
+|unknownUserCount|Int32|未知用户数|
+|notApplicableUserCount|Int32|不适用用户的数量|
+|compliantUserCount|Int32|兼容用户数|
+|remediatedUserCount|Int32|已修复用户数|
+|nonCompliantUserCount|Int32|不相容用户数|
 |errorUserCount|Int32|错误用户数|
 |conflictUserCount|Int32|冲突用户数|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) 对象。
 
 ## <a name="example"></a>示例
 
