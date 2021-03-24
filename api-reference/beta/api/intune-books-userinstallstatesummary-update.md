@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8b5c67b8f2c206335c1f7e611db28c58455de17
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ae856b6d544c99b32f785c24aaa922a6fe9fdb62
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49244645"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51132945"
 ---
-# <a name="update-userinstallstatesummary"></a><span data-ttu-id="168b1-103">更新 userInstallStateSummary</span><span class="sxs-lookup"><span data-stu-id="168b1-103">Update userInstallStateSummary</span></span>
+# <a name="update-userinstallstatesummary"></a><span data-ttu-id="e3209-103">更新 userInstallStateSummary</span><span class="sxs-lookup"><span data-stu-id="e3209-103">Update userInstallStateSummary</span></span>
 
-<span data-ttu-id="168b1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="168b1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e3209-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e3209-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="168b1-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="168b1-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e3209-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e3209-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="168b1-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="168b1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e3209-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e3209-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="168b1-107">更新 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="168b1-107">Update the properties of a [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object.</span></span>
+<span data-ttu-id="e3209-107">更新 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="e3209-107">Update the properties of a [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="168b1-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="168b1-108">Prerequisites</span></span>
-<span data-ttu-id="168b1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="168b1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e3209-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="e3209-108">Prerequisites</span></span>
+<span data-ttu-id="e3209-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e3209-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="168b1-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="168b1-111">Permission type</span></span>|<span data-ttu-id="168b1-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="168b1-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e3209-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e3209-111">Permission type</span></span>|<span data-ttu-id="e3209-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e3209-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="168b1-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="168b1-113">Delegated (work or school account)</span></span>|<span data-ttu-id="168b1-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="168b1-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="168b1-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="168b1-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="168b1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="168b1-116">Not supported.</span></span>|
-|<span data-ttu-id="168b1-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="168b1-117">Application</span></span>|<span data-ttu-id="168b1-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="168b1-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="e3209-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e3209-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e3209-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3209-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="e3209-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e3209-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e3209-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e3209-116">Not supported.</span></span>|
+|<span data-ttu-id="e3209-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="e3209-117">Application</span></span>|<span data-ttu-id="e3209-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3209-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="168b1-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="168b1-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e3209-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e3209-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,34 +40,34 @@ ms.locfileid: "49244645"
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="168b1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="168b1-120">Request headers</span></span>
-|<span data-ttu-id="168b1-121">标头</span><span class="sxs-lookup"><span data-stu-id="168b1-121">Header</span></span>|<span data-ttu-id="168b1-122">值</span><span class="sxs-lookup"><span data-stu-id="168b1-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e3209-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e3209-120">Request headers</span></span>
+|<span data-ttu-id="e3209-121">标头</span><span class="sxs-lookup"><span data-stu-id="e3209-121">Header</span></span>|<span data-ttu-id="e3209-122">值</span><span class="sxs-lookup"><span data-stu-id="e3209-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="168b1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="168b1-123">Authorization</span></span>|<span data-ttu-id="168b1-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="168b1-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="168b1-125">接受</span><span class="sxs-lookup"><span data-stu-id="168b1-125">Accept</span></span>|<span data-ttu-id="168b1-126">application/json</span><span class="sxs-lookup"><span data-stu-id="168b1-126">application/json</span></span>|
+|<span data-ttu-id="e3209-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e3209-123">Authorization</span></span>|<span data-ttu-id="e3209-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e3209-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e3209-125">接受</span><span class="sxs-lookup"><span data-stu-id="e3209-125">Accept</span></span>|<span data-ttu-id="e3209-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e3209-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="168b1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="168b1-127">Request body</span></span>
-<span data-ttu-id="168b1-128">在请求正文中，提供 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="168b1-128">In the request body, supply a JSON representation for the [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e3209-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e3209-127">Request body</span></span>
+<span data-ttu-id="e3209-128">在请求正文中，提供 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e3209-128">In the request body, supply a JSON representation for the [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object.</span></span>
 
-<span data-ttu-id="168b1-129">下表显示创建 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="168b1-129">The following table shows the properties that are required when you create the [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).</span></span>
+<span data-ttu-id="e3209-129">下表显示创建 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="e3209-129">The following table shows the properties that are required when you create the [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).</span></span>
 
-|<span data-ttu-id="168b1-130">属性</span><span class="sxs-lookup"><span data-stu-id="168b1-130">Property</span></span>|<span data-ttu-id="168b1-131">类型</span><span class="sxs-lookup"><span data-stu-id="168b1-131">Type</span></span>|<span data-ttu-id="168b1-132">说明</span><span class="sxs-lookup"><span data-stu-id="168b1-132">Description</span></span>|
+|<span data-ttu-id="e3209-130">属性</span><span class="sxs-lookup"><span data-stu-id="e3209-130">Property</span></span>|<span data-ttu-id="e3209-131">类型</span><span class="sxs-lookup"><span data-stu-id="e3209-131">Type</span></span>|<span data-ttu-id="e3209-132">说明</span><span class="sxs-lookup"><span data-stu-id="e3209-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="168b1-133">id</span><span class="sxs-lookup"><span data-stu-id="168b1-133">id</span></span>|<span data-ttu-id="168b1-134">String</span><span class="sxs-lookup"><span data-stu-id="168b1-134">String</span></span>|<span data-ttu-id="168b1-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="168b1-135">Key of the entity.</span></span>|
-|<span data-ttu-id="168b1-136">userName</span><span class="sxs-lookup"><span data-stu-id="168b1-136">userName</span></span>|<span data-ttu-id="168b1-137">String</span><span class="sxs-lookup"><span data-stu-id="168b1-137">String</span></span>|<span data-ttu-id="168b1-138">用户名。</span><span class="sxs-lookup"><span data-stu-id="168b1-138">User name.</span></span>|
-|<span data-ttu-id="168b1-139">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="168b1-139">installedDeviceCount</span></span>|<span data-ttu-id="168b1-140">Int32</span><span class="sxs-lookup"><span data-stu-id="168b1-140">Int32</span></span>|<span data-ttu-id="168b1-141">已安装设备的计数。</span><span class="sxs-lookup"><span data-stu-id="168b1-141">Installed Device Count.</span></span>|
-|<span data-ttu-id="168b1-142">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="168b1-142">failedDeviceCount</span></span>|<span data-ttu-id="168b1-143">Int32</span><span class="sxs-lookup"><span data-stu-id="168b1-143">Int32</span></span>|<span data-ttu-id="168b1-144">已失败设备的计数。</span><span class="sxs-lookup"><span data-stu-id="168b1-144">Failed Device Count.</span></span>|
-|<span data-ttu-id="168b1-145">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="168b1-145">notInstalledDeviceCount</span></span>|<span data-ttu-id="168b1-146">Int32</span><span class="sxs-lookup"><span data-stu-id="168b1-146">Int32</span></span>|<span data-ttu-id="168b1-147">未安装设备的计数。</span><span class="sxs-lookup"><span data-stu-id="168b1-147">Not installed device count.</span></span>|
+|<span data-ttu-id="e3209-133">id</span><span class="sxs-lookup"><span data-stu-id="e3209-133">id</span></span>|<span data-ttu-id="e3209-134">String</span><span class="sxs-lookup"><span data-stu-id="e3209-134">String</span></span>|<span data-ttu-id="e3209-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="e3209-135">Key of the entity.</span></span>|
+|<span data-ttu-id="e3209-136">userName</span><span class="sxs-lookup"><span data-stu-id="e3209-136">userName</span></span>|<span data-ttu-id="e3209-137">String</span><span class="sxs-lookup"><span data-stu-id="e3209-137">String</span></span>|<span data-ttu-id="e3209-138">用户名。</span><span class="sxs-lookup"><span data-stu-id="e3209-138">User name.</span></span>|
+|<span data-ttu-id="e3209-139">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="e3209-139">installedDeviceCount</span></span>|<span data-ttu-id="e3209-140">Int32</span><span class="sxs-lookup"><span data-stu-id="e3209-140">Int32</span></span>|<span data-ttu-id="e3209-141">已安装设备的计数。</span><span class="sxs-lookup"><span data-stu-id="e3209-141">Installed Device Count.</span></span>|
+|<span data-ttu-id="e3209-142">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="e3209-142">failedDeviceCount</span></span>|<span data-ttu-id="e3209-143">Int32</span><span class="sxs-lookup"><span data-stu-id="e3209-143">Int32</span></span>|<span data-ttu-id="e3209-144">已失败设备的计数。</span><span class="sxs-lookup"><span data-stu-id="e3209-144">Failed Device Count.</span></span>|
+|<span data-ttu-id="e3209-145">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="e3209-145">notInstalledDeviceCount</span></span>|<span data-ttu-id="e3209-146">Int32</span><span class="sxs-lookup"><span data-stu-id="e3209-146">Int32</span></span>|<span data-ttu-id="e3209-147">未安装设备的计数。</span><span class="sxs-lookup"><span data-stu-id="e3209-147">Not installed device count.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="168b1-148">响应</span><span class="sxs-lookup"><span data-stu-id="168b1-148">Response</span></span>
-<span data-ttu-id="168b1-149">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="168b1-149">If successful, this method returns a `200 OK` response code and an updated [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e3209-148">响应</span><span class="sxs-lookup"><span data-stu-id="e3209-148">Response</span></span>
+<span data-ttu-id="e3209-149">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e3209-149">If successful, this method returns a `200 OK` response code and an updated [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="168b1-150">示例</span><span class="sxs-lookup"><span data-stu-id="168b1-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e3209-150">示例</span><span class="sxs-lookup"><span data-stu-id="e3209-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="168b1-151">请求</span><span class="sxs-lookup"><span data-stu-id="168b1-151">Request</span></span>
-<span data-ttu-id="168b1-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="168b1-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e3209-151">请求</span><span class="sxs-lookup"><span data-stu-id="e3209-151">Request</span></span>
+<span data-ttu-id="e3209-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e3209-152">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 189
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="168b1-153">响应</span><span class="sxs-lookup"><span data-stu-id="168b1-153">Response</span></span>
-<span data-ttu-id="168b1-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="168b1-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e3209-153">响应</span><span class="sxs-lookup"><span data-stu-id="e3209-153">Response</span></span>
+<span data-ttu-id="e3209-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e3209-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
