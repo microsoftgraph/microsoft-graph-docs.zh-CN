@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0cc2339369ba6b95eb621965db25836f1e99971
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 160091cfa2d9d5add4bab8ed3bd16301b90f4268
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49243572"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51132840"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>更新 termsAndConditionsGroupAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) 对象的属性。
+更新 [termsAndConditionsGroupAssignment 对象](../resources/intune-companyterms-termsandconditionsgroupassignment.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,17 +49,17 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) 对象的 JSON 表示形式。
 
-下表显示创建 [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)时所需的属性。
+下表显示创建 [termsAndConditionsGroupAssignment 时所需的属性](../resources/intune-companyterms-termsandconditionsgroupassignment.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一标识符。|
-|targetGroupId|String|向其分配 T&C 策略的组的唯一标识符。|
+|targetGroupId|String|T 和 C 策略&组的唯一标识符。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) 对象。
 
 ## <a name="example"></a>示例
 
