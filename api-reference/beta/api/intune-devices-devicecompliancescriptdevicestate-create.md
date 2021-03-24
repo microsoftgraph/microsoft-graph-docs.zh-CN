@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c80510a773cc004b27a408b272336b2c76ad83d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7c1be38e0e34d7f7b596e52e9afddb912b27b5ef
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49229025"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146431"
 ---
-# <a name="create-devicecompliancescriptdevicestate"></a><span data-ttu-id="cf32b-103">创建 deviceComplianceScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="cf32b-103">Create deviceComplianceScriptDeviceState</span></span>
+# <a name="create-devicecompliancescriptdevicestate"></a><span data-ttu-id="bedb2-103">创建 deviceComplianceScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="bedb2-103">Create deviceComplianceScriptDeviceState</span></span>
 
-<span data-ttu-id="cf32b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cf32b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bedb2-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bedb2-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="cf32b-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="cf32b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="bedb2-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="bedb2-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cf32b-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cf32b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bedb2-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="bedb2-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cf32b-107">创建新的 [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="cf32b-107">Create a new [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object.</span></span>
+<span data-ttu-id="bedb2-107">创建新的 [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bedb2-107">Create a new [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="cf32b-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="cf32b-108">Prerequisites</span></span>
-<span data-ttu-id="cf32b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cf32b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="bedb2-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="bedb2-108">Prerequisites</span></span>
+<span data-ttu-id="bedb2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bedb2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cf32b-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="cf32b-111">Permission type</span></span>|<span data-ttu-id="cf32b-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="cf32b-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="bedb2-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="bedb2-111">Permission type</span></span>|<span data-ttu-id="bedb2-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bedb2-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="cf32b-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cf32b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="cf32b-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf32b-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="cf32b-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cf32b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cf32b-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="cf32b-116">Not supported.</span></span>|
-|<span data-ttu-id="cf32b-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="cf32b-117">Application</span></span>|<span data-ttu-id="cf32b-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf32b-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="bedb2-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bedb2-113">Delegated (work or school account)</span></span>|<span data-ttu-id="bedb2-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bedb2-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="bedb2-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bedb2-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bedb2-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="bedb2-116">Not supported.</span></span>|
+|<span data-ttu-id="bedb2-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="bedb2-117">Application</span></span>|<span data-ttu-id="bedb2-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bedb2-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="cf32b-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cf32b-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bedb2-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bedb2-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,36 +40,36 @@ ms.locfileid: "49229025"
 POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/deviceRunStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cf32b-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="cf32b-120">Request headers</span></span>
-|<span data-ttu-id="cf32b-121">标头</span><span class="sxs-lookup"><span data-stu-id="cf32b-121">Header</span></span>|<span data-ttu-id="cf32b-122">值</span><span class="sxs-lookup"><span data-stu-id="cf32b-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bedb2-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="bedb2-120">Request headers</span></span>
+|<span data-ttu-id="bedb2-121">标头</span><span class="sxs-lookup"><span data-stu-id="bedb2-121">Header</span></span>|<span data-ttu-id="bedb2-122">值</span><span class="sxs-lookup"><span data-stu-id="bedb2-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="cf32b-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cf32b-123">Authorization</span></span>|<span data-ttu-id="cf32b-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="cf32b-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="cf32b-125">接受</span><span class="sxs-lookup"><span data-stu-id="cf32b-125">Accept</span></span>|<span data-ttu-id="cf32b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cf32b-126">application/json</span></span>|
+|<span data-ttu-id="bedb2-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="bedb2-123">Authorization</span></span>|<span data-ttu-id="bedb2-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="bedb2-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="bedb2-125">接受</span><span class="sxs-lookup"><span data-stu-id="bedb2-125">Accept</span></span>|<span data-ttu-id="bedb2-126">application/json</span><span class="sxs-lookup"><span data-stu-id="bedb2-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cf32b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="cf32b-127">Request body</span></span>
-<span data-ttu-id="cf32b-128">在请求正文中，提供 deviceComplianceScriptDeviceState 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cf32b-128">In the request body, supply a JSON representation for the deviceComplianceScriptDeviceState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bedb2-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="bedb2-127">Request body</span></span>
+<span data-ttu-id="bedb2-128">在请求正文中，提供 deviceComplianceScriptDeviceState 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bedb2-128">In the request body, supply a JSON representation for the deviceComplianceScriptDeviceState object.</span></span>
 
-<span data-ttu-id="cf32b-129">下表显示创建 deviceComplianceScriptDeviceState 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="cf32b-129">The following table shows the properties that are required when you create the deviceComplianceScriptDeviceState.</span></span>
+<span data-ttu-id="bedb2-129">下表显示创建 deviceComplianceScriptDeviceState 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="bedb2-129">The following table shows the properties that are required when you create the deviceComplianceScriptDeviceState.</span></span>
 
-|<span data-ttu-id="cf32b-130">属性</span><span class="sxs-lookup"><span data-stu-id="cf32b-130">Property</span></span>|<span data-ttu-id="cf32b-131">类型</span><span class="sxs-lookup"><span data-stu-id="cf32b-131">Type</span></span>|<span data-ttu-id="cf32b-132">说明</span><span class="sxs-lookup"><span data-stu-id="cf32b-132">Description</span></span>|
+|<span data-ttu-id="bedb2-130">属性</span><span class="sxs-lookup"><span data-stu-id="bedb2-130">Property</span></span>|<span data-ttu-id="bedb2-131">类型</span><span class="sxs-lookup"><span data-stu-id="bedb2-131">Type</span></span>|<span data-ttu-id="bedb2-132">说明</span><span class="sxs-lookup"><span data-stu-id="bedb2-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cf32b-133">id</span><span class="sxs-lookup"><span data-stu-id="cf32b-133">id</span></span>|<span data-ttu-id="cf32b-134">String</span><span class="sxs-lookup"><span data-stu-id="cf32b-134">String</span></span>|<span data-ttu-id="cf32b-135">设备合规性脚本设备状态实体的键。</span><span class="sxs-lookup"><span data-stu-id="cf32b-135">Key of the device compliance script device state entity.</span></span> <span data-ttu-id="cf32b-136">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="cf32b-136">This property is read-only.</span></span>|
-|<span data-ttu-id="cf32b-137">detectionState</span><span class="sxs-lookup"><span data-stu-id="cf32b-137">detectionState</span></span>|[<span data-ttu-id="cf32b-138">runState</span><span class="sxs-lookup"><span data-stu-id="cf32b-138">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="cf32b-139">Lastest 设备合规性脚本执行中的检测状态。</span><span class="sxs-lookup"><span data-stu-id="cf32b-139">Detection state from the lastest device compliance script execution.</span></span> <span data-ttu-id="cf32b-140">可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。</span><span class="sxs-lookup"><span data-stu-id="cf32b-140">Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.</span></span>|
-|<span data-ttu-id="cf32b-141">lastStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="cf32b-141">lastStateUpdateDateTime</span></span>|<span data-ttu-id="cf32b-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cf32b-142">DateTimeOffset</span></span>|<span data-ttu-id="cf32b-143">执行设备符合性脚本的最后时间戳</span><span class="sxs-lookup"><span data-stu-id="cf32b-143">The last timestamp of when the device compliance script executed</span></span>|
-|<span data-ttu-id="cf32b-144">expectedStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="cf32b-144">expectedStateUpdateDateTime</span></span>|<span data-ttu-id="cf32b-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cf32b-145">DateTimeOffset</span></span>|<span data-ttu-id="cf32b-146">预期何时执行设备符合性脚本的下一个时间戳</span><span class="sxs-lookup"><span data-stu-id="cf32b-146">The next timestamp of when the device compliance script is expected to execute</span></span>|
-|<span data-ttu-id="cf32b-147">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="cf32b-147">lastSyncDateTime</span></span>|<span data-ttu-id="cf32b-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cf32b-148">DateTimeOffset</span></span>|<span data-ttu-id="cf32b-149">上次 Intune 管理扩展与 Intune 同步的时间</span><span class="sxs-lookup"><span data-stu-id="cf32b-149">The last time that Intune Managment Extension synced with Intune</span></span>|
-|<span data-ttu-id="cf32b-150">scriptOutput</span><span class="sxs-lookup"><span data-stu-id="cf32b-150">scriptOutput</span></span>|<span data-ttu-id="cf32b-151">String</span><span class="sxs-lookup"><span data-stu-id="cf32b-151">String</span></span>|<span data-ttu-id="cf32b-152">检测脚本的输出</span><span class="sxs-lookup"><span data-stu-id="cf32b-152">Output of the detection script</span></span>|
-|<span data-ttu-id="cf32b-153">scriptError</span><span class="sxs-lookup"><span data-stu-id="cf32b-153">scriptError</span></span>|<span data-ttu-id="cf32b-154">String</span><span class="sxs-lookup"><span data-stu-id="cf32b-154">String</span></span>|<span data-ttu-id="cf32b-155">检测脚本中的错误</span><span class="sxs-lookup"><span data-stu-id="cf32b-155">Error from the detection script</span></span>|
+|<span data-ttu-id="bedb2-133">id</span><span class="sxs-lookup"><span data-stu-id="bedb2-133">id</span></span>|<span data-ttu-id="bedb2-134">String</span><span class="sxs-lookup"><span data-stu-id="bedb2-134">String</span></span>|<span data-ttu-id="bedb2-135">设备合规性脚本设备状态实体的键。</span><span class="sxs-lookup"><span data-stu-id="bedb2-135">Key of the device compliance script device state entity.</span></span> <span data-ttu-id="bedb2-136">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="bedb2-136">This property is read-only.</span></span>|
+|<span data-ttu-id="bedb2-137">detectionState</span><span class="sxs-lookup"><span data-stu-id="bedb2-137">detectionState</span></span>|[<span data-ttu-id="bedb2-138">runState</span><span class="sxs-lookup"><span data-stu-id="bedb2-138">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="bedb2-139">最近一次执行设备合规性脚本的检测状态。</span><span class="sxs-lookup"><span data-stu-id="bedb2-139">Detection state from the lastest device compliance script execution.</span></span> <span data-ttu-id="bedb2-140">可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。</span><span class="sxs-lookup"><span data-stu-id="bedb2-140">Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.</span></span>|
+|<span data-ttu-id="bedb2-141">lastStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="bedb2-141">lastStateUpdateDateTime</span></span>|<span data-ttu-id="bedb2-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bedb2-142">DateTimeOffset</span></span>|<span data-ttu-id="bedb2-143">执行设备合规性脚本的最后时间戳</span><span class="sxs-lookup"><span data-stu-id="bedb2-143">The last timestamp of when the device compliance script executed</span></span>|
+|<span data-ttu-id="bedb2-144">expectedStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="bedb2-144">expectedStateUpdateDateTime</span></span>|<span data-ttu-id="bedb2-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bedb2-145">DateTimeOffset</span></span>|<span data-ttu-id="bedb2-146">下一次执行设备合规性脚本的时间戳</span><span class="sxs-lookup"><span data-stu-id="bedb2-146">The next timestamp of when the device compliance script is expected to execute</span></span>|
+|<span data-ttu-id="bedb2-147">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="bedb2-147">lastSyncDateTime</span></span>|<span data-ttu-id="bedb2-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bedb2-148">DateTimeOffset</span></span>|<span data-ttu-id="bedb2-149">Intune 管理扩展上次与 Intune 同步的时间</span><span class="sxs-lookup"><span data-stu-id="bedb2-149">The last time that Intune Managment Extension synced with Intune</span></span>|
+|<span data-ttu-id="bedb2-150">scriptOutput</span><span class="sxs-lookup"><span data-stu-id="bedb2-150">scriptOutput</span></span>|<span data-ttu-id="bedb2-151">String</span><span class="sxs-lookup"><span data-stu-id="bedb2-151">String</span></span>|<span data-ttu-id="bedb2-152">检测脚本的输出</span><span class="sxs-lookup"><span data-stu-id="bedb2-152">Output of the detection script</span></span>|
+|<span data-ttu-id="bedb2-153">scriptError</span><span class="sxs-lookup"><span data-stu-id="bedb2-153">scriptError</span></span>|<span data-ttu-id="bedb2-154">String</span><span class="sxs-lookup"><span data-stu-id="bedb2-154">String</span></span>|<span data-ttu-id="bedb2-155">检测脚本中的错误</span><span class="sxs-lookup"><span data-stu-id="bedb2-155">Error from the detection script</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="cf32b-156">响应</span><span class="sxs-lookup"><span data-stu-id="cf32b-156">Response</span></span>
-<span data-ttu-id="cf32b-157">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="cf32b-157">If successful, this method returns a `201 Created` response code and a [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="bedb2-156">响应</span><span class="sxs-lookup"><span data-stu-id="bedb2-156">Response</span></span>
+<span data-ttu-id="bedb2-157">如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bedb2-157">If successful, this method returns a `201 Created` response code and a [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cf32b-158">示例</span><span class="sxs-lookup"><span data-stu-id="cf32b-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bedb2-158">示例</span><span class="sxs-lookup"><span data-stu-id="bedb2-158">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="cf32b-159">请求</span><span class="sxs-lookup"><span data-stu-id="cf32b-159">Request</span></span>
-<span data-ttu-id="cf32b-160">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cf32b-160">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="bedb2-159">请求</span><span class="sxs-lookup"><span data-stu-id="bedb2-159">Request</span></span>
+<span data-ttu-id="bedb2-160">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bedb2-160">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/deviceRunStates
 Content-type: application/json
@@ -86,8 +86,8 @@ Content-length: 387
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="cf32b-161">响应</span><span class="sxs-lookup"><span data-stu-id="cf32b-161">Response</span></span>
-<span data-ttu-id="cf32b-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cf32b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="bedb2-161">响应</span><span class="sxs-lookup"><span data-stu-id="bedb2-161">Response</span></span>
+<span data-ttu-id="bedb2-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="bedb2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
