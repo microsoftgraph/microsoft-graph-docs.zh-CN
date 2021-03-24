@@ -5,31 +5,31 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9dd8018fb274dc9221eaa85a80f9cd2f15abcf90
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 258fe480a1154d12b3c6c7e716329bb704e09eef
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301528"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51125917"
 ---
 # <a name="update-microsofttunnelconfiguration"></a>更新 microsoftTunnelConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象的属性。
+更新 [microsoftTunnelConfiguration 对象](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -50,28 +50,28 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象的 JSON 表示形式。
 
-下表显示创建 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)时所需的属性。
+下表显示创建 [microsoftTunnelConfiguration 时所需的属性](../resources/intune-mstunnel-microsofttunnelconfiguration.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|MicrosoftTunnelConfiguration 的 Id|
-|displayName|字符串|MicrosoftTunnelConfiguration 的显示名称|
-|description|字符串|MicrosoftTunnelConfiguration 的说明|
-|network|字符串|将用于为客户端分配虚拟地址的子网|
-|dnsServers|String 集合|客户端将使用的 DNS 服务器|
-|defaultDomainSuffix|字符串|客户端将使用的默认域附录|
-|routesInclude|String 集合|将由服务器路由的将|
-|routesExclude|String 集合|将不会由服务器路由的路由的子集|
-|splitDNS|String 集合|将使用所提供的 dns 服务器进行解析的域|
+|id|String|MicrosoftTunnelConfiguration 的 ID|
+|displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
+|说明|String|MicrosoftTunnelConfiguration 的说明|
+|network|String|将用于为客户端分配虚拟地址的子网|
+|dnsServers|String collection|客户端将使用的 DNS 服务器|
+|defaultDomainSuffix|String|客户端将使用的默认域附录|
+|routesInclude|String collection|服务器将路由的路由|
+|routesExclude|String collection|服务器不会路由的路由子集|
+|splitDNS|String collection|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
-|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可能适用于服务器的其他设置|
+|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
