@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a008f96bda8be55c2a7105ebebfa76672a085c24
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c6740654616d112db2d64910b5dd716111a582c0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226781"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134023"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicy"></a>更新 windowsDefenderApplicationControlSupplementalPolicy
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 对象的属性。
+更新 [windowsDefenderApplicationControlSupplementalPolicy 对象](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -50,24 +50,24 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 对象的 JSON 表示形式。
 
-下表显示创建 [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)时所需的属性。
+下表显示创建 [windowsDefenderApplicationControlSupplementalPolicy 时所需的属性](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsDefenderApplicationControl 补充策略的键。|
-|displayName|String|WindowsDefenderApplicationControl 补充策略的显示名称。|
-|description|String|WindowsDefenderApplicationControl 补充策略的说明。|
-|content|Binary|WindowsDefenderApplicationControl 补充策略内容（以字节数组格式为单位）。|
+|id|String|WindowsDefenderApplicationControl 补充策略的密钥。|
+|displayName|String|WindowsDefenderApplicationControl 显示名称策略的一部分。|
+|说明|String|WindowsDefenderApplicationControl 补充策略的说明。|
+|content|Binary|采用字节数组格式的 WindowsDefenderApplicationControl 补充策略内容。|
 |contentFileName|String|WindowsDefenderApplicationControl 补充策略内容的文件名。|
 |version|String|WindowsDefenderApplicationControl 补充策略的版本。|
-|creationDateTime|DateTimeOffset|上传 WindowsDefenderApplicationControl 补充策略的日期和时间。|
+|creationDateTime|DateTimeOffset|上载 WindowsDefenderApplicationControl 补充策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 WindowsDefenderApplicationControl 补充策略的日期和时间。|
-|roleScopeTagIds|String 集合|此 WindowsDefenderApplicationControl 补充策略实体的作用域标记列表。|
+|roleScopeTagIds|String collection|此 WindowsDefenderApplicationControl 补充策略实体的范围标记列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 对象。
 
 ## <a name="example"></a>示例
 

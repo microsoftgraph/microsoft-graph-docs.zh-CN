@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5bf74d47398fec117fa05a2fc3c81793af1aef9c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 29868e0a9ac3c979a578f4f84aa84eb810b0f70e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159540"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51133792"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,38 +25,39 @@ windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|列出 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象的属性和关系。|
-|[获取 windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-get.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|读取 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象的属性和关系。|
+|[列出 windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|列出 [windowsAutopilotDeviceIdentity 对象的属性和](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 关系。|
+|[获取 windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-get.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|读取 [windowsAutopilotDeviceIdentity 对象的属性和](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 关系。|
 |[创建 windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-create.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|创建新的 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象。|
 |[删除 windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|无|删除 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)。|
-|[assignUserToDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|无|将用户分配到 Autopilot 设备。|
+|[assignUserToDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|无|将用户分配给 Autopilot 设备。|
 |[unassignUserFromDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|无|取消分配 Autopilot 设备中的用户。|
 |[updateDeviceProperties 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|无|更新 Autopilot 设备上的属性。|
 |[assignResourceAccountToDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|无|将资源帐户分配给 Autopilot 设备。|
 |[unassignResourceAccountFromDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|无|取消分配 Autopilot 设备中的资源帐户。|
+|[deleteDevices 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-deletedevices.md)|[deletedWindowsAutopilotDeviceState](../resources/intune-enrollment-deletedwindowsautopilotdevicestate.md) 集合|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows autopilot 设备的配置文件分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Windows autopilot 设备的配置文件分配详细状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`。|
-|deploymentProfileAssignedDateTime|DateTimeOffset|Windows autopilot 设备的配置文件设置时间。|
-|orderIdentifier|String|Windows autopilot 设备的订单标识符 - 已弃用|
+|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows Autopilot 设备的配置文件分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 Windows Autopilot 设备的详细状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`。|
+|deploymentProfileAssignedDateTime|DateTimeOffset|Windows Autopilot 设备的配置文件设置时间。|
 |groupTag|String|Windows autopilot 设备的组标记。|
-|purchaseOrderIdentifier|String|Windows autopilot 设备的采购订单标识符。|
+|purchaseOrderIdentifier|String|Purchase Order Windows autopilot 设备的标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
 |manufacturer|String|Windows autopilot 设备的 Oem 制造商。|
 |model|String|Windows autopilot 设备的型号名称。|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Windows autopilot 设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|lastContactedDateTime|DateTimeOffset|Windows autopilot 设备的 Intune 上次联系日期时间。|
-|addressableUserName|String|可地址的用户名。|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Windows Autopilot 设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
+|lastContactedDateTime|DateTimeOffset|Intune Windows Autopilot 设备的上次联系日期时间。|
+|addressableUserName|String|可地址用户名。|
 |userPrincipalName|String|用户主体名称。|
 |resourceName|String|资源名称。|
 |skuNumber|String|SKU 号|
 |systemFamily|String|系统系列|
-|azureActiveDirectoryDeviceId|String|AAD 设备 ID|
+|azureActiveDirectoryDeviceId|String|AAD 设备 ID - 已弃用|
+|azureAdDeviceId|String|AAD 设备 ID|
 |managedDeviceId|String|托管设备 ID|
 |displayName|String|显示名称|
 
@@ -81,7 +82,6 @@ windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
   "deploymentProfileAssignmentStatus": "String",
   "deploymentProfileAssignmentDetailedStatus": "String",
   "deploymentProfileAssignedDateTime": "String (timestamp)",
-  "orderIdentifier": "String",
   "groupTag": "String",
   "purchaseOrderIdentifier": "String",
   "serialNumber": "String",
@@ -96,6 +96,7 @@ windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
   "skuNumber": "String",
   "systemFamily": "String",
   "azureActiveDirectoryDeviceId": "String",
+  "azureAdDeviceId": "String",
   "managedDeviceId": "String",
   "displayName": "String"
 }
