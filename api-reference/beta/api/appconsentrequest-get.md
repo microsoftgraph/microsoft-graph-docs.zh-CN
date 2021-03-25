@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 766bf7cd58630a74d8f0ac2d0c0982ca87b1d4f0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fd3e052db75b7f66e7814420aa7dcc288def1b1e
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952191"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201717"
 ---
 # <a name="get-appconsentrequest"></a>获取 appConsentRequest
 命名空间：microsoft.graph
@@ -56,6 +56,8 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_appconsentrequest"
@@ -64,6 +66,24 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/af330b30-dd59-4482-a848-0fd81b0438ed
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-appconsentrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-appconsentrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-appconsentrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-appconsentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

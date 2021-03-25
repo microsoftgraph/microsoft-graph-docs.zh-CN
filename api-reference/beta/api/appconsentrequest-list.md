@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bab0a202c835c56aaaee1e37a41b1e70d97d3d34
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 44920e65285701f365a7d1a2b465900816bd5012
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952190"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201154"
 ---
 # <a name="list-appconsentrequests"></a>列出 appConsentRequests
 命名空间：microsoft.graph
@@ -56,6 +56,8 @@ GET /identityGovernance/appConsent/appConsentRequests
 ## <a name="example-1-list-all-appconsentrequests"></a>示例 1：列出所有 appConsentRequests
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_appconsentrequest"
@@ -64,6 +66,24 @@ GET /identityGovernance/appConsent/appConsentRequests
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-appconsentrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-appconsentrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-appconsentrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-appconsentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应
@@ -98,6 +118,8 @@ Content-Type: application/json
 ## <a name="example-2-list-all-appconsentrequests-with-at-least-one-userconsentrequest-whose-status-is-inprogress"></a>示例 2：列出至少具有一个 status 为 InProgress 的 userConsentRequest 的所有 appConsentRequest
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_appconsentrequest_userconsentrequest_InProgress"
@@ -106,6 +128,24 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests?$filter=userConsentRequests/any (u:u/status eq 'InProgress')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-appconsentrequest-userconsentrequest-inprogress-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-appconsentrequest-userconsentrequest-inprogress-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-appconsentrequest-userconsentrequest-inprogress-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-appconsentrequest-userconsentrequest-inprogress-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

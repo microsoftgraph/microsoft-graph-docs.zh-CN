@@ -1,22 +1,22 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 77743995ab04ea87c238f6df76928be919b77280
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f7105b00f80410926640e9edc8efe626ccb89f90
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942801"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51208469"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "return=representation"));
 
 Alert alert = new Alert();
 alert.assignedTo = "String";
-alert.closedDateTime = CalendarSerializer.deserialize("String (timestamp)");
+alert.closedDateTime = OffsetDateTimeSerializer.deserialize("String (timestamp)");
 LinkedList<String> commentsList = new LinkedList<String>();
 commentsList.add("String");
 alert.comments = commentsList;

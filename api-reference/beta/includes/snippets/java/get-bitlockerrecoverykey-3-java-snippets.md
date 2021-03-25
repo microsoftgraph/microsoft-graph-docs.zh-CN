@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a0ab404845a6b77acbf36255f1167419970f6d08
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 598edcb4f9dd1565adfbce6f817175e88f1f584f
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944323"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51210223"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ocp-client-name", "\"My Friendly Client\""));

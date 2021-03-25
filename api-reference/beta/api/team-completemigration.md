@@ -1,30 +1,30 @@
 ---
-title: 团队： completeMigration
-description: 通过从团队中删除迁移模式来完成外部邮件的迁移。
+title: team： completeMigration
+description: 通过从团队中删除迁移模式完成外部邮件的迁移。
 localization_priority: Normal
-author: laujan
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3422c67c34c62fd037b2acf214c4664b21f83900
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6edd393475eecba7da736fe0c72571ffc244b73e
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951485"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200757"
 ---
-# <a name="team-completemigration"></a>团队： completeMigration
+# <a name="team-completemigration"></a>team： completeMigration
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 `migration mode` 从 [团队](../resources/team.md)中删除来完成邮件迁移过程。 `Migration mode` 是一种特殊状态，在数据迁移过程中，某些操作是不带条的，如邮件投递和成员资格操作。
+通过从团队 中删除 完成 `migration mode` 邮件迁移 [过程](../resources/team.md)。 `Migration mode` 是禁止某些操作的特殊状态，如数据迁移过程中的邮件 POST 和成员资格操作。
 
-发出 **completeMigration** 请求后，不能将其他邮件导入到团队中。 在请求返回成功的响应之后，您可以向团队添加成员。
+完成 **Migration 请求后** ，无法将其他消息导入团队。 在请求返回成功响应后，你可以向团队添加成员。
 
 ## <a name="permissions"></a>权限
 
-若要调用此 API，需要以下权限。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
+调用此 API 需要以下权限。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限  |
 |:--------------------|:---------------------------------------------------------|
@@ -35,7 +35,7 @@ ms.locfileid: "48951485"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{teamId}/completeMigration
+POST /teams/{team-id}/completeMigration
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -61,32 +61,15 @@ POST /teams/{teamId}/completeMigration
 <!-- markdownlint-disable MD022 -->
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_team"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/completeMigration
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/completeMigration
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/completemigration-team-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/completemigration-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->

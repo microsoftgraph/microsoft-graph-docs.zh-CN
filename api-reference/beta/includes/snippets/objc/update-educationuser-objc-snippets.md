@@ -1,26 +1,38 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ca953681d0438e579116b1316355b455188e8bf8
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: c52304c3aa9c9b1d29d52d08a91965a029c656be
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48618507"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200902"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/users/13020"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/users/{educationUserId}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphEducationUser *educationUser = [[MSGraphEducationUser alloc] init];
-[educationUser setDisplayName:@"Rogelio Cazares"];
-[educationUser setGivenName:@"Rogelio"];
-[educationUser setMiddleName:@"Fernando"];
-[educationUser setSurname:@"Cazares"];
+NSMutableArray *relatedContactsList = [[NSMutableArray alloc] init];
+MSGraphRelatedContact *relatedContacts = [[MSGraphRelatedContact alloc] init];
+[relatedContacts setDisplayName:@"Father Time"];
+[relatedContacts setEmailAddress:@"father@time.com"];
+[relatedContacts setMobilePhone:@"4251231234"];
+[relatedContacts setRelationship: [MSGraphContactRelationship guardian]];
+[relatedContacts setAccessConsent: true];
+[relatedContactsList addObject: relatedContacts];
+MSGraphRelatedContact *relatedContacts = [[MSGraphRelatedContact alloc] init];
+[relatedContacts setDisplayName:@"Mother Nature"];
+[relatedContacts setEmailAddress:@"mother@nature.co.uk"];
+[relatedContacts setMobilePhone:@"3251231234"];
+[relatedContacts setRelationship: [MSGraphContactRelationship parent]];
+[relatedContacts setAccessConsent: true];
+[relatedContactsList addObject: relatedContacts];
+[educationUser setRelatedContacts:relatedContactsList];
 
 NSError *error;
 NSData *educationUserData = [educationUser getSerializedDataWithError:&error];

@@ -1,16 +1,16 @@
 ---
 title: 获取频道
 description: 检索频道的属性和关系。
-author: clearab
+author: nkramer
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 829e6fbc00ea57ea238d33ef0c0a47952c0b720c
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: a1fb315e7ac6e12bfa3111cf6e89466e19139641
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705931"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201118"
 ---
 # <a name="get-channel"></a>获取频道
 
@@ -37,7 +37,7 @@ ms.locfileid: "49705931"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}
+GET /teams/{team-id}/channels/{channel-id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -64,39 +64,19 @@ GET /teams/{id}/channels/{id}
 
 下面是一个请求示例。
 
-# <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_channel"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+```http
+GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
-
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-channel-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>响应
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -106,13 +86,16 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 201
 
 {
-    "description": "description-value",
-    "displayName": "display-name-value",
-    "id": "id-value",
-    "membershipType": "membership-type-value"
+    "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+    "createdDateTime": "2020-05-27T19:22:25.692Z",
+    "displayName": "General",
+    "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+    "membershipType": "standard"
 }
+
 ```
 
 下面是关闭频道审核的标准频道的响应示例。
@@ -138,9 +121,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-下面是频道审核所针对的标准频道的响应示例。
+下面是频道审核打开的标准频道的响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK

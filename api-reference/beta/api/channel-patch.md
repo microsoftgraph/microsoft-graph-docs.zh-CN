@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d3d5fc3fbe63844e814dd0ce29d2cb656df2f22f
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: f20b72ef2840b5fcaa45985ee83f544df250d92f
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843682"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200929"
 ---
 # <a name="update-channel"></a>更新频道 
 
@@ -20,7 +20,7 @@ ms.locfileid: "49843682"
 
 更新指定频道 [的属性](../resources/channel.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "49843682"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}/channels/{id}
+PATCH /teams/{team-id}/channels/{channel-id}
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -49,7 +49,7 @@ PATCH /teams/{id}/channels/{id}
 
 在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。
 
-> **注意：** 无法更新 `membershipType` 现有频道的值。
+> **注意：** 无法更新 `membershipType` 现有通道的值。
 
 ## <a name="response"></a>响应
 
@@ -63,24 +63,17 @@ PATCH /teams/{id}/channels/{id}
 
 下面是一个请求示例。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>响应
 
 下面是一个响应示例。 
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,14 +90,13 @@ HTTP/1.1 204 No Content
 以下示例显示更新频道 [的审核设置](../resources/channelmoderationsettings.md) 的请求。 此操作只能由团队所有者执行。
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel_with_moderationSettings"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}
+PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 Content-type: application/json
 
 {
@@ -118,23 +110,6 @@ Content-type: application/json
     }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/patch-channel-with-moderationsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-channel-with-moderationsettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-with-moderationsettings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/patch-channel-with-moderationsettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

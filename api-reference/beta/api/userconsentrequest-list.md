@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: eadf5ce83f3903d45b5015cbea3cf66ac5de07ea
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a0ca933d392d311a4874861cb736742d593b56ae
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965037"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201825"
 ---
 # <a name="list-userconsentrequests"></a>列出 userConsentRequests
 命名空间：microsoft.graph
@@ -56,6 +56,8 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_userconsentrequest"
@@ -64,6 +66,24 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/ee245379-e3bb-4944-a997-24115f0b8b5e/userConsentRequests
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-userconsentrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-userconsentrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-userconsentrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-userconsentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -6,12 +6,12 @@ ms.author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 290901a7a6a04a1d846df3bd423fc3c62c3d5867
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f6217c1ea0859de21fa70c53810e825327d497f2
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965106"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200898"
 ---
 # <a name="update-relatedcontacts"></a>更新 relatedContacts
 
@@ -74,6 +74,8 @@ PATCH /education/users/{id}
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationuser"
@@ -104,6 +106,24 @@ Content-length: 408
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

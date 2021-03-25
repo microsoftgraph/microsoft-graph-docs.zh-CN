@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a4fe32aab22b425fcdf58389bc6b71cae2147b42
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ddef281b50a4a60895f141b433289a2fc3e8a1d3
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965039"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201857"
 ---
 # <a name="userconsentrequests-filterbycurrentuser"></a>userConsentRequests：filterByCurrentUser
 命名空间：microsoft.graph
@@ -44,7 +44,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 |属性|类型|说明|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequest 的 userConsentRequests。 允许的值为 `reviewer` 。 必填。|
+|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequest 的 userConsentRequests。 允许的值为 `reviewer` 。 必需。|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此函数支持  `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
@@ -64,6 +64,8 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 ## <a name="example-list-all-userconsentrequests-for-which-the-current-user-is-the-reviewer-and-the-status-is-completed"></a>示例：列出当前用户是审阅者且状态为"已完成"的 userConsentRequests
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userconsentrequest_filterbycurrentuser"
@@ -72,6 +74,24 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/ee245379-e3bb-4944-a997-24115f0b8b5e/userConsentRequests/filterByCurrentUser(on='reviewer')?$filter= (status eq 'Completed')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/userconsentrequest-filterbycurrentuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/userconsentrequest-filterbycurrentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/userconsentrequest-filterbycurrentuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/userconsentrequest-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

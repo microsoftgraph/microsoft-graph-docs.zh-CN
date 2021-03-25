@@ -1,33 +1,33 @@
 ---
-title: 通道中的获取选项卡
-description: '在团队内的频道中检索指定选项卡的属性和关系。 '
+title: 获取频道中的选项卡
+description: '检索团队中频道中指定选项卡的属性和关系。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ee05de9b1fcfea9bd08c98ccf3f8a491b34c0399
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 9a81cd2009266ed09ed723d7171aef54a04ed405
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607536"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200944"
 ---
-# <a name="get-tab-in-channel"></a>通道中的获取选项卡
+# <a name="get-tab-in-channel"></a>获取频道中的选项卡
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[团队](../resources/team.md)内的[频道](../resources/channel.md)中检索指定[选项卡](../resources/teamstab.md)的属性和关系。 
+检索团队中频道[中指定选项卡](../resources/teamstab.md)[的属性和](../resources/channel.md)[关系](../resources/team.md)。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsTab、TeamsTab、ReadWriteForTeam、TeamsTab、Group. all、、、、all、all、all 和 All 的所有读写 |
+|委派（工作或学校帐户） | TeamsTab.Read.All、TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab、*TeamsTab*、TeamsTab、TeamsTab、group、Group、Group、group。 all、、、、all、all、、all、all、all、All 和 all |
+|应用程序 | TeamsTab.Read.Group、TeamsTab.ReadWrite.Group、TeamsTab.Read.All、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -40,7 +40,7 @@ GET /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 $select 和 $expand [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 $select 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -52,17 +52,17 @@ GET /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tab](../resources/teamstab.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [tab](../resources/teamstab.md) 对象。
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
 ```
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0c6a6f5c8ee8fe98d1e65163c2c9a30bb5ec7301
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 97b0b0d2db2ad813440d034f0cb3ae47149f24bb
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948273"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200945"
 ---
 # <a name="create-chatmessage-in-channel"></a>在频道中创建 chatMessage
 
@@ -33,7 +33,7 @@ ms.locfileid: "50948273"
 | 应用程序                            | Teamwork.Migrate.All |
 
 > **注意**：仅迁移 *支持应用程序*[权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
-将来，Microsoft 可能会要求你或你的客户根据导入的数据量支付额外的费用。
+将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
@@ -45,7 +45,7 @@ ms.locfileid: "50948273"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/channels/{id}/messages
+POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -79,7 +79,7 @@ POST /teams/{id}/channels/{id}/messages
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -125,7 +125,7 @@ Content-type: application/json
 Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
     "id": "id-value",
     "replyToId": null,
     "etag": "id-value",
@@ -159,7 +159,7 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-import-messages-text-only"></a>示例 2：仅 (文本导入) 
+### <a name="example-2-import-messages"></a>示例 2：导入邮件
 
 > **注意**：此方案 `Teamwork.Migrate.All` 需要权限范围。
 
@@ -168,23 +168,13 @@ Content-length: 160
 以下示例显示如何使用 请求正文中的 和 键导入 `createDateTime` `from` 实时邮件。
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
 {
-   "replyToId":null,
    "messageType":"message",
    "createdDateTime":"2019-02-04T19:58:15.511Z",
-   "lastModifiedDateTime":null,
    "deleted":false,
-   "subject":null,
-   "summary":null,
-   "importance":"normal",
-   "locale":"en-us",
-   "policyViolation":null,
    "from":{
-      "application":null,
-      "device":null,
-      "conversation":null,
       "user":{
          "id":"id-value",
          "displayName":"Joh Doe",
@@ -195,9 +185,6 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
       "contentType":"html",
       "content":"Hello World"
    },
-   "attachments":[ ],
-   "mentions":[ ],
-   "reactions":[ ]
 }
 ```
 
@@ -215,7 +202,7 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",
@@ -260,7 +247,7 @@ HTTP/1.1 200 OK
 以下示例演示如何使用 请求正文中的 和 键导入包含内嵌图像的 `createDateTime` `from` 返回时间邮件。
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
 {
    "createdDateTime":"2019-02-04T19:58:15.511Z",
@@ -300,7 +287,7 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",

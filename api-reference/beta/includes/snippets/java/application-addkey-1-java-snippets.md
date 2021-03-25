@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1039859d4744006f3ae5a02088443dd61c57965f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cb9695f3d1f49f40644be4ab11bd0856542a4148
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942738"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51208406"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 KeyCredential keyCredential = new KeyCredential();
 keyCredential.type = "AsymmetricX509Cert";
@@ -21,7 +21,12 @@ keyCredential.key = Base64.getDecoder().decode("MIIDYDCCAki...");
 String proof = "eyJ0eXAiOiJ...";
 
 graphClient.applications("{id}")
-    .addKey(keyCredential,passwordCredential,proof)
+    .addKey(ApplicationAddKeyParameterSet
+        .newBuilder()
+        .withKeyCredential(keyCredential)
+        .withPasswordCredential(passwordCredential)
+        .withProof(proof)
+        .build())
     .buildRequest()
     .post();
 

@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1c0769262cc17e79448ca856e26334d4c03d92a1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3fcd6bb895a4f1cb36f099269c8414669dc98620
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952213"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201455"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>更新 adminConsentRequestPolicy
 命名空间：microsoft.graph
@@ -54,8 +54,8 @@ PUT /policies/adminConsentRequestPolicy
 |属性|类型|说明|
 |:---|:---|:---|
 |isEnabled|Boolean|指定是启用还是禁用管理员同意请求功能。|
-|notifyReviewers|Boolean|指定审阅者是否将收到通知。|
-|remindersEnabled|Boolean|指定审阅者是否将收到提醒电子邮件。|
+|notifyReviewers|布尔值|指定审阅者是否将收到通知。|
+|remindersEnabled|布尔值|指定审阅者是否将收到提醒电子邮件。|
 |requestDurationInDays|Int32|指定请求在未应用决策时自动过期之前处于活动状态的持续时间。|
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|管理员同意的审阅者列表。|
 
@@ -68,6 +68,8 @@ PUT /policies/adminConsentRequestPolicy
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_adminconsentrequestpolicy"
@@ -94,6 +96,24 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-adminconsentrequestpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-adminconsentrequestpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-adminconsentrequestpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

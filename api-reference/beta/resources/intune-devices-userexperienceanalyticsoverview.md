@@ -1,31 +1,31 @@
 ---
 title: userExperienceAnalyticsOverview 资源类型
-description: 用户体验分析概述实体包含所有类别的所有指标的整体分数以及分数和见解。
+description: 用户体验分析概述实体包含所有类别的总体分数以及每个指标的分数和见解。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b63fdbd00b0a93a5a8bc3536bab7f66c35f8f155
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d05f29a375bf69a31bfb27805a2f698da673bc12
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444467"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51159310"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>userExperienceAnalyticsOverview 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用户体验分析概述实体包含所有类别的所有指标的总体分数以及分数和见解。
+用户体验分析概述实体包含所有类别的总体分数以及每个指标的分数和见解。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取 userExperienceAnalyticsOverview](../api/intune-devices-userexperienceanalyticsoverview-get.md)|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|读取 [userExperienceAnalyticsOverview 对象的属性和](../resources/intune-devices-userexperienceanalyticsoverview.md) 关系。|
+|[获取 userExperienceAnalyticsOverview](../api/intune-devices-userexperienceanalyticsoverview-get.md)|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|读取 [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) 对象的属性和关系。|
 |[更新 userExperienceAnalyticsOverview](../api/intune-devices-userexperienceanalyticsoverview-update.md)|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|更新 [userExperienceAnalyticsOverview 对象](../resources/intune-devices-userexperienceanalyticsoverview.md) 的属性。|
 
 ## <a name="properties"></a>属性
@@ -34,15 +34,17 @@ ms.locfileid: "50444467"
 |id|String|用户体验分析概述的唯一标识符。|
 |overallScore|Int32|用户体验分析总体分数。|
 |deviceBootPerformanceOverallScore|Int32|用户体验分析设备启动性能总体分数。|
-|bestPracticesOverallScore|Int32|用户体验分析最佳做法总体分数。|
+|bestPracticesOverallScore|Int32|用户体验分析最佳实践总体分数。|
+|workFromAnywhereOverallScore|Int32|用户体验分析从任意位置工作总体分数。|
 |appHealthOverallScore|Int32|用户体验分析应用运行状况总体分数。|
 |resourcePerformanceOverallScore|Int32|用户体验分析资源性能总体分数。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) 集合|用户体验分析见解。|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析概述的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BootPerformance"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"ResourcePerformance"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BootPerformance"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"WorkFromAnywhere"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"ResourcePerformance"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -62,6 +64,7 @@ ms.locfileid: "50444467"
   "overallScore": 1024,
   "deviceBootPerformanceOverallScore": 1024,
   "bestPracticesOverallScore": 1024,
+  "workFromAnywhereOverallScore": 1024,
   "appHealthOverallScore": 1024,
   "resourcePerformanceOverallScore": 1024,
   "insights": [
@@ -81,6 +84,7 @@ ms.locfileid: "50444467"
   "state": "String",
   "deviceBootPerformanceHealthState": "String",
   "bestPracticesHealthState": "String",
+  "workFromAnywhereHealthState": "String",
   "appHealthState": "String",
   "resourcePerformanceState": "String"
 }

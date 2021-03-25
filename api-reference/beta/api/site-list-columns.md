@@ -5,12 +5,12 @@ description: 列出网站中的列。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 83f73a2c4a7dddcfb3e50f6a6eeb98238df49d73
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 30cb4348c1203d188a62f72d0545cd9d95de4112
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965059"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200772"
 ---
 # <a name="list-columns-in-a-site"></a>列出网站中的列
 命名空间：microsoft.graph
@@ -70,12 +70,32 @@ GET /sites/{site-id}/columns
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_columns_from_site" } -->
  
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/columns
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-columns-from-site-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-columns-from-site-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-columns-from-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
