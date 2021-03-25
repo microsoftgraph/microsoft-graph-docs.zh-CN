@@ -1,37 +1,37 @@
 ---
 title: 更新 embeddedSIMDeviceState
-description: 更新 embeddedSIMDeviceState 对象的属性。
+description: 更新嵌入SIMDeviceState 对象的属性。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 446f3430b5ea2fa6904522951c3831a21bc01b92
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6371742d475d999c639d9970c060cc1243d695cb
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49233724"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51157609"
 ---
-# <a name="update-embeddedsimdevicestate"></a><span data-ttu-id="1ab71-103">更新 embeddedSIMDeviceState</span><span class="sxs-lookup"><span data-stu-id="1ab71-103">Update embeddedSIMDeviceState</span></span>
+# <a name="update-embeddedsimdevicestate"></a><span data-ttu-id="5a1a1-103">更新 embeddedSIMDeviceState</span><span class="sxs-lookup"><span data-stu-id="5a1a1-103">Update embeddedSIMDeviceState</span></span>
 
-<span data-ttu-id="1ab71-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1ab71-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5a1a1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5a1a1-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="1ab71-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="1ab71-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5a1a1-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1ab71-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="1ab71-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5a1a1-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1ab71-107">更新 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="1ab71-107">Update the properties of a [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object.</span></span>
+<span data-ttu-id="5a1a1-107">更新嵌入 [SIMDeviceState 对象](../resources/intune-esim-embeddedsimdevicestate.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-107">Update the properties of a [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1ab71-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="1ab71-108">Prerequisites</span></span>
-<span data-ttu-id="1ab71-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1ab71-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5a1a1-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="5a1a1-108">Prerequisites</span></span>
+<span data-ttu-id="5a1a1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1ab71-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="1ab71-111">Permission type</span></span>|<span data-ttu-id="1ab71-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="1ab71-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5a1a1-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="5a1a1-111">Permission type</span></span>|<span data-ttu-id="5a1a1-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5a1a1-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1ab71-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1ab71-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1ab71-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ab71-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="1ab71-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1ab71-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1ab71-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1ab71-116">Not supported.</span></span>|
-|<span data-ttu-id="1ab71-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="1ab71-117">Application</span></span>|<span data-ttu-id="1ab71-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ab71-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="5a1a1-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5a1a1-113">Delegated (work or school account)</span></span>|<span data-ttu-id="5a1a1-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a1a1-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="5a1a1-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5a1a1-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5a1a1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-116">Not supported.</span></span>|
+|<span data-ttu-id="5a1a1-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="5a1a1-117">Application</span></span>|<span data-ttu-id="5a1a1-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a1a1-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1ab71-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1ab71-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5a1a1-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5a1a1-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,38 +40,38 @@ ms.locfileid: "49233724"
 PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/deviceStates/{embeddedSIMDeviceStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1ab71-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="1ab71-120">Request headers</span></span>
-|<span data-ttu-id="1ab71-121">标头</span><span class="sxs-lookup"><span data-stu-id="1ab71-121">Header</span></span>|<span data-ttu-id="1ab71-122">值</span><span class="sxs-lookup"><span data-stu-id="1ab71-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5a1a1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="5a1a1-120">Request headers</span></span>
+|<span data-ttu-id="5a1a1-121">标头</span><span class="sxs-lookup"><span data-stu-id="5a1a1-121">Header</span></span>|<span data-ttu-id="5a1a1-122">值</span><span class="sxs-lookup"><span data-stu-id="5a1a1-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1ab71-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1ab71-123">Authorization</span></span>|<span data-ttu-id="1ab71-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="1ab71-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1ab71-125">接受</span><span class="sxs-lookup"><span data-stu-id="1ab71-125">Accept</span></span>|<span data-ttu-id="1ab71-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1ab71-126">application/json</span></span>|
+|<span data-ttu-id="5a1a1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="5a1a1-123">Authorization</span></span>|<span data-ttu-id="5a1a1-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5a1a1-125">接受</span><span class="sxs-lookup"><span data-stu-id="5a1a1-125">Accept</span></span>|<span data-ttu-id="5a1a1-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5a1a1-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1ab71-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="1ab71-127">Request body</span></span>
-<span data-ttu-id="1ab71-128">在请求正文中，提供 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1ab71-128">In the request body, supply a JSON representation for the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5a1a1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="5a1a1-127">Request body</span></span>
+<span data-ttu-id="5a1a1-128">在请求正文中，提供 [embeddedSIMDeviceState 对象的](../resources/intune-esim-embeddedsimdevicestate.md) JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-128">In the request body, supply a JSON representation for the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object.</span></span>
 
-<span data-ttu-id="1ab71-129">下表显示创建 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="1ab71-129">The following table shows the properties that are required when you create the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).</span></span>
+<span data-ttu-id="5a1a1-129">下表显示创建 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-129">The following table shows the properties that are required when you create the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).</span></span>
 
-|<span data-ttu-id="1ab71-130">属性</span><span class="sxs-lookup"><span data-stu-id="1ab71-130">Property</span></span>|<span data-ttu-id="1ab71-131">类型</span><span class="sxs-lookup"><span data-stu-id="1ab71-131">Type</span></span>|<span data-ttu-id="1ab71-132">说明</span><span class="sxs-lookup"><span data-stu-id="1ab71-132">Description</span></span>|
+|<span data-ttu-id="5a1a1-130">属性</span><span class="sxs-lookup"><span data-stu-id="5a1a1-130">Property</span></span>|<span data-ttu-id="5a1a1-131">类型</span><span class="sxs-lookup"><span data-stu-id="5a1a1-131">Type</span></span>|<span data-ttu-id="5a1a1-132">说明</span><span class="sxs-lookup"><span data-stu-id="5a1a1-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1ab71-133">id</span><span class="sxs-lookup"><span data-stu-id="1ab71-133">id</span></span>|<span data-ttu-id="1ab71-134">String</span><span class="sxs-lookup"><span data-stu-id="1ab71-134">String</span></span>|<span data-ttu-id="1ab71-135">嵌入的 SIM 卡设备状态的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="1ab71-135">Unique identifier for the embedded SIM device status.</span></span> <span data-ttu-id="1ab71-136">创建时分配的系统生成值。</span><span class="sxs-lookup"><span data-stu-id="1ab71-136">System generated value assigned when created.</span></span>|
-|<span data-ttu-id="1ab71-137">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="1ab71-137">createdDateTime</span></span>|<span data-ttu-id="1ab71-138">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1ab71-138">DateTimeOffset</span></span>|<span data-ttu-id="1ab71-139">嵌入的 SIM 设备状态的创建时间。</span><span class="sxs-lookup"><span data-stu-id="1ab71-139">The time the embedded SIM device status was created.</span></span> <span data-ttu-id="1ab71-140">生成的服务端。</span><span class="sxs-lookup"><span data-stu-id="1ab71-140">Generated service side.</span></span>|
-|<span data-ttu-id="1ab71-141">modifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="1ab71-141">modifiedDateTime</span></span>|<span data-ttu-id="1ab71-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1ab71-142">DateTimeOffset</span></span>|<span data-ttu-id="1ab71-143">上次修改嵌入的 SIM 设备状态的时间。</span><span class="sxs-lookup"><span data-stu-id="1ab71-143">The time the embedded SIM device status was last modified.</span></span> <span data-ttu-id="1ab71-144">更新了服务端。</span><span class="sxs-lookup"><span data-stu-id="1ab71-144">Updated service side.</span></span>|
-|<span data-ttu-id="1ab71-145">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="1ab71-145">lastSyncDateTime</span></span>|<span data-ttu-id="1ab71-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1ab71-146">DateTimeOffset</span></span>|<span data-ttu-id="1ab71-147">嵌入的 SIM 设备上次签入的时间。</span><span class="sxs-lookup"><span data-stu-id="1ab71-147">The time the embedded SIM device last checked in.</span></span> <span data-ttu-id="1ab71-148">更新了服务端。</span><span class="sxs-lookup"><span data-stu-id="1ab71-148">Updated service side.</span></span>|
-|<span data-ttu-id="1ab71-149">universalIntegratedCircuitCardIdentifier</span><span class="sxs-lookup"><span data-stu-id="1ab71-149">universalIntegratedCircuitCardIdentifier</span></span>|<span data-ttu-id="1ab71-150">String</span><span class="sxs-lookup"><span data-stu-id="1ab71-150">String</span></span>|<span data-ttu-id="1ab71-151">通用集成电路卡标识符 (UICCID) 标识配置文件要部署到的硬件。</span><span class="sxs-lookup"><span data-stu-id="1ab71-151">The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.</span></span>|
-|<span data-ttu-id="1ab71-152">deviceName</span><span class="sxs-lookup"><span data-stu-id="1ab71-152">deviceName</span></span>|<span data-ttu-id="1ab71-153">String</span><span class="sxs-lookup"><span data-stu-id="1ab71-153">String</span></span>|<span data-ttu-id="1ab71-154">订阅预配到的设备名称，例如，桌面 JOE</span><span class="sxs-lookup"><span data-stu-id="1ab71-154">Device name to which the subscription was provisioned e.g. DESKTOP-JOE</span></span>|
-|<span data-ttu-id="1ab71-155">userName</span><span class="sxs-lookup"><span data-stu-id="1ab71-155">userName</span></span>|<span data-ttu-id="1ab71-156">String</span><span class="sxs-lookup"><span data-stu-id="1ab71-156">String</span></span>|<span data-ttu-id="1ab71-157">订阅预配到的用户名，例如 joe@contoso.com</span><span class="sxs-lookup"><span data-stu-id="1ab71-157">Username which the subscription was provisioned to e.g. joe@contoso.com</span></span>|
-|<span data-ttu-id="1ab71-158">state</span><span class="sxs-lookup"><span data-stu-id="1ab71-158">state</span></span>|[<span data-ttu-id="1ab71-159">embeddedSIMDeviceStateValue</span><span class="sxs-lookup"><span data-stu-id="1ab71-159">embeddedSIMDeviceStateValue</span></span>](../resources/intune-esim-embeddedsimdevicestatevalue.md)|<span data-ttu-id="1ab71-160">应用于设备的配置文件操作的状态。</span><span class="sxs-lookup"><span data-stu-id="1ab71-160">The state of the profile operation applied to the device.</span></span> <span data-ttu-id="1ab71-161">可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。</span><span class="sxs-lookup"><span data-stu-id="1ab71-161">Possible values are: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.</span></span>|
-|<span data-ttu-id="1ab71-162">stateDetails</span><span class="sxs-lookup"><span data-stu-id="1ab71-162">stateDetails</span></span>|<span data-ttu-id="1ab71-163">String</span><span class="sxs-lookup"><span data-stu-id="1ab71-163">String</span></span>|<span data-ttu-id="1ab71-164">设置状态的字符串说明。</span><span class="sxs-lookup"><span data-stu-id="1ab71-164">String description of the provisioning state.</span></span>|
+|<span data-ttu-id="5a1a1-133">id</span><span class="sxs-lookup"><span data-stu-id="5a1a1-133">id</span></span>|<span data-ttu-id="5a1a1-134">String</span><span class="sxs-lookup"><span data-stu-id="5a1a1-134">String</span></span>|<span data-ttu-id="5a1a1-135">嵌入式 SIM 卡设备状态的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-135">Unique identifier for the embedded SIM device status.</span></span> <span data-ttu-id="5a1a1-136">创建时分配的系统生成值。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-136">System generated value assigned when created.</span></span>|
+|<span data-ttu-id="5a1a1-137">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="5a1a1-137">createdDateTime</span></span>|<span data-ttu-id="5a1a1-138">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5a1a1-138">DateTimeOffset</span></span>|<span data-ttu-id="5a1a1-139">嵌入式 SIM 卡设备状态的创建时间。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-139">The time the embedded SIM device status was created.</span></span> <span data-ttu-id="5a1a1-140">生成的服务器端。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-140">Generated service side.</span></span>|
+|<span data-ttu-id="5a1a1-141">modifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="5a1a1-141">modifiedDateTime</span></span>|<span data-ttu-id="5a1a1-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5a1a1-142">DateTimeOffset</span></span>|<span data-ttu-id="5a1a1-143">上次修改嵌入式 SIM 卡设备状态的时间。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-143">The time the embedded SIM device status was last modified.</span></span> <span data-ttu-id="5a1a1-144">更新的服务器端。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-144">Updated service side.</span></span>|
+|<span data-ttu-id="5a1a1-145">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="5a1a1-145">lastSyncDateTime</span></span>|<span data-ttu-id="5a1a1-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5a1a1-146">DateTimeOffset</span></span>|<span data-ttu-id="5a1a1-147">嵌入式 SIM 卡设备上次签入的时间。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-147">The time the embedded SIM device last checked in.</span></span> <span data-ttu-id="5a1a1-148">更新的服务器端。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-148">Updated service side.</span></span>|
+|<span data-ttu-id="5a1a1-149">universalIntegratedCircuitCardIdentifier</span><span class="sxs-lookup"><span data-stu-id="5a1a1-149">universalIntegratedCircuitCardIdentifier</span></span>|<span data-ttu-id="5a1a1-150">String</span><span class="sxs-lookup"><span data-stu-id="5a1a1-150">String</span></span>|<span data-ttu-id="5a1a1-151">通用集成电路卡标识符 (UI进行) 标识要部署配置文件的硬件。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-151">The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.</span></span>|
+|<span data-ttu-id="5a1a1-152">deviceName</span><span class="sxs-lookup"><span data-stu-id="5a1a1-152">deviceName</span></span>|<span data-ttu-id="5a1a1-153">String</span><span class="sxs-lookup"><span data-stu-id="5a1a1-153">String</span></span>|<span data-ttu-id="5a1a1-154">预配订阅的设备名称，例如 DESKTOP-JOE</span><span class="sxs-lookup"><span data-stu-id="5a1a1-154">Device name to which the subscription was provisioned e.g. DESKTOP-JOE</span></span>|
+|<span data-ttu-id="5a1a1-155">userName</span><span class="sxs-lookup"><span data-stu-id="5a1a1-155">userName</span></span>|<span data-ttu-id="5a1a1-156">String</span><span class="sxs-lookup"><span data-stu-id="5a1a1-156">String</span></span>|<span data-ttu-id="5a1a1-157">将订阅预配到的用户名，例如 joe@contoso.com</span><span class="sxs-lookup"><span data-stu-id="5a1a1-157">Username which the subscription was provisioned to e.g. joe@contoso.com</span></span>|
+|<span data-ttu-id="5a1a1-158">state</span><span class="sxs-lookup"><span data-stu-id="5a1a1-158">state</span></span>|[<span data-ttu-id="5a1a1-159">embeddedSIMDeviceStateValue</span><span class="sxs-lookup"><span data-stu-id="5a1a1-159">embeddedSIMDeviceStateValue</span></span>](../resources/intune-esim-embeddedsimdevicestatevalue.md)|<span data-ttu-id="5a1a1-160">应用于设备的配置文件操作的状态。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-160">The state of the profile operation applied to the device.</span></span> <span data-ttu-id="5a1a1-161">可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-161">Possible values are: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.</span></span>|
+|<span data-ttu-id="5a1a1-162">stateDetails</span><span class="sxs-lookup"><span data-stu-id="5a1a1-162">stateDetails</span></span>|<span data-ttu-id="5a1a1-163">String</span><span class="sxs-lookup"><span data-stu-id="5a1a1-163">String</span></span>|<span data-ttu-id="5a1a1-164">设置状态字符串说明。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-164">String description of the provisioning state.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1ab71-165">响应</span><span class="sxs-lookup"><span data-stu-id="1ab71-165">Response</span></span>
-<span data-ttu-id="1ab71-166">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1ab71-166">If successful, this method returns a `200 OK` response code and an updated [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5a1a1-165">响应</span><span class="sxs-lookup"><span data-stu-id="5a1a1-165">Response</span></span>
+<span data-ttu-id="5a1a1-166">如果成功，此方法在响应正文中返回 响应代码和更新 `200 OK` [的 embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-166">If successful, this method returns a `200 OK` response code and an updated [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1ab71-167">示例</span><span class="sxs-lookup"><span data-stu-id="1ab71-167">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5a1a1-167">示例</span><span class="sxs-lookup"><span data-stu-id="5a1a1-167">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1ab71-168">请求</span><span class="sxs-lookup"><span data-stu-id="1ab71-168">Request</span></span>
-<span data-ttu-id="1ab71-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1ab71-169">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5a1a1-168">请求</span><span class="sxs-lookup"><span data-stu-id="5a1a1-168">Request</span></span>
+<span data-ttu-id="5a1a1-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-169">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/deviceStates/{embeddedSIMDeviceStateId}
 Content-type: application/json
@@ -88,8 +88,8 @@ Content-length: 361
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1ab71-170">响应</span><span class="sxs-lookup"><span data-stu-id="1ab71-170">Response</span></span>
-<span data-ttu-id="1ab71-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="1ab71-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5a1a1-170">响应</span><span class="sxs-lookup"><span data-stu-id="5a1a1-170">Response</span></span>
+<span data-ttu-id="5a1a1-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5a1a1-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

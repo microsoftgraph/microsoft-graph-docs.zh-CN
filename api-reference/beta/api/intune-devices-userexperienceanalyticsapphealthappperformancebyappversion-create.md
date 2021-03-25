@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f1addf495e2a5320ad94dd9cd2a4457500b15f4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 34dbfeed9093fb0a2508df391deff101941e315b
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49219200"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158092"
 ---
-# <a name="create-userexperienceanalyticsapphealthappperformancebyappversion"></a><span data-ttu-id="4ab6e-103">创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersion</span><span class="sxs-lookup"><span data-stu-id="4ab6e-103">Create userExperienceAnalyticsAppHealthAppPerformanceByAppVersion</span></span>
+# <a name="create-userexperienceanalyticsapphealthappperformancebyappversion"></a><span data-ttu-id="ec865-103">创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersion</span><span class="sxs-lookup"><span data-stu-id="ec865-103">Create userExperienceAnalyticsAppHealthAppPerformanceByAppVersion</span></span>
 
-<span data-ttu-id="4ab6e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4ab6e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ec865-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ec865-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="4ab6e-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ec865-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ec865-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4ab6e-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ec865-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ec865-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4ab6e-107">创建新的 [userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-107">Create a new [userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) object.</span></span>
+<span data-ttu-id="ec865-107">创建新的 [userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ec865-107">Create a new [userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4ab6e-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="4ab6e-108">Prerequisites</span></span>
-<span data-ttu-id="4ab6e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ec865-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="ec865-108">Prerequisites</span></span>
+<span data-ttu-id="ec865-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ec865-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4ab6e-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="4ab6e-111">Permission type</span></span>|<span data-ttu-id="4ab6e-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4ab6e-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ec865-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="ec865-111">Permission type</span></span>|<span data-ttu-id="ec865-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ec865-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4ab6e-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4ab6e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="4ab6e-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4ab6e-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="4ab6e-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4ab6e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4ab6e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-116">Not supported.</span></span>|
-|<span data-ttu-id="4ab6e-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="4ab6e-117">Application</span></span>|<span data-ttu-id="4ab6e-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4ab6e-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ec865-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ec865-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ec865-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec865-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ec865-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ec865-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ec865-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="ec865-116">Not supported.</span></span>|
+|<span data-ttu-id="ec865-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="ec865-117">Application</span></span>|<span data-ttu-id="ec865-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec865-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4ab6e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4ab6e-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ec865-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ec865-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,37 +40,37 @@ ms.locfileid: "49219200"
 POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4ab6e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="4ab6e-120">Request headers</span></span>
-|<span data-ttu-id="4ab6e-121">标头</span><span class="sxs-lookup"><span data-stu-id="4ab6e-121">Header</span></span>|<span data-ttu-id="4ab6e-122">值</span><span class="sxs-lookup"><span data-stu-id="4ab6e-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ec865-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="ec865-120">Request headers</span></span>
+|<span data-ttu-id="ec865-121">标头</span><span class="sxs-lookup"><span data-stu-id="ec865-121">Header</span></span>|<span data-ttu-id="ec865-122">值</span><span class="sxs-lookup"><span data-stu-id="ec865-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4ab6e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4ab6e-123">Authorization</span></span>|<span data-ttu-id="4ab6e-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4ab6e-125">接受</span><span class="sxs-lookup"><span data-stu-id="4ab6e-125">Accept</span></span>|<span data-ttu-id="4ab6e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="4ab6e-126">application/json</span></span>|
+|<span data-ttu-id="ec865-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ec865-123">Authorization</span></span>|<span data-ttu-id="ec865-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ec865-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ec865-125">接受</span><span class="sxs-lookup"><span data-stu-id="ec865-125">Accept</span></span>|<span data-ttu-id="ec865-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ec865-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4ab6e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4ab6e-127">Request body</span></span>
-<span data-ttu-id="4ab6e-128">在请求正文中，提供 userExperienceAnalyticsAppHealthAppPerformanceByAppVersion 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-128">In the request body, supply a JSON representation for the userExperienceAnalyticsAppHealthAppPerformanceByAppVersion object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ec865-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="ec865-127">Request body</span></span>
+<span data-ttu-id="ec865-128">在请求正文中，提供 userExperienceAnalyticsAppHealthAppPerformanceByAppVersion 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ec865-128">In the request body, supply a JSON representation for the userExperienceAnalyticsAppHealthAppPerformanceByAppVersion object.</span></span>
 
-<span data-ttu-id="4ab6e-129">下表显示创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersion 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-129">The following table shows the properties that are required when you create the userExperienceAnalyticsAppHealthAppPerformanceByAppVersion.</span></span>
+<span data-ttu-id="ec865-129">下表显示创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersion 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ec865-129">The following table shows the properties that are required when you create the userExperienceAnalyticsAppHealthAppPerformanceByAppVersion.</span></span>
 
-|<span data-ttu-id="4ab6e-130">属性</span><span class="sxs-lookup"><span data-stu-id="4ab6e-130">Property</span></span>|<span data-ttu-id="4ab6e-131">类型</span><span class="sxs-lookup"><span data-stu-id="4ab6e-131">Type</span></span>|<span data-ttu-id="4ab6e-132">说明</span><span class="sxs-lookup"><span data-stu-id="4ab6e-132">Description</span></span>|
+|<span data-ttu-id="ec865-130">属性</span><span class="sxs-lookup"><span data-stu-id="ec865-130">Property</span></span>|<span data-ttu-id="ec865-131">类型</span><span class="sxs-lookup"><span data-stu-id="ec865-131">Type</span></span>|<span data-ttu-id="ec865-132">说明</span><span class="sxs-lookup"><span data-stu-id="ec865-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4ab6e-133">id</span><span class="sxs-lookup"><span data-stu-id="4ab6e-133">id</span></span>|<span data-ttu-id="4ab6e-134">String</span><span class="sxs-lookup"><span data-stu-id="4ab6e-134">String</span></span>|<span data-ttu-id="4ab6e-135">User experience analytics 应用程序性能对象的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-135">The unique identifier of the user experience analytics app performance object.</span></span>|
-|<span data-ttu-id="4ab6e-136">appVersion</span><span class="sxs-lookup"><span data-stu-id="4ab6e-136">appVersion</span></span>|<span data-ttu-id="4ab6e-137">String</span><span class="sxs-lookup"><span data-stu-id="4ab6e-137">String</span></span>|<span data-ttu-id="4ab6e-138">应用程序的版本。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-138">The version of the application.</span></span>|
-|<span data-ttu-id="4ab6e-139">appName</span><span class="sxs-lookup"><span data-stu-id="4ab6e-139">appName</span></span>|<span data-ttu-id="4ab6e-140">String</span><span class="sxs-lookup"><span data-stu-id="4ab6e-140">String</span></span>|<span data-ttu-id="4ab6e-141">应用程序名。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-141">The name of the application.</span></span>|
-|<span data-ttu-id="4ab6e-142">appDisplayName</span><span class="sxs-lookup"><span data-stu-id="4ab6e-142">appDisplayName</span></span>|<span data-ttu-id="4ab6e-143">String</span><span class="sxs-lookup"><span data-stu-id="4ab6e-143">String</span></span>|<span data-ttu-id="4ab6e-144">应用程序的友好名称。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-144">The friendly name of the application.</span></span>|
-|<span data-ttu-id="4ab6e-145">appPublisher</span><span class="sxs-lookup"><span data-stu-id="4ab6e-145">appPublisher</span></span>|<span data-ttu-id="4ab6e-146">String</span><span class="sxs-lookup"><span data-stu-id="4ab6e-146">String</span></span>|<span data-ttu-id="4ab6e-147">应用程序的发布者。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-147">The publisher of the application.</span></span>|
-|<span data-ttu-id="4ab6e-148">appUsageDuration</span><span class="sxs-lookup"><span data-stu-id="4ab6e-148">appUsageDuration</span></span>|<span data-ttu-id="4ab6e-149">Int32</span><span class="sxs-lookup"><span data-stu-id="4ab6e-149">Int32</span></span>|<span data-ttu-id="4ab6e-150">应用程序的总使用时间，以分钟为单位。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-150">The total usage time of the application in minutes.</span></span> <span data-ttu-id="4ab6e-151">有效值-2147483648 到2147483647</span><span class="sxs-lookup"><span data-stu-id="4ab6e-151">Valid values -2147483648 to 2147483647</span></span>|
-|<span data-ttu-id="4ab6e-152">appCrashCount</span><span class="sxs-lookup"><span data-stu-id="4ab6e-152">appCrashCount</span></span>|<span data-ttu-id="4ab6e-153">Int32</span><span class="sxs-lookup"><span data-stu-id="4ab6e-153">Int32</span></span>|<span data-ttu-id="4ab6e-154">应用程序的崩溃次数。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-154">The number of crashes for the app.</span></span> <span data-ttu-id="4ab6e-155">有效值-2147483648 到2147483647</span><span class="sxs-lookup"><span data-stu-id="4ab6e-155">Valid values -2147483648 to 2147483647</span></span>|
-|<span data-ttu-id="4ab6e-156">meanTimeToFailureInMinutes</span><span class="sxs-lookup"><span data-stu-id="4ab6e-156">meanTimeToFailureInMinutes</span></span>|<span data-ttu-id="4ab6e-157">Int32</span><span class="sxs-lookup"><span data-stu-id="4ab6e-157">Int32</span></span>|<span data-ttu-id="4ab6e-158">应用在几分钟内失败的平均时间。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-158">The mean time to failure for the app in minutes.</span></span> <span data-ttu-id="4ab6e-159">有效值-2147483648 到2147483647</span><span class="sxs-lookup"><span data-stu-id="4ab6e-159">Valid values -2147483648 to 2147483647</span></span>|
+|<span data-ttu-id="ec865-133">id</span><span class="sxs-lookup"><span data-stu-id="ec865-133">id</span></span>|<span data-ttu-id="ec865-134">String</span><span class="sxs-lookup"><span data-stu-id="ec865-134">String</span></span>|<span data-ttu-id="ec865-135">用户体验分析应用性能对象的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="ec865-135">The unique identifier of the user experience analytics app performance object.</span></span>|
+|<span data-ttu-id="ec865-136">appVersion</span><span class="sxs-lookup"><span data-stu-id="ec865-136">appVersion</span></span>|<span data-ttu-id="ec865-137">String</span><span class="sxs-lookup"><span data-stu-id="ec865-137">String</span></span>|<span data-ttu-id="ec865-138">应用程序的版本。</span><span class="sxs-lookup"><span data-stu-id="ec865-138">The version of the application.</span></span>|
+|<span data-ttu-id="ec865-139">appName</span><span class="sxs-lookup"><span data-stu-id="ec865-139">appName</span></span>|<span data-ttu-id="ec865-140">String</span><span class="sxs-lookup"><span data-stu-id="ec865-140">String</span></span>|<span data-ttu-id="ec865-141">应用程序名。</span><span class="sxs-lookup"><span data-stu-id="ec865-141">The name of the application.</span></span>|
+|<span data-ttu-id="ec865-142">appDisplayName</span><span class="sxs-lookup"><span data-stu-id="ec865-142">appDisplayName</span></span>|<span data-ttu-id="ec865-143">String</span><span class="sxs-lookup"><span data-stu-id="ec865-143">String</span></span>|<span data-ttu-id="ec865-144">应用程序的友好名称。</span><span class="sxs-lookup"><span data-stu-id="ec865-144">The friendly name of the application.</span></span>|
+|<span data-ttu-id="ec865-145">appPublisher</span><span class="sxs-lookup"><span data-stu-id="ec865-145">appPublisher</span></span>|<span data-ttu-id="ec865-146">String</span><span class="sxs-lookup"><span data-stu-id="ec865-146">String</span></span>|<span data-ttu-id="ec865-147">应用程序的发布者。</span><span class="sxs-lookup"><span data-stu-id="ec865-147">The publisher of the application.</span></span>|
+|<span data-ttu-id="ec865-148">appUsageDuration</span><span class="sxs-lookup"><span data-stu-id="ec865-148">appUsageDuration</span></span>|<span data-ttu-id="ec865-149">Int32</span><span class="sxs-lookup"><span data-stu-id="ec865-149">Int32</span></span>|<span data-ttu-id="ec865-150">应用程序的总使用时间（分钟）。</span><span class="sxs-lookup"><span data-stu-id="ec865-150">The total usage time of the application in minutes.</span></span> <span data-ttu-id="ec865-151">有效值 -2147483648 到 2147483647</span><span class="sxs-lookup"><span data-stu-id="ec865-151">Valid values -2147483648 to 2147483647</span></span>|
+|<span data-ttu-id="ec865-152">appCrashCount</span><span class="sxs-lookup"><span data-stu-id="ec865-152">appCrashCount</span></span>|<span data-ttu-id="ec865-153">Int32</span><span class="sxs-lookup"><span data-stu-id="ec865-153">Int32</span></span>|<span data-ttu-id="ec865-154">应用的崩溃数。</span><span class="sxs-lookup"><span data-stu-id="ec865-154">The number of crashes for the app.</span></span> <span data-ttu-id="ec865-155">有效值 -2147483648 到 2147483647</span><span class="sxs-lookup"><span data-stu-id="ec865-155">Valid values -2147483648 to 2147483647</span></span>|
+|<span data-ttu-id="ec865-156">meanTimeToFailureInMinutes</span><span class="sxs-lookup"><span data-stu-id="ec865-156">meanTimeToFailureInMinutes</span></span>|<span data-ttu-id="ec865-157">Int32</span><span class="sxs-lookup"><span data-stu-id="ec865-157">Int32</span></span>|<span data-ttu-id="ec865-158">应用失败平均时间（分钟）。</span><span class="sxs-lookup"><span data-stu-id="ec865-158">The mean time to failure for the app in minutes.</span></span> <span data-ttu-id="ec865-159">有效值 -2147483648 到 2147483647</span><span class="sxs-lookup"><span data-stu-id="ec865-159">Valid values -2147483648 to 2147483647</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4ab6e-160">响应</span><span class="sxs-lookup"><span data-stu-id="4ab6e-160">Response</span></span>
-<span data-ttu-id="4ab6e-161">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-161">If successful, this method returns a `201 Created` response code and a [userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ec865-160">响应</span><span class="sxs-lookup"><span data-stu-id="ec865-160">Response</span></span>
+<span data-ttu-id="ec865-161">如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ec865-161">If successful, this method returns a `201 Created` response code and a [userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4ab6e-162">示例</span><span class="sxs-lookup"><span data-stu-id="4ab6e-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ec865-162">示例</span><span class="sxs-lookup"><span data-stu-id="ec865-162">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4ab6e-163">请求</span><span class="sxs-lookup"><span data-stu-id="4ab6e-163">Request</span></span>
-<span data-ttu-id="4ab6e-164">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ec865-163">请求</span><span class="sxs-lookup"><span data-stu-id="ec865-163">Request</span></span>
+<span data-ttu-id="ec865-164">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ec865-164">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion
 Content-type: application/json
@@ -88,8 +88,8 @@ Content-length: 346
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4ab6e-165">响应</span><span class="sxs-lookup"><span data-stu-id="4ab6e-165">Response</span></span>
-<span data-ttu-id="4ab6e-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4ab6e-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ec865-165">响应</span><span class="sxs-lookup"><span data-stu-id="ec865-165">Response</span></span>
+<span data-ttu-id="ec865-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ec865-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

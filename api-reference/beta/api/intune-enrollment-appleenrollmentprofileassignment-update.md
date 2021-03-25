@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f10a0d383f0fe0475a7178b3f3a97b07eded50a4
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 5b5381a15db9ba7b02399fecf48492f84bfcac4c
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159960"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51157700"
 ---
-# <a name="update-appleenrollmentprofileassignment"></a><span data-ttu-id="36475-103">更新 appleEnrollmentProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="36475-103">Update appleEnrollmentProfileAssignment</span></span>
+# <a name="update-appleenrollmentprofileassignment"></a><span data-ttu-id="75592-103">更新 appleEnrollmentProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="75592-103">Update appleEnrollmentProfileAssignment</span></span>
 
-<span data-ttu-id="36475-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="36475-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="75592-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75592-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="36475-105">**重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="36475-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="75592-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="75592-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="36475-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="36475-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="75592-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="75592-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="36475-107">更新 [appleEnrollmentProfileAssignment 对象](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="36475-107">Update the properties of a [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object.</span></span>
+<span data-ttu-id="75592-107">更新 [appleEnrollmentProfileAssignment 对象](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="75592-107">Update the properties of a [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="36475-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="36475-108">Prerequisites</span></span>
-<span data-ttu-id="36475-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="36475-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="75592-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="75592-108">Prerequisites</span></span>
+<span data-ttu-id="75592-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="75592-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="36475-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="36475-111">Permission type</span></span>|<span data-ttu-id="36475-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="36475-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="75592-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="75592-111">Permission type</span></span>|<span data-ttu-id="75592-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="75592-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="36475-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="36475-113">Delegated (work or school account)</span></span>|<span data-ttu-id="36475-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="36475-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="36475-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="36475-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="36475-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="36475-116">Not supported.</span></span>|
-|<span data-ttu-id="36475-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="36475-117">Application</span></span>|<span data-ttu-id="36475-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="36475-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="75592-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="75592-113">Delegated (work or school account)</span></span>|<span data-ttu-id="75592-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="75592-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="75592-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="75592-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="75592-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="75592-116">Not supported.</span></span>|
+|<span data-ttu-id="75592-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="75592-117">Application</span></span>|<span data-ttu-id="75592-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="75592-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="36475-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="36475-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="75592-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="75592-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +40,31 @@ ms.locfileid: "50159960"
 PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}/assignments/{appleEnrollmentProfileAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="36475-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="36475-120">Request headers</span></span>
-|<span data-ttu-id="36475-121">标头</span><span class="sxs-lookup"><span data-stu-id="36475-121">Header</span></span>|<span data-ttu-id="36475-122">值</span><span class="sxs-lookup"><span data-stu-id="36475-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="75592-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="75592-120">Request headers</span></span>
+|<span data-ttu-id="75592-121">标头</span><span class="sxs-lookup"><span data-stu-id="75592-121">Header</span></span>|<span data-ttu-id="75592-122">值</span><span class="sxs-lookup"><span data-stu-id="75592-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="36475-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="36475-123">Authorization</span></span>|<span data-ttu-id="36475-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="36475-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="36475-125">接受</span><span class="sxs-lookup"><span data-stu-id="36475-125">Accept</span></span>|<span data-ttu-id="36475-126">application/json</span><span class="sxs-lookup"><span data-stu-id="36475-126">application/json</span></span>|
+|<span data-ttu-id="75592-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="75592-123">Authorization</span></span>|<span data-ttu-id="75592-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="75592-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="75592-125">接受</span><span class="sxs-lookup"><span data-stu-id="75592-125">Accept</span></span>|<span data-ttu-id="75592-126">application/json</span><span class="sxs-lookup"><span data-stu-id="75592-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="36475-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="36475-127">Request body</span></span>
-<span data-ttu-id="36475-128">在请求正文中，提供 [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="36475-128">In the request body, supply a JSON representation for the [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="75592-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="75592-127">Request body</span></span>
+<span data-ttu-id="75592-128">在请求正文中，提供 [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="75592-128">In the request body, supply a JSON representation for the [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object.</span></span>
 
-<span data-ttu-id="36475-129">下表显示创建 [appleEnrollmentProfileAssignment 时所需的属性](../resources/intune-enrollment-appleenrollmentprofileassignment.md)。</span><span class="sxs-lookup"><span data-stu-id="36475-129">The following table shows the properties that are required when you create the [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md).</span></span>
+<span data-ttu-id="75592-129">下表显示创建 [appleEnrollmentProfileAssignment 时所需的属性](../resources/intune-enrollment-appleenrollmentprofileassignment.md)。</span><span class="sxs-lookup"><span data-stu-id="75592-129">The following table shows the properties that are required when you create the [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md).</span></span>
 
-|<span data-ttu-id="36475-130">属性</span><span class="sxs-lookup"><span data-stu-id="36475-130">Property</span></span>|<span data-ttu-id="36475-131">类型</span><span class="sxs-lookup"><span data-stu-id="36475-131">Type</span></span>|<span data-ttu-id="36475-132">说明</span><span class="sxs-lookup"><span data-stu-id="36475-132">Description</span></span>|
+|<span data-ttu-id="75592-130">属性</span><span class="sxs-lookup"><span data-stu-id="75592-130">Property</span></span>|<span data-ttu-id="75592-131">类型</span><span class="sxs-lookup"><span data-stu-id="75592-131">Type</span></span>|<span data-ttu-id="75592-132">说明</span><span class="sxs-lookup"><span data-stu-id="75592-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="36475-133">id</span><span class="sxs-lookup"><span data-stu-id="36475-133">id</span></span>|<span data-ttu-id="36475-134">String</span><span class="sxs-lookup"><span data-stu-id="36475-134">String</span></span>|<span data-ttu-id="36475-135">分配的键。</span><span class="sxs-lookup"><span data-stu-id="36475-135">The key of the assignment.</span></span>|
-|<span data-ttu-id="36475-136">target</span><span class="sxs-lookup"><span data-stu-id="36475-136">target</span></span>|[<span data-ttu-id="36475-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="36475-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="36475-138">Apple 用户启动的部署配置文件的分配目标。</span><span class="sxs-lookup"><span data-stu-id="36475-138">The assignment target for the Apple user initiated deployment profile.</span></span>|
+|<span data-ttu-id="75592-133">id</span><span class="sxs-lookup"><span data-stu-id="75592-133">id</span></span>|<span data-ttu-id="75592-134">String</span><span class="sxs-lookup"><span data-stu-id="75592-134">String</span></span>|<span data-ttu-id="75592-135">分配的键。</span><span class="sxs-lookup"><span data-stu-id="75592-135">The key of the assignment.</span></span>|
+|<span data-ttu-id="75592-136">target</span><span class="sxs-lookup"><span data-stu-id="75592-136">target</span></span>|[<span data-ttu-id="75592-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="75592-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="75592-138">Apple 用户启动的部署配置文件的分配目标。</span><span class="sxs-lookup"><span data-stu-id="75592-138">The assignment target for the Apple user initiated deployment profile.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="36475-139">响应</span><span class="sxs-lookup"><span data-stu-id="36475-139">Response</span></span>
-<span data-ttu-id="36475-140">如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="36475-140">If successful, this method returns a `200 OK` response code and an updated [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="75592-139">响应</span><span class="sxs-lookup"><span data-stu-id="75592-139">Response</span></span>
+<span data-ttu-id="75592-140">如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="75592-140">If successful, this method returns a `200 OK` response code and an updated [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="36475-141">示例</span><span class="sxs-lookup"><span data-stu-id="36475-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="75592-141">示例</span><span class="sxs-lookup"><span data-stu-id="75592-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="36475-142">请求</span><span class="sxs-lookup"><span data-stu-id="36475-142">Request</span></span>
-<span data-ttu-id="36475-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="36475-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="75592-142">请求</span><span class="sxs-lookup"><span data-stu-id="75592-142">Request</span></span>
+<span data-ttu-id="75592-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="75592-143">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}/assignments/{appleEnrollmentProfileAssignmentId}
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 391
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="36475-144">响应</span><span class="sxs-lookup"><span data-stu-id="36475-144">Response</span></span>
-<span data-ttu-id="36475-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="36475-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="75592-144">响应</span><span class="sxs-lookup"><span data-stu-id="75592-144">Response</span></span>
+<span data-ttu-id="75592-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="75592-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
