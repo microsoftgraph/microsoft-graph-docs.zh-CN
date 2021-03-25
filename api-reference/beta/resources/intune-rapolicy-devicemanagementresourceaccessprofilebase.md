@@ -5,30 +5,30 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 567c7b70f73a9710bd884a9fab58faf577dac4c2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d795d99e2d3808268100c22ac8d9840edd96c85
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444439"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51151814"
 ---
 # <a name="devicemanagementresourceaccessprofilebase-resource-type"></a>deviceManagementResourceAccessProfileBase 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 资源访问的基本配置文件类型
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementResourceAccessProfileBases](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-list.md)|[deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) 集合|列出 [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) 对象的属性和关系。|
 |[获取 deviceManagementResourceAccessProfileBase](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-get.md)|[deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|读取 [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) 对象的属性和关系。|
 |[分配操作](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-assign.md)|[deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) 集合|尚未记录|
-|[queryByPlatformType 操作](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-querybyplatformtype.md)|[iQueryable_1OfDeviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-iqueryable_1ofdevicemanagementresourceaccessprofilebase.md)|尚未记录|
+|[queryByPlatformType 操作](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-querybyplatformtype.md)|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -37,9 +37,9 @@ ms.locfileid: "50444439"
 |version|Int32|配置文件的版本|
 |displayName|String|配置文件显示名称|
 |说明|String|配置文件说明|
-|creationDateTime|DateTimeOffset|已创建 DateTime 配置文件|
+|creationDateTime|DateTimeOffset|DateTime 配置文件已创建|
 |lastModifiedDateTime|DateTimeOffset|上次修改日期时间配置文件|
-|roleScopeTagIds|字符串集合|范围标记|
+|roleScopeTagIds|String collection|范围标记|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

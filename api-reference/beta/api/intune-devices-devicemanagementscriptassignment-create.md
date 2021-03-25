@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2960ed69c077358dcec56fb3f9c778ee9857cff
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 4e2e68dbd95745c0a49353022430a33aa38e2a11
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160009"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51150547"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>创建 deviceManagementScriptAssignment
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "50160009"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -61,7 +61,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) 对象。
 
 ## <a name="example"></a>示例
 

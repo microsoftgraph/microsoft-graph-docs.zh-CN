@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e3737c0d9e448612c948bf39b5fcf00283858e2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3ec8b9e31d7e80bbc7f2733832aa5f75213a04fa
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49228839"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51150400"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>更新 deviceManagementScriptGroupAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 对象的属性。
+更新 [deviceManagementScriptGroupAssignment 对象](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -51,17 +51,17 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)时所需的属性。
+下表显示创建 [deviceManagementScriptGroupAssignment 时所需的属性](../resources/intune-devices-devicemanagementscriptgroupassignment.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Device management script group 分配实体的键。 此属性是只读的。|
-|targetGroupId|String|要作为脚本目标的 Azure Active Directory 组的 Id。|
+|id|String|设备管理脚本组分配实体的键。 此属性是只读的。|
+|targetGroupId|String|我们将脚本定向到的 Azure Active Directory 组的 ID。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 对象。
 
 ## <a name="example"></a>示例
 
