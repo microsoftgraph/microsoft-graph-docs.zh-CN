@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce15b628d65d931d3dae4e952c3c83e5eb5dfa3b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4594b56e33ff8cf7d8583c1233d5e0083bf6bcd1
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49310242"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154285"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>更新 userExperienceAnalyticsBaseline
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 对象的属性。
+更新 [userExperienceAnalyticsBaseline 对象](../resources/intune-devices-userexperienceanalyticsbaseline.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,20 +49,20 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 对象的 JSON 表示形式。
 
-下表显示创建 [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)时所需的属性。
+下表显示创建 [userExperienceAnalyticsBaseline 时所需的属性](../resources/intune-devices-userexperienceanalyticsbaseline.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 比较基准的唯一标识符。|
-|displayName|字符串|User experience analytics 基线的名称。|
-|overallScore|Int32|用户体验分析基准的总体分数。|
-|isBuiltIn|Boolean|指示当前基线是商业中间基线还是自定义基线。|
-|createdDateTime|DateTimeOffset|自定义基线的创建日期。|
+|id|String|用户体验分析基线的唯一标识符。|
+|displayName|String|用户体验分析基线的名称。|
+|overallScore|Int32|用户体验分析基线的整体分数。|
+|isBuiltIn|Boolean|表示当前比较基准是商业中值基线还是自定义比较基准。|
+|createdDateTime|DateTimeOffset|创建自定义比较基准的日期。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 对象。
 
 ## <a name="example"></a>示例
 

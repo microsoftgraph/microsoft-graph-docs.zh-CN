@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 391060bb547aa4d2ab578d0f0a9b9215e3f23326
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8439c1ddcd646fc208950195224fc9241b4ae435
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263874"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154054"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocess"></a>更新 userExperienceAnalyticsDeviceStartupProcess
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) 对象的属性。
+更新 [userExperienceAnalyticsDeviceStartupProcess 对象](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,21 +49,21 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses/{userExper
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) 对象的 JSON 表示形式。
 
-下表显示创建 [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)时所需的属性。
+下表显示创建 [userExperienceAnalyticsDeviceStartupProcess 时所需的属性](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动过程的唯一标识符。|
-|managedDeviceId|String|User experience analytics 设备 id。|
-|processName|String|User experience analytics 设备启动过程名称。|
-|productName|String|User experience analytics 设备启动过程产品名称。|
-|发布者|String|User experience analytics 设备启动过程发布者。|
-|startupImpactInMs|Int32|用户体验分析设备启动过程影响，以毫秒为单位。|
+|id|String|用户体验分析设备启动过程的唯一标识符。|
+|managedDeviceId|String|用户体验分析设备 ID。|
+|processName|String|用户体验分析设备启动进程名称。|
+|productName|String|用户体验分析设备启动过程产品名称。|
+|发布者|String|用户体验分析设备启动进程发布者。|
+|startupImpactInMs|Int32|用户体验分析设备启动过程影响（以毫秒为单位）。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) 对象。
 
 ## <a name="example"></a>示例
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d2529e8bb6d07ec45dc7bee675594b10a02d696
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 23f89e530972e3510efc8051d065c28a5cef7c89
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155074"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154236"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>更新 userExperienceAnalyticsCategory
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "50155074"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -42,6 +42,7 @@ PATCH /deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyti
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/appHealthMetrics
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/bestPracticesMetrics
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/rebootAnalyticsMetrics
+PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/workFromAnywhereMetrics
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/resourcePerformanceMetrics
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics
 ```
@@ -61,13 +62,14 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |:---|:---|:---|
 |id|String|用户体验分析类别的唯一标识符。|
 |overallScore|Int32|用户体验分析类别的整体分数。|
+|totalDevices|Int32|用户体验分析类别的设备总数。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) 集合|用户体验分析类别的见解。|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和更新的用户 `200 OK` [ExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -76,11 +78,12 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthOverview
 Content-type: application/json
-Content-length: 553
+Content-length: 576
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
   "overallScore": 12,
+  "totalDevices": 12,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -104,12 +107,13 @@ Content-length: 553
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 602
+Content-Length: 625
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
   "id": "cfd28056-8056-cfd2-5680-d2cf5680d2cf",
   "overallScore": 12,
+  "totalDevices": 12,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",

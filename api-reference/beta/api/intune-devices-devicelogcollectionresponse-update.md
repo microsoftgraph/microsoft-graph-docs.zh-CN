@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e162b964f4b80ac554cc8bb283f345db6400fc2f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ed85268897942ba953ccdd5240d120829f6ea400
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49219284"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154362"
 ---
 # <a name="update-devicelogcollectionresponse"></a>更新 deviceLogCollectionResponse
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 对象的属性。
+更新 [deviceLogCollectionResponse 对象](../resources/intune-devices-devicelogcollectionresponse.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -53,20 +53,20 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|TenantId_deviceId_requestId 形式的唯一标识符|
-|status|字符串|日志集合请求的状态|
-|managedDeviceId|Guid|设备 Id|
-|errorCode|Int64|错误代码（如果有）。 有效值-9.22337203685478 E + 18 to 9.22337203685478 E + 18|
-|requestedDateTimeUTC|DateTimeOffset|请求的日期时间|
+|id|String|表单的唯一标识符tenantId_deviceId_requestId|
+|状态|String|日志集合请求的状态|
+|managedDeviceId|Guid|设备 ID|
+|errorCode|Int64|错误代码（如果有）。 有效值 -9.22337203685478E+18 到 9.22337203685478E+18|
+|requestedDateTimeUTC|DateTimeOffset|请求的 DateTime|
 |receivedDateTimeUTC|DateTimeOffset|收到请求的日期/时间|
-|initiatedByUserPrincipalName|字符串|为其启动请求的 UPN|
-|expirationDateTimeUTC|DateTimeOffset|日志过期日期的日期/时间|
-|大小|双精度|日志的大小。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
+|initiatedByUserPrincipalName|String|发起请求的 UPN|
+|expirationDateTimeUTC|DateTimeOffset|日志过期的 DateTime|
+|size|双精度|日志的大小。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 对象。
 
 ## <a name="example"></a>示例
 
