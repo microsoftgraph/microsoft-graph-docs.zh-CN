@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3604a9a3acd64988e68811076e671d9905d874fb
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7341363806e9429cf29726585267be9536c6be9c
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964656"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201257"
 ---
 # <a name="update-featurerolloutpolicy"></a>更新 featurerolloutpolicy
 
@@ -48,9 +48,9 @@ PATCH /policies/featureRolloutPolicies/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|String|此策略的说明。|
-|displayName|String|此显示名称的组。|
-|isAppliedToOrganization|Boolean|指示是否应当将此功能推出策略应用于整个组织。|
+|说明|字符串|此策略的说明。|
+|displayName|字符串|此显示名称的组。|
+|isAppliedToOrganization|布尔值|指示是否应当将此功能推出策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能推出。|
 
 ## <a name="response"></a>响应
@@ -62,6 +62,8 @@ PATCH /policies/featureRolloutPolicies/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_featurerolloutpolicy"
@@ -78,6 +80,24 @@ Content-type: application/json
   "isAppliedToOrganization": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-featurerolloutpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-featurerolloutpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-featurerolloutpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-featurerolloutpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

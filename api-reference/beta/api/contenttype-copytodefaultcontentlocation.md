@@ -5,12 +5,12 @@ description: 将文件复制到内容类型中的默认内容位置。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 879615cac7dce92b4044c0a876006ef9f4edec01
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: afe4a5aebe4e19dd3957e0be0cca334a33035981
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771104"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51201986"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType：copyToDefaultContentLocation
 命名空间：microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "50771104"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
+|应用程序 | Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
 
   
 
@@ -40,7 +40,6 @@ ms.locfileid: "50771104"
 -->
 
 ```http
-
 POST /sites/id/contentTypes/id/copyToDefaultContentLocation 
 ```
 
@@ -58,8 +57,8 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 
 |参数|类型|说明|
 |-|-|-|
-|sourceFile| [itemReference](../resources/itemreference.md) |有关需要复制到默认内容位置的源文件的元数据。 必填。|
-|destinationFileName| string |目标文件名。 
+|sourceFile| [itemReference](../resources/itemreference.md) |有关需要复制到默认内容位置的源文件的元数据。 必需。|
+|destinationFileName| 字符串 |目标文件名。 
 
 ## <a name="response"></a>响应
 
@@ -81,13 +80,13 @@ POST https://graph.microsoft.com/beta/sites/{id}/contentTypes/{contentTypeId}/co
 Content-Type: application/json
 
 {
-    "sourceFile": {
-        "sharepointIds": {
-            "listId": "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",
-            "listItemId": "2"
-        }
-    },
-    "destinationFileName": "newname.txt"
+   "sourceFile":{
+      "sharepointIds":{
+         "listId":"e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",
+         "listItemId":"2"
+      }
+   },
+   "destinationFileName":"newname.txt"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -118,7 +117,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
   

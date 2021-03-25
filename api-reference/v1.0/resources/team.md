@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c6f1eb9254b0af1ce0ec8b11fbaf775482197104
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: ca4e3c55c56d6b4a469515dc20a9fbff5cbec36f
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714268"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202091"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -37,12 +37,13 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 |[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|获取此团队中的成员列表。|
 |[添加成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|向团队中添加新成员。|
 |[获取成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
-|[删除成员](../api/team-delete-members.md)|无|删除团队中的一个现有成员。|
 |[更新成员角色](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
+|[删除成员](../api/team-delete-members.md)|无|删除团队中的一个现有成员。|
 |[存档团队](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队置于只读状态。 |
 |[解档团队](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队还原到读写状态。 |
 |[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
+|[完成迁移](../api/team-completemigration.md)|[团队](team.md)| 从团队中删除迁移模式并使团队可供用户发布和阅读消息。|
 |[列出团队中安装的应用](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出团队中安装的应用。|
 |[将应用添加到团队](../api/team-post-installedapps.md) |无 | 向团队添加（安装）应用程序。|
 |[获取团队中安装的应用](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取团队中安装的指定应用。|
@@ -65,6 +66,17 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 |memberSettings|[teamMemberSettings](teammembersettings.md) |用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |用于配置团队中的消息传递和提及的设置。|
 |webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择 **获取团队链接** 时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
+|createdDateTime|dateTimeOffset|创建团队的时间戳。|
+
+### <a name="instance-attributes"></a>实例属性
+
+实例属性是具有特殊行为的属性。这些属性是临时的，并且 a) 定义服务应执行的行为或 b) 提供短期的属性值，例如过期项目的下载 URL。
+
+| 属性名称| 类型   | 说明
+|:-----------------------|:-------|:-------------------------|
+|@microsoft. graph teamCreationMode|string|指示团队处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。 **注意**：将来，Microsoft 可能会要求你或你的客户根据导入的数据量支付其他费用。|
+
+有关 POST 请求示例，请参阅[请求（创建处于迁移状态的团队）](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 ## <a name="relationships"></a>关系
 
@@ -99,7 +111,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
   "internalId": "string",
   "isArchived": false,
   "webUrl": "string (URL)",
-  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
+  "createdDateTime": "dateTimeOffset"
 }
 ```
 

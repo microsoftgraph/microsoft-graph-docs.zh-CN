@@ -1,22 +1,22 @@
 ---
 title: 修补程序通道
-description: 更新指定通道的属性。
-author: clearab
+description: 更新指定频道的属性。
+author: anandjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b90e3abff3d0624b7639195f02e342f7fa11c5ee
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 975623111ad2ecde6afa13432cba5fcd3f7fef4f
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848925"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202217"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
 命名空间：microsoft.graph
 
-更新指定 [通道](../resources/channel.md)的属性。
+更新指定频道 [的属性](../resources/channel.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,29 +24,31 @@ ms.locfileid: "48848925"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | ChannelSettings、Group 写全部、所有的 ReadWrite。 All |
+|委派（工作或学校帐户） | ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | ChannelSettings *、ChannelSettings、all、、all、所有读写。 all |
+|应用程序 | ChannelSettings.ReadWrite.Group*、ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}/channels/{id}
+PATCH /teams/{team-id}/channels/{channel-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。
 
-> **注意：** 您不能更新 `membershipType` 现有频道的值。
+> **注意：** 无法更新 `membershipType` 现有通道的值。
 
 ## <a name="response"></a>响应
 
@@ -58,18 +60,17 @@ PATCH /teams/{id}/channels/{id}
 
 下面是一个请求示例。
 
-```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
-```
-
 <!-- {
   "blockType": "request",
-  "name": "update_channel"
+  "name": "patch_channel"
 }-->
+```http
+PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
+```
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true,

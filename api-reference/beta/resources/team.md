@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a8c05b71c440925425d47fc19e5b836559e42b85
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 439522645966f35c2ba68795be71c698b2808e97
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950287"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202651"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -68,7 +68,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择 **获取团队链接** 时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
 |classSettings|[teamClassSettings](teamclasssettings.md) |配置班级设置。 仅当团队代表班级时可用。|
 |isMembershipLimitedToOwners|布尔值|如果设置为“`true`”，则团队当前处于“仅所有者”团队成员身份状态，且其他团队成员（如学生）不可访问。|
-|createdDateTime|dateTimeOffset|只读。 创建团队的时间戳。|
+|createdDateTime|dateTimeOffset|创建团队的时间戳。|
 
 ### <a name="instance-attributes"></a>实例属性
 
@@ -123,7 +123,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "string (timestamp)"
+  "createdDateTime": "dateTimeOffset"
 }
 ```
 

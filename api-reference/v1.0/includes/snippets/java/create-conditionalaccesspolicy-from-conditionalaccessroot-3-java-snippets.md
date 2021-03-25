@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 60b482bd92a113835f57d28618c2fe6df96cbe84
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c8a84aa7fe35895b5953cb422460e1033d2237c3
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964034"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51209043"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
 conditionalAccessPolicy.displayName = "Demo app for documentation";

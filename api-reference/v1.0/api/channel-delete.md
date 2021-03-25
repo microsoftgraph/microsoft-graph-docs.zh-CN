@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 116d0f95020ecd88166ec946c42c616cf7041090
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 9ee64e96e9dde7ac3d3b2026b63d9685126204f6
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849058"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202630"
 ---
 # <a name="delete-channel"></a>删除频道
 
@@ -18,7 +18,7 @@ ms.locfileid: "48849058"
 
 删除 [频道](../resources/channel.md)。
 
-> **请注意** ：应用程序权限和此 API 存在已知问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
+> **请注意**：应用程序权限和此 API 存在已知问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,18 +26,18 @@ ms.locfileid: "48849058"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | All、Group、all、All、All |
+|委派（工作或学校帐户） | Channel.Delete.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "Delete"、Group *、"all"、"Group"、"全部"、"所有"、"所有" |
+|应用程序 | Channel.Delete.Group*、Channel.Delete.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
-> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/channels/{id}
+DELETE /teams/{team-id}/channels/{channel-id}
 ```
 
 ## <a name="request-headers"></a>请求标头

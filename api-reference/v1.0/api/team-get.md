@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c83c99e1519f952ee8fb80c5a179cefc9abb458e
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: bcf63579b4ade651df30e4ace287aaa15baae6e4
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848659"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202210"
 ---
 # <a name="get-team"></a>获取团队
 
@@ -37,7 +37,7 @@ ms.locfileid: "48848659"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}
+GET /teams/{team-id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -58,36 +58,19 @@ GET /teams/{id}
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_team"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}
+```http
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-team-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,32 +83,32 @@ Content-length: 401
 
 {
   "isArchived": false,
-  "discoverySettings": {
-    "showInTeamsSearchAndSuggestions": true
-  },
   "memberSettings": {
     "allowCreateUpdateChannels": true,
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true
+    "allowCreateUpdateRemoveConnectors": true    
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true
+    "allowDeleteChannels": true 
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true
+    "allowChannelMentions": true    
   },
   "funSettings": {
     "allowGiphy": true,
     "giphyContentRating": "strict",
     "allowStickersAndMemes": true,
     "allowCustomMemes": true
+  },
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e941379cbe9253ed79eb193f4cbc49284213b0a3
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 42025545ed4244b74b684acb05cde5b0e908ede9
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714261"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202112"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -37,6 +37,7 @@ ms.locfileid: "49714261"
 |[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
 |[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
 |[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
+|[完成迁移](../api/channel-completemigration.md)|[频道](channel.md)| 删除频道中的迁移模式，让用户可在频道中发布和阅读消息。|
 |[列出频道中的选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
 |[将选项卡添加到频道](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
 |[获取频道中的选项卡](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到频道的特定选项卡。|
@@ -53,7 +54,7 @@ ms.locfileid: "49714261"
 |isFavoriteByDefault|Boolean|指示是否应对团队的所有成员将频道自动标记到“收藏夹”。 仅可使用“[创建团队](../api/team-post.md)”以编程方式设置。 默认值：`false`。|
 |email|String| 用于向频道发送邮件的电子邮件地址。 只读。|
 |webUrl|String|将转到 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
-|membershipType|channelMembershipType|频道的类型。 可在创建期间设置，但不可更改。 可能的值有：`standard` - 频道继承父团队的成员列表；`private` - 频道可以具有父团队中所有成员的子集的成员。
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|频道的类型。 可在创建期间设置，但不可更改。 可能的值有：`standard` - 频道继承父团队的成员列表；`private` - 频道可以具有父团队中所有成员的子集的成员。
 |createdDateTime|dateTimeOffset|只读。 创建频道的时间戳。|
 
 ## <a name="relationships"></a>关系
@@ -87,7 +88,7 @@ ms.locfileid: "49714261"
   "isFavoriteByDefault": true,
   "email": "string",
   "webUrl": "string",
-  "membershipType": "string",
+  "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)"
 }
 ```
