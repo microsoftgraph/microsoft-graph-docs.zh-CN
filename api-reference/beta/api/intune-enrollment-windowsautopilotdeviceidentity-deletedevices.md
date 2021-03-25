@@ -1,18 +1,18 @@
 ---
-title: 删除 deviceManagementScriptPolicySetItem
-description: 删除 deviceManagementScriptPolicySetItem。
+title: deleteDevices 操作
+description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f3e60667db1885daf11e48f5becb21d68e60a51
+ms.openlocfilehash: d790acee9d501391c74ebfc1d299ca6fe85ae831
 ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152444"
+ms.locfileid: "51159365"
 ---
-# <a name="delete-devicemanagementscriptpolicysetitem"></a>删除 deviceManagementScriptPolicySetItem
+# <a name="deletedevices-action"></a>deleteDevices 操作
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "51152444"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [deviceManagementScriptPolicySetItem](../resources/intune-policyset-devicemanagementscriptpolicysetitem.md)。
+尚未记录
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,8 @@ ms.locfileid: "51152444"
 }
 -->
 ``` http
-DELETE /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
+POST /deviceManagement/windowsAutopilotDeviceIdentities/deleteDevices
+POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/deleteDevices
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,23 +48,54 @@ DELETE /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供参数的 JSON 表示形式。
+
+下表显示了可用于此操作的参数。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|serialNumbers|String collection|尚未记录|
+
+
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [deletedWindowsAutopilotDeviceState](../resources/intune-enrollment-deletedwindowsautopilotdevicestate.md) 集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
+POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/deleteDevices
+
+Content-type: application/json
+Content-length: 59
+
+{
+  "serialNumbers": [
+    "Serial Numbers value"
+  ]
+}
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 301
+
+{
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.deletedWindowsAutopilotDeviceState",
+      "serialNumber": "Serial Number value",
+      "deviceRegistrationId": "Device Registration Id value",
+      "deletionState": "failed",
+      "errorMessage": "Error Message value"
+    }
+  ]
+}
 ```
 
 

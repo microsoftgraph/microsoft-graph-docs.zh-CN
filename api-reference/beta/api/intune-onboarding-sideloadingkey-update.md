@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05da10cbd567b41d115fbcef105d00ac1eb1549e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 65ae9cfcb7fd2d66c8b56108929a284f26d840fa
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49262181"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51152668"
 ---
 # <a name="update-sideloadingkey"></a>更新 sideLoadingKey
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象的属性。
+更新 [sideLoadingKey 对象](../resources/intune-onboarding-sideloadingkey.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,21 +49,21 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象的 JSON 表示形式。
 
-下表显示创建 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)时所需的属性。
+下表显示创建 [sideLoadingKey 时所需的属性](../resources/intune-onboarding-sideloadingkey.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|侧加载密钥唯一 Id。|
-|value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
-|displayName|String|向 It 专业管理员显示的侧加载密钥名称。|
-|description|String|向 It 专业管理员显示的侧加载密钥说明。|
-|totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
-|lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
+|id|String|旁加载密钥唯一 ID。|
+|value|String|Side Loading Key Value， it is 5x5 value， seperated by hiphens.|
+|displayName|String|向 ITPro 管理员显示的旁加载密钥名称。|
+|说明|String|旁加载 向 ITPro 管理员显示的密钥说明。|
+|totalActivation|Int32|向 ITPro 管理员显示的旁加载密钥总激活。|
+|lastUpdatedDateTime|String|向 ITPro 管理员显示的"旁加载密钥上次更新日期"。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新 [的 sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象。
 
 ## <a name="example"></a>示例
 

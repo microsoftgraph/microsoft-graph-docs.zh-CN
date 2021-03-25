@@ -1,18 +1,18 @@
 ---
-title: 删除 userExperienceAnalyticsImpactingProcess
-description: 删除 userExperienceAnalyticsImpactingProcess。
+title: userExperienceAnalyticsSummarizeWorkFromAnywhereDevices 函数
+description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b17a914501d618c7cfeee973c4affdd4add33249
+ms.openlocfilehash: 5d953398b4e9df606971b560315c21ed2cd3c8c5
 ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153998"
+ms.locfileid: "51159344"
 ---
-# <a name="delete-userexperienceanalyticsimpactingprocess"></a>删除 userExperienceAnalyticsImpactingProcess
+# <a name="userexperienceanalyticssummarizeworkfromanywheredevices-function"></a>userExperienceAnalyticsSummarizeWorkFromAnywhereDevices 函数
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "51153998"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [userExperienceAnalyticsImpactingProcess](../resources/intune-devices-userexperienceanalyticsimpactingprocess.md)。
+尚未记录
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "51153998"
 }
 -->
 ``` http
-DELETE /deviceManagement/userExperienceAnalyticsImpactingProcess/{userExperienceAnalyticsImpactingProcessId}
+GET /deviceManagement/userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -50,20 +50,43 @@ DELETE /deviceManagement/userExperienceAnalyticsImpactingProcess/{userExperience
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [userExperienceAnalyticsWorkFromAnywhereDevicesSummary。](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsImpactingProcess/{userExperienceAnalyticsImpactingProcessId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 758
+
+{
+  "value": {
+    "@odata.type": "microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevicesSummary",
+    "autopilotDevicesSummary": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
+      "devicesNotAutopilotRegistered": 13,
+      "devicesWithoutAutopilotProfileAssigned": 6
+    },
+    "cloudManagementDevicesSummary": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudManagementDevicesSummary",
+      "coManagedDeviceCount": 4,
+      "intuneDeviceCount": 1,
+      "tenantAttachDeviceCount": 7
+    },
+    "windows10DevicesSummary": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsWindows10DevicesSummary",
+      "unsupportedOSversionDeviceCount": 15
+    }
+  }
+}
 ```
 
 
