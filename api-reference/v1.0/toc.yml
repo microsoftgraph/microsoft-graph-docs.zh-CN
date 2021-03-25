@@ -1315,7 +1315,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -4374,7 +4374,7 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: 更新
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
-      - name: 管控
+      - name: 治理
         items:
           - name: 使用条款
             href: resources/agreement.md
@@ -5228,6 +5228,8 @@ items:
                 href: api/team-get-primarychannel.md
               - name: 列出所有团队
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
+              - name: 团队完整迁移
+                href: api/team-completemigration.md
           - name: 组（团队）
             href: resources/group.md
             items:
@@ -5294,6 +5296,8 @@ items:
                 href: api/channel-update-members.md
               - name: 删除成员
                 href: api/channel-delete-members.md
+              - name: 频道完整迁移
+                href: api/channel-completemigration.md
               - name: 获取文件文件夹
                 href: api/channel-get-filesfolder.md
               - name: 列出频道消息

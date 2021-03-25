@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e160ebef0be54a2dd39f9ed68f1590a1372985af
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 070521edd521f4a039ce512977385e4636ae50fc
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960152"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51209337"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-INamedLocationCollectionPage namedLocations = graphClient.identity().conditionalAccess().namedLocations()
+NamedLocationCollectionPage namedLocations = graphClient.identity().conditionalAccess().namedLocations()
     .buildRequest()
     .filter("isof('microsoft.graph.ipNamedLocation')")
     .get();

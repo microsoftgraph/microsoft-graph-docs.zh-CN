@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 35de8dbe650fb7207aa43344bdabfe0517bd007b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 092e98e183791cc83aae09effc5f40766fb2c59b
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950780"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51211006"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GovernanceRoleAssignmentRequest governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest();
 governanceRoleAssignmentRequest.roleDefinitionId = "70521f3e-3b95-4e51-b4d2-a2f485b02103";
@@ -19,8 +19,8 @@ governanceRoleAssignmentRequest.assignmentState = "Eligible";
 governanceRoleAssignmentRequest.type = "AdminUpdate";
 GovernanceSchedule schedule = new GovernanceSchedule();
 schedule.type = "Once";
-schedule.startDateTime = CalendarSerializer.deserialize("2018-03-08T05:42:45.317Z");
-schedule.endDateTime = CalendarSerializer.deserialize("2018-06-05T05:42:31Z");
+schedule.startDateTime = OffsetDateTimeSerializer.deserialize("2018-03-08T05:42:45.317Z");
+schedule.endDateTime = OffsetDateTimeSerializer.deserialize("2018-06-05T05:42:31Z");
 governanceRoleAssignmentRequest.schedule = schedule;
 
 graphClient.privilegedAccess("azureResources").roleAssignmentRequests()
