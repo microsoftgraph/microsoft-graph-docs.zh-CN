@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53507ce45286de3689ae248c3873c8fb535007d6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a321b735313373b0d412d722edd849eb1370a2ca
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49201119"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158995"
 ---
 # <a name="create-grouppolicyobjectfile"></a>创建 groupPolicyObjectFile
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "49201119"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -54,16 +54,16 @@ POST /deviceManagement/groupPolicyObjectFiles
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|尚未记录|
-|groupPolicyObjectId|Guid|GPO Xml 内容中的组策略对象 GUID|
+|groupPolicyObjectId|Guid|GPO Xml 内容的组策略对象 GUID|
 |ouDistinguishedName|String|OU 的可分辨名称。|
-|createdDateTime|DateTimeOffset|首次上传 GroupPolicy 的日期和时间。|
+|createdDateTime|DateTimeOffset|首次上载 GroupPolicy 的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyObjectFile 的日期和时间。|
 |内容|String|组策略对象文件内容。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象。
 
 ## <a name="example"></a>示例
 

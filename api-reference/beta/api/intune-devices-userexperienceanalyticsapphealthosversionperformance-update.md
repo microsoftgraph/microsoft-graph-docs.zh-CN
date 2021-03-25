@@ -5,27 +5,27 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 969b89d16d9ab265246c0bca39932d874675da5f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 67fc4fbe6128842db99fb70a2198da21bfd30714
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49202526"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51157945"
 ---
 # <a name="update-userexperienceanalyticsapphealthosversionperformance"></a>更新 userExperienceAnalyticsAppHealthOSVersionPerformance
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 对象的属性。
+更新 [userExperienceAnalyticsAppHealthOSVersionPerformance 对象](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -49,22 +49,22 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance/{us
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 对象的 JSON 表示形式。
 
-下表显示创建 [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md)时所需的属性。
+下表显示创建 [userExperienceAnalyticsAppHealthOSVersionPerformance 时所需的属性](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics OS 版本性能对象的唯一标识符。|
-|osVersion|String|设备上安装的 OS 版本。|
-|osBuildNumber|String|安装在设备上的操作系统内部版本号。|
-|activeDeviceCount|Int32|OS 版本的活动设备数。 有效值-2147483648 到2147483647|
-|meanTimeToFailureInMinutes|Int32|OS 版本失败的平均时间，以分钟为单位。 有效值-2147483648 到2147483647|
-|osVersionAppHealthScore|双精度|操作系统版本的应用运行状况分数。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
-|osVersionAppHealthStatus|String|OS 版本的总体应用程序运行状况状态。|
+|id|String|用户体验分析操作系统版本性能对象的唯一标识符。|
+|osVersion|String|设备上安装的操作系统版本。|
+|osBuildNumber|String|设备上安装的操作系统内部版本号。|
+|activeDeviceCount|Int32|操作系统版本的活动设备的数量。 有效值 -2147483648 到 2147483647|
+|meanTimeToFailureInMinutes|Int32|操作系统版本的失败平均时间（分钟）。 有效值 -2147483648 到 2147483647|
+|osVersionAppHealthScore|双精度|操作系统版本的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|osVersionAppHealthStatus|String|操作系统版本的总体应用运行状况状态。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 对象。
 
 ## <a name="example"></a>示例
 
