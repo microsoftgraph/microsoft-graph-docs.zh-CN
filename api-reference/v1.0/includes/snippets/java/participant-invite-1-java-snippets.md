@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5d508dacd96719bfd474ca94a98cf9bb7e831e32
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 33e0bd3a334ec5fc946d9192754327e7e6966db1
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945132"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51208940"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<InvitationParticipantInfo> participantsList = new LinkedList<InvitationParticipantInfo>();
 InvitationParticipantInfo participants = new InvitationParticipantInfo();
@@ -26,7 +26,11 @@ participantsList.add(participants);
 String clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
 
 graphClient.communications().calls("{id}").participants()
-    .invite(participantsList,clientContext)
+    .invite(ParticipantInviteParameterSet
+        .newBuilder()
+        .withParticipants(participantsList)
+        .withClientContext(clientContext)
+        .build())
     .buildRequest()
     .post();
 

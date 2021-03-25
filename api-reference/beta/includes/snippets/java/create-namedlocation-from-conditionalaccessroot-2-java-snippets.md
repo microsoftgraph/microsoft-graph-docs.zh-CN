@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2da7fa557fa6b6e9cf6a6e677bc98addf5595316
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f05cc8ba0d846896a8fe8eccf22ea18b991fe7e1
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947219"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51208470"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CountryNamedLocation namedLocation = new CountryNamedLocation();
 namedLocation.displayName = "Named location with unknown countries and regions";

@@ -1,20 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0a81db96c1cdae0090411e37b8e1d46e9eb73fdb
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6b28814bc8df27abe7db3986f1bea7dda716b87a
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961874"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51208999"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String memberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33";
 
 graphClient.groups("{id}")
-    .evaluateDynamicMembership(memberId)
+    .evaluateDynamicMembership(GroupEvaluateDynamicMembershipParameterSet
+        .newBuilder()
+        .withMemberId(memberId)
+        .build())
     .buildRequest()
     .post();
 

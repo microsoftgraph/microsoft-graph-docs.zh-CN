@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c8a15b4822da2fb4ef28176656e7d3e95864b997
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c345faad091fbf09a2741fe863df52476ca909cc
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771111"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51208198"
 ---
 ```javascript
 
@@ -16,12 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const contentType = {
-  hubSiteUrls: 
-    [
+   hubSiteUrls: [
       'https://graph.microsoft.com/beta/sites/id'
-      
-    ],
-    propagateToExistingLists: false
+   ],
+   propagateToExistingLists: false
 };
 
 await client.api('/sites/id/contentTypes/id/associateWithHubSites')
