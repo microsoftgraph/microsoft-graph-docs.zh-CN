@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fbc04049b05e4f2f34339eadacfb981c27ada9b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 416521355fbae227c31ffb20f3ffec2801e836fa
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223295"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51151849"
 ---
-# <a name="delete-mobileappintentandstate"></a><span data-ttu-id="49969-103">删除 mobileAppIntentAndState</span><span class="sxs-lookup"><span data-stu-id="49969-103">Delete mobileAppIntentAndState</span></span>
+# <a name="delete-mobileappintentandstate"></a><span data-ttu-id="9ef62-103">删除 mobileAppIntentAndState</span><span class="sxs-lookup"><span data-stu-id="9ef62-103">Delete mobileAppIntentAndState</span></span>
 
-<span data-ttu-id="49969-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49969-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9ef62-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9ef62-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="49969-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="49969-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9ef62-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="9ef62-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="49969-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="49969-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9ef62-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="9ef62-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="49969-107">删除 [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)。</span><span class="sxs-lookup"><span data-stu-id="49969-107">Deletes a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md).</span></span>
+<span data-ttu-id="9ef62-107">删除 [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)。</span><span class="sxs-lookup"><span data-stu-id="9ef62-107">Deletes a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="49969-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="49969-108">Prerequisites</span></span>
-<span data-ttu-id="49969-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="49969-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9ef62-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="9ef62-108">Prerequisites</span></span>
+<span data-ttu-id="9ef62-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9ef62-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="49969-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="49969-111">Permission type</span></span>|<span data-ttu-id="49969-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="49969-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="9ef62-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="9ef62-111">Permission type</span></span>|<span data-ttu-id="9ef62-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9ef62-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="49969-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="49969-113">Delegated (work or school account)</span></span>|<span data-ttu-id="49969-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49969-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="49969-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="49969-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="49969-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="49969-116">Not supported.</span></span>|
-|<span data-ttu-id="49969-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="49969-117">Application</span></span>|<span data-ttu-id="49969-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49969-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="9ef62-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9ef62-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9ef62-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ef62-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="9ef62-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9ef62-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9ef62-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="9ef62-116">Not supported.</span></span>|
+|<span data-ttu-id="9ef62-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="9ef62-117">Application</span></span>|<span data-ttu-id="9ef62-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ef62-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="49969-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="49969-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9ef62-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9ef62-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ ms.locfileid: "49223295"
 DELETE /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="49969-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="49969-120">Request headers</span></span>
-|<span data-ttu-id="49969-121">标头</span><span class="sxs-lookup"><span data-stu-id="49969-121">Header</span></span>|<span data-ttu-id="49969-122">值</span><span class="sxs-lookup"><span data-stu-id="49969-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9ef62-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="9ef62-120">Request headers</span></span>
+|<span data-ttu-id="9ef62-121">标头</span><span class="sxs-lookup"><span data-stu-id="9ef62-121">Header</span></span>|<span data-ttu-id="9ef62-122">值</span><span class="sxs-lookup"><span data-stu-id="9ef62-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="49969-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="49969-123">Authorization</span></span>|<span data-ttu-id="49969-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="49969-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="49969-125">接受</span><span class="sxs-lookup"><span data-stu-id="49969-125">Accept</span></span>|<span data-ttu-id="49969-126">application/json</span><span class="sxs-lookup"><span data-stu-id="49969-126">application/json</span></span>|
+|<span data-ttu-id="9ef62-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9ef62-123">Authorization</span></span>|<span data-ttu-id="9ef62-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="9ef62-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="9ef62-125">接受</span><span class="sxs-lookup"><span data-stu-id="9ef62-125">Accept</span></span>|<span data-ttu-id="9ef62-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9ef62-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="49969-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="49969-127">Request body</span></span>
-<span data-ttu-id="49969-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="49969-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9ef62-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="9ef62-127">Request body</span></span>
+<span data-ttu-id="9ef62-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9ef62-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="49969-129">响应</span><span class="sxs-lookup"><span data-stu-id="49969-129">Response</span></span>
-<span data-ttu-id="49969-130">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="49969-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="9ef62-129">响应</span><span class="sxs-lookup"><span data-stu-id="9ef62-129">Response</span></span>
+<span data-ttu-id="9ef62-130">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="9ef62-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="49969-131">示例</span><span class="sxs-lookup"><span data-stu-id="49969-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9ef62-131">示例</span><span class="sxs-lookup"><span data-stu-id="9ef62-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="49969-132">请求</span><span class="sxs-lookup"><span data-stu-id="49969-132">Request</span></span>
-<span data-ttu-id="49969-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="49969-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="9ef62-132">请求</span><span class="sxs-lookup"><span data-stu-id="9ef62-132">Request</span></span>
+<span data-ttu-id="9ef62-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9ef62-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ```
 
-### <a name="response"></a><span data-ttu-id="49969-134">响应</span><span class="sxs-lookup"><span data-stu-id="49969-134">Response</span></span>
-<span data-ttu-id="49969-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="49969-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="9ef62-134">响应</span><span class="sxs-lookup"><span data-stu-id="9ef62-134">Response</span></span>
+<span data-ttu-id="9ef62-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9ef62-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
