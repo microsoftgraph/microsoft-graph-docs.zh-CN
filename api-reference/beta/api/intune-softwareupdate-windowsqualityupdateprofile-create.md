@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb1f1e20460c1bb9e109b45dea555ef0f475bd70
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 19a6a9c7b267ad4de2e675a43f5fd5420736a5c6
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160243"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156245"
 ---
 # <a name="create-windowsqualityupdateprofile"></a>创建 windowsQualityUpdateProfile
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "50160243"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -57,14 +57,16 @@ POST /deviceManagement/windowsQualityUpdateProfiles
 |displayName|String|配置文件显示名称的配置文件。|
 |说明|String|由用户指定的配置文件的说明。|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|加速更新设置。|
-|createdDateTime|DateTimeOffset|配置文件的创建日期时间。|
+|createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|字符串集合|此质量更新实体的范围标记列表。|
+|roleScopeTagIds|String collection|此质量更新实体的范围标记列表。|
+|releaseDateDisplayName|String|为质量更新版本显示的友好发布日期|
+|deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -73,7 +75,7 @@ POST /deviceManagement/windowsQualityUpdateProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdateProfiles
 Content-type: application/json
-Content-length: 418
+Content-length: 558
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
@@ -86,7 +88,9 @@ Content-length: 418
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "releaseDateDisplayName": "Release Date Display Name value",
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 
@@ -95,7 +99,7 @@ Content-length: 418
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 590
+Content-Length: 730
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
@@ -111,7 +115,9 @@ Content-Length: 590
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "releaseDateDisplayName": "Release Date Display Name value",
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 
