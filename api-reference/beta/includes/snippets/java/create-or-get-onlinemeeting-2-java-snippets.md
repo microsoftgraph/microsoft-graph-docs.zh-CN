@@ -1,22 +1,22 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7e02ecb8449a7a28f9b720353f168aca27370855
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e4340be12c01b64b527629dac2d72255181af50d
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957794"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51210327"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ChatInfo chatInfo = new ChatInfo();
 chatInfo.threadId = "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2";
 
-Calendar startDateTime = CalendarSerializer.deserialize("02/06/2020 01:49:21");
+OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 01:49:21");
 
-Calendar endDateTime = CalendarSerializer.deserialize("02/06/2020 02:19:21");
+OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 02:19:21");
 
 String externalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56";
 
@@ -35,7 +35,15 @@ participants.attendees = attendeesList;
 String subject = "Create a meeting with customId provided";
 
 graphClient.me().onlineMeetings()
-    .createOrGet(chatInfo,endDateTime,externalId,participants,startDateTime,subject)
+    .createOrGet(OnlineMeetingCreateOrGetParameterSet
+        .newBuilder()
+        .withChatInfo(chatInfo)
+        .withEndDateTime(endDateTime)
+        .withExternalId(externalId)
+        .withParticipants(participants)
+        .withStartDateTime(startDateTime)
+        .withSubject(subject)
+        .build())
     .buildRequest()
     .post();
 
