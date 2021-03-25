@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 52e00af4ac7c0dcacc9968691701a20f596017d5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b7f28509fd04cc02816a84aad73b45c5e154874d
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954091"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51211083"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
 topic.source = TeamworkActivityTopicSource.ENTITY_URL;
@@ -31,7 +31,16 @@ templateParameters.value = "5";
 templateParametersList.add(templateParameters);
 
 graphClient.teams("{teamId}")
-    .sendActivityNotification(topic,activityType,null,previewText,templateParametersList,recipient,null)
+    .sendActivityNotification(TeamSendActivityNotificationParameterSet
+        .newBuilder()
+        .withTopic(topic)
+        .withActivityType(activityType)
+        .withChainId(null)
+        .withPreviewText(previewText)
+        .withTemplateParameters(templateParametersList)
+        .withRecipient(recipient)
+        .withTeamsAppId(null)
+        .build())
     .buildRequest()
     .post();
 

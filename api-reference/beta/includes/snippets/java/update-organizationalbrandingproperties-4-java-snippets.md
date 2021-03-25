@@ -1,15 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2c2bbd8a979c9322adc5f1e5613ab45b7fdb7b19
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 44b2e2ffdcf822df4ec63c2e46b2f90247eeca56
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943936"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51210860"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OrganizationalBranding organizationalBranding = new OrganizationalBranding();
 organizationalBranding.backgroundColor = "#FFFF33";
