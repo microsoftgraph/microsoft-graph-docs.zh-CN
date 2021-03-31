@@ -4,13 +4,13 @@ description: 删除已授予用户的 appRoleAssignment。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: users
-author: jpettere
-ms.openlocfilehash: 667a5e93ca2c53c9deacb3b60654d984c357e426
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+author: psignoret
+ms.openlocfilehash: 2f0e0b06c4dd48c321094539d5cf9fd02d44f96f
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722368"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468812"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-user"></a>删除授予用户的 appRoleAssignment
 

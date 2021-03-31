@@ -3,14 +3,14 @@ title: fido2AuthenticationMethod 资源类型
 description: 注册到用户的 FIDO2 安全密钥的表示形式。 FIDO2 是一种登录身份验证方法。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0c79a704d9a2aa899ffc2a3f4592f76a30d30126
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8e1dceac5e7c901cdeeba7788c6a1541fdc26867
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964685"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469148"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>fido2AuthenticationMethod 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "50964685"
 注册到用户的 FIDO2 安全密钥的表示形式。 FIDO2 是一种登录身份验证方法。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|Description|
 |:---|:---|:---|
 |[List](../api/fido2authenticationmethod-list.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) 集合|检索用户的 fido2AuthenticationMethod 对象及其属性的列表。|

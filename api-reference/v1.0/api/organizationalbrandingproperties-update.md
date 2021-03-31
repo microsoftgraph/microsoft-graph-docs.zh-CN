@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kexia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 73c19acc4967842b41c943dc18cd99d714c9478c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d93b8052dd4db67fc4fa8a4db5bb3669990658b7
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949335"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469463"
 ---
 # <a name="update-organizationalbrandingproperties"></a>更新 organizationalBrandingProperties
 
 更新 [organizationalBrandingProperties 对象](../resources/organizationalbrandingproperties.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,7 +56,7 @@ PUT /organization/{id}/branding/{property name}
 |squareLogo|Stream|公司徽标的方形版本。 这将显示在 Windows 10 现成 (OOBE) 以及启用 Windows Autopilot 进行部署时。 .png 或 .jpg 不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
 |usernameHintText|String|字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
 
-传入 `id` 时将忽略该属性。
+传入时将忽略 **id** 属性。
 
 ## <a name="response"></a>响应
 
@@ -64,7 +64,7 @@ PUT /organization/{id}/branding/{property name}
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-update-default-branding"></a>示例 1：更新默认品牌
-如果品牌已存在，PATCH 将仅替换指定的属性，保留未指定的属性不变。 
+如果品牌已存在，将 `PATCH` 仅替换指定的属性，不更改未指定的属性。 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
@@ -103,7 +103,6 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>响应
 下面展示了示例响应。
 
@@ -117,7 +116,7 @@ Content-Type: application/json
 HTTP/1.1 204 OK
 ```
 
-在这种情况下，默认 /branding 的值会更新，但在任何本地化上不会更改任何值。
+在这种情况下，将更新默认品牌设置的值，但任何本地化时不会更改任何值。
 
 ### <a name="example-2-update-bannerlogo-for-default-branding"></a>示例 2：为默认品牌更新 bannerLogo
 以下请求更新默认品牌打造的横幅徽标。
@@ -138,24 +137,6 @@ Content-Type: image/jpeg
 
 <Image>
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
@@ -171,7 +152,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### <a name="example-3-update-localized-branding"></a>示例 3：更新本地化品牌
-如果指定了 Content-Language 标头，则创建与 Content-Language 关联的本地化（如果不存在的话）然后使用指定的值进行更新。 默认品牌不会更改。
+如果 **指定了 Content-Language** 标头，则首先创建与 **Content-Language** 关联的本地化（如果它不存在的话）然后使用指定的值进行更新。 默认品牌不会更改。
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
@@ -203,10 +184,10 @@ Content-Language: fr
 HTTP/1.1 204 No Content
 ```
 
-在此请求后，fr 本地化会使用 backgroundColor 的新值进行更新，但对默认 /branding 没有任何更改。
+在此请求后， `fr` 本地化会使用 **backgroundColor** 的新值进行更新，但对默认品牌没有任何更改。
 
 ### <a name="example-4-replace-default-branding-and-all-localizations"></a>示例 4：替换默认品牌和所有本地化
-如果品牌已存在，PUT 将替换默认品牌和任何本地化。
+如果品牌已存在， `PUT` 将替换默认品牌和任何本地化。
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
@@ -259,7 +240,7 @@ Content-Language: fr
 HTTP/1.1 204 No Content
 ```
 
-在此请求后，默认品牌仅指定了 backgroundColor，并且具有 id fr 以及 backgroundColor 集的仅一个本地化。
+在此请求之后，默认品牌仅指定了 **backgroundColor，** 并且具有 id 以及 `fr` **backgroundColor** 集的完全一个本地化。
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

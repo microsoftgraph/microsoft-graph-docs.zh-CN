@@ -3,14 +3,14 @@ title: authenticationMethodConfigurations
 description: authenticationMethodConfigurations 对象。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 083ace96234a724fc4c9f6e1cdda0cbd8a99e22a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 26d0cd948a69968a7d45b3406b3da7109ffc3f18
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964680"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469127"
 ---
 # <a name="authenticationmethodconfiguration-resource-type"></a>authenticationMethodConfiguration 资源类型
 命名空间：microsoft.graph

@@ -2,15 +2,15 @@
 title: provisionedPlan 资源类型
 description: '**用户** 实体和 组织 实体的 provisionedPlans 属性都是一个 **provisionedPlan** 集合。'
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: bb91d03665a7f768727450ec06d9dca6ae21bef3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6b8236a6948b0941cfe3c6f304a037c8cfc41a7e
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129910"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469421"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan 资源类型
 

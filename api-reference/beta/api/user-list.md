@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1ad4d42e448b44ffcdb851b9918f724508bbb078
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5a9726e5e00d7975fa9bf2bc0cbecf04a7a04dea
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953776"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473169"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -395,10 +395,9 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 893
-
+```
 
 ### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 7：使用 $filter 和 $top 获取显示名称以“a”开头（包括返回的对象数）的组。
 

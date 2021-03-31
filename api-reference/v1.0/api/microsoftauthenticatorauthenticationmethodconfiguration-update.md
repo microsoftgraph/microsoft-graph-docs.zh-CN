@@ -3,14 +3,14 @@ title: 更新 microsoftAuthenticatorAuthenticationMethodConfiguration
 description: 更新 microsoftAuthenticatorAuthenticationMethodConfiguration 对象的属性。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cbbd1523791fa7578b5a200a84cdb737d33e6823
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 3967d145a0d732e66bc7c77a2ab3539b129be043
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202708"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469162"
 ---
 # <a name="update-microsoftauthenticatorauthenticationmethodconfiguration"></a>更新 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "51202708"
 更新 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure AD 租户的 Microsoft Authenticator 身份验证方法策略。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

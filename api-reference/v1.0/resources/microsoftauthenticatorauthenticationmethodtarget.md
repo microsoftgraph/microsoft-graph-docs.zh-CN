@@ -3,14 +3,14 @@ title: microsoftAuthenticatorAuthenticationMethodTarget 资源类型
 description: 已启用使用 Microsoft Authenticator 身份验证方法策略的用户或组的集合。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 233eed9e49ca25fafbdebc0097b513122bdb9a4b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 43c8e5a4ba92e838a64ec5f345ae82c744b53dee
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964675"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469246"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>microsoftAuthenticatorAuthenticationMethodTarget 资源类型
 命名空间：microsoft.graph

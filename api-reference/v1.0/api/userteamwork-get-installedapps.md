@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 609c4081d30e831bca2573d4195e9221e5d42b05
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8d101dd675790041a1c8dd9e1c00562991decb9a
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961133"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473204"
 ---
 # <a name="get-installed-app-for-user"></a>获取用户的已安装应用
 
@@ -18,7 +18,7 @@ ms.locfileid: "50961133"
 
 检索 [在](../resources/teamsappinstallation.md) 指定用户的个人范围内安装 [的应用](../resources/user.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -143,17 +143,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [
-        {
-          "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('5b649834-7412-4cce-9e69-176e95a394f5')/installedApps(teamsAppDefinition())/$entity",
-          "id": "NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk=",
-          "teamsAppDefinition": {
-                                  "id": "YTZiNjMzNjUtMzFhNC00ZjQzLTkyZWMtNzEwYjcxNTU3YWY5IyMwLjk=",
-                                  "teamsAppId": "a6b63365-31a4-4f43-92ec-710b71557af9",
-                                  "displayName": "Power Apps",
-                                  "version": "0.9"
-                                }
-          }
+  "value": [
+    {
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('5b649834-7412-4cce-9e69-176e95a394f5')/installedApps(teamsAppDefinition())/$entity",
+      "id": "NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk=",
+      "teamsAppDefinition": {
+        "id": "YTZiNjMzNjUtMzFhNC00ZjQzLTkyZWMtNzEwYjcxNTU3YWY5IyMwLjk=",
+        "teamsAppId": "a6b63365-31a4-4f43-92ec-710b71557af9",
+        "displayName": "Power Apps",
+        "version": "0.9"
+      }
+    }
   ]
 }
 ```

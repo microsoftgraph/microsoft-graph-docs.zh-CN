@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 501290407b08e8fc6f461de5f7ec446dab53bccd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e5d1c03a4c4c5fb47f63640993705fa62709d47c
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945741"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51472189"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -97,6 +97,7 @@ ms.locfileid: "50945741"
 | 标记 |String 集合| 可用于分类和标识应用程序的自定义字符串。 不可为空。|
 | tokenEncryptionKeyId |Guid|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定已验证的应用程序发布者。|
+| 唯一名称 | String | 可指定给应用程序的唯一标识符作为替代标识符。 不可变。 只读。 |
 | web |[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
 
 ### <a name="signinaudience-values"></a>signInAudience 值
@@ -161,6 +162,7 @@ ms.locfileid: "50945741"
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
+  "uniqueName": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }

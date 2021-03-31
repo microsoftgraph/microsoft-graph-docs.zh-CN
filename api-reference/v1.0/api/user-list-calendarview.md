@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 9bbbd5eb2bb983b8ac2fe4254a082306cc9c85f2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5094e412de24a26e5381ae0763299760bac1699d
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439966"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51472098"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -124,14 +124,14 @@ Content-length: 354
 {
   "value": [
     {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
+      "originalStartTimeZone": "Pacific Standard Time",
+      "originalEndTimeZone": "Pacific Standard Time",
       "responseStatus": {
-        "response": "",
-        "time": "datetime-value"
+        "response": "accepted",
+        "time": "2016-10-19T10:37:00Z"
       },
-      "iCalUId": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
+      "iCalUId": "040000008200E00074C5B7101A82E00800000000D3D70B8A6A17D70100000000000000001000000074665914A06C3F49BB4B7D7EEE4304DA",
+      "reminderMinutesBeforeStart": 15,
       "isReminderOn": true
     }
   ]

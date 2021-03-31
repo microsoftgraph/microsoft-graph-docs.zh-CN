@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 59c33f51e3c0efe73cf771cd5ab59dbea08d6dd9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 5e3e88a09408d44a07c34bf5379b189ada7055d9
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776226"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468693"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>列出向用户授予的 appRoleAssignment
 
@@ -115,7 +115,7 @@ Content-type: application/json
       "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
       "deletedDateTime": null,
       "appRoleId": "00000000-0000-0000-0000-000000000000",
-      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
       "principalDisplayName": "Alex Wilber",
       "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
       "principalType": "User",
@@ -208,5 +208,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

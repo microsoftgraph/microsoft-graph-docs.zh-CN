@@ -2,15 +2,15 @@
 title: 电话资源类型
 description: 表示电话号码。
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 703a24bc0b2d1453b210f739573f4b9629355a64
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6740d1cd1746151d35f7627d9ab5125724adc3f0
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135728"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469232"
 ---
 # <a name="phone-resource-type"></a>电话资源类型
 

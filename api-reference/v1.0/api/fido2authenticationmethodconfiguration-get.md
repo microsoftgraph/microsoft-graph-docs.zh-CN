@@ -3,21 +3,21 @@ title: 获取 fido2AuthenticationMethodConfiguration
 description: 读取 fido2AuthenticationMethodConfiguration 对象的属性和关系。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4f1420ffc51305777e3b40710cfb85893f7c4b2e
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 7d67b65577546b187f616462e3faeefa7aedb7b4
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202599"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469015"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>获取 fido2AuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 检索[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Azure Active Directory[](../resources/authenticationmethodspolicies-overview.md)租户的 FIDO2 安全密钥 (Azure AD) 策略。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

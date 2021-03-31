@@ -1,21 +1,21 @@
 ---
 title: 获取权限
-description: 检索网站上权限对象的属性和关系。
+description: 检索网站上 permission 对象的属性和关系。
 author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 56f8060eec149bb4106d40f1ce2c3a460961c316
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 1f9a0a2ecfee85f172b3407068a1fbad18d114d3
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177125"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473218"
 ---
 # <a name="get-permission"></a>获取权限
 命名空间：microsoft.graph
 
-检索网站上 [权限对象](../resources/permission.md) 的属性和关系。
+检索网站上 [permission](../resources/permission.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /sites/{sitesId}/permissions/{permissionId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/permission.md)和权限对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/permission.md) 代码和 permission 对象。
 
 ## <a name="examples"></a>示例
 
@@ -101,7 +101,7 @@ Content-Type: application/json
   "grantedToIdentities": [{
     "application": {
       "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-      "displayName": "Foo App"
+      "displayName": "Contoso Time Manager App"
     }
   }]
 }

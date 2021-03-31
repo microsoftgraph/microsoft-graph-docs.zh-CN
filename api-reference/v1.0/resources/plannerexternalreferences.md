@@ -1,26 +1,26 @@
 ---
 title: plannerExternalReferences 资源类型
-description: '**PlannerExternalReferences**资源表示任务的引用集合。 这是开放类型。 它是任务详细信息对象的一部分。 属性-值对中的值是 externalReference 对象。'
+description: '**plannerExternalReferences** 资源表示对任务的引用的集合。 这是"打开类型"。 它是任务详细信息对象的一部分。 属性值对中的值是 externalReference 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 08e8a19db315846357feebb00a21f9572eea7fff
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: d4580d2e54b1f9b913b7dab5c283e9af7391b964
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48329988"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473393"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>plannerExternalReferences 资源类型
 
 命名空间：microsoft.graph
 
-**PlannerExternalReferences**资源表示任务的引用集合。 这是开放类型。 它是 [任务详细信息](plannertaskdetails.md) 对象的一部分。 属性-值对中的值是 [externalReference](plannerexternalreference.md) 对象。
+**plannerExternalReferences** 资源表示对任务的引用的集合。 这是"打开类型"。 它是任务详细信息 [对象的一](plannertaskdetails.md) 部分。 属性值对中的值是 [externalReference](plannerexternalreference.md) 对象。
 
 
 ## <a name="properties"></a>属性
-可由客户端定义打开类型的属性。 在这种情况下，客户端必须提供基于**HTTP/HTTPS**协议的**有效 url**作为属性，并且它们的值必须是[externalReference](plannerexternalreference.md)对象。 根据 OData，开放式类型中的属性名称不能包含以下字符： `.` ， `:` ， `%`  因此需要对它们进行编码。 示例如下所示。 若要删除引用，请将属性的值设置为 `null` 。
+开放类型的属性可以通过客户端定义。 在这种情况下，客户端必须提供基于 **HTTP/HTTPS** 协议的有效 **URL** 作为属性，并且其值必须是 [externalReference](plannerexternalreference.md)对象。 基于 OData，Open Types 中的属性名称不能包含下列字符 `.` `:` `%` `@` `#` ：、，因此需要编码它们。 示例如下所示。 若要删除引用，将 属性的值设置为 `null` 。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

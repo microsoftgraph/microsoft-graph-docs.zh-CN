@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 046610705fe4d8a2e44f5adf35b0ae7797eee383
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: fda7792cab92391aba441ec62004ffb604f3ac3c
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934630"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469442"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -90,9 +90,11 @@ Microsoft Graph 接受订阅请求之后，将更改通知推送到订阅中指�
 
 `/users/sh.o'neal@contoso.com/messages`
 
-请使用： 
+请使用：
 
 `/users/{guid-user-id}/messages`
+
+对于所有应用程序，每个邮箱最多允许 1000 个活动订阅。
 
 ### <a name="teams-resource-limitations"></a>Teams 资源限制
 

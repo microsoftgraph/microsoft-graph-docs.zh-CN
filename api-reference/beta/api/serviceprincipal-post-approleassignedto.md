@@ -1,16 +1,16 @@
 ---
-title: 向服务主体授予 appRoleAssignment
-description: 向服务主体授予应用角色分配。
+title: 为服务主体授予 appRoleAssignment
+description: 为服务主体授予应用角色分配。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: b6705516fc7f44ef86ffed6478bc91544bbf27a9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: psignoret
+ms.openlocfilehash: 82b037e9a5dfd578d9df473873a551383d9546bd
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445111"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468672"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>为服务主体授予 appRoleAssignment
 
@@ -125,11 +125,11 @@ Content-type: application/json
   "id": "-WmtM5na7Uus0D8kI1yylpU9Mdo0Pb9OoBJvd3T5eKc",
   "deletedDateTime": null,
   "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
-  "createdDateTime": "2021-02-15T16:14:59.8643039Z",
+  "creationTimestamp": "2021-02-15T16:14:59.8643039Z",
   "principalDisplayName": "Parents of Contoso",
   "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
   "principalType": "Group",
-  "resourceDisplayName": "Yammer",
+  "resourceDisplayName": "Fabrikam App",
   "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```
@@ -147,4 +147,3 @@ Content-type: application/json
   ]
 }
 -->
-

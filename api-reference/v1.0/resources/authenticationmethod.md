@@ -3,14 +3,14 @@ title: authenticationMethod 资源类型
 description: 表示注册到用户的身份验证方法。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 283b81981417494e86a225770427f5497490809a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b052a6034484a5d1d1f8edc8ff9adc3feac52e98
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949012"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469134"
 ---
 # <a name="authenticationmethod-resource-type"></a>authenticationMethod 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50949012"
 
 表示注册到用户的身份验证方法。 [身份验证方法是](/azure/active-directory/authentication/concept-authentication-methods)用户用来向系统进行身份验证或以其他方式证明其身份的方法。 一些示例包括密码、 (短信或语音呼叫) 、FIDO2 安全密钥等。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

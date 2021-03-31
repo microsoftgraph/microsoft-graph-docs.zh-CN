@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bc94c8abe1de8d45324fc6ad65e44e7c1329c3f5
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d0a3d39d7903b3d7870d5b71fa821bd7f7ad3b6b
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471528"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473260"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -28,7 +28,7 @@ ms.locfileid: "50471528"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.ReadWrite.All、Directory.ReadWrite.All |
+| 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ POST /applicationTemplates/{id}/instantiate
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `201 OK` 代码和新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新的 `201 OK` [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -64,7 +64,7 @@ POST /applicationTemplates/{id}/instantiate
 
 下面展示了示例请求。
  
-> 可以使用此 API 实例化 [非库应用](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** 使用以下 ID： `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
+> 可以使用此 API 实例化 [非库应用](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** 使用以下 `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` ID：。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

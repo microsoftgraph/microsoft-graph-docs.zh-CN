@@ -1,8 +1,17 @@
 ---
-title： "Update subscription" description： "Renew a subscription by extending its expiry time."
-localization_priority：普通作者："Jumaodhiss" ms.prod：" "change-notifications" doc_type： apiPageType
+title: 更新订阅
+description: 通过延长到期时间续订订阅。
+localization_priority: Normal
+author: Jumaodhiss
+ms.prod: change-notifications
+doc_type: apiPageType
+ms.openlocfilehash: 3b00e7d72833e1f871b59aa0a906a295d42fbc5f
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468819"
 ---
-
 # <a name="update-subscription"></a>更新订阅
 
 命名空间：microsoft.graph
@@ -32,7 +41,7 @@ localization_priority：普通作者："Jumaodhiss" ms.prod：" "change-notifica
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
-|[打印机](../resources/printer.md) | 不支持 | 不支持 | Printer.Read.All、Printer.ReadWrite.All |
+|[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0f39bcf4cf8f345f8c27de8927f1cb8a8cd67eb5
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 9fb0ad14609000cb1f53a7d962fa896a6ae0b26e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722039"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473358"
 ---
 # <a name="update-plannertask"></a>更新 plannerTask
 
@@ -19,12 +19,12 @@ ms.locfileid: "50722039"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 **plannertask** 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.ReadWrite、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -49,17 +49,17 @@ PATCH /planner/tasks/{id}
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|分配到任务的用户集合。|
 |bucketId|String|任务所属的存储桶 ID。 存储桶需要位于任务所在的计划中。 长度为 28 个字符，区分大小写。 [格式验证](../resources/tasks-identifiers-disclaimer.md)在服务上完成。 |
 |conversationThreadId|字符串|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
-|dueDateTime|DateTimeOffset|任务到期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|dueDateTime|DateTimeOffset|任务截止的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
 |planId|String|此任务所属的计划 id。|
-|priority|Int32|任务的优先级。 有效值范围介于非独占 (之间) ，其中增加的值优先级较低 (优先级最高，优先级最低 `0` `10` `0` `10`) 。  目前，Planner 将值和"紧急"解释为"重要"、"重要"、"中"和"低 `0` `1` `2` `3` `4` `5` `6` `7` `8` `9` `10` "。  目前，Planner 会设置 `1` `3` "urgent"、"important"、"medium"和 `5` `9` "low"的值。|
+|priority|Int32|任务的优先级。 值的有效范围介于 和 (之间) ，而增加的值具有较低的优先级 (具有最高优先级，并且具有最低优先级 `0` `10` `0` `10`) 。  目前，Planner 将值 和 解释为"紧急"，将 和 解释为 `0` `1` `2` `3` `4` "重要"、""、" 和 `5` `6` `7` "medium"， 和 ，并 `8` `9` `10` 解释为"低"。  目前，Planner 将设置 `1` `3` "urgent"、"important"、"medium"和 `5` `9` "low"的值。|
 |startDateTime|DateTimeOffset|任务开始的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |title|String|任务的标题。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新 [的 plannerTask](../resources/plannertask.md) 对象。
+如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定具有首选项的标头，则此方法在响应正文中返回 响应代码和更新的 `Prefer` `return=representation` `200 OK` [plannerTask](../resources/plannertask.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -76,6 +76,7 @@ PATCH /planner/tasks/{id}
 PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
 Content-type: application/json
 Content-length: 247
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

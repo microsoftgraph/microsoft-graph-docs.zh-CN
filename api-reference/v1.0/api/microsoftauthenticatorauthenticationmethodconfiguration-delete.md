@@ -3,21 +3,21 @@ title: 删除 microsoftAuthenticatorAuthenticationMethodConfiguration
 description: 删除 microsoftAuthenticatorAuthenticationMethodConfiguration 对象。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 93a16ae2865fcdb85963c7e8aded8e5ca6727720
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: bd7febf099ecdc87169e264218b4d748e82b6d1a
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202739"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469176"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethodconfiguration"></a>删除 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 将 Microsoft Authenticator 身份验证方法策略还原为默认配置，以删除对 Microsoft [Authenticator](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 身份验证方法策略所做的更改。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

@@ -3,14 +3,14 @@ title: fido2AuthenticationMethodConfiguration 资源类型
 description: 表示 FIDO2 身份验证方法策略
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7684b8b2c6601b4afdad25b3d3c32b7a6b68667d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 00137618daf327793d7d60d8dadbe8ad89abc840
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964684"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468623"
 ---
 # <a name="fido2authenticationmethodconfiguration-resource-type"></a>fido2AuthenticationMethodConfiguration 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "50964684"
 表示 FIDO2 身份验证方法策略。 身份验证方法策略定义配置设置以及能够使用身份验证方法的用户或组。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|读取 fido2AuthenticationMethodConfiguration 对象的属性和关系。|

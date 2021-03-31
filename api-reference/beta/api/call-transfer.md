@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f4be30fff38c639ac55d126b0501b3f9f57afa52
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a36539aea8219245d87587cfb830aab728029def
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948455"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473253"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -53,7 +53,6 @@ POST /communications/calls/{id}/transfer
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|作为转移目标的参与者。|
-|clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。
@@ -89,8 +88,7 @@ Content-Length: 430
     },
     "languageId": "languageId-value",
     "region": "region-value"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -279,8 +277,7 @@ Content-Type: application/json
     "languageId": "en-us",
     "region": "amer",
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 
@@ -448,8 +445,7 @@ Content-Length: 430
     },
     "languageId": "languageId-value",
     "region": "region-value"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 
@@ -623,8 +619,7 @@ Content-Type: application/json
     "languageId": "en-us",
     "region": "amer",
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 

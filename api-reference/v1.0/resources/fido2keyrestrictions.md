@@ -3,14 +3,14 @@ title: fido2KeyRestrictions 资源类型
 description: 表示作为 FIDO2 安全密钥身份验证方法策略的一部分强制执行的关键限制。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0fd319b64d124fc2c80c7f851a2e062d3568c2d4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c1781e39952bb3bf7cfb307d06ca3167ff58a2a6
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964683"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469449"
 ---
 # <a name="fido2keyrestrictions-resource-type"></a>fido2KeyRestrictions 资源类型
 

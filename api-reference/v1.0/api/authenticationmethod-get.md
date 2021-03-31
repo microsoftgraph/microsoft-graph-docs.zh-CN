@@ -3,14 +3,14 @@ title: 获取 authenticationMethod
 description: 检索 authenticationMethod 对象的属性和关系。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ff118645edf0a303c5017d11e7cdbb1e770bab58
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 95ab608e5b1c384e4ddffc2c2e252d473f9aa2af
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949008"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469085"
 ---
 # <a name="get-authenticationmethod"></a>获取 authenticationMethod
 
@@ -18,7 +18,7 @@ ms.locfileid: "50949008"
 
 检索 [authenticationMethod 对象的属性和](../resources/authenticationmethod.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

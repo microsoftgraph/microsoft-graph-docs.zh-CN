@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: e754bf9e5199de502672cdf0a0de5279eb5ef80f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a8cab7859c68224acc734a88f941a952ca82798b
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953745"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51472105"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -111,6 +111,7 @@ ms.locfileid: "50953745"
 | **pages**         | Collection([sitePage][])         | 此网站的 SitePages 列表中的页面集合。
 | **权限**   | 集合([权限][])         | 与网站关联的权限。 可为空。
 | **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
+| **termStore**     | [microsoft.graph.termStore.store]  | 此站点下的术语库。
 | **externalColumns**     | 集合（[columnDefinition][]）  | 网站中可用列定义的集合，从当前网站的父层次结构中的网站引用。
 
 [columnDefinition]: columndefinition.md
@@ -126,6 +127,7 @@ ms.locfileid: "50953745"
 [site]: site.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
+[microsoft.graph.termStore.store]: termstore-store.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -167,6 +169,7 @@ ms.locfileid: "50953745"
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
   "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",

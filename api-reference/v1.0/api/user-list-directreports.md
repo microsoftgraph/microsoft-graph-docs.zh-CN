@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2be02b4080855877ae2cbbdfc416b36f9374cd49
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 17e2dd9396da3ae572e883250514b26fd3ba7c21
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722354"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51472077"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -93,12 +93,11 @@ GET https://graph.microsoft.com/v1.0/me/directReports
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8"
     }
   ]
 }

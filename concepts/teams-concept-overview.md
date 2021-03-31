@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0a1aee054ffbe216476e0f7a0b0d912190168a8b
-ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
+ms.openlocfilehash: 91fb035dc9fcd5e42bafcff1b64e788bc7478e92
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675973"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468966"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 

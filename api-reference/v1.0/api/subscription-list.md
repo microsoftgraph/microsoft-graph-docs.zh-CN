@@ -1,8 +1,17 @@
 ---
-title： "List subscriptions" description： "Retrieve the properties and relationships of webhook subscriptions， based on the app ID， the user， and the user's role with a tenant."
-localization_priority： Priority author： "Jumaodhiss" ms.prod： ""change-notifications" doc_type： apiPageType
+title: 列出订阅
+description: 根据应用程序 ID、用户和用户的角色（含租户）检索 webhook 订阅的属性和关系。
+localization_priority: Priority
+author: Jumaodhiss
+ms.prod: change-notifications
+doc_type: apiPageType
+ms.openlocfilehash: cd5c72305e070745407c2c89cc5213758ce591b3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468842"
 ---
-
 # <a name="list-subscriptions"></a>列出订阅
 
 命名空间：microsoft.graph

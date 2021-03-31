@@ -5,15 +5,17 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e1dd8c4dd30d6cc4279178e88088b305aea3b87c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: b4c950aec7b58eb6583e8b7a0a209a64f022368e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176467"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473211"
 ---
 # <a name="list-permissions"></a>列出权限
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从 [网站上](../resources/permission.md) 的权限导航属性获取权限资源。
 
@@ -49,7 +51,7 @@ GET /sites/{sitesId}/permissions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和权限](../resources/permission.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [permission](../resources/permission.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -97,28 +99,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "1",
-      "roles": ["read"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-          "displayName": "Foo App"
-        }
-      }]
-    },
-    {
-      "id": "2",
-      "roles": ["write"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-          "displayName": "Bar App"
-        }
-      }]
-    }
-  ]
+   "value":[
+      {
+         "id":"1",
+         "roles":[
+            "read"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+                  "displayName":"Contoso Time Manager App"
+               }
+            }
+         ]
+      },
+      {
+         "id":"2",
+         "roles":[
+            "write"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
+                  "displayName":"Fabrikam Dashboard App"
+               }
+            }
+         ]
+      }
+   ]
 }
 ```
 

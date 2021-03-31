@@ -3,14 +3,14 @@ title: Azure AD 身份验证方法 API 概述
 description: 身份验证方法是用户在 Azure AD 中进行身份验证的方式。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 1f39a7d231a9db7f4198aec4a440811ccce989f5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6027e03a4c78c5359db77ee9c263c9e98f412a9f
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964693"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469120"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Azure AD 身份验证方法 API 概述
 

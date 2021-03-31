@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 1023c50df39bd8416b15d78733005e5e59633fe5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1be514ce3cff4c939cd139af2b8d5f28e2a8e156
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946053"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468870"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>向组授予 appRoleAssignment
 
@@ -126,7 +126,7 @@ Content-type: application/json
   "id": "pNl5diMjzUS1wmc-yI2LEkGgWqFFrFdLhG2Ly2CysL4",
   "deletedDateTime": null,
   "appRoleId": "00000000-0000-0000-0000-000000000000",
-  "createdDateTime": "2021-02-19T17:55:08.3369542Z",
+  "creationTimestamp": "2021-02-19T17:55:08.3369542Z",
   "principalDisplayName": "Young techmakers",
   "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
   "principalType": "Group",
@@ -134,6 +134,8 @@ Content-type: application/json
   "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
 }
 ```
+
+请注意，本例中，请求 URL （`cde330e5-2150-4c11-9c5b-14bfdc948c79`） 中用作用户 **ID** 的值与正文中的 **principalId** 属性相同。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

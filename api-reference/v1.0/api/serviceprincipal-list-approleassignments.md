@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 02e95099b760c506b7da328cdc99ea3efc07f5f9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 13d48cd57cb8389d3cce416792175ae895747f61
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443914"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467979"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>列出向服务主体授予的 appRoleAssignment
 
@@ -113,7 +113,7 @@ Content-type: application/json
   "value": [
     {
       "id": "UxOIjjUXr0WvIe4TRFgqTY4z9Wu5KxpBtlEpoTGjw-A",
-      "creationTimestamp": "2021-02-02T04:22:45.4980259Z",
+      "createdDateTime": "2021-02-02T04:22:45.4980259Z",
       "appRoleId": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
       "principalDisplayName": "dxprovisioning-graphapi-client",
       "principalId": "8e881353-1735-45af-af21-ee1344582a4d",

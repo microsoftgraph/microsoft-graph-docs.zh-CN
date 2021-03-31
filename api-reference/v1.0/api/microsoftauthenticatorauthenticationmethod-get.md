@@ -3,21 +3,21 @@ title: 获取 microsoftAuthenticatorAuthenticationMethod
 description: 读取 microsoftAuthenticatorAuthenticationMethod 对象的属性和关系。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 828288f71a553c8ee6b7603b4af505c07dedf74d
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: d8391c84ea9aff2d1177976a2815e530e07fee51
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202795"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469197"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethod"></a>获取 microsoftAuthenticatorAuthenticationMethod
 命名空间：microsoft.graph
 
 读取 [microsoftAuthenticatorAuthenticationMethod 对象的属性和](../resources/microsoftauthenticatorauthenticationmethod.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

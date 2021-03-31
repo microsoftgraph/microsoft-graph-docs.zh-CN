@@ -3,14 +3,14 @@ title: List 方法
 description: 检索身份验证方法对象的列表。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4dd76103f14daad826d78dfbf2dc5be6e333aa0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1cca7f87bc5eb6b0c12108b0214ab81db99f0568
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950238"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468595"
 ---
 # <a name="list-methods"></a>List 方法
 
@@ -20,7 +20,7 @@ ms.locfileid: "50950238"
 
 > **注意：** 仅返回 v1.0 上支持的方法。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

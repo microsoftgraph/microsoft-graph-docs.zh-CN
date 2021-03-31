@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fd3a38fe2bcc0fef706f3d7d2f428fda7d8a992
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 401423f8afb678f8440f6e951bcd32079147c8af
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979410"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473162"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
 
@@ -49,7 +49,7 @@ GET /users/{id | userPrincipalName}/calendarGroups
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [CalendarGroup](../resources/calendargroup.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -89,15 +89,14 @@ GET https://graph.microsoft.com/beta/me/calendarGroups
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 155
 
 {
   "value": [
     {
-      "name": "name-value",
-      "classId": "classId-value",
-      "changeKey": "changeKey-value",
-      "id": "id-value"
+      "name": "My Calendars",
+      "classId": "0006f0b7-0000-0000-c000-000000000046",
+      "changeKey": "NreqLYgxdE2DpHBBId74XwAAAAAGZw==",
+      "id": "AQMkADIxYjJiYgEzLTFmN_F8AAAIBBgAA_F8AAAJjIQAAAA=="
     }
   ]
 }

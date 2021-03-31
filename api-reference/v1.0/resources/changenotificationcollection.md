@@ -1,24 +1,24 @@
 ---
 title: changeNotificationCollection 资源类型
-description: 表示发送给订阅者的订阅通知的集合。
+description: 表示发送给订阅者订阅通知的集合。
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
-ms.prod: non-product-specific
-ms.openlocfilehash: bf4f6fd5bb573885b32baa4f9b7296d5a1a2ef7b
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.prod: change-notifications
+ms.openlocfilehash: 62098d3099549893165d60cb55699209e4034ccc
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192817"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469318"
 ---
 # <a name="changenotificationcollection-resource-type"></a>changeNotificationCollection 资源类型
 
 命名空间：microsoft.graph
 
-表示发送给订阅者的资源更改通知的集合。
+表示发送到订阅者的资源更改通知的集合。
 
-有关详细信息，请参阅 [使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。
+有关详细信息，请参阅 [Microsoft Graph API 通过更改通知](webhooks.md)。
 
 ## <a name="methods"></a>方法
 
@@ -28,8 +28,8 @@ ms.locfileid: "48192817"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| validationTokens | collection(string) | 包含由 Microsoft Graph 生成的用于验证通知来源的应用程序生成的 JWT 令牌数组。 如果项目存在于值数组中，则 Microsoft Graph 将为每个不同的应用和租户对生成一个令牌。 请注意，通知可以包含使用同一通知 URL 订阅的各种应用和租户的项目组合。 仅为 [资源数据可选的更改通知](/graph/webhooks-with-resource-data.md) 提供。 |
-| 值 |  ([changeNotification](changenotification.md)) 的集合 | 发送到通知 URL 的一组通知。 必填。 |
+| validationTokens | collection(string) | 包含 Microsoft Graph 为应用程序生成的 JWT 令牌数组，用于验证通知的来源。 如果项目存在于值数组中，Microsoft Graph 将针对每个不同的应用和租户对生成一个令牌。 请记住，通知可以包含使用相同通知 URL 订阅的各种应用和租户的混合项目。 仅针对包含 [资源数据的更改通知提供可选](/graph/webhooks-with-resource-data.md) 。 |
+| 值 | 集合 ([changeNotification](changenotification.md))  | 要发送到通知 URL 的通知集。 必填。 |
 
 ## <a name="relationships"></a>关系
 

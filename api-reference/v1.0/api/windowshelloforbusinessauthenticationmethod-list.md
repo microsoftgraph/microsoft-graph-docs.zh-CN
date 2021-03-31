@@ -3,21 +3,21 @@ title: 列出 windowsHelloForBusinessAuthenticationMethods
 description: 获取 windowsHelloForBusinessAuthenticationMethod 对象及其属性的列表。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3376d5ab01bd12b4e59c37f45effa8aa483e9816
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 6458ba926220d9e28ee3e5ad617c3d40cdf9afb4
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201684"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467930"
 ---
 # <a name="list-windowshelloforbusinessauthenticationmethods"></a>列出 windowsHelloForBusinessAuthenticationMethods
 命名空间：microsoft.graph
 
 获取 [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

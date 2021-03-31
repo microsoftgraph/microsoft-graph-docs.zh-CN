@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e13a7d3f79da8227e0599d30182ea30e6799ed96
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 86a96855c330e581e98da902b5e38f16cc857ec9
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961332"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473295"
 ---
 # <a name="get-group"></a>获取组
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 group 对象的属性 [和](../resources/termstore-group.md) 关系。
+读取术语库组对象的属性 [和](../resources/termstore-group.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,11 +50,13 @@ GET /termStore/groups/{groupId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [group](../resources/termstore-group.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [microsoft.graph.termStore.group](../resources/termstore-group.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-get-a-termstore-group"></a>示例 1：获取 termStore 组
+
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -84,9 +86,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 ---
 
-
-
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -106,6 +106,43 @@ Content-Type: application/json
   "scope" : "global",
   "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
   "displayName": "myGroup"  
+}
+```
+### <a name="example-2-get-a-termstore-group-and-its-parent-site-id"></a>示例 2：获取 termStore 组及其父网站 ID
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/termStore/groups/{groupId}?$select=*,parentSiteId
+```
+
+#### <a name="response"></a>响应
+
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.group"
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "createdDateTime": "2019-06-21T20:01:37Z",
+  "description": "My term group",
+  "scope" : "global",
+  "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
+  "displayName": "myGroup",
+  "parentSiteId": "microsoft.sharepoint.com,05259ba9-25a8-4c93-a9a9-f995ef1fc51f,a785ad58-1d57-4f8a-aa71-77170459bd0d"
 }
 ```
 

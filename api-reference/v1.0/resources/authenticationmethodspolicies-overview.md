@@ -3,14 +3,14 @@ title: Azure AD 身份验证方法策略 API 概述
 description: 身份验证方法策略定义 Azure AD 中的用户可以使用哪些身份验证方法。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 5aed8ead61bb9f2dde102dc085e5509945d492f4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 25aea5d4492df1961e5ab3f0f869b334baf0db3e
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964692"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469113"
 ---
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Azure AD 身份验证方法策略 API 概述
 

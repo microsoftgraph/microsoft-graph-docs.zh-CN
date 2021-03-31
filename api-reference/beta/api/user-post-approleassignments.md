@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 6c3ff85213332b5cc6a1585834d0b2a52c0c6fce
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 87c098fa50ed1498d4bf81952247decf70b2c02c
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444754"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469470"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>向用户授予 appRoleAssignment
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 ---
 
 
-在此示例中，`{id}` 和 `{principalId-value}` 均为已分配用户的 `id`。
+请注意，本例中，请求 URL （`cde330e5-2150-4c11-9c5b-14bfdc948c79`） 中用作用户 **ID** 的值与正文中的 **principalId** 属性相同。
 
 ### <a name="response"></a>响应
 
@@ -124,7 +124,7 @@ Content-type: application/json
   "id": "5TDjzVAhEUycWxS_3JSMeY-oHkjrWvBKi7aIZwYGQzg",
   "deletedDateTime": null,
   "appRoleId": "00000000-0000-0000-0000-000000000000",
-  "createdDateTime": "2021-02-15T10:31:53.5164841Z",
+  "creationTimestamp": "2021-02-15T10:31:53.5164841Z",
   "principalDisplayName": "Megan Bowen",
   "principalId": "cde330e5-2150-4c11-9c5b-14bfdc948c79",
   "principalType": "User",
@@ -146,5 +146,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

@@ -362,7 +362,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: Notes
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1253,9 +1253,9 @@ items:
                 href: api/event-delta.md
               - name: 提醒视图
                 href: api/user-reminderview.md
-          - name: 类别
+          - name: Category
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -1728,7 +1728,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -9615,7 +9615,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: 更新工作分配默认值
                 href: api/educationassignmentdefaults-update.md
-          - name: 类别
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: 创建类别
@@ -11046,9 +11046,9 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
-              - name: 组的访问评审
+              - name: 访问审查
                 href: resources/accessreviewsv2-root.md
                 items:
                   - name: 访问评审计划定义
@@ -11081,6 +11081,8 @@ items:
                         href: api/accessreviewinstance-acceptrecommendations.md
                       - name: 应用决策
                         href: api/accessreviewinstance-applydecisions.md
+                      - name: 批处理记录决策
+                        href: api/accessreviewinstance-batchrecorddecisions.md
                   - name: 访问评审实例决策项
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
@@ -11090,7 +11092,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
-              - name: 访问审查
+              - name: '旧版 (访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -11522,7 +11524,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -11884,7 +11886,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注释
+              - name: Notes
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -12119,7 +12121,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -12818,7 +12820,7 @@ items:
                     href: api/termstore-set-update.md
                   - name: 删除
                     href: api/termstore-set-delete.md
-              - name: 术语
+              - name: Term
                 href: resources/termstore-term.md
                 items:
                   - name: 列出子项
@@ -13201,7 +13203,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
@@ -13546,7 +13548,7 @@ items:
                     href: api/attachment-delete.md
               - name: 类别
                 items:
-                  - name: 类别
+                  - name: Category
                     href: resources/outlookcategory.md
                   - name: 列出类别
                     href: api/outlookuser-list-mastercategories.md

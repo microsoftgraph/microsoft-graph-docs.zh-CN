@@ -3,21 +3,21 @@ title: 获取 fido2AuthenticationMethod
 description: 读取 fido2AuthenticationMethod 对象的属性和关系。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b13b9502c1587fcef5a20a07cc4b57d0300f91ee
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b641e1c2afdbf01a3999c50f76497ac7a1417382
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964654"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467958"
 ---
 # <a name="get-fido2authenticationmethod"></a>获取 fido2AuthenticationMethod
 命名空间：microsoft.graph
 
 检索用户的单个 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

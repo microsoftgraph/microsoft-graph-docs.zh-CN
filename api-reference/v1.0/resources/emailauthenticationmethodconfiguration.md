@@ -3,14 +3,14 @@ title: emailAuthenticationMethodConfiguration 资源类型
 description: 代表电子邮件 OTP 身份验证方法策略
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 99e4f642db1bc49c2717a4d2a262dbba5943b4c7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bcc1a355db78dc697df892cd2f6129ef3caa3bac
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964679"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469064"
 ---
 # <a name="emailauthenticationmethodconfiguration-resource-type"></a>emailAuthenticationMethodConfiguration 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50964679"
 
 表示此租户的电子邮件 OTP 身份验证方法策略。 身份验证方法策略定义配置设置以及能够使用身份验证方法的用户或组。 租户的云本机用户可能会使用电子邮件 OTP 进行自助服务密码重置，或在某些情况下由外部用户用于身份验证。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 |方法|返回类型|说明|
 |:---|:---|:---|

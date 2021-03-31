@@ -3,14 +3,14 @@ title: authenticationMethodTarget 资源类型
 description: 启用以将身份验证方法用作身份验证方法策略一部分的用户或组的集合。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4c9265fa359e5b60da6f8e36c13d1a4340ba6d1a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f75a0ee81f1c43923a910bd86df4828c276706e
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964691"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469106"
 ---
 # <a name="authenticationmethodtarget-resource-type"></a>authenticationMethodTarget 资源类型
 

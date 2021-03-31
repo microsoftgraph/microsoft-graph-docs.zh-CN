@@ -5,20 +5,20 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: dc70b7d6dfff5bc512656167a5d32ec317336193
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 604a05ab01312707b52274c6276ce044349f0d43
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402119"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473190"
 ---
 # <a name="list-trending"></a>列出趋势
 
 命名空间：microsoft.graph
 
-计算的洞察力，包括围绕用户的文档趋势的列表。
+计算得出的见解，其中包括围绕用户趋势的文档列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -29,14 +29,14 @@ ms.locfileid: "48402119"
 |应用程序 | Sites.Read.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-获取围绕登录用户或指定用户的文档趋势的列表：
+获取登录用户或指定用户周围的文档列表：
 
 ```http
 GET /me/insights/trending
 GET /users/{id | userPrincipalName}/insights/trending
 ```
 
-扩展 **趋势** 洞察力引用的资源：
+展开趋势见解 **所引用的资源** ：
 
 ```http
 GET /me/insights/trending/{id}/resource
@@ -46,15 +46,15 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-您可以使用 `$filter` 查询参数筛选趋势项。 例如，基于 **类型**：
+可以使用查询 `$filter` 参数筛选趋势项目。 例如，根据 **类型**：
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/type eq 'PowerPoint'`
 
-或基于 **containerType**：
+或基于 **containerType：**
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-请参阅可在 [resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
+请参阅 [resourceVisualization](../resources/insights-resourcevisualization.md)中可以按筛选的可用容器类型和类型。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -68,7 +68,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [趋势](../resources/insights-trending.md) 项列表。 每个项目都包含可视化属性，用于显示您的体验中的项目。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和[](../resources/insights-trending.md)趋势项列表。 每个项目都包含用于在你的体验中显示该项目的可视化属性。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
@@ -77,31 +77,30 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。 请参阅页面底部的 "未截断的示例" 响应。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。 请参阅页面底部的未截断响应示例。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 801
 
 {
     "value": [
         {
-            "id": "id-value",
-            "weight": "weight-value",
+            "id": "AWMiSOpKHlJCpP_ZoVJQXi9ees4wFhDQQqF55Pm5DlaMzvtd2zra4UWSTEvpTldvb6EhQ289G4BAsxnrajQyjW1jIkjqSh5SQqT_2aFSUF4vBQ",
+            "weight": "0.1583399742569597",
             "resourceVisualization": {
-                "title": "title-value",
-                "type": "type-value",
-                "mediaType": "mediaType-value",
-                "previewImageUrl": "previewImageUrl-value",
-                "previewText": "previewText-value",
-                "containerWebUrl": "containerWebUrl-value",
-                "containerDisplayName": "containerDisplayName-value",
-                "containerType": "containerType-value"
+                "title": "LiveCaptions",
+                "type": "Image",
+                "mediaType": "application/octet-stream",
+                "previewImageUrl": "https://contoso.sharepoint.com/_api/v2.0/drives/b!YyJI6koeUkKk_9mhUlBeL156zjAWENBCoXnk-bkOVozO-13bOtrhRZJMS-lOV29v/items/01H273TR5BEFBW6PI3QBALGGPLNI2DFDLN/thumbnails/0/small/thumbnailContent",
+                "previewText": "",
+                "containerWebUrl": "https://contoso.sharepoint.com/sites/Mark8ProjectTeam/Shared Documents/Go to Market Plan",
+                "containerDisplayName": "Mark 8 Project Team",
+                "containerType": "Site"
             },
             "resourceReference": {
-                "webUrl": "webUrl-value",
-                "id": "id-value",
-                "type": "type-value"
+                "webUrl": "https://contoso.sharepoint.com/sites/Mark8ProjectTeam/Shared%20Documents/Go%20to%20Market%20Plan/LiveCaptions.gif",
+                "id": "drives/b!YyJI6koeUkKk_9mhUlBeL156zjAWENBCoXnk-bkOVozO-13bOtrhRZJMS-lOV29v/items/01H273TR5BEFBW6PI3QBALGGPLNI2DFDLN",
+                "type": "microsoft.graph.driveItem"
             }
         }
     ]

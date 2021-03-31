@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1ac3da078fb83ad48c19aabb7d3c3b07c0d78f86
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3629a76d45585f6f09ba0c89fbdb1c978f83ba1f
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129217"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473281"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -135,6 +135,7 @@ Content-length: 1044
     },
     "passwordCredentials": [],
     "requiredResourceAccess": [],
+    "uniqueName": null,
     "web": {
         "redirectUris": [],
         "homePageUrl": null,
