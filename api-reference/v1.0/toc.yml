@@ -352,7 +352,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: Notes
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1082,7 +1082,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -4374,8 +4374,36 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: 更新
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
-      - name: 治理
+      - name: 管控
         items:
+          - name: 许可请求
+            href: resources/consentrequests-root.md
+            items:
+              - name: 管理员同意请求策略
+                href: resources/adminconsentrequestpolicy.md
+                items:
+                  - name: 获取
+                    href: api/adminconsentrequestpolicy-get.md
+                  - name: 更新
+                    href: api/adminconsentrequestpolicy-update.md
+              - name: 应用同意请求
+                href: resources/appconsentrequest.md
+                items:
+                  - name: 列表
+                    href: api/appconsentrequest-list.md
+                  - name: 获取
+                    href: api/appconsentrequest-get.md
+                  - name: 按当前用户筛选
+                    href: api/appconsentrequest-filterByCurrentUser.md
+              - name: 用户同意请求
+                href: resources/userconsentrequest.md
+                items:
+                  - name: 列表
+                    href: api/userconsentrequest-list.md
+                  - name: 获取
+                    href: api/userconsentrequest-get.md
+                  - name: 按当前用户筛选
+                    href: api/userconsentrequest-filterByCurrentUser.md
           - name: 使用条款
             href: resources/agreement.md
             items:
@@ -4458,7 +4486,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -4729,7 +4757,7 @@ items:
                 href: api/contact-delta.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -5410,7 +5438,15 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
                     href: api/chat-delete-installedapps.md
-          - name: Tab
+          - name: 活动源
+            items:
+              - name: 在聊天中向用户发送通知
+                href: api/chat-sendactivitynotification.md
+              - name: 向团队中的用户发送通知
+                href: api/team-sendactivitynotification.md
+              - name: 向用户发送通知
+                href: api/userteamwork-sendactivitynotification.md
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
