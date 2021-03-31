@@ -1,51 +1,51 @@
 ---
 title: resourceData 资源类型
-description: 表示附加到发送到订阅服务器的更改通知的资源数据。
+description: 表示附加到发送给订阅者更改通知的数据源。
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
-ms.prod: non-product-specific
-ms.openlocfilehash: 94af6ae2c8ed1cfa9ec9c66502d48b5eabcb482f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: change-notifications
+ms.openlocfilehash: b2ddfd62a797cbf5674f522d6fa3c93eca528c30
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087633"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469365"
 ---
-# <a name="resourcedata-resource-type"></a><span data-ttu-id="63273-103">resourceData 资源类型</span><span class="sxs-lookup"><span data-stu-id="63273-103">resourceData resource type</span></span>
+# <a name="resourcedata-resource-type"></a><span data-ttu-id="bc684-103">resourceData 资源类型</span><span class="sxs-lookup"><span data-stu-id="bc684-103">resourceData resource type</span></span>
 
-<span data-ttu-id="63273-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="63273-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bc684-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bc684-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="63273-105">表示附加到发送到订阅服务器的更改通知的资源数据。</span><span class="sxs-lookup"><span data-stu-id="63273-105">Represents the resouce data attached to the change notification sent to the subscriber.</span></span>
+<span data-ttu-id="bc684-105">表示附加到发送给订阅者更改通知的数据源。</span><span class="sxs-lookup"><span data-stu-id="bc684-105">Represents the resouce data attached to the change notification sent to the subscriber.</span></span>
 
-<span data-ttu-id="63273-106">有关详细信息，请参阅 [使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。</span><span class="sxs-lookup"><span data-stu-id="63273-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
+<span data-ttu-id="bc684-106">有关详细信息，请参阅 [Microsoft Graph API 通过更改通知](webhooks.md)。</span><span class="sxs-lookup"><span data-stu-id="bc684-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="63273-107">方法</span><span class="sxs-lookup"><span data-stu-id="63273-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="bc684-107">方法</span><span class="sxs-lookup"><span data-stu-id="bc684-107">Methods</span></span>
 
-<span data-ttu-id="63273-108">无。</span><span class="sxs-lookup"><span data-stu-id="63273-108">None.</span></span>
+<span data-ttu-id="bc684-108">无。</span><span class="sxs-lookup"><span data-stu-id="bc684-108">None.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="63273-109">属性</span><span class="sxs-lookup"><span data-stu-id="63273-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bc684-109">属性</span><span class="sxs-lookup"><span data-stu-id="bc684-109">Properties</span></span>
 
-<span data-ttu-id="63273-110">对于 Outlook 资源， **resourceData** 包含以下字段：</span><span class="sxs-lookup"><span data-stu-id="63273-110">For Outlook resources, **resourceData** contains the following fields:</span></span>
+<span data-ttu-id="bc684-110">对于 Outlook 资源 **，resourceData** 包含以下字段：</span><span class="sxs-lookup"><span data-stu-id="bc684-110">For Outlook resources, **resourceData** contains the following fields:</span></span>
 
-| <span data-ttu-id="63273-111">属性</span><span class="sxs-lookup"><span data-stu-id="63273-111">Property</span></span> | <span data-ttu-id="63273-112">类型</span><span class="sxs-lookup"><span data-stu-id="63273-112">Type</span></span> | <span data-ttu-id="63273-113">说明</span><span class="sxs-lookup"><span data-stu-id="63273-113">Description</span></span> |
+| <span data-ttu-id="bc684-111">属性</span><span class="sxs-lookup"><span data-stu-id="bc684-111">Property</span></span> | <span data-ttu-id="bc684-112">类型</span><span class="sxs-lookup"><span data-stu-id="bc684-112">Type</span></span> | <span data-ttu-id="bc684-113">说明</span><span class="sxs-lookup"><span data-stu-id="bc684-113">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="63273-114">@odata.type</span><span class="sxs-lookup"><span data-stu-id="63273-114">@odata.type</span></span> | <span data-ttu-id="63273-115">string</span><span class="sxs-lookup"><span data-stu-id="63273-115">string</span></span> | <span data-ttu-id="63273-116">Microsoft Graph 中描述所表示对象的 OData 实体类型。</span><span class="sxs-lookup"><span data-stu-id="63273-116">The OData entity type in Microsoft Graph that describes the represented object.</span></span> |
-| <span data-ttu-id="63273-117">@odata.id</span><span class="sxs-lookup"><span data-stu-id="63273-117">@odata.id</span></span> | <span data-ttu-id="63273-118">string</span><span class="sxs-lookup"><span data-stu-id="63273-118">string</span></span> | <span data-ttu-id="63273-119">对象的 OData 标识符。</span><span class="sxs-lookup"><span data-stu-id="63273-119">The OData identifier of the object.</span></span> |
-| <span data-ttu-id="63273-120">@odata.etag</span><span class="sxs-lookup"><span data-stu-id="63273-120">@odata.etag</span></span> | <span data-ttu-id="63273-121">string</span><span class="sxs-lookup"><span data-stu-id="63273-121">string</span></span> | <span data-ttu-id="63273-122">表示对象版本的 HTTP 实体标记。</span><span class="sxs-lookup"><span data-stu-id="63273-122">The HTTP entity tag that represents the version of the object.</span></span> |
-| <span data-ttu-id="63273-123">id</span><span class="sxs-lookup"><span data-stu-id="63273-123">id</span></span> | <span data-ttu-id="63273-124">string</span><span class="sxs-lookup"><span data-stu-id="63273-124">string</span></span> | <span data-ttu-id="63273-125">对象的标识符。</span><span class="sxs-lookup"><span data-stu-id="63273-125">The identifier of the object.</span></span> |
+| <span data-ttu-id="bc684-114">@odata.type</span><span class="sxs-lookup"><span data-stu-id="bc684-114">@odata.type</span></span> | <span data-ttu-id="bc684-115">string</span><span class="sxs-lookup"><span data-stu-id="bc684-115">string</span></span> | <span data-ttu-id="bc684-116">Microsoft Graph 中描述所表示对象的 OData 实体类型。</span><span class="sxs-lookup"><span data-stu-id="bc684-116">The OData entity type in Microsoft Graph that describes the represented object.</span></span> |
+| <span data-ttu-id="bc684-117">@odata.id</span><span class="sxs-lookup"><span data-stu-id="bc684-117">@odata.id</span></span> | <span data-ttu-id="bc684-118">string</span><span class="sxs-lookup"><span data-stu-id="bc684-118">string</span></span> | <span data-ttu-id="bc684-119">对象的 OData 标识符。</span><span class="sxs-lookup"><span data-stu-id="bc684-119">The OData identifier of the object.</span></span> |
+| <span data-ttu-id="bc684-120">@odata.etag</span><span class="sxs-lookup"><span data-stu-id="bc684-120">@odata.etag</span></span> | <span data-ttu-id="bc684-121">string</span><span class="sxs-lookup"><span data-stu-id="bc684-121">string</span></span> | <span data-ttu-id="bc684-122">表示对象版本的 HTTP 实体标记。</span><span class="sxs-lookup"><span data-stu-id="bc684-122">The HTTP entity tag that represents the version of the object.</span></span> |
+| <span data-ttu-id="bc684-123">id</span><span class="sxs-lookup"><span data-stu-id="bc684-123">id</span></span> | <span data-ttu-id="bc684-124">string</span><span class="sxs-lookup"><span data-stu-id="bc684-124">string</span></span> | <span data-ttu-id="bc684-125">对象的标识符。</span><span class="sxs-lookup"><span data-stu-id="bc684-125">The identifier of the object.</span></span> |
 
-> <span data-ttu-id="63273-126">**注意：**`id` **ResourceData**中提供的值在生成更改通知时有效。</span><span class="sxs-lookup"><span data-stu-id="63273-126">**Note:** The `id` value provided in **resourceData** is valid at the time the change notification was generated.</span></span> <span data-ttu-id="63273-127">某些操作（如将邮件移动到另一个文件夹）可能会导致在 `id` 处理更改通知时不再有效。</span><span class="sxs-lookup"><span data-stu-id="63273-127">Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.</span></span>
+> <span data-ttu-id="bc684-126">**注意：**`id` **resourceData 中提供的值** 在生成更改通知时有效。</span><span class="sxs-lookup"><span data-stu-id="bc684-126">**Note:** The `id` value provided in **resourceData** is valid at the time the change notification was generated.</span></span> <span data-ttu-id="bc684-127">某些操作（如将邮件移动到另一个文件夹）可能会导致处理更改通知时不再 `id` 有效。</span><span class="sxs-lookup"><span data-stu-id="bc684-127">Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="63273-128">关系</span><span class="sxs-lookup"><span data-stu-id="63273-128">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="bc684-128">关系</span><span class="sxs-lookup"><span data-stu-id="bc684-128">Relationships</span></span>
 
-<span data-ttu-id="63273-129">无。</span><span class="sxs-lookup"><span data-stu-id="63273-129">None.</span></span>
+<span data-ttu-id="bc684-129">无。</span><span class="sxs-lookup"><span data-stu-id="bc684-129">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="63273-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="63273-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bc684-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bc684-130">JSON representation</span></span>
 
-<span data-ttu-id="63273-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="63273-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bc684-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bc684-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
