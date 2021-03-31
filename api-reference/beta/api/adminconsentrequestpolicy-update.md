@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3fcd6bb895a4f1cb36f099269c8414669dc98620
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 5efe85f8d78e11ea5c97799c426bba383300c24a
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201455"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468917"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>更新 adminConsentRequestPolicy
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "51201455"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Policy.ReadWrite.ConsentRequest|
+|委派（工作或学校帐户）|Policy.ReadWrite.ConsentRequest、Directory.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Policy.ReadWrite.ConsentRequest|
+|Application|Policy.ReadWrite.ConsentRequest、Directory.ReadWrite.All|
 
 代表用户进行呼叫时，用户需要属于全局 [管理员](/azure/active-directory/roles/permissions-reference) 目录角色。
 
@@ -54,8 +54,8 @@ PUT /policies/adminConsentRequestPolicy
 |属性|类型|说明|
 |:---|:---|:---|
 |isEnabled|Boolean|指定是启用还是禁用管理员同意请求功能。|
-|notifyReviewers|布尔值|指定审阅者是否将收到通知。|
-|remindersEnabled|布尔值|指定审阅者是否将收到提醒电子邮件。|
+|notifyReviewers|Boolean|指定审阅者是否将收到通知。|
+|remindersEnabled|Boolean|指定审阅者是否将收到提醒电子邮件。|
 |requestDurationInDays|Int32|指定请求在未应用决策时自动过期之前处于活动状态的持续时间。|
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|管理员同意的审阅者列表。|
 

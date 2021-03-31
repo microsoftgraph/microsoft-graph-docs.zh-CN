@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 24007ed4c2dee776babc58a3d5f09b560765b855
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 786c8e5e51fd8c36c82dd0737b53088b0771dc56
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954214"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468889"
 ---
 # <a name="remove-owner"></a>删除所有者
 
@@ -18,7 +18,7 @@ ms.locfileid: "48954214"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 可以通过 owners 导航属性从 Microsoft 365 组、安全组或启用邮件的安全组中删除所有者。
+使用此 API 可以通过 owners 导航属性从 Microsoft 365 组、安全组或启用邮件的安全组中删除所有者。 将所有者分配给组时，无法删除组的最后一个所有者。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,9 +78,9 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
 
 在请求中，指定要在 $ref 段后删除的 directory 对象 `id`。
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

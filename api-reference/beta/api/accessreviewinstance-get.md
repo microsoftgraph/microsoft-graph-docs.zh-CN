@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5f475f966d3ddc8539431c76fc613e3d6e0044e4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5f06848a6f1e77d97d7716b1d62a288368047c57
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439191"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468945"
 ---
 # <a name="get-accessreviewinstance"></a>获取 accessReviewInstance
 
@@ -22,7 +22,7 @@ ms.locfileid: "50439191"
 
 若要检索有关实例的决策，请使用 [List accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -31,7 +31,7 @@ ms.locfileid: "50439191"
 |委派（个人 Microsoft 帐户）|不支持。|
 |Application                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
-为了调用此 API，已登录用户还必须是允许他们阅读访问评审的目录角色，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色 [和权限要求](../resources/accessreviewsv2-root.md)。
+为了调用此 API，已登录用户还必须位于允许他们阅读访问评审的目录角色中，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-root.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,37 +45,18 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
 
-
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessReviewInstance"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/12490cdb-6a18-4c08-ba2c-44442f0a0138
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/6af553ce-104d-4842-ab5f-67d7b556e9dd/instances/9ea56d3c-8746-4cdf-9ccc-c7fe1a267c24
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviewinstance-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreviewinstance-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreviewinstance-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewinstance-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -92,13 +73,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "12490cdb-6a18-4c08-ba2c-44442f0a0138",
-    "startDateTime": "2020-09-21T20:03:36Z",
-    "endDateTime": "2020-09-23T20:03:36Z",
-    "status": "NotStarted",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('6af553ce-104d-4842-ab5f-67d7b556e9dd')/instances/$entity",
+    "id": "9ea56d3c-8746-4cdf-9ccc-c7fe1a267c24",
+    "startDateTime": "2021-03-11T16:44:59.337Z",
+    "endDateTime": "2021-06-09T16:44:59.337Z",
+    "status": "InProgress",
     "scope": {
-        "query": "/groups/b7a4444b-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-        "queryType": "MicrosoftGraph"
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/v1.0/groups/97eebd44-61fd-4d42-8b2a-a4de41b6c572/transitiveMembers",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
     }
 }
 ```

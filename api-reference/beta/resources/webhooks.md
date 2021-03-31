@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph API 获取更改通知
-description: Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端。 客户端是一个 Web 服务，用于配置自身的 URL 以接收通知。 客户端应用使用通知在更改时更新其状态。 有关详细信息（包括如何订阅和处理传入通知），请参阅“设置用户数据更改的通知”。
+description: 向客户端传递更改通知。
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: conceptualPageType
-ms.prod: ''
-ms.openlocfilehash: 27a67797830513a951c778e994bc8033ddab5bea
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.prod: change-notifications
+ms.openlocfilehash: 941189d27c01222309a8011fe7701d811ac46a7c
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51030993"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468682"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -24,8 +24,8 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 
 | **资源** | **支持的资源路径** | **可包含在通知中的资源数据**                  |
 |:----------------|:------------|:-----------------------------------------|
-| 云打印 [打印机][] | 打印作业准备好下载作业时更改 (JobFetchable 事件) ：<br>`/print/printers/{id}/jobs` | 否 |
-| 云打印 [printTaskDefinition][] | 当队列中存在有效作业时 (JobStarted 事件) ：<br>`/print/printtaskdefinition/{id}/tasks` | 否 |
+| 云打印 [打印机][] | 打印作业准备好下载时的变化（作业可打印事件）：<br>`/print/printers/{id}/jobs` | 不支持 |
+| 云打印 [printTaskDefinition][] | 在队列中具有有效作业时的变化（作业启动事件）：<br>`/print/printtaskdefinition/{id}/tasks` | 否 |
 | OneDrive for Business 上的 [driveItem][] | 对 _根文件夹_ 的层次结构内的内容更改：<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | 否 |
 | OneDrive（个人版）上的 [driveItem][] | 对 _任何文件夹_ 的层次结构内的内容更改：<br>`/users/{id}/drive/root` | 否 |
 | [组][] | 对所有组更改：<br>`/groups` <br>对特定组更改：<br>`/groups/{id}`<br>对特定组的所有者所做的更改：<br>`/groups/{id}/owners`<br>对特定组成员所做的更改：<br>`/groups/{id}/members` | 否 |
@@ -52,7 +52,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | 委派 - 工作或学校帐户     | [alert][]、 [contact][]、 [conversation][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [presence][]、 [chatMessage][] (preview) ， [todoTask][] |
 | 委派 - 个人 Microsoft 帐户 | [contact][]、 [driveItem][]、 [list][]、 [event][]、 [message][]、[todoTask][]                                     |
-| 应用程序                            | [alert][]、 [contact][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [callRecord][]、 [chatMessage][]、 [printer][]、 [printTaskDefinition][]|
+| Application                            | [alert][]、 [contact][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [callRecord][]、 [chatMessage][]、 [printer][]、 [printTaskDefinition][]|
 
 ## <a name="see-also"></a>另请参阅
 

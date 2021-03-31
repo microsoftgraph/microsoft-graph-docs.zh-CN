@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3c50b0a3197e682d00688ab8ec3527ed279aefa8
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 458c2b977f9c5f488b3a7b31d599b0c398993cfa
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201460"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468924"
 ---
 # <a name="get-adminconsentrequestpolicy"></a>获取 adminConsentRequestPolicy
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "51201460"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.ConsentRequest|
+|委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.ConsentRequest、Directory.Read.All、Directory.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Policy.Read.All、Policy.ReadWrite.ConsentRequest|
+|Application|Policy.Read.All、Policy.ReadWrite.ConsentRequest、Directory.Read.All、Directory.ReadWrite.All|
 
 代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员

@@ -3,14 +3,14 @@ title: 获取 locatedRiskEvent
 description: 检索 locatedriskevent 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: davidmu1
-ms.openlocfilehash: bf1f17524609e7a94e019019db37ebb9d45d91a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-access
+author: cloudhandler
+ms.openlocfilehash: b366859d98ece78e8a8af3742bb82612a1fd413d
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053676"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469190"
 ---
 # <a name="get-locatedriskevent"></a>获取 locatedRiskEvent
 
@@ -26,7 +26,7 @@ ms.locfileid: "48053676"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskEvent.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskEvent.Read.All |
+|Application | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /locatedRiskEvents/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [locatedRiskEvent](../resources/locatedriskevent.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [locatedRiskEvent](../resources/locatedriskevent.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

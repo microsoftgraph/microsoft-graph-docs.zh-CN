@@ -5,12 +5,12 @@ description: 更新网站、列表或内容类型列
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 90f9330fd5cb934ec5cead04cfcc245d46b172df
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0a18f128b92496fa956600557a4a8923efc8d117
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952230"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468906"
 ---
 # <a name="update-columndefinition"></a>更新 columnDefinition
 命名空间：microsoft.graph
@@ -29,7 +29,7 @@ ms.locfileid: "50952230"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.Manage.All、Sites.FullControl.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | Sites.Manage.All、Sites.FullControl.All |
+|Application | Sites.Manage.All、Sites.FullControl.All |
 
   
 
@@ -136,7 +136,6 @@ Content-type: application/json
     "maxLength": 255
   }
 }
-
 ```
 
   

@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: af2f3b0512ead453413a4fd65aa3337c7d9b2cd0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8ef2e48900484c32669a56c15b88de87dc4710d3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952821"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469051"
 ---
 # <a name="accessreviewinstance-resource-type"></a>accessReviewInstance 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50952821"
 
 每个 **accessReviewInstance** 都包含审阅 [](accessreviewinstancedecisionitem.md)者可以采取措施的决策列表。 每个正在审阅的身份有一个决策。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -35,8 +35,7 @@ ms.locfileid: "50952821"
 |[停止访问ReviewInstance](../api/accessreviewinstance-stop.md) | 无。 | 手动停止 accessReviewInstance。 |
 |[接受建议](../api/accessreviewinstance-acceptrecommendations.md) | 无。 | 允许调用用户接受他们作为特定 accessReviewInstance 审阅者的每个 NotReviewed accessReviewInstanceDecisionItem 的决策建议。 |
 |[应用决策](../api/accessreviewinstance-applydecisions.md) | 无。 | 手动对 accessReviewInstance 应用决策。 |
-
-
+|[批处理记录决策](../api/accessreviewinstance-batchrecorddecisions.md)|无|在一次调用中查看主体或资源的批次。|
 
 ## <a name="properties"></a>属性
 | 属性 | 类型 | 说明 |

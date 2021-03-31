@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e5d9b64faafb7dfe4ec4e6f3487643e62885236a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 968af49a9033ea749522132204d63b4f55ba25c7
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952814"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469239"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem 资源类型
 
@@ -20,9 +20,12 @@ ms.locfileid: "50952814"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
+>[!NOTE]
+>属性 `target` 将在 v1.0 中弃用，并替换为 属性 `principal` 和 `resource` 。
+
 表示有关审阅 [实例](accessreviewsv2-root.md) 的 Azure AD 访问评审决定。 此决定表示确定用户或服务主体对给定访问评审实例 [的访问权限](accessreviewinstance.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -44,6 +47,8 @@ ms.locfileid: "50952814"
 | applyResult | String | 应用决策的结果。 可能的值 `NotApplied` `Success` `Failed` ：、、、 `NotFound` 或 `NotSupported` 。 |
 | 建议 | String | 针对审批决策的系统生成的建议。 可能的值 `Approve` ：、 `Deny` 或 `NotAvailable` 。  |
 | target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | 此特定决策的目标。 决策目标可以是不同类型的 ，每个类型都有其自己的特定属性。 请参阅 [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)。 |
+|principal|[identity](../resources/identity.md)|访问评审中的每个决策项表示主体对资源的访问权限。 此属性表示主体的详细信息。 例如，如果某个决策项表示用户"Bob"对组"Sales"的访问权限 - 主体为"Bob"，资源为"Sales"。 主体可以是两种类型 - userIdentity 和 servicePrincipalIdentity。|
+|resource|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|访问评审中的每个决策项表示主体对资源的访问权限。 此属性表示资源的详细信息。 例如，如果决策项表示用户"Bob"对组"销售"的访问权限 - 主体为 Bob，资源为"Sales"。 资源可以是多种类型的。 请参阅 [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|
 
 ## <a name="relationships"></a>关系
 
@@ -66,23 +71,29 @@ ms.locfileid: "50952814"
 
 ```json
 {
- "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
- "id": "string (identifier)",
- "accessReviewId": "string",
- "reviewedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
- },
- "reviewedDateTime": "string (timestamp)",
- "decision": "string",
- "justification": "string",
- "appliedBy": {
+  "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
+  "id": "String (identifier)",
+  "accessReviewId": "String",
+  "reviewedBy": {
     "@odata.type": "microsoft.graph.userIdentity"
   },
- "appliedDateTime": "DateTimeOffset",
- "applyResult": "string",
- "recommendation": "string",
- "target": {
+  "reviewedDateTime": "String (timestamp)",
+  "decision": "String",
+  "justification": "String",
+  "appliedBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  },
+  "appliedDateTime": "String (timestamp)",
+  "applyResult": "String",
+  "recommendation": "String",
+  "target": {
     "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemTarget"
+  },
+  "principal": {
+    "@odata.type": "microsoft.graph.identity"
+  },
+  "resource": {
+    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
   }
 }
 ```

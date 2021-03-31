@@ -4,13 +4,13 @@ description: '**用户** 实体和 组织 实体的 provisionedPlans 属性都�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: directory-management
-author: davidmu1
-ms.openlocfilehash: cbaa0c81a525c62bc86d21d4a1a01262ce76f847
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: Jumaodhiss
+ms.openlocfilehash: 1fed61db1de92ba330d233725774e4978abe72ff
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135380"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469435"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan 资源类型
 

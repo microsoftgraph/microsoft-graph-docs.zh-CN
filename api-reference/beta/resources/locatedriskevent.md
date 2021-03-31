@@ -1,16 +1,16 @@
 ---
 title: locatedRiskEvent 资源类型
-description: 基于位置数据的 Azure Active Directory 标识保护检测到的风险事件。 找到的风险事件类型包括：
+description: Azure Active Directory Identity Protection 根据位置数据检测到的风险事件。 定位的风险事件类型包括：
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 461f20233e92edca48b9dd51fa417b33ab9f386c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 902dc864ea16bd677d0499711faa078131ca015d
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404670"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469456"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48404670"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-基于位置数据的 [Azure Active Directory 标识保护](/azure/active-directory/identity-protection/overview-identity-protection) 检测到的风险事件。 找到的风险事件类型包括：
-* [来自匿名 IP 地址的登录](anonymousipriskevent.md)
-* [来自受恶意软件感染的设备的登录](malwareriskevent.md)
-* [无法移动到非常规位置](impossibletravelriskevent.md)
-* [来自可疑 IP 地址的登录](suspiciousipriskevent.md)
-* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md) 有关风险事件的完整信息，请参阅 [AZURE AD Identity Protection 文档](/azure/active-directory/identity-protection/overview-identity-protection)。
+Azure [Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) 根据位置数据检测到的风险事件。 定位的风险事件类型包括：
+* [从匿名 IP 地址登录](anonymousipriskevent.md)
+* [来自感染了恶意软件的设备登录](malwareriskevent.md)
+* [不可能到达非典型位置](impossibletravelriskevent.md)
+* [从可疑 IP 地址登录](suspiciousipriskevent.md)
+* [从不熟悉的位置登录](unfamiliarlocationriskevent.md) 有关风险事件的完整信息，请参阅 [Azure AD Identity Protection 文档](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 
 ## <a name="methods"></a>方法
@@ -36,22 +36,22 @@ ms.locfileid: "48404670"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
-|createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
+|createdDateTime|dateTimeOffset| 创建风险事件的日期和时间。 这始终大于或等于风险事件本身的 datetime。 这是在查询风险事件时用作筛选器的正确属性。|
 |id|string| 只读|
 |ipAddress|string| 登录的 IP 地址|
-|location|string| 连接到登录 IP 地址的位置|
-|riskEventDateTime|dateTimeOffset| 风险事件发生的日期和时间|
+|location|string| 附加到登录 IP 地址的位置|
+|riskEventDateTime|dateTimeOffset| 发生风险事件的日期和时间|
 |riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
-|riskEventType|string| 风险的类型|
-|userDisplayName|string| 具有风险的用户的名称|
-|userId|string| 用户面临风险的 id|
-|userPrincipalName|string| 用户面临风险的用户主体名称|
+|riskEventType|string| 风险类型|
+|userDisplayName|string| 处于风险中的用户的名称|
+|userId|string| 处于风险中的用户的 ID|
+|userPrincipalName|string| 处于风险中的用户的用户主体名称|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[用户](user.md)| 只读。可为空。|
+|impactedUser|[user](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

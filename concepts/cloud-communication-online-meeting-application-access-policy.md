@@ -4,12 +4,12 @@ description: 了解如何配置应用程序以代表用户访问联机会议。
 author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 23f46fec732895d33b2caa08c51493e9b5999b29
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f80db867829ac2bead2671c0ed6bc184e0e786f
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961837"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468959"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问联机会议
 
@@ -23,7 +23,7 @@ ms.locfileid: "50961837"
 
 要配置应用程序访问策略并允许应用程序访问具有应用程序权限的联机会议，请执行：
 
-1. 确定应用的应用 (客户端) ID 以及将授权应用访问联机会议的用户的用户 ID。
+1. 标识应用的应用程序 (客户端) ID 以及将授权应用访问联机会议的用户的用户 ID。
 
     - 在 [Azure 应用注册门户](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)中标识应用的应用程序（客户端）ID。
     - 在 Azure 用户管理门户 (用户) 标识 [用户对象 ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)

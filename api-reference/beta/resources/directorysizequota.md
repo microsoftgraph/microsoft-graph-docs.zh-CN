@@ -4,13 +4,13 @@ description: 表示公司使用的目录配额和总目录配额。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: directory-management
-author: davidmu1
-ms.openlocfilehash: 3af82a957e152f0edf4d87e6fdf9a7888d4b64e4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: Jumaodhiss
+ms.openlocfilehash: 54e2280fdb416e5ccfd0853ee77a2ef3f90ddf37
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133985"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469372"
 ---
 # <a name="directorysizequota-resource-type"></a>directorySizeQuota 资源类型
 

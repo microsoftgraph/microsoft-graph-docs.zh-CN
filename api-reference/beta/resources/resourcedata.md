@@ -1,16 +1,16 @@
 ---
 title: resourceData 资源类型
-description: 表示附加到发送到订阅服务器的更改通知的资源数据。
+description: 表示附加到发送给订阅者更改通知的数据源。
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
-ms.prod: non-product-specific
-ms.openlocfilehash: 94af6ae2c8ed1cfa9ec9c66502d48b5eabcb482f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: change-notifications
+ms.openlocfilehash: b2ddfd62a797cbf5674f522d6fa3c93eca528c30
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087633"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469365"
 ---
 # <a name="resourcedata-resource-type"></a>resourceData 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "48087633"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示附加到发送到订阅服务器的更改通知的资源数据。
+表示附加到发送给订阅者更改通知的数据源。
 
-有关详细信息，请参阅 [使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。
+有关详细信息，请参阅 [Microsoft Graph API 通过更改通知](webhooks.md)。
 
 ## <a name="methods"></a>方法
 
@@ -28,7 +28,7 @@ ms.locfileid: "48087633"
 
 ## <a name="properties"></a>属性
 
-对于 Outlook 资源， **resourceData** 包含以下字段：
+对于 Outlook 资源 **，resourceData** 包含以下字段：
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
@@ -37,7 +37,7 @@ ms.locfileid: "48087633"
 | @odata.etag | string | 表示对象版本的 HTTP 实体标记。 |
 | id | string | 对象的标识符。 |
 
-> **注意：**`id` **ResourceData**中提供的值在生成更改通知时有效。 某些操作（如将邮件移动到另一个文件夹）可能会导致在 `id` 处理更改通知时不再有效。
+> **注意：**`id` **resourceData 中提供的值** 在生成更改通知时有效。 某些操作（如将邮件移动到另一个文件夹）可能会导致处理更改通知时不再 `id` 有效。
 
 ## <a name="relationships"></a>关系
 

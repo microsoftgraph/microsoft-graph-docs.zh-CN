@@ -3,14 +3,14 @@ title: servicePrincipal：addTokenSigningCertificate
 description: 将签名证书添加到 servicePrincipal。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 951bd3ecbc65e8778809f5fac149e1ab59a258d3
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: b14dcabb463eb3cb5d397913290b2e74ad77ac59
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202512"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469491"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal：addTokenSigningCertificate
 

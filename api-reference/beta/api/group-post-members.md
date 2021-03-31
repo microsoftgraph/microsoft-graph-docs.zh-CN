@@ -1,16 +1,16 @@
 ---
 title: 添加成员
-description: 通过 **members** 导航属性将成员添加到 Microsoft 365 组或安全组。
+description: 通过 members 导航属性向 Microsoft 365 组或安全 **组添加** 成员。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e7e214c23aab13c45abf73e1242aa64ec71bfa3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 188f93c82734c9ae9fe0986114e3c4e4d2bd1772
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964991"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468869"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -18,12 +18,14 @@ ms.locfileid: "48964991"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 **members** 导航属性将成员添加到 Microsoft 365 组或安全组。
+通过 members 导航属性向 Microsoft 365 组或安全 **组添加** 成员。
 
-您可以添加用户、服务主体或其他组。 
+可以添加用户、服务主体或其他组。 
 
 > [!Important]
-> 只能向通过云管理的安全组和 Microsoft 365 组添加用户。
+> + 只能向通过云管理的安全组和 Microsoft 365 组添加用户。
+> + 无法向 Microsoft 365 组添加安全组。
+> + 不能将 Microsoft 365 组添加到安全组或其他 Microsoft 365 组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -87,11 +89,11 @@ Content-length: 30
 
 ---
 
-在请求正文中，提供 `id` 要添加的 [directoryObject](../resources/directoryobject.md)、 [user](../resources/user.md)或 [group](../resources/group.md) 对象的 JSON 表示形式。
+在请求正文中，提供要添加的 `id` [directoryObject、user](../resources/directoryobject.md)或[](../resources/user.md)[group](../resources/group.md)对象的 JSON 表示形式。
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

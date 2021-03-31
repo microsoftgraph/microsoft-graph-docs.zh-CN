@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 155c77e5a7b7fc8c81c5595dd2d504febd14673f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 59795800be0bf7146262ec82c01265b969e194e1
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439190"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468938"
 ---
 # <a name="list-accessreviewinstance"></a>列出 accessReviewInstance
 
@@ -18,14 +18,14 @@ ms.locfileid: "50439190"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [特定 accessReviewScheduleDefinition 的 accessReviewInstance](../resources/accessreviewinstance.md) [对象](../resources/accessreviewscheduledefinition.md)。 返回零个或多个 **accessReviewInstance** 对象的列表，包括所有嵌套属性。 返回的对象不包括关联的 accessReviewInstanceDecisionItems。 若要检索有关实例的决策，请使用 [List accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md)。
+检索特定[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)的[accessReviewInstance](../resources/accessreviewinstance.md)对象。 返回零个或多个 **accessReviewInstance** 对象的列表，包括其所有嵌套属性。 返回的对象不包括关联的 accessReviewInstanceDecisionItems。 若要检索有关实例的决策，请使用 [List accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md)。
 
 >[!NOTE]
->如果返回了许多 **accessReviewInstances，** 为了提高效率并避免超时，请检索页面中的 结果集，方法为在请求中同时包括页面大小最多为 100 的 $top 查询参数和 $skip=0 查询参数。 当结果集多个页面时，Microsoft Graph 在响应中返回包含下一页结果 URL 的 @odata.nextLink 属性的页面。 如果存在该属性，请在每个响应中继续使用 @odata.nextLink URL 提出其他请求，直到返回所有结果，如应用中分页 Microsoft Graph 数据中所述。
+>如果返回了许多 **accessReviewInstances，** 为了提高效率并避免超时，请检索页面中的 结果集，方法包括页面大小最多为 100 的 $top 查询参数和请求中的 $skip=0 查询参数。 当一结果集跨多个页面时，Microsoft Graph 在响应中返回包含指向下一页结果的 URL 的 @odata.nextLink 属性的页面。 如果存在该属性，请继续在每个响应中通过 @odata.nextLink URL 提出其他请求，直到返回所有结果，如在应用中分页 Microsoft Graph 数据中所述。
 >
->如果未提供查询参数且结果超过 100 个，Microsoft Graph 将自动对结果进行分页，每页结果为 100 个。
+>如果未提供查询参数且结果超过 100 个，Microsoft Graph 将按每页 100 个结果自动对结果分页。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -33,7 +33,7 @@ ms.locfileid: "50439190"
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |Application                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
-登录用户还必须具有允许其读取访问评审的目录角色。 若要查看已登录用户分配审阅者的实例，请参阅 ["列出待处理的访问评审实例"](accessreviewinstance-pendingaccessreviewinstances.md)
+登录用户还必须具有允许其读取访问评审的目录角色。 若要查看仅向已登录用户分配审阅者的实例，请参阅列出待处理 [的访问评审实例](accessreviewinstance-pendingaccessreviewinstances.md)
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
 不提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象数组。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewInstance](../resources/accessreviewinstance.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -60,7 +60,7 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
   "name": "list_accessReviewInstance"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04f34444/instances?$top=100&$skip=0
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/8564a649-4f67-4e09-88e7-55def6530e88/instances?$top=100&$skip=0
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstance-csharp-snippets.md)]
@@ -94,25 +94,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('8564a649-4f67-4e09-88e7-55def6530e88')/instances",
+    "@odata.count": 2,
     "value": [
         {
-            "id": "12490cdb-6a18-4c08-ba2c-44442f0a0138",
-            "startDateTime": "2020-09-21T20:03:36Z",
-            "endDateTime": "2020-09-23T20:03:36Z",
-            "status": "NotStarted",
+            "id": "7bc18cf4-3d70-4009-bc8e-a7c5adb30849",
+            "startDateTime": "2021-03-09T23:10:28.83Z",
+            "endDateTime": "2021-03-09T23:10:28.83Z",
+            "status": "Applied",
             "scope": {
-                "query": "/groups/b7a04444-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-                "queryType": "MicrosoftGraph"
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/v1.0/groups/f661fdd0-f0f7-42c0-8281-e89c6527ac63/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph",
+                "queryRoot": null
             }
         },
         {
-            "id": "64444761-b89f-4d9c-afb9-fcfc8bb9cf45",
-            "startDateTime": "2020-09-14T20:03:36.74Z",
-            "endDateTime": "2020-09-16T20:03:36.74Z",
-            "status": "Completed",
+            "id": "f1f35945-3f42-4941-9f7b-465e545f6f99",
+            "startDateTime": "2021-03-09T23:10:28.83Z",
+            "endDateTime": "2021-03-09T23:10:28.83Z",
+            "status": "Applied",
             "scope": {
-                "query": "/groups/b7a04444-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-                "queryType": "MicrosoftGraph"
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/v1.0/groups/f4ac55b3-3b3c-417e-85bd-183bbda3ccf2/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph",
+                "queryRoot": null
             }
         }
     ]

@@ -3,14 +3,14 @@ author: isabelleatmsft
 ms.topic: include
 ms.date: 02/08/2021
 ms.author: isabelleatmsft
-ms.openlocfilehash: 3e58d24f35df662e98143a5f7af494b9d0d253e2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 099b7dc842ea261961ffa96fd7a139126371d2dd
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50500508"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469055"
 ---
 <!-- markdownlint-disable MD041-->
 
 >[!NOTE]
->本节中的访问评审 API 仅适用于组成员身份。 有关所有其他受支持的资源类型的访问评审，请参阅 Access [评价](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta)。
+>本节中的访问评审 API 是推荐的访问评审 API。 较旧版本 [Access 评论](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta)将弃用。
