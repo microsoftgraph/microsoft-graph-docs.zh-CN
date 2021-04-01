@@ -463,7 +463,7 @@ items:
                 href: webhooks-lifecycle.md
               - name: 与资源数据有关的通知
                 href: webhooks-with-resource-data.md
-              - name: 获取通过不同方式传送的通知（预览版）
+              - name: 获取通过不同方式传送的通知
                 href: change-notifications-delivery.md
               - name: 获取聊天和信道消息的更改通知
                 href: teams-changenotifications-chatmessage.md
