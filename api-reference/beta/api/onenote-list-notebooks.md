@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7cb6ac9d453726a8cd1b743d2fad5eb2fc4b57c0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c0de11f9c42f6204660f57dfb78f601eb612b73f
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981271"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473918"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 
@@ -96,24 +96,22 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 369
 
 {
   "value": [
     {
       "isDefault": true,
-      "userRole": {
-      },
-      "isShared": true,
-      "sectionsUrl": "sectionsUrl-value",
-      "sectionGroupsUrl": "sectionGroupsUrl-value",
+      "userRole":  "Owner",
+      "isShared": false,
+      "sectionsUrl": "https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d/sections",
+      "sectionGroupsUrl": "https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d/sectionGroups",
       "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
       "links": {
         "oneNoteClientUrl": {
-          "href": "href-value"
+          "href": "onenote:https://contoso-my.sharepoint.com/personal/admin_m365x841051_onmicrosoft_com/Documents/Notebooks/My%20Private%20notebook"
         },
         "oneNoteWebUrl": {
-          "href": "href-value"
+          "href": "https://contoso-my.sharepoint.com/personal/admin_m365x841051_onmicrosoft_com/Documents/Notebooks/My%20Private%20notebook"
         }
       }
     }

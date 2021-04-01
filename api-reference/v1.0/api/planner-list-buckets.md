@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 29be97b19257c312b9e3bb26e70e95450105a599
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 85c931fcdfe56852de06457bd9bad417f545d8a3
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941546"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473974"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
@@ -18,12 +18,12 @@ ms.locfileid: "50941546"
 
 检索 **plannerbucket** 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.Read、Tasks.ReadWrite、Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 

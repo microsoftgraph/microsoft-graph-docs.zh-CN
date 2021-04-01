@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 048936a5d1a4c2f311a8d7bea483e01486ed2afb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e05a358c49443dea5a44185b5dc38c629a3aedce
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081914"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473911"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>更新 plannerAssignedToTaskBoardTaskFormat
 
@@ -19,12 +19,12 @@ ms.locfileid: "48081914"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 **plannerAssignedToTaskBoardTaskFormat** 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.ReadWrite、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -44,12 +44,12 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于对任务板的 "分配" 视图上的任务进行排序的提示的字典。 每个条目的键是任务分配到的用户之一，值是 order 提示。 每个值的格式在 [使用 Planner 中的排序提示 ( 中定义。。/resources/planner_order_hint_format) 。|
-|unassignedOrderHint|字符串|在任务未分配给任何人时，或者如果 orderHintsByAssignee 字典没有为任务分配到的用户提供 order 提示，用于在任务板的 "分配给" 视图中对任务进行排序的提示值。 格式是在计划程序 [中使用 order 提示](../resources/planner-order-hint-format.md)定义的。|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于在任务板的 AssignedTo 视图中对任务排序的提示字典。 每个条目的键是任务分配到的用户之一，值是排序提示。 每个值的格式在 [Using order hints in Planner (. 中定义。/resources/planner_order_hint_format.md) 。|
+|unassignedOrderHint|字符串|当任务未分配给任何人，或者 orderHintsByAssignee 字典未为任务分配到的用户提供排序提示时，用于在任务板的 AssignedTo 视图中对任务排序的提示值。 格式在使用 Planner 中的 [排序提示中定义](../resources/planner-order-hint-format.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) 对象。
+如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定具有首选项的标头，则此方法在响应正文中返回 响应代码和更新的 `Prefer` `return=representation` `200 OK` [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -66,6 +66,7 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
 Content-type: application/json
 Content-length: 96
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

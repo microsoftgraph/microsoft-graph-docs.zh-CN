@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 9c0df54ed9a4d6a5079f2c6ce587793d6d8a3982
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 68733ebdea60565e7e9320510cb490233f702f10
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135938"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469407"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>向用户授予 appRoleAssignment
 
@@ -71,14 +71,13 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments
+POST https://graph.microsoft.com/v1.0/users/cde330e5-2150-4c11-9c5b-14bfdc948c79/appRoleAssignments
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "cde330e5-2150-4c11-9c5b-14bfdc948c79",
+  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
+  "appRoleId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -100,7 +99,7 @@ Content-Length: 110
 ---
 
 
-在此示例中，`{id}` 和 `{principalId-value}` 均为已分配用户的 `id`。
+请注意，本例中，请求 URL （`cde330e5-2150-4c11-9c5b-14bfdc948c79`） 中用作用户 **ID** 的值与正文中的 **principalId** 属性相同。
 
 ### <a name="response"></a>响应
 
@@ -117,16 +116,18 @@ Content-Length: 110
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('cde330e5-2150-4c11-9c5b-14bfdc948c79')/appRoleAssignments/$entity",
+  "id": "5TDjzVAhEUycWxS_3JSMeY-oHkjrWvBKi7aIZwYGQzg",
+  "deletedDateTime": null,
+  "appRoleId": "00000000-0000-0000-0000-000000000000",
+  "createdDateTime": "2021-02-15T10:31:53.5164841Z",
+  "principalDisplayName": "Megan Bowen",
+  "principalId": "cde330e5-2150-4c11-9c5b-14bfdc948c79",
+  "principalType": "User",
+  "resourceDisplayName": "dxprovisioning-graphapi-client",
+  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
 }
 ```
 

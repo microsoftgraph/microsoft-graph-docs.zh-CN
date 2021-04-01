@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f6d2816fdd5dbf308709b8a511484f523e8c72ad
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 5891897fb76a356be577f242b1ae5e7648b0e8fb
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775173"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473449"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -18,7 +18,7 @@ ms.locfileid: "50775173"
 
 将 Azure AD 应用程序库中的应用程序实例添加到目录中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "50775173"
 | :------------------------------------- | :------------------------------------------------- |
 | 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                     |
-| 应用程序                            | Application.ReadWrite.All、Directory.ReadWrite.All |
+| 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ POST /applicationTemplates/{id}/instantiate
 
 | 参数   | 类型   | 说明                    |
 | :---------- | :----- | :----------------------------- |
-| displayName | 字符串 | 应用程序的自定义名称 |
+| displayName | String | 应用程序的自定义名称 |
 
 ## <a name="response"></a>响应
 

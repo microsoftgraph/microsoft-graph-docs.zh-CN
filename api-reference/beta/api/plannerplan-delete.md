@@ -1,16 +1,16 @@
 ---
 title: 删除 plannerPlan
-description: 删除 **plannerPlan** 。
+description: 删除 **plannerPlan**。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 35e7ca76ea43c1bb3afec72001a16c233c3167c2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ece017be7a94e7f118aa04a5bd4d6dbcba010201
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978248"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473456"
 ---
 # <a name="delete-plannerplan"></a>删除 plannerPlan
 
@@ -18,13 +18,13 @@ ms.locfileid: "48978248"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 **plannerPlan** 。
+删除 **plannerPlan**。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.ReadWrite、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 99452fa19be003bbd4edf02dbb814a8f685169a9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 314d49f3325ebe6966a8a55bf9325779e91a26bd
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444764"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473722"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -80,7 +80,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2020-01-01T19
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -125,14 +125,14 @@ Content-length: 354
 {
   "value": [
     {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
+      "originalStartTimeZone": "Pacific Standard Time",
+      "originalEndTimeZone": "Pacific Standard Time",
       "responseStatus": {
-        "response": "",
+        "response": "accepted",
         "time": "2016-10-19T10:37:00Z"
       },
-      "uid": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
+      "uid": "040000008200E00074C5B7101A82E00800000000D3D70B8A6A17D70100000000000000001000000074665914A06C3F49BB4B7D7EEE4304DA",
+      "reminderMinutesBeforeStart": 15,
       "isReminderOn": true
     }
   ]

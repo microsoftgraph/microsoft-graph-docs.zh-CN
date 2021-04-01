@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bfb0b6608aabecc3584064587350ec70b5bfed65
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 0c086e8bfdb6fbbe86606e46c13ee42067388c4c
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458351"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473792"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -22,7 +22,7 @@ ms.locfileid: "48458351"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.Read、Tasks.ReadWrite、Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 

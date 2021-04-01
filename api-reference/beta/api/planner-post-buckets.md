@@ -1,16 +1,16 @@
 ---
 title: 创建 plannerBucket
-description: 使用此 API 新建 **plannerBucket** 。
+description: 使用此 API 新建 **plannerBucket**。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e8165fe654b71ad1386e50f30027b9bea942f5a0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 45745c40d28e1d9b4826178cc263af9b11bb9bed
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973767"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473666"
 ---
 # <a name="create-plannerbucket"></a>创建 plannerBucket
 
@@ -18,14 +18,14 @@ ms.locfileid: "48973767"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 新建 **plannerBucket** 。
+使用此 API 新建 **plannerBucket**。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.ReadWrite、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 

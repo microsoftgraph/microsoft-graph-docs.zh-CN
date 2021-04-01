@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 277a7d9e1c5389ecde9f49c6d367a4589f37b591
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: e11593b968976792fe65eb1e38d2a7572df3f801
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516719"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473652"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -22,9 +22,9 @@ ms.locfileid: "50516719"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
-|应用程序 | Calendars.Read、Calendars.ReadWrite |
+|委派（工作或学校帐户） | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|委派（个人 Microsoft 帐户） | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

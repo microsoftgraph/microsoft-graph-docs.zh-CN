@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a1a4aa0a3a2d588c8bc9a744f59b789eb3796097
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: e0443b62e67e0fce72f0000592e2b8d7c959abd8
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760909"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473673"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -66,34 +66,14 @@ GET /users/{id | userPrincipalName}/oauth2PermissionGrants
 
 下面是一个请求示例。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_oAuth2PermissionGrants"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/oauth2PermissionGrants
+GET https://graph.microsoft.com/beta/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/oauth2PermissionGrants
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-oauth2permissiongrants-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-oauth2permissiongrants-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-user-oauth2permissiongrants-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-user-oauth2permissiongrants-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 
@@ -111,19 +91,18 @@ GET https://graph.microsoft.com/beta/users/{id}/oauth2PermissionGrants
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 253
 
 {
   "value": [
     {
-      "id": "id-value",
-      "clientId": "clientId-value",
-      "consentType": "consentType-value",
-      "principalId": "principalId-value",
-      "resourceId": "resourceId-value",
-      "scope": "scope-value",
-      "startTime": "datetime-value",
-      "expiryTime": "datetime-value"
+      "clientId": "85477313-ea43-4c7d-b8a4-54fed35d0b60",
+      "consentType": "Principal",
+      "expiryTime": "2021-09-19T07:06:52.6843299Z",
+      "id": "E3NHhUPqfUy4pFT-010LYFo5-ycA-_5Fhl7nHbaJ7qACy1R9o6oWQJ-cpLSUIt2b",
+      "principalId": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
+      "resourceId": "27fb395a-fb00-45fe-865e-e71db689eea0",
+      "scope": " Contacts.ReadWrite openid profile",
+      "startTime": "0001-01-01T00:00:00Z"
     }
   ]
 }

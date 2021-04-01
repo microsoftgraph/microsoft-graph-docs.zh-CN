@@ -1,8 +1,17 @@
 ---
-title： "Create subscription" description： "Subscribes a listener application to receive change notifications when data on the Microsoft Graph changes."
-localization_priority： Priority author： "Jumaodhiss" ms.prod： ""change-notifications" doc_type： apiPageType
+title: 创建订阅
+description: 订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收更改通知。
+localization_priority: Priority
+author: Jumaodhiss
+ms.prod: change-notifications
+doc_type: apiPageType
+ms.openlocfilehash: 5d0a5afd29b799e51662ceba23c5ee415aa69689
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468833"
 ---
-
 # <a name="create-subscription"></a>创建订阅
 
 命名空间：microsoft.graph
@@ -32,7 +41,7 @@ localization_priority： Priority author： "Jumaodhiss" ms.prod： ""change-not
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
-|[打印机](../resources/printer.md) | 不支持 | 不支持 | Printer.Read.All、Printer.ReadWrite.All |
+|[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |

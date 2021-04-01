@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 4dd92cac34386a99dee784177e91c9f9e6e4893f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 136ec05c83d260388fc967b99aea951537987019
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943662"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473435"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -120,7 +120,7 @@ ms.locfileid: "50943662"
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|有关 saml 单一登录的设置的集合。|
 |servicePrincipalNames|字符串集合|包含从关联的 [应用程序](application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>需要多值属性筛选器表达式的 any 运算符。 不可为 null。|
 |servicePrincipalType|String|标识服务主体是表示应用程序还是托管标识。 这是由 Azure AD 内部设置的。 对于表示 [应用程序](./application.md)的服务主体，此选项设置为“__Application__”。 对于表示 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，此选项设置为“__ManagedIdentity__”。|
-|signInAudience|String| 指定关联应用程序支持的 Microsoft 帐户。 只读。|
+| signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 只读。 <br><br>支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（多租户）中拥有 Microsoft 工作或学校帐户的用户。</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li><li>`PersonalMicrosoftAccount`：仅限拥有个人 Microsoft 帐户的用户。</li></ul> |
 |tags|字符串集合| 可用于分类和标识服务主体的自定义字符串。 不可为 null。 |
 |tokenEncryptionKeyId|String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定该服务主体代表的应用程序的已验证发布者。|

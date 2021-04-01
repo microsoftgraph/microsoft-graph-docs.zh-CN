@@ -5,19 +5,19 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 98a8b0b85577a4843664e7440978837563f44e23
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 6908e6d8667157de28a678f657827210abcf320d
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176733"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473610"
 ---
 # <a name="update-permission"></a>更新权限
 命名空间：microsoft.graph
 
 更新 [网站上](../resources/permission.md) 的权限对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）
@@ -43,11 +43,11 @@ PATCH /sites/{sitesId}/permissions/{permissionId}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供权限对象的 JSON [表示](../resources/permission.md) 形式。
+在请求正文中，提供 permission 对象的 JSON [表示](../resources/permission.md) 形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/permission.md)和权限对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/permission.md) 代码和 permission 对象。
 
 ## <a name="examples"></a>示例
 
@@ -105,7 +105,7 @@ Content-Type: application/json
     "grantedToIdentities": [{
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Bar App"
+        "displayName": "Fabrikam Dashboard App"
       }
     }]
 }

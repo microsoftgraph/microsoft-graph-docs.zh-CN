@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f56bab29e538afd8841ddd86a57b6a5456b969d8
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: a12e055c4972f7064cdf91239502b7bb54e5c787
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883198"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473813"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
 
@@ -20,13 +20,13 @@ ms.locfileid: "49883198"
 
 创建新的 **plannerPlan**。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | Group.ReadWrite.All                         |
+| 委派（工作或学校帐户）     | Tasks.ReadWrite、Group.ReadWrite.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | 不支持。                              |
 
@@ -47,9 +47,9 @@ POST /planner/plans
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。
-必须 **设置 plannerPlan** 容器属性。
+**必须设置 plannerPlan** 容器属性。
 
->**注意：** 如果容器是 Microsoft 365 组，则创建计划的用户必须是将包含计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
+>**注意：** 如果容器是 Microsoft 365 组，则创建计划的用户必须是将包含该计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
 
 ## <a name="response"></a>响应
 

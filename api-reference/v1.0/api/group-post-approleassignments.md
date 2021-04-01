@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: e17f94e0b1d62015bfbff8d849c4d205a48cba2a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d574b638d190b1d63cc7fd859160d6ae144c9aab
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949922"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469008"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>向组授予 appRoleAssignment
 
@@ -132,6 +132,8 @@ Content-type: application/json
   "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
 }
 ```
+
+请注意，本例中，请求 URL （`cde330e5-2150-4c11-9c5b-14bfdc948c79`） 中用作用户 **ID** 的值与正文中的 **principalId** 属性相同。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,14 +5,14 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 498769a0ea3362186b4991bcc6f18ef2bcd532f4
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: dcdfc94b3605b701f09f559c19e8975acf73a63d
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469342"
+ms.locfileid: "51474081"
 ---
-# <a name="azure-ad-access-reviews-for-resources-excluding-groups"></a>Azure AD 访问评审 (组和组除外) 
+# <a name="azure-ad-access-reviews-legacy"></a>旧版 Azure AD (评审) 
 
 命名空间：microsoft.graph
 

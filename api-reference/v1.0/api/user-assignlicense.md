@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8a6a6cca2374df1870214083cfa46b9f8c5d8211
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 3d23b5f69cd45b7e93f0f66f350e3ccbac05907c
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721591"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51474107"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|AssignedLicense 集合|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。可以通过设置 [assignedLicense](../resources/assignedlicense.md) 对象中的 **disabledPlans** 属性禁用与许可证相关的计划。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。可以通过设置 [assignedLicense](../resources/assignedlicense.md) 对象中的 **disabledPlans** 属性禁用与许可证相关的计划。|
 |removeLicenses|Guid 集合|标识要删除的许可证的 GUID 的集合。|
 
 ## <a name="response"></a>响应

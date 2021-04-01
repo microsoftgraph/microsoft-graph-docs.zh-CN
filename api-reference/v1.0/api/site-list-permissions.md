@@ -5,19 +5,19 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7beb13d789aae8b3e57be7ff10ea471620067e3e
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 33085513c2a6279a9c765fe43fa9eb8a025d1057
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176824"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473699"
 ---
 # <a name="list-permissions"></a>列出权限
 命名空间：microsoft.graph
 
 从 [网站上](../resources/permission.md) 的权限导航属性获取权限资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）
@@ -49,7 +49,7 @@ GET /sites/{sitesId}/permissions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和权限](../resources/permission.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [permission](../resources/permission.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -103,7 +103,7 @@ Content-Type: application/json
       "grantedToIdentities": [{
         "application": {
           "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-          "displayName": "Foo App"
+          "displayName": "Contoso Time Manager App"
         }
       }]
     },
@@ -113,7 +113,7 @@ Content-Type: application/json
       "grantedToIdentities": [{
         "application": {
           "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-          "displayName": "Bar App"
+          "displayName": "Fabrikam Dashboard App"
         }
       }]
     }

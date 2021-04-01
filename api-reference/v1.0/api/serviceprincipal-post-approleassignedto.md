@@ -1,21 +1,20 @@
 ---
-title: 向服务主体授予 appRoleAssignment
-description: 向服务主体授予应用角色分配。
+title: 为服务主体授予 appRoleAssignment
+description: 为服务主体授予应用角色分配。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 9b0fe2f32fccd04c745f1dd6ccb7aa685ddd3b5a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: psignoret
+ms.openlocfilehash: f2aeb0c6abaad90b7da38285437da2f95d123ef3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434263"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468651"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>为服务主体授予 appRoleAssignment
 
 命名空间：microsoft.graph
-
 
 将资源服务主体的应用角色，分配给用户、组或客户端服务主体。
 
@@ -33,9 +32,9 @@ ms.locfileid: "50434263"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、AccessAsUser.All    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AppRoleAssignment.ReadWrite.All, |
+|应用程序 | AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -128,7 +127,7 @@ Content-type: application/json
   "principalDisplayName": "Parents of Contoso",
   "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
   "principalType": "Group",
-  "resourceDisplayName": "Yammer",
+  "resourceDisplayName": "Fabrikam App",
   "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```

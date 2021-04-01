@@ -1,16 +1,16 @@
 ---
 title: 列出 recentPlans
-description: 检索用户最近查看的 plannerPlans 列表。 您可以通过更新 plannerUser 资源更新最近查看过的计划。
+description: 检索用户最近查看的 plannerPlans 列表。 可以通过更新 plannerUser 资源来更新最近查看的计划。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: b08b674e03145520654d1aa6b79096b6f1e99472
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: abe618b63bdd15e3053c831352490255468bb0f2
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980482"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473470"
 ---
 # <a name="list-recentplans"></a>列出 recentPlans
 
@@ -18,13 +18,13 @@ ms.locfileid: "48980482"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户最近查看过的 [plannerPlans](../resources/plannerplan.md) 列表。 您可以通过 [更新 plannerUser 资源](planneruser-update.md)更新最近查看过的计划。
+检索用户最近查看的 [plannerPlans](../resources/plannerplan.md) 列表。 可以通过更新 [plannerUser](planneruser-update.md)资源 来更新最近查看的计划。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All    |
+|委派（工作或学校帐户） | Tasks.Read、Tasks.ReadWrite、Group.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -43,7 +43,7 @@ GET /users/{id}/planner/recentPlans
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [plannerPlan](../resources/plannerplan.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [plannerPlan](../resources/plannerplan.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

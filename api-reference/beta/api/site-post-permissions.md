@@ -1,21 +1,21 @@
 ---
 title: 创建权限
-description: 创建新的权限对象。
+description: 创建新的 permission 对象。
 author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5be2324a8b38622a9607fa16a7c934474b04a3c0
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 34ef9db31610c930c0b516b822b63372cddab0b5
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176419"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51474072"
 ---
 # <a name="create-permission"></a>创建权限
 命名空间：microsoft.graph
 
-在网站上 [创建新的](../resources/permission.md) 权限对象。
+在网站 [中](../resources/permission.md) 创建新的 permission 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,11 +43,11 @@ POST /sites/{sitesId}/permissions
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供权限对象的 JSON [表示](../resources/permission.md) 形式。
+在请求正文中，提供 permission 对象的 JSON [表示](../resources/permission.md) 形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码[](../resources/permission.md)和权限对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 [响应](../resources/permission.md) 代码和 permission 对象。
 
 ## <a name="examples"></a>示例
 
@@ -68,7 +68,7 @@ Content-Type: application/json
   "grantedToIdentities": [{
     "application": {
       "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-      "displayName": "Foo App"
+      "displayName": "Contoso Time Manager App"
     }
   }]
 }
@@ -111,7 +111,7 @@ Content-Type: application/json
     "grantedToIdentities": [{
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Foo App"
+        "displayName": "Contoso Time Manager App"
       }
     }]
 }

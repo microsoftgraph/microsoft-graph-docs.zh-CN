@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6567c2843f429b60b356a532b00f3a20e578a22b
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 72528905e87c7aa46cb1f7e4cec6d88beb931eb0
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50718546"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473680"
 ---
 # <a name="list-user-memberof"></a>List user memberOf
 
@@ -133,6 +133,8 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/memberOf/$count
 ConsistencyLevel: eventual
+
+17
 ```
 
 #### <a name="response"></a>响应
@@ -179,6 +181,8 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+16
 ```
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 强制转换来获取显示名称中包含字母“tier”（包括返回的对象数）的组的成员资格

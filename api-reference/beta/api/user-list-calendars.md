@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2cc3e747e70626d83817660ed02254689d447ae6
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7a680b7c7fb77b9962aecf13ad39f9d7a87a6372
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516764"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473932"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -24,9 +24,9 @@ ms.locfileid: "50516764"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
-|应用程序 | Calendars.Read、Calendars.ReadWrite |
+|委派（工作或学校帐户） | Calendars.Read、Calendars.Read.Shared、Calendars.ReadWrite    |
+|委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.Read.Shared、Calendars.ReadWrite    |
+|应用程序 | Calendars.Read、Calendars.Read.Shared、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Calendar](../resources/calendar.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/me/calendars
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: Planner： delta
-description: 检索对用户订阅的对象所做的更改。
+description: 检索用户订阅的对象更改。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 59c9802797c86e8ef007bb61ce503682e14981d7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7c730630f3fd655db29c93c699e8090d3046a4d4
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970247"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473491"
 ---
 # <a name="planner-delta"></a>Planner： delta
 
@@ -18,13 +18,13 @@ ms.locfileid: "48970247"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索对用户 [订阅](../resources/planner-overview.md#track-changes-using-delta-query) 的对象所做的更改。
+检索用户订阅的对象 [更改](../resources/planner-overview.md#track-changes-using-delta-query) 。
 
-此方法允许应用程序跟踪对用户可从计划程序中的时间段内访问的对象的更改。
+此方法允许应用程序跟踪用户随着时间的推移可以从 Planner 内访问的对象的更改。
 
-此方法的返回值可能包含来自 Planner 的对象的异构类型。
+此方法的返回值可能包含 Planner 中的对象的异种类型。
 
-有关在 Microsoft Graph 数据中跟踪更改的详细信息，请参阅 [使用 delta query 跟踪 Microsoft graph 数据中的更改](/graph/delta-query-overview)。
+有关跟踪 Microsoft Graph 数据更改详细信息，请参阅使用 delta 查询跟踪 [Microsoft Graph 数据中的更改](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "48970247"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.Read、Tasks.ReadWrite、Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -45,7 +45,7 @@ GET /me/planner/all/delta
 GET /users/{id}/planner/all/delta
 ```
 
-`$select` `$expand` `$filter` 在计划程序的 delta 查询实现中，当前不支持 (例如、或) 等其他查询参数。
+Planner 的增量 (上当前不支持其他查询参数) 如 、 或 `$select` `$expand` `$filter`) 。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,11 +59,11 @@ GET /users/{id}/planner/all/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `200 OK` 响应代码和要应用于响应正文中的对象的更改集合，以及要遵循的增量同步链接。
+如果成功，此方法返回 响应代码和要应用于响应正文中的对象的更改集合，以及要遵循的 `200 OK` Delta Sync 链接。
 
-如果 `deltaLink` 呼叫者使用的是格式不正确的，则此终结点将返回 HTTP 400。
+如果 `deltaLink` 调用方使用的 格式不正确，此终结点将返回 HTTP 400。
 
-如果 `deltaLink` 呼叫者使用的过旧，此终结点将返回 HTTP 410。
+如果 `deltaLink` 调用方使用的 太旧，此终结点将返回 HTTP 410。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，所示的响应对象可能已缩短。 所有已更改的属性都将从实际调用返回。
+>**注意：** 为了提高可读性，所示的响应对象可能已缩短。 所有更改的属性都将从实际调用中返回。
 
 <!-- {
   "blockType": "response",

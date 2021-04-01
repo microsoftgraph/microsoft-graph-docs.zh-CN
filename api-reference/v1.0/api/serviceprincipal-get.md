@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c82d15a61ac8c845608268e2fcdef804064fa80c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7e768425c246ccc0f3bbcfd46fe90d582d8e5450
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134601"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473659"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -123,6 +123,7 @@ Content-type: application/json
   "replyUrls": [],
   "servicePrincipalNames": [],
   "servicePrincipalType": null,
+  "signInAudience": "AzureADandPersonalMicrosoftAccount",
   "tags": [],
   "tokenEncryptionKeyId": null
 }

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 52b9d681c9eb56fe7428634d253adf5b6c0cc545
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 59b009aed4440fd30a4b038bc4eb40eba208c5ef
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958618"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473442"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -22,7 +22,7 @@ ms.locfileid: "50958618"
 
 咨询转接意味着在转接之前，转接人可以通知要呼叫 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）         |
@@ -49,7 +49,6 @@ POST /communications/calls/{id}/transfer
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|作为转移目标的参与者。|
-|clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。
@@ -83,8 +82,7 @@ Content-Length: 430
       }
     },
     "replacesCallId": "replacesCallId-value"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -275,8 +273,7 @@ Content-Type: application/json
       }
     },
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 

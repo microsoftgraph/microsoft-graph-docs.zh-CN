@@ -1,16 +1,16 @@
 ---
 title: 列出 favoritePlans
-description: 检索由用户标记为收藏的 plannerPlans 列表。 您可以通过更新 plannerUser 资源将计划标记为收藏。
+description: 检索由用户标记为收藏的 plannerPlans 列表。 可以通过更新 plannerUser 资源将计划标记为收藏。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 00ee82c8830b61dc31cfbf6beafd13063e9de6e4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1650ea55e1fc7dc6200e4985e417fdfb67fb0ee3
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980502"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473484"
 ---
 # <a name="list-favoriteplans"></a>列出 favoritePlans
 
@@ -18,14 +18,14 @@ ms.locfileid: "48980502"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索标记为用户收藏的 [plannerPlans](../resources/plannerplan.md) 的列表。 您可以通过 [更新 plannerUser 资源](planneruser-update.md)将计划标记为收藏。
+检索用户 [标记为收藏的 plannerPlans](../resources/plannerplan.md) 列表。 可以通过更新 [plannerUser](planneruser-update.md)资源 将计划标记为收藏。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All    |
+|委派（工作或学校帐户） | Tasks.Read、Tasks.ReadWrite、Group.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -46,7 +46,7 @@ GET /users/{id}/planner/favoritePlans
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [plannerPlan](../resources/plannerplan.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [plannerPlan](../resources/plannerplan.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

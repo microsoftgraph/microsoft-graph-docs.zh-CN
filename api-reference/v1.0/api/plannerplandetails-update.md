@@ -5,24 +5,24 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 6841fd67b55628ff409b287b04fc256a85e87023
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e706b9e0d95c4084d0b234e81df03905e7aca5e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984706"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473848"
 ---
 # <a name="update-plannerplandetails"></a>更新 plannerplandetails
 
 命名空间：microsoft.graph
 
 更新 **plannerplandetails** 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.ReadWrite、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -43,11 +43,11 @@ PATCH /planner/plans/{id}/details
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
-|sharedWith|[plannerUserIds](../resources/planneruserids.md)|与之共享此计划的用户 id 集。 如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享 [组的](../resources/group.md) 计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|此计划共享的用户 ID 集。 如果你要利用 Microsoft 365 组，请使用组 API 管理组成员身份以 [共享组计划](../resources/group.md) 。 您还可以将组的现有成员添加到此集合中，尽管他们无需访问组所拥有的计划。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerPlanDetails](../resources/plannerplandetails.md) 对象。
+如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定具有首选项的标头，则此方法在响应正文中返回 响应代码和更新的 `Prefer` `return=representation` `200 OK` [plannerPlanDetails](../resources/plannerplandetails.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -64,6 +64,7 @@ PATCH /planner/plans/{id}/details
 PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 Content-type: application/json
 Content-length: 212
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

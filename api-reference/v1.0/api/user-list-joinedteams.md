@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ae1cdff2e6fd0b2d5200f6b9b0ee4c8d796cac26
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: ccf12a37db65770106397b2ba4547902529b26e7
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634485"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51474100"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -96,12 +96,11 @@ GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "31aa74dd-dd65-43ac-8c4e-0ec1ae5a8ee1"
     }
   ]
 }

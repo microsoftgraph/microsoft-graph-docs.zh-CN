@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6598db1fa98e3fb91a70040c9bf3ffe6e9a0c86f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 130338318fc3e7e970838dbbcb8d5f70e726e857
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721983"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473519"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/directReports
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/directReports
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面是一个响应示例。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
@@ -94,12 +94,11 @@ GET https://graph.microsoft.com/beta/me/directReports
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8"
     }
   ]
 }

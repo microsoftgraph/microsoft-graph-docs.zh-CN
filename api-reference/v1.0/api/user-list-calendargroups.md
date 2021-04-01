@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2537efb0346d154aba595b11f96d2b72607b44d4
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 0130e0ae162cd9410d68968635c8254b8cc43740
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634457"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51474058"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
 
@@ -92,10 +92,10 @@ Content-length: 155
 {
   "value": [
     {
-      "name": "name-value",
-      "classId": "classId-value",
-      "changeKey": "changeKey-value",
-      "id": "id-value"
+      "name": "My Calendars",
+      "classId": "0006f0b7-0000-0000-c000-000000000046",
+      "changeKey": "NreqLYgxdE2DpHBBId74XwAAAAAGZw==",
+      "id": "AQMkADIxYjJiYgEzLTFmN_F8AAAIBBgAA_F8AAAJjIQAAAA=="
     }
   ]
 }

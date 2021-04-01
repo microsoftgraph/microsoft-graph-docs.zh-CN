@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e6b0df111dba9a5c3a1c27b05951a30fdaefe4f0
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 82d9cf7f1749ec57c3ed3f55537a80e21060916c
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882885"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473946"
 ---
 # <a name="get-plannerplan"></a>获取 plannerPlan
 
@@ -18,13 +18,13 @@ ms.locfileid: "49882885"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [plannerplan](../resources/plannerplan.md) 对象的属性和关系。
-## <a name="permissions"></a>Permissions
+检索 [plannerplan 对象的属性和](../resources/plannerplan.md) 关系。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.Read、Tasks.ReadWrite、Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -43,7 +43,7 @@ GET /planner/plans/{plan-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [plannerPlan](../resources/plannerplan.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [plannerPlan](../resources/plannerplan.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 

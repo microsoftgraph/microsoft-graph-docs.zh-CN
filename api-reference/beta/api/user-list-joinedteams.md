@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 38f9d9ac6fbe3b2ccbd6589f51935b8b2601c641
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b68afeb4a44247e16c101b961288a43e8687e0d6
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975683"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473708"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -57,7 +57,7 @@ GET /users/{id}/joinedTeams
 如果成功，此方法在响应正文中返回`200 OK`响应代码和[team](../resources/team.md)对象集合。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -97,12 +97,11 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "31aa74dd-dd65-43ac-8c4e-0ec1ae5a8ee1"
     }
   ]
 }

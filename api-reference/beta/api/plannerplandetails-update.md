@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d163382a3da7ab01df3031b5afad71936a085713
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ee12fd4607f4f3b2fad4f32e0473698fbe95b601
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981916"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473582"
 ---
 # <a name="update-plannerplandetails"></a>更新 plannerplandetails
 
@@ -24,7 +24,7 @@ ms.locfileid: "48981916"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.ReadWrite、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -45,11 +45,11 @@ PATCH /planner/plans/{id}/details
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
-|sharedWith|[plannerUserIds](../resources/planneruserids.md)|与之共享此计划的用户 id 集。 如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享 [组的](../resources/group.md) 计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|此计划共享的用户 ID 集。 如果你要利用 Microsoft 365 组，请使用组 API 管理组成员身份以 [共享组计划](../resources/group.md) 。 您还可以将组的现有成员添加到此集合中，尽管他们无需访问组所拥有的计划。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerPlanDetails](../resources/plannerplandetails.md) 对象。
+如果成功，此方法将返回 `204 No Content` 响应和空内容。 如果请求指定具有首选项的标头，则此方法在响应正文中返回 响应代码和更新的 `Prefer` `return=representation` `200 OK` [plannerPlanDetails](../resources/plannerplandetails.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -66,6 +66,7 @@ PATCH /planner/plans/{id}/details
 PATCH https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
 Content-type: application/json
 Content-length: 212
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

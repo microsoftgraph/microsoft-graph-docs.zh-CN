@@ -1,16 +1,16 @@
 ---
-title: List messages
+title: 列出邮件
 description: '获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。 '
 localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 87a5fc5f29d23b6c9a7fbbe48b059066001d5419
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 6ccbd844e9bb8ccae4e7dd607cc78c28eaef5dc0
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176992"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473687"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -20,15 +20,15 @@ ms.locfileid: "50176992"
 
 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。 
 
-根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。 默认页面大小为 10 封邮件。 用于 `$top` 自定义页面大小，范围为 1 和 1000。
+根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。 默认页面大小为 10 封邮件。 使用 `$top` 以自定义页面大小（范围在 1 - 1000 之间）。
 
-若要改进操作响应时间，请使用指定所需的确切 `$select` 属性;请参阅[下面的示例 1。](#example-1-list-all-messages) 微调和 的值，尤其是在必须使用较大的页面大小时，因为返回的页面包含数百条消息，每个具有完整响应负载可能会触发网关超时 `$select` `$top` (HTTP 504) 。 [](/graph/errors#http-status-codes)
+若要改进操作响应时间，请使用 `$select` 指定所需的精确属性；请参阅下方 [示例 1](#example-1-list-all-messages)。 微调 `$select` 和 `$top` 的值，尤其在必须使用较大的页面大小时，因为返回带有数百条邮件（且每条邮件都有完整的响应有效负载） 的页面可能触发 [网关超时](/graph/errors#http-status-codes) (HTTP 504)。
 
 若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。 此 URL 包括可能已在初始请求中指定的任何查询参数。 
 
 不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。 此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。 因此，甚至在初始响应中，`$skip` 值都会大于页面大小。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-可以筛选邮件，并仅获取包含已登录用户提及的邮件[](../resources/mention.md)。 请参阅以下[示例](#request-2)。 默认情况下， `GET /me/messages` 该操作不会返回 **mentions** 属性。 使用 `$expand` 查询参数 [查找邮件中每个提及的详细信息](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)。
+可以筛选邮件并仅获取包含已登录用户提及的邮件。 [](../resources/mention.md) 请参阅以下[示例](#request-2)。 默认情况下， `GET /me/messages` 该操作不会返回 **mentions** 属性。 使用 `$expand` 查询参数 [查找邮件中每个提及的详细信息](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
@@ -64,7 +64,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-若要获取用户邮箱中包含用户提及的所有邮件，请执行下列操作：
+若要获取用户邮箱中包含用户提及的所有邮件： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -75,7 +75,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-可以使用 `$filter` **mentionsPreview** 属性上的查询参数获取提及已登录用户的邮件。
+可以使用 `$filter` **mentionsPreview** 属性上的 query 参数获取提及已登录用户的邮件。
 
 ### <a name="using-filter-and-orderby-in-the-same-query"></a>在同一查询中使用 filter 和 orderby
 在同一查询中使用 `$filter` 和 `$orderby` 获取消息时，请确保按以下方式指定属性：
@@ -100,7 +100,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [邮件](../resources/message.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/message.md) 代码和 message 对象集合。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-list-all-messages"></a>示例 1：列出所有邮件
@@ -147,105 +147,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$select=sender%2csubject&$skip=14",
-    "value": [
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
-            "id": "AAMkAGUAAAwTW09AAA=",
-            "subject": "You have late tasks!",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Planner",
-                    "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
-            "id": "AAMkAGUAAAq5QKlAAA=",
-            "subject": "You have late tasks!",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Planner",
-                    "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
-            "id": "AAMkAGUAAAq5QKkAAA=",
-            "subject": "Your Azure AD Identity Protection Weekly Digest",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Azure",
-                    "address": "azure-noreply@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
-            "id": "AAMkAGUAAAq5QKjAAA=",
-            "subject": "Use attached file",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
-            "id": "AAMkAGUAAAq5QKiAAA=",
-            "subject": "Original invitation",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
-            "id": "AAMkAGUAAAq5QKhAAA=",
-            "subject": "Koala image",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
-            "id": "AAMkAGUAAAq5QKgAAA=",
-            "subject": "Sales invoice template",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.eventMessageRequest",
-            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
-            "id": "AAMkAGUAAAq5T8tAAA=",
-            "subject": "Review strategy for Q3",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+  "value": [
+    {
+      "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+      "id": "AAMkAGUAAAwTW09AAA=",
+      "subject": "You have late tasks!",
+      "sender": {
+        "emailAddress": {
+          "name": "Microsoft Planner",
+          "address": "noreply@Planner.Office365.com"
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
 ### <a name="example-2-use-filter-to-get-all-messages-satisfying-a-specific-condition"></a>示例 2：$filter获取满足特定条件的所有邮件
 #### <a name="request"></a>请求
-下一个示例将筛选已登录用户邮箱中提及该用户的所有邮件。 它还用于返回响应中每封邮件 `$select` 的一部分属性。 
+下一个示例将筛选已登录用户的邮箱中提及该用户的所有邮件。 它还用于 `$select` 返回响应中每封邮件的一部分属性。 
 
 此示例还合并了查询参数字符串中空格字符的 URL 编码。
 
@@ -306,30 +227,14 @@ Content-length: 987
       "mentionsPreview":{
         "isMentioned":true
       }
-    },
-    {
-      "@odata.id":"https://graph.microsoft.com/beta/Users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/Messages('AQMkADJmMTUAAAjwVAAAA')",
-      "@odata.etag":"W/\"CQAAABYAAAAPFhK2FclcRbABBJhCde8iAAAAAEGj\"",
-      "id":"AQMkADJmMTUAAAjwVAAAA",
-      "receivedDateTime":"2016-07-21T07:40:20Z",
-      "subject":"Re: Start planning soon",
-      "sender":{
-        "emailAddress":{
-          "name":"Adele Vance",
-          "address":"AdeleV@contoso.com"
-        }
-      },
-      "mentionsPreview":{
-        "isMentioned":true
-      }
     }
   ]
 }
 ```
 
-### <a name="example-3-use-prefer-header-to-get-the-message-body-and-uniquebody-is-text-format"></a>示例 3：使用首选标头获取邮件正文，uniqueBody 为文本格式
+### <a name="example-3-use-prefer-header-to-get-the-message-body-and-uniquebody-is-text-format"></a>示例 3：使用 prefer 标头获取邮件正文，uniqueBody 为文本格式
 #### <a name="request"></a>请求
-第三个示例演示如何使用标头获取文本格式的每个邮件的正文和 `Prefer: outlook.body-content-type="text"` **uniqueBody** 属性。
+第三个示例演示如何使用标头获取文本格式的每封邮件的 body 和 `Prefer: outlook.body-content-type="text"` **uniqueBody** 属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -371,58 +276,30 @@ Note: The response includes a `Preference-Applied: outlook.body-content-type` he
   "@odata.type": "microsoft.graph.message",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2704
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)",
-    "value":[
-        {
-            "@odata.type":"#microsoft.graph.eventMessageRequest",
-            "@odata.etag":"W/\"CwAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj5\"",
-            "id":"AAMkAGIAAAoZCfIAAA=",
-            "subject":"Orientation ",
-            "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
-            "body":{
-                "contentType":"text",
-                "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
-            },
-            "uniqueBody":{
-                "contentType":"text",
-                "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
-            }
-        },
-        {
-            "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj4\"",
-            "id":"AAMkAGIAAAoZCfHAAA=",
-            "subject":"Welcome to our group!",
-            "bodyPreview":"Welcome to our group, Dana! Hope you will enjoy working with us !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nTh",
-            "body":{
-                "contentType":"text",
-                "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nThanks!\r\n\r\n"
-            },
-            "uniqueBody":{
-                "contentType":"text",
-                "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\nThanks!\r\n"
-            }
-        },
-        {
-            "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAAAAjr\"",
-            "id":"AQMkAGIAAAIJTQAAAA==",
-            "subject":"Welcome aboard!",
-            "bodyPreview":"Welcome to the Support group!",
-            "body":{
-                "contentType":"text",
-                "content":"Welcome to the Support group!\r\n"
-            },
-            "uniqueBody":{
-                "contentType":"text",
-                "content":"Welcome to the Support group!\r\n"
-            }
-        }
-    ]
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)",
+  "value":[
+    {
+      "@odata.type":"#microsoft.graph.eventMessageRequest",
+      "@odata.etag":"W/\"CwAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj5\"",
+      "id":"AAMkAGIAAAoZCfIAAA=",
+      "subject":"Orientation ",
+      "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
+      "body":{
+        "contentType":"text",
+        "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
+      },
+      "uniqueBody":{
+        "contentType":"text",
+        "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
+      }
+    }
+  ]
 }
 ```
 

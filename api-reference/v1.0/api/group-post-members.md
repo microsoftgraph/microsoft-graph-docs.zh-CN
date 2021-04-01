@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 17321cff45b4d1af9cf625ce47002b934953b948
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: d7272266893579d0524423a7bd968ad56ff7e694
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796960"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469001"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -21,9 +21,11 @@ ms.locfileid: "48796960"
 可以添加用户、组织联系人、服务主体或其他组。 
 
 > [!IMPORTANT]
-> 只能向通过云管理的安全组和 Microsoft 365 组添加用户。
+> + 只能向通过云管理的安全组和 Microsoft 365 组添加用户。
+> + 不能将安全组添加到 Microsoft 365 组。
+> + 不能将 Microsoft 365 组添加到安全组或其他 Microsoft 365 组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

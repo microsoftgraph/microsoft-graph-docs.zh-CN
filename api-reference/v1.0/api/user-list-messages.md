@@ -1,16 +1,16 @@
 ---
-title: List messages
+title: 列出邮件
 description: 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。
 localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 59e3b45312f0cfc630db976ac8f535a421632caa
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: ad594f12603668d0684523a25cd708be8b61eae8
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177205"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473960"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -137,7 +137,6 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$select=sender%2csubject&$skip=14",
     "value": [
         {
             "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
@@ -147,108 +146,6 @@ Content-type: application/json
                 "emailAddress": {
                     "name": "Microsoft Planner",
                     "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
-            "id": "AAMkAGUAAAq5QKlAAA=",
-            "subject": "You have late tasks!",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Planner",
-                    "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
-            "id": "AAMkAGUAAAq5QKkAAA=",
-            "subject": "Your Azure AD Identity Protection Weekly Digest",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Azure",
-                    "address": "azure-noreply@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
-            "id": "AAMkAGUAAAq5QKjAAA=",
-            "subject": "Use attached file",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
-            "id": "AAMkAGUAAAq5QKiAAA=",
-            "subject": "Original invitation",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
-            "id": "AAMkAGUAAAq5QKhAAA=",
-            "subject": "Koala image",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
-            "id": "AAMkAGUAAAq5QKgAAA=",
-            "subject": "Sales invoice template",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.eventMessage",
-            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dft\"",
-            "id": "AAMkAGUAAAq5UMVAAA=",
-            "subject": "Accepted: Review strategy for Q3",
-            "sender": {
-                "emailAddress": {
-                    "name": "Adele Vance",
-                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.eventMessage",
-            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DfF\"",
-            "id": "AAMkAGUAAAq5UMUAAA=",
-            "subject": "Accepted: Review strategy for Q3",
-            "sender": {
-                "emailAddress": {
-                    "name": "Adele Vance",
-                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.eventMessage",
-            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
-            "id": "AAMkAGUAAAq5T8tAAA=",
-            "subject": "Review strategy for Q3",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
                 }
             }
         }
