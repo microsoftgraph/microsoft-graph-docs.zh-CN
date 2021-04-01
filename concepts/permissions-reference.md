@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0930c625bb3aea20f65c5ba3194d5f550a6d3c59
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 5519b7b9d14b26f83ef3422021c292eb712220fc
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469071"
+ms.locfileid: "51473512"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1744,7 +1744,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _ShortNotes.Read.All_ | 阅读所有用户的简短注释 | 允许应用在没有已登录用户的情况下读取所有简短注释。 | 是 | 
+| _ShortNotes.Read.All_ | 阅读所有用户的简短注释 | 允许应用在没有已登录用户的情况下读取所有简短注释。 | 是 |
 | _ShortNotes.ReadWrite.All_ | 阅读、创建、编辑和删除所有用户的简短注释 | 允许应用阅读、创建、编辑和删除已登录用户的所有简短注释。 | 是 |
 
 ---
@@ -1875,21 +1875,21 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | _TeamSettings.Read.All_ | 读取所有团队设置 | 在没有登录用户的情况下读取此团队的设置。 | 是 | 否 |
 | _TeamSettings.ReadWrite.All_ | 读取和更改所有团队的设置。 | 在没有登录用户的情况下读取和更改所有团队的设置。  | 是 | 否 |
 
-## <a name="teams-activity-permissions-private-preview"></a>Teams 活动权限（[个人预览版](#permissions-availability-status)）
+## <a name="teams-activity-permissions"></a>Teams 活动权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read_（个人预览版）| 读取用户的团队合作活动源 | 允许应用读取登录用户的团队合作活动源。  | 否 | 否 |
-| _TeamsActivity.Send_（个人预览版）| 以用户身份发送团队合作活动 | 允许用户代表登录用户在用户的团队合作活动源中创建新活动，并将新活动发送给其他用户的活动源。 | 否 | 否 |
+| _TeamsActivity.阅读_ （[专用预览](#permissions-availability-status)） | 读取用户的团队合作活动源 | 允许应用读取登录用户的团队合作活动源。 | 否 | 否 |
+| _TeamsActivity.Send_ | 以用户身份发送团队合作活动 | 允许应用在用户的团队合作活动源中代表已登录的用户创建新的通知。 这些通知不可发现、需要遵从或受合规性策略控制。 | 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read.All_（个人预览版） | 读取所有用户的团队合作活动源 | 允许应用在没有登录用户的情况下读取所有用户的团队合作活动源。 | 是 | 否 |
-| _TeamsActivity.Send_（个人预览版）| 向任何用户发送团队合作活动。 | 允许应用在没有登录用户的情况下将新活动发送给任何用户的团队合作活动源。 | 是 | 否 |
+| _TeamsActivity.Read.all_ （[专用预览](#permissions-availability-status)） | 读取所有用户的团队合作活动源 | 允许应用在没有登录用户的情况下读取所有用户的团队合作活动源。 | 是 | 否 |
+| _TeamsActivity.Send_ | 向任何用户发送团队合作活动。 | 允许应用在未登录用户的情况下，在用户的团队合作活动源中创建新通知。 这些通知不可发现、需要遵从或受合规性策略控制。 | 是 | 否 |
 
 ## <a name="teams-app-permissions-deprecated"></a>Teams 应用权限 （不推荐使用）
 
@@ -1923,14 +1923,14 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | _TeamsAppInstallation.ReadWriteSelfForTeam_ （个人预览版） | 允许应用在 Teams 中管理其自身| 允许 Teams 应用为已登录用户可以访问的团队读取、安装、更新和卸载其自身。| 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _TeamsAppInstallation.ReadForUser.All_ | 读取为所有用户安装的 Teams 应用| 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 
+| _TeamsAppInstallation.ReadForUser.All_ | 读取为所有用户安装的 Teams 应用| 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
 | _TeamsAppInstallation.ReadWriteForUser.All_ | 管理所有用户的 Teams 应用| 允许应用为任何用户（无需是登录的用户）读取、安装、升级和卸载 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
-| _TeamsAppInstallation.ReadWriteSelfForUser.All_（个人预览版） | 允许应用为所有用户管理其自身| 允许 Teams 应用在没有登录用户的情况下为任何用户读取、安装、更新和卸载其自身。| 是 | 
-| _TeamsAppInstallation.ReadForTeam.All_ | 读取为所有团队安装的 Teams 应用| 允许应用在没有登录用户的情况下读取安装在任何团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 
+| _TeamsAppInstallation.ReadWriteSelfForUser.All_（个人预览版） | 允许应用为所有用户管理其自身| 允许 Teams 应用在没有登录用户的情况下为任何用户读取、安装、更新和卸载其自身。| 是 |
+| _TeamsAppInstallation.ReadForTeam.All_ | 读取为所有团队安装的 Teams 应用| 允许应用在没有登录用户的情况下读取安装在任何团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | 管理所有团队的 Teams 应用| 允许应用在没有登录用户的情况下读取、安装、更新和卸载任何团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
-| _TeamsAppInstallation.ReadWriteSelfForTeam.All_（个人预览版） | 允许 Teams 应用为所有团队管理其自身| 允许 Teams 应用在没有登陆用户的情况下在任何团队中读取、安装、更新和卸载其自身。| 是 | 
+| _TeamsAppInstallation.ReadWriteSelfForTeam.All_（个人预览版） | 允许 Teams 应用为所有团队管理其自身| 允许 Teams 应用在没有登陆用户的情况下在任何团队中读取、安装、更新和卸载其自身。| 是 |
 
 ## <a name="team-member-permissions"></a>团队成员权限 
 
