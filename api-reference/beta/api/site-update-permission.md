@@ -5,28 +5,28 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 609013d8150cec5ff1be6f95b7bb254536a68acc
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 24f84eed8550b133387275873e63634703cbfd5e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177265"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473603"
 ---
-# <a name="update-permission"></a><span data-ttu-id="acbe1-103">更新权限</span><span class="sxs-lookup"><span data-stu-id="acbe1-103">Update permission</span></span>
-<span data-ttu-id="acbe1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="acbe1-104">Namespace: microsoft.graph</span></span>
+# <a name="update-permission"></a><span data-ttu-id="36b8b-103">更新权限</span><span class="sxs-lookup"><span data-stu-id="36b8b-103">Update permission</span></span>
+<span data-ttu-id="36b8b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="36b8b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="acbe1-105">更新 [网站上](../resources/permission.md) 的权限对象。</span><span class="sxs-lookup"><span data-stu-id="acbe1-105">Update the [permission](../resources/permission.md) object on a site.</span></span>
+<span data-ttu-id="36b8b-105">更新 [网站上](../resources/permission.md) 的权限对象。</span><span class="sxs-lookup"><span data-stu-id="36b8b-105">Update the [permission](../resources/permission.md) object on a site.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="acbe1-106">权限</span><span class="sxs-lookup"><span data-stu-id="acbe1-106">Permissions</span></span>
-<span data-ttu-id="acbe1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="acbe1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="36b8b-106">权限</span><span class="sxs-lookup"><span data-stu-id="36b8b-106">Permissions</span></span>
+<span data-ttu-id="36b8b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="36b8b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="acbe1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="acbe1-109">Permission type</span></span>                        | <span data-ttu-id="acbe1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="acbe1-110">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="36b8b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="36b8b-109">Permission type</span></span>                        | <span data-ttu-id="36b8b-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="36b8b-110">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="acbe1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="acbe1-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="acbe1-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="acbe1-112">Not supported.</span></span>
-|<span data-ttu-id="acbe1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="acbe1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acbe1-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="acbe1-114">Not supported.</span></span>
-|<span data-ttu-id="acbe1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="acbe1-115">Application</span></span>                            | <span data-ttu-id="acbe1-116">Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="acbe1-116">Sites.FullControl.All</span></span>
+|<span data-ttu-id="36b8b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="36b8b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="36b8b-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="36b8b-112">Not supported.</span></span>
+|<span data-ttu-id="36b8b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="36b8b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="36b8b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="36b8b-114">Not supported.</span></span>
+|<span data-ttu-id="36b8b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="36b8b-115">Application</span></span>                            | <span data-ttu-id="36b8b-116">Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="36b8b-116">Sites.FullControl.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="acbe1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="acbe1-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="36b8b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="36b8b-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -36,24 +36,24 @@ ms.locfileid: "50177265"
 PATCH /sites/{sitesId}/permissions/{permissionId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="acbe1-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="acbe1-118">Request headers</span></span>
-|<span data-ttu-id="acbe1-119">名称</span><span class="sxs-lookup"><span data-stu-id="acbe1-119">Name</span></span>|<span data-ttu-id="acbe1-120">说明</span><span class="sxs-lookup"><span data-stu-id="acbe1-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="36b8b-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="36b8b-118">Request headers</span></span>
+|<span data-ttu-id="36b8b-119">名称</span><span class="sxs-lookup"><span data-stu-id="36b8b-119">Name</span></span>|<span data-ttu-id="36b8b-120">说明</span><span class="sxs-lookup"><span data-stu-id="36b8b-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="acbe1-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="acbe1-121">Authorization</span></span>|<span data-ttu-id="acbe1-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="acbe1-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="acbe1-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="acbe1-124">Content-Type</span></span>|<span data-ttu-id="acbe1-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="acbe1-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="36b8b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="36b8b-121">Authorization</span></span>|<span data-ttu-id="36b8b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="36b8b-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="36b8b-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="36b8b-124">Content-Type</span></span>|<span data-ttu-id="36b8b-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="36b8b-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="acbe1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="acbe1-127">Request body</span></span>
-<span data-ttu-id="acbe1-128">在请求正文中，提供权限对象的 JSON [表示](../resources/permission.md) 形式。</span><span class="sxs-lookup"><span data-stu-id="acbe1-128">In the request body, supply a JSON representation of the [permission](../resources/permission.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="36b8b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="36b8b-127">Request body</span></span>
+<span data-ttu-id="36b8b-128">在请求正文中，提供 permission 对象的 JSON [表示](../resources/permission.md) 形式。</span><span class="sxs-lookup"><span data-stu-id="36b8b-128">In the request body, supply a JSON representation of the [permission](../resources/permission.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="acbe1-129">响应</span><span class="sxs-lookup"><span data-stu-id="acbe1-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="36b8b-129">响应</span><span class="sxs-lookup"><span data-stu-id="36b8b-129">Response</span></span>
 
-<span data-ttu-id="acbe1-130">如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/permission.md)和权限对象。</span><span class="sxs-lookup"><span data-stu-id="acbe1-130">If successful, this method returns a `200 OK` response code and a [permission](../resources/permission.md) object in the response body.</span></span>
+<span data-ttu-id="36b8b-130">如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/permission.md) 代码和 permission 对象。</span><span class="sxs-lookup"><span data-stu-id="36b8b-130">If successful, this method returns a `200 OK` response code and a [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="acbe1-131">示例</span><span class="sxs-lookup"><span data-stu-id="acbe1-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="36b8b-131">示例</span><span class="sxs-lookup"><span data-stu-id="36b8b-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="acbe1-132">请求</span><span class="sxs-lookup"><span data-stu-id="acbe1-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="36b8b-132">请求</span><span class="sxs-lookup"><span data-stu-id="36b8b-132">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="acbe1-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="acbe1-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="36b8b-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="36b8b-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_permission_from_"
@@ -67,19 +67,19 @@ Content-Type: application/json
   "roles": ["read"]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="acbe1-134">C#</span><span class="sxs-lookup"><span data-stu-id="acbe1-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="36b8b-134">C#</span><span class="sxs-lookup"><span data-stu-id="36b8b-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="acbe1-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="acbe1-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="36b8b-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="36b8b-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="acbe1-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="acbe1-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="36b8b-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="36b8b-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permission-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="acbe1-137">Java</span><span class="sxs-lookup"><span data-stu-id="acbe1-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="36b8b-137">Java</span><span class="sxs-lookup"><span data-stu-id="36b8b-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-permission-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,7 +87,7 @@ Content-Type: application/json
 
 
 
-### <a name="response"></a><span data-ttu-id="acbe1-138">响应</span><span class="sxs-lookup"><span data-stu-id="acbe1-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="36b8b-138">响应</span><span class="sxs-lookup"><span data-stu-id="36b8b-138">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,7 +105,7 @@ Content-Type: application/json
     "grantedToIdentities": [{
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Bar App"
+        "displayName": "Fabrikam Dashboard App"
       }
     }]
 }
