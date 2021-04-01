@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6e0ee2ca2eebcca9b912c62242c2606590d9cbc4
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: b4617596a10a85a4378b1e7ad4c4ca94fb16ffac
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192264"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51491004"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -20,7 +20,7 @@ ms.locfileid: "48192264"
 
 创建新的 [externalItem](../resources/externalitem.md)。
 
-此 API 可用于创建自定义项。 通过在 JSON 正文中包含属性来指定要创建的类型 `@odata.type` 。 包含的 [externalConnection](../resources/externalconnection.md) 必须具有相应类型的已注册 [架构](../resources/schema.md) 。
+此 API 可用于创建自定义项。 在 JSON 正文中包括 属性 `@odata.type` ，指定要创建的类型。 包含 [externalConnection](../resources/externalconnection.md) 的架构 [必须已](../resources/schema.md) 注册相应类型。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -44,10 +44,10 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 描述                                         |
+| 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | string | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 如果不存在具有此项的项目 `id` ，则会创建一个新项目。 如果某个项目已经存在，则 `id` 会被在正文中发送的对象覆盖。 |
+| connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnection.md) |
+| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalitem.md)。 如果不存在此项目，将 `id` 创建一个新项。 如果项目已存在， `id` 则它将被正文中发送的对象覆盖。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -62,20 +62,20 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ### <a name="creating-an-externalitem"></a>创建 externalItem
 
-在创建时 `externalItem` ，需要以下字段： `@odata.type` 、 `acl` 和 `properties` 。 该 `properties` 对象必须至少包含一个属性。
+创建 时 `externalItem` ，以下字段是必需的 `@odata.type` ：、和 `acl` `properties` 。 `properties`对象必须至少包含一个属性。
 
 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。
 
-中的属性 `externalItem` 应在以下方案中使用有效负载中的类型说明符：
+在下列 `externalItem` 情况下，上的 属性应在有效负载中使用类型说明符：
 
-- 对于 `String` type 属性，如果该值包含非 ASCII 字符。
+- 对于 `String` 类型属性，如果值包含非 ASCII 字符。
 
     ```json
     "description@odata.type": "String",
     "description": "Kandierte Äpfel"
     ```
 
-- 适用于所有集合类型。
+- 对于所有集合类型。
 
     ```json
     "categories@odata.type": "Collection(String)"
@@ -86,7 +86,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > 如果包含类型的属性 `Collection(DateTime)` ，则必须使用类型说明符 `Collection(DateTimeOffset)` 。
+    > 当包含 类型的 属性 `Collection(DateTime)` 时，必须使用类型说明器 `Collection(DateTimeOffset)` 。
 
 ## <a name="response"></a>响应
 
@@ -107,7 +107,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {

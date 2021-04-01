@@ -5,15 +5,17 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 34ef9db31610c930c0b516b822b63372cddab0b5
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 39e85b9ba4ef3269f46a2727a5771cadf3601e2a
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474072"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51490926"
 ---
 # <a name="create-permission"></a>创建权限
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在网站 [中](../resources/permission.md) 创建新的 permission 对象。
 
@@ -64,13 +66,17 @@ POST https://graph.microsoft.com/beta/sites/{sitesId}/permissions
 Content-Type: application/json
 
 {
-  "roles": ["write"],
-  "grantedToIdentities": [{
-    "application": {
-      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-      "displayName": "Contoso Time Manager App"
-    }
-  }]
+   "roles":[
+      "write"
+   ],
+   "grantedToIdentities":[
+      {
+         "application":{
+            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+            "displayName":"Contoso Time Manager App"
+         }
+      }
+   ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -106,14 +112,18 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "id": "1",
-    "roles": ["write"],
-    "grantedToIdentities": [{
-      "application": {
-        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Contoso Time Manager App"
+   "id":"1",
+   "roles":[
+      "write"
+   ],
+   "grantedToIdentities":[
+      {
+         "application":{
+            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+            "displayName":"Contoso Time Manager App"
+         }
       }
-    }]
+   ]
 }
 ```
 

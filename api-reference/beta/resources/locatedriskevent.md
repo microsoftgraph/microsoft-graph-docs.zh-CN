@@ -3,14 +3,14 @@ title: locatedRiskEvent 资源类型
 description: Azure Active Directory Identity Protection 根据位置数据检测到的风险事件。 定位的风险事件类型包括：
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: 902dc864ea16bd677d0499711faa078131ca015d
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: c53c503132a0b280c8b7fb02c99816d2ee7a5f03
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469456"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51490989"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent 资源类型
 
@@ -51,7 +51,7 @@ Azure [Active Directory Identity Protection](/azure/active-directory/identity-pr
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为空。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

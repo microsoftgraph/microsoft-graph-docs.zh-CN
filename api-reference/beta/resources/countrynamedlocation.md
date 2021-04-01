@@ -1,16 +1,16 @@
 ---
 title: countryNamedLocation 资源类型
-description: 表示由国家和地区定义的 Azure Active Directory 命名位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
+description: 表示由国家和地区定义的 Azure Active Directory 命名的位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f6a986907ee82ea3f40c7b294cf21bf4dcc191a4
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c01811ce3940c77a3586196db7b5d2fdf82ebbbb
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721654"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51491031"
 ---
 # <a name="countrynamedlocation-resource-type"></a>countryNamedLocation 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50721654"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示由国家和地区定义的 Azure Active Directory 命名位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
+表示由国家和地区定义的 Azure Active Directory 命名的位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 
 继承自 [namedLocation](../resources/namedLocation.md)
 
@@ -36,12 +36,14 @@ ms.locfileid: "50721654"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区和/或地区列表。|
+|countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区列表。|
+|countryLookupMethod|countryLookupMethodType|确定用于确定用户所在的国家/地区的方法。 可能的值为 `clientIpAddress` 和 `authenticatorAppGps`。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
 |displayName|String|位置的可读名称。 继承自 [namedLocation](../resources/namedLocation.md)。|
 |id|String|namedLocation 对象的标识符。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|includeUnknownCountriesAndRegions|布尔|如此 如果未映射到一个或多个国家/地区的 IP 地址应包含在命名位置中。|
+|includeUnknownCountriesAndRegions|布尔|如此 如果未映射到国家/地区或地区的 IP 地址应包含在命名的位置。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的上次修改日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
+
 
 ## <a name="relationships"></a>关系
 
@@ -62,6 +64,7 @@ ms.locfileid: "50721654"
 ```json
 {
   "countriesAndRegions": ["String"],
+  "countryLookupMethod": "countryLookedupMethodType",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",

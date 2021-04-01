@@ -3,12 +3,12 @@ title: 结合使用 Postman 和 Microsoft Graph API
 description: 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 34be5bab88acbd7545caa958db0809a010660fb4
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 04668cd76a7d8ca298e2ad16483be902c59983c5
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059684"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469043"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>结合使用 Postman 和 Microsoft Graph API
 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
@@ -59,8 +59,8 @@ ms.locfileid: "50059684"
 
 Azure AD 应用程序现已具有代表用户提出调用 Mail.Read 请求的权限并成为 User.Read.All 的一个应用。
 
-## <a name="step-4---configuring-authentication"></a>第四步 - 配置身份验证
-设置一些环境变量来检索访问令牌。
+## <a name="step-4---configuring-authentication-in-postman"></a>步骤 4 - 在 Postman 中配置身份验证
+转到"邮政编码"，并确保已选择步骤 1 中创建的工作区。 设置一些环境变量来检索访问令牌。
 
 1. 单击右上角“**无环境**”下拉菜单旁边的眼睛图标。
 2. 单击弹出窗口右上角的“**添加**”。
