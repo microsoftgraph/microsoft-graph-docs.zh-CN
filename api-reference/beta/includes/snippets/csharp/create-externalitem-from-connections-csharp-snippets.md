@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 789f3e12955640b43fb4a15e44cc9c65e52a44f6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f027dcc1241aaa2d7543b3fe336d79084df325eb
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50785462"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51491005"
 ---
 ```csharp
 
@@ -46,7 +46,7 @@ var externalItem = new ExternalItem
     }
 };
 
-await graphClient.Connections["{externalConnection-id}"].Items["{externalItem-id}"]
+await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"]
     .Request()
     .PutAsync(externalItem);
 
