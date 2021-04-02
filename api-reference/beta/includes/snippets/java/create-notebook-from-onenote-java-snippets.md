@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 24d85f97e1f96c473e38348f1af50bc356b523dd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 61ea7640a6f4a46c4a54be9894bce1db0abf5c8d
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50978706"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507712"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Notebook notebook = new Notebook();
-notebook.displayName = "Notebook name";
+notebook.displayName = "My Private notebook";
 
 graphClient.me().onenote().notebooks()
     .buildRequest()

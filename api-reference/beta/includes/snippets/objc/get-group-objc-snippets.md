@@ -1,26 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1316d809a5090d8e655dc23729dce5a964812909
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 4fa459515f759aa42e7af8b1bbbd8eeb43cb17df
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49946233"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507160"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/termStore/groups"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/termStore/groups/{groupId}?$select=*,parentSiteId"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        NSError *jsonError = nil;
-        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphGroup *group = [[MSGraphGroup alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphGroup *group = [[MSGraphGroup alloc] initWithData:data error:&nserror];
 
 }];
 

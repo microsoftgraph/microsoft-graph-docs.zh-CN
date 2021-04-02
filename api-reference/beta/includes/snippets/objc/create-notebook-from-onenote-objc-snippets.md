@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6878ef6ce1ce6a2c5d7755a20454228adfe80fe3
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 9ca3709aeb82852ff5fccacfcb1a3f23085889b5
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48615768"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507716"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphNotebook *notebook = [[MSGraphNotebook alloc] init];
-[notebook setDisplayName:@"Notebook name"];
+[notebook setDisplayName:@"My Private notebook"];
 
 NSError *error;
 NSData *notebookData = [notebook getSerializedDataWithError:&error];
