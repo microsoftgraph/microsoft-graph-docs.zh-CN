@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4aaef54f8e1eaef851c6e58f243789629ead7fed
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c7a7115bb19c1eb2491e4b898f9cf3b973471943
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50793479"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507218"
 ---
 ```javascript
 
@@ -17,10 +17,10 @@ const client = Client.init(options);
 
 const accessReviewInstanceDecisionItem = {
   decision: 'Approve',
-  justification: 'I trust this person'
+  justification: 'This person is still on my team',
 };
 
-await client.api('/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/654b34e7-b48f-4772-a2d4-08f1d0dd014c')
+await client.api('/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19')
     .version('beta')
     .update(accessReviewInstanceDecisionItem);
 

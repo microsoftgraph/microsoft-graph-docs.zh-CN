@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph SDK 批处理请求
 description: 提供有关使用 Microsoft Graph SDK 创建一批 API 请求的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: bda68247c0375447913c3c64aae90ba2c88ab563
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f9caf9ad7f20dd2b6601501fa8c6a8fb1541bde
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953374"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51509007"
 ---
 # <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>使用 Microsoft Graph SDK 批处理请求
 
@@ -183,7 +183,7 @@ final String calendarViewRequestStepId = batchRequestContent
                                           .buildRequest(calendarViewOptions));
 
 // Send the batch request content to the /$batch endpoint
-final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(graphClient);
+final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(batchRequestContent);
 // Get the user response using the id assigned to the request
 final User user = batchResponseContent.getResponseById(meGetId).getDeserializedBody(User.class);
 System.out.println(String.format("Hello %s!", user.displayName));
@@ -429,7 +429,7 @@ final String calendarViewRequestStepId = batchRequestContent
                                           addEventRequestId);
 
 // Send the batch request content to the /$batch endpoint
-final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(client);
+final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(batchRequestContent);
 // Get the user response using the id assigned to the request
 final Event event = batchResponseContent.getResponseById(addEventRequestId).getDeserializedBody(Event.class);
 System.out.println(String.format("New event created with ID: %s", event.id));

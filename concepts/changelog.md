@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 10fd30a83f14d0607c14bb8e6c0ce0188cfa7ac2
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: effe614c907d734b274e93a6994277b9952c7f35
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760705"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473288"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -31,7 +31,11 @@ ms.locfileid: "50760705"
 
 | **更改类型** | **版本** | **说明** |
 |:---|:---|:---|
-| 添加项        | v1.0        | 引入了新资源类型 [applicationTemplate](/graph/api/resources/applicationtemplate.md)。 此资源类型支持从 Azure AD 应用程序库[实例化](/graph/api/applicationtemplate-instantiate.md)、[列出](/graph/api/applicationtemplate-instantiate.md)和[获取](/graph/api/applicationtemplate-get.md)应用程序。
+| 添加项        | v1.0        | 引入了新资源类型 [applicationTemplate](/graph/api/resources/applicationtemplate.md)。 此资源类型支持从 Azure AD 应用程序库[实例化](/graph/api/applicationtemplate-instantiate.md)、[列出](/graph/api/applicationtemplate-list.md)和[获取](/graph/api/applicationtemplate-get.md)应用程序。
+| Addition | beta、v1.0 | 客户服务增加了对 **Application.ReadWrite.OwnedBy** for [applicationTemplate](/graph/api/resources/applicationtemplate.md) [方法](/graph/api/applicationtemplate-instantiate.md)权限的支持。 |
+| 添加项 | v1.0 | 已 **servicePrincipal** resource 的 [signInAudience](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) 属性。|
+| 添加项 | beta | 已向 [应用程序](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) 资源添加 **uniqueName** 属性。|
+
 
 ## <a name="february-2021"></a>2021 年 2 月
 
@@ -3955,7 +3959,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 |更改类型|版本|说明|
 |:---|:---|:---|
-|添加项|v1.0|添加的新实体：<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0&preserve-view=true)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0&preserve-view=true)<br/>|
+|添加项|v1.0|已添加的新实体：<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0&preserve-view=true)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0&preserve-view=true)<br/>|
 |添加项|v1.0|添加的新复杂类型：<br/>[appConfigurationSettingItem](/graph/api/resources/intune-apps-appconfigurationsettingitem?view=graph-rest-1.0&preserve-view=true)<br/>|
 |添加项|v1.0|在 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0&preserve-view=true) 上添加了 [syncLicenses](/graph/api/intune-onboarding-vpptoken-synclicenses?view=graph-rest-1.0&preserve-view=true) 操作 |
 |添加项|v1.0|向 [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0&preserve-view=true) 实体添加了 **vppTokens** 导航属性|
@@ -4085,13 +4089,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
-|新增|beta|新增了实体：<br/>[androidForWorkImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>[androidImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-androidimportedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>[importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta&preserve-view=true)<br/>[iosImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-iosimportedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>[windows10ImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10importedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>[windows10KioskConfiguration](/graph/api/resources/intune-deviceconfig-windows10kioskconfiguration?view=graph-rest-beta&preserve-view=true)<br/>[windowsPhone81ImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>|
-|新增|beta|新增了复杂类型：<br/>[importedWindowsAutopilotDeviceIdentityState](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate?view=graph-rest-beta&preserve-view=true)<br/>|
+|添加项|beta|新增了实体：<br/>[androidForWorkImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>[androidImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-androidimportedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>[importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta&preserve-view=true)<br/>[iosImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-iosimportedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>[windows10ImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10importedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>[windows10KioskConfiguration](/graph/api/resources/intune-deviceconfig-windows10kioskconfiguration?view=graph-rest-beta&preserve-view=true)<br/>[windowsPhone81ImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true)<br/>|
+|添加项|beta|新增了复杂类型：<br/>[importedWindowsAutopilotDeviceIdentityState](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate?view=graph-rest-beta&preserve-view=true)<br/>|
 |添加项|beta|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta&preserve-view=true) 中添加了 [managedDeviceEnrollmentFailureDetails](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmentfailuredetails?view=graph-rest-beta&preserve-view=true) 函数 |
-|新增|beta|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta&preserve-view=true) 中添加了 [managedDeviceEnrollmentFailureDetails](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmentfailuredetails?view=graph-rest-beta&preserve-view=true) 函数 |
-|新增|beta|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta&preserve-view=true) 中添加了 [managedDeviceEnrollmentFailureTrends](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmentfailuretrends?view=graph-rest-beta&preserve-view=true) 函数 |
-|新增|beta|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta&preserve-view=true) 中添加了 [managedDeviceEnrollmentTopFailures](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmenttopfailures?view=graph-rest-beta&preserve-view=true) 函数 |
-|新增|beta|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta&preserve-view=true) 中添加了 [managedDeviceEnrollmentTopFailures](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmenttopfailures?view=graph-rest-beta&preserve-view=true) 函数 |
+|添加项|beta|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta&preserve-view=true) 中添加了 [managedDeviceEnrollmentFailureDetails](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmentfailuredetails?view=graph-rest-beta&preserve-view=true) 函数 |
+|添加项|beta|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta&preserve-view=true) 中添加了 [managedDeviceEnrollmentFailureTrends](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmentfailuretrends?view=graph-rest-beta&preserve-view=true) 函数 |
+|添加项|beta|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta&preserve-view=true) 中添加了 [managedDeviceEnrollmentTopFailures](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmenttopfailures?view=graph-rest-beta&preserve-view=true) 函数 |
+|添加项|beta|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta&preserve-view=true) 中添加了 [managedDeviceEnrollmentTopFailures](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmenttopfailures?view=graph-rest-beta&preserve-view=true) 函数 |
 |更改|beta|从 [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta&preserve-view=true) 实体中删除了 **requireAppVerify**、**requireSafetyNetAttestationBasicIntegrity**、**requireSafetyNetAttestationCertifiedDevice**、**requireGooglePlayServices**、**requireUpToDateSecurityProviders** 和 **requireCompanyPortalAppIntegrity** 属性|
 |更改|beta|从 [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta&preserve-view=true) 实体中删除了 **requireAppVerify**、**requireSafetyNetAttestationBasicIntegrity**、**requireSafetyNetAttestationCertifiedDevice**、**requireGooglePlayServices**、**requireUpToDateSecurityProviders** 和 **requireCompanyPortalAppIntegrity** 属性|
 |更改|beta|从 [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta&preserve-view=true) 实体中删除了 **name**、**modifiedDateTime**、**totalEnrollmentCount** 和 **qrCode** 属性|
@@ -5322,7 +5326,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta        | 使用[架构扩展](extensibility-overview.md#schema-extensions)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>message<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](extensibility-schema-groups.md) |
+| 添加项        | Beta        | 使用[架构扩展](extensibility-overview.md#schema-extensions)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>消息<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](extensibility-schema-groups.md) |
 | 添加项        | Beta        | 提供另一种不需要验证的 .com 虚域就能创建架构扩展定义的方法。有关详细信息，请参阅[架构扩展](extensibility-overview.md#schema-extensions)。 |
 
 ### <a name="extensions--open-extensions"></a>扩展 | 开放扩展
@@ -5330,7 +5334,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 更改          | v1.0 和 beta | 将前述“Office 365 数据扩展”重命名为“开放扩展”。 |
-| 添加项        | Beta          | 已添加支持[开放扩展](extensibility-overview.md#open-extensions)的资源： <br/>管理单元<br/>设备<br/>group<br/>组织<br/>user<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md) |
+| 添加项        | Beta          | 已添加支持[开放扩展](extensibility-overview.md#open-extensions)的资源： <br/>管理单元<br/>设备<br/>group<br/>组织<br/>用户<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md) |
 
 ### <a name="identity-and-access"></a>身份和访问
 

@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 2b988fa0aab5e59e165defc9f953cc267606dd84
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 099f77722e6f08a27dea01200246320cd8ae4eec
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960977"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507823"
 ---
-# <a name="list-identityproviders"></a>列出 identityProvider
-
+# <a name="list-identityproviders-deprecated"></a>列出 identityProviders (弃) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 检索 [identityProviders 对象](../resources/identityprovider.md) 的列表。
 
@@ -31,6 +31,7 @@ ms.locfileid: "50960977"
 |应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
+
 * 全局管理员
 * 外部标识提供程序管理员
 
@@ -143,5 +144,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

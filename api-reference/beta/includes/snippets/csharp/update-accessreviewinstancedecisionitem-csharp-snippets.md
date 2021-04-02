@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 276827de3b11f84f6fe242de22a1dee53b4b4b2a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: e843c20489eaf390de57b7ce058561bf226e6019
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50783214"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507219"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var accessReviewInstanceDecisionItem = new AccessReviewInstanceDecisionItem
 {
     Decision = "Approve",
-    Justification = "I trust this person"
+    Justification = "This person is still on my team"
 };
 
 await graphClient.Me.PendingAccessReviewInstances["{accessReviewInstance-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"]

@@ -5,15 +5,17 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1f9a0a2ecfee85f172b3407068a1fbad18d114d3
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 9a9c03b81292f18ee9af220e97072ce1952b5d47
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473218"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508125"
 ---
 # <a name="get-permission"></a>获取权限
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索网站上 [permission](../resources/permission.md) 对象的属性和关系。
 
@@ -96,14 +98,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "1",
-  "roles": ["read"],
-  "grantedToIdentities": [{
-    "application": {
-      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-      "displayName": "Contoso Time Manager App"
-    }
-  }]
+   "id":"1",
+   "roles":[
+      "read"
+   ],
+   "grantedToIdentities":[
+      {
+         "application":{
+            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+            "displayName":"Contoso Time Manager App"
+         }
+      }
+   ]
 }
 ```
 

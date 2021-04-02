@@ -5,18 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 8a91b4d52dcb3eb9cd889d8406349bd057948208
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fc51780f2f5ab9a783b431d49e19136c1f5e3fef
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961042"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508582"
 ---
-# <a name="get-identityprovider"></a>获取 identityProvider
+# <a name="get-identityprovider-deprecated"></a>获取 identityProvider (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 检索 [identityProvider 的属性和关系](../resources/identityprovider.md)。
 
@@ -31,6 +32,7 @@ ms.locfileid: "50961042"
 |应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
+
 * 全局管理员
 * 外部标识提供程序管理员
 
@@ -41,6 +43,7 @@ ms.locfileid: "50961042"
 ```http
 GET /identityProviders/{id}
 ```
+
 ## <a name="request-headers"></a>请求标头
 
 |名称|说明|
@@ -115,6 +118,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 ### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例 2：仅为 Azure AD B2C (检索特定的 openIDConnectProvider) 
 
 #### <a name="request"></a>请求
@@ -185,5 +189,3 @@ Content-type: application/json
   "scope": "openid"
 }
 ```
-
-

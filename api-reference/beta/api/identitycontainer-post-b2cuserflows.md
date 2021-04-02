@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: edb0a8eab1406c3bcdd3856c158b4fb936228eb5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 620d6a395c87c8507a9fd6c2bb9d5742a8b560da
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435537"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508874"
 ---
 # <a name="create-b2cidentityuserflow"></a>创建 b2cIdentityUserFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435537"
 
 创建新的 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50435537"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -56,16 +56,16 @@ POST /identity/b2cUserFlows
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|必需。 用户流名称。 该名称将在创建后进行 `B2C_1` 预笔写。|
-|userFlowType|String|必需。 要创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
-|userFlowTypeVersion|浮点|必需。 用户流版本。|
+|id|String|必填。 用户流名称。 该名称将在创建后进行 `B2C_1` 预笔式处理。|
+|userFlowType|字符串|必填。 要创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowTypeVersion|浮点|必填。 用户流版本。|
 |isLanguageCustomizationEnabled|Boolean|可选。 确定是否在 Azure AD B2C 用户流中启用语言自定义。 默认情况下，不会为 Azure AD B2C 用户流启用语言自定义。|
-|defaultLanguageTag|String|可选。  指定请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
+|defaultLanguageTag|String|可选。  指定在请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将响应代码和位置标头与 URI 返回到为此请求创建的 `201 Created` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象，并添加前缀 `B2C_1` 的名称。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法将返回 响应代码和 Location 标头，其 URI 为为此请求创建的 `201 Created` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象，并添加前缀 `B2C_1` 到名称中。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="examples"></a>示例
 
@@ -251,10 +251,10 @@ Content-length: 154
     "userFlowTypeVersion": 1,
     "apiConnectorConfiguration":{
         "postFederationSignup":{
-            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+            "@odata.id": "{apiConnectorId}"
         },
         "postAttributeCollection":{
-            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+            "@odata.id": "{apiConnectorId}"
         }
     }
 }
@@ -284,7 +284,7 @@ Content-length: 154
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
-**注意：** 该属性 `apiConnectorConfiguration` 始终返回' {} 值。 若要查看导航属性的完整值，请使用 [此](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) API。
+**注意：** 属性 `apiConnectorConfiguration` 始终返回 ' {} ' 值。 若要使用导航属性查看完整值，请使用 [此](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) API。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 065413d8d5abb3bd60075f12882d2a0696b5aaf8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6aa2d3a4a5c45dc7b9e0b168eac7402404fcb982
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435579"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507845"
 ---
 # <a name="list-identityapiconnectors"></a>列出 identityApiConnectors
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435579"
 
 读取 [identityApiConnector 对象](../resources/identityapiconnector.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50435579"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | APIConnectors.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。  |
-| Application                            | APIConnectors.ReadWrite.All |
+| 应用程序                            | APIConnectors.ReadWrite.All |
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -58,7 +58,7 @@ GET /identity/apiConnectors/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [identityApiConnector](../resources/identityapiconnector.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [identityApiConnector](../resources/identityapiconnector.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -115,16 +115,38 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors",
     "value": [
-      {
-          "id": "<guid>",
-          "displayName": "Test API",
-          "targetUrl": "https://someapi.com/api/endpoint",
-          "authenticationConfiguration": {
-            "@odata.type": "#microsoft.graph.basicAuthentication",
-            "username": "<USERNAME>",
-            "password": "******"
-          }
-      }
+        {
+            "id": "<guid>",
+            "displayName": "Test API",
+            "targetUrl": "https://someapi.com/api/endpoint",
+            "authenticationConfiguration": {
+              "@odata.type": "#microsoft.graph.basicAuthentication",
+              "username": "<USERNAME>",
+              "password": "******"
+            }
+        },
+        {
+            "id": "<guid>",
+            "displayName": "My API connector",
+            "targetUrl": "https://someotherapi.com/api/endpoint",
+            "authenticationConfiguration": {
+                "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
+                "certificateList": [
+                    {
+                        "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
+                        "notAfter": 1666350522,
+                        "notBefore": 1508670522,
+                        "isActive": true
+                    },
+                    {
+                        "thumbprint": "1AB255CC895477798BA418B378255204304897BC",
+                        "notAfter": 1766350522,
+                        "notBefore": 1608670522,
+                        "isActive": false
+                    }
+                ]
+            }
+        }
   ]
 }
 ```

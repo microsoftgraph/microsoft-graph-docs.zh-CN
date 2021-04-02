@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 17773f540b367adcf75486ae64178bfd36a991f8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ab2bce3665170083d9fb22d4fe1e95ac3e2e78b9
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50968922"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507222"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ContactFolder contactFolder = new ContactFolder();
-contactFolder.displayName = "displayName-value";
+contactFolder.displayName = "Family";
 
 graphClient.me().contactFolders("{id}").childFolders()
     .buildRequest()
