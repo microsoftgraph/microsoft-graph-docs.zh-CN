@@ -1,17 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5e58ec2673866309b8c28e76b1b71b28f71791ba
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8834849992a1ce381ee7eb906ded3cd2ebea3ea2
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50981322"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573232"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
+requestOptions.add(new HeaderOption("Prefer", "return=representation"));
 requestOptions.add(new HeaderOption("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\""));
 
 PlannerPlan plannerPlan = new PlannerPlan();

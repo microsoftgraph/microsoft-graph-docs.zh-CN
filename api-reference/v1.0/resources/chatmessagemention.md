@@ -1,26 +1,26 @@
 ---
 title: chatMessageMention 资源类型
-description: '表示了 chatmessage 实体中提及的项。 提及可用于用户、团队、机器人或频道。 '
+description: '表示 chatMessage 实体中的提及。 提及内容可以提及用户、团队、机器人或频道。 '
 localization_priority: Normal
-author: nkramer
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fbb65b95884b5666aaf915b4239d3b2a401b9d3f
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 7af1260cbddfcecef21fc85ccf057c028681b061
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582014"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582758"
 ---
-# <a name="chatmessagemention-resource-type"></a><span data-ttu-id="7c18a-104">chatMessageMention 资源类型</span><span class="sxs-lookup"><span data-stu-id="7c18a-104">chatMessageMention resource type</span></span>
+# <a name="chatmessagemention-resource-type"></a><span data-ttu-id="3650c-104">chatMessageMention 资源类型</span><span class="sxs-lookup"><span data-stu-id="3650c-104">chatMessageMention resource type</span></span>
 
-<span data-ttu-id="7c18a-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7c18a-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3650c-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3650c-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="7c18a-106">表示 [了 chatmessage](./chatmessage.md) 实体中提及的项。</span><span class="sxs-lookup"><span data-stu-id="7c18a-106">Represents a mention in a [chatMessage](./chatmessage.md) entity.</span></span> <span data-ttu-id="7c18a-107">提及可用于 [用户](user.md)、 [团队](team.md)、机器人或 [频道](channel.md)。</span><span class="sxs-lookup"><span data-stu-id="7c18a-107">The mention can be to a [user](user.md), [team](team.md), bot, or [channel](channel.md).</span></span> 
+<span data-ttu-id="3650c-106">表示 [chatMessage 实体中的](chatmessage.md) 提及。</span><span class="sxs-lookup"><span data-stu-id="3650c-106">Represents a mention in a [chatMessage](chatmessage.md) entity.</span></span> <span data-ttu-id="3650c-107">提及的内容可以是用户[、](user.md)[团队、](team.md)机器人或[频道](channel.md)。</span><span class="sxs-lookup"><span data-stu-id="3650c-107">The mention can be to a [user](user.md), [team](team.md), bot, or [channel](channel.md).</span></span> 
 
-<span data-ttu-id="7c18a-108">在包含一个或多个提及的 **了 chatmessage** 对象中，邮件正文 **内容** 属性代表 HTML 中的聊天消息。</span><span class="sxs-lookup"><span data-stu-id="7c18a-108">In a **chatMessage** object that contains one or more mentions, the message body **content** property represents the chat message in HTML.</span></span> <span data-ttu-id="7c18a-109">它将每个提及的 **mentionText** 封装在 HTML `at` 元素中，其中包含一个与 `id` 提及的 **id** 属性相对应的属性。</span><span class="sxs-lookup"><span data-stu-id="7c18a-109">It encloses the **mentionText** of each mention in an HTML `at` element, with an `id` attribute that corresponds to the **id** property of the mention.</span></span>
+<span data-ttu-id="3650c-108">在包含 **一个或多个提及内容的 chatMessage** 对象中，消息正文 **内容** 属性表示 HTML 格式的聊天消息。</span><span class="sxs-lookup"><span data-stu-id="3650c-108">In a **chatMessage** object that contains one or more mentions, the message body **content** property represents the chat message in HTML.</span></span> <span data-ttu-id="3650c-109">它将每个 **提及的内容的 mentionText** 包含在 HTML 元素中，并包含对应于提及项 `at` 的 `id` **id** 属性的属性。</span><span class="sxs-lookup"><span data-stu-id="3650c-109">It encloses the **mentionText** of each mention in an HTML `at` element, with an `id` attribute that corresponds to the **id** property of the mention.</span></span>
 
-<span data-ttu-id="7c18a-110">例如，聊天邮件包含两个提及，分别提及 "Megan" 和 "Alex" 文本。</span><span class="sxs-lookup"><span data-stu-id="7c18a-110">As an example, a chat message contains two mentions, with the mention text "Megan" and "Alex" respectively.</span></span> <span data-ttu-id="7c18a-111">其 body **内容** 属性按 `at` 如下所示为两个提及指定元素：</span><span class="sxs-lookup"><span data-stu-id="7c18a-111">Its body **content** property specifies `at` elements for the two mentions as follows:</span></span>
+<span data-ttu-id="3650c-110">例如，聊天消息包含两个提及内容，分别包含提及文本"Megan"和"Alex"。</span><span class="sxs-lookup"><span data-stu-id="3650c-110">As an example, a chat message contains two mentions, with the mention text "Megan" and "Alex" respectively.</span></span> <span data-ttu-id="3650c-111">其 body **content** 属性 `at` 指定两个提及项的元素，如下所示：</span><span class="sxs-lookup"><span data-stu-id="3650c-111">Its body **content** property specifies `at` elements for the two mentions as follows:</span></span>
 
 ``` json
 "body": {
@@ -29,24 +29,24 @@ ms.locfileid: "48582014"
 }
 ```
 
-<span data-ttu-id="7c18a-112">在 **content** 属性中，第一个提及的 HTML `id` 属性为0。</span><span class="sxs-lookup"><span data-stu-id="7c18a-112">In the **content** property, the first mention has an HTML `id` attribute of 0.</span></span> <span data-ttu-id="7c18a-113">这对应于**chatMessageMention**的第一个实例的**id**属性，也是0。</span><span class="sxs-lookup"><span data-stu-id="7c18a-113">This corresponds to the **id** property of that first instance of **chatMessageMention**, which is also 0.</span></span>
+<span data-ttu-id="3650c-112">在 **content** 属性中，第一个提及具有 HTML `id` 属性 0。</span><span class="sxs-lookup"><span data-stu-id="3650c-112">In the **content** property, the first mention has an HTML `id` attribute of 0.</span></span> <span data-ttu-id="3650c-113">这对应于 **chatMessageMention** 的第一个实例的 **id** 属性，这也是 0。</span><span class="sxs-lookup"><span data-stu-id="3650c-113">This corresponds to the **id** property of that first instance of **chatMessageMention**, which is also 0.</span></span>
 
-<span data-ttu-id="7c18a-114">第二个提及的 `id` 属性为1，与第二个实例的 **id** 属性相匹配，即1。</span><span class="sxs-lookup"><span data-stu-id="7c18a-114">The second mention has an `id` attribute of 1, matching the **id** property of the second instance, which is 1.</span></span>
+<span data-ttu-id="3650c-114">第二个提及具有与第二个实例的 id 属性匹配的属性 `id` 1，即 1。 </span><span class="sxs-lookup"><span data-stu-id="3650c-114">The second mention has an `id` attribute of 1, matching the **id** property of the second instance, which is 1.</span></span>
 
-<span data-ttu-id="7c18a-115">有关此示例的更完整上下文，请参阅 [列出通道邮件答复](/graph/api/channel-list-messagereplies)。</span><span class="sxs-lookup"><span data-stu-id="7c18a-115">For a fuller context of the example, see [List channel message replies](/graph/api/channel-list-messagereplies).</span></span>
+<span data-ttu-id="3650c-115">有关示例的更完整上下文，请参阅 [列表频道消息回复](../api/chatmessage-list-replies.md#example)。</span><span class="sxs-lookup"><span data-stu-id="3650c-115">For a fuller context of the example, see [List channel message replies](../api/chatmessage-list-replies.md#example).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7c18a-116">属性</span><span class="sxs-lookup"><span data-stu-id="7c18a-116">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3650c-116">属性</span><span class="sxs-lookup"><span data-stu-id="3650c-116">Properties</span></span>
 
-| <span data-ttu-id="7c18a-117">属性</span><span class="sxs-lookup"><span data-stu-id="7c18a-117">Property</span></span>| <span data-ttu-id="7c18a-118">类型</span><span class="sxs-lookup"><span data-stu-id="7c18a-118">Type</span></span>|<span data-ttu-id="7c18a-119">说明</span><span class="sxs-lookup"><span data-stu-id="7c18a-119">Description</span></span>|
+| <span data-ttu-id="3650c-117">属性</span><span class="sxs-lookup"><span data-stu-id="3650c-117">Property</span></span>| <span data-ttu-id="3650c-118">类型</span><span class="sxs-lookup"><span data-stu-id="3650c-118">Type</span></span>|<span data-ttu-id="3650c-119">说明</span><span class="sxs-lookup"><span data-stu-id="3650c-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7c18a-120">id</span><span class="sxs-lookup"><span data-stu-id="7c18a-120">id</span></span>|<span data-ttu-id="7c18a-121">Int32</span><span class="sxs-lookup"><span data-stu-id="7c18a-121">Int32</span></span>|<span data-ttu-id="7c18a-122">在指定的 **了 chatmessage**中提到的实体的索引。</span><span class="sxs-lookup"><span data-stu-id="7c18a-122">Index of an entity being mentioned in the specified **chatMessage**.</span></span> <span data-ttu-id="7c18a-123">与邮件正文中对应的标记中的 {index} 值相匹配 `<at id="{index}">` 。</span><span class="sxs-lookup"><span data-stu-id="7c18a-123">Matches the {index} value in the corresponding `<at id="{index}">` tag in the message body.</span></span>|
-|<span data-ttu-id="7c18a-124">mentionText</span><span class="sxs-lookup"><span data-stu-id="7c18a-124">mentionText</span></span>|<span data-ttu-id="7c18a-125">string</span><span class="sxs-lookup"><span data-stu-id="7c18a-125">string</span></span>|<span data-ttu-id="7c18a-126">用于表示提及的字符串。</span><span class="sxs-lookup"><span data-stu-id="7c18a-126">String used to represent the mention.</span></span> <span data-ttu-id="7c18a-127">例如，用户的显示名称（团队名称）。</span><span class="sxs-lookup"><span data-stu-id="7c18a-127">For example, a user's display name, a team name.</span></span>|
-|<span data-ttu-id="7c18a-128">所</span><span class="sxs-lookup"><span data-stu-id="7c18a-128">mentioned</span></span>|[<span data-ttu-id="7c18a-129">identitySet</span><span class="sxs-lookup"><span data-stu-id="7c18a-129">identitySet</span></span>](identityset.md)|<span data-ttu-id="7c18a-130">实体 (提到的用户、应用程序、团队或频道) 。</span><span class="sxs-lookup"><span data-stu-id="7c18a-130">The entity (user, application, team, or channel) that was mentioned.</span></span>  <span data-ttu-id="7c18a-131">如果它是 @mentioned 的频道或团队，则了解 identityset 包含一个 **会话** 属性，该属性提供团队/通道的 ID 和代表团队或频道的 **conversationIdentityType** 属性。</span><span class="sxs-lookup"><span data-stu-id="7c18a-131">If it was a channel or team that was @mentioned, the identitySet contains a **conversation** property giving the ID of the team/channel, and a **conversationIdentityType** property that represents either the team or channel.</span></span>|
+|<span data-ttu-id="3650c-120">id</span><span class="sxs-lookup"><span data-stu-id="3650c-120">id</span></span>|<span data-ttu-id="3650c-121">Int32</span><span class="sxs-lookup"><span data-stu-id="3650c-121">Int32</span></span>|<span data-ttu-id="3650c-122">指定的 **chatMessage** 中提及的实体的索引。</span><span class="sxs-lookup"><span data-stu-id="3650c-122">Index of an entity being mentioned in the specified **chatMessage**.</span></span> <span data-ttu-id="3650c-123">匹配邮件正文中相应标记中的 `<at id="{index}">` {index} 值。</span><span class="sxs-lookup"><span data-stu-id="3650c-123">Matches the {index} value in the corresponding `<at id="{index}">` tag in the message body.</span></span>|
+|<span data-ttu-id="3650c-124">mentionText</span><span class="sxs-lookup"><span data-stu-id="3650c-124">mentionText</span></span>|<span data-ttu-id="3650c-125">string</span><span class="sxs-lookup"><span data-stu-id="3650c-125">string</span></span>|<span data-ttu-id="3650c-126">用于表示提及的字符串。</span><span class="sxs-lookup"><span data-stu-id="3650c-126">String used to represent the mention.</span></span> <span data-ttu-id="3650c-127">例如，用户的显示名称，一个团队名称。</span><span class="sxs-lookup"><span data-stu-id="3650c-127">For example, a user's display name, a team name.</span></span>|
+|<span data-ttu-id="3650c-128">提及</span><span class="sxs-lookup"><span data-stu-id="3650c-128">mentioned</span></span>|[<span data-ttu-id="3650c-129">identitySet</span><span class="sxs-lookup"><span data-stu-id="3650c-129">identitySet</span></span>](identityset.md)|<span data-ttu-id="3650c-130">已 (用户、应用程序、团队或频道) 实体。</span><span class="sxs-lookup"><span data-stu-id="3650c-130">The entity (user, application, team, or channel) that was mentioned.</span></span>  <span data-ttu-id="3650c-131">如果它是已注册的频道或团队@mentioned identitySet 包含一个提供团队/频道 ID 的对话属性，以及一个代表团队或频道的 **conversationIdentityType** 属性。</span><span class="sxs-lookup"><span data-stu-id="3650c-131">If it was a channel or team that was @mentioned, the identitySet contains a **conversation** property giving the ID of the team/channel, and a **conversationIdentityType** property that represents either the team or channel.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="7c18a-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7c18a-132">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3650c-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3650c-132">JSON representation</span></span>
 
-<span data-ttu-id="7c18a-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7c18a-133">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3650c-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3650c-133">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
