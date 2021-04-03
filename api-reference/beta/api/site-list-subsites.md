@@ -6,12 +6,12 @@ title: 列出 SharePoint 网站的子网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4e69e016f1a83db1b4a2f23e4829ef28d3e3cff0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 369904ca3c2038b662a1c2dc6120f05126655c14
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475791"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582646"
 ---
 # <a name="enumerate-subsites"></a>枚举子网站
 
@@ -39,6 +39,10 @@ ms.locfileid: "50475791"
 GET /sites/{site-id}/sites
 ```
 
+## <a name="example"></a>示例
+
+### <a name="request"></a>请求
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
@@ -64,7 +68,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ---
 
 
-## <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

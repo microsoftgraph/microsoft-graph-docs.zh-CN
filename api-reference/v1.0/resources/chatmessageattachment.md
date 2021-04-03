@@ -4,29 +4,31 @@ description: 表示聊天消息实体的附件。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
-author: nkramer
-ms.openlocfilehash: 0b6cf799de05a7e1e816fe002280d51beb18c9ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: RamjotSingh
+ms.openlocfilehash: c8ef68d33137b42adbec22b8231c52d05dc2eecb
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059143"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582772"
 ---
 # <a name="chatmessageattachment-resource-type"></a>chatMessageAttachment 资源类型
 
 命名空间：microsoft.graph
 
-表示 [了 chatmessage](./chatmessage.md) 实体的附件。
+表示聊天消息实体的附件。
+
+类型实体作为 `chatMessageAttachment` [chatMessage](chatmessage.md)实体的一部分作为[获取](../api/channel-list-messages.md)频道消息 API 的一部分返回。
 
 ## <a name="properties"></a>属性
-| 属性  | 类型 | 说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|string| 只读。 附件的唯一 id。|
-|contentType| 字符串 | 内容附件的媒体类型。 它可以具有以下值： <br><ul><li>"引用：附件" 是指向其他文件的链接。 使用指向对象的链接填充 contentURL。<br></li><li>文件： Raw 文件附件。 使用 data：格式的文件的 base64 编码填充 contenturl 字段。<br></li><li>image/：带有指定图像类型（如 image/png、image/jpeg、image/gif）的图像类型。 使用 data：格式的文件的 base64 编码填充 contentUrl 字段。<br></li><li>视频/：具有指定格式的视频类型。 Ex： video/.。 使用 data：格式的文件的 base64 编码填充 contentUrl 字段。<br></li><li>音频/：指定格式的音频类型。 Ex：音频/wmw。 使用 data：格式的文件的 base64 编码填充 contentUrl 字段。<br></li><li>应用程序/卡片类型：使用卡片类型指定要使用的确切卡片格式的富卡片附件类型。 使用该卡片的 json 格式设置内容。 卡片类型支持的值包括：<br><ul><li>应用程序/vnd.ms-excel：可包含文本、语音、图像、按钮和输入字段的任意组合的丰富卡片。 将 content 属性设置为一个自适应卡片对象。</li><li>应用程序/vnd.ms-excel：播放动画的富卡片。 将 content 属性设置为 AnimationCardobject。</li><li>vnd.ms-excel：一种播放音频文件的丰富卡片。 将 content 属性设置为 AudioCard 对象。</li><li>vnd.ms-excel：一种播放视频的丰富卡片。 将 content 属性设置为 VideoCard 对象。</li><li>应用程序/vnd.ms-excel：英雄卡片。 将 content 属性设置为 HeroCard 对象。</li><li>application/vnd.ms-excel：缩略图卡片。 将 content 属性设置为 ThumbnailCard 对象。</li><li>应用程序/vnd.ms-excel：一个收据卡。 将 content 属性设置为 ReceiptCard 对象。</li><li>应用程序/vnd.ms-excel：登录的用户的卡。 将 content 属性设置为 SignInCard 对象。</ul></ul>|
-|contentUrl|string|附件内容的 URL。 支持的协议： http、https、文件和数据。|
-|content|字符串|附件的内容。 如果附件是一个丰富的卡片，请将该属性设置为富卡片对象。 此属性和 contentUrl 相互排斥。|
+|id|string| 只读。 附件的唯一 ID。|
+|contentType| string | 内容附件的媒体类型。 它可以具有以下值： <br><ul><li>`reference`：Attachment 是指向其他文件的链接。 使用指向对象的链接填充 contentURL。</li><li>Bot Framework 的 Attachment 对象支持的任何 [contentType](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`：代码段。 </li><li>`application/vnd.microsoft.card.announcement`：通知标头。 </li>|
+|contentUrl|string|附件内容的 URL。 支持的协议：http、https、文件和数据。|
+|content|string|附件的内容。 如果附件是富 [卡片，](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)将 属性设置为富卡片对象。 此属性和 contentUrl 相互排斥。|
 |name|string|附件的名称。|
-|thumbnailUrl| 字符串 |如果通道支持使用替代的较小的内容或 contentUrl 的缩略图图像的 URL。 例如，如果将 contentType 设置为 application/word 并将 contentUrl 设置为 Word 文档的位置，则可以包含表示该文档的缩略图图像。 频道可以显示缩略图图像而不是文档。 当用户单击图像时，通道将打开文档。|
+|thumbnailUrl| string |指向缩略图图像的 URL，如果频道支持使用其他较小格式的内容或 contentUrl，可以使用该图像。 例如，如果将 contentType 设置为 application/word，并且将 contentUrl 设置为 Word 文档的位置，则可能包含表示文档的缩略图图像。 通道可以显示缩略图图像而不是文档。 当用户单击该图像时，通道将打开文档。|
 
 ## <a name="json-representation"></a>JSON 表示形式
  下面是资源的 JSON 表示形式

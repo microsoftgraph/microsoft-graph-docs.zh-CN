@@ -1,16 +1,16 @@
 ---
 title: 列出聊天
 description: 检索用户的聊天列表。
-author: bhartono
+author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0416a123b0694b3b2ffcd6756334fcf891da0b82
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: e72ea6783e37d7018fe4f6b1ff7063ff10f6b835
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775764"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582310"
 ---
 # <a name="list-chats"></a>列出聊天
 

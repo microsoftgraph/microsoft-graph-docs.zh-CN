@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 42025545ed4244b74b684acb05cde5b0e908ede9
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: bc5606cbd748410add91fbd3b0d99319b4c96c4e
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202112"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582583"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -29,9 +29,10 @@ ms.locfileid: "51202112"
 |[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
 |[获取消息 Delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的增量消息。 |
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的消息 |
-|[创建频道消息发布](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
-|[创建回复频道消息发布](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
+|[创建频道消息发布](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
+|[创建回复频道消息发布](../api/chatmessage-post-replies.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
 |[获取文件文件夹](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
+|[列出选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
 |[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员列表。|
 |[添加频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
 |[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
@@ -43,6 +44,7 @@ ms.locfileid: "51202112"
 |[获取频道中的选项卡](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到频道的特定选项卡。|
 |[更新频道中的选项卡](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | 更新频道中的选项卡的属性。|
 |[从频道中删除选项卡](../api/channel-delete-tabs.md) | 无 | 从频道中删除（取消固定）选项卡。|
+
 
 ## <a name="properties"></a>属性
 
@@ -56,6 +58,18 @@ ms.locfileid: "51202112"
 |webUrl|String|将转到 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|频道的类型。 可在创建期间设置，但不可更改。 可能的值有：`standard` - 频道继承父团队的成员列表；`private` - 频道可以具有父团队中所有成员的子集的成员。
 |createdDateTime|dateTimeOffset|只读。 创建频道的时间戳。|
+
+### <a name="instance-attributes"></a>实例属性
+
+实例属性是具有特殊行为的属性。这些属性是临时的，并且 a) 定义服务应执行的行为或 b) 提供短期的属性值，例如过期项目的下载 URL。
+
+| 属性名称| 类型   | 说明
+|:-----------------------|:-------|:-------------------------|
+|@microsoft. graph channelCreationMode|string|指示频道处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
+
+> **注意**：`channelCreationMode` 是采用值 `migration`的枚举。
+
+有关 POST 请求示例，请参阅[请求（在迁移状态下创建频道）](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state)。
 
 ## <a name="relationships"></a>关系
 

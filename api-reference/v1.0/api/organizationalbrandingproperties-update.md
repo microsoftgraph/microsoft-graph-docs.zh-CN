@@ -2,21 +2,21 @@
 title: 更新 organizationalBrandingProperties
 description: 更新 organizationalBrandingProperties 对象的属性。
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d93b8052dd4db67fc4fa8a4db5bb3669990658b7
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: f6b1d4327ce036f9623d4ad62aa0d872746eb20f
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469463"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582807"
 ---
 # <a name="update-organizationalbrandingproperties"></a>更新 organizationalBrandingProperties
 
 更新 [organizationalBrandingProperties 对象](../resources/organizationalbrandingproperties.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

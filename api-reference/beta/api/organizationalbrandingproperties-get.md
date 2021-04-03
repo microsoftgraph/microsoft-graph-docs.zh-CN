@@ -2,15 +2,15 @@
 title: 获取 organizationalBrandingProperties
 description: 检索 organizationalBrandingProperties 对象的属性和关系。
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 298518df883bd95396f710b081ff41daf619e910
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d5193b03bdf820b2a8142dd23c6dce1a742314ef
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944016"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582723"
 ---
 # <a name="get-organizationalbrandingproperties"></a>获取 organizationalBrandingProperties
 

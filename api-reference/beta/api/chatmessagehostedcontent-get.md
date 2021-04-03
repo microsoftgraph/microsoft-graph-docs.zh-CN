@@ -2,15 +2,15 @@
 title: 获取 chatMessageHostedContent
 description: 检索 chatMessageHostedContent 对象的属性和关系。
 localization_priority: Normal
-author: clearab
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 56c96c812c1c5f8e8a6d471224bf8faef2733045
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 23a62d1d25c442d4f305f3b68228712c97eff05b
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947750"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582660"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 
@@ -24,11 +24,21 @@ ms.locfileid: "50947750"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+### <a name="permissions-for-channel"></a>频道权限
+
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 对于 **用户** 或 **聊天** 资源：Chat.Read、Chat.ReadWrite<br/><br/>对于 **频道** 资源：ChannelMessage.Read.All、Group.Read.All、Group.Read.WriteAll |
+|委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.Read.WriteAll |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 对于 **用户** 或 **聊天** 资源：Chat.Read.All、Chat.ReadWrite.All<br/><br/>对于 **频道** 资源：ChannelMessage.Read.Group*、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
+|应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
+
+### <a name="permissions-for-chat"></a>聊天权限
+
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:--------------------------------------------|
+|委派（工作或学校帐户）| Chat.Read、Chat.ReadWrite|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序| Chat.Read.All、Chat.ReadWrite.All|
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -37,12 +47,18 @@ ms.locfileid: "50947750"
 
 ## <a name="http-request"></a>HTTP 请求
 
+**获取频道消息中的托管内容**
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /chats/{id}/messages/{id}/hostedContents/{id}
-GET /users/{id}/chats/{id}/messages/{id}/hostedContents/{id}
-GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents/{hosted-content-id}
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents/{hosted-content-id}
+```
+
+**获取聊天消息中的托管内容**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
+GET /users/{user-id}/chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -65,58 +81,39 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-hosted-content"></a>示例 1：获取托管内容
+### <a name="example-1-get-hosted-content-for-message-in-a-chat"></a>示例 1：获取聊天中消息的托管内容
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagehostedcontent_1"
+  "name": "get_hostedcontentchatmessage_1"
 }-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}
+```http
+GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagehostedcontent-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagehostedcontent-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
 
-> [!NOTE]
-> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessageHostedContent"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages('1615971548136')/hostedContents/$entity",
+    "id": "aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv",
+    "contentBytes": null,
+    "contentType": null
 }
 ```
 
@@ -124,35 +121,17 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagehostedcontent_2"
+  "name": "get_hostedcontentchatmessage_2"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
+```http
+GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv/$value
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagehostedcontent-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagehostedcontent-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
+
+响应包含正文中托管内容的字节。 `content-type` header 指定托管内容类型。
 
 <!-- {
   "blockType": "response",
@@ -162,8 +141,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id
 
 ```http
 HTTP/1.1 200 OK
-Content-type: image/jpeg
-Content-length: 201
+content-type: image/png
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

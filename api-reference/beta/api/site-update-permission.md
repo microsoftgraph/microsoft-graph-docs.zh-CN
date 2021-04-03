@@ -5,15 +5,17 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 24f84eed8550b133387275873e63634703cbfd5e
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 27f006e5a2059662903f710ac994e176e1d51a22
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473603"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582597"
 ---
 # <a name="update-permission"></a>更新权限
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [网站上](../resources/permission.md) 的权限对象。
 
@@ -100,14 +102,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "2",
-    "roles": ["read"],
-    "grantedToIdentities": [{
-      "application": {
-        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Fabrikam Dashboard App"
+   "id":"2",
+   "roles":[
+      "read"
+   ],
+   "grantedToIdentities":[
+      {
+         "application":{
+            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+            "displayName":"Fabrikam Dashboard App"
+         }
       }
-    }]
+   ]
 }
 ```
 

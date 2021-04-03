@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 319a7cb78c90c2d6955a301b1ac0f5947b8ff79a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 48c27f473250976d9572d3dbb5a8f0b479a5ea24
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413260"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573233"
 ---
 ```objc
 
@@ -14,6 +14,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/planner/plans/{id}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
+[urlRequest setValue:@"return=representation" forHTTPHeaderField:@"Prefer"];
 [urlRequest setValue:@"W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"" forHTTPHeaderField:@"If-Match"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

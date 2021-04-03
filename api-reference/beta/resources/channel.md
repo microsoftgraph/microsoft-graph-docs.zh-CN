@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7842a397f3e8f07994cbc9de6f7d6e4afd560a9b
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: ad1c2da7d5c9656796e8f70bdc74d4444ffd1188
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714295"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582639"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -31,9 +31,9 @@ ms.locfileid: "49714295"
 |[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
 |[获取消息 Delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的增量消息。 |
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的消息 |
-|[获取所有频道消息](../api/channels-getallmessages.md)|[channel](channel.md) 集合 | 获取用户参与的所有频道中的所有消息。 |
-|[创建频道消息发布](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
-|[创建回复频道消息发布](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
+|[获取所有频道消息](../api/channel-getallmessages.md)|[channel](channel.md) 集合 | 获取用户参与的所有频道中的所有消息。 |
+|[创建频道消息发布](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
+|[创建回复频道消息发布](../api/chatmessage-post-replies.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
 |[获取文件文件夹](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
 |[列出选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
 |[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员列表。|

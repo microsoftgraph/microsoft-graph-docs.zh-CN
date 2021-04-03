@@ -1,16 +1,16 @@
 ---
 title: 获取聊天
 description: 检索一个聊天。
-author: bhartono
+author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4041abae0053de6adebad2ce57c2a9bcb400bbc5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4734cb09b948bb8e900d6a16c660d606e4cbaf88
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775820"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582688"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -60,7 +60,7 @@ GET /chats/{chat-id}
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+以下示例显示了相应的响应。
 
 >**注意：** 为提高可读性，缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {

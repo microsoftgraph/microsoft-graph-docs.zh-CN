@@ -1,16 +1,16 @@
 ---
 title: 聊天： getAllMessages
 description: 从用户参与的所有聊天中获取消息。
-author: laujan
+author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cb23dd527a4f1bf78863602c1c8b01fa0e848b9d
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 12b645943297d34504bb4d4586ecbd8d3e79b7c6
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597567"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582653"
 ---
 # <a name="chats-getallmessages"></a>聊天： getAllMessages
 

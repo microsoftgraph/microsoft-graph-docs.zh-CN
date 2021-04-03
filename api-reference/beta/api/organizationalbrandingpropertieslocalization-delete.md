@@ -2,15 +2,15 @@
 title: 删除本地化的组织BrandingProperties
 description: 删除 organizationalBrandingProperties 以用于特定本地化。
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 938a45dfe29d9473d57571f7b10e5693d8d8de05
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9fb7062000dedb6a9062b3e7441cc80a303bba84
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943850"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582702"
 ---
 # <a name="delete-localized-organizationalbrandingproperties"></a>删除本地化的组织BrandingProperties
 

@@ -1,16 +1,16 @@
 ---
 title: 聊天资源类型
 description: 聊天是一个或多个参与者之间的 chatMessages 集合。
-author: clearab
+author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f9162e39e1326d89818f959e846ccde5f04350e9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 51980c166652ea2a2d863049e5877b3cc6d632ba
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776814"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582786"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50776814"
 
 ## <a name="methods"></a>方法
 
-|  方法       |  返回类型  | 说明|
+|  方法       |  返回类型  | 说明| 
 |:---------------|:--------|:----------|
 |[创建聊天](../api/chat-post.md) | [聊天](chat.md) | 创建新聊天。| 
 |[获取聊天](../api/chat-get.md) | [聊天](chat.md) | 读取聊天的属性和关系。| 
@@ -31,6 +31,8 @@ ms.locfileid: "50776814"
 |[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天中添加用户。| 
 |[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的单个用户。| 
 |[删除聊天成员](../api/chat-delete-members.md)|无|从聊天中删除用户。|
+|[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的消息。 | 
+|[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 | 
 |[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 获取用户与应用之间的一对一聊天 |
 |[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天网站中安装 (关联的会议) 。|
 |[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取安装在聊天会话和关联会议 (中的特定) 。|
@@ -49,7 +51,7 @@ ms.locfileid: "50776814"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-| id| 字符串| 聊天的唯一标识符。 只读。|
+| id| String| 聊天的唯一标识符。 只读。|
 | topic| String|   (聊天) 主题或主题。 仅适用于群聊。|
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  上次更改聊天的日期和时间或成员列表。 只读。|

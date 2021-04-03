@@ -1,22 +1,22 @@
 ---
 title: 更新 chatMessage
 description: 更新 chatMessage 的 policyViolation 属性。
-author: laujan
+author: RamjotSingh
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 06ceb5aae99955062c9d409eb69dac5fdef0d6d9
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: dc4afbd651bb6d4c498240dd49bac56a586446b2
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515602"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582625"
 ---
 # <a name="update-chatmessage"></a>更新 chatMessage
 
-更新 [chatMessage](../resources/chatMessage.md) 对象。 只能 **更新 chatMessage** 的 **policyViolation** 属性。
+更新 [chatMessage](../resources/chatMessage.md) 对象。 只能更新 **chatMessage** 的 **policyViolation** 属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,6 +30,8 @@ ms.locfileid: "50515602"
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
+PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -59,11 +61,9 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
   "blockType": "request",
   "name": "chatMessage.PatchPolicyViolation.All"
 }-->
-
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
-Content-Length: 248
 
 {
   "policyViolation": {
@@ -96,7 +96,6 @@ Content-Length: 248
 ---
 
 
-<!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>响应
 
 下面是一个响应示例。

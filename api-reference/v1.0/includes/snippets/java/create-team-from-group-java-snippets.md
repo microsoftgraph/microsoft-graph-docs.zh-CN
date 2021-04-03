@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fa3c997a9c4eb3b5e37b2025c8e5ba2cbe809c0e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4d66f123a13a9ef96665b38a406a49f79ee14e0d
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50983374"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51509274"
 ---
 ```java
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 Team team = new Team();
 team.additionalDataManager().put("template@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/teamsTemplates('standard')"));
-team.additionalDataManager().put("group@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/groups('groupId')"));
+team.additionalDataManager().put("group@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/groups('71392b2f-1765-406e-86af-5907d9bdb2ab')"));
 
 graphClient.teams()
     .buildRequest()

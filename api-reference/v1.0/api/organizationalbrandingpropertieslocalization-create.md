@@ -2,15 +2,15 @@
 title: 创建本地化的组织BrandingProperties
 description: 为特定区域设置创建组织品牌。
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 03ecb7805a47216bb4d4643c9a0b3036139069ad
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e2cae9d0ca03805d023e415afb4817c0c49a407e
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949289"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582177"
 ---
 # <a name="create-localized-organizationalbrandingproperties"></a>创建本地化的组织BrandingProperties
 

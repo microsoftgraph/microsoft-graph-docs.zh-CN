@@ -2,15 +2,15 @@
 title: 创建 organizationalBrandingProperties
 description: 创建组织品牌。
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: de4392b1fb66f174c1f7ca4643100b2ac4fbd9f6
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f8dc56ae2041d8b3dd26830ae5f8ba6cffb577b1
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949450"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582828"
 ---
 # <a name="create-organizationalbrandingproperties"></a>创建 organizationalBrandingProperties
 

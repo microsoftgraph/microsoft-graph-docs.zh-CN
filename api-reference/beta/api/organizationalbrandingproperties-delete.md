@@ -2,15 +2,15 @@
 title: 删除 organizationalBrandingProperties
 description: 删除 organizationalBrandingProperties。
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 56035ccd7d0f8e829e239552d2d38226080c5318
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: eba5a039143c55b4ac77610ac07a5a721ae3a3f4
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955750"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582730"
 ---
 # <a name="delete-organizationalbrandingproperties"></a>删除 organizationalBrandingProperties
 

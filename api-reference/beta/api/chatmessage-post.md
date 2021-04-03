@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 34c423e5b1a55068e9bc2f1cb79d34986e4b216b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2595ac4d8c9a1cafc1465a074221cd705fa20771
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947864"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582674"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -18,7 +18,7 @@ ms.locfileid: "50947864"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[频道或聊天中创建新的 chatMessage。](../resources/chatmessage.md) [](../resources/channel.md) [](../resources/chat.md)
+在指定的频道或聊天中[发送新的](../resources/channel.md)[chatMessage。](../resources/chatmessage.md) [](../resources/chat.md)
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
@@ -44,26 +44,22 @@ ms.locfileid: "50947864"
 
 ## <a name="http-request"></a>HTTP 请求
 
-### <a name="sending-message-in-a-channel"></a>在频道中发送消息
+**在频道中发送消息**
 <!-- { "blockType": "ignored" } -->
-
 ```http
-POST /teams/{id}/channels/{id}/messages
+POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
-### <a name="sending-replies-in-a-channel"></a>在频道中发送回复
+**在频道中发送回复**
 <!-- { "blockType": "ignored" } -->
-
 ```http
-POST /teams/{id}/channels/{id}/messages/{id}/replies
+POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
-### <a name="sending-message-in-a-chat"></a>在聊天中发送消息
+**在聊天中发送消息**
 <!-- { "blockType": "ignored" } -->
-
 ```http
-POST /chats/{id}/messages
-POST /users/{id}/chats/{id}/messages
+POST /chats/{chat-id}/messages
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -84,21 +80,19 @@ POST /users/{id}/chats/{id}/messages
 
 ## <a name="examples"></a>示例
 
-在下面的示例中，URL 可以使用所述的[HTTP](#http-request)语法向聊天[](chat-post-message.md)发送消息、向频道发送消息或向[](channel-post-message.md)频道[发送回复](channel-post-messagereply.md)。
+在下面的示例中，URL 可以使用所述的[HTTP](#http-request)语法向聊天[](chat-post-messages.md)发送消息、向频道发送消息或向[](channel-post-messages.md)频道[发送回复](chatmessage-post-replies.md)。
 
-### <a name="example-1-hello-world"></a>示例 1：Hello World
+### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>示例 1：在频道中发送 Hello World 消息
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_2"
+  "name": "post_chatmessage_1"
 }-->
-
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -107,70 +101,54 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
-
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
-    "id": "id-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616990032035",
     "replyToId": null,
-    "etag": "id-value",
+    "etag": "1616990032035",
     "messageType": "message",
-    "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T03:53:52.035Z",
+    "lastModifiedDateTime": "2021-03-29T03:53:52.035Z",
     "lastEditedDateTime": null,
-    "deleted": false,
+    "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616990032035?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990032035&parentMessageId=1616990032035",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
-        "contentType": "html",
+        "contentType": "text",
         "content": "Hello World"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
     "attachments": [],
     "mentions": [],
@@ -178,18 +156,17 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-mentions"></a>示例 2：@mentions
+### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions频道消息中通知用户
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_3"
+  "name": "post_chatmessage_2"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -212,20 +189,6 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-3-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -238,36 +201,41 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
-    "id": "id-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616965872395",
     "replyToId": null,
-    "etag": "id-value",
+    "etag": "1616965872395",
     "messageType": "message",
-    "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-28T21:11:12.395Z",
+    "lastModifiedDateTime": "2021-03-28T21:11:12.395Z",
     "lastEditedDateTime": null,
-    "deleted": false,
+    "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616965872395?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616965872395&parentMessageId=1616965872395",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
         "contentType": "html",
         "content": "Hello World <at id=\"0\">Jane Smith</at>"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
     "attachments": [],
     "mentions": [
@@ -290,21 +258,19 @@ Content-length: 160
 }
 ```
 
-### <a name="example-3-cards"></a>示例 3：卡片
+### <a name="example-3-send-message-containing-cards"></a>示例 3：发送包含卡片的邮件
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
 > **注意：** 附件的 ID 必须是唯一的，并且可以是随机生成的新 GUID。 但是，附件的 ID 在 _body_ 和 attachments 元素中 _必须_ 相同。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_4"
+  "name": "post_chatmessage_3"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -325,24 +291,6 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-4-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-4-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-4-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-4-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -355,30 +303,31 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('bdb7bcda-9c3b-4341-b9a9-f52bf9a23407')/channels('19%3A786524f437c042b68bac5c0511ad6be2%40thread.skype')/messages/$entity",
-    "id": "1554837297516",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616991851162",
     "replyToId": null,
-    "etag": "1554837297516",
+    "etag": "1616991851162",
     "messageType": "message",
-    "createdDateTime": "2019-04-09T19:14:57.516Z",
-    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T04:24:11.162Z",
+    "lastModifiedDateTime": "2021-03-29T04:24:11.162Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991851162?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991851162&parentMessageId=1616991851162",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -386,12 +335,16 @@ Content-length: 160
         "contentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+    },
     "attachments": [
         {
             "id": "74d20c7f34aa4a7fb74e2b30004247c5",
             "contentType": "application/vnd.microsoft.card.thumbnail",
             "contentUrl": null,
-            "content": "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\n\\r\\n\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\n\\r\\n\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
+            "content": "{  \"title\": \"This is an example of posting a card\",  \"subtitle\": \"<h3>This is the subtitle</h3>\",  \"text\": \"Here is some body text. <br>\\\\And a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\\\And below that is some buttons:\",  \"buttons\": [    {      \"type\": \"messageBack\",      \"title\": \"Login to FakeBot\",      \"text\": \"login\",      \"displayText\": \"login\",      \"value\": \"login\"    }  ]}",
             "name": null,
             "thumbnailUrl": null
         }
@@ -401,21 +354,19 @@ Content-length: 160
 }
 ```
 
-### <a name="example-4-file-attachments"></a>示例 4：文件附件
+### <a name="example-4-send-a-message-with-file-attachment-in-it"></a>示例 4：发送包含文件附件的邮件
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
 >**注意：** 文件必须已经在 SharePoint 中。 若要查找文件属性，请获取 **文件的 driveItem。** 例如，/drives/{id}/items/{id}。 附件 ID 是 **driveItem** 的 **eTag** 中的 GUID，附件 contentURL 是 **driveItem** 文件夹的 **webUrl** 加上 **driveItem** 的名称，附件名称是 **driveItem** 的名称。 
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_5"
+  "name": "post_chatmessage_4"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -433,24 +384,6 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-5-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-5-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-5-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-5-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -465,34 +398,39 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('13a99602-a5d3-4fed-99d2-7dc3ffe3730d')/channels('19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2')/messages/$entity",
-    "id": "1589481435511",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616991899452",
     "replyToId": null,
-    "etag": "1589481435511",
+    "etag": "1616991899452",
     "messageType": "message",
-    "createdDateTime": "2020-05-14T18:37:15.511Z",
-    "lastModifiedDateTime": "2020-07-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T04:24:59.452Z",
+    "lastModifiedDateTime": "2021-03-29T04:24:59.452Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2/1589481435511?groupId=13a99602-a5d3-4fed-99d2-7dc3ffe3730d&tenantId=e5648b2b-1dea-445a-ab65-4f9326c2bd10&createdTime=1589481435511&parentMessageId=1589481435511",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991899452?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991899452&parentMessageId=1616991899452",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "598efcd4-e549-402a-9602-0b50201faebe",
-            "displayName": "MOD Administrator",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
         "contentType": "html",
         "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
     "attachments": [
         {
@@ -509,7 +447,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-sending-inline-images-along-with-the-message"></a>示例 5：随邮件一起发送内嵌图像
+### <a name="example-5-send-inline-images-along-with-the-message"></a>示例 5：随邮件一起发送内嵌图像
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -518,14 +456,12 @@ Content-type: application/json
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_6"
+  "name": "post_chatmessage_5"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages
 Content-type: application/json
 
 {
@@ -542,24 +478,6 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-6-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-6-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-6-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-6-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -572,42 +490,38 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('13a99602-a5d3-4fed-99d2-7dc3ffe3730d')/channels('19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2')/messages/$entity",
-    "id": "1596261390440",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages/$entity",
+    "id": "1616991962672",
     "replyToId": null,
-    "etag": "1596261390440",
+    "etag": "1616991962672",
     "messageType": "message",
-    "createdDateTime": "2020-08-01T05:56:30.44Z",
-    "lastModifiedDateTime": "2020-09-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T04:26:02.672Z",
+    "lastModifiedDateTime": "2021-03-29T04:26:02.672Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
-    "chatId": null,
+    "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
     "importance": "normal",
     "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2/1596261390440?groupId=13a99602-a5d3-4fed-99d2-7dc3ffe3730d&tenantId=e5648b2b-1dea-445a-ab65-4f9326c2bd10&createdTime=1596261390440&parentMessageId=1596261390440",
+    "webUrl": null,
+    "channelIdentity": null,
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "598efcd4-e549-402a-9602-0b50201faebe",
-            "displayName": "MOD Administrator",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
         "contentType": "html",
-        "content": "<div><div>\n<div><span><img height=\"297\" src=\"https://graph.microsoft.com/beta/teams/233ae542-57e7-4593-b5bf-50549df74710/channels/19:8af03d1e70f5455fbb74d36acbe2957f@thread.tacv2/messages/1596261390440/hostedContents/aWQ9eF8wLWNhbmFyeWN1cy1kNS1jNjU0M2NjNjhkNjdlMzY1ZDUwODQ1MGU1MTRhNjEwNSx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLWNhbmFyeWN1cy1kNS1jNjU0M2NjNjhkNjdlMzY1ZDUwODQ1MGU1MTRhNjEwNS92aWV3cy9pbWdv/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span>\n\n</div>\n\n\n</div>\n</div>"
-    },
-    "channelIdentity": {
-        "teamId": "13a99602-a5d3-4fed-99d2-7dc3ffe3730d",
-        "channelId": "19:8af03d1e70f5455fbb74d36acbe2957f@thread.tacv2"
+        "content": "<div><div><div><span><img height=\"297\" src=\"https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1616991962672/hostedContents/aWQ9eF8wLXd1cy1kNy1kZTczYzM0YTYzZGVkYjViMDVlNjYyY2Y1NzQ5MGU5Yyx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kNy1kZTczYzM0YTYzZGVkYjViMDVlNjYyY2Y1NzQ5MGU5Yy92aWV3cy9pbWdv/$value\" width=\"297\" style=\"vertical-align:bottom; width:297px; height:297px\"></span></div></div></div>"
     },
     "attachments": [],
     "mentions": [],
@@ -615,7 +529,7 @@ Content-length: 160
 }
 ```
 
-### <a name="example-6-card-with-inline-images"></a>示例 6：具有内联图像的卡片
+### <a name="example-6-send-a-card-with-inline-images"></a>示例 6：发送包含内联图像的卡片
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -624,14 +538,12 @@ Content-length: 160
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_7"
+  "name": "post_chatmessage_6"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -659,24 +571,6 @@ Content-type: application/json
     }]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-7-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-7-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-7-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-7-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -690,13 +584,13 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('13a99602-a5d3-4fed-99d2-7dc3ffe3730d')/channels('19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2')/messages/$entity",
-    "id": "1597182390555",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616992043931",
     "replyToId": null,
-    "etag": "1597182390555",
+    "etag": "1616992043931",
     "messageType": "message",
-    "createdDateTime": "2020-08-11T21:46:30.555Z",
-    "lastModifiedDateTime": "2020-09-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T04:27:23.931Z",
+    "lastModifiedDateTime": "2021-03-29T04:27:23.931Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
@@ -704,15 +598,15 @@ Content-type: application/json
     "chatId": null,
     "importance": "normal",
     "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2/1597182390555?groupId=13a99602-a5d3-4fed-99d2-7dc3ffe3730d&tenantId=e5648b2b-1dea-445a-ab65-4f9326c2bd10&createdTime=1597182390555&parentMessageId=1597182390555",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616992043931?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616992043931&parentMessageId=1616992043931",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "598efcd4-e549-402a-9602-0b50201faebe",
-            "displayName": "MOD Administrator",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -721,17 +615,19 @@ Content-type: application/json
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "channelIdentity": {
-        "teamId": "13a99602-a5d3-4fed-99d2-7dc3ffe3730d",
-        "channelId": "19:8af03d1e70f5455fbb74d36acbe2957f@thread.tacv2"
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
-    "attachments": [{
-        "id": "74d20c7f34aa4a7fb74e2b30004247c5",
-        "contentType": "application/vnd.microsoft.card.adaptive",
-        "contentUrl": null,
-        "content": "{\r\n  \"type\": \"AdaptiveCard\",\r\n  \"body\": [\r\n    {\r\n      \"items\": [\r\n        {\r\n          \"columns\": [\r\n            {\r\n              \"width\": \"auto\",\r\n              \"items\": [\r\n                {\r\n                  \"size\": \"medium\",\r\n                  \"url\": \"https://graph.microsoft.com/beta/teams/13a99602-a5d3-4fed-99d2-7dc3ffe3730d/channels/19:b770d7701fdb40eab5386bf2ab2bcb41@thread.skype/messages/1597182390555/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtY2FuYXJ5Y3VzLWQxLTlkNWFkNGUzZTUzMmVlNjE2Mzg4ZTQ5NTRjMDg1NjAwL3ZpZXdzL2ltZ28=/$value\",\r\n                  \"height\": \"auto\",\r\n                  \"type\": \"Image\"\r\n                },\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"text\": \"SHADES\",\r\n                  \"weight\": \"bolder\",\r\n                  \"type\": \"TextBlock\"\r\n                }\r\n              ],\r\n              \"type\": \"Column\"\r\n            },\r\n            {\r\n              \"width\": \"stretch\",\r\n              \"items\": [\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"text\": \"08/31/2019 19:30:00\",\r\n                  \"type\": \"TextBlock\"\r\n                },\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"text\": \"Final\",\r\n                  \"spacing\": \"None\",\r\n                  \"type\": \"TextBlock\"\r\n                },\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"size\": \"extraLarge\",\r\n                  \"text\": \"40 - 7\",\r\n                  \"type\": \"TextBlock\"\r\n                }\r\n              ],\r\n              \"spacing\": \"Medium\",\r\n              \"separator\": true,\r\n              \"type\": \"Column\"\r\n            },\r\n            {\r\n              \"width\": \"auto\",\r\n              \"items\": [\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"size\": \"medium\",\r\n                  \"url\": \"https://graph.microsoft.com/beta/teams/13a99602-a5d3-4fed-99d2-7dc3ffe3730d/channels/19:b770d7701fdb40eab5386bf2ab2bcb41@thread.skype/messages/1597182390555/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtY2FuYXJ5Y3VzLWQxLTFhZDQwYWNlMmFhZWE3MGM3YjgxMTIxMjE4MjM2ZTkzL3ZpZXdzL2ltZ28=/$value\",\r\n                  \"height\": \"auto\",\r\n                  \"type\": \"Image\"\r\n                },\r\n                {\r\n                  \"horizontalAlignment\": \"center\",\r\n                  \"text\": \"SKINS\",\r\n                  \"weight\": \"bolder\",\r\n                  \"type\": \"TextBlock\"\r\n                }\r\n              ],\r\n              \"spacing\": \"Medium\",\r\n              \"separator\": true,\r\n              \"type\": \"Column\"\r\n            }\r\n          ],\r\n          \"type\": \"ColumnSet\"\r\n        }\r\n      ],\r\n      \"type\": \"Container\"\r\n    }\r\n  ],\r\n  \"speak\": \"The Seattle Seahawks beat the Carolina Panthers 40-7\",\r\n  \"$schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\r\n  \"version\": \"1.2\"\r\n}",
-        "name": null,
-        "thumbnailUrl": null
-    }],
+    "attachments": [
+        {
+            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+            "contentType": "application/vnd.microsoft.card.adaptive",
+            "contentUrl": null,
+            "content": "{  \"type\": \"AdaptiveCard\",  \"body\": [    {      \"items\": [        {          \"columns\": [            {              \"width\": \"auto\",              \"items\": [                {                  \"size\": \"medium\",                  \"url\": \"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616992043931/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQyLWEyNDc1OWVjOGZiZDRmOWFjYTkxN2M5N2EyOGNlNTQ1L3ZpZXdzL2ltZ28=/$value\",                  \"height\": \"auto\",                  \"type\": \"Image\"                },                {                  \"horizontalAlignment\": \"center\",                  \"text\": \"SHADES\",                  \"weight\": \"bolder\",                  \"type\": \"TextBlock\"                }              ],              \"type\": \"Column\"            },            {              \"width\": \"stretch\",              \"items\": [                {                  \"horizontalAlignment\": \"center\",                  \"text\": \"08/31/2019 19:30:00\",                  \"type\": \"TextBlock\"                },                {                  \"horizontalAlignment\": \"center\",                  \"text\": \"Final\",                  \"spacing\": \"None\",                  \"type\": \"TextBlock\"                },                {                  \"horizontalAlignment\": \"center\",                  \"size\": \"extraLarge\",                  \"text\": \"40 - 7\",                  \"type\": \"TextBlock\"                }              ],              \"spacing\": \"Medium\",              \"separator\": true,              \"type\": \"Column\"            },            {              \"width\": \"auto\",              \"items\": [                {                  \"horizontalAlignment\": \"center\",                  \"size\": \"medium\",                  \"url\": \"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616992043931/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ1LTg1ZmNmMDQyNDc3MDJjNjkxODdiOTMwZjcwNTY3OTFhL3ZpZXdzL2ltZ28=/$value\",                  \"height\": \"auto\",                  \"type\": \"Image\"                },                {                  \"horizontalAlignment\": \"center\",                  \"text\": \"SKINS\",                  \"weight\": \"bolder\",                  \"type\": \"TextBlock\"                }              ],              \"spacing\": \"Medium\",              \"separator\": true,              \"type\": \"Column\"            }          ],          \"type\": \"ColumnSet\"        }      ],      \"type\": \"Container\"    }  ],  \"speak\": \"The Seattle Seahawks beat the Carolina Panthers 40-7\",  \"$schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",  \"version\": \"1.2\"}",
+            "name": null,
+            "thumbnailUrl": null
+        }
+    ],
     "mentions": [],
     "reactions": []
 }

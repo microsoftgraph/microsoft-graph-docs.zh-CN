@@ -2,15 +2,15 @@
 title: 更新本地化的组织品牌设置
 description: 更新特定本地化的 organizationalbrandingproperties 对象的属性。
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 289623ba5b9ea526e30b4f62c7230c6993bfbebd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6a38ca2fea0e8026180256f23e6ba59811e5910d
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959716"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582800"
 ---
 # <a name="update-localized-organizationalbrandingproperties"></a>更新本地化的组织品牌设置
 

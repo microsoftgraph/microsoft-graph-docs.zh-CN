@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c08dda343d3c580f3c6ede7ff14338a103aa3b38
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 89219a4416c8f1dc6242eb5c54385d49e29a7cf4
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48608033"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573221"
 ---
 ```objc
 
@@ -14,6 +14,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/planner/tasks/{task-id}/progressTaskBoardFormat"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
+[urlRequest setValue:@"return=representation" forHTTPHeaderField:@"Prefer"];
 [urlRequest setValue:@"W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"" forHTTPHeaderField:@"If-Match"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

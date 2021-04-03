@@ -1,32 +1,32 @@
 ---
 title: chatMessagePolicyViolation 资源类型
-description: 代表聊天消息上的策略违规。 策略冲突通常由数据丢失防护 (DLP) 应用程序设置。
-author: clearab
+description: 表示聊天消息上的策略违反。 策略违反通常由 DLP 应用程序或 DLP (数据丢失) 设置。
+author: RamjotSingh
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 458e6440806ac57248bb87c6313d78b4845d647f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c65b6dd1d07db43286a8cf9923f4a94f0855b34
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081984"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582268"
 ---
 # <a name="chatmessagepolicyviolation-resource-type"></a>chatMessagePolicyViolation 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表聊天消息上的策略违规。 策略冲突通常由数据丢失防护 (DLP) 应用程序设置。 DLP 应用程序监视包含用户不应发送的数据的邮件的聊天。
+表示聊天消息上的策略违反。 策略违反通常由 DLP 应用程序或 DLP (数据丢失) 设置。 DLP 应用程序监视包含用户不应该发送的数据的消息的聊天。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|dlpAction|**chatMessagePolicyViolationDlpActionType**|DLP 提供程序对包含敏感内容的邮件执行的操作。 支持的值为： <li>无</li><li>NotifySender--将冲突的发件人通知给发件人，但允许读者阅读邮件。</li><li>BlockAccess--阻止读者阅读邮件。</li><li>BlockAccessExternal--阻止组织外部的用户阅读邮件，同时允许组织内的用户阅读邮件。</li>|
-|justificationText|string|覆盖策略违规时邮件发件人提供的两端对齐文本。|
-|policyTip|[chatMessagePolicyViolationPolicyTip](chatmessagepolicyviolationpolicytip.md)|向邮件发件人显示邮件被标记为冲突的原因的信息。 |
-|userAction|**chatMessagePolicyViolationUserActionType**|指示用户对 DLP 提供程序阻止的邮件执行的操作。 支持的值为： <li>无</li><li>Override</li><li>ReportFalsePositive</li>当 DLP 提供程序更新邮件以阻止敏感内容时，userAction 不是必需的。|
-|verdictDetails|**chatMessagePolicyViolationVerdictDetailsType**|指示发件人在响应策略冲突时可能采取的操作。 支持的值为： <li>无</li><li>AllowFalsePositiveOverride--允许发件人将 policyViolation 声明为 DLP 应用及其规则中的错误，并允许读者在 dlpAction 隐藏邮件时再次查看邮件。</li><li>AllowOverrideWithoutJustification--允许发件人 overriide DLP 违规，并允许读者在 dlpAction 隐藏邮件时再次查看邮件，而无需提供有关此操作的说明。 </li><li>AllowOverrideWithJustification--允许发件人 overriide DLP 违规，并允许读者在提供这样做的说明之后再次查看该邮件（如果 dlpAction 已隐藏）。</li>AllowOverrideWithoutJustification 和 AllowOverrideWithJustification 是相互排斥的。|
+|dlpAction|**chatMessagePolicyViolationDlpActionType**|DLP 提供程序对包含敏感内容的邮件采取的操作。 支持的值为： <li>无</li><li>NotifySender -- 通知发件人违反，但允许读者阅读邮件。</li><li>BlockAccess -- 阻止读者阅读邮件。</li><li>BlockAccessExternal -- 阻止组织外部的用户阅读邮件，同时允许组织内部的用户阅读邮件。</li>|
+|justificationText|string|替代策略违反时邮件发件人提供的理由文本。|
+|policyTip|[chatMessagePolicyViolationPolicyTip](chatmessagepolicyviolationpolicytip.md)|要向邮件发件人显示有关邮件被标记为违反的原因的信息。 |
+|userAction|**chatMessagePolicyViolationUserActionType**|指示用户对 DLP 提供程序阻止的邮件采取的操作。 支持的值为： <li>无</li><li>Override</li><li>ReportFalsePositive</li>当 DLP 提供程序更新邮件以阻止敏感内容时，不需要 userAction。|
+|verdictDetails|**chatMessagePolicyViolationVerdictDetailsType**|指示发件人为响应策略违反可能采取的操作。 支持的值为： <li>无</li><li>AllowFalsePositiveOverride -- 允许发件人在 DLP 应用及其规则中声明策略Violation 为错误，并允许读者在 dlpAction 隐藏邮件时再次查看邮件。</li><li>AllowOverrideWithoutJustification -- 允许发件人过度处理 DLP 冲突，并允许读者在 dlpAction 隐藏邮件时再次查看邮件，而无需提供这样做的说明。 </li><li>AllowOverrideWithJustification -- 允许发件人过度处理 DLP 冲突，并允许读者在 dlpAction 隐藏邮件后再次查看邮件，并提供这样做的说明。</li>AllowOverrideWithoutJustification 和 AllowOverrideWithJustification 是互斥的。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

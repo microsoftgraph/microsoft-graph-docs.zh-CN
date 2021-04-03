@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c2434253ef303123ac7d64695cdbbc6172d7989c
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 842ccdcad3f185eb64572c91ce5b82d673a1d43f
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626228"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582562"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>chatMessageHostedContent 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "50626228"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 chatMessageHostedContent](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) 集合 | 检索消息的 **chatMessageHostedContent** 列表。 |
+| [列出 chatMessageHostedContent](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) 集合 | 检索消息的 **chatMessageHostedContent** 列表。 |
 | [获取 chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | 读取 **chatMessageHostedContent** 对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
@@ -34,14 +34,14 @@ chatMessageHostedContent 派生自 [teamworkHostedContent](teamworkhostedcontent
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id            |String       | 只读。 表示聊天消息托管的内容标识符。|
+|id            |字符串       | 只读。 表示聊天消息托管的内容标识符。|
 |contentBytes  |Edm.Binary   | 只写。 发布新的聊天消息托管内容时，表示有效负载的字节数。 这些字符串表示为 base64Encoded 字符串。|
-|contentType   |String       | 只写。 发布新的聊天消息托管内容时，表示内容类型，如图像/png。|
+|contentType   |String       | 只写。 发布新的聊天消息托管内容时，表示内容类型，如 image/png。|
 
 ### <a name="instance-attributes"></a>实例属性
 
 实例属性是具有特殊行为的属性。
-这些属性是临时的，可定义服务应执行的行为或提供短期属性值，如过期项目的下载 URL。
+这些属性是临时的，可以定义服务应执行的行为或提供短期属性值，如过期项目的下载 URL。
 
 | 属性名称                     | 类型   | 说明
 |:----------------------------------|:-------|:--------------------------------
