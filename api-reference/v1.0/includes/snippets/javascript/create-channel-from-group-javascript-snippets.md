@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ced46f440c47aac091f0de2db116a155cf7f8f10
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8627aa3dc6068cb5e7bc2e640953628f9b620bbe
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50800741"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508452"
 ---
 ```javascript
 
@@ -21,7 +21,7 @@ const channel = {
   membershipType: 'standard'
 };
 
-await client.api('/teams/{id}/channels')
+await client.api('/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels')
     .post(channel);
 
 ```

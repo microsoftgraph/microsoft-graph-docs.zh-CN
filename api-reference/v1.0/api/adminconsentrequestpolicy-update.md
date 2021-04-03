@@ -5,32 +5,32 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1eee4e0bf4ee57715953367ea2f0b43e9cc2e34f
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 57c74a79541bd2244792035d64587769336abfd3
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469551"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51509169"
 ---
-# <a name="update-adminconsentrequestpolicy"></a><span data-ttu-id="9aace-103">更新 adminConsentRequestPolicy</span><span class="sxs-lookup"><span data-stu-id="9aace-103">Update adminConsentRequestPolicy</span></span>
+# <a name="update-adminconsentrequestpolicy"></a><span data-ttu-id="019d7-103">更新 adminConsentRequestPolicy</span><span class="sxs-lookup"><span data-stu-id="019d7-103">Update adminConsentRequestPolicy</span></span>
 
-<span data-ttu-id="9aace-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9aace-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="019d7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="019d7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9aace-105">更新 [adminConsentRequestPolicy 对象](../resources/adminconsentrequestpolicy.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="9aace-105">Update the properties of an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.</span></span>
+<span data-ttu-id="019d7-105">更新 [adminConsentRequestPolicy 对象](../resources/adminconsentrequestpolicy.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="019d7-105">Update the properties of an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9aace-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="9aace-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="019d7-106">权限</span><span class="sxs-lookup"><span data-stu-id="019d7-106">Permissions</span></span>
 
-<span data-ttu-id="9aace-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9aace-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="019d7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="019d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9aace-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9aace-109">Permission type</span></span>|<span data-ttu-id="9aace-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9aace-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="019d7-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="019d7-109">Permission type</span></span>|<span data-ttu-id="019d7-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="019d7-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9aace-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9aace-111">Delegated (work or school account)</span></span>|<span data-ttu-id="9aace-112">Policy.ReadWrite.ConsentRequest、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9aace-112">Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All</span></span>|
-|<span data-ttu-id="9aace-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9aace-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9aace-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9aace-114">Not supported.</span></span>|
-|<span data-ttu-id="9aace-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9aace-115">Application</span></span>|<span data-ttu-id="9aace-116">Policy.ReadWrite.ConsentRequest、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9aace-116">Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All</span></span>|
+|<span data-ttu-id="019d7-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="019d7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="019d7-112">Policy.ReadWrite.ConsentRequest、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="019d7-112">Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All</span></span>|
+|<span data-ttu-id="019d7-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="019d7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="019d7-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="019d7-114">Not supported.</span></span>|
+|<span data-ttu-id="019d7-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="019d7-115">Application</span></span>|<span data-ttu-id="019d7-116">Policy.ReadWrite.ConsentRequest、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="019d7-116">Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All</span></span>|
 
-<span data-ttu-id="9aace-117">代表用户进行呼叫时，用户需要属于全局 [管理员](/azure/active-directory/roles/permissions-reference) 目录角色。</span><span class="sxs-lookup"><span data-stu-id="9aace-117">When calling on behalf of a user, the user needs to belong to the [Global Administrator](/azure/active-directory/roles/permissions-reference) directory role.</span></span>
+<span data-ttu-id="019d7-117">代表用户进行呼叫时，用户需要属于全局 [管理员](/azure/active-directory/roles/permissions-reference) 目录角色。</span><span class="sxs-lookup"><span data-stu-id="019d7-117">When calling on behalf of a user, the user needs to belong to the [Global Administrator](/azure/active-directory/roles/permissions-reference) directory role.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="9aace-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9aace-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="019d7-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="019d7-118">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -40,35 +40,37 @@ ms.locfileid: "51469551"
 PUT /policies/adminConsentRequestPolicy
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9aace-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="9aace-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="019d7-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="019d7-119">Request headers</span></span>
 
-|<span data-ttu-id="9aace-120">名称</span><span class="sxs-lookup"><span data-stu-id="9aace-120">Name</span></span>|<span data-ttu-id="9aace-121">说明</span><span class="sxs-lookup"><span data-stu-id="9aace-121">Description</span></span>|
+|<span data-ttu-id="019d7-120">名称</span><span class="sxs-lookup"><span data-stu-id="019d7-120">Name</span></span>|<span data-ttu-id="019d7-121">说明</span><span class="sxs-lookup"><span data-stu-id="019d7-121">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="9aace-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9aace-122">Authorization</span></span>|<span data-ttu-id="9aace-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9aace-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="9aace-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9aace-125">Content-Type</span></span>|<span data-ttu-id="9aace-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="9aace-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="019d7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="019d7-122">Authorization</span></span>|<span data-ttu-id="019d7-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="019d7-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="019d7-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="019d7-125">Content-Type</span></span>|<span data-ttu-id="019d7-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="019d7-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9aace-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="9aace-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="019d7-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="019d7-128">Request body</span></span>
 
-<span data-ttu-id="9aace-129">在请求正文中，提供 [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9aace-129">In the request body, supply a JSON representation of the [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.</span></span>
+<span data-ttu-id="019d7-129">在请求正文中，提供 [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="019d7-129">In the request body, supply a JSON representation of the [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.</span></span>
 
-<span data-ttu-id="9aace-130">下表显示更新 [adminConsentRequestPolicy 时所需的属性](../resources/adminconsentrequestpolicy.md)。</span><span class="sxs-lookup"><span data-stu-id="9aace-130">The following table shows the properties that are required when you update the [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md).</span></span>
+<span data-ttu-id="019d7-130">下表显示更新 [adminConsentRequestPolicy 时所需的属性](../resources/adminconsentrequestpolicy.md)。</span><span class="sxs-lookup"><span data-stu-id="019d7-130">The following table shows the properties that are required when you update the [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md).</span></span>
 
-|<span data-ttu-id="9aace-131">属性</span><span class="sxs-lookup"><span data-stu-id="9aace-131">Property</span></span>|<span data-ttu-id="9aace-132">类型</span><span class="sxs-lookup"><span data-stu-id="9aace-132">Type</span></span>|<span data-ttu-id="9aace-133">说明</span><span class="sxs-lookup"><span data-stu-id="9aace-133">Description</span></span>|
+|<span data-ttu-id="019d7-131">属性</span><span class="sxs-lookup"><span data-stu-id="019d7-131">Property</span></span>|<span data-ttu-id="019d7-132">类型</span><span class="sxs-lookup"><span data-stu-id="019d7-132">Type</span></span>|<span data-ttu-id="019d7-133">说明</span><span class="sxs-lookup"><span data-stu-id="019d7-133">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9aace-134">isEnabled</span><span class="sxs-lookup"><span data-stu-id="9aace-134">isEnabled</span></span>|<span data-ttu-id="9aace-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="9aace-135">Boolean</span></span>|<span data-ttu-id="9aace-136">指定是启用还是禁用管理员同意请求功能。</span><span class="sxs-lookup"><span data-stu-id="9aace-136">Specifies whether the admin consent request feature is enabled or disabled.</span></span>|
-|<span data-ttu-id="9aace-137">notifyReviewers</span><span class="sxs-lookup"><span data-stu-id="9aace-137">notifyReviewers</span></span>|<span data-ttu-id="9aace-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="9aace-138">Boolean</span></span>|<span data-ttu-id="9aace-139">指定审阅者是否将收到通知。</span><span class="sxs-lookup"><span data-stu-id="9aace-139">Specifies whether reviewers will receive notifications.</span></span>|
-|<span data-ttu-id="9aace-140">remindersEnabled</span><span class="sxs-lookup"><span data-stu-id="9aace-140">remindersEnabled</span></span>|<span data-ttu-id="9aace-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="9aace-141">Boolean</span></span>|<span data-ttu-id="9aace-142">指定审阅者是否将收到提醒电子邮件。</span><span class="sxs-lookup"><span data-stu-id="9aace-142">Specifies whether reviewers will receive reminder emails.</span></span>|
-|<span data-ttu-id="9aace-143">requestDurationInDays</span><span class="sxs-lookup"><span data-stu-id="9aace-143">requestDurationInDays</span></span>|<span data-ttu-id="9aace-144">Int32</span><span class="sxs-lookup"><span data-stu-id="9aace-144">Int32</span></span>|<span data-ttu-id="9aace-145">指定请求在未应用决策时自动过期之前处于活动状态的持续时间。</span><span class="sxs-lookup"><span data-stu-id="9aace-145">Specifies the duration the request is active before it automatically expires if no decision is applied.</span></span>|
-|<span data-ttu-id="9aace-146">reviewers</span><span class="sxs-lookup"><span data-stu-id="9aace-146">reviewers</span></span>|<span data-ttu-id="9aace-147">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合</span><span class="sxs-lookup"><span data-stu-id="9aace-147">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span>|<span data-ttu-id="9aace-148">管理员同意的审阅者列表。</span><span class="sxs-lookup"><span data-stu-id="9aace-148">The list of reviewers for the admin consent.</span></span>|
+|<span data-ttu-id="019d7-134">isEnabled</span><span class="sxs-lookup"><span data-stu-id="019d7-134">isEnabled</span></span>|<span data-ttu-id="019d7-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="019d7-135">Boolean</span></span>|<span data-ttu-id="019d7-136">指定是启用还是禁用管理员同意请求功能。</span><span class="sxs-lookup"><span data-stu-id="019d7-136">Specifies whether the admin consent request feature is enabled or disabled.</span></span>|
+|<span data-ttu-id="019d7-137">notifyReviewers</span><span class="sxs-lookup"><span data-stu-id="019d7-137">notifyReviewers</span></span>|<span data-ttu-id="019d7-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="019d7-138">Boolean</span></span>|<span data-ttu-id="019d7-139">指定审阅者是否将收到通知。</span><span class="sxs-lookup"><span data-stu-id="019d7-139">Specifies whether reviewers will receive notifications.</span></span>|
+|<span data-ttu-id="019d7-140">remindersEnabled</span><span class="sxs-lookup"><span data-stu-id="019d7-140">remindersEnabled</span></span>|<span data-ttu-id="019d7-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="019d7-141">Boolean</span></span>|<span data-ttu-id="019d7-142">指定审阅者是否将收到提醒电子邮件。</span><span class="sxs-lookup"><span data-stu-id="019d7-142">Specifies whether reviewers will receive reminder emails.</span></span>|
+|<span data-ttu-id="019d7-143">requestDurationInDays</span><span class="sxs-lookup"><span data-stu-id="019d7-143">requestDurationInDays</span></span>|<span data-ttu-id="019d7-144">Int32</span><span class="sxs-lookup"><span data-stu-id="019d7-144">Int32</span></span>|<span data-ttu-id="019d7-145">指定请求在未应用决策时自动过期之前处于活动状态的持续时间。</span><span class="sxs-lookup"><span data-stu-id="019d7-145">Specifies the duration the request is active before it automatically expires if no decision is applied.</span></span>|
+|<span data-ttu-id="019d7-146">reviewers</span><span class="sxs-lookup"><span data-stu-id="019d7-146">reviewers</span></span>|<span data-ttu-id="019d7-147">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合</span><span class="sxs-lookup"><span data-stu-id="019d7-147">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span>|<span data-ttu-id="019d7-148">管理员同意的审阅者列表。</span><span class="sxs-lookup"><span data-stu-id="019d7-148">The list of reviewers for the admin consent.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9aace-149">响应</span><span class="sxs-lookup"><span data-stu-id="9aace-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="019d7-149">响应</span><span class="sxs-lookup"><span data-stu-id="019d7-149">Response</span></span>
 
-<span data-ttu-id="9aace-150">如果成功，此方法在响应正文中返回 响应代码和更新的 `204 No content` [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9aace-150">If successful, this method returns a `204 No content` response code and an updated [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="019d7-150">如果成功，此方法在响应正文中返回 响应代码和更新的 `204 No content` [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="019d7-150">If successful, this method returns a `204 No content` response code and an updated [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9aace-151">示例</span><span class="sxs-lookup"><span data-stu-id="9aace-151">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="019d7-151">示例</span><span class="sxs-lookup"><span data-stu-id="019d7-151">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="9aace-152">请求</span><span class="sxs-lookup"><span data-stu-id="9aace-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="019d7-152">请求</span><span class="sxs-lookup"><span data-stu-id="019d7-152">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="019d7-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="019d7-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_adminconsentrequestpolicy"
@@ -95,8 +97,26 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="019d7-154">C#</span><span class="sxs-lookup"><span data-stu-id="019d7-154">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-adminconsentrequestpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="9aace-153">响应</span><span class="sxs-lookup"><span data-stu-id="9aace-153">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="019d7-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="019d7-155">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-adminconsentrequestpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="019d7-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="019d7-156">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-adminconsentrequestpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="019d7-157">Java</span><span class="sxs-lookup"><span data-stu-id="019d7-157">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="019d7-158">响应</span><span class="sxs-lookup"><span data-stu-id="019d7-158">Response</span></span>
 
 <!-- {
   "blockType": "response",

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0c70c579296e3be906de1bf9ff0d59c3bd1025c9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: fe855a236146234237bc86afbf514be1dda7be12
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50788568"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573176"
 ---
 ```javascript
 
@@ -42,7 +42,7 @@ const externalItem = {
   }
 };
 
-await client.api('/connections/contosohr/items/TSP228082938')
+await client.api('/external/connections/contosohr/items/TSP228082938')
     .version('beta')
     .put(externalItem);
 

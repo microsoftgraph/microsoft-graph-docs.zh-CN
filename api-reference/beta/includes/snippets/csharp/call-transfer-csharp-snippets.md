@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 39c2f07f628dabaf34b2cddae56dff5ea6588cb2
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 0972c538df699b169ff3f7e04d07d649dfbc8e69
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302736"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573151"
 ---
 ```csharp
 
@@ -16,21 +16,19 @@ var transferTarget = new InvitationParticipantInfo
     EndpointType = EndpointType.Default,
     Identity = new IdentitySet
     {
-        User = new Identity
+        AdditionalData = new Dictionary<string, object>()
         {
-            Id = "550fae72-d251-43ec-868c-373732c2704f",
-            TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47",
-            DisplayName = "Heidi Steen"
+            {"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
         }
     },
-    LanguageId = "languageId-value",
-    Region = "region-value",
-    ReplacesCallId = "replacesCallId-value"
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"languageId", "languageId-value"},
+        {"region", "region-value"}
+    }
 };
 
-var clientContext = "9e90d1c1-f61e-43e7-9f75-d420159aae08";
-
-await graphClient.Communications.Calls["{id}"]
+await graphClient.Communications.Calls["{call-id}"]
     .Transfer(transferTarget)
     .Request()
     .PostAsync();

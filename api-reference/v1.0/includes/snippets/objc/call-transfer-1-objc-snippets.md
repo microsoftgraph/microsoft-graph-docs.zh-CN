@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 563d0e706679fdd1e70c3acf19b5c5c98a8f185b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2319ebb03ecc5b185b18e9fd042bbb99c65cbe6e
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958619"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507657"
 ---
 ```objc
 
@@ -28,9 +28,6 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [transferTarget setIdentity:identity];
 [transferTarget setReplacesCallId:@"replacesCallId-value"];
 payloadDictionary[@"transferTarget"] = transferTarget;
-
-NSString *clientContext = @"9e90d1c1-f61e-43e7-9f75-d420159aae08";
-payloadDictionary[@"clientContext"] = clientContext;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];

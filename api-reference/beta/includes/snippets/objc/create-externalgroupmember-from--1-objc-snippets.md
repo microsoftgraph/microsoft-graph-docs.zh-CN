@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e8b7f3bf920bcd08083f387c42b9254cf14d96a4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d7e6da71fda36a96b2703e3b495f3f79f9cee159
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956015"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573203"
 ---
 ```objc
 
@@ -16,10 +16,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalGroupMember *externalGroupMember = [[MSGraphExternalGroupMember alloc] init];
+MSGraphExternalConnectorsExternalGroupMember *externalGroupMember = [[MSGraphExternalConnectorsExternalGroupMember alloc] init];
 [externalGroupMember setId:@"e811976d-83df-4cbd-8b9b-5215b18aa874"];
-[externalGroupMember setType: [MSGraphExternalGroupMemberType user]];
-[externalGroupMember setIdentitySource: [MSGraphIdentitySourceType azureActiveDirectory]];
+[externalGroupMember setType: [MSGraphExternalConnectorsExternalGroupMemberType user]];
+[externalGroupMember setIdentitySource: [MSGraphExternalConnectorsIdentitySourceType azureActiveDirectory]];
 
 NSError *error;
 NSData *externalGroupMemberData = [externalGroupMember getSerializedDataWithError:&error];

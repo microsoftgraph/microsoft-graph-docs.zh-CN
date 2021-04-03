@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 76268c097c3437de48fcc6551cc8e770901414a1
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
-ms.translationtype: MT
+ms.openlocfilehash: b02f2c72634bab020837340fcc7211ff0c1e1ced
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200941"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573215"
 ---
 ```java
 
@@ -16,7 +16,7 @@ ItemBody body = new ItemBody();
 body.content = "Hello World";
 chatMessage.body = body;
 
-graphClient.teams("{id}").channels("{id}").messages()
+graphClient.teams("57fb72d0-d811-46f4-8947-305e6072eaa5").channels("19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2").messages()
     .buildRequest()
     .post(chatMessage);
 

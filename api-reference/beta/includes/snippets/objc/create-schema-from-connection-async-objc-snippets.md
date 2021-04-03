@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5b28ec43c7d2cdeb72e6b284788afc2d27cae2b3
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: eb07da4ed8b7238923b92a86e76bfd9a39edcdaf
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47938436"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573217"
 ---
 ```objc
 
@@ -17,28 +17,28 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"respond-async" forHTTPHeaderField:@"Prefer"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphSchema *schema = [[MSGraphSchema alloc] init];
+MSGraphExternalConnectorsSchema *schema = [[MSGraphExternalConnectorsSchema alloc] init];
 [schema setBaseType:@"microsoft.graph.externalItem"];
 NSMutableArray *propertiesList = [[NSMutableArray alloc] init];
-MSGraphProperty *properties = [[MSGraphProperty alloc] init];
+MSGraphExternalConnectorsProperty *properties = [[MSGraphExternalConnectorsProperty alloc] init];
 [properties setName:@"ticketTitle"];
-[properties setType: [MSGraphPropertyType String]];
+[properties setType: [MSGraphExternalConnectorsPropertyType string]];
 [properties setIsSearchable:@"true"];
 [properties setIsRetrievable:@"true"];
 NSMutableArray *labelsList = [[NSMutableArray alloc] init];
 [labelsList addObject: @"title"];
 [properties setLabels:labelsList];
 [propertiesList addObject: properties];
-MSGraphProperty *properties = [[MSGraphProperty alloc] init];
+MSGraphExternalConnectorsProperty *properties = [[MSGraphExternalConnectorsProperty alloc] init];
 [properties setName:@"priority"];
-[properties setType: [MSGraphPropertyType String]];
+[properties setType: [MSGraphExternalConnectorsPropertyType string]];
 [properties setIsQueryable:@"true"];
 [properties setIsRetrievable:@"true"];
 [properties setIsSearchable:@"false"];
 [propertiesList addObject: properties];
-MSGraphProperty *properties = [[MSGraphProperty alloc] init];
+MSGraphExternalConnectorsProperty *properties = [[MSGraphExternalConnectorsProperty alloc] init];
 [properties setName:@"assignee"];
-[properties setType: [MSGraphPropertyType String]];
+[properties setType: [MSGraphExternalConnectorsPropertyType string]];
 [properties setIsRetrievable:@"true"];
 [propertiesList addObject: properties];
 [schema setProperties:propertiesList];

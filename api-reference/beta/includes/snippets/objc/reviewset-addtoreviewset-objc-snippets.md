@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3330771ee4aba18f0f771d3c5de65664449bae7a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: cfd67adff78fc7208315220fec1e92aceef0ad3b
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772904"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573179"
 ---
 ```objc
 
@@ -22,7 +22,7 @@ MSGraphEdiscoverySourceCollection *sourceCollection = [[MSGraphEdiscoverySourceC
 [sourceCollection setId:@"1a9b4145d8f84e39bc45a7f68c5c5119"];
 payloadDictionary[@"sourceCollection"] = sourceCollection;
 
-MSGraphEdiscoveryDataCollectionScope *additionalData = [MSGraphEdiscoveryDataCollectionScope linkedFiles];
+MSGraphEdiscoveryAdditionalDataOptions *additionalData = [MSGraphEdiscoveryAdditionalDataOptions linkedFiles];
 payloadDictionary[@"additionalData"] = additionalData;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

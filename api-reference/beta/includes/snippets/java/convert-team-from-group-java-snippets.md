@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a2018a291a790b949fbcaaf8601bee8ad3cec204
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 639f153369bf76cda48bb880d77f0112bc584da9
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942266"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573159"
 ---
 ```java
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 Team team = new Team();
 team.additionalDataManager().put("template@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/teamsTemplates('standard')"));
-team.additionalDataManager().put("group@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/groups('groupId')"));
+team.additionalDataManager().put("group@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/groups('dbd8de4f-5d47-48da-87f1-594bed003375')"));
 LinkedList<Channel> channelsList = new LinkedList<Channel>();
 Channel channels = new Channel();
 channels.displayName = "Class Announcements 📢";

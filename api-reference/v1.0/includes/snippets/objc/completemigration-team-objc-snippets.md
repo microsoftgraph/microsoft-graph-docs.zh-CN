@@ -1,0 +1,27 @@
+---
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: bf39d766f2b5dc2462827ccdd0580a5b8eec0c28
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507909"
+---
+```objc
+
+MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/completeMigration"]]];
+[urlRequest setHTTPMethod:@"POST"];
+
+MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+        //Request Completed
+
+}];
+
+[meDataTask execute];
+
+```

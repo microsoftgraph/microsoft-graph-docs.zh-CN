@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0ba2b89d71a8d6c88715d5a84746d8f5a700dbeb
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ab85e8f12086e2412e950e063df149c481f29e5e
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50981101"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508442"
 ---
 ```java
 
@@ -17,7 +17,7 @@ channel.displayName = "My First Private Channel";
 channel.description = "This is my first private channels";
 LinkedList<ConversationMember> membersList = new LinkedList<ConversationMember>();
 AadUserConversationMember members = new AadUserConversationMember();
-members.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users('{user_id}')"));
+members.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users('62855810-484b-4823-9e01-60667f8b12ae')"));
 LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("owner");
 members.roles = rolesList;
@@ -27,7 +27,7 @@ conversationMemberCollectionResponse.value = membersList;
 ConversationMemberCollectionPage conversationMemberCollectionPage = new ConversationMemberCollectionPage(conversationMemberCollectionResponse, null);
 channel.members = conversationMemberCollectionPage;
 
-graphClient.teams("{group_id}").channels()
+graphClient.teams("57fb72d0-d811-46f4-8947-305e6072eaa5").channels()
     .buildRequest()
     .post(channel);
 

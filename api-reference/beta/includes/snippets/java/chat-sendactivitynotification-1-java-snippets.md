@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1f7d22a3c4ea54ad9611c4cd40d5c47d2be5d3e9
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 0bfbb990146440540cfae720212369e19f12fe39
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51210543"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573120"
 ---
 ```java
 
@@ -39,7 +39,6 @@ graphClient.chats("{chatId}")
         .withPreviewText(previewText)
         .withTemplateParameters(templateParametersList)
         .withRecipient(recipient)
-        .withTeamsAppId(null)
         .build())
     .buildRequest()
     .post();

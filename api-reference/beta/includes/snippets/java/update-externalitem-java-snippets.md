@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f3e7e58d95510e0ed8d2f6ec59e476d4ec342079
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 290eddef707a002304a8cef10937b0824078709b
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50976379"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573209"
 ---
 ```java
 
@@ -17,7 +17,7 @@ Acl acl = new Acl();
 acl.type = AclType.EVERYONE;
 acl.value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d";
 acl.accessType = AccessType.GRANT;
-acl.identitySource = "azureActiveDirectory";
+acl.identitySource = IdentitySourceType.AZURE_ACTIVE_DIRECTORY;
 aclList.add(acl);
 externalItem.acl = aclList;
 
