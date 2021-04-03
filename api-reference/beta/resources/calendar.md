@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 44b8f8ab2d9cc6b16b183f8b4cd1c5ca25db1a63
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5f49ec29fa6fadd7c8c39be2e3319f3822067f43
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955061"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507677"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50955061"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-日历即事件容器。 它可以是 [用户](user.md)的日历，或者 Microsoft 365 [组](group.md)的默认日历。
+表示[事件](event.md)资源的容器。 它可以是 [用户](user.md)的日历，或者 Microsoft 365 [组](group.md)的默认日历。
 
 > **注意：** 与用户日历和组日历交互的方式稍有不同：
 
