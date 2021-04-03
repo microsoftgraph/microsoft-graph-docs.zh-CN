@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7fca886e10e228329cac1f4833556b93a277a46d
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 2fa9a05a15f497b4a60ed90bfee9eec5527dc808
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48230758"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573207"
 ---
 ```objc
 
@@ -16,13 +16,13 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalItem *externalItem = [[MSGraphExternalItem alloc] init];
+MSGraphExternalConnectorsExternalItem *externalItem = [[MSGraphExternalConnectorsExternalItem alloc] init];
 NSMutableArray *aclList = [[NSMutableArray alloc] init];
-MSGraphAcl *acl = [[MSGraphAcl alloc] init];
-[acl setType: [MSGraphAclType everyone]];
+MSGraphExternalConnectorsAcl *acl = [[MSGraphExternalConnectorsAcl alloc] init];
+[acl setType: [MSGraphExternalConnectorsAclType everyone]];
 [acl setValue:@"67a141d8-cf4e-4528-ba07-bed21bfacd2d"];
-[acl setAccessType: [MSGraphAccessType grant]];
-[acl setIdentitySource:@"azureActiveDirectory"];
+[acl setAccessType: [MSGraphExternalConnectorsAccessType grant]];
+[acl setIdentitySource: [MSGraphExternalConnectorsIdentitySourceType azureActiveDirectory]];
 [aclList addObject: acl];
 [externalItem setAcl:aclList];
 

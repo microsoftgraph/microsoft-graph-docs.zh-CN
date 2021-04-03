@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9829527e72bafa62c52950def15fe70be71205e9
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: ac2cc055ef7b26040a430924d7fc88cf92d37f16
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48611095"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507002"
 ---
 ```objc
 
@@ -17,9 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphCalendarGroup *calendarGroup = [[MSGraphCalendarGroup alloc] init];
-[calendarGroup setName:@"name-value"];
-[calendarGroup setClassId:@"classId-value"];
-[calendarGroup setChangeKey:@"changeKey-value"];
+[calendarGroup setName:@"Personal events"];
 
 NSError *error;
 NSData *calendarGroupData = [calendarGroup getSerializedDataWithError:&error];

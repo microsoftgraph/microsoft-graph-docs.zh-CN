@@ -1,31 +1,31 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6c3193b49b10d1336cb0a84051d782ff07624357
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 7803359f3c528fb426cbc91bf93cd4a6d5f5d267
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50795435"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573208"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var externalItem = new ExternalItem
+var externalItem = new Microsoft.Graph.ExternalConnectors.ExternalItem
 {
-    Acl = new List<Acl>()
+    Acl = new List<Microsoft.Graph.ExternalConnectors.Acl>()
     {
-        new Acl
+        new Microsoft.Graph.ExternalConnectors.Acl
         {
-            Type = AclType.Everyone,
+            Type = Microsoft.Graph.ExternalConnectors.AclType.Everyone,
             Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-            AccessType = AccessType.Grant,
-            IdentitySource = "azureActiveDirectory"
+            AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant,
+            IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.AzureActiveDirectory
         }
     }
 };
 
-await graphClient.Connections["{externalConnection-id}"].Items["{externalItem-id}"]
+await graphClient.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
     .Request()
     .UpdateAsync(externalItem);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 65279e1df4abfdc635039fb4c4793459f58fc3c5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f9e66bf40920cfdfd5c39439e92fd8884dff95d4
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50977718"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573147"
 ---
 ```java
 
@@ -35,6 +35,7 @@ graphClient.search()
     .query(SearchEntityQueryParameterSet
         .newBuilder()
         .withRequests(requestsList)
+        .withQueryAlterationOptions(null)
         .build())
     .buildRequest()
     .post();

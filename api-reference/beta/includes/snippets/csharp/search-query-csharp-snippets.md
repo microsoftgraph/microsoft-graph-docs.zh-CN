@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 161260aa63d830d049e857c29f86a95b4b088b4b
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 7042865916b90ae7b34c117b652601266f464cb9
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48317939"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573148"
 ---
 ```csharp
 
@@ -38,7 +38,7 @@ var requests = new List<SearchRequestObject>()
 };
 
 await graphClient.Search
-    .Query(requests)
+    .Query(requests,null)
     .Request()
     .PostAsync();
 

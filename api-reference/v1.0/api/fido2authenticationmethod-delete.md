@@ -5,19 +5,19 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2ef78f3957f262b59bef7c627ea5450c2c759ab7
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: a13120fcb629d484915d1b7d3f0f96e2d8774642
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469022"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506867"
 ---
 # <a name="delete-fido2authenticationmethod"></a>删除 fido2AuthenticationMethod
 命名空间：microsoft.graph
 
 删除用户的 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -67,8 +67,6 @@ DELETE /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1f14e1c062064f011dcb280c134596907e661a13
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 4acc5e1f9bdfaf0c7abfde2d8f13f874963d685a
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223163"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573211"
 ---
 ```objc
 
@@ -16,7 +16,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalGroup *externalGroup = [[MSGraphExternalGroup alloc] init];
+MSGraphExternalConnectorsExternalGroup *externalGroup = [[MSGraphExternalConnectorsExternalGroup alloc] init];
 [externalGroup setId:@"31bea3d537902000"];
 [externalGroup setDisplayName:@"Contoso Marketing"];
 [externalGroup setDescription:@"The product marketing team"];

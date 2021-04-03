@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 59b009aed4440fd30a4b038bc4eb40eba208c5ef
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: c1324443ffec1f5743442120bf0df5881732d542
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473442"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507658"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -22,7 +22,7 @@ ms.locfileid: "51473442"
 
 咨询转接意味着在转接之前，转接人可以通知要呼叫 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）         |
@@ -86,7 +86,7 @@ Content-Length: 430
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f027dcc1241aaa2d7543b3fe336d79084df325eb
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: d8cbb0891bf0fe28ab8e547fca5b3d8de9f37e2c
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491005"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573174"
 ---
 ```csharp
 
@@ -13,24 +13,24 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var externalItem = new ExternalItem
 {
-    Acl = new List<Acl>()
+    Acl = new List<Microsoft.Graph.ExternalConnectors.Acl>()
     {
-        new Acl
+        new Microsoft.Graph.ExternalConnectors.Acl
         {
-            Type = AclType.User,
+            Type = Microsoft.Graph.ExternalConnectors.AclType.User,
             Value = "e811976d-83df-4cbd-8b9b-5215b18aa874",
-            AccessType = AccessType.Grant,
-            IdentitySource = "azureActiveDirectory"
+            AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant,
+            IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.AzureActiveDirectory
         },
-        new Acl
+        new Microsoft.Graph.ExternalConnectors.Acl
         {
-            Type = AclType.Group,
+            Type = Microsoft.Graph.ExternalConnectors.AclType.Group,
             Value = "14m1b9c38qe647f6a",
-            AccessType = AccessType.Deny,
-            IdentitySource = "external"
+            AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Deny,
+            IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.External
         }
     },
-    Properties = new Properties
+    Properties = new Microsoft.Graph.ExternalConnectors.Properties
     {
         AdditionalData = new Dictionary<string, object>()
         {
@@ -39,14 +39,14 @@ var externalItem = new ExternalItem
             {"assignee", "john@contoso.com"}
         }
     },
-    Content = new ExternalItemContent
+    Content = new Microsoft.Graph.ExternalConnectors.ExternalItemContent
     {
         Value = "Error in payment gateway...",
-        Type = ExternalItemContentType.Text
+        Type = Microsoft.Graph.ExternalConnectors.ExternalItemContentType.Text
     }
 };
 
-await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"]
+await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
     .Request()
     .PutAsync(externalItem);
 

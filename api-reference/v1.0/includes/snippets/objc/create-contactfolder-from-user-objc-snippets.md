@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4c705f8fafb8df3341b05e23f3e575a71a03f65b
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: f0f2bfac61fdad46c2ef87c62ac227a2ce95c097
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620449"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506893"
 ---
 ```objc
 
@@ -17,8 +17,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphContactFolder *contactFolder = [[MSGraphContactFolder alloc] init];
-[contactFolder setParentFolderId:@"parentFolderId-value"];
-[contactFolder setDisplayName:@"displayName-value"];
+[contactFolder setParentFolderId:@"AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA=="];
+[contactFolder setDisplayName:@"Important contacts"];
 
 NSError *error;
 NSData *contactFolderData = [contactFolder getSerializedDataWithError:&error];

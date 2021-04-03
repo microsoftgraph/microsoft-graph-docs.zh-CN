@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 5519b7b9d14b26f83ef3422021c292eb712220fc
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: df96ef3a92a0e22d01feea0cb991dffc4da137f1
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473512"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508167"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -345,7 +345,6 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 * _Calendars.Read_：在 bob@contoso.com 组织整理的会议室日历中查找事件 (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`)。
 * _Calendars.Read_：列出 5 月份用户日历上的所有事件 (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`)
 * _Calendars.ReadWrite_：将获准休假事件添加到用户日历 (`POST /users/{id | userPrincipalName}/events`)。
-* _Calendars.Send_：发送邮件 (`POST /users/{id | userPrincipalName}/sendCalendars`)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 

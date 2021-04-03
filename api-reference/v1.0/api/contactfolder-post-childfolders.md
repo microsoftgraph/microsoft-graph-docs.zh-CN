@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cacf41a2f5e13f9b7fea3ebf39f14ddf1a8298f3
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: eeaefb7dbffb59c47854c164362f475f7bf6bfc3
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473554"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507598"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
 
@@ -19,7 +19,7 @@ ms.locfileid: "51473554"
 创建新的 contactFolder 作为指定文件夹的子文件夹。 
 
 还可以[在用户的默认联系人文件夹下创建新的 contactFolder](user-post-contactfolders.md)。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -50,6 +50,8 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_contactfolder_from_contactfolder"
@@ -62,6 +64,24 @@ Content-type: application/json
   "displayName": "Family"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-contactfolder-from-contactfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-contactfolder-from-contactfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-contactfolder-from-contactfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-contactfolder-from-contactfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 在请求正文中，提供 [contactFolder](../resources/contactfolder.md) 对象的 JSON 表示形式。
 ### <a name="response"></a>响应

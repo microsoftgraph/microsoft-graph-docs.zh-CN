@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b7509920b052e979ce7ada7ed1e1b450c507ab13
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 88181e48b0bd21d9a55881cf0562fabc2808d92f
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941933"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573143"
 ---
 ```java
 
@@ -35,7 +35,6 @@ graphClient.users("{userId}").teamwork()
         .withChainId(null)
         .withPreviewText(previewText)
         .withTemplateParameters(templateParametersList)
-        .withTeamsAppId(null)
         .build())
     .buildRequest()
     .post();

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 02391556550aff7435a9286fda24c213097d5813
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 04384b918c1be328b99a86f1a56c21e7dc6c3e43
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994724"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573214"
 ---
 ```objc
 
@@ -16,7 +16,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalConnection *externalConnection = [[MSGraphExternalConnection alloc] init];
+MSGraphExternalConnectorsExternalConnection *externalConnection = [[MSGraphExternalConnectorsExternalConnection alloc] init];
 [externalConnection setId:@"contosohr"];
 [externalConnection setName:@"Contoso HR"];
 [externalConnection setDescription:@"Connection to index Contoso HR system"];

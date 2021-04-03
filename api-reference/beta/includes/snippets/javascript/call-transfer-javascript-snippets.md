@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 94673c807e8e94d8e57b5e3776ee085446071968
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 16b91dc1cf0af9b392ab6656ebb5aeec1214b248
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50804178"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573149"
 ---
 ```javascript
 
@@ -26,8 +26,7 @@ const transfer = {
     },
     languageId: 'languageId-value',
     region: 'region-value'
-  },
-  clientContext: '9e90d1c1-f61e-43e7-9f75-d420159aae08'
+  }
 };
 
 await client.api('/communications/calls/{id}/transfer')

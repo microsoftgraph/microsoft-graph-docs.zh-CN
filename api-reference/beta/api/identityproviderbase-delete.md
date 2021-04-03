@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: cdacaf4495d6856bc39465d4bed990a20cd264e7
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: d78aff8a604f42b7efbc1f87269a87acbb29656c
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491060"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508806"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 命名空间：microsoft.graph
@@ -64,6 +64,8 @@ DELETE /identity/identityProviders/{id}
 下面展示了示例请求。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
@@ -73,6 +75,24 @@ DELETE /identity/identityProviders/{id}
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/identityProviders/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -5,22 +5,23 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 34f718676926de1690d3ed9774c596168943a112
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bbd86180864421044e1b818080e58bcba087ff28
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435418"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508209"
 ---
-# <a name="update-identityprovider"></a>更新 identityProvider
+# <a name="update-identityprovider-deprecated"></a>更新 identityProvider (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 更新 [identityProvider 对象](../resources/identityprovider.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +29,10 @@ ms.locfileid: "50435418"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|Application| IdentityProvider.ReadWrite.All|
+|应用程序| IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
+
 * 全局管理员
 * 外部标识提供程序管理员
 
@@ -51,7 +53,7 @@ PATCH /identityProviders/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，为 JSON 对象提供一个或多个属性，这些属性仅针对 Azure AD B2C ([identityProvider](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md)) 更新。
+在请求正文中，为 JSON 对象提供一个或多个属性，这些属性需要针对仅针对 Azure AD B2C ([identityProvider](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md)) 更新。
 
 ### <a name="identityprovider-object"></a>identityProvider 对象
 
@@ -69,12 +71,12 @@ PATCH /identityProviders/{id}
 |clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
 |clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|字符串|标识提供程序的显示名称。|
-|type|字符串|标识提供程序类型。 该值必须为 `OpenIdConnect` 。|
-|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|在 OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别和使用声明。 此复杂类型捕获该映射。|
-|domainHint|String|域提示可用于直接跳到指定标识提供程序的登录页，而不是让用户在可用标识提供程序的列表中进行选择。|
-|metadataUrl|String|Open Id Connect 标识提供程序的元数据文档的 URL。|
-|responseMode|String|定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post` ：为了获得最佳安全性，建议使用此响应模式。 响应通过 HTTP POST 方法传输，使用 application/x-www-form-urlencoded 格式在正文中编码代码或令牌。<li/>`query` ：代码或令牌作为查询参数返回。</ul>|
-|responseType|String|描述在初始调用中返回的自定义标识提供程序authorization_endpoint的信息类型。 可以使用以下响应类型：<ul><li/> `code` ：根据授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token` ：ID 令牌从自定义标识提供程序返回回 Azure AD B2C。 <li/>`token` ：访问令牌从自定义标识提供程序返回回 Azure AD B2C。  (Azure AD B2C 目前不支持此值) </ul>|
+|type|字符串|标识提供程序类型。 值必须为 `OpenIdConnect` 。|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别和使用声明。 此复杂类型捕获该映射。|
+|domainHint|字符串|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
+|metadataUrl|字符串|Open Id Connect 标识提供程序的元数据文档的 URL。|
+|responseMode|字符串|定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post` ：建议采用此响应模式，以获得最佳安全性。 响应通过 HTTP POST 方法传输，使用 application/x-www-form-urlencoded 格式在正文中编码代码或令牌。<li/>`query` ：代码或令牌作为查询参数返回。</ul>|
+|responseType|字符串|描述在初始调用自定义标识提供程序的 authorization_endpoint发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code` ：根据授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 继续调用 token_endpoint 以交换令牌代码。<li/> `id_token` ：ID 令牌从自定义标识提供程序返回回 Azure AD B2C。 <li/>`token` ：访问令牌从自定义标识提供程序返回回 Azure AD B2C。  (当前 Azure AD B2C 不支持) </ul>|
 |scope|String|范围定义要从自定义标识提供程序收集的信息和权限。|
 
 ## <a name="response"></a>响应
@@ -89,8 +91,6 @@ PATCH /identityProviders/{id}
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider"
@@ -106,6 +106,11 @@ Content-length: 41
   "clientSecret": "1111111111111"
 }
 ```
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -118,12 +123,7 @@ Content-length: 41
 [!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-identityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### <a name="response"></a>响应
 
@@ -137,14 +137,13 @@ Content-length: 41
 ```http
 HTTP/1.1 204 No Content
 ```
+
 ### <a name="example-2-update-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例 2：仅为 Azure AD B2C (更新特定的 **openIDConnectProvider**) 
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openidconnectprovider"
@@ -160,24 +159,12 @@ Content-length: 41
   "responseType": "id_token"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-openidconnectprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-openidconnectprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-openidconnectprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-openidconnectprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>响应
 
@@ -191,5 +178,3 @@ Content-length: 41
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

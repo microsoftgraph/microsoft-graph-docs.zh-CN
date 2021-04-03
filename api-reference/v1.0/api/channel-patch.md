@@ -5,12 +5,12 @@ author: anandjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 975623111ad2ecde6afa13432cba5fcd3f7fef4f
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 4c611ea955c82be94f5e0220fe0632d2c5791fc8
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202217"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506868"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -60,6 +60,8 @@ PATCH /teams/{team-id}/channels/{channel-id}
 
 下面是一个请求示例。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
@@ -67,6 +69,12 @@ PATCH /teams/{team-id}/channels/{channel-id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

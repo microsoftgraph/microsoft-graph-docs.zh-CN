@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: af7b65d79a1f15a5660796ca3d66f72e4d7d97f8
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 614a8e71dee38b1a8d17c3c5115f0dac3dffed41
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50795807"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573190"
 ---
 ```csharp
 
@@ -30,6 +30,7 @@ var plannerPlanDetails = new PlannerPlanDetails
 
 await graphClient.Planner.Plans["{plannerPlan-id}"].Details
     .Request()
+    .Header("Prefer","return=representation")
     .Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
     .UpdateAsync(plannerPlanDetails);
 

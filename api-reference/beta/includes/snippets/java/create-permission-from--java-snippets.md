@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5f52ccacd5b5b38f8670979f76169e3ee8c89b74
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b1fe05a6605eacb7d24573028d17cfaafb80055c
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50981466"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573165"
 ---
 ```java
 
@@ -19,7 +19,7 @@ LinkedList<IdentitySet> grantedToIdentitiesList = new LinkedList<IdentitySet>();
 IdentitySet grantedToIdentities = new IdentitySet();
 Identity application = new Identity();
 application.id = "89ea5c94-7736-4e25-95ad-3fa95f62b66e";
-application.displayName = "Foo App";
+application.displayName = "Contoso Time Manager App";
 grantedToIdentities.application = application;
 grantedToIdentitiesList.add(grantedToIdentities);
 permission.grantedToIdentities = grantedToIdentitiesList;

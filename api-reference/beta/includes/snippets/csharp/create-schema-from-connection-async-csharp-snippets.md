@@ -1,50 +1,50 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ddab80df12271e0c2e133c3e2b70e86ef8622da8
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c771a97f2c445b85e65ea9c09276089062fe7321
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50781317"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573216"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var schema = new Schema
+var schema = new Microsoft.Graph.ExternalConnectors.Schema
 {
     BaseType = "microsoft.graph.externalItem",
-    Properties = new List<Property>()
+    Properties = new List<Microsoft.Graph.ExternalConnectors.Property>()
     {
-        new Property
+        new Microsoft.Graph.ExternalConnectors.Property
         {
             Name = "ticketTitle",
-            Type = PropertyType.String,
+            Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
             IsSearchable = true,
             IsRetrievable = true,
-            Labels = new List<Label>()
+            Labels = new List<Microsoft.Graph.ExternalConnectors.Label>()
             {
-                Label.Title
+                Microsoft.Graph.ExternalConnectors.Label.Title
             }
         },
-        new Property
+        new Microsoft.Graph.ExternalConnectors.Property
         {
             Name = "priority",
-            Type = PropertyType.String,
+            Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
             IsQueryable = true,
             IsRetrievable = true,
             IsSearchable = false
         },
-        new Property
+        new Microsoft.Graph.ExternalConnectors.Property
         {
             Name = "assignee",
-            Type = PropertyType.String,
+            Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
             IsRetrievable = true
         }
     }
 };
 
-await graphClient.External.Connections["{externalConnection-id}"].Schema
+await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Schema
     .Request()
     .Header("Prefer","respond-async")
     .AddAsync(schema);

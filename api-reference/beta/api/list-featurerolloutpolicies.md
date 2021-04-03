@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0b6d28265d3f64a278e624d7fe17ded39072e772
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e64cf90e3d5fd78fb8515fe72dbcfd7bd889ab01
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952225"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51509140"
 ---
 # <a name="list-featurerolloutpolicies"></a>列出 featureRolloutPolicies
 
@@ -64,6 +64,8 @@ GET /policies/featureRolloutPolicies
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_featurerolloutpolicies_policies"
@@ -72,6 +74,24 @@ GET /policies/featureRolloutPolicies
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-featurerolloutpolicies-policies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-featurerolloutpolicies-policies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicies-policies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicies-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

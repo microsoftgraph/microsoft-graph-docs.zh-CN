@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 07f18a6956fb0572168220d6cd4a28089a19430d
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 0bcc55cca6117d42bf473c21e1578a4e36ef7574
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491058"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508792"
 ---
 # <a name="list-availableprovidertypes"></a>列出 availableProviderTypes
 
@@ -73,6 +73,24 @@ GET /identity/identityProviders/availableProviderTypes
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/identityprovider-availableprovidertypes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/identityprovider-availableprovidertypes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

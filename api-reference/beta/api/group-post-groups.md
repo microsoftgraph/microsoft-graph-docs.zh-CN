@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 186df4e81f5958501d7defe8b25e1ea092ab2971
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: 871d990342807a9742ce9125c62e730fec39cd10
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368087"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507943"
 ---
 # <a name="create-group"></a>创建组
 
@@ -63,7 +63,7 @@ POST /groups
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
 | owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 可选。 |
 | members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。 可选。 |
-|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
+|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
 > **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
 
@@ -140,7 +140,7 @@ Content-length: 244
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
 
@@ -200,7 +200,7 @@ Content-type: application/json
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
 ``` http
