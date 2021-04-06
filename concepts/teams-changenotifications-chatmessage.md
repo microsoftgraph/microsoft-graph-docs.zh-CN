@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e6e859e76e35e4eefd5ef18a26f0f1339c01a8a2
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 2e5490549e4ff204957c46e5da39a5516ed7d866
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761568"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594859"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -182,9 +182,9 @@ Content-Type: application/json
 
 |权限类型      | 权限（从最低特权到最高特权）              | 版本支持 |
 |:--------------------|:---------------------------------------------------------|:---------------------|
-|委派（工作或学校帐户） | Chat.Read | beta |
+|委派（工作或学校帐户） | Chat.Read | beta, v1.0 |
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | Chat.Read.All | beta |
+|应用程序 | Chat.Read.All | beta, v1.0 |
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>示例 1：订阅聊天中的消息
 
