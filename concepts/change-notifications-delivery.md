@@ -4,14 +4,14 @@ description: 更改通知可以通过不同的技术来传送，包括 Webhook �
 author: Jumaodhiss
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 2cb6000b309b9bcaf5af840cc26976c7254d2d96
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 3be156e2d83cfe820c26482fcc87179b42d8142d
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469099"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594873"
 ---
-# <a name="get-change-notifications-delivered-in-different-ways-preview"></a>获取通过不同方式传送的更改通知（预览版）
+# <a name="get-change-notifications-delivered-in-different-ways"></a>以不同方式接收更改通知
 
 可通过不同方式向订阅者传送更改通知。 如果更改通知的主要传送模式是 Webhook，则对于高吞吐量场景或当接收方无法公开公用的通知 URL 时，利用 Webhooks 可能很困难。  
 

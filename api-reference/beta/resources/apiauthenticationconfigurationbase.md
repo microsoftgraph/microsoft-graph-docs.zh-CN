@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5c6c46f0d092d39171de1cb0d8c865448f609463
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 915e1c0c26cee173991d75bc46a1a0230844d2ec
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137072"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507964"
 ---
 # <a name="apiauthenticationconfigurationbase-resource-type"></a>apiAuthenticationConfigurationBase 资源类型
 
@@ -20,7 +20,10 @@ ms.locfileid: "50137072"
 
 用于保存用于调用 API 的身份验证信息的基类型。
 
-[basicAuthentication](basicauthentication.md)派生自 apiAuthenticationConfigurationBase。
+派生类型包括：
+- 用于 HTTP 基本身份验证的[basicAuthentication](basicauthentication.md)
+- [用于客户端证书身份验证的 pkcs12certificate](pkcs12certificate.md) (API 连接器创建或上载) 
+- [clientCertificateAuthentication](pkcs12certificate.md) 用于 (API 连接器客户端证书的客户端证书身份验证) 
 
 ## <a name="properties"></a>属性
 
