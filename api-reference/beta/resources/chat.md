@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 635982c8610bc524de027632dd07c00e1a3d26b1
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: b15d6a50bfb6d7826bc26f85805c6b7311d33c41
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582163"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594866"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "51582163"
 
 ## <a name="methods"></a>方法
 
-|  方法       |  返回类型  | 说明| 
+|  方法       |  返回类型  | Description| 
 |:---------------|:--------|:----------|
 |[列出聊天](../api/chat-list.md) | [chat](chat.md) 集合 | 获取用户参与的聊天列表。| 
 |[创建聊天](../api/chat-post.md) | [聊天](chat.md) | 创建新聊天。| 
@@ -48,6 +48,7 @@ ms.locfileid: "51582163"
 |[向聊天添加选项卡](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 将 (固定) 选项卡添加到聊天 (关联的会议) 。|
 |[聊天中的"更新"选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天记录和相关会议 (选项卡) 。|
 |[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (和) 会议记录中删除 (取消固定选项卡) 。|
+|[列出权限授予](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出已授予此聊天中的应用的权限。|
 
 >**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 ID，以及从具有应用程序权限的 [/chats/getAllMessages](../api/subscription-post-subscriptions.md) 更改通知获取。
 
@@ -55,7 +56,7 @@ ms.locfileid: "51582163"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-| id| 字符串| 聊天的唯一标识符。 只读。|
+| id| String| 聊天的唯一标识符。 只读。|
 | topic| String|   (聊天) 主题或主题。 仅适用于群聊。|
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  上次更改聊天的日期和时间或成员列表。 只读。|
@@ -63,7 +64,7 @@ ms.locfileid: "51582163"
 
 ### <a name="chattype-values"></a>chatType 值 
 
-| 成员             | 值 | 说明               |
+| 成员             | 值 | Description               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的;无法删除/添加成员。|
 |group               | 1     | 指示聊天是群聊。 可以针对 (聊天类型更新至少两) 名单大小。 稍后可以删除/添加成员。|
@@ -76,7 +77,8 @@ ms.locfileid: "51582163"
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) 集合 | 聊天中所有应用的集合。 可为 Null。 |
 | members | [conversationMember](conversationmember.md) 集合 | 聊天中所有成员的集合。 可为 Null。 |
-| messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有消息的集合。 可为 Null。 |
+| messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有消息的集合。 可为 NULL。 |
+| permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合| 授予聊天应用的权限集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
