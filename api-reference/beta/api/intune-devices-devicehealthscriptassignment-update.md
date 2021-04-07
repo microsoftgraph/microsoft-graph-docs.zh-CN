@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eeca57ccb90e86eca0ee87c99d73f6f1d0e07970
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 93909516b037e7545716156920dfec7a089cebca
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130740"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51610002"
 ---
 # <a name="update-devicehealthscriptassignment"></a>更新 deviceHealthScriptAssignment
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assig
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|我们将脚本定向到的 Azure Active Directory 组|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-devices-deviceandappmanagementassignmenttarget.md)|我们将脚本定向到的 Azure Active Directory 组|
 |runRemediationScript|Boolean|确定是仅运行检测脚本还是同时运行检测脚本和修正脚本|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|目标组的脚本运行计划|
 

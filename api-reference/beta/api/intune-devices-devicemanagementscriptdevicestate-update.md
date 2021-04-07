@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3d56539ac9a3d79a4e5fdbebc0eab4ff7f2823f
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 9014ae76127e37965b7f57d90bb39f4bdfa354fa
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150463"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611844"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>更新 deviceManagementScriptDeviceState
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备管理脚本设备状态实体的键。 此属性是只读的。|
-|runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本的最新运行状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|runState|[runState](../resources/intune-devices-runstate.md)|设备管理脚本的最新运行状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |resultMessage|String|执行输出的详细信息。|
 |lastStateUpdateDateTime|DateTimeOffset|设备管理脚本执行的最新时间。|
 |errorCode|Int32|与设备管理脚本的错误执行相对应的错误代码。|

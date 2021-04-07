@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9c93011407865f4d8a76c22e6ce853d98d55e3ca
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: dcebee5733bedffb4dcb5b29728bc3dbdb9b1938
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50981064"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51613504"
 ---
 ```java
 
@@ -17,10 +17,10 @@ b2cIdentityUserFlow.userFlowType = UserFlowType.SIGN_UP_OR_SIGN_IN;
 b2cIdentityUserFlow.userFlowTypeVersion = 1;
 UserFlowApiConnectorConfiguration apiConnectorConfiguration = new UserFlowApiConnectorConfiguration();
 IdentityApiConnector postFederationSignup = new IdentityApiConnector();
-postFederationSignup.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/identity/apiConnectors/{id}"));
+postFederationSignup.additionalDataManager().put("@odata.id", new JsonPrimitive("{apiConnectorId}"));
 apiConnectorConfiguration.postFederationSignup = postFederationSignup;
 IdentityApiConnector postAttributeCollection = new IdentityApiConnector();
-postAttributeCollection.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/identity/apiConnectors/{id}"));
+postAttributeCollection.additionalDataManager().put("@odata.id", new JsonPrimitive("{apiConnectorId}"));
 apiConnectorConfiguration.postAttributeCollection = postAttributeCollection;
 b2cIdentityUserFlow.apiConnectorConfiguration = apiConnectorConfiguration;
 

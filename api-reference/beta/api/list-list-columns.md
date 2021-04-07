@@ -5,12 +5,12 @@ description: 列出列表中的列。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 7dd2b59086b930b0e7536033b662e61088b15372
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 4ad913c79adcb72978ec522102cd92968dd6c03d
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201048"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611760"
 ---
 # <a name="list-columns-in-a-list"></a>列出列表中的列
 命名空间：microsoft.graph
@@ -44,7 +44,6 @@ ms.locfileid: "51201048"
 }
 -->
 ```http
-
 GET /sites/{site-id}/lists/{list-id}/columns
 ```
 

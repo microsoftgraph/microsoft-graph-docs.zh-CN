@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bfd845b3b7113bf5e1a15f3ea89b645a28a87ba5
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 2643ba37f92e7ff11d5f9a8ea070948fe2f44a55
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158232"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51612054"
 ---
 # <a name="create-remoteactionaudit"></a>创建 remoteActionAudit
 
@@ -61,7 +61,7 @@ POST /deviceManagement/remoteActionAudits
 |requestDateTime|DateTimeOffset|发出操作的时间（以 UTC 表示）。|
 |deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
 |deviceIMEI|String|设备的 IMEI。|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |managedDeviceId|String|操作目标。|
 
 

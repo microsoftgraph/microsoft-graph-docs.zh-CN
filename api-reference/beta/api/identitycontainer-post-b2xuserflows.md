@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0eaabe737d6bc656c5f644dac3ca2903fc39bfd6
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 669a22b000f1273a56344c714b96257eb44d7e75
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508581"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611330"
 ---
 # <a name="create-b2xidentityuserflow"></a>创建 b2xIdentityUserFlow
 
@@ -57,7 +57,7 @@ POST /identity/b2xUserFlows
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |id|String|必填。 用户流名称。 该名称将在创建后进行 `B2X_1` 预笔式处理。|
-|userFlowType|字符串|必填。 要创建的用户流的类型。 此值将始终为 `signUpOrSignIn` 。|
+|userFlowType|String|必填。 要创建的用户流的类型。 此值将始终为 `signUpOrSignIn` 。|
 |userFlowTypeVersion|浮点|必填。 用户流版本。 此值将始终为 1。|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|可选。 用于启用 API 连接器的配置，以便其可以成为用户流的一部分。|
@@ -217,6 +217,8 @@ Content-type: application/json
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2xuserflow_from_b2xuserflows_apiconnectors"
@@ -242,6 +244,24 @@ Content-length: 154
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-b2xuserflow-from-b2xuserflows-apiconnectors-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-b2xuserflow-from-b2xuserflows-apiconnectors-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-b2xuserflow-from-b2xuserflows-apiconnectors-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-b2xuserflow-from-b2xuserflows-apiconnectors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

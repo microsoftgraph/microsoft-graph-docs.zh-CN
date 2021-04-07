@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 18473b930463df4cab7bc5765fdde86cd8ba9e35
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 60b9ecd1c5c4d66b059f2f09baf09a7eaa615c1a
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50781403"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51613507"
 ---
 ```javascript
 
@@ -16,12 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const identityApiConnector = {
-  displayName: 'New Test API',
-  targetUrl: 'https://otherapi.com/api/endpoint',
   authenticationConfiguration: {
-    '@odata.type': 'microsoft.graph.basicAuthentication',
-    username: '<NEW_USERNAME>', 
-    password: '<NEW_PASSWORD>'
+    '@odata.type': '#microsoft.graph.pkcs12Certificate',
+    pkcs12Value: 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA',
+    password: 'secret'
   }
 };
 

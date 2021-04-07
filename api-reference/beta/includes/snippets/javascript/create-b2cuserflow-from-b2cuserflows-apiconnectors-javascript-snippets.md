@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 46fd3ef13a5b04a2e034a62df5774fd5053e0ad5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 096fff2981e38b3f675d0d1edcea6b3edf0bbccb
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50792593"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51613503"
 ---
 ```javascript
 
@@ -21,10 +21,10 @@ const b2cIdentityUserFlow = {
     userFlowTypeVersion: 1,
     apiConnectorConfiguration: {
         postFederationSignup: {
-            '@odata.id': 'https://graph.microsoft.com/beta/identity/apiConnectors/{id}'
+            '@odata.id': '{apiConnectorId}'
         },
         postAttributeCollection: {
-            '@odata.id': 'https://graph.microsoft.com/beta/identity/apiConnectors/{id}'
+            '@odata.id': '{apiConnectorId}'
         }
     }
 };

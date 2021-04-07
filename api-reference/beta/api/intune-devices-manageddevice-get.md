@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09022e0b04b690bb78d70d61adb846eaeaeefc51
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4ebf02fe048a3a39f5515cb11fde9ee614a48759
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150050"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51609687"
 ---
 # <a name="get-manageddevice"></a>获取 managedDevice
 
@@ -20,7 +20,7 @@ ms.locfileid: "51150050"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [managedDevice](../resources/intune-shared-manageddevice.md) 对象的属性和关系。
+读取 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -59,7 +59,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [managedDevice](../resources/intune-shared-manageddevice.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [managedDevice](../resources/intune-devices-manageddevice.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8548
+Content-Length: 8802
 
 {
   "value": {
@@ -263,7 +263,16 @@ Content-Length: 8548
     "joinType": "azureADJoined",
     "skuFamily": "Sku Family value",
     "skuNumber": 9,
-    "managementFeatures": "microsoftManagedDesktop"
+    "managementFeatures": "microsoftManagedDesktop",
+    "chromeOSDeviceInfo": [
+      {
+        "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
+        "name": "Name value",
+        "value": "Value value",
+        "valueType": "Value Type value",
+        "updatable": true
+      }
+    ]
   }
 }
 ```

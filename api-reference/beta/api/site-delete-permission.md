@@ -5,15 +5,17 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bcd406d5df1b24fbf4d289baf339fcd181856174
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 50e18f4a199d3692aee1baf3f5d348a50a884dac
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958991"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611914"
 ---
 # <a name="delete-permission"></a>删除权限
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 [网站上](../resources/permission.md) 的权限对象。
 

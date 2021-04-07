@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a57ca8c423e8bd70de4a28c64794a4db0e9de197
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5eb48d6410b72d0a3adb9f0a305612c17184a241
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135835"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51609519"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8941
+Content-Length: 9213
 
 {
   "value": [
@@ -258,7 +258,16 @@ Content-Length: 8941
       "joinType": "azureADJoined",
       "skuFamily": "Sku Family value",
       "skuNumber": 9,
-      "managementFeatures": "microsoftManagedDesktop"
+      "managementFeatures": "microsoftManagedDesktop",
+      "chromeOSDeviceInfo": [
+        {
+          "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
+          "name": "Name value",
+          "value": "Value value",
+          "valueType": "Value Type value",
+          "updatable": true
+        }
+      ]
     }
   ]
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d4f61c14eda8d1187acaab07d92975e07710ba5
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 107716380bf7ef598b7071fd1299f5a25a3c911c
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130775"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611900"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>更新 deviceComplianceScriptDeviceState
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备合规性脚本设备状态实体的键。 此属性是只读的。|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|最近一次执行设备合规性脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|最近一次执行设备合规性脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备合规性脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|下一次执行设备合规性脚本的时间戳|
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|

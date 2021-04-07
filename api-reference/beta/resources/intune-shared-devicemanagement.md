@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5a2ee897506a2d642dd4dcb9df75ed8a3198ca4
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 2673f7325d3be8285e01d75e5dbcc3b7cb691dda
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159303"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611122"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -39,13 +39,13 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 - 远程访问
 - 远程协助合作伙伴
 - 基于角色的访问控制 (RBAC) 策略
-- Reporting
+- 报告
 - 电信业务管理合作伙伴
 - 事件疑难解答
 - Windows 信息保护摘要
 
 ## <a name="methods"></a>方法
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-shared-devicemanagement-get.md)|读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。|
 |[更新 deviceManagement](../api/intune-shared-devicemanagement-update.md)|更新 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性。|
@@ -130,10 +130,13 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |deviceShellScripts|[deviceShellScript](../resources/intune-devices-deviceshellscript.md) 集合|与租户关联的设备 shell 脚本列表。|
 |deviceHealthScripts|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md) 集合|与租户关联的设备运行状况脚本列表。|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|设备概述|
-|managedDevices|[managedDevice](../resources/intune-shared-manageddevice.md) 集合|托管设备列表。|
+|managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|托管设备列表。|
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) 集合|租户的设备远程操作审核列表。|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) 集合|租户中受影响的恶意软件列表。|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) 集合|MobileAppTroubleshootingEvent 的集合属性。|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userExperienceAnalyticsOverview.md)|用户体验分析概述|
+|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userExperienceAnalyticsBaseline.md) 集合|用户体验分析基线|
+|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userExperienceAnalyticsCategory.md) 集合|用户体验分析类别|
 |userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userExperienceAnalyticsDevicePerformance.md) 集合|用户体验分析设备性能|
 |userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userExperienceAnalyticsRegressionSummary.md)|用户体验分析回归摘要|
 |userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md) 集合|用户体验分析设备启动历史记录|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7db2c523dccab40a48d95289ca72d832a09e2ec
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c2520d476265ee9745efa6a017d8de23a2bc77ad
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130663"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51609491"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>更新 deviceHealthScriptDeviceState
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|预计执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|

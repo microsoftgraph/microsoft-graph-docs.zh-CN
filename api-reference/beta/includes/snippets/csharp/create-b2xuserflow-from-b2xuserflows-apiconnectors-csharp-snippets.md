@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3d87f012945cf940faf8a875ee5103d9a6264dab
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: bbf1b095c3661cd58cfc5c95c5ffe8e64ae4cf88
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844385"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611328"
 ---
 ```csharp
 
@@ -22,14 +22,14 @@ var b2xIdentityUserFlow = new B2xIdentityUserFlow
         {
             AdditionalData = new Dictionary<string, object>()
             {
-                {"@odata.id", "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"}
+                {"@odata.id", "{apiConnectorId}"}
             }
         },
         PostAttributeCollection = new IdentityApiConnector
         {
             AdditionalData = new Dictionary<string, object>()
             {
-                {"@odata.id", "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"}
+                {"@odata.id", "{apiConnectorId}"}
             }
         }
     }
