@@ -5,12 +5,12 @@ description: 为网站创建内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 9617d43291e241bb937e7743dcbfddbb83cb6edd
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 4eff9efd9ae4f2b2daa81356cc8d3887f7fc3c29
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202050"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638863"
 ---
 # <a name="create-contenttype"></a>创建 contentType
 命名空间：microsoft.graph
@@ -36,7 +36,6 @@ ms.locfileid: "51202050"
 
 ```http
 POST /sites/{site-id}/contentTypes
-
 ```
 
 ## <a name="request-headers"></a>请求标头

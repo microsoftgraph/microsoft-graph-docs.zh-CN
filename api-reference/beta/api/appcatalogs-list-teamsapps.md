@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0aa3aeea81bf0d559fd97fe45598c662c9cdb4ae
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: c4d559cb7778e6a0147e0e0fd4b8fc5f63bfb168
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844146"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638870"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
@@ -19,12 +19,12 @@ ms.locfileid: "49844146"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出[](../resources/teamsapp.md) Microsoft Teams 应用目录中的应用。
-这包括来自 Microsoft Teams 应用商店的应用，以及来自组织的应用程序目录中的应用 (租户应用程序目录) 。 若要仅从组织的应用程序目录中获取应用，请指定为请求 `organization` 中的 **distributionMethod。**
+这包括来自 Microsoft Teams 应用商店的应用，以及租户应用程序目录和租户 (目录中) 。 若要仅从组织的应用程序目录中获取应用程序，请 `organization` 指定为请求中的 **distributionMethod。**
 
 > [!NOTE]
-> teamsApp 资源由服务器生成，与 Teams 应用清单中指定的资源 `id`  `id` 不同。 开发人员作为 Teams 应用清单的一部分提供将 `id` 标记为 `externalId` **teamsApp** 资源。
+> teamsApp 资源的 由服务器生成，与 Teams 应用清单中指定的 `id`  `id` 不同。 开发人员作为 Teams 应用清单的一部分提供的 `id` 标记为 `externalId` **teamsApp** 资源中的 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,9 +46,9 @@ GET /appCatalogs/teamsApps
 
 此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-使用将返回有关应用状态（如 `$expand=AppDefinitions` **publishingState）** 的更多信息，它反映应用提交评审状态，并返回应用是否已获得批准、被拒绝或仍在审核中。 
+使用 将返回有关应用状态（如 publishingState）的更多信息，它反映应用提交评价状态，并返回应用是否已获得批准、被拒绝或仍在审核 `$expand=AppDefinitions` 中。  
 
-> **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用以下任一筛选操作：等于、不等于和/或不。
+> **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用下列任一筛选操作：等于、不等于、和、或、不。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -62,7 +62,7 @@ GET /appCatalogs/teamsApps
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [teamsApp](../resources/teamsapp.md) 对象列表。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [teamsApp](../resources/teamsapp.md) 对象列表。
 
 ## <a name="examples"></a>示例
 
@@ -254,9 +254,9 @@ Content-Type: application/json
   }
 ```
 
-### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例 4：列出具有给定 ID 的应用程序，并返回提交评审状态
+### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例 4：列出具有给定 ID 的应用程序，并返回提交审阅状态
 
-以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState，** 反映应用的提交审阅状态。 `Submitted` 表示评价挂起，表示应用已由管理员批准，并且表示应用 `published` `rejected` 已遭管理员拒绝。
+以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState**，这反映了应用的提交审阅状态。 `Submitted` 表示评价挂起，表示应用已由管理员批准，并且表示应用 `published` `rejected` 已遭管理员拒绝。
 
 #### <a name="request"></a>请求
 
@@ -450,6 +450,57 @@ Content-Type: application/json
                     "bot": {
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
                     }
+                }
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-6-list-the-details-of-apps-filtered-by-app-installation-scope"></a>示例 6：列出按应用安装范围筛选的应用的详细信息
+
+以下示例仅列出可在用户个人范围内安装的应用。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_in_personal_scope"
+}-->
+
+```msgraph-interactive
+GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($select=id,displayName,allowedInstallationScopes)&$filter=appDefinitions/any(a:a/allowedInstallationScopes has 'personal')
+```
+---
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_in_personal_scope",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(id,displayName,allowedInstallationScopes))",
+    "value": [
+        {
+            "id": "5a542e1c-5f8c-4793-8b0c-6082464b2378",
+            "externalId": "4b3ec336-b998-4623-9e25-d4182fb82159",
+            "displayName": "Carriage",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('5a542e1c-5f8c-4793-8b0c-6082464b2378')/appDefinitions(id,displayName,allowedInstallationScopes)",
+            "appDefinitions": [
+                {
+                    "id": "MWE1NDJlMWMtNWY4Yy00NzkzLThiMGMtNjA4MjQ2NGIyMzc4IyMxLjAuMCMjUHVibGlzaGVk",
+                    "displayName": "Carriage",
+                    "allowedInstallationScopes": "personal"
                 }
             ]
         }

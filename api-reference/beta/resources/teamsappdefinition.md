@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 6b5fd771d1fb38de5354c74778f5eae798ccc91e
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 205c656e81ed9dfc75e97cbe0734eeb36c5c0127
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706113"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638905"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition 资源类型
 
@@ -18,18 +18,19 @@ ms.locfileid: "49706113"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-teamsApp 版本 [的详细信息](teamsapp.md)。
+teamsApp [版本的详细信息](teamsapp.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | 唯一 id (不是 teams appid) 。 |
-| teamsAppId          | string   | Teams 应用清单中的 ID。 |
-| publishingState| string|特定版本的 Teams 应用的已发布状态。 可能的值是：</br>`submitted` — Teams 应用的特定版本已提交，正在审查中。 </br>`published`  — 发布特定版本的 Teams 应用的请求已由管理员批准并发布。 </br> `rejected` — 管理员拒绝了发布特定版本的 Teams 应用的请求。 |
-| azureADAppId        | string   | Teams WebApplicationInfo.id清单中的设置。 |
+| teamsAppId          | 字符串   | Teams 应用清单中的 ID。 |
+| publishingState| 字符串|Teams 应用特定版本的已发布状态。 可能的值是：</br>`submitted` — Teams 应用的特定版本已提交，正在审查中。 </br>`published`  — 发布特定版本的 Teams 应用的请求已由管理员批准，并且该应用已发布。 </br> `rejected` — 管理员拒绝了发布 Teams 应用的特定版本的请求。 |
+| azureADAppId        | 字符串   | The WebApplicationInfo.id from the Teams App manifest. |
 | displayName         | string   | 应用开发人员提供的应用的名称。 |
-| version             | string   | 应用程序的版本号。 |
+| version             | 字符串   | 应用程序的版本号。 |
+| allowedInstallationScopes | teamsAppInstallationScope 集合 | 可在其中安装 Teams 应用的范围集合。 可能的值是：</br>`team` — 指示 Teams 应用可以安装在团队中，并有权访问该团队的数据。 </br>`groupChat`  — 指示 Teams 应用可以安装在群聊中，并有权访问该群聊的数据。 </br> `personal` — 指示 Teams 应用可以安装在用户的个人范围内，并有权访问该用户的数据。 | 
 
 ## <a name="relationships"></a>关系
 

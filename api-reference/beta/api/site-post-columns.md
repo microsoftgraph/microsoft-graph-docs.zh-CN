@@ -6,12 +6,12 @@ description: 创建网站栏。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 9198bd0841fde42ef3d96e96db89515341040e9e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1404707dc2a98b4ac60e663fd25d595c977148f7
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965045"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638836"
 ---
 # <a name="create-columndefinition-for-a-site"></a>为网站创建 columnDefinition
 命名空间：microsoft.graph
@@ -57,17 +57,17 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/columns
 Content-Type: application/json
 
 {
-  "description": "test",
-  "enforceUniqueValues": false,
-  "hidden": false,
-  "indexed": false,
-  "name": "Title",
-  "text": {
-    "allowMultipleLines": false,
-    "appendChangesToExistingText": false,
-    "linesForEditing": 0,
-    "maxLength": 255
-  }
+   "description":"test",
+   "enforceUniqueValues":false,
+   "hidden":false,
+   "indexed":false,
+   "name":"Title",
+   "text":{
+      "allowMultipleLines":false,
+      "appendChangesToExistingText":false,
+      "linesForEditing":0,
+      "maxLength":255
+   }
 }
 ```
 
@@ -82,21 +82,20 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "description": "test",
-  "displayName": "Title",
-  "enforceUniqueValues": false,
-  "hidden": false,
-  "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
-  "indexed": false,
-  "name": "Title",
-  "text": {
-    "allowMultipleLines": false,
-    "appendChangesToExistingText": false,
-    "linesForEditing": 0,
-    "maxLength": 255
-  }
+   "description":"test",
+   "displayName":"Title",
+   "enforceUniqueValues":false,
+   "hidden":false,
+   "id":"99ddcf45-e2f7-4f17-82b0-6fba34445103",
+   "indexed":false,
+   "name":"Title",
+   "text":{
+      "allowMultipleLines":false,
+      "appendChangesToExistingText":false,
+      "linesForEditing":0,
+      "maxLength":255
+   }
 }
-
 ```
 
   

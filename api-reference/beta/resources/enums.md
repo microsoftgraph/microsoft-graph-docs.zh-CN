@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: da886cc799f638d981c6aa0d9ee213518c6deedc
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 194669c6dcf19e72732c9d798d3081d8ed4606e0
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491024"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638912"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -76,7 +76,7 @@ ms.locfileid: "51491024"
 |整数|
 |参考|
 |二进制|
-|布尔|
+|Boolean|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -397,7 +397,7 @@ ms.locfileid: "51491024"
 |all|
 |privilegedAdmin|
 |admin|
-|用户|
+|user|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>includedUserTypes 值 
@@ -413,7 +413,7 @@ ms.locfileid: "51491024"
 
 |Member|
 |:---|
-|用户|
+|user|
 |应用|
 |system|
 |unknownFutureValue|
@@ -610,7 +610,7 @@ ms.locfileid: "51491024"
 
 |Member|
 |:---|
-| 默认值|
+|default|
 |enabled|
 |disabled|
 |unknownFutureValue|
@@ -698,7 +698,7 @@ ms.locfileid: "51491024"
 
 |Member|
 |:---|
-|用户|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState 值
@@ -810,7 +810,7 @@ ms.locfileid: "51491024"
 |Member|
 |:---|
 |event|
-|消息|
+|message|
 |driveItem|
 |externalItem|
 |网站|
@@ -1142,7 +1142,7 @@ ms.locfileid: "51491024"
 
 | Member
 |:-------------------------
-|  默认值
+| default
 | conferenceRoom
 | homeAddress
 | businessAddress
@@ -1173,10 +1173,10 @@ ms.locfileid: "51491024"
 | doNotForward
 | followUp
 | fyi
-| 转发
+| forward
 | noResponseNecessary
 | 阅读
-| 回复
+| reply
 | replyToAll
 | review
 
@@ -1207,7 +1207,7 @@ ms.locfileid: "51491024"
 |:-------------------------
 | 替换
 | Append
-| 删除
+| Delete
 | Insert
 | Prepend
 
@@ -1669,13 +1669,13 @@ ms.locfileid: "51491024"
 | 无   | 0     |
 | 添加    | 1     |
 | 更新 | 2     |
-| 删除 | 4      |
+| Delete | 4      |
 
 ### <a name="chatmessagetype-values"></a>chatMessageType 值
 
 |Member|
 |:---|
-|消息|
+|message|
 
 ### <a name="chatmessageimportance-values"></a>chatMessageImportance 值
 
@@ -1726,7 +1726,7 @@ ms.locfileid: "51491024"
 |Member|
 |:---|
 |signin|
-|用户|
+|user|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>chatMessagePolicyViolationUserActionType 值
@@ -1751,7 +1751,7 @@ ms.locfileid: "51491024"
 | Member       |
 |:--------------|
 |event|
-|消息|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -1790,7 +1790,7 @@ ms.locfileid: "51491024"
 
 | 成员  | 值 | 说明                          |
 | :------ | :---- | :----------------------------------- |
-|  默认值 | 0     | 内容是文件或非电子邮件类型。 |
+| default | 0     | 内容是文件或非电子邮件类型。 |
 | email   | 1     | 内容是电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
@@ -1933,7 +1933,7 @@ ms.locfileid: "51491024"
 | 成员        | 值 | 说明              |
 |:--------------|:------|:-------------------------|
 | undefined     | 0     | 尚不知道。            |
-| 用户          | 1     | 用户提交。         |
+| user          | 1     | 用户提交。         |
 | administrator | 2     | 租户管理员提交。 |
 
 ### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
@@ -2024,7 +2024,7 @@ ms.locfileid: "51491024"
 |dateTime | dateTime 列。 |
 |查找 | 查找列。 |
 |boolean | 是/否列。 |
-|用户 | 人员或组列。 |
+|user | 人员或组列。 |
 |url | 超链接或图片列。 |
 |calculated | 计算列。 |
 |位置 | location 列。 |
@@ -2054,7 +2054,7 @@ ms.locfileid: "51491024"
 
 |Member|
 |:---|
-|用户|
+|user|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType 值
@@ -2160,3 +2160,10 @@ ms.locfileid: "51491024"
 |other|
 |unknownFutureValue|
 
+### <a name="teamsappinstallationscope-values"></a>teamsAppInstallationScope 值
+
+|成员    |值    |说明 |
+|:---------|:--------|:----------- |
+|团队      |0        |指示 Teams 应用可以安装在团队中，并有权访问该团队的数据。|
+|groupChat |1        |指示 Teams 应用可以安装在群聊中，并有权访问该群聊的数据。|
+|personal  |2        |指示 Teams 应用可以安装在用户的个人范围内，并有权访问该用户的数据。|

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 2ca5b717c44ac1d0652deeaba30dd9ddcd2e00f7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0d5d09599108b7753ee60012337e393c6bc79905
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137639"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638856"
 ---
 # <a name="permissionscope-resource-type"></a>permissionScope 资源类型
 
@@ -20,20 +20,20 @@ ms.locfileid: "50137639"
 
 表示委派权限 [的定义](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。
 
-委派权限可以通过需要访问令牌的客户端应用程序请求，该 API 定义了权限。 可通过应用程序对象的 [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent) `scopes` **requiredResourceAccess** 集合，使用 Microsoft 标识平台的授权请求中的参数动态 [](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)请求委派权限，或静态 [请求](application.md)委派权限。
+委派权限可以通过需要访问令牌的客户端应用程序请求，该 API 定义了权限。 可通过 [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent)应用程序对象的 `scopes` **requiredResourceAccess**[](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)集合动态请求委派权限，使用 Microsoft 标识平台的授权请求中的 参数，或静态 [](application.md)请求。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|adminConsentDescription|字符串|委派权限的说明，供代表所有用户授予权限的管理员读取。 此文本显示在租户范围的管理员同意体验中。|
-|adminConsentDisplayName|字符串|权限的标题，供代表所有用户授予权限的管理员读取。|
+|adminConsentDescription|String|委派权限的说明，供代表所有用户授予权限的管理员读取。 此文本显示在租户范围的管理员同意体验中。|
+|adminConsentDisplayName|String|权限的标题，供代表所有用户授予权限的管理员读取。|
 |id|Guid|为资源应用程序定义的委派权限集合中的唯一委派权限标识符。|
-|isEnabled|Boolean|在创建或更新权限时，必须将此属性设置为 **true** (这是默认) 。 若要删除权限，必须先将此属性设置为 **false。**  此时，在后续调用中，可能会删除权限。|
-|type|字符串|指定非管理员用户代表自己同意此委派权限是否安全，或者是否需要管理员同意这些权限。 这是默认行为，但每个客户都可以选择通过允许、限制或限制用户对此委派权限 (自定义其组织中的行为。) |
-|userConsentDescription|字符串|委派权限的说明，供代表自己授予权限的用户读取。 此文本显示在用户仅代表自己同意的同意体验中。|
-|userConsentDisplayName|字符串|权限的标题，供代表自己授予权限的用户读取。 此文本显示在用户仅代表自己同意的同意体验中。|
-|value|String|指定要包括在访问令牌中声明 (`scp` 范围) 的值。 长度不得超过 120 个字符。 允许的字符 `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` 以及范围中的字符 `0-9` 和 `A-Z` `a-z` 。 不允许任何其他字符，包括空格字符。|
+|isEnabled|Boolean|创建或更新权限时，必须将此属性设置为 **true** (这是默认) 。 若要删除权限，必须先将此属性设置为 **false**。  此时，在后续调用中，可能会删除权限。|
+|type|String|指定非管理员用户代表自己同意此委派权限是否安全，或者是否需要管理员同意这些权限。 这是默认行为，但每个客户都可以选择自定义其组织中的行为 (允许、限制或限制用户对此委派权限的同意。) |
+|userConsentDescription|String|委派权限的说明，供代表自己授予权限的用户阅读。 此文本显示在用户仅代表自己同意的同意体验中。|
+|userConsentDisplayName|String|权限的标题，供代表自己授予权限的用户读取。 此文本显示在用户仅代表自己同意的同意体验中。|
+|value|String|指定要包括在访问令牌中声明 (`scp` 作用域) 的值。 长度不得超过 120 个字符。 允许的字符 `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` 包括 、 和 范围 `0-9` `A-Z` 中的字符 `a-z` 。 不允许任何其他字符，包括空格字符。 不得以 开头 `.` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
