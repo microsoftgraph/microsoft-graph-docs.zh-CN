@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 7cbe064bb6e253d7e3c05648d0d531020cffb4b6
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 53a1b89dfbd7ba160f62ea36451a0428fe9757f1
+ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761749"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654091"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -17,25 +17,84 @@ ms.locfileid: "50761749"
 > [!IMPORTANT]
 > _预览_ 状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
 
+## <a name="april-2021-new-and-generally-available"></a>2021 年 4 月：新增功能，正式可用
+
+### <a name="teamwork"></a>团队合作
+- 如果 [chatMessage](/graph/api/resources/chatmessage)在通道内，则通过 **channelIdentity** 属性标识通道。
+- 如果聊天中 **chatMessage** ， **chatMessage** 识别聊天。
+- 使用 **关系** ，通过聊天或 [获取](/graph/api/resources/chatmessage) 聊天中的 [邮件](/graph/api/resources/chat)。
+
+## <a name="april-2021-new-in-preview-only"></a>2021 年 4 月：仅预览版新增功能
+
+### <a name="teamwork"></a>团队合作
+使用 [资源特定的权限](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true) ，列出有权访问指定的 [组或](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) 或 [权限的应用](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)。
+
 ## <a name="march-2021-new-and-generally-available"></a>2021 年 3 月: 新版本和正式版
 
 ### <a name="applications"></a>应用程序
-支持在 Azure AD 应用程序库中 [列出](/graph/api/applicationtemplate-list) 应用程序，并将此类应用程序的实例 [添加](/graph/api/applicationtemplate-instantiate) 到目录中的 [applicationTemplate](/graph/api/resources/applicationtemplate) 资源的 GA。
+- 支持在 Azure AD 应用程序库中 [列出](/graph/api/applicationtemplate-list) 应用程序，并将此类应用程序的实例 [添加](/graph/api/applicationtemplate-instantiate) 到目录中的 [applicationTemplate](/graph/api/resources/applicationtemplate) 资源的 GA。
+- 添加此类实例 `Application.ReadWrite.OwnedBy` 时 [仅](/graph/api/applicationtemplate-instantiate) 权限。
+- 使用 [servicePrincipal](/graph/api/resources/serviceprincipal) 的 **signInAudience** 属性获取当前应用程序支持的用户帐户。
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
-适用于通用打印的 [云打印](universal-print-concept-overview.md) GA! 查看 [公告](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/universal-print-is-ready-for-business/ba-p/2176778)，并查看如何 [开始使用通用打印](https://docs.microsoft.com/universal-print/fundamentals/universal-print-license)。
+- 适用于通用打印的 [云打印](universal-print-concept-overview.md) GA! 查看 [公告](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/universal-print-is-ready-for-business/ba-p/2176778)，并查看如何 [开始使用通用打印](https://docs.microsoft.com/universal-print/fundamentals/universal-print-license)。
+- 在 [打印任务定义](/graph/api/resources/printtaskdefinition)上[订阅更改通知](universal-print-webhook-notifications.md)或[打印机](/graph/api/resources/printer)资源。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+- 使用 Azure Active Directory （Azure AD） [许可请求](/graph/api/resources/consentrequests-root) 管理尝试访问需要管理员审批的应用的用户的请求工作流。 API 利用下列资源：
+  - [adminConsentRequestPolicy](/graph/api/resources/adminconsentrequestpolicy) 一个资源，用于创建和管理组织的应用访问请求。
+  - [appConsentRequest](/graph/api/resources/appconsentrequest)一个资源，用于聚合和管理用户访问特定应用的请求。
+  - [userConsentRequest](/graph/api/resources/userConsentRequest)一个资源，用于请求访问需要管理员授权的用户。 
+  - [accessReviewReviewer用户](/graph/api/resources/accessReviewReviewerScope) 资源定义 **adminConsentRequestPolicy** 中指定的用户，用于查看 **appConsentRequest** 和 **userConsentRequest** 对象。
+  - 审批 [资源](/graph/api/resources/approval) 表示对请求的批准决定。
+- 支持租户在 Azure AD 中自定义 [使用条款](/graph/api/resources/agreement) API 的 GA。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- [身份验证方法](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true)包括 [FIDO2 安全键](/graph/api/resources/fido2authenticationmethod)、[Microsoft Authenticator 应用](/graph/api/resources/microsoftauthenticatorauthenticationmethod)和 [Windows Hello for Business](/graph/api/resources/windowshelloforbusinessauthenticationmethod)。
+- GA [身份验证方法策略](/graph/api/resources/authenticationmethodspolicies-overview) 定义身份验证方法，允许使用这些方法在 Azure AD 中登录并执行多重身份验证 （MFA） 的用户。 可在 Microsoft Graph 中管理的身份验证方法策略包括 [FIDO2 安全密钥](/graph/api/resources/fido2authenticationmethodconfiguration)、使用 [Microsoft Authentic](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration)ator 应用登录无密码电话登录以及租户的 [电子邮件 OTP 身份验证方法策略](/graph/api/resources/emailauthenticationmethodconfiguration)。
+- GA [功能推出策略](/graph/api/resources/featureRolloutPolicy) ，帮助租户管理员在为整个组织启用这些功能之前对特定组进行功能试点。
+- 组织品牌 [GA](/graph/api/resources/organizationalbrandingproperties) ，用于自定义 Azure Active Directory 登录屏幕的外观。 组织可根据工作地点自定义特定用户。
+
+### <a name="tasks-and-plans"></a>任务和计划
+- 使用权限的委派 `Tasks.Read` 读取所有 Planner 资源的操作。
+- 使用权限的委派 `Tasks.ReadWrite` 读取和写入所有 Planner 资源的操作。
 
 ### <a name="teamwork"></a>团队合作
+- [聊天](/graph/api/resources/chat) 操作、[对话邮件](/graph/api/resources/conversationmember)、聊天 [应用](/graph/api/resources/teamsappinstallation)、聊天 [选项卡](/graph/api/resources/teamstab)及其方法。
 - 代表了 Microsoft Teams 应用目录中应用版本细节的[teamsAppDefinition](/graph/api/resources/teamsAppDefinition) GA 的一些更多属性，其中包括:
   - **createdBy**、**描述**、**shortDescription**、**lastModifiedDateTime**
   - **publishingState**，可以是`submitted`中之一和由管理员发布的正在审核、`published`、或`rejected` 中的状态
   - [teamworkBot](/graph/api/resources/teamworkbot) 类型的 **机器人** 关系，表示 Teams 应用清单中指定的机器人的详细信息。
+- 使用活动源通知 API 在三个环境中更好地让用户参与：
+  - [在聊天中向用户发送通知](/graph/api/chat-sendactivitynotification)
+  - [向团队中的用户发送通知](/graph/api/team-sendactivitynotification)
+  - [向用户发送通知](/graph/api/userteamwork-sendactivitynotification)
+- 将用户的消息历史记录和数据从外部系统迁移到 Teams 频道，使用户能够顺畅地继续通信。 使用以下支持迁移方案的方法：
+  - [创建团队](/graph/api/team-post)
+  - [创建频道](/graph/api/channel-post)
+  - [在频道中创建 chatMessage](/graph/api/channel-post-messages)
+  - [在渠道中回复消息](/graph/api/channel-post-messagereply)
+  - [在团队中完成邮件迁移](/graph/api/team-completemigration)
+  - [在频道中完成邮件迁移](/graph/api/channel-completemigration)
 - [列表](/graph/api/chatmessage-list-chatmessagehostedcontents) 或 [获取](/graph/api/chatmessagehostedcontent-get) [chatMessage](/graph/api/resources/chatmessage) 中的丰富内容，如图片或代码片段。
+- 订阅 chatMessage `ChannelMessage.Read.All` 资源 [更改通知的委派权限](/graph/api/resources/chatmessage) 支持。
 
 ## <a name="march-2021-new-in-preview-only"></a>2021 年 3 月：仅限预览版中的新增功能
 
+### <a name="applications"></a>应用程序
+[创建自签名证书证书](/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta&preserve-view=true) 添加到 SAML 应用程序。 借助此功能，允许 Azure AD 对 SAML 响应进行签名，帮助租户中启用 Azure AD 库应用单一登录。
+
+### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
+添加到 [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) 资源之后，上传设备源映像失败再出现两个原因：操作系统不受支持 （`osVersionNotSupported`）， 或者预配 Windows 虚拟机 （`sourceImageInvalid`） 的源映像无效。
+
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 当打印机与通用打印交互时，获取最近日期/时间 (**lastSeenDateTime** 属性)。
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+Intune [3](https://developer.microsoft.com/graph/changelog/?from=2021-03-01&to=2021-03-31&filterBy=Corporate%20management) beta 版更新。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+将新模型 [访问权限审阅](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 组成员身份和所有其他支持的资源类型。 在 <a0/ [中弃用旧版 Access 审阅](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="sites-and-lists"></a>网站和列表
 - 通过 [contentType](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) 实体上的一组新属性和方法，支持特定站点集合中文档或文档集的特定内容类型或模板。 方法包括下列几种:
@@ -49,72 +108,13 @@ ms.locfileid: "50761749"
 - [获取可应用于列表上网站的内容类型](/graph/api/site-getApplicableContentTypesForList?view=graph-rest-beta&preserve-view=true)。
 - 按 **columnDefinition** 实体中的下列属性来区分列类型: 布尔型、计算型、选择型、货币型、日期时间型、查找型、数字型、人或组型、文本型。 这些属性是相互排斥的。
 
+### <a name="sites-and-lists--taxonomy"></a>网站和列表 | 分类
+- 使用术语库 [关系](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true)[termStore](/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true)导航到 **术语** 存储。
+- 反之，则使用 **parentSiteId** 属性获取术语库的父站点的ID。
+
 ### <a name="users"></a>用户
-[通过](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true) 或 [更新](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true) 用户 [对翻译语言的偏好](/graph/api/resources/translationpreferences?view=graph-rest-beta&preserve-view=true)。 例如，是否翻译、自动翻译、或在翻译消息、聊天和网页中的特定语言之前提示，以及进行任何 [翻译覆盖](/graph/api/resources/translationlanguageoverride?view=graph-rest-beta&preserve-view=true)。
-
-## <a name="february-2021-new-and-generally-available"></a>2021 年 2 月：新版本和正式版
-
-### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
-对[onlineMeeting](/graph/api/resources/onlinemeeting)资源的操作和方法使用基于策略的 `OnlineMeetings.Read.All` 或 `OnlineMeetings.ReadWrite.All` 应用程序权限。 这意味着管理员可以[配置应用访问策略](cloud-communication-online-meeting-application-access-policy.md)，允许应用代表用户访问在线会议。
-
-### <a name="sites-and-lists"></a>网站和列表
-使用 [权限](/graph/api/resources/permission) 资源及其 CRUD 操作来管理为 [driveItem](/graph/api/resources/driveitem) 授予的共享权限。 带链接面的权限代表共享项目上创建的链接。 带有邀请面的权限表示通过邀请特定用户或组访问文件而增加的权限。
-
-## <a name="february-2021-new-in-preview-only"></a>2021 年 2 月：仅限预览版中的新增功能
-
-### <a name="applications"></a>应用程序
-对 [同步 API](/graph/api/resources/synchronization-overview?view=graph-rest-beta&preserve-view=true) 使用应用程序权限，这些 API 可在 Azure AD 中自动供应 (创建、维护) 和取消供应 (删除) 身份。
-
-### <a name="cloud-communications--calls"></a>云通信 | 呼叫
-支持[基于政策的通话录音](/microsoftteams/teams-recording-policy)，使用管理政策自动记录通话，以便根据相关企业或监管政策的要求进行后续处理和保留。 在基于策略的参与者加入呼叫之前，策略规定向与策略相关联的具有处理新参与者的可用能力的机器人发送一个 [participantJoiningNotification ](/graph/api/resources/participantJoiningNotification?view=graph-rest-beta&preserve-view=true)。 机器人在其响应有效载荷中会以 [acceptJoinResponse](/graph/api/resources/acceptjoinresponse?view=graph-rest-beta&preserve-view=true)、[rejectJoinResponse](/graph/api/resources/rejectjoinresponse?view=graph-rest-beta&preserve-view=true) 或 [inviteNewBotResponse](/graph/api/resources/invitenewbotresponse?view=graph-rest-beta&preserve-view=true) 中的一个来响应。
-
-### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
-- 为了诉讼、内部调查或其他法律操作的目的，使用 [legalHold](/graph/api/resources/ediscovery-legalhold?view=graph-rest-beta&preserve-view=true) 资源及其 API 来无限期地保护不删除其内容。
-- 使用 [sourceCollection](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true) 资源及其 API 来搜索和识别 Microsoft 365 中保管和非保管位置的相关文档。
-- 在审查过程中使用 [标记](/graph/api/resources/ediscovery-tag?view=graph-rest-beta&preserve-view=true) 资源和 API 来标记文档，以分离响应式和非响应式内容。
-- 从[审阅集](/graph/api/resources/ediscovery-reviewset?view=graph-rest-beta&preserve-view=true)中[导出](/graph/api/ediscovery-reviewset-export?view=graph-rest-beta&preserve-view=true)文档。
-- 使用 [AddToReviewSet](/graph/api/ediscovery-reviewset-addtoreviewset?view=graph-rest-beta&preserve-view=true) 操作将 **sourceCollection** 中的文档添加到 **reviewSet** 中。
-- 根据[审阅集查询](/graph/api/resources/ediscovery-reviewsetquery?view=graph-rest-beta&preserve-view=true)将[标签应用](/graph/api/ediscovery-reviewsetquery-applytags?view=graph-rest-beta&preserve-view=true)到文档中。
-- 在 `microsoft.graph.ediscovery` 命名空间中定义了所有 eDiscovery API。
-- 将委托权限模式由 `User.Read` 改为 `eDiscovery.Read.All` 和 `eDiscovery.ReadWrite.All`。
-
-### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
-- Intune [2月](https://developer.microsoft.com/graph/changelog/?from=2021-02-01&to=2021-02-28&filterBy=Corporate%20management) 更新的测试版。
-- Intune 在 [设备](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源上设置的新属性: **deviceCategory**、**deviceOwnership**、**domainName**、**enrollmentProfileName**、**enrollmentType**、**isRooted**、**managementType** 和 **registrationDateTime**。
-
-### <a name="education"></a>教育版
-使用 [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) 来指定课堂作业的默认操作，例如，作业到期时间、作业通知的频道 URL。 仍然可以在创建任务时自定义值。
-
-### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
-- 使用 [smsAuthenticationMethodConfiguration](/graph/api/resources/smsAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) 资源以 [获取](/graph/api/smsauthenticationmethodconfiguration-get?view=graph-rest-beta&preserve-view=true)、[更新](/graph/api/smsauthenticationmethodconfiguration-update?view=graph-rest-beta&preserve-view=true) 或 [删除](/graph/api/smsauthenticationmethodconfiguration-delete?view=graph-rest-beta&preserve-view=true) 组织中短信身份验证策略的配置设置。
-- 使用 [temporaryAccessPassAuthenticationMethodConfiguration](/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) 资源以 [获取](/graph/api/temporaryaccesspassauthenticationmethodconfiguration-get?view=graph-rest-beta&preserve-view=true)、[更新](/graph/api/temporaryaccesspassauthenticationmethodconfiguration-update?view=graph-rest-beta&preserve-view=true) 和 [删除](/graph/api/temporaryaccesspassauthenticationmethodconfiguration-delete?view=graph-rest-beta&preserve-view=true) 组织中临时访问传递身份验证策略的配置设置。
-
-### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-- 在 [[访问包分配请求](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)，将地理位置信息分配给](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)。
-- 获取所有表示 SharePoint Online 资源存储地理位置的[访问包资源环境](/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true)的列表。
-- 对下列资源的操作使用应用权限 (`EntitlementManagement.Read.All` 或 `EntitlementManagement.ReadWrite.All`):
-  - [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
-  - [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true)
-  - [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
-  - [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
-  - [accessPackageAssignmentResourceRole](/graph/api/resources/accesspackageassignmentresourcerole?view=graph-rest-beta&preserve-view=true)
-  - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
-  - [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
-  - [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true)
-  - [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta&preserve-view=true)
-
-### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
-在[SharePoint站点使用情况的详细报告](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta&preserve-view=true)中获取更多属性：anonymousLinkCount、companyLinkCount、externalSharing、地理位置、secureLinkForGuestCount、secureLinkForMemberCount、siteSensitivityLabelId 和 unmanagedDevicePolicy。
-
-### <a name="tasks-and-plans"></a>任务和计划
-- 在计划的 [计划详细信息](/graph/api/resources/plannerplandetails?view=graph-rest-beta&preserve-view=true) 对象中最多定义 25 个类别。 对于每个类别指定一个描述性标签，并将计划中的任务与一个或多个类别联系起来。 
-- 使用 [名单](/graph/api/resources/plannerRoster?view=graph-rest-beta&preserve-view=true) 来表示在 [计划](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) 上协作的用户集合。 使用 **rosterPlans** 关系以获取该用户的 [成员](/graph/api/resources/plannerrostermember?view=graph-rest-beta&preserve-view=true) 名单。 
-- 对于在 Planner 之外的体验中显现的计划 (如 Microsoft Teams)，在 [计划上下文中详细](/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta&preserve-view=true) 中指定如何显示到 [计划上下文](/graph/api/resources/plannerPlanContext?view=graph-rest-beta&preserve-view=true) 的链接。 
-
-### <a name="use-sdks"></a>使用 SDK
-请试用[Microsoft Graph Java SDK v3](https://github.com/microsoftgraph/msgraph-sdk-java/tree/feature/v3)预览版！ 更多信息，请看相关[博客文章](https://developer.microsoft.com/graph/blogs/announcing-the-public-preview-of-microsoft-graph-java-sdk-v3/)。
-
-
+- [通过](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true) 或 [更新](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true) 用户 [对翻译语言的偏好](/graph/api/resources/translationpreferences?view=graph-rest-beta&preserve-view=true)。 例如，是否翻译、自动翻译、或在翻译消息、聊天和网页中的特定语言之前提示，以及进行任何 [翻译覆盖](/graph/api/resources/translationlanguageoverride?view=graph-rest-beta&preserve-view=true)。
+- [为用户激活](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) 计划许可证。
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环
 

@@ -3,14 +3,76 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ef5f4a45a9c6a48bbf0bec8e96d84dce42b1fb2e
-ms.sourcegitcommit: 59df7b4d5098a49403a315d19a0c048013cd592e
+ms.openlocfilehash: 9da8465882d4c179afbb9b658ea02cee53ebd9d5
+ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50723126"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654084"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="february-2021-new-and-generally-available"></a>2021 年 2 月：新版本和正式版
+
+### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
+对[onlineMeeting](/graph/api/resources/onlinemeeting)资源的操作和方法使用基于策略的 `OnlineMeetings.Read.All` 或 `OnlineMeetings.ReadWrite.All` 应用程序权限。 这意味着管理员可以[配置应用访问策略](cloud-communication-online-meeting-application-access-policy.md)，允许应用代表用户访问在线会议。
+
+### <a name="sites-and-lists"></a>网站和列表
+使用 [权限](/graph/api/resources/permission) 资源及其 CRUD 操作来管理为 [driveItem](/graph/api/resources/driveitem) 授予的共享权限。 带链接面的权限代表共享项目上创建的链接。 带有邀请面的权限表示通过邀请特定用户或组访问文件而增加的权限。
+
+## <a name="february-2021-new-in-preview-only"></a>2021 年 2 月：仅限预览版中的新增功能
+
+### <a name="applications"></a>应用程序
+对 [同步 API](/graph/api/resources/synchronization-overview?view=graph-rest-beta&preserve-view=true) 使用应用程序权限，这些 API 可在 Azure AD 中自动供应 (创建、维护) 和取消供应 (删除) 身份。
+
+### <a name="cloud-communications--calls"></a>云通信 | 呼叫
+支持[基于政策的通话录音](/microsoftteams/teams-recording-policy)，使用管理政策自动记录通话，以便根据相关企业或监管政策的要求进行后续处理和保留。 在基于策略的参与者加入呼叫之前，策略规定向与策略相关联的具有处理新参与者的可用能力的机器人发送一个 [participantJoiningNotification ](/graph/api/resources/participantJoiningNotification?view=graph-rest-beta&preserve-view=true)。 机器人在其响应有效载荷中会以 [acceptJoinResponse](/graph/api/resources/acceptjoinresponse?view=graph-rest-beta&preserve-view=true)、[rejectJoinResponse](/graph/api/resources/rejectjoinresponse?view=graph-rest-beta&preserve-view=true) 或 [inviteNewBotResponse](/graph/api/resources/invitenewbotresponse?view=graph-rest-beta&preserve-view=true) 中的一个来响应。
+
+### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
+- 为了诉讼、内部调查或其他法律操作的目的，使用 [legalHold](/graph/api/resources/ediscovery-legalhold?view=graph-rest-beta&preserve-view=true) 资源及其 API 来无限期地保护不删除其内容。
+- 使用 [sourceCollection](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true) 资源及其 API 来搜索和识别 Microsoft 365 中保管和非保管位置的相关文档。
+- 在审查过程中使用 [标记](/graph/api/resources/ediscovery-tag?view=graph-rest-beta&preserve-view=true) 资源和 API 来标记文档，以分离响应式和非响应式内容。
+- 从[审阅集](/graph/api/resources/ediscovery-reviewset?view=graph-rest-beta&preserve-view=true)中[导出](/graph/api/ediscovery-reviewset-export?view=graph-rest-beta&preserve-view=true)文档。
+- 使用 [AddToReviewSet](/graph/api/ediscovery-reviewset-addtoreviewset?view=graph-rest-beta&preserve-view=true) 操作将 **sourceCollection** 中的文档添加到 **reviewSet** 中。
+- 根据[审阅集查询](/graph/api/resources/ediscovery-reviewsetquery?view=graph-rest-beta&preserve-view=true)将[标签应用](/graph/api/ediscovery-reviewsetquery-applytags?view=graph-rest-beta&preserve-view=true)到文档中。
+- 在 `microsoft.graph.ediscovery` 命名空间中定义了所有 eDiscovery API。
+- 将委托权限模式由 `User.Read` 改为 `eDiscovery.Read.All` 和 `eDiscovery.ReadWrite.All`。
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+- Intune [2月](https://developer.microsoft.com/graph/changelog/?from=2021-02-01&to=2021-02-28&filterBy=Corporate%20management) 更新的测试版。
+- Intune 在 [设备](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源上设置的新属性: **deviceCategory**、**deviceOwnership**、**domainName**、**enrollmentProfileName**、**enrollmentType**、**isRooted**、**managementType** 和 **registrationDateTime**。
+
+### <a name="education"></a>教育版
+使用 [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) 来指定课堂作业的默认操作，例如，作业到期时间、作业通知的频道 URL。 仍然可以在创建任务时自定义值。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- 使用 [smsAuthenticationMethodConfiguration](/graph/api/resources/smsAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) 资源以 [获取](/graph/api/smsauthenticationmethodconfiguration-get?view=graph-rest-beta&preserve-view=true)、[更新](/graph/api/smsauthenticationmethodconfiguration-update?view=graph-rest-beta&preserve-view=true) 或 [删除](/graph/api/smsauthenticationmethodconfiguration-delete?view=graph-rest-beta&preserve-view=true) 组织中短信身份验证策略的配置设置。
+- 使用 [temporaryAccessPassAuthenticationMethodConfiguration](/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) 资源以 [获取](/graph/api/temporaryaccesspassauthenticationmethodconfiguration-get?view=graph-rest-beta&preserve-view=true)、[更新](/graph/api/temporaryaccesspassauthenticationmethodconfiguration-update?view=graph-rest-beta&preserve-view=true) 和 [删除](/graph/api/temporaryaccesspassauthenticationmethodconfiguration-delete?view=graph-rest-beta&preserve-view=true) 组织中临时访问传递身份验证策略的配置设置。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+- 在 [[访问包分配请求](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)，将地理位置信息分配给](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)。
+- 获取所有表示 SharePoint Online 资源存储地理位置的[访问包资源环境](/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true)的列表。
+- 对下列资源的操作使用应用权限 (`EntitlementManagement.Read.All` 或 `EntitlementManagement.ReadWrite.All`):
+  - [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageAssignmentResourceRole](/graph/api/resources/accesspackageassignmentresourcerole?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
+  - [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true)
+  - [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta&preserve-view=true)
+
+### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
+在[SharePoint站点使用情况的详细报告](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta&preserve-view=true)中获取更多属性：anonymousLinkCount、companyLinkCount、externalSharing、地理位置、secureLinkForGuestCount、secureLinkForMemberCount、siteSensitivityLabelId 和 unmanagedDevicePolicy。
+
+### <a name="tasks-and-plans"></a>任务和计划
+- 在计划的 [计划详细信息](/graph/api/resources/plannerplandetails?view=graph-rest-beta&preserve-view=true) 对象中最多定义 25 个类别。 对于每个类别指定一个描述性标签，并将计划中的任务与一个或多个类别联系起来。 
+- 使用 [名单](/graph/api/resources/plannerRoster?view=graph-rest-beta&preserve-view=true) 来表示在 [计划](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) 上协作的用户集合。 使用 **rosterPlans** 关系以获取该用户的 [成员](/graph/api/resources/plannerrostermember?view=graph-rest-beta&preserve-view=true) 名单。 
+- 对于在 Planner 之外的体验中显现的计划 (如 Microsoft Teams)，在 [计划上下文中详细](/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta&preserve-view=true) 中指定如何显示到 [计划上下文](/graph/api/resources/plannerPlanContext?view=graph-rest-beta&preserve-view=true) 的链接。 
+
+### <a name="use-sdks"></a>使用 SDK
+请试用[Microsoft Graph Java SDK v3](https://github.com/microsoftgraph/msgraph-sdk-java/tree/feature/v3)预览版！ 更多信息，请看相关[博客文章](https://developer.microsoft.com/graph/blogs/announcing-the-public-preview-of-microsoft-graph-java-sdk-v3/)。
 
 ## <a name="january-2021-new-in-preview-only"></a>2021 年 1 月：仅限预览版新增功能
 
@@ -1012,7 +1074,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 - [附件](/graph/api/resources/attachment?view=graph-rest-1.0&preserve-view=true)
 - [联系人](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
-- [事件](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
+- [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
 - [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true)
 - [邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)
 - [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0&preserve-view=true)
