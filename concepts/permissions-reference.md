@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: df96ef3a92a0e22d01feea0cb991dffc4da137f1
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 7dc6fb2c0b9d5126aa3b84331e88b3fe294ddd6f
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508167"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698053"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -530,7 +530,10 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="application-permissions"></a>应用程序权限
 
-无。
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_CloudPC.Read.All_ | 读取云端电脑 | 允许该应用不以登录用户身份读取 Cloud PC 对象，如设置策略。 | 否 | 否 |
+|_CloudPC.ReadWrite.All_ | 读取和写入云端电脑 | 允许该应用不以登录用户身份创建，读取，更新和删除 Cloud PC 对象，如本地连接、设置策略和设备图像。 | 是 | 否 |
 
 ### <a name="example-usage"></a>用法示例
 
@@ -541,7 +544,8 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="application"></a>应用程序
 
-无。
+* _CloudPC.Read.All_：查看所有云电脑（`GET /deviceManagement/virtualEndpoint/cloudPCs`）的属性。
+* _CloudPC.ReadWrite.All_：编辑云电脑设置策略（`PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}`）。
 
 ---
 
@@ -1085,7 +1089,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1241,7 +1245,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
