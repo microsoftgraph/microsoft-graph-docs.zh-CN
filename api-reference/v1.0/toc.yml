@@ -352,7 +352,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1082,7 +1082,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -1397,7 +1397,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -3864,7 +3864,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -4374,7 +4374,7 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: 更新
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 许可请求
                 href: resources/consentrequests-root.md
@@ -4405,8 +4405,9 @@ items:
                       - name: 按当前用户筛选
                         href: api/userconsentrequest-filterByCurrentUser.md
               - name: 使用条款
-                href: resources/agreement.md
                 items:
+                  - name: 协议
+                    href: resources/agreement.md
                   - name: 列出
                     href: api/agreement-list.md
                   - name: 创建
@@ -4486,7 +4487,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -4757,7 +4758,7 @@ items:
                 href: api/contact-delta.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -5098,7 +5099,7 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限

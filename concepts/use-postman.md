@@ -3,12 +3,12 @@ title: 结合使用 Postman 和 Microsoft Graph API
 description: 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 04668cd76a7d8ca298e2ad16483be902c59983c5
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 41c6768097a2c0b001b5b9b7c691b0488bed018a
+ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469043"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654105"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>结合使用 Postman 和 Microsoft Graph API
 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
@@ -60,22 +60,23 @@ ms.locfileid: "51469043"
 Azure AD 应用程序现已具有代表用户提出调用 Mail.Read 请求的权限并成为 User.Read.All 的一个应用。
 
 ## <a name="step-4---configuring-authentication-in-postman"></a>步骤 4 - 在 Postman 中配置身份验证
-转到"邮政编码"，并确保已选择步骤 1 中创建的工作区。 设置一些环境变量来检索访问令牌。
+在此步骤中，将设置用于检索访问令牌的环境变量。
 
-1. 单击右上角“**无环境**”下拉菜单旁边的眼睛图标。
-2. 单击弹出窗口右上角的“**添加**”。
-3. 将“**新环境**”更改为“**M365 环境**”。
-4. 创建名为`ClientID`的变量并将“**当前值**”设置为步骤 3.15 中的应用程序（客户端）ID 值。
-5. 创建名为`ClientSecret`的变量并将“**当前值**”设置为步骤 3.17 中的客户端机密值。
-6. 创建名为`TenantID`的变量并将“**当前值**”设置为步骤 3.15 中的目录（租户）ID 值。
-7. 选择“**保存**”/“**更新**”。 
-8. 关闭“**管理环境**”对话框。 
-9. 仔细检查是否在下拉菜单中选中了 “**M365 环境**” 而不是 “**无环境**”。
+1. 转到 [分叉](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/environment/455214-efbc69b2-69bd-402e-9e72-850b3a49bb21/fork)。
+2. 添加标签分叉。 此值可以是任何文本。
+3. 在工作区下，请确保在下拉列表中选中 **我的工作区**。 
+4. 单击 **分叉环境**。
+5. 在 `ClientID`中， **步骤 3.15** 应用程序（客户端）ID 值设置当前值。
+6. 在 `ClientSecret`中， **3.17** 客户端密码值设置当前值。
+6. 在 `TenantID`中， **3.15** 目录（租户）ID 值设置当前值。
+7. 在右上方，单击 **保存**。 
+8. 关闭" **"选项卡** "。 
+9. 在右上方眼睛图标旁边，验证是否选择了 **"M365 环境** "，而不是" **没有**。
 
 ## <a name="step-5---get-a-delegated-access-token"></a>第五步 - 获取委派的访问令牌
 由于这是你第一次通过委派身份验证流程运行请求，你需要获取访问令牌。
 
-1. 将鼠标光标悬浮在“**代表用户**”文件夹上，单击省略号，然后选择“**编辑**”
+1. 将鼠标光标悬浮在“**委派**”文件夹上，单击省略号，然后选择“**编辑**”。
 2. 单击“**授权**”选项卡。
 3. 在右侧下滑并单击“**获取新的访问令牌**”。
 4. 登录你的开发者租户管理员账户。
@@ -85,9 +86,9 @@ Azure AD 应用程序现已具有代表用户提出调用 Mail.Read 请求的权
 你现在已具有用于委派请求的有效访问令牌。
 
 ## <a name="step-6---run-your-first-delegated-request"></a>第六步 - 运行你的第一个委派请求
-“**代表用户**”文件夹中是你可以调用的各种 Microsoft Graph 工作负载请求。
+在 **"委派** 文件夹内是各种您可以呼叫的 Microsoft Graph 工作负载的请求。
 
-1. 展开 “**代表用户**”文件夹，然后展开“**邮件**”文件夹。
+1. 展开 **的** 文件夹，然后展开 **邮件** 文件夹。
 2. 双击“**获取我的邮件**”来打开请求。
 3. 在右上角，单击“**发送**”。
 
