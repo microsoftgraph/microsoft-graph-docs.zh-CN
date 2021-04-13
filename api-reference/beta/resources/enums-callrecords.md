@@ -1,16 +1,16 @@
 ---
 title: 呼叫记录枚举值
-description: Microsoft Graph 调用记录枚举值
+description: Microsoft Graph 呼叫记录枚举值
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: ec952c11b248153ce8fda88e4538f11e2a85c89c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db90473f6e963e2f9c6669cd178edab1b9d90095
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989505"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697184"
 ---
 # <a name="call-records-enum-values"></a>呼叫记录枚举值
 
@@ -23,14 +23,14 @@ ms.locfileid: "47989505"
 | unknown
 | groupCall
 | peerToPeer
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="clientplatform-values"></a>clientPlatform 值
 
 | Member
 |:--------------
 | unknown
-| 时间
+| windows
 | macOS
 | iOS
 | android
@@ -39,7 +39,7 @@ ms.locfileid: "47989505"
 | roomSystem
 | surfaceHub
 | holoLens
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="failurestage-values"></a>failureStage 值
 
@@ -48,7 +48,7 @@ ms.locfileid: "47989505"
 | unknown
 | callSetup
 | midcall
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="mediastreamdirection-values"></a>mediaStreamDirection 值
 
@@ -57,7 +57,7 @@ ms.locfileid: "47989505"
 | callerToCallee
 | calleeToCaller
 
-### <a name="modality-values"></a>模态值
+### <a name="modality-values"></a>形式值
 
 | Member
 |:--------------
@@ -67,7 +67,7 @@ ms.locfileid: "47989505"
 | videoBasedScreenSharing
 | data
 | screenSharing
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="networkconnectiontype-values"></a>networkConnectionType 值
 
@@ -76,19 +76,19 @@ ms.locfileid: "47989505"
 | unknown
 | 有线
 | wifi
-| 流动
-| 形
-| 向 unknownfuturevalue
+| mobile
+| 隧道
+| unknownFutureValue
 
 ### <a name="productfamily-values"></a>productFamily 值
 
 | Member
 |:--------------
 | unknown
-| 协作
+| teams
 | skypeForBusiness
 | lync
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="servicerole-values"></a>serviceRole 值
 
@@ -110,24 +110,24 @@ ms.locfileid: "47989505"
 | audioTeleconferencerController
 | skypeForBusinessUnifiedCommunicationApplicationPlatform
 | responseGroupServiceAnnouncementService
-| 网
+| gateway
 | skypeTranslator
 | skypeForBusinessAttendant
 | responseGroupService
 | 语音邮件
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="userfeedbackrating-values"></a>userFeedbackRating 值
 
 | Member
 |:--------------
 | notRated
-| 失败
-| 比较
-| 大量
-| 比较
+| bad
+| poor
+| fair
+| good
 | 非常好
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="wifiband-values"></a>wifiBand 值
 
@@ -137,7 +137,7 @@ ms.locfileid: "47989505"
 | frequency24GHz
 | frequency50GHz
 | frequency60GHz
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="wifiradiotype-values"></a>wifiRadioType 值
 
@@ -150,7 +150,14 @@ ms.locfileid: "47989505"
 | wifi80211n
 | wifi80211ac
 | wifi80211ax
-| 向 unknownfuturevalue
+| unknownFutureValue
+
+### <a name="pstncalldurationsource-values"></a>pstnCallDurationSource 值 
+
+|Member|
+|:---|
+|microsoft|
+|operator|
 
 <!--
 {

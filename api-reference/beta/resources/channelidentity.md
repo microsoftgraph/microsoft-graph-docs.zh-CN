@@ -5,12 +5,12 @@ author: Kanaka
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: teamwork
-ms.openlocfilehash: 866469745a4dd3aaf7b22c2a6710e327992e9fee
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: eae8533f549ba0064d9d392fcf60a5baa6479e2c
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952802"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697915"
 ---
 # <a name="channelidentity-resource-type"></a>channelIdentity 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "50952802"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|channelId|string|  发布消息的频道的标识。|
-|teamId|string|  发布邮件的团队的标识。|
+|channelId|字符串|  发布消息的频道的标识。|
+|teamId|字符串|  发布邮件的团队的标识。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,9 +40,8 @@ ms.locfileid: "50952802"
 
 ```json
 {
-  "channelId": "string",
-  "teamId": "string",
-  
+   "channelId":"string",
+   "teamId":"string"
 }
 ```
 

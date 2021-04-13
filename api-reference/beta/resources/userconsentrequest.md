@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d3d91688a0a385ea319dee6df90b45c52bd4ec89
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ea9520e34237a0e4b60e5e077a487182b18369e6
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965053"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698067"
 ---
 # <a name="userconsentrequest-resource-type"></a>userConsentRequest 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "50965053"
 
 [userConsentRequest](../resources/userconsentrequest.md)是由用户请求访问需要管理员授权才能访问的应用程序时创建的。 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 userConsentRequests](../api/userconsentrequest-list.md)|[userConsentRequest](../resources/userconsentrequest.md) 集合|获取 [userConsentRequest](../resources/userconsentrequest.md) 对象及其属性的列表。|
+|[列出 userConsentRequests](../api/userconsentrequest-list.md)|[userConsentRequest](../resources/userconsentrequest.md) 集合|检索 [appConsentRequest 的 userConsentRequest](userconsentrequest.md) [对象的集合](appconsentrequest.md)。|
 |[获取 userConsentRequest](../api/userconsentrequest-get.md)|[userConsentRequest](../resources/userconsentrequest.md)|读取 [userConsentRequest](../resources/userconsentrequest.md) 对象的属性和关系。|
-|[列出 userConsentRequests：filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[userConsentRequest](../resources/userconsentrequest.md) 集合|获取 [userConsentRequest](../resources/userconsentrequest.md) 对象及其属性的列表。|
+|[filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[userConsentRequest](../resources/userconsentrequest.md) 集合|读取当前用户是审阅者的[appConsentRequest 的](appconsentrequest.md) [userConsentRequest](../resources/userconsentrequest.md)对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

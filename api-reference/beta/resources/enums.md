@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 194669c6dcf19e72732c9d798d3081d8ed4606e0
-ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
+ms.openlocfilehash: 42ee6a9363efd868085cecb62a9a6aa5ac5600d4
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51638912"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697205"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -124,7 +124,7 @@ ms.locfileid: "51638912"
 |exchangeOnline|
 |身份验证|
 |预配|
-|intunePfx||
+|intunePfx|
 |oflineDomainJoin|
 |unknownFutureValue|
 

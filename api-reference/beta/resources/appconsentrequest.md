@@ -1,16 +1,16 @@
 ---
 title: appConsentRequest 资源类型
-description: 表示特定应用程序的 userConsentRequests 聚合的请求。
+description: 一个代表特定应用程序的 userConsentRequest 对象集合的请求。
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f823f64d4c0324aeca74c3268d6fc95d313e2f00
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d9c01fd4e752bca0fe9518553f52312e523da3a3
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965115"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697899"
 ---
 # <a name="appconsentrequest-resource-type"></a>appConsentRequest 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "50965115"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定应用程序的 [userConsentRequests](../resources/userconsentrequest.md) 聚合。
+特定应用程序的 [userConsentRequest](../resources/userconsentrequest.md) 对象的集合。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 appConsentRequests](../api/appconsentrequest-list.md)|[appConsentRequest](../resources/appconsentrequest.md) 集合|获取 [appConsentRequest](../resources/appconsentrequest.md) 对象及其属性的列表。|
+|[列出 appConsentRequests](../api/appconsentrequest-list.md)|[appConsentRequest](../resources/appconsentrequest.md) 集合|检索 [appConsentRequest](appconsentrequest.md) 对象及其属性的集合。|
 |[获取 appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|读取 [appConsentRequest](../resources/appconsentrequest.md) 对象的属性和关系。|
-|[列出 appConsentRequests：filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|当前用户是审阅者的 [appConsentRequests](../resources/appconsentrequest.md) 的列表|
+|[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|读取 [appConsentRequest](../resources/appconsentrequest.md) 对象的属性，当前用户是这些对象的审阅者，并且用户同意请求的状态为 `InProgress` 。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

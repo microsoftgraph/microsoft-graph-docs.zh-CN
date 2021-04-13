@@ -1,23 +1,23 @@
 ---
-title: userConsentRequests：filterByCurrentUser
-description: 检索当前用户是审阅者的 userConsentRequests。
+title: userConsentRequest：filterByCurrentUser
+description: 检索当前用户是审阅者的 userConsentRequest 对象。
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ddef281b50a4a60895f141b433289a2fc3e8a1d3
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 939e0c113f2ff5935c89530b304c3ad95b4e46e7
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201857"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698074"
 ---
-# <a name="userconsentrequests-filterbycurrentuser"></a>userConsentRequests：filterByCurrentUser
+# <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest：filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [appConsentRequest 的 userConsentRequest，](../resources/userconsentrequest.md) 当前用户是审阅者，并且 userConsentRequest 的状态为 `InProgress` 。
+检索用于访问 [指定应用程序的 userConsentRequest](../resources/userconsentrequest.md) 对象的集合，当前用户是该应用的审阅者。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,7 +44,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 |属性|类型|说明|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequest 的 userConsentRequests。 允许的值为 `reviewer` 。 必需。|
+|on|consentRequestFilterByCurrentUserOptions|筛选以查询 appConsentRequest 对象的 userConsentRequest 对象，当前用户是该对象的审阅者。 允许的值为 `reviewer` 。 必填。|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此函数支持  `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
@@ -61,9 +61,11 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userConsentRequest](../resources/userconsentrequest.md) 对象集合。
 
-## <a name="example-list-all-userconsentrequests-for-which-the-current-user-is-the-reviewer-and-the-status-is-completed"></a>示例：列出当前用户是审阅者且状态为"已完成"的 userConsentRequests
+## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+在此请求中，将列出当前用户是审阅者且状态为 的所有 **userConsentRequest** 对象 `Completed` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -5,19 +5,19 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a0ca933d392d311a4874861cb736742d593b56ae
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: b2ee1d8027ce5685de094e3b10368295fa8319ad
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201825"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698032"
 ---
 # <a name="list-userconsentrequests"></a>列出 userConsentRequests
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [userConsentRequest](../resources/userconsentrequest.md) 对象及其属性。
+检索 [userConsentRequest](../resources/userconsentrequest.md) 对象及其属性的集合。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

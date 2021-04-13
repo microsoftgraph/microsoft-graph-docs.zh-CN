@@ -1,16 +1,16 @@
 ---
 title: callRecord： getPstnCalls
-description: 获取 PSTN 呼叫的日志。
+description: 获取 PSTN 呼叫日志。
 author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6aa3c85c25373ecee98894ce0704b35a6de25cdb
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 57f29fdef863671c36f8b9e063c99a370e1173d1
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872910"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697191"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord： getPstnCalls
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872910"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 PSTN 呼叫的日志，作为 [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 条目的集合。
+以 [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 条目集合方式获取 PSTN 呼叫日志。
 
 ## <a name="permissions"></a>权限
 
@@ -46,10 +46,10 @@ GET /communications/callRecords/getPstnCalls
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
-|fromDateTime|DateTimeOffset|要查询的起始时间范围。 UTC（包含这两者）。<br/>时间范围基于呼叫开始时间。|
-|toDateTime|DateTimeOffset|要查询的结束时间范围。 UTC（包含这两者）。|
+|fromDateTime|DateTimeOffset|要查询的起始时间范围。 UTC（包含两者）。<br/>时间范围基于呼叫开始时间。|
+|toDateTime|DateTimeOffset|要查询的结束时间范围。 UTC（包含两者）。|
 
 > [!IMPORTANT]
 > **fromDateTime** 和 **toDateTime** 值不能超过 90 天的日期范围。
@@ -62,9 +62,9 @@ GET /communications/callRecords/getPstnCalls
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回响应代码和 `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 条目集合。
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 条目集合。
   
-如果日期范围内有 1000 多个条目，正文还包含一个 URL 以查询下一页 `@odata.NextLink` 的呼叫条目。 日期范围中的最后一页没有 `@odata.NextLink` 。 有关详细信息，请参阅 [在应用中](/graph/paging)分页 Microsoft Graph 数据。
+如果日期范围内包含的条目超过 1000 个，正文中还包含 一个 URL，用于查询下一页 `@odata.NextLink` 的呼叫条目。 日期范围中的最后一页没有 `@odata.NextLink` 。 有关详细信息，请参阅 [在应用中分页 Microsoft Graph 数据](/graph/paging)。
 
 ## <a name="examples"></a>示例
 
@@ -117,7 +117,9 @@ HTTP/1.1 200 OK
             "destinationName": "United States",
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
-            "inventoryType": "Subscriber"
+            "inventoryType": "Subscriber",
+            "operator": "Microsoft",
+            "callDurationSource": "microsoft"
         }],
     "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }

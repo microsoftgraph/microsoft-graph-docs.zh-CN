@@ -8,7 +8,7 @@
 
 - 如果想让我们知道你在文档中发现的任何问题，请在该存储库中[提交问题](https://github.com/microsoftgraph/microsoft-graph-docs/issues)。
 - 我们也鼓励你对所建议的更改进行分叉、修补及创建拉取请求。 请参阅 [CONTRIBUTING.md](CONTRIBUTING.md) 了解有关贡献文稿的指导准则。
-- 如果想让我们知道你的编程体验、希望在未来版本中看到哪些内容、代码示例等，请在 [Office 开发人员平台 UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback?category_id=101632)(#office-开发人员平台-uservoice) 中输入你的建议和想法。
+- 若要告诉我们你的编程体验、希望在未来版本中看到哪些内容、代码示例等，请在 [Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)开发人员平台技术社区中输入建议和想法。
 
 ## <a name="code-of-conduct"></a>行为准则
 
