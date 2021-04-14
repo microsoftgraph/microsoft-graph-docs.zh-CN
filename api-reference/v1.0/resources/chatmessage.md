@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: a5ce4d046c70e0c247629ca238aa7b5deef79d8e
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: e96319854f1f11bf85507868918f2bb18bcabed9
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582779"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698004"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "51582779"
 |[更新聊天中的消息](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| 更新 **聊天消息的 policyViolation** 属性。|
 |**托管内容**| | |
 |[列出所有托管内容](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 集合| 获取与邮件关联的所有托管内容。|
-|[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 获取托管内容 (和消息) 字节数。|
+|[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 获取托管的内容 (其字节数) 消息的字节数。|
 
 
 ## <a name="properties"></a>属性
@@ -55,7 +55,7 @@ ms.locfileid: "51582779"
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而仅适用于 chats)  |
 |from|[identitySet](identityset.md)| 只读。 聊天消息的发送者的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
-|messageType|string|聊天消息的类型。 可能的值是 `message` ：。|
+|messageType|字符串|聊天消息的类型。 可能的值是 `message` ：。|
 |createdDateTime|dateTimeOffset|创建聊天消息的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 创建聊天消息的时间戳 (设置) 修改，包括添加或删除回应时。 |
 |lastEditedDateTime|dateTimeOffset|只读。 编辑聊天消息的时间戳。 在 Teams UI 中触发"已编辑"标志。 如果未进行编辑，则值为 `null` 。|
@@ -69,7 +69,7 @@ ms.locfileid: "51582779"
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此聊天消息的反应 (例如，如) 。|
 |区域设置|string|客户端设置的聊天消息区域设置。 始终设置为 `en-us`。|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序中数据丢失防护设置的策略违反 () 属性。|
-|chatId|string|如果消息是在聊天中发送的，则代表聊天的标识。|
+|chatId|字符串|如果消息是在聊天中发送的，则代表聊天的标识。|
 |channelIdentity|[channelIdentity](channelidentity.md)|如果消息是在频道中发送的，则代表频道的标识。|
 |webUrl|string|只读。 链接到 Microsoft Teams 中的消息。|
 ## <a name="relationships"></a>关系

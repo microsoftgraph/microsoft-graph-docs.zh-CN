@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9aab98b448333412b8982fc80e68702e4255f66b
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: a3ac490e4dcd7231c8b005eeb6a259e525bbf882
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469547"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698039"
 ---
 # <a name="userconsentrequest-resource-type"></a>userConsentRequest 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "51469547"
 
 方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 userConsentRequests](../api/userconsentrequest-list.md)|[userConsentRequest](../resources/userconsentrequest.md) 集合|获取 [userConsentRequest](../resources/userconsentrequest.md) 对象及其属性的列表。|
+|[列出 userConsentRequests](../api/userconsentrequest-list.md)|[userConsentRequest](../resources/userconsentrequest.md) 集合|检索 [appConsentRequest 的 userConsentRequest](userconsentrequest.md) [对象的集合](appconsentrequest.md)。|
 |[获取 userConsentRequest](../api/userconsentrequest-get.md)|[userConsentRequest](../resources/userconsentrequest.md)|读取 [userConsentRequest](../resources/userconsentrequest.md) 对象的属性和关系。|
-|[列出 userConsentRequests：filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[userConsentRequest](../resources/userconsentrequest.md) 集合|获取 [userConsentRequest](../resources/userconsentrequest.md) 对象及其属性的列表。|
+|[filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[userConsentRequest](../resources/userconsentrequest.md) 集合|读取当前用户是审阅者的[appConsentRequest 的](appconsentrequest.md) [userConsentRequest](../resources/userconsentrequest.md)对象的属性。|
 
 ## <a name="properties"></a>属性
 
@@ -33,7 +33,7 @@ ms.locfileid: "51469547"
 |approvalId|String|审批的 ID。 此值等于 的值 `id` 。|
 |completedDateTime|DateTimeOffset|将请求状态 **标记为** 的日期和时间 `Completed` 。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |createdBy|[identitySet](../resources/identityset.md)|创建请求的用户。|
-|createdDateTime|DateTimeOffset|创建请求的日期和时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br>仅 `$filter` (和 `eq` `$orderby`) 。|
+|createdDateTime|DateTimeOffset|创建请求的日期和时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 仅 `$filter` (和 `eq` `$orderby`) 。|
 |customData|String|自由文本字段，用于定义用户同意请求的任何自定义数据。 未使用。|
 |id|String|请求的标识符。 |
 |reason|String|用户要求访问应用的理由。 仅 `$filter` (和 `eq` `$orderby`) 。  |

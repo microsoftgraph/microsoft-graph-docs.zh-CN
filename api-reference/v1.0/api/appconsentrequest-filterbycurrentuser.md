@@ -1,22 +1,22 @@
 ---
 title: appConsentRequest：filterByCurrentUser
-description: 检索当前用户是审阅者的 appConsentRequests。
+description: 检索当前用户是审阅者的 appConsentRequest 对象。
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cf1e0dcf104c540f8a223678adfc2e9eb8fe432e
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: c17e44b27b135eec034eb66399d5ce5163a5928f
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508263"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697948"
 ---
 # <a name="appconsentrequest-filterbycurrentuser"></a>appConsentRequest：filterByCurrentUser
 
 命名空间：microsoft.graph
 
-检索 [appConsentRequests，](../resources/appconsentrequest.md) 当前用户是审阅者，userConsentRequest 的状态为 `InProgress` 。
+检索 [appConsentRequest](../resources/appconsentrequest.md) 对象的集合，当前用户是这些对象的审阅者，并且用于访问指定应用的 userConsentRequest 的状态为 `InProgress` 。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "51508263"
 |:---|:---|
 |委派（工作或学校帐户）|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
+|Application|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,11 +45,11 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequests。 允许的值为 `reviewer` 。 必填。|
+|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequest 对象。 允许的值为 `reviewer` 。 必填。|
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="query-parameters"></a>查询参数
 
-此函数需要  `$filter` OData 查询参数以返回状态为 的 [userConsentRequests](../resources/userconsentrequest.md) 集合 `InProgress` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此函数需要  `$filter` OData 查询参数以返回状态为 的 [userConsentRequest](../resources/userconsentrequest.md) 对象的集合 `InProgress` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -63,9 +63,9 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [appConsentRequest](../resources/appconsentrequest.md) 集合。
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [appConsentRequest](../resources/appconsentrequest.md)  对象集合。
 
-## <a name="examples"></a>示例
+## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
@@ -119,7 +119,7 @@ Content-Type: application/json
       "id": "af330b30-dd59-4482-a848-0fd81b0438ed",
       "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
       "appDisplayName": "Moodle",
-      "consentType": "Dynamic",
+      "pendingScopes": [],
       "userConsentRequests@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
       "userConsentRequests": []
     }

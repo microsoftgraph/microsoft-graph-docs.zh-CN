@@ -1,22 +1,22 @@
 ---
 title: userConsentRequest：filterByCurrentUser
-description: 检索当前用户是审阅者的 userConsentRequests。
+description: 检索当前用户是审阅者的 userConsentRequest 对象。
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ffcbb985adfc21c267291f27e45e8c50b53ccb4f
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: e30d94934f0ccce140610a8ee713e16aff83c3d6
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507979"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698077"
 ---
 # <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest：filterByCurrentUser
 
 命名空间：microsoft.graph
 
-检索 [appConsentRequest 的 userConsentRequest，](../resources/userconsentrequest.md) 当前用户是审阅者，并且 userConsentRequest 的状态为 `InProgress` 。
+检索用于访问 [指定应用程序的 userConsentRequest](../resources/userconsentrequest.md) 对象的集合，当前用户是该应用的审阅者。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "51507979"
 |:---|:---|
 |委派（工作或学校帐户）|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
+|Application|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +45,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 |属性|类型|说明|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequest 的 userConsentRequests。 允许的值为 `reviewer` 。 必填。|
+|on|consentRequestFilterByCurrentUserOptions|筛选以查询 appConsentRequest 对象的 userConsentRequest 对象，当前用户是该对象的审阅者。 允许的值为 `reviewer` 。 必填。|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -63,12 +63,13 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [userConsentRequest](../resources/userconsentrequest.md) 集合。
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [userConsentRequest](../resources/userconsentrequest.md) 对象集合。
 
-## <a name="examples"></a>示例
+## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
+在此请求中，将列出当前用户是审阅者且状态为 的所有 **userConsentRequest** 对象 `Completed` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

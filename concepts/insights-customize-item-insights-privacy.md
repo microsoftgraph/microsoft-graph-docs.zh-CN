@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f4f143b66ba93b488c747eebfda7777e9800aea5
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 5e7ccf00729e9acaffd08c2618d3f3249a2a268e
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883044"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697198"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
 
@@ -40,9 +40,9 @@ ms.locfileid: "49883044"
 > ```powershell
 >    Select-MgProfile beta
 > ```
-若要获取组织的项目见解配置，请使用 Microsoft Graph PowerShell 模块和以下命令（在其中将 `$OrgID` 替换为适用的 ID 组织）：
+若要获取组织的项目见解配置，请使用 Microsoft Graph PowerShell 模块和以下命令，其中用 Azure Active Directory 租户 ID 替换 `$TenantId`: 可以从 Azure Active Directory 的概览页中检索此 ID。
 ```powershell
-   Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
+   Get-MgOrganizationSettingItemInsight -OrganizationId $TenantId
 ```
 
 默认情况下，将为整个组织启用项目见解。 你可以使用 Microsoft Graph PowerShell 模块来更改该设置并为组织中的所有人禁用项目见解。 
@@ -52,13 +52,13 @@ ms.locfileid: "49883044"
 >    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
 > ```
 
-请使用以下命令（在其中将 `$OrgID` 替换为你的组织 ID 并将 `-IsEnabledInOrganization` 指定为 `false`）。
+使用以下命令，其中用 Azure Active Directory 租户 ID 替换 `$TenantId`，并指定 `-IsEnabledInOrganization` 为 `false`。
 ```powershell
-   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
+   Update-MgOrganizationSettingItemInsight -OrganizationId $TenantId -IsEnabledInOrganization:$false
 ```
-或者，你也可以更改默认设置并为特定 Azure AD 组禁用项目见解。 请使用以下命令（在其中将 `$OrgID` 替换为你的组织 ID 并将 `$GroupID` 替换为 Azure AD 组 ID）。
+或者，也可以更改默认设置并为特定 Azure AD 组禁用项目见解。 使用以下命令，其中用 Azure Active Directory 租户 ID 替换 `$TenantId`，用 Azure Active Directory 组 ID 替换 `$GroupID`。
 ```powershell
-   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
+   Update-MgOrganizationSettingItemInsight -OrganizationId $TenantId -DisabledForGroup $GroupId
 ```
 
 ### <a name="configure-item-insights-using-rest-api"></a>使用 REST API 配置项目见解

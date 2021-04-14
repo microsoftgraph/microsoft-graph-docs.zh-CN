@@ -5,18 +5,18 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 591b053818b3cd58e66d103fba7f3c1f739818d6
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: dca8bb6e38e3bb828327888dedfe86f54565dcb9
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507377"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698082"
 ---
 # <a name="list-userconsentrequests"></a>列出 userConsentRequests
 
 命名空间：microsoft.graph
 
-检索 [userConsentRequest](../resources/userconsentrequest.md) 对象及其属性。
+检索 [userConsentRequest](../resources/userconsentrequest.md) 对象及其属性的集合。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "51507377"
 |:---|:---|
 |委派（工作或学校帐户）|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
+|Application|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
