@@ -1,16 +1,16 @@
 ---
 title: 列出 printerShare 的 allowedGroups
-description: 检索已被授予将打印作业提交到关联的打印机共享的访问权限的组列表。
+description: 检索已被授予将打印作业提交到关联的打印机共享的权限的组列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 59c31835aa16c33ae0b30c8833e0205c575688e4
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 0a15472fd7935dc3eacc38c0a34a6e7a5c0eaf67
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49664070"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766271"
 ---
 # <a name="list-allowedgroups-for-printershare"></a>列出 printerShare 的 allowedGroups
 
@@ -18,18 +18,18 @@ ms.locfileid: "49664070"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索已被授予将打印作业提交到关联的 [printerShare](../resources/printershare.md)的访问权限的组列表。
+检索已被授予向关联的 printerShare 提交打印作业的权限的组 [列表](../resources/printershare.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [列表](group-list.md) 组访问权限的权限。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.Read.All、PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /print/shares/{id}/allowedGroups
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [组](../resources/group.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [group](../resources/group.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

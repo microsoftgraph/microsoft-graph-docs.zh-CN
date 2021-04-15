@@ -1,16 +1,16 @@
 ---
 title: 更新 printershare
-description: 更新打印机共享的属性。 此方法可用于 "交换" 打印机。
+description: 更新打印机共享的属性。 此方法可用于"交换"打印机。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: afbf37fe04eb049f399296ff6d7d74fe7d1c0f47
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 81f5f9e6742ad19ea6d9966f92729876a1eb95eb
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968307"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766404"
 ---
 # <a name="update-printershare"></a>更新 printershare
 
@@ -20,18 +20,18 @@ ms.locfileid: "48968307"
 
 更新打印机共享的属性。 此方法可用于交换 [打印机](../resources/printer.md)。
 
-例如，如果物理打印机设备断开，则管理员可以注册新的 [打印机](../resources/printer.md) 设备并更新此 [printerShare](../resources/printerShare.md) ，以指向新的打印机，而无需用户执行任何操作。
+例如，如果物理打印机设备中断，管理员可以注册新的打印机设备，并更新此[](../resources/printer.md) [printerShare](../resources/printerShare.md)以指向新打印机，而无需用户执行任何操作。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用程序的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,16 +46,18 @@ PATCH /print/shares/{id}
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供应更新的相关 [printerShare](../resources/printershare.md) 字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供相关 printer [的值共享](../resources/printershare.md) 应更新的字段。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+
+可以更新以下属性： 
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|印刷|String|与此打印机共享相关联的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与该打印机共享相关联的打印机。|
-
->**注意：** 不支持更新打印机共享名称。
+|printer|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与此打印机共享关联的打印机。|
+|displayName|String|打印客户端应显示的打印机共享的名称。|
+|allowAllUsers|Boolean| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [printerShare](../resources/printershare.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [printerShare](../resources/printershare.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -71,7 +73,8 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "name": "ShareName",
+  "displayName": "ShareName",
+  "allowAllUsers": true,
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
@@ -109,8 +112,15 @@ Content-length: 225
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
-  "name": "ShareName",
-  "createdDateTime": "2020-02-04T00:00:00.0000000Z"
+  "displayName": "ShareName",
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "isAcceptingJobs": true,
+  "allowAllUsers": true,
+  "status": {
+    "state": "stopped",
+    "details": ["disconnected"],
+    "description": ""
+  }
 }
 ```
 

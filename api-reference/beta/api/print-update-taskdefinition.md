@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: bd3b7059b46feaac596edb2618e3aba4a7126c21
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5923c66eca2da9f2f2016434cfd0d92a0cfa7bef
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966914"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766488"
 ---
 # <a name="update-taskdefinition"></a>Update taskDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "48966914"
 
 更新任务定义。
 
-有关如何使用此 API 将拉取打印支持添加到通用打印的详细信息，请参阅 [扩展通用打印以支持请求打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,7 +31,7 @@ ms.locfileid: "48966914"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 不支持。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| PrintTaskDefinition.ReadWrite.All |
+|Application| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,11 +50,11 @@ PATCH /print/taskDefinitions/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|PrintTaskDefinition 的名称。|
-|createdBy|String|有关创建任务定义的应用程序的信息。 只有 `createdBy.displayName` 属性可以更新。|
+|displayName|String|printTaskDefinition 的名称。|
+|createdBy|String|有关创建任务定义的应用的信息。 只能 `createdBy.displayName` 更新属性。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [printTaskDefinition](../resources/printtaskdefinition.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -101,10 +101,24 @@ Content-length: 122
 ### <a name="response"></a>响应
 下面展示了示例响应。
 <!-- {
-  "blockType": "response"
-} -->
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printTaskDefinition"
+}
+-->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",
+  "id": "fab143fd-ee61-4358-8558-2c7dee953982",
+  "displayName": "Test TaskDefinitionName",
+  "createdBy": {
+    "appId" : "479688a0-cc3a-4993-ab24-54c7c80b047e",
+    "displayName": "Requesting App Display Name"
+  }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

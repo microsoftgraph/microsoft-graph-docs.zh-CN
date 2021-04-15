@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2b99f9e2e6d0def97c1f2a23837f79e61b8e3341
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 8e31cfdff953feb689e7799954dd5ae260e9943e
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689313"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766418"
 ---
 # <a name="printjob-redirect"></a>printJob： redirect
 
@@ -18,9 +18,9 @@ ms.locfileid: "49689313"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将打印 [作业重定向到](../resources/printjob.md) 其他 [打印机](../resources/printer.md)。
+将 [打印作业重定向到](../resources/printjob.md) 其他 [打印机](../resources/printer.md)。
 
-有关如何使用此 API 向通用打印添加下拉打印支持的详细信息，请参阅扩展 [通用打印以支持下拉打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,11 +48,11 @@ POST /print/printers/{id}/jobs/{id}/redirect
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|destinationPrinterId|字符串|打印作业应重定向到的打印机的 ID。|
+|destinationPrinterId|String|打印作业应重定向到的打印机的 ID。|
 |configuration|microsoft.graph.printJobConfiguration|更新了打印作业的配置。|
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回一个响应代码和一个排队等待目标打印机 `200 OK` 的 [printJob](../resources/printjob.md) 对象。
+如果成功，此方法返回响应 `200 OK` 代码和一个 [printJob](../resources/printjob.md) 对象排队等待目标打印机。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -69,24 +69,40 @@ POST /print/printers/{id}/jobs/{id}/redirect
 POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/redirect
 
 {
-  "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
+  "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
+  }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-redirect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-redirect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -114,8 +130,40 @@ Content-length: 437
     "userPrincipalName": ""
   },
   "status": {
-    "processingState": "processing",
-    "processingStateDescription": "The print job is currently being processed by the printer."
+    "state": "processing",
+    "description": "The print job is currently being processed by the printer.",
+    "details": ["interpreting"]
+  },
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
   }
 }
 ```

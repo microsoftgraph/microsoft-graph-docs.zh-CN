@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ad1c2da7d5c9656796e8f70bdc74d4444ffd1188
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 2126d80e2ab573161280f2624034b80b41fe36b9
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582639"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766069"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -109,7 +109,6 @@ ms.locfileid: "51582639"
   "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)",
   "moderationSettings": "channelModerationSettings"
-    
 }
 ```
 

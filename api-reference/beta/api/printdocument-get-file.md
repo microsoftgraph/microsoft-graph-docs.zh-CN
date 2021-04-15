@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 590b97c01623cba26407ca0a39ad7d0b3b7a1ca3
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 96f3a8a574951ddb2b1e2c2ecf26fb18dafafd5e
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034231"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766026"
 ---
 # <a name="download-printdocument-binary-file"></a>下载 printDocument 二进制文件
 
@@ -18,9 +18,9 @@ ms.locfileid: "50034231"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-下载与 [printDocument 关联的二进制文件](../resources/printdocument.md)。 调用此方法会生成具有预身份验证 URL 的重定向响应，该 URL 可用于下载负载。
+下载与 [printDocument 关联的二进制文件](../resources/printdocument.md)。 调用此方法会生成重定向响应，该响应具有可用于下载有效负载的预验证 URL。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予获取打印机[访问权限的权限。](printer-get.md)
@@ -29,7 +29,7 @@ ms.locfileid: "50034231"
 | :------------------------------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | PrintJob.Read、PrintJob.Read.All、PrintJob.ReadWrite、PrintJob.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                               |
-| 应用程序                            | PrintJob.Read.All、PrintJob.ReadWrite.All                    |
+| Application                            | PrintJob.Read.All、PrintJob.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,10 +45,10 @@ GET /print/printers/{id}/jobs/{id}/documents/{id}/$value
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在位置标头中返回和预先 `302 Found` 验证的下载 URL。
+如果成功，此方法在 Location 标头中返回 和预先 `302 Found` 验证的下载 URL。
 
 ## <a name="examples"></a>示例
-以下示例演示如何调用此 API 以获取预先验证的下载 URL。 若要开始下载，请按照响应中的重定向 URL 执行。
+以下示例演示如何调用此 API 以获取预先验证的下载 URL。 若要开始下载，请遵循响应中的重定向 URL。
 
 ### <a name="request"></a>请求
 
@@ -86,6 +86,6 @@ GET https://graph.microsoft.com/beta/print/printers/fcb0bc53-a446-41d0-bfc3-5c56
   "truncated": true
 } -->
 ```http
-HTTP/1.1 302 Accepted
+HTTP/1.1 302 Found
 Location: https://print.print.microsoft.com/downloads/bd260b1a-044e-4ca6-afa9-17d9a587d254?tempauthtoken={accesstoken}
 ```

@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 53a1b89dfbd7ba160f62ea36451a0428fe9757f1
-ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
+ms.openlocfilehash: 3450055fbbd834381d5b9a74208425befe029eac
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51654091"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766537"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -20,8 +20,8 @@ ms.locfileid: "51654091"
 ## <a name="april-2021-new-and-generally-available"></a>2021 年 4 月：新增功能，正式可用
 
 ### <a name="teamwork"></a>团队合作
-- 如果 [chatMessage](/graph/api/resources/chatmessage)在通道内，则通过 **channelIdentity** 属性标识通道。
-- 如果聊天中 **chatMessage** ， **chatMessage** 识别聊天。
+- 如果 [chatMessage](/graph/api/resources/chatmessage) 在 [频道](/graph/api/resources/channel)内，则通过 **channelIdentity** 属性标识频道。
+- 如果 **[chatMessage](/graph/api/resources/chatmessage)** 在 [聊天](/graph/api/resources/chat)中，则通过 **chatId** 属性识别聊天。
 - 使用 **关系** ，通过聊天或 [获取](/graph/api/resources/chatmessage) 聊天中的 [邮件](/graph/api/resources/chat)。
 
 ## <a name="april-2021-new-in-preview-only"></a>2021 年 4 月：仅预览版新增功能

@@ -1,16 +1,16 @@
 ---
 title: Microsoft Teams 设备使用情况报告
-description: '使用 Microsoft Teams 设备使用情况报告深入了解组织中 Microsoft Teams 设备使用情况。 '
+description: '使用 Microsoft Teams 设备使用情况报告可深入了解贵组织的 Microsoft Teams 设备使用情况。 '
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 7be5d8d0d369d9cff0fe295f8765a5e4f3ca28bc
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b9a4d2ab3034281970a3e342aa0a2d78e53678e5
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980786"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766110"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Microsoft Teams 设备使用情况报告
 
@@ -18,14 +18,16 @@ ms.locfileid: "49980786"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 Microsoft Teams 设备使用情况报告深入了解组织中 Microsoft Teams 设备使用情况。 
+使用 Microsoft Teams 设备使用情况报告可深入了解贵组织的 Microsoft Teams 设备使用情况。 
 
 ## <a name="methods"></a>方法
 
-| 方法                                   | 返回类型                              | 说明                              |
-| :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [获取用户详细信息](../api/reportroot-getteamsdeviceusageuserdetail.md) | [teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md) | 按用户获取有关 Microsoft Teams 设备使用情况的详细信息。 |
-| [获取用户计数](../api/reportroot-getteamsdeviceusageusercounts.md) | [teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md) | 按设备类型获取每日唯一用户数。 |
-| [获取分发用户计数](../api/reportroot-getteamsdeviceusagedistributionusercounts.md) | [teamsDeviceUsagedistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md) | 在选定的时间段内按设备类型获取唯一用户数。 |
+| 方法                                                       | 返回类型                                                  | 说明                                                  |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [获取用户详细信息](../api/reportroot-getteamsdeviceusageuserdetail.md) | [teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md) | 按用户获取有关 Microsoft Teams 设备使用情况的详细信息。      |
+| [获取用户计数](../api/reportroot-getteamsdeviceusageusercounts.md) | [teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md) | 按设备类型获取每日唯一 Microsoft Teams 许可用户数。 |
+| [获取用户总数](../api/reportroot-getteamsdeviceusagetotalusercounts.md) | [teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md) | 按设备类型获取每日唯一 Microsoft Teams 许可或非许可用户的数量。 |
+| [获取分发用户数](../api/reportroot-getteamsdeviceusagedistributionusercounts.md) | [teamsDeviceUsagedistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md) | 按设备类型获取选定时段内唯一 Microsoft Teams 许可用户的数量。 |
+| [获取分发用户总数](../api/reportroot-getteamsdeviceusagedistributiontotalusercounts.md) | [teamsDeviceUsagedistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md) | 按设备类型获取选定时段内唯一 Microsoft Teams 许可或非许可用户的数量。 |
 
 

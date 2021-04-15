@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 35521daa461c60290567a0202c07e2619de73ae5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c2af9b1a257943bb1bf05d864286c6382a4e9304
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968224"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766411"
 ---
 # <a name="get-printoperation"></a>获取 printOperation
 
@@ -18,18 +18,18 @@ ms.locfileid: "48968224"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [printOperation](../resources/printoperation.md) 对象的属性和关系。
+检索 [printOperation 对象的属性和](../resources/printoperation.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| "完全控制"、"全部"、"全打印机" |
+|委派（工作或学校帐户）| Printer.Create、Printer.ReadWrite.All、Printer.FullControl.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|Application| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /print/operations/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [printOperation](../resources/printOperation.md) 对象 (或 **printOperation** ) 的导数。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printOperation](../resources/printOperation.md) (**printOperation**) 派生对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -92,7 +92,7 @@ Content-type: application/json
 Content-length: 1199
 
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#print/operations/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/operations/$entity",
     "@odata.type": "#microsoft.graph.printerCreateOperation",
     "id": "81f4cca3-b3b7-47ea-9f88-7ddbf7208ef4",
     "createdDateTime": "2020-06-15T22:27:03.031849Z",
@@ -103,26 +103,20 @@ Content-length: 1199
     },
     "printer": {
         "registeredDateTime": "2020-06-15T22:27:12.0920077Z",
-        "acceptingJobs": null,
         "isShared": false,
         "id": "e56f9cdd-acec-486f-a05e-b622ff0bcc7d",
-        "name": "Test Printer",
+        "displayName": "Test Printer",
         "manufacturer": "Test Printer Manufacturer",
         "model": "Test Printer Model",
         "isAcceptingJobs": null,
-        "capabilities": null,
         "status": {
-            "processingState": "unknown",
-            "processingStateReasons": [],
-            "processingStateDescription": ""
+            "state": "unknown",
+            "details": [],
+            "description": ""
         },
         "location": {
             "latitude": null,
             "longitude": null
-        },
-        "defaults": {
-            "copiesPerJob": 1,
-            "finishings": []
         }
     }
 }

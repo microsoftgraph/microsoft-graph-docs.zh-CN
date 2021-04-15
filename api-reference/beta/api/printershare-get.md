@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a30f670d429fb57d92c7c0cf5f615ffb60bb2d59
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: f5f760f8b4fe3fa41046cd32e2c3ae5fe8674532
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784846"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766264"
 ---
 # <a name="get-printershare"></a>获取 printerShare
 
@@ -20,7 +20,7 @@ ms.locfileid: "49784846"
 
 检索打印机共享的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅。
@@ -29,17 +29,17 @@ ms.locfileid: "49784846"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadBasic.All、PrinterShare.Read.All、PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares/{id}
-GET /print/printers/{id}/share
+GET /print/shares/{printerShareId}
+GET /print/printers/{printerId}/shares/{printerShareId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数，包括 $select、$expand，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数，$select、$expand自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 例如 
 ```http
@@ -47,7 +47,7 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 
 ### <a name="exceptions"></a>Exceptions
-* `$count`不支持运算符。
+* `$count`运算符不受支持。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -57,8 +57,8 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [printerShare](../resources/printershare.md) 对象。
-默认情况下，响应将不包含[printerCapabilities。](../resources/printerCapabilities.md) 若要获取 **printerCapabilities，** 请使用 `$select` 查询参数。 
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [printerShare](../resources/printershare.md) 对象。
+默认情况下，该响应将不包含 [printerCapabilities](../resources/printerCapabilities.md)。 若要获取 **printerCapabilities，** 请使用 `$select` 查询参数。 
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

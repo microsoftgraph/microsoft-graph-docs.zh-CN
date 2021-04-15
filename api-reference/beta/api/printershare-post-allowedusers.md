@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: bba70146718ba50acfc6ee02cad756c91186499b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c3c170c05d8dfe18a228456de26c3bbce4dabc2a
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968412"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765941"
 ---
 # <a name="create-alloweduser-for-printershare"></a>为 printerShare 创建 allowedUser
 
@@ -18,18 +18,18 @@ ms.locfileid: "48968412"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向指定的用户授予将打印作业提交到关联的 [printerShare](../resources/printershare.md)的权限。
+授予指定用户向关联的 printerShare 提交打印 [作业的权限](../resources/printershare.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,10 +43,10 @@ POST /print/shares/{id}/allowedUsers/$ref
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，通过使用格式提供对用户实体的引用 `@odata.id` ，如下面的示例所示。
+在请求正文中，使用 格式提供对用户实体的引用， `@odata.id` 如以下示例所示。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `201 Created` 响应代码。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -85,7 +85,7 @@ Content-length: 66
 
 ---
 
-在请求正文中，通过在 JSON 正文的字段中添加用户的 Microsoft Graph URI，提供对用户实体的引用 `@odata.id` 。
+在请求正文中，提供对用户实体的引用，将用户的 Microsoft Graph URI 包括在 JSON 正文的 `@odata.id` 字段中。
 
 ### <a name="response"></a>响应
 下面展示了示例响应。 

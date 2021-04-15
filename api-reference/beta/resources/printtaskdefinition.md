@@ -1,16 +1,16 @@
 ---
 title: printTaskDefinition 资源类型
-description: 表示在通用打印中发生各种事件时可以触发的任务。
+description: 表示可在通用打印中发生各种事件时触发的任务。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: bbffceb08be336cd816d80f03236078b39348339
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 2495825ec64d73bb440d16e4eae9125f8dbd38eb
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934854"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766306"
 ---
 # <a name="printtaskdefinition-resource-type"></a>printTaskDefinition 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "49934854"
 
 表示在通用打印中发生各种事件时可以触发的任务的抽象定义。
 
-有关如何使用此资源向通用打印添加下拉打印支持的详细信息，请参阅扩展通用打印 [以支持下拉打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此资源向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持下拉打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 该资源支持：
 * [订阅更改通知](/graph/universal-print-webhook-notifications)。
@@ -30,12 +30,12 @@ ms.locfileid: "49934854"
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
 | [List](../api/print-list-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) 集合 | 获取在通用打印中创建的 printTaskDefinitions 的完整列表。 |
-| [创建](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | 创建新的 printTaskDefinition。 |
+| [Create](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | 创建新的 printTaskDefinition。 |
 | [更新](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | 更新 printTaskDefinition。 |
 | [删除](../api/print-delete-taskdefinition.md) | 无 | 删除 printTaskDefinition。 |
 | [列出任务](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | 获取基于此定义创建的任务列表。 该列表包括当前运行的任务和最近完成的任务。 |
 | [获取任务](../api/printtask-get.md) | [printTask](printtask.md) | 获取已基于此定义创建的任务。 |
-| [更新任务](../api/printtaskdefinition-update-task.md) | 无 | 更新基于此定义创建的任务。 **注册任务触发器的应用程序负责在处理完成时更新任务状态，除非相关 printJob 已重定向到另一台打印机。** 未能报告完成操作将导致相关打印作业被阻止打印并最终被删除。 |
+| [更新任务](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | 更新已基于此定义创建的任务。 **注册任务触发器的应用程序负责在处理完成后更新任务状态，除非相关 printJob 已重定向到另一台打印机。** 如果未能报告完成，将导致相关打印作业被阻止打印并最终被删除。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |

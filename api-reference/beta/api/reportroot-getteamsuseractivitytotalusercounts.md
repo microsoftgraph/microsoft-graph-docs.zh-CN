@@ -1,24 +1,24 @@
 ---
-title: 'reportRoot: getTeamsDeviceUsageUserDetail'
-description: 按用户获取有关 Microsoft Teams 设备使用情况的详细信息。
+title: reportRoot： getTeamsUserActivityTotalUserCounts
+description: 按活动类型获取 Microsoft Teams 许可或非许可用户的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。
 localization_priority: Normal
 ms.prod: reports
-author: sarahwxy
+author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: ebb9bd025ae17806a2b4c8060d453915c6d05cae
+ms.openlocfilehash: 9c62a7bf316f8b11b908f30eb3db1865b7a4f1df
 ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766159"
+ms.locfileid: "51766919"
 ---
-# <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
+# <a name="reportroot-getteamsuseractivitytotalusercounts"></a>reportRoot： getTeamsUserActivityTotalUserCounts
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按用户获取有关 Microsoft Teams 设备使用情况的详细信息。
+按活动类型获取 Microsoft Teams 许可或非许可用户的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。
 
 ## <a name="permissions"></a>权限
 
@@ -30,29 +30,27 @@ ms.locfileid: "51766159"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+> **注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsDeviceUsageUserDetail(period='D7')
-GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
+GET /reports/getTeamsUserActivityTotalUserCounts(period='D7')
 ```
 
 ## <a name="function-parameters"></a>函数参数
 
-在请求 URL 中，提供以下任一参数的有效值。
+在请求 URL 中，提供以下参数的有效值。
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 |
-| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-> **注意：** 需要在 URL 中设置 period 或 date。
+## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData `$format` 查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -71,26 +69,17 @@ GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 CSV 文件包含下面的列标题。
 
 - 报表刷新日期
-- 用户主体名称
-- 上次活动日期
-- 已删除
-- 删除日期
-- 使用的 Web
-- 使用的 Windows 手机
-- 使用的 iOS
-- 使用的 Mac
-- 使用的 Android 手机
-- 使用的 Windows
-- 使用的 Chrome 操作系统
-- 已使用的 Linux
-- 已许可
+- 报表日期
+- 团队聊天消息
+- 专用聊天消息
+- 呼叫
+- 会议
+- 其他操作
 - 报表周期
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **[teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md)** 对象。
-
-此请求的默认页面大小为 2000 个项目。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [teamsUserActivityUserCounts](../resources/teamsuseractivityusercounts.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -102,14 +91,13 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsdeviceusageuserdetail_csv"
+  "name": "reportroot_getteamsuseractivitytotalusercounts_csv"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalUserCounts(period='D7')?$format=text/csv
 ```
 
 
@@ -137,7 +125,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Other Actions,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -148,14 +136,13 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
 
 下面展示了示例请求。
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsdeviceusageuserdetail_json"
+  "name": "reportroot_getteamsuseractivitytotalusercounts_json"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalUserCounts(period='D7')?$format=application/json
 ```
 
 
@@ -168,32 +155,25 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(perio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsDeviceUsageUserDetail"
+  "@odata.type": "microsoft.graph.teamsUserActivityUserCounts"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 374
+Content-Length: 291
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageUserDetail)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "userPrincipalName": "userPrincipalName-value", 
-      "isLicensed": true, 
-      "lastActivityDate": "2017-09-01", 
-      "isDeleted": false, 
-      "deletedDate": null, 
-      "usedWeb": false, 
-      "usedWindowsPhone": false, 
-      "usediOS": true, 
-      "usedMac": false, 
-      "usedAndroidPhone": false, 
-      "usedWindows": true, 
-      "usedChromeOS": false, 
-      "usedLinux": false, 
+      "reportDate": "2017-09-01", 
+      "teamChatMessages": 30, 
+      "privateChatMessages": 21, 
+      "calls": 6, 
+      "meetings": 2, 
+      "otherActions": 17, 
       "reportPeriod": "7"
     }
   ]
@@ -210,5 +190,3 @@ Content-Length: 374
   "suppressions": [
   ]
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: fd7e09dde34eb77a78b63cfaf10de31c4796e908
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: eba2f5d05a5571bf7f4fa4cd72d9a945b9936481
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982899"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766397"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -52,7 +52,7 @@ GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 
-此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
+此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -80,12 +80,27 @@ CSV 文件包含下面的列标题。
 - 专用聊天消息计数
 - 呼叫计数
 - 会议计数
+- 会议组织计数
+- 会议参加计数
+- 临时会议组织计数
+- 参加临时会议计数
+- 安排的一次会议组织计数
+- 已安排的一次会议参加次数
+- 安排的定期会议组织计数
+- 已安排的定期会议参加次数
+- 音频持续时间
+- 视频持续时间
+- 屏幕共享持续时间
+- 音频持续时间（以秒数表示）
+- 视频持续时间（秒）
+- 屏幕共享持续时间（秒）
 - 包含其他操作
+- 已许可
 - 报表周期
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[teamsUserActivityUserDetail](../resources/teamsuseractivityuserdetail.md)** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **[teamsUserActivityUserDetail](../resources/teamsuseractivityuserdetail.md)** 对象。
 
 此请求的默认页面大小为 2000 个项目。
 
@@ -93,7 +108,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="csv"></a>CSV
 
-下面是一个输出 CSV 的示例。
+下面是输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -134,7 +149,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -179,6 +194,7 @@ Content-Length: 452
     {
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
+      "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 
       "isDeleted": false, 
       "deletedDate": null, 
@@ -189,6 +205,17 @@ Content-Length: 452
       "privateChatMessageCount": 49, 
       "callCount": 2, 
       "meetingCount": 0, 
+      "meetingsOrganizedCount": 0, 
+      "meetingsAttendedCount": 0, 
+      "adHocMeetingsOrganizedCount": 0, 
+      "adHocMeetingsAttendedCount": 0, 
+      "scheduledOneTimeMeetingsOrganizedCount": 0, 
+      "scheduledOneTimeMeetingsAttendedCount": 0, 
+      "scheduledRecurringMeetingsOrganizedCount": 0, 
+      "scheduledRecurringMeetingsAttendedCount": 0, 
+      "audioDuration": 00:00:00, 
+      "videoDuration": 00:00:00, 
+      "screenShareDuration": 00:00:00, 
       "hasOtherAction": true, 
       "reportPeriod": "7"
     }

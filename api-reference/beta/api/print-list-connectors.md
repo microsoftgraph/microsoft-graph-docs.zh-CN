@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 52b1e8365cc90cccbf22dd9617f4c326911b71eb
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 36cf3775da6a2fbc5e721c6f8dc80be714e14851
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962321"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766516"
 ---
 # <a name="list-printconnectors"></a>列出 printConnectors
 
@@ -29,7 +29,7 @@ ms.locfileid: "50962321"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrintConnector.Read.All、PrintConnector.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|Application| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -101,7 +101,7 @@ Content-length: 1289
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "Connector1",
+      "displayName": "Connector1",
       "fullyQualifiedDomainName": "connector1@redmond.corp.microsoft.com",
       "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
       "appVersion": "0.19.7338.23496",
@@ -123,9 +123,9 @@ Content-length: 1289
         "countryOrRegion": "USA",
         "site": "Puget Sound",
         "building": "Studio E",
-        "floorNumber": 1,
+        "floor": "1",
         "floorDescription": "First Floor",
-        "roomNumber": 1234,
+        "roomName": "1234",
         "roomDescription": "First floor copy room",
         "organization": [
             "C+AI",

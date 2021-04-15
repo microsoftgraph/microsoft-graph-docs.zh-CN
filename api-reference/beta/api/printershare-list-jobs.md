@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7a2c7969a5900410eeb195025391c4b3b413ce26
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3a888531cd7129b500a9286d8987909bdd3f9a62
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950667"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765998"
 ---
 # <a name="list-printjobs-for-a-printershare"></a>列出 printerShare 的 printJobs
 
@@ -31,7 +31,7 @@ ms.locfileid: "50950667"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrintJob.ReadBasic、PrintJob.Read、PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic、PrintJob.ReadWrite、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
+|Application| PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ GET /print/shares/{id}/jobs
 * 此方法支持按创建打印作业的用户筛选打印作业。 使用 `$filter=createdBy/userPrincipalName eq '{upn}'` ，其中 **{upn}** 是关联 [用户](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) 的用户主体名称。
 
 ### <a name="exceptions"></a>Exceptions
-不支持某些运算符 `$count` `$search` ：、、。 `$filter`
+不支持某些运算符 `$count` `$search` ：、。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -111,8 +111,10 @@ Content-length: 461
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
       "createdBy": {},
       "status": {
-        "processingState": "completed",
-        "processingStateDescription": "The print job has completed successfully and no further processing will take place."
+        "state": "completed",
+        "description": "The print job has completed successfully and no further processing will take place.",
+        "details" : [],
+        "isAcquiredByPrinter": true
       }
     }
   ]

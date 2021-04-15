@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageDistributionUserCounts'
-description: 在选定的时间段内按设备类型获取 Microsoft Teams 唯一用户数。
+description: 按设备类型获取选定时段内唯一 Microsoft Teams 许可用户的数量。
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 5af29dee8c847761f066903b29f208aae5e5b1c2
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: c6d6e8cf10071b46d660f5e50e80a45b2a0c1e10
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983235"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766187"
 ---
 # <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionUserCounts
 
@@ -18,9 +18,9 @@ ms.locfileid: "49983235"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在选定的时间段内按设备类型获取 Microsoft Teams 唯一用户数。
+按设备类型获取选定时段内唯一 Microsoft Teams 许可用户的数量。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /reports/getTeamsDeviceUsageDistributionUserCounts(period='D7')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -73,17 +73,19 @@ CSV 文件包含下面的列标题。
 - iOS
 - Mac
 - Windows
+- Chrome OS
+- Linux
 - 报表周期
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[teamsDeviceUsageDistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md)** 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **[teamsDeviceUsageDistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md)** 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是一个输出 CSV 的示例。
+下面是输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -124,7 +126,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Period
+Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Chrome OS,Linux,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -173,6 +175,8 @@ Content-Length: 243
       "androidPhone": 34, 
       "ios": 76, 
       "mac": 40, 
+      "chromeOS": 100, 
+      "linux": 60, 
       "windows": 491, 
       "reportPeriod": "7"
     }
