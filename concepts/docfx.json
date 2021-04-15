@@ -1,5 +1,5 @@
 {
-  "build": {    
+  "build": {
     "content": [
       {
         "files": [
@@ -34,9 +34,8 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": { 
-      "feedback_system": "None",
-      "hide_comments": true,
+    "globalMetadata": {
+      "feedback_system": "GitHub",
       "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
       "breadcrumb_path": "/graph/breadcrumb/toc.json",
@@ -46,9 +45,12 @@
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",
-      "searchScope": ["graph"],
+      "searchScope": [
+        "graph"
+      ],
+      "toc_preview": true,
       "bilingual_type": "hover over",
-      "toc_preview": true
+      "hide_comments": true
     },
     "fileMetadata": {
       "ms.technology": {
