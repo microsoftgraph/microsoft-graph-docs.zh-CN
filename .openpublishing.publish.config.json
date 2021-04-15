@@ -5,7 +5,7 @@
       "build_source_folder": "concepts",
       "build_output_subfolder": "microsoft-graph-docs",
       "locale": "zh-cn",
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -19,8 +19,11 @@
       "build_source_folder": "api-reference",
       "build_output_subfolder": "microsoft-graph-ref",
       "locale": "zh-cn",
-      "moniker_ranges": [ "graph-rest-beta", ">= graph-rest-1.0" ], 
-      "open_to_public_contributors": false,
+      "moniker_ranges": [
+        "graph-rest-beta",
+        ">= graph-rest-1.0"
+      ],
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -30,7 +33,9 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": ["mor-oitac-eng@moravia.com"],
+  "notification_subscribers": [
+    "mor-oitac-eng@moravia.com"
+  ],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live",
@@ -39,9 +44,9 @@
   ],
   "skip_source_output_uploading": false,
   "continue_with_document_error": true,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
-  "git_repository_branch_open_to_public_contributors": "master",  
+  "git_repository_branch_open_to_public_contributors": "main",
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
