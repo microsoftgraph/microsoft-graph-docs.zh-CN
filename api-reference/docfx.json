@@ -36,19 +36,19 @@
       },
       {
         "files": [
-            "api/**/*.md",
-            "api/**/*.yml"
-          ],
-          "src": "beta/",
-          "group": "beta",
-          "exclude": [
-            "**/obj/**",
-            "**/includes/**",
-            "README.md",
-            "LICENSE",
-            "LICENSE-CODE",
-            "ThirdPartyNotices"
-          ]
+          "api/**/*.md",
+          "api/**/*.yml"
+        ],
+        "src": "beta/",
+        "group": "beta",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
       },
       {
         "files": [
@@ -69,38 +69,38 @@
       },
       {
         "files": [
-            "toc.yml"
-          ],
-          "src": "v1.0/breadcrumb/",
-          "dest": "ref-breadcrumb/",
-          "group": "v1.0",
-          "exclude": [
-            "**/obj/**",
-            "**/includes/**",
-            "README.md",
-            "LICENSE",
-            "LICENSE-CODE",
-            "ThirdPartyNotices"
-          ]
+          "toc.yml"
+        ],
+        "src": "v1.0/breadcrumb/",
+        "dest": "ref-breadcrumb/",
+        "group": "v1.0",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
       },
       {
         "files": [
-            "toc.yml"
-          ],
-          "src": "beta/breadcrumb/",
-          "dest": "ref-breadcrumb/",
-          "group": "beta",
-          "exclude": [
-            "**/obj/**",
-            "**/includes/**",
-            "README.md",
-            "LICENSE",
-            "LICENSE-CODE",
-            "ThirdPartyNotices"
-          ]
+          "toc.yml"
+        ],
+        "src": "beta/breadcrumb/",
+        "dest": "ref-breadcrumb/",
+        "group": "beta",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
       },
       {
-       "files": [
+        "files": [
           "toc.yml"
         ],
         "src": "v1.0/",
@@ -116,7 +116,7 @@
         ]
       },
       {
-       "files": [
+        "files": [
           "toc.yml"
         ],
         "src": "beta/",
@@ -132,11 +132,11 @@
         ]
       },
       {
-       "files": [
+        "files": [
           "overview.md"
         ],
         "src": "v1.0/",
-		    "dest": "api/",
+        "dest": "api/",
         "group": "v1.0",
         "exclude": [
           "**/obj/**",
@@ -148,11 +148,11 @@
         ]
       },
       {
-       "files": [
+        "files": [
           "overview.md"
         ],
         "src": "beta/",
-		    "dest": "api/",
+        "dest": "api/",
         "group": "beta",
         "exclude": [
           "**/obj/**",
@@ -221,8 +221,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "feedback_system": "None",
-      "hide_comments": true,
+      "feedback_system": "GitHub",
       "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
       "extendBreadcrumb": true,
@@ -231,9 +230,12 @@
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
-      "searchScope": ["graph"],
+      "searchScope": [
+        "graph"
+      ],
       "toc_preview": true,
-      "bilingual_type": "hover over"
+      "bilingual_type": "hover over",
+      "hide_comments": true
     },
     "fileMetadata": {
       "breadcrumb_path": {
