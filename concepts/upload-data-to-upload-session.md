@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 448c0525a318cac64bb5d381b986c238f563025d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c51d027a0e76f24f6ec4788ae1429adcc29f2948
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515695"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766313"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>使用 Microsoft Graph 通用打印 API 上载文档
 
@@ -44,7 +44,10 @@ Content-Range: bytes=0-72796/4533322
 Content-Length: 72797
 
 <bytes 0-72796 of the file>
+
 ```
+
+此处的 0 和 72796 是文件段的开始索引和结束索引，而 4533322 则是文档的大小。
 ### <a name="http-response"></a>HTTP 响应
 
 当此请求完成时，如果还需要上传其他字节范围，服务器将会返回 `202 Accepted` 作为响应。
