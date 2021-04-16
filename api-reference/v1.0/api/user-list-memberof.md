@@ -5,18 +5,18 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4dde83056bed84fdbb2b2dd33d23deb5ea9d4b2d
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f608c8639556857df1c6065f976378eb7521ccf3
+ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473967"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51836925"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
 命名空间：microsoft.graph
 
-获取用户是其直接成员的[组](../resources/group.md)和[目录角色](../resources/directoryrole.md)。 
+获取用户直接所属的[组](../resources/group.md)，[目录角色](../resources/directoryrole.md)和[管理单位](../resources/administrativeunit.md)。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
