@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 43cca80f5873e1349c8e057ded8270d710cfe632
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3256e99798de12d4a79da37888551d562ed6027e
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957815"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869860"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting：createOrGet
 
@@ -47,7 +47,8 @@ POST /me/onlineMeetings/createOrGet
 POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
-> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> [!NOTE]
+> `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明                 |

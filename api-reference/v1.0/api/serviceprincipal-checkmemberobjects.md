@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 529699aafe2051f6e3aebfa115cde3bc2c26400e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 433cc101fa69d2b4f659b82a1d40b1b58b073548
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131383"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870077"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal：checkMemberObjects
 
@@ -18,15 +18,15 @@ ms.locfileid: "50131383"
 
 检查指定 [servicePrincipal](../resources/serviceprincipal.md) 对象的组、目录角色或管理单元列表中的成员身份。 此方法是可传递的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All|
+| 委派（工作或学校帐户）     | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

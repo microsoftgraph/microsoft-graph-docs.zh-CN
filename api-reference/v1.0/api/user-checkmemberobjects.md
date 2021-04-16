@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4f27a53030e1c01b3efb1967f9f0620033e36f28
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: df3cf26e98f3769bea4ceba632dccd24030494b0
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722389"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870063"
 ---
 # <a name="user-checkmemberobjects"></a>user： checkMemberObjects
 
@@ -18,15 +18,15 @@ ms.locfileid: "50722389"
 
 检查指定用户对象的组或目录角色列表中的成员身份。 此方法是可传递的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | User.ReadBasic.All、User.Read.All、User.ReadWrite.All<br><br>此外：<br><br><ul><li>如果检查组成员身份：Group.Read.All、Group.ReadWrite.All</li><li>如果检查管理单元中的成员身份：AdministrativeUnit.Read.All、AdministrativeUnit.ReadWrite.All</li><li>如果检查目录角色中的成员身份：RoleManagement.Read.Directory、RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
+| 委派（工作或学校帐户）     | User.ReadBasic.All、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All<br>而且：<ul><li>如果检查组成员身份：Group.Read.All、Group.ReadWrite.All</li><li>如果检查管理单元中的成员身份：AdministrativeUnit.Read.All、AdministrativeUnit.ReadWrite.All</li><li>如果检查目录角色中的成员身份：RoleManagement.Read.Directory、RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

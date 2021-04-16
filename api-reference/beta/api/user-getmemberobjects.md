@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0d6dba0ce77f4e8918f16b9e6f74a82a44a5f87e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a155646dc09e7dd9ab4b69ebf7168bed3dd9f9e8
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721444"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869972"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -26,9 +26,9 @@ ms.locfileid: "50721444"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.Read、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

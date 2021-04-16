@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c1da59fa3644b8ca1ab3d06f71cfba3f61f5abcf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 697ea12958a6bb206635726a2d0e18649db71378
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094692"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869839"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -23,9 +23,9 @@ ms.locfileid: "48094692"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -86,8 +86,8 @@ Content-length: 33
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

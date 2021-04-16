@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c1324443ffec1f5743442120bf0df5881732d542
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 5876d96bd0641ec4029788d1fecdb97771f435e2
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507658"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869706"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -253,7 +253,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer-2"
+  "name": "call-transfer-2"
 }-->
 
 ```http
@@ -423,7 +423,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "call-transfer"
+  "name": "call-transfer-3"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/transfer
@@ -595,7 +595,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer"
+  "name": "call-transfer-4"
 }-->
 
 ```http

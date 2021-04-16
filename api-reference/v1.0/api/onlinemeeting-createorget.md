@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 27e68b078b22380638047d9a0827459f90e3c5da
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 962ed5d23fa8c1e615846c02e376b1a9ad0155fd
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516162"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869881"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting：createOrGet
 
@@ -30,22 +30,23 @@ ms.locfileid: "50516162"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)策略，并授予用户，授权策略中配置的应用代表用户在请求路径) 中指定的 (用户 ID 创建或获取具有外部 ID 的联机会议。
+> \*管理员必须创建应用程序访问[](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)策略，并授予用户该策略，授权策略中配置的应用代表该用户在请求路径) 中指定的 (用户 ID 创建或获取具有外部 ID 的联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
-若要使用 **委派令牌调用 createOrGet** API，
+使用委派 **令牌调用 createOrGet** API：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-若要使用 **应用程序令牌调用 createOrGet** API，
+使用应用程序 **令牌调用 createOrGet** API：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
-> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> [!NOTE]
+> `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -56,7 +57,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数        | 类型                                     |Description                                                                                                                                    |
+| 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
 | endDateTime      | 日期时间                                 | 会议结束时间（UTC）。 |
 | externalId       | String                                   | 外部 ID。 自定义 ID。  (必需)  |
@@ -68,18 +69,18 @@ POST /users/{userId}/onlineMeetings/createOrGet
 >
 > - 如果未 **提供 startDateTime** 和 **endDateTime，startDateTime** 将默认为当前 dateTime 值 **，endDateTime** 值将等于 **startDateTime** + 1 小时。 
 >
-> - 如果 **提供 startDateTime，** 但不提供 **endDateTime，endDateTime** 值将等于 **startDateTime** + 1 小时。 
+> - 如果 **提供了 startDateTime，** 但 **endDateTime** 未提供， **则 endDateTime** 值将等于 **startDateTime** + 1 小时。
 >
-> - 如果在未提供 **startDateTime** 的情况下提供 **endDateTime，** 或者 **endDateTime** 早于 **startDateTime，将引发错误**。
+> - 如果没有 **startDateTime 提供 endDateTime，** 或者 **endDateTime** 早于 **startDateTime**，将引发错误。
 
 ## <a name="response"></a>响应
-如果成功，此方法在新建会议时返回响应代码，如果检索现有会议，则返回 `201 Created` `200 OK` 响应代码。 在这两种情况下，在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+如果成功，此方法在新建会议时返回 响应代码，如果检索到现有会议，则返回 `201 Created` `200 OK` 响应代码。 在这两种情况下，在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-以下示例演示如何创建或获取具有外部 ID 的联机会议。
+以下示例演示如何使用外部 ID 创建或获取联机会议。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

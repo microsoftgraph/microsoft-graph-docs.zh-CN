@@ -5,21 +5,21 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 81ef5019ad98af32cd2a393b1f531ee6b5b0ba87
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 02466f23b1ffbb7e91cfffba6c5bf5748cdc1892
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515879"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870014"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
 命名空间：microsoft.graph
 
-检索 [onlineMeeting](../resources/onlinemeeting.md) 对象的属性和关系。 可以使用 [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) 或会议 ID 获取 onlineMeeting [的详细信息](#example-2-retrieve-an-online-meeting-by-meeting-id)。
+检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。 可以使用 [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) 或会议 ID 获取 onlineMeeting [的详细信息](#example-2-retrieve-an-online-meeting-by-meeting-id)。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,22 +39,22 @@ ms.locfileid: "50515879"
 GET /me/onlineMeetings/{meetingId}
 ```
 
-若要使用具有应用程序令牌的会议 ID 获取指定的 onlineMeeting：
+若要使用具有应用程序令牌的会议 ID 获取指定的 onlineMeeting，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-若要使用 **videoTeleconferenceId***获取指定的 onlineMeeting，请执行以下操作：
+使用 **videoTeleconferenceId*** 获取指定的 onlineMeeting：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-> **注意：**
-> - `userId`是 Azure 用户管理门户中[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
-> - `meetingId`是[onlineMeeting 对象的](../resources/onlinemeeting.md)ID。
-> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息， [请参阅 VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) 会议 ID。
+> [!NOTE]
+> - `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
+> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关更多详细信息 [，请参阅 VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) 会议 ID。
 > - \* 此方案仅支持应用程序令牌，不支持应用程序访问策略。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -189,7 +189,7 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
-可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中提供了会议 ID。 此选项可用于支持已知会议 ID 的用例，例如当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
+可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中会提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
 
 #### <a name="request"></a>请求
 
@@ -201,7 +201,7 @@ Content-Length: 1574
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
-以下请求使用应用令牌。
+以下请求使用应用程序令牌。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 14afc1f17b5139e4476b052f551b41f212c9e4ff
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0a5f56d648ec703ab9aad7176c4e442de2dc001f
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954354"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869762"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -28,9 +28,9 @@ ms.locfileid: "48954354"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委派（工作或学校帐户）     | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
-| 应用程序                            | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                             |
+| 应用程序                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ## <a name="http-request"></a>HTTP 请求
 

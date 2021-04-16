@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 357d04c3d456dde08f666da0aa05a97c3f67c231
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: eee39ddcaa0122f4e628f06cc8f90bac0317ddab
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945215"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869874"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -41,7 +41,7 @@ DELETE /me/onlineMeetings/{meetingId}
 ```http
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
-> **注意：**
+> [!NOTE]
 > - `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 

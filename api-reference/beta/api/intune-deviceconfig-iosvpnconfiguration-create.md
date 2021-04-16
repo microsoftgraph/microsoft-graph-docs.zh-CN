@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0eb0de1d8cd2521292533e76cea5f0fad2f9428
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: bbc488742cc0cb94ca27a3a03f43e3fc99d72434
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129872"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868237"
 ---
 # <a name="create-iosvpnconfiguration"></a>创建 iosVpnConfiguration
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对作用域用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -77,18 +77,20 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |enableSplitTunneling|Boolean|通过 VPN 发送所有网络流量。 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|此 VPN 连接的身份验证方法。 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)。 可取值为：`certificate`、`usernameAndPassword`、`sharedSecret`、`derivedCredential`、`azureAD`。|
 |enablePerApp|Boolean|如果设置为 true，Per-App VPN 有效负载，稍后可关联到可在最终用户的 iOS 设备上触发此 VPN 连接的应用。 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|safariDomains|String collection|启用"每个应用此 VPN"设置时，Safari 域。 除了与此 VPN 关联的应用之外，此处指定的 Safari 域还将能够触发此 VPN 连接。 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|safariDomains|String 集合|启用"每个应用此 VPN"设置时，Safari 域。 除了与此 VPN 关联的应用之外，此处指定的 Safari 域还将能够触发此 VPN 连接。 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md) 集合|按需规则。 该集合最多可包含 500 个元素。 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |providerType|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|每个应用 VPN 的提供程序类型。 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)。 可取值为：`notConfigured`、`appProxy`、`packetTunnel`。|
-|associatedDomains|String collection|关联域 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|excludedDomains|String collection|通过公共 Internet 而不是 VPN 访问的域，即使已激活每应用 VPN 也是如此。继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|associatedDomains|String 集合|关联域 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|excludedDomains|String 集合|通过公共 Internet 而不是 VPN 访问的域，即使已激活每应用 VPN 也是如此。继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |disableOnDemandUserOverride|Boolean|切换以阻止用户在"设置"应用中禁用自动 VPN 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdle|Boolean|是否在按需连接空闲后断开连接 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdleTimerInSeconds|Int32|断开按需连接之前要等待的时间长度（秒）。 有效值 0 至 65535 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|代理服务器。 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Boolean|Opt-In将设备 ID 共享给第三方 vpn 客户端，以在网络访问控制验证期间使用。 继承自 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |userDomain|String|仅 Zscaler。 输入静态域，以在 Zscaler 应用中预填充登录字段。 如果为空，将改为使用用户的 Azure Active Directory 域。|
 |strictEnforcement|Boolean|仅 Zscaler。 阻止网络流量，直到用户登录 Zscaler 应用。 "True"表示流量被阻止。|
 |cloudName|String|仅 Zscaler。 用户分配到的 Zscaler 云。|
-|excludeList|String collection|仅 Zscaler。 未通过 Zscaler 云发送的网络地址列表。|
+|excludeList|String 集合|仅 Zscaler。 未通过 Zscaler 云发送的网络地址列表。|
 |targetedMobileApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|目标移动应用。 该集合最多可包含 500 个元素。|
 |microsoftTunnelSiteId|String|Microsoft 隧道站点 ID。|
 
@@ -104,7 +106,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3298
+Content-length: 3368
 
 {
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
@@ -194,6 +196,8 @@ Content-length: 3298
     "Excluded Domains value"
   ],
   "disableOnDemandUserOverride": true,
+  "disconnectOnIdle": true,
+  "disconnectOnIdleTimerInSeconds": 14,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -225,7 +229,7 @@ Content-length: 3298
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3470
+Content-Length: 3540
 
 {
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
@@ -318,6 +322,8 @@ Content-Length: 3470
     "Excluded Domains value"
   ],
   "disableOnDemandUserOverride": true,
+  "disconnectOnIdle": true,
+  "disconnectOnIdleTimerInSeconds": 14,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",

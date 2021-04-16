@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a0bf3389563f99b69b7e27651f85163e7f820748
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ebdbcbd782146fbe8a29dfeb0666a2cbb241e8a6
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135917"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870091"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal：checkMemberObjects
 
@@ -26,9 +26,9 @@ ms.locfileid: "50135917"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All|
+| 委派（工作或学校帐户）     | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All|
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

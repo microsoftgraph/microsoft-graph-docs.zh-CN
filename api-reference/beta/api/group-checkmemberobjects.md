@@ -1,24 +1,24 @@
 ---
-title: 组： checkMemberObjects
-description: 检查指定的组对象的组、目录角色或管理单位列表中的成员身份。
+title: group： checkMemberObjects
+description: 检查指定组对象的组、目录角色或管理单元列表中的成员身份。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e6d2b4ee6f316d4c11b34940d3bbe9504f2ed67c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bd5b12d938b04108e67d99ab815668ac7f28b29d
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954339"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869720"
 ---
-# <a name="group-checkmemberobjects"></a>组： checkMemberObjects
+# <a name="group-checkmemberobjects"></a>group： checkMemberObjects
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定组的组列表或管理单元的成员资格。 此方法是可传递的。
+检查指定组的组或管理单元列表中的成员身份。 此方法是可传递的。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48954339"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li></ul><br>Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</ul></li><br>Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /groups/{id}/checkMemberObjects
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|ids|String collection| 包含目录角色的组、目录角色、管理单元或 roleTemplate Id 的对象 Id 的集合，用于检查成员身份。 最高可指定20个对象。 |
+|ids|String collection| 包含要检查成员身份的目录角色的组、目录角色、管理单元或 roleTemplate ID 的对象 ID 的集合。 最多可指定 20 个对象。 |
 
 ## <a name="response"></a>响应
 

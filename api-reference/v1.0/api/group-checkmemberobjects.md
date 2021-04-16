@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 35ad4cc491d0a3d8513ca070a258ecc8e6080e8f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 076fb6007d856d02f06eb874f0ea3e3f6e211a66
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135588"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870021"
 ---
 # <a name="group-checkmemberobjects"></a>group： checkMemberObjects
 
@@ -18,15 +18,15 @@ ms.locfileid: "50135588"
 
 检查指定组的组或目录角色列表中的成员身份。 此方法是可传递的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All<br>并且：<br><ul><li>如果检查管理单元中的成员身份：AdministrativeUnit.Read.All、AdministrativeUnit.ReadWrite.All</li></ul><br>Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Group.Read.All、Group.ReadWrite.All<br>并且：<br><ul><li>如果检查管理单元中的成员身份：AdministrativeUnit.Read.All、AdministrativeUnit.ReadWrite.All</ul></li><br>Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

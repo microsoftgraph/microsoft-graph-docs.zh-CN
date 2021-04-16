@@ -1,16 +1,16 @@
 ---
 title: onlineMeeting 资源类型
 description: 包含有关会议的信息。
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: cd641c91c376ed4f5002475aea337a92f7040eb3
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 20008637c267051749e98e420ee2378861414b5e
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956937"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869993"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "50956937"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                             | 返回类型                       | 说明                                                                                                       |
 | :----------------------------------------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| [创建](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | 创建联机会议。                                                                                         |
-| [获取](../api/onlinemeeting-get.md)                                 | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting 对象的属性和** 关系。                                             |
+| [Create](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | 创建联机会议。                                                                                         |
+| [Get](../api/onlinemeeting-get.md)                                 | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting 对象的属性和** 关系。                                             |
 | [更新](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | 更新 **onlineMeeting 对象** 的属性。 |
 | [删除](../api/onlinemeeting-delete.md)                           | 无                              | 删除 **onlineMeeting** 对象。                                                                             |
 | [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。      |
@@ -37,7 +37,7 @@ ms.locfileid: "50956937"
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| 指定可在会议中成为演示者的人。 可能的值为 `everyone` `organization` `roleIsPresenter` 、、、 `organizer` 和 `unknownFutureValue` 。                                                                                                    |
 | alternativeRecording  | Stream                                        | 实时事件的备用录制的内容流。 只读。                                                                                                                                                                                 |
 | attendeeReport        | Stream                                        | 实时事件的与会者报告的内容流。 只读。                                                                                                                                                                                       |
-| autoAdmittedUsers     | String                                        | 用于指定将自动允许加入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。 |
+| autoAdmittedUsers (弃)     | String                                        | 用于指定将自动允许加入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。 |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (拨入) 联机会议的信息。 只读。                                                                                                                                                                                    |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | 与实时事件相关的设置*                                                                                                                                                                                                                    |
 | chatInfo              | [chatInfo](chatinfo.md)                       | 与此联机会议关联的聊天信息。                                                                                                                                                                                                   |
@@ -57,10 +57,9 @@ ms.locfileid: "50956937"
 | subject               | String                                        | 联机会议的主题。                                                                                                                                                                                                                          |
 | videoTeleconferenceId | String                                        | 视频电话会议 ID。 只读。                                                                                                                                                                                                                   |
 
-> [!IMPORTANT]
-> **autoAdmittedUsers** 属性已过时。 请 **改为对会议选项配置使用 lobbyBypassSettings.scope。**
-> 
-> *\使用 **broadcastSettings** 属性创建实时事件在 Beta 中，但存在重要限制。 有关详细信息，请参阅[broadcastSettings。](broadcastMeetingSettings.md)
+> [!CAUTION]
+>- **autoAdmittedUsers** 属性已弃用。 请 **改为使用** [lobbyBypassSettings 的 scope](lobbyBypassSettings.md) 属性。
+>- \* 使用 **broadcastSettings** 属性创建实时事件在 Beta 中，但存在重要限制。 有关详细信息，请参阅[broadcastSettings。](broadcastMeetingSettings.md)
 
 ### <a name="onlinemeetingpresenters-values"></a>onlineMeetingPresenters 值
 
@@ -72,7 +71,8 @@ ms.locfileid: "50956937"
 | organizer － 组织者          | 只有组织者是演示者。                           |
 | unknownFutureValue | 未知未来值。                                         |
 
-**注意**：如果 **allowedPresenters** 的值设置为 ，请使用 `roleIsPresenter` [meetingParticipantInfo](../resources/meetingparticipantinfo.md)中的 **role** 属性指定每个会议参与者的会议角色。
+> [!NOTE]
+> 如果 **allowedPresenters** 的值设置为 ，请使用 `roleIsPresenter` [meetingParticipantInfo](../resources/meetingparticipantinfo.md)中的 **role** 属性指定每个会议参与者的会议角色。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
