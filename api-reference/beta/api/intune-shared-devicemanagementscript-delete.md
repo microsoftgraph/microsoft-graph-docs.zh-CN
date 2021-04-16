@@ -1,41 +1,41 @@
 ---
 title: 删除 deviceManagementScript
 description: 删除 deviceManagementScript。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33de2f6111226c34405fac107efa73b1cab9f6e1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 664c30b6889e2d2cb90ddb60ae8118c8cf92e8bb
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223883"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867803"
 ---
-# <a name="delete-devicemanagementscript"></a><span data-ttu-id="9b561-103">删除 deviceManagementScript</span><span class="sxs-lookup"><span data-stu-id="9b561-103">Delete deviceManagementScript</span></span>
+# <a name="delete-devicemanagementscript"></a><span data-ttu-id="59b3c-103">删除 deviceManagementScript</span><span class="sxs-lookup"><span data-stu-id="59b3c-103">Delete deviceManagementScript</span></span>
 
-<span data-ttu-id="9b561-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9b561-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="59b3c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="59b3c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9b561-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="9b561-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="59b3c-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="59b3c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9b561-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="9b561-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="59b3c-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="59b3c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9b561-107">删除 [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)。</span><span class="sxs-lookup"><span data-stu-id="9b561-107">Deletes a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md).</span></span>
+<span data-ttu-id="59b3c-107">删除 [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)。</span><span class="sxs-lookup"><span data-stu-id="59b3c-107">Deletes a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9b561-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="9b561-108">Prerequisites</span></span>
-<span data-ttu-id="9b561-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9b561-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="59b3c-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="59b3c-108">Prerequisites</span></span>
+<span data-ttu-id="59b3c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="59b3c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9b561-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="9b561-111">Permission type</span></span>|<span data-ttu-id="9b561-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="9b561-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="59b3c-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="59b3c-111">Permission type</span></span>|<span data-ttu-id="59b3c-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="59b3c-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9b561-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9b561-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="9b561-114">&nbsp;&nbsp;**设备管理**</span><span class="sxs-lookup"><span data-stu-id="9b561-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="9b561-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b561-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-| <span data-ttu-id="9b561-116">&nbsp;&nbsp;**策略集**</span><span class="sxs-lookup"><span data-stu-id="9b561-116">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="9b561-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b561-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="9b561-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9b561-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9b561-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="9b561-119">Not supported.</span></span>|
-|<span data-ttu-id="9b561-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="9b561-120">Application</span></span>||
-| <span data-ttu-id="9b561-121">&nbsp;&nbsp;**设备管理**</span><span class="sxs-lookup"><span data-stu-id="9b561-121">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="9b561-122">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b561-122">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-| <span data-ttu-id="9b561-123">&nbsp;&nbsp;**策略集**</span><span class="sxs-lookup"><span data-stu-id="9b561-123">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="9b561-124">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b561-124">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="59b3c-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="59b3c-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="59b3c-114">&nbsp; &nbsp; **设备管理**</span><span class="sxs-lookup"><span data-stu-id="59b3c-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="59b3c-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59b3c-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+| <span data-ttu-id="59b3c-116">&nbsp;&nbsp;**策略集**</span><span class="sxs-lookup"><span data-stu-id="59b3c-116">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="59b3c-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59b3c-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="59b3c-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="59b3c-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="59b3c-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="59b3c-119">Not supported.</span></span>|
+|<span data-ttu-id="59b3c-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="59b3c-120">Application</span></span>||
+| <span data-ttu-id="59b3c-121">&nbsp; &nbsp; **设备管理**</span><span class="sxs-lookup"><span data-stu-id="59b3c-121">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="59b3c-122">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59b3c-122">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+| <span data-ttu-id="59b3c-123">&nbsp;&nbsp;**策略集**</span><span class="sxs-lookup"><span data-stu-id="59b3c-123">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="59b3c-124">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59b3c-124">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9b561-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9b561-125">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="59b3c-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="59b3c-125">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -44,28 +44,28 @@ ms.locfileid: "49223883"
 DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9b561-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="9b561-126">Request headers</span></span>
-|<span data-ttu-id="9b561-127">标头</span><span class="sxs-lookup"><span data-stu-id="9b561-127">Header</span></span>|<span data-ttu-id="9b561-128">值</span><span class="sxs-lookup"><span data-stu-id="9b561-128">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="59b3c-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="59b3c-126">Request headers</span></span>
+|<span data-ttu-id="59b3c-127">标头</span><span class="sxs-lookup"><span data-stu-id="59b3c-127">Header</span></span>|<span data-ttu-id="59b3c-128">值</span><span class="sxs-lookup"><span data-stu-id="59b3c-128">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9b561-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="9b561-129">Authorization</span></span>|<span data-ttu-id="9b561-130">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="9b561-130">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9b561-131">接受</span><span class="sxs-lookup"><span data-stu-id="9b561-131">Accept</span></span>|<span data-ttu-id="9b561-132">application/json</span><span class="sxs-lookup"><span data-stu-id="9b561-132">application/json</span></span>|
+|<span data-ttu-id="59b3c-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="59b3c-129">Authorization</span></span>|<span data-ttu-id="59b3c-130">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="59b3c-130">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="59b3c-131">接受</span><span class="sxs-lookup"><span data-stu-id="59b3c-131">Accept</span></span>|<span data-ttu-id="59b3c-132">application/json</span><span class="sxs-lookup"><span data-stu-id="59b3c-132">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9b561-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="9b561-133">Request body</span></span>
-<span data-ttu-id="9b561-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9b561-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="59b3c-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="59b3c-133">Request body</span></span>
+<span data-ttu-id="59b3c-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="59b3c-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9b561-135">响应</span><span class="sxs-lookup"><span data-stu-id="9b561-135">Response</span></span>
-<span data-ttu-id="9b561-136">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="9b561-136">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="59b3c-135">响应</span><span class="sxs-lookup"><span data-stu-id="59b3c-135">Response</span></span>
+<span data-ttu-id="59b3c-136">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="59b3c-136">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9b561-137">示例</span><span class="sxs-lookup"><span data-stu-id="9b561-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="59b3c-137">示例</span><span class="sxs-lookup"><span data-stu-id="59b3c-137">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9b561-138">请求</span><span class="sxs-lookup"><span data-stu-id="9b561-138">Request</span></span>
-<span data-ttu-id="9b561-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9b561-139">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="59b3c-138">请求</span><span class="sxs-lookup"><span data-stu-id="59b3c-138">Request</span></span>
+<span data-ttu-id="59b3c-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="59b3c-139">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ```
 
-### <a name="response"></a><span data-ttu-id="9b561-140">响应</span><span class="sxs-lookup"><span data-stu-id="9b561-140">Response</span></span>
-<span data-ttu-id="9b561-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9b561-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="59b3c-140">响应</span><span class="sxs-lookup"><span data-stu-id="59b3c-140">Response</span></span>
+<span data-ttu-id="59b3c-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="59b3c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

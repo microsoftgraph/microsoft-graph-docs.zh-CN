@@ -2697,39 +2697,6 @@ items:
                         href: api/intune-apps-mobilelobapp-list.md
                       - name: 获取
                         href: api/intune-apps-mobilelobapp-get.md
-                  - name: Office 客户端签入状态
-                    href: resources/intune-cirrus-officeclientcheckinstatus.md
-                  - name: Office 客户端配置
-                    href: resources/intune-cirrus-officeclientconfiguration.md
-                    items:
-                      - name: 列出
-                        href: api/intune-cirrus-officeclientconfiguration-list.md
-                      - name: 获取
-                        href: api/intune-cirrus-officeclientconfiguration-get.md
-                      - name: assign 操作
-                        href: api/intune-cirrus-officeclientconfiguration-assign.md
-                      - name: updatePriorities 操作
-                        href: api/intune-cirrus-officeclientconfiguration-updatepriorities.md
-                  - name: Office 客户端配置分配
-                    href: resources/intune-cirrus-officeclientconfigurationassignment.md
-                    items:
-                      - name: 列出
-                        href: api/intune-cirrus-officeclientconfigurationassignment-list.md
-                      - name: 获取
-                        href: api/intune-cirrus-officeclientconfigurationassignment-get.md
-                      - name: 创建
-                        href: api/intune-cirrus-officeclientconfigurationassignment-create.md
-                      - name: 删除
-                        href: api/intune-cirrus-officeclientconfigurationassignment-delete.md
-                      - name: 更新
-                        href: api/intune-cirrus-officeclientconfigurationassignment-update.md
-                  - name: Office 配置
-                    href: resources/intune-cirrus-officeconfiguration.md
-                    items: null
-                  - name: Office 配置分配目标
-                    href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
-                  - name: Office 配置组分配目标
-                    href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
                   - name: Office 产品 ID
                     href: resources/intune-apps-officeproductid.md
                   - name: Office 套件应用
@@ -2749,8 +2716,6 @@ items:
                     href: resources/intune-apps-officesuiteinstallprogressdisplaylevel.md
                   - name: Office 更新通道
                     href: resources/intune-apps-officeupdatechannel.md
-                  - name: Office 用户签入摘要
-                    href: resources/intune-cirrus-officeusercheckinsummary.md
                   - name: 生成的应用状态详情
                     href: resources/intune-apps-resultantappstatedetail.md
                   - name: Symantec 代码签名证书
@@ -2917,32 +2882,6 @@ items:
                         href: api/intune-apps-windowsmobilemsi-delete.md
                       - name: 更新
                         href: api/intune-apps-windowsmobilemsi-update.md
-                  - name: Windows Office 客户端配置
-                    href: resources/intune-cirrus-windowsofficeclientconfiguration.md
-                    items:
-                      - name: 列表
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
-                      - name: 获取
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
-                      - name: 创建
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-create.md
-                      - name: 删除
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
-                      - name: 更新
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
-                  - name: Windows Office 客户端安全配置
-                    href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
-                    items:
-                      - name: 列表
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
-                      - name: 获取
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
-                      - name: 创建
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md
-                      - name: 删除
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md
-                      - name: 更新
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md
                   - name: Windows 包信息
                     href: resources/intune-apps-windowspackageinformation.md
                   - name: Windows Phone 8.1 AppX
@@ -5782,12 +5721,51 @@ items:
                     href: resources/intune-deviceconfig-omasettingstring.md
                   - name: OMA 设置字符串 XML
                     href: resources/intune-deviceconfig-omasettingstringxml.md
+                  - name: On prem encrypted payload
+                    href: resources/intune-raimportcerts-onpremencryptedpayload.md
+                    items:
+                      - name: 列表
+                        href: api/intune-raimportcerts-onpremencryptedpayload-list.md
+                      - name: 获取
+                        href: api/intune-raimportcerts-onpremencryptedpayload-get.md
+                      - name: 创建
+                        href: api/intune-raimportcerts-onpremencryptedpayload-create.md
+                      - name: 删除
+                        href: api/intune-raimportcerts-onpremencryptedpayload-delete.md
+                      - name: 更新
+                        href: api/intune-raimportcerts-onpremencryptedpayload-update.md
                   - name: 操作系统版本范围
                     href: resources/intune-deviceconfig-operatingsystemversionrange.md
                   - name: 运算符
                     href: resources/intune-deviceconfig-operator.md
                   - name: 完美前向保密组
                     href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
+                  - name: Pfx 重新加密请求
+                    href: resources/intune-raimportcerts-pfxrecryptionrequest.md
+                    items:
+                      - name: 列表
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
+                      - name: 获取
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
+                      - name: 创建
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-create.md
+                      - name: 删除
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-delete.md
+                      - name: 更新
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-update.md
+                  - name: Pfx 用户证书
+                    href: resources/intune-raimportcerts-pfxusercertificate.md
+                    items:
+                      - name: 列表
+                        href: api/intune-raimportcerts-pfxusercertificate-list.md
+                      - name: 获取
+                        href: api/intune-raimportcerts-pfxusercertificate-get.md
+                      - name: 创建
+                        href: api/intune-raimportcerts-pfxusercertificate-create.md
+                      - name: 删除
+                        href: api/intune-raimportcerts-pfxusercertificate-delete.md
+                      - name: 更新
+                        href: api/intune-raimportcerts-pfxusercertificate-update.md
                   - name: Power 操作类型
                     href: resources/intune-deviceconfig-poweractiontype.md
                   - name: 预发布功能
@@ -6676,10 +6654,16 @@ items:
                   - name: 应用日志集请求
                     href: resources/intune-devices-applogcollectionrequest.md
                     items:
+                      - name: 列出
+                        href: api/intune-devices-applogcollectionrequest-list.md
                       - name: 获取
                         href: api/intune-devices-applogcollectionrequest-get.md
                       - name: 创建
                         href: api/intune-devices-applogcollectionrequest-create.md
+                      - name: 删除
+                        href: api/intune-devices-applogcollectionrequest-delete.md
+                      - name: 更新
+                        href: api/intune-devices-applogcollectionrequest-update.md
                       - name: createDownloadUrl 操作
                         href: api/intune-devices-applogcollectionrequest-createdownloadurl.md
                   - name: 应用日志解密算法
@@ -6727,8 +6711,6 @@ items:
                     href: resources/intune-auditing-auditproperty.md
                   - name: 审核资源
                     href: resources/intune-auditing-auditresource.md
-                  - name: Azure 广告注册状态
-                    href: resources/intune-devices-azureadregisteredstate.md
                   - name: 二进制管理条件表达式
                     href: resources/intune-fencing-binarymanagementconditionexpression.md
                   - name: 二进制管理条件表达式运算符类型
@@ -7558,6 +7540,71 @@ items:
                         href: api/intune-devices-malwarestateforwindowsdevice-delete.md
                       - name: 更新
                         href: api/intune-devices-malwarestateforwindowsdevice-update.md
+                  - name: 托管的设备
+                    href: resources/intune-devices-manageddevice.md
+                    items:
+                      - name: 获取
+                        href: api/intune-devices-manageddevice-get.md
+                      - name: 更新
+                        href: api/intune-devices-manageddevice-update.md
+                      - name: executeAction 操作
+                        href: api/intune-devices-manageddevice-executeaction.md
+                      - name: enableLostMode 操作
+                        href: api/intune-devices-manageddevice-enablelostmode.md
+                      - name: playLostModeSound 操作
+                        href: api/intune-devices-manageddevice-playlostmodesound.md
+                      - name: setDeviceName 操作
+                        href: api/intune-devices-manageddevice-setdevicename.md
+                      - name: activateDeviceEsim 操作
+                        href: api/intune-devices-manageddevice-activatedeviceesim.md
+                      - name: rotateFileVaultKey 操作
+                        href: api/intune-devices-manageddevice-rotatefilevaultkey.md
+                      - name: createDeviceLogCollectionRequest 操作
+                        href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
+                      - name: retire 操作
+                        href: api/intune-devices-manageddevice-retire.md
+                      - name: 擦除操作
+                        href: api/intune-devices-manageddevice-wipe.md
+                      - name: resetPasscode 操作
+                        href: api/intune-devices-manageddevice-resetpasscode.md
+                      - name: remoteLock 操作
+                        href: api/intune-devices-manageddevice-remotelock.md
+                      - name: requestRemoteAssistance 操作
+                        href: api/intune-devices-manageddevice-requestremoteassistance.md
+                      - name: disableLostMode 操作
+                        href: api/intune-devices-manageddevice-disablelostmode.md
+                      - name: locateDevice 操作
+                        href: api/intune-devices-manageddevice-locatedevice.md
+                      - name: bypassActivationLock 操作
+                        href: api/intune-devices-manageddevice-bypassactivationlock.md
+                      - name: rebootNow 操作
+                        href: api/intune-devices-manageddevice-rebootnow.md
+                      - name: shutDown 操作
+                        href: api/intune-devices-manageddevice-shutdown.md
+                      - name: recoverPasscode 操作
+                        href: api/intune-devices-manageddevice-recoverpasscode.md
+                      - name: cleanWindowsDevice 操作
+                        href: api/intune-devices-manageddevice-cleanwindowsdevice.md
+                      - name: logoutSharedAppleDeviceActiveUser 操作
+                        href: api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md
+                      - name: deleteUserFromSharedAppleDevice 操作
+                        href: api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md
+                      - name: syncDevice 操作
+                        href: api/intune-devices-manageddevice-syncdevice.md
+                      - name: windowsDefenderScan 操作
+                        href: api/intune-devices-manageddevice-windowsdefenderscan.md
+                      - name: windowsDefenderUpdateSignatures 操作
+                        href: api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md
+                      - name: updateWindowsDeviceAccount 操作
+                        href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
+                      - name: revokeAppleVppLicenses 操作
+                        href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
+                      - name: rotateBitLockerKeys 操作
+                        href: api/intune-devices-manageddevice-rotatebitlockerkeys.md
+                      - name: sendCustomNotificationToCompanyPortal 操作
+                        href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
+                      - name: triggerConfigurationManagerAction 操作
+                        href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
                   - name: 托管设备体系结构
                     href: resources/intune-devices-manageddevicearchitecture.md
                   - name: 托管设备清理设置
@@ -7798,6 +7845,8 @@ items:
                         href: api/intune-deviceintent-securitybaselinetemplate-update.md
                   - name: 共享 Apple 设备用户
                     href: resources/intune-devices-sharedappledeviceuser.md
+                  - name: Tuple_2操作type_collection_1执行顺序
+                    href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: 一元管理条件表达式
                     href: resources/intune-fencing-unarymanagementconditionexpression.md
                   - name: 一元管理条件表达式运算符类型
@@ -7934,6 +7983,19 @@ items:
                         href: api/intune-devices-userexperienceanalyticsdeviceperformance-update.md
                       - name: summarizeDevicePerformanceDevices
                         href: api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md
+                  - name: 用户体验分析设备分数
+                    href: resources/intune-devices-userexperienceanalyticsdevicescores.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-update.md
                   - name: 用户体验分析设备启动历史记录
                     href: resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md
                     items:
@@ -8113,8 +8175,34 @@ items:
                     href: resources/intune-devices-userexperienceanalyticssummarizedby.md
                   - name: 用户体验分析 Windows 10 设备摘要
                     href: resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
+                  - name: 用户体验分析从任何设备运行
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-update.md
                   - name: 用户体验分析从任意位置设备运行摘要
                     href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md
+                  - name: 用户体验分析从任何位置工作指标
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheremetric.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
                   - name: 变量管理条件表达式
                     href: resources/intune-fencing-variablemanagementconditionexpression.md
                   - name: Windows Autopilot 部署状态
@@ -9038,29 +9126,6 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Delete
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
-                  - name: 设备管理报告
-                    href: resources/intune-shared-devicemanagementreports.md
-                    items:
-                      - name: 获取
-                        href: api/intune-reporting-devicemanagementreports-get.md
-                      - name: 更新
-                        href: api/intune-reporting-devicemanagementreports-update.md
-                      - name: getDeviceNonComplianceReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md
-                      - name: getPolicyNonComplianceReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md
-                      - name: getPolicyNonComplianceMetadata 操作
-                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md
-                      - name: getPolicyNonComplianceSummaryReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md
-                      - name: getSettingNonComplianceReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md
-                      - name: getReportFilters 操作
-                        href: api/intune-reporting-devicemanagementreports-getreportfilters.md
-                      - name: getHistoricalReport 操作
-                        href: api/intune-reporting-devicemanagementreports-gethistoricalreport.md
-                      - name: getCachedReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getcachedreport.md
                   - name: 设备管理脚本
                     href: resources/intune-shared-devicemanagementscript.md
                     items:
@@ -9080,8 +9145,6 @@ items:
                         href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
                   - name: 设备平台类型
                     href: resources/intune-shared-deviceplatformtype.md
-                  - name: 设备类型
-                    href: resources/intune-shared-devicetype.md
                   - name: 支持
                     href: resources/intune-shared-enablement.md
                   - name: 注册可用性选项
@@ -9154,79 +9217,8 @@ items:
                     href: resources/intune-shared-macoslobappassignmentsettings.md
                   - name: macOS VPP 应用分配设置
                     href: resources/intune-shared-macosvppappassignmentsettings.md
-                  - name: 受管理设备
-                    href: resources/intune-shared-manageddevice.md
-                    items:
-                      - name: 列出
-                        href: api/intune-policyset-manageddevice-list.md
-                      - name: 获取
-                        href: api/intune-policyset-manageddevice-get.md
-                      - name: 创建
-                        href: api/intune-policyset-manageddevice-create.md
-                      - name: 删除
-                        href: api/intune-policyset-manageddevice-delete.md
-                      - name: 更新
-                        href: api/intune-policyset-manageddevice-update.md
-                      - name: executeAction 操作
-                        href: api/intune-devices-manageddevice-executeaction.md
-                      - name: enableLostMode 操作
-                        href: api/intune-devices-manageddevice-enablelostmode.md
-                      - name: playLostModeSound 操作
-                        href: api/intune-devices-manageddevice-playlostmodesound.md
-                      - name: setDeviceName 操作
-                        href: api/intune-devices-manageddevice-setdevicename.md
-                      - name: rotateFileVaultKey 操作
-                        href: api/intune-devices-manageddevice-rotatefilevaultkey.md
-                      - name: createDeviceLogCollectionRequest 操作
-                        href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
-                      - name: retire 操作
-                        href: api/intune-devices-manageddevice-retire.md
-                      - name: 擦除操作
-                        href: api/intune-devices-manageddevice-wipe.md
-                      - name: resetPasscode 操作
-                        href: api/intune-devices-manageddevice-resetpasscode.md
-                      - name: remoteLock 操作
-                        href: api/intune-devices-manageddevice-remotelock.md
-                      - name: requestRemoteAssistance 操作
-                        href: api/intune-devices-manageddevice-requestremoteassistance.md
-                      - name: disableLostMode 操作
-                        href: api/intune-devices-manageddevice-disablelostmode.md
-                      - name: locateDevice 操作
-                        href: api/intune-devices-manageddevice-locatedevice.md
-                      - name: bypassActivationLock 操作
-                        href: api/intune-devices-manageddevice-bypassactivationlock.md
-                      - name: rebootNow 操作
-                        href: api/intune-devices-manageddevice-rebootnow.md
-                      - name: shutDown 操作
-                        href: api/intune-devices-manageddevice-shutdown.md
-                      - name: recoverPasscode 操作
-                        href: api/intune-devices-manageddevice-recoverpasscode.md
-                      - name: cleanWindowsDevice 操作
-                        href: api/intune-devices-manageddevice-cleanwindowsdevice.md
-                      - name: logoutSharedAppleDeviceActiveUser 操作
-                        href: api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md
-                      - name: deleteUserFromSharedAppleDevice 操作
-                        href: api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md
-                      - name: syncDevice 操作
-                        href: api/intune-devices-manageddevice-syncdevice.md
-                      - name: windowsDefenderScan 操作
-                        href: api/intune-devices-manageddevice-windowsdefenderscan.md
-                      - name: windowsDefenderUpdateSignatures 操作
-                        href: api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md
-                      - name: updateWindowsDeviceAccount 操作
-                        href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
-                      - name: revokeAppleVppLicenses 操作
-                        href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
-                      - name: rotateBitLockerKeys 操作
-                        href: api/intune-devices-manageddevice-rotatebitlockerkeys.md
-                      - name: sendCustomNotificationToCompanyPortal 操作
-                        href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
-                      - name: triggerConfigurationManagerAction 操作
-                        href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
                   - name: 托管的设备所有者类型
                     href: resources/intune-shared-manageddeviceownertype.md
-                  - name: 管理代理类型
-                    href: resources/intune-shared-managementagenttype.md
                   - name: MDM Windows 信息保护策略
                     href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
                     items:

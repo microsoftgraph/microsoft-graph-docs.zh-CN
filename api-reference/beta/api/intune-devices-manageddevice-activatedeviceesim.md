@@ -1,0 +1,92 @@
+---
+title: activateDeviceEsim 操作
+description: 在设备上激活 eSIM。
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: apiPageType
+ms.openlocfilehash: 10b57e0a9c337f1c82cbc30547e57edd3c08f002
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868386"
+---
+# <a name="activatedeviceesim-action"></a><span data-ttu-id="284eb-103">activateDeviceEsim 操作</span><span class="sxs-lookup"><span data-stu-id="284eb-103">activateDeviceEsim action</span></span>
+
+<span data-ttu-id="284eb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="284eb-104">Namespace: microsoft.graph</span></span>
+
+> <span data-ttu-id="284eb-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="284eb-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="284eb-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="284eb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="284eb-107">在设备上激活 eSIM。</span><span class="sxs-lookup"><span data-stu-id="284eb-107">Activate eSIM on the device.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="284eb-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="284eb-108">Prerequisites</span></span>
+<span data-ttu-id="284eb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="284eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="284eb-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="284eb-111">Permission type</span></span>|<span data-ttu-id="284eb-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="284eb-112">Permissions (from least to most privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="284eb-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="284eb-113">Delegated (work or school account)</span></span>|<span data-ttu-id="284eb-114">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="284eb-114">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="284eb-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="284eb-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="284eb-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="284eb-116">Not supported.</span></span>|
+|<span data-ttu-id="284eb-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="284eb-117">Application</span></span>|<span data-ttu-id="284eb-118">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="284eb-118">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="284eb-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="284eb-119">HTTP Request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/managedDevices/{managedDeviceId}/activateDeviceEsim
+POST /deviceManagement/comanagedDevices/{managedDeviceId}/activateDeviceEsim
+POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice/activateDeviceEsim
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/activateDeviceEsim
+POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/deviceRunStates/{deviceComplianceScriptDeviceStateId}/managedDevice/activateDeviceEsim
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/activateDeviceEsim
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/activateDeviceEsim
+```
+
+## <a name="request-headers"></a><span data-ttu-id="284eb-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="284eb-120">Request headers</span></span>
+|<span data-ttu-id="284eb-121">标头</span><span class="sxs-lookup"><span data-stu-id="284eb-121">Header</span></span>|<span data-ttu-id="284eb-122">值</span><span class="sxs-lookup"><span data-stu-id="284eb-122">Value</span></span>|
+|:---|:---|
+|<span data-ttu-id="284eb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="284eb-123">Authorization</span></span>|<span data-ttu-id="284eb-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="284eb-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="284eb-125">接受</span><span class="sxs-lookup"><span data-stu-id="284eb-125">Accept</span></span>|<span data-ttu-id="284eb-126">application/json</span><span class="sxs-lookup"><span data-stu-id="284eb-126">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="284eb-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="284eb-127">Request body</span></span>
+<span data-ttu-id="284eb-128">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="284eb-128">In the request body, supply JSON representation of the parameters.</span></span>
+
+<span data-ttu-id="284eb-129">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="284eb-129">The following table shows the parameters that can be used with this action.</span></span>
+
+|<span data-ttu-id="284eb-130">属性</span><span class="sxs-lookup"><span data-stu-id="284eb-130">Property</span></span>|<span data-ttu-id="284eb-131">类型</span><span class="sxs-lookup"><span data-stu-id="284eb-131">Type</span></span>|<span data-ttu-id="284eb-132">说明</span><span class="sxs-lookup"><span data-stu-id="284eb-132">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="284eb-133">carrierUrl</span><span class="sxs-lookup"><span data-stu-id="284eb-133">carrierUrl</span></span>|<span data-ttu-id="284eb-134">String</span><span class="sxs-lookup"><span data-stu-id="284eb-134">String</span></span>|<span data-ttu-id="284eb-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="284eb-135">Not yet documented</span></span>|
+
+
+
+## <a name="response"></a><span data-ttu-id="284eb-136">响应</span><span class="sxs-lookup"><span data-stu-id="284eb-136">Response</span></span>
+<span data-ttu-id="284eb-137">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="284eb-137">If successful, this action returns a `204 No Content` response code.</span></span>
+
+## <a name="example"></a><span data-ttu-id="284eb-138">示例</span><span class="sxs-lookup"><span data-stu-id="284eb-138">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="284eb-139">请求</span><span class="sxs-lookup"><span data-stu-id="284eb-139">Request</span></span>
+<span data-ttu-id="284eb-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="284eb-140">Here is an example of the request.</span></span>
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/activateDeviceEsim
+
+Content-type: application/json
+Content-length: 55
+
+{
+  "carrierUrl": "https://example.com/carrierUrl/"
+}
+```
+
+### <a name="response"></a><span data-ttu-id="284eb-141">响应</span><span class="sxs-lookup"><span data-stu-id="284eb-141">Response</span></span>
+<span data-ttu-id="284eb-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="284eb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+``` http
+HTTP/1.1 204 No Content
+```
+
+
+
+
