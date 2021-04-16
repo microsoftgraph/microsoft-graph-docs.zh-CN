@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: dfabbed35d669fcf539c33b8ec64f39622f4c476
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8fa29dfc5d9a9bafc82ed791eb43c75549f69c31
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945067"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766558"
 ---
 # <a name="list-shares"></a>列出共享项
 命名空间：microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "50945067"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| PrinterShare.Read.All、PrinterShare.ReadWrite.All |
+|委派（工作或学校帐户）| PrinterShare.ReadBasic.All、PrinterShare.Read.All、PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 

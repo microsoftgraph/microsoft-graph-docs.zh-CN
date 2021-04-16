@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7adf522284be5778c927c0104889bc42a7674737
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a479aff38b24105e80d3fc0c3f098299b9eeafb4
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771783"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765879"
 ---
 # <a name="update-printer"></a>更新打印机
 命名空间：microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "50771783"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| Printer.ReadWrite.All、Printer.FullControl.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| Printer.ReadWrite.All |
+|Application| Printer.ReadWrite.All |
 
 >**注意：** 目前，只有没有物理设备的打印机可以使用应用程序权限进行更新。
 
@@ -48,7 +48,7 @@ PATCH /print/printers/{printerId}
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|Content-Type|application/json. Required.|
+|Content-type|`application/json` 使用委派权限时， `application/ipp` 或者 `application/json` 使用应用程序权限时。 必填。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -61,8 +61,8 @@ PATCH /print/printers/{printerId}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
-|location|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
-|displayName|字符串|打印机的名称。|
+|位置|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
+|displayName|String|打印机的名称。|
 
 ### <a name="application-permissions-and-json-payload"></a>应用程序权限和 JSON 有效负载
 在请求正文中， [提供应更新](../resources/printer.md) 的相关打印机字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 
@@ -73,7 +73,7 @@ PATCH /print/printers/{printerId}
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|与此打印机共享关联的打印机的功能。|
-|displayName|字符串|打印机的名称。|
+|displayName|String|打印机的名称。|
 |manufacturer|String|打印机的制造商。|
 |model|String|打印机的模型名称。|
 |状态|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
@@ -84,6 +84,11 @@ PATCH /print/printers/{printerId}
 使用应用程序权限，还可使用 IPP 负载中的 Internet 打印 (更新) 打印机。 在这种情况下，请求正文包含表示 [IPP](https://tools.ietf.org/html/rfc8010)编码中的 Printer Attributes 组的二进制流。
 
 客户端必须为一组 Printer 属性提供一个或多个值 (包括 [RFC8011 第 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 节中定义的明确允许的带外值) 作业模板属性 ("xxx-default"、"xxx-supported"和"xxx-ready"属性) 、 [第 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 节打印机说明属性以及打印机支持的任何属性扩展。 提供 (每个 Printer) 的值将替换 (Printer) 的对应 Printer 属性的值。 对于在 1setOf (可以有多个值) ，客户端提供的所有值将替换相应的 Printer 对象属性的所有值。
+
+> **注意：** 不要传递请求正文中的操作属性。 请求正文应仅包含打印机属性。
+
+
+> **注意：** 对于使用特定平台的打印机，它应满足该平台的要求。 例如，在 Windows 客户端上，打印机应根据 [一些功能](https://mopria.org) 规范指定视为必需的所有属性。 请注意，一些 SPECRIA 规范仅适用于 PAIDRIA 的付费成员。
 
 ## <a name="response"></a>响应
 

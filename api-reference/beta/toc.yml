@@ -364,7 +364,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -10059,7 +10059,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -11074,7 +11074,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Delete
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -11915,7 +11915,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: 注释
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -12300,8 +12300,12 @@ items:
                     href: api/reportroot-getteamsdeviceusageuserdetail.md
                   - name: 获取用户计数
                     href: api/reportroot-getteamsdeviceusageusercounts.md
+                  - name: 获取用户总数
+                    href: api/reportroot-getteamsdeviceusagetotalusercounts.md
                   - name: 获取分发用户计数
                     href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
+                  - name: 获取分发用户总数
+                    href: api/reportroot-getteamsdeviceusagedistributiontotalusercounts.md
               - name: Microsoft Teams 用户活动
                 href: resources/microsoft-teams-user-activity-reports.md
                 items:
@@ -12309,8 +12313,16 @@ items:
                     href: api/reportroot-getteamsuseractivityuserdetail.md
                   - name: 获取活动计数
                     href: api/reportroot-getteamsuseractivitycounts.md
+                  - name: 获取活动总数
+                    href: api/reportroot-getteamsuseractivitytotalcounts.md
                   - name: 获取用户计数
                     href: api/reportroot-getteamsuseractivityusercounts.md
+                  - name: 获取用户总数
+                    href: api/reportroot-getteamsuseractivitytotalusercounts.md
+                  - name: 获取分发用户计数
+                    href: api/reportroot-getteamsuseractivitydistributionusercounts.md
+                  - name: 获取分发用户总数
+                    href: api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
               - name: Outlook 活动
                 href: resources/email-activity-reports.md
                 items:
@@ -12709,7 +12721,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: Permissions
+              - name: 权限
                 items:
                   - name: 权限
                     href: resources/permission.md

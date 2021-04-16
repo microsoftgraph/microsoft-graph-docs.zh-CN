@@ -5,18 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 82848c5ea8427111b2d8b02c1886f3990faba79e
+ms.openlocfilehash: 25f907aa8c7e5b47960bb3a482b9745c488d16a9
 ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/15/2021
-ms.locfileid: "51836941"
+ms.locfileid: "51836982"
 ---
 # <a name="spaapplication-resource-type"></a>spaApplication 资源类型
 
 命名空间：microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定单页应用程序的设置。
 

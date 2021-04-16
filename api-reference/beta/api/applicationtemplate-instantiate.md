@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d0a3d39d7903b3d7870d5b71fa821bd7f7ad3b6b
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 95cc198cbe828e47070758560b97acf2296113e7
+ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473260"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51836883"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -116,50 +116,50 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-   "servicePrincipal": {
-      "accountEnabled": true,
-      "addIns": [
-        {
-          "id": "id-value",
-          "type": "type-value",
-          "properties": [
-        {
-          "key": "key-value",
-          "value": "value-value"
-        }
-          ]
-        }
+   "servicePrincipal":{
+      "accountEnabled":true,
+      "addIns":[
+         {
+            "id":"id-value",
+            "type":"type-value",
+            "properties":[
+               {
+                  "key":"key-value",
+                  "value":"value-value"
+               }
+            ]
+         }
       ],
-      "appDisplayName": "appDisplayName-value",
-      "appId": "appId-value",
-      "appOwnerOrganizationId": "appOwnerOrganizationId-value",
-      "appRoleAssignmentRequired": true
+      "appDisplayName":"appDisplayName-value",
+      "appId":"appId-value",
+      "appOwnerOrganizationId":"appOwnerOrganizationId-value",
+      "appRoleAssignmentRequired":true
    },
-   "application": {
-      "api": {
-        "acceptedAccessTokenVersion": 1,
-        "publishedPermissionScopes": [
-          {
-        "adminConsentDescription": "adminConsentDescription-value",
-        "adminConsentDisplayName": "adminConsentDisplayName-value",
-        "id": "id-value",
-        "isEnabled": true,
-        "type": "type-value",
-        "userConsentDescription": "userConsentDescription-value",
-        "userConsentDisplayName": "userConsentDisplayName-value",
-        "value": "value-value"
-          }
-        ]
+   "application":{
+      "api":{
+         "acceptedAccessTokenVersion":1,
+         "publishedPermissionScopes":[
+            {
+               "adminConsentDescription":"adminConsentDescription-value",
+               "adminConsentDisplayName":"adminConsentDisplayName-value",
+               "id":"id-value",
+               "isEnabled":true,
+               "type":"type-value",
+               "userConsentDescription":"userConsentDescription-value",
+               "userConsentDisplayName":"userConsentDisplayName-value",
+               "value":"value-value"
+            }
+         ]
       },
-      "allowPublicClient": true,
-      "applicationAliases": [
-        "applicationAliases-value"
+      "allowPublicClient":true,
+      "applicationAliases":[
+         "applicationAliases-value"
       ],
-      "createdDateTime": "datetime-value",
-      "installedClients": {
-        "redirectUrls": [
-          "redirectUrls-value"
-        ]
+      "createdDateTime":"datetime-value",
+      "installedClients":{
+         "redirectUrls":[
+            "redirectUrls-value"
+         ]
       }
    }
 }

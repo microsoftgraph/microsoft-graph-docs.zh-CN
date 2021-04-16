@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b8a2bc40920d7ae36df9a744c6b4c6396c3e05d7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6eeb6c421f677e31b68d9d5f7de38823883b04e7
+ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949576"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51836947"
 ---
 # <a name="list-organization"></a>列出组织
 
@@ -96,19 +96,19 @@ Content-length: 500
     {
       "assignedPlans": [
         {
-          "assignedDateTime": "2016-10-19T10:37:00Z",
-          "capabilityStatus": "capabilityStatus-value",
-          "service": "service-value",
-          "servicePlanId": "servicePlanId-value"
+          "assignedDateTime": "2017-07-29T02:16:28Z",
+          "capabilityStatus": "Enabled",
+          "service": "SharePoint",
+          "servicePlanId": "5dbe027f-2339-4123-9542-606e4d348a72"
         }
       ],
       "businessPhones": [
-        "businessPhones-value"
+        "8006427676"
       ],
-      "city": "city-value",
-      "country": "country-value",
-      "countryLetterCode": "countryLetterCode-value",
-      "displayName": "displayName-value"
+      "city": "redmond",
+      "country": null,
+      "countryLetterCode": "US",
+      "displayName": "Contoso"
     }
   ]
 }

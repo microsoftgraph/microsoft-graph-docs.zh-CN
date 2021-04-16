@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5891897fb76a356be577f242b1ae5e7648b0e8fb
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 34fe3ae80b34497cfe3313031cd1d3e2f5f7a91c
+ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473449"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51836961"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -18,7 +18,7 @@ ms.locfileid: "51473449"
 
 将 Azure AD 应用程序库中的应用程序实例添加到目录中。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -115,87 +115,89 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-   "servicePrincipal": {
-      "accountEnabled": true,
-      "addIns": [],
-      "alternativeNames": ["http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"],
-      "appDisplayName": "appDisplayName-value",
-      "appId": "appId-value",
-      "appOwnerOrganizationId": "appOwnerOrganizationId-value",
+   "servicePrincipal":{
+      "accountEnabled":true,
+      "addIns":[],
+      "alternativeNames":[
+         "http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"
+      ],
+      "appDisplayName":"appDisplayName-value",
+      "appId":"appId-value",
+      "appOwnerOrganizationId":"appOwnerOrganizationId-value",
       "appRoleAssignmentRequired":true,
-      "appRoles": [],
-      "displayName": "Display name",
-      "endpoints": [],
-      "homepage": null,
-      "id": "id-value",
-      "info": {
-        "termsOfServiceUrl": null,
-        "supportUrl": null,
-        "privacyStatementUrl": null,
-        "marketingUrl": null,
-        "logoUrl": null
+      "appRoles":[],
+      "displayName":"Display name",
+      "endpoints":[],
+      "homepage":null,
+      "id":"id-value",
+      "info":{
+         "termsOfServiceUrl":null,
+         "supportUrl":null,
+         "privacyStatementUrl":null,
+         "marketingUrl":null,
+         "logoUrl":null
       },
-      "keyCredentials": [],
-      "logoutUrl": null,
-      "oauth2PermissionScopes": [],
-      "passwordCredentials": [],
-      "publisherName": null,
-      "replyUrls": [],
-      "servicePrincipalNames": [],
-      "servicePrincipalType": null,
-      "tags": [],
-      "tokenEncryptionKeyId": null
+      "keyCredentials":[],
+      "logoutUrl":null,
+      "oauth2PermissionScopes":[],
+      "passwordCredentials":[],
+      "publisherName":null,
+      "replyUrls":[],
+      "servicePrincipalNames":[],
+      "servicePrincipalType":null,
+      "tags":[],
+      "tokenEncryptionKeyId":null
    },
-   "application": {
-            "id": "id-value",
-            "isFallbackPublicClient": null,
-            "appId": "appId-value",
-            "applicationTemplateId": null,
-            "identifierUris": [],
-            "createdDateTime": "2019-09-17T19:10:35.2742618Z",
-            "displayName": "Display name",
-            "isDeviceOnlyAuthSupported": null,
-            "groupMembershipClaims": null,
-            "optionalClaims": null,
-            "addIns": [],
-            "publisherDomain": "contoso.onmicrosoft.com",
-            "signInAudience": "AzureADMyOrg",
-            "tags": [],
-            "tokenEncryptionKeyId": null,
-            "api": {
-                    "requestedAccessTokenVersion": 2,
-                    "acceptMappedClaims": null,
-                    "knownClientApplications": [],
-                    "oauth2PermissionScopes": [],
-                    "preAuthorizedApplications": []
-            },
-            "appRoles": [],
-            "publicClient": {
-                    "redirectUris": []
-            },
-            "info": {
-                    "termsOfServiceUrl": null,
-                    "supportUrl": null,
-                    "privacyStatementUrl": null,
-                    "marketingUrl": null,
-                    "logoUrl": null
-            },
-            "keyCredentials": [],
-            "parentalControlSettings": {
-                    "countriesBlockedForMinors": [],
-                    "legalAgeGroupRule": "Allow"
-            },
-            "passwordCredentials": [],
-            "requiredResourceAccess": [],
-            "web": {
-                    "redirectUris": [],
-                    "homePageUrl": null,
-                    "logoutUrl": null,
-                    "implicitGrantSettings": {
-                            "enableIdTokenIssuance": false,
-                            "enableAccessTokenIssuance": false
-                    }
-            }
+   "application":{
+      "id":"id-value",
+      "isFallbackPublicClient":null,
+      "appId":"appId-value",
+      "applicationTemplateId":null,
+      "identifierUris":[],
+      "createdDateTime":"2019-09-17T19:10:35.2742618Z",
+      "displayName":"Display name",
+      "isDeviceOnlyAuthSupported":null,
+      "groupMembershipClaims":null,
+      "optionalClaims":null,
+      "addIns":[],
+      "publisherDomain":"contoso.onmicrosoft.com",
+      "signInAudience":"AzureADMyOrg",
+      "tags":[],
+      "tokenEncryptionKeyId":null,
+      "api":{
+         "requestedAccessTokenVersion":2,
+         "acceptMappedClaims":null,
+         "knownClientApplications":[],
+         "oauth2PermissionScopes":[],
+         "preAuthorizedApplications":[]
+      },
+      "appRoles":[],
+      "publicClient":{
+         "redirectUris":[]
+      },
+      "info":{
+         "termsOfServiceUrl":null,
+         "supportUrl":null,
+         "privacyStatementUrl":null,
+         "marketingUrl":null,
+         "logoUrl":null
+      },
+      "keyCredentials":[],
+      "parentalControlSettings":{
+         "countriesBlockedForMinors":[],
+         "legalAgeGroupRule":"Allow"
+      },
+      "passwordCredentials":[],
+      "requiredResourceAccess":[ ],
+      "web":{
+         "redirectUris":[],
+         "homePageUrl":null,
+         "logoutUrl":null,
+         "implicitGrantSettings":{
+            "enableIdTokenIssuance":false,
+            "enableAccessTokenIssuance":false
+         }
+      }
    }
 }
 ```
