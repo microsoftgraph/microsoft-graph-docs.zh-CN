@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8c7daf588424d81820d750ef477a8f0a0f1c282
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 30a20e96306752ff6b9fcda56d7f738a5056d90a
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51131020"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867096"
 ---
 # <a name="get-devicemanagementconfigurationpolicy"></a>获取 deviceManagementConfigurationPolicy
 
@@ -38,6 +38,7 @@ ms.locfileid: "51131020"
 -->
 ``` http
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
+GET /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -68,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{dev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 565
+Content-Length: 918
 
 {
   "value": {
@@ -85,7 +86,14 @@ Content-Length: 565
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
-    "isAssigned": true
+    "isAssigned": true,
+    "templateReference": {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+      "templateId": "Template Id value",
+      "templateFamily": "endpointSecurityAntivirus",
+      "templateDisplayName": "Template Display Name value",
+      "templateDisplayVersion": "Template Display Version value"
+    }
   }
 }
 ```

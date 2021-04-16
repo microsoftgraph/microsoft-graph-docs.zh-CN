@@ -1,22 +1,22 @@
 ---
 title: 更新 windowsUpdateState
 description: 更新 windowsUpdateState 对象的属性。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6505707c957ad890d07c9d418512b41e09ff5109
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eb09a2b39c5810385b51b25c00909ca6aa800f25
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443795"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866943"
 ---
 # <a name="update-windowsupdatestate"></a>更新 windowsUpdateState
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "50443795"
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象的 JSON 表示形式。
 
-下表显示创建 [windowsUpdateState 时所需的属性](../resources/intune-shared-windowsupdatestate.md)。
+下表显示创建 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -62,16 +62,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |userId|String|用户的 ID。|
 |deviceDisplayName|String|设备显示名称。|
 |userPrincipalName|String|用户主体名称。|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|String|设备的质量更新版本。|
+|状态|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|String|质量更新设备的版本。|
 |featureUpdateVersion|String|设备的当前功能更新版本。|
-|lastScanDateTime|DateTimeOffset|Windows 更新代理成功扫描的日期时间。|
+|lastScanDateTime|DateTimeOffset|Windows 更新代理执行成功扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|设备上次与 Microsoft Intune 同步的日期时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` 的 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新 `200 OK` 的 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象。
 
 ## <a name="example"></a>示例
 

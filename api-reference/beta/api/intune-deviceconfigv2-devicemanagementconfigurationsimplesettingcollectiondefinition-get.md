@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a15f4f1ed0e5b268dcd391ee430a2e0e4fd1e1a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c9374be881b13e4fec07c0ca6ad80d476391a88b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129165"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867901"
 ---
 # <a name="get-devicemanagementconfigurationsimplesettingcollectiondefinition"></a>获取 deviceManagementConfigurationSimpleSettingCollectionDefinition
 
@@ -37,6 +37,7 @@ ms.locfileid: "51129165"
 }
 -->
 ``` http
+GET /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
@@ -61,7 +62,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
+GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ### <a name="response"></a>响应
@@ -69,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{dev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9648
+Content-Length: 9876
 
 {
   "value": {
@@ -100,6 +101,12 @@ Content-Length: 9648
     "settingUsage": "configuration",
     "uxBehavior": "dropdown",
     "visibility": "settingsCatalog",
+    "referredSettingInformationList": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+        "settingDefinitionId": "Setting Definition Id value"
+      }
+    ],
     "id": "cb4abda1-bda1-cb4a-a1bd-4acba1bd4acb",
     "description": "Description value",
     "helpText": "Help Text value",

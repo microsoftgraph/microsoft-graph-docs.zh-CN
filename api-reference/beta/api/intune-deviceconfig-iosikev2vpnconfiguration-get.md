@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9c25b746be8da5c2b2da844ca05286938e28c15
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: caee2273886cb4734c0fdb051f05c5c3bde877f1
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51147859"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868013"
 ---
 # <a name="get-iosikev2vpnconfiguration"></a>获取 iosikEv2VpnConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6013
+Content-Length: 6087
 
 {
   "value": {
@@ -164,6 +164,8 @@ Content-Length: 6013
       "Excluded Domains value"
     ],
     "disableOnDemandUserOverride": true,
+    "disconnectOnIdle": true,
+    "disconnectOnIdleTimerInSeconds": 14,
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",

@@ -1,22 +1,22 @@
 ---
 title: 创建 mobileAppTroubleshootingEvent
-description: 介绍了创建适用于 Intune 的 Microsoft Graph API 的 mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
+description: 介绍适用于 Intune 的 Microsoft Graph API 的 Create mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
 localization_priority: Normal
-author: dougeby
+author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ba86467fc6b968fef5eadde48886b227772d352
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a42e9446892e247c47a073ce00f09102b773fb7f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217506"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866998"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>创建 mobileAppTroubleshootingEvent
 
 命名空间：microsoft.graph
 
-> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,11 +28,11 @@ ms.locfileid: "49217506"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-|&nbsp;&nbsp;**设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-|&nbsp;&nbsp;**设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -64,14 +64,14 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |applicationId|String|Intune 应用程序标识符。|
 |correlationId|String|用于跟踪服务中的故障的 ID。 |
 |eventDateTime|DateTimeOffset|事件发生的时间。 |
-|名|String|与疑难解答事件对应的事件名称。 可选。|
-|日志|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) 集合|Intune 移动应用程序故障排除历史记录项|
+|eventName|String|与疑难解答事件对应的事件名称。 可选。|
+|history|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) 集合|Intune 移动应用程序疑难解答历史记录项|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 |
 |userId|String|尝试注册设备的用户的标识符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) 对象。
 
 ## <a name="example"></a>示例
 

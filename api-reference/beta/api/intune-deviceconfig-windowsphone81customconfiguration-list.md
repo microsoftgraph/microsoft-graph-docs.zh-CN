@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 701abcdc79205fce83a2876a3711bbc1a2bccd80
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 2015a59af02199158972698c3076980910cfdc96
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129396"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867166"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>列出 windowsPhone81CustomConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1645
+Content-Length: 1717
 
 {
   "value": [
@@ -109,6 +109,7 @@ Content-Length: 1645
           "displayName": "Display Name value",
           "description": "Description value",
           "omaUri": "Oma Uri value",
+          "secretReferenceValueId": "Secret Reference Value Id value",
           "isEncrypted": true
         }
       ]

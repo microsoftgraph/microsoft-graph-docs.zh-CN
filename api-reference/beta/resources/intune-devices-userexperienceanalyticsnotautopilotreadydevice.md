@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af2a8acce3b98a0615ce8c9b5df86351c69ee903
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8166c5215ab83a8f756a13234bad9bf9121fdbd4
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159390"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868027"
 ---
 # <a name="userexperienceanalyticsnotautopilotreadydevice-resource-type"></a>userExperienceAnalyticsNotAutopilotReadyDevice 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "51159390"
 |managedBy|String|intune 设备的托管者。|
 |autoPilotRegistered|Boolean|intune 设备的 autopilotRegistered。|
 |autoPilotProfileAssigned|Boolean|intune 设备的 autopilotProfileAssigned。|
-|azureAdRegistered|[azureAdRegisteredState](../resources/intune-devices-azureadregisteredstate.md)|intune 设备的 azureAdRegistered。 可取值为：`no`、`yes`、`unknown`。|
+|azureAdRegistered|Boolean|intune 设备的 azureAdRegistered。|
 |azureAdJoinType|String|intune 设备的 azure Ad joinType。|
 
 ## <a name="relationships"></a>关系
@@ -67,7 +67,7 @@ ms.locfileid: "51159390"
   "managedBy": "String",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "String",
+  "azureAdRegistered": true,
   "azureAdJoinType": "String"
 }
 ```

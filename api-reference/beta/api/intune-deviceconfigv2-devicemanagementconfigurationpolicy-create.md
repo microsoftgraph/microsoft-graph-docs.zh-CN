@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94410b8e7b3259a74893e93b450486398c5bef13
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c61d5baf681db69601b3dd9f2e9a71a17b55b6ac
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129270"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867138"
 ---
 # <a name="create-devicemanagementconfigurationpolicy"></a>创建 deviceManagementConfigurationPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "51129270"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -38,6 +38,7 @@ ms.locfileid: "51129270"
 -->
 ``` http
 POST /deviceManagement/configurationPolicies
+POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -62,8 +63,9 @@ POST /deviceManagement/configurationPolicies
 |lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|
 |settingCount|Int32|设置数。 此属性是只读的。|
 |creationSource|String|策略创建源|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 |isAssigned|Boolean|策略分配状态。 此属性是只读的。|
+|templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|模板参考信息|
 
 
 
@@ -77,7 +79,7 @@ POST /deviceManagement/configurationPolicies
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies
 Content-type: application/json
-Content-length: 346
+Content-length: 685
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -90,7 +92,14 @@ Content-length: 346
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "isAssigned": true
+  "isAssigned": true,
+  "templateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "Template Id value",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Template Display Name value",
+    "templateDisplayVersion": "Template Display Version value"
+  }
 }
 ```
 
@@ -99,7 +108,7 @@ Content-length: 346
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 518
+Content-Length: 857
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -115,7 +124,14 @@ Content-Length: 518
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "isAssigned": true
+  "isAssigned": true,
+  "templateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "Template Id value",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Template Display Name value",
+    "templateDisplayVersion": "Template Display Version value"
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 393030dedc7d42a24bea6efbf196b96c97a0676c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5c82c283be59bc1d827c4276ad6a736cd636ee2e
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156287"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868055"
 ---
 # <a name="get-windowsqualityupdatecatalogitem"></a>获取 windowsQualityUpdateCatalogItem
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 354
+Content-Length: 416
 
 {
   "value": {
@@ -76,6 +76,7 @@ Content-Length: 354
     "id": "8eb831ba-31ba-8eb8-ba31-b88eba31b88e",
     "displayName": "Display Name value",
     "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+    "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
     "kbArticleId": "Kb Article Id value",
     "classification": "security",
     "isExpeditable": true

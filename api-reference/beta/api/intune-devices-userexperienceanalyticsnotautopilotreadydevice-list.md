@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75f747552f3ff080385862b3540cca36fc88ae4b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: aa0fffb7a5589d618c566b3845968a4f4ca6ae3f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159385"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867572"
 ---
 # <a name="list-userexperienceanalyticsnotautopilotreadydevices"></a>列出 userExperienceAnalyticsNotAutopilotReadyDevices
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsNot
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 548
+Content-Length: 547
 
 {
   "value": [
@@ -79,7 +79,7 @@ Content-Length: 548
       "managedBy": "Managed By value",
       "autoPilotRegistered": true,
       "autoPilotProfileAssigned": true,
-      "azureAdRegistered": "yes",
+      "azureAdRegistered": true,
       "azureAdJoinType": "Azure Ad Join Type value"
     }
   ]

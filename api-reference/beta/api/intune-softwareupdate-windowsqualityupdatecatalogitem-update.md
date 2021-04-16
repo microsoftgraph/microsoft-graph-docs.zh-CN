@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1263a65399dea4bbae5d326ca01dd0bf17c3facd
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5dcaadfea931ef5d6e9a1fce5bc9e948269d390b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156259"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868035"
 ---
 # <a name="update-windowsqualityupdatecatalogitem"></a>更新 windowsQualityUpdateCatalogItem
 
@@ -56,6 +56,7 @@ PATCH /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 |id|String|目录项 ID。继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |displayName|String|目录显示名称列表。 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|目录项的发布日期 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|endOfSupportDate|DateTimeOffset|目录项的上次支持日期 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |kbArticleId|String|知识库文章 ID|
 |classification|[windowsQualityUpdateClassification](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|质量更新的分类。 可取值为：`all`、`security`、`nonSecurity`。|
 |isExpeditable|Boolean|指示更新是否符合加速条件的标志|
@@ -72,12 +73,13 @@ PATCH /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 Content-type: application/json
-Content-length: 272
+Content-length: 332
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "kbArticleId": "Kb Article Id value",
   "classification": "security",
   "isExpeditable": true
@@ -89,13 +91,14 @@ Content-length: 272
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 321
+Content-Length: 381
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
   "id": "8eb831ba-31ba-8eb8-ba31-b88eba31b88e",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "kbArticleId": "Kb Article Id value",
   "classification": "security",
   "isExpeditable": true

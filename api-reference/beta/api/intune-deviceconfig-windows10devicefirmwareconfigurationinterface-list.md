@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5296561f83b2c2691333e6a22dbc4a49112d12c6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c536634d482c1a5fc88288a73ef214a26e84c119
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51127863"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867173"
 ---
 # <a name="list-windows10devicefirmwareconfigurationinterfaces"></a>列出 windows10DeviceFirmwareConfigurationInterfaces
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1670
+Content-Length: 1766
 
 {
   "value": [
@@ -109,7 +109,9 @@ Content-Length: 1670
       "microphonesAndSpeakers": "enabled",
       "radios": "enabled",
       "bootFromExternalMedia": "enabled",
-      "bootFromBuiltInNetworkAdapters": "enabled"
+      "bootFromBuiltInNetworkAdapters": "enabled",
+      "windowsPlatformBinaryTable": "enabled",
+      "simultaneousMultiThreading": "enabled"
     }
   ]
 }

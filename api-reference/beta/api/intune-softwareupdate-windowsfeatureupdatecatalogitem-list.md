@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c94ef46c45cb65d4901e9fc21aa3e3e258e14163
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e23993ccedff32e9ce50e4fa210468296bca1061
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134338"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866900"
 ---
 # <a name="list-windowsfeatureupdatecatalogitems"></a>列出 windowsFeatureUpdateCatalogItems
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 305
+Content-Length: 369
 
 {
   "value": [
@@ -74,6 +74,7 @@ Content-Length: 305
       "id": "cbd85729-5729-cbd8-2957-d8cb2957d8cb",
       "displayName": "Display Name value",
       "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+      "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
       "version": "Version value"
     }
   ]

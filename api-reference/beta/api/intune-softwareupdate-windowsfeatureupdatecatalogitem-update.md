@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 612fa821456eede187bb385c8e2ed091f08d8385
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 880e72173444ee7bdd0bb3b35779851251fde340
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134296"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866886"
 ---
 # <a name="update-windowsfeatureupdatecatalogitem"></a>更新 windowsFeatureUpdateCatalogItem
 
@@ -56,6 +56,7 @@ PATCH /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 |id|String|目录项 ID。继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |displayName|String|目录显示名称列表。 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|目录项的发布日期 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|endOfSupportDate|DateTimeOffset|目录项的上次支持日期 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |version|String|功能更新版本|
 
 
@@ -70,12 +71,13 @@ PATCH /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 Content-type: application/json
-Content-length: 203
+Content-length: 263
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateCatalogItem",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "version": "Version value"
 }
 ```
@@ -85,13 +87,14 @@ Content-length: 203
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 252
+Content-Length: 312
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateCatalogItem",
   "id": "cbd85729-5729-cbd8-2957-d8cb2957d8cb",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "version": "Version value"
 }
 ```
