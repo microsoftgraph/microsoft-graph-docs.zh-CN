@@ -1,22 +1,22 @@
 ---
 title: 列出 iosManagedAppProtections
 description: 列出 iosManagedAppProtection 对象的属性和关系。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db644a8a4de9daa731f1ae0970894fcc2df70364
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cc098e2f6ec42eb4846ac0c12524013927af263c
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200804"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863091"
 ---
 # <a name="list-iosmanagedappprotections"></a>列出 iosManagedAppProtections
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

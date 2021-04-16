@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab7d21e957c7a910e3eafd6e0738f7f8567c8299
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e0e9983b4af960a683e9507537c020d87b44b024
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128283"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864534"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>创建 androidWorkProfileCustomConfiguration
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对作用域用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -79,7 +79,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1280
+Content-length: 1348
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
@@ -117,6 +117,7 @@ Content-length: 1280
       "displayName": "Display Name value",
       "description": "Description value",
       "omaUri": "Oma Uri value",
+      "secretReferenceValueId": "Secret Reference Value Id value",
       "isEncrypted": true
     }
   ]
@@ -128,7 +129,7 @@ Content-length: 1280
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1452
+Content-Length: 1520
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
@@ -169,6 +170,7 @@ Content-Length: 1452
       "displayName": "Display Name value",
       "description": "Description value",
       "omaUri": "Oma Uri value",
+      "secretReferenceValueId": "Secret Reference Value Id value",
       "isEncrypted": true
     }
   ]

@@ -1,22 +1,22 @@
 ---
 title: 获取 deviceAppManagement
 description: 读取 deviceAppManagement 对象的属性和关系。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b09e8fd6a4bf72973f7fb55d2331785e0a9684be
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 798fa1eb36a9f9dd58aae6cae8dd4e4960b6299c
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49304040"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864611"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
 命名空间：microsoft.graph
 
-> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,17 +24,17 @@ ms.locfileid: "49304040"
 
 ## <a name="prerequisites"></a>先决条件
 
-若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意，相应的权限根据工作流的不同而有所不同。
+若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意，相应的权限因工作流而异。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 | 委派（工作或学校帐户） | |
-| &nbsp;&nbsp;**应用**、**图书**、**加入**、**合作伙伴集成** 或 **策略集** | Devicemanagementapps.readwrite.all、Devicemanagementapps.readwrite.all 和所有 ReadW |
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp;**应用****、书籍****、载入**、**合作伙伴集成** 或 **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.ReadW.All |
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| |
-| &nbsp;&nbsp;**应用**、**图书**、**加入**、**合作伙伴集成** 或 **策略集** | Devicemanagementapps.readwrite.all、Devicemanagementapps.readwrite.all 和所有 ReadW |
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp;**应用****、书籍****、载入**、**合作伙伴集成** 或 **策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.ReadW.All |
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

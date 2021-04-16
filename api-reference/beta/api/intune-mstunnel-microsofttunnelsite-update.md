@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0804e0c367e379a68305b7b8790d29405a3e235
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 74a0396c4627a8c7f4e496df78964de0ff2965cd
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152927"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863827"
 ---
 # <a name="update-microsofttunnelsite"></a>更新 microsoftTunnelSite
 
@@ -27,9 +27,9 @@ ms.locfileid: "51152927"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,7 +57,7 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 |displayName|String|MicrosoftTunnelSite 的显示名称|
 |说明|String|MicrosoftTunnelSite 的说明|
 |publicAddress|String|MicrosoftTunnelSite 的公共域名或 IP 地址|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 

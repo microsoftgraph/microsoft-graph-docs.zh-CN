@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f1c6b2d547375116a40d05b34a30786f4df3b1f
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e79b0e2576be6d83ed119e88f9af52e2825b474c
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51142861"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863546"
 ---
 # <a name="list-windowsappxs"></a>列出 windowsAppXs
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1921
+Content-Length: 1948
 
 {
   "value": [
@@ -117,7 +117,8 @@ Content-Length: 1921
         "v10_1809": true,
         "v10_1903": true,
         "v10_1909": true,
-        "v10_2004": true
+        "v10_2004": true,
+        "v10_2H20": true
       },
       "identityVersion": "Identity Version value"
     }

@@ -4,12 +4,12 @@ description: 列出用于 Intune 终结点的 Microsoft Graph API (REST) 定义�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6e7fc3fac47f6b2adecab2c61a6d04d1e069705e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f14fe5075e18a046698bc5725ccb9bb1d2618a89
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159317"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863939"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -31,7 +31,6 @@ ms.locfileid: "51159317"
 - [审核事件](intune-auditing-auditevent.md)
 - [审核属性](intune-auditing-auditproperty.md)
 - [审核资源](intune-auditing-auditresource.md)
-- [Azure 广告注册状态](intune-devices-azureadregisteredstate.md)
 - [二进制管理条件表达式](intune-fencing-binarymanagementconditionexpression.md)
 - [二进制管理条件表达式运算符类型](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [批量托管的设备操作结果](intune-devices-bulkmanageddeviceactionresult.md)
@@ -169,6 +168,7 @@ ms.locfileid: "51159317"
 - [登录用户](intune-devices-loggedonuser.md)
 - [丢失模式状态](intune-devices-lostmodestate.md)
 - [Windows 设备的恶意软件状态](intune-devices-malwarestateforwindowsdevice.md)
+- [托管设备](intune-devices-manageddevice.md)
 - [托管设备体系结构](intune-devices-manageddevicearchitecture.md)
 - [托管设备清理设置](intune-devices-manageddevicecleanupsettings.md)
 - [托管设备管理功能](intune-devices-manageddevicemanagementfeatures.md)
@@ -219,6 +219,7 @@ ms.locfileid: "51159317"
 - [安全基线状态摘要](intune-deviceintent-securitybaselinestatesummary.md)
 - [安全基线模板](intune-deviceintent-securitybaselinetemplate.md)
 - [共享 Apple 设备用户](intune-devices-sharedappledeviceuser.md)
+- [Tuple_2操作type_collection_1执行顺序](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [一元管理条件表达式](intune-fencing-unarymanagementconditionexpression.md)
 - [一元管理条件表达式运算符类型](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
@@ -234,6 +235,7 @@ ms.locfileid: "51159317"
 - [用户体验分析类别](intune-devices-userexperienceanalyticscategory.md)
 - [用户体验分析云管理设备摘要](intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)
 - [用户体验分析设备性能](intune-devices-userexperienceanalyticsdeviceperformance.md)
+- [用户体验分析设备分数](intune-devices-userexperienceanalyticsdevicescores.md)
 - [用户体验分析设备启动历史记录](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 - [用户体验分析设备启动过程](intune-devices-userexperienceanalyticsdevicestartupprocess.md)
 - [用户体验分析设备启动过程性能](intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)
@@ -255,7 +257,9 @@ ms.locfileid: "51159317"
 - [用户体验分析设置](intune-devices-userexperienceanalyticssettings.md)
 - [汇总的用户体验分析](intune-devices-userexperienceanalyticssummarizedby.md)
 - [用户体验分析 Windows 10 设备摘要](intune-devices-userexperienceanalyticswindows10devicessummary.md)
+- [用户体验分析从任何设备运行](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [用户体验分析从任意位置设备运行摘要](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
+- [用户体验分析从任何位置工作指标](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows Autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Windows Autopilot 注册类型](intune-troubleshooting-windowsautopilotenrollmenttype.md)

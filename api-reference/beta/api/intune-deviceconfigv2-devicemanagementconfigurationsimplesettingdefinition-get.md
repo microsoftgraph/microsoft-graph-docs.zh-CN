@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efeaceab7cea80f91b4a68df4ced835444e0779c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 925e449166895d9a1ec2e7de0de791cbc4f54cfc
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129102"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864289"
 ---
 # <a name="get-devicemanagementconfigurationsimplesettingdefinition"></a>获取 deviceManagementConfigurationSimpleSettingDefinition
 
@@ -37,6 +37,7 @@ ms.locfileid: "51129102"
 }
 -->
 ``` http
+GET /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
@@ -61,7 +62,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
+GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ### <a name="response"></a>响应
@@ -69,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{dev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9588
+Content-Length: 9816
 
 {
   "value": {
@@ -100,6 +101,12 @@ Content-Length: 9588
     "settingUsage": "configuration",
     "uxBehavior": "dropdown",
     "visibility": "settingsCatalog",
+    "referredSettingInformationList": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+        "settingDefinitionId": "Setting Definition Id value"
+      }
+    ],
     "id": "30dc0613-0613-30dc-1306-dc301306dc30",
     "description": "Description value",
     "helpText": "Help Text value",

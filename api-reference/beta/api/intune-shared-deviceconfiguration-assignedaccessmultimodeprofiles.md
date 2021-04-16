@@ -1,22 +1,22 @@
 ---
 title: assignedAccessMultiModeProfiles 操作
 description: 尚未记录
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed16d86975783eea6a85fdf2e67febc830b0b03d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 68a2f17e040c76ad51e244c8b385ae797f9aab23
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49232541"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864275"
 ---
 # <a name="assignedaccessmultimodeprofiles-action"></a>assignedAccessMultiModeProfiles 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

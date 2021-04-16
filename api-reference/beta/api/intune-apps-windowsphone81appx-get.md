@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89f6880cd531c8d6f68e47b54270535c58e031c6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ff1977620d998a03a8310660fbfa865ad151d99d
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51142756"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862916"
 ---
 # <a name="get-windowsphone81appx"></a>获取 windowsPhone81AppX
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1909
+Content-Length: 1934
 
 {
   "value": {
@@ -120,7 +120,8 @@ Content-Length: 1909
       "v10_1809": true,
       "v10_1903": true,
       "v10_1909": true,
-      "v10_2004": true
+      "v10_2004": true,
+      "v10_2H20": true
     },
     "phoneProductIdentifier": "Phone Product Identifier value",
     "phonePublisherId": "Phone Publisher Id value",

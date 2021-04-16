@@ -1,22 +1,22 @@
 ---
 title: 列出 deviceEnrollmentConfigurations
 description: 列出 deviceEnrollmentConfiguration 对象的属性和关系。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89b2186682f37ea671a9b39f6667f52b9dd5f3d5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a48df5bd802543a309da4c6a246d4eaadfea57f1
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295892"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864177"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>列出 deviceEnrollmentConfigurations
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

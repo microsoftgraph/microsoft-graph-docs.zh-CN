@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5de85dde2c9f2b5bc68e9644b96852bdbe880de
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 6faffa482a2fc79e653eedf8a70a041f264d7d49
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162226"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863609"
 ---
 # <a name="windowsupdatecatalogitem-resource-type"></a>windowsUpdateCatalogItem 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -34,6 +34,7 @@ Windows 更新目录项实体
 |id|String|目录项 ID。|
 |displayName|String|目录显示名称列表。|
 |releaseDateTime|DateTimeOffset|目录项的发布日期|
+|endOfSupportDate|DateTimeOffset|目录项的上次支持日期|
 
 ## <a name="relationships"></a>关系
 无
@@ -51,7 +52,8 @@ Windows 更新目录项实体
   "@odata.type": "#microsoft.graph.windowsUpdateCatalogItem",
   "id": "String (identifier)",
   "displayName": "String",
-  "releaseDateTime": "String (timestamp)"
+  "releaseDateTime": "String (timestamp)",
+  "endOfSupportDate": "String (timestamp)"
 }
 ```
 

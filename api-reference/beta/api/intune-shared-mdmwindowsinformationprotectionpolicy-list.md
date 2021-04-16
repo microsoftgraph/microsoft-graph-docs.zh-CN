@@ -1,22 +1,22 @@
 ---
 title: 列出 mdmWindowsInformationProtectionPolicies
 description: 列出 mdmWindowsInformationProtectionPolicy 对象的属性和关系。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f72f202e884689b756c26a04a7af18478446bd0c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f74cc570cccaa3206d81f82f22e07dc253d68dfb
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200769"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863035"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>列出 mdmWindowsInformationProtectionPolicies
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

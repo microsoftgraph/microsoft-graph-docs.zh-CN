@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 559dc38a5fc8d2e9b7142efb43d83a97f29db10c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8a3e2fc78712997eebd31a874363f000b4ad761e
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51141377"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863567"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>mobileAppSupportedDeviceType 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "51141377"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|类型|[deviceType](../resources/intune-shared-devicetype.md)|设备类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` `unknown` `cloudPC` 、|
+|类型|[deviceType](../resources/intune-shared-devicetype.md)|设备类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `linux` `blackberry` `palm` `unknown` `cloudPC` 、|
 |minimumOperatingSystemVersion|String|最低操作系统版本|
 |maximumOperatingSystemVersion|String|最大操作系统版本|
 

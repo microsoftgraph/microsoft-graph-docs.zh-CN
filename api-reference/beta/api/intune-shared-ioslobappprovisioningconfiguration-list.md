@@ -1,22 +1,22 @@
 ---
 title: 列出 iosLobAppProvisioningConfigurations
 description: 列出 iosLobAppProvisioningConfiguration 对象的属性和关系。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02f81a8c19f5656fed51074b0f0564c58c953666
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f2c22b61eb01c70bad6ecba6064e2d5d042ed61d
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49261984"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863172"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>列出 iosLobAppProvisioningConfigurations
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,11 +28,11 @@ ms.locfileid: "49261984"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -54,7 +54,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 对象集合。
 
 ## <a name="example"></a>示例
 

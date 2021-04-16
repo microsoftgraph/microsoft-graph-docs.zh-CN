@@ -1,22 +1,22 @@
 ---
 title: hasPayloadLinks 操作
 description: 尚未记录
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f9193c01019347d07b16c178296fc2944382652
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 51f83e508e5904ef57c1b7ce7fc70e5de22b9238
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299959"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863168"
 ---
 # <a name="haspayloadlinks-action"></a>hasPayloadLinks 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,14 +53,14 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/hasPayloadLinks
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |payloadIds|String collection|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) 集合。
+如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) 集合。
 
 ## <a name="example"></a>示例
 

@@ -1,22 +1,22 @@
 ---
-title: 了 getmobileappcount 函数
+title: getMobileAppCount 函数
 description: 尚未记录
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c85d46dc38cf4ef208f0a059721486a0cc501659
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e6b975137bff474366f083bb880e7ebaca33c2f8
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217534"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863834"
 ---
-# <a name="getmobileappcount-function"></a>了 getmobileappcount 函数
+# <a name="getmobileappcount-function"></a>getMobileAppCount 函数
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,10 +28,10 @@ ms.locfileid: "49217534"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,12 +54,12 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 
 |属性|类型|说明|
 |:---|:---|:---|
-|status|String|尚未记录|
+|状态|String|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 Int64。
+如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 Int64。
 
 ## <a name="example"></a>示例
 

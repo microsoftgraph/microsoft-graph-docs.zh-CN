@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 208237b047cae7f60204fc1517510a08a026f6f3
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 6f7bf7923fb65c182252c0bb2b412293d813427b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129809"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863518"
 ---
 # <a name="get-macoscompliancepolicy"></a>获取 macOSCompliancePolicy
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1334
+Content-Length: 1399
 
 {
   "value": {
@@ -97,6 +97,7 @@ Content-Length: 1334
     "systemIntegrityProtectionEnabled": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "advancedThreatProtectionRequiredSecurityLevel": "secured",
     "storageRequireEncryption": true,
     "gatekeeperAllowedAppSource": "macAppStore",
     "firewallEnabled": true,

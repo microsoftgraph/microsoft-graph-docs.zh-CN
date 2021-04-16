@@ -1,22 +1,22 @@
 ---
 title: syncMicrosoftStoreForBusinessApps 操作
 description: 将 Intune 帐户与适用于企业的 Microsoft Store 同步
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1be868185e634ba74f9f58f1ab4c388efcf5ed3
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b1bd3cc43c5b585cab0702540102cb3e560546a0
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474867"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864590"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>syncMicrosoftStoreForBusinessApps 操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph 中 /beta 版本的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,10 +27,10 @@ ms.locfileid: "50474867"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **载入** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **载入** |DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **载入** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **载入** |DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

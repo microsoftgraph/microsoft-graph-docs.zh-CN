@@ -1,22 +1,22 @@
 ---
 title: 删除 windowsUpdateState
 description: 删除 windowsUpdateState。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 725e751d17493ccadb7509fba8d21b9e8e7e2672
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 75212db281d3d14b27f69ff3e342f7af33ffb513
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295766"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863028"
 ---
 # <a name="delete-windowsupdatestate"></a>删除 windowsUpdateState
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

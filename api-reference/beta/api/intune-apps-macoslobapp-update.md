@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e2edf66f0e4cd68103b7a41d1de36f983ee0d66
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4ca98e294207217790c8c68288a8c3c57dfbc527
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51143953"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864107"
 ---
 # <a name="update-macoslobapp"></a>更新 macOSLobApp
 
@@ -71,7 +71,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String 集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -85,7 +85,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) 集合|此捆绑包中的应用列表|
 |identityVersion|String|标识版本。|
 |md5HashChunkSize|Int32|MD5 哈希的区块大小|
-|md5Hash|String collection|MD5 哈希代码|
+|md5Hash|String 集合|MD5 哈希代码|
 |ignoreVersionDetection|Boolean|控制应用的版本是否将用于检测安装在设备上的应用的布尔值。 对于使用自我更新功能 (macOS (LoB) 设置为 true。|
 |installAsManaged|Boolean|用于控制应用是否将安装为托管应用的布尔值 (macOS 11.0 和其他 PKG) 。|
 
@@ -101,7 +101,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1702
+Content-length: 1722
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -142,7 +142,8 @@ Content-length: 1702
     "v10_12": true,
     "v10_13": true,
     "v10_14": true,
-    "v10_15": true
+    "v10_15": true,
+    "v11_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -169,7 +170,7 @@ Content-length: 1702
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1874
+Content-Length: 1894
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -213,7 +214,8 @@ Content-Length: 1874
     "v10_12": true,
     "v10_13": true,
     "v10_14": true,
-    "v10_15": true
+    "v10_15": true,
+    "v11_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
