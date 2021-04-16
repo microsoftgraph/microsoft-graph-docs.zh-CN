@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19c998fb29ccfdeb1f3ab0423181c2f621f0da69
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 88569f50004cbf5ec79fa6fa81457990b0356bb1
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156392"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866004"
 ---
 # <a name="update-devicemanagementreports"></a>更新 deviceManagementReports
 
@@ -20,7 +20,7 @@ ms.locfileid: "51156392"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementReports 对象](../resources/intune-shared-devicemanagementreports.md) 的属性。
+更新 [deviceManagementReports 对象](../resources/intune-reporting-devicemanagementreports.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,9 +47,9 @@ PATCH /deviceManagement/reports
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceManagementReports 时所需的属性](../resources/intune-shared-devicemanagementreports.md)。
+下表显示创建 [deviceManagementReports 时所需的属性](../resources/intune-reporting-devicemanagementreports.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ PATCH /deviceManagement/reports
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象。
 
 ## <a name="example"></a>示例
 

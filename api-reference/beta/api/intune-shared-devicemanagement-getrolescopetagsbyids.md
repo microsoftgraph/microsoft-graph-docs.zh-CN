@@ -1,22 +1,22 @@
 ---
 title: getRoleScopeTagsByIds 函数
 description: 尚未记录
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a69999e5e84467c53320ee66bbba9f123732855
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 92491f3cfa3c3336a900b72353d47c2fe6d1140d
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49210290"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865962"
 ---
 # <a name="getrolescopetagsbyids-function"></a>getRoleScopeTagsByIds 函数
 
 命名空间：microsoft.graph
 
-> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -58,7 +58,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 
 
 ## <a name="response"></a>响应
-如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [roleScopeTag](../resources/intune-rbac-rolescopetag.md) 集合。
+如果成功，此函数在响应正文中返回 响应代码 `200 OK` 和 [roleScopeTag](../resources/intune-rbac-rolescopetag.md) 集合。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

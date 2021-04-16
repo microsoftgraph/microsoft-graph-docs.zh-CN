@@ -1,22 +1,22 @@
 ---
 title: 用户资源类型
 description: 表示 Azure Active Directory 用户对象。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 13d61dcf9c8ea8d851c4f9c7d30a616186ab29ea
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2b6903b9d6c81b05e667bfa35cb2ee4955e6f479
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155851"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864947"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,13 +25,13 @@ ms.locfileid: "50155851"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出用户](../api/intune-shared-user-list.md) 对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[获取用户](../api/intune-shared-user-get.md) 对象。|[user](../resources/intune-shared-user.md)|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[创建用户](../api/intune-shared-user-create.md) 对象。|[user](../resources/intune-shared-user.md)|创建新的 [user](../resources/intune-shared-user.md) 对象。|
+|[列出 users](../api/intune-shared-user-list.md) 对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
+|[获取 user](../api/intune-shared-user-get.md) 对象。|[user](../resources/intune-shared-user.md)|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
+|[创建 user](../api/intune-shared-user-create.md) 对象。|[user](../resources/intune-shared-user.md)|创建新的 [user](../resources/intune-shared-user.md) 对象。|
 |[删除用户](../api/intune-shared-user-delete.md)。|无|删除 [user](../resources/intune-shared-user.md)。|
-|[更新用户](../api/intune-shared-user-update.md) 对象。|[user](../resources/intune-shared-user.md)|更新 [user](../resources/intune-shared-user.md) 对象的属性。|
+|[更新 user](../api/intune-shared-user-update.md) 对象。|[user](../resources/intune-shared-user.md)|更新 [user](../resources/intune-shared-user.md) 对象的属性。|
 |**设备管理**|
-|[getLoggedOnManagedDevices 函数](../api/intune-shared-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-shared-manageddevice.md) 集合|尚未记录|
+|[getLoggedOnManagedDevices 函数](../api/intune-shared-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|尚未记录|
 |[removeAllDevicesFromManagement 操作](../api/intune-shared-user-removealldevicesfrommanagement.md)|无|停用该用户管理的所有设备|
 |**MAM (移动应用程序)**|
 |[getManagedAppDiagnosticStatuses 函数](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) 集合|获取给定用户的诊断验证状态。|
@@ -42,7 +42,7 @@ ms.locfileid: "50155851"
 |[exportDeviceAndAppManagementData 函数](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|尚未记录|
 |[getEffectiveDeviceEnrollmentConfigurations 函数](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合|尚未记录|
 |**疑难解答**|
-|[getManagedDevicesWithAppFailures 函数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|字符串集合|检索具有失败应用的设备列表。|
+|[getManagedDevicesWithAppFailures 函数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String 集合|检索具有失败应用的设备列表。|
 
 
 ## <a name="properties"></a>属性
@@ -56,7 +56,7 @@ ms.locfileid: "50155851"
 |关系|类型|说明|
 |:---|:---|:---|
 |**设备管理**|
-|managedDevices|[managedDevice](../resources/intune-shared-manageddevice.md) 集合|与用户关联的管理设备。|
+|managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|与用户关联的管理设备。|
 |**MAM (移动应用程序)**|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|属于用户的零个或多个托管的应用注册。|
 |**载入**|

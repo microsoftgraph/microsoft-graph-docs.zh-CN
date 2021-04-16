@@ -1,22 +1,22 @@
 ---
 title: 创建 windowsUpdateState
 description: 创建新的 windowsUpdateState 对象。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e53a4bdc6bb07c9761cabeff5eec9886130bc942
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bad8d5a7d91e90e7907227d4091ef7cb5fefb8da
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448009"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866186"
 ---
 # <a name="create-windowsupdatestate"></a>创建 windowsUpdateState
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "50448009"
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
+|应用程序||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -62,16 +62,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |userId|String|用户的 ID。|
 |deviceDisplayName|String|设备显示名称。|
 |userPrincipalName|String|用户主体名称。|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|String|设备的质量更新版本。|
+|状态|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|String|质量更新设备的版本。|
 |featureUpdateVersion|String|设备的当前功能更新版本。|
-|lastScanDateTime|DateTimeOffset|Windows 更新代理成功扫描的日期时间。|
+|lastScanDateTime|DateTimeOffset|Windows 更新代理执行成功扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|设备上次与 Microsoft Intune 同步的日期时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象。
 
 ## <a name="example"></a>示例
 

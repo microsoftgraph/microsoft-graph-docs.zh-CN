@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 737929f4526bb26a81cca1ab8fe72f762d79dcb6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 086be5d1ab1f9b01191f3b34749fc194436bde15
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152024"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864779"
 ---
 # <a name="querybyplatformtype-action"></a>queryByPlatformType 操作
 
@@ -58,7 +58,7 @@ POST /deviceManagement/resourceAccessProfiles/queryByPlatformType
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应 `200 OK` 正文中返回 响应iQueryable_1OfDeviceManagementResourceAccessProfileBase响应代码和响应代码。
+如果成功，此操作在响应 `200 OK` 正文中返回 响应 [iQueryable_1OfDeviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-iqueryable_1ofdevicemanagementresourceaccessprofilebase.md) 响应代码和响应代码。
 
 ## <a name="example"></a>示例
 

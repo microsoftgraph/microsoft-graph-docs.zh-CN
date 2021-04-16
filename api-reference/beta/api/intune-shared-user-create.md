@@ -1,22 +1,22 @@
 ---
 title: 创建用户
 description: 新建用户对象。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c440d25e39dd9b97ed1e993476357dba3ca56a5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 30af6d9478c6219fc9896dc09c9c74f6b6ceb1ae
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223778"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865374"
 ---
 # <a name="create-user"></a>创建用户
 
 命名空间：microsoft.graph
 
-> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,18 +24,18 @@ ms.locfileid: "49223778"
 
 ## <a name="prerequisites"></a>先决条件
 
-若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
+若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
@@ -66,10 +66,10 @@ POST /users
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户的唯一标识符。|
-|**入职**||
+|**上机**||
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
-请求正文属性支持根据上下文的不同而不同。
+请求正文属性支持因上下文而异。
 
 ## <a name="response"></a>响应
 
@@ -93,7 +93,7 @@ Content-length: 46
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 从实际调用返回的属性根据上下文的不同而不同。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 从实际调用返回的属性因上下文而异。
 
 ``` http
 HTTP/1.1 201 Created

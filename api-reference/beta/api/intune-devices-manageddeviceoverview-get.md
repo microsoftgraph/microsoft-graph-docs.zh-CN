@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83a51140931deb0c84fa3f37fc6ff33bf390b26e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: acacb98353dd9f37e236093b02158bc875aa32ae
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158246"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865262"
 ---
 # <a name="get-manageddeviceoverview"></a>获取 managedDeviceOverview
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1459
+Content-Length: 1487
 
 {
   "value": {

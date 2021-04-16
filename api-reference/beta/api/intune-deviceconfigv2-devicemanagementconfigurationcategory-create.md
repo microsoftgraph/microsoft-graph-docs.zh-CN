@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc4e659b9149347030344d10ecc02a4272c35832
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 454c6070f01fef3a23a1ddf8ab49e3f7a1db9e07
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51136893"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866284"
 ---
 # <a name="create-devicemanagementconfigurationcategory"></a>创建 deviceManagementConfigurationCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "51136893"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,7 +63,7 @@ POST /deviceManagement/configurationCategories
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`。|
 |parentCategoryId|String|类别的父 ID。|
 |rootCategoryId|String|类别的根 ID。|
-|childCategoryIds|String collection|类别的子 ID 列表。|
+|childCategoryIds|String 集合|类别的子 ID 列表。|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1f384f10f2b91e835628fd1d435bc5bf70a15ae
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3bc5f9222da502b19ccbb677fb57ba2f31e6ee28
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153018"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864821"
 ---
 # <a name="get-microsofttunnelserverlogcollectionresponse"></a>获取 microsoftTunnelServerLogCollectionResponse
 
@@ -27,9 +27,9 @@ ms.locfileid: "51153018"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

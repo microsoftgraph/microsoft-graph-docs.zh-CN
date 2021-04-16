@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b99635930039df180bf5caf8de86f01892748f80
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 0d0bc5f13e04576fe1095c352aa2c1063c5addf4
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51147929"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865696"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>创建 iosGeneralDeviceConfiguration
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对作用域用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -243,6 +243,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |sharedDeviceBlockTemporarySessions|Boolean|指示是否阻止 iOS 13.4 或更高版本上的共享 iPad (临时) 。|
 |appClipsBlocked|Boolean|阻止用户添加任何应用剪辑并删除设备上的任何现有应用剪辑。|
 |applePersonalizedAdsBlocked|Boolean|如果为 true，限制 Apple 个性化广告。 在 iOS 14 及更高版本中可用。|
+|nfcBlocked|Boolean|禁用 NFC 以防止设备与其他支持 NFC 的设备配对。 适用于运行 14.2 及更高版本的 iOS/iPadOS 设备。|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|在展台模式下运行的应用类型。 可取值为：`notConfigured`、`appStoreApp`、`managedApp`、`builtInApp`。|
 
 
@@ -257,7 +258,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10633
+Content-length: 10656
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -548,6 +549,7 @@ Content-length: 10633
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
+  "nfcBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -557,7 +559,7 @@ Content-length: 10633
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10805
+Content-Length: 10828
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -851,6 +853,7 @@ Content-Length: 10805
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
+  "nfcBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```

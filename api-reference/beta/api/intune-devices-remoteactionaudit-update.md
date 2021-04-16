@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02c2af28995b72246bc82f7af8d27e1f1171adc0
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: f419d781185cbb94e1f13e8f15feb2e8cfe251df
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51609498"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865234"
 ---
 # <a name="update-remoteactionaudit"></a>更新 remoteActionAudit
 
@@ -57,11 +57,11 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 |deviceDisplayName|String|Intune 设备名称。|
 |userName|String|\[已弃用 \] 请改为使用 InitiatedByUserPrincipalName。|
 |initiatedByUserPrincipalName|String|启动设备操作的用户，格式为 UPN。|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值是 `unknown` `factoryReset` `removeCompanyData` ：、、、、、、、、、、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` 。|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值是 `unknown` `factoryReset` `removeCompanyData` ：、、、、、、、、、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` `activateDeviceEsim` 。|
 |requestDateTime|DateTimeOffset|发出操作的时间（以 UTC 表示）。|
 |deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
 |deviceIMEI|String|设备的 IMEI。|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |managedDeviceId|String|操作目标。|
 
 

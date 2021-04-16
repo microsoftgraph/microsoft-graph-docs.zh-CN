@@ -1,22 +1,22 @@
 ---
 title: 更新用户
 description: 更新 user 对象的属性。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f981816f3f59e48e1f4a13d3c06bc442d190950d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3c50772b1c461c37b2152e9451bf6c746a8c8278
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303781"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865066"
 ---
 # <a name="update-user"></a>更新用户
 
 命名空间：microsoft.graph
 
-> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,13 +29,13 @@ ms.locfileid: "49303781"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
@@ -65,7 +65,7 @@ PATCH /users/{usersId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户的唯一标识符。|
+|id|String|用户的唯一标识符。|
 |**载入**|
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 

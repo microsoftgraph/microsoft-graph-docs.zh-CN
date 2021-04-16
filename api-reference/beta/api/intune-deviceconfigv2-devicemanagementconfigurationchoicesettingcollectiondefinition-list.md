@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b17ca5351e9d10bd7b5d3027a8cb4c9dc5bee005
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e0ed74ba259f1d9595a78b3b975619a5cbca32e8
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51136774"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865514"
 ---
 # <a name="list-devicemanagementconfigurationchoicesettingcollectiondefinitions"></a>列出 deviceManagementConfigurationChoiceSettingCollectionDefinitions
 
@@ -37,6 +37,7 @@ ms.locfileid: "51136774"
 }
 -->
 ``` http
+GET /deviceManagement/reusableSettings
 GET /deviceManagement/configurationSettings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
 ```
@@ -58,7 +59,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings
+GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 ```
 
 ### <a name="response"></a>响应
@@ -66,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10776
+Content-Length: 11016
 
 {
   "value": [
@@ -98,6 +99,12 @@ Content-Length: 10776
       "settingUsage": "configuration",
       "uxBehavior": "dropdown",
       "visibility": "settingsCatalog",
+      "referredSettingInformationList": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+          "settingDefinitionId": "Setting Definition Id value"
+        }
+      ],
       "id": "eb03fdca-fdca-eb03-cafd-03ebcafd03eb",
       "description": "Description value",
       "helpText": "Help Text value",

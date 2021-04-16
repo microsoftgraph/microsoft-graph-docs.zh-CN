@@ -1,22 +1,22 @@
 ---
 title: 获取 deviceConfiguration
 description: 读取 deviceConfiguration 对象的属性和关系。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa4b965530673d4242a6c58594f0ef86f749d510
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d218722f01726d0a11c13154b2ae8aca36b164fc
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49257462"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866404"
 ---
 # <a name="get-deviceconfiguration"></a>获取 deviceConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

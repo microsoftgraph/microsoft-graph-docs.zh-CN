@@ -1,22 +1,22 @@
 ---
 title: mobileApp 资源类型
 description: 包含 Intune 移动应用基属性的抽象类。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 767974865f108e49e58541afaf4d276f35495008
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fcc26a7bf0ea8f9cb6565a4bf01bed8ff55b5dcb
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266141"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864961"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "49266141"
 |[Get mobileApp](../api/intune-shared-mobileapp-get.md)|[mobileApp](../resources/intune-shared-mobileapp.md)|读取 [mobileApp](../resources/intune-shared-mobileapp.md) 对象的属性和关系。|
 |**应用**|
 |[分配操作](../api/intune-shared-mobileapp-assign.md)|无|尚未记录|
-|[了 getmobileappcount 函数](../api/intune-shared-mobileapp-getmobileappcount.md)|Int64|尚未记录|
+|[getMobileAppCount 函数](../api/intune-shared-mobileapp-getmobileappcount.md)|Int64|尚未记录|
 |[getTopMobileApps 函数](../api/intune-shared-mobileapp-gettopmobileapps.md)|[mobileApp](../resources/intune-shared-mobileapp.md) 集合|尚未记录|
 |[updateRelationships 操作](../api/intune-shared-mobileapp-updaterelationships.md)|无|尚未记录|
 |[getRelatedAppStates 函数](../api/intune-shared-mobileapp-getrelatedappstates.md)|[mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md) 集合|尚未记录|
@@ -39,9 +39,9 @@ ms.locfileid: "49266141"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|displayName|字符串|管理员提供或导入的应用标题。|
-|description|字符串|应用的说明。|
+|id|String|实体的键。|
+|displayName|String|管理员提供或导入的应用标题。|
+|说明|String|应用的说明。|
 |publisher|String|应用的发布者。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。|
@@ -49,14 +49,14 @@ ms.locfileid: "49266141"
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。|
 |privacyInformationUrl|String|隐私声明 Url。|
 |informationUrl|String|详细信息 Url。|
-|所有者|String|应用的所有者。|
+|owner|String|应用的所有者。|
 |developer|String|应用的开发者。|
 |notes|String|应用的备注。|
 |uploadState|Int32|上载状态。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 可取值为：`notPublished`、`processing`、`published`。|
-|isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。|
-|dependentAppCount|Int32|子应用程序的依赖项总数。|
+|isAssigned|Boolean|指示是否将应用分配给至少一个组的值。|
+|roleScopeTagIds|String 集合|此移动应用的范围标记 ID 列表。|
+|dependentAppCount|Int32|子应用具有的依赖项总数。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -65,9 +65,9 @@ ms.locfileid: "49266141"
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|移动应用安装摘要。|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) 集合|此移动应用程序的安装状态列表。|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 集合|此移动应用程序的安装状态列表。|
-|相互|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|此移动应用的关系列表。|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) 集合|此移动应用的安装状态列表。|
+|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 集合|此移动应用的安装状态列表。|
+|relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|此移动应用的关系列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 340e5fc55e85a58dab5b5d2805e94744c493d49d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 760631b115d6a458556b476b28f6f996e259d2bd
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158281"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866620"
 ---
 # <a name="wipe-action"></a>擦除操作
 
@@ -62,6 +62,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |keepEnrollmentData|布尔|尚未记录|
 |keepUserData|Boolean|尚未记录|
 |macOsUnlockCode|字符串|尚未记录|
+|persistEsimDataPlan|Boolean|尚未记录|
 |useProtectedWipe|Boolean|尚未记录|
 
 
@@ -77,12 +78,13 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 138
+Content-length: 170
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
   "macOsUnlockCode": "Mac Os Unlock Code value",
+  "persistEsimDataPlan": true,
   "useProtectedWipe": true
 }
 ```

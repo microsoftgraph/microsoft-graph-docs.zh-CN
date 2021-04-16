@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea8ead87af7e1f0b968ee9b85aaf0b7b4efbbcb6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 79f08f9d1b8b4696f3c122c653ef45e428bd88b1
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133386"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865787"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>windowsFeatureUpdateProfile 资源类型
 
@@ -41,8 +41,9 @@ Windows 功能更新配置文件
 |featureUpdateVersion|String|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
+|roleScopeTagIds|String 集合|此功能更新实体的范围标记列表。|
 |deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
+|endOfSupportDate|DateTimeOffset|功能更新的上次支持日期|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -70,7 +71,8 @@ Windows 功能更新配置文件
   "roleScopeTagIds": [
     "String"
   ],
-  "deployableContentDisplayName": "String"
+  "deployableContentDisplayName": "String",
+  "endOfSupportDate": "String (timestamp)"
 }
 ```
 

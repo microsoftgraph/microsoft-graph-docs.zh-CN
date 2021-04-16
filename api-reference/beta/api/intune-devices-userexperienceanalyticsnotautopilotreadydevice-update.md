@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f65af4455834540609854708078bd8b62cbb6a1d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 68defc17d3fff3a472c0333b03653fb09ffdfa4b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159382"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865521"
 ---
 # <a name="update-userexperienceanalyticsnotautopilotreadydevice"></a>更新 userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -61,7 +61,7 @@ PATCH /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice/{userExpe
 |managedBy|String|intune 设备的托管者。|
 |autoPilotRegistered|Boolean|intune 设备的 autopilotRegistered。|
 |autoPilotProfileAssigned|Boolean|intune 设备的 autopilotProfileAssigned。|
-|azureAdRegistered|[azureAdRegisteredState](../resources/intune-devices-azureadregisteredstate.md)|intune 设备的 azureAdRegistered。 可取值为：`no`、`yes`、`unknown`。|
+|azureAdRegistered|Boolean|intune 设备的 azureAdRegistered。|
 |azureAdJoinType|String|intune 设备的 azure Ad joinType。|
 
 
@@ -76,7 +76,7 @@ PATCH /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice/{userExpe
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice/{userExperienceAnalyticsNotAutopilotReadyDeviceId}
 Content-type: application/json
-Content-length: 422
+Content-length: 421
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -87,7 +87,7 @@ Content-length: 422
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
@@ -97,7 +97,7 @@ Content-length: 422
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 470
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -109,7 +109,7 @@ Content-Length: 471
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```

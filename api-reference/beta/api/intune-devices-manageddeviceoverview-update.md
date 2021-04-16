@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25cf395d46f2ff93d5919d2e8f798c381afdb389
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 99ff440d243403bea2af3065e9f8ca18daf56ec4
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158239"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865255"
 ---
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
 
@@ -74,7 +74,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1245
+Content-length: 1271
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -124,7 +124,7 @@ Content-length: 1245
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1358
+Content-Length: 1384
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",

@@ -4,12 +4,12 @@ description: 列出适用于 Intune 终结点的 Microsoft Graph API (REST) 支�
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 6c0b11847ff5ec0f4431a20e4ffa197ddd21dbcf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4de0e8477d7d20894981c0d0e68956d806d926c4
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440176"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866144"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -19,9 +19,9 @@ ms.locfileid: "50440176"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-这些终结点在多个适用于 Intune 工作流的 Microsoft Graph API 中使用。  使用给定资源所需的意图、目的和权限因基础调用的特定工作流和上下文而异。  此外，仅特定工作流支持某些方法、属性和操作。
+这些终结点在多个适用于 Intune 工作流的 Microsoft Graph API 中使用。  使用给定资源所需的意图、目的和权限因特定工作流和基础调用的上下文而异。  此外，某些方法、属性和操作仅受特定工作流支持。
 
-Intune 工作流之间共享以下 Graph 资源：
+以下 Graph 资源在 Intune 工作流之间共享：
 
 - [操作状态](intune-shared-actionstate.md)
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
@@ -80,6 +80,7 @@ Intune 工作流之间共享以下 Graph 资源：
 - [移动应用安装时间设置](intune-shared-mobileappinstalltimesettings.md)
 - [移动应用疑难解答事件](intune-shared-mobileapptroubleshootingevent.md)
 - [所有者类型](intune-shared-ownertype.md)
+- [策略平台类型](intune-shared-policyplatformtype.md)
 - [代理域](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [报表根目录](intune-shared-reportroot.md)
@@ -92,7 +93,7 @@ Intune 工作流之间共享以下 Graph 资源：
 - [使用者可选名称类型](intune-shared-subjectalternativenametype.md)
 - [目标托管应用配置](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
-- "用户"
+- [用户](intune-shared-user.md)
 - [VPP 令牌帐户类型](intune-shared-vpptokenaccounttype.md)
 - [VPP 令牌操作失败原因](intune-shared-vpptokenactionfailurereason.md)
 - [Win32 LOB 应用分配设置](intune-shared-win32lobappassignmentsettings.md)

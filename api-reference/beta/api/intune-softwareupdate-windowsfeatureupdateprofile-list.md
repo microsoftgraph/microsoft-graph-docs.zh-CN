@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78b8138707e59383a3dd9fabefe7220551794cb0
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ac15827b64891859ff66e9e234656f5671f470d2
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134261"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865017"
 ---
 # <a name="list-windowsfeatureupdateprofiles"></a>列出 windowsFeatureUpdateProfiles
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfil
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 594
+Content-Length: 658
 
 {
   "value": [
@@ -80,7 +80,8 @@ Content-Length: 594
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "deployableContentDisplayName": "Deployable Content Display Name value"
+      "deployableContentDisplayName": "Deployable Content Display Name value",
+      "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
     }
   ]
 }

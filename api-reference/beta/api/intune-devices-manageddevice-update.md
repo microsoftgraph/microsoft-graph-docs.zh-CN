@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9a4930b707a57434b1ef2b7d9b539d8e4277091
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: a36315855ead0e279c304e129dce133df62be864
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611893"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866613"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -63,25 +63,25 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
 |deviceName|String|设备的名称。 此属性是只读的。|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的硬向详细信息。  包括存储空间、制造商、序列号等信息。此属性为只读。|
-|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|设备的所有权。 可以是"公司"或"个人"。 可取值为：`unknown`、`company`、`personal`。|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是"公司"或"个人"。 可取值为：`unknown`、`company`、`personal`。|
+|ownerType|[ownerType](../resources/intune-shared-ownertype.md)|设备的所有权。 可以是"公司"或"个人"。 可取值为：`unknown`、`company`、`personal`。|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|设备的所有权。 可以是"公司"或"个人"。 可取值为：`unknown`、`company`、`personal`。|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) 集合|ComplexType deviceActionResult 对象的列表。 此属性是只读的。|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|设备的管理状态。 此属性是只读的。 可取值为：`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered`。|
 |enrolledDateTime|DateTimeOffset|设备的注册时间。 此属性是只读的。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。 此属性是只读的。|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|设备的机架类型。 此属性是只读的。 可取值为：`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown`。|
 |operatingSystem|String|设备的操作系统。 Windows、iOS 等。此属性为只读。|
-|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|设备平台。 此属性是只读的。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` `unknown` `cloudPC` 、|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备平台。 此属性是只读的。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `linux` `blackberry` `palm` `unknown` `cloudPC` 、|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 此属性是只读的。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
 |jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等此属性为只读。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`。|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|设备的管理通道。 Intune、EAS 等此属性为只读。 可能的值是：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`、`msSense`。|
 |osVersion|String|设备的操作系统版本。 此属性是只读的。|
 |easActivated|Boolean|设备是否已激活 Exchange ActiveSync。 此属性是只读的。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。 此属性是只读的。|
 |aadRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。|
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 可能的值是 `unknown` `userEnrollment` `deviceEnrollmentManager` ：、、、、、、、、、 `appleBulkWithUser` `appleBulkWithoutUser` `windowsAzureADJoin` `windowsBulkUserless` `windowsAutoEnrollment` `windowsBulkAzureDomainJoin` `windowsCoManagement` `windowsAzureADJoinUsingDeviceAuth` `appleUserEnrollment` `appleUserEnrollmentWithServiceAccount` `azureAdJoinUsingAzureVmExtension` `androidEnterpriseDedicatedDevice` `androidEnterpriseFullyManaged` `androidEnterpriseCorporateWorkProfile` 。|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 可能的值是 `unknown` `userEnrollment` `deviceEnrollmentManager` ：、、、、、、、、、 `appleBulkWithUser` `appleBulkWithoutUser` `windowsAzureADJoin` `windowsBulkUserless` `windowsAutoEnrollment` `windowsBulkAzureDomainJoin` `windowsCoManagement` `windowsAzureADJoinUsingDeviceAuth` `appleUserEnrollment` `appleUserEnrollmentWithServiceAccount` `azureAdJoinUsingAzureVmExtension` `androidEnterpriseDedicatedDevice` `androidEnterpriseFullyManaged` `androidEnterpriseCorporateWorkProfile` 。|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|指示是启用还是禁用丢失模式。 此属性是只读的。 可取值为：`disabled`、`enabled`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。 此属性是只读的。|
 |emailAddress|String|电子邮件 () 设备关联的用户的邮箱。 此属性是只读的。|
@@ -136,7 +136,6 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |skuFamily|String|设备 sku 系列|
 |skuNumber|Int32|设备 sku 号，另请参阅 https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo ：。 有效值为 0 到 2147483647。 此属性是只读的。|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|设备管理功能。 可取值为：`none`、`microsoftManagedDesktop`。|
-|chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) 集合|ChromeOS 设备的属性列表。|
 
 
 
@@ -150,7 +149,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 8344
+Content-length: 8557
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -194,7 +193,11 @@ Content-length: 8344
     "osBuildNumber": "Os Build Number value",
     "operatingSystemProductType": 10,
     "ipAddressV4": "Ip Address V4 value",
-    "subnetAddress": "Subnet Address value"
+    "subnetAddress": "Subnet Address value",
+    "esimIdentifier": "Esim Identifier value",
+    "systemManagementBIOSVersion": "System Management BIOSVersion value",
+    "tpmManufacturer": "Tpm Manufacturer value",
+    "tpmVersion": "Tpm Version value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -337,16 +340,7 @@ Content-length: 8344
   "joinType": "azureADJoined",
   "skuFamily": "Sku Family value",
   "skuNumber": 9,
-  "managementFeatures": "microsoftManagedDesktop",
-  "chromeOSDeviceInfo": [
-    {
-      "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
-      "name": "Name value",
-      "value": "Value value",
-      "valueType": "Value Type value",
-      "updatable": true
-    }
-  ]
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
 
@@ -355,7 +349,7 @@ Content-length: 8344
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8393
+Content-Length: 8606
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -400,7 +394,11 @@ Content-Length: 8393
     "osBuildNumber": "Os Build Number value",
     "operatingSystemProductType": 10,
     "ipAddressV4": "Ip Address V4 value",
-    "subnetAddress": "Subnet Address value"
+    "subnetAddress": "Subnet Address value",
+    "esimIdentifier": "Esim Identifier value",
+    "systemManagementBIOSVersion": "System Management BIOSVersion value",
+    "tpmManufacturer": "Tpm Manufacturer value",
+    "tpmVersion": "Tpm Version value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -543,16 +541,7 @@ Content-Length: 8393
   "joinType": "azureADJoined",
   "skuFamily": "Sku Family value",
   "skuNumber": 9,
-  "managementFeatures": "microsoftManagedDesktop",
-  "chromeOSDeviceInfo": [
-    {
-      "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
-      "name": "Name value",
-      "value": "Value value",
-      "valueType": "Value Type value",
-      "updatable": true
-    }
-  ]
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 258fe480a1154d12b3c6c7e716329bb704e09eef
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5d79700a8f042a4053457dea663fb13c35b9bea8
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51125917"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866193"
 ---
 # <a name="update-microsofttunnelconfiguration"></a>更新 microsoftTunnelConfiguration
 
@@ -27,9 +27,9 @@ ms.locfileid: "51125917"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,15 +58,15 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 |displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
 |说明|String|MicrosoftTunnelConfiguration 的说明|
 |network|String|将用于为客户端分配虚拟地址的子网|
-|dnsServers|String collection|客户端将使用的 DNS 服务器|
+|dnsServers|String 集合|客户端将使用的 DNS 服务器|
 |defaultDomainSuffix|String|客户端将使用的默认域附录|
-|routesInclude|String collection|服务器将路由的路由|
-|routesExclude|String collection|服务器不会路由的路由子集|
-|splitDNS|String collection|使用提供的 dns 服务器解析的域|
+|routesInclude|String 集合|服务器将路由的路由|
+|routesExclude|String 集合|服务器不会路由的路由子集|
+|splitDNS|String 集合|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
 |advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 

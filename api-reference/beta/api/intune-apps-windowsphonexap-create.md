@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3abaf501f704785f5e99b7ef051b3fc56224e58a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 563a85972e3b8639d6ca8b6357a4a8d0a0ee927c
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133360"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865766"
 ---
 # <a name="create-windowsphonexap"></a>创建 windowsPhoneXAP
 
@@ -69,7 +69,7 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String 集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -92,7 +92,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1340
+Content-length: 1363
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -134,7 +134,8 @@ Content-length: 1340
     "v10_1809": true,
     "v10_1903": true,
     "v10_1909": true,
-    "v10_2004": true
+    "v10_2004": true,
+    "v10_2H20": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"
@@ -146,7 +147,7 @@ Content-length: 1340
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1512
+Content-Length: 1535
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -191,7 +192,8 @@ Content-Length: 1512
     "v10_1809": true,
     "v10_1903": true,
     "v10_1909": true,
-    "v10_2004": true
+    "v10_2004": true,
+    "v10_2H20": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"

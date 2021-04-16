@@ -2,15 +2,15 @@
 title: deviceManagement 资源类型
 description: 'deviceManagement 资源表示其内容因工作流而异的容器，包括：  '
 localization_priority: Normal
-author: dougeby
+author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2673f7325d3be8285e01d75e5dbcc3b7cb691dda
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 73aa7497c6e519ca139856104a692c6f939fbf2f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611122"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866127"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -45,7 +45,7 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 - Windows 信息保护摘要
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-shared-devicemanagement-get.md)|读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。|
 |[更新 deviceManagement](../api/intune-shared-devicemanagement-update.md)|更新 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性。|
@@ -185,7 +185,7 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |roleDefinitions|[roleDefinition](../resources/intune-rbac-roledefinition.md) 集合|角色定义。|
 |roleScopeTags|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) 集合|角色作用域标记。|
 |**报告**|
-|reports|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|报告单一ton|
+|reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|报告单一ton|
 |**软件更新**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 集合|Windows 功能更新配置文件的集合|
 |**电信费用 (TEM)**|

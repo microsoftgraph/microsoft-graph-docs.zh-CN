@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3cdba685b834d75741a8da1932ff66f8365fde16
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e61ce4013d918ae90c6880f1355267fddef60073
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51151093"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865290"
 ---
 # <a name="get-macosvpnconfiguration"></a>获取 macOSVpnConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3210
+Content-Length: 3284
 
 {
   "value": {
@@ -164,6 +164,8 @@ Content-Length: 3210
       "Excluded Domains value"
     ],
     "disableOnDemandUserOverride": true,
+    "disconnectOnIdle": true,
+    "disconnectOnIdleTimerInSeconds": 14,
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",

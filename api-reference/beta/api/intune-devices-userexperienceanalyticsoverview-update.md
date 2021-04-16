@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dbe91b8e131e4379c8d658cea6420aad9fbf2c9e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c1df141edc551b62aea8c32534aa852490d9772f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51149973"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866704"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>更新 userExperienceAnalyticsOverview
 
@@ -66,7 +66,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 |bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"WorkFromAnywhere"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"ResourcePerformance"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|resourcePerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"ResourcePerformance"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
@@ -80,7 +80,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 999
+Content-length: 1005
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -109,7 +109,7 @@ Content-length: 999
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData"
 }
 ```
 
@@ -118,7 +118,7 @@ Content-length: 999
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1048
+Content-Length: 1054
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -148,7 +148,7 @@ Content-Length: 1048
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData"
 }
 ```
 

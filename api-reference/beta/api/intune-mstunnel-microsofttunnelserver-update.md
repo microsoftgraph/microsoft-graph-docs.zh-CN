@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67c06ad31e697eb5577991c994b69b93e129cc83
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8e878a43325dcad36f615f8eefc41e74f6a85fd3
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153074"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864856"
 ---
 # <a name="update-microsofttunnelserver"></a>更新 microsoftTunnelServer
 
@@ -27,9 +27,9 @@ ms.locfileid: "51153074"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

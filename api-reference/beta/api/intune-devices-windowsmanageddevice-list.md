@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5eb48d6410b72d0a3adb9f0a305612c17184a241
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 8567c4e7464ac7f34b065e42a21f72046842442e
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51609519"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865206"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9213
+Content-Length: 9442
 
 {
   "value": [
@@ -115,7 +115,11 @@ Content-Length: 9213
         "osBuildNumber": "Os Build Number value",
         "operatingSystemProductType": 10,
         "ipAddressV4": "Ip Address V4 value",
-        "subnetAddress": "Subnet Address value"
+        "subnetAddress": "Subnet Address value",
+        "esimIdentifier": "Esim Identifier value",
+        "systemManagementBIOSVersion": "System Management BIOSVersion value",
+        "tpmManufacturer": "Tpm Manufacturer value",
+        "tpmVersion": "Tpm Version value"
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",
@@ -258,16 +262,7 @@ Content-Length: 9213
       "joinType": "azureADJoined",
       "skuFamily": "Sku Family value",
       "skuNumber": 9,
-      "managementFeatures": "microsoftManagedDesktop",
-      "chromeOSDeviceInfo": [
-        {
-          "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
-          "name": "Name value",
-          "value": "Value value",
-          "valueType": "Value Type value",
-          "updatable": true
-        }
-      ]
+      "managementFeatures": "microsoftManagedDesktop"
     }
   ]
 }

@@ -1,22 +1,22 @@
 ---
 title: 获取 mobileApp
 description: 读取 mobileApp 对象的属性和关系。
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba82569d8a5f709e03ea14e4079212b0b26ad142
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a7067aa01a449367a95230c2b83ddfc6c3c65a45
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49261921"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865115"
 ---
 # <a name="get-mobileapp"></a>获取 mobileApp
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,11 +28,11 @@ ms.locfileid: "49261921"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **应用** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp; &nbsp; **应用程序** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求

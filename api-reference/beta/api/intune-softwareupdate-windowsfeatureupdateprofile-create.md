@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83decaf1a8e8721cce6b23480626dcabfcbb5f36
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3f4f727455c735e130eb39cf395d7f7a0ff35030
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134282"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865360"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>创建 windowsFeatureUpdateProfile
 
@@ -59,8 +59,9 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |featureUpdateVersion|String|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
+|roleScopeTagIds|String 集合|此功能更新实体的范围标记列表。|
 |deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
+|endOfSupportDate|DateTimeOffset|功能更新的上次支持日期|
 
 
 
@@ -74,7 +75,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles
 Content-type: application/json
-Content-length: 345
+Content-length: 405
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -84,7 +85,8 @@ Content-length: 345
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "deployableContentDisplayName": "Deployable Content Display Name value"
+  "deployableContentDisplayName": "Deployable Content Display Name value",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
 }
 ```
 
@@ -93,7 +95,7 @@ Content-length: 345
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 517
+Content-Length: 577
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -106,7 +108,8 @@ Content-Length: 517
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "deployableContentDisplayName": "Deployable Content Display Name value"
+  "deployableContentDisplayName": "Deployable Content Display Name value",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
 }
 ```
 

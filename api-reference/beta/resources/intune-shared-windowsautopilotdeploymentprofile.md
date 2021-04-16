@@ -1,22 +1,22 @@
 ---
 title: windowsAutopilotDeploymentProfile 资源类型
 description: Windows Autopilot 部署配置文件
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 196355a03a6c86a62765bc2b513670315d3311c2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 101575bca59db6a19153b26e54fc868b2e1b6472
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49255579"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864940"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -33,25 +33,25 @@ Windows Autopilot 部署配置文件
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|配置文件键|
+|id|String|配置文件密钥|
 |displayName|String|配置文件的名称|
-|description|String|配置文件的说明|
+|说明|String|配置文件的说明|
 |language|String|在设备上配置的语言|
 |createdDateTime|DateTimeOffset|配置文件创建时间|
 |lastModifiedDateTime|DateTimeOffset|配置文件上次修改时间|
-|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|"开箱即用体验" 设置|
+|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|开箱后体验设置|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|注册状态屏幕设置|
 |extractHardwareHash|Boolean|配置文件的 HardwareHash 提取|
-|deviceNameTemplate|String|用于命名 AutoPilot 设备的模板。 它可以是自定义文本，也可以包含设备的序列号或随机生成的数字。 模板生成的文本的总长度不能超过15个字符。|
+|deviceNameTemplate|String|用于命名 AutoPilot 设备的模板。 这可以是自定义文本，还可以包含设备的序列号或随机生成的数字。 模板生成的文本的总长度不能超过 15 个字符。|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|此配置文件适用的 AutoPilot 设备类型。 可取值为：`windowsPc`、`surfaceHub2`。|
-|enableWhiteGlove|Boolean|为配置文件启用 Autopilot 白色 Glove。|
+|enableWhiteGlove|Boolean|为配置文件启用 Autopilot White Glove。|
 |roleScopeTagIds|String 集合|配置文件的范围标记。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
-|**开户**|
-|assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|配置文件的已分配设备的列表。|
+|**注册**|
+|assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|配置文件的已分配设备列表。|
 |assignments|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) 集合|配置文件的组分配列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式

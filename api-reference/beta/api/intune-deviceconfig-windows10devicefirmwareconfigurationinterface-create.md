@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea749cf9499031a8b0746ce06b4f9070c2b4f444
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f0ce46b7ca60529859fc23516bf64db8a1a36191
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51147502"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866438"
 ---
 # <a name="create-windows10devicefirmwareconfigurationinterface"></a>创建 windows10DeviceFirmwareConfigurationInterface
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对作用域用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -72,6 +72,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |无线电广播|[enablement](../resources/intune-shared-enablement.md)|定义是否启用内置无线电（如 WIFI、NFC、Bluetooth等）。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |bootFromExternalMedia|[enablement](../resources/intune-shared-enablement.md)|定义是否允许用户从外部媒体启动。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-shared-enablement.md)|定义是否允许用户从内置网络适配器启动。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|windowsPlatformBinaryTable|[enablement](../resources/intune-shared-enablement.md)|定义是否允许用户启用 Windows 平台二进制表。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|simultaneousMultiThreading|[enablement](../resources/intune-shared-enablement.md)|定义是否允许用户启用同时多线程。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 
 
@@ -85,7 +87,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1309
+Content-length: 1397
 
 {
   "@odata.type": "#microsoft.graph.windows10DeviceFirmwareConfigurationInterface",
@@ -123,7 +125,9 @@ Content-length: 1309
   "microphonesAndSpeakers": "enabled",
   "radios": "enabled",
   "bootFromExternalMedia": "enabled",
-  "bootFromBuiltInNetworkAdapters": "enabled"
+  "bootFromBuiltInNetworkAdapters": "enabled",
+  "windowsPlatformBinaryTable": "enabled",
+  "simultaneousMultiThreading": "enabled"
 }
 ```
 
@@ -132,7 +136,7 @@ Content-length: 1309
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1481
+Content-Length: 1569
 
 {
   "@odata.type": "#microsoft.graph.windows10DeviceFirmwareConfigurationInterface",
@@ -173,7 +177,9 @@ Content-Length: 1481
   "microphonesAndSpeakers": "enabled",
   "radios": "enabled",
   "bootFromExternalMedia": "enabled",
-  "bootFromBuiltInNetworkAdapters": "enabled"
+  "bootFromBuiltInNetworkAdapters": "enabled",
+  "windowsPlatformBinaryTable": "enabled",
+  "simultaneousMultiThreading": "enabled"
 }
 ```
 
