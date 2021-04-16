@@ -3,18 +3,18 @@ title: 自定义 Microsoft Graph SDK 服务客户端
 description: 提供有关如何更改 Microsoft Graph SDK 服务客户端的默认行为的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: a9b2c4b1d77206e814dfb558481243a3da0c16d4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e666a9e976455f640d29edf2d460523935e53d97
+ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953346"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51836855"
 ---
-# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="54369-103">自定义 Microsoft Graph SDK 服务客户端</span><span class="sxs-lookup"><span data-stu-id="54369-103">Customize the Microsoft Graph SDK service client</span></span>
+# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="1f474-103">自定义 Microsoft Graph SDK 服务客户端</span><span class="sxs-lookup"><span data-stu-id="1f474-103">Customize the Microsoft Graph SDK service client</span></span>
 
-<span data-ttu-id="54369-104">Microsoft Graph SDK 客户端配置了一组默认的中间件，允许 SDK 与 Microsoft Graph 终结点进行通信。</span><span class="sxs-lookup"><span data-stu-id="54369-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="54369-105">此默认集是可自定义的，允许您更改客户端的行为。</span><span class="sxs-lookup"><span data-stu-id="54369-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="54369-106">例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。</span><span class="sxs-lookup"><span data-stu-id="54369-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="54369-107">可以添加和删除中间件组件。</span><span class="sxs-lookup"><span data-stu-id="54369-107">You can add and remove middleware components.</span></span> <span data-ttu-id="54369-108">需要注意的是，中间件组件的运行顺序非常重要。</span><span class="sxs-lookup"><span data-stu-id="54369-108">It is important to note that the order in which middleware components run is significant.</span></span>
+<span data-ttu-id="1f474-104">Microsoft Graph SDK 客户端配置了一组默认的中间件，允许 SDK 与 Microsoft Graph 终结点进行通信。</span><span class="sxs-lookup"><span data-stu-id="1f474-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="1f474-105">此默认集是可自定义的，允许您更改客户端的行为。</span><span class="sxs-lookup"><span data-stu-id="1f474-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="1f474-106">例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。</span><span class="sxs-lookup"><span data-stu-id="1f474-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="1f474-107">可以添加和删除中间件组件。</span><span class="sxs-lookup"><span data-stu-id="1f474-107">You can add and remove middleware components.</span></span> <span data-ttu-id="1f474-108">需要注意的是，中间件组件的运行顺序非常重要。</span><span class="sxs-lookup"><span data-stu-id="1f474-108">It is important to note that the order in which middleware components run is significant.</span></span>
 
-## <a name="c"></a>[<span data-ttu-id="54369-109">C#</span><span class="sxs-lookup"><span data-stu-id="54369-109">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="1f474-109">C#</span><span class="sxs-lookup"><span data-stu-id="1f474-109">C#</span></span>](#tab/csharp)
 
 ```csharp
 var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
@@ -38,7 +38,7 @@ var messages = await customGraphClient.Me.Messages.Request()
     .GetAsync();
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="54369-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="54369-110">TypeScript</span></span>](#tab/typeScript)
+## <a name="typescript"></a>[<span data-ttu-id="1f474-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="1f474-110">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Create a custom auth provider
@@ -69,7 +69,7 @@ let response: PageCollection = await client
   .get();
 ```
 
-### <a name="simpleauthproviderts"></a><span data-ttu-id="54369-111">SimpleAuthProvider.ts</span><span class="sxs-lookup"><span data-stu-id="54369-111">SimpleAuthProvider.ts</span></span>
+### <a name="simpleauthproviderts"></a><span data-ttu-id="1f474-111">SimpleAuthProvider.ts</span><span class="sxs-lookup"><span data-stu-id="1f474-111">SimpleAuthProvider.ts</span></span>
 
 ```typescript
 import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
@@ -87,7 +87,7 @@ export default class SimpleAuthProvider implements AuthenticationProvider {
 }
 ```
 
-### <a name="customlogginghandlerts"></a><span data-ttu-id="54369-112">CustomLoggingHandler.ts</span><span class="sxs-lookup"><span data-stu-id="54369-112">CustomLoggingHandler.ts</span></span>
+### <a name="customlogginghandlerts"></a><span data-ttu-id="1f474-112">CustomLoggingHandler.ts</span><span class="sxs-lookup"><span data-stu-id="1f474-112">CustomLoggingHandler.ts</span></span>
 
 ```typescript
 import { Context, Middleware } from "@microsoft/microsoft-graph-client";
@@ -105,7 +105,7 @@ export default class CustomLoggingHandler implements Middleware {
 }
 ```
 
-## <a name="java"></a>[<span data-ttu-id="54369-113">Java</span><span class="sxs-lookup"><span data-stu-id="54369-113">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="1f474-113">Java</span><span class="sxs-lookup"><span data-stu-id="1f474-113">Java</span></span>](#tab/java)
 
 ```java
 // you can configure any OkHttpClient option and add interceptors
@@ -118,7 +118,6 @@ final OkHttpClient httpClient = HttpClients.createDefault(authenticationProvider
 
 final GraphServiceClient graphServiceClient = GraphServiceClient
                 .builder()
-                .authenticationProvider(authenticationProvider)
                 .httpClient(httpClient)
                 .buildClient();
 ```
