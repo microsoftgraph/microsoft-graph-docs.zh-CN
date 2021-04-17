@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bd25a277732e1223aeec4883e6a928ec986d4cda
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 995312bd284c5e68d82e14caa377227a0b5d9bcc
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507990"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51837878"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var filterByCurrentUser = await graphClient.IdentityGovernance.AppConsent.AppConsentRequests["{appConsentRequest-id}"].UserConsentRequests
-    .FilterByCurrentUser(On.Reviewer)
+    .FilterByCurrentUser(ConsentRequestFilterByCurrentUserOptions.Reviewer)
     .Request()
     .Filter(" (status eq 'Completed')")
     .GetAsync();
