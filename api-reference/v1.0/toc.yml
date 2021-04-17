@@ -352,7 +352,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 笔记
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1315,7 +1315,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: 重定向
+                  - name: Redirect
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -1397,7 +1397,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -3864,7 +3864,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -4054,6 +4054,14 @@ items:
                         href: api/subscribedsku-get.md
           - name: 身份和登录
             items:
+              - name: 身份验证流策略
+                items:
+                  - name: 身份验证流策略
+                    href: resources/authenticationflowspolicy.md
+                  - name: 获取
+                    href: api/authenticationflowspolicy-get.md
+                  - name: 更新
+                    href: api/authenticationflowspolicy-update.md
               - name: 身份验证方法
                 items:
                   - name: 概述
@@ -4243,6 +4251,8 @@ items:
                     href: api/identityprovider-update.md
                   - name: 删除标识提供程序
                     href: api/identityprovider-delete.md
+                  - name: 列出可用的提供程序类型
+                    href: api/identityprovider-list-availableprovidertypes.md
               - name: 邀请管理器
                 href: resources/invitation.md
                 items:
@@ -4374,7 +4384,95 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: 更新
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
-          - name: 管控
+              - name: 用户流
+                items:
+                  - name: 自助注册用户流
+                    items:
+                      - name: 自助注册用户流
+                        href: resources/b2xidentityuserflow.md
+                      - name: 列出
+                        href: api/identitycontainer-list-b2xuserflows.md
+                      - name: 创建
+                        href: api/identitycontainer-post-b2xuserflows.md
+                      - name: 获取
+                        href: api/b2xidentityuserflow-get.md
+                      - name: 删除
+                        href: api/b2xidentityuserflow-delete.md
+                      - name: 列出标识提供程序
+                        href: api/b2xidentityuserflow-list-identityproviders.md
+                      - name: 添加标识提供者
+                        href: api/b2xidentityuserflow-post-identityproviders.md
+                      - name: 删除标识提供者
+                        href: api/b2xidentityuserflow-delete-identityproviders.md
+                      - name: 列表用户属性作业
+                        href: api/b2xidentityuserflow-list-userattributeassignments.md
+                      - name: 创建用户属性作业
+                        href: api/b2xidentityuserflow-post-userattributeassignments.md
+                      - name: 列出语言
+                        href: api/b2xidentityuserflow-list-languages.md
+                      - name: 获取 API 连接器配置
+                        href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+                      - name: 配置 API 连接器
+                        href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+                  - name: 用户流属性
+                    items:
+                      - name: 用户流属性
+                        href: resources/identityuserflowattribute.md
+                      - name: 列出
+                        href: api/identityuserflowattribute-list.md
+                      - name: 创建
+                        href: api/identityuserflowattribute-post.md
+                      - name: 获取
+                        href: api/identityuserflowattribute-get.md
+                      - name: 更新
+                        href: api/identityuserflowattribute-update.md
+                      - name: 删除
+                        href: api/identityuserflowattribute-delete.md
+                  - name: 用户流属性分配
+                    items:
+                      - name: 用户流属性分配
+                        href: resources/identityuserflowattributeassignment.md
+                      - name: 获取
+                        href: api/identityuserflowattributeassignment-get.md
+                      - name: 更新
+                        href: api/identityuserflowattributeassignment-update.md
+                      - name: 删除
+                        href: api/identityuserflowattributeassignment-delete.md
+                  - name: 用户流语言配置
+                    items:
+                      - name: 用户流语言配置
+                        href: resources/userflowlanguageconfiguration.md
+                      - name: 获取
+                        href: api/userflowlanguageconfiguration-get.md
+                      - name: 列出默认页面
+                        href: api/userflowlanguageconfiguration-list-defaultpages.md
+                      - name: 列表替代页面
+                        href: api/userflowlanguageconfiguration-list-overridespages.md
+                      - name: 用户流语言页面
+                        href: resources/userflowlanguagepage.md
+                      - name: 获取
+                        href: api/userflowlanguagepage-get.md
+                      - name: 更新
+                        href: api/userflowlanguagepage-put.md
+                      - name: 删除
+                        href: api/userflowlanguagepage-delete.md
+                  - name: API 连接器
+                    items:
+                      - name: API 连接器
+                        href: resources/identityapiconnector.md
+                      - name: 列出
+                        href: api/identityapiconnector-list.md
+                      - name: 创建
+                        href: api/identityapiconnector-create.md
+                      - name: 获取
+                        href: api/identityapiconnector-get.md
+                      - name: 更新
+                        href: api/identityapiconnector-update.md
+                      - name: 上载客户端证书
+                        href: api/identityapiconnector-uploadclientcertificate.md
+                      - name: 删除
+                        href: api/identityapiconnector-delete.md
+          - name: 治理
             items:
               - name: 许可请求
                 href: resources/consentrequests-root.md
@@ -5099,7 +5197,7 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
-              - name: Permissions
+              - name: 权限
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -5393,7 +5491,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: 获取托管内容
                 href: api/chatmessagehostedcontent-get.md
-          - name: 应用程序目录
+          - name: 应用
             items:
               - name: 目录中的应用程序
                 href: resources/teamsapp.md
@@ -5405,7 +5503,7 @@ items:
                 href: api/teamsapp-update.md
               - name: 从目录中删除应用
                 href: api/teamsapp-delete.md
-          - name: 应用
+          - name: 应用安装
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -5455,7 +5553,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
