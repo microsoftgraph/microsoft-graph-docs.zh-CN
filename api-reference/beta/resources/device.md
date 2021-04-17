@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e4bdbc361de50a4d261596c6b7b4f0c070f2a299
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 626d72434194f89842b394ac8b6ac51f5b1ab492
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957044"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882213"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -30,8 +30,8 @@ ms.locfileid: "50957044"
 |[列出设备](../api/device-list.md) | [设备](device.md) 集合| 检索目录中的注册设备列表。 |
 |[更新设备](../api/device-update.md) | [设备](device.md)  |更新设备对象的属性。 |
 |[删除设备](../api/device-delete.md) | 无 |删除设备对象。 |
-|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其直接成员组。 |
-|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其中一个成员的组。 此操作是可传递的。 |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备是其直接成员组。 |
+|[列出 transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备是其中一个成员的组。 此操作是可传递的。 |
 |[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) 集合| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
 |[列表 usageRights](../api/device-list-usagerights.md) | [usageRight](usageright.md) 集合 | 获取授予设备的使用权限的集合。|
@@ -73,8 +73,8 @@ ms.locfileid: "50957044"
 |physicalIds|String collection| 仅供内部使用。 不可为 null。 |
 |profileType|String|设备的配置文件类型。 可能的值 `RegisteredDevice` ： (默认值 `SecureVM`) 、、、、。 `Printer` `Shared` `IoT`|
 |registrationDateTime|DateTimeOffset|注册设备的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|systemLabels|String collection| 系统应用于设备的标签列表。 |
-|hostnames|String collection| 设备的 hostNames 列表。|
+|systemLabels|String 集合| 系统应用于设备的标签列表。 |
+|hostnames|String 集合| 设备的 hostNames 列表。|
 |trustType|String| 加入设备的信任类型。 只读。 可能的值： (表示自带的个人设备) 、 (仅加入云的设备) 、 (加入 Azure AD) 的加入本地域 `Workplace`  `AzureAd` `ServerAd` 的设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |
 |name| String | 设备的友好名称。 仅在用户使用 Microsoft 帐户作为 Project Rome 的一部分登录时返回。 |
 |状态 | String| 设备是 `online` `offline` 或 。 仅在用户使用 Microsoft 帐户作为 Project Rome 的一部分登录时返回。 |
@@ -86,11 +86,13 @@ ms.locfileid: "50957044"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
+| 命令 | [命令](command.md) 集合 | 发送到此设备的命令集。|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
+|memberOf|[directoryObject](directoryobject.md) 集合|此设备是其中一个成员的组。 只读。 可为 Null。|
 |registeredOwners|[directoryObject](directoryobject.md) 集合| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 Null。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 Null。|
-| 命令 | [命令](command.md) 集合 | 发送到此设备的命令集|
-|usageRight|[usageRight](usageright.md) 集合|表示已授予设备的使用权限。 |
+|transitiveMemberOf |[directoryObject](directoryobject.md) 集合| 此设备是其中一个成员的组。 此操作是可传递的。 |
+|usageRights|[usageRight](usageright.md) 集合|表示已授予设备的使用权限。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

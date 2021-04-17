@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: ebb237ec12d7f5526133e96d25652f5191d0fa23
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f2eeed42a528ea59a2edd1ac0d117bb82a3b2777
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473785"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882234"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -56,7 +56,7 @@ ms.locfileid: "51473785"
 
 |Member|
 |:---|
-|用户|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState 值
@@ -350,7 +350,7 @@ ms.locfileid: "51473785"
 |Member|
 |:---|
 |signin|
-|用户|
+|user|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>riskDetectionTimingType 值
@@ -653,10 +653,10 @@ ms.locfileid: "51473785"
 | doNotForward
 | followUp
 | fyi
-| 转发
+| forward
 | noResponseNecessary
 | 阅读
-| 回复
+| reply
 | replyToAll
 | review
 
@@ -1167,7 +1167,7 @@ ms.locfileid: "51473785"
 | 成员        | 值 | 说明              |
 |:--------------|:------|:-------------------------|
 | undefined     | 0     | 尚不知道。            |
-| 用户          | 1     | 用户提交。         |
+| user          | 1     | 用户提交。         |
 | administrator | 2     | 租户管理员提交。 |
 
 ### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
@@ -1358,6 +1358,49 @@ ms.locfileid: "51473785"
 |fit|
 |无|
 |unknownFutureValue|
+
+### <a name="userflowtype-values"></a>userFlowType 值
+
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwner
+| unknownFutureValue
+
+### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType 值
+
+| Member                |
+|:----------------------|
+| string                |
+| boolean               |
+| int64                 |
+| stringCollection      |
+| dateTime              |
+| unknownFutureValue    |
+
+### <a name="identityuserflowattributetype-values"></a>identityUserFlowAttributeType 值
+
+| Member                |
+|:----------------------|
+| builtIn               |
+| custom                |
+| 必需              |
+| unknownFutureValue    |
+
+### <a name="identityuserflowattributeinputtype-values"></a>identityUserFlowAttributeInputType 值
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
 
 ### <a name="teamworkactivitytopicsource-values"></a>teamworkActivityTopicSource 值 
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5d45ab0b1c315793bffd376d90fb22dc175886e5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c97aa57415747fc3b3f44b8fffccc9620a639df1
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434277"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882584"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2b6794d9aa4955b5b2260549641e4f7530c23e2a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c03d1a47925456038ebaf24b96d93e73d844f16c
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944848"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882192"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
@@ -55,7 +55,7 @@ ms.locfileid: "50944848"
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 
 ```json

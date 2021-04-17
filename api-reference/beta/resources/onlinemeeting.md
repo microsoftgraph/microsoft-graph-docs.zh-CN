@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 20008637c267051749e98e420ee2378861414b5e
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 3e1082c048c069698e4f48989bdbab28c186bf26
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869993"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882206"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -51,6 +51,7 @@ ms.locfileid: "51869993"
 | joinWebUrl            | String                                        | 联机会议加入 URL。 只读。                                                                                                                                                                                                              |
 | joinInformation       | [itemBody](itembody.md)                       | 在"Accept-Language"中指定的语言和区域设置变量中的联接信息请求 HTTP 标头。 只读                                                                                                                                       |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                                                                                                                                                                                                  |
+|meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | 安排的会议的与会者报告。 只读。 |
 | participants          | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。                                                                                                                                                        |
 | recording             | Stream                                        | 录制实时事件的内容流。 只读。                                                                                                                                                                                             |
 | startDateTime         | 日期时间                                      | 会议开始时间（UTC）。                                                                                                                                                                                                                              |

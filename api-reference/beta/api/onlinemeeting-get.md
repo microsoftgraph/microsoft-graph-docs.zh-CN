@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ca2ef5d4dde7d6364ec4646721c1ebc1801565a7
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 44996342ee74e29cb6aef5834e930bfdf24ddb89
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870105"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882332"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -24,12 +24,14 @@ ms.locfileid: "51870105"
 - 使用[VideoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
 - 使用 `/attendeeReport` 路径获取实时事件的与会者报告，如示例 [4 所示](#example-4-retrieve-the-attendee-report-of-a-live-event)。
 - 使用 `/recording` 和 `/alternativeRecording` 路径获取实时事件的录制，如示例 [5 所示](#example-5-retrieve-the-recording-of-a-live-event)。
+- 使用 `/meetingAttendanceReport` 路径获取计划会议的会议出席报告，如示例 [6 所示](#example-6-retrieve-the-attendance-report-of-a-meeting)。
 
 > [!NOTE]
->- 目前，参与者报告和录制仅适用于实时事件。
->- 只有事件组织者可以访问与会者报告和录制。
->- 参与者报告和录制仅在实时事件结束时可用。
->- 响应中的下载 `302 Found` [链接](#example-4-retrieve-the-attendee-report-of-a-live-event) 将在 **60** 秒后过期。
+>- 会议与会者报告可用于实时事件外的会议，并且仅在会议结束后可用。
+>- 只有会议组织者可以访问会议出席报告。
+>- 录制和与会者报告仅适用于实时事件，并且仅在实时事件结束时可用。
+>- 只有实时事件组织者可以访问与会者报告和录制。
+>- 实时事件参与者报告的下载链接和录制将在 60 秒后过期。
 
 ## <a name="permissions"></a>权限
 
@@ -82,6 +84,12 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
+```
+
+若要获取具有委派权限的会议的与会者报告，请执行以下操作：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
 > [!NOTE]
@@ -444,3 +452,85 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
   ]
 }
 -->
+
+### <a name="example-6-retrieve-the-attendance-report-of-a-meeting"></a>示例 6：检索会议与会者报告
+以下示例显示获取会议出席报告的请求。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
+  "name": "get-meetingAttendanceReport"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+---
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1876
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
+    "attendanceRecords": [
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1558,
+            "role": "Organizer",
+            "identity": {
+                "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:46.598956Z",
+                    "leaveDateTime": "2021-03-16T19:25:45.4473057Z",
+                    "durationInSeconds": 1558
+                }
+            ]
+        },
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1152,
+            "role": "Presenter",
+            "identity": {
+                "id": "(redacted)",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:52.2782182Z",
+                    "leaveDateTime": "2021-03-16T19:06:47.7218491Z",
+                    "durationInSeconds": 415
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:09:23.9834702Z",
+                    "leaveDateTime": "2021-03-16T19:16:31.1381195Z",
+                    "durationInSeconds": 427
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:20:27.7094382Z",
+                    "leaveDateTime": "2021-03-16T19:25:37.7121956Z",
+                    "durationInSeconds": 310
+                }
+            ]
+        }
+    ]
+}
+
+```

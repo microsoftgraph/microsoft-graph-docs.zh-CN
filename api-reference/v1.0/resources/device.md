@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 661f90c64b41c7b3c8408d4a2ed3db5355df37bc
-ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
+ms.openlocfilehash: c6fca21d78be6253cd66f63e8bff37ffe4f480f4
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51654098"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882360"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "51654098"
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型  |Description|
+| 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取设备](../api/device-get.md) | [设备](device.md) |读取 device 对象的属性和关系。|
 |[列出设备](../api/device-list.md) | [设备](device.md) 集合| 检索目录中的注册设备列表。 |
 |[更新设备](../api/device-update.md) | [设备](device.md) |更新 device 对象的属性。 |
 |[删除设备](../api/device-delete.md) | 无 |删除 device 对象。 |
-|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其直接成员组。 |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备是其直接成员组。 |
 |[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) 集合| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
 |[checkMemberObjects](../api/device-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 |
@@ -69,9 +69,9 @@ ms.locfileid: "51654098"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
-|memberOf|[directoryObject](directoryobject.md) collection|此设备是其中一个成员的组。 HTTP 方法：GET（支持所有组） 只读。 可为 NULL。|
-|[列出 transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其中一个成员的组。 此操作是可传递的。 |
-|registeredOwners|[directoryObject](directoryobject.md) 集合|云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 NULL。 |
+|memberOf|[directoryObject](directoryobject.md) 集合|此设备是其中一个成员的组。 只读。 可为 Null。|
+|transitiveMemberOf |[directoryObject](directoryobject.md) 集合| 设备是其中一个成员的组。 此操作是可传递的。 |
+|registeredOwners|[directoryObject](directoryobject.md) 集合|云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 Null。 |
 |registeredUsers|[directoryObject](directoryobject.md) 集合|设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

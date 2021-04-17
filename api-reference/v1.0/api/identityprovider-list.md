@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fdc7e4323fa096d40d757426fd064179921c1ebc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bf5843782d286f1aa08862b2b2470a391859d8ce
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441842"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882591"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider",
+  "@odata.type": "microsoft.graph.identityProvider",
   "isCollection": true
 } -->
 ```http
