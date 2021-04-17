@@ -4,12 +4,12 @@ description: Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 65e35d3b4bff89dc5a3e0ae044e217249232da97
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 47c613224536fd6f592832e3696a0bcc9bbcebb4
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474882"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870056"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
@@ -33,7 +33,7 @@ Microsoft Graph API、连接器（预览版）和数据连接三者结合，可�
 
 Microsoft Graph 公开了 REST API 和客户端库，它们可访问以下 Microsoft 云服务上的数据：
 
-- Microsoft 365 服务：Delve、Microsoft 365 合规中心电子数据展示、Excel、Microsoft Bookings、Microsoft 搜索、Microsoft Teams、OneDrive、OneNote、Outlook/Exchange、Planner、SharePoint、Workplace Analytics。
+- Microsoft 365 核心服务：Bookings、日历、Delve、Excel、Microsoft 365 合规中心电子数据展示、Microsoft 搜索、OneDrive、OneNote、Outlook/Exchange、人员（Outlook 联系人）、Planner、SharePoint、Teams、待办事项、工作区分析。
 - 企业移动性 + 安全性服务：高级威胁分析、高级威胁防护、Azure Active Directory、Identity Manager 和 Intune。
 - Windows 10 服务：活动、设备和通知、通用打印。
 - Dynamics 365 业务中心。

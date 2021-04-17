@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f34a97a4f8df52b658609fa28b08a94359217f2f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 34508cc03a668b9fdc9c20df77a7da5888861dce
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516519"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869846"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -18,7 +18,8 @@ ms.locfileid: "50516519"
 
 代表用户使用用户令牌中的对象 ID (OID) 创建联机会议。
 
-> **注意**：会议不会显示在用户的日历上。
+> [!NOTE]
+> 会议不会显示在用户的日历上。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +47,8 @@ POST /me/onlineMeetings
 POST /users/{userId}/onlineMeetings
 ```
 
-> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> [!NOTE]
+> `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
