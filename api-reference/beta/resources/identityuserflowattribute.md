@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 8262d8c77d31abbd25aaaae26018c651f0dcfbe5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ca8930a5cb11edb1cf7345464666478cfc01bcda
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957007"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882598"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>identityUserFlowAttribute 资源类型
 
@@ -22,7 +22,9 @@ ms.locfileid: "50957007"
 
 在 Azure AD 或 Azure AD B2C 租户中配置用户流属性，可在注册期间收集用户的相关信息。 可选择收集内置属性集；例如，指定名字、姓氏、市/县和邮政编码。 还可以配置自定义用户流属性，以便收集未内置到目录中的用户的信息。 自定义用户流属性是对[Azure Active Directory 架构扩展](/azure/active-directory/develop/active-directory-schema-extensions)的抽象。
 
-## <a name="methods"></a>Methods
+[identityBuiltInUserFlowAttributes](../resources/identitybuiltinuserflowattribute.md) 和 [identityCustomUserFlowAttributes](../resources/identitycustomuserflowattribute.md) 都继承自此基类型。
+
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|

@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 63b9f184639c3cb7186c65940add3cf9d6b1a47d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 004b133c458db4bf7b0ab5644dcd4b470b68d95f
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761463"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882304"
 ---
 # <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 
@@ -225,3 +225,7 @@ Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终
 
 - 要了解如何将 Microsoft 标识平台与不同类型的应用结合使用，请参阅 [Microsoft 标识平台文档](/azure/active-directory/develop/active-directory-developers-guide)中的 **开始使用** 链接。 该指南包含众多链接，可通过它们查看 Microsoft 标识平台支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
 - 要了解可与 Microsoft 标识平台终结点结合使用的 Microsoft 身份验证库 (MSAL) 和服务器中间件，请参阅 [Microsoft 身份验证库](/azure/active-directory/develop/active-directory-authentication-libraries)。
+
+## <a name="see-also"></a>另请参阅
+
+有关 Azure 应用服务上托管的 Web 应用调用 Microsoft Graph 作为应用程序（使用托管标识）的示例，请参阅[教程：从安全应用访问作为应用的 Microsoft Graph](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app)。 本教程介绍如何在 web 应用上创建系统分配的托管标识、向托管标识添加 Microsoft Graph API 权限以及调用 Microsoft Graph。
