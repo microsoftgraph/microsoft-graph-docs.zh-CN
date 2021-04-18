@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 1fd94301f5fbe0b812fb0be76802496d267d6a1a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 514ac5d3883408f09c82dce963921a7a0c2cb31a
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963349"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882353"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -140,15 +140,15 @@ ms.locfileid: "50963349"
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。 |
 |birthday|DateTimeOffset|用户的生日。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |businessPhones|String collection|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。 <br><br>本地目录同步的用户为只读。 默认返回。|
-|城市|String|用户所在的城市。 支持 `$filter`。|
+|城市|String|用户所在的城市。 最大长度为 128 个字符。 支持 `$filter`。|
 |companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。|
 |consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
-|country|String|用户所在的国家/地区；例如，“美国”或“英国”。 支持 `$filter`。|
+|country|String|用户所在的国家/地区；例如，“美国”或“英国”。 最大长度为 128 个字符。 支持 `$filter`。|
 |createdDateTime | DateTimeOffset |用户对象的创建日期。 |
 |creationType|字符串|指示创建的用户帐户是普通学校或工作帐户 (`null`)、外部帐户 (`Invitation`)、Azure Active Directory B2C 租户的本地帐户 (`LocalAccount`) 还是使用电子邮件验证的自助注册帐户 (`EmailVerified`)。 只读。|
 |deletedDateTime| DateTimeOffset | 删除用户的日期和时间。 <br><br>仅在 `$select` 上返回。 |
-|department|String|用户工作部门的名称。 支持 `$filter`。|
-|displayName|String|用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 <br><br>默认情况下返回。 支持 `$filter` 和 `$orderby`。|
+|department|String|用户工作部门的名称。 最大长度为 64 个字符。 支持 `$filter`。|
+|displayName|String|用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 最大长度为 256 个字符。 <br><br>默认情况下返回。 支持 `$filter` 和 `$orderby`。|
 | employeeHireDate | DateTimeOffset | 聘请用户或用户将开始工作（如是未来招聘）的日期和时间。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 | employeeId | String | 由组织分配给该用户的员工标识符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |表示与用户相关联的组织数据（例如，分部和 costCenter）。 <br><br>仅在 `$select` 上返回。|
@@ -156,21 +156,21 @@ ms.locfileid: "50963349"
 |externalUserState|String|对于使用[邀请 API](../api/invitation-post.md) 邀请到租户的外部用户，此属性表示受邀用户的邀请状态。 对于受邀用户，状态可以是 `PendingAcceptance` 或 `Accepted`，而对于所有其他用户，状态为 `null`。 <br><br>仅在 `$select` 上返回。 支持包含受支持数值的`$filter`。 例如：`$filter=externalUserState eq 'PendingAcceptance'`。|
 |externalUserStateChangeDateTime|DateTimeOffset|显示最近一次修改 **externalUserState** 属性的时间戳。 <br><br>仅在 `$select` 上返回。|
 |faxNumber|String|用户的传真号。|
-|givenName|String|用户的名。 默认情况下返回。 支持 `$filter`。|
+|givenName|String|用户的名。 默认情况下返回。 最大长度为 64 个字符。 支持 `$filter`。|
 | hireDate | DateTimeOffset | 用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>仅在 `$select` 上返回。 <br><br> **注意：** 此属性特定于 SharePoint Online。 建议使用本地 **employeeHireDate** 属性来设置和更新使用 Microsoft Graph API 的聘用日期值。 |
-|id|String|用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 键。 <br><br>不可为 null。 只读。|
+|id|String|用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 键。 <br><br>不可为空。 只读。|
 |identities|[objectIdentity](objectIdentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br>支持 `$filter`。|
 |imAddresses|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |isResourceAccount|布尔| 请勿使用 – 保留以备今后使用。|
-|jobTitle|String|用户的职务。 默认情况下返回。 支持 `$filter`。|
+|jobTitle|String|用户的职务。 最大长度为 128 个字符。 默认情况下返回。 支持 `$filter`。|
 |lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。 只读。|
 |mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 支持 `$filter` 和 `endsWith`。|
-|mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。|
-|mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。 支持 `$filter`。|
-|mobilePhone|String|用户的主要移动电话号码。 本地目录同步的用户为只读。 默认返回。 |
+|mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。<br><br>仅在 `$select` 上返回。 仅支持 Get 用户 API（`GET /users/{id}` 或 `GET /me`）。|
+|mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。 最大长度为 64 个字符。 支持 `$filter`。|
+|mobilePhone|String|用户的主要移动电话号码。 本地目录同步的用户为只读。 最大长度为 64 个字符。 默认返回。 |
 |mySite|String|用户个人网站的 URL。|
 |officeLocation|String|用户公司地点的办公室位置。 默认返回。|
 |onPremisesDistinguishedName|String| 包含本地 Active Directory `distinguished name` 或 `DN`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
@@ -187,20 +187,20 @@ ms.locfileid: "50963349"
 |passwordPolicies|String|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
 |passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
-|postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
+|postalCode|String|用户邮政地址的邮政编码。 邮政编码特定于用户所在的国家/地区。 在美国，此属性包含邮政编码。 最大长度为 40 个字符。|
 |preferredLanguage|String|用户的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。 默认情况下返回。|
 |preferredName|String|用户的首选名称。|
 |provisionedPlans|[provisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。 |
-|proxyAddresses|String collection|示例：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性筛选器表达式需要 **any** 运算符。 只读，不可为 Null。 支持 `$filter`。|
+|proxyAddresses|String 集合|示例：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性筛选器表达式需要 **any** 运算符。 只读，不可为 Null。 支持 `$filter`。|
 |refreshTokensValidFromDateTime|DateTimeOffset|在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 <br><br>仅在 `$select` 上返回。 只读。 |
 |responsibilities|String collection|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
 |showInAddressList|Boolean|如果 Outlook 全局地址列表应包含此用户，则值为 **true**，否则为 **false**。 如果未设置，则将其视为 **true**。 对于通过邀请管理器邀请的用户，此属性将设置为 **false**。|
 |skills|String collection|供用户枚举其技能的列表。|
 |signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
-|state|String|用户地址中的省/市/自治区或省。 支持 `$filter`。|
-|streetAddress|String|用户公司地点的街道地址。|
-|surname|String|用户的姓氏。 默认情况下返回。 支持 `$filter`。|
+|state|String|用户地址中的省/市/自治区或省。 最大长度为 128 个字符。 支持 `$filter`。|
+|streetAddress|String|用户公司地点的街道地址。 最大长度为 1024 个字符。|
+|surname|String|用户的姓氏。 默认情况下返回。 最大长度为 64 个字符。 支持 `$filter`。|
 |usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括：“US”、“JP”和“GB”。 不可为 null。 支持 `$filter`。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br><br>默认情况下返回。 支持 `$filter`、`$orderby` 和 `endsWith`。
 |userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。 支持 `$filter`。          |
