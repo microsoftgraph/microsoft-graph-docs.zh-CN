@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0cb114173db81ca8f4f2042b74ff7126b66b5953
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1e92b738ffac9d04eaa02b0130e902609d3f944a
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401582"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467986"
 ---
 # <a name="update-group"></a>更新组
 
@@ -48,26 +48,25 @@ PATCH /groups/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
-|autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
-|description|String|可选的组说明。 |
+|allowExternalSenders|Boolean|默认值为“`false`”。 指示组织外部人员是否可以向该组发送邮件。|
+|autoSubscribeNewMembers|Boolean|默认值为“`false`”。 指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 当组上的 **subscriptionEnabled** 设置为 `false` 时，**autoSubscribeNewMembers** 不能为 `true`。|
+|说明|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
 |groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。|
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
 |securityEnabled|布尔|指定是否为安全组。 |
-|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的是包括：**专用**、**公用**或为空（解释为**公用**）。|
+|visibility|String|指定 Microsoft 365 组的可见性。 可能的是包括：**专用**、**公用** 或为空（解释为 **公用**）。|
 
 > **注意：**
 >
-> - 可更新 **autoSubscribeNewMembers**，方法是在其自身的 PATCH 请求中指定它，而不包括上表中的其他属性。
-> - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅[已知问题](/graph/known-issues#groups)。
+> - 可以通过在 **补丁请求中指定** 自动更新 **autoSubendalNewMembers** ，而不包括上表中其他属性。
+> - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#groups)。
 > - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。
-
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功， 此方法返回 `204 No Content` 响应代码 - 更新下列属性时除了 `200 OK` 响应代码：**allowEx在alSenders**、 **autoSubendNewMembers**， **HideFromAddressList**， **hideFromOutlookClients**， **isSubeendByMail**， **unseenCount**。
 
 ## <a name="example"></a>示例
 
