@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 89b1e1071e759cbf95c6515e73d030b856ef6462
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 792c5c4ab617eba04d92242dd03c461cf287ab6b
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869657"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920038"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -105,7 +105,7 @@ ms.locfileid: "51869657"
 |replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。 不可为 null。 |
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|有关 saml 单一登录的设置的集合。|
 |servicePrincipalNames|字符串集合|包含从关联的 [应用程序](application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>需要多值属性筛选器表达式的 any 运算符。 不可为 null。|
-|servicePrincipalType|String|标识服务主体是表示应用程序还是托管标识。 这是由 Azure AD 内部设置的。 对于表示 [应用程序](./application.md)的服务主体，此选项设置为“__Application__”。 对于表示 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，此选项设置为“__ManagedIdentity__”。|
+|servicePrincipalType|String|标识服务主体代表应用程序、托管标识还是旧版应用程序。 这是由 Azure AD 内部设置的。 **servicePrincipalType** 属性可以设置为三个不同的值： <ul><li>__应用程序__ - 表示应用程序或服务的服务主体。 **appId** 属性标识相关联的应用程序注册，并匹配 [应用程序](application.md)（可能来自不同租户）的 **appId**。 如果缺少关联的应用注册，将不会为服务主体颁发令牌。</li><li>__ManagedIdentity__ - 一个服务主体，代表 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)。 可授予表示托管标识的服务主体的访问权限和权限，但不能直接更新或修改。</li><li>__旧版__ - 表示在应用注册前或通过旧体验创建的应用程序的服务主体。 旧服务主体可以具有凭据、服务主体名称、答复 URL 以及其他由授权用户编辑但没有相关应用注册的属性。 值 **appId** 未将服务主体与应用注册关联。 服务主体只能在创建它的租户中使用。</li></ul>|
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 只读。 <br><br>支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（多租户）中拥有 Microsoft 工作或学校帐户的用户。</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li><li>`PersonalMicrosoftAccount`：仅限拥有个人 Microsoft 帐户的用户。</li></ul> |
 |tags|字符串集合| 可用于分类和标识服务主体的自定义字符串。 不可为 null。 |
 | tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|

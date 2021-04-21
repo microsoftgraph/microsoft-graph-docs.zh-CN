@@ -5,12 +5,12 @@ author: jahsu
 localization_priority: Priority
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f5413cc178f220b34c37aa1fc4840596003561bc
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: d7b4aa230e3f3b93997de51e014c52581d5f9f8b
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031105"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920388"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>订阅使用 Microsoft Graph 更改云打印 API 的通知
 
@@ -31,7 +31,7 @@ ms.locfileid: "51031105"
 通用打印当前支持两种打印作业相关方案的通知：
 
 * PrintTask 被触发（作业启动）：应用程序可以在其 printTask（hook） 触发时订阅以接收通知。
-若要详细了解如何触发任务，请参阅扩展通用 [以支持将打印内容拉取](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。 目前，仅能为作业启动事件触发 printTask。 成功创建打印作业、上传有效负载并开始作业处理后，将发生作业启动事件。  
+若要详细了解如何触发任务，请参阅扩展通用 [以支持将打印内容拉取](./universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing)。 目前，仅能为作业启动事件触发 printTask。 成功创建打印作业、上传有效负载并开始作业处理后，将发生作业启动事件。  
 
 * 作业可保存：作业启动后，第三方打印应用程序或通用打印可能会执行某些处理（例如将 XPS 有效负载转换为 PDF，用于 PDF 打印机）。 处理完成后，如果有效负载已准备好由打印机下载，则针对相应的打印作业将发生 JobFable 事件。
 
@@ -40,7 +40,7 @@ ms.locfileid: "51031105"
 
 ### <a name="create-an-application-to-listen-to-notifications"></a>创建可收听通知的应用程序
 
-若要了解如何收听 Microsoft Graph 通知，请参阅 [通过 Microsoft Graph](https://docs.microsoft.com/learn/modules/msgraph-changenotifications-trackchanges/) 使用更改通知和修订 [设置用户数据更改通知 - 代码示例](/graph/webhooks#code-samples)。
+若要了解如何收听 Microsoft Graph 通知，请参阅 [通过 Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) 使用更改通知和修订 [设置用户数据更改通知 - 代码示例](./webhooks.md#code-samples)。
 
 
 ### <a name="scopes"></a>Scopes
@@ -51,7 +51,7 @@ ms.locfileid: "51031105"
 
 * 对于 JobFable 事件，"创建订阅" [中列出的](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http)。
 
-应用程序必须 [Microsoft Graph API 请求标头中生成](/graph/auth-v2-service?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) Azure AD 安全令牌。 安全令牌包含按管理员批准的客户 Azure AD 租户范围内声明声明。  
+应用程序必须 [Microsoft Graph API 请求标头中生成](/graph/auth-v2-service?context=graph%2Fapi%2F1.0) Azure AD 安全令牌。 安全令牌包含按管理员批准的客户 Azure AD 租户范围内声明声明。  
 
 
 ## <a name="create-subscription-printtask-triggered-jobstarted-event"></a>创建订阅：printTask 触发（作业启动）事件 
@@ -195,10 +195,10 @@ Microsoft Graph 对到期时间有限制。 有关详细信息，请参阅 [的�
 ## <a name="faqs"></a>常见问题
 ### <a name="how-does-microsoft-graph-validate-notification-urls"></a>Microsoft Graph 如何验证通知 URL？
 Microsoft Graph 将验证创建订阅前订阅请求的 **notificationurl** 属性中提供的通知终结点。
-有关详细信息，请参阅 [终结点验证](/graph/webhooks#notification-endpoint-validation)。
+有关详细信息，请参阅 [终结点验证](./webhooks.md#notification-endpoint-validation)。
 
 ### <a name="what-are-applications-expected-to-do-after-receiving-a-change-notification"></a>收到更改通知后，应用程序应执行哪些操作？
-应用程序应处理和确认他们收到的每个更改通知。 有关详细信息，请参阅 [更改通知](/graph/webhooks#processing-the-change-notification)。
+应用程序应处理和确认他们收到的每个更改通知。 有关详细信息，请参阅 [更改通知](./webhooks.md#processing-the-change-notification)。
 
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>如何获取活动订阅列表？
 若要详细了解如何检索 Web 网站订阅列表，请参阅 [订阅](/graph/api/subscription-list?view=graph-rest-v1.0&tabs=http)。

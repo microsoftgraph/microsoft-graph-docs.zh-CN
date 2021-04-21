@@ -225,6 +225,14 @@ items:
             items:
               - name: 管理资源访问权限
                 href: tutorial-access-package-api.md
+              - name: 查看对组的访问权限
+                items:
+                  - name: Access 审阅 API 概述
+                    href: accessreviews-overview.md
+                  - name: 查看安全组的访问权限
+                    href: tutorial-accessreviews-securitygroup.md
+                  - name: 审阅对 Microsoft 365 组的访问权限
+                    href: tutorial-accessreviews-M365group.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:
