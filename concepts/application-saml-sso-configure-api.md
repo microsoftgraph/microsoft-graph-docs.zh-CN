@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ea4a0a23b19b0b7a7250966f59e3a92e94a40618
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: d3988d4147c0df1bdfd86b6342e04fd8a80123cf
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761470"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920220"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 为应用程序配置基于 SAML 的单一登录
 
@@ -733,13 +733,13 @@ No Content - 204
 
 ## <a name="see-also"></a>另请参阅
 
-- 对于 AWS，可以[启用用户配置](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)以从该 AWS 账户获取所有角色。 有关详细信息，请参阅[配置 SAML 令牌中颁发的角色声明](/azure/active-directory/develop/active-directory-enterprise-app-role-management)。
+- 对于 AWS，可以[启用用户配置](/azure/active-directory/app-provisioning/application-provisioning-configure-api)以从该 AWS 账户获取所有角色。 有关详细信息，请参阅[配置 SAML 令牌中颁发的角色声明](/azure/active-directory/develop/active-directory-enterprise-app-role-management)。
 - [自定义在租户具体应用的令牌中颁发的声明](/azure/active-directory/develop/active-directory-claims-mapping)。
-- 可以使用 applicationTemplate API 来实例化[非库应用程序](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal)。 使用 applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。
+- 可以使用 applicationTemplate API 来实例化[非库应用程序](/azure/active-directory/manage-apps/view-applications-portal)。 使用 applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。
 - [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps)
 - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)
 - [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)
+- [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)
 - [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)

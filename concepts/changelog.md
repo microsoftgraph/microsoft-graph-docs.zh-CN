@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: effe614c907d734b274e93a6994277b9952c7f35
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f4ef1486317bcff023629b4c16f30d9b878d2c21
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473288"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920437"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -42,25 +42,25 @@ ms.locfileid: "51473288"
 ### <a name="cloud-communications"></a>云通信
 | **更改类型** | **版本**   | **说明**                                                                                              |
 | :-------------- | :------------ | :---------------------------------------                                                                     |
-| 添加项        | beta          | 为 [answer](https://docs.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-beta) 操作添加了 **participantCapacity** 选项。|
-| 添加项        | beta          | 添加了 [authenticationListener](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-beta) 资源类型。|
-| 添加项        | beta          | 添加了 [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-beta) 资源类型。|
-| 添加项        | beta          | 添加了 [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-beta) 资源类型。|
-| 添加项        | beta          | 添加了 [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta) 资源类型。|
-| 添加项        | beta          | 添加了 [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) 资源类型。|
-| 添加项        | beta          | 添加了 [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 为 [answer](/graph/api/call-answer?view=graph-rest-beta) 操作添加了 **participantCapacity** 选项。|
+| 添加项        | beta          | 添加了 [authenticationListener](/graph/api/resources/participantJoiningNotification?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [participantLeftNotification](/graph/api/resources/participantLeftNotification?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [participantJoiningResponse](/graph/api/resources/participantJoiningResponse?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [acceptJoinResponse](/graph/api/resources/acceptJoinResponse?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [rejectJoinResponse](/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [inviteNewBotResponse](/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) 资源类型。|
 
 ### <a name="tasks-and-plans"></a>任务和计划
 
 | **更改类型** | **版本** | **说明** |
 |:---|:---|:---|
-|添加项|beta|向 [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) 资源添加了 **rosterPlans** 关系|
-|添加项|beta|向 [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta) 资源添加了 **rosters** 关系|
-|添加项|beta|向 [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta) 资源添加了 **isCreationContext** 属性|
-|添加项|beta|向 [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) 资源添加了 **customLinkText** 属性|
-|添加项|beta|向 [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) 资源添加了 **displayLinkType** 属性|
-|添加项|beta|添加了 [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) 资源类型|
-|添加项|beta|添加了 [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta) 资源类型|
+|添加项|beta|向 [plannerUser](/graph/api/resources/plannerUser?view=graph-rest-beta) 资源添加了 **rosterPlans** 关系|
+|添加项|beta|向 [planner](/graph/api/resources/planner?view=graph-rest-beta) 资源添加了 **rosters** 关系|
+|添加项|beta|向 [plannerPlanContext](/graph/api/resources/plannerPlanContext?view=graph-rest-beta) 资源添加了 **isCreationContext** 属性|
+|添加项|beta|向 [plannerPlanContextDetails](/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) 资源添加了 **customLinkText** 属性|
+|添加项|beta|向 [plannerPlanContextDetails](/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) 资源添加了 **displayLinkType** 属性|
+|添加项|beta|添加了 [plannerRoster](/graph/api/resources/plannerRoster?view=graph-rest-beta) 资源类型|
+|添加项|beta|添加了 [plannerRosterMember](/graph/api/resources/plannerRosterMember?view=graph-rest-beta) 资源类型|
 |添加项|beta|已将 `roster` 成员添加到 **plannerContainerType** 枚举|
 |添加项|beta|已添加 **plannerPlanContextType** 枚举类型|
 
@@ -236,10 +236,10 @@ ms.locfileid: "51473288"
 | 添加项 | beta | 添加了用于列出和创建 [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) 资源的用户属性分配的方法。|
 | 添加项 | beta | 添加了用于列出和创建 [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) 资源的用户属性分配的方法。|
 | 添加项 | v1.0 | 添加了 [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) 资源类型。 |
-| 添加项 | beta | 为 [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源添加了 **includeDevices** 属性。|
-| 添加项 | beta | 为 [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源添加了 **exludeDevices** 属性。|
-| 更改 | beta | 弃用了 [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源上的 **includeDeviceStates** 属性。|
-| 更改 | beta | 弃用了 [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源上的 **excludeDeviceStates** 属性。|
+| 添加项 | beta | 为 [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源添加了 **includeDevices** 属性。|
+| 添加项 | beta | 为 [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源添加了 **exludeDevices** 属性。|
+| 更改 | beta | 弃用了 [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源上的 **includeDeviceStates** 属性。|
+| 更改 | beta | 弃用了 [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源上的 **excludeDeviceStates** 属性。|
 | 添加项 | beta | “添加了 [authenticationEventsPolicy](/graph/api/resources/authenticationeventspolicy?preserve-view=true&view=graph-rest-beta) 资源类型。 |
 | 添加项 | beta | “添加了 [authenticationListener](/graph/api/resources/authenticationlistener?preserve-view=true&view=graph-rest-beta) 资源类型。 |
 | 添加项 | beta | “添加了 [invokeUserFlowListener](/graph/api/resources/invokeUserFlowListener?preserve-view=true&view=graph-rest-beta) 资源类型。 |
@@ -5326,7 +5326,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta        | 使用[架构扩展](extensibility-overview.md#schema-extensions)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>消息<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](extensibility-schema-groups.md) |
+| 添加项        | Beta        | 使用[架构扩展](extensibility-overview.md#schema-extensions)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>message<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](extensibility-schema-groups.md) |
 | 添加项        | Beta        | 提供另一种不需要验证的 .com 虚域就能创建架构扩展定义的方法。有关详细信息，请参阅[架构扩展](extensibility-overview.md#schema-extensions)。 |
 
 ### <a name="extensions--open-extensions"></a>扩展 | 开放扩展
@@ -5334,7 +5334,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 更改          | v1.0 和 beta | 将前述“Office 365 数据扩展”重命名为“开放扩展”。 |
-| 添加项        | Beta          | 已添加支持[开放扩展](extensibility-overview.md#open-extensions)的资源： <br/>管理单元<br/>设备<br/>group<br/>组织<br/>用户<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md) |
+| 添加项        | Beta          | 已添加支持[开放扩展](extensibility-overview.md#open-extensions)的资源： <br/>管理单元<br/>设备<br/>group<br/>组织<br/>user<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md) |
 
 ### <a name="identity-and-access"></a>身份和访问
 

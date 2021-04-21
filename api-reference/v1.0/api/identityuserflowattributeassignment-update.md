@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 42ca1bd9d646e99fb254ad01c0c00512fbba441e
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: d0835b4f3c3fc24496cdde75ddb9d6684691c600
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882915"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920603"
 ---
 # <a name="update-identityuserflowattributeassignment"></a>更新 identityUserFlowAttributeAssignment
 
@@ -55,8 +55,8 @@ PATCH /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|用户显示名称中的 identityUserFlowAttribute 的组。|
-|isOptional|Boolean|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户无需提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
-|requiresVerification|Boolean|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
+|isOptional|布尔|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户无需提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
+|requiresVerification|布尔|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
 |userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) 集合|用户流属性的输入选项。 仅在 userInputType 为 `radioSingleSelect` 、 `dropdownSingleSelect` 或 时适用 `checkboxMultiSelect` 。|
 |userInputType|identityUserFlowAttributeInputType|用户流属性的输入类型。 可取值为：`textBox`、`dateTimeDropdown`、`radioSingleSelect`、`dropdownSingleSelect`、`emailBox`、`checkboxMultiSelect`。|
 
@@ -68,6 +68,8 @@ PATCH /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_userattributeassignments"
@@ -82,6 +84,24 @@ Content-Type: application/json
   "userInputType": "textBox"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-userattributeassignments-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-userattributeassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-userattributeassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-userattributeassignments-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

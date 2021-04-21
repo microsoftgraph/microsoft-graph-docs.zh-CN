@@ -1,31 +1,31 @@
 ---
 title: searchEntity： query
-description: 运行请求正文中指定的查询。 在响应中提供搜索结果。
+description: 运行请求正文中指定的查询。 响应中提供了搜索结果。
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e675b9b9301e7b0fc918c4631757a9bb21f82ce7
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 8194b23ede8856f0237b179aa4d50a5ce0c1ebc9
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983760"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920108"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
 命名空间：microsoft.graph
 
-运行请求正文中指定的查询。 在响应中提供搜索结果。
+运行请求正文中指定的查询。 响应中提供了搜索结果。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。 
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Mail.Read、Mail.ReadWrite、Calendars.Read、Calendars.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All、ExternalItem.Read.All |
+| 委派（工作或学校帐户）     | Mail.Read、Calendars.Read、Files.Read.All、Sites.Read.All、ExternalItem.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -52,7 +52,7 @@ POST /search/query
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) 集合对象。
+如果成功，此方法在响应正文中返回 响应代码和 `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) 集合对象。
  
 
 ## <a name="examples"></a>示例
@@ -165,8 +165,8 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 - 搜索 [邮件](/graph/search-concept-messages)
 - 搜索 [日历事件](/graph/search-concept-events)
-- 搜索 SharePoint 和 OneDrive 中 ([文件、列表和网站) ](/graph/search-concept-files)
-- 使用 [Graph 连接器 (搜索 ](/graph/search-concept-custom-types)) 类型
+- 在 SharePoint 和 OneDrive 中搜索 ([文件、列表和网站) ](/graph/search-concept-files)
+- 使用 [Graph 连接器 (搜索) ](/graph/search-concept-custom-types) 类型
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

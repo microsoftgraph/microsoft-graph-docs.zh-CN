@@ -4,12 +4,12 @@ description: 了解如何配置应用程序以代表用户访问联机会议。
 author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 2f80db867829ac2bead2671c0ed6bc184e0e786f
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: ff14ae4506cc19adf58ab61cde436a0252bd6f5c
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468959"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920395"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问联机会议
 
@@ -46,8 +46,7 @@ ms.locfileid: "51468959"
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
    ```
 
-> **注意** 
-> 
+> [!NOTE]
 > - _Identity_ 指创建策略时的策略名称，但在授予策略时指用户 ID。
 > - 对应用程序访问策略的更改最多可能需要 30 分钟才能在 Microsoft Graph REST API 调用中生效。
 
