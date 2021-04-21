@@ -1,18 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dd7d5b89513233041fcb239270ff19a803ab6194
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fe736dbd321e1e9ac8ee6bb6588d3a7daa9b90f3
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50973819"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51922627"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrinterShare printerShare = new PrinterShare();
-printerShare.name = "ShareName";
+printerShare.displayName = "ShareName";
+printerShare.allowAllUsers = true;
 printerShare.additionalDataManager().put("printer@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/print/printers/{id}"));
 
 graphClient.print().shares("{id}")
