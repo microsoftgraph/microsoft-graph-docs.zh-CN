@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 55199e600be68562e256342e79f14a37cc669681
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: e0304601c76276fbcdd3db5836245ef5b592f05a
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766019"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921851"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument： createUploadSession
 
@@ -31,7 +31,7 @@ ms.locfileid: "51766019"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | PrintJob.Create、PrintJob.ReadWrite、PrintJob.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | PrintJob.ReadWrite.All |
+| 应用程序                            | PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -84,6 +84,8 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printdocument_createuploadsession"
@@ -100,6 +102,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printdocument-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printdocument-createuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printdocument-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printdocument-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b5617bcc02fa705c100aeeb54c440f7d4270721b
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 6c721c4c7b4e534fc22e71db221c73670b5e477a
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766495"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921143"
 ---
 # <a name="create-printershare"></a>创建 printerShare
 
@@ -29,7 +29,7 @@ ms.locfileid: "51766495"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /print/shares
 |:---|:---|:---|:---|
 |printer|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法。|是|
 |displayName|String|打印客户端应显示的打印机共享的名称。 允许的最大长度为 50 个字符。|是|
-|allowAllUsers|Boolean| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|否|
+|allowAllUsers|布尔| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|否|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [printerShare](../resources/printershare.md) 对象。
@@ -59,6 +59,8 @@ POST /print/shares
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -75,6 +77,24 @@ Content-length: 114
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printershare-from-print-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printershare-from-print-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from-print-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printershare-from-print-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

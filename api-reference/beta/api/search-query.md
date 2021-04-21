@@ -1,16 +1,16 @@
 ---
 title: searchEntity： query
-description: 运行请求正文中指定的查询。 搜索结果在响应中提供。
+description: 运行请求正文中指定的查询。 响应中提供了搜索结果。
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1d2302c647e55e377209aaf630dc06e7a24d55a1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 346f6941d23387fce06f99ec4e7fcdf2907d0c0e
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978744"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921838"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978744"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-运行请求正文中指定的查询。 搜索结果在响应中提供。
+运行请求正文中指定的查询。 响应中提供了搜索结果。
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "48978744"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 已读取的邮件。读取、读取、读取、ExternalItem、文件、读取、全部、读取、全部、全部、全部、读取、全部、全部、 |
+| 委派（工作或学校帐户）     | Mail.Read、Calendars.Read、Files.Read.All、Sites.Read.All、ExternalItem.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -51,11 +51,11 @@ POST /search/query
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) 集合|一个或多个在 JSON blob 中格式化的搜索请求的集合。 每个 JSON blob 都包含响应中预期的资源类型、基础源、分页参数、请求的字段和实际搜索查询。 <br> 了解有关搜索实体类型的特定组合以及对搜索结果进行排序或聚合的 [已知限制](../resources/search-api-overview.md#known-limitations) 。 |
+|requests|[searchRequest](../resources/searchrequest.md) 集合|一个或多个搜索请求的集合，每个搜索请求的格式都为 JSON blob。 每个 JSON blob 都包含响应中预期的资源类型、基础源、分页参数、请求的字段和实际搜索查询。 <br> 请注意搜索 [实体](../resources/search-api-overview.md#known-limitations) 类型的特定组合以及排序或聚合搜索结果的已知限制。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `HTTP 200 OK` 在响应正文中返回响应代码和 [searchResponse](../resources/searchresponse.md) 集合对象。
+如果成功，此方法在响应正文中返回 响应代码和 `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) 集合对象。
  
 
 ## <a name="examples"></a>示例
@@ -160,11 +160,11 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>另请参阅
-- 搜索 [邮件消息](/graph/search-concept-messages)
+- 搜索 [邮件](/graph/search-concept-messages)
 - 搜索 [日历事件](/graph/search-concept-events)
-- 在 SharePoint 和 OneDrive 中搜索内容 ([文件、列表和网站](/graph/search-concept-files)) 
-- 搜索 [自定义类型 (Graph 连接器) ](/graph/search-concept-custom-types) 数据
-- [对搜索结果进行排序](/graph/search-concept-sort)
+- 在 SharePoint 和 OneDrive 中搜索 ([文件、列表和网站) ](/graph/search-concept-files)
+- 使用 [Graph 连接器 (搜索) ](/graph/search-concept-custom-types) 类型
+- [对](/graph/search-concept-sort) 搜索结果进行排序
 - 使用 [聚合](/graph/search-concept-aggregations) 优化搜索结果
 
 

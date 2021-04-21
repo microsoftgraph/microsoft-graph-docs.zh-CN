@@ -3,12 +3,12 @@ title: 选择 Microsoft Graph 身份验证提供程序
 description: 了解如何为应用程序选择特定于方案的身份验证提供程序。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: f174ae516ca6bde01456349a7a0ed7742b8b0ba1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 726fbf1334a99ab6a854bd4627052d154187105c
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953367"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921124"
 ---
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据方案选择 Microsoft Graph 身份验证提供程序
 
@@ -34,7 +34,7 @@ ms.locfileid: "50953367"
 | [调用 Web API 的移动应用](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
 | | Interactive | 委派使用者/组织 | [交互式提供程序](#InteractiveProvider) |
 
-> 注意Java和 android 开发人员需要添加 [azure-identity](https://docs.microsoft.com/java/api/overview/azure/identity-readme?view=azure-java-stable) 库才能访问不同的凭据类型。
+> 注意Java和 android 开发人员需要添加 [azure-identity](/java/api/overview/azure/identity-readme?view=azure-java-stable) 库才能访问不同的凭据类型。
 
 ## <a name="authorization-code-provider"></a><a name="AuthCodeProvider" ></a>授权代码提供程序
 

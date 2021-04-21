@@ -4,12 +4,12 @@ description: 介绍如何将 Azure Active Directory (Azure AD) 应用，以使�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 6460b768381cdf3223699d95d1d5b9ce9ed629e8
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: cdd2414652e675223b6de42a6a63de5c7e8c5c8a
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761288"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921922"
 ---
 # <a name="deploy-test-and-extend"></a>部署、测试和扩展
 
@@ -57,7 +57,7 @@ ms.locfileid: "50761288"
 如果在迁移过程中遇到问题或需要帮助，可以：
 
 - 再次查看 [检查](migrate-azure-ad-graph-planning-checklist.md) 表
-- 向 [Microsoft 问答&问题](https://docs.microsoft.com/answers/topics/microsoft-graph-applications.html) 
+- 向 [Microsoft 问答&问题](/answers/topics/microsoft-graph-applications.html) 
 - 查看 Microsoft Graph 示例以对比和比较现有应用程序代码：
   - **使用 REST API** 的应用：浏览 [快速](https://developer.microsoft.com/graph/get-started)入门和示例，选择你选择的平台，然后运行快速入门或搜索相应的示例
   - **使用 .NET 客户端库的应用**：查看 [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) 和/或 [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)

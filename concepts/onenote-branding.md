@@ -4,12 +4,12 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1ff5373cc671f7f60e0a8a4870d69340f7538ea0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1000172e015ad8a48da906e38be32eca0fdf6662
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473488"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920199"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>针对 OneNote API 开发人员的品牌准则 
  
@@ -45,7 +45,7 @@ ms.locfileid: "50473488"
 
 尊重徽标，并给它足够的空间。徽标四周必须留出相当于符号高度的最小净空间。
 
-![显示明确的 psace 表示符号高度的徽标](images/onenotelogoclearspace.png)
+![显示清晰图标的徽标，即符号的高度](images/onenotelogoclearspace.png)
 
 
 <a name="size"></a>
@@ -71,7 +71,7 @@ ms.locfileid: "50473488"
 
 **打印：**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![徽标使用白色和品牌颜色背景显示首选品牌颜色](images/onenotelogobgs.png)
+  ![用白色和品牌颜色背景显示首选品牌颜色的徽标](images/onenotelogobgs.png)
  
 在颜色受限的环境中和在单色设计中，徽标可以显示为黑色。 但是，徽标永远不能以灰色显示。
 <!--or white?-->
@@ -170,7 +170,7 @@ ms.locfileid: "50473488"
 
 ![包装中较好的徽标示例](images/onenoteusagepackaging1.png)
 
-![包装中徽标示例的另一个视图](images/onenoteusagepackaging2.png)
+![打包中的徽标示例的另一个视图](images/onenoteusagepackaging2.png)
 
 
 如果对于此准则有任何疑问，或正在使用此处所示的品牌资产创建新的通信，请通过 [@onenotedev](https://twitter.com/onenotedev) 与我们联系。
@@ -180,7 +180,5 @@ ms.locfileid: "50473488"
 - [针对 OneNote API 开发人员的品牌准则](https://www.microsoft.com/download/details.aspx?id=42977)（下载页面）
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [有关 Microsoft 问答的 OneNote&问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
-- [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
-
+- [Microsoft Q&A 上的 OneNote 开发问题](/answers/topics/microsoft-graph-notes.html)
+- [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)

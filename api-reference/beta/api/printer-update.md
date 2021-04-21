@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2a0d40490365a2974a83683f7b9564063f8e25c0
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 41f24b9b5c76502080441efac63f927018bfb1ec
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766222"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921982"
 ---
 # <a name="update-printer"></a>更新打印机
 
@@ -31,7 +31,7 @@ ms.locfileid: "51766222"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| Printer.ReadWrite.All、Printer.FullControl.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| Printer.ReadWrite.All |
+|应用程序| Printer.ReadWrite.All |
 
 >**注意：** 目前，只有没有物理设备的打印机可以使用应用程序权限进行更新。
 
@@ -73,7 +73,7 @@ PATCH /print/printers/{id}
 |manufacturer|String|打印机的制造商。|
 |model|String|打印机的模型名称。|
 |状态|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
-|isAcceptingJobs|Boolean|打印机当前是否接受新的打印作业。|
+|isAcceptingJobs|布尔|打印机当前是否接受新的打印作业。|
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
@@ -106,6 +106,8 @@ PATCH /print/printers/{id}
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printer"
@@ -124,6 +126,24 @@ Content-length: 124
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-printer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

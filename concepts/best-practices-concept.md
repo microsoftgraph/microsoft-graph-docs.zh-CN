@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6a91eaea5211b58cc821f098822ddb683a58cc22
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d6227c3bb90e620d741f387978f84ac12c171e19
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473432"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920031"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -148,4 +148,4 @@ JSON 批处理使你能够通过将多个请求合并为一个单一 JSON 对象
 - 打开到所有播发 DNS 答案的连接。
 - 生成唯一的 GUID 并随每个 Microsoft Graph REST 请求发送。 如果需要报告 Microsoft Graph 的问题，那么这将有助于 Microsoft 更轻松地调查任何错误。
   - 每次向 Microsoft Graph 发出请求时，会生成唯一的 GUID，将其随 `client-request-id` HTTP 请求标头发送，并将其记录在应用程序日志中。
-  - 始终记录 HTTP 响应标头中的 `request-id`、`timestamp` 和 `x-ms-ags-diagnostic`。 在 [Microsoft Q&A](https://aka.ms/askgraph) 中或向 Microsoft 支持部门报告问题时，需要上述这些以及 `client-request-id`。
+  - 始终记录 HTTP 响应标头中的 `request-id`、`timestamp` 和 `x-ms-ags-diagnostic`。 在 [Microsoft Q&A](/answers/products/m365#microsoft-graph) 中或向 Microsoft 支持部门报告问题时，需要上述这些以及 `client-request-id`。

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4aea872d99deedb3fbf952954e2d6ff691994220
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f968838fb5e492c548f154afd311c212a05334fc
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957286"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921649"
 ---
 # <a name="get-phoneauthenticationmethod"></a>获取 phoneAuthenticationMethod
 
@@ -18,7 +18,7 @@ ms.locfileid: "50957286"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索单个 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
+检索单个 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。 此方法仅适用于标准 Azure AD 和 B2B 用户，但不适用于 B2C 用户。
 
 ## <a name="permissions"></a>权限
 

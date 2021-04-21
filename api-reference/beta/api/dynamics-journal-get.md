@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f359d9b8b0daaaa9ab6f25a6924d85feb9f230cc
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e814dd9afe56633c15825ede842f799bd85b0700
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474370"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921670"
 ---
 # <a name="get-journals"></a>获取日记
 
@@ -33,7 +33,7 @@ ms.locfileid: "50474370"
 
 ## <a name="http-request"></a>HTTP 请求
 
-```
+```http
 GET /financials/companies/{id}/journals/{id}
 ```
 
@@ -49,7 +49,7 @@ GET /financials/companies/{id}/journals/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和日记对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和一个活动对象。
 
 ## <a name="example"></a>示例
 

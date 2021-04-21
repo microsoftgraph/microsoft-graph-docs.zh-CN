@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 815c42257449dde122958cc4ab3f9293387c0cb3
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 856a266a435bf0fb2146fc786ec72058e38debce
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472788"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920192"
 ---
 # <a name="create-onenote-pages"></a>创建 OneNote 页
 
@@ -276,5 +276,5 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 - [使用笔记标记](onenote-note-tags.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Microsoft Q&A 上的 OneNote 开发问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
+- [Microsoft Q&A 上的 OneNote 开发问题](/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)

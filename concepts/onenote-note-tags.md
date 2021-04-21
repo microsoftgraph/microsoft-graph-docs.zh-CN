@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: be9d85811842939be0931416970bb5b7e800938a
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 6fe0d1603e2cd5b94e753b4e8d6b1a7e47b5aacf
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470527"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921915"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>在 OneNote 页中使用笔记标记
 
@@ -364,8 +364,5 @@ Microsoft Graph 在响应中返回以下信息。
 - [更新 OneNote 页内容](onenote-update-page.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [有关 Microsoft 问答的 OneNote&问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
+- [Microsoft Q&A 上的 OneNote 开发问题](/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)
-
-
-

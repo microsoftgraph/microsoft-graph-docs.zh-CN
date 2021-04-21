@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 985a6d4c80187decd5770eca150f501786222a1c
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 4056229ecb748ff9c99a3b332298d32e67fdaf66
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491062"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921225"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 命名空间：microsoft.graph
@@ -61,15 +61,15 @@ PATCH /identity/identityProviders/{id}
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|字符串|向标识提供程序注册应用程序时获取的应用程序的客户端标识符。|
-|clientSecret|字符串|向标识提供程序注册应用程序时获取的应用程序的客户端密码。 这是只读的。 读取操作返回" \* \* \* \* "。|
+|clientId|字符串|向标识提供程序注册应用程序时，获取应用程序的客户端标识符。|
+|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回"\*\*\*\*"。|
 |displayName|字符串|标识提供程序的显示名称。|
 
 ### <a name="openidconnectidentityprovider-object"></a>openIdConnectIdentityProvider 对象
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|字符串|向标识提供程序注册应用程序时获取的应用程序的客户端标识符。|
+|clientId|字符串|向标识提供程序注册应用程序时，获取应用程序的客户端标识符。|
 |clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 clientSecret 依赖于 **responseType**。 <ul><li>当 **responseType** `code` 为 时，身份验证代码交换需要密码。</li><li>当 **responseType** `id_token` 为密码时不是必需的，因为没有代码交换。 授权id_token返回授权请求。</li></ul>|
 |displayName|字符串|标识提供程序的显示名称。|
 |domainHint|String|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
@@ -87,7 +87,7 @@ PATCH /identity/identityProviders/{id}
 |developerId|String|Apple 开发人员标识符。|
 |服务 Id|String|Apple 开发人员标识符。|
 |keyId|String|Apple 密钥标识符。|
-|certificateData|String|证书数据（证书中的长字符串文本）可以是 null。|
+|certificateData|String|证书中长文本字符串的证书数据可能是 null。|
 
 ## <a name="response"></a>响应
 
@@ -101,6 +101,8 @@ PATCH /identity/identityProviders/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_socialidentityprovider"
@@ -116,6 +118,24 @@ Content-length: 41
   "clientSecret": "1111111111111"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-socialidentityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-socialidentityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-socialidentityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-socialidentityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -138,6 +158,8 @@ HTTP/1.1 204 No Content
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openidconnectprovider"
@@ -153,6 +175,24 @@ Content-length: 41
   "responseType": "id_token"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-openidconnectprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-openidconnectprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-openidconnectprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-openidconnectprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -175,6 +215,8 @@ HTTP/1.1 204 No Content
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_appleidentityprovider"
@@ -190,6 +232,24 @@ Content-length: 41
   "displayName": "Apple"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-appleidentityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-appleidentityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-appleidentityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-appleidentityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

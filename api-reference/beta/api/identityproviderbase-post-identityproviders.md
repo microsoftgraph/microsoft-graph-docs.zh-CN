@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: b2ed83bb828ae7b9d78572c8601e311bd4d10a7f
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 5d35265374a15cf8235d04d0fdc9c05447a6e4ad
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491061"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921308"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
@@ -64,10 +64,10 @@ POST /identity/identityProviders
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|字符串|向标识提供程序注册应用程序时获取的应用程序的客户端标识符。|
-|clientSecret|字符串|向标识提供程序注册应用程序时获取的应用程序的客户端密码。 这是只读的。 读取操作返回" \* \* \* \* "。|
+|clientId|字符串|向标识提供程序注册应用程序时，获取应用程序的客户端标识符。|
+|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回"\*\*\*\*"。|
 |displayName|字符串|标识提供程序的显示名称。|
-|identityProviderType|String|对于 B2B 方案，可能的值 `Google` 是 `Facebook` ：、。 对于 B2C 方案，可能的值 `Microsoft` 是 `Google` `Amazon` `LinkedIn` `Facebook` ：、、、、、、、。 `GitHub` `Twitter` `Weibo` `QQ` `WeChat`|
+|identityProviderType|String|对于 B2B 方案，可能的值为： `Google`、 `Facebook`。 对于 B2C 方案，可能的值： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、 `QQ`、 `WeChat`。|
 
 ### <a name="openidconnectidentityprovider-object"></a>openIdConnectIdentityProvider 对象
 
@@ -91,7 +91,7 @@ POST /identity/identityProviders
 |developerId|String|Apple 开发人员标识符。|
 |服务 Id|String|Apple 开发人员标识符。|
 |keyId|String|Apple 密钥标识符。|
-|certificateData|String|证书数据（证书中的长字符串文本）可以是 null。|
+|certificateData|String|证书中长文本字符串的证书数据可能是 null。|
 
 ## <a name="response"></a>响应
 
@@ -109,6 +109,8 @@ POST /identity/identityProviders
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_socialidentityprovider_from_identityproviderbase"
@@ -128,6 +130,24 @@ Content-length: 154
   "clientSecret": "000000000000"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-socialidentityprovider-from-identityproviderbase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-socialidentityprovider-from-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-socialidentityprovider-from-identityproviderbase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-socialidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -163,6 +183,8 @@ Content-type: application/json
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_openidconnectidentityprovider_from_identityproviderbase"
@@ -193,6 +215,24 @@ Content-type: application/json
 }
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-openidconnectidentityprovider-from-identityproviderbase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-openidconnectidentityprovider-from-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-openidconnectidentityprovider-from-identityproviderbase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-openidconnectidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -239,6 +279,8 @@ Content-type: application/json
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_applemanagedidentityprovider_from_identityproviderbase"
@@ -259,6 +301,16 @@ Content-length: 154
   "certificateData": "******"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-applemanagedidentityprovider-from-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-applemanagedidentityprovider-from-identityproviderbase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

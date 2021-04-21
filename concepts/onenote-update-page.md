@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9a30197744cb3d03255ea3d215ff0774546ae023
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8786bcf8a0aa3aafaca8406f11e6243b8dd7b49c
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472333"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920101"
 ---
 # <a name="update-onenote-page-content"></a>更新 OneNote 页面内容
 
@@ -59,7 +59,7 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 以下数组定义了两个更改。第一个更改在段落上方插入一张图像作为同级对象，第二个更改向列表中附加一个项目作为最后一个子元素。
 
 > [!NOTE]
-> 在 OneNote 页面上更新图像时，你无法使用 www 链接。 该服务不会尝试下载随机资源。 相反，图像必须是请求的一部分，可以是图像数据 url 或多部分请求的部分名称。
+> 在 OneNote 页面上更新图像时，你无法使用 www 链接。 该服务不会尝试下载随机资源。 相反，图像必须是请求的一部分，无论是通过 image-data-url 还是多部分请求的部件名称。
 
 ```json
 [
@@ -490,5 +490,5 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 - [添加图像和文件](onenote-images-files.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Microsoft Q&A 上的 OneNote 开发问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
+- [Microsoft Q&A 上的 OneNote 开发问题](/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)

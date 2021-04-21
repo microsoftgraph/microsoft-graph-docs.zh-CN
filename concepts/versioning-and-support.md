@@ -2,12 +2,12 @@
 title: 'Microsoft Graph 的版本控制、支持和重大更改策略 '
 description: 本文介绍了 Microsoft Graph 的支持和重大更改策略，以及当前可用的 Microsoft Graph API 版本。
 localization_priority: Priority
-ms.openlocfilehash: 24f9cb99f079e1544528ab4b5139e52cbecbf4f9
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 51b0e746054cd9147e587ba6f44f6bb8e8a1ad8e
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474650"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920045"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph 的版本控制、支持和中断性变更策略
 
@@ -79,4 +79,4 @@ v1.0 版本中大多数功能和 API 行为与 Beta 版本相同。 在以下两
 
 使用 Microsoft Graph API 即表示你同意 [Microsoft API 使用条款](/legal/microsoft-apis/terms-of-use?context=/graph/context)。
 
-你的反馈对我们非常重要。 在 [Microsoft Q&A](https://aka.ms/askgraph) 上联系我们。 使用 [microsoft-graph-*] 标记安全。
+你的反馈对我们非常重要。 在 [Microsoft Q&A](/answers/products/m365#microsoft-graph) 上联系我们。 使用 [microsoft-graph-*] 标记安全。
