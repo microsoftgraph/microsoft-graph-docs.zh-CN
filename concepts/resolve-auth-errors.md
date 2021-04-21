@@ -4,12 +4,12 @@ description: 了解如何解决 Microsoft Graph 401 和 403 授权错误。
 author: davidmu1
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: 13e815b72157da2fe5d8db8114a3dac436b40026
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: ecc8929c0671cbafed4baa5fc242a9f8515c7652
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760937"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921677"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>解决 Microsoft Graph 授权错误
 
@@ -22,7 +22,7 @@ ms.locfileid: "50760937"
 
 ## <a name="steps-to-resolve-common-errors"></a>解决常见错误的步骤
 
-若要解决常见授权错误，请尝试针对与你遇到的错误最接近的错误描述的步骤。 可能会出现多个错误。 你还可以查看 Microsoft Q&A 上已有的 [401 错误](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20401%20)和 [403 错误](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20403)相关的答案。 如果无法找到解决问题的方法，请在 [Microsoft Q&A](https://aka.ms/askgraph) 上提问并标记为 *microsoft-graph**。
+若要解决常见授权错误，请尝试针对与你遇到的错误最接近的错误描述的步骤。 可能会出现多个错误。 你还可以查看 Microsoft Q&A 上已有的 [401 错误](/answers/search.html?c=&f=&includeChildren=&q=%5bmicrosoft-graph%5d+401+&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user)和 [403 错误](/answers/search.html?c=&f=&includeChildren=&q=%5bmicrosoft-graph%5d+403&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user)相关的答案。 如果无法找到解决问题的方法，请在 [Microsoft Q&A](/answers/products/m365#microsoft-graph) 上提问并标记为 *microsoft-graph**。
 
 **401 未授权错误：你的令牌是否有效？** <br>
 

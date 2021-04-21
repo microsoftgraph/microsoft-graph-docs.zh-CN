@@ -4,12 +4,12 @@ description: 你可以使用 Visual Studio 中的连接服务配置应用，从�
 localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
-ms.openlocfilehash: 7b93a0245c34b67d3975d0b568df5defd292b72c
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 95fbe544edff9543d694f5fa024929fd7e241160
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472851"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921663"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>使用 Microsoft Graph API 在 Visual Studio 2017 中调用 Microsoft 365 服务
 
@@ -94,4 +94,4 @@ ms.locfileid: "50472851"
 
 ## <a name="need-help"></a>需要帮助?
 
-如果需要帮助，请在 [Microsoft Q&A](https://aka.ms/askgraph) 上发布你的问题。 使用 {microsoft-graph-identity} 标记你发布的问题。
+如果需要帮助，请在 [Microsoft Q&A](/answers/products/m365#microsoft-graph) 上发布你的问题。 使用 {microsoft-graph-identity} 标记你发布的问题。

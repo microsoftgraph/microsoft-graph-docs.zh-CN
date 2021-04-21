@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: f841dec2b6de97ca7a67b01bf0d9e4b16dade843
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: e5e8e8ba5c67e81abe9bf108be5f72bacfe2739f
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870035"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921929"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -37,7 +37,7 @@ ms.locfileid: "51870035"
 - 使用 [servicePrincipal](/graph/api/resources/serviceprincipal) 的 **signInAudience** 属性获取当前应用程序支持的用户帐户。
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
-- 适用于通用打印的 [云打印](universal-print-concept-overview.md) GA! 查看 [公告](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/universal-print-is-ready-for-business/ba-p/2176778)，并查看如何 [开始使用通用打印](https://docs.microsoft.com/universal-print/fundamentals/universal-print-license)。
+- 适用于通用打印的 [云打印](universal-print-concept-overview.md) GA! 查看 [公告](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/universal-print-is-ready-for-business/ba-p/2176778)，并查看如何 [开始使用通用打印](/universal-print/fundamentals/universal-print-license)。
 - 在 [打印任务定义](/graph/api/resources/printtaskdefinition)上[订阅更改通知](universal-print-webhook-notifications.md)或[打印机](/graph/api/resources/printer)资源。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
