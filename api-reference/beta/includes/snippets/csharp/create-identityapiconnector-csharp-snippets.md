@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e33266ec3e21a424c7322d923c85d6548f2f3613
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 3ea8c7c07eb364d4bb5f3104f1480468e43162ab
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844546"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51922583"
 ---
 ```csharp
 
@@ -14,11 +14,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var identityApiConnector = new IdentityApiConnector
 {
     DisplayName = "Test API",
-    TargetUrl = "https://someapi.com/api",
-    AuthenticationConfiguration = new BasicAuthentication
+    TargetUrl = "https://someotherapi.com/api",
+    AuthenticationConfiguration = new Pkcs12Certificate
     {
-        Username = "<USERNAME>",
-        Password = "<PASSWORD>"
+        Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+        Password = "<password>"
     }
 };
 
