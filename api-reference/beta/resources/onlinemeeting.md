@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 3e1082c048c069698e4f48989bdbab28c186bf26
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 6fd35c274fb91ef527e4dc42f24546a699c22645
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882206"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944231"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "51882206"
 
 | 方法                                                             | 返回类型                       | 说明                                                                                                       |
 | :----------------------------------------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| [Create](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | 创建联机会议。                                                                                         |
-| [Get](../api/onlinemeeting-get.md)                                 | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting 对象的属性和** 关系。                                             |
+| [创建](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | 创建联机会议。                                                                                         |
+| [获取](../api/onlinemeeting-get.md)                                 | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting 对象的属性和** 关系。                                             |
 | [更新](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | 更新 **onlineMeeting 对象** 的属性。 |
 | [删除](../api/onlinemeeting-delete.md)                           | 无                              | 删除 **onlineMeeting** 对象。                                                                             |
 | [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。      |
@@ -42,12 +42,12 @@ ms.locfileid: "51882206"
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | 与实时事件相关的设置*                                                                                                                                                                                                                    |
 | chatInfo              | [chatInfo](chatinfo.md)                       | 与此联机会议关联的聊天信息。                                                                                                                                                                                                   |
 | creationDateTime      | 日期时间                                      | 会议创建时间（UTC）。 只读。                                                                                                                                                                                                                |
-| capabilities          | meetingCapabilities 集合                             | 会议功能列表。 可能的值是 `questionAndAnswer` `unknownFutureValue` ：、。                                                                                                                                                                                 |
+| 功能 (已弃)          | meetingCapabilities 集合                             | 会议功能列表。 可能的值是 `questionAndAnswer` `unknownFutureValue` ：、。                                                                                                                                                                                 |
 | endDateTime           | 日期时间                                      | 会议结束时间（UTC）。                                                                                                                                                                                                                                |
 | externalId            | String                                        | 外部 ID。 自定义 ID。 可选。                                                                                                                                                                                                                     |
 | id                    | String                                        | 与联机会议关联的默认 ID。 只读。                                                                                                                                                                                               |
-| isBroadcast           | Boolean                                       | 指示这是否为实时事件。                                                                                                                                                                                                                   |
-| isEntryExitAnnounced  | Boolean                                       | 呼叫者加入或离开时是否宣布。                                                                                                                                                                                                      |
+| isBroadcast           | 布尔                                       | 指示这是否为实时事件。                                                                                                                                                                                                                   |
+| isEntryExitAnnounced  | 布尔                                       | 呼叫者加入或离开时是否宣布。                                                                                                                                                                                                      |
 | joinWebUrl            | String                                        | 联机会议加入 URL。 只读。                                                                                                                                                                                                              |
 | joinInformation       | [itemBody](itembody.md)                       | 在"Accept-Language"中指定的语言和区域设置变量中的联接信息请求 HTTP 标头。 只读                                                                                                                                       |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                                                                                                                                                                                                  |
@@ -59,7 +59,9 @@ ms.locfileid: "51882206"
 | videoTeleconferenceId | String                                        | 视频电话会议 ID。 只读。                                                                                                                                                                                                                   |
 
 > [!CAUTION]
+>
 >- **autoAdmittedUsers** 属性已弃用。 请 **改为使用** [lobbyBypassSettings 的 scope](lobbyBypassSettings.md) 属性。
+>- **capabilities** 属性已弃用。 请改为使用 [broadcastMeetingSettings](broadcastMeetingSettings.md)的 **isQuestionAndAnswerEnabled** 属性。
 >- \* 使用 **broadcastSettings** 属性创建实时事件在 Beta 中，但存在重要限制。 有关详细信息，请参阅[broadcastSettings。](broadcastMeetingSettings.md)
 
 ### <a name="onlinemeetingpresenters-values"></a>onlineMeetingPresenters 值
@@ -72,7 +74,7 @@ ms.locfileid: "51882206"
 | organizer － 组织者          | 只有组织者是演示者。                           |
 | unknownFutureValue | 未知未来值。                                         |
 
-> [!NOTE]
+> [!TIP]
 > 如果 **allowedPresenters** 的值设置为 ，请使用 `roleIsPresenter` [meetingParticipantInfo](../resources/meetingparticipantinfo.md)中的 **role** 属性指定每个会议参与者的会议角色。
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -95,7 +97,6 @@ ms.locfileid: "51882206"
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
-  "capabilities": [ "questionAndAnswer" ],
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},

@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 00564efd81650941559c4d3b01833d3d797c2d4c
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 4c6ac941cd5b678f3470cd4a0c242ff9e70ee920
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869727"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944266"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -20,7 +20,7 @@ ms.locfileid: "51869727"
 
 通过在用户令牌（委托权限）或请求路径（应用程序权限）中使用对象 ID (OID)，代表用户创建联机会议。
 
-> [!NOTE]
+> [!TIP]
 > 会议不会显示在用户的日历上。
 
 ## <a name="permissions"></a>权限

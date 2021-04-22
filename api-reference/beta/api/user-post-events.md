@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 34c094323716f0245381084400383e41c3936397
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: efcf2876ce7963e3bc6cb38dcbdab7c2b7e0e9d6
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719781"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944280"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -83,10 +83,10 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>示例 1：在指定的时区创建事件，并将事件分配可选 transactionId 值
+### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>示例 1：在指定的时区创建事件，然后为事件分配可选的 transactionId 值
 
 #### <a name="request"></a>请求
-下面是一个请求示例。 它使用 Prefer： outlook.timezone 请求标头来指定响应中开始时间和结束时间的时间区域。 它还设置 transactionId 属性，以减少服务器上不必要的重试。
+下面是一个请求示例。 它使用 `Prefer: outlook.timezone` 请求头指定响应中开始时间和结束时间的时区。 它还设置 transactionId 属性，以减少服务器上不必要的重试。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -677,7 +677,7 @@ Content-type: application/json
 ### <a name="example-4-create-a-daily-recurring-event"></a>示例 4：创建每日定期事件
 
 #### <a name="request"></a>请求
-第四个示例展示了如何创建每日定期事件。 该事件从 2020 年 2 月 25 日起每天的下午 12：00 到下午 2：00 发生两次。
+第四个示例展示了如何创建每日定期事件。 从 2020 年 2 月 25 日起，事件每天从下午 12：00 到下午 2：00 发生两次。
 
 <!-- {
   "blockType": "request",

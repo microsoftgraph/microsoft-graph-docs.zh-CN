@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: def9276d97ddbe1fd812083cc17e547ae7ce53c5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f199a82ee90d6848cb68d670d49d7af1c1d2c739
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953754"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944112"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>broadcastMeetingSettings 资源类型
 
@@ -20,19 +20,19 @@ ms.locfileid: "50953754"
 
 与实时事件相关的设置。
 
-> [!IMPORTANT]
+> [!CAUTION]
 > 此 API 不验证由策略 管理的活动 [事件设置](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell)。
-> 例如，如果管理员使用 设置实时事件策略，将阻止用户设置 Teams 客户端中的实时事件权限，但可通过 Microsoft Graph 将 `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany` `public` **allowedAudience** 设置为 来创建实时事件 `everyone` 。 
+> 例如，如果管理员使用 设置实时事件策略，将阻止用户设置 Teams 客户端中的实时事件权限，但可通过 Microsoft Graph 将 `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany` `public` **allowedAudience** 设置为 来创建实时事件 `everyone` 。
 
 ## <a name="properties"></a>属性
 
 | 属性                   | 类型                     | 说明                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
 | allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | 定义可加入实时事件的人。 下表列出了可能的值。 |
-| isRecordingEnabled         | Boolean                  | 指示是否为此实时事件启用录制。 默认值为 `false`。          |
-| isAttendeeReportEnabled    | Boolean                  | 指示是否为此实时事件启用与会者报告。 默认值为 `false`。    |
-| isQuestionAndAnswerEnabled | Boolean                  | 指示是否为此&事件启用了问答。 默认值为 `false`。                |
-| isVideoOnDemandEnabled     | Boolean                  | 指示是否为此实时事件启用视频按需。 默认值为 `false`。    |
+| isRecordingEnabled         | 布尔                  | 指示是否为此实时事件启用录制。 默认值为 `false`。          |
+| isAttendeeReportEnabled    | 布尔                  | 指示是否为此实时事件启用与会者报告。 默认值为 `false`。    |
+| isQuestionAndAnswerEnabled | 布尔                  | 指示是否为此&事件启用了问答。 默认值为 `false`。                |
+| isVideoOnDemandEnabled     | 布尔                  | 指示是否为此实时事件启用视频按需。 默认值为 `false`。    |
 
 ### <a name="broadcastmeetingaudience-values"></a>broadcastMeetingAudience 值
 
