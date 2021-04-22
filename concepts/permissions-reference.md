@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7dc6fb2c0b9d5126aa3b84331e88b3fe294ddd6f
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: c72b65a8220a82e0c48022fcf4839a6b1be7e345
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698053"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920178"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1089,7 +1089,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1245,7 +1245,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1514,6 +1514,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.Read.All_ | 阅读你组织的策略 | 允许应用无需登录的用户即可读取你所在组织的所有策略。 | 是 |
 | _Policy.Read.PermissionGrant_ | 读取许可和权限授予策略 | 允许此应用没有登录用户的情况下读取与适用于应用程序的许可和权限授予相关的策略。 | 是 |
 | _Policy.Read.ApplicationConfiguration_ | 读取组织的应用程序配置策略 | 允许应用在没有已登录用户的情况下读取组织的所有应用程序配置策略。 | 是 |
+| _Policy.ReadWrite.ApplicationConfiguration_ | 读取和写入组织的应用程序配置策略 | 允许应用在没有已登录用户的情况下读取和写入组织的所有应用程序配置策略。 | 是 | 否 |
 | _Policy.ReadWrite.AuthenticationFlows_ | 读取和写入你组织的身份验证流策略 | 允许应用在没有已登录用户的情况下读取和写入所有租户身份验证流策略。 | 是 |
 | _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 否 |
 | _Policy.ReadWrite.ConsentRequest_ | 读取和写入组织的同意请求策略 | 允许应用在没有登录用户的情况下读取和写入你的组织的许可请求策略。 | 是 | 否 |
@@ -1706,9 +1707,9 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _SecurityEvents.Read.All_        |  读取组织的安全事件 | 允许应用代表已登录用户读取组织的安全事件。 | 是  | 否 |
 | _SecurityEvents.ReadWrite.All_   | 读取和更新组织的安全事件。 | 允许应用代表已登录用户读取组织的安全事件。 还允许应用代表已登录用户更新安全事件中的可编辑属性。 | 是  | 否 |
 | _SecurityActions.Read.All_        |  读取组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。 | 是  | 否 |
-| _SecurityActions.ReadWrite.All_   | 读取和更新组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | 否 |
+| _SecurityActions.ReadWrite.All_   | 读取和更新组织的安全措施 | 允许应用代表登录的用户读取或更新组织的安全措施。  | 是  | 否 |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | 管理此应用创建或拥有的威胁指标 |允许应用代表已登录的用户创建威胁指标和完全管理这些威胁指标（阅读、更新和删除）。  | 是  | 否 |
-| _ThreatIndicators.Read.All_   | 读取组织的威胁指示器 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | 否 |
+| _ThreatIndicators.Read.All_   | 读取组织的威胁指示器 | 允许应用代表已登录的用户读取组织的所有威胁指示器。  | 是  | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1719,7 +1720,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _SecurityActions.Read.All_        |  读取组织的安全事件 | 允许应用读取组织的安全措施。 | 是  |
 | _SecurityActions.ReadWrite.All_   | 创建和读取组织的安全措施 | 允许应用读取或创建安全措施，无需已登录用户。 | 是  |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | 管理此应用创建或拥有的威胁指标 | 允许应用创建威胁指标，并完全管理这些威胁指标（阅读、更新和删除），无需已登录用户。  它无法删除其不拥有的任何威胁指标。 | 是  |
-| _ThreatIndicators.Read.All_   | 管理此应用创建或拥有的威胁指标 | 允许应用在没有登录用户的情况下读取组织的所有指示器。 | 是  |
+| _ThreatIndicators.Read.All_   | 管理此应用创建或拥有的威胁指标 | 允许应用在没有登录用户的情况下读取组织的所有威胁指示器。 | 是  |
 
 ### <a name="remarks"></a>说明
 
@@ -1771,7 +1772,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _Sites.ReadWrite.All_   | 读取和写入所有网站集中的项目 | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有网站集中的文档和列表项。 | 是 |
 | _Sites.Manage.All_      | 创建、编辑和删除所有网站集中的项目和列表 | 允许应用在没有登录用户的情况下管理和创建所有网站集中的列表、文档和列表项。  | 是  |
 | _Sites.FullControl.All_ | 完全控制所有网站集 | 允许应用在没有登录用户的情况下具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  |
-| _Sites.Selected_ | 访问已选中的网站集（预览） | 允许应用程序在不登录用户的情况下访问网站集的子集。  将在 SharePoint Online 中配置特定网站集和已授予的权限。 | 是  |
+| _Sites.Selected_ | 访问已选中的网站集 | 允许应用程序在不登录用户的情况下访问网站集的子集。  将在 SharePoint Online 中配置特定网站集和已授予的权限。 | 是  |
 
 
 ### <a name="remarks"></a>注解
