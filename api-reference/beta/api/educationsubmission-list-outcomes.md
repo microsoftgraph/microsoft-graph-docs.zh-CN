@@ -1,46 +1,46 @@
 ---
-title: 列表结果
+title: 列出结果
 description: 检索 educationoutcome 对象的列表。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5b9676e60e710ed3acd57e6719f9882f2b96d410
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 623fd7562dcfc925553996eda139377f623fa4a3
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965879"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961224"
 ---
-# <a name="list-outcomes"></a><span data-ttu-id="d39eb-103">列表结果</span><span class="sxs-lookup"><span data-stu-id="d39eb-103">List outcomes</span></span>
+# <a name="list-outcomes"></a><span data-ttu-id="5ac6d-103">列出结果</span><span class="sxs-lookup"><span data-stu-id="5ac6d-103">List outcomes</span></span>
 
-<span data-ttu-id="d39eb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d39eb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5ac6d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5ac6d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d39eb-105">检索 [educationOutcome](../resources/educationoutcome.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="d39eb-105">Retrieve a list of [educationOutcome](../resources/educationoutcome.md) objects.</span></span>  <span data-ttu-id="d39eb-106">有三种类型的结果： **educationPointsOutcome** 、 **educationFeedbackOutcome** 和 **educationRubricOutcome** 。</span><span class="sxs-lookup"><span data-stu-id="d39eb-106">There are three types of outcomes: **educationPointsOutcome** , **educationFeedbackOutcome** , and **educationRubricOutcome**.</span></span>
+<span data-ttu-id="5ac6d-105">检索 [educationOutcome 对象](../resources/educationoutcome.md) 的列表。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-105">Retrieve a list of [educationOutcome](../resources/educationoutcome.md) objects.</span></span>  <span data-ttu-id="5ac6d-106">有三种类型的结果 **：educationPointsOutcome、educationFeedbackOutcome** 和 **educationRubricOutcome**。 </span><span class="sxs-lookup"><span data-stu-id="5ac6d-106">There are three types of outcomes: **educationPointsOutcome**, **educationFeedbackOutcome**, and **educationRubricOutcome**.</span></span>
 
-<span data-ttu-id="d39eb-107">对信用卡工作分配的提交 (没有磅值的人，并且没有 rubric) 将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)。</span><span class="sxs-lookup"><span data-stu-id="d39eb-107">A submission for a credit assignment (one that has no point value and no rubric) will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md).</span></span> <span data-ttu-id="d39eb-108"> (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但忽略该结果。 ) </span><span class="sxs-lookup"><span data-stu-id="d39eb-108">(It might also return an [educationPointsOutcome](../resources/educationpointsoutcome.md), but that outcome is ignored.)</span></span>
+<span data-ttu-id="5ac6d-107">对于没有点值和 (信用额度的信用分配提交) 将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-107">A submission for a credit assignment (one that has no point value and no rubric) will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md).</span></span> <span data-ttu-id="5ac6d-108"> (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但会忽略该结果。) </span><span class="sxs-lookup"><span data-stu-id="5ac6d-108">(It might also return an [educationPointsOutcome](../resources/educationpointsoutcome.md), but that outcome is ignored.)</span></span>
 
-<span data-ttu-id="d39eb-109"> () 分配了 point 值的点分配的提交将具有一个 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和一个 [educationPointsOutcome](../resources/educationpointsoutcome.md)。</span><span class="sxs-lookup"><span data-stu-id="d39eb-109">A submission for a points assignment (one that has a point value assigned) will have both an [educationFeedbackOutcome](../resources/educationpointsoutcome.md) and an [educationPointsOutcome](../resources/educationpointsoutcome.md).</span></span>
+<span data-ttu-id="5ac6d-109">分数分配提交 (分配了分数值的) 将同时具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationPointsOutcome](../resources/educationpointsoutcome.md)。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-109">A submission for a points assignment (one that has a point value assigned) will have both an [educationFeedbackOutcome](../resources/educationpointsoutcome.md) and an [educationPointsOutcome](../resources/educationpointsoutcome.md).</span></span>
 
-<span data-ttu-id="d39eb-110">使用附加 rubric 的工作分配的提交。如果 rubric 是信用 rubric (没有数据点) ，将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。</span><span class="sxs-lookup"><span data-stu-id="d39eb-110">A submission for an assignment with an attached rubric, if the rubric is a credit rubric (no points), will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md) and an [educationRubricOutcome](../resources/educationrubricoutcome.md).</span></span> <span data-ttu-id="d39eb-111"> (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但忽略该结果。 ) </span><span class="sxs-lookup"><span data-stu-id="d39eb-111">(It might also return an [educationPointsOutcome](../resources/educationpointsoutcome.md), but that outcome is ignored.)</span></span>
+<span data-ttu-id="5ac6d-110">具有附加的分数的作业提交（如果分数为信用额度 (无分数) ，则具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-110">A submission for an assignment with an attached rubric, if the rubric is a credit rubric (no points), will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md) and an [educationRubricOutcome](../resources/educationrubricoutcome.md).</span></span> <span data-ttu-id="5ac6d-111"> (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但会忽略该结果。) </span><span class="sxs-lookup"><span data-stu-id="5ac6d-111">(It might also return an [educationPointsOutcome](../resources/educationpointsoutcome.md), but that outcome is ignored.)</span></span>
 
-<span data-ttu-id="d39eb-112">使用附加 rubric 的工作分配提交，如果 rubric 是点 rubric，则会有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)，[educationPointsOutcome] (。。/resources/educationpointsoutcome.md 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。</span><span class="sxs-lookup"><span data-stu-id="d39eb-112">A submission for an assignment with an attached rubric, if the rubric is a points rubric, will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md), an [educationPointsOutcome](../resources/educationpointsoutcome.md, and an [educationRubricOutcome](../resources/educationrubricoutcome.md).</span></span>
+<span data-ttu-id="5ac6d-112">对于附加了标点的工作分配，如果分数为分值，则提交内容将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)，即 [educationPointsOutcome] (。/resources/educationpointsoutcome.md 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-112">A submission for an assignment with an attached rubric, if the rubric is a points rubric, will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md), an [educationPointsOutcome](../resources/educationpointsoutcome.md, and an [educationRubricOutcome](../resources/educationrubricoutcome.md).</span></span>
 
-<span data-ttu-id="d39eb-113">所有结果类型都具有与该结果类型相对应的常规和已发布属性;例如， **点** 和 **publishedPoints** 、 **反馈** 和 **publishedFeedback** 。</span><span class="sxs-lookup"><span data-stu-id="d39eb-113">All outcome types have a regular and a published property appropriate to that type of outcome; for example, **points** and **publishedPoints** , **feedback** and **publishedFeedback**.</span></span>  <span data-ttu-id="d39eb-114">常规属性是教师更新的最新值;已发布的属性是返回给学生的最新值。</span><span class="sxs-lookup"><span data-stu-id="d39eb-114">The regular property is the most recent value updated by the teacher; the published property is the most recent value returned to the student.</span></span>
+<span data-ttu-id="5ac6d-113">所有结果类型都有一个适合该结果类型的常规和已发布属性;例如 **，points** 和 **publishedPoints** **、feedback** 和 **publishedFeedback**。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-113">All outcome types have a regular and a published property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**.</span></span>  <span data-ttu-id="5ac6d-114">常规属性是由教师更新的最新值;已发布属性是返回到学生的最新值。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-114">The regular property is the most recent value updated by the teacher; the published property is the most recent value returned to the student.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d39eb-115">权限</span><span class="sxs-lookup"><span data-stu-id="d39eb-115">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5ac6d-115">权限</span><span class="sxs-lookup"><span data-stu-id="5ac6d-115">Permissions</span></span>
 
-<span data-ttu-id="d39eb-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d39eb-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5ac6d-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d39eb-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="d39eb-118">Permission type</span></span>                        | <span data-ttu-id="d39eb-119">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d39eb-119">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="5ac6d-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="5ac6d-118">Permission type</span></span>                        | <span data-ttu-id="5ac6d-119">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5ac6d-119">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="d39eb-120">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d39eb-120">Delegated (work or school account)</span></span>     | <span data-ttu-id="d39eb-121">EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="d39eb-121">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="d39eb-122">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d39eb-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d39eb-123">不支持。</span><span class="sxs-lookup"><span data-stu-id="d39eb-123">Not supported.</span></span> |
-| <span data-ttu-id="d39eb-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="d39eb-124">Application</span></span>                            | <span data-ttu-id="d39eb-125">不支持。</span><span class="sxs-lookup"><span data-stu-id="d39eb-125">Not supported.</span></span> |
+| <span data-ttu-id="5ac6d-120">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5ac6d-120">Delegated (work or school account)</span></span>     | <span data-ttu-id="5ac6d-121">EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5ac6d-121">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="5ac6d-122">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5ac6d-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ac6d-123">不支持。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-123">Not supported.</span></span> |
+| <span data-ttu-id="5ac6d-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="5ac6d-124">Application</span></span>                            | <span data-ttu-id="5ac6d-125">EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5ac6d-125">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d39eb-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d39eb-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5ac6d-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5ac6d-126">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -48,27 +48,27 @@ ms.locfileid: "48965879"
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d39eb-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="d39eb-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5ac6d-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="5ac6d-127">Request headers</span></span>
 
-| <span data-ttu-id="d39eb-128">名称</span><span class="sxs-lookup"><span data-stu-id="d39eb-128">Name</span></span>      |<span data-ttu-id="d39eb-129">说明</span><span class="sxs-lookup"><span data-stu-id="d39eb-129">Description</span></span>|
+| <span data-ttu-id="5ac6d-128">名称</span><span class="sxs-lookup"><span data-stu-id="5ac6d-128">Name</span></span>      |<span data-ttu-id="5ac6d-129">说明</span><span class="sxs-lookup"><span data-stu-id="5ac6d-129">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d39eb-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="d39eb-130">Authorization</span></span> | <span data-ttu-id="d39eb-131">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="d39eb-131">Bearer {token}</span></span> |
+| <span data-ttu-id="5ac6d-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ac6d-130">Authorization</span></span> | <span data-ttu-id="5ac6d-131">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="5ac6d-131">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d39eb-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="d39eb-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5ac6d-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="5ac6d-132">Request body</span></span>
 
-<span data-ttu-id="d39eb-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d39eb-133">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="5ac6d-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d39eb-134">响应</span><span class="sxs-lookup"><span data-stu-id="d39eb-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5ac6d-134">响应</span><span class="sxs-lookup"><span data-stu-id="5ac6d-134">Response</span></span>
 
-<span data-ttu-id="d39eb-135">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationOutcome](../resources/educationoutcome.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="d39eb-135">If successful, this method returns a `200 OK` response code and a collection of [educationOutcome](../resources/educationoutcome.md) objects in the response body.</span></span>
+<span data-ttu-id="5ac6d-135">如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationOutcome](../resources/educationoutcome.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-135">If successful, this method returns a `200 OK` response code and a collection of [educationOutcome](../resources/educationoutcome.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d39eb-136">示例</span><span class="sxs-lookup"><span data-stu-id="d39eb-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5ac6d-136">示例</span><span class="sxs-lookup"><span data-stu-id="5ac6d-136">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="d39eb-137">请求</span><span class="sxs-lookup"><span data-stu-id="d39eb-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5ac6d-137">请求</span><span class="sxs-lookup"><span data-stu-id="5ac6d-137">Request</span></span>
 
-<span data-ttu-id="d39eb-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d39eb-138">The following is an example of the request.</span></span>
+<span data-ttu-id="5ac6d-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-138">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d39eb-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="d39eb-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5ac6d-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="5ac6d-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_outcomes"
@@ -77,30 +77,30 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes
 ```
-# <a name="c"></a>[<span data-ttu-id="d39eb-140">C#</span><span class="sxs-lookup"><span data-stu-id="d39eb-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5ac6d-140">C#</span><span class="sxs-lookup"><span data-stu-id="5ac6d-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-outcomes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d39eb-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d39eb-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5ac6d-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5ac6d-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-outcomes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d39eb-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d39eb-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5ac6d-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5ac6d-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-outcomes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="d39eb-143">Java</span><span class="sxs-lookup"><span data-stu-id="d39eb-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="5ac6d-143">Java</span><span class="sxs-lookup"><span data-stu-id="5ac6d-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-outcomes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="d39eb-144">响应</span><span class="sxs-lookup"><span data-stu-id="d39eb-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5ac6d-144">响应</span><span class="sxs-lookup"><span data-stu-id="5ac6d-144">Response</span></span>
 
-<span data-ttu-id="d39eb-145">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d39eb-145">The following is an example of the response.</span></span>
+<span data-ttu-id="5ac6d-145">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-145">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="d39eb-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d39eb-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5ac6d-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5ac6d-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

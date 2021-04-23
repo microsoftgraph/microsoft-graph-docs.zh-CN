@@ -7,14 +7,14 @@ metadata:
   ms.topic: landing-page
   author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 15a26f4ebffbcd3518db742f216b4f6a57cac98f
-  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+  ms.openlocfilehash: 1e9c5ac18c874d458131691b26dacd75c266dab5
+  ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "50240477"
+  ms.lasthandoff: 04/23/2021
+  ms.locfileid: "51960958"
 landingContent:
-- title: 生成第一个服务器端应用
+- title: 生成首个服务器端应用
   linkLists:
   - linkListType: get-started
     links:
@@ -78,13 +78,17 @@ landingContent:
       url: /graph/tutorials/spfx
     - text: Teams
       url: /graph/tutorials/teams
-- title: 应用场景
+    - text: Microsoft Graph 工具包
+      url: /learn/modules/msgraph-toolkit-intro
+- title: 学习模块
   linkLists:
-  - linkListType: tutorial
+  - linkListType: learn
     links:
-    - text: 更改通知和更改跟踪
-      url: /learn/modules/msgraph-changenotifications-trackchanges
-    - text: 使用查询参数优化数据使用
-      url: /learn/modules/optimize-data-usage
-    - text: 优化网络流量
-      url: /learn/modules/optimize-network-traffic
+    - text: Microsoft Graph 基础
+      url: /learn/paths/m365-msgraph-fundamentals
+    - text: 使用 Microsoft Graph 生成应用 - 关联
+      url: /learn/paths/m365-msgraph-associate
+    - text: Get started with Microsoft Graph Toolkit
+      url: /learn/modules/msgraph-toolkit-intro
+    - text: 探索 JavaScript 开发 Microsoft Graph 方案
+      url: /learn/paths/m365-msgraph-scenarios
