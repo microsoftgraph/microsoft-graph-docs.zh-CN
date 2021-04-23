@@ -1,16 +1,16 @@
 ---
 title: 获取 educationAssignmentResource
-description: '获取工作分配的特定资源的属性。  '
+description: '获取工作分配上特定资源的属性。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b8c899ffa30354fadaa4c2d25ad3e2e9a020346c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 42d6cb3f2fccf90bf874ab13f2c386b86e02e314
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966439"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961280"
 ---
 # <a name="get-educationassignmentresource"></a>获取 educationAssignmentResource
 
@@ -18,15 +18,15 @@ ms.locfileid: "48966439"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取工作分配的特定资源的属性。  
+获取工作分配上特定资源的属性。  
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments   |
+|委派（工作或学校帐户） | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 |  不支持。 | 
+|应用程序 |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}/resources/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationAssignmentResource](../resources/educationassignmentresource.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignmentResource](../resources/educationassignmentresource.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

@@ -1,16 +1,16 @@
 ---
 title: 获取 educationSubmittedSubmissionResource
-description: 返回已提交的资源。 这在学生提交后将对教师可用，并将在教师发布提交后供学生使用。  请注意，教师可以在某些资源中留下笔记。
+description: 返回已提交资源。 在学生提交后，教师或具有应用程序权限的应用程序将可以使用此功能，并且将在教师发布提交后提供给学生。  请注意，教师可以在一些资源中留下笔记。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e6a5e156ba968d866c829bf7e3f409d912808952
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 3a7db3962a2dbc7e012c1e89080008efcd228e52
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403353"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961112"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>获取 educationSubmittedSubmissionResource
 
@@ -18,16 +18,16 @@ ms.locfileid: "48403353"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回已提交的资源。 这在学生提交后将对教师可用，并将在教师发布提交后供学生使用。  请注意，教师可以在某些资源中留下笔记。
+返回已提交资源。 在学生提交后，教师或具有应用程序权限的应用程序将可以使用此功能，并且将在教师发布提交后提供给学生。  请注意，教师可以在一些资源中留下笔记。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|应用程序 | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

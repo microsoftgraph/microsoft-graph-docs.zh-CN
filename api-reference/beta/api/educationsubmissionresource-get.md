@@ -1,16 +1,16 @@
 ---
 title: 获取 educationSubmissionResource
-description: 检索与提交关联的特定资源的属性。 此资源位于"工作"资源列表中，学生应认为正在工作。 如果此资源是从工作分配复制的，则使用可能指向工作分配资源的指针进行包装。
+description: 检索与提交关联的特定资源的属性。 此资源位于"工作"资源列表中，应视为学生正在处理的工作。 如果此资源是从工作分配复制的，则用可能的指针将资源打包回工作分配资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b6f12b9b1739f844b5ef41e99942c3063f0cec95
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 66342daf0483087d29dd508905a6440cf5a77bd3
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470360"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961147"
 ---
 # <a name="get-educationsubmissionresource"></a>获取 educationSubmissionResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "50470360"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与提交关联的特定资源的属性。 此资源位于"工作"资源列表中，学生应认为正在工作。 如果此资源是从工作分配复制的，则使用可能指向工作分配资源的指针进行包装。
+检索与提交关联的特定资源的属性。 此资源位于"工作"资源列表中，应视为学生正在处理的工作。 如果此资源是从工作分配复制的，则用可能的指针将资源打包回工作分配资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50470360"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|应用程序 | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

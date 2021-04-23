@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 81df11f30ece700fc64361d7d6e9c154ed35eb49
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 797d2715dd2c273c5673e608a4794fc0c56a6f45
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942570"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961357"
 ---
 # <a name="list-approvalsteps"></a>列出 approvalSteps
 
@@ -18,7 +18,7 @@ ms.locfileid: "50942570"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出[与审批对象关联的 approvalStep](../resources/approvalstep.md) [对象。](../resources/approval.md)
+在[Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，列出与审批对象关联的[approvalStep](../resources/approvalstep.md)对象。 [](../resources/approval.md)  此调用由审批者进行，提供访问包分配请求 [的标识符](../resources/accesspackageassignmentrequest.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: feed3844717dffbfcc98a0e11db31da4a0550e05
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7fa35d99c8c77240a182b5d28a0fdb896153aa8b
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945676"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961133"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "50945676"
 - **appliesTo** 字段仅支持组。
 - 不支持动态组和嵌套组。
 
-以下是当前支持使用此推出策略进行部署的每个功能的先决条件。
+以下是当前使用此推出策略支持部署的每个功能的先决条件。
 
 ### <a name="passthrough-authentication"></a>Passthrough 身份验证
 
@@ -49,7 +49,7 @@ ms.locfileid: "50945676"
 
 * 将备用电子邮件与用户帐户关联。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                                         | 返回类型                                     | 说明                                                               |
 |:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
@@ -69,14 +69,14 @@ ms.locfileid: "50945676"
 |displayName|String|此功能显示名称策略的部署策略。|
 |功能|stagedFeatureName| 可取值为：`passthroughAuthentication`、`seamlessSso`、`passwordHashSync`、`emailAsAlternateId`、`unknownFutureValue`。|
 |id|String| 只读。|
-|isAppliedToOrganization|Boolean|指示是否应当将此功能推出策略应用于整个组织。|
+|isAppliedToOrganization|布尔|指示是否应当将此功能推出策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能推出。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| 可为 Null。 指定启用该功能的 directoryObjects 列表。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 可为 NULL。 指定启用该功能的 directoryObjects 列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

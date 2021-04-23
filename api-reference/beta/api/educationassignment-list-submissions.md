@@ -1,16 +1,16 @@
 ---
 title: 列出提交
-description: 列出与此分配关联的所有提交。 教师可以获取所有提交，而学生只能获取与其关联的提交。
+description: 列出与此分配关联的所有提交。 教师或具有应用程序权限的应用程序可以获取所有提交，而学生只能获取与其关联的提交。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f1d679e91974fb905c3a0ecc981fc06a49752e6
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c27472d82521c1972b468ebef7925e194efbae7f
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472172"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961287"
 ---
 # <a name="list-submissions"></a>列出提交
 
@@ -18,7 +18,7 @@ ms.locfileid: "50472172"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出与此分配关联的所有提交。 教师可以获取所有提交，而学生只能获取与其关联的提交。
+列出与此分配关联的所有提交。 教师或具有应用程序权限的应用程序可以获取所有提交，而学生只能获取与其关联的提交。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50472172"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|应用程序 | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 educationSubmission](../resources/educationsubmission.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 educationSubmission](../resources/educationsubmission.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

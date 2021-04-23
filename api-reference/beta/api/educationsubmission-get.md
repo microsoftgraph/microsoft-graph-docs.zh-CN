@@ -1,16 +1,16 @@
 ---
 title: 获取 educationSubmission
-description: '检索特定提交。 提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 只有分配有提交的学生才能查看和修改提交。 教师可以完全访问所有提交。 '
+description: '检索特定提交。 提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 只有分配提交的学生才能查看和修改提交。 具有应用程序权限的教师或应用程序具有所有提交的完全访问权限。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2cc1e81608ead0c8d8adaac873dd962f369e186c
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 9da43303287dd47302478ed7f377178e60530d7d
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472998"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961238"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -18,9 +18,9 @@ ms.locfileid: "50472998"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定提交。 提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 只有分配有提交的学生才能查看和修改提交。 教师可以完全访问所有提交。
+检索特定提交。 提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 只有分配提交的学生才能查看和修改提交。 具有应用程序权限的教师或应用程序具有所有提交的完全访问权限。
 
-教师的成绩和反馈是与此对象关联的 [educationOutcome](../resources/educationoutcome.md) 的一部分。 只有教师才能添加或更改成绩和反馈。 在作业发布之前，学生不会看到成绩或反馈。
+教师的成绩和反馈是与此 [对象关联的 educationOutcome](../resources/educationoutcome.md) 的一部分。 只有具有应用程序权限的教师或应用程序才能添加或更改成绩和反馈。 在作业发布之前，学生将看不到成绩或反馈。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "50472998"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|应用程序 | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

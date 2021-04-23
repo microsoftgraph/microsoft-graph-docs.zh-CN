@@ -1,34 +1,34 @@
 ---
-title: 列表结果
+title: 列出结果
 description: 检索 educationoutcome 对象的列表。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5b9676e60e710ed3acd57e6719f9882f2b96d410
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 623fd7562dcfc925553996eda139377f623fa4a3
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965879"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961224"
 ---
-# <a name="list-outcomes"></a>列表结果
+# <a name="list-outcomes"></a>列出结果
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [educationOutcome](../resources/educationoutcome.md) 对象的列表。  有三种类型的结果： **educationPointsOutcome** 、 **educationFeedbackOutcome** 和 **educationRubricOutcome** 。
+检索 [educationOutcome 对象](../resources/educationoutcome.md) 的列表。  有三种类型的结果 **：educationPointsOutcome、educationFeedbackOutcome** 和 **educationRubricOutcome**。 
 
-对信用卡工作分配的提交 (没有磅值的人，并且没有 rubric) 将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但忽略该结果。 ) 
+对于没有点值和 (信用额度的信用分配提交) 将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但会忽略该结果。) 
 
- () 分配了 point 值的点分配的提交将具有一个 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和一个 [educationPointsOutcome](../resources/educationpointsoutcome.md)。
+分数分配提交 (分配了分数值的) 将同时具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationPointsOutcome](../resources/educationpointsoutcome.md)。
 
-使用附加 rubric 的工作分配的提交。如果 rubric 是信用 rubric (没有数据点) ，将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但忽略该结果。 ) 
+具有附加的分数的作业提交（如果分数为信用额度 (无分数) ，则具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但会忽略该结果。) 
 
-使用附加 rubric 的工作分配提交，如果 rubric 是点 rubric，则会有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)，[educationPointsOutcome] (。。/resources/educationpointsoutcome.md 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。
+对于附加了标点的工作分配，如果分数为分值，则提交内容将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)，即 [educationPointsOutcome] (。/resources/educationpointsoutcome.md 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。
 
-所有结果类型都具有与该结果类型相对应的常规和已发布属性;例如， **点** 和 **publishedPoints** 、 **反馈** 和 **publishedFeedback** 。  常规属性是教师更新的最新值;已发布的属性是返回给学生的最新值。
+所有结果类型都有一个适合该结果类型的常规和已发布属性;例如 **，points** 和 **publishedPoints** **、feedback** 和 **publishedFeedback**。  常规属性是由教师更新的最新值;已发布属性是返回到学生的最新值。
 
 ## <a name="permissions"></a>权限
 
@@ -36,9 +36,9 @@ ms.locfileid: "48965879"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,7 +60,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationOutcome](../resources/educationoutcome.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationOutcome](../resources/educationoutcome.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

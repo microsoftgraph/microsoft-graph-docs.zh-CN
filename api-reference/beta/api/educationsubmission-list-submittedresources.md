@@ -1,16 +1,16 @@
 ---
 title: 列出 submittedResources
-description: 列出已正式提交进行评分的资源。 拥有提交的学生如果不重新提交作业，则无法更改提交的列表。 这是一个围绕实际资源的包装器，如果此资源从工作分配复制，则可以包含指向实际工作分配资源的指针。
+description: 列出已正式提交进行评分的资源。 拥有提交的学生如果不重新提交作业，则无法更改提交的列表。 这是实际资源的包装器，如果此资源是从工作分配复制的，则可以包含一个返回实际工作分配资源的指针。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 43339285a6b98b572d252f754727432d9eba47cf
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 78e840e8517cb90881432189e4a057c4500e2a9c
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50271951"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961126"
 ---
 # <a name="list-submittedresources"></a>列出 submittedResources
 
@@ -18,16 +18,16 @@ ms.locfileid: "50271951"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出已正式提交进行评分的资源。 拥有提交的学生如果不重新提交作业，则无法更改提交的列表。 这是一个围绕实际资源的包装器，如果此资源从工作分配复制，则可以包含指向实际工作分配资源的指针。
+列出已正式提交进行评分的资源。 拥有提交的学生如果不重新提交作业，则无法更改提交的列表。 这是实际资源的包装器，如果此资源是从工作分配复制的，则可以包含一个返回实际工作分配资源的指针。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|应用程序 | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6f6751807f0dcb042958104c4b3146a555b22189
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8365ff5f42d85698965fe0d63d70c719a037f530
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945716"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961371"
 ---
 # <a name="approval-resource-type"></a>审批资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50945716"
 
 在 [userConsentRequests](../resources/userconsentrequest.md)中，与请求关联的决策的审批对象。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -32,7 +32,7 @@ ms.locfileid: "50945716"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|审批对象的标识符。|
+|id|String|审批对象的标识符。  在权利管理中，它是访问包分配请求 [的标识符相同的标识符](accesspackageassignmentrequest.md)。|
 |步骤|[approvalStep](../resources/approvalstep.md) 集合|用于表示与在 approvalStage 中配置的审批过程中的单步 [相关的决定](../resources/approvalstage.md)。|
 
 ## <a name="relationships"></a>关系

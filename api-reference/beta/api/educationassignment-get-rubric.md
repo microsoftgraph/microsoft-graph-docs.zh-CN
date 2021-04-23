@@ -1,16 +1,16 @@
 ---
 title: 获取附加到 educationAssignment 的 educationRubric
-description: 获取附加到 educationAssignment 的 educaitonRubric （如果存在）。
+description: 获取附加到 educationAssignment 的 educationRubric（如果存在）。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e2d176c547c3e17cc28173c03ee55e75e35ed18a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 827a72185c4df930ec3ec530c9c080737ed1ceab
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966587"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961322"
 ---
 # <a name="get-educationrubric-attached-to-educationassignment"></a>获取附加到 educationAssignment 的 educationRubric
 
@@ -18,7 +18,7 @@ ms.locfileid: "48966587"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取附加到[educationAssignment](../resources/educationassignment.md)的[educationRubric](../resources/educationrubric.md)对象（如果有的话）。
+获取附加到[educationAssignment](../resources/educationassignment.md)的[educationRubric](../resources/educationrubric.md)对象（如果存在）。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48966587"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /education/classes/{id}/assignments/{id}/rubric
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationRubric](../resources/educationrubric.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationRubric](../resources/educationrubric.md) 对象。
 
 ## <a name="examples"></a>示例
 

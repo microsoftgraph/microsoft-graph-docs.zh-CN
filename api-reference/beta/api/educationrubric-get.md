@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 265b94d9ba9c4ccf3532b071c0bdae77e899a93b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d3e5c474869d906b9597324c678f6ef0733ae57b
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965999"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961245"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
 
@@ -18,9 +18,9 @@ ms.locfileid: "48965999"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [educationRubric](../resources/educationrubric.md) 对象的属性和关系。
+检索 [educationRubric 对象的属性和](../resources/educationrubric.md) 关系。
 
-请注意，在 () 中获取工作分配的 rubric 时 `GET /education/me/assignments/{id}/rubric` ，返回的内容是存在于下的原始 rubric 的不可变副本 `/education/users/{id}/rubrics` 。 副本与该特定工作分配相关联。
+请注意，在获取工作分配 () 时，返回的是下存在的原始工作分卡的不可变 `GET /education/me/assignments/{id}/rubric` 副本 `/education/users/{id}/rubrics` 。 该副本与该特定分配相关联。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,9 @@ ms.locfileid: "48965999"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ GET /education/me/rubrics/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [educationRubric](../resources/educationrubric.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [educationRubric](../resources/educationrubric.md) 对象。
 
 ## <a name="examples"></a>示例
 

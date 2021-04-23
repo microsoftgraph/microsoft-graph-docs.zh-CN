@@ -5,19 +5,19 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2a0897bef92fa129e394014a64b5ad5596a36bf6
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 863ff034080250fc7ce4cfc5b22344fcd2374fad
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470547"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961294"
 ---
 # <a name="get-educationassignmentdefaults"></a>获取 educationAssignmentDefaults
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象的属性和关系。 这些是在类中创建的新分配所遵守的类级分配默认值。 如果调用方不希望默认行为，则他们可以继续为每个工作分配创建指定自定义值。
+读取 [educationAssignmentDefaults 对象的属性和](../resources/educationassignmentdefaults.md) 关系。 这些是类中新建的工作分配所遵守的类级别分配默认值。 如果调用方不需要默认行为，可以继续为每个工作分配创建指定自定义值。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "50470547"
 |:---|:---|
 |委派（工作或学校帐户）| EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|应用程序| 不支持。 |
+|应用程序| EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /education/classes/{id}/assignmentDefaults
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象。
 
 ## <a name="examples"></a>示例
 

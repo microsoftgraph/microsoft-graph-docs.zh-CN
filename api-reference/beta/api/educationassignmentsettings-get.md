@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e65a154b17a1b7e1491908b03a5125bc69006fcd
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 0b49674930f47adb8c4bb9de2a22ef5dfacc565a
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50773632"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961273"
 ---
 # <a name="get-educationassignmentsettings"></a>获取 educationAssignmentSettings
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50773632"
 |:---|:---|
 |委派（工作或学校帐户）|EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序| EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
