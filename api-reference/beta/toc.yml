@@ -11227,6 +11227,19 @@ items:
                     items:
                       - name: 列表
                         href: api/accesspackageassignment-list.md
+                  - name: 访问包分配审批
+                    href: resources/approval.md
+                    items:
+                      - name: 审批步骤
+                        href: resources/approvalstep.md
+                      - name: 获取审批
+                        href: api/approval-get.md
+                      - name: 列出审批步骤
+                        href: api/approval-list-steps.md
+                      - name: 获取审批步骤
+                        href: api/approvalstep-get.md
+                      - name: 更新审批步骤
+                        href: api/approvalstep-update.md
                   - name: 访问包分配策略
                     href: resources/accesspackageassignmentpolicy.md
                     items:
@@ -11319,20 +11332,6 @@ items:
                         href: api/connectedorganization-delete-externalsponsors.md
                       - name: 删除内部发起人
                         href: api/connectedorganization-delete-internalsponsors.md
-                  - name: 审批
-                    href: resources/approval.md
-                    items:
-                      - name: 获取
-                        href: api/approval-get.md
-                  - name: 审批步骤
-                    href: resources/approvalstep.md
-                    items:
-                      - name: 列表
-                        href: api/approval-list-steps.md
-                      - name: 获取
-                        href: api/approvalstep-get.md
-                      - name: 更新
-                        href: api/approvalstep-update.md
                   - name: 权利管理设置
                     href: resources/entitlementmanagementsettings.md
                     items:
