@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 224cd1dfd0f26eb61a1f1a0a410d9ab315863593
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a22b1b260f73d6ea07e2dd4ad1d442ea414d84a8
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770044"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961329"
 ---
 # <a name="list-members-of-a-chat"></a>列出聊天成员。
 
@@ -33,10 +33,10 @@ ms.locfileid: "50770044"
 |---------|-------------|
 |委派（工作或学校帐户）| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| 不支持。 |
+|应用程序| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
 
 > [!NOTE]
-> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -62,9 +62,6 @@ GET /users/{user-id}/chats/{chat-id}/members
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象列表。
-
-> [!NOTE]
-> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues#missing-properties-for-chat-members)。
 
 ## <a name="example"></a>示例
 
@@ -99,9 +96,6 @@ GET https://graph.microsoft.com/beta/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1b
 ---
 
 
----
-
-
 ### <a name="response"></a>响应
 
 下面是一个响应示例。
@@ -115,7 +109,6 @@ GET https://graph.microsoft.com/beta/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
@@ -124,7 +117,9 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "roles": [],
+            "roles": [
+                "owner"
+            ],
             "displayName": "John Doe",
             "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "email": null,
@@ -134,7 +129,9 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
-            "roles": [],
+            "roles": [
+                "owner"
+            ],
             "displayName": "Bart Hogan",
             "userId": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
             "email": null,
@@ -144,7 +141,9 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-            "roles": [],
+            "roles": [
+                "owner"
+            ],
             "displayName": "Minna Pham",
             "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
             "email": null,

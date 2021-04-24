@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ba86dc1d4ad5eb5ba6fcc926873d1896d55affb4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 067575ac3fa19ed1763c88923f97b20a0126a25e
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770086"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961336"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>获取聊天中的 conversationMember
 
@@ -20,6 +20,11 @@ ms.locfileid: "50770086"
 
 从[聊天](../resources/chat.md)中检索 [conversationMember](../resources/conversationmember.md)。
 
+> [!NOTE]
+> 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
+>
+> 成员资格结果将来可能会映射到来自不同租户的用户，如响应中所示。 客户端不应假定所有成员都仅来自当前租户。
+
 ## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +33,7 @@ ms.locfileid: "50770086"
 |---------|-------------|
 |委派（工作或学校帐户）| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| 不支持。 |
+|应用程序| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
@@ -60,9 +65,6 @@ GET /users/{user-id}/chats/{chat-id}/members/{membership-id}
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。
 
-> [!NOTE]
-> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues#missing-properties-for-chat-members)。
-
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
@@ -70,43 +72,21 @@ GET /users/{user-id}/chats/{chat-id}/members/{membership-id}
 下面是一个请求示例。
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_conversation_member"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
+```http
+GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzJjOGQyYjVjLTE4NDktNDA2Ni1iNTdkLWU3YTBlOWU0NGVjOA==
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
 
 ### <a name="response"></a>响应
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- 
 {
- "blockType": "response",
+  "blockType": "response",
   "truncated": true,
   "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
@@ -115,11 +95,19 @@ GET https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@t
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "id": "id-value",
-  "displayName": "display-name-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ab8577894a63548969c5c92bb9c80c5e1%40thread.v2')/members/$entity",
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzJjOGQyYjVjLTE4NDktNDA2Ni1iNTdkLWU3YTBlOWU0NGVjOA==",
+    "roles": [
+        "owner"
+    ],
+    "displayName": "John Doe",
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+    "userId": "2c8d2b5c-1849-4066-b57d-e7a0e9e44ec8",
+    "email": "johndoe@contoso.onmicrosoft.com",
+    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 

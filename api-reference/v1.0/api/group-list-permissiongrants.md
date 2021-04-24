@@ -5,18 +5,16 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ab1189d7c01a521af65cdb6b241b8068687e7c84
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 87d93d45630ea1c0358767653cb81445723fe138
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944273"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961389"
 ---
 # <a name="list-permissiongrants-of-a-group"></a>组的列表权限管理
 
 命名空间：microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出 [组或组上](../resources/resourcespecificpermissiongrant.md) 特定 [权限](../resources/group.md)。 这是 Azure AD 应用列表，这些应用有权访问组以及每个应用具有的访问权限类型。
 
@@ -67,7 +65,7 @@ GET /groups/{group-id}/permissionGrants
   "name": "group_list_permission_grants"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/14c981a4-dca9-4565-bae6-e13ada8861be/permissionGrants
+GET https://graph.microsoft.com/v1.0/groups/14c981a4-dca9-4565-bae6-e13ada8861be/permissionGrants
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-list-permission-grants-csharp-snippets.md)]
@@ -88,8 +86,6 @@ GET https://graph.microsoft.com/beta/groups/14c981a4-dca9-4565-bae6-e13ada8861be
 ---
 
 
----
-
 ### <a name="response"></a>响应
 
 以下示例显示了相应的响应。
@@ -105,7 +101,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#permissionGrants",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#permissionGrants",
     "value": [
         {
             "id": "ZfwbxSIj9OGOBxsBmwY555mOHr_W6qN7LEbFYIIcM5A",

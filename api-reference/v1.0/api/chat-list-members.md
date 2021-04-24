@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 430406d2cb7f114d6dec0ace1f1786fe12d32b78
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 81da435082e89f74c1ab46a8460cbfe196e2be26
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201789"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961378"
 ---
 # <a name="list-members-of-a-chat"></a>列出聊天成员。
 
@@ -31,10 +31,10 @@ ms.locfileid: "51201789"
 |---------|-------------|
 |委派（工作或学校帐户）| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|应用程序| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
 
 > [!NOTE]
-> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -61,43 +61,19 @@ GET /users/{user-id}/chats/{chat-id}/members
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象列表。
 
-> [!NOTE]
-> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues#missing-properties-for-chat-members)。
-
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
 下面是一个请求示例。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_conversation_members_1"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d@unq.gbl.spaces/members
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-conversation-members-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-conversation-members-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-conversation-members-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-conversation-members-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ### <a name="response"></a>响应
 
@@ -112,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
@@ -121,7 +96,9 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "roles": [ "owner" ],
+            "roles": [
+                "owner"
+            ],
             "displayName": "John Doe",
             "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "email": null,
@@ -131,7 +108,9 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
-            "roles": [ "owner" ],
+            "roles": [
+                "owner"
+            ],
             "displayName": "Bart Hogan",
             "userId": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
             "email": null,
@@ -141,7 +120,9 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-            "roles": [ "owner" ],
+            "roles": [
+                "owner"
+            ],
             "displayName": "Minna Pham",
             "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
             "email": null,
