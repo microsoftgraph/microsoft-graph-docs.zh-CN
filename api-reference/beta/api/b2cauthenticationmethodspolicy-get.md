@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 840d3be6471391e4c4128421dbf69da6efa6a985
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1b21a24b27a8efd337da59acc7efa03b6b2e36a2
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438398"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996125"
 ---
 # <a name="get-b2cauthenticationmethodspolicy"></a>获取 b2cAuthenticationMethodsPolicy
 
@@ -105,7 +105,8 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#b2cAuthenticationMethodsPolicy",
     "id": "b2CAuthenticationMethodsPolicy",
     "isEmailPasswordAuthenticationEnabled": true,
-    "isUserNameAuthenticationEnabled": false
+    "isUserNameAuthenticationEnabled": false,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 

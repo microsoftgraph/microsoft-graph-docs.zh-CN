@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 13d605efafb3d74cbaa78d79fb7fc634168b016a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 300369a97237865faa8c8bb9842352880007a1ea
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468861"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996134"
 ---
 # <a name="update-group"></a>更新组
 
@@ -20,7 +20,7 @@ ms.locfileid: "51468861"
 
 更新 group [对象的属性](../resources/group.md) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,15 +50,14 @@ PATCH /groups/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|默认值为“`false`”。 指示组织外部人员是否可以向组发送邮件。|
-|autoSubscribeNewMembers|Boolean|默认值为“`false`”。 指示添加到组的新成员是否将被自动订阅以接收电子邮件通知。 当组上的 subscriptionEnabled 设置为 时 **，autoSubscribeNewMembers** `true`  `false` 不能为 。|
+|allowExternalSenders|Boolean|默认值为“`false`”。 指示组织外部人员是否可以向该组发送邮件。|
+|autoSubscribeNewMembers|Boolean|默认值为“`false`”。 指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 当组上的 **subscriptionEnabled** 设置为 `false` 时，**autoSubscribeNewMembers** 不能为 `true`。|
 |说明|String|可选的组说明。|
-|说明|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
 |groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
-|securityEnabled|Boolean|指定组是否是安全组，包括 Microsoft 365 组。 |
+|securityEnabled|布尔|指定组是否是安全组，包括 Microsoft 365 组。 |
 |visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|
 
 由于 **组** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有组实例中扩展的自定义属性中你自己的特定于 `PATCH` 应用的数据。
@@ -66,7 +65,7 @@ PATCH /groups/{id}
 
 > **注意：**
 >
-> - 可以通过在各自的 PATCH 请求中指定 **allowExternalSenders** 和 **autoSubscribeNewMembers** 来更新它们，而无需包括上表中的其他属性。
+> - 可以通过在 **补丁请求中指定** 自动更新 **autoSubendalNewMembers** ，而不包括上表中其他属性。
 > - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#group)。
 > - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。
 
@@ -74,7 +73,7 @@ PATCH /groups/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 响应代码， 除了更新以下属性时的响应代码 `204 No Content` `200 OK` ： **allowExternalSenders**、 **autoSubscribeNewMembers**、 **hideFromAddressLists**、 **hideFromOutlookClients**、 **isSubscribedByMail**、 **unseenCount**。
+如果成功， 此方法返回 `204 No Content` 响应代码 - 更新下列属性时除了 `200 OK` 响应代码：**allowEx在alSenders**、 **autoSubendNewMembers**， **HideFromAddressList**， **hideFromOutlookClients**， **isSubeendByMail**， **unseenCount**。
 
 ## <a name="examples"></a>示例
 
