@@ -5,12 +5,12 @@ author: anandjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cea6e29ace4907a7a573086de30a6d7fad8b1abb
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: d0193d0b6e9b3c002762f13b27b2c6839ca2f7d0
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202084"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996141"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -599,7 +599,7 @@ Content-Length: 0
 
 以下示例演示如何创建用于导入消息的团队。
 
->**注意：** 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他|
+>**注意**：将来，Microsoft 可能根据导入的数据量要求你或你的客户支付其他费用。
 
 >**注意：** 在迁移模式下创建的团队仅支持 `standard` 模板。
 

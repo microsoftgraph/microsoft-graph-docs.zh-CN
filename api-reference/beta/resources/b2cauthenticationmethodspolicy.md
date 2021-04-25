@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3a7a7e5218e58891649a0caae7d7de43e5629288
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e6b49f389e59b3f314414e2766a5e8fe9e3a9a6c
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433164"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996099"
 ---
 # <a name="b2cauthenticationmethodspolicy-resource-type"></a>b2cAuthenticationMethodsPolicy资源类型
 
@@ -36,6 +36,7 @@ Azure AD B2C 中的本地帐户未遵循来自 Azure AD 的设置或范式。 Az
 |id|String|B2C认证方式策略的id。 这是一个只读属性，也是关键所在。|
 |isEmailPasswordAuthenticationEnabled|布尔值|如果启用了电子邮件和密码身份验证方法，租户管理员可以使用电子邮件配置本地帐户。|
 |isUserNameAuthenticationEnabled|布尔值|如果启用了用户名和密码身份验证方法，租户管理员可以使用用户名配置本地帐户。|
+|isPhoneOneTimePasswordAuthenticationEnabled|布尔值|如果已启用电话号码和一次性密码身份验证方法，则租户管理员可以使用电话号码配置本地帐户。|
 
 ## <a name="relationships"></a>关系
 
@@ -58,7 +59,8 @@ Azure AD B2C 中的本地帐户未遵循来自 Azure AD 的设置或范式。 Az
 {
     "id": "b2CAuthenticationMethodsPolicy",
     "isEmailPasswordAuthenticationEnabled": true,
-    "isUserNameAuthenticationEnabled": false
+    "isUserNameAuthenticationEnabled": false,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 

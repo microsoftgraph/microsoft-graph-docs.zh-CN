@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e8cf8ba0d1f0af33b726d9df9fdc31045e6c4f97
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f2da149c32e10c0871decf1f8be96144b66b173a
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438377"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996120"
 ---
 # <a name="update-b2cauthenticationmethodspolicy"></a>更新 b2cAuthenticationMethodsPolicy
 
@@ -55,6 +55,7 @@ PATCH /policies/b2cAuthenticationMethodsPolicy
 |:-------------|:------------|:------------|
 |isEmailPasswordAuthenticationEnabled|布尔值|如果启用了电子邮件和密码身份验证方法，租户管理员可以使用电子邮件配置本地帐户。|
 |isUserNameAuthenticationEnabled|布尔值|如果启用了用户名和密码身份验证方法，租户管理员可以使用用户名配置本地帐户。|
+|isPhoneOneTimePasswordAuthenticationEnabled|布尔值|如果已启用电话号码和一次性密码身份验证方法，则租户管理员可以使用电话号码配置本地帐户。|
 
 ## <a name="response"></a>响应
 
@@ -78,7 +79,8 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 {
     "isEmailPasswordAuthenticationEnabled": false,
-    "isUserNameAuthenticationEnabled": true
+    "isUserNameAuthenticationEnabled": true,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
