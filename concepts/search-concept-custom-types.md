@@ -1,20 +1,19 @@
 ---
-ms.author: yiwenwang
-title: 使用 Microsoft Graph 中的 Microsoft 搜索 API 搜索自定义类型
-description: 可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 资源导入外部数据，并针对此外部内容运行搜索查询。
+title: 使用 Microsoft 搜索工具中的 Microsoft Graph搜索自定义类型
+description: 可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 资源导入外部数据，并对此外部内容运行搜索查询。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: c4e0b158356d3f26d8a0f36a7d7e86faeba96649
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: db80e90bf8ec6afc8b1b4a993f5c42be66a07e3d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471836"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031394"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型 (预览)  
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义 (预览)  
 
-使用 Microsoft 搜索 API 跨 Microsoft Graph 连接器所输入和编制索引 [的内容进行搜索](/microsoftsearch/connectors-overview)。 内容通过 Microsoft 提供的内置[](/microsoftsearch/connectors-gallery)连接器或通过使用 Microsoft Graph 连接器[导入 API 实现的](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)自定义连接器导入。
+使用 Microsoft 搜索 API 搜索由 Microsoft 搜索连接器检索和索引[Graph内容](/microsoftsearch/connectors-overview)。 内容通过 Microsoft 提供的内置[](/microsoftsearch/connectors-gallery)连接器导入，或通过使用 Microsoft Graph连接器导入 API 实现的[自定义连接器](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)。
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -22,9 +21,9 @@ ms.locfileid: "50471836"
 
 导入内容并编制索引后，可以使用搜索 API 查询内容。
 
-若要搜索自定义类型，请指定查询方法 [的请求正文中的](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 以下属性：
+若要搜索自定义类型，在查询方法的请求正文中指定 [以下](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 属性：
 
-- 要包括在连接器设置期间分配的连接 ID 的 **contentSources** 属性。 可以传递多个连接 ID 以跨多个连接进行搜索。 结果在单个列表中返回，跨多个连接进行排名。
+- 要包括在连接器设置过程中分配的连接 ID 的 **contentSources** 属性。 你可以传递多个连接 ID 以跨多个连接进行搜索。 结果在单个列表中返回，并跨多个连接进行排名。
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
@@ -32,13 +31,13 @@ TODOSEARCHAPI - Bug 1653398
 
 - **entityTypes** 属性为 `externalItem` 。
 
-- 要 **包含** 要检索的外部项中的字段的 fields 属性。 请注意，如果请求中不包含任何字段，响应将包含为 **contentSources** 属性中指定的连接指定的数据架构中标记为可检索的所有字段。
+- 要 **包含** 要检索的外部项中的字段的 fields 属性。 请注意，如果请求中不包含任何字段，响应将包含 **contentSources** 属性中为指定连接指定的数据架构中标记为可检索的所有字段。
 
-此外，您可以基于 [外部](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 项中的属性聚合搜索结果，这些属性是数字或字符串类型，并且设置为在架构中可 [精简](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)。 有关详细信息，请参阅使用 [聚合优化搜索结果](search-concept-aggregation.md)。
+此外，您可以基于 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 中的属性聚合搜索结果，这些属性是数值或字符串类型，且在架构中设置为可 [精简](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)。 有关详细信息，请参阅使用聚合 [优化搜索结果](search-concept-aggregation.md)。
 
 ## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>示例 1：使用 Azure SQL内置连接器检索项目
 
-此示例中 [，AdventureWorks](/sql/samples/adventureworks-install-configure) 数据库的内容已使用 Azure SQL内置连接器进行获取。
+本示例中[，AdventureWorks](/sql/samples/adventureworks-install-configure)数据库的内容已使用 Azure SQL内置连接器进行采用。
 
 ### <a name="request"></a>请求
 
@@ -124,7 +123,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-retrieve-items-using-semantic-labels"></a>示例 2：使用语义标签检索项目
+## <a name="example-2-retrieve-items-using-semantic-labels"></a>示例 2：使用语义标签检索项
 
 ### <a name="request"></a>请求
 
@@ -239,7 +238,7 @@ Content-type: application/json
 }
 ```
 
-有关详细信息，请参阅"[分配属性标签"。](/microsoftsearch/configure-connector#step-5-assign-property-labels)
+有关详细信息，请参阅分配 [属性标签](/microsoftsearch/configure-connector#step-5-assign-property-labels)。
 
 ## <a name="next-steps"></a>后续步骤
 
