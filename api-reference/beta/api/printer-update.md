@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 41f24b9b5c76502080441efac63f927018bfb1ec
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0602c04ab890f773866d8721580c0c099cccbeb4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921982"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051072"
 ---
 # <a name="update-printer"></a>更新打印机
 
@@ -44,7 +44,7 @@ PATCH /print/printers/{id}
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization | Bearer {token}。必需。 |
-| Content-type  | `application/json` 使用委派权限时， `application/ipp` 或者 `application/json` 使用应用程序权限时。 必填。|
+| Content-type  | `application/json` 使用委派权限时， `application/ipp` 或者 `application/json` 使用应用程序权限时。 必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -73,7 +73,7 @@ PATCH /print/printers/{id}
 |manufacturer|String|打印机的制造商。|
 |model|String|打印机的模型名称。|
 |状态|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
-|isAcceptingJobs|布尔|打印机当前是否接受新的打印作业。|
+|isAcceptingJobs|布尔值|打印机当前是否接受新的打印作业。|
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
@@ -149,7 +149,7 @@ Content-length: 124
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

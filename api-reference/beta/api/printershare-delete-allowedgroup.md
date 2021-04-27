@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: be6d50dad54ac5f9c7995c4dd9b39b49d5b5c1fe
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dce2a4d044b555116396953e926ef3c5d8c13fb0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777354"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051058"
 ---
 # <a name="delete-allowedgroup-from-printershare"></a>从 printerShare 中删除 allowedGroup
 
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/{id}/$re
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

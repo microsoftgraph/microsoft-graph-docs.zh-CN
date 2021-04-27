@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 4bb2829845db6b5cf5134ff6aecec7708ff0fa81
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 328a54bb73517611b3fc96603601309cbb1a7ea7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976429"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050869"
 ---
 # <a name="get-securityaction"></a>获取 securityAction
 
@@ -18,7 +18,7 @@ ms.locfileid: "48976429"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [securityAction](../resources/securityaction.md) 对象的属性和关系。
+检索 [securityAction 对象的属性和](../resources/securityaction.md) 关系。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48976429"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | SecurityActions、SecurityActions 和所有 |
+| 应用程序                            | SecurityActions.Read.All、SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /security/securityActions/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅 [OData Query Parameters](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /security/securityActions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [securityAction](../resources/securityaction.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [securityAction](../resources/securityaction.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

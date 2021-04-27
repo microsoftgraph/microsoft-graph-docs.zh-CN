@@ -1,24 +1,24 @@
 ---
-title: 列出威胁智能指示器
+title: 列出威胁情报指示器
 description: 检索 tiindicator 对象的列表。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1d3b92153f10797b4cc4312f4ac9acbc790e1320
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5e26dab1b49d21953ab6e7fbe52916c867172183
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971976"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050764"
 ---
-# <a name="list-threat-intelligence-indicators"></a>列出威胁智能指示器
+# <a name="list-threat-intelligence-indicators"></a>列出威胁情报指示器
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [tiIndicator](../resources/tiindicator.md) 对象的列表。
+检索 [tiIndicator 对象](../resources/tiindicator.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /security/tiIndicators
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅 [OData Query Parameters](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /security/tiIndicators
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tiIndicator](../resources/tiindicator.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [tiIndicator](../resources/tiindicator.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/security/tiIndicators
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

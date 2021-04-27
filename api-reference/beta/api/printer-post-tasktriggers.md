@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 28f3d5890cce55e10d51892e98c8ff5ddf6e6a45
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: cd654963b8aa5dc5ce30c2fadc644fb3aaa03568
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993971"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052024"
 ---
 # <a name="create-tasktrigger"></a>Create taskTrigger
 
@@ -18,16 +18,16 @@ ms.locfileid: "48993971"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[打印机](../resources/printer.md)上创建新的[任务触发器](../resources/printtasktrigger.md)。 目前，每台打印机只能指定 **一个** 任务触发器，但将来可以删除此限制。 
+在指定的 [打印机上创建新的](../resources/printtasktrigger.md) 任务 [触发器](../resources/printer.md)。 目前， **每个打印机** 只能指定一个任务触发器，但以后可能会删除此限制。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 完全控制和所有打印机。 |
+|委派（工作或学校帐户）| Printer.ReadWrite.All、Printer.FullControl.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -44,10 +44,10 @@ POST /print/printers/{id}/taskTriggers
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [printTaskTrigger](../resources/printtasktrigger.md) 对象的 JSON 表示形式。 使用格式提供对 [printTaskDefinition](../resources/printtaskdefinition.md) 的引用 `@odata.bind` ，如下面的示例所示。
+在请求正文中，提供 [printTaskTrigger](../resources/printtasktrigger.md) 对象的 JSON 表示形式。 使用 格式提供 [对 printTaskDefinition](../resources/printtaskdefinition.md) 的引用 `@odata.bind` ，如以下示例所示。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printTaskTrigger](../resources/printtasktrigger.md) 。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和[printTaskTrigger。](../resources/printtasktrigger.md)
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -90,7 +90,7 @@ POST https://graph.microsoft.com/beta/print/printers/ae63f617-4856-4b45-8ea9-69d
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

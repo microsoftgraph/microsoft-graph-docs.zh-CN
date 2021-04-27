@@ -1,24 +1,24 @@
 ---
-title: 'tiIndicator: updateTiIndicators'
-description: 在一个请求中（而不是多个请求）更新多个威胁智能 (TI) 指示器。
+title: tiIndicator：updateTiIndicators
+description: 在一个 (（) 请求）中更新多个威胁情报和 TI) 指示器。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a5531b9d43b0700451e902a7c1f89c2c9020a37e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4c594c9ba75ea0ee1cd1fcb8390d4b9ff738d48c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971997"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050771"
 ---
-# <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
+# <a name="tiindicator-updatetiindicators"></a>tiIndicator：updateTiIndicators
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在一个请求中（而不是多个请求）更新多个威胁智能 (TI) 指示器。
+在一个 (（) 请求）中更新多个威胁情报和 TI) 指示器。
 
 ## <a name="permissions"></a>权限
 
@@ -46,15 +46,15 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供具有以下参数的 JSON 对象。 有关可更新的属性的详细信息，请参阅 [更新 tiIndicator](tiindicator-update.md)。 每个 tiIndicator 的必填字段为： `id` 、 `expirationDateTime` 、 `targetProduct` 。
+在请求正文中，提供具有以下参数的 JSON 对象。 有关可更新的属性的详细信息，请参阅[更新 tiIndicator。](tiindicator-update.md) 每个 tiIndicator 的必填字段为 `id` `expirationDateTime` `targetProduct` ：、、。
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|tiIndicator 集合| 要更新的 **tiIndicators** 的集合。 每个实体都必须具有要更新的 **id** 和其他可编辑属性。|
+|值|tiIndicator 集合| 要 **更新的 tiIndicator** 集合。 每个实体必须具有 **id** 和其他可编辑属性以进行更新。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tiIndicator](../resources/tiindicator.md) 对象集合。  如果存在错误，则此方法返回 `206 Partial Content` 响应代码。  有关详细信息，请参阅 [错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [tiIndicator](../resources/tiindicator.md) 对象集合。  如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
 
 ## <a name="examples"></a>示例
 
@@ -112,7 +112,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

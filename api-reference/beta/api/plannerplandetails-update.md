@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ee12fd4607f4f3b2fad4f32e0473698fbe95b601
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: ef2cae44d68d7cca7fea973a49030bb35b334295
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473582"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050015"
 ---
 # <a name="update-plannerplandetails"></a>更新 plannerplandetails
 
@@ -24,7 +24,7 @@ ms.locfileid: "51473582"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Tasks.ReadWrite、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.ReadWrite，Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -45,7 +45,7 @@ PATCH /planner/plans/{id}/details
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
-|sharedWith|[plannerUserIds](../resources/planneruserids.md)|此计划共享的用户 ID 集。 如果你要利用 Microsoft 365 组，请使用组 API 管理组成员身份以 [共享组计划](../resources/group.md) 。 您还可以将组的现有成员添加到此集合中，尽管他们无需访问组所拥有的计划。|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|此计划共享的用户 ID 集。 如果你要利用Microsoft 365组，请使用组 API 管理组成员身份以[共享组计划](../resources/group.md)。 您还可以将组的现有成员添加到此集合中，尽管他们无需访问组所拥有的计划。|
 
 ## <a name="response"></a>响应
 
@@ -99,7 +99,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

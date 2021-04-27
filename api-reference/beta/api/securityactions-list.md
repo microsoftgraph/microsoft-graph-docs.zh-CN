@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 5f48f75ea88aca81dc780b2c09d139cff9fea683
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 45eac647d3bdae27109417e62440478301ebb5a0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970926"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051982"
 ---
 # <a name="list-securityactions"></a>列出 securityActions
 
@@ -18,7 +18,7 @@ ms.locfileid: "48970926"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [securityAction](../resources/securityaction.md) 对象的列表。
+检索 [securityAction 对象](../resources/securityaction.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48970926"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | SecurityActions、SecurityActions 和所有 |
+| 应用程序                            | SecurityActions.Read.All、SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /security/securityActions
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅 [OData Query Parameters](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /security/securityActions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [securityAction](../resources/securityaction.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [securityAction](../resources/securityaction.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/security/securityActions
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

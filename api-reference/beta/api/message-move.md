@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2ee1616fdb3fa5c38ed0848359ad09dbb1948c9a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9982fa413b23aa5746a027879f8f9d3dbdc52c05
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131164"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050141"
 ---
 # <a name="message-move"></a>message: move
 
@@ -45,8 +45,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | 标头 | 值 |
 |:-------|:------|
-| 授权 | `Bearer {token}`（）。 必需。 |
-| Content-Type | `application/json`（）。 必需。 |
+| 授权 | `Bearer {token}`. 必需。 |
+| Content-Type | `application/json`. 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 33e73e44b260787c43da3a98e3bf2e3972cdfd84
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: c8b69f7e76802ffd092b0ef854e42f2815b08e9b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473155"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051723"
 ---
 # <a name="list-contactfolders"></a>List contactFolders
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders
 ---
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

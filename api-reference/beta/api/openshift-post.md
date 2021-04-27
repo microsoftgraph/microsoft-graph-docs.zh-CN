@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f9b02e5463c5215e67aef206d5876400ef275a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 313c5a8ecdd940d9811dab653152e04ad15c59f4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019948"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052087"
 ---
 # <a name="create-openshift"></a>创建 openShift
 
@@ -18,7 +18,7 @@ ms.locfileid: "48019948"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建 [openshift](../resources/openshift.md) 对象的实例。
+创建 [openshift 对象](../resources/openshift.md) 的实例。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ POST /teams/{id}/schedule/openShifts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [openShift](../resources/openshift.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [openShift](../resources/openshift.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -107,7 +107,7 @@ Content-length: 244
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

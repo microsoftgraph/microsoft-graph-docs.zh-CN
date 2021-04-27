@@ -1,16 +1,16 @@
 ---
 title: 创建 securityAction
-description: 创建新的 securityAction 对象。
+description: 创建新的 securityAction 对象。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: dbbb6ce1b566ec0dec977a51d02426c2c62f7117
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f1d513ca1a24a1314be48f550be1ceae81282609
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970912"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049735"
 ---
 # <a name="create-securityaction"></a>创建 securityAction
 
@@ -50,7 +50,7 @@ POST /security/securityActions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [securityAction](../resources/securityaction.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [securityAction](../resources/securityaction.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -107,7 +107,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

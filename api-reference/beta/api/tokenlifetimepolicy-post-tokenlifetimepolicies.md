@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 763b80954e12eb3b3dccb9d5c4a6b365dd9994e1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d14b289f640c7ab2ca0b7e335d6f7b87c22eb536
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443364"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051758"
 ---
 # <a name="create-tokenlifetimepolicy"></a>创建 tokenLifetimePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50443364"
 
 创建新的 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50443364"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| 应用程序                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,11 +47,11 @@ POST policies/tokenLifetimePolicies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [tokenLifetimePolicy 对象的](../resources/tokenlifetimepolicy.md) JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `201 Created` 代码和新的 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -100,7 +100,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

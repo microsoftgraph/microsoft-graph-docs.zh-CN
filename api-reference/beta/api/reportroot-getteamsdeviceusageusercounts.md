@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageUserCounts'
-description: 按设备类型获取每日唯一 Microsoft Teams 许可用户数。
+description: 按设备类型获取许可Microsoft Teams每天的唯一用户数。
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 3675fbc498ae3dfb888ebaf7e8062f149b1200a5
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: f5c409464be428d2f1faaf2125128431ca72e5ca
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766215"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050876"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766215"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按设备类型获取每日唯一 Microsoft Teams 许可用户数。
+按设备类型获取许可Microsoft Teams每天的唯一用户数。
 
 ## <a name="permissions"></a>权限
 
@@ -153,7 +153,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserCounts(perio
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

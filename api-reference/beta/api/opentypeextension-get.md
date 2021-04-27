@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 2071e8e6520cfc1145b0e88faabf3a0969f9ac96
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 461cde694e9c9aff3738e5e2a3642b0ae82828b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092706"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051121"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
@@ -20,24 +20,24 @@ ms.locfileid: "50092706"
 
 获取用名称或完全限定的名称标识的开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象）。
 
-"权限" [部分](#permissions) 中的表列出了支持开放扩展的资源。
+"权限" ["](#permissions) "部分中列出支持打开扩展的资源。
 
 下表列出了可以从受支持的资源实例中获取开放扩展的三种应用场景。
 
 |**GET 应用场景**|**支持的资源**|**响应正文**|
 |:-----|:-----|:-----|
-|从已知资源实例中获取特定扩展。| [管理单元](../resources/administrativeunit.md)， [设备](../resources/device.md)， [事件](../resources/event.md)， [组](../resources/group.md)， [组](../resources/event.md)事件， [组](../resources/post.md)帖子， [消息](../resources/message.md)， [组织](../resources/organization.md)， [个人联系人](../resources/contact.md)， [用户](../resources/user.md)， [任务](../resources/todotask.md)， [任务列表](../resources/todotasklist.md)  | 仅开放扩展。|
-|获取一个通过特定扩展插件扩展的已知资源实例。|管理单元、设备、事件、组、组事件、组帖子、消息、组织、个人联系人、用户、任务、任务列表。 |一个通过开放扩展插件扩展的资源实例。|
+|从已知资源实例中获取特定扩展。| [管理单元](../resources/administrativeunit.md)、[设备](../resources/device.md)[、事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)[、组织](../resources/organization.md)[、个人联系人](../resources/contact.md)、[用户、](../resources/user.md)[任务、](../resources/todotask.md)[任务列表](../resources/todotasklist.md)  | 仅开放扩展。|
+|获取一个通过特定扩展插件扩展的已知资源实例。|管理单元、设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户、任务、任务列表。 |一个通过开放扩展插件扩展的资源实例。|
 |查找并展开具有特定扩展的资源实例。 | 事件、组事件、组帖子、邮件、个人联系人、任务、任务列表 |通过开放扩展展开的资源实例。|
 
 ## <a name="permissions"></a>权限
 
-根据包含扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+根据包含扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.Read.All | 不支持 | Device.ReadWrite.All |
-| [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [组事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
@@ -45,8 +45,8 @@ ms.locfileid: "50092706"
 | [组织](../resources/organization.md) | User.Read | 不支持 | Organization.Read.All |
 | [个人联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [用户](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [任务](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [任务列表](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -74,7 +74,7 @@ GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extens
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>获取一个通过匹配的扩展插件扩展的已知资源实例 
 
-对于事件、组事件、组帖子、消息、个人联系人、任务、任务列表资源类型，可以使用与获取资源实例相同的 REST 请求，查找与 id 属性上的筛选器匹配的扩展，并使用扩展插件展开该实例。 该响应包括大部分资源属性。
+对于事件、组事件、组帖子、邮件、个人联系人、任务、任务列表资源类型，可使用与获取资源实例相同的 REST 请求，查找与其 **id** 属性上的筛选器匹配的扩展，然后使用此扩展来扩展实例。 该响应包括大部分资源属性。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -305,7 +305,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 
 #### <a name="response-3"></a>响应 3
 
-下面是第三个示例的响应。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是第三个示例的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -466,7 +466,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%2
 
 在第五个示例的响应中，用户邮箱中仅有一封邮件，其 **id** 等于 `Com.Contoso.Referral`。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

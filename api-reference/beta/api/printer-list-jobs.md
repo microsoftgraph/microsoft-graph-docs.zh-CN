@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 190fd272fa09807ef7866bb3d34df46eb4623875
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: a1368cd07dd32f2c04e9a8bb41b04b5ce8d092cb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766460"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049896"
 ---
 # <a name="list-printjobs-for-a-printer"></a>列出打印机的 printJobs
 
@@ -31,7 +31,7 @@ ms.locfileid: "51766460"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrintJob.ReadBasic、PrintJob.Read、PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic、PrintJob.ReadWrite、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
+|应用程序| PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: be28e66a48462ec2bda64c3ae66b1f0cb6059548
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: b58d90ef3be8a723190909ee960f659de6f6c58b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115197"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049063"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -20,7 +20,7 @@ ms.locfileid: "50115197"
 
 获取 SharePoint 网站使用情况的详细信息。
 
-> **注意：** 有关不同报告视图和名称的详细信息，请参阅 [Microsoft 365 报告 - SharePoint 网站使用情况](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)。
+> **注意：** 有关不同报告视图和名称的详细信息，请参阅Microsoft 365 [报告 -](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)SharePoint使用率。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +54,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 
-此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
+此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -98,7 +98,7 @@ CSV 文件包含下面的列标题：
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md)** 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **[sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md)** 对象。
 
 此请求的默认页面大小为 200 个项目。
 
@@ -106,7 +106,7 @@ CSV 文件包含下面的列标题：
 
 ### <a name="csv"></a>CSV
 
-下面是一个输出 CSV 的示例。
+下面是输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -173,7 +173,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

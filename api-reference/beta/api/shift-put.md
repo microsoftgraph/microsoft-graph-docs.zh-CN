@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9f18b176255892e2ad6f1089d00644db84e407c3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 63ae7275372a2caed4e675b3e8360b4e29478aed
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969167"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051856"
 ---
 # <a name="replace-shift"></a>替换班次
 
@@ -18,9 +18,9 @@ ms.locfileid: "48969167"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-替换现有 [班次](../resources/shift.md)。
+替换现有的 [班次](../resources/shift.md)。
 
-如果指定的 [班次](../resources/shift.md) 不存在，则此方法返回 `404 Not found` 。
+如果指定的 [班次](../resources/shift.md) 不存在，此方法返回 `404 Not found` 。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48969167"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All |
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [shift](../resources/shift.md) 对象的 JSON 表示形式。
+在请求正文中，提供 shift 对象的 JSON [表示](../resources/shift.md) 形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [shift](../resources/shift.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [shift](../resources/shift.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -143,7 +143,7 @@ Prefer: return=representation
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

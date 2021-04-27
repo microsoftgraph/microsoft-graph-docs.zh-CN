@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 157f6c40b19b7b81fa6f72bf0cf9b945ce593e43
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: b8442e460fdcef6132c7f29f82a5224a93db36a3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576433"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052703"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
@@ -58,7 +58,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [workbookTable](../resources/workbooktable.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [workbookTable](../resources/workbooktable.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -100,7 +100,7 @@ Content-length: 54
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

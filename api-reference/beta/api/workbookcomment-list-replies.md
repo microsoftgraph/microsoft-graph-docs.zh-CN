@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: eac50dcedbcf3f396c33574c9ca4f2d5604a6b51
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0c3e96d13266b294f51105bbdd4437cb526f3a33
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941869"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049560"
 ---
 # <a name="list-workbookcommentreplies"></a>列出 workbookCommentReplies
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/rep
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

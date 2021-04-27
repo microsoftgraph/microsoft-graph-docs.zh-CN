@@ -2,16 +2,15 @@
 title: 创建 temporaryAccessPassAuthenticationMethod
 description: 创建新的 temporaryAccessPassAuthenticationMethod 对象。
 author: inbarckMS
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 801f82d30baf5a231b0fea78c3613773d4dd8f53
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 504b81b94252ffde5e9247e0357763e05fb806ac
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761091"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049658"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>创建 temporaryAccessPassAuthenticationMethod
 命名空间：microsoft.graph
@@ -73,7 +72,7 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 |:---|:---|:---|:---|
 |startDateTime|DateTimeOffset|temporaryAccessPass 可供使用的日期和时间（如果未设置，则创建时可以使用临时访问传递）。| 不支持|
 |lifetimeInMinutes|Int32|temporaryAccessPass 的生存期，以分钟计，从创建时间开始或 startDateTime（如果已设置）。 最少 10 天，最多 43200 (相当于 30 天) 。| 不支持|
-|isUsableOnce|布尔|确定是否将传递限制为一次使用。 如果为 True，则传递可以使用一次，如果为 False，则临时AccessPass 生命周期内可以多次使用传递。 多用途临时访问 (isUsableOnce = false) ，只有在临时访问传递身份验证方法策略允许时，才能创建并用于登录。|  不支持|
+|isUsableOnce|布尔值|确定是否将传递限制为一次使用。 如果为 True，则传递可以使用一次，如果为 False，则临时AccessPass 生命周期内可以多次使用传递。 多用途临时访问 (isUsableOnce = false) ，只有在临时访问传递身份验证方法策略允许时，才能创建并用于登录。|  不支持|
 
 
 

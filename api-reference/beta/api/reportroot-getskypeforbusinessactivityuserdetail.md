@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6f5d03e4997dd199cfa653641448bcd656626dad
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 21c43c0098ae1a9efe7a018d51fd320a19caec17
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982619"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049742"
 ---
 # <a name="reportroot-getskypeforbusinessactivityuserdetail"></a>reportRoot: getSkypeForBusinessActivityUserDetail
 
@@ -22,7 +22,7 @@ ms.locfileid: "49982619"
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表 - Skype for Business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ GET /reports/getSkypeForBusinessActivityUserDetail(date={date_value})
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 
-此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
+此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -110,7 +110,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md)** 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **[skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md)** 对象。
 
 此请求的默认页面大小为 200 个项目。
 
@@ -118,7 +118,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="csv"></a>CSV
 
-下面是一个输出 CSV 的示例。
+下面是输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -185,7 +185,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessActivityUserDeta
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

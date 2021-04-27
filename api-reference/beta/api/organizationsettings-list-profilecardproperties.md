@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: cc3da3eca4f965bdebbf354da2c70470506408f7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7d0c064b6d422285d078a07edbc2ef24184a7d2a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968518"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052052"
 ---
 # <a name="list-profilecardproperties"></a>列出 profileCardProperties
 
@@ -18,7 +18,7 @@ ms.locfileid: "48968518"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组织的 [profileCardProperty](../resources/profilecardproperty.md) 资源的集合。 每个资源都由其 **directoryPropertyName** 属性标识。
+获取组织的 [profileCardProperty](../resources/profilecardproperty.md) 资源的集合。 每个资源都由它的 **directoryPropertyName** 属性标识。
 
 ## <a name="permissions"></a>权限
 
@@ -26,11 +26,11 @@ ms.locfileid: "48968518"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User. All                    |
+| 委派（工作或学校帐户）     | User.Read、User.Read.All                    |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | 不支持。                              |
 
->**注意：** 若要对此操作使用委派权限，则需要已登录用户拥有租户管理员或全局管理员角色。
+>**注意：** 对此操作使用委派权限要求登录用户具有租户管理员或全局管理员角色。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [profileCardProperty](../resources/profilecardproperty.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [profileCardProperty](../resources/profilecardproperty.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

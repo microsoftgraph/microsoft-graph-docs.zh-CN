@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 633da99ef94b980ce57a4f362cade31a26d4f054
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 86ea62f245e36bee9a3499946f7a3eb80249d368
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962744"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049147"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -29,7 +29,7 @@ ms.locfileid: "48962744"
 |应用程序 | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-在组的[conversationThread](../resources/conversationthread.md)中获取[帖子](../resources/post.md)的附件。 指定父 [对话](../resources/conversation.md) 是可选的。
+获取对话 [中帖子](../resources/post.md) 的附件 [组](../resources/conversationthread.md) 线程。 指定父 [对话是可选的](../resources/conversation.md) 。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-特别是，您可以使用 $expand 查询参数将所有发布附件添加到其余的 post 属性中。 例如：
+具体而言，您可以使用 $expand 查询参数，以将所有内联帖子附件与发布属性的其余部分一起包含。 例如：
 
 <!-- { "blockType": "ignored" } -->
 ```
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "post_get_attachments_beta",

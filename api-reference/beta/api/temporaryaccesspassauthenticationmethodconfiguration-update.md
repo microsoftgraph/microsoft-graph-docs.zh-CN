@@ -2,16 +2,15 @@
 title: 更新 temporaryAccessPassAuthenticationMethodConfiguration
 description: 更新 temporaryAccessPassAuthenticationMethodConfiguration 对象的属性。
 author: inbarckms
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1d8d888f71fd59b8b2b00cd45c2c88151e940aea
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 6cd30c6016739fcb40c3d6541b1fd1b03f72bee6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761763"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049637"
 ---
 # <a name="update-temporaryaccesspassauthenticationmethodconfiguration"></a>更新 temporaryAccessPassAuthenticationMethodConfiguration
 命名空间：microsoft.graph

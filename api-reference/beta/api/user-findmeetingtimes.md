@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a7cbf2803c65f3159cd7cbd3aafaa147114983e0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 9fbb914533b8eedce9e896a86886bdba656d6034
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475427"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052654"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -52,7 +52,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在相应的 **类型** 属性中，指定或指定人员 `required` `optional` `resource` 以及会议室等资源。 如果未指定 **，findMeetingTimes** 将 `required` 假定类型属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
+|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在相应的 **type 属性** 中，为用户和会议室等资源 `required` 指定 或 `optional` `resource` 。 如果未指定 **，findMeetingTimes** 将 `required` 假定为 **type** 属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
 |isOrganizerOptional|Edm.Boolean|如果组织者不必必须参加，则指定 `True`。默认值为 `false`。可选。|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|组织者对会议地点的要求，如是否必须返回会议地点建议，或是否只能在特定地点举行会议。可选。|
 |maxCandidates|Edm.Int32|要返回的会议时间建议数量上限。可选。|
@@ -194,7 +194,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

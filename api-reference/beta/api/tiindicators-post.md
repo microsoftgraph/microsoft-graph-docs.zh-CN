@@ -1,18 +1,18 @@
 ---
-title: 创建威胁情报指标
+title: 创建威胁情报指示器
 description: 创建新的 tiIndicator。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: be0e89fd353cbe54a9f3d9d6dbb3108a1b4da8db
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14620ff345c5d74075548b17e26bc7923f942da6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981468"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050757"
 ---
-# <a name="create-threat-intelligence-indicator"></a>创建威胁情报指标
+# <a name="create-threat-intelligence-indicator"></a>创建威胁情报指示器
 
 命名空间：microsoft.graph
 
@@ -46,11 +46,11 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供包含至少一个[电子邮件](../resources/tiindicator.md#indicator-observables---email)、[文件](../resources/tiindicator.md#indicator-observables---file)或[网络](../resources/tiindicator.md#indicator-observables---network)可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式，并提供以下必需字段： `action` 、、、、 `description` `expirationDateTime` `targetProduct` `threatType` 、 `tlpLevel` 。 
+在请求正文中，提供[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式，该对象包含至少一[](../resources/tiindicator.md#indicator-observables---file)个[电子邮件](../resources/tiindicator.md#indicator-observables---email)、[](../resources/tiindicator.md#indicator-observables---network)文件或网络可观测对象，以及以下必填 `action` 字段 `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` ：、。 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [tiIndicator](../resources/tiindicator.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码 `201 Created` 和 [tiIndicator](../resources/tiindicator.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -110,7 +110,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

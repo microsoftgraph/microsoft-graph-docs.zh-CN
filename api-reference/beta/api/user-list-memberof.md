@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 677af1dedf00fa7fa917a36e70480805bf03f672
-ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
+ms.openlocfilehash: dcbe9a15f768859a2961a5b31b36d4d8b15f8d2f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51836974"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050729"
 ---
 # <a name="list-user-memberof"></a>List user memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "51836974"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[用户](../resources/group.md)[是直接](../resources/directoryrole.md)成员中的组、[](../resources/administrativeunit.md)目录角色和管理单元。 此操作不可传递。
+获取用户直接所属的[组](../resources/group.md)，[目录角色](../resources/directoryrole.md)和[管理单位](../resources/administrativeunit.md)。 此操作不可传递。
 
 ## <a name="permissions"></a>Permissions
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/users/{id}/memberOf
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -140,7 +140,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -203,7 +203,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -245,7 +245,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

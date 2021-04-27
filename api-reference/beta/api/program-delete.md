@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: a80b84aa0835fe0c8fa3e21cf1f8da37e851b394
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: be26ef2876f5aecc171bd262d41a711a0d0b0f3e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440986"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049840"
 ---
 # <a name="delete-program"></a>删除程序
 
@@ -20,17 +20,17 @@ ms.locfileid: "50440986"
 
 在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，删除 [程序](../resources/program.md) 对象。
 
-不要删除仍链接到该程序的程序，应首先从该程序中删除或取消链接这些访问评审，并链接到 `programControl` 其他程序。  此外，请注意，无法删除内置默认程序。
+不要删除仍链接到该程序的程序，应首先删除这些访问评审，或将其从该程序取消链接，并链接到 `programControl` 其他程序。  此外，请注意，无法删除内置默认程序。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
 登录用户还必须具有允许其创建程序的目录角色。
 
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f91
 ---
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

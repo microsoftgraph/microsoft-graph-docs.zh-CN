@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 61776660883cdcf9ea8d6122e2e84c5b63505935
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 33e88005c5840196b8f6c668b51ca0135e9e23f0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131171"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050134"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -28,11 +28,11 @@ ms.locfileid: "50131171"
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
 
-可以通过发布到现有邮件的附件集合或[](../resources/message.md)正在草稿、创建和发送的新邮件添加[附件](../api/user-sendmail.md)。 [](../api/user-post-messages.md)
+可以通过发布到现有邮件的附件集合或[](../resources/message.md)正在草稿、创建并立即发送的新邮件，将附件[添加到现有邮件](../api/user-sendmail.md)。 [](../api/user-post-messages.md)
 
->**注意**：此操作将可添加到的附件大小限制在 3 MB 以下。
+>**注意**：此操作将可添加的附件的大小限制在 3 MB 以下。
 >
-> 但是，如果要将介于 3MB 到 150MB 之间的文件附加到邮件，可以创建上载会话并反复[](attachment-createuploadsession.md)上载文件范围以附加它。 有关 [示例，请参阅将大文件附加到 Outlook](/graph/outlook-large-attachments) 邮件。
+> 但是，如果要向邮件附加 3MB 到 150MB 之间的文件，可以创建上载会话并反复上载[](attachment-createuploadsession.md)文件范围以附加它。 有关[示例，请参阅Outlook大文件附加到](/graph/outlook-large-attachments)邮件。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -70,7 +70,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回响应代码和 [Attachment](../resources/attachment.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 [响应](../resources/attachment.md) 代码和 Attachment 对象。
 
 ## <a name="example-file-attachment"></a>示例（文件附件）
 
@@ -179,7 +179,7 @@ Content-length: 200
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_beta",
@@ -205,7 +205,7 @@ Content-length: 162
 
 ##### <a name="request"></a>请求
 下面是向现有邮件添加引用附件的请求示例。
-附件指向 OneDrive 上的文件夹。
+附件指向文件夹上的OneDrive。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

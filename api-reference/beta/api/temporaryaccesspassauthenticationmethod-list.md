@@ -2,16 +2,15 @@
 title: 列出 temporaryAccessPassAuthenticationMethods
 description: 获取 temporaryAccessPassAuthenticationMethod 对象及其属性的列表。
 author: inbarckMS
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 83fe359ac578b316836f9fe624dc949327f26527
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 42af0e77a33bc4cc569cf57ad156c3b8f49a2c15
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759886"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049665"
 ---
 # <a name="list-temporaryaccesspassauthenticationmethods"></a>列出 temporaryAccessPassAuthenticationMethods
 命名空间：microsoft.graph

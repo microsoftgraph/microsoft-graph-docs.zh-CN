@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 605f3aac4737fc54cd329f3b115df65eb345eb08
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: ecd9e2be33e963c1b08b46334e269c997149320a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575766"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052129"
 ---
 # <a name="get-nameditem"></a>获取 NamedItem
 
@@ -48,7 +48,7 @@ GET /me/drive/root:/{item-path}:/workbook/names/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookNamedItem](../resources/workbooknameditem.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [workbookNamedItem](../resources/workbooknameditem.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: Profile
 doc_type: apiPageType
-ms.openlocfilehash: ec6b24daf3b2314e8175a7456f3187f2ac67178c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1651e88411e864adbab36d43d8acd76ef08f36f7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443302"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049588"
 ---
 # <a name="get-useraccountinformation"></a>获取 userAccountInformation
 
@@ -20,7 +20,7 @@ ms.locfileid: "50443302"
 
 检索用户配置文件中的 [userAccountInformation](../resources/useraccountinformation.md) 对象的属性和 [关系](../resources/profile.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50443302"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
-| Application                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/profile/account/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [userAccountInformation](../resources/useraccountinformation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [userAccountInformation](../resources/useraccountinformation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/profile/account/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

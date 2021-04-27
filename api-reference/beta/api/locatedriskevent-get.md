@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-access
 author: cloudhandler
-ms.openlocfilehash: b366859d98ece78e8a8af3742bb82612a1fd413d
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b0a62ba83d65dec634399bb7780f150aef92c5a4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469190"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049301"
 ---
 # <a name="get-locatedriskevent"></a>获取 locatedRiskEvent
 
@@ -26,7 +26,7 @@ ms.locfileid: "51469190"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskEvent.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | IdentityRiskEvent.Read.All |
+|应用程序 | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +57,7 @@ GET /locatedRiskEvents/{id}
 GET https://graph.microsoft.com/v1.0/locatedRiskEvents/27b91217-a6ca-edff-da2b-c46feaf0228f-a6653179-3c7b-4e99-bb4c-dddeb18adfc1-42445d4d-fe22-9840-cf9d-72f6ce8cd056
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

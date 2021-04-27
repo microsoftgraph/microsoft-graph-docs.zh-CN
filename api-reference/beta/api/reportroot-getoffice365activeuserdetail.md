@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 1d3dab6008e54a464c6b8a62cd90b0b9fed9388e
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ebb4c09758fec323e015cf2efbda6b04f1e8cf5a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983102"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050904"
 ---
 # <a name="reportroot-getoffice365activeuserdetail"></a>reportRoot: getOffice365ActiveUserDetail
 
@@ -54,7 +54,7 @@ GET /reports/getOffice365ActiveUserDetail(date={date_value})
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 
-此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
+此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -97,7 +97,7 @@ CSV 文件包含下面的列标题：
 - Teams 许可证分配日期
 - 分配的产品
 
-由世纪银行运营的 Microsoft Graph 中国不支持以下列：
+由世纪Graph运营的 Microsoft Graph不支持以下列：
 
 - 拥有 Yammer 许可证
 - 拥有 Teams 许可证
@@ -108,9 +108,9 @@ CSV 文件包含下面的列标题：
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** 对象。
 
-由世纪银行运营的 Microsoft Graph 中国不支持 **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** 对象中的以下属性：
+由世纪银行运营的 Microsoft Graph不支持 **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** 对象中的以下属性：
 
 - hasYammerLicense
 - hasTeamsLicense
@@ -125,7 +125,7 @@ CSV 文件包含下面的列标题：
 
 ### <a name="csv"></a>CSV
 
-下面是一个输出 CSV 的示例。
+下面是输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -192,7 +192,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

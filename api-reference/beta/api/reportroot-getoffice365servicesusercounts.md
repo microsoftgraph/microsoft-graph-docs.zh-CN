@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 7888d6268baa10c33a4ef4a7cc6b6710dd185c36
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: e3c57848f2295c9854d00da828c1c4ad844fce9e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982633"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052010"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 
@@ -50,7 +50,7 @@ GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -81,11 +81,11 @@ CSV 文件包含下面的列标题。
 - Yammer 非活跃
 - Teams 活跃
 - Teams 非活跃
-- Office 365 活动版
-- Office 365 非活动
+- Office 365活动
+- Office 365非活动
 - 报表周期
 
-由世纪银行运营的 Microsoft Graph 中国不支持以下列：
+由世纪Graph运营的 Microsoft Graph不支持以下列：
 
 - Yammer 活跃
 - Yammer 非活跃
@@ -94,9 +94,9 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** 对象。
 
-由世纪银行运营的 Microsoft Graph 中国不支持 **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** 对象中的以下属性：
+由世纪银行运营的 Microsoft Graph不支持 **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** 对象中的以下属性：
 
 - yammerActive
 - yammerInactive
@@ -107,7 +107,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="csv"></a>CSV
 
-下面是一个输出 CSV 的示例。
+下面是输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -174,7 +174,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ServicesUserCounts(peri
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

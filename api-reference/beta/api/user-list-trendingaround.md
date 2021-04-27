@@ -1,28 +1,28 @@
 ---
-title: 列出 TrendingAround
-description: 计算得出的见解，可返回用户周围的项目趋势列表。
+title: 列出 trendingAround
+description: 计算得出的见解，可返回用户热门项目列表。
 author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 139416e3b21166f50e2f9fed529a7efe6b4dbd3e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b1594d031f9ff007a87243ccf0cf481022b48d89
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720674"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052584"
 ---
-# <a name="list-trendingaround"></a>列出 TrendingAround
+# <a name="list-trendingaround"></a>列出 trendingAround
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-计算得出的见解，可返回用户周围的项目趋势列表。
+计算得出的见解，可返回用户热门项目列表。
 
 **注意：** 此 API 将被弃用，并替换为趋势 [API。](../resources/insights-trending.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,7 +60,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 GET https://graph.microsoft.com/beta/me/trendingAround
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

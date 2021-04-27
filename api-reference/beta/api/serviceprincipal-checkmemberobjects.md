@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ebdbcbd782146fbe8a29dfeb0666a2cbb241e8a6
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: dcc2a1ff605030a2d8e67441f9c8ccd29cca0893
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870091"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051968"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal：checkMemberObjects
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 下面展示了示例响应。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

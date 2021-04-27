@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 681c845f25e8bfa92749f5ec2e976b1404490b11
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 878d2f92297673d7ce66a23aeafdb2fb392dad7b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131206"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050148"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-特别是，您可以使用 $expand 查询参数将所有邮件附件内嵌到邮件属性的其余部分中。 例如：
+特别是，您可以使用 $expand 查询参数，以将所有内联邮件附件与邮件属性的其余部分一起包含。 例如：
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "message_get_attachments_beta",

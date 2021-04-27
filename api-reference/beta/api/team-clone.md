@@ -1,16 +1,16 @@
 ---
 title: 克隆团队
-description: 创建团队的副本。 此操作还会创建相应组的副本。
+description: 创建团队副本。 此操作还会创建相应组的副本。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fc4c0a43158425932c3813969f71a099f03fd6a9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4423e6164e616034060913aae17b1024d10bcfc9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978605"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050827"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -18,19 +18,19 @@ ms.locfileid: "48978605"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建 [团队](../resources/team.md)的副本。 此操作还会创建相应 [组](../resources/group.md)的副本。
-您可以指定要克隆的团队部分：
+创建团队 [的副本](../resources/team.md)。 此操作还会创建相应组 [的副本](../resources/group.md)。
+可以指定要克隆的团队的哪些部分：
 
-- **应用** -复制团队中安装的 Microsoft 团队应用。 
-- **频道** –将通道结构复制 (，但不复制频道) 中的邮件。
-- **members** –复制组的成员和所有者。
-- **设置** –复制团队内的所有设置以及关键组设置。
-- **选项卡** –复制频道中的选项卡。
+- **应用**- Microsoft Teams团队中安装的应用。 
+- **channels** – 将频道结构 (，但不复制频道中) 。
+- **members** – 复制组的成员和所有者。
+- **settings** - 复制团队内的所有设置以及关键组设置。
+- **tabs** – 在频道内复制选项卡。
 
-当选项卡被克隆时，它们将被置于未配置状态--它们将显示在 Microsoft 团队中的选项卡栏上，在第一次打开它们时，您将完成配置屏幕。  (如果打开该选项卡的人无权配置应用程序，他们将看到一条消息，说明尚未配置该选项卡。 ) 
+克隆选项卡时，选项卡将进入未配置状态 -它们显示在 Microsoft Teams 中的选项卡栏上，首次打开它们时，你将通过配置屏幕。  (如果打开选项卡的用户没有配置应用的权限，他们会看到一条消息，说明尚未配置选项卡。) 
 
 克隆是一项长时间运行的操作。
-在 POST 克隆返回之后，您需要获取 Location：头所返回的 [操作](../resources/teamsasyncoperation.md) ，以查看它是 "正在运行" 还是 "已成功" 或 "失败"。 您应继续获取，直到状态不为 "正在运行"。 建议的获取延迟为5秒。
+POST 克隆返回后，您需要获取 Location：[](../resources/teamsasyncoperation.md)标头返回的操作，以查看其是否"正在运行"或"成功"或"失败"。 您应该继续 GET，直到状态未"正在运行"。 GET 之间的建议延迟为 5 秒。
 
 ## <a name="permissions"></a>权限
 
@@ -58,17 +58,17 @@ POST /teams/{id}/clone
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classification| (可选) 的字符串|描述组的分类 (例如低、中或高业务影响) 。 此属性的有效值是通过基于[模板定义](../resources/directorysettingtemplate.md)创建 ClassificationList[设置](../resources/directorysetting.md)值来定义的。 如果未指定分类，则将从原始团队/组复制分类。|
-|说明| (可选) 的字符串|可选的组说明。 如果未指定此属性，则它将保留为空。|
+|classification|可选 (字符串) |介绍组策略分类 (低、中或高业务影响) 。 此属性的有效值是根据模板定义创建 [ClassificationList](../resources/directorysetting.md) 设置值 [定义的](../resources/directorysettingtemplate.md)。 如果未指定分类，则从原始团队/组复制分类。|
+|说明|可选 (字符串) |可选的组说明。 如果未指定此属性，则此属性将留空。|
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
-|mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 支持 $filter。 如果未指定此属性，则将从 displayName 计算。 已知问题：此属性当前被忽略。|
-|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |要克隆的部分的逗号分隔列表。 法律部门是 "应用、选项卡、设置、通道、成员"。|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (可选) | 指定组的可见性。 可能的值为： **Private** 、 **Public** 。 如果未指定可见性，将从原始团队/组复制可见性。 如果克隆的团队是 **educationClass** 团队，则忽略 visibility 参数，新组的可见性将设置为 HiddenMembership。|
+|mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 支持 $filter。 如果未指定此属性，则从 displayName 计算此属性。 已知问题：此属性当前被忽略。|
+|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |要克隆的部件的逗号分隔列表。 法律部分为"应用、选项卡、设置、频道、成员"。|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (可选) | 指定组的可见性。 可能的值是 **：Private** **、Public**。 如果未指定可见性，则从原始团队/组复制可见性。 如果要克隆的团队是 **educationClass** 团队，则忽略 visibility 参数，并且新组的可见性将设置为 HiddenMembership。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回一个 `202 Accepted` 位置为的响应代码：标头，指向 [操作](../resources/teamsasyncoperation.md) 资源。
-操作完成后，操作资源将告知您创建的团队的 id。
+如果成功，此方法将返回包含指向操作资源的 `202 Accepted` Location： 标头 [的响应](../resources/teamsasyncoperation.md) 代码。
+操作完成后，操作资源将告知你已创建团队的 ID。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

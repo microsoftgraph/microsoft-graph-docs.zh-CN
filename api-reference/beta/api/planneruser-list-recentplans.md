@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: abe618b63bdd15e3053c831352490255468bb0f2
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 30409a99c089d490398b433b9bcd280240455ba8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473470"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049938"
 ---
 # <a name="list-recentplans"></a>列出 recentPlans
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/me/planner/recentPlans
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

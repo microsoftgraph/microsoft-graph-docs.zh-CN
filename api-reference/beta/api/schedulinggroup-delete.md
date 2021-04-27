@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 793b6ed249d5eb3dfde6b3667c4bfaafe89a9fde
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fa82dc1c8c8b677a7864ed67f3eb4b66a123ba18
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972067"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052003"
 ---
 # <a name="delete-schedulinggroup"></a>删除 schedulingGroup
 
@@ -18,8 +18,8 @@ ms.locfileid: "48972067"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过设置 [schedulingGroup](../resources/schedulinggroup.md) 的 **isActive** 属性将其标记为非活动状态。
-此方法不会从计划中删除 [schedulingGroup](../resources/schedulinggroup.md) 。 分配给计划组的现有 [班次](../resources/shift.md) 实例仍为组的一部分。
+通过设置 [schedulingGroup](../resources/schedulinggroup.md) 的 isActive 属性，将其 **标记为非** 活动状态。
+此方法不会从计划中删除[schedulingGroup。](../resources/schedulinggroup.md) 分配给 [计划](../resources/shift.md) 组的现有班次实例仍属于该组。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "48972067"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All |
 
@@ -89,7 +89,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

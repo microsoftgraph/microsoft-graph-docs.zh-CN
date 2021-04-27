@@ -1,18 +1,18 @@
 ---
-title: 参与者： muteAll
+title: participant： muteAll
 description: 将呼叫中的所有参与者设为静音。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 945619d406baf5552581559397c79dcf13bc61cf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0cf9da4b6903931b813c0c2b2bd1aed3681434d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968727"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049182"
 ---
-# <a name="participant-muteall"></a>参与者： muteAll
+# <a name="participant-muteall"></a>participant： muteAll
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "48968727"
 
 将呼叫中的所有参与者设为静音。
 
-> **注意：** 此 API 已弃用，将在2020年3月15日之前删除。 若要使单个参与者静音，请参阅 [参与者：静音](participant-mute.md)。
+> **注意：** 此 API 已弃用，将在 2020 年 3 月 15 日之前删除。 若要将单个参与者静音，请参阅 [参与者：静音](participant-mute.md)。
 
 
 ## <a name="permissions"></a>权限
@@ -51,11 +51,11 @@ POST /communications/calls/{id}/participants/muteAll
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|String collection|要静音的参与者。|
-|适用|String|客户端上下文。|
+|participants|字符串集合|要静音的参与者。|
+|clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [commsOperation](../resources/commsoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [commsOperation](../resources/commsoperation.md) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -101,7 +101,7 @@ Content-Length: 81
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 19e4390cee58d9236e6fa22d3caf92940136977f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fbe28b13276c4e5b1debae51a95d9a1655eff93f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131045"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050120"
 ---
 # <a name="update-rule"></a>更新规则
 
@@ -48,7 +48,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | 满足相应条件时对邮件执行的操作。 |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | 满足条件时，将触发该规则的相应操作。 |
-| displayName | 字符串 | 规则的显示名称。 |
+| displayName | String | 规则的显示名称。 |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | 规则的例外情况。 |
 | isEnabled | Boolean | 指示是否启用规则以应用到邮件。 |
 | isReadOnly | Boolean | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |
@@ -96,7 +96,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

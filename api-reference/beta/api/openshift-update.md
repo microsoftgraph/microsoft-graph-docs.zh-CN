@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7c17e56fb6fe0f6eb963d30beb35dc867955cea3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 37d7399883980532560a7748c8082a9ff184fe1c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976882"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052080"
 ---
 # <a name="update-openshift"></a>更新 openShift
 
@@ -18,7 +18,7 @@ ms.locfileid: "48976882"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [openShift](../resources/openshift.md) 对象的属性。
+更新 [openShift 对象](../resources/openshift.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -47,17 +47,17 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="request-body"></a>请求正文
 
-在此方法的请求正文中提供修改的 [openshift](../resources/openshift.md) 对象。
+在此方法的请求正文中提供已修改的 [openshift](../resources/openshift.md) 对象。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|未发布的打开班次。|
-|schedulingGroupId|String| 计划组 id。 |
-|sharedOpenShift|openShiftItem|已发布的打开班次。|
+|schedulingGroupId|String| 计划组 ID。 |
+|sharedOpenShift|openShiftItem|已发布的打开的班次。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [openShift](../resources/openshift.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [openShift](../resources/openshift.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -120,7 +120,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

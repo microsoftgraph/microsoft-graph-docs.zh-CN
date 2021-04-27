@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 1de23b474cf2cd12191da9ce5c876417fbaad984
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d7f8ec86ae12f7aa1c6ae9620d7dbfb0f41aeebc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50775470"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049714"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema： parseExpression
 
@@ -20,7 +20,7 @@ ms.locfileid: "50775470"
 
 将给定的字符串表达式解析为 [attributeMappingSource](../resources/synchronization-attributemappingsource.md) 对象。
 
-有关表达式详细信息，请参阅在 [Azure Active Directory 中编写属性映射的表达式](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
+有关表达式详细信息，请参阅在 Azure Active Directory 中编写属性[映射的Azure Active Directory。](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "50775470"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All |
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|表达式               |字符串               |要分析的表达式。|
+|表达式               |String               |要分析的表达式。|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|测试要针对其计算表达式的数据对象。 可选。|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |将映射到此表达式的属性的定义。 可选。|
 
@@ -137,7 +137,7 @@ Content-type: application/json
 ##### <a name="response"></a>响应
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

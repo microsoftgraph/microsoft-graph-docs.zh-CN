@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 180907b77679658793b35e72092f0aac3f8988e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74158f8363a360b8fba4f6a9993194d116525bbd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969037"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050806"
 ---
 # <a name="get-team-photo"></a>获取团队照片
 
@@ -39,7 +39,7 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
-> **注意**：标有 * 的权限用于[特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/photo
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

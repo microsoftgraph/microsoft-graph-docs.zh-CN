@@ -1,16 +1,16 @@
 ---
 title: 获取邮件
-description: 检索邮件对象的属性和关系。
+description: 检索 message 对象的属性和关系。
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4292b5146ab426accae7d2f331047eeed287d120
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a727179016a5352a55d0923dfcd5ac5834f73d84
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131213"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050155"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131213"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索邮件对象的属性 [和](../resources/message.md) 关系。
+检索 message 对象的属性 [和](../resources/message.md) 关系。
 
 例如，您可以获取一条消息，并展开 [邮件中提及](../resources/mention.md) 的所有实例。 请参阅以下[示例](#example-2-get-all-mentions-in-a-specific-message)。
 
@@ -75,7 +75,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 
 使用 `$value` 参数获取邮件的 MIME 内容。
 
-使用 `$expand` 提及导航属性 **上的查询** 参数可获取展开邮件中每个提及的详细信息的邮件。 [](../resources/mention.md)
+使用 mentions 导航属性上的 query 参数可获取一封邮件，其中展开邮件中 `$expand` [每个提及](../resources/mention.md)的详细信息。 
 
 
 
@@ -127,8 +127,8 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 正文 **和** **uniqueBody** 属性以默认 HTML 格式返回。
-注意：为了简洁起见，此处所示的响应对象将被截断。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 body **和** **uniqueBody** 属性以默认 HTML 格式返回。
+注意：为简洁起见，将截断此处所示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -158,9 +158,9 @@ Content-length: 523
 ```
 
 
-### <a name="example-2-get-all-mentions-in-a-specific-message"></a>示例 2：获取特定邮件中所有提及内容
+### <a name="example-2-get-all-mentions-in-a-specific-message"></a>示例 2：获取特定邮件的所有提及
 #### <a name="request"></a>请求
-下一个示例中，登录用户是 Dana Swope。 该示例显示获取 Dana 邮箱中指定邮件中所有提及内容的详细信息。
+下一个示例中，登录用户是 Dana Swope。 该示例显示获取 Dana 邮箱中指定邮件中所有提及的详细信息。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -190,7 +190,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_mentions_in_message",

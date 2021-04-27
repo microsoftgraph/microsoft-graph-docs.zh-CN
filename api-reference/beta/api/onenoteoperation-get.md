@@ -1,16 +1,16 @@
 ---
 title: 获取 onenoteOperation
-description: '获取长时间运行的 OneNote 操作的状态。 这适用于在响应中返回 **操作位置** 标头的操作，例如、、 `CopyNotebook` `CopyToNotebook` `CopyToSectionGroup` 、 `and CopyToSection` 。   '
+description: '获取长时间运行的操作OneNote状态。 这适用于在响应中返回 **Operation-Location** 标头的操作，如 、 `CopyNotebook` `CopyToNotebook` 、 `CopyToSectionGroup` 、 `and CopyToSection` 。   '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 0e5dc0d15ce7152a9713bbd1729b22cc901762c7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5dd65d44ea9d4df3bdd494586a17b67cc1e5b82b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969337"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050099"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
@@ -18,13 +18,13 @@ ms.locfileid: "48969337"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取长时间运行的 OneNote 操作的状态。 这适用于在响应中返回 **操作位置** 标头的操作，例如、、 `CopyNotebook` `CopyToNotebook` `CopyToSectionGroup` 、 `and CopyToSection` 。   
+获取长时间运行的操作OneNote状态。 这适用于在响应中返回 **Operation-Location** 标头的操作，如 、 `CopyNotebook` `CopyToNotebook` 、 `CopyToSectionGroup` 、 `and CopyToSection` 。   
 
-您可以轮询 Operation-Location 终结点，直到 `status` 属性返回 `completed` 或 `failed` 。 
+你可以轮询 Operation-Location 终结点，直到 `status` 属性返回 `completed` 或 `failed` 。 
 
-如果状态为 `completed` ，则 `resourceLocation` 属性包含资源终结点 URI。 
+如果状态为 `completed` ， `resourceLocation` 则 属性包含资源终结点 URI。 
 
-如果状态为 `failed` ，则错误和 `@api.diagnostics` 属性将提供错误信息。
+如果状态为 `failed` ，则错误 `@api.diagnostics` 和属性提供错误信息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -57,7 +57,7 @@ GET /sites/{id}/onenote/operations/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [onenoteOperation](../resources/onenoteoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [onenoteOperation](../resources/onenoteoperation.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

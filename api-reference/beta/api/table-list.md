@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e5782b3be7d66c15adf58cae89572206c0f8be65
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: e3db156fdc87fdceef0342d022832bf1add43cef
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576552"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049700"
 ---
 # <a name="list-tablecollection"></a>列出表集合
 
@@ -50,7 +50,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 workbookTable](../resources/workbooktable.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [workbookTable](../resources/workbooktable.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

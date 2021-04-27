@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dff0cb64004eee0c2af12c5ca95147fc504a998b
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: baee4635954070b8e6f80b53fc1f0d489327328a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753975"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049280"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -170,7 +170,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

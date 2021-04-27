@@ -2,16 +2,15 @@
 title: 获取 temporaryAccessPassAuthenticationMethod
 description: 读取 temporaryAccessPassAuthenticationMethod 对象的属性和关系。
 author: inbarckMS
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6567ee2f287f33837f5e3354c327b1c5b8c16f20
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: ccaa0d574c2fb2261c8cb0e0e0091473ec389f1f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761498"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049672"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethod"></a>获取 temporaryAccessPassAuthenticationMethod
 命名空间：microsoft.graph

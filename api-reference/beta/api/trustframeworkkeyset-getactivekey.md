@@ -1,24 +1,24 @@
 ---
-title: trustFrameworkKeySet：getActiveKey
+title: trustFrameworkKeySet： getActiveKey
 description: 获取键集中的活动键。
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e0d94153e675e5c5c8da58b61eaf4f7166e5e239
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: befdd0ba66a7650774a73b5e2b4e3e09c5859bd2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433640"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051744"
 ---
-# <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet：getActiveKey
+# <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet： getActiveKey
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[trustFrameworkKeySet](../resources/trustframeworkkey.md)中的当前活动[trustFrameworkKey。](../resources/trustframeworkkeyset.md) 一次只有一个键在键集处于活动状态。
+获取[trustFrameworkKeySet](../resources/trustframeworkkey.md)中的当前活动的[trustFrameworkKey。](../resources/trustframeworkkeyset.md) 一次只有一个键在键集内处于活动状态。
 
 
 ## <a name="permissions"></a>权限
@@ -51,7 +51,7 @@ GET /trustFramework/keySets/{id}/getActiveKey
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

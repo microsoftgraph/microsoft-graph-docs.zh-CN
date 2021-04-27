@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c9851fc18da74a9867b7985c81dde4c7cdbf527d
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4f720830c2ce0f2a7139a08c1cdc53180ec252cb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578253"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052668"
 ---
 # <a name="update-tablerow"></a>更新 tablerow
 
@@ -51,7 +51,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [workbookTableRow](../resources/workbooktablerow.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [workbookTableRow](../resources/workbooktablerow.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -90,7 +90,7 @@ Content-length: 45
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

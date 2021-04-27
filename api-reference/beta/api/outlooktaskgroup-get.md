@@ -1,18 +1,18 @@
 ---
 title: 获取 outlookTaskGroup
-description: 获取指定的 Outlook 任务组的属性和关系。
+description: 获取指定任务组Outlook关系。
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6ca937e6aca7b5defc79e08161dc3fd9836dc0d2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6abb0d4103cf63fc0ff48a8070cc81c32469f139
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978066"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049210"
 ---
-# <a name="get-outlooktaskgroup-deprecated"></a>获取 outlookTaskGroup (弃用) 
+# <a name="get-outlooktaskgroup-deprecated"></a>获取已 (outlookTaskGroup) 
 
 命名空间：microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48978066"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-获取指定的 Outlook 任务组的属性和关系。
+获取指定任务组Outlook关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [outlookTaskGroup](../resources/outlooktaskgroup.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [outlookTaskGroup](../resources/outlooktaskgroup.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

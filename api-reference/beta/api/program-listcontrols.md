@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 06eeeed15e6f46c8bbe802e504a1d7b15a83d867
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b9e92d36a699934a9bd4480b9a7158418a78272d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721774"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049826"
 ---
 # <a name="list-programcontrols-of-a-program"></a>列出程序的 programControls
 
@@ -19,7 +19,7 @@ ms.locfileid: "50721774"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，列出链接到特定程序的所有 [programControl](../resources/programcontrol.md) 对象。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ GET /programs/{programId}/controls
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200, OK` [programControl](../resources/programcontrol.md) 对象数组。
+如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [programControl](../resources/programcontrol.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b8
 
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

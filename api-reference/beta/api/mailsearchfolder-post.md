@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9a03aef5158db175339ba1abecae03ce2d791fc5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9899276551b09c7e4a4da6e6b92f046d594d5ad5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136827"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051142"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136827"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定用户的邮箱中创建新的[mailSearchFolder。](../resources/mailsearchfolder.md)
+在指定的[用户的邮箱中创建新的 mailSearchFolder。](../resources/mailsearchfolder.md)
 
 ## <a name="permissions"></a>权限
 
@@ -54,21 +54,21 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| @odata.type | 字符串 | 要创建的文件夹的类型。 设置为"microsoft.graph.mailSearchFolder"。 |
-| displayName | 字符串 | 新文件夹的显示名称。|
-| includeNestedFolders | Boolean | 指示如何在搜索中遍历邮箱文件夹层次结构。 `true` 意味着应执行深入搜索，以在 **sourceFolderIds** 中显式指定的每个文件夹的层次结构中包括子文件夹。 `false` 表示仅对 **sourceFolderIds** 中显式指定的每个文件夹进行浅表搜索。 |
+| @odata.type | String | 要创建的文件夹的类型。 设置为"microsoft.graph.mailSearchFolder"。 |
+| displayName | String | 新文件夹的显示名称。|
+| includeNestedFolders | 布尔值 | 指示如何在搜索中遍历邮箱文件夹层次结构。 `true` 意味着应该执行深层搜索，以在 **sourceFolderIds** 中显式指定的每个文件夹的层次结构中包括子文件夹。 `false` 表示仅对 **sourceFolderIds** 中显式指定的每个文件夹进行浅表搜索。 |
 | sourceFolderIds | 字符串集合 | 应缩小的邮箱文件夹。 |
-| filterQuery | 字符串 | 用于筛选邮件的 OData 查询。 |
+| filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [mailSearchFolder](../resources/mailsearchfolder.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [mailSearchFolder](../resources/mailsearchfolder.md) 对象。
 
 ## <a name="example"></a>示例
 
 #### <a name="request"></a>请求
 
-下面是请求的示例 - 它将创建主题中包含字符串"weekly digest"的邮件的搜索文件夹。 搜索文件夹位于应用指定筛选器查询的同一文件夹下。
+下面是请求的一个示例 - 它创建主题中包含字符串"weekly digest"的邮件的搜索文件夹。 搜索文件夹位于应用指定筛选器查询的同一文件夹下。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -113,7 +113,7 @@ Content-length: 159
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

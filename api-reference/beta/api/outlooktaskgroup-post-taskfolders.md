@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTaskFolder
-description: 在指定的 outlookTaskGroup 下创建 Outlook 任务文件夹。
+description: 在Outlook outlookTaskGroup 下创建一个任务文件夹。
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae45fb686c3b76156b0423ee3890fd306502aa82
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: e7fd36eae4980a533f4d3bc02223bab788f8e7a4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774248"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049217"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>创建已弃 (outlookTaskFolder) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "50774248"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-在指定的 [outlookTaskGroup](../resources/outlooktaskgroup.md)下创建 Outlook 任务文件夹。
+创建Outlook [outlookTaskGroup](../resources/outlooktaskgroup.md)下的任务文件夹。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "50774248"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Tasks.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Tasks.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -89,7 +89,7 @@ Content-length: 131
 
 在请求正文中，提供 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

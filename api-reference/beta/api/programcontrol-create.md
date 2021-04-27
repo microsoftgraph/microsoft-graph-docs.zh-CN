@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 4d70ea6dacb12b56a4ae14486cb0ed5adcb6850b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cd4a00faeee1b97adc525727c1c01d69f26e4a27
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442201"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049819"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
@@ -20,23 +20,23 @@ ms.locfileid: "50442201"
 
 在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，创建新的 [programControl](../resources/programcontrol.md) 对象。  这会将访问评审链接到计划。
 
-在提出此请求之前，呼叫者必须事先拥有
+在提出此请求之前，调用方之前必须拥有
 
-- [创建程序](program-create.md) 或 [检索程序](program-list.md)，以将值 `programId` 包括在请求中，
-- [创建访问评审](accessreview-create.md) 或 [检索访问评审](accessreview-get.md)，以将值包括在请求 `controlId` 中，
-- [检索程序控件类型列表](programcontroltype-list.md)，以将值 `controlTypeId` 包括在请求中。
+- [创建程序](program-create.md)[或检索程序](program-list.md)，以将 的值包括在 `programId` 请求中，
+- [创建了访问评审](accessreview-create.md) 或 [检索了访问评审](accessreview-get.md)，以将 的值包括在 `controlId` 请求中，
+- [检索程序控件类型的列表](programcontroltype-list.md)，以将 的值 `controlTypeId` 包括在请求中。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            |  ProgramControl.ReadWrite.All  |
+|应用程序                            |  ProgramControl.ReadWrite.All  |
 
-登录用户还必须在允许他们创建 **programControl** 的目录角色中。 
+登录用户还必须在允许其创建 **programControl** 的目录角色中。 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,12 +55,12 @@ POST /programControls
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | 此控件将成为其一部分的程序的 programId。                             |
+| `programId`              |`String`                | 此控件将成为程序的一部分的程序的 programId。                             |
 | `controlId`              |`String`                | 控件的 controlId，尤其是访问评审的标识符。                                                |
 | `controlTypeId`          |`String`                | programControlType 标识程序控件的类型-例如，链接到来宾访问评审的控件。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应 `201, Created` 代码和 [programControl](../resources/programcontrol.md) 对象。
+如果成功，此方法在响应 `201, Created` 正文中返回 响应代码和 [programControl](../resources/programcontrol.md) 对象。
 
 
 ## <a name="example"></a>示例
@@ -103,7 +103,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1b04124a5e0cb39d59a95f2278b8ea24f9dc2366
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 892acaa068347ca6a555d163d01ec71b118c0285
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136372"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049231"
 ---
 # <a name="update-onpremisesagentgroup"></a>更新 onPremisesAgentGroup
 
@@ -28,7 +28,7 @@ ms.locfileid: "50136372"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,11 +48,11 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-以下是可以更新的属性列表。
+以下是您可以更新的属性的列表。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串| 代表本地代理组名称。|
+|displayName|String| 表示本地代理组名称。|
 
 ## <a name="response"></a>响应
 
@@ -101,7 +101,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

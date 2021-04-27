@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: be5b461af5a5c8d3586f6af2819d5497a0d0b473
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 2a5d5d108974f337d74788ddec2b3fdc05f9d3f1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576832"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051667"
 ---
 # <a name="worksheet-cell"></a>Worksheet:Cell
 
@@ -42,7 +42,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/Cell(row={row},co
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |row|Int32|要检索的单元格的行号。从零开始编制索引。|
-|column|Int32|要检索的单元格的列号。 从零开始编制索引。|
+|column|Int32|要检索的单元格的列号。从零开始编制索引。|
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: 获取 schemaExtension
-description: 获取指定的 schemaExtension 定义的属性。
+description: 获取指定 schemaExtension 定义的属性。
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: ff909af6ae238394268fe51e8eb39f93a7d9f130
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bb1cd6e7869faaf67e378a2e24709226c0afc14f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975907"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051989"
 ---
 # <a name="get-schemaextension"></a>获取 schemaExtension
 
@@ -18,7 +18,7 @@ ms.locfileid: "48975907"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取指定的 [schemaExtension](../resources/schemaextension.md) 定义的属性。
+获取指定 [schemaExtension 定义](../resources/schemaextension.md) 的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "48975907"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Read、Application. All  |
+|委派（工作或学校帐户） | User.Read、Application.Read.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All |
 
@@ -49,7 +49,7 @@ GET /schemaExtensions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schemaExtension](../resources/schemaextension.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schemaExtension](../resources/schemaextension.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

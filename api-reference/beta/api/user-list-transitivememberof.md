@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 20d2a8b0384a3c346a0f1f3f9f1a8b66cd9a6bfa
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 7cad5f8693bd3f22a49a467b8ff2f764ce912461
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720723"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052591"
 ---
 # <a name="list-user-transitive-memberof"></a>List user transitive memberOf
 
@@ -20,7 +20,7 @@ ms.locfileid: "50720723"
 
 获取用户是其中一个成员的组、目录角色和管理单元。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -194,7 +194,7 @@ Content-type: text/plain
 588
 ```
 
-### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 强制转换获取显示名称包含字母"tier"（包括返回对象计数）的组的可传递成员身份
+### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 转换获取显示名称包含字母"tier"的组的可传递成员身份，包括返回的对象计数
 
 #### <a name="request"></a>请求
 
@@ -212,7 +212,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -236,7 +236,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 强制转换在具有以"a"开头（包括返回对象计数）的组显示名称获取可传递成员身份
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 转换获取组中以"a"开头显示名称返回对象的计数的可传递成员身份
 
 #### <a name="request"></a>请求
 
@@ -254,7 +254,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

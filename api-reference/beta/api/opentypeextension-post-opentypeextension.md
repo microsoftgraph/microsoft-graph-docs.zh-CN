@@ -1,16 +1,16 @@
 ---
 title: 创建开放扩展
-description: 在 openTypeExtension (创建开放扩展) 并添加自定义属性
+description: 使用 openTypeExtension (创建开放扩展) 并添加自定义属性
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: ad00fc4b9b2dc8bdd557495709f6f680fc6a4141
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 616aab701eab50bfc716b3a27bc98b0b9862ae2d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092678"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050092"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -18,15 +18,15 @@ ms.locfileid: "50092678"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [openTypeExtension](../resources/opentypeextension.md) (创建开放扩展) ，并添加受支持资源的新实例或现有实例中的自定义属性。
+使用 [openTypeExtension](../resources/opentypeextension.md) (创建开放扩展) 受支持的资源的新实例或现有实例中添加自定义属性。
 
-"权限" [部分](#permissions) 中的表列出了支持开放扩展的资源。
+"权限" ["](#permissions) "部分中列出支持打开扩展的资源。
 
 > **请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项**。
 
 ## <a name="permissions"></a>权限
 
-根据要在其中创建扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+根据要在其中创建扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -40,7 +40,7 @@ ms.locfileid: "50092678"
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 | [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [任务列表](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -198,7 +198,7 @@ Content-Type: application/json
 - 请求中指定的默认属性 **extensionName**。
 - 请求中指定的作为 3 个自定义属性存储的自定义数据。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -549,7 +549,7 @@ Content-type: application/json
 
 下面是第五个示例的响应，其中包含新对话和线程 ID。这个新线程包含自动创建的帖子，帖子又包含新扩展。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 若要获取新扩展，首先 [获取此线程中的所有帖子](../api/conversationthread-list-posts.md)，线程中最初应该只有一个帖子。然后应用帖子 ID 和扩展名 `Com.Contoso.Benefits` 以[获取扩展](../api/opentypeextension-get.md)。
 

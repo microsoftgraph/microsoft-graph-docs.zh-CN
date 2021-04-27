@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2485652b97a015797ddd519d2009243a8a85902e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 92d02320b102cedf1cef95f6966d97d78ad341d3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440869"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051002"
 ---
 # <a name="create-unifiedroledefinition"></a>创建 unifiedRoleDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "50440869"
 
 创建新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50440869"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| 应用程序                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,13 +52,13 @@ POST /roleManagement/directory/roleDefinitions
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|displayName |string |角色显示名称的定义。|
-|isEnabled |Boolean |指示是否已启用角色分配的标志。 如果为 false，则角色不能用于分配。|
+|displayName |string |角色显示名称的角色定义。|
+|isEnabled |Boolean |指示角色是否已启用分配的标志。 如果为 false，则角色不能用于分配。|
 |rolePermissions |[unifiedRolePermission](../resources/unifiedrolepermission.md) 集合 |角色中包含的权限列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -114,7 +114,7 @@ Content-type: application/json
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

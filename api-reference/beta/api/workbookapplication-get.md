@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 75bc2129f7f92c4c4ad48a2ec5d123d026b69188
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 9832431657097efc28b77a72a23de23feeb40e5a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575229"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049574"
 ---
 # <a name="get-workbookapplication"></a>获取 workbookApplication
 
@@ -18,7 +18,7 @@ ms.locfileid: "50575229"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [workbookApplication 对象的属性和](../resources/workbookapplication.md) 关系。
+检索 [workbookApplication](../resources/workbookapplication.md) 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ GET /me/drive/root:/{item-path}:/workbook/application
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [workbookApplication](../resources/workbookapplication.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [workbookApplication](../resources/workbookapplication.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
 ### <a name="response"></a>响应
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

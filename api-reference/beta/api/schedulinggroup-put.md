@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 713e9a7750eb71d18961925d2a3f9931df5ed1ce
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 776dd553c6573455e5577156a52e9b5d69a7add8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975354"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051996"
 ---
 # <a name="replace-schedulinggroup"></a>更换 schedulingGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "48975354"
 
 替换现有的 [schedulingGroup](../resources/schedulinggroup.md)。
 
-如果指定的 [schedulingGroup](../resources/schedulinggroup.md) 不存在，则此方法返回 `404 Not found` 。
+如果指定的 [schedulingGroup](../resources/schedulinggroup.md) 不存在，此方法将返回 `404 Not found` 。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48975354"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All |
 
@@ -53,7 +53,7 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -103,7 +103,7 @@ Prefer: return=representation
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

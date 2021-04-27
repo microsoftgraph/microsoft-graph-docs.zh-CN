@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a34939a59ca265fb7c50b82cf662095052763950
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 32aad6e260b0eeb4df87cd9daa51f59d0fa82416
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761435"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049175"
 ---
 # <a name="get-passwordauthenticationmethod"></a>获取 passwordAuthenticationMethod
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordMethods/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

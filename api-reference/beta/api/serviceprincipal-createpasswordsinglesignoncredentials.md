@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7874e0f875b54b4bffb18efd3a3cdbe4cd468ccd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a83e5c1eeb09cab08f3b086e50f864172e5061b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132463"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051961"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal：createPasswordSingleSignOnCredentials
 
@@ -28,10 +28,10 @@ ms.locfileid: "50132463"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All |
 
 > [!NOTE]
-> 用户可以为自己创建凭据。 服务主体所有者和具有以下角色的管理员可以为任何用户或组创建凭据：GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解更多信息，请参阅 [目录角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+> 用户可以为自己创建凭据。 具有以下角色的服务主体所有者和管理员可以为任何用户或组创建凭据：GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解更多信息，请参阅 [目录角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,12 +54,12 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串|此凭据集所属的用户或组的 ID。|
+|id|String|此凭据集所属的用户或组的 ID。|
 |credentials|[credential](../resources/credential.md) 集合|定义完整登录流的凭据对象列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -116,7 +116,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

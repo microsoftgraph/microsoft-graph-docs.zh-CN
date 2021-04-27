@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9ad4efeb713125406e9f54ea9243b993f60c600
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3b3e58efe497ee197b49d00bb4b395a9bc1ee7bf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962746"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051814"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}/applies
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

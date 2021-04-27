@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1de486edef0764b528491ed63bd5fd01d2e94895
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0686e0a6b8ac6bec26a2f30d8e52e59b52f3a192
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721493"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051702"
 ---
 # <a name="list-scopedadministratorof"></a>列出 scopedAdministratorOf
 
@@ -19,7 +19,7 @@ ms.locfileid: "50721493"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索用户的 [scopedRoleMembership](../resources/scopedrolemembership.md) 列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -49,7 +49,7 @@ GET /users/{id}/scopedRoleMemberOf
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

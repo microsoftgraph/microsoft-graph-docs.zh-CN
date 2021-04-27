@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1650ea55e1fc7dc6200e4985e417fdfb67fb0ee3
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: c1d8da785836dd91ef98468b4a15762570eaac6b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473484"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049945"
 ---
 # <a name="list-favoriteplans"></a>列出 favoritePlans
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

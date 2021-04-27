@@ -1,16 +1,16 @@
 ---
 title: 获取日程安排
-description: 检索 **schedule** 对象的属性和关系。
+description: 检索 schedule 对象的属性 **和** 关系。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8f03ccbe900db7d4d919db2db992f269b0ff2acd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e0bcc91939ac53adbefe16a97986239fec955ab3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979144"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049035"
 ---
 # <a name="get-schedule"></a>获取日程安排
 
@@ -18,14 +18,14 @@ ms.locfileid: "48979144"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [schedule](../resources/schedule.md) 对象的属性和关系。
+检索 schedule 对象的属性 [和](../resources/schedule.md) 关系。
 
-计划创建过程符合 [基于资源的长时间运行操作 (RELO) 的 API 指南 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
-当客户端使用 [PUT 方法](team-put-schedule.md)时，如果设置了计划，该操作将更新计划;否则，该操作将在后台启动计划设置过程。
+计划创建过程符合针对基于资源的长时间运行的操作的 One API 准则 ([RELO) 。 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)
+当客户端使用 [PUT 方法时](team-put-schedule.md)，如果已设置计划，则操作将更新计划;否则，操作将在后台启动计划预配过程。
 
-在计划设置过程中，客户端可以使用 GET 方法获取计划，并查看 `provisionStatus` 设置的当前状态的属性。 如果设置失败，客户端可以从属性获取其他信息 `provisionStatusCode` 。
+在计划预配期间，客户端可以使用 GET 方法获取计划并查看 属性，了解 `provisionStatus` 预配的当前状态。 如果设置失败，客户端可以从 属性获取其他 `provisionStatusCode` 信息。
 
-客户端也可以检查计划的配置。
+客户端还可以检查计划的配置。
 
 ## <a name="permissions"></a>权限
 
@@ -33,9 +33,9 @@ ms.locfileid: "48979144"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
+|委派（工作或学校帐户） | Schedule.Read.All、Group.Read.All、Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All、Schedule、All |
+|应用程序 | Schedule.Read.All、Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 OData 查询参数来自定义响应。
+此方法不支持使用 OData 查询参数自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,7 +61,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedule](../resources/schedule.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/schedule.md) 代码和 schedule 对象。
 
 ## <a name="example"></a>示例
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

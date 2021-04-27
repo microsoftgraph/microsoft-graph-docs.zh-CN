@@ -1,24 +1,24 @@
 ---
-title: 'tiIndicator: deleteTiIndicatorsByExternalId'
-description: 在一个请求（而不是多个请求）中删除多个威胁智能 (TI) 指示器，并且该请求包含外部 Id 而不是 Id。
+title: tiIndicator：deleteTiIndicatorsByExternalId
+description: 在一个 (（) 个请求）中删除多个威胁情报和 TI) 指示器，并且请求包含外部 ID 而不是 ID。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 76de4d49adc3e3b34a49e43516376dd8a25f1db7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a163f2c2a362cda42964733bf6639a2138dcb98c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977730"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052661"
 ---
-# <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
+# <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator：deleteTiIndicatorsByExternalId
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-当请求包含外部 Id 而不是 Id 时，在一个请求中删除多个威胁智能 (TI) 指示器，而不是多个请求。
+当请求包含外部 (（而不是) ）时，在一个请求（而不是多个请求）中删除多个威胁情报和 TI 智能指示器。
 
 ## <a name="permissions"></a>权限
 
@@ -50,11 +50,11 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|String collection| `externalIds`要删除的 **tiIndicator** 对象的集合。 |
+|值|字符串集合| 要 `externalIds` 删除的 **tiIndicator** 对象的集合。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [resultInfo](../resources/resultinfo.md) 集合对象。 如果存在错误，则此方法返回 `206 Partial Content` 响应代码。  有关详细信息，请参阅 [错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 。
+如果成功，此方法在 `200, OK` 响应正文中返回 响应代码和 [resultInfo](../resources/resultinfo.md) 集合对象。 如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
 
 ## <a name="examples"></a>示例
 
@@ -106,7 +106,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

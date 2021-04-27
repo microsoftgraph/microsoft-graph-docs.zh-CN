@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fcf8ad8a4b8016f972ee8844a959d0a3359a2db9
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 60663e9ffa2c0b016d5667e7ce03f6eff151865e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135161"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049616"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -22,7 +22,7 @@ ms.locfileid: "50135161"
 
 在同一 POST **调用中创建** 草稿时，您可以：
 
-- 包括 [附件](../resources/attachment.md) 
+- 包含 [附件](../resources/attachment.md) 
 - 使用 [提及](../resources/mention.md) 功能在新邮件中呼叫其他用户
 
 ## <a name="permissions"></a>权限
@@ -49,22 +49,22 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供邮件对象的 JSON [表示](../resources/message.md) 形式。
+在请求正文中，提供 message 对象的 JSON [表示](../resources/message.md) 形式。
 
 如果要使用 **提及功能** 在新邮件中呼叫其他用户：
 
-- 在请求正文 **中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。
-- 对于提及属性中的 **每个** 提及，必须指定 **提及的** 属性。
+- 在请求 **正文中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。
+- 对于 **mentions** 属性中的每个提及，必须指定 **提及的** 属性。
 
 由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码[](../resources/message.md)和消息对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 [响应](../resources/message.md) 代码和 message 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-下面是请求创建新邮件草稿的示例。
+下面是一个请求创建新邮件草稿的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -111,7 +111,7 @@ Content-type: application/json
 
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -181,7 +181,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>请求 2
-下一个示例显示了 Randi Welch 发往 Samantha 一份草稿电子邮件。 邮件还包括另一个用户 Dana Swope 的提及内容。
+下一个示例显示 Randi Welch 发往 Samantha 一份草稿电子邮件。 邮件还包括另一个用户 Dana Swope 的提及。
 
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
 

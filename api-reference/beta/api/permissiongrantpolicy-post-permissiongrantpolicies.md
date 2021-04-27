@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 0e682ed0849ac6985b651658a0e06ef2811ff149
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7165201e27087055a2b1d514c634a26ecd3f8ab5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433864"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050064"
 ---
 # <a name="create-permissiongrantpolicy"></a>创建 permissionGrantPolicy
 
@@ -18,11 +18,11 @@ ms.locfileid: "50433864"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建 [permissionGrantPolicy](../resources/permissiongrantpolicy.md)。 权限授予策略用于描述可在哪些条件下授予权限 (例如，在应用程序同意期间) 。
+创建 [permissionGrantPolicy](../resources/permissiongrantpolicy.md)。 权限授予策略用于描述授予权限的条件，例如 (应用程序许可期间授予) 。
 
-创建权限授予策略后，可以添加 [include 条件集](permissiongrantpolicy-post-includes.md) 以添加匹配规则，并添加 [排除条件集](permissiongrantpolicy-post-excludes.md) 以添加排除规则。
+创建权限授予策略后，可以添加 [包含条件集](permissiongrantpolicy-post-includes.md) 以添加匹配规则，并添加 [排除条件集](permissiongrantpolicy-post-excludes.md) 以添加排除规则。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "50433864"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PermissionGrantPolicy.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | PermissionGrantPolicy.ReadWrite.All |
+|应用程序 | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ POST /policies/permissionGrantPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `201 Created` 代码和 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

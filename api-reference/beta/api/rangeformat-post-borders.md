@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1c9d7eb22a11710b41d64c3284e4fd72789d8e4b
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 573b5f6894b83b90bb5e9b305ca237a4551d13a9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577357"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051030"
 ---
 # <a name="create-rangeborder"></a>创建 RangeBorder
 
@@ -50,7 +50,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回响应代码和 [workbookRangeBorder](../resources/workbookrangeborder.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [workbookRangeBorder](../resources/workbookrangeborder.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -94,7 +94,7 @@ Content-length: 136
 
 在请求正文中，提供 [workbookRangeBorder](../resources/workbookrangeborder.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

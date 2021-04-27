@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d399b86863fcf7ae95dd1bd9f65f72c45abbf4fe
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 133b57c66cd0333c4dec1cd37895369749889bbb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578190"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050701"
 ---
 # <a name="create-table"></a>创建表
 
@@ -46,12 +46,12 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 
 | 参数       | 类型|说明|
 |:---------------|:----------|:----------|
-| Address  | string| 区域地址。 如果要从路径调用此 API，则不需要在地址中支持 `worksheets/{id|name}/tables/add` 工作表名称前缀。 但是，如果要从路径调用此表，则提供需要创建表的工作表 (`workbook/tables/add` 示例 `sheet1!A1:D4` ：) |
+| Address  | string| 区域地址。 如果要从路径调用此 API，则不需要在地址中支持工作表 `worksheets/{id|name}/tables/add` 名称前缀。 但是，如果要从路径中调用此表，则提供需要基于其创建表的工作表名称 `workbook/tables/add` (示例 `sheet1!A1:D4` ：) |
 | hasHeaders  | 布尔|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回响应代码和 [workbookTable](../resources/workbooktable.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [workbookTable](../resources/workbooktable.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -91,7 +91,7 @@ Content-length: 109
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

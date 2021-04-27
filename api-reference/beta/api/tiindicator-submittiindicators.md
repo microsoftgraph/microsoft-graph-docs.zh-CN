@@ -1,24 +1,24 @@
 ---
-title: 'tiIndicator: submitTiIndicators'
-description: 在一个请求中（而不是多个请求）上传多个威胁智能 (TI) 指示器。
+title: tiIndicator：submitTiIndicators
+description: Upload一个 (请求) 多个请求（而不是多个请求）中使用多个威胁情报和 TI 指示器。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: bb3542c678fbee89a4de293585d31094502c857e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ed4ccd5adf087ecf8be69d8d192ae180ec685090
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975861"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050778"
 ---
-# <a name="tiindicator-submittiindicators"></a>tiIndicator: submitTiIndicators
+# <a name="tiindicator-submittiindicators"></a>tiIndicator：submitTiIndicators
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在一个请求中（而不是多个请求）上传多个威胁智能 (TI) 指示器。
+Upload一个 (请求) 多个请求（而不是多个请求）中使用多个威胁情报和 TI 指示器。
 
 ## <a name="permissions"></a>权限
 
@@ -50,13 +50,13 @@ POST /security/tiIndicators/submitTiIndicators
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|tiIndicator 集合| 要创建的 **tiIndicators** 的 JSON 集合。 |
+|值|tiIndicator 集合| 要创建的 **tiIndicator 的** JSON 集合。 |
 
-对于每个 tiIndicator，提供包含至少一个[电子邮件](../resources/tiindicator.md#indicator-observables---email)、[文件](../resources/tiindicator.md#indicator-observables---file)或[网络](../resources/tiindicator.md#indicator-observables---network)可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式，并提供以下必需字段： `action` 、、、、 `description` `expirationDateTime` `targetProduct` `threatType` 、 `tlpLevel` 。
+对于每个 tiIndicator，提供包含至少一个电子邮件、文件或网络可观测的[tiIndicator](../resources/tiindicator.md)对象的[](../resources/tiindicator.md#indicator-observables---file)JSON[](../resources/tiindicator.md#indicator-observables---network)表示形式，以及以下必填字段[](../resources/tiindicator.md#indicator-observables---email) `action` `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` ：、。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tiIndicator](../resources/tiindicator.md) 对象集合。  如果存在错误，则此方法返回 `206 Partial Content` 响应代码。  有关详细信息，请参阅 [错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [tiIndicator](../resources/tiindicator.md) 对象集合。  如果出现错误，此方法将返回 响应 `206 Partial Content` 代码。  有关详细信息 [，](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 请参阅错误。
 
 ## <a name="examples"></a>示例
 
@@ -138,7 +138,7 @@ Content-Type: application/json
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

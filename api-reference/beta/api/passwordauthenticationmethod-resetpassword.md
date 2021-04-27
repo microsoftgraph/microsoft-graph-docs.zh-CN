@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 71f144592ec2d0d99eccbfa2d0627f74982a5fa3
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 392629ed4cc686855b1ec31aba09f1b70a62c5a9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761421"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049168"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod：resetPassword
 
@@ -20,7 +20,7 @@ ms.locfileid: "50761421"
 
 为与密码身份验证方法对象关联的 [密码启动重置](../resources/passwordauthenticationmethod.md) 。 这只能由具有适当权限的管理员完成，并且不能对用户自己的帐户执行。
 
-此流会将新密码写入 Azure Active Directory，如果已使用密码写回进行配置，则推送到本地 Active Directory。 管理员可以提供新密码或使系统生成一个密码。 系统将提示用户在下次登录时更改其密码。
+此流将新密码写入Azure Active Directory，如果已使用密码写回进行配置，则将新密码推送到本地 Active Directory。 管理员可以提供新密码或使系统生成一个密码。 系统将提示用户在下次登录时更改其密码。
 
 此重置是一项长时间运行的操作，它将在标头中返回一个链接，调用方可在其中定期检查 `Location` 重置的状态。
 
@@ -123,7 +123,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -186,7 +186,7 @@ POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticat
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

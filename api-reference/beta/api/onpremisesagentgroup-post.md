@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2486c83d9e22304f57dbd64d322029fcec201c83
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bd010c8832d98242f00341f8357af5bde9e78688
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136376"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051114"
 ---
 # <a name="create-onpremisesagentgroup"></a>创建 onPremisesAgentGroup
 
@@ -28,7 +28,7 @@ ms.locfileid: "50136376"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -96,7 +96,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

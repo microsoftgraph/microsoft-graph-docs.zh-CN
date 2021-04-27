@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 71f78ef680f3904f8be3026598bf80b27e4642c4
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: cc69bc3eef04ee4bab00f1ebd059b4682ef77b03
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882619"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049007"
 ---
 # <a name="list-serviceprincipals"></a>List servicePrincipals
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -170,7 +170,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -215,7 +215,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8638eeadd59ba7efaae0e6ad32bd4f740dab6d36
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: af2081afcf12d2cac33abf188ad6592e5e4720e1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291984"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049581"
 ---
 # <a name="update-useraccountinformation"></a>更新 useraccountinformation
 
@@ -54,12 +54,12 @@ PATCH /users/{id | userPrincipalName}/profile/account/{id}
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |countryCode|String|包含与用户帐户关联的两个字符的国家/地区代码。  |
-|推断|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|包含用户关联为帐户首选的语言。   |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [userAccountInformation](../resources/useraccountinformation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [userAccountInformation](../resources/useraccountinformation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

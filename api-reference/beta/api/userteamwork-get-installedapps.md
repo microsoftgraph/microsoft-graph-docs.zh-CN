@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 784d3a9df48d8aeae73f8d0ddbadc4ef9243cab4
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 769167da518bcd484eb1bdfdd1505ee1537e313b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473533"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052563"
 ---
 # <a name="get-installed-app-for-user"></a>获取用户的已安装应用
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps_1",
@@ -149,7 +149,7 @@ GET https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps_details_1",

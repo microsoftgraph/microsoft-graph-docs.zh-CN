@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: c03c85138bb39194c17d41aee6f7d5e9337f2a2f
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: b812058bcc7ce149b5a12b5c006e34c3f6368926
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575761"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052108"
 ---
 # <a name="update-nameditem"></a>更新 nameditem
 
@@ -50,7 +50,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [workbookNamedItem](../resources/workbooknameditem.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [workbookNamedItem](../resources/workbooknameditem.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -93,7 +93,7 @@ Content-length: 87
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

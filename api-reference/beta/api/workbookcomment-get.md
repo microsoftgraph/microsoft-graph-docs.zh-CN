@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5355a52998e0f3e2f61fa2834bf3e482669a1f56
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 132925396dd9f8e9acebfd2192b58d090d6d80b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626207"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049567"
 ---
 # <a name="get-workbookcomment"></a>获取 workbookComment
 
@@ -26,7 +26,7 @@ ms.locfileid: "50626207"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Files.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ GET /me/drive/items/{id}/workbook/comments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [workbookComment](../resources/workbookcomment.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [workbookComment](../resources/workbookcomment.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: 列出 taskFolders
-description: 获取特定 outlookTaskGroup 中的 Outlook 任务文件夹。
+description: 获取Outlook outlookTaskGroup 中的任务文件夹。
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc83f3d5c17f5d2f40b2d13440633b088674577d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bb6d875d1c8f2999c8ace5a69dad0f31cd2d24f9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953257"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049224"
 ---
 # <a name="list-taskfolders-deprecated"></a>列出已 (taskFolders) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "50953257"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-获取特定 [outlookTaskGroup](../resources/outlooktaskgroup.md)中的 Outlook 任务文件夹。
+获取Outlook [outlookTaskGroup 中的任务文件夹](../resources/outlooktaskgroup.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=/
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

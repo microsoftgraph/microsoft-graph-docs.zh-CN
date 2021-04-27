@@ -1,24 +1,24 @@
 ---
-title: 更新 Contact.personname
-description: 更新 Contact.personname 对象的属性。
+title: 更新 personName
+description: 更新 personName 对象的属性。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 540ce931e77b5f9347015fe5792c7c2e0f5486f8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0959c7eec1b1e52ff3a9295ad7e5af07b416a3bd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972724"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051100"
 ---
-# <a name="update-personname"></a>更新 contact.personname
+# <a name="update-personname"></a>更新 personname
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新用户的[配置文件](../resources/profile.md)中的[contact.personname](../resources/personname.md)对象的属性。
+更新用户配置文件 [中的 personName](../resources/personname.md) 对象 [的属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48972724"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,27 +50,27 @@ PATCH /users/{id | userPrincipalName}/profile/names/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-下表显示了可以在用户[配置文件](../resources/profile.md)中的现有[contact.personname](../resources/personname.md)对象内进行更新的属性。
+下表显示了在用户配置文件中的现有 [personName](../resources/personname.md) 对象中可以更新 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|displayName|String|根据用户或其设备的区域设置，提供 firstName 和 lastName 的顺序呈现。|
-|前|String|用户的名字。|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|initials|String|用户的首字母缩写。|
-|languageTag|String|包含以下语言的名称： (en-us、无 NB、en-us) 以下 IETF BCP47 格式。   |
-|末|String|用户的姓氏。|
-|maiden|String|Maiden 用户的名称。 |
-|中间|String|用户的中间名。|
-|昵称|String|用户的昵称。|
-|拼音|[yomiPersonName](../resources/yomipersonname.md)|有关如何对用户名称进行发音的指南。|
-|后缀|String|用户名称之后使用的指示符 (例如：博士. )   |
-|title|String|Honorifics 用于为用户名称加上前缀 (例如： Dr.、罗德、Madam、Mrs ) |
+|displayName|String|根据用户或设备区域设置提供 firstName 和 lastName 的有序呈现。|
+|first|String|用户的名字。|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|initials|String|用户缩写。|
+|languageTag|String|包含以下 IETF BCP47 (en-US、no-NB、en-AU) 语言的名称。   |
+|last|String|用户的姓氏。|
+|一些|String|用户的姓名。 |
+|middle|String|用户的中间名。|
+|nickname|String|用户的昵称。|
+|pronunciation|[yomiPersonName](../resources/yomipersonname.md)|有关如何对用户名称进行发音的指南。|
+|后缀|String|用户名名称后使用 (，例如：PhD.)   |
+|title|String|用于为用户名称添加前缀的 (例如：Dr、Sir、Sir、Mrs.) |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [contact.personname](../resources/personname.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [personName](../resources/personname.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -115,7 +115,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
