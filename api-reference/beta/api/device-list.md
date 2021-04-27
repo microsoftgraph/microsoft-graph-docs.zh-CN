@@ -5,67 +5,67 @@ author: spunukol
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0766814c56315c63f60ade129443d8586016e90a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3a797f7d496bbb268c259f09b9d7b800a4b1dc00
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437105"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046949"
 ---
-# <a name="list-devices"></a><span data-ttu-id="4d066-103">列出设备</span><span class="sxs-lookup"><span data-stu-id="4d066-103">List devices</span></span>
+# <a name="list-devices"></a><span data-ttu-id="c79e1-103">列出设备</span><span class="sxs-lookup"><span data-stu-id="c79e1-103">List devices</span></span>
 
-<span data-ttu-id="4d066-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4d066-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c79e1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c79e1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4d066-105">检索目录中的注册设备列表。</span><span class="sxs-lookup"><span data-stu-id="4d066-105">Retrieve a list of devices registered in the directory.</span></span> 
+<span data-ttu-id="c79e1-105">检索目录中的注册设备列表。</span><span class="sxs-lookup"><span data-stu-id="c79e1-105">Retrieve a list of devices registered in the directory.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="4d066-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="4d066-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c79e1-106">权限</span><span class="sxs-lookup"><span data-stu-id="c79e1-106">Permissions</span></span>
 
-<span data-ttu-id="4d066-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4d066-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c79e1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c79e1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-| <span data-ttu-id="4d066-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4d066-109">Permission type</span></span> | <span data-ttu-id="4d066-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4d066-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c79e1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c79e1-109">Permission type</span></span> | <span data-ttu-id="c79e1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c79e1-110">Permissions (from least to most privileged)</span></span> |
 |:--------------- |:------------------------------------------- |
-| <span data-ttu-id="4d066-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4d066-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4d066-112">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4d066-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="4d066-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4d066-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d066-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4d066-114">Not supported.</span></span> |
-| <span data-ttu-id="4d066-115">Application</span><span class="sxs-lookup"><span data-stu-id="4d066-115">Application</span></span> | <span data-ttu-id="4d066-116">Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d066-116">Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="c79e1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c79e1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c79e1-112">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c79e1-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="c79e1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c79e1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c79e1-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="c79e1-114">Not supported.</span></span> |
+| <span data-ttu-id="c79e1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="c79e1-115">Application</span></span> | <span data-ttu-id="c79e1-116">Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c79e1-116">Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4d066-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4d066-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c79e1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c79e1-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4d066-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4d066-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c79e1-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c79e1-118">Optional query parameters</span></span>
 
-<span data-ttu-id="4d066-119">此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`</span><span class="sxs-lookup"><span data-stu-id="4d066-119">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="4d066-120">`$search`可以用在 **displayName** 属性。</span><span class="sxs-lookup"><span data-stu-id="4d066-120">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="4d066-121">为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。</span><span class="sxs-lookup"><span data-stu-id="4d066-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="4d066-122">在添加或更新项目与在索引中可用之间可能会稍有延迟。</span><span class="sxs-lookup"><span data-stu-id="4d066-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
+<span data-ttu-id="c79e1-119">此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`</span><span class="sxs-lookup"><span data-stu-id="c79e1-119">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="c79e1-120">`$search`可以用在 **displayName** 属性。</span><span class="sxs-lookup"><span data-stu-id="c79e1-120">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="c79e1-121">为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。</span><span class="sxs-lookup"><span data-stu-id="c79e1-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="c79e1-122">在添加或更新项目与在索引中可用之间可能会稍有延迟。</span><span class="sxs-lookup"><span data-stu-id="c79e1-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4d066-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="4d066-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c79e1-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="c79e1-123">Request headers</span></span>
 
-| <span data-ttu-id="4d066-124">名称</span><span class="sxs-lookup"><span data-stu-id="4d066-124">Name</span></span> | <span data-ttu-id="4d066-125">说明</span><span class="sxs-lookup"><span data-stu-id="4d066-125">Description</span></span> |
+| <span data-ttu-id="c79e1-124">名称</span><span class="sxs-lookup"><span data-stu-id="c79e1-124">Name</span></span> | <span data-ttu-id="c79e1-125">说明</span><span class="sxs-lookup"><span data-stu-id="c79e1-125">Description</span></span> |
 |:---- |:----------- |
-| <span data-ttu-id="4d066-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="4d066-126">Authorization</span></span>  | <span data-ttu-id="4d066-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4d066-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4d066-129">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="4d066-129">ConsistencyLevel</span></span> | <span data-ttu-id="4d066-130">最终。</span><span class="sxs-lookup"><span data-stu-id="4d066-130">eventual.</span></span> <span data-ttu-id="4d066-131">当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。</span><span class="sxs-lookup"><span data-stu-id="4d066-131">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="4d066-132">它使用的索引可能与对象的最新更改不同步。</span><span class="sxs-lookup"><span data-stu-id="4d066-132">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="c79e1-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="c79e1-126">Authorization</span></span>  | <span data-ttu-id="c79e1-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c79e1-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c79e1-129">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="c79e1-129">ConsistencyLevel</span></span> | <span data-ttu-id="c79e1-130">最终。</span><span class="sxs-lookup"><span data-stu-id="c79e1-130">eventual.</span></span> <span data-ttu-id="c79e1-131">当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。</span><span class="sxs-lookup"><span data-stu-id="c79e1-131">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="c79e1-132">它使用的索引可能与对象的最新更改不同步。</span><span class="sxs-lookup"><span data-stu-id="c79e1-132">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4d066-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="4d066-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c79e1-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="c79e1-133">Request body</span></span>
 
-<span data-ttu-id="4d066-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4d066-134">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c79e1-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c79e1-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4d066-135">响应</span><span class="sxs-lookup"><span data-stu-id="4d066-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c79e1-135">响应</span><span class="sxs-lookup"><span data-stu-id="c79e1-135">Response</span></span>
 
-<span data-ttu-id="4d066-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [device](../resources/device.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="4d066-136">If successful, this method returns a `200 OK` response code and collection of [device](../resources/device.md) objects in the response body.</span></span>
+<span data-ttu-id="c79e1-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [device](../resources/device.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="c79e1-136">If successful, this method returns a `200 OK` response code and collection of [device](../resources/device.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4d066-137">示例</span><span class="sxs-lookup"><span data-stu-id="4d066-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c79e1-137">示例</span><span class="sxs-lookup"><span data-stu-id="c79e1-137">Examples</span></span>
 
-### <a name="example-1-get-a-list-of-devices"></a><span data-ttu-id="4d066-138">示例 1：获取设备列表</span><span class="sxs-lookup"><span data-stu-id="4d066-138">Example 1: Get a list of devices</span></span>
+### <a name="example-1-get-a-list-of-devices"></a><span data-ttu-id="c79e1-138">示例 1：获取设备列表</span><span class="sxs-lookup"><span data-stu-id="c79e1-138">Example 1: Get a list of devices</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4d066-139">请求</span><span class="sxs-lookup"><span data-stu-id="4d066-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c79e1-139">请求</span><span class="sxs-lookup"><span data-stu-id="c79e1-139">Request</span></span>
 
-<span data-ttu-id="4d066-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4d066-140">Here is an example of the request.</span></span>
+<span data-ttu-id="c79e1-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c79e1-140">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4d066-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="4d066-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c79e1-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="c79e1-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_devices"
@@ -73,28 +73,28 @@ GET /devices
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices
 ```
-# <a name="c"></a>[<span data-ttu-id="4d066-142">C#</span><span class="sxs-lookup"><span data-stu-id="4d066-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c79e1-142">C#</span><span class="sxs-lookup"><span data-stu-id="c79e1-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4d066-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4d066-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c79e1-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c79e1-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4d066-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4d066-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c79e1-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c79e1-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-devices-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4d066-145">Java</span><span class="sxs-lookup"><span data-stu-id="4d066-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c79e1-145">Java</span><span class="sxs-lookup"><span data-stu-id="c79e1-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="4d066-146">响应</span><span class="sxs-lookup"><span data-stu-id="4d066-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c79e1-146">响应</span><span class="sxs-lookup"><span data-stu-id="c79e1-146">Response</span></span>
 
-<span data-ttu-id="4d066-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4d066-147">Here is an example of the response.</span></span>
-> <span data-ttu-id="4d066-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4d066-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c79e1-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c79e1-147">Here is an example of the response.</span></span>
+> <span data-ttu-id="c79e1-148">注意：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c79e1-148">Note: The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -121,11 +121,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-devices"></a><span data-ttu-id="4d066-150">示例 2：仅获取设备计数</span><span class="sxs-lookup"><span data-stu-id="4d066-150">Example 2: Get only a count of devices</span></span>
+### <a name="example-2-get-only-a-count-of-devices"></a><span data-ttu-id="c79e1-149">示例 2：仅获取设备计数</span><span class="sxs-lookup"><span data-stu-id="c79e1-149">Example 2: Get only a count of devices</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4d066-151">请求</span><span class="sxs-lookup"><span data-stu-id="4d066-151">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c79e1-150">请求</span><span class="sxs-lookup"><span data-stu-id="c79e1-150">Request</span></span>
 
-<span data-ttu-id="4d066-152">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4d066-152">The following is an example of the request.</span></span>
+<span data-ttu-id="c79e1-151">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c79e1-151">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -136,9 +136,9 @@ GET https://graph.microsoft.com/beta/devices/$count
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="4d066-153">响应</span><span class="sxs-lookup"><span data-stu-id="4d066-153">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c79e1-152">响应</span><span class="sxs-lookup"><span data-stu-id="c79e1-152">Response</span></span>
 
-<span data-ttu-id="4d066-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4d066-154">The following is an example of the response.</span></span>
+<span data-ttu-id="c79e1-153">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c79e1-153">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -151,13 +151,13 @@ HTTP/1.1 200 OK
 Content-type: text/plain
 ```
 
-<span data-ttu-id="4d066-155">294</span><span class="sxs-lookup"><span data-stu-id="4d066-155">294</span></span>
+<span data-ttu-id="c79e1-154">294</span><span class="sxs-lookup"><span data-stu-id="c79e1-154">294</span></span>
 
-### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="4d066-156">示例 3：使用 $filter 和 $top 获取一个设备显示名称以"a"开头的设备，其中包括返回的对象数</span><span class="sxs-lookup"><span data-stu-id="4d066-156">Example 3: Use $filter and $top to get one device with a display name that starts with 'a' including a count of returned objects</span></span>
+### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="c79e1-155">示例 3：使用 $filter 和 $top 获取一显示名称以"a"开头的设备，包括返回的对象计数</span><span class="sxs-lookup"><span data-stu-id="c79e1-155">Example 3: Use $filter and $top to get one device with a display name that starts with 'a' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4d066-157">请求</span><span class="sxs-lookup"><span data-stu-id="4d066-157">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c79e1-156">请求</span><span class="sxs-lookup"><span data-stu-id="c79e1-156">Request</span></span>
 
-<span data-ttu-id="4d066-158">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4d066-158">The following is an example of the request.</span></span>
+<span data-ttu-id="c79e1-157">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c79e1-157">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -168,10 +168,10 @@ GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a'
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="4d066-159">响应</span><span class="sxs-lookup"><span data-stu-id="4d066-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c79e1-158">响应</span><span class="sxs-lookup"><span data-stu-id="c79e1-158">Response</span></span>
 
-<span data-ttu-id="4d066-160">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4d066-160">The following is an example of the response.</span></span>
-><span data-ttu-id="4d066-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4d066-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c79e1-159">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c79e1-159">The following is an example of the response.</span></span>
+><span data-ttu-id="c79e1-160">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c79e1-160">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -211,11 +211,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a><span data-ttu-id="4d066-163">示例 4：$search获取显示名称包含字母"Android"的设备，包括返回的对象数</span><span class="sxs-lookup"><span data-stu-id="4d066-163">Example 4: Use $search to get devices with display names that contain the letters 'Android' including a count of returned objects</span></span>
+### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a><span data-ttu-id="c79e1-161">示例 4：$search获取显示名称包含字母"Android"的设备，包括返回的对象计数</span><span class="sxs-lookup"><span data-stu-id="c79e1-161">Example 4: Use $search to get devices with display names that contain the letters 'Android' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4d066-164">请求</span><span class="sxs-lookup"><span data-stu-id="4d066-164">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c79e1-162">请求</span><span class="sxs-lookup"><span data-stu-id="c79e1-162">Request</span></span>
 
-<span data-ttu-id="4d066-165">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4d066-165">The following is an example of the request.</span></span>
+<span data-ttu-id="c79e1-163">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c79e1-163">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -226,10 +226,10 @@ GET https://graph.microsoft.com/beta/devices?$search="displayName:Android"&$coun
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="4d066-166">响应</span><span class="sxs-lookup"><span data-stu-id="4d066-166">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c79e1-164">响应</span><span class="sxs-lookup"><span data-stu-id="c79e1-164">Response</span></span>
 
-<span data-ttu-id="4d066-167">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4d066-167">The following is an example of the response.</span></span>
-><span data-ttu-id="4d066-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4d066-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c79e1-165">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c79e1-165">The following is an example of the response.</span></span>
+><span data-ttu-id="c79e1-166">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c79e1-166">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
