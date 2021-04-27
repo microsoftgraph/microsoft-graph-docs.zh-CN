@@ -12,5 +12,5 @@ ms.locfileid: "50243093"
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> <span data-ttu-id="ef425-101">Microsoft Graph `/beta` 中版本下的 API 可能会更改。</span><span class="sxs-lookup"><span data-stu-id="ef425-101">APIs under the `/beta` version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ef425-102">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ef425-102">Use of these APIs in production applications is not supported.</span></span> <span data-ttu-id="ef425-103">若要确定 API 在 v1.0 中是否可用，请使用 **版本选择** 器。</span><span class="sxs-lookup"><span data-stu-id="ef425-103">To determine whether an API is available in v1.0, use the **Version** selector.</span></span>
+> <span data-ttu-id="5cc88-101">Microsoft Graph `/beta` 中的版本下的 API 可能会更改。</span><span class="sxs-lookup"><span data-stu-id="5cc88-101">APIs under the `/beta` version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="5cc88-102">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="5cc88-102">Use of these APIs in production applications is not supported.</span></span> <span data-ttu-id="5cc88-103">若要确定 API 在 v1.0 中是否可用，请使用版本 **选择** 器。</span><span class="sxs-lookup"><span data-stu-id="5cc88-103">To determine whether an API is available in v1.0, use the **Version** selector.</span></span>
 
