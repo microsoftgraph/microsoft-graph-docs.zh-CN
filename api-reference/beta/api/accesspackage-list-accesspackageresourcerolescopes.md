@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 82a70b30c7669cecc209b5a129dbfaeba5a89f8b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d2376d9eb4aaf0bd8ab58b0dd5cbbb131e36a01c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439819"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038633"
 ---
 # <a name="list-accesspackageresourcerolescopes"></a>列出 accessPackageResourceRoleScopes
 
@@ -20,7 +20,7 @@ ms.locfileid: "50439819"
 
 检索包含 [accessPackageResourceRoleScope 对象列表的访问](../resources/accesspackageresourcerolescope.md) 包。  每个对象链接到 [一个 accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [一个 accessPackageResourceScope](../resources/accesspackageresourcescope.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439819"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}?$expand=access
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}?$expand=access
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回包含 `200 OK` [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)对象集合的响应代码和[accessPackage。](../resources/accesspackage.md)
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` 包含[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)对象集合的[accessPackage。](../resources/accesspackage.md)
 
 ## <a name="examples"></a>示例
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

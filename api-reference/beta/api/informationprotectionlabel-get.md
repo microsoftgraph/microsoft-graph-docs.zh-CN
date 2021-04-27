@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 8400ceb42bb9f35a00c844369f904ae791b08534
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: df3941dd135cf33fe28f281132be4856c65baac0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954657"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040334"
 ---
 # <a name="get-informationprotectionlabel"></a>获取 informationProtectionLabel
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

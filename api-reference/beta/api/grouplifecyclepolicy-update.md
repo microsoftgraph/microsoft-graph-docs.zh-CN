@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ca02ae2cda3ef4cbc11ba63dd2b9d9f51004b183
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e676a2e56389e2898ae9be11ddba5b3f5dc4545f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964830"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041055"
 ---
 # <a name="update-grouplifecyclepolicy"></a>更新 groupLifecyclePolicy
 
@@ -50,7 +50,7 @@ PATCH /groupLifecyclePolicies/{id}
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
 |groupLifetimeInDays|Int32| 还剩多少天组就到期且需要续订。 续订后，组的有效期就会延长定义的天数。 |
-|managedGroupTypes|String| 到期策略适用的组类型。 可取值为 **All** 、 **Selected** 或 **None** 。 |
+|managedGroupTypes|String| 到期策略适用的组类型。 可取值为 **All**、**Selected** 或 **None**。 |
 
 ## <a name="response"></a>响应
 
@@ -95,7 +95,7 @@ Content-length: 151
 ---
 
 ##### <a name="response"></a>响应
-注意：为简洁起见，可能会截断此处显示的响应对象。 
+注意：为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,

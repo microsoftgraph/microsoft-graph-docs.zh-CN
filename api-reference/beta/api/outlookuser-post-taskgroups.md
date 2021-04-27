@@ -1,18 +1,18 @@
 ---
 title: 创建 outlookTaskGroup
-description: 在用户的邮箱中创建一个 Outlook 任务组。
+description: 在Outlook创建一个任务组。
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fd26a2853dcf69a12027fc6fb17fce84a2faecd0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1cef21d441ba20c1bc97f7e4bf2e4f1c922d1f9c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971573"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037996"
 ---
-# <a name="create-outlooktaskgroup-deprecated"></a>创建 outlookTaskGroup (弃用) 
+# <a name="create-outlooktaskgroup-deprecated"></a>创建已弃 (outlookTaskGroup) 
 
 命名空间：microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48971573"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-在用户的邮箱中创建一个 Outlook 任务组。
+在Outlook创建一个任务组。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [outlookTaskGroup](../resources/outlooktaskgroup.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [outlookTaskGroup](../resources/outlooktaskgroup.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -87,7 +87,7 @@ Content-length: 40
 
 在请求正文中，提供 [outlookTaskGroup](../resources/outlooktaskgroup.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

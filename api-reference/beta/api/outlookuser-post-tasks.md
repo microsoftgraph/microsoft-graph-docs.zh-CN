@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTask
-description: 在默认任务组中创建一个 Outlook 任务 (`My Tasks`) 和默认的任务文件夹 (`Tasks` 用户邮箱中的) 。
+description: 在Outlook邮箱的默认任务组 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1195cc0d96dc15f5edb46a0792330db797e1dcff
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a327acde8db0928b1ade7e5fcf660f86d6cdae96
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977177"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037954"
 ---
 # <a name="create-outlooktask-deprecated"></a>创建 outlookTask（已弃用）
 
@@ -21,11 +21,11 @@ ms.locfileid: "48977177"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-在默认任务组中创建一个 Outlook 任务 (`My Tasks`) 和默认的任务文件夹 (`Tasks` 用户邮箱中的) 。
+在Outlook邮箱的默认任务组 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
 
-POST 方法始终忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定指定时区中的时间始终为午夜。
+POST 方法始终忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定时间始终为指定时区中的午夜。
 
-默认情况下，此操作 (，获取、修补和 [完成](../api/outlooktask-complete.md) 任务操作) 返回 UTC 格式的日期相关属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
+默认情况下，此操作 (GET、PATCH 和 [完成](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,18 +46,18 @@ POST /users/{id|userPrincipalName}/outlook/tasks
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | 指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。 可选。|
+| Prefer: outlook.timezone | 指定响应中时间属性的时区，如果未指定此标头，则其时区为 UTC。 可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [outlookTask](../resources/outlooktask.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例展示了 `Prefer: outlook.timezone` 标头的用法。 它将创建一个任务，以东部标准时间 (EST) 表示 **startDateTime** 和 **dueDateTime** ，并包括 `Prefer` 太平洋标准时间 (PST) 的标题。
+以下示例显示标头 `Prefer: outlook.timezone` 的使用。 它创建一个任务，用东部标准时间 (EST) 表示 **startDateTime** 和 **dueDateTime，** 并包括太平洋 `Prefer` 标准时间 (PST) 标头。
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -100,11 +100,11 @@ Content-length: 276
 
 在请求正文中，提供 [outlookTask](../resources/outlooktask.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-POST 方法忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定指定时区 (EST) 中的时间始终为午夜。
+POST 方法忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定指定时区 (EST 时间始终为午夜) 。
 
-由于 `Prefer` 标头指定了 pst，因此 POST 方法表示 pst 中的响应中所有与日期相关的属性。 特别是对于 **startDateTime** 和 **DUEDATETIME** 属性，POST 方法将 EST 中的午夜转换为 pst，并在响应中将其返回到 pst 中。
+由于标头指定 PST，因此 POST 方法在 PST 中表示响应中所有与 `Prefer` 日期相关的属性。 特别是，对于 **startDateTime 和 dueDateTime** 属性，POST 方法将在 EST 中的午夜转换为 PST，在响应中以 PST 格式返回它们。 
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

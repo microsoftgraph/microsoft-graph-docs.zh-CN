@@ -6,12 +6,12 @@ author: jackry6350
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3fd701f9fb346a86c93359cdaa1a360c9b484223
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1ee50cd399b974b80fcb80ad514bbf3423c0471e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50769356"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037871"
 ---
 # <a name="delete-participant"></a>删除参与者
 
@@ -28,7 +28,7 @@ ms.locfileid: "50769356"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| Application                            | 无                                        |
+| 应用程序                            | 无                                        |
 
 需要租户级应用程序会议配置，应用程序才能调用此 API。 租户管理员应在租户远程 PowerShell 上调用以下 cmdlet，以向应用程序授予调用此 API 的权限。 有关详细信息，请参阅 [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)。
 ```
@@ -88,7 +88,7 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 
 ### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

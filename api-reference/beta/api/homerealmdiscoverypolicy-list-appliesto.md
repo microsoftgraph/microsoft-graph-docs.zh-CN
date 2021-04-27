@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 51479ec853d6900ceda04d6e535b99184b4fd63c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 31ea1eb539dc22dce69c3330d641c67188318067
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961700"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040971"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}/ap
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -1,24 +1,24 @@
 ---
-title: 参与者： configureMixer
-description: 为多方对话中的不同参与者配置音频的混合方式。
+title: participant： configureMixer
+description: 配置多方对话中不同参与者的音频混合方式。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe8531c4c63606303148fcdf7def3db57768b24d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9b8efa45be5163e088bef06e2d71959e80cae58
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004583"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037912"
 ---
-# <a name="participant-configuremixer"></a>参与者： configureMixer
+# <a name="participant-configuremixer"></a>participant： configureMixer
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为多方对话中的不同参与者配置音频的混合方式。
+配置多方对话中不同参与者的音频混合方式。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48004583"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | JoinGroupCalls Calls.InitiateGroupCalls。所有 |
+| 应用程序     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,11 @@ POST /communications/calls/{id}/participants/configureMixer
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) 集合| 指定的音频参与者的混音器级别配置。|
-|适用|String|客户端上下文。|
+|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) 集合| 给定音频参与者的调频器级别配置。|
+|clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回 `202 Accepted` 响应代码和位置标头，其中包含为此请求创建的 [commsOperation](../resources/commsoperation.md) 的 uri。
+返回 `202 Accepted` 响应代码和具有为此请求创建的 [commsOperation](../resources/commsoperation.md) 的 uri 的位置标头。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -110,7 +110,7 @@ Content-Length: 501
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -131,7 +131,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 }
 ```
 
-##### <a name="notification---operation-completed"></a>通知-操作已完成
+##### <a name="notification---operation-completed"></a>通知 - 操作已完成
 
 ```http
 POST https://bot.contoso.com/api/calls

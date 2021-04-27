@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 5ab2f3a075a248d0d8b2bcea1bcc2290fc0fac7e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6e3fe266556830bb6ebea3fccba0323f6bd7866b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435096"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040628"
 ---
 # <a name="list-impossibletravelriskevents-deprecated"></a>列出已弃 (的 impossibleTravelRiskEvents) 
 
@@ -22,14 +22,14 @@ ms.locfileid: "50435096"
 >**identityRiskEvents** API 已弃用，将在 2020 年 1 月 10 日停止返回数据。 有关详细信息，请参阅 [IdentityRiskEvents API 的弃用](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索不可能travelriskevent 对象的列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskEvent.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | IdentityRiskEvent.Read.All |
+|应用程序 | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /impossibleTravelRiskEvents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) 对象集合。
+如果成功，此方法在响应正文 `200 OK` 中返回 响应代码和 [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -59,7 +59,7 @@ GET /impossibleTravelRiskEvents
 GET https://graph.microsoft.com/v1.0/impossibleTravelRiskEvents
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

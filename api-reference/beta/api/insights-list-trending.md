@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 8cf1e651e42dbff4c588f9cd9d2ea5e1ead1256c
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 5a790c23a0e3cee09079beb5b51151610f309dad
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473232"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040243"
 ---
 # <a name="list-trending"></a>列出趋势
 
@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/beta/me/insights/trending
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。 请参阅页面底部的未截断响应示例。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。 请参阅页面底部的未截断响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,

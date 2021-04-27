@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d86f5cc5bd8d52ea4c902b06bd2f0013d11aaf12
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 92a7c4fc26cc647b141bdd3253f8ecd21bad9479
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954691"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040362"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel：evaluateRemoval
 
@@ -164,7 +164,7 @@ User-agent: ContosoLOBApp/1.0
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

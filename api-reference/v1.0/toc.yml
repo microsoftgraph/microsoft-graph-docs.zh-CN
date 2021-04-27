@@ -352,7 +352,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 注意
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -4279,7 +4279,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: 删除本地化
                     href: api/organizationalbrandingpropertieslocalization-delete.md
-              - name: Policy
+              - name: 策略
                 href: resources/policy-overview.md
                 items:
                   - name: 基于活动的超时策略
@@ -5925,10 +5925,14 @@ items:
                 href: api/table-list-rows.md
               - name: 创建行
                 href: api/table-post-rows.md
+              - name: 删除行
+                href: api/tablerow-delete.md
               - name: 列出列
                 href: api/table-list-columns.md
               - name: 创建列
                 href: api/table-post-columns.md
+              - name: 删除列
+                href: api/tablecolumn-delete.md
               - name: 获取区域
                 href: api/table-range.md
           - name: 图表

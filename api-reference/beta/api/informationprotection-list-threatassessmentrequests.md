@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ffc58d43be57ec99d7d7ec8dfc7abb4f239bf16a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d830c80c71e0873806d67ff0e6196a1bdc4d6483
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954696"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040509"
 ---
 # <a name="list-threatassessmentrequests"></a>列出 threatAssessmentRequests
 
@@ -24,7 +24,7 @@ ms.locfileid: "50954696"
 
 * [邮件](../resources/mailAssessmentRequest.md)
 * [电子邮件文件](../resources/emailFileAssessmentRequest.md)
-* [File](../resources/fileAssessmentRequest.md)
+* [文件](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
 
 ## <a name="permissions"></a>权限
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

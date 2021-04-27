@@ -1,18 +1,18 @@
 ---
-title: 在组中创建目录设置
+title: 在组上创建目录设置
 description: 使用此 API 为组创建新的目录设置。
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9cb569ae63a5ee1b993166765c5ef5446fc70d1a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4204478494dc02bb2013e95c6952f9b2bef166af
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002007"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041174"
 ---
-# <a name="create-a-directory-setting-on-groups"></a>在组中创建目录设置
+# <a name="create-a-directory-setting-on-groups"></a>在组上创建目录设置
 
 命名空间：microsoft.graph
 
@@ -36,14 +36,14 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者 <token>。 必填|
+| Authorization  | 持有者 <token>。 必需|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -84,7 +84,7 @@ Content-length: 222
 
 在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

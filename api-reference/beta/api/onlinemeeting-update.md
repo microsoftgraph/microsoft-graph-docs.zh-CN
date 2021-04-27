@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d7579a29132a3f122d525b81ab04f7d3fa49b6e8
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 8c6023f8893ced851ee7c79b3ed63314a4a9c510
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870049"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038218"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -47,7 +47,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > [!NOTE]
-> - `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 
 ## <a name="request-headers"></a>请求标头
@@ -68,7 +68,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime          | 日期时间                                                     | 会议结束时间（UTC）。                                                                                                                   |
 | subject              | String                                                       | 联机会议的主题。                                                                                                             |
 | participants         | [meetingParticipants](../resources/meetingparticipants.md)   | 与联机会议关联的参与者。 这包括组织者和与会者。                                            |
-| isEntryExitAnnounced | Boolean                                                      | 呼叫者加入或离开时是否宣布。                                                                                         |
+| isEntryExitAnnounced | 布尔值                                                      | 呼叫者加入或离开时是否宣布。                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | 指定哪些参与者可以绕过会议厅。                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | 指定可在会议中成为演示者的人。 可能的值包括 everyone、organization、roleIsPresenter、organizer 和 unknownFutureValue。 |
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

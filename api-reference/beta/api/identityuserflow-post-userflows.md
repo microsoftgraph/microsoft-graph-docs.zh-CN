@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3ed41278c913361f22d8df3f2ac34ce50c69d2ed
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e05529179ce498d58857a0308fcd615866cf39ed
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435299"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040670"
 ---
 # <a name="create-userflow"></a>创建 userFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435299"
 
 创建新的 [userFlow](../resources/identityuserflow.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50435299"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | IdentityUserFlow.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | IdentityUserFlow.ReadWrite.All |
+| 应用程序                            | IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /identity/userFlows
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `201 Created` 代码和新 [userFlow](../resources/identityuserflow.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [userFlow](../resources/identityuserflow.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

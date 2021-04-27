@@ -1,16 +1,16 @@
 ---
 title: 获取参与者
-description: 检索 **参与者** 对象的属性和关系。
+description: 检索参与者对象的属性 **和** 关系。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 68d385a70ee359ccdf5307a70f557e75a82a1e37
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 928809a53cb85cf46a5d2b8dd352303dbb448b91
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523817"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037873"
 ---
 # <a name="get-participant"></a>获取参与者
 
@@ -18,7 +18,7 @@ ms.locfileid: "49523817"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 **参与者** 对象的属性和关系。
+检索参与者对象的属性 **和** 关系。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ GET /communications/calls/{id}/participants/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [参与者](../resources/participant.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应[](../resources/participant.md)代码和 participant 对象。
 
 ## <a name="example"></a>示例
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
