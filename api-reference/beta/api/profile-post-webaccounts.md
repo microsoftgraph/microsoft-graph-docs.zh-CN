@@ -5,32 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 697791bff68443cedd3e094c8ae2d3706ab2b072
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2d41cb9fe650fa8d506f8ea9c218a01d4f2c0605
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972647"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036763"
 ---
-# <a name="create-webaccount"></a><span data-ttu-id="9187f-103">创建 webAccount</span><span class="sxs-lookup"><span data-stu-id="9187f-103">Create webAccount</span></span>
+# <a name="create-webaccount"></a><span data-ttu-id="38d78-103">创建 webAccount</span><span class="sxs-lookup"><span data-stu-id="38d78-103">Create webAccount</span></span>
 
-<span data-ttu-id="9187f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9187f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="38d78-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="38d78-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9187f-105">在用户的[配置文件](../resources/profile.md)中创建新的[webAccount](../resources/webaccount.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9187f-105">Create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="38d78-105">在用户配置文件中创建新的 [webAccount](../resources/webaccount.md) [对象](../resources/profile.md)。</span><span class="sxs-lookup"><span data-stu-id="38d78-105">Create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9187f-106">权限</span><span class="sxs-lookup"><span data-stu-id="9187f-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="38d78-106">权限</span><span class="sxs-lookup"><span data-stu-id="38d78-106">Permissions</span></span>
 
-<span data-ttu-id="9187f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9187f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="38d78-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="38d78-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="9187f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9187f-109">Permission type</span></span>                        | <span data-ttu-id="9187f-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9187f-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="38d78-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="38d78-109">Permission type</span></span>                        | <span data-ttu-id="38d78-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="38d78-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="9187f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9187f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="9187f-112">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="9187f-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="9187f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9187f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9187f-114">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="9187f-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="9187f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9187f-115">Application</span></span>                            | <span data-ttu-id="9187f-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9187f-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="38d78-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="38d78-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="38d78-112">User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38d78-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="38d78-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="38d78-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38d78-114">User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38d78-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="38d78-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="38d78-115">Application</span></span>                            | <span data-ttu-id="38d78-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38d78-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="9187f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9187f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="38d78-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="38d78-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,41 +39,41 @@ POST /me/profile/webAccounts
 POST /users/{id | userPrincipalName}/profile/webAccounts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9187f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="9187f-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="38d78-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="38d78-118">Request headers</span></span>
 
-| <span data-ttu-id="9187f-119">名称</span><span class="sxs-lookup"><span data-stu-id="9187f-119">Name</span></span>           | <span data-ttu-id="9187f-120">说明</span><span class="sxs-lookup"><span data-stu-id="9187f-120">Description</span></span>                 |
+| <span data-ttu-id="38d78-119">名称</span><span class="sxs-lookup"><span data-stu-id="38d78-119">Name</span></span>           | <span data-ttu-id="38d78-120">说明</span><span class="sxs-lookup"><span data-stu-id="38d78-120">Description</span></span>                 |
 |:---------------|:----------------------------|
-| <span data-ttu-id="9187f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9187f-121">Authorization</span></span>  | <span data-ttu-id="9187f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9187f-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="9187f-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9187f-124">Content-Type</span></span>   | <span data-ttu-id="9187f-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="9187f-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="38d78-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="38d78-121">Authorization</span></span>  | <span data-ttu-id="38d78-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="38d78-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="38d78-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="38d78-124">Content-Type</span></span>   | <span data-ttu-id="38d78-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="38d78-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9187f-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="9187f-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="38d78-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="38d78-127">Request body</span></span>
 
-<span data-ttu-id="9187f-128">在请求正文中，提供 [webAccount](../resources/webaccount.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9187f-128">In the request body, supply a JSON representation of [webAccount](../resources/webaccount.md) object.</span></span>
+<span data-ttu-id="38d78-128">在请求正文中，提供 [webAccount](../resources/webaccount.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="38d78-128">In the request body, supply a JSON representation of [webAccount](../resources/webaccount.md) object.</span></span>
 
-<span data-ttu-id="9187f-129">下表显示了在用户的[配置文件](../resources/profile.md)中创建新的[webAccount](../resources/webaccount.md)对象时可以设置的属性。</span><span class="sxs-lookup"><span data-stu-id="9187f-129">The following table shows the properties that are possible to set when you create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="38d78-129">下表显示了在用户配置文件中创建新的 [webAccount](../resources/webaccount.md) 对象时可以设置 [的属性](../resources/profile.md)。</span><span class="sxs-lookup"><span data-stu-id="38d78-129">The following table shows the properties that are possible to set when you create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-|<span data-ttu-id="9187f-130">属性</span><span class="sxs-lookup"><span data-stu-id="9187f-130">Property</span></span>|<span data-ttu-id="9187f-131">类型</span><span class="sxs-lookup"><span data-stu-id="9187f-131">Type</span></span>|<span data-ttu-id="9187f-132">说明</span><span class="sxs-lookup"><span data-stu-id="9187f-132">Description</span></span>|
+|<span data-ttu-id="38d78-130">属性</span><span class="sxs-lookup"><span data-stu-id="38d78-130">Property</span></span>|<span data-ttu-id="38d78-131">类型</span><span class="sxs-lookup"><span data-stu-id="38d78-131">Type</span></span>|<span data-ttu-id="38d78-132">说明</span><span class="sxs-lookup"><span data-stu-id="38d78-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9187f-133">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="9187f-133">allowedAudiences</span></span>|<span data-ttu-id="9187f-134">String</span><span class="sxs-lookup"><span data-stu-id="9187f-134">String</span></span>|<span data-ttu-id="9187f-135">能够查看实体中包含的值的访问群体。</span><span class="sxs-lookup"><span data-stu-id="9187f-135">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="9187f-136">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="9187f-136">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="9187f-137">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="9187f-137">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="9187f-138">说明</span><span class="sxs-lookup"><span data-stu-id="9187f-138">description</span></span>|<span data-ttu-id="9187f-139">String</span><span class="sxs-lookup"><span data-stu-id="9187f-139">String</span></span>|<span data-ttu-id="9187f-140">包含用户为所引用服务上的帐户提供的说明。</span><span class="sxs-lookup"><span data-stu-id="9187f-140">Contains the description the user has provided for the account on the service being referenced.</span></span>|
-|<span data-ttu-id="9187f-141">推导</span><span class="sxs-lookup"><span data-stu-id="9187f-141">inference</span></span>|[<span data-ttu-id="9187f-142">inferenceData</span><span class="sxs-lookup"><span data-stu-id="9187f-142">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="9187f-143">如果实体是由创建或修改应用程序推断的，则包含推理详细信息。</span><span class="sxs-lookup"><span data-stu-id="9187f-143">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="9187f-144">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="9187f-144">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="9187f-145">服务</span><span class="sxs-lookup"><span data-stu-id="9187f-145">service</span></span>|[<span data-ttu-id="9187f-146">serviceInformation</span><span class="sxs-lookup"><span data-stu-id="9187f-146">serviceInformation</span></span>](../resources/serviceinformation.md)| <span data-ttu-id="9187f-147">包含有关要关联的服务的基本详细信息。</span><span class="sxs-lookup"><span data-stu-id="9187f-147">Contains basic detail about the service that is being associated.</span></span> |
-|<span data-ttu-id="9187f-148">source</span><span class="sxs-lookup"><span data-stu-id="9187f-148">source</span></span>|[<span data-ttu-id="9187f-149">personDataSource</span><span class="sxs-lookup"><span data-stu-id="9187f-149">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="9187f-150">值的来源，如果从另一个服务同步。</span><span class="sxs-lookup"><span data-stu-id="9187f-150">Where the values originated if synced from another service.</span></span> <span data-ttu-id="9187f-151">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="9187f-151">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="9187f-152">statusMessage</span><span class="sxs-lookup"><span data-stu-id="9187f-152">statusMessage</span></span>|<span data-ttu-id="9187f-153">String</span><span class="sxs-lookup"><span data-stu-id="9187f-153">String</span></span>|<span data-ttu-id="9187f-154">包含来自云服务的状态邮件（如果提供或已同步）。</span><span class="sxs-lookup"><span data-stu-id="9187f-154">Contains a status message from the cloud service if provided or synchronized.</span></span> |
-|<span data-ttu-id="9187f-155">userId</span><span class="sxs-lookup"><span data-stu-id="9187f-155">userId</span></span>|<span data-ttu-id="9187f-156">String</span><span class="sxs-lookup"><span data-stu-id="9187f-156">String</span></span>|<span data-ttu-id="9187f-157">为 webaccount 显示的用户名。</span><span class="sxs-lookup"><span data-stu-id="9187f-157">The user name  displayed for the webaccount.</span></span>  |
-|<span data-ttu-id="9187f-158">webUrl</span><span class="sxs-lookup"><span data-stu-id="9187f-158">webUrl</span></span>|<span data-ttu-id="9187f-159">String</span><span class="sxs-lookup"><span data-stu-id="9187f-159">String</span></span>|<span data-ttu-id="9187f-160">包含指向云服务上的用户配置文件的链接（如果存在）。</span><span class="sxs-lookup"><span data-stu-id="9187f-160">Contains a link to the user's profile on the cloud service if one exists.</span></span>|
+|<span data-ttu-id="38d78-133">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="38d78-133">allowedAudiences</span></span>|<span data-ttu-id="38d78-134">String</span><span class="sxs-lookup"><span data-stu-id="38d78-134">String</span></span>|<span data-ttu-id="38d78-135">能够查看实体中包含的值的访问群体。</span><span class="sxs-lookup"><span data-stu-id="38d78-135">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="38d78-136">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="38d78-136">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="38d78-137">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="38d78-137">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="38d78-138">说明</span><span class="sxs-lookup"><span data-stu-id="38d78-138">description</span></span>|<span data-ttu-id="38d78-139">String</span><span class="sxs-lookup"><span data-stu-id="38d78-139">String</span></span>|<span data-ttu-id="38d78-140">包含用户为引用的服务上的帐户提供的说明。</span><span class="sxs-lookup"><span data-stu-id="38d78-140">Contains the description the user has provided for the account on the service being referenced.</span></span>|
+|<span data-ttu-id="38d78-141">inference</span><span class="sxs-lookup"><span data-stu-id="38d78-141">inference</span></span>|[<span data-ttu-id="38d78-142">inferenceData</span><span class="sxs-lookup"><span data-stu-id="38d78-142">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="38d78-143">如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。</span><span class="sxs-lookup"><span data-stu-id="38d78-143">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="38d78-144">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="38d78-144">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="38d78-145">服务</span><span class="sxs-lookup"><span data-stu-id="38d78-145">service</span></span>|[<span data-ttu-id="38d78-146">serviceInformation</span><span class="sxs-lookup"><span data-stu-id="38d78-146">serviceInformation</span></span>](../resources/serviceinformation.md)| <span data-ttu-id="38d78-147">包含有关要关联的服务的基本详细信息。</span><span class="sxs-lookup"><span data-stu-id="38d78-147">Contains basic detail about the service that is being associated.</span></span> |
+|<span data-ttu-id="38d78-148">source</span><span class="sxs-lookup"><span data-stu-id="38d78-148">source</span></span>|[<span data-ttu-id="38d78-149">personDataSource</span><span class="sxs-lookup"><span data-stu-id="38d78-149">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="38d78-150">如果从另一个服务同步，则值源自何处。</span><span class="sxs-lookup"><span data-stu-id="38d78-150">Where the values originated if synced from another service.</span></span> <span data-ttu-id="38d78-151">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="38d78-151">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="38d78-152">statusMessage</span><span class="sxs-lookup"><span data-stu-id="38d78-152">statusMessage</span></span>|<span data-ttu-id="38d78-153">String</span><span class="sxs-lookup"><span data-stu-id="38d78-153">String</span></span>|<span data-ttu-id="38d78-154">包含来自云服务的状态消息（如果提供或同步）。</span><span class="sxs-lookup"><span data-stu-id="38d78-154">Contains a status message from the cloud service if provided or synchronized.</span></span> |
+|<span data-ttu-id="38d78-155">userId</span><span class="sxs-lookup"><span data-stu-id="38d78-155">userId</span></span>|<span data-ttu-id="38d78-156">String</span><span class="sxs-lookup"><span data-stu-id="38d78-156">String</span></span>|<span data-ttu-id="38d78-157">为 webaccount 显示的用户名。</span><span class="sxs-lookup"><span data-stu-id="38d78-157">The user name  displayed for the webaccount.</span></span>  |
+|<span data-ttu-id="38d78-158">webUrl</span><span class="sxs-lookup"><span data-stu-id="38d78-158">webUrl</span></span>|<span data-ttu-id="38d78-159">String</span><span class="sxs-lookup"><span data-stu-id="38d78-159">String</span></span>|<span data-ttu-id="38d78-160">包含指向云服务上的用户配置文件的链接（如果存在）。</span><span class="sxs-lookup"><span data-stu-id="38d78-160">Contains a link to the user's profile on the cloud service if one exists.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9187f-161">响应</span><span class="sxs-lookup"><span data-stu-id="9187f-161">Response</span></span>
+## <a name="response"></a><span data-ttu-id="38d78-161">响应</span><span class="sxs-lookup"><span data-stu-id="38d78-161">Response</span></span>
 
-<span data-ttu-id="9187f-162">如果成功，此方法 `201, Created` 在响应正文中返回响应代码和新的 [webAccount](../resources/webaccount.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9187f-162">If successful, this method returns `201, Created` response code and a new [webAccount](../resources/webaccount.md) object in the response body.</span></span>
+<span data-ttu-id="38d78-162">如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和新 [webAccount](../resources/webaccount.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="38d78-162">If successful, this method returns `201, Created` response code and a new [webAccount](../resources/webaccount.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9187f-163">示例</span><span class="sxs-lookup"><span data-stu-id="9187f-163">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="38d78-163">示例</span><span class="sxs-lookup"><span data-stu-id="38d78-163">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="9187f-164">请求</span><span class="sxs-lookup"><span data-stu-id="9187f-164">Request</span></span>
+### <a name="request"></a><span data-ttu-id="38d78-164">请求</span><span class="sxs-lookup"><span data-stu-id="38d78-164">Request</span></span>
 
-<span data-ttu-id="9187f-165">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9187f-165">The following is an example of the request.</span></span>
+<span data-ttu-id="38d78-165">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="38d78-165">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9187f-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="9187f-166">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="38d78-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="38d78-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_webaccount_from_profile"
@@ -92,30 +92,30 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9187f-167">C#</span><span class="sxs-lookup"><span data-stu-id="9187f-167">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="38d78-167">C#</span><span class="sxs-lookup"><span data-stu-id="38d78-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-webaccount-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9187f-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9187f-168">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="38d78-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="38d78-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-webaccount-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9187f-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9187f-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="38d78-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="38d78-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-webaccount-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9187f-170">Java</span><span class="sxs-lookup"><span data-stu-id="9187f-170">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="38d78-170">Java</span><span class="sxs-lookup"><span data-stu-id="38d78-170">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-webaccount-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="9187f-171">响应</span><span class="sxs-lookup"><span data-stu-id="9187f-171">Response</span></span>
+### <a name="response"></a><span data-ttu-id="38d78-171">响应</span><span class="sxs-lookup"><span data-stu-id="38d78-171">Response</span></span>
 
-<span data-ttu-id="9187f-172">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9187f-172">The following is an example of the response.</span></span>
+<span data-ttu-id="38d78-172">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="38d78-172">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="9187f-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="9187f-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="38d78-173">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="38d78-173">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
