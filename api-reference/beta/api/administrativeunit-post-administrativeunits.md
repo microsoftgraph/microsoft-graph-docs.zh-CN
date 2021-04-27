@@ -5,58 +5,58 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6915c434afcbb2b862912c86e3a3eb9d64550fc7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 898b8a2c63310743a6c2fcfec3c044d96d5b4f57
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438797"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048237"
 ---
-# <a name="create-administrativeunit"></a><span data-ttu-id="69dcf-103">创建 administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="69dcf-103">Create administrativeUnit</span></span>
+# <a name="create-administrativeunit"></a><span data-ttu-id="6af8e-103">创建 administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="6af8e-103">Create administrativeUnit</span></span>
 
-<span data-ttu-id="69dcf-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="69dcf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6af8e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6af8e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="69dcf-105">使用此 API 创建新的[administrativeUnit。](../resources/administrativeunit.md)</span><span class="sxs-lookup"><span data-stu-id="69dcf-105">Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="69dcf-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="69dcf-106">Permissions</span></span>
-<span data-ttu-id="69dcf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="69dcf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6af8e-105">使用此 API 创建新的 [administrativeUnit](../resources/administrativeunit.md)。</span><span class="sxs-lookup"><span data-stu-id="6af8e-105">Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6af8e-106">权限</span><span class="sxs-lookup"><span data-stu-id="6af8e-106">Permissions</span></span>
+<span data-ttu-id="6af8e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6af8e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="69dcf-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="69dcf-109">Permission type</span></span>      | <span data-ttu-id="69dcf-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="69dcf-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6af8e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="6af8e-109">Permission type</span></span>      | <span data-ttu-id="6af8e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6af8e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="69dcf-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="69dcf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="69dcf-112">AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="69dcf-112">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="69dcf-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="69dcf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69dcf-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="69dcf-114">Not supported.</span></span>    |
-|<span data-ttu-id="69dcf-115">Application</span><span class="sxs-lookup"><span data-stu-id="69dcf-115">Application</span></span> | <span data-ttu-id="69dcf-116">AdministrativeUnit.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69dcf-116">AdministrativeUnit.ReadWrite.All</span></span> |
+|<span data-ttu-id="6af8e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6af8e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6af8e-112">AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6af8e-112">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="6af8e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6af8e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6af8e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="6af8e-114">Not supported.</span></span>    |
+|<span data-ttu-id="6af8e-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="6af8e-115">Application</span></span> | <span data-ttu-id="6af8e-116">AdministrativeUnit.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6af8e-116">AdministrativeUnit.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="69dcf-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="69dcf-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6af8e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6af8e-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="69dcf-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="69dcf-118">Request headers</span></span>
-| <span data-ttu-id="69dcf-119">名称</span><span class="sxs-lookup"><span data-stu-id="69dcf-119">Name</span></span>      |<span data-ttu-id="69dcf-120">说明</span><span class="sxs-lookup"><span data-stu-id="69dcf-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6af8e-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="6af8e-118">Request headers</span></span>
+| <span data-ttu-id="6af8e-119">名称</span><span class="sxs-lookup"><span data-stu-id="6af8e-119">Name</span></span>      |<span data-ttu-id="6af8e-120">说明</span><span class="sxs-lookup"><span data-stu-id="6af8e-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="69dcf-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="69dcf-121">Authorization</span></span>  | <span data-ttu-id="69dcf-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="69dcf-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="69dcf-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="69dcf-124">Content-type</span></span> | <span data-ttu-id="69dcf-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="69dcf-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="6af8e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="6af8e-121">Authorization</span></span>  | <span data-ttu-id="6af8e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6af8e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6af8e-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="6af8e-124">Content-type</span></span> | <span data-ttu-id="6af8e-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="6af8e-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="69dcf-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="69dcf-127">Request body</span></span>
-<span data-ttu-id="69dcf-128">在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="69dcf-128">In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6af8e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="6af8e-127">Request body</span></span>
+<span data-ttu-id="6af8e-128">在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6af8e-128">In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
 
-<span data-ttu-id="69dcf-129">由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用该操作，并创建管理单元时将包含您自己的数据的 `POST` 自定义属性添加到管理单元。</span><span class="sxs-lookup"><span data-stu-id="69dcf-129">Because the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.</span></span>
+<span data-ttu-id="6af8e-129">由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作，并在创建时将包含自己的数据的自定义属性 `POST` 添加到管理单元。</span><span class="sxs-lookup"><span data-stu-id="6af8e-129">Because the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="69dcf-130">响应</span><span class="sxs-lookup"><span data-stu-id="69dcf-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6af8e-130">响应</span><span class="sxs-lookup"><span data-stu-id="6af8e-130">Response</span></span>
 
-<span data-ttu-id="69dcf-131">如果成功，此方法在响应正文中返回响应代码和 `201 Created` [administrativeUnit](../resources/administrativeunit.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="69dcf-131">If successful, this method returns a `201 Created` response code and an [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
+<span data-ttu-id="6af8e-131">如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="6af8e-131">If successful, this method returns a `201 Created` response code and an [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="69dcf-132">示例</span><span class="sxs-lookup"><span data-stu-id="69dcf-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6af8e-132">示例</span><span class="sxs-lookup"><span data-stu-id="6af8e-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="69dcf-133">请求</span><span class="sxs-lookup"><span data-stu-id="69dcf-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6af8e-133">请求</span><span class="sxs-lookup"><span data-stu-id="6af8e-133">Request</span></span>
 
-<span data-ttu-id="69dcf-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="69dcf-134">The following is an example of the request.</span></span>
+<span data-ttu-id="6af8e-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6af8e-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="69dcf-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="69dcf-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6af8e-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="6af8e-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_administrativeunit_from_administrativeunits"
@@ -72,30 +72,30 @@ Content-length: 150
     "visibility": "HiddenMembership"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="69dcf-136">C#</span><span class="sxs-lookup"><span data-stu-id="69dcf-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6af8e-136">C#</span><span class="sxs-lookup"><span data-stu-id="6af8e-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-administrativeunit-from-administrativeunits-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="69dcf-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="69dcf-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6af8e-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6af8e-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-administrativeunit-from-administrativeunits-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="69dcf-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="69dcf-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6af8e-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6af8e-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-administrativeunit-from-administrativeunits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="69dcf-139">Java</span><span class="sxs-lookup"><span data-stu-id="69dcf-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6af8e-139">Java</span><span class="sxs-lookup"><span data-stu-id="6af8e-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-administrativeunit-from-administrativeunits-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="69dcf-140">在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="69dcf-140">In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+<span data-ttu-id="6af8e-140">在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6af8e-140">In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
 
-### <a name="response"></a><span data-ttu-id="69dcf-141">响应</span><span class="sxs-lookup"><span data-stu-id="69dcf-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6af8e-141">响应</span><span class="sxs-lookup"><span data-stu-id="6af8e-141">Response</span></span>
 
-<span data-ttu-id="69dcf-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="69dcf-142">The following is an example of the response.</span></span> 
-> <span data-ttu-id="69dcf-143">注意：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="69dcf-143">Note: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="69dcf-144">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="69dcf-144">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6af8e-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6af8e-142">The following is an example of the response.</span></span> 
+> <span data-ttu-id="6af8e-143">注意：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="6af8e-143">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -116,10 +116,10 @@ Content-length: 172
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="69dcf-145">另请参阅</span><span class="sxs-lookup"><span data-stu-id="69dcf-145">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6af8e-144">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6af8e-144">See also</span></span>
 
-- [<span data-ttu-id="69dcf-146">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="69dcf-146">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="69dcf-147">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="69dcf-147">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="6af8e-145">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="6af8e-145">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="6af8e-146">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="6af8e-146">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->

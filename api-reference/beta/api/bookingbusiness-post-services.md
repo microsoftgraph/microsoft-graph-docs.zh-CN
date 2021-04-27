@@ -5,52 +5,52 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: bea9b639dced6f490941822e488ebbf07307dac3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5f790cdc87cc7beedb85421cffec8dfb65aa56e3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960662"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047859"
 ---
-# <a name="create-bookingservice"></a><span data-ttu-id="8f067-103">创建 bookingService</span><span class="sxs-lookup"><span data-stu-id="8f067-103">Create bookingService</span></span>
+# <a name="create-bookingservice"></a><span data-ttu-id="0cead-103">创建 bookingService</span><span class="sxs-lookup"><span data-stu-id="0cead-103">Create bookingService</span></span>
 
-<span data-ttu-id="8f067-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8f067-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0cead-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0cead-104">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8f067-105">为指定的[bookingbusiness](../resources/bookingbusiness.md)创建新的[bookingService](../resources/bookingservice.md) 。</span><span class="sxs-lookup"><span data-stu-id="8f067-105">Create a new [bookingService](../resources/bookingservice.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="8f067-106">权限</span><span class="sxs-lookup"><span data-stu-id="8f067-106">Permissions</span></span>
-<span data-ttu-id="8f067-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8f067-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0cead-105">为指定的[bookingbusiness](../resources/bookingbusiness.md)创建新的[bookingService。](../resources/bookingservice.md)</span><span class="sxs-lookup"><span data-stu-id="0cead-105">Create a new [bookingService](../resources/bookingservice.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0cead-106">权限</span><span class="sxs-lookup"><span data-stu-id="0cead-106">Permissions</span></span>
+<span data-ttu-id="0cead-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0cead-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8f067-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8f067-109">Permission type</span></span>      | <span data-ttu-id="8f067-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8f067-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0cead-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="0cead-109">Permission type</span></span>      | <span data-ttu-id="0cead-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0cead-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8f067-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8f067-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="8f067-112">全部预订. 全部，全部预订. 全部</span><span class="sxs-lookup"><span data-stu-id="8f067-112">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="8f067-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8f067-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f067-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="8f067-114">Not supported.</span></span>   |
-|<span data-ttu-id="8f067-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="8f067-115">Application</span></span> | <span data-ttu-id="8f067-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="8f067-116">Not supported.</span></span>  |
+|<span data-ttu-id="0cead-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0cead-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="0cead-112">Bookings.ReadWrite.All、Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="0cead-112">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="0cead-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0cead-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0cead-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="0cead-114">Not supported.</span></span>   |
+|<span data-ttu-id="0cead-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="0cead-115">Application</span></span> | <span data-ttu-id="0cead-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0cead-116">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="8f067-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8f067-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0cead-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0cead-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/services
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8f067-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8f067-118">Request headers</span></span>
-| <span data-ttu-id="8f067-119">名称</span><span class="sxs-lookup"><span data-stu-id="8f067-119">Name</span></span>       | <span data-ttu-id="8f067-120">说明</span><span class="sxs-lookup"><span data-stu-id="8f067-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0cead-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="0cead-118">Request headers</span></span>
+| <span data-ttu-id="0cead-119">名称</span><span class="sxs-lookup"><span data-stu-id="0cead-119">Name</span></span>       | <span data-ttu-id="0cead-120">说明</span><span class="sxs-lookup"><span data-stu-id="0cead-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8f067-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8f067-121">Authorization</span></span>  | <span data-ttu-id="8f067-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="8f067-122">Bearer {code}</span></span>|
+| <span data-ttu-id="0cead-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="0cead-121">Authorization</span></span>  | <span data-ttu-id="0cead-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="0cead-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8f067-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="8f067-123">Request body</span></span>
-<span data-ttu-id="8f067-124">在请求正文中，提供 [bookingService](../resources/bookingservice.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8f067-124">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0cead-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="0cead-123">Request body</span></span>
+<span data-ttu-id="0cead-124">在请求正文中，提供 [bookingService](../resources/bookingservice.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0cead-124">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="8f067-125">响应</span><span class="sxs-lookup"><span data-stu-id="8f067-125">Response</span></span>
-<span data-ttu-id="8f067-126">如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [bookingService](../resources/bookingservice.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8f067-126">If successful, this method returns `201, Created` response code and [bookingService](../resources/bookingservice.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0cead-125">响应</span><span class="sxs-lookup"><span data-stu-id="0cead-125">Response</span></span>
+<span data-ttu-id="0cead-126">如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和 [bookingService](../resources/bookingservice.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0cead-126">If successful, this method returns `201, Created` response code and [bookingService](../resources/bookingservice.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8f067-127">示例</span><span class="sxs-lookup"><span data-stu-id="8f067-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8f067-128">请求</span><span class="sxs-lookup"><span data-stu-id="8f067-128">Request</span></span>
-<span data-ttu-id="8f067-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8f067-129">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0cead-127">示例</span><span class="sxs-lookup"><span data-stu-id="0cead-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0cead-128">请求</span><span class="sxs-lookup"><span data-stu-id="0cead-128">Request</span></span>
+<span data-ttu-id="0cead-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="0cead-129">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8f067-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="8f067-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0cead-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="0cead-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookingservice_from_bookingbusiness"
@@ -119,27 +119,27 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="8f067-131">C#</span><span class="sxs-lookup"><span data-stu-id="8f067-131">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0cead-131">C#</span><span class="sxs-lookup"><span data-stu-id="0cead-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingservice-from-bookingbusiness-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8f067-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f067-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0cead-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0cead-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingservice-from-bookingbusiness-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8f067-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8f067-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0cead-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0cead-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bookingservice-from-bookingbusiness-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="8f067-134">Java</span><span class="sxs-lookup"><span data-stu-id="8f067-134">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="0cead-134">Java</span><span class="sxs-lookup"><span data-stu-id="0cead-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-bookingservice-from-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="8f067-135">在请求正文中，提供 [bookingService](../resources/bookingservice.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8f067-135">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="8f067-136">响应</span><span class="sxs-lookup"><span data-stu-id="8f067-136">Response</span></span>
-<span data-ttu-id="8f067-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="8f067-137">The following is an example of the response.</span></span> <span data-ttu-id="8f067-138">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="8f067-138">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="8f067-139">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8f067-139">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0cead-135">在请求正文中，提供 [bookingService](../resources/bookingservice.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0cead-135">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="0cead-136">响应</span><span class="sxs-lookup"><span data-stu-id="0cead-136">Response</span></span>
+<span data-ttu-id="0cead-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="0cead-137">The following is an example of the response.</span></span> <span data-ttu-id="0cead-138">注意：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="0cead-138">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

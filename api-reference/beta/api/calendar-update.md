@@ -5,70 +5,70 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 18720d55ee57fbe50ee14f77d43e36e6d0c29764
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4e1bd3897a16a9d75ef53e4450fb5a20e1c5651a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437865"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047726"
 ---
-# <a name="update-calendar"></a><span data-ttu-id="d9ca8-104">更新日历</span><span class="sxs-lookup"><span data-stu-id="d9ca8-104">Update calendar</span></span>
+# <a name="update-calendar"></a><span data-ttu-id="c6f92-104">更新日历</span><span class="sxs-lookup"><span data-stu-id="c6f92-104">Update calendar</span></span>
 
-<span data-ttu-id="d9ca8-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d9ca8-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c6f92-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c6f92-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d9ca8-106">更新 [calendar](../resources/calendar.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-106">Update the properties of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="d9ca8-107">可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-107">The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="d9ca8-108">权限</span><span class="sxs-lookup"><span data-stu-id="d9ca8-108">Permissions</span></span>
-<span data-ttu-id="d9ca8-109">根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-109">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="d9ca8-110">要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c6f92-106">更新 [calendar](../resources/calendar.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="c6f92-106">Update the properties of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="c6f92-107">可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。</span><span class="sxs-lookup"><span data-stu-id="c6f92-107">The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c6f92-108">权限</span><span class="sxs-lookup"><span data-stu-id="c6f92-108">Permissions</span></span>
+<span data-ttu-id="c6f92-109">根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。</span><span class="sxs-lookup"><span data-stu-id="c6f92-109">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="c6f92-110">要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c6f92-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d9ca8-111">日历</span><span class="sxs-lookup"><span data-stu-id="d9ca8-111">Calendar</span></span> | <span data-ttu-id="d9ca8-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d9ca8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d9ca8-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d9ca8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9ca8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d9ca8-114">Application</span></span> |
+| <span data-ttu-id="c6f92-111">日历</span><span class="sxs-lookup"><span data-stu-id="c6f92-111">Calendar</span></span> | <span data-ttu-id="c6f92-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c6f92-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c6f92-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c6f92-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6f92-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c6f92-114">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="d9ca8-115">用户日历</span><span class="sxs-lookup"><span data-stu-id="d9ca8-115">user calendar</span></span> | <span data-ttu-id="d9ca8-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d9ca8-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="d9ca8-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d9ca8-117">Calendars.ReadWrite</span></span> | <span data-ttu-id="d9ca8-118">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d9ca8-118">Calendars.ReadWrite</span></span> |
-| <span data-ttu-id="d9ca8-119">组日历</span><span class="sxs-lookup"><span data-stu-id="d9ca8-119">group calendar</span></span> | <span data-ttu-id="d9ca8-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9ca8-120">Group.ReadWrite.All</span></span> | <span data-ttu-id="d9ca8-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-121">Not supported.</span></span> | <span data-ttu-id="d9ca8-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-122">Not supported.</span></span> |
+| <span data-ttu-id="c6f92-115">用户日历</span><span class="sxs-lookup"><span data-stu-id="c6f92-115">user calendar</span></span> | <span data-ttu-id="c6f92-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6f92-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="c6f92-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6f92-117">Calendars.ReadWrite</span></span> | <span data-ttu-id="c6f92-118">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6f92-118">Calendars.ReadWrite</span></span> |
+| <span data-ttu-id="c6f92-119">组日历</span><span class="sxs-lookup"><span data-stu-id="c6f92-119">group calendar</span></span> | <span data-ttu-id="c6f92-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c6f92-120">Group.ReadWrite.All</span></span> | <span data-ttu-id="c6f92-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="c6f92-121">Not supported.</span></span> | <span data-ttu-id="c6f92-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="c6f92-122">Not supported.</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="d9ca8-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d9ca8-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c6f92-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c6f92-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="d9ca8-124">用户或组的默认 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-124">A user's or group's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="c6f92-124">用户或组的默认 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="c6f92-124">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar
 PATCH /groups/{id}/calendar
 ```
-<span data-ttu-id="d9ca8-125">默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-125">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="c6f92-125">默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="c6f92-125">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
 ```
-<span data-ttu-id="d9ca8-126">指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-126">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="c6f92-126">指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="c6f92-126">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 PATCH /me/calendarGroups/{id}/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="d9ca8-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="d9ca8-127">Request headers</span></span>
-| <span data-ttu-id="d9ca8-128">标头</span><span class="sxs-lookup"><span data-stu-id="d9ca8-128">Header</span></span>       | <span data-ttu-id="d9ca8-129">值</span><span class="sxs-lookup"><span data-stu-id="d9ca8-129">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c6f92-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="c6f92-127">Request headers</span></span>
+| <span data-ttu-id="c6f92-128">标头</span><span class="sxs-lookup"><span data-stu-id="c6f92-128">Header</span></span>       | <span data-ttu-id="c6f92-129">值</span><span class="sxs-lookup"><span data-stu-id="c6f92-129">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d9ca8-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="d9ca8-130">Authorization</span></span>  | <span data-ttu-id="d9ca8-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="d9ca8-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d9ca8-133">Content-Type</span></span>  | <span data-ttu-id="d9ca8-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="d9ca8-p105">application/json. Required.</span></span>  |
+| <span data-ttu-id="c6f92-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6f92-130">Authorization</span></span>  | <span data-ttu-id="c6f92-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c6f92-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c6f92-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c6f92-133">Content-Type</span></span>  | <span data-ttu-id="c6f92-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="c6f92-p105">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d9ca8-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="d9ca8-136">Request body</span></span>
-<span data-ttu-id="d9ca8-p106">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-p106">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c6f92-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="c6f92-136">Request body</span></span>
+<span data-ttu-id="c6f92-p106">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="c6f92-p106">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="d9ca8-140">属性</span><span class="sxs-lookup"><span data-stu-id="d9ca8-140">Property</span></span>     | <span data-ttu-id="d9ca8-141">类型</span><span class="sxs-lookup"><span data-stu-id="d9ca8-141">Type</span></span>   |<span data-ttu-id="d9ca8-142">说明</span><span class="sxs-lookup"><span data-stu-id="d9ca8-142">Description</span></span>|
+| <span data-ttu-id="c6f92-140">属性</span><span class="sxs-lookup"><span data-stu-id="c6f92-140">Property</span></span>     | <span data-ttu-id="c6f92-141">类型</span><span class="sxs-lookup"><span data-stu-id="c6f92-141">Type</span></span>   |<span data-ttu-id="c6f92-142">说明</span><span class="sxs-lookup"><span data-stu-id="c6f92-142">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d9ca8-143">color</span><span class="sxs-lookup"><span data-stu-id="d9ca8-143">color</span></span>|<span data-ttu-id="d9ca8-144">String</span><span class="sxs-lookup"><span data-stu-id="d9ca8-144">String</span></span>|<span data-ttu-id="d9ca8-p107">在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1</span><span class="sxs-lookup"><span data-stu-id="d9ca8-p107">Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span></span>|
-|<span data-ttu-id="d9ca8-147">isDefaultCalendar</span><span class="sxs-lookup"><span data-stu-id="d9ca8-147">isDefaultCalendar</span></span>|<span data-ttu-id="d9ca8-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="d9ca8-148">Boolean</span></span>|<span data-ttu-id="d9ca8-149">如果此日历是用户的默认日历，则值为 true，否则为 false。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-149">True if this calendar is the user's default calendar, false otherwise.</span></span>|
-|<span data-ttu-id="d9ca8-150">name</span><span class="sxs-lookup"><span data-stu-id="d9ca8-150">name</span></span>|<span data-ttu-id="d9ca8-151">String</span><span class="sxs-lookup"><span data-stu-id="d9ca8-151">String</span></span>|<span data-ttu-id="d9ca8-152">日历名称。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-152">The calendar name.</span></span>|
+|<span data-ttu-id="c6f92-143">color</span><span class="sxs-lookup"><span data-stu-id="c6f92-143">color</span></span>|<span data-ttu-id="c6f92-144">String</span><span class="sxs-lookup"><span data-stu-id="c6f92-144">String</span></span>|<span data-ttu-id="c6f92-p107">在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1</span><span class="sxs-lookup"><span data-stu-id="c6f92-p107">Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span></span>|
+|<span data-ttu-id="c6f92-147">isDefaultCalendar</span><span class="sxs-lookup"><span data-stu-id="c6f92-147">isDefaultCalendar</span></span>|<span data-ttu-id="c6f92-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="c6f92-148">Boolean</span></span>|<span data-ttu-id="c6f92-149">如果此日历是用户的默认日历，则值为 true，否则为 false。</span><span class="sxs-lookup"><span data-stu-id="c6f92-149">True if this calendar is the user's default calendar, false otherwise.</span></span>|
+|<span data-ttu-id="c6f92-150">name</span><span class="sxs-lookup"><span data-stu-id="c6f92-150">name</span></span>|<span data-ttu-id="c6f92-151">String</span><span class="sxs-lookup"><span data-stu-id="c6f92-151">String</span></span>|<span data-ttu-id="c6f92-152">日历名称。</span><span class="sxs-lookup"><span data-stu-id="c6f92-152">The calendar name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d9ca8-153">响应</span><span class="sxs-lookup"><span data-stu-id="d9ca8-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c6f92-153">响应</span><span class="sxs-lookup"><span data-stu-id="c6f92-153">Response</span></span>
 
-<span data-ttu-id="d9ca8-154">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [calendar](../resources/calendar.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-154">If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d9ca8-155">示例</span><span class="sxs-lookup"><span data-stu-id="d9ca8-155">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d9ca8-156">请求</span><span class="sxs-lookup"><span data-stu-id="d9ca8-156">Request</span></span>
-<span data-ttu-id="d9ca8-157">以下示例更新登录用户的默认日历的名称。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-157">The following example updates the name of the signed-in user's default calendar.</span></span>
+<span data-ttu-id="c6f92-154">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [calendar](../resources/calendar.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c6f92-154">If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c6f92-155">示例</span><span class="sxs-lookup"><span data-stu-id="c6f92-155">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c6f92-156">请求</span><span class="sxs-lookup"><span data-stu-id="c6f92-156">Request</span></span>
+<span data-ttu-id="c6f92-157">以下示例更新已登录用户的默认日历的名称。</span><span class="sxs-lookup"><span data-stu-id="c6f92-157">The following example updates the name of the signed-in user's default calendar.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d9ca8-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="d9ca8-158">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c6f92-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="c6f92-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendar"
@@ -81,26 +81,26 @@ Content-type: application/json
   "name": "Social events"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="d9ca8-159">C#</span><span class="sxs-lookup"><span data-stu-id="d9ca8-159">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c6f92-159">C#</span><span class="sxs-lookup"><span data-stu-id="c6f92-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d9ca8-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d9ca8-160">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c6f92-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c6f92-160">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d9ca8-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d9ca8-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c6f92-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c6f92-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="d9ca8-162">Java</span><span class="sxs-lookup"><span data-stu-id="d9ca8-162">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c6f92-162">Java</span><span class="sxs-lookup"><span data-stu-id="c6f92-162">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="d9ca8-163">响应</span><span class="sxs-lookup"><span data-stu-id="d9ca8-163">Response</span></span>
-<span data-ttu-id="d9ca8-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d9ca8-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c6f92-163">响应</span><span class="sxs-lookup"><span data-stu-id="c6f92-163">Response</span></span>
+<span data-ttu-id="c6f92-164">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c6f92-164">Here is an example of the response.</span></span> <span data-ttu-id="c6f92-165">注意：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c6f92-165">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
