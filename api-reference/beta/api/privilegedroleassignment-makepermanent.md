@@ -1,18 +1,18 @@
 ---
-title: privilegedRoleAssignment： makePermanent
+title: privilegedRoleAssignment：makePermanent
 description: 使角色分配永久。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: c457cc3c70e1a3f7cafec9a929c68ed3b7fddcea
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a66834f5937b8dea55391553536670ff06ae83c6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441198"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037373"
 ---
-# <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment： makePermanent
+# <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment：makePermanent
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "50441198"
 
 使角色分配永久。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止错误。
@@ -31,7 +31,7 @@ ms.locfileid: "50441198"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回 [响应代码和 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -97,7 +97,7 @@ Content-length: 110
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e54b6a88cda3fa673ba9ce73ed5ce6954d910b5e
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 48f8b3d12684c3f7361de3e3066f5a757f3ccdd3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576461"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036420"
 ---
 # <a name="update-table"></a>更新表
 
@@ -50,7 +50,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 |name|string|表的名称。|
 |showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
 |showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
-|style|string|表示表格样式的常量值。 可能的值包括 `TableStyleLight1` ：through `TableStyleLight21` `TableStyleMedium1` 、through  `TableStyleMedium28` `TableStyleDark1` 、through `TableStyleDark11` 。 还可以指定工作簿中显示的用户定义的自定义样式。|
+|style|string|表示表格样式的常量值。 可能的值为 `TableStyleLight1` ：through `TableStyleLight21` 、through `TableStyleMedium1` 、through  `TableStyleMedium28` `TableStyleDark1` 、through `TableStyleDark11` 。 还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应
 
@@ -95,7 +95,7 @@ Content-length: 109
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

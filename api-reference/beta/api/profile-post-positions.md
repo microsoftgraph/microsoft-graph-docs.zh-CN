@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bc67994dbf3d9a6107ed2a4bcba8f0f0f090e327
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d826309b69ae66aaef736f81b8864928a2fa28ad
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974628"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036861"
 ---
 # <a name="create-workposition"></a>创建 workPosition
 
@@ -18,7 +18,7 @@ ms.locfileid: "48974628"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 在用户的[配置文件](../resources/profile.md)中创建新的[workPosition](../resources/workposition.md) 。
+使用此 API 在用户配置文件中创建新的[workPosition。](../resources/workposition.md) [](../resources/profile.md)
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48974628"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,22 +50,22 @@ POST /users/{id | userPrincipalName}/profile/positions
 
 在请求正文中，提供 [workPosition](../resources/workposition.md) 对象的 JSON 表示形式。
 
-下表显示了在用户的[配置文件](../resources/profile.md)中创建新的[workPosition](../resources/workPosition.md)对象时可以设置的属性。
+下表显示了在用户配置文件中创建新的 [workPosition](../resources/workPosition.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|用户已与此位置关联的类别。|
-|征求|[relatedPerson](../resources/relatedperson.md) 集合|与此职位相关联的同事。|
-|介绍|[positionDetail](../resources/positiondetail.md)|包含有关职位的详细信息。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isCurrent|Boolean|指示位置是否是最新的。|
-|manager|[relatedPerson](../resources/relatedperson.md)|包含用户在此位置的经理的详细信息。|
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|categories|String 集合|用户与此位置关联的类别。|
+|同事|[relatedPerson](../resources/relatedperson.md) 集合|与此职位相关联的同事。|
+|detail|[positionDetail](../resources/positiondetail.md)|包含有关该位置的详细信息。 |
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|isCurrent|布尔值|表示位置是否是当前位置。|
+|manager|[relatedPerson](../resources/relatedperson.md)|包含此位置的用户经理的详细信息。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201, Created` 在响应正文中返回响应代码和新的 [workPosition](../resources/workposition.md) 对象。
+如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和新 [workPosition](../resources/workposition.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -127,7 +127,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

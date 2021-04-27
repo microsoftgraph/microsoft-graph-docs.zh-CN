@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2cea6bfeebc6143648163c110b5c6ee1dbe48eb2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 38fca8b8b20dd0c0f0e5680b4d9bdfc6a53f5c50
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471864"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036308"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -77,10 +77,10 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` 联系对象集合。 [](../resources/contact.md)
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/contact.md) 代码和 contact 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例获取已登录用户的联系人的 **displayName** 和 **emailAddresses** 属性。
+以下示例获取 **已登录** 用户的联系人的 **displayName 和 emailAddresses** 属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddres
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

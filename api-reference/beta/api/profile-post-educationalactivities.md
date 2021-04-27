@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 43bd9ca20cf7fb151b92108b16a021aa65a1cd03
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 366417fd6cf8e218bf7fc3a0fe2f14bc9c0ac4d3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292089"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036938"
 ---
 # <a name="create-educationalactivity"></a>创建 educationalActivity
 
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供一个 [educationalActivity](../resources/educationalactivity.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [educationalActivity](../resources/educationalactivity.md) 对象的 JSON 表示形式。
 
 下表显示了在用户配置文件中创建新的 [educationalActivity](../resources/educationalactivity.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|completionMonthYear|日期|用户完成或完成活动的月份和年份。 |
+|completionMonthYear|日期|用户注册或完成活动的月份和年份。 |
 |endMonthYear|日期|用户完成所引用的教育活动的月份和年份。|
-|推断|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|机构|[institutionData](../resources/institutiondata.md)|包含所调查机构的详细信息。 |
-|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|包含有关计划或课程的扩展信息。|
-|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值的来源。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|机构|[institutionData](../resources/institutiondata.md)|包含所查看的机构的详细信息。 |
+|程序|[educationalActivityDetail](../resources/educationalactivitydetail.md)|包含有关计划或课程的扩展信息。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |startMonthYear|日期|用户对所引用的活动进行跟踪的月份和年份。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `201 Created` 代码和新的 [educationalActivity](../resources/educationalactivity.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [educationalActivity](../resources/educationalactivity.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -137,7 +137,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

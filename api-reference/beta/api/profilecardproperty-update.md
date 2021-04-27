@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7e7acede752607b34cf8f3cb9378cb0d87983f25
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 53d95deee5be591745e62d7c41b2ab232b3b19d8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968979"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036686"
 ---
 # <a name="update-profilecardproperty"></a>Update profileCardProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "48968979"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [profileCardProperty](../resources/profilecardproperty.md) 对象的属性（由其 **directoryPropertyName** 属性标识）。
+更新 [profileCardProperty](../resources/profilecardproperty.md) 对象的属性，该对象由它的 **directoryPropertyName** 属性标识。
 
 ## <a name="permissions"></a>权限
 
@@ -26,11 +26,11 @@ ms.locfileid: "48968979"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | 不支持。                              |
 
->**注意：** 若要对此操作使用委派权限，则需要已登录用户拥有租户管理员或全局管理员角色。
+>**注意：** 对此操作使用委派权限要求登录用户具有租户管理员或全局管理员角色。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,18 +53,18 @@ PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pr
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|批注|profileCardAnnotation 集合| 包含管理员已选择指定的任何可选或本地化标签。|
-|directoryPropertyName|String|包含用于在配置文件卡片上呈现的目录属性的名称。 |
+|annotations|profileCardAnnotation 集合| 包含管理员选择指定的任何替代标签或本地化标签。|
+|directoryPropertyName|String|包含要显示到配置文件卡上的目录属性的名称。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [profileCardProperty](../resources/profilecardproperty.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [profileCardProperty](../resources/profilecardproperty.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-下面的示例为区域设置 "无 NB" 添加本地化的标签 "Kostnads Senter"。
+以下示例为区域设置"no-NB"添加本地化标签"Kostnads Senter"。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -112,7 +112,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

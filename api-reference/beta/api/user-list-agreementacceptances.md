@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 178e6afe9b9bd62e1f921f6ddc6c3c9148c57cb9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8785d78b99b836ef32e8c85088dd7e4bb0deb374
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943688"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036336"
 ---
 # <a name="list-agreementacceptances"></a>List agreementAcceptances
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ---
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

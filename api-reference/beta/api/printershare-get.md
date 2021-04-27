@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: f5f760f8b4fe3fa41046cd32e2c3ae5fe8674532
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 046d5a107ea2b92adf17bb24f585138764757b50
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766264"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037485"
 ---
 # <a name="get-printershare"></a>获取 printerShare
 
@@ -29,7 +29,7 @@ ms.locfileid: "51766264"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadBasic.All、PrinterShare.Read.All、PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/print/shares/{id}
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,7 +112,7 @@ Content-length: 225
 ```
 
 下面是使用 $select=id，displayName，capabilities 时的响应示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

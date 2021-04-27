@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 255acd6d36aa61e3aa044ad1ffe167f007253593
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: d704ee34d54c2b4369b544f8886f69fc6286e15b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575320"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036164"
 ---
 # <a name="list-workbookcomments"></a>列出 workbookComments
 
@@ -49,7 +49,7 @@ GET /me/drive/root:/{item-path}:/workbook/comments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookComment](../resources/workbookcomment.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [workbookComment](../resources/workbookcomment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4a26b0e1048a4a43a0dad833c07d901367cf40f9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cdd981d4638fc80d5ed9999a37fd3c15ff085be
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981439"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036329"
 ---
 # <a name="get-timeoff"></a>获取 timeOff
 
@@ -18,7 +18,7 @@ ms.locfileid: "48981439"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按 ID 检索 [timeOff](../resources/timeoff.md) 对象的属性和关系。
+按 ID 检索 [timeOff 对象](../resources/timeoff.md) 的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -28,11 +28,11 @@ ms.locfileid: "48981439"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All *、schedule、all* |
+|应用程序 | Schedule.Read.All *、Schedule.ReadWrite.All* |
 
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
+>\***重要提示：** 应用程序权限目前仅为个人预览版，不可公开使用。
 
-> **注意** ：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,7 +44,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 OData 查询参数来自定义响应。
+此方法不支持使用 OData 查询参数自定义响应。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -58,7 +58,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [timeOff](../resources/timeoff.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [timeOff](../resources/timeoff.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
