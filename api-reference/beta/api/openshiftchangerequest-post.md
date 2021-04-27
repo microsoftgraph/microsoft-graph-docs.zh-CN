@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 915e08a395cad734b8a84c7123f4c8f89ad902d1
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 7c991a7b798f114df204c1731eba6a4a71bf29cf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292208"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052990"
 ---
 # <a name="create-openshiftchangerequest"></a>创建 openShiftChangeRequest
 
@@ -29,7 +29,7 @@ ms.locfileid: "50292208"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Schedule.ReadWrite.All*  |
 
->\***重要提示：** 应用程序权限当前仅处于专用预览状态，不可公开使用。
+>\***重要提示：** 应用程序权限目前仅为个人预览版，不可公开使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,11 +51,11 @@ POST /teams/{id}/schedule/openShiftChangeRequests
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供新 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的 JSON 表示形式。
+在请求正文中，提供新的 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和创建的 `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和创建的 `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -82,7 +82,7 @@ Content-length: 244
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

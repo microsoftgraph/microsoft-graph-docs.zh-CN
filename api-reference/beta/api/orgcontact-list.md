@@ -1,16 +1,16 @@
 ---
 title: List orgContacts
-description: 检索此组织的组织联系人列表。
+description: 检索该组织的组织联系人列表。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 17913ebe1e09c65588baab54748f2abd5e35a913
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: afc6c26238f3f63b71d5c4b1cb0fae28316daa39
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433976"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055524"
 ---
 # <a name="list-orgcontacts"></a>List orgContacts
 
@@ -18,16 +18,16 @@ ms.locfileid: "50433976"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取此组织的组织联系人列表。
+获取该组织的组织联系人列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /contacts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [orgContact](../resources/orgcontact.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [orgContact](../resources/orgcontact.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/contacts
 #### <a name="response"></a>响应
 
 下面是一个响应示例。 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -132,7 +132,7 @@ Content-length: 222
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-organizational-contacts"></a>示例 2：仅获取组织联系人数
+### <a name="example-2-get-only-a-count-of-organizational-contacts"></a>示例 2：仅获取组织联系人的计数
 
 #### <a name="request"></a>请求
 
@@ -164,7 +164,7 @@ Content-type: text/plain
 
 893
 
-### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一个组织联系人，显示名称以"a"开头（包括返回的对象数）
+### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一个组织联系人，显示名称以"a"开头（包括返回的对象计数）
 
 #### <a name="request"></a>请求
 
@@ -182,7 +182,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -207,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 4：$search包含字母"wa"的显示名称的组织联系人（包括返回的对象数）
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 4：使用 $search 获取显示名称包含字母"wa"的组织联系人，包括返回的对象计数
 
 #### <a name="request"></a>请求
 
@@ -225,7 +225,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

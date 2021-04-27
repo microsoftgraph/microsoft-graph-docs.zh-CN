@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d5193b03bdf820b2a8142dd23c6dce1a742314ef
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: b47103d8ce338e2070ab039de0551abe2aea1038
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582723"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055601"
 ---
 # <a name="get-organizationalbrandingproperties"></a>获取 organizationalBrandingProperties
 
@@ -47,7 +47,7 @@ GET /organization/{id}/branding
 | Authorization | Bearer {token}。必需。 |
 
 >[!NOTE]
->如果在 Graph 浏览器中尝试查询，还必须包含具有有效 ISO-639 Accept-Language请求标头。
+>如果在资源管理器中尝试Graph，还必须包含具有有效 ISO-639 Accept-Language请求标头。
 
 ## <a name="request-body"></a>请求正文
 
@@ -62,7 +62,7 @@ GET /organization/{id}/branding
 ### <a name="example-1-get-the-default-branding"></a>示例 1：获取默认品牌
 
 >[!NOTE]
->如果尝试 Graph 资源管理器中的示例，还必须包含具有有效 ISO-639 区域设置的 Accept-Language 请求标头，以避免收到错误"无效区域设置 id 值 en-US，en;q=0.9"。 它必须是有效的 ISO-639 区域设置。"
+>如果在 Graph 资源管理器中试用该示例，还必须包含具有有效 ISO-639 区域设置的 Accept-Language 请求标头，以避免收到错误"无效区域设置 id 值 en-US，en;q=0.9"。 它必须是有效的 ISO-639 区域设置。"
 
 #### <a name="request"></a>请求
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -179,7 +179,7 @@ Accept-Language: fr
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

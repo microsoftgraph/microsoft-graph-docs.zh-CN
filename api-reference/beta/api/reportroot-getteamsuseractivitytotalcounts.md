@@ -1,16 +1,16 @@
 ---
 title: reportRoot： getTeamsUserActivityTotalCounts
-description: 获取按活动类型的 Microsoft Teams 活动的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。 这些活动由 Microsoft Teams 授权用户或非许可用户执行。
+description: 获取按活动类型的 Microsoft Teams 活动的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。 这些活动由Microsoft Teams或非许可用户执行。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 0c5acd7387638aba2fa3a992441982f5918be37f
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: c41cbd1b71081ef90830b6552f99ad246e253945
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766907"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055013"
 ---
 # <a name="reportroot-getteamsuseractivitytotalcounts"></a>reportRoot： getTeamsUserActivityTotalCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766907"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取按活动类型的 Microsoft Teams 活动的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。 这些活动由 Microsoft Teams 授权用户或非许可用户执行。
+获取按活动类型的 Microsoft Teams 活动的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。 这些活动由Microsoft Teams或非许可用户执行。
 
 ## <a name="permissions"></a>权限
 
@@ -148,7 +148,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalCounts(per
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

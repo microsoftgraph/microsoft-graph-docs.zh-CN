@@ -1,16 +1,16 @@
 ---
 title: trustFrameworkKeySet：uploadSecret
-description: 将密码上载到密钥集。
+description: Upload密钥集的密钥。
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b008e1ae41d61fb14dbd80e5a820208355bb670d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 104e11956a388ccc7ae65cf4a70e609f3eb9b08f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444971"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053410"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet：uploadSecret
 
@@ -18,9 +18,9 @@ ms.locfileid: "50444971"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将纯文本密码上载到 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 密码示例包括 Azure Active Directory、Google、Facebook 或其他任何标识提供程序中的应用程序密码。 他的方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
+Upload一个纯文本密码到[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 密码示例包括 Azure Active Directory、Google、Facebook 或其他任何标识提供者中的应用程序密码。 他的 方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50444971"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | TrustFrameworkKeySet.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | TrustFrameworkKeySet.ReadWrite.All |
+| 应用程序                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,11 +54,11 @@ POST /trustFramework/keySets/{id}/uploadSecret
 |use|String|类似于 **trustFrameworkKey 的 use 属性**。 |
 |k|String|类似于 **trustFrameworkKey** 的 **k** 属性。 这是用于发送密码的字段。|
 |nbf|Int64|类似于 **trustFrameworkKey** 的 **nbf** 属性。|
-|exp|Int64|类似于 **trustFrameworkKey 的** **exp** 属性。|
+|exp|Int64|类似于 **trustFrameworkKey** 的 **exp** 属性。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

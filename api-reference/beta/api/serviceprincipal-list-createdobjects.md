@@ -1,18 +1,18 @@
 ---
-title: servicePrincipal：列出 createdObjects
+title: 'servicePrincipal: List createdObjects'
 description: 检索 directoryObject 对象列表。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 52a36d4afaaee71775b0b88a690d54c30ce36cc6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 23f93a48e808a72e312c55def59fae0a89d6daeb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134332"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053487"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal：列出 createdObjects
+# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
 
 命名空间：microsoft.graph
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 
 ### <a name="response"></a>响应
 下面是一个响应示例。 
->注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+>注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

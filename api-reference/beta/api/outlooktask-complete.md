@@ -1,16 +1,16 @@
 ---
 title: outlookTask：完成
-description: '完成将 **completedDateTime** 属性设置为当前日期的 Outlook 任务。 '
+description: '完成Outlook **completedDateTime** 属性为当前日期的任务， '
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 09a8f9d46597d96d51d5bd66f7fcac750e46809c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 35ff88db1fb8cde5c84a6010fc6e33b81661c387
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775533"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055482"
 ---
 # <a name="outlooktask-complete-deprecated"></a>outlookTask：完成 (弃) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "50775533"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-完成 Outlook 任务，该任务将 **completedDateTime** 属性设置为当前日期， **将 status** 属性设置成 `completed` 。
+完成一Outlook任务，将 **completedDateTime** 属性设置为当前日期，**将 status** 属性设置成 `completed` 。
 
 如果要完成定期系列中的任务，在响应中，任务集合将包含该系列中已完成的任务以及该系列中的下一个任务。
 
@@ -37,7 +37,7 @@ ms.locfileid: "50775533"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Tasks.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Tasks.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -104,7 +104,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 下面是一个响应示例。 **响应中的 completedDateTime** 和其他与日期相关的属性以 PST 表示。
 
-> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

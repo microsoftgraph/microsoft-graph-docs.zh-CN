@@ -1,16 +1,16 @@
 ---
 title: 'workbookRangeView: itemAt'
-description: 调用此 API 需要以下权限之一。 要了解详细信息（包括如何选择权限），请参阅权限。
+description: 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅权限。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f012f02836831a47f8b3e2320369540798cab549
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4af87ed2df66089e6ba5fc8292d133a972f5b0ce
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578561"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053291"
 ---
 # <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

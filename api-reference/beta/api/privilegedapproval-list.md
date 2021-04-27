@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: a806dc46ea34853a7c0182b0c37675541740f6c0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ec53c87df049e0eab2a48256d6cfbc7d67a2b0f7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961431"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053550"
 ---
 # <a name="list-privilegedapproval"></a>列出 privilegedApproval
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/privilegedApproval
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

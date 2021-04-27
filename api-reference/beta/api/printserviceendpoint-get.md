@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: fd03c0601d98080af4942df574a1aee2740640a0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8e5e26d620d0285686859862c014cf1f2390659d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968192"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053599"
 ---
 # <a name="get-printserviceendpoint"></a>获取 printServiceEndpoint
 
@@ -21,7 +21,7 @@ ms.locfileid: "48968192"
 检索打印服务终结点的属性和关系。
 
 ## <a name="permissions"></a>权限
-不需要任何权限即可调用此 API，但若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅。
+调用此 API 不需要任何权限，但若要使用通用打印服务，用户或应用的租户必须拥有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -46,7 +46,7 @@ GET /print/services/{id}/endpoints/{name}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printServiceEndpoint](../resources/printserviceendpoint.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [printServiceEndpoint](../resources/printserviceendpoint.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints/{name}
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

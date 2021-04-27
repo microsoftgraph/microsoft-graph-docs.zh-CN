@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 8899aa70125809f73e2f247a8cf5b83cad0c7731
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bf834f8c7673d0d82c2ac8a29aa1c5cec46a80a8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441142"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052892"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -20,14 +20,14 @@ ms.locfileid: "50441142"
 
 创建 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,15 +47,15 @@ POST /privilegedRoleAssignmentRequests
 |:---------------|:--------|:----------|
 |roleId|String|角色的 ID。 此为必需属性。|
 |type|String|表示对项目执行的操作角色分配。 值可以是 `AdminAdd` ：管理员将用户添加到角色 `UserAdd` ;：用户添加角色分配。 必需。|
-|assignmentState|String|工作分配的状态。 该值可用于符合条件的分配-如果直接由管理员分配，或由用户激活在符合条件的分配 `Eligible` `Active` `Active` 上。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|reason|String|需要为审核和审核角色分配请求提供原因。|
+|assignmentState|String|工作分配的状态。 该值可用于符合条件的分配 - 如果直接由管理员分配，或由用户对符合条件的分配 `Eligible` `Active` `Active` 进行激活。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
+|reason|String|需要为请求审核和审核角色分配提供原因。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|请求角色分配计划。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
 ### <a name="error-codes"></a>错误代码
-此 API 返回该标准 HTTP 错误代码。 此外，它可以返回下表中列出的错误代码。
+此 API 返回标准 HTTP 错误代码。 此外，它可以返回下表中列出的错误代码。
 
 |错误代码     | 错误消息              | 
 |:--------------------| :---------------------|
@@ -65,12 +65,12 @@ POST /privilegedRoleAssignmentRequests
 | 400 BadRequest | 必须指定计划开始日期，并且应大于"现在"。 |
 | 400 BadRequest | 此用户、角色和计划类型已存在计划。 |
 | 400 BadRequest | 此用户、角色和审批类型已存在待审批。 |
-| 400 BadRequest | 请求者原因缺失。 |
-| 400 BadRequest | 请求者原因应小于 500 个字符。 |
-| 400 BadRequest | 提升持续时间必须介于 0.5 和 {from setting}之间。 |
+| 400 BadRequest | 缺少请求者原因。 |
+| 400 BadRequest | 请求者原因应少于 500 个字符。 |
+| 400 BadRequest | 提升持续时间必须介于 0.5 和 {from setting} 之间。 |
 | 400 BadRequest | 计划激活和请求之间存在重叠。 |
 | 400 BadRequest | 角色已激活。 |
-| 400 BadRequest | GenericElevateUserToRoleAssignments：滴答信息是必需的，在激活过程中不提供。 |
+| 400 BadRequest | GenericElevateUserToRoleAssignments：在激活过程中需要而不是提供滴答信息。 |
 | 400 BadRequest | 计划激活和请求之间存在重叠。 |
 | 403 UnAuthorized | 提升需要多重身份验证。 |
 | 403 UnAuthorized | 不允许代表提升。 |
@@ -120,7 +120,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

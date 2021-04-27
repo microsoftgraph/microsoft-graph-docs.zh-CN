@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 22f2e0f4b66742322f3ff6b1f18a50092fdf4895
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3f37d57516d78c1f9027346633213b7520d35dd8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162074"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053326"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>创建 cloudPcOnPremisesConnection
 
@@ -18,7 +18,7 @@ ms.locfileid: "50162074"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象，用于预配云电脑。
+创建新的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象以预配云电脑。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -54,22 +54,22 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 在请求正文中，提供 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的 JSON 表示形式。
 
-下表显示创建 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)时所需的属性。
+下表显示创建 [cloudPcOnPremisesConnection 时所需的属性](../resources/cloudpconpremisesconnection.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|本地显示名称的基础结构。|
 |subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
-|adDomainName|String|要加入的 Active Directory (的 FQDN) 完全限定域名。|
+|adDomainName|String|要加入的 Active Directory (完全限定) FQDN。|
 |adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：admin@contoso.com。|
 |adDomainPassword|String|与 adDomainUsername 关联的密码。|
-|resourceGroupId|String|目标资源组的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
-|virtualNetworkId|String|目标虚拟网络的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
-|subnetId|String|目标子网的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
+|resourceGroupId|String|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
+|virtualNetworkId|String|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
+|subnetId|String|目标子网的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -122,7 +122,7 @@ Content-length: 800
 
 ### <a name="response"></a>响应
 
-**注意：** 下面是一个响应示例。 为简洁起见，可能会截断此处所示的响应对象。 将从实际调用中返回所有属性。
+**注意：** 下面是一个响应示例。 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

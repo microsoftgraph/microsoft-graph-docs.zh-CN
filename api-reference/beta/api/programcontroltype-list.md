@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: b693b47f716c9f89a49bee9c76baf5025fa0bd61
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: aea4607e5020207ecfe85968d5048dd33f1f9b3e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442185"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055209"
 ---
 # <a name="list-programcontroltypes"></a>列出 programControlTypes
 
@@ -19,14 +19,14 @@ ms.locfileid: "50442185"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，列出 [所有 programControlType](../resources/programcontroltype.md) 对象。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.Read.All、ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | ProgramControl.Read.All'、ProgramControl.ReadWrite.All  |
+|应用程序                            | ProgramControl.Read.All'， ProgramControl.ReadWrite.All  |
 
 登录用户还必须具有允许其读取程序的目录角色。
 
@@ -44,7 +44,7 @@ GET /programControlTypes
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200, OK` [programControlType](../resources/programcontroltype.md) 对象数组。
+如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [programControlType](../resources/programcontroltype.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/programControlTypes
 
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

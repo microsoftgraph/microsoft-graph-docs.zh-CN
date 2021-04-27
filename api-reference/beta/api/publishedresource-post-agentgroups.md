@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6e30689074c566511e638db484e7b29db6f9373e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3cbd9e434701cad6ac7eff47daed6080c5979863
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130674"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055167"
 ---
 # <a name="assign-publishedresource-to-onpremisesagentgroup"></a>将 publishedResource 分配给 onPremisesAgentGroup
 
@@ -28,7 +28,7 @@ ms.locfileid: "50130674"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/ag
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [publishedResource](../resources/publishedresource.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [publishedResource](../resources/publishedresource.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -76,7 +76,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

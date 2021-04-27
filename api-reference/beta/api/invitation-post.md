@@ -1,16 +1,16 @@
 ---
 title: 创建邀请
-description: 使用该 API 创建新的邀请。 邀请会将外部用户添加至组织。
+description: 使用该 API 创建新的邀请。邀请将外部用户添加至组织。
 localization_priority: Normal
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a74643bbc75de77f68f5084310d739a1ffceccfa
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 99fb4703e4ae2b4d8714475577c7e34c1c34c8c6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954629"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053662"
 ---
 # <a name="create-invitation"></a>创建邀请
 
@@ -99,7 +99,7 @@ Content-length: 551
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

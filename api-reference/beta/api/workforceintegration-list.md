@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d7d0d383d4b92f74bac7c605379435efd294820e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e28e40ec75833cde86d80cca26ea4d0a423ff018
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970715"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054698"
 ---
 # <a name="list-workforceintegrations"></a>列出 workforceIntegrations
 
@@ -18,7 +18,7 @@ ms.locfileid: "48970715"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [workforceIntegration](../resources/workforceintegration.md) 对象的列表。
+检索 [workforceIntegration 对象](../resources/workforceintegration.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "48970715"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | WorkforceIntegration、WorkforceIntegration 和所有 |
+| 委派（工作或学校帐户）     | WorkforceIntegration.Read.All、WorkforceIntegration.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -54,7 +54,7 @@ GET /teamwork/workforceIntegrations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workforceIntegration](../resources/workforceintegration.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [workforceIntegration](../resources/workforceintegration.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

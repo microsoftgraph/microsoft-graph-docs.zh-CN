@@ -1,16 +1,16 @@
 ---
 title: 列出 schemaExtension
-description: '获取您在当前租户 (中拥有的任何应用程序创建的 schemaExtension 对象的列表，这些应用程序可 '
+description: '获取在当前租户中拥有的任何应用创建的 schemaExtension 对象 (可以是 '
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 96e2ba8dd0b1f0e7e0180ec5cbd493d35b8e8976
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8e1d8e1810f579b7c1e5d31a6e0a221a1df1d7c6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982231"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053501"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -18,9 +18,9 @@ ms.locfileid: "48982231"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取您在当前租户 (中拥有的任何应用程序创建的 [schemaExtension](../resources/schemaextension.md) 对象的列表，该列表可以是 **InDevelopment** 、 **可用** 或 **弃用** 的) ，以及其他标记为 **可用** 的应用程序所拥有的其他架构扩展。 
+获取由当前租户 (中拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md)对象的列表，这些应用可以是 **InDevelopment、Available** 或 **Deprecated**) ，以及标记为 Available 的其他应用所拥有的所有其他架构 **扩展。**  
 
-> **注意：** 该列表还将包含架构扩展定义 (标记为 `Available` 由其他租户的其他开发人员创建) 。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据是租户特定的，并且只能由明确授予权限的应用程序访问。 
+> **注意：** 该列表还将包含架构扩展定义 (标记为) `Available` 租户中其他开发人员创建的列表。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，并且只有显式授予权限的应用才能访问这些数据。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "48982231"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Read、Application. All   |
+|委派（工作或学校帐户） | User.Read、Application.Read.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.Read.All  |
 
@@ -51,10 +51,10 @@ GET /schemaExtensions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schemaExtension](../resources/schemaextension.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schemaExtension](../resources/schemaextension.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例演示如何通过筛选其唯一 **id** 来查看特定项的所有可访问扩展。 
+下面的示例演示如何通过筛选特定扩展的唯一 id 来查找其所有可访问 **的扩展**。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

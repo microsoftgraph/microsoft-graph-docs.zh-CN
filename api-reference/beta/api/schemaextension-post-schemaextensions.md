@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 49241c6374cad314197c9f9ad433d6a6c2aa966c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a16c8e75d8e07f55a1592374b3d393362ef34252
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978805"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053494"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -128,7 +128,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -223,7 +223,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+该响应在 **id** 属性中包含一个基于请求中提供的架构名称的唯一字符串，以及新创建的架构定义的其余部分。 响应中的 **id** 值基于架构名称 中的 ext \{ _&#65279;8-random-alphanumeric-chars_&#65279;\} \_ \{ _格式_ \} 。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -320,7 +320,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-该响应包括 **owner** 设置为请求中提供的值。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+该响应包括 **owner** 设置为请求中提供的值。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

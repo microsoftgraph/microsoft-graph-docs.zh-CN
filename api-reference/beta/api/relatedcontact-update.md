@@ -2,16 +2,15 @@
 title: 更新 relatedContacts
 description: 更新 educationUser 对象的 relatedContact 集合。
 author: mmast-msft
-ms.author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f6217c1ea0859de21fa70c53810e825327d497f2
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 25c3655318ef063d702f328f008441653437945e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200898"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052864"
 ---
 # <a name="update-relatedcontacts"></a>更新 relatedContacts
 

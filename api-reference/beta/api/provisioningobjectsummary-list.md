@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 035cd43487f83cc23f86b3d8b979af5052c708fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ad5ff716396a2971c4112e98239484be97c2cfce
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130422"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055188"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130422"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取租户中发生的所有预配事件，例如删除目标应用程序中的组或在从 HR 系统预配用户帐户时创建用户。 
+获取租户中发生的所有预配事件，例如删除目标应用程序中的组或在从 HR 系统中预配用户帐户时创建用户。 
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /auditLogs/provisioning
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 请注意，除状态外，筛选器都区分大小写。 
+此方法支持以下 OData 查询参数来帮助自定义响应。 请注意，筛选器除状态外均区分大小写。 
 
 |名称     |说明                            |示例|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -50,7 +50,7 @@ GET /auditLogs/provisioning
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
-### <a name="attributes-supported-by-the-filter-parameter"></a>$filter参数支持的属性
+### <a name="attributes-supported-by-the-filter-parameter"></a>$filter 参数支持的属性
 
 |属性名 |支持的运算符|
 |:----------------|:------|
@@ -86,7 +86,7 @@ GET /auditLogs/provisioning
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [provisioningObjectSummary](../resources/provisioningobjectsummary.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [provisioningObjectSummary](../resources/provisioningobjectsummary.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -128,7 +128,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 下面是成功事件的响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -242,7 +242,7 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-error-reponse"></a>示例 2：错误重新出现
+### <a name="example-2-error-reponse"></a>示例 2：错误返回
 
 ### <a name="request"></a>请求
 
@@ -278,9 +278,9 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>响应
 
-下面是对失败的预配事件的响应示例。
+下面是失败的预配事件的响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: df7b158bc66159e2de889f48d12cbfd8a7f4bfdd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 37b70fc798163f3b6f0fe5e58b856cdcdda2198c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133075"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052983"
 ---
 # <a name="list-outlook-categories"></a>列出 Outlook 类别
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/outlook/masterCategories
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

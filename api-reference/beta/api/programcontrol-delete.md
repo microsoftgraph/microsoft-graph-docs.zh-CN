@@ -1,16 +1,16 @@
 ---
 title: 删除 programControl
-description: 在 Azure AD 访问评审功能中，删除 programControl 对象。  这将取消与程序的访问评审链接。
+description: 在 Azure AD 访问评审功能中，删除 programControl 对象。  这会将访问评审与计划取消链接。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: c80aed58daa58cb12d8366761580327450300dfb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3a3622c7e9d1390c956c926f8e04d85ecfe7b7c2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442195"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055223"
 ---
 # <a name="delete-programcontrol"></a>删除 programControl
 
@@ -18,17 +18,17 @@ ms.locfileid: "50442195"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，删除 [programControl](../resources/programcontrol.md) 对象。  这将取消与程序的访问评审链接。
-## <a name="permissions"></a>Permissions
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，删除 [programControl](../resources/programcontrol.md) 对象。  这会将访问评审与计划取消链接。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | ProgramControl.ReadWrite.All  |
+|应用程序                            | ProgramControl.ReadWrite.All  |
 
-登录用户还必须在允许其删除的目录角色中 `programControl` 。
+登录用户还必须在允许其删除 的目录角色中 `programControl` 。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -77,7 +77,7 @@ DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-
 ---
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

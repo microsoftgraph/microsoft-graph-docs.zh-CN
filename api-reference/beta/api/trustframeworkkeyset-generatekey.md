@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6ffcb8beb1744d8ca702ed1d9fd550721b6e7747
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2dd481634a9b42a9cf40d2d507e06c95b225b0c5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433653"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053438"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet： generateKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "50433653"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [trustFrameworkKeyset](../resources/trustFrameworkKey.md) 中自动生成 [trustFrameworkKey](../resources/trustframeworkkeyset.md)和密码。 呼叫者不必提供机密。
+在 [trustFrameworkKeyset](../resources/trustFrameworkKey.md) 中自动生成 [trustFrameworkKey](../resources/trustframeworkkeyset.md)和密码。 呼叫者不必提供密码。
 
 ## <a name="permissions"></a>权限
 
@@ -58,7 +58,7 @@ POST /trustFramework/keySets/{id}/generateKey
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: 列出 relyingPartyDetailedSummary
-description: 检索 relyyPartyDetailedSummary 对象的列表。
+description: 检索 relyingPartyDetailedSummary 对象的列表。
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7512cc10db5b37cce6c899f5399f0c51194ab59c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 17e4c4b3e92173593c768267f6db957942241cdf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131382"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052857"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>列出 relyingPartyDetailedSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131382"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 **relyyPartyDetailedSummary 对象** 的列表。
+检索 **relyingPartyDetailedSummary 对象** 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "50131382"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Report.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Report.Read.All |
+| 应用程序                            | Report.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,14 +41,14 @@ GET /reports/getRelyingPartyDetailedSummary
 
 | 参数 | 说明 |
 |:----------|:----------|
-| period | 支持的值是：D1、D7、D30。 这些值采用格式 Dn，其中 n 表示在多少天内聚合报表。|
+| period | 支持的值包括：D1、D7、D30。 这些值采用格式 Dn，其中 n 表示在多少天内聚合报表。|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 
 
-- 可以使用此参数 `$filter` 通过 relyingPartyId、migrationStatus 和其他属性进行筛选。 例如，$filter= relyingPartyId eq "identifier"。
-- 可以在任何 `$orderby` `$top` GET 请求中使用 、和 `$skip` 查询参数。
+- 可以使用 参数 `$filter` 通过 relyingPartyId、migrationStatus 和其他属性进行筛选。 例如，$filter= relyingPartyId eq 'identifier'。
+- 可以在任何 `$orderby` `$top` GET 请求中使用 、 和 `$skip` 查询参数。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -65,7 +65,7 @@ GET /reports/getRelyingPartyDetailedSummary
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和请求 [的 relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(peri
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

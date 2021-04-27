@@ -1,16 +1,16 @@
 ---
 title: List taskDefinitions
-description: 检索在租户中定义的请求应用程序的任务定义列表。
+description: 检索请求应用在租户中定义的任务定义列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d3a78ed94520477969bf1116cdafee0df20391d9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 68de2409013cff88752f5a26f1ea06e2a25bb755
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967014"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053634"
 ---
 # <a name="list-taskdefinitions"></a>List taskDefinitions
 
@@ -18,9 +18,9 @@ ms.locfileid: "48967014"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索在租户中定义的请求应用程序的 [任务定义](../resources/printtaskdefinition.md) 列表。
+检索请求 [应用在](../resources/printtaskdefinition.md) 租户中定义的任务定义列表。
 
-有关如何使用此 API 将拉取打印支持添加到通用打印的详细信息，请参阅 [扩展通用打印以支持请求打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,7 +43,7 @@ GET /print/taskDefinitions
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ### <a name="exceptions"></a>Exceptions
-某些运算符不受支持：、、、、 `$count` `$format` `$search` `$select` `$skip` 、 `$top` 。
+不支持某些运算符 `$count` `$format` ：、、、、、。 `$search` `$select` `$skip` `$top`
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -53,7 +53,7 @@ GET /print/taskDefinitions
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printTaskDefinition](../resources/printtaskdefinition.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printTaskDefinition](../resources/printtaskdefinition.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

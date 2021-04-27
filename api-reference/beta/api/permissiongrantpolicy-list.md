@@ -1,16 +1,16 @@
 ---
 title: 列出 permissionGrantPolicies
-description: 检索 permissionGrantPolicy 对象的列表。
+description: 检索 permissionGrantPolicy 对象列表。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a3bb3377100559583f7e9511ac009dba18f36f16
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7333c765bd556a4c9bbb9de49f2e82519569258b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433916"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052962"
 ---
 # <a name="list-permissiongrantpolicies"></a>列出 permissionGrantPolicies
 
@@ -20,7 +20,7 @@ ms.locfileid: "50433916"
 
 检索 [permissionGrantPolicy 对象](../resources/permissiongrantpolicy.md) 的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50433916"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
+| 应用程序                            | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /policies/permissionGrantPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

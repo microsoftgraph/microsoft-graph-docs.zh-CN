@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 81b0bcdc8cf665e256070162be4550321311ba53
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c03bc052a3a07e2ecf9237d3829f32667a4e2dd3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442234"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052878"
 ---
 # <a name="get-privilegedrolesummary"></a>获取 privilegedRoleSummary
 
@@ -18,8 +18,8 @@ ms.locfileid: "50442234"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [privilegedRoleSummary](../resources/privilegedrolesummary.md) 对象的属性和关系。
-## <a name="permissions"></a>Permissions
+检索 [privilegedRoleSummary 对象的属性和](../resources/privilegedrolesummary.md) 关系。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -27,7 +27,7 @@ ms.locfileid: "50442234"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /privilegedRoles/{id}?$expand=summary
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [privilegedRoleSummary](../resources/privilegedrolesummary.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [privilegedRoleSummary](../resources/privilegedrolesummary.md) 对象。
 
 请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 ## <a name="example"></a>示例
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/summary
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

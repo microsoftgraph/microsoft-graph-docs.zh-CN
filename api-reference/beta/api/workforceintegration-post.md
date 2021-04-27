@@ -1,18 +1,18 @@
 ---
-title: 创建 workforceIntegration
+title: Create workforceIntegration
 description: 创建新的 workforceIntegration 对象。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c67023a11f105008361de7167b8adc14ce5cfa40
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 76cb01efb15f7937c9e71e1fa26eb8d425f2b4d7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970702"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054684"
 ---
-# <a name="create-workforceintegration"></a>创建 workforceIntegration
+# <a name="create-workforceintegration"></a>Create workforceIntegration
 
 命名空间：microsoft.graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "48970702"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | WorkforceIntegration |
+| 委派（工作或学校帐户）     | WorkforceIntegration.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -51,15 +51,15 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [workforceIntegration](../resources/workforceintegration.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-new-workforceintegration-object"></a>示例1：创建新的 workforceIntegration 对象。
+### <a name="example-1-create-a-new-workforceintegration-object"></a>示例 1：创建新的 workforceIntegration 对象。
 
 #### <a name="request"></a>请求
 
-下面是创建新的 **workforceIntegration** 对象的请求示例。
+下面是一个请求创建新的 **workforceIntegration** 对象的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,7 +106,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -131,9 +131,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>示例2：创建一个新的 workforceIntegration，并为其启用 SwapRequest 的资格筛选
+### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>示例 2：新建一个针对资格筛选启用 SwapRequest 的 workforceIntegration
 
-以下是对 SwapRequest 启用了资格筛选的请求的示例。 
+下面是一个请求示例，请求启用了 SwapRequest 进行资格筛选。 
 
 #### <a name="request"></a>请求
 
@@ -176,15 +176,15 @@ HTTP/1.1 200 OK
 }
 
 ```
-若要更新启用了 SwapRequest 的现有 **workforceIntegration** 对象以进行资格筛选，请参阅 [update](../api/workforceintegration-update.md) 方法。
+若要使用启用了资格筛选的 SwapRequest 更新现有的 **workforceIntegration** 对象，请参阅 [Update](../api/workforceintegration-update.md) 方法。
 
-### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>示例3：在 eligibilityFilteringEnabledEntities 中包含 SwapRequest 时提取符合条件的班次
+### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>示例 3：在 SwapRequest 包含在 eligiblyFilteringEnabledEntities 中时提取符合条件的班次
 
-倒班应用和劳动力集成终结点之间的交互将遵循现有模式。
+班次应用和员工集成终结点之间的交互将遵循现有模式。
 
 ### <a name="request"></a>请求
 
-下面的示例演示了如何通过转到劳动力集成终结点来获取交换请求的符合条件的请求。
+下面是 Shifts 向员工集成终结点请求获取交换请求的合格班次的示例。
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -201,7 +201,7 @@ Accept-Language: en-us
 ```
 ### <a name="response"></a>响应
 
-以下是劳动力集成服务响应的示例。
+下面是员工集成服务的响应示例。
 ```
 HTTP/1.1 200 OK
 {

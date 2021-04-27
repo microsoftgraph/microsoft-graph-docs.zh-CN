@@ -5,14 +5,14 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 70e14b9e13656e61a17bb0d3dc7b393dcf36f9b4
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: fd4dbe34759372629ccb0cb76feef2c13fa096ec
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474754"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055468"
 ---
-# <a name="create-attachment-deprecated"></a>创建 (已弃用) 
+# <a name="create-attachment-deprecated"></a>创建 (的附件) 
 
 命名空间：microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "50474754"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-使用此 API 将附件 [添加到](../resources/attachment.md) [outlookTask](../resources/outlooktask.md)。 附件可以是 [fileAttachment](../resources/fileattachment.md) (或 outlook) [itemAttachment](../resources/itemattachment.md) 类型 (的文件) 。
+使用此 API 将附件 [添加到](../resources/attachment.md) [outlookTask](../resources/outlooktask.md)。 附件可以是[fileAttachment](../resources/fileattachment.md) (类型的文件，) Outlook [itemAttachment (itemAttachment](../resources/itemattachment.md)) 。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Content-Type | 表示实体正文中数据类型的字符串。 必填。 |
+| Content-Type | 表示实体正文中数据类型的字符串。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "add_file_attachment_to_task",
@@ -190,7 +190,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "add_item_attachment_to_task",

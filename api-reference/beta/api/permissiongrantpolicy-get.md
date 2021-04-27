@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 7065399613ceb1eaa2c797afadb511a5bf2b62e5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f1aa51b9e31924443f6f276333bd9c284185a8c0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433969"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052955"
 ---
 # <a name="get-permissiongrantpolicy"></a>获取 permissionGrantPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50433969"
 
 检索单个 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50433969"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
+| 应用程序                            | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,13 +54,13 @@ GET /policies/permissionGrantPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的 permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。 此示例中，请求的策略是内置权限授予策略，其中包括针对来自已验证发布者的应用或此租户中注册的应用的低级别委派 `microsoft-user-default-low` 权限。
+下面展示了示例请求。 此示例中，请求的策略是内置权限授予策略，其中包括针对已验证发布者的应用或在此租户中注册的应用分类的低委派 `microsoft-user-default-low` 权限。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -93,9 +93,9 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 该策略具有两个条件集，一个条件集与为此租户中注册的客户端应用分类的委派权限匹配，另一个条件集与已验证发布者为应用分类的委派权限匹配 (无论应用程序在 `includes` `low`) 中注册 `low` 哪个租户。
+下面展示了示例响应。 策略有两个条件集，一个条件集与为此租户中注册的客户端应用分类的委派权限匹配，另一个条件集与为来自已验证发布者 (的应用分类的委派权限匹配，而不管该应用程序在 `includes` `low`) 中注册 `low` 哪个租户。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

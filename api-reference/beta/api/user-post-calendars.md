@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6cd0cd5a0e55bb95f0a99a189d05796242d08389
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04e9dc2b4b59e54087f9da612330d87849ac3ca6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968595"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054705"
 ---
 # <a name="create-calendar"></a>创建日历
 
@@ -85,7 +85,7 @@ Content-type: application/json
 
 在请求正文中，提供 [calendar](../resources/calendar.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

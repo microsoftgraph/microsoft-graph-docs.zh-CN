@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTask
-description: 在指定的任务文件夹中创建 Outlook 任务。
+description: 创建Outlook任务文件夹中的一个任务。
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b5986d4fe2ab77cf8c4634f3d872d966819ebca7
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 233e93529c2b4644a69643fd8bf1f49562765127
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774304"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055433"
 ---
 # <a name="create-outlooktask-deprecated"></a>创建 outlookTask（已弃用）
 
@@ -21,7 +21,7 @@ ms.locfileid: "50774304"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-在指定的任务文件夹中创建 Outlook 任务。
+创建Outlook任务文件夹中的一个任务。
 
 POST 方法始终忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定时间始终为指定时区中的午夜。
 
@@ -32,7 +32,7 @@ POST 方法始终忽略请求正文中 **startDateTime** 和 **dueDateTime** 的
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Tasks.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Tasks.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -103,7 +103,7 @@ Content-length: 376
 ##### <a name="response"></a>响应
 POST 方法忽略请求正文中的时间部分，并假定在 PST (指定时区中始终午夜) 。 然后，默认情况下，POST 方法在响应中转换和显示所有与日期相关的属性（采用 UTC）。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 62d6dfbdf2e9025b3bdd0732b69b54e036045913
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5230ca00a63f3543b95ef4f2a1dc7242c5460a1b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957282"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055405"
 ---
 # <a name="update-phoneauthenticationmethod"></a>更新 phoneAuthenticationMethod
 
@@ -22,7 +22,7 @@ ms.locfileid: "50957282"
 
 你无法更改电话的类型。 若要更改电话的类型，请添加所需类型的新号码，然后删除具有原始类型的对象。
 
-如果策略允许用户使用短信登录并更改号码，系统将尝试注册用于 `mobile` 该系统的号码。
+如果策略允许用户使用 短信登录并更改号码，系统将尝试注册号码以 `mobile` 用于该系统。
 
 ## <a name="permissions"></a>权限
 
@@ -75,7 +75,7 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话号码使用格式"+ \<country code\> \<number\> \<extension\> x"，分机号可选。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
+|phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话数字使用格式"+ \<country code\> \<number\> \<extension\> x"，扩展是可选的。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
 |phoneType|string| 可能的值为： `mobile`、 `alternateMobile`或 `office`。|
 
 ## <a name="response"></a>响应
@@ -126,7 +126,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

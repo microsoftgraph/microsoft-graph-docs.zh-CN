@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9e60e01bcf530533f6827af2d93a90573f39c760
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0ebdf4a68247a4b6c62d5c2cf1431b903fd140a2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720038"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054712"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -54,7 +54,7 @@ POST /users
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |布尔 |如果启用帐户，则其为 True;否则为 false。|
+|accountEnabled |布尔 |如果启用帐户，则其参数为 True;否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
@@ -66,7 +66,7 @@ POST /users
 默认情况下，将强制通过此 API 创建的联盟用户每 12 小时登录一次。 若要了解如何更改此限制，请参阅 [令牌生存期的例外](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
 
 >[!NOTE]
->不允许向现有用户对象添加[B2C](../resources/objectidentity.md)本地帐户，除非用户对象已包含本地帐户标识。 
+>不允许向现有 [用户对象添加 B2C](../resources/objectidentity.md)本地帐户，除非 **用户** 对象已包含本地帐户标识。
 
 ## <a name="response"></a>响应
 
@@ -123,7 +123,7 @@ Content-type: application/json
 下面是一个响应示例。 
 
 >[!NOTE]
->为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+>为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -219,7 +219,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

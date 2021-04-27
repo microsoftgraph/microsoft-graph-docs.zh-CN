@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6c721c4c7b4e534fc22e71db221c73670b5e477a
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 57d755532e2e56934f32aaa0940504073eef7473
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921143"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053627"
 ---
 # <a name="create-printershare"></a>创建 printerShare
 
@@ -51,7 +51,7 @@ POST /print/shares
 |:---|:---|:---|:---|
 |printer|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法。|是|
 |displayName|String|打印客户端应显示的打印机共享的名称。 允许的最大长度为 50 个字符。|是|
-|allowAllUsers|布尔| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|否|
+|allowAllUsers|布尔值| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|不支持|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [printerShare](../resources/printershare.md) 对象。
@@ -100,7 +100,7 @@ Content-length: 114
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

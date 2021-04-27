@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 802e29cfbaab46d3d3b8a1f7d2bbe0ad1ca031b4
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 16b483be47fd6b62eff05001ad99be0ebf554d2d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059706"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055384"
 ---
 # <a name="update-place"></a>更新位置
 
@@ -18,7 +18,7 @@ ms.locfileid: "50059706"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 place[对象的属性](../resources/place.md)，可以是聊天室[或](../resources/room.md) [roomList。](../resources/roomlist.md) 可以通过指定 id **或** **emailAddress** 属性来标识会议室或 **roomList。**
+更新 place [对象](../resources/place.md) 的属性，可以是 room [或](../resources/room.md) [roomList](../resources/roomlist.md)。 可以通过指定 **id** **或** **emailAddress** 属性来标识 room 或 **roomList。**
 
 ## <a name="permissions"></a>权限
 
@@ -47,29 +47,29 @@ PATCH /places/{id | emailAddress}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 一次只能更新 (**聊天室** 或 **roomList**) 资源实例。 在请求正文中，用于指定位置的类型，并包括要 `@odata.type` 更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值。 一次只能更新 (**或** **roomList**) 一个实例。 在请求正文中，使用 指定位置的类型，并包括要 `@odata.type` 更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性               | 类型                                              | 说明 |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | 会议室或会议室列表的街道地址。 |
 | audioDeviceName        | String                                            | 指定会议室中的音频设备的名称。 |
 | bookingType            | [bookingType](../resources/room.md)                            | 聊天室的类型。 可能的值为 `Standard` 和 `Reserved`。 |
-| building               | String                                            | 指定房间的大楼名称或建筑物编号。 |
+| building               | String                                            | 指定会议室的大楼名称或建筑物编号。 |
 | capacity               | Int32                                             | 指定会议室的容量。 |
-| displayDeviceName      | String                                            | 指定会议室中的显示设备的名称。 |
-| floorLabel             | String                                            | 指定房间的楼层字母。 |
+| displayDeviceName      | String                                            | 指定会议室中显示设备的名称。 |
+| floorLabel             | String                                            | 指定房间的楼层号。 |
 | floorNumber            | Int32                                             | 指定房间的楼层。 |
-| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | 指定以纬度、经度和（可选）高度坐标表示的会议室或会议室列表位置。 |
-| isWheelChairAccessible | 布尔                                           | 指定会议室是否可供访问。 |
+| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | 以纬度、经度和（可选）海拔坐标指定房间或房间列表位置。 |
+| isWheelChairAccessible | 布尔值                                           | 指定会议室是否可供访问。 |
 | label                  | String                                            | 指定会议室的描述性标签，例如数字或名称。 |
 | nickname               | String                                            | 指定会议室的昵称，例如"conf room"。 |
 | phone                  | String                                            | 会议室或会议室列表的电话号码。 |
-| tags                   | 字符串集合                                 | 指定会议室的其他功能，例如，视图类型或费用类型等详细信息。 |
+| tags                   | 字符串集合                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
 | videoDeviceName        | String                                            | 指定会议室中的视频设备的名称。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新的 [place](../resources/place.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [place](../resources/place.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -124,7 +124,7 @@ Content-length: 285
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -233,7 +233,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

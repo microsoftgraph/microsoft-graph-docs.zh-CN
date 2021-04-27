@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3b1bf0939a7fe5e33b31ad9d2200e55da8464a67
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ff171910adbe92e3ed936f2ea868487e761c3b05
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957763"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055566"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact：获取管理器
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/contacts/{id}/manager
 
 #### <a name="response"></a>响应
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

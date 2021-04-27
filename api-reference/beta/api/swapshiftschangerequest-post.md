@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c4dd366ae1d9fc98cd495584581d3dfa0b73ab93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b1f873194d18f3ec34681f90942d5de2cbb089b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004416"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054831"
 ---
 # <a name="create-swapshiftschangerequest"></a>创建 swapShiftsChangeRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "48004416"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象的实例。
+创建 [swapShiftsChangeRequest 对象](../resources/swapshiftschangerequest.md) 的实例。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,9 @@ ms.locfileid: "48004416"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 计划的所有写。 * |
+| 应用程序                            | Schedule.ReadWrite.All* |
 
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
+>\***重要提示：** 应用程序权限目前仅为个人预览版，不可公开使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和创建的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和创建的 `200 OK` [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,7 +84,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

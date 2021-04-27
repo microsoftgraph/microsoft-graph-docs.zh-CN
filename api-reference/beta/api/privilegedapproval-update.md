@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 0bab4a86c614360991a334e7bd2c8450f7d3dfb0
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 89d65455ecc1eea427c0e2186a97fbad39789884
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777676"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053543"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -27,7 +27,7 @@ ms.locfileid: "50777676"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,15 +44,15 @@ PATCH /privilegedApproval/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|approvalDuration|持续时间||
+|approvalDuration|期限||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
-|approvalType|字符串||
-|approverReason|字符串||
+|approvalType|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset||
-|requestorReason|字符串||
-|roleId|字符串||
+|requestorReason|String||
+|roleId|String||
 |startDateTime|DateTimeOffset||
-|userId|字符串||
+|userId|String||
 
 ## <a name="response"></a>响应
 
@@ -98,7 +98,7 @@ Content-length: 180
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

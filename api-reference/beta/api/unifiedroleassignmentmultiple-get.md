@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9e9867d2c314534115f7c620d52329805d8b890e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4e249a334487538cc0c2c708bf94dddc26818457
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960574"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054761"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>获取 unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "50960574"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [unifiedRoleAssignmentMultiple 对象的属性和](../resources/unifiedroleassignmentmultiple.md) 关系。 使用此对象获取 Microsoft Intune 中的角色分配。 对于 Azure AD (等其他 Microsoft 365) ，请使用 [unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
+检索 [unifiedRoleAssignmentMultiple 对象的属性和](../resources/unifiedroleassignmentmultiple.md) 关系。 使用此对象可获取角色分配Microsoft Intune。 For other Microsoft 365 applications (like Azure AD) ， use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## <a name="permissions"></a>权限
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -228,7 +228,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

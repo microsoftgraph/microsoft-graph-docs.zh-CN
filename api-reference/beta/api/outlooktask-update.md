@@ -1,16 +1,16 @@
 ---
 title: 更新 outlooktask
-description: 更改 Outlook 任务的可写属性。
+description: 更改任务任务的可写Outlook属性。
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5fb3fff99b200c2342f745556c81139ee8d2e298
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 04fbf6862914b8ddcb1086197a0284fd482cbb53
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720597"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055461"
 ---
 # <a name="update-outlooktask-deprecated"></a>更新 outlooktask (已弃) 
 
@@ -21,13 +21,13 @@ ms.locfileid: "50720597"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-更改 Outlook 任务的可写属性。
+更改任务任务的可写Outlook属性。
 
-**completedDateTime** 属性可通过完整操作设置，也可以由 PATCH 操作显式设置。 如果使用 PATCH 设置 **completedDateTime，** 请确保同时将 **状态** `completed` 设置为。
+**completedDateTime** 属性可通过完整操作设置，也可通过 PATCH 操作显式设置。 如果使用 PATCH 设置 **completedDateTime，** 请确保同时将 **状态** 设置为 `completed` 。
 
-默认情况下，此操作 (POST、GET 和 [完成](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
+默认情况下，此操作 (POST、GET 和 [complete](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | 指定响应中时间属性的时区，如果未指定此标头，则时区为 UTC。 可选。|
+| Prefer: outlook.timezone | 指定响应中时间属性的时区，如果未指定此标头，则其时区为 UTC。 可选。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -80,13 +80,13 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的 [outlookTask](../resources/outlooktask.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [outlookTask](../resources/outlooktask.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-以下示例修改 **dueDateTime** 属性，并使用标头指定在 EST (中响应中表示与日期 `Prefer: outlook.timezone` 相关的) 。
+下面的示例修改 **dueDateTime** 属性，并使用 标头指定在东部标准时间 (EST 响应中表示与日期相关的 `Prefer: outlook.timezone`) 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -128,7 +128,7 @@ Content-length: 76
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

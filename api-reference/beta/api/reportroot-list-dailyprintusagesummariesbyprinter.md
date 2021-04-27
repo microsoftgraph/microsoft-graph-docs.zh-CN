@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7575dc8dc35995491a0f7143e55734ecff52cfa7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a7ba73373ee0c575ca32ab9a1e594089ae9cc93e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953179"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054922"
 ---
 # <a name="list-dailyprintusagesummariesbyprinter"></a>列出 dailyPrintUsageSummariesByPrinter
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByPri
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

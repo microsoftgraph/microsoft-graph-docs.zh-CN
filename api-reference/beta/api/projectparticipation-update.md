@@ -1,16 +1,16 @@
 ---
 title: 更新 projectParticipation 资源类型
-description: 更新用户的配置文件中的 projectParticipation 对象的属性。
+description: 更新用户配置文件中的 projectParticipation 对象的属性。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 61e03f2a63a5654486e88b7b2f8588680cac3999
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5665c10cbaeb2968b5a17be3f7d30561ed9573d2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968957"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055195"
 ---
 # <a name="update-projectparticipation"></a>更新 projectparticipation
 
@@ -18,7 +18,7 @@ ms.locfileid: "48968957"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新用户的[配置文件](../resources/profile.md)中的[projectParticipation](../resources/projectParticipation.md)对象的属性。
+更新用户配置文件 [中的 projectParticipation](../resources/projectParticipation.md) 对象 [的属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48968957"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -53,18 +53,18 @@ PATCH /users/{id | userPrincipalName}/profile/projects/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|包含用户与项目相关联的类别 (例如，数字转换、石油远程测试机组) 。 |
-|客户端|[companyDetail](../resources/companydetail.md)|包含有关项目所针对的客户端的详细信息。 |
-|collaborationTags|String collection|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
-|征求|[relatedPerson](../resources/relatedperson.md) 集合|列出也在项目中工作的人员。 |
-|介绍|[positionDetail](../resources/positiondetail.md)|包含有关用户在项目上的角色的详细信息。|
+|categories|String 集合|包含用户与项目计划关联的类别 (例如，数字转换、国家/) 。 |
+|client|[companyDetail](../resources/companydetail.md)|包含有关项目用于的客户端的详细信息。 |
+|collaborationTags|字符串集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
+|同事|[relatedPerson](../resources/relatedperson.md) 集合|列出同样从事项目工作的人。 |
+|detail|[positionDetail](../resources/positiondetail.md)|包含有关用户在项目上的角色的详细信息。|
 |displayName|String|包含项目的友好名称。|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|人|[relatedPerson](../resources/relatedperson.md) 集合|发起项目的人员或人员。    |
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|发起人|[relatedPerson](../resources/relatedperson.md) 集合|为项目提供赞助的一个或多个人员。    |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [projectParticipation](../resources/projectparticipation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [projectParticipation](../resources/projectparticipation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -113,7 +113,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

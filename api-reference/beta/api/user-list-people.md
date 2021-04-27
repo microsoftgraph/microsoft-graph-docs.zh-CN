@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 6212446f136d87b9331793c9846be8f2edd8a499
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8df99c32c43e947863c4a7713c984b99fbd4bb73
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968854"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053354"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -18,7 +18,7 @@ ms.locfileid: "48968854"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索按其与[用户](../resources/user.md)的相关性排序的[人员](../resources/person.md)对象列表，该列表由用户的通信和协作模式以及业务关系决定。
+检索[人员对象列表](../resources/person.md)，这些对象按与用户的相关性排序，这[](../resources/user.md)由用户的通信和协作模式以及业务关系决定。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/people
 |:---------------|:--------|:-------|
 |$filter|string|将响应限制为仅记录中包含指定条件的那些人员。|
 |$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。|
-|$search|string|按姓名或别名搜索人员。 支持模糊匹配。 参数仅适用于搜索已登录用户的相关人员，而不适用于搜索与其他用户相关的人员。 此外还支持 `topic` 关键字，以根据从与此人的电子邮件对话中提取的主题查找人员。 有关信息和示例，请参阅“ [获取相关人员的信息](/graph/people-example#perform-a-fuzzy-search)”的“ *执行模糊搜索* ”部分。|
+|$search|string|按姓名或别名搜索人员。 支持模糊匹配。 参数仅适用于搜索已登录用户的相关人员，而不适用于搜索与其他用户相关的人员。 此外还支持 `topic` 关键字，以根据从与此人的电子邮件对话中提取的主题查找人员。 有关信息和示例，请参阅“[获取相关人员的信息](/graph/people-example#perform-a-fuzzy-search)”的“*执行模糊搜索*”部分。|
 |$select|string|要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。|
 |$skip|int|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。|
 |$top|int|要返回的结果数。|
@@ -65,19 +65,19 @@ GET /users/{id | userPrincipalName}/people
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [person](../resources/person.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码 `200 OK` 和 [person](../resources/person.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="browse"></a>定位
+### <a name="browse"></a>浏览
 
-本节中的请求将根据 `/me` 通信、协作和业务关系，获取与登录用户 () 最相关的人员。
+本节中的请求根据通信、协作和业务关系，获取与登录 () `/me` 相关最多的人员。
 
-默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要人员读取权限。
+默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要 People.Read 权限。
 
 #### <a name="request"></a>请求
 
-以下是默认请求的示例。
+以下是默认请求的一个示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/me/people
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -220,7 +220,7 @@ GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 
 可以通过设置 *$top* 参数更改响应中返回的人员数。
 
-下面的示例请求与最相关的1000人 `/me` 。 请求还通过仅请求用户的显示名称来限制从服务器发送回的数据量。
+以下示例请求与 最相关的 1，000 个人 `/me` 。 请求还通过仅请求用户的请求来限制从服务器显示名称的数量。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
@@ -228,9 +228,9 @@ GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 
 #### <a name="selecting-the-fields-to-return"></a>选择要返回的字段
 
-您可以通过使用 *$select* 参数选择一个或多个字段来限制从服务器返回的数据量。 该 *@ odata.id* 字段总会返回。
+可以使用 $select 参数选择一个或多个字段 *，* 以限制从服务器返回的数据量。 该 *@ odata.id* 字段总会返回。
 
-下面的示例将响应限制为10个最相关人员的 *DisplayName* 和 *EmailAddress* 。
+以下示例将响应限制为 10 个最相关的人的 *DisplayName* 和 *EmailAddress。*
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses
@@ -240,17 +240,17 @@ GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddress
 
 可以使用 *$filter* 参数将响应限制为记录中包含指定条件的那些人员。
 
-以下查询将响应限制为对源 "Directory" 的人员的响应。
+以下查询将响应限制为源为"Directory"的人。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: source/Type  eq 'Directory')
 ```
 
-#### <a name="selecting-the-fields-to-return-in-a-filtered-response"></a>在筛选的响应中选择要返回的字段
+#### <a name="selecting-the-fields-to-return-in-a-filtered-response"></a>选择要在筛选的响应中返回的字段
 
 可以结合 *$select* 和 *$filter* 参数创建自定义用户相关人员列表，并且只获取应用程序需要的字段。
 
-下面的示例获取其显示名称等于指定名称的用户的 *DisplayName* 和 *EmailAddress* 。 在本示例中，只返回显示名称等于“Nestor Kellum”的人。
+以下示例获取其名称等于指定名称显示名称的 *DisplayName* 和 *EmailAddress。* 在本示例中，只返回显示名称等于“Nestor Kellum”的人。
 
 ```http
 +GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses&$filter=DisplayName eq 'Nestor Kellum'
@@ -258,13 +258,13 @@ GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: sou
 
 ### <a name="search-people"></a>搜索人员
 
-此部分中的请求还可以获取与登录用户 () 最相关的人员 `/me` 。 搜索请求需要人员读取权限。
+本节中的请求还获取与登录用户相关 `/me` () 。 搜索请求需要 People.Read 权限。
 
-#### <a name="using-search-to-select-people"></a>使用 "搜索" 选择人员
+#### <a name="using-search-to-select-people"></a>使用搜索选择人员
 
 使用 *$search* 参数选择符合某组特定条件的人员。
 
-下面的搜索查询返回与 `/me` 其 GivenName 或姓以字母 "j" 开头的人员相关的人员。
+下面的搜索查询返回与其 GivenName 或 Surname 以字母 `/me` "j"开头的人相关。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search=j
@@ -272,7 +272,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search=j
 
 #### <a name="using-search-to-specify-a-relevant-topic"></a>使用搜索来指定相关主题
 
-以下请求返回相关人员， `/me` 其名称包含 "ma"，以及与 "功能计划" 有关联的人员。
+以下请求返回与姓名包含"ma"且与"功能规划" `/me` 有关联的人。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
@@ -280,7 +280,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature plann
 
 #### <a name="performing-a-fuzzy-search"></a>执行模糊搜索
 
-下面的请求搜索名为 "Hermaini 厅" 的人。 由于存在与登录用户相关的名为 "所以凸" 的人员，因此返回 "所以凸" 的信息。
+以下请求将搜索名为"Hermaini Hall"的人。 由于有一个名为"Herminia Hull"的人与登录用户相关，因此将返回"Herminia Hull"的信息。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
@@ -288,7 +288,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 
 ### <a name="related-people"></a>相关人员
 
-以下请求获取与用户组织中的其他人最相关的人员。 此请求需要 User.readbasic.all 的所有人。读取。 All 权限。 在此示例中，将显示 Nestor Kellum 的相关人员。
+以下请求获取与用户组织中其他人最相关的人员。 此请求需要具有 People.Read.All 权限的 User.ReadBasic.All。 本示例显示 Nestor Kellum 的的相关人员。
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/

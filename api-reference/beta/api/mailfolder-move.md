@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 078e5b81a3a3696cf07e7852fa466c0586ae6d09
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 989104dc6b4244bd38def513e18557d9576b8b15
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136906"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053018"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [mailFolder](../resources/mailfolder.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [mailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -104,7 +104,7 @@ Content-length: 44
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

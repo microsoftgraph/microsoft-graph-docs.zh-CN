@@ -1,18 +1,18 @@
 ---
 title: 列出 taskGroups
-description: 获取用户邮箱中的所有 Outlook 任务组。
+description: 获取Outlook邮箱中所有任务组。
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 905117af345e7ecb753626ad4531c5e45c975f11
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d79ec13b68e68ab11180db9a0826a12b79a61b3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969876"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052969"
 ---
-# <a name="list-taskgroups-deprecated"></a>列出 taskGroups (弃用) 
+# <a name="list-taskgroups-deprecated"></a>列出已 (的任务组) 
 
 命名空间：microsoft.graph
 
@@ -21,9 +21,9 @@ ms.locfileid: "48969876"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-获取用户邮箱中的所有 Outlook 任务组。
+获取Outlook邮箱中所有任务组。
 
-响应始终包括默认任务组 `My Tasks` 以及邮箱中已创建的任何其他任务组。
+该响应始终包括默认任务组 `My Tasks` ，以及已在邮箱中创建的其他任何任务组。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [outlookTaskGroup](../resources/outlooktaskgroup.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [outlookTaskGroup](../resources/outlooktaskgroup.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

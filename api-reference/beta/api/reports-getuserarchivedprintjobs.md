@@ -1,16 +1,16 @@
 ---
 title: reports： getUserArchivedPrintJobs
-description: 获取特定用户的已存档打印作业列表。
+description: 获取特定用户的已存档打印作业的列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9ec8ecc5fb8453a8219660cd47486c762fbfebd6
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 214848ff04f982bcf3ff06397ac16d4793e948e5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475273"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054880"
 ---
 # <a name="reports-getuserarchivedprintjobs"></a>reports： getUserArchivedPrintJobs
 
@@ -47,11 +47,11 @@ GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDat
 | 参数     | 类型                 | 是否必需？ | 说明                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `userId`      | `Edm.String`         | 是       | 要返回其数据的用户的 ID。                               |
-| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期 (包含) 数据时间段的包含日期。 |
-| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含) 数据的时间段的包含日期。   |
+| `startDateTime` | `Edm.DateTimeOffset` | 不支持        | 开始日期包含 (数据) 时间段的包含时间（含这两者）。 |
+| `endDateTime`   | `Edm.DateTimeOffset` | 不支持        | 结束日期包括 (数据) 时间段的包含时间（含这两者）。   |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(user
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

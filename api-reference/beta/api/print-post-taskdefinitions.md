@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4b2a655047ed3700d42e8c672115f0457cc879e9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2e6a9eaca89e7ec68d2eee2053ead369cbcd5831
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966984"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053620"
 ---
 # <a name="create-taskdefinition"></a>Create taskDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "48966984"
 
 创建新的任务定义。
 
-有关如何使用此 API 将拉取打印支持添加到通用打印的详细信息，请参阅 [扩展通用打印以支持请求打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,10 +48,10 @@ POST /print/taskDefinitions
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [printTaskDefinition](../resources/printtaskdefinition.md) 对象的 JSON 表示形式。
 
-[PrintTaskDefinition](../resources/printtaskdefinition.md)的 **id** 和 **createdBy** 属性是在创建资源时自动设置的。
+[printTaskDefinition](../resources/printtaskdefinition.md)的 **id** 和 **createdBy.appId** 属性会在创建资源时自动设置。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printTaskDefinition](../resources/printtaskdefinition.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [printTaskDefinition](../resources/printtaskdefinition.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -97,7 +97,7 @@ Content-length: 122
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

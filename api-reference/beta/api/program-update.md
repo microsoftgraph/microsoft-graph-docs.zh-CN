@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 29b30bd80dba96b061d0c83f2710d224c3da8758
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 420d64bbef69aac415380905500054313790513d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721775"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053536"
 ---
 # <a name="update-program"></a>更新程序
 
@@ -19,7 +19,7 @@ ms.locfileid: "50721775"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [程序](../resources/program.md) 对象。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -41,7 +41,7 @@ PATCH /programs/{programId}
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供程序对象的 JSON [表示形式](../resources/program.md) 。
+在请求正文中，提供 program 对象的 JSON [表示](../resources/program.md) 形式。
 
 下表显示更新程序时提供的属性。
 
@@ -52,11 +52,11 @@ PATCH /programs/{programId}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `204, Accepted` 响应[](../resources/program.md)代码和 program 对象。
+如果成功，此方法在响应 `204, Accepted` 正文中返回 [响应](../resources/program.md) 代码和 program 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供要更改 [的程序](../resources/program.md) 对象参数的 JSON 表示形式。
+在请求正文中，提供要更改 [的 program](../resources/program.md) 对象参数的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -92,7 +92,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d66ba6d7d9eadecc4b6b1dc2346fbf6afe1e7378
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 32a72815cd291b013f588d7684c97143beb3cd3e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766005"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052906"
 ---
 # <a name="list-allowedusers-for-printershare"></a>列出 printerShare 的 allowedUsers
 
@@ -29,7 +29,7 @@ ms.locfileid: "51766005"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.Read.All、PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

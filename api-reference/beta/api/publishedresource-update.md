@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8c8a6cfe8eead7219918daf5ac2e87090cc18888
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 22544845ededf639bc71f14dec72a7163ded7c90
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137674"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055153"
 ---
 # <a name="update-publishedresource"></a>更新 publishedResource
 
@@ -28,7 +28,7 @@ ms.locfileid: "50137674"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|表示本地已发布资源名称。|
+|displayName|String|表示本地已发布资源名称。|
 
 ## <a name="response"></a>响应
 
@@ -100,7 +100,7 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

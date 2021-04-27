@@ -5,26 +5,26 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 71e876bbce1fc185aa866624867995584767e3df
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 2a5c259d05b88a6195a76420e573d6bbff155065
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059691"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055398"
 ---
 # <a name="get-place"></a>获取位置
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-获取由位置对象 ID[](../resources/place.md)或电子邮件地址指定的属性和关系。 
+获取由其 ID 或电子邮件地址 [指定的 place](../resources/place.md) 对象的属性和关系。 
 
 **place** 对象可以是下列类型之一：
 
-* [包含](../resources/room.md)丰富的属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
-* [包含会议室](../resources/roomlist.md)列表的电子邮件地址的会议室列表，以及用于获取该会议室列表中的 **会议室实例集合** 的导航属性。
+* [包含](../resources/room.md)丰富属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
+* [包含会议室](../resources/roomlist.md)列表的电子邮件地址的会议室列表，以及用于获取该会议室列表中的会议室实例集合的导航属性。 
 
-**room** **和 roomList** 都派生自 [place](../resources/place.md)对象。 
+**room 和** **roomList** 均派生自 [place](../resources/place.md)对象。 
 
 ## <a name="permissions"></a>权限
 
@@ -45,7 +45,7 @@ GET /places/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-使用$select获取特定 **位置** 属性。
+使用 $select 获取特定 **位置** 属性。
 
 有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,14 +61,14 @@ GET /places/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` 请求的 [place](../resources/place.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` 请求的 [place](../resources/place.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-get-a-room"></a>示例 1：获取聊天室
 #### <a name="request"></a>请求
 
-以下示例指定要 **获取** 其属性 **的** 聊天室的 ID。
+以下示例指定要 **获取** 其 **属性的聊天室** 的 ID。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -187,7 +187,7 @@ GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 63603ccc2feb93185bb73d28b0276c81d87d1d61
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0926ae86158b2a3bc521230ff3303fe609cb5f20
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964067"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053333"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [contact](../resources/contact.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 [响应](../resources/contact.md) 代码和 contact 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -107,7 +107,7 @@ Content-type: application/json
 在请求正文中，提供 [Contact](../resources/contact.md) 对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

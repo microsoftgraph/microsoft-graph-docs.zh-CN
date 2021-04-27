@@ -1,18 +1,18 @@
 ---
-title: 创建或替换计划
+title: 创建或替换日程安排
 description: 创建或替换 **schedule** 对象。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fa7deb3a8b3ddd4da5ba99d97c270d6ef3b04556
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1e61d48031530cb1d80a2e3bd45165befefcafd9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971073"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054775"
 ---
-# <a name="create-or-replace-schedule"></a>创建或替换计划
+# <a name="create-or-replace-schedule"></a>创建或替换日程安排
 
 命名空间：microsoft.graph
 
@@ -20,12 +20,12 @@ ms.locfileid: "48971073"
 
 创建或替换 [schedule](../resources/schedule.md) 对象。
 
-计划创建过程符合 [基于资源的长时间运行操作 (RELO) 的 API 指南 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
-当客户端使用 PUT 方法时，如果设置了计划，则操作将替换计划;否则，该操作将在后台启动计划设置过程。
+计划创建过程符合针对基于资源的长时间运行的操作的 One API 准则 ([RELO) 。 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)
+当客户端使用 PUT 方法时，如果已设置计划，则操作将替换计划;否则，操作将在后台启动计划预配过程。
 
-在计划设置过程中，客户端可以使用 [get 方法](schedule-get.md) 获取计划，并查看 `provisionStatus` 设置的当前状态的属性。 如果设置失败，客户端可以从属性获取其他信息 `provisionStatusCode` 。
+在计划预配期间，客户端可以使用 [GET 方法](schedule-get.md) 获取计划并查看 属性，了解 `provisionStatus` 预配的当前状态。 如果设置失败，客户端可以从 属性获取其他 `provisionStatusCode` 信息。
 
-客户端也可以检查计划的配置。
+客户端还可以检查计划的配置。
 
 
 ## <a name="permissions"></a>权限
@@ -34,7 +34,7 @@ ms.locfileid: "48971073"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All |
 
@@ -55,11 +55,11 @@ PUT /teams/{teamId}/schedule
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [schedule](../resources/schedule.md) 对象的 JSON 表示形式。
+在请求正文中，提供 schedule 对象的 JSON [表示](../resources/schedule.md) 形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedule](../resources/schedule.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/schedule.md) 代码和 schedule 对象。
 
 ## <a name="example"></a>示例
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
