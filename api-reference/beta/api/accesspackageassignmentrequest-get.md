@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0184e1146b6450cb5c500e8b377e817a42f82ff1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 78340e93b202d4088b453e39594b84345a247cbe
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439683"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048601"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>获取 accessPackageAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "50439683"
 
 在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439683"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,13 +40,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，要检索请求的访问包，请包括在 `$expand=accessPackage` 查询中。 若要检索生成的分配，请 `$expand=accessPackageAssignment` 包括在查询中。  若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索请求的访问包，请包括在 `$expand=accessPackage` 查询中。 若要检索结果分配，请包括在 `$expand=accessPackageAssignment` 查询中。  若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和请求 [的 accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

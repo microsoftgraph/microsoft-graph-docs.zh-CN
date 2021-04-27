@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6868c48fd2fdfba309a0af5849451a039bae1769
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e045a8235d377759c85663674a2f111968520f51
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439700"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048615"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>创建 accessPackageAssignmentPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50439700"
 
 在 [Azure AD 权利管理中](../resources/entitlementmanagement-root.md)，创建新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439700"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
@@ -51,17 +51,17 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 200 系列响应代码和新 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-create-a-direct-assignment-policy"></a>示例 1：创建直接分配策略
 
-当访问包分配请求仅由管理员而不是用户自己创建时，直接分配策略非常有用。
+如果访问包分配请求仅由管理员创建，而不是由用户自己创建，则直接分配策略非常有用。
 
 #### <a name="request"></a>请求
 
-以下示例显示创建访问包分配策略的请求。 在此策略中，任何用户均无法请求，也不需要批准，并且没有访问评审。
+以下示例显示创建访问包分配策略的请求。 在此策略中，任何用户均无法请求，也不需要批准，也无需访问评审。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -114,7 +114,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -134,9 +134,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>示例 2：为其他组织的用户创建请求的策略
+### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>示例 2：为来自其他组织的用户创建策略以请求
 
-以下示例显示了一个更复杂的策略，该策略具有两阶段审批和访问评审。
+以下示例显示了一个更复杂的策略，该策略具有两个阶段的审批和访问评审。
 
 #### <a name="request"></a>请求
 
@@ -259,7 +259,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -281,7 +281,7 @@ Content-type: application/json
 
 ### <a name="example-3-create-assignment-policy-with-questions"></a>示例 3：创建带问题的分配策略
 
-将在策略范围内向请求者提出在分配策略中配置的问题。 他们的回答将展示给审批者。 问题 ID 为只读，默认情况下包含在响应中。
+将在分配策略范围内向请求者提出在分配策略中配置的问题。 他们的回答将显示给审批者。 问题 ID 是只读的，并且默认包含在响应中。
 
 #### <a name="request"></a>请求
 
@@ -413,7 +413,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

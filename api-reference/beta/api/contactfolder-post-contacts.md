@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42d99e7a337e32957f16fb3b8a5cca66e47789cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 27e765335b2ae9c4e81668adfb090746773b4282
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957023"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047068"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -94,7 +94,7 @@ Content-length: 210
 
 在请求正文中，提供 [Contact](../resources/contact.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

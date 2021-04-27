@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e875ad5b1ebbf3968e17f919d3b9b1a8fc650bcc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2102d3a2960196fa0d39ebf12d006e719f9372e5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437931"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047740"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/me/calendar/calendarView?startDateTime=2017
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

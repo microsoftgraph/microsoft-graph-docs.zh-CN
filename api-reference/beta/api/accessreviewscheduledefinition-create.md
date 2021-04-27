@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b82980e053a50b7562cf94d0a5224badfd1d2a8a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a26c081af41658cebcff1db5d1608907f5b25034
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439098"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048370"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "50439098"
 
 创建新的 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "50439098"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application                            | AccessReview.ReadWrite.All |
+|应用程序                            | AccessReview.ReadWrite.All |
 
-登录用户还必须具有允许其创建访问评审的目录角色。  有关详细信息，请参阅访问评审的角色 [和权限要求](../resources/accessreviewsv2-root.md)。
+登录用户还必须具有允许其创建访问评审的目录角色。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-root.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,20 +51,20 @@ POST /identityGovernance/accessReviews/definitions
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
 | displayName | String | 访问评审系列的名称。 必需。|
-| descriptionForAdmins | string | 提供给管理员的审阅上下文。 必需。 |
+| descriptionForAdmins | string | 提供给管理员评价的上下文。 必需。 |
   descriptionForReviewers | string | 提供给审阅者的审阅上下文。 必需。 |
-| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中审阅的用户范围。 请参阅  [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 必需。| 
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组审阅，这将确定将审阅哪些组的范围。 请参阅 [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 | 
+| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中查看的用户范围。 请参阅  [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 必需。| 
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 | 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
-| 审阅者 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评价是自 (审阅用户自己的访问权限) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (审阅用户自己的访问权限或) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `201, Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201, Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 
-这是一个使用特定用户创建访问评审系列的示例，该用户的用户对象 ID 为 7eae4444-d425-48b2-adf2-3c777f6256f3，作为审阅者。 审阅将审阅特定组的所有成员，其组对象 ID 为 b7a059cb-038a-4802-8fc9-b9d1ed0c4444。 每周重复一次。
+这是一个使用特定用户创建访问评审系列的示例，该用户对象 ID 为 7eae4444-d425-48b2-adf2-3c777f6256f3 作为审阅者。 审阅将审阅特定组的所有成员，其组对象 ID 为 b7a059cb-038a-4802-8fc9-b9d1ed0c4444。 它每周重复一次。
 
 ### <a name="request"></a>请求
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。
@@ -136,7 +136,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

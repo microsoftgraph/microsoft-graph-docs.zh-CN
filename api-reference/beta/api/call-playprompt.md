@@ -1,18 +1,18 @@
 ---
-title: 调用： playPrompt
+title: call： playPrompt
 description: 在呼叫中播放提示。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: adf46f91bba84940e7ae7632d7e6ae804be9b1e2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b6bfd7aa2cf7392a4abd16b339d31f58f9e64aff
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959625"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047642"
 ---
-# <a name="call-playprompt"></a>调用： playPrompt
+# <a name="call-playprompt"></a>call： playPrompt
 
 命名空间：microsoft.graph
 
@@ -20,10 +20,10 @@ ms.locfileid: "48959625"
 
 在呼叫中播放提示。
 
-有关如何处理操作的详细信息，请参阅 [commsOperation](../resources/commsoperation.md)
+若要详细了解如何处理操作，请参阅 [commsOperation](../resources/commsoperation.md)
 
 > [!Note]
-> 仅使用 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的 [调用](../resources/call.md)支持 **playPrompt** 操作。
+> **playPrompt** 操作仅支持 [通过](../resources/call.md) [serviceHostedMediaConfig 启动的呼叫](../resources/servicehostedmediaconfig.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,12 +53,12 @@ POST /communications/calls/{id}/playPrompt
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[MediaPrompt](../resources/mediaprompt.md) 集合| 要播放的提示。 支持的最大 mediaPrompt 集合大小为20。|
-|loop|Boolean| 循环值。 如果为 True，则表示无限循环。 默认值为 false。 |
-|适用|String|唯一的客户端上下文字符串。 最多可以有256个字符。|
+|prompts|[MediaPrompt](../resources/mediaprompt.md) 集合| 要播放的提示。 支持的最大 mediaPrompt 集合大小为 20。|
+|loop|布尔值| 循环值。 True 表示无限循环。 默认值为 false。 |
+|clientContext|String|唯一的客户端上下文字符串。 最多可包含 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [playPromptOperation](../resources/playpromptoperation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [playPromptOperation](../resources/playpromptoperation.md) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -114,7 +114,7 @@ Content-Length: 166
 ##### <a name="response"></a>响应
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -134,9 +134,9 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 ```
 
-##### <a name="notification---operation-completed"></a>通知-操作已完成
+##### <a name="notification---operation-completed"></a>通知 - 操作已完成
 
- >**注意：** 如果发生无限循环，则不会发送此通知。
+ >**注意：** 如果发生无限循环，则不发送此通知。
  
 ```http
 POST https://bot.contoso.com/api/calls

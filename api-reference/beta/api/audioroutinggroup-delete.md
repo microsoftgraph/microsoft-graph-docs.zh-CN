@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 606bdef66029584922d216c9e6c643ec2bc81496
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: de1ac6aa2a296cf95fddb33c075f52ce57da0d81
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961610"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048020"
 ---
 # <a name="delete-audio-routing-group"></a>删除音频路由组
 
@@ -27,7 +27,7 @@ ms.locfileid: "48961610"
 | :-------------- | :------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | JoinGroupCalls Calls.InitiateGroupCalls。所有 |
+| 应用程序     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGr
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

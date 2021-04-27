@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9c4aadfee6674e0d363f2633c4e064ab72843551
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f4f74612ad071baae510d86c1e597bca0094c59f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947048"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047138"
 ---
 # <a name="update-connectorgroups"></a>更新 connectorGroups
 
@@ -91,7 +91,7 @@ Content-length: 99
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

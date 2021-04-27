@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b86b8e74c933dfd4479ab0ac96368eafed43821e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 476c827474026914a7839947d7a88a9c10b8a917
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960474"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047817"
 ---
 # <a name="update-bookingcustomer"></a>更新 bookingcustomer
 
@@ -18,13 +18,13 @@ ms.locfileid: "48960474"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [bookingCustomer](../resources/bookingcustomer.md) 对象的属性。
+更新 [bookingCustomer 对象](../resources/bookingcustomer.md) 的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | BookingsAppointment，全部，全部登记，全部，预订。 All   |
+|委派（工作或学校帐户） | BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -47,7 +47,7 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 |emailAddress|String|客户的 SMTP 地址。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [bookingCustomer](../resources/bookingcustomer.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新 [的 bookingCustomer](../resources/bookingcustomer.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -85,7 +85,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

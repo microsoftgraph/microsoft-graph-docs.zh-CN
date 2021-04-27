@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b595fd3cfc45faa5c52e5407d1128ec06e494844
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 82046ae81e2d068713fe6641b84491d5cd17c8f7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942963"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048251"
 ---
 # <a name="list-scopedrolemembers"></a>列出 scopedRoleMembers
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ed1a68742562cdbb7df252d2167a0e7c33ec85ac
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 79d430f7ed898795a8fec07280b5bb30d9400af8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962383"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048188"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -65,7 +65,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 | Microsoft Defender 高级威胁防护 | Microsoft Defender ATP |
 | Office 365 |  目前尚不支持。 |
 
-若要返回其他属性，使用 OData `$select` 查询参数指定你想要的一组 **alert** 属性。  例如，若要返回 **assignedTo** 、 **category** 和 **severity** 属性，向查询添加以下项：`$select=assignedTo,category,severity`。
+若要返回其他属性，使用 OData `$select` 查询参数指定你想要的一组 **alert** 属性。  例如，若要返回 **assignedTo**、**category** 和 **severity** 属性，向查询添加以下项：`$select=assignedTo,category,severity`。
 
 > **注意：**`$top` OData 查询参数具有 1000 个警报的限制。 建议你在第一个 GET 查询中仅包括 `$top`，而不包括 `$skip`。 可使用 `@odata.nextLink` 进行分页。 如果需要使用 `$skip`，它具有 500 个警报的限制。 例如，`/security/alerts?$top=10&$skip=500` 将返回 `200 OK` 响应代码，但 `/security/alerts?$top=10&$skip=501` 将返回 `400 Bad Request` 响应代码。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
@@ -121,7 +121,7 @@ GET https://graph.microsoft.com/beta/security/alerts
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

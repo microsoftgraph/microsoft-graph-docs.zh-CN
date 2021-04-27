@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 92b794270c0912f1320f8bb2b5dcf47d1f976f5e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 96c574b688958b48a90074e4d7b830eba0501677
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942892"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048210"
 ---
 # <a name="get-agreement"></a>获取协议
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{i
 
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

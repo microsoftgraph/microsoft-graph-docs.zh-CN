@@ -1,16 +1,16 @@
 ---
 title: 获取身份验证操作
-description: 检索操作对象的属性和关系。
+description: 检索 operation 对象的属性和关系。
 localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 800eb549222fda99592701ba28a85021289fee95
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4222931f4a3ee05f403291d5e762b67a9731a498
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438440"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047957"
 ---
 # <a name="get-authentication-operation"></a>获取身份验证操作
 
@@ -18,26 +18,26 @@ ms.locfileid: "50438440"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索操作 [对象的属性和](../resources/operation.md) 关系。 目前，这些操作是通过使用重置密码方法启动密码 [重置生成的](passwordauthenticationmethod-resetpassword.md) 。 操作对象告知调用方该密码重置操作的当前状态。 可能状态包括：
+检索 operation 对象的属性 [和](../resources/operation.md) 关系。 目前，这些操作是通过使用 reset password 方法启动密码 [重置生成的](passwordauthenticationmethod-resetpassword.md) 。 operation 对象告知调用方密码重置操作的当前状态。 可能状态包括：
 
 * NotStarted
 * 正在运行
 * Succeeded
 * 已失败
 
-`Succeeded` 且 `Failed` 为终端状态。
+`Succeeded``Failed`和 是终端状态。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 自操作权限 (权限从最低到最特权)  | 对他人 (权限从最低到最特权) |
+| 权限类型                        | 自行操作的权限 (权限从最低权限级别)  | 对他人操作的权限 (权限从最低到最多特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite、UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| Application                            | 不支持。 | 不支持。 |
+| 应用程序                            | 不支持。 | 不支持。 |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 全局读取者
@@ -68,7 +68,7 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` 请求[](../resources/operation.md)的操作对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和[](../resources/operation.md)请求的操作对象。
 
 ## <a name="examples"></a>示例
 
@@ -108,7 +108,7 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

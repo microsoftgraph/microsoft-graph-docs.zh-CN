@@ -1,16 +1,16 @@
 ---
 title: 获取成员
-description: 使用此 API 获取管理单元 (或组) 特定成员。
+description: 使用此 API 获取管理 (或) 组的特定成员。
 author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 006db8bd6e87cd9f0509ed65cd9acf343f2f429d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2cd676d8509a082cabbf896ff68300488f6dc352
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438879"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048272"
 ---
 # <a name="get-a-member"></a>获取成员
 
@@ -18,9 +18,9 @@ ms.locfileid: "50438879"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 获取管理单元 (或组) 特定成员。
+使用此 API 获取管理 (或) 组的特定成员。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -28,7 +28,7 @@ ms.locfileid: "50438879"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +45,7 @@ GET /administrativeUnits/{id}/members/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码[](../resources/user.md)和用户或[组](../resources/group.md)对象。
+如果成功，此方法在响应正文中返回 响应代码和 user 或 `200 OK` [group](../resources/group.md)对象。 [](../resources/user.md)
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ##### <a name="response"></a>响应
-下面是一个重新响应的示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个重发的示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK

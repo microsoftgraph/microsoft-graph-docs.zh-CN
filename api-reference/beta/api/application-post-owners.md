@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ee3483bec89eef7651ce415fb9506e27b400b60f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 95642607e2a43797683f494807fb47a147216c28
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129081"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048076"
 ---
 # <a name="add-owner"></a>添加所有者
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129081"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 通过发布到所有者集合将所有者添加到应用程序。
+通过发布到 owners 集合，使用此 API 将所有者添加到应用程序。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50129081"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Application.ReadWrite.OwnedBy 和 Directory.Read.All、Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | Application.ReadWrite.OwnedBy 和 Directory.Read.All、Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -88,7 +88,7 @@ Content-length: 30
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

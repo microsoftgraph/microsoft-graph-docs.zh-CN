@@ -1,16 +1,16 @@
 ---
 title: 列出约会
-description: 获取指定 bookingbusiness 的 bookingAppointment 对象的列表。
+description: 获取指定 bookingbusiness 的 bookingAppointment 对象列表。
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 369984eff1f23ae79733c53cb5233bd2d1044836
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b2543c08dd94109174d9945afec5b6687159db7e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960868"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047915"
 ---
 # <a name="list-appointments"></a>列出约会
 
@@ -18,13 +18,13 @@ ms.locfileid: "48960868"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取指定[bookingbusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象的列表。
+获取指定的 [bookingbusiness 的 bookingAppointment](../resources/bookingappointment.md) [对象列表](../resources/bookingbusiness.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment、全部、预订、全部、登记、全部、预订。所有   |
+|委派（工作或学校帐户） |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -36,7 +36,7 @@ GET /bookingBusinesses/{id}/appointments
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-若要在日期范围内（而不是）获取预订业务的约会集，请在 `$filter` 该日期范围内 [获取 calendarView](bookingbusiness-list-calendarview.md) 。
+若要获取日期范围内 Bookings 业务（而不是 ）的约会集，请获取该 `$filter` 日期范围的[calendarView。](bookingbusiness-list-calendarview.md)
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -46,7 +46,7 @@ GET /bookingBusinesses/{id}/appointments
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

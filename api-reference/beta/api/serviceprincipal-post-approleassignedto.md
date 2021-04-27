@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 82b037e9a5dfd578d9df473873a551383d9546bd
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 3ac4916d819a4a50e8b2c1c4370ce1f017d69142
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468672"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049000"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>为服务主体授予 appRoleAssignment
 
@@ -108,7 +108,7 @@ Content-Type: application/json
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6556ef064287b7378e5929983ebb951571c7e8a0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d8b67543ca5a943bfe595c0fd17cd196ad68c82c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437784"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047565"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>创建 certificateBasedAuthConfiguration
 
@@ -23,7 +23,7 @@ ms.locfileid: "50437784"
 > [!NOTE]
 > 只能创建 **certificateBasedAuthConfiguration** 的单个实例 (集合只能有一个成员) 。 它始终具有值为"29728ade-6ae4-4ee9-9103-412912537da5"的固定 ID。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "50437784"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application    | Organization.ReadWrite.All |
+| 应用程序    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,11 +54,11 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) 集合 |创建受信任证书链的证书颁发机构的集合。  集合的每个成员都必须包含 **证书** 和 **isRootAuthority** 属性。 |
+|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) 集合 |创建受信任证书链的证书颁发机构的集合。  集合的每个成员都必须包含 **证书和** **isRootAuthority** 属性。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

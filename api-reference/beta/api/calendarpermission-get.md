@@ -5,18 +5,18 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b2cc187eea605ef1b5bcbdb257705cd1b729756b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e6286ec91e3ef75cf9ae5d35992a8794392d2ede
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959850"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047684"
 ---
 # <a name="get-calendarpermission"></a>获取 calendarPermission
 
 命名空间：microsoft.graph
 
-获取已共享的用户或组日历的指定权限对象。
+获取已共享的用户或组日历的指定 permissions 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +41,7 @@ GET /users/{id}/calendar/calendarPermissions/{id}
 GET /groups/{id}/calendar/calendarPermissions/{id}
 ```
 
-获取包含标识的事件的用户日历的指定权限：
+获取包含已标识事件的用户日历的指定权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
@@ -63,7 +63,7 @@ GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [calendarPermission](../resources/calendarpermission.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [calendarPermission](../resources/calendarpermission.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: List connectorGroups
-description: 检索连接器组对象的列表。
+description: 检索 connectorgroup 对象的列表。
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7d8ad142840abba411fb6f2c3b9f0f49c55acd56
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bfb1fa038bf187c4932693d6b4362d3c61e2516e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130099"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047166"
 ---
 # <a name="list-connectorgroups"></a>List connectorGroups
 
@@ -27,7 +27,7 @@ ms.locfileid: "50130099"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 connectorGroup](../resources/connectorgroup.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

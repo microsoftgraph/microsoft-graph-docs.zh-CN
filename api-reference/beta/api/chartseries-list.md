@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b966baf4bae61dcd443ea02c36374faec1d45afb
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 1fedaa5f55c2e8f4bbcddffe624659ecdbe36c27
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574389"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047341"
 ---
 # <a name="list-chartseriescollection"></a>列出 ChartSeriesCollection
 
@@ -48,7 +48,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/ser
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 workbookChartSeries](../resources/workbookchartseries.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [workbookChartSeries](../resources/workbookchartseries.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

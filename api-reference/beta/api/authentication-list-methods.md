@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 37312a11458299505817be1bb18e3ddb9f620a08
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 05606726178d2c1d2a2bb308f941810363e357c6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760040"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047999"
 ---
 # <a name="list-methods"></a>List 方法
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/me/authentication/methods
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

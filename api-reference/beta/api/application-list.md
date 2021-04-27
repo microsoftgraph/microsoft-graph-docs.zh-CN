@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b15bfeb1e024de6fe704326080e30e48312d7f72
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5d1e3f4927241159fa1e351ea6e08c6427e7ef58
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129106"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048104"
 ---
 # <a name="list-applications"></a>列出应用程序
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/applications
 #### <a name="response"></a>响应
 
 下面是一个响应示例。
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -172,7 +172,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -217,7 +217,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

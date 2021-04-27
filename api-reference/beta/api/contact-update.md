@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7022203e1e3ca4867ba1c1b026f450d21d94b591
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3108edc3db30865cfd9541c053dbe1ea5105dd63
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472522"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047110"
 ---
 # <a name="update-contact"></a>更新联系人
 
@@ -77,23 +77,23 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |officeLocation|String|联系人的办公室位置。|
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
-|phones |[phone](../resources/phone.md) collection |与联系人关联的电话号码，例如住宅电话、移动电话和业务电话。 |
-|postalAddresses |[physicalAddress](../resources/physicaladdress.md) 集合 |与联系人关联的地址，例如，住宅地址和业务地址。 |
+|phones |[phone](../resources/phone.md) collection |电话联系人关联的电话号码，例如住宅电话、移动电话和业务电话。 |
+|postalAddresses |[physicalAddress](../resources/physicaladdress.md) 集合 |与联系人关联的地址，例如，住宅地址和公司地址。 |
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
 |title|String|联系人的职位。|
 |websites |[website](../resources/website.md) collection|与联系人关联的网站。 |
-|aryAnniversary |日期 |联系人的周年日。 |
+|将anniversary |日期 |联系人的周年日。 |
 |yomiCompanyName|String|联系人的注音日文公司名称。此属性是可选的。|
 |yomiGivenName|String|联系人的注音日文名字。此属性是可选的。|
 |yomiSurname|String|联系人的注音日文姓氏。此属性是可选的。|
 
-由于 **联系人** 资源 [支持](/graph/extensibility-overview)扩展，因此可以使用该操作在现有联系人实例中的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
+由于 **联系人** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作在现有联系人实例的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码[](../resources/contact.md)和更新的联系人对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应[](../resources/contact.md)代码和更新的 contact 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 以下示例更新指定联系人的个人电子邮件地址。
@@ -142,7 +142,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

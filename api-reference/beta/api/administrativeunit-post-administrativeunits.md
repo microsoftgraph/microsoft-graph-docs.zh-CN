@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6915c434afcbb2b862912c86e3a3eb9d64550fc7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 898b8a2c63310743a6c2fcfec3c044d96d5b4f57
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438797"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048237"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 
@@ -18,8 +18,8 @@ ms.locfileid: "50438797"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 创建新的[administrativeUnit。](../resources/administrativeunit.md)
-## <a name="permissions"></a>Permissions
+使用此 API 创建新的 [administrativeUnit](../resources/administrativeunit.md)。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -27,7 +27,7 @@ ms.locfileid: "50438797"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|应用程序 | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,11 +44,11 @@ POST /administrativeUnits
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。
 
-由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用该操作，并创建管理单元时将包含您自己的数据的 `POST` 自定义属性添加到管理单元。
+由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作，并在创建时将包含自己的数据的自定义属性 `POST` 添加到管理单元。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [administrativeUnit](../resources/administrativeunit.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -95,7 +95,7 @@ Content-length: 150
 ### <a name="response"></a>响应
 
 下面展示了示例响应。 
-> 注意：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

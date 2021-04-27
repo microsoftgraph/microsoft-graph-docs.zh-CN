@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 60d5455493bcfce5bf2794449f67335e00af1f3e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4de731bf72ebd91ec39132c6bd371f2efb5468a2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959976"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047719"
 ---
 # <a name="delete-calendargroup"></a>删除 calendarGroup
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/me/calendarGroups/{id}
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

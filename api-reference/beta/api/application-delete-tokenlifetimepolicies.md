@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: efe54936a33c468590bfb31d046b116544a373a5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8ba7813c475ee42fabafab2c9e5d42f29649ddce
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129235"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048139"
 ---
 # <a name="remove-tokenlifetimepolicy"></a>删除 tokenLifetimePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129235"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从应用程序或[](../resources/application.md)[servicePrincipal](../resources/servicePrincipal.md)中删除[tokenLifetimePolicy。](../resources/tokenlifetimepolicy.md)
+从应用程序或[servicePrincipal](../resources/servicePrincipal.md)[](../resources/application.md)中删除[tokenLifetimePolicy。](../resources/tokenlifetimepolicy.md)
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "50129235"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
+| 应用程序                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -91,7 +91,7 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

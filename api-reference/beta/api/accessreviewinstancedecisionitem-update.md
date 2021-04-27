@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 913c53927ecc8e436c8d3c63e73d827af5eb4271
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: a104d963c3d5bbad3cff11b998f9a9a2240d08b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507196"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048377"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>更新 accessReviewInstanceDecisionItem
 
@@ -47,8 +47,8 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 
 | 属性     | 类型       | 说明 |
 |:-------------|:------------|:------------|
-| decision  | 字符串 | 被审阅实体的访问决策。 可能的值是 `Approve` `Deny` `NotReviewed` `DontKnow` ：。 必填。  |
-|  justification | 字符串 | 提供给管理员评价的上下文。 如果 accessReviewScheduleDefinition 上的 justificationRequiredOnApproval 为 True，则必需。  |
+| decision  | String | 被审阅实体的访问决策。 可能的值是 `Approve` `Deny` `NotReviewed` `DontKnow` ：。 必需。  |
+|  justification | String | 提供给管理员评价的上下文。 如果 accessReviewScheduleDefinition 上的 justificationRequiredOnApproval 为 True，则必需。  |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 响应 `204, NoContent` 代码，无响应正文。
@@ -98,7 +98,7 @@ Content-length: 730
 
 
 ### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

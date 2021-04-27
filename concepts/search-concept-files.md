@@ -1,24 +1,23 @@
 ---
-ms.author: yiwenwang
-title: 使用 Microsoft Graph 中的 Microsoft 搜索 API 搜索文件
-description: 可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 SharePoint 中的文件。
+title: 使用 Microsoft 搜索 API 在 Microsoft Graph搜索文件
+description: 可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 SharePoint。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: f8da8b173762ce3630466ffe08de7b459bfd6f56
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: dc9d27255ca5306abf85462ca8e5715fe2345dac
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432681"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048650"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 搜索 OneDrive 和 SharePoint 中的内容
+# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 搜索 OneDrive 和 SharePoint
 
-使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 SharePoint 中的内容：文件、文件夹、列表、列表项或网站。
+使用 Microsoft 搜索 API 搜索存储在OneDrive或SharePoint：文件、文件夹、列表、列表项或网站中的内容。
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-搜索 API 允许你通过指定 [searchRequest](/graph/api/resources/searchRequest)上的 **entityTypes** 属性，确定在 OneDrive 或 SharePoint 中检索的内容类型的范围。 本文介绍一些示例。
+搜索 API 允许你通过指定 [searchRequest](/graph/api/resources/searchRequest)的 **entityTypes** 属性OneDrive或SharePoint中检索的内容类型。 本文介绍一些示例。
 
 ## <a name="example-1-search-files"></a>示例 1：搜索文件
 
@@ -244,9 +243,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>示例 4：在 OneDrive 和 SharePoint 中搜索所有内容
+## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>示例 4：搜索 OneDrive 和 SharePoint
 
-此示例查询已登录用户具有读取访问权限的 OneDrive 和 SharePoint 网站中所有内容。 响应中的资源属性返回作为 **driveItem** 对象的文件和文件夹的匹配项、作为容器的匹配项 (SharePoint 将) 作为列表列出，所有其他匹配项作为 **listItem** 列出。
+此示例查询登录用户OneDrive SharePoint网站中的内容。 响应中的 **resource** 属性返回作为 **driveItem** 对象的文件和文件夹的匹配项、作为容器的匹配项 (SharePoint将) 作为列表列出，所有其他匹配项作为 **listItem** 列出。
 
 ### <a name="request"></a>请求
 
@@ -350,21 +349,21 @@ Content-type: application/json
 
 ## <a name="example-5-use-filters-in-search-queries"></a>示例 5：在搜索查询中使用筛选器
 
-可以在 OneDrive 和 SharePoint 的查询搜索词中使用 KQL。 例如：
+您可以在查询搜索词中为 OneDrive 和 SharePoint。 例如：
 
-- `"query": "contoso filetype:docx OR filetype:doc"` 将查询范围缩小到 Word 文档。
-- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` 将查询范围缩小到网站中的特定文件夹。
-- `"query": "contoso AND isDocument=true"` 将查询的范围缩小为仅返回文档。 不会返回 (文件夹、文档) 的任何容器。
-- `"query": "contoso contentclass:STS_List_Events"` 将查询范围设定为存储在 SharePoint 中的日历事件。
-- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` 将查询的范围设定为按日期筛选 SharePoint 和 OneDrive 项
+- `"query": "contoso filetype:docx OR filetype:doc"` 将查询范围确定为 Word 文档。
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` 将查询的范围确定为网站中的特定文件夹。
+- `"query": "contoso AND isDocument=true"` 将查询的范围确定为仅返回文档。 不会返回 (文件夹、文档) 的任何容器。
+- `"query": "contoso contentclass:STS_List_Events"`将查询范围确定为存储在日历SharePoint。
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"`将查询的范围确定为按SharePoint OneDrive筛选项目
 
 为了有效，属性限制应在条件中指定有效的可查询托管属性名称。
 
 ## <a name="example-6-specify-select-properties"></a>示例 6：指定选择属性
 
-可以在响应中指定希望返回的字段，作为[响应中 searchHit](/graph/api/resources/searchhit)对象的字段子属性的一部分。  这是一种通过线路修整响应或请求一些不是开箱即用架构一部分的特定属性的方法。
+可以在响应中指定希望返回的字段，作为 [响应中 searchHit](/graph/api/resources/searchhit)对象的 **fields** 子属性的一部分。 这是一种通过线路减少响应或请求一些不是开箱即用架构一部分的特定属性的方法。
 
-请注意，属性选择仅适用于 **listItem，** 因为这是 Microsoft Graph 中唯一支持自定义属性的 SharePoint 实体。
+请注意，属性选择仅适用于 **listItem，** 因为这是 Microsoft SharePoint中唯一Graph自定义属性的实体。
 
 若要检索 **driveItem** 的自定义属性，请改为查询 **listItem。**
 
@@ -441,7 +440,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-搜索驱动器 **时**，需要在 **queryString** 中包含文档库名称中包含的术语。 不支持 `*` 查询，并且不会返回所有可用驱动器。
+在搜索 **驱动器** 时，需要在 **queryString** 中包含文档库名称中的术语。 不支持 `*` 查询，并且不会返回所有可用驱动器。
 
 ## <a name="next-steps"></a>后续步骤
 

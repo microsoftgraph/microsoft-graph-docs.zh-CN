@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: be973adb399d60846282acd55f9d44d5968af7ce
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e6c6d3bf4706dcac398cef182cf692aee511f07b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439707"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048629"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>列出 accessPackageAssignmentPolicies
 
@@ -18,9 +18,9 @@ ms.locfileid: "50439707"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索 [accessPackageAssignmentPolicy 对象](../resources/accesspackageassignmentpolicy.md) 的列表。 如果委派的用户是目录角色，则生成的列表包括调用方有权访问的所有目录和访问包读取的所有分配策略。  如果委派的用户是访问包管理器或目录所有者，则他们应改为检索他们可以通过列表 [accessPackages](accesspackage-list.md) 读取的访问包的策略，包括为 `$expand=accessPackageAssignmentPolicies` 查询参数。
+在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索 [accessPackageAssignmentPolicy 对象](../resources/accesspackageassignmentpolicy.md) 的列表。 如果委派用户位于目录角色中，则结果列表包括调用方有权访问的所有目录和访问包中读取的所有分配策略。  如果委派的用户是访问包管理器或目录所有者，他们应改为检索他们可以通过列表 [accessPackages](accesspackage-list.md) 读取的访问包的策略，方法为包括 `$expand=accessPackageAssignmentPolicies` 作为查询参数。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439707"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,13 +40,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索具有指定权限的访问包分配显示名称，请包括在 `$filter=displayName eq 'Employee sales support'` 查询中。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索具有指定权限的访问包分配策略显示名称，请包含 `$filter=displayName eq 'Employee sales support'` 到查询中。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

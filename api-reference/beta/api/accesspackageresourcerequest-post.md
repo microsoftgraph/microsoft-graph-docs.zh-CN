@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 82b84110f7936ea8a5bfef7e7d479ecc6c4aaeea
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e0d85470f8217887364d8c37e760945205edec51
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439464"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048524"
 ---
 # <a name="create-accesspackageresourcerequest"></a>创建 accessPackageResourceRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "50439464"
 
 创建新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象，以请求向访问包目录添加资源，或者从目录中删除资源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439464"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,18 +49,18 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 在请求正文中，提供 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象的 JSON 表示形式。 在 `accessPackageResource` 请求中包括与 [accessPackageResource](../resources/accesspackageresource.md) 对象的关系。
 
-若要将 Azure AD 组作为资源添加到目录，请设置 **catalogId** 作为目录的 **ID、requestType** 和表示 `AdminAdd` `accessPackageResource` 资源的 ID。 中的 **originSystem** 属性的值 `accessPackageResource` 应为 `AadGroup` **，originId** 的值是组的标识符。
+若要将 Azure AD 组作为资源添加到目录，将 **catalogId** 设置为目录的 ID，将 **requestType** 设置为 ，将 `AdminAdd` 设置为 表示 `accessPackageResource` 资源的 。 内的 **originSystem** 属性的值 `accessPackageResource` 应为 `AadGroup` **，originId** 的值是组的标识符。
 
-若要从目录中删除 Azure AD 应用，请设置 **catalogId** 为目录 **ID、requestType** 和要删除 `AdminRemove` `accessPackageResource` 的资源对象。  可以使用列表 [accessPackageResources 检索资源对象](accesspackagecatalog-list-accesspackageresources.md)。
+若要从目录中删除 Azure AD 应用，请设置 **catalogId** 为目录 ID， **将 requestType** 设置为 ，将 资源对象设置为 要 `AdminRemove` `accessPackageResource` 删除的资源对象。  资源对象可以使用列表 [accessPackageResources 检索](accesspackagecatalog-list-accesspackageresources.md)。
 
 若要为多地理位置 Sharepoint Online 资源分配地理位置环境，请包含对象中的 **accessPackageResourceEnvironment** `accessPackageResource` 关系。 可通过两种方式完成此操作：
-+ 使用 `@odata.bind` 批注将 `id` 对象 `accessPackageResourceEnvironment` 分配给 `accessPackageResourceEnvironment` 对象。
-+ 指定 `originId` 对象 `accessPackageResourceEnvironment` 中的参数 `accessPackageResourceEnvironment` 。
++ 使用 `@odata.bind` annotation 将 的 `id` `accessPackageResourceEnvironment` 分配给 `accessPackageResourceEnvironment` 对象。
++ 指定 `originId` 对象中的 `accessPackageResourceEnvironment` 参数 `accessPackageResourceEnvironment` 。
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `201 Created` 代码和新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -117,7 +117,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -144,7 +144,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 本示例中， `@odata.bind` 批注用于将对象 `id` `accessPackageResourceEnvironment` 分配给 `accessPackageResourceEnvironment` 对象。
+下面展示了示例请求。 本示例中， `@odata.bind` 批注用于将 分配给 `id` `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` 对象。
 
 
 
@@ -222,7 +222,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 本示例在对象中指定 `accessPackageResourceEnvironment` 参数 `accessPackageResourceEnvironment` 。
+下面展示了示例请求。 本示例在对象中 `accessPackageResourceEnvironment` 指定 的参数 `accessPackageResourceEnvironment` 。
 
 
 

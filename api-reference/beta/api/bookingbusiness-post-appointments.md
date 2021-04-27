@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d47d280320886501d0846b92d2e5ceb2ab3d8e87
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 02ad305da8c4d42e6d63e8d511380a707c806b2a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960717"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047887"
 ---
 # <a name="create-bookingappointment"></a>创建 bookingAppointment
 
@@ -18,13 +18,13 @@ ms.locfileid: "48960717"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为指定的[bookingbusiness](../resources/bookingbusiness.md)创建新的[bookingAppointment](../resources/bookingappointment.md) 。
+为指定的[bookingbusiness 创建新的 bookingAppointment。](../resources/bookingappointment.md) [](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment，全部，全部登记，全部，预订。 All   |
+|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -44,11 +44,11 @@ POST /bookingBusinesses/{id}/appointments
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。
+如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面展示了示例请求。 此约会不涉及预订特定的教职员工成员。
+下面展示了示例请求。 此约会不涉及预订特定员工。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -186,7 +186,7 @@ Content-type: application/json
 
 在请求正文中，提供 [bookingAppointment](../resources/bookingappointment.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2ff6e58bf42dd6e78282a9f12d16b8025077c526
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 77216d297c108871ef8be7543e10d7f263d53d34
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129147"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048097"
 ---
 # <a name="list-assigned-tokenlifetimepolicy"></a>列出分配的 tokenLifetimePolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "50129147"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
+| 应用程序                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /servicePrincipals/{id}/tokenLifetimePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [tokenLifetimePolicy](../resources/tokenLifetimePolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [tokenLifetimePolicy](../resources/tokenLifetimePolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9d3a8c243b6e2789fada38dec2643f3cd9bd1bd9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 29e83c3254cfa4931f3faeb869d6312335565019
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439562"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048566"
 ---
 # <a name="list-accesspackageresourceroles"></a>列出 accessPackageResourceRoles
 
@@ -18,9 +18,9 @@ ms.locfileid: "50439562"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 accessPackageCatalog 中检索[accessPackageResourceResource](../resources/accesspackageresource.md)的[accessPackageResourceRole 对象列表](../resources/accesspackagecatalog.md)。 [](../resources/accesspackageresourcerole.md)  然后，呼叫者可以使用此角色列表来选择角色，随后创建 [accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md)时需要此角色。
+在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索[accessPackageResource 的 accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象列表。 [](../resources/accesspackageresource.md)  然后，调用方可以使用此角色列表来选择角色，随后创建 [accessPackageResourceRoleScope 时需要此角色](accesspackage-post-accesspackageresourcerolescopes.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439562"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

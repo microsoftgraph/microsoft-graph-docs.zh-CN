@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 09fc4cf0ae88e9046de57ddcbdfdf195c7cb89ec
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 5575c4ae9267a968c7381ba4a89b66f9e0e7698d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607501"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047537"
 ---
 # <a name="add-tab-to-channel"></a>将选项卡添加到频道
 
@@ -25,9 +25,9 @@ ms.locfileid: "49607501"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsTab、TeamsTab、ReadWriteForTeam、all、、all、All 和 All。 |
+|委派（工作或学校帐户） | TeamsTab.Create、TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-| 应用程序   | TeamsTab *、TeamsTab、TeamsTab、、Group、all、all、all、all、all 和 all。 |
+| 应用程序   | TeamsTab.Create.Group*、TeamsTab.Create、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -104,7 +104,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [配置 buit 选项卡类型](/graph/teams-configuring-builtin-tabs)
+- [配置双标签选项卡类型](/graph/teams-configuring-builtin-tabs)
 - [将应用添加到团队](team-post-installedapps.md)
 
 

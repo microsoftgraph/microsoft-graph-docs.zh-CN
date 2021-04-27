@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5ea57a36b24b8158f2327db01b1ee5b42a05fd92
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: ed91c8017780ebb1aa1dbdbbfe8430b5ab4b44c9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721465"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048895"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -143,7 +143,7 @@ GET https://graph.microsoft.com/beta/users/delta
 
 以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

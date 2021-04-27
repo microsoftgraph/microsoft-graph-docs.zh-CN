@@ -5,12 +5,12 @@ author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2020d0fe097be2a02c5b0fba4c47a0d700ca3ae
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 84509aff2efaf1c528c52b9e73744d6fada0ebb6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775883"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047299"
 ---
 # <a name="delete-tab-from-chat"></a>从聊天中删除选项卡
 
@@ -29,7 +29,7 @@ ms.locfileid: "50775883"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
+|应用程序 | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f29
 ---
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

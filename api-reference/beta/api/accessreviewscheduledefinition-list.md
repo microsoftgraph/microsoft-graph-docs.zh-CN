@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 983ecadb7bf60258ee531ad252c4c67325e97802
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f3624cb364513f9015ac0dad3f3bbb978718e930
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439042"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048349"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>列出 accessReviewScheduleDefinition
 
@@ -18,22 +18,22 @@ ms.locfileid: "50439042"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 对于创建的每个访问评审系列，将返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括所有其嵌套属性。 这不包括关联的 accessReviewInstances。
+检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 对于创建的每个访问评审系列，将返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括它们的所有嵌套属性。 这不包括关联的 accessReviewInstances。
 
 >[!NOTE]
->如果返回了许多 **accessReviewScheduleDefinitions，** 为了提高效率并避免超时，请检索页面中的 结果集，方法为在请求中同时包括页面大小最多为 100 的 $top 查询参数和 $skip=0 查询参数。 当结果集多个页面时，Microsoft Graph 在响应中返回包含下一页结果 URL 的 @odata.nextLink 属性的页面。 如果存在该属性，请在每个响应中继续使用 @odata.nextLink URL 提出其他请求，直到返回所有结果，如应用中分页 Microsoft Graph 数据中所述。
+>如果返回了许多 **accessReviewScheduleDefinitions，** 为了提高效率并避免超时，请检索页面中的 结果集，方法包括页面大小最多为 100 的 $top 查询参数和请求中的 $skip=0 查询参数。 当结果集跨多个页面时，Microsoft Graph 在响应中返回包含指向下一页结果的 URL 的 @odata.nextLink 属性的页面。 如果存在该属性，请继续在每个响应中通过 @odata.nextLink URL 提出其他请求，直到返回所有结果，如在应用中分页 Microsoft Graph 数据中所述。
 >
->如果未提供查询参数且结果超过 100 个，Microsoft Graph 将自动对结果进行分页，每页结果为 100 个。
+>如果未提供查询参数且结果超过 100 个，Microsoft Graph将按每页 100 个结果自动对结果分页。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
+|应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
  登录用户还必须具有允许其读取访问评审的目录角色。
 
@@ -49,7 +49,7 @@ GET /identityGovernance/accessReviews/definitions
 不提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象数组。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ---
 
 ### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

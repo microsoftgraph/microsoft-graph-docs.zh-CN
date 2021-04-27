@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4a99ea9698154ff6c89c7832d0ad083e71541ac1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 224b6ffcfbf6b97c0527c498b722226eeee627cb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947412"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047236"
 ---
 # <a name="list-namedlocations"></a>列出 namedLocations
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -202,7 +202,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -296,7 +296,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -372,7 +372,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

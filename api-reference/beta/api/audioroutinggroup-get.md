@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 77097379a969f3b25990e364bb4404347dbfe52e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cdb32816f05e9edd92850830627863fa72759229
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961596"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048013"
 ---
 # <a name="get-audio-routing-group"></a>获取音频路由组
 
@@ -18,7 +18,7 @@ ms.locfileid: "48961596"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [audioRoutingGroup](../resources/audioroutinggroup.md) 对象的属性和关系。
+检索 [audioRoutingGroup 对象的属性和](../resources/audioroutinggroup.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48961596"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | JoinGroupCalls Calls.InitiateGroupCalls。所有 |
+| 应用程序                            | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /communications/calls/{id}/audioRoutingGroups/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [audioRoutingGroup](../resources/audioroutinggroup.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [audioRoutingGroup](../resources/audioroutinggroup.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

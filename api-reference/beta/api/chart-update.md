@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 410300b7339e7d9bc0aa6b5ea0bb437263f42971
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: feb89c9b1cf94c0c1cfeebe3aebec187a5d59406
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574753"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047495"
 ---
 # <a name="update-chart"></a>更新图表
 
@@ -53,7 +53,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新的 [workbookChart](../resources/workbookchart.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [workbookChart](../resources/workbookchart.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -92,7 +92,7 @@ Content-length: 52
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

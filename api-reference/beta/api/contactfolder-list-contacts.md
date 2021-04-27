@@ -1,16 +1,16 @@
 ---
 title: 列出联系人
-description: 获取登录用户的邮箱中的所有联系人 ( ../me/contacts) 或指定的联系人文件夹中。
+description: 从登录用户的邮箱文件夹或指定的联系人文件夹中 (.../me/contacts) 联系人。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 176a7834206944e8da1f9e6c58cdb95cd3021e18
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0cda56fb840d7a09ec5ad36614effe0e5564bc8b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957076"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047082"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957076"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取登录用户的邮箱中的所有联系人 ( ../me/contacts) 或指定的联系人文件夹中。
+从登录用户的邮箱文件夹或指定的联系人文件夹中 (.../me/contacts) 联系人。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

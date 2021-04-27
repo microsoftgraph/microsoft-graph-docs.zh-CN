@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8d18613b1fc59db04ce0f7fdfe6d3937542ed0dd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 20e662e0501091b4482c44450f4223ed5d39a95a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943059"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048405"
 ---
 # <a name="accessreviewinstance-sendreminder"></a>accessReviewInstance：sendReminder
 
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 ---
 
 ### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": false

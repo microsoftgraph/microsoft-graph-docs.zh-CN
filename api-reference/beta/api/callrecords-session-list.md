@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 923aba3d4cdc489ff6c716df2b55f59c82233752
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2b575672befe470a6adfceb2a84ed1d22fe39d58
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472596"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047579"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
@@ -54,7 +54,7 @@ GET /communications/callRecords/{id}/sessions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` 请求[](../resources/callrecords-session.md)的会话对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和[](../resources/callrecords-session.md)请求的会话对象。
 
 ## <a name="examples"></a>示例
 
@@ -62,7 +62,7 @@ GET /communications/callRecords/{id}/sessions
 
 #### <a name="request"></a>请求
 
-下面是请求获取[callRecord](../resources/callrecords-callrecord.md)的会话列表的示例[](../resources/callrecords-session.md)。
+下面是请求获取[callRecord](../resources/callrecords-callrecord.md)的[会话](../resources/callrecords-session.md)列表的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -176,7 +176,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面是请求获取包含分段的[callRecord](../resources/callrecords-callrecord.md)的[](../resources/callrecords-session.md)会话[列表的示例](../resources/callrecords-segment.md)。
+下面是请求获取包含分段的[callRecord](../resources/callrecords-callrecord.md)的[](../resources/callrecords-session.md)会话[列表的示例。](../resources/callrecords-segment.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -211,7 +211,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$e
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

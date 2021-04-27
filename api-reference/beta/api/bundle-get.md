@@ -5,12 +5,12 @@ description: 获取 driveItems 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8a3d74c5f4b746d6232bc39a9be7e82c5119d497
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b6f1619bbb169a92841d3999c43603860c0038fd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472739"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047789"
 ---
 # <a name="get-bundle"></a>获取捆绑包
 
@@ -37,8 +37,8 @@ GET /drive/bundles/{bundle-id}
 GET /drive/items/{bundle-id}
 ```
 
-由于捆绑包是项，因此可以使用 **项** 集合返回有关捆绑包的元数据。
-您还可以使用 **捆绑包集合** 作为方便，以确保获取捆绑包作为响应。
+由于捆绑包是项，因此可以使用 **items** 集合返回有关捆绑包的元数据。
+您还可以使用 **bundles 集合** 作为方便，以确保收到响应中的捆绑包。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -47,7 +47,7 @@ GET /drive/items/{bundle-id}
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 | if-none-match | eTag。 可选。 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。
 
 ## <a name="request-body"></a>请求正文
@@ -118,11 +118,11 @@ Content-type: application/json
 }
 ```
 
-为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。
 
 ### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>示例 2：在单个调用中获取捆绑包及其子项
 
-您可以使用查询字符串参数将捆绑包的子项包括在检索捆绑包元数据的同一调用 [`expand`](/graph/query-parameters) 中。
+可以使用查询字符串参数在检索捆绑包元数据的同一调用中包括捆绑 [`expand`](/graph/query-parameters) 包的子项。
 
 #### <a name="request"></a>请求
 
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 此调用将返回捆绑包元数据和捆绑包的子项列表。
 如果捆绑包没有子项，它将返回空集合。
 
-如果捆绑包中的子项数大于默认页面大小，则 **返回 children@odata.nextLink** 属性时将返回一个 URL，该 URL 可用于请求捆绑包中的下一页子项。
+如果捆绑包中的子项数量大于默认页面大小 **，children@odata.nextLink** 属性将返回一个 URL，该 URL 可用于请求捆绑包中的下一页子页面。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -176,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。
 
 
 [bundle]: ../resources/bundle.md
@@ -190,7 +190,7 @@ Content-Type: application/json
   "description": "Retrieve metadata about a bundle and its children in OneDrive",
   "keywords": "retrieve,item,bundle,metadata",
   "section": "documentation",
-  "tocPath": "Bundles/Get Bundle Metadata"
+  "tocPath&quot;: &quot;Bundles/Get Bundle Metadata"
 } -->
 
 

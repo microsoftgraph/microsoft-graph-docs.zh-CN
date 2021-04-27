@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e8da8118b6d13405bb8af896b59b46f8553b1508
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b48867981ea38c78729e122256672488b3f194f5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438860"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048279"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -20,9 +20,9 @@ ms.locfileid: "50438860"
 
 检索 [administrativeUnit 对象的属性和](../resources/administrativeunit.md) 关系。
 
-由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此您还可以使用该操作获取 administrativeUnit 实例中的自定义属性 `GET` 和扩展数据。
+由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)，因此您还可以使用 操作获取 administrativeUnit 实例中的自定义属性 `GET` 和 **扩展** 数据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -30,7 +30,7 @@ ms.locfileid: "50438860"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | AdministrativeUnit.Read.All、Directory.Read.All、AdministrativeUnit.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ GET /administrativeUnits/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

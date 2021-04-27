@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 996398e47431ad353e32f0f85a1d50f3f54bd712
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5decfae13c3a8a53c90d94a61ecf0584d1b9da63
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438580"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047978"
 ---
 # <a name="list-phonemethods"></a>列出 phoneMethods
 
@@ -20,17 +20,17 @@ ms.locfileid: "50438580"
 
 检索电话 [身份验证方法对象](../resources/phoneauthenticationmethod.md) 的列表。 这将返回最多三个对象，因为用户最多有三部电话可用于身份验证。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 自操作权限 (权限从最低到最特权)  | 对他人 (权限从最低到最特权) |
+| 权限类型                        | 自行操作的权限 (权限从最低权限级别)  | 对他人操作的权限 (权限从最低到最多特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| Application                            | 不适用。 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | 不适用。 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 全局读取者
@@ -62,7 +62,7 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: ba1fb1fb18b3791b43d17ffeb11fadf7edd608aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 422d6b3d03129d2e1c7169f3131c46fadc457e35
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952500"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048307"
 ---
 # <a name="list-activitystatistics"></a>列出 activityStatistics
 
@@ -18,7 +18,7 @@ ms.locfileid: "48952500"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在最后一个完整的星期获取用户的 [activityStatistics](../resources/activitystatistics.md) 的集合。
+获取用户 [最近一整周的 activityStatistics](../resources/activitystatistics.md) 集合。
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +41,7 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持用于自定义响应的可选查询参数。
+此方法不支持自定义响应的可选查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,13 +55,13 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [activityStatistics](../resources/activitystatistics.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [activityStatistics](../resources/activitystatistics.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-以下是已登录用户的所有相关活动统计信息的请求示例。
+下面是一个请求已登录用户的所有相关活动统计信息的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -94,9 +94,9 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ### <a name="response"></a>响应
 
-以下是用户的所有相关活动统计信息响应的示例。 此响应仅显示一周的活动的第一天，以缩短可读性。
+下面是一个响应示例，该响应具有用户的所有相关活动统计信息。 此响应只显示一周活动的第一天，以缩短其可读性。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

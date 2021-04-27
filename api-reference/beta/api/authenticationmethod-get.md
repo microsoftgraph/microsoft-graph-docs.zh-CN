@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 10495d9b66c63207ec1b1376efcb1796b9e4c9ad
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 7311b1257311a21c70aed08fb86336eba970c95d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760026"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047971"
 ---
 # <a name="get-authenticationmethod"></a>获取 authenticationMethod
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/me/authentication/methods/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

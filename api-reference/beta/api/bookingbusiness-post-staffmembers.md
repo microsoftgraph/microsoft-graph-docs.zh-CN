@@ -1,16 +1,16 @@
 ---
 title: 创建 bookingStaffMember
-description: 在指定的 bookingbusiness 中创建新的教职员工成员。
+description: 在指定的 bookingbusiness 中创建新员工。
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 95319f368550b37b3a2fa20bd4688df7b4ff15eb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e92b3cc416d3cfe462c65da35f8bb4dd6d2e6b50
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960641"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047852"
 ---
 # <a name="create-bookingstaffmember"></a>创建 bookingStaffMember
 
@@ -18,13 +18,13 @@ ms.locfileid: "48960641"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[bookingbusiness](../resources/bookingbusiness.md)中创建新的[教职员工成员](../resources/bookingstaffmember.md)。
+在指定的[bookingbusiness](../resources/bookingstaffmember.md)中创建新的[员工。](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  全部预订. 全部，全部预订. 全部   |
+|委派（工作或学校帐户） |  Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -40,15 +40,15 @@ POST /bookingBusinesses/{id}/staffMembers
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [bookingStaffMember](../resources/bookingstaffmember.md) 对象的 JSON 表示形式。 您必须包含以下属性：
+在请求正文中，提供 [bookingStaffMember](../resources/bookingstaffmember.md) 对象的 JSON 表示形式。 必须包括以下属性：
 
 - **displayName**
 - **emailAddress**
-- **职位**
+- **role**
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [bookingStaffMember](../resources/bookingstaffmember.md) 对象。
+如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和 [bookingStaffMember](../resources/bookingstaffmember.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -162,7 +162,7 @@ Content-length: 309
 
 在请求正文中，提供 [bookingStaffMember](../resources/bookingstaffmember.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

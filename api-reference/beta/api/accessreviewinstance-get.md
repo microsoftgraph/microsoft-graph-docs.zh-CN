@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e8132815289848c7290b0a09ce2478665e1bbd11
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: dffd394e5724a3954324432abccd15f8a9be9318
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507192"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048426"
 ---
 # <a name="get-accessreviewinstance"></a>获取 accessReviewInstance
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 ### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

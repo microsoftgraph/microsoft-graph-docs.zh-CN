@@ -1,16 +1,16 @@
 ---
 title: workbookChartCollection：ItemAt
-description: 根据工作簿在集合中的位置获取工作簿图表。
+description: 基于工作簿图表在集合中的位置获取工作簿图表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ac0d7b125bf4b511dc837bbae220ee8f36e52f28
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: afc727ac79f95438ab060c0f3613981aa88dd51c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574655"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047453"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -50,7 +50,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/ItemAt
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [workbookChart](../resources/workbookchart.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [workbookChart](../resources/workbookchart.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -83,7 +83,7 @@ Content-length: 20
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

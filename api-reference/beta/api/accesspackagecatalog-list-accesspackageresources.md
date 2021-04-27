@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a148144c416d91ed43d1eedcbc800b779dc2800a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: be2ad10b946574ca48b93ada1d7833262f127059
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439553"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048559"
 ---
 # <a name="list-accesspackageresources"></a>列出 accessPackageResources
 
@@ -18,9 +18,9 @@ ms.locfileid: "50439553"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [accessPackageCatalog](../resources/accesspackageresource.md) 中的 [accessPackageResource 对象列表](../resources/accesspackagecatalog.md)。  若要请求添加或删除 [accessPackageResource，](../resources/accesspackageresource.md)请使用创建 [accessPackageResourceRequest](accesspackageresourcerequest-post.md)。
+在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索[accessPackageResource](../resources/accesspackageresource.md)对象的列表。  若要请求添加或删除 [accessPackageResource](../resources/accesspackageresource.md)，请使用 [create accessPackageResourceRequest](accesspackageresourcerequest-post.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439553"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessPackageResource](../resources/accesspackageresource.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageResource](../resources/accesspackageresource.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

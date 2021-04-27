@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cb65835bfef3b9eaf8c86c7ec2fb411493676d99
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 78889e5b5e6c7a3ac07ad3776d2b7f9de49b2f4b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957223"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047124"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -69,7 +69,7 @@ GET /users/{id}/contactFolders/{id}/contacts/delta
 
 若要跟踪文件夹中联系人的更改，要使用正确的状态令牌执行一次或多次 **delta** 函数调用来获取上次增量查询后的增量更改集。 
 
-演示如何使用状态令牌跟踪邮件文件夹中的邮件更改的示例与其相似： [获取文件夹中邮件的增量更改](/graph/delta-query-messages)。跟踪联系人和跟踪文件夹中的邮件之间的主要区别在于增量查询请求 URL 以及查询响应将返回 **mailFolder** 集合而非 **message** 集合。
+演示如何使用状态令牌跟踪邮件文件夹中的邮件更改的示例与其相似：[获取文件夹中邮件的增量更改](/graph/delta-query-messages)。跟踪联系人和跟踪文件夹中的邮件之间的主要区别在于增量查询请求 URL 以及查询响应将返回 **mailFolder** 集合而非 **message** 集合。
  
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -99,11 +99,11 @@ Prefer: odata.maxpagesize=2
 
 ##### <a name="response"></a>响应
 如果请求成功，响应将包含一个状态令牌，其为 _skipToken_  
-（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_ （位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
+（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_（位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
 
-以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_ 。
+以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

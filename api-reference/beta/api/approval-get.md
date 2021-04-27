@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 083064a405525a33855340bcf920900e3d70ca91
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 505133c6f26835440a0834b6553904562e449914
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961364"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048062"
 ---
 # <a name="get-approval"></a>获取审批
 
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

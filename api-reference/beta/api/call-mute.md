@@ -1,30 +1,30 @@
 ---
-title: 呼叫：静音
-description: 允许应用程序将其本身设为静音。
+title: call： mute
+description: 允许应用程序自行静音。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fd723f041819ec584970a2ff93b6ed061250d806
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d378c1e0b726bc371e0f7ada73de4cc8cebd99ac
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959647"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047635"
 ---
-# <a name="call-mute"></a>呼叫：静音
+# <a name="call-mute"></a>call： mute
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-允许应用程序将其本身设为静音。
+允许应用程序自行静音。
 
-这是一种服务器静音，这意味着服务器将丢弃此参与者的所有音频数据包，即使参与者继续传输音频也是如此。
+这是服务器静音，这意味着服务器将删除此参与者的所有音频数据包，即使参与者继续流式传输音频。
 
-有关如何处理静音操作的更多详细信息，请参阅 [muteParticipantOperation](../resources/muteparticipantoperation.md)
+若要详细了解如何处理静音操作，请参阅 [muteParticipantOperation](../resources/muteparticipantoperation.md)
 
-> **注意：** 仅组调用支持此方法。
+> **注意：** 此方法仅支持组调用。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,10 +54,10 @@ POST /communications/calls/{id}/mute
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|适用|String|客户端上下文。|
+|clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
 
 > **注意：** 此操作返回成功响应后，所有参与者都将收到名单更新
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
  
 <!-- { 
   "blockType": "response", 
@@ -132,7 +132,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a>通知-名单在参与者静音时更新
+##### <a name="notification---roster-updated-with-participant-muted"></a>通知 - 参与者静音更新名单
 
 ```http
 POST https://bot.contoso.com/api/calls

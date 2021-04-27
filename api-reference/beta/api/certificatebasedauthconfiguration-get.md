@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d34cf7d4e412490e827c1d8a865e09c6a39e5569
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5009db18fd17ae160375f76db296f1d3f5a9c694
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437826"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047572"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>获取 certificateBasedAuthConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "50437826"
 
 获取 [certificateBasedAuthConfiguration 对象](../resources/certificateBasedAuthConfiguration.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50437826"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.Read.All、Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application    | Organization.Read.All、Organization.ReadWrite.All |
+| 应用程序    | Organization.Read.All、Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfi
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

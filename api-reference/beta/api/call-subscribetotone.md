@@ -1,27 +1,27 @@
 ---
-title: 调用： subscribeToTone
-description: 订阅 DTMF (双音多频信号) 。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
+title: call： subscribeToTone
+description: 订阅 DTMF (双音多频信号) 。 这允许你在用户按下"Dialpad"上的键时收到通知。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e034dcb4783c13bdb5f74aef28fdce0558d8b634
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7fb6cbbea2ff3e90f7e0b9ed33b79666146e8ec5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959486"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047621"
 ---
-# <a name="call-subscribetotone"></a>调用： subscribeToTone
+# <a name="call-subscribetotone"></a>call： subscribeToTone
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-订阅 DTMF (双音多频信号) 。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
+订阅 DTMF (双音多频信号) 。 这允许你在用户按下"Dialpad"上的键时收到通知。
 
 > [!Note]
-> 仅使用 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的 [调用](../resources/call.md)支持 **subscribeToTone** 操作。
+> **subscribeToTone** 操作仅支持 [通过](../resources/call.md) [serviceHostedMediaConfig 启动的呼叫](../resources/servicehostedmediaconfig.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,7 @@ ms.locfileid: "48959486"
 | 委派（个人 Microsoft 帐户） | 不支持        |
 | 应用程序     | Calls.AccessMedia.All                       |
 
->**注意：** 提供的任何音调数据不能持久化。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
+>**注意：** 提供的任何音调数据可能无法保留。 确保你遵守有关通信数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/subscribeToTone
 
 | 参数      | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| 适用  | String  | 唯一的客户端上下文字符串。 最多可以有256个字符。 |
+| clientContext  | String  | 唯一的客户端上下文字符串。 最多可包含 256 个字符。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 OK` 响应代码。
@@ -98,7 +98,7 @@ Content-Length: 46
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -120,9 +120,9 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 ```
 
 
-##### <a name="notification---tone-notification"></a>通知-音调通知
+##### <a name="notification---tone-notification"></a>Notification - 音调通知
 
-通知包含 [toneinfo](../resources/toneinfo.md) 资源中所按音调的信息。
+通知包含 [toneinfo](../resources/toneinfo.md) 资源中按下的音调的信息。
 
 ```http
 POST https://bot.contoso.com/api/calls

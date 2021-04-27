@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8508b9b72cb79a3825608cfd0a837f4dc1dbdbc1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d1dc7c556f304b15935f2c1ec14c16d035dfdf64
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437855"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047705"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -20,7 +20,7 @@ ms.locfileid: "50437855"
 
 检索属于日历组的日历列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ description: 更新 driveItems 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5c27690f146924db2ade4baf8539a4973aa01ce2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7b6cd4001acd674d265748e24638c2bca5454967
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471517"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047775"
 ---
 # <a name="update-bundle"></a>更新捆绑包
 
@@ -18,11 +18,11 @@ ms.locfileid: "50471517"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按 ID[更新][][driveItems][driveItem]捆绑包的元数据。
+按 ID[更新][][driveItems][driveItem 捆绑]包的元数据。
 只能更新以下元数据：
 
 * 捆绑包名称
-* 相册 `coverImageItemId` (（如果适用) 
+* 专辑 `coverImageItemId` (（如果适用) 
 
 将忽略任何其他更改请求。
 
@@ -48,8 +48,8 @@ PATCH /drive/items/{bundle-id}
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必需。 |
-| if-match      | eTag。 可选。 如果包含此请求标头，并且提供的 eTag 与包上的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应。
+| Authorization | 持有者 \{token\}。必需。 |
+| if-match      | eTag。 可选。 如果包含此请求标头，并且提供的 eTag 与 buncle 上的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应。
 
 ## <a name="request-body"></a>请求正文
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 }
 ```
 
-为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。
 
 
 [bundle]: ../resources/bundle.md
@@ -127,7 +127,7 @@ Content-Type: application/json
   "description": "Update or replace the contents or properties of a bundle.",
   "keywords": "update,replace,contents,bundle",
   "section": "documentation",
-    "tocPath": "Bundles/Update"
+    "tocPath&quot;: &quot;Bundles/Update"
 } -->
 
 

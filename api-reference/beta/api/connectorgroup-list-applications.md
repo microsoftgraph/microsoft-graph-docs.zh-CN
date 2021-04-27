@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3a25be9468f43e0bcaf911980a4f5e41a1e537f7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 85b9e7eb24d880ea6fe82a7461bfec20594cee97
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129973"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047173"
 ---
 # <a name="list-applications-assigned-to-a-connectorgroup"></a>列出分配给 connectorGroup 的应用程序
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129973"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与 [connectorGroup](../resources/application.md) 关联的应用程序 [对象的列表](../resources/connectorgroup.md)。 此列表包含分配给特定连接器组的所有应用程序。
+检索与 [connectorGroup](../resources/application.md) 关联的 [应用程序对象列表](../resources/connectorgroup.md)。 此列表包含分配给特定连接器组的所有应用程序。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50129973"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。  |
+|应用程序 | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applicat
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和应用程序](../resources/application.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/application.md) 代码和 application 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

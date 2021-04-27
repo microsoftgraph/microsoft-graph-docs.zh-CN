@@ -1,24 +1,24 @@
 ---
-title: 警报： updateAlerts
-description: 更新一个请求中的多个警报，而不是多个请求。
+title: 警报：updateAlerts
+description: 更新一个请求而不是多个请求中的多个警报。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 37415ece13d81e7920b5edffd2db4431bf0be938
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 86c391f0684ebad30ef5abab0c3a7e8746445a32
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962310"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048181"
 ---
-# <a name="alert-updatealerts"></a>警报： updateAlerts
+# <a name="alert-updatealerts"></a>警报：updateAlerts
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新一个请求中的多个警报，而不是多个请求。
+更新一个请求而不是多个请求中的多个警报。
 
 ## <a name="permissions"></a>权限
 
@@ -46,15 +46,15 @@ POST /security/alerts/updateAlerts
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供具有以下参数的 JSON 对象。 每个实体都必须具有 **id** 和 **vendorInformation** 属性。 有关可更新的属性的详细信息，请参阅 [更新警报](alert-update.md)。
+在请求正文中，提供具有以下参数的 JSON 对象。 每个实体必须具有 **id** 和 **vendorInformation** 属性。 有关可更新的属性的详细信息，请参阅 [更新警报](alert-update.md)。
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|[警报](../resources/alert.md)集合| 要更新的通知的集合。 每个实体都必须具有要更新的 **id** 、 **vendorInformation** 和其他可编辑属性。|
+|值|[警报](../resources/alert.md)集合| 要更新的警报集合。 每个实体必须具有 **id** **、vendorInformation** 和其他可编辑属性以进行更新。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [警报](../resources/alert.md) 集合对象。
+如果成功，此方法在 `200, OK` 响应正文中返回 [响应](../resources/alert.md) 代码和 alert 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -118,7 +118,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

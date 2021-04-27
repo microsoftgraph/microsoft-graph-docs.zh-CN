@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0370ee0109b397f75aaac78f07426c689ca545fc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 49ec4fae41f3b00e13c05ef57863f42588988925
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443566"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048979"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
@@ -20,7 +20,7 @@ ms.locfileid: "50443566"
 
 获取组织已获取的特定商业订阅。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/subscribedSkus/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

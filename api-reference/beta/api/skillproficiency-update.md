@@ -1,24 +1,24 @@
 ---
 title: 更新 skillProficiency
-description: 更新用户的配置文件中的 skillProficiency 对象的属性。
+description: 更新用户配置文件中的 skillProficiency 对象的属性。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e7130169951c3174bc1472420b4d85587e521756
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9da18f3fc53cac80fc4f357083c6dea3c95d5c84
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977813"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048986"
 ---
-# <a name="update-skillproficiency"></a>更新 skillproficiency
+# <a name="update-skillproficiency"></a>更新技能
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新用户的[配置文件](../resources/profile.md)中的[skillProficiency](../resources/skillproficiency.md)对象的属性。
+更新用户配置文件 [中的一个技能Proficiency](../resources/skillproficiency.md) 对象 [的属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48977813"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -54,15 +54,15 @@ PATCH /users/{id | userPrincipalName}/profile/skills/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|包含用户与技能相关联的类别 (例如，个人、职业、爱好) 。 |
-|collaborationTags|String collection|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
+|categories|String 集合|包含用户与技能类别关联的类别 (例如个人、专业、爱好) 。 |
+|collaborationTags|字符串集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
 |displayName|String|包含技能的友好名称。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|水平|skillProficiencyLevel|熟练掌握此技能的用户的详细信息。 可取值为：`elementary`、`limitedWorking`、`generalProfessional`、`advancedProfessional`、`expert`、`unknownFutureValue`。|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|熟练程度|skillProficiencyLevel|此技能的用户熟练程度的详细信息。 可取值为：`elementary`、`limitedWorking`、`generalProfessional`、`advancedProfessional`、`expert`、`unknownFutureValue`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [skillProficiency](../resources/skillproficiency.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [skillProficiency](../resources/skillproficiency.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

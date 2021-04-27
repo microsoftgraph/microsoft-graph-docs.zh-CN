@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 921d3473c4564627c6787364ea7021fc9fe440d7
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: fe54dbb05313fa659e95d2a65e2a9dc74cd1bc83
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921000"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047607"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -20,7 +20,7 @@ ms.locfileid: "51921000"
 
 转接活动对等呼叫。
 
-> **注意：** 只有当被转移方和转移目标都是属于同一租户的 Microsoft Teams 用户时，才支持此操作。 仅应用程序实例支持转接到 PSTN 号码。 若要了解有关转移方、被转移方和转移目标有关详细信息，请参阅 [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
+> **注意：** 这仅在被转移方和转移目标都Microsoft Teams属于同一租户的用户时受支持。 仅应用程序实例支持转接到 PSTN 号码。 若要了解有关转移方、被转移方和转移目标有关详细信息，请参阅 [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
 
 咨询转接意味着在转接之前，转接人可以通知要呼叫 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
@@ -108,7 +108,7 @@ Content-Length: 430
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -299,7 +299,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -479,7 +479,7 @@ Content-Length: 430
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -665,7 +665,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

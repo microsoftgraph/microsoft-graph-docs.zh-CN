@@ -1,16 +1,16 @@
 ---
 title: 列出 memberOf
-description: 检索连接器是其中一个成员的连接器组。
+description: 检索连接器是该连接器的一个成员的连接器组。
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 395ee64c59cf81ffa1b264140f26e23f03f8dfe1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4a069e0e501d1916b310daa390a2b2af0de5318f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129610"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047214"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129610"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[连接器组](../resources/connectorgroup.md)[连接器](../resources/connector.md)是其中的成员。
+检索[连接器是](../resources/connectorgroup.md)[该连接器](../resources/connector.md)的成员组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50129610"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。  |
+|应用程序 | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 connectorGroup](../resources/connectorgroup.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 783744f3e2cfc59f20e2105468b5f2cdc2d7ee7d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a9a1190c09cff042783284205def04de3ec4e700
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439525"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048545"
 ---
 # <a name="create-accesspackagecatalog"></a>创建 accessPackageCatalog
 
@@ -20,7 +20,7 @@ ms.locfileid: "50439525"
 
 创建新的 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439525"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,12 +42,12 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象的 JSON 表示形式。  包括 **displayname** **、description** 和 **isExternallyVisible** 属性。
+在请求正文中，提供 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象的 JSON 表示形式。  包括 **displayname、description** 和 **isExternallyVisible** 属性。 
 
 ## <a name="response"></a>响应
 
@@ -98,7 +98,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

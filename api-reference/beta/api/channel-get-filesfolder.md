@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9af36b403733b0f0937210b5c959b7203e8deef7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b44f6797dd5069aedba137dbed886a1121ffde08
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959289"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047544"
 ---
 # <a name="get-filesfolder"></a>获取 filesFolder
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 ### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
