@@ -1,26 +1,26 @@
 ---
-title: 组： assignLicense
-description: 在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。
+title: group： assignLicense
+description: 在组上添加或删除许可证。 分配给该组的许可证将分配给该组中的所有用户。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5e5afc176caadd4605820952bb197885c2e614cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a6e4732deabfe4ff54f9549b7a0b5103cfa70d12
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954383"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042161"
 ---
-# <a name="group-assignlicense"></a>组： assignLicense
+# <a name="group-assignlicense"></a>group： assignLicense
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
+在组上添加或删除许可证。 分配给该组的许可证将分配给该组中的所有用户。 若要了解有关基于组的许可，请参阅什么是基于组的许可[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 
-若要获取目录中可用的订阅，请执行 [Get subscribedsku 请求](subscribedsku-list.md)。
+若要获取目录中可用的订阅，请执行 [GET subscribedSkus 请求](subscribedsku-list.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,17 +47,17 @@ POST /groups/{id}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 您可以通过在 [assignedLicense](../resources/assignedlicense.md)对象上设置 **disabledPlans** 属性来禁用与许可证关联的 servicePlans。|
-|removeLicenses|GUID 集合|标识要删除的许可证的 skuIds 的集合。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 可以通过在 assignedLicense 对象上设置 **disabledPlans** 属性来禁用 [与许可证关联的 servicePlans。](../resources/assignedlicense.md)|
+|removeLicenses|GUID 集合|标识要删除的许可证的 skuIds 集合。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `202 Accepted` 在响应正文中返回响应代码和目标 [组](../resources/group.md) 对象。
+如果成功，此方法在响应 `202 Accepted` 正文中返回 响应代码和目标 [group](../resources/group.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-licenses-to-the-group"></a>示例1：向组添加许可证
-下面的示例将许可证添加到组中。
+### <a name="example-1-add-licenses-to-the-group"></a>示例 1：向组添加许可证
+以下示例向组添加许可证。
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -106,7 +106,7 @@ Content-type: application/json
 #### <a name="response"></a>响应
 响应是更新的 group 对象。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,8 +127,8 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
 }
 ```
 
-### <a name="example-2-remove-licenses-from-the-group"></a>示例2：从组中删除许可证
-下面的示例从组中删除许可证。
+### <a name="example-2-remove-licenses-from-the-group"></a>示例 2：从组中删除许可证
+以下示例从组中删除许可证。
 
 #### <a name="request"></a>请求
 
@@ -170,7 +170,7 @@ Content-type: application/json
 #### <a name="response"></a>响应
 响应是更新的 group 对象。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。。
+>**注意：** 为了可读性，可能会缩短此处所示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

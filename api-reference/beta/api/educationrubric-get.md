@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d3e5c474869d906b9597324c678f6ef0733ae57b
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 3d7ca62baa427ac188b67700d99791665ec52cb0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961245"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043589"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

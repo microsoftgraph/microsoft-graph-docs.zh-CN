@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 744804a73c3ccba136d4596c2f4ee2d8f5a2f92d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0b5271e7d559ac5326056b4a2ee63ef7cfad7de1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965193"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041776"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

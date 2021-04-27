@@ -1,16 +1,16 @@
 ---
 title: 更新 educationAssignmentResource
-description: '更新与工作分配关联的资源的属性。 只有课堂中的教师才能更改作业资源对象。  '
+description: '更新与工作分配关联的资源的属性。 只有班级中的教师可以更改作业资源对象。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6d2ed74d02d54464360f0c1b2d08fda9d53caebb
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 5dae821a6dc22aa108bceee44c4958e3deb7f129
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470374"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044149"
 ---
 # <a name="update-educationassignmentresource"></a>更新 educationAssignmentResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "50470374"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新与工作分配关联的资源的属性。 只有课堂中的教师才能更改作业资源对象。  
+更新与工作分配关联的资源的属性。 只有班级中的教师可以更改作业资源对象。  
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,11 +45,11 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean| 指示发布作业时，是否应当将此资源复制到每个学生的资源对象。|
+|distributeForStudentWork|布尔值| 指示发布作业时，是否应该将此资源复制到每个学生的资源对象。|
 |resource|educationResource| Resource 对象。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新 [的 educationAssignmentResource](../resources/educationassignmentresource.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationAssignmentResource](../resources/educationassignmentresource.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -89,7 +89,7 @@ Content-length: 822
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 
 <!-- {

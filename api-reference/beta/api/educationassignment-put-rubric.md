@@ -1,16 +1,16 @@
 ---
 title: 将 educationRubric 附加到 educationAssignment
-description: 将现有的 educationRubric 对象附加到 educationAssignment。
+description: 将现有 educationRubric 对象附加到 educationAssignment。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3d96ca954dbfb40c5c3db1f8404144337bcc0f34
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b4ab5909a9c45947fe4f1622bb4f819fc7f3e9e5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966499"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044219"
 ---
 # <a name="create-educationrubric"></a>创建 educationRubric
 
@@ -26,7 +26,7 @@ ms.locfileid: "48966499"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EduAssignments、ReadWriteBasic、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -95,7 +95,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

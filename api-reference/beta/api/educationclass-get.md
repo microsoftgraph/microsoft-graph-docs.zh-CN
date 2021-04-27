@@ -1,16 +1,16 @@
 ---
 title: 获取 educationClass
-description: "  组管理员代表课程中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
+description: "  组管理员表示班级中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f4028b58deaf2da1036f670d8bdf9efbe2155c13
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f5d6dba45d267b85e8edf6d2831338c7aa79084c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966289"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044009"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/education/classes/11023
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

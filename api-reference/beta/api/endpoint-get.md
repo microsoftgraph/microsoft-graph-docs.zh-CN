@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: groups
 author: yyuank
-ms.openlocfilehash: ab98177176b85101e1122edc52789a7d77d27d15
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8b5cc003787b9a389842389d3aabd7c75726c8f5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760719"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042644"
 ---
 # <a name="get-endpoint"></a>Get endpoint
 
@@ -28,7 +28,7 @@ ms.locfileid: "50760719"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Group.Read.All、Group.ReadWrite.All |
+|应用程序 | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ### <a name="response"></a>响应
 下面是一个响应示例。
->注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+>注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

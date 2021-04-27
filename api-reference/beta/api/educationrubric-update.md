@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 17e2ff0f96706c50095a5620b6e729ace157c0c8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e0bcea6b95b83cad3f4467e0a3687a3e2c401b56
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965971"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043477"
 ---
 # <a name="update-educationrubric"></a>更新 educationRubric
 
@@ -18,9 +18,9 @@ ms.locfileid: "48965971"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [educationRubric](../resources/educationrubric.md) 对象的属性。
+更新 [educationRubric 对象](../resources/educationrubric.md) 的属性。
 
-仅在发布工作分配之前 () 更新附加到工作分配的 rubric `PATCH /education/me/assignments/{id}/rubric` ，而更新的内容实际上是中存在的原始 rubric `/education/users/{id}/rubrics` 。 发布工作分配后，将创建一个 rubric 的不可变副本，该副本将附加到该特定工作分配。 可以使用 [GET/education/me/assignments/{id}/rubric](educationrubric-get.md)检索 rubric，但不能对其进行更新。
+只有在发布工作分配 () 工作分配附加的一个分值才能更新，而更新的实际上是 下 `PATCH /education/me/assignments/{id}/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/me/assignments/{id}/rubric](educationrubric-get.md)检索该标准，但不能更新。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48965971"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EduAssignments、ReadWriteBasic、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -53,15 +53,15 @@ PATCH /education/me/assignments/{id}/rubric
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|itemBody|此 rubric 的说明。|
-|displayName|String|此 rubric 的名称。|
-|评分|educationAssignmentGradeType|此 rubric 是否有积分。|
-|等级|rubricLevel 集合|构成此 rubric 的级别的集合。|
-|特质|rubricQuality 集合|构成此 rubric 的质量的集合。|
+|说明|itemBody|此分卡的说明。|
+|displayName|String|此分号的名称。|
+|一个|educationAssignmentGradeType|此分值是否具有点。|
+|levels|rubricLevel 集合|此标准中的级别集合。|
+|一些|rubricQuality 集合|此分项由质量集合决定。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [educationRubric](../resources/educationrubric.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationRubric](../resources/educationrubric.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

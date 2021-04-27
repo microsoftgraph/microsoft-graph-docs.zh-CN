@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7a223cf8bf73463ee0680a638979f30e135496b3
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: db34b97be54750fec02568dd83bab1c4f24a9ed1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961252"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043925"
 ---
 # <a name="list-educationcategories"></a>列出 educationCategories
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "ignored",

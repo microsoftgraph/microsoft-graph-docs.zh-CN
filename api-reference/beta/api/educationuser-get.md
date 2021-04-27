@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6ad690ccb21d49196ee52cf69f9832d87b7a6a7c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 893f484eaf03ef5102a22e70fdb946251af0cbd9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951148"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042882"
 ---
 # <a name="get-educationuser"></a>获取 educationUser
 
@@ -34,7 +34,7 @@ ms.locfileid: "50951148"
 | 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 > [!IMPORTANT]
-> 使用委派权限范围时，Graph 将仅返回一组有限的属性 `id` `primaryRole` `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` ：、。 如果应用程序需要其他属性，则必须使用应用程序权限范围。
+> 使用委派权限范围时，Graph将仅返回一组有限的属性：、 `id` `primaryRole` `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` 。 如果应用程序需要其他属性，则必须使用应用程序权限范围。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/education/users/13012
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

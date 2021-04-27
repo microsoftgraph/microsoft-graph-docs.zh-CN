@@ -1,16 +1,16 @@
 ---
 title: educationUser： delta
-description: 获取新创建或更新的用户，而无需对整个用户集执行完全读取。
+description: 获取新创建或更新的用户，而无需执行整个用户集合的完全读取。
 localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d0952c9957395b21c20ace30fc1f800a526934e9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7477bea6eeb01e74cb824a7d31b0cc5dba3161ef
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955279"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042924"
 ---
 # <a name="educationuser-delta"></a>educationUser： delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "48955279"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建或更新的 [educationUser](../resources/educationuser.md) ，而无需对整个集合执行完全读取。 有关详细信息，请参阅 [使用 delta 查询](/graph/delta-query-overview) 。
+获取新创建或更新的 [educationUser，](../resources/educationuser.md) 而无需执行整个集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48955279"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                              |
 | :------------------------------------- | :----------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | Eduroster.read.all、User.readbasic.all、Eduroster.read.all 或 Eduroster.read.all              |
+| 委派（工作或学校帐户）     | EduRoster.ReadBasic、EduRoster.Read 或 EduRoster.ReadWrite              |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                           |
-| 应用程序                            | Eduroster.read.all、Eduroster.read.all、All 或 Eduroster.read.all 的所有 User.readbasic.all |
+| 应用程序                            | EduRoster.ReadBasic.All、EduRoster.Read.All 或 EduRoster.WriteWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /education/users/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationUser](../resources/educationuser.md) 集合对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationUser](../resources/educationuser.md) 集合对象。
 
 > [!IMPORTANT]
 > educationUser 增量不包括已删除的用户。
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/education/users/delta
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

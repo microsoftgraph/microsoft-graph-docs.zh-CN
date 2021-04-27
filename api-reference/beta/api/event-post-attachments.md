@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 859060a1c0a67c5b7c30f5dca72432953247c048
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 18c73e333c98c86c66b8ed8227aa9f98cfcfcbb8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954783"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042532"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -18,9 +18,9 @@ ms.locfileid: "48954783"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 可将 [附件](../resources/attachment.md) 添加到现有 [事件](../resources/event.md)中。 此操作将限制可添加到 3 MB 以下的附件的大小。
+使用此 API 将附件 [添加到](../resources/attachment.md) 现有 [事件](../resources/event.md)。 此操作将可添加到的附件的大小限制在 3 MB 以下。
 
-如果组织者将附件添加到会议事件中，则组织者随后可以 [更新](event-update.md) 事件以发送附件并为每个与会者同时更新事件。
+如果组织者向会议事件添加附件，组织者随后可以更新事件以发送附件[](event-update.md)并更新每个与会者的事件。
 
 ## <a name="permissions"></a>权限
 
@@ -106,7 +106,7 @@ Content-length: 151
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_beta",
@@ -174,7 +174,7 @@ Content-length: 600
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
@@ -204,8 +204,8 @@ Content-length: 162
 
 ### <a name="request"></a>请求
 
-下面的示例展示了向现有事件添加引用附件的请求。
-附件指向 OneDrive 上的文件夹。
+下面是向现有事件添加引用附件的请求示例。
+附件指向文件夹上的OneDrive。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -248,7 +248,7 @@ Content-length: 319
 
 ### <a name="response"></a>响应
 
-下面的示例展示了完整的响应。
+下面是完整响应的示例。
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_event",

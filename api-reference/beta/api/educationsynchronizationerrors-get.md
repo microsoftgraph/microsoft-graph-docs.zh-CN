@@ -1,22 +1,22 @@
 ---
 title: 获取 educationSynchronizationErrors
-description: '获取验证期间和/或同步租户中特定学校数据同步配置文件期间生成的错误。 '
+description: '获取验证期间和/或同步租户中的特定学校数据同步配置文件期间生成的错误。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a3b2e0b9018d3a6d34073530f8bd846a4d6df64c
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: d652938060bd577a00f1f22c3ce8cb5d5cc8160d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574264"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043162"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 
 命名空间：microsoft.graph
 
-获取验证期间和/或同步租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 期间生成的错误。
+获取验证期间和/或同步租户中的特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 期间生成的错误。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ GET /education/synchronizationProfiles/{id}/errors
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 [OData](/graph/query-parameters) 查询参数来帮助自定义响应：$filter、$orderby、$top、$skip和 \$ 计数。
+此方法支持以下 [OData](/graph/query-parameters) 查询参数来帮助自定义响应：$filter、$orderby、$top、$skip 和 \$ count。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,7 +52,7 @@ GET /education/synchronizationProfiles/{id}/errors
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和同步 `200 OK` 错误对象集合。 [](../resources/educationsynchronizationerror.md)
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [同步错误](../resources/educationsynchronizationerror.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/erro
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

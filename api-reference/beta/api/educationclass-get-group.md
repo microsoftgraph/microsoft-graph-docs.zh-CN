@@ -1,16 +1,16 @@
 ---
 title: 获取组
-description: 检索与此 **educationClass** 对应的 Microsoft 365 **组** 。
+description: 检索Microsoft 365 **educationClass** 对应的组。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5cff82e4b9c93502aacb390925af034159aba101
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ca134cfabe18defd818af94b9354b5f6458b0d61
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966314"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044051"
 ---
 # <a name="get-group"></a>获取组
 
@@ -18,7 +18,7 @@ ms.locfileid: "48966314"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与此 **educationClass** 对应的 Microsoft 365 **组** 。
+检索Microsoft 365 **educationClass** 对应的组。
 
 >**注意：** 如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...beta/education/me/schools` 资源。
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

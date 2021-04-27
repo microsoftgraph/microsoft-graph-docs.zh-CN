@@ -1,18 +1,18 @@
 ---
-title: 将文件上载到 educationSynchronizationProfile 后开始同步
+title: 将文件上传到 educationSynchronizationProfile 后开始同步
 description: 验证上传到租户中特定学校数据同步配置文件的文件。 如果验证成功，将在配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应包含错误，将不会启动同步。 如果响应仅包含警告，将启动同步。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 04f8f9e96422c262ea816a5f24796d4059b0809c
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: a0c344b1696da6a04b196af97dd83fb84f11a8b1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574145"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042959"
 ---
-# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上载到 educationSynchronizationProfile 后开始同步
+# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上传到 educationSynchronizationProfile 后开始同步
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "50574145"
 
 验证上传到租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的文件。 如果验证成功，将在配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应包含错误，将不会启动同步。 如果响应仅包含警告，将启动同步。
 
-> **注意：** 仅在数据提供程序的类型为 [educationcsvdataprovider 时使用此方法](../resources/educationcsvdataprovider.md)。 此外，在可以启动配置文件之前，还需要设置配置文件的状态属性。 轮询配置文件对象以检查其状态属性。
+> **注意：** 仅在数据提供程序的类型为 [educationcsvdataprovider 时使用此方法](../resources/educationcsvdataprovider.md)。 此外，需要设置配置文件的状态属性，然后才能启动它。 轮询配置文件对象以检查其状态属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,7 +45,7 @@ POST /education/synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。 如果失败，则返回 `400 Bad Request` 一个 。 如果发现任何错误或警告，响应包含 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) 对象的集合作为响应正文的一部分。
+如果成功，此方法返回 `200 OK` 响应代码。 如果失败，则返回 `400 Bad Request` 。 如果发现任何错误或警告，响应包含 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) 对象的集合作为响应正文的一部分。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -81,7 +81,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

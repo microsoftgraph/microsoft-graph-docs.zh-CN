@@ -1,16 +1,16 @@
 ---
 title: 列出 educationSynchronizationProfiles
-description: 检索租户中的学校数据同步配置文件的集合。
+description: 检索租户中学校数据同步配置文件的集合。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4dca1101251d78d9fbf4306e1ab810eee02e840c
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 707e8728ee5ef250ea33e88102cb534b399c3684
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574221"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043099"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>列出 educationSynchronizationProfiles
 
@@ -18,7 +18,7 @@ ms.locfileid: "50574221"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索租户中的学校 [数据同步](../resources/educationsynchronizationprofile.md) 配置文件的集合。
+检索租户中学校 [数据同步](../resources/educationsynchronizationprofile.md) 配置文件的集合。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,7 +36,7 @@ GET /education/synchronizationProfiles
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持以下 [OData](/graph/query-parameters) 查询参数来帮助自定义响应：$filter、$orderby、$top、$skip和 $count。
+此方法支持以下 [OData](/graph/query-parameters) 查询参数来帮助自定义响应：$filter、$orderby、$top、$skip 和 $count。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -46,7 +46,7 @@ GET /education/synchronizationProfiles
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

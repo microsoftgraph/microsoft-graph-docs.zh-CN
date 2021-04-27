@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f33383ea8c3c8b7369be47aa852847af022884ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5f27763d558590e01f61fbc231959b05bee3c296
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966133"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043715"
 ---
 # <a name="update-educationoutcome"></a>更新 educationoutcome
 
@@ -18,7 +18,7 @@ ms.locfileid: "48966133"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [educationOutcome](../resources/educationoutcome.md) 对象的属性。
+更新 [educationOutcome 对象](../resources/educationoutcome.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "48966133"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EduAssignments、ReadWriteBasic、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -48,21 +48,21 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-EducationOutcome 对象将为以下派生类型之一： **educationPointsOutcome** 、 **educationFeedbackOutcome** 或 **educationRubricOutcome** 。 提供与要修补的结果类型相关的特定属性。
+educationOutcome 对象将为以下派生类型之一 **：educationPointsOutcome、educationFeedbackOutcome** 或 **educationRubricOutcome**。  提供与要修补的结果类型相关的特定属性。
 
-所有派生结果类型都有一个与该结果类型相对应的常规和 "已发布" 属性;例如， **点** 和 **publishedPoints** 、 **反馈** 和 **publishedFeedback** 。 不更新 "已发布" 属性;它仅供内部使用。 例如，若要向 **educationPointsOutcome** 分配点，请更新 **points** 属性，但不要更新 **publishedPoints** 。
+所有派生的结果类型都有一个适合该结果类型的常规和"已发布"属性;例如 **，points** 和 **publishedPoints** **、feedback** 和 **publishedFeedback**。 不要更新"published"属性;供内部使用。 例如，若要向 **educationPointsOutcome** 分配点，请更新 **points** 属性，但不更新 **publishedPoints**。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [educationOutcome](../resources/educationoutcome.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationOutcome](../resources/educationoutcome.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-feedback-outcome"></a>示例1：更新反馈结果
+### <a name="example-1-update-a-feedback-outcome"></a>示例 1：更新反馈结果
 
 #### <a name="request"></a>请求
 
-下面是更新反馈结果的请求示例。
+下面是请求更新反馈结果的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -142,11 +142,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-points-outcome"></a>示例2：更新点结果
+### <a name="example-2-update-a-points-outcome"></a>示例 2：更新点结果
 
 #### <a name="request"></a>请求
 
-下面是更新点结果的请求示例。
+下面是请求更新点结果的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -189,7 +189,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -221,11 +221,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-update-a-rubric-outcome"></a>示例3：更新 Rubric 结果
+### <a name="example-3-update-a-rubric-outcome"></a>示例 3：更新评估结果
 
 #### <a name="request"></a>请求
 
-下面是更新 rubric 结果的请求示例。
+下面是一个请求更新评估结果的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -290,7 +290,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

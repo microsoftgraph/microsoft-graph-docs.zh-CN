@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 02f1631c23346424c774315d9b43cac06c902b10
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d46aea166ddef92c58cabc7141246bc9dcd897ae
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776366"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042658"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>获取 emailAuthenticationMethodConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "50776366"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象的属性和关系，该对象表示 Azure Active Directory (Azure AD 租户的电子邮件 [OTP](../resources/authenticationmethodspolicies-overview.md)) 策略。
+读取[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Azure Active Directory (Azure AD 租户的电子邮件[OTP](../resources/authenticationmethodspolicies-overview.md)) 策略。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "50776366"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 对于委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -108,19 +108,19 @@ Content-Type: application/json
 Content-length: 491
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-    "id": "Email",
-    "state": "enabled",
-    "allowExternalIdToUseEmailOtp": "True",
-    "includeTargets":[
-        {
-          "targetType":"group",
-          "id":"all_users",
-          "isRegistrationRequired":false,
-        }
-    ]
-  }
+   "value":{
+      "@odata.type":"#microsoft.graph.emailAuthenticationMethodConfiguration",
+      "id":"Email",
+      "state":"enabled",
+      "allowExternalIdToUseEmailOtp":"True",
+      "includeTargets":[
+         {
+            "targetType":"group",
+            "id":"all_users",
+            "isRegistrationRequired":false
+         }
+      ]
+   }
 }
 ```
 

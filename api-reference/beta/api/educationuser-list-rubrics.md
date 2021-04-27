@@ -1,24 +1,24 @@
 ---
-title: 列出 rubrics
+title: List rubrics
 description: 检索 educationrubric 对象的列表。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f96d7cd8a565b6d281e636ea603090491017998d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 969ab9a1dc49644ba3266b4d6298f8e670f18723
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955188"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042826"
 ---
-# <a name="list-rubrics"></a>列出 rubrics
+# <a name="list-rubrics"></a>List rubrics
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [educationRubric](../resources/educationrubric.md) 对象的列表。
+检索 [educationRubric 对象](../resources/educationrubric.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "48955188"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -50,7 +50,7 @@ GET /education/me/rubrics
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationRubric](../resources/educationrubric.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationRubric](../resources/educationrubric.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/education/me/rubrics
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: 获取 eventMessage
-description: 在 **事件** 上展开 "参数
+description: 事件上的 expand' **参数**
 localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9463bd7b9198dc31311a8e4bacd07c5b10fbc965
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a321d0ca2332b3a76492f7a16c1201cb8f565ed5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965756"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042441"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -18,18 +18,18 @@ ms.locfileid: "48965756"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 `$expand`在 **事件** 导航属性上应用该参数，以在与会者的日历中获取关联的 [事件](../resources/event.md)。
+获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 对 `$expand` 事件导航 **属性** 应用 参数，获取与会者日历中的关联 [](../resources/event.md)事件。
 
-### <a name="get-the-event-message-body-in-html-or-text-format"></a>获取 HTML 或文本格式的事件消息正文
+### <a name="get-the-event-message-body-in-html-or-text-format"></a>获取 HTML 或文本格式的事件邮件正文
 
 事件邮件正文可以是 HTML 格式或文本格式。
 
-您可以使用 `Prefer: outlook.body-content-type` 标头指定在请求中的 **Body** 和 **uniqueBody** 属性中返回的所需格式 `GET` ：
+可以使用 标头指定在请求的 body 和 `Prefer: outlook.body-content-type` **uniqueBody** 属性中返回的所需 `GET` 格式：
 
-- 指定 `Prefer: outlook.body-content-type="text"` 获取以文本格式返回的事件消息正文。
-- 指定 `Prefer: outlook.body-content-type="html"` 或直接跳过标头，以返回 HTML 格式的事件消息正文。
+- 指定 `Prefer: outlook.body-content-type="text"` 获取以文本格式返回的事件邮件正文。
+- 指定 `Prefer: outlook.body-content-type="html"` 或直接跳过 标头，以 HTML 格式返回事件邮件正文。
 
-如果指定任何一个标头，则响应将包含相应的 `Preference-Applied` 标头作为确认：
+如果指定任一标头，响应中将包含相应的 `Preference-Applied` 标头作为确认：
 
 - 对于文本格式请求：`Preference-Applied: outlook.body-content-type="text"`
 - 对于 HTML 格式请求：`Preference-Applied: outlook.body-content-type="html"`
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -235,7 +235,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 
 #### <a name="response"></a>响应
 下面是一个响应示例。 响应中返回关联事件的属性。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

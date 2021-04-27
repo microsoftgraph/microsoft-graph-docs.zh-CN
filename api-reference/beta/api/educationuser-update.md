@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 38a3f187a934f57b9ecb910047367ccf3bf20c28
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6846ac91051897fcf455c466d5dcd58119d0131a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955131"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042665"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -58,12 +58,12 @@ PATCH /education/users/{id}
 | surname          | String             | 用户的姓                                                                                                                                 |
 | mail             | String             | 电子邮件地址                                                                                                                                   |
 | mobilePhone      | String             | 用户的移动电话号码                                                                                                                           |
-| externalSource   | string             | 创建此用户的位置。 可能的值包括： `sis` 、 `manual` 或 `lms` 。                                                               |
-| mailingAddress   | [physicalAddress]  | 用户的邮件地址。 注意： `type` `postOfficeBox` 资源不支持和 `educationUser` 。                                         |
-| residenceAddress | [physicalAddress]  | 用户所在的地址。 注意： `type` `postOfficeBox` 资源不支持和 `educationUser` 。                                     |
+| externalSource   | string             | 创建此用户的位置。 可能的值为： `sis`、 `manual`或 `lms`。                                                               |
+| mailingAddress   | [physicalAddress]  | 用户的邮件地址。 注意： `type` `postOfficeBox` 资源不支持 和 `educationUser` 。                                         |
+| residenceAddress | [physicalAddress]  | 用户所在的地址。 注意： `type` `postOfficeBox` 资源不支持 和 `educationUser` 。                                     |
 | primaryRole      | string             | 用户的默认角色。 用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`enum_sentinel`。 |
 | student          | [educationStudent] | 如果主要角色为学生，此部分将包含特定于学生的数据。                                                                  |
-| teacher          | [educationTeacher](../resources/educationteacher.md) | 如果主要角色是教师，此块将包含教师特定的数据。                                                                  |
+| teacher          | [educationTeacher](../resources/educationteacher.md) | 如果主要角色是教师，则此块将包含特定于教师的数据。                                                                  |
 
 ## <a name="response"></a>响应
 
@@ -118,7 +118,7 @@ Content-length: 508
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

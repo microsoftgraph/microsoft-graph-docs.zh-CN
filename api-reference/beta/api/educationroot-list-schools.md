@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6b3cd4e4aa59f9b8d33d4551811ab9f006ccb685
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 26f5011fabd2f6a89841a3ea2fc680d7d09bd15f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951437"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043680"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/education/schools
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

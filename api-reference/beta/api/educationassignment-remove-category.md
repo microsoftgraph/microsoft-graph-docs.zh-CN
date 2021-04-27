@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: edcc71fcacf96dacdd9200e48f2ddedbbcda381e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edf054ba1d7b81800a75e260c5a2357ae2d9bcba
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002532"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044184"
 ---
 # <a name="remove-educationcategory"></a>删除 educationCategory
 
@@ -18,14 +18,14 @@ ms.locfileid: "48002532"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[educationAssignment](../resources/educationassignment.md)中删除[educationCategory](../resources/educationcategory.md) 。
+从[educationAssignment](../resources/educationcategory.md)中删除[educationCategory。](../resources/educationassignment.md)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。  | 
 
@@ -59,9 +59,9 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 ```
 
 ##### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 
 <!-- {

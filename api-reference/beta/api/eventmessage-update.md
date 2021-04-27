@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9a6f6fa3a63d1c1e2db29e6eb01882982a832564
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 86b0d75af2e7327ba4c89bb10c30c6a0b5f5472c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965710"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042350"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -49,7 +49,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 |categories|String|与邮件关联的类别。|
 |importance|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
-|isAllDay |Boolean|指示事件是否持续一整天。 调整此属性还需要调整事件的 **startDateTime** 和 **endDateTime** 属性。|
+|isAllDay |Boolean|指示事件是否持续一整天。 调整此属性也需要调整 **事件的 startDateTime** 和 **endDateTime** 属性。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
@@ -94,7 +94,7 @@ Content-length: 248
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

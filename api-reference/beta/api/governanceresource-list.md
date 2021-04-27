@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: b386e00506055c38a6f330f08c5722de8f6e015c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d8f78f1e52c91981cef4f0be9a5101f2a7ef9feb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435964"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042196"
 ---
 # <a name="list-governanceresources"></a>列出 governanceResources
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435964"
 
 检索请求 [者有权访问的 governanceResource](../resources/governanceresource.md) 集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -29,7 +29,7 @@ ms.locfileid: "50435964"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | PrivilegedAccess.Read.AzureResources |
+| 应用程序 | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +37,7 @@ ms.locfileid: "50435964"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | PrivilegedAccess.Read.AzureAD |
+| 应用程序 | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
@@ -45,7 +45,7 @@ ms.locfileid: "50435964"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | PrivilegedAccess.Read.AzureADGroups |
+| 应用程序 | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -63,7 +63,7 @@ GET /privilegedAccess/azureResources/resources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` [governanceResource](../resources/governanceresource.md) 对象的响应代码和集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [governanceResource](../resources/governanceresource.md) 对象集合。
 ## <a name="examples"></a>示例
 
 此示例列出了我当前可以访问的所有资源。
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

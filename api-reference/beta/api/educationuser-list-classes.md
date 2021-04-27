@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b544ecfef25b38e1e808c333de49532d20525f58
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ec0bcde1e53e3dfe801a4cdafbf49572b4c812b8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951140"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042831"
 ---
 # <a name="list-classes"></a>列出课程
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/education/me/classes
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

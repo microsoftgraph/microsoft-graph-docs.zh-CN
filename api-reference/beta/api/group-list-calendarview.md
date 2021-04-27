@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7088b9ea38c138bbdd6256f91fe5b88816b72585
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c50d0d09ff1740d8c8e1b6f6c9bcad3d4f1b7883
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965152"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041720"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -97,7 +97,7 @@ Prefer: outlook.body-content-type="text"
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

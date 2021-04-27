@@ -1,16 +1,16 @@
 ---
 title: 获取 educationSynchronizationProfile 的状态
-description: 获取租户中特定学校数据同步配置文件的状态。 响应将指示同步的状态。
+description: 获取租户中特定学校数据同步配置文件的状态。 该响应将指示同步的状态。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fef6a53f112f9c7f5922e9242761e5365e9f15a5
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 7bb155d8774ad74f760ed62d94d5f44bb1d07d03
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574121"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042938"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -18,7 +18,7 @@ ms.locfileid: "50574121"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的状态。 响应将指示同步的状态。
+获取租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的状态。 该响应将指示同步的状态。
 
 ## <a name="permissions"></a>权限
 
@@ -49,7 +49,7 @@ GET /education/synchronizationProfiles/{id}/profileStatus
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

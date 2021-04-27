@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 744149e76a074427def4bf84f25b902ba15fbb73
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 50c114a0d091a84708685f10c37e21e79ef04373
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436118"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042476"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -74,7 +74,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
 | responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 | sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
-| showAs|String|要显示的状态。 可能的值是： `free` ， ， ， ， `tentative` `busy` `oof` `workingElsewhere` `unknown` 。|
+| showAs|String|要显示的状态。 可能的值是 `free` `tentative` `busy` ：、、、、、。 `oof` `workingElsewhere` `unknown`|
 | start|DateTimeTimeZone|事件的开始日期、时间和时区。 |
 | subject|String|事件的主题行文本。|
 
@@ -138,7 +138,7 @@ Content-length: 285
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

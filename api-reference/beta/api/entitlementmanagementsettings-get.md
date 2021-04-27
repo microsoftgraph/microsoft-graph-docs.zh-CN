@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1bc8fd3682fbe365ee083eec369957f197c3feea
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 398a0f75fd4cbf606cbc5c54c509ade4191fb9f2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436300"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042623"
 ---
 # <a name="get-entitlementmanagementsettings"></a>获取 entitlementManagementSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "50436300"
 
 检索 [entitlementManagementSettings 对象](../resources/entitlementManagementSettings.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50436300"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ GET /identityGovernance/entitlementManagement/settings
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的 entitlementManagementSettings](../resources/entitlementManagementSettings.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [entitlementManagementSettings](../resources/entitlementManagementSettings.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/se
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
