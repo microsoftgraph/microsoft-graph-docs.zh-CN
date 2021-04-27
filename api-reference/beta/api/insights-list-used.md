@@ -5,56 +5,56 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: b29089bf5cfe87ad0aede192a1c89430fc51b5e6
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 21c8306a67532313eef397235e8d1c8ed600b6bb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473225"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040229"
 ---
-# <a name="list-used"></a><span data-ttu-id="f1a2a-103">使用的列表</span><span class="sxs-lookup"><span data-stu-id="f1a2a-103">List used</span></span>
+# <a name="list-used"></a><span data-ttu-id="96725-103">使用的列表</span><span class="sxs-lookup"><span data-stu-id="96725-103">List used</span></span>
 
-<span data-ttu-id="f1a2a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f1a2a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="96725-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="96725-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f1a2a-105">计算并列出用户已查看或修改的文档。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-105">Calculate and list the documents that a user has viewed or modified.</span></span> 
+<span data-ttu-id="96725-105">计算并列出用户已查看或修改的文档。</span><span class="sxs-lookup"><span data-stu-id="96725-105">Calculate and list the documents that a user has viewed or modified.</span></span> 
 
-<span data-ttu-id="f1a2a-106">对于登录用户：</span><span class="sxs-lookup"><span data-stu-id="f1a2a-106">For the signed-in user:</span></span>
-- <span data-ttu-id="f1a2a-107">此方法包括用户已修改的文档;请参阅[示例 1。](#example-1-return-documents-that-user-has-modified)</span><span class="sxs-lookup"><span data-stu-id="f1a2a-107">This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified).</span></span> 
-- <span data-ttu-id="f1a2a-108">对 `$orderby` **lastAccessedDateTime** 属性使用查询参数可返回用户可能修改或可能尚未修改的最近查看的文档;请参阅示例 [2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-108">Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user might or might not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span></span>
+<span data-ttu-id="96725-106">对于登录用户：</span><span class="sxs-lookup"><span data-stu-id="96725-106">For the signed-in user:</span></span>
+- <span data-ttu-id="96725-107">此方法包括用户已修改的文档;请参阅[示例 1。](#example-1-return-documents-that-user-has-modified)</span><span class="sxs-lookup"><span data-stu-id="96725-107">This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified).</span></span> 
+- <span data-ttu-id="96725-108">对 `$orderby` **lastAccessedDateTime** 属性使用查询参数可返回用户可能修改或可能尚未修改的最近查看的文档;请参阅示例 [2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)。</span><span class="sxs-lookup"><span data-stu-id="96725-108">Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user might or might not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span></span>
 
-<span data-ttu-id="f1a2a-109">对于其他用户，此方法仅包括用户已修改的文档。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-109">For other users, this method includes only documents that the user has modified.</span></span>
+<span data-ttu-id="96725-109">对于其他用户，此方法仅包括用户已修改的文档。</span><span class="sxs-lookup"><span data-stu-id="96725-109">For other users, this method includes only documents that the user has modified.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="f1a2a-110">权限</span><span class="sxs-lookup"><span data-stu-id="f1a2a-110">Permissions</span></span>
-<span data-ttu-id="f1a2a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="96725-110">权限</span><span class="sxs-lookup"><span data-stu-id="96725-110">Permissions</span></span>
+<span data-ttu-id="96725-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="96725-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f1a2a-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="f1a2a-113">Permission type</span></span>      | <span data-ttu-id="f1a2a-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f1a2a-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="96725-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="96725-113">Permission type</span></span>      | <span data-ttu-id="96725-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="96725-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f1a2a-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f1a2a-115">Delegated (work or school account)</span></span> | <span data-ttu-id="f1a2a-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1a2a-116">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f1a2a-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f1a2a-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f1a2a-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-118">Not supported.</span></span>    |
-|<span data-ttu-id="f1a2a-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="f1a2a-119">Application</span></span> | <span data-ttu-id="f1a2a-120">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1a2a-120">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="96725-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="96725-115">Delegated (work or school account)</span></span> | <span data-ttu-id="96725-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="96725-116">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="96725-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="96725-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96725-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="96725-118">Not supported.</span></span>    |
+|<span data-ttu-id="96725-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="96725-119">Application</span></span> | <span data-ttu-id="96725-120">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="96725-120">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f1a2a-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f1a2a-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96725-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="96725-121">HTTP request</span></span>
 
-- <span data-ttu-id="f1a2a-122">获取登录用户已修改的文档列表：</span><span class="sxs-lookup"><span data-stu-id="f1a2a-122">Get a list of documents that the signed-in user has modified:</span></span>
+- <span data-ttu-id="96725-122">获取登录用户已修改的文档列表：</span><span class="sxs-lookup"><span data-stu-id="96725-122">Get a list of documents that the signed-in user has modified:</span></span>
   <!-- { "blockType": "ignored" } -->
   
   ```http
   GET /me/insights/used
   ```
 
-- <span data-ttu-id="f1a2a-123">获取指定用户已修改的文档列表：</span><span class="sxs-lookup"><span data-stu-id="f1a2a-123">Get a list of documents that the specified user has modified:</span></span>
+- <span data-ttu-id="96725-123">获取指定用户已修改的文档列表：</span><span class="sxs-lookup"><span data-stu-id="96725-123">Get a list of documents that the specified user has modified:</span></span>
   <!-- { "blockType": "ignored" } -->
   
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
-  ><span data-ttu-id="f1a2a-124">**注意**：请求其他用户使用 **的文档** 将返回按 **lastModifiedDateTime 排序的结果**。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-124">**Note**: Requesting another user's **used** documents returns results sorted by **lastModifiedDateTime**.</span></span> <span data-ttu-id="f1a2a-125">**lastAccessedDateTime** 随后设置为 **lastModifiedDateTime**。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-125">**lastAccessedDateTime** is then set to **lastModifiedDateTime**.</span></span>
+  ><span data-ttu-id="96725-124">**注意**：请求其他用户使用 **的文档** 将返回按 **lastModifiedDateTime 排序的结果**。</span><span class="sxs-lookup"><span data-stu-id="96725-124">**Note**: Requesting another user's **used** documents returns results sorted by **lastModifiedDateTime**.</span></span> <span data-ttu-id="96725-125">**lastAccessedDateTime** 随后设置为 **lastModifiedDateTime**。</span><span class="sxs-lookup"><span data-stu-id="96725-125">**lastAccessedDateTime** is then set to **lastModifiedDateTime**.</span></span>
 
 
-- <span data-ttu-id="f1a2a-126">展开已用见解引用 **的资源** ：</span><span class="sxs-lookup"><span data-stu-id="f1a2a-126">Expand the resource referenced by a **used** insight:</span></span>
+- <span data-ttu-id="96725-126">展开已用见解引用 **的资源** ：</span><span class="sxs-lookup"><span data-stu-id="96725-126">Expand the resource referenced by a **used** insight:</span></span>
   <!-- { "blockType": "ignored" } -->
   
   ```http
@@ -63,41 +63,41 @@ ms.locfileid: "51473225"
   ```
 
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f1a2a-127">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f1a2a-127">Optional query parameters</span></span>
-<span data-ttu-id="f1a2a-128">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应：</span><span class="sxs-lookup"><span data-stu-id="f1a2a-128">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="96725-127">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="96725-127">Optional query parameters</span></span>
+<span data-ttu-id="96725-128">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应：</span><span class="sxs-lookup"><span data-stu-id="96725-128">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
 
-- <span data-ttu-id="f1a2a-129">使用 `$filter` 查询参数筛选已用项目。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-129">Use the `$filter` query parameter to filter used items.</span></span> <span data-ttu-id="f1a2a-130">例如，根据 **类型**：</span><span class="sxs-lookup"><span data-stu-id="f1a2a-130">For example, based on **type**:</span></span>
+- <span data-ttu-id="96725-129">使用 `$filter` 查询参数筛选已用项目。</span><span class="sxs-lookup"><span data-stu-id="96725-129">Use the `$filter` query parameter to filter used items.</span></span> <span data-ttu-id="96725-130">例如，根据 **类型**：</span><span class="sxs-lookup"><span data-stu-id="96725-130">For example, based on **type**:</span></span>
 
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-- <span data-ttu-id="f1a2a-131">用于 `$filter` 根据  **containerType** 筛选已用项：</span><span class="sxs-lookup"><span data-stu-id="f1a2a-131">Use `$filter` to filter used items based on  **containerType**:</span></span>
+- <span data-ttu-id="96725-131">用于 `$filter` 根据  **containerType** 筛选已用项：</span><span class="sxs-lookup"><span data-stu-id="96725-131">Use `$filter` to filter used items based on  **containerType**:</span></span>
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-  <span data-ttu-id="f1a2a-132">请参阅 [resourceVisualization](../resources/insights-resourcevisualization.md)中可以按筛选的可用容器类型和类型。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-132">See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).</span></span>
+  <span data-ttu-id="96725-132">请参阅 [resourceVisualization](../resources/insights-resourcevisualization.md)中可以按筛选的可用容器类型和类型。</span><span class="sxs-lookup"><span data-stu-id="96725-132">See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).</span></span>
 
-- <span data-ttu-id="f1a2a-133">使用 `$orderBy` 查询参数根据 **lastAccessedDateTime** 属性对登录用户最后查看或修改的文档进行排序： </span><span class="sxs-lookup"><span data-stu-id="f1a2a-133">Use the `$orderBy` query parameter to sort documents last viewed or modified _by the signed-in user_, based on the **lastAccessedDateTime** property:</span></span>
+- <span data-ttu-id="96725-133">使用 `$orderBy` 查询参数根据 **lastAccessedDateTime** 属性对登录用户最后查看或修改的文档进行排序： </span><span class="sxs-lookup"><span data-stu-id="96725-133">Use the `$orderBy` query parameter to sort documents last viewed or modified _by the signed-in user_, based on the **lastAccessedDateTime** property:</span></span>
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  ><span data-ttu-id="f1a2a-134">**注意**：仅对登录 _用户使用此查询选项_。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-134">**Note**: Use this query option _only for the signed-in user_.</span></span> <span data-ttu-id="f1a2a-135">不能使用此 API 获取其他用户查看或修改的文档。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-135">You cannot use this API to get documents viewed or modified by another user.</span></span> <span data-ttu-id="f1a2a-136">请参阅[示例 2。](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)</span><span class="sxs-lookup"><span data-stu-id="f1a2a-136">See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span></span>
+  ><span data-ttu-id="96725-134">**注意**：仅对登录 _用户使用此查询选项_。</span><span class="sxs-lookup"><span data-stu-id="96725-134">**Note**: Use this query option _only for the signed-in user_.</span></span> <span data-ttu-id="96725-135">不能使用此 API 获取其他用户查看或修改的文档。</span><span class="sxs-lookup"><span data-stu-id="96725-135">You cannot use this API to get documents viewed or modified by another user.</span></span> <span data-ttu-id="96725-136">请参阅[示例 2。](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)</span><span class="sxs-lookup"><span data-stu-id="96725-136">See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="f1a2a-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="f1a2a-137">Request headers</span></span>
-| <span data-ttu-id="f1a2a-138">标头</span><span class="sxs-lookup"><span data-stu-id="f1a2a-138">Header</span></span>       |  <span data-ttu-id="f1a2a-139">值</span><span class="sxs-lookup"><span data-stu-id="f1a2a-139">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="96725-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="96725-137">Request headers</span></span>
+| <span data-ttu-id="96725-138">标头</span><span class="sxs-lookup"><span data-stu-id="96725-138">Header</span></span>       |  <span data-ttu-id="96725-139">值</span><span class="sxs-lookup"><span data-stu-id="96725-139">Value</span></span>|
 |:-------------|:------|
-| <span data-ttu-id="f1a2a-140">Authorization</span><span class="sxs-lookup"><span data-stu-id="f1a2a-140">Authorization</span></span>  | <span data-ttu-id="f1a2a-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-p105">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="f1a2a-143">接受</span><span class="sxs-lookup"><span data-stu-id="f1a2a-143">Accept</span></span>  | <span data-ttu-id="f1a2a-144">application/json</span><span class="sxs-lookup"><span data-stu-id="f1a2a-144">application/json</span></span>|
+| <span data-ttu-id="96725-140">Authorization</span><span class="sxs-lookup"><span data-stu-id="96725-140">Authorization</span></span>  | <span data-ttu-id="96725-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="96725-p105">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="96725-143">接受</span><span class="sxs-lookup"><span data-stu-id="96725-143">Accept</span></span>  | <span data-ttu-id="96725-144">application/json</span><span class="sxs-lookup"><span data-stu-id="96725-144">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f1a2a-145">请求正文</span><span class="sxs-lookup"><span data-stu-id="f1a2a-145">Request body</span></span>
-<span data-ttu-id="f1a2a-146">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-146">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="96725-145">请求正文</span><span class="sxs-lookup"><span data-stu-id="96725-145">Request body</span></span>
+<span data-ttu-id="96725-146">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="96725-146">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f1a2a-147">响应</span><span class="sxs-lookup"><span data-stu-id="f1a2a-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="96725-147">响应</span><span class="sxs-lookup"><span data-stu-id="96725-147">Response</span></span>
 
-<span data-ttu-id="f1a2a-148">如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和[](../resources/insights-used.md)已用项列表。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-148">If successful, this method returns a `200 OK` response code and a list of [used](../resources/insights-used.md) items in the response body.</span></span>
+<span data-ttu-id="96725-148">如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和[](../resources/insights-used.md)已用项列表。</span><span class="sxs-lookup"><span data-stu-id="96725-148">If successful, this method returns a `200 OK` response code and a list of [used](../resources/insights-used.md) items in the response body.</span></span>
 
-<span data-ttu-id="f1a2a-149">如果已禁用目标用户的项目见解，此方法将返回 `403 Forbidden` 并出现以下错误：</span><span class="sxs-lookup"><span data-stu-id="f1a2a-149">If item insights of targeted user have been disabled, this method returns `403 Forbidden` and the following error:</span></span>
+<span data-ttu-id="96725-149">如果已禁用目标用户的项目见解，此方法将返回 `403 Forbidden` 并出现以下错误：</span><span class="sxs-lookup"><span data-stu-id="96725-149">If item insights of targeted user have been disabled, this method returns `403 Forbidden` and the following error:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```
@@ -112,15 +112,15 @@ ms.locfileid: "51473225"
   }
 }
 ```
-<span data-ttu-id="f1a2a-150">有关详细信息，请参阅[自定义见解隐私](/graph/insights-customize-item-insights-privacy.md)。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-150">For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md).</span></span> 
+<span data-ttu-id="96725-150">有关详细信息，请参阅[自定义见解隐私](/graph/insights-customize-item-insights-privacy.md)。</span><span class="sxs-lookup"><span data-stu-id="96725-150">For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md).</span></span> 
 
-## <a name="example"></a><span data-ttu-id="f1a2a-151">示例</span><span class="sxs-lookup"><span data-stu-id="f1a2a-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="96725-151">示例</span><span class="sxs-lookup"><span data-stu-id="96725-151">Example</span></span>
 
-### <a name="example-1-return-documents-that-user-has-modified"></a><span data-ttu-id="f1a2a-152">示例 1：返回用户已修改的文档</span><span class="sxs-lookup"><span data-stu-id="f1a2a-152">Example 1: Return documents that user has modified</span></span>
+### <a name="example-1-return-documents-that-user-has-modified"></a><span data-ttu-id="96725-152">示例 1：返回用户已修改的文档</span><span class="sxs-lookup"><span data-stu-id="96725-152">Example 1: Return documents that user has modified</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f1a2a-153">请求</span><span class="sxs-lookup"><span data-stu-id="f1a2a-153">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="96725-153">请求</span><span class="sxs-lookup"><span data-stu-id="96725-153">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f1a2a-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="f1a2a-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="96725-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="96725-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mymodifieddocuments"
@@ -129,28 +129,28 @@ ms.locfileid: "51473225"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/used
 ```
-# <a name="c"></a>[<span data-ttu-id="f1a2a-155">C#</span><span class="sxs-lookup"><span data-stu-id="f1a2a-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="96725-155">C#</span><span class="sxs-lookup"><span data-stu-id="96725-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mymodifieddocuments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f1a2a-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f1a2a-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="96725-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="96725-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mymodifieddocuments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f1a2a-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f1a2a-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="96725-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="96725-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifieddocuments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f1a2a-158">Java</span><span class="sxs-lookup"><span data-stu-id="f1a2a-158">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="96725-158">Java</span><span class="sxs-lookup"><span data-stu-id="96725-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-mymodifieddocuments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f1a2a-159">响应</span><span class="sxs-lookup"><span data-stu-id="f1a2a-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="96725-159">响应</span><span class="sxs-lookup"><span data-stu-id="96725-159">Response</span></span>
 
-><span data-ttu-id="f1a2a-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f1a2a-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span> 
+><span data-ttu-id="96725-160">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="96725-160">**Note:** The response object shown here might be shortened for readability.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -190,11 +190,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified"></a><span data-ttu-id="f1a2a-162">示例 2：返回登录用户可能修改或可能未修改的最近查看的文档</span><span class="sxs-lookup"><span data-stu-id="f1a2a-162">Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified</span></span> 
+### <a name="example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified"></a><span data-ttu-id="96725-161">示例 2：返回登录用户可能修改或可能未修改的最近查看的文档</span><span class="sxs-lookup"><span data-stu-id="96725-161">Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="f1a2a-163">请求</span><span class="sxs-lookup"><span data-stu-id="f1a2a-163">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="96725-162">请求</span><span class="sxs-lookup"><span data-stu-id="96725-162">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f1a2a-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="f1a2a-164">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="96725-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="96725-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mymodifiedandvieweddocuments"
@@ -203,26 +203,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
 ```
-# <a name="c"></a>[<span data-ttu-id="f1a2a-165">C#</span><span class="sxs-lookup"><span data-stu-id="f1a2a-165">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="96725-164">C#</span><span class="sxs-lookup"><span data-stu-id="96725-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mymodifiedandvieweddocuments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f1a2a-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f1a2a-166">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="96725-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="96725-165">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mymodifiedandvieweddocuments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f1a2a-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f1a2a-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="96725-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="96725-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifiedandvieweddocuments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f1a2a-168">Java</span><span class="sxs-lookup"><span data-stu-id="f1a2a-168">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="96725-167">Java</span><span class="sxs-lookup"><span data-stu-id="96725-167">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-mymodifiedandvieweddocuments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f1a2a-169">响应</span><span class="sxs-lookup"><span data-stu-id="f1a2a-169">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="96725-168">响应</span><span class="sxs-lookup"><span data-stu-id="96725-168">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
