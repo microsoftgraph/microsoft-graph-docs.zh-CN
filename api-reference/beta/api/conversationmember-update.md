@@ -1,16 +1,16 @@
 ---
 title: 更新 conversationMember
-description: 在团队或频道中更新 conversationMember 的角色。
+description: 更新团队或频道中 conversationMember 的角色。
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 24366fadfb863ba78b8f92ba39c25008c795e23e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0127d88adb5abaadc3698d4b1d237433e7ed9088
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956702"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047026"
 ---
 # <a name="update-conversationmember"></a>更新 conversationMember
 
@@ -18,11 +18,11 @@ ms.locfileid: "48956702"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[团队](../resources/team.md)中更新[conversationMember](../resources/conversationmember.md)的角色。
+更新团队 [中 conversationMember](../resources/conversationmember.md) [的角色](../resources/team.md)。
 或 [频道](../resources/channel.md)。
 
 > [!NOTE]
-> 在通道上，此操作仅在具有 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的通道上受支持 `private` 。 与任何其他 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的调用将返回 `400 Bad Request` 响应。
+> 在频道上，此操作仅在 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 为 的频道上受支持 `private` 。 具有任何其他 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的调用将返回 `400 Bad Request` 响应。
 
 ## <a name="permissions"></a>权限
 
@@ -30,9 +30,9 @@ ms.locfileid: "48956702"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| 在团队中： TeamMember<br/>在信道中： ChannelMember、Group、all、All、All |
+|委派（工作或学校帐户）| 在团队中：TeamMember.ReadWrite.All<br/>在频道中：ChannelMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| 在团队中： TeamMember<br/>在信道中： ChannelMember、Group、all、All、All |
+|应用程序| 在团队中：TeamMember.ReadWrite.All<br/>在频道中：ChannelMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->
@@ -53,7 +53,7 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|角色|string 集合|该用户的角色。 必须为 "owner" 或空。 来宾用户必须始终拥有角色 "来宾"，并且无法更改。 |
+|角色|string 集合|该用户的角色。 必须是"owner"或为空。 来宾用户必须始终具有角色"来宾"且无法更改。 |
 
 ## <a name="response"></a>响应
 
@@ -103,7 +103,7 @@ content-length: 26
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

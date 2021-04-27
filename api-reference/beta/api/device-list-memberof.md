@@ -1,16 +1,16 @@
 ---
 title: 列出设备组
-description: 获取此设备是其直接成员组的组。 此操作不可传递。
+description: 获取此设备是其直接成员组。 此操作不可传递。
 author: spunukol
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d37036734e1e00d8130612528ee90305c3986476
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b7271f38e11505930cb377cb05399a2e7f93d458
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437196"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046977"
 ---
 # <a name="list-device-groups"></a>列出设备组
 
@@ -18,7 +18,7 @@ ms.locfileid: "50437196"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取此设备是其直接成员组的组。 此操作不可传递。
+获取此设备是其直接成员组。 此操作不可传递。
 
 ## <a name="permissions"></a>Permissions
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 #### <a name="response"></a>响应
 
 下面展示了示例响应。 
-> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -151,7 +151,7 @@ Content-type: text/plain
 
 394
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取显示名称的成员资格，这些显示名称包含字母"Video"（包括返回的对象数）
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取包含字母"Video"的显示名称（包括返回的对象计数）的成员资格
 
 #### <a name="request"></a>请求
 
@@ -169,7 +169,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -194,7 +194,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换和$filter获取以字母"A"开头的 显示名称 的成员资格，其中包括返回的对象数
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换$filter获取以字母"A"开头显示名称（包括返回的对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 
@@ -212,7 +212,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ description: 创建 driveItems 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8883006a6aa1daf86e4d3b8a6efac31e0ae25376
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 21312f78257fbd3c7c371e3c22e1ee03905402c1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471381"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046270"
 ---
 # <a name="create-bundle"></a>创建捆绑包
 
@@ -18,7 +18,7 @@ ms.locfileid: "50471381"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向用户 [驱动器][] 添加新捆绑包。
+将新 [捆绑包][] 添加到用户驱动器。
 
 [bundle]: ../resources/bundle.md
 
@@ -44,7 +44,7 @@ POST /drive/bundles
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -61,7 +61,7 @@ POST /drive/bundles
 ### <a name="example-1-create-a-bundle"></a>示例 1：创建捆绑包
 
 以下示例演示如何创建基本的新捆绑包。
-此请求将创建一个名为的新捆绑包 `Just some files` ，并添加两个现有项到捆绑包。
+此请求将创建一个名为 的新捆绑包 `Just some files` ，并添加两个现有项到该捆绑包。
 此捆绑包可用于与其他用户共享文件集合，而无需共享存储这些项目的文件夹。
 
 #### <a name="request"></a>请求
@@ -120,11 +120,11 @@ Content-Type: application/json
 }
 ```
 
-为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。
 
 ### <a name="example-2-create-an-album"></a>示例 2：创建相册
 
-创建新相册的请求相似，尽管该相册属性在捆绑包 Facet 中设置为非 null 值。
+创建新相册的请求相似，尽管在 bundle Facet 中，相册属性设置为非 null 值。
 
 #### <a name="request"></a>请求
 
@@ -182,13 +182,13 @@ Content-Type: application/json
 }
 ```
 
-为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。
 
-如果 _@microsoft.graph.conflictBehavior_ 设置为重命名，并且已存在同名的捆绑包，则新的捆绑包名称将更新为唯一。
-OneDrive 将在捆绑包名称的末尾追加一个数字。
+如果将 _@microsoft.graph.conflictBehavior_ 设置为 **rename，** 并且已存在同名的捆绑包，则新的捆绑包名称将更新为唯一。
+OneDrive将在捆绑包名称的末尾附加一个数字。
 
 例如，将把 `My Day at the Beach` 重命名为 `My Day at the Beach 1`。
-如果使用 `My Day at the Beach 1` ，则数字将再次递增，直到发现唯一的捆绑包名称。
+如果 `My Day at the Beach 1` 已取值，则数字将再次递增，直到发现唯一的捆绑包名称。
 
 
 [error-response]: /graph/errors
@@ -198,7 +198,7 @@ OneDrive 将在捆绑包名称的末尾追加一个数字。
   "description": "Create a new bundle or photo album.",
   "keywords": "create,bundle",
   "section": "documentation",
-  "tocPath": "Bundles/Create"
+  "tocPath&quot;: &quot;Bundles/Create"
 } -->
 
 

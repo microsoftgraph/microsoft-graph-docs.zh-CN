@@ -1,16 +1,16 @@
 ---
 title: 列出成员
-description: 检索分配给目录角色的用户列表。  只能将用户分配给目录角色。
+description: 检索分配给目录角色的用户列表。只能将用户分配给目录角色。
 author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f72327df70108e0d6d64d5669b0ec277694e2c1a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9425849444a31454e3a98fcd2fbabd8a04184938
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436795"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046823"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -18,8 +18,8 @@ ms.locfileid: "50436795"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索分配给目录角色的用户列表。  只能将用户分配给目录角色。
-## <a name="permissions"></a>Permissions
+检索分配给目录角色的用户列表。只能将用户分配给目录角色。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -27,7 +27,7 @@ ms.locfileid: "50436795"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/directoryRoles/{id}/members
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

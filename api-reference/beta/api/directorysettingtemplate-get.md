@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c6968a8bba66e99799e187e63e1acd6288617fe5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 55b3d9d2f5a4bc141a6d8af177d30aa882a8e090
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436608"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046557"
 ---
 # <a name="get-a-directory-setting-template"></a>获取目录设置模板
 
@@ -20,9 +20,9 @@ ms.locfileid: "50436608"
 
 目录设置模板表示可以在租户中创建设置的模板。 此操作允许检索 **directorySettingTemplate** 对象的属性，包括可用设置及其默认值。
 
-> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Get groupSettingTemplate。*
+> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Get groupSettingTemplate*。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ GET /directorySettingTemplates/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

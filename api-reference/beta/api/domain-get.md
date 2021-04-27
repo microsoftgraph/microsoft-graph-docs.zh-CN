@@ -1,16 +1,16 @@
 ---
 title: 获取域
-description: 检索域对象的属性和关系。
+description: 检索 domain 对象的属性和关系。
 author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bc6f552d3ac10731f142662b333e3ad4619e9ff9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2575eefb2ce3585466de3e10fefb71e76859650c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436552"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046508"
 ---
 # <a name="get-domain"></a>获取域
 
@@ -18,9 +18,9 @@ ms.locfileid: "50436552"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索域对象的属性和关系。
+检索 domain 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "50436552"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
+|应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ GET /domains/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应[](../resources/domain.md)代码和域对象。
+如果成功，此方法在响应 `200 OK` 正文中返回[](../resources/domain.md)响应代码和 domain 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/domains/contoso.com
 ---
 
 ##### <a name="response"></a>响应
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

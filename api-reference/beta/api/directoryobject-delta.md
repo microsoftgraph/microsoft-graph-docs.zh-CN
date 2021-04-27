@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 88a78e85d640c5d6e5c62fef239f29485d820897
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 51076a2530b1b1696e271b02e916a74ca0d31516
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946633"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046872"
 ---
 # <a name="directoryobject-delta"></a>directoryObject： delta
 
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 尚未 `isOf` 使用筛选器，因此将返回从 directoryObject 派生的所有类型的筛选器。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

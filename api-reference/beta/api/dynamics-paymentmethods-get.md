@@ -1,18 +1,18 @@
 ---
 title: 获取 paymentMethods
-description: 获取 Dynamics 365 Business Central 中的付款方式对象。
+description: 获取 Dynamics 365 Business Central 中的一个付款方式对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b2162578856b80deff2507ccf97222cb825f61a1
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7e4dbaa92c8c9415c27dc1b1f368150a69a5c352
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474314"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045157"
 ---
 # <a name="get-paymentmethods"></a>获取 paymentMethods
 
@@ -49,7 +49,7 @@ GET /financials/companies/{id}/paymentMethods/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` **paymentMethods** 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **paymentMethods** 对象。
 
 ## <a name="example"></a>示例
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{i
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```json
 {

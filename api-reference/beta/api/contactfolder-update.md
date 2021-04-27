@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dbb53baa6a5506dee9c71139f16520021f375af2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 471b2965e39c8aa43e01f7df6bae1aaf91792b2e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956999"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047061"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 
@@ -47,7 +47,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|文件夹的显示名称。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
-|wellKnownName|string|文件夹的名称（如果文件夹是可识别的文件夹）。 当前 `contacts` 是唯一可识别的 "联系人" 文件夹。|
+|wellKnownName|string|如果文件夹是可识别的文件夹，则文件夹的名称。 当前 `contacts` 是唯一可识别的联系人文件夹。|
 
 ## <a name="response"></a>响应
 
@@ -90,7 +90,7 @@ Content-length: 84
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

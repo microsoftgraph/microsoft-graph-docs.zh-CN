@@ -1,18 +1,18 @@
 ---
-title: directoryDefinition：发现
+title: directoryDefinition： discover
 description: '发现用于预配到应用程序的最新架构定义。 '
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4b83168464b8f8ab563ffa549d601e35929684bb
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 0f4d5a26128c78dca1245f5b8c15f6a446e4296a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625883"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046886"
 ---
-# <a name="directorydefinition-discover"></a>directoryDefinition：发现
+# <a name="directorydefinition-discover"></a>directoryDefinition： discover
 
 命名空间：microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "50625883"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All  | 
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{di
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 一个 [包含 directoryDefinition 对象的](../resources/synchronization-directorydefinition.md) 响应。
+如果成功，此方法返回 `200 OK` [directoryDefinition 对象](../resources/synchronization-directorydefinition.md) 的响应。
 
 ## <a name="example"></a>示例
 
@@ -88,7 +88,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 响应示例如下所示。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

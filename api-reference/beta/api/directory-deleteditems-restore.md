@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e263d8693b277156d96dc6668945699466979fa0
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: f542b6617d1f58d22304bd10f8bbefed2b22741a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176548"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046900"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "50176548"
 
 从[已删除的项目](../resources/directory.md)中还原最近删除的项目。 
 
-目前，仅应用程序、组和用户资源支持还原[已删除的项目功能](../resources/user.md)。 [](../resources/group.md) [](../resources/application.md) 如果意外删除项目，可完全还原该项目。 这不适用于永久删除的安全组。
+目前，仅应用程序、组和用户资源支持还原已删除[项目](../resources/user.md)功能。 [](../resources/group.md) [](../resources/application.md) 如果意外删除项目，可完全还原该项目。 这不适用于永久删除的安全组。
 
 最近删除的项目将保留最多 30 天的可用时间。 30 天后，该项目将永久删除。
 
@@ -61,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 需要记 &lt; 名 &gt; *令牌*|
+| Authorization  | 需要 Bearer &lt; &gt; *token*|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -102,7 +102,7 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-
 ---
 
 ### <a name="response"></a>响应
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

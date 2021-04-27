@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3648009d17e48fc4da49727e1f4b5428f51e1402
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 319d2d09ec25a95bfaacd13d87a10f390ee10777
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961301"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044387"
 ---
 # <a name="list-categories"></a>列出类别
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/c
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "ignored",

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 92332f8ccec383738e77b7e0f613695411e2333c
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1d4e0a8a177d487bedf85872a23a5ade8e52b708
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474231"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045059"
 ---
 # <a name="get-shipmentmethods"></a>获取 shipmentMethods
 
@@ -49,7 +49,7 @@ GET /financials/companies/{id}/shipmentMethods/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` **shipmentMethods** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **shipmentMethods** 对象。
 
 ## <a name="example"></a>示例
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods/{
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```json
 {

@@ -1,16 +1,16 @@
 ---
 title: 获取成员对象
-description: " 返回用户、组、服务主体或目录对象是成员的所有组、管理单元和目录角色。 此函数是可传递的。 "
+description: " 返回用户、组、服务主体或目录对象是其中成员的所有组、管理单元和目录角色。 此函数是可传递的。 "
 localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47ad4aa86e41ace7edc9e5b5eb0351557a94a7ae
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a5f7ef92699cab5a7f39046e6ac5fe2fdab8585d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436860"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046844"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 
@@ -18,10 +18,10 @@ ms.locfileid: "50436860"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- 返回用户、组、服务主体或目录对象是成员的所有组、管理单元和目录角色。 此函数是可传递的。 
+ 返回用户、组、服务主体或目录对象是其中成员的所有组、管理单元和目录角色。 此函数是可传递的。 
  > 注意：只有用户可以是目录角色的成员。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -95,7 +95,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

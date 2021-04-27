@@ -1,17 +1,17 @@
 ---
 title: driveItem： restore
-description: 还原已删除且当前在回收站中的 driveItem。
+description: 还原已删除且当前位于回收站中的 driveItem。
 localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 ms.date: 08/06/2019
 doc_type: apiPageType
-ms.openlocfilehash: aef61c906ff51e16d84c4f2f54444bc2343fffd1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fc1d9e1dc44af3ccbca132d8d54f1413e029f614
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963528"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046263"
 ---
 # <a name="driveitem-restore"></a>driveItem： restore
 
@@ -19,7 +19,7 @@ ms.locfileid: "48963528"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-还原已删除且当前在回收站中的 [driveItem](../resources/driveitem.md) 。 **注意** ：此功能目前仅适用于 OneDrive 个人版。
+还原已删除且当前位于回收站中的[driveItem。](../resources/driveitem.md) **注意**：此功能当前仅适用于个人OneDrive。
 
 ## <a name="permissions"></a>权限
 
@@ -51,12 +51,12 @@ POST /me/drive/items/{item-id}/restore
 
 | 参数     | 类型                                         | 说明 |
 |:--------------|:---------------------------------------------|:------------|
-|parentReference|[ItemReference](../resources/itemreference.md)| 可选。 对父项的引用，已删除的项将还原到该父项。 |
-|name           |String                                        | 可选。 已还原的项的新名称。 如果未提供新名称，将同一名称用作原始名称。 |
+|parentReference|[ItemReference](../resources/itemreference.md)| 可选。 对已删除项目将还原到的父项的引用。 |
+|name           |String                                        | 可选。 已还原项目的新名称。 如果未提供新名称，将同一名称用作原始名称。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和还原的 [driveItem](../resources/driveitem.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和已还原的 [driveItem](../resources/driveitem.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

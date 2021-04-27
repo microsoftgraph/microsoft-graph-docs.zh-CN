@@ -1,18 +1,18 @@
 ---
 title: 创建货币
-description: 在 Dynamics 365 Business Central 中创建货币对象。
+description: 在 Dynamics 365 Business Central 创建货币对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: a0b374c85cded81b4547c576537f79036fa8427f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 941a22ebccbe0d55bba3f64bab237d0478327529
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473404"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046004"
 ---
 # <a name="create-currencies"></a>创建货币
 
@@ -20,7 +20,7 @@ ms.locfileid: "50473404"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Dynamics 365 Business Central 中创建货币对象。
+在 Dynamics 365 Business Central 创建货币对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,10 +46,10 @@ POST /financials/companies/{id}/currencies
 |Content-Type   |application/json         |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供货币对象的 JSON **表示** 形式。
+在请求正文中，提供 currencies 对象的 JSON **表示** 形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码 ```201 Created``` 和货币对象。 
+如果成功，此方法在 ```201 Created``` 响应正文中返回 **响应** 代码和货币对象。
 
 ## <a name="example"></a>示例
 
@@ -74,7 +74,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 201 Created

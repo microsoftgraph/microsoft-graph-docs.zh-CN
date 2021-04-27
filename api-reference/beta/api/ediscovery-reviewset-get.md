@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4a3478e7aee0459dea9f9c03d0d5ed6dfde50d54
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 220a52d7ceb7a3b5fce766a9ec98dbe9c7bf308b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446029"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044695"
 ---
 # <a name="get-reviewset"></a>获取 reviewSet
 
@@ -18,9 +18,9 @@ ms.locfileid: "50446029"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [reviewSet 对象的属性和](../resources/ediscovery-reviewset.md) 关系。
+检索 [reviewSet](../resources/ediscovery-reviewset.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50446029"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,9 +42,9 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-默认情况下，将返回所有审阅集字段;但是，您可以使用 OData 查询参数指定要返回 `$select` 的某些字段。  例如，若要仅返回 **displayName** 和 ID，请向查询 `$select=displayName,Id` 中添加以下内容：
+默认情况下，将返回所有审阅集字段;但是，您可以使用 OData 查询参数指定要返回 `$select` 的某些字段。  例如，若要仅返回 **displayName** 和 ID，请向查询中添加以下内容 `$select=displayName,Id` ：。
 
-由于请求可以返回许多情况，因此可以使用 **displayName** 进行筛选。  若要按 **displayName 进行筛选**，请向查询中添加以下内容：，其中 `$filter=displayName eq 'rs1'` 审阅集名称为 rs1。
+由于请求可能会返回许多情况，因此可以使用 **displayName 筛选它们**。  若要按 **displayName 进行筛选**，请向查询中添加以下内容：，其中 `$filter=displayName eq 'rs1'` 审阅集名称为 rs1。
 
 有关筛选和指定字段的信息，请参阅在 [OData URI 中使用筛选器表达式 ](/dynamics-nav/using-filter-expressions-in-odata-uris)。
 
@@ -60,7 +60,7 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/6f65a8e4-c6a0-4
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

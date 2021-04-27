@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e25443b376ca84e5177946332ed8a8bfb0eb6c51
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 937ad1e434f01716fbbd6c5634fbd60716f2a2c6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956872"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047040"
 ---
 # <a name="get-conversation"></a>获取对话
 
@@ -24,9 +24,9 @@ ms.locfileid: "48956872"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group. 全部，Group。 Read. All    |
+|委派（工作或学校帐户） | Group.ReadWrite.All、Group.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group. 全部，Group。 Read. All |
+|应用程序 | Group.ReadWrite.All、Group.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

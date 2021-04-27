@@ -1,18 +1,18 @@
 ---
 title: 获取 agedAccountsPayable
-description: 获取 Dynamics 365 Business Central 中的一个应付款帐户对象。
+description: 获取 Dynamics 365 Business Central 中应付款的已付款帐户对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e39778aa0e61fe9c70ec29733577a32a366e5b67
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 717b2df6664ae712f2d9e4c273eac13abf88a930
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473425"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046179"
 ---
 # <a name="get-agedaccountspayable"></a>获取 agedAccountsPayable
 
@@ -20,7 +20,7 @@ ms.locfileid: "50473425"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 Dynamics 365 Business Central 的已付款帐户付款报告对象的属性和关系。
+检索 Dynamics 365 Business Central 的应付款帐户应付款报告对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ GET /financials/companies/{id}/agedAccountsPayable
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` **一个 agedAccountsPayable** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **一个 agedAccountsPayable** 对象。
 
 ## <a name="example"></a>示例
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayab
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```json
 {

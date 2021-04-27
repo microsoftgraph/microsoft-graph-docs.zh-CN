@@ -1,18 +1,18 @@
 ---
 title: 获取员工
-description: 获取 Dynamics 365 Business Central 中的员工对象。
+description: 获取 Dynamics 365 Business Central 中的 employee 对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: bf72c6b40eec557897a250772640869d8236ea5a
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: a53cd084838c5d00fb10f0ef80f6c888b24a0c87
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473103"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045402"
 ---
 # <a name="get-employees"></a>获取员工
 
@@ -20,7 +20,7 @@ ms.locfileid: "50473103"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 Dynamics 365 Business Central 的员工对象的属性和关系。
+检索 Dynamics 365 Business Central 的 employee 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/employees/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 **employees** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **employees** 对象。
 
 **请求**
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```json
 {

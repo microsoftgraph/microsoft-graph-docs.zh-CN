@@ -1,16 +1,16 @@
 ---
 title: 列出 directorySettingTemplates
-description: 此操作检索可用 directorySettingTemplates 对象的列表。
+description: 此操作将检索可用 directorySettingTemplates 对象的列表。
 localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 13462b4a4d980d42667fee1252c8ded94b0a7ea8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 06b62e868991f7da1012b23fbacc940665cd8350
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436601"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046543"
 ---
 # <a name="list-directorysettingtemplates"></a>列出 directorySettingTemplates
 
@@ -18,11 +18,11 @@ ms.locfileid: "50436601"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-目录设置模板表示目录设置的一组模板，可以在租户中创建和使用的目录设置。  此操作检索可用 **directorySettingTemplates 对象** 的列表。
+目录设置模板表示目录设置的一组模板，可以在租户中创建和使用此目录设置。  此操作将检索可用 **directorySettingTemplates 对象** 的列表。
 
-> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *List groupSettingTemplate。*
+> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *List groupSettingTemplate*。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ GET /directorySettingTemplates
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

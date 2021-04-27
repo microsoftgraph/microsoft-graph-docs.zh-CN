@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 119fe854c1bc04f850e89fcaf9dd8460b87ac95d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4eadc22c5e88243319245b90c165534bb062e404
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966601"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044429"
 ---
 # <a name="remove-educationrubric-from-educationassignment"></a>从 educationAssignment 中删除 educationRubric
 
@@ -18,7 +18,7 @@ ms.locfileid: "48966601"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[educationAssignment](../resources/educationassignment.md)中删除[educationRubric](../resources/educationrubric.md) 。  这不会删除 rubric 本身。
+从[educationAssignment](../resources/educationassignment.md)中删除[educationRubric。](../resources/educationrubric.md)  这不会删除项目本身。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "48966601"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EduAssignments、ReadWriteBasic、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric/$re
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

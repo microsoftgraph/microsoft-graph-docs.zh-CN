@@ -1,24 +1,24 @@
 ---
-title: 更新 educationalactivity
+title: 更新教育活动
 description: 更新 educationalActivity 对象的属性。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e672c1259d888b8a8fa4f6972268216ed57d9bdc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7f59b6ef2b5bebb2369a3cbd44baaae6ca209b97
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966641"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044478"
 ---
-# <a name="update-educationalactivity"></a>更新 educationalactivity
+# <a name="update-educationalactivity"></a>更新教育活动
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新用户的[配置文件](../resources/profile.md)中的[educationalActivity](../resources/educationalactivity.md)对象的属性。
+更新用户配置文件 [中的 educationalActivity](../resources/educationalactivity.md) 对象 [的属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48966641"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -53,16 +53,16 @@ PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|completionMonthYear|日期|用户逐步或完成活动的月份和年份。 |
+|completionMonthYear|日期|用户注册或完成活动的月份和年份。 |
 |endMonthYear|日期|用户完成所引用的教育活动的月份和年份。|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|机构|[institutionData](../resources/institutiondata.md)|包含在上研究的机构的详细信息。 |
-|主程序|[educationalActivityDetail](../resources/educationalactivitydetail.md)|包含有关程序或课程的扩展信息。|
-|startMonthYear|日期|用户 commenced 引用的活动的月份和年份。|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|机构|[institutionData](../resources/institutiondata.md)|包含所查看的机构的详细信息。 |
+|程序|[educationalActivityDetail](../resources/educationalactivitydetail.md)|包含有关计划或课程的扩展信息。|
+|startMonthYear|日期|用户对所引用的活动进行跟踪的月份和年份。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [educationalActivity](../resources/educationalactivity.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新 `200 OK` [的 educationalActivity](../resources/educationalactivity.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -118,7 +118,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

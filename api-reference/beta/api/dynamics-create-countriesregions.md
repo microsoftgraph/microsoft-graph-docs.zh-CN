@@ -1,18 +1,18 @@
 ---
 title: 创建 countriesRegions
-description: 在 Dynamics 365 Business Central 中创建国家/地区对象。
+description: 在 Dynamics 365 Business Central 创建国家/地区对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d1f534193c2996693ccbce1c6ec6c9a2be6a9fb9
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c220f8bf4bed00c5203921cfb4efde0d29105152
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471360"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046018"
 ---
 # <a name="create-countriesregions"></a>创建 countriesRegions
 
@@ -20,7 +20,7 @@ ms.locfileid: "50471360"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Dynamics 365 Business Central 中创建 countriesRegions 对象。
+在 Dynamics 365 Business Central 创建 countriesRegions 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,10 +46,10 @@ POST /financials/companies/{id}/countriesRegions
 |Content-Type  |application/json   |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 **countriesRegions 对象的** JSON 表示形式。
+在请求正文中，提供 **countriesRegions** 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应 ```201 Created``` 代码和 **countriesRegions** 对象。
+如果成功，此方法在 ```201 Created``` 响应正文中返回 响应代码和 **countriesRegions** 对象。
 
 ## <a name="example"></a>示例
 
@@ -72,7 +72,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 201 Created

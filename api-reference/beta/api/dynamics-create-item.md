@@ -1,18 +1,18 @@
 ---
 title: 创建项目
-description: 在 Dynamics 365 Business Central 中创建项目对象。
+description: 在 Dynamics 365 Business Central 创建项目对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 27c56da8501ec8617228754327c8c2ad35f2f653
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 544155babf455cf013ca3bd2979f64ba8cb37d8c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473292"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045934"
 ---
 # <a name="create-items"></a>创建项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "50473292"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Dynamics 365 Business Central 中创建一个项目，用于发票、报价等。
+在 Dynamics 365 Business Central 创建用于发票、报价等的项目。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,10 +46,10 @@ POST /financials/companies/{id}/items
 |Content-Type |application/json         |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 items 对象的 JSON **表示形式** 。
+在请求正文中，提供 items 对象的 JSON **表示** 形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码 ```201 Created``` 和 items 对象。 
+如果成功，此方法在 ```201 Created``` 响应正文中返回 响应代码和 **items** 对象。
 
 ## <a name="example"></a>示例
 **请求**
@@ -81,7 +81,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 201 Created

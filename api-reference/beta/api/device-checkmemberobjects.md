@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6ea5fffe49079388cac3d9d18daab5a13d7a05f0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 071ce116c26cea3fba8672c62d78fa054946295a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437228"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046984"
 ---
 # <a name="device-checkmemberobjects"></a>device： checkMemberObjects
 
@@ -20,7 +20,7 @@ ms.locfileid: "50437228"
 
 检查指定设备对象的组或管理单元列表中的成员身份。 此方法是可传递的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 下面展示了示例响应。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

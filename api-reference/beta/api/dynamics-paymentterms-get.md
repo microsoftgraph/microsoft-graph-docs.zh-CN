@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b0a882a043652eb1b4f0e6be0290c04cf33e1e1b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7e4ff3372fa492c03f6213c2971c3c9a25050e78
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474272"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045101"
 ---
 # <a name="get-paymentterms"></a>获取 paymentTerms
 
@@ -49,7 +49,7 @@ GET /financials/companies/{id}/paymentTerms/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 **paymentTerms** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **paymentTerms** 对象。
 
 ## <a name="example"></a>示例
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```json
 {

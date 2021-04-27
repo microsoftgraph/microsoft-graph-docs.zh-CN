@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b288d6617563ec524c7dc0af65ebffae0fc708de
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ef13c35d3450cfd7f409a59a543662ffeb5db0e5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446081"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044730"
 ---
 # <a name="create-reviewset"></a>创建 reviewSet
 
@@ -18,9 +18,9 @@ ms.locfileid: "50446081"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [reviewSet](../resources/ediscovery-reviewset.md) 对象。 请求正文包含显示名称审阅集，这是唯一可写属性。
+创建新的 [reviewSet](../resources/ediscovery-reviewset.md) 对象。 请求正文包含显示名称审阅集的唯一可写属性的正文。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50446081"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -99,7 +99,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

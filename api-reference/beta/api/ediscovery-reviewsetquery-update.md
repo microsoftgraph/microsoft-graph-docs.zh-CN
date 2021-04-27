@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ebb702472756cdaac31281437362c69bdef6690e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d5ce888c2b4a32e175ddc69e2edc6f2df0fc0411
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772792"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044548"
 ---
 # <a name="update-reviewsetquery"></a>更新 reviewSetQuery
 
@@ -28,7 +28,7 @@ ms.locfileid: "50772792"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,8 +50,8 @@ PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| displayName | 字符串 | 他们查看集查询的显示名称。 |
-| 查询 | 字符串 | KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅文档 [元数据字段](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 |
+| displayName | String | 他们查看集查询的显示名称。 |
+| 查询 | String | KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅文档 [元数据字段](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 |
 
 ## <a name="response"></a>响应
 
@@ -100,7 +100,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

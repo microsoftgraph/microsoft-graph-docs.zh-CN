@@ -1,18 +1,18 @@
 ---
 title: 创建供应商
-description: 在 Dynamics 365 Business Central 中创建供应商对象。
+description: 在 Dynamics 365 Business Central 创建供应商对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 0074567f6e7d197aaf4948838bc1137735ce768f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 24e058f673e499aa58bf2c52765dc0c391412c07
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473187"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045680"
 ---
 # <a name="create-vendors"></a>创建供应商
 
@@ -20,7 +20,7 @@ ms.locfileid: "50473187"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Dynamics 365 商业中心创建供应商对象。
+在 Dynamics 365 Business Central 创建供应商对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ POST /financials/companies/{id}/vendors
 在请求正文中，提供供应商对象的 JSON **表示形式** 。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码 ```201 Created``` 和供应商对象。 
+如果成功，此方法在 ```201 Created``` 响应正文中返回响应代码和供应商对象。
 
 ## <a name="example"></a>示例
 
@@ -86,7 +86,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 201 Created

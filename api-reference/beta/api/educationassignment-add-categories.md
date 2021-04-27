@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0f5a536ba1dc6390d8642f82de2d4bf131602c62
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c94ffa2f11ae8fd77380fa164affdded4cfb3b2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007894"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044408"
 ---
 # <a name="add-educationcategories"></a>添加 educationCategories
 
@@ -18,14 +18,14 @@ ms.locfileid: "48007894"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将一个或多个现有 [educationCategory](../resources/educationcategory.md) 对象添加到此 [educationAssignment](../resources/educationassignment.md)。
+将一个或多个现有的 [educationCategory](../resources/educationcategory.md) 对象添加到 [此 educationAssignment](../resources/educationassignment.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。  | 
 
@@ -41,7 +41,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供现有的 [educationCategory](../resources/educationcategory.md) 对象 (s 的 odata.id，) 添加到此工作分配中。
+在请求正文中，odata.id 现有 [educationCategory](../resources/educationcategory.md) () 添加到此分配。
 
 
 ## <a name="response"></a>响应
@@ -64,11 +64,11 @@ Content-length: 212
 }
 
 ```
-在请求正文中，提供要添加到此工作分配的现有 [educationCategory](../resources/educationcategory.md) 对象的 odata.id。
+在请求正文中，odata.id 要添加到此分配的现有 [educationCategory](../resources/educationcategory.md) 对象的组。
 ##### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 
 <!-- {
