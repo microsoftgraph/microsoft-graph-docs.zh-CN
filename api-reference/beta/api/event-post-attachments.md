@@ -5,34 +5,34 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 859060a1c0a67c5b7c30f5dca72432953247c048
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 18c73e333c98c86c66b8ed8227aa9f98cfcfcbb8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954783"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042532"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="5f1bb-104">添加附件</span><span class="sxs-lookup"><span data-stu-id="5f1bb-104">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="6c392-104">添加附件</span><span class="sxs-lookup"><span data-stu-id="6c392-104">Add attachment</span></span>
 
-<span data-ttu-id="5f1bb-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5f1bb-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6c392-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6c392-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5f1bb-106">使用此 API 可将 [附件](../resources/attachment.md) 添加到现有 [事件](../resources/event.md)中。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-106">Use this API to add an [attachment](../resources/attachment.md) to an existing [event](../resources/event.md).</span></span> <span data-ttu-id="5f1bb-107">此操作将限制可添加到 3 MB 以下的附件的大小。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-107">This operation limits the size of the attachment you can add to under 3 MB.</span></span>
+<span data-ttu-id="6c392-106">使用此 API 将附件 [添加到](../resources/attachment.md) 现有 [事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="6c392-106">Use this API to add an [attachment](../resources/attachment.md) to an existing [event](../resources/event.md).</span></span> <span data-ttu-id="6c392-107">此操作将可添加到的附件的大小限制在 3 MB 以下。</span><span class="sxs-lookup"><span data-stu-id="6c392-107">This operation limits the size of the attachment you can add to under 3 MB.</span></span>
 
-<span data-ttu-id="5f1bb-108">如果组织者将附件添加到会议事件中，则组织者随后可以 [更新](event-update.md) 事件以发送附件并为每个与会者同时更新事件。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-108">If an organizer adds an attachment to a meeting event, the organizer can subsequently [update](event-update.md) the event to send the attachment and update the event for each attendee as well.</span></span>
+<span data-ttu-id="6c392-108">如果组织者向会议事件添加附件，组织者随后可以更新事件以发送附件[](event-update.md)并更新每个与会者的事件。</span><span class="sxs-lookup"><span data-stu-id="6c392-108">If an organizer adds an attachment to a meeting event, the organizer can subsequently [update](event-update.md) the event to send the attachment and update the event for each attendee as well.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5f1bb-109">权限</span><span class="sxs-lookup"><span data-stu-id="5f1bb-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6c392-109">权限</span><span class="sxs-lookup"><span data-stu-id="6c392-109">Permissions</span></span>
 
-<span data-ttu-id="5f1bb-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6c392-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6c392-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5f1bb-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="5f1bb-112">Permission type</span></span>      | <span data-ttu-id="5f1bb-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5f1bb-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6c392-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="6c392-112">Permission type</span></span>      | <span data-ttu-id="6c392-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6c392-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5f1bb-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5f1bb-114">Delegated (work or school account)</span></span> | <span data-ttu-id="5f1bb-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5f1bb-115">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="5f1bb-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5f1bb-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5f1bb-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5f1bb-117">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="5f1bb-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="5f1bb-118">Application</span></span> | <span data-ttu-id="5f1bb-119">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5f1bb-119">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="6c392-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6c392-114">Delegated (work or school account)</span></span> | <span data-ttu-id="6c392-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6c392-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="6c392-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6c392-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6c392-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6c392-117">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="6c392-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="6c392-118">Application</span></span> | <span data-ttu-id="6c392-119">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6c392-119">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5f1bb-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5f1bb-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6c392-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6c392-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,28 +45,28 @@ POST /users/{id | userPrincipalName}/events/{id}/attachments
 POST /groups/{id}/events/{id}/attachments
 -->
 
-## <a name="request-headers"></a><span data-ttu-id="5f1bb-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="5f1bb-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6c392-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="6c392-121">Request headers</span></span>
 
-| <span data-ttu-id="5f1bb-122">名称</span><span class="sxs-lookup"><span data-stu-id="5f1bb-122">Name</span></span>       | <span data-ttu-id="5f1bb-123">类型</span><span class="sxs-lookup"><span data-stu-id="5f1bb-123">Type</span></span> | <span data-ttu-id="5f1bb-124">说明</span><span class="sxs-lookup"><span data-stu-id="5f1bb-124">Description</span></span>|
+| <span data-ttu-id="6c392-122">名称</span><span class="sxs-lookup"><span data-stu-id="6c392-122">Name</span></span>       | <span data-ttu-id="6c392-123">类型</span><span class="sxs-lookup"><span data-stu-id="6c392-123">Type</span></span> | <span data-ttu-id="6c392-124">说明</span><span class="sxs-lookup"><span data-stu-id="6c392-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5f1bb-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="5f1bb-125">Authorization</span></span>  | <span data-ttu-id="5f1bb-126">string</span><span class="sxs-lookup"><span data-stu-id="5f1bb-126">string</span></span>  | <span data-ttu-id="5f1bb-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5f1bb-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5f1bb-129">Content-Type</span></span> | <span data-ttu-id="5f1bb-130">string</span><span class="sxs-lookup"><span data-stu-id="5f1bb-130">string</span></span>  | <span data-ttu-id="5f1bb-p105">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="6c392-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="6c392-125">Authorization</span></span>  | <span data-ttu-id="6c392-126">string</span><span class="sxs-lookup"><span data-stu-id="6c392-126">string</span></span>  | <span data-ttu-id="6c392-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6c392-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6c392-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6c392-129">Content-Type</span></span> | <span data-ttu-id="6c392-130">string</span><span class="sxs-lookup"><span data-stu-id="6c392-130">string</span></span>  | <span data-ttu-id="6c392-p105">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="6c392-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5f1bb-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="5f1bb-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6c392-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="6c392-133">Request body</span></span>
 
-<span data-ttu-id="5f1bb-134">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-134">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="6c392-134">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6c392-134">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5f1bb-135">响应</span><span class="sxs-lookup"><span data-stu-id="5f1bb-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6c392-135">响应</span><span class="sxs-lookup"><span data-stu-id="6c392-135">Response</span></span>
 
-<span data-ttu-id="5f1bb-136">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-136">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="6c392-136">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="6c392-136">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a><span data-ttu-id="5f1bb-137">示例（文件附件）</span><span class="sxs-lookup"><span data-stu-id="5f1bb-137">Example (file attachment)</span></span>
+## <a name="example-file-attachment"></a><span data-ttu-id="6c392-137">示例（文件附件）</span><span class="sxs-lookup"><span data-stu-id="6c392-137">Example (file attachment)</span></span>
 
-### <a name="request"></a><span data-ttu-id="5f1bb-138">请求</span><span class="sxs-lookup"><span data-stu-id="5f1bb-138">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6c392-138">请求</span><span class="sxs-lookup"><span data-stu-id="6c392-138">Request</span></span>
 
-<span data-ttu-id="5f1bb-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-139">Here is an example of the request.</span></span>
+<span data-ttu-id="6c392-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6c392-139">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5f1bb-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="5f1bb-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6c392-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="6c392-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event_beta"
@@ -83,30 +83,30 @@ Content-length: 151
     "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="5f1bb-141">C#</span><span class="sxs-lookup"><span data-stu-id="5f1bb-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6c392-141">C#</span><span class="sxs-lookup"><span data-stu-id="6c392-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5f1bb-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5f1bb-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6c392-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6c392-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5f1bb-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5f1bb-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6c392-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6c392-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-event-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5f1bb-144">Java</span><span class="sxs-lookup"><span data-stu-id="5f1bb-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6c392-144">Java</span><span class="sxs-lookup"><span data-stu-id="6c392-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-event-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="5f1bb-145">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-145">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="6c392-145">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6c392-145">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-### <a name="response"></a><span data-ttu-id="5f1bb-146">响应</span><span class="sxs-lookup"><span data-stu-id="5f1bb-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6c392-146">响应</span><span class="sxs-lookup"><span data-stu-id="6c392-146">Response</span></span>
 
-<span data-ttu-id="5f1bb-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6c392-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6c392-147">Here is an example of the response.</span></span> <span data-ttu-id="6c392-148">注意：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="6c392-148">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_beta",
@@ -133,11 +133,11 @@ Content-Length: 735
 }
 ```
 
-## <a name="example-item-attachment"></a><span data-ttu-id="5f1bb-150">示例（项目附件）</span><span class="sxs-lookup"><span data-stu-id="5f1bb-150">Example (item attachment)</span></span>
+## <a name="example-item-attachment"></a><span data-ttu-id="6c392-149">示例（项目附件）</span><span class="sxs-lookup"><span data-stu-id="6c392-149">Example (item attachment)</span></span>
 
-### <a name="request"></a><span data-ttu-id="5f1bb-151">请求</span><span class="sxs-lookup"><span data-stu-id="5f1bb-151">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6c392-150">请求</span><span class="sxs-lookup"><span data-stu-id="6c392-150">Request</span></span>
 
-<span data-ttu-id="5f1bb-152">下面将一个事件附加到另一个事件作为项目附件的示例。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-152">Here is an example which attaches an event with another event as an item attachment.</span></span>
+<span data-ttu-id="6c392-151">下面将一个事件附加到另一个事件作为项目附件的示例。</span><span class="sxs-lookup"><span data-stu-id="6c392-151">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -172,9 +172,9 @@ Content-length: 600
 ```
 
 
-### <a name="response"></a><span data-ttu-id="5f1bb-153">响应</span><span class="sxs-lookup"><span data-stu-id="5f1bb-153">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6c392-152">响应</span><span class="sxs-lookup"><span data-stu-id="6c392-152">Response</span></span>
 
-<span data-ttu-id="5f1bb-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6c392-153">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6c392-153">Here is an example of the response.</span></span> <span data-ttu-id="6c392-154">注意：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="6c392-154">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
@@ -200,14 +200,14 @@ Content-length: 162
 }
 ```
 
-## <a name="example-reference-attachment"></a><span data-ttu-id="5f1bb-157">示例（参考附件）</span><span class="sxs-lookup"><span data-stu-id="5f1bb-157">Example (reference attachment)</span></span>
+## <a name="example-reference-attachment"></a><span data-ttu-id="6c392-155">示例（参考附件）</span><span class="sxs-lookup"><span data-stu-id="6c392-155">Example (reference attachment)</span></span>
 
-### <a name="request"></a><span data-ttu-id="5f1bb-158">请求</span><span class="sxs-lookup"><span data-stu-id="5f1bb-158">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6c392-156">请求</span><span class="sxs-lookup"><span data-stu-id="6c392-156">Request</span></span>
 
-<span data-ttu-id="5f1bb-159">下面的示例展示了向现有事件添加引用附件的请求。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-159">Here is an example of a request that adds a reference attachment to an existing event.</span></span>
-<span data-ttu-id="5f1bb-160">附件指向 OneDrive 上的文件夹。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-160">The attachment points to a folder on OneDrive.</span></span>
+<span data-ttu-id="6c392-157">下面是向现有事件添加引用附件的请求示例。</span><span class="sxs-lookup"><span data-stu-id="6c392-157">Here is an example of a request that adds a reference attachment to an existing event.</span></span>
+<span data-ttu-id="6c392-158">附件指向文件夹上的OneDrive。</span><span class="sxs-lookup"><span data-stu-id="6c392-158">The attachment points to a folder on OneDrive.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5f1bb-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="5f1bb-161">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6c392-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="6c392-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_event"
@@ -227,28 +227,28 @@ Content-length: 319
     "isFolder": "True"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="5f1bb-162">C#</span><span class="sxs-lookup"><span data-stu-id="5f1bb-162">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6c392-160">C#</span><span class="sxs-lookup"><span data-stu-id="6c392-160">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5f1bb-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5f1bb-163">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6c392-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6c392-161">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-from-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5f1bb-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5f1bb-164">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6c392-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6c392-162">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-from-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5f1bb-165">Java</span><span class="sxs-lookup"><span data-stu-id="5f1bb-165">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6c392-163">Java</span><span class="sxs-lookup"><span data-stu-id="6c392-163">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-reference-attachment-from-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="5f1bb-166">响应</span><span class="sxs-lookup"><span data-stu-id="5f1bb-166">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6c392-164">响应</span><span class="sxs-lookup"><span data-stu-id="6c392-164">Response</span></span>
 
-<span data-ttu-id="5f1bb-167">下面的示例展示了完整的响应。</span><span class="sxs-lookup"><span data-stu-id="5f1bb-167">Here is an example of a full response.</span></span>
+<span data-ttu-id="6c392-165">下面是完整响应的示例。</span><span class="sxs-lookup"><span data-stu-id="6c392-165">Here is an example of a full response.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_event",
