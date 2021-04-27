@@ -364,7 +364,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 注意
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -977,7 +977,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出 transitive memberOf
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -11908,7 +11908,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注释
+              - name: 注意
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -11992,7 +11992,7 @@ items:
                     href: api/itempublication-update.md
                   - name: 删除
                     href: api/itempublication-delete.md
-              - name: Responsibilities
+              - name: 责任
                 items:
                   - name: 个人责任
                     href: resources/personresponsibility.md
@@ -13722,10 +13722,14 @@ items:
                 href: api/table-list-rows.md
               - name: 创建行
                 href: api/table-post-rows.md
+              - name: 删除行
+                href: api/tablerow-delete.md
               - name: 列出列
                 href: api/table-list-columns.md
               - name: 创建列
                 href: api/table-post-columns.md
+              - name: 删除列
+                href: api/tablecolumn-delete.md
               - name: 获取区域
                 href: api/table-range.md
           - name: 图表

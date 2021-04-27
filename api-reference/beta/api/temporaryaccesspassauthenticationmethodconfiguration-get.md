@@ -2,36 +2,35 @@
 title: 获取 temporaryAccessPassAuthenticationMethodConfiguration
 description: 读取 temporaryAccessPassAuthenticationMethodConfiguration 对象的属性和关系。
 author: inbarckms
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 08a20da2f4c14a3d3a6d3581765eb5e168e8b721
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: b0874968f9cce1b60a3b0f85a68ac4ccbf9a887e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759508"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049644"
 ---
-# <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a><span data-ttu-id="c4ef5-103">获取 temporaryAccessPassAuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="c4ef5-103">Get temporaryAccessPassAuthenticationMethodConfiguration</span></span>
-<span data-ttu-id="c4ef5-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c4ef5-104">Namespace: microsoft.graph</span></span>
+# <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a><span data-ttu-id="9f7c0-103">获取 temporaryAccessPassAuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="9f7c0-103">Get temporaryAccessPassAuthenticationMethodConfiguration</span></span>
+<span data-ttu-id="9f7c0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9f7c0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c4ef5-105">读取[临时AccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Azure Active Directory (Azure AD) 租户的临时访问传递身份验证方法策略。 [](../resources/authenticationmethodspolicies-overview.md)</span><span class="sxs-lookup"><span data-stu-id="c4ef5-105">Read the properties and relationships of a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object, which represents the Temporary Access Pass [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.</span></span>
+<span data-ttu-id="9f7c0-105">读取[临时AccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Azure Active Directory (Azure AD 租户的临时访问) 策略。 [](../resources/authenticationmethodspolicies-overview.md)</span><span class="sxs-lookup"><span data-stu-id="9f7c0-105">Read the properties and relationships of a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object, which represents the Temporary Access Pass [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c4ef5-106">权限</span><span class="sxs-lookup"><span data-stu-id="c4ef5-106">Permissions</span></span>
-<span data-ttu-id="c4ef5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c4ef5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9f7c0-106">权限</span><span class="sxs-lookup"><span data-stu-id="9f7c0-106">Permissions</span></span>
+<span data-ttu-id="9f7c0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9f7c0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c4ef5-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c4ef5-109">Permission type</span></span>|<span data-ttu-id="c4ef5-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c4ef5-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="9f7c0-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9f7c0-109">Permission type</span></span>|<span data-ttu-id="9f7c0-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9f7c0-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c4ef5-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c4ef5-111">Delegated (work or school account)</span></span>|<span data-ttu-id="c4ef5-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="c4ef5-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
-|<span data-ttu-id="c4ef5-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c4ef5-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c4ef5-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="c4ef5-114">Not supported.</span></span>|
-|<span data-ttu-id="c4ef5-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="c4ef5-115">Application</span></span>|<span data-ttu-id="c4ef5-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="c4ef5-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="9f7c0-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9f7c0-111">Delegated (work or school account)</span></span>|<span data-ttu-id="9f7c0-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="9f7c0-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="9f7c0-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9f7c0-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9f7c0-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9f7c0-114">Not supported.</span></span>|
+|<span data-ttu-id="9f7c0-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9f7c0-115">Application</span></span>|<span data-ttu-id="9f7c0-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="9f7c0-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
 
- <span data-ttu-id="c4ef5-117">对于委派方案，管理员需要全局管理员角色。</span><span class="sxs-lookup"><span data-stu-id="c4ef5-117">For delegated scenarios, the administrator needs the Global admin role.</span></span> <span data-ttu-id="c4ef5-118">有关详细信息，请参阅[角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。</span><span class="sxs-lookup"><span data-stu-id="c4ef5-118">For more information, see[roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
+ <span data-ttu-id="9f7c0-117">对于委派方案，管理员需要全局管理员角色。</span><span class="sxs-lookup"><span data-stu-id="9f7c0-117">For delegated scenarios, the administrator needs the Global admin role.</span></span> <span data-ttu-id="9f7c0-118">有关详细信息，请参阅[角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。</span><span class="sxs-lookup"><span data-stu-id="9f7c0-118">For more information, see[roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c4ef5-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c4ef5-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9f7c0-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9f7c0-119">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -40,18 +39,18 @@ ms.locfileid: "50759508"
 ``` http
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
 ```
-## <a name="request-headers"></a><span data-ttu-id="c4ef5-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c4ef5-120">Request headers</span></span>
-|<span data-ttu-id="c4ef5-121">名称</span><span class="sxs-lookup"><span data-stu-id="c4ef5-121">Name</span></span>|<span data-ttu-id="c4ef5-122">说明</span><span class="sxs-lookup"><span data-stu-id="c4ef5-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9f7c0-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="9f7c0-120">Request headers</span></span>
+|<span data-ttu-id="9f7c0-121">名称</span><span class="sxs-lookup"><span data-stu-id="9f7c0-121">Name</span></span>|<span data-ttu-id="9f7c0-122">说明</span><span class="sxs-lookup"><span data-stu-id="9f7c0-122">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="c4ef5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c4ef5-123">Authorization</span></span>|<span data-ttu-id="c4ef5-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c4ef5-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="9f7c0-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9f7c0-123">Authorization</span></span>|<span data-ttu-id="9f7c0-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9f7c0-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c4ef5-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c4ef5-126">Request body</span></span>
-<span data-ttu-id="c4ef5-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c4ef5-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9f7c0-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="9f7c0-126">Request body</span></span>
+<span data-ttu-id="9f7c0-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9f7c0-127">Do not supply a request body for this method.</span></span>
 
-### <a name="response"></a><span data-ttu-id="c4ef5-128">响应</span><span class="sxs-lookup"><span data-stu-id="c4ef5-128">Response</span></span>
-<span data-ttu-id="c4ef5-129">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c4ef5-129">The following is an example of the response.</span></span>
+### <a name="response"></a><span data-ttu-id="9f7c0-128">响应</span><span class="sxs-lookup"><span data-stu-id="9f7c0-128">Response</span></span>
+<span data-ttu-id="9f7c0-129">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9f7c0-129">The following is an example of the response.</span></span>
 
-<span data-ttu-id="c4ef5-130">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c4ef5-130">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="9f7c0-130">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="9f7c0-130">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
