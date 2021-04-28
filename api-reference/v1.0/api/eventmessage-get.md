@@ -1,16 +1,16 @@
 ---
 title: 获取 eventMessage
-description: 在 **事件** 导航属性中展开参数，以在与会者的日历中获取关联的事件。
+description: 展开事件 **导航属性** 上的参数，获取与会者日历中的关联事件。
 localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e570987ec70f90b00d58a93832cb384bf31f8929
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4dc549c39c5113e972485fab647b5c4363b6ca14
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459751"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048741"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -20,7 +20,7 @@ ms.locfileid: "48459751"
 
 此操作暂返回纯 HTML 格式的事件邮件正文。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 响应中返回关联事件的属性。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 响应中返回关联事件的属性。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

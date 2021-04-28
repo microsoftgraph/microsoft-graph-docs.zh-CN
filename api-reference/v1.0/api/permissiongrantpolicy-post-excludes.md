@@ -1,22 +1,22 @@
 ---
-title: 在 permissionGrantPolicy 的排除集合中创建 permissionGrantConditionSet
+title: 在 permissionGrantPolicy 的 excludes 集合中创建 permissionGrantConditionSet
 description: 添加权限授予策略中排除权限授予事件的条件。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 7ccf201c25c068f92ce33013b7b7bb5ad1547509
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c7d082b92c1e3378b47dda156e7323bc3c6ae3d5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448086"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051275"
 ---
-# <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>在 permissionGrantPolicy 的排除集合中创建 permissionGrantConditionSet
+# <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>在 permissionGrantPolicy 的 excludes 集合中创建 permissionGrantConditionSet
 
 命名空间：microsoft.graph
 
-添加权限授予策略中排除权限授予事件的条件。 为此，将[permissionGrantConditionSet](../resources/permissiongrantconditionset.md)添加到[permissionGrantPolicy 的排除集合。](../resources/permissionGrantPolicy.md) 
+添加权限授予策略中排除 *权限* 授予事件的条件。 为此，将 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md)添加到 [permissionGrantPolicy](../resources/permissionGrantPolicy.md)的 **excludes** 集合。
 
 ## <a name="permissions"></a>权限
 
@@ -49,13 +49,13 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-本示例中，Microsoft  Graph (**appId** 000000003-0000-0000-c000-0000000000000000000) 的所有委派权限都从权限授予策略中排除。
+本示例中，Microsoft  Graph (**appId** 00000003-0000-0000-c000-0000000000000) 的所有委派权限都从权限授予策略中排除。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,7 +97,7 @@ Content-Type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

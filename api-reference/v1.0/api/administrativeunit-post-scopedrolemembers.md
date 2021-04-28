@@ -1,22 +1,22 @@
 ---
 title: 添加 scopedRoleMember
-description: 添加新 scopedRoleMembership。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
+description: 添加新的 scopedRoleMembership。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
 localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: febbe691916dc3da65731e0da52cec654c5ac16e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2a764fee9a0b6ac92fa3aa12ecc44910b4bc4e84
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432975"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040194"
 ---
 # <a name="add-a-scopedrolemember"></a>添加 scopedRoleMember
 
 命名空间：microsoft.graph
 
-添加新 [scopedRoleMembership](../resources/scopedrolemembership.md)。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
+添加新的 [scopedRoleMembership](../resources/scopedrolemembership.md)。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,11 +39,11 @@ POST /directory/administrativeUnits/{id}/scopedRoleMembers
 | Authorization  | Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [scopedRoleMembership 对象的](../resources/scopedrolemembership.md) JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回 [响应代码和 scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -88,9 +88,9 @@ Content-length: 272
 
 ---
 
-在请求正文中，提供 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [scopedRoleMembership 对象的](../resources/scopedrolemembership.md) JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

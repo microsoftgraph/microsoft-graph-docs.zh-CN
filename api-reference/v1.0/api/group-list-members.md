@@ -1,16 +1,16 @@
 ---
 title: 列出成员
-description: 获取组的直接成员列表。 组可将用户、组织联系人、设备、服务主体和其他组作为成员。
+description: 获取组的直接成员列表。组可将用户、组织联系人、设备、服务主体和其他组作为成员。
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a0d9c77bb6fd6bb7685fd13ae816ee5587c01f83
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 34b8a353455ee4392a984284f27adae562f34248
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272196"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048713"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -193,7 +193,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -240,7 +240,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

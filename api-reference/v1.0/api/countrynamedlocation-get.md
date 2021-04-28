@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1c7bf45d45fd6f204f45e9fe7c659bb42555fb71
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a5b0cbe07223512aaad1bf33449a1b20b80b056c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434683"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050533"
 ---
 # <a name="get-countrynamedlocation"></a>获取 countryNamedLocation
 
 命名空间：microsoft.graph
 
-检索 [countryNamedLocation 对象的属性和](../resources/countryNamedLocation.md) 关系。
+检索 [countryNamedLocation](../resources/countryNamedLocation.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/1
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

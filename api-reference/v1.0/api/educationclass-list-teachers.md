@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e0257d7f467fe5232ea1281f7ab4be6662934d5a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 0c1e3ca9fe9a82ca4590bf629065df15e6f809bb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461151"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051464"
 ---
 # <a name="list-teachers"></a>列出教师
 
@@ -18,7 +18,7 @@ ms.locfileid: "48461151"
 
 检索课程的教师列表。 委派令牌必须是课程的成员才能获取教师列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

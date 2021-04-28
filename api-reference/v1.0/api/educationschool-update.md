@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f1428992c909ac5c8e33cfd0ec53131ea5a0feb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b051e5339c2cc32cfd0dad58e21154cf8e9cca8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038945"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051436"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationSchool 属性
 
@@ -49,7 +49,7 @@ PATCH /education/schools/{id}
 | 属性            | 类型                                               | 说明                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
 | displayName         | String                                             | 学校的显示名称         |
-| description         | String                                             | 学校描述          |
+| 说明         | String                                             | 学校描述          |
 | principalEmail      | String                                             | 主体的电子邮件地址     |
 | principalName       | String                                             | 主体名称              |
 | externalPrincipalId | String                                             | 同步系统中主体的 ID。 |
@@ -110,7 +110,7 @@ Content-length: 292
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

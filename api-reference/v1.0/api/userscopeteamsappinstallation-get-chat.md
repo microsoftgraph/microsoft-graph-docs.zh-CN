@@ -1,22 +1,22 @@
 ---
-title: 获取指定用户和 Teams 应用之间的一对一聊天
-description: 检索指定用户与 Teams 应用之间的一对一聊天。
+title: 获取指定用户与应用之间的 1：1 Teams聊天
+description: 检索指定用户与应用之间的一对一Teams聊天。
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 29c13e3c58cd7285146ffc80845496540146c6d1
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: d96221ba87b9181d9f43fa2010728e178b14dcce
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706155"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051163"
 ---
-# <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>获取指定用户和 Teams 应用之间的一对一聊天
+# <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>获取指定用户与应用之间的一对一Teams聊天
 
 命名空间：microsoft.graph
 
-检索[指定](../resources/chat.md)用户和 Teams[应用的](../resources/user.md)[聊天](../resources/teamsapp.md)。
+检索[指定用户的](../resources/chat.md)聊天[和Teams](../resources/user.md)[应用](../resources/teamsapp.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -52,11 +52,11 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [聊天](../resources/chat.md) 对象的实例。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [chat](../resources/chat.md) 对象的实例。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>示例 1：列出指定用户和 Teams 应用之间的一对一聊天
+### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>示例 1：列出指定用户与应用之间的一对一Teams聊天
 
 #### <a name="request"></a>请求
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "user_chat_teamsApps",

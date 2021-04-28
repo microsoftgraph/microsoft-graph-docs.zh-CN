@@ -1,16 +1,16 @@
 ---
 title: 获取 educationClass
-description: "  组管理员代表课程中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
+description: "  组管理员表示班级中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3359cbdb797fafc0a78b35cef5b66111b30c4074
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4bbbe40a291657813023596d3fd42cdfcd5c3310
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460031"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048762"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -18,7 +18,7 @@ ms.locfileid: "48460031"
 
 从系统检索课程。 课程是带特殊属性的通用组，向系统表明该组是课程。 组成员表示学生；组管理员代表课程教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

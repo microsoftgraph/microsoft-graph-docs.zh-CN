@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 17e2dd9396da3ae572e883250514b26fd3ba7c21
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: a5434dd1406afca1891695dd3d0b84c29f188a2a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51472077"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050211"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/me/directReports
 ### <a name="response"></a>响应
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fa9b96d3df3c03dd48f75142cfc58efc5d0b0cd8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1f1c759cade945fb8dad05d82ae30c9044074e5f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434816"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051569"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>创建 certificateBasedAuthConfiguration
 
@@ -52,11 +52,11 @@ POST /organization/{id}/certificateBasedAuthConfiguration/$ref
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) 集合 |创建受信任证书链的证书颁发机构的集合。  集合的每个成员都必须包含 **证书** 和 **isRootAuthority** 属性。 |
+|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) 集合 |创建受信任证书链的证书颁发机构的集合。  集合的每个成员都必须包含 **证书和** **isRootAuthority** 属性。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6950722d4fcc0c2f52c6ad2dd2e7fc4acc674557
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8924c536510d7fd13496096a7e803cc4f896ec9a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132508"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050603"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/applications/{id}
 ### <a name="response"></a>响应
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

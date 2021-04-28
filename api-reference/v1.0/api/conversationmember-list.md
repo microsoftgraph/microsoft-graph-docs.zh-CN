@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f065a9cc508e557cc57c7c3658b9816baf47b1d3
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 4a5e1ee844baee50458b15d3502e6cc5185c942d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202349"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052444"
 ---
 # <a name="list-conversationmembers"></a>列出 conversationMembers
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/chats/{id}/members
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

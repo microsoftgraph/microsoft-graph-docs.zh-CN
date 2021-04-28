@@ -1,28 +1,28 @@
 ---
-title: 呼叫：取消静音
+title: call： unmute
 description: 允许应用程序自行取消静音。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 85e6885588d8c43c5c7c9b3c7204cef45a02fd93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8cd47614020fc76386e5c9e8acff6a386fcadd7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992452"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051583"
 ---
-# <a name="call-unmute"></a>呼叫：取消静音
+# <a name="call-unmute"></a>call： unmute
 
 命名空间：microsoft.graph
 
 允许应用程序自行取消静音。
 
-这是一种服务器取消静音，这意味着服务器将再次开始将此参与者的音频数据包发送给其他参与者。
+这是服务器取消静音，这意味着服务器将开始向其他参与者发送此参与者的音频数据包。
 
-有关如何处理静音操作的详细信息，请参阅 [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md)。
+若要详细了解如何处理取消静音操作，请参阅 [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md)。
 
-> **注意：** 仅组调用支持此方法。
+> **注意：** 此方法仅支持组调用。
 
 ## <a name="permissions"></a>权限
 
@@ -49,10 +49,10 @@ POST /communications/calls/{id}/unmute
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
+|clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) 对象。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 
@@ -95,7 +95,7 @@ Content-Length: 46
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -124,7 +124,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-unmuted"></a>通知名单使用参与者 unmuted 更新
+##### <a name="notification---roster-updated-with-participant-unmuted"></a>通知 - 使用参与者取消静音更新名单
 
 ```http
 POST https://bot.contoso.com/api/calls

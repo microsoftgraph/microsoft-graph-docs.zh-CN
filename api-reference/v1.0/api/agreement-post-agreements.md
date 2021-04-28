@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 1a3e30754a9359d26c41bad35407674c9b5c88c5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c72ff9b7dace7847ddc65416ca3876545dd0c03b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774969"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040124"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -34,7 +34,7 @@ POST /identityGovernance/termsOfUse/agreements
 ## <a name="request-headers"></a>请求标头
 | 名称         | 说明 |
 |:-------------|:------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 | Content-type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
@@ -44,12 +44,12 @@ POST /identityGovernance/termsOfUse/agreements
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|协议的显示名称。|
+|displayName|String|协议的显示名称。|
 |isViewingBeforeAcceptanceRequired|Boolean|指示用户在接受之前是否必须展开和查看协议。|
 |fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
 |isDefault|Boolean|指示如果语言与客户端首选项匹配，这是否是默认协议文件。 如果未将任何文件标记为默认文件，则第一个文件将被视为默认文件。|
 |language|String|协议文件的语言，格式为 languagecode2-country/regioncode2。 languagecode2 是从 ISO 639-1 派生的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个小写字母或 BCP-47 语言标记 (例如 en-US) 。|
-|data|Binary|表示 PDF 文档的使用条款的数据。|
+|data|二进制|表示 PDF 文档的使用条款的数据。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `201, Created` 正文中返回 响应[](../resources/agreement.md)代码和 agreement 对象。
@@ -104,7 +104,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

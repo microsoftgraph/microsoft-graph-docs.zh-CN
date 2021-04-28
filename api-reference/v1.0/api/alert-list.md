@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1e1f0d250d73c998371f52ad8ab26374dd85b9b6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01bad74bcd27ca68af0a1fbbf3ca6e4d25b07c55
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992844"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048853"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 604a05ab01312707b52274c6276ce044349f0d43
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 9261db7230c1655398f61f5f37d9f6792f79d066
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473190"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051359"
 ---
 # <a name="list-trending"></a>列出趋势
 
@@ -18,7 +18,7 @@ ms.locfileid: "51473190"
 
 计算得出的见解，其中包括围绕用户趋势的文档列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -77,7 +77,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。 请参阅页面底部的未截断响应示例。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。 请参阅页面底部的未截断响应示例。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

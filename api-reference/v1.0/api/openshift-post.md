@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7e99f3070c372dedcad2310b55539a14e7ed9c8e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e6109cbc84e3eeb5f1bb6e627b985225d77f0436
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057120"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051331"
 ---
 # <a name="create-openshift"></a>创建 openShift
 
 命名空间：microsoft.graph
 
-创建 [openShift](../resources/openshift.md) 对象的实例。
+创建 [openShift 对象](../resources/openshift.md) 的实例。
 
 ## <a name="permissions"></a>权限
 
@@ -24,11 +24,11 @@ ms.locfileid: "48057120"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
+| 委派（工作或学校帐户）     | Schedule.ReadWrite.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Schedule.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /teams/{id}/schedule/openShifts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和创建的 [openShift](../resources/openshift.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和创建的 `200 OK` [openShift](../resources/openshift.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -107,7 +107,7 @@ Content-length: 244
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

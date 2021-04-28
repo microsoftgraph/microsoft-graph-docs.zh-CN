@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ea9454be485d17eb6e2b8f6ed5f615cdaabfb856
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 61bec64eaec92f277274f365092731de122a20f0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417868"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035405"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -77,8 +77,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/members/{directory-obj
 在请求中，指定组的标识符和要删除目录对象的标识符。
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

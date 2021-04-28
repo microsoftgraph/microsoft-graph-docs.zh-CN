@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 58c76f32a230c42b912e2a4e2f91e76f0e231785
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6bd0c99094741b9d015ec5878afa819fe8794889
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448240"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051352"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
@@ -51,7 +51,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|String|位置的可读名称。|
 |ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (1.2.3.4/32) IETF RFC5962 中任何允许的 IPv6 格式。|
-|isTrusted|Boolean|该值表示 `true` 此位置是否明确受信任。|
+|isTrusted|布尔值|如果此 `true` 位置是显式信任的，则值为 。|
 
 ## <a name="response"></a>响应
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

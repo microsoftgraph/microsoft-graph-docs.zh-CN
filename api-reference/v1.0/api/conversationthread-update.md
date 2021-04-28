@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a5195b3a3300cc9d17ef3e761611e1b509513662
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3d3ab436ea461139778f672468ee312f79ec539
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009973"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051520"
 ---
 # <a name="update-conversationthread"></a>更新 conversationthread
 
@@ -44,7 +44,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|Resource.islocked|Boolean|指示线程是否已锁定。设置为 `true` 以禁止发布。|
+|isLocked|Boolean|指示线程是否已锁定。设置为 `true` 以禁止发布。|
 
 ## <a name="response"></a>响应
 
@@ -87,7 +87,7 @@ Content-length: 419
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

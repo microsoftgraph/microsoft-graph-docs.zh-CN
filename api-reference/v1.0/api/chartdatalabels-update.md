@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 91efcaf38191b4f975ce27d1219fc3ba7c862b91
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: a3e0b4ca77e9fac770d12b14978412bcfd9d8689
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573906"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051555"
 ---
 # <a name="update-chartdatalabels"></a>更新 chartdatalabels
 
@@ -24,7 +24,7 @@ ms.locfileid: "50573906"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/d
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|position|string|表示数据标签的位置的 DataLabelPosition 值。 可能的值是： `None` ， `Center` ， ， ， ， ， `InsideEnd` ， `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom` `BestFit` `Callout` 。|
+|position|string|表示数据标签的位置的 DataLabelPosition 值。 可能的值包括 `None` `Center` `InsideEnd` `InsideBase` `OutsideEnd` `Left` ：、、、、、、、、。 `Right` `Top` `Bottom` `BestFit` `Callout`|
 |Separator|string|表示用于图表中数据标签的分隔符的字符串。|
 |showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
 |showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
@@ -54,7 +54,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/d
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [WorkbookChartDataLabels](../resources/chartdatalabels.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [WorkbookChartDataLabels](../resources/chartdatalabels.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -96,7 +96,7 @@ Content-length: 134
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

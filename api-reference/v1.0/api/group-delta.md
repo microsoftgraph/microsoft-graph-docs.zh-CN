@@ -1,32 +1,32 @@
 ---
 title: 'group: delta'
-description: 获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。
+description: 获取新创建、更新或删除的组，包括组成员身份更改，而无需执行整个组集合的完整读取。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 37e9c3bd57ad5235b1a03115236b0501f4431280
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: e094aaae32d8fe4ccbadd534b3d75ece56f8176e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368227"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050484"
 ---
 # <a name="group-delta"></a>group: delta
 
 命名空间：microsoft.graph
 
-获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅 [Using Delta Query](/graph/delta-query-overview) 。
+获取新创建、更新或删除的组，包括组成员身份更改，而无需执行整个组集合的完整读取。 有关详细信息 [，请参阅使用增量](/graph/delta-query-overview) 查询。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | GroupMember，all，Group. all，Directory.accessasuser.all，all，，"所有"，"."、""  |
+|委派（工作或学校帐户） | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | GroupMember、Group、Group、all、Group、Group、all、all、All 和 All |
+|应用程序 | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ GET /groups/delta
 此方法支持可选的 OData 查询参数来帮助自定义响应。
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 *id* 属性。
-- 您可以使用 `$select=members` 获取成员身份更改。 此外，还可以通过选择 **directoryObject 集合** 类型的任何 [组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
+- 可以使用 获取 `$select=members` 成员身份更改。 您还可以通过选择 **directoryObject** 集合类型的任何 [](../resources/group.md#relationships)组关系来跟踪其他更改（如所有权等）。
 - 提供对 `$filter` 的有限支持：
   - 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。 筛选对象不能超出 50 个。
 
@@ -74,7 +74,7 @@ GET /groups/delta
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 该响应还包括一个状态令牌，它可以是 `nextLink` url，也可以是 `deltaLink` url。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 该响应还包括一个状态令牌，即 `nextLink` URL 或 `deltaLink` URL。
 
 - 如果返回 `nextLink`URL：
   - 这表示绘画中存在要检索的其他数据页面。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
@@ -142,9 +142,9 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 >
-> 请注意， *members@delta* 属性的存在，其中包括组中 member 对象的 id。
+> 请注意存在包含 *members@delta* 成员对象的 ID 的 members@delta 属性。
 
 <!-- {
   "blockType": "response",

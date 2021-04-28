@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: be7793024e9b8eb0f7ca9bec5a57d2b4ec1248db
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6295e6d60d35eb434e1e5b1d91dae3fc60eda84f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448546"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050519"
 ---
 # <a name="activate-directoryrole"></a>Activate directoryRole
 
@@ -46,7 +46,7 @@ POST /directoryRoles
 
 |参数 | 类型 | 说明|
 |:---------|:---------|:---------|
-|roleTemplateId | string | 必填。 角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。 这是唯一可以在请求中指定的属性。|
+|roleTemplateId | string | 必需。 角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。 这是唯一可以在请求中指定的属性。|
 
 ## <a name="response"></a>响应
 
@@ -89,7 +89,7 @@ Content-type: application/json
 
 在请求正文中，提供 [directoryRole](../resources/directoryrole.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

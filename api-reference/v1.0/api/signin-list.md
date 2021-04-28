@@ -1,22 +1,22 @@
 ---
 title: 列出 signIn
-description: 介绍从 Microsoft Graph API () signIn 资源列表方法。
+description: 介绍 Microsoft (API) signIn 资源Graph方法。
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 90e48837976afedd8b5da14febff47bb99d615ea
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: f84f7f34c92080c8d4ff55ed217ac822cef4ae48
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177079"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050302"
 ---
 # <a name="list-signins"></a>列出 signIn
 
 命名空间：microsoft.graph
 
-检索租户的 Azure AD 用户登录信息。 本质上是交互式登录 (其中用户名/密码作为身份验证令牌) 的一部分传递，并且成功的联合登录当前包含在登录日志中。
+检索租户的 Azure AD 用户登录信息。 本质上是交互式的登录 (其中用户名/密码作为身份验证令牌) 且成功的联合登录当前包含在登录日志中。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "50177079"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用 | AuditLog.Read.All 和 Directory.Read.All  |
+|应用程序 | AuditLog.Read.All 和 Directory.Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +45,7 @@ GET auditLogs/signIns
 |[$top](/graph/query_parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/signIns?$top=1`|
 |[$skiptoken](/graph/query_parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>$filter参数支持的属性
+### <a name="attributes-supported-by-filter-parameter"></a>参数支持$filter属性
 
 |属性名 |支持的运算符|
 |:----------------|:------|
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ### <a name="response"></a>响应
 
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

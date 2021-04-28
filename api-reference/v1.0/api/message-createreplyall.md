@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 629bf42c6d933a33008e40ab23a13a6ec08f233b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3fd133848bf90ab211a2edab3eb383ff0342de80
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130604"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049504"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130604"
 
 创建草稿以回复指定[邮件](../resources/message.md)的发件人和所有收件人。 然后，可以 [更新](../api/message-update.md)草稿，将回复内容添加到 **正文**，或更改其他邮件属性，或者仅 [发送](../api/message-send.md)草稿。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -80,7 +80,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

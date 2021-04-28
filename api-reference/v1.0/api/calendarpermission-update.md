@@ -5,16 +5,16 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c31095dd2e201f7e27891ef77118170fd83d9d65
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a91c174a9830494d6e44463aaaea8217c57849a8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044107"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051611"
 ---
 # <a name="update-calendarpermission"></a>更新 calendarPermission
 
-通过日历的相应 [calendarPermission](../resources/calendarpermission.md) 对象更新分配给现有 sharee 或代理的权限。
+通过日历的相应 [calendarPermission](../resources/calendarpermission.md) 对象更新分配给现有共享者或代理人的权限。
 
 ## <a name="permissions"></a>权限
 
@@ -57,17 +57,17 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| 为日历 sharee 或代理人更改的权限级别。 |
+|role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| 要更改为日历共享者或代理人的权限级别。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [calendarPermission](../resources/calendarpermission.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [calendarPermission](../resources/calendarpermission.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-下面的示例将 sharee、Adele、的权限级别更改为 `write` 。
+以下示例将共享者 Adele 的权限级别更改为 `write` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -108,7 +108,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

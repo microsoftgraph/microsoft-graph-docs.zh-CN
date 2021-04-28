@@ -1,33 +1,33 @@
 ---
-title: 调用： recordResponse
-description: 录制来自呼叫方的简短音频回复。 如果 bot 希望在出现提示后从呼叫者处捕获语音响应，这将非常有用。
+title: call： recordResponse
+description: 录制来自呼叫方的简短音频回复。 如果机器人希望按照提示从呼叫者捕获语音响应，这将非常有用。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fa4fe6698d788ac8588101e6f818fdd70712c1fb
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8766f2764852354fc178c97bd632db550b183f81
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461313"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050582"
 ---
-# <a name="call-recordresponse"></a>调用： recordResponse
+# <a name="call-recordresponse"></a>call： recordResponse
 
 命名空间：microsoft.graph
 
 录制来自呼叫方的简短音频回复。
-在收到响应提示后，bot 可以利用此程序从呼叫者处获取语音响应。
+机器人可以利用此功能在系统提示呼叫者做出响应后捕获来自呼叫者的语音响应。
 
-有关如何处理操作的详细信息，请参阅 [commsOperation](../resources/commsOperation.md)
+若要进一步了解如何处理操作，请查看 [commsOperation](../resources/commsOperation.md)
 
->**注意：** 只有使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)才支持这样做。
+>**注意：** 这仅 [支持通过](../resources/call.md)[serviceHostedMediaConfig 启动的呼叫](../resources/servicehostedmediaconfig.md)。
 
-此操作不用于记录整个调用。 录制的最大长度为2分钟。 该录制不会被云通信平台永久保存，并且在呼叫结束后不久将被丢弃。 在录制操作完成后，bot 必须使用已完成的通知中提供的 recordingLocation 值立即下载录制。
+此操作不用于记录整个呼叫。 录制的最大长度为 2 分钟。 云通信平台不会永久保存录制，呼叫结束后将丢弃录制。 录制操作完成后，自动程序必须使用已完成的通知中给出的 recordingLocation 值立即下载录制。
 
->**注意：** 任何收集的媒体都 **不** 会保留。 请确保在呼叫录音时遵守地区的法律和法规。 有关详细信息，请咨询法律顾问。
+>**注意：** 收集的任何媒体 **可能无法** 保留。 在呼叫录制方面，请确保你遵守你地区的法律和法规。 有关详细信息，请咨询法律顾问。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -50,24 +50,24 @@ POST /communications/calls/{id}/recordResponse
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |Description|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[mediaPrompt](../resources/mediaprompt.md) 集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为1。|
-|bargeInAllowed|Boolean| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
-|initialSilenceTimeoutInSeconds | Int32| 最大初始静音 (用户静音) 允许在我们超时之前开始记录响应操作并使操作失败。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
-|maxSilenceTimeoutInSeconds|Int32| 最大无声 (暂停用户开始发言后允许的) 时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|maxRecordDurationInSeconds|Int32| 停止录制前的 recordResponse 操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
-|stopTones|String 集合|指定结束录音的停止音。|
-|适用|字符串|唯一的客户端上下文字符串。 最大限制为256个字符。|
+|prompts|[mediaPrompt](../resources/mediaprompt.md) 集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为 1。|
+|bargeInAllowed|布尔值| 如果为 true，recordResponse 请求将插入其他现有的排队向上/当前处理的记录/playprompt 请求。 默认值 = false。 |
+|initialSilenceTimeoutInSeconds | Int32| 在超时 (失败) ，从开始记录响应操作时，用户的最大初始静默表示用户静默。 如果播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
+|maxSilenceTimeoutInSeconds|Int32| 用户开始 (后) 允许的最大静默时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
+|maxRecordDurationInSeconds|Int32| 在停止录制之前，recordResponse 操作的最大持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
+|playBeep|布尔值| 如果为 true，则播放一个嘟嘟声，以向用户指示他们可以开始录制其消息。 默认值 = true。|
+|stopTones|字符串集合|结束录制指定的停止音调。|
+|clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
-此方法返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的 [RECORDOPERATION](../resources/recordoperation.md) 的 URI。
+此方法将响应代码和 Location 标头的 URI 返回到为此请求 `200 OK` 创建的[recordOperation。](../resources/recordoperation.md)
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
 
-### <a name="example-1-records-a-short-audio-response-from-the-caller"></a>示例1：记录来自呼叫者的短音频响应
+### <a name="example-1-records-a-short-audio-response-from-the-caller"></a>示例 1：录制来自呼叫者的简短音频响应
 
 ##### <a name="request"></a>请求
 下面为请求示例。
@@ -124,7 +124,7 @@ Content-Length: 394
 ##### <a name="response"></a>响应
 以下示例显示了相应的响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -146,7 +146,7 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
 }
 ```
 
-##### <a name="notification---operation-completed"></a>通知-操作已完成
+##### <a name="notification---operation-completed"></a>通知 - 操作已完成
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -186,9 +186,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-retrieving-the-recording-file"></a>示例2：检索录制文件
+### <a name="example-2-retrieving-the-recording-file"></a>示例 2：检索录制文件
 
->**注意：** 您不能录制或以其他方式保留来自您的应用程序访问的呼叫或会议的媒体内容或从该媒体内容派生的数据。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
+>**注意：** You may NOT record or otherwise persist media content from calls or meetings that your application accesses， or data derived from that media content. 确保你遵守有关通信数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
 ##### <a name="request"></a>请求
 
