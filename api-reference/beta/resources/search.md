@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a30a1fe5891a0f8a58f08d742ef2aac645006156
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 123d57b05950203434ac23fd85e9c29dfa41476d
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985784"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067094"
 ---
 # <a name="search-resource-type"></a>搜索资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "47985784"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-搜索资源是表示搜索终结点的顶级对象。 它充当 [查询](../api/search-query.md) 操作的定位。
+搜索资源是表示搜索终结点的顶级对象。 它充当查询操作 [锚点](../api/search-query.md) 。
 
-此资源不应按此方式调用。 对资源的任何请求都将导致错误请求。
+不应这样调用此资源。 资源上的任何请求都会导致错误的请求。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "47985784"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [查询](../api/search-query.md) | [searchResponse](searchresponse.md) 组| 执行[searchRequest](../resources/searchrequest.md)中指定的查询 |
+| [查询](../api/search-query.md) | [searchResponse](searchresponse.md)| 执行 [searchRequest 中指定的查询](../resources/searchrequest.md) |
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -1,19 +1,19 @@
 ---
-title: 组的访问评审 API 概述
-description: 组的访问评审 API 允许你以编程方式查看对组的访问权限
+title: 访问评审 API 概述
+description: 访问评审 API 允许你以编程方式查看对 Azure AD 资源的访问权限。
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: a009ac515024cbd04159138434e5408536671aaf
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 92ea2d49fae37c5b4d5ae82e390f897af9ff4cde
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51922049"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067059"
 ---
-# <a name="overview-of-the-access-reviews-api-for-groups"></a>组的访问评审 API 概述
+# <a name="overview-of-the-access-reviews-api"></a>Access 审阅 API 概述
 
-Microsoft Graph [中的组的访问](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 评审 API 允许你以编程方式查看对组的访问权限。 这包括：
+Microsoft[访问评审 API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) Graph允许你以编程方式查看对 Azure AD 资源的访问权限。 这包括：
 + 创建、读取、更新和删除访问评审、访问评审设置和计划。
 + 调查过去的访问评审和审阅者做出的决策，包括 Azure AD 自动执行的步骤。
 
@@ -40,11 +40,11 @@ Microsoft Graph [中的组的访问](/graph/api/resources/accessreviewsv2-root?v
 请尝试以下教程来管理访问评审：
 
 + [使用组的访问评审 API 查看对安全组的访问权限](tutorial-accessreviews-securitygroup.md)
-+ [使用组的访问评审 API 查看对具有来宾用户的所有 Microsoft 365 组的访问权限](tutorial-accessreviews-M365group.md)
++ [使用组的访问评审 API 查看对具有来宾用户的所有Microsoft 365组的访问权限](tutorial-accessreviews-M365group.md)
 
 ## <a name="see-also"></a>另请参阅
 
-+ [规划 Azure Active Directory 访问评审部署](/azure/active-directory/governance/deploy-access-reviews)
++ [规划Azure Active Directory访问评审部署](/azure/active-directory/governance/deploy-access-reviews)
 + [创建对应用程序应用程序的组&评审](/azure/active-directory/governance/create-access-review)
 + [代表用户获取访问权限](/graph/auth-v2-user)
 + [不代表用户获取访问权限](/graph/auth-v2-service)

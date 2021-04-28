@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 762f243145b544b8e20114578abb875160793f79
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 10eb40e502a3b1e6ac6c21cebecceab7c6277b62
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131003"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055944"
 ---
 # <a name="list-rules"></a>列出规则
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131003"
 
 获取为用户收件箱定义的所有 [messageRule](../resources/messagerule.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,0 +1,204 @@
+---
+title: 更新部署
+description: 更新部署对象的属性。
+author: Alice-at-Microsoft
+localization_priority: Normal
+ms.prod: w10
+doc_type: apiPageType
+ms.openlocfilehash: 56837b09cdb8fdc2a5ecc28ece7fe02e74920812
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067968"
+---
+# <a name="update-deployment"></a>更新部署
+命名空间：microsoft.graph.windowsUpdates
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+更新 [部署对象的属性](../resources/windowsupdates-deployment.md) 。
+
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型|权限（从最低特权到最高特权）|
+|:---|:---|
+|委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|WindowsUpdates.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /admin/windows/updates/deployments/{deploymentId}
+```
+
+## <a name="request-headers"></a>请求标头
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+|Content-Type|application/json. Required.|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供部署对象的 JSON [表示](../resources/windowsupdates-deployment.md) 形式。
+
+下表显示更新部署时可以设置 [的属性](../resources/windowsupdates-deployment.md)。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|部署的执行状态。|
+|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|设置管理如何部署部署的特定部署中指定的策略 `content` 。|
+
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应 `202 Accepted` 正文中返回 响应代码[](../resources/windowsupdates-deployment.md)和更新的部署对象。
+
+## <a name="examples"></a>示例
+
+### <a name="example-pause-a-deployment"></a>示例：暂停部署
+
+在此例中，部署通过更新 部署 `requestedValue` 暂停 `state` 。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "update_deployment",
+  "@odata.type": "microsoft.graph.windowsUpdates.deployment"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+  "state": {
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
+    "requestedValue": "paused"
+  },
+}
+```
+
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.windowsUpdates.deployment"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+  "id": "b5171742-1742-b517-4217-17b5421717b5",
+  "state": {
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
+    "reasons": [
+      {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
+        "value": "pausedByRequest"
+      }
+    ],
+    "requestedValue": "paused",
+    "value": "paused"
+  },
+  "content": {
+    "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
+    "version": "20H2"
+  },
+  "settings": null,
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)"
+}
+```
+
+### <a name="example-update-deployment-settings-to-add-a-monitoring-rule"></a>示例：更新部署设置以添加监视规则
+
+此示例更新 `settings` 了部署的 属性以添加监视规则。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "update_deployment",
+  "@odata.type": "microsoft.graph.windowsUpdates.deployment"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+  "settings": {
+    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+    "monitoring": {
+      "monitoringRules": [
+        {
+          "signal": "rollback",
+          "threshold": 5,
+          "action": "pauseDeployment"
+        }
+      ]
+    }
+  }
+}
+```
+
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.windowsUpdates.deployment"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+  "id": "b5171742-1742-b517-4217-17b5421717b5",
+  "state": {
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
+    "reasons": [
+      {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
+        "value": "offeringByRequest"
+      }
+    ],
+    "requestedValue": "none",
+    "value": "offering"
+  },
+  "content": {
+    "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
+    "version": "20H2"
+  },
+  "settings": {
+    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+    "monitoring": {
+      "monitoringRules": [
+        {
+          "signal": "rollback",
+          "threshold": 5,
+          "action": "pauseDeployment"
+        }
+      ]
+    }
+  },
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)"
+}
+```
+

@@ -4,23 +4,23 @@ description: 使用 Microsoft 搜索 API 对搜索结果进行排序。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 216da2d183f70545700fe4df48e4e5d7c5f33ff9
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 4f4a2c8925e910520ca3d75d98f86d713105f6ac
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597457"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067185"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>"使用 Microsoft Search API 对搜索结果进行排序 (预览) 
+# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>使用 Microsoft 搜索 API 对搜索结果进行排序 (预览) 
 
-您可以使用 Microsoft Graph 中的 Microsoft Search API 对搜索结果进行排序。 若要对结果进行排序，请在 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true)对象中指定 **sortProperties** 属性，并在 **entityTypes** 中标识一个资源属性，以按升序或降序对匹配项进行排序。
+可以使用 Microsoft 搜索 API 在 Microsoft Graph对搜索结果进行排序。 若要对结果进行排序，请指定 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true)对象中的 **sortProperties** 属性，并确定 **entityTypes** 中的资源属性，以便按升序或降序对匹配项进行排序。
 
-仅 SharePoint 和 OneDrive 项目支持排序。
-要对其进行排序的属性应在搜索架构中可 *排序* 。
+只有项目和项目SharePoint OneDrive排序。
+要排序的属性在搜索架构中应为 *Sortable。*
 
-默认排序顺序是升序。 设置 **isDescending** 属性以更改它。
+默认排序顺序为升序。 设置 **isDescending** 属性以更改该属性。
 
-## <a name="example-1-single-level-sort"></a>示例1：单级别排序
+## <a name="example-1-single-level-sort"></a>示例 1：单级排序
 
 ### <a name="request"></a>请求
 
@@ -145,7 +145,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-multi-level-sort"></a>示例2：多级排序
+## <a name="example-2-multi-level-sort"></a>示例 2：多级排序
 
 ### <a name="request"></a>请求
 
@@ -316,8 +316,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-- **Message**、 **event** 和 **externalItem** 不支持 Sort。
-- 按相关性排序无法在 **sortProperties** 中指定。
+- 邮件、事件 和 **externalItem 不支持排序**。 
+- 无法在 **sortProperties** 中指定按相关性排序。
 
 ## <a name="next-steps"></a>后续步骤
 

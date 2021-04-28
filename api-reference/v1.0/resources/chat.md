@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 51980c166652ea2a2d863049e5877b3cc6d632ba
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 82512c8b934d76ef83e9f6686dbaca40bbd122b3
+ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582786"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061852"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "51582786"
 
 |  方法       |  返回类型  | 说明| 
 |:---------------|:--------|:----------|
+| **聊天管理** |||
 |[创建聊天](../api/chat-post.md) | [聊天](chat.md) | 创建新聊天。| 
 |[获取聊天](../api/chat-get.md) | [聊天](chat.md) | 读取聊天的属性和关系。| 
 |[更新聊天](../api/chat-patch.md) | [聊天](chat.md) | 更新聊天的属性。|
@@ -31,14 +32,17 @@ ms.locfileid: "51582786"
 |[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天中添加用户。| 
 |[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的单个用户。| 
 |[删除聊天成员](../api/chat-delete-members.md)|无|从聊天中删除用户。|
+|[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 获取用户与应用之间的一对一聊天 |
+| **邮件** |||
 |[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的消息。 | 
 |[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 | 
-|[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 获取用户与应用之间的一对一聊天 |
+| **应用** |||
 |[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天网站中安装 (关联的会议) 。|
 |[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取安装在聊天会话和关联会议 (中的特定) 。|
 |[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联会议 (中安装) 。|
 |[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和相关会议 (安装的应用的) 。|
 |[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (和) 会议记录中删除 (卸载) 。|
+| **选项卡** |||
 |[列出聊天中的选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到聊天 (关联的会议选项卡) 。|
 |[在聊天中获取选项卡](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到聊天组和关联 (的特定选项卡) 。|
 |[向聊天添加选项卡](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 将 (固定) 选项卡添加到聊天 (关联的会议) 。|

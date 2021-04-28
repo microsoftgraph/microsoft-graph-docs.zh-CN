@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c154644261239f2be6b2273b1a7007db52b68fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 072ff5435f168af138bad0580de3d3815a8e4185
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129357"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055958"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "50129357"
 
 对邮箱的邮件文件夹的 **delta** 函数调用与 GET 请求相似，除了前者可通过在对其的一次或多次调用中正确应用 [状态令牌](/graph/delta-query-overview)来查询邮件文件夹中的增量更改。通过此功能，你可以维护和同步本地存储的用户邮件文件夹，而无需每次都从服务器中获取该邮箱的所有邮件文件夹。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -102,7 +102,7 @@ Prefer: odata.maxpagesize=2
 
 以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

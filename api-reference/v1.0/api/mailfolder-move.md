@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ea5e38ab2196c5ba7dba8a1776bd989b0ba97086
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 495735363e3c22bafceb31ed94fa794c324344fc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135327"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055937"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -18,7 +18,7 @@ ms.locfileid: "50135327"
 
 将 Mailfolder 及其内容移动到其他 mailfolder。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [mailFolder](../resources/mailfolder.md) 资源。
+如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [mailFolder](../resources/mailfolder.md) 资源。
 
 ## <a name="example"></a>示例
 
@@ -102,7 +102,7 @@ Content-length: 44
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: searchResponse 资源类型
-description: SearchResponse 的说明
+description: searchResponse 的说明
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: deb5450017b4ae9db534c30f71dd6da4f1a9b812
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 5778d82c0c4718b9f34c686a613270eebfcc56e1
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192747"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067087"
 ---
 # <a name="searchresponse-resource-type"></a>searchResponse 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48192747"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示搜索查询中的结果和用于查询的术语。 
+表示来自搜索查询的响应。 
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hitsContainers|[searchHitsContainer](searchhitscontainer.md) 集合|搜索结果的集合。|
-|searchTerms|String collection|包含在初始搜索查询中发送的搜索词。|
+|queryAlterationResponse|[更改response](alterationResponse.md)|提供用于拼写更正的查询更改响应的详细信息。|
+|值|[searchResultSet](searchResultSet.md) 集合|表示来自搜索查询的结果，以及用于查询的术语。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -42,8 +42,8 @@ ms.locfileid: "48192747"
 
 ```json
 {
-  "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
-  "searchTerms": ["String"]
+  "queryAlterationResponse": {"@odata.type": "microsoft.graph.alterationResponse"},
+  "value": [{"@odata.type": "microsoft.graph.searchResultSet"}]
 }
 ```
 
