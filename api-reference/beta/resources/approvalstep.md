@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 94c37320d17a72e0734d856c24cdff49308c9463
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 413af698c72be945e648a3fe21ce772f2b4e6102
+ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945709"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061873"
 ---
 # <a name="approvalstep-resource-type"></a>approvalStep 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50945709"
 
 在 [userConsentRequests](../resources/userconsentrequest.md)中，与请求关联的审批决策。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -33,7 +33,7 @@ ms.locfileid: "50945709"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|assignedToMe|Boolean|指示是否将步骤分配给呼叫用户进行审阅。 只读。|
+|assignedToMe|布尔值|指示是否将步骤分配给呼叫用户进行审阅。 只读。|
 |displayName|String|策略创建者提供的标签，用于标识审批步骤。 只读。|
 |id|String|与审批对象关联的步骤的标识符。 只读。|
 |justification|String|与审批步骤决策关联的理由。|
@@ -58,14 +58,14 @@ ms.locfileid: "50945709"
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.approvalStep",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "status": "String",
-  "assignedToMe": true,
-  "reviewedBy": [{"@odata.type": "microsoft.graph.userIdentity"}],
-  "reviewedDateTime": "String (timestamp)",
-  "reviewResult": "String",
-  "justification": "String",
+   "@odata.type":"#microsoft.graph.approvalStep",
+   "id":"String (identifier)",
+   "displayName":"String",
+   "status":"String",
+   "assignedToMe":true,
+   "reviewedBy": [{"@odata.type": "microsoft.graph.userIdentity"}],
+   "reviewedDateTime":"String (timestamp)",
+   "reviewResult":"String",
+   "justification":"String"
 }
 ```
