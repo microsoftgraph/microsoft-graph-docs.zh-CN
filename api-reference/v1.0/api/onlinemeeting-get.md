@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 02466f23b1ffbb7e91cfffba6c5bf5748cdc1892
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 02871c1769f545af938b24b54c2a4aaea8dffc5a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870014"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054537"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -52,7 +52,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 ```
 
 > [!NOTE]
-> - `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 > - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关更多详细信息 [，请参阅 VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) 会议 ID。
 > - \* 此方案仅支持应用程序令牌，不支持应用程序访问策略。
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -189,7 +189,7 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
-可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中会提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
+可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中会提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
 
 #### <a name="request"></a>请求
 

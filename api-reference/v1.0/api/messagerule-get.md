@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8cc1f1a2670761a311993814d59419957857012b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2472b52089e230436a6a117535e0a13576586efa
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132613"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054544"
 ---
 # <a name="get-rule"></a>获取规则
 
@@ -20,7 +20,7 @@ ms.locfileid: "50132613"
 获取 [messageRule](../resources/messagerule.md) 对象的属性和关系。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZ
 ##### <a name="response"></a>响应
 下面是一个响应示例。 默认情况下，响应中的 date-time 属性采用的是 UTC。 
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

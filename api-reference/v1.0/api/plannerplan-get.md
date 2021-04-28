@@ -5,24 +5,24 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 570be9cfe55b6c41ed0e2bf44a4566e41da92ea8
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 3c1e2fa779203b67ec6c67730bb9e31c20dd534a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473869"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053949"
 ---
 # <a name="get-plannerplan"></a>获取 plannerPlan
 
 命名空间：microsoft.graph
 
 检索 [plannerplan 对象的属性和](../resources/plannerplan.md) 关系。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Tasks.Read、Tasks.ReadWrite、Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | 任务.读取，任务.ReadWrite，Group.Read.All，Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

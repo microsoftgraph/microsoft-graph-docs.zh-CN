@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 882a012ed5187976dedc5edce4dc7fae56e2a4b3
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b21b7d69d241c5d986713b9e905822faf879147a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941471"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053802"
 ---
 # <a name="get-threatassessmentrequest"></a>获取 threatAssessmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "50941471"
 
 * [邮件](../resources/mailAssessmentRequest.md)
 * [电子邮件文件](../resources/emailFileAssessmentRequest.md)
-* [File](../resources/fileAssessmentRequest.md)
+* [文件](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
 
 ## <a name="permissions"></a>权限
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -178,7 +178,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -251,7 +251,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -323,7 +323,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -394,7 +394,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

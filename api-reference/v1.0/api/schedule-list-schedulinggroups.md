@@ -5,18 +5,18 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7628c20df5e72e5c780361e3c858648b586d7c8d
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 2673f9377e6735a3c1ec9efe374be1bb1d1046fc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315089"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053886"
 ---
 # <a name="list-schedulegroups"></a>列出 scheduleGroups
 
 命名空间：microsoft.graph
 
-获取此[计划](../resources/schedule.md)中的[schedulingGroups](../resources/schedulinggroup.md)列表。
+获取此 [计划中的 schedulingGroups](../resources/schedulinggroup.md) [列表](../resources/schedule.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "48315089"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
+|委派（工作或学校帐户） | Schedule.Read.All、Group.Read.All、Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All、Schedule、All |
+|应用程序 | Schedule.Read.All、Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [schedulingGroup](../resources/schedulinggroup.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

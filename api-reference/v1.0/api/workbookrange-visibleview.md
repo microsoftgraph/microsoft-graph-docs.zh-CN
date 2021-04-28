@@ -1,16 +1,16 @@
 ---
 title: 'workbookRange: visibleView'
-description: 调用此 API 需要以下权限之一。 要了解详细信息（包括如何选择权限），请参阅权限。
+description: 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅权限。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b613f66e4da8b27753beca46580e866a432734ee
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: cc18dd61d7a1307c11e968a383d3e0ea72a64dc2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577476"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055650"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
@@ -24,7 +24,7 @@ ms.locfileid: "50577476"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/rang
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,24 +5,24 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f781eb40dbf5bf7e33a99b3cff9b332a62502a29
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 4330d1a7175287443777443e20f1bf2a15e45fae
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473386"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053942"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
 命名空间：microsoft.graph
 
 检索[plannerPlan](../resources/plannerplan.md) [对象包含的 plannerBucket](../resources/plannerbucket.md)对象的列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Tasks.Read、Tasks.ReadWrite、Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | 任务.读取，任务.ReadWrite，Group.Read.All，Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/buckets
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

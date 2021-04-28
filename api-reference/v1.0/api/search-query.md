@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8194b23ede8856f0237b179aa4d50a5ce0c1ebc9
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 75c2074f9c6f0278b02ff65446c0b330d5484d2d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920108"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054453"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
@@ -85,7 +85,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -165,8 +165,8 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 - 搜索 [邮件](/graph/search-concept-messages)
 - 搜索 [日历事件](/graph/search-concept-events)
-- 在 SharePoint 和 OneDrive 中搜索 ([文件、列表和网站) ](/graph/search-concept-files)
-- 使用 [Graph 连接器 (搜索) ](/graph/search-concept-custom-types) 类型
+- 搜索网站[SharePoint OneDrive (、列表和网站) ](/graph/search-concept-files)
+- 搜索[连接器 (Graph自定义) ](/graph/search-concept-custom-types)数据
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

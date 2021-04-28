@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: cae222b8a44a3493fb35c576aa9251859bde39ee
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: ce371ee9554ed5b217ea768ebb7709d52921f8d6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626115"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054432"
 ---
 # <a name="list-serviceprincipal-memberof"></a>List servicePrincipal memberOf
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf
 
 下面展示了示例响应。
 
-> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -198,7 +198,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -247,7 +247,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

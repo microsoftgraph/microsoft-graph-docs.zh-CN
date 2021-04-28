@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05d1aa7eab7f8572a3d4eb350f47134b8756afe2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fd46d262cf7d190daa4c5f21e1c45ec1472b799f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133705"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055685"
 ---
 # <a name="user-getmailtips"></a>user： getMailTips
 
@@ -18,9 +18,9 @@ ms.locfileid: "50133705"
 
 获取登录用户可用的一个或多个收件人的邮件 [提示](../resources/user.md)。
 
-请注意，通过调用该操作，可以请求同时为多个收件人返回特定类型的 `POST` `getMailTips` 邮件提示。 请求的邮件提示在邮件 [提示](../resources/mailtips.md) 集合中返回。
+请注意，通过调用操作，可以请求同时为多个收件人返回特定类型的邮件 `POST` `getMailTips` 提示。 请求的邮件提示在邮件 [提示](../resources/mailtips.md) 集合中返回。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,12 +48,12 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|EmailAddresses|String collection|要获取邮件提示的收件人的 SMTP 地址的集合。|
-|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值是： `automaticReplies` `customMailTip` 、 、 、 、 `deliveryRestriction` 、 、 `externalMemberCount` 和 `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` 。|
+|EmailAddresses|字符串集合|要获取邮件提示的收件人的 SMTP 地址的集合。|
+|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值是 `automaticReplies` `customMailTip` `deliveryRestriction` ：、、、、、、、、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` 和 `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [邮件提示](../resources/mailtips.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [mailTips](../resources/mailtips.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面的示例获取任何自动答复设置和邮箱已满状态的指定收件人的邮件提示。
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

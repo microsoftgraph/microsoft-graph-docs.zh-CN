@@ -1,16 +1,16 @@
 ---
 title: 列出 servicePrincipal 的 delegatedPermissionClassifications 集合
-description: 检索为 API 服务主体公开的委派权限给定的分类列表。
+description: 检索为 API 的服务主体公开的委派权限给定的分类列表。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 4ab551d0e8d23a2d8810d3bc10c812318aaaaa10
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fdf42339adea9441ff0378fe26cce2063062eb82
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132228"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054446"
 ---
 # <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>列出 servicePrincipal 的 delegatedPermissionClassifications 集合
 
@@ -18,7 +18,7 @@ ms.locfileid: "50132228"
 
 检索当前为 API 公开的委派权限配置的 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ GET /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/delegatedPermissionC
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

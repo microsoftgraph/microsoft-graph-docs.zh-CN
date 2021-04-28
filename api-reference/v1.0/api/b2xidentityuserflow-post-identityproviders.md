@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 9ceefc258d5042877f524c5e882ea8adbdd93180
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 6ec01ec32cedf3bd1464058c9a8261e925505422
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882922"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054614"
 ---
 # <a name="add-identityprovider"></a>添加 identityProvider
 
@@ -31,14 +31,14 @@ ms.locfileid: "51882922"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /identity/b2xUserFlows/{id}/identityProviders/$ref
+POST /identity/b2xUserFlows/{id}/identityProviders/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -62,6 +62,8 @@ PATCH /identity/b2xUserFlows/{id}/identityProviders/$ref
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_b2xuserflows_identityprovider"
@@ -69,7 +71,7 @@ PATCH /identity/b2xUserFlows/{id}/identityProviders/$ref
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/identityProviders/$ref
+POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/identityProviders/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -77,6 +79,24 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/identityProviders/Facebook-OAUTH"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-b2xuserflows-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-b2xuserflows-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-b2xuserflows-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

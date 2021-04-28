@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fb27b0c074c46f419b96b721c104c2094a6366ad
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 627bd59f882c490765d2b26228fc464fa2726694
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442108"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054075"
 ---
 # <a name="list-policies"></a>列出策略
 
@@ -38,7 +38,7 @@ GET /identity/conditionalAccess/policies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 ， 、 、 和 OData 查询参数 `$skip` `$top` `$count` `$filter` `$orderBy` `$select` 来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持使用 `$skip` 、 、 、 、 和 OData 查询参数 `$top` `$count` `$filter` `$orderBy` `$select` 来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,7 +52,7 @@ GET /identity/conditionalAccess/policies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

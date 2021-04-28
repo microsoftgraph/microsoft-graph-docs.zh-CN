@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be1d3e31d84db29df2e1fe159ff6ff9962d036ee
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e4754e86ecaae0c39c519362c25ba08a49a5cbfb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954782"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054411"
 ---
 # <a name="get-shift"></a>获取班次
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

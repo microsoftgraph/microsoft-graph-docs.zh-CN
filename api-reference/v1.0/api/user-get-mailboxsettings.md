@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4af7f5da0af494ee56128a0fe2bbeb6126c72738
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e2f697a332eb4912f0f4f442f57ccf79b86d03ca
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473530"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054306"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 
 #### <a name="response"></a>响应
 该响应包括已登录用户的所有邮箱设置。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -197,7 +197,8 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ---
 
 #### <a name="response"></a>响应
-该响应仅包括自动答复设置。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+该响应仅包括自动答复设置。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -257,7 +258,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 
 #### <a name="response"></a>响应
 该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_mailboxsettings_3",

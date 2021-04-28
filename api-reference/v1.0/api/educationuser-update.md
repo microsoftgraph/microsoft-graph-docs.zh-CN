@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bba954e428bbc81a6d83dd17471ca24b66133e95
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 32645e98fbb2e7da1aeec8d48eddb3c5da6822bb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087507"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054033"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -55,7 +55,7 @@ PATCH /education/users/{id}
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| 用户所在的地址。|
 |primaryRole|string| 用户的默认角色。  用户的角色在各课程中可能有所不同。 可能的值包括 `student`、`teacher`、`enum_sentinel`。|
 |student|[educationStudent](../resources/educationstudent.md)| 如果主要角色为学生，此部分将包含特定于学生的数据。|
-|teacher|[educationTeacher](../resources/educationteacher.md)| 如果主要角色是教师，此块将包含教师特定的数据。|
+|teacher|[educationTeacher](../resources/educationteacher.md)| 如果主要角色是教师，则此块将包含特定于教师的数据。|
 
 
 ## <a name="response"></a>响应
@@ -100,7 +100,7 @@ Content-length: 508
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,23 +1,23 @@
 ---
-title: 创建 workforceIntegration
+title: Create workforceIntegration
 description: 创建新的 workforceIntegration 对象。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3ec2f2629e7f64e2f7cf7ae703b88c5eb8fe43bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2eee6b620bcd22e571a2b526d4a43e70fe91416a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015553"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055643"
 ---
-# <a name="create-workforceintegration"></a>创建 workforceIntegration
+# <a name="create-workforceintegration"></a>Create workforceIntegration
 
 命名空间：microsoft.graph
 
 创建新的 [workforceIntegration](../resources/workforceintegration.md) 对象。
-您可以设置要接收其上的同步更改通知的实体并设置实体以配置按 WFM 规则（包括交换请求）的筛选的筛选器。
+您可以设置要接收 Shifts 同步更改通知的实体，并设置实体以按 WFM 规则资格配置筛选，包括交换请求。
 
 ## <a name="permissions"></a>权限
 
@@ -25,11 +25,11 @@ ms.locfileid: "48015553"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | WorkforceIntegration |
+| 委派（工作或学校帐户）     | WorkforceIntegration.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [workforceIntegration](../resources/workforceintegration.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -133,9 +133,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="examples-for-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>用于按 WFM 规则资格进行筛选的 WorkforceIntegration 实体的用例示例
+## <a name="examples-for-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>按 WFM 规则资格筛选的 WorkforceIntegration 实体用例示例
 
-### <a name="use-case-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>用例：创建具有 SwapRequest 的新 WorkforceIntegration 以启用资格筛选
+### <a name="use-case-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>用例：新建一个启用 SwapRequest 进行资格筛选的 WorkforceIntegration
 
 ### <a name="request"></a>请求
 
@@ -159,7 +159,7 @@ Content-type: application/json
 ```
 ### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 ```
 HTTP/1.1 200 OK
 {
@@ -177,14 +177,14 @@ HTTP/1.1 200 OK
 }
 
 ```
-若要了解如何更新启用了 SwapRequest 的现有 workforceintegration 以进行资格筛选，请参阅 [更新](../api/workforceintegration-update.md)。
+若要了解如何使用启用了资格筛选的 SwapRequest 更新现有员工集成，请参阅 [更新](../api/workforceintegration-update.md)。
 
-## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>EligibilityFilteringEnabledEntities 中包含 SwapRequest 时获取符合条件的班次的示例
-倒班应用和劳动力集成终结点之间的交互将遵循现有模式。
+## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>当 SwapRequest 包含在 eligiblyFilteringEnabledEntities 中时提取合格班次的示例
+班次应用和员工集成终结点之间的交互将遵循现有模式。
 
 ### <a name="request"></a>请求
 
-下面的示例演示了如何通过转到劳动力集成终结点来获取交换请求的符合条件的请求。
+下面是 Shifts 向员工集成终结点请求获取交换请求的合格班次的示例。
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -200,7 +200,7 @@ Accept-Language: en-us
 ```
 ### <a name="response"></a>响应
 
-以下是劳动力集成服务响应的示例。
+下面是员工集成服务的响应示例。
 ```
 HTTP/1.1 200 OK
 {

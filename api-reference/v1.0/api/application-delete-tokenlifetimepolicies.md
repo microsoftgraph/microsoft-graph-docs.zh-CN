@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7e9783001ae0dae7204b2cc4f01c19d03b063a34
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3840de12c08d35629c3d383d3056104d757ce236
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137317"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054187"
 ---
 # <a name="remove-tokenlifetimepolicy"></a>删除 tokenLifetimePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "50137317"
 
 从应用程序[中删除 tokenLifetimePolicy。](../resources/tokenlifetimepolicy.md) [](../resources/application.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -89,7 +89,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/tokenLifetimePolicies/
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

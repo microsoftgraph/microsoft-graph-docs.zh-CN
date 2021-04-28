@@ -1,22 +1,22 @@
 ---
 title: 创建班次
-description: 创建新班次。
+description: 创建新的班次。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 42b492917a84f9775b2e48bcd3b29d4b5e3c84f4
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: a8e9cfcbc94d31f08ea7c2fc743a59bd1a1a7513
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315075"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053858"
 ---
 # <a name="create-shift"></a>创建班次
 
 命名空间：microsoft.graph
 
-按[计划](../resources/schedule.md)创建新的[班次](../resources/shift.md)实例。
+在计划 [中](../resources/shift.md) 创建新的班次 [实例](../resources/schedule.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,7 +24,7 @@ ms.locfileid: "48315075"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All |
 
@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/shifts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [shift](../resources/shift.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [shift](../resources/shift.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -126,7 +126,7 @@ Content-type: application/json
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

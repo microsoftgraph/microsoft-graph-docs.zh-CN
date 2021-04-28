@@ -5,24 +5,24 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: df90bf68223934d02561f8cf07bda0c07f9e0eda
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: b8b3c2c1cfe2c415400363e5b8951b5dd8ed1037
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473771"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054502"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>更新 plannerAssignedToTaskBoardTaskFormat
 
 命名空间：microsoft.graph
 
 更新 **plannerAssignedToTaskBoardTaskFormat** 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Tasks.ReadWrite、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Tasks.ReadWrite，Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -92,7 +92,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

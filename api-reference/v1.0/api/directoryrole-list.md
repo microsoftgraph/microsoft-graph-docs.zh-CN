@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 998646fc16119ad7aaccf468fff5b9156cf7a3d2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a6359d595a00a3ca49da308ab84120d54c70c835
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434403"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054068"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -18,9 +18,9 @@ ms.locfileid: "50434403"
 
 列出租户中激活的目录角色。
 
-此操作仅返回已激活的角色。 当管理员使用 [Activate directoryRole](directoryrole-post-directoryroles.md) API 激活角色时，角色将变为激活状态。 并非所有内置角色最初都激活。 
+此操作仅返回已激活的角色。 当管理员使用 [Activate directoryRole](directoryrole-post-directoryroles.md) API 激活角色时，角色将变为激活状态。 并非所有内置角色最初都是激活的。 
 
-使用 Azure 门户分配角色时，角色激活步骤将代表管理员隐式完成。 若要获取 Azure AD 中提供的角色的完整列表，请使用[List directoryRoleTemplates。](directoryroletemplate-list.md)
+使用 Azure 门户分配角色时，角色激活步骤将代表管理员隐式完成。 若要获取 Azure AD 中提供的角色的完整列表，请使用 [List directoryRoleTemplates](directoryroletemplate-list.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /directoryRoles
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [directoryRole](../resources/directoryrole.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [directoryRole](../resources/directoryrole.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles
 ---
 
 ##### <a name="response"></a>响应
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

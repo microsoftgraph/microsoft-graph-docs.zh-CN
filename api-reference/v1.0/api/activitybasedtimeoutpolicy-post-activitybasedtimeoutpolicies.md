@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1114963c8da713fefa7c7cbcc1c6e9864e5885d1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 552dc8688bd21149ecc868fe7af658760eb9f4d3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442598"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054229"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>创建 activityBasedTimeoutPolicy
 
@@ -47,11 +47,11 @@ POST policies/activityBasedTimeoutPolicies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [activityBasedTimeoutPolicy 对象的](../resources/activitybasedtimeoutpolicy.md) JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -101,7 +101,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

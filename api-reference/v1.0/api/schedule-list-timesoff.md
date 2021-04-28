@@ -1,22 +1,22 @@
 ---
-title: 列出 timesOff
+title: List timesOff
 description: 获取此计划中的 timesOff 列表。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4ac7eac13ef82da7d962e2a5306b37212870db0c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30188397b31932bdf6f1648b1fd130db233d982a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051261"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053865"
 ---
-# <a name="list-timesoff"></a>列出 timesOff
+# <a name="list-timesoff"></a>List timesOff
 
 命名空间：microsoft.graph
 
-按[计划](../resources/schedule.md)获取[timeOff](../resources/timeoff.md)实例的列表。
+获取计划 [中的 timeOff](../resources/timeoff.md) 实例 [列表](../resources/schedule.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,11 +24,11 @@ ms.locfileid: "48051261"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
+|委派（工作或学校帐户） | Schedule.Read.All、Group.Read.All、Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All、Schedule、All |
+|应用程序 | Schedule.Read.All、Schedule.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,13 +51,13 @@ GET /teams/{teamId}/schedule/timesOff
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [timeOff](../resources/timeoff.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [timeOff](../resources/timeoff.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面是一个请求的示例，该请求获取具有共享版本的所有 **timeOff** 对象和草稿版本的2019年3月18日之间的草稿。
+下面是一个请求示例，该请求获取 2019 年 3 月 11 日到 3 月 18 日之间具有共享版本和草稿版本的所有 **timeOff** 对象。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff?$filter=sh
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

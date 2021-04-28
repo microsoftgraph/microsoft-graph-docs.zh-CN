@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 415da422b4d7dfa51c2978da4120c88a3e6d82d3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b317c33f1c7f522fdee7e5b71eed63efa68a9852
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132915"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053816"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>List servicePrincipal transitive memberOf
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/transitiveMemberOf
 
 下面展示了示例响应。 
 
-> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -196,7 +196,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -239,7 +239,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

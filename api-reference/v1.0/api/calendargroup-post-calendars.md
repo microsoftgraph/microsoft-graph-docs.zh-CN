@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3573c4ebc1df251706f4fc3b11f66ce4445374d7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d3e3904487bf82ecd552fd61a3217474de89d300
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432959"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054173"
 ---
 # <a name="create-calendar"></a>创建日历
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

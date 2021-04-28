@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2ad466de2ded72969ddfc2645ef17101d3947f78
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 8943197175f6047138f6709e8ed33d2437665d72
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577154"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055713"
 ---
 # <a name="update-table"></a>更新表
 
@@ -24,7 +24,7 @@ ms.locfileid: "50577154"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,11 +48,11 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 |name|string|表的名称。|
 |showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
 |showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
-|style|string|表示表格样式的常量值。 可能的值包括 `TableStyleLight1` ：through `TableStyleLight21` `TableStyleMedium1` 、through  `TableStyleMedium28` `TableStyleDark1` 、through `TableStyleDark11` 。 还可以指定工作簿中显示的用户定义的自定义样式。|
+|style|string|表示表格样式的常量值。 可能的值为 `TableStyleLight1` ：through `TableStyleLight21` 、through `TableStyleMedium1` 、through  `TableStyleMedium28` `TableStyleDark1` 、through `TableStyleDark11` 。 还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [WorkbookTable](../resources/table.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [WorkbookTable](../resources/table.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -93,7 +93,7 @@ Content-length: 109
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

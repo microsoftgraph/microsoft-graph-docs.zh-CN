@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c9a3eb3c23e7222a083eb6e34f5e08be44424250
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4f43a2f89a05aebb61ccc7efd60d89b4338b8914
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575698"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054593"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -24,7 +24,7 @@ ms.locfileid: "50575698"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "samples" } -->
@@ -51,7 +51,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/ima
 |:---------------|:--------|:----------|
 |height|Int32|生成的图像的所需高度。 可选。|
 |width|Int32|生成的图像的所需宽度。 可选。|
-|fittingMode|string|当高度和宽度都设置为 (时，用于将图表缩放到指定尺寸) 。"  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
+|fittingMode|string|用于将图表缩放到指定尺寸的方法 (如果将高度和宽度都设置为) 。"  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>响应
 
@@ -69,7 +69,8 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true

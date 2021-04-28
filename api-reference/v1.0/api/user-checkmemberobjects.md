@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: df3cf26e98f3769bea4ceba632dccd24030494b0
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 04b33659a0677dbae6afdd930e898247bf407990
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870063"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054313"
 ---
 # <a name="user-checkmemberobjects"></a>user： checkMemberObjects
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

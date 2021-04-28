@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 9f6c1f4f5cc7b5c98ecb5b7a76efde34ea66966c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7899640922cd5f8ba38d11bba03c485dbb6099bd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953419"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053914"
 ---
 # <a name="list-printjobs-for-a-printershare"></a>列出 printerShare 的 printJobs
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "50953419"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予 [获取 printerShare](printershare-get.md) 访问权限的权限以及下表中列出的权限之一。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予 [获取 printerShare](printershare-get.md) 访问权限的权限以及下表中列出的权限之一。
 
 若要从其他用户读取打印作业，登录的用户需要是打印管理员，并且具有 PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All 或 PrintJob.ReadWrite.All 权限。
 
