@@ -5,61 +5,61 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05d1aa7eab7f8572a3d4eb350f47134b8756afe2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fd46d262cf7d190daa4c5f21e1c45ec1472b799f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133705"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055685"
 ---
-# <a name="user-getmailtips"></a><span data-ttu-id="73012-103">user： getMailTips</span><span class="sxs-lookup"><span data-stu-id="73012-103">user: getMailTips</span></span>
+# <a name="user-getmailtips"></a><span data-ttu-id="86654-103">user： getMailTips</span><span class="sxs-lookup"><span data-stu-id="86654-103">user: getMailTips</span></span>
 
-<span data-ttu-id="73012-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="73012-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="86654-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="86654-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="73012-105">获取登录用户可用的一个或多个收件人的邮件 [提示](../resources/user.md)。</span><span class="sxs-lookup"><span data-stu-id="73012-105">Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).</span></span>
+<span data-ttu-id="86654-105">获取登录用户可用的一个或多个收件人的邮件 [提示](../resources/user.md)。</span><span class="sxs-lookup"><span data-stu-id="86654-105">Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).</span></span>
 
-<span data-ttu-id="73012-106">请注意，通过调用该操作，可以请求同时为多个收件人返回特定类型的 `POST` `getMailTips` 邮件提示。</span><span class="sxs-lookup"><span data-stu-id="73012-106">Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to be returned for more than one recipient at one time.</span></span> <span data-ttu-id="73012-107">请求的邮件提示在邮件 [提示](../resources/mailtips.md) 集合中返回。</span><span class="sxs-lookup"><span data-stu-id="73012-107">The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.</span></span>
+<span data-ttu-id="86654-106">请注意，通过调用操作，可以请求同时为多个收件人返回特定类型的邮件 `POST` `getMailTips` 提示。</span><span class="sxs-lookup"><span data-stu-id="86654-106">Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to be returned for more than one recipient at one time.</span></span> <span data-ttu-id="86654-107">请求的邮件提示在邮件 [提示](../resources/mailtips.md) 集合中返回。</span><span class="sxs-lookup"><span data-stu-id="86654-107">The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="73012-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="73012-108">Permissions</span></span>
-<span data-ttu-id="73012-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="73012-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="86654-108">权限</span><span class="sxs-lookup"><span data-stu-id="86654-108">Permissions</span></span>
+<span data-ttu-id="86654-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="86654-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="73012-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="73012-111">Permission type</span></span>      | <span data-ttu-id="73012-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="73012-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="86654-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="86654-111">Permission type</span></span>      | <span data-ttu-id="86654-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="86654-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="73012-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="73012-113">Delegated (work or school account)</span></span> | <span data-ttu-id="73012-114">Mail.Read、Mail.Read.Shared</span><span class="sxs-lookup"><span data-stu-id="73012-114">Mail.Read, Mail.Read.Shared</span></span>    |
-|<span data-ttu-id="73012-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="73012-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="73012-116">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="73012-116">Mail.Read</span></span>    |
-|<span data-ttu-id="73012-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="73012-117">Application</span></span> | <span data-ttu-id="73012-118">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="73012-118">Mail.Read</span></span> |
+|<span data-ttu-id="86654-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="86654-113">Delegated (work or school account)</span></span> | <span data-ttu-id="86654-114">Mail.Read、Mail.Read.Shared</span><span class="sxs-lookup"><span data-stu-id="86654-114">Mail.Read, Mail.Read.Shared</span></span>    |
+|<span data-ttu-id="86654-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="86654-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86654-116">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="86654-116">Mail.Read</span></span>    |
+|<span data-ttu-id="86654-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="86654-117">Application</span></span> | <span data-ttu-id="86654-118">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="86654-118">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="73012-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="73012-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="86654-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="86654-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="73012-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="73012-120">Optional query parameters</span></span>
-<span data-ttu-id="73012-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="73012-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="73012-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="73012-122">Request headers</span></span>
-| <span data-ttu-id="73012-123">标头</span><span class="sxs-lookup"><span data-stu-id="73012-123">Header</span></span>       | <span data-ttu-id="73012-124">值</span><span class="sxs-lookup"><span data-stu-id="73012-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="86654-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="86654-120">Optional query parameters</span></span>
+<span data-ttu-id="86654-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="86654-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="86654-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="86654-122">Request headers</span></span>
+| <span data-ttu-id="86654-123">标头</span><span class="sxs-lookup"><span data-stu-id="86654-123">Header</span></span>       | <span data-ttu-id="86654-124">值</span><span class="sxs-lookup"><span data-stu-id="86654-124">Value</span></span>|
 |:-----------  |:------|
-| <span data-ttu-id="73012-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="73012-125">Authorization</span></span> | <span data-ttu-id="73012-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="73012-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="73012-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="73012-128">Content-Type</span></span>  | <span data-ttu-id="73012-129">application/json</span><span class="sxs-lookup"><span data-stu-id="73012-129">application/json</span></span>  |
+| <span data-ttu-id="86654-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="86654-125">Authorization</span></span> | <span data-ttu-id="86654-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="86654-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="86654-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="86654-128">Content-Type</span></span>  | <span data-ttu-id="86654-129">application/json</span><span class="sxs-lookup"><span data-stu-id="86654-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="73012-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="73012-130">Request body</span></span>
-<span data-ttu-id="73012-131">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="73012-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="86654-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="86654-130">Request body</span></span>
+<span data-ttu-id="86654-131">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="86654-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="73012-132">属性</span><span class="sxs-lookup"><span data-stu-id="73012-132">Property</span></span>     | <span data-ttu-id="73012-133">类型</span><span class="sxs-lookup"><span data-stu-id="73012-133">Type</span></span>   |<span data-ttu-id="73012-134">说明</span><span class="sxs-lookup"><span data-stu-id="73012-134">Description</span></span>|
+| <span data-ttu-id="86654-132">属性</span><span class="sxs-lookup"><span data-stu-id="86654-132">Property</span></span>     | <span data-ttu-id="86654-133">类型</span><span class="sxs-lookup"><span data-stu-id="86654-133">Type</span></span>   |<span data-ttu-id="86654-134">说明</span><span class="sxs-lookup"><span data-stu-id="86654-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="73012-135">EmailAddresses</span><span class="sxs-lookup"><span data-stu-id="73012-135">EmailAddresses</span></span>|<span data-ttu-id="73012-136">String collection</span><span class="sxs-lookup"><span data-stu-id="73012-136">String collection</span></span>|<span data-ttu-id="73012-137">要获取邮件提示的收件人的 SMTP 地址的集合。</span><span class="sxs-lookup"><span data-stu-id="73012-137">A collection of SMTP addresses of recipients to get MailTips for.</span></span>|
-|<span data-ttu-id="73012-138">MailTipsOptions</span><span class="sxs-lookup"><span data-stu-id="73012-138">MailTipsOptions</span></span>|<span data-ttu-id="73012-139">String</span><span class="sxs-lookup"><span data-stu-id="73012-139">String</span></span>|<span data-ttu-id="73012-140">表示请求的邮件提示的标志的枚举。</span><span class="sxs-lookup"><span data-stu-id="73012-140">A enumeration of flags that represents the requested mailtips.</span></span> <span data-ttu-id="73012-141">可能的值是： `automaticReplies` `customMailTip` 、 、 、 、 `deliveryRestriction` 、 、 `externalMemberCount` 和 `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` 。</span><span class="sxs-lookup"><span data-stu-id="73012-141">Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.</span></span>|
+|<span data-ttu-id="86654-135">EmailAddresses</span><span class="sxs-lookup"><span data-stu-id="86654-135">EmailAddresses</span></span>|<span data-ttu-id="86654-136">字符串集合</span><span class="sxs-lookup"><span data-stu-id="86654-136">String collection</span></span>|<span data-ttu-id="86654-137">要获取邮件提示的收件人的 SMTP 地址的集合。</span><span class="sxs-lookup"><span data-stu-id="86654-137">A collection of SMTP addresses of recipients to get MailTips for.</span></span>|
+|<span data-ttu-id="86654-138">MailTipsOptions</span><span class="sxs-lookup"><span data-stu-id="86654-138">MailTipsOptions</span></span>|<span data-ttu-id="86654-139">String</span><span class="sxs-lookup"><span data-stu-id="86654-139">String</span></span>|<span data-ttu-id="86654-140">表示请求的邮件提示的标志的枚举。</span><span class="sxs-lookup"><span data-stu-id="86654-140">A enumeration of flags that represents the requested mailtips.</span></span> <span data-ttu-id="86654-141">可能的值是 `automaticReplies` `customMailTip` `deliveryRestriction` ：、、、、、、、、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` 和 `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` 。</span><span class="sxs-lookup"><span data-stu-id="86654-141">Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="73012-142">响应</span><span class="sxs-lookup"><span data-stu-id="73012-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="86654-142">响应</span><span class="sxs-lookup"><span data-stu-id="86654-142">Response</span></span>
 
-<span data-ttu-id="73012-143">如果成功，此方法在响应正文中返回响应代码和 `200 OK` [邮件提示](../resources/mailtips.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="73012-143">If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="73012-144">示例</span><span class="sxs-lookup"><span data-stu-id="73012-144">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="73012-145">请求</span><span class="sxs-lookup"><span data-stu-id="73012-145">Request</span></span>
-<span data-ttu-id="73012-146">下面的示例获取任何自动答复设置和邮箱已满状态的指定收件人的邮件提示。</span><span class="sxs-lookup"><span data-stu-id="73012-146">The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.</span></span>
+<span data-ttu-id="86654-143">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [mailTips](../resources/mailtips.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="86654-143">If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="86654-144">示例</span><span class="sxs-lookup"><span data-stu-id="86654-144">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="86654-145">请求</span><span class="sxs-lookup"><span data-stu-id="86654-145">Request</span></span>
+<span data-ttu-id="86654-146">下面的示例获取任何自动答复设置和邮箱已满状态的指定收件人的邮件提示。</span><span class="sxs-lookup"><span data-stu-id="86654-146">The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="73012-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="73012-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="86654-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="86654-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_getmailtips"
@@ -76,27 +76,27 @@ Content-Type: application/json
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="73012-148">C#</span><span class="sxs-lookup"><span data-stu-id="73012-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="86654-148">C#</span><span class="sxs-lookup"><span data-stu-id="86654-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="73012-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="73012-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="86654-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="86654-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="73012-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="73012-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="86654-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="86654-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmailtips-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="73012-151">Java</span><span class="sxs-lookup"><span data-stu-id="73012-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="86654-151">Java</span><span class="sxs-lookup"><span data-stu-id="86654-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-getmailtips-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="73012-152">响应</span><span class="sxs-lookup"><span data-stu-id="73012-152">Response</span></span>
-<span data-ttu-id="73012-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="73012-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="86654-152">响应</span><span class="sxs-lookup"><span data-stu-id="86654-152">Response</span></span>
+<span data-ttu-id="86654-153">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="86654-153">Here is an example of the response.</span></span> <span data-ttu-id="86654-154">注意：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="86654-154">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
