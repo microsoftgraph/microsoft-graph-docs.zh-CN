@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d5b045a8377a8e7ce26d70e98be1852b828723c4
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 795a3bc5526f3276cc04cae294a886c5966160b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471710"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053263"
 ---
 # <a name="delete-contact"></a>删除联系人
 
@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/v1.0/me/contacts/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

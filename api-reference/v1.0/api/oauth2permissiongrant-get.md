@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 5a268a5801ee5202bd6621b4f7f05aac39a0fb86
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 86e1bd2bbf03ac9304082bee44e5ed6e46ff00fd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448212"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039326"
 ---
-# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>通过 oAuth2PermissionGrant (获取委派) 
+# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>获取 oAuth2PermissionGrant (委派) 
 
 命名空间：microsoft.graph
 
 检索单个 [oAuth2PermissionGrant 的属性](../resources/oauth2permissiongrant.md)。
 
-**oAuth2PermissionGrant** 表示已授予客户端应用程序代表登录用户访问 API 的委派权限。
+**oAuth2PermissionGrant** 表示已授予客户端应用程序代表已登录用户访问 API 的委派权限。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +54,7 @@ GET /oauth2PermissionGrants/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 
 ### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 292303aa3cf2cb47c999786104b57f98920b2bbb
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 59a4b195528ad65b7322fc3eb962295914aa0bb6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130499"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052402"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -26,7 +26,7 @@ ms.locfileid: "50130499"
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -99,7 +99,7 @@ Content-length: 142
 在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

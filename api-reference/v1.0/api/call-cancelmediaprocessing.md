@@ -1,24 +1,24 @@
 ---
-title: 调用： cancelMediaProcessing
-description: 取消对任何正在进行的 playPrompt 或 recordResponse 操作的媒体处理。
+title: call： cancelMediaProcessing
+description: 取消任何进行中的 playPrompt 或 recordResponse 运算的媒体处理。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4ba60b3008bcab8afb6136f3a9848e8ffb0dc6a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be241d8c63f8d47bf4c76a29d2ee460a727dd31d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966392"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035909"
 ---
-# <a name="call-cancelmediaprocessing"></a>调用： cancelMediaProcessing
+# <a name="call-cancelmediaprocessing"></a>call： cancelMediaProcessing
 
 命名空间：microsoft.graph
 
-取消对正在进行的媒体操作的处理。
+取消处理任何进行中的媒体操作。
 
-媒体操作指的是 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse](./call-record.md)，这些操作在默认情况下排队为按顺序处理。 **CancelMediaProcessing**方法将取消进程中的任何操作以及排队的操作。 例如，此方法可用于清理新媒体操作的 IVR 操作队列。 但是，它不会取消 **subscribeToTone** 操作，因为它独立于任何操作队列运行。
+媒体操作是指 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse，](./call-record.md)它们默认排队等待处理。 **cancelMediaProcessing** 方法取消进程内的任何操作以及已排队的操作。 例如，此方法可用于清理新媒体操作的 IVR 操作队列。 但是，它将不会取消 **subscribeToTone** 操作，因为它独立于任何操作队列运行。
 
 ## <a name="permissions"></a>权限
 
@@ -49,11 +49,11 @@ POST /communications/calls/{id}/cancelMediaProcessing
 
 | 参数     | 类型   | 说明         |
 | :------------ | :----- | :------------------ |
-| 适用 | String | 客户端上下文。 |
+| clientContext | String | 客户端上下文。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回一个 `200 OK` HTTP 响应代码和一个位置标头，其中包含为此请求创建的 [COMMSOPERATION](../resources/commsoperation.md) 的 URI。
+如果成功，此方法将返回 HTTP 响应代码和具有为此请求创建的 `200 OK` [commsOperation](../resources/commsoperation.md) 的 URI 的位置标头。
 
 ## <a name="example"></a>示例
 
@@ -102,7 +102,7 @@ Content-Length: 62
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -124,7 +124,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-canceled-for-recordresponse"></a>通知-已取消对 recordResponse 的操作
+##### <a name="notification---operation-canceled-for-recordresponse"></a>通知 - 已取消 recordResponse 的操作
 
 ```http
 POST https://bot.contoso.com/api/calls

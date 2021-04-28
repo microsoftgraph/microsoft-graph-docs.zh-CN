@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 74c53210114525ef04201ffb2eea649c8423dbe6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 60284a0664c693168aa4279a1c48a6a6278d45eb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434669"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039795"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 
@@ -41,7 +41,7 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [dataPolicyOperation](../resources/datapolicyoperation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [dataPolicyOperation](../resources/datapolicyoperation.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 ---
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

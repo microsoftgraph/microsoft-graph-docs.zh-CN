@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 32d58e77fe16bca2db2af3144b4dd033485ae534
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 11ec3c796207e216734fb9e858b7fb0fd9ef0007
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626179"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031497"
 ---
 # <a name="list-workbookcomments"></a>列出 workbookComments
 
@@ -18,7 +18,7 @@ ms.locfileid: "50626179"
 
 检索  [workbookComment 对象](../resources/workbookcomment.md) 的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /me/drive/items/{id}/workbook/comments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [workbookComment](../resources/workbookcomment.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [workbookComment](../resources/workbookcomment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5704af4834a73fab708644e68f92b2e4dc02b1b4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e5c422287c241f2ce9d9d1507114e8795df0dd5e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041846"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053060"
 ---
 # <a name="update-grouplifecyclepolicy"></a>更新 groupLifecyclePolicy
 
@@ -92,7 +92,7 @@ Content-length: 125
 ---
 
 ##### <a name="response"></a>响应
-注意：为简洁起见，可能会截断此处显示的响应对象。 
+注意：为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,

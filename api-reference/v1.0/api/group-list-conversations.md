@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5071b022b03a5fe86cc5bce7933548989032d075
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0cc953819cf1613654f3142a983172167c176ed9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968281"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052332"
 ---
 # <a name="list-conversations"></a>列出对话
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

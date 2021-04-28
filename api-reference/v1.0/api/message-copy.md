@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 17547d8263999328191fa2d993a7694b6c5c9865
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 62e94fec99eca52ddf500c6680f95bc8f93d2ff3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130646"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039459"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130646"
 
 将邮件复制到文件夹。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -103,7 +103,7 @@ Content-length: 44
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

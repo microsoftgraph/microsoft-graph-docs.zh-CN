@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 47e2a442b2f38d46a0b23df06556d3381ad9e10f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9874b3fd3ad12c77f27e496dbcddb860a86dca8f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070217"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052353"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 
-命名空间： microsoft. graph 获取该组的 "接受-发件人" 列表中的用户或组的列表。
+命名空间：microsoft.graph 获取此组的接受发件人列表中的用户或组列表。
 
 接受的发件人列表中的用户可以发布到组对话（在 GET 请求 URL 中标识）。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。
 
@@ -80,8 +80,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

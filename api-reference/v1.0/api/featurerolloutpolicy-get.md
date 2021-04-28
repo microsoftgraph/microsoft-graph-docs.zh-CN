@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0268a16640991378cf9a4f1676f846979cb1f161
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: ab2bb89809fb5f60952f8c188922bd28c1b25c93
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201392"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052381"
 ---
 # <a name="get-featurerolloutpolicy"></a>获取 featureRolloutPolicy
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9-e8
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -1,22 +1,22 @@
 ---
 title: List group transitive memberOf
-description: 获取组所属的组。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Microsoft 365 组不同，这将返回所有类型的组，而不仅仅是 Microsoft 365 组。
+description: 获取组是其中一个成员的组。  此操作是可传递的，并且还将包含此组是嵌套成员的所有组。 与获取用户的组Microsoft 365不同，这将返回所有类型的组，而不只是Microsoft 365组。
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cddfc0a81ac56863fd4f1915ceb2fb2e62f6b18d
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 448303bdc4cf158a41d376f4a2f2f0b69cad9a56
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081906"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052297"
 ---
 # <a name="list-group-transitive-memberof"></a>List group transitive memberOf
 
 命名空间：microsoft.graph
 
-获取组所属的组。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Microsoft 365 组不同，这将返回所有类型的组，而不仅仅是 Microsoft 365 组。
+获取组是其中一个成员的组。  此操作是可传递的，并且还将包含此组是嵌套成员的所有组。 与获取用户的组Microsoft 365不同，这将返回所有类型的组，而不只是Microsoft 365组。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ GET /groups/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 此外，还会启用 OData 强制转换，例如，您可以强制转换以仅获取组的可传递组成员。 可使用“ **displayName** ”和“ **说明** ”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 此外，还启用了 OData 转换，例如，您可以转换以仅获取组的可传递的组成员。 可使用“**displayName**”和“**说明**”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,7 +55,7 @@ GET /groups/{id}/transitiveMemberOf
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-groups-and-administrative-units-that-the-group-is-a-transitive-member-of"></a>示例1：获取组是该组的可传递成员的组和管理单元
+### <a name="example-1-get-groups-and-administrative-units-that-the-group-is-a-transitive-member-of"></a>示例 1：获取组是其可传递成员组和管理单元
 
 #### <a name="request"></a>请求
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -132,7 +132,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response"
@@ -173,7 +173,7 @@ Content-type: text/plain
 
 `294`
 
-### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例4：使用 OData 强制转换和 $search 获取包含包含字母 "层" 的组的组成员身份，其中包括返回的对象的计数
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 OData cast 和 $search 获取显示名称包含字母"tier"（包括返回对象计数）的组的成员身份
 
 #### <a name="request"></a>请求
 
@@ -192,7 +192,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -216,7 +216,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例5：使用 OData 强制转换和 $filter 获取显示名称以 "A" 开头的成员身份，其中包含返回对象的计数
+### <a name="example-5-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 OData 转换$filter获取以"A"开头显示名称（包括返回对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 
@@ -235,7 +235,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

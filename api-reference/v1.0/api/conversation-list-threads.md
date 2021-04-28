@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cade38bd630d84a0b6e550daf7e85b81943b6247
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 80dceb9cc85d9a9e17761ab8197d94df7b675161
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461445"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035657"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -20,7 +20,7 @@ ms.locfileid: "48461445"
 
 注意：还可以 [获取组的所有线程](group-list-threads.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

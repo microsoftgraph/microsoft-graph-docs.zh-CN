@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3676177ada11c9db397c094a7ca83e0def5ce4a2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8c0eb3dc633c11e47cca189d449e46923d30a4d2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459723"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052339"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -18,7 +18,7 @@ ms.locfileid: "48459723"
 
 从群组的默认日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -95,8 +95,8 @@ Prefer: outlook.body-content-type="text"
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d00be7a9625a45d1824240381d334eb11a5b729e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8f17537315e97efb99837a9333cf5821818007ec
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434536"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039725"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/devices
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -145,7 +145,7 @@ Content-type: text/plain
 
 `294`
 
-### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一个设备显示名称以"a"开头的设备，其中包括返回的对象数
+### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一显示名称以"a"开头的设备，包括返回的对象计数
 
 #### <a name="request"></a>请求
 
@@ -164,7 +164,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -193,7 +193,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>示例 4：$search获取显示名称包含字母"Android"的设备，包括返回的对象数
+### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>示例 4：$search获取显示名称包含字母"Android"的设备，包括返回的对象计数
 
 #### <a name="request"></a>请求
 
@@ -212,7 +212,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

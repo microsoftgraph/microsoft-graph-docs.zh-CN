@@ -1,16 +1,16 @@
 ---
 title: 获取组设置模板
-description: 获取一个组设置模板，该模板代表可在租户中创建设置的设置的模板。
+description: 获取一个组设置模板，该模板代表可以在租户中创建设置的设置的模板。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4693e6158f26899964e6bfe113625401f088f631
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 1d8bdc4168a41358d372e7214bb185694c59ff1f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458379"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039599"
 ---
 # <a name="get-a-group-setting-template"></a>获取组设置模板
 
@@ -18,7 +18,7 @@ ms.locfileid: "48458379"
 
 组设置模板表示用于在租户内创建设置的设置模板。此操作允许检索 [groupSettingTemplate](../resources/groupsettingtemplate.md) 对象的属性，包括可用设置及其默认值。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 
 ##### <a name="response"></a>响应
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

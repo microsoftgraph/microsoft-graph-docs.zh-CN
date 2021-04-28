@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 147f6f4aaeed20a51e69ecca8bfb310d4e253cfa
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 45f0e9a667747b522f2a3a8831ae9b3b684ad41c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506898"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031514"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
 
@@ -87,7 +87,7 @@ Content-type: application/json
 
 在请求正文中，提供 [contactFolder](../resources/contactfolder.md) 对象的 JSON 表示形式。
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

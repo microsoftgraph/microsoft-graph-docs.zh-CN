@@ -1,24 +1,24 @@
 ---
 title: 删除所有者
-description: 使用此 API 可以通过 owners 导航属性从 Microsoft 365 组、安全组或启用邮件的安全组中删除所有者。
+description: 使用此 API 可以通过 owners 导航属性Microsoft 365组、安全组或启用邮件的安全组中删除所有者。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 467e228f42f5ab2aae3e9d4ab79815bdc582253d
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 2887284cbd5bdf644c161d790f1cd832a410dae4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469078"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053095"
 ---
 # <a name="remove-owner"></a>删除所有者
 
 命名空间：microsoft.graph
 
-使用此 API 可以通过 owners 导航属性从 Microsoft 365 组、安全组或启用邮件的安全组中删除所有者。 将所有者分配给组后，无法删除组的最后一个所有者。 
+使用此 API 可以通过 owners 导航属性Microsoft 365组、安全组或启用邮件的安全组中删除所有者。 将所有者分配给组后，无法删除组的最后一个所有者。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -78,7 +78,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

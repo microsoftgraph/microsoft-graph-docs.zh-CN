@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ddedbb28f16defa68cecd9d03ac24174c916b175
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d0ff440b19aaef21d3f33f6dff9e767d6b08a820
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948770"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038899"
 ---
 # <a name="update-securescorecontrolprofile"></a>更新 secureScoreControlProfile
 
@@ -172,7 +172,7 @@ Content-type: application/json
 
 下面是使用可选请求标头 `Prefer: return=representation` 时的响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

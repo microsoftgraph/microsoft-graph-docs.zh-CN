@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0f3e976a04f33866b81926849d9ad310551c335a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b4794c7b2d16f51584ff0a5e8b60c75bfe979df6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055097"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052311"
 ---
 # <a name="list-rejectedsenders"></a>列出 rejectedSender
 
-命名空间： microsoft. graph 获取此组的 "已拒绝-发件人" 列表中的用户或组的列表。 
+命名空间：microsoft.graph 获取此组的拒绝发件人列表中的用户或组列表。 
 
 已拒绝的发件人列表中的用户无法发布到组对话（在 GET 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。
 
@@ -80,8 +80,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

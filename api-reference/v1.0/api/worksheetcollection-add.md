@@ -5,18 +5,18 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: afb5f118ad467c769df2ae59b082e95e2d8a9ce2
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 93f10dc4b45a84c72a69d6dc1ab31825d25ca4da
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573591"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053676"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
 命名空间：microsoft.graph
 
-向工作簿添加新工作表。 工作表将添加到现有工作表的末尾。 如果要激活新添加的工作表，请调用 .activate () 工作表。
+向工作簿添加新工作表。 工作表将添加到现有工作表的末尾。 如果要激活新添加的工作表，请对 () .activate。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -24,7 +24,7 @@ ms.locfileid: "50573591"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [WorkbookWorksheet](../resources/worksheet.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [WorkbookWorksheet](../resources/worksheet.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -89,7 +89,7 @@ Content-length: 26
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

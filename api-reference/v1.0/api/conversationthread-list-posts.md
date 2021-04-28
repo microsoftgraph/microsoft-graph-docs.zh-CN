@@ -1,16 +1,16 @@
 ---
 title: 列出帖子
-description: '获取指定线程的帖子。 您可以同时指定父对话和线程，或者 '
+description: '获取指定线程的帖子。 你可以同时指定父会话和线程，或者， '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fd98c01033fac529661dce268e99199dadd9b665
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: e2e641a6524a08a328fe6cfb7b879a9b8fb5e09a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904747"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053228"
 ---
 # <a name="list-posts"></a>列出帖子
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

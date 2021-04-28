@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 697ea12958a6bb206635726a2d0e18649db71378
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: cbcdbd4b9daa5c8f882e2d2afba47bd273372a97
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869839"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053074"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -87,7 +87,7 @@ Content-length: 33
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

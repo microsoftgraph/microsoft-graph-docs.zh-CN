@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3abeb1822efb34af9d46a9d0b4577885f2f82c96
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 267096f20f47fdbd43f5c5fa857d6cd7e3634c32
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448861"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052437"
 ---
 # <a name="device-checkmemberobjects"></a>device： checkMemberObjects
 
@@ -49,7 +49,7 @@ POST /devices/{id}/checkMemberObjects
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| ids | String collection | 包含目录角色的组、目录角色或 roleTemplate ID 的对象 ID 的集合，用于检查其成员身份。 可以指定最多 20 个对象。 |
+| ids | String collection | 包含要检查成员身份的目录角色的组、目录角色或 roleTemplate ID 的对象 ID 的集合。 可以指定最多 20 个对象。 |
 
 ## <a name="response"></a>响应
 
@@ -105,7 +105,7 @@ Content-type: application/json
 
 下面展示了示例响应。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

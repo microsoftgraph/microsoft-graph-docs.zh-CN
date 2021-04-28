@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 30432a8c70253f092366782f5d8ff537905894da
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ea30ec58da82c43e6aaa567aba0fe28c754c2f62
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442122"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039879"
 ---
 # <a name="get-conditionalaccesspolicy"></a>获取 conditionalAccessPolicy
 
@@ -52,7 +52,7 @@ GET /identity/conditionalAccess/policies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的条件AccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

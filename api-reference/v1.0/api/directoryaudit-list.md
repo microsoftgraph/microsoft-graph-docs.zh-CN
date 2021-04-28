@@ -1,22 +1,22 @@
 ---
 title: 列出 directoryAudits
-description: 介绍 directoryAudit 资源列表方法 (Microsoft Graph API) 实体。
+description: 介绍 microsoft (API) directoryAudit 资源Graph方法。
 localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8cf4dc9624408820bb3d4ea9cdf44bbc47ec10c4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cc7037ab178629e6a0861506cf31a9f0604d70f7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956694"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053172"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
 命名空间：microsoft.graph
 
-获取 Azure Active Directory 生成的审核日志列表。 这包括 Azure AD 中各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 以及自助服务组管理等。
+获取由用户生成的审核日志Azure Active Directory。 这包括 Azure AD 中各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 以及自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

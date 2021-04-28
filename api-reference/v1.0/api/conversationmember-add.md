@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 150c3003487ed4585951495b0f9e9ed9a6f38121
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 1441ee9698720cc5d5041e7fd3df7c661574077f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848643"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053242"
 ---
 # <a name="add-conversationmember"></a>添加 conversationMember
 
@@ -47,7 +47,7 @@ POST /teams/{id}/channels/{id}/members
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|该用户的角色。|
-|用户|[用户](../resources/user.md)|要添加到频道的用户。|
+|user|[user](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 
@@ -99,7 +99,7 @@ content-length: 26
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

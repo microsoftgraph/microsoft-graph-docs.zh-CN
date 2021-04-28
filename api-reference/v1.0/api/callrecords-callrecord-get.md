@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6edea7c4cb729fec2afe3c6e1966839ff72faf66
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: dc4a309e68f0fd05d99298194a30637014de5f70
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473977"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035860"
 ---
 # <a name="get-callrecord"></a>获取 callRecord
 
@@ -18,10 +18,10 @@ ms.locfileid: "50473977"
 
 检索 [callRecord](../resources/callrecords-callrecord.md) 对象的属性和关系。
 
-有两种方法可以获取 **callRecord 的 ID：** 
+有两种方法可以获取 **callRecord 的** **ID：**
 
-* 订阅 [以更改终结点](/graph/api/resources/webhooks?view=graph-rest-1.0) `/communications/callRecords` 通知。
-* 使用 **呼叫的 callChainId** [属性](../resources/call.md)。 仅在关联的呼叫完成之后，呼叫记录才可用。
+* 订阅 [终结点更改](/graph/api/resources/webhooks?view=graph-rest-1.0) `/communications/callRecords` 通知。
+* 使用 **呼叫 的 callChainId** [属性](../resources/call.md)。 呼叫记录仅在关联的呼叫完成之后可用。
 
 ## <a name="permissions"></a>权限
 
@@ -57,7 +57,7 @@ GET /communications/callRecords/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -188,7 +188,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 下面展示了示例响应。 如果会话列表被截断，则会提供一个值 `sessions@odata.nextLink` 来检索下一页会话。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

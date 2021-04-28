@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 97a902f38b983105a1815250071b3ef7f8b3d7bd
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 5efd624bf4a8104465e7663a41b758ec8661a2eb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910506"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031515"
 ---
 # <a name="update-workforceintegration"></a>更新工作人员集成
 
@@ -18,7 +18,7 @@ ms.locfileid: "49910506"
 
 更新 [workforceIntegration 对象](../resources/workforceintegration.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,13 +53,13 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 |apiVersion|Int32|用于回叫 URL 的 API 版本。 从 1 开始。|
 |displayName|String|员工集成的名称。|
 |加密|workforceIntegrationEncryption|员工集成加密资源。 |
-|isActive|Boolean|指示此员工集成当前是否处于活动状态且可用。|
+|isActive|布尔值|指示此员工集成当前是否处于活动状态且可用。|
 |supportedEntities|string| 可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。 如果选择多个值，则所有值必须以大写字母开头。|
-|url|String| 来自轮班服务的回调的员工集成 URL。 |
+|url|String| 轮班服务中回调的员工集成 URL。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [workforceIntegration](../resources/workforceintegration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -115,7 +115,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -182,14 +182,14 @@ Content-type: application/json
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-若要了解如何使用启用了资格筛选的 SwapRequest 创建新员工集成，请参阅["创建"。](../api/workforceintegration-post.md)
+若要了解如何创建启用了 SwapRequest 进行资格筛选的新员工社区，请参阅 [创建](../api/workforceintegration-post.md)。
 
 ## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>当 SwapRequest 包含在 eligiblyFilteringEnabledEntities 中时提取合格班次的示例
-班次应用与员工集成终结点之间的交互将遵循现有模式。
+班次应用和员工集成终结点之间的交互将遵循现有模式。
 
 ### <a name="request"></a>请求
 
-下面是班次向员工集成终结点请求获取交换请求的合格班次的示例。
+下面是 Shifts 向员工集成终结点请求获取交换请求的合格班次的示例。
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read

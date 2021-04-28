@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: faf7e73c0eb15deaa9d7c748513f6451c74b03cf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 57a42884de83b62873c5fac35ae6f01b730fdb45
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440036"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52033760"
 ---
 # <a name="create-tokenissuancepolicy"></a>创建 tokenIssuancePolicy
 
@@ -49,7 +49,7 @@ POST policies/tokenIssuancePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -99,7 +99,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

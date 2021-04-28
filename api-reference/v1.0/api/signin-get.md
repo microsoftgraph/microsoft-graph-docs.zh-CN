@@ -1,24 +1,24 @@
 ---
 title: 获取 signIn
-description: 介绍从 Microsoft Graph API 获取 (的 signIn) 方法。
+description: 介绍从 Microsoft (API) signIn Graph get 方法。
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: cb09d2f9fde80ba6e9d24cae80a39a74faacc3ed
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d4da7d4abf4fb6c83c8dc557b628228d2a235094
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131990"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52034593"
 ---
 # <a name="get-signin"></a>获取 signIn
 
 命名空间：microsoft.graph
 
-检索租户的特定 Azure AD 用户登录事件。 本质上是交互式的登录 (其中用户名/密码作为身份验证令牌) 的一部分传递，并且成功的联合登录当前包含在登录日志中。
+检索租户的特定 Azure AD 用户登录事件。 本质上是交互式的登录 (其中用户名/密码作为身份验证令牌) 且成功的联合登录当前包含在登录日志中。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/{id}
 ### <a name="response"></a>响应
 
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

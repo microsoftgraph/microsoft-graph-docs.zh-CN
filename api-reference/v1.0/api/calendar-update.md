@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 870432cf062fa1aa933a73f479fcfedf66b638e6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c80bd086fd67a0e6d47cb13ddcfbfdb10a20d6ad
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434858"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052514"
 ---
 # <a name="update-calendar"></a>更新日历
 
@@ -64,7 +64,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [calendar](../resources/calendar.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-以下示例更新登录用户的默认日历的名称。
+以下示例更新已登录用户的默认日历的名称。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ Content-type: application/json
 ---
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

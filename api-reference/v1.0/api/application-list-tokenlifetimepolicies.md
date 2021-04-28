@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: df91b09be98e20245acf9c4f5957631868c11a13
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 68dac1d77011f0d82c9b786b64a2218a09a82535
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129694"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035930"
 ---
 # <a name="list-assigned-tokenlifetimepolicy"></a>列出分配的 tokenLifetimePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50129694"
 
 列出 [分配给应用程序的 tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) [对象](../resources/application.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ GET /applications/{id}/tokenLifetimePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/tokenLifetimePolicies
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

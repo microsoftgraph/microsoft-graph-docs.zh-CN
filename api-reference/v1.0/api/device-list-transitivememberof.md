@@ -5,12 +5,12 @@ author: spunukol
 ms.prod: directory-management
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: e6fa162d5c72c33fe0322d11e7549a1f809b3498
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cf86bfa5235ae00450e14e8c5d221bb41f60e4f2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434543"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053221"
 ---
 # <a name="list-device-transitive-groups"></a>List device transitive groups
 
@@ -59,7 +59,7 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>示例 1：获取设备是其可传递成员
+### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>示例 1：获取设备是可传递成员
 
 #### <a name="request"></a>请求
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -152,7 +152,7 @@ Content-type: text/plain
 
 `294`
 
-### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取显示名称中包含字母"Video"（包括返回对象计数）的组成员身份
+### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取显示名称包含字母"Video"（包括返回对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 
@@ -171,7 +171,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -195,7 +195,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 强制转换$filter获取以"A"开头显示名称返回的对象计数的组成员身份
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换$filter获取以"A"开头显示名称（包括返回对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 
@@ -214,7 +214,7 @@ ConsistencyLevel: eventual
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

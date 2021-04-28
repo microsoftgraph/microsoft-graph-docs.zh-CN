@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 334b353a03e91f51307a27de4b3865e4d7dd6996
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 0658417489505cbb6179c1be1b9a39ec4dc3b343
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459282"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039858"
 ---
 # <a name="get-contactfolder"></a>获取 contactFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "48459282"
 
 通过使用联系人文件夹 ID 获取联系人文件夹。
 
-在以下两种情况下，应用可以获取其他用户的联系人文件夹：
+在两种方案中，应用可以获取其他用户的联系人文件夹：
 
 * 如果该应用程序具有应用程序权限，或者
 * 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

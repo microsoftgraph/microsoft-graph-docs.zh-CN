@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 01ffc74717e9890771894b1cff6cc41ab6499f10
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d9b483dd038c7b36688332628fbe7fb94e3a2df2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311943"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039032"
 ---
 # <a name="get-schedulinggroup"></a>获取 schedulingGroup
 
@@ -24,9 +24,9 @@ ms.locfileid: "48311943"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
+|委派（工作或学校帐户） | Schedule.Read.All、Group.Read.All、Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All、Schedule、All |
+|应用程序 | Schedule.Read.All、Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +38,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 OData 查询参数来自定义响应。
+此方法不支持使用 OData 查询参数自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -51,7 +51,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{s
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

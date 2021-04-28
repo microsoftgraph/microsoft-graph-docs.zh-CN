@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14913adaad256ffc29b5dc5e5086ab061bf44c54
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0d282afb127dba1222f208d0660e6ff584c22834
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128377"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052234"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -28,8 +28,8 @@ ms.locfileid: "50128377"
 
 通过发布到邮件附件集合，你可以把附件添加到现有邮件，也可以把附件添加到 [正在创建和发送的邮件](../api/user-sendmail.md)。
 
-此操作将可添加到的附件大小限制在 3 MB 以下。
-## <a name="permissions"></a>Permissions
+此操作将可添加到的附件的大小限制在 3 MB 以下。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -176,7 +176,7 @@ Content-length: 200
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_v1",

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c37ba037371e944110b4624c4388378b4f4231f8
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8f722f80f08b599dddc62aa30324e799091c674f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470779"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052269"
 ---
 # <a name="create-conversation"></a>创建对话
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

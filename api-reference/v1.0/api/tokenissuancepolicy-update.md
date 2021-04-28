@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6779f7db60278cbd6df4c08007af5c0d527e80a8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3e9784557a973f38dc7a172ae0a0fec57c763292
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448903"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52033753"
 ---
 # <a name="update-tokenissuancepolicy"></a>更新 tokenIssuancePolicy
 
@@ -51,10 +51,10 @@ PATCH /policies/tokenIssuancePolicies/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
+|definition|字符串集合| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必填。|
-|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认设置。 可选，默认值为 false。|
+|displayName|String| 此策略的显示名称。 必需。|
+|isOrganizationDefault|布尔值|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 false。|
 
 ## <a name="response"></a>响应
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

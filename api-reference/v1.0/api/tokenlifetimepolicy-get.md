@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ea8e90ee4aecbb26ceb557cbc1c6435745e8ae97
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1dce68205e601f5ad6b2c4c070caad2b4e39fd13
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448896"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52033746"
 ---
 # <a name="get-tokenlifetimepolicy"></a>获取 tokenLifetimePolicy
 
@@ -40,7 +40,7 @@ GET /policies/tokenLifetimePolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持和 `$expand` `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
+此方法支持 `$expand` 和 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /policies/tokenLifetimePolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
