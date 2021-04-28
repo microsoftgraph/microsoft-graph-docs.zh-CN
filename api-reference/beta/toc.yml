@@ -9469,6 +9469,99 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Assign
                     href: api/cloudpcprovisioningpolicy-assign.md
+          - name: '设备更新 (预览) '
+            displayName: Windows updates
+            items:
+              - name: 更新
+                href: resources/windowsupdates-updates.md
+              - name: 目录
+                items:
+                  - name: 目录
+                    href: resources/windowsupdates-catalog.md
+                  - name: 功能更新目录条目
+                    href: resources/windowsupdates-featureupdatecatalogentry.md
+                  - name: 质量更新目录条目
+                    href: resources/windowsupdates-qualityupdatecatalogentry.md
+                  - name: 列出目录条目
+                    href: api/windowsupdates-catalog-list-entries.md
+              - name: 部署
+                href: resources/windowsupdates-deployment.md
+                items:
+                  - name: 列出部署
+                    href: api/windowsupdates-updates-list-deployments.md
+                  - name: 创建部署
+                    href: api/windowsupdates-updates-post-deployments.md
+                  - name: 获取部署
+                    href: api/windowsupdates-deployment-get.md
+                  - name: 更新部署
+                    href: api/windowsupdates-deployment-update.md
+                  - name: 删除部署
+                    href: api/windowsupdates-deployment-delete.md
+                  - name: 可部署内容
+                    items:
+                      - name: 加快质量更新参考
+                        href: resources/windowsupdates-expeditedqualityupdatereference.md
+                      - name: 功能更新参考
+                        href: resources/windowsupdates-featureupdatereference.md
+                  - name: 部署访问群体
+                    items:
+                      - name: 部署访问群体
+                        href: resources/windowsupdates-deploymentaudience.md
+                      - name: 列出成员
+                        href: api/windowsupdates-deploymentaudience-list-members.md
+                      - name: 列表排除项
+                        href: api/windowsupdates-deploymentaudience-list-exclusions.md
+                      - name: 更新成员和排除项
+                        href: api/windowsupdates-deploymentaudience-updateaudience.md
+                      - name: 按 ID 更新
+                        href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+              - name: 可更新资源
+                href: resources/windowsupdates-updatableasset.md
+                items:
+                  - name: 列出可更新资源
+                    href: api/windowsupdates-updates-list-updatableassets.md
+                  - name: 获取可更新资源
+                    href: api/windowsupdates-updatableasset-get.md
+                  - name: 删除可更新资源
+                    href: api/windowsupdates-updatableasset-delete.md
+                  - name: Azure AD 设备
+                    href: resources/windowsupdates-azureaddevice.md
+                    items:
+                      - name: 列出 Azure AD 设备
+                        href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
+                      - name: 获取 Azure AD 设备
+                        href: api/windowsupdates-azureaddevice-get.md
+                      - name: 删除 Azure AD 设备
+                        href: api/windowsupdates-azureaddevice-delete.md
+                      - name: 注册更新管理
+                        href: api/windowsupdates-updatableasset-enrollassets.md
+                      - name: 按 ID 注册
+                        href: api/windowsupdates-updatableasset-enrollassetsbyid.md
+                      - name: 注销更新管理
+                        href: api/windowsupdates-updatableasset-unenrollassets.md
+                      - name: 通过 ID 注销
+                        href: api/windowsupdates-updatableasset-unenrollassetsbyid.md
+                  - name: 可更新资源组
+                    href: resources/windowsupdates-updatableassetgroup.md
+                    items:
+                      - name: 列出可更新资源组
+                        href: api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md
+                      - name: 创建可更新资源组
+                        href: api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md
+                      - name: 获取可更新资源组
+                        href: api/windowsupdates-updatableassetgroup-get.md
+                      - name: 删除可更新资源组
+                        href: api/windowsupdates-updatableassetgroup-delete.md
+                      - name: 列出成员
+                        href: api/windowsupdates-updatableassetgroup-list-members.md
+                      - name: 添加成员
+                        href: api/windowsupdates-updatableassetgroup-addmembers.md
+                      - name: 按 ID 添加成员
+                        href: api/windowsupdates-updatableassetgroup-addmembersbyid.md
+                      - name: 删除成员
+                        href: api/windowsupdates-updatableassetgroup-removemembers.md
+                      - name: 按 ID 删除成员
+                        href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
       - name: 教育
         items:
           - name: 概述
@@ -11114,6 +11207,13 @@ items:
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
+                  - name: 访问评审策略
+                    href: resources/accessreviewpolicy.md
+                    items:
+                      - name: 获取
+                        href: api/accessreviewpolicy-get.md
+                      - name: 更新
+                        href: api/accessreviewpolicy-update.md
               - name: '旧版 (访问) '
                 href: resources/accessreviews-root.md
                 items:

@@ -5,66 +5,67 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 688fb39ef0c4170feb5e134e439e6b1c538ecbc6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8637e16e686ddbd87476646636a414c0c09bee34
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053480"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067171"
 ---
-# <a name="searchentity-query"></a><span data-ttu-id="70496-104">searchEntity： query</span><span class="sxs-lookup"><span data-stu-id="70496-104">searchEntity: query</span></span>
+# <a name="searchentity-query"></a><span data-ttu-id="f7bbd-104">searchEntity： query</span><span class="sxs-lookup"><span data-stu-id="f7bbd-104">searchEntity: query</span></span>
 
-<span data-ttu-id="70496-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="70496-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f7bbd-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f7bbd-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="70496-106">运行请求正文中指定的查询。</span><span class="sxs-lookup"><span data-stu-id="70496-106">Runs the query specified in the request body.</span></span> <span data-ttu-id="70496-107">响应中提供了搜索结果。</span><span class="sxs-lookup"><span data-stu-id="70496-107">Search results are provided in the response.</span></span>
+<span data-ttu-id="f7bbd-106">运行请求正文中指定的查询。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-106">Runs the query specified in the request body.</span></span> <span data-ttu-id="f7bbd-107">响应中提供了搜索结果。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-107">Search results are provided in the response.</span></span>
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-## <a name="permissions"></a><span data-ttu-id="70496-108">权限</span><span class="sxs-lookup"><span data-stu-id="70496-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7bbd-108">权限</span><span class="sxs-lookup"><span data-stu-id="f7bbd-108">Permissions</span></span>
 
-<span data-ttu-id="70496-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="70496-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span> 
+<span data-ttu-id="f7bbd-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span> 
 
-| <span data-ttu-id="70496-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="70496-111">Permission type</span></span>                        | <span data-ttu-id="70496-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="70496-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f7bbd-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f7bbd-111">Permission type</span></span>                        | <span data-ttu-id="f7bbd-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f7bbd-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="70496-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="70496-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="70496-114">Mail.Read、Calendars.Read、Files.Read.All、Sites.Read.All、ExternalItem.Read.All</span><span class="sxs-lookup"><span data-stu-id="70496-114">Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All</span></span> |
-| <span data-ttu-id="70496-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="70496-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70496-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="70496-116">Not supported.</span></span> |
-| <span data-ttu-id="70496-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="70496-117">Application</span></span>                            | <span data-ttu-id="70496-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="70496-118">Not supported.</span></span> |
+| <span data-ttu-id="f7bbd-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f7bbd-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="f7bbd-114">Mail.Read、Calendars.Read、Files.Read.All、Sites.Read.All、ExternalItem.Read.All</span><span class="sxs-lookup"><span data-stu-id="f7bbd-114">Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All</span></span> |
+| <span data-ttu-id="f7bbd-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f7bbd-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7bbd-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-116">Not supported.</span></span> |
+| <span data-ttu-id="f7bbd-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f7bbd-117">Application</span></span>                            | <span data-ttu-id="f7bbd-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="70496-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="70496-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7bbd-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f7bbd-119">HTTP request</span></span>
 
 ```HTTP
 POST /search/query
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="70496-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="70496-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f7bbd-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f7bbd-120">Request headers</span></span>
 
-| <span data-ttu-id="70496-121">名称</span><span class="sxs-lookup"><span data-stu-id="70496-121">Name</span></span>          | <span data-ttu-id="70496-122">说明</span><span class="sxs-lookup"><span data-stu-id="70496-122">Description</span></span>   |
+| <span data-ttu-id="f7bbd-121">名称</span><span class="sxs-lookup"><span data-stu-id="f7bbd-121">Name</span></span>          | <span data-ttu-id="f7bbd-122">说明</span><span class="sxs-lookup"><span data-stu-id="f7bbd-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="70496-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="70496-123">Authorization</span></span> | <span data-ttu-id="70496-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="70496-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="70496-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="70496-126">Content-type</span></span> | <span data-ttu-id="70496-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="70496-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="f7bbd-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f7bbd-123">Authorization</span></span> | <span data-ttu-id="f7bbd-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f7bbd-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="f7bbd-126">Content-type</span></span> | <span data-ttu-id="f7bbd-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="f7bbd-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="70496-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="70496-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7bbd-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="f7bbd-129">Request body</span></span>
 
-<span data-ttu-id="70496-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="70496-130">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="f7bbd-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="70496-131">参数</span><span class="sxs-lookup"><span data-stu-id="70496-131">Parameter</span></span>    | <span data-ttu-id="70496-132">类型</span><span class="sxs-lookup"><span data-stu-id="70496-132">Type</span></span>        | <span data-ttu-id="70496-133">说明</span><span class="sxs-lookup"><span data-stu-id="70496-133">Description</span></span> |
+| <span data-ttu-id="f7bbd-131">参数</span><span class="sxs-lookup"><span data-stu-id="f7bbd-131">Parameter</span></span>    | <span data-ttu-id="f7bbd-132">类型</span><span class="sxs-lookup"><span data-stu-id="f7bbd-132">Type</span></span>        | <span data-ttu-id="f7bbd-133">说明</span><span class="sxs-lookup"><span data-stu-id="f7bbd-133">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="70496-134">requests</span><span class="sxs-lookup"><span data-stu-id="70496-134">requests</span></span>|<span data-ttu-id="70496-135">[searchRequest](../resources/searchrequest.md) 集合</span><span class="sxs-lookup"><span data-stu-id="70496-135">[searchRequest](../resources/searchrequest.md) collection</span></span>|<span data-ttu-id="70496-136">一个或多个搜索请求的集合，每个搜索请求的格式都为 JSON blob。</span><span class="sxs-lookup"><span data-stu-id="70496-136">A collection of one or more search requests each formatted in a JSON blob.</span></span> <span data-ttu-id="70496-137">每个 JSON blob 都包含响应中预期的资源类型、基础源、分页参数、请求的字段和实际搜索查询。</span><span class="sxs-lookup"><span data-stu-id="70496-137">Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query.</span></span> <br> <span data-ttu-id="70496-138">请注意搜索 [实体](../resources/search-api-overview.md#known-limitations) 类型的特定组合以及排序或聚合搜索结果的已知限制。</span><span class="sxs-lookup"><span data-stu-id="70496-138">Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results.</span></span> |
+|<span data-ttu-id="f7bbd-134">requests</span><span class="sxs-lookup"><span data-stu-id="f7bbd-134">requests</span></span>|<span data-ttu-id="f7bbd-135">[searchRequest](../resources/searchrequest.md) 集合</span><span class="sxs-lookup"><span data-stu-id="f7bbd-135">[searchRequest](../resources/searchrequest.md) collection</span></span>|<span data-ttu-id="f7bbd-136">一个或多个搜索请求的集合，每个搜索请求的格式都为 JSON blob。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-136">A collection of one or more search requests each formatted in a JSON blob.</span></span> <span data-ttu-id="f7bbd-137">每个 JSON blob 都包含响应中预期的资源类型、基础源、分页参数、请求的字段和实际搜索查询。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-137">Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query.</span></span> <br> <span data-ttu-id="f7bbd-138">请注意搜索 [实体](../resources/search-api-overview.md#known-limitations) 类型的特定组合以及排序或聚合搜索结果的已知限制。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-138">Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results.</span></span> |
+|<span data-ttu-id="f7bbd-139">queryAlterationOptions</span><span class="sxs-lookup"><span data-stu-id="f7bbd-139">queryAlterationOptions</span></span>|[<span data-ttu-id="f7bbd-140">searchAlterationOptions</span><span class="sxs-lookup"><span data-stu-id="f7bbd-140">searchAlterationOptions</span></span>](../resources/searchalterationoptions.md)|<span data-ttu-id="f7bbd-141">JSON blob 中格式化的查询更改选项，其中包含用于拼写更正的两个可选标志。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-141">Query alteration options formatted in a JSON blob that contains two optional flags to for spelling correction.</span></span> <span data-ttu-id="f7bbd-142">可选。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-142">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="70496-139">响应</span><span class="sxs-lookup"><span data-stu-id="70496-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f7bbd-143">响应</span><span class="sxs-lookup"><span data-stu-id="f7bbd-143">Response</span></span>
 
-<span data-ttu-id="70496-140">如果成功，此方法在响应正文中返回 响应代码和 `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) 集合对象。</span><span class="sxs-lookup"><span data-stu-id="70496-140">If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.</span></span>
+<span data-ttu-id="f7bbd-144">如果成功，此方法在响应正文中返回 响应代码和 `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-144">If successful, this method returns a `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) object in the response body.</span></span>
  
 
-## <a name="examples"></a><span data-ttu-id="70496-141">示例</span><span class="sxs-lookup"><span data-stu-id="70496-141">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f7bbd-145">示例</span><span class="sxs-lookup"><span data-stu-id="f7bbd-145">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="70496-142">请求</span><span class="sxs-lookup"><span data-stu-id="70496-142">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f7bbd-146">请求</span><span class="sxs-lookup"><span data-stu-id="f7bbd-146">Request</span></span>
 
-<span data-ttu-id="70496-143">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="70496-143">The following is an example of the request.</span></span>
+<span data-ttu-id="f7bbd-147">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-147">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="70496-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="70496-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f7bbd-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="f7bbd-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "search_query"
@@ -96,30 +97,30 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="70496-145">C#</span><span class="sxs-lookup"><span data-stu-id="70496-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f7bbd-149">C#</span><span class="sxs-lookup"><span data-stu-id="f7bbd-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="70496-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="70496-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f7bbd-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f7bbd-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="70496-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="70496-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f7bbd-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f7bbd-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/search-query-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="70496-148">Java</span><span class="sxs-lookup"><span data-stu-id="70496-148">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f7bbd-152">Java</span><span class="sxs-lookup"><span data-stu-id="f7bbd-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/search-query-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="70496-149">响应</span><span class="sxs-lookup"><span data-stu-id="70496-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f7bbd-153">响应</span><span class="sxs-lookup"><span data-stu-id="f7bbd-153">Response</span></span>
 
-<span data-ttu-id="70496-150">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="70496-150">The following is an example of the response.</span></span>
+<span data-ttu-id="f7bbd-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-154">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="70496-151">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="70496-151">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="f7bbd-155">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="f7bbd-155">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -159,13 +160,14 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="70496-152">另请参阅</span><span class="sxs-lookup"><span data-stu-id="70496-152">See also</span></span>
-- <span data-ttu-id="70496-153">搜索 [邮件](/graph/search-concept-messages)</span><span class="sxs-lookup"><span data-stu-id="70496-153">Search [mail messages](/graph/search-concept-messages)</span></span>
-- <span data-ttu-id="70496-154">搜索 [日历事件](/graph/search-concept-events)</span><span class="sxs-lookup"><span data-stu-id="70496-154">Search [calendar events](/graph/search-concept-events)</span></span>
-- <span data-ttu-id="70496-155">搜索网站[SharePoint OneDrive (、列表和网站) ](/graph/search-concept-files)</span><span class="sxs-lookup"><span data-stu-id="70496-155">Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))</span></span>
-- <span data-ttu-id="70496-156">搜索[连接器 (Graph自定义) ](/graph/search-concept-custom-types)数据</span><span class="sxs-lookup"><span data-stu-id="70496-156">Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data</span></span>
-- <span data-ttu-id="70496-157">[对](/graph/search-concept-sort) 搜索结果进行排序</span><span class="sxs-lookup"><span data-stu-id="70496-157">[Sort](/graph/search-concept-sort) search results</span></span>
-- <span data-ttu-id="70496-158">使用 [聚合](/graph/search-concept-aggregations) 优化搜索结果</span><span class="sxs-lookup"><span data-stu-id="70496-158">Use [aggregations](/graph/search-concept-aggregations) to refine search results</span></span>
+## <a name="see-also"></a><span data-ttu-id="f7bbd-156">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f7bbd-156">See also</span></span>
+- <span data-ttu-id="f7bbd-157">搜索 [邮件](/graph/search-concept-messages)</span><span class="sxs-lookup"><span data-stu-id="f7bbd-157">Search [mail messages](/graph/search-concept-messages)</span></span>
+- <span data-ttu-id="f7bbd-158">搜索 [日历事件](/graph/search-concept-events)</span><span class="sxs-lookup"><span data-stu-id="f7bbd-158">Search [calendar events](/graph/search-concept-events)</span></span>
+- <span data-ttu-id="f7bbd-159">搜索网站[SharePoint OneDrive (、列表和网站) ](/graph/search-concept-files)</span><span class="sxs-lookup"><span data-stu-id="f7bbd-159">Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))</span></span>
+- <span data-ttu-id="f7bbd-160">搜索[连接器 (Graph自定义) ](/graph/search-concept-custom-types)数据</span><span class="sxs-lookup"><span data-stu-id="f7bbd-160">Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data</span></span>
+- <span data-ttu-id="f7bbd-161">[对](/graph/search-concept-sort) 搜索结果进行排序</span><span class="sxs-lookup"><span data-stu-id="f7bbd-161">[Sort](/graph/search-concept-sort) search results</span></span>
+- <span data-ttu-id="f7bbd-162">使用 [聚合](/graph/search-concept-aggregations) 优化搜索结果</span><span class="sxs-lookup"><span data-stu-id="f7bbd-162">Use [aggregations](/graph/search-concept-aggregations) to refine search results</span></span>
+- <span data-ttu-id="f7bbd-163">在 [搜索结果中启用](/graph/search-concept-speller) 拼写更正</span><span class="sxs-lookup"><span data-stu-id="f7bbd-163">Enable [spell corrections](/graph/search-concept-speller) in search results</span></span>
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
