@@ -5,52 +5,52 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5b0a3b7f247fbd855e3813d954cba61f8a6c7104
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: ea8303d0af94183580b7a06eaa436c935b233ff4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473428"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039151"
 ---
-# <a name="get-plannerbuckettaskboardtaskformat"></a><span data-ttu-id="f9602-103">获取 plannerBucketTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="f9602-103">Get plannerBucketTaskBoardTaskFormat</span></span>
+# <a name="get-plannerbuckettaskboardtaskformat"></a><span data-ttu-id="9e942-103">获取 plannerBucketTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="9e942-103">Get plannerBucketTaskBoardTaskFormat</span></span>
 
-<span data-ttu-id="f9602-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f9602-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9e942-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9e942-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f9602-105">检索 **plannerBucketTaskBoardTaskFormat** 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f9602-105">Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f9602-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="f9602-106">Permissions</span></span>
-<span data-ttu-id="f9602-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f9602-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9e942-105">检索 **plannerBucketTaskBoardTaskFormat** 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="9e942-105">Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9e942-106">权限</span><span class="sxs-lookup"><span data-stu-id="9e942-106">Permissions</span></span>
+<span data-ttu-id="9e942-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9e942-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f9602-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="f9602-109">Permission type</span></span>      | <span data-ttu-id="f9602-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f9602-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9e942-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9e942-109">Permission type</span></span>      | <span data-ttu-id="9e942-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9e942-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f9602-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f9602-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f9602-112">Tasks.Read、Tasks.ReadWrite、Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f9602-112">Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f9602-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f9602-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9602-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="f9602-114">Not supported.</span></span>    |
-|<span data-ttu-id="f9602-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="f9602-115">Application</span></span> | <span data-ttu-id="f9602-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f9602-116">Not supported.</span></span> |
+|<span data-ttu-id="9e942-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9e942-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9e942-112">任务.读取，任务.ReadWrite，Group.Read.All，Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e942-112">Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9e942-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9e942-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e942-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e942-114">Not supported.</span></span>    |
+|<span data-ttu-id="9e942-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9e942-115">Application</span></span> | <span data-ttu-id="9e942-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e942-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f9602-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f9602-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9e942-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9e942-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/tasks/{id}/bucketTaskBoardFormat
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f9602-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="f9602-118">Request headers</span></span>
-| <span data-ttu-id="f9602-119">名称</span><span class="sxs-lookup"><span data-stu-id="f9602-119">Name</span></span>      |<span data-ttu-id="f9602-120">说明</span><span class="sxs-lookup"><span data-stu-id="f9602-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9e942-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="9e942-118">Request headers</span></span>
+| <span data-ttu-id="9e942-119">名称</span><span class="sxs-lookup"><span data-stu-id="9e942-119">Name</span></span>      |<span data-ttu-id="9e942-120">说明</span><span class="sxs-lookup"><span data-stu-id="9e942-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f9602-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f9602-121">Authorization</span></span>  | <span data-ttu-id="f9602-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f9602-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9e942-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9e942-121">Authorization</span></span>  | <span data-ttu-id="9e942-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9e942-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f9602-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="f9602-124">Request body</span></span>
-<span data-ttu-id="f9602-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f9602-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9e942-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="9e942-124">Request body</span></span>
+<span data-ttu-id="9e942-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9e942-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f9602-126">响应</span><span class="sxs-lookup"><span data-stu-id="f9602-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9e942-126">响应</span><span class="sxs-lookup"><span data-stu-id="9e942-126">Response</span></span>
 
-<span data-ttu-id="f9602-127">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f9602-127">If successful, this method returns a `200 OK` response code and [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object in the response body.</span></span>
+<span data-ttu-id="9e942-127">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9e942-127">If successful, this method returns a `200 OK` response code and [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object in the response body.</span></span>
 
-<span data-ttu-id="f9602-p103">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="f9602-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="9e942-p103">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="9e942-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="f9602-131">示例</span><span class="sxs-lookup"><span data-stu-id="f9602-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f9602-132">请求</span><span class="sxs-lookup"><span data-stu-id="f9602-132">Request</span></span>
-<span data-ttu-id="f9602-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f9602-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9e942-131">示例</span><span class="sxs-lookup"><span data-stu-id="9e942-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9e942-132">请求</span><span class="sxs-lookup"><span data-stu-id="9e942-132">Request</span></span>
+<span data-ttu-id="9e942-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9e942-133">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f9602-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="f9602-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9e942-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="9e942-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_plannerbuckettaskboardtaskformat"
@@ -58,26 +58,26 @@ GET /planner/tasks/{id}/bucketTaskBoardFormat
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/bucketTaskBoardFormat
 ```
-# <a name="c"></a>[<span data-ttu-id="f9602-135">C#</span><span class="sxs-lookup"><span data-stu-id="f9602-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9e942-135">C#</span><span class="sxs-lookup"><span data-stu-id="9e942-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerbuckettaskboardtaskformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f9602-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f9602-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9e942-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9e942-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-plannerbuckettaskboardtaskformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f9602-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f9602-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9e942-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9e942-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-plannerbuckettaskboardtaskformat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f9602-138">Java</span><span class="sxs-lookup"><span data-stu-id="f9602-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="9e942-138">Java</span><span class="sxs-lookup"><span data-stu-id="9e942-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-plannerbuckettaskboardtaskformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f9602-139">响应</span><span class="sxs-lookup"><span data-stu-id="f9602-139">Response</span></span>
-<span data-ttu-id="f9602-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f9602-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9e942-139">响应</span><span class="sxs-lookup"><span data-stu-id="9e942-139">Response</span></span>
+<span data-ttu-id="9e942-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9e942-140">Here is an example of the response.</span></span> <span data-ttu-id="9e942-141">注意：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="9e942-141">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
