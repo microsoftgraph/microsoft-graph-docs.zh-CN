@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal：checkMemberGroups
-description: 检查指定组列表中的成员身份。 将列表中具有直接或可传递成员身份的服务主体组返回。
+description: 检查指定组列表中的成员身份。从列表中返回服务主体具有直接或可传递成员身份的组。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: eef89eadb22b99d2c094f2dabf483edad014e5d2
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 81708212bc108f6902a26b8f3b2ca7c7bdd220d0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870000"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053851"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal：checkMemberGroups
 
@@ -92,7 +92,7 @@ Content-length: 44
 
 ### <a name="response"></a>响应
 下面是一个响应示例。 
->注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+>注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

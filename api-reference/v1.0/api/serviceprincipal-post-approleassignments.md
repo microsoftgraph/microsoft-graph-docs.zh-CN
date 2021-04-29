@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 00d622862a47ed64848f4774ae587210cf49bace
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: e8021b9bcc96e0a70a139e5d4fd1597f186ab20b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508041"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054418"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>向服务主体授予 appRoleAssignment
 
@@ -104,13 +104,13 @@ Content-Type: application/json
 ---
 
 
-请注意，请求 URL （`9028d19c-26a9-4809-8e3f-20ff73e2d75e`） 中用作服务主体 **id** 的值与正文中的 **principalId** 属性相同。 源 **值** 是 **主体（API** ）的值。
+请注意，在本示例中，请求 URL (`9028d19c-26a9-4809-8e3f-20ff73e2d75e`) 中用作服务主体 **id** 的值与正文中的 **principalId** 属性相同。**resourceId** 的值是资源服务主体（该 API）的 **id**。
 
 ### <a name="response"></a>响应
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: 'message: move'
-description: 将邮件移动到文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
+description: 将邮件移动到文件夹。该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 76880630d5faa0e09c4fa1efeb17dcf7c2c64615
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 036af1498e821ca898c12c86d1a3c509504b2aed
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136078"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035342"
 ---
 # <a name="message-move"></a>message: move
 
@@ -43,8 +43,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | 标头 | 值 |
 |:-------|:------|
-| 授权 | `Bearer {token}`（）。 必需。 |
-| Content-Type | `application/json`（）。 必需。 |
+| 授权 | `Bearer {token}`. 必需。 |
+| Content-Type | `application/json`. 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 5cd57197f519ed4f79bd684667a02ac8e990cd81
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f91a549e13b956d9c0d1fa4d8ca8765e7b7bd89a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470881"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052220"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -57,7 +57,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
 POST /users/{id|userPrincipalName}/todo/lists
 ```
 
->**请注意：** 此语法显示了一些创建受支持资源实例的常用方式。 可用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
+>**注意：** 此语法显示了一些创建支持的资源实例的常见方法。可以用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
 
 若要了解如何在请求正文中添加新资源实例和 _扩展_ 的属性，请参阅 [请求正文](#request-body)部分。
 
@@ -80,7 +80,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
 POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 ```
 
->**请注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。 可用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
+>**注意：** 此语法显示了一些标识资源实例的常见方法，以便在其中创建一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
 
 若要了解如何在请求正文中添加 _扩展_，请参阅 [请求正文](#request-body)部分。
 
@@ -113,8 +113,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 响应代码可以是 `201 Created`，也可以是 `202 Accepted`，具体视操作而定。
 
-使用创建资源实例时所用的操作创建扩展时，操作所返回的响应代码与通过该操作创建不带扩展的资源实例时返回的代码相同。
-请参阅有关创建实例的相应主题，如[上 ](#create-an-extension-in-a-new-resource-instance)所列。
+使用你用于创建资源实例的相同操作创建扩展时，操作所返回的响应代码与通过该操作创建不带扩展的资源实例时返回的代码相同。请参阅有关创建实例的相应主题，如[上](#create-an-extension-in-a-new-resource-instance)所列。
 
 ### <a name="response-body"></a>响应正文
 
@@ -193,7 +192,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
 - 请求中指定的默认属性 **extensionName**。
 - 请求中指定的作为 3 个自定义属性存储的自定义数据。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -539,7 +538,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 
 下面是第五个示例的响应，其中包含新对话和线程 ID。这个新线程包含自动创建的帖子，帖子又包含新扩展。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 若要获取新扩展，首先 [获取此线程中的所有帖子](../api/conversationthread-list-posts.md)，线程中最初应该只有一个帖子。然后应用帖子 ID 和扩展名 `Com.Contoso.Benefits` 以[获取扩展](../api/opentypeextension-get.md)。
 

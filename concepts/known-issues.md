@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 07ee284f40264c76ec6156235fab651fff77cfe6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 856100b87a1e776a4983f75f4bd35158f0745cfd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777003"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054250"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -340,9 +340,13 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ## <a name="users"></a>用户
 
+### <a name="use-the-dollar--symbol-in-the-userprincipalname"></a>在 userPrincipalName 中使用美元 ($) 符号
+
+Microsoft Graph 允许 **userPrincipalName** 以美元 (`$`) 字符开头。 但是，当通过 userPrincipalName 查询用户时，请求 URL `/users/$x@y.com` 失败。 这是因为此请求 URL 违反了 OData URL 约定，该约定要求只有系统查询选项才能以 `$` 字符作为前缀。 作为一种解决方法，请删除 `/users` 后面的斜杠 (/)，并将 **userPrincipalName** 括在圆括号和单引号中，如下所示：`/users('$x@y.com')`。
+
 ### <a name="no-instant-access-after-creation"></a>创建后没有即时访问
 
-通过用户实体上的 POST 可以立即创建用户。 必须先向用户分配 Microsoft 365 许可证，然后用户才能访问 Microsoft 365 服务。 即使这样，由于该服务的分布式特性，通过 Microsoft Graph API，文件、邮件和事件实体对该用户可用之前，可能需要 15 分钟。 在此期间，应用将收到一个 404 HTTP 错误响应。
+可通过在用户实体上使用 POST 来即时创建用户。必须先向用户分配 Microsoft 365 许可证，然后用户才能访问 Microsoft 365 服务。尽管如此，由于服务具有分散特性，因此用户可能需要先等待 15 分钟，然后才能通过 Microsoft Graph API 使用文件、邮件和事件实体。在此期间，应用会收到一个 404 HTTP 错误响应。
 
 ### <a name="photo-restrictions"></a>照片限制
 
