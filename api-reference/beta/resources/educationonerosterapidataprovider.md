@@ -1,42 +1,42 @@
 ---
 title: educationOneRosterApiDataProvider 资源
-description: 用于在将 OneRoster API 用作输入源时设置学校数据同步配置文件。
+description: 用于将 OneRoster API 用作输入源时设置学校数据同步配置文件。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5b96322cdb408069136a46aa9c83cf363cc1b6f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2c90c7132f6e51b84e987cf6bda63baacc60b8ba
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998843"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080419"
 ---
-# <a name="educationonerosterapidataprovider-resource"></a><span data-ttu-id="0a434-103">educationOneRosterApiDataProvider 资源</span><span class="sxs-lookup"><span data-stu-id="0a434-103">educationOneRosterApiDataProvider resource</span></span>
+# <a name="educationonerosterapidataprovider-resource"></a><span data-ttu-id="17232-103">educationOneRosterApiDataProvider 资源</span><span class="sxs-lookup"><span data-stu-id="17232-103">educationOneRosterApiDataProvider resource</span></span>
 
-<span data-ttu-id="0a434-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0a434-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="17232-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="17232-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0a434-105">用于在将 [ONEROSTER API](https://www.imsglobal.org/activity/onerosterlis) 用作输入源时设置学校数据同步配置文件。</span><span class="sxs-lookup"><span data-stu-id="0a434-105">Used to set up the school data synchronization profile when the [OneRoster API](https://www.imsglobal.org/activity/onerosterlis) is used as the input source.</span></span>
+<span data-ttu-id="17232-105">用于将 [OneRoster API](https://www.imsglobal.org/activity/onerosterlis) 用作输入源时设置学校数据同步配置文件。</span><span class="sxs-lookup"><span data-stu-id="17232-105">Used to set up the school data synchronization profile when the [OneRoster API](https://www.imsglobal.org/activity/onerosterlis) is used as the input source.</span></span>
 
-<span data-ttu-id="0a434-106">派生自 [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)。</span><span class="sxs-lookup"><span data-stu-id="0a434-106">Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span></span>
+<span data-ttu-id="17232-106">派生自 [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)。</span><span class="sxs-lookup"><span data-stu-id="17232-106">Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0a434-107">属性</span><span class="sxs-lookup"><span data-stu-id="0a434-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="17232-107">属性</span><span class="sxs-lookup"><span data-stu-id="17232-107">Properties</span></span>
 
-| <span data-ttu-id="0a434-108">属性</span><span class="sxs-lookup"><span data-stu-id="0a434-108">Property</span></span>           | <span data-ttu-id="0a434-109">类型</span><span class="sxs-lookup"><span data-stu-id="0a434-109">Type</span></span>                                         | <span data-ttu-id="0a434-110">说明</span><span class="sxs-lookup"><span data-stu-id="0a434-110">Description</span></span>                                                                                           |
+| <span data-ttu-id="17232-108">属性</span><span class="sxs-lookup"><span data-stu-id="17232-108">Property</span></span>           | <span data-ttu-id="17232-109">类型</span><span class="sxs-lookup"><span data-stu-id="17232-109">Type</span></span>                                         | <span data-ttu-id="17232-110">说明</span><span class="sxs-lookup"><span data-stu-id="17232-110">Description</span></span>                                                                                           |
 | :----------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="0a434-111">connectionUrl</span><span class="sxs-lookup"><span data-stu-id="0a434-111">connectionUrl</span></span>      | <span data-ttu-id="0a434-112">String</span><span class="sxs-lookup"><span data-stu-id="0a434-112">String</span></span>                                       | <span data-ttu-id="0a434-113">指向 OneRoster 实例的连接 URL。</span><span class="sxs-lookup"><span data-stu-id="0a434-113">The connection URL to the OneRoster instance.</span></span>                                                         |
-| <span data-ttu-id="0a434-114">providerName</span><span class="sxs-lookup"><span data-stu-id="0a434-114">providerName</span></span>       | <span data-ttu-id="0a434-115">String</span><span class="sxs-lookup"><span data-stu-id="0a434-115">String</span></span>                                       | <span data-ttu-id="0a434-116">由 [OneRoster 规范][oneroster]定义的 OneRoster 服务提供程序名称。</span><span class="sxs-lookup"><span data-stu-id="0a434-116">The OneRoster Service Provider name as defined by the [OneRoster specification][oneroster].</span></span>           |
-| <span data-ttu-id="0a434-117">schoolsIds</span><span class="sxs-lookup"><span data-stu-id="0a434-117">schoolsIds</span></span>         | <span data-ttu-id="0a434-118">String collection</span><span class="sxs-lookup"><span data-stu-id="0a434-118">String collection</span></span>                            | <span data-ttu-id="0a434-119">要同步的 [学校/组织][orgs]的列表 `sourcedId` 。</span><span class="sxs-lookup"><span data-stu-id="0a434-119">The list of [School/Org][orgs] `sourcedId` to sync.</span></span>                                                   |
-| <span data-ttu-id="0a434-120">termIds</span><span class="sxs-lookup"><span data-stu-id="0a434-120">termIds</span></span>            | <span data-ttu-id="0a434-121">String collection</span><span class="sxs-lookup"><span data-stu-id="0a434-121">String collection</span></span>                            | <span data-ttu-id="0a434-122">要同步的 [学术会话][terms] 的列表。</span><span class="sxs-lookup"><span data-stu-id="0a434-122">The list of [academic sessions][terms] to sync.</span></span>                                                       |
-| <span data-ttu-id="0a434-123">connectionSettings</span><span class="sxs-lookup"><span data-stu-id="0a434-123">connectionSettings</span></span> | <span data-ttu-id="0a434-124">[educationSynchronizationConnectionSettings]</span><span class="sxs-lookup"><span data-stu-id="0a434-124">[educationSynchronizationConnectionSettings]</span></span> | <span data-ttu-id="0a434-125">OneRoster 实例的 [oauth 1.0][onerosteroauth1] 或 [oauth 2.0][onerosteroauth2] 设置。</span><span class="sxs-lookup"><span data-stu-id="0a434-125">The [OAuth 1.0][onerosteroauth1] or [OAuth 2.0][onerosteroauth2] settings for the OneRoster instance.</span></span> |
-| <span data-ttu-id="0a434-126">操作</span><span class="sxs-lookup"><span data-stu-id="0a434-126">customizations</span></span>     | <span data-ttu-id="0a434-127">[educationSynchronizationCustomizations]) </span><span class="sxs-lookup"><span data-stu-id="0a434-127">[educationSynchronizationCustomizations])</span></span>    | <span data-ttu-id="0a434-128">要应用于同步配置文件的可选自定义项。</span><span class="sxs-lookup"><span data-stu-id="0a434-128">Optional customization to be applied to the synchronization profile.</span></span>                                  |
+| <span data-ttu-id="17232-111">connectionUrl</span><span class="sxs-lookup"><span data-stu-id="17232-111">connectionUrl</span></span>      | <span data-ttu-id="17232-112">String</span><span class="sxs-lookup"><span data-stu-id="17232-112">String</span></span>                                       | <span data-ttu-id="17232-113">OneRoster 实例的连接 URL。</span><span class="sxs-lookup"><span data-stu-id="17232-113">The connection URL to the OneRoster instance.</span></span>                                                         |
+| <span data-ttu-id="17232-114">providerName</span><span class="sxs-lookup"><span data-stu-id="17232-114">providerName</span></span>       | <span data-ttu-id="17232-115">String</span><span class="sxs-lookup"><span data-stu-id="17232-115">String</span></span>                                       | <span data-ttu-id="17232-116">OneRoster 服务提供程序名称，由 [OneRoster 规范定义][oneroster]。</span><span class="sxs-lookup"><span data-stu-id="17232-116">The OneRoster Service Provider name as defined by the [OneRoster specification][oneroster].</span></span>           |
+| <span data-ttu-id="17232-117">schoolsIds</span><span class="sxs-lookup"><span data-stu-id="17232-117">schoolsIds</span></span>         | <span data-ttu-id="17232-118">String collection</span><span class="sxs-lookup"><span data-stu-id="17232-118">String collection</span></span>                            | <span data-ttu-id="17232-119">要同步 [的学校/组织][orgs] `sourcedId` 列表。</span><span class="sxs-lookup"><span data-stu-id="17232-119">The list of [School/Org][orgs] `sourcedId` to sync.</span></span>                                                   |
+| <span data-ttu-id="17232-120">termIds</span><span class="sxs-lookup"><span data-stu-id="17232-120">termIds</span></span>            | <span data-ttu-id="17232-121">String collection</span><span class="sxs-lookup"><span data-stu-id="17232-121">String collection</span></span>                            | <span data-ttu-id="17232-122">要同步 [的学院课程][terms] 列表。</span><span class="sxs-lookup"><span data-stu-id="17232-122">The list of [academic sessions][terms] to sync.</span></span>                                                       |
+| <span data-ttu-id="17232-123">connectionSettings</span><span class="sxs-lookup"><span data-stu-id="17232-123">connectionSettings</span></span> | <span data-ttu-id="17232-124">[educationSynchronizationConnectionSettings]</span><span class="sxs-lookup"><span data-stu-id="17232-124">[educationSynchronizationConnectionSettings]</span></span> | <span data-ttu-id="17232-125">OneRoster 实例的 [OAuth 1.0][onerosteroauth1] 或 [OAuth 2.0][onerosteroauth2] 设置。</span><span class="sxs-lookup"><span data-stu-id="17232-125">The [OAuth 1.0][onerosteroauth1] or [OAuth 2.0][onerosteroauth2] settings for the OneRoster instance.</span></span> |
+| <span data-ttu-id="17232-126">自定义项</span><span class="sxs-lookup"><span data-stu-id="17232-126">customizations</span></span>     | <span data-ttu-id="17232-127">[educationSynchronizationCustomizations]</span><span class="sxs-lookup"><span data-stu-id="17232-127">[educationSynchronizationCustomizations]</span></span>    | <span data-ttu-id="17232-128">要应用于同步配置文件的可选自定义。</span><span class="sxs-lookup"><span data-stu-id="17232-128">Optional customization to be applied to the synchronization profile.</span></span>                                  |
 
 > [!IMPORTANT]
-> <span data-ttu-id="0a434-129">OneRoster 使用学术会议，而不是一年的时间来细分其数据。</span><span class="sxs-lookup"><span data-stu-id="0a434-129">OneRoster uses academic sessions rather than a single school year to segment their data.</span></span> <span data-ttu-id="0a434-130">此细分在学校数据同步 UI 中被抽象掉，而不是在此 API 中。</span><span class="sxs-lookup"><span data-stu-id="0a434-130">This segmentation is abstracted away within School Data Sync UI but not this API.</span></span> <span data-ttu-id="0a434-131">您需要调用 OneRoster `/terms` 终结点以获取学术会话 id 的集合，以便填充该 `termIds` 集合。</span><span class="sxs-lookup"><span data-stu-id="0a434-131">You will need to call the OneRoster `/terms` endpoint to get the collection of academic session IDs in order to populate the `termIds` collection.</span></span>
+> <span data-ttu-id="17232-129">OneRoster 使用学术课程（而不是一个学校年份）来划分数据。</span><span class="sxs-lookup"><span data-stu-id="17232-129">OneRoster uses academic sessions rather than a single school year to segment their data.</span></span> <span data-ttu-id="17232-130">此分段在 UI 中抽象学校数据同步，而不是此 API。</span><span class="sxs-lookup"><span data-stu-id="17232-130">This segmentation is abstracted away within School Data Sync UI but not this API.</span></span> <span data-ttu-id="17232-131">你将需要调用 OneRoster 终结点，获取学院会话 `/terms` 的 ID 集合，以便填充 `termIds` 该集合。</span><span class="sxs-lookup"><span data-stu-id="17232-131">You will need to call the OneRoster `/terms` endpoint to get the collection of academic session IDs in order to populate the `termIds` collection.</span></span>
 
-[educationsynchronizationconnectionsettings]: educationsynchronizationconnectionsettings.md
+[educationSynchronizationConnectionSettings]: educationsynchronizationconnectionsettings.md
 [educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
 [oneroster]: https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA
 [onerosteroauth2]: educationsynchronizationoauth2clientcredentialsconnectionsettings.md
@@ -44,14 +44,14 @@ ms.locfileid: "47998843"
 [terms]: https://www.imsglobal.org/oneroster-v11-final-specification#_Toc480452034
 [orgs]: https://www.imsglobal.org/oneroster-v11-final-specification#_Toc480452016
 
-## <a name="json-representation"></a><span data-ttu-id="0a434-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0a434-134">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="17232-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="17232-134">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.educationoneRosterApiDataProvider"
+  "@odata.type&quot;: &quot;microsoft.graph.educationoneRosterApiDataProvider"
 }-->
 
 ```json
@@ -62,12 +62,12 @@ ms.locfileid: "47998843"
   "schoolsIds": ["String"],
   "termIds": ["String"],
   "connectionSettings": {
-    "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
+    "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
     "clientId": "String",
-    "clientSecret": "String"
+    "clientSecret&quot;: &quot;String"
   },
   "customizations": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
+    "@odata.type&quot;: &quot;microsoft.graph.educationSynchronizationCustomizations"
   }
 }
 ```
@@ -81,7 +81,7 @@ ms.locfileid: "47998843"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-      "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.settings"
+      "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.ediscovery.settings"
   ]
 }-->
 
