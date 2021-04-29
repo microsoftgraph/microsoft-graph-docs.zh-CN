@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7317ba399c284ff0f953a1e14787409f7e0e9939
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 916725283b86c59907ddd89e5441902fa0f8c756
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921950"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080174"
 ---
 # <a name="printjob-redirect"></a>printJob： redirect
 
@@ -19,6 +19,8 @@ ms.locfileid: "51921950"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将 [打印作业重定向到](../resources/printjob.md) 其他 [打印机](../resources/printer.md)。
+
+只有在关联的打印作业上存在由请求应用创建的触发器启动的 [printTask](../resources/printTask.md) 状态时，重定向打印作业才能 `processing` 成功。 
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 

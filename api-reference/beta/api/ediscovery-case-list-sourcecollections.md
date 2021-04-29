@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2902b13af183a72a20a4322ff9d78357d150e4a4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 801a526ef92cdffb5e262a830b5708db3a11e0ca
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776590"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080294"
 ---
 # <a name="list-sourcecollections"></a>列出 sourceCollections
 
@@ -28,7 +28,7 @@ ms.locfileid: "50776590"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 
 ### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +126,7 @@ Content-Type: application/json
                 }
             },
             "contentQuery": "subject:'Quarterly Financials'",
-            "tenantSources": "none",
+            "dataSourceScopes": "allTenantMailboxes",
             "id": "fe5ef84e9c8c45819c056f6eb261718e",
             "displayName": "Quarterly Financials",
             "createdDateTime": "2020-12-11T22:56:14.2329133Z"

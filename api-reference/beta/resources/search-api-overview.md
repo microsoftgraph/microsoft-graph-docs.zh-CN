@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 08baf178608287709632c44cc5e96efd02d34a7a
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 070d799c80fd9d10916d9adfb3a48a9d033883af
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883051"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067038"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -40,6 +40,7 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 |[排序搜索结果](#sort-search-results)| **sort** |
 |[使用聚合优化结果](#refine-results-using-aggregations)| **聚合** |
 |[使用连接器搜索导入的自定义类型](/graph/search-concept-custom-types)| **contentSources** |
+|[请求拼写更正](#request-spelling-correction)| **queryAlterationOptions** |
 
 ## <a name="scope-search-based-on-entity-types"></a>根据实体类型限定搜索范围
 
@@ -143,6 +144,14 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 请参阅[优化搜索结果](/graph/search-concept-aggregation) ，显示使用聚合增强和缩小搜索结果的示例。
 
+## <a name="request-spelling-correction"></a>请求拼写更正
+
+拼写更正是处理用户查询中的拼写错误和匹配内容中正确单词之间差异的常用方法。 在原始用户查询中检测到拼写错误时，可以获得原始用户查询或更正的备用查询的搜索结果。 还可以在 [searchresponse](searchresponse.md) 的 **queryAlterationResponse** 属性中获取拼写错误的拼写更正信息。 
+
+在 [Query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 方法的请求正文中，指定应应用于查询以进行拼写更正的 **queryAlterationOptions**。 在 [searchAlterationOptions](./searchalterationoptions.md) 中定义 **queryAlterationOptions** 的描述。
+
+有关如何使用拼写更正的示例，请参见[请求拼写更正](/graph/search-concept-speller)。
+
 ## <a name="error-handling"></a>错误处理
 
 搜索 API 将返回由 [OData 错误对象定义](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse)所定义的错误响应，其中每个是包含代码和消息的 JSON 对象。
@@ -193,6 +202,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
   - [使用连接器搜索导入的自定义类型](/graph/search-concept-custom-types)
   - [排序搜索结果](/graph/search-concept-sort)
   - [改进搜索结果](/graph/search-concept-aggregation)
+  - [请求拼写更正](/graph/search-concept-speller)
 
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
 

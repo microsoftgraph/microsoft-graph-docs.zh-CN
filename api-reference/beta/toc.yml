@@ -1502,6 +1502,19 @@ items:
                     href: api/ediscovery-legalhold-update.md
                   - name: 删除
                     href: api/ediscovery-legalhold-delete.md
+              - name: 非资源数据源
+                href: resources/ediscovery-noncustodialdatasource.md
+                items:
+                  - name: 列出
+                    href: api/ediscovery-noncustodialdatasource-list.md
+                  - name: 创建
+                    href: api/ediscovery-noncustodialdatasource-post.md
+                  - name: 获取
+                    href: api/ediscovery-noncustodialdatasource-get.md
+                  - name: 列出数据源
+                    href: api/ediscovery-noncustodialdatasource-list-datasource.md
+                  - name: 发布
+                    href: api/ediscovery-noncustodialdatasource-release.md
               - name: 审阅集
                 href: resources/ediscovery-reviewset.md
                 items:
@@ -9474,9 +9487,9 @@ items:
             items:
               - name: 更新
                 href: resources/windowsupdates-updates.md
-              - name: 目录
+              - name: Catalog
                 items:
-                  - name: 目录
+                  - name: Catalog
                     href: resources/windowsupdates-catalog.md
                   - name: 功能更新目录条目
                     href: resources/windowsupdates-featureupdatecatalogentry.md
@@ -10522,7 +10535,7 @@ items:
                         href: api/phoneauthenticationmethod-update.md
                       - name: 删除
                         href: api/phoneauthenticationmethod-delete.md
-                      - name: 添加
+                      - name: 加法
                         href: api/authentication-post-phonemethods.md
                       - name: 启用短信登录
                         href: api/phoneauthenticationmethod-enablesmssignin.md
@@ -10539,7 +10552,7 @@ items:
                         href: api/emailauthenticationmethod-update.md
                       - name: 删除
                         href: api/emailauthenticationmethod-delete.md
-                      - name: 添加
+                      - name: 加法
                         href: api/emailauthenticationmethod-post.md
                   - name: Password
                     href: resources/passwordauthenticationmethod.md
@@ -11205,7 +11218,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-list.md
                       - name: 列出待审批
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
-                      - name: 更新
+                      - name: Update
                         href: api/accessreviewinstancedecisionitem-update.md
                   - name: 访问评审策略
                     href: resources/accessreviewpolicy.md
@@ -12848,7 +12861,7 @@ items:
                 href: api/list-list-contenttypes.md
               - name: 添加内容类型副本
                 href: api/contenttype-addcopy.md
-          - name: 列数
+          - name: Columns
             items:
               - name: 列定义
                 href: resources/columndefinition.md

@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1ba26e01cd51a4819fa8947967f5865a9ec84fe3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 799601b3ca59c3522e4d023f7647bca523369659
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773793"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080312"
 ---
 # <a name="create-sourcecollection"></a>创建 sourceCollection
 
@@ -28,7 +28,7 @@ ms.locfileid: "50773793"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,9 +56,9 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|**sourceCollection 显示名称**|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|指定此参数时，集合将跨越整个工作负荷的服务。 可能的值是 `none` `allTenantMailboxes` `allTenantSites` ：、、、、。 `allCaseCustodians` `allCaseNoncustodialDataSources` **注意：** 创建源集合时，需要一个保管人或指定 dataSourceScope。|
+|displayName|String|**sourceCollection 显示名称**|
 |custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|要包含在此搜索中的保管人源。 你可以从保管人[siteSources、unifiedGroupSources](../api/ediscovery-custodian-list-sitesources.md)或[userSources](../api/ediscovery-custodian-list-usersources.md)获取 URL 以及源的 ID。 [](../api/ediscovery-custodian-list-unifiedgroupsources.md) **注意：** 创建源集合时，需要一个保管人或指定租户源。 |
-|tenantSources|microsoft.graph.ediscovery.tenantSources|指定此参数时，集合将跨越整个工作负荷的服务。 可取值为：`allMailboxes`、`allSites`。 **注意：** 创建源集合时，需要一个保管人或指定租户源。|
 
 ## <a name="response"></a>响应
 
@@ -110,7 +110,7 @@ Content-length: 272
 
 ### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,7 +127,7 @@ Content-Type: application/json
     "description": null,
     "lastModifiedDateTime": "2021-01-12T18:09:03.7378679Z",
     "contentQuery": "subject:'Quarterly Financials'",
-    "tenantSources": "none",
+    "dataSourceScopes": "none",
     "id": "1a9b4145d8f84e39bc45a7f68c5c5119",
     "displayName": "Quarterly Financials search",
     "createdDateTime": "2021-01-12T18:09:03.417009Z",

@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: cd019a8f13bd0ffe154a2a998d59815addf664e9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 10ad5dfa5059c7504ce9653523a31c5d0c2d17d5
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941391"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080510"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
 
@@ -45,7 +45,7 @@ Install-Package Microsoft.Graph.Auth -IncludePrerelease
 
 ```Gradle
 repository {
-    jcenter()
+    mavenCentral()
 }
 
 dependency {
@@ -56,32 +56,13 @@ dependency {
 
 ### <a name="install-the-microsoft-graph-java-sdk-via-maven"></a>通过 Maven 安装 Microsoft Graph Java SDK
 
-添加存储库到 `profiles`pom.xml 的元素中：
-
-```xml
-<profiles>
-    <profile>
-        <repositories>
-            <repository>
-                <snapshots>
-                    <enabled>false</enabled>
-                </snapshots>
-                <id>bintray-microsoftgraph-Maven</id>
-                <name>bintray</name>
-                <url>https://dl.bintray.com/microsoftgraph/Maven</url>
-            </repository>
-        </repositories>
-    </profile>
-</profiles>
-```
-
 添加依赖项到 `dependencies`pom.xml 的元素中：
 
 ```xml
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>[3.0,)</version>
+    <version>[3.3,)</version>
 </dependency>
 ```
 

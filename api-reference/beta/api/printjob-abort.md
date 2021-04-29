@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: cfd82c356463f3e642d5817ff0203c2bec8627db
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 597d92e051940d94a53364c624a8d0d20ef23dce
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515448"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080633"
 ---
 # <a name="printjob-abort"></a>printJob： abort
 
@@ -20,16 +20,18 @@ ms.locfileid: "50515448"
 
 中止打印作业。 只有使用应用程序权限的应用程序才能中止打印作业。
 
+只有在关联的打印作业上存在由请求应用创建的触发器启动的 [printTask](../resources/printTask.md) 状态时，中止打印作业才能 `processing` 成功。 若要详细了解如何注册任务触发器，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限外，应用的租户还必须具有活动的通用打印订阅，并且必须具有 Printer.Read.All 或 Printer.ReadWrite.All 应用程序权限。
+除了以下权限之外，应用的租户还必须具有活动的通用打印订阅，并且必须具有 Printer.Read.All 或 Printer.ReadWrite.All 应用程序权限。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 不支持 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All、PrintJob.Manage.All |
+|应用程序| PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All、PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

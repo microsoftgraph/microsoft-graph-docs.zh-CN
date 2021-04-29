@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e0304601c76276fbcdd3db5836245ef5b592f05a
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 7f565aacff1cf656f0697f5564763f40341981f7
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921851"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080678"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument： createUploadSession
 
@@ -22,9 +22,11 @@ ms.locfileid: "51921851"
 
 作为响应的一部分，此操作返回可用于后续顺序查询的上载 `PUT` URL。 每个操作的请求头可用于指定要 `PUT` 上载的字节的确切范围。 这允许恢复传输，以防在上载过程中网络连接中断。 
 
+>**注意**：只有在关联的打印作业上存在 [printTask](../resources/printTask.md) 状态（由请求应用创建的触发器启动）时，使用应用程序权限创建上载 `processing` 会话才能成功。 若要详细了解如何注册任务触发器，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+
 ## <a name="permissions"></a>权限
 
-若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+若要调用此 API，需要以下权限之一。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有根据使用的打印机还是 printerShare 授予获取 [打印机](printer-get.md) 或获取 [printerShare](printershare-get.md) 访问权限的权限。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -42,7 +44,7 @@ ms.locfileid: "51921851"
 POST /print/printers/{id}/jobs/{id}/documents/{id}/createUploadSession
 ```
 
-使用 printerShare 创建 **上传会话：** 
+若要使用 **printerShare (** 仅受委派权限支持，请) ： 
 
 <!-- { "blockType": "ignored" } -->
 ```http

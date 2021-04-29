@@ -1,16 +1,16 @@
 ---
 title: audioConferencing 资源类型
 description: 表示联机会议的电话访问信息。
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 45ab16c357f8779bdf1a638e1f5a5291eba48e19
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 43332de03467b4a5cf9d9cc867718ceafd8c4e82
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515665"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080146"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
 
@@ -22,12 +22,19 @@ ms.locfileid: "50515665"
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型    | 说明                                                                    |
-|:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | 包含拨入信息的可从外部访问的网页的 URL。 |
-| conferenceId        | String  | 联机会议的会议 ID。      |
-| tollFreeNumber      | String  | 连接到音频会议提供商的免费电话号码。              |
-| tollNumber          | String  | 连接到音频会议提供商的收费号码。                   |
+| 属性                    | 类型              | 说明                                                                    |
+| :-------------------------- | :---------------- | :----------------------------------------------------------------------------- |
+| dialinUrl                   | String            | 指向包含拨入信息且可从外部访问的网页的 URL。 |
+| conferenceId                | String            | 联机会议的会议 ID。                                       |
+| tollFreeNumber (弃用)  | String            | 连接到音频会议提供商的免费电话号码。           |
+| tollFreeNumbers             | String collection | 会议邀请中显示的免费电话号码列表。            |
+| tollNumber (弃用)      | String            | 连接到音频会议提供商的收费号码。                |
+| tollNumbers                 | String collection | 会议邀请中显示的收费号码列表。                 |
+
+> [!CAUTION]
+>
+>- **tollFreeNumber 和** **tollNumber** 属性已弃用。 请 **改为使用 tollFreeNumbers** 和 **tollNumbers** 属性。
+>- 为了向后兼容，将 **原始 tollFreeNumber** 添加到新的 **tollFreeNumbers** 集合，并且将原始 **tollNumber** 添加到新的 **tollNumbers** 集合中。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -44,8 +51,8 @@ ms.locfileid: "50515665"
 {
   "dialinUrl": "String",
   "conferenceId": "String",
-  "tollFreeNumber": "String",
-  "tollNumber": "String"
+  "tollFreeNumbers": ["String"],
+  "tollNumbers": ["String"]
 }
 ```
 

@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 4fa4b8d0ccbe80ef0f65d27fa8ef648d1ea07b63
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c178565b628728fcf6124ea3058e979f8423ce90
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446150"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080475"
 ---
 # <a name="sitesource-resource-type"></a>siteSource 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "50446150"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-与保管人关联的网站的 [容器](ediscovery-custodian.md)。
+与保管人 关联的网站的 [容器](ediscovery-custodian.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -35,14 +35,14 @@ ms.locfileid: "50446150"
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|创建 **siteSource 的用户**。|
 |createdDateTime|DateTimeOffset|创建 **siteSource 的** 日期和时间。|
-|displayName|String|siteSource 的 **显示名称。** 这将是 SharePoint 网站的名称。|
-|id|String| **siteSource** 的 ID。 这不是实际网站的 ID。|
+|displayName|String|siteSource 显示名称 **的一部分**。 这将是网站SharePoint的名称。|
+|id|String| **siteSource** 的 ID。 可通过 Get site 随时检索 [网站源](../api/site-get.md) - https://graph.microsoft.com/v1.0/sites/{siteId}|
 
 ## <a name="relationships"></a>关系
 
 |关系|类型|说明|
 |:---|:---|:---|
-|网站|[网站](../resources/site.md)|与 siteSource 关联的 **SharePoint 网站**。|
+|网站|[site](../resources/site.md)|与SharePoint网站源 关联的 **网站**。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5948452d33e84e40e338c12206202376745fffe5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4193bfa0f74461f284329cbb5772deee6417a029
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952033"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080279"
 ---
 # <a name="add-custodiansources"></a>添加 custodianSources
 
@@ -104,7 +104,7 @@ Content-length: 179
 
 ### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -114,5 +114,4 @@ Content-length: 179
 
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```

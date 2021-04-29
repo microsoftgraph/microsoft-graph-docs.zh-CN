@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c72b65a8220a82e0c48022fcf4839a6b1be7e345
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 848510f113767ec9e9530cf82b30dfff9e836711
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920178"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067206"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -608,6 +608,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Device.Read_ |读取用户设备 |允许应用代表已登录用户读取用户的设备列表。 |否 | 是 |
+|_Device.Read.All_ |读取所有设备 |允许应用代表已登录用户读取组织设备的配置信息。|是 | 是 |
 |_Device.Command_ |与用户设备通信 |允许应用启动其他应用，或代表已登录用户在用户设备上与其他应用进行通信。 |否 | 是 |
 
 
@@ -615,6 +616,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_Device.Read.All_ |读取所有设备 |允许应用在没有登录用户的情况下读取组织设备的配置信息。 |是 |
 |_Device.ReadWrite.All_ |读取和写入设备 |支持应用程序读取和写入所有设备属性，而无需有登录用户。不得创建设备、删除设备或更新设备备用安全标识符。 |是 |
 
 > [!NOTE]
@@ -753,10 +755,10 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 | :---------------------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
 | _EduAdministration.Read.All_        | 读取教育应用设置                         | 代表用户读取所有 Microsoft 教育应用的状态和设置                                                                                             | 是                    |
 | _EduAdministration.ReadWrite.All_   | 管理教育应用设置                       | 代表用户管理所有 Microsoft 教育应用的状态和设置                                                                                           | 是                    |
-| _EduAssignments.ReadBasic.All_      | 读取不含成绩的课堂作业               | 允许应用为所有用户读取不含成绩的作业                                                                                                               | 是                    |
-| _EduAssignments.ReadWriteBasic.All_ | 对不含成绩的课堂作业执行读取和写入操作     | 允许应用为所有用户对不含成绩的的作业执行读取和写入操作                                                                                                     | 是                    |
-| _EduAssignments.Read.All_           | 读取含成绩的课堂作业                  | 允许应用为所有用户读取作业及其成绩                                                                                                             | 是                    |
-| _EduAssignments.ReadWrite.All_      | 对含成绩的课堂作业执行读取和写入操作        | 允许应用为所有用户对作业及其成绩执行读取和写入操作                                                                                                   | 是                    |
+| _EduAssignments.ReadBasic.All_（[个人预览版](#permissions-availability-status)）      | 读取不含成绩的课堂作业               | 允许应用为所有用户读取不含成绩的作业                                                                                                               | 是                    |
+| _EduAssignments.ReadWriteBasic.All_（[个人预览版](#permissions-availability-status)） | 对不含成绩的课堂作业执行读取和写入操作     | 允许应用为所有用户对不含成绩的的作业执行读取和写入操作                                                                                                     | 是                    |
+| _EduAssignments.Read.All_（[个人预览版](#permissions-availability-status)）          | 读取含成绩的课堂作业                  | 允许应用为所有用户读取作业及其成绩                                                                                                             | 是                    |
+| _EduAssignments.ReadWrite.All_（[个人预览版](#permissions-availability-status)）     | 对含成绩的课堂作业执行读取和写入操作        | 允许应用为所有用户对作业及其成绩执行读取和写入操作                                                                                                   | 是                    |
 | _EduRoster.ReadBasic.All_           | 读取组织名单的有限子集。 | 允许应用读取组织名单中的学校和班级结构数据以及所有用户的教育专属信息的有限子集。          | 是                    |
 | _EduRoster.Read.All_                | 读取组织名单。                     | 允许应用读取组织名单中的学校和班级结构数据以及所有用户的教育专属信息。                       | 是                    |
 | _EduRoster.ReadWrite.All_           | 对组织名单执行读取和写入操作。           | 允许应用对组织名单中的学校和班级结构数据以及所有用户的教育专属信息执行读取和写入操作。 | 是                    |
@@ -799,7 +801,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 | _Files.Read.All_ | 读取用户可以访问的所有文件 | 允许应用读取登录用户可以访问的所有文件。 | 否 | 是 |
 | _Files.ReadWrite_  | 具有对用户文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户的文件。 | 否| 是 |
 | _Files.ReadWrite.All_ | 具备对用户可以访问的所有文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户可以访问的所有文件。 | 否 | 是 |
-| _Files.ReadWrite.AppFolder_ | 具有对应用程序文件夹的完全访问权限（预览） | （预览）允许应用读取、创建、更新和删除应用程序文件夹中的文件。 | 否 | 否 |
+| _Files.ReadWrite.AppFolder_ | 具有对应用程序文件夹的完全访问权限（预览） | （预览）允许应用读取、创建、更新和删除应用程序文件夹中的文件。 | 否 | 是 |
 | _Files.Read.Selected_  | 读取用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。  | 否 | 否 |
 | _Files.ReadWrite.Selected_ | 读取和写入用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取和写入用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。 | 否 | 否 |
 
@@ -1144,8 +1146,8 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 | _Mail.Send.Shared_ |    代表他人发送邮件 | 允许应用以登录用户身份发送邮件，包括代表他人发送邮件。 | 否 | 否
 | _MailboxSettings.Read_ |  读取用户的邮箱设置 | 允许应用读取用户的邮箱设置。不包括邮件发送权限。 | 否 | 是
 | _MailboxSettings.ReadWrite_ |  读取和写入用户邮箱设置 | 允许应用创建、读取、更新和删除用户邮箱设置。 不包含直接发送邮件的权限，但允许应用创建能够转发或重定向邮件的规则。 | 否 | 是
-| _IMAP.AccessAsUser.All_ | 通过IMAP对用户邮件进行读写访问 | 允许应用程序读取、更新、创建和删除用户邮箱中的电子邮件。 不包括邮件发送权限。 | 否 | 是
-| _POP.AccessAsUser.All_ | 通过POP对用户邮件读写访问 | 允许应用程序读取、更新、创建和删除用户邮箱中的电子邮件。 不包括邮件发送权限。 | 否 | 是
+| _IMAP.AccessAsUser.All_ | 通过IMAP对用户邮件进行读写访问 | 允许应用读取、更新、创建和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。 | 否 | 是
+| _POP.AccessAsUser.All_ | 通过POP对用户邮件读写访问 | 允许应用读取、更新、创建和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。 | 否 | 是
 | _SMTP.Send_ | 使用SMTP AUTH以用户身份发送邮件 | 允许应用以组织用户身份发送邮件。 | 否 | 是
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -1153,7 +1155,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 | 权限                  | 显示字符串                           | 说明                                                                                                                                                                        | 需经过管理员同意 |
 |:----------------------------|:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------|
 | _Mail.Read_                 | 读取所有邮箱中的邮件               | 允许应用在没有登录用户的情况下读取所有邮箱中的邮件。                                                                                                             | 是                    |
-| _Mail.ReadBasic.All_        | 读取所有用户基本邮件                | 让应用能够读取所有用户的邮箱，但不读取 Body、BodyPreview、UniqueBody、Attachments, ExtendedProperties 和 Extensions。 不包含邮件搜索权限。 | 是                    |
+| _Mail.ReadBasic.All_        | 读取所有用户基本邮件                | 允许此应用读取除 Body、BodyPreview、UniqueBody、Attachments、ExtendedProperties 和扩展以外的所有用户邮箱。不包括搜索邮件的权限。 | 是                    |
 | _Mail.ReadWrite_            | 读取和写入所有邮箱中的邮件     | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有邮箱中的邮件。不包括发送电子邮件的权限。                                       | 是                    |
 | _Mail.Send_                 | 以任意用户身份发送邮件                    | 允许应用在没有登录用户的情况下以任意用户身份发送邮件。                                                                                                                  | 是                    |
 | _MailboxSettings.Read_      | 读取用户的所有邮箱设置           | 允许应用在没有已登录用户的情况下读取用户邮箱设置。不包括邮件发送权限。                                                                 | 否                     |
@@ -1207,7 +1209,7 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_ 和 _Mail.Send.Shared_ 仅适用于
 ### <a name="remarks"></a>注释
 _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 
-可以隐藏某些 Microsoft 365 组中的成员资格。 这意味着只有该组的成员可以查看其成员。 此功能可用于帮助遵守要求组织对外部用户（例如，表示某个班级内注册的学生的 Microsoft 365 组）隐藏组成员身份的规定。
+可以隐藏某些 Microsoft 365 组中的成员资格。这意味着只有该组的成员可以查看其成员。此功能可用于帮助遵守要求组织对外部用户（例如，表示某个班级内注册的学生的 Microsoft 365 组）隐藏组成员身份的规定。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1588,13 +1590,13 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用代表已登录用户读取所有服务使用情况报告。 提供使用情况报告的服务包括 Microsoft 365 和 Azure Active Directory。 | 是 | 否 |
+| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用代表已登录的用户读取所有服务使用情况报告。提供使用情况报告的服务包括 Microsoft 365 和 Azure Active Directory。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。 提供使用情况报告的服务包括 Microsoft 365 和 Azure Active Directory。 | 是 |
+| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。提供使用情况报告的服务包括 Microsoft 365 和 Azure Active Directory。 | 是 |
 
 ### <a name="remarks"></a>注解
 - 这些报告权限仅对工作或学校帐户有效。
@@ -1619,7 +1621,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据 | 允许应用代表登录用户读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 | 否 |
-| _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。  这包括读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
+| _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
 | _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取和管理公司目录的基于角色的访问控制 (RBAC) 设置。 这包括实例化目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -1904,8 +1906,8 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ (**Deprecated**)| 读取所有安装的 Teams 应用 | 允许应用读取为已登录用户安装的 Teams 应用以及该用户所属的所有团队中的相关应用。 不允许读取特定于应用程序的设置。 | 是 | 否 |
-| _TeamsApp.ReadWrite.All_ (**Deprecated**)| 管理所有 Teams 应用 | 允许应用代表已登录的用户以及该用户所属团队来阅读、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。 | 是 | 否 |
+| _TeamsApp.Read.All_ (**Deprecated**)| 读取所有安装的 Teams 应用 | 允许应用读取为已登录用户安装的 Teams 应用以及该用户所属的所有团队中的相关应用。不允许读取应用程序特定的设置。 | 是 | 否 |
+| _TeamsApp.ReadWrite.All_ (**Deprecated**)| 管理所有 Teams 应用 | 允许应用代表已登录的用户以及该用户所属团队来读取、安装、升级和卸载 Teams 应用。不允许读取或写入应用程序特定的设置。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1996,8 +1998,8 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsTab.Read.All_ | 读取 Microsoft Teams 中的选项卡。 | 允许应用读取为已登录用户安装的 Teams 应用以及该用户所属的所有团队中的相关应用。 不允许读取特定于应用程序的设置。 | 是 | 否 |
-| _TeamsTab.ReadWrite.All_ | 读取和写入 Microsoft Teams 中的选项卡。 | 允许应用代表已登录的用户以及该用户所属团队来阅读、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。    | 是 | 否 |
+| _TeamsTab.Read.All_ | 读取 Microsoft Teams 中的选项卡。 | 允许应用读取为已登录用户安装的 Teams 应用以及该用户所属的所有团队中的相关应用。不允许读取应用程序特定的设置。 | 是 | 否 |
+| _TeamsTab.ReadWrite.All_ | 读取和写入 Microsoft Teams 中的选项卡。 | 允许应用代表已登录的用户以及该用户所属团队来读取、安装、升级和卸载 Teams 应用。不允许读取或写入应用程序特定的设置。    | 是 | 否 |
 | _TeamsTab.Create_ | 在Microsoft Teams 中创建选项卡。 | 允许应用代表已登录的用户在 Microsoft Teams 中的任何团队内创建选项卡。 这不会授予在选项卡创建后读取、修改或删除这些选项卡的权限，也不会授予访问选项卡中的内容的权限。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -2100,7 +2102,7 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | _Printer.FullControl.All_ | 注册、读取、更新和注销打印机 | 允许应用代表已登录用户创建（注册）、读取、更新和删除（取消注册）打印机。 | 是 | 否 |
 | _Printer.Read.All_ | 读取打印机 | 允许应用代表已登录用户读取打印机。 | 是 | 否 |
 | _Printer.ReadWrite.All_ | 读取和更新打印机 | 允许应用代表已登录用户读取和更新打印机。 不允许创建（正在注册）或删除（正在注销）打印机。 | 是 | 否 |
-| _PrinterShare.ReadBasic.All_ | 读取有关打印机共享的基本信息 | 允许应用程序代表已登录用户读取有关打印机共享的基本信息。 不允许读取访问控制信息。 | 否 | 否 |
+| _PrinterShare.ReadBasic.All_ | 读取有关打印机共享的基本信息 | 允许应用程序代表已登录用户读取有关打印机共享的基本信息。不允许读取访问控制信息。 | 否 | 否 |
 | _PrinterShare.Read.All_ | 读取打印机共享 | 允许应用代表已登录用户读取打印机共享。 | 否 | 否 |
 | _PrinterShare.ReadWrite.All_ | 读写打印机共享 | 允许应用代表已登录用户读取和更新打印机共享。 | 是 | 否 |
 | _PrintJob.Create_ | 创建打印作业 | 允许应用程序代表已登录用户创建打印作业，并将文档内容上传到已登录用户创建的打印作业。 | 否 | 否 |
@@ -2167,7 +2169,7 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | _User.ReadWrite.All_ |     读取和写入所有用户的完整个人资料 | 允许应用代表登录用户读取和写入组织中其他用户的整套个人资料属性、下属和经理。还允许应用代表已登录用户创建和删除用户以及重置用户密码。 | 是 | 否 |
 | _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 是 | 否 |
 | _User.Export.All_       |    导出用户数据 | 当由公司管理员执行时，允许应用导出组织的用户数据。| 是 | 否 |
-| _User.ManageIdentities.All_       |    管理用户标识 | 允许应用程序读取、更新和删除与登录用户有权访问的用户帐户相关联的标识。 这控制了用户可以使用哪些标识进行登录。 | 是 | 否 |
+| _User.ManageIdentities.All_       |    管理用户标识 | 允许应用程序读取、更新和删除与登录用户有权访问的用户帐户相关联的标识。这控制了用户可以使用哪些标识进行登录。 | 是 | 否 |
 
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -2178,7 +2180,7 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | _User.ReadWrite.All_ |   读取和写入所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取和写入组织中其他用户的整套个人资料属性、组成员身份、下属和经理。还允许应用创建和删除非管理用户。不允许重置用户密码。 | 是 |
 | _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用无需具有已登录用户即可将来宾用户邀请到你的组织。 | 是 |
 | _User.Export.All_       |    导出用户数据 | 允许应用导出组织用户数据，而无需是登录用户。| 是 |
-| _User.ManageIdentities.All_       |    管理所有用户标识 | 允许应用程序在没有登录用户的情况下读取、更新和删除与用户帐户相关联的标识。 这控制了用户可以使用哪些标识进行登录。 |  是 |
+| _User.ManageIdentities.All_       |    管理所有用户标识 | 允许应用程序在没有登录用户的情况下读取、更新和删除与用户帐户相关联的标识。这控制了用户可以使用哪些标识进行登录。 |  是 |
 
 ### <a name="remarks"></a>说明
 
@@ -2291,15 +2293,45 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 |_UserAuthenticationMethod.Read.All_（预览版）   |读取用户的身份验证方法    |允许此应用读取组织中所有用户的身份验证方法，无已登录用户。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|
 |_UserAuthenticationMethod.ReadWrite.All_（预览版）|管理用户的身份验证方法  |允许此应用程序读取和写入组织中所有用户的身份验证方法，无已登录用户。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>备注
 
-用户身份验证方法权限用于管理用户的身份验证方法。 借助这些权限，委派的用户或应用程序可以注册用户的新身份验证方法，读取用户已注册的身份验证方法，更新这些身份验证方法，以及从用户中删除它们。
+用户身份验证方法权限用于管理用户的身份验证方法。借助这些权限，委派的用户或应用程序可以注册用户的新身份验证方法，读取用户已注册的身份验证方法，更新这些身份验证方法，以及从用户中删除它们。
 
-借助这些权限，可以读取和管理用户的所有身份验证方法。 这包括用于以下操作的方法：
+借助这些权限，可以读取和管理用户的所有身份验证方法。这包括用于以下方面的方法：
 
 * 主要身份验证（密码）
 * 多重身份验证/MFA（电话号码）的第二因素
 * 自助密码重置/SSPR（电子邮件地址）
+
+## <a name="windows-updates-permissions"></a>Windows 更新权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|权限|显示字符串|说明|需经过管理员同意|支持的 Microsoft 帐户|
+|:---|:---|:---|:---|:---|
+|_WindowsUpdates.ReadWrite.All_|读取和写入所有 Windows 更新部署设置|允许应用代表已登录的用户读取和写入组织的所有 Windows 更新部署设置。|是|否|
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|权限|显示字符串|说明|需经过管理员同意|
+|:---|:---|:---|:---|
+|_WindowsUpdates.ReadWrite.All_|读取和写入所有 Windows 更新部署设置|允许应用在没有登录用户的情况下读取和写入组织的所有 Windows 更新部署设置。|是|
+
+### <a name="remarks"></a>注解
+
+上述所有权限仅对工作或学校帐户有效。
+
+登录用户必须分配有全局管理员或 Intune 管理员角色，应用才能使用委派权限读取或写入所有 Windows 更新部署设置。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+
+* _WindowsUpdates.ReadWrite.All_：创建部署(`POST /beta/admin/windows/updates/deployments`)。
+
+#### <a name="application"></a>应用程序
+
+* _WindowsUpdates.ReadWrite.All_：创建部署(`POST /beta/admin/windows/updates/deployments`)。
 
 ## <a name="authentication-methods-policy-permissions-preview"></a>身份验证方法策略权限（[预览](#permissions-availability-status)）
 
@@ -2344,7 +2376,7 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 | **涉及组的应用任务**  |  **必需的权限** |  **权限字符串** |
 |:-------------------------------|:---------------------|:---------------|
 | 应用想要读取基本组信息（仅限显示名称和图片），例如展示组挑选经验  | _Group.Read.All_  | 读取所有组|
-| 应用想要读取所有 Microsoft 365 组中的全部内容（包括文件、对话）。  它还需要显示组成员，同时能够更新组成员（若是所有者）。  |  _Group.Read.All_ | 读取所有网站集中的项、读取所有组|
-| 应用想要读取并写入所有 Microsoft 365 组中的全部内容（包括文件、对话）。  它还需要显示组成员，同时能够更新组成员（若是所有者）。  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  读取和写入所有组、编辑或删除所有网站集中的项 |
-| 应用想要发现（找到）Microsoft 365 组。 它允许用户搜索特定组，然后从枚举列表中选择一个组，从而允许用户加入组。   | _Group.ReadWrite.All_ | 读取和写入所有组|
+| 应用想要读取所有 Microsoft 365 组中的全部内容（包括文件、对话）。它还需要显示组成员，能够更新组成员（若是所有者）。  |  _Group.Read.All_ | 读取所有网站集中的项、读取所有组|
+| 应用想要读取和写入所有 Microsoft 365 组中的全部内容（包括文件、对话）。它还需要显示组成员，能够更新组成员（若是所有者）。  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  读取和写入所有组、编辑或删除所有网站集中的项 |
+| 应用想要发现（找到）Microsoft 365 组。它允许用户搜索特定组，然后从枚举列表中选择一个组，从而允许用户加入组。   | _Group.ReadWrite.All_ | 读取和写入所有组|
 | 应用想要通过 AAD Graph 创建一个组 |   _Group.ReadWrite.All_ | 读取和写入所有组|

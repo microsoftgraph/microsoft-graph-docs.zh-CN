@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1ef28e211e434b1806318fe4b4a52d354887bb23
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 482d60dcec4e6f169bbf6962b20deebfbc52f5d5
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776499"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080243"
 ---
 # <a name="update-sourcecollection"></a>更新 sourceCollection
 
@@ -28,7 +28,7 @@ ms.locfileid: "50776499"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,10 +54,10 @@ PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|contentQuery|字符串|KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅内容 [搜索和电子数据展示的关键字查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。  您可以通过使用与值配对的字段来优化搜索;例如， `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016` 。|
-|说明|字符串|**sourceCollection 的说明**。|
-|displayName|字符串|**sourceCollection** 的 显示名称 。|
-|tenantSources|microsoft.graph.ediscovery.tenantSources|指定此参数时，集合将跨越整个工作负荷的服务。 可取值为：`allMailboxes`、`allSites`。|
+|contentQuery|String|KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅内容 [搜索和电子数据展示的关键字查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。  您可以通过使用与值配对的字段来优化搜索;例如， `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016` 。|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|指定此参数时，集合将跨越整个工作负荷的服务。 可能的值是 `none` `allTenantMailboxes` `allTenantSites` ：、、、、。 `allCaseCustodians` `allCaseNoncustodialDataSources` **注意：** 创建源集合时，需要一个保管人或指定 dataSourceScope。|
+|说明|String|**sourceCollection 的说明**。|
+|displayName|String|**sourceCollection** 的 显示名称 。|
 
 ## <a name="response"></a>响应
 
