@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0bde1a01467c4f59c3b51f265858991c35d4802d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1d5d12fc90bd713ec4df1f96d69a9bf0c74e880b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475483"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050218"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a88201f8169eccf0c34e45eae610e30f4383d72f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8c4184eac40d134e77ce08d1b7ae1f8aadb3bce8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136523"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055965"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -21,7 +21,7 @@ ms.locfileid: "50136523"
 在下列两种情况下，应用可获取其他用户的邮件文件夹：
 
 * 如果该应用具有应用程序权限，或者
-* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 
 ## <a name="permissions"></a>权限
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzN
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

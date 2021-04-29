@@ -5,12 +5,12 @@ localization_priority: Priority
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 292634327717d720a80d55065041de7571660858
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9007795bfb04f8484be61d13a5da17602df80337
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970103"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052640"
 ---
 # <a name="user-findrooms"></a>用户：findRooms
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/me/findRooms
 ##### <a name="response-1"></a>响应 1
 下面是一个响应示例。 
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "user_get_rooms_in_tenant",
@@ -186,7 +186,7 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 ##### <a name="response-2"></a>响应 2
 下面是一个响应示例。 
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "user_get_rooms_from_specific_list",

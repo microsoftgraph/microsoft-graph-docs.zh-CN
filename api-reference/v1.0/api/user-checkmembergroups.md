@@ -1,16 +1,16 @@
 ---
 title: checkMemberGroups
-description: 检查指定组列表中的成员身份。 从列表返回这些组
+description: 检查指定组列表中的成员身份。从以下组的列表返回值
 author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d76b252fcf6c4239c598a4f6591ae2392d25cdba
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 28c4833bc6b3e83f957d113fc5c088abb1696083
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869951"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52033641"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -104,7 +104,7 @@ Content-length: 44
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

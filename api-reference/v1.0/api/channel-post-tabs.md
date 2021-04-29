@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2b48dbdf8bc9991449970e69b92b28911585800b
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 5c4a7c8c82226c18a2e509377fdea87e4fa205a6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607302"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050568"
 ---
 # <a name="add-tab-to-channel"></a>将选项卡添加到频道
 
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "ignored",
   "truncated": true,

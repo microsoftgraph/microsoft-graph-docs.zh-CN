@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 574ad46a454bc86ab7e9a9b7fe827d7a44cedc31
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4a3caa3aa190f899163c75d7f4b89a14b88465b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434893"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052521"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}。必需。  |
-| Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
+| Prefer: outlook.timezone  | string | 用于指定响应中开始时间和结束时间的时区。如果未指定，返回的这些时间值采用 UTC 时区。可选。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

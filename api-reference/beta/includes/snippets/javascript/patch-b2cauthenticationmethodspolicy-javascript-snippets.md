@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8012a36a69236870e86b96f97337d226d1620da3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 5427720dd839984ea152d020c8c4f7e14b9d58a3
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50810182"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52081576"
 ---
 ```javascript
 
@@ -17,7 +17,8 @@ const client = Client.init(options);
 
 const b2cAuthenticationMethodsPolicy = {
     isEmailPasswordAuthenticationEnabled: false,
-    isUserNameAuthenticationEnabled: true
+    isUserNameAuthenticationEnabled: true,
+    isPhoneOneTimePasswordAuthenticationEnabled: true
 };
 
 await client.api('/policies/b2cAuthenticationMethodsPolicy')

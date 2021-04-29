@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8c809556dd50cd96feb2b7c0c8dbd6f83a7257b2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 125d7209014fecedf27f406a10ff24ff2243469a
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458043"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52081500"
 ---
 ```objc
 
@@ -18,6 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphB2cAuthenticationMethodsPolicy *b2cAuthenticationMethodsPolicy = [[MSGraphB2cAuthenticationMethodsPolicy alloc] init];
 [b2cAuthenticationMethodsPolicy setIsEmailPasswordAuthenticationEnabled: false];
 [b2cAuthenticationMethodsPolicy setIsUserNameAuthenticationEnabled: true];
+[b2cAuthenticationMethodsPolicy setIsPhoneOneTimePasswordAuthenticationEnabled: true];
 
 NSError *error;
 NSData *b2cAuthenticationMethodsPolicyData = [b2cAuthenticationMethodsPolicy getSerializedDataWithError:&error];

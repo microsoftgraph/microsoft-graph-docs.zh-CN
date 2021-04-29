@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 55b877252d843b0e181e3aefa8d0ddc5756ce648
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 27ac5bb349ad8ada5cc079331cfb23e3c08e87bf
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882346"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067220"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -56,7 +56,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 | 笔记 | OneNote | 允许用户规划和组织观点及信息。 | [OneNote 笔记概述](integrate-with-onenote.md) |
 | 个人联系人 | Outlook | Web、移动和桌面设备上的联系人管理器。 它是 Microsoft 365 中 Outlook 消息传递通信中心的一部分，还允许用户管理电子邮件和安排会议。  | [Outlook 个人联系人概述](outlook-contacts-concept-overview.md) |
 | 工作簿和图表 | Excel | 允许用户使用 Excel 电子表格进行复杂计算、跟踪、分析和可视化数据，并生成专业报表。 | [Excel 工作簿和图表概述](excel-concept-overview.md) |
-| 待办任务 | 待办事项 | 让用户能够跨工作和生活管理个人任务。 它还与 Outlook、Teams、Planner 和 Cortana 集成，使其成为唯一存放 Microsoft 365 中用户个人任务的位置 | [微软待办任务概述](todo-concept-overview.md) |
+| 待办任务 | 待办事项 | 允许用户管理工作和生活中的个人任务。它还与 Outlook、Teams、Planner 和 Cortana 集成，使其成为唯一存放 Microsoft 365 中用户个人任务的位置 | [微软待办任务概述](todo-concept-overview.md) |
 
 ## <a name="collaboration"></a>协作
 
@@ -87,6 +87,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |:-----------|:--------------------|:-----------|:----------------|
 | 云打印 | 通用打印 | 通用打印是基于 Microsoft 365 云的打印基础设施，可以为用户提供易用、丰富且安全的打印体验，并为 IT 人员减少管理方面的工作。 | [使用通用打印 API 进行云打印](universal-print-concept-overview.md) |
 |公司设备和应用管理 | Intune | 注册和配置设备，并管理组织中的移动应用程序。 | [Intune 设备和应用概述](intune-concept-overview.md) |
+| 设备更新 | 适用于企业的 Windows 更新部署服务 | 可控制对从 Windows 更新网站传送内容的批准、计划、监测和防护。 | [Microsoft Graph 中的 Windows 更新](windowsupdates-concept-overview.md)
 
 
 ## <a name="security"></a>安全性

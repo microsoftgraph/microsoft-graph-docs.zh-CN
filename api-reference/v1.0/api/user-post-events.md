@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 91aabfaa178f1363a425b21967bf61e1e4457567
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: 8900708ae5d22ef658ec8d5ea9dc6f9c6b798b7c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720558"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038731"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -146,7 +146,7 @@ Content-type: application/json
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
-下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -345,7 +345,7 @@ Content-length: 1390
 
 #### <a name="response"></a>响应
 以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头，**start** 和 **end** 属性以 PST 表示。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -553,7 +553,7 @@ Content-type: application/json
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -738,7 +738,7 @@ Content-type: application/json
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
 下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。
-注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_with_online_meeting",

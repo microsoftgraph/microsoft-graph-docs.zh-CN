@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e6caed0bcd6a8327068726a403b7531354864a25
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8a71a50714d18d4d4d8e91a4f5a7e0c0b31fe9e6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720135"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052633"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -31,13 +31,15 @@ ms.locfileid: "50720135"
 |委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
-调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 终结点时不支持应用程序权限。
+调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
 
 对于特定用户：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+请注意，当 **userPrincipalName** 以 `$` 字符开头时，请删除 `/users` 后的斜杠 （/），并将 **userPrincipalName** 括在圆括号和单引号中。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#users)。
 
 对于登录用户：
 <!-- { "blockType": "ignored" } -->
@@ -100,7 +102,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
   "blockType": "response",

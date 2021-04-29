@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 78dd784a658ed6867a8266c048abaf7528f9a08b
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: ea2204784bb56d00766be59c55bc6d1bab5c3cd0
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329643"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52081552"
 ---
 ```objc
 
@@ -13,14 +13,14 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/identity/b2cUserFlows/{id}/identityProviders/$ref"]]];
-[urlRequest setHTTPMethod:@"PATCH"];
+[urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphIdentityProvider *identityProviders = [[MSGraphIdentityProvider alloc] init];
+MSGraphIdentityProvider *identityProvider = [[MSGraphIdentityProvider alloc] init];
 
 NSError *error;
-NSData *identityProvidersData = [identityProviders getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:identityProvidersData];
+NSData *identityProviderData = [identityProvider getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:identityProviderData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

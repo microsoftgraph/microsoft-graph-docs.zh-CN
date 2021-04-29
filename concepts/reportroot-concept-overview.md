@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3dd9e752de384970c00d828a2a9c672e65100f2f
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 52247aa125745055f4fec5b651c8c175597d1b82
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982227"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055594"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Microsoft Graph 报告 API 概述
 
@@ -24,9 +24,9 @@ Microsoft Graph 中的报告 API 可帮助你了解 Azure Active Directory 租�
 很多公司都有使用报告应用程序或 Web 门户的现有报告解决方案。 你可以使用报告 API 将 Microsoft 365 使用情况数据并入组织的现有报告解决方案中，以便所有 IT 服务报告均位于统一位置。
 
 ### <a name="retain-usage-reports-for-historical-analysis"></a>保留使用情况报告以供历史分析
-你可以使用报告 API 获取所有使用情况报告中可用的数据，包括每个服务的组织级别的摘要、过去 7/30/90/180 天的实体级别（用户、网站和帐户）的使用情况信息和每日活动聚合。 这样，可以根据需要保留历史使用情况信息。
+你可以使用报告 API 获取所有使用情况报告中可用的数据，包括每个服务的组织级别的摘要、过去 7/30/90/180 天的实体级别（用户、网站和帐户）的使用情况信息和每日活动聚合。这样可允许你按照要求的时间保存历史使用信息。
 
-### <a name="analize-ad-fs-application-activity-and-configuration"></a>分析 AD FS 应用程序活动和配置
+### <a name="analyze-ad-fs-application-activity-and-configuration"></a>分析 AD FS 应用程序活动和配置
 提供与使用 Active Directory 联合身份验证服务（以下简称“AD FS”）配置的信赖方相关的信息、其聚合的使用情况，以及是否可以将信赖方配置迁移到 Azure Active Directory。
 
 ### <a name="monitor-application-sign-ins"></a>监控应用程序登录
@@ -46,7 +46,6 @@ Microsoft Graph 中的报告 API 可帮助你了解 Azure Active Directory 租�
 你可以使用报告 API 访问下表中列出的数据集。
 
 | 报表 API | 数据集 |
-|:------------ |:-------- |
 |:------------ |:-------- |
 | 活动 | [目录审核](/graph/api/resources/directoryaudit?view=graph-rest-1.0)<br/>[登录](/graph/api/resources/signin?view=graph-rest-1.0)<br/>[预配（预览版）](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) |
 | AD FS 应用程序 | [信赖方详细摘要（预览版）](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) |

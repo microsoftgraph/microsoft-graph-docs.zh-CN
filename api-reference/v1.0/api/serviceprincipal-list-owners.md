@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6e1bd835b63514a0e6c92501537ee93a0eabda79
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c7b960993e37d9a8219b5fd509249767da65756a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134484"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054425"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipals: 列出所有者
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners
 ### <a name="response"></a>响应
 下面是一个响应示例。 
 
->注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+>注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

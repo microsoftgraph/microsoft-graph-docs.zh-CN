@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Priority
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bf1e017e6fd69168b41e83b8adc19f9bd4d5f216
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ae93f6b665a8b4d6ce4ccb1c039302575e18a8f7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434424"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051499"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ---
 
 ##### <a name="response"></a>响应
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
