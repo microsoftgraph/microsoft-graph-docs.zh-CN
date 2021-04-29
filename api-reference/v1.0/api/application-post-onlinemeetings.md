@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 34508cc03a668b9fdc9c20df77a7da5888861dce
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 035bc01bce48624ce066e339e7f1bc8a10864ae6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869846"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039984"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -106,7 +106,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
   "blockType": "response",
@@ -151,7 +152,8 @@ Content-Type: application/json
   "subject": "User Token Meeting"
 }
 ```
->**注意：** 如果指定了 'Accept-Language: ja' 来指示日语，则响应将包括以下内容。
+> [!NOTE]
+> 如果指定了 'Accept-Language: ja' 来指示日语，则响应将包括以下内容。
 
 ```json
     "joinInformation": {

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d31efa462d0e4c57f9be32be15838cc5be816ed8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6ee74d0a2508f5ef2cf45de095b94ca519559b0c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128251"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039403"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -106,7 +106,7 @@ Prefer: odata.maxpagesize=2
 
 以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

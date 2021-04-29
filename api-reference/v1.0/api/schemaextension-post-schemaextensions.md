@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 261a365957e1552d2848d94d00600d7be12716d3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a498b23cc29c806f24cd620110ce731598ba2582
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089012"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054474"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -33,7 +33,7 @@ ms.locfileid: "48089012"
 |应用程序 | 不支持。 |
 
 > [!NOTE]
-> 此外，对于委派的流程，登录用户必须是调用应用程序的所有者或用于设置**所有者**属性的（所带应用程序）`appId`所有者。
+> 此外，对于委派的流程，登录用户必须是调用应用程序的所有者或用于设置 **所有者** 属性的（所带应用程序）`appId`所有者。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +56,7 @@ POST /schemaExtensions
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |id|String|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接其中一个已验证域的域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 示例：`contoso_mySchema`。 注意：仅支持以下顶级域下已经过验证的域：`.com`、`.net`、`.gov`、`.edu` 或 `.org`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性一旦创建，便无法更改。 |
-|owner|String|（可选）属于架构扩展所有者的应用程序的 `appId`。 默认情况下，则会将调用应用程序的 `appId` 设置为所有者。 但是，创建时可提供该属性，将所有者的 appId 设置为与调用应用程序不同的对象。 在所有情况下，在委派的流程中，已登录的用户**必须**成为被设置为架构扩展所有者的应用程序的所有者。 因此，如果使用 Graph 浏览器新建一个架构扩展定义，则**必须**提供所有者属性你所拥有的的 appId（以此为例）。 设置后，此属性为只读，且无法更改。|
+|owner|String|（可选）属于架构扩展所有者的应用程序的 `appId`。 默认情况下，则会将调用应用程序的 `appId` 设置为所有者。 但是，创建时可提供该属性，将所有者的 appId 设置为与调用应用程序不同的对象。 在所有情况下，在委派的流程中，已登录的用户 **必须** 成为被设置为架构扩展所有者的应用程序的所有者。 因此，如果使用 Graph 浏览器新建一个架构扩展定义，则 **必须** 提供所有者属性你所拥有的的 appId（以此为例）。 设置后，此属性为只读，且无法更改。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。|
 |targetTypes|String collection|此架构扩展定义适用的支持架构扩展的 Microsoft Graph 资源类型集。|
 
@@ -124,7 +124,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -219,7 +219,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。 响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -259,7 +259,7 @@ Content-length: 420
 
 #### <a name="request"></a>请求
 
-此示例演示如何设置**所有者**来创建架构扩展。  在此方案中，应用程序的用户可能不是应用程序的所有者（例如，当你使用的是 Microsoft Graph 资源管理器）。  在这种情况下，应将 **owner** 属性设置为你拥有的应用程序的 **appId** ，否则你将无权创建架构扩展。 在请求中设置 **owner** 属性，以及 [schemaExtension](../resources/schemaextension.md) 对象中其他属性的 JSON 表示形式。
+此示例演示如何设置 **所有者** 来创建架构扩展。  在此方案中，应用程序的用户可能不是应用程序的所有者（例如，当你使用的是 Microsoft Graph 资源管理器）。  在这种情况下，应将 **owner** 属性设置为你拥有的应用程序的 **appId** ，否则你将无权创建架构扩展。 在请求中设置 **owner** 属性，以及 [schemaExtension](../resources/schemaextension.md) 对象中其他属性的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -316,7 +316,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-该响应包括 **owner** 设置为请求中提供的值。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+该响应包括 **owner** 设置为请求中提供的值。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f409605b5c90319e3e862f7d7c3790f5a2502fc8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f6bbfa13edd0fe5bb2f29bd2597dfe5ec443846
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943414"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053823"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： ownedObjects 列表
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/ownedObjects
 
 ### <a name="response"></a>响应
 下面是一个响应示例。 
->注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+>注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4c9db9213b6245cc3a0c07c0bb590f0543055cb9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8ff929216fa15859744a686090c522d810d3a8c3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448261"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054026"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -136,7 +136,7 @@ Content-length: 285
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

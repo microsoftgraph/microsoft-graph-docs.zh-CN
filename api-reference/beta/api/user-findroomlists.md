@@ -5,12 +5,12 @@ author: vrod9429
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 20442034771e61e28b75f6938a734c39d2f1db81
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c091ac7071ce76dbb59cb69c10da2b6fa519f3cc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970128"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052647"
 ---
 # <a name="user-findroomlists"></a>用户：findRoomLists
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "user_get_room_lists",

@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 81da435082e89f74c1ab46a8460cbfe196e2be26
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 86e3d9b2f7cd72ad19ff165a5ffa8bf67f391362
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961378"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053249"
 ---
 # <a name="list-members-of-a-chat"></a>列出聊天成员。
 
@@ -21,7 +21,7 @@ ms.locfileid: "51961378"
 > [!NOTE]
 > 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
 >
-> 成员资格结果将来可能会映射到来自不同租户的用户，如响应中所示。 客户端不应假定所有成员都仅来自当前租户。
+> 未来，成员资格结果可以映射到来自不同租户的用户，如响应中所示。客户端不应假定所有成员仅来自当前租户。
 
 ## <a name="permissions"></a>权限
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1b
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

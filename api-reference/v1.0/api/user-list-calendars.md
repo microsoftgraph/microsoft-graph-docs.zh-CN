@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e11593b968976792fe65eb1e38d2a7572df3f801
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 7c464f840a9bb395e17e42f28a9c905f30287f01
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473652"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049385"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/calendars
 ---
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

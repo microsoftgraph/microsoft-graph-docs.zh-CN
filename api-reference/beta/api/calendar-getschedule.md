@@ -5,12 +5,12 @@ localization_priority: Priority
 author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2bc4a43dad2181dd2c86e384447111081d5c2bd4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b91b0b0aad21c87d01ff813b85dc5b8861cff25
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960076"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047754"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
@@ -27,7 +27,7 @@ ms.locfileid: "48960076"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | Calendars.Read、Calendars.ReadWrite |
+|应用程序 | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string | 实体正文中的数据性质（为 application/json）。 必需。  |
+| Content-Type  | string | 实体正文中的数据性质（为 application/json）。必填。  |
 | Prefer: outlook.timezone | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

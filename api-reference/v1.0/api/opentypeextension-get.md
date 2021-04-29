@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: eb2dfc31a42e0dd53daed5c2be9e4a43aa6c9e30
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c977bc2d84c84aacf851268d50858487b08f3115
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474796"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049497"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
@@ -35,7 +35,7 @@ ms.locfileid: "50474796"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.Read.All | 不支持 | Device.ReadWrite.All |
-| [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [组事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
@@ -302,7 +302,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 
 #### <a name="response-3"></a>响应 3
 
-下面是第三个示例的响应。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是第三个示例的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -463,7 +463,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 
 在第五个示例的响应中，用户邮箱中仅有一封邮件，其 **id** 等于 `Com.Contoso.Referral`。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

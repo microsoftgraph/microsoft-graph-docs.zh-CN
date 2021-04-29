@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 5d0a5afd29b799e51662ceba23c5ee415aa69689
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 733e9d0665e135d2e5dd1be152e6676c184252c5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468833"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055769"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -156,7 +156,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
