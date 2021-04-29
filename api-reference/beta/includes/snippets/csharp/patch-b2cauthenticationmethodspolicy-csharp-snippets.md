@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d5f29d2a090137e297c2b512d8eb99c403557c61
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 681c7226fbae68044f79ee25a8a8550160765bc3
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458042"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52081507"
 ---
 ```csharp
 
@@ -14,7 +14,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var b2cAuthenticationMethodsPolicy = new B2cAuthenticationMethodsPolicy
 {
     IsEmailPasswordAuthenticationEnabled = false,
-    IsUserNameAuthenticationEnabled = true
+    IsUserNameAuthenticationEnabled = true,
+    IsPhoneOneTimePasswordAuthenticationEnabled = true
 };
 
 await graphClient.Policies.B2cAuthenticationMethodsPolicy

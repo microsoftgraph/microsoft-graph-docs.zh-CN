@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 78330e09624351880ea3f382a41b4e6175712f04
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f10f60eb9eb0d719d33e2e557f474d3b68fc5138
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50970565"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52081502"
 ---
 ```java
 
@@ -14,6 +14,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 B2cAuthenticationMethodsPolicy b2cAuthenticationMethodsPolicy = new B2cAuthenticationMethodsPolicy();
 b2cAuthenticationMethodsPolicy.isEmailPasswordAuthenticationEnabled = false;
 b2cAuthenticationMethodsPolicy.isUserNameAuthenticationEnabled = true;
+b2cAuthenticationMethodsPolicy.isPhoneOneTimePasswordAuthenticationEnabled = true;
 
 graphClient.policies().b2cAuthenticationMethodsPolicy()
     .buildRequest()
