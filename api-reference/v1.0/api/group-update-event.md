@@ -5,52 +5,52 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0e0bcd8a0560f148ddefbf8e2db36cd13da430ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec162826d35b21c858eb69c17c97ee0d8b39f8a3
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041979"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080524"
 ---
-# <a name="update-event"></a><span data-ttu-id="8013f-103">更新事件</span><span class="sxs-lookup"><span data-stu-id="8013f-103">Update event</span></span>
+# <a name="update-event"></a><span data-ttu-id="4e0b4-103">更新事件</span><span class="sxs-lookup"><span data-stu-id="4e0b4-103">Update event</span></span>
 
-<span data-ttu-id="8013f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8013f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4e0b4-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4e0b4-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="8013f-105">更新 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8013f-105">Update an [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="4e0b4-105">更新 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4e0b4-105">Update an [event](../resources/event.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8013f-106">权限</span><span class="sxs-lookup"><span data-stu-id="8013f-106">Permissions</span></span>
-<span data-ttu-id="8013f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8013f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4e0b4-106">权限</span><span class="sxs-lookup"><span data-stu-id="4e0b4-106">Permissions</span></span>
+<span data-ttu-id="4e0b4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4e0b4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8013f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8013f-109">Permission type</span></span>      | <span data-ttu-id="8013f-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8013f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4e0b4-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4e0b4-109">Permission type</span></span>      | <span data-ttu-id="4e0b4-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4e0b4-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8013f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8013f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8013f-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8013f-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8013f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8013f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8013f-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="8013f-114">Not supported.</span></span>    |
-|<span data-ttu-id="8013f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="8013f-115">Application</span></span> | <span data-ttu-id="8013f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="8013f-116">Not supported.</span></span> |
+|<span data-ttu-id="4e0b4-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4e0b4-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4e0b4-112">Calendars.ReadWrite、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e0b4-112">Calendars.ReadWrite, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4e0b4-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4e0b4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4e0b4-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4e0b4-114">Not supported.</span></span>    |
+|<span data-ttu-id="4e0b4-115">Application</span><span class="sxs-lookup"><span data-stu-id="4e0b4-115">Application</span></span> | <span data-ttu-id="4e0b4-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4e0b4-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8013f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8013f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4e0b4-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4e0b4-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/events/{id}
 PATCH /groups/{id}/calendar/events/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8013f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8013f-118">Request headers</span></span>
-| <span data-ttu-id="8013f-119">名称</span><span class="sxs-lookup"><span data-stu-id="8013f-119">Name</span></span>       | <span data-ttu-id="8013f-120">类型</span><span class="sxs-lookup"><span data-stu-id="8013f-120">Type</span></span> | <span data-ttu-id="8013f-121">说明</span><span class="sxs-lookup"><span data-stu-id="8013f-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4e0b4-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4e0b4-118">Request headers</span></span>
+| <span data-ttu-id="4e0b4-119">名称</span><span class="sxs-lookup"><span data-stu-id="4e0b4-119">Name</span></span>       | <span data-ttu-id="4e0b4-120">类型</span><span class="sxs-lookup"><span data-stu-id="4e0b4-120">Type</span></span> | <span data-ttu-id="4e0b4-121">说明</span><span class="sxs-lookup"><span data-stu-id="4e0b4-121">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="8013f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8013f-122">Authorization</span></span>  | <span data-ttu-id="8013f-123">string</span><span class="sxs-lookup"><span data-stu-id="8013f-123">string</span></span>  | <span data-ttu-id="8013f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8013f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4e0b4-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4e0b4-122">Authorization</span></span>  | <span data-ttu-id="4e0b4-123">string</span><span class="sxs-lookup"><span data-stu-id="4e0b4-123">string</span></span>  | <span data-ttu-id="4e0b4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4e0b4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8013f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8013f-126">Request body</span></span>
-<span data-ttu-id="8013f-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="8013f-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4e0b4-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4e0b4-126">Request body</span></span>
+<span data-ttu-id="4e0b4-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="4e0b4-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8013f-130">响应</span><span class="sxs-lookup"><span data-stu-id="8013f-130">Response</span></span>
-<span data-ttu-id="8013f-131">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="8013f-131">If successful, this method returns a `200 OK` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="4e0b4-130">响应</span><span class="sxs-lookup"><span data-stu-id="4e0b4-130">Response</span></span>
+<span data-ttu-id="4e0b4-131">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="4e0b4-131">If successful, this method returns a `200 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8013f-132">示例</span><span class="sxs-lookup"><span data-stu-id="8013f-132">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="8013f-133">请求</span><span class="sxs-lookup"><span data-stu-id="8013f-133">Request</span></span>
-<span data-ttu-id="8013f-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8013f-134">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4e0b4-132">示例</span><span class="sxs-lookup"><span data-stu-id="4e0b4-132">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="4e0b4-133">请求</span><span class="sxs-lookup"><span data-stu-id="4e0b4-133">Request</span></span>
+<span data-ttu-id="4e0b4-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4e0b4-134">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="8013f-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="8013f-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4e0b4-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="4e0b4-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01d4ee64-15ce-491e-bad1-b91aa3223df4", "AAMkADZlAAAAABERAAA="],
@@ -66,27 +66,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="8013f-136">C#</span><span class="sxs-lookup"><span data-stu-id="8013f-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4e0b4-136">C#</span><span class="sxs-lookup"><span data-stu-id="4e0b4-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8013f-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8013f-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4e0b4-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4e0b4-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8013f-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8013f-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4e0b4-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4e0b4-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-group-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="8013f-139">Java</span><span class="sxs-lookup"><span data-stu-id="8013f-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4e0b4-139">Java</span><span class="sxs-lookup"><span data-stu-id="4e0b4-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="8013f-140">响应</span><span class="sxs-lookup"><span data-stu-id="8013f-140">Response</span></span>
-<span data-ttu-id="8013f-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8013f-141">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="4e0b4-140">响应</span><span class="sxs-lookup"><span data-stu-id="4e0b4-140">Response</span></span>
+<span data-ttu-id="4e0b4-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4e0b4-141">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
