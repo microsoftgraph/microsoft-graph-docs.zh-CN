@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 55ee53dd758116edd14149a9dc20270fa49b1679
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4f9bfb7623e546c402853c31eba750f5c4040966
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771405"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080090"
 ---
 # <a name="printjob-abort"></a>printJob： abort
 
@@ -19,6 +19,8 @@ ms.locfileid: "50771405"
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 中止打印作业。 只有使用应用程序权限的应用程序才能中止打印作业。
+
+只有在关联的打印作业上存在由请求应用创建的触发器启动的 [printTask](../resources/printTask.md) 状态时，中止打印作业才能 `processing` 成功。 若要详细了解如何注册任务触发器，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +31,7 @@ ms.locfileid: "50771405"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 不支持 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All、PrintJob.Manage.All |
+|Application| PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All、PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

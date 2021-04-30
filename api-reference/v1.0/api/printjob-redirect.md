@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 2f1415e4fc91fead1ed25f66867a3bd08f0dceb8
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 23e330a23c50e01f1d0e4ff5b05cadc3ae9b7cdc
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775974"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080069"
 ---
 # <a name="printjob-redirect"></a>printJob： redirect
 命名空间：microsoft.graph
@@ -18,6 +18,8 @@ ms.locfileid: "50775974"
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 将 [打印作业重定向到](../resources/printjob.md) 其他 [打印机](../resources/printer.md)。
+
+只有在关联的打印作业上存在由请求应用创建的触发器启动的 [printTask](../resources/printTask.md) 状态时，重定向打印作业才能 `processing` 成功。 
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
@@ -30,7 +32,7 @@ ms.locfileid: "50775974"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 不支持。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| PrintJob.Manage.All |
+|Application| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

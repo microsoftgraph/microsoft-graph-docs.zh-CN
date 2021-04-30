@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 在 site 中的创建新的 list。
 doc_type: apiPageType
-ms.openlocfilehash: f8abd6311f1b9fa98ed4a1a99cb36ac3b1a77812
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 128e772681bae4b4fcc60eefb0b224fd2a4205d1
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471685"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080426"
 ---
 # <a name="create-a-new-list"></a>创建新列表
 
@@ -27,7 +27,7 @@ ms.locfileid: "50471685"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | Sites.Manage.All                            |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | Sites.ReadWrite.All                         |
+| Application                            | Sites.Manage.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -126,7 +126,7 @@ Content-type: application/json
 **注意：** 为清楚起见，将截断 Response 对象。
 实际调用会返回默认属性。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 [网站]: ../resources/site.md
 
 <!-- {
