@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6a351467a96b60aa2bcabd560db910c88d999a67
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: b71e7ef37201ff86170ea0f9b97ad8aaebff9c8a
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061817"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118947"
 ---
 # <a name="list-outcomes"></a>列出结果
 
@@ -77,7 +77,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-outcomes-csharp-snippets.md)]

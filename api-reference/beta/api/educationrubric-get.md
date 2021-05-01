@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6f035cb9b31f813b788fe71e0feb4ae06d996750
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 879728279d2b57b3459284e2bcad92a1d617e7a6
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061831"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118933"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
 
@@ -20,7 +20,7 @@ ms.locfileid: "52061831"
 
 检索 [educationRubric 对象的属性和](../resources/educationrubric.md) 关系。
 
-请注意，在获取工作分配 () 时，返回的是下存在的原始工作分卡的不可变 `GET /education/me/assignments/{id}/rubric` 副本 `/education/users/{id}/rubrics` 。 该副本与该特定分配相关联。
+请注意，在获取工作分配 () 时，返回的是下存在的原始工作分卡的不可变 `GET /education/classes/{id}/assignments/{id}/rubric` 副本 `/education/users/{id}/rubrics` 。 该副本与该特定分配相关联。
 
 ## <a name="permissions"></a>权限
 

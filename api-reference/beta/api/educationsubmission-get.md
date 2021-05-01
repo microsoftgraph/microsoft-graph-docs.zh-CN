@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 164428bb5e1a250a3f5e2edafdd859f4ea4361a8
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 46b04c06497075d9abdb8e09533c46f752fb3e92
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061824"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118987"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -100,13 +100,6 @@ Content-length: 712
       "recipient": {
         "userId": "13015"
       },
-      "releasedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "releasedDateTime": "2014-01-01T00:00:00Z",
       "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
       "status": "working",
       "submittedBy": {

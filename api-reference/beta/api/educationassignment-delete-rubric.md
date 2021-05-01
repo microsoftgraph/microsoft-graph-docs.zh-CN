@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4eadc22c5e88243319245b90c165534bb062e404
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8fdf11ab9792609813a92aef1c42f79b0cba3b48
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044429"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52119010"
 ---
 # <a name="remove-educationrubric-from-educationassignment"></a>从 educationAssignment 中删除 educationRubric
 
@@ -65,7 +65,7 @@ DELETE /education/classes/{id}/assignments/{id}/rubric/$ref
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric/$ref
+DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationrubric-from-educationassignment-csharp-snippets.md)]

@@ -1,24 +1,25 @@
 ---
-title: educationAssignment： getResourcesFolderUrl
-description: '此函数返回 OneDrive URL，其中所有基于文件的资源 (Word、Excel 等) 应上载。  '
+title: 'educationAssignment：getResourcesFolderUrl (已弃) '
+description: '此函数返回 OneDrive URL，其中所有基于文件的资源 (Word、Excel 等) 上载。  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ce5f35560a25f2a57742d93293788038e13cb179
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 44c7caec25b4d96b225598041f59bfcaa3f5d3ac
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951829"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52119003"
 ---
-# <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment： getResourcesFolderUrl
+# <a name="educationassignment-getresourcesfolderurl-deprecated"></a>educationAssignment：getResourcesFolderUrl (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+ [!CAUTION] getResourcesFolderUrl API 已弃用，将在 2021 年 5 月 31 日停止返回数据。 请使用 `resourcesFolderUrl` [educationAssignment](../resources/educationassignment.md) 实体上公开的新属性获取此信息。 
 
-此函数返回 OneDrive URL，其中所有基于文件的资源 (Word、Excel 等) 应上载。  
+此函数返回 OneDrive URL，其中所有基于文件的资源 (Word、Excel 等) 上载。  
 请注意，文件必须位于此文件夹中才能添加为资源。 只有课堂中的教师可以确定要上载的文件。 
 
 ## <a name="permissions"></a>权限
@@ -44,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 Ok` 响应代码。 正文将包含用于放入所有基于文件的资源的文件夹的 OneDrive URL。
+如果成功，此方法返回 `200 Ok` 响应代码。 正文将包含OneDrive所有基于文件的资源的文件夹的 URL。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

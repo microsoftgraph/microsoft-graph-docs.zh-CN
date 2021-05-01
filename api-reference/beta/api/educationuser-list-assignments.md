@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c660185ec5f0e0c7a2eaed46f5b0cc43499500ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 682a03d4785184132c8a5aff3044f9ff9f2a4670
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042840"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118870"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -33,7 +33,6 @@ ms.locfileid: "52042840"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/me/assignments/
 GET /education/users/{id}/assignments
 ```
 
@@ -64,7 +63,7 @@ GET /education/users/{id}/assignments
   "name": "get_assignments"
 }-->
 ```http 
-GET https://graph.microsoft.com/beta/education/me/assignments
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 ```
 
 ##### <a name="response"></a>响应

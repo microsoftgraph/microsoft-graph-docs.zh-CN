@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e0bcea6b95b83cad3f4467e0a3687a3e2c401b56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 50e3d9a675a6052f6eb2f26b5ed28a3395b77063
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043477"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118988"
 ---
 # <a name="update-educationrubric"></a>更新 educationRubric
 
@@ -20,7 +20,7 @@ ms.locfileid: "52043477"
 
 更新 [educationRubric 对象](../resources/educationrubric.md) 的属性。
 
-只有在发布工作分配 () 工作分配附加的一个分值才能更新，而更新的实际上是 下 `PATCH /education/me/assignments/{id}/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/me/assignments/{id}/rubric](educationrubric-get.md)检索该标准，但不能更新。
+只有在发布工作分配 () 工作分配附加的一个分值才能更新，而更新的实际上是 下 `PATCH /education/classes/{id}/assignments/{id}/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/classes/{id}/assignments/{id}/rubric](educationrubric-get.md)检索该标准，但无法更新。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ ms.locfileid: "52043477"
 
 ```http
 PATCH /education/me/rubrics/{id}
-PATCH /education/me/assignments/{id}/rubric
+PATCH /education/classes/{id}/assignments/{id}/rubric
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -54,7 +54,7 @@ PATCH /education/me/assignments/{id}/rubric
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|itemBody|此分卡的说明。|
-|displayName|String|此分号的名称。|
+|displayName|字符串|此分号的名称。|
 |一个|educationAssignmentGradeType|此分值是否具有点。|
 |levels|rubricLevel 集合|此标准中的级别集合。|
 |一些|rubricQuality 集合|此分项由质量集合决定。|
