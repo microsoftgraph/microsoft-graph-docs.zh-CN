@@ -5,32 +5,32 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f27763d558590e01f61fbc231959b05bee3c296
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 00985a84bcae02f30ee80e5a3babe9de58682d7e
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043715"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118954"
 ---
-# <a name="update-educationoutcome"></a><span data-ttu-id="393d1-103">更新 educationoutcome</span><span class="sxs-lookup"><span data-stu-id="393d1-103">Update educationoutcome</span></span>
+# <a name="update-educationoutcome"></a><span data-ttu-id="4b7ff-103">更新 educationoutcome</span><span class="sxs-lookup"><span data-stu-id="4b7ff-103">Update educationoutcome</span></span>
 
-<span data-ttu-id="393d1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="393d1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4b7ff-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4b7ff-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="393d1-105">更新 [educationOutcome 对象](../resources/educationoutcome.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="393d1-105">Update the properties of an [educationOutcome](../resources/educationoutcome.md) object.</span></span>
+<span data-ttu-id="4b7ff-105">更新 [educationOutcome 对象](../resources/educationoutcome.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-105">Update the properties of an [educationOutcome](../resources/educationoutcome.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="393d1-106">权限</span><span class="sxs-lookup"><span data-stu-id="393d1-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4b7ff-106">权限</span><span class="sxs-lookup"><span data-stu-id="4b7ff-106">Permissions</span></span>
 
-<span data-ttu-id="393d1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="393d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4b7ff-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="393d1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="393d1-109">Permission type</span></span>                        | <span data-ttu-id="393d1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="393d1-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4b7ff-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4b7ff-109">Permission type</span></span>                        | <span data-ttu-id="4b7ff-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4b7ff-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="393d1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="393d1-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="393d1-112">EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="393d1-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="393d1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="393d1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="393d1-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="393d1-114">Not supported.</span></span> |
-| <span data-ttu-id="393d1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="393d1-115">Application</span></span>                            | <span data-ttu-id="393d1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="393d1-116">Not supported.</span></span> |
+| <span data-ttu-id="4b7ff-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4b7ff-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4b7ff-112">EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4b7ff-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="4b7ff-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4b7ff-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4b7ff-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-114">Not supported.</span></span> |
+| <span data-ttu-id="4b7ff-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4b7ff-115">Application</span></span>                            | <span data-ttu-id="4b7ff-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="393d1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="393d1-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4b7ff-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4b7ff-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,40 +38,40 @@ ms.locfileid: "52043715"
 PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="393d1-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="393d1-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4b7ff-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4b7ff-118">Request headers</span></span>
 
-| <span data-ttu-id="393d1-119">名称</span><span class="sxs-lookup"><span data-stu-id="393d1-119">Name</span></span>       | <span data-ttu-id="393d1-120">说明</span><span class="sxs-lookup"><span data-stu-id="393d1-120">Description</span></span>|
+| <span data-ttu-id="4b7ff-119">名称</span><span class="sxs-lookup"><span data-stu-id="4b7ff-119">Name</span></span>       | <span data-ttu-id="4b7ff-120">说明</span><span class="sxs-lookup"><span data-stu-id="4b7ff-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="393d1-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="393d1-121">Authorization</span></span> | <span data-ttu-id="393d1-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="393d1-122">Bearer {token}</span></span> |
+| <span data-ttu-id="4b7ff-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4b7ff-121">Authorization</span></span> | <span data-ttu-id="4b7ff-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="4b7ff-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="393d1-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="393d1-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4b7ff-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="4b7ff-123">Request body</span></span>
 
-<span data-ttu-id="393d1-124">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="393d1-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="393d1-125">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="393d1-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="393d1-126">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="393d1-126">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="4b7ff-124">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="4b7ff-125">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="4b7ff-126">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-126">For best performance, don't include existing values that haven't changed.</span></span>
 
-<span data-ttu-id="393d1-127">educationOutcome 对象将为以下派生类型之一 **：educationPointsOutcome、educationFeedbackOutcome** 或 **educationRubricOutcome**。 </span><span class="sxs-lookup"><span data-stu-id="393d1-127">The educationOutcome object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**.</span></span> <span data-ttu-id="393d1-128">提供与要修补的结果类型相关的特定属性。</span><span class="sxs-lookup"><span data-stu-id="393d1-128">Supply the specific properties relevant to the type of outcome being patched.</span></span>
+<span data-ttu-id="4b7ff-127">educationOutcome 对象将为以下派生类型之一 **：educationPointsOutcome、educationFeedbackOutcome** 或 **educationRubricOutcome**。 </span><span class="sxs-lookup"><span data-stu-id="4b7ff-127">The educationOutcome object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**.</span></span> <span data-ttu-id="4b7ff-128">提供与要修补的结果类型相关的特定属性。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-128">Supply the specific properties relevant to the type of outcome being patched.</span></span>
 
-<span data-ttu-id="393d1-129">所有派生的结果类型都有一个适合该结果类型的常规和"已发布"属性;例如 **，points** 和 **publishedPoints** **、feedback** 和 **publishedFeedback**。</span><span class="sxs-lookup"><span data-stu-id="393d1-129">All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**.</span></span> <span data-ttu-id="393d1-130">不要更新"published"属性;供内部使用。</span><span class="sxs-lookup"><span data-stu-id="393d1-130">Do not update the "published" property; it is for internal use.</span></span> <span data-ttu-id="393d1-131">例如，若要向 **educationPointsOutcome** 分配点，请更新 **points** 属性，但不更新 **publishedPoints**。</span><span class="sxs-lookup"><span data-stu-id="393d1-131">For example, to assign points to an **educationPointsOutcome**, update the **points** property, but do not update **publishedPoints**.</span></span>
+<span data-ttu-id="4b7ff-129">所有派生的结果类型都有一个适合该结果类型的常规和"已发布"属性;例如 **，points** 和 **publishedPoints** **、feedback** 和 **publishedFeedback**。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-129">All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**.</span></span> <span data-ttu-id="4b7ff-130">不要更新"published"属性;供内部使用。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-130">Do not update the "published" property; it is for internal use.</span></span> <span data-ttu-id="4b7ff-131">例如，若要向 **educationPointsOutcome** 分配点，请更新 **points** 属性，但不更新 **publishedPoints**。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-131">For example, to assign points to an **educationPointsOutcome**, update the **points** property, but do not update **publishedPoints**.</span></span>
 
-## <a name="response"></a><span data-ttu-id="393d1-132">响应</span><span class="sxs-lookup"><span data-stu-id="393d1-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4b7ff-132">响应</span><span class="sxs-lookup"><span data-stu-id="4b7ff-132">Response</span></span>
 
-<span data-ttu-id="393d1-133">如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationOutcome](../resources/educationoutcome.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="393d1-133">If successful, this method returns a `200 OK` response code and an updated [educationOutcome](../resources/educationoutcome.md) object in the response body.</span></span>
+<span data-ttu-id="4b7ff-133">如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationOutcome](../resources/educationoutcome.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-133">If successful, this method returns a `200 OK` response code and an updated [educationOutcome](../resources/educationoutcome.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="393d1-134">示例</span><span class="sxs-lookup"><span data-stu-id="393d1-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4b7ff-134">示例</span><span class="sxs-lookup"><span data-stu-id="4b7ff-134">Examples</span></span>
 
-### <a name="example-1-update-a-feedback-outcome"></a><span data-ttu-id="393d1-135">示例 1：更新反馈结果</span><span class="sxs-lookup"><span data-stu-id="393d1-135">Example 1: Update a Feedback Outcome</span></span>
+### <a name="example-1-update-a-feedback-outcome"></a><span data-ttu-id="4b7ff-135">示例 1：更新反馈结果</span><span class="sxs-lookup"><span data-stu-id="4b7ff-135">Example 1: Update a Feedback Outcome</span></span>
 
-#### <a name="request"></a><span data-ttu-id="393d1-136">请求</span><span class="sxs-lookup"><span data-stu-id="393d1-136">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4b7ff-136">请求</span><span class="sxs-lookup"><span data-stu-id="4b7ff-136">Request</span></span>
 
-<span data-ttu-id="393d1-137">下面是请求更新反馈结果的示例。</span><span class="sxs-lookup"><span data-stu-id="393d1-137">The following is an example of the request for updating a feedback outcome.</span></span>
+<span data-ttu-id="4b7ff-137">下面是请求更新反馈结果的示例。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-137">The following is an example of the request for updating a feedback outcome.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="393d1-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="393d1-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4b7ff-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="4b7ff-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationfeedbackoutcome"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -84,30 +84,30 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="393d1-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="393d1-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4b7ff-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4b7ff-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationfeedbackoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="393d1-140">C#</span><span class="sxs-lookup"><span data-stu-id="393d1-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4b7ff-140">C#</span><span class="sxs-lookup"><span data-stu-id="4b7ff-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationfeedbackoutcome-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="393d1-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="393d1-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4b7ff-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4b7ff-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationfeedbackoutcome-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="393d1-142">Java</span><span class="sxs-lookup"><span data-stu-id="393d1-142">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4b7ff-142">Java</span><span class="sxs-lookup"><span data-stu-id="4b7ff-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationfeedbackoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="393d1-143">响应</span><span class="sxs-lookup"><span data-stu-id="393d1-143">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4b7ff-143">响应</span><span class="sxs-lookup"><span data-stu-id="4b7ff-143">Response</span></span>
 
-<span data-ttu-id="393d1-144">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="393d1-144">The following is an example of the response.</span></span>
+<span data-ttu-id="4b7ff-144">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-144">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="393d1-145">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="393d1-145">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="4b7ff-145">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-145">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -142,20 +142,20 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-points-outcome"></a><span data-ttu-id="393d1-146">示例 2：更新点结果</span><span class="sxs-lookup"><span data-stu-id="393d1-146">Example 2: Update a Points Outcome</span></span>
+### <a name="example-2-update-a-points-outcome"></a><span data-ttu-id="4b7ff-146">示例 2：更新点结果</span><span class="sxs-lookup"><span data-stu-id="4b7ff-146">Example 2: Update a Points Outcome</span></span>
 
-#### <a name="request"></a><span data-ttu-id="393d1-147">请求</span><span class="sxs-lookup"><span data-stu-id="393d1-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4b7ff-147">请求</span><span class="sxs-lookup"><span data-stu-id="4b7ff-147">Request</span></span>
 
-<span data-ttu-id="393d1-148">下面是请求更新点结果的示例。</span><span class="sxs-lookup"><span data-stu-id="393d1-148">The following is an example of the request for updating a points outcome.</span></span>
+<span data-ttu-id="4b7ff-148">下面是请求更新点结果的示例。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-148">The following is an example of the request for updating a points outcome.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="393d1-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="393d1-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4b7ff-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="4b7ff-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationpointsoutcome"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -166,30 +166,30 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="393d1-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="393d1-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4b7ff-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4b7ff-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationpointsoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="393d1-151">C#</span><span class="sxs-lookup"><span data-stu-id="393d1-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4b7ff-151">C#</span><span class="sxs-lookup"><span data-stu-id="4b7ff-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationpointsoutcome-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="393d1-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="393d1-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4b7ff-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4b7ff-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationpointsoutcome-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="393d1-153">Java</span><span class="sxs-lookup"><span data-stu-id="393d1-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4b7ff-153">Java</span><span class="sxs-lookup"><span data-stu-id="4b7ff-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationpointsoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="393d1-154">响应</span><span class="sxs-lookup"><span data-stu-id="393d1-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4b7ff-154">响应</span><span class="sxs-lookup"><span data-stu-id="4b7ff-154">Response</span></span>
 
-<span data-ttu-id="393d1-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="393d1-155">The following is an example of the response.</span></span>
+<span data-ttu-id="4b7ff-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-155">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="393d1-156">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="393d1-156">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="4b7ff-156">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-156">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -221,20 +221,20 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-update-a-rubric-outcome"></a><span data-ttu-id="393d1-157">示例 3：更新评估结果</span><span class="sxs-lookup"><span data-stu-id="393d1-157">Example 3: Update a Rubric Outcome</span></span>
+### <a name="example-3-update-a-rubric-outcome"></a><span data-ttu-id="4b7ff-157">示例 3：更新评估结果</span><span class="sxs-lookup"><span data-stu-id="4b7ff-157">Example 3: Update a Rubric Outcome</span></span>
 
-#### <a name="request"></a><span data-ttu-id="393d1-158">请求</span><span class="sxs-lookup"><span data-stu-id="393d1-158">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4b7ff-158">请求</span><span class="sxs-lookup"><span data-stu-id="4b7ff-158">Request</span></span>
 
-<span data-ttu-id="393d1-159">下面是一个请求更新评估结果的示例。</span><span class="sxs-lookup"><span data-stu-id="393d1-159">The following is an example of the request for updating a rubric outcome.</span></span>
+<span data-ttu-id="4b7ff-159">下面是一个请求更新评估结果的示例。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-159">The following is an example of the request for updating a rubric outcome.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="393d1-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="393d1-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4b7ff-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="4b7ff-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationoutcome"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -267,30 +267,30 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="393d1-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="393d1-161">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4b7ff-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4b7ff-161">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="393d1-162">C#</span><span class="sxs-lookup"><span data-stu-id="393d1-162">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4b7ff-162">C#</span><span class="sxs-lookup"><span data-stu-id="4b7ff-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationoutcome-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="393d1-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="393d1-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4b7ff-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4b7ff-163">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationoutcome-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="393d1-164">Java</span><span class="sxs-lookup"><span data-stu-id="393d1-164">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4b7ff-164">Java</span><span class="sxs-lookup"><span data-stu-id="4b7ff-164">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="393d1-165">响应</span><span class="sxs-lookup"><span data-stu-id="393d1-165">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4b7ff-165">响应</span><span class="sxs-lookup"><span data-stu-id="4b7ff-165">Response</span></span>
 
-<span data-ttu-id="393d1-166">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="393d1-166">The following is an example of the response.</span></span>
+<span data-ttu-id="4b7ff-166">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-166">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="393d1-167">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="393d1-167">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="4b7ff-167">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4b7ff-167">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
