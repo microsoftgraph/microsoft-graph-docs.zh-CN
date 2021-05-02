@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d10ffe883b316449a0b0fb58d57dd018e4e395ca
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ad469a68a2dabd31d4f6c1b7ea52dd188f9e10b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958171"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055776"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -53,13 +53,13 @@ PATCH /servicePrincipals/{id}
 |appRoles|[appRole](../resources/approle.md) 集合|关联应用程序公开的应用程序角色。 有关详细信息，请参阅 [应用程序](../resources/application.md)资源上的 **appRoles** 属性定义。 不可为空。 |
 |displayName|String|服务主体的显示名称。|
 |homepage|String|应用程序的主页或登录页面。|
-|keyCredentials|[keyCredential](../resources/keycredential.md) 集合|与服务帐户关联的密钥凭据集合。 不可为空。            |
+|keyCredentials|[keyCredential](../resources/keycredential.md) 集合|与服务主题关联的密钥凭据集合。不可为 null。            |
 |logoutUrl|String| 指定 Microsoft 授权服务使用[正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。|
 |oauth2PermissionScopes|[permissionScope](../resources/permissionScope.md) 集合|关联应用程序公开的 OAuth 2.0 权限范围。 有关详细信息，请参阅 [应用程序](../resources/application.md)资源上的 **oauth2PermissionScopes** 属性定义。 不可为空。|
 |preferredSingleSignOnMode|string|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选单一登录模式从 Microsoft 365 或Azure AD My Apps 启动应用程序。 支持的值是：`password`、`saml`、`external` 和 `oidc`。|
-|replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。 不可为空。 |
-|servicePrincipalNames|字符串集合|包含从关联的 [应用程序](../resources/application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>请求对此资源的权限的客户端应用可以使用这些 URI 在其应用程序清单的 **requiredResourceAccess** 属性中或在应用注册体验的“API 权限”边栏选项卡中指定所需的权限。</li><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>需要多值属性筛选器表达式的 any 运算符。 不可为空。|
-|标记|String 集合| 可用于分类和标识应用程序的自定义字符串。 不可为空。 |
+|replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 授权代码和访问令牌的重定向 URI。不可为 null。 |
+|servicePrincipalNames|字符串集合|包含从关联的 [应用程序](../resources/application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>请求对此资源的权限的客户端应用可以使用这些 URI 在其应用程序清单的 **requiredResourceAccess** 属性中或在应用注册体验的“API 权限”边栏选项卡中指定所需的权限。</li><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>多值属性上的筛选器表达式需要 any 运算符。不可为 NULL。|
+|tags|字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。 |
 | tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 
 ## <a name="response"></a>响应
@@ -104,7 +104,7 @@ Content-length: 391
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：可能缩短此处显示的响应对象以提高可读性。
 <!-- {
   "blockType": "response",
   "truncated": true,

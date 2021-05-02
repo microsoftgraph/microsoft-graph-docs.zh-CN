@@ -5,18 +5,18 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aba156ec5b47ea69e18ff14e4109cfe1b6c24cf9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 25ead575d867324d9090293f7bf26cd9feaa5296
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434361"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050463"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
 命名空间：microsoft.graph
 
-将用户或服务主体添加到组的所有者。 所有者是一组可修改组对象的用户或服务主体。
+向组所有者添加用户或服务主题。所有者是一组具有组对象修改权限的用户或服务主体。
 
 >**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。 此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。 
 
@@ -86,7 +86,7 @@ Content-length: 30
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5f881fd1ee3fd8a80f306c27b37cd4be782598fc
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 732904ae00f35944175b491e879f439dbec883c8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722375"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055706"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -97,7 +97,7 @@ GET /users/delta
 添加可选请求标头 - `prefer:return=minimal` - 将导致出现以下行为：
 
 - 如果属性已更改，则新值将包括在响应中。 这包括设为 Null 值的属性。
-- 如果属性未更改，则该属性不会包括在响应中。 （不同于默认行为。）
+- 如果尚未更改属性，则该属性不会包括在响应中。（不同于默认行为。）
 
 > **注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。 标头仅影响响应中包含的属性集，它不会影响执行 Delta 查询的方式。 请参阅[示例 3](#example-3-alternative-minimal-response-behavior)。
 
@@ -141,7 +141,7 @@ GET https://graph.microsoft.com/v1.0/users/delta
 
 以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

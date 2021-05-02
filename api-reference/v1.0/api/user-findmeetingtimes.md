@@ -5,12 +5,12 @@ localization_priority: Priority
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f17661dd3f65266633413cf9dcbcb76ecd37e861
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 84ac1635e91d7b1dc38e35acc2fb07e43713446b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475546"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055692"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -192,7 +192,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+这是一个示例响应。注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

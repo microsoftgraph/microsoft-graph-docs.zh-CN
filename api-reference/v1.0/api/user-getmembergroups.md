@@ -1,16 +1,16 @@
 ---
 title: 'user: getMemberGroups'
-description: 返回用户是其成员的所有组。 检查是可传递的，这不同于读取
+description: 返回用户是其成员的所有组。检查是可传递的，不同于读取
 localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8ebbbe1aeca0e20af40b19cf72ef1baa4ce0689d
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: a28a32ce1af781ea2d6eb05e18240067562c179a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870042"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055678"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -102,7 +102,7 @@ Content-length: 33
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：可能缩短此处显示的响应对象以提高可读性。
 
 <!-- {
   "blockType": "response",
