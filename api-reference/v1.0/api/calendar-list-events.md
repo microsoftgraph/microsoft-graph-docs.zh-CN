@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 62c550a41e6b728c2e5e3e0737ccd807d187f8ce
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 33bdadb28129183972f8fb6f7ee051708a3f2e55
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434886"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054600"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}。必需。  |
-| Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
+| Prefer: outlook.timezone  | string | 使用此项指定响应中开始时间和结束时间的时区。如果未指定，则这些时间值采用 UTC 时区格式返回。可选。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：可能缩短此处显示的响应对象以提高可读性。
 <!-- {
   "blockType": "response",
   "truncated": true,

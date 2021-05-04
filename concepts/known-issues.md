@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 856100b87a1e776a4983f75f4bd35158f0745cfd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 20d9d3cb70ad1ea8a4b5647f683bbb01dcfb3e4c
+ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054250"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100063"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -184,6 +184,12 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * 跟踪关系更改时，OData 上下文有时无法正确返回。
 * 架构扩展（旧版）未使用 $select 语句返回，而是在无 $select 的情况下返回。
 * 客户端无法跟踪开放扩展或已注册的架构扩展的更改。
+
+## <a name="devices-and-apps--device-updates-windows-updates"></a>设备和应用|设备更新（Windows 更新）
+
+### <a name="making-a-request-for-the-first-time"></a>首次提出请求
+
+首次调用 Windows 个更新 API 时，可能会收到 `401 Unauthorized` 答复。 如果应用的服务主体在租户中尚不存在，并且需要时间来完成配置，则会发生此错误。 请在大约 24 小时后再试。
 
 ## <a name="extensions"></a>扩展
 

@@ -198,6 +198,25 @@ items:
           - name: 公司管理
             href: intune-concept-overview.md
             displayName: Intune
+          - name: 设备更新（预览）
+            displayName: Windows updates
+            items:
+              - name: 概述
+                href: windowsupdates-concept-overview.md
+              - name: 软件更新
+                href: windowsupdates-software-updates.md
+              - name: 部署
+                href: windowsupdates-deployments.md
+              - name: 注册管理
+                href: windowsupdates-enroll.md
+              - name: 部署功能更新
+                href: windowsupdates-deploy-update.md
+              - name: 部署加速更新
+                href: windowsupdates-deploy-expedited-update.md
+              - name: 安排部署
+                href: windowsupdates-schedule-deployment.md
+              - name: 管理监视规则
+                href: windowsupdates-manage-monitoring-rules.md
       - name: 教育
         items:
           - name: 概述
@@ -225,7 +244,7 @@ items:
             items:
               - name: 管理资源访问权限
                 href: tutorial-access-package-api.md
-              - name: 查看对组的访问权限
+              - name: 查看资源访问权限
                 items:
                   - name: Access 审阅 API 概述
                     href: accessreviews-overview.md
@@ -349,6 +368,8 @@ items:
                 href: search-concept-sort.md
               - name: 改进搜索结果（预览）
                 href: search-concept-aggregation.md
+              - name: 请求拼写更正（预览）
+                href: search-concept-speller.md
           - name: 索引（预览）
             items:
               - name: 管理连接

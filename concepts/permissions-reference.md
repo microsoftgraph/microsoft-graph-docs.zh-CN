@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 848510f113767ec9e9530cf82b30dfff9e836711
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: d0b44fd3737405e4bac72dd2d9b9fbe48e0ec3d6
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067206"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080580"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -107,6 +107,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 | _AccessReview.Read.All_ |   读取所有访问评审  | 允许应用代表已登录的用户读取访问评审。 | 是 | 否 |
 | _AccessReview.ReadWrite.All_ |   管理所有访问评审  | 允许应用代表已登录的用户读取和写入访问评审。 | 是 | 否 |
 | _AccessReview.ReadWrite.Membership_ |   管理组和应用成员身份的访问评审 | 允许应用代表已登录的用户读取和写入组和应用的访问评审。 | 是 | 否 |
+| _Policy.ReadWrite.AccessReviews_ |   管理所有访问评审策略  | 允许应用代表已登录用户读取和写入访问评审策略。 | 是 | 否 |
 
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -115,11 +116,12 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   读取所有访问评审 | 允许应用在没有登录的用户的情况下读取访问评审。 | 是 |
 | _AccessReview.ReadWrite.Membership_ | 管理组和应用成员身份的访问评审 | 允许应用在没有已登录用户的情况下管理组和应用的访问评审。 | 是 |
+| _Policy.ReadWrite.AccessReviews_ |   管理所有访问评审策略  | 允许应用在无登录用户的情况下读取和写入访问评审策略。 | 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>备注
 
-_AccessReview.Read.All_、_AccessReview.ReadWrite.All_ 和 _AccessReview.ReadWrite.Membership_ 仅对于工作或学校帐户有效。
+_AccessReview.Read.All_、_AccessReview.ReadWrite.All_、_AccessReview.ReadWrite.Membership_、_Policy.ReadWrite.AccessReviews_ 仅对工作或学校帐户有效。
 
 对于通过委派权限读取组或应用的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。 对于通过委派权限读取组或应用的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员或用户管理员。
 
@@ -1438,7 +1440,7 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read.All_ | 读取所有用户的相关人员列表 | 允许应用读取登录用户或登录用户组织中的其他用户的相关人员得分列表。 <br/><br/>该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。 此外，还允许应用搜索登录用户组织的整个目录。 | 是 |
+| _People.Read.All_ | 读取所有用户的相关人员列表 | 允许应用读取登录用户或登录用户组织中的其他用户的相关人员得分列表。 <br/><br/>该列表可以包括本地联系人、社交网络或组织目录的联系人以及来自最近通信（如电子邮件和 Skype）的人员。还允许应用搜索登录用户组织的整个目录。 | 是 |
 
 ### <a name="remarks"></a>备注
 

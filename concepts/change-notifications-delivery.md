@@ -4,16 +4,16 @@ description: 更改通知可以通过不同的技术来传送，包括 Webhook �
 author: Jumaodhiss
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 3be156e2d83cfe820c26482fcc87179b42d8142d
-ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
+ms.openlocfilehash: aee486325f13f009fd7f7db09e4bc69553bc85dd
+ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51594873"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100084"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>以不同方式接收更改通知
 
-可通过不同方式向订阅者传送更改通知。 如果更改通知的主要传送模式是 Webhook，则对于高吞吐量场景或当接收方无法公开公用的通知 URL 时，利用 Webhooks 可能很困难。  
+可通过不同方式向订阅者传送更改通知。如果更改通知的主要传送模式是 Webhook，则对于高吞吐量场景或当接收方无法公开公用的通知 URL 时，利用 Webhooks 可能很困难。  
 
 此更改通知传递模式可用于支持 Microsoft Graph 更改通知的所有资源。
 
@@ -21,7 +21,7 @@ ms.locfileid: "51594873"
 
 ## <a name="using-azure-event-hubs-to-receive-change-notifications"></a>使用 Azure 事件中心接收更改通知
 
-[Azure 事件中心](https://azure.microsoft.com/services/event-hubs)是专为大规模部署而构建的常用实时事件引入和分发服务。 你可以使用 Azure 事件中心而不是传统 Webhook 来接收更改通知。 此功能目前处于预览阶段。  
+[Azure 事件中心](https://azure.microsoft.com/services/event-hubs)是专为大规模部署而构建的常用实时事件引入和分发服务。 你可以使用 Azure 事件中心而不是传统 Webhook 来接收更改通知。  
 使用 Azure 事件中心接收更改通知与 Webhook 在某些方面有所不同，包括：
 
 - 不依赖公开显示的通知 URL。 事件中心 SDK 会将通知转发到你的应用程序。

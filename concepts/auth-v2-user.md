@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2ea70d1f18eaf48b8889f924d7306d186d99c6a7
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: dfa698c43a9870f4f3c1521dd565404b319d0f6f
+ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882549"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100091"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
@@ -33,7 +33,7 @@ ms.locfileid: "51882549"
 若要配置应用以使用 OAuth 2.0 授权代码授予流程，将需要在注册应用时保存下列值：
 
 - 应用注册门户分配的应用程序（客户端）ID。
-- 客户端（应用程序）密码，它是一个密码或是一个公钥/私钥对（证书）。 这不是本机应用的必需项。
+- 客户端（应用）密码，可以是密码，也可以是公钥/私钥对（证书）。对于本机应用，这不是必需的。
 - 可让应用接收来自 Azure AD 的响应的重定向 URL（或回复 URL）。
 
 要分步了解如何在 Azure 门户中配置应用，请参阅[注册应用](./auth-register-app-v2.md)。
@@ -269,7 +269,7 @@ Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终
 
 - 应用将需要为每个平台提供不同的应用程序 ID（客户端 ID）。
 - 如果应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中通过显式方式将其配置为多租户。
-- 应用必需的所有权限都必须由开发人员进行配置。 Azure AD 终结点不支持动态（增量）同意。
+- 应用需要的所有权限必须由开发人员进行配置。Azure AD 终结点不支持动态（增量）同意。
 - Azure AD 终结点使用授权中的 `resource` 参数和令牌请求，指定其需要权限的资源（如 Microsoft Graph）。终结点不支持 `scope` 参数。
 - Azure AD 终结点不会公开管理员同意的特定终结点。反之，应用会使用授权请求中的 `prompt=admin_consent` 参数，为组织获取管理员同意。有关详细信息，请参阅 [将应用程序与 Azure Active Directory 相集成](/azure/active-directory/develop/active-directory-integrating-applications)中的 **在运行时引发 Azure AD 同意框架**。
 
@@ -280,4 +280,4 @@ Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终
 
 ## <a name="see-also"></a>另请参阅
 
-有关 Azure 应用服务上托管的 Web 应用调用 Microsoft Graph 作为应用程序（使用托管标识）的示例，请参阅[教程：从安全应用访问作为应用的 Microsoft Graph](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app)。 本教程介绍如何在 web 应用上创建系统分配的托管标识、向托管标识添加 Microsoft Graph API 权限以及调用 Microsoft Graph。
+有关 Azure 应用服务上托管的 Web 应用调用 Microsoft Graph 作为用户的示例，请参阅[教程：从安全应用访问作为用户的 Microsoft Graph](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user)。 了解如何向 Web 应用授予委派权限、配置应用服务以获取访问令牌，以及如何从 Web 应用为登录用户调用 Microsoft Graph。
