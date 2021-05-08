@@ -5,30 +5,32 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: f486066b150ccd0321f23f47089aab67d87e9f7e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3e100c1b86c8d299a7d74431715a6e9ef1464393
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950294"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231974"
 ---
-# <a name="statusbase-resource-type"></a><span data-ttu-id="c24fe-103">statusBase 资源类型</span><span class="sxs-lookup"><span data-stu-id="c24fe-103">statusBase resource type</span></span>
+# <a name="statusbase-resource-type-deprecated"></a><span data-ttu-id="7a146-103">statusBase 资源类型 (已弃) </span><span class="sxs-lookup"><span data-stu-id="7a146-103">statusBase resource type (deprecated)</span></span>
 
-<span data-ttu-id="c24fe-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c24fe-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7a146-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7a146-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION] 
+> <span data-ttu-id="7a146-105">statusBase API 已弃用，并将于 2021 年 12 月 31 日停止返回数据。</span><span class="sxs-lookup"><span data-stu-id="7a146-105">The statusBase API is deprecated and will stop returning data om December 31, 2021.</span></span> <span data-ttu-id="7a146-106">请使用新的 [provisioningStatusInfo](provisioningstatusinfo.md) 类型。</span><span class="sxs-lookup"><span data-stu-id="7a146-106">Please use the new [provisioningStatusInfo](provisioningstatusinfo.md) type.</span></span>
 
-<span data-ttu-id="c24fe-105">描述预配摘要事件的状态。</span><span class="sxs-lookup"><span data-stu-id="c24fe-105">Describes the status of the provisioning summary event.</span></span> 
+<span data-ttu-id="7a146-107">描述预配摘要事件的状态。</span><span class="sxs-lookup"><span data-stu-id="7a146-107">Describes the status of the provisioning summary event.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="c24fe-106">属性</span><span class="sxs-lookup"><span data-stu-id="c24fe-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7a146-108">属性</span><span class="sxs-lookup"><span data-stu-id="7a146-108">Properties</span></span>
 
-| <span data-ttu-id="c24fe-107">属性</span><span class="sxs-lookup"><span data-stu-id="c24fe-107">Property</span></span>     | <span data-ttu-id="c24fe-108">类型</span><span class="sxs-lookup"><span data-stu-id="c24fe-108">Type</span></span>        | <span data-ttu-id="c24fe-109">说明</span><span class="sxs-lookup"><span data-stu-id="c24fe-109">Description</span></span> |
+| <span data-ttu-id="7a146-109">属性</span><span class="sxs-lookup"><span data-stu-id="7a146-109">Property</span></span>     | <span data-ttu-id="7a146-110">类型</span><span class="sxs-lookup"><span data-stu-id="7a146-110">Type</span></span>        | <span data-ttu-id="7a146-111">说明</span><span class="sxs-lookup"><span data-stu-id="7a146-111">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="c24fe-110">状态</span><span class="sxs-lookup"><span data-stu-id="c24fe-110">status</span></span>|<span data-ttu-id="c24fe-111">provisioningResult</span><span class="sxs-lookup"><span data-stu-id="c24fe-111">provisioningResult</span></span>| <span data-ttu-id="c24fe-112">可取值为：`success`、`warning`、`failure`、`skipped`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="c24fe-112">Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="7a146-112">状态</span><span class="sxs-lookup"><span data-stu-id="7a146-112">status</span></span>|<span data-ttu-id="7a146-113">provisioningResult</span><span class="sxs-lookup"><span data-stu-id="7a146-113">provisioningResult</span></span>| <span data-ttu-id="7a146-114">可取值为：`success`、`warning`、`failure`、`skipped`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="7a146-114">Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c24fe-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c24fe-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7a146-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7a146-115">JSON representation</span></span>
 
-<span data-ttu-id="c24fe-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c24fe-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7a146-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7a146-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

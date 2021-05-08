@@ -364,7 +364,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 笔记
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1568,7 +1568,7 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: 将标记作为层次结构列出
                     href: api/ediscovery-tag-ashierarchy.md
-              - name: 创建审阅集查询
+              - name: 审阅集查询
                 href: resources/ediscovery-reviewsetquery.md
                 items:
                   - name: 列出
@@ -1617,7 +1617,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
-      - name: 客户预订（预览）
+      - name: 客户预订（预览版）
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: 概述
@@ -1823,7 +1823,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -9482,7 +9482,7 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Assign
                     href: api/cloudpcprovisioningpolicy-assign.md
-          - name: '设备更新 (预览) '
+          - name: 设备更新（预览）
             displayName: Windows updates
             items:
               - name: 更新
@@ -11174,7 +11174,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -11227,6 +11227,17 @@ items:
                         href: api/accessreviewpolicy-get.md
                       - name: 更新
                         href: api/accessreviewpolicy-update.md
+                  - name: 访问评审历史记录定义
+                    href: resources/accessreviewhistorydefinition.md
+                    items:
+                      - name: 获取
+                        href: api/accessreviewhistorydefinition-get.md
+                      - name: 列出
+                        href: api/accessreviewhistorydefinition-list.md
+                      - name: 创建
+                        href: api/accessreviewhistorydefinition-create.md
+                      - name: 生成下载 URI
+                        href: api/accessreviewhistorydefinition-generatedownloaduri.md
               - name: '旧版 (访问) '
                 href: resources/accessreviews-root.md
                 items:
@@ -12021,7 +12032,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 笔记
+              - name: 注释
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -12992,7 +13003,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划

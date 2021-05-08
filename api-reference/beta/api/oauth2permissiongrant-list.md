@@ -5,32 +5,35 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a432a863cad767486083ee9de333af58d2311839
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3e42b422a358a0fc513a2b11014e74f91432ecfc
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038290"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231932"
 ---
-# <a name="list-oauth2permissiongrants"></a><span data-ttu-id="238ae-103">List oauth2PermissionGrants</span><span class="sxs-lookup"><span data-stu-id="238ae-103">List oauth2PermissionGrants</span></span>
+# <a name="list-oauth2permissiongrants"></a><span data-ttu-id="ccf5d-103">List oauth2PermissionGrants</span><span class="sxs-lookup"><span data-stu-id="ccf5d-103">List oauth2PermissionGrants</span></span>
 
-<span data-ttu-id="238ae-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="238ae-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ccf5d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ccf5d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="238ae-105">检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象代表已授予客户端应用程序代表登录用户访问 API 的委派权限。</span><span class="sxs-lookup"><span data-stu-id="238ae-105">Retrieve a list of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects, representing delegated permissions which have been granted for client applications to access APIs on behalf of signed-in users.</span></span>
+<span data-ttu-id="ccf5d-105">检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象代表已授予客户端应用程序代表登录用户访问 API 的委派权限。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-105">Retrieve a list of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects, representing delegated permissions which have been granted for client applications to access APIs on behalf of signed-in users.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="238ae-106">权限</span><span class="sxs-lookup"><span data-stu-id="238ae-106">Permissions</span></span>
+> [!NOTE]
+> <span data-ttu-id="ccf5d-106">此请求可能有最近创建、更新或删除的委派权限授予的复制延迟。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-106">This request might have replication delays for delegated permission grants that were recently created, updated, or deleted.</span></span> <span data-ttu-id="ccf5d-107">如果指定了筛选，此延迟 `clientId` 将最小化。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-107">This delay will be minimized if a filter on `clientId` is specified.</span></span>
 
-<span data-ttu-id="238ae-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="238ae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ccf5d-108">权限</span><span class="sxs-lookup"><span data-stu-id="ccf5d-108">Permissions</span></span>
 
-|<span data-ttu-id="238ae-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="238ae-109">Permission type</span></span>      | <span data-ttu-id="238ae-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="238ae-110">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="ccf5d-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="ccf5d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="ccf5d-111">Permission type</span></span>      | <span data-ttu-id="ccf5d-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ccf5d-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="238ae-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="238ae-111">Delegated (work or school account)</span></span> | <span data-ttu-id="238ae-112">Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="238ae-112">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="238ae-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="238ae-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="238ae-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="238ae-114">Not supported.</span></span>    |
-|<span data-ttu-id="238ae-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="238ae-115">Application</span></span> | <span data-ttu-id="238ae-116">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="238ae-116">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="ccf5d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ccf5d-113">Delegated (work or school account)</span></span> | <span data-ttu-id="ccf5d-114">Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ccf5d-114">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="ccf5d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ccf5d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ccf5d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-116">Not supported.</span></span>    |
+|<span data-ttu-id="ccf5d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="ccf5d-117">Application</span></span> | <span data-ttu-id="ccf5d-118">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ccf5d-118">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="238ae-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="238ae-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ccf5d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ccf5d-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,29 +41,29 @@ ms.locfileid: "52038290"
 GET /oauth2PermissionGrants
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="238ae-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="238ae-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ccf5d-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ccf5d-120">Optional query parameters</span></span>
 
-<span data-ttu-id="238ae-119">此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="238ae-119">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="ccf5d-121">此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-121">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="238ae-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="238ae-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ccf5d-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="ccf5d-122">Request headers</span></span>
 
-| <span data-ttu-id="238ae-121">名称</span><span class="sxs-lookup"><span data-stu-id="238ae-121">Name</span></span> | <span data-ttu-id="238ae-122">说明</span><span class="sxs-lookup"><span data-stu-id="238ae-122">Description</span></span> |
+| <span data-ttu-id="ccf5d-123">名称</span><span class="sxs-lookup"><span data-stu-id="ccf5d-123">Name</span></span> | <span data-ttu-id="ccf5d-124">说明</span><span class="sxs-lookup"><span data-stu-id="ccf5d-124">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="238ae-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="238ae-123">Authorization</span></span>  | <span data-ttu-id="238ae-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="238ae-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ccf5d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="ccf5d-125">Authorization</span></span>  | <span data-ttu-id="ccf5d-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="238ae-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="238ae-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ccf5d-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="ccf5d-128">Request body</span></span>
 
-<span data-ttu-id="238ae-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="238ae-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ccf5d-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="238ae-128">响应</span><span class="sxs-lookup"><span data-stu-id="238ae-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ccf5d-130">响应</span><span class="sxs-lookup"><span data-stu-id="ccf5d-130">Response</span></span>
 
-<span data-ttu-id="238ae-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="238ae-129">If successful, this method returns a `200 OK` response code and collection of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.</span></span>
+<span data-ttu-id="ccf5d-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-131">If successful, this method returns a `200 OK` response code and collection of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="238ae-130">示例</span><span class="sxs-lookup"><span data-stu-id="238ae-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ccf5d-132">示例</span><span class="sxs-lookup"><span data-stu-id="ccf5d-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="238ae-131">请求</span><span class="sxs-lookup"><span data-stu-id="238ae-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ccf5d-133">请求</span><span class="sxs-lookup"><span data-stu-id="ccf5d-133">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="238ae-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="238ae-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ccf5d-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="ccf5d-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_oauth2permissiongrants"
@@ -69,28 +72,28 @@ GET /oauth2PermissionGrants
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 ```
-# <a name="c"></a>[<span data-ttu-id="238ae-133">C#</span><span class="sxs-lookup"><span data-stu-id="238ae-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ccf5d-135">C#</span><span class="sxs-lookup"><span data-stu-id="ccf5d-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-oauth2permissiongrants-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="238ae-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="238ae-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ccf5d-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ccf5d-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-oauth2permissiongrants-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="238ae-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="238ae-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ccf5d-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ccf5d-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-oauth2permissiongrants-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="238ae-136">Java</span><span class="sxs-lookup"><span data-stu-id="238ae-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ccf5d-138">Java</span><span class="sxs-lookup"><span data-stu-id="ccf5d-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="238ae-137">响应</span><span class="sxs-lookup"><span data-stu-id="238ae-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ccf5d-139">响应</span><span class="sxs-lookup"><span data-stu-id="ccf5d-139">Response</span></span>
 
-> <span data-ttu-id="238ae-138">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="238ae-138">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="ccf5d-140">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="ccf5d-140">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
