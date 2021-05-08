@@ -3,18 +3,21 @@ title: Microsoft Graph Toolkit缓存
 description: 解释缓存的工作原理以及如何配置提供给开发人员的选项
 localization_priority: Normal
 author: adchau
-ms.openlocfilehash: f51b4f188fe8ec70f75a50e1d9de049459c97e14
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: cef5c06c39ebad58e6a39f094427dea6a1b1be25
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658704"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266618"
 ---
 # <a name="microsoft-graph-toolkit-caching"></a>Microsoft Graph Toolkit缓存
 
-Microsoft Graph Toolkit支持缓存选择 Microsoft Graph API 调用。 目前，对用户、人员、联系人和照片终结点的调用默认缓存在三个 IndexedDB 存储中。
+Microsoft Graph Toolkit支持缓存选择 Microsoft Graph API 调用。 呼叫按实体（如人员、联系人、照片）进行缓存。 这允许一个组件检索数据和其他组件以重复使用它，而无需调用 Microsoft Graph。
 
-您可以在开发人员面板上查看缓存。 在 **"应用程序"****选项卡上的"** 存储"窗格中，转到 **"IndexedDB"** 选项卡。
+> [!TIP]
+> 有关每个组件缓存哪些实体的信息，请参阅组件的文档。
+
+由 mgt 创建的用于缓存的数据库的前缀为 `mgt-` 。 每个实体的数据都存储在单独的对象存储中。 若要检查缓存，请使用开发人员面板中的"应用程序"选项卡 (F12 工具) - 在"存储"部分下，单击 **"IndexedDB"** 选项卡。 
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
@@ -46,16 +49,20 @@ let config = {
     invalidationPeriod: number,
     isEnabled: boolean
   },
+  response: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  }
 };
 ```
 
-在 config 对象中，单个缓存无效时段默认为 `null` `defaultInvalidationPeriod` 3，600，000 毫秒，默认值为 60 (60 分钟) 。 传入的任何值 `config.x.invalidationPeriod` 都将替代 `defaultInvalidationPeriod` 。
+在 config 对象中，单个缓存无效时段默认为 ，默认为 60 分钟内的常规值 `null` `defaultInvalidationPeriod` 3，600，000 ms (60 分钟) 。 传入的任何值 `config.x.invalidationPeriod` 都将替代 `defaultInvalidationPeriod` 。
 
 状态存储是唯一的例外，其默认值为 300000 毫秒（即 5 分钟）。
 
 ### <a name="examples"></a>示例
 
-若要单独禁用存储，只需将存储中的配置属性的值设置为 `isEnabled` false：
+若要单独禁用存储，只需将存储的 config 属性的值设置为 `isEnabled` false：
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
 
@@ -63,7 +70,7 @@ CacheService.config.users.isEnabled = false;
 ```
 禁用缓存不会 **清除** 缓存。
 
-更改验证期类似：
+更改 invalditation 时间段类似：
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
@@ -75,7 +82,7 @@ CacheService.config.users.invalidationPeriod = 1800000;
 
 当用户退出时，将自动清除缓存。也可以手动清除它。
 
-清除缓存中所有存储时，类的方法将清除 CacheService 维护的所有 `clearCaches()` `CacheService` 存储。
+如果清除缓存中所有的存储，类的 方法将清除 CacheService 维护的所有 `clearCaches()` `CacheService` 存储。
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
@@ -85,14 +92,14 @@ CacheService.clearCaches();
 
 ## <a name="creating-your-own-cache-stores"></a>创建自己的缓存存储
 
-如果要为自定义组件创建和填充自己的缓存存储，可以使用 `CacheService` 静态类。
+如果要为自定义组件创建和填充自己的缓存存储，可以使用静态 `CacheService` 类。
 
 ```JavaScript
 CacheService.getCache(schema: CacheSchema, storeName: String);
 ```
-> **注意：** 调用 `storeName` 中引用的项 `getCache()` 必须与对象中列出的存储之一 `CacheSchema` 匹配。
+> **注意：** 调用 `storeName` 中引用的 必须与 `getCache()` 对象中列出的存储之一 `CacheSchema` 匹配。
 
-该对象 `CacheSchema` 是键/值对的字典。
+对象 `CacheSchema` 是键/值对的字典。
 
 ```TypeScript
 import { CacheSchema } from '@microsoft/mgt';

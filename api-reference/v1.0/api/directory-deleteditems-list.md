@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 88c13a7fade62f3eecaa8bc48001dfb265823cad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 51e74ec0dc6eee9fa21ef7b7843f088c378cfb31
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053193"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241070"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -76,36 +76,17 @@ GET /directory/deletedItems/microsoft.graph.user
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_deleteditems"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-deleteditems-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-deleteditems-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-deleteditems-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

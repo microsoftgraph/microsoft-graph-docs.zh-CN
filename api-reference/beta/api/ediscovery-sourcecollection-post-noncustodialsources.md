@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 399d20f5bc046d141e8652001fe964460c2b414c
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 0d9735e9d20ab6428e9ba8c539fa1f5771c2b8c7
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080733"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52266908"
 ---
 # <a name="add-noncustodialdatasource"></a>添加 noncustodialDataSource
 
@@ -66,6 +66,8 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_noncustodialdatasource_from_"
@@ -81,6 +83,24 @@ Content-length: 206
     "@odata.id": "https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-noncustodialdatasource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-noncustodialdatasource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-noncustodialdatasource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

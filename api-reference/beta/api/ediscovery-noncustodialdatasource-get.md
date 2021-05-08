@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: bed8b42341e6c5f89a879e11c4025019b9a50ddb
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 3f943ad2390becfe50185203b278c731e24faad4
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080727"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240940"
 ---
 # <a name="get-noncustodialdatasource"></a>获取 noncustodialDataSource
 
@@ -63,6 +63,8 @@ GET /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/{noncustodialD
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_noncustodialdatasource"
@@ -72,6 +74,24 @@ GET /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/{noncustodialD
 ``` http
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/noncustodialDataSources/8b69818bf6af4f8a9dede428401c71e7
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-noncustodialdatasource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-noncustodialdatasource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-noncustodialdatasource-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-noncustodialdatasource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

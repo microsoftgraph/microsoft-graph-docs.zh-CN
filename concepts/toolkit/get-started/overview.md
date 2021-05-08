@@ -3,12 +3,12 @@ title: Getting started with the Microsoft Graph Toolkit
 description: 开始在应用程序中Toolkit Microsoft Graph 应用。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 3197542066d92978bf151d61a378e7f392633016
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 15d3e4721ae43146496b1a54ec12bc7906bfda5b
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961420"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266869"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Getting started with the Microsoft Graph Toolkit
 
@@ -18,7 +18,7 @@ Microsoft Graph Toolkit组件可轻松添加到 Web 应用程序、SharePoint We
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
-有关分步教程，请参阅 [Microsot Graph Toolkit入门模块](/learn/modules/msgraph-toolkit-intro/)。 
+有关分步教程，请参阅 Microsoft Graph Toolkit[入门。](/learn/modules/msgraph-toolkit-intro/) 
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>设置 Microsoft 365 租户
 为了使用 Microsoft 365 Toolkit，你需要访问 Microsoft 365 租户。 如果没有，可以通过加入 Microsoft 365 开发人员计划获取免费的 [Microsoft 365 开发人员订阅](https://developer.microsoft.com/microsoft-365/dev-program)。 若要详细了解如何配置订阅，请参阅 [设置 Microsoft 365 开发人员订阅](/office/developer-program/microsoft-365-developer-program-get-started)。

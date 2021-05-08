@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: bf4654f096065538449723d076e0b712ee4cdbf5
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 114c877ddcf75bb483eda039ef9c5d77d02d74f5
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231488"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266876"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 | _AccessReview.Read.All_ |   读取所有访问评审  | 允许应用代表已登录的用户读取访问评审。 | 是 | 否 |
 | _AccessReview.ReadWrite.All_ |   管理所有访问评审  | 允许应用代表已登录的用户读取和写入访问评审。 | 是 | 否 |
 | _AccessReview.ReadWrite.Membership_ |   管理组和应用成员身份的访问评审 | 允许应用代表已登录的用户读取和写入组和应用的访问评审。 | 是 | 否 |
-| _Policy.ReadWrite.AccessReviews_ |   管理所有访问评审策略  | 允许应用代表已登录用户读取和写入访问评审策略。 | 是 | 否 |
+
 
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -116,12 +116,11 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   读取所有访问评审 | 允许应用在没有登录的用户的情况下读取访问评审。 | 是 |
 | _AccessReview.ReadWrite.Membership_ | 管理组和应用成员身份的访问评审 | 允许应用在没有已登录用户的情况下管理组和应用的访问评审。 | 是 |
-| _Policy.ReadWrite.AccessReviews_ |   管理所有访问评审策略  | 允许应用在无登录用户的情况下读取和写入访问评审策略。 | 是 |
 
 
 ### <a name="remarks"></a>备注
 
-_AccessReview.Read.All_、_AccessReview.ReadWrite.All_、_AccessReview.ReadWrite.Membership_、_Policy.ReadWrite.AccessReviews_ 仅对工作或学校帐户有效。
+_AccessReview.Read.All_、_AccessReview.ReadWrite.All_、_AccessReview.ReadWrite.Membership_ 仅对于工作或学校帐户有效。
 
 对于通过委派权限读取组或应用的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。 对于通过委派权限读取组或应用的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员或用户管理员。
 
@@ -1501,6 +1500,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | 阅读你组织的策略 | 允许应用代表已登录用户阅读你组织的策略。 | 是 | 否 |
 | _Policy.Read.PermissionGrant_ | 读取许可和权限授予策略 | 允许此应用代表已登录的用户读取与适用于应用程序的许可和权限授予相关的策略。 | 是 | 否 |
+| _Policy.ReadWrite.AccessReview_ |   读取和写入组织的访问评审策略  | 允许应用代表已登录用户读取和写入你组织的访问评审策略。 | 是 | 否 |
 | _Policy.ReadWrite.ApplicationConfiguration_ | 读取和写入组织的应用程序配置策略 | 允许应用代表已登录用户读取和写入组织的配置策略。 | 是 | 否 |
 | _Policy.ReadWrite.AuthenticationFlows_ | 读取和写入你组织的身份验证流策略 | 允许应用代表已登录用户读取和写入身份验证流策略。 | 是 | 否 |
 | _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 否 |
@@ -1518,6 +1518,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.Read.All_ | 阅读你组织的策略 | 允许应用无需登录的用户即可读取你所在组织的所有策略。 | 是 |
 | _Policy.Read.PermissionGrant_ | 读取许可和权限授予策略 | 允许此应用没有登录用户的情况下读取与适用于应用程序的许可和权限授予相关的策略。 | 是 |
 | _Policy.Read.ApplicationConfiguration_ | 读取组织的应用程序配置策略 | 允许应用在没有已登录用户的情况下读取组织的所有应用程序配置策略。 | 是 |
+| _Policy.ReadWrite.AccessReview_ | 读取和写入组织的访问评审策略 | 允许应用无需登录的用户即可读取和写入你所在组织的访问评审策略。 | 是 | 否 |
 | _Policy.ReadWrite.ApplicationConfiguration_ | 读取和写入组织的应用程序配置策略 | 允许应用在没有已登录用户的情况下读取和写入组织的所有应用程序配置策略。 | 是 | 否 |
 | _Policy.ReadWrite.AuthenticationFlows_ | 读取和写入你组织的身份验证流策略 | 允许应用在没有已登录用户的情况下读取和写入所有租户身份验证流策略。 | 是 |
 | _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 否 |
@@ -1534,6 +1535,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 * _Policy.Read.All_ 读取你所在组织的策略 (`GET /policies`)
 * _Policy.Read.All_ 读取你所在组织的信任框架策略 (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_ 读取你所在组织的功能推出策略 (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.AccessReview_：读取和写入组织的访问评审策略 (`PATCH /beta/policies/accessReviewPolicy`)
 * _Policy.ReadWrite.ApplicationConfiguration_：读取和写入组织的应用程序配置策略 (`POST /beta/policies/tokenLifetimePolicies`)
 * _Policy.ReadWrite.AuthenticationFlows_：读取和写入你组织的身份验证流策略 (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.ConditionalAccess_：读取和写入你组织的条件访问策略 (`POST /beta/identity/conditionalAccess/policies`)
@@ -1632,7 +1634,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 |:----------------|:------------------|:-------------|:-----------------------|
 | _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据 | 允许应用在没有登录用户的情况下读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 |
 | _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 |
-| _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据 | 允许应用在没有已登录用户的情况下读取并管理公司目录的基于角色的访问控制 (RBAC) 设置。 这包括实例化目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 |
+| _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据 | 允许应用无需登录用户即可读取和管理公司目录基于角色的访问控制 (RBAC) 设置。这包括发送目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 |
 
 ### <a name="remarks"></a>说明
 使用 _RoleManagement.Read.Directory_ 权限，应用程序可以读取 directoryRoles 和 directoryRoleTemplates。 这包括读取目录角色的成员身份信息。
@@ -1937,7 +1939,7 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | _TeamsAppInstallation.ReadWriteForUser.All_ | 管理所有用户的 Teams 应用| 允许应用读取、安装、升级和卸载任何用户的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
 | _TeamsAppInstallation.ReadWriteSelfForUser.All_（个人预览版） | 允许应用为所有用户管理其自身| 允许 Teams 应用在没有登录用户的情况下为任何用户读取、安装、更新和卸载其自身。| 是 |
 | _TeamsAppInstallation.ReadForTeam.All_ | 读取为所有团队安装的 Teams 应用| 允许应用读取任何团队中安装的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
-| _TeamsAppInstallation.ReadWriteForTeam.All_ | 管理所有团队的 Teams 应用| 允许应用在没有登录用户的情况下读取、安装、更新和卸载任何团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
+| _TeamsAppInstallation.ReadWriteForTeam.All_ | 管理所有团队的 Teams 应用| 允许应用在没有登录用户的情况下读取、安装、更新和卸载任何团队中的 Teams 应用。不允许读取特定于应用程序的设置。| 是 |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_（个人预览版） | 允许 Teams 应用为所有团队管理其自身| 允许 Teams 应用在没有登陆用户的情况下在任何团队中读取、安装、更新和卸载其自身。| 是 |
 
 ## <a name="team-member-permissions"></a>团队成员权限 
@@ -2061,7 +2063,7 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | _TeamsAppInstallation.ReadWriteForUser.All_（个人预览版） | 管理所有用户的 Teams 应用| 允许应用读取、安装、升级和卸载任何用户的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
 | _TeamsAppInstallation.ReadWriteSelfForUser.All_（个人预览版） | 允许应用为所有用户管理其自身| 允许 Teams 应用在没有登录用户的情况下为任何用户读取、安装、更新和卸载其自身。| 是 |
 | _TeamsAppInstallation.ReadForTeam.All_（个人预览版） | 读取为所有团队安装的 Teams 应用| 允许应用读取任何团队中安装的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
-| _TeamsAppInstallation.ReadWriteForTeam.All_（个人预览版） | 管理所有团队的 Teams 应用| 允许应用在没有登录用户的情况下读取、安装、更新和卸载任何团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
+| _TeamsAppInstallation.ReadWriteForTeam.All_（个人预览版） | 管理所有团队的 Teams 应用| 允许应用在没有登录用户的情况下读取、安装、更新和卸载任何团队中的 Teams 应用。不允许读取特定于应用程序的设置。| 是 |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_（个人预览版） | 允许 Teams 应用为所有团队管理其自身| 允许 Teams 应用在没有登陆用户的情况下在任何团队中读取、安装、更新和卸载其自身。| 是 |
 
 ## <a name="threat-assessment-permissions"></a>威胁评估权限

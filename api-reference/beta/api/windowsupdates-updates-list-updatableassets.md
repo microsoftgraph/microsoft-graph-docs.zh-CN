@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: e5eebb39af41bd31ee0e2d68404480ea84cd51dc
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 4d3df34faed6599a4d2d61fabf6e6de349c75180
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067345"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52266890"
 ---
 # <a name="list-updatableassets"></a>列出 updatableAssets
 命名空间：microsoft.graph.windowsUpdates
@@ -62,6 +62,8 @@ GET /admin/windows/updates/updatableAssets
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_updatableasset"
@@ -70,6 +72,24 @@ GET /admin/windows/updates/updatableAssets
 ``` http
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-updatableasset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-updatableasset-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-updatableasset-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

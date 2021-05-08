@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d55f1889a8134196760b133827bee2ec8c82b20e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 503d165d1d7c1a997c9e39f728a833a0dc422d68
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944361"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241084"
 ---
 # <a name="get-bitlockerrecoverykey"></a>获取 bitlockerRecoveryKey
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50944361"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|BitLocker.ReadBasic.All、BitLocker.Read.All|
+|委派（工作或学校帐户）|BitLockerKey.ReadBasic.All、BitLockerKey.Read.All|
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|不支持|
 
@@ -40,7 +40,7 @@ ms.locfileid: "50944361"
 * 全局读取者
 
 ## <a name="http-request"></a>HTTP 请求
-在不返回 key 属性的情况下获取指定的 BitLocker **密钥：**
+若要获取指定的BitLocker键而不返回 **key** 属性：
 <!-- {
   "blockType": "ignored"
 }
@@ -49,7 +49,7 @@ ms.locfileid: "50944361"
 GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
-若要获取指定的 BitLocker 密钥（包括其 **key** 属性）：
+若要获取指定的BitLocker键，包括 **其 key** 属性：
 <!-- {
   "blockType": "ignored"
 }
@@ -65,8 +65,8 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$s
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|ocp-client-name|执行 API 调用的客户端应用程序的名称。 必填。|
-|ocp-client-version|执行 API 调用的客户端应用程序的版本。 必填。|
+|ocp-client-name|执行 API 调用的客户端应用程序的名称。 必需。|
+|ocp-client-version|执行 API 调用的客户端应用程序的版本。 必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -78,7 +78,7 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$s
 ## <a name="examples"></a>示例
 
 ### <a name="example-1"></a>示例 1
-通过指定密钥 ID 获取 BitLocker **密钥**。本示例不返回 **key** 属性。
+通过BitLocker键 ID 获取 **密钥**。本示例不返回 **key** 属性。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -141,7 +141,7 @@ Content-type: application/json
 ```
 
 ### <a name="example-2"></a>示例 2
-通过指定密钥 ID 获取 **具有 key** 属性的 BitLocker **密钥**。
+通过BitLocker键 ID 获取具有 **key** 属性 **的键**。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。

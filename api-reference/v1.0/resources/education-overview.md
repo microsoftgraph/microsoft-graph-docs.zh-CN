@@ -5,18 +5,18 @@ localization_priority: Priority
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 4d36403aef6212831e186fffd401df7155be43fd
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 1bfe49d6841142794a5b3a60b0de84eaff4290d4
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582357"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231530"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
 Microsoft Graph 中的教育 API 可增强 Microsoft 365 资源和与教育情景（包括学校、学生、教师、课程和注册）相关的信息的数据。 这使你能够轻松地构建与教育资源集成的解决方案。
 
-教育 API 包含名册资源和作业资源，可以使用这些资源与 Microsoft Teams 中的名册服务进行交互。 可以使用这些资源来管理学校名册。
+教育 API 包含名单资源和作业资源，可用于与 Microsoft Teams 中的名单服务进行交互。可以使用这些资源管理学校名单。
 
 ## <a name="authorization"></a>授权
 
@@ -28,7 +28,7 @@ Microsoft Graph 中的教育 API 可增强 Microsoft 365 资源和与教育情�
 
 若要显示许可对话框，请执行以下 REST 调用。
 
-``` http
+```http
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
 client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 ```
@@ -59,10 +59,10 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 名册 API 支持以下方案：
 
-- [列出所有学校](../api/educationroot-list-schools.md)
+- [列出所有学校](../api/educationschool-list.md)
 - [列出所教授课程的学校](../api/educationclass-list-schools.md)
 - [为用户列出学校](../api/educationuser-list-schools.md)
-- [获取所有课程](../api/educationroot-list-classes.md)
+- [获取所有课程](../api/educationclass-list.md)
 - [获取学校的课程](../api/educationschool-list-classes.md)
 - [为用户列出课程](../api/educationuser-list-classes.md)
 - [将课程添加到学校](../api/educationschool-post-classes.md)
@@ -79,7 +79,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="next-steps"></a>后续步骤
 
-使用 Microsoft Graph 教育 API 构建访问学校名册的教育解决方案。 了解详细信息：
+使用 Microsoft Graph 教育 API 构建访问学校名单的教育解决方案。若要了解详细信息，请：
 
 - 探索对你的方案最有帮助的资源和方法。
 - 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用 API。

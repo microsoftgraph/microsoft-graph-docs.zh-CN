@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b267a347537b46a29fd2d74afc1161e026a84bcc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2877f9bca06eed962257e2c8c43c5f776d06ff76
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959069"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241140"
 ---
 # <a name="list-unifiedroleassignments"></a>列出 unifiedRoleAssignments
 
@@ -35,12 +35,14 @@ ms.locfileid: "50959069"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments
+GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="query-parameters"></a>查询参数
 
-此操作需要 `$filter` 查询参数。 可以筛选 或 `roleDefinitionId` `principalId` 属性。 属性 `roleDefinitionId` 可以是角色对象 ID 或角色模板对象 ID。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此操作需要 `$filter` 查询参数。 可以筛选 或 `roleDefinitionId` `principalId` 属性。 属性 `roleDefinitionId` 可以是角色对象 ID 或角色模板对象 ID。 主体 `$expand` 也支持查询 **参数**。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,7 +60,7 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-request-using-a-filter-on-role-definition-id"></a>示例 1：对角色定义 ID 使用筛选器的请求
+### <a name="example-1-request-using-filter-on-role-definition-id-and-expand-principal"></a>示例 1：对角色定义 ID $filter扩展主体时请求
 
 #### <a name="request"></a>请求
 

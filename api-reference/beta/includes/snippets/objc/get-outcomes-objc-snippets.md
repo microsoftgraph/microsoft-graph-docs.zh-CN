@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 27aaae2a183ab066ef296ab3d99cd0ac32d9a3f9
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 96e001cdd3e4cf8dcdf8bfcb9d396ecc25d40720
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41495831"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52254174"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/me/assignments/{id}/submissions/{id}/outcomes"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 

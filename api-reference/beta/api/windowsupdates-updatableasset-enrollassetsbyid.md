@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: b7a481b214069edc14c188e4de544602924bd7b6
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 127817e3623b86854f8c69812c385a25aee323f4
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067334"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241168"
 ---
 # <a name="updatableasset-enrollassetsbyid"></a>updatableAsset： enrollAssetsById
 命名空间：microsoft.graph.windowsUpdates
@@ -54,7 +54,7 @@ POST /admin/windows/updates/updatableAssets/enrollAssetsById
 |参数|类型|说明|
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|要管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可能的值是 `feature` ：。|
-|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
+|memberEntityType|字符串|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
 |ids|String collection|与 **updatableAsset** 资源相对应的标识符列表，这些资源由服务针对给定 **updateCategory** 注册更新管理。|
 
 ## <a name="response"></a>响应
@@ -64,6 +64,8 @@ POST /admin/windows/updates/updatableAssets/enrollAssetsById
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "updatableasset_enrollassetsbyid"
@@ -83,6 +85,24 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/updatableasset-enrollassetsbyid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/updatableasset-enrollassetsbyid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/updatableasset-enrollassetsbyid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/updatableasset-enrollassetsbyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

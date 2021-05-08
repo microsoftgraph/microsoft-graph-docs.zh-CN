@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1f2d391d8eef2afc581c22850d8693da5fd69e29
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 49530ee33fe0d3c8c6f32429de38daa47166568e
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051016"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241133"
 ---
 # <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
 
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$filter` 在 `id` 、 和 `displayName` `isBuiltIn` 上。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$filter` 对 、 `id` 和 `displayName` 属性使用查询 `isBuiltIn` 参数。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 

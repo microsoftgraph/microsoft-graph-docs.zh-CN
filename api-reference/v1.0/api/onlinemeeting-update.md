@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8e6ba3e4d3a36b1d9d14ad4ab9528af98d22dbc8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6d239a98275b6ca8fb390ae646f67a82c2212c99
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055867"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241077"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -58,6 +58,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 下表列出了可更新的属性。 在请求正文中，仅包括需要更新的属性，但以下例外：
 
 - 调整联机会议开始或结束日期/时间始终需要请求正文中的 **startDateTime** 和 **endDateTime** 属性。
+- **无法** 更新 **参与者属性** 的 organizer 字段。 创建会议后，不能修改会议的组织者。
 - 调整 **参与者属性** 的 **attendees** 字段（如向会议添加或删除与会者）始终需要请求正文中与会者的完整列表。
 
 | 属性             | 类型                                                         | 说明                                                                                                                                    |
@@ -65,8 +66,8 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | startDateTime        | 日期时间                                                     | 会议开始时间（UTC）。                                                                                                                 |
 | endDateTime          | 日期时间                                                     | 会议结束时间（UTC）。                                                                                                                   |
 | subject              | String                                                       | 联机会议的主题。                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | 与联机会议关联的参与者。 这包括组织者和与会者。                                            |
-| isEntryExitAnnounced | 布尔值                                                      | 呼叫者加入或离开时是否宣布。                                                                                         |
+| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | 与联机会议关联的参与者。 仅与会者可以更新。                                            |
+| isEntryExitAnnounced | Boolean                                                      | 呼叫者加入或离开时是否宣布。                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | 指定哪些参与者可以绕过会议厅。                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | 指定可在会议中成为演示者的人。 可能的值包括 everyone、organization、roleIsPresenter、organizer 和 unknownFutureValue。 |
 

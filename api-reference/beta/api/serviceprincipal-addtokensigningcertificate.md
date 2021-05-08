@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b14dcabb463eb3cb5d397913290b2e74ad77ac59
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: d34d36fb96c08ff66cad36a77b84d24cffbfed77
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469491"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266883"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal：addTokenSigningCertificate
 
@@ -58,15 +58,13 @@ POST /servicePrincipals/{id}/addTokenSigningCertificate
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_addtokensigningcertificate"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/7c8d4399-b4bf-413a-8b6a-c577790cae7d/addTokenSigningCertificate
+POST https://graph.microsoft.com/beta/servicePrincipals/004375c5-6e2e-4dec-95e3-626838cb9f80/addTokenSigningCertificate
 Content-type: application/json
 
 {
@@ -74,25 +72,6 @@ Content-type: application/json
     "endDateTime":"2024-01-25T00:00:00Z"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addtokensigningcertificate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addtokensigningcertificate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-addtokensigningcertificate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addtokensigningcertificate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ### <a name="response"></a>响应
 
@@ -109,15 +88,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "customKeyIdentifier": null,
-    "displayName": "customDisplayName",
-    "endDateTime": "2023-06-29T00:00:00Z",
-    "key": null,
-    "keyId": "b859fc29-969f-48b2-9a27-8399b69f441e",
-    "startDateTime": "2020-06-29T00:00:00Z",
-    "type": "AsymmetricX509Cert",
-    "thumbprint":"QWESRTGFWQWEDSASDTGGSADASDWQW",
-    "usage": "Verify"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.selfSignedCertificate",
+  "customKeyIdentifier": "2iD8ppbE+D6Kmu1ZvjM2jtQh88E=",
+  "displayName": "CN=customDisplayName",
+  "endDateTime": "2024-01-25T00:00:00Z",
+  "key": "MIICuDCCAaCgAwIBAgIIYXJsNtL4oUMwDQYJKoZIhvcNAQEL...StP8s/w==",
+  "keyId": "93bc223f-7235-4b9c-beea-d66847531c49",
+  "startDateTime": "2021-05-05T18:38:51.8100763Z",
+  "thumbprint": "DA20FCA696C4F83E8A9AED59BE33368ED421F3C1",
+  "type": "AsymmetricX509Cert",
+  "usage": "Verify"
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

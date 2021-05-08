@@ -4,12 +4,12 @@ description: 若要将应用程序权限界定为特定 Exchange Online 邮箱�
 author: abheek-das
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: 56b05834f85c0b4a3f4480855cd0bffc8415b628
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f31f7bfc8ff72c8f3cb9e6f61185187f50bab7fc
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760740"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266834"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>将应用程序权限界定为特定 Exchange Online 邮箱 
 
@@ -22,7 +22,7 @@ ms.locfileid: "50760740"
 ## <a name="configure-applicationaccesspolicy"></a>配置应用程序访问策略
 
 若要配置应用程序访问策略并限制应用程序权限的范围：
-1.  连接到 Exchange Online PowerShell。 有关详细信息，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1.  连接到 Exchange Online PowerShell。有关详细信息，请参见[连接到 Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 2.  标识应用客户端 ID 和限制应用可访问的启用邮件的安全组。
 
@@ -43,7 +43,7 @@ ms.locfileid: "50760740"
     ```
     此命令的输出将会指示该应用是否有权访问 User1 的邮箱。
 
-注意：在 Microsoft Graph REST API 调用中，应用程序访问策略变更需要 30 分钟才能生效。
+>**注意：在 Microsoft Graph REST API 调用中，应用程序访问策略变更需要 30 分钟才能生效。**
 
 ## <a name="supported-permissions-and-additional-resources"></a>受支持的权限和其他资源
 管理员可以使用 ApplicationAccessPolicy cmdlet 来控制已授权以下任何应用程序权限的应用的邮箱访问权限： 

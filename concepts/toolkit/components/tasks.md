@@ -1,28 +1,28 @@
 ---
-title: Microsoft Graph 工具中的任务Toolkit
+title: Microsoft Graph 服务中的任务Toolkit
 description: 任务组件使用户能够查看、添加、删除、完成或编辑任务。 它适用于 Microsoft Planner 中的任何任务。
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 5364491caae4edc9cd3f022937bcd6d809aa924f
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: d07db8f1a261f1cff96175a25665f08eff615d67
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659212"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266799"
 ---
-# <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具中的任务Toolkit
+# <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 服务中的任务Toolkit
 
 任务组件使用户能够查看、添加、删除、完成或编辑 Microsoft Planner 中的任务。  
 
-此外，用户能够将一个或多个 Microsoft Graph 用户分配给任务。 有关 Microsoft Graph 分配的详细信息，请参阅[plannerAssignments。](/graph/api/resources/plannerassignments)
+此外，用户能够向任务分配一个或多个 Microsoft Graph 用户。 有关 Microsoft Graph 作业的更多详细信息，请参阅 [plannerAssignments](/graph/api/resources/plannerassignments)。
 
 ## <a name="example"></a>示例
 
-以下示例使用组件显示登录用户的 Microsoft Planner `mgt-tasks` 任务。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
+以下示例使用 组件显示已登录用户的 Microsoft Planner `mgt-tasks` 任务。 可以使用代码编辑器查看 [属性如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-tasks--tasks&source=docs" height="500"></iframe>
 
-[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-tasks--tasks&source=docs)
+[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-tasks--tasks&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -32,10 +32,10 @@ ms.locfileid: "49659212"
 | hide-header | hideHeader | 显示或隐藏组件标头的布尔值。 默认值为“`false`”。 |
 | hide-options | hideOptions | 用于显示或隐藏任务中的选项的布尔值。 默认值为“`false`”。
 | initial-id="planner_id/folder_id" | initialId | 一个字符串 ID，用于将最初显示的规划器或文件夹设置为提供的 ID。 |
-| initial-bucket-id="bucket_id" | initialBucketId | 一个字符串 ID，用于将最初显示的存储桶 (Planner Data-Source设置为) ID。 |
-| target-id="planner_id/folder_id"| targetId | 一个字符串 ID，用于将任务接口锁定到所提供的计划工具或文件夹 ID。 |
-| target-bucket-id="bucket_id" |targetBucketId  | 一个字符串 ID，用于将任务接口锁定到 Planner (仅Data-Source提供的) 。 |
-| group-id | groupId  | 用于将任务接口锁定到组 ID 的字符串 ID。 |
+| initial-bucket-id="bucket_id" | initialBucketId | 一个字符串 ID，用于将最初显示的存储桶 (Planner Data-Source仅) 设置为提供的 ID。 |
+| target-id="planner_id/folder_id"| targetId | 一个字符串 ID，用于将任务接口锁定为提供的规划器或文件夹 ID。 |
+| target-bucket-id="bucket_id" |targetBucketId  | 一个字符串 ID，用于将任务接口锁定为 Planner (提供的Data-Source ID) 。 |
+| group-id | groupId  | 用于将任务接口锁定为组 ID 的字符串 ID。 |
 | 不适用 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
 | 不适用 | taskFilter  | 可选函数，用于筛选向用户显示的任务。 |
 
@@ -118,22 +118,22 @@ mgt-tasks {
 }
 ````
 
-## <a name="events"></a>活动
+## <a name="events"></a>事件
 | 事件 | 详情 | 说明 |
 | --- | --- | --- |
-| taskAdded | 详细信息包含各自的 `task` 对象 | 在新建任务后触发。 |
+| taskAdded | 详细信息包含各自的 `task` 对象 | 新建任务后触发。 |
 | taskChanged | 详细信息包含各自的 `task` 对象 | 更改任务元数据（如标记已完成）时触发。 |
 | taskClick | 详细信息包含各自的 `task` 对象 | 当用户单击或点击任务时触发。 |
 | taskRemoved | 详细信息包含各自的 `task` 对象 | 删除现有任务后触发。 |
 
 ## <a name="templates"></a>模板
 
-该 `tasks` 组件支持 [多个](../customize-components/templates.md) 模板，允许您替换组件的某些部分。 若要指定模板，请包含 `<template>` 组件中的元素，将值设置为下列 `data-type` 值之一：
+组件 `tasks` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含组件 `<template>` 中的元素，将值 `data-type` 设置为下列值之一：
 
 | 数据类型     | 数据上下文              | 说明                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
-| task     | task： a planner task object | 替换整个默认任务。 |
-| task-details | task： a planner task object | 模板替换任务的详细信息部分。 |
+| task     | 任务：计划工具任务对象 | 替换整个默认任务。 |
+| task-details | 任务：计划工具任务对象 | template 将替换任务的详细信息部分。 |
 
 下面的示例定义任务组件的模板。
 
@@ -152,9 +152,9 @@ mgt-tasks {
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-此控件使用以下 Microsoft Graph API 和权限。
+此控件使用下列 Microsoft Graph API 和权限。
 
-| 资源 | 权限 |
+| Resource | 权限 |
 | - | - |
 | /me/planner/plans | Group.Read.All |
 | /planner/plans/${id} | Group.Read.All、Group.ReadWrite.All |
@@ -165,4 +165,8 @@ mgt-tasks {
 
 ## <a name="authentication"></a>身份验证
 
-任务组件使用身份验证文档中介绍的全局 [身份验证提供程序](../providers/providers.md)。
+任务组件使用身份验证文档 中所述的全局 [身份验证提供程序](../providers/providers.md)。
+
+## <a name="cache"></a>缓存
+
+`mgt-tasks`组件不缓存任何数据。

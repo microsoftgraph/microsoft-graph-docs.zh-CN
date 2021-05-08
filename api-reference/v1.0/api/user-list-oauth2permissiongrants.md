@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: c56b5c6b8de0174aee7f5d7f0cc59fd45f451bd1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 412fd819e460b83eaed8ad789bd3a3ded6aa58d6
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051177"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232079"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -20,6 +20,9 @@ ms.locfileid: "52051177"
 
 > [!NOTE]
 > 查询对用户的委派权限授予将仅返回特定于给定用户的委派权限授予。 代表组织中所有用户授予的委派权限 _未_ 包括在响应中。
+
+> [!NOTE]
+> 此请求对最近创建、更新或删除的委派权限授予可能具有复制延迟。
 
 ## <a name="permissions"></a>权限
 

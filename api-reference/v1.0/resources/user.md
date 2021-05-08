@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8a3ccac297741ad85d1f74119047becb2da46274
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: eb80f5c031be6729530b7bb4e506de1b0b22e579
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100077"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232072"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -56,10 +56,10 @@ ms.locfileid: "52100077"
 | [List contactFolders](../api/user-list-contactfolders.md)                                  | [ContactFolder](contactfolder.md) 集合                                     | 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。                                                                                                                                             |
 | **目录对象**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。                                                                                                            |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | 字符串集合                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                                                                  |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | String collection                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | String 集合                                                                | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | 无                                                                             | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。                                                                                                                   |
-| [getByIds](../api/directoryobject-getbyids.md)                                             | 字符串集合                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                                                                           |
+| [getByIds](../api/directoryobject-getbyids.md)                                             | String collection                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                                                                           |
 | [getMemberGroups](../api/user-getmembergroups.md)                                          | String collection                                                                | 返回用户是其成员的所有组。检查是可传递的。                                                                                                                                                        |
 | [getMemberObjects](../api/user-getmemberobjects.md)                                        | String collection                                                                | 返回用户所属的所有组和目录角色。检查是可传递的。                                                                                                                                 |
 | [List createdObjects](../api/user-list-createdobjects.md)                                  | [directoryObject](directoryobject.md) collection                                 | 从 createdObjects 导航属性中获取此用户创建的目录对象。                                                                                                                                          |
@@ -152,14 +152,14 @@ ms.locfileid: "52100077"
 | employeeHireDate | DateTimeOffset | 聘请用户或用户将开始工作（如是未来招聘）的日期和时间。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 | employeeId | String | 由组织分配给该用户的员工标识符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |表示与用户相关联的组织数据（例如，分部和 costCenter）。 <br><br>仅在 `$select` 上返回。|
-| employeeType | String | 捕获企业员工类型：员工、合同工、顾问、供应商等等。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
+| employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。 仅在 `$select` 上返回。 支持带 `eq` 运算符的 `$filter`。|
 |externalUserState|String|对于使用[邀请 API](../api/invitation-post.md) 邀请到租户的外部用户，此属性表示受邀用户的邀请状态。 对于受邀用户，状态可以是 `PendingAcceptance` 或 `Accepted`，而对于所有其他用户，状态为 `null`。 <br><br>仅在 `$select` 上返回。 支持包含受支持数值的`$filter`。 例如：`$filter=externalUserState eq 'PendingAcceptance'`。|
 |externalUserStateChangeDateTime|DateTimeOffset|显示最近一次修改 **externalUserState** 属性的时间戳。 <br><br>仅在 `$select` 上返回。|
 |faxNumber|String|用户的传真号。|
 |givenName|String|用户的名。 默认情况下返回。 最大长度为 64 个字符。 支持 `$filter`。|
 | hireDate | DateTimeOffset | 用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>仅在 `$select` 上返回。 <br><br> **注意：** 此属性特定于 SharePoint Online。 建议使用本地 **employeeHireDate** 属性来设置和更新使用 Microsoft Graph API 的聘用日期值。 |
 |id|String|用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 键。 <br><br>不可为 NULL，只读。|
-|identities|[objectIdentity](objectIdentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 可包含最多 10 个 [ObjectIdentity](objectIdentity.md) 对象。 <br>支持 `$filter`。|
+|identities|[objectIdentity](objectIdentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br>支持 `$filter`。|
 |imAddresses|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |isResourceAccount|布尔| 请勿使用 – 保留以备今后使用。|
@@ -167,7 +167,7 @@ ms.locfileid: "52100077"
 |lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。只读。|
-|mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。<br>注意：虽然此属性可以包含重音字符，但可能会导致用户访问第一方应用程序出现问题。 <br><br>默认情况下返回。 支持 `$filter` 和 `endsWith`。|
+|mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。<br>注意：虽然此属性可以包含重音字符，但若使用可能导致用户访问其他 Microsoft 应用程序时遇到问题。 <br><br>默认情况下返回。 支持 `$filter` 和 `endsWith`。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。<br><br>仅在 `$select` 上返回。 仅支持 Get 用户 API（`GET /users/{id}` 或 `GET /me`）。|
 |mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。 最大长度为 64 个字符。 支持 `$filter`。|
 |mobilePhone|String|用户的主要移动电话号码。 本地目录同步的用户为只读。 最大长度为 64 个字符。 默认返回。 |
@@ -191,7 +191,7 @@ ms.locfileid: "52100077"
 |preferredLanguage|字符串|用户的首选语言。应遵循 ISO 639-1 标准；例如“en-US”。默认返回。|
 |preferredName|String|用户的首选名称。|
 |provisionedPlans|[provisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。 |
-|proxyAddresses|String 集合|示例：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性筛选器表达式需要 **any** 运算符。 只读，不可为 Null。 支持 `$filter`。|
+|proxyAddresses|String collection|示例：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性筛选器表达式需要 **any** 运算符。 只读，不可为 Null。 支持 `$filter`。|
 |refreshTokensValidFromDateTime|DateTimeOffset|在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 <br><br>仅在 `$select` 上返回。 只读。 |
 |responsibilities|String collection|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|

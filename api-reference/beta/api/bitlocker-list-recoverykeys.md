@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a51ffa28290b51539dd8ccbcc95c71917b15db0d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7e4fbd5a2a4c1b76ca985cb17e5c6799cb4f41c5
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944348"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240971"
 ---
 # <a name="list-recoverykeys"></a>列出 recoveryKeys
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50944348"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|BitLocker.ReadBasic.All、BitLocker.Read.All|
+|委派（工作或学校帐户）|BitLockerKey.ReadBasic.All、BitLockerKey.Read.All|
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|不支持|
 
@@ -40,7 +40,7 @@ ms.locfileid: "50944348"
 * 全局读取者
 
 ## <a name="http-request"></a>HTTP 请求
-若要获取租户内的 BitLocker 密钥列表，请进行以下操作：
+若要获取租户内BitLocker密钥的列表：
 
 <!-- {
   "blockType": "ignored"
@@ -50,7 +50,7 @@ ms.locfileid: "50944348"
 GET /informationProtection/bitlocker/recoveryKeys
 ```
 
-若要获取按设备 ID 筛选的租户内的 BitLocker 密钥 **列表：**
+若要获取租户中BitLocker设备 ID 筛选的密钥 **列表**：
 
 <!-- {
   "blockType": "ignored"
@@ -63,14 +63,14 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 OData 查询参数按最近备份密钥的设备 `$filter` **ID** 筛选结果。 此方法不支持 `$top` 筛选器。 有关详细信息，请参阅示例[2。](#example-2) 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-该响应可能还包含 `odata.nextLink` ，您可以使用 它分页浏览结果集。 有关详细信息，请参阅 [分页 Microsoft Graph 数据](/graph/paging)。
+该响应可能还包含 `odata.nextLink` ，您可以使用 它分页浏览结果集。 有关详细信息，请参阅[分页 Microsoft Graph数据](/graph/paging)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|ocp-client-name|执行 API 调用的客户端应用程序的名称。 必填。|
-|ocp-client-version|执行 API 调用的客户端应用程序的版本。 必填。|
+|ocp-client-name|执行 API 调用的客户端应用程序的名称。 必需。|
+|ocp-client-version|执行 API 调用的客户端应用程序的版本。 必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -82,7 +82,7 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ## <a name="examples"></a>示例
 
 ### <a name="example-1"></a>示例 1
-检索租户中的 BitLocker 密钥列表。
+检索租户BitLocker密钥的列表。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 ```
 ### <a name="example-2"></a>示例 2
-检索按设备 ID 筛选的 BitLocker **密钥列表**。
+检索按设备BitLocker筛选的密钥 **列表**。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。

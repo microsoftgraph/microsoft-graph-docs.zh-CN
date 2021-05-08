@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 37009a0b1fb762dc139b5337159a619a2469133c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8943da8c3034d4b008ad8168ef879ff38a037f87
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50980339"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52254510"
 ---
 ```java
 
@@ -19,7 +19,7 @@ text.contentType = BodyType.TEXT;
 feedback.text = text;
 educationOutcome.feedback = feedback;
 
-graphClient.education().me().assignments("{id}").submissions("{id}").outcomes("{id}")
+graphClient.education().classes("{id}").assignments("{id}").submissions("{id}").outcomes("{id}")
     .buildRequest()
     .patch(educationOutcome);
 

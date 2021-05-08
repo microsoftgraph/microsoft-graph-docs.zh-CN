@@ -1,16 +1,16 @@
 ---
 title: tokenLifetimePolicy 资源类型
-description: 表示可以控制 Azure Active Directory 颁发的访问令牌的生存期的策略。
+description: 表示一个策略，该策略可以控制由用户颁发的访问Azure Active Directory。
 localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b4d8d814278855e164fa00643b8f56ebc544a789
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d143faa87af81fbaae73973510bafe3fd3ee4fcb
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963356"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241042"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tokenLifetimePolicy 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "50963356"
 
 
 
-表示可以控制 JWT 访问令牌、ID 令牌或 Azure Active Directory (Azure AD) 颁发的 SAML 1.1/2.0 令牌的生命周期的策略。 可以为组织中的所有应用程序、多租户（多组织）应用程序或组织中的特定服务主体设置令牌生存期。  有关更多方案的详细信息，请参阅 Azure Active Directory 中的可 [配置令牌生存期](/azure/active-directory/develop/active-directory-configurable-token-lifetimes)。
+表示可以控制 JWT 访问令牌、ID 令牌或由 Azure AD Azure Active Directory (颁发的 SAML 1.1/2.0) 。 可以为组织中的所有应用程序、多租户（多组织）应用程序或组织中的特定服务主体设置令牌生存期。 
 
 >**注意：** 不支持为刷新令牌和会话令牌配置此策略。
 
 继承自 [stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -42,7 +42,7 @@ ms.locfileid: "50963356"
 |id|String| 此策略的唯一标识符。 只读。|
 |definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必填。|
+|displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|如果设置为 `true` ，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 `false` 。|
 
 
@@ -65,7 +65,7 @@ ms.locfileid: "50963356"
 | 属性     | 类型   |说明| 最小值 | 最大值 | 默认值|
 |:---------------|:--------|:----------|:--------|:--------|:----|
 |AccessTokenLifetime|String|控制访问令牌和 ID 令牌都被视为有效的时间。|10 分钟|1 天|1 小时|
-|版本|整数|将值设置为 1。 必填。|无|无|无|
+|版本|整数|将值设置为 1。 必需。|无|无|无|
 
 ## <a name="relationships"></a>关系
 

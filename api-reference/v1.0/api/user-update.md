@@ -5,18 +5,18 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 98b69fc8cb5275055e3c990ddb9bd2bbe443a0a1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9e93a73c6b24c161288d52d0862c13f032ade4cb
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961173"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232114"
 ---
 # <a name="update-user"></a>更新用户
 
 命名空间：microsoft.graph
 
-更新 user 对象的属性。 并非所有属性都可以在没有管理员角色的情况下由具有其默认权限的成员或来宾用户更新。 [比较成员和来宾默认](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) 权限，查看其可管理的属性。
+更新 [user](../resources/user.md) 对象的属性。 并非所有属性都可以在没有管理员角色的情况下由具有其默认权限的成员或来宾用户更新。 [比较成员和来宾默认](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) 权限，查看其可管理的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -62,12 +62,13 @@ PATCH /users/{id | userPrincipalName}
 |department|String|用户工作部门的名称。|
 |displayName|String|用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 支持 `$filter` 和 `$orderby`。|
 | employeeId | String | 由组织分配给该用户的员工标识符。 |
+| employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。 仅在 `$select` 上返回。 支持带 `eq` 运算符的 `$filter`。|
 |givenName|String|用户的名。|
 |hireDate|DateTimeOffset|用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
 |mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 <br><br>支持 `$filter`。|
-|mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。|
+|mailNickname|String|用户的邮件别名。创建用户时必须指定此属性。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
 |officeLocation|String|用户公司地点的办公室位置。|
