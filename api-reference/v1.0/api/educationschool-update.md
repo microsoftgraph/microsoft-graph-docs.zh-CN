@@ -1,22 +1,22 @@
 ---
-title: 更新 educationSchool 属性
-description: 更新 school 对象的属性。
-author: mmast-msft
+title: 更新 educationSchool
+description: 更新 educationSchool 对象的属性。
+author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0b051e5339c2cc32cfd0dad58e21154cf8e9cca8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e6c53b2b9b5934559a352378ee5316618ae69abe
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051436"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231869"
 ---
-# <a name="update-educationschool-properties"></a>更新 educationSchool 属性
+# <a name="update-educationschool"></a>更新 educationSchool
 
 命名空间：microsoft.graph
 
-更新 school 对象的属性。
+更新 [educationSchool 对象](../resources/educationschool.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -44,22 +44,27 @@ PATCH /education/schools/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供 [educationSchool](../resources/educationschool.md) 对象的 JSON 表示形式。
 
-| 属性            | 类型                                               | 说明                        |
-| :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | String                                             | 学校的显示名称         |
-| 说明         | String                                             | 学校描述          |
-| principalEmail      | String                                             | 主体的电子邮件地址     |
-| principalName       | String                                             | 主体名称              |
-| externalPrincipalId | String                                             | 同步系统中主体的 ID。 |
-| highestGrade        | String                                             | 教授的最高年级。              |
-| lowestGrade         | String                                             | 教授的最低年级。               |
-| schoolNumber        | String                                             | 学校编号。                     |
-| externalId          | String                                             | 同步系统中学校的 ID。    |
-| phone               | String                                             | 学校电话号码。            |
-| address             | [physicalAddress](../resources/physicaladdress.md) | 学校地址。             |
-| createdBy           | [identitySet](../resources/identityset.md)         | 创建了学校的实体。     |
+下表显示更新 [educationSchool 时所需的属性](../resources/educationschool.md)。
+
+| 属性             | 类型                                               | 说明                                                                                                                                                           |
+| :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName          | String                                             | 学校的显示名称。 继承自 [educationOrganization](../resources/educationorganization.md)。                                                            |
+| 说明          | String                                             | 学校描述。 继承自 [educationOrganization](../resources/educationorganization.md)。                                                             |
+| externalSource       | educationExternalSource                            | 创建组织的来源。 继承自 [educationOrganization](../resources/educationorganization.md)。 可取值为：`sis`、`manual`。 |
+| externalSourceDetail | String                                             | 生成此资源的外部源的名称。                                                                                                    |
+| principalEmail       | String                                             | 主体的电子邮件地址。                                                                                                                                       |
+| principalName        | String                                             | 主体名称。                                                                                                                                                |
+| externalPrincipalId  | String                                             | 同步系统中主体的 ID。                                                                                                                                    |
+| highestGrade         | String                                             | 教授的最高年级。                                                                                                                                                 |
+| lowestGrade          | String                                             | 教授的最低年级。                                                                                                                                                  |
+| schoolNumber         | String                                             | 学校编号。                                                                                                                                                        |
+| externalId           | String                                             | 同步系统中学校的 ID。                                                                                                                                       |
+| phone                | String                                             | 学校电话号码。                                                                                                                                               |
+| fax                  | String                                             | 学校传真号码。                                                                                                                                                 |
+| createdBy            | [identitySet](../resources/identityset.md)         | 创建了学校的实体。                                                                                                                                        |
+| address              | [physicalAddress](../resources/physicaladdress.md) | 学校地址。                                                                                                                                                |
 
 ## <a name="response"></a>响应
 
@@ -157,4 +162,3 @@ Content-length: 292
   "suppressions": [
   ]
 }-->
-

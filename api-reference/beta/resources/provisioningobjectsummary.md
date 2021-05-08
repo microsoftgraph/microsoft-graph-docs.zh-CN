@@ -5,18 +5,20 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 2bfe519d6a5cab816bdd35da451221be58105e37
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 7004a611c3fe36e2ce2d32824a5e9b78e53e61bd
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719400"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231911"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>provisioningObjectSummary 资源类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION]
+>**action** 和 **statusInfo** 属性已弃用。 属性 **操作** 应替换为 **provisioningAction**。 属性 **statusInfo** 应替换为 **provisioningStatusInfo**。
 
 表示 Azure AD 预配服务及其关联属性执行的操作。 
 
@@ -31,23 +33,25 @@ ms.locfileid: "50719400"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|action|String|指示活动名称或操作名称 (例如，创建用户，将成员添加到组) 。 有关记录的活动列表，请参阅 Azure AD 活动列表。|
+|provisioningAction|string|指示活动名称或操作名称。 可能的值是 `create` `update` `delete` ：、、、、 `stageddelete` `disable` 和 `other` `unknownFutureValue` 。 有关记录的活动列表，请参阅 Azure AD 活动列表。|
 |activityDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |changeId|String|此周期中此更改的唯一 ID。|
 |cycleId|String|每个作业迭代的唯一 ID。|
-|durationInMilliseconds|Int32|指示完成此设置操作所需要的时间。 以毫秒为单位。|
+|durationInMilliseconds|Int32|指示完成此预配操作所需要的时间。 以毫秒为单位。|
 |id|String| 指示活动的唯一 ID。 这是只读 GUID。|
 |initiatedBy|[initiator](initiator.md)|此预配的发起人的详细信息。|
 |jobId|String|整个预配作业的唯一 ID。|
-|ModifiedProperties|[modifiedProperty](modifiedproperty.md) 集合|此对象的此设置操作中修改的每个属性的详细信息。|
+|ModifiedProperties|[modifiedProperty](modifiedproperty.md) 集合|在此对象的此设置操作中修改的每个属性的详细信息。|
 |provisioningSteps|[provisioningStep](provisioningstep.md) 集合|预配中每个步骤的详细信息。|
-|servicePrincipal|[servicePrincipal](serviceprincipal.md) 集合|表示用于预配的服务主体。|
+|servicePrincipal|[servicePrincipal](serviceprincipal.md) 集合|表示用于设置的服务主体。|
 |sourceIdentity|[provisionedIdentity](provisionedidentity.md)|要预配的源对象的详细信息。|
-|sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|要设置的对象的源系统的详细信息。|
-|statusInfo|[statusBase](statusbase.md)|设置状态的详细信息。|
-|targetIdentity|[provisionedIdentity](provisionedidentity.md)|要设置的目标对象的详细信息。|
-|targetSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|要设置的对象的目标系统的详细信息。|
+|sourceSystem|[provisioningSystem](provisioningsystem.md)|要设置的对象的源系统的详细信息。|
+|provisioningStatusInfo|[provisioningStatusInfo](provisioningstatusinfo.md)|设置状态的详细信息。|
+|targetIdentity|[provisionedIdentity](provisionedidentity.md)|正在设置的目标对象的详细信息。|
+|targetSystem|[provisioningSystem](provisioningsystem.md)|要设置的对象的目标系统的详细信息。|
 |tenantId|String|唯一的 Azure AD 租户 ID。|
+|action (deprecated) |String|指示活动名称或操作名称 (例如，创建用户、将成员添加到组) 。 有关记录的活动列表，请参阅 Azure AD 活动列表。 这已弃用。 请改为使用 provisioningAction。|
+|statusInfo (已弃) |[statusBase](statusbase.md)|设置状态的详细信息。 这已弃用。 请改为使用 provisioningStatusInfo。|
 
 ## <a name="relationships"></a>关系
 
@@ -69,6 +73,7 @@ ms.locfileid: "50719400"
 ```json
 {
   "action": "String",
+  "provisioningAction":  "String",
   "activityDateTime": "String (timestamp)",
   "changeId": "String",
   "cycleId": "String",
@@ -80,10 +85,10 @@ ms.locfileid: "50719400"
   "provisioningSteps": [{"@odata.type": "microsoft.graph.provisioningStep"}],
   "servicePrincipal": [{"@odata.type": "microsoft.graph.provisioningServicePrincipal"}],
   "sourceIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
-  "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystemDetails"},
+  "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystem"},
   "statusInfo": {"@odata.type": "microsoft.graph.statusBase"},
   "targetIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
-  "targetSystem": {"@odata.type": "microsoft.graph.provisioningSystemDetails"},
+  "targetSystem": {"@odata.type": "microsoft.graph.provisioningSystem"},
   "tenantId": "String"
 }
 ```

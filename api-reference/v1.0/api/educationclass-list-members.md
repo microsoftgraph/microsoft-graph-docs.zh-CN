@@ -1,39 +1,48 @@
 ---
-title: 列出成员
+title: 列出 educationClass 的成员
 description: 检索参加课程的教师和学生。 请注意是否使用了委派令牌，只有课程的其他成员才能看到成员。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d24ada4c11aec3ceddac736146f8e70c4d9baf86
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eadc2f00fee83f3663ab983118f92ce84f8cc607
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048755"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232089"
 ---
-# <a name="list-members"></a>列出成员
+# <a name="list-members-of-an-educationclass"></a>列出 educationClass 的成员
 
 命名空间：microsoft.graph
 
-检索参加课程的教师和学生。 请注意是否使用了委派令牌，只有课程的其他成员才能看到成员。
+检索 [educationClass 的 educationUser](../resources/educationuser.md) [成员](../resources/educationclass.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduRoster.ReadBasic  |
-|委派（个人 Microsoft 帐户） |  不支持  |
-|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All 以及 Member.Read.Hidden | 
+| 权限类型                        | 权限（从最低特权到最高特权）                         |
+| :------------------------------------- | :------------------------------------------------------------------ |
+| 委派（工作或学校帐户）     | EduRoster.ReadBasic                                                 |
+| 委派（个人 Microsoft 帐户） | 不支持                                                       |
+| 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All 以及 Member.Read.Hidden |
+
+> [!NOTE]
+> 请注意，如果使用委派令牌，成员只能看到有关其自己课程的信息。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/members
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`
+
+为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+
+有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |

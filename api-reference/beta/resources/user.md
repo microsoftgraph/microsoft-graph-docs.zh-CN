@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 0f8d429c5fe9b54542f5313d85fb4e268727da9a
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 24714df9c4f8ac26167eb005dfef8f3b189694d2
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882339"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232100"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -66,11 +66,11 @@ ms.locfileid: "51882339"
 | [activateServicePlan](../api/user-activateserviceplan.md) | 无 | 为给定给定用户或`servicePlanId``skuId`许可证和[服务](user.md)。 |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
 | [checkMemberGroups](../api/user-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
-| [checkMemberObjects](../api/user-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 检查是可传递的。 |
+| [checkMemberObjects](../api/user-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | String collection | 返回 ID 列表中指定的目录对象。 |
 | [getMemberGroups](../api/user-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
-| [getMemberObjects](../api/user-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。 检查是可传递的。 |
+| [getMemberObjects](../api/user-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
 | [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | 从 createdObjects 导航属性中获取此用户创建的目录对象。 |
 | [List licenseDetails](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) 集合 | 获取 licenseDetails 对象集合。 |
 | [List ownedDevices](../api/user-list-owneddevices.md) | [directoryObject](directoryobject.md) collection | 从 ownedDevices 导航属性中获取此用户所拥有的设备。 |
@@ -166,20 +166,20 @@ ms.locfileid: "51882339"
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | 分配给该用户的许可证。 <br><br>不可为 null。 支持 `$filter`。 |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | 分配给该用户的计划。 <br><br>仅在 `$select` 上返回。 只读。 不可为 null。 |
 | birthday | DateTimeOffset | 用户的生日。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 |
-| businessPhones | String collection | 用户的电话号码。 仅可为此属性设置一个数字。 <br><br>默认返回。 对于从本地目录同步的用户而言为只读。 |
+| businessPhones | String collection | 用户的电话号码。仅可以为此属性设置一个数字。 <br><br>默认返回。从本地目录同步的用户的只读状态。 |
 | 城市 | String | 用户所在的城市。 最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 |
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
-| country | String | 用户所在的国家/地区；例如，“美国”或“英国”。 最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
-| createdDateTime | DateTimeOffset | 创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 <br><br>仅在 `$select` 上返回。 只读。 支持 `$filter`。 |
+| country | String | 用户所在的国家/地区;例如，"美国"或"UK"。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
+| createdDateTime | DateTimeOffset | 创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 <br><br>仅在 `$select` 上返回。 只读。 通过 `eq`、`lt`、和 `ge` 运算符支持 `$filter`。 |
 | creationType | 字符串 | 指示创建的用户帐户是普通学校或工作帐户 (`null`)、外部帐户 (`Invitation`)、Azure Active Directory B2C 租户的本地帐户 (`LocalAccount`) 还是使用电子邮件验证的自助注册帐户 (`EmailVerified`)。 <br><br>仅在 `$select` 上返回。 只读。 |
 | deletedDateTime | DateTimeOffset | 删除用户的日期和时间。 <br><br>仅在 `$select` 上返回。 |
 | department | String | 用户工作部门的名称。 最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
-| displayName | String | 用户通讯簿中显示的名称。 此值通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 最大长度为 256 个字符。 <br><br>默认情况下返回。 支持 `$filter` 和 `$orderby`。|
+| displayName | String | 用户通讯簿中显示的名称。通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。最大长度为 256 个字符。 <br><br>默认情况下返回。 支持 `$filter` 和 `$orderby`。|
 | employeeHireDate | DateTimeOffset | 聘请用户或用户将开始工作（如是未来招聘）的日期和时间。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 | employeeId | String | 由组织分配给该用户的员工标识符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |表示与用户相关联的组织数据（例如，分部和 costCenter）。 <br><br>仅在 `$select` 上返回。|
-| employeeType | String | 捕获企业员工类型：员工、合同工、顾问、供应商等等。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
+| employeeType | String | 捕获企业员工类型。 例如， `Employee`、 `Contractor`、 `Consultant`或 `Vendor`。 仅在 `$select` 上返回。 与`eq`运营商的支持`$filter`。|
 | externalUserState | String | 对于使用[邀请 API](../api/invitation-post.md) 邀请到租户的外部用户，此属性表示受邀用户的邀请状态。 对于受邀用户，状态可以是 `PendingAcceptance` 或 `Accepted`，而对于所有其他用户，状态为 `null`。 <br><br>仅在 `$select` 上返回。 支持包含受支持数值的`$filter`。 例如：`$filter=externalUserState eq 'PendingAcceptance'`。 |
 | externalUserStateChangeDateTime | String | 显示对 externalUserState 属性的最新更改的时间戳。 <br><br>仅在 `$select` 上返回。 |
 | faxNumber | String | 用户的传真号。 <br><br>仅在 `$select` 上返回。 |
@@ -188,17 +188,17 @@ ms.locfileid: "51882339"
 | id | String | 用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 <br><br>默认返回。 不可为空。 只读。|
 | identities | [objectIdentity](objectIdentity.md) 集合 | 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | imAddresses | String collection | 用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
-| infoCatalogs | 字符串集合 | 标识分配给用户的信息片段。 默认情况下返回。 |
+| infoCatalogs | String 集合 | 标识分配给用户的信息段。默认返回。 |
 | interests | String collection | 用户介绍自身兴趣的列表。 <br><br>仅在 `$select` 上返回。 |
 | isResourceAccount | 布尔 | 请勿使用 – 保留以备今后使用。 |
 | jobTitle | String | 用户的职务。 最大长度为 128 个字符。 <br><br>默认情况下返回。 支持 `$filter`。|
 | lastPasswordChangeDateTime | DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 只读。 |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) 集合 | 此用户的许可证分配状态。 <br><br>仅在 `$select` 上返回。 只读。 |
-| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 支持 `$filter` 和 `endsWith`。 |
-| mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。 可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 `$select` 上返回。 仅支持 Get 用户 API（`GET /users/{id}` 或 `GET /me`）。 |
-| mailNickname | String | 用户的邮件别名。 创建用户时必须指定此属性。 最大长度为 64 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
-| mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。 对于从本地目录同步的用户而言为只读。 |
+| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。<br>注意：虽然此属性可以包含重音字符，但使用此属性可能会导致用户访问其他 Microsoft 应用程序的问题。<br><br>默认情况下返回。 支持 `$filter` 和 `endsWith`。 |
+| mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 `$select` 上返回。 仅支持 Get 用户 API（`GET /users/{id}` 或 `GET /me`）。 |
+| mailNickname | String | 用户的邮件别名。创建用户时必须指定此属性。最大长度为 64 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
+| mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。从本地目录同步的用户的只读状态。 |
 | mySite | String | 用户个人网站的 URL。 <br><br>仅在 `$select` 上返回。 |
 | officeLocation | String | 用户公司地点的办公室位置。 最大长度为 128 个字符。 <br><br>默认返回。 |
 | onPremisesDistinguishedName | String | 包含本地 Active Directory `distinguished name` 或 `DN`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 `$select` 上返回。 只读。 |
@@ -211,16 +211,16 @@ ms.locfileid: "51882339"
 | onPremisesSecurityIdentifier | String | 包含从本地同步到云的用户的本地安全标识符 (SID)。 <br><br>仅在 `$select` 上返回。 只读。 |
 | onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 <br><br>仅在 `$select` 上返回。 只读。 |
 | onPremisesUserPrincipalName | String | 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 `$select` 上返回。 只读。 |
-| otherMails | 字符串集合 | 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。<br><br>仅在 `$select` 上返回。  支持 `$filter`。 |
-| passwordPolicies | String | 指定用户的密码策略。 此值是一个枚举，具有一个可能值 “DisableStrongPassword”，允许指定比默认策略弱的密码。 还可以指定 “DisablePasswordExpiration”。 可以同时指定两个值；例如：“DisablePasswordExpiration、DisableStrongPassword”。<br><br>仅在 `$select` 上返回。 |
-| passwordProfile | [passwordProfile](passwordprofile.md) | 指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。 <br><br>仅在 `$select` 上返回。 |
+| otherMails | 字符串集合 | 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。<br>注意：虽然此属性可以包含重音字符，但可能会导致用户访问第一方应用程序出现问题。<br><br>仅在 `$select` 上返回。  支持 `$filter`。 |
+| passwordPolicies | String | 指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。<br><br>仅在 `$select` 上返回。 |
+| passwordProfile | [passwordProfile](passwordprofile.md) | 指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。 <br><br>仅在 `$select` 上返回。 |
 | pastProjects | String collection | 供用户枚举其过去项目的列表。 <br><br>仅在 `$select` 上返回。 |
-| postalCode | String | 用户邮政地址的邮政编码。 邮政编码特定于用户所在的国家/地区。 在美国，此属性包含邮政编码。 最大长度为 40 个字符。 <br><br>仅在 `$select` 上返回。 |
+| postalCode | String | 用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。最大长度为 40 个字符。<br><br>仅在 `$select` 上返回。 |
 | preferredDataLocation | String | 用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>仅在 `$select` 上返回。 |
 | preferredLanguage | String | 用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。 <br><br>默认返回。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 `$select` 上返回。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 为用户设置的计划。 <br><br>仅在 `$select` 上返回。 只读。 不可为 null。 |
-| proxyAddresses | String 集合 | 示例：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性筛选器表达式需要 **any** 运算符。 <br><br>仅在 `$select` 上返回。 只读，不可为 Null。 支持 `$filter`。 |
+| proxyAddresses | String collection | 示例：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性筛选器表达式需要 **any** 运算符。 <br><br>仅在 `$select` 上返回。 只读，不可为 Null。 支持 `$filter`。 |
 | refreshTokensValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 <br><br>仅在 `$select` 上返回。 只读。 使用 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) 进行重置。 |
 | responsibilities | String collection | 供用户枚举其职责的列表。 <br><br>仅在 `$select` 上返回。 |
 | schools | String collection | 供用户枚举其学习过的学校列表。 <br><br>仅在 `$select` 上返回。 |
@@ -231,8 +231,8 @@ ms.locfileid: "51882339"
 | state | String | 用户地址中的省/市/自治区或省。 最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | streetAddress | String | 用户公司地点的街道地址。 最大长度为 1024 个字符。 <br><br>仅在 `$select` 上返回。|
 | surname | String | 用户的姓氏。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter`。 |
-| usageLocation | String | 两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括：“US”、“JP”和“GB”。 不可为 null。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
-| userPrincipalName | String | 用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br><br>默认情况下返回。 支持 `$filter`、`$orderby` 和 `endsWith`。
+| usageLocation | String | 两个字母的国家/地区代码（ISO标准3166）。 由于法律要求将被分配许可证的用户需要检查国家/地区的服务可用性。 示例包括：“ US”，“ JP”和“ GB”。 不可为空。<br><br>仅在 `$select` 上返回。 支持 `$filter`。|
+| userPrincipalName | String | 用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：虽然此属性可以包含重音字符，但可能会导致用户访问第一方应用程序出现问题。 <br><br>默认情况下返回。 支持 `$filter`、`$orderby` 和 `endsWith`。
 | userType | String | 可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
@@ -280,7 +280,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户使用条款接受状态。 只读。 可为 NULL。|
+|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户的使用条款接受状态。只读。可以为 null。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示已向应用程序授予用户的应用角色。 |
 |日历|[calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
@@ -292,30 +292,30 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
 |drive|[drive](drive.md)|用户的 OneDrive。只读。|
 |drives|[drive](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
-|events|[event](event.md) 集合|用户的事件。 默认显示“默认日历”下的事件。 只读。 可为 NULL。|
-|extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。 可为 Null。|
+|events|[event](event.md) 集合|用户的事件。 默认是在默认日历下显示事件。 只读。 可为空。|
+|extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。可为空。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
 |insights|[itemInsights](iteminsights.md) | 只读。可为 Null。|
 |joinedGroups|[group](group.md) 集合| 只读。可为 Null。|
 |mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
-|manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。 只读。 （HTTP 方法：GET、PUT、DELETE）|
+|manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
 |memberOf|[directoryObject](directoryobject.md) 集合|用户所属的所有组、目录角色和管理单元。只读。可为 Null。|
-|joinedTeams|[团队](team.md) 集合|用户所属的 Microsoft Teams 团队。 只读。 可为 Null。|
+|joinedTeams|[团队](team.md) 集合|用户是成员的 Microsoft Teams 团队。只读。空。|
 |messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[onenote](onenote.md)| 只读。|
-|outlook|[outlookUser](outlookuser.md)| 用户可用的选择性 Outlook 服务。 只读。 可为 Null。|
+|outlook|[outlookUser](outlookuser.md)| 用户可以选择性 Outlook 服务。只读。空。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
 |pendingAccessReviewInstances|[accessReviewInstance](accessreviewinstance.md) | 用于获取等待审阅者批准的访问审阅列表的导航属性。 |
 |people|[person](person.md) 集合| 只读。与用户最相关的人员。该集合按其与用户的相关性排序，相关性由用户的通信、协作和业务关系决定。人脉是邮件、联系人和社交网络中的信息聚合。|
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
 |photos|[photo](photo.md) 集合| 只读。可为 Null。|
-|planner|[plannerUser](planneruser.md)| 用户可用的选择性 Planner 服务。 只读。 可为 Null。 |
+|planner|[plannerUser](planneruser.md)| 用户可以使用的选择性计划程序服务。 只读。 可为空。 |
 |个人资料 |[个人资料](profile.md) | 表示在租户中描述用户的属性。 |
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
-|scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 该用户的作用域角色管理单元成员身份。 只读。 可为 Null。|
+|scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 此用户的作用域角色管理单位成员身份。 只读。 可为空。|
 |settings|[userSettings](usersettings.md) | 只读。可为 Null。|
-|团队合作|[userTeamwork](userteamwork.md)| 可供用户使用的 Microsoft Teams 功能的容器。 只读。 可为 Null。|
+|团队合作|[userTeamwork](userteamwork.md)| 用户可以使用的Microsoft Teams功能的容器。 只读。 可为空。|
 |todo|[todo](todo.md)|表示用户可以使用的微软待办服务。 |
 |usageRight|[usageRight](usageright.md) 集合|表示已授予用户的使用权限。 |
 

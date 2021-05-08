@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ea0ca54c4be4e80043ac9560d2b8dd3744584aa9
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 369ad06f9d653054c6b165b0ebc2daa3e8d402c6
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882826"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231254"
 ---
 # <a name="authenticationflowspolicy-resource-type"></a>authenticationFlowsPolicy 资源类型
 
@@ -51,11 +51,11 @@ ms.locfileid: "51882826"
 
 ``` json
 {
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "selfServiceSignUp": {
-    "@odata.type": "#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
-  },
+   "id":"String (identifier)",
+   "displayName":"String",
+   "description":"String",
+   "selfServiceSignUp":{
+      "@odata.type":"#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
+   }
 }
 ```

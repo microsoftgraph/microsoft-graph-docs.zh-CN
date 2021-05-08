@@ -1,18 +1,18 @@
 ---
-title: 获取用户
+title: 获取 educationUser
 description: 检索与此 **educationUser** 对应的简单目录 **user**。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1260845c6956618fc904ae9964f2dd7246fbf4b7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 728e848e07a176ad43e1ddea1edfee3218ae3764
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051429"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231883"
 ---
-# <a name="get-user"></a>获取用户
+# <a name="get-educationuser"></a>获取 educationUser
 
 命名空间：microsoft.graph
 

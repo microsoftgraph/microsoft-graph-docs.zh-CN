@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: e5e8e8ba5c67e81abe9bf108be5f72bacfe2739f
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 4b71030b3a58b56b6a8e5a43272cabbafddc01e5
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921929"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231425"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -19,15 +19,59 @@ ms.locfileid: "51921929"
 
 ## <a name="april-2021-new-and-generally-available"></a>2021 年 4 月：新增功能，正式可用
 
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- 在租户级别[管理身份验证策略](/graph/api/resources/authenticationflowspolicy)，以启用或禁用外部用户的[自服务注册](/graph/api/resources/selfservicesignupauthenticationflowconfiguration)。
+- 管理员可以将用户流与与外部用户共享的应用程序相关联，并在这些应用程序上启用[自助注册](/azure/active-directory/external-identities/self-service-sign-up-overview)。 他们可以定制义自助注册用户流，并创建个性化的注册体验。 应用程序与用户流相关联后，进入该应用程序的用户将能够启动一个提供来宾帐户的注册流。
+- 在 Azure AD 租户中配置[用户流属性](/graph/api/resources/identityuserflowattribute)可让你在注册期间收集用户相关信息。 您可以收集一组内置属性，或配置自定义用户流属性来收集来自未内置于目录的用户的信息。 
+- 在 [Azure Active Directory 用户](/graph/api/resources/b2xidentityuserflow)中，可管理语言默认值， [自定义在用户流中显示给用户的语言和字符串](/graph/api/resources/userflowlanguageconfiguration)。
+- 在用于 Azure AD 自助服务注册和 Azure AD B2C 注册的用户流中使用 [API 连接器](/graph/api/resources/identityapiconnector)，以在特定步骤调用 API 以影响用户流的执行。
+
 ### <a name="teamwork"></a>团队合作
 - 如果 [chatMessage](/graph/api/resources/chatmessage) 在 [频道](/graph/api/resources/channel)内，则通过 **channelIdentity** 属性标识频道。
 - 如果 **[chatMessage](/graph/api/resources/chatmessage)** 在 [聊天](/graph/api/resources/chat)中，则通过 **chatId** 属性识别聊天。
 - 使用 **关系** ，通过聊天或 [获取](/graph/api/resources/chatmessage) 聊天中的 [邮件](/graph/api/resources/chat)。
+- 使用应用程序权限来[获取](/graph/api/chat-get)指定[聊天](/graph/api/resources/chat)的属性。
+- 使用应用程序权限来[获取指定的聊天成员](/graph/api/chat-get-members)或[获取聊天中包括的所有聊天成员](/graph/api/chat-list-members)。 由于作为聊天成员的用户的数据是敏感数据，除获取应用程序权限外，请[请求对这些操作的其他访问权限](teams-protected-apis.md)。 
+
+### <a name="use-the-toolkit"></a>使用工具包
+第一次使用 [Microsoft Graph Toolkit](/graph/toolkit/overview)？ 请尝试使用新的 [工具包学习路径](https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit/?WT.mc_id=m365-19989-cxa)，使用工具包的 Web 组件和身份验证提供程序集将 Web 应用连接到 Microsoft Graph，并加载来自 Microsoft 365 的数据。
 
 ## <a name="april-2021-new-in-preview-only"></a>2021 年 4 月：仅预览版新增功能
 
+### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
+- 通过onlineMeeting的 **meetingAttendanceReport** 属性获取预定的在线会议中[每个与会者的出席情况](/graph/api/resources/attendancerecord?view=graph-rest-beta&preserve-view=true)的[报告](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true)。
+- 使用 "allowMeetingChat **属性为联机会议启用、禁用** 或限制聊天持续时间。
+- 通过使用 **allowTeamworkReactions** 属性来启用或禁用联机会议的响应。
+
+### <a name="compliance"></a>合规性
+[将](/graph/api/ediscovery-settings-get?view=graph-rest-beta&preserve-view=true)、 [更新](/graph/api/ediscovery-settings-update?view=graph-rest-beta&preserve-view=true)或 [重置为默认](/graph/api/ediscovery-settings-resettodefault?view=graph-rest-beta&preserve-view=true) 以下 [设置](/graph/api/resources/ediscovery-settings?view=graph-rest-beta&preserve-view=true) 用于电子数据 [大小写](/graph/api/resources/ediscovery-case?view=graph-rest-beta&preserve-view=true)：
+- 通过 **redundancyDetection** 属性[检测重复项，近重复项](/microsoft-365/compliance/near-duplicate-detection-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true)和[电子邮件线程](/microsoft-365/compliance/email-threading-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true)。
+- [通过主题](/microsoft-365/compliance/themes-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true) 属性，识别审阅集文档中一 **理念** 主题。
+- 通过 **ocr** 属性，[通过光学字符识别（OCR）从图像文件中提取文本](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true#optical-character-recognition-ocr)。
+
+这些设置提供了分析功能，可以在 [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide&preserve-view=true)的端到端工作流程中[智能地挑选数据](/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide&preserve-view=true#cull-data-intelligently)。
+
+### <a name="devices-and-apps--device-updates"></a>设备和应用|设备更新
+Windows Update for Business 部署服务的 API 的系列。 该服务支持在设备上部署 Windows 10 功能更新和重要 Windows 10 安全更新。 若要了解更多信息，请首先查看 [Windows 更新 API 概述](windowsupdates-concept-overview.md)。
+
+### <a name="education"></a>教育版
+- 将文件夹与 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) ，通过 **resourcesFolderUrl** 属性来存储所有相关文件资源。
+- 通过 [webUrl](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 属性 **educationAssignment** 链接。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+管理员可以使用[accessReviewPolicy](/graph/api/resources/accessreviewpolicy?view=graph-rest-beta&preserve-view=true)资源在目录级别[获取](/graph/api/accessreviewpolicy-get?view=graph-rest-beta&preserve-view=true)或[更新](/graph/api/accessreviewpolicy-update?view=graph-rest-beta&preserve-view=true)策略以查看访问权限。 例如，管理员可使用访问审阅策略来启用或禁用查看自己拥有组的访问权限的组所有者。
+
+### <a name="search"></a>搜索
+为用户查询[启用拼写建议或更正](search-concept-speller.md)。 这适用于用户查询包含键入错误或错误呈现无搜索结果时。
+
 ### <a name="teamwork"></a>团队合作
-使用 [资源特定的权限](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true) ，列出有权访问指定的 [组或](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) 或 [权限的应用](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)。
+- 使用 [资源特定的权限](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true) ，列出有权访问指定的 [组或](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) 或 [权限的应用](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)。
+- [获取](/graph/api/teamsappicon-get?view=graph-rest-beta&preserve-view=true)与 Teams 应用关联的 [图标](/graph/api/resources/teamsAppIcon?view=graph-rest-beta&preserve-view=true)属性。 若要获取图标的实际图像，请使用 [获取托管内容](/graph/api/teamworkhostedcontent-get?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="use-sdks"></a>使用 SDK
+- 请尝试在 [3.0.0 版 JavaScript 客户端库的预览版](https://www.npmjs.com/package/@microsoft/microsoft-graph-client/v/3.0.0-Preview.1)。此版本可实现多个身份验证流、服务器端身份验证、Node.js Stream 大型文件上传和进度跟踪等。 请参阅 [升级指南](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/changelogs/v3-upgrade-guide.md) 了解详细信息。
+- 尝试新的学习路径， [用于 JavaScript 开发人员的 Microsoft Graph 方案](https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios/?WT.mc_id=m365-16105-cxa)。
+
 
 ## <a name="march-2021-new-and-generally-available"></a>2021 年 3 月: 新版本和正式版
 
@@ -69,7 +113,7 @@ ms.locfileid: "51921929"
   - [在聊天中向用户发送通知](/graph/api/chat-sendactivitynotification)
   - [向团队中的用户发送通知](/graph/api/team-sendactivitynotification)
   - [向用户发送通知](/graph/api/userteamwork-sendactivitynotification)
-- 将用户的消息历史记录和数据从外部系统迁移到 Teams 频道，使用户能够顺畅地继续通信。 使用以下支持迁移方案的方法：
+- 将用户的消息历史记录和数据从外部系统迁移到 Teams 频道，使用户能够顺畅地继续通信。使用以下支持迁移方案的方法：
   - [创建团队](/graph/api/team-post)
   - [创建频道](/graph/api/channel-post)
   - [在频道中创建 chatMessage](/graph/api/channel-post-messages)

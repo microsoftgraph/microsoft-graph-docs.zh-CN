@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 879728279d2b57b3459284e2bcad92a1d617e7a6
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 70f151e34c2768dc90526d0bd17ae476ffc7e459
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52118933"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231418"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
 
@@ -30,9 +30,7 @@ ms.locfileid: "52118933"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application*                           | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
-
-*应用程序权限当前仅适用于个人预览版客户。
+| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 

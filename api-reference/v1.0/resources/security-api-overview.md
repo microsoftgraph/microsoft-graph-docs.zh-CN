@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: b569b503168c1acbd4040b62c276fc151cdd3997
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: d0cad229a4d03aa99b6c614c08019120b60bf643
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768243"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232016"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -37,7 +37,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 |[Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 | [Microsoft Cloud App Security](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Microsoft Defender for Identity](/defender-for-identity/understanding-security-alerts#security-alert-categories) **_| <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) _</p> | <p align="center">&#x2713;</p> |
+|[Microsoft Defender for Identity](/defender-for-identity/understanding-security-alerts#security-alert-categories) ***| <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |Microsoft 365 <ul><li> [默认](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>自定义警报</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure 信息保护](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**（预览版）**| <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](/azure/sentinel/quickstart-get-visibility)**（预览版）**| <p align="center">&#x2713;</p> | <p align="center">在 Azure Sentinel 中不受支持 </p> | <p align="center">&#x2713;</p> |
@@ -67,8 +67,8 @@ Microsoft Graph 威胁评估 API 可帮助组织评估租户中任何用户收�
 | 更新警报 | [Update alert](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
 |列出安全功能分数|[列出 secureScore](../api/security-list-securescores.md) |[https://graph.microsoft.com/v1.0/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |获取安全功能分数|[获取 secureScore](../api/securescore-get.md) |[https://graph.microsoft.com/v1.0/security/secureScores/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores/{id}&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
-|列出安全功能分数控制配置文件|[列出 secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles//{id}&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
-|获取安全功能分数控制配置文件|[获取 secureScoreControlProfile](../api/securescorecontrolprofile-get.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+|列出安全功能分数控制配置文件|[列出 secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+|获取安全功能分数控制配置文件|[获取 secureScoreControlProfile](../api/securescorecontrolprofile-get.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |更新安全功能分数控制配置文件|[更新 secureScoreControlProfile](../api/securescorecontrolprofile-update.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 
 
@@ -92,7 +92,7 @@ Microsoft Graph 安全性 API 示例的代码和贡献情况：
 
 ## <a name="next-steps"></a>后续步骤
 
-Microsoft Graph 安全性 API 可以为你提供使用 Microsoft 和合作伙伴的不同安全解决方案的新方式。 请按照以下步骤开始操作：
+Microsoft Graph 安全性 API 可以为你提供使用 Microsoft 和合作伙伴的不同安全解决方案的新方式。请按照以下步骤操作开始使用：
 
 - 向下滚动至 [alerts](alert.md)、[secureScore](securescore.md) 和 [secureScoreControlProfiles](securescorecontrolprofile.md)。
 - 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。 在“**示例查询**”中，选择“**显示更多示例**”并将“安全类别”设为“**开启**”。

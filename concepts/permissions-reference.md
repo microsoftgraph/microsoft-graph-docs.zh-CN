@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: d0b44fd3737405e4bac72dd2d9b9fbe48e0ec3d6
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: bf4654f096065538449723d076e0b712ee4cdbf5
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080580"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231488"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -293,7 +293,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Bookings.Read.All_ |  允许应用代表登录用户读取预订约会、业务、客户、服务和员工。 | 适用于只读应用程序。 典型目标用户是某预订业务的客户。 | 否 | 否 |
+| _Bookings.Read.All_ |  允许应用代表登录用户读取预订约会、业务、客户、服务和员工。 | 适用于只读应用程序。典型的目标用户是预定业务的客户。 | 否 | 否 |
 | _BookingsAppointment.ReadWrite.All_ | 允许应用代表登录用户读取和写入预订约会和客户，此外，还允许读取业务、服务和员工。 | 适用于需要操作约会和客户的安排日程的应用程序。 无法更改有关预订业务的基本信息及其服务和员工成员。 典型目标用户是某预订业务的客户。| 否 | 否 |
 | _Bookings.ReadWrite.All_ | 允许应用代表登录用户读取和编写预订约会、业务、客户、服务和员工。 不允许创建、删除或发布预订业务。 | 适用于操纵现有业务、其服务和员工成员的管理应用程序。 无法创建、删除或更改预订业务的发布状态。 典型目标用户是组织的支持人员。| 否 | 否 |
 | _Bookings.Manage.All_ | 允许应用代表登录用户读取、编写和管理预订约会、业务、客户、服务和员工。  | 允许应用具有完全访问权限。 <br>适用于完全管理体验。 典型目标用户是组织的管理员。| 否 | 否 |
@@ -684,7 +684,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 > - 无权重置用户密码。
 > - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
 > - 无权删除资源（包括用户或组）。
-> - 特别排除创建或更新以上未列出的资源。 这包括：application、oAauth2Permissiongrant、appRoleAssignment、device、servicePrincipal、organization、domains等。
+> - 具体排除上面未列出的资源的创建或更新。 这包括：应用程序，oAauth2Permissiongrant，appRoleAssignment，设备，servicePrincipal，组织，域等。
 
 
 ### <a name="example-usage"></a>用法示例
@@ -757,10 +757,10 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 | :---------------------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
 | _EduAdministration.Read.All_        | 读取教育应用设置                         | 代表用户读取所有 Microsoft 教育应用的状态和设置                                                                                             | 是                    |
 | _EduAdministration.ReadWrite.All_   | 管理教育应用设置                       | 代表用户管理所有 Microsoft 教育应用的状态和设置                                                                                           | 是                    |
-| _EduAssignments.ReadBasic.All_（[个人预览版](#permissions-availability-status)）      | 读取不含成绩的课堂作业               | 允许应用为所有用户读取不含成绩的作业                                                                                                               | 是                    |
-| _EduAssignments.ReadWriteBasic.All_（[个人预览版](#permissions-availability-status)） | 对不含成绩的课堂作业执行读取和写入操作     | 允许应用为所有用户对不含成绩的的作业执行读取和写入操作                                                                                                     | 是                    |
-| _EduAssignments.Read.All_（[个人预览版](#permissions-availability-status)）          | 读取含成绩的课堂作业                  | 允许应用为所有用户读取作业及其成绩                                                                                                             | 是                    |
-| _EduAssignments.ReadWrite.All_（[个人预览版](#permissions-availability-status)）     | 对含成绩的课堂作业执行读取和写入操作        | 允许应用为所有用户对作业及其成绩执行读取和写入操作                                                                                                   | 是                    |
+| _EduAssignments.ReadBasic.All_      | 读取不含成绩的课堂作业               | 允许应用为所有用户读取不含成绩的作业                                                                                                               | 是                    |
+| _EduAssignments.ReadWriteBasic.All_ | 对不含成绩的课堂作业执行读取和写入操作     | 允许应用为所有用户对不含成绩的的作业执行读取和写入操作                                                                                                     | 是                    |
+| _EduAssignments.Read.All_           | 读取含成绩的课堂作业                  | 允许应用为所有用户读取作业及其成绩                                                                                                             | 是                    |
+| _EduAssignments.ReadWrite.All_      | 对含成绩的课堂作业执行读取和写入操作        | 允许应用为所有用户对作业及其成绩执行读取和写入操作                                                                                                   | 是                    |
 | _EduRoster.ReadBasic.All_           | 读取组织名单的有限子集。 | 允许应用读取组织名单中的学校和班级结构数据以及所有用户的教育专属信息的有限子集。          | 是                    |
 | _EduRoster.Read.All_                | 读取组织名单。                     | 允许应用读取组织名单中的学校和班级结构数据以及所有用户的教育专属信息。                       | 是                    |
 | _EduRoster.ReadWrite.All_           | 对组织名单执行读取和写入操作。           | 允许应用对组织名单中的学校和班级结构数据以及所有用户的教育专属信息执行读取和写入操作。 | 是                    |
@@ -1093,7 +1093,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1249,7 +1249,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1624,14 +1624,14 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据 | 允许应用代表登录用户读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 | 否 |
 | _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
-| _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取和管理公司目录的基于角色的访问控制 (RBAC) 设置。 这包括实例化目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
+| _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据 | 允许应用代表登录用户阅读和管理您公司目录基于角色的访问控制 （RBAC） 设置。这包括发送目录角色和管理目录角色成员身份，以及阅读目录角色模板、目录角色和成员身份。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据 | 允许应用在没有登录用户的情况下读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 |
-| _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据 | 允许应用在没有已登录用户的情况下读取公司目录的基于角色的访问控制 (RBAC) 设置。  这包括读取目录角色模板、目录角色和成员身份。 | 是 |
+| _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 |
 | _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据 | 允许应用在没有已登录用户的情况下读取并管理公司目录的基于角色的访问控制 (RBAC) 设置。 这包括实例化目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 |
 
 ### <a name="remarks"></a>说明
@@ -1915,28 +1915,28 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ (**Deprecated**)| 读取所有用户已安装的 Teams 应用 | 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。 | 是 | 否 |
-| _TeamsApp.ReadWrite.All_ (**Deprecated**)| 管理所有用户的 Teams 应用  | 允许应用为任何用户（无需是登录的用户）读取、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。   | 是 | 否 |
+| _TeamsApp.Read.All_ (**Deprecated**)| 读取所有用户已安装的 Teams 应用 | 允许应用读取为任何用户安装的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。 | 是 | 否 |
+| _TeamsApp.ReadWrite.All_ (**Deprecated**)| 管理所有用户的 Teams 应用  | 允许应用读取、安装、升级和卸载任何用户的 Teams 应用，而无需登录用户。不提供读取或写入应用程序特定设置的能力。   | 是 | 否 |
 
 ## <a name="teams-app-installation-permissions"></a>Teams 应用安装权限
 
 #### <a name="delegated-permissions"></a>委派权限
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsAppInstallation.ReadForUser_  | 读取用户已安装的 Teams 应用| 允许应用读取为已登录用户安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 否 | 否 |
-| _TeamsAppInstallation.ReadWriteForUser_ | 管理用户安装的 Teams 应用| 允许应用为已登录用户读取、安装、升级和卸载已安装安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 否 |
+| _TeamsAppInstallation.ReadForUser_  | 读取用户已安装的 Teams 应用| 允许应用读取为登录用户安装的 Teams 应用。不提供读取应用程序特定设置的能力。| 否 | 否 |
+| _TeamsAppInstallation.ReadWriteForUser_ | 管理用户安装的 Teams 应用| 允许应用读取、安装、升级和卸载为已登录的用户安装的 Teams 应用。不提供读取应用程序特定设置的能力。| 是 | 否 |
 | _TeamsAppInstallation.ReadWriteSelfForUser_ （个人预览版） | 允许应用在 Teams 中管理其自身| 允许 Teams 应用为已登录用户可以访问的团队读取、安装、更新和卸载其自身。| 否 | 否 |
-| _TeamsAppInstallation.ReadForTeam_ | 读取团队中已安装的 Teams 应用| 允许应用读取安装在已登录用户可访问的团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 否 |
-| _TeamsAppInstallation.ReadWriteForTeam_ | 管理团队中已安装的 Teams 应用| 允许应用在已登录用户可以访问的团队中读取、安装、更新和卸载 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 否 |
+| _TeamsAppInstallation.ReadForTeam_ | 读取团队中已安装的 Teams 应用| 允许应用阅读已登录的用户可以访问的团队中安装的 Teams 应用。不提供读取应用程序特定设置的能力。| 是 | 否 |
+| _TeamsAppInstallation.ReadWriteForTeam_ | 管理团队中已安装的 Teams 应用| 允许应用在已登录的用户可以访问的团队中读取、安装、升级和卸载 Teams 应用。不提供读取应用程序特定设置的能力。| 是 | 否 |
 | _TeamsAppInstallation.ReadWriteSelfForTeam_ （个人预览版） | 允许应用在 Teams 中管理其自身| 允许 Teams 应用为已登录用户可以访问的团队读取、安装、更新和卸载其自身。| 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _TeamsAppInstallation.ReadForUser.All_ | 读取为所有用户安装的 Teams 应用| 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
-| _TeamsAppInstallation.ReadWriteForUser.All_ | 管理所有用户的 Teams 应用| 允许应用为任何用户（无需是登录的用户）读取、安装、升级和卸载 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
+| _TeamsAppInstallation.ReadForUser.All_ | 读取为所有用户安装的 Teams 应用| 允许应用读取为任何用户安装的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
+| _TeamsAppInstallation.ReadWriteForUser.All_ | 管理所有用户的 Teams 应用| 允许应用读取、安装、升级和卸载任何用户的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
 | _TeamsAppInstallation.ReadWriteSelfForUser.All_（个人预览版） | 允许应用为所有用户管理其自身| 允许 Teams 应用在没有登录用户的情况下为任何用户读取、安装、更新和卸载其自身。| 是 |
-| _TeamsAppInstallation.ReadForTeam.All_ | 读取为所有团队安装的 Teams 应用| 允许应用在没有登录用户的情况下读取安装在任何团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
+| _TeamsAppInstallation.ReadForTeam.All_ | 读取为所有团队安装的 Teams 应用| 允许应用读取任何团队中安装的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | 管理所有团队的 Teams 应用| 允许应用在没有登录用户的情况下读取、安装、更新和卸载任何团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_（个人预览版） | 允许 Teams 应用为所有团队管理其自身| 允许 Teams 应用在没有登陆用户的情况下在任何团队中读取、安装、更新和卸载其自身。| 是 |
 
@@ -2047,20 +2047,20 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 #### <a name="delegated-permissions"></a>委派权限
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsAppInstallation.ReadForUser_（个人预览版） | 读取用户已安装的 Teams 应用| 允许应用读取为已登录用户安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 否 |
-| _TeamsAppInstallation.ReadWriteForUser_ （个人预览版） | 管理用户安装的 Teams 应用| 允许应用为已登录用户读取、安装、升级和卸载已安装安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 否 | 否 |
+| _TeamsAppInstallation.ReadForUser_（个人预览版） | 读取用户已安装的 Teams 应用| 允许应用读取为登录用户安装的 Teams 应用。不提供读取应用程序特定设置的能力。| 是 | 否 |
+| _TeamsAppInstallation.ReadWriteForUser_ （个人预览版） | 管理用户安装的 Teams 应用| 允许应用读取、安装、升级和卸载为已登录的用户安装的 Teams 应用。不提供读取应用程序特定设置的能力。| 否 | 否 |
 | _TeamsAppInstallation.ReadWriteSelfForUser_ （个人预览版） | 允许应用在 Teams 中管理其自身| 允许 Teams 应用为已登录用户可以访问的团队读取、安装、更新和卸载其自身。| 是 | 否 |
-| _TeamsAppInstallation.ReadForTeam_ （个人预览版） | 读取团队中已安装的 Teams 应用| 允许应用读取安装在已登录用户可访问的团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 否 |
-| _TeamsAppInstallation.ReadWriteForTeam_（个人预览版） | 管理团队中已安装的 Teams 应用| 允许应用在已登录用户可以访问的团队中读取、安装、更新和卸载 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 否 |
+| _TeamsAppInstallation.ReadForTeam_ （个人预览版） | 读取团队中已安装的 Teams 应用| 允许应用阅读已登录的用户可以访问的团队中安装的 Teams 应用。不提供读取应用程序特定设置的能力。| 是 | 否 |
+| _TeamsAppInstallation.ReadWriteForTeam_（个人预览版） | 管理团队中已安装的 Teams 应用| 允许应用在已登录的用户可以访问的团队中读取、安装、升级和卸载 Teams 应用。不提供读取应用程序特定设置的能力。| 是 | 否 |
 | _TeamsAppInstallation.ReadWriteSelfForTeam_ （个人预览版） | 允许应用在 Teams 中管理其自身| 允许 Teams 应用为已登录用户可以访问的团队读取、安装、更新和卸载其自身。| 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _TeamsAppInstallation.ReadForUser.All_（个人预览版） | 读取为所有用户安装的 Teams 应用| 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
-| _TeamsAppInstallation.ReadWriteForUser.All_（个人预览版） | 管理所有用户的 Teams 应用| 允许应用为任何用户（无需是登录的用户）读取、安装、升级和卸载 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
+| _TeamsAppInstallation.ReadForUser.All_（个人预览版） | 读取为所有用户安装的 Teams 应用| 允许应用读取为任何用户安装的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
+| _TeamsAppInstallation.ReadWriteForUser.All_（个人预览版） | 管理所有用户的 Teams 应用| 允许应用读取、安装、升级和卸载任何用户的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
 | _TeamsAppInstallation.ReadWriteSelfForUser.All_（个人预览版） | 允许应用为所有用户管理其自身| 允许 Teams 应用在没有登录用户的情况下为任何用户读取、安装、更新和卸载其自身。| 是 |
-| _TeamsAppInstallation.ReadForTeam.All_（个人预览版） | 读取为所有团队安装的 Teams 应用| 允许应用在没有登录用户的情况下读取安装在任何团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
+| _TeamsAppInstallation.ReadForTeam.All_（个人预览版） | 读取为所有团队安装的 Teams 应用| 允许应用读取任何团队中安装的 Teams 应用，而无需登录用户。不提供读取应用程序特定设置的能力。| 是 |
 | _TeamsAppInstallation.ReadWriteForTeam.All_（个人预览版） | 管理所有团队的 Teams 应用| 允许应用在没有登录用户的情况下读取、安装、更新和卸载任何团队中的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_（个人预览版） | 允许 Teams 应用为所有团队管理其自身| 允许 Teams 应用在没有登陆用户的情况下在任何团队中读取、安装、更新和卸载其自身。| 是 |
 

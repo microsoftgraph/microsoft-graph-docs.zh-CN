@@ -1,22 +1,22 @@
 ---
-title: 列出课程
+title: 列出 educationUser 的课程
 description: '检索 class 对象的列表。 请注意，如果使用委派令牌，成员只能看到有关其自己课程的信息。 '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: de9a7585b45246a59818b6cac18ca048b3845374
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 054c5af5483c6cd85ebbf0e7fa110bb6f4a504a9
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053116"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231268"
 ---
-# <a name="list-classes"></a>列出课程
+# <a name="list-classes-of-an-educationuser"></a>列出 educationUser 的课程
 
 命名空间：microsoft.graph
 
-检索 class 对象的列表。 请注意，如果使用委派令牌，成员只能看到有关其自己课程的信息。 
+获取 [educationUser](../resources/educationclass.md) 是其中一个成员的 [educationClass](../resources/educationuser.md) 资源。
 
 <!-- Please verify the revision to the delegated token text. -->
 
@@ -28,6 +28,9 @@ ms.locfileid: "52053116"
 |委派（工作或学校帐户） |  EduRoster.ReadBasic  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+
+> [!NOTE]
+> 请注意，如果使用委派令牌，成员只能看到有关其自己课程的信息。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

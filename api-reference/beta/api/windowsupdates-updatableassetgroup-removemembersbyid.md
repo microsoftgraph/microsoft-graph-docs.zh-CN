@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 1ea11298a7aa19d60b69b98b07c003887aae30b3
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: dde1a86c363a2c8b7fe3492316bdcf5fc3593f26
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068005"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52239038"
 ---
 # <a name="updatableassetgroup-removemembersbyid"></a>updatableAssetGroup：removeMembersById
 命名空间：microsoft.graph.windowsUpdates
@@ -54,7 +54,7 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMember
 |参数|类型|说明|
 |:---|:---|:---|
 |ids|String collection|与要作为 [updatableAssetGroup](../resources/windowsupdates-updatableasset.md) 成员删除的 **updatableAsset** 资源对应的标识符列表。|
-|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
+|memberEntityType|字符串|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
 
 ## <a name="response"></a>响应
 
@@ -63,6 +63,8 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMember
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "updatableassetgroup_removemembersbyid"
@@ -81,6 +83,24 @@ Content-Type: application/json
   "memberEntityType": "#microsoft.graph.windowsUpdates.azureADDevice"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/updatableassetgroup-removemembersbyid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/updatableassetgroup-removemembersbyid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/updatableassetgroup-removemembersbyid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-removemembersbyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

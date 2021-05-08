@@ -1,22 +1,22 @@
 ---
-title: 更新 educationclass 属性
+title: 更新 educationClass
 description: 更新课程属性。
-author: mmast-msft
+author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2e0e6dff51e16f0582e2bbbde058f8e78f35d5c1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5340a05df5068942c2f895c9858e2f5cd280e24a
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051457"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231960"
 ---
-# <a name="update-educationclass-properties"></a>更新 educationclass 属性
+# <a name="update-educationclass"></a>更新 educationClass
 
 命名空间：microsoft.graph
 
-更新课程属性。
+更新 [educationClass 对象](../resources/educationclass.md) 的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,15 +41,18 @@ PATCH /education/classes/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|说明|String| 课程说明。|
-|displayName|String| 课程名称。|
-|mailNickname|String| 用于向所有用户发送电子邮件的电子邮件别名（如果已启用）。 |
-|classCode|String| 学校使用的课堂代码。|
-|externalId|String| 来自同步系统的课程 ID。 |
-|externalName|String|同步系统中的课程名称。|
-|externalSource|string| 此课程的创建方式。 可能的值包括 `sis`、`manual`、`enum_sentinel`。|
+| 属性             | 类型                                               | 说明                                                        |
+| :------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
+| displayName          | String                                             | 课程名称。                                                 |
+| mailNickname         | String                                             | 向所有成员发送电子邮件的邮件名称（如果已启用）。    |
+| 说明          | String                                             | 课程说明。                                          |
+| createdBy            | [identitySet](../resources/identityset.md)         | 创建了课程的实体                                       |
+| classCode            | String                                             | 学校用于标识课程的课程代码。               |
+| externalId           | String                                             | 来自同步系统的课程 ID。                           |
+| externalSource       | educationExternalSource                            | 此课程的创建方式。 可能的值包括： `sis` 、 `manual`   |
+| externalSourceDetail | String                                             | 生成此资源的外部源的名称。 |
+| grade                | String                                             | 课程的年级。                                          |
+| term                 | [educationTerm](../resources/educationterm.md)     | 此课程的学期。                                               |
 
 ## <a name="response"></a>响应
 如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和更新的 [educationClass](../resources/educationclass.md) 对象。
@@ -102,24 +105,26 @@ Content-length: 224
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 224
+Content-Type: application/json
 
 {
-  "id": "11014",
-  "description": "World History Level 1",
-  "classCode": "301",
+  "@odata.type": "#microsoft.graph.educationClass",
+  "id": "64ef8ce5-8ce5-64ef-e58c-ef64e58cef64",
+  "displayName": "String",
+  "mailNickname": "String",
+  "description": "String",
   "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
   },
-  "displayName": "History - World History 1",
-  "externalId": "301",
-  "externalName": "World History Level 1",
-  "externalSource": "Fabrikam High School",
-  "mailNickname": "Fabrikam"
+  "classCode": "String",
+  "externalName": "String",
+  "externalId": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "grade": "String",
+  "term": {
+    "@odata.type": "microsoft.graph.educationTerm"
+  }
 }
 ```
 
@@ -134,4 +139,3 @@ Content-length: 224
   "suppressions": [
   ]
 }-->
-

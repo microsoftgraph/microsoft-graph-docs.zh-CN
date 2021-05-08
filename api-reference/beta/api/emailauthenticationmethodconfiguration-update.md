@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8a5b0da72d13367f928991e2a3a00a526682679a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d2cdf7eeff97bc8bf28edb1fd4e139922cafa472
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776352"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231345"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>更新 emailAuthenticationMethodConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "50776352"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure Active Directory (Azure AD 租户的电子邮件 [OTP](../resources/authenticationmethodspolicies-overview.md)) 策略。
+更新[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)对象的属性，该对象表示 Azure Active Directory (Azure AD 租户的电子邮件[OTP](../resources/authenticationmethodspolicies-overview.md)) 策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50776352"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 对于委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -81,7 +81,7 @@ Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-  "allowExternalIdToUseEmailOtp": "false",
+  "allowExternalIdToUseEmailOtp": "disabled",
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

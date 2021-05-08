@@ -5,16 +5,18 @@ author: linkhp
 localization_priority: Priority
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0a9b7f09490562e40a556ac229585118fc21bb96
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ea7ff58290c8924144b3cbd30800f2886cd56039
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438538"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231946"
 ---
 # <a name="get-authenticationflowspolicy"></a>获取 authenticationFlowsPolicy
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 读取 [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) 对象的属性和关系。
 

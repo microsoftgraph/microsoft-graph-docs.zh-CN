@@ -1,22 +1,21 @@
 ---
-title: 删除 teacher
+title: '从 educationClass 中删除教师 '
 description: 从课程中删除教师。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8905fec82f2db5ad9605481dee54e36b4b5fb208
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f270dbc6a27c0beadb16cedb306aa8a7b0150b59
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943545"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231890"
 ---
-# <a name="remove-teacher"></a>删除教师
-
+# <a name="remove-teacher-from-educationclass"></a>从 educationClass 中删除教师
 命名空间：microsoft.graph
 
-从课程中删除教师。
+从 [educationClass 中删除教师](../resources/educationclass.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -95,4 +94,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

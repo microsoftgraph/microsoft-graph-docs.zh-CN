@@ -5,17 +5,19 @@ author: linkhp
 localization_priority: Priority
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1113836041f4faa89a356811e38d2ef3ac70fef4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cc7f6261e4db4b908d6ab3e0ab3c41504ce8462b
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433157"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232107"
 ---
 # <a name="authenticationflowspolicy-resource-type"></a>authenticationFlowsPolicy 资源类型
 
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示租户级别的[自助注册体验策略配置](../resources/selfservicesignupauthenticationflowconfiguration.md)，允许外部用户请求注册以进行批准。 它包含有关 ID、显示名称和说明的信息，并指示是否对该策略启用了自助注册。
 
@@ -42,12 +44,12 @@ ms.locfileid: "50433157"
 
 ``` json
 {
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "selfServiceSignUp": {
-    "@odata.type": "#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
-  },
+   "id":"String (identifier)",
+   "displayName":"String",
+   "description":"String",
+   "selfServiceSignUp":{
+      "@odata.type":"#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
+   }
 }
 ```
 

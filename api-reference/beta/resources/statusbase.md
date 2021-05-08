@@ -5,18 +5,20 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: f486066b150ccd0321f23f47089aab67d87e9f7e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3e100c1b86c8d299a7d74431715a6e9ef1464393
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950294"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231974"
 ---
-# <a name="statusbase-resource-type"></a>statusBase 资源类型
+# <a name="statusbase-resource-type-deprecated"></a>statusBase 资源类型 (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION] 
+> statusBase API 已弃用，并将于 2021 年 12 月 31 日停止返回数据。 请使用新的 [provisioningStatusInfo](provisioningstatusinfo.md) 类型。
 
 描述预配摘要事件的状态。 
 

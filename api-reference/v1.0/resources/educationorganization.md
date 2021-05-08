@@ -1,33 +1,38 @@
 ---
 title: educationOrganization 资源类型
-description: 用于对教育部门中不同组织类型之间的通用性进行建模的抽象实体。
-author: mmast-msft
+description: 抽象实体，用于对教育部门内不同组织类型之间的通用性进行建模。
+author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b4f00fc4c44b3019dccbded1fd222aa211d78c7a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b24313b6b6061449faea0ecb4880a421a2333099
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032675"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231862"
 ---
 # <a name="educationorganization-resource-type"></a>educationOrganization 资源类型
 
 命名空间：microsoft.graph
 
-用于对教育部门中不同组织类型之间的通用性进行建模的抽象实体。
+抽象实体，用于对教育部门内不同组织类型之间的通用性进行建模。
+
+继承自 [实体](../resources/entity.md)。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|说明|String| 组织说明。|
-|displayName|String| 组织显示名称。|
-|externalSource|educationExternalSource| 从中创建此组织的源。 可能的值包括 `sis`、`manual`、`unknownFutureValue`。|
+
+| 属性             | 类型                    | 说明                                                                            |
+| :------------------- | :---------------------- | :------------------------------------------------------------------------------------- |
+| 说明          | String                  | 组织说明。                                                              |
+| displayName          | String                  | 组织显示名称。                                                             |
+| externalSource       | educationExternalSource | 创建组织的来源。 可取值为：`sis`、`manual`。 |
+| externalSourceDetail | String                  | 生成此资源的外部源的名称。                     |
+| id                   | String                  | 对象标识符。 继承自 [实体](../resources/entity.md)                     |
 
 ## <a name="relationships"></a>关系
-无。
 
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,30 +40,20 @@ ms.locfileid: "48032675"
 
 <!-- {
   "blockType": "resource",
-  "abstract": true,
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.educationOrganization",
   "baseType": "microsoft.graph.entity",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.educationOrganization"
-}-->
+  "openType": false
+}
+-->
 
 ```json
 {
-  "description": "String",
+  "@odata.type": "#microsoft.graph.educationOrganization",
+  "id": "String (identifier)",
   "displayName": "String",
-  "externalSource": "string"
+  "description": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String"
 }
-
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "educationOrganization resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-

@@ -1,22 +1,22 @@
 ---
 title: 获取 educationClass
-description: "  组管理员表示班级中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
+description: 从系统检索类
 localization_priority: Normal
-author: mmast-msft
+author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4bbbe40a291657813023596d3fd42cdfcd5c3310
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 52f24e1f3c02b955874a78cdba447b697485f4a3
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048762"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232009"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
 命名空间：microsoft.graph
 
-从系统检索课程。 课程是带特殊属性的通用组，向系统表明该组是课程。 组成员表示学生；组管理员代表课程教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。
+从系统检索课程。 课程是带特殊属性的通用组，向系统表明该组是课程。 Group members represent the students;组管理员表示班级中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,10 +32,12 @@ ms.locfileid: "52048762"
 ```http
 GET /education/classes/{id}
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="optional-query-parameters"></a>可选的查询参数
+可以使用 `$select` 获取特定组属性，包括非默认返回的属性。
+
+有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -48,34 +50,23 @@ GET /education/classes/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="http"></a>[HTTP](#tab/http)
+如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [educationClass](../resources/educationclass.md) 对象。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+
 <!-- {
   "blockType": "request",
   "name": "get_educationclass"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
+}
+-->
+
+```http
+GET /education/classes/{educationClassId}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response"></a>响应
-下面展示了示例响应。 
+### <a name="response"></a>响应
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -83,38 +74,32 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationClass"
-} -->
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 224
+Content-Type: application/json
 
 {
-  "id": "11023",
-  "description": "English Level 2",
-  "classCode": "11023",
-  "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012",
+  "value": {
+    "@odata.type": "#microsoft.graph.educationClass",
+    "id": "64ef8ce5-8ce5-64ef-e58c-ef64e58cef64",
+    "displayName": "String",
+    "mailNickname": "String",
+    "description": "String",
+    "createdBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "classCode": "String",
+    "externalName": "String",
+    "externalId": "String",
+    "externalSource": "String",
+    "externalSourceDetail": "String",
+    "grade": "String",
+    "term": {
+      "@odata.type": "microsoft.graph.educationTerm"
     }
-  },
-  "displayName": "English - Language 2",
-  "externalId": "301",
-  "externalName": "English Level 1",
-  "externalSource": "School of Fine Art",
-  "mailNickname": "fineartschool.net "
+  }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get educationClass",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->

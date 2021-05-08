@@ -1,39 +1,56 @@
 ---
-title: 列出 educationClasses
+title: 列出 educationSchool 的班级
 description: 检索学校所拥有的课程列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b67fe609ccafdeb39ecd8e2fd63008770216b134
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cbd644e5994f8039a29c16f0463445d92500a865
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035482"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232030"
 ---
-# <a name="list-educationclasses"></a>列出 educationClasses
+# <a name="list-classes-of-an-educationschool"></a>列出 educationSchool 的班级
 
 命名空间：microsoft.graph
 
-检索学校所拥有的课程列表。
+获取[educationSchool](../resources/educationschool.md)所拥有的[educationClass](../resources/educationclass.md)资源。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduRoster.ReadBasic  |
-|委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :------------------------------------------ |
+| 委派（工作或学校帐户）     | EduRoster.ReadBasic                         |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /education/schools/{id}/classes
+GET /education/schools/{educationSchoolId}/classes
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+
+可以使用 OData 查询选项 `$orderby`，按 **displayName** 值对组织中的组进行排序，如下面的示例所示：
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
+```
+
+您还可以使用 和 `$filter` `$count` `$search` 查询参数来限制响应。
+
+为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+
+有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |

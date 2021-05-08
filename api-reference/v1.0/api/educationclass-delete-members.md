@@ -1,24 +1,24 @@
 ---
-title: 删除学生
+title: 从 educationClass 中删除成员
 description: 从 educationClass 删除 educationUser
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9afd89af1100b58c1df2cd0d4f6ec3c1d37a622e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e067542eec9584a74f7e163935b56ba382f87b4d
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963831"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231897"
 ---
-# <a name="remove-a-student"></a>删除学生
+# <a name="remove-member-from-educationclass"></a>从 educationClass 中删除成员
 
 命名空间：microsoft.graph
 
 从 [educationClass](../resources/educationclass.md) 删除 [educationUser](../resources/educationuser.md)
 
->**注意：** 教师 _和_ 学生包含在课程 **members** 集合中。 在调用此 API 之前，确定要删除的 **educationUser** 不是教师。  要获取教师列表，可调用 [educationclass_list_teachers](educationclass-list-teachers.md) 并验证要删除的用户的用户 ID 不在返回的教师列表中。
+> **注意：** 教师 _和_ 学生包含在课程 **members** 集合中。 在调用此 API 之前，确定要删除的 **educationUser** 不是教师。 要获取教师列表，可调用 [educationclass_list_teachers](educationclass-list-teachers.md) 并验证要删除的用户的用户 ID 不在返回的教师列表中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -97,4 +97,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

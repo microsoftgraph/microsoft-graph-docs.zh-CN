@@ -1,16 +1,16 @@
 ---
 title: 发起者资源类型
-description: 描述设置事件发起人或发起者。
+description: 描述发起预配事件的人或发起者。
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 2aa8c3f365402569d7a9987d9152bae5e4e3c580
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f1085b6a9b04ef2ad3cd584ac9e0d4dc6c88f037
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130241"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232058"
 ---
 # <a name="initiator-resource-type"></a>发起者资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "50130241"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述设置事件发起人或发起者。 
+描述发起预配事件的人或发起者。 
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|发起预配事件的人员或服务的名称。|
-|id|字符串|唯一标识发起预配事件的人员或服务。|
-|initiatorType|字符串| 发起人的类型。 可取值为：`user`、`app`、`system`、`unknownFutureValue`。|
+|displayName|String|发起预配事件的人员或服务的名称。|
+|id|String|唯一标识发起预配事件的人员或服务。|
+|initiatorType|String| 发起人的类型。 可取值为：`user`、`application`、`system`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

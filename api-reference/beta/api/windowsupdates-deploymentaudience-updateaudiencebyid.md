@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 60970c5d6b02d8c9de79e206eab2360a156c5eee
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 81404ad4807f045b75b3b161ec361f06b622f78b
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067839"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240576"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience：updateAudienceById
 命名空间：microsoft.graph.windowsUpdates
@@ -57,11 +57,11 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 
 |参数|类型|说明|
 |:---|:---|:---|
-|memberEntityType|String|可更新资源的完整类型。 可取值为：`#microsoft.graph.windowsUpdates.azureADDevice`、`#microsoft.graph.windowsUpdates.updatableAssetGroup`。|
-|addMembers|字符串集合|与要添加为部署访问群体成员的可更新资产对应的标识符列表。|
-|removeMembers|字符串集合|与要作为部署访问群体成员删除的可更新资源相对应的标识符列表。|
-|addExclusions|字符串集合|与要作为部署访问群体排除项添加的可更新资源相对应的标识符列表。|
-|removeExclusions|字符串集合|与要作为部署访问群体排除项删除的可更新资源相对应的标识符列表。|
+|memberEntityType|字符串|可更新资源的完整类型。 可取值为：`#microsoft.graph.windowsUpdates.azureADDevice`、`#microsoft.graph.windowsUpdates.updatableAssetGroup`。|
+|addMembers|String collection|与要添加为部署访问群体成员的可更新资产对应的标识符列表。|
+|removeMembers|String collection|与要作为部署访问群体成员删除的可更新资源相对应的标识符列表。|
+|addExclusions|String collection|与要作为部署访问群体排除项添加的可更新资源相对应的标识符列表。|
+|removeExclusions|String collection|与要作为部署访问群体排除项删除的可更新资源相对应的标识符列表。|
 
 
 
@@ -73,6 +73,8 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "deploymentaudience_updateaudiencebyid"
@@ -99,6 +101,24 @@ Content-length: 204
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/deploymentaudience-updateaudiencebyid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/deploymentaudience-updateaudiencebyid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/deploymentaudience-updateaudiencebyid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudiencebyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

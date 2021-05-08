@@ -5,18 +5,20 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d817c0aa46dde6b49debd849d8fd2ae61e06a672
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ae11d370fb0a92a03e497aec75550f5407934839
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956818"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231904"
 ---
-# <a name="statusdetails-resource-type"></a>statusDetails 资源类型
+# <a name="statusdetails-resource-type-deprecated"></a>statusDetails 资源类型 (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION] 
+> statusDetails API 已弃用，并将于 2021 年 12 月 31 日停止返回数据。 请使用新的 [provisioningStatusInfo](provisioningstatusinfo.md) 类型。
 
 描述设置事件的状态和相关错误。 它继承自 [statusBase，](/graph/api/resources/statusbase) 并且仅在 status 设置为 时使用 `failure` 。  
 

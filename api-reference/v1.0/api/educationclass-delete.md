@@ -1,22 +1,25 @@
 ---
 title: 删除 educationClass
 description: 删除课程。 课程也是通用组，因此删除课程时也会删除组。
+author: mlafleur
 localization_priority: Normal
-author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 99c342f1682018af9c7bba8026c6a73139e6425b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4f3d509364168227766465ead899340b00f24f83
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028936"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232023"
 ---
 # <a name="delete-educationclass"></a>删除 educationClass
 
 命名空间：microsoft.graph
 
-删除课程。 课程也是通用组，因此删除课程时也会删除组。
+删除 [educationClass](../resources/educationclass.md)。
+
+> [!IMPORTANT]
+> 课程也是通用组，因此删除课程时也会删除组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -97,4 +100,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

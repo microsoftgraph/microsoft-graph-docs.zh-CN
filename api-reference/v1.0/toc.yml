@@ -311,7 +311,7 @@ items:
                 href: api/user-list-transitivememberof.md
           - name: 见解
             items:
-              - name: Office Graph 见解
+              - name: Office Graph见解
                 href: resources/officegraphinsights.md
                 items:
                   - name: 共享的列表
@@ -352,7 +352,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注意
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -380,10 +380,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: 更新邮箱设置
                     href: api/user-update-mailboxsettings.md
-              - name: Outlook 用户服务
+              - name: Outlook用户服务
                 expanded: true
                 items:
-                  - name: Outlook 用户
+                  - name: Outlook用户
                     href: resources/outlookuser.md
                   - name: 创建类别
                     href: api/outlookuser-post-mastercategories.md
@@ -3691,15 +3691,17 @@ items:
             href: resources/educationschool.md
             items:
               - name: 列出学校
-                href: api/educationroot-list-schools.md
+                href: api/educationschool-list.md
               - name: 创建学校
-                href: api/educationroot-post-schools.md
+                href: api/educationschool-post.md
               - name: 获取学校
                 href: api/educationschool-get.md
               - name: 更新学校
                 href: api/educationschool-update.md
               - name: 删除学校
                 href: api/educationschool-delete.md
+              - name: 获取对学校所做的更改
+                href: api/educationschool-delta.md
               - name: 列出课程
                 href: api/educationschool-list-classes.md
               - name: 创建课程
@@ -3715,18 +3717,18 @@ items:
           - name: 课程
             href: resources/educationclass.md
             items:
-              - name: 列出学校
-                href: api/educationclass-list-schools.md
               - name: 列出课程
-                href: api/educationroot-list-classes.md
+                href: api/educationclass-list.md
               - name: 创建课程
-                href: api/educationroot-post-classes.md
+                href: api/educationclass-post.md
               - name: 获取课程
                 href: api/educationclass-get.md
               - name: 更新课程
                 href: api/educationclass-update.md
               - name: 删除课程
                 href: api/educationclass-delete.md
+              - name: 获取对类的更改
+                href: api/educationclass-delta.md
               - name: 列出教师
                 href: api/educationclass-list-teachers.md
               - name: 添加教师
@@ -3742,14 +3744,20 @@ items:
           - name: 用户
             href: resources/educationuser.md
             items:
-              - name: 列出学校
-                href: api/educationuser-list-schools.md
-              - name: 列出课程
-                href: api/educationuser-list-classes.md
+              - name: 列出用户
+                href: api/educationuser-list.md
+              - name: 创建用户
+                href: api/educationuser-post.md
               - name: 获取用户
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
+              - name: 获取用户更改
+                href: api/educationuser-delta.md
+              - name: 列出课程
+                href: api/educationuser-list-classes.md
+              - name: 列出课程
+                href: api/educationuser-list-taughtclasses.md
       - name: 扩展
         items:
           - name: 开放扩展
@@ -4110,7 +4118,7 @@ items:
                         href: api/fido2authenticationmethodconfiguration-update.md
                       - name: 删除
                         href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Microsoft Authenticator 策略
+                  - name: Microsoft Authenticator策略
                     href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: 获取
@@ -4470,7 +4478,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: 更新
                         href: api/identityapiconnector-update.md
-                      - name: 上载客户端证书
+                      - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
@@ -4910,7 +4918,12 @@ items:
                     href: api/signin-list.md
                   - name: 获取登录
                     href: api/signin-get.md
-          - name: Microsoft 365 使用情况报告
+              - name: 预配
+                href: resources/provisioningobjectsummary.md
+                items:
+                  - name: 列表预配
+                    href: api/provisioningobjectsummary-list.md
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -4963,7 +4976,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: 获取存储
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Microsoft 365 激活
+              - name: Microsoft 365激活
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: 获取用户详细信息
@@ -4972,7 +4985,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: 获取用户计数
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Microsoft 365 活跃用户
+              - name: Microsoft 365活动用户
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: 获取用户详细信息
@@ -4981,7 +4994,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: 获取服务用户计数
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Microsoft 365 组活动
+              - name: Microsoft 365组活动
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: 获取组详细信息

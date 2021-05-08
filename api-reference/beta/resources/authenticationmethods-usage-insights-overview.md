@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 54f3b823fc1d1c62df07ac6dd9e61f5ea32a2871
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 53ec8c6046c9682c0bdea607a942cb673671d0b3
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135483"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231642"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>使用身份验证方法使用情况报告 API
 
@@ -18,12 +18,12 @@ ms.locfileid: "50135483"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-身份验证方法使用情况报告可帮助你了解组织中用户如何使用 Azure Active Directory (Azure AD) 功能，如多重身份验证 (MFA) 、Self-Service 密码重置 (SSPR) 和无密码身份验证。
+身份验证方法使用情况报告可帮助你了解贵组织的用户如何使用 Azure Active Directory (Azure AD) 功能，如多重身份验证 (MFA) 、Self-Service 密码重置 (SSPR) 和无密码身份验证。
 
-这些报告提供如下信息：
+这些报告提供以下信息：
 
 - 每个身份验证方法注册的用户数
-- 注册多重身份验证 (MFA) 、Self-Service 密码重置 (SSPR) 和无密码身份验证等功能的用户数。
+- 注册多重身份验证、MFA (、SSPR) Self-Service 密码重置 (SSPR) 等功能的用户数。
 - 每个身份验证方法的失败率 
 
 ## <a name="permissions"></a>权限
@@ -31,9 +31,9 @@ ms.locfileid: "50135483"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Reports.Read.All|
+|委派（工作或学校帐户）|Reports.Read.All<br>AuditLogs.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用|Reports.Read.All<br>AuditLogs.Read.All|
 
 若要访问 API， [需要以下角色之](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 一：
 
@@ -45,7 +45,7 @@ ms.locfileid: "50135483"
 
 ## <a name="licenses"></a>许可证
 
-需要 Azure AD Premium P1 或 P2 许可证才能访问使用情况和见解。 Azure AD 多重身份验证和自助服务密码重置 (SSPR) 可在 Azure Active Directory 定价网站上找到 [许可信息](https://azure.microsoft.com/pricing/details/active-directory/)。
+需要 Azure AD 高级版 P1 或 P2 许可证才能访问使用情况和见解。 Azure AD Multi-Factor Authentication and self-service password reset (SSPR) licensing information can be found on the [Azure Active Directory pricing site](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## <a name="common-requests"></a>常见请求
 
@@ -53,15 +53,15 @@ ms.locfileid: "50135483"
 
 | Operation | 在 Graph 浏览器中试用 | 说明 |
 | --------- | --- | ----------- |
-| [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | 获取注册自助密码重置和 MFA 的用户数。 |
+| [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | 获取注册自助服务密码重置和 MFA 的用户数。 |
 | [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | 获取使用自助服务密码重置的用户数。 |
 | [credentialUserRegistrationDetails](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | 获取自助服务密码重置和 MFA 注册活动的用户详细信息。 |
-| [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | 获取所有自助式密码重置活动的用户详细信息。 |
+| [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | 获取所有自助服务密码重置活动的用户详细信息。 |
 | [usersRegisteredByFeature](/graph/api/resources/userregistrationfeaturesummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByFeature](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')&version=beta) | 获取能够进行多重身份验证、自助服务密码重置和无密码身份验证的用户数量。 |
-| [usersRegisteredByMethod](/graph/api/resources/userregistrationmethodsummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=beta) | 获取每个身份验证方法注册的用户数。 |
+| [usersRegisteredByMethod](/graph/api/resources/userregistrationmethodsummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=beta) | 获取针对每个身份验证方法注册的用户数。 |
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解如何部署 [Azure Active Directory 自助服务密码重置](/azure/active-directory/authentication/howto-sspr-deployment)。
-- 了解如何部署[Azure Active Directory MFA。](/azure/active-directory/authentication/howto-mfa-getstarted)
+- 了解如何部署[Azure Active Directory密码重置。](/azure/active-directory/authentication/howto-sspr-deployment)
+- 了解如何部署Azure Active Directory [MFA。](/azure/active-directory/authentication/howto-mfa-getstarted)
 - 了解如何启用组合 [安全信息注册](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)。

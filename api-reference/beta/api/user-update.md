@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 085bd1e6037b6269ed573d4f684b51220b7ce775
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a1272d3c3340308be5ebdf68d6542b77f073ac4c
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955349"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232086"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -18,7 +18,7 @@ ms.locfileid: "50955349"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [user](../resources/user.md) 对象的属性。 并非所有属性都可以由具有默认权限（没有管理员角色）的"成员"或"来宾"用户进行更新。 [比较成员和来宾默认权限](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) 以查看他们可以管理的属性。
+更新 [user](../resources/user.md) 对象的属性。 并非所有属性都可以在没有管理员角色的情况下由具有其默认权限的成员或来宾用户更新。 [比较成员和来宾默认](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) 权限，查看其可管理的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,8 +31,8 @@ ms.locfileid: "50955349"
 
 >[!NOTE]
 > - 更新 **passwordProfile** 属性时，需要以下权限：Directory.AccessAsUser.All。
-> - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 Azure AD (角色中的) 密码[管理员"。](/azure/active-directory/roles/permissions-reference)  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
-> - 必须使用个人 Microsoft 帐户的 User.ReadWrite 委派权限将你的个人 Microsoft 帐户绑定到 AAD 租户才能更新你的配置文件。
+> - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 内置角色帮助人员（密码）](/azure/active-directory/roles/permissions-reference)。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
+> - 个人 Microsoft 帐户必须绑定到 AAD 租户，才能使用 User.ReadWrite 对个人 Microsoft 帐户的委派权限更新配置文件。
 > - 更新 **identities** 属性需要 User.ManageIdentities.All 权限。 此外，不允许将 [B2C 本地帐户](../resources/objectidentity.md)添加到现有 **user** 对象，除非 **user** 对象已包含本地帐户标识。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -65,32 +65,33 @@ PATCH /users/{id | userPrincipalName}
 |department|String|用户工作部门的名称。|
 |displayName|String|用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 支持 `$filter` 和 `$orderby`。|
 |employeeId|String|由组织分配给该用户的员工标识符。|
+| employeeType | String | 捕获企业工作线程类型。 例如， `Employee` 、 `Contractor` `Consultant` 、 或 `Vendor` 。 仅在 `$select` 上返回。 支持 `$filter` 运算符 `eq` 。|
 |givenName|String|用户的名。|
 |hireDate|DateTimeOffset|用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对标识 **的任何** 更新都将替换整个集合，并且必须在集合中提供 userPrincipalName **signInType** 标识。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
-|mail|String|用户的 SMTP 地址，例如 `jeff@contoso.onmicrosoft.com` ， 。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 <br><br>默认情况下返回。 支持 `$filter`。|
+|mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 <br><br>默认情况下返回。 支持 `$filter`。|
 |mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
 |officeLocation|String|用户公司地点的办公室位置。|
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。 如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，必须在创建新用户帐户时指定此属性。 **重要说明：** 指定此属性时不能使用 **$** 和 **_** 字符。                            |
 |otherMails|String |用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。|
-|passwordPolicies|String|指定用户的密码策略。 此值是一个枚举，其中一个可能的值是 ，这允许指定比 `DisableStrongPassword` 默认策略弱的密码。 `DisablePasswordExpiration` 也可以指定 。 可以同时指定这两者;例如 `DisablePasswordExpiration, DisableStrongPassword` ：。|
+|passwordPolicies|String|指定用户的密码策略。 此值表示枚举，其中一个可能 `DisableStrongPassword`为枚举值，允许指定超过默认策略的密码。 `DisablePasswordExpiration` 也可以指定 。 可同时指定两者;例如： `DisablePasswordExpiration, DisableStrongPassword`。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
-|preferredLanguage|String|用户的首选语言。 应遵循 ISO 639-1 代码;例如 `en-US` 。|
+|preferredLanguage|String|用户的首选语言。 应遵循 ISO 639-1 代码;例如， `en-US`。|
 |responsibilities|String collection|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
 |skills|String collection|供用户枚举其技能的列表。|
 |state|String|用户地址中的省/市/自治区或省。|
 |streetAddress|String|用户公司地点的街道地址。|
 |surname|String|用户的姓氏。|
-|usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括 `US` ：、 `JP` 和 `GB` 。 不可为 null。|
+|usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括： `US`、 `JP`和 `GB`。 不可为 null。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
-|userType|String|可用于对目录中的用户类型进行分类的字符串值，例如 `Member` 和 `Guest` 。          |
+|userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。          |
 
 由于 **用户** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作在现有用户实例的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
 

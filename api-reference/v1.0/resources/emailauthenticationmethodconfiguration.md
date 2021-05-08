@@ -5,18 +5,18 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bcc1a355db78dc697df892cd2f6129ef3caa3bac
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 06b7159cd14df1ee5826f4d11275e44f7819008a
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469064"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231820"
 ---
 # <a name="emailauthenticationmethodconfiguration-resource-type"></a>emailAuthenticationMethodConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-表示此租户的电子邮件 OTP 身份验证方法策略。 身份验证方法策略定义配置设置以及能够使用身份验证方法的用户或组。 租户的云本机用户可能会使用电子邮件 OTP 进行自助服务密码重置，或在某些情况下由外部用户用于身份验证。
+表示此租户的电子邮件 OTP 身份验证方法策略。 身份验证方法策略定义配置设置以及能够使用身份验证方法的用户或组。 租户的云本机用户可能会使用电子邮件 OTP 进行自助服务密码重置，或者外部用户在邀请兑换和自助注册用户流中的特定应用期间进行身份验证。
 
 ## <a name="methods"></a>方法
 
@@ -31,8 +31,8 @@ ms.locfileid: "51469064"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|身份验证方法策略标识符。 继承自 [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)。|
-|state|authenticationMethodState|指示是否启用此身份验证方法。 可取值为：`enabled`、`disabled`。|
-|allowExternalIdToUseEmailOtp|externalEmailOtpState|确定外部用户是否可以使用电子邮件 OTP 进行身份验证。 可取值为：`default`、`enabled`、`disabled`、`unknownFutureValue`。 从 2021 年 3 月开始，不使用公共预览的州中的租户将自动启用电子邮件 `default` OTP。|
+|状态|authenticationMethodState|指示是否启用此身份验证方法。 可取值为：`enabled`、`disabled`。|
+|allowExternalIdToUseEmailOtp|externalEmailOtpState|确定外部用户是否可以使用电子邮件 OTP 进行身份验证。 可取值为：`default`、`enabled`、`disabled`、`unknownFutureValue`。 从 2021 年 10 开始，不使用公共预览的州中的租户将自动启用电子邮件 `default` OTP。|
 
 ## <a name="relationships"></a>关系
 

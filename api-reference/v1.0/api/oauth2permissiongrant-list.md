@@ -5,18 +5,21 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 11fbc184213f485ae70b19c8997f3eabd3211d7f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3936c820e939032b456b60f8bd591c298ebc3c44
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050428"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231953"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
 命名空间：microsoft.graph
 
 检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象代表已授予客户端应用程序代表登录用户访问 API 的委派权限。
+
+> [!NOTE]
+> 此请求可能有最近创建、更新或删除的委派权限授予的复制延迟。 如果指定了筛选，此延迟 `clientId` 将最小化。
 
 ## <a name="permissions"></a>权限
 

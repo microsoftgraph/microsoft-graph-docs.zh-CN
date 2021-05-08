@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: a772631a753d6f2d69402970f9a214da141f9e5f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: e81614ba6c17955e8199e5c5aae6c643d93e9068
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516947"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232037"
 ---
 # <a name="printer-resource-type"></a>打印机资源类型
 
@@ -25,20 +25,20 @@ ms.locfileid: "50516947"
 
 继承自 [printerBase](../resources/printerbase.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-| [创建](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建 (通用) 新打印机上注册。 |
+| [创建](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建 (通用) 新打印机进行注册。 |
 | [获取](../api/printer-get.md) | [打印机](printer.md) | 读取打印机对象的属性和关系。 |
 | [更新](../api/printer-update.md) | [打印机](printer.md) | 更新打印机对象。 |
 | [删除](../api/printer-delete.md) | 无 | 从通用打印服务中注销物理打印机。 |
 | [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | 无 | 将打印机的默认设置还原到制造商指定的值。 |
-| [列出作业](../api/printer-list-jobs.md) | [printJob](printjob.md) 集合 | 获取已排入队列以由打印机处理的打印作业的列表。 |
-| [创建作业](../api/printer-post-jobs.md) | [printJob](printjob.md) | 为打印机创建新的打印作业。 若要开始打印作业，请使用"开始["。](../api/printjob-start.md) |
+| [列出作业](../api/printer-list-jobs.md) | [printJob](printjob.md) 集合 | 获取已排队等待打印机处理的打印作业的列表。 |
+| [创建作业](../api/printer-post-jobs.md) | [printJob](printjob.md) | 为打印机创建新的打印作业。 若要开始打印作业 [，请使用](../api/printjob-start.md)start 。 |
 | [List connectors](../api/printer-list-connectors.md) | [printConnector](printconnector.md) 集合 | 获取与此打印机关联的连接器列表。 |
-| [列出共享项](../api/printer-list-shares.md) | [printerShare](printerShare.md) 集合 | 获取与此打印机关联的 printerShares 列表。 目前，只能将一个 printerShare 与打印机关联。 |
-| [List taskTriggers](../api/printer-list-tasktriggers.md) | 无 | 列出[与此打印机关联的 printTaskTriggers。](printtasktrigger.md) |
-| [Create taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | 创建在打印事件发生时运行的[printTaskTrigger。](printtasktrigger.md) |
+| [列出共享项](../api/printer-list-shares.md) | [printerShare](printerShare.md) 集合 | 获取与此打印机关联的 printerShares 列表。 目前，只有一个 printerShare 可以与打印机关联。 |
+| [List taskTriggers](../api/printer-list-tasktriggers.md) | 无 | 列出[与此打印机关联的 printTaskTrigger。](printtasktrigger.md) |
+| [Create taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | 创建[在打印事件发生时运行的 printTaskTrigger。](printtasktrigger.md) |
 | [Delete taskTrigger](../api/printer-delete-tasktrigger.md) | 无 | 删除[与打印机关联的 printTaskTrigger。](printtasktrigger.md) |
 
 ## <a name="properties"></a>属性
@@ -56,12 +56,13 @@ ms.locfileid: "50516947"
 |位置|[printerLocation](printerlocation.md)|打印机的物理和/或组织位置。 继承自 [printerBase](../resources/printerbase.md)。|
 |defaults|[printerDefaults](printerdefaults.md)|打印机的默认打印设置。 继承自 [printerBase](../resources/printerbase.md)。|
 |capabilities|[printerCapabilities](printercapabilities.md)|与此打印机共享关联的打印机的功能。 继承自 [printerBase](../resources/printerbase.md)。|
+|lastSeenDateTime|DateTimeOffset|打印机与通用打印交互时的最新 dateTimeOffset。 只读。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |jobs|[printJob](printjob.md) 集合| 由打印机排入打印队列的作业列表。  继承自 [printerBase](../resources/printerbase.md)。|
-|shares|[printerShare](printershare.md) 集合| 与打印机关联的 printerShares 列表。 目前，只能将一个 printerShare 与打印机关联。 只读。 可为 NULL。|
+|shares|[printerShare](printershare.md) 集合| printerShares 与打印机关联的列表。 目前，只有一个 printerShare 可以与打印机关联。 只读。 可为 NULL。|
 |连接器|[printConnector](printconnector.md)|与打印机关联的连接器。|
 |taskTriggers|[printTaskTrigger](printtasktrigger.md) 集合|与打印机关联的任务触发器列表。|
 
@@ -97,7 +98,8 @@ ms.locfileid: "50516947"
   },
   "registeredDateTime": "String (timestamp)",
   "isShared": "Boolean",
-  "hasPhysicalDevice": "Boolean"
+  "hasPhysicalDevice": "Boolean",
+  "lastSeenDateTime": "String (timestamp)"
 }
 ```
 

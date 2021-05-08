@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d46aea166ddef92c58cabc7141246bc9dcd897ae
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9f0b19a44998134d9b4fc1b3d25b194c10ed80e4
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042658"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231380"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>获取 emailAuthenticationMethodConfiguration
 
@@ -112,7 +112,7 @@ Content-length: 491
       "@odata.type":"#microsoft.graph.emailAuthenticationMethodConfiguration",
       "id":"Email",
       "state":"enabled",
-      "allowExternalIdToUseEmailOtp":"True",
+      "allowExternalIdToUseEmailOtp":"enabled",
       "includeTargets":[
          {
             "targetType":"group",

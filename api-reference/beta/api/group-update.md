@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 300369a97237865faa8c8bb9842352880007a1ea
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: 51a34d50801914dcc3e1e10c1813c25543880c0b
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996134"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240754"
 ---
 # <a name="update-group"></a>更新组
 
@@ -20,7 +20,7 @@ ms.locfileid: "51996134"
 
 更新 group [对象的属性](../resources/group.md) 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,11 +54,11 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Boolean|默认值为“`false`”。 指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 当组上的 **subscriptionEnabled** 设置为 `false` 时，**autoSubscribeNewMembers** 不能为 `true`。|
 |说明|String|可选的组说明。|
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
-|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
+|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified，** 则组是一Microsoft 365组;否则，它是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
-|securityEnabled|布尔|指定组是否是安全组，包括 Microsoft 365 组。 |
-|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|
+|securityEnabled|Boolean|指定组是否是安全组，包括Microsoft 365组。 |
+|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|
 
 由于 **组** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有组实例中扩展的自定义属性中你自己的特定于 `PATCH` 应用的数据。
 
@@ -95,8 +95,8 @@ Content-type: application/json
 Content-length: 211
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
+   "description":"description-value",
+   "displayName":"displayName-value"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -130,10 +130,10 @@ Content-length: 211
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>示例 2：将敏感度标签应用于 Microsoft 365 组
+### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>示例 2：将敏感度标签应用于Microsoft 365组
 #### <a name="request"></a>请求
 
-可以使用列表标签 获取要应用于 Microsoft 365 组[的标签的 ID。](informationprotectionpolicy-list-labels.md) 然后，可以使用标签 ID 更新组的 [assignedLabels](../resources/assignedlabel.md) 属性。 
+可以使用列表标签 获取要应用于组Microsoft 365 [ID。](informationprotectionpolicy-list-labels.md) 然后，可以使用标签 ID 更新组的 [assignedLabels](../resources/assignedlabel.md) 属性。 
 
 
 # <a name="http"></a>[HTTP](#tab/http)

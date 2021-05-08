@@ -1,97 +1,93 @@
 ---
 title: educationClass 资源类型
-description: '表示学校的课程。 **EducationClass**资源对应于 Microsoft 365 组并共享相同的 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。  '
+description: '表示学校的课程。 **educationClass** 资源对应于 Microsoft 365 组并共享同一 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。  '
 localization_priority: Normal
-author: mmast-msft
+author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 57e3204e15755e9ec7ce0150f46c6f0409ca3120
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 528ea878ad5ed507c83a750d617209b4cde3d589
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032689"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231516"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
 命名空间：microsoft.graph
 
-表示学校的课程。 **EducationClass**资源对应于 Microsoft 365 组并共享相同的 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。  
+表示学校的课程。 **educationClass** 资源对应于 Microsoft 365 组并共享同一 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。
 
+继承自 [实体](../resources/entity.md)。
 
 ## <a name="methods"></a>方法
 
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[Get educationClass](../api/educationclass-get.md) | [educationClass](educationclass.md) |读取 **educationClass** 对象的属性和关系。|
-|[Add member](../api/educationclass-post-members.md) |[educationUser](educationuser.md)| 通过发布到 members 导航属性，为课程添加一个新的 **educationUser**。|
-|[List members](../api/educationclass-list-members.md) |[educationUser](educationuser.md) 集合| 获取 **educationUser** 对象集合。|
-|[Remove student](../api/educationclass-delete-members.md) |[educationUser](educationuser.md)| 通过成员导航属性从课程删除 **educationUser**。|
-|[List schools](../api/educationclass-list-schools.md) |[educationSchool](educationschool.md) 集合| 获取 **educationSchool** 对象集合。|
-|[Add teacher](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| 通过发布到 teachers 导航属性，为课程添加一个新的 **educationUser**。|
-|[List teachers](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md) 集合| 获取课程的教师列表。|
-|[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| 通过教师导航属性从课程删除 **educationUser**。|
-|[Get group](../api/educationclass-get-group.md) |[组](group.md)| 获取与此**educationClass**对应的 Microsoft 365**组**。|
-|[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |更新 **educationClass** 对象。 |
-|[删除](../api/educationclass-delete.md) | 无 |删除 **educationClass** 对象。 |
+| 方法                                                   | 返回类型                                                 | 说明                                                                                          |
+| :------------------------------------------------------- | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| [列出 educationClasses](../api/educationclass-list.md)   | [educationClass](../resources/educationclass.md) 集合 | 获取 [educationClass 对象](../resources/educationclass.md) 及其属性的列表。     |
+| [Create educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | 创建新的 [educationClass](../resources/educationclass.md) 对象。                                |
+| [Get educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | 读取 [educationClass](../resources/educationclass.md) 对象的属性和关系。 |
+| [更新 educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | 更新 [educationClass 对象](../resources/educationclass.md) 的属性。                 |
+| [删除 educationClass](../api/educationclass-delete.md) | 无                                                        | 删除 [educationClass](../resources/educationclass.md) 对象。                                  |
+| [增量](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) 集合 | 获取资源集合的增量更改。                                                  |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|id| String| 课程的唯一标识符。|
-|description|String| 课程说明。|
-|displayName|String| 课程名称。|
-|mailNickname|String| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
-|createdBy|[identitySet](identityset.md)| 创建了课程的实体 |
-|classCode|String| 学校用于标识课程的课程代码。|
-|externalId|String| 来自同步系统的课程 ID。 |
-|externalName|String|同步系统中的课程名称。|
-|externalSource|educationExternalSource| 此课程的创建方式。 可能的值包括 `sis`、`manual`、`unknownFutureValue`。|
-|term|[educationTerm](educationterm.md)|此课程的学期。|
+
+| 属性             | 类型                                           | 说明                                                        |
+| :------------------- | :--------------------------------------------- | :----------------------------------------------------------------- |
+| id                   | String                                         | 对象标识符。 继承自 [实体](../resources/entity.md)。 |
+| displayName          | String                                         | 课程名称。                                                 |
+| mailNickname         | String                                         | 向所有成员发送电子邮件的邮件名称（如果已启用）。    |
+| 说明          | String                                         | 课程说明。                                          |
+| createdBy            | [identitySet](../resources/identityset.md)     | 创建了课程的实体                                       |
+| classCode            | String                                         | 学校用于标识课程的课程代码。               |
+| externalName         | String                                         | 同步系统中的课程名称。                           |
+| externalId           | String                                         | 来自同步系统的课程 ID。                           |
+| externalSource       | educationExternalSource                        | 此课程的创建方式。 可取值为：`sis`、`manual`。  |
+| externalSourceDetail | String                                         | 生成此资源的外部源的名称。 |
+| grade                | String                                         | 课程的年级。                                          |
+| term                 | [educationTerm](../resources/educationterm.md) | 此课程的学期。                                               |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
-|:---------------|:--------|:----------|
-|成员|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为 NULL。|
-|schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为 NULL。|
-|teachers|[educationUser](../resources/educationuser.md) 集合|  课程中的所有教师。 可为 NULL。|
-|group|[组](../resources/group.md)| 与此类对应的目录组。|
+
+| 关系 | 类型                                                          | 说明                                               |
+| :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
+| group        | [组](../resources/group.md)                                | 组Microsoft 365对象。                |
+| members      | [educationUser](../resources/educationuser.md) 集合     | 课程中的所有用户。 可为 NULL。                         |
+| schools      | [educationSchool](../resources/educationschool.md) 集合 | 与此课程相关的所有学校。 可为 NULL。 |
+| teachers     | [educationUser](../resources/educationuser.md) 集合     | 课程中的所有教师。 可为 Null。                      |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
   "keyProperty": "id",
+  "@odata.type": "microsoft.graph.educationClass",
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.educationClass"
-}-->
+  "openType": false
+}
+-->
 
 ```json
 {
-  "id": "String",
-  "description": "String",
-  "classCode": "String",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "@odata.type": "#microsoft.graph.educationClass",
+  "id": "String (identifier)",
   "displayName": "String",
-  "externalId": "String",
-  "externalName": "String",
-  "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.educationTerm"}
+  "description": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "classCode": "String",
+  "externalName": "String",
+  "externalId": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "grade": "String",
+  "term": {
+    "@odata.type": "microsoft.graph.educationTerm"
+  }
 }
-
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "educationClass resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
