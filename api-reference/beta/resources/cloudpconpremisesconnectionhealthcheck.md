@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 576319abab0894530f363059cb2f07d787f80c7c
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: adc215b32635476320913b2d14aac33ec6ccfc95
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266827"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241147"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>cloudPcOnPremisesConnectionHealthCheck 资源类型
 
@@ -32,13 +32,13 @@ ms.locfileid: "52266827"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|此显示名称检查项目的详细信息。|
+|displayName|字符串|此显示名称检查项目的详细信息。|
 |状态|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|运行状况检查项目的状态。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
 |startDateTime|DateTimeOffset|运行状况检查项目的开始时间。 只读。|
 |endDateTime|DateTimeOffset|运行状况检查项目的结束时间。 只读。|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|此运行状况检查期间发生的错误类型。|
-|recommendedAction|String|修复相应错误的推荐操作。|
-|additionalDetails|String|有关运行状况检查或建议操作的其他详细信息。|
+|recommendedAction|字符串|修复相应错误的推荐操作。|
+|additionalDetails|字符串|有关运行状况检查或建议操作的其他详细信息。|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>cloudPcOnPremisesConnectionHealthCheckErrorType 值
 
@@ -54,14 +54,13 @@ ms.locfileid: "52266827"
 |adJoinCheckUnknownError|由于未知错误，活动域加入检查失败。 请联系客户支持。|
 |endpointConnectivityCheckUrlNotWhitelisted|终结点连接检查失败，因为 URL 不在网络防火墙设置中的 allowlist 上。 请将 URL 添加到网络防火墙设置的允许列表。 有关 [URL 信息，请参阅](/azure/virtual-desktop/safe-url-list) 所需的 URL 列表。|
 |endpointConnectivityCheckUnknownError|由于未知错误，终结点连接检查失败。 请联系客户支持。|
-|aadConnectivityCheckUnknownError|由于未知错误，Azure Active Directory 连接检查失败。 请联系客户支持。|
+|aadConnectivityCheckUnknownError|由于Azure Active Directory未知，连接检查失败。 请联系客户支持。|
 |resourceAvailabilityCheckNoSubnetIP|资源可用性检查失败，因为子网中没有任何可用的 IP 地址。 请释放部分或更改为其他子网，然后重试。|
 |resourceAvailabilityCheckSubscriptionDisabled|由于已禁用 Azure 订阅，资源可用性检查失败。 请重新启用订阅。|
-|resourceAvailabilityCheckUnsupportedVNetRegion|所选 vNet 不在受支持的 Azure 区域。|
 |resourceAvailabilityCheckUnknownError|由于未知错误，资源可用性检查失败。 请联系客户支持。|
-|permissionCheckNoSubscriptionReaderRole|云电脑服务主体对指定的 Azure 订阅没有读者权限。 请与订阅所有者合作，在角色分配 Azure 订阅上添加读卡器。|
-|permissionCheckNoResourceGroupOwnerRole|云电脑服务主体对指定的资源组没有所有者权限。 Please work with the subscription owner to add owner 角色分配 on the resource group for the Cloud PC service principal.|
-|permissionCheckNoVNetContributorRole|云电脑服务主体对指定的虚拟网络没有网络参与者权限。 请与订阅所有者合作，为云电脑角色分配添加网络参与者。 |
+|permissionCheckNoSubscriptionReaderRole|Cloud PC服务主体对指定的 Azure 订阅没有读者权限。 请与订阅所有者合作，在 azure 角色分配服务主体的 Azure 订阅Cloud PC读者。|
+|permissionCheckNoResourceGroupOwnerRole|Cloud PC服务主体对指定的资源组没有所有者权限。 Please work with the subscription owner to add owner 角色分配 on the resource group for the Cloud PC service principal.|
+|permissionCheckNoVNetContributorRole|Cloud PC服务主体对指定的虚拟网络没有网络参与者权限。 请与订阅所有者合作，为服务主体角色分配网络Cloud PC参与者。 |
 |permissionCheckUnknownError|由于未知错误，权限检查失败。 请联系客户支持。|
 |internalServerUnknownError|由于内部服务器错误未知，运行状况检查失败。 请联系客户支持。|
 
