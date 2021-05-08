@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f4d1329422399d30ca6caf76b4c6928a6de49519
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 7283d71f273ee225a9e94182d0a0210e861fc6a3
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50809127"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240831"
 ---
 ```javascript
 
@@ -15,12 +15,27 @@ const options = {
 
 const client = Client.init(options);
 
-const printSettings = {
-  documentConversionEnabled: true
+const settings = {
+    redundancyDetection: {
+        isEnabled: false,
+        similarityThreshold: 70,
+        minWords: 12,
+        maxWords: 400000
+    },
+    topicModeling: {
+        isEnabled: false,
+        ignoreNumbers: false,
+        topicCount: 50,
+        dynamicallyAdjustTopicCount: false
+    },
+    ocr: {
+        isEnabled: true,
+        maxImageSize: 12000
+    }
 };
 
-await client.api('/print/settings')
+await client.api('/compliance/ediscovery/cases/{caseId}/settings')
     .version('beta')
-    .update(printSettings);
+    .update(settings);
 
 ```

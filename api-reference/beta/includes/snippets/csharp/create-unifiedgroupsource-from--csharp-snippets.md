@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 46ab0f0e5bf1d74fa47320049766b62f050eab9a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 5f285d044be38b21158c6522144d4eef075840b1
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773233"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52254517"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var unifiedGroupSource = new Microsoft.Graph.Ediscovery.UnifiedGroupSource
     IncludedSources = Microsoft.Graph.Ediscovery.SourceType.Mailbox | Microsoft.Graph.Ediscovery.SourceType.Site,
     AdditionalData = new Dictionary<string, object>()
     {
-        {"group@odata.bind", "/groups/000044f9-47c8-4a87-bccf-291fbf006a54"}
+        {"group@odata.bind", "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84"}
     }
 };
 

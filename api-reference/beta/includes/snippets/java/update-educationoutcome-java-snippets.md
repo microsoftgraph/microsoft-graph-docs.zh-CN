@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4d951f7ae5c86cd4444805dacc7779c3c3437444
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 96081dd27698e2297c866f5cb1ef8727cffd4ff2
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50978321"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52254464"
 ---
 ```java
 
@@ -39,7 +39,7 @@ rubricQualitySelectedLevels1.columnId = "aac076bf-51ba-48c5-a2e0-ee235b0b9740";
 rubricQualitySelectedLevelsList.add(rubricQualitySelectedLevels1);
 educationOutcome.rubricQualitySelectedLevels = rubricQualitySelectedLevelsList;
 
-graphClient.education().me().assignments("{id}").submissions("{id}").outcomes("{id}")
+graphClient.education().classes("{id}").assignments("{id}").submissions("{id}").outcomes("{id}")
     .buildRequest()
     .patch(educationOutcome);
 

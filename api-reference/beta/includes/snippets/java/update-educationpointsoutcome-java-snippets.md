@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0bead9960461f423ae1a70af8969029bb315c750
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b32da9f6aaa08f63b962338df346aa3589756393
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50981868"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52254278"
 ---
 ```java
 
@@ -16,7 +16,7 @@ EducationAssignmentPointsGrade points = new EducationAssignmentPointsGrade();
 points.points = 85.0;
 educationOutcome.points = points1;
 
-graphClient.education().me().assignments("{id}").submissions("{id}").outcomes("{id}")
+graphClient.education().classes("{id}").assignments("{id}").submissions("{id}").outcomes("{id}")
     .buildRequest()
     .patch(educationOutcome);
 

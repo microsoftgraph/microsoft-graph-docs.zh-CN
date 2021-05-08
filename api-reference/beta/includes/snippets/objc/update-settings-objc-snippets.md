@@ -1,27 +1,42 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 86675b1b19772e1662334b5285598b710ed58dd0
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 894c9841326e7980445324c7ae3c6ffd19d2f367
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948200"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240830"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/print/settings"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/compliance/ediscovery/cases/{caseId}/settings"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphPrintSettings *printSettings = [[MSGraphPrintSettings alloc] init];
-[printSettings setDocumentConversionEnabled: true];
+MSGraphEdiscoverySettings *settings = [[MSGraphEdiscoverySettings alloc] init];
+MSGraphEdiscoveryRedundancyDetectionSettings *redundancyDetection = [[MSGraphEdiscoveryRedundancyDetectionSettings alloc] init];
+[redundancyDetection setIsEnabled: false];
+[redundancyDetection setSimilarityThreshold: 70];
+[redundancyDetection setMinWords: 12];
+[redundancyDetection setMaxWords: 400000];
+[settings setRedundancyDetection:redundancyDetection];
+MSGraphEdiscoveryTopicModelingSettings *topicModeling = [[MSGraphEdiscoveryTopicModelingSettings alloc] init];
+[topicModeling setIsEnabled: false];
+[topicModeling setIgnoreNumbers: false];
+[topicModeling setTopicCount: 50];
+[topicModeling setDynamicallyAdjustTopicCount: false];
+[settings setTopicModeling:topicModeling];
+MSGraphEdiscoveryOcrSettings *ocr = [[MSGraphEdiscoveryOcrSettings alloc] init];
+[ocr setIsEnabled: true];
+[ocr setMaxImageSize: 12000];
+[settings setOcr:ocr];
 
 NSError *error;
-NSData *printSettingsData = [printSettings getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:printSettingsData];
+NSData *settingsData = [settings getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:settingsData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
