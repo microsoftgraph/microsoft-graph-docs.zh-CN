@@ -1,6 +1,6 @@
 ---
 title: servicePrincipal：checkMemberGroups
-description: 检查指定组列表中的成员身份。从列表中返回服务主体具有直接或可传递成员身份的组。
+description: 检查指定组列表中的成员身份。从列表中返回服务主体具有直接或传递成员身份的组。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
@@ -94,7 +94,7 @@ Content-length: 44
 
 ### <a name="response"></a>响应
 下面是一个响应示例。 
->注意：为了提高可读性，可能缩短了此处显示的响应对象。
+>注意：为了提高可读性，可能缩短此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
