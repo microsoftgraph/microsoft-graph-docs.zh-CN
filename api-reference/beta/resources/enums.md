@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 6004a27fa12fd7246830e463f67b43c2872a0157
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 31c803ccc82deaacddd81a70691e6570a044b5a1
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067199"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298536"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -76,7 +76,7 @@ ms.locfileid: "52067199"
 |整数|
 |参考|
 |二进制|
-|布尔值|
+|Boolean|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -1204,7 +1204,7 @@ ms.locfileid: "52067199"
 |:-----------------
 |NotStarted
 |正在运行
-|Completed
+|已完成
 |已失败
 
 
@@ -1675,7 +1675,7 @@ ms.locfileid: "52067199"
 | :----- | :---- |
 | 无   | 0     |
 | 添加    | 1     |
-| 更新 | 2     |
+| Update | 2     |
 | 删除 | 4      |
 
 ### <a name="chatmessagetype-values"></a>chatMessageType 值
@@ -2171,6 +2171,53 @@ ms.locfileid: "52067199"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
+|team      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
+
+### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>roleAssignmentScheduleRequestFilterByCurrentUserOptions 值 
+
+|成员|
+|:---|
+|principal|
+|createdBy|
+|审批者|
+|unknownFutureValue|
+
+### <a name="roleassignmentschedulefilterbycurrentuseroptions-values"></a>roleAssignmentScheduleFilterByCurrentUserOptions 值 
+
+|成员|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleassignmentscheduleinstancefilterbycurrentuseroptions-values"></a>roleAssignmentScheduleInstanceFilterByCurrentUserOptions 值 
+
+|成员|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulerequestfilterbycurrentuseroptions-values"></a>roleEligibilityScheduleRequestFilterByCurrentUserOptions 值 
+
+|成员|
+|:---|
+|principal|
+|createdBy|
+|审批者|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulefilterbycurrentuseroptions-values"></a>roleEligibilityScheduleFilterByCurrentUserOptions 值 
+
+|成员|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleeligibilityscheduleinstancefilterbycurrentuseroptions-values"></a>roleEligibilityScheduleInstanceFilterByCurrentUserOptions 值 
+
+|成员|
+|:---|
+|principal|
+|unknownFutureValue|
+

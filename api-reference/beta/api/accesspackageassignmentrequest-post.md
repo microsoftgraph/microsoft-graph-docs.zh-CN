@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ff0f60841fe852d67e5c76268fe4e00ce277af11
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bc9d9c244f955e2479cf79ded3bd7ee6ac4a31b7
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048594"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298374"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>创建 accessPackageAssignmentRequest
 
@@ -53,7 +53,9 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 对于请求删除分配的管理员 **，requestType** 属性的值为 `AdminRemove` **，accessPackageAssignment** 属性包含标识要删除的 [accessPackageAssignment](../resources/accesspackageassignment.md)的 **id** 属性。
 
-对于需要自行创建工作分配的非管理员用户 **，requestType** 属性的值为 ，accessPackageAssignment 属性包含具有用户本身 ID 的 、 `UserAdd`  `targetId` 标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)的 **assignmentPolicyId** 属性和标识 accessPackage 的 **accessPackageId**[](../resources/accesspackage.md)属性。  提出请求的用户必须已存在于 目录中。
+对于非管理员用户请求为第一个分配或续订分配创建自己的工作分配 **，requestType** 属性的值为 `UserAdd` 。 **accessPackageAssignment** 属性包含 `targetId` 用户的 `id` 。 **assignmentPolicyId** 属性标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。 **accessPackageId** 属性标识 [accessPackage](../resources/accesspackage.md)。 提出请求的用户必须已存在于 目录中。
+
+对于非管理员用户请求扩展其自己的分配 **，requestType** 属性的值为 `UserExtend` 。 **accessPackageAssignment** 属性包含 `targetId` 用户的 `id` 。 **assignmentPolicyId** 属性标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。 **accessPackageId** 属性标识 [accessPackage](../resources/accesspackage.md)。 提出请求的用户必须已存在于 目录中。
 
 ## <a name="response"></a>响应
 
@@ -192,9 +194,6 @@ Content-type: application/json
 
 
 
----
-
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
@@ -275,6 +274,67 @@ Content-type: application/json
             "isSingleLineQuestion": false
         }
     }]
+}
+```
+### <a name="example-3-request-a-package-and-provide-a-justification"></a>示例 3：请求包并提供理由
+#### <a name="request"></a>请求
+
+以下示例演示如何请求访问包并为审批者提供理由。
+ 
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "UserAdd",
+    "accessPackageAssignment": {
+        "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
+    },
+    "justification":"Need access to New Hire access package"
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "813bbc6b-31f5-4cdf-8fed-1ba4284a1e3f",
+    "requestType": "UserAdd",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted",
+    "isValidationOnly": false,
+    "expirationDateTime": null,
+    "justification": "Requested for the new task.",
+    "answers": [],
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": null
+        }
+    }
 }
 ```
 

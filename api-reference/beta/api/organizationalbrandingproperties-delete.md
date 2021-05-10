@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: eba5a039143c55b4ac77610ac07a5a721ae3a3f4
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 859c3edf2e6f103dd484f5583a2cfafd63f3186e
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582730"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298576"
 ---
 # <a name="delete-organizationalbrandingproperties"></a>删除 organizationalBrandingProperties
 
@@ -33,7 +33,7 @@ ms.locfileid: "51582730"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /organization/{id}/branding
+DELETE /organization/{tenant id}/branding
 ```
 
 ## <a name="request-headers"></a>请求标头

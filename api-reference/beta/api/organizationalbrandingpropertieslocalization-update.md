@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 67cfc1e18f0572a1faae4199621fdc5b86260438
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 693d42f81b5115b9b818e8495e320e127cd66262
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582618"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298503"
 ---
 # <a name="update-localized-organizationalbrandingproperties"></a>更新本地化的组织品牌设置
 
@@ -33,8 +33,8 @@ ms.locfileid: "51582618"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization/{id}/branding/localizations/{locale}
-PUT /organization/{id}/branding/localizations/{locale}
+PATCH /organization/{tenant id}/branding/localizations/{locale}
+PUT /organization/{tenant id}/branding/localizations/{locale}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,13 +51,13 @@ PUT /organization/{id}/branding/localizations/{locale}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|backgroundColor|字符串|将出现在低带宽连接中的背景图像上的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制表示 (，例如，白色#FFFFFF) 。|
-|backgroundImage|Stream|显示为登录页背景的图像。 .png 或 .jpg 不大于 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，提高页面加载性能。|
-|bannerLogo|Stream|显示在登录页上的公司徽标的横幅版本。 .png 或 .jpg 不超过 36x245px。 我们建议使用透明图像，徽标周围没有填充。|
-|signInPageText|字符串|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
-|squareLogo|Stream|公司徽标的方形版本。 这将显示在 Windows 10 现成 (OOBE) 以及启用 Windows Autopilot 进行部署时。 .png 或 .jpg 不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
-|usernameHintText|字符串|字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
-|id|字符串|要更新其品牌设置的本地设置|
+|backgroundColor|String|将出现在低带宽连接中的背景图像上的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制表示 (，例如，白色#FFFFFF) 。|
+|backgroundImage|Stream|显示为登录页背景的图像。 .png或 .jpg不超过 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，提高页面加载性能。|
+|bannerLogo|Stream|显示在登录页上的公司徽标的横幅版本。 .png或.jpg不超过 36x245px。 我们建议使用透明图像，徽标周围没有填充。|
+|signInPageText|String|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
+|squareLogo|Stream|公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) ，以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
+|usernameHintText|String|字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
+|id|String|要更新其品牌设置的本地设置|
 
 
 ## <a name="response"></a>响应

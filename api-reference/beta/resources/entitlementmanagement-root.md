@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 7dc9ec20ef316cd0c6e5e305d780099f61901e6f
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f4723923a6b05b13fb8076b3e69ccbf0c1295f4f
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761323"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298557"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权利管理 API
 
@@ -18,7 +18,7 @@ ms.locfileid: "50761323"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) 权限管理可以帮助你管理内部用户和组织外部用户对组、应用程序和 SharePoint Online 网站的访问权限。
+Azure Active Directory (Azure AD) 权限管理可帮助你管理内部用户以及组织外部用户对组、应用程序和 SharePoint Online 网站的访问权限。
 
 通过创建具有用户跨这些资源所需的角色的访问包，并定义哪些人可以请求访问包以及他们可以向访问包分配多久的策略，你可以管理内部和外部用户访问的生命周期。
 
@@ -31,14 +31,14 @@ Azure Active Directory (Azure AD) 权限管理可以帮助你管理内部用户�
 - [accessPackageAssignmentResourceRole：](accesspackageassignmentresourcerole.md)指示主题通过访问包分配分配的资源特定角色。
 - [accessPackageCatalog：](accesspackagecatalog.md)访问包的容器。
 - [accessPackageResourceRequest：](accesspackageresourcerequest.md)向访问包目录添加资源的请求。
-- [accessPackageResourceEnvironment：](accesspackageresourceenvironment.md)对资源的地理位置的引用。 适用于多地理位置 SharePoint Online 网站。
+- [accessPackageResourceEnvironment：](accesspackageresourceenvironment.md)对资源的地理位置的引用。 适用于多地理位置SharePoint在线网站。
 - [connectedOrganization：](connectedorganization.md)可请求访问的外部用户的已连接组织。
 - [entitlementManagementSettings：Azure](entitlementmanagementsettings.md)AD 权利管理的租户范围设置。
 - [approval](approval.md)：表示与访问包请求相关的决策。
 
-有关介绍如何使用权利管理创建内部用户可以自助请求的资源包的教程，请参阅使用 [Microsoft Graph API](/graph/tutorial-access-package-api)创建访问包。
+有关介绍如何使用权利管理创建内部用户可以自助请求的资源包的教程，请参阅使用 Microsoft Graph [API 创建访问包](/graph/tutorial-access-package-api)。
 
-请注意，权利管理功能（包括 API）包含在 Azure AD Premium P2 中。 使用权利管理的租户必须拥有有效的已购买或试用 Azure AD Premium P2 或 EMS E5 订阅。
+请注意，授权管理功能（包括 API）包含在 Azure AD 高级版 P2 中。 使用权利管理的租户必须拥有有效的已购买或试用 Azure AD 高级版 P2 或 EMS E5 订阅。
 
 ## <a name="methods"></a>方法
 
@@ -46,13 +46,14 @@ Azure Active Directory (Azure AD) 权限管理可以帮助你管理内部用户�
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取 **entitlementManagementSettings 对象** 的属性。 |
+| [获取](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取 **entitlementManagementSettings 对象** 的属性。 |
 | [更新](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 更新 **entitlementManagementSettings 对象** 的属性。 |
 | [列出 accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) 集合 | 检索 **accessPackage 对象** 的列表。 |
 | [创建 accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | 创建新的 **accessPackage** 对象。 |
 | [获取 accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | 读取 **accessPackage 对象的属性和** 关系。 |
 | [更新 accessPackage](../api/accesspackage-update.md)|无 | 更新 **accesspackage 对象** 的属性。 |
 | [删除 accessPackage](../api/accesspackage-delete.md) | | 删除 **accessPackage**。 |
+| [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [accessPackage](accesspackage.md) 集合 | 检索在已登录用户上筛选的 **accessPackage** 对象列表。 |
 | [列出 accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) 集合 | 检索访问 **包的 accessPackageResourceRoleScope** 对象列表。 |
 | [创建 accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | 为访问包 **创建新的 accessPackageResourceRoleScope** 对象。 |
 | [列出 accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) 集合 | 检索 **accessPackageAssignmentPolicy 对象** 的列表。 |
@@ -63,7 +64,10 @@ Azure Active Directory (Azure AD) 权限管理可以帮助你管理内部用户�
 | [列出 accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) 集合 | 检索 **accessPackageAssignmentRequest 对象** 的列表。 |
 | [创建 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 创建新的 **accessPackageAssignmentRequest**。 |
 | [获取 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 读取 **accessPackageAssignmentRequest** 对象的属性和关系。 |
+|[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 集合|检索已登录 **用户筛选的 accessPackageAssignmentRequest** 对象列表。|
+|[取消](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 集合|取消 **处于可取消状态的 accessPackageAssignmentRequest** 对象：、、、。 `accepted` `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated`|
 | [列出 accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) 集合 | 检索 **accessPackageAssignment 对象** 的列表。 |
+|[FilterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) 集合|检索在登录用户上筛选的 **accessPackageAssignment** 对象列表。|
 | [列出 accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) 集合 | 检索 **accessPackageAssignmentResourceRole 对象** 的列表。 |
 | [获取 accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | 检索 **accessPackageAssignmentResourceRole** 对象。 |
 | [列出 accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md) 集合 | 检索 **accessPackageCatalogs 对象** 的列表。 |
@@ -82,8 +86,8 @@ Azure Active Directory (Azure AD) 权限管理可以帮助你管理内部用户�
 | [获取 connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | 读取 **connectedOrganization 对象的属性和** 关系。 |
 | [更新 connectedOrganization](../api/connectedorganization-update.md) |无 | 更新 **connectedOrganization**。 |
 | [删除 connectedOrganization](../api/connectedorganization-delete.md) |无 | 删除 **connectedOrganization**。 |
-|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 **connectedOrganization 的内部发起人** 的列表。 |
-|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 **connectedOrganization 的外部发起** 人的列表。 |
+|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 **connectedOrganization 的内部发起人** 的列表。 |
+|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 **connectedOrganization 的外部发起** 人的列表。 |
 |[添加 internalSponsors](../api/connectedorganization-post-internalsponsors.md) | 无 | 将用户或组添加到 **connectedOrganization 的内部发起** 人。 |
 |[添加 externalSponsors](../api/connectedorganization-post-externalsponsors.md) | 无 | 将用户或组添加到 **connectedOrganization 的外部** 发起人。 |
 |[删除 internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | 无 | 从 **connectedOrganization 的内部发起人中删除用户或** 组。 |

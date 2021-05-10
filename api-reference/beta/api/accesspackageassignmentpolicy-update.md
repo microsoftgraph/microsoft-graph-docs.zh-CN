@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5a32ed205a10035e234a540f0048867e3bee4fa4
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 32e93a6aa60793ba4fd30977d030dd2263a8c4c9
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719225"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298339"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "50719225"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，例如显示名称或说明。
+更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，如显示名称或说明。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -52,23 +52,23 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |:---|:---|:---|
 |displayName|String|策略显示名称。|
 |说明|String|策略的说明。|
-|canExtend|布尔|指示用户是否可以在审批后延长访问包分配持续时间。|
-|durationInDays|Int32|此策略中的分配持续到过期的天数。|
+|canExtend|Boolean|指示用户是否可以在审批后延长访问包分配持续时间。|
+|durationInDays|Int32|此策略中的分配在到期之前持续等待的天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|谁能从此策略请求此访问包。|
-|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|谁必须批准此策略中的访问包请求。|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|谁必须查看此策略中访问包的工作分配以及分配时间。 如果不需要审阅，则此属性为 null。|
+|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who从此策略请求此访问包。|
+|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who必须批准此策略中的访问包请求。|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who必须检查此策略中对访问包的分配以及分配时间。 如果不需要审阅，则此属性为 null。|
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` [的 accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-在此策略更新中，删除了多个选项问题的选项之一。 未来的请求者将不再具有可用的已删除选项。
+在此策略更新中，已删除多选问题的选项之一。 未来请求者将不再可以使用已删除的选项。
 
 <!-- {
   "blockType": "request",
@@ -185,7 +185,7 @@ Content-length: 1000
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b47103d8ce338e2070ab039de0551abe2aea1038
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 53f6ed90959c2559a18754bd4c5bd4bb25ca5210
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055601"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298234"
 ---
 # <a name="get-organizationalbrandingproperties"></a>获取 organizationalBrandingProperties
 
@@ -33,7 +33,7 @@ ms.locfileid: "52055601"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding
+GET /organization/{tenant id}/branding
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

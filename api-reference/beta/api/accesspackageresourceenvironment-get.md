@@ -5,12 +5,12 @@ author: hanki-microsoft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4530eec57a15a871cd7c633dd645c7f9beae2070
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 6ba500b5f20dfb9dbf29054d0015ebe372e3753d
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759424"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298367"
 ---
 # <a name="get-accesspackageresourceenvironment"></a>获取 accessPackageResourceEnvironment
 命名空间：microsoft.graph
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
