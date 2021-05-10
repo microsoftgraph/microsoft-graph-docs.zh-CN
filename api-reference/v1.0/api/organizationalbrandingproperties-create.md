@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f8dc56ae2041d8b3dd26830ae5f8ba6cffb577b1
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 4443c6608d83b8c61f5116d6823a41db9058f757
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582828"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298700"
 ---
 # <a name="create-organizationalbrandingproperties"></a>创建 organizationalBrandingProperties
 
@@ -36,8 +36,8 @@ ms.locfileid: "51582828"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /organization/{id}/branding
-PATCH /organization/{id}/branding
+PUT /organization/{tenant id}/branding
+PATCH /organization/{tenant id}/branding
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -55,10 +55,10 @@ PATCH /organization/{id}/branding
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |backgroundColor|String|在低带宽连接中显示用于背景图像的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制表示 (，例如，白色#FFFFFF) 。|
-|backgroundImage|Stream|显示为登录页背景的图像。 图像是一个不大于 1920x1080 且小于 300kb 的 .png 或 .jpg。 较小的图像将降低带宽要求，提高页面加载性能。|
-|bannerLogo|Stream|显示在登录页上的公司徽标的横幅版本。 横幅是一个不超过 36x245px 的 .png 或 .jpg。 我们建议使用透明图像，徽标周围没有填充。|
+|backgroundImage|Stream|显示为登录页背景的图像。 图像是大小.png 1920x1080 .jpg小于 300kb 的一个或多个图像。 较小的图像将降低带宽要求，提高页面加载性能。|
+|bannerLogo|Stream|显示在登录页上的公司徽标的横幅版本。 横幅是一个.png或.jpg不超过 36x245px 的横幅。 我们建议使用透明图像，徽标周围没有填充。|
 |signInPageText|String|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
-|squareLogo|Stream|公司徽标的方形版本。 这将显示在 Windows 10 现成 (OOBE) 以及启用 Windows Autopilot 进行部署时。 徽标是大小不超过 240x240px 且不超过 10kb 的 .png 或 .jpg。 我们建议使用透明图像，徽标周围没有填充。|
+|squareLogo|Stream|公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) ，以及启用 Windows Autopilot 进行部署时。 徽标是一个 .png 或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
 |usernameHintText|String|登录屏幕上用户名文本框中的提示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
 
 ## <a name="response"></a>响应

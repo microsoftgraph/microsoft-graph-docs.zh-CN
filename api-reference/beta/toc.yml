@@ -10441,6 +10441,72 @@ items:
                         href: api/unifiedroleassignmentmultiple-update.md
                       - name: 删除
                         href: api/unifiedroleassignmentmultiple-delete.md
+                  - name: 角色分配请求
+                    href: resources/unifiedroleassignmentschedulerequest.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedroleassignmentschedulerequest-list.md
+                      - name: 获取
+                        href: api/unifiedroleassignmentschedulerequest-get.md
+                      - name: 创建
+                        href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+                      - name: 更新
+                        href: api/unifiedroleassignmentschedulerequest-update.md
+                      - name: 取消
+                        href: api/unifiedroleassignmentschedulerequest-cancel.md
+                      - name: 按当前用户筛选
+                        href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                  - name: 角色资格请求
+                    href: resources/unifiedroleeligibilityschedulerequest.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedroleeligibilityschedulerequest-list.md
+                      - name: 获取
+                        href: api/unifiedroleeligibilityschedulerequest-get.md
+                      - name: 创建
+                        href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+                      - name: 更新
+                        href: api/unifiedroleeligibilityschedulerequest-update.md
+                      - name: 取消
+                        href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                      - name: 按当前用户筛选
+                        href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+                  - name: 角色分配计划
+                    href: resources/unifiedRoleAssignmentSchedule.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedroleassignmentschedule-list.md
+                      - name: 获取
+                        href: api/unifiedroleassignmentschedule-get.md
+                      - name: 按当前用户筛选
+                        href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                  - name: 角色资格计划
+                    href: resources/unifiedRoleEligibilitySchedule.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedRoleEligibilitySchedule-list.md
+                      - name: 获取
+                        href: api/unifiedRoleEligibilitySchedule-get.md
+                      - name: 按当前用户筛选
+                        href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
+                  - name: 角色分配实例
+                    href: resources/unifiedRoleAssignmentScheduleInstance.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedRoleAssignmentScheduleInstance-list.md
+                      - name: 获取
+                        href: api/unifiedRoleAssignmentScheduleInstance-get.md
+                      - name: 按当前用户筛选
+                        href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
+                  - name: 角色资格实例
+                    href: resources/unifiedRoleEligibilityScheduleInstance.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedRoleEligibilityScheduleInstance-list.md
+                      - name: 获取
+                        href: api/unifiedRoleEligibilityScheduleInstance-get.md
+                      - name: 按当前用户筛选
+                        href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
           - name: 身份和登录
             items:
               - name: 身份验证事件策略
@@ -10535,7 +10601,7 @@ items:
                         href: api/phoneauthenticationmethod-update.md
                       - name: 删除
                         href: api/phoneauthenticationmethod-delete.md
-                      - name: 加法
+                      - name: 添加
                         href: api/authentication-post-phonemethods.md
                       - name: 启用短信登录
                         href: api/phoneauthenticationmethod-enablesmssignin.md
@@ -10552,7 +10618,7 @@ items:
                         href: api/emailauthenticationmethod-update.md
                       - name: 删除
                         href: api/emailauthenticationmethod-delete.md
-                      - name: 加法
+                      - name: 添加
                         href: api/emailauthenticationmethod-post.md
                   - name: Password
                     href: resources/passwordauthenticationmethod.md
@@ -10960,6 +11026,33 @@ items:
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: 从排除项中删除
                             href: api/permissiongrantpolicy-delete-excludes.md
+                  - name: 角色管理策略
+                    href: resources/unifiedRoleManagementPolicy.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedrolemanagementpolicy-list.md
+                      - name: 获取
+                        href: api/unifiedrolemanagementpolicy-get.md
+                      - name: 列出有效规则
+                        href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+                      - name: 列出规则
+                        href: api/unifiedrolemanagementpolicy-list-rules.md
+                  - name: 角色管理策略分配
+                    href: resources/unifiedRoleManagementPolicyAssignment.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedRoleManagementPolicyAssignment-list.md
+                      - name: 获取
+                        href: api/unifiedRoleManagementPolicyAssignment-get.md
+                  - name: 角色管理策略规则
+                    href: resources/unifiedRoleManagementPolicyRule.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedRoleManagementPolicyRule-list.md
+                      - name: 获取
+                        href: api/unifiedRoleManagementPolicyRule-get.md
+                      - name: 更新
+                        href: api/unifiedRoleManagementPolicyRule-update.md
                   - name: 令牌颁发策略
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -11235,7 +11328,7 @@ items:
                       - name: 列出
                         href: api/accessreviewhistorydefinition-list.md
                       - name: 创建
-                        href: api/accessreviewhistorydefinition-create.md
+                        href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
               - name: '旧版 (访问) '
@@ -11346,11 +11439,15 @@ items:
                         href: api/accesspackage-update.md
                       - name: 删除
                         href: api/accesspackage-delete.md
+                      - name: 按当前用户筛选
+                        href: api/accesspackage-filterbycurrentuser.md
                   - name: 访问包分配
                     href: resources/accesspackageassignment.md
                     items:
                       - name: 列表
                         href: api/accesspackageassignment-list.md
+                      - name: 按当前用户筛选
+                        href: api/accesspackageassignment-filterbycurrentuser.md
                   - name: 访问包分配审批
                     href: resources/approval.md
                     items:
@@ -11386,6 +11483,10 @@ items:
                         href: api/accesspackageassignmentrequest-post.md
                       - name: 获取
                         href: api/accesspackageassignmentrequest-get.md
+                      - name: 按当前用户筛选
+                        href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+                      - name: 取消
+                        href: api/accesspackageassignmentrequest-cancel.md
                   - name: 访问包分配资源角色
                     href: resources/accesspackageassignmentresourcerole.md
                     items:
@@ -13003,7 +13104,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划

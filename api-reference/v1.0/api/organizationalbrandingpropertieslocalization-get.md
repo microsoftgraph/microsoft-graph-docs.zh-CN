@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c6118a89c12f1de111e246e9018fbc066afd4470
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8760803c6363cacfe41d239c6031a7e81c18492f
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052206"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298721"
 ---
 # <a name="get-localized-organizationalbrandingproperties"></a>获取本地化的组织BrandingProperties
 
@@ -31,7 +31,7 @@ ms.locfileid: "52052206"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/localizations/{locale}
+GET /organization/{tenant id}/branding/localizations/{locale}
 ```
 
 ## <a name="request-headers"></a>请求标头
