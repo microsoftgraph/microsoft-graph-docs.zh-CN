@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 24714df9c4f8ac26167eb005dfef8f3b189694d2
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 870aa1e51af2202ae81e856771bd48cdc515d35b
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232100"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298550"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -167,7 +167,7 @@ ms.locfileid: "52232100"
 | assignedPlans | [assignedPlan](assignedplan.md) collection | 分配给该用户的计划。 <br><br>仅在 `$select` 上返回。 只读。 不可为 null。 |
 | birthday | DateTimeOffset | 用户的生日。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 |
 | businessPhones | String collection | 用户的电话号码。仅可以为此属性设置一个数字。 <br><br>默认返回。从本地目录同步的用户的只读状态。 |
-| 城市 | String | 用户所在的城市。 最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
+| 城市 | String | 用户所在的城市。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 |
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
 | country | String | 用户所在的国家/地区;例如，"美国"或"UK"。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
@@ -179,7 +179,7 @@ ms.locfileid: "52232100"
 | employeeHireDate | DateTimeOffset | 聘请用户或用户将开始工作（如是未来招聘）的日期和时间。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 | employeeId | String | 由组织分配给该用户的员工标识符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |表示与用户相关联的组织数据（例如，分部和 costCenter）。 <br><br>仅在 `$select` 上返回。|
-| employeeType | String | 捕获企业员工类型。 例如， `Employee`、 `Contractor`、 `Consultant`或 `Vendor`。 仅在 `$select` 上返回。 与`eq`运营商的支持`$filter`。|
+| employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。 仅在 `$select` 上返回。 支持带 `eq` 运算符的 `$filter`。|
 | externalUserState | String | 对于使用[邀请 API](../api/invitation-post.md) 邀请到租户的外部用户，此属性表示受邀用户的邀请状态。 对于受邀用户，状态可以是 `PendingAcceptance` 或 `Accepted`，而对于所有其他用户，状态为 `null`。 <br><br>仅在 `$select` 上返回。 支持包含受支持数值的`$filter`。 例如：`$filter=externalUserState eq 'PendingAcceptance'`。 |
 | externalUserStateChangeDateTime | String | 显示对 externalUserState 属性的最新更改的时间戳。 <br><br>仅在 `$select` 上返回。 |
 | faxNumber | String | 用户的传真号。 <br><br>仅在 `$select` 上返回。 |
@@ -191,11 +191,11 @@ ms.locfileid: "52232100"
 | infoCatalogs | String 集合 | 标识分配给用户的信息段。默认返回。 |
 | interests | String collection | 用户介绍自身兴趣的列表。 <br><br>仅在 `$select` 上返回。 |
 | isResourceAccount | 布尔 | 请勿使用 – 保留以备今后使用。 |
-| jobTitle | String | 用户的职务。 最大长度为 128 个字符。 <br><br>默认情况下返回。 支持 `$filter`。|
+| jobTitle | String | 用户的职务。 最大长度为 128 个字符。 <br><br>默认情况下返回。 支持 `$filter`（`eq` 和 `startsWith` 运算符）。|
 | lastPasswordChangeDateTime | DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 只读。 |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) 集合 | 此用户的许可证分配状态。 <br><br>仅在 `$select` 上返回。 只读。 |
-| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。<br>注意：虽然此属性可以包含重音字符，但使用此属性可能会导致用户访问其他 Microsoft 应用程序的问题。<br><br>默认情况下返回。 支持 `$filter` 和 `endsWith`。 |
+| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。<br>注意：虽然此属性可以包含重音字符，但若使用可能导致用户访问其他 Microsoft 应用程序时遇到问题。<br><br>默认情况下返回。 支持 `$filter` 和 `endsWith`。 |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 `$select` 上返回。 仅支持 Get 用户 API（`GET /users/{id}` 或 `GET /me`）。 |
 | mailNickname | String | 用户的邮件别名。创建用户时必须指定此属性。最大长度为 64 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。从本地目录同步的用户的只读状态。 |
