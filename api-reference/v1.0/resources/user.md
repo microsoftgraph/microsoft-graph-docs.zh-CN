@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: eb80f5c031be6729530b7bb4e506de1b0b22e579
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: dac4e330c7ba589536a07844018e2a83a834f2aa
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232072"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298714"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -163,7 +163,7 @@ ms.locfileid: "52232072"
 |imAddresses|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |isResourceAccount|布尔| 请勿使用 – 保留以备今后使用。|
-|jobTitle|String|用户的职务。 最大长度为 128 个字符。 默认情况下返回。 支持 `$filter`。|
+|jobTitle|String|用户的职务。 最大长度为 128 个字符。 默认情况下返回。 支持 `$filter`（`eq` 和 `startsWith` 运算符）。|
 |lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。只读。|
