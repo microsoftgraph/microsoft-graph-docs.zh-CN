@@ -1,30 +1,29 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-title: 权限资源类型
+title: permission 资源类型
 description: 表示为 driveItem 授予的共享权限的权限资源
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c372436fc4c4e65f583ca95d7a208e0fe9a5df14
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: e7eb160bf7899feec9afda49c6087072aab83c3b
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177226"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335602"
 ---
-# <a name="permission-resource-type"></a>权限资源类型
+# <a name="permission-resource-type"></a>permission 资源类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-权限 **资源** 提供有关为 [driveItem](driveitem.md) 资源授予的共享权限的信息。
+permission 资源提供有关为[driveItem](driveitem.md)资源授予的共享权限的信息。
 
 共享权限具有许多不同的形式。
 权限 **资源** 通过资源上的 Facet 表示这些不同的形式。
 
->**注意：** OneDrive for Business 和 SharePoint 文档库不会返回 **inheritedFrom** 属性。
+>**注意：OneDrive for Business** 和SharePoint库不会返回 **inheritedFrom** 属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -83,7 +82,7 @@ ms.locfileid: "50177226"
 |:------------------|:-------------------------------------------------------------------------------|
 | 阅读            | 提供读取项的元数据和内容的功能。            |
 | 写入           | 提供读取并修改项的元数据和内容的功能。 |
-| sp.full 控制 | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
+| owner           | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
 
 权限资源使用 _facet_ 提供有关由该资源表示的权限类型的信息。
 
@@ -198,7 +197,7 @@ ms.locfileid: "50177226"
 
 ## <a name="sharing-invitations"></a>共享邀请
 
-邀请或授予 API[][]发送[][]的权限可以在邀请[][SharingInvitation] Facet 中包含与已知帐户不匹配的电子邮件地址的其他信息。 在这种情况下，在兑现邀请链接之前，可能不会设置 **grantedTo** 属性，这将在用户第一次单击链接并登录时发生。
+邀请或授予 API[][]发送[][]的权限可以在邀请[][SharingInvitation] Facet 中包含与已知帐户不匹配的电子邮件地址的其他信息。 在这种情况下，在用户第一次单击该链接并登录时，可能不会设置 **grantedTo** 属性，直到兑换邀请链接。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -249,7 +248,7 @@ ms.locfileid: "50177226"
 | [更新](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [删除](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [添加用户至共享链接](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
-| [撤销授予](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
+| [撤销授权](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 [createLink]: ../api/driveitem-createlink.md
 [grant]: ../api/permission-grant.md
