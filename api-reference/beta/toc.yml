@@ -364,7 +364,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -10541,8 +10541,11 @@ items:
                       - name: 更新
                         href: api/authenticationflowspolicy-update.md
               - name: 身份验证方法
-                href: resources/authenticationmethods-overview.md
                 items:
+                  - name: 概述
+                    href: resources/authenticationmethods-overview.md
+                  - name: 列出所有方法
+                    href: api/authentication-list-methods.md
                   - name: FIDO2 安全密钥
                     href: resources/fido2authenticationmethod.md
                     items:
@@ -12133,7 +12136,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注释
+              - name: 备注
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
