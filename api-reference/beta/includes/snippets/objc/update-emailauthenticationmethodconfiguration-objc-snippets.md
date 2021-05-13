@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ace42aa7b160cfc7be0d449915620dce0a7261ea
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 2ce2e3506df8dafade5f24d400098a89a9e0972c
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776345"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52476746"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAuthenticationMethodConfiguration *authenticationMethodConfiguration = [[MSGraphAuthenticationMethodConfiguration alloc] init];
-[authenticationMethodConfiguration setAllowExternalIdToUseEmailOtp: [MSGraphExternalEmailOtpState default]];
+[authenticationMethodConfiguration setAllowExternalIdToUseEmailOtp: [MSGraphExternalEmailOtpState disabled]];
 
 NSError *error;
 NSData *authenticationMethodConfigurationData = [authenticationMethodConfiguration getSerializedDataWithError:&error];
