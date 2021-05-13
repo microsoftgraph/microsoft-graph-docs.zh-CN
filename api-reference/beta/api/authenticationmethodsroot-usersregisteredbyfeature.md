@@ -1,32 +1,32 @@
 ---
 title: authenticationMethodsRoot： usersRegisteredByFeature
-description: 获取能够进行多重身份验证、自助服务密码重置和无密码身份验证的用户数量。
+description: 获取能够进行多重身份验证、自助服务密码重置和无密码身份验证的用户数。
 author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: c6f0976e364e2cf4b24883bef10e7f3c6e49480f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 54c1265ebed3eb8a3fe28f091d045b7bfe221b18
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129658"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474349"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbyfeature"></a>authenticationMethodsRoot： usersRegisteredByFeature
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取能够进行多重身份验证、自助服务密码重置和无密码身份验证的用户数量。
+获取能够进行多重身份验证、自助服务密码重置和无密码身份验证的用户数。
 
 ## <a name="permissions"></a>权限
 调用此 API 需要以下权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Reports.Read.All|
+|委派（工作或学校帐户）|AuditLogs.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 若要访问 API， [需要以下角色之](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 一：
 
@@ -54,7 +54,7 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 |includedUserTypes|includedUserTypes|用户类型。 可取值为：`all`、`member`、`guest`。|
 |includedUserRoles|includedUserRoles|用户角色类型。 可取值为：`all`、`privilegedAdmin`、`admin`、`user`。|
 
-该值 `privilegedAdmin` 由以下特权管理员角色组成：
+值 `privilegedAdmin` 由以下特权管理员角色组成：
 
 * 全局管理员
 * 安全管理员
@@ -66,7 +66,7 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 * 用户管理员
 * 身份验证管理员
 
-该值 `admin` 包括所有 Azure AD 管理员角色。 
+值 `admin` 包括所有 Azure AD 管理员角色。 
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -78,7 +78,7 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回响应代码和 `200 OK` [userRegistrationFeatureSummary。](../resources/userregistrationfeaturesummary.md)
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [userRegistrationFeatureSummary。](../resources/userregistrationfeaturesummary.md)
 
 ## <a name="examples"></a>示例
 
@@ -142,7 +142,7 @@ Content-Type: application/json
             "feature": "ssprCapable",
             "userCount": 4234
         }, {
-            "feature": "passwordlessRegistered",
+            "feature": "passwordlessCapable",
             "userCount": 323
         },
         {

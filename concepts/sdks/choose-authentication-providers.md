@@ -1,20 +1,20 @@
 ---
-title: 选择 Microsoft Graph 身份验证提供程序
+title: 选择 Microsoft Graph身份验证提供程序
 description: 了解如何为应用程序选择特定于方案的身份验证提供程序。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 726fbf1334a99ab6a854bd4627052d154187105c
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0cdc407187ea0b5befc3704f877b1df11aeda545
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921124"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52475533"
 ---
-# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据方案选择 Microsoft Graph 身份验证提供程序
+# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据方案Graph Microsoft 身份验证提供程序
 
 身份验证提供程序使用 MICROSOFT 身份验证库和 MSAL 身份验证库实现获取 (所需的) ;处理增量同意、密码过期和条件访问等情况下的一些潜在错误;，然后设置 HTTP 请求授权标头。 下表列出了一组与不同应用程序类型的方案匹配的 [提供程序](/azure/active-directory/develop/v2-app-types)。
 
-|方案 | Flow/Grant | 受众 | 提供程序|
+|应用场景 | Flow/授予 | 受众 | 提供程序|
 |--|--|--|--|
 | [单页应用](/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
 | | 隐式 | 委派使用者/组织 |[隐式提供程序](#ImplicitProvider) |
@@ -26,7 +26,7 @@ ms.locfileid: "51921124"
 | | 客户端凭据  | 仅限应用 | [客户端凭据提供程序](#ClientCredentialsProvider) |
 | [调用 Web API 的桌面应用](/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
 | | Interactive | 委派使用者/组织 | [交互式提供程序](#InteractiveProvider) |
-| | 集成 Windows | 委派组织 | [集成 Windows 提供程序](#IntegratedWindowsProvider) |
+| | 集成Windows | 委派组织 | [集成Windows提供程序](#IntegratedWindowsProvider) |
 | | 资源所有者  | 委派组织 | [用户名/密码提供程序](#UsernamePasswordProvider) |
 | | 设备代码  | 委派组织 | [设备代码提供程序](#DeviceCodeProvider) |
 | [守护程序应用](/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
@@ -38,7 +38,7 @@ ms.locfileid: "51921124"
 
 ## <a name="authorization-code-provider"></a><a name="AuthCodeProvider" ></a>授权代码提供程序
 
-授权代码流使本机和 Web 应用能够安全地获取用户名称中的令牌。 若要了解更多信息，请参阅 [Microsoft 标识平台和 OAuth 2.0 授权代码流](/azure/active-directory/develop/v2-oauth2-auth-code-flow)。
+授权代码流使本机和 Web 应用能够安全地获取用户名称中的令牌。 若要了解更多信息，请参阅[Microsoft 标识平台 和 OAuth 2.0 授权代码流](/azure/active-directory/develop/v2-oauth2-auth-code-flow)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -87,17 +87,17 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) Graph功能请求。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 ---
 
 ##  <a name="client-credentials-provider"></a><a name="ClientCredentialsProvider"></a>客户端凭据提供程序
 
-客户端凭据流使服务应用程序无需用户交互即可运行。 访问基于应用程序的标识。 有关详细信息，请参阅 [Microsoft 标识平台和 OAuth 2.0 客户端凭据流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)。
+客户端凭据流使服务应用程序无需用户交互即可运行。 访问基于应用程序的标识。 有关详细信息，请参阅 Microsoft 标识平台[和 OAuth 2.0 客户端凭据流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -145,17 +145,17 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) Graph功能请求。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) Graph功能请求。
 
 ---
 
 ##  <a name="on-behalf-of-provider"></a><a name="OnBehalfOfProvider"></a>代表提供程序
 
-当应用程序调用服务/Web API 时，代表流适用，而服务/Web API 则调用 Microsoft Graph API。 通过阅读 [Microsoft 标识平台和 OAuth 2.0 代表流了解更多信息](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+当应用程序调用服务/Web API 时，代表流适用，而服务/Web API 则调用 Microsoft Graph API。 有关详细信息，Microsoft 标识平台[OAuth 2.0 代表流](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -175,7 +175,7 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 # <a name="java"></a>[Java](#tab/Java)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 # <a name="android"></a>[Android](#tab/Android)
 
@@ -187,17 +187,17 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 ---
 
 ## <a name="implicit-provider"></a><a name="ImplicitProvider"></a>隐式提供程序
 
-隐式授予流用于基于浏览器的应用程序。 有关详细信息，请参阅 [Microsoft 标识平台和隐式授权流](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)。
+隐式授予流用于基于浏览器的应用程序。 有关详细信息，请参阅Microsoft 标识平台[和隐式授予流](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -249,7 +249,7 @@ const client = Client.initWithMiddleware(options);
 
 ##  <a name="device-code-provider"></a><a name="DeviceCodeProvider"></a>设备代码提供程序
 
-设备代码流允许通过另一台设备登录到设备。 有关详细信息，请参阅 [Microsoft 标识平台和 OAuth 2.0 设备代码流](/azure/active-directory/develop/v2-oauth2-device-code)。
+设备代码流允许通过另一台设备登录到设备。 有关详细信息，请参阅[Microsoft 标识平台 和 OAuth 2.0 设备代码流](/azure/active-directory/develop/v2-oauth2-device-code)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -265,7 +265,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -298,17 +298,17 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 ---
 
-##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"></a>集成 Windows 提供程序
+##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"></a>集成Windows提供程序
 
-集成 Windows 流为 Windows 计算机提供了一种在加入域时以静默方式获取访问令牌的方法。 有关详细信息，请参阅集成 [Windows 身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
+集成Windows流为计算机提供了一Windows加入域时以静默方式获取访问令牌的方法。 有关详细信息，请参阅集成Windows[身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -349,7 +349,7 @@ IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuth
 
 ##  <a name="interactive-provider"></a><a name="InteractiveProvider"></a>交互式提供程序
 
-交互流由 Xamarin (UWP) 桌面应用程序使用，以用户名称调用 Microsoft Graph。 有关详细信息，请参阅 [以交互方式获取令牌](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)。
+交互流由 Xamarin (UWP) 桌面应用程序使用，以用户Graph调用 Microsoft Graph。 有关详细信息，请参阅 [以交互方式获取令牌](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -363,7 +363,7 @@ InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationPr
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -426,7 +426,7 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 ##  <a name="usernamepassword-provider"></a><a name="UsernamePasswordProvider"></a>用户名/密码提供程序
 
-用户名/密码提供程序允许应用程序使用用户的用户名和密码登录。 只有在不能使用任何其他 OAuth 流时，才使用此流。 有关详细信息，请参阅 [Microsoft 标识平台和 OAuth 2.0 资源所有者密码凭据](/azure/active-directory/develop/v2-oauth-ropc)
+用户名/密码提供程序允许应用程序使用用户的用户名和密码登录。 只有在不能使用任何其他 OAuth 流时，才使用此流。 有关详细信息，请参阅 Microsoft 标识平台[和 OAuth 2.0 资源所有者密码凭据](/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
@@ -449,7 +449,7 @@ User me = await graphClient.Me.Request()
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -481,15 +481,16 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要，请投票支持或打开 [Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 功能请求。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
 
 ---
 
 ## <a name="next-steps"></a>后续步骤
 
+* 有关显示如何使用 Microsoft 标识平台 保护不同应用程序类型的代码示例，请参阅 Microsoft 标识平台[v2.0 终结点 (代码) 。 ](/azure/active-directory/develop/sample-v2-code)
 * 身份验证提供程序需要客户端 ID。 设置身份验证 [提供程序后](https://portal.azure.com/) ，需要注册应用程序。
-* 通过投票或打开 Microsoft Graph 功能请求，告诉我们当前是否不支持所需的 [OAuth 流](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)。
+* 通过投票或打开 Microsoft Graph请求，请告诉我们所需的 OAuth[流当前是否受支持](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。

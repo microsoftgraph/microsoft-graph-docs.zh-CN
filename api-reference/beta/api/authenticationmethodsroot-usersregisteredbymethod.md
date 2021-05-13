@@ -1,32 +1,32 @@
 ---
 title: authenticationMethodsRoot： usersRegisteredByMethod
-description: 获取每个身份验证方法注册的用户数。
+description: 获取针对每个身份验证方法注册的用户数。
 author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 0cf2a93756cca42f33b0bdd7ad9b994fe3b0393f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5cccef1ba35edbb3eb947cee90fb70c05ff19389
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129611"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52473470"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot： usersRegisteredByMethod
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取每个身份验证方法注册的用户数。
+获取针对每个身份验证方法注册的用户数。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Reports.Read.All|
+|委派（工作或学校帐户）|AuditLogs.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 若要访问 API， [需要以下角色之](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 一：
 
@@ -54,7 +54,7 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 |includedUserTypes|includedUserTypes|用户类型。 可取值为：`all`、`member`、`guest`。|
 |includedUserRoles|includedUserRoles|用户角色类型。 可取值为：`all`、`privilegedAdmin`、`admin`、`user`。|
 
-该值 `privilegedAdmin` 由以下特权管理员角色组成：
+值 `privilegedAdmin` 由以下特权管理员角色组成：
 
 * 全局管理员
 * 安全管理员
@@ -66,7 +66,7 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 * 用户管理员
 * 身份验证管理员
 
-该值 `admin` 包括所有 Azure AD 管理员角色。 
+值 `admin` 包括所有 Azure AD 管理员角色。 
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -78,7 +78,7 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回响应代码和 `200 OK` [userRegistrationMethodSummary。](../resources/userregistrationmethodsummary.md)
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [userRegistrationMethodSummary。](../resources/userregistrationmethodsummary.md)
 
 ## <a name="examples"></a>示例
 

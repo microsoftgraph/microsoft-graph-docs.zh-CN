@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bb1fadae90301d25d9f0a299e8a17f07e65d60d4
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 6bd6ddbf839abcde4f5be928f9772e4456773954
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231411"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474804"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -49,7 +49,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,10 +78,12 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了可读性，可能会缩短此处所示的响应对象。 
+>
+>如果 `null` [educationSubmission： setUpResourcesFolder](educationsubmission-setupResourcesFolder.md)尚未在此[educationSubmission](../resources/educationsubmission.md)资源上调用，则 resourcesFolderUrl 属性将为 。
 
 <!-- {
   "blockType": "response",

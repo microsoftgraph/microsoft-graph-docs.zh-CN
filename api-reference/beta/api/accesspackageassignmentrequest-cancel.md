@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5079de33f7ef3c7536baf50a876a84d5ca3711b4
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: d32f7e21bf8bf618b762f2a39b9fdd92eac102d0
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299142"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52473976"
 ---
 # <a name="accesspackageassignmentrequest-cancel"></a>accessPackageAssignmentRequest：cancel
 命名空间：microsoft.graph
@@ -55,6 +55,8 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignmentrequest_cancel"
@@ -68,6 +70,16 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
   "requestStatus":"cancelled"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignmentrequest-cancel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accesspackageassignmentrequest-cancel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8e1dceac5e7c901cdeeba7788c6a1541fdc26867
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 1212f1e473d6f8bfe6ac06fbee0b96b12256a377
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469148"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335588"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>fido2AuthenticationMethod 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "51469148"
 |id|String|身份验证方法标识符。|
 |displayName|String|用户显示名称的键的键值。|
 |createdDateTime|DateTimeOffset|向用户注册此密钥的时间戳。|
-|aaGuid|String|验证器证明 GUID，一个指示验证 (类型的标识符，例如验证器的) 和型号。|
+|aaGuid|String|Authenticator证明 GUID，一个指示验证 (类型的标识符，例如验证器的) 和型号。|
 |model|String|FIDO2 安全密钥的制造商分配模型。|
 |attestationCertificates|String collection|证明证书 () 安全密钥。|
 |attestationLevel|attestationLevel|此 FIDO2 安全密钥的证明级别。 可能的值是： `attested` 或 `notAttested` 。|
@@ -56,7 +56,7 @@ ms.locfileid: "51469148"
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
   "id": "String (identifier)",
   "displayName": "String",
-  "creationDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "aaGuid": "String",
   "model": "String",
   "attestationCertificates": [
