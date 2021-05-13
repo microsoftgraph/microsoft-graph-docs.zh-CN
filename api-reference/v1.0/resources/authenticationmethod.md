@@ -5,39 +5,41 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b052a6034484a5d1d1f8edc8ff9adc3feac52e98
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 6f45971e29e3d1823f9dc7cc733bc089f04662cb
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469134"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335581"
 ---
-# <a name="authenticationmethod-resource-type"></a><span data-ttu-id="6e64e-103">authenticationMethod 资源类型</span><span class="sxs-lookup"><span data-stu-id="6e64e-103">authenticationMethod resource type</span></span>
+# <a name="authenticationmethod-resource-type"></a><span data-ttu-id="0e14b-103">authenticationMethod 资源类型</span><span class="sxs-lookup"><span data-stu-id="0e14b-103">authenticationMethod resource type</span></span>
 
-<span data-ttu-id="6e64e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6e64e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0e14b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0e14b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="6e64e-105">表示注册到用户的身份验证方法。</span><span class="sxs-lookup"><span data-stu-id="6e64e-105">Represents an authentication method registered to a user.</span></span> <span data-ttu-id="6e64e-106">[身份验证方法是](/azure/active-directory/authentication/concept-authentication-methods)用户用来向系统进行身份验证或以其他方式证明其身份的方法。</span><span class="sxs-lookup"><span data-stu-id="6e64e-106">An [authentication method](/azure/active-directory/authentication/concept-authentication-methods) is something used by a user to authenticate or otherwise prove their identity to the system.</span></span> <span data-ttu-id="6e64e-107">一些示例包括密码、 (短信或语音呼叫) 、FIDO2 安全密钥等。</span><span class="sxs-lookup"><span data-stu-id="6e64e-107">Some examples include password, phone (usable via SMS or voice call), FIDO2 security keys, and more.</span></span>
+<span data-ttu-id="0e14b-105">表示注册到用户的身份验证方法。</span><span class="sxs-lookup"><span data-stu-id="0e14b-105">Represents an authentication method registered to a user.</span></span> <span data-ttu-id="0e14b-106">[身份验证方法是](/azure/active-directory/authentication/concept-authentication-methods)用户用来向系统进行身份验证或以其他方式证明其身份的方法。</span><span class="sxs-lookup"><span data-stu-id="0e14b-106">An [authentication method](/azure/active-directory/authentication/concept-authentication-methods) is something used by a user to authenticate or otherwise prove their identity to the system.</span></span> <span data-ttu-id="0e14b-107">一些示例包括密码、 (电话短信或语音呼叫) 、FIDO2 安全密钥等。</span><span class="sxs-lookup"><span data-stu-id="0e14b-107">Some examples include password, phone (usable via SMS or voice call), FIDO2 security keys, and more.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="6e64e-108">方法</span><span class="sxs-lookup"><span data-stu-id="6e64e-108">Methods</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="0e14b-108">列出用户的身份验证方法仅返回此 API 版本支持的方法。</span><span class="sxs-lookup"><span data-stu-id="0e14b-108">Listing users' authentication methods only returns methods supported on this API version.</span></span> <span data-ttu-id="0e14b-109">有关 [当前支持的方法的列表，请参阅 Azure AD 身份验证](authenticationmethods-overview.md) 方法 API 概述。</span><span class="sxs-lookup"><span data-stu-id="0e14b-109">See [Azure AD authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.</span></span>
 
-| <span data-ttu-id="6e64e-109">方法</span><span class="sxs-lookup"><span data-stu-id="6e64e-109">Method</span></span>       | <span data-ttu-id="6e64e-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="6e64e-110">Return type</span></span> | <span data-ttu-id="6e64e-111">说明</span><span class="sxs-lookup"><span data-stu-id="6e64e-111">Description</span></span> |
+## <a name="methods"></a><span data-ttu-id="0e14b-110">方法</span><span class="sxs-lookup"><span data-stu-id="0e14b-110">Methods</span></span>
+
+| <span data-ttu-id="0e14b-111">方法</span><span class="sxs-lookup"><span data-stu-id="0e14b-111">Method</span></span>       | <span data-ttu-id="0e14b-112">返回类型</span><span class="sxs-lookup"><span data-stu-id="0e14b-112">Return type</span></span> | <span data-ttu-id="0e14b-113">说明</span><span class="sxs-lookup"><span data-stu-id="0e14b-113">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="6e64e-112">列出 authenticationMethods</span><span class="sxs-lookup"><span data-stu-id="6e64e-112">List authenticationMethods</span></span>](../api/authentication-list-methods.md) | <span data-ttu-id="6e64e-113">[authenticationMethod](authenticationmethod.md) 集合</span><span class="sxs-lookup"><span data-stu-id="6e64e-113">[authenticationMethod](authenticationmethod.md) collection</span></span> | <span data-ttu-id="6e64e-114">读取用户的所有 **authenticationMethod** 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="6e64e-114">Read the properties and relationships of all of a user's **authenticationMethod** objects.</span></span> |
-| [<span data-ttu-id="6e64e-115">获取 authenticationMethod</span><span class="sxs-lookup"><span data-stu-id="6e64e-115">Get authenticationMethod</span></span>](../api/authenticationmethod-get.md) | [<span data-ttu-id="6e64e-116">authenticationMethod</span><span class="sxs-lookup"><span data-stu-id="6e64e-116">authenticationMethod</span></span>](authenticationmethod.md) | <span data-ttu-id="6e64e-117">读取 **authenticationMethod 对象的属性和** 关系。</span><span class="sxs-lookup"><span data-stu-id="6e64e-117">Read the properties and relationships of an **authenticationMethod** object.</span></span> |
+| [<span data-ttu-id="0e14b-114">列出 authenticationMethods</span><span class="sxs-lookup"><span data-stu-id="0e14b-114">List authenticationMethods</span></span>](../api/authentication-list-methods.md) | <span data-ttu-id="0e14b-115">[authenticationMethod](authenticationmethod.md) 集合</span><span class="sxs-lookup"><span data-stu-id="0e14b-115">[authenticationMethod](authenticationmethod.md) collection</span></span> | <span data-ttu-id="0e14b-116">读取用户的所有 **authenticationMethod** 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="0e14b-116">Read the properties and relationships of all of a user's **authenticationMethod** objects.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="6e64e-118">属性</span><span class="sxs-lookup"><span data-stu-id="6e64e-118">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0e14b-117">属性</span><span class="sxs-lookup"><span data-stu-id="0e14b-117">Properties</span></span>
 
-| <span data-ttu-id="6e64e-119">属性</span><span class="sxs-lookup"><span data-stu-id="6e64e-119">Property</span></span>     | <span data-ttu-id="6e64e-120">类型</span><span class="sxs-lookup"><span data-stu-id="6e64e-120">Type</span></span>        | <span data-ttu-id="6e64e-121">说明</span><span class="sxs-lookup"><span data-stu-id="6e64e-121">Description</span></span> |
+| <span data-ttu-id="0e14b-118">属性</span><span class="sxs-lookup"><span data-stu-id="0e14b-118">Property</span></span>     | <span data-ttu-id="0e14b-119">类型</span><span class="sxs-lookup"><span data-stu-id="0e14b-119">Type</span></span>        | <span data-ttu-id="0e14b-120">说明</span><span class="sxs-lookup"><span data-stu-id="0e14b-120">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="6e64e-122">id</span><span class="sxs-lookup"><span data-stu-id="6e64e-122">id</span></span>|<span data-ttu-id="6e64e-123">String</span><span class="sxs-lookup"><span data-stu-id="6e64e-123">String</span></span>| <span data-ttu-id="6e64e-124">注册到此用户的身份验证方法的此实例的标识符。</span><span class="sxs-lookup"><span data-stu-id="6e64e-124">The identifier of this instance of an authentication method registered to this user.</span></span> <span data-ttu-id="6e64e-125">只读。</span><span class="sxs-lookup"><span data-stu-id="6e64e-125">Read-only.</span></span> |
+|<span data-ttu-id="0e14b-121">id</span><span class="sxs-lookup"><span data-stu-id="0e14b-121">id</span></span>|<span data-ttu-id="0e14b-122">String</span><span class="sxs-lookup"><span data-stu-id="0e14b-122">String</span></span>| <span data-ttu-id="0e14b-123">注册到此用户的身份验证方法的此实例的标识符。</span><span class="sxs-lookup"><span data-stu-id="0e14b-123">The identifier of this instance of an authentication method registered to this user.</span></span> <span data-ttu-id="0e14b-124">只读。</span><span class="sxs-lookup"><span data-stu-id="0e14b-124">Read-only.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="6e64e-126">关系</span><span class="sxs-lookup"><span data-stu-id="6e64e-126">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="0e14b-125">关系</span><span class="sxs-lookup"><span data-stu-id="0e14b-125">Relationships</span></span>
 
-<span data-ttu-id="6e64e-127">无。</span><span class="sxs-lookup"><span data-stu-id="6e64e-127">None.</span></span>
+<span data-ttu-id="0e14b-126">无。</span><span class="sxs-lookup"><span data-stu-id="0e14b-126">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6e64e-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6e64e-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0e14b-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0e14b-127">JSON representation</span></span>
 
-<span data-ttu-id="6e64e-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6e64e-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0e14b-128">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0e14b-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

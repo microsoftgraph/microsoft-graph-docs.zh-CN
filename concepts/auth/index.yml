@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Microsoft Graph 身份验证概述
-summary: 了解如何进行身份验证以及如何使用权限通过 Microsoft Graph 安全访问数据。 浏览下面的文档，了解应用注册、身份验证库、授权和支持 Microsoft Graph 开发 Microsoft 标识平台的其他部分。
+title: Microsoft Graph身份验证概述
+summary: 了解如何通过 Microsoft Graph 进行身份验证以及使用权限来安全地访问Graph。 浏览下面的文档，了解应用注册、身份验证库、授权以及支持 Microsoft Microsoft 标识平台开发的其他Graph部分。
 metadata:
   ms.topic: landing-page
   ms.date: 05/07/2020
@@ -10,14 +10,14 @@ metadata:
   ms.workload: identity
   ms.reviewer: jawoods
   ms.custom: graphiamtop20
-  ms.openlocfilehash: 154ba4be69f0e07a5d6dec46a146a7a6a66b2c5c
-  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+  ms.openlocfilehash: e9768f21e145f55bc74f6731f2c4c9cc83ebfd07
+  ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "50240365"
+  ms.lasthandoff: 05/13/2021
+  ms.locfileid: "52474748"
 landingContent:
-- title: 开始行动
+- title: 入门
   linkLists:
   - linkListType: concept
     links:
@@ -25,9 +25,11 @@ landingContent:
       url: ./auth-concepts.md
     - text: 应用注册
       url: ../auth-register-app-v2.md
+    - text: 选择验证提供程序
+      url: ../sdks/choose-authentication-providers.md
   - linkListType: video
     links:
-    - text: 'Microsoft Graph 和应用注册 (7：29) '
+    - text: 'Microsoft Graph应用注册 (7：29) '
       url: https://www.youtube.com/watch?v=93j0MmRruFo
 - title: 增强应用
   linkLists:

@@ -5,33 +5,33 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d34d36fb96c08ff66cad36a77b84d24cffbfed77
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 8cb462e31817c229b44ac2042e8d61073af58479
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266883"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474655"
 ---
-# <a name="serviceprincipal-addtokensigningcertificate"></a><span data-ttu-id="bf63a-103">servicePrincipal：addTokenSigningCertificate</span><span class="sxs-lookup"><span data-stu-id="bf63a-103">servicePrincipal: addTokenSigningCertificate</span></span>
+# <a name="serviceprincipal-addtokensigningcertificate"></a><span data-ttu-id="fc3c3-103">servicePrincipal：addTokenSigningCertificate</span><span class="sxs-lookup"><span data-stu-id="fc3c3-103">servicePrincipal: addTokenSigningCertificate</span></span>
 
-<span data-ttu-id="bf63a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bf63a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fc3c3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fc3c3-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bf63a-105">创建自签名签名证书并返回 [selfSignedCertificate，](../resources/selfsignedcertificate.md)这是生成的证书的公共部分。</span><span class="sxs-lookup"><span data-stu-id="bf63a-105">Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md), which is the public part of the generated certificate.</span></span> <span data-ttu-id="bf63a-106">自签名签名证书由以下资源组成：使用 = "Sign") 的私钥 ([keyCredential、](../resources/keycredential.md) 使用 = "verify") 的公钥 ([keyCredential](../resources/keycredential.md) 和 [passwordCredential](../resources/passwordcredential.md)。</span><span class="sxs-lookup"><span data-stu-id="bf63a-106">The self-signed signing certificate is composed of these resources: the private key ([keyCredential](../resources/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredential](../resources/passwordcredential.md).</span></span> <span data-ttu-id="bf63a-107">所有已创建的资源具有相同的 **customKeyIdentifier**。</span><span class="sxs-lookup"><span data-stu-id="bf63a-107">All the created resources have the same **customKeyIdentifier**.</span></span>
+<span data-ttu-id="fc3c3-105">创建自签名签名证书并返回 [selfSignedCertificate，](../resources/selfsignedcertificate.md)这是生成的证书的公共部分。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-105">Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md), which is the public part of the generated certificate.</span></span> <span data-ttu-id="fc3c3-106">自签名签名证书由以下资源组成：使用 = "Sign") 的私钥 ([keyCredential、](../resources/keycredential.md) 使用 = "verify") 的公钥 ([keyCredential](../resources/keycredential.md) 和 [passwordCredential](../resources/passwordcredential.md)。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-106">The self-signed signing certificate is composed of these resources: the private key ([keyCredential](../resources/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredential](../resources/passwordcredential.md).</span></span> <span data-ttu-id="fc3c3-107">所有已创建的资源具有相同的 **customKeyIdentifier**。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-107">All the created resources have the same **customKeyIdentifier**.</span></span>
 
-<span data-ttu-id="bf63a-108">**passwordCredential** 用于打开 pfx/私钥。</span><span class="sxs-lookup"><span data-stu-id="bf63a-108">The **passwordCredential** is used to open the pfx/private key.</span></span> <span data-ttu-id="bf63a-109">此外，它还与具有相同 **keyId** 的 privateKey 相关联。</span><span class="sxs-lookup"><span data-stu-id="bf63a-109">Also, it's associated with the privateKey having the same **keyId**.</span></span> <span data-ttu-id="bf63a-110">证书的主题是一个常量值。</span><span class="sxs-lookup"><span data-stu-id="bf63a-110">The subject of the certificate is a constant value.</span></span> <span data-ttu-id="bf63a-111">它不受 POST 调用中提供的可选 **displayName** 的影响。</span><span class="sxs-lookup"><span data-stu-id="bf63a-111">It won't be affected by the optional **displayName** provided in the POST call.</span></span> <span data-ttu-id="bf63a-112">**startDateTime** 设置为使用 操作创建证书的同一时间。</span><span class="sxs-lookup"><span data-stu-id="bf63a-112">The **startDateTime** is set to the same time the certificate is created using the action.</span></span> <span data-ttu-id="bf63a-113">**endDateTime** 可在证书创建后最多三年。</span><span class="sxs-lookup"><span data-stu-id="bf63a-113">The **endDateTime** can be up to three years after the certificate is created.</span></span>
+<span data-ttu-id="fc3c3-108">**passwordCredential** 用于打开 pfx/私钥。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-108">The **passwordCredential** is used to open the pfx/private key.</span></span> <span data-ttu-id="fc3c3-109">此外，它还与具有相同 **keyId** 的 privateKey 相关联。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-109">Also, it's associated with the privateKey having the same **keyId**.</span></span> <span data-ttu-id="fc3c3-110">证书的主题是一个常量值。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-110">The subject of the certificate is a constant value.</span></span> <span data-ttu-id="fc3c3-111">它不受 POST 调用中提供的可选 **displayName** 的影响。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-111">It won't be affected by the optional **displayName** provided in the POST call.</span></span> <span data-ttu-id="fc3c3-112">**startDateTime** 设置为使用 操作创建证书的同一时间。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-112">The **startDateTime** is set to the same time the certificate is created using the action.</span></span> <span data-ttu-id="fc3c3-113">**endDateTime** 可在证书创建后最多三年。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-113">The **endDateTime** can be up to three years after the certificate is created.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bf63a-114">权限</span><span class="sxs-lookup"><span data-stu-id="bf63a-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fc3c3-114">权限</span><span class="sxs-lookup"><span data-stu-id="fc3c3-114">Permissions</span></span>
 
-|<span data-ttu-id="bf63a-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="bf63a-115">Permission type</span></span>      | <span data-ttu-id="bf63a-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bf63a-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fc3c3-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="fc3c3-115">Permission type</span></span>      | <span data-ttu-id="fc3c3-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fc3c3-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bf63a-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bf63a-117">Delegated (work or school account)</span></span> | <span data-ttu-id="bf63a-118">Application.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf63a-118">Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="bf63a-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bf63a-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bf63a-120">无。</span><span class="sxs-lookup"><span data-stu-id="bf63a-120">None.</span></span>    |
-|<span data-ttu-id="bf63a-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="bf63a-121">Application</span></span> | <span data-ttu-id="bf63a-122">Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf63a-122">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="fc3c3-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fc3c3-117">Delegated (work or school account)</span></span> | <span data-ttu-id="fc3c3-118">Application.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc3c3-118">Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="fc3c3-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fc3c3-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc3c3-120">无。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-120">None.</span></span>    |
+|<span data-ttu-id="fc3c3-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="fc3c3-121">Application</span></span> | <span data-ttu-id="fc3c3-122">Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc3c3-122">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="bf63a-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bf63a-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fc3c3-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fc3c3-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,25 +39,27 @@ ms.locfileid: "52266883"
 POST /servicePrincipals/{id}/addTokenSigningCertificate
 ```
 
-## <a name="request-body"></a><span data-ttu-id="bf63a-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="bf63a-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fc3c3-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="fc3c3-124">Request body</span></span>
 
-<span data-ttu-id="bf63a-125">在请求正文中，提供以下必需属性。</span><span class="sxs-lookup"><span data-stu-id="bf63a-125">In the request body, provide the following required properties.</span></span>
+<span data-ttu-id="fc3c3-125">在请求正文中，提供以下必需属性。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-125">In the request body, provide the following required properties.</span></span>
 
-| <span data-ttu-id="bf63a-126">属性</span><span class="sxs-lookup"><span data-stu-id="bf63a-126">Property</span></span>     | <span data-ttu-id="bf63a-127">类型</span><span class="sxs-lookup"><span data-stu-id="bf63a-127">Type</span></span>   |<span data-ttu-id="bf63a-128">说明</span><span class="sxs-lookup"><span data-stu-id="bf63a-128">Description</span></span>|
+| <span data-ttu-id="fc3c3-126">属性</span><span class="sxs-lookup"><span data-stu-id="fc3c3-126">Property</span></span>     | <span data-ttu-id="fc3c3-127">类型</span><span class="sxs-lookup"><span data-stu-id="fc3c3-127">Type</span></span>   |<span data-ttu-id="fc3c3-128">说明</span><span class="sxs-lookup"><span data-stu-id="fc3c3-128">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="bf63a-129">displayName</span><span class="sxs-lookup"><span data-stu-id="bf63a-129">displayName</span></span> | <span data-ttu-id="bf63a-130">string</span><span class="sxs-lookup"><span data-stu-id="bf63a-130">string</span></span> | <span data-ttu-id="bf63a-131">密钥的友好名称。</span><span class="sxs-lookup"><span data-stu-id="bf63a-131">Friendly name for the key.</span></span>  <span data-ttu-id="bf63a-132">它必须以 `CN=` 开始。</span><span class="sxs-lookup"><span data-stu-id="bf63a-132">It must start with `CN=`.</span></span>|
-| <span data-ttu-id="bf63a-133">endDateTime</span><span class="sxs-lookup"><span data-stu-id="bf63a-133">endDateTime</span></span> | <span data-ttu-id="bf63a-134">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bf63a-134">DateTimeOffset</span></span> |<span data-ttu-id="bf63a-135">凭据过期的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="bf63a-135">The date and time when the credential expires.</span></span> <span data-ttu-id="bf63a-136">从证书创建之日起，最多 3 年。</span><span class="sxs-lookup"><span data-stu-id="bf63a-136">It can be up to 3 years from the date the certificate is created.</span></span> <span data-ttu-id="bf63a-137">如果未提供，则默认值为自创建时起三年。</span><span class="sxs-lookup"><span data-stu-id="bf63a-137">If not supplied, the default is three years from the time of creation.</span></span> <span data-ttu-id="bf63a-138">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="bf63a-138">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="bf63a-139">例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。</span><span class="sxs-lookup"><span data-stu-id="bf63a-139">For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' .</span></span>|
+| <span data-ttu-id="fc3c3-129">displayName</span><span class="sxs-lookup"><span data-stu-id="fc3c3-129">displayName</span></span> | <span data-ttu-id="fc3c3-130">string</span><span class="sxs-lookup"><span data-stu-id="fc3c3-130">string</span></span> | <span data-ttu-id="fc3c3-131">密钥的友好名称。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-131">Friendly name for the key.</span></span>  <span data-ttu-id="fc3c3-132">它必须以 `CN=` 开始。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-132">It must start with `CN=`.</span></span>|
+| <span data-ttu-id="fc3c3-133">endDateTime</span><span class="sxs-lookup"><span data-stu-id="fc3c3-133">endDateTime</span></span> | <span data-ttu-id="fc3c3-134">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fc3c3-134">DateTimeOffset</span></span> |<span data-ttu-id="fc3c3-135">凭据过期的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-135">The date and time when the credential expires.</span></span> <span data-ttu-id="fc3c3-136">从证书创建之日起，最多 3 年。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-136">It can be up to 3 years from the date the certificate is created.</span></span> <span data-ttu-id="fc3c3-137">如果未提供，则默认值为自创建时起三年。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-137">If not supplied, the default is three years from the time of creation.</span></span> <span data-ttu-id="fc3c3-138">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-138">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="fc3c3-139">例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-139">For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' .</span></span>|
 
-## <a name="response"></a><span data-ttu-id="bf63a-140">响应</span><span class="sxs-lookup"><span data-stu-id="bf63a-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fc3c3-140">响应</span><span class="sxs-lookup"><span data-stu-id="fc3c3-140">Response</span></span>
 
-<span data-ttu-id="bf63a-141">如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [selfSignedCertificate](../resources/selfsignedcertificate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bf63a-141">If successful, this method returns a `200 OK` response code and a new [selfSignedCertificate](../resources/selfsignedcertificate.md) object in the response body.</span></span>
+<span data-ttu-id="fc3c3-141">如果成功，此方法在响应正文中返回 响应代码和新 `200 OK` [selfSignedCertificate](../resources/selfsignedcertificate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-141">If successful, this method returns a `200 OK` response code and a new [selfSignedCertificate](../resources/selfsignedcertificate.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bf63a-142">示例</span><span class="sxs-lookup"><span data-stu-id="bf63a-142">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="fc3c3-142">示例</span><span class="sxs-lookup"><span data-stu-id="fc3c3-142">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="bf63a-143">请求</span><span class="sxs-lookup"><span data-stu-id="bf63a-143">Request</span></span>
+### <a name="request"></a><span data-ttu-id="fc3c3-143">请求</span><span class="sxs-lookup"><span data-stu-id="fc3c3-143">Request</span></span>
 
-<span data-ttu-id="bf63a-144">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="bf63a-144">The following is an example of the request.</span></span>
+<span data-ttu-id="fc3c3-144">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-144">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="fc3c3-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="fc3c3-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_addtokensigningcertificate"
@@ -72,10 +74,28 @@ Content-type: application/json
     "endDateTime":"2024-01-25T00:00:00Z"
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="fc3c3-146">C#</span><span class="sxs-lookup"><span data-stu-id="fc3c3-146">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addtokensigningcertificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="bf63a-145">响应</span><span class="sxs-lookup"><span data-stu-id="bf63a-145">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="fc3c3-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fc3c3-147">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addtokensigningcertificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="bf63a-146">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bf63a-146">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="fc3c3-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fc3c3-148">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-addtokensigningcertificate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="fc3c3-149">Java</span><span class="sxs-lookup"><span data-stu-id="fc3c3-149">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addtokensigningcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="fc3c3-150">响应</span><span class="sxs-lookup"><span data-stu-id="fc3c3-150">Response</span></span>
+
+<span data-ttu-id="fc3c3-151">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fc3c3-151">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1780a5a4dd8fcde660c08c1accb705edb4e27446
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 3cfbcd9a5c62630693ab287d690fcc6cf68696af
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202511"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474654"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const selfSignedCertificate = {
     endDateTime: '2024-01-25T00:00:00Z'
 };
 
-await client.api('/servicePrincipals/7c8d4399-b4bf-413a-8b6a-c577790cae7d/addTokenSigningCertificate')
+await client.api('/servicePrincipals/004375c5-6e2e-4dec-95e3-626838cb9f80/addTokenSigningCertificate')
     .version('beta')
     .post(selfSignedCertificate);
 

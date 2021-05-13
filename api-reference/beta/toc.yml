@@ -9750,6 +9750,8 @@ items:
                 href: api/educationsubmissionresource-delete.md
               - name: 获取提交内容
                 href: api/educationsubmission-get.md
+              - name: 设置提交资源文件夹
+                href: api/educationsubmission-setupresourcesfolder.md
               - name: 提交提交内容
                 href: api/educationsubmission-submit.md
               - name: 不提交提交内容

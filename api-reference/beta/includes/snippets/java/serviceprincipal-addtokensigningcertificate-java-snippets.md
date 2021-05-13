@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 475c55d54405a571b4b99b7e9bb2e32670023c31
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 604bb0215996f5acdc1f47a487d642de5a563816
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202508"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474652"
 ---
 ```java
 
@@ -15,7 +15,7 @@ String displayName = "CN=customDisplayName";
 
 OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("01/25/2024 00:00:00");
 
-graphClient.servicePrincipals("7c8d4399-b4bf-413a-8b6a-c577790cae7d")
+graphClient.servicePrincipals("004375c5-6e2e-4dec-95e3-626838cb9f80")
     .addTokenSigningCertificate(ServicePrincipalAddTokenSigningCertificateParameterSet
         .newBuilder()
         .withDisplayName(displayName)
