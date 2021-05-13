@@ -6,12 +6,12 @@ localization_priority: Priority
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6bbd22afe1aad3b823c892438447a42548c68318
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 5c14371966d4620450c7d791a3ed90a38b12c61b
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239518"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335604"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
@@ -63,8 +63,8 @@ ms.locfileid: "50239518"
 |:--------------|:------------------------------------------|:-----------------
 | id            | String                                    | 在项目的所有权限中，某个权限的唯一标识符。只读。
 | grantedTo     | [IdentitySet](identityset.md)             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
-| grantedToIdentities | Collection([IdentitySet](identityset.md)) | 对于链接类型权限，被授予权限的用户的详细信息。 只读。
-| invitation    | [SharingInvitation][]                     | 此权限的全部关联共享邀请的详细信息。只读。
+| grantedToIdentities | Collection([IdentitySet](identityset.md)) | 对于链接类型权限，被授予权限的用户的详细信息。只读。
+| 邀请    | [SharingInvitation][]                     | 此权限的全部关联共享邀请的详细信息。只读。
 | inheritedFrom | [ItemReference](itemreference.md)         | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。
 | link          | [SharingLink][]                           | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
 | roles         | Collection of String                      | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
@@ -87,7 +87,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 |:------------------|:-------------------------------------------------------------------------------|
 | 阅读            | 提供读取项的元数据和内容的功能。            |
 | 写入           | 提供读取并修改项的元数据和内容的功能。 |
-| sp.full 控制 | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
+| 所有者           | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
 
 ## <a name="sharing-links"></a>共享链接
 最常见的权限类型是共享链接。 共享链接提供唯一 URL，其中包含要共享的资源，以及提供对此资源的访问权限的身份验证令牌。 用户无需登录，即可访问通过共享链接共享的内容。 用户可以共享链接，从而提供对内容的只读权限或写入权限。
@@ -106,7 +106,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -124,7 +124,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 ### <a name="specific-people-link"></a>特定人员链接
@@ -140,13 +140,13 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     {
        "user": {
         "id": "35fij1974gb8832",
-        "displayName": "Misty Suarez"
+        "displayName&quot;: &quot;Misty Suarez"
       }
     },
     {
        "user": {
         "id": "9397721fh4hgh73",
-        "displayName": "Judith Clemons"
+        "displayName&quot;: &quot;Judith Clemons"
       }
     }
   ],
@@ -156,7 +156,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -175,7 +175,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "type": "view",
     "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
   },
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -195,7 +195,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -209,7 +209,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
   "grantedTo": {
     "user": {
       "id": "5D33DD65C6932946",
-      "displayName": "John Doe"
+      "displayName&quot;: &quot;John Doe"
     }
   },
   "invitation": {
@@ -217,7 +217,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 

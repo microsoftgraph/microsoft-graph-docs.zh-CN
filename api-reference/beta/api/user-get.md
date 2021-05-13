@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8a71a50714d18d4d4d8e91a4f5a7e0c0b31fe9e6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 95d0839341f158821eeb51f9aea252155462241d
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052633"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335665"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -32,6 +32,8 @@ ms.locfileid: "52052633"
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
+
+## <a name="http-request"></a>HTTP 请求
 
 对于特定用户：
 <!-- { "blockType": "ignored" } -->
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。 
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
   "blockType": "response",
