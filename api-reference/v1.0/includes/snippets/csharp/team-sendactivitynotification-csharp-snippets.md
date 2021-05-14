@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: aaf1435c1a4c771bcb30a6aa17985e87a662665a
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 900b0622d379cc744942181b0fa08737edff2e33
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507559"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52476759"
 ---
 ```csharp
 
@@ -25,6 +25,11 @@ var previewText = new ItemBody
     Content = "New deployment requires your approval"
 };
 
+var recipient = new AadUserNotificationRecipient
+{
+    UserId = "569363e2-4e49-4661-87f2-16f245c5d66a"
+};
+
 var templateParameters = new List<KeyValuePair>()
 {
     new KeyValuePair
@@ -34,8 +39,8 @@ var templateParameters = new List<KeyValuePair>()
     }
 };
 
-await graphClient.Users["{user-id}"].Teamwork
-    .SendActivityNotification(topic,activityType,null,previewText,templateParameters)
+await graphClient.Teams["{team-id}"]
+    .SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
     .Request()
     .PostAsync();
 

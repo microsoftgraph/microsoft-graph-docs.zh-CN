@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 054c5af5483c6cd85ebbf0e7fa110bb6f4a504a9
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 6530d0fd060381a0e2f3281f23cad60f98b2dfef
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231268"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52475428"
 ---
 # <a name="list-classes-of-an-educationuser"></a>列出 educationUser 的课程
 
@@ -20,7 +20,7 @@ ms.locfileid: "52231268"
 
 <!-- Please verify the revision to the delegated token text. -->
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
