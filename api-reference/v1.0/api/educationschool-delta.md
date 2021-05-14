@@ -5,30 +5,30 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3604a9296d7419d20e1b2b9016a2dc724b65c222
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 5f77334e3149dd963a0a2092faae5aa11bd8bd9a
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232172"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474918"
 ---
-# <a name="educationschool-delta"></a><span data-ttu-id="87bb1-103">educationSchool： delta</span><span class="sxs-lookup"><span data-stu-id="87bb1-103">educationSchool: delta</span></span>
+# <a name="educationschool-delta"></a><span data-ttu-id="7efdf-103">educationSchool： delta</span><span class="sxs-lookup"><span data-stu-id="7efdf-103">educationSchool: delta</span></span>
 
-<span data-ttu-id="87bb1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="87bb1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7efdf-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7efdf-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="87bb1-105">获取新创建或更新的学校，而无需执行整个学校集合的完整读取。</span><span class="sxs-lookup"><span data-stu-id="87bb1-105">Get newly created or updated schools without having to perform a full read of the entire school collection.</span></span> <span data-ttu-id="87bb1-106">有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。</span><span class="sxs-lookup"><span data-stu-id="87bb1-106">See [Use delta query](/graph/delta-query-overview) for details.</span></span>
+<span data-ttu-id="7efdf-105">获取新创建或更新的学校，而无需执行整个学校集合的完整读取。</span><span class="sxs-lookup"><span data-stu-id="7efdf-105">Get newly created or updated schools without having to perform a full read of the entire school collection.</span></span> <span data-ttu-id="7efdf-106">有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。</span><span class="sxs-lookup"><span data-stu-id="7efdf-106">See [Use delta query](/graph/delta-query-overview) for details.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="87bb1-107">权限</span><span class="sxs-lookup"><span data-stu-id="87bb1-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7efdf-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="7efdf-107">Permissions</span></span>
 
-<span data-ttu-id="87bb1-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="87bb1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7efdf-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7efdf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="87bb1-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="87bb1-110">Permission type</span></span>                        | <span data-ttu-id="87bb1-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="87bb1-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7efdf-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7efdf-110">Permission type</span></span>                        | <span data-ttu-id="7efdf-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7efdf-111">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="87bb1-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="87bb1-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="87bb1-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="87bb1-113">EduRoster.ReadBasic</span></span>                         |
-| <span data-ttu-id="87bb1-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="87bb1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="87bb1-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="87bb1-115">Not supported.</span></span>                              |
-| <span data-ttu-id="87bb1-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="87bb1-116">Application</span></span>                            | <span data-ttu-id="87bb1-117">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87bb1-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> |
+| <span data-ttu-id="7efdf-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7efdf-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="7efdf-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="7efdf-113">EduRoster.ReadBasic</span></span>                         |
+| <span data-ttu-id="7efdf-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7efdf-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7efdf-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7efdf-115">Not supported.</span></span>                              |
+| <span data-ttu-id="7efdf-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7efdf-116">Application</span></span>                            | <span data-ttu-id="7efdf-117">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7efdf-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="87bb1-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="87bb1-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7efdf-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7efdf-118">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,42 +39,62 @@ ms.locfileid: "52232172"
 GET /education/schools/delta
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="87bb1-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="87bb1-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7efdf-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="7efdf-119">Request headers</span></span>
 
-| <span data-ttu-id="87bb1-120">名称</span><span class="sxs-lookup"><span data-stu-id="87bb1-120">Name</span></span>          | <span data-ttu-id="87bb1-121">说明</span><span class="sxs-lookup"><span data-stu-id="87bb1-121">Description</span></span>               |
+| <span data-ttu-id="7efdf-120">名称</span><span class="sxs-lookup"><span data-stu-id="7efdf-120">Name</span></span>          | <span data-ttu-id="7efdf-121">说明</span><span class="sxs-lookup"><span data-stu-id="7efdf-121">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="87bb1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="87bb1-122">Authorization</span></span> | <span data-ttu-id="87bb1-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="87bb1-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7efdf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7efdf-122">Authorization</span></span> | <span data-ttu-id="7efdf-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7efdf-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="87bb1-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="87bb1-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7efdf-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="7efdf-125">Request body</span></span>
 
-<span data-ttu-id="87bb1-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="87bb1-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="7efdf-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7efdf-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="87bb1-127">响应</span><span class="sxs-lookup"><span data-stu-id="87bb1-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7efdf-127">响应</span><span class="sxs-lookup"><span data-stu-id="7efdf-127">Response</span></span>
 
-<span data-ttu-id="87bb1-128">如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [educationSchool](../resources/educationschool.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="87bb1-128">If successful, this function returns a `200 OK` response code and a [educationSchool](../resources/educationschool.md) collection in the response body.</span></span> <span data-ttu-id="87bb1-129">该响应还包括 `nextLink`URL 或 `deltaLink`URL。</span><span class="sxs-lookup"><span data-stu-id="87bb1-129">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
+<span data-ttu-id="7efdf-128">如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 [educationSchool](../resources/educationschool.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="7efdf-128">If successful, this function returns a `200 OK` response code and a [educationSchool](../resources/educationschool.md) collection in the response body.</span></span> <span data-ttu-id="7efdf-129">该响应还包括 `nextLink`URL 或 `deltaLink`URL。</span><span class="sxs-lookup"><span data-stu-id="7efdf-129">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
 
-- <span data-ttu-id="87bb1-130">如果 `nextLink` 返回 URL，则会话中有其他要检索的数据页。</span><span class="sxs-lookup"><span data-stu-id="87bb1-130">If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="87bb1-131">应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="87bb1-131">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
-- <span data-ttu-id="87bb1-132">如果 `deltaLink` 返回 URL，则不再返回有关资源现有状态的数据。</span><span class="sxs-lookup"><span data-stu-id="87bb1-132">If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="87bb1-133">保留并使用 `deltaLink` URL 了解将来对资源的更改。</span><span class="sxs-lookup"><span data-stu-id="87bb1-133">Persist and use the `deltaLink` URL to learn about changes to the resource in the future.</span></span>
+- <span data-ttu-id="7efdf-130">如果 `nextLink` 返回 URL，则会话中有其他要检索的数据页。</span><span class="sxs-lookup"><span data-stu-id="7efdf-130">If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="7efdf-131">应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="7efdf-131">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
+- <span data-ttu-id="7efdf-132">如果 `deltaLink` 返回 URL，则不再返回有关资源现有状态的数据。</span><span class="sxs-lookup"><span data-stu-id="7efdf-132">If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="7efdf-133">保留并使用 `deltaLink` URL 了解将来对资源的更改。</span><span class="sxs-lookup"><span data-stu-id="7efdf-133">Persist and use the `deltaLink` URL to learn about changes to the resource in the future.</span></span>
 
-<span data-ttu-id="87bb1-134">有关详细信息，请参阅使用 [delta 查询](/graph/delta-query-overview)。</span><span class="sxs-lookup"><span data-stu-id="87bb1-134">For details, see [Using delta query](/graph/delta-query-overview).</span></span> <span data-ttu-id="87bb1-135">有关示例请求，请参阅 [获取用户的增量更改](/graph/delta-query-users)。</span><span class="sxs-lookup"><span data-stu-id="87bb1-135">For example requests, see [Get incremental changes for users](/graph/delta-query-users).</span></span>
+<span data-ttu-id="7efdf-134">有关详细信息，请参阅使用 [delta 查询](/graph/delta-query-overview)。</span><span class="sxs-lookup"><span data-stu-id="7efdf-134">For details, see [Using delta query](/graph/delta-query-overview).</span></span> <span data-ttu-id="7efdf-135">有关示例请求，请参阅 [获取用户的增量更改](/graph/delta-query-users)。</span><span class="sxs-lookup"><span data-stu-id="7efdf-135">For example requests, see [Get incremental changes for users](/graph/delta-query-users).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="87bb1-136">示例</span><span class="sxs-lookup"><span data-stu-id="87bb1-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7efdf-136">示例</span><span class="sxs-lookup"><span data-stu-id="7efdf-136">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="87bb1-137">请求</span><span class="sxs-lookup"><span data-stu-id="87bb1-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7efdf-137">请求</span><span class="sxs-lookup"><span data-stu-id="7efdf-137">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="7efdf-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="7efdf-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationschool_delta"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/schools/delta
 ```
+# <a name="c"></a>[<span data-ttu-id="7efdf-139">C#</span><span class="sxs-lookup"><span data-stu-id="7efdf-139">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationschool-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="87bb1-138">响应</span><span class="sxs-lookup"><span data-stu-id="87bb1-138">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="7efdf-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7efdf-140">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationschool-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="87bb1-139">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="87bb1-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="7efdf-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7efdf-141">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationschool-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="7efdf-142">Java</span><span class="sxs-lookup"><span data-stu-id="7efdf-142">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationschool-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="7efdf-143">响应</span><span class="sxs-lookup"><span data-stu-id="7efdf-143">Response</span></span>
+
+> <span data-ttu-id="7efdf-144">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="7efdf-144">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",

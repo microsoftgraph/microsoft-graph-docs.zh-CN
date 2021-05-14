@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 659c274b83de9df6c835a93f68570c0c2021f36d
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 50a63fd7ef4db31d7db0b86b98930ec1056e3c7f
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507558"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52476764"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{userId}/teamwork/sendActivityNotification"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{teamId}/sendActivityNotification"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -30,6 +30,10 @@ payloadDictionary[@"activityType"] = activityType;
 MSGraphItemBody *previewText = [[MSGraphItemBody alloc] init];
 [previewText setContent:@"New deployment requires your approval"];
 payloadDictionary[@"previewText"] = previewText;
+
+MSGraphTeamworkNotificationRecipient *recipient = [[MSGraphTeamworkNotificationRecipient alloc] init];
+[recipient setUserId:@"569363e2-4e49-4661-87f2-16f245c5d66a"];
+payloadDictionary[@"recipient"] = recipient;
 
 NSMutableArray *templateParametersList = [[NSMutableArray alloc] init];
 MSGraphKeyValuePair *templateParameters = [[MSGraphKeyValuePair alloc] init];
