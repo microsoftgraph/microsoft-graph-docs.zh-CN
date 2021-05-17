@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 870aa1e51af2202ae81e856771bd48cdc515d35b
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 8b0c1b597fa629b36cf106c84812a35518020adf
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298550"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474363"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -163,7 +163,7 @@ ms.locfileid: "52298550"
 | aboutMe | String | 任意形式的文本输入字段，用于介绍用户自身。 <br><br>仅在 `$select` 上返回。 |
 | accountEnabled | Boolean | 启用帐户时为 `true`，否则为 `false`。 创建用户时此属性是必需的。 <br><br>仅在 `$select` 上返回。 支持 $filter。 |
 | ageGroup | [ageGroup](#agegroup-values) | 设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
-| assignedLicenses | [assignedLicense](assignedlicense.md) collection | 分配给该用户的许可证。 <br><br>不可为 null。 支持 `$filter`。 |
+| assignedLicenses | [assignedLicense](assignedlicense.md) collection | 已分配给用户的许可证，包括继承的（基于组的）许可证。 <br><br>不可为 null。 支持 `$filter`。 |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | 分配给该用户的计划。 <br><br>仅在 `$select` 上返回。 只读。 不可为 null。 |
 | birthday | DateTimeOffset | 用户的生日。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 |
 | businessPhones | String collection | 用户的电话号码。仅可以为此属性设置一个数字。 <br><br>默认返回。从本地目录同步的用户的只读状态。 |
@@ -171,7 +171,7 @@ ms.locfileid: "52298550"
 | companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 |
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
 | country | String | 用户所在的国家/地区;例如，"美国"或"UK"。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
-| createdDateTime | DateTimeOffset | 创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 <br><br>仅在 `$select` 上返回。 只读。 通过 `eq`、`lt`、和 `ge` 运算符支持 `$filter`。 |
+| createdDateTime | DateTimeOffset | 创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 <br><br>仅在 `$select` 上返回。 只读。 通过 `eq`、`ne`、`le` 和 `ge` 运算符支持 `$filter`。 |
 | creationType | 字符串 | 指示创建的用户帐户是普通学校或工作帐户 (`null`)、外部帐户 (`Invitation`)、Azure Active Directory B2C 租户的本地帐户 (`LocalAccount`) 还是使用电子邮件验证的自助注册帐户 (`EmailVerified`)。 <br><br>仅在 `$select` 上返回。 只读。 |
 | deletedDateTime | DateTimeOffset | 删除用户的日期和时间。 <br><br>仅在 `$select` 上返回。 |
 | department | String | 用户工作部门的名称。 最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
