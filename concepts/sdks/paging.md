@@ -10,22 +10,22 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2021
 ms.locfileid: "52579660"
 ---
-# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a><span data-ttu-id="8aa76-103">使用 Microsoft SDK 分页Graph集合</span><span class="sxs-lookup"><span data-stu-id="8aa76-103">Page through a collection using the Microsoft Graph SDKs</span></span>
+# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a><span data-ttu-id="da495-103">使用 Microsoft SDK 分页Graph集合</span><span class="sxs-lookup"><span data-stu-id="da495-103">Page through a collection using the Microsoft Graph SDKs</span></span>
 
-<span data-ttu-id="8aa76-104">出于性能原因，实体集合通常拆分为多个页面，并且每个页面返回一个指向下一页的 URL。</span><span class="sxs-lookup"><span data-stu-id="8aa76-104">For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page.</span></span> <span data-ttu-id="8aa76-105">**PageIterator** 类简化了分页集合的使用。</span><span class="sxs-lookup"><span data-stu-id="8aa76-105">The **PageIterator** class simplifies consuming of paged collections.</span></span> <span data-ttu-id="8aa76-106">**PageIterator** 自动枚举当前页面和请求后续页面。</span><span class="sxs-lookup"><span data-stu-id="8aa76-106">**PageIterator** handles enumerating the current page and requesting subsequent pages automatically.</span></span>
+<span data-ttu-id="da495-104">出于性能原因，实体集合通常拆分为多个页面，并且每个页面返回一个指向下一页的 URL。</span><span class="sxs-lookup"><span data-stu-id="da495-104">For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page.</span></span> <span data-ttu-id="da495-105">**PageIterator** 类简化了分页集合的使用。</span><span class="sxs-lookup"><span data-stu-id="da495-105">The **PageIterator** class simplifies consuming of paged collections.</span></span> <span data-ttu-id="da495-106">**PageIterator** 自动枚举当前页面和请求后续页面。</span><span class="sxs-lookup"><span data-stu-id="da495-106">**PageIterator** handles enumerating the current page and requesting subsequent pages automatically.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8aa76-107">请求标头</span><span class="sxs-lookup"><span data-stu-id="8aa76-107">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="da495-107">请求标头</span><span class="sxs-lookup"><span data-stu-id="da495-107">Request headers</span></span>
 
-<span data-ttu-id="8aa76-108">如果在初始请求中发送任何其他请求头，则默认情况下这些标头不会包含在后续页面请求中。</span><span class="sxs-lookup"><span data-stu-id="8aa76-108">If you send any additional request headers in your initial request, those headers are not included by default in subsequent page requests.</span></span> <span data-ttu-id="8aa76-109">如果需要在后续请求上发送这些标头，则必须显式设置它们。</span><span class="sxs-lookup"><span data-stu-id="8aa76-109">If those headers need to be sent on subsequent requests, you must set them explicitly.</span></span>
+<span data-ttu-id="da495-108">如果在初始请求中发送任何其他请求头，则默认情况下这些标头不会包含在后续页面请求中。</span><span class="sxs-lookup"><span data-stu-id="da495-108">If you send any additional request headers in your initial request, those headers are not included by default in subsequent page requests.</span></span> <span data-ttu-id="da495-109">如果需要在后续请求上发送这些标头，则必须显式设置它们。</span><span class="sxs-lookup"><span data-stu-id="da495-109">If those headers need to be sent on subsequent requests, you must set them explicitly.</span></span>
 
-## <a name="iterate-over-all-the-messages"></a><span data-ttu-id="8aa76-110">在所有邮件上进行 Iterate</span><span class="sxs-lookup"><span data-stu-id="8aa76-110">Iterate over all the messages</span></span>
+## <a name="iterate-over-all-the-messages"></a><span data-ttu-id="da495-110">在所有邮件上进行 Iterate</span><span class="sxs-lookup"><span data-stu-id="da495-110">Iterate over all the messages</span></span>
 
-<span data-ttu-id="8aa76-111">下面的示例展示了如何对用户邮箱中所有邮件进行访问。</span><span class="sxs-lookup"><span data-stu-id="8aa76-111">The following example shows iterating over all the messages in a user's mailbox.</span></span>
+<span data-ttu-id="da495-111">下面的示例展示了如何对用户邮箱中所有邮件进行访问。</span><span class="sxs-lookup"><span data-stu-id="da495-111">The following example shows iterating over all the messages in a user's mailbox.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="8aa76-112">此示例使用 参数设置一个小页面 `top` 大小以用于演示。</span><span class="sxs-lookup"><span data-stu-id="8aa76-112">This example sets a small page size using the `top` parameter for demonstration purposes.</span></span> <span data-ttu-id="8aa76-113">可以将页面大小设置为最多 999，以最大限度地减少所需的请求数。</span><span class="sxs-lookup"><span data-stu-id="8aa76-113">You can set the page size up to 999 to minimize the number of requests that are necessary.</span></span>
+> <span data-ttu-id="da495-112">此示例使用 参数设置一个小页面 `top` 大小以用于演示。</span><span class="sxs-lookup"><span data-stu-id="da495-112">This example sets a small page size using the `top` parameter for demonstration purposes.</span></span> <span data-ttu-id="da495-113">可以将页面大小设置为最多 999，以最大限度地减少所需的请求数。</span><span class="sxs-lookup"><span data-stu-id="da495-113">You can set the page size up to 999 to minimize the number of requests that are necessary.</span></span>
 
-### <a name="c"></a>[<span data-ttu-id="8aa76-114">C#</span><span class="sxs-lookup"><span data-stu-id="8aa76-114">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="da495-114">C#</span><span class="sxs-lookup"><span data-stu-id="da495-114">C#</span></span>](#tab/csharp)
 
 ```csharp
 var messages = await graphClient.Me.Messages
@@ -63,7 +63,7 @@ var pageIterator = PageIterator<Message>
 await pageIterator.IterateAsync();
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="8aa76-115">TypeScript</span><span class="sxs-lookup"><span data-stu-id="8aa76-115">TypeScript</span></span>](#tab/typeScript)
+### <a name="typescript"></a>[<span data-ttu-id="da495-115">TypeScript</span><span class="sxs-lookup"><span data-stu-id="da495-115">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Makes request to fetch mails list.
@@ -97,7 +97,7 @@ let pageIterator = new PageIterator(client, response, callback, requestOptions);
 await pageIterator.iterate();
 ```
 
-### <a name="java"></a>[<span data-ttu-id="8aa76-116">Java</span><span class="sxs-lookup"><span data-stu-id="8aa76-116">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="da495-116">Java</span><span class="sxs-lookup"><span data-stu-id="da495-116">Java</span></span>](#tab/java)
 
 ```java
 final MessageCollectionPage messagesPage = graphClient.me().messages()
@@ -123,12 +123,12 @@ while(messagesPage != null) {
 
 ---
 
-## <a name="stopping-and-resuming-the-iteration"></a><span data-ttu-id="8aa76-117">停止和恢复迭代</span><span class="sxs-lookup"><span data-stu-id="8aa76-117">Stopping and resuming the iteration</span></span>
+## <a name="stopping-and-resuming-the-iteration"></a><span data-ttu-id="da495-117">停止和恢复迭代</span><span class="sxs-lookup"><span data-stu-id="da495-117">Stopping and resuming the iteration</span></span>
 
-<span data-ttu-id="8aa76-118">在某些情况下，为了执行其他操作，需要停止迭代过程。</span><span class="sxs-lookup"><span data-stu-id="8aa76-118">Some scenarios require stopping the iteration process in order to perform other actions.</span></span> <span data-ttu-id="8aa76-119">通过从迭代回调返回可以 `false` 暂停迭代。</span><span class="sxs-lookup"><span data-stu-id="8aa76-119">It is possible to pause the iteration by returning `false` from the iteration callback.</span></span> <span data-ttu-id="8aa76-120">可以通过在 `resume` **PageIterator** 上调用 方法来恢复迭代。</span><span class="sxs-lookup"><span data-stu-id="8aa76-120">Iteration can be resumed by calling the `resume` method on the **PageIterator**.</span></span>
+<span data-ttu-id="da495-118">在某些情况下，为了执行其他操作，需要停止迭代过程。</span><span class="sxs-lookup"><span data-stu-id="da495-118">Some scenarios require stopping the iteration process in order to perform other actions.</span></span> <span data-ttu-id="da495-119">通过从迭代回调返回可以 `false` 暂停迭代。</span><span class="sxs-lookup"><span data-stu-id="da495-119">It is possible to pause the iteration by returning `false` from the iteration callback.</span></span> <span data-ttu-id="da495-120">可以通过在 `resume` **PageIterator** 上调用 方法来恢复迭代。</span><span class="sxs-lookup"><span data-stu-id="da495-120">Iteration can be resumed by calling the `resume` method on the **PageIterator**.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-### <a name="c"></a>[<span data-ttu-id="8aa76-121">C#</span><span class="sxs-lookup"><span data-stu-id="8aa76-121">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="da495-121">C#</span><span class="sxs-lookup"><span data-stu-id="da495-121">C#</span></span>](#tab/csharp)
 
 ```csharp
 int count = 0;
@@ -169,7 +169,7 @@ while (pageIterator.State != PagingState.Complete)
 }
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="8aa76-122">TypeScript</span><span class="sxs-lookup"><span data-stu-id="8aa76-122">TypeScript</span></span>](#tab/typeScript)
+### <a name="typescript"></a>[<span data-ttu-id="da495-122">TypeScript</span><span class="sxs-lookup"><span data-stu-id="da495-122">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 let count: number = 0;
@@ -202,7 +202,7 @@ while (!pageIterator.isComplete()) {
 }
 ```
 
-### <a name="java"></a>[<span data-ttu-id="8aa76-123">Java</span><span class="sxs-lookup"><span data-stu-id="8aa76-123">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="da495-123">Java</span><span class="sxs-lookup"><span data-stu-id="da495-123">Java</span></span>](#tab/java)
 
 ```java
 // not supported in java SDK
