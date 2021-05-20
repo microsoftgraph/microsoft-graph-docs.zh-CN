@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 4937d428fd480c0f31a5368a76c4eede9efef851
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ee8865b4fa898a91ca79cfba29c928ed00e21ae2
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953753"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579667"
 ---
 # <a name="informationprotectionlabel-resource-type"></a>informationProtectionLabel 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "50953753"
 
 介绍了信息保护标签，详细介绍了如何向信息正确应用敏感度标签。 **informationProtectionLabel** 资源描述适用于用户或租户的敏感度标签的配置。  
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                                                              | 返回类型                                                               | 说明                                                                                                                                                            |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,10 +38,11 @@ ms.locfileid: "50953753"
 | color       | String  | UI 应为标签显示的颜色（如果已配置）。                              |
 | 说明 | String  | 管理员定义的标签说明。                                                    |
 | id          | String  | 标签 ID 是 GUID (全局唯)                                              |
-| isActive    | Boolean | 指示标签是否处于活动状态。 应在 UI 中隐藏或禁用活动标签。 |
+| isActive    | 布尔 | 指示标签是否处于活动状态。 应在 UI 中隐藏或禁用活动标签。 |
 | name        | String  | 标签的纯文本名称。                                                                |
-| 敏感度 | Int32   | 标签的敏感度值，其中 lower 不太敏感。                              |
+| sensitivity | Int32   | 标签的敏感度值，其中 lower 不太敏感。                              |
 | tooltip     | String  | 应为 UI 中的标签显示的工具提示。                                     |
+| 父级      | labelDetails   | 与子标签关联的父标签。 如果 label 没有父级，则为空。
 
 ## <a name="relationships"></a>关系
 
@@ -68,7 +69,8 @@ ms.locfileid: "50953753"
   "isActive": true,
   "name": "String",
   "sensitivity": 1024,
-  "tooltip": "String"
+  "tooltip": "String",
+  "parent": {"@odata.type": "microsoft.graph.labelDetails" }
 }
 ```
 

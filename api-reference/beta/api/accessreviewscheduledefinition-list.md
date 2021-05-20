@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f3624cb364513f9015ac0dad3f3bbb978718e930
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 702f793a01d68d1a71d786c62de35a0e24c12b80
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048349"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579625"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>列出 accessReviewScheduleDefinition
 
@@ -18,13 +18,10 @@ ms.locfileid: "52048349"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 对于创建的每个访问评审系列，将返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括它们的所有嵌套属性。 这不包括关联的 accessReviewInstances。
+检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 对于创建的每个访问评审系列，将返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括它们的所有嵌套属性。 这不包括关联的 accessReviewInstance 对象。
 
 >[!NOTE]
->如果返回了许多 **accessReviewScheduleDefinitions，** 为了提高效率并避免超时，请检索页面中的 结果集，方法包括页面大小最多为 100 的 $top 查询参数和请求中的 $skip=0 查询参数。 当结果集跨多个页面时，Microsoft Graph 在响应中返回包含指向下一页结果的 URL 的 @odata.nextLink 属性的页面。 如果存在该属性，请继续在每个响应中通过 @odata.nextLink URL 提出其他请求，直到返回所有结果，如在应用中分页 Microsoft Graph 数据中所述。
->
->如果未提供查询参数且结果超过 100 个，Microsoft Graph将按每页 100 个结果自动对结果分页。
-
+>此 API 的默认页面大小为 100 accessReviewScheduleDefinition 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,13 +32,40 @@ ms.locfileid: "52048349"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
- 登录用户还必须具有允许其读取访问评审的目录角色。
+ 登录用户还必须具有允许其读取访问评审的目录角色。 请参阅访问评审 [角色和应用程序权限授权检查](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)。
 
 ## <a name="http-request"></a>HTTP 请求
+
+列出所有 accessReviewScheduleDefinitions：
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `$select` 、 `$top` 、 和 `$skip` `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+
+### <a name="use-the-filter-query-parameter"></a>使用 $filter 查询参数
+`$filter` `contains` accessReviewScheduleDefinition 的 **scope** 属性支持具有 运算符的查询参数。 对请求使用以下格式：
+
+```http
+GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
+```
+
+的值 `{object}` 可以是下列值之一：
+
+|值|说明|
+|:---     |:---       |
+|`/groups`  |列出各个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组的定义) 。|
+|`/groups/{group id}`  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。|
+|`./members`  |列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。|
+|`accessPackageAssignments`  |列出访问包上的每个 accessReviewScheduleDefinition。|
+|`roleAssignmentScheduleInstances`  |列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。|
+
+`$filter` **accessReviewInactiveUserQueryScope** 或 **principalResourceMembershipScope 不支持查询参数**。
+
+
 ## <a name="request-headers"></a>请求标头
 无。
 
@@ -52,9 +76,10 @@ GET /identityGovernance/accessReviews/definitions
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象数组。
 
 ## <a name="examples"></a>示例
-### <a name="request"></a>请求
-以下示例显示检索租户中所有访问评审系列的请求。
 
+### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a>示例 1：列出前 100 个访问评审定义
+
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -82,9 +107,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ---
 
----
-
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -97,21 +120,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
     "@odata.count": 1,
     "value": [
         {
             "id": "98dcebed-c7f6-46f4-bcf3-4a3fccdb3e2a",
             "displayName": "Access Review",
-            "createdDateTime": "2020-09-09T14:27:59Z",
-            "lastModifiedDateTime": "2020-09-11T12:02:50Z",
-            "status": "InProgress",
-            "descriptionForAdmins": "",
-            "descriptionForReviewers": "",
-            "createdBy": {
-                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@contoso.com"
-            },
             "scope": {
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
                 "queryType": "MicrosoftGraph"
@@ -159,6 +173,99 @@ Content-type: application/json
     ]
 }
 ```
+
+
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>示例 2：检索范围为租户中Microsoft 365组的所有访问评审定义
+
+#### <a name="request"></a>请求
+以下示例显示一个请求，请求检索范围为租户中所有Microsoft 365组的所有访问评审系列。
+
+<!-- {
+  "blockType": "request",
+  "name": "list_accessReviewScheduleDefinition_allgroups"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com//beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
+```
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition",
+  "isCollection": "true"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "cc701697-762c-439a-81f5-f58d680fde76",
+            "displayName": "Review guest access across Microsoft 365 groups",
+            "status": "InProgress",
+            "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph"
+            },
+            "instanceEnumerationScope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",
+                "queryType": "MicrosoftGraph"
+            },
+            "reviewers": [
+                {
+                    "query": "./manager",
+                    "queryType": "MicrosoftGraph",
+                    "queryRoot": "decisions"
+                }
+            ],
+            "settings": {
+                "mailNotificationsEnabled": true,
+                "reminderNotificationsEnabled": true,
+                "justificationRequiredOnApproval": true,
+                "defaultDecisionEnabled": true,
+                "defaultDecision": "Recommendation",
+                "instanceDurationInDays": 25,
+                "autoApplyDecisionsEnabled": true,
+                "recommendationsEnabled": true,
+                "recurrence": {
+                    "pattern": {
+                        "type": "absoluteMonthly",
+                        "interval": 3,
+                        "month": 0,
+                        "dayOfMonth": 0,
+                        "daysOfWeek": [],
+                        "firstDayOfWeek": "sunday",
+                        "index": "first"
+                    },
+                    "range": {
+                        "type": "numbered",
+                        "numberOfOccurrences": 0,
+                        "recurrenceTimeZone": null,
+                        "startDate": "2021-04-27",
+                        "endDate": "9999-12-31"
+                    }
+                },
+                "applyActions": [
+                    {
+                        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
+                    }
+                ]
+            },
+            "instances@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
+            "instances": []
+        }
+    ]
+}
+
+```
+
 
 ## <a name="see-also"></a>另请参阅
 

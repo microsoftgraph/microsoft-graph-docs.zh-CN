@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 4b6acff15539c2a1b42f66547289621a7e87d7b5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 86671d0fce531445ac32a370d2e69ba813cc4e22
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872742"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546824"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy：assign
 
@@ -22,7 +22,7 @@ ms.locfileid: "49872742"
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "49872742"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,7 +58,7 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设置策略分配的 ID。 如果目标是用户组，则 ID 显示为 {policyId}_{groupId}。 |
+|id|String|预配策略分配的 ID。 如果 target 是用户组，则 ID 显示为 {policyId}_{groupId}。 |
 |target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|预配策略的分配目标。 目前，唯一支持的目标为用户组。|
 
 ## <a name="response"></a>响应

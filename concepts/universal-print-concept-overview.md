@@ -3,14 +3,14 @@ title: 通用打印云打印 API 概述
 description: 通用打印是一种新式打印解决方案，组织可以使用它通过 Microsoft 云服务来管理自己的打印基础设施。
 author: braedenp-msft
 localization_priority: Priority
-ms.prod: universal-print
+ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b7472fc42af137c32e323815cc77cedb410392ea
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ee7d5814288af54b8b7829497409668e51e95433
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515742"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546969"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -69,7 +69,7 @@ ms.locfileid: "50515742"
 
 ### <a name="extending-universal-print-to-support-pull-printing"></a>扩展通用打印以支持拉取打印
 
-Microsoft Graph 通用打印 API 可让你的应用程序支持拉取打印。 若要设置拉取打印，你需要注册触发器，以便在发生某些打印事件（例如正在启动打印作业）时通知应用程序（通过服务到服务通信）。
+Microsoft Graph 通用打印 API 使你的应用程序能够支持拉取打印。若要设置拉取打印，你需要注册触发器，以便在发生某些打印事件（例如正在启动打印作业）时通知应用程序（通过服务到服务通信）。
 
 这些触发器可使应用程序中断打印工作流，以执行将作业重定向到其他打印机和修改文档负载等操作。
 
@@ -96,7 +96,7 @@ Microsoft Graph 通用打印 API 可让你的应用程序支持拉取打印。 �
 
 ## <a name="provide-feedback"></a>提供反馈
 
-欢迎在提供有关通用打印 API 的反馈。 在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 上提供建议。
+欢迎在提供有关通用打印 API 的反馈。 在 [Microsoft 365 Developer Platform 意见论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)中提出建议。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -4,12 +4,12 @@ description: 介绍支持的策略以及如何为组织分配 ISV 访问 SKU。
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: c6689a6a5d359dc03b7d68862cb889c2a7ba2b9a
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: c9529c500ff2e086a3a1185a56b9db397f0ace49
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796589"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547616"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-licensing"></a>Microsoft Graph 数据连接策略和许可
 
@@ -23,7 +23,7 @@ Microsoft Graph 数据连接使用 [Azure 托管应用程序](/azure/managed-app
 
 在 Azure 应用市场发布过程中选择任何策略时，将为应用程序的所有安装检查并实施策略合规性状态。 在数据请求过程中，将向数据审批者显示合规的所有选定策略。 任何策略合规性违规行为将导致管道运行失败并停止数据提取。
 
-如果想要请求为其他策略提供支持，请在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) 上告知我们。
+如果想要请求为其他策略提供支持，请在 [Microsoft 365 开发人员平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)上告知我们。
 
 ## <a name="licensing"></a>许可
 
@@ -36,4 +36,4 @@ Microsoft Graph 数据连接使用 [Azure 托管应用程序](/azure/managed-app
 目录对象的对象将不会收费，其中包括：BasicDataSet_v0.User、 BasicDataSet_v0.MailboxSettings、BasicDataSet_v0.Manager 和 BasicDataSet_v0.DirectReport。
 
 ## <a name="next-steps"></a>后续步骤
-如果想要请求为其他策略或数据集提供支持，请在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) 上告知我们。 若要详细了解 Workplace Analytics，包括如何购买，请访问 [Workplace Analytics 产品页面](https://products.office.com/business/workplace-analytics)。
+如果想要请求为其他策略或数据集提供支持，请在 [Microsoft 365 开发人员平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)上告知我们。 若要详细了解 Workplace Analytics，包括如何购买，请访问 [Workplace Analytics 产品页面](https://products.office.com/business/workplace-analytics)。

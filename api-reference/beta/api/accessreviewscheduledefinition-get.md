@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 572369a17288a584550c4d4f5bdda9cbf11e90e4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2fdb5a3aed85629fb7c880f7a22229d1ae83ba62
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048356"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579646"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>获取 accessReviewScheduleDefinition
 
@@ -93,16 +93,7 @@ Content-type: application/json
 {
     "id": "60860cdd-fb4d-4054-91ba-f7544443baa6",
     "displayName": "Test world",
-    "createdDateTime": "2020-09-14T20:03:36.7391027Z",
-    "lastModifiedDateTime": "2020-09-14T20:04:28Z",
     "status": "InProgress",
-    "descriptionForAdmins": "",
-    "descriptionForReviewers": "",
-    "createdBy": {
-        "id": "957f1027-c0ee-460d-4444-b8828e59e0fe",
-        "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@contoso.com"
-    },
     "scope": {
         "query": "/groups/b7a059cb-038a-4802-8fc9-b944440cf11f/transitiveMembers",
         "queryType": "MicrosoftGraph"
@@ -145,7 +136,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [创建 accessReviewScheduleDefinition](accessreviewscheduledefinition-create.md)
+- [创建 accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
 - [列出 accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
 - [列出 accessReviewInstance](accessreviewinstance-list.md)
 

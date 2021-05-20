@@ -1,16 +1,16 @@
 ---
 title: anonymousIpRiskEvent 资源类型
-description: Azure Active Directory Identity Protection 检测到的风险事件，其中帐户从看似匿名的 IP 地址尝试登录。 有关风险事件的完整信息，请参阅 Azure AD Identity Protection 文档。
+description: Identity Protection 检测到的风险Azure Active Directory，其中帐户从看起来是匿名的 IP 地址尝试登录。 有关风险事件的完整信息，请参阅 Azure AD Identity Protection 文档。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: 4b5ead2c32368ec29c87fd5d5f05f4e48e5e17a0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d4acf5d9b3d5d05a2769178657b397b22f1cb3f2
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433192"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547546"
 ---
 # <a name="anonymousipriskevent-resource-type-deprecated"></a>anonymousIpRiskEvent 资源类型 (已弃) 
 
@@ -21,10 +21,10 @@ ms.locfileid: "50433192"
 >[!CAUTION]
 >**identityRiskEvents** API 已弃用，将在 2020 年 1 月 10 日停止返回数据。 有关详细信息，请参阅 [IdentityRiskEvents API 的弃用](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
-Azure [Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) 检测到的风险事件，其中帐户从看似匿名的 IP 地址尝试登录。 有关风险事件的完整信息，请参阅 [Azure AD Identity Protection 文档](/azure/active-directory/identity-protection/overview-identity-protection)。
+由 Azure Active Directory [Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)检测到的风险事件，其中帐户从看起来是匿名的 IP 地址尝试登录。 有关风险事件的完整信息，请参阅 [Azure AD Identity Protection 文档](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -34,7 +34,7 @@ Azure [Active Directory Identity Protection](/azure/active-directory/identity-pr
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
-|createdDateTime|dateTimeOffset| 创建风险事件的日期和时间。 这始终大于或等于风险事件本身的日期时间。 这是在查询风险事件时用作筛选器的正确属性。|
+|createdDateTime|dateTimeOffset| 创建风险事件的日期和时间。 这始终大于或等于风险事件本身的 datetime。 这是在查询风险事件时用作筛选器的正确属性。|
 |id|string| 只读|
 |ipAddress|string| 登录的 IP 地址|
 |location|string| 附加到登录 IP 地址的位置|

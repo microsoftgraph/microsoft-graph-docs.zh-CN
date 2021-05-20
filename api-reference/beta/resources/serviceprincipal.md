@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 476c8ebe807a097c1d78c03a9df81319dee8c7bf
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 8ddcf2554dd090c8fc173fa8209d5be5ef3b2af6
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231296"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547195"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "52231296"
 |[移除 appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md) | 无 | 从用户、组或服务主体中移除此服务主体的应用角色分配。|
 |**证书和密码**| | |
 |[添加密码](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|向 servicePrincipal 添加强密码。|
-|[添加 tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| 向服务主体添加自签名证书。 主要用于从 Azure AD 库中 [基于 SAML 的 SSO](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list)。
+|[添加 tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| 向服务主体添加自签名证书。 主要用于从 Azure AD 库中 [基于 SAML 的 SSO](/azure/active-directory/saas-apps/tutorial-list)。
 |[删除密码](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|从 servicePrincipal 中移除密码。|
 |[加号键](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|向 servicePrincipal 添加密钥凭据。|
 |[删除键](../api/serviceprincipal-removekey.md)|无|从 servicePrincipal 中移除密钥凭据。|
@@ -136,9 +136,9 @@ ms.locfileid: "52231296"
 |delegatedPermissionClassifications|[delegatedPermissionClassification](delegatedpermissionclassification.md) 集合|此服务主体公开的委派权限的权限分类。|
 |endpoints|[endpoint](endpoint.md) 集合|可用于发现的终结点。SharePoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可在这些终结点的体验中发现和使用。|
 |homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合|为此服务主体分配的 homeRealmDiscoveryPolicies。|
-|memberOf|[directoryObject](directoryobject.md) collection|此服务主体是其成员的角色。HTTP 方法：获取只读。空。|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|委派权限授予设置此服务主体以代表已登录用户访问 API 的权限。只读。空。|
-|ownedObjects|[directoryObject](directoryobject.md) collection|属于此服务主体的目录对象。只读。空。|
+|memberOf|[directoryObject](directoryobject.md) collection|此服务主体是其成员的角色。HTTP 方法：GET 只读。可为空。|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|委派权限授予设置此服务主体以代表已登录用户访问 API 的权限。只读。可为空。|
+|ownedObjects|[directoryObject](directoryobject.md) collection|属于此服务主体的目录对象。只读。可为空。|
 |owners|[directoryObject](directoryobject.md) 集合|servicePrincipal 所述的目录对象。 所有者是一组允许修改此对象的非管理员用户或 servicePrincipal。 只读。 可为 NULL。|
 |tokenIssuancePolicies|[tokenIssuancePolicy](tokenissuancepolicy.md) 集合|为此服务主体分配的 tokenIssuancePolicies。|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenlifetimepolicy.md) 集合|为此服务主体分配的 tokenLifetimePolicies。|

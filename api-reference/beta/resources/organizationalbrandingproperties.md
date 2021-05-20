@@ -5,19 +5,19 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f68c33e7a3cf81e5d3debedcd6162ec59ddcce03
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 719642a606396601c94feaa38ea1cc877c5bd6d6
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266820"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547132"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>organizationalBrandingProperties 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->添加自定义品牌打造需要你使用 Azure Active Directory Premium 1、Premium 2 或 Basic 版本，或者拥有 Microsoft 365 许可证。 有关许可和版本详细信息，请参阅注册 Azure [AD Premium。](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Azure AD Premium 和 Basic 版本适用于使用 Azure Active Directory 全球实例的中国客户。 Azure AD Premium 和 Basic 版本当前在由世纪网络在中国运营的 Azure 服务中不受支持。 有关详细信息，请通过 Azure Active [Directory](https://feedback.azure.com/forums/169401-azure-active-directory/)论坛与我们联系。
+>添加自定义品牌打造需要Azure Active Directory 高级版 1 高级版 2 或 Basic 版本，或拥有 Microsoft 365 许可证。 有关许可和版本详细信息，请参阅注册 Azure [AD 高级版。](/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Azure AD 高级版 和 Basic 版本适用于使用全球 Azure Active Directory 中国客户。 Azure AD 高级版和 Basic 版本当前在中国由世纪网络运营的 Azure 服务中不受支持。 有关详细信息，请通过 Azure Active Directory[论坛与我们联系](https://feedback.azure.com/forums/169401-azure-active-directory/)。
 
 包含有关组织品牌的详细信息。
 
@@ -45,7 +45,7 @@ ms.locfileid: "52266820"
 |bannerLogo|Stream| 显示在登录页上的公司徽标的横幅版本。 .png或.jpg不超过 36x245px。 我们建议使用透明图像，徽标周围没有填充。 |
 |id|String| 这是一个继承自 microsoft.graph.entity 的 id，是指定语言 ISO 639 标准（例如英语为"en-us"或"en"）区域设置。 今后，如果我们公开功能以针对一个区域设置具有多个品牌，这一点可能会更改。 请注意，默认 /branding 的 ID 始终为"und"，直到我们具有无键单一性。 只读。 |
 |signInPageText|String| 显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。 |
-|squareLogo|Stream| 公司徽标的方形版本。 这将显示在 Windows 10 现成 (OOBE) 以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。 |
+|squareLogo|Stream| 公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) ，以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。 |
 |usernameHintText|String| 字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。 |
 
 ## <a name="relationships"></a>关系

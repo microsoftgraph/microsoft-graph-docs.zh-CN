@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3282ed8aff91e6fe82d62593be13efa052248abc
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0ef9e0bb23109f41854c7c12b76e144ad6110ace
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921415"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546243"
 ---
 # <a name="list-availableprovidertypes"></a>列出 availableProviderTypes
 
@@ -20,7 +20,7 @@ ms.locfileid: "51921415"
 
 检索目录中可用的所有标识提供程序类型。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -126,8 +126,6 @@ Content-Type: application/json
 
 ### <a name="request"></a>请求
 下面展示了示例请求。
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

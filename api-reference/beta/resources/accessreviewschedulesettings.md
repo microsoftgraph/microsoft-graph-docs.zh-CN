@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 77ea7d8601df36525aad7a3448aa3b6f031d98d3
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b354ebfc2b5e6c8093f65c8712516421f0b1d332
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469316"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579730"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>accessReviewScheduleSettings 资源类型
 
@@ -25,16 +25,16 @@ ms.locfileid: "51469316"
 ## <a name="properties"></a>属性
 | 属性    | 类型   | 说明 |
 | :---------------| :---------- | :---------- |
-| mailNotificationsEnabled|Boolean | 指示电子邮件是否已启用/禁用的标志。                |
-| reminderNotificationsEnabled|Boolean  | 指示是否启用/禁用提醒的标志。   |
-| justificationRequiredOnApproval|Boolean | 用于指示是否需要审阅者提供其决策的理由的标志。 |
-| defaultDecisionEnabled|Boolean | 指示在审阅者未响应时是否启用/禁用默认决策的标志。 |
-| defaultDecision|String | 如果已启用， `defaultDecisionEnabled` 则选择决策。 可以是"批准"、"拒绝"或"建议"之一。 |
+| mailNotificationsEnabled|布尔 | 指示是启用还是禁用电子邮件。 默认值为 `false`。               |
+| reminderNotificationsEnabled|布尔  | 指示是启用还是禁用提醒。 默认值为 `false`。  |
+| justificationRequiredOnApproval|布尔 | 指示是否要求审阅者提供其决策的理由。 默认值为 `false`。 |
+| defaultDecisionEnabled|布尔 | 指示在审阅者未响应时是启用还是禁用默认决策。 默认值为 `false`。 |
+| defaultDecision|String | 如果已启用， `defaultDecisionEnabled` 则选择决策。 可以是 、 `Approve` `Deny` 或 `Recommendation` 之一。 |
 | instanceDurationInDays|Int32 | 每次重复审阅的持续时间 () `accessReviewInstance` 天数表示。 |
-| 定期|[patternedRecurrence](../resources/patternedrecurrence.md) | 定期的详细设置。 使用标准 Outlook 定期对象。 请注意，dayOfMonth 不受支持 - 在 recurrenceRange 上使用属性 startDate 确定评价开始的那一天。 |
-| autoApplyDecisionsEnabled|Boolean | 指示是否已启用自动应用功能的标志。 |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | 使用标准定期对象定期Outlook设置。 仅 `weekly` 支持 `absoluteMonthly` **recurrencePattern 和 recurrencePattern。** 使用 **recurrenceRange 上的 属性 startDate** 确定审阅开始的一天。  |
+| autoApplyDecisionsEnabled|布尔 | 指示是否自动应用决策。 设置为 时，用户必须在审阅者完成访问评审后 `false` 手动应用决策。 设置为 时，会在访问评审实例持续时间结束后自动应用决策，无论审阅 `true` 者是否已回复。 默认值为 `false`。 |
 | applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) 集合 | 可选字段。 介绍审阅完成后要采取的操作。 目前支持两种类型：默认 (`removeAccessApplyAction` 和) `disableAndDeleteUserApplyAction` 。 只需在 的情况下指定字段 `disableAndDeleteUserApplyAction` 。 请参阅 [accessReviewApplyAction](accessreviewapplyaction.md)。 |
-| recommendationsEnabled|Boolean | 指示是否启用/禁用决策建议的标志。 |
+| recommendationsEnabled|布尔 | 指示是否启用/禁用决策建议。 |
 
 ## <a name="relationships"></a>关系
 无。

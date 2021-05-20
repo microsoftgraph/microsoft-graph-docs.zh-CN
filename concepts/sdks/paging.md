@@ -1,25 +1,25 @@
 ---
-title: 使用 Microsoft Graph Sdk 逐页浏览集合
-description: 提供有关使用 Microsoft Graph Sdk 创建 Microsoft Graph API 请求的说明。
+title: 使用 Microsoft SDK 分页Graph集合
+description: 提供有关使用 Microsoft Graph SDK 创建 Microsoft Graph API 请求的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: ef48af29a4cc0388c405e2a42894d98ce6c98010
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 467a1114781105a0799724c8a072f19324948552
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289483"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546922"
 ---
-# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft Graph Sdk 逐页浏览集合
+# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft SDK 分页Graph集合
 
-出于性能原因，实体的集合通常会拆分为多个页面，并且每个页面都将使用下一页的 URL 进行返回。 **PageIterator**类简化了分页集合的使用。 **PageIterator** 句柄枚举当前页面并自动请求后续页面。
+出于性能原因，实体集合通常拆分为多个页面，并且每个页面返回一个指向下一页的 URL。 **PageIterator** 类简化了分页集合的使用。 **PageIterator** 自动枚举当前页面和请求后续页面。
 
-## <a name="iterate-over-all-the-messages"></a>循环访问所有邮件
+## <a name="iterate-over-all-the-messages"></a>在所有邮件上进行 Iterate
 
-下面的示例演示如何对用户邮箱中的所有邮件进行迭代。
+下面的示例展示了如何对用户邮箱中所有邮件进行访问。
 
 > [!TIP]
-> 本示例将使用参数设置较小的页面大小 `top` 以用于演示目的。 最多可以将页面大小设置为999，以最大限度地减少所需的请求数。
+> 此示例使用 参数设置一个小页面 `top` 大小以用于演示。 可以将页面大小设置为最多 999，以最大限度地减少所需的请求数。
 
 ### <a name="c"></a>[C#](#tab/csharp)
 
@@ -69,7 +69,7 @@ await pageIterator.iterate();
 ### <a name="java"></a>[Java](#tab/java)
 
 ```java
-IMessageCollectionPage messagesPage = graphClient.me().messages()
+final MessageCollectionPage messagesPage = graphClient.me().messages()
     .buildRequest()
     .select("Sender,Subject")
     .top(10)
@@ -77,8 +77,8 @@ IMessageCollectionPage messagesPage = graphClient.me().messages()
 
 
 while(messagesPage != null) {
-  final List<Message> messages = messagesPage.GetCurrentPage();
-  final IMessageCollectionRequestBuilder nextPage = messagesPage.GetNextPage();
+  final List<Message> messages = messagesPage.getCurrentPage();
+  final MessageCollectionRequestBuilder nextPage = messagesPage.getNextPage();
   if(nextPage == null) {
     break;
   } else {
@@ -91,7 +91,7 @@ while(messagesPage != null) {
 
 ## <a name="stopping-and-resuming-the-iteration"></a>停止和恢复迭代
 
-在某些情况下，需要停止迭代过程才能执行其他操作。 可以通过 `false` 从迭代回调中返回来暂停迭代。 可以通过对 PageIterator 调用方法来恢复迭代 `resume` 。 **PageIterator**
+在某些情况下，为了执行其他操作，需要停止迭代过程。 通过从迭代回调返回可以 `false` 暂停迭代。 可以通过在 `resume` **PageIterator** 上调用 方法来恢复迭代。
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)

@@ -10403,6 +10403,33 @@ items:
                         href: api/subscribedsku-list.md
                       - name: 获取 subscribedSku
                         href: api/subscribedsku-get.md
+              - name: '移动管理策略 (预览) '
+                href: resources/mobilitymanagementpolicy.md
+                items:
+                  - name: 列出移动设备管理策略
+                    href: api/mobiledevicemanagementpolicies-list.md
+                  - name: 获取
+                    href: api/mobiledevicemanagementpolicies-get.md
+                  - name: 更新
+                    href: api/mobiledevicemanagementpolicies-update.md
+                  - name: 列出包含的组
+                    href: api/mobiledevicemanagementpolicies-list-includedgroups.md
+                  - name: 添加包含的组
+                    href: api/mobiledevicemanagementpolicies-post-includedgroups.md
+                  - name: 删除包含的组
+                    href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
+                  - name: 列出移动应用管理策略
+                    href: api/mobileappmanagementpolicies-list.md
+                  - name: 获取
+                    href: api/mobileappmanagementpolicies-get.md
+                  - name: 更新
+                    href: api/mobileappmanagementpolicies-update.md
+                  - name: 列出包含的组
+                    href: api/mobileappmanagementpolicies-list-includedgroups.md
+                  - name: 添加包含的组
+                    href: api/mobileappmanagementpolicies-post-includedgroups.md
+                  - name: 删除包含的组
+                    href: api/mobileappmanagementpolicies-delete-includedgroups.md
               - name: 角色管理
                 href: resources/rolemanagement.md
                 items:
@@ -10714,6 +10741,8 @@ items:
                     href: api/certificatebasedauthconfiguration-delete.md
               - name: 条件访问
                 items:
+                  - name: 条件访问
+                    href: resources/conditionalaccessroot.md
                   - name: 策略
                     items:
                       - name: 条件访问策略
@@ -10768,6 +10797,18 @@ items:
                                 href: api/ipnamedlocation-update.md
                               - name: 删除
                                 href: api/ipnamedlocation-delete.md
+                  - name: 身份验证上下文类引用
+                    items:
+                      - name: 身份验证上下文类引用
+                        href: resources/authenticationcontextclassreference.md
+                      - name: 列出
+                        href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+                      - name: 创建
+                        href: api/conditionalaccessroot-post-authenticationcontextclassreferences.md
+                      - name: 获取
+                        href: api/authenticationcontextclassreference-get.md
+                      - name: 更新
+                        href: api/authenticationcontextclassreference-update.md
               - name: 数据策略操作
                 href: resources/datapolicyoperation.md
                 items:
@@ -12944,7 +12985,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: 权限
+              - name: Permissions
                 items:
                   - name: 权限
                     href: resources/permission.md

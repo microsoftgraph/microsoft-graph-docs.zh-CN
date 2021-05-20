@@ -5,20 +5,22 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d148db0712ffbfb9ca41ba1c62e13c90c852cbc6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d750145561adefd7532e23ab6cbfc9bff8efe59
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444747"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546950"
 ---
 # <a name="delete-userflowlanguageconfiguration"></a>删除 userFlowLanguageConfiguration
 
 命名空间：microsoft.graph
 
-从 Azure [AD B2C](../resources/b2cidentityuserflow.md)用户流中删除[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)对象。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**注意：** 无法从 [Azure Active Directory](../resources/b2xidentityuserflow.md)用户流中删除语言。
+从[Azure AD B2C](../resources/b2cidentityuserflow.md)用户流中删除[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)对象。
+
+**注意：** 不能从用户流 [中删除Azure Active Directory语言](../resources/b2xidentityuserflow.md)。
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,12 +30,12 @@ ms.locfileid: "50444747"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

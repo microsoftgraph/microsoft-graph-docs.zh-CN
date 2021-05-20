@@ -4,12 +4,12 @@ description: 获取可帮助你利用 Microsoft Graph 数据连接的相关提�
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 7a4672d90b43a983efb6e1d327e184e51e8f0f39
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: d9a87c629a80bc94c57e77bd0f2c0b1e7438c935
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289237"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547602"
 ---
 # <a name="tips-for-using-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接的相关使用提示
 
@@ -62,4 +62,4 @@ Privileged Access Management (PAM) 请求必须得到管理员的批准，然后
 
 ## <a name="next-steps"></a>后续步骤
 
-在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) 上联系我们，提交功能请求。
+联系 [Microsoft 365 开发人员平台意见论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)提交功能请求。

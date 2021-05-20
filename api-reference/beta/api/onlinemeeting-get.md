@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5d9bc15a54797c136743913cd6224cb7de1ce6e0
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: e1f41c05d3b37fcface4721a319bbb92ba4dece3
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080685"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579709"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -48,40 +48,39 @@ ms.locfileid: "52080685"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要使用具有委派权限的会议 ID 获取指定的 onlineMeeting，请执行以下操作：
+若要使用具有委派权限的应用权限的会议 ID 获取 onlineMeeting：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
-```
-
-若要使用具有应用程序权限的会议 ID 获取指定的 onlineMeeting，请执行以下操作：
-<!-- { "blockType": "ignored" } -->
-```http
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-若要使用 **videoTeleconferenceId** 获取指定的 onlineMeeting：
+若要使用具有应用权限 **的 videoTeleconferenceId** 获取 onlineMeeting：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-若要使用 **joinWebUrl** 获取指定的 onlineMeeting，请执行以下操作：
+若要使用具有委派权限和应用权限 **的 joinWebUrl** 获取 onlineMeeting：
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-若要获取实时事件的与会者报告，
+若要获取具有委派和应用权限的活动参与者报告，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-若要获取实时事件的录制，请进行以下操作：
+若要获取具有委派权限的应用权限的直播活动的录制，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/onlineMeetings/{meetingId}/recording
+GET /me/onlineMeetings/{meetingId}/alternativeRecording
 GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
@@ -97,7 +96,7 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 >- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 >- `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 > - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关更多详细信息 [，请参阅 VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) 会议 ID。
->- `joinWebUrl` 必须经过 URL 编码，并且此路由只能用于检索 由 创建的会议 `userId` 。
+>- `joinWebUrl` 必须经过 URL 编码。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -120,6 +119,9 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 - 如果你要获取实时联机会议的与会者报告或录制，此方法还会分别返回一个标头，指示与会者报告或录制 `Location` 的 URI。
 
 ## <a name="examples"></a>示例
+
+> [!NOTE]
+> 为了可读性，已缩短以下示例的响应对象。 所有属性都将通过实际调用返回。
 
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>示例 1：通过 VideoTeleconferenceId 检索联机会议
 
@@ -153,8 +155,6 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 ---
 
 #### <a name="response"></a>响应
-
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -257,8 +257,6 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了可读性，此处显示的答复对象已缩短。 所有属性都将通过实际调用返回。
-
 ```json
 {
     "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
@@ -316,8 +314,6 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了可读性，此处显示的答复对象已缩短。 所有属性都将通过实际调用返回。
-
 ```json
 {
     "value": [
@@ -364,12 +360,18 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 以下示例显示下载与会者报告的请求。
 
 #### <a name="request"></a>请求
+以下请求使用用户令牌。
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
+```
 
+以下请求使用应用程序令牌。
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-attendeeReport"
+  "name": "get-attendeeReport-app-token"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
@@ -406,12 +408,18 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
 以下示例显示下载录制的请求。
 
 #### <a name="request"></a>请求
+以下请求使用用户令牌。
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
+```
 
+以下请求使用应用程序令牌。
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-recording"
+  "name": "get-recording-app-token"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording

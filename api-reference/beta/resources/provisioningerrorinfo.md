@@ -3,14 +3,14 @@ title: provisioningErrorInfo 资源类型
 description: 描述设置事件的状态和相关错误。
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 839370e0dc15ee247997b6d934107e27f62cc87a
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: dddddfa793cf9aac7436fc85e0ce911df7b4ec3e
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232949"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546964"
 ---
 # <a name="provisioningerrorinfo-resource-type"></a>provisioningErrorInfo 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "52232949"
 |:-------------|:------------|:------------|
 |additionalDetails|String|出现错误时的其他详细信息。|
 |errorCategory|String|对错误代码进行分类。 可能的值是 `failure` `nonServiceFailure` `success` 、、、、 `unknownFutureValue`|
-|errorCode|String|发生任何错误时的唯一错误代码。 [了解更多](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|errorCode|String|发生任何错误时的唯一错误代码。 [了解详细信息](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |reason|String|总结状态并说明状态发生的原因。|
 |recommendedAction|String|提供相应错误的解决方法。|
 

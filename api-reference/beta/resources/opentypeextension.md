@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: de3a4fa33e44788442d0a2ccf1abb4df80e0ea0d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 08d33297d77354090ab62f4816a43388c32972e2
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516697"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547244"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -51,7 +51,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展（针对 Outlook 资源）或扩展属性
 
-开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](../index.md)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 若要确认元数据公开了哪些属性，请访问 [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)。
+开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](/graph/traverse-the-graph#microsoft-graph-api-metadata)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 若要确认元数据公开了哪些属性，请访问 https://graph.microsoft.com/v1.0/$metadata。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -87,7 +87,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (现有资源实例) ，或包含 openTypeExtension 对象的新联系人[](message.md)[、](contact.md)[事件](event.md)、消息、post、todoTask 或[todoTaskList。](todotasklist.md) [](post.md) [](todotask.md) | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
+|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (现有资源实例) ，或包含 openTypeExtension[](contact.md)对象的新联系人、[事件](event.md)、[邮件](message.md)、post、todoTask 或[todoTaskList。](todotasklist.md) [](post.md) [](todotask.md) | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
 |[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
 |[更新](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension-delete.md) | 无 |删除 openTypeExtension 对象。 |

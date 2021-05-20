@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 528b5d42024793846b047ddc16f7e464b6d995c1
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: facc1cd9f51d9e638b01fa0bcf5efce5f846e727
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080622"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579716"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -44,7 +44,7 @@ ms.locfileid: "52080622"
 |:---------------|:--------|:----------|
 |[列出 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 集合 | 列出每个 `accessReviewScheduleDefinition` 。 不在一览 `accessReviewInstance` 中包括关联的实例。 |
 |[获取 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | 获取 `accessReviewScheduleDefinition` 具有指定 ID 的 。 |
-|[创建 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | 新建 `accessReviewScheduleDefinition`。 |
+|[创建 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-post.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | 新建 `accessReviewScheduleDefinition`。 |
 |[删除 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | 无。 | 删除 `accessReviewScheduleDefinition` 具有指定 ID 的 。 |
 |[更新 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | 无。 | 更新具有指定 `accessReviewScheduleDefinition` ID 的属性。 |
 |[列出 accessReviewInstance](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) 集合 | 列出 `accessReviewInstance` 每个特定 `accessReviewScheduleDefinition` 。 不在一览 `accessReviewInstanceDecisionItem` 中包括关联的 。 |

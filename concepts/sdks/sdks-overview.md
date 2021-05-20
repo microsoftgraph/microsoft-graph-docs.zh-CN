@@ -4,12 +4,12 @@ description: 说明 SDK 已经可用，以及 SDK 所支持的平台及其对于
 localization_priority: Normal
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 88d5cc0515ef71ffa12e09fac7a6875dfb305bb2
-ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
-ms.translationtype: HT
+ms.openlocfilehash: 764bfe113c0bd66170eec1e21c2a1abddaf8b28e
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819681"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546915"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Microsoft Graph SDK 概述
 
@@ -26,16 +26,16 @@ Microsoft Graph SDK 目的是简化设计访问 Microsoft Graph 的优质、高�
 
 SDK 当前支持以下语言和平台：
 
-- [Android](https://developer.microsoft.com/zh-CN/graph/get-started/android)
-- [Angular](https://developer.microsoft.com/zh-CN/graph/get-started/angular)
-- [ASP.NET](https://developer.microsoft.com/zh-CN/graph/get-started/asp.net)
-- [iOS](https://developer.microsoft.com/zh-CN/graph/get-started/ios)
-- [Javascript](https://developer.microsoft.com/zh-CN/graph/get-started/javascript)
-- [Node.js](https://developer.microsoft.com/zh-CN/graph/get-started/node.js)
-- [Java](https://developer.microsoft.com/zh-CN/graph/get-started/java)
-- [PHP](https://developer.microsoft.com/zh-CN/graph/get-started/php)
-- [Python](https://developer.microsoft.com/zh-CN/graph/get-started/python)
-- [Ruby](https://developer.microsoft.com/zh-CN/graph/get-started/ruby)
+- [Android](https://developer.microsoft.com/en-us/graph/get-started/android)
+- [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
+- [ASP.NET](https://developer.microsoft.com/en-us/graph/get-started/asp.net)
+- [iOS](https://developer.microsoft.com/en-us/graph/get-started/ios)
+- [Javascript](https://developer.microsoft.com/en-us/graph/get-started/javascript)
+- [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)
+- [Java](https://developer.microsoft.com/en-us/graph/get-started/java)
+- [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
+- [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
+- [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
 ## <a name="microsoft-365-developer-subscription"></a>Microsoft 365 开发人员订阅
 
@@ -43,4 +43,4 @@ SDK 当前支持以下语言和平台：
 
 ## <a name="see-also"></a>另请参阅
 
-SDK [设计要求文档](https://github.com/microsoftgraph/msgraph-sdk-design) 提供了有关 SDK 功能的更多详细信息。 在 [Microsoft Graph Uservoice](https://microsoftgraph.uservoice.com) 上请求其他功能或对其他功能投票表决。 若要获取 Microsoft Graph 的 SDK 和样本列表，请参阅 [Microsoft Graph 资源页面](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs)。
+SDK [设计要求文档](https://github.com/microsoftgraph/msgraph-sdk-design) 提供了有关 SDK 功能的更多详细信息。 在开发人员平台创意论坛 中Microsoft 365[功能的请求或投票](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。 若要获取 Microsoft Graph 的 SDK 和样本列表，请参阅 [Microsoft Graph 资源页面](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs)。

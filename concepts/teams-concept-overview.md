@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 91fb035dc9fcd5e42bafcff1b64e788bc7478e92
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: aa1cb7a2bedbf6ab696b6731546eb97861bfb697
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468966"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546985"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
@@ -24,34 +24,34 @@ ms.locfileid: "51468966"
 
 ### <a name="automate-team-lifecycles"></a>自动化团队生命周期
 
-当出现新的业务问题时，使用 Microsoft Graph [创建一个新的虚拟团队](/graph/api/team-put-teams?view=graph-rest-1.0)，向团队[添加合适的人员](/graph/api/group-post-members?view=graph-rest-1.0)，并使用[渠道](/graph/api/channel-post?view=graph-rest-1.0)、[选项卡](/graph/api/teamstab-add?view=graph-rest-1.0)和[应用](/graph/api/teamsappinstallation-add?view=graph-rest-1.0)配置团队。
-如果想要让新团队一起讨论业务问题，请在团队日历中[添加一个新事件](/graph/api/group-post-events?view=graph-rest-1.0)。
+当出现新的业务问题时，使用 Microsoft Graph [创建一个新的虚拟团队](/graph/api/team-put-teams)，向团队[添加合适的人员](/graph/api/group-post-members)，并使用[渠道](/graph/api/channel-post)、[选项卡](/graph/api/teamstab-add)和[应用](/graph/api/teamsappinstallation-add)配置团队。
+如果想要让新团队一起讨论业务问题，请在团队日历中[添加一个新事件](/graph/api/group-post-events)。
 
 ![通过创建团队、添加成员和所有者、配置团队设置、添加渠道、安装应用、添加选项卡和适时存档或删除团队来自动化团队生命周期。](images/teams-lifecycle.png)
 
-当业务问题得到解决且不再需要团队时，可使用 Microsoft Teams API 来[存档](/graph/api/team-archive?view=graph-rest-1.0)或[删除](/graph/api/group-delete?view=graph-rest-1.0)团队。 如果在创建团队时已了解团队的最长持续时间，则可为团队设置 [Microsoft 365 组过期策略](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)，以便根据该策略自动删除团队。
+当业务问题得到解决且不再需要团队时，可使用 Microsoft Teams API 来[存档](/graph/api/team-archive)或[删除](/graph/api/group-delete)团队。 如果在创建团队时已了解团队的最长持续时间，则可为团队设置 [Microsoft 365 组过期策略](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)，以便根据该策略自动删除团队。
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>即使在无人参与的情况下也可以完成工作
 
-使用[应用程序权限](permissions-reference.md)在无人参与的情况下使用[团队](/graph/api/resources/team?view=graph-rest-1.0)、[渠道](/graph/api/resources/channel?view=graph-rest-1.0)和[选项卡](/graph/api/resources/teamstab?view=graph-rest-1.0)。 在客户下订单时创建一个新渠道。
+使用[应用程序权限](permissions-reference.md)在无人参与的情况下使用[团队](/graph/api/resources/team)、[渠道](/graph/api/resources/channel)和[选项卡](/graph/api/resources/teamstab)。 在客户下订单时创建一个新渠道。
 在学年开始时为班级自动创建团队并在学年结束时对其存档。
 
 ### <a name="create-teams-linked-to-your-app"></a>创建链接到应用的团队
 
-允许客户创建新[团队](/graph/api/resources/team?view=graph-rest-1.0)和[渠道](/graph/api/resources/channel?view=graph-rest-1.0)。 
-在新团队中[安装](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) [Teams 应用](/microsoftteams/platform/#pivot=home&panel=home-all)。 
-在新渠道中[将应用绑定到选项卡](/graph/api/teamstab-add?view=graph-rest-1.0)。 
-[将消息发送](/graph/api/channel-post-message?view=graph-rest-beta)到链接回网站的渠道。
+允许客户创建新[团队](/graph/api/resources/team)和[渠道](/graph/api/resources/channel)。 
+在新团队中[安装](/graph/api/teamsappinstallation-add) [Teams 应用](/microsoftteams/platform/#pivot=home&panel=home-all)。 
+在新渠道中[将应用绑定到选项卡](/graph/api/teamstab-add)。 
+[将消息发送](/graph/api/channel-post-message)到链接回网站的渠道。
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>创建和管理多个团队和渠道
 
-使用 Microsoft Graph，可以轻松地创建大型团队并使用用户和渠道对其进行填充，方法是自动化创建和管理[团队](/graph/api/resources/team?view=graph-rest-1.0)、[渠道](/graph/api/resources/channel?view=graph-rest-1.0)、[选项卡](/graph/api/resources/teamstab?view=graph-rest-1.0)和[应用](/graph/api/resources/teamsapp?view=graph-rest-1.0)。
-Microsoft Graph 还允许用户[查找](teams-list-all-teams.md)和[存档](/graph/api/team-archive?view=graph-rest-1.0)不再使用的团队。 此 API 与构建 [Microsoft Teams 管理中心](/microsoftteams/enable-features-office-365)和 [Teams PowerShell commandlets](/microsoftteams/teams-powershell-overview) 的 API 相同。
+使用 Microsoft Graph，可以轻松地创建大型团队并使用用户和渠道对其进行填充，方法是自动化创建和管理[团队](/graph/api/resources/team)、[渠道](/graph/api/resources/channel)、[选项卡](/graph/api/resources/teamstab)和[应用](/graph/api/resources/teamsapp)。
+Microsoft Graph 还允许用户[查找](teams-list-all-teams.md)和[存档](/graph/api/team-archive)不再使用的团队。 此 API 与构建 [Microsoft Teams 管理中心](/microsoftteams/enable-features-office-365)和 [Teams PowerShell commandlets](/microsoftteams/teams-powershell-overview) 的 API 相同。
 
 ### <a name="deploy-apps-to-teams"></a>向团队部署应用
 
-[在租户中列出团队](teams-list-all-teams.md)，并向其[安装应用](/graph/api/teamsappinstallation-add?view=graph-rest-1.0)。 
-在渠道中[创建选项卡](/graph/api/teamstab-add?view=graph-rest-1.0)，以使用户轻松访问应用。
+[在租户中列出团队](teams-list-all-teams.md)，并向其[安装应用](/graph/api/teamsappinstallation-add)。 
+在渠道中[创建选项卡](/graph/api/teamstab-add)，以使用户轻松访问应用。
 
 ### <a name="use-microsoft-graph-in-any-kind-of-app"></a>在任何类型的应用中使用 Microsoft Graph
 
@@ -81,20 +81,20 @@ Microsoft Teams API 可以增强 Teams 内部和外部的应用：
 
 ### <a name="get-notified-about-changes"></a>获取有关更改的通知
 
-Microsoft Teams 支持订阅对[频道](/graph/api/resources/channel?preserve-view=true)和[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)中消息的更改（创建、更新和删除），以允许应用获得近乎即时的更新。 有关如何订阅更改的详细信息，请参阅[获取频道和聊天中消息的更改通知](teams-changenotifications-chatmessage)。
+Microsoft Teams 支持订阅对[频道](/graph/api/resources/channel)和[聊天](/graph/api/resources/chat)中消息的更改（创建、更新和删除），以允许应用获得近乎即时的更新。 有关如何订阅更改的详细信息，请参阅[获取频道和聊天中消息的更改通知](teams-changenotifications-chatmessage.md)。
 
 ## <a name="api-reference"></a>API 参考
 
 在查找此服务的 API 参考？
 
-请参阅 [Microsoft Graph 中的 Teams API](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)。
+请参阅 [Microsoft Graph 中的 Teams API](/graph/api/resources/teams-api-overview)。
 
 ## <a name="next-steps"></a>后续步骤
 
 - 观看[概述视频](https://aka.ms/teamsgraph/v1/video)。
-- 了解如何[使用 Microsoft Teams API](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)。
-- 深入了解[团队](/graph/api/resources/team?view=graph-rest-1.0)、[渠道](/graph/api/resources/channel?view=graph-rest-1.0)和[组](/graph/api/resources/group?view=graph-rest-1.0)资源的方法、属性和关系。
+- 了解如何[使用 Microsoft Teams API](/graph/api/resources/teams-api-overview)。
+- 深入了解[团队](/graph/api/resources/team)、[渠道](/graph/api/resources/channel)和[组](/graph/api/resources/group)资源的方法、属性和关系。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
 - 阅读更多有关 [Microsoft Teams 编程模型](/microsoftteams/platform/concepts/concepts-overview)的信息。
-- 了解[云通信 API](/graph/api/resources/communications-api-overview?view=graph-rest-beta)。
+- 了解[云通信 API](/graph/api/resources/communications-api-overview)。
 - 立即开始使用示例代码：[Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、[C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)

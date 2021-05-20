@@ -4,22 +4,22 @@ description: 介绍可与 Microsoft Graph 数据连接结合使用的受支持�
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: dd339d15e9372440a2377d4c4182c482339e3ffa
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: fd4fbac34f4b03a3802de4834f0c02045d57c4ea
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289356"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547623"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Microsoft Graph 数据连接支持的数据集、区域和接收器
 
 Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数据区域和存储位置。 本主题介绍支持的数据集和如何访问数据集架构、支持的 Microsoft 365 和 Microsoft Azure 区域，以及数据连接通过 Azure 数据工厂使用的存储位置。
 
-如果想要请求为其他数据集、区域或接收器提供支持，请在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) 上告知我们。
+如果希望为其他数据集、区域或接收器请求支持，请在 [Microsoft 365 开发人员平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) 上告知我们。
 
 ## <a name="datasets"></a>数据集
 
-数据连接目前支持以下数据集。 若要查看每个数据集的架构，请在 Azure 数据工厂中创建一个新数据集，并使用“架构”选项卡来查看它。 
+数据连接现在支持以下数据集。若要查看每个数据集的架构，请在 Azure 数据工厂中创建新数据集，然后使用“架构”选项卡查看。 
 
 |数据集名称|说明|
 |-------------|-----------|
@@ -28,7 +28,7 @@ Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数�
 |BasicDataSet_v0.Message_v0|包含每个用户的邮箱中的邮件。 这些实体的架构类似于 [Microsoft Graph 邮件架构](/graph/api/resources/message)。| 
 |BasicDataSet_v0.SentItem_v0|包含从每个用户的邮箱中发送的邮件。 这些实体的架构类似于 [Microsoft Graph 邮件架构](/graph/api/resources/message)。| 
 |BasicDataSet_v0.User_v0|包含用户信息（显示名称、用户主体名称等）。| 
-|BasicDataSet_v0.MailboxSettings_v0|包含每个用户的邮箱设置。 这些实体的架构对应于 [Microsoft Graph 邮箱设置架构](/graph/api/resources/mailboxsettings?view=graph-rest-1.0)。| 
+|BasicDataSet_v0.MailboxSettings_v0|包含每个用户的邮箱设置。 这些实体的架构对应于 [Microsoft Graph 邮箱设置架构](/graph/api/resources/mailboxsettings)。| 
 |BasicDataSet_v0.MailFolder_v0|包含每个用户的邮箱中的邮件文件夹。 这些实体的架构对应于 [Microsoft Graph 邮件文件夹架构](/graph/api/resources/mailfolder)。|
 |BasicDataSet_v0.Manager_v0|包含每个用户的经理的用户信息。 这些实体的架构对应于 [Microsoft Graph 用户架构](/graph/api/resources/user)。|
 |BasicDataSet_v0.DirectReport_v0|包含直接向每个用户报告的员工的相关用户信息。 这些实体的架构对应于 [Microsoft Graph 用户架构](/graph/api/resources/user)。|

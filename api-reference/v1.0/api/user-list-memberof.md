@@ -1,16 +1,16 @@
 ---
 title: 列出 memberOf
 description: '返回用户是其直接成员的组和目录角色。 '
-author: jpettere
+author: yyuank
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 79437bee611be25ba07f9374071d82ae886981fd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dbed196b2fdbf415446134e416d16fd8306087ab
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051184"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546894"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 

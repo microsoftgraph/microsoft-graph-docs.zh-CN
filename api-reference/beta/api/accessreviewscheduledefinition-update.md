@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a31637e41e2ef03242c8a2e26ad307f2a3d0fdc2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0fe437806ee9fdb71535c16dab8c7ff07f631f39
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048342"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579632"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>更新 accessReviewScheduleDefinition
 
@@ -57,10 +57,10 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评论是自 (审阅用户自己的访问权限或) 。 Reviewers 属性仅在分配了单个用户为审阅者时可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 | 
 
-请注意，PUT 请求希望传入整个对象，其中将包含所有可写属性，而不只是要更新的属性。
+**PUT** 请求希望传入完整的对象，其中包括所有可写属性，而不只是要更新的属性。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 响应 `204, Accepted` 代码，无响应正文。
+如果成功，此方法返回 响应 `204 No Content` 代码，无响应正文。
 
 ## <a name="examples"></a>示例
 
@@ -138,13 +138,12 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 ### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 204 No Content
 ```
 
 <!--

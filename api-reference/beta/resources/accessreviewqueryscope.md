@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 976a856755b6bb638719bec6006c3d8d0587c42a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 07a13d12b821d055c8200da2fa5450958a8f53ee
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469747"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579276"
 ---
 # <a name="accessreviewqueryscope-resource-type"></a>accessReviewQueryScope 资源类型
 
@@ -19,35 +19,18 @@ ms.locfileid: "51469747"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-accessReviewQueryScope 对象定义将在 [accessReview 中查看哪些项](../resources/accessreviewsv2-root.md)。 请参阅支持的查询以查看选择选项。 若要将访问评审的范围确定为非活动用户，请参阅 [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md)。 
+accessReviewQueryScope 对象定义将在访问评审中 [审阅哪些项](../resources/accessreviewsv2-root.md)。 若要将访问评审的范围确定为非活动用户，请参阅 [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md)。 
 
 继承自 [accessReviewScope](../resources/accessreviewscope.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|查询|String|表示将在访问评审中审阅哪些内容的查询。 例如 ，/groups/{id}/members？$filter=...|
+|查询|String|表示将在访问评审中审阅哪些内容的查询。|
 |queryRoot|String|在需要动态指定审阅者的情况下，此属性用于指示查询的相对源。 此属性仅在指定了相对查询时是必需的。 例如，`./manager`。|
-|queryType|String|指示查询的类型。 类型包括 MicrosoftGraph 和 ARM。|
+|queryType|String|指示查询的类型。 类型包括 `MicrosoftGraph` `ARM` 和 。|
 
-### <a name="supported-queries-for-accessreviewqueryscope-as-scope"></a>accessReviewQueryScope 作为范围的受支持的查询
-这些查询作为 `scope` [accessReviewScheduleDefinition 中的 属性受到支持](accessreviewscheduledefinition.md)
-
-|方案| 查询 | 其他注释 |
-|--|--|-- |
-| 查看分配给组的所有用户 | /groups/{group id}/transitiveMembers ||
-| 查看分配给组的来宾用户 | /groups/{group id}/microsoft.graph.user/？$count=true&$filter= (userType eq 'Guest')  ||
-| 查看分配给所有 Microsoft 365 组的来宾用户 | ./members/microsoft.graph.user/？$count=true&$filter= (userType eq 'Guest')  | 请注意，相应的 instanceEnumerationScope 还应传递到 accessReviewScheduleDefinition。 有关 instanceEnumerationScope 查询，请参阅下表。 |
-| 权利管理访问包分配评审 | /identityGovernance/entitlementManagement/accessPackageAssignments？$filter= (accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}') | 请注意，Access Package Assignment Reviews 仅支持 READ|
-| 查看分配给特权角色的服务主体 | /beta/roleManagement/directory/roleAssignmentScheduleInstances？$expand=principal&$filter= (isof (principal，'microsoft.graph.servicePrincipal') and roleDefinitionId eq '{role ID}')  | |
-
-### <a name="supported-queries-for-instanceenumerationscope"></a>instanceEnumerationScope 支持的查询 
-这些查询作为 `instanceEnumerationScope` [accessReviewScheduleDefinition 中的 属性受到支持](accessreviewscheduledefinition.md)
-
-|方案| 查询 | 其他注释 |
-|--|--|--|
-|  查看分配给所有 Microsoft 365 组的来宾用户| /v1.0/groups？ \$filter= (groupTypes/any (c：c+eq+'Unified') ) &$count=true | 请注意，相应的作用域也应随以下项一起传入|
-| 查看分配给所有团队的来宾用户 | /v1.0/groups？ \$filter= (groupTypes/any (c：c+eq+'Unified') and resourceProvisioningOptions/Any (x：x eq 'Team') ) &$count=true | 请注意，相应的作用域也应随以下项一起传入|
+强烈建议@odata值指定 **@odata.type** `#microsoft.graph.accessReviewQueryScope` 属性。 有关使用 **accessReviewQueryScope** 的范围配置选项的详细信息，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 
 
 ## <a name="relationships"></a>关系
 无。

@@ -1,24 +1,23 @@
 ---
-title: command 资源类型
-description: ''
+title: 命令资源类型
+description: 发送到设备的命令集。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: finsharp
-ms.openlocfilehash: 1c3c9f4615da9125670f37530c0a30f42a106495
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: directory-management
+author: spunukol
+ms.openlocfilehash: 8b5fb7bc936bd111a5b746918cbd8b94f6e7ef94
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033970"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546222"
 ---
-# <a name="command-resource-type"></a>command 资源类型
+# <a name="command-resource-type"></a>命令资源类型
 
 命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
-|:---|:---|:---|
+无
 
 ## <a name="relationships"></a>关系
 无

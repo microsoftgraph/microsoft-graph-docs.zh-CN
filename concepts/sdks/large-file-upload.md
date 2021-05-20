@@ -1,18 +1,18 @@
 ---
-title: 使用 Microsoft Graph SDK 上载大文件
-description: 提供有关使用 Microsoft Graph SDK 上载大文件的指南。
+title: Upload Microsoft SDK 创建Graph文件
+description: 提供使用 Microsoft SDK 上传大Graph指南。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 54ff14071a81ac286cebbd785216c02dc9cf6c23
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b1a87c142f70f81b9e726727c6570f2cbce0f357
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948635"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579702"
 ---
-# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>使用 Microsoft Graph SDK 上载大文件
+# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Upload Microsoft SDK 创建Graph文件
 
-Microsoft Graph 中的许多实体支持可 [恢复文件上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) ，以便更轻松地上载大文件。 文件被切片为较小的片段，并且请求用于上载单个切片，而不是尝试在单个请求中上载整个文件。 为了简化此过程，Microsoft Graph SDK 实现了管理切片上载的大型文件上载任务。
+Microsoft 中的许多实体Graph可恢复文件[上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true)，以便更轻松地上载大文件。 文件被切片为较小的片段，并且请求用于上载单个切片，而不是尝试在单个请求中上载整个文件。 为了简化此过程，Microsoft Graph SDK 实现了管理切片上载的大型文件上载任务。
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -106,7 +106,7 @@ InputStream fileStream = new FileInputStream(file);
 long streamSize = file.length();
 
 // Create a callback used by the upload provider
-IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
+IProgressCallback callback = new IProgressCallback() {
     @Override
     // Called after each slice of the file is uploaded
     public void progress(final long current, final long max) {
@@ -116,6 +116,10 @@ IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
     }
 };
 
+DriveItemCreateUploadSessionParameterSet uploadParams =
+    DriveItemCreateUploadSessionParameterSet.newBuilder()
+        .withItem(new DriveItemUploadableProperties()).build();
+
 // Create an upload session
 UploadSession uploadSession = graphClient
     .me()
@@ -124,7 +128,7 @@ UploadSession uploadSession = graphClient
     // itemPath like "/Folder/file.txt"
     // does not need to be a path to an existing item
     .itemWithPath(itemPath)
-    .createUploadSession(new DriveItemUploadableProperties())
+    .createUploadSession(uploadParams)
     .buildRequest()
     .post();
 
@@ -132,20 +136,15 @@ LargeFileUploadTask<DriveItem> largeFileUploadTask =
     new LargeFileUploadTask<DriveItem>
         (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
 
-// Config parameter is an array of integers
-// customConfig[0] indicates the max slice size
-// Max slice size must be a multiple of 320 KiB
-int[] customConfig = { 320 * 1024 };
-
 // Do the upload
-largeFileUploadTask.upload(callback, customConfig);
+largeFileUploadTask.upload(0, null, callback);
 ```
 
 ---
 
 ## <a name="resuming-a-file-upload"></a>恢复文件上载
 
-Microsoft Graph SDK 支持 [恢复进行中的上传](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload)。 如果应用程序在上载过程中遇到连接中断或 5.x.x HTTP 状态，您可以继续上载。
+Microsoft Graph SDK[支持恢复进行中的上传](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload)。 如果应用程序在上载过程中遇到连接中断或 5.x.x HTTP 状态，您可以继续上载。
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)

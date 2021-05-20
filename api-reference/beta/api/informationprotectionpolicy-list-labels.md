@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: af2109c47585bb78318e836802185a663cd47435
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1be094a546bb34bc72bfc95e651bb502c0000f75
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040320"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579604"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel：listLabels
 
@@ -125,7 +125,8 @@ User-agent: ContosoLOBApp/1.0
           "color": "",
           "sensitivity": 1,
           "tooltip": "Data classified as Contoso General.",
-          "isActive": true
+          "isActive": true,
+          "parent": null
       },
       {
           "id": "4662f9a3-dd50-4a20-b984-a7be82e0e79c",
@@ -134,7 +135,8 @@ User-agent: ContosoLOBApp/1.0
           "color": "",
           "sensitivity": 2,
           "tooltip": "Data classificed as Contoso Confidential.",
-          "isActive": true
+          "isActive": true,
+          "parent": null
       },
       {
           "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
@@ -143,8 +145,28 @@ User-agent: ContosoLOBApp/1.0
           "color": "",
           "sensitivity": 3,
           "tooltip": "Data classified as Contoso Highly Confidential.",
-          "isActive": true
-      }
+          "isActive": true,
+          "parent": null
+      },
+      {
+            "id": "a20cbae4-0c05-448c-b342-cb6c618d0957",
+            "name": "Contoso Full Time Employees",
+            "description": "Consult Contoso data labeling policy for more details.",
+            "color": "",
+            "sensitivity": 4,
+            "tooltip": "Data classified as Contoso Highly Confidential for Contoso Full Time Employees",
+            "isActive": true,
+            "parent": {
+                "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
+                "name": "Highly Confidential",
+                "description": "Consult Contoso data labeling policy for more details.",
+                "color": "",
+                "sensitivity": 3,
+                "tooltip": "Data classified as Contoso Highly Confidential.",
+                "isActive": true,
+                "parent": null
+            }
+        }
   ]
 }
 ```

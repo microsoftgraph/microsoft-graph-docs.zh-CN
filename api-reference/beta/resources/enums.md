@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 31c803ccc82deaacddd81a70691e6570a044b5a1
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: add460d4f88d80c6d318a5c8c8c6d1171fa9cf31
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298536"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547216"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -2167,6 +2167,14 @@ ms.locfileid: "52298536"
 |other|
 |unknownFutureValue|
 
+### <a name="policyscope-values"></a>policyScope 值
+
+|成员|
+|:---|
+|无|
+|all|
+|selected|
+
 ### <a name="teamsappinstallationscope-values"></a>teamsAppInstallationScope 值
 
 |成员    |值    |说明 |
@@ -2220,4 +2228,3 @@ ms.locfileid: "52298536"
 |:---|
 |principal|
 |unknownFutureValue|
-

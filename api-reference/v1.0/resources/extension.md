@@ -3,14 +3,14 @@ title: 扩展资源类型
 description: 用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: ''
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 343d9cac8bcd751c7e78cbb469e08a643841579e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 413778d563abc745139936ac6ec139e7fe74893a
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018478"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547167"
 ---
 # <a name="extension-resource-type"></a>扩展资源类型
 

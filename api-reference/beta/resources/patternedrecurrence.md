@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: harini84
-ms.openlocfilehash: e64fa16f1aceb22eccd744588bd325943f79e930
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: baff2147ee0a9e03e4e55a143341171707dee2d7
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137646"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579301"
 ---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "50137646"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|模式|[recurrencePattern](recurrencepattern.md)|事件发生的频率。|
-|区域|[recurrenceRange](recurrencerange.md)|事件的持续时间。|
+|模式|[recurrencePattern](recurrencepattern.md)|事件发生的频率。 不要指定一次访问评审。|
+|range|[recurrenceRange](recurrencerange.md)|事件的持续时间。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

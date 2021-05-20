@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4eb1cbdcbf0a1256c2bf2bf0cec35479b8bbc2cc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c79e21600ed03a8239c0baaf1f436f074a4377bc
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962621"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547237"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -22,7 +22,7 @@ ms.locfileid: "50962621"
 
 目前，仅应用程序、组和用户资源支持已删除的项目[](application.md)功能。 [](group.md) [](user.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:------------|:------------|
@@ -45,7 +45,7 @@ ms.locfileid: "50962621"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|DeletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 只读。 可为 Null。|
+|DeletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 只读。 可为 NULL。|
 |featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) 集合| 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

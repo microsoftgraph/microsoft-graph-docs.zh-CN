@@ -3,14 +3,14 @@ title: patternedRecurrence 资源类型
 description: 定期模式和区域。
 localization_priority: Normal
 author: harini84
-ms.prod: ''
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: edf6013b4c0293eb79b2b21aafc5a6ce944b0fa2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 57e42faaaa30be31c45be7bfec6ad9ee17ffc869
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002973"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546201"
 ---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: fc14425ed08795f00ac7a92a348c84f9bcbe537d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ad9baa66d82437d53fc500a99205cf9f4d03280c
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515567"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547279"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -28,7 +28,7 @@ ms.locfileid: "50515567"
 
 |资源 |版本 |
 |:---------------|:-------|
-| [管理单元](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | GA |
+| [管理单元](/graph/api/resources/administrativeunit)  | GA |
 | [日历事件](event.md) | GA |
 | 组[日历事件](event.md) | GA |
 | 组对话线程[帖子](post.md) | GA |
@@ -52,7 +52,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展（针对 Outlook 资源）或扩展属性
 
-开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](../index.md)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 若要确认元数据公开了哪些属性，请访问 [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)。
+开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](/graph/traverse-the-graph#microsoft-graph-api-metadata)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 若要确认元数据公开了哪些属性，请访问 https://graph.microsoft.com/v1.0/$metadata。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

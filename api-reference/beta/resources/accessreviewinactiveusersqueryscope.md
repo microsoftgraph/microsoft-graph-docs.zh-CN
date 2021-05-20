@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 51fc61ce186b0346bc065ddc5dfea40158758223
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 80d415125679ddbb44a08fe75f33b115e4ba1f04
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469748"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579744"
 ---
 # <a name="accessreviewinactiveusersqueryscope-resource-type"></a>accessReviewInactiveUsersQueryScope 资源类型
 
@@ -19,27 +19,19 @@ ms.locfileid: "51469748"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-一种 [accessReviewQueryScope](../resources/accessreviewqueryscope.md) 类型，只允许在访问评审范围内选择非活动用户。
+一种 [accessReviewQueryScope](../resources/accessreviewqueryscope.md) 类型，只允许在访问评审范围内选择非活动用户。 不活动持续时间根据[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)的 settings 属性中定义的访问评审实例的开始日期，根据用户的上次登录日期计算。
 
 继承自 [accessReviewQueryScope](../resources/accessreviewqueryscope.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|inactiveDuration|持续时间|定义不活动持续时间的长度。 不活动基于用户的上次登录日期。|
+|inactiveDuration|期限|定义不活动持续时间。 与访问评审实例的开始日期相比，不活动基于用户的最后登录日期。 如果未指定此属性，则为其分配默认值 `PT0S` 。|
 |查询|String|继承自 [accessReviewQueryScope](../resources/accessreviewqueryscope.md)。|
 |queryRoot|String|继承自 [accessReviewQueryScope](../resources/accessreviewqueryscope.md)。|
 |queryType|String|继承自 [accessReviewQueryScope](../resources/accessreviewqueryscope.md)。|
 
-### <a name="supported-queries-for-accessreviewinactiveuserqueryscope-as-scope"></a>accessReviewInactiveUserQueryScope 作为范围的受支持的查询
-[accessReviewScope](../resources/accessreviewscope.md)上支持的相同查询在 accessReviewInactiveUserQueryScope 上也受支持。 以下是查询。 它们作为 `scope` [accessReviewScheduleDefinition 中的 属性受到支持](accessreviewscheduledefinition.md)。
-
-|方案| 查询 |
-|--|--|
-| 查看分配给组的所有非活动来宾用户 | /groups/{group ID}/transitiveMembers/microsoft.graph.user/？ \$count=true&$filter= (userType eq 'Guest')  |
-| 查看分配给组的所有非活动用户 | /groups/{group ID}/transitiveMembers |
-| 查看分配给所有组的所有非活动来宾用户 | ./members/microsoft.graph.user/？ \$count=true&$filter= (userType eq 'Guest')  |
-
+还必须使用值 **指定 @odata.type** 类型属性 `#microsoft.graph.accessReviewInactiveUsersQueryScope` 。 有关使用 **accessReviewInactiveUsersQueryScope** 的范围配置选项的详细信息，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 
 
 ## <a name="relationships"></a>关系
 无。

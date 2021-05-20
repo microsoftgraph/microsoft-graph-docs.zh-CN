@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6bd6ddbf839abcde4f5be928f9772e4456773954
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 3ffd2b1899165bbe05d347b55ee5ae5d8961b89f
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474804"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546902"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -22,7 +22,7 @@ ms.locfileid: "52474804"
 
 教师的成绩和反馈是与此 [对象关联的 educationOutcome](../resources/educationoutcome.md) 的一部分。 只有具有应用程序权限的教师或应用程序才能添加或更改成绩和反馈。 在作业发布之前，学生将看不到成绩或反馈。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 
 >**注意：** 为了可读性，可能会缩短此处所示的响应对象。 
 >
->如果 `null` [educationSubmission： setUpResourcesFolder](educationsubmission-setupResourcesFolder.md)尚未在此[educationSubmission](../resources/educationsubmission.md)资源上调用，则 resourcesFolderUrl 属性将为 。
+>如果尚未对此 [educationSubmission](../resources/educationsubmission.md)资源调用 [setUpResourcesFolder，](educationsubmission-setupResourcesFolder.md)则 **resourcesFolderUrl** 属性为 `null` 。
 
 <!-- {
   "blockType": "response",

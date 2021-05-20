@@ -5,14 +5,14 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: dcdfc94b3605b701f09f559c19e8975acf73a63d
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f8be8cb35add43d85b12bb3d466821ed8fd579a3
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474081"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579737"
 ---
-# <a name="azure-ad-access-reviews-legacy"></a>旧版 Azure AD (评审) 
+# <a name="azure-ad-access-reviews-deprecated"></a>已弃 (Azure AD 访问) 
 
 命名空间：microsoft.graph
 
@@ -30,9 +30,9 @@ ms.locfileid: "51474081"
 
 - 客户可以将访问控制收集到与组织相关的程序中，以跟踪合规性或风险敏感型应用程序的相关审查。
 
-客户还可以查看和认证分配给 Azure AD 角色（如全局管理员或 Azure 订阅角色）的管理用户的角色分配的相关功能。  此功能包含在 Azure [AD Privileged Identity Management 中](privilegedidentitymanagement-root.md)。
+客户还可以查看和认证分配给 Azure AD 角色（如全局管理员或 Azure 订阅角色）的管理用户的角色分配的相关功能。  此功能包含在 Azure [AD](privilegedidentitymanagement-root.md)Privileged Identity Management 中。
 
-请注意，访问评审功能（包括 API）包含在 Azure AD Premium P2 中。  创建访问评审的租户必须拥有有效的已购买或试用 Azure AD Premium P2 或 EMS E5 订阅。
+请注意，访问评审功能（包括 API）包含在 Azure AD 高级版 P2 中。  创建访问评审的租户必须拥有有效的已购买或试用 Azure AD 高级版 P2 或 EMS E5 订阅。
 在创建访问评审、计划或程序控制之前，管理员必须事先已载入才能准备 [programControlType](programcontroltype.md) 和 [businessFlowTemplate](businessflowtemplate.md) 资源。 组织可以载入 Azure AD 访问评审，或者，对于 Azure AD 角色或 Azure 订阅角色的访问评审，为 Azure AD PIM。
 
 
@@ -71,7 +71,7 @@ ms.locfileid: "51474081"
 
 以下目录角色是呼叫用户管理访问评审、程序和控件所需的。
 
-| 目标资源 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
+| 目标资源 | Operation | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[accessReview](accessreview.md) of an Azure AD role | 阅读 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读取者或特权角色管理员 |
 |[accessReview](accessreview.md) of an Azure AD role | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或特权角色管理员 |

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: df3941dd135cf33fe28f281132be4856c65baac0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 02b1d36a2b4639487b9dd88dcf67c9592bce1aa9
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040334"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579618"
 ---
 # <a name="get-informationprotectionlabel"></a>获取 informationProtectionLabel
 
@@ -115,14 +115,14 @@ Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/policy/labels/$entity",
-    "id": "4662f9a3-dd50-4a20-b984-a7be82e0e79c",
-    "name": "LabelWithFooterAndHeaderActions_Tests",
-    "description": "",
-    "color": "",
-    "sensitivity": 12,
-    "tooltip": "LabelWithFooterAndHeaderActions_Tests",
-    "isActive": true
+  "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
+  "name": "Highly Confidential",
+  "description": "Consult Contoso data labeling policy for more details.",
+  "color": "",
+  "sensitivity": 3,
+  "tooltip": "Data classified as Contoso Highly Confidential.",
+  "isActive": true,
+  "parent": null
 }
 ```
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9d8f4ed1db42b7d5f35d12f8f612bc544ef6e4c2
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 3174401b2d25bf2c7c00f0cffca2c048af7deca6
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51610975"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546117"
 ---
 # <a name="channel-getallmessages"></a>频道：getAllMessages
 
@@ -18,11 +18,13 @@ ms.locfileid: "51610975"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[团队](../resources/team.md)中所有[频道](../resources/channel.md)之间的[消息](../resources/chatmessage.md)，包括文本、音频和视频对话。
+检索[团队](../resources/team.md)中所有[频道](../resources/channel.md)之间的[消息](../resources/chatmessage.md)，包括文本、音频和视频对话。 
+
+若要了解有关使用 Microsoft Teams 导出 API 来导出内容，请参阅[使用 Microsoft Teams 导出 API 导出内容](/microsoftteams/export-teams-content)。
 
 ## <a name="permissions"></a>权限
 
-调用此 API 需要以下权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,7 +45,7 @@ GET /teams/{team-id}/channels/getAllMessages
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。
-目前不支持其他 [OData 查询参数](/graph/query-parameters)。
+此外，**lastModifiedDateTime** 上的 **dateTime** 范围查询还支持 [$filter](/graph/query-parameters#filter-parameter)。 目前不支持其他 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-body"></a>请求正文
 

@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 12bbbc30d3735a7af487d6266b48e736769e994b
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 4da690a646c47ef857de860d36bde17a4ee26761
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387799"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547181"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -17,7 +17,7 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 若要将资源数据作为更改通知的一部分，需要实现以下附加逻辑，来满足数据访问和安全要求： 
 
-- [处理](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications)特殊订阅生命周期通知（预览），以保持数据的不间断流动。 Microsoft Graph 会不时发送生命周期通知，以要求应用重新授权，确保更改通知中所包含的数据不会意外发生访问问题。
+- [处理](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications)）特殊订阅生命周期通知（预览），以保持数据的不间断流动。 Microsoft Graph 会不时发送生命周期通知，以要求应用重新授权，确保更改通知中所包含的数据不会意外发生访问问题。
 - [验证](#validating-the-authenticity-of-notifications)来自 Microsoft Graph 的更改通知的真实性。
 - [提供](#decrypting-resource-data-from-change-notifications)公共加密密钥并使用私钥解密通过更改通知所接收的资源数据。
 
@@ -32,7 +32,7 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 ## <a name="supported-resources"></a>支持的资源
 
-目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 以及 Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta)（预览）资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
+目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) 以及 Microsoft Teams [presence](/graph/api/resources/presence)（预览）资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
 
 - 特定 Teams 频道中新增或已更改的消息：`/teams/{id}/channels/{id}/messages`
 - 整个组织（租户）中所有团队频道中的新消息或已更改消息： `/teams/getAllMessages`
@@ -42,7 +42,7 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** （预览）支持。 它们不支持仅返回实例的选择性属性。 
 
-本文介绍订阅 Teams 通道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。 有关基于 **chatMessage** 的订阅的更多详细信息，请参阅[获取聊天和频道消息的更改通知](teams-changenotifications-chatmessage)。
+本文介绍订阅 Teams 通道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。 有关基于 **chatMessage** 的订阅的更多详细信息，请参阅 [获取聊天和频道消息的更改通知](teams-changenotifications-chatmessage.md)。
 
 ## <a name="creating-a-subscription"></a>创建订阅
 
@@ -350,7 +350,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
     - 使用导入证书的base64基编码内容，在 **encryptionCertificate** 属性中提供证书。
     - 在 **encryptionCertificateId** 属性中提供自己的标识符。 
   
-        此标识符能够将你的证书与接收的更改通知匹配，并从证书存储中检索证书。 标识符最长 128 个字符。
+        此标识符能够将你的证书与接收的更改通知匹配，并从证书存储中检索证书。标识符最长 128 个字符。
 
 4. 安全地管理私钥，以便更改通知处理代码可以访问私钥来解密资源数据。
 
@@ -363,7 +363,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 2. 使用新的证书密钥更新现有订阅。
 
     - 作为定期续订订阅的一部分执行此操作。 
-    - 或者，枚举所有订阅并提供密钥。 使用 [订阅修补程序操作](/graph/api/subscription-update?view=graph-rest-1.0)并更新 **encryptionCertificate** 和 **encryptionCertificateId** 属性。
+    - 或者，枚举所有订阅并提供密钥。 使用 [订阅修补程序操作](/graph/api/subscription-update)并更新 **encryptionCertificate** 和 **encryptionCertificateId** 属性。
 
 3. 请记住下列事项：
     - 在一段时间内，旧证书仍可用于加密。 应用程序必须具有访问新旧证书的权限，以能够对内容进行解密。
@@ -580,7 +580,7 @@ decryptedPayload += decipher.final('utf8');
 ## <a name="see-also"></a>另请参阅
 
 - [设置用户数据更改的通知](webhooks.md)
-- [订阅资源类型](/graph/api/resources/subscription?view=graph-rest-beta)
-- [获取订阅](/graph/api/subscription-get?view=graph-rest-1.0)
-- [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [更新订阅](/graph/api/subscription-update?view=graph-rest-1.0)
+- [订阅资源类型](/graph/api/resources/subscription)
+- [获取订阅](/graph/api/subscription-get)
+- [创建订阅](/graph/api/subscription-post-subscriptions)
+- [更新订阅](/graph/api/subscription-update)

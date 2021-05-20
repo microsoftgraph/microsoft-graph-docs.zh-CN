@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f4b8e78355323f0d0ffd988a3ead68de29eae0df
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: d290f47ccc1dcbfaa5aeae85ed28071e0a15399e
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475407"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546887"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission： setUpResourcesFolder
 
@@ -19,9 +19,10 @@ ms.locfileid: "52475407"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 触发创建 SharePoint 资源文件夹，其中应针对给定提交 (Word、Excel 等) 所有基于文件的资源。
+
 请注意，文件必须位于此文件夹中才能添加为资源。 只有班级中的学生可以确定要上载到给定提交级别资源文件夹中的文件。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

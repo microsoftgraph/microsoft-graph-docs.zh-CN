@@ -1,16 +1,16 @@
 ---
 title: agreementFileData 资源类型
-description: 表示 azure AD) 使用条款协议文件 (Azure Active Directory 的 blob。
+description: 表示 Azure AD Azure Active Directory (的 blob) 使用条款协议文件。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 7419b040945128e06c4693450626931b03b0e033
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0531cfd16c42fb7d2a050c8899eea63b8e333f41
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067452"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547560"
 ---
 # <a name="agreementfiledata-resource-type"></a>agreementFileData 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48067452"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 azure AD) 使用条款协议文件 (Azure Active Directory 的 blob。
+表示 Azure AD Azure Active Directory (的 blob) 使用条款协议文件。
 
 ## <a name="properties"></a>属性
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-|data|Binary|代表使用条款的 PDF 文档的数据。 只读。|
+|data|二进制|表示 PDF 文档的使用条款的数据。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -3,14 +3,14 @@ title: 选择 Microsoft Graph身份验证提供程序
 description: 了解如何为应用程序选择特定于方案的身份验证提供程序。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 0cdc407187ea0b5befc3704f877b1df11aeda545
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 45fc7cf4c142b6fe3fc3bd97cc7556e09cd51a44
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475533"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547139"
 ---
-# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据方案Graph Microsoft 身份验证提供程序
+# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据方案选择 Microsoft Graph 身份验证提供程序
 
 身份验证提供程序使用 MICROSOFT 身份验证库和 MSAL 身份验证库实现获取 (所需的) ;处理增量同意、密码过期和条件访问等情况下的一些潜在错误;，然后设置 HTTP 请求授权标头。 下表列出了一组与不同应用程序类型的方案匹配的 [提供程序](/azure/active-directory/develop/v2-app-types)。
 
@@ -87,11 +87,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) Graph功能请求。
+尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Graph功能请求。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 ---
 
@@ -145,11 +145,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) Graph功能请求。
+尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Graph功能请求。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) Graph功能请求。
+尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Graph功能请求。
 
 ---
 
@@ -175,7 +175,7 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 # <a name="java"></a>[Java](#tab/Java)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 # <a name="android"></a>[Android](#tab/Android)
 
@@ -187,11 +187,11 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 ---
 
@@ -265,7 +265,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -298,11 +298,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 ---
 
@@ -363,7 +363,7 @@ InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationPr
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -449,7 +449,7 @@ User me = await graphClient.Me.Request()
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -481,11 +481,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)请求（如果这对你很重要）。
+尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
 
 ---
 

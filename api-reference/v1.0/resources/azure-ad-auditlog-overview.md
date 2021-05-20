@@ -5,12 +5,12 @@ localization_priority: Priority
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 36cbd8a381dc3e92ee3c1dcd17e4941c308248f0
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 28d09cfe7dcb78480e02e5a2a23893495eb6655f
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293062"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546208"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 
@@ -18,7 +18,7 @@ ms.locfileid: "50293062"
 
 Azure Active Directory (Azure AD) 可跟踪用户活动和创建报告，以帮助你了解用户如何访问和使用 Azure AD 服务。 使用 Microsoft Graph API for Azure AD 分析这些报告中的数据，并根据组织的特定需求创建自定义解决方案。
 
-这些活动报告的可用性受 Azure AD 的数据保留策略管理。 有关详细信息，请参阅 [数据保留策略](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)。
+这些活动报告的可用性受 Azure AD 的数据保留策略管理。 有关详细信息，请参阅 [数据保留策略](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)。
 
 ## <a name="what-are-azure-ad-activity-logs"></a>什么是 Azure AD 活动日志？
 

@@ -3,14 +3,14 @@ title: unifiedRoleEligibilityScheduleRequest 资源类型
 description: 表示通过 Azure AD 角色分配符合条件的操作Privileged Identity Management。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 812757ed3ab277c4a82da348686609ba284ffdbd
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 622bce02829cc245d0cbdb859a6c56b1f88a3ea5
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299238"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547125"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-resource-type"></a>unifiedRoleEligibilityScheduleRequest 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "52299238"
 |appScopeId|String|当分配范围特定于应用时，特定于应用的范围的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 对租户范围范围使用"/"。 应用程序作用域是仅由此应用程序定义和理解的范围。|
 |directoryScopeId|String|表示工作分配范围的目录对象的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 应用程序作用域是仅由此应用程序定义和理解的范围。|
 |id|String|unifiedRoleEligibilityScheduleRequest 的唯一标识符。|
-|isValidationOnly|布尔值|布尔值|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
+|isValidationOnly|Boolean|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
 |justification|String|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
 |principalId|String| 要授予分配的主体的 Objectid。|
 |roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的 ID。 只读。|
