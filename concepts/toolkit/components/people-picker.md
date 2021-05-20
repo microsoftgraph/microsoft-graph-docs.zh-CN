@@ -1,18 +1,18 @@
 ---
 title: People-Picker组件
-description: 可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph 呈现结果列表。
+description: 您可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 3531c32ae4f33898b11f7d92f91115aa1cbf43a3
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: dd3956e39450946a381b0b90851f248d7cf07b64
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266813"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52580020"
 ---
-# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit
+# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit 中的组件
 
-您可以使用 Web `mgt-people-picker` 组件来搜索用户和/或组。 默认情况下，组件将搜索组织中所有的用户和用户，但你可以将行为更改为同时搜索组或仅搜索组。 您还可以将搜索筛选到特定组。
+您可以使用 Web `mgt-people-picker` 组件来搜索用户和/或组。 默认情况下，组件将搜索组织中所有的用户和用户，但你可以将行为更改为同时搜索组或仅搜索组。 您还可以将搜索筛选到特定组。 此外，还可以允许用户输入并选择任何电子邮件地址。
 
 ## <a name="example"></a>示例
 
@@ -29,16 +29,19 @@ ms.locfileid: "52266813"
 | 属性 | 属性 | 说明                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | 一个数字值，指示要显示的最大人数。 默认值为 6。                                                                                             |
-| group-id    | groupId     | 一个字符串值，属于 Microsoft Graph 定义的组，用于进一步筛选搜索结果。                                                                            |
-| type     | type      | 要搜索的实体类型。 可用选项包括 `person` `group` `any` ：、、。 默认值为 `person`。 如果设置了属性， `group-id` 则此属性无效。         
+| group-id    | groupId     | 一个字符串值，属于 Microsoft Graph定义的组，用于进一步筛选搜索结果。                                                                            |
 | transitive-search     | transitiveSearch      | 一个布尔值，用于执行可传递简单列表返回所有嵌套成员的成员的索引 - 默认情况下，不会使用可传递搜索。|
-| group-type     | groupType      | 要搜索的组类型。 可用选项包括 `unified` `security` `mailenabledsecurity` ：、、、、。 `distribution` `any` 默认值为 `any`。 如果该属性设置为 ， `type` 则此属性无效 `person` 。                                                                           |
-|  selected-people  | selectedPeople     | 所选人员数组。 设置此值以编程方式选择人员。|
+| type     | type      | 要搜索的实体类型。 可用选项包括 `person` `group` `any` ：、、。 默认值为 `person`。 如果设置了属性， `group-id` 则此属性无效。         
+| user-type     | userType      | 要搜索的用户的类型。 可用选项包括 `any` `user` ：、、组织用户或 `contact` 联系人。 默认值为 `any`。 |
+| group-type     | groupType      | 要搜索的组类型。 可用选项包括 `unified` `security` `mailenabledsecurity` ：、、、、。 `distribution` `any` 默认值为 `any`。 如果该属性设置为 ， `type` 则此属性无效 `person` 。  |
+| selected-people  | selectedPeople     | 所选人员数组。 设置此值以编程方式选择人员。|
 | people   | people    | 在搜索结果中找到并呈现的一组人员 |
 | 占位符   | 占位符    | 用于说明如何使用该组件的默认文本。 默认值为 `Start typing a name`。
-| default-selected-user-ids | defaultSelectedUserIds | 当提供以逗号分隔的 Microsoft Graph 用户 ID 的字符串时，组件在初始化时将呈现选择各自的用户。
+| default-selected-user-ids | defaultSelectedUserIds | 当提供以逗号分隔的 Microsoft Graph用户 ID 时，组件在初始化时将呈现选择各自的用户。
+| default-selected-group-ids | defaultSelectedGroupIds | 类似于 default-selected-user-ids，当提供以逗号分隔的 Microsoft Graph 组 ID 的字符串时，组件在初始化时呈现选择各自的组。
 | 选择模式 | selectionMode | 用于指示是允许为用户或组选择 (项目，还是) 一个项目。 可用选项包括 `single` `multiple` ：、。 默认值为 `multiple`。
 | disabled | disabled | 设置是否禁用人员选取器。 禁用后，用户将无法搜索或选择人员。
+| allow-any-email | allowAnyEmail | 指示人员选取器是否可以在不选择人员的情况下接受电子邮件地址。 默认值为 `false`。 键入完电子邮件地址后，可以按逗号 () ，用分号 () ，按 Tab 键或输入键进行 `,` `;` 添加。
 
 下面是一 `show-max` 个示例。
 
@@ -70,7 +73,7 @@ ms.locfileid: "52266813"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 
 从组件中触发以下事件。
 
@@ -154,7 +157,7 @@ mgt-people-picker {
 |`people`|人员列表|设置为 或 `type` `PersonType.person` 时使用 `PersonType.any`|
 |`users`|用户列表|指定时 `groupId` 使用|
 
-若要 [详细了解](../customize-components/cache.md) 如何配置缓存，请参阅缓存。
+请参阅[Caching，](../customize-components/cache.md)了解有关如何配置缓存的更多详细信息。
 ## <a name="extend-for-more-control"></a>扩展以了解更多控件
 
 对于更复杂的方案或真正自定义的 UX，此组件公开了多个在组件扩展 `protected render*` 中替代的方法。

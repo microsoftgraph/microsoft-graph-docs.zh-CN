@@ -1,16 +1,16 @@
 ---
-title: Microsoft Graph 功能中的人员Toolkit
+title: Microsoft 服务中的人员Graph Toolkit
 description: 可以使用 Web 组件通过用户的照片或缩写显示一组 `mgt-people` 人员或联系人。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0cdade8720112dc623e617514f31ab63151b80ff
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 6bed8f2c06e3c6834533b8e881016c4bc6d54bac
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266848"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52580013"
 ---
-# <a name="people-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 功能中的人员Toolkit
+# <a name="people-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
 可以使用 Web 组件通过用户的照片或缩写显示一组 `mgt-people` 人员或联系人。 默认情况下，它将显示已登录用户的最常见的联系人。
 
@@ -32,11 +32,14 @@ ms.locfileid: "52266848"
 | --- | --- | --- |
 | show-max | showMax | 指示要显示的最大人数。 默认值为 3。 |
 | people | people | 用于获取或设置组件呈现的联系人列表的一组人员。 使用此属性访问组件加载的人。 设置此值以加载您自己的人员。 |
-| group-id | groupId | 从特定 Microsoft Graph 中从各自的 ID 检索用户。 |
-| user-ids | userIds | 给定一组 Microsoft Graph 用户 `ids` ，组件将呈现这些用户。  |
+| group-id | groupId | 从特定 Microsoft Graph检索相应 ID 中的人员。 |
+| user-ids | userIds | 给定一组 Microsoft `ids` Graph，组件将呈现这些用户。  |
 | 人员查询 | peopleQueries | 给定一组人员查询 (、更新、电子邮件) ，组件将呈现这些用户。 |
 | person-card | personCard | 一个枚举，用于确定激活飞出面板或 所需的用户 `hover` 操作 `click` 。 默认值为 `none`。 |
 | show-presence | showPresence | 一个布尔值，用于确定是否在人像上显示个人状态锁屏提醒。 |
+| resource | resource | 从 Microsoft 获取的资源Graph (例如 `/me/people` ，) 。 |
+| scopes | scopes | 字符串的可选数组（如果使用 属性）或逗号分隔的范围（如果使用 属性）。 组件将使用这些作用域 (支持) ，以确保用户已同意适当的权限。 |
+| version | version | 进行 GET 请求时使用的可选 API 版本。 默认值为“`v1.0`”。  |
 
 
 以下示例设置要显示的最大人数。
@@ -88,15 +91,15 @@ mgt-people {
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-此组件使用下列 Microsoft Graph API 和权限：
+此组件使用以下 Microsoft Graph API 和权限：
 
-| Resource | 权限 |
+| 资源 | 权限 |
 | - | - |
 | [/me/people](/graph/api/user-list-people) | `People.Read` |
 
 使用默认模板时，需要其他 API 和权限。 此组件的默认模板使用 [mgt-person](person.md) 组件，这需要以下内容。
 
-| Resource | 权限 |
+| 资源 | 权限 |
 | - | - |
 | [/users](/graph/api/user-list) | User.ReadBasic.All |
 
@@ -115,7 +118,7 @@ mgt-people {
 > [!NOTE]
 > 默认情况下， `mgt-people` 组件使用该 [`mgt-person`](./person.md) 组件来显示有关人员的信息。 `mgt-person`组件自动下载并缓存每个人的照片。
 
-若要 [详细了解](../customize-components/cache.md) 如何配置缓存，请参阅缓存。
+请参阅[Caching，](../customize-components/cache.md)了解有关如何配置缓存的更多详细信息。
 ## <a name="extend-for-more-control"></a>扩展以了解更多控件
 
 对于更复杂的方案或真正自定义的 UX，此组件公开了多个在组件扩展 `protected render*` 中替代的方法。

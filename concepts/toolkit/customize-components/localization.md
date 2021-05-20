@@ -3,22 +3,22 @@ title: 本地化 Microsoft Graph Toolkit组件
 description: 使用 LocalizationHelper 本地化 Microsoft Graph Toolkit组件。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 3fafc71f20079f5320d07a62b06a2a18f97c5831
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d333112e77d047151aa6b030acd0ed1cea626573
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475413"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579926"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>本地化 Microsoft Graph Toolkit组件
 
-本地化是应用程序开发的重要方面，可支持具有全球各种语言要求的用户。
+本地化是应用程序开发的重要方面，可在全球支持具有各种语言要求的用户。
 
 你可以本地化 Microsoft Graph Toolkit组件，以确保 UI 反映目标语言。
 
 ## <a name="use-localizationhelper-to-add-localized-strings"></a>使用 LocalizationHelper 添加本地化字符串
 
-工具包中没有本地化的字符串，但你可以提供自己的本地化字符串，并通过用于本地化应用的同一过程管理不同的语言。 为便于本地化，工具包公开 `LocalizationHelper` 静态类。
+工具包中没有本地化的字符串，但你可以提供你自己的本地化字符串，并通过用于本地化应用的同一过程管理不同的语言。 为便于本地化，工具包公开 `LocalizationHelper` 静态类。
 
 以下示例演示如何本地化多个组件。
 
@@ -68,9 +68,9 @@ LocalizationHelper.strings = {
 };
 ```
 
-分配属性后，所有组件将自动选取新字符串并重新呈现，从而允许您动态 `strings` `LocalizationHelper` 更改字符串。 
+分配 的属性后，所有组件将自动选取新字符串并重新呈现，从而允许您动态更改 `strings` `LocalizationHelper` 字符串。 
 
-可以在全局级别或每个组件设置字符串 (`_components:` 属性) 。
+字符串可以在全局级别设置，也可以按组件设置 (`_components:` 属性设置) 。
 
 ## <a name="strings"></a>字符串
 
@@ -197,5 +197,22 @@ LocalizationHelper.strings = {
   personalInterestsSubSectionTitle: "Personal Interests",
   birthdaySubSectionTitle: "Birthday",
   currentYearSubtitle: "Current"
+}
+```
+
+### <a name="file"></a>文件
+
+```ts
+'file': {
+  modifiedSubtitle: 'Modified',
+  sizeSubtitle: 'Size'
+};
+```
+
+### <a name="file-list"></a>File-List
+
+```ts
+"file-list": {
+  showMoreSubtitle: 'Show more items'
 }
 ```

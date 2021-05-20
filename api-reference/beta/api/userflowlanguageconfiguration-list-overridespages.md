@@ -5,16 +5,18 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 939c13f89ac611fd225ec9e515a41ccef03fcce0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0cde02bc00c24e3f1218954bad7d0542d8de2f57
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955182"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579751"
 ---
 # <a name="list-overridespages"></a>List overridesPages
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从 overridesPages 导航属性获取 userFlowLanguagePage 资源。 这些页面用于自定义在用户流中的用户旅程期间向用户显示的值。
 
@@ -31,7 +33,7 @@ ms.locfileid: "50955182"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

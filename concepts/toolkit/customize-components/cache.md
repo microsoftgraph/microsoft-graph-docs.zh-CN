@@ -3,12 +3,12 @@ title: Microsoft Graph Toolkit缓存
 description: 解释缓存的工作原理以及如何配置提供给开发人员的选项
 localization_priority: Normal
 author: adchau
-ms.openlocfilehash: cef5c06c39ebad58e6a39f094427dea6a1b1be25
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 7bb13e97cc6ef0fa77ba05afb27a065f934e1f42
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266618"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579933"
 ---
 # <a name="microsoft-graph-toolkit-caching"></a>Microsoft Graph Toolkit缓存
 
@@ -17,7 +17,7 @@ Microsoft Graph Toolkit支持缓存选择 Microsoft Graph API 调用。 呼叫�
 > [!TIP]
 > 有关每个组件缓存哪些实体的信息，请参阅组件的文档。
 
-由 mgt 创建的用于缓存的数据库的前缀为 `mgt-` 。 每个实体的数据都存储在单独的对象存储中。 若要检查缓存，请使用开发人员面板中的"应用程序"选项卡 (F12 工具) - 在"存储"部分下，单击 **"IndexedDB"** 选项卡。 
+由 mgt 创建的用于缓存的数据库的前缀为 `mgt-` 。 每个实体的数据都存储在单独的对象存储中。 若要检查缓存，请使用开发人员面板中的"应用程序"选项卡 (F12 工具) - 在"存储"部分下，单击 **"IndexedDB"** 选项卡。  
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
@@ -52,6 +52,14 @@ let config = {
   response: {
     invalidationPeriod: number,
     isEnabled: boolean
+  },
+  files: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  },
+  fileLists: {
+    invalidationPeriod: number,
+    isEnabled: boolean
   }
 };
 ```
@@ -70,7 +78,7 @@ CacheService.config.users.isEnabled = false;
 ```
 禁用缓存不会 **清除** 缓存。
 
-更改 invalditation 时间段类似：
+更改失效期类似：
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';

@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2ac3dd53223b9260c3f51c3c872d36b044e698d5
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b22c52c0bf71f1a1169d51e2e6fd3e8ac10e99d9
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469742"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579891"
 ---
 # <a name="principalresourcemembershipsscope-resource-type"></a>principalResourceMembershipsScope 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "51469742"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-principalResourceMembershipsScope 是 [accessReviewScope](accessreviewscope.md) 的一种类型，它允许您选择主体作用域的集合和资源作用域的集合，并查看所选主体对选定资源的访问权限。 请参阅受支持的查询以查看可以选择哪些查询。 它用作 `scope` [accessReviewScheduleDefinition 的属性](accessreviewscheduledefinition.md)。
+principalResourceMembershipsScope 是 [accessReviewScope](accessreviewscope.md) 的一种类型，它允许您选择主体作用域的集合和资源作用域的集合，并查看所选主体对选定资源的访问权限。 它用于配置[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)的 scope 属性。 
 
 继承自 [accessReviewScope](../resources/accessreviewscope.md)。
 
@@ -29,30 +29,10 @@ principalResourceMembershipsScope 是 [accessReviewScope](accessreviewscope.md) 
 |principalScopes|[accessReviewScope](../resources/accessreviewscope.md) 集合|定义要包含在访问评审中的主体范围。|
 |resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) 集合|定义将检查其访问权限的资源的范围。|
 
+还必须使用值 **指定 @odata.type** 类型属性 `#microsoft.graph.principalResourceMembershipsScope` 。 有关使用 **principalResourceMembershipsScope** 的范围配置选项的详细信息，请参阅使用 Microsoft Graph API 配置访问 [评审定义的范围](/graph/accessreviews-scope-concept)。 
+
 ## <a name="relationships"></a>关系
 无。
-
-### <a name="supported-queries-for-resourcescope"></a>resourceScope 支持的查询
-支持将查询作为 `resourceScope` 属性。 它们确定要检查的资源访问权限集。 
-
-|方案| resourceScope 查询 | 
-|--|--|
-| 查看对服务主体的 principalScopes 的访问 | /servicePrincipals/{service principal ID} |
-| 查看对 Azure AD 目录角色的 principalScopes 的访问权限 | /roleManagement/directory/roleDefinitions/{role ID} |
-| 查看所有 Azure AD 目录角色对 principalScopes 的访问权限 | /roleManagement/directory/roleDefinitions |
-
-### <a name="supported-queries-for-principalscope"></a>principalScope 支持的查询
-支持将查询作为 `principalScope` 属性。 它们确定将检查其对关联 resourceScope 的访问权的主体集。 关联的 principalScope 类型列出了接受为 principalScope 的 odata 查询类型。
-
-|方案| principalScope 查询 | OData 查询类型 | 其他注释 |
-|--|--|-- | --|
-| 查看所有用户对 resourceScope 的访问权限 | /users |[accessReviewQueryScope](accessreviewqueryscope.md)||
-| 查看来宾用户对 resourceScope 的访问权限 | /users？$filter= (userType eq 'Guest')  |[accessReviewQueryScope](accessreviewqueryscope.md)||
-| 查看所有非活动用户对 resourceScope 的访问权限 | /users |[accessReviewInactiveUsersQueryScope](accessreviewinactiveusersqueryscope.md)| 必须包含 `instanceDuration` 属性|
-| 查看对 resourceScope 的来宾非活动用户的访问权限 | /users？$filter= (userType eq 'Guest')  |[accessReviewInactiveUsersQueryScope](accessreviewinactiveusersqueryscope.md)| 必须包含 `instanceDuration` 属性|
-
-
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

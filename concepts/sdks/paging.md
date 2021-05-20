@@ -3,16 +3,20 @@ title: 使用 Microsoft SDK 分页Graph集合
 description: 提供有关使用 Microsoft Graph SDK 创建 Microsoft Graph API 请求的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 467a1114781105a0799724c8a072f19324948552
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: d06a23e5c1e53042192fe3fe8b4c8e3fe13c488d
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546922"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579660"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft SDK 分页Graph集合
 
 出于性能原因，实体集合通常拆分为多个页面，并且每个页面返回一个指向下一页的 URL。 **PageIterator** 类简化了分页集合的使用。 **PageIterator** 自动枚举当前页面和请求后续页面。
+
+## <a name="request-headers"></a>请求标头
+
+如果在初始请求中发送任何其他请求头，则默认情况下这些标头不会包含在后续页面请求中。 如果需要在后续请求上发送这些标头，则必须显式设置它们。
 
 ## <a name="iterate-over-all-the-messages"></a>在所有邮件上进行 Iterate
 
@@ -26,18 +30,35 @@ ms.locfileid: "52546922"
 ```csharp
 var messages = await graphClient.Me.Messages
     .Request()
+    .Header("Prefer", "outlook.body-content-type=\"text\"")
     .Select(e => new {
         e.Sender,
-        e.Subject
+        e.Subject,
+        e.Body
     })
     .Top(10)
     .GetAsync();
 
 var pageIterator = PageIterator<Message>
-    .CreatePageIterator(graphClient, messages, (m) => {
-        Console.WriteLine(m.Subject);
-        return true;
-    });
+    .CreatePageIterator(
+        graphClient,
+        messages,
+        // Callback executed for each item in
+        // the collection
+        (m) =>
+        {
+            Console.WriteLine(m.Subject);
+            return true;
+        },
+        // Used to configure subsequent page
+        // requests
+        (req) =>
+        {
+            // Re-add the header to subsequent requests
+            req.Header("Prefer", "outlook.body-content-type=\"text\"");
+            return req;
+        }
+    );
 
 await pageIterator.IterateAsync();
 ```
@@ -47,7 +68,8 @@ await pageIterator.IterateAsync();
 ```typescript
 // Makes request to fetch mails list.
 let response: PageCollection = await client
-  .api("/me/messages?$top=10&$select=sender,subject")
+  .api("/me/messages?$top=10&$select=sender,subject,body")
+  .header('Prefer', 'outlook.body-content-type="text"')
   .get();
 
 // A callback function to be called for every item in the collection.
@@ -58,9 +80,18 @@ let callback: PageIteratorCallback = (data) => {
   return true;
 };
 
+// A set of request options to be applied to
+// all subsequent page requests
+let requestOptions: GraphRequestOptions = {
+  // Re-add the header to subsequent requests
+  headers: {
+    'Prefer': 'outlook.body-content-type="text"'
+  }
+};
+
 // Creating a new page iterator instance with client a graph client
 // instance, page collection response from request and callback
-let pageIterator = new PageIterator(client, response, callback);
+let pageIterator = new PageIterator(client, response, callback, requestOptions);
 
 // This iterates the collection until the nextLink is drained out.
 await pageIterator.iterate();
@@ -70,8 +101,8 @@ await pageIterator.iterate();
 
 ```java
 final MessageCollectionPage messagesPage = graphClient.me().messages()
-    .buildRequest()
-    .select("Sender,Subject")
+    .buildRequest(new HeaderOption("Prefer", "outlook.body-content-type=\"text\""))
+    .select("Sender,Subject,Body")
     .top(10)
     .get();
 
@@ -82,7 +113,10 @@ while(messagesPage != null) {
   if(nextPage == null) {
     break;
   } else {
-    messagePage = nextPage.buildRequest().get();
+    messagePage = nextPage.buildRequest(
+        // Re-add the header to subsequent requests
+        new HeaderOption("Prefer", "outlook.body-content-type=\"text\"")
+    ).get();
   }
 }
 ```
@@ -110,13 +144,18 @@ var messages = await graphClient.Me.Messages
     .GetAsync();
 
 var pageIterator = PageIterator<Message>
-    .CreatePageIterator(graphClient, messages, (m) => {
-        Console.WriteLine(m.Subject);
-        count++;
-        // If we've iterated over the limit,
-        // stop the iteration by returning false
-        return count < pauseAfter;
-    });
+    .CreatePageIterator(
+        graphClient,
+        messages,
+        (m) =>
+        {
+            Console.WriteLine(m.Subject);
+            count++;
+            // If we've iterated over the limit,
+            // stop the iteration by returning false
+            return count < pauseAfter;
+        }
+    );
 
 await pageIterator.IterateAsync();
 

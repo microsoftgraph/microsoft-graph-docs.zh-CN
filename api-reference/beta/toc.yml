@@ -977,7 +977,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -10161,7 +10161,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -11313,7 +11313,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -11326,7 +11326,7 @@ items:
                       - name: 获取
                         href: api/accessreviewscheduledefinition-get.md
                       - name: 创建
-                        href: api/accessreviewscheduledefinition-create.md
+                        href: api/accessreviewscheduledefinition-post.md
                       - name: 删除
                         href: api/accessreviewscheduledefinition-delete.md
                       - name: 更新
@@ -11357,7 +11357,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-list.md
                       - name: 列出待审批
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
-                      - name: Update
+                      - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
                   - name: 访问评审策略
                     href: resources/accessreviewpolicy.md
@@ -11377,7 +11377,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '旧版 (访问) '
+              - name: '已弃 (的访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -12985,7 +12985,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: Permissions
+              - name: 权限
                 items:
                   - name: 权限
                     href: resources/permission.md

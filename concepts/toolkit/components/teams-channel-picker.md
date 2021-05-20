@@ -1,18 +1,18 @@
 ---
-title: Microsoft Graph 中的 Microsoft Teams 频道选取器Toolkit
-description: 可以使用 mgt-teams-channel-picker从 Microsoft Graph 搜索与用户关联的频道和团队。
+title: Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
+description: 可以使用 mgt-teams-channel-picker 从 Microsoft 网站搜索与用户关联的Graph。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 086ce7085f1802e40195fca9f54f2af460291fda
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: aaa89b9fab5d9e29c35b7d2cabb0a494ca97d4b3
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266792"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579940"
 ---
-# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 中的 Microsoft Teams 频道选取器Toolkit
+# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
 
-可以使用组件为与用户关联的 Microsoft Teams 频道 `mgt-teams-channel-picker` 启用搜索。 组件可以搜索用户已加入的所有团队，以及这些团队中的每个频道。 
+可以使用组件 `mgt-teams-channel-picker` 为与用户关联的Microsoft Teams启用搜索。 组件可以搜索用户已加入的所有团队，以及这些团队中的每个频道。 
 
 ## <a name="example"></a>示例
 
@@ -36,7 +36,7 @@ console.log(channelPicker.selectedItem.team);
 
 使用 `selectChannelById(channelId: string)` 方法以编程方式选择通道。
 
-> **注意：Teams** 频道选取器仅支持单一频道选择。
+> **注意：Teams** 文件选取器仅支持单通道选择。
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -76,7 +76,7 @@ mgt-teams-channel-picker {
 }
 ```
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 | 事件 | 详情 | 说明 |
 | --- | --- | --- |
 | selectionChanged | 详细信息包含 `{channel : ` [MicrosoftGraph.Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph.Team 当前选定的项](/graph/api/resources/team)`}` | 当用户在选择频道时更改时触发。 |
@@ -87,7 +87,7 @@ mgt-teams-channel-picker {
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
-| loading | null：无数据 | 向 Microsoft Graph 提出请求时用于呈现选取器状态的模板。 |
+| loading | null：无数据 | 向 Microsoft 请求时用于呈现文件选取器Graph模板。 |
 | error | null：无数据| 当用户搜索未返回任何用户时所使用的模板。 |
 
 
@@ -103,12 +103,29 @@ mgt-teams-channel-picker {
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-此组件使用下列 Microsoft Graph API 和权限。
+默认情况下，此组件Graph Microsoft 应用程序 API 和权限。
 
 | API                                                                                                              | 权限  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
 | [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
+
+在版本 2.2 中，所需的权限已更新为限制较少的基于Teams权限。 若要避免发生意外更改，您需要通过全局配置选择加入新权限。
+
+```ts
+import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
+
+MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
+```
+
+设置为 `useTeamsBasedScopes` `true` 时，Teams选取器将使用以下范围。 
+
+| API                                                                                                              | 权限  |
+| ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | Team.ReadBasic.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Channel.ReadBasic.All        |
+
+这些权限将是下一个主要更新中的默认权限。
 
 ## <a name="authentication"></a>身份验证
 
