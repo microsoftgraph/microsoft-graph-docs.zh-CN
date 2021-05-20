@@ -26,9 +26,9 @@ accessReviewQueryScope 对象定义将在访问评审中 [审阅哪些项](../re
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|查询|String|表示将在访问评审中审阅哪些内容的查询。|
-|queryRoot|String|在需要动态指定审阅者的情况下，此属性用于指示查询的相对源。 此属性仅在指定了相对查询时是必需的。 例如，`./manager`。|
-|queryType|String|指示查询的类型。 类型包括 `MicrosoftGraph` `ARM` 和 。|
+|查询|字符串|表示将在访问评审中审阅哪些内容的查询。|
+|queryRoot|字符串|在需要动态指定审阅者的情况下，此属性用于指示查询的相对源。 此属性仅在指定了相对查询时是必需的。 例如，`./manager`。|
+|queryType|字符串|指示查询的类型。 类型包括 `MicrosoftGraph` `ARM` 和 。|
 
 强烈建议@odata值指定 **@odata.type** `#microsoft.graph.accessReviewQueryScope` 属性。 有关使用 **accessReviewQueryScope** 的范围配置选项的详细信息，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 
 

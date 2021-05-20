@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ff977732b4d0894767f06ccfcf03451a8cc77f61
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bdcdf2e01dc73599b3fb63abcaa8e8844b79bcde
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941363"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547637"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
 
@@ -34,16 +34,17 @@ ms.locfileid: "50941363"
 |[创建邀请](../api/invitation-post.md) | 邀请 | 写入 invitation 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
+
+| 属性| 类型|说明|
+|:---|:---|:---|
 |invitedUserDisplayName|String|被邀请的用户的显示名称。|
-|invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。 必需。 电子邮件地址中不允许使用以下特殊字符：<br><ul><li>波形符 (~)</li><li>感叹号 (`!`)</li><li>井号 (`#`)</li><li>美元符号 (`$`)</li><li>百分号 (`%`)</li><li>扬抑符 (`^`)</li><li>与号 (`&`)</li><li>星号 (`*`)</li><li>圆括号 (`( )`)</li><li>加号 (`+`)</li><li>等号 (`=`)</li><li>方括号 (`[ ]`)</li><li>大括号 (`{ }`)</li><li>反斜杠 (`\`)</li><li>斜杠符号 (`/`)</li><li>竖线 (`\|`)</li><li>分号 (`;`)</li><li>冒号 (`:`)</li><li>引号 (`"`)</li><li>尖括号 (`< >`)</li><li>问号 (`?`)</li><li>逗号 (`,`)</li></ul><br>但是，存在下列例外情况：<br><ul><li>允许在用户名中的任何位置使用句点 (`.`) 或连字符 (`-`)，但名称的开头或结尾除外。</li><li>允许在用户名中的任何位置使用下划线 (`_`)。 这包括名称的开头或结尾。</li></ul>|
-|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
+|invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。 必需。 电子邮件地址中不允许使用以下特殊字符：<br><ul><li>波形符 (`~`)</li><li>感叹号 (`!`)</li><li>井号 (`#`)</li><li>美元符号 (`$`)</li><li>百分号 (`%`)</li><li>扬抑符 (`^`)</li><li>与号 (`&`)</li><li>星号 (`*`)</li><li>圆括号 (`( )`)</li><li>加号 (`+`)</li><li>等号 (`=`)</li><li>方括号 (`[ ]`)</li><li>大括号 (`{ }`)</li><li>反斜杠 (`\`)</li><li>斜杠符号 (`/`)</li><li>竖线 (`\|`)</li><li>分号 (`;`)</li><li>冒号 (`:`)</li><li>引号 (`"`)</li><li>尖括号 (`< >`)</li><li>问号 (`?`)</li><li>逗号 (`,`)</li></ul><br>但是，存在下列例外情况：<br><ul><li>允许在用户名中的任何位置使用句点 (`.`) 或连字符 (`-`)，但名称的开头或结尾除外。</li><li>允许在用户名中的任何位置使用下划线 (`_`)。 这包括名称的开头或结尾。</li></ul>|
+|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
 |sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
 |inviteRedirectUrl|String|用户在兑现邀请后会被重定向至该 URL。必填。|
-|inviteRedeemUrl|String|用户用于兑现邀请的 URL。只读|.
+|inviteRedeemUrl|String|用户用于兑现邀请的 URL。只读。|
 |invitedUserType|String|被邀请的用户的 userType。 默认情况下，此操作为 `Guest`。 如果您是公司管理员， `Member` 邀请作为管理员。 |
-|状态|String|邀请的状态。 可能的值为： `PendingAcceptance`、 `Completed`、 `InProgress`和 `Error`|
+|状态|String|邀请的状态。 可能的值为： `PendingAcceptance`、 `Completed`、 `InProgress`和 `Error`。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

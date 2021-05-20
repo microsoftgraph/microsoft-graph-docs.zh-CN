@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: a460f64a75b7326cd6a3e4b7e5445129592111e5
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 4ceb5a98fd330efa3b5e9b8b62d32598b5972984
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51030986"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547581"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "51030986"
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容。
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
-- [打印机][] (当打印机的打印作业进入”JobFetchable”状态时 - 准备好提取打印) 和通用打印中的 [printTaskDefinition][]。 有关详细信息，请参阅 [订阅云打印 API 中的更改通知](https://docs.microsoft.com/zh-CN/graph/universal-print-webhook-notifications)。
+- [打印机][] (当打印机的打印作业进入”JobFetchable”状态时 - 准备好提取打印) 和通用打印中的 [printTaskDefinition][]。 有关详细信息，请参阅 [订阅云打印 API 中的更改通知](/graph/universal-print-webhook-notifications)。
 - Azure Active Directory 中的[用户][]或[组][]。
 
 查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
@@ -55,10 +55,10 @@ ms.locfileid: "51030986"
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果此应用使用委派权限来创建订阅，则此字段包含该应用代表其调用的已登录用户的 ID。 如果此应用使用应用程序权限，则此字段包含对应于该应用的服务主体的 ID。 只读。 | 全部 |
 | includeResourceData | 布尔值 | 设置为 `true` 时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（例如聊天消息的内容）。 可选。 | 全部 |
 | encryptionCertificate | string | 带有公钥的证书 的base64 编码表示形式，用于对更改通知中的资源数据进行加密。 可选。 **includeResourceData** 为 true 时是必需的。 | 全部 |
-| encryptionCertificateId | string | 自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 可选。| 全部 |
+| encryptionCertificateId | string | 应用程序提供的自定义标识符，以帮助识别解密资源数据所需的证书。 可选的。| 全部 |
 | latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl** 指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 | 全部 |
 | notificationContentType | 字符串 | MS Graph 所需的内容类型为更改支持的资源类型变更通知。 默认内容类型为“application/json”内容类型。 | 全部 |
-| notificationQueryOptions | 字符串 | 用于指定目标资源值的 OData 查询选项。 当资源达到与此处所提供的查询选项相匹配的状态时，客户端会收到通知。 有了订阅创建有效负载中的新属性以及所有现有属性后，每当资源达到 “notificationQueryOptions” 属性中提到的所需状态时，Webhook 就会发送通知，例如当打印作业完成时、当打印作业资源 `isFetchable` 属性值变为 true 时，等等。 | [通用打印服务](https://docs.microsoft.com/zh-CN/graph/universal-print-webhook-notifications) |
+| notificationQueryOptions | 字符串 | 用于指定目标资源值的 OData 查询选项。 当资源达到与此处所提供的查询选项相匹配的状态时，客户端会收到通知。 有了订阅创建有效负载中的新属性以及所有现有属性后，每当资源达到 “notificationQueryOptions” 属性中提到的所需状态时，Webhook 就会发送通知，例如当打印作业完成时、当打印作业资源 `isFetchable` 属性值变为 true 时，等等。 | [通用打印服务](/graph/universal-print-webhook-notifications) |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
 
@@ -149,6 +149,6 @@ ms.locfileid: "51030986"
   "description": "subscription resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath&quot;: &quot;"
 }-->
 
