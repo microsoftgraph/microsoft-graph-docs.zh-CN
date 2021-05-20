@@ -1,18 +1,18 @@
 ### YamlMime:Landing
 title: Microsoft Graph 教程
-summary: Microsoft Graph 教程是分步培训练习，可指导你创建通过 Microsoft Graph 访问数据的基本应用程序。
+summary: Microsoft Graph教程是分步培训练习，可指导你创建通过 Microsoft Graph 访问数据的基本应用程序。
 metadata:
   title: Microsoft Graph 教程
-  description: Microsoft Graph 教程是分步培训练习，可指导你创建通过 Microsoft Graph 访问数据的基本应用程序。
+  description: Microsoft Graph教程是分步培训练习，可指导你创建通过 Microsoft Graph 访问数据的基本应用程序。
   ms.topic: landing-page
   author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 1e9c5ac18c874d458131691b26dacd75c266dab5
-  ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+  ms.openlocfilehash: 902050d00365db897a4068649584aa5cbd13c3e7
+  ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/23/2021
-  ms.locfileid: "51960958"
+  ms.lasthandoff: 05/19/2021
+  ms.locfileid: "52546978"
 landingContent:
 - title: 生成首个服务器端应用
   linkLists:
@@ -84,11 +84,11 @@ landingContent:
   linkLists:
   - linkListType: learn
     links:
-    - text: Microsoft Graph 基础
+    - text: Microsoft Graph 基础知识
       url: /learn/paths/m365-msgraph-fundamentals
     - text: 使用 Microsoft Graph 生成应用 - 关联
       url: /learn/paths/m365-msgraph-associate
-    - text: Get started with Microsoft Graph Toolkit
-      url: /learn/modules/msgraph-toolkit-intro
-    - text: 探索 JavaScript 开发 Microsoft Graph 方案
+    - text: 使用 Microsoft Graph 工具包开发应用
+      url: /learn/paths/m365-msgraph-toolkit
+    - text: 了解用于 JavaScript 开发 Microsoft Graph 方案
       url: /learn/paths/m365-msgraph-scenarios
