@@ -12,21 +12,21 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52546201"
 ---
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="099a7-103">patternedRecurrence 资源类型</span><span class="sxs-lookup"><span data-stu-id="099a7-103">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="e1a86-103">patternedRecurrence 资源类型</span><span class="sxs-lookup"><span data-stu-id="e1a86-103">patternedRecurrence resource type</span></span>
 
-<span data-ttu-id="099a7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="099a7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e1a86-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e1a86-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="099a7-105">定期模式和区域。</span><span class="sxs-lookup"><span data-stu-id="099a7-105">The recurrence pattern and range.</span></span>
+<span data-ttu-id="e1a86-105">定期模式和区域。</span><span class="sxs-lookup"><span data-stu-id="e1a86-105">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="099a7-106">属性</span><span class="sxs-lookup"><span data-stu-id="099a7-106">Properties</span></span>
-| <span data-ttu-id="099a7-107">属性</span><span class="sxs-lookup"><span data-stu-id="099a7-107">Property</span></span>     | <span data-ttu-id="099a7-108">类型</span><span class="sxs-lookup"><span data-stu-id="099a7-108">Type</span></span>   |<span data-ttu-id="099a7-109">说明</span><span class="sxs-lookup"><span data-stu-id="099a7-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e1a86-106">属性</span><span class="sxs-lookup"><span data-stu-id="e1a86-106">Properties</span></span>
+| <span data-ttu-id="e1a86-107">属性</span><span class="sxs-lookup"><span data-stu-id="e1a86-107">Property</span></span>     | <span data-ttu-id="e1a86-108">类型</span><span class="sxs-lookup"><span data-stu-id="e1a86-108">Type</span></span>   |<span data-ttu-id="e1a86-109">描述</span><span class="sxs-lookup"><span data-stu-id="e1a86-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="099a7-110">模式</span><span class="sxs-lookup"><span data-stu-id="099a7-110">pattern</span></span>|[<span data-ttu-id="099a7-111">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="099a7-111">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="099a7-112">事件发生的频率。</span><span class="sxs-lookup"><span data-stu-id="099a7-112">The frequency of an event.</span></span>|
-|<span data-ttu-id="099a7-113">区域</span><span class="sxs-lookup"><span data-stu-id="099a7-113">range</span></span>|[<span data-ttu-id="099a7-114">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="099a7-114">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="099a7-115">事件的持续时间。</span><span class="sxs-lookup"><span data-stu-id="099a7-115">The duration of an event.</span></span>|
+|<span data-ttu-id="e1a86-110">模式</span><span class="sxs-lookup"><span data-stu-id="e1a86-110">pattern</span></span>|[<span data-ttu-id="e1a86-111">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="e1a86-111">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="e1a86-112">事件发生的频率。</span><span class="sxs-lookup"><span data-stu-id="e1a86-112">The frequency of an event.</span></span>|
+|<span data-ttu-id="e1a86-113">区域</span><span class="sxs-lookup"><span data-stu-id="e1a86-113">range</span></span>|[<span data-ttu-id="e1a86-114">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="e1a86-114">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="e1a86-115">事件的持续时间。</span><span class="sxs-lookup"><span data-stu-id="e1a86-115">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="099a7-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="099a7-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e1a86-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e1a86-116">JSON representation</span></span>
 
-<span data-ttu-id="099a7-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="099a7-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="e1a86-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e1a86-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

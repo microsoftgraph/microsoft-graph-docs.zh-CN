@@ -3,31 +3,31 @@ title: settingValue 资源类型
 description: 由名称/值对表示的设置。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: ''
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4f565f598db7e69a48a924279a3ed228f2651755
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 171b08d4542af6900dcb6549527e956c4395c947
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009216"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547041"
 ---
-# <a name="settingvalue-resource-type"></a><span data-ttu-id="420f6-103">settingValue 资源类型</span><span class="sxs-lookup"><span data-stu-id="420f6-103">settingValue resource type</span></span>
+# <a name="settingvalue-resource-type"></a><span data-ttu-id="d5f30-103">settingValue 资源类型</span><span class="sxs-lookup"><span data-stu-id="d5f30-103">settingValue resource type</span></span>
 
-<span data-ttu-id="420f6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="420f6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d5f30-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d5f30-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="420f6-105">由名称/值对表示的设置。</span><span class="sxs-lookup"><span data-stu-id="420f6-105">A setting represented by a name/value pair.</span></span>
+<span data-ttu-id="d5f30-105">由名称/值对表示的设置。</span><span class="sxs-lookup"><span data-stu-id="d5f30-105">A setting represented by a name/value pair.</span></span>
 
-### <a name="properties"></a><span data-ttu-id="420f6-106">属性</span><span class="sxs-lookup"><span data-stu-id="420f6-106">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="d5f30-106">属性</span><span class="sxs-lookup"><span data-stu-id="d5f30-106">Properties</span></span>
 
-| <span data-ttu-id="420f6-107">属性</span><span class="sxs-lookup"><span data-stu-id="420f6-107">Property</span></span> | <span data-ttu-id="420f6-108">类型</span><span class="sxs-lookup"><span data-stu-id="420f6-108">Type</span></span> | <span data-ttu-id="420f6-109">说明</span><span class="sxs-lookup"><span data-stu-id="420f6-109">Description</span></span> |
+| <span data-ttu-id="d5f30-107">属性</span><span class="sxs-lookup"><span data-stu-id="d5f30-107">Property</span></span> | <span data-ttu-id="d5f30-108">类型</span><span class="sxs-lookup"><span data-stu-id="d5f30-108">Type</span></span> | <span data-ttu-id="d5f30-109">描述</span><span class="sxs-lookup"><span data-stu-id="d5f30-109">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="420f6-110">name</span><span class="sxs-lookup"><span data-stu-id="420f6-110">name</span></span>|<span data-ttu-id="420f6-111">String</span><span class="sxs-lookup"><span data-stu-id="420f6-111">String</span></span>| <span data-ttu-id="420f6-112">由 [groupSettingTemplate](groupsettingtemplate.md)) 定义的设置 (的名称。</span><span class="sxs-lookup"><span data-stu-id="420f6-112">Name of the setting (as defined by the [groupSettingTemplate](groupsettingtemplate.md)).</span></span> |
-|<span data-ttu-id="420f6-113">value</span><span class="sxs-lookup"><span data-stu-id="420f6-113">value</span></span>|<span data-ttu-id="420f6-114">String</span><span class="sxs-lookup"><span data-stu-id="420f6-114">String</span></span>| <span data-ttu-id="420f6-115">设置的值。</span><span class="sxs-lookup"><span data-stu-id="420f6-115">Value of the setting.</span></span> |
+|<span data-ttu-id="d5f30-110">name</span><span class="sxs-lookup"><span data-stu-id="d5f30-110">name</span></span>|<span data-ttu-id="d5f30-111">字符串</span><span class="sxs-lookup"><span data-stu-id="d5f30-111">String</span></span>| <span data-ttu-id="d5f30-112">[groupSettingTemplate](groupsettingtemplate.md) (定义的设置) 。</span><span class="sxs-lookup"><span data-stu-id="d5f30-112">Name of the setting (as defined by the [groupSettingTemplate](groupsettingtemplate.md)).</span></span> |
+|<span data-ttu-id="d5f30-113">value</span><span class="sxs-lookup"><span data-stu-id="d5f30-113">value</span></span>|<span data-ttu-id="d5f30-114">String</span><span class="sxs-lookup"><span data-stu-id="d5f30-114">String</span></span>| <span data-ttu-id="d5f30-115">设置的值。</span><span class="sxs-lookup"><span data-stu-id="d5f30-115">Value of the setting.</span></span> |
 
-### <a name="json-representation"></a><span data-ttu-id="420f6-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="420f6-116">JSON representation</span></span>
+### <a name="json-representation"></a><span data-ttu-id="d5f30-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d5f30-116">JSON representation</span></span>
 
-<span data-ttu-id="420f6-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="420f6-117">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d5f30-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d5f30-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
