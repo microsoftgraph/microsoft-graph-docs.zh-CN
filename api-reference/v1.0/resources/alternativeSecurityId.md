@@ -3,20 +3,20 @@ title: alternativeSecurityId 资源类型
 description: 仅供内部使用。
 localization_priority: Normal
 author: spunukol
-ms.prod: ''
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 82647c1bcc73444cc70febf53f8bdaf336b84ad4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 33658a93f3a495a13b2300704cb7b677dc380d84
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041692"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547630"
 ---
 # <a name="alternativesecurityid-resource-type"></a>alternativeSecurityId 资源类型
 
 命名空间：microsoft.graph
 
-仅供内部使用。 未来将弃用此复杂类型。
+仅供内部使用。 将来将弃用此复杂类型。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -34,7 +34,7 @@ ms.locfileid: "48041692"
 ```
 
 ## <a name="properties"></a>属性
-| 属性         | 类型       | 说明
+| 属性         | 类型       | 描述
 |:-----------------|:-----------|:---------------------
 | 类型             | Int32      | 仅供内部使用
 | identityProvider | 字符串     | 仅供内部使用

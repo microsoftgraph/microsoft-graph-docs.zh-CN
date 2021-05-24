@@ -42,7 +42,7 @@ ms.locfileid: "52547167"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。|
+|id|字符串| 只读。|
 
 ## <a name="relationships"></a>关系
 无

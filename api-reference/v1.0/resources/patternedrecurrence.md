@@ -19,7 +19,7 @@ ms.locfileid: "52546201"
 定期模式和区域。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |模式|[RecurrencePattern](recurrencepattern.md)|事件发生的频率。|
 |区域|[RecurrenceRange](recurrencerange.md)|事件的持续时间。|

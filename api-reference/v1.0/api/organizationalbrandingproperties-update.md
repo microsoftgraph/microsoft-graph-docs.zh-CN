@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5273869bdfb3837adffeefa4188c37b154603939
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 95bf7425fff3ac48bd74920d7792e56d0d360f82
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298728"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547223"
 ---
 # <a name="update-organizationalbrandingproperties"></a>更新 organizationalBrandingProperties
 
@@ -47,14 +47,14 @@ PUT /organization/{tenant id}/branding/{property name}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|backgroundColor|String|将出现在低带宽连接中的背景图像上的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制表示 (，例如，白色#FFFFFF) 。|
+|backgroundColor|字符串|将出现在低带宽连接中的背景图像上的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制表示 (，例如，白色#FFFFFF) 。|
 |backgroundImage|Stream|显示为登录页背景的图像。 .png或 .jpg不超过 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，提高页面加载性能。|
 |bannerLogo|Stream|显示在登录页上的公司徽标的横幅版本。 .png或.jpg不超过 36x245px。 我们建议使用透明图像，徽标周围没有填充。|
-|signInPageText|String|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
+|signInPageText|字符串|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
 |squareLogo|Stream|公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) ，以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
-|usernameHintText|String|字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
+|usernameHintText|字符串|字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
 
 传入时将忽略 **id** 属性。
 
@@ -125,7 +125,6 @@ HTTP/1.1 204 OK
 下面展示了示例请求。
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties_2"

@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0f9ff0216ed09a71dd8b841ad0f87bdfc1333e02
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 94ceebb51dfe1d43bea7404213ef8fdb56535701
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049399"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579779"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -37,7 +37,7 @@ ms.locfileid: "52049399"
 ```http
 GET /users/{id | userPrincipalName}
 ```
-请注意，当 **userPrincipalName** 以 `$` 字符开头时，请删除 `/users` 后的斜杠 （/），并将 **userPrincipalName** 括在圆括号和单引号中。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#users)。
+请注意，当 **userPrincipalName** 以 `$` 字符开头时，请删除 `/users` 后的斜杠 (/)，并将 **userPrincipalName** 括在圆括号和单引号中。有关详细信息，请参阅“[已知问题](/graph/known-issues#users)”列表。
 
 对于登录用户：
 <!-- { "blockType": "ignored" } -->
@@ -73,14 +73,21 @@ GET /me
 
 默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。 此示例展示了默认请求和响应。 
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_user_1"
+} -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
 ##### <a name="response"></a>响应
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -171,12 +178,19 @@ Content-length: 491
 如果需要其他属性集，可以使用 OData `$select` 查询参数。 例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`
 
 ##### <a name="request"></a>请求
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_user_2"
+} -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
 ##### <a name="response"></a>响应
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

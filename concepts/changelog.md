@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: aa3da767963b70ef33380b84eadf3922eed10614
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 286364bc6e6dd69fc839eafcdfa805578e55d889
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231806"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579457"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -42,7 +42,7 @@ ms.locfileid: "52231806"
 | **更改类型** | **版本** | **说明**                                                                                                                                                                                                                             |
 | :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 添加项        | v1.0        | 已添加 [educationOnPremisesInfo](https://docs.microsoft.com/en-us/graph/api/resources/educationOnPremisesInfo?view=graph-rest-1.0) 资源。                                                                                             |
-| 添加项        | v1.0        | 已将 **grade** 属性添加到[educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0)资源。                                                                                           |
+| 添加项        | v1.0        | 已将 **grade** 属性添加到 [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0)资源。                                                                                           |
 | 添加项        | v1.0        | 将 **externalSourceDetail** 属性添加到 [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) 资源。                                                                            |
 | 添加项        | v1.0        | 已添加 [educationTerm](https://docs.microsoft.com/en-us/graph/api/resources/educationTerm?view=graph-rest-1.0) 资源类型。                                                                                                            |
 | 添加项        | v1.0        | 已添加 **educationUser** 关系添加到 [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) 资源类型。                                                                      |
@@ -1004,6 +1004,11 @@ ms.locfileid: "52231806"
 |添加项|Beta 和 v1.0 |向 [Get workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta&preserve-view=true) 实体添加了[Get workbookOperation](/graph/api/workbookoperation-get) 方法
 
 ## <a name="june-2020"></a>2020 年 6 月
+
+### <a name="security--information-protection-labeling"></a>安全 | 信息保护标签
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 加 | beta 版 | 已将 **parent** 属性添加到 [informationProtectionLabel](graph/api/resources/informationprotectionlabel?view=graph-rest-beta)实体。 |
 
 ### <a name="calendar"></a>日历
 | **更改类型** | **版本**   | **说明**                          |
@@ -2105,8 +2110,8 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | Beta 版本 | 向 [serviceprincipal](/graph/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) 资源添加了 [addPassword](/graph/api/serviceprincipal-addpassword?view=graph-rest-beta&preserve-view=true) 和 [removePassword](/graph/api/serviceprincipal-removepassword?view=graph-rest-beta&preserve-view=true) 方法。 |
 | 添加 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) 实体添加了“onPremisesDomainName”、“onPremisesNetBiosName” 和“onPremisesSamAccountName”属性。 |
 | 添加 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) 资源添加了 **securityIdentifier** 属性。 |
-| 添加 | Beta 和 v1.0 | 向 [device](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) 资源添加了 **mdmAppId** 属性。 |
-| 添加 | Beta 和 v1.0 | 已将 **manufacturer** 和 **model** 属性添加到 [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true) 实体。 |
+| 添加项 | Beta 和 v1.0 | 向 [device](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) 资源添加了 **mdmAppId** 属性。 |
+| 添加项 | Beta 和 v1.0 | 已将 **manufacturer** 和 **model** 属性添加到 [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true) 实体。 |
 | 添加项 | v1.0 | 添加了新的 [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0&preserve-view=true) 资源。 这些联系人由组织管理，不同于[个人联系人](outlook-contacts-concept-overview.md)|
 | 添加项 | v1.0 | 添加了新的 [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0&preserve-view=true) 资源。 |
 | 添加项 | v1.0 | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-1.0&preserve-view=true)。 |
@@ -5362,7 +5367,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | “更改”          | v1.0 和 beta | 将前述“Office 365 数据扩展”重命名为“开放扩展”。 |
-| 添加项        | Beta 版本          | 已添加支持[开放扩展](extensibility-overview.md#open-extensions)的资源： <br/>管理单元<br/>设备<br/>group<br/>组织<br/>用户<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md) |
+| 添加项        | Beta 版本          | 已添加支持[开放扩展](extensibility-overview.md#open-extensions)的资源： <br/>管理单元<br/>设备<br/>group<br/>组织<br/>user<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md) |
 
 ### <a name="identity-and-access"></a>身份和访问
 
@@ -5379,7 +5384,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta 版本        | Microsoft 365 报告引入了新的预览 API。 可用于获取反映企业员工使用 Microsoft 365 服务情况的使用情况报告。 例如，可以发现大量使用服务且即将达到配额的用户，也可以发现可能完全不需要 Microsoft 365 许可证的用户。 有关详细信息，请参阅[报告](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true)。 |
+| 添加项        | Beta 版本        | Microsoft 365 报表引入的新预览 API。可用于获取用户在业务中如何使用 Microsoft 365 服务的使用情况报告。例如，你可以确定大量使用服务并达到配额的用户，或者可能完全不需要 Microsoft 365 许可证的用户。有关详细信息，请参阅[报表](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true)。 |
 
 
 ## <a name="february-2017"></a>2017 年 2 月
@@ -5550,7 +5555,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta 版本        | 现在可以在 Microsoft Graph 测试版终结点中使用邀请管理器 API。 你可以使用邀请管理器 API 来创建一个邀请，以将外部用户添加到组织。 在邀请过程中，还可以选择将受邀用户添加到 Microsoft 365 组中。 有关详细信息，请参阅[邀请管理器](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)。 |
+| 添加项        | Beta 版本        | 现在可以在 Microsoft Graph 测试版终结点中使用邀请管理器 API。你可以使用邀请管理器 API 来创建一个邀请，以将外部用户添加到组织。作为邀请的一部分，还可以选择将受邀用户添加到 Microsoft 365 组中。有关详细信息，请参阅[邀请管理器](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)。 |
 
 ### <a name="files"></a>文件
 
@@ -5622,7 +5627,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | v1.0        | Microsoft Graph 上的 Excel REST API 已公开发布。 现在可以在 Microsoft 365 中使用 Excel 工作簿构建丰富的深入集成。 有关详细信息，请参阅[在 Microsoft Graph 上使用新的 Excel REST API 增强你的应用](https://developer.microsoft.com/office/blogs/power-your-apps-with-the-new-excel-rest-api/)博客文章。 |
+| 添加项        | v1.0        | Microsoft Graph 上的 Excel REST API 已公开发布。现在可以使用 Microsoft 365 中的 Excel 工作簿构建广泛深入的集成。有关详细信息，请参阅[在 Microsoft Graph 上使用新的 Excel REST API 增强你的应用](https://developer.microsoft.com/office/blogs/power-your-apps-with-the-new-excel-rest-api/)博客文章。 |
 
 ### <a name="people-and-workplace-intelligence--people"></a>人员和工作场所智能 | 人员
 
@@ -5664,7 +5669,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
-|重大更改|Beta|针对 findMeetingTimes API 的更改。 有关详细信息，请参阅 [Microsoft Graph findMeetingTimes API 更新](https://developer.microsoft.com/graph/blogs/microsoft-graph-findmeetingtimes-api-update/)博客文章。 此更改于 2016 年 5 月 19 日生效。
+|重大更改|Beta|针对 findMeetingTimes API 的更改。有关详细信息，请参阅 [Microsoft Graph findMeetingTimes API 更新](https://developer.microsoft.com/graph/blogs/microsoft-graph-findmeetingtimes-api-update/)博客文章。此更改于 2016 年 5 月 19 日生效。
 
 ### <a name="personal-contact"></a>个人联系人
 
@@ -5788,8 +5793,8 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta 版本        | 向 **mailFolder** 实体添加了 _wellKnownName_ 和 _userConfigurations_ 属性。 |
 | 添加项        | Beta 版本        | 向 **mailFolder** 实体添加了 _singleValueExtendedProperties_ 和 _multiValueExtendedProperties_ 属性。 |
 | 添加项        | v1.0          | 向 **message** 实体添加了 _mobilePhone_ 属性。            |
-| 添加项        | v1.0 和 beta | 向 **message** 实体添加了 _internetMessageId_ 属性。 由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
-| Change          | Beta 版本          | 将 **message** 实体中的 _mobilePhone1_ 属性重命名为 _mobilePhone_。 |
+| 添加项        | v1.0 和 beta | 已将 _internetMessageId_ 属性添加到 **message** 实体。由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的消息 ID。 |
+| “更改”          | Beta 版本          | 将 **message** 实体中的 _mobilePhone1_ 属性重命名为 _mobilePhone_。 |
 | Change          | Beta 版本          | **message** 实体的 _createReply_ 和 _createReplyAll_ 采用了新参数：_Message_ 和 _comment_。 |
 | Change          | Beta 版本          | **message** 实体的 _createForward_ 采用了新参数：_Message_、_ToRecipients_ 和 _comment_。 |
 | Change          | Beta 版本          | **message** 实体的 _reply_、_replyAll_ 和 _forward_ 采用了新参数 _Message_。 |
@@ -5819,7 +5824,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **终结点** | **说明**                          |
 | :-------------- | :----------- | :--------------------------------------- |
-| 添加项        | v1.0         | Webhook 现已在 v1.0 终结点上正式发布，可通过 _/Subscriptions_ 资源获取。 请创建、读取、续订和删除订阅，以接收 Outlook 和 Microsoft 365 组对话数据的相关通知。 |
+| 添加项        | v1.0         | Webhook 现在已在 v1.0 终结点上普遍可用，可通过 _/Subscriptions_ 资源获取。创建、读取、续订和删除订阅以接收有关 Outlook 和 Microsoft 365 组对话中数据的通知。 |
 
 ### <a name="users"></a>用户
 

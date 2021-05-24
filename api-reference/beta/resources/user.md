@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8b0c1b597fa629b36cf106c84812a35518020adf
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 85ee877646569c33ba07b623fd3f246a5444c21e
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474363"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579287"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -227,7 +227,7 @@ ms.locfileid: "52474363"
 | showInAddressList | Boolean | 如果 Outlook 全局地址列表应包含此用户，则值为 `true`，否则为 `false`。 如果未设置，则将其视为 `true`。 对于通过邀请管理器邀请的用户，此属性将设置为 `false`。 <br><br>仅在 `$select` 上返回。|
 | signInSessionsValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 <br><br>仅在 `$select` 上返回。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
 | skills | String collection | 供用户枚举其技能的列表。 <br><br>仅在 `$select` 上返回。 |
-| signInActivity | [signInActivity](signinactivity.md) | 获取指定用户登录的最后一个登录日期和请求 ID。<br><br>支持 `$filter`，但不支持任何其他的可筛选属性。 <br><br>仅在 `$select` 上返回。 只读。 <br>**注意：** 此属性的详细信息需要 Azure AD Premium P1/P2 许可证才能获取。|
+| signInActivity | [signInActivity](signinactivity.md) | 获取指定用户登录的最后一个登录日期和请求 ID。<br><br>支持 `$filter`，但不支持任何其他的可筛选属性。 <br><br>仅在 `$select` 上返回。 只读。 <br>**注意：** 此属性的详细信息需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。|
 | state | String | 用户地址中的省/市/自治区或省。 最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | streetAddress | String | 用户公司地点的街道地址。 最大长度为 1024 个字符。 <br><br>仅在 `$select` 上返回。|
 | surname | String | 用户的姓氏。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter`。 |

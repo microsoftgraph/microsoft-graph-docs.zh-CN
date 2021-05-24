@@ -3,14 +3,14 @@ title: recurrencePattern 资源类型
 description: '描述了定期事件的重复发生频率。 '
 localization_priority: Normal
 author: harini84
-ms.prod: ''
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fe233f99d80a210ab395e6fa2d1e53454cd8cd91
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: b60abaad3c1558021927a61a01921cb27d7f2761
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291928"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547265"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "50291928"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|事件在相应月份的多少号发生。 如果 **type** 为 `absoluteMonthly` 或 `absoluteYearly`，此为必需属性。 |
 |daysOfWeek|dayOfWeek 集合|事件在星期几（一系列值）发生。 可取值包括：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 <br>如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，且 **daysOfWeek** 指定超过一天，事件遵循相应模式的第一天规则。 <br> 如果 **type** 为 `weekly`、`relativeMonthly` 或 `relativeYearly`，此为必需属性。|
