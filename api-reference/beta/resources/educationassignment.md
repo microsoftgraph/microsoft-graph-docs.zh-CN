@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 211ca1b96440144727e8cb9fd0095dd1aa96dcb4
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 0cd6c985c3e50a75272ade3bcc54376990c69f4b
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52118970"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629355"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "52118970"
 
 分配 API 在类命名空间中公开。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -40,32 +40,32 @@ ms.locfileid: "52118970"
 |[附加度分](../api/educationassignment-put-rubric.md)|无|将现有 **educationRubric** 附加到此作业。|
 |[删除 rubric](../api/educationassignment-delete-rubric.md)|无|从此 **作业分离 educationRubric。**|
 |[发布](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|将 **educationAssignment** 对象的状态从草稿更改为已发布。|
-|[获取已弃 (的资源文件夹 URL) ](../api/educationassignment-getresourcesfolderurl.md)| string| 基于OneDrive的资源应放置到其中作为工作分配资源的一部分的文件夹。 文件必须位于此文件夹中，以作为资源添加。|
+|[设置工作分配资源文件夹](../api/educationassignment-setupresourcesfolder.md)| 字符串| 在SharePoint位置 (创建一个) 文件夹以将文件作为分配资源上载|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 只读。|
-|addedStudentAction|字符串|可选字段，用于控制在作业发布后添加的学生的作业行为。 如果未指定，则默认为 `none` value。 当前仅支持两个值： `none` 或 `assignIfOpen` 。|
-|allowLateSubmissions|Boolean| 标识学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性，则默认为 true。 |
-|allowStudentsToAddResourcesToSubmission|Boolean| 标识学生是否可以将自己的资源添加到提交中，或是否只能修改教师添加的资源。 |
+|id|String| 只读。|
+|addedStudentAction|String|可选字段，用于控制在作业发布后添加的学生的作业行为。 如果未指定，则默认为 `none` value。 当前仅支持两个值： `none` 或 `assignIfOpen` 。|
+|allowLateSubmissions|布尔值| 标识学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性，则默认为 true。 |
+|allowStudentsToAddResourcesToSubmission|布尔值| 标识学生是否可以将自己的资源添加到提交中，或是否只能修改教师添加的资源。 |
 |assignDateTime|DateTimeOffset|工作分配应处于活动状态的日期。  如果将来，在此日期之前不会向学生显示作业。  **时间戳类型表示** 使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| 发布作业后，哪些用户或整个类应接收提交对象。 |
 |assignedDateTime|DateTimeOffset|将作业发布到学生时，作业显示在学生时间线上。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|classId|字符串| 此工作分配所属的类。 |
+|classId|String| 此工作分配所属的类。 |
 |closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 这是一个可选字段，如果分配不允许LateSubmissions，或者 closeDateTime 与 dueDateTime 相同，该字段可能为 null。 但如果指定，则 closeDateTime 必须大于或等于 dueDateTime。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |createdBy|[identitySet](identityset.md)| Who创建了工作分配。 |
 |createdDateTime|DateTimeOffset|创建工作分配的时刻。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|displayName|字符串|工作分配的名称。|
+|displayName|String|工作分配的名称。|
 |dueDateTime|DateTimeOffset|学生作业截止日期。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |一个|[educationAssignmentGradeType](educationassignmentgradetype.md)|如何对作业进行评分。 |
 |instructions|[itemBody](itembody.md)| 工作分配的说明。  这一点显示名称告知学生要执行哪些工作。 |
 |lastModifiedBy|[identitySet](identityset.md)| Who上次修改了工作分配。 |
 |lastModifiedDateTime|DateTimeOffset|上次修改工作分配的时刻。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|notificationChannelUrl|字符串|可选字段，用于指定发布 [工作](channel.md) 分配发布通知的通道的 URL。 如果未指定或为空，则默认为 `General` 频道。 此字段仅适用于 **assignTo** 值为 [educationAssignmentClassRecipient 的作业](educationassignmentclassrecipient.md)。 在发布分配后，不允许更新 **notificationChannelUrl。**|
+|notificationChannelUrl|String|可选字段，用于指定发布 [工作](channel.md) 分配发布通知的通道的 URL。 如果未指定或为空，则默认为 `General` 频道。 此字段仅适用于 **assignTo** 值为 [educationAssignmentClassRecipient 的作业](educationassignmentclassrecipient.md)。 在发布分配后，不允许更新 **notificationChannelUrl。**|
 |状态|string| 工作分配 **的状态**。  不能修补此值。  可取值为：`draft`、`scheduled`、`published`、`assigned`。|
 |webUrl|string| 给定分配的深层链接 URL。|
-|resourcesFolderUrl|string| 存储此分配的所有文件资源的文件夹 URL。|
+|resourcesFolderUrl|字符串| 存储此分配的所有文件资源的文件夹 URL。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

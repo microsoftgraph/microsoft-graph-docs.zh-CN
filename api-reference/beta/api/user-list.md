@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2ba361107d022f9835767c57f99c1ce6333878fa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 143f5105e77ecdf635a7c00e0ac10e32a1d40b2d
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054733"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629537"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -186,7 +186,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 **signInActivity** 属性的详细信息需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -257,7 +257,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 **signInActivity** 属性的详细信息需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -319,7 +319,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 **signInActivity** 属性的详细信息需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
 
 <!-- {
   "blockType": "ignored",

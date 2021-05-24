@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6079c0b23e1cdb9446943e37674344154cbc7355
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fcaed5b3c73039aeac6c1861a8b1ddcd4e5f19d8
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044167"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629180"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "52044167"
 
 更新分配对象。 只有班级中的教师可以这样做。 请注意，你不能使用 PATCH 请求更改工作分配的状态。 使用 [发布](../api/educationassignment-publish.md) 操作可更改工作分配状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -125,7 +125,8 @@ Content-length: 279
   "closeDateTime": "2014-02-11T00:00:00Z",
   "dueDateTime": "2014-02-01T00:00:00Z",
   "assignDateTime": "2014-01-01T00:00:00Z",
-  "assignedDateTime": "2014-01-01T00:00:00Z"
+  "assignedDateTime": "2014-01-01T00:00:00Z",
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
 }
 ```
 

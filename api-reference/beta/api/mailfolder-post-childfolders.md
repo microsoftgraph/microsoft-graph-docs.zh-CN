@@ -1,18 +1,18 @@
 ---
-title: Create mailFolder
+title: 创建子文件夹
 description: 使用此 API 创建新的子 mailFolder。
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8d79b9817332c7aea773ad9062efd3a4718dd197
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 312d26d32b49c9ccc14e6f83a4c1cb6392cdd8b5
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049252"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629173"
 ---
-# <a name="create-mailfolder"></a>Create mailFolder
+# <a name="create-child-folder"></a>创建子文件夹
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,9 @@ ms.locfileid: "52049252"
 
 使用此 API 创建新的子 [mailFolder](../resources/mailfolder.md)。
 
-## <a name="permissions"></a>权限
+如果要隐藏新文件夹，必须在创建时将 **isHidden** `true` 属性设置为 。
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,11 +52,12 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供具有以下参数的 JSON 对象。**displayName** 是 [MailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
+在请求正文中，提供具有以下参数的 JSON 对象。 **displayName** 和 **isHidden** 是 [MailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
 |displayName|String|新文件夹的显示名称。|
+|isHidden|布尔值|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，将不能更新此属性。 在"隐藏邮件 [文件夹"中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>响应
 
@@ -79,6 +82,7 @@ Content-length: 159
 
 {
   "displayName": "displayName-value",
+  "isHidden": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -122,7 +126,8 @@ Content-length: 179
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "isHidden": true
 }
 ```
 

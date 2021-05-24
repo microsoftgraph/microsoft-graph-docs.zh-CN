@@ -3,12 +3,12 @@ title: 使用 Microsoft SharePoint生成 web Graph Toolkit
 description: 开始使用 Microsoft Graph Toolkit生成 SharePoint Web 部件。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 4c5443e05a57aade5c09d04f337c6a8bb67584c6
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: c1f4be864c9e762e164980bc20abb4195df5c9f7
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579912"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629131"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>使用 Microsoft SharePoint生成 web Graph Toolkit
 
@@ -70,6 +70,9 @@ public render(): void {
     `;
 }
 ```
+
+>[!NOTE]
+> 如果要使用 web 部件生成 web React，请参阅[@microsoft/mgt-spfx](./mgt-spfx.md#react)文档，了解如何使用 `@microsoft/mgt-react` 。
 
 ## <a name="configure-permissions"></a>配置权限
 

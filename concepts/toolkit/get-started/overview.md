@@ -3,12 +3,12 @@ title: Microsoft Graph Toolkit
 description: 开始在应用程序中Graph Toolkit Microsoft 应用。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: e84350a7835cac7914f5238110f74b3383047e13
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 68260cf83f0e9bec34d2c3b23911d04c53143e76
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579590"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629152"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
 
@@ -104,12 +104,6 @@ Microsoft Graph Toolkit由多个 NPM 包决定，从而仅包含应用程序所�
 <b>@microsoft/mgt-spfx</b>
 
 [`@microsoft/mgt-spfx`](./mgt-spfx.md)该包包含SharePoint 框架解决方案中使用 Microsoft Graph Toolkit所需的SharePoint 框架库。
-
-## <a name="polyfills"></a>Polyfills
-
-如果使用的是 npm 包中的 ES6 模块，并且面向的浏览器（如 [IE11）](https://caniuse.com/#search=components) 在本机不支持 Web 组件，则需要在项目中包含填充，因为它们不会自动包含。 填充有助于填充仍在更新以支持 Web 组件标准的浏览器中缺少的浏览器功能。 有关说明和了解更多信息，请参阅 [填充文档](https://www.webcomponents.org/polyfills)。 
-
-如果你通过 mgt-loader 脚本使用 Toolkit填充已包含在内。
 
 ## <a name="next-steps"></a>后续步骤
 现在，你已准备好开始使用 Microsoft Graph Toolkit！ 以下指南可帮助你入门：

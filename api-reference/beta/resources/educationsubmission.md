@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9450770a78b8effd1ad11717297a7e1ad7e6e874
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: f468e0715a07320233db1224c3fcee62e0c8fe63
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547674"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629439"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "52547674"
 
 如果尚未对 **educationSubmission** 资源调用 [setUpResourcesFolder，](../api/educationsubmission-setupResourcesFolder.md)**则 resourcesFolderUrl** 属性为 `null` 。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -35,7 +35,7 @@ ms.locfileid: "52547674"
 |[列出 submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) 集合| 获取 **educationSubmissionResource** 对象集合。|
 |[列出结果](../api/educationsubmission-list-outcomes.md) |[educationOutcome](educationoutcome.md) 集合| 获取 **educationOutcome** 对象集合。|
 |[return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|教师使用返回来指示可以向学生显示成绩/反馈。|
-|[setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | 触发创建 SharePoint 资源文件夹，其中应针对给定提交 (Word、Excel 等) 所有基于文件的资源。 |
+|[设置提交特定资源文件夹](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | 在SharePoint位置 (创建一个) 文件夹，以将文件作为提交资源上载。 |
 |[提交](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|学生使用 submit 提交提交作业。 这会将资源复制到 **submittedResources** 文件夹中进行评分并更新状态。|
 |[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|学生使用取消提交将提交状态从提交后移回工作。 这会将资源复制到 **workingResources** 文件夹中进行评分并更新状态。|
 
@@ -43,8 +43,6 @@ ms.locfileid: "52547674"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who分配此提交。|
-|releasedBy (已弃) |[identitySet](identityset.md)|将此提交的状态移至已发布的用户。|
-|releasedDateTime (弃用) |DateTimeOffset|发布提交的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |returnedBy|[identitySet](identityset.md)|将此提交的状态移至已返回的用户。|
 |returnedDateTime|DateTimeOffset|提交返回的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |resourcesFolderUrl|String|需要存储此提交的所有文件资源的文件夹。|

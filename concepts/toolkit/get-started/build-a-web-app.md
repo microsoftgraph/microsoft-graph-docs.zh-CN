@@ -3,12 +3,12 @@ title: 使用 Microsoft 网站生成 web Graph Toolkit
 description: 开始使用 Microsoft Graph Toolkit 构建 Web Graph Toolkit。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 5eed45974428a2c6daf47d02144741d937e12c91
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: eef2bb9644fdd7da95ccce5da2b6802f4e893573
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579898"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629495"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>使用 Microsoft 网站生成 web Graph Toolkit
 
@@ -37,9 +37,6 @@ npm install @microsoft/mgt
 ```
 
 ---
-
-
-> **注意**：如果你面向的浏览器（如 IE11）在本机不支持 Web 组件，可能需要包含 [填充](./overview.md#polyfills)。
 
 ## <a name="initialize-the-msal-20-provider"></a>初始化 MSAL 2.0 提供程序
 Microsoft Graph Toolkit提供程序支持对组件的 Microsoft Graph进行身份验证和访问。 若要了解更多信息，请参阅 [使用提供程序](../providers/providers.md)。 [MSAL 2.0 提供程序](../providers/msal2.md)使用 msal-browser 登录用户并获取令牌。 可以在 HTML 或 JavaScript 中初始化此提供程序。

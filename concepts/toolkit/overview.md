@@ -3,12 +3,12 @@ title: Microsoft Graph Toolkit：Microsoft Graph 的 UI 组件和身份验证提
 description: Microsoft Graph Toolkit是一组身份验证提供程序和可重用的、与框架无关的 Web 组件，用于访问和使用 Microsoft Graph。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: e39eba8c79d2aae3d1ce048a21d2d0a911aed089
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 3b9dd368f9fe565164f3025c1f3de81645ad22df
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579765"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629159"
 ---
 # <a name="microsoft-graph-toolkit-ui-components-and-authentication-providers-for-microsoft-graph"></a>Microsoft Graph Toolkit：Microsoft Graph 的 UI 组件和身份验证提供程序 
 
@@ -34,12 +34,14 @@ Microsoft Graph Toolkit包括一组 Web 组件，用于由 Microsoft Graph API �
 |[人员](./components/person.md)|按照片、姓名和/或电子邮件地址显示个人或联系人。|
 |[人员](./components/people.md)|按照片或缩写显示一组人员或联系人。|
 |[议程](./components/agenda.md)|显示用户或组的日历中的事件。|
-|[Tasks](./components/tasks.md)|显示并启用添加、删除、完成或编辑 Microsoft Planner 或 微软待办。|
 |[人员选取器](./components/people-picker.md)|提供搜索人员并呈现结果列表的能力。|
 |[个人卡片](./components/person-card.md)|在人员组件上用于显示有关用户的更多个人资料信息的飞出图。|
+|[文件](./components/file.md)|表示包含图标、文件名、作者等的文件或文件夹。|
+|[文件列表](./components/file-list.md)|显示多个文件或文件夹的列表。|
 |[获取](./components/get.md)|直接在 HTML 中对任意 Microsoft Graph API 进行 GET 查询。|
 |[通道选取器](./components/teams-channel-picker.md)|提供搜索特定Microsoft Teams以从呈现的结果列表中选择通道的能力。|
 |[待办事项](./components/todo.md)|显示并启用在任务中添加、删除、完成或编辑任务微软待办。|
+|[Tasks](./components/tasks.md)|显示并启用添加、删除、完成或编辑 Microsoft Planner 或 微软待办。|
 
 ### <a name="providers"></a>提供程序
 

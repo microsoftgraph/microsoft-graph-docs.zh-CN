@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7f05f70ae9faa6bab0ec0e7d122e4b1c443a8f5c
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 7ce778093689d07522408954ea5b0423aea94168
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753905"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629502"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
@@ -57,10 +57,12 @@ GET /me/mailFolders/drafts
 
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
+|[List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) 集合|获取指定用户的邮箱中所有的邮件文件夹，包括任何邮件搜索文件夹。|
 |[获取 mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |读取 mailFolder 对象的属性和关系。|
-|[创建 MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| 通过发布到 childFolder 集合，在当前 mailFolder 下新建 mailFolder。|
+|[Create mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| 在用户邮箱的根文件夹中创建新的邮件文件夹。|
 |[列出 childFolder](../api/mailfolder-list-childfolders.md) |[mailFolder](mailfolder.md) 集合| 获取指定文件夹下的文件夹集合。你可以使用 `.../me/MailFolders` 快捷方式获取顶级文件夹集合并导航到其他文件夹。|
-|[创建邮件](../api/mailfolder-post-messages.md) |[邮件](message.md)| 通过发布到邮件集合，在当前 mailFolder 中新建邮件。|
+|[创建 childFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| 通过发布到 childFolder 集合，在当前 mailFolder 下新建 mailFolder。|
+|[创建邮件](../api/mailfolder-post-messages.md) |[message](message.md)| 通过发布到邮件集合，在当前 mailFolder 中新建邮件。|
 |[列出邮件](../api/mailfolder-list-messages.md) |[message](message.md) 集合| 获取已登录用户邮箱中的所有邮件或邮箱的指定文件夹中的邮件。|
 |[更新](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|更新指定的 mailFolder 对象。 |
 |[删除](../api/mailfolder-delete.md) | 无 |删除指定的 mailFolder 对象。 |
@@ -80,11 +82,11 @@ GET /me/mailFolders/drafts
 |childFolderCount|Int32|当前 mailFolder 中的直接子 mailFolder 数量。|
 |displayName|String|mailFolder 的显示名称。|
 |id|String|MailFolder 的唯一标识符。|
-|isHidden|Boolean|指示 mailFolder 是否隐藏。 此属性只能在创建文件夹时设置。 在"隐藏"邮件 [文件夹中查找更多信息](#hidden-mail-folders)。|
+|isHidden|布尔值|指示 mailFolder 是否隐藏。 此属性只能在创建文件夹时设置。 在隐藏的邮件 [文件夹中查找详细信息](#hidden-mail-folders)。|
 |parentFolderId|String|MailFolder 的父 mailFolder 的唯一标识符。|
 |totalItemCount|Int32|邮箱中项的数量|
 |unreadItemCount|Int32|mailFolder 中标记为未读的项的数量。|
-|wellKnownName|String|文件夹的已知文件夹名称。 以上列出了可能的值。 此属性仅为 Outlook 创建的默认文件夹设置。 对于其他文件夹，此属性为 **null。**|
+|wellKnownName|String|文件夹的已知文件夹名称。 上面列出了可能的值。 此属性仅为由用户创建的默认文件夹Outlook。 对于其他文件夹，此属性为 **null**。|
 
 **有效的访问项计数**
 
@@ -98,11 +100,11 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 Outlook 中的邮件文件夹可包含多个类型的项，例如，收件箱可以包含不同于邮件项的会议请求项。 `TotalItemCount` 和 `UnreadItemCount`包括邮件文件夹中的项，无论其项类型如何。
 
 ### <a name="hidden-mail-folders"></a>隐藏的邮件文件夹
-该属性的 `isHidden` 默认值为 `false` 。 创建 [mailFolder](../api/user-post-mailfolders.md)时，只能设置 **isHidden** 一次。 不能使用 PATCH 操作更新属性。 若要更改 **文件夹的 isHidden** 属性，请删除现有文件夹并创建具有所需值的新文件夹。
+属性的默认值为 `isHidden` `false` 。 创建 mailFolder 时，只能设置[一次 isHidden。](../api/user-post-mailfolders.md)  不能使用 PATCH 操作更新属性。 若要更改 **文件夹的 isHidden** 属性，请删除现有文件夹，并创建具有所需值的新文件夹。
 
-隐藏的邮件文件夹支持常规邮件文件夹支持的所有操作。
+隐藏邮件文件夹支持常规邮件文件夹支持的所有操作。
 
-默认情况下， [列出 mailFolders](../api/user-list-mailfolders.md) 仅返回未隐藏的邮件文件夹。 若要在响应中包括隐藏的邮件文件夹，请使用查询参数 `includeHiddenFolders=true` 。 然后使用 **isHidden** 属性标识邮件文件夹是否隐藏。 
+默认情况下， [列出 mailFolders](../api/user-list-mailfolders.md) 仅返回未隐藏的邮件文件夹。 若要在响应中包括隐藏的邮件文件夹，请使用查询参数 `includeHiddenFolders=true` 。 然后使用 **isHidden** 属性确定邮件文件夹是否隐藏。 
 
 ## <a name="relationships"></a>关系
 

@@ -3,12 +3,12 @@ title: Microsoft 服务中的文件列表Graph Toolkit
 description: 文件列表组件用于通过显示文件图标和名称来显示文件列表
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 77eb93bc17d9c684ac61fc6a7dc2f263e406bba8
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: bde548e843170de6cd1234f14096339859d4b99b
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579805"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629166"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件列表Graph Toolkit
 
@@ -71,6 +71,11 @@ ms.locfileid: "52579805"
 <mgt-file-list insight-type="shared"></mgt-file-list>
 ```
 
+## <a name="methods"></a>Methods
+| 方法 | 说明 |
+| --- | --- |
+| reload (clearCache = false)  | 调用 方法，根据组件的属性使用潜在的新数据重新加载组件。 传递 `true` 以在重新加载之前清除缓存。 |
+
 ## <a name="css-custom-properties"></a>CSS 自定义属性
 
 组件 `mgt-file-list` 定义以下 CSS 自定义属性。
@@ -109,7 +114,7 @@ mgt-file-list {
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>Microsoft Graph API 和权限
 
-| 配置 | 权限 | API |
+| 配置 | Permissions | API |
 | ------------- | ----------------- | --- |
 | 默认 (未提供标识符或)  | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root/children`   |
 | 提供 `{drive-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |

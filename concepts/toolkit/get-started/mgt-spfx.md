@@ -3,12 +3,12 @@ title: SharePoint 框架 Microsoft Graph Toolkit
 description: 使用 SharePoint 框架 Microsoft Graph Toolkit 库在解决方案Graph Toolkit Microsoft SharePoint 框架 Microsoft。
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 17a6e899003dec34a6dac41daaeba7e2c0e3fba1
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 5868f9fd523055d50f985f2fc8c8840563d56b28
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579812"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629488"
 ---
 # <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>SharePoint 框架 Microsoft Graph Toolkit
 
@@ -67,15 +67,8 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 
   public render(): void {
     this.domElement.innerHTML = `
-      <div class="${styles.mgtNoFramework}">
-        <div class="${styles.container}">
-          <div class="${styles.row}">
-            <div class="${styles.column}">
-              <span class="${styles.title}">No framework webpart</span>
-              <mgt-person person-query="me" show-name show-email></mgt-person>
-            </div>
-          </div>
-        </div>
+      <div>
+        <mgt-person person-query="me"></mgt-person>
       </div>`;
   }
 
@@ -83,10 +76,13 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 }
 ```
 
-如果使用 Web 部件生成 web React，请从包中加载 `@microsoft/mgt-react` 组件：
+### <a name="react"></a>React
+
+如果正在使用 Web 部件生成 web React，可以使用 `@microsoft/mgt-react` 包。 但是，请确保从路径导入React组件 `@microsoft/mgt-react/dist/es6/spfx` 。 这将确保你的解决方案将仅使用 Microsoft Graph Toolkit已在页面上注册的组件，而不是实例化自己的组件。
 
 ```tsx
-import { Person } from '@microsoft/mgt-react';
+import { Person } from '@microsoft/mgt-react/dist/es6/spfx';
+import { ViewType } from '@microsoft/mgt-spfx';
 
 // [...] trimmed for brevity
 
@@ -94,12 +90,19 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
   public render(): React.ReactElement<IMgtReactProps> {
     return (
       <div className={ styles.mgtReact }>
-        <Person personQuery="me" />
+        <Person personQuery="me" view={ViewType.image}></Person>
       </div>
     );
   }
 }
 ```
+
+>[!IMPORTANT]
+> 请确保解决方案Graph Toolkit导入的所有 Microsoft 网站都来自：
+> * `@microsoft/mgt-spfx` 或 
+> * `@microsoft/mgt-react/dist/es6/spfx`
+> 
+> 不要从任何其他 Microsoft Graph Toolkit程序包 () ，以免打包自己的工具包副本并与其他 `@microsoft/mgt-*` 共享库。
 
 ## <a name="see-also"></a>另请参阅
 
