@@ -1,16 +1,16 @@
 ---
 title: 消息：replyAll
-description: '通过指定注释和修改任何可更新属性答复邮件的所有收件人 '
+description: 使用 JSON 或 MIME 格式答复邮件的所有收件人。
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c2651d56b65d73548f30cc442f1a66500d5e956
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 723aa43863e7da80b7be87c92b6f553463f28e86
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131137"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645358"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 
@@ -18,19 +18,22 @@ ms.locfileid: "50131137"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过指定注释并修改回复的任何可更新属性，全部通过 **replyAll** 方法答复邮件的所有收件人。 然后邮件保存在已发送邮件文件夹中。
+使用 JSON 或 MIME [格式](../resources/message.md) 答复邮件的所有收件人。
 
-或者， [您可以先创建](../api/message-createreplyall.md) 草稿全部答复邮件以包含注释或更新任何邮件属性，然后 [发送](../api/message-send.md) 答复。
+使用 JSON 格式时：
+- 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
+- 如果原始邮件在 **replyTo** 属性中指定收件人，则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，将答复发送给 **replyTo** 中的收件人，而不是 **from** 属性中的收件人。
 
-**注意**
+使用 MIME 格式时：
+- 在请求正文中提供适用的 [Internet](https://tools.ietf.org/html/rfc2076) 邮件头和 [MIME](https://tools.ietf.org/html/rfc2045)内容，这些内容均以 **base64** 格式进行编码。
+- 将任何附件和 S/MIME 属性添加到 MIME 内容。
 
-- 可以指定参数的注释 **或 body** `message` 属性。 指定两者将返回 HTTP 400 错误请求错误。
-- 如果在原始邮件中指定了 **replyTo** 属性，则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，您应将答复发送给  
-**replyTo** 和 **toRecipients** 属性，而不是 **from** 和 **toRecipients 属性中的** 收件人。 
+此方法将邮件保存在"已发送 **的项目"** 文件夹中。
 
+或者， [创建一个草稿以全部答复邮件](../api/message-createreplyall.md)， [并稍后](../api/message-send.md) 发送。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -49,23 +52,28 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
+| Authorization  | string  | Bearer {token}。 必需|
+| Content-Type | string  | 实体正文中的数据性质。 必需 <br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
+使用 JSON 格式时，请提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[邮件](../resources/message.md)|回复邮件中要更新的任何可写属性。|
+|message|[message](../resources/message.md)|回复邮件中要更新的任何可写属性。|
+
+指定 MIME 格式的正文时，请提供 MIME 内容以及适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。 此方法将原始邮件的发件人及所有收件人加载为新邮件的收件人。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-下面的示例包括注释，并将附件添加到全部答复邮件。
+如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息："MIME 内容的 `400 Bad request` base64 字符串无效"。
+
+## <a name="examples"></a>示例
+### <a name="example-1-reply-all-to-a-message-in-json-format"></a>示例 1：以 JSON 格式全部答复邮件
+以下示例包含注释并将附件添加到全部答复邮件。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -109,16 +117,63 @@ Content-Type: application/json
 
 ---
 
-
-
 ##### <a name="response"></a>响应
 下面是一个响应示例。
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
+```
+
+### <a name="example-2-reply-all-to-a-message-in-mime-format"></a>示例 2：以 MIME 格式全部答复邮件
+##### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "message_replyAll_mime_beta"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/replyAll
+Content-Type: text/plain
+
+RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
+Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
+bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM...
+
+```
+
+##### <a name="response"></a>响应
+下面是一个响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
+如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息。
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

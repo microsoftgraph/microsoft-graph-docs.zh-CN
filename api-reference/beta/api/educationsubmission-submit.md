@@ -1,31 +1,31 @@
 ---
-title: educationSubmission：提交
-description: 指示学生完成工作并准备好在工作分配中进行准备的操作。 仅学生可以执行此操作。
+title: educationSubmission： submit
+description: 指示学生已完成工作并准备好处理作业的操作。 此操作仅能由学生执行。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ec189864580439114df3f0ed0b1cd05b94e13c70
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b6a7752ed51052adc1cf1420ec566c0ec2fbafac
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955469"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645400"
 ---
-# <a name="educationsubmission-submit"></a>educationSubmission：提交
+# <a name="educationsubmission-submit"></a>educationSubmission： submit
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示学生完成工作并准备好在工作分配中进行准备的操作。 仅学生可以执行此操作。 这会将提交状态从 "正在运行" 更改为 "已提交"。 在提交过程中，所有资源都将复制到 submittedResources 存储桶中。 教师将在 "已提交的资源" 列表中查找评分。
+指示学生已完成工作并准备好处理作业的操作。 此操作仅能由学生执行。 这会将提交状态从"正在工作"更改为"已提交"。 在提交过程中，所有资源都将复制到 **submittedResources** 存储桶。 教师将查看提交的资源列表进行评分。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -33,8 +33,8 @@ ms.locfileid: "48955469"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
-
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|

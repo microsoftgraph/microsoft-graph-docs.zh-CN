@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c4184eac40d134e77ce08d1b7ae1f8aadb3bce8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cbc631ddb0649bb07676cf31b3ede56653726b71
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055965"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629474"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -111,7 +111,8 @@ Content-type: application/json
   "parentFolderId": "AAMkAGVmMDEzI",
   "childFolderCount": 2,
   "unreadItemCount": 59,
-  "totalItemCount": 60
+  "totalItemCount": 60,
+  "isHidden": false
 }
 ```
 
@@ -175,6 +176,7 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 6,
   "totalItemCount": 6,
+  "isHidden": false,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [

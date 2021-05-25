@@ -1399,7 +1399,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -4631,22 +4631,22 @@ items:
                 href: api/mailfolder-update.md
               - name: 删除邮件文件夹
                 href: api/mailfolder-delete.md
-              - name: 获取邮件文件夹 Delta
-                href: api/mailfolder-delta.md
               - name: 复制邮件文件夹
                 href: api/mailfolder-copy.md
-              - name: 移动邮件文件夹
-                href: api/mailfolder-move.md
-              - name: 列出文件夹中的邮件
-                href: api/mailfolder-list-messages.md
+              - name: 创建子文件夹
+                href: api/mailfolder-post-childfolders.md
               - name: 在文件夹中创建邮件
                 href: api/mailfolder-post-messages.md
+              - name: 获取邮件文件夹 Delta
+                href: api/mailfolder-delta.md
               - name: 获取邮件 Delta
                 href: api/message-delta.md
               - name: 列出子文件夹
                 href: api/mailfolder-list-childfolders.md
-              - name: 创建邮件子文件夹
-                href: api/mailfolder-post-childfolders.md
+              - name: 列出文件夹中的邮件
+                href: api/mailfolder-list-messages.md
+              - name: 移动邮件文件夹
+                href: api/mailfolder-move.md
           - name: 邮件搜索文件夹
             href: resources/mailsearchfolder.md
             items:

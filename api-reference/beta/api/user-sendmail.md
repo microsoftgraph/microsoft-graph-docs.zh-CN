@@ -1,16 +1,16 @@
 ---
 title: 发送邮件
-description: 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
+description: 使用 JSON 或 MIME 格式发送请求正文中指定的邮件。
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1d3c8592007b98a5f5e225447a7fe163c95275c6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5ee3bc0682f6611a06cb5e24e66b2c665a0be123
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134972"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645638"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -18,16 +18,20 @@ ms.locfileid: "50134972"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
+使用 JSON 或 MIME 格式发送请求正文中指定的邮件。
 
-在同一 **个 sendMail** 操作调用中，您可以：
+使用 JSON 格式时，可以[包括附件并使用](../resources/attachment.md)[提及](../resources/mention.md)功能在新邮件中呼叫其他用户。
 
-- 包括 [附件](../resources/attachment.md)
-- 使用 [提及](../resources/mention.md) 功能在新邮件中呼叫其他用户
+使用 MIME 格式时：
+- 在请求正文中提供适用的 [Internet](https://tools.ietf.org/html/rfc2076) 邮件头和 [MIME](https://tools.ietf.org/html/rfc2045)内容，这些内容均以 **base64** 格式进行编码。
+- 将任何附件和 S/MIME 属性添加到 MIME 内容。
+
+此方法将邮件保存在"已发送 **的项目"** 文件夹中。
+
+或者， [创建草稿邮件以](../api/user-post-messages.md) 稍后发送。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
-
+若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,33 +45,38 @@ ms.locfileid: "50134972"
 POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
+
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| 名称       | 类型 | 说明| 
+|:---------------|:--------|:----------
+| Authorization  | string  | Bearer {token}。必需。|
+| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
+使用 JSON 格式时，请提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |邮件|[Message](../resources/message.md)|要发送的邮件。必需。|
 |SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。|
 
-如果要使用 **提及功能** 在新邮件中呼叫其他用户：
+若要使用 **提及** 功能在新邮件中呼叫其他用户，请执行以下操作：
+- 在请求 **正文中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。
+- 对于 **mentions** 属性中的每个提及，必须指定 **提及的** 属性。
 
-- 在请求正文 **中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。
-- 对于提及属性中的 **每个** 提及，必须指定 **提及的** 属性。
+指定 MIME 格式的正文时，在请求正文中将 MIME 内容作为 **base64** 编码的字符串提供。 不包括参数。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
+如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息："MIME 内容的 `400 Bad request` base64 字符串无效"。
+
+## <a name="examples"></a>示例
+### <a name="example-1-send-a-new-email-using-json-format"></a>示例 1：使用 JSON 格式发送新电子邮件
 下面是一个如何调用此 API 的示例。
-##### <a name="request-1"></a>请求 1
-下面是一个立即创建和发送邮件的请求示例。
+#### <a name="request"></a>请求
+下面是一个请求立即创建和发送邮件的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -122,8 +131,7 @@ Content-length: 512
 
 ---
 
-
-##### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
@@ -133,9 +141,9 @@ Content-length: 512
 HTTP/1.1 202 Accepted
 ```
 
-
-##### <a name="request-2"></a>请求 2
-下一个示例显示登录用户向 Samantha 一封邮件。 邮件还包括另一个用户 Dana Swope 的提及内容。
+### <a name="example-2-send-a-message-that-includes-an--mention"></a>示例 2：发送包含 @-mention 的邮件
+#### <a name="request"></a>请求
+下一个示例显示已登录用户向 Samantha 的一条消息。 邮件还包括另一个用户 Dana Swope 的提及。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -169,6 +177,7 @@ Content-length: 344
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-mentions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -187,8 +196,7 @@ Content-length: 344
 
 ---
 
-
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
@@ -198,14 +206,16 @@ Content-length: 344
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-3"></a>请求 3
-以下示例将创建一个带 Internet 消息标头的消息并进行发送。
+### <a name="example-3-send-a-message-that-includes-custom-internet-message-headers"></a>示例 3：发送包含自定义 Internet 邮件头的邮件 
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
@@ -237,6 +247,7 @@ Content-type: application/json
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -255,8 +266,7 @@ Content-type: application/json
 
 ---
 
-
-##### <a name="response-3"></a>响应 3
+#### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
@@ -266,10 +276,8 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-4"></a>请求 4
-
-下一个示例将创建包含文件附件的邮件并发送该邮件。
-
+### <a name="example-4-sends-a-message-with-a-file-attachment"></a>示例 4：发送包含文件附件的邮件
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -325,9 +333,10 @@ Content-type: application/json
 ---
 
 
-##### <a name="response-4"></a>响应 4
+#### <a name="response"></a>响应
 
 下面是一个响应示例。
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -335,6 +344,54 @@ Content-type: application/json
 
 ```http
 HTTP/1.1 202 Accepted
+```
+### <a name="example-5-send-a-new-message-using-mime-format"></a>示例 5：使用 MIME 格式发送新邮件
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "message_send_mime_beta"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/sendMail
+Content-type: text/plain
+
+RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
+Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
+bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM6IEludGVybmFsIFJlc3VtZSBTdWJtaXNzaW9uOiBT
+YWxlcyBBc3NvY2lhdGUKVGhyZWFkLUluZGV4OiBjb2RlY29kZWNvZGVoZXJlaGVyZWhlcmUKRGF0
+ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCArMDAwMApNZXNzYWdlLUlEOgoJPE1XSFBSMTMw
+MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
+cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
+OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
+```
+#### <a name="response"></a>响应
+下面是一个响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
+如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息。
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -350,5 +407,3 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
-
-

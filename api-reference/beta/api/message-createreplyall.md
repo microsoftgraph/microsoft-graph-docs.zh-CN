@@ -1,16 +1,16 @@
 ---
 title: 'message: createReplyAll'
-description: '创建全部答复邮件的草稿以包含注释或更新任何邮件属性， '
+description: 创建草稿以 JSON 或 MIME 格式答复邮件的所有收件人
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ac0e9047933d51773601d64aff8970758f36a171
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9eac6d007e77d6e4e840299d8ac50530dd3172b3
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052157"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645575"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -18,17 +18,23 @@ ms.locfileid: "52052157"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建回复全部邮件草稿以全部在一个 createReplyAll 调用中添加注释或更新任意邮件属性。然后，你可以更新或发送草稿。
+创建一个草稿以 JSON 或 MIME[](../resources/message.md)格式答复邮件的发件人和所有收件人。
 
-**注意**
+使用 JSON 格式时：
+- 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
+- 如果原始邮件在 **replyTo** 属性中指定收件人，则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，您应将答复发送给 **replyTo** 和 **toRecipients** 属性中的收件人，而不是 **from** 和 **toRecipients** 属性中的收件人。 
+- 您可以 [稍后](../api/message-update.md) 更新草稿邮件。
 
-- 可以指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
-- 如果在原始邮件中指定了 **replyTo** 属性，则根据 [RFC 2822](https://www.rfc-editor.org/info/rfc2822) (Internet 邮件格式) ，您应将答复发送给  
-**replyTo** 和 **toRecipients** 属性，而不是 **from** 和 **toRecipients 属性中的** 收件人。 
+使用 MIME 格式时：
+- 在请求正文中提供适用的 [Internet](https://tools.ietf.org/html/rfc2076) 邮件头和 [MIME](https://tools.ietf.org/html/rfc2045)内容，这些内容均以 **base64** 格式进行编码。
+- 将任何附件和 S/MIME 属性添加到 MIME 内容。
 
+[在](../api/message-send.md) 后续操作中发送草稿邮件。
+
+或者， [在单个操作中全部](../api/message-replyall.md) 答复邮件。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -45,24 +51,29 @@ POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| 名称       | 类型 | 说明| 
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
+| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
+使用 JSON 格式时，请提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |message|[message](../resources/message.md)|在全部答复邮件中要更新的任何可写属性。|
 
+指定 MIME 格式的正文时，请提供 MIME 内容以及适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。
+
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
-## <a name="example"></a>示例
+如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息："MIME 内容的 `400 Bad request` base64 字符串无效"。
+
+## <a name="examples"></a>示例
+### <a name="example-1-create-a-draft-in-json-format-to-reply-all-to-an-existing-message"></a>示例 1：创建 JSON 格式的草稿以全部答复现有邮件
 以下示例创建一个草稿以全部答复，并将附件和注释全部添加到一个 **createReplyAll** 调用中。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -109,7 +120,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -150,6 +161,105 @@ Content-type: application/json
       }
     }
   ]
+}
+```
+
+### <a name="example-2-create-a-draft-using-mime-format-to-reply-all-to-an-existing-message"></a>示例 2：使用 MIME 格式创建草稿以全部答复现有邮件
+<!-- {
+  "blockType": "request",
+  "name": "message_createreplyall_mime_beta"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/createReplyAll
+Content-Type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('0aaa0aa0-0000-0a00-a00a-0000009000a0')/messages/$entity",
+    "@odata.etag": "W/\"AAAAAAAAAAAa00AAAa0aAaAa0a0AAAaAAAAaAa0a\"",
+    "id": "AAMkADA1MTAAAAqldOAAA=",
+    "createdDateTime": "2021-04-23T18:13:44Z",
+    "lastModifiedDateTime": "2021-04-23T18:13:44Z",
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA",
+    "categories": [],
+    "receivedDateTime": "2021-04-23T18:13:44Z",
+    "sentDateTime": "2021-02-28T07:15:00Z",
+    "hasAttachments": false,
+    "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
+    "subject": "Internal Resume Submission: Sales Associate",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here...",
+    "importance": "normal",
+    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
+    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
+    "conversationIndex": "Adfsdfsdfsdfw==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": true,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWAvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here... Regards,Alex"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Megan Bowen",
+                "address": "MeganB@contoso.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}
+
+```
+
+如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息。
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
 }
 ```
 

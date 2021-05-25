@@ -5,19 +5,22 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d858db1fb120a29a6ebbffe1d4138498abe43e7c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a60f7166337933a3ee8897f9817c6adb148bd05c
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053767"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629397"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
 命名空间：microsoft.graph
 
 使用此 API 在用户邮箱的根文件夹中新建邮件文件夹。
-## <a name="permissions"></a>权限
+
+如果要隐藏新文件夹，必须在创建时将 **isHidden** `true` 属性设置为 。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,18 +42,19 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。**displayName** 是 [MailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
+在请求正文中，提供具有以下参数的 JSON 对象。 **displayName** 和 **isHidden** 是 [mailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|新文件夹的显示名称。|
+|isHidden|布尔值|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，将不能更新此属性。 在"隐藏邮件 [文件夹"中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [MailFolder](../resources/mailfolder.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [mailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -64,7 +68,8 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "Clutter"
+  "displayName": "Clutter",
+  "isHidden": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -86,8 +91,10 @@ Content-length: 159
 ---
 
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面是一个响应示例。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +111,8 @@ Content-length: 179
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",
+  "isHidden": true
 }
 ```
 
