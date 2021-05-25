@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 1c4629b8fcfca5168a1e752a984f3e77e1018dd0
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 942461cde194d187b88bdeb4b246bf42355dba81
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547667"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629453"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -29,6 +29,10 @@ ms.locfileid: "52547667"
 Azure AD 预配服务和其相关属性执行的向[列表](/graph/api/provisioningobjectsummary-list)报告 API 操作的正式发布。 将 API 之前的 Beta 版本与 v1.0 版本对齐。 
 
 ## <a name="may-2021-new-in-preview-only"></a>2021 年 5 月：仅限预览版新增功能
+
+### <a name="education"></a>教育版
+- [创建作业资源文件夹](/graph/api/resources/educationAssignment-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true)，从而将文件以 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 资源的形式上传。 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 上的属性 **resourcesFolderUrl** 指向相同的文件夹位置。
+- [创建提交资源文件夹](/graph/api/resources/educationSubmission-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true)，从而将文件以 [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true) 资源的形式上传。 [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true) 上的属性 **resourcesFolderUrl** 指向相同的文件夹位置。
 
 ### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
 请求最小特权应用程序权限`CloudPC.Read.All`或`CloudPC.ReadWrite.All`以下资源的访问方法：
