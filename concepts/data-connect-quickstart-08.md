@@ -1,0 +1,3 @@
+<!-- markdownlint-disable MD002 MD041 -->
+
+<span data-ttu-id="fb8d1-101">你已完成 Microsoft Graph Data 连接教程。</span><span class="sxs-lookup"><span data-stu-id="fb8d1-101">You've completed the Microsoft Graph Data Connect tutorial.</span></span> <span data-ttu-id="fb8d1-102">现在，你可以开始进一步试验数据连接。</span><span class="sxs-lookup"><span data-stu-id="fb8d1-102">Now you have a starting point to experiment further with Data Connect.</span></span> <span data-ttu-id="fb8d1-103">你可以先查看我们的 [文档](/graph/data-connect-concept-overview)。</span><span class="sxs-lookup"><span data-stu-id="fb8d1-103">You can start by checking out our [documentation](/graph/data-connect-concept-overview).</span></span>
