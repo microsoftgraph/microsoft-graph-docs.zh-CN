@@ -1,0 +1,98 @@
+---
+title: 获取 deviceManagementConfigurationSettingTemplate
+description: 读取 deviceManagementConfigurationSettingTemplate 对象的属性和关系。
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: apiPageType
+ms.openlocfilehash: 0ffa4a5fdaf5c1821f0a34d80e17314725dfeaa6
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665863"
+---
+# <a name="get-devicemanagementconfigurationsettingtemplate"></a><span data-ttu-id="adf02-103">获取 deviceManagementConfigurationSettingTemplate</span><span class="sxs-lookup"><span data-stu-id="adf02-103">Get deviceManagementConfigurationSettingTemplate</span></span>
+
+<span data-ttu-id="adf02-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="adf02-104">Namespace: microsoft.graph</span></span>
+
+> <span data-ttu-id="adf02-105">**重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="adf02-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="adf02-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="adf02-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="adf02-107">读取 [deviceManagementConfigurationSettingTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingtemplate.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="adf02-107">Read properties and relationships of the [deviceManagementConfigurationSettingTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingtemplate.md) object.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="adf02-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="adf02-108">Prerequisites</span></span>
+<span data-ttu-id="adf02-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="adf02-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="adf02-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="adf02-111">Permission type</span></span>|<span data-ttu-id="adf02-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="adf02-112">Permissions (from least to most privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="adf02-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="adf02-113">Delegated (work or school account)</span></span>|<span data-ttu-id="adf02-114">DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="adf02-114">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="adf02-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="adf02-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="adf02-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="adf02-116">Not supported.</span></span>|
+|<span data-ttu-id="adf02-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="adf02-117">Application</span></span>|<span data-ttu-id="adf02-118">DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="adf02-118">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="adf02-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="adf02-119">HTTP Request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /deviceManagement/templateSettings/{deviceManagementConfigurationSettingTemplateId}
+GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}
+```
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="adf02-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="adf02-120">Optional query parameters</span></span>
+<span data-ttu-id="adf02-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="adf02-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="adf02-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="adf02-122">Request headers</span></span>
+|<span data-ttu-id="adf02-123">标头</span><span class="sxs-lookup"><span data-stu-id="adf02-123">Header</span></span>|<span data-ttu-id="adf02-124">值</span><span class="sxs-lookup"><span data-stu-id="adf02-124">Value</span></span>|
+|:---|:---|
+|<span data-ttu-id="adf02-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="adf02-125">Authorization</span></span>|<span data-ttu-id="adf02-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="adf02-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="adf02-127">接受</span><span class="sxs-lookup"><span data-stu-id="adf02-127">Accept</span></span>|<span data-ttu-id="adf02-128">application/json</span><span class="sxs-lookup"><span data-stu-id="adf02-128">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="adf02-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="adf02-129">Request body</span></span>
+<span data-ttu-id="adf02-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="adf02-130">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="adf02-131">响应</span><span class="sxs-lookup"><span data-stu-id="adf02-131">Response</span></span>
+<span data-ttu-id="adf02-132">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [deviceManagementConfigurationSettingTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingtemplate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="adf02-132">If successful, this method returns a `200 OK` response code and [deviceManagementConfigurationSettingTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingtemplate.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="adf02-133">示例</span><span class="sxs-lookup"><span data-stu-id="adf02-133">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="adf02-134">请求</span><span class="sxs-lookup"><span data-stu-id="adf02-134">Request</span></span>
+<span data-ttu-id="adf02-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="adf02-135">Here is an example of the request.</span></span>
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/templateSettings/{deviceManagementConfigurationSettingTemplateId}
+```
+
+### <a name="response"></a><span data-ttu-id="adf02-136">响应</span><span class="sxs-lookup"><span data-stu-id="adf02-136">Response</span></span>
+<span data-ttu-id="adf02-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="adf02-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 884
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingTemplate",
+    "id": "203fd028-d028-203f-28d0-3f2028d03f20",
+    "settingInstanceTemplate": {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingInstanceTemplate",
+      "settingInstanceTemplateId": "Setting Instance Template Id value",
+      "settingDefinitionId": "Setting Definition Id value",
+      "isRequired": true,
+      "simpleSettingValueTemplate": {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
+        "settingValueTemplateId": "Setting Value Template Id value",
+        "defaultValue": {
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+          "constantValue": "Constant Value value"
+        }
+      }
+    }
+  }
+}
+```
+
+
+
+

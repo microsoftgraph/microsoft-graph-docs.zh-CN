@@ -5,53 +5,72 @@ author: abheek-das
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 3883794642723cc5b7df07ad0c1d1f67fc58aed3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 707daff5e3043d10c038343967fa421875132788
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051191"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629523"
 ---
-# <a name="list-mailfolders"></a><span data-ttu-id="0894a-103">列出 mailFolder</span><span class="sxs-lookup"><span data-stu-id="0894a-103">List mailFolders</span></span>
+# <a name="list-mailfolders"></a><span data-ttu-id="51655-103">列出 mailFolder</span><span class="sxs-lookup"><span data-stu-id="51655-103">List mailFolders</span></span>
 
-<span data-ttu-id="0894a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0894a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="51655-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="51655-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0894a-105">直接在已登录用户的根文件夹下获取邮件文件夹集合。</span><span class="sxs-lookup"><span data-stu-id="0894a-105">Get the mail folder collection directly under the root folder of the signed-in user.</span></span> <span data-ttu-id="0894a-106">返回的集合包括直接在根目录下的所有[邮件搜索文件夹](../resources/mailsearchfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="0894a-106">The returned collection includes any [mail search folders](../resources/mailsearchfolder.md) directly under the root.</span></span>
+<span data-ttu-id="51655-105">直接在已登录用户的根文件夹下获取邮件文件夹集合。</span><span class="sxs-lookup"><span data-stu-id="51655-105">Get the mail folder collection directly under the root folder of the signed-in user.</span></span> <span data-ttu-id="51655-106">返回的集合包括直接在根目录下的所有[邮件搜索文件夹](../resources/mailsearchfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="51655-106">The returned collection includes any [mail search folders](../resources/mailsearchfolder.md) directly under the root.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0894a-107">权限</span><span class="sxs-lookup"><span data-stu-id="0894a-107">Permissions</span></span>
-<span data-ttu-id="0894a-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0894a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="51655-107">默认情况下，此操作不会返回隐藏文件夹。</span><span class="sxs-lookup"><span data-stu-id="51655-107">By default, this operation does not return hidden folders.</span></span> <span data-ttu-id="51655-108">使用查询参数 _includeHiddenFolders_，将它们包括在答复中。</span><span class="sxs-lookup"><span data-stu-id="51655-108">Use a query parameter _includeHiddenFolders_ to include them in the response.</span></span>
 
-|<span data-ttu-id="0894a-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="0894a-110">Permission type</span></span>      | <span data-ttu-id="0894a-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0894a-111">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="51655-109">Permissions</span><span class="sxs-lookup"><span data-stu-id="51655-109">Permissions</span></span>
+<span data-ttu-id="51655-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="51655-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="51655-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="51655-112">Permission type</span></span>      | <span data-ttu-id="51655-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="51655-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0894a-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0894a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0894a-113">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0894a-113">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="0894a-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0894a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0894a-115">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0894a-115">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="0894a-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="0894a-116">Application</span></span> | <span data-ttu-id="0894a-117">Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0894a-117">Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="51655-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="51655-114">Delegated (work or school account)</span></span> | <span data-ttu-id="51655-115">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="51655-115">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="51655-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="51655-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51655-117">Mail.ReadBasic、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="51655-117">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="51655-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="51655-118">Application</span></span> | <span data-ttu-id="51655-119">Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="51655-119">Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0894a-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0894a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="51655-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="51655-120">HTTP request</span></span>
+
+<span data-ttu-id="51655-121">若要获取指定用户邮箱内的所有邮件文件夹（隐藏文件夹除外），请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="51655-121">To get all the mail folders in the specified user's mailbox, excluding those that are hidden:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="0894a-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="0894a-119">Optional query parameters</span></span>
-<span data-ttu-id="0894a-120">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="0894a-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="0894a-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="0894a-121">Request headers</span></span>
-| <span data-ttu-id="0894a-122">标头</span><span class="sxs-lookup"><span data-stu-id="0894a-122">Header</span></span>       | <span data-ttu-id="0894a-123">值</span><span class="sxs-lookup"><span data-stu-id="0894a-123">Value</span></span> |
+
+<span data-ttu-id="51655-122">若要在答复中包括 _隐藏的_ 邮件文件夹，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="51655-122">To include _hidden_ mail folders in the response:</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
+```
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="51655-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="51655-123">Optional query parameters</span></span>
+<span data-ttu-id="51655-124">若要返回所有 mailFolder 的列表（包括隐藏的项目，其 **isHidden** 属性为 true），则如 [HTTP 请求](#http-request) 部分所示，在请求 URL 中，将 `includeHiddenFolders` 查询参数指定为 `true`。</span><span class="sxs-lookup"><span data-stu-id="51655-124">To return a list of all mailFolders including those that are hidden (their **isHidden** property is true), in the request URL, specify the `includeHiddenFolders` query parameter as `true`, as shown in the [HTTP request](#http-request) section.</span></span>
+
+<span data-ttu-id="51655-125">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="51655-125">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="51655-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="51655-126">Request headers</span></span>
+| <span data-ttu-id="51655-127">标头</span><span class="sxs-lookup"><span data-stu-id="51655-127">Header</span></span>       | <span data-ttu-id="51655-128">值</span><span class="sxs-lookup"><span data-stu-id="51655-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="0894a-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0894a-124">Authorization</span></span>  | <span data-ttu-id="0894a-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0894a-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="0894a-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0894a-127">Content-Type</span></span>   | <span data-ttu-id="0894a-128">application/json</span><span class="sxs-lookup"><span data-stu-id="0894a-128">application/json</span></span>  |
+| <span data-ttu-id="51655-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="51655-129">Authorization</span></span>  | <span data-ttu-id="51655-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="51655-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="51655-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="51655-132">Content-Type</span></span>   | <span data-ttu-id="51655-133">application/json</span><span class="sxs-lookup"><span data-stu-id="51655-133">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="0894a-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="0894a-129">Request body</span></span>
-<span data-ttu-id="0894a-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="0894a-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="51655-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="51655-134">Request body</span></span>
+<span data-ttu-id="51655-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="51655-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0894a-131">响应</span><span class="sxs-lookup"><span data-stu-id="0894a-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="51655-136">响应</span><span class="sxs-lookup"><span data-stu-id="51655-136">Response</span></span>
 
-<span data-ttu-id="0894a-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailFolder](../resources/mailfolder.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="0894a-132">If successful, this method returns a `200 OK` response code and a collection of [mailFolder](../resources/mailfolder.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="0894a-133">示例</span><span class="sxs-lookup"><span data-stu-id="0894a-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0894a-134">请求</span><span class="sxs-lookup"><span data-stu-id="0894a-134">Request</span></span>
-<span data-ttu-id="0894a-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0894a-135">Here is an example of the request.</span></span>
+<span data-ttu-id="51655-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailFolder](../resources/mailfolder.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="51655-137">If successful, this method returns a `200 OK` response code and a collection of [mailFolder](../resources/mailfolder.md) objects in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="51655-138">示例</span><span class="sxs-lookup"><span data-stu-id="51655-138">Examples</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0894a-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="0894a-136">HTTP</span></span>](#tab/http)
+### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a><span data-ttu-id="51655-139">示例 1：列出已登录用户邮箱中的邮件文件夹</span><span class="sxs-lookup"><span data-stu-id="51655-139">Example 1: List mail folders in the signed-in user's mailbox</span></span>
+
+<span data-ttu-id="51655-140">此示例在答复中包括了 **mailSearchFolder** 对象。</span><span class="sxs-lookup"><span data-stu-id="51655-140">This example includes a **mailSearchFolder** object in the response.</span></span> <span data-ttu-id="51655-141">邮件搜索文件夹是收件箱下的子文件夹，显示名称为"每周摘要"。</span><span class="sxs-lookup"><span data-stu-id="51655-141">The mail search folder is a child folder under the Inbox with the display name "Weekly digests".</span></span>
+
+#### <a name="request"></a><span data-ttu-id="51655-142">请求</span><span class="sxs-lookup"><span data-stu-id="51655-142">Request</span></span>
+<span data-ttu-id="51655-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="51655-143">Here is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="51655-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="51655-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailfolders"
@@ -59,28 +78,28 @@ GET /users/{id | userPrincipalName}/mailFolders
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders
 ```
-# <a name="c"></a>[<span data-ttu-id="0894a-137">C#</span><span class="sxs-lookup"><span data-stu-id="0894a-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="51655-145">C#</span><span class="sxs-lookup"><span data-stu-id="51655-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0894a-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0894a-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="51655-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="51655-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0894a-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0894a-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="51655-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="51655-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0894a-140">Java</span><span class="sxs-lookup"><span data-stu-id="0894a-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="51655-148">Java</span><span class="sxs-lookup"><span data-stu-id="51655-148">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-mailfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="0894a-141">响应</span><span class="sxs-lookup"><span data-stu-id="0894a-141">Response</span></span>
-<span data-ttu-id="0894a-142">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0894a-142">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="51655-149">响应</span><span class="sxs-lookup"><span data-stu-id="51655-149">Response</span></span>
+<span data-ttu-id="51655-150">以下是响应示例，其中包含一个收件箱下的子文件夹 **mailSearchFolder**。</span><span class="sxs-lookup"><span data-stu-id="51655-150">Here is an example of the response which includes a **mailSearchFolder** that is a child folder under the Inbox.</span></span> <span data-ttu-id="51655-151">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="51655-151">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="51655-152">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="51655-152">All of the properties will be returned from an actual call.</span></span>
 
-><span data-ttu-id="0894a-143">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="0894a-143">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="51655-153">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="51655-153">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +120,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBFQAAAA==",
@@ -109,7 +129,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCgAAAA==",
@@ -117,7 +138,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDwAAAA==",
@@ -125,7 +147,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDAAAAA==",
@@ -133,7 +156,20 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 70,
-            "totalItemCount": 71
+            "totalItemCount": 71,
+            "isHidden": false
+        },
+        {
+            "@odata.type": "#microsoft.graph.mailSearchFolder",
+            "id": "AAMkADYRAAAZg1yTAAA=",
+            "displayName": "Weekly digests",
+            "parentFolderId": "AQMkADYAAAIBDAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 4,
+            "totalItemCount": 5,
+            "isHidden": false,
+            "isSupported": true,
+            "filterQuery": "contains(subject, 'weekly digest')"
         },
         {
             "id": "AQMkADYAAAIBGQAAAA==",
@@ -141,7 +177,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCwAAAA==",
@@ -149,7 +186,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCQAAAA==",
@@ -157,7 +195,62 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
+        }
+    ]
+}
+```
+
+### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a><span data-ttu-id="51655-154">示例 2：包含已登录用户邮箱中的隐藏文件夹</span><span class="sxs-lookup"><span data-stu-id="51655-154">Example 2: Include hidden folders in the signed-in user's mailbox</span></span>
+
+<span data-ttu-id="51655-155">下一个示例使用 `includeHiddenFolders` 查询参数获取邮件文件夹列表（包括隐藏的邮件文件夹）。</span><span class="sxs-lookup"><span data-stu-id="51655-155">The next example uses the `includeHiddenFolders` query parameter to get a list of mail folders including hidden mail folders.</span></span> <span data-ttu-id="51655-156">答复包含 **isHidden** 设置为 true 的“待筛选邮件”文件夹。</span><span class="sxs-lookup"><span data-stu-id="51655-156">The response includes the "Clutters" folder that has the **isHidden** set to true.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="51655-157">请求</span><span class="sxs-lookup"><span data-stu-id="51655-157">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_hiddenmailfolders"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
+```
+
+#### <a name="response"></a><span data-ttu-id="51655-158">响应</span><span class="sxs-lookup"><span data-stu-id="51655-158">Response</span></span>
+<span data-ttu-id="51655-159">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="51655-159">Here is an example of the response.</span></span>
+
+><span data-ttu-id="51655-160">**注意：** 为提高可读性，此处显示的答复对象已缩短，并且用户邮箱中不包含所有默认文件夹。</span><span class="sxs-lookup"><span data-stu-id="51655-160">**Note:** The response object shown here is shortened for readability, and doesn't include all the default folders in a user mailbox.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Clutters",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "isHidden": true
+        },
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Conversation History",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "isHidden": false
         }
     ]
 }
@@ -165,7 +258,8 @@ Content-length: 232
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List mailFolders",
   "keywords": "",
@@ -173,5 +267,5 @@ Content-length: 232
   "tocPath": "",
   "suppressions": [
   ]
-}-->
-
+}
+-->
