@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d88c4a2e9bf6aa719e4cde333764fe32a29bf285
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 0f1cd4ca3e1569825bda00a16723801521d1bc08
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574149"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664725"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>在 educationSynchronizationProfile 上恢复同步
 
@@ -18,7 +18,7 @@ ms.locfileid: "50574149"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-恢复租户中特定学校数据 [同步](../resources/educationsynchronizationprofile.md) 配置文件的同步。
+恢复租户中特定学校 [数据同步](../resources/educationsynchronizationprofile.md) 配置文件的同步。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "50574149"
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 |委派 (个人 Microsoft 帐户|不支持。|
-|应用程序|不支持。|
+|应用程序|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

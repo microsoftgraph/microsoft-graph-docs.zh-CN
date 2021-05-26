@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 932e990ca028cee40220fb5e49b0d9353a1c577a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: af10809804f933b9a049ae37dad4aecfa2bf0c9e
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146130"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666231"
 ---
 # <a name="update-userexperienceanalyticsscorehistory"></a>更新 userExperienceAnalyticsScoreHistory
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,6 +55,7 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 |:---|:---|:---|
 |id|String|用户体验分析设备启动过程的唯一标识符。|
 |startupDateTime|DateTimeOffset|用户体验分析设备启动日期时间。|
+|overallScore|Int32|用户体验分析总体分数。 分数范围为 0-100，100 是理想分数。 有效值为 0 至 100|
 |startupScore|Int32|用户体验分析设备启动分数。 分数范围为 0-100，100 是理想分数。|
 |coreBootScore|Int32|用户体验分析设备核心启动分数。 分数范围为 0-100，100 是理想分数。|
 |coreSigninScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
@@ -73,11 +74,12 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyticsScoreHistoryId}
 Content-type: application/json
-Content-length: 266
+Content-length: 289
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
+  "overallScore": 12,
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,
@@ -91,12 +93,13 @@ Content-length: 266
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 315
+Content-Length: 338
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
   "id": "d15e3ba8-3ba8-d15e-a83b-5ed1a83b5ed1",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
+  "overallScore": 12,
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,

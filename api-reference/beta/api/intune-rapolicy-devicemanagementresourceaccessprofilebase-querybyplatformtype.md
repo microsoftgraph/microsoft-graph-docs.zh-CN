@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 086be5d1ab1f9b01191f3b34749fc194436bde15
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: e50dfc6f8d77b3f5208f4db4dad1b0ef2f26392b
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51864779"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665397"
 ---
 # <a name="querybyplatformtype-action"></a>queryByPlatformType 操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -58,7 +58,7 @@ POST /deviceManagement/resourceAccessProfiles/queryByPlatformType
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应 `200 OK` 正文中返回 响应 [iQueryable_1OfDeviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-iqueryable_1ofdevicemanagementresourceaccessprofilebase.md) 响应代码和响应代码。
+如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) 集合。
 
 ## <a name="example"></a>示例
 
@@ -80,12 +80,23 @@ Content-length: 40
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 117
+Content-Length: 487
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.iQueryable_1OfDeviceManagementResourceAccessProfileBase"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileBase",
+      "id": "f442dd4a-dd4a-f442-4add-42f44add42f4",
+      "version": 7,
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
+    }
+  ]
 }
 ```
 

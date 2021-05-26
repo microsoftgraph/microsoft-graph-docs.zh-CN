@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7c894e455d96f1fb7e8c2cd7a50beaff009858f
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 944c9365e8c30444a00c1c087c6680cac80b0fed
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868443"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664935"
 ---
 # <a name="devicemanagementconfigurationchoicesettinginstancetemplate-resource-type"></a>deviceManagementConfigurationChoiceSettingInstanceTemplate 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -61,8 +61,12 @@ ms.locfileid: "51868443"
           "settingDefinitionId": "String",
           "isRequired": true,
           "simpleSettingValueTemplate": {
-            "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate",
-            "settingValueTemplateId": "String"
+            "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
+            "settingValueTemplateId": "String",
+            "defaultValue": {
+              "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+              "constantValue": "String"
+            }
           }
         }
       ]
@@ -80,8 +84,12 @@ ms.locfileid: "51868443"
               "settingDefinitionId": "String",
               "isRequired": true,
               "simpleSettingValueTemplate": {
-                "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate",
-                "settingValueTemplateId": "String"
+                "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
+                "settingValueTemplateId": "String",
+                "defaultValue": {
+                  "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+                  "constantValue": "String"
+                }
               }
             }
           ]
@@ -101,8 +109,12 @@ ms.locfileid: "51868443"
               "settingDefinitionId": "String",
               "isRequired": true,
               "simpleSettingValueTemplate": {
-                "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate",
-                "settingValueTemplateId": "String"
+                "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
+                "settingValueTemplateId": "String",
+                "defaultValue": {
+                  "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+                  "constantValue": "String"
+                }
               }
             }
           ]

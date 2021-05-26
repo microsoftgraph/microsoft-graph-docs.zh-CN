@@ -5,20 +5,18 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 34c4b2396d936a869108ca44372df8a1f7adbe5e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cbd6911b1eec8908d58e96ac428b6f4a38a2a490
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054642"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666245"
 ---
 # <a name="create-call"></a>创建调用
 
 命名空间：microsoft.graph
 
 Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call， or join an existing meeting. 你需要注册 [呼叫机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并浏览所需的权限列表，如下所示。
-
-> **注意：** 目前，仅支持 VoIP 呼叫。 
 
 ## <a name="permissions"></a>权限
 
@@ -908,7 +906,8 @@ Content-Type: application/json
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
-下面的示例展示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
+下面的示例展示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。
+> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话ID 是 E.164 格式的电话号码。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -956,7 +955,8 @@ Content-Type: application/json
   ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
-  }
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -1065,7 +1065,8 @@ Content-Type: application/json
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
-以下示例显示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 替换授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值，使示例正常工作。
+以下示例显示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。
+> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话ID 是 E.164 格式的电话号码。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1114,7 +1115,8 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
     "blob": "<Media Session Configuration>"
-  }
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b00e86422989575dd6b30a967861974469aa945c
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: cef0dd74416c4fbcef83ebe10109795ba41986c1
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868490"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665586"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevice-resource-type"></a>userExperienceAnalyticsWorkFromAnywhereDevice 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -41,11 +41,13 @@ ms.locfileid: "51868490"
 |model|String|用户体验从任何设备型号开始工作。|
 |ownership|String|用户体验从任何设备所有权开始工作。|
 |managedBy|String|用户体验从设备的任何管理代理工作。|
-|autoPilotRegistered|Boolean|用户体验从 intune 设备的 autopilotRegistered 的任何位置工作。|
-|autoPilotProfileAssigned|Boolean|用户体验分析从 intune 设备的 autopilotProfileAssigned 的任何位置工作。|
-|azureAdRegistered|Boolean|用户体验从任何设备的 azureAdRegistered 工作。|
+|autoPilotRegistered|布尔值|用户体验从 intune 设备的 autopilotRegistered 的任何位置工作。|
+|autoPilotProfileAssigned|布尔值|用户体验分析从 intune 设备的 autopilotProfileAssigned 的任何位置工作。|
+|azureAdRegistered|布尔值|用户体验从任何设备的 azureAdRegistered 工作。|
 |azureAdDeviceId|String|用户体验从 Azure Ad 设备 ID 的任何位置工作。|
 |azureAdJoinType|String|用户体验从任何设备的 azure Ad joinType 工作。|
+|osDescription|String|用户体验从任何设备的操作系统说明工作。|
+|osVersion|String|用户体验从任何设备的操作系统版本工作。|
 
 ## <a name="relationships"></a>关系
 无
@@ -72,7 +74,9 @@ ms.locfileid: "51868490"
   "autoPilotProfileAssigned": true,
   "azureAdRegistered": true,
   "azureAdDeviceId": "String",
-  "azureAdJoinType": "String"
+  "azureAdJoinType": "String",
+  "osDescription": "String",
+  "osVersion": "String"
 }
 ```
 

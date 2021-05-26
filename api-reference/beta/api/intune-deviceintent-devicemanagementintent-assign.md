@@ -1,22 +1,22 @@
 ---
-title: assign 操作
+title: 设备管理意图分配操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d11b600bd752e0c534e97d0c936b15fdee45de7e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4594badde9c3088aeebc015c378ed660517f7c4c
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51132077"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666322"
 ---
-# <a name="assign-action"></a>分配操作
+# <a name="device-management-intent-assign-action"></a>设备管理意图分配操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

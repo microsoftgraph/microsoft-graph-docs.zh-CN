@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2afd14b647b02897c140287e96f8bd1f5fdd89fe
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 51a41991726ec9349f7f3f702973c8040031c39b
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574172"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664732"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>在 educationSynchronizationProfile 上重置同步
 
@@ -20,7 +20,7 @@ ms.locfileid: "50574172"
 
 重置租户中特定学校数据 [同步](../resources/educationsynchronizationprofile.md) 配置文件的同步。
 
-> **注意：** 此操作将导致同步重新启动。 将删除遇到的任何错误。 不会从 Azure Active Directory 和 Azure AD (中删除) 。 
+> **注意：** 此操作将导致同步重新启动。 将删除遇到的任何错误。 不会从 Azure AD Azure Active Directory (中删除任何) 。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "50574172"
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 |委派 (个人 Microsoft 帐户|不支持。|
-|应用程序|不支持。|
+|应用程序|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

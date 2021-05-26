@@ -1,23 +1,26 @@
 ---
 title: 列出 childFolder
-description: '获取指定文件夹下的文件夹集合。 可以使用 `.../me/MailFolders` 快捷方式来获取顶级 '
+description: '获取指定文件夹下的文件夹集合。你可以使用 `.../me/MailFolders` 快捷方式获取顶级 '
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9080d3ac5cc8cc027386c1bcb740f7f084689abe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c3b589db36b645884ec5218ef25b9c56949fbaf5
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055951"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629446"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
 命名空间：microsoft.graph
 
 获取指定文件夹下的文件夹集合。你可以使用 `.../me/mailFolders` 快捷方式获取顶级文件夹集合并导航到其他文件夹。
-## <a name="permissions"></a>权限
+
+默认情况下，此操作不会返回隐藏文件夹。 使用查询参数 _includeHiddenFolders_，将它们包括在答复中。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -27,12 +30,24 @@ ms.locfileid: "52055951"
 |应用程序 | Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
+
+若要获取指定文件夹的所有子文件夹（隐藏文件夹除外），请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
+
+若要在答复中包括 _隐藏的_ 子文件夹，请执行以下操作：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/{id}/childFolders?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders?includeHiddenFolders=true
+```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
+若要返回所有 childFolder 的列表（包括隐藏的项目，其 **isHidden** 属性为 true），则如 [HTTP 请求](#http-request) 部分所示，在请求 URL 中，将 `includeHiddenFolders` 查询参数指定为 `true`。
+
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -45,7 +60,13 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailFolder](../resources/mailfolder.md) 对象集合。
+
 ## <a name="example"></a>示例
+
+### <a name="example-1-list-mail-folders"></a>示例 1：列出邮件文件夹
+
+下面展示了示例请求。
+
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -76,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,12 +112,64 @@ Content-length: 232
 {
   "value": [
     {
+      "id": "id-value",
       "displayName": "displayName-value",
       "parentFolderId": "parentFolderId-value",
       "childFolderCount": 99,
       "unreadItemCount": 99,
       "totalItemCount": 99,
-      "id": "id-value"
+      "isHidden": false
+    }
+  ]
+}
+```
+### <a name="example-2-include-hidden-child-folders-under-a-specified-mail-folder"></a>示例 2：在指定的邮件文件夹中包含隐藏的子文件夹
+
+下一个示例使用 `includeHiddenFolders` 查询参数获取特定邮件文件夹中的子文件夹列表（包括隐藏的邮件文件夹）。 答复包含 **isHidden** 设置为 true 的“待筛选邮件”文件夹。
+
+##### <a name="request"></a>请求
+下面是一个请求示例。
+
+<!-- {
+  "blockType": "request",
+  "name": "mailfolder_get_hiddenchildfolders"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders?includeHiddenFolders=true
+```
+
+##### <a name="response"></a>响应
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+  "value": [
+    {
+      "id": "AAMkAGVmMDEzA",
+      "displayName": "Internal Screens",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 2,
+      "isHidden": false
+    },
+    {
+      "id": "AAMkAGVmMDEzB",
+      "displayName": "Clutters",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 5,
+      "totalItemCount": 5,
+      "isHidden": true
     }
   ]
 }

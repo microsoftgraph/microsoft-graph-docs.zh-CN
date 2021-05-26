@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba4ec2b2f37149cf82666d0a896bdac47482aebc
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b31b33a3d3243aee2ff600b4bf5ff7c9ffb671ae
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146270"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665530"
 ---
 # <a name="get-devicehealthscriptrunsummary"></a>获取 deviceHealthScriptRunSummary
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{devic
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 586
+Content-Length: 637
 
 {
   "value": {
@@ -78,6 +78,7 @@ Content-Length: 586
     "issueDetectedDeviceCount": 8,
     "detectionScriptErrorDeviceCount": 15,
     "detectionScriptPendingDeviceCount": 1,
+    "detectionScriptNotApplicableDeviceCount": 7,
     "issueRemediatedDeviceCount": 10,
     "remediationSkippedDeviceCount": 13,
     "issueReoccurredDeviceCount": 10,

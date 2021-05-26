@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d2363f2bc25ddf3356215910e14b3451fccf6fcf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a1ab83dfa3e3da64935a8c3976f12ffd1faf2e3c
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130772"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629383"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
@@ -42,7 +42,7 @@ GET /me/mailFolders/drafts
 | inbox | 收件箱文件夹。 |
 | junkemail | “垃圾邮件”文件夹。 |
 | localfailures | 包含本地客户端上存在但无法上载到服务器的项的文件夹。 |
-| msgfolderroot | “最上层的信息文件”文件夹。 此文件夹是在普通邮件客户端（如收件箱）中显示的文件夹的父文件夹。 |
+| msgfolderroot | “最上层的信息存储”文件夹。此文件夹是邮件客户端（如收件箱）中显示的文件夹的父文件夹。 |
 | outbox | “发件箱”文件夹。 |
 | recoverableitemsdeletions | 包含软删除项的文件夹：从“已删除邮件”文件夹中删除，或者在 Outlook 中按 shift+delete 删除。 此文件夹在任何 Outlook 电子邮件客户端中都不可见，但最终用户可以通过 Outlook 中的“**从服务器恢复已删除邮件**”功能或 Web 上的 Outlook 与其进行交互。 |
 | scheduled | 包含计划使用 Outlook for iOS 中的“计划”功能重新出现在收件箱中的邮件的文件夹。 |
@@ -55,9 +55,11 @@ GET /me/mailFolders/drafts
 
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
+|[List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) 集合|获取指定用户的邮箱内的所有邮件文件夹，包括所有邮件搜索文件夹。|
 |[获取 mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |读取 mailFolder 对象的属性和关系。|
-|[创建 MailFolder](../api/mailfolder-post-childfolders.md) |[MailFolder](mailfolder.md)| 通过发布到 childFolder 集合，在当前 mailFolder 下新建 mailFolder。|
+|[Create mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| 在用户邮箱的根文件夹中新建邮件文件夹。|
 |[列出 childFolder](../api/mailfolder-list-childfolders.md) |[MailFolder](mailfolder.md) 集合| 获取指定文件夹下的文件夹集合。你可以使用 `.../me/MailFolders` 快捷方式获取顶级文件夹集合并导航到其他文件夹。|
+|[创建 childFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| 通过发布到 childFolder 集合，在当前 mailFolder 下新建 mailFolder。|
 |[创建邮件](../api/mailfolder-post-messages.md) |[邮件](message.md)| 通过发布到邮件集合，在当前 mailFolder 中新建邮件。|
 |[列出邮件](../api/mailfolder-list-messages.md) |[邮件](message.md) 集合| 获取已登录用户邮箱中的所有邮件或邮箱的指定文件夹中的邮件。|
 |[更新](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|更新指定的 mailFolder 对象。 |
@@ -78,6 +80,7 @@ GET /me/mailFolders/drafts
 |childFolderCount|Int32|当前 mailFolder 中的直接子 mailFolder 数量。|
 |displayName|String|mailFolder 的显示名称。|
 |id|String|MailFolder 的唯一标识符。|
+|IsHidden|布尔值|指示 mailFolder 是否处于隐藏状态。 此属性只能在创建文件夹时设置。 请在[隐藏的邮件文件夹](#hidden-mail-folders)中获取更多信息。|
 |parentFolderId|String|MailFolder 的父 mailFolder 的唯一标识符。|
 |totalItemCount|Int32|邮箱中项的数量|
 |unreadItemCount|Int32|mailFolder 中标记为未读的项的数量。|
@@ -92,6 +95,13 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 ```
 
 Outlook 中的邮件文件夹可包含多个类型的项，例如，收件箱可以包含不同于邮件项的会议请求项。 `TotalItemCount` 和 `UnreadItemCount`包括邮件文件夹中的项，无论其项类型如何。
+
+### <a name="hidden-mail-folders"></a>隐藏的邮件文件夹
+`isHidden` 属性的默认值为 `false`。 仅当 [创建 mailFolder](../api/user-post-mailfolders.md)时可以设置 **isHidden**。 不可使用“修补”操作更新属性。 若要更改 **isHidden** 属性，请删除现有文件夹，然后使用希望的值，新建一个文件夹。
+
+隐藏邮件文件夹支持常规邮件文件夹支持的所有操作。
+
+默认情况下，[邮件文件夹列表](../api/user-list-mailfolders.md)仅返回未隐藏的邮件文件夹。 若要在答复中包括隐藏的邮件文件夹，请使用查询参数 `includeHiddenFolders=true`。 然后使用 **isHidden** 属性来识别邮件文件夹是否处于隐藏状态。 
 
 ## <a name="relationships"></a>关系
 
@@ -154,6 +164,7 @@ Outlook 中的邮件文件夹可包含多个类型的项，例如，收件箱可
   "parentFolderId": "string",
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
+  "isHidden": false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],

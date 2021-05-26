@@ -5,21 +5,18 @@ author: kenwith
 localization_priority: Priority
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 94ce76217b4e3ac12d849b064c000ed6a2664519
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 85d8d97897facb8be40fb5260de7f143a626f07e
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547111"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665057"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 为应用程序配置基于 SAML 的单一登录
 
 本文介绍了如何使用 Microsoft Graph API 为 Azure Active Directory （Azure AD） 中的应用程序创建和配置基于 SAML 的单一登录 （SSO）。 应用程序配置包括基本 SAML URL、声明映射策略以及使用证书添加自定义签名密钥。 创建应用程序后，可以为其分配管理员用户。 然后，可以使用 URL 获取 Azure AD SAML 元数据，以对应用程序进行其他配置。 
 
 本文使用 AWS Azure AD 应用程序模板作为示例，但可以针对 Azure AD 库中的任何基于 SAML 的应用使用本文中的步骤。
-
->[!NOTE]
->本文中所示的响应对象和密钥可能会被缩短以提高可读性。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -31,7 +28,7 @@ ms.locfileid: "52547111"
 
     ![选择 Microsoft Graph 权限](./images/application-saml-sso-configure-api/set-permissions.png)
         
-4. 在权限列表中，滚动到并展开“**AppRoleAssignment (1)**”，然后选择“**AppRoleAssignment.ReadWrite.All**”权限。 继续向下滚动并展开“**应用程序 (2)**”，然后选择“**Application.ReadWrite.All**”权限。 继续滚动到并选择“**策略 (13)**”，然后选择“**Policy.Read.All**”和“**Policy.ReadWrite.ApplicationConfiguration**”权限。 最后，滚动到并展开“**用户 (8)**”，然后选择“**User.ReadWrite.All**”。 
+4. 在权限列表中，滚动到并展开“**AppRoleAssignment (1)**”，然后选择“**AppRoleAssignment.ReadWrite.All**”权限。 继续向下滚动并展开“**应用程序 (2)**”，然后选择“**Application.ReadWrite.All**”权限。 继续滚动到并选择“**策略 (13)**”，然后选择“**Policy.Read.All**”和“**Policy.ReadWrite.ApplicationConfiguration**”权限。 最后，滚动到并展开“**用户 (8)**”，然后选择“**User.ReadWrite.All**”。
 
     ![滚动并选择 approleasignment、应用程序和策略权限](./images/application-saml-sso-configure-api/select-permissions.png)
 

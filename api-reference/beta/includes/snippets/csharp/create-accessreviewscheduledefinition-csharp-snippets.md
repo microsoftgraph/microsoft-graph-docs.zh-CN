@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cf0a43a55100fb7de8b8e68db09264ac3af48dfb
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1bcba471d78bfe24d8941474bf6c89cdd5b0575a
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753545"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664584"
 ---
 ```csharp
 
@@ -18,16 +18,15 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
     DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
     Scope = new AccessReviewScope
     {
-        Query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0c4444/transitiveMembers",
+        Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
         QueryType = "MicrosoftGraph"
     },
     Reviewers = new List<AccessReviewReviewerScope>()
     {
         new AccessReviewReviewerScope
         {
-            Query = "/users/7eae4444-d425-48b2-adf2-3c777f6256f3",
-            QueryType = "MicrosoftGraph",
-            QueryRoot = "decisions"
+            Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+            QueryType = "MicrosoftGraph"
         }
     },
     Settings = new AccessReviewScheduleSettings
@@ -38,7 +37,6 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
         DefaultDecisionEnabled = false,
         DefaultDecision = "None",
         InstanceDurationInDays = 1,
-        AutoApplyDecisionsEnabled = false,
         RecommendationsEnabled = true,
         Recurrence = new PatternedRecurrence
         {

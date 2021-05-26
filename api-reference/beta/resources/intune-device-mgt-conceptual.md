@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备管理 - Microsoft Graph API
-description: 列出用于 Intune 终结点的 Microsoft Graph API (REST) 定义租户组织的管理设备。
+description: 列出定义Graph组织的设备的 Microsoft (REST) Intune 终结点 API。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f14fe5075e18a046698bc5725ccb9bb1d2618a89
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 99dd9b1abd5353f6d8e4ca30aaac48e54bd296b7
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863939"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666273"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -19,6 +19,7 @@ ms.locfileid: "51863939"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
+- [激活设备 esim 操作结果](intune-devices-activatedeviceesimactionresult.md)
 - [管理员同意](intune-devices-adminconsent.md)
 - [管理员许可状态](intune-devices-adminconsentstate.md)
 - [应用日志集下载详情](intune-devices-applogcollectiondownloaddetails.md)
@@ -35,7 +36,9 @@ ms.locfileid: "51863939"
 - [二进制管理条件表达式运算符类型](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [批量托管的设备操作结果](intune-devices-bulkmanageddeviceactionresult.md)
 - [机箱类型](intune-devices-chassistype.md)
+- [Chrome o 的 device 属性](intune-devices-chromeosdeviceproperty.md)
 - [循环 geofence 管理条件](intune-fencing-circulargeofencemanagementcondition.md)
+- [Cloud PC连接问题](intune-devices-cloudpcconnectivityissue.md)
 - [Comanaged 设备摘要](intune-devices-comanageddevicessummary.md)
 - [托管符合条件的设备](intune-devices-comanagementeligibledevice.md)
 - [托管符合条件的设备摘要](intune-devices-comanagementeligibledevicessummary.md)
@@ -177,6 +180,7 @@ ms.locfileid: "51863939"
 - [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [托管设备远程操作](intune-devices-manageddeviceremoteaction.md)
 - [托管设备汇总应用状态](intune-troubleshooting-manageddevicesummarizedappstate.md)
+- [托管安装程序状态](intune-devices-managedinstallerstatus.md)
 - [管理条件](intune-fencing-managementcondition.md)
 - [管理条件表达式](intune-fencing-managementconditionexpression.md)
 - [管理条件表达式模型](intune-fencing-managementconditionexpressionmodel.md)
@@ -210,7 +214,7 @@ ms.locfileid: "51863939"
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
 - [角色范围标记信息](intune-auditing-rolescopetaginfo.md)
-- [旋转 BitLocker 密钥设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [旋转BitLocker键设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [安全基线类别状态摘要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
 - [安全基线参与策略](intune-deviceintent-securitybaselinecontributingpolicy.md)
@@ -256,13 +260,13 @@ ms.locfileid: "51863939"
 - [用户体验分析分数历史记录](intune-devices-userexperienceanalyticsscorehistory.md)
 - [用户体验分析设置](intune-devices-userexperienceanalyticssettings.md)
 - [汇总的用户体验分析](intune-devices-userexperienceanalyticssummarizedby.md)
-- [用户体验分析 Windows 10 设备摘要](intune-devices-userexperienceanalyticswindows10devicessummary.md)
+- [用户体验分析Windows 10设备摘要](intune-devices-userexperienceanalyticswindows10devicessummary.md)
 - [用户体验分析从任何设备运行](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [用户体验分析从任意位置设备运行摘要](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [用户体验分析从任何位置工作指标](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
-- [Windows Autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)
-- [Windows Autopilot 注册类型](intune-troubleshooting-windowsautopilotenrollmenttype.md)
+- [Windows autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)
+- [Windows autopilot 注册类型](intune-troubleshooting-windowsautopilotenrollmenttype.md)
 - [Windows Defender 产品状态](intune-devices-windowsdefenderproductstatus.md)
 - [Windows Defender 扫描操作结果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)
@@ -278,7 +282,7 @@ ms.locfileid: "51863939"
 - [Windows 恶意软件名称计数](intune-devices-windowsmalwarenamecount.md)
 - [Windows 恶意软件概述](intune-devices-windowsmalwareoverview.md)
 - [Windows 恶意软件严重性](intune-devices-windowsmalwareseverity.md)
-- [Windows 恶意软件严重性计数](intune-devices-windowsmalwareseveritycount.md)
+- [Windows恶意软件严重性计数](intune-devices-windowsmalwareseveritycount.md)
 - [Windows 恶意软件状态](intune-devices-windowsmalwarestate.md)
 - [Windows 恶意软件状态计数](intune-devices-windowsmalwarestatecount.md)
 - [Windows 恶意软件威胁状态](intune-devices-windowsmalwarethreatstate.md)
