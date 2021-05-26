@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9d8f9bc945db1c4ffe8841e42f54cf158f5fbd7
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: b5b465eebbd71acf1a13c93ee8ef6306d7e473a7
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867152"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666139"
 ---
-# <a name="update-devicemanagementconfigurationchoicesettingdefinition"></a><span data-ttu-id="9fb49-103">更新 deviceManagementConfigurationChoiceSettingDefinition</span><span class="sxs-lookup"><span data-stu-id="9fb49-103">Update deviceManagementConfigurationChoiceSettingDefinition</span></span>
+# <a name="update-devicemanagementconfigurationchoicesettingdefinition"></a><span data-ttu-id="81469-103">更新 deviceManagementConfigurationChoiceSettingDefinition</span><span class="sxs-lookup"><span data-stu-id="81469-103">Update deviceManagementConfigurationChoiceSettingDefinition</span></span>
 
-<span data-ttu-id="9fb49-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9fb49-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="81469-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="81469-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9fb49-105">**重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="9fb49-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="81469-105">**重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="81469-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9fb49-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="9fb49-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="81469-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="81469-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9fb49-107">更新 [deviceManagementConfigurationChoiceSettingDefinition 对象](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="9fb49-107">Update the properties of a [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) object.</span></span>
+<span data-ttu-id="81469-107">更新 [deviceManagementConfigurationChoiceSettingDefinition 对象](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="81469-107">Update the properties of a [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9fb49-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="9fb49-108">Prerequisites</span></span>
-<span data-ttu-id="9fb49-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9fb49-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="81469-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="81469-108">Prerequisites</span></span>
+<span data-ttu-id="81469-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="81469-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9fb49-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="9fb49-111">Permission type</span></span>|<span data-ttu-id="9fb49-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9fb49-112">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="81469-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="81469-111">Permission type</span></span>|<span data-ttu-id="81469-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="81469-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9fb49-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9fb49-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9fb49-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9fb49-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="9fb49-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9fb49-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9fb49-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="9fb49-116">Not supported.</span></span>|
-|<span data-ttu-id="9fb49-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="9fb49-117">Application</span></span>|<span data-ttu-id="9fb49-118">DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9fb49-118">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="81469-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="81469-113">Delegated (work or school account)</span></span>|<span data-ttu-id="81469-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="81469-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="81469-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="81469-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="81469-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="81469-116">Not supported.</span></span>|
+|<span data-ttu-id="81469-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="81469-117">Application</span></span>|<span data-ttu-id="81469-118">DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="81469-118">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9fb49-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9fb49-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="81469-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="81469-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,56 +40,57 @@ ms.locfileid: "51867152"
 PATCH /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 PATCH /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
+PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9fb49-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="9fb49-120">Request headers</span></span>
-|<span data-ttu-id="9fb49-121">标头</span><span class="sxs-lookup"><span data-stu-id="9fb49-121">Header</span></span>|<span data-ttu-id="9fb49-122">值</span><span class="sxs-lookup"><span data-stu-id="9fb49-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="81469-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="81469-120">Request headers</span></span>
+|<span data-ttu-id="81469-121">标头</span><span class="sxs-lookup"><span data-stu-id="81469-121">Header</span></span>|<span data-ttu-id="81469-122">值</span><span class="sxs-lookup"><span data-stu-id="81469-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9fb49-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9fb49-123">Authorization</span></span>|<span data-ttu-id="9fb49-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="9fb49-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9fb49-125">接受</span><span class="sxs-lookup"><span data-stu-id="9fb49-125">Accept</span></span>|<span data-ttu-id="9fb49-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9fb49-126">application/json</span></span>|
+|<span data-ttu-id="81469-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="81469-123">Authorization</span></span>|<span data-ttu-id="81469-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="81469-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="81469-125">接受</span><span class="sxs-lookup"><span data-stu-id="81469-125">Accept</span></span>|<span data-ttu-id="81469-126">application/json</span><span class="sxs-lookup"><span data-stu-id="81469-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9fb49-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="9fb49-127">Request body</span></span>
-<span data-ttu-id="9fb49-128">在请求正文中，提供 [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9fb49-128">In the request body, supply a JSON representation for the [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="81469-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="81469-127">Request body</span></span>
+<span data-ttu-id="81469-128">在请求正文中，提供 [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="81469-128">In the request body, supply a JSON representation for the [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) object.</span></span>
 
-<span data-ttu-id="9fb49-129">下表显示创建 [deviceManagementConfigurationChoiceSettingDefinition 时所需的属性](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="9fb49-129">The following table shows the properties that are required when you create the [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md).</span></span>
+<span data-ttu-id="81469-129">下表显示创建 [deviceManagementConfigurationChoiceSettingDefinition 时所需的属性](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="81469-129">The following table shows the properties that are required when you create the [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md).</span></span>
 
-|<span data-ttu-id="9fb49-130">属性</span><span class="sxs-lookup"><span data-stu-id="9fb49-130">Property</span></span>|<span data-ttu-id="9fb49-131">类型</span><span class="sxs-lookup"><span data-stu-id="9fb49-131">Type</span></span>|<span data-ttu-id="9fb49-132">说明</span><span class="sxs-lookup"><span data-stu-id="9fb49-132">Description</span></span>|
+|<span data-ttu-id="81469-130">属性</span><span class="sxs-lookup"><span data-stu-id="81469-130">Property</span></span>|<span data-ttu-id="81469-131">类型</span><span class="sxs-lookup"><span data-stu-id="81469-131">Type</span></span>|<span data-ttu-id="81469-132">说明</span><span class="sxs-lookup"><span data-stu-id="81469-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9fb49-133">适用性</span><span class="sxs-lookup"><span data-stu-id="9fb49-133">applicability</span></span>|[<span data-ttu-id="9fb49-134">deviceManagementConfigurationSettingApplicability</span><span class="sxs-lookup"><span data-stu-id="9fb49-134">deviceManagementConfigurationSettingApplicability</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|<span data-ttu-id="9fb49-135">有关哪些设备设置适用于从[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)继承的详细信息</span><span class="sxs-lookup"><span data-stu-id="9fb49-135">Details which device setting is applicable on Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-136">accessTypes</span><span class="sxs-lookup"><span data-stu-id="9fb49-136">accessTypes</span></span>|[<span data-ttu-id="9fb49-137">deviceManagementConfigurationSettingAccessTypes</span><span class="sxs-lookup"><span data-stu-id="9fb49-137">deviceManagementConfigurationSettingAccessTypes</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|<span data-ttu-id="9fb49-138">读取/写入访问模式的设置 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="9fb49-138">Read/write access mode of the setting Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="9fb49-139">可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。</span><span class="sxs-lookup"><span data-stu-id="9fb49-139">Possible values are: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.</span></span>|
-|<span data-ttu-id="9fb49-140">keywords</span><span class="sxs-lookup"><span data-stu-id="9fb49-140">keywords</span></span>|<span data-ttu-id="9fb49-141">String 集合</span><span class="sxs-lookup"><span data-stu-id="9fb49-141">String collection</span></span>|<span data-ttu-id="9fb49-142">要搜索上设置的令牌 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-142">Tokens which to search settings on Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-143">infoUrls</span><span class="sxs-lookup"><span data-stu-id="9fb49-143">infoUrls</span></span>|<span data-ttu-id="9fb49-144">String 集合</span><span class="sxs-lookup"><span data-stu-id="9fb49-144">String collection</span></span>|<span data-ttu-id="9fb49-145">有关设置详细信息的链接列表，可在 Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)找到</span><span class="sxs-lookup"><span data-stu-id="9fb49-145">List of links more info for the setting can be found at Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-146">occurrence</span><span class="sxs-lookup"><span data-stu-id="9fb49-146">occurrence</span></span>|[<span data-ttu-id="9fb49-147">deviceManagementConfigurationSettingOccurrence</span><span class="sxs-lookup"><span data-stu-id="9fb49-147">deviceManagementConfigurationSettingOccurrence</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|<span data-ttu-id="9fb49-148">指示设置是否必需。继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-148">Indicates whether the setting is required or not Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-149">baseUri</span><span class="sxs-lookup"><span data-stu-id="9fb49-149">baseUri</span></span>|<span data-ttu-id="9fb49-150">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-150">String</span></span>|<span data-ttu-id="9fb49-151">基本云解决方案提供商路径 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-151">Base CSP Path Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-152">offsetUri</span><span class="sxs-lookup"><span data-stu-id="9fb49-152">offsetUri</span></span>|<span data-ttu-id="9fb49-153">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-153">String</span></span>|<span data-ttu-id="9fb49-154">从基本位置偏移 CSP 路径 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-154">Offset CSP Path from Base Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-155">rootDefinitionId</span><span class="sxs-lookup"><span data-stu-id="9fb49-155">rootDefinitionId</span></span>|<span data-ttu-id="9fb49-156">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-156">String</span></span>|<span data-ttu-id="9fb49-157">根设置定义（如果该设置是子设置）。</span><span class="sxs-lookup"><span data-stu-id="9fb49-157">Root setting definition if the setting is a child setting.</span></span> <span data-ttu-id="9fb49-158">继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-158">Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-159">categoryId</span><span class="sxs-lookup"><span data-stu-id="9fb49-159">categoryId</span></span>|<span data-ttu-id="9fb49-160">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-160">String</span></span>|<span data-ttu-id="9fb49-161">指定在 CSP (CSP) 指定的配置服务提供程序中配置设置的区域组。继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-161">Specifies the area group under which the setting is configured in a specified configuration service provider (CSP) Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-162">settingUsage</span><span class="sxs-lookup"><span data-stu-id="9fb49-162">settingUsage</span></span>|[<span data-ttu-id="9fb49-163">deviceManagementConfigurationSettingUsage</span><span class="sxs-lookup"><span data-stu-id="9fb49-163">deviceManagementConfigurationSettingUsage</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|<span data-ttu-id="9fb49-164">设置类型，例如，配置和合规性 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="9fb49-164">Setting type, for example, configuration and compliance Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="9fb49-165">可取值为：`none`、`configuration`。</span><span class="sxs-lookup"><span data-stu-id="9fb49-165">Possible values are: `none`, `configuration`.</span></span>|
-|<span data-ttu-id="9fb49-166">uxBehavior</span><span class="sxs-lookup"><span data-stu-id="9fb49-166">uxBehavior</span></span>|[<span data-ttu-id="9fb49-167">deviceManagementConfigurationControlType</span><span class="sxs-lookup"><span data-stu-id="9fb49-167">deviceManagementConfigurationControlType</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|<span data-ttu-id="9fb49-168">设置 UX 中的控件类型表示形式 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="9fb49-168">Setting control type representation in the UX Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="9fb49-169">可取值为：`default`、`dropdown`、`smallTextBox`、`largeTextBox`、`toggle`、`multiheaderGrid` 或 `contextPane`。</span><span class="sxs-lookup"><span data-stu-id="9fb49-169">Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.</span></span>|
-|<span data-ttu-id="9fb49-170">visibility</span><span class="sxs-lookup"><span data-stu-id="9fb49-170">visibility</span></span>|[<span data-ttu-id="9fb49-171">deviceManagementConfigurationSettingVisibility</span><span class="sxs-lookup"><span data-stu-id="9fb49-171">deviceManagementConfigurationSettingVisibility</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|<span data-ttu-id="9fb49-172">将可见性范围设置为 UX 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="9fb49-172">Setting visibility scope to UX Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="9fb49-173">可取值为：`none`、`settingsCatalog`、`template`。</span><span class="sxs-lookup"><span data-stu-id="9fb49-173">Possible values are: `none`, `settingsCatalog`, `template`.</span></span>|
-|<span data-ttu-id="9fb49-174">referredSettingInformationList</span><span class="sxs-lookup"><span data-stu-id="9fb49-174">referredSettingInformationList</span></span>|<span data-ttu-id="9fb49-175">[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) 集合</span><span class="sxs-lookup"><span data-stu-id="9fb49-175">[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) collection</span></span>|<span data-ttu-id="9fb49-176">引用的设置信息的列表。</span><span class="sxs-lookup"><span data-stu-id="9fb49-176">List of referred setting information.</span></span> <span data-ttu-id="9fb49-177">继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-177">Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-178">id</span><span class="sxs-lookup"><span data-stu-id="9fb49-178">id</span></span>|<span data-ttu-id="9fb49-179">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-179">String</span></span>|<span data-ttu-id="9fb49-180">项目的标识符 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-180">Identifier for item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-181">说明</span><span class="sxs-lookup"><span data-stu-id="9fb49-181">description</span></span>|<span data-ttu-id="9fb49-182">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-182">String</span></span>|<span data-ttu-id="9fb49-183">项目说明 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-183">Description of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-184">helpText</span><span class="sxs-lookup"><span data-stu-id="9fb49-184">helpText</span></span>|<span data-ttu-id="9fb49-185">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-185">String</span></span>|<span data-ttu-id="9fb49-186">项目的帮助文本 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-186">Help text of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-187">name</span><span class="sxs-lookup"><span data-stu-id="9fb49-187">name</span></span>|<span data-ttu-id="9fb49-188">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-188">String</span></span>|<span data-ttu-id="9fb49-189">项目名称 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-189">Name of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-190">displayName</span><span class="sxs-lookup"><span data-stu-id="9fb49-190">displayName</span></span>|<span data-ttu-id="9fb49-191">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-191">String</span></span>|<span data-ttu-id="9fb49-192">项目的显示名称 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-192">Display name of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-193">version</span><span class="sxs-lookup"><span data-stu-id="9fb49-193">version</span></span>|<span data-ttu-id="9fb49-194">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-194">String</span></span>|<span data-ttu-id="9fb49-195">项目版本 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="9fb49-195">Item Version Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
-|<span data-ttu-id="9fb49-196">选项</span><span class="sxs-lookup"><span data-stu-id="9fb49-196">options</span></span>|<span data-ttu-id="9fb49-197">[deviceManagementConfigurationOptionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationoptiondefinition.md) 集合</span><span class="sxs-lookup"><span data-stu-id="9fb49-197">[deviceManagementConfigurationOptionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationoptiondefinition.md) collection</span></span>|<span data-ttu-id="9fb49-198">可以选择的设置选项</span><span class="sxs-lookup"><span data-stu-id="9fb49-198">Options for the setting that can be selected</span></span>|
-|<span data-ttu-id="9fb49-199">defaultOptionId</span><span class="sxs-lookup"><span data-stu-id="9fb49-199">defaultOptionId</span></span>|<span data-ttu-id="9fb49-200">String</span><span class="sxs-lookup"><span data-stu-id="9fb49-200">String</span></span>|<span data-ttu-id="9fb49-201">选项设置的默认选项</span><span class="sxs-lookup"><span data-stu-id="9fb49-201">Default option for choice setting</span></span>|
+|<span data-ttu-id="81469-133">适用性</span><span class="sxs-lookup"><span data-stu-id="81469-133">applicability</span></span>|[<span data-ttu-id="81469-134">deviceManagementConfigurationSettingApplicability</span><span class="sxs-lookup"><span data-stu-id="81469-134">deviceManagementConfigurationSettingApplicability</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|<span data-ttu-id="81469-135">有关哪些设备设置适用于从[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)继承的详细信息</span><span class="sxs-lookup"><span data-stu-id="81469-135">Details which device setting is applicable on Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-136">accessTypes</span><span class="sxs-lookup"><span data-stu-id="81469-136">accessTypes</span></span>|[<span data-ttu-id="81469-137">deviceManagementConfigurationSettingAccessTypes</span><span class="sxs-lookup"><span data-stu-id="81469-137">deviceManagementConfigurationSettingAccessTypes</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|<span data-ttu-id="81469-138">读取/写入访问模式的设置 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="81469-138">Read/write access mode of the setting Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="81469-139">可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。</span><span class="sxs-lookup"><span data-stu-id="81469-139">Possible values are: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.</span></span>|
+|<span data-ttu-id="81469-140">keywords</span><span class="sxs-lookup"><span data-stu-id="81469-140">keywords</span></span>|<span data-ttu-id="81469-141">String collection</span><span class="sxs-lookup"><span data-stu-id="81469-141">String collection</span></span>|<span data-ttu-id="81469-142">要搜索上设置的令牌 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-142">Tokens which to search settings on Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-143">infoUrls</span><span class="sxs-lookup"><span data-stu-id="81469-143">infoUrls</span></span>|<span data-ttu-id="81469-144">String collection</span><span class="sxs-lookup"><span data-stu-id="81469-144">String collection</span></span>|<span data-ttu-id="81469-145">有关设置详细信息的链接列表，可在 Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)找到</span><span class="sxs-lookup"><span data-stu-id="81469-145">List of links more info for the setting can be found at Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-146">occurrence</span><span class="sxs-lookup"><span data-stu-id="81469-146">occurrence</span></span>|[<span data-ttu-id="81469-147">deviceManagementConfigurationSettingOccurrence</span><span class="sxs-lookup"><span data-stu-id="81469-147">deviceManagementConfigurationSettingOccurrence</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|<span data-ttu-id="81469-148">指示设置是否必需。继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-148">Indicates whether the setting is required or not Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-149">baseUri</span><span class="sxs-lookup"><span data-stu-id="81469-149">baseUri</span></span>|<span data-ttu-id="81469-150">String</span><span class="sxs-lookup"><span data-stu-id="81469-150">String</span></span>|<span data-ttu-id="81469-151">基本云解决方案提供商路径 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-151">Base CSP Path Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-152">offsetUri</span><span class="sxs-lookup"><span data-stu-id="81469-152">offsetUri</span></span>|<span data-ttu-id="81469-153">String</span><span class="sxs-lookup"><span data-stu-id="81469-153">String</span></span>|<span data-ttu-id="81469-154">从基本位置偏移 CSP 路径 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-154">Offset CSP Path from Base Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-155">rootDefinitionId</span><span class="sxs-lookup"><span data-stu-id="81469-155">rootDefinitionId</span></span>|<span data-ttu-id="81469-156">String</span><span class="sxs-lookup"><span data-stu-id="81469-156">String</span></span>|<span data-ttu-id="81469-157">根设置定义（如果该设置是子设置）。</span><span class="sxs-lookup"><span data-stu-id="81469-157">Root setting definition if the setting is a child setting.</span></span> <span data-ttu-id="81469-158">继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-158">Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-159">categoryId</span><span class="sxs-lookup"><span data-stu-id="81469-159">categoryId</span></span>|<span data-ttu-id="81469-160">String</span><span class="sxs-lookup"><span data-stu-id="81469-160">String</span></span>|<span data-ttu-id="81469-161">指定在 CSP (CSP) 指定的配置服务提供程序中配置设置的区域组。继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-161">Specifies the area group under which the setting is configured in a specified configuration service provider (CSP) Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-162">settingUsage</span><span class="sxs-lookup"><span data-stu-id="81469-162">settingUsage</span></span>|[<span data-ttu-id="81469-163">deviceManagementConfigurationSettingUsage</span><span class="sxs-lookup"><span data-stu-id="81469-163">deviceManagementConfigurationSettingUsage</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|<span data-ttu-id="81469-164">设置类型，例如，配置和合规性 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="81469-164">Setting type, for example, configuration and compliance Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="81469-165">可取值为：`none`、`configuration`。</span><span class="sxs-lookup"><span data-stu-id="81469-165">Possible values are: `none`, `configuration`.</span></span>|
+|<span data-ttu-id="81469-166">uxBehavior</span><span class="sxs-lookup"><span data-stu-id="81469-166">uxBehavior</span></span>|[<span data-ttu-id="81469-167">deviceManagementConfigurationControlType</span><span class="sxs-lookup"><span data-stu-id="81469-167">deviceManagementConfigurationControlType</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|<span data-ttu-id="81469-168">设置 UX 中的控件类型表示形式 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="81469-168">Setting control type representation in the UX Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="81469-169">可取值为：`default`、`dropdown`、`smallTextBox`、`largeTextBox`、`toggle`、`multiheaderGrid` 或 `contextPane`。</span><span class="sxs-lookup"><span data-stu-id="81469-169">Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.</span></span>|
+|<span data-ttu-id="81469-170">visibility</span><span class="sxs-lookup"><span data-stu-id="81469-170">visibility</span></span>|[<span data-ttu-id="81469-171">deviceManagementConfigurationSettingVisibility</span><span class="sxs-lookup"><span data-stu-id="81469-171">deviceManagementConfigurationSettingVisibility</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|<span data-ttu-id="81469-172">将可见性范围设置为 UX 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="81469-172">Setting visibility scope to UX Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="81469-173">可取值为：`none`、`settingsCatalog`、`template`。</span><span class="sxs-lookup"><span data-stu-id="81469-173">Possible values are: `none`, `settingsCatalog`, `template`.</span></span>|
+|<span data-ttu-id="81469-174">referredSettingInformationList</span><span class="sxs-lookup"><span data-stu-id="81469-174">referredSettingInformationList</span></span>|<span data-ttu-id="81469-175">[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) 集合</span><span class="sxs-lookup"><span data-stu-id="81469-175">[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) collection</span></span>|<span data-ttu-id="81469-176">引用的设置信息的列表。</span><span class="sxs-lookup"><span data-stu-id="81469-176">List of referred setting information.</span></span> <span data-ttu-id="81469-177">继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-177">Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-178">id</span><span class="sxs-lookup"><span data-stu-id="81469-178">id</span></span>|<span data-ttu-id="81469-179">String</span><span class="sxs-lookup"><span data-stu-id="81469-179">String</span></span>|<span data-ttu-id="81469-180">项目的标识符 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-180">Identifier for item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-181">说明</span><span class="sxs-lookup"><span data-stu-id="81469-181">description</span></span>|<span data-ttu-id="81469-182">String</span><span class="sxs-lookup"><span data-stu-id="81469-182">String</span></span>|<span data-ttu-id="81469-183">项目说明 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-183">Description of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-184">helpText</span><span class="sxs-lookup"><span data-stu-id="81469-184">helpText</span></span>|<span data-ttu-id="81469-185">String</span><span class="sxs-lookup"><span data-stu-id="81469-185">String</span></span>|<span data-ttu-id="81469-186">项目的帮助文本 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-186">Help text of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-187">name</span><span class="sxs-lookup"><span data-stu-id="81469-187">name</span></span>|<span data-ttu-id="81469-188">String</span><span class="sxs-lookup"><span data-stu-id="81469-188">String</span></span>|<span data-ttu-id="81469-189">项目名称 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-189">Name of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-190">displayName</span><span class="sxs-lookup"><span data-stu-id="81469-190">displayName</span></span>|<span data-ttu-id="81469-191">String</span><span class="sxs-lookup"><span data-stu-id="81469-191">String</span></span>|<span data-ttu-id="81469-192">项目的显示名称 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-192">Display name of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-193">version</span><span class="sxs-lookup"><span data-stu-id="81469-193">version</span></span>|<span data-ttu-id="81469-194">String</span><span class="sxs-lookup"><span data-stu-id="81469-194">String</span></span>|<span data-ttu-id="81469-195">项目版本 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="81469-195">Item Version Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="81469-196">选项</span><span class="sxs-lookup"><span data-stu-id="81469-196">options</span></span>|<span data-ttu-id="81469-197">[deviceManagementConfigurationOptionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationoptiondefinition.md) 集合</span><span class="sxs-lookup"><span data-stu-id="81469-197">[deviceManagementConfigurationOptionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationoptiondefinition.md) collection</span></span>|<span data-ttu-id="81469-198">可以选择的设置选项</span><span class="sxs-lookup"><span data-stu-id="81469-198">Options for the setting that can be selected</span></span>|
+|<span data-ttu-id="81469-199">defaultOptionId</span><span class="sxs-lookup"><span data-stu-id="81469-199">defaultOptionId</span></span>|<span data-ttu-id="81469-200">String</span><span class="sxs-lookup"><span data-stu-id="81469-200">String</span></span>|<span data-ttu-id="81469-201">选项设置的默认选项</span><span class="sxs-lookup"><span data-stu-id="81469-201">Default option for choice setting</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9fb49-202">响应</span><span class="sxs-lookup"><span data-stu-id="9fb49-202">Response</span></span>
-<span data-ttu-id="9fb49-203">如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9fb49-203">If successful, this method returns a `200 OK` response code and an updated [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="81469-202">响应</span><span class="sxs-lookup"><span data-stu-id="81469-202">Response</span></span>
+<span data-ttu-id="81469-203">如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="81469-203">If successful, this method returns a `200 OK` response code and an updated [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9fb49-204">示例</span><span class="sxs-lookup"><span data-stu-id="9fb49-204">Example</span></span>
+## <a name="example"></a><span data-ttu-id="81469-204">示例</span><span class="sxs-lookup"><span data-stu-id="81469-204">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9fb49-205">请求</span><span class="sxs-lookup"><span data-stu-id="9fb49-205">Request</span></span>
-<span data-ttu-id="9fb49-206">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9fb49-206">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="81469-205">请求</span><span class="sxs-lookup"><span data-stu-id="81469-205">Request</span></span>
+<span data-ttu-id="81469-206">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="81469-206">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 Content-type: application/json
-Content-length: 10158
+Content-length: 19061
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
@@ -135,82 +136,182 @@ Content-length: 10158
       "@odata.type": "microsoft.graph.deviceManagementConfigurationOptionDefinition",
       "optionValue": {
         "@odata.type": "microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+        "settingValueTemplateReference": {
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+          "settingValueTemplateId": "Setting Value Template Id value",
+          "useTemplateDefault": true
+        },
         "children": [
           {
             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
             "settingDefinitionId": "Setting Definition Id value",
+            "settingInstanceTemplateReference": {
+              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+              "settingInstanceTemplateId": "Setting Instance Template Id value"
+            },
             "choiceSettingValue": {
               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+              "settingValueTemplateReference": {
+                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                "settingValueTemplateId": "Setting Value Template Id value",
+                "useTemplateDefault": true
+              },
               "value": "Value value",
               "children": [
                 {
                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                   "settingDefinitionId": "Setting Definition Id value",
+                  "settingInstanceTemplateReference": {
+                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                    "settingInstanceTemplateId": "Setting Instance Template Id value"
+                  },
                   "choiceSettingValue": {
                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                    "settingValueTemplateReference": {
+                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                      "settingValueTemplateId": "Setting Value Template Id value",
+                      "useTemplateDefault": true
+                    },
                     "value": "Value value",
                     "children": [
                       {
                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                         "settingDefinitionId": "Setting Definition Id value",
+                        "settingInstanceTemplateReference": {
+                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                          "settingInstanceTemplateId": "Setting Instance Template Id value"
+                        },
                         "choiceSettingValue": {
                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                          "settingValueTemplateReference": {
+                            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                            "settingValueTemplateId": "Setting Value Template Id value",
+                            "useTemplateDefault": true
+                          },
                           "value": "Value value",
                           "children": [
                             {
                               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                               "settingDefinitionId": "Setting Definition Id value",
+                              "settingInstanceTemplateReference": {
+                                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                "settingInstanceTemplateId": "Setting Instance Template Id value"
+                              },
                               "choiceSettingValue": {
                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                "settingValueTemplateReference": {
+                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                  "settingValueTemplateId": "Setting Value Template Id value",
+                                  "useTemplateDefault": true
+                                },
                                 "value": "Value value",
                                 "children": [
                                   {
                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                     "settingDefinitionId": "Setting Definition Id value",
+                                    "settingInstanceTemplateReference": {
+                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                      "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                    },
                                     "choiceSettingValue": {
                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                      "settingValueTemplateReference": {
+                                        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                        "settingValueTemplateId": "Setting Value Template Id value",
+                                        "useTemplateDefault": true
+                                      },
                                       "value": "Value value",
                                       "children": [
                                         {
                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                           "settingDefinitionId": "Setting Definition Id value",
+                                          "settingInstanceTemplateReference": {
+                                            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                            "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                          },
                                           "choiceSettingValue": {
                                             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                            "settingValueTemplateReference": {
+                                              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                              "settingValueTemplateId": "Setting Value Template Id value",
+                                              "useTemplateDefault": true
+                                            },
                                             "value": "Value value",
                                             "children": [
                                               {
                                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                 "settingDefinitionId": "Setting Definition Id value",
+                                                "settingInstanceTemplateReference": {
+                                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                  "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                },
                                                 "choiceSettingValue": {
                                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                  "settingValueTemplateReference": {
+                                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                    "settingValueTemplateId": "Setting Value Template Id value",
+                                                    "useTemplateDefault": true
+                                                  },
                                                   "value": "Value value",
                                                   "children": [
                                                     {
                                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                       "settingDefinitionId": "Setting Definition Id value",
+                                                      "settingInstanceTemplateReference": {
+                                                        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                        "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                      },
                                                       "choiceSettingValue": {
                                                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                        "settingValueTemplateReference": {
+                                                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                          "settingValueTemplateId": "Setting Value Template Id value",
+                                                          "useTemplateDefault": true
+                                                        },
                                                         "value": "Value value",
                                                         "children": [
                                                           {
                                                             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                             "settingDefinitionId": "Setting Definition Id value",
+                                                            "settingInstanceTemplateReference": {
+                                                              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                              "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                            },
                                                             "choiceSettingValue": {
                                                               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                              "settingValueTemplateReference": {
+                                                                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                "settingValueTemplateId": "Setting Value Template Id value",
+                                                                "useTemplateDefault": true
+                                                              },
                                                               "value": "Value value",
                                                               "children": [
                                                                 {
                                                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                                   "settingDefinitionId": "Setting Definition Id value",
+                                                                  "settingInstanceTemplateReference": {
+                                                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                    "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                                  },
                                                                   "choiceSettingValue": {
                                                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                    "settingValueTemplateReference": {
+                                                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                      "settingValueTemplateId": "Setting Value Template Id value",
+                                                                      "useTemplateDefault": true
+                                                                    },
                                                                     "value": "Value value",
                                                                     "children": [
                                                                       {
                                                                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                                         "settingDefinitionId": "Setting Definition Id value",
+                                                                        "settingInstanceTemplateReference": {
+                                                                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                          "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                                        },
                                                                         "choiceSettingValue": {
                                                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                          "settingValueTemplateReference": null,
                                                                           "value": "Value value",
                                                                           "children": null
                                                                         }
@@ -272,12 +373,12 @@ Content-length: 10158
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9fb49-207">响应</span><span class="sxs-lookup"><span data-stu-id="9fb49-207">Response</span></span>
-<span data-ttu-id="9fb49-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9fb49-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="81469-207">响应</span><span class="sxs-lookup"><span data-stu-id="81469-207">Response</span></span>
+<span data-ttu-id="81469-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="81469-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10207
+Content-Length: 19110
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
@@ -324,82 +425,182 @@ Content-Length: 10207
       "@odata.type": "microsoft.graph.deviceManagementConfigurationOptionDefinition",
       "optionValue": {
         "@odata.type": "microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+        "settingValueTemplateReference": {
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+          "settingValueTemplateId": "Setting Value Template Id value",
+          "useTemplateDefault": true
+        },
         "children": [
           {
             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
             "settingDefinitionId": "Setting Definition Id value",
+            "settingInstanceTemplateReference": {
+              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+              "settingInstanceTemplateId": "Setting Instance Template Id value"
+            },
             "choiceSettingValue": {
               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+              "settingValueTemplateReference": {
+                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                "settingValueTemplateId": "Setting Value Template Id value",
+                "useTemplateDefault": true
+              },
               "value": "Value value",
               "children": [
                 {
                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                   "settingDefinitionId": "Setting Definition Id value",
+                  "settingInstanceTemplateReference": {
+                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                    "settingInstanceTemplateId": "Setting Instance Template Id value"
+                  },
                   "choiceSettingValue": {
                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                    "settingValueTemplateReference": {
+                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                      "settingValueTemplateId": "Setting Value Template Id value",
+                      "useTemplateDefault": true
+                    },
                     "value": "Value value",
                     "children": [
                       {
                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                         "settingDefinitionId": "Setting Definition Id value",
+                        "settingInstanceTemplateReference": {
+                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                          "settingInstanceTemplateId": "Setting Instance Template Id value"
+                        },
                         "choiceSettingValue": {
                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                          "settingValueTemplateReference": {
+                            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                            "settingValueTemplateId": "Setting Value Template Id value",
+                            "useTemplateDefault": true
+                          },
                           "value": "Value value",
                           "children": [
                             {
                               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                               "settingDefinitionId": "Setting Definition Id value",
+                              "settingInstanceTemplateReference": {
+                                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                "settingInstanceTemplateId": "Setting Instance Template Id value"
+                              },
                               "choiceSettingValue": {
                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                "settingValueTemplateReference": {
+                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                  "settingValueTemplateId": "Setting Value Template Id value",
+                                  "useTemplateDefault": true
+                                },
                                 "value": "Value value",
                                 "children": [
                                   {
                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                     "settingDefinitionId": "Setting Definition Id value",
+                                    "settingInstanceTemplateReference": {
+                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                      "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                    },
                                     "choiceSettingValue": {
                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                      "settingValueTemplateReference": {
+                                        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                        "settingValueTemplateId": "Setting Value Template Id value",
+                                        "useTemplateDefault": true
+                                      },
                                       "value": "Value value",
                                       "children": [
                                         {
                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                           "settingDefinitionId": "Setting Definition Id value",
+                                          "settingInstanceTemplateReference": {
+                                            "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                            "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                          },
                                           "choiceSettingValue": {
                                             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                            "settingValueTemplateReference": {
+                                              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                              "settingValueTemplateId": "Setting Value Template Id value",
+                                              "useTemplateDefault": true
+                                            },
                                             "value": "Value value",
                                             "children": [
                                               {
                                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                 "settingDefinitionId": "Setting Definition Id value",
+                                                "settingInstanceTemplateReference": {
+                                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                  "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                },
                                                 "choiceSettingValue": {
                                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                  "settingValueTemplateReference": {
+                                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                    "settingValueTemplateId": "Setting Value Template Id value",
+                                                    "useTemplateDefault": true
+                                                  },
                                                   "value": "Value value",
                                                   "children": [
                                                     {
                                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                       "settingDefinitionId": "Setting Definition Id value",
+                                                      "settingInstanceTemplateReference": {
+                                                        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                        "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                      },
                                                       "choiceSettingValue": {
                                                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                        "settingValueTemplateReference": {
+                                                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                          "settingValueTemplateId": "Setting Value Template Id value",
+                                                          "useTemplateDefault": true
+                                                        },
                                                         "value": "Value value",
                                                         "children": [
                                                           {
                                                             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                             "settingDefinitionId": "Setting Definition Id value",
+                                                            "settingInstanceTemplateReference": {
+                                                              "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                              "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                            },
                                                             "choiceSettingValue": {
                                                               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                              "settingValueTemplateReference": {
+                                                                "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                "settingValueTemplateId": "Setting Value Template Id value",
+                                                                "useTemplateDefault": true
+                                                              },
                                                               "value": "Value value",
                                                               "children": [
                                                                 {
                                                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                                   "settingDefinitionId": "Setting Definition Id value",
+                                                                  "settingInstanceTemplateReference": {
+                                                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                    "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                                  },
                                                                   "choiceSettingValue": {
                                                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                    "settingValueTemplateReference": {
+                                                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                      "settingValueTemplateId": "Setting Value Template Id value",
+                                                                      "useTemplateDefault": true
+                                                                    },
                                                                     "value": "Value value",
                                                                     "children": [
                                                                       {
                                                                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                                         "settingDefinitionId": "Setting Definition Id value",
+                                                                        "settingInstanceTemplateReference": {
+                                                                          "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                          "settingInstanceTemplateId": "Setting Instance Template Id value"
+                                                                        },
                                                                         "choiceSettingValue": {
                                                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                          "settingValueTemplateReference": null,
                                                                           "value": "Value value",
                                                                           "children": null
                                                                         }

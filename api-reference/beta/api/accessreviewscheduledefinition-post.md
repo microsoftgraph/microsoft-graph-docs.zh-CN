@@ -5,77 +5,77 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8d780ab183ca5fd505fd4088f7078718c5646c73
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: a4b7bcb9a568948e832611f15f9aefa59c32feb6
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579959"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664583"
 ---
-# <a name="create-accessreviewscheduledefinition"></a><span data-ttu-id="721bc-103">创建 accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="721bc-103">Create accessReviewScheduleDefinition</span></span>
+# <a name="create-accessreviewscheduledefinition"></a><span data-ttu-id="58ea4-103">创建 accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="58ea4-103">Create accessReviewScheduleDefinition</span></span>
 
-<span data-ttu-id="721bc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="721bc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="58ea4-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="58ea4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="721bc-105">创建新的 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="721bc-105">Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+<span data-ttu-id="58ea4-105">创建新的 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="58ea4-105">Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="721bc-106">权限</span><span class="sxs-lookup"><span data-stu-id="721bc-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="58ea4-106">权限</span><span class="sxs-lookup"><span data-stu-id="58ea4-106">Permissions</span></span>
 
-<span data-ttu-id="721bc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="721bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="58ea4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="58ea4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="721bc-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="721bc-109">Permission type</span></span>                        | <span data-ttu-id="721bc-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="721bc-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="58ea4-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="58ea4-109">Permission type</span></span>                        | <span data-ttu-id="58ea4-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="58ea4-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="721bc-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="721bc-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="721bc-112">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="721bc-112">AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="721bc-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="721bc-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="721bc-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="721bc-114">Not supported.</span></span>|
-|<span data-ttu-id="721bc-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="721bc-115">Application</span></span>                            | <span data-ttu-id="721bc-116">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="721bc-116">AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="58ea4-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="58ea4-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="58ea4-112">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="58ea4-112">AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="58ea4-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="58ea4-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="58ea4-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="58ea4-114">Not supported.</span></span>|
+|<span data-ttu-id="58ea4-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="58ea4-115">Application</span></span>                            | <span data-ttu-id="58ea4-116">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="58ea4-116">AccessReview.ReadWrite.All</span></span> |
 
-<span data-ttu-id="721bc-117">登录用户还必须具有允许其创建访问评审的目录角色。</span><span class="sxs-lookup"><span data-stu-id="721bc-117">The signed-in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="721bc-118">有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-root.md)。</span><span class="sxs-lookup"><span data-stu-id="721bc-118">For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).</span></span>
+<span data-ttu-id="58ea4-117">登录用户还必须具有允许其创建访问评审的目录角色。</span><span class="sxs-lookup"><span data-stu-id="58ea4-117">The signed-in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="58ea4-118">有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-root.md)。</span><span class="sxs-lookup"><span data-stu-id="58ea4-118">For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="721bc-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="721bc-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="58ea4-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="58ea4-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /identityGovernance/accessReviews/definitions
 ```
-## <a name="request-headers"></a><span data-ttu-id="721bc-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="721bc-120">Request headers</span></span>
-| <span data-ttu-id="721bc-121">名称</span><span class="sxs-lookup"><span data-stu-id="721bc-121">Name</span></span>         | <span data-ttu-id="721bc-122">说明</span><span class="sxs-lookup"><span data-stu-id="721bc-122">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="58ea4-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="58ea4-120">Request headers</span></span>
+| <span data-ttu-id="58ea4-121">名称</span><span class="sxs-lookup"><span data-stu-id="58ea4-121">Name</span></span>         | <span data-ttu-id="58ea4-122">说明</span><span class="sxs-lookup"><span data-stu-id="58ea4-122">Description</span></span> |
 |:-------------|:------------|
-|<span data-ttu-id="721bc-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="721bc-123">Authorization</span></span>|<span data-ttu-id="721bc-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="721bc-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="721bc-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="721bc-126">Content-type</span></span> | <span data-ttu-id="721bc-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="721bc-p104">application/json. Required.</span></span> |
+|<span data-ttu-id="58ea4-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="58ea4-123">Authorization</span></span>|<span data-ttu-id="58ea4-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="58ea4-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="58ea4-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="58ea4-126">Content-type</span></span> | <span data-ttu-id="58ea4-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="58ea4-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="721bc-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="721bc-129">Request body</span></span>
-<span data-ttu-id="721bc-130">在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="721bc-130">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="58ea4-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="58ea4-129">Request body</span></span>
+<span data-ttu-id="58ea4-130">在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="58ea4-130">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="721bc-131">下表显示了创建 accessReview 时接受的属性。</span><span class="sxs-lookup"><span data-stu-id="721bc-131">The following table shows the properties accepted to create an accessReview.</span></span>
+<span data-ttu-id="58ea4-131">下表显示了创建 accessReview 时接受的属性。</span><span class="sxs-lookup"><span data-stu-id="58ea4-131">The following table shows the properties accepted to create an accessReview.</span></span>
 
-| <span data-ttu-id="721bc-132">属性</span><span class="sxs-lookup"><span data-stu-id="721bc-132">Property</span></span> | <span data-ttu-id="721bc-133">类型</span><span class="sxs-lookup"><span data-stu-id="721bc-133">Type</span></span> | <span data-ttu-id="721bc-134">说明</span><span class="sxs-lookup"><span data-stu-id="721bc-134">Description</span></span> |
+| <span data-ttu-id="58ea4-132">属性</span><span class="sxs-lookup"><span data-stu-id="58ea4-132">Property</span></span> | <span data-ttu-id="58ea4-133">类型</span><span class="sxs-lookup"><span data-stu-id="58ea4-133">Type</span></span> | <span data-ttu-id="58ea4-134">说明</span><span class="sxs-lookup"><span data-stu-id="58ea4-134">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="721bc-135">displayName</span><span class="sxs-lookup"><span data-stu-id="721bc-135">displayName</span></span> | <span data-ttu-id="721bc-136">String</span><span class="sxs-lookup"><span data-stu-id="721bc-136">String</span></span> | <span data-ttu-id="721bc-137">访问评审系列的名称。</span><span class="sxs-lookup"><span data-stu-id="721bc-137">Name of access review series.</span></span> <span data-ttu-id="721bc-138">必填。</span><span class="sxs-lookup"><span data-stu-id="721bc-138">Required.</span></span>|
-| <span data-ttu-id="721bc-139">descriptionForAdmins</span><span class="sxs-lookup"><span data-stu-id="721bc-139">descriptionForAdmins</span></span> | <span data-ttu-id="721bc-140">string</span><span class="sxs-lookup"><span data-stu-id="721bc-140">string</span></span> | <span data-ttu-id="721bc-141">提供给管理员评价的上下文。</span><span class="sxs-lookup"><span data-stu-id="721bc-141">Context of the review provided to admins.</span></span> <span data-ttu-id="721bc-142">必填。</span><span class="sxs-lookup"><span data-stu-id="721bc-142">Required.</span></span> |
-  <span data-ttu-id="721bc-143">descriptionForReviewers</span><span class="sxs-lookup"><span data-stu-id="721bc-143">descriptionForReviewers</span></span> | <span data-ttu-id="721bc-144">string</span><span class="sxs-lookup"><span data-stu-id="721bc-144">string</span></span> | <span data-ttu-id="721bc-145">提供给审阅者的审阅上下文。</span><span class="sxs-lookup"><span data-stu-id="721bc-145">Context of the review provided to reviewers.</span></span> <span data-ttu-id="721bc-146">必填。</span><span class="sxs-lookup"><span data-stu-id="721bc-146">Required.</span></span> |
-| <span data-ttu-id="721bc-147">范围</span><span class="sxs-lookup"><span data-stu-id="721bc-147">scope</span></span> | [<span data-ttu-id="721bc-148">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="721bc-148">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="721bc-149">定义在组中查看的用户范围。</span><span class="sxs-lookup"><span data-stu-id="721bc-149">Defines the scope of users reviewed in a group.</span></span> <span data-ttu-id="721bc-150">请参阅  [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。</span><span class="sxs-lookup"><span data-stu-id="721bc-150">See  [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span> <span data-ttu-id="721bc-151">必填。</span><span class="sxs-lookup"><span data-stu-id="721bc-151">Required.</span></span>| 
-| <span data-ttu-id="721bc-152">instanceEnumerationScope</span><span class="sxs-lookup"><span data-stu-id="721bc-152">instanceEnumerationScope</span></span> | [<span data-ttu-id="721bc-153">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="721bc-153">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="721bc-154">对于所有组评审，这将确定将审核哪些组的范围。</span><span class="sxs-lookup"><span data-stu-id="721bc-154">In the case of an all groups review, this determines the scope of which groups will be reviewed.</span></span> <span data-ttu-id="721bc-155">请参阅 [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。</span><span class="sxs-lookup"><span data-stu-id="721bc-155">See [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span>| 
-| <span data-ttu-id="721bc-156">settings</span><span class="sxs-lookup"><span data-stu-id="721bc-156">settings</span></span> | [<span data-ttu-id="721bc-157">accessReviewScheduleSettings</span><span class="sxs-lookup"><span data-stu-id="721bc-157">accessReviewScheduleSettings</span></span>](../resources/accessreviewschedulesettings.md)| <span data-ttu-id="721bc-158">访问评审系列的设置。</span><span class="sxs-lookup"><span data-stu-id="721bc-158">The settings for an access review series.</span></span> <span data-ttu-id="721bc-159">定期在此处确定。</span><span class="sxs-lookup"><span data-stu-id="721bc-159">Recurrence is determined here.</span></span> <span data-ttu-id="721bc-160">请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="721bc-160">See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span></span> |
-| <span data-ttu-id="721bc-161">reviewers</span><span class="sxs-lookup"><span data-stu-id="721bc-161">reviewers</span></span> | <span data-ttu-id="721bc-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合</span><span class="sxs-lookup"><span data-stu-id="721bc-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span> | <span data-ttu-id="721bc-163">定义审阅者是谁。</span><span class="sxs-lookup"><span data-stu-id="721bc-163">Defines who the reviewers are.</span></span> <span data-ttu-id="721bc-164">如果未指定任何内容，则评论是自 (审阅用户自己的访问权限或) 。</span><span class="sxs-lookup"><span data-stu-id="721bc-164">If none are specified, the review is a self-review (users reviewed review their own access).</span></span> <span data-ttu-id="721bc-165">请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="721bc-165">See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md).</span></span> |
+| <span data-ttu-id="58ea4-135">displayName</span><span class="sxs-lookup"><span data-stu-id="58ea4-135">displayName</span></span> | <span data-ttu-id="58ea4-136">String</span><span class="sxs-lookup"><span data-stu-id="58ea4-136">String</span></span> | <span data-ttu-id="58ea4-137">访问评审系列的名称。</span><span class="sxs-lookup"><span data-stu-id="58ea4-137">Name of access review series.</span></span> <span data-ttu-id="58ea4-138">必需。</span><span class="sxs-lookup"><span data-stu-id="58ea4-138">Required.</span></span>|
+| <span data-ttu-id="58ea4-139">descriptionForAdmins</span><span class="sxs-lookup"><span data-stu-id="58ea4-139">descriptionForAdmins</span></span> | <span data-ttu-id="58ea4-140">string</span><span class="sxs-lookup"><span data-stu-id="58ea4-140">string</span></span> | <span data-ttu-id="58ea4-141">提供给管理员评价的上下文。</span><span class="sxs-lookup"><span data-stu-id="58ea4-141">Context of the review provided to admins.</span></span> <span data-ttu-id="58ea4-142">必需。</span><span class="sxs-lookup"><span data-stu-id="58ea4-142">Required.</span></span> |
+  <span data-ttu-id="58ea4-143">descriptionForReviewers</span><span class="sxs-lookup"><span data-stu-id="58ea4-143">descriptionForReviewers</span></span> | <span data-ttu-id="58ea4-144">string</span><span class="sxs-lookup"><span data-stu-id="58ea4-144">string</span></span> | <span data-ttu-id="58ea4-145">提供给审阅者的审阅上下文。</span><span class="sxs-lookup"><span data-stu-id="58ea4-145">Context of the review provided to reviewers.</span></span> <span data-ttu-id="58ea4-146">必需。</span><span class="sxs-lookup"><span data-stu-id="58ea4-146">Required.</span></span> |
+| <span data-ttu-id="58ea4-147">范围</span><span class="sxs-lookup"><span data-stu-id="58ea4-147">scope</span></span> | [<span data-ttu-id="58ea4-148">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="58ea4-148">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="58ea4-149">定义在组中查看的用户范围。</span><span class="sxs-lookup"><span data-stu-id="58ea4-149">Defines the scope of users reviewed in a group.</span></span> <span data-ttu-id="58ea4-150">请参阅  [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。</span><span class="sxs-lookup"><span data-stu-id="58ea4-150">See  [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span> <span data-ttu-id="58ea4-151">必需。</span><span class="sxs-lookup"><span data-stu-id="58ea4-151">Required.</span></span>| 
+| <span data-ttu-id="58ea4-152">instanceEnumerationScope</span><span class="sxs-lookup"><span data-stu-id="58ea4-152">instanceEnumerationScope</span></span> | [<span data-ttu-id="58ea4-153">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="58ea4-153">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="58ea4-154">对于所有组评审，这将确定将审核哪些组的范围。</span><span class="sxs-lookup"><span data-stu-id="58ea4-154">In the case of an all groups review, this determines the scope of which groups will be reviewed.</span></span> <span data-ttu-id="58ea4-155">请参阅 [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。</span><span class="sxs-lookup"><span data-stu-id="58ea4-155">See [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span>| 
+| <span data-ttu-id="58ea4-156">settings</span><span class="sxs-lookup"><span data-stu-id="58ea4-156">settings</span></span> | [<span data-ttu-id="58ea4-157">accessReviewScheduleSettings</span><span class="sxs-lookup"><span data-stu-id="58ea4-157">accessReviewScheduleSettings</span></span>](../resources/accessreviewschedulesettings.md)| <span data-ttu-id="58ea4-158">访问评审系列的设置。</span><span class="sxs-lookup"><span data-stu-id="58ea4-158">The settings for an access review series.</span></span> <span data-ttu-id="58ea4-159">定期在此处确定。</span><span class="sxs-lookup"><span data-stu-id="58ea4-159">Recurrence is determined here.</span></span> <span data-ttu-id="58ea4-160">请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="58ea4-160">See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span></span> |
+| <span data-ttu-id="58ea4-161">reviewers</span><span class="sxs-lookup"><span data-stu-id="58ea4-161">reviewers</span></span> | <span data-ttu-id="58ea4-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合</span><span class="sxs-lookup"><span data-stu-id="58ea4-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span> | <span data-ttu-id="58ea4-163">定义审阅者是谁。</span><span class="sxs-lookup"><span data-stu-id="58ea4-163">Defines who the reviewers are.</span></span> <span data-ttu-id="58ea4-164">如果未指定任何内容，则评论是自 (审阅用户自己的访问权限或) 。</span><span class="sxs-lookup"><span data-stu-id="58ea4-164">If none are specified, the review is a self-review (users reviewed review their own access).</span></span> <span data-ttu-id="58ea4-165">请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="58ea4-165">See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md).</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="721bc-166">响应</span><span class="sxs-lookup"><span data-stu-id="721bc-166">Response</span></span>
-<span data-ttu-id="721bc-167">如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="721bc-167">If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="58ea4-166">响应</span><span class="sxs-lookup"><span data-stu-id="58ea4-166">Response</span></span>
+<span data-ttu-id="58ea4-167">如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="58ea4-167">If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="721bc-168">示例</span><span class="sxs-lookup"><span data-stu-id="721bc-168">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="58ea4-168">示例</span><span class="sxs-lookup"><span data-stu-id="58ea4-168">Examples</span></span>
 
-### <a name="example-1-create-an-access-review-on-a-group"></a><span data-ttu-id="721bc-169">示例 1：在组上创建访问评审</span><span class="sxs-lookup"><span data-stu-id="721bc-169">Example 1: Create an access review on a group</span></span>
+### <a name="example-1-create-an-access-review-on-a-group"></a><span data-ttu-id="58ea4-169">示例 1：在组上创建访问评审</span><span class="sxs-lookup"><span data-stu-id="58ea4-169">Example 1: Create an access review on a group</span></span>
 
-<span data-ttu-id="721bc-170">这是一个创建具有以下设置的访问评审的示例：</span><span class="sxs-lookup"><span data-stu-id="721bc-170">This is an example of creating an access review with the following settings:</span></span>
-+ <span data-ttu-id="721bc-171">评价将审阅组的所有成员，其组 **ID 为** `02f3bafb-448c-487c-88c2-5fd65ce49a41` 。</span><span class="sxs-lookup"><span data-stu-id="721bc-171">The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.</span></span>
-+ <span data-ttu-id="721bc-172">用户 ID 为审阅 **者** `398164b1-5196-49dd-ada2-364b49f99b27` 的特定用户。</span><span class="sxs-lookup"><span data-stu-id="721bc-172">A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.</span></span>
-+ <span data-ttu-id="721bc-173">它每周重复一次，并无限期地继续。</span><span class="sxs-lookup"><span data-stu-id="721bc-173">It recurs weekly and continues indefinitely.</span></span>
+<span data-ttu-id="58ea4-170">这是一个创建具有以下设置的访问评审的示例：</span><span class="sxs-lookup"><span data-stu-id="58ea4-170">This is an example of creating an access review with the following settings:</span></span>
++ <span data-ttu-id="58ea4-171">评价将审阅组的所有成员，其组 **ID 为** `02f3bafb-448c-487c-88c2-5fd65ce49a41` 。</span><span class="sxs-lookup"><span data-stu-id="58ea4-171">The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.</span></span>
++ <span data-ttu-id="58ea4-172">用户 ID 为审阅 **者** `398164b1-5196-49dd-ada2-364b49f99b27` 的特定用户。</span><span class="sxs-lookup"><span data-stu-id="58ea4-172">A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.</span></span>
++ <span data-ttu-id="58ea4-173">它每周重复一次，并无限期地继续。</span><span class="sxs-lookup"><span data-stu-id="58ea4-173">It recurs weekly and continues indefinitely.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="721bc-174">请求</span><span class="sxs-lookup"><span data-stu-id="721bc-174">Request</span></span>
-<span data-ttu-id="721bc-175">在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="721bc-175">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+#### <a name="request"></a><span data-ttu-id="58ea4-174">请求</span><span class="sxs-lookup"><span data-stu-id="58ea4-174">Request</span></span>
+<span data-ttu-id="58ea4-175">在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="58ea4-175">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="721bc-176">HTTP</span><span class="sxs-lookup"><span data-stu-id="721bc-176">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="58ea4-176">HTTP</span><span class="sxs-lookup"><span data-stu-id="58ea4-176">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition"
@@ -119,27 +119,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="721bc-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="721bc-177">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="58ea4-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="58ea4-177">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="721bc-178">C#</span><span class="sxs-lookup"><span data-stu-id="721bc-178">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="58ea4-178">C#</span><span class="sxs-lookup"><span data-stu-id="58ea4-178">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="721bc-179">Objective-C</span><span class="sxs-lookup"><span data-stu-id="721bc-179">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="58ea4-179">Objective-C</span><span class="sxs-lookup"><span data-stu-id="58ea4-179">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="721bc-180">Java</span><span class="sxs-lookup"><span data-stu-id="721bc-180">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="58ea4-180">Java</span><span class="sxs-lookup"><span data-stu-id="58ea4-180">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="721bc-181">响应</span><span class="sxs-lookup"><span data-stu-id="721bc-181">Response</span></span>
-><span data-ttu-id="721bc-182">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="721bc-182">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="58ea4-181">响应</span><span class="sxs-lookup"><span data-stu-id="58ea4-181">Response</span></span>
+><span data-ttu-id="58ea4-182">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="58ea4-182">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -206,16 +206,18 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-access-review-on-all-teams-with-inactive-guest-users"></a><span data-ttu-id="721bc-183">示例 2：在具有非活动来宾用户的所有团队上创建访问评审</span><span class="sxs-lookup"><span data-stu-id="721bc-183">Example 2: Create an access review on all teams with inactive guest users</span></span>
+### <a name="example-2-create-an-access-review-on-all-teams-with-inactive-guest-users"></a><span data-ttu-id="58ea4-183">示例 2：在具有非活动来宾用户的所有团队上创建访问评审</span><span class="sxs-lookup"><span data-stu-id="58ea4-183">Example 2: Create an access review on all teams with inactive guest users</span></span>
 
-<span data-ttu-id="721bc-184">这是一个创建具有以下设置的访问评审的示例：</span><span class="sxs-lookup"><span data-stu-id="721bc-184">This is an example of creating an access review with the following settings:</span></span>
-+ <span data-ttu-id="721bc-185">该评论将审核具有非活动来宾用户的所有团队。</span><span class="sxs-lookup"><span data-stu-id="721bc-185">The review reviews all teams with inactive guest users.</span></span> <span data-ttu-id="721bc-186">非活动期为自访问评审开始日期起 30 天。</span><span class="sxs-lookup"><span data-stu-id="721bc-186">The period of inactivity is 30 days from the start date of the access review.</span></span>
-+ <span data-ttu-id="721bc-187">组所有者为审阅者，并分配回退审阅者。</span><span class="sxs-lookup"><span data-stu-id="721bc-187">The group owners are the reviewers and fallback reviewers are assigned.</span></span>
-+ <span data-ttu-id="721bc-188">它每季度的第三天重复发生，并无限期地继续。</span><span class="sxs-lookup"><span data-stu-id="721bc-188">It recurs on the third day of every quarter and continues indefinitely.</span></span>
-+ <span data-ttu-id="721bc-189">**autoApplyDecisionsEnabled** 设置为 ，将 `true` **defaultDecision 设置为** `Deny` 。</span><span class="sxs-lookup"><span data-stu-id="721bc-189">**autoApplyDecisionsEnabled** is set to `true` with the **defaultDecision** set to `Deny`.</span></span>
+<span data-ttu-id="58ea4-184">这是一个创建具有以下设置的访问评审的示例：</span><span class="sxs-lookup"><span data-stu-id="58ea4-184">This is an example of creating an access review with the following settings:</span></span>
++ <span data-ttu-id="58ea4-185">该评论将审核具有非活动来宾用户的所有团队。</span><span class="sxs-lookup"><span data-stu-id="58ea4-185">The review reviews all teams with inactive guest users.</span></span> <span data-ttu-id="58ea4-186">非活动期为自访问评审开始日期起 30 天。</span><span class="sxs-lookup"><span data-stu-id="58ea4-186">The period of inactivity is 30 days from the start date of the access review.</span></span>
++ <span data-ttu-id="58ea4-187">组所有者为审阅者，并分配回退审阅者。</span><span class="sxs-lookup"><span data-stu-id="58ea4-187">The group owners are the reviewers and fallback reviewers are assigned.</span></span>
++ <span data-ttu-id="58ea4-188">它每季度的第三天重复发生，并无限期地继续。</span><span class="sxs-lookup"><span data-stu-id="58ea4-188">It recurs on the third day of every quarter and continues indefinitely.</span></span>
++ <span data-ttu-id="58ea4-189">**autoApplyDecisionsEnabled** 设置为 ，将 `true` **defaultDecision 设置为** `Deny` 。</span><span class="sxs-lookup"><span data-stu-id="58ea4-189">**autoApplyDecisionsEnabled** is set to `true` with the **defaultDecision** set to `Deny`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="721bc-190">请求</span><span class="sxs-lookup"><span data-stu-id="721bc-190">Request</span></span>
-<span data-ttu-id="721bc-191">在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="721bc-191">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+#### <a name="request"></a><span data-ttu-id="58ea4-190">请求</span><span class="sxs-lookup"><span data-stu-id="58ea4-190">Request</span></span>
+<span data-ttu-id="58ea4-191">在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="58ea4-191">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="58ea4-192">HTTP</span><span class="sxs-lookup"><span data-stu-id="58ea4-192">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_inactiveguests_M365"
@@ -274,9 +276,27 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="58ea4-193">C#</span><span class="sxs-lookup"><span data-stu-id="58ea4-193">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-inactiveguests-m365-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="721bc-192">响应</span><span class="sxs-lookup"><span data-stu-id="721bc-192">Response</span></span>
-><span data-ttu-id="721bc-193">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="721bc-193">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="58ea4-194">JavaScript</span><span class="sxs-lookup"><span data-stu-id="58ea4-194">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-inactiveguests-m365-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="58ea4-195">Objective-C</span><span class="sxs-lookup"><span data-stu-id="58ea4-195">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-inactiveguests-m365-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="58ea4-196">Java</span><span class="sxs-lookup"><span data-stu-id="58ea4-196">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="58ea4-197">响应</span><span class="sxs-lookup"><span data-stu-id="58ea4-197">Response</span></span>
+><span data-ttu-id="58ea4-198">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="58ea4-198">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -370,14 +390,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a><span data-ttu-id="721bc-194">示例 3：创建对应用程序的所有用户的访问评审</span><span class="sxs-lookup"><span data-stu-id="721bc-194">Example 3: Create an access review of all users to an application</span></span>
+### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a><span data-ttu-id="58ea4-199">示例 3：创建对应用程序的所有用户的访问评审</span><span class="sxs-lookup"><span data-stu-id="58ea4-199">Example 3: Create an access review of all users to an application</span></span>
 
-<span data-ttu-id="721bc-195">这是一个创建具有以下设置的访问评审的示例：</span><span class="sxs-lookup"><span data-stu-id="721bc-195">This is an example of creating an access review with the following settings:</span></span>
-+ <span data-ttu-id="721bc-196">该评论将审核用户对应用程序的访问权限。</span><span class="sxs-lookup"><span data-stu-id="721bc-196">The review reviews user access to an application.</span></span>
-+ <span data-ttu-id="721bc-197">人员经理是审阅者，回退审阅者是组的成员。</span><span class="sxs-lookup"><span data-stu-id="721bc-197">The people managers are the reviewers and fallback reviewers are the members of a group.</span></span>
-+ <span data-ttu-id="721bc-198">它每半年重复一次，自 startDate 起 1 年后结束。</span><span class="sxs-lookup"><span data-stu-id="721bc-198">It recurs semi-annually and ends 1 year from the startDate.</span></span>
+<span data-ttu-id="58ea4-200">这是一个创建具有以下设置的访问评审的示例：</span><span class="sxs-lookup"><span data-stu-id="58ea4-200">This is an example of creating an access review with the following settings:</span></span>
++ <span data-ttu-id="58ea4-201">该评论将审核用户对应用程序的访问权限。</span><span class="sxs-lookup"><span data-stu-id="58ea4-201">The review reviews user access to an application.</span></span>
++ <span data-ttu-id="58ea4-202">人员经理是审阅者，回退审阅者是组的成员。</span><span class="sxs-lookup"><span data-stu-id="58ea4-202">The people managers are the reviewers and fallback reviewers are the members of a group.</span></span>
++ <span data-ttu-id="58ea4-203">它每半年重复一次，自 startDate 起 1 年后结束。</span><span class="sxs-lookup"><span data-stu-id="58ea4-203">It recurs semi-annually and ends 1 year from the startDate.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="721bc-199">请求</span><span class="sxs-lookup"><span data-stu-id="721bc-199">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="58ea4-204">请求</span><span class="sxs-lookup"><span data-stu-id="58ea4-204">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="58ea4-205">HTTP</span><span class="sxs-lookup"><span data-stu-id="58ea4-205">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -449,9 +471,27 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="58ea4-206">C#</span><span class="sxs-lookup"><span data-stu-id="58ea4-206">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-allusers-m365-aadrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="721bc-200">响应</span><span class="sxs-lookup"><span data-stu-id="721bc-200">Response</span></span>
-><span data-ttu-id="721bc-201">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="721bc-201">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="58ea4-207">JavaScript</span><span class="sxs-lookup"><span data-stu-id="58ea4-207">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="58ea4-208">Objective-C</span><span class="sxs-lookup"><span data-stu-id="58ea4-208">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-allusers-m365-aadrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="58ea4-209">Java</span><span class="sxs-lookup"><span data-stu-id="58ea4-209">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-allusers-m365-aadrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="58ea4-210">响应</span><span class="sxs-lookup"><span data-stu-id="58ea4-210">Response</span></span>
+><span data-ttu-id="58ea4-211">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="58ea4-211">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
