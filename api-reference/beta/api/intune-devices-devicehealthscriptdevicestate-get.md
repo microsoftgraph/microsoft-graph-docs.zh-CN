@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 395a160ad3ef0416e57dc43cefc98a9901dc07da
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 9ecc4321c72160f6283bb595c1b61be624ccd2c3
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130684"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52663892"
 ---
 # <a name="get-devicehealthscriptdevicestate"></a>获取 deviceHealthScriptDeviceState
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{devic
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 854
+Content-Length: 929
 
 {
   "value": {
@@ -83,7 +83,10 @@ Content-Length: 854
     "remediationScriptError": "Remediation Script Error value",
     "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
     "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-    "remediationState": "skipped"
+    "remediationState": "skipped",
+    "assignmentFilterIds": [
+      "Assignment Filter Ids value"
+    ]
   }
 }
 ```

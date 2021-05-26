@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51d25717f10db7ba29fb8364e513893c5e299266
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: dec644f55e7a96cec6cbb1680af12097c09525bc
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948482"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664004"
 ---
 # <a name="call-redirect"></a>call： redirect
 
@@ -57,8 +57,8 @@ POST /communications/calls/{id}/redirect
 |targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则这是一个同时调用。 这意味着所有目标将同时设定范围，并且只有第一个选取的目标将连接。 我们最多支持 25 个目标用于模拟。
 |targetDisposition|String| (弃) 可能的值是 `default` `simultaneousRing` `forward` ：、、。 此参数已弃用，我们将从提供的目标数自动标识它是一个转发呼叫还是同时调用。|
 |timeout|Int32|对于重定向 (超时) 秒数。 超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。 对于一个目标，默认超时值为 55 秒，对于多个目标，默认超时值为 60 秒 (可能会) 。 |
-|maskCallee|Boolean|指示是否向呼叫者隐藏被叫方。 如果为 true，则被叫方标识为机器人标识。 默认值：false。|
-|maskCaller|Boolean|指示是否向被叫方隐藏呼叫者。 如果为 true，则呼叫者标识为机器人标识。 默认值：false。|
+|maskCallee|布尔值|指示是否向呼叫者隐藏被叫方。 如果为 true，则被叫方标识为机器人标识。 默认值：false。|
+|maskCaller|布尔值|指示是否向被叫方隐藏呼叫者。 如果为 true，则呼叫者标识为机器人标识。 默认值：false。|
 |callbackUri|String|这允许机器人为当前呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。|
 
 ## <a name="response"></a>响应
@@ -418,6 +418,7 @@ Content-Type: application/json
 ### <a name="example-3-forward-a-call-to-a-pstn-number"></a>示例 3：将呼叫转发到 PSTN 号码
 
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+> **注意：电话** ID 是 E.164 格式的电话号码。
 
 #### <a name="notification---incoming"></a>通知 - 传入
 <!-- {
