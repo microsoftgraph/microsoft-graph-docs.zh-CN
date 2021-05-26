@@ -1,32 +1,48 @@
 ---
 title: Microsoft Graph 数据连接概述
 description: Microsoft Graph 数据连接将 Microsoft 365 数据引入到 Microsoft Azure 中，让你能够获取最佳的开发和托管工具来处理此数据。
-author: ajacks-msft
+author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9f93d895213c37858cf19db2b36c1f467e92fda5
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 1a257949e0de5537ccbea863ab99b1097feb4ae0
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897300"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629426"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接概述
-Microsoft Graph 包含有关工作人员及其工作区的丰富数据，包括有关人员如何工作以及他们如何沟通、协作和管理时间的信息。 Microsoft Graph 数据连接提供了一套工具来简化将此据传递到 Microsoft Azure 的过程，让你能够获取最佳的开发和托管工具来处理此数据。 这使客户能够受益于创新或行业特定的应用程序，这些应用程序可以提高他们的工作效率，同时他们又可以完全掌控其 Microsoft Graph 数据。 Microsoft 不断引入客户期望的更加安全的控件。
 
-## <a name="why-use-microsoft-graph-data-connect"></a>为什么使用 Microsoft Graph 数据连接？
-Microsoft 365 管理员必须仔细考虑移动和管理大量组织数据所固有的挑战。 Microsoft Graph 数据连接旨在为管理员提供对其数据的新控制；可以使用该数据生成创建数据驱动见解的应用。 
+Microsoft Graph 数据连接通过智能方式大规模访问丰富数据，增强了 Microsoft Graph 的事务性模型。 这些数据涵盖员工如何在 Microsoft 365 中的所有应用程序和服务之间进行沟通、协作和管理时间。 数据连接是大数据和机器学习的理想选择，让你能够通过将 Microsoft 365 数据扩展到 Azure 来开发用于分析、智能和业务流程优化的应用程序。 通过以这种方式集成，你将能够利用 Azure 中的大量计算、存储套件，同时保持符合行业标准并确保数据安全。
 
-### <a name="enable-granular-consent"></a>启用具体同意
+![图像显示在 Azure 云中的 Microsoft 365 数据和输出数据之间应用的数据控制。](images/data-connect-mgdc-capabilities.png)
 
-在 Microsoft Graph 同意模型中，管理员或用户只能授予或拒绝应用程序访问特定的预定义实体集的请求。 例如，对 Mail.Read 的请求包含对支持 Outlook 邮件的固定实体集的读取访问权限，其中包括具有其所有属性的整个 [message](/graph/api/resources/message?view=graph-rest-1.0) 实例。 相比之下，Microsoft Graph 数据连接允许更具体的同意，允许应用程序请求访问实体中的特定属性，或筛选这些属性中的数据。 在授予访问权限之前，管理员必须明确批准访问 Microsoft Graph 数据。 请求必须指定所请求的访问权限的级别，并说明数据策略实施、请求的原因以及所请求数据的架构。 因此，应用程序只能使用对其功能运行至关重要的数据，并排除不相关的内容。 例如，应用可使用电子邮件元数据，但排除正文内容和附件。 
+Microsoft Graph 数据连接使用 Azure 数据工厂以可配置的时间间隔将 Microsoft 365 数据复制到应用程序的存储中。 它还提供了一组工具来简化向 Microsoft Azure 传送此数据的过程，让你可以访问最适用的开发和托管工具。 数据连接还授权更精细的控制和同意模型：你可以管理数据，查看谁正在访问数据以及请求实体的特定属性。 这增强了 Microsoft Graph 模型，其授予或拒绝应用程序对整个实体的访问权限。
 
-### <a name="provide-data-governance"></a>提供数据治理
-Microsoft 正在促使 Microsoft Graph 和 Azure 之间就客户数据状态进行丰富的连接通信。 通过 Microsoft Graph 数据连接生成应用时，可以指定一组要遵循的详细策略。 然后，Microsoft 365 管理员可以查看并同意这些策略。 这种做法可最大限度地减少符合性管理开销。 获得同意后，Microsoft 会监视应用程序是否遵守策略。 如果应用程序违反（或试图违反）组织建立的策略，Microsoft 将停止向该应用程序传输数据。 
+你可以使用数据连接为你的组织启用机器学习方案。 在这些方案中，你可以创建应用程序来为利益相关者提供宝贵信息、训练机器学习模型，甚至根据采集的大量数据进行预测。
 
-### <a name="get-access-to-data-at-scale"></a>大规模访问数据
-丰富的应用程序需要访问大量数据，通常来自于组织中许多用户同时进行访问。 使用传统的事务性数据模型，你需要生成复杂的基础结构并进行数千次 API 调用以协调此数据交付。 Microsoft Graph 数据连接使用 Azure 数据工厂的强大功能，通过几个简单的步骤，以可重复的日程安排将组织中的 Microsoft 365 数据传递给应用程序。
+<iframe class="video-iframe" style="width: 960px; height: 540px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false"> </iframe>
 
-## <a name="next-steps"></a>后续步骤
-要开始使用，请参阅 [Microsoft Graph 数据连接入门](data-connect-get-started.md)。
+如果你同意 [Microsoft API 使用条款](/legal/microsoft-apis/terms-of-use?context=/graph/context)和 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/p/?LinkId=123161)，并且是下述人员之一，则可利用 Microsoft Graph 数据连接：
+
+- 一个 ISV，它用于为所有 Microsoft 365 客户构建智能应用程序。
+- 一名企业开发人员，他为组织内部用户构建可访问 Microsoft 365 数据的智能应用程序。
+
+## <a name="access-to-data-at-scale"></a>大规模访问数据
+
+丰富的应用程序需要访问大量数据，通常来自于组织中许多用户同时进行访问。 因此，Microsoft Graph 的标准事务数据模型倾向于限制大型数据集。 数据交付需要复杂的基础结构和数千个 API 调用，其中任何一项都可能由于资源限制而被限制。 Microsoft Graph 数据连接通过批量访问数据并使用 Azure 数据工厂重复将 Microsoft 365 数据复制到你的应用程序来解决这一难题。 通过数据连接，你还能够选择访问组织中每个人的数据还是仅访问特定人员组的数据。
+
+## <a name="granular-data-consent"></a>精细数据同意
+
+在传统的 Microsoft Graph 同意模型中，管理员或用户只能授予或拒绝应用程序访问特定的预定义实体集的请求。 例如，对 Mail.Read 的请求包含对支持 Outlook 邮件的固定实体集的读取访问权限，其中包括具有其所有相关属性的整个 [message](/graph/api/resources/message?view=graph-rest-1.0) 实例。 Microsoft Graph 数据连接支持更精细的同意，允许应用程序请求访问实体中的特定属性，或筛选这些属性中的数据。 管理员必须先明确批准才能访问 Microsoft Graph 数据。 请求必须指定所请求的访问权限的级别、数据策略实施、请求的原因以及所请求数据的架构。 因此，应用程序只能使用对其功能运行至关重要的数据，并排除任何不相关的内容。 例如，应用可使用电子邮件元数据，但排除正文内容和附件。
+
+## <a name="data-security-and-governance"></a>数据安全性和管理
+
+Microsoft 正在促使 Microsoft Graph 数据连接和 Azure 之间就客户数据进行丰富的连接通信。 Microsoft Graph 数据连接支持所有 Azure 本机服务功能，例如加密、地理围栏、审核和策略实施。 为了最大程度减少你使用数据连接构建的应用的合规性管理开销，你可以指定一组要遵循的详细策略，Microsoft 365 管理员随后可审阅这些策略。 在这些策略获准后，Microsoft 将监控应用程序对策略的遵循情况。 如果应用程序违反（或试图违反）组织建立的策略，Microsoft 将停止向该应用程序传输数据。
+
+## <a name="see-also"></a>另请参阅
+
+- [构建第一个 Microsoft Graph 数据连接应用程序教程](data-connect-quickstart.yml)。
+- [数据连接常见问题解答](data-connect-faq.md)
+- [数据集、区域和接收器](data-connect-datasets.md)
