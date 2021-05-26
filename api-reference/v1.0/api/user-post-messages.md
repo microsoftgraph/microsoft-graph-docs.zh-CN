@@ -1,27 +1,39 @@
 ---
 title: 创建邮件
-description: 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
+description: 创建采用 JSON 或 MIME 格式的新邮件的草稿。
 localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b2776e4708c6a5a72ee2f9c612f05f5f093b196f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9d10c07c433b3d8456c574519aa497fc163dde09
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054292"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645631"
 ---
 # <a name="create-message"></a>创建邮件
 
 命名空间：microsoft.graph
 
-使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
+使用 JSON 或 MIME [邮件](../resources/message.md) 草稿。
 
-在同一个 **POST** 调用中创建草稿时，可以添加 [附件](../resources/attachment.md)。
+使用 JSON 格式时，可以：
+- 包括 **邮件** 的[附件](../resources/attachment.md)。
+- [更新](../api/message-update.md)草稿以将内容添加到 **正文**，或更改其他邮件属性。
 
-## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+使用 MIME 格式时：
+- 提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。
+- 向 MIME 内容添加任何附件和 S/MIME 属性。
+
+默认情况下，此操作将草稿保存在"草稿"文件夹中。
+
+在后续操作中[发送](/graph/api-reference/beta/api/message-send.md)草稿消息。
+
+或者， [通过一次操作发送新邮件](../api/user-sendmail.md) ，或创建一个草稿 [转发](../api/message-createforward.md)、 [答复](../api/message-createreply.md) 和 [答复所有邮件](../api/message-createreplyall.md) 现有邮件。
+
+## <a name="permissions"></a>Permissions
+调用此 API 需要下列权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,13 +50,16 @@ POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| 名称       | 类型 | 说明|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}。必需。 |
+| Content-Length | number | 0。必需。 |
+| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 对 `application/json` JSON 对象使用对象， `text/plain` MIME 内容使用对象链接。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
+使用JSON格式时，请提供[消息](../resources/message.md)对象的JSON表示形式。
+
+当以 MIME 格式指定正文时，请提供 MIME 内容与适用的 Internet 邮件头（"收件人"、"抄送"、"密件抄送"、"主题"）所有内容在请求正文中编码为 **base64** 格式。
 
 由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
 
@@ -52,8 +67,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
+如果请求正文包含错误的 MIME 内容，此方法将返回错误 `400 Bad request` 以下错误消息："MIME 内容无效的 base64 字符串"。
+
+## <a name="examples"></a>示例
+### <a name="example-1-create-a-new-message-draft-using-json-format"></a>示例 1：使用 JSON 格式创建新邮件草稿
+#### <a name="request"></a>请求 
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,8 +118,8 @@ Content-type: application/json
 ---
 
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
-##### <a name="response-1"></a>响应 1
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+#### <a name="response"></a>响应 
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -162,8 +180,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>请求 2
-下一个示例在创建邮件草稿时添加了几个客户 Internet 邮件头。
+### <a name="example-2-create-message-draft-that-includes-custom-message-headers"></a>示例 2：创建包含自定义邮件头的邮件草稿
+#### <a name="request"></a>请求
+
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -218,7 +237,7 @@ Content-type: application/json
 ---
 
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 下面是一个响应示例。 注意：默认情况下，POST 响应中不会返回 Internet 邮件标头。 为简洁起见，也可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
@@ -278,6 +297,108 @@ Content-type: application/json
     ],
     "flag":{
         "flagStatus":"notFlagged"
+    }
+}
+```
+
+### <a name="example-3-create-a-new-message-draft-using-mime-format"></a>示例 3：使用 MIME 格式创建新邮件草稿
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "message_create_draft_mime_v1"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+
+```
+
+#### <a name="response"></a>响应
+下面是一个响应示例。
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('0aaa0aa0-0000-0a00-a00a-0000009000a0')/messages/$entity",
+    "@odata.etag": "W/\"AAAAAAAAAAAa00AAAa0aAaAa0a0AAAaAAAAaAa0a\"",
+    "id": "AAMkADA1MTAAAAqldOAAA=",
+    "createdDateTime": "2021-04-23T18:13:44Z",
+    "lastModifiedDateTime": "2021-04-23T18:13:44Z",
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA",
+    "categories": [],
+    "receivedDateTime": "2021-04-23T18:13:44Z",
+    "sentDateTime": "2021-02-28T07:15:00Z",
+    "hasAttachments": false,
+    "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
+    "subject": "Internal Resume Submission: Sales Associate",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here...",
+    "importance": "normal",
+    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
+    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
+    "conversationIndex": "Adfsdfsdfsdfw==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": true,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWAvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here... Regards,Alex"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Megan Bowen",
+                "address": "MeganB@contoso.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}
+
+```
+
+如果请求正文包含错误的 MIME 内容，此方法返回以下错误消息。
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
     }
 }
 ```

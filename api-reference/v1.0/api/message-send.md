@@ -1,26 +1,31 @@
 ---
 title: 邮件：发送
-description: 在草稿箱文件夹中发送邮件。 邮件草稿可以是新邮件草稿、答复草稿、全部答复草稿或
+description: 发送现有草稿邮件。
 localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb00d44a669d12a21bf2d9e5a302b6fe4b627028
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8be54552df8acf7faa67c070e85f63f48a5c23d4
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134013"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645491"
 ---
 # <a name="message-send"></a>邮件：发送
 
 命名空间：microsoft.graph
 
-在草稿箱文件夹中发送邮件。邮件草稿可以是新邮件草稿、答复草稿、全部答复草稿或转发草稿。然后邮件保存在已发送邮件文件夹中。
+发送现有草稿邮件。 
 
-## <a name="permissions"></a>权限
+邮件草稿可以是新邮件[草稿](../api/user-post-messages.md)、[答复草稿](../api/message-createreply.md)、[全部答复草稿](../api/message-createreplyall.md)或[转发草稿](../api/message-createforward.md)。
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+此方法将邮件保存在 **“已发送邮件”** 文件夹中。
+
+或者，通过一次操作[发送新消息](../api/user-sendmail.md)。
+
+## <a name="permissions"></a>Permissions
+要调用此 API，需要以下权限。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -45,12 +50,15 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Content-Length | number | 0。必需。 |
 
 ## <a name="request-body"></a>请求正文
+由于此方法发送现有草稿邮件，因此不需要指定请求正文。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+
+### <a name="example-1-send-an-existing-draft-message"></a>示例 1：发送现有草稿邮件
 
 以下示例演示如何调用此 API。
 

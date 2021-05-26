@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 38563f65ae0675dce6cf0e21672c4ceb5c894ba9
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c268558a3b9185b06b729855c763ff3357944f27
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474468"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645582"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
@@ -51,6 +51,7 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [重点收件箱](../resources/manage-focused-inbox.md) |
 | 查询邮件并在搜索文件夹中获取邮件  | [mailSearchFolder](../resources/mailsearchfolder.md) | [mailSearchFolder 的方法](../resources/mailsearchfolder.md#methods) |
 | 获取邮件或邮件附件的 MIME 内容 | [message](../resources/message.md) | [获取 MIME 内容](/graph/outlook-get-mime-message) |
+| 使用 MIME 内容发送邮件 | [邮件](../resources/message.md) | [发送 MIME 内容](/graph/outlook-send-mime-message) |
 | 添加、获取或删除邮件的附件 | [附件](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [邮件](../resources/message.md) | [attachment 的方法](../resources/attachment.md#methods) |
 | 获取用户的语言和时区选择 | [localeInfo](localeinfo.md)、 <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md)、 <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | 获取或更新用户的自动答复、区域设置、时区或工作时间 | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md)、 <br> [workingHours](../resources/workinghours.md) | [获取用户的邮箱设置](../api/user-get-mailboxsettings.md)、 <br> [更新用户的邮箱设置](../api/user-update-mailboxsettings.md) |
@@ -67,6 +68,7 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 | 添加自定义应用数据作为邮件的 Internet 邮件头 | [邮件](../resources/message.md) | 向邮件的 **internetMessageHeaders** 属性添加自定义数据。 |
 | 通过使用扩展向邮件添加自定义应用数据 | [openTypeExtension](../resources/opentypeextension.md)、 <br>[schemaExtension](../resources/schemaextension.md) | [使用扩展向资源添加自定义数据](/graph/extensibility-overview) |
 | 访问半公开的 Outlook MAPI 属性的自定义数据 | [SingleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)、 <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook 扩展属性概述](../resources/extended-properties-overview.md) |
+
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
