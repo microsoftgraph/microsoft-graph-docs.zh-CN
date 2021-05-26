@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 100e911aba625540dc8d421b365fdd547f2edd45
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 508ccb2add627da88656577b54618ec0fd91f097
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546992"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629481"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -261,6 +261,22 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 * _Application.ReadWrite.OwnedBy_：列出调用应用程序拥有的所有应用程序 (`GET /beta/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_：向拥有的应用程序添加另一个所有者 (`POST /applications/{id}/owners/$ref`)。
     > 注意：这可能需要其他权限。
+
+---
+
+## <a name="audit-log-permissions"></a>审核日志权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _AuditLog.Read.All_ | 读取审核日志数据 | 允许应用代表已登录用户读取和查询你的审核日志活动。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|权限    |显示字符串   |说明 |需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_AuditLog.Read.All_ |读取所有审核日志数据 |允许应用在没有登录用户的情况下读取和查询你的审核日志活动。 |是 |
 
 ---
 
@@ -1092,7 +1108,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1248,7 +1264,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。

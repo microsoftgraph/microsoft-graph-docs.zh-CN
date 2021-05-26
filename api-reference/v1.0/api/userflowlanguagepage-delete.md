@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6ae4c73b2b76b519190a1cd5fdb4d25644684952
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: f9c1ba04d2c3cfdf60e4309d0a274388639b83a7
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920498"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666606"
 ---
 # <a name="delete-userflowlanguagepage"></a>删除 userFlowLanguagePage
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920498"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -75,7 +75,7 @@ DELETE /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/$value
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2X_1_Partner/languages/en/overridesPages/selfasserted1_1/$value
+DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/languages/en/overridesPages/selfasserted1_1/$value
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-userflowlanguagepage-csharp-snippets.md)]

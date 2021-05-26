@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 707daff5e3043d10c038343967fa421875132788
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 2f6d8a749cd01f921f201657fd047a90642e4fe9
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629523"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666201"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "52629523"
 
 默认情况下，此操作不会返回隐藏文件夹。 使用查询参数 _includeHiddenFolders_，将它们包括在答复中。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -208,13 +208,33 @@ Content-length: 232
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_hiddenmailfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-hiddenmailfolders-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-hiddenmailfolders-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-hiddenmailfolders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-hiddenmailfolders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 下面是一个响应示例。
