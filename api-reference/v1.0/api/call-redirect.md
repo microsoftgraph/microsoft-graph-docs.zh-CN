@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d7edf057ecb82eb42fa9f5368ef8a26c445a3a08
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5f121c5cc6a3422b7945dfb5c249ae72a706a548
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943624"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665544"
 ---
 # <a name="call-redirect"></a>call： redirect
 
@@ -403,6 +403,7 @@ Content-Type: application/json
 ### <a name="example-3-forward-a-call-to-a-pstn-number"></a>示例 3：将呼叫转发到 PSTN 号码
 
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+> **注意：电话** ID 是 E.164 格式的电话号码。
 
 #### <a name="notification---incoming"></a>通知 - 传入
 <!-- {

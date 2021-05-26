@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8e3abb8a558ed26b2a47467faabf30fffba2409d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d8a8a7f1cfd01ed63b54b66d888b3eb9e80d3a30
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042949"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664711"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile： uploadUrl
 
@@ -31,7 +31,7 @@ ms.locfileid: "52042949"
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 |委派 (个人 Microsoft 帐户|不支持。|
-|应用程序|不支持。|
+|应用程序|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e82e2fd9821f05cfb0690367fce3de03b02cd7c
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 4d58eee0dfbcae32586712f9c45b607ef31c1eac
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51609764"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666371"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>创建 deviceHealthScriptDeviceState
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
-|detectionState|[runState](../resources/intune-devices-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|预计执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
@@ -64,6 +64,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 |postRemediationDetectionScriptOutput|String|修正后检测脚本输出|
 |postRemediationDetectionScriptError|String|修正后检测脚本中的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|自上次设备运行状况脚本执行以来的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|
+|assignmentFilterIds|String collection|用于运行状况脚本适用性评估的分配筛选器 ID 的列表|
 
 
 
@@ -77,7 +78,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 762
+Content-length: 831
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -90,7 +91,10 @@ Content-length: 762
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 
@@ -99,7 +103,7 @@ Content-length: 762
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 811
+Content-Length: 880
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -113,7 +117,10 @@ Content-Length: 811
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 

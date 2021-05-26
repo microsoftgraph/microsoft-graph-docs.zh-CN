@@ -1,16 +1,16 @@
 ---
 title: 删除 educationSubmissionResource
-description: 从提交中删除资源。 这只能由学生完成。 如果从工作分配复制了资源，将在删除当前副本后创建资源的新副本。
+description: 从提交中删除资源。 此操作仅能由学生完成。 如果从工作分配复制了资源，将在删除当前副本后创建资源的新副本。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c67944bc0060d495685bf5893ed74325b5c705ed
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: f989c1854ee952b53bfd5df123e425bd25a0d2ca
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574299"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664753"
 ---
 # <a name="delete-educationsubmissionresource"></a>删除 educationSubmissionResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "50574299"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从提交中删除资源。 这只能由学生完成。 如果从工作分配复制了资源，将在删除当前副本后创建资源的新副本。 这允许您将资源"重置"到其原始状态。 如果未从作业复制资源，而是从学生添加资源，则只会删除该资源。
+从提交中删除资源。 此操作仅能由学生完成。 如果从工作分配复制了资源，将在删除当前副本后创建资源的新副本。 这允许您将资源"重置"到其原始状态。 如果资源不是从作业中复制的，而是从学生添加的，则只会删除该资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,8 +33,8 @@ ms.locfileid: "50574299"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
-
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|

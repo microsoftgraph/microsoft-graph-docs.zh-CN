@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: acaa64b328947abc76efa358a6831affb98f2dd6
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 2592ea4b2d5ffe96a070fa59da312f4a9ed91d0c
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51865668"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666441"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>列出 iosGeneralDeviceConfigurations
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12033
+Content-Length: 12165
 
 {
   "value": [
@@ -363,6 +363,9 @@ Content-Length: 12033
       "appClipsBlocked": true,
       "applePersonalizedAdsBlocked": true,
       "nfcBlocked": true,
+      "autoUnlockBlocked": true,
+      "unpairedExternalBootToRecoveryAllowed": true,
+      "onDeviceOnlyDictationForced": true,
       "kioskModeAppType": "appStoreApp"
     }
   ]

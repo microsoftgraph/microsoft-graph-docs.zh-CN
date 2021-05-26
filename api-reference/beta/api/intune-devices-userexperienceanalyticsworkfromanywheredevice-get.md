@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49efeea6ec112fe569daa36a8121d3d32ea03694
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: f803b9f0857e32aa02d6fb5e881a6e4df044caaa
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868461"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665040"
 ---
 # <a name="get-userexperienceanalyticsworkfromanywheredevice"></a>获取 userExperienceAnalyticsWorkFromAnywhereDevice
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWor
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 599
+Content-Length: 683
 
 {
   "value": {
@@ -84,7 +84,9 @@ Content-Length: 599
     "autoPilotProfileAssigned": true,
     "azureAdRegistered": true,
     "azureAdDeviceId": "Azure Ad Device Id value",
-    "azureAdJoinType": "Azure Ad Join Type value"
+    "azureAdJoinType": "Azure Ad Join Type value",
+    "osDescription": "Os Description value",
+    "osVersion": "Os Version value"
   }
 }
 ```

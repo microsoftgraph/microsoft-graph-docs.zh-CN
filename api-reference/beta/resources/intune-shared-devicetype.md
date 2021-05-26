@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fce91703f252e80fd3db06d7e3fec7832e60269c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e9b3ba15c67612038b19758df0e1f20569de2bce
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51123376"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665551"
 ---
 # <a name="devicetype-enum-type"></a>deviceType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "51123376"
 |windowsRT|1|WindowsRT。|
 |winMO6|2|WinMO6。|
 |nokia|3|Nokia。|
-|windowsPhone|4 |Windows Phone。|
+|windowsPhone|4 |Windows电话。|
 |mac|5 |Mac。|
 |winCE|6 |WinCE。|
 |winEmbedded|7 |WinEmbedded。|
@@ -40,18 +40,18 @@ ms.locfileid: "51123376"
 |iSocConsumer|12 |iSocConsumer。|
 |unix|13|Unix。|
 |macMDM|14 |使用内置 MDM 代理的 Mac OS X 客户端。|
-|holoLens|15 |代表奇特的 Windows 10 切换。|
+|holoLens|15|代表奇特Windows 10式切换。|
 |surfaceHub|16 |Surface HUB 设备。|
 |androidForWork|17 |Android for work 设备。|
 |androidEnterprise|18 |Android 企业设备。|
 |windows10x|19|Windows 10x 设备。|
 |androidnGMS|20|Android 非 Google 托管设备。|
+|chromeOS| 21|Cloud PC设备。|
+|linux|22|Linux 设备。|
 |blackberry|100|Blackberry。|
 |9.0|101|手心。|
 |unknown|255|表示设备类型未知。|
-|cloudPC|257|云电脑设备。|
-
-
+|cloudPC|257|Cloud PC设备。|
 
 
 

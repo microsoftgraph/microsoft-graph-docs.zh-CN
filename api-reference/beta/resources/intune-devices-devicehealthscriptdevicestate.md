@@ -5,25 +5,25 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3973b74215acc1aa817653cec3354f01c49cb8b5
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 9884e83a3c585285adc2332a3fc2c31794f52b65
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51612068"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664907"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>deviceHealthScriptDeviceState 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含设备运行状况脚本的设备运行状态的属性。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceHealthScriptDeviceStates](../api/intune-devices-devicehealthscriptdevicestate-list.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) 集合|列出 [deviceHealthScriptDeviceState 对象的属性和](../resources/intune-devices-devicehealthscriptdevicestate.md) 关系。|
 |[获取 deviceHealthScriptDeviceState](../api/intune-devices-devicehealthscriptdevicestate-get.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)|读取 [deviceHealthScriptDeviceState 对象的属性和](../resources/intune-devices-devicehealthscriptdevicestate.md) 关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "51612068"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
-|detectionState|[runState](../resources/intune-devices-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|预计执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
@@ -45,9 +45,10 @@ ms.locfileid: "51612068"
 |postRemediationDetectionScriptOutput|String|修正后检测脚本输出|
 |postRemediationDetectionScriptError|String|修正后检测脚本中的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|自上次设备运行状况脚本执行以来的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|
+|assignmentFilterIds|String collection|用于运行状况脚本适用性评估的分配筛选器 ID 的列表|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|执行设备运行状况脚本的托管设备|
 
@@ -72,7 +73,10 @@ ms.locfileid: "51612068"
   "remediationScriptError": "String",
   "postRemediationDetectionScriptOutput": "String",
   "postRemediationDetectionScriptError": "String",
-  "remediationState": "String"
+  "remediationState": "String",
+  "assignmentFilterIds": [
+    "String"
+  ]
 }
 ```
 

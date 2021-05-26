@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4e44b8a5b970fefebeb7ed9472531edb2991281d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 24363b7158ccfad72db22158d25298fdb75d040d
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043186"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664760"
 ---
 # <a name="create-educationsubmissionresource"></a>创建 educationSubmissionResource
 
@@ -33,8 +33,8 @@ ms.locfileid: "52043186"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
-
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -55,7 +55,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
   "blockType": "ignored",
   "name": "create_educationsubmissionresource_from_educationsubmission"
 }-->
-```
+```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources
 Content-type: application/json
 Content-length: 1097
@@ -87,7 +87,6 @@ Content-length: 1097
   },
   "@odata.type": "microsoft.graph.educationResource"
 }
-
 ```
 
 ##### <a name="response"></a>响应
@@ -132,7 +131,6 @@ Content-length: 1152
       "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6",
   }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

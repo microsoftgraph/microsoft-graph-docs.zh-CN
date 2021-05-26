@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 23765f3dbfab6eb449d3f666e28fdfe11d470ef8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 24717f3a3d983c25198a3f94ecb5027f49f763c3
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241426"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666525"
 ---
 # <a name="devicemanagementconfigurationintegersettingvalue-resource-type"></a>deviceManagementConfigurationIntegerSettingValue 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,6 +28,7 @@ ms.locfileid: "49241426"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
+|settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|设置值模板引用 继承自 [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
 |值|Int32|整数设置的值。|
 
 ## <a name="relationships"></a>关系
@@ -43,6 +44,11 @@ ms.locfileid: "49241426"
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+  "settingValueTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+    "settingValueTemplateId": "String",
+    "useTemplateDefault": true
+  },
   "value": 1024
 }
 ```

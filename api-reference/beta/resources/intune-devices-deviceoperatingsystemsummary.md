@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de94b00a1660dc874e457d20315df2f3b0690164
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 02ab35788ac8628755e0052426c733191fbef2af
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444481"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665222"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -34,12 +34,13 @@ ms.locfileid: "50444481"
 |androidDedicatedCount|Int32|专用 Android 设备的数量。|
 |androidDeviceAdminCount|Int32|设备管理员 Android 设备的数量。|
 |androidFullyManagedCount|Int32|完全托管的 Android 设备的数量。|
-|androidWorkProfileCount|Int32|Android 设备的工作配置文件数量。|
-|androidCorporateWorkProfileCount|Int32|企业工作配置文件 Android 设备计数。 也称为公司拥有的个人启用 (的) 。 有效值 -1 到 2147483647|
+|androidWorkProfileCount|Int32|工作配置文件 Android 设备的数量。|
+|androidCorporateWorkProfileCount|Int32|公司工作配置文件 Android 设备计数。 也称为"公司拥有的个人拥有" (一) 。 有效值 -1 到 2147483647|
 |configMgrDeviceCount|Int32|ConfigMgr 托管设备的数量。|
 |aospUserlessCount|Int32|无用户 AOSP Android 设备的数量。 有效值为 0 到 2147483647|
 |aospUserAssociatedCount|Int32|AOSP 用户关联的 Android 设备的数量。 有效值为 0 到 2147483647|
 |linuxCount|Int32|Linux OS 设备的数量。 有效值为 0 到 2147483647|
+|chromeOSCount|Int32|Chrome 操作系统设备的数量。 有效值为 0 到 2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -68,7 +69,8 @@ ms.locfileid: "50444481"
   "configMgrDeviceCount": 1024,
   "aospUserlessCount": 1024,
   "aospUserAssociatedCount": 1024,
-  "linuxCount": 1024
+  "linuxCount": 1024,
+  "chromeOSCount": 1024
 }
 ```
 

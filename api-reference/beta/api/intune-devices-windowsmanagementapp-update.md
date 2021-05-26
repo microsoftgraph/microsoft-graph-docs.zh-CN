@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b6fb2eb59aed83744e158a808344b1f18cf834e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 15fea6f46279f96ce3d1f235b92475bdc67d0f16
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51126393"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52662940"
 ---
 # <a name="update-windowsmanagementapp"></a>更新 windowsManagementApp
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,8 +53,10 @@ PATCH /deviceAppManagement/windowsManagementApp
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Windows 管理应用的唯一标识符|
-|availableVersion|String|Windows 管理应用可用版本。|
+|id|String|管理应用程序的唯Windows标识符|
+|availableVersion|String|Windows管理应用可用版本。|
+|managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|托管安装程序状态。 可取值为：`disabled`、`enabled`。|
+|managedInstallerConfiguredDateTime|String|托管安装程序配置的日期时间|
 
 
 
@@ -68,11 +70,13 @@ PATCH /deviceAppManagement/windowsManagementApp
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp
 Content-type: application/json
-Content-length: 112
+Content-length: 235
 
 {
   "@odata.type": "#microsoft.graph.windowsManagementApp",
-  "availableVersion": "Available Version value"
+  "availableVersion": "Available Version value",
+  "managedInstaller": "enabled",
+  "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
 }
 ```
 
@@ -81,12 +85,14 @@ Content-length: 112
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 161
+Content-Length: 284
 
 {
   "@odata.type": "#microsoft.graph.windowsManagementApp",
   "id": "5facc79c-c79c-5fac-9cc7-ac5f9cc7ac5f",
-  "availableVersion": "Available Version value"
+  "availableVersion": "Available Version value",
+  "managedInstaller": "enabled",
+  "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
 }
 ```
 

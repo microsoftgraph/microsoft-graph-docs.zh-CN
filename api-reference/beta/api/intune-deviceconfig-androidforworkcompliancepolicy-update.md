@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f8162f20264a2915b97a8f7b437126cf06a4b40
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f5df9d301823f5e99f3001f2c9f1af902a1f5b27
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130411"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666385"
 ---
 # <a name="update-androidforworkcompliancepolicy"></a>更新 androidForWorkCompliancePolicy
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -82,6 +82,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |securityRequireGooglePlayServices|Boolean|要求在设备上安装并启用 Google Play Services。|
 |securityRequireUpToDateSecurityProviders|Boolean|要求设备具有最新的安全提供程序。 设备将要求启用 Google Play Services 并保持最新状态。|
 |securityRequireCompanyPortalAppIntegrity|Boolean|要求设备传递公司门户客户端应用运行时完整性检查。|
+|securityRequiredAndroidSafetyNetEvaluationType|[androidSafetyNetEvaluationType](../resources/intune-deviceconfig-androidsafetynetevaluationtype.md)|要求特定的 SafetyNet 评估类型满足合规性要求。 可取值为：`basic`、`hardwareBacked`。|
 
 
 
@@ -95,7 +96,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1283
+Content-length: 1354
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkCompliancePolicy",
@@ -126,7 +127,8 @@ Content-length: 1283
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true
+  "securityRequireCompanyPortalAppIntegrity": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
 
@@ -135,7 +137,7 @@ Content-length: 1283
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1455
+Content-Length: 1526
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkCompliancePolicy",
@@ -169,7 +171,8 @@ Content-Length: 1455
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true
+  "securityRequireCompanyPortalAppIntegrity": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3840e07382cc13a587460466f09d84dd7e64452
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 99bdd89e8104ada3605835889abdb07da779ae9c
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867950"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665180"
 ---
 # <a name="update-devicemanagementconfigurationsettingdefinition"></a>更新 deviceManagementConfigurationSettingDefinition
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -40,6 +40,7 @@ ms.locfileid: "51867950"
 PATCH /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 PATCH /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
+PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -57,8 +58,8 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 |:---|:---|:---|
 |适用性|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|有关适用设备设置的详细信息|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|设置的读/写访问模式。 可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。|
-|keywords|String 集合|要搜索设置的标记|
-|infoUrls|String 集合|可在以下链接列表中找到有关设置详细信息|
+|keywords|String collection|要搜索设置的标记|
+|infoUrls|String collection|可在以下链接列表中找到有关设置详细信息|
 |occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|指示是否要求设置|
 |baseUri|String|基本云解决方案提供商路径|
 |offsetUri|String|从基本位置偏移云解决方案提供商路径|

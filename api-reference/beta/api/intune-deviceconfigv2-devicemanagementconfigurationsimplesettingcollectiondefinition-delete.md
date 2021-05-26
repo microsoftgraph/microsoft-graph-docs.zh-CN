@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50b8ed2fad7a51587b39a7c52c7a5ecd9142e98d
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 2f52639bd8a0e056bde6bcf822d578f1dceb3d3c
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867929"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664669"
 ---
 # <a name="delete-devicemanagementconfigurationsimplesettingcollectiondefinition"></a>删除 deviceManagementConfigurationSimpleSettingCollectionDefinition
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -40,6 +40,7 @@ ms.locfileid: "51867929"
 DELETE /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 DELETE /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
+DELETE /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ## <a name="request-headers"></a>请求标头

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: af48d674e08e1c9332daf27d7061afc58cf50a17
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bccf7cb35d23c658e85539cb2a8bde7775e3ee15
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050575"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666742"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -433,6 +433,7 @@ Content-Type: application/json
 ### <a name="example-3-call-transfer-to-pstn-number"></a>示例 3：呼叫转接到 PSTN 号码
 
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+> **注意：电话** ID 是 E.164 格式的电话号码。
 
 #### <a name="request"></a>请求
 下面为请求示例。
@@ -613,6 +614,7 @@ Content-Type: application/json
 ### <a name="example-4-consultative-transfer-to-pstn-number"></a>示例 4：咨询转接到 PSTN 号码
 
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
+> **注意：电话** ID 是 E.164 格式的电话号码。
 
 #### <a name="request"></a>请求
 下面为请求示例。

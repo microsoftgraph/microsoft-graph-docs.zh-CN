@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 49ad1ffcb327f5a02a9e9f9632e0a1431122d194
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: d7be17b22434b08e5b83479201e59b17a91d26e1
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645344"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664768"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission： setUpResourcesFolder
 
@@ -52,6 +52,8 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 ### <a name="request"></a>请求
 请求示例如下所示。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_setupresourcesfolder"
@@ -59,6 +61,24 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-setupresourcesfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-setupresourcesfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-setupresourcesfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-setupresourcesfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

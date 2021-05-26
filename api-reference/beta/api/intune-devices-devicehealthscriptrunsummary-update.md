@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72dd3594aee3bc9a19c7195e67201c7f54270b9b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3d342f4703ba8dcb04b58007d26fc94ff99c8c91
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51127079"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665089"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>更新 deviceHealthScriptRunSummary
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -58,6 +58,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 |issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数量|
 |detectionScriptErrorDeviceCount|Int32|检测脚本执行遇到错误且未完成的设备数量|
 |detectionScriptPendingDeviceCount|Int32|尚未运行最新版本的设备运行状况脚本的设备数量|
+|detectionScriptNotApplicableDeviceCount|Int32|检测脚本不适用的设备数量|
 |issueRemediatedDeviceCount|Int32|修正脚本能够解决检测到的问题的设备数量|
 |remediationSkippedDeviceCount|Int32|已跳过修正的设备数|
 |issueReoccurredDeviceCount|Int32|修复脚本成功执行但未能解决检测到的问题的设备数量|
@@ -77,7 +78,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 Content-type: application/json
-Content-length: 494
+Content-length: 543
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -85,6 +86,7 @@ Content-length: 494
   "issueDetectedDeviceCount": 8,
   "detectionScriptErrorDeviceCount": 15,
   "detectionScriptPendingDeviceCount": 1,
+  "detectionScriptNotApplicableDeviceCount": 7,
   "issueRemediatedDeviceCount": 10,
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
@@ -99,7 +101,7 @@ Content-length: 494
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 592
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -108,6 +110,7 @@ Content-Length: 543
   "issueDetectedDeviceCount": 8,
   "detectionScriptErrorDeviceCount": 15,
   "detectionScriptPendingDeviceCount": 1,
+  "detectionScriptNotApplicableDeviceCount": 7,
   "issueRemediatedDeviceCount": 10,
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,

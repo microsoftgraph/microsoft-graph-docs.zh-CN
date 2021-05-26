@@ -5,12 +5,12 @@ localization_priority: Normal
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dcc0a20ac8b10fc1b7fad3fa3472832036f70024
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 40ed1ea6052e4b39f84426cd792429b70732137d
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547327"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664509"
 ---
 # <a name="update-authenticationcontextclassreference"></a>更新 authenticationContextClassReference
 
@@ -20,7 +20,7 @@ ms.locfileid: "52547327"
 
 更新 [authenticationContextClassReference 对象](../resources/authenticationcontextclassreference.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -64,6 +64,8 @@ PATCH /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationcontextclassreference"
@@ -84,6 +86,12 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationcontextclassreference-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

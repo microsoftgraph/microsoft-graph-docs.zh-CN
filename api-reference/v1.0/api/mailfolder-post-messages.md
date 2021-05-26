@@ -1,18 +1,18 @@
 ---
-title: 创建邮件
+title: 在邮件文件夹内创建邮件
 description: 使用此 API 在 mailfolder 中新建邮件。
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a50d222830aeee573c4c7b5824ce2ccee9e9c7de
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d318aac49f467b2c4740b4f6e76c479c5e051c56
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055916"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645267"
 ---
-# <a name="create-message"></a>创建邮件
+# <a name="create-message-in-a-mailfolder"></a>在邮件文件夹内创建邮件
 
 命名空间：microsoft.graph
 
@@ -87,7 +87,7 @@ Content-length: 248
 
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

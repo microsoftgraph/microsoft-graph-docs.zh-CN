@@ -26,8 +26,6 @@ items:
             href: deployments.md
           - name: 混合部署（预览版）
             href: hybrid-rest-support.md
-      - name: Microsoft Graph 数据连接
-        href: data-connect-overview.md
       - name: 教程
         items:
           - name: 概述
@@ -101,6 +99,23 @@ items:
             href: application-proxy-configure-api.md
           - name: 配置预配
             href: application-provisioning-configure-api.md
+      - name: 大规模访问数据
+        displayName: Microsoft Graph Data Connect
+        items:
+          - name: 数据连接概述
+            href: data-connect-concept-overview.md
+          - name: 构建第一个数据连接应用程序
+            href: data-connect-quickstart.yml
+          - name: 数据集、区域和接收器
+            href: data-connect-datasets.md
+          - name: 策略和计费
+            href: data-connect-policies.md
+          - name: 用户选择和筛选
+            href: data-connect-filtering.md
+          - name: 与 PAM 集成
+            href: data-connect-pam.md
+          - name: 常见问题解答
+            href: data-connect-faq.md
       - name: 日历
         displayName: Outlook
         items:
@@ -150,6 +165,23 @@ items:
             href: cloud-communications-phone-number.md
       - name: 合规性分数（预览版）
         href: compliance-concept-overview.md
+      - name: 连接外部内容（预览版）
+        displayName: connectors
+        items:
+          - name: Microsoft Graph 连接器概述
+            href: connecting-external-content-connectors-overview.md
+          - name: 连接器 API
+            href: connecting-external-content-connectors-api-overview.md
+          - name: 使用 Postman
+            href: connecting-external-content-connectors-api-postman.md
+          - name: 管理连接
+            href: connecting-external-content-manage-connections.md
+          - name: 管理架构
+            href: connecting-external-content-manage-schema.md
+          - name: 管理项目
+            href: connecting-external-content-manage-items.md
+          - name: API 限制
+            href: connecting-external-content-api-limits.md
       - name: 跨设备体验
         displayName: Project Rome
         items:
@@ -164,23 +196,6 @@ items:
       - name: 客户预订（预览版）
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
-      - name: 数据访问
-        displayName: Microsoft Graph data connect
-        items:
-          - name: 数据连接概述
-            href: data-connect-concept-overview.md
-          - name: 入门
-            href: data-connect-get-started.md
-          - name: 数据集、区域和接收器
-            href: data-connect-datasets.md
-          - name: 策略和许可
-            href: data-connect-policies.md
-          - name: 用户选择和筛选
-            href: data-connect-filtering.md
-          - name: 与 PAM 集成
-            href: data-connect-pam.md
-          - name: 提示
-            href: data-connect-tips.md
       - name: 设备和应用
         expanded: true
         items:
@@ -263,6 +278,8 @@ items:
             href: outlook-organize-messages.md
           - name: 获取 MIME 内容
             href: outlook-get-mime-message.md
+          - name: 发送 MIME 邮件
+            href: outlook-send-mime-message.md
           - name: 附加大型文件
             href: outlook-large-attachments.md
           - name: 获取共享邮件
@@ -370,14 +387,6 @@ items:
                 href: search-concept-aggregation.md
               - name: 请求拼写更正（预览）
                 href: search-concept-speller.md
-          - name: 索引（预览）
-            items:
-              - name: 管理连接
-                href: search-index-manage-connections.md
-              - name: 管理架构
-                href: search-index-manage-schema.md
-              - name: 管理项目
-                href: search-index-manage-items.md
       - name: 安全性
         items:
           - name: 概述

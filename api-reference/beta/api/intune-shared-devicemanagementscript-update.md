@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c148e49819f8a25d94db6de293c67ce574733921
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: f68184a74714ee8ce74af3f25019123fe69d0891
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867733"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52662933"
 ---
 # <a name="update-devicemanagementscript"></a>更新 deviceManagementScript
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -64,10 +64,10 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记标识列表。|
-|runAs32Bit|Boolean|指示 PowerShell 脚本是否应该作为 32 位运行的值|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
+|runAs32Bit|布尔值|指示 PowerShell 脚本是否应该作为 32 位运行的值|
 
 
 
@@ -87,9 +87,6 @@ Content-length: 443
   "@odata.type": "#microsoft.graph.deviceManagementScript",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
@@ -113,9 +110,6 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

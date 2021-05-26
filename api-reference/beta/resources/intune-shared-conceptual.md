@@ -1,17 +1,17 @@
 ---
 title: Microsoft Intune 中的共享资源 - Microsoft Graph API
-description: 列出适用于 Intune 终结点的 Microsoft Graph API (REST) 支持租户组织的多个工作流。
+description: 列出支持Graph多个工作流的适用于 Intune 终结点 (REST) 的 Microsoft 应用程序 API。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 4de0e8477d7d20894981c0d0e68956d806d926c4
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 77500484aaafd5d9101e66789966b4861b61e511
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866144"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664900"
 ---
-# <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
+# <a name="shared-resources-in-microsoft-intune"></a>共享资源Microsoft Intune
 
 命名空间：microsoft.graph
 
@@ -19,9 +19,9 @@ ms.locfileid: "51866144"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-这些终结点在多个适用于 Intune 工作流的 Microsoft Graph API 中使用。  使用给定资源所需的意图、目的和权限因特定工作流和基础调用的上下文而异。  此外，某些方法、属性和操作仅受特定工作流支持。
+这些终结点在多个 Microsoft Graph API 中用于 Intune 工作流。  使用给定资源所需的意图、目的和权限因特定工作流和基础调用的上下文而异。  此外，某些方法、属性和操作仅受特定工作流支持。
 
-以下 Graph 资源在 Intune 工作流之间共享：
+Intune Graph之间共享以下资源：
 
 - [操作状态](intune-shared-actionstate.md)
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
@@ -48,7 +48,6 @@ ms.locfileid: "51866144"
 - [设备管理](intune-shared-devicemanagement.md)
 - [设备管理派生的凭据设置](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [设备管理脚本](intune-shared-devicemanagementscript.md)
-- [设备平台类型](intune-shared-deviceplatformtype.md)
 - [支持](intune-shared-enablement.md)
 - [注册可用性选项](intune-shared-enrollmentavailabilityoptions.md)
 - [注册状态](intune-shared-enrollmentstate.md)
@@ -80,9 +79,8 @@ ms.locfileid: "51866144"
 - [移动应用安装时间设置](intune-shared-mobileappinstalltimesettings.md)
 - [移动应用疑难解答事件](intune-shared-mobileapptroubleshootingevent.md)
 - [所有者类型](intune-shared-ownertype.md)
-- [策略平台类型](intune-shared-policyplatformtype.md)
 - [代理域](intune-shared-proxieddomain.md)
-- [Report](intune-shared-report.md)
+- [报告](intune-shared-report.md)
 - [报表根目录](intune-shared-reportroot.md)
 - [生成的应用状态](intune-shared-resultantappstate.md)
 - [RGB 颜色](intune-shared-rgbcolor.md)
@@ -104,4 +102,4 @@ ms.locfileid: "51866144"
 - [Windows Autopilot Deployment 配置文件](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Windows 域加入配置](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows Universal AppX 应用分配设置](intune-shared-windowsuniversalappxappassignmentsettings.md)
-- [Windows 更新状态](intune-shared-windowsupdatestate.md)
+- [Windows更新状态](intune-shared-windowsupdatestate.md)
