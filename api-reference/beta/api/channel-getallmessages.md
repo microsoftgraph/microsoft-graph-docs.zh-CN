@@ -12,57 +12,57 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52546117"
 ---
-# <a name="channel-getallmessages"></a><span data-ttu-id="962a1-103">频道：getAllMessages</span><span class="sxs-lookup"><span data-stu-id="962a1-103">channel: getAllMessages</span></span>
+# <a name="channel-getallmessages"></a><span data-ttu-id="32997-103">频道：getAllMessages</span><span class="sxs-lookup"><span data-stu-id="32997-103">channel: getAllMessages</span></span>
 
-<span data-ttu-id="962a1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="962a1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="32997-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="32997-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="962a1-105">检索[团队](../resources/team.md)中所有[频道](../resources/channel.md)之间的[消息](../resources/chatmessage.md)，包括文本、音频和视频对话。</span><span class="sxs-lookup"><span data-stu-id="962a1-105">Retrieve [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md), including text, audio, and video conversations.</span></span> 
+<span data-ttu-id="32997-105">检索[团队](../resources/team.md)中所有[频道](../resources/channel.md)之间的[消息](../resources/chatmessage.md)，包括文本、音频和视频对话。</span><span class="sxs-lookup"><span data-stu-id="32997-105">Retrieve [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md), including text, audio, and video conversations.</span></span> 
 
-<span data-ttu-id="962a1-106">若要了解有关使用 Microsoft Teams 导出 API 来导出内容，请参阅[使用 Microsoft Teams 导出 API 导出内容](/microsoftteams/export-teams-content)。</span><span class="sxs-lookup"><span data-stu-id="962a1-106">To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).</span></span>
+<span data-ttu-id="32997-106">若要了解有关使用 Microsoft Teams 导出 API 以导出内容的更多信息，请参阅[使用 Microsoft Teams 导出 API 导出内容](/microsoftteams/export-teams-content)。</span><span class="sxs-lookup"><span data-stu-id="32997-106">To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="962a1-107">权限</span><span class="sxs-lookup"><span data-stu-id="962a1-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="32997-107">权限</span><span class="sxs-lookup"><span data-stu-id="32997-107">Permissions</span></span>
 
-<span data-ttu-id="962a1-p101">要调用此 API，需要以下权限。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="962a1-p101">The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="32997-p101">以下权限需要调用此 API。要了解详细信息，包括如何选择权限，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="32997-p101">The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="962a1-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="962a1-110">Permission type</span></span>      | <span data-ttu-id="962a1-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="962a1-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="32997-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="32997-110">Permission type</span></span>      | <span data-ttu-id="32997-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="32997-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="962a1-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="962a1-112">Delegated (work or school account)</span></span> | <span data-ttu-id="962a1-113">不支持</span><span class="sxs-lookup"><span data-stu-id="962a1-113">Not supported</span></span> |
-|<span data-ttu-id="962a1-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="962a1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="962a1-115">不支持</span><span class="sxs-lookup"><span data-stu-id="962a1-115">Not supported</span></span> |
-|<span data-ttu-id="962a1-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="962a1-116">Application</span></span> | <span data-ttu-id="962a1-117">ChannelMessage.Read.All</span><span class="sxs-lookup"><span data-stu-id="962a1-117">ChannelMessage.Read.All</span></span> |
+|<span data-ttu-id="32997-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="32997-112">Delegated (work or school account)</span></span> | <span data-ttu-id="32997-113">不支持</span><span class="sxs-lookup"><span data-stu-id="32997-113">Not supported</span></span> |
+|<span data-ttu-id="32997-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="32997-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="32997-115">不支持</span><span class="sxs-lookup"><span data-stu-id="32997-115">Not supported</span></span> |
+|<span data-ttu-id="32997-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="32997-116">Application</span></span> | <span data-ttu-id="32997-117">ChannelMessage.Read.All</span><span class="sxs-lookup"><span data-stu-id="32997-117">ChannelMessage.Read.All</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="962a1-118">在使用应用程序权限调用此 API 之前，你必须先请求访问权限。</span><span class="sxs-lookup"><span data-stu-id="962a1-118">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="962a1-119">有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。</span><span class="sxs-lookup"><span data-stu-id="962a1-119">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
+> <span data-ttu-id="32997-118">在使用应用程序权限调用此 API 之前，你必须先请求访问权限。</span><span class="sxs-lookup"><span data-stu-id="32997-118">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="32997-119">有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。</span><span class="sxs-lookup"><span data-stu-id="32997-119">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="962a1-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="962a1-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="32997-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="32997-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/getAllMessages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="962a1-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="962a1-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="32997-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="32997-121">Optional query parameters</span></span>
 
-<span data-ttu-id="962a1-122">可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。</span><span class="sxs-lookup"><span data-stu-id="962a1-122">You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.</span></span>
-<span data-ttu-id="962a1-123">此外，**lastModifiedDateTime** 上的 **dateTime** 范围查询还支持 [$filter](/graph/query-parameters#filter-parameter)。</span><span class="sxs-lookup"><span data-stu-id="962a1-123">Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**.</span></span> <span data-ttu-id="962a1-124">目前不支持其他 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="962a1-124">The other [OData query parameters](/graph/query-parameters) are not currently supported.</span></span>
+<span data-ttu-id="32997-122">可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。</span><span class="sxs-lookup"><span data-stu-id="32997-122">You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.</span></span>
+<span data-ttu-id="32997-123">此外，**lastModifiedDateTime** 上的 **dateTime** 范围查询还支持 [$filter](/graph/query-parameters#filter-parameter)。</span><span class="sxs-lookup"><span data-stu-id="32997-123">Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**.</span></span> <span data-ttu-id="32997-124">目前不支持其他 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="32997-124">The other [OData query parameters](/graph/query-parameters) are not currently supported.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="962a1-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="962a1-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="32997-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="32997-125">Request body</span></span>
 
-<span data-ttu-id="962a1-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="962a1-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="32997-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="32997-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="962a1-127">响应</span><span class="sxs-lookup"><span data-stu-id="962a1-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="32997-127">响应</span><span class="sxs-lookup"><span data-stu-id="32997-127">Response</span></span>
 
-<span data-ttu-id="962a1-128">若成功，此方法将返回 `200 OK`响应代码，同时也会返回通道中的所有消息。</span><span class="sxs-lookup"><span data-stu-id="962a1-128">If successful, this method returns a `200 OK` response code and also returns all the messages in the channel.</span></span>
+<span data-ttu-id="32997-128">若成功，此方法将返回 `200 OK`响应代码，同时也会返回通道中的所有消息。</span><span class="sxs-lookup"><span data-stu-id="32997-128">If successful, this method returns a `200 OK` response code and also returns all the messages in the channel.</span></span>
 
-## <a name="example"></a><span data-ttu-id="962a1-129">示例</span><span class="sxs-lookup"><span data-stu-id="962a1-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="32997-129">示例</span><span class="sxs-lookup"><span data-stu-id="32997-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="962a1-130">请求</span><span class="sxs-lookup"><span data-stu-id="962a1-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="32997-130">请求</span><span class="sxs-lookup"><span data-stu-id="32997-130">Request</span></span>
 
-<span data-ttu-id="962a1-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="962a1-131">The following is an example of the request.</span></span>
+<span data-ttu-id="32997-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="32997-131">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="962a1-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="962a1-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="32997-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="32997-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_allchannelmessages_1"
@@ -70,26 +70,26 @@ GET /teams/{team-id}/channels/getAllMessages
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/getAllMessages
 ```
-# <a name="c"></a>[<span data-ttu-id="962a1-133">C#</span><span class="sxs-lookup"><span data-stu-id="962a1-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="32997-133">C#</span><span class="sxs-lookup"><span data-stu-id="32997-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-allchannelmessages-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="962a1-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="962a1-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="32997-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="32997-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-allchannelmessages-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="962a1-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="962a1-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="32997-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="32997-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-allchannelmessages-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="962a1-136">Java</span><span class="sxs-lookup"><span data-stu-id="962a1-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="32997-136">Java</span><span class="sxs-lookup"><span data-stu-id="32997-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-allchannelmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="962a1-137">响应</span><span class="sxs-lookup"><span data-stu-id="962a1-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="32997-137">响应</span><span class="sxs-lookup"><span data-stu-id="32997-137">Response</span></span>
 
 <!-- {
   "blockType": "response",
