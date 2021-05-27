@@ -3,14 +3,14 @@ title: ticketInfo 资源类型
 description: 表示与请求相关的票证角色分配的对象
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 584600bf017a75efb141539b6f1397920717fb76
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: a59b62ddb014dedd802af6fcde001d4791d729c3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299209"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682598"
 ---
 # <a name="ticketinfo-resource-type"></a>ticketInfo 资源类型
 

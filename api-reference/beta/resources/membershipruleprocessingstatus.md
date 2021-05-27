@@ -2,15 +2,15 @@
 title: membershipRuleProcessingStatus 资源类型
 description: 表示动态组处理的当前状态。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f59f5f89c3aad8312504c62b29a0dbd490a37ac5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7c86f044517ad7b808db69364413727c8d76f076
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128258"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680995"
 ---
 # <a name="membershipruleprocessingstatus-resource-type"></a>membershipRuleProcessingStatus 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "50128258"
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| 状态 | [membershipRuleProcessingStatusDetails](#membershipruleprocessingstatusdetails-values) | 动态组处理的当前状态。 可能的值是： `NotStarted` `Running` 、 、 和 `Succeeded` `Failed` `UnknownFutureValue` 。  <br><br> 必填。 只读。|
+| 状态 | [membershipRuleProcessingStatusDetails](#membershipruleprocessingstatusdetails-values) | 动态组处理的当前状态。 可能的值是 `NotStarted` `Running` `Succeeded` ：、、、 `Failed` 和 `UnknownFutureValue` 。  <br><br> 必需。 只读。|
 | lastMembershipUpdated | edm。DateTime | 更新动态组的成员身份的最近日期和时间。 <br><br> 可选。 只读。|
-| errorMessage | 字符串 | 动态组处理出现错误时的详细错误消息。 <br><br> 可选。 只读。|
+| errorMessage | String | 动态组处理出现错误时的详细错误消息。 <br><br> 可选。 只读。|
 
 ### <a name="membershipruleprocessingstatusdetails-values"></a>membershipRuleProcessingStatusDetails 值
 

@@ -3,14 +3,14 @@ title: 获取 unifiedRoleEligibilityScheduleRequest
 description: 读取 unifiedRoleEligibilityScheduleRequest 对象的属性和关系。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 72279405e77700847b7c885e6bf77b7893377715
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: a38003382a59cd647c37033d20942ea92b1d2b16
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475268"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679659"
 ---
 # <a name="get-unifiedroleeligibilityschedulerequest"></a>获取 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph

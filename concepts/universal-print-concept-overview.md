@@ -96,7 +96,7 @@ Microsoft Graph 通用打印 API 使你的应用程序能够支持拉取打印�
 
 ## <a name="provide-feedback"></a>提供反馈
 
-欢迎在提供有关通用打印 API 的反馈。 在 [Microsoft 365 Developer Platform 意见论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)中提出建议。
+欢迎在提供有关通用打印 API 的反馈。 在 [Microsoft 365 开发者平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)中提出你的建议。
 
 ## <a name="see-also"></a>另请参阅
 

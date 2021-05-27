@@ -1,16 +1,16 @@
 ---
 title: 列出对话
 description: 检索此组中的会话列表。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 36b5033eb6e389b6e22138a46cdc263b12abbf0f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1b65696102c912ea093220b6dd3c41f8fb4104f3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041706"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681622"
 ---
 # <a name="list-conversations"></a>列出对话
 
