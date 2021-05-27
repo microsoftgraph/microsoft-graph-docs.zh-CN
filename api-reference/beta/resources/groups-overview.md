@@ -1,16 +1,16 @@
 ---
 title: 在 Microsoft Graph 中使用组
 description: 组是用户和其他主体的集合，他们共享对 Microsoft 服务或应用中资源的访问权限。 Microsoft Graph 提供了可用于根据方案创建和管理不同类型组和组功能的 API。 Microsoft Graph 中所有与组相关的操作都需要征得管理员同意。
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 7c72b6bfce1fe1d4c6133785f647bffa363eb860
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 06bd39316b917ef497be20298597839f10e64d38
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635164"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682351"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -20,7 +20,7 @@ ms.locfileid: "48635164"
 
 | 类型              | 用例 | groupType | mailEnabled | securityEnabled | 通过 API 创建和管理 |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Microsoft 365 组](#microsoft-365-groups) | 促进用户与共享 Microsoft Online 资源的协作。 | `["Unified"]` | `true` | `true` 或 `false` | 是 |
+| [Microsoft 365 组](#microsoft-365-groups) | 促进用户与共享 Microsoft Online 资源的协作。 | `["Unified"]` | `true` | `true` 或 `false` | 可访问 |
 | [安全组](#security-groups-and-mail-enabled-security-groups) | 控制用户对应用中资源的访问。 | `[]` | `false` | `true` | 是 |
 | [启用邮件的安全组](#security-groups-and-mail-enabled-security-groups) | 使用共享的组邮箱，控制用户对应用中资源的访问。 | `[]` | `true` | `true` | 否 |
 | 通讯组 | 将邮件分发给组中的成员。 建议使用 Microsoft 365 组，因为它提供的资源集更丰富。 | `[]` | `true` | `false` | 否 |

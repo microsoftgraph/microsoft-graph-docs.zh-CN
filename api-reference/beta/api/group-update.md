@@ -1,16 +1,16 @@
 ---
 title: 更新组
 description: 更新 group [对象的属性](../resources/group.md) 。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 51a34d50801914dcc3e1e10c1813c25543880c0b
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 5a006e25737abc2bc30b63e029991e8203ff47e0
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240754"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681240"
 ---
 # <a name="update-group"></a>更新组
 
@@ -58,7 +58,7 @@ PATCH /groups/{id}
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
 |securityEnabled|Boolean|指定组是否是安全组，包括Microsoft 365组。 |
-|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|
+|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|
 
 由于 **组** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有组实例中扩展的自定义属性中你自己的特定于 `PATCH` 应用的数据。
 
@@ -120,7 +120,7 @@ Content-length: 211
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,

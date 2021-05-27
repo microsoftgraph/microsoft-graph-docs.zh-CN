@@ -2,15 +2,15 @@
 title: 列出所有者
 description: 检索组的所有者列表。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4d9af9c39479262952d0ac7d645f7f0ba5de96bc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 64ee4d48713518dd9b4005cf6932dfc90932195c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041496"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681534"
 ---
 # <a name="list-owners"></a>列出所有者
 

@@ -3,14 +3,14 @@ title: 列出 unifiedRoleAssignmentScheduleInstances
 description: 获取 unifiedRoleAssignmentScheduleInstance 对象及其属性的列表。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3df4c2960079083c5edc399b10cbf3fd72697a1c
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: e012b422498e7029bc6f205ff0878b9b5e9093fb
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475163"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680505"
 ---
 # <a name="list-unifiedroleassignmentscheduleinstances"></a>列出 unifiedRoleAssignmentScheduleInstances
 命名空间：microsoft.graph

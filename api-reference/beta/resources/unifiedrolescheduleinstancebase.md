@@ -3,14 +3,14 @@ title: unifiedRoleScheduleInstanceBase 资源类型
 description: 将统一角色计划实例与统角色分配角色资格计划实例组合在一起的统一角色计划实例的基属性
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c681467dc77bff716c24fbb273640a3e1d7df689
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: ddf4311fdddc44089410a0f073d6e041660283f2
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299124"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682199"
 ---
 # <a name="unifiedrolescheduleinstancebase-resource-type"></a>unifiedRoleScheduleInstanceBase 资源类型
 

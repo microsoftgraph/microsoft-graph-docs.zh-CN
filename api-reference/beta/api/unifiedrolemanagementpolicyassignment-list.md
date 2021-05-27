@@ -3,14 +3,14 @@ title: 列出 unifiedRoleManagementPolicyAssignments
 description: 获取 unifiedRoleManagementPolicyAssignment 对象及其属性的列表。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3c9f6ed4d21a49a3b17bb22340f4d8350f1471bc
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: a126121c404eb5892594d3f03dec33af8602cbc9
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475442"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680414"
 ---
 # <a name="list-unifiedrolemanagementpolicyassignments"></a>列出 unifiedRoleManagementPolicyAssignments
 命名空间：microsoft.graph

@@ -3,14 +3,14 @@ title: unifiedRoleEligibilityScheduleRequest： filterByCurrentUser
 description: 获取 unifiedRoleEligibilityScheduleRequest 对象及其属性的列表，这些对象按特定用户主体进行筛选
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c127b7268dddbefbfb80cf2e4d87fa508fb3c966
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: c86e57ad48e239d6a77b6cf992163bd513bd1c0c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299202"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679510"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest： filterByCurrentUser
 命名空间：microsoft.graph

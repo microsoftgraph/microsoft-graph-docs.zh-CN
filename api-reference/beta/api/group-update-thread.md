@@ -1,16 +1,16 @@
 ---
 title: 更新对话线程
 description: 更新 thread 对象。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 989bd7a9302ad3d7b5f6845351c882858a7b488a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 26eab98dc2d734e76905c458c7730d6f6237bc93
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001951"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681226"
 ---
 # <a name="update-conversation-thread"></a>更新对话线程
 

@@ -1,16 +1,16 @@
 ---
 title: 删除 rejectedSender
-description: 从 "拒绝的发件人" 列表中删除用户或组。
-author: yyuank
+description: 从拒绝的发件人列表中删除用户或组。
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 481961a8afb7f4d07dbbc6d70d4f8feaf7bbc051
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14bdcef8d41d204e3c3ae6f3de08a3d1cc53a5ff
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965363"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681832"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
 
@@ -18,7 +18,7 @@ ms.locfileid: "48965363"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从指定组的 "拒绝的发件人" 列表中删除用户或组。
+从指定组的拒绝发件人列表中删除用户或组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id={id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>示例1：从组的 "拒绝的发件人" 列表中删除用户。
+### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>示例 1：从组的拒绝发件人列表中删除用户。
 #### <a name="request"></a>请求
 
 
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 ---
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面介绍响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -88,7 +88,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>示例2：从组的 "拒绝-发件人" 列表中删除组。
+### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>示例 2：从该组的拒绝发件人列表中删除组。
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)

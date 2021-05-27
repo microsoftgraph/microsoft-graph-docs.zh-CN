@@ -1,16 +1,16 @@
 ---
 title: 组：unsubscribeByMail
-description: 调用此方法将禁用当前用户接收此组的电子邮件通知。此组中的新帖子、事件和文件。
+description: 调用此方法将禁用当前用户接收有关该组中新帖子、事件和文件的电子邮件通知。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a3eb14d62eb9a58087ac830826ec858a68a07bf0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9a40ba67f5628be6ef25cc4b484b9c84ad71ebb7
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964859"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681261"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 
@@ -18,7 +18,7 @@ ms.locfileid: "48964859"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-调用此方法将禁用当前用户接收此组的电子邮件通知。此组中的新帖子、事件和文件。 仅支持 Microsoft 365 组。 
+调用此方法将禁用当前用户接收有关该组中新帖子、事件和文件的电子邮件通知。 仅支持 Microsoft 365 组。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

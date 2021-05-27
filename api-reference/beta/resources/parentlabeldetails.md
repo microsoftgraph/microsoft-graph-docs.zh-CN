@@ -3,14 +3,14 @@ title: parentLabelDetails 资源类型
 description: 表示信息保护父标签的标签详细信息。
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8ba6dfcbb7f441c0026848eb59735db5fb4987ac
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 8f1ebe58c3968e0f912806eb6f339bcfd499b57a
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579980"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679898"
 ---
 # <a name="parentlabeldetails-resource-type"></a>parentLabelDetails 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "52579980"
 | color       | String  | 用户界面应为标签显示的颜色（如果已配置）。                               |
 | 说明 | String  | 管理员定义的标签说明。                                                                 |
 | id          | String  | 标签 ID 是 GUID (全局唯) 。                                                          |
-| isActive    | 布尔 | 指示标签是否处于活动状态。 应在用户界面中隐藏或禁用活动标签。 |
+| isActive    | Boolean | 指示标签是否处于活动状态。 应在用户界面中隐藏或禁用活动标签。 |
 | name        | String  | 标签的纯文本名称。                                                                             |
 | sensitivity | Int32   | 标签的敏感度值，其中 lower 不太敏感。                                           |
 | tooltip     | String  | 应在用户界面中为标签显示的工具提示。                                      |

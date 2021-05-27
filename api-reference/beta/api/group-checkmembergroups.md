@@ -1,16 +1,16 @@
 ---
 title: 组：checkMemberGroups
 description: 检查指定组列表中的成员身份。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 49830cfd8669ea44ac386bdc394e5582e5e5e3d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c66d8710347c1c84cf75afffd52b77924a604add
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042147"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681912"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -105,7 +105,7 @@ Content-length: 44
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

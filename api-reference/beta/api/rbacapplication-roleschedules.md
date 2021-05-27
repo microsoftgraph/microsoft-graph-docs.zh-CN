@@ -3,14 +3,14 @@ title: rbacApplication：roleSchedules
 description: 检索 roleAssignmentSchedules 和 roleEligibilitySchedules。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d8bd07d0d029182c163322d2b93ea25a38d94cfd
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 415d7a5565ff4f35b55f003726d24cfe589b472e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474680"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680123"
 ---
 # <a name="rbacapplication-roleschedules"></a>rbacApplication：roleSchedules
 命名空间：microsoft.graph

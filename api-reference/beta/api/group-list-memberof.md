@@ -1,16 +1,16 @@
 ---
 title: List group memberOf
 description: 获取组直接成员所包括的组和管理单元。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9490f77be0d5dda873ad7a42715c474defebd2dd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 654df0d248e4b989babe087856df599d02352bc2
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041538"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681548"
 ---
 # <a name="list-group-memberof"></a>List group memberOf
 

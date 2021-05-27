@@ -2,15 +2,15 @@
 title: 更新 organizationalBrandingProperties
 description: 更新 organizationalBrandingProperties 对象的属性。
 localization_priority: Normal
-author: almars
+author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b39e11c4ff864cbd62fc2b1fd6eb567306b46c3c
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: f11a94aee5a81022c9b6700c3f9d5796172187cf
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298227"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680827"
 ---
 # <a name="update-organizationalbrandingproperties"></a>更新 organizationalBrandingProperties
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -139,7 +139,7 @@ Content-Type: image/jpeg
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -172,7 +172,7 @@ Content-Language: fr
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -227,7 +227,7 @@ Content-Language: fr
 
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",

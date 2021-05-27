@@ -2,15 +2,15 @@
 title: 'group: addFavorite'
 description: 将组添加到当前用户的收藏夹组列表中。 仅支持 Microsoft 365 组。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2d26041fbac80dc46089cea32e194825dde655c8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9d69dc471b6de7685efdae7075558abb34eabf0f
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965376"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681926"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 

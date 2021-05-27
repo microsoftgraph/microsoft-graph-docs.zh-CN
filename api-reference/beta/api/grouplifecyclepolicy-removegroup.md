@@ -1,16 +1,16 @@
 ---
 title: 'groupLifecyclePolicy: removeGroup'
 description: 从生命周期策略中删除组。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3f609681f13f1e0503b3bff723f15869c7e25704
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cca6d211de7b26efc45cad4826d1070646a6f137
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001839"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681118"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 

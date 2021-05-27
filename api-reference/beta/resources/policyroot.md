@@ -3,14 +3,14 @@ title: policyRoot 资源类型
 description: unifiedRoleManagementPolicy 和 unifiedRoleManagementPolicyAssignment 的新导航属性绑定到 policyRoot。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 85c334c52ab2bb196bcfce24610414a0843f898a
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 3827440befd26fb584addd0d6af520a6498c11dd
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299181"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680723"
 ---
 # <a name="policyroot-resource-type"></a>policyRoot 资源类型
 

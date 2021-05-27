@@ -1,16 +1,16 @@
 ---
 title: 在组上创建目录设置
 description: 使用此 API 为组创建新的目录设置。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4204478494dc02bb2013e95c6952f9b2bef166af
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b9a6b32b762306d716019d0c790104338bb5f3c0
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041174"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681338"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>在组上创建目录设置
 
@@ -84,7 +84,7 @@ Content-length: 222
 
 在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

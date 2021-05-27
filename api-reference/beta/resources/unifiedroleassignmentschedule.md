@@ -3,14 +3,14 @@ title: unifiedRoleAssignmentSchedule 资源类型
 description: 表示通过 Azure AD 角色分配活动应用程序操作Privileged Identity Management。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ec17baee024922f495490920cd334854cc362130
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: f89a6e1c7fecac535c8f0a50d7888aa65c7d94cc
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299127"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682276"
 ---
 # <a name="unifiedroleassignmentschedule-resource-type"></a>unifiedRoleAssignmentSchedule 资源类型
 

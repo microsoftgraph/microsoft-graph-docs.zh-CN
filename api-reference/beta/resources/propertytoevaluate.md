@@ -2,15 +2,15 @@
 title: propertyToEvaluate 资源类型
 description: 定义属性的名称和值。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0e04a2e63cb8b3112c4e68c0195c98d0fe404ebf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0855d4f06ed7f1be59c57c2989313268638e9859
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135379"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682612"
 ---
 # <a name="propertytoevaluate-resource-type"></a>propertyToEvaluate 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "50135379"
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| PropertyName | 字符串 | 提供属性名称。 |
-| propertyValue | 字符串 | 提供属性值。 |
+| PropertyName | String | 提供属性名称。 |
+| propertyValue | String | 提供属性值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

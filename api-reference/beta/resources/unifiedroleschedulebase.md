@@ -3,14 +3,14 @@ title: unifiedRoleScheduleBase 资源类型
 description: 将统一角色计划与统一角色资格计划角色分配统一角色计划的基础属性
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 898f990ae7ffa09b3f251ce83fd71da04c2eafc6
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: ac0738d7ebc8ddc9a507b0911a3abc2016d78d33
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299119"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682217"
 ---
 # <a name="unifiedroleschedulebase-resource-type"></a>unifiedRoleScheduleBase 资源类型
 

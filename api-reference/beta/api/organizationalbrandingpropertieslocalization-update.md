@@ -2,15 +2,15 @@
 title: 更新本地化的组织品牌设置
 description: 更新特定本地化的 organizationalbrandingproperties 对象的属性。
 localization_priority: Normal
-author: almars
+author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 693d42f81b5115b9b818e8495e320e127cd66262
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: c9c23e2ac73c35ad5d173dfbf524f30f6260d8e9
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298503"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679951"
 ---
 # <a name="update-localized-organizationalbrandingproperties"></a>更新本地化的组织品牌设置
 
@@ -107,7 +107,7 @@ Content-Type: image/jpeg
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -162,7 +162,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -200,7 +200,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",

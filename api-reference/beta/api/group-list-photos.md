@@ -1,16 +1,16 @@
 ---
 title: List photos
 description: 检索 profilePhoto 对象列表。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d022b7529585358ea5cb595fdfa26957f1078457
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6d3bdecfd318cd0413f69cbce366b1d5d46c10cd
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041468"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681527"
 ---
 # <a name="list-photos"></a>List photos
 

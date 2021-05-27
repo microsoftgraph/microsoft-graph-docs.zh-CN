@@ -1,16 +1,16 @@
 ---
 title: 更新事件
 description: 更新 event 对象。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 68fd96eaf5d5b0d815f7b757c3c3d61762937dd4
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: d1a6c5f26b732cd98083db5919082a7ce1c41182
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080461"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681254"
 ---
 # <a name="update-event"></a>更新事件
 

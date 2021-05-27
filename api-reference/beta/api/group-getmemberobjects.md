@@ -2,15 +2,15 @@
 title: 'group: getMemberObjects'
 description: 返回组的成员的所有组和管理单元。 检查是可传递的。 注意：组不能是目录角色的成员，因此不会返回任何目录角色。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 39ee632ad54608f9e662309365abfb5d994d2312
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a245c3a4e340a6aeccea783d44f03d599010f98f
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041804"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681667"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 

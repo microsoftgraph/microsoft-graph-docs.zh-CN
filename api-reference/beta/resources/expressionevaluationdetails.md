@@ -2,15 +2,15 @@
 title: expressionEvaluationDetails 资源类型
 description: 表示表达式详细信息、结果和属性详细信息。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 01cc4aa4bd6de88541d3886efe54e5da71228448
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a2e2b2620f30234c23753ef743f14e55e29f6f91
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129487"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679896"
 ---
 # <a name="expressionevaluationdetails-resource-type"></a>expressionEvaluationDetails 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50129487"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| 表达式 | 字符串 | 表示已计算表达式。 |
+| 表达式 | String | 表示已求值表达式。 |
 | expressionEvaluationDetails | expressionEvaluationDetails 集合 | 表示表达式的计算的详细信息。 |
 | expressionResult | Boolean | 表示当前表达式的结果的值。 |
 | propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | 定义属性的名称和该属性的值。 |

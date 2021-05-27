@@ -3,14 +3,14 @@ title: unifiedRoleAssignmentScheduleInstance：filterByCurrentUser
 description: 获取 unifiedRoleAssignmentScheduleInstance 对象及其属性的列表，这些对象按特定用户主体进行筛选
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8c6027f90a3947bde3ca720e1e2ecd2022e7e73f
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: cd84a9e617f582eb01afe31cad28114f22e03432
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299153"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680323"
 ---
 # <a name="unifiedroleassignmentscheduleinstance-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleInstance：filterByCurrentUser
 命名空间：microsoft.graph

@@ -1,16 +1,16 @@
 ---
-title: 删除组-Microsoft Graph API
+title: 删除组 - Microsoft Graph API
 description: 删除组资源。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 318cd74367ec47b3d7a8b4a1abbef8556d30b496
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 62750cd92071b5a14496dc0ea6a3cecb83ca338b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965341"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681786"
 ---
 # <a name="delete-group"></a>删除组
 
@@ -20,7 +20,7 @@ ms.locfileid: "48965341"
 
 删除组。  
 
-删除后，Microsoft 365 组将移至临时容器，并可在30天内恢复。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于 Microsoft 365 组。
+删除后，Microsoft 365组移动到临时容器，可以在 30 天内还原。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于Microsoft 365组。
 
 ## <a name="permissions"></a>权限
 

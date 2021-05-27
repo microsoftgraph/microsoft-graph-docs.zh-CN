@@ -3,14 +3,14 @@ title: 终结点资源类型
 description: 终结点表示与实体关联的资源的 URL。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: yyuank
-ms.openlocfilehash: 47bef2bfa14fb8a00fd1ca2356d7f880ff3207d6
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.prod: groups
+author: Jordanndahl
+ms.openlocfilehash: 1b5c9f401a659f1461cb9c2185dd412154dbeeda
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013595"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680407"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50013595"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-终结点表示与实体关联的资源的 URL。  例如，当创建一个新的 Microsoft 365 组时，其他资源也会作为 Microsoft 365 组的一部分创建。 其中包括用于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 现在，可以使用组资源类型的终结点导航来阅读有关这些 Microsoft 365 组资源（包括其关联的资源 URL）的更多信息。 这允许应用程序了解这些资源，甚至可以在其自己的体验中嵌入资源 URL 体验。
+终结点表示与实体关联的资源的 URL。  例如，当新建Microsoft 365组时，其他资源也会创建为组Microsoft 365的一部分。 其中包括对话的组邮箱和文档OneDrive文件夹等内容。 有关这些资源Microsoft 365，包括其关联的资源 URL）现在可以使用组资源类型上的终结点导航进行读取。  这使应用程序能够了解这些资源，甚至可以在其自己的体验中嵌入资源 URL 体验。
 
 ## <a name="methods"></a>方法
 
@@ -30,11 +30,11 @@ ms.locfileid: "50013595"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| 功能     | String  | 描述与此资源关联的功能。  (例如消息、对话等) 不可为空。 只读。 |
+| capability     | String  | 描述与此资源关联的功能。  (，例如消息、对话等) 不可为 null。 只读。 |
 | id             | String  | 终结点的唯一标识符;键。 不可为 null。 只读。|
 | providerId     | String  | 发布基础服务的应用程序 ID。 不可为 null。 只读。|
 | providerName   | String  | 发布基础服务的名称。 只读。|
-| providerResourceId|String| 对于 Microsoft 365 组，这设置为资源资源的已知名称 (例如 Yammer.FeedURL 等) 。 不可为 null。 只读。|
+| providerResourceId|String| 对于Microsoft 365组，此名称设置为资源组的已知名称 (例如Yammer。FeedURL 等) 。 不可为 null。 只读。|
 | uri            | String  | 已发布资源的 URL。 不可为 null。 只读。|
 
 ## <a name="relationships"></a>关系

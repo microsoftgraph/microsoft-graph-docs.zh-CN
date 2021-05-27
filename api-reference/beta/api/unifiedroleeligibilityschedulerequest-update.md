@@ -3,14 +3,14 @@ title: 更新 unifiedRoleEligibilityScheduleRequest
 description: 更新 unifiedRoleEligibilityScheduleRequest 对象的属性。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 240282f7dbe8acd3707053af08c9bd56579fe263
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: d5b39a4c10f077ff71c2e8288000efe76c83f655
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474396"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682363"
 ---
 # <a name="update-unifiedroleeligibilityschedulerequest"></a>更新 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph

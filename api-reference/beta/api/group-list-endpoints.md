@@ -1,16 +1,16 @@
 ---
 title: List endpoints
 description: 检索终结点对象的列表。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ea2517eeac7109d89563cb78989bc32c4bf7b5ba
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: be99b570d16193aa461fa8cc2d8cc3646d0e55a1
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041650"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681618"
 ---
 # <a name="list-endpoints"></a>List endpoints
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 
 ### <a name="response"></a>响应
 下面是一个响应示例。
->注意：为了提高可读性，可能缩短了此处显示的响应对象。
+>注意：为了提高可读性，可能缩短此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

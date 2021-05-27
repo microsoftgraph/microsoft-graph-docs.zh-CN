@@ -3,14 +3,14 @@ title: unifiedRoleManagementPolicyRuleTarget 资源类型
 description: unifiedRoleManagementPolicyRuleTarget 指定与角色管理策略相关联的目标。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ad612355fdcb5089277541ae898ba3429fda7fc9
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: ce98c30748e3a4c524c09dc379c636fdadf57faf
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299185"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682234"
 ---
 # <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a>unifiedRoleManagementPolicyRuleTarget 资源类型
 

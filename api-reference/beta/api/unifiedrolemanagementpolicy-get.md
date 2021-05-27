@@ -3,14 +3,14 @@ title: 获取 unifiedRoleManagementPolicy
 description: 读取 unifiedRoleManagementPolicy 对象的属性和关系。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2136258212faeaaba241e25e7743eaff9e9a6aec
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 70f4b1d5d59f5306e5b73f08b5385dc96ea8ac9c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475058"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682341"
 ---
 # <a name="get-unifiedrolemanagementpolicy"></a>获取 unifiedRoleManagementPolicy
 命名空间：microsoft.graph

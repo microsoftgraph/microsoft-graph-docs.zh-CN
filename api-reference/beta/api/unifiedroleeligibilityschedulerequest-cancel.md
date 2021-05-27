@@ -3,14 +3,14 @@ title: unifiedRoleEligibilityScheduleRequest：cancel
 description: 取消 unifiedRoleEligibilityScheduleRequest。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 325eb611042cf4627cb1a02f15fad8513ba70870
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c877c30ed016a83a9c1da8019a33467e232fc110
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474452"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680092"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest：cancel
 命名空间：microsoft.graph

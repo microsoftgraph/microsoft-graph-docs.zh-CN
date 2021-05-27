@@ -1,16 +1,16 @@
 ---
 title: 删除 acceptedSender
-description: '从接受的发件人列表中删除用户或组。 '
-author: yyuank
+description: '从接受发件人列表中删除用户或组。 '
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe19bb8409d1780d47caaf308f68638d5846e833
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f06e44853c7b78e50ff41a2569f4509ee232b6a3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990912"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681867"
 ---
 # <a name="remove-acceptedsender"></a>删除 acceptedSender
 
@@ -18,7 +18,7 @@ ms.locfileid: "47990912"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从指定组的 "接受-发件人" 列表中删除用户或组。 
+从指定组的接受发件人列表中删除用户或组。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id={id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-remove-a-user-from-the-accepted-senders-list-for-the-group"></a>示例1：从组的接受-发件人列表中删除用户。
+### <a name="example-1-remove-a-user-from-the-accepted-senders-list-for-the-group"></a>示例 1：从组的接受发件人列表中删除用户。
 #### <a name="request"></a>请求
 
 <!-- {
@@ -70,7 +70,7 @@ DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=htt
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-a-group-from-the-accepted-senders-list-for-the-group"></a>示例2：从组的 "接受-发件人" 列表中删除组。
+### <a name="example-2-remove-a-group-from-the-accepted-senders-list-for-the-group"></a>示例 2：从该组的接受发件人列表中删除组。
 #### <a name="request"></a>请求
 
 <!-- {

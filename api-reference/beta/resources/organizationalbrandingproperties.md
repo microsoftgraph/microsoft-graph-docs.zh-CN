@@ -2,15 +2,15 @@
 title: organizationalBrandingProperties 资源类型
 description: 包含组织品牌打造的详细信息。
 localization_priority: Normal
-author: almars
+author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 719642a606396601c94feaa38ea1cc877c5bd6d6
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: b0e4f7993632026456f11173ce08cd9612199c74
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547132"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680862"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>organizationalBrandingProperties 资源类型
 

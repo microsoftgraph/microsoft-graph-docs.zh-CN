@@ -3,14 +3,14 @@ title: unifiedRoleEligibilitySchedule 资源类型
 description: 表示通过 Azure AD 角色分配符合条件的操作Privileged Identity Management。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1593e819b3c57ee24dae0480aadcb7f532d2fbf4
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 7b996bbe2e34d7916e85d308039e48659f2b3234
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299197"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679475"
 ---
 # <a name="unifiedroleeligibilityschedule-resource-type"></a>unifiedRoleEligibilitySchedule 资源类型
 

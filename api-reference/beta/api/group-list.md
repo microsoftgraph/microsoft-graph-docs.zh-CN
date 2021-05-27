@@ -2,15 +2,15 @@
 title: 列出组
 description: 列出组织中所有可用的组，包括但不限于 Microsoft 365 组。
 localization_priority: Priority
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 753aad2f2b8de13986ffb713c4a28a5680216e89
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 40596004e74fd212debe420d2b2b419866d342bb
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041321"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681429"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/groups
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回每个组的所有默认属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。在实际调用中将返回每个组的所有默认属性。
 
 <!-- {
   "blockType": "response",

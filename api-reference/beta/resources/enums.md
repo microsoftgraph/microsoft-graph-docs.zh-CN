@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: add460d4f88d80c6d318a5c8c8c6d1171fa9cf31
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: abc86450938a979a082c9dd6792ce8fba4af17f2
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547216"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682633"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -324,7 +324,7 @@ ms.locfileid: "52547216"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobileSMS|
 |mobilePhone|
 |officePhone|
@@ -472,7 +472,7 @@ ms.locfileid: "52547216"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -578,7 +578,7 @@ ms.locfileid: "52547216"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobileSMS|
 |mobileCall|
 |officePhone|
@@ -789,7 +789,7 @@ ms.locfileid: "52547216"
 |:--------------
 | 通话
 | 聊天
-| email
+| 电子邮件
 | 焦点
 | meeting
 
@@ -797,7 +797,7 @@ ms.locfileid: "52547216"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -1180,10 +1180,10 @@ ms.locfileid: "52547216"
 | doNotForward
 | followUp
 | fyi
-| forward
+| 转发
 | noResponseNecessary
 | 阅读
-| reply
+| 回复
 | replyToAll
 | review
 
@@ -1592,6 +1592,15 @@ ms.locfileid: "52547216"
 |hidden|
 |unknownFutureValue|
 
+### <a name="advancedconfigstate-values"></a>advancedConfigState 值 
+
+|成员|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission 值
 
 |成员|
@@ -1675,7 +1684,7 @@ ms.locfileid: "52547216"
 | :----- | :---- |
 | 无   | 0     |
 | 添加    | 1     |
-| Update | 2     |
+| 更新 | 2     |
 | 删除 | 4      |
 
 ### <a name="chatmessagetype-values"></a>chatMessageType 值
@@ -1798,7 +1807,7 @@ ms.locfileid: "52547216"
 | 成员  | 值 | 说明                          |
 | :------ | :---- | :----------------------------------- |
 | default | 0     | 内容是文件或非电子邮件类型。 |
-| email   | 1     | 内容是电子邮件。                 |
+| 电子邮件   | 1     | 内容是电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
 
@@ -1923,7 +1932,7 @@ ms.locfileid: "52547216"
 
 | 成员             | 值 | 说明        |
 |:-------------------|:------|:-------------------|
-| 垃圾邮件               | 1     | 垃圾邮件威胁。       |
+| 垃圾邮件 (spam)               | 1     | 垃圾邮件威胁。       |
 | 仿冒           | 2     | 网络钓鱼威胁。   |
 | 恶意软件            | 3     | 恶意软件威胁。    |
 | unknownFutureValue | 4      | sentinel 成员。 |
@@ -2179,7 +2188,7 @@ ms.locfileid: "52547216"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|team      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
+|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 

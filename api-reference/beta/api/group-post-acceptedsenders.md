@@ -1,16 +1,16 @@
 ---
 title: 删除 acceptedSender
 description: 向 acceptedSender 列表中添加新用户或组。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 614154640326e95e5e4ecb23c8664439525e35c9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 31a4dd44eb0f16b78dfe3b2cebe068ba825e6835
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953794"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681415"
 ---
 # <a name="create-acceptedsender"></a>删除 acceptedSender
 

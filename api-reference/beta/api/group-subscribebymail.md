@@ -2,15 +2,15 @@
 title: 组：subscribeByMail
 description: 调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b360957a3dfc653481eda367f7ddea5af04fffc0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 983f0ca44050f60e28bdb642c65f44cadb39b457
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964865"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681268"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 

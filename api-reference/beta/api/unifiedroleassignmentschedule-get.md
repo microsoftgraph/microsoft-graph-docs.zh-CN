@@ -3,14 +3,14 @@ title: 获取 unifiedRoleAssignmentSchedule
 description: 读取 unifiedRoleAssignmentSchedule 对象的属性和关系。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bfd3f05ed11044fc2076a9199f7e46688608daf8
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: d4e608946dea3314359b90c3c8b6b859c0a62566
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299155"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680394"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>获取 unifiedRoleAssignmentSchedule
 命名空间：microsoft.graph

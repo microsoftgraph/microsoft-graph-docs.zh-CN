@@ -3,14 +3,14 @@ title: unifiedRoleManagementPolicyRule 资源类型
 description: unifiedRoleManagementPolicyRule 指定与角色管理策略关联的规则。 它是抽象的。
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 420ebfca11d2873ad942782fb8e7d97e893b7185
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: aa0bc719fe4722692b1ff42861cccede7150780d
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299123"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682241"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>unifiedRoleManagementPolicyRule 资源类型
 

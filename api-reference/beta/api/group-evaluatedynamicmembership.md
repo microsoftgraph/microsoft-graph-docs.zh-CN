@@ -1,16 +1,16 @@
 ---
 title: group： evaluateDynamicMembership
 description: 评估用户或设备是或将是动态组的成员。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 94594d31c4e7630b91905edb244f616cac1b21ab
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: de8e44a79644bcea5e3c44b214580e16359468e2
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961879"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681758"
 ---
 # <a name="group-evaluatedynamicmembership"></a>group： evaluateDynamicMembership
 
@@ -68,7 +68,7 @@ POST /groups/evaluateDynamicMembership
 | 参数 | 类型 | 说明 |
 | :-------- | :--- | :---------- |
 | memberId | String collection | memberId 是要评估的用户或设备的对象 ID。 |
-| membershipRule | String collection | 用于成员评估的规则。 如果未提供此属性，则评估现有组的规则。 如果提供此属性，将评估用户或设备是否具有同一规则组中可能的成员身份。 有关详细信息，请参阅 [Azure Active Directory 中组的动态成员身份规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
+| membershipRule | String collection | 用于成员评估的规则。 如果未提供此属性，则评估现有组的规则。 如果提供此属性，将评估用户或设备是否具有同一规则组中可能的成员身份。 有关详细信息，请参阅 Dynamic [membership rules for groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
 
 ## <a name="response"></a>响应
 
@@ -118,7 +118,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面介绍响应示例。 
 
 <!-- {
   "blockType": "response",

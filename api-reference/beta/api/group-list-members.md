@@ -2,15 +2,15 @@
 title: List group members
 description: 获取组的直接成员列表。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a07db7b2ebda91bdbce1d27bb034c50bc8d33902
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5d61e2cf80220ed7818c0fc983e959e616f82ac8
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041531"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681541"
 ---
 # <a name="list-group-members"></a>List group members
 
