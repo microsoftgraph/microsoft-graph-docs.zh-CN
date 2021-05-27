@@ -1,7 +1,7 @@
 ### YamlMime:Tutorial
 title: 生成首个自定义 Microsoft Graph 连接器
 metadata:
-  title: 生成首个 Microsoft Graph Data 连接 应用程序
+  title: 生成首个自定义 Microsoft Graph 连接器
   description: 本教程介绍如何生成首个自定义 Microsoft Graph 连接器。
   audience: Developer
   level: Beginner
@@ -11,12 +11,12 @@ metadata:
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:.NET Core, C
   ms.prod: search
-  ms.openlocfilehash: b75fc0c033beed3767c590d5f9fac99ba6effd91
-  ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+  ms.openlocfilehash: 1c5ee6e10ecacb2e55e8dfe46c52aab2d8a2be09
+  ms.sourcegitcommit: 4602b5e2e74df6a0f77cf1c8b2a7f70fe86f262f
   ms.translationtype: MT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 05/27/2021
-  ms.locfileid: "52682676"
+  ms.locfileid: "52689682"
 items:
 - title: 生成首个自定义 Microsoft Graph 连接器
   durationInMinutes: 10
