@@ -44,7 +44,7 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 
 ### <a name="manage-devices"></a>管理设备
 
-[管理组织中的注册设备](/azure/active-directory/device-management-introduction)。设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。条件访问策略使用它们进行多重身份验证。
+[管理组织中的注册设备](/azure/active-directory/device-management-introduction)。设备已注册给用户，包括笔记本电脑、台式机、平板电脑和移动电话等。设备通常是在云中使用 Device Registration Service 或由 Microsoft Intune 创建。通过条件访问策略使用它们时将进行多重身份验证。
 
 ### <a name="partner-tenant-management"></a>合作伙伴租户管理
 

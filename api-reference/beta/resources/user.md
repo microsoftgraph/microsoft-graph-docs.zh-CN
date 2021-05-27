@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 85ee877646569c33ba07b623fd3f246a5444c21e
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: fd3c48ca0f00d2c3c47ee2a0799d72129a5a0d4b
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579287"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645561"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -195,7 +195,7 @@ ms.locfileid: "52579287"
 | lastPasswordChangeDateTime | DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 只读。 |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) 集合 | 此用户的许可证分配状态。 <br><br>仅在 `$select` 上返回。 只读。 |
-| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。<br>注意：虽然此属性可以包含重音字符，但若使用可能导致用户访问其他 Microsoft 应用程序时遇到问题。<br><br>默认情况下返回。 支持 `$filter` 和 `endsWith`。 |
+| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 虽然此属性可以包含重音字符，但若使用可能导致用户访问其他 Microsoft 应用程序时遇到问题。<br><br> 支持 `$filter` 和 `endsWith`。 |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 `$select` 上返回。 仅支持 Get 用户 API（`GET /users/{id}` 或 `GET /me`）。 |
 | mailNickname | String | 用户的邮件别名。创建用户时必须指定此属性。最大长度为 64 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。从本地目录同步的用户的只读状态。 |

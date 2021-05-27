@@ -20,11 +20,11 @@ ms.locfileid: "52546117"
 
 检索[团队](../resources/team.md)中所有[频道](../resources/channel.md)之间的[消息](../resources/chatmessage.md)，包括文本、音频和视频对话。 
 
-若要了解有关使用 Microsoft Teams 导出 API 来导出内容，请参阅[使用 Microsoft Teams 导出 API 导出内容](/microsoftteams/export-teams-content)。
+若要了解有关使用 Microsoft Teams 导出 API 以导出内容的更多信息，请参阅[使用 Microsoft Teams 导出 API 导出内容](/microsoftteams/export-teams-content)。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+以下权限需要调用此 API。要了解详细信息，包括如何选择权限，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

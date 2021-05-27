@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: c17145d50528effae6e847a9da64c7f80687cf97
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: a74a4cabd593cfa26488a80399d6958d09cf9b6c
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547027"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645351"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -24,7 +24,7 @@ ms.locfileid: "52547027"
 - 在 [打印任务定义](/graph/api/resources/printtaskdefinition)上[订阅更改通知](universal-print-webhook-notifications.md)或[打印机](/graph/api/resources/printer)资源。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-- 使用 Azure Active Directory （Azure AD） [许可请求](/graph/api/resources/consentrequests-root) 管理尝试访问需要管理员审批的应用的用户的请求工作流。 API 利用下列资源：
+- 使用 Azure Active Directory （Azure AD） [许可请求](/graph/api/resources/consentrequests-root) 管理尝试访问需要管理员审批的应用的用户的请求工作流。API 使用以下资源：
   - [adminConsentRequestPolicy](/graph/api/resources/adminconsentrequestpolicy) 一个资源，用于创建和管理组织的应用访问请求。
   - [appConsentRequest](/graph/api/resources/appconsentrequest)一个资源，用于聚合和管理用户访问特定应用的请求。
   - [userConsentRequest](/graph/api/resources/userConsentRequest)一个资源，用于请求访问需要管理员授权的用户。 
@@ -65,7 +65,7 @@ ms.locfileid: "52547027"
 ## <a name="march-2021-new-in-preview-only"></a>2021 年 3 月：仅限预览版中的新增功能
 
 ### <a name="applications"></a>应用程序
-[创建自签名证书证书](/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta&preserve-view=true) 添加到 SAML 应用程序。 借助此功能，允许 Azure AD 对 SAML 响应进行签名，帮助租户中启用 Azure AD 库应用单一登录。
+[创建自签名证书证书](/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta&preserve-view=true) 添加到 SAML 应用程序。借助此功能，允许 Azure AD 对 SAML 响应进行签名，帮助租户中启用 Azure AD 库应用单一登录。
 
 ### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
 添加到 [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) 资源之后，上传设备源映像失败再出现两个原因：操作系统不受支持 （`osVersionNotSupported`）， 或者预配 Windows 虚拟机 （`sourceImageInvalid`） 的源映像无效。
@@ -77,26 +77,26 @@ ms.locfileid: "52547027"
 Intune [3](https://developer.microsoft.com/graph/changelog/?from=2021-03-01&to=2021-03-31&filterBy=Corporate%20management) beta 版更新。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-将新模型 [访问权限审阅](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 组成员身份和所有其他支持的资源类型。 在 <a0/ [中弃用旧版 Access 审阅](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true)。
+将新模型 [访问权限审阅](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 组成员身份和所有其他支持的资源类型。弃用[旧访问审阅模式](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="sites-and-lists"></a>网站和列表
-- 通过 [contentType](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) 实体上的一组新属性和方法，支持特定站点集合中文档或文档集的特定内容类型或模板。 方法包括下列几种:
+- 通过 [contentType](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) 实体上的一组新属性和方法，支持特定站点集合中文档或文档集的特定内容类型或模板。方法包括下列几种：
   - [addCopy](/graph/api/contenttype-addcopy?view=graph-rest-beta&preserve-view=true)
   - [associateWithHubSites](/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta&preserve-view=true)
   - [copyToDefaultContentLocation](/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-beta&preserve-view=true)
   - [isPublished](/graph/api/contenttype-ispublished?view=graph-rest-beta&preserve-view=true)
   - [发布](/graph/api/contenttype-publish?view=graph-rest-beta&preserve-view=true)
   - [取消发布](/graph/api/contenttype-unpublish?view=graph-rest-beta&preserve-view=true)
-- 按其列标签自定义内容类型。 列由 [columnDefinition](/graph/api/resources/columndefinition?view=graph-rest-beta&preserve-view=true) 实体表示，并支持全套的 CRUD 操作。
+- 按其列标签自定义内容类型。列由 [columnDefinition](/graph/api/resources/columndefinition?view=graph-rest-beta&preserve-view=true) 实体表示，并支持全套的 CRUD 操作。
 - [获取可应用于列表上网站的内容类型](/graph/api/site-getApplicableContentTypesForList?view=graph-rest-beta&preserve-view=true)。
-- 按 **columnDefinition** 实体中的下列属性来区分列类型: 布尔型、计算型、选择型、货币型、日期时间型、查找型、数字型、人或组型、文本型。 这些属性是相互排斥的。
+- 按 **columnDefinition** 实体中的下列属性来区分列类型: 布尔型、计算型、选择型、货币型、日期时间型、查找型、数字型、人或组型、文本型。这些属性是互斥的。
 
 ### <a name="sites-and-lists--taxonomy"></a>网站和列表 | 分类
 - 使用术语库 [关系](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true)[termStore](/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true)导航到 **术语** 存储。
 - 反之，则使用 **parentSiteId** 属性获取术语库的父站点的ID。
 
 ### <a name="users"></a>用户
-- [通过](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true) 或 [更新](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true) 用户 [对翻译语言的偏好](/graph/api/resources/translationpreferences?view=graph-rest-beta&preserve-view=true)。 例如，是否翻译、自动翻译、或在翻译消息、聊天和网页中的特定语言之前提示，以及进行任何 [翻译覆盖](/graph/api/resources/translationlanguageoverride?view=graph-rest-beta&preserve-view=true)。
+- [通过](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true) 或 [更新](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true) 用户 [对翻译语言的偏好](/graph/api/resources/translationpreferences?view=graph-rest-beta&preserve-view=true)。例如，是否翻译、自动翻译、或在翻译消息、聊天和网页中的特定语言之前提示，以及进行任何 [翻译覆盖](/graph/api/resources/translationlanguageoverride?view=graph-rest-beta&preserve-view=true)。
 - [为用户激活](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) 计划许可证。
 
 
@@ -131,7 +131,7 @@ Intune [3](https://developer.microsoft.com/graph/changelog/?from=2021-03-01&to=2
 - Intune 在 [设备](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源上设置的新属性: **deviceCategory**、**deviceOwnership**、**domainName**、**enrollmentProfileName**、**enrollmentType**、**isRooted**、**managementType** 和 **registrationDateTime**。
 
 ### <a name="education"></a>教育版
-使用 [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) 来指定课堂作业的默认操作，例如，作业到期时间、作业通知的频道 URL。 仍然可以在创建任务时自定义值。
+使用 [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) 来指定课堂作业的默认操作，例如，作业到期时间、作业通知的频道 URL。仍然可以在创建任务时自定义值。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 - 使用 [smsAuthenticationMethodConfiguration](/graph/api/resources/smsAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) 资源以 [获取](/graph/api/smsauthenticationmethodconfiguration-get?view=graph-rest-beta&preserve-view=true)、[更新](/graph/api/smsauthenticationmethodconfiguration-update?view=graph-rest-beta&preserve-view=true) 或 [删除](/graph/api/smsauthenticationmethodconfiguration-delete?view=graph-rest-beta&preserve-view=true) 组织中短信身份验证策略的配置设置。
@@ -189,7 +189,7 @@ Intune [3](https://developer.microsoft.com/graph/changelog/?from=2021-03-01&to=2
 使用班级[作业设置](/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta&preserve-view=true)来启用或禁用动画来以庆祝交作业。
 
 ### <a name="groups"></a>组
-使用 **membershipRuleProcessingStatus** 属性获取基于规则的动态组的处理状态。 当用户的属性发生更改时，此选项非常有用，用户在基于规则的 [Microsoft 365 组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)中的会员资格将根据为组织设置的组会员资格规则重新评估。 
+使用 **membershipRuleProcessingStatus** 属性获取基于规则的动态组的处理状态。当用户的属性发生更改时，此选项非常有用，用户在基于规则的 [Microsoft 365 组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)中的会员资格将根据为组织设置的组会员资格规则重新评估。 
 
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 获取用户或设备对构建在PowerApps上的第三方软件的[使用权](/graph/api/resources/UsageRight?view=graph-rest-beta&preserve-view=true)，或者，设备对订阅的使用权。 使用权包括相应服务或产品的标识符，以及使用权的当前状态，如激活、未激活、警告或暂停。
@@ -222,7 +222,7 @@ Intune [3](https://developer.microsoft.com/graph/changelog/?from=2021-03-01&to=2
 - [获取用户和 Teams 应用间的聊天](/graph/api/userscopeteamsappinstallation-get-chat)。
 
 ### <a name="use-the-toolkit"></a>使用工具包
-Microsoft Graph 工具包 2.0 的 GA 版本 - 此版本包含新 [Microsoft Graph 待办任务组件](./toolkit/components/todo.md)（与 [Planner 任务组件](./toolkit/components/tasks.md)不同），以及增强的[个人卡片组件](./toolkit/components/person-card.md)。 更多信息请参阅[相关的博客文章](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/)。
+Microsoft Graph 工具包 2.0 的 GA 版本 - 此版本包含新 [Microsoft Graph 待办任务组件](./toolkit/components/todo.md)（与 [Planner 任务组件](./toolkit/components/tasks.md)不同），以及增强的[个人卡片组件](./toolkit/components/person-card.md)。有关更多信息，请参见[相关博客文章](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/)。
 
 
 ## <a name="december-2020-new-in-preview-only"></a>2020 年 12 月：仅限预览版的新增功能
@@ -290,7 +290,7 @@ Microsoft Graph 工具包 2.0 的 GA 版本 - 此版本包含新 [Microsoft Grap
 ### <a name="teamwork"></a>团队合作
 
 - 资源特定许可 (RSC) 权限的正式发布。RSC 权限允许团队所有者向生产应用授予具体同意，以便访问和/或修改团队的特定数据，例如读取团队的设置，或者修改频道的名称、说明及其他设置。
-- 适用于 [频道](/graph/api/resources/channel) 或频道内的邮件 Api 的 GA。 Api 包括：
+- 适用于 [频道](/graph/api/resources/channel) 或频道内的邮件 Api 的 GA。API 包括：
   - [创建](/graph/api/conversationmember-add) 或 从频道中[删除](/graph/api/conversationmember-delete) 对话成员。
   - [更新频道中成员](/graph/api/conversationmember-update) 的角色。
   - 获取频道中的特定邮件或所有邮件。
@@ -317,7 +317,7 @@ Intune beta 版[11 月](changelog.md#november-2020)更新。
 [组成员资格访问审查 API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 首次上线，可以定期审查用户访问，确保只有适当人员用户持续访问权，并有效管理组成员资格。
 
 ### <a name="search"></a>搜索
-可以聚合数值或字符串类型的搜索结果，[Microsoft Graph 连接器](/microsoftsearch/connectors-overview)导入这些结果，并将其在[架构](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)中设置为可精简。 查看更多有关 [使用聚合优化搜索结果](search-concept-aggregation.md)的详细信息。
+可以聚合数值或字符串类型的搜索结果，[Microsoft Graph 连接器](/microsoftsearch/connectors-overview)导入这些结果，并将其在[架构](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)中设置为可精简。查看有关[使用聚合优化搜索结果](search-concept-aggregation.md)的更多信息。
 
 ## <a name="october-2020-new-and-generally-available"></a>2020年 10 月：新版本和正式版
 
@@ -341,7 +341,7 @@ Intune beta 版[11 月](changelog.md#november-2020)更新。
 [Microsoft for API 的 GA](/graph/api/resources/todo-overview?view=graph-rest-1.0&preserve-view=true) - 使用产品应用中的待办 API 创建和管理属于用户工作流的任务，例如创建电子邮件的任务。  
 
 ### <a name="users"></a>用户
-获取适用于公司员工的[用户](/graph/api/resources/user)新属性：聘用日期、组织协会（如分部和成本中心）和员工类型（如顾问、合同工或供应商）。 这些属性需要在 GET 操作中指定 `$select`OData 查询参数。
+获取适用于公司员工的[用户](/graph/api/resources/user)新属性：聘用日期、组织协会（如分部和成本中心）和员工类型（如顾问、合同工或供应商）。这些属性要求在GET操作中指定`$select` OData 查询参数。
 
 ## <a name="october-2020-new-in-preview-only"></a>2020 年 10 月：仅限预览版中的新增功能
 
@@ -367,7 +367,7 @@ Intune beta 版 [10 月](changelog.md#october-2020)更新。
 [撤销](/graph/api/permission-revokegrants?view=graph-rest-beta&preserve-view=true)通过共享链接授予的 [driveItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) 或 [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) 的访问权限。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
-- 管理[身份验证方法](/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-beta&preserve-view=true)策略，以识别可以使用特定多重身份验证方法登录 Azure Active Directory 的用户。 配置策略以定义以下内容：
+- 管理[身份验证方法](/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-beta&preserve-view=true)策略，以识别可以使用特定多重身份验证方法登录 Azure Active Directory 的用户。配置策略以定义以下内容：
   - 可以在 Azure AD 租户中使用的 FIDO2 安全密钥类型。
   - 允许使用 FIDO2 安全密钥或无密码电话登录来登录 Azure AD 的用户或用户组。
 - 为用户配置[电子邮件身份验证方法](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta&preserve-view=true)，以自助重置密码。
@@ -388,7 +388,7 @@ Intune beta 版 [10 月](changelog.md#october-2020)更新。
 [事件](/graph/api/resources/event)资源的 **transactionId** 属性 GA，可选择由客户端应用程序设置，以避免客户端重试创建相同事件时出现多余的 POST 操作。 当低网络连接性导致客户端在从服务器中收到客户端先前创建事件请求的响应之前超时时，此功能很有用。
 
 ### <a name="cloud-communications"></a>云通信
-[从[通话](/graph/api/resources/call)中删除参与者](/graph/api/participant-delete)。 即使在有必要删除活动通话的参与者的情况下，也可以使用此操作。
+[从[通话](/graph/api/resources/call)中删除参与者](/graph/api/participant-delete)。即使在有必要删除活动通话的参与者的情况下，也可以使用此操作。
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 Intune [v 1.0 版的 9 月](changelog.md#september-2020) 更新。
@@ -456,9 +456,9 @@ Intune beta 版[ 9 月](changelog.md#september-2020)更新。
   - [使用针对 OneDrive 和 SharePoint 的聚合](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations)优化结果。
 - 查询通过 Microsoft Graph 连接器跨越[多个连接](./search-concept-custom-types.md)摄取的外部数据。
 - 充分利用 Microsoft Graph 连接器的增强内容，了解：
-  - [管理连接](search-index-manage-connections.md)
-  - [管理架构](search-index-manage-schema.md)
-  - [管理项目](search-index-manage-items.md)
+  - [管理连接](connecting-external-content-manage-connections.md)
+  - [管理架构](connecting-external-content-manage-schema.md)
+  - [管理项目](connecting-external-content-manage-items.md)
 - 跟踪 Microsoft Graph [连接](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true)的状态。
 - 定义[外部组](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true)以设置添加到 Microsoft Graph [连接](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true)的[外部项目](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 对象的权限。 外部组可以表示非 Azure Active Directory 组或类似组的构造（例如业务单元），它们确定对外部数据源中的内容的权限。
 
@@ -494,25 +494,25 @@ Intune beta 版[ 9 月](changelog.md#september-2020)更新。
 - 通过使用 **cancelledOccurrences** 属性获取数据系列中的任何取消事件。
 
 ### <a name="change-notifications"></a>更改通知
-- 使用 [订阅](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true)的 **includeResourceData** 属性，以 [设置包含资源数据的更改通知](webhooks-with-resource-data.md)。 不要使用 **includeProperties** 属性。
+- 使用 [订阅](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true)的 **includeResourceData** 属性，以 [设置包含资源数据的更改通知](webhooks-with-resource-data.md)。请勿使用 **includeProperties** 属性。
 - 获取[通过事件中心发送的更改通知](change-notifications-delivery.md)。
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 - 通过使用 **allowAllUser** 属性向所有用户和组授予对 [打印机共享](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true)的访问权限。
-- 使用新的委派和应用程序权限来访问或管理[打印文档](/graph/api/resources/printDocument?view=graph-rest-beta&preserve-view=true)、[打印作业](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true)、[打印机](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true)、[打印机共享](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true)或[打印任务定义](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)。 有关详细信息，请参阅云打印 [8 月](changelog.md#august-2020)更新。
+- 使用新的委派和应用程序权限来访问或管理[打印文档](/graph/api/resources/printDocument?view=graph-rest-beta&preserve-view=true)、[打印作业](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true)、[打印机](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true)、[打印机共享](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true)或[打印任务定义](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)。有关详细信息，请参阅云打印[八月](changelog.md#august-2020)更新。
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 beta 版本中的 Intune [8 月](changelog.md#august-2020)更新。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 - 自定义[使用条款协议](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true)，以支持协议的到期日和频率，要求用户按设备接受协议，或者按设定的频率重新接受协议。 
-- 使用 **file** 属性导航到某个 [自定义协议](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true)以了解使用条款。 不要使用 **files** 属性。
-- 添加、删除和列出内部或外部发起人，他们可以批准[互联组织](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true)关于访问组、应用程序或 SharePoint Online 网站的请求。 有关详细信息，请参阅[权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)。
+- 使用 **file** 属性导航到某个 [自定义协议](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true)以了解使用条款。请勿使用 **files** 属性。
+- 添加、删除和列出内部或外部发起人，他们可以批准[互联组织](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true)关于访问组、应用程序或 SharePoint Online 网站的请求。有关更多信息，请参见[权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 - 为租户启用进一步自定义[授权策略](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true)，例如允许[默认的用户角色](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true)创建应用程序或安全组或读取其他用户，允许用户注册电子邮件订阅或通过电子邮件验证加入租户，或允许用户自行重置密码。
 - 在 Azure Active Directory B2C 租户中，以用户流的形式管理[预定义的可配置策略](/graph/api/resources/b2cuserflows?view=graph-rest-beta&preserve-view=true)。 查看更多有关 [B2C 用户流](/azure/active-directory-b2c/user-flow-overview)的详细信息。
-- 在 Azure Active Directory 租户中，启用[自助注册体验作为 B2X 用户流](/graph/api/resources/b2xuserflows?view=graph-rest-beta&preserve-view=true)。 查看更多有关[自助注册](/azure/active-directory/external-identities/self-service-sign-up-overview)的详细信息。
+- 在 Azure Active Directory 租户中，启用[自助注册体验作为 B2X 用户流](/graph/api/resources/b2xuserflows?view=graph-rest-beta&preserve-view=true)。查看有关[自助注册](/azure/active-directory/external-identities/self-service-sign-up-overview)的更多信息。
 
 ### <a name="people-and-workplace-intelligence--profile"></a>人员和工作场所智能 | 配置文件
 在用户的[个人资料](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)中添加和管理以下额外属性，这些属性可以在 Microsoft 365 和第三方应用程序的共享人员体验中体现：
@@ -532,7 +532,7 @@ beta 版本中的 Intune [8 月](changelog.md#august-2020)更新。
 获取[在聊天消息中托管的内容](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta&preserve-view=true)（如图像或代码段）。 请参阅[示例](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&preserve-view=true&branch=master#example-2-get-hosted-content-bytes-for-an-image)，获取图像的内容字节。
 
 ### <a name="to-do-tasks"></a>待办任务
-- 针对[微软待办](todo-concept-overview.md)推出了一组新 API，允许应用用户跨 Microsoft 365 客户端应用组织和跟踪个人任务。 有关详细信息，请参阅[使用微软待办 API](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true)。
+- 针对[微软待办](todo-concept-overview.md)推出了一组新 API，允许应用用户跨 Microsoft 365 客户端应用组织和跟踪个人任务。查看[使用微软待办 API](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true) 了解详细信息。
 - 弃用 [Outlook 任务 API](/graph/api/resources/outlooktask?view=graph-rest-beta&preserve-view=true)。
 
 
@@ -704,13 +704,13 @@ Intune[6月](changelog.md#june-2020)试用版中更新
 ### <a name="users"></a>用户
 - 使用 [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true) 的 **userPurpose** 属性，可在 Exchange Online 中识别共享邮箱和设备邮箱中的单个用户的邮箱并从中区分。 
 - 使用 [用户设置](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true)去 [获取](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true)或[更新](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true)[首选语言和区域设置](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true)。
-- 用户设置是通过点击 Azure AD 用户配置文件以反映相同的用户首选项，可通过 [用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) 实现跨应用的一致用户体验的关系。 请参阅 [用户设置与邮箱设置](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true#user-preferences-for-languages-and-regional-formats)的区别。
+- 用户设置是通过点击 Azure AD 用户配置文件以反映相同的用户首选项，可通过 [用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) 实现跨应用的一致用户体验的关系。请参阅[用户设置与邮箱设置的区别](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true#user-preferences-for-languages-and-regional-formats)。
 
 
 ## <a name="may-2020-new-and-generally-available"></a>2020 年 5 月：新版本和正式版
 
 ### <a name="calendar--place"></a>日历 | 位置
-v1.0 中的[位置 API](/graph/api/resources/place) 的正式版 - 在生产应用中使用此 API 可以获取、更新或删除租户中的[房间](/graph/api/resources/room)或[房间列表](/graph/api/resources/roomlist)。 [了解有关位置 API 的详细信息](outlook-calendar-concept-overview.md#build-apps-with-location-awareness-and-provide-intelligent-context)。
+v1.0 中的[位置 API](/graph/api/resources/place) 的正式版 - 在生产应用中使用此 API 可以获取、更新或删除租户中的[房间](/graph/api/resources/room)或[房间列表](/graph/api/resources/roomlist)。[进一步了解](outlook-calendar-concept-overview.md#build-apps-with-location-awareness-and-provide-intelligent-context)关于位置 API 的信息。
 
 ### <a name="change-notifications"></a>更改通知
 - 订阅 Microsoft Cloud for US Government 中的更改通知。
@@ -726,7 +726,7 @@ v1.0 中的[位置 API](/graph/api/resources/place) 的正式版 - 在生产应�
 v1.0 中的 Intune [5 月](changelog.md#may-2020)更新。
 
 ### <a name="graph-explorer"></a>Graph 浏览器
-[Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)中的许多新功能可用于增强沙箱中的学习和原型制作。 例如：
+[Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)中的许多新功能可用于增强沙箱中的学习和原型制作。例如：
 - 在 C#、Java、JavaScript 和 Objective C 中查看与你输入的 REST API 查询相对应的代码段。
 - 登录租户、查看访问令牌并将其复制到你喜欢的 REST 客户端应用程序。
 
@@ -778,13 +778,13 @@ v1.0 中 [ shifts API](/graph/api/resources/shift?view=graph-rest-1.0&preserve-v
 测试版中的 Intune [5 月](changelog.md#may-2020)更新。
 
 ### <a name="groups"></a>组
-- 使用[组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)的现有规则或指定规则[评估](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta&preserve-view=true)用户或设备是否是动态组的成员。 [基于规则的动态成员资格](/azure/active-directory/users-groups-roles/groups-dynamic-membership)减少了添加和删除成员的管理开销。
+- 使用[组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)的现有规则或指定规则[评估](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta&preserve-view=true)用户或设备是否是动态组的成员。[基于规则的动态成员资格](/azure/active-directory/users-groups-roles/groups-dynamic-membership)减少了添加和删除成员的管理开销。
 - 创建 Microsoft 365 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)时，通过在 **resourceBehaviorOptions** 属性中指定组的行为来仅限配置。 例如，允许成员发布、为新成员订阅对话、禁用欢迎电子邮件以及在 Outlook 体验中隐藏组。
 - 在 **resourceProvisioningOptions** 属性中指定要提供的资源，这些资源通常不属于默认 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)创建的一部分。 当前支持使用 Microsoft Teams 功能将组作为[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)进行配置。
 
 ### <a name="identity-and-access"></a>身份和访问
 - 获取从 [directoryObject]() 派生的实体集合时，请应用 OData 系统查询选项（`$count`、`$filter`、`$search`）。 你可以 [在这些实体的 **displayName** 和 **description** 属性中搜索特定标记](./query-parameters.md#using-search-on-directory-object-collections)，并使用 OData 强制转换将 **directoryObject** 的结果修剪为特定的派生类型。 有关详细信息，请参阅[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/zh-CN/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)。
-- 作为 [身份保护 API](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) 的一部分，请使用 **riskEventType** 属性来 [获取检测到的风险类型](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true)或 [获取用户历史记录中的风险类型](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true)。 不要使用 **riskType** 属性，因为它已被弃用。
+- 作为 [身份保护 API](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) 的一部分，请使用 **riskEventType** 属性来 [获取检测到的风险类型](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true)或 [获取用户历史记录中的风险类型](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true)。不要使用 **riskType** 属性，因为它已被弃用。
 - 在 [条件集](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true)的 **clientAppTypes** 属性中为 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true)指定客户端应用程序类型。
 - 使用 `EntitlementManagement.Read.All` 的委派权限允许应用代表已登录的用户请求读取访问包及相关权利管理资源。
 - 使用 `Application.Read.All` 和 `Application.ReadWrite.All` 的委派或应用程序权限来[列出组织中的应用程序](/graph/api/application-list?view=graph-rest-beta&preserve-view=true)。
@@ -841,7 +841,7 @@ Intune [4 月](changelog.md#april-2020)更新。
 ### <a name="identity-and-access"></a>身份和访问
 - [管理单元](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true)[跟踪更改](/graph/api/administrativeunit-delta?view=graph-rest-beta&preserve-view=true)。
 - [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta&preserve-view=true)[跟踪更改](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta&preserve-view=true)。
-- [管理](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true)用户的[身份验证方法](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true)，其中包括[密码](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta&preserve-view=true)或[电话](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta&preserve-view=true)。 例如，[重置用户密码](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta&preserve-view=true)并[获取重置状态](/graph/api/authenticationoperation-get?view=graph-rest-beta&preserve-view=true)，或者为用户[添加电话号码](/graph/api/authentication-post-phonemethods?view=graph-rest-beta&preserve-view=true)以进行短信或语音通话身份验证（如果策略为用户启用）。
+- [管理](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true)用户的[身份验证方法](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true)，其中包括[密码](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta&preserve-view=true)或[电话](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta&preserve-view=true)。例如，[重置用户密码](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta&preserve-view=true)并[获取重置状态](/graph/api/authenticationoperation-get?view=graph-rest-beta&preserve-view=true)，或者为用户[添加电话号码](/graph/api/authentication-post-phonemethods?view=graph-rest-beta&preserve-view=true)以进行短信或语音通话身份验证（如果策略为用户启用）。
 
 ### <a name="reports--identity-and-access-reports"></a>报告 | 身份和访问报告
 [列出](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta&preserve-view=true) Active Directory 联合身份验证服务中配置的[依赖方](/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts)。
@@ -858,7 +858,7 @@ Intune [4 月](changelog.md#april-2020)更新。
 - 可为[参与者](/graph/api/resources/participant?view=graph-rest-1.0&preserve-view=true)指定录制信息，包括录制的发起人和状态。
 - 使用 **callChainId** 属性唯一标识会议或参与者到参与者 [呼叫](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true)中的参与者。
 - 可将参与者的国家/地区代码和终结点类型（例如 Skype for Business 或 Skype for Business VOIP）标识为 [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0&preserve-view=true) 的组成部分。
-- 第三方视频电话会议 (VTC) 设备合作伙伴可以通过云视频互操作 (CVI) 机器人和 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0&preserve-view=true) 函数，记录并提供视频电话会议设备的媒体质量数据。 媒体质量数据包括，[音频](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-1.0&preserve-view=true)、[视频](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-1.0&preserve-view=true)和[屏幕共享](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-1.0&preserve-view=true)的开放类型数据。
+- 第三方视频电话会议 (VTC) 设备合作伙伴可以通过云视频互操作 (CVI) 机器人和 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0&preserve-view=true) 函数，记录并提供视频电话会议设备的媒体质量数据。媒体质量数据包括，[音频](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-1.0&preserve-view=true)、[视频](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-1.0&preserve-view=true)和[屏幕共享](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-1.0&preserve-view=true)的开放类型数据。
 
 ### <a name="files"></a>文件
 - 与用户共享、添加至用户 OneDrive、或作为搜索结果返回的[远程项](/graph/api/resources/remoteitem?view=graph-rest-1.0&preserve-view=true)，包含图像或视频的元数据。
@@ -900,7 +900,7 @@ Intune [3 月](changelog.md#march-2020)更新。
 - 在[列出租户中发生的预配事件](/graph/api/provisioningobjectsummary-list?view=graph-rest-beta&preserve-view=true)时，请使用分页。
 
 ### <a name="search"></a>搜索
-- 若要将文件中的数据添加到搜索结果中，只需将数据作为 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 编制索引即可。 **externalFile** 类型已遭弃用。
+- 若要将文件中的数据添加到搜索结果中，只需将数据作为 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 编制索引即可。**externalFile** 类型已被弃用。
 - [更新](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true)[索引中的项](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)，具体方法为专门更新纯文本表示的项（用 **content** 属性表示），或项的属性包（用 **properties** 属性表示）。 由于更新属性包中的任何属性都会覆盖整个属性包，因此请务必在更新中显式添加项的所有属性。
 - 在调用 **externalItem** 的 [create](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true)、[update](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) 或 [delete](/graph/api/externalitem-delete?view=graph-rest-beta&preserve-view=true) 操作后，检查 `HTTP 429` 和 `Retry-After` 响应头。 使用 `Retry-After` 延迟来回退请求是从[限制](throttling.md#best-practices-to-handle-throttling)中恢复的最快方法。
 
@@ -990,7 +990,7 @@ Intune [1 月](changelog.md#january-2020)更新。
 要使用用户委派的权限获取 Microsoft 365 使用情况报告，管理员必须向该用户分配 Azure AD 受限管理员角色。 可以是以下角色之一：公司管理员、Exchange 管理员、SharePoint 管理员、Lync 管理员、全局读取者或报告读取者。 有关详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](reportroot-authorization.md)。
 
 ### <a name="toolkit"></a>工具包
-Microsoft Graph 工具包 v1.1 已发布。 有关增强功能和 bug 修复的列表，请参阅更改日历的[“2019 年 12 月”部分](changelog.md#december-2019)。
+Microsoft Graph 工具包 v1.1 已发布。有关增强功能和 bug 修复的列表，请参阅更改日历的“[2019 年 12 月部分](changelog.md#december-2019)”。
 
 ## <a name="december-2019-new-in-preview"></a>2019年12月：预览版新增功能
 
@@ -1082,7 +1082,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 ## <a name="october-2019-new-and-generally-available"></a>2019 年 10 月：新版本和正式版
 
 ### <a name="identity-and-access"></a>身份和访问
-- 在生产应用中使用[组织联系人](/graph/api/resources/orgcontact?view=graph-rest-1.0&preserve-view=true)。 组织联系人由组织管理员管理，可以从本地 Active Directory 或 Exchange Online 同步。
+- 在生产应用中使用[组织联系人](/graph/api/resources/orgcontact?view=graph-rest-1.0&preserve-view=true)。组织联系人由组织管理员管理，可以从本地 Active Directory 或 Exchange Online 同步。
 - 在[组织](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true)中配置[基于证书的身份验证](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
 - 为[应用程序](/graph/api/resources/application?view=graph-rest-1.0&preserve-view=true)添加和删除[密码凭据](/graph/api/resources/passwordcredential?view=graph-rest-1.0&preserve-view=true)。
 

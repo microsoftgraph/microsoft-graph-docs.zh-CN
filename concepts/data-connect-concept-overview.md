@@ -5,12 +5,12 @@ author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1a257949e0de5537ccbea863ab99b1097feb4ae0
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: c94a82aae01110d9816ba0981e5aa14f3e2640b2
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629426"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645540"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接概述
 
@@ -20,9 +20,11 @@ Microsoft Graph 数据连接通过智能方式大规模访问丰富数据，增�
 
 Microsoft Graph 数据连接使用 Azure 数据工厂以可配置的时间间隔将 Microsoft 365 数据复制到应用程序的存储中。 它还提供了一组工具来简化向 Microsoft Azure 传送此数据的过程，让你可以访问最适用的开发和托管工具。 数据连接还授权更精细的控制和同意模型：你可以管理数据，查看谁正在访问数据以及请求实体的特定属性。 这增强了 Microsoft Graph 模型，其授予或拒绝应用程序对整个实体的访问权限。
 
-你可以使用数据连接为你的组织启用机器学习方案。 在这些方案中，你可以创建应用程序来为利益相关者提供宝贵信息、训练机器学习模型，甚至根据采集的大量数据进行预测。
+你可以使用数据连接为你的组织启用机器学习方案。 在这些方案中，你可以创建应用程序来为利益干系人提供宝贵信息、训练机器学习模型，甚至根据采集的大量数据进行预测。
 
-<iframe class="video-iframe" style="width: 960px; height: 540px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false"> </iframe>
+<!--<iframe class="video-iframe" style="width: 960px; height: 540px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false"> </iframe>-->
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false]
 
 如果你同意 [Microsoft API 使用条款](/legal/microsoft-apis/terms-of-use?context=/graph/context)和 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/p/?LinkId=123161)，并且是下述人员之一，则可利用 Microsoft Graph 数据连接：
 
@@ -35,7 +37,7 @@ Microsoft Graph 数据连接使用 Azure 数据工厂以可配置的时间间隔
 
 ## <a name="granular-data-consent"></a>精细数据同意
 
-在传统的 Microsoft Graph 同意模型中，管理员或用户只能授予或拒绝应用程序访问特定的预定义实体集的请求。 例如，对 Mail.Read 的请求包含对支持 Outlook 邮件的固定实体集的读取访问权限，其中包括具有其所有相关属性的整个 [message](/graph/api/resources/message?view=graph-rest-1.0) 实例。 Microsoft Graph 数据连接支持更精细的同意，允许应用程序请求访问实体中的特定属性，或筛选这些属性中的数据。 管理员必须先明确批准才能访问 Microsoft Graph 数据。 请求必须指定所请求的访问权限的级别、数据策略实施、请求的原因以及所请求数据的架构。 因此，应用程序只能使用对其功能运行至关重要的数据，并排除任何不相关的内容。 例如，应用可使用电子邮件元数据，但排除正文内容和附件。
+在传统的 Microsoft Graph 同意模型中，管理员或用户只能授予或拒绝应用程序访问特定的预定义实体集的请求。 例如，对 Mail.Read 的请求包含对支持 Outlook 邮件的固定实体集的读取访问权限，其中包括具有其所有相关属性的整个 [message](/graph/api/resources/message) 实例。 Microsoft Graph 数据连接支持更精细的同意，允许应用程序请求访问实体中的特定属性，或筛选这些属性中的数据。 管理员必须先明确批准才能访问 Microsoft Graph 数据。 请求必须指定所请求的访问权限的级别、数据策略实施、请求的原因以及所请求数据的架构。 因此，应用程序只能使用对其功能运行至关重要的数据，并排除任何不相关的内容。 例如，应用可使用电子邮件元数据，但排除正文内容和附件。
 
 ## <a name="data-security-and-governance"></a>数据安全性和管理
 

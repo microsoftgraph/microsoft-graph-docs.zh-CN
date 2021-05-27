@@ -4,12 +4,12 @@ description: 介绍可与 Microsoft Graph 数据连接结合使用的受支持�
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 949f48feec3c0120faf52d992b25cf7438dda577
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 32215efe03db92684ac41301f7679774f040cd4e
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629369"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666735"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Microsoft Graph 数据连接支持的数据集、区域和接收器
 
@@ -23,19 +23,19 @@ Microsoft Graph 数据连接支持 Microsoft Azure 中的各种数据集、数�
 | 数据集名称                       | 说明                                                                        | 示例 |
 | ---------------------------------- | ---------------------------------------------------------------------------------- | ------ |
 | BasicDataSet_v0.CalendarView_v0    | 包含日历视图中的事件。                                        | [CalendarView_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.CalendarView_v0.json) |
-| BasicDataSet_v0.Contact_v0         | 包含每个用户的通讯簿中的可用信息。                  | 即将发布！       |
+| BasicDataSet_v0.Contact_v0         | 包含每个用户的通讯簿中的可用信息。                  | [Contact_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v0.json)       |
 | BasicDataSet_v0.Contact_v1         | 包含每个用户的通讯录中的联系信息。                        | [Contact_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v1.json)       |
 | BasicDataSet_v0.DirectReport_v0    | 包含直接向每个用户报告的员工的相关用户信息。   | [DirectReport_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.DirectReport_v0.json)       |
-| BasicDataSet_v0.Event_v0           | 包含用户的日历事件中的信息。                            | 即将发布！       |
+| BasicDataSet_v0.Event_v0           | 包含用户的日历事件中的信息。                            | [Event_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v0.json)       |
 | BasicDataSet_v0.Event_v1           | 包含每个用户的日历中的事件。                                       | [Event_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v1.json)       |
 | BasicDataSet_v0.MailboxSettings_v0 | 包含每个用户的邮箱设置。                                        | [MailboxSetting_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailboxSettings_v0.json)       |
 | BasicDataSet_v0.MailFolder_v0      | 包含每个用户的邮箱中的邮件文件夹。                                | [MailFolder_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailFolder_v0.json)       |
 | BasicDataSet_v0.Manager_v0         | 包含每个用户的经理的用户信息。                            | [Manager_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Manager_v0.json)       |
-| BasicDataSet_v0.Message_v0         | 包含来自用户邮箱的邮件。                                       | 即将发布！       |
+| BasicDataSet_v0.Message_v0         | 包含来自用户邮箱的邮件。                                       | [Message_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v0.json)       |
 | BasicDataSet_v0.Message_v1         | 包含每个用户的邮箱中的邮件。                                       | [Message_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v1.json)       |
-| BasicDataSet_v0.SentItem_v0        | 包含从每个用户的邮箱中发送的邮件。                               | 即将发布！       |
+| BasicDataSet_v0.SentItem_v0        | 包含从每个用户的邮箱中发送的邮件。                               | [SentItem_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v0.json)       |
 | BasicDataSet_v0.SentItem_v1        | 包含从每个用户的邮箱中发送的邮件。                                | [SentItem_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v1.json)       |
-| BasicDataSet_v0.User_v0            | 包含用户信息（显示名称、用户主体名称以及其他信息）。 | 即将发布！       |
+| BasicDataSet_v0.User_v0            | 包含用户信息（显示名称、用户主体名称以及其他信息）。 | [User_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v0.json)       |
 | BasicDataSet_v0.User_v1            | 包含用户信息。                                                         | [User_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v1.json)       |
 
 ## <a name="regions"></a>地区

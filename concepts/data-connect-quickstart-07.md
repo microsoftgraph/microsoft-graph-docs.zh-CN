@@ -87,7 +87,7 @@
 
     ```csharp
     private const string connectionStringName = "AzureStorageConnectionString";
-    private const string emailBlobName = "maildump";
+    private const string emailBlobName = "m365mails";
 
     ```
 
