@@ -2,34 +2,34 @@
 title: propertyToEvaluate 资源类型
 description: 定义属性的名称和值。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0e04a2e63cb8b3112c4e68c0195c98d0fe404ebf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0855d4f06ed7f1be59c57c2989313268638e9859
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135379"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682612"
 ---
-# <a name="propertytoevaluate-resource-type"></a><span data-ttu-id="02a67-103">propertyToEvaluate 资源类型</span><span class="sxs-lookup"><span data-stu-id="02a67-103">propertyToEvaluate resource type</span></span>
+# <a name="propertytoevaluate-resource-type"></a><span data-ttu-id="74a27-103">propertyToEvaluate 资源类型</span><span class="sxs-lookup"><span data-stu-id="74a27-103">propertyToEvaluate resource type</span></span>
 
-<span data-ttu-id="02a67-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="02a67-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="74a27-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="74a27-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="02a67-105">定义属性的名称和值。</span><span class="sxs-lookup"><span data-stu-id="02a67-105">Defines the name and the value of the property.</span></span>
+<span data-ttu-id="74a27-105">定义属性的名称和值。</span><span class="sxs-lookup"><span data-stu-id="74a27-105">Defines the name and the value of the property.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="02a67-106">属性</span><span class="sxs-lookup"><span data-stu-id="02a67-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="74a27-106">属性</span><span class="sxs-lookup"><span data-stu-id="74a27-106">Properties</span></span>
 
-| <span data-ttu-id="02a67-107">属性</span><span class="sxs-lookup"><span data-stu-id="02a67-107">Property</span></span> | <span data-ttu-id="02a67-108">类型</span><span class="sxs-lookup"><span data-stu-id="02a67-108">Type</span></span> | <span data-ttu-id="02a67-109">说明</span><span class="sxs-lookup"><span data-stu-id="02a67-109">Description</span></span> |
+| <span data-ttu-id="74a27-107">属性</span><span class="sxs-lookup"><span data-stu-id="74a27-107">Property</span></span> | <span data-ttu-id="74a27-108">类型</span><span class="sxs-lookup"><span data-stu-id="74a27-108">Type</span></span> | <span data-ttu-id="74a27-109">说明</span><span class="sxs-lookup"><span data-stu-id="74a27-109">Description</span></span> |
 |:-------- |:---- |:----------- |
-| <span data-ttu-id="02a67-110">PropertyName</span><span class="sxs-lookup"><span data-stu-id="02a67-110">propertyName</span></span> | <span data-ttu-id="02a67-111">字符串</span><span class="sxs-lookup"><span data-stu-id="02a67-111">String</span></span> | <span data-ttu-id="02a67-112">提供属性名称。</span><span class="sxs-lookup"><span data-stu-id="02a67-112">Provides the property name.</span></span> |
-| <span data-ttu-id="02a67-113">propertyValue</span><span class="sxs-lookup"><span data-stu-id="02a67-113">propertyValue</span></span> | <span data-ttu-id="02a67-114">字符串</span><span class="sxs-lookup"><span data-stu-id="02a67-114">String</span></span> | <span data-ttu-id="02a67-115">提供属性值。</span><span class="sxs-lookup"><span data-stu-id="02a67-115">Provides the property value.</span></span> |
+| <span data-ttu-id="74a27-110">PropertyName</span><span class="sxs-lookup"><span data-stu-id="74a27-110">propertyName</span></span> | <span data-ttu-id="74a27-111">String</span><span class="sxs-lookup"><span data-stu-id="74a27-111">String</span></span> | <span data-ttu-id="74a27-112">提供属性名称。</span><span class="sxs-lookup"><span data-stu-id="74a27-112">Provides the property name.</span></span> |
+| <span data-ttu-id="74a27-113">propertyValue</span><span class="sxs-lookup"><span data-stu-id="74a27-113">propertyValue</span></span> | <span data-ttu-id="74a27-114">String</span><span class="sxs-lookup"><span data-stu-id="74a27-114">String</span></span> | <span data-ttu-id="74a27-115">提供属性值。</span><span class="sxs-lookup"><span data-stu-id="74a27-115">Provides the property value.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="02a67-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="02a67-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="74a27-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="74a27-116">JSON representation</span></span>
 
-<span data-ttu-id="02a67-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="02a67-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="74a27-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="74a27-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

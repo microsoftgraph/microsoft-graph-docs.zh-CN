@@ -1,0 +1,6 @@
+<!-- markdownlint-disable MD002 MD025 MD041 -->
+
+<span data-ttu-id="e77cb-101">您已成功完成 .NET Core Microsoft Graph连接器教程。</span><span class="sxs-lookup"><span data-stu-id="e77cb-101">You have successfully completed the .NET Core Microsoft Graph connector tutorial.</span></span> <span data-ttu-id="e77cb-102">现在，你已创建自定义连接器并用于支持 Microsoft 搜索。</span><span class="sxs-lookup"><span data-stu-id="e77cb-102">Now you have created a custom connector and used it to power Microsoft Search.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="e77cb-103">后续步骤</span><span class="sxs-lookup"><span data-stu-id="e77cb-103">Next steps</span></span>
+<span data-ttu-id="e77cb-104">若要详细了解可以使用自定义连接器访问的所有数据，请参阅[Microsoft Graph 连接器概述](connecting-external-content-connectors-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="e77cb-104">To find out more about all the data you can access with your custom connector, see [Microsoft Graph connectors overview](connecting-external-content-connectors-overview.md).</span></span>
