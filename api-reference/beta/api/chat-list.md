@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e72ea6783e37d7018fe4f6b1ff7063ff10f6b835
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 86aeafca89c7ce491923961a87673b855f088fc5
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582310"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696034"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -35,7 +35,7 @@ ms.locfileid: "51582310"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats
-GET /users/{user-id}/chats
+GET /users/{user-id | user-principal-name}/chats
 GET /chats
 ```
 
@@ -353,7 +353,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 > [!NOTE]
 > 必须将由服务器返回的会员资格 ID 视为不透明字符串。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
 >
-> 成员资格结果将来可能会映射到来自不同租户的用户，如响应中所示。 客户端不应假定所有成员都仅来自当前租户。
+> 未来，成员资格结果可以映射到来自不同租户的用户，如响应中所示。客户端不应假定所有成员仅来自当前租户。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

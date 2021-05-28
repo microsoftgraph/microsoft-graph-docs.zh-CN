@@ -5,19 +5,19 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73acd02d0189a4eb1c26f533e13b31b101a1fa7e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 938bc52076218c2f31b06f24a5bcdbc9ea2091f2
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941935"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696288"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork： sendActivityNotification
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向用户发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅 [发送 Teams 活动通知](/graph/teams-send-activityfeednotifications)。
+向用户发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +35,7 @@ ms.locfileid: "50941935"
 }
 -->
 ``` http
-POST /users/{userId}/teamwork/sendActivityNotification
+POST /users/{userId | user-principal-name}/teamwork/sendActivityNotification
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -52,10 +52,10 @@ POST /users/{userId}/teamwork/sendActivityNotification
 |参数|类型|说明|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
-|activityType|String|活动类型。 这必须在 Teams 应用清单 [中声明](/microsoftteams/platform/overview)。|
+|activityType|String|活动类型。 这必须在应用清单[Teams声明](/microsoftteams/platform/overview)。|
 |chainId|Int64|可选。 用于替代上一个通知。 在后续 `chainId` 请求中使用相同的方法替代上一个通知。|
-|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams 将只显示前 150 个字符。|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在 Teams 应用清单 中对应的活动源条目中定义的 `activityType` 模板 [变量的值](/microsoftteams/platform/overview)。|
+|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams显示前 150 个字符。|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与应用程序Teams `activityType` [相对应](/microsoftteams/platform/overview)。|
 
 将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityUrl` ：
 

@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d16d2611abd34b0131efb15872e687d6bad227b4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2a55262100d528a36fc04d82d49134dda7ef40c1
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052549"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696289"
 ---
 # <a name="list-apps-installed-for-user"></a>列出为用户安装的应用
 
@@ -38,7 +38,7 @@ ms.locfileid: "52052549"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{user-id}/teamwork/installedApps
+GET /users/{user-id | user-principal-name}/teamwork/installedApps
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

@@ -1,24 +1,24 @@
 ---
-title: teamsAppInstallation： upgrade
-description: 在用户的个人作用域中升级应用程序安装
+title: teamsAppInstallation：升级
+description: 在用户的个人范围内升级应用安装
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2f8ba82c47d1c573d44d91597264aa9fc21bb0e5
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 1dd9a390203658a2f7f284023a05ed0e166e5839
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607578"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696273"
 ---
-# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation： upgrade
+# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将指定[用户](../resources/user.md)的个人作用域中的[应用程序安装](../resources/teamsappinstallation.md)升级到最新版本的应用程序。
+将 [指定用户](../resources/teamsappinstallation.md) 的个人范围中的应用 [安装升级到](../resources/user.md) 应用的最新版本。
 
 ## <a name="permissions"></a>权限
 
@@ -26,14 +26,14 @@ ms.locfileid: "49607578"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsAppInstallation、ReadWriteSelfForUser、ReadWriteForUser |
+|委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteSelfForUser、TeamsAppInstallation.ReadWriteForUser |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation |
+|应用程序 | TeamsAppInstallation.ReadWriteSelfForUser.All、TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{user-id}/teamwork/installedApps/{app-installation-id}/upgrade
+POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}/upgrade
 ```
 
 ## <a name="request-headers"></a>请求标头

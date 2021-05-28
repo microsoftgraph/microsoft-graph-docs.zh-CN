@@ -4,12 +4,12 @@ description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源�
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 5a890588fe4b379cf27360db98c4118d0e3ca7d5
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e5a70d69d872d57963f658e7ff2d9e5fa088d3e9
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288810"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679538"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
@@ -19,7 +19,7 @@ Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风�
 
 ## <a name="odata-namespace"></a>OData 命名空间
 
-Microsoft Graph API 在 [Microsoft Graph 元数据](traverse-the-graph.md#microsoft-graph-api-metadata)的 OData 命名空间 `microsoft.graph` 中，定义它的大多数资源、方法和枚举。 少量的 API 集在其子命名空间中定义，例如[调用记录 API](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) 定义诸如 `microsoft.graph.callRecords`中的 [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) 等资源。 
+Microsoft Graph API 在 [Microsoft Graph 元数据](traverse-the-graph.md#microsoft-graph-api-metadata)的 OData 命名空间 `microsoft.graph` 中，定义它的大多数资源、方法和枚举。 少量的 API 集在其子命名空间中定义，例如[调用记录 API](/graph/api/resources/callrecords-api-overview) 定义诸如 `microsoft.graph.callRecords`中的 [callRecord](/graph/api/resources/callrecords-callrecord) 等资源。 
 
 除非在相应主题中明确指定，否则假定类型、方法和枚举是 `microsoft.graph` 命名空间的一部分。
 
@@ -69,7 +69,7 @@ Microsoft Graph 目前支持以下两种版本：`v1.0` 和 `beta`。
 * `v1.0` 包括正式可用 API。请对所有生产应用使用 v1.0 版本。
 * `beta` 包括目前处于预览中的 API。因为我们可能会为试用的 API引入更大更改，我们建议你仅对开发中的测试应用使用试用版；请勿在生产应用中使用试用版 API。
 
-我们一直期待用户提供 beta API 反馈。若要提供反馈或申请功能，请参阅 [UserVoice](https://officespdev.uservoice.com/) 页。
+我们一直在寻求有关试用版 API 的反馈。 若要提供反馈或请求功能，请参阅 [Microsoft 365 开发者平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。
 
 若要详细了解 API 版本，请参阅[版本控制和支持](versioning-and-support.md)。
 
@@ -77,7 +77,7 @@ Microsoft Graph 目前支持以下两种版本：`v1.0` 和 `beta`。
 
 资源可以是实体或复杂类型，通常使用属性定义。 实体与复杂类型的不同之处在于前者始终包含 **id** 属性。
 
-你的 URL 将包含你正在请求中与之交互的资源，如`me`、**用户**、**组**、**驱动器**和**网站**。 通常，顶级资源还包括可以用来访问其他资源的_关系_（如 `me/messages` 或 `me/drive`）。 还可以使用_方法_与资源交互；例如，若要发送电子邮件，可以使用 `me/sendMail`。 有关详细信息，请参阅[通过导航 Microsoft Graph 访问数据和方法](traverse-the-graph.md)。
+你的 URL 将包含你正在请求中与之交互的资源，如`me`、**用户**、**组**、**驱动器** 和 **网站**。 通常，顶级资源还包括可以用来访问其他资源的 _关系_（如 `me/messages` 或 `me/drive`）。 还可以使用 _方法_ 与资源交互；例如，若要发送电子邮件，可以使用 `me/sendMail`。 有关详细信息，请参阅[通过导航 Microsoft Graph 访问数据和方法](traverse-the-graph.md)。
 
 每个资源可能需要不同的权限来访问它。通常，你需要用来创建或更新资源的权限比读取时要求的权限更高。有关所需权限的详细信息，请参见方法引用主题。 
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@con
 
 有关 OData 查询选项的详细信息，请参阅[使用查询参数自定义响应](query-parameters.md)。
 
-除 OData 查询选项之外，某些方法还需要将参数值指定为查询 URL 的一部分。 例如，你可以通过查询**用户**的 **calendarView** 关系，并将时段 `startDateTime` 和 `endDateTime` 值指定为查询参数来获取用户日历中某个时间段内发生的事件的集合：
+除 OData 查询选项之外，某些方法还需要将参数值指定为查询 URL 的一部分。 例如，你可以通过查询 **用户** 的 **calendarView** 关系，并将时段 `startDateTime` 和 `endDateTime` 值指定为查询参数来获取用户日历中某个时间段内发生的事件的集合：
 
 <!-- {
   "blockType": "ignored"
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 Graph 浏览器是一个基于 Web 的工具，可用于通过 Microsoft Graph API 构建和测试请求。 可在以下位置访问 Graph 浏览器：`https://developer.microsoft.com/graph/graph-explorer`。
 
-可在不登录的情况下访问演示数据，或者可登录自己的租户。 请按照以下步骤生成请求：
+可在不登录的情况下访问演示数据，或者可登录自己的租户。请按照以下步骤生成请求：
 
 1. 选择 HTTP 方法。
 2. 选择要使用的 API 版本。
@@ -134,7 +134,7 @@ Graph 浏览器中提供了示例查询，让你能够更快地运行常见请�
 
 Postman 浏览器是一款可用于使用 Microsoft Graph API 构建和测试请求的工具。 可在以下位置下载 Postman：`https://www.getpostman.com/`。 若要在 Postman 中与 Microsoft Graph 进行交互，请使用 Microsoft Graph 集合。
 
-有关详细信息，请参阅[结合使用 Postman 和 Microsoft Graph API](./use-postman.md?context=graph%252fapi%252fbeta&view=graph-rest-beta)。
+有关详细信息，请参阅[结合使用 Postman 和 Microsoft Graph API](./use-postman.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b0a865aa85e0c3a45b9aa97d4ae5af6896cae50
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 535bb735d8ff94bf560ddae8468da5b0b05a0581
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607215"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696322"
 ---
 # <a name="uninstall-app-for-user"></a>为用户卸载应用
 
@@ -18,7 +18,7 @@ ms.locfileid: "49607215"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从指定[用户](../resources/user.md)的个人作用域中卸载[应用程序](../resources/teamsappinstallation.md)。
+从 [指定](../resources/teamsappinstallation.md) 用户的个人作用域卸载 [应用](../resources/user.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,14 +26,14 @@ ms.locfileid: "49607215"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsAppInstallation、ReadWriteSelfForUser、ReadWriteForUser |
+|委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteSelfForUser、TeamsAppInstallation.ReadWriteForUser |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation |
+|应用程序 | TeamsAppInstallation.ReadWriteSelfForUser.All、TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+DELETE /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}
 ```
 
 ## <a name="request-headers"></a>请求标头

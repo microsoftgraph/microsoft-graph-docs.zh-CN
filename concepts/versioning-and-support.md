@@ -2,12 +2,12 @@
 title: 'Microsoft Graph 的版本控制、支持和重大更改策略 '
 description: 本文介绍了 Microsoft Graph 的支持和重大更改策略，以及当前可用的 Microsoft Graph API 版本。
 localization_priority: Priority
-ms.openlocfilehash: 51b0e746054cd9147e587ba6f44f6bb8e8a1ad8e
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 1eedfff10fced26694e1b8e7914d4eea2dc2f378
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920045"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679923"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph 的版本控制、支持和中断性变更策略
 
@@ -19,7 +19,7 @@ Microsoft Graph 遵循 [Microsoft 生命周期策略](https://support.microsoft.
 
 由于已发布新版本的 Microsoft Graph REST API 和 Microsoft Graph SDK，之前的版本将停用。 Microsoft 会在停用某个版本之前至少 24 个月声明其为弃用版本。 同样，对于通常可用的 (GA) 单个 API，Microsoft 会在从 GA 版本将其删除之前至少 24 个月时声明其为弃用产品。
 
-递增 API 的主要版本（例如，从 v1.0 到 v2.0）时，我们将通知立即弃用当前版本（在此示例中为 v1.0），在通知 24 个月后，我们将不再支持该版本。 出于服务安全或运行状况可靠性问题的考虑，我们可能会对此策略作例外处理。
+递增 API 的主要版本（例如，从 v1.0 到 v2.0）时，我们将通知立即弃用当前版本（在此示例中为 v1.0），在通知 24 个月后，我们将不再支持该版本。出于服务安全或运行状况可靠性问题的考虑，我们可能会对此策略作例外处理。
 
 当 API 被标记为已弃用时，我们强烈建议你尽快迁移到最新版本。 某些情况下，我们将公布新应用程序必须在原始 API 弃用后不久开始使用新的 API。 在这些情况下，仅当前使用已弃用 API 的活动应用程序能够继续使用它们。
 
@@ -55,11 +55,11 @@ Microsoft Graph 在版本中进行了许多更改。这些更改已在 [Microsof
 通常，API在 beta 版本中首次亮相，并且可以在 `https://graph.microsoft.com/beta` 终结点中访问。 如需了解 beta API 文档，请参阅 [Microsoft Graph beta 终结点参考](/graph/api/overview?view=graph-rest-beta&preserve-view=true)。 预计在 beta 版中将会不时对 API 进行重大更改和弃用。 请勿对 beta API 形成生产依赖性。
 
 我们无法保证 beta 功能将升级至当前版本。 当 Microsoft Graph API 团队认为某个 beta 功能可正式发布 (GA) 时，我们将把该功能添加到最新的当前版本中。 如果功能升级将导致当前版本出现重大更改，则版本号将递增，而新版本将成为当前版本。
-我们的开发者社区可以在 [UserVoice](https://officespdev.uservoice.com/) 上发布功能请求，包括对新功能的请求以及将现有的测试 API 升级到当前版本的请求。
+我们的开发者社区可以在 [Microsoft 365 开发者平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)上发布功能请求，包括对新功能的请求以及将现有的测试 API 升级到当前版本的请求。
 
 ### <a name="current-version"></a>当前版本
 
-Microsoft Graph 的当前版本为 v1.0。 Microsoft Graph API v1.0 版本在 `https://graph.microsoft.com/v1.0` 中公开，包含可正式发布和可用于生产的功能。 浏览 [v1.0 API 的文档](/graph/api/overview?view=graph-rest-1.0&preserve-view=true)。
+Microsoft Graph 的当前版本为 v1.0。Microsoft Graph API v1.0 版本在 `https://graph.microsoft.com/v1.0` 中公开，包含可正式发布和可用于生产的功能。可以浏览 [v1.0 API 文档](/graph/api/overview?view=graph-rest-1.0&preserve-view=true)。
 
 ## <a name="preview-status"></a>预览状态
 功能或 API 标记为“（预览）”，以表示其行为在 beta 终结点中为 _唯一_。 

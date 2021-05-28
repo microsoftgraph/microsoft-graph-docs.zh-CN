@@ -4,12 +4,12 @@ description: 获取可帮助你利用 Microsoft Graph 数据连接的相关提�
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 7d8001c0517b38fdee910e609e76f5891e84ba03
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: dbc0b7776d769ee694d9022b1e7f5b838f014da6
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629685"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680078"
 ---
 # <a name="microsoft-graph-data-connect-frequently-asked-questions"></a>Microsoft Graph 数据连接常见问题解答
 
@@ -31,8 +31,6 @@ Microsoft Graph 数据连接消耗费用按月以“即付即用”方式计费�
 - BasicDataSet_v0.MailboxSettings
 - BasicDataSet_v0.Manager
 - BasicDataSet_v0.DirectReport。
-
-迄今为止，Microsoft Graph 数据连接对象的价格是每提取的 1000 个对象 0.375 美元。
 
 ## <a name="is-it-possible-for-my-data-to-stay-within-the-organizations-subscription-with-microsoft-graph-data-connect"></a>使用 Microsoft Graph 数据连接，我的数据是否可保留在组织的订阅内？
 
@@ -77,13 +75,13 @@ Privileged Access Management (PAM) 请求必须得到管理员的批准，然后
 
 ## <a name="is-hybrid-mode-tenant-setup-supported"></a>是否支持混合模式租户设置？
 
-如果你的 Microsoft 365 设置有一些用户在 Exchange Online 中，而一些用户在 Exchange 本地，则位于 Exchange 本地的用户将不受支持。 遗憾的是，当前对 Exchange 本地用户不支持数据连接。
+如果你的 Microsoft 365 设置有一些用户在 Exchange Online 中，而一些用户在 Exchange 本地，则位于 Exchange 本地的用户将不受支持。遗憾的是，当前对 Exchange 本地用户不支持数据连接。
 
 ## <a name="are-resource-accounts-supported"></a>是否支持资源帐户？
 
 我们目前不支持从资源帐户访问邮件或事件。 我们将在未来添加对此功能的支持。
 
-## <a name="i-am-seeing-multiple-files-per-adf-pipeline-run-but-sometimes-just-1-file-per-run-why-is-this-happening"></a>我看到每个 ADF 管道运行有多个文件，但有时每个运行只有 1 个文件。 这是什么原因？
+## <a name="i-am-seeing-multiple-files-per-adf-pipeline-run-but-sometimes-just-1-file-per-run-why-is-this-happening"></a>我看到每个 ADF 管道运行有多个文件，但有时每个运行只有 1 个文件。为什么会发生这种情况？
 
 Microsoft Graph 数据连接会获取每个管道运行的用户列表，然后跨并行运行的多个作业分发数据集提取和策展。 对于每个并行运行，都会在你定义的数据接收器中生成 1 个输出文件。 对于某些情况，如果用户列表较小，则可能会将其映射到 1 个提取和策展作业，在这些情况下，数据接收器中只会生成 1 个输出文件。
 
@@ -91,6 +89,6 @@ Microsoft Graph 数据连接会获取每个管道运行的用户列表，然后�
 
 出于计费目的，Microsoft Graph 数据连接会将提取的对象计数进位到最接近的 1000。 例如，如果你提取了 125 个对象或它们提取了 999 个对象，则将收取 1000 个对象的费用。 同样，如果你提取的对象数在 1001 到 2000 之间，则将收取 2000 个对象的费用。
 
-## <a name="my-microsoft-365-copy-data-activity-is-always-failing-when-initialized-via-azure-synapse-why-is-this-happening"></a>通过 Azure Synapse 初始化时，Microsoft 365 复制数据活动始终失败。 这是什么原因？
+## <a name="my-microsoft-365-copy-data-activity-is-always-failing-when-initialized-via-azure-synapse-why-is-this-happening"></a>通过 Azure Synapse 初始化时，Microsoft 365 复制数据活动始终失败。为什么会发生这种情况？
 
 目前，我们不支持通过 Azure Synapse 初始化 Microsoft 365 复制数据活动。 我们正在努力添加 Azure Synapse 初始化活动的集成，并将在完成此操作后更新我们的文档。
