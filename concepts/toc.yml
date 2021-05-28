@@ -97,8 +97,6 @@ items:
             href: application-saml-sso-configure-api.md
           - name: 配置应用程序代理
             href: application-proxy-configure-api.md
-          - name: 配置预配
-            href: application-provisioning-configure-api.md
       - name: 大规模访问数据
         displayName: Microsoft Graph Data Connect
         items:
@@ -182,6 +180,8 @@ items:
             href: connecting-external-content-manage-items.md
           - name: API 限制
             href: connecting-external-content-api-limits.md
+          - name: 构建首个自定义连接器
+            href: connecting-external-content-build-quickstart.yml
       - name: 跨设备体验
         displayName: Project Rome
         items:
