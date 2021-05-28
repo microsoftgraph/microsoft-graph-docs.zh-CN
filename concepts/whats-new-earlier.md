@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: a74a4cabd593cfa26488a80399d6958d09cf9b6c
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 275d21c3bd34fc8a5049c4db8fb1e2c7521b3a81
+ms.sourcegitcommit: ecf7867ef7957b847b7530089ce30e107750adac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645351"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698009"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -376,7 +376,7 @@ Intune beta 版 [10 月](changelog.md#october-2020)更新。
 - 在[授权策略](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true)中指定是否以及谁可以邀请外部用户加入组织。
 
 ### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能 | 见解 
-管理员可以查看[使用 PowerShell cmdlet 的示例](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell)，为组织自定义项目见解设置。
+管理员可以查看[使用 PowerShell cmdlet 的示例](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-settings-via-powershell)，为组织自定义项目见解设置。
 
 ### <a name="teamwork"></a>团队合作
 - 使用实例属性 **channelCreationMode** 表明正在创建 [通道](/graph/api/resources/channel?preserve-view=true&view=graph-rest-beta#instance-attributes)以服务数据迁移。 使用 [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以发布和阅读邮件。

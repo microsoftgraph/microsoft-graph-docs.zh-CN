@@ -1,16 +1,16 @@
 ---
 title: 列出 groupLifecyclePolicy
 description: 列出所有 groupLifecyclePolicy。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 50517fa50abc229104381beac9c057ac18f8805e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fe455bbc16bcec2daddf7d0bf5fc99101d91ac45
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048692"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679811"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 

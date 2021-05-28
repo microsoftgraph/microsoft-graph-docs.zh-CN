@@ -1,16 +1,16 @@
 ---
 title: 删除对话线程
 description: 删除 thread 对象。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8788b039c8f9234c9544f08cb354860fb3534116
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 39f313f70923e34579596407472b9721dedb72b7
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053088"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681023"
 ---
 # <a name="delete-conversation-thread"></a>删除对话线程
 

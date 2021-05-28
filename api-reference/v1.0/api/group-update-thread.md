@@ -1,20 +1,20 @@
 ---
 title: 更新对话线程
 description: 更新 thread 对象。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3d4ac9ebdbbd4f6a804ac404dcc5e10c18eab355
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1216771a7955cc9460faeab420b8550150d55b84
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041972"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679867"
 ---
 # <a name="update-conversation-thread"></a>更新对话线程
 
-命名空间： microsoft graph 更新 [thread](../resources/conversationthread.md) 对象。
+命名空间：microsoft.graph 更新 [thread](../resources/conversationthread.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

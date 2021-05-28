@@ -1,16 +1,16 @@
 ---
 title: 删除事件
 description: 删除 event 对象。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8d987646313bcb67c9448585e4eb1ee9c956fcc5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5ea2b2e4803bfea38634dc7bfb367322987e5a54
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052360"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680988"
 ---
 # <a name="delete-event"></a>删除事件
 

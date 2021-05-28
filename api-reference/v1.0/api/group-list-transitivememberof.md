@@ -1,16 +1,16 @@
 ---
 title: List group transitive memberOf
 description: 获取组是其中一个成员的组。  此操作是可传递的，并且还将包含此组是嵌套成员的所有组。 与获取用户的组Microsoft 365不同，这将返回所有类型的组，而不只是Microsoft 365组。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 448303bdc4cf158a41d376f4a2f2f0b69cad9a56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 738c100738d6eb0b4b2eb49e3b57a32c7f00bb32
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052297"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680596"
 ---
 # <a name="list-group-transitive-memberof"></a>List group transitive memberOf
 

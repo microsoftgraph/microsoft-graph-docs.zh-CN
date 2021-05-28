@@ -2,15 +2,15 @@
 title: 获取本地化的组织BrandingProperties
 description: 检索特定区域设置的组织品牌属性对象。
 localization_priority: Normal
-author: almars
+author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8760803c6363cacfe41d239c6031a7e81c18492f
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 6286aff9e9a128efbaf1f15a7d2150a5f9754b2b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298721"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682465"
 ---
 # <a name="get-localized-organizationalbrandingproperties"></a>获取本地化的组织BrandingProperties
 

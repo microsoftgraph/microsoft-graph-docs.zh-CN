@@ -2,15 +2,15 @@
 title: 获取组设置模板
 description: 获取一个组设置模板，该模板代表可以在租户中创建设置的设置的模板。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1d8bdc4168a41358d372e7214bb185694c59ff1f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c90fc6b3c30991583765d960173636580c7258e3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039599"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679748"
 ---
 # <a name="get-a-group-setting-template"></a>获取组设置模板
 

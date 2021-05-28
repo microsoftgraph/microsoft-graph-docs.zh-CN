@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 739992c20cf44902d92745221b76ca64269322ff
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 18d075f8bef7871cd5c52644194f5d3aa2a27971
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080377"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696245"
 ---
 # <a name="list-members-of-a-chat"></a>列出聊天成员。
 
@@ -40,7 +40,7 @@ ms.locfileid: "52080377"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/members
-GET /users/{user-id}/chats/{chat-id}/members
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

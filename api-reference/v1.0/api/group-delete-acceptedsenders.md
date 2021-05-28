@@ -1,20 +1,20 @@
 ---
 title: 删除 acceptedSender
-description: '从接受的发件人列表中删除用户或组。 '
-author: yyuank
+description: '从接受发件人列表中删除用户或组。 '
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1d867f3341ac6316354afa16b713e1961867b7bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 659be516dc8ce8ae4fcf8afdd83d6373f1c4862b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023336"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679832"
 ---
 # <a name="remove-acceptedsender"></a>删除 acceptedSender
 
-命名空间： microsoft. graph 从接受的发件人列表中删除用户或组。 
+命名空间：microsoft.graph 从接受发件人列表中删除用户或组。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

@@ -2,15 +2,15 @@
 title: 'group: delta'
 description: 获取新创建、更新或删除的组，包括组成员身份更改，而无需执行整个组集合的完整读取。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e094aaae32d8fe4ccbadd534b3d75ece56f8176e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a3acfecc8f005c6468dfe681ff3410bf7a4ffbfe
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050484"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680974"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -100,7 +100,7 @@ GET /groups/delta
 添加可选请求标头 - `prefer:return=minimal` - 将导致出现以下行为：
 
 - 如果属性已更改，则新值将包括在响应中。 这包括设为 Null 值的属性。
-- 如果属性未更改，则该属性不会包括在响应中。 （不同于默认行为。）
+- 如果尚未更改属性，则该属性不会包括在响应中。（不同于默认行为。）
 
 > **注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。 标头仅影响响应中包含的属性集，它不会影响执行 Delta 查询的方式。 请参阅下面的[第三个示例](#request-3)。
 

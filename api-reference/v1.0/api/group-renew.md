@@ -1,22 +1,22 @@
 ---
 title: 'group: renew'
-description: 续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。
+description: 续订组以更新到期时间。续订后，组的有效期就会延长策略中定义的天数。
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fccf59c57a160a6517479463b432d73cfd5278be
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a56765eda995709be5340859c0093e5a72797eae
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053067"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680540"
 ---
 # <a name="group-renew"></a>group: renew
 
 命名空间：microsoft.graph
 
-续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。
+续订组以更新到期时间。续订后，组的有效期就会延长策略中定义的天数。
 
 ## <a name="permissions"></a>权限
 

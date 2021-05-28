@@ -1,22 +1,22 @@
 ---
 title: 创建组
 description: '创建请求正文中指定的新组。 '
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7d844d54d72672c25382e2381077b5f8ddb6ef76
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 13dbbcd15f108c2fa2b13f3522366e5a1f55d8cf
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474550"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680575"
 ---
 # <a name="create-group"></a>创建组
 
 命名空间：microsoft.graph
 
-创建请求正文中指定的新组。 你可以创建以下类型的组：
+创建请求正文中指定的新组。可以创建下列几种类型之一的组：
 
 * Microsoft 365 组（统一组）
 * 安全组
@@ -53,18 +53,18 @@ POST /groups
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。 最大长度：256 个字符。 必需。 |
-| description | string | 组说明。 最大 长度：1024 个字符。 可选。 |
+| displayName | string | 要在组的通讯簿中显示的名称。最大长度: 256 个字符。必填。 |
+| 说明 | string | 组说明。 最大 长度：1024 个字符。 可选。 |
 | mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
 | mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 必填。 |
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
-| owners | string collection | 此属性表示创建时指定的组所有者。 可选。 |
-| members | 字符串集合 | 此属性表示创建时指定的组成员。 可选。 |
+| owners | string collection | 此属性表示创建时指定的组所有者。可选。 |
+| members | 字符串集合 | 此属性表示创建时指定的组成员。可选。 |
 |visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
 > **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
 
-根据需要为你的组指定其他可写属性。 有关详细信息，请参阅[组](../resources/group.md)资源的属性。
+根据需要为组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
 >**注意：** 在不指定所有者的情况下使用 Group.Create 应用程序权限创建组时，将会以匿名方式创建组，并且组将不可修改。 创建组时，可使用 `POST` 操作并为其添加所有者，以便指定可修改该组的所有者。
 

@@ -1,16 +1,16 @@
 ---
 title: 列出 acceptedSender
 description: 获取此组的“接受的发件人”列表中的用户或组列表。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9874b3fd3ad12c77f27e496dbcddb860a86dca8f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 01ec69406fe63dabad9159f8d6b26c557456274b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052353"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680636"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 

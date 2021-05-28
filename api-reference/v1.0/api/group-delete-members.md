@@ -2,15 +2,15 @@
 title: 删除成员
 description: 使用此 API 通过 **成员** 导航属性从组中删除成员。
 localization_priority: Priority
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 61bec64eaec92f277274f365092731de122a20f0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 56434c8280b7ec4a9aac2ea943edafafe54ef49f
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035405"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682052"
 ---
 # <a name="remove-member"></a>删除成员
 

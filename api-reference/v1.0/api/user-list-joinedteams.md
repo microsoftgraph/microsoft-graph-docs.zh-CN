@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac69603a83a1b02d9fdd8f06aa0be0a7f7abdb20
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 50f396d2c2937fef071e607e1521c1aa3c0a657c
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051205"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696238"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -37,7 +37,7 @@ ms.locfileid: "52051205"
 ```http
 GET /me/joinedTeams
 or
-GET /users/{id}/joinedTeams
+GET /users/{id | user-principal-name}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

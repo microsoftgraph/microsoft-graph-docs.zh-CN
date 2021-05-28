@@ -1,16 +1,16 @@
 ---
 title: List groupSettingTemplates
 description: 检索可用的 groupSettingTemplates 对象的列表。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7aa1819bce00f2f76f1192ab82ee7ab6a84b74ad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 85ec50ce39f1bb98a3566b5e48daeec627dbf751
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051408"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679531"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 

@@ -2,15 +2,15 @@
 title: 'group: getMemberGroups'
 description: 返回指定组是其成员的所有组。
 localization_priority: Priority
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8d549365d312dce33f6383ef364c1d22ddea068a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 49085a6d689ebaad446ec49c2d2322169a56a9f3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039578"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681989"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 

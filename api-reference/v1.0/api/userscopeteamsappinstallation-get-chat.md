@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d96221ba87b9181d9f43fa2010728e178b14dcce
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 61f5aa005e58280bb20c54e8ef1ef92f92d85050
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051163"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696224"
 ---
 # <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>获取指定用户与应用之间的一对一Teams聊天
 
@@ -33,7 +33,7 @@ ms.locfileid: "52051163"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
+GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}/chat
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

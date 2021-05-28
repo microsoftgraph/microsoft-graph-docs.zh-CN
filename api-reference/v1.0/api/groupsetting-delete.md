@@ -1,16 +1,16 @@
 ---
 title: 删除组设置
 description: 删除组设置。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cbd49a35bf07afc9c332de999dabed8afbabc79e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f3b65b7f41e5a53ebada692347fdc53fbf986267
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041839"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679783"
 ---
 # <a name="delete-a-group-setting"></a>删除组设置
 

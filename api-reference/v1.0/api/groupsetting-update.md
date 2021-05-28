@@ -1,22 +1,22 @@
 ---
 title: 更新组设置
 description: 更新特定组设置对象的属性。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5433504aec92d8fb96a00857ff4e27c7bfc200c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a2a504aa8c736df33ef35d3bd131b6329fd499c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973398"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679755"
 ---
 # <a name="update-a-group-setting"></a>更新组设置
 
 命名空间：microsoft.graph
 
-为租户范围内的[组](../resources/group.md)设置或特定的组设置更新[groupSetting](../resources/groupsetting.md)对象的属性。
+为租户范围的组设置或特定组设置更新[groupSetting](../resources/groupsetting.md)对象的属性。 [](../resources/group.md)
 
 ## <a name="permissions"></a>权限
 
@@ -49,7 +49,7 @@ PATCH /groups/{id}/settings/{id}
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| 值 | [settingValue](../resources/settingvalue.md) 集合 | 更新的值集。 您必须包含整个集合集。 您不能更新单个值集。 |
+| 值 | [settingValue](../resources/settingvalue.md) 集合 | 更新的值集。 必须包含整个集合集。 无法更新一组值。 |
 
 ## <a name="response"></a>响应
 
@@ -57,9 +57,9 @@ PATCH /groups/{id}/settings/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-tenant-wide-group-setting"></a>示例1：更新租户范围内的组设置
+### <a name="example-1-update-a-tenant-wide-group-setting"></a>示例 1：更新租户范围的组设置
 
-在此示例中， `{id}` 是租户范围的 groupSetting 对象的标识符。
+此示例中， `{id}` 是租户范围内 groupSetting 对象的标识符。
 
 #### <a name="request"></a>请求
 
@@ -165,9 +165,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-a-specific-group-setting"></a>示例2：更新特定的组设置
+### <a name="example-2-update-a-specific-group-setting"></a>示例 2：更新特定组设置
 
-在此示例中，请求中的第一个 `{id}` 是组的标识符，第二个 `{id}` 是 groupSetting 对象的标识符。
+此示例中，请求的第一个为组的标识符，第二 `{id}` `{id}` 个为 groupSetting 对象的标识符。
 
 #### <a name="request"></a>请求
 

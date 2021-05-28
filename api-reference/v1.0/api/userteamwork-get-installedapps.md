@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: dd7cd63cfc0853445602c225d50ad71671f65742
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0c714decf64b140c4f440ac671e2db50c0893a29
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050190"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696175"
 ---
 # <a name="get-installed-app-for-user"></a>获取用户的已安装应用
 
@@ -33,7 +33,7 @@ ms.locfileid: "52050190"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{user-id}/teamwork/installedApps/{app-installation-id}
+GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}
 ```
 
 ## <a name="request-headers"></a>请求标头

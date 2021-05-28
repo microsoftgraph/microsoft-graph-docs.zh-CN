@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75647e6ab8cb591fc9193648bb5d2174a9141c89
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 69994c99fa34b54d5c927dcfa3c3097694f2cc19
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659774"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696154"
 ---
 # <a name="install-app-for-user"></a>为用户安装应用
 
@@ -31,7 +31,7 @@ ms.locfileid: "49659774"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{user-id}/teamwork/installedApps
+POST /users/{user-id | user-principal-name}/teamwork/installedApps
 ```
 
 ## <a name="request-headers"></a>请求标头

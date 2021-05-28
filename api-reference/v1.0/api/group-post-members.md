@@ -2,15 +2,15 @@
 title: 添加成员
 description: 通过 **members** 导航属性将成员添加到 Microsoft 365 组、安全组或启用邮件的安全组。
 localization_priority: Priority
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d7272266893579d0524423a7bd968ad56ff7e694
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: a9337c18b25e37711e9e7d9ec14d9ee65eccac39
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469001"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681975"
 ---
 # <a name="add-member"></a>添加成员
 

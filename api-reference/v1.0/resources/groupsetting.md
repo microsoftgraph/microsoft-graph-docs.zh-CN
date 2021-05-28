@@ -1,32 +1,32 @@
 ---
 title: groupSetting 资源类型
-description: 组设置控制诸如组显示名称阻止的单词列表的行为，或者是否允许来宾用户成为组所有者。
-author: yyuank
+description: 组设置控制行为，如阻止组显示名称的单词列表或是否允许来宾用户成为组所有者。
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 5dc427dc2ea2bf4e47d101ded89fdfa819d678ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e18f78f0b0d7c9e8cb9c054afd5645ae45e1c48
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062944"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680876"
 ---
 # <a name="groupsetting-resource-type"></a>groupSetting 资源类型
 
 命名空间：microsoft.graph
 
-组设置控制诸如组显示名称阻止的单词列表的行为，或者是否允许来宾用户成为组所有者。
+组设置控制行为，如阻止组显示名称的单词列表或是否允许来宾用户成为组所有者。
 
-可以基于可用的 [groupSettingTemplates](groupsettingtemplate.md)创建组设置，并将其从预设默认值更改为。 这些设置管理租户级或特定组的组行为。 当同时在租户范围和特定组中定义相同设置时，组级别设置将覆盖租户范围内的设置。  例如，租户范围内的设置可能会允许来宾受到现有组成员的邀请，但单个组设置可以覆盖，而不允许由组成员邀请来宾。 组设置仅控制 Microsoft 365 组的行为。
+可以基于可用的 [groupSettingTemplates](groupsettingtemplate.md)创建组设置，并更改其预设默认值。 这些设置控制租户范围内或特定组的组行为。 当在租户范围和特定组上定义相同设置时，组级别设置将覆盖租户范围的设置。  例如，租户范围设置可能允许现有组成员邀请来宾，但单个组设置可以覆盖并不允许组的成员邀请来宾。 组设置仅控制Microsoft 365组行为。
 
 ## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |创建基于 groupSettingTemplate 的 setting 对象。 POST 请求必须为模板中定义的所有设置提供 settingValues。 |
+|[Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |创建基于 groupSettingTemplate 的设置对象。 POST 请求必须为模板中定义的所有设置提供 settingValues。 |
 |[获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
-|[列出设置](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
+|[List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
 |[更新设置](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | 更新 groupsetting 对象。 |
 |[删除设置](../api/groupsetting-delete.md) | 无 | 删除 setting 对象。 |
 
@@ -34,10 +34,10 @@ ms.locfileid: "48062944"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|displayName|String| 来自关联模板的此组设置的显示名称。 |
+|displayName|String| 这组设置的显示名称，来自关联的模板。 |
 |id|String| 这些设置的唯一标识符。 只读。 |
-|templateId|String| 用于创建此组设置的模板的唯一标识符。 只读。 |
-|values|[settingValue](settingvalue.md) 集合| 名称值对的集合。 必须包含并设置在模板中定义的所有设置。 |
+|templateId|String| 用于创建这组设置的模板的唯一标识符。 只读。 |
+|values|[settingValue](settingvalue.md) 集合| 名称值对的集合。 必须包含和设置模板中定义的所有设置。 |
 
 ## <a name="relationships"></a>关系
 

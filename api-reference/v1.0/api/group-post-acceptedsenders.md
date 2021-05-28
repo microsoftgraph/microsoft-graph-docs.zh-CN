@@ -1,20 +1,20 @@
 ---
 title: 删除 acceptedSender
 description: 向 acceptedSender 列表中添加新用户或组。
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b3f55e75d84a00622a0bc1d9fcda4e2aa2ddf535
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61d25b199599b6a48ec4498b13898f29d8505d7e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057533"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681982"
 ---
 # <a name="create-acceptedsender"></a>删除 acceptedSender
 
-命名空间： microsoft 将新用户或组添加到 acceptedSender 列表中。
+命名空间：microsoft.graph 将新用户或组添加到 acceptedSender 列表。
 
 在请求主体的 `@odata.id` 中指定用户或组。已接受的发件人列表中的用户可以发布到组对话。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。
 

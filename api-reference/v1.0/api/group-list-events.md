@@ -1,16 +1,16 @@
 ---
 title: 列出事件
 description: 检索事件对象列表。
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 92689c47b456d85e605cdd509045f77b94ea12b0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a00227170c5d16a639553049c0b85af060fd51ef
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052325"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682563"
 ---
 # <a name="list-events"></a>列出事件
 

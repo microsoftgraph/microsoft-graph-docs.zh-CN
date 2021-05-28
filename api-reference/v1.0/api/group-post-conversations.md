@@ -1,16 +1,16 @@
 ---
 title: 创建对话
 description: '通过包括线程和帖子创建新对话。 '
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8f722f80f08b599dddc62aa30324e799091c674f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a91b88067384962f98154448b0eadcef6a6cb44f
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052269"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680582"
 ---
 # <a name="create-conversation"></a>创建对话
 

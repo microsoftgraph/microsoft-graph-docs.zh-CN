@@ -1,16 +1,16 @@
 ---
 title: 列出 rejectedSender
 description: '获取此组的“遭拒的发件人”列表中的用户或组列表。 '
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b4794c7b2d16f51584ff0a5e8b60c75bfe979df6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 95ef002b64cd047a4a7dc13b7856c9e2be6f3de7
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052311"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680617"
 ---
 # <a name="list-rejectedsenders"></a>列出 rejectedSender
 

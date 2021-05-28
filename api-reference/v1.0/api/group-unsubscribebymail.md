@@ -2,15 +2,15 @@
 title: 组：unsubscribeByMail
 description: '调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。 仅支持 Microsoft 365 组。 '
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 63727226e9c1306f0c2b5ffd5f468d726305a44b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 68f2e82ab47476af870c55b78716c174da3b16b1
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041986"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682626"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 
