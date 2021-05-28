@@ -931,7 +931,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 增量
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -1823,7 +1823,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -10248,7 +10248,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -10754,6 +10754,13 @@ items:
                 items:
                   - name: 概述
                     href: resources/authenticationmethodspolicies-overview.md
+                  - name: 身份验证方法策略
+                    href: resources/authenticationmethodspolicy.md
+                    items:
+                      - name: 获取
+                        href: api/authenticationmethodspolicy-get.md
+                      - name: 更新
+                        href: api/authenticationmethodspolicy-update.md
                   - name: FIDO2 策略
                     href: resources/fido2authenticationmethodconfiguration.md
                     items:
