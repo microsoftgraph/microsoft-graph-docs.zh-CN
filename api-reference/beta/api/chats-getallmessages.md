@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 12b645943297d34504bb4d4586ecbd8d3e79b7c6
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 18c6ec164d21c1efab249560f3c866fab5fabeb4
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582653"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52695929"
 ---
 # <a name="chats-getallmessages"></a>聊天： getAllMessages
 
@@ -22,7 +22,7 @@ ms.locfileid: "51582653"
 
 ## <a name="permissions"></a>权限
 
-调用此 API 需要以下权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+以下权限需要调用此 API。要了解详细信息，包括如何选择权限，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,7 +37,7 @@ ms.locfileid: "51582653"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/chats/getAllMessages
+GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

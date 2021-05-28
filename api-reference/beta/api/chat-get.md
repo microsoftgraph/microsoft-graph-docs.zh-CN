@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d9981ac2216ba7114e01240d6430574d76a3ab33
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 74c512d20ac141dede8957f2cc0a1ad878622888
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080250"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696015"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -36,7 +36,7 @@ ms.locfileid: "52080250"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats/{chat-id}
-GET /users/{user-id}/chats/{chat-id}
+GET /users/{user-id | user-principal-name}/chats/{chat-id}
 GET /chats/{chat-id}
 ```
 

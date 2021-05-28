@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e96fdce4e22aa1f83337ca9be938b648394808ac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 042c95cab97e32c0b871f342a082e8bcf8b41c6c
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047292"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696022"
 ---
 # <a name="list-members-of-a-chat"></a>列出聊天成员。
 
@@ -23,7 +23,7 @@ ms.locfileid: "52047292"
 > [!NOTE]
 > 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
 >
-> 成员资格结果将来可能会映射到来自不同租户的用户，如响应中所示。客户端不应假定所有成员仅来自当前租户。
+> 未来，成员资格结果可以映射到来自不同租户的用户，如响应中所示。客户端不应假定所有成员仅来自当前租户。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ ms.locfileid: "52047292"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/members
-GET /users/{user-id}/chats/{chat-id}/members
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

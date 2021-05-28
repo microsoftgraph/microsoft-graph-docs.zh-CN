@@ -5,12 +5,12 @@ localization_priority: Priority
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e8d80ea9eb75b4814a04ce5c26558e2cab9d9641
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 91f45f57fab749e0f9ec47937bd8b8897b55cea4
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51610727"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696119"
 ---
 # <a name="list-messages-in-a-chat"></a>列出聊天中的消息
 
@@ -40,7 +40,7 @@ ms.locfileid: "51610727"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats/{chat-id}/messages
-GET /users/{user-id}/chats/{chat-id}/messages
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages
 GET /chats/{chat-id}/messages
 ```
 
