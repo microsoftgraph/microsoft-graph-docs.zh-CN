@@ -1,16 +1,16 @@
 ---
 title: 更新组
 description: 更新 group 对象的属性。
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e92b738ffac9d04eaa02b0130e902609d3f944a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 36b8a21589bdfd1687939eb636bf5de254d37bab
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467986"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680736"
 ---
 # <a name="update-group"></a>更新组
 
@@ -54,7 +54,7 @@ PATCH /groups/{id}
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
 |groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。|
-|mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
+|mailNickname|String|组的邮件别名。创建组时必须指定此属性。 |
 |securityEnabled|布尔|指定是否为安全组。 |
 |visibility|String|指定 Microsoft 365 组的可见性。 可能的是包括：**专用**、**公用** 或为空（解释为 **公用**）。|
 

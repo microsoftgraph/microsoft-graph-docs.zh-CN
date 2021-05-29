@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 56bc6b580fe691810600feee468c94cdd8a4d852
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 26ed5f571aae84ce553dc95b04a385f7f9dd8474
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980813"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682472"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 
@@ -65,6 +65,6 @@ https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 
 ## <a name="connect-with-us"></a>与我们联系
 
-是否希望在 Microsoft Graph 中增加其他 API 或功能？ 在 [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632) 上发布新功能请求。
+是否希望在 Microsoft Graph 中增加其他 API 或功能？ 在 [Microsoft 365 开发人员平台意见论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)上发布新的功能请求。
 
 对现有 Microsoft Graph API 有反馈意见？ 在 [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues) 上与我们联系。
