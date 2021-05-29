@@ -5,14 +5,25 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5e7ccf00729e9acaffd08c2618d3f3249a2a268e
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: 65545864f1aee0a7ffb53c0d1ee3f608c5eb171f
+ms.sourcegitcommit: ecf7867ef7957b847b7530089ce30e107750adac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697198"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698002"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
+
+项目见解是 Microsoft 使用高级机器学习技术计算的关系。 当用户针对文档、SharePoint 网站和列表、Teams 聊天和频道进行协作时，Microsoft 会将这些活动聚合为信号。 Microsoft 从这些信号中获得见解，为组织的用户提供以用户为中心的内容建议。
+
+项目见解可帮助用户快速查找重要文件，例如在 Office.com 和 Delve 中的 **建议** 体验中。 用户可以在 Outlook Mobile 中的 **发现** 区域发现他们有权访问但之前可能未看到过的可能有用内容。 通过个性化见解（例如 Microsoft 365 应用中 Bing 和 **最近使用内容** 的人员卡片中的 **最近使用过的文件**），用户可轻松发现其最近使用的文件。
+
+这些项目见解仅反映用户有权访问的内容。 没有用户会获得他们无法访问的内容的建议。
+
+> **注意** 本文不处理 Microsoft 365 中其他基于见解的体验，例如 Viva Insights、适用于 Outlook 的 Insights 加载项、WorkWith 功能、MyAnalytics 和 Insights 仪表板。
+
+
+## <a name="item-insights-privacy"></a>项目见解隐私 
 
 项目见解隐私设置提供了在用户与 Microsoft 365 中其他项目（例如文档或站点）之间，对派生自 Microsoft Graph 见解的可见性进行配置的能力。 可通过预先存在的控件禁用 Delve 应用，但允许其他基于见解的体验，以继续提供协助。
 
@@ -23,11 +34,16 @@ ms.locfileid: "51697198"
 
 ## <a name="how-to-customize-item-insights"></a>如何自定义项目见解？
 
-项目见解设置为管理员提供了使用 Azure AD 工具的灵活性。 管理员可为整个组织禁用项目见解，也可以仅针对指定 Azure AD 组的成员禁用项目见解。 使用 PowerShell SDK 或 Microsoft Graph REST API 通过应有权限来配置项目见解。 注意，该操作需要 _全局管理员角色_。 
+项目见解设置为管理员提供了使用 Azure AD 工具的灵活性。 管理员可为整个组织禁用项目见解，也可以仅针对指定 Azure AD 组的成员禁用项目见解。 他们可以在 Microsoft 365 管理中心内配置项目简介，或者使用具有适当权限的 PowerShell SDK 或 Microsoft Graph REST API 进行配置。 请记住，该操作需 要 _全局管理员角色_。 
 
-下一部分介绍了如何使用 PowerShell cmdlet 来配置见解设置。 如果你使用的是 REST API，请跳过下一部分，继续[使用 REST API 配置项目见解](#configure-item-insights-using-rest-api)。 有关详细信息，请参阅 [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) 或 [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST 操作。
+下一部分介绍管理中心的使用，然后是有关 PowerShell cmdlet 的部分。 如果正在使用 REST API，请跳过下一部分，并继续 [使用 REST API 配置项目见解](#configure-item-insights-using-rest-api)。 有关详细信息，请参阅 [读取](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) 或 [更新](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST 操作。
 
-### <a name="how-to-configure-item-insights-setting-via-powershell"></a>如何通过 PowerShell 配置项目见解设置？
+### <a name="how-to-configure-item-insights-settings-via-microsoft-admin-center"></a>如何通过 Microsoft 管理中心配置项目见解设置？
+拥有 _全局管理员角色_ 的管理员可以通过切换来调整项见解隐私设置。 若要执行这一操作，请在 Micrsofot 365 管理中心展开“**设置**”，选择“**搜索和智能**”，并在“**项目见解**”下选择“**更改设置**”。
+![图像](https://user-images.githubusercontent.com/54312959/117024482-b39eca00-ad02-11eb-9a11-e6a01039822e.png)
+
+
+### <a name="how-to-configure-item-insights-settings-via-powershell"></a>如何通过 PowerShell 配置项目见解设置？
 确认以下附加先决条件。 然后，你可以使用 [Microsoft Graph PowerShell SDK](./powershell/installation.md) 为整个组织或特定组设置项目见解。
 
 #### <a name="additional-prerequisites"></a>附加先决条件
@@ -78,7 +94,7 @@ ms.locfileid: "51697198"
 更新项目见解设置时，请记住以下几点：
 - [项目见解设置](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true)仅可用于 beta 版终结点。
 - 从 Azure 门户获取 Azure AD 组 ID，并确保该组存在，因为更新操作不会检查组是否存在。 在 **disabledForGroup** 中指定不存在的组 _不会_ 禁用组织中任何用户的见解。
-- 更新设置最多可能需要 8 个小时才能应用到所有 Microsoft 365 体验中。
+- 更新设置最多可能需要 24 个小时才能应用到所有 Microsoft 365 体验中。
 - 无论项目见解设置如何，Delve 都会继续采用 Delve 租户和用户级别的[隐私设置](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true)。
 
 
@@ -105,7 +121,7 @@ ms.locfileid: "51697198"
 
 
 > [!NOTE]
-> 过渡期间，由于技术原因，如果组织为所有用户禁用项目见解，则 SharePoint 起始页可能会提供过时的建议。 此问题将在未来的服务器端更改中得到解决。 
+> 在切换期间，出于技术原因，如果组织为所有用户禁用项目见解，则 SharePoint 起始页可能会提供过时的建议。在即将进行的服务器端更改中，此问题将得以解决。 
 
 ## <a name="see-also"></a>另请参阅
 了解 Delve 以及如何使用 Delve 功能设置来控制在 **发现** 源中显示的文档： 
