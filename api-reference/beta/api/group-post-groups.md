@@ -1,16 +1,16 @@
 ---
 title: 创建组
 description: 创建新的 Microsoft 365 组或安全组。
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 871d990342807a9742ce9125c62e730fec39cd10
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 4f4cab940521f1fd68c2c6b850bc4dc4c8dd2686
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507943"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681402"
 ---
 # <a name="create-group"></a>创建组
 
@@ -55,15 +55,15 @@ POST /groups
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。 必需。 |
-| description | string | 组说明。 可选。 |
+| displayName | string | 将在组的通讯簿中显示的名称。必填。 |
+| 说明 | string | 组说明。 可选。 |
 | isAssignableToRole | Boolean | 设置为 **true** 可以将组分配给 Azure AD 角色。 只有特权角色管理员和全局管理员才能设置此属性的值。 可选。 |
 | mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
 | mailNickname | string | 组的邮件别名。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 必填。 |
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
-| owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 可选。 |
-| members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。 可选。 |
-|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
+| owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。可选。 |
+| members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。可选。 |
+|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
 > **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
 
@@ -73,7 +73,7 @@ POST /groups
 
 > 以编程方式创建 Microsoft 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
 
-根据需要为你的组指定其他可写属性。 有关详细信息，请参阅[组](../resources/group.md)资源的属性。
+根据需要为你的组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
 ### <a name="grouptypes-options"></a>groupTypes 选项
 
@@ -193,7 +193,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-security-group-with-an-owner-and-members"></a>示例 2：创建包含所有者和成员的安全组
 
-以下示例将创建一个具有指定所有者和成员的 Microsoft 365 组。 请注意，最多可以在组创建中添加 20 个关系，如所有者和成员。 随后，可以通过使用[添加成员](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API 或 JSON 批处理来添加更多成员。
+以下示例将创建一个具有指定所有者和成员的 Microsoft 365 组。 请注意，最多可以在组创建中添加 20 个关系，如所有者和成员。 随后，可以通过使用[添加成员](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API 或 JSON 批处理来添加更多成员。
 
 #### <a name="request"></a>请求
 
@@ -329,7 +329,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 它仅包括默认属性。
+下面是一个响应示例。它仅包括默认属性。
 
 <!-- {
   "blockType": "response",
