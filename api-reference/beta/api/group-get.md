@@ -1,16 +1,16 @@
 ---
 title: 获取组
 description: 获取组对象的属性和关系。
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8578083aecaeb34f838bcffad80be4e4c742fe2f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 344f1ed4ed71fe038dd66403c7b8732829fb8c0d
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961805"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681678"
 ---
 # <a name="get-group"></a>获取组
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 
 
 #### <a name="response"></a>响应
-下面介绍响应示例。 它仅包括默认属性。
+下面是一个答复示例。它仅包含默认属性。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
 <!-- {

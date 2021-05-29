@@ -1,18 +1,18 @@
 ---
 title: 设置 Microsoft 365 组行为与预配选项
 description: 在 Microsoft Graph 使用组资源，你可以设置创建 Microsoft 365 组时要预配的特定组行为和资源。
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
-ms.openlocfilehash: 066ef0c65fa0b70fd89fc5dfc4cf14e047f1bc49
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 54e4622a69f33980494962882ac1aa06d07eaec5
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034147"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682178"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>设置 Microsoft 365 组行为与预配选项（预览）
 
-使用 Microsoft Graph 中的 [组](/graph/api/resources/group?view=graph-rest-beta) ，可设置创建 Microsoft 365 组时要预配的特定组行为和资源。 根据资源，还可在组更新时预配某些内容。
+使用 Microsoft Graph 中的 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) ，可设置创建 Microsoft 365 组时要预配的特定组行为和资源。 根据资源，还可在组更新时预配某些内容。
 
 ### <a name="configuring-and-provisioning-groups"></a>配置和预配组
 
@@ -21,7 +21,7 @@ ms.locfileid: "50034147"
 > [!NOTE]
 > **resourceBehaviortions** 和 **resourceProvisioningOptions** 属性目前仅可用于 Microsoft Graph beta 版终结点。  请勿在生产应用中使用它们，因为它们可能在没有通知的情况下随时更改。
 
-**resourceBehaviorOptions** 是一个字符串集合，用于为 Microsoft 365 组指定组行为。 这些行为只能在 [组创建](/graph/api/group-post-groups?view=graph-rest-beta)时设置 (`POST`)。
+**resourceBehaviorOptions** 是一个字符串集合，用于为 Microsoft 365 组指定组行为。 这些行为只能在 [组创建](/graph/api/group-post-groups?view=graph-rest-beta&preserve-view=true)时设置 (`POST`)。
 
 | resourceBehaviorOptions 支持的值   |说明|如果未设置，则为默认值|
 |:---------------|:--------|:-----------|
@@ -34,7 +34,7 @@ ms.locfileid: "50034147"
 
 | resourceProvisioningOptions 支持的值   |说明| 如果未设置，则为默认值 |
 |:---------------|:--------|:------------|
-| Teams|在 Microsoft Teams 中将该组预配为团队。 此外，此值可通过 `PATCH` 操作添加到 [组更新](/graph/api/group-update?view=graph-rest-beta) 上的 **resourceProvisioningOptions** 字符串集合，以便将现有的 Microsoft 365 组转换为团队。| 此组是没有 Teams 功能的常规 Microsoft 365 组。|
+| Teams|将此组预配为 Microsoft Teams 中的团队。此外，此值可通过 `PATCH` 操作添加到 [组更新](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) 上的 **resourceProvisioningOptions** 字符串集合，以便将现有的 Microsoft 365 组转换为团队。| 此组是没有 Teams 功能的常规 Microsoft 365 组。|
 
 
 ## <a name="see-also"></a>另请参阅
