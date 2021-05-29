@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 702f793a01d68d1a71d786c62de35a0e24c12b80
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 769ebef6e056a9b2e345d7afad772f8893b50dda
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579625"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703494"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>列出 accessReviewScheduleDefinition
 
@@ -185,7 +185,7 @@ Content-type: application/json
   "name": "list_accessReviewScheduleDefinition_allgroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com//beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
 ```
 
 #### <a name="response"></a>响应

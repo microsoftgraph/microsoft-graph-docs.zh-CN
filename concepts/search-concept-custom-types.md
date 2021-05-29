@@ -4,12 +4,12 @@ description: 可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/api/
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: db80e90bf8ec6afc8b1b4a993f5c42be66a07e3d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cc75530533ef8613f416e7fabc03904b2f7940ec
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031394"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703599"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义 (预览)  
 
@@ -80,7 +80,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
-      "searchTerms": ["ya"],
+      "searchTerms": ["yang"],
       "hitsContainers": [
         {
           "total": 2,

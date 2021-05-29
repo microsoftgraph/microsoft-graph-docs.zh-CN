@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 32a69da6e1c03119c13114900c7e12563e504950
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 99b876655f5b2e5006a738d9401434015b804373
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629699"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703452"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment： setUpResourcesFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "52629699"
 
 教师确定要上载到作业文件夹中的资源。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -38,15 +38,16 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | 持有者 `{token}`。必需。  |
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+你需要提供一个空 json `{}` 作为此方法的请求正文。
 ## <a name="response"></a>响应
 如果成功，此方法在请求正文中返回 200 Ok 响应代码和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
+
 ### <a name="request"></a>请求
 请求示例如下所示。
 
@@ -56,9 +57,12 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
+Content-type: application/json
+
+{
+}
 ```
 ---
-
 ### <a name="response"></a>响应
 响应示例如下所示。 
 

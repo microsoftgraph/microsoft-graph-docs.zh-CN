@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fda1211b00266f7751bc727a00989a68b9022276
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 984fff26922d2300b94af69f3263e2beaeab82f8
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956860"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703592"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "50956860"
 | 属性 | 类型   | 说明 |
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 与租户相关的服务计划的集合。不可为空。 |
-| businessPhones | 字符串集合 | 组织的电话号码。 虽然这是一个字符串集合，但只能为此属性设置一个数字。 |
+| businessPhones | 字符串集合 | 组织的电话号码。 虽然这是字符串集合，但是只能为该属性设置一个号码。 |
 | 城市 | String | 组织地址所在的城市名称。 |
 | country | String | 组织地址所在的国家/地区名称。 |
 | countryLetterCode | String | 组织所在的国家/地区缩写。 |
@@ -54,9 +54,9 @@ ms.locfileid: "50956860"
 | marketingNotificationEmails | String collection | 不可为空。 |
 | objectType | String | 一个标识对象类型的字符串。 对于租户，该值始终为 `Company` 。|
 | onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-| onPremisesSyncEnabled | Boolean | `true` 如果此对象从本地目录同步; `false` 如果此对象最初从本地目录同步，但不再同步;可为空。 `null` 如果此对象从未从本地目录同步，则 (同步) 。 |
+| onPremisesSyncEnabled | 布尔 | `true` 如果此对象从本地目录同步; `false` 如果此对象最初从本地目录同步，但不再同步;可为空。 `null` 如果此对象从未从本地目录（默认）进行同步。 |
 | postalCode | String | 组织地址的邮政编码。 |
-| preferredLanguage | String | 组织的首选语言。 应遵循 ISO 639-1 代码;例如 `en` 。 |
+| preferredLanguage | String | 组织的首选语言。 应遵循 ISO 639-1 代码;例如， `en`。 |
 | privacyProfile | [privacyProfile](privacyprofile.md) | 组织的隐私配置文件。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 不可为 null。 |
 | securityComplianceNotificationMails | String collection ||
@@ -71,7 +71,7 @@ ms.locfileid: "50956860"
 | 关系  | 类型  |说明|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) 集合| 用于管理基于证书的身份验证配置的导航属性。 只能在集合中创建 certificateBasedAuthConfiguration 的单个实例。  |
-|extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展集合。 可为 Null。| 
+|extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展集合。 可为 NULL。| 
 |organizationalbranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) 集合| 为组织打造品牌。 可为 Null。|
 |settings|[organizationSettings](organizationsettings.md) | 检索 organizationSettings 对象的属性和关系。 可为 Null。|
 

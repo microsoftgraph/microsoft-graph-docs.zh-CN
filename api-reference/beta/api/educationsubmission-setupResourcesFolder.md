@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d7be17b22434b08e5b83479201e59b17a91d26e1
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 4fd82a90bc237b2fe1f312f71c07ddac8a2cf45a
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664768"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703466"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission： setUpResourcesFolder
 
@@ -40,47 +40,32 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | 持有者 `{token}`。必需。  |
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+为此方法提供空 json `{}` 作为请求正文。
+
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 Ok` 响应代码。 正文将包含提交模型。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
+
 ### <a name="request"></a>请求
 请求示例如下所示。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_setupresourcesfolder"
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder
+Content-type: application/json
+
+{
+}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-setupresourcesfolder-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-setupresourcesfolder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-setupresourcesfolder-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-setupresourcesfolder-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
----
-
 
 ### <a name="response"></a>响应
 响应示例如下所示。 

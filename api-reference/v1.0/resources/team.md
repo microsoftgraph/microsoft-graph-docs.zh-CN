@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ca4e3c55c56d6b4a469515dc20a9fbff5cbec36f
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: d6ebc247ec6868cd32e2ef3790f7542d9eb546fe
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202091"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682045"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -55,10 +55,10 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |displayName|string| 团队的名称。 |
-|description|string| 组的说明（可选）。 |
+|description|string| 组的说明（可选）。 最大长度：1024 个字符。 |
 |classification|string| 标签（可选）。 通常说明团队的数据或业务敏感性。 必须与租户目录中的一个预配置集匹配。 |
 |specialization|[teamSpecialization](teamspecialization.md)| 可选。 指示团队是否适用于特定用例。  每个团队专用化都可以访问针对其用例的独特行为和体验。 |
-|visibility|[teamVisibilityType](teamvisibilitytype.md)| 组和团队的可见性。 默认值为 Public。 |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| 组和团队的可见性。默认值为 Public。 |
 |funSettings|[teamFunSettings](teamfunsettings.md) |用于配置团队中 Giphy、成员和贴纸使用情况的设置。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |用于配置来宾是否可以在团队中创建、更新或删除频道的设置。|
 |internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
