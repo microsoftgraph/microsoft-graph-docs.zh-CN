@@ -54,7 +54,7 @@ ms.locfileid: "52703592"
 | marketingNotificationEmails | String collection | 不可为空。 |
 | objectType | String | 一个标识对象类型的字符串。 对于租户，该值始终为 `Company` 。|
 | onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-| onPremisesSyncEnabled | 布尔 | `true` 如果此对象从本地目录同步; `false` 如果此对象最初从本地目录同步，但不再同步;可为空。 `null` 如果此对象从未从本地目录（默认）进行同步。 |
+| onPremisesSyncEnabled | Boolean | `true` 如果此对象从本地目录同步; `false` 如果此对象最初从本地目录同步，但不再同步;可为空。 `null` 如果此对象从未从本地目录（默认）进行同步。 |
 | postalCode | String | 组织地址的邮政编码。 |
 | preferredLanguage | String | 组织的首选语言。 应遵循 ISO 639-1 代码;例如， `en`。 |
 | privacyProfile | [privacyProfile](privacyprofile.md) | 组织的隐私配置文件。 |

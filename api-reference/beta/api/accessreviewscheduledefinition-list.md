@@ -66,7 +66,7 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 `$filter` **accessReviewInactiveUserQueryScope** 或 **principalResourceMembershipScope 不支持查询参数**。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 无。
 
 ## <a name="request-body"></a>请求正文
