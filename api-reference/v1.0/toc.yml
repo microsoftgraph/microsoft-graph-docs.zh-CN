@@ -738,12 +738,15 @@ items:
                     href: api/application-removekey.md
               - name: 扩展
                 items:
-                  - name: 列出
-                    href: api/application-list-extensionproperty.md
-                  - name: 创建
-                    href: api/application-post-extensionproperty.md
-                  - name: 删除
-                    href: api/application-delete-extensionproperty.md
+                  - name: 扩展属性
+                    href: resources/extensionproperty.md
+                    items:
+                      - name: 列出
+                        href: api/application-list-extensionproperty.md
+                      - name: 创建
+                        href: api/application-post-extensionproperty.md
+                      - name: 删除
+                        href: api/application-delete-extensionproperty.md
               - name: 所有者
                 items:
                   - name: 列表
@@ -1399,7 +1402,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
