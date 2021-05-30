@@ -12,76 +12,76 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/28/2021
 ms.locfileid: "52703494"
 ---
-# <a name="list-accessreviewscheduledefinition"></a><span data-ttu-id="4a119-103">列出 accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="4a119-103">List accessReviewScheduleDefinition</span></span>
+# <a name="list-accessreviewscheduledefinition"></a><span data-ttu-id="3a3b1-103">列出 accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="3a3b1-103">List accessReviewScheduleDefinition</span></span>
 
-<span data-ttu-id="4a119-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4a119-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3a3b1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3a3b1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4a119-105">检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4a119-105">Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects.</span></span> <span data-ttu-id="4a119-106">对于创建的每个访问评审系列，将返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括它们的所有嵌套属性。</span><span class="sxs-lookup"><span data-stu-id="4a119-106">A list of zero or more accessReviewScheduleDefinition objects are returned, including all of their nested properties, for each access review series created.</span></span> <span data-ttu-id="4a119-107">这不包括关联的 accessReviewInstance 对象。</span><span class="sxs-lookup"><span data-stu-id="4a119-107">This does not include the associated accessReviewInstance objects.</span></span>
+<span data-ttu-id="3a3b1-105">检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-105">Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects.</span></span> <span data-ttu-id="3a3b1-106">对于创建的每个访问评审系列，将返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括它们的所有嵌套属性。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-106">A list of zero or more accessReviewScheduleDefinition objects are returned, including all of their nested properties, for each access review series created.</span></span> <span data-ttu-id="3a3b1-107">这不包括关联的 accessReviewInstance 对象。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-107">This does not include the associated accessReviewInstance objects.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="4a119-108">此 API 的默认页面大小为 100 accessReviewScheduleDefinition 对象。</span><span class="sxs-lookup"><span data-stu-id="4a119-108">The default page size for this API is 100 accessReviewScheduleDefinition objects.</span></span> <span data-ttu-id="4a119-109">若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。</span><span class="sxs-lookup"><span data-stu-id="4a119-109">To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters.</span></span> <span data-ttu-id="4a119-110">有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="4a119-110">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
+><span data-ttu-id="3a3b1-108">此 API 的默认页面大小为 100 accessReviewScheduleDefinition 对象。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-108">The default page size for this API is 100 accessReviewScheduleDefinition objects.</span></span> <span data-ttu-id="3a3b1-109">若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-109">To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters.</span></span> <span data-ttu-id="3a3b1-110">有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-110">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4a119-111">权限</span><span class="sxs-lookup"><span data-stu-id="4a119-111">Permissions</span></span>
-<span data-ttu-id="4a119-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4a119-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3a3b1-111">权限</span><span class="sxs-lookup"><span data-stu-id="3a3b1-111">Permissions</span></span>
+<span data-ttu-id="3a3b1-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4a119-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="4a119-114">Permission type</span></span>                        | <span data-ttu-id="4a119-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4a119-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3a3b1-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="3a3b1-114">Permission type</span></span>                        | <span data-ttu-id="3a3b1-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3a3b1-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4a119-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4a119-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="4a119-117">AccessReview.Read.All、AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a119-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="4a119-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4a119-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4a119-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="4a119-119">Not supported.</span></span>|
-|<span data-ttu-id="4a119-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="4a119-120">Application</span></span>                            | <span data-ttu-id="4a119-121">AccessReview.Read.All、AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a119-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="3a3b1-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3a3b1-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="3a3b1-117">AccessReview.Read.All、AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a3b1-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="3a3b1-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3a3b1-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3a3b1-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-119">Not supported.</span></span>|
+|<span data-ttu-id="3a3b1-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="3a3b1-120">Application</span></span>                            | <span data-ttu-id="3a3b1-121">AccessReview.Read.All、AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a3b1-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span> |
 
- <span data-ttu-id="4a119-122">登录用户还必须具有允许其读取访问评审的目录角色。</span><span class="sxs-lookup"><span data-stu-id="4a119-122">The signed-in user must also be in a directory role that permits them to read an access review.</span></span> <span data-ttu-id="4a119-123">请参阅访问评审 [角色和应用程序权限授权检查](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)。</span><span class="sxs-lookup"><span data-stu-id="4a119-123">See access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).</span></span>
+ <span data-ttu-id="3a3b1-122">登录用户还必须具有允许其读取访问评审的目录角色。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-122">The signed-in user must also be in a directory role that permits them to read an access review.</span></span> <span data-ttu-id="3a3b1-123">请参阅访问评审 [角色和应用程序权限授权检查](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-123">See access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4a119-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4a119-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a3b1-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3a3b1-124">HTTP request</span></span>
 
-<span data-ttu-id="4a119-125">列出所有 accessReviewScheduleDefinitions：</span><span class="sxs-lookup"><span data-stu-id="4a119-125">To list all your accessReviewScheduleDefinitions:</span></span>
+<span data-ttu-id="3a3b1-125">列出所有 accessReviewScheduleDefinitions：</span><span class="sxs-lookup"><span data-stu-id="3a3b1-125">To list all your accessReviewScheduleDefinitions:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4a119-126">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4a119-126">Optional query parameters</span></span>
-<span data-ttu-id="4a119-127">此方法支持 `$select` 、 `$top` 、 和 `$skip` `$filter` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4a119-127">This method supports the `$select`, `$top`, `$skip`, and `$filter` OData query parameters to help customize the response.</span></span> <span data-ttu-id="4a119-128">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="4a119-128">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3a3b1-126">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="3a3b1-126">Optional query parameters</span></span>
+<span data-ttu-id="3a3b1-127">此方法支持 `$select` 、 `$top` 、 和 `$skip` `$filter` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-127">This method supports the `$select`, `$top`, `$skip`, and `$filter` OData query parameters to help customize the response.</span></span> <span data-ttu-id="3a3b1-128">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-128">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-### <a name="use-the-filter-query-parameter"></a><span data-ttu-id="4a119-129">使用 $filter 查询参数</span><span class="sxs-lookup"><span data-stu-id="4a119-129">Use the $filter query parameter</span></span>
-<span data-ttu-id="4a119-130">`$filter` `contains` accessReviewScheduleDefinition 的 **scope** 属性支持具有 运算符的查询参数。</span><span class="sxs-lookup"><span data-stu-id="4a119-130">The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition.</span></span> <span data-ttu-id="4a119-131">对请求使用以下格式：</span><span class="sxs-lookup"><span data-stu-id="4a119-131">Use the following format for the request:</span></span>
+### <a name="use-the-filter-query-parameter"></a><span data-ttu-id="3a3b1-129">使用 $filter 查询参数</span><span class="sxs-lookup"><span data-stu-id="3a3b1-129">Use the $filter query parameter</span></span>
+<span data-ttu-id="3a3b1-130">`$filter` `contains` accessReviewScheduleDefinition 的 **scope** 属性支持具有 运算符的查询参数。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-130">The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition.</span></span> <span data-ttu-id="3a3b1-131">对请求使用以下格式：</span><span class="sxs-lookup"><span data-stu-id="3a3b1-131">Use the following format for the request:</span></span>
 
 ```http
 GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
 ```
 
-<span data-ttu-id="4a119-132">的值 `{object}` 可以是下列值之一：</span><span class="sxs-lookup"><span data-stu-id="4a119-132">The value of `{object}` can be one of the following:</span></span>
+<span data-ttu-id="3a3b1-132">的值 `{object}` 可以是下列值之一：</span><span class="sxs-lookup"><span data-stu-id="3a3b1-132">The value of `{object}` can be one of the following:</span></span>
 
-|<span data-ttu-id="4a119-133">值</span><span class="sxs-lookup"><span data-stu-id="4a119-133">Value</span></span>|<span data-ttu-id="4a119-134">说明</span><span class="sxs-lookup"><span data-stu-id="4a119-134">Description</span></span>|
+|<span data-ttu-id="3a3b1-133">值</span><span class="sxs-lookup"><span data-stu-id="3a3b1-133">Value</span></span>|<span data-ttu-id="3a3b1-134">说明</span><span class="sxs-lookup"><span data-stu-id="3a3b1-134">Description</span></span>|
 |:---     |:---       |
-|`/groups`  |<span data-ttu-id="4a119-135">列出各个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组的定义) 。</span><span class="sxs-lookup"><span data-stu-id="4a119-135">List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).</span></span>|
-|`/groups/{group id}`  |<span data-ttu-id="4a119-136">列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。</span><span class="sxs-lookup"><span data-stu-id="4a119-136">List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).</span></span>|
-|`./members`  |<span data-ttu-id="4a119-137">列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。</span><span class="sxs-lookup"><span data-stu-id="4a119-137">List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.</span></span>|
-|`accessPackageAssignments`  |<span data-ttu-id="4a119-138">列出访问包上的每个 accessReviewScheduleDefinition。</span><span class="sxs-lookup"><span data-stu-id="4a119-138">List every accessReviewScheduleDefinition on an access package.</span></span>|
-|`roleAssignmentScheduleInstances`  |<span data-ttu-id="4a119-139">列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。</span><span class="sxs-lookup"><span data-stu-id="4a119-139">List every accessReviewScheduleDefinition for service principals assigned to a privileged role.</span></span>|
+|`/groups`  |<span data-ttu-id="3a3b1-135">列出各个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组的定义) 。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-135">List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).</span></span>|
+|`/groups/{group id}`  |<span data-ttu-id="3a3b1-136">列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-136">List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).</span></span>|
+|`./members`  |<span data-ttu-id="3a3b1-137">列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-137">List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.</span></span>|
+|`accessPackageAssignments`  |<span data-ttu-id="3a3b1-138">列出访问包上的每个 accessReviewScheduleDefinition。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-138">List every accessReviewScheduleDefinition on an access package.</span></span>|
+|`roleAssignmentScheduleInstances`  |<span data-ttu-id="3a3b1-139">列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-139">List every accessReviewScheduleDefinition for service principals assigned to a privileged role.</span></span>|
 
-<span data-ttu-id="4a119-140">`$filter` **accessReviewInactiveUserQueryScope** 或 **principalResourceMembershipScope 不支持查询参数**。</span><span class="sxs-lookup"><span data-stu-id="4a119-140">The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.</span></span>
+<span data-ttu-id="3a3b1-140">`$filter` **accessReviewInactiveUserQueryScope** 或 **principalResourceMembershipScope 不支持查询参数**。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-140">The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="4a119-141">请求标头</span><span class="sxs-lookup"><span data-stu-id="4a119-141">Request headers</span></span>
-<span data-ttu-id="4a119-142">无。</span><span class="sxs-lookup"><span data-stu-id="4a119-142">None.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3a3b1-141">请求头</span><span class="sxs-lookup"><span data-stu-id="3a3b1-141">Request headers</span></span>
+<span data-ttu-id="3a3b1-142">无。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-142">None.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="4a119-143">请求正文</span><span class="sxs-lookup"><span data-stu-id="4a119-143">Request body</span></span>
-<span data-ttu-id="4a119-144">不提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="4a119-144">Do not supply a request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a3b1-143">请求正文</span><span class="sxs-lookup"><span data-stu-id="3a3b1-143">Request body</span></span>
+<span data-ttu-id="3a3b1-144">不提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-144">Do not supply a request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4a119-145">响应</span><span class="sxs-lookup"><span data-stu-id="4a119-145">Response</span></span>
-<span data-ttu-id="4a119-146">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象数组。</span><span class="sxs-lookup"><span data-stu-id="4a119-146">If successful, this method returns a `200 OK` response code and an array of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3a3b1-145">响应</span><span class="sxs-lookup"><span data-stu-id="3a3b1-145">Response</span></span>
+<span data-ttu-id="3a3b1-146">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象数组。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-146">If successful, this method returns a `200 OK` response code and an array of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4a119-147">示例</span><span class="sxs-lookup"><span data-stu-id="4a119-147">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3a3b1-147">示例</span><span class="sxs-lookup"><span data-stu-id="3a3b1-147">Examples</span></span>
 
-### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a><span data-ttu-id="4a119-148">示例 1：列出前 100 个访问评审定义</span><span class="sxs-lookup"><span data-stu-id="4a119-148">Example 1: List the first one hundred access review definitions</span></span>
+### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a><span data-ttu-id="3a3b1-148">示例 1：列出前 100 个访问评审定义</span><span class="sxs-lookup"><span data-stu-id="3a3b1-148">Example 1: List the first one hundred access review definitions</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4a119-149">请求</span><span class="sxs-lookup"><span data-stu-id="4a119-149">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3a3b1-149">请求</span><span class="sxs-lookup"><span data-stu-id="3a3b1-149">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4a119-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="4a119-150">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3a3b1-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="3a3b1-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewScheduleDefinition"
@@ -89,26 +89,26 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$top=100&$skip=0
 ```
-# <a name="c"></a>[<span data-ttu-id="4a119-151">C#</span><span class="sxs-lookup"><span data-stu-id="4a119-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3a3b1-151">C#</span><span class="sxs-lookup"><span data-stu-id="3a3b1-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewscheduledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4a119-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4a119-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3a3b1-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3a3b1-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewscheduledefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4a119-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4a119-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3a3b1-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3a3b1-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewscheduledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4a119-154">Java</span><span class="sxs-lookup"><span data-stu-id="4a119-154">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3a3b1-154">Java</span><span class="sxs-lookup"><span data-stu-id="3a3b1-154">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="4a119-155">响应</span><span class="sxs-lookup"><span data-stu-id="4a119-155">Response</span></span>
-><span data-ttu-id="4a119-156">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4a119-156">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="3a3b1-155">响应</span><span class="sxs-lookup"><span data-stu-id="3a3b1-155">Response</span></span>
+><span data-ttu-id="3a3b1-156">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-156">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -175,10 +175,10 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a><span data-ttu-id="4a119-157">示例 2：检索范围为租户中Microsoft 365组的所有访问评审定义</span><span class="sxs-lookup"><span data-stu-id="4a119-157">Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant</span></span>
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a><span data-ttu-id="3a3b1-157">示例 2：检索范围为租户中Microsoft 365组的所有访问评审定义</span><span class="sxs-lookup"><span data-stu-id="3a3b1-157">Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4a119-158">请求</span><span class="sxs-lookup"><span data-stu-id="4a119-158">Request</span></span>
-<span data-ttu-id="4a119-159">以下示例显示一个请求，请求检索范围为租户中所有Microsoft 365组的所有访问评审系列。</span><span class="sxs-lookup"><span data-stu-id="4a119-159">The following example shows a request to retrieve all the access review series scoped to all Microsoft 365 groups in a tenant.</span></span>
+#### <a name="request"></a><span data-ttu-id="3a3b1-158">请求</span><span class="sxs-lookup"><span data-stu-id="3a3b1-158">Request</span></span>
+<span data-ttu-id="3a3b1-159">以下示例显示一个请求，请求检索范围为租户中所有Microsoft 365组的所有访问评审系列。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-159">The following example shows a request to retrieve all the access review series scoped to all Microsoft 365 groups in a tenant.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -188,8 +188,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
 ```
 
-#### <a name="response"></a><span data-ttu-id="4a119-160">响应</span><span class="sxs-lookup"><span data-stu-id="4a119-160">Response</span></span>
-><span data-ttu-id="4a119-161">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4a119-161">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="3a3b1-160">响应</span><span class="sxs-lookup"><span data-stu-id="3a3b1-160">Response</span></span>
+><span data-ttu-id="3a3b1-161">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="3a3b1-161">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -267,9 +267,9 @@ Content-type: application/json
 ```
 
 
-## <a name="see-also"></a><span data-ttu-id="4a119-162">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4a119-162">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3a3b1-162">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3a3b1-162">See also</span></span>
 
-- [<span data-ttu-id="4a119-163">获取 accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="4a119-163">Get accessReviewScheduleDefinition</span></span>](accessreviewscheduledefinition-get.md)
+- [<span data-ttu-id="3a3b1-163">获取 accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="3a3b1-163">Get accessReviewScheduleDefinition</span></span>](accessreviewscheduledefinition-get.md)
 
 
 <!--

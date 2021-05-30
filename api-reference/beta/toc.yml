@@ -788,12 +788,15 @@ items:
                     href: api/application-removekey.md
               - name: 扩展
                 items:
-                  - name: 列出扩展
-                    href: api/application-list-extensionproperty.md
-                  - name: 创建扩展
-                    href: api/application-post-extensionproperty.md
-                  - name: 删除扩展
-                    href: api/application-delete-extensionproperty.md
+                  - name: 扩展属性
+                    href: resources/extensionproperty.md
+                    items:
+                      - name: 列出
+                        href: api/application-list-extensionproperty.md
+                      - name: 创建
+                        href: api/application-post-extensionproperty.md
+                      - name: 删除
+                        href: api/application-delete-extensionproperty.md
               - name: 所有者
                 items:
                   - name: 列出所有者
@@ -931,7 +934,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 增量
+              - name: delta
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -10248,7 +10251,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
