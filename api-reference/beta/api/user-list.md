@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 143f5105e77ecdf635a7c00e0ac10e32a1d40b2d
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 2636830f993626cc2d220c5a09543640f8da181f
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629537"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703543"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -43,7 +43,11 @@ GET /users
 
 此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。 `$count` 和 `$search` 参数当前在 Azure AD B2C 租户中不可用。
 
-## <a name="request-headers"></a>请求标头
+某些属性无法在用户集合中返回。以下属性仅在 [检索单个用户](./user-get.md) 时受支持：**aboutMe**、**birthday**、**hireDate**、**interests**、**mySite**、**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**mailboxSettings**。
+
+个人 Microsoft 帐户不支持下列属性，并且将 `null`： **关于Me**、 **生日**、 **感兴趣的**、 **mySite**， **pastProj 主要**、 **首选名称**、 **、**、 **学校**、 **技能**、 **街道地址**。
+
+## <a name="request-headers"></a>请求头
 
 | 标头 | 值 |
 |:------ |:----- |
@@ -186,7 +190,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 **signInActivity** 属性的详细信息需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
+以下是请求示例。有关" **signInActivity** 属性的详细信息，需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -257,7 +261,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 **signInActivity** 属性的详细信息需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
+以下是请求示例。有关" **signInActivity** 属性的详细信息，需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -319,7 +323,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 **signInActivity** 属性的详细信息需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
+以下是请求示例。有关" **signInActivity** 属性的详细信息，需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
 
 <!-- {
   "blockType": "ignored",

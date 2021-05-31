@@ -5,12 +5,12 @@ localization_priority: Priority
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 56ab065ffb2ec303bbd79f681882d7154af9ff2c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9764104cc1737effe334362f5161598957f600b3
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952513"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703641"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -38,13 +38,12 @@ ms.locfileid: "50952513"
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 与租户相关的服务计划的集合。不可为空。 |
-| businessPhones | 字符串集合 | 组织的电话号码。 虽然这是字符串集合，但是只能为该属性设置一个号码。 |
+| businessPhones | String collection | 组织的电话号码。虽然这是字符串集合，但是只能为该属性设置一个号码。 |
 | 城市 | String | 组织地址所在的城市名称。 |
 | country | String | 组织地址所在的国家/地区名称。 |
 | countryLetterCode | String | 组织所在的国家/地区缩写。 |
 | createdDateTime | DateTimeOffset | 组织的创建时间戳。 值无法修改，并在组织创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 | deletedDateTime | DateTimeOffset | 表示采用 ISO 8601 格式创建 Azure AD 的日期和时间，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
-| createdDateTime | DateTimeOffset | 组织的创建时间戳。 值无法修改，并在组织创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 | displayName | String | 租户的显示名称。 |
 | id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
 | isMultipleDataLocationsForServicesEnabled | 布尔值 | `true` 如果组织已启用多异地; **未** 多地理"则显示 false 信息; **null** （默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
@@ -52,7 +51,7 @@ ms.locfileid: "50952513"
 | onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 | onPremisesSyncEnabled | Boolean | `true` 是否此对象从本地目录同步; `false` 是否此对象最初从本地目录同步，但不再同步。 可为空。 `null` 如果此对象从未从本地目录（默认）进行同步。 |
 | postalCode | String | 组织地址的邮政编码。 |
-| preferredLanguage | String | 组织的首选语言。 应遵循 ISO 639-1 代码;例如， `en`。 |
+| preferredLanguage | String | 组织的首选语言。 应遵循 ISO 639-1 代码；例如，`en`。 |
 | privacyProfile | [privacyProfile](privacyprofile.md) | 组织的隐私配置文件。 |
 | provisionedPlans | [ProvisionedPlan](provisionedplan.md) 集合 | 不可为 null。 |
 | securityComplianceNotificationMails | String collection ||
@@ -67,7 +66,7 @@ ms.locfileid: "50952513"
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) 集合| 用于管理基于证书的身份验证配置的导航属性。 只能在集合中创建 certificateBasedAuthConfiguration 的单个实例。  |
 |extensions|[扩展](extension.md)集合|为组织定义的开放扩展集合。只读。可为 Null。|
-|organizationalbranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) 集合| 为组织打造品牌。 可为 Null。|
+|organizationalbranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) 集合| 为组织打造品牌。可以为 null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

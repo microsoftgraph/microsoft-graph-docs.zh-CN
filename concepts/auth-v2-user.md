@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: dfa698c43a9870f4f3c1521dd565404b319d0f6f
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: 009882486b8d9cf734438487039fe32c3da6cb05
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100091"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703606"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
@@ -40,13 +40,13 @@ ms.locfileid: "52100091"
 
 ## <a name="2-get-authorization"></a>2. 获取授权
 
-首先是从多个 OpenID Connect 获取访问令牌，然后 OAuth 2.0 流会将用户重定向到 Microsoft 标识平台 `/authorize` 终结点。 Azure AD 将允许用户登录并确保其同意应用请求的权限。 在授权代码授予流中，获得同意后，Azure AD 将向你的应用返回一个授权代码，它可在 Microsoft 标识平台 `/token` 终结点处兑换访问令牌。
+对于许多 OpenID Connect 和 OAuth 2.0 流，获取访问令牌的第一步是将用户重定向到 Microsoft 标识平台 `/authorize` 端点。Azure AD 将允许用户登录并确保其同意应用请求的权限。在授权代码授予流中，一旦获得同意，Azure AD 就会将 authorization_code 返回到应用，它可以在 Microsoft 标识平台 `/token` 端点上兑换为访问令牌。
 
 ### <a name="authorization-request"></a>授权请求
 
 以下示例显示了对 `/authorize` 终结点的请求示例。
 
-借助 Microsoft 标识平台终结点，通过 `scope` 参数请求权限。 在本例中，所请求的 Microsoft Graph 权限可用于 _User.Read_ 和 _Mail.Read_，从而让应用能够读取已登录用户的个人资料和邮件。 已请求 _脱机\_访问_ 权限，这样应用就可获取刷新令牌，后者可用于在当前访问令牌过期时获取新的令牌。
+通过 Microsoft 标识平台端点，使用 `scope` 参数请求权限。在此示例中，所请求的 Microsoft Graph 权限可用于 _User.Read_ 和 _Mail.Read_，这会允许应用读取已登录用户的个人资料和邮件。已请求 _脱机\_访问_ 权限，因此应用可以获取刷新令牌，此令牌可用于在当前令牌过期后获取新的访问令牌。
 
 ```
 // Line breaks for legibility only
@@ -66,7 +66,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | client_id     | 必需    | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                                                                                                                                                                                                                   |
 | response_type | 必需    | 必须包括授权代码流的 `code`。                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | redirect_uri  | 建议 | 你的应用的 redirect_uri，你可以在其中通过应用发送并接收身份验证响应。它必须完全匹配你在应用注册门户中注册的 redirect_uris 之一，除了它必须采用 URL 编码。对于本机和移动应用，应使用默认值 `https://login.microsoftonline.com/common/oauth2/nativeclient`。                                                                                                                                       |
-| 范围         | 必需    | 由空格分隔的希望用户同意的 Microsoft Graph 权限列表。这还可能包括 OpenID 范围。                                                                                                                                                                                                                                                                                                                                                                    |
+| 范围         | 必需    | 由空格分隔的希望用户同意的 Microsoft Graph 权限列表。 `offline_access` 范围表明应用需要刷新令牌来长期访问资源。 也可以包括 OpenID 范围。                                                                                                                                                                                                                                                                                                                                                                  |
 | response_mode | 建议 | 指定用于将结果令牌发送回应用的方法。可以是 `query` 或 `form_post`。                                                                                                                                                                                                                                                                                                                                                                                  |
 | 状态         | 建议 | 请求中包含的值将在令牌响应中返回。它可以是你希望的任何内容的字符串。随机生成的唯一值通常用于[防止跨网站请求伪造攻击](https://tools.ietf.org/html/rfc6749#section-10.12)。此状态还用于在发生身份验证请求前，对应用中的用户状态信息进行编码（如它们所在的页面或视图上）。                                     |
 
@@ -74,7 +74,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ### <a name="consent-experience"></a>同意体验
 
-此时，用户将需要输入其凭据才能向 Microsoft 进行身份验证。 Microsoft 标识平台 v2.0 终结点还将确保用户已同意 `scope` 查询参数中指示的权限。  如果用户未同意上述任何权限，以及管理员之前未代表组织中的所有用户授予同意，则他们需要同意所需权限。
+在这种情况下，将要求用户输入其凭据以使用 Microsoft 进行身份验证。Microsoft 标识平台 v2.0 端点还将确保用户已同意 `scope` 查询参数中指示的权限。如果用户并不同意任何这些权限，且管理员此前未代表组织内的所有用户表示同意，Azure AD 将提示用户同意所需权限。
 
 下面是为 Microsoft 帐户用户呈现的同意对话框示例。
 
@@ -251,11 +251,11 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 - [本机/移动应用](/azure/active-directory/develop/scenario-mobile-overview)
 - [Web 应用](/azure/active-directory/develop/scenario-web-app-call-api-overview)
 - [单页应用 (SPA)](/azure/active-directory/develop/scenario-spa-overview)
-- [后端 Web API](/azure/active-directory/develop/scenario-web-app-call-api-overview)：例如，在本机应用等客户端应用在 Web API 后端实现功能的情况下。 通过 Microsoft 标识平台终结点，客户端应用和后端 Web API 必须具有相同的应用程序 ID。
+- [后端 Web API](/azure/active-directory/develop/scenario-web-app-call-api-overview)：例如，在如本机应用这样的客户端应用场景中，实现 Web API 后端中的功能。使用 Microsoft 标识平台终结点，客户端应用和后端 Web API 必须都具有相同的应用程序 ID。
 
 要详细了解 Microsoft 标识平台终结点支持的应用方案，请参阅[应用方案和身份验证流程](/azure/active-directory/develop/authentication-flows-app-scenarios)。
 
-> **请注意**：Microsoft 标识平台终结点当前不支持通过独立的 Web API 调用 Microsoft Graph。 在此情况下，需要使用 Azure AD 终结点。
+> **请注意**: 从独立 Web API 调用 Microsoft Graph 目前不受 Microsoft 标识平台端点支持。在这种场景下，需要使用 Azure AD 端点。
 
 若要详细了解如何代表用户从 Microsoft标识平台终结点获取访问 Microsoft Graph 的权限：
 
@@ -280,4 +280,5 @@ Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终
 
 ## <a name="see-also"></a>另请参阅
 
-有关 Azure 应用服务上托管的 Web 应用调用 Microsoft Graph 作为用户的示例，请参阅[教程：从安全应用访问作为用户的 Microsoft Graph](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user)。 了解如何向 Web 应用授予委派权限、配置应用服务以获取访问令牌，以及如何从 Web 应用为登录用户调用 Microsoft Graph。
+- 有关 Azure 应用服务上托管的 Web 应用调用 Microsoft Graph 作为用户的示例，请参阅[教程：从安全应用访问作为用户的 Microsoft Graph](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user)。 了解如何向 Web 应用授予委派权限、配置应用服务以获取访问令牌，以及如何从 Web 应用为登录用户调用 Microsoft Graph。
+- 有关使用 Microsoft 标识平台保护不同应用程序类型的示例，请查看 [Microsoft 标识平台代码示例（v2.0 终结点）](/azure/active-directory/develop/sample-v2-code)。

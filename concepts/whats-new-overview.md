@@ -26,7 +26,7 @@ ms.locfileid: "52645330"
 使用 [authorizationPolicy](/graph/api/resources/authorizationpolicy) 的 **guestUserRoleId** 属性，获取或更新来宾用户的角色。
 
 ### <a name="mail"></a>邮件
-- [创建草稿并以 MIME 格式发送 Outlook 邮件](outlook-send-mime-message.md)，附加 S/MIME 数字签名，并以 S/MIME 加密邮件内容。
+- [创建草稿并以 MIME 格式发送 Outlook 邮件](outlook-send-mime-message.md)，附加 S/MIME 数字签名，并用 S/MIME 加密邮件内容。
 - 通过[设置 isHidden 属性](/graph/api/user-post-mailfolders#example)，将 [mailFolder](/graph/api/resources/mailfolder) 创建为[隐藏文件夹](/graph/api/resources/mailfolder#hidden-mail-folders)。
 
 ### <a name="microsoft-graph-toolkit"></a>Microsoft Graph 工具包
@@ -41,8 +41,8 @@ Azure AD 预配服务和其相关属性执行的向[列表](/graph/api/provision
 ## <a name="may-2021-new-in-preview-only"></a>2021 年 5 月：仅限预览版新增功能
 
 ### <a name="connecting-external-content"></a>连接外部内容
-- 设计连接器时，请注意[实施和操作限制](connecting-external-content-api-limits.md)。
-- 尝试使用带有 [Postman 的连接器 API](connecting-external-content-connectors-api-postman.md)。
+- 设计连接器时，请注意[实施和运行限制](connecting-external-content-api-limits.md)。
+- 尝试[将 Postman 和连接器 API 一起使用](connecting-external-content-connectors-api-postman.md)。
 
 ### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
 请求最小特权应用程序权限`CloudPC.Read.All`或`CloudPC.ReadWrite.All`以下资源的访问方法：
@@ -52,8 +52,8 @@ Azure AD 预配服务和其相关属性执行的向[列表](/graph/api/provision
   - 读写操作和 [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) 的[分配](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true)方法。
 
 ### <a name="education"></a>教育版
-- [设置 SharePoint 资源文件夹](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true)，以将所有基于文件的资源上​​传和存储在同一位置，以进行 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true)。
-- [设置 SharePoint 资源文件夹](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true)，以将所有基于文件的资源（例如 Word 或 Excel 文件）上传和存储在同一位置，以进行 [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true)。
+- [设置 SharePoint 资源文件夹](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true)，以在同一位置上​​传和存储所有基于文件的资源，从而进行 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true)。
+- [设置 SharePoint 资源文件夹](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true)，以在同一位置上传和存储所有基于文件的资源（例如 Word 或 Excel 文件），从而进行 [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 - 通过[筛选已登录用户](/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta&preserve-view=true)获取一批 [accessPackageAssignment](/graph/api/resources/accessPackageAssignment?view=graph-rest-beta&preserve-view=true) 资源。

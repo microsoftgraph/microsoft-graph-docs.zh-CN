@@ -1,6 +1,6 @@
 ---
 title: 创建邮件
-description: 创建采用 JSON 或 MIME 格式的新邮件的草稿。
+description: 采用 JSON 或 MIME 格式创建新邮件的草稿。
 localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
@@ -16,23 +16,23 @@ ms.locfileid: "52645631"
 
 命名空间：microsoft.graph
 
-使用 JSON 或 MIME [邮件](../resources/message.md) 草稿。
+采用 JSON 或 MIME 格式创建新[邮件](../resources/message.md)的草稿。
 
 使用 JSON 格式时，可以：
-- 包括 **邮件** 的[附件](../resources/attachment.md)。
-- [更新](../api/message-update.md)草稿以将内容添加到 **正文**，或更改其他邮件属性。
+- 包含 [附件](../resources/attachment.md)到 **邮件** 中。
+- 随后 [更新](../api/message-update.md)草稿以将内容添加到 **正文**，或更改其他邮件属性。
 
 使用 MIME 格式时：
 - 提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。
 - 向 MIME 内容添加任何附件和 S/MIME 属性。
 
-默认情况下，此操作将草稿保存在"草稿"文件夹中。
+默认情况下，此操作将草稿保存在“草稿”文件夹中。
 
 在后续操作中[发送](/graph/api-reference/beta/api/message-send.md)草稿消息。
 
-或者， [通过一次操作发送新邮件](../api/user-sendmail.md) ，或创建一个草稿 [转发](../api/message-createforward.md)、 [答复](../api/message-createreply.md) 和 [答复所有邮件](../api/message-createreplyall.md) 现有邮件。
+或者，通过一次操作[发送新邮件](../api/user-sendmail.md) ，或创建一个草稿以[转发](../api/message-createforward.md)、[答复](../api/message-createreply.md)和[答复所有](../api/message-createreplyall.md)现有邮件。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 调用此 API 需要下列权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -54,12 +54,12 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Length | number | 0。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 对 `application/json` JSON 对象使用对象， `text/plain` MIME 内容使用对象链接。 |
+| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 对 JSON 对象使用 `application/json`，对 MIME 内容使用 `text/plain`。 |
 
 ## <a name="request-body"></a>请求正文
-使用JSON格式时，请提供[消息](../resources/message.md)对象的JSON表示形式。
+使用 JSON 格式时，请提供[消息](../resources/message.md)对象的 JSON 表示形式。
 
-当以 MIME 格式指定正文时，请提供 MIME 内容与适用的 Internet 邮件头（"收件人"、"抄送"、"密件抄送"、"主题"）所有内容在请求正文中编码为 **base64** 格式。
+当指定 MIME 格式的正文时，请提供 MIME 内容与适用的 Internet 邮件头（“收件人”、“抄送”、“密件抄送”、“主题”）所有内容在请求正文中编码为 **base64** 格式。
 
 由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
 
@@ -67,7 +67,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
-如果请求正文包含错误的 MIME 内容，此方法将返回错误 `400 Bad request` 以下错误消息："MIME 内容无效的 base64 字符串"。
+如果请求正文包含错误的 MIME 内容，此方法将返回 `400 Bad request` 和以下错误消息：“无效的 base64 字符串 MIME 内容”。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-create-a-new-message-draft-using-json-format"></a>示例 1：使用 JSON 格式创建新邮件草稿

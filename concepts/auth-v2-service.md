@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 004b133c458db4bf7b0ab5644dcd4b470b68d95f
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 86bbe3af472ff2f5a33a951f61f1f0b3d6a46801
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882304"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703634"
 ---
 # <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 
@@ -137,7 +137,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 |:--------------|:----------|:------------
 | 租户        | 必需  | 需要从中请求权限的目录租户。它可以 GUID 或友好名称格式显示。
 | client_id     | 必需  | 注册应用时由 [Azure 应用注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配的应用程序 ID。
-| 范围         | 必需  | 为此请求中的 `scope` 参数传递的值应为所需资源的资源标识符（应用程序 ID URI），带有 `.default` 后缀。 对于 Microsoft Graph，值为 `https://graph.microsoft.com/.default`。 通过该值，Microsoft 标识平台终结点可知晓在你为应用分配的所有应用程序权限中，它应对与你要使用的资源关联的权限颁发令牌。
+| 范围         | 必需  | 为此请求中的 `scope` 参数传递的值应为所需资源的资源标识符（应用程序 ID URI），带有 `.default` 后缀。 对于 Microsoft Graph，值为 `https://graph.microsoft.com/.default`。 通过该值，Microsoft 标识平台终结点可知晓在你为应用分配的所有应用程序权限中，它应对与你要使用的资源关联的权限颁发令牌。 也可以使用 `offline_access` 范围来表明应用所需的刷新令牌来长期访问资源。
 | client_secret | 必需  | 你在应用注册门户中为应用生成的应用程序密码。
 | grant_type    | 必需  | 必须是 `client_credentials`。
 
@@ -207,7 +207,7 @@ Content-Length: 407
 - 在服务器上运行的没有登录用户的[后台服务（守护程序）](/azure/active-directory/develop/scenario-daemon-overview)。
 - 具有登录用户但仍以它们自己的标识调用 Microsoft Graph 的应用；例如，使用需要具有比登录用户所拥有的提升权限更多权限的功能。
 
-通过自有标识调用 Microsoft Graph 的应用使用 OAuth 2.0 客户端凭据授予流向 Azure AD 进行身份验证并获取令牌。 对于 Microsoft 标识平台终结点，可在下述资源中进一步查看此方案：
+使用它们自己的标识调用 Microsoft Graph 的应用使用 OAuth 2.0 客户端凭据授予流通过 Azure AD 进行身份验证并获取访问令牌。对于 Microsoft 标识平台端点，可以使用以下资源进一步了解此方案:
 
 - 有关还包含错误响应的客户端凭据授予流的更完整的处理，请参阅 [Azure Active Directory v2.0 和 OAuth 2.0 客户端凭据流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)。
 - 有关从服务中调用 Microsoft Graph 的示例，请参阅 GitHub 上的 [v2.0 守护程序示例](https://github.com/Azure-Samples/active-directory-dotnet-daemon-v2)。
@@ -218,7 +218,7 @@ Content-Length: 407
 Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终结点和使用 Azure AD 终结点之间存在[诸多区别](/azure/active-directory/develop/azure-ad-endpoint-comparison)。 使用 Azure AD 终结点时：
 
 - 如果你的应用是多租户的，则必须在 [Azure 门户](https://portal.azure.com)中将其明确配置为“多租户”。
-- 没有管理员同意终结点 (`/adminconsent`)。 你的应用转而可在运行时期间请求管理员同意，方式是向授权请求添加 `prompt=admin_consent` 参数。 有关详细信息，请参阅 [将应用程序与 Azure Active Directory 相集成](/azure/active-directory/develop/active-directory-integrating-applications)中的 **在运行时引发 Azure AD 同意框架**。
+- 没有管理员同意终结点 (`/adminconsent`)。但是，应用可以在运行时通过将 `prompt=admin_consent` 参数添加到授权请求来请求管理员同意。有关详细信息，请参阅 **在运行时触发 Azure AD 同意框架** 在 [ 将应用程序与 Azure Active Directory 集成](/azure/active-directory/develop/active-directory-integrating-applications)。
 - 授权和令牌请求中的参数不相同。例如，Azure AD 终结点请求中没有 `scope` 参数；但是，`resource` 参数可用于指定为其请求的授权（用于管理员同意）或令牌的资源 (`resource=https://graph.microsoft.com`) 的 URI。
 
 可查看下述资源进一步了解此方案：
@@ -226,6 +226,8 @@ Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终
 - 要了解如何将 Microsoft 标识平台与不同类型的应用结合使用，请参阅 [Microsoft 标识平台文档](/azure/active-directory/develop/active-directory-developers-guide)中的 **开始使用** 链接。 该指南包含众多链接，可通过它们查看 Microsoft 标识平台支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
 - 要了解可与 Microsoft 标识平台终结点结合使用的 Microsoft 身份验证库 (MSAL) 和服务器中间件，请参阅 [Microsoft 身份验证库](/azure/active-directory/develop/active-directory-authentication-libraries)。
 
+
 ## <a name="see-also"></a>另请参阅
 
-有关 Azure 应用服务上托管的 Web 应用调用 Microsoft Graph 作为应用程序（使用托管标识）的示例，请参阅[教程：从安全应用访问作为应用的 Microsoft Graph](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app)。 本教程介绍如何在 web 应用上创建系统分配的托管标识、向托管标识添加 Microsoft Graph API 权限以及调用 Microsoft Graph。
+- 有关 Azure 应用服务上托管的 Web 应用调用 Microsoft Graph 作为应用程序（使用托管标识）的示例，请参阅[教程：从安全应用访问作为应用的 Microsoft Graph](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app)。 本教程介绍如何在 web 应用上创建系统分配的托管标识、向托管标识添加 Microsoft Graph API 权限以及调用 Microsoft Graph。
+- 有关使用 Microsoft 标识平台保护不同应用程序类型的示例，请查看 [Microsoft 标识平台代码示例 (v2.0 终结点)](/azure/active-directory/develop/sample-v2-code)。

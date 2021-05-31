@@ -26,10 +26,10 @@ ms.locfileid: "52645617"
 
 此方法将邮件保存在 **“已发送邮件”** 文件夹中。
 
-或者， [创建草稿邮件](../api/user-post-messages.md) 稍后发送。
+或者，[创建草稿邮件](../api/user-post-messages.md)稍后发送。
 
-## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -50,23 +50,23 @@ POST /users/{id | userPrincipalName}/sendMail
 | 名称       | 类型 | 说明| 
 |:---------------|:--------|:----------
 | Authorization  | string  | Bearer {token}。必需。|
-| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 对 `application/json` JSON 对象使用对象， `text/plain` MIME 内容使用对象链接。|
+| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 对 JSON 对象使用 `application/json`，对 MIME 内容使用 `text/plain`。|
 
 ## <a name="request-body"></a>请求正文
-使用 JSON 格式时，为 JSON 对象提供以下参数。
+使用 JSON 格式时，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |描述|
 |:---------------|:--------|:----------|
 |message|[Message](../resources/message.md)|要发送的邮件。必需。|
 |SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。 |
 
-当以MIME格式指定正文时，请在请求正文中提供MIME内容作为 **base64编码的字符串**。
+当指定 MIME 格式的正文时，请在请求正文中提供 MIME 内容为 **base64 编码的字符串**。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-如果请求正文包含错误的 MIME 内容，此方法将返回错误 `400 Bad request` 以下错误消息："MIME 内容无效的 base64 字符串"。
+如果请求正文包含错误的 MIME 内容，此方法将返回 `400 Bad request` 和以下错误消息：“无效的 base64 字符串 MIME 内容”。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-send-a-new-email-using-json-format"></a>示例 1：使用 JSON 格式发送新电子邮件
@@ -141,7 +141,7 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-2-create-a-message-with-custom-internet-message-headers-and-send-the-message"></a>示例 2：使用自定义 Internet 邮件头创建邮件并发送邮件
+### <a name="example-2-create-a-message-with-custom-internet-message-headers-and-send-the-message"></a>示例 2：创建带自定义 Internet 邮件头的邮件并发送邮件
 #### <a name="request"></a>请求
 
 
@@ -214,7 +214,7 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3--create-a-message-with-a-file-attachment-and-send-the-message"></a>示例 3：使用文件附件创建邮件并发送邮件
+### <a name="example-3--create-a-message-with-a-file-attachment-and-send-the-message"></a>示例 3：创建带文件附件的邮件并发送邮件
 #### <a name="request"></a>请求
 
 
