@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a3d92ecaef12cd9581add7f8c3bdd096edf205e7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e9f2d549cef274a536575a2671e454198dbb9f5f
+ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433498"
+ms.lasthandoff: 05/31/2021
+ms.locfileid: "52709498"
 ---
 # <a name="delete-unifiedroledefinition"></a>删除 unifiedRoleDefinition
 
@@ -18,22 +18,34 @@ ms.locfileid: "50433498"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) 对象。
+删除 RBAC 提供程序的 [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) 对象。
 
-## <a name="permissions"></a>Permissions
+目前支持以下 RBAC 提供程序：
+- Intune (设备) 
+- Azure AD (目录)  
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+> [!NOTE]
+> 云电脑 RBAC 提供商当前仅支持[列表和](rbacapplication-list-roledefinitions.md)[获取](unifiedroledefinition-get.md)操作。
 
-| 权限类型                        | 权限（从最低特权到最高特权） |
-|:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | RoleManagement.ReadWrite.Directory |
+## <a name="permissions"></a>权限
+
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。 
+
+|支持的提供程序      | 委派（工作或学校帐户）  | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| 设备管理 | DeviceManagementRBAC.ReadWrite.All | 不支持。 | DeviceManagementRBAC.ReadWrite.All |
+| 目录 | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All | 不支持。| RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
+若要删除设备管理提供程序的角色定义，请运行：
 <!-- { "blockType": "ignored" } -->
+```http
+DELETE /roleManagement/deviceManagement/roleDefinitions/{id}
+```
 
+删除目录提供程序的角色定义：
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /roleManagement/directory/roleDefinitions/{id}
 
@@ -57,7 +69,7 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。
+以下示例删除目录提供程序的 **unifiedRoleDefinition。**
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

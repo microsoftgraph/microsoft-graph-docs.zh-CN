@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 92d02320b102cedf1cef95f6966d97d78ad341d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e5512205b346d1005b8ce51f3ab11afa4f95a9a2
+ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051002"
+ms.lasthandoff: 05/31/2021
+ms.locfileid: "52709502"
 ---
 # <a name="create-unifiedroledefinition"></a>创建 unifiedRoleDefinition
 
@@ -18,22 +18,34 @@ ms.locfileid: "52051002"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
+为 RBAC [提供程序创建新的 unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
+
+目前支持以下 RBAC 提供程序：
+- Intune (设备) 
+- Azure AD (目录)  
+
+> [!NOTE]
+> 云电脑 RBAC 提供商当前仅支持[列表和](rbacapplication-list-roledefinitions.md)[获取](unifiedroledefinition-get.md)操作。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。 
 
-| 权限类型                        | 权限（从最低特权到最高特权） |
-|:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | RoleManagement.ReadWrite.Directory |
+|支持的提供程序      | 委派（工作或学校帐户）  | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| 设备管理 | DeviceManagementRBAC.ReadWrite.All | 不支持。 | DeviceManagementRBAC.ReadWrite.All |
+| 目录 | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All | 不支持。| RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
+若要为设备管理提供程序创建角色定义，请运行：
 <!-- { "blockType": "ignored" } -->
+```http
+POST /roleManagement/deviceManagement/roleDefinitions
+```
 
+为目录提供程序创建角色定义：
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/directory/roleDefinitions
 ```
@@ -64,7 +76,7 @@ POST /roleManagement/directory/roleDefinitions
 
 ### <a name="request"></a>请求
 
-下面是创建自定义角色的示例。
+下面是为目录提供程序创建自定义角色的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
