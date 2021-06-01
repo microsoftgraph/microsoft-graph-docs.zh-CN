@@ -9572,6 +9572,29 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Assign
                     href: api/cloudpcprovisioningpolicy-assign.md
+              - name: 角色管理
+                href: resources/rolemanagement.md
+                items:
+                  - name: 角色定义
+                    href: resources/unifiedroledefinition.md
+                    items:
+                      - name: 列出
+                        href: api/rbacapplication-list-roledefinitions.md
+                      - name: 获取
+                        href: api/unifiedroledefinition-get.md
+                  - name: 角色分配多
+                    href: resources/unifiedroleassignmentmultiple.md
+                    items:
+                      - name: 列出
+                        href: api/rbacapplicationmultiple-list-roleassignments.md
+                      - name: 创建
+                        href: api/rbacapplicationmultiple-post-roleassignments.md
+                      - name: 获取
+                        href: api/unifiedroleassignmentmultiple-get.md
+                      - name: 更新
+                        href: api//unifiedroleassignmentmultiple-update.md
+                      - name: 删除
+                        href: api/unifiedroleassignmentmultiple-delete.md
           - name: 设备更新（预览）
             displayName: Windows updates
             items:
@@ -10551,9 +10574,9 @@ items:
                     href: resources/unifiedroleassignmentmultiple.md
                     items:
                       - name: 列出
-                        href: api/unifiedroleassignmentmultiple-list.md
+                        href: api/rbacapplicationmultiple-list-roleassignments.md
                       - name: 创建
-                        href: api/unifiedroleassignmentmultiple-post.md
+                        href: api/rbacapplicationmultiple-post-roleassignments.md
                       - name: 获取
                         href: api/unifiedroleassignmentmultiple-get.md
                       - name: 更新

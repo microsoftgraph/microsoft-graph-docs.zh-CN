@@ -2,14 +2,14 @@
 author: AshleyYangSZ
 ms.topic: include
 ms.date: 12/12/2020
-ms.openlocfilehash: c4624a8d8c66e5079a132238fa7687eba2fd9806
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6cd10e387113a9c551ae928c57202cd48732de36
+ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137831"
+ms.lasthandoff: 05/31/2021
+ms.locfileid: "52710141"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> 云电脑 API 处于预览阶段，当前仅适用于一组选定客户。
+> 云电脑 API 处于个人预览阶段，当前仅适用于一组选定客户。
