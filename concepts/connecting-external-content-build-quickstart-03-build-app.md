@@ -10,6 +10,9 @@
 
 !["配置新项目"部分屏幕截图](images/connectors-images/build7.png)
 
+> [!IMPORTANT]
+> 在移动到下一步之前，将ApplianceParts.csv文件复制到项目的根文件夹。
+
 ## <a name="add-nuget-packages"></a>添加 Nuget 程序包
 
 若要添加NuGet包，请右键单击"Project **解决方案"，** 然后选择"**在终端中打开"。**
@@ -26,6 +29,16 @@ dotnet add package Microsoft.Extensions.Configuration.UserSecrets --version 3.1.
 dotnet add package Microsoft.Graph.Beta --version 0.17.0-preview
 dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
+
+> [!TIP]
+> 如果 `add package` 命令失败，请检查 **项目的程序包** 源：
+> 1. 在"解决方案资源管理器"中选择项目。
+> 2. 转到工具> Nuget 程序包管理器 > 程序包管理器 设置。
+> 3. 检查程序包源，并确保 nuget.&#65279;作为程序包源安装。
+>     * 名称：nuget.&#65279;org
+>     *  源：https&#65279;：//api.nuget.org/v3/index.json
+
+<!---Used "&#65279;" to prevent auto-generated links --->
 
 ## <a name="add-azure-ad-authentication"></a>添加 Azure AD 身份验证
 
@@ -321,7 +334,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.IO;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     // The Microsoft Graph SDK serializes enumerations in camelCase.
     // The Microsoft Graph service currently requires the PropertyType enum
@@ -393,7 +406,7 @@ namespace PartsInventoryConnector.Graph
 
 3. 在 Microsoft Graph目录中创建一个名为 MicrosoftGraphHelper.cs 的新文件，将下面的代码放在该文件中。
 
-以下代码包含使用 **MicrosoftGraphServiceClient** 生成调用并将其发送到 Microsoft Graph 服务并处理响应的方法。
+    以下代码包含使用 **MicrosoftGraphServiceClient** 生成调用并将其发送到 Microsoft Graph 服务并处理响应的方法。
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -403,11 +416,11 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private MicrosoftGraphServiceClient _microsoftGraphClient;
+        private class MicrosoftGraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -434,7 +447,7 @@ using Microsoft.Graph;
 using PartsInventoryConnector.Authentication;
 using PartsInventoryConnector.Console;
 using PartsInventoryConnector.Data;
-using PartsInventoryConnector.Graph;
+using PartsInventoryConnector.MicrosoftGraph;
 using PartsInventoryConnector.Models;
 using System;
 using System.Collections.Generic;
@@ -580,7 +593,7 @@ namespace PartsInventoryConnector
 
 ## <a name="create-the-connection"></a>创建连接
 
-1. 在 **"microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在构造函数方法后添加 **以下** 代码。
+1. 在 **MicrosoftGraph** 下，打开 MicrosoftGraphHelper.cs 文件，在构造函数方法后添加 **以下** 代码。
 
 ```c
 #region Connections
@@ -630,7 +643,7 @@ private static async Task CreateConnectionAsync()
 
 ## <a name="register-schema"></a>注册架构
 
-1. 在 **"microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在构造函数方法后添加 **以下** 代码。
+1. 在 **MicrosoftGraph** 下，打开 MicrosoftGraphHelper.cs 文件，在构造函数方法后添加 **以下** 代码。
 
 ```c
 #region Schema

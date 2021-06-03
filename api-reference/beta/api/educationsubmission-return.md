@@ -1,31 +1,31 @@
 ---
-title: educationSubmission：返回
-description: 此操作使与此提交相关联的评分和反馈可供学生使用。
+title: educationSubmission： return
+description: 此操作可使学生获得与此提交相关的成绩和反馈。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2e8d4a9cf00a9d3018c102d4798e102fe66eeee5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ad7ba0669137644dbff212f23586389df380986
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955483"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732152"
 ---
-# <a name="educationsubmission-return"></a>educationSubmission：返回
+# <a name="educationsubmission-return"></a>educationSubmission： return
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作使与此提交相关联的评分和反馈可供学生使用。 这会将提交的状态从 "已提交" 更改为 "已返回"，并指示反馈已提供或已完成评分。 此操作仅可由教师完成。
+此操作可使学生获得与此提交相关的成绩和反馈。 这会将提交状态从"已提交"更改为"已返回"，并指示提供了反馈或评分已完成。 此操作仅能由教师执行。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments   |
+|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -33,7 +33,6 @@ ms.locfileid: "48955483"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |

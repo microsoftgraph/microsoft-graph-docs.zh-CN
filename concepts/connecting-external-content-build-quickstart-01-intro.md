@@ -13,7 +13,7 @@ Microsoft Graph 连接器允许你将你自己的数据添加到 Microsoft Graph
 
 ## <a name="prerequisites"></a>先决条件
 
-* 在Visual Studio计算机上安装带[.NET Core 3.1 SDK 的 2019](https://www.microsoft.com/net/download/core)版本。
+* 在Visual Studio计算机上安装带[.NET Core 3.1 SDK](https://www.microsoft.com/net/download/core)的[2019](https://visualstudio.microsoft.com/)版本。
 * 确保你有个人 Microsoft [帐户或](https://signup.live.com/)工作或学校帐户。
 * 使用下面的 [命令将实体框架核心](/ef/core/miscellaneous/cli/dotnet) 工具安装为全局工具：
 
@@ -22,4 +22,7 @@ Microsoft Graph 连接器允许你将你自己的数据添加到 Microsoft Graph
     ```
 
 * 安装用于更新 SQLite 数据库的工具。 例如，适用于 [SQLite 的 DB 浏览器](https://sqlitebrowser.org/)。
-* 从 **搜索ApplianceParts.csv**[示例存储库](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv)下载文件，并将其添加到 PartsInventoryConnector.csproj。
+* 从 **ApplianceParts.csv**[示例存储库下载文件](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv)。
+
+> [!TIP]
+> 从网站下载文件GitHub是转到项目的顶级。 在右侧绿色 **代码** 下载按钮中，选择"**下载 ZIP"。** ZIP 文件将包含存储库的内容。

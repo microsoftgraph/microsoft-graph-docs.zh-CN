@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 65545864f1aee0a7ffb53c0d1ee3f608c5eb171f
-ms.sourcegitcommit: ecf7867ef7957b847b7530089ce30e107750adac
+ms.openlocfilehash: fd636b36a6566b2612b6f87ff4fee6b1b8fcd91d
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698002"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732138"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
 
@@ -63,9 +63,9 @@ ms.locfileid: "52698002"
 
 默认情况下，将为整个组织启用项目见解。 你可以使用 Microsoft Graph PowerShell 模块来更改该设置并为组织中的所有人禁用项目见解。 
 > [!NOTE]
-> 更新方法需要其他 `User.ReadWrite` 权限。 若要创建带特定所需范围的 Microsoft Graph 会话，请使用以下命令并同意请求的权限。
+> 更新方法需要其他 `User.ReadWrite.All` 权限。 若要创建带特定所需范围的 Microsoft Graph 会话，请使用以下命令并同意请求的权限。
 > ```powershell
->    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
+>    Connect-MgGraph -Scopes "User.Read.All","User.ReadWrite.All"
 > ```
 
 使用以下命令，其中用 Azure Active Directory 租户 ID 替换 `$TenantId`，并指定 `-IsEnabledInOrganization` 为 `false`。
