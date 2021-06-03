@@ -1,22 +1,25 @@
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
-<span data-ttu-id="81cba-101">在此步骤中，你将创建一个 .NET Core 控制台应用。</span><span class="sxs-lookup"><span data-stu-id="81cba-101">In this step, you'll create a .NET Core console app.</span></span> <span data-ttu-id="81cba-102">之后，您将创建一个新连接，注册架构并同步项目。</span><span class="sxs-lookup"><span data-stu-id="81cba-102">After that you will create a new connection, register the schema, and sync the items.</span></span>
+<span data-ttu-id="a1ec6-101">在此步骤中，你将创建一个 .NET Core 控制台应用。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-101">In this step, you'll create a .NET Core console app.</span></span> <span data-ttu-id="a1ec6-102">之后，您将创建一个新连接，注册架构并同步项目。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-102">After that you will create a new connection, register the schema, and sync the items.</span></span>
 
-## <a name="create-a-net-core-console-app"></a><span data-ttu-id="81cba-103">创建 .NET Core 控制台应用</span><span class="sxs-lookup"><span data-stu-id="81cba-103">Create a .NET Core console app</span></span>
+## <a name="create-a-net-core-console-app"></a><span data-ttu-id="a1ec6-103">创建 .NET Core 控制台应用</span><span class="sxs-lookup"><span data-stu-id="a1ec6-103">Create a .NET Core console app</span></span>
 
-1. <span data-ttu-id="81cba-104">启动 Visual Studio 2019，然后转到"**文件**  >  **""新建**  >  **Project"。**</span><span class="sxs-lookup"><span data-stu-id="81cba-104">Launch Visual Studio 2019 and go to **File** > **New** > **Project**.</span></span>
-2. <span data-ttu-id="81cba-105">选择控制台 **应用 (.NET 核心)** 模板，然后选择下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="81cba-105">Select the **Console App (.NET Core)** template, and select **Next**.</span></span>
-3. <span data-ttu-id="81cba-106">输入Project **名称**："PartsInventoryConnector"，然后选中"将解决方案和项目放置在同一目录中 **"的** 复选框，然后选择"创建 **"，如下** 图所示。</span><span class="sxs-lookup"><span data-stu-id="81cba-106">Enter the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.</span></span>
+1. <span data-ttu-id="a1ec6-104">启动 Visual Studio 2019，然后转到"**文件**  >  **""新建**  >  **Project"。**</span><span class="sxs-lookup"><span data-stu-id="a1ec6-104">Launch Visual Studio 2019 and go to **File** > **New** > **Project**.</span></span>
+2. <span data-ttu-id="a1ec6-105">选择控制台 **应用 (.NET 核心)** 模板，然后选择下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-105">Select the **Console App (.NET Core)** template, and select **Next**.</span></span>
+3. <span data-ttu-id="a1ec6-106">输入Project **名称**："PartsInventoryConnector"，然后选中"将解决方案和项目放置在同一目录中 **"的** 复选框，然后选择"创建 **"，如下** 图所示。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-106">Enter the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.</span></span>
 
 !["配置新项目"部分屏幕截图](images/connectors-images/build7.png)
 
-## <a name="add-nuget-packages"></a><span data-ttu-id="81cba-108">添加 Nuget 程序包</span><span class="sxs-lookup"><span data-stu-id="81cba-108">Add NuGet packages</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="a1ec6-108">在移动到下一步之前，将ApplianceParts.csv文件复制到项目的根文件夹。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-108">Before moving to the next step, copy the ApplianceParts.csv file to the root folder of the project.</span></span>
 
-<span data-ttu-id="81cba-109">若要添加NuGet包，请右键单击"Project **解决方案"，** 然后选择"**在终端中打开"。**</span><span class="sxs-lookup"><span data-stu-id="81cba-109">To add NuGet packages, first right-click **Project Solution** and select **Open in Terminal**.</span></span>
+## <a name="add-nuget-packages"></a><span data-ttu-id="a1ec6-109">添加 Nuget 程序包</span><span class="sxs-lookup"><span data-stu-id="a1ec6-109">Add NuGet packages</span></span>
+
+<span data-ttu-id="a1ec6-110">若要添加NuGet包，请右键单击"Project **解决方案"，** 然后选择"**在终端中打开"。**</span><span class="sxs-lookup"><span data-stu-id="a1ec6-110">To add NuGet packages, first right-click **Project Solution** and select **Open in Terminal**.</span></span>
 
 ![显示"打开终端"选项的屏幕截图](images/connectors-images/build8.png)
 
-<span data-ttu-id="81cba-111">接下来，在开发人员命令提示符中运行以下 CLI 命令。</span><span class="sxs-lookup"><span data-stu-id="81cba-111">Next, run the following CLI commands in the developer command prompt.</span></span>
+<span data-ttu-id="a1ec6-112">接下来，在开发人员命令提示符中运行以下 CLI 命令。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-112">Next, run the following CLI commands in the developer command prompt.</span></span>
 
 ```dotnetcli
 dotnet add package CsvHelper --version 12.1.2
@@ -27,12 +30,22 @@ dotnet add package Microsoft.Graph.Beta --version 0.17.0-preview
 dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
 
-## <a name="add-azure-ad-authentication"></a><span data-ttu-id="81cba-112">添加 Azure AD 身份验证</span><span class="sxs-lookup"><span data-stu-id="81cba-112">Add Azure AD authentication</span></span>
+> [!TIP]
+> <span data-ttu-id="a1ec6-113">如果 `add package` 命令失败，请检查 **项目的程序包** 源：</span><span class="sxs-lookup"><span data-stu-id="a1ec6-113">If the `add package` command fails, check the **Package Source** of your project:</span></span>
+> 1. <span data-ttu-id="a1ec6-114">在"解决方案资源管理器"中选择项目。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-114">Select the project in the Solution Explorer.</span></span>
+> 2. <span data-ttu-id="a1ec6-115">转到工具> Nuget 程序包管理器 > 程序包管理器 设置。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-115">Go to Tools > Nuget Package Manager > Package Manager Settings.</span></span>
+> 3. <span data-ttu-id="a1ec6-116">检查程序包源，并确保 nuget.&#65279;作为程序包源安装。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-116">Check the Package Sources, and make sure nuget.&#65279;org is installed as package source.</span></span>
+>     * <span data-ttu-id="a1ec6-117">名称：nuget.&#65279;org</span><span class="sxs-lookup"><span data-stu-id="a1ec6-117">Name: nuget.&#65279;org</span></span>
+>     *  <span data-ttu-id="a1ec6-118">源：https&#65279;：//api.nuget.org/v3/index.json</span><span class="sxs-lookup"><span data-stu-id="a1ec6-118">Source: https&#65279;://api.nuget.org/v3/index.json</span></span>
 
-<span data-ttu-id="81cba-113">需要此身份验证才能获取必要的 OAuth 访问令牌来调用连接器 API。</span><span class="sxs-lookup"><span data-stu-id="81cba-113">This authentication is required to get the necessary OAuth access token to call the connectors API.</span></span>
+<!---Used "&#65279;" to prevent auto-generated links --->
 
-1. <span data-ttu-id="81cba-114">在 **PartsInventoryConnector** 目录中新建一个名为 **Authentication** 的目录。</span><span class="sxs-lookup"><span data-stu-id="81cba-114">Create a new directory named **Authentication** in the **PartsInventoryConnector** directory.</span></span>
-2. <span data-ttu-id="81cba-115">在 Authentication 目录中新建一个名为 ClientCredentialAuthProvider.cs 的文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="81cba-115">Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs and place the following code in that file:</span></span>
+## <a name="add-azure-ad-authentication"></a><span data-ttu-id="a1ec6-119">添加 Azure AD 身份验证</span><span class="sxs-lookup"><span data-stu-id="a1ec6-119">Add Azure AD authentication</span></span>
+
+<span data-ttu-id="a1ec6-120">需要此身份验证才能获取必要的 OAuth 访问令牌来调用连接器 API。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-120">This authentication is required to get the necessary OAuth access token to call the connectors API.</span></span>
+
+1. <span data-ttu-id="a1ec6-121">在 **PartsInventoryConnector** 目录中新建一个名为 **Authentication** 的目录。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-121">Create a new directory named **Authentication** in the **PartsInventoryConnector** directory.</span></span>
+2. <span data-ttu-id="a1ec6-122">在 Authentication 目录中新建一个名为 ClientCredentialAuthProvider.cs 的文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="a1ec6-122">Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs and place the following code in that file:</span></span>
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -102,10 +115,10 @@ namespace PartsInventoryConnector.Authentication
 }
 ```
 
-## <a name="add-user-experience"></a><span data-ttu-id="81cba-116">添加用户体验</span><span class="sxs-lookup"><span data-stu-id="81cba-116">Add user experience</span></span>
+## <a name="add-user-experience"></a><span data-ttu-id="a1ec6-123">添加用户体验</span><span class="sxs-lookup"><span data-stu-id="a1ec6-123">Add user experience</span></span>
 
-1. <span data-ttu-id="81cba-117">在 **PartsInventoryConnector** 目录中新建一个名为 Console **的目录**。</span><span class="sxs-lookup"><span data-stu-id="81cba-117">Create a new directory in the **PartsInventoryConnector** directory named **Console**.</span></span>
-2. <span data-ttu-id="81cba-118">在控制台目录中新建一个名为MenuChoice.cs 的文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="81cba-118">Create a new file in the **Console** directory named MenuChoice.cs and place the following code in that file:</span></span>
+1. <span data-ttu-id="a1ec6-124">在 **PartsInventoryConnector** 目录中新建一个名为 Console **的目录**。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-124">Create a new directory in the **PartsInventoryConnector** directory named **Console**.</span></span>
+2. <span data-ttu-id="a1ec6-125">在控制台目录中新建一个名为MenuChoice.cs 的文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="a1ec6-125">Create a new file in the **Console** directory named MenuChoice.cs and place the following code in that file:</span></span>
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -124,10 +137,10 @@ namespace PartsInventoryConnector.Console
 }
 ```
 
-## <a name="set-up-data-model"></a><span data-ttu-id="81cba-119">设置数据模型</span><span class="sxs-lookup"><span data-stu-id="81cba-119">Set up data model</span></span>
+## <a name="set-up-data-model"></a><span data-ttu-id="a1ec6-126">设置数据模型</span><span class="sxs-lookup"><span data-stu-id="a1ec6-126">Set up data model</span></span>
 
-1. <span data-ttu-id="81cba-120">在 **PartsInventoryConnector** 目录中新建一个名为 Models **的目录**。</span><span class="sxs-lookup"><span data-stu-id="81cba-120">Create a new directory in the **PartsInventoryConnector** directory named **Models**.</span></span>
-2. <span data-ttu-id="81cba-121">在 Models 目录中创建一个名为 AppliancePart.cs 的新文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="81cba-121">Create a new file in the **Models** directory named AppliancePart.cs, and place the following code in that file:</span></span>
+1. <span data-ttu-id="a1ec6-127">在 **PartsInventoryConnector** 目录中新建一个名为 Models **的目录**。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-127">Create a new directory in the **PartsInventoryConnector** directory named **Models**.</span></span>
+2. <span data-ttu-id="a1ec6-128">在 Models 目录中创建一个名为 AppliancePart.cs 的新文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="a1ec6-128">Create a new file in the **Models** directory named AppliancePart.cs, and place the following code in that file:</span></span>
 
 
 ```c
@@ -176,7 +189,7 @@ namespace PartsInventoryConnector.Models
 
 
 
-3. <span data-ttu-id="81cba-122">在 Models 目录中创建一个名为 ApplianceDbContext.cs 的新文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="81cba-122">Create a new file in the **Models** directory named ApplianceDbContext.cs, and place the following code in that file:</span></span>
+3. <span data-ttu-id="a1ec6-129">在 Models 目录中创建一个名为 ApplianceDbContext.cs 的新文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="a1ec6-129">Create a new file in the **Models** directory named ApplianceDbContext.cs, and place the following code in that file:</span></span>
 
 ```c
 using Microsoft.Data.Sqlite;
@@ -257,8 +270,8 @@ namespace PartsInventoryConnector.Models
 }
 ```
 
-4. <span data-ttu-id="81cba-123">在 **PartsInventoryConnector** 目录中创建一个名为 **Data** 的新目录。</span><span class="sxs-lookup"><span data-stu-id="81cba-123">Create a new directory named **Data** in the **PartsInventoryConnector** directory.</span></span>
-5. <span data-ttu-id="81cba-124">在名为 CsvDataLoader.cs 的数据目录中创建一个新文件，将以下代码放在该文件中： </span><span class="sxs-lookup"><span data-stu-id="81cba-124">Create a new file in the **Data** directory named CsvDataLoader.cs and place the following code in that file:</span></span>
+4. <span data-ttu-id="a1ec6-130">在 **PartsInventoryConnector** 目录中创建一个名为 **Data** 的新目录。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-130">Create a new directory named **Data** in the **PartsInventoryConnector** directory.</span></span>
+5. <span data-ttu-id="a1ec6-131">在名为 CsvDataLoader.cs 的数据目录中创建一个新文件，将以下代码放在该文件中： </span><span class="sxs-lookup"><span data-stu-id="a1ec6-131">Create a new file in the **Data** directory named CsvDataLoader.cs and place the following code in that file:</span></span>
 
 ```c
 using CsvHelper;
@@ -308,10 +321,10 @@ namespace PartsInventoryConnector.Data
 }
 ```
 
-## <a name="write-the-microsoft-graph-helper-service"></a><span data-ttu-id="81cba-125">编写 Microsoft Graph帮助程序服务</span><span class="sxs-lookup"><span data-stu-id="81cba-125">Write the Microsoft Graph helper service</span></span>
+## <a name="write-the-microsoft-graph-helper-service"></a><span data-ttu-id="a1ec6-132">编写 Microsoft Graph帮助程序服务</span><span class="sxs-lookup"><span data-stu-id="a1ec6-132">Write the Microsoft Graph helper service</span></span>
 
-1. <span data-ttu-id="81cba-126">在 **PartsInventoryConnector** 目录中新建一个名为 **MicrosoftGraph** 的目录。</span><span class="sxs-lookup"><span data-stu-id="81cba-126">Create a new directory named **MicrosoftGraph** in the **PartsInventoryConnector** directory.</span></span>
-2. <span data-ttu-id="81cba-127">在名为 CustomSerializer.cs 的 **MicrosoftGraph** 目录中创建一个新文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="81cba-127">Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs and place the following code in that file:</span></span>
+1. <span data-ttu-id="a1ec6-133">在 **PartsInventoryConnector** 目录中新建一个名为 **MicrosoftGraph** 的目录。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-133">Create a new directory named **MicrosoftGraph** in the **PartsInventoryConnector** directory.</span></span>
+2. <span data-ttu-id="a1ec6-134">在名为 CustomSerializer.cs 的 **MicrosoftGraph** 目录中创建一个新文件，将以下代码放在该文件中：</span><span class="sxs-lookup"><span data-stu-id="a1ec6-134">Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs and place the following code in that file:</span></span>
 
 ```c
 using Microsoft.Graph;
@@ -321,7 +334,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.IO;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     // The Microsoft Graph SDK serializes enumerations in camelCase.
     // The Microsoft Graph service currently requires the PropertyType enum
@@ -391,9 +404,9 @@ namespace PartsInventoryConnector.Graph
 }
 ```
 
-3. <span data-ttu-id="81cba-128">在 Microsoft Graph目录中创建一个名为 MicrosoftGraphHelper.cs 的新文件，将下面的代码放在该文件中。</span><span class="sxs-lookup"><span data-stu-id="81cba-128">Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs and place the code below in that file.</span></span>
+3. <span data-ttu-id="a1ec6-135">在 Microsoft Graph目录中创建一个名为 MicrosoftGraphHelper.cs 的新文件，将下面的代码放在该文件中。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-135">Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs and place the code below in that file.</span></span>
 
-<span data-ttu-id="81cba-129">以下代码包含使用 **MicrosoftGraphServiceClient** 生成调用并将其发送到 Microsoft Graph 服务并处理响应的方法。</span><span class="sxs-lookup"><span data-stu-id="81cba-129">The following code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.</span></span>
+    <span data-ttu-id="a1ec6-136">以下代码包含使用 **MicrosoftGraphServiceClient** 生成调用并将其发送到 Microsoft Graph 服务并处理响应的方法。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-136">The following code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.</span></span>
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -403,11 +416,11 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private MicrosoftGraphServiceClient _microsoftGraphClient;
+        private class MicrosoftGraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -423,9 +436,9 @@ namespace PartsInventoryConnector.Graph
 }
 ```
 
-## <a name="initialize-the-microsoft-graph-helper-service"></a><span data-ttu-id="81cba-130">初始化 Microsoft Graph帮助程序服务</span><span class="sxs-lookup"><span data-stu-id="81cba-130">Initialize the Microsoft Graph helper service</span></span>
+## <a name="initialize-the-microsoft-graph-helper-service"></a><span data-ttu-id="a1ec6-137">初始化 Microsoft Graph帮助程序服务</span><span class="sxs-lookup"><span data-stu-id="a1ec6-137">Initialize the Microsoft Graph helper service</span></span>
 
-<span data-ttu-id="81cba-131">打开 Program.cs，将整个内容替换为以下代码：</span><span class="sxs-lookup"><span data-stu-id="81cba-131">Open Program.cs and replace the entire content with the following code:</span></span>
+<span data-ttu-id="a1ec6-138">打开 Program.cs，将整个内容替换为以下代码：</span><span class="sxs-lookup"><span data-stu-id="a1ec6-138">Open Program.cs and replace the entire content with the following code:</span></span>
 
 ```c
 using Microsoft.EntityFrameworkCore;
@@ -434,7 +447,7 @@ using Microsoft.Graph;
 using PartsInventoryConnector.Authentication;
 using PartsInventoryConnector.Console;
 using PartsInventoryConnector.Data;
-using PartsInventoryConnector.Graph;
+using PartsInventoryConnector.MicrosoftGraph;
 using PartsInventoryConnector.Models;
 using System;
 using System.Collections.Generic;
@@ -578,9 +591,9 @@ namespace PartsInventoryConnector
 }
 ```
 
-## <a name="create-the-connection"></a><span data-ttu-id="81cba-132">创建连接</span><span class="sxs-lookup"><span data-stu-id="81cba-132">Create the connection</span></span>
+## <a name="create-the-connection"></a><span data-ttu-id="a1ec6-139">创建连接</span><span class="sxs-lookup"><span data-stu-id="a1ec6-139">Create the connection</span></span>
 
-1. <span data-ttu-id="81cba-133">在 **"microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在构造函数方法后添加 **以下** 代码。</span><span class="sxs-lookup"><span data-stu-id="81cba-133">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
+1. <span data-ttu-id="a1ec6-140">在 **MicrosoftGraph** 下，打开 MicrosoftGraphHelper.cs 文件，在构造函数方法后添加 **以下** 代码。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-140">Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
 
 ```c
 #region Connections
@@ -603,7 +616,7 @@ namespace PartsInventoryConnector
 #endregion
 ```
 
-2. <span data-ttu-id="81cba-134">打开 Program.cs 文件，在 **Main** 方法后添加以下代码：</span><span class="sxs-lookup"><span data-stu-id="81cba-134">Open the Program.cs file and add the following code after the **Main** method:</span></span>
+2. <span data-ttu-id="a1ec6-141">打开 Program.cs 文件，在 **Main** 方法后添加以下代码：</span><span class="sxs-lookup"><span data-stu-id="a1ec6-141">Open the Program.cs file and add the following code after the **Main** method:</span></span>
 
 
 ```c
@@ -628,9 +641,9 @@ private static async Task CreateConnectionAsync()
       }
 ```
 
-## <a name="register-schema"></a><span data-ttu-id="81cba-135">注册架构</span><span class="sxs-lookup"><span data-stu-id="81cba-135">Register schema</span></span>
+## <a name="register-schema"></a><span data-ttu-id="a1ec6-142">注册架构</span><span class="sxs-lookup"><span data-stu-id="a1ec6-142">Register schema</span></span>
 
-1. <span data-ttu-id="81cba-136">在 **"microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在构造函数方法后添加 **以下** 代码。</span><span class="sxs-lookup"><span data-stu-id="81cba-136">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
+1. <span data-ttu-id="a1ec6-143">在 **MicrosoftGraph** 下，打开 MicrosoftGraphHelper.cs 文件，在构造函数方法后添加 **以下** 代码。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-143">Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
 
 ```c
 #region Schema
@@ -705,7 +718,7 @@ private static async Task CreateConnectionAsync()
 #endregion
 ```
 
-2. <span data-ttu-id="81cba-137">打开 Program.cs 文件，在 **Main** 方法后添加以下代码。</span><span class="sxs-lookup"><span data-stu-id="81cba-137">Open the Program.cs file and add the following code after the **Main** method.</span></span>
+2. <span data-ttu-id="a1ec6-144">打开 Program.cs 文件，在 **Main** 方法后添加以下代码。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-144">Open the Program.cs file and add the following code after the **Main** method.</span></span>
 
 ```c
 private static async Task RegisterSchemaAsync()
@@ -750,9 +763,9 @@ private static async Task RegisterSchemaAsync()
         }
 ```
 
-## <a name="sync-items"></a><span data-ttu-id="81cba-138">同步项目</span><span class="sxs-lookup"><span data-stu-id="81cba-138">Sync items</span></span>
+## <a name="sync-items"></a><span data-ttu-id="a1ec6-145">同步项目</span><span class="sxs-lookup"><span data-stu-id="a1ec6-145">Sync items</span></span>
 
-1. <span data-ttu-id="81cba-139">在 **"Microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在 **构造函数** 方法后添加以下代码。</span><span class="sxs-lookup"><span data-stu-id="81cba-139">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.</span></span>
+1. <span data-ttu-id="a1ec6-146">在 **"Microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在 **构造函数** 方法后添加以下代码。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-146">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.</span></span>
 
 ```c
 #region PushData   
@@ -784,7 +797,7 @@ private static async Task RegisterSchemaAsync()
         #endregion
 ```
 
-2. <span data-ttu-id="81cba-140">打开 Program.cs 文件，在 **Main** 方法后添加以下代码。</span><span class="sxs-lookup"><span data-stu-id="81cba-140">Open the Program.cs file and add the following code after the **Main** method.</span></span>
+2. <span data-ttu-id="a1ec6-147">打开 Program.cs 文件，在 **Main** 方法后添加以下代码。</span><span class="sxs-lookup"><span data-stu-id="a1ec6-147">Open the Program.cs file and add the following code after the **Main** method.</span></span>
 
 ```c
 private static async Task UpdateItemsFromDatabase()
