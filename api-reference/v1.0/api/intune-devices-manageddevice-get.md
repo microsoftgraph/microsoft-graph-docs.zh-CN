@@ -5,29 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67d3a8109bd465880dedf74eefc7c81c8cf444a4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d98fdc01f19aa20ae4d5de74b8b4bdcbf8671138
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087416"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52753685"
 ---
 # <a name="get-manageddevice"></a>获取 managedDevice
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDevi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4920
+Content-Length: 5095
 
 {
   "value": {
@@ -169,15 +169,15 @@ Content-Length: 4920
     "totalStorageSpaceInBytes": 8,
     "freeStorageSpaceInBytes": 7,
     "managedDeviceName": "Managed Device Name value",
-    "partnerReportedThreatState": "activated"
+    "partnerReportedThreatState": "activated",
+    "iccid": "Iccid value",
+    "udid": "Udid value",
+    "notes": "Notes value",
+    "ethernetMacAddress": "Ethernet Mac Address value",
+    "physicalMemoryInBytes": 5
   }
 }
 ```
-
-
-
-
-
 
 
 

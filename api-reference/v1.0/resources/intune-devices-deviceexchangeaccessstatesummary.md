@@ -5,23 +5,23 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb64307c12dcaf7b4e4fd0443001db7c6190c6fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee3f6ddb47025dfc4ff29305f45538cf23bfa8c6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091255"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754586"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备 Exchange 访问状态摘要
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedDeviceCount|Int32|Exchange 访问状态为允许的设备总数。|
 |blockedDeviceCount|Int32|Exchange 访问状态为阻止的设备总数。|
@@ -49,11 +49,6 @@ ms.locfileid: "48091255"
   "unavailableDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

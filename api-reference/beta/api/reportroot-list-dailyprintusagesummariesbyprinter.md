@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ms.openlocfilehash: a7ba73373ee0c575ca32ab9a1e594089ae9cc93e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054922"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52753587"
 ---
 # <a name="list-dailyprintusagesummariesbyprinter"></a>列出 dailyPrintUsageSummariesByPrinter
 
@@ -20,7 +20,7 @@ ms.locfileid: "52054922"
 
 检索按打印机分组的每日打印使用情况摘要 [列表](../resources/printer.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。

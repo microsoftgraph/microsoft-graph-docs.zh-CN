@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: debc69d62f73d8fc2af1bd30bd06934de9f6ffe2
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 7204f651865328b7cfb9a03a70f6e9d80b912788
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080657"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754481"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "52080657"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                             | 返回类型                       | 说明                                                                                                       |
 | :----------------------------------------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
@@ -32,9 +32,11 @@ ms.locfileid: "52080657"
 
 ## <a name="properties"></a>属性
 
-| 属性              | 类型                                          | 说明                                                                                                                                                                                                                                                 |
+| 属性              | 类型                                          | Description                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| 指定可在会议中成为演示者的人。 可能的值为 `everyone` `organization` `roleIsPresenter` 、、、 `organizer` 和 `unknownFutureValue` 。                                                                                                    |
+| allowAttendeeToEnableCamera | Boolean | 指示与会者是否可以打开其相机。 |
+| allowAttendeeToEnableMic | Boolean | 指示与会者是否可以打开其麦克风。 |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | 指定会议聊天的模式。 |
 | allowTeamworkReactions | Boolean | 指示是否Teams会议的反应。 |
 | alternativeRecording  | Stream                                        | 实时事件的备用录制的内容流。 只读。                                                                                                                                                                                 |
@@ -48,12 +50,12 @@ ms.locfileid: "52080657"
 | endDateTime           | 日期时间                                      | 会议结束时间（UTC）。                                                                                                                                                                                                                                |
 | externalId            | String                                        | 外部 ID。 自定义 ID。 可选。                                                                                                                                                                                                                     |
 | id                    | String                                        | 与联机会议关联的默认 ID。 只读。                                                                                                                                                                                               |
-| isBroadcast           | Boolean                                       | 指示这是否为实时事件。                                                                                                                                                                                                                   |
-| isEntryExitAnnounced  | Boolean                                       | 呼叫者加入或离开时是否宣布。                                                                                                                                                                                                      |
+| isBroadcast           | Boolean                                       | 指示这是否是实时事件。                                                                                                                                                                                                                   |
+| isEntryExitAnnounced  | Boolean                                       | 指示呼叫者加入或离开时是否宣布。                                                                                                                                                                                                      |
 | joinWebUrl            | String                                        | 联机会议加入 URL。 只读。                                                                                                                                                                                                              |
 | joinInformation       | [itemBody](itembody.md)                       | 在"Accept-Language"中指定的语言和区域设置变量中的联接信息请求 HTTP 标头。 只读                                                                                                                                       |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                                                                                                                                                                                                  |
-|meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | 安排的会议的与会者报告。 只读。 |
+| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | 安排的会议的与会者报告。 只读。 |
 | participants          | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。 这包括组织者和与会者。                                                                                                                                                        |
 | recording             | Stream                                        | 录制实时事件的内容流。 只读。                                                                                                                                                                                             |
 | startDateTime         | 日期时间                                      | 会议开始时间（UTC）。                                                                                                                                                                                                                              |
@@ -68,7 +70,7 @@ ms.locfileid: "52080657"
 
 ### <a name="onlinemeetingpresenters-values"></a>onlineMeetingPresenters 值
 
-| 值              | 说明                                                   |
+| 值              | Description                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | everyone           | 每个人都是演示者 (这是默认选项) 。             |
 | 组织       | 组织者组织中的每个人都是演示者。          |
@@ -77,11 +79,11 @@ ms.locfileid: "52080657"
 | unknownFutureValue | 未知未来值。                                         |
 
 > [!TIP]
-> 如果 **allowedPresenters** 的值设置为 ，请使用 `roleIsPresenter` [meetingParticipantInfo](../resources/meetingparticipantinfo.md)中的 **role** 属性指定每个会议参与者的会议角色。
+> 如果 **allowedPresenters** 的值设置为 ，则使用 `roleIsPresenter` [meetingParticipantInfo](../resources/meetingparticipantinfo.md)角色属性指定每个会议参与者 **的会议** 角色。
 
 ### <a name="meetingchatmode-values"></a>meetingChatMode 值
 
-| 值              | 说明                                                            |
+| 值              | Description                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
 | 已启用            | 会议聊天已启用。                                               |
 | disabled           | 会议聊天被禁用。                                              |
@@ -115,7 +117,9 @@ ms.locfileid: "52080657"
   "isBroadcast": "Boolean",
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean"
+  "allowTeamworkReactions": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean"
 }
 ```
 

@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: e96319854f1f11bf85507868918f2bb18bcabed9
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 300d17e32114eece7e1af3f9ab57c8b3af370494
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698004"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732187"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "51698004"
 
 > **注意**：此资源支持订阅更改 (使用更改通知创建、) 和 [删除更改](../resources/webhooks.md)。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatMessage)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
-| 方法       | 返回类型  |说明|
+| 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
 |**频道消息**| | |
 |[列出频道中的消息](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) 集合 | 频道中所有根消息的列表。|
@@ -55,10 +55,10 @@ ms.locfileid: "51698004"
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而仅适用于 chats)  |
 |from|[identitySet](identityset.md)| 只读。 聊天消息的发送者的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
-|messageType|字符串|聊天消息的类型。 可能的值是 `message` ：。|
+|messageType|string|聊天消息的类型。 可能的值是 `message` ：。|
 |createdDateTime|dateTimeOffset|创建聊天消息的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 创建聊天消息的时间戳 (设置) 修改，包括添加或删除回应时。 |
-|lastEditedDateTime|dateTimeOffset|只读。 编辑聊天消息的时间戳。 在 Teams UI 中触发"已编辑"标志。 如果未进行编辑，则值为 `null` 。|
+|lastEditedDateTime|dateTimeOffset|只读。 编辑聊天消息的时间戳。 在用户界面中触发"已编辑Teams标记。 如果未进行编辑，则值为 `null` 。|
 |deletedDateTime|dateTimeOffset|只读。 删除聊天消息的时间戳;如果未删除，则返回 null。 |
 |subject|string| 纯文本形式的聊天消息的主题。|
 |body|[itemBody](itembody.md)|聊天消息内容的纯文本/HTML 表示形式。 表示形式由正文中的 contentType 进行指定。 如果聊天消息包含 [chatMessageMention](chatmessagemention.md)，则内容始终为 HTML 格式。 |
@@ -69,15 +69,15 @@ ms.locfileid: "51698004"
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此聊天消息的反应 (例如，如) 。|
 |区域设置|string|客户端设置的聊天消息区域设置。 始终设置为 `en-us`。|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序中数据丢失防护设置的策略违反 () 属性。|
-|chatId|字符串|如果消息是在聊天中发送的，则代表聊天的标识。|
+|chatId|string|如果消息是在聊天中发送的，则代表聊天的标识。|
 |channelIdentity|[channelIdentity](channelidentity.md)|如果消息是在频道中发送的，则代表频道的标识。|
-|webUrl|string|只读。 链接到 Microsoft Teams 中的消息。|
+|webUrl|string|只读。 指向邮件中Microsoft Teams。|
 ## <a name="relationships"></a>关系
 
-| 关系   | 类型    | 说明 |
+| 关系   | 类型    | Description |
 |:---------------|:--------|:----------|
 |replies|[chatMessage](chatmessage.md)| 对指定邮件的答复。 |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| 由 Microsoft Teams 托管的消息中的内容，例如图像、代码段等。 |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| 由用户托管的消息中Microsoft Teams例如图像、代码段等。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

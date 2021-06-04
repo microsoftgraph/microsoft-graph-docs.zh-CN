@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d5a826441bfcd99d49ddc29a12fb7dbb1e3be324
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7cbc27f253e095e8262a9bce48d16752fb2862fb
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475287"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752677"
 ---
 # <a name="create-macoscustomconfiguration"></a>创建 macOSCustomConfiguration
 
@@ -23,11 +23,11 @@ ms.locfileid: "50475287"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,7 +58,7 @@ POST /deviceManagement/deviceConfigurations
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |payloadName|String|向用户显示的名称。|
-|payloadFileName|String|有效负载文件名 (*.mobileconfig \| *.xml) 。|
+|payloadFileName|String|有效负载文件名 (*.mobileconfig | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 
 
@@ -106,11 +106,6 @@ Content-Length: 453
   "payload": "cGF5bG9hZA=="
 }
 ```
-
-
-
-
-
 
 
 

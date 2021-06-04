@@ -4,12 +4,12 @@ description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源�
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e5a70d69d872d57963f658e7ff2d9e5fa088d3e9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1a478adb9053face3537a445e25dd69a908b2525
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679538"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732145"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
@@ -69,7 +69,7 @@ Microsoft Graph 目前支持以下两种版本：`v1.0` 和 `beta`。
 * `v1.0` 包括正式可用 API。请对所有生产应用使用 v1.0 版本。
 * `beta` 包括目前处于预览中的 API。因为我们可能会为试用的 API引入更大更改，我们建议你仅对开发中的测试应用使用试用版；请勿在生产应用中使用试用版 API。
 
-我们一直在寻求有关试用版 API 的反馈。 若要提供反馈或请求功能，请参阅 [Microsoft 365 开发者平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。
+我们一直在寻求有关试用版 API 的反馈。若要提供反馈或请求功能，请参阅 [Microsoft 365 开发者平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。
 
 若要详细了解 API 版本，请参阅[版本控制和支持](versioning-and-support.md)。
 
@@ -77,7 +77,7 @@ Microsoft Graph 目前支持以下两种版本：`v1.0` 和 `beta`。
 
 资源可以是实体或复杂类型，通常使用属性定义。 实体与复杂类型的不同之处在于前者始终包含 **id** 属性。
 
-你的 URL 将包含你正在请求中与之交互的资源，如`me`、**用户**、**组**、**驱动器** 和 **网站**。 通常，顶级资源还包括可以用来访问其他资源的 _关系_（如 `me/messages` 或 `me/drive`）。 还可以使用 _方法_ 与资源交互；例如，若要发送电子邮件，可以使用 `me/sendMail`。 有关详细信息，请参阅[通过导航 Microsoft Graph 访问数据和方法](traverse-the-graph.md)。
+你的 URL 将包含你正在请求中与之交互的资源，如`me`、**用户**、**组**、**驱动器** 和 **网站**。通常，顶级资源还包括可以用来访问其他资源的 _关系_（如 `me/messages` 或 `me/drive`）。你还可以使用 _方法_ 与资源交互；例如，要发送电子邮件，则使用 `me/sendMail`。有关详细信息，请参阅[通过导航 Microsoft Graph 访问数据和方法](traverse-the-graph.md)。
 
 每个资源可能需要不同的权限来访问它。通常，你需要用来创建或更新资源的权限比读取时要求的权限更高。有关所需权限的详细信息，请参见方法引用主题。 
 
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 ### <a name="graph-explorer"></a>Graph 浏览器
 
-Graph 浏览器是一个基于 Web 的工具，可用于通过 Microsoft Graph API 构建和测试请求。 可在以下位置访问 Graph 浏览器：`https://developer.microsoft.com/graph/graph-explorer`。
+Graph 浏览器是一个基于 Web 的工具，可用于通过 Microsoft Graph API 构建和测试请求。可在以下位置访问 Graph Explorer：[https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer)。
 
 可在不登录的情况下访问演示数据，或者可登录自己的租户。请按照以下步骤生成请求：
 
@@ -132,10 +132,10 @@ Graph 浏览器中提供了示例查询，让你能够更快地运行常见请�
 
 ### <a name="postman"></a>Postman
 
-Postman 浏览器是一款可用于使用 Microsoft Graph API 构建和测试请求的工具。 可在以下位置下载 Postman：`https://www.getpostman.com/`。 若要在 Postman 中与 Microsoft Graph 进行交互，请使用 Microsoft Graph 集合。
+Postman 浏览器是一款可用于使用 Microsoft Graph API 构建和测试请求的工具。 可在以下位置下载 Postman：[https://www.getpostman.com/](https://www.getpostman.com/)。 若要在 Postman 中与 Microsoft Graph 进行交互，请使用 Microsoft Graph 集合。
 
 有关详细信息，请参阅[结合使用 Postman 和 Microsoft Graph API](./use-postman.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
-你可以随时开始使用和运行 Microsoft Graph。 请尝试“[快速入门](https://developer.microsoft.com/graph/quick-start)”或开始使用我们的其中一个 [SDK 和代码示例](https://developer.microsoft.com/graph/code-samples-and-sdks)。
+你可以随时开始使用和运行 Microsoft Graph。请尝试“[快速入门](https://developer.microsoft.com/graph/quick-start)”或开始使用我们的其中一个 [SDK 和代码示例](https://developer.microsoft.com/graph/code-samples-and-sdks)。
