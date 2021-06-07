@@ -5,29 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff3e0d99802a154ae5ac969cc8d290819cff9b65
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6563890dffb9ba7dec4037cc67377f7ff11f94e4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070007"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759231"
 ---
 # <a name="get-windows10generalconfiguration"></a>获取 windows10GeneralConfiguration
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -120,8 +120,28 @@ Content-Length: 10479
     "cellularBlockDataWhenRoaming": true,
     "cellularBlockVpn": true,
     "cellularBlockVpnWhenRoaming": true,
+    "defenderRequireRealTimeMonitoring": true,
+    "defenderRequireBehaviorMonitoring": true,
+    "defenderRequireNetworkInspectionSystem": true,
+    "defenderScanDownloads": true,
+    "defenderScanScriptsLoadedInInternetExplorer": true,
     "defenderBlockEndUserAccess": true,
+    "defenderSignatureUpdateIntervalInHours": 6,
+    "defenderMonitorFileActivity": "disable",
     "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+    "defenderScanMaxCpu": 2,
+    "defenderScanArchiveFiles": true,
+    "defenderScanIncomingMail": true,
+    "defenderScanRemovableDrivesDuringFullScan": true,
+    "defenderScanMappedNetworkDrivesDuringFullScan": true,
+    "defenderScanNetworkFiles": true,
+    "defenderRequireCloudProtection": true,
+    "defenderCloudBlockLevel": "high",
+    "defenderPromptForSampleSubmission": "alwaysPrompt",
+    "defenderScheduledQuickScanTime": "11:58:49.3840000",
+    "defenderScanType": "disabled",
+    "defenderSystemScanSchedule": "everyday",
+    "defenderScheduledScanTime": "11:59:10.9990000",
     "defenderDetectedMalwareActions": {
       "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
       "lowSeverity": "clean",
@@ -129,35 +149,15 @@ Content-Length: 10479
       "highSeverity": "clean",
       "severeSeverity": "clean"
     },
-    "defenderSystemScanSchedule": "everyday",
-    "defenderFilesAndFoldersToExclude": [
-      "Defender Files And Folders To Exclude value"
-    ],
     "defenderFileExtensionsToExclude": [
       "Defender File Extensions To Exclude value"
     ],
-    "defenderScanMaxCpu": 2,
-    "defenderMonitorFileActivity": "disable",
+    "defenderFilesAndFoldersToExclude": [
+      "Defender Files And Folders To Exclude value"
+    ],
     "defenderProcessesToExclude": [
       "Defender Processes To Exclude value"
     ],
-    "defenderPromptForSampleSubmission": "alwaysPrompt",
-    "defenderRequireBehaviorMonitoring": true,
-    "defenderRequireCloudProtection": true,
-    "defenderRequireNetworkInspectionSystem": true,
-    "defenderRequireRealTimeMonitoring": true,
-    "defenderScanArchiveFiles": true,
-    "defenderScanDownloads": true,
-    "defenderScanNetworkFiles": true,
-    "defenderScanIncomingMail": true,
-    "defenderScanMappedNetworkDrivesDuringFullScan": true,
-    "defenderScanRemovableDrivesDuringFullScan": true,
-    "defenderScanScriptsLoadedInInternetExplorer": true,
-    "defenderSignatureUpdateIntervalInHours": 6,
-    "defenderScanType": "disabled",
-    "defenderScheduledScanTime": "11:59:10.9990000",
-    "defenderScheduledQuickScanTime": "11:58:49.3840000",
-    "defenderCloudBlockLevel": "high",
     "lockScreenAllowTimeoutConfiguration": true,
     "lockScreenBlockActionCenterNotifications": true,
     "lockScreenBlockCortana": true,
@@ -306,11 +306,6 @@ Content-Length: 10479
   }
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,24 +1,24 @@
 ---
 title: win32LobAppRegistryRule 资源类型
-description: 用于存储 Win32 LOB 应用程序的注册表规则数据的复杂类型。
+description: 用于存储 Win32 LOB 应用的注册表规则数据的复杂类型。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64343873093428849462cbdc12fc078a7a028e2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bfa6ed9e95a86abe1d87646a7c57f953be539f69
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080070"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758979"
 ---
 # <a name="win32lobappregistryrule-resource-type"></a>win32LobAppRegistryRule 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于存储 Win32 LOB 应用程序的注册表规则数据的复杂类型。
+用于存储 Win32 LOB 应用的注册表规则数据的复杂类型。
 
 
 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
@@ -27,11 +27,11 @@ ms.locfileid: "48080070"
 |属性|类型|说明|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|指示规则用途的规则类型。 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)。 可取值为：`detection`、`requirement`。|
-|check32BitOn64System|Boolean|一个值，指示是否在64位系统上搜索32位注册表。|
+|check32BitOn64System|Boolean|一个值，指示是否在 64 位系统上搜索 32 位注册表。|
 |keyPath|String|包含要检测的值的注册表项的完整路径。|
-|等值|String|要检测的注册表值的名称。|
+|valueName|String|要检测的注册表值的名称。|
 |operationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|注册表操作类型。 可取值为：`notConfigured`、`exists`、`doesNotExist`、`string`、`integer`、`version`。|
-|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|用于注册表检测的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
+|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|注册表检测的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
 |comparisonValue|String|注册表比较值。|
 
 ## <a name="relationships"></a>关系
@@ -56,7 +56,6 @@ ms.locfileid: "48080070"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

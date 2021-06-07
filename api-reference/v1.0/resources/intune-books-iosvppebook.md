@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 343766362e45406c6201543a24a30e392edcdea7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 540b8d2277317cb18d1ac42e76da2fa80b8e243c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094272"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758944"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS Vpp eBook的属性的类。
 
@@ -99,11 +99,6 @@ ms.locfileid: "48094272"
   "usedLicenseCount": 1024
 }
 ```
-
-
-
-
-
 
 
 
