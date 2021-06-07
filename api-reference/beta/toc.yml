@@ -1833,25 +1833,25 @@ items:
                   - name: 按打印机组织
                     items:
                       - name: 获取
-                        href: api/printusagebyprinter-get.md
+                        href: api/printusagesummarybyprinter-get.md
                       - name: 列出打印机的存档打印作业
                         href: api/reports-getprinterarchivedprintjobs.md
                       - name: 按打印机列出每日报表
-                        href: api/reportroot-list-dailyprintusagebyprinter.md
+                        href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
                       - name: 按打印机列出每月报表
-                        href: api/reportroot-list-monthlyprintusagebyprinter.md
+                        href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
                   - name: 按用户或组组织
                     items:
                       - name: 获取
-                        href: api/printusagebyuser-get.md
+                        href: api/printusagesummarybyuser-get.md
                       - name: 列出用户的存档打印作业
                         href: api/reports-getuserarchivedprintjobs.md
                       - name: 列出组的存档打印作业
                         href: api/reports-getgrouparchivedprintjobs.md
                       - name: 按用户列出每日报告
-                        href: api/reportroot-list-dailyprintusagebyuser.md
+                        href: api/reportroot-list-dailyprintusagesummariesbyuser.md
                       - name: 按用户列出每月报告
-                        href: api/reportroot-list-monthlyprintusagebyuser.md
+                        href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
               - name: 打印服务
                 href: resources/printservice.md
                 items:
