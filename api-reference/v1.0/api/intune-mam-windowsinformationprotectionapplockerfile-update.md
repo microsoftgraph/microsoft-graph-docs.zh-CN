@@ -5,31 +5,31 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0200d6041aa8424a7da5804bded4cdc2b25552de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 373e7066bd78c9997a7170399bc23ffcab3e6765
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079359"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759091"
 ---
-# <a name="update-windowsinformationprotectionapplockerfile"></a><span data-ttu-id="4fe57-103">更新 windowsInformationProtectionAppLockerFile</span><span class="sxs-lookup"><span data-stu-id="4fe57-103">Update windowsInformationProtectionAppLockerFile</span></span>
+# <a name="update-windowsinformationprotectionapplockerfile"></a><span data-ttu-id="f1064-103">更新 windowsInformationProtectionAppLockerFile</span><span class="sxs-lookup"><span data-stu-id="f1064-103">Update windowsInformationProtectionAppLockerFile</span></span>
 
-<span data-ttu-id="4fe57-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4fe57-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f1064-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f1064-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="4fe57-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4fe57-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f1064-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f1064-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4fe57-106">更新 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="4fe57-106">Update the properties of a [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
+<span data-ttu-id="f1064-106">更新 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="f1064-106">Update the properties of a [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4fe57-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="4fe57-107">Prerequisites</span></span>
-<span data-ttu-id="4fe57-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4fe57-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f1064-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="f1064-107">Prerequisites</span></span>
+<span data-ttu-id="f1064-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f1064-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4fe57-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4fe57-110">Permission type</span></span>|<span data-ttu-id="4fe57-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4fe57-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f1064-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f1064-110">Permission type</span></span>|<span data-ttu-id="f1064-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f1064-111">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4fe57-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4fe57-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4fe57-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4fe57-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="4fe57-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4fe57-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4fe57-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4fe57-115">Not supported.</span></span>|
-|<span data-ttu-id="4fe57-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4fe57-116">Application</span></span>|<span data-ttu-id="4fe57-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="4fe57-117">Not supported.</span></span>|
+|<span data-ttu-id="f1064-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f1064-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f1064-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1064-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="f1064-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f1064-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f1064-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="f1064-115">Not supported.</span></span>|
+|<span data-ttu-id="f1064-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f1064-116">Application</span></span>|<span data-ttu-id="f1064-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1064-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4fe57-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4fe57-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f1064-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f1064-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,34 +41,34 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/protectedAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4fe57-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4fe57-119">Request headers</span></span>
-|<span data-ttu-id="4fe57-120">标头</span><span class="sxs-lookup"><span data-stu-id="4fe57-120">Header</span></span>|<span data-ttu-id="4fe57-121">值</span><span class="sxs-lookup"><span data-stu-id="4fe57-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f1064-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="f1064-119">Request headers</span></span>
+|<span data-ttu-id="f1064-120">标头</span><span class="sxs-lookup"><span data-stu-id="f1064-120">Header</span></span>|<span data-ttu-id="f1064-121">值</span><span class="sxs-lookup"><span data-stu-id="f1064-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4fe57-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4fe57-122">Authorization</span></span>|<span data-ttu-id="4fe57-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4fe57-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4fe57-124">接受</span><span class="sxs-lookup"><span data-stu-id="4fe57-124">Accept</span></span>|<span data-ttu-id="4fe57-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4fe57-125">application/json</span></span>|
+|<span data-ttu-id="f1064-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f1064-122">Authorization</span></span>|<span data-ttu-id="f1064-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="f1064-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f1064-124">接受</span><span class="sxs-lookup"><span data-stu-id="f1064-124">Accept</span></span>|<span data-ttu-id="f1064-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f1064-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4fe57-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4fe57-126">Request body</span></span>
-<span data-ttu-id="4fe57-127">在请求正文中，提供 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4fe57-127">In the request body, supply a JSON representation for the [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f1064-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f1064-126">Request body</span></span>
+<span data-ttu-id="f1064-127">在请求正文中，提供 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f1064-127">In the request body, supply a JSON representation for the [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
 
-<span data-ttu-id="4fe57-128">下表显示创建 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4fe57-128">The following table shows the properties that are required when you create the [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).</span></span>
+<span data-ttu-id="f1064-128">下表显示创建 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="f1064-128">The following table shows the properties that are required when you create the [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).</span></span>
 
-|<span data-ttu-id="4fe57-129">属性</span><span class="sxs-lookup"><span data-stu-id="4fe57-129">Property</span></span>|<span data-ttu-id="4fe57-130">类型</span><span class="sxs-lookup"><span data-stu-id="4fe57-130">Type</span></span>|<span data-ttu-id="4fe57-131">说明</span><span class="sxs-lookup"><span data-stu-id="4fe57-131">Description</span></span>|
+|<span data-ttu-id="f1064-129">属性</span><span class="sxs-lookup"><span data-stu-id="f1064-129">Property</span></span>|<span data-ttu-id="f1064-130">类型</span><span class="sxs-lookup"><span data-stu-id="f1064-130">Type</span></span>|<span data-ttu-id="f1064-131">说明</span><span class="sxs-lookup"><span data-stu-id="f1064-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4fe57-132">displayName</span><span class="sxs-lookup"><span data-stu-id="4fe57-132">displayName</span></span>|<span data-ttu-id="4fe57-133">String</span><span class="sxs-lookup"><span data-stu-id="4fe57-133">String</span></span>|<span data-ttu-id="4fe57-134">友好名称</span><span class="sxs-lookup"><span data-stu-id="4fe57-134">The friendly name</span></span>|
-|<span data-ttu-id="4fe57-135">fileHash</span><span class="sxs-lookup"><span data-stu-id="4fe57-135">fileHash</span></span>|<span data-ttu-id="4fe57-136">String</span><span class="sxs-lookup"><span data-stu-id="4fe57-136">String</span></span>|<span data-ttu-id="4fe57-137">文件的 SHA256 哈希</span><span class="sxs-lookup"><span data-stu-id="4fe57-137">SHA256 hash of the file</span></span>|
-|<span data-ttu-id="4fe57-138">file</span><span class="sxs-lookup"><span data-stu-id="4fe57-138">file</span></span>|<span data-ttu-id="4fe57-139">Binary</span><span class="sxs-lookup"><span data-stu-id="4fe57-139">Binary</span></span>|<span data-ttu-id="4fe57-140">字节数组形式的文件</span><span class="sxs-lookup"><span data-stu-id="4fe57-140">File as a byte array</span></span>|
-|<span data-ttu-id="4fe57-141">id</span><span class="sxs-lookup"><span data-stu-id="4fe57-141">id</span></span>|<span data-ttu-id="4fe57-142">String</span><span class="sxs-lookup"><span data-stu-id="4fe57-142">String</span></span>|<span data-ttu-id="4fe57-143">实体的键。</span><span class="sxs-lookup"><span data-stu-id="4fe57-143">Key of the entity.</span></span>|
-|<span data-ttu-id="4fe57-144">version</span><span class="sxs-lookup"><span data-stu-id="4fe57-144">version</span></span>|<span data-ttu-id="4fe57-145">String</span><span class="sxs-lookup"><span data-stu-id="4fe57-145">String</span></span>|<span data-ttu-id="4fe57-146">实体的版本。</span><span class="sxs-lookup"><span data-stu-id="4fe57-146">Version of the entity.</span></span>|
+|<span data-ttu-id="f1064-132">displayName</span><span class="sxs-lookup"><span data-stu-id="f1064-132">displayName</span></span>|<span data-ttu-id="f1064-133">String</span><span class="sxs-lookup"><span data-stu-id="f1064-133">String</span></span>|<span data-ttu-id="f1064-134">友好名称</span><span class="sxs-lookup"><span data-stu-id="f1064-134">The friendly name</span></span>|
+|<span data-ttu-id="f1064-135">fileHash</span><span class="sxs-lookup"><span data-stu-id="f1064-135">fileHash</span></span>|<span data-ttu-id="f1064-136">String</span><span class="sxs-lookup"><span data-stu-id="f1064-136">String</span></span>|<span data-ttu-id="f1064-137">文件的 SHA256 哈希</span><span class="sxs-lookup"><span data-stu-id="f1064-137">SHA256 hash of the file</span></span>|
+|<span data-ttu-id="f1064-138">file</span><span class="sxs-lookup"><span data-stu-id="f1064-138">file</span></span>|<span data-ttu-id="f1064-139">Binary</span><span class="sxs-lookup"><span data-stu-id="f1064-139">Binary</span></span>|<span data-ttu-id="f1064-140">字节数组形式的文件</span><span class="sxs-lookup"><span data-stu-id="f1064-140">File as a byte array</span></span>|
+|<span data-ttu-id="f1064-141">id</span><span class="sxs-lookup"><span data-stu-id="f1064-141">id</span></span>|<span data-ttu-id="f1064-142">String</span><span class="sxs-lookup"><span data-stu-id="f1064-142">String</span></span>|<span data-ttu-id="f1064-143">实体的键。</span><span class="sxs-lookup"><span data-stu-id="f1064-143">Key of the entity.</span></span>|
+|<span data-ttu-id="f1064-144">version</span><span class="sxs-lookup"><span data-stu-id="f1064-144">version</span></span>|<span data-ttu-id="f1064-145">String</span><span class="sxs-lookup"><span data-stu-id="f1064-145">String</span></span>|<span data-ttu-id="f1064-146">实体的版本。</span><span class="sxs-lookup"><span data-stu-id="f1064-146">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4fe57-147">响应</span><span class="sxs-lookup"><span data-stu-id="4fe57-147">Response</span></span>
-<span data-ttu-id="4fe57-148">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4fe57-148">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f1064-147">响应</span><span class="sxs-lookup"><span data-stu-id="f1064-147">Response</span></span>
+<span data-ttu-id="f1064-148">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f1064-148">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4fe57-149">示例</span><span class="sxs-lookup"><span data-stu-id="4fe57-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f1064-149">示例</span><span class="sxs-lookup"><span data-stu-id="f1064-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4fe57-150">请求</span><span class="sxs-lookup"><span data-stu-id="4fe57-150">Request</span></span>
-<span data-ttu-id="4fe57-151">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4fe57-151">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f1064-150">请求</span><span class="sxs-lookup"><span data-stu-id="f1064-150">Request</span></span>
+<span data-ttu-id="f1064-151">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f1064-151">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 211
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4fe57-152">响应</span><span class="sxs-lookup"><span data-stu-id="4fe57-152">Response</span></span>
-<span data-ttu-id="4fe57-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4fe57-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f1064-152">响应</span><span class="sxs-lookup"><span data-stu-id="f1064-152">Response</span></span>
+<span data-ttu-id="f1064-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f1064-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -99,11 +99,6 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 
