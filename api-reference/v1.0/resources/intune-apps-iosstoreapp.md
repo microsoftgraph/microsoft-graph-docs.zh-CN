@@ -5,26 +5,26 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c41477165a4da87c90b3cd98b635a5e8bc0dc83a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27c81d59d9e5b4568a33c63cfec4447d47e897d3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984521"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755138"
 ---
 # <a name="iosstoreapp-resource-type"></a>iosStoreApp 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS 应用商店应用的属性和继承的属性。
 
 
 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[List iosStoreApps](../api/intune-apps-iosstoreapp-list.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md) 集合|列出 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性和关系。|
 |[Get iosStoreApp](../api/intune-apps-iosstoreapp-get.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|读取 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "47984521"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -55,7 +55,7 @@ ms.locfileid: "47984521"
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune-apps-iosminimumoperatingsystem.md)|最低适用操作系统的值。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -103,15 +103,11 @@ ms.locfileid: "47984521"
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```
-
-
-
-
-
 
 
 

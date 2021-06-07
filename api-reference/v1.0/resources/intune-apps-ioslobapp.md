@@ -5,26 +5,26 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 021ff7f40476bbfa16966f728166814cf1ed2bc2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aa2581975be32cbed047d54d8abde2bbbd164936
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088725"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755159"
 ---
 # <a name="ioslobapp-resource-type"></a>iosLobApp 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS 业务线应用的属性和继承的属性。
 
 
 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[List iosLobApps](../api/intune-apps-ioslobapp-list.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md) 集合|列出 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象的属性和关系。|
 |[Get iosLobApp](../api/intune-apps-ioslobapp-get.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|读取 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "48088725"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -45,7 +45,7 @@ ms.locfileid: "48088725"
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
@@ -60,7 +60,7 @@ ms.locfileid: "48088725"
 |buildNumber|String|iOS 业务线 (LoB) 应用的内部版本号。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -111,18 +111,14 @@ ms.locfileid: "48088725"
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",
   "buildNumber": "String"
 }
 ```
-
-
-
-
-
 
 
 

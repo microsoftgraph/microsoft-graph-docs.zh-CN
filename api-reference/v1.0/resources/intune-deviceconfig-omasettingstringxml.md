@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c85dbc033264715026227be4055a0bf3130a5cc4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6713977ef36edc43f1d2e00cf489f9906e6bd929
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988259"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755852"
 ---
 # <a name="omasettingstringxml-resource-type"></a>omaSettingStringXml 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 OMA 设置字符串 XML 定义。
 
@@ -27,7 +27,7 @@ OMA 设置字符串 XML 定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|说明|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|String|与 Value 属性关联的文件名 (*.xml)。|
 |value|Binary|值。 （UTF8 编码的字节数组）|
@@ -52,11 +52,6 @@ OMA 设置字符串 XML 定义。
   "value": "binary"
 }
 ```
-
-
-
-
-
 
 
 

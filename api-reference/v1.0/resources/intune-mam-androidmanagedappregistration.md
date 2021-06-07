@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b761b2843ede8cfca8d4ef14074227df665e37d
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 01465444f3cce6dba57cebb1c5827e05b78f4a2e
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291886"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754970"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration 资源类型
 
@@ -24,8 +24,8 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 
 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[List androidManagedAppRegistrations](../api/intune-mam-androidmanagedappregistration-list.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) 集合|列出 [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) 对象的属性和关系。|
 |[Get androidManagedAppRegistration](../api/intune-mam-androidmanagedappregistration-get.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|读取 [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) 对象的属性和关系。|
@@ -49,9 +49,9 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |version|String|实体的版本。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
-|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|注册应用上次与管理服务同步时，已应用零个或多个策略。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|当已注册的应用上次与管理服务同步时，已应用于该应用的零个或多个策略。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |intendedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|目前适用于应用的零个或多个策略管理员。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |operations|[managedAppOperation](../resources/intune-mam-managedappoperation.md) 集合|在应用注册时触发的零个或多个长时间运行的操作。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
@@ -86,16 +86,6 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "version": "String"
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-  ],
-}
--->
-
-
-
 
 
 

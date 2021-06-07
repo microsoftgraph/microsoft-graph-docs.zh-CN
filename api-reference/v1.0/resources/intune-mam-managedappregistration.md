@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d2c9043e9283258b904cef1a61a3ce502f69601
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 8eff848b54d3a84f6fb60d2c8335d71417f2afb0
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291893"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755754"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "50291893"
 ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。
 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[List managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|列出 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) 对象的属性和关系。|
 |[Get managedAppRegistration](../api/intune-mam-managedappregistration-get.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md)|读取 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) 对象的属性和关系。|
@@ -46,9 +46,9 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
-|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|注册应用上次与管理服务同步时，已应用零个或多个策略。|
+|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|当已注册的应用上次与管理服务同步时，已应用于该应用的零个或多个策略。|
 |intendedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|目前适用于应用的零个或多个策略管理员。|
 |操作|[managedAppOperation](../resources/intune-mam-managedappoperation.md) 集合|在应用注册时触发的零个或多个长时间运行的操作。|
 
@@ -76,23 +76,13 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-  ],
-}
--->
-
-
-
-
 
 
 

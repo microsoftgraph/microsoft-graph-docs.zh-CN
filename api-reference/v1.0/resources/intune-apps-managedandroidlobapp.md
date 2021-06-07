@@ -5,26 +5,26 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee4de272bc08f85dab31381b276e9c9ca2f70352
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c312844ff33e33f3c2a5185d236ec1e6fc57e576
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015433"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756055"
 ---
 # <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含托管 Android 业务线应用的属性和继承的属性。
 
 
 继承自 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[List managedAndroidLobApps](../api/intune-apps-managedandroidlobapp-list.md)|[managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) 集合|列出 [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) 对象的属性和关系。|
 |[Get managedAndroidLobApp](../api/intune-apps-managedandroidlobapp-get.md)|[managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md)|读取 [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "48015433"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -60,7 +60,7 @@ ms.locfileid: "48015433"
 |versionCode|String|托管 Android 业务线 (LoB) 应用的版本代码。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -110,17 +110,14 @@ ms.locfileid: "48015433"
     "v4_3": true,
     "v4_4": true,
     "v5_0": true,
-    "v5_1": true
+    "v5_1": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "String",
   "versionCode": "String"
 }
 ```
-
-
-
-
-
 
 
 

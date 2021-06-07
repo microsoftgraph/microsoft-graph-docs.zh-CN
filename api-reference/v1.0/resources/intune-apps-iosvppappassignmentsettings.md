@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08b711eb4f1d1d79e61879386a24c546b7bda8ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 342f773d48b4918693b6062aba161ce72c82d743
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018170"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756062"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含用于为组分配 iOS APP 移动应用的属性。
 
@@ -24,7 +24,7 @@ ms.locfileid: "48018170"
 继承自 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |useDeviceLicensing|布尔值|是否使用设备许可。|
 |vpnConfigurationId|String|要申请此应用的 VPN 配置 ID。|
@@ -46,11 +46,6 @@ ms.locfileid: "48018170"
   "vpnConfigurationId": "String"
 }
 ```
-
-
-
-
-
 
 
 

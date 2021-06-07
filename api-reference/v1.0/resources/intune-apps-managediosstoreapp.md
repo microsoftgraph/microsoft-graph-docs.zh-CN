@@ -5,25 +5,25 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: df335cfdea50374cb767fca22816d12e090cf6e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9f6e36ad9763772aa38cbd19606996aa64cf9eb4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054628"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756034"
 ---
 # <a name="managediosstoreapp-resource-type"></a>managedIOSStoreApp 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含可以使用 Intune 应用保护策略管理的 iOS 应用商店应用的属性和继承的属性。
 
 
 继承自 [managedApp](../resources/intune-apps-managedapp.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedIOSStoreApps](../api/intune-apps-managediosstoreapp-list.md)|[managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md) 集合|列出 [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "48054628"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -107,15 +107,11 @@ ms.locfileid: "48054628"
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```
-
-
-
-
-
 
 
 
