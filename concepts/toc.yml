@@ -172,16 +172,18 @@ items:
             href: connecting-external-content-connectors-api-overview.md
           - name: 使用 Postman
             href: connecting-external-content-connectors-api-postman.md
+          - name: 构建首个自定义连接器
+            href: connecting-external-content-build-quickstart.yml
           - name: 管理连接
             href: connecting-external-content-manage-connections.md
           - name: 管理架构
             href: connecting-external-content-manage-schema.md
           - name: 管理项目
             href: connecting-external-content-manage-items.md
+          - name: 外部组
+            href: connecting-external-content-external-groups.md
           - name: API 限制
             href: connecting-external-content-api-limits.md
-          - name: 构建首个自定义连接器
-            href: connecting-external-content-build-quickstart.yml
       - name: 跨设备体验
         displayName: Project Rome
         items:
