@@ -1,16 +1,16 @@
 ---
-title: Microsoft Graph 功能中的议程Toolkit
+title: Microsoft 计划中的议程Graph Toolkit
 description: mgt-agenda Web 组件用于表示用户或组日历中的事件。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b4c9f41f347e8a392d7d751f16f9168a4d66d1c4
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 7de172c514aea12e0f57541649b6e98ca1ded2df
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266573"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781098"
 ---
-# <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 功能中的议程Toolkit
+# <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft 计划中的议程Graph Toolkit
 
 Web `mgt-agenda` 组件表示用户或组日历中的事件。 默认情况下，日历显示当前日期的当前已登录用户事件。 该组件还可使用从 Microsoft Graph 返回事件的任何终结点。
 
@@ -29,13 +29,13 @@ Web `mgt-agenda` 组件表示用户或组日历中的事件。 默认情况下�
 | 属性 | 属性 | 说明 |
 | --- | --- | --- |
 | date | date | 一个字符串，表示从 Microsoft Graph 提取的事件的开始日期。 值应采用 Date 构造函数可以分析的格式 [-](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) 如果设置了属性，则值 `event-query` 无效。 |
-| days | days | 从 Microsoft Graph 提取的天数 - 默认值为 3 - 如果设置了属性，则值 `event-query` 无效。 |
+| days | days | 从 Microsoft Graph获取的天数 - 默认值为 3 - 如果设置了属性，则值 `event-query` 无效。 |
 | show-max | showMax | 一个数字，指示要显示的最大事件数。 默认值未设置为没有 (最大值) 。 |
 | group-id | groupId | 使用组日历的字符串 ID，而不是当前登录用户的日历。 |
-| event-query | eventQuery | 一个字符串，表示从 Microsoft Graph 提取事件时所使用的备用查询。 （可选）在字符串末尾添加委派作用域，用 `|` `/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all` () 。 |
+| event-query | eventQuery | 一个字符串，表示在从 Microsoft 网站提取事件时所使用的Graph。 （可选）在字符串末尾添加委派作用域，用 `|` `/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all` () 。 |
 | events | events | 用于获取或设置组件呈现的事件列表的事件数组 - 使用此属性访问组件加载的事件。 设置此值以加载你自己的事件 - 如果值由开发人员设置，则 `date` 、 `days` 或 `event-query` 属性不起作用。 |
 | 按天分组 | groupByDay | 按天对事件进行分组的布尔值 - 默认情况下不对事件进行分组。 |
-| preferred-timezone | preferredTimezone | 从 Microsoft Graph 检索事件时使用的首选时区的名称;例如， `Pacific Standard Time` 。 默认情况下，此属性使用 UTC 时区。 通过调用 终结点并读取 timeZone 属性的值，可以检索当前 `me/mailboxSettings` **用户的首选** 时区。 |
+| preferred-timezone | preferredTimezone | 从 Microsoft 网站检索事件时使用的首选时区Graph;例如， `Pacific Standard Time` 。 默认情况下，此属性使用 UTC 时区。 通过调用 终结点并读取 timeZone 属性的值，可以检索当前 `me/mailboxSettings` **用户的首选** 时区。 |
 
 以下示例将组件的行为更改为获取特定日期的数据，最多三天。
 
@@ -125,7 +125,7 @@ mgt-agenda {
 
 若要了解更多信息，请参阅 [模板](../customize-components/templates.md)。
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 
 从控件中触发以下事件。
 
@@ -133,23 +133,17 @@ mgt-agenda {
 | --- | --- |
 | eventClick | 用户单击或点击事件。|
 
-## <a name="permissions"></a>权限
+## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-此组件使用下列 Microsoft Graph API 和权限：
+此组件使用以下 Microsoft Graph API 和权限：
 
-| Resource | 权限 |
-| - | - |
-| [/me/calendarview](/graph/api/calendar-list-calendarview) | Calendars.Read |
+| 配置 | 权限 | API
+| - | - | - |
+| default | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 
-该组件允许你指定其他 Microsoft Graph 查询来调用 (，如 `/groups/{id}/calendar/calendarView`) 。 在这种情况下，将权限追加到字符串的末尾，以 分隔 `|` 。
+该组件允许你指定不同的 Microsoft Graph查询来调用 (，如 `/groups/{id}/calendar/calendarView`) 。 在这种情况下，将权限追加到字符串的末尾，以 分隔 `|` 。
 
-使用默认模板和默认 `renderAttendees` 模板时，需要其他 API 和权限。 此组件的默认模板对具有与会者的事件使用 [mgt-people](people.md) 组件，这需要进行以下操作。
-
-| Resource | 权限 |
-| - | - |
-| [/users](/graph/api/user-list) | Users.ReadBasic.All |
-| [/me/calendarview](/graph/api/user-list-people) | People.Read |
-| [/me/calendarview](/graph/api/user-list-contacts) | Contacts.Read |
+使用默认模板和默认 `renderAttendees` 模板时，需要其他 API 和权限。 此组件的默认模板对具有与会者的事件使用 [mgt-people](people.md) 组件，并继承所有权限。
 
 ## <a name="authentication"></a>身份验证
 

@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 13a7b9b387581612193e4759521daa42216b2be0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 4dd6d6d8d2c5433ca2ad133c57cae8b17af79ad5
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470314"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780818"
 ---
 # <a name="update-educationassignmentdefaults"></a>更新 educationAssignmentDefaults
 命名空间：microsoft.graph
@@ -45,19 +45,19 @@ PATCH /education/classes/{id}/assignmentDefaults
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [应更新的 educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象的相关字段的值。 请求正文中不包含的现有属性将保留其以前的值。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供 [应更新的 educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象的相关字段的值。 请求正文中未包含的现有属性将保留其以前的值。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|用于处理作业发布后添加的学生的课堂级别默认行为。 可取值为：`none`、`assignIfOpen`。 默认值为 `none`。|
-|dueTime|TimeOfDay|截止日期域的类级别默认值。 默认值为 `23:59:00`|
-|notificationChannelUrl|String|通知将发送到的默认 Teams 频道。 默认值为 `null`。|
+|dueTime|TimeOfDay|"到期时间"字段的类级别默认值。 默认值为 `23:59:00`|
+|notificationChannelUrl|String|默认Teams通知将发送到的频道。 默认值为 `null`。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` [的 educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -76,6 +76,7 @@ Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",
+  "addToCalendarAction": "studentsAndTeamOwners",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
@@ -113,6 +114,7 @@ Content-Type: application/json
 
 {
   "addedStudentAction": "assignIfOpen",
+  "addToCalendarAction": "studentsAndTeamOwners",
   "dueTime": "23:59:00",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }

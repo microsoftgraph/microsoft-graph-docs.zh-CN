@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 34a7dcd31642f56d34aacc05082ef57c801e5e6a
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: cdb2cbf9ace99ad83defd4c110001e39e9cc8335
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680981"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52783622"
 ---
 # <a name="remove-owner"></a>删除所有者
 
@@ -80,9 +80,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

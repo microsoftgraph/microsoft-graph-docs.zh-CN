@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: abc86450938a979a082c9dd6792ce8fba4af17f2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 81eee8c04af0016c04ec1cca76f3f996bf41d50a
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682633"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781049"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -604,6 +604,14 @@ ms.locfileid: "52682633"
 |:---|
 |无|
 |assignIfOpen|
+|unknownFutureValue|
+
+### <a name="educationaddtocalendaroptions-values"></a>educationAddToCalendarOptions 值
+|成员|
+|:---|
+|无|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
 |unknownFutureValue|
 
 ### <a name="externalemailotpstate-values"></a>externalEmailOtpState 值
@@ -1249,7 +1257,7 @@ ms.locfileid: "52682633"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | 参考
 
 

@@ -3,12 +3,12 @@ title: Microsoft 服务中的人员Graph Toolkit
 description: 可以使用 Web 组件通过用户的照片或缩写显示一组 `mgt-people` 人员或联系人。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 6bed8f2c06e3c6834533b8e881016c4bc6d54bac
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: d169c5c51c4f846031d4519ab27a053f51c15f98
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52580013"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780734"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
@@ -40,7 +40,6 @@ ms.locfileid: "52580013"
 | resource | resource | 从 Microsoft 获取的资源Graph (例如 `/me/people` ，) 。 |
 | scopes | scopes | 字符串的可选数组（如果使用 属性）或逗号分隔的范围（如果使用 属性）。 组件将使用这些作用域 (支持) ，以确保用户已同意适当的权限。 |
 | version | version | 进行 GET 请求时使用的可选 API 版本。 默认值为“`v1.0`”。  |
-
 
 以下示例设置要显示的最大人数。
 
@@ -93,15 +92,16 @@ mgt-people {
 
 此组件使用以下 Microsoft Graph API 和权限：
 
-| 资源 | 权限 |
-| - | - |
-| [/me/people](/graph/api/user-list-people) | `People.Read` |
+| 配置 | 权限 | API
+| --- | ---------- | ------- |
+| `groupId` set | User.Read.All、People.Read | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
+| `userIds` set | User.ReadBasic.All | [/users/${userId}](/graph/api/user-get) |
+| `peopleQueries` set | People.Read | [/me/people](/graph/api/user-list-people) |
+| `resource` set | 中指定的权限 `scopes` | 在 中指定 `resource` |
+| 默认配置 | People.Read | [/me/people](/graph/api/user-list-people) |
+| `showPresence` set | Presence.Read.All | [/communications/getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) |
 
-使用默认模板时，需要其他 API 和权限。 此组件的默认模板使用 [mgt-person](person.md) 组件，这需要以下内容。
-
-| 资源 | 权限 |
-| - | - |
-| [/users](/graph/api/user-list) | User.ReadBasic.All |
+使用默认模板时，需要其他 API 和权限。 此组件的默认模板使用 [mgt-person](person.md) 组件。 有关所需权限的列表，请参阅其文档。
 
 ## <a name="authentication"></a>身份验证
 

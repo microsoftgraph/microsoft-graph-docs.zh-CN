@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0e0dd1c9bb61477df6eeb08bda7540ef9d51e9a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee59a78c572344f105d4826c4312626e85c3b25e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038940"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52783629"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>向 educationSchool 添加 educationUser
 
@@ -88,9 +88,7 @@ Content-length: 56
 <!-- Add the educationClass resource to the response. -->
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationUser"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

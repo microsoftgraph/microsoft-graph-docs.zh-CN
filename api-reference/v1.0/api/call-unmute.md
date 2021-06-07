@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a8cd47614020fc76386e5c9e8acff6a386fcadd7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 392f8af0e53c54d3c4f17f2db7837295eb7039e7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051583"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52783636"
 ---
 # <a name="call-unmute"></a>call： unmute
 
@@ -107,14 +107,7 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.unmuteParticipantOperation",
-  "truncated": true
-}-->
-```json
 {
   "@odata.type": "#microsoft.graph.unmuteParticipantOperation",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#unmuteParticipantOperation",
@@ -125,17 +118,14 @@ Content-Length: 259
 ```
 
 ##### <a name="notification---roster-updated-with-participant-unmuted"></a>通知 - 使用参与者取消静音更新名单
-
-```http
-POST https://bot.contoso.com/api/calls
-Content-Type: application/json
-```
-
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
-```json
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [

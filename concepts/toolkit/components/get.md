@@ -1,18 +1,18 @@
 ---
 title: 获取 Microsoft Graph Toolkit
-description: Get 组件允许你直接在 HTML 中从 Microsoft Graph 进行任何 GET 查询。
+description: Get 组件允许你直接在 HTML 中从 Microsoft Graph GET 查询。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 968259f08e08d6d34308404847b0addf9badd2ec
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 55fc5da7697523fbb08c69a2a995170be5b35a21
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266580"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781084"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>获取 Microsoft Graph Toolkit
 
-可以使用 直接 `mgt-get` 在 HTML 中从 Microsoft Graph 进行任何 GET 查询。 该组件不提供默认 UI，并且要求你编写模板。
+您可以使用 直接 `mgt-get` 在 HTML 中执行 Microsoft Graph GET 查询。 该组件不提供默认 UI，并且要求你编写模板。
 
 ## <a name="example"></a>示例
 
@@ -28,7 +28,7 @@ ms.locfileid: "52266580"
 
 | 属性 | 属性  | 说明 |
 | --- | --- | --- |
-| 资源 | resource | 从 Microsoft Graph 获取的资源 (例如 `/me` ，) 。 |
+| 资源 | resource | 从 Microsoft 获取的资源Graph (例如 `/me` ，) 。 |
 | scopes | scopes | 字符串的可选数组（如果使用 属性）或逗号分隔的范围（如果使用 属性）。 组件将使用这些作用域 (支持) ，以确保用户已同意适当的权限。 |
 | version | version | 进行 GET 请求时使用的可选 API 版本。 默认值为“`v1.0`”。  |
 | max-pages | maxPages | 支持分页 (的资源的可选页面) 。 默认值为 3。 将此值设置为 0 将获取所有页面。  |
@@ -36,8 +36,8 @@ ms.locfileid: "52266580"
 | 启用缓存 | cacheEnabled | 可选属性，类型为 Boolean。 设置后，它指示将缓存来自资源的响应。 Overriden if `refresh()` is called or if is in `pollingRate` use. 默认值为“`false`”。 |
 | cache-invalidation-period | cacheInvalidationPeriod | 可选毫秒数。 如果与 一起设置 ，则此值将修改缓存达到其无效时段 `cacheEnabled` 前的延迟。 默认值为 `0` ，将使用默认无效时段。 |
 | type | type | 预期响应的可选类型。 默认值为“`json`”。 仅在 (终结点上支持或 `json` `image` 支持 `/photo/value$`) 。 |
-| 不适用 | 响应 | 如果请求成功，来自 Microsoft Graph 的只读响应。  |
-| 不适用 |error| 如果请求未成功，Microsoft Graph 中出现只读错误。 |
+| 不适用 | 响应 | 如果请求成功，Microsoft Graph只读响应。  |
+| 不适用 |error| 如果请求失败，Microsoft Graph只读错误。 |
 
 ## <a name="methods"></a>方法
 | 方法 | 说明 |
@@ -45,7 +45,7 @@ ms.locfileid: "52266580"
 | refresh (force？：boolean)  | 调用 方法以刷新数据。 默认情况下，UI 仅在数据发生更改时更新。 传递 `true` 以强制组件更新。  |
 
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 | 事件 | 详情 | 说明 |
 | --- | --- | --- |
 | dataChange | 详细信息包含 `response` 和 `error` 对象。 | 响应或错误更改时触发。 |
@@ -56,14 +56,14 @@ ms.locfileid: "52266580"
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
-| default | 来自 Microsoft Graph 的响应。 | 需要默认模板才能呈现来自 Microsoft Graph 的数据。 |
+| default | 来自 Microsoft Graph。 | 需要默认模板才能呈现来自 Microsoft Graph。 |
 | 值 | 返回的数组的数据 `value` 项 | 当预期来自图形的响应包含项目数组（如消息、文件或用户）时，请使用模板而不是 `value` `default` **模板**。   将自动 `value` 为资源返回的每个项目重复模板。 模板还会在准备好项目后立即开始呈现 (`value` 默认模板) 。|
-| error | Microsoft Graph 中的错误。 | 如果提出请求出错，将使用此模板。 |
+| error | Microsoft 错误Graph。 | 如果提出请求出错，将使用此模板。 |
 | loading | 不适用 | 请求时使用此模板。 |
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-有关权限详细信息，请参阅 Microsoft Graph [权限参考](../../permissions-reference.md)。 
+此组件所需的权限取决于你要通过 Microsoft Graph 检索到的数据。 有关权限详细信息，请参阅 Microsoft Graph[权限参考](../../permissions-reference.md)。
 
 ## <a name="authentication"></a>身份验证
 
@@ -75,6 +75,6 @@ ms.locfileid: "52266580"
 
 |对象存储|缓存数据|备注|
 |-----------|-----------|-------|
-|`response`|从 Microsoft Graph 检索到的完整响应，该响应针对 的 `resource` 属性中指定的查询 `mgt-get`|
+|`response`|从 Microsoft 查询Graph为 属性中指定的查询 `resource` 的完整响应`mgt-get`|
 
-有关详细信息 [，](../customize-components/cache.md) 请参阅缓存。
+有关详细信息[Caching](../customize-components/cache.md)请参阅 Caching。

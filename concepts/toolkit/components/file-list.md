@@ -3,12 +3,12 @@ title: Microsoft 服务中的文件列表Graph Toolkit
 description: 文件列表组件用于通过显示文件图标和名称来显示文件列表
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: bde548e843170de6cd1234f14096339859d4b99b
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: cfd4543cad98864a423699e4ed6cde7dc82ee6fb
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629166"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781091"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件列表Graph Toolkit
 
@@ -71,7 +71,7 @@ ms.locfileid: "52629166"
 <mgt-file-list insight-type="shared"></mgt-file-list>
 ```
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 | 方法 | 说明 |
 | --- | --- |
 | reload (clearCache = false)  | 调用 方法，根据组件的属性使用潜在的新数据重新加载组件。 传递 `true` 以在重新加载之前清除缓存。 |
@@ -114,12 +114,12 @@ mgt-file-list {
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>Microsoft Graph API 和权限
 
-| 配置 | Permissions | API |
+| 配置 | 权限 | API |
 | ------------- | ----------------- | --- |
-| 默认 (未提供标识符或)  | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root/children`   |
+| 默认 (未提供标识符或)  | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root/children` |
 | 提供 `{drive-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
 | 提供 `{group-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}/children` |
-| 仅提供 `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/items/{item-id}/children` | 
+| 仅提供 `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/items/{item-id}/children` |
 | 提供 `{site-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}/children` |
 | Pprovide `{user-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
 | 提供 `{drive-id}` AND `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}:/children` |
@@ -128,7 +128,7 @@ mgt-file-list {
 | 提供 `{user-id}` AND `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /users/{user-id}/root:/{item-path}:/children` |
 | 仅提供 `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
 | `insight-type` 设置为趋势 | Sites.Read.All | `GET /me/insights/trending` |
-| " `{user-id or upn}` `insight-type` 提供 AND"设置为 `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` | 
+| " `{user-id or upn}` `insight-type` 提供 AND"设置为 `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
 | `insight-type` 设置为 `used` | Sites.Read.All | `GET /me/insights/used` |
 | " `{user-id or upn}` `insight-type` 提供 AND"设置为 `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
 | `insight-type` 设置为共享 | Sites.Read.All | `GET /me/insights/shared` |

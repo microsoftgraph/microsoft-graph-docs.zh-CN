@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5f121c5cc6a3422b7945dfb5c249ae72a706a548
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 1d42b90f2e9d89edb3d7c138a14616221b0ec42d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665544"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788113"
 ---
 # <a name="call-redirect"></a>call： redirect
 
@@ -163,8 +163,7 @@ Content-Type: application/json
 ##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -337,8 +336,7 @@ Content-Type: application/json
 ##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ``` http
@@ -491,8 +489,7 @@ Content-Type: application/json
 #### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

@@ -3,12 +3,12 @@ title: Microsoft 服务中的人员Graph Toolkit
 description: 人员组件用于通过使用联系人的照片、姓名和/或电子邮件地址来显示此人或联系人。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 46ba7c780985e71d68fe9270f165292136f2e46b
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 3020c652fa08c78fecd53469af0e21622f9afcff
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579947"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780993"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
@@ -209,15 +209,20 @@ MgtPerson.config.useContactApis = false;
 
 此控件使用下列 Microsoft Graph API 和权限。
 
-| 资源 | 权限     |
-| -| - |
-| [/me](/graph/api/user-get)                              | User.Read          |
-| [/me/photo/$value](/graph/api/profilephoto-get)        | User.Read          |
-| [/me/people/？$search=](/graph/api/user-list-people)     | People.Read        |
-| [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](/graph/api/user-list-people) | User.ReadBasic.All |
-| [/me/presence](/graph/api/presence-get)                | Presence.Read |
-| [/users/{id}/presence](/graph/api/presence-get)        | Presence.Read.All |
+| 配置 | 权限 | API |
+| ------------- | ---------- | --- |
+| `personDetails` set without image， `fetchImage` set to ， set to ， `true` `avatarType` `photo` retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image， `fetchImage` set to ， set to and person is not a contact or is set `true` `avatarType` `photo` `useContactApis` to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image， `fetchImage` set to ， set to and user specified via `true` `avatarType` `photo` email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image， `fetchImage` set to ， set to and contact specified via `true` `avatarType` `photo` email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `userId` set | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people) |
+| `personQuery` 设置为 `me` ， `avatarType` 设置为 `photo` | User.Read | [/me/photo/$value](/graph/api/profilephoto-get) |
+| `personQuery` 设置为 `me` ， `avatarType` 并设置为其他内容 `photo` | User.Read | [/me](/graph/api/user-get) |
+| `personQuery` 设置为值，而不是 `me` `useContactApis` 设置为 `true` | People.Read、User.ReadBasic.All、Contacts.Read | [/me/people/？$search=](/graph/api/user-list-people)、 [/users？$search=](/graph/api/user-list-people)、 [/me/contacts/ \* ](/graph/api/user-list-contacts) |
+| `personQuery` 设置为值，而不是 `me` `useContactApis` 设置为 `false` | People.Read、User.ReadBasic.All | [/me/people/？$search=](/graph/api/user-list-people)、 [/users？$search=](/graph/api/user-list-people) |
+| `showPresence` 设置为 `true` ， `personQuery` 设置为 `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
+| `showPresence` 设置为 `true` 并 `personQuery` 设置为 `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
+| `personCardInteraction` 设置为除 `PersonCardInteraction.none` | 查看 [个人卡片权限](/graph/toolkit/components/person-card#microsoft-graph-permissions) | 查看 [个人卡片 API 调用](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
 
 ## <a name="authentication"></a>身份验证
 

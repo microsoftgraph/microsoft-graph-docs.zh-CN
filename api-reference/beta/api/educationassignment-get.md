@@ -1,16 +1,16 @@
 ---
 title: 获取 educationAssignment
-description: 获取工作分配的属性和关系。
+description: 获取给定分配的属性和关系。 请注意，教师和应用程序可以在课堂中查看所有作业。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 665e035c55ff68b81d1e3e73c3b086843c8b16cd
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: d170f2c87107161f920e13b1717afe2adfc721a3
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629206"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780804"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "52629206"
 
 学生只能看到分配给他们的作业;教师和具有应用程序权限的应用程序可以看到课程的所有作业。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -98,6 +98,7 @@ Content-length: 279
 {
   "id": "19002",
   "addedStudentAction": "none",
+  "addToCalendarAction": "studentsAndPublisher",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",

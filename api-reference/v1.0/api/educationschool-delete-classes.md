@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7b71f1f104a15b1772f92717cac6136f29b2a565
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6ea143eed918df6513ad95a04ca143bdb4337847
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956601"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788141"
 ---
 # <a name="remove-educationclass"></a>删除 educationClass
 
@@ -79,9 +79,7 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes/{c
 下面展示了示例响应。 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
