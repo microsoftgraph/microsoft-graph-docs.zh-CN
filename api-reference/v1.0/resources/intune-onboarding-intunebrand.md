@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 062a42cced84afc4205e4f78511a5cf058da8626
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 346966fdcb3cfc8b3c4c24e55f4a07e46c97a612
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066381"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751270"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 intuneBrand 包含在自定义公司门户应用程序以及最终用户网页版门户的外观时使用的数据。
 
@@ -24,19 +24,19 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|向最终用户显示的公司/组织名称。|
-|contactITName|String|负责 IT 支持的员工/组织名称。|
-|contactITPhoneNumber|String|负责 IT 支持的员工/组织的电话号码。|
-|contactITEmailAddress|String|负责 IT 支持的员工/组织的电子邮件地址。|
-|contactITNotes|String|负责 IT 支持的员工/组织的文本注释。|
-|privacyUrl|String|指向公司/组织隐私策略的 URL。|
-|onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
-|onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
 |themeColor|[rgbColor](../resources/intune-onboarding-rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
 |showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有浅色背景。|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有深色背景。|
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
+|contactITName|String|负责 IT 支持的员工/组织名称。|
+|contactITPhoneNumber|String|负责 IT 支持的员工/组织的电话号码。|
+|contactITEmailAddress|String|负责 IT 支持的员工/组织的电子邮件地址。|
+|contactITNotes|String|负责 IT 支持的员工/组织的文本注释。|
+|onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
+|onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
+|privacyUrl|String|指向公司/组织隐私策略的 URL。|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,13 +52,6 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 {
   "@odata.type": "#microsoft.graph.intuneBrand",
   "displayName": "String",
-  "contactITName": "String",
-  "contactITPhoneNumber": "String",
-  "contactITEmailAddress": "String",
-  "contactITNotes": "String",
-  "privacyUrl": "String",
-  "onlineSupportSiteUrl": "String",
-  "onlineSupportSiteName": "String",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1024,
@@ -77,14 +70,16 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
     "value": "binary"
   },
   "showNameNextToLogo": true,
-  "showDisplayNameNextToLogo": true
+  "showDisplayNameNextToLogo": true,
+  "contactITName": "String",
+  "contactITPhoneNumber": "String",
+  "contactITEmailAddress": "String",
+  "contactITNotes": "String",
+  "onlineSupportSiteUrl": "String",
+  "onlineSupportSiteName": "String",
+  "privacyUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 457064b9dfa866d0d5bfe8285b495ecd3f8a4fe4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 92f0baad4908d097cd696c34dc3b51e77814650f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048461"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751068"
 ---
 # <a name="list-accessreview-reviewers"></a>列出 accessReview 审阅者
 
@@ -45,7 +45,7 @@ GET /accessReviews/{reviewId}/reviewers
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [userIdentity](../resources/useridentity.md) 对象数组。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userIdentity](../resources/useridentity.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -102,7 +102,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |说明|
+| 方法           | 返回类型    |Description|
 |:---------------|:--------|:----------|
 |[获取 accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  检索访问评审。 |
 |[添加 accessReview 审阅者](accessreview-addreviewer.md) |     无。   |   将审阅者添加到 accessReview。 |

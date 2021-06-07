@@ -5,23 +5,23 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 19031cc7f975b9d333573187026902d270664fe0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf2312fd27e724dc3740d7b52c46d7b27c7318c3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066409"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751592"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示与 Exchange 环境的连接的实体。
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 deviceManagementExchangeConnectors](../api/intune-onboarding-devicemanagementexchangeconnector-list.md)|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 集合|列出 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象的属性和关系。|
 |[获取 deviceManagementExchangeConnector](../api/intune-onboarding-devicemanagementexchangeconnector-get.md)|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|读取 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象的属性和关系。|
@@ -35,9 +35,9 @@ ms.locfileid: "48066409"
 |:---|:---|:---|
 |id|String|尚未记录|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector 的上一次同步时间|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector 状态。 可取值为：`none`、`connectionPending`、`connected`、`disconnected`。|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange连接器状态。 可取值为：`none`、`connectionPending`、`connected`、`disconnected`。|
 |primarySmtpAddress|String|用于配置服务到服务 Exchange Connector 的电子邮件地址。|
-|serverName|String|Exchange 服务器的名称。|
+|serverName|String|服务器的名称Exchange服务器。|
 |connectorServerName|String|托管 Exchange Connector 的服务器的名称。|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|配置的 Exchange Connector 的类型。 可取值为：`onPremises`、`hosted`、`serviceToService`、`dedicated`。|
 |version|String|ExchangeConnectorAgent 版本|
@@ -70,11 +70,6 @@ ms.locfileid: "48066409"
   "exchangeOrganization": "String"
 }
 ```
-
-
-
-
-
 
 
 

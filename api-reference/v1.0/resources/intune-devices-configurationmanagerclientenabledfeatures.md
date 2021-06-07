@@ -5,23 +5,23 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ea873333002e543a95746b1168b36a6263277ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9d7cab901b78eb980a3617735e94a892f11d634
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091297"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751697"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Configuration Manager 客户端已启用的功能
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |inventory|Boolean|目录是否由 Intune 管理|
 |modernApps|Boolean|现代应用程序是否由 Intune 管理|
@@ -51,11 +51,6 @@ Configuration Manager 客户端已启用的功能
   "windowsUpdateForBusiness": true
 }
 ```
-
-
-
-
-
 
 
 

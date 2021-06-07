@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fd3e052db75b7f66e7814420aa7dcc288def1b1e
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 8c8d27d86312ac87b891fbe5c66c0b90de2f9219
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201717"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52750978"
 ---
 # <a name="get-appconsentrequest"></a>获取 appConsentRequest
 命名空间：microsoft.graph
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

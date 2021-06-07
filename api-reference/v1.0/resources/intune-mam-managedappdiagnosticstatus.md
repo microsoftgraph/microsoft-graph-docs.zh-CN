@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c708da33594087b61b1c28e2ebac5b8872541838
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 824bcb13741240b1f5bc462312004892ccd5c051
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041307"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751319"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示诊断状态。
 
@@ -45,11 +45,6 @@ ms.locfileid: "48041307"
   "mitigationInstruction": "String"
 }
 ```
-
-
-
-
-
 
 
 

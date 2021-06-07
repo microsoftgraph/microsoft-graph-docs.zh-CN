@@ -5,26 +5,26 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c334a8933bbf3d91ffce808fabf306d9b4186f8e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0dbc03daafdf5ecc97d3339fc9d57287d4390c6d
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048419"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751627"
 ---
 # <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>mdmWindowsInformationProtectionPolicy 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 使用 MDM 进行 Windows 信息保护的策略
 
 
 继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[List mdmWindowsInformationProtectionPolicies](../api/intune-mam-mdmwindowsinformationprotectionpolicy-list.md)|[mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md) 集合|列出 [mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md) 对象的属性和关系。|
 |[Get mdmWindowsInformationProtectionPolicy](../api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md)|[mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md)|读取 [mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md) 对象的属性和关系。|
@@ -36,12 +36,12 @@ ms.locfileid: "48048419"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|WIP 强制等级。若要获取从 [WindowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)继承的受支持值的枚举定义，请参阅。 可取值为：`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`。|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|WIP 强制级别。请参阅 Enum 定义了解受支持的值 继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)。 可取值为：`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`。|
 |enterpriseDomain|String|主企业域。继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md) 集合|要保护的企业域列表。继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |protectionUnderLockConfigRequired|Boolean|指定是否应配置锁定功能下的保护（也称为 PIN 下的加密）。继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
@@ -65,7 +65,7 @@ ms.locfileid: "48048419"
 |isAssigned|Boolean|指示策略是否部署到任何包含组。 继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 集合|通过 xml 文件输入受保护应用的另一种方法 继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 集合|通过 xml 文件输入豁免应用的另一种方法 继承自 [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
@@ -113,7 +113,7 @@ ms.locfileid: "48048419"
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -123,7 +123,7 @@ ms.locfileid: "48048419"
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -208,11 +208,6 @@ ms.locfileid: "48048419"
   "isAssigned": true
 }
 ```
-
-
-
-
-
 
 
 

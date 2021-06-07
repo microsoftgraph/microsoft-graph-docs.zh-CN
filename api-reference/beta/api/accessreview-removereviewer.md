@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 83f136a3a9c131d5a05df92df2f3c3e3d3b6c75c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6f08fcd2b7b913de9dbe8d44f07f99d646f41560
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439297"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751034"
 ---
 # <a name="remove-accessreview-reviewer"></a>删除 accessReview 审阅者
 
@@ -18,17 +18,17 @@ ms.locfileid: "50439297"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以删除作为审阅者的用户。  仅允许对尚未完成的访问评审执行此操作，并且仅允许对明确指定审阅者的访问评审执行此操作。 不允许此操作进行访问评审，在此审阅中，用户查看自己的访问权限，而不是用于组所有者被分配为审阅者的访问评审。 
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以删除作为审阅者的用户。  仅允许对尚未完成的访问评审进行此操作，并且仅允许对明确指定审阅者的访问评审执行此操作。 不允许此操作进行访问评审，用户在此审阅自己的访问权限时，不应进行组所有者分配为审阅者的访问评审。 
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.Membership、AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview.ReadWrite.Membership |
+|应用程序                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +45,11 @@ DELETE /accessReviews/{reviewId}/reviewers/{userId}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回 200 系列响应代码。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 
-这是一个更新一次检查 (不重复) 访问评审以删除不必要的审阅者的示例。
+这是一个更新一次检查， (访问评审) 不必要的审阅者的示例。
 
 
 ##### <a name="request"></a>请求

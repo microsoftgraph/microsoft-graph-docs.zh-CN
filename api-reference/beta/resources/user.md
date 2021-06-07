@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: fd3c48ca0f00d2c3c47ee2a0799d72129a5a0d4b
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 29695f3af6ca6ac218d766aba203bfb9f8ac4212
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645561"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751235"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -40,6 +40,7 @@ ms.locfileid: "52645561"
 | [Update user](../api/user-update.md) | [user](user.md) | 更新 user 对象。 |
 | [Delete user](../api/user-delete.md) | None | 删除 user 对象。 |
 | [Get delta](../api/user-delta.md) | 用户集合 | 获取用户的增量更改。 |
+| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | 无 | 使发给应用程序的所有用户刷新令牌无效。 |
 | **应用角色分配**|||
 | [列出 appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) 集合 | 获取分配给此用户的应用和应用角色。 |
 | [添加 appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | 为此用户分配应用角色。 |

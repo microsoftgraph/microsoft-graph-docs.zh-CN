@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 31f065033d1980c8a1ab640294f52f893a1f02f0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a4ab7557b3425987b838335e43219fee802ef513
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048468"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751102"
 ---
 # <a name="list-my-accessreview-decisions"></a>列出我的 accessReview 决策
 
@@ -44,7 +44,7 @@ GET /accessReviews/{reviewId}/myDecisions
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组，调用用户为其分配了审阅者。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组，调用用户为其分配了审阅者。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -104,7 +104,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |说明|
+| 方法           | 返回类型    |Description|
 |:---------------|:--------|:----------|
 |[获取 accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  检索访问评审。 |
 |[列出 accessReview 决策](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md) 集合|    检索 accessReview 的所有决策。|

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a52bf694b30aeb18efd32c437963b73af44d97b5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98768a3fe6a7f7e10814ac3391d75f0c827ce40a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967581"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751298"
 ---
 # <a name="managedbrowsertype-enum-type"></a>managedBrowserType 枚举类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 托管浏览器的类型
 
@@ -24,8 +24,7 @@ ms.locfileid: "47967581"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|microsoftEdge|1 |Microsoft Edge|
-
+|microsoftEdge|1|Microsoft Edge|
 
 
 

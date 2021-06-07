@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ee7c54ef785c53489e9512b52b8ed0789a0e59a0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3005c6b8c3fbed81e89de62ff1e3e756cce6bd4a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048475"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751027"
 ---
 # <a name="reset-accessreview"></a>Reset accessReview
 
@@ -20,7 +20,7 @@ ms.locfileid: "52048475"
 
 在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，重置当前处于活动状态的 [accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  不再记录以前的决策，但审阅者可以继续更新决策。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ POST /accessReviews/{reviewId}/resetDecisions
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -76,7 +76,6 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 ---
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

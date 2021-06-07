@@ -4,18 +4,18 @@ description: 使用访问评审 API 查看对安全组的访问权限
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: bc8796bee1297e125ad287d5151c709cf58fb222
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: b88c135c488b332814105dcab992e3a2a4ac465b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921066"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751130"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>教程：使用访问评审 API 查看对安全组的访问权限
 
-在本教程中，你将使用 Graph 浏览器查看对租户中安全组的访问权限。
+在本教程中，你将使用 Graph 资源管理器查看对租户中安全组的访问权限。
 
-可以使用 Graph 浏览器或 Postman 尝试和测试访问评审 API 调用，然后再将它们自动化到脚本或应用中。 这通过帮助您正确定义和验证查询而无需重复重新编译应用程序来节省时间。
+可以使用浏览器Graph Postman 尝试和测试访问评审 API 调用，然后再将它们自动化到脚本或应用中。 这通过帮助您正确定义和验证查询而无需重复重新编译应用程序来节省时间。
 
 >[!NOTE]
 >为了可读性，本教程中显示的响应对象可能会缩短。
@@ -24,12 +24,12 @@ ms.locfileid: "51921066"
 
 若要完成本教程，需要以下资源和权限：
 
-+ 启用 Azure AD Premium P2 或 EMS E5 许可证的工作 Azure AD 租户。
-+ 以用户 [登录 Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 全局管理员角色。
++ 启用 Azure AD 或 EMS E5 许可证高级版 Azure AD 租户。
++ 以用户[Graph](https://developer.microsoft.com/graph/graph-explorer)登录资源管理器全局管理员角色。
   + [可选]启动新的 **隐身** 或 **InPrivate** 浏览器会话或在匿名浏览器中启动会话。 你将在本教程的稍后部分登录。
 + 以下委派权限 `AccessReview.ReadWrite.All` `Group.ReadWrite.All` ：、。
 
-若要同意 Graph 浏览器中所需的权限：
+若要同意在浏览器浏览器中Graph权限：
 1. 选择用户帐户详细信息右边的设置齿轮图标，然后选择"**选择权限"。**
    
    ![选择 Microsoft Graph 权限](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
@@ -41,7 +41,7 @@ ms.locfileid: "51921066"
   
     选择 **"** 同意"，然后在弹出窗口中选择"代表你的组织同意"，然后选择"接受"接受权限同意。
    
-   ![同意 Microsoft Graph 权限](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
+   ![同意 Microsoft Graph权限](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
 
 ## <a name="step-1-create-test-users-in-your-tenant"></a>步骤 1：在租户内创建测试用户
@@ -140,6 +140,7 @@ Content-type: application/json
 ### <a name="request"></a>请求
 在此调用中，替换以下内容：
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c`具有 **"生成****安全组"的 ID。**
++ 作用域指定将审阅应用于"生成安全"组 **的所有组的成员**。 有关配置范围的更多选项，请参阅另 [请参阅部分](#see-also) 。
 + **startDate** 的值，其当前日期和 **endDate** 值，其日期为从开始日期起一年。
 
 如果未能指定 **reviewers** 属性的值，则此访问评审被配置为具有审阅者的成员的自我审阅。
@@ -370,11 +371,11 @@ Content-type: application/json
 1. 列出待处理的访问评审实例。
 2. 完成访问评审自证明过程。
 
-在隐身或 **InPrivate** 浏览模式下，或通过匿名浏览器启动新的浏览器会话，并作为构建安全组的两个成员之 **一登录**。  这样，你将不会作为用户中断当前会话，全局管理员角色。 或者，可以通过注销 Graph 浏览器并作为两个组的成员之一重新登录来中断当前会话。
+在隐身或 **InPrivate** 浏览模式下，或通过匿名浏览器启动新的浏览器会话，并作为构建安全组的两个成员之 **一登录**。  这样，你将不会作为用户中断当前会话，全局管理员角色。 或者，你可以中断当前会话，Graph资源管理器中注销并作为两个组的成员之一重新登录。
 
 ### <a name="list-your-pending-access-review-instances"></a>列出待处理的访问评审实例
 
-在隐身浏览器会话和 Graph 浏览器中，运行以下查询以列出待定访问评审实例：
+在隐身浏览器会话和 Graph 资源管理器中，运行以下查询以列出待定访问评审实例：
 
 #### <a name="request"></a>请求
 
@@ -477,11 +478,8 @@ Content-type: text/plain
 
 ## <a name="see-also"></a>另请参阅
 
-+ [访问评审概述和许可证要求](/azure/active-directory/governance/access-reviews-overview)
-+ [访问评审许可证方案](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
-+ [创建对应用程序应用程序的组&评审](/azure/active-directory/governance/create-access-review)
 + [访问评审 API 参考](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [创建 accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [列出 accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [列出 accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
++ [使用 Microsoft Graph API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)
++ [访问评审概述和许可证要求](/azure/active-directory/governance/access-reviews-overview)
++ [创建对应用程序应用程序的组&评审](/azure/active-directory/governance/create-access-review)
 

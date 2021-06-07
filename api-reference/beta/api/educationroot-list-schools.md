@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 26f5011fabd2f6a89841a3ea2fc680d7d09bd15f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5979de05618fee206dce7db9374f2d374d3a738f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043680"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751305"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
 
@@ -107,36 +107,36 @@ Content-type: application/json
 Content-length: 345
 
 {
-  "value": [
-    {
-      "id": "10001",
-      "displayName": "Contoso High School",
-      "description": "Public 9-12 high school",
-      "status": "active",
-      "externalSource": "sis",
-      "principalEmail": "amyr@contoso.com",
-      "principalName": "Amy Roebuck",
-      "externalPrincipalId": "14007",
-      "highestGrade": "12",
-      "lowestGrade": "9",
-      "schoolNumber": "10001",
-      "address": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
-      "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
-      "externalId": "10001",
-      "phone": "+1 (253) 555-0102",
-    }
-  ]
+   "value":[
+      {
+         "id":"10001",
+         "displayName":"Contoso High School",
+         "description":"Public 9-12 high school",
+         "status":"active",
+         "externalSource":"sis",
+         "principalEmail":"amyr@contoso.com",
+         "principalName":"Amy Roebuck",
+         "externalPrincipalId":"14007",
+         "highestGrade":"12",
+         "lowestGrade":"9",
+         "schoolNumber":"10001",
+         "address":{
+            "city":"Los Angeles",
+            "countryOrRegion":"United States",
+            "postalCode":"98055",
+            "state":"CA",
+            "street":"12345 Main St."
+         },
+         "createdBy":{
+            "user":{
+               "displayName":"Susana Rocha",
+               "id":"14012"
+            }
+         },
+         "externalId":"10001",
+         "phone":"+1 (253) 555-0102"
+      }
+   ]
 }
 ```
 

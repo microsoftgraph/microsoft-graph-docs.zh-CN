@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 44a6449012f3ac1032f8c442280b8aff58cb009b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9ca0dffdc48e059e303e05afac791a8d431f5600
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048447"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751013"
 ---
 # <a name="stop-accessreview"></a>Stop accessReview
 
@@ -43,7 +43,7 @@ POST /accessReviews/{reviewId}/stop
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -75,7 +75,6 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 ---
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

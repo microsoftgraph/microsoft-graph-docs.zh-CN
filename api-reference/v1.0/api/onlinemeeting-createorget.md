@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 962ed5d23fa8c1e615846c02e376b1a9ad0155fd
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: def026c90d5cd311d3c6f1ddb4a7b7276c13aea9
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869881"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751438"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting：createOrGet
 
@@ -30,7 +30,7 @@ ms.locfileid: "51869881"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)策略，并授予用户该策略，授权策略中配置的应用代表该用户在请求路径) 中指定的 (用户 ID 创建或获取具有外部 ID 的联机会议。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户该策略，授权策略中配置的应用代表该用户在请求路径) 中指定的 (用户 ID 创建或获取具有外部 ID 的联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 使用委派 **令牌调用 createOrGet** API：
@@ -46,7 +46,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
 > [!NOTE]
-> `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -57,7 +57,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数        | 类型                                     |说明                                                                                                                                    |
+| 参数        | 类型                                     |Description                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
 | endDateTime      | 日期时间                                 | 会议结束时间（UTC）。 |
 | externalId       | String                                   | 外部 ID。 自定义 ID。  (必需)  |

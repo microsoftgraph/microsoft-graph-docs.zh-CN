@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a3566889236934a2b0668cecd50c8b5b860e61cb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 23813096fb625e9598347bde0628c7dd6f407296
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048482"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751109"
 ---
 # <a name="list-accessreview-decisions"></a>列出 accessReview 决策
 
@@ -20,7 +20,7 @@ ms.locfileid: "52048482"
 
 在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，检索 [accessReview 对象](../resources/accessreview.md) 的决策。
 
-请注意，定期访问评审没有 `decisions` 关系。  相反，调用方必须导航 `instance` 关系以查找访问评审 `accessReview` 的当前或过去实例的对象。
+请注意，定期访问评审 **将没有决策** 关系。  相反，调用方必须导航 **实例** 关系以查找访问评审的当前或过去实例的 [accessReview](../resources/accessreview.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ GET /accessReviews/{reviewId}/decisions
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200, OK` [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessReviewDecision](../resources/accessreviewdecision.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

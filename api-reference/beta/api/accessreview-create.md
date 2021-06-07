@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8942fc5db772b33ca50f0e71f939c9b04bb8b948
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fd1f6c25dcc4013c1abc3d39dafa63723a1e3ea0
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048510"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751116"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -20,7 +20,7 @@ ms.locfileid: "52048510"
 
 在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，创建新的 [accessReview](../resources/accessreview.md) 对象。
 
-进行此请求之前，调用方之前必须已检索[](businessflowtemplate-list.md)到业务流模板的列表，才能将 的值包括在 `businessFlowTemplateId` 请求中。
+进行此请求之前，调用方之前必须已检索 [](businessflowtemplate-list.md)到业务流模板的列表，才能将 **businessFlowTemplateId** 的值包括在请求中。
 
 提出此请求后，调用方应 [创建 programControl，](programcontrol-create.md)以将访问评审链接到程序。  
 
@@ -55,24 +55,24 @@ POST /accessReviews
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | 访问评审名称。  |
-| `startDateTime`           |`DateTimeOffset`                                                | 计划开始审阅的 DateTime。  这必须是将来的日期。   |
-| `endDateTime`             |`DateTimeOffset`                                                | 计划结束审阅的 DateTime。 这必须至少比开始日期晚一天。   |
-| `description`             |`String`                                                        | 向审阅者显示的说明。 |
-| `businessFlowTemplateId`  |`String`                                                        | 从 [businessFlowTemplate](../resources/businessflowtemplate.md)获取的业务流程模板标识符。  |
-| `reviewerType`            |`String`                                                        | 审阅者对被审阅对象的访问权的关系类型，如 、 或 `self` `delegated` `entityOwners` 。 | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | 创建访问评审的对象，例如组的成员身份或用户到应用程序的分配。 | 
+| displayName             |String                                                        | 访问评审名称。  |
+| startDateTime           |DateTimeOffset                                                | 计划开始审阅的 DateTime。  这必须是将来的日期。   |
+| endDateTime             |DateTimeOffset                                                | 计划结束审阅的 DateTime。 这必须至少比开始日期晚一天。   |
+| 说明             |String                                                        | 向审阅者显示的说明。 |
+| businessFlowTemplateId  |String                                                        | 从 [businessFlowTemplate](../resources/businessflowtemplate.md)获取的业务流程模板标识符。  |
+| reviewerType            |String                                                        | 审阅者对被审阅对象的访问权的关系类型，如 、 或 `self` `delegated` `entityOwners` 。 | 
+| reviewedEntity          |[identity](../resources/identity.md)                                     | 创建访问评审的对象，例如组的成员身份或用户到应用程序的分配。 | 
 
 
-如果提供的 reviewerType 具有值 ，则调用方还必须包含 属性，并包含 `delegated` `reviewers` [审阅者的 userIdentity](../resources/useridentity.md) 集合。
+如果 **reviewerType** 具有值，则调用方还必须包含 `delegated` **reviewers** 属性，其中 [userIdentity](../resources/useridentity.md) 对象集合代表审阅者。
 
 如果你的应用在没有登录用户的情况下调用此 API，则调用方还必须包含 **createdBy** 属性，其值为将被标识为评价创建者的用户的 [userIdentity。](../resources/useridentity.md)
 
-此外，呼叫者还可以包括设置，以创建定期审阅系列或更改默认审阅行为。 具体而言，若要创建定期审阅，呼叫者必须在访问评审 `accessReviewRecurrenceSettings` 设置中包括，
+此外，呼叫者可以包含 **设置**，以创建定期审阅系列或更改默认审阅行为。 具体而言，若要创建定期审阅，呼叫者必须在访问评审设置中包括[accessReviewRecurrenceSettings，](../resources/accessreviewrecurrencesettings.md)
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201, Created` 正文中返回 响应代码和 [accessReview](../resources/accessreview.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [accessReview](../resources/accessreview.md) 对象。
 
 ## <a name="example"></a>示例
 

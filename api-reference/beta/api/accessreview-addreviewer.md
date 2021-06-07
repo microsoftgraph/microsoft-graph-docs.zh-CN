@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d453b20bfe9e1f897e87b21945b124ec7ed45d2c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 90c64ee1bb52c9149e16658c5b8a1cd11a97c51b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048517"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751123"
 ---
 # <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅者
 
@@ -47,11 +47,11 @@ POST /accessReviews/{reviewId}/reviewers
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| `id`        | `String`   | 用户 ID。|
+| id        | String   | 用户 ID。|
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 响应 `201, Created` 代码 。
+如果成功，此方法返回 响应 `201 Created` 代码 。
 
 ## <a name="example"></a>示例
 
@@ -94,7 +94,6 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

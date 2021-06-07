@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1b3870b4d44847d93fb2438c9f61d8ac3529433e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 817cf535c68a775c7a90a639e09120e226c46115
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048440"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751006"
 ---
 # <a name="update-accessreview"></a>更新 accessReview
 
@@ -47,17 +47,17 @@ PATCH /accessReviews/{reviewId}
 
 下表显示更新 accessReview 时提供的属性。
 
-| 属性     | 类型        | 说明 |
-|:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | 访问评审名称。  |
-| `startDateTime`           |`DateTimeOffset`                                                | 计划开始审阅的 DateTime。  这必须是将来的日期。   |
-| `endDateTime`             |`DateTimeOffset`                                                | 计划结束审阅的 DateTime。 这必须至少比开始日期晚一天。   |
-| `description`             |`String`                                                        | 向审阅者显示的说明。 |
+| 属性      | 类型           | 说明                                                                                                |
+|:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
+| displayName   | String         | 访问评审名称。                                                                                    |
+| startDateTime | DateTimeOffset | 计划开始审阅的 DateTime。  这必须是将来的日期。                 |
+| endDateTime   | DateTimeOffset | 计划结束审阅的 DateTime。 这必须至少比开始日期晚一天。 |
+| 说明   | String         | 向审阅者显示的说明。                                                                 |
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `204, Accepted` 正文中返回 响应代码和 [accessReview](../resources/accessreview.md) 对象。
+如果成功，此方法在响应 `204 Accepted` 正文中返回 响应代码和 [accessReview](../resources/accessreview.md) 对象。
 
 ## <a name="example"></a>示例
 
