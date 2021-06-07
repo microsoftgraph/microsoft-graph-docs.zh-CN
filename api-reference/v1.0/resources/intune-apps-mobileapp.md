@@ -5,23 +5,23 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4124a114a60f20f6540cdef7ba97787f980afdb0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1682c08e4fb15de6e5fc9d66d86d83c832e4c27
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094446"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752418"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 Intune 移动应用基属性的抽象类。
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[List mobileApps](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-apps-mobileapp.md) 集合|列出 [mobileApp](../resources/intune-apps-mobileapp.md) 对象的属性和关系。|
 |[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|读取 [mobileApp](../resources/intune-apps-mobileapp.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "48094446"
 |:---|:---|:---|
 |id|String|实体的键。|
 |displayName|String|管理员提供或导入的应用标题。|
-|description|String|应用的说明。|
+|说明|String|应用的说明。|
 |publisher|String|应用的发布者。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。|
@@ -40,13 +40,13 @@ ms.locfileid: "48094446"
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。|
 |privacyInformationUrl|String|隐私声明 Url。|
 |informationUrl|String|详细信息 Url。|
-|owner|String|应用的所有者。|
+|所有者|String|应用的所有者。|
 |developer|String|应用的开发者。|
 |notes|String|应用的备注。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 可取值为：`notPublished`、`processing`、`published`。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配列表。|
@@ -82,11 +82,6 @@ ms.locfileid: "48094446"
   "publishingState": "String"
 }
 ```
-
-
-
-
-
 
 
 
