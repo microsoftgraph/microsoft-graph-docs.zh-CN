@@ -1,33 +1,33 @@
 ---
-title: 删除 deviceCompliancePolicyAssignment
-description: 删除 deviceCompliancePolicyAssignment。
+title: 更新 deviceAppManagement
+description: 更新 deviceAppManagement 对象的属性。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4044bf539760da5b789883179f0b2fd12d5ecb43
+ms.openlocfilehash: a63eb9342f906b6ebf277bfbbb94b52ce0894b5f
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748514"
+ms.locfileid: "52748964"
 ---
-# <a name="delete-devicecompliancepolicyassignment"></a>删除 deviceCompliancePolicyAssignment
+# <a name="update-deviceappmanagement"></a>更新 deviceAppManagement
 
 命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)。
+更新 [deviceAppManagement](../resources/intune-partnerintegration-deviceappmanagement.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -35,7 +35,7 @@ ms.locfileid: "52748514"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+PATCH /deviceAppManagement
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -45,23 +45,44 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/ass
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供 [deviceAppManagement](../resources/intune-partnerintegration-deviceappmanagement.md) 对象的 JSON 表示形式。
+
+下表显示创建 [deviceAppManagement](../resources/intune-partnerintegration-deviceappmanagement.md) 时所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|实体的键。|
+
+
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceAppManagement](../resources/intune-partnerintegration-deviceappmanagement.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement
+Content-type: application/json
+Content-length: 61
+
+{
+  "@odata.type": "#microsoft.graph.deviceAppManagement"
+}
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 110
+
+{
+  "@odata.type": "#microsoft.graph.deviceAppManagement",
+  "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
+}
 ```
 
 

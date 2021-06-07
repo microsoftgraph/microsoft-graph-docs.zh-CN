@@ -1,24 +1,24 @@
 ---
-title: 获取 deviceCompliancePolicySettingStateSummary
-description: 读取 deviceCompliancePolicySettingStateSummary 对象的属性和关系。
+title: 获取 deviceAppManagement
+description: 读取 deviceAppManagement 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d0a16e26ea24560bb96f4987b2005f6c88d2080
+ms.openlocfilehash: 6f5ce0c708c514fade319ee414e74ce6f1d22c1c
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748395"
+ms.locfileid: "52748959"
 ---
-# <a name="get-devicecompliancepolicysettingstatesummary"></a>获取 deviceCompliancePolicySettingStateSummary
+# <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
 命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) 对象的属性和关系。
+读取 [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +35,7 @@ ms.locfileid: "52748395"
 }
 -->
 ``` http
-GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
+GET /deviceAppManagement
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -51,14 +51,14 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComplia
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) 对象。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
+GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
 ### <a name="response"></a>响应
@@ -66,22 +66,12 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySett
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 483
+Content-Length: 133
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
-    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
-    "setting": "Setting value",
-    "settingName": "Setting Name value",
-    "platformType": "iOS",
-    "unknownDeviceCount": 2,
-    "notApplicableDeviceCount": 8,
-    "compliantDeviceCount": 4,
-    "remediatedDeviceCount": 5,
-    "nonCompliantDeviceCount": 7,
-    "errorDeviceCount": 0,
-    "conflictDeviceCount": 3
+    "@odata.type": "#microsoft.graph.deviceAppManagement",
+    "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
   }
 }
 ```
