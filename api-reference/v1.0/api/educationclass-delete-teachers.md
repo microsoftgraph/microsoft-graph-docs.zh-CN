@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f270dbc6a27c0beadb16cedb306aa8a7b0150b59
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: fa58d3f20e73b603e4a04c2da204870d0b7a10e0
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231890"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52783685"
 ---
 # <a name="remove-teacher-from-educationclass"></a>从 educationClass 中删除教师
 命名空间：microsoft.graph
@@ -77,9 +77,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{t
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

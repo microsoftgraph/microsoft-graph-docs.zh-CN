@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3ffd2b1899165bbe05d347b55ee5ae5d8961b89f
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: bc1b2bbddc20c6cc1160aedd0da9d7a219bd7311
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546902"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780797"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -22,7 +22,7 @@ ms.locfileid: "52546902"
 
 教师的成绩和反馈是与此 [对象关联的 educationOutcome](../resources/educationoutcome.md) 的一部分。 只有具有应用程序权限的教师或应用程序才能添加或更改成绩和反馈。 在作业发布之前，学生将看不到成绩或反馈。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -96,20 +96,20 @@ Content-type: application/json
 Content-length: 712
 
 {
-      "id": "33223",
-      "recipient": {
-        "userId": "13015"
-      },
-      "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-      "status": "working",
-      "submittedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "submittedDateTime": "2014-01-01T00:00:00Z"
+  "id": "33223",
+  "recipient": {
+    "userId": "13015"
+  },
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
+  "status": "working",
+  "submittedBy": {
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
     }
+  },
+  "submittedDateTime": "2014-01-01T00:00:00Z"
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

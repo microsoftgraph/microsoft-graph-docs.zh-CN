@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38276df89042c056648bd5797c07806da4a98a96
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 42c020fe5a6bc9bffa33b64c22a5531b40fbc096
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470688"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52742886"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>iosCustomConfiguration 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50470688"
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[List iosCustomConfigurations](../api/intune-deviceconfig-ioscustomconfiguration-list.md)|[iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md) 集合|列出 [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md) 对象的属性和关系。|
 |[Get iosCustomConfiguration](../api/intune-deviceconfig-ioscustomconfiguration-get.md)|[iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md)|读取 [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md) 对象的属性和关系。|
@@ -42,11 +42,11 @@ ms.locfileid: "50470688"
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |payloadName|String|向用户显示的名称。|
-|payloadFileName|String|有效负载文件名 (*.mobileconfig \| *.xml) 。|
+|payloadFileName|String|有效负载文件名 (*.mobileconfig | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -77,11 +77,6 @@ ms.locfileid: "50470688"
   "payload": "binary"
 }
 ```
-
-
-
-
-
 
 
 

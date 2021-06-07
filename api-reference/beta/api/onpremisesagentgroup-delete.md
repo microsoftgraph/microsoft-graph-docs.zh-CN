@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 97a778347065783a887de1fd9877af35081e44b8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 853d270edfdfe5f35c5bc0bc6ee16b784333977f
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136425"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781140"
 ---
 # <a name="delete-onpremisesagentgroup"></a>删除 onPremisesAgentGroup
 
@@ -26,9 +26,9 @@ ms.locfileid: "50136425"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
+| 委派（工作或学校帐户）     | Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

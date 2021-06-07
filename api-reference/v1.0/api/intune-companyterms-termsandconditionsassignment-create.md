@@ -5,29 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d69fdcaf9ae63b03bab6e64bd0364d86f3dd5e88
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f07ab8622ebba6aeb54f6e2a59ef8aaeccb7bec6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089173"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756713"
 ---
 # <a name="create-termsandconditionsassignment"></a>创建 termsAndConditionsAssignment
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,12 +66,13 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 Content-type: application/json
-Content-length: 168
+Content-length: 220
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
@@ -81,21 +82,17 @@ Content-length: 168
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 217
+Content-Length: 269
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
-
-
-
-
-
 
 
 
