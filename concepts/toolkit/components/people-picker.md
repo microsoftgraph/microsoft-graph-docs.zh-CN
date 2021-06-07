@@ -3,12 +3,12 @@ title: People-Picker组件
 description: 您可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: dd3956e39450946a381b0b90851f248d7cf07b64
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 36a8208b2425bc74922427f7ffcb4c6ec3a10788
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52580020"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780741"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit 中的组件
 
@@ -137,13 +137,13 @@ mgt-people-picker {
 
 此组件使用下列 Microsoft Graph API 和权限。
 
-| API                                                                                                              | 权限  |
-| ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people)                    | People.Read        |
-| [/users](/graph/api/user-list)  | User.ReadBasic.All |
-| [/groups](/group-list)  | Group.Read.All |
-| [/groups/ \$ {groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
-| [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
+| 配置 | 权限 | API
+| --- | ---------- | ------- |
+| `group-id` set | People.Read、User.Read.All | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
+| `type` 设置为 `Person` 或 `any` | People.Read | [/me/people](/graph/api/user-list-people) |
+| `type` 设置为 `Group` 或 搜索用户， `type` 并设置为 `Group` 或 `any` | Group.Read.All | [/groups](/graph/api/group-list) |
+| `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |
+| 搜索用户， `type` 并设置为 `Person` 或 `any` | People.Read、User.ReadBasic.All | [/me/people](/graph/api/user-list-people)、 [/users](/graph/api/user-list) |
 
 ## <a name="authentication"></a>身份验证
 
@@ -158,6 +158,7 @@ mgt-people-picker {
 |`users`|用户列表|指定时 `groupId` 使用|
 
 请参阅[Caching，](../customize-components/cache.md)了解有关如何配置缓存的更多详细信息。
+
 ## <a name="extend-for-more-control"></a>扩展以了解更多控件
 
 对于更复杂的方案或真正自定义的 UX，此组件公开了多个在组件扩展 `protected render*` 中替代的方法。

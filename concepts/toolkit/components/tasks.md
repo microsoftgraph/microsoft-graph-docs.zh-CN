@@ -1,20 +1,20 @@
 ---
-title: Microsoft Graph 服务中的任务Toolkit
+title: Microsoft 服务中的任务Graph Toolkit
 description: 任务组件使用户能够查看、添加、删除、完成或编辑任务。 它适用于 Microsoft Planner 中的任何任务。
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: d07db8f1a261f1cff96175a25665f08eff615d67
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 65fc01d5b2cc5db6f6236bb64b7372522c4d61be
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266799"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780986"
 ---
-# <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 服务中的任务Toolkit
+# <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的任务Graph Toolkit
 
 任务组件使用户能够查看、添加、删除、完成或编辑 Microsoft Planner 中的任务。  
 
-此外，用户能够向任务分配一个或多个 Microsoft Graph 用户。 有关 Microsoft Graph 作业的更多详细信息，请参阅 [plannerAssignments](/graph/api/resources/plannerassignments)。
+此外，用户能够将单个或多个 Microsoft Graph分配给任务。 有关 Microsoft 工作分配Graph的详细信息，请参阅[plannerAssignments](/graph/api/resources/plannerassignments)。
 
 ## <a name="example"></a>示例
 
@@ -118,7 +118,7 @@ mgt-tasks {
 }
 ````
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 | 事件 | 详情 | 说明 |
 | --- | --- | --- |
 | taskAdded | 详细信息包含各自的 `task` 对象 | 新建任务后触发。 |
@@ -154,12 +154,15 @@ mgt-tasks {
 
 此控件使用下列 Microsoft Graph API 和权限。
 
-| Resource | 权限 |
-| - | - |
-| /me/planner/plans | Group.Read.All |
-| /planner/plans/${id} | Group.Read.All、Group.ReadWrite.All |
-| /planner/tasks | Group.ReadWrite.All |
-| /groups/${group-id}/planner/plans | Group.Read.All、Group.ReadWrite.All |
+| 配置 | 权限 | API |
+| ------------- | ---------- | --- |
+| `groupId` set and `dataSource` set to `TasksSource.planner` | Group.Read.All | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?view=graph-rest-1.0&tabs=http)、 [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http)、 [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `targetId` set and `dataSource` set to `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0) [、/me/outlook/taskGroups/${groupId}/taskFolders、/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) [](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
+| `targetId` set and `dataSource` set to something else than `TasksSource.todo` | Group.Read.All | [/planner/plans/${planId}](/graph/api/plannerplan-get?view=graph-rest-1.0&tabs=http)、 [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http)、 [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `dataSource` 设置为 `TasksSource.planner` | Group.Read.All | [/me/planner/plans](/graph/api/planneruser-list-plans?view=graph-rest-1.0&tabs=http)、 [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http)、 [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `dataSource` 设置为 `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0) [、/me/outlook/taskGroups/${groupId}/taskFolders、/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) [](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
+| `addTask` 设置为 `true` ， `dataSource` 设置为 `TasksSource.planner` | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?view=graph-rest-1.0&tabs=http) |
+| `addTask` 设置为 `true` ， `dataSource` 设置为 `TasksSource.todo` | Tasks.ReadWrite | [/me/outlook/taskFolders/${parentFolderId}/tasks](/graph/api/outlookuser-post-tasks?view=graph-rest-beta&tabs=csharp) |
 
 对于 Microsoft Planner 数据源，提取和读取任务需要 Groups.Read.All 权限。 添加、更新或删除任务需要 Groups.ReadWrite.All 权限。
 

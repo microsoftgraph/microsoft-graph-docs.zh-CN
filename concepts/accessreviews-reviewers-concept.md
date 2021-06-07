@@ -1,18 +1,18 @@
 ---
-title: 使用 Microsoft Graph API 将审阅者分配给你的访问Graph定义
+title: 使用 Microsoft Graph API 将审阅者分配给你的访问评审
 description: 了解如何使用 Microsoft 网站中的访问评审 API Graph分配访问审阅者。
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: f892e74f5bf7a7aa934872186208e21ede19780a
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: bc6ada083b27a39fa26174c60f7637a02ec1cd8f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579810"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754928"
 ---
-# <a name="assign-reviewers-to-your-access-review-definition-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 将审阅者分配给你的访问Graph定义
+# <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 将审阅者分配给你的访问评审
 
 Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 允许你以编程方式查看用户、服务主体或组对 Azure AD 资源的访问权限。
 

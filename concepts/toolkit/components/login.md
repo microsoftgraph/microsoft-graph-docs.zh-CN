@@ -1,18 +1,18 @@
 ---
-title: Login component in the Microsoft Graph Toolkit
-description: 登录组件是一个按钮和飞出控件，用于简化 Microsoft 标识平台身份验证。
+title: Microsoft 服务中的登录Graph Toolkit
+description: 登录组件是一个按钮和飞出控件，用于简化Microsoft 标识平台身份验证。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3e9fc0f7960f9bd0fedb699595675479c3be0699
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: ea7df01c77900eecc415b3670db0ea2736447d8c
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266601"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781077"
 ---
-# <a name="login-component-in-the-microsoft-graph-toolkit"></a>Login component in the Microsoft Graph Toolkit
+# <a name="login-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的登录Graph Toolkit
 
-登录组件是一个按钮和飞出控件，用于简化 Microsoft 标识平台身份验证。 它提供两种状态：
+登录组件是一个按钮和飞出控件，用于简化Microsoft 标识平台身份验证。 它提供两种状态：
 * 当用户未登录时，控件是一个简单的按钮，用于启动登录过程。
 * 用户登录后，控件将显示当前登录的用户名、个人资料图像和电子邮件。 单击后，将打开一个具有注销命令的飞出。
 
@@ -26,7 +26,7 @@ ms.locfileid: "52266601"
 
 ## <a name="using-the-control-without-an-authentication-provider"></a>在没有身份验证提供程序的情况下使用控件
 
-该组件适用于提供程序和开箱即用 Microsoft Graph。 但是，如果要提供自己的逻辑和身份验证，可以使用 属性设置 `userDetails` 登录用户的详细信息。 
+该组件适用于提供程序和 Microsoft Graph开箱即用。 但是，如果要提供自己的逻辑和身份验证，可以使用 属性设置 `userDetails` 登录用户的详细信息。 
 
 | 属性 | 属性 | 说明 |
 | --- | --- | -- |
@@ -71,7 +71,7 @@ mgt-login {
 
 若要了解更多信息，请参阅 [设置组件样式](../customize-components/style.md)。
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 
 从控件中触发以下事件。
 
@@ -96,7 +96,13 @@ mgt-login {
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-此组件使用 [Person 组件](./person.md) 显示用户并继承所有权限。 
+此组件使用以下 Microsoft Graph API 和权限：
+
+| 配置 | 权限 | API
+| - | - | - |
+| default | User.Read | [/users/me/](/graph/api/user-get) |
+
+使用默认 `signed-in-button-content` 和 `flyout-person-details` 模板时，此组件使用 [Person](./person.md) 组件显示用户并继承所有权限。
 
 ## <a name="authentication"></a>身份验证
 

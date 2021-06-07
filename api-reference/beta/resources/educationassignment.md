@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0cd6c985c3e50a75272ade3bcc54376990c69f4b
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 5578a8c92f8d580cbc8b23ba3963a890ac681ccc
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629355"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781070"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "52629355"
 
 分配 API 在类命名空间中公开。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -40,15 +40,16 @@ ms.locfileid: "52629355"
 |[附加度分](../api/educationassignment-put-rubric.md)|无|将现有 **educationRubric** 附加到此作业。|
 |[删除 rubric](../api/educationassignment-delete-rubric.md)|无|从此 **作业分离 educationRubric。**|
 |[发布](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|将 **educationAssignment** 对象的状态从草稿更改为已发布。|
-|[设置工作分配资源文件夹](../api/educationassignment-setupresourcesfolder.md)| 字符串| 在SharePoint位置 (创建一个) 文件夹以将文件作为分配资源上载|
+|[设置工作分配资源文件夹](../api/educationassignment-setupresourcesfolder.md)| string| 在SharePoint位置 (创建一个) 文件夹以将文件作为分配资源上载|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。|
 |addedStudentAction|String|可选字段，用于控制在作业发布后添加的学生的作业行为。 如果未指定，则默认为 `none` value。 当前仅支持两个值： `none` 或 `assignIfOpen` 。|
-|allowLateSubmissions|布尔值| 标识学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性，则默认为 true。 |
-|allowStudentsToAddResourcesToSubmission|布尔值| 标识学生是否可以将自己的资源添加到提交中，或是否只能修改教师添加的资源。 |
+|addToCalendarAction| educationAddToCalendarOptions|可选字段，用于控制发布作业时将作业添加到学生和教师日历的作业行为。 可取值为：`studentsAndPublisher`、`studentsAndTeamOwners`、`none`。 默认值为 `none`。|
+|allowLateSubmissions|Boolean| 标识学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性，则默认为 true。 |
+|allowStudentsToAddResourcesToSubmission|Boolean| 标识学生是否可以将自己的资源添加到提交中，或是否只能修改教师添加的资源。 |
 |assignDateTime|DateTimeOffset|工作分配应处于活动状态的日期。  如果将来，在此日期之前不会向学生显示作业。  **时间戳类型表示** 使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| 发布作业后，哪些用户或整个类应接收提交对象。 |
 |assignedDateTime|DateTimeOffset|将作业发布到学生时，作业显示在学生时间线上。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
@@ -65,14 +66,14 @@ ms.locfileid: "52629355"
 |notificationChannelUrl|String|可选字段，用于指定发布 [工作](channel.md) 分配发布通知的通道的 URL。 如果未指定或为空，则默认为 `General` 频道。 此字段仅适用于 **assignTo** 值为 [educationAssignmentClassRecipient 的作业](educationassignmentclassrecipient.md)。 在发布分配后，不允许更新 **notificationChannelUrl。**|
 |状态|string| 工作分配 **的状态**。  不能修补此值。  可取值为：`draft`、`scheduled`、`published`、`assigned`。|
 |webUrl|string| 给定分配的深层链接 URL。|
-|resourcesFolderUrl|字符串| 存储此分配的所有文件资源的文件夹 URL。|
+|resourcesFolderUrl|string| 存储此分配的所有文件资源的文件夹 URL。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|resources|[educationAssignmentResource](educationassignmentresource.md) 集合| 学习与此分配关联的对象。  只有教师可以修改此列表。 可为 NULL。|
-|提交|[educationSubmission](educationsubmission.md) 集合| 发布后，每个学生都有一个表示其工作和成绩的提交对象。  只读。 可为 NULL。|
-|categories|[educationCategory](educationcategory.md) 集合| 设置后，使用户能够轻松查找给定类型的工作分配。  只读。 可为 NULL。|
+|resources|[educationAssignmentResource](educationassignmentresource.md) 集合| 学习与此分配关联的对象。  只有教师可以修改此列表。 可为空。|
+|提交|[educationSubmission](educationsubmission.md) 集合| 发布后，每个学生都有一个表示其工作和成绩的提交对象。  只读。 可为空。|
+|categories|[educationCategory](educationcategory.md) 集合| 设置后，使用户能够轻松查找给定类型的工作分配。  只读。 可为空。|
 |rubric|[educationRubric](educationrubric.md)|设置后，此工作分配附加的评分标准。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -92,6 +93,7 @@ ms.locfileid: "52629355"
 {
   "id": "String (identifier)",
   "addedStudentAction": "none",
+  "addToCalendarAction": "string",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",

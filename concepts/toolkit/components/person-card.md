@@ -3,12 +3,12 @@ title: Person-Card Microsoft Graph Toolkit 中的组件
 description: Person-Card组件是显示与人员相关详细信息的组件。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: de09e9156cd084bdffbe5578e90605e0cf723403
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 8497dbb3b3d9a3173cdbf8ee8ec6bfe74859868b
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629341"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780699"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card Microsoft Graph Toolkit 中的组件
 
@@ -92,10 +92,10 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 | 属性         | 类型                     | 说明                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | 由 Microsoft Graph定义的 Person 对象，包含与用户相关的详细信息。 |
-| person-image   | 字符串                    | 与卡片中显示的人员相关的图像 uri。                                   |
+| person-image   | string                    | 与卡片中显示的人员相关的图像 uri。                                   |
 | inherit-details   | 无。                  | 允许个人卡片为组件演练父 `mgt-person` 树以使用相同 和 `person-details` `person-image` 数据。                      |
-| user-id | 字符串 | 允许开发人员提供用户 ID 以检索显示在个人卡片组件上的数据 |
-| person-query | 字符串 | 允许开发人员提供人员查询以检索显示在个人卡片组件上的数据 |
+| user-id | string | 允许开发人员提供用户 ID 以检索显示在个人卡片组件上的数据 |
+| person-query | string | 允许开发人员提供人员查询以检索显示在个人卡片组件上的数据 |
 
 
 ## <a name="templates"></a>模板
@@ -159,26 +159,20 @@ mgt-person {
 
 若要了解更多信息，请参阅 [设置组件样式](../customize-components/style.md)。
 
-## <a name="microsoft-graph-apis-and-permissions"></a>Microsoft Graph API 和权限
+## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
 该Person-Card控件使用下列 Microsoft Graph API 和权限。
 
-| Resource | 权限 | 节 |
-| - | - | - |
-| [/me](/graph/api/user-get) | User.Read | 默认值 |
-| [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | 默认值 |
-| [/me/people/？$search=](/graph/api/user-list-people) | People.Read | 默认值 |
-| [/me/contacts/\*](/graph/api/user-list-contacts) | Contacts.Read | 默认值 |
-| [/users/{id}](/graph/api/user-list-people) | User.ReadBasic.All | 默认值 |
-| [/users/{id}/photo/$value](/graph/api/profilephoto-get) | User.ReadBasic.All | 默认值 |
-| [/me/presence](/graph/api/presence-get) | Presence.Read | 默认值 |
-| [/users/{id}/presence](/graph/api/presence-get) | Presence.Read.All | 默认值 |
-| [/users/{id}/manager](/graph/api/user-list-manager) | User.Read.All | 组织 |
-| [/users/{id}/directReports](/graph/api/user-list-directreports) | User.Read.All | 组织 |
-| [/users/{id}/people](/graph/api/user-list-people) | People.Read.All | 组织 |
-| [/me/messages](/graph/api/user-list-messages) | Mail.ReadBasic | 邮件 |
-| [/me/insights/shared](/graph/api/insights-list-shared) 和 [/me/insights/used](/graph/api/insights-list-used) | Sites.Read.All | 文件 |
-| [/users/{id}/profile](/graph/api/profile-get) | User.Read.All | 配置文件 |
+| 配置 | 权限 | API | 节 |
+| --- | ---------- | ------- | --------- |
+| `personDetails`使用用户的 但 `id` 不带电子邮件进行设置，或 `userId` 设置为 `personQuery``me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people)、 [/users/{id}/photo/$value](/graph/api/profilephoto-get) | 默认值 |
+| `personQuery` 设置为不同于 `me` | People.Read | [/me/people/？$search=](/graph/api/user-list-people) | 默认值 |
+| `personQuery` 设置为不同于 默认值的值 `me` `config.useContactApis` `true` ， (设置为)  | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | 默认值 |
+| `showPresence` 设置为 `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | 默认值 |
+| `sections.organization` 已启用 (默认)  | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | 组织 |
+| `sections.organization.showWorksWith` 设置 (默认)  | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | 组织 |
+| `sections.mailMessages` 已启用 (默认)  | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | 邮件 |
+| `sections.files` 已启用 (默认)  | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) 和 [/me/insights/used](/graph/api/insights-list-used) | 文件 |
 
 该类还公开了一个静态方法，该方法返回人员卡片根据全局人员卡片配置运行所需的 `MgtPersonCard` `getScopes` 作用域数组。
 

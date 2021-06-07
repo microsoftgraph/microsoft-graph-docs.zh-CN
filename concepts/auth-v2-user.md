@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 009882486b8d9cf734438487039fe32c3da6cb05
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: 82fd2766fa86935cd52e47f7c1669ce3cbfecaf9
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703606"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781056"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
@@ -66,11 +66,14 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | client_id     | 必需    | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                                                                                                                                                                                                                   |
 | response_type | 必需    | 必须包括授权代码流的 `code`。                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | redirect_uri  | 建议 | 你的应用的 redirect_uri，你可以在其中通过应用发送并接收身份验证响应。它必须完全匹配你在应用注册门户中注册的 redirect_uris 之一，除了它必须采用 URL 编码。对于本机和移动应用，应使用默认值 `https://login.microsoftonline.com/common/oauth2/nativeclient`。                                                                                                                                       |
-| 范围         | 必需    | 由空格分隔的希望用户同意的 Microsoft Graph 权限列表。 `offline_access` 范围表明应用需要刷新令牌来长期访问资源。 也可以包括 OpenID 范围。                                                                                                                                                                                                                                                                                                                                                                  |
+| 范围         | 必需    | 由空格分隔的希望用户同意的 Microsoft Graph 权限列表。 这可能包括资源权限，如 _User.Read_ 和 _Mail.Read_ 和 OIDC 作用域如 `offline_access`，这表示你的应用需要刷新令牌才能长期访问资源。                                                                                                                                                                                                                                                                                                                                                                  |
 | response_mode | 建议 | 指定用于将结果令牌发送回应用的方法。可以是 `query` 或 `form_post`。                                                                                                                                                                                                                                                                                                                                                                                  |
 | 状态         | 建议 | 请求中包含的值将在令牌响应中返回。它可以是你希望的任何内容的字符串。随机生成的唯一值通常用于[防止跨网站请求伪造攻击](https://tools.ietf.org/html/rfc6749#section-10.12)。此状态还用于在发生身份验证请求前，对应用中的用户状态信息进行编码（如它们所在的页面或视图上）。                                     |
 
-> **重要说明**：Microsoft Graph 公开两种类型的权限：应用程序性权限和委派权限。对于已登录用户运行的应用，在 `scope` 参数中请求委派权限。这些权限将已登录用户的特权委派给应用，允许其代表已登录的用户来调用 Microsoft Graph。有关可通过 Microsoft Graph 使用的权限的详细信息，请参阅 [权限引用](./permissions-reference.md)。
+> [!NOTE]
+> Microsoft Graph 公开两种类型的权限：应用程序和委派。对于使用已登录用户运行的应用，在 `scope` 参数中请求权限。这些权限将已登录用户的权限委派给您的应用程序，从而允许它在调用 Microsoft Graph 时作为已登录的用户。有关通过 Microsoft Graph 提供的权限的更多详细信息，请参阅 [权限引用](./permissions-reference.md)。
+>
+> Microsoft Graph 还会公开以下定义明确的 OIDC 作用域： `openid`、 `email`、 `profile`和 `offline_access`。 不支持`address`和`phone` OIDC 作用域。 有关每个 OIDC 作用域的更多详细信息，请参阅 [许可和同意](/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes)。
 
 ### <a name="consent-experience"></a>同意体验
 

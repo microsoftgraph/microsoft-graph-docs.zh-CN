@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a4b7bcb9a568948e832611f15f9aefa59c32feb6
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: ba1ce2b94cef8b37da03c655ccc2a687c2557cfd
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664583"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780832"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -50,10 +50,10 @@ POST /identityGovernance/accessReviews/definitions
 
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
-| displayName | String | 访问评审系列的名称。 必需。|
-| descriptionForAdmins | string | 提供给管理员评价的上下文。 必需。 |
-  descriptionForReviewers | string | 提供给审阅者的审阅上下文。 必需。 |
-| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中查看的用户范围。 请参阅  [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 必需。| 
+| displayName | String | 访问评审系列的名称。 必填。|
+| descriptionForAdmins | string | 提供给管理员评价的上下文。 必填。 |
+  descriptionForReviewers | string | 提供给审阅者的审阅上下文。 必填。 |
+| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中查看的用户范围。 请参阅  [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 必填。| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (审阅用户自己的访问权限或) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
@@ -262,7 +262,7 @@ Content-type: application/json
     "recurrence": {
       "pattern": {
         "type": "absoluteMonthly",
-        "dayOfMonth": "5",
+        "dayOfMonth": 5,
         "interval": 3
       },
       "range": {
@@ -340,13 +340,7 @@ Content-type: application/json
       "queryRoot": null
     }
   ],
-  "backupReviewers": [
-    {
-      "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": null
-    }
-  ],
+  "backupReviewers": [],
   "fallbackReviewers": [
     {
       "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
@@ -368,24 +362,20 @@ Content-type: application/json
         "type": "absoluteMonthly",
         "interval": 3,
         "month": 0,
-        "dayOfMonth": 0,
+        "dayOfMonth": 5,
         "daysOfWeek": [],
         "firstDayOfWeek": "sunday",
         "index": "first"
       },
       "range": {
-        "type": "numbered",
+        "type": "noEnd",
         "numberOfOccurrences": 0,
         "recurrenceTimeZone": null,
         "startDate": "2021-05-05",
-        "endDate": "9999-12-31"
+        "endDate": null
       }
     },
-    "applyActions": [
-      {
-        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-      }
-    ]
+    "applyActions": []
   }
 }
 ```

@@ -3,14 +3,14 @@ title: reports： getPrinterArchivedPrintJobs
 description: 获取已排队等待特定打印机的存档打印作业的列表。
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8a0daedcc8c8b035e6e2ffba7a5a0e49e632f7ec
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8c779775284a98ae5e68a6b57bb773c7a1753264
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054894"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780972"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>reports： getPrinterArchivedPrintJobs
 
@@ -47,8 +47,8 @@ GET /reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime
 | 参数     | 类型                 | 是否必需？ | 说明                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `printerId`   | `Edm.String`         | 是       | 要返回其数据的打印机的 ID。                            |
-| `startDateTime` | `Edm.DateTimeOffset` | 不支持        | 开始日期包含 (数据) 时间段的包含时间（含这两者）。 |
-| `endDateTime`   | `Edm.DateTimeOffset` | 不支持        | 结束日期包括 (数据) 时间段的包含时间（含这两者）。   |
+| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期包含 (数据) 时间段的包含时间（含这两者）。 |
+| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期包括 (数据) 时间段的包含时间（含这两者）。   |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
@@ -59,10 +59,11 @@ GET /reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "reports-getprinterarchivedprintjobs"
+  "name": "reports-getprinterarchivedprintjobs",
+  "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',startDateTime={timestamp},endDateTime={timestamp})
+GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
 ```
 
 ##### <a name="response"></a>响应

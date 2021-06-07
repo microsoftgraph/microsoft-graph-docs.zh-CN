@@ -216,6 +216,8 @@ items:
                 href: api/user-delete.md
               - name: 获取 Delta
                 href: api/user-delta.md
+              - name: 刷新令牌无效
+                href: api/user-invalidateallrefreshtokens.md
           - name: 应用角色分配
             href: resources/approleassignment.md
             items:
@@ -1831,25 +1833,25 @@ items:
                   - name: 按打印机组织
                     items:
                       - name: 获取
-                        href: api/printusagesummarybyprinter-get.md
+                        href: api/printusagebyprinter-get.md
                       - name: 列出打印机的存档打印作业
                         href: api/reports-getprinterarchivedprintjobs.md
                       - name: 按打印机列出每日报表
-                        href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+                        href: api/reportroot-list-dailyprintusagebyprinter.md
                       - name: 按打印机列出每月报表
-                        href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+                        href: api/reportroot-list-monthlyprintusagebyprinter.md
                   - name: 按用户或组组织
                     items:
                       - name: 获取
-                        href: api/printusagesummarybyuser-get.md
+                        href: api/printusagebyuser-get.md
                       - name: 列出用户的存档打印作业
                         href: api/reports-getuserarchivedprintjobs.md
                       - name: 列出组的存档打印作业
                         href: api/reports-getgrouparchivedprintjobs.md
                       - name: 按用户列出每日报告
-                        href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+                        href: api/reportroot-list-dailyprintusagebyuser.md
                       - name: 按用户列出每月报告
-                        href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+                        href: api/reportroot-list-monthlyprintusagebyuser.md
               - name: 打印服务
                 href: resources/printservice.md
                 items:
@@ -9794,8 +9796,6 @@ items:
                 href: api/educationassignment-post-resources.md
               - name: 获取作业资源
                 href: api/educationassignmentresource-get.md
-              - name: 更新作业资源
-                href: api/educationassignmentresource-update.md
               - name: 从作业中删除资源
                 href: api/educationassignmentresource-delete.md
               - name: 发布作业

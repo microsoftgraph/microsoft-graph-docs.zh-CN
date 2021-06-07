@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 74840c4ac794262d7e5b7cced90c535e5132aa18
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 4dce342b8555df2b9876a933699bcef06de23266
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061698"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781021"
 ---
 # <a name="get-educationassignmentdefaults"></a>获取 educationAssignmentDefaults
 命名空间：microsoft.graph
@@ -26,9 +26,7 @@ ms.locfileid: "52061698"
 |:---|:---|
 |委派（工作或学校帐户）| EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 |委派（个人 Microsoft 帐户）| 不支持。 |
-|Application*| EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
-
-*应用程序权限当前仅适用于个人预览版客户。
+|应用程序| EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -103,6 +101,7 @@ Content-Type: application/json
 {
   "value": {
     "addedStudentAction": "none",
+    "addToCalendarAction": "studentsAndTeamOwners",
     "dueTime": "23:59:00",
     "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
   }

@@ -5,23 +5,23 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69e097d433d774c3dd445c94cd29eb059292806f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a406ede926ad637a338437559840cdefdadc64ce
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091227"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754579"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备位置
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |lastCollectedDateTime|DateTimeOffset|记录位置时的时间，相对于 UTC|
 |longitude|Double|设备位置的经度坐标|
@@ -46,20 +46,15 @@ ms.locfileid: "48091227"
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
   "lastCollectedDateTime": "String (timestamp)",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "altitude": "<Unknown Primitive Type Edm.Double>",
-  "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "heading": "<Unknown Primitive Type Edm.Double>",
-  "speed": "<Unknown Primitive Type Edm.Double>"
+  "longitude": "4.2",
+  "latitude": "4.2",
+  "altitude": "4.2",
+  "horizontalAccuracy": "4.2",
+  "verticalAccuracy": "4.2",
+  "heading": "4.2",
+  "speed": "4.2"
 }
 ```
-
-
-
-
-
 
 
 

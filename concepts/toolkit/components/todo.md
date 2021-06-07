@@ -1,22 +1,22 @@
 ---
-title: Microsoft Graph 中的"要执行"组件Toolkit
-description: 通过"执行"组件，用户可以查看、添加、删除、完成或编辑 todo 任务。 它适用于 Microsoft To-Do 中的任一任务。
+title: 微软待办 Microsoft Graph Toolkit
+description: 利用微软待办组件，用户可以查看、添加、删除、完成或编辑任务。 它适用于 Microsoft 微软待办 中微软待办。
 localization_priority: Normal
 author: shweaver-MSFT
-ms.openlocfilehash: 1d2f1fd83626c1fcaaf2356605347581f247f6da
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 3eb91bc23f1159e08749b6e6b073939bacca0c5c
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266785"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781000"
 ---
-# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 中的"要执行"组件Toolkit
+# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>微软待办 Microsoft Graph Toolkit
 
-"应做"组件用于使登录用户可以使用 Microsoft Graph 中的"应做"API 查看、添加、删除、完成和/或编辑 Microsoft To Do 中的任务。
+微软待办 组件用于允许登录用户在 Microsoft Graph 中通过 微软待办 API 查看、添加、删除、完成和/或编辑 微软待办 中的任务。
 
 ## <a name="example"></a>示例
 
-以下示例使用 组件显示登录用户的 Microsoft To Do `mgt-todo` 任务。 可以使用代码编辑器查看 [属性如何](#properties) 更改组件的行为。
+以下示例显示登录用户使用组件微软待办任务 `mgt-todo` 。 可以使用代码编辑器查看 [属性如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo--tasks&source=docs" height="500"></iframe>
 
@@ -95,7 +95,7 @@ mgt-todo {
 
 若要了解更多信息，请参阅 [设置组件样式](https://docs.microsoft.com/graph/toolkit/style.md)。
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 
 从组件中触发以下事件。
 
@@ -131,11 +131,11 @@ mgt-todo {
 
 此控件使用下列 Microsoft Graph API 和权限。
 
-| Resource | 权限 |
-| - | - |
-| [/me/todo/lists/](/graph/api/todo-list-lists) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) | Tasks.ReadWrite |
+| 配置 | 权限 | API |
+| ------------- | ---------- | --- |
+| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http)、 [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` 未设置 | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http) [、/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| 创建、更新或删除任务 | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## <a name="authentication"></a>身份验证
 

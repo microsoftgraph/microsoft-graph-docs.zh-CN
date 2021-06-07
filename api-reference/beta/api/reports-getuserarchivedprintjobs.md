@@ -3,14 +3,14 @@ title: reports： getUserArchivedPrintJobs
 description: 获取特定用户的已存档打印作业的列表。
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 214848ff04f982bcf3ff06397ac16d4793e948e5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c0c03302e2bb10ef99f2c4adf5aa8cafea506333
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054880"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780755"
 ---
 # <a name="reports-getuserarchivedprintjobs"></a>reports： getUserArchivedPrintJobs
 
@@ -47,8 +47,8 @@ GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDat
 | 参数     | 类型                 | 是否必需？ | 说明                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `userId`      | `Edm.String`         | 是       | 要返回其数据的用户的 ID。                               |
-| `startDateTime` | `Edm.DateTimeOffset` | 不支持        | 开始日期包含 (数据) 时间段的包含时间（含这两者）。 |
-| `endDateTime`   | `Edm.DateTimeOffset` | 不支持        | 结束日期包括 (数据) 时间段的包含时间（含这两者）。   |
+| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期包含 (数据) 时间段的包含时间（含这两者）。 |
+| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期包括 (数据) 时间段的包含时间（含这两者）。   |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
@@ -59,10 +59,11 @@ GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDat
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "reports-getuserarchivedprintjobs"
+  "name": "reports-getuserarchivedprintjobs",
+  "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId='{id}',startDateTime={timestamp},endDateTime={timestamp})
+GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
 ```
 
 ##### <a name="response"></a>响应

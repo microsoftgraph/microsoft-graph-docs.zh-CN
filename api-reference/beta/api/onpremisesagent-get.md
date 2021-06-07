@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 034ab82730afe99ef547d496d7addca1b503387d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b73d3015870f282fa7950468d996abe9269b46bb
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038213"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781042"
 ---
 # <a name="get-onpremisesagent"></a>获取 onPremisesAgent
 
@@ -26,7 +26,7 @@ ms.locfileid: "52038213"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
+| 委派（工作或学校帐户）     | Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 

@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d6ebc247ec6868cd32e2ef3790f7542d9eb546fe
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 0ef07eddc0bb1f1a4b8a6739f5d8b28c6436038e
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682045"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732166"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -22,7 +22,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 频道表示团队内部的某个主题，因此是讨论的逻辑隔离。
 
 每个团队与一个[组](../resources/group.md)相关联。
-该组具有与团队相同的 ID，例如 /groups/{id}/team 与 /teams/{id} 相同。
+该组具有与团队相同的 ID，例如 `/groups/{id}/team` 与 `/teams/{id}` 相同。
 有关使用组和团队内部成员的详细信息，请参阅[使用 Microsoft Graph REST API 来处理 Microsoft Teams](teams-api-overview.md)。
 
 ## <a name="methods"></a>方法
