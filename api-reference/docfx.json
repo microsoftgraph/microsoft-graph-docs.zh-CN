@@ -226,6 +226,7 @@
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
       "extendBreadcrumb": true,
       "author": "MSGraphDocsVteam",
+      "ocv-translation-feedback": true,
       "ms.author": "MSGraphDocsVteam",
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",

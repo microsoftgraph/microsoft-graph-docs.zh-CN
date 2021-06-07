@@ -41,6 +41,7 @@
       "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "author": "MSGraphDocsVteam",
+      "ocv-translation-feedback": true,
       "ms.author": "MSGraphDocsVteam",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "ms.suite": "microsoft-graph",

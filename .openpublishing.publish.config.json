@@ -4,7 +4,7 @@
       "docset_name": "microsoft-graph-docs",
       "build_source_folder": "concepts",
       "build_output_subfolder": "microsoft-graph-docs",
-      "locale": "zh-CN",
+      "locale": "zh-cn",
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -18,7 +18,7 @@
       "docset_name": "microsoft-graph-ref",
       "build_source_folder": "api-reference",
       "build_output_subfolder": "microsoft-graph-ref",
-      "locale": "zh-CN",
+      "locale": "zh-cn",
       "moniker_ranges": [
         "graph-rest-beta",
         ">= graph-rest-1.0"
@@ -33,7 +33,7 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [],
+  "notification_subscribers": ["v-mipop@microsoft.com","v-jijaku@microsoft.com"],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live-sxs",
@@ -47,7 +47,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.zh-CN",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -64,12 +64,10 @@
   "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
   "targets": {},
-  "JoinTOCPlugin": [
-    {
-      "ReferenceTOC": "api-reference/v1.0/toc.yml",
-      "ReferenceTOCUrl": "/graph/api/toc.json",
-      "ConceptualTOC": "concepts/toc.yml",
-      "ConceptualTOCUrl": "/graph/concepts/toc.json"
-    }
-  ]
+  "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "Tutorial": "Content"
+      }
 }
