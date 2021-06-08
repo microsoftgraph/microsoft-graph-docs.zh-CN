@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: c9b9c4c3ef6537548affe095ab1b7bba1bcf0313
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4484f678c85b85fed0b659bfc45a7afaf869c840
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574095"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787262"
 ---
 # <a name="filter-apply"></a>Filter: apply
 
@@ -108,9 +108,7 @@ Content-length: 321
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 300d17e32114eece7e1af3f9ab57c8b3af370494
-ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
+ms.openlocfilehash: a1180508853e932cc212e623d0d8a2d3dcae0e54
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52732187"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787406"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "52732187"
 
 > **注意**：此资源支持订阅更改 (使用更改通知创建、) 和 [删除更改](../resources/webhooks.md)。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatMessage)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
-| 方法       | 返回类型  |Description|
+| 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |**频道消息**| | |
 |[列出频道中的消息](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) 集合 | 频道中所有根消息的列表。|
@@ -74,10 +74,10 @@ ms.locfileid: "52732187"
 |webUrl|string|只读。 指向邮件中Microsoft Teams。|
 ## <a name="relationships"></a>关系
 
-| 关系   | 类型    | Description |
+| 关系   | 类型    | 说明 |
 |:---------------|:--------|:----------|
 |replies|[chatMessage](chatmessage.md)| 对指定邮件的答复。 |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| 由用户托管的消息中Microsoft Teams例如图像、代码段等。 |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| 由用户托管的消息中Microsoft Teams例如图像或代码段。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

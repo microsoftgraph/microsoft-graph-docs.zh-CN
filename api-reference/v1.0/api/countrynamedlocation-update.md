@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fa684d1dc42887f636217056e30e5a0807507bef
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 16c8fdbc1acd156dc2b4886f2edc68cc676fa1bf
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434673"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787469"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
@@ -49,9 +49,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区和/或地区列表。|
+|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区列表。|
 |displayName|String|位置的可读名称。|
-|includeUnknownCountriesAndRegions|Boolean|该值是未映射到一个或多个国家/地区的 IP 地址应 `true` 包含在命名位置中。|
+|includeUnknownCountriesAndRegions|布尔值|该值是未映射到国家/地区或地区的 IP 地址应包含在 `true` 命名位置中。|
 
 ## <a name="response"></a>响应
 
@@ -108,9 +108,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.countryNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

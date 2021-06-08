@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b6a7752ed51052adc1cf1420ec566c0ec2fbafac
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 2f33bea764c76ccc3a320bd610249cedf372071f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645400"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787280"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission： submit
 
@@ -82,9 +82,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

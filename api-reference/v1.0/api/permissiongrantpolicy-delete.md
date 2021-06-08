@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: dfb93c8fa308441a5a01924fe4b02792cd7bf12a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3eef514fd9d10f734f8991776813815013a5b5b4
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448107"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787553"
 ---
 # <a name="delete-permissiongrantpolicy"></a>删除 permissionGrantPolicy
 
@@ -88,9 +88,7 @@ DELETE https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/my-cust
 ### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy"
+  "blockType": "response"
 } -->
 
 ```http

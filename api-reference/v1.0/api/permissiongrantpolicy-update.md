@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 223fffce4f607004897360c2653dc8327c166255
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6e40a6361ec5f72c936f4b8151e001308e48be2b
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448073"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787153"
 ---
 # <a name="update-permissiongrantpolicy"></a>更新 permissionGrantPolicy
 
@@ -48,12 +48,12 @@ PATCH /policies/permissionGrantPolicies/{id}
 
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
-| displayName | String |权限显示名称策略的权限。|
-| 说明 |String| 权限授予策略的说明。|
+| displayName | String |权限授予策略的显示名称。|
+| 说明 |String| 权限授予策略的描述。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应代码，并且不会在响应正文中返回任何内容。
+如果成功，此方法返回 `204 No Content` 响应代码，不会在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 
@@ -98,10 +98,7 @@ Content-Type: application/json
 ### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy",
-  "isCollection": false
+  "blockType": "response"
 } -->
 
 ```http

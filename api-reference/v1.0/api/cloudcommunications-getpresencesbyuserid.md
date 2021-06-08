@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 78793623972e5887a1f74184789dbda87ee4dda4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 61ce51d3fe7d85c2a5d086938c38f45827c2515e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964009"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787644"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 
@@ -114,8 +114,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
-```
-```json
+
 {
     "value": [{
             "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",

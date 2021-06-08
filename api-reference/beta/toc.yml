@@ -1262,9 +1262,9 @@ items:
                 href: api/event-delta.md
               - name: 提醒视图
                 href: api/user-reminderview.md
-          - name: 类别
+          - name: Category
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -1828,30 +1828,30 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
                       - name: 获取
-                        href: api/printusagesummarybyprinter-get.md
+                        href: api/printusagebyprinter-get.md
                       - name: 列出打印机的存档打印作业
                         href: api/reports-getprinterarchivedprintjobs.md
                       - name: 按打印机列出每日报表
-                        href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+                        href: api/reportroot-list-dailyprintusagebyprinter.md
                       - name: 按打印机列出每月报表
-                        href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+                        href: api/reportroot-list-monthlyprintusagebyprinter.md
                   - name: 按用户或组组织
                     items:
                       - name: 获取
-                        href: api/printusagesummarybyuser-get.md
+                        href: api/printusagebyuser-get.md
                       - name: 列出用户的存档打印作业
                         href: api/reports-getuserarchivedprintjobs.md
                       - name: 列出组的存档打印作业
                         href: api/reports-getgrouparchivedprintjobs.md
                       - name: 按用户列出每日报告
-                        href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+                        href: api/reportroot-list-dailyprintusagebyuser.md
                       - name: 按用户列出每月报告
-                        href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+                        href: api/reportroot-list-monthlyprintusagebyuser.md
               - name: 打印服务
                 href: resources/printservice.md
                 items:
@@ -9830,7 +9830,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: 更新工作分配默认值
                 href: api/educationassignmentdefaults-update.md
-          - name: 类别
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: 创建类别
@@ -11937,7 +11937,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -12534,7 +12534,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -13785,6 +13785,29 @@ items:
                     href: api/swapshiftschangerequest-approve.md
                   - name: 拒绝
                     href: api/swapshiftschangerequest-decline.md
+              - name: Time card
+                href: resources/timecard.md
+                items:
+                  - name: 列出
+                    href: api/timecard-list.md
+                  - name: 创建
+                    href: api/timecard-post.md
+                  - name: 获取
+                    href: api/timecard-get.md
+                  - name: 替换
+                    href: api/timecard-replace.md
+                  - name: 删除
+                    href: api/timecard-delete.md
+                  - name: 时钟到
+                    href: api/timecard-clockin.md
+                  - name: 时钟时钟
+                    href: api/timecard-clockout.md
+                  - name: 开始中断
+                    href: api/timecard-startbreak.md
+                  - name: 结束符
+                    href: api/timecard-endbreak.md
+                  - name: 确认
+                    href: api/timecard-confirm.md
               - name: 休假
                 href: resources/timeoff.md
                 items:
@@ -13982,7 +14005,7 @@ items:
                     href: api/attachment-delete.md
               - name: 类别
                 items:
-                  - name: 类别
+                  - name: Category
                     href: resources/outlookcategory.md
                   - name: 列出类别
                     href: api/outlookuser-list-mastercategories.md

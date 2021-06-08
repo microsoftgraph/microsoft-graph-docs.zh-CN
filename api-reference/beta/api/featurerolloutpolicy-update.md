@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8d30e3df9d807289787f599e436427a02544c055
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 66b04005f01f9e2d56189a23ad8dae36846a67a0
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508595"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786998"
 ---
 # <a name="update-featurerolloutpolicy"></a>更新 featurerolloutpolicy
 
@@ -52,9 +52,9 @@ PATCH /policies/featureRolloutPolicies/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|字符串|此策略的说明。|
-|displayName|字符串|此显示名称的组。|
-|isAppliedToOrganization|布尔|指示是否应当将此功能推出策略应用于整个组织。|
+|说明|String|此策略的说明。|
+|displayName|String|此显示名称的组。|
+|isAppliedToOrganization|Boolean|指示是否应当将此功能推出策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能推出。|
 
 ## <a name="response"></a>响应
@@ -108,8 +108,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
+  "blockType": "response"
 } -->
 
 ```http

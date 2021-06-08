@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 1fad0311a688a2093e216a8b8d53405260d1fa19
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 624302e735eebf3fbbdf477636176a5e7f414bfe
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435929"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786986"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 
@@ -20,8 +20,8 @@ ms.locfileid: "50435929"
 
 取消 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
 
-## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
+## <a name="permissions"></a>权限
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
 
@@ -29,7 +29,7 @@ ms.locfileid: "50435929"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +37,7 @@ ms.locfileid: "50435929"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ### <a name="groups"></a>组
 
@@ -45,7 +45,7 @@ ms.locfileid: "50435929"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法 **不支持**[OData 查询参数](/graph/query-parameters)。
@@ -74,7 +74,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 | 错误代码 | 错误消息 | 详细信息 |
 |:---------- |:------------- |:------- |
 | 400 BadRequest | RoleAssignmentRequestNotFound | governanceRoleAssignmentRequest 在系统中不存在。 |
-| 400 BadRequest | RequestCannotBeCancelled | 仅状态为 ，且 `Granted` `PendingApproval` `PendingApprovalProvisioning` `PendingAdminDecision` 可以取消的请求。 |
+| 400 BadRequest | RequestCannotBeCancelled | 仅状态为 、 `Granted` `PendingApproval` 和 `PendingApprovalProvisioning` `PendingAdminDecision` 的请求可以取消。 |
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -110,8 +110,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content

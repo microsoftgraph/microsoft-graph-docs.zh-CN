@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fef9b795e0cf1b3fd162afc4599ad4c245b828e9
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 56e42bbde7df9ea08405616eaab1342ac654e8eb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722347"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787721"
 ---
 # <a name="user-exportpersonaldata"></a>user： exportPersonalData
 
@@ -18,7 +18,7 @@ ms.locfileid: "50722347"
 
 从公司管理员或应用程序提交数据策略操作请求以导出组织用户的数据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -45,7 +45,7 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|storageLocation|字符串|这是一个共享访问签名 (SAS) AZURE 存储帐户的 URL，数据应导出到其中。|
+|storageLocation|String|这是一个共享访问签名 (SAS) URL Azure 存储帐户，将数据导出到其中。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 该响应包含以下响应标头。
@@ -100,8 +100,7 @@ Content-length: 48
 ```
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted

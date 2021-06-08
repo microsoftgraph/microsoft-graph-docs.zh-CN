@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: a55ea3342a98ead3082bda3c3ef8a0aaf669c794
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 6ac9fac0f389efefadeaec3a30eba0b58d851aca
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574081"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786985"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
@@ -83,9 +83,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

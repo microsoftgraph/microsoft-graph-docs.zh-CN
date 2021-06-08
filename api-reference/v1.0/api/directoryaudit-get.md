@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: e7886e69f203bb685fcb8876472a5b26115dbe54
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6e262fe507565932979b993cbe31e501d1a35dfb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053179"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788092"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -94,16 +94,14 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryaudit"
+  "@odata.type": "microsoft.graph.directoryAudit"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
-```
 
-```json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{
@@ -131,9 +129,9 @@ Content-length: 218
             "modifiedProperties": [{
                 "displayName": "Action Client Name",
                 "oldValue": null,
-                "newValue": "DirectorySync" }],
-            "groupType": "unifiedGroups"
+                "newValue": "DirectorySync" 
             }],
+            "groupType": "unifiedGroups"
         }, {
             "id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
             "displayName": null,

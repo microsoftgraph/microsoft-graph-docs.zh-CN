@@ -5,12 +5,12 @@ localization_priority: Normal
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5c9c34a373f537d36561bcbbd780a0298a72af6f
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 7959f0805d9dc42720f5036a62f41737f45ed5db
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682161"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787798"
 ---
 # <a name="update-localized-organizationalbrandingproperties"></a>更新本地化的组织品牌设置
 
@@ -110,8 +110,7 @@ Content-Type: image/jpeg
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http
@@ -166,8 +165,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http
@@ -202,8 +200,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http
@@ -262,8 +259,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http

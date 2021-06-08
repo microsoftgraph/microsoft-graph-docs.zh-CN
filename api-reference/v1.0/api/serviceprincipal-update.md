@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ad469a68a2dabd31d4f6c1b7ea52dd188f9e10b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 82e936f93c10acb6e63672faac08653373f45fe6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055776"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787124"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -104,11 +104,9 @@ Content-length: 391
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：可能缩短此处显示的响应对象以提高可读性。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -1,26 +1,26 @@
 ---
-title: 日程安排：共享
-description: 与 schedule 成员共享计划时间范围。
+title: schedule： share
+description: 与计划成员共享计划时间范围。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 53b78ff1f56543f2e9488e48dee822be87d92eb4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47bd1e71b31a10b7dfb0ffc34c063d94f2e065fc
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974937"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788015"
 ---
-# <a name="schedule-share"></a>日程安排：共享
+# <a name="schedule-share"></a>schedule： share
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-与 schedule 成员共享 [计划](../resources/schedule.md) 时间范围。
-在指定的团队成员（包括员工和经理）可查看的[日程安排](../resources/schedule.md)的指定时间范围内，创建[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)项目的集合。
-[计划](../resources/schedule.md)中的每个[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例都支持项目的草稿版本和共享版本。 草稿版本仅由经理查看，并且共享版本可供员工和经理查看。 对于每个 [shift](../resources/shift.md)、 [openshift](../resources/openshift.md) 和 [timeOff](../resources/timeoff.md) 实例在指定的时间范围内，共享操作将从草稿版本更新共享版本，因此，除了经理之外，员工还可以查看有关该项目的最新信息。 **NotifyTeam** 参数会进一步指定哪些员工可以查看该项目。
+与 [计划成员](../resources/schedule.md) 共享计划时间范围。
+使指定的团队成员[（](../resources/shift.md)包括员工和经理）可以查看计划中指定时间范围内班次、openshift 和[timeOff](../resources/timeoff.md)项目的集合。 [](../resources/openshift.md) [](../resources/schedule.md)
+计划[中的](../resources/shift.md)[每个班次、openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md) [实例都支持](../resources/schedule.md)草稿版本和项目的共享版本。 草稿版本仅由经理查看，员工和经理可查看共享版本。 对于指定[](../resources/shift.md)时间范围内的每个班次[、openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例，共享操作从草稿版本更新共享版本，以便除经理外，员工还可以查看有关项目的最新信息。 **notifyTeam** 参数进一步指定哪些员工可以查看项目。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48974937"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All |
 
@@ -53,9 +53,9 @@ POST /teams/{teamId}/schedule/share
 
 |参数                   |类型           |说明  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知，或仅获取已分配有班次的员工。 必填。       |
-| startDateTime         |`DateTimeOffset`   |共享日程上的班次的开始时间。 必填。   |
-| endDateTime           |`DateTimeOffset`   | 在日程上共享班次的结束时间。   |
+| notifyTeam            |`Boolean`             |指示整个团队是应该收到此操作的可见通知，还是只收到分配有已共享班次的员工的通知。 必填。       |
+| startDateTime         |`DateTimeOffset`   |按计划共享班次的开始时间。 必填。   |
+| endDateTime           |`DateTimeOffset`   | 在计划前共享班次的结束时间。   |
 
 ## <a name="response"></a>响应
 
@@ -106,9 +106,7 @@ Content-type: application/json
 下面展示了示例响应。 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

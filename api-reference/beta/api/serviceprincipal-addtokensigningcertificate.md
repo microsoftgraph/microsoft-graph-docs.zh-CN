@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8cb462e31817c229b44ac2042e8d61073af58479
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 01aded24ecce1b15c7bb56b9c5054f887098dc38
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474655"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787224"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal：addTokenSigningCertificate
 
@@ -128,8 +128,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: serviceprincipal_selfsignedcertificate:\r\n      Resource type was null or missing, so we assume there is no response to validate."
-    ]
+  "suppressions": []
 } -->
 

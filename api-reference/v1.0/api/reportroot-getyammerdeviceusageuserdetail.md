@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6be6b757daf9f9c752b3ce99f885aff1608f4a13
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 140d5cd4ab56d8509ebd411b99c7a08de1ac44da
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983319"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787770"
 ---
 # <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
 
@@ -18,9 +18,9 @@ ms.locfileid: "49983319"
 
 获取用户的 Yammer 设备使用情况的详细信息。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - Yammer 设备使用情况](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报表 -](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)Yammer使用情况。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -114,7 +114,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 #### <a name="request"></a>请求
 
-如果使用参数 `date` 调用，则报告的范围为给定日期的使用范围。
+如果使用 参数 `date` 调用，则报告的范围为给定日期的使用范围。
 
 <!--{
   "blockType": "request",
@@ -131,9 +131,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(date
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9e93a73c6b24c161288d52d0862c13f032ade4cb
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 9a96286b2f50d05289663e68e5db78d3a3696580
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232114"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787103"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -141,9 +141,7 @@ Content-type: application/json
 #### <a name="response"></a>响应
 以下示例显示了相应的响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -195,9 +193,7 @@ Content-type: application/json
 
 以下示例显示了相应的响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

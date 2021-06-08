@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 34ffe0a968ef500214d7f987d3a76c7fe4616cf7
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 87b52e6e9568aa272505fc10c40e607c9844adff
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721416"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787089"
 ---
 # <a name="assign-manager"></a>分配管理器
 
@@ -20,7 +20,7 @@ ms.locfileid: "50721416"
 > [!NOTE]
 > 不能分配直接下属;请改为使用此 API。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -87,9 +87,7 @@ Content-length: xxx
 下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

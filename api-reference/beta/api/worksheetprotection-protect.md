@@ -1,16 +1,16 @@
 ---
 title: workbookWorksheetProtection： protect
-description: 保护工作表。 如果工作表处于受保护状态，则会引发它。
+description: 保护工作表。如果工作表处于受保护状态，则会引发它。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bfbb6252a13db3afb3cab4f3b21bb947897cd297
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 55f396960211ebda241c274feab824c39bb923df
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578092"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787700"
 ---
 # <a name="workbookworksheetprotection-protect"></a>workbookWorksheetProtection： protect
 
@@ -105,9 +105,7 @@ Content-length: 383
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

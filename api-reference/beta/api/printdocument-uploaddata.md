@@ -1,16 +1,16 @@
 ---
 title: printDocument： uploadData
-description: 上载 printDocument 的单个二进制段。
+description: Upload printDocument 的单个二进制段。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 320d55cd049bdd558e8f847e2ac01593cc2f5ca7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6435a36e7713435dce3f38145d48083bdabcc532
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980978"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787595"
 ---
 # <a name="printdocument-uploaddata"></a>printDocument： uploadData
 
@@ -18,20 +18,20 @@ ms.locfileid: "48980978"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-上载 **printDocument** 的单个二进制段。
+Upload printDocument 的单个二 **进制段**。
 
-您可以上传整个文件，或将文件拆分为多个字节范围，前提是没有请求大于 1 MB。
+您可以上载整个文件，或将文件拆分为多个字节范围，只要请求不超过 1 MB。
 
-可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 当上载文档的所有二进制片段时，二进制文件将链接到 **printJob** 。
+可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 当上载文档的所有二进制段时，二进制文件将链接到 **printJob**。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。
+除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [获取](printer-get.md) 打印机访问权限的权限。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| PrintJob，PrintJob。 |
+|委派（工作或学校帐户）| PrintJob.ReadWrite、PrintJob.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 不支持。 |
 
@@ -44,8 +44,8 @@ POST /print/printers/{id}/jobs/{id}/documents/{id}/uploadData
 | 名称          | 说明   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}。必需。 |
-| 范围 | bytes = {startByteIndex}-{endByteIndex}  |
-| Content-Length | {contentLength}‬  |
+| 范围 | bytes={startByteIndex}-{endByteIndex}  |
+| Content-Length | {contentLength}  |
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
@@ -54,13 +54,13 @@ POST /print/printers/{id}/jobs/{id}/documents/{id}/uploadData
 ## <a name="response"></a>响应
 如果成功，此方法将返回以下响应之一。 它不会在响应正文中返回任何内容。
 
-| Condition     | 响应代码 |
+| 条件     | 响应代码 |
 |:--------------|:--------------|
-| 仍需上载一个或多个二进制段 | `202 Accepted` |
+| 仍然需要上载一个或多个二进制段 | `202 Accepted` |
 | 已成功上载所有二进制段 | `201 Created` |
 
 ## <a name="example"></a>示例
-下面的示例演示如何调用此 API 以上载文档的前72797个字节。
+以下示例演示如何调用此 API 上载文档前 72797 个字节。
 ##### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -93,17 +93,15 @@ Content-Length: 72797
 
 ##### <a name="response"></a>响应
 
-缺少一个或多个段：
+缺少一个或多个分段：
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printDocument"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-接收的所有段：
+收到的所有分段：
 <!-- {
   "blockType": "response",
   "truncated": true,

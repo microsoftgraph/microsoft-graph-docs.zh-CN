@@ -1,18 +1,18 @@
 ---
-title: timeOffRequest：批准
-description: 批准 timeoffrequest 对象。
+title: timeOffRequest： approve
+description: 批准 timeoffrequest 对象。"
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0c78dbe8da36c03e53431db217ea8f186f8180cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 291a3e764ebcd84d181b5441405c4579cf798dc2
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981369"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787320"
 ---
-# <a name="timeoffrequest-approve"></a>timeOffRequest：批准
+# <a name="timeoffrequest-approve"></a>timeOffRequest： approve
 
 命名空间：microsoft.graph
 
@@ -28,9 +28,9 @@ ms.locfileid: "48981369"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 计划的所有写。 *  |
+|应用程序 | Schedule.ReadWrite.All*  |
 
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
+>\***重要提示：** 应用程序权限目前仅为个人预览版，不可公开使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +61,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 
 ## <a name="examples"></a>示例
 
-下面是一个如何调用此 API 的示例。
+下面是如何调用此 API 的示例。
 
 ### <a name="request"></a>请求
 
@@ -104,9 +104,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

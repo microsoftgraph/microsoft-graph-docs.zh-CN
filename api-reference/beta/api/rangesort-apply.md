@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6e2b2f9dcf1a7bda077ef3f5386d5010a3368ff5
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 47e2076bb3c556cd277cb5a022ffcbba88ec2f6f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577343"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788029"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -117,9 +117,7 @@ Content-length: 358
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

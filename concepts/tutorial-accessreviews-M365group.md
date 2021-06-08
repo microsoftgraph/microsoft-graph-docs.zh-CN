@@ -4,12 +4,12 @@ description: 使用访问评审 API 查看来宾对组Microsoft 365访问
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: ad34932926a658d498242dd168ac7fee1d2b31a1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 99f09ab4f7731a75c13977319d2ae25b80304185
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751137"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787665"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>教程：使用访问评审 API 查看来宾对组Microsoft 365访问
 
@@ -46,6 +46,10 @@ ms.locfileid: "52751137"
 ## <a name="step-1-create-a-test-user-in-your-tenant"></a>步骤 1：在租户中创建测试用户
 
 ### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-createUser"
+}-->
 
 ```http
 POST /users
@@ -64,6 +68,11 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -83,6 +92,10 @@ Content-type: application/json
 使用电子邮件地址邀请来宾用户 **john@tailspintoys.com** 租户。
 
 ### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-inviteguest"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/invitations
@@ -97,6 +110,11 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.invitation"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -118,10 +136,15 @@ Content-type: application/json
 3. 添加 john@tailspintoys.com 作为组成员。 他们访问组是由你（组所有者）审查的主题。
 
 ### <a name="request"></a>请求
+
 在此调用中，替换：
 + `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` 与 **id 一起**。若要检索 **id，** 请运行 `GET` `https://graph.microsoft.com/beta/me` 。
 + `baf1b0a0-1f9a-4a56-9884-6a30824f8d20`john@tailspintoys.com 步骤 2 **中响应** 的 id。
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-creategroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
@@ -145,6 +168,12 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -175,11 +204,16 @@ Content-type: application/json
 + 将 **removeAccessApplyAction** 操作应用于拒绝的来宾用户。 这将删除被拒绝来宾组的成员身份。 来宾用户仍可登录到你的租户。
 
 ### <a name="request"></a>请求
+
 在此调用中，替换以下内容：
 
 + `c9a5aff7-9298-4d71-adab-0a222e0a05e4` 使用 **要** 指定为备份审阅者的用户的 ID。 这是步骤 1 中响应的 **ID。**
 + **startDate** 的值，其当前日期和 **endDate** 值，其日期为从开始日期起一年。 
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-create_accessReviewScheduleDefinition"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
@@ -247,6 +281,11 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -321,15 +360,27 @@ Content-type: application/json
 以下查询列出了访问评审定义的所有实例。 如果测试租户包含Microsoft 365用户的其他组，此请求将为租户中具有来宾Microsoft 365组返回一个实例。
 
 ### <a name="request"></a>请求
+
 在此调用中， `c22ae540-b89a-4d24-bac0-4ef35e6591ea` 将 替换为步骤 4 中返回的访问评审定义的 ID。
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-list_accessReviewInstance"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
 ```
 
 ### <a name="response"></a>响应
+
 在此响应中，范围包括一个 **id** 为 (在步骤 3 中创建的 Feelgood 市场营销活动组) `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` 因为它有来宾用户。 
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -357,10 +408,15 @@ Content-type: application/json
 获取针对访问评审实例做出的决策。
 
 ### <a name="request"></a>请求
+
 在此调用中：
 + 将 `c22ae540-b89a-4d24-bac0-4ef35e6591ea` 替换为步骤 4 中返回的访问评审定义的 ID。
 + 将 `6392b1a7-9c25-4844-83e5-34e23c88e16a` 替换为步骤 5 中返回的访问评审实例的 ID。
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-list_accessReviewInstanceDecisionItem"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
 ```
@@ -369,6 +425,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 以下响应显示为评价实例做出的决定。
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -422,14 +484,22 @@ Content-type: application/json
 ### <a name="delete-the-microsoft-365-group"></a>删除Microsoft 365组
 
 #### <a name="request"></a>请求
+
 在此调用中， `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` 将 替换为 **你的 Feelgood 市场营销活动的** **id** Microsoft 365组。
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
 ```
 
 #### <a name="response"></a>响应
-
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
@@ -440,40 +510,65 @@ Content-type: text/plain
 在此调用中， `c22ae540-b89a-4d24-bac0-4ef35e6591ea` 将 替换为 **访问** 评审定义的 ID。 由于访问评审计划定义是访问评审的蓝图，删除该定义将删除与访问评审相关的设置、实例和决策。
 
 #### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_accessReviewScheduleDefinition"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
 ```
 
 #### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
+
 ### <a name="remove-the-guest-user"></a>删除来宾用户
 
 在此调用中， `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` 将 替换为 **来宾用户的 ID，john@tailspintoys.com。**
 
 #### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20
 ```
 
 #### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
 ### <a name="delete-the-test-user"></a>删除测试用户
+在此调用中， `c9a5aff7-9298-4d71-adab-0a222e0a05e4` 将 替换为 **测试** 用户的 ID。
 
 #### <a name="request"></a>请求
-在此调用中， `c9a5aff7-9298-4d71-adab-0a222e0a05e4` 将 替换为 **测试** 用户的 ID。
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_guestuser"
+}-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4
 ```
 
 #### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 204 No Content

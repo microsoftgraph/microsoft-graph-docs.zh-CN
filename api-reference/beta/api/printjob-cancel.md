@@ -1,33 +1,33 @@
 ---
-title: printJob：取消
+title: printJob： cancel
 description: 取消打印作业。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4c4522ef8fb19226475758986d1245c447358095
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: b2eb7c40f1f2474752b316a412dbb4c382152741
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617015"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787511"
 ---
-# <a name="printjob-cancel"></a>printJob：取消
+# <a name="printjob-cancel"></a>printJob： cancel
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消打印作业。 只能代表用户（使用委派权限）取消打印作业。
+取消打印作业。 只能代表用户使用委派权限取消打印作业。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。
+除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [获取](printer-get.md) 打印机访问权限的权限。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| PrintJob、ReadWriteBasic、PrintJob、All、ReadWriteBasic、All |
+|委派（工作或学校帐户）| PrintJob.ReadWriteBasic、PrintJob.ReadWrite、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 不支持。 |
 
@@ -83,9 +83,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 ### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

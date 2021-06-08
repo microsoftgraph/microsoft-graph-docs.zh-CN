@@ -1,22 +1,22 @@
 ---
 title: 更新域
-description: 更新域对象的属性。
+description: 更新 domain 对象的属性。
 author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ee201a5dbd60e68c9e3e53e5c7dba340fe1ef06b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fc400d4790326e79d8ad8dea387d6027baf8f1de
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441954"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787301"
 ---
 # <a name="update-domain"></a>更新域
 
 命名空间：microsoft.graph
 
-更新域对象的属性。
+更新 domain 对象的属性。
 
 > **重要提示：** 只能更新已验证的域。
 
@@ -48,11 +48,11 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要更新的相关字段的值。 请求正文中不包含的现有属性将保留其以前的值或根据其他属性值的更改重新计算。 为获得最佳性能，仅包括更改的值。
+在请求正文中，提供要更新的相关字段的值。 请求正文中未包含的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为获得最佳性能，仅包括更改的值。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应代码，并且不会返回响应正文。
+如果成功，此方法返回 响应 `204 No Content` 代码，无响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -98,9 +98,7 @@ Content-type: application/json
 ##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.domain"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

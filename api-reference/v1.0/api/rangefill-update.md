@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 08dcc5f9181354f394741fffa036375a865b53b7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5184a13a8f5faebad37ca59841ec68c5d45a3907
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52034964"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787603"
 ---
 # <a name="update-rangefill"></a>更新 rangefill
 
@@ -89,11 +89,9 @@ Content-length: 28
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFill"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

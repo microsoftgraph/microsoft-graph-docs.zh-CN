@@ -1,18 +1,18 @@
 ---
-title: 'securityAction: cancelSecurityAction'
+title: securityAction：cancelSecurityAction
 description: 取消安全操作。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a12f902c3f2eeed89c40497c49d9bb1a78fe6123
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 41cec1694baa05b67791a000215f44c6cfd8c859
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976701"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787231"
 ---
-# <a name="securityaction-cancelsecurityaction"></a>securityAction: cancelSecurityAction
+# <a name="securityaction-cancelsecurityaction"></a>securityAction：cancelSecurityAction
 
 命名空间：microsoft.graph
 
@@ -92,9 +92,7 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

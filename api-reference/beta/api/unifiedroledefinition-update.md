@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47ff9ff4c40360ddb28d5d6d344ca1d7375cc119
-ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
+ms.openlocfilehash: 4102ece8a559161e5813e175d81a62a4c7ce9843
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2021
-ms.locfileid: "52709491"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787413"
 ---
 # <a name="update-unifiedroledefinition"></a>更新 unifiedRoleDefinition
 
@@ -133,9 +133,7 @@ Content-type: application/json
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+  "blockType": "response"
 } -->
 
 ```http

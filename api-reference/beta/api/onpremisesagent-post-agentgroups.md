@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1d14d95f6e31f8784ddbe89dc6c0070b60d6854f
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 9788e4485ba5c81453aac5087661bf3ea3e98299
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781147"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787537"
 ---
 # <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>将 onPremisesAgent 分配给 onPremisesAgentGroup
 
@@ -93,9 +93,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesAgentGroup"
+  "blockType": "response"
 } -->
 
 ```http

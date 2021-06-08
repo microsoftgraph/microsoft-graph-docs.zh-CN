@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 868184491c13e67b9bcd773f0a82383a5310d67b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 50ed06389378a2ec83aa32e54a238f809ab133de
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50776233"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787190"
 ---
 # <a name="synchronizationjob-pause"></a>synchronizationJob：pause
 
@@ -27,7 +27,7 @@ ms.locfileid: "50776233"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。  |
-|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -84,9 +84,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ##### <a name="response"></a>响应
 响应示例如下所示。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 232296196ccdee3124d79e0347dde20f5f8aeee8
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 000e8513bd4c1bfff047d50dad1fd8d1dc7fa4fa
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873575"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787607"
 ---
 # <a name="update-printsettings"></a>更新 printSettings
 
@@ -21,9 +21,9 @@ ms.locfileid: "49873575"
 更新通用打印服务的租户范围设置。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -46,9 +46,9 @@ PATCH /print/settings
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关 [printSettings](../resources/printsettings.md) 字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|指定是否对租户启用文档转换。 如果启用文档转换，通用打印服务将自动将文档转换为与打印机设备兼容的格式 (例如，XPS 转换为 PDF) 时。|
+|documentConversionEnabled|Boolean|指定是否对租户启用文档转换。 如果启用文档转换，则通用打印服务将自动将文档转换为与打印机模式兼容的格式 (例如，XPS 转换为 PDF) 进行打印。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回 `204 No Content` 响应代码和空响应正文。
@@ -91,9 +91,7 @@ Content-type: application/json
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printSettings"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 NoContent

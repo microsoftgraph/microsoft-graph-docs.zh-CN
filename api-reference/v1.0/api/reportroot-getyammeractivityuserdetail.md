@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 887163ee813ece047c2a12abfa310ee17f1204a3
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: a252669a34cfb45246f2e182a6f2d8da8b8ffeff
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983369"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787434"
 ---
 # <a name="reportroot-getyammeractivityuserdetail"></a>reportRoot: getYammerActivityUserDetail
 
@@ -18,9 +18,9 @@ ms.locfileid: "49983369"
 
 获取用户执行的 Yammer 活动的详细信息。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - Yammer 活动](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 Microsoft 365 [reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -129,9 +129,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(date='2
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "response"
 } -->
 
 ```http

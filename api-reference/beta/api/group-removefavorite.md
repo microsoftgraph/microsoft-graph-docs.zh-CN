@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cc09c1568bbcea4936862ee298706298a8c6ad5c
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 4409fe7b777e470f6e25fa5c675335512bf58433
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681282"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786943"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
@@ -82,8 +82,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 下面展示了示例响应。
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 200 OK

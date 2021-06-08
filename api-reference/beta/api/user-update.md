@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a1272d3c3340308be5ebdf68d6542b77f073ac4c
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 44d38281189872da3aad4382f899600c040bcbdd
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232086"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787061"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -65,14 +65,14 @@ PATCH /users/{id | userPrincipalName}
 |department|String|用户工作部门的名称。|
 |displayName|String|用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 支持 `$filter` 和 `$orderby`。|
 |employeeId|String|由组织分配给该用户的员工标识符。|
-| employeeType | String | 捕获企业工作线程类型。 例如， `Employee` 、 `Contractor` `Consultant` 、 或 `Vendor` 。 仅在 `$select` 上返回。 支持 `$filter` 运算符 `eq` 。|
+| employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。 仅在 `$select` 上返回。 支持带 `eq` 运算符的 `$filter`。|
 |givenName|String|用户的名。|
 |hireDate|DateTimeOffset|用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对标识 **的任何** 更新都将替换整个集合，并且必须在集合中提供 userPrincipalName **signInType** 标识。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
 |mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 <br><br>默认情况下返回。 支持 `$filter`。|
-|mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。|
+|mailNickname|String|用户的邮件别名。创建用户时必须指定此属性。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
 |officeLocation|String|用户公司地点的办公室位置。|
@@ -148,9 +148,7 @@ Content-type: application/json
 
 以下示例显示了相应的响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -202,9 +200,7 @@ Content-type: application/json
 
 以下示例显示了相应的响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d666f9834e5377e5145b2fe0feea801842cb8f5f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 535feee59c1f3992d9d78eea1380b50bd841987c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048972"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787350"
 ---
 # <a name="replace-timeoff"></a>替换 timeOff
 
@@ -61,7 +61,7 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -110,7 +110,7 @@ Prefer: return=representation
 ---
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。 
 

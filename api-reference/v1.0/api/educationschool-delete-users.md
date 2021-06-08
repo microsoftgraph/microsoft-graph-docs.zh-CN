@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c6bc067eed091f7fa6d04ea992517c2ec6d66391
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3dfdb0e2f0bcefefc4b4d0f6c35926cf36b08d43
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956587"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787462"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>从 educationSchool 删除 educationUser
 
@@ -78,9 +78,7 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{use
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

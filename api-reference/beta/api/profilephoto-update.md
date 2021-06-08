@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 67ec3e6400e007e5c0638bea92097e9e4945e85e
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: e6ccd0fe70f2e48c890df074c6a7865cbf502f83
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515707"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787588"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -18,11 +18,11 @@ ms.locfileid: "50515707"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新租户中任何用户的照片，包括登录用户或指定的组或联系人。 由于目前每个 REST 请求的总大小限制为 8MB，因此可以添加的照片大小限制为 8MB 以下。
+更新租户中任何用户的照片，包括已登录用户或指定的组或联系人。 由于目前每个 REST 请求的总大小限制为 8MB，因此可以添加的照片大小限制为 8 MB 以下。
 
 仅对此操作使用 PUT。
 
-> **注意**：更新用户照片 **时** ，此操作首先尝试在 Microsoft 365 中更新照片。 如果由于 (邮箱帐户而失败) ，此 API 将尝试在 Azure Active Directory 中更新照片。
+> **注意**：更新用户 **照片时**，此操作首先尝试更新用户Microsoft 365。 如果由于用户 (邮箱而失败，) API 将尝试更新 Azure Active Directory。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,7 +31,7 @@ ms.locfileid: "50515707"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | 已登录用户的个人资料 **照片**：<br/>User.ReadWrite、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
+|应用程序                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 
 > **注意** 若要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。 更新已登录用户的照片仅需要 User.ReadWrite 权限。
 
@@ -49,7 +49,7 @@ PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
 
-若要更新团队的照片，请：
+若要更新团队的照片，请进行以下操作：
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -104,9 +104,7 @@ Binary data for the image
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.profilePhoto"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

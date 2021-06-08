@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 459cf68eb91f47b5c5ffaec965ebbe605a8d783b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a9f4426815707882cd5e97283e20446034bb2012
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050750"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787364"
 ---
 # <a name="delete-timeoff"></a>删除 timeOff
 
@@ -57,7 +57,7 @@ DELETE /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -88,15 +88,13 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOf
 ---
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

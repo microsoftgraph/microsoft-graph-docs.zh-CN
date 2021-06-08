@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 81eee8c04af0016c04ec1cca76f3f996bf41d50a
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 2b44da1d94f23d3155b1eafa94c49310fc2a2569
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781049"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787567"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -397,7 +397,7 @@ ms.locfileid: "52781049"
 |all|
 |privilegedAdmin|
 |admin|
-|user|
+|用户|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>includedUserTypes 值 
@@ -413,7 +413,7 @@ ms.locfileid: "52781049"
 
 |成员|
 |:---|
-|user|
+|用户|
 |应用|
 |system|
 |unknownFutureValue|
@@ -706,7 +706,7 @@ ms.locfileid: "52781049"
 
 |成员|
 |:---|
-|user|
+|用户|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState 值
@@ -900,6 +900,15 @@ ms.locfileid: "52781049"
 |一些|
 |unknownFutureValue|
 
+### <a name="timecardstate-values"></a>timeCardState 值
+
+|成员|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
+|unknownFutureValue|
+
 ### <a name="schedulechangestate-values"></a>scheduleChangeState 值
 
 | 成员
@@ -928,14 +937,29 @@ ms.locfileid: "52781049"
 
 ### <a name="workforceintegrationsupportedentities-values"></a>workforceIntegrationSupportedEntities 值
 
+|成员|
+|:---|
+|无|
+|Shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeCard|
+|timeOffReason|
+|timeOff|
+|timeOffRequest|
+
+### <a name="confirmedby-values"></a>confirmedBy 值
+
 | 成员
-|:----------------------------
-|无
-|Shift
-|swapRequest
-|openShift
-|openShiftRequest
-|userShiftPreferences
+|:-----------------
+| 无|
+| 用户|
+| manager|
+| unknownFutureValue|
 
 ### <a name="timezonestandard-values"></a>timeZoneStandard 值
 
@@ -1750,7 +1774,7 @@ ms.locfileid: "52781049"
 |成员|
 |:---|
 |signin|
-|user|
+|用户|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>chatMessagePolicyViolationUserActionType 值
@@ -1957,7 +1981,7 @@ ms.locfileid: "52781049"
 | 成员        | 值 | 说明              |
 |:--------------|:------|:-------------------------|
 | undefined     | 0     | 尚不知道。            |
-| user          | 1     | 用户提交。         |
+| 用户          | 1     | 用户提交。         |
 | administrator | 2     | 租户管理员提交。 |
 
 ### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
@@ -2048,7 +2072,7 @@ ms.locfileid: "52781049"
 |dateTime | dateTime 列。 |
 |查找 | 查找列。 |
 |boolean | 是/否列。 |
-|user | 人员或组列。 |
+|用户 | 人员或组列。 |
 |url | 超链接或图片列。 |
 |calculated | 计算列。 |
 |位置 | location 列。 |
@@ -2078,7 +2102,7 @@ ms.locfileid: "52781049"
 
 |成员|
 |:---|
-|user|
+|用户|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType 值
@@ -2196,7 +2220,7 @@ ms.locfileid: "52781049"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
+|team      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 

@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 012e181d9f95ff8b3c145c8a7a0e8a70b14cf625
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 78e2774fe4636a1ecf8556404444b84d57d1abc5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231827"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787518"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "52231827"
 | [Get educationUser](../api/educationuser-get.md)                 | [educationUser](../resources/educationuser.md)              | 读取 [educationUser 对象的属性和](../resources/educationuser.md) 关系。 |
 | [更新 educationUser](../api/educationuser-update.md)           | [educationUser](../resources/educationuser.md)              | 更新 [educationUser 对象](../resources/educationuser.md) 的属性。                 |
 | [删除 educationUser](../api/educationuser-delete.md)           | 无                                                        | 删除 [educationUser](../resources/educationuser.md) 对象。                                  |
-| [增量](../api/educationuser-delta.md)                           | [educationUser](../resources/educationuser.md) 集合   | 获取资源集合的增量更改。                                                |
+| [delta](../api/educationuser-delta.md)                           | [educationUser](../resources/educationuser.md) 集合   | 获取资源集合的增量更改。                                                |
 | [列出更新类](../api/educationuser-list-taughtclasses.md) | [educationClass](../resources/educationclass.md) 集合 | 从 educationClasses 导航属性获取 educationClass 资源。                       |
 
 ## <a name="properties"></a>属性
@@ -54,7 +54,7 @@ ms.locfileid: "52231827"
 | mobilePhone          | String                                                             | 用户的主要移动电话号码。                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | onPremisesInfo       | [educationOnPremisesInfo](../resources/educationonpremisesinfo.md) | 用于将 Azure AD 用户与对应的 Active Directory 关联的其他信息。                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | passwordPolicies     | String                                                             | 指定用户的密码策略。 此值表示枚举，其中一个可能 `DisableStrongPassword`为枚举值，允许指定超过默认策略的密码。 `DisablePasswordExpiration` 也可以指定 。 可以同时指定这两者;例如 `DisablePasswordExpiration, DisableStrongPassword` ：。                                                                                                                                                                      |
-| passwordProfile      | [passwordProfile](../resources/passwordprofile.md)                 | 指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。                                                                                                                                                                                                                             |
+| passwordProfile      | [passwordProfile](../resources/passwordprofile.md)                 | 指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。                                                                                                                                                                                                                              |
 | preferredLanguage    | String                                                             | 用户的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | primaryRole          | educationUserRole                                                  | 用户的默认角色。 用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`none`、`unknownFutureValue`。                                                                                                                                                                                                                                                                                                                                                                     |
 | provisionedPlans     | [provisionedPlan](../resources/provisionedplan.md) 集合      | 为用户设置的计划。只读。不可为 null。                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -164,9 +164,7 @@ ms.locfileid: "52231827"
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
-  ],
+   ],
   "tocPath": ""
 }-->
 

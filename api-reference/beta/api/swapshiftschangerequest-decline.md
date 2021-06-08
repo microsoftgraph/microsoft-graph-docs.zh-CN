@@ -1,18 +1,18 @@
 ---
-title: swapShiftsChangeRequest：拒绝
-description: 拒绝交换转换请求。
+title: swapShiftsChangeRequest： decline
+description: 拒绝交换班次请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e3e2e0a64b06c7316e45269bfb92d2525feb10c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0e94566fa87b9cd86bad56660db979650294ce49
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976798"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787189"
 ---
-# <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest：拒绝
+# <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest： decline
 
 命名空间：microsoft.graph
 
@@ -102,9 +102,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

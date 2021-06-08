@@ -1,18 +1,18 @@
 ---
-title: 更新管理单元
+title: 更新 administrativeunit
 description: 更新 administrativeUnit 对象的属性。
 author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 195ae89d8f32659f975be172fcf586f0cc7a02eb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0de564f28885e78c9211f42e2d3c677040407564
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442570"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787987"
 ---
-# <a name="update-administrativeunit"></a>更新管理单元
+# <a name="update-administrativeunit"></a>更新 administrativeunit
 
 命名空间：microsoft.graph
 
@@ -49,7 +49,7 @@ PATCH /directory/administrativeUnits/{id}
 |displayName|string|管理单元的显示名称。|
 |visibility|string|管理单元的可见性。 如果未设置，则默认值为"public"。 可以设置为"HiddenMembership"，这将对非成员隐藏成员身份。|
 
-由于 **administrativeUnit** 资源 [](/graph/extensibility-overview)支持扩展，因此可以使用该操作在现有 administrativeUnit 实例中扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
+由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有 `PATCH` **administrativeUnit** 实例中扩展的自定义属性中您自己的特定于应用的数据。
 
 ## <a name="response"></a>响应
 
@@ -101,9 +101,7 @@ Content-length: 114
 ##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -1,22 +1,22 @@
 ---
 title: 删除班次
-description: 从计划中删除班次轮换。
+description: 从计划中删除班次。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 77b54c896601082db40d79f7f2d0c4d74461d274
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 6c1db199016bcd8d81d7c4209240f854a218d53d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315568"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787749"
 ---
 # <a name="delete-shift"></a>删除班次
 
 命名空间：microsoft.graph
 
-从计划中删除 [班次轮换](../resources/shift.md) 。
+从 [计划中删除](../resources/shift.md) 班次。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "48315568"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All、Schedule、All |
+|应用程序 | Schedule.Read.All、Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -91,8 +91,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

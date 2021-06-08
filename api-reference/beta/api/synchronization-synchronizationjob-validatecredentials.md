@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ce507c989ee842040787c77f772d6188d9444a03
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 650cbc18aeb0dc28ef732c4065aa67d19f1a710f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50773555"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787167"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob： validateCredentials
 
@@ -27,7 +27,7 @@ ms.locfileid: "50773555"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -95,9 +95,7 @@ Content-length: 218
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

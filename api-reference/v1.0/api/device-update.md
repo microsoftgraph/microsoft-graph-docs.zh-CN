@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f756633f7e6052c4eb954f953299603507b50ee
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ef160a0e31ee5753258e8da4403158c693a13e5e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442087"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787819"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -51,8 +51,8 @@ PATCH /devices/{id}
 |operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
 |displayName|String|设备显示名称。|
-|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 这只能由 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows OS 设备的已批准 [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) 应用更新。 |
-|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows OS 设备的已批准 [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) 应用更新。 |
+|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 |
+|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 |
 
 ## <a name="response"></a>响应
 
@@ -97,9 +97,7 @@ Content-length: 31
 ##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

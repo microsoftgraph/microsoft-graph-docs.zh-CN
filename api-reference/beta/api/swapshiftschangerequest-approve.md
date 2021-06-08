@@ -1,18 +1,18 @@
 ---
-title: swapShiftsChangeRequest：批准
-description: 批准交换转换请求。
+title: swapShiftsChangeRequest：approve
+description: 批准交换班次请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 56dd5e9696bc32cfa48eeaf1a19f2d228de93c38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 18bdbd6d6de9ca3bf1dd65d25ec55d64db4d7176
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982160"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787202"
 ---
-# <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest：批准
+# <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest：approve
 
 命名空间：microsoft.graph
 
@@ -102,9 +102,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

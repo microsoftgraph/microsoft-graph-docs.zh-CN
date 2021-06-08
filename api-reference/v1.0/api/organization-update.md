@@ -5,18 +5,18 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4179ee12cd0941f1976a2c5136a47e55a8504f4c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6e848342b2a14d836f2fc9c0df68db2f44e0531b
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448121"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787448"
 ---
 # <a name="update-organization"></a>更新组织
 
 命名空间：microsoft.graph
 
-更新当前经过身份验证的组织的属性。 在这种情况下，定义为只包含一条记录的集合，因此必须在请求中 `organization` 指定其 **ID。**  **ID** 也称为组织的 **tenantId。**
+更新当前经过身份验证的组织的属性。 在这种情况下，定义为只包含一条记录的集合，因此必须在请求中指定 `organization` 其 **ID。**  **ID** 也称为组织的 **tenantId。**
 
 ## <a name="permissions"></a>权限
 
@@ -109,9 +109,7 @@ Content-length: 411
 ### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organization"
+  "blockType": "response"
 } -->
 
 ```http

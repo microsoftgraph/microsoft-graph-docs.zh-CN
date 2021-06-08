@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b665bd0e1457234da5337683f3ff52df93cc88d4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5640b2488ccabc24f512e823924b7be0e3df7342
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054635"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787980"
 ---
 # <a name="add-owner"></a>添加所有者
 
@@ -93,9 +93,7 @@ Content-length: 30
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -6,19 +6,18 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 使用此 API 检索特定格式的项的内容。
 doc_type: apiPageType
-ms.openlocfilehash: 722b90ddec082e6b415d532e81d67bfe415d68e6
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 38b87b43f137fe291be31d98d97ea9a9448e6c9a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240316"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787805"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
 命名空间：microsoft.graph
 
-使用此 API 检索特定格式的项的内容。
-并非所有文件都可转换成全部格式。
+使用此 API 检索特定格式的项的内容。 并非所有文件都可转换成全部格式。
 
 若要下载原始格式的项目，请参阅[下载项内容](driveitem-get-content.md)。
 
@@ -92,7 +91,7 @@ GET /me/drive/items/{item-id}/content?format={format}
 
 已预先验证的 URL 仅在短期（几分钟）内有效，无需 `Authorization` 头即可访问。
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found

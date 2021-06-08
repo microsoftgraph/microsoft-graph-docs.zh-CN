@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 82f33ae2b4165586ccb4a3d55873e1e6ff6c1765
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: fb1621d05daa04a3387d728dfdfbea073cf56704
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516617"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787504"
 ---
 # <a name="update-regionalandlanguagesettings"></a>更新 regionalAndLanguageSettings
 
@@ -18,16 +18,16 @@ ms.locfileid: "50516617"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象的一些或所有属性。
+更新 [regionalAndLanguageSettings 对象的部分或所有](../resources/regionalAndLanguageSettings.md) 属性。
 
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型                   |权限 (从最低特权到最多特权)      |
+|权限类型                   |权限 (权限级别从最低到最多)      |
 |----------------------------------|---------------------------------------------- |
 |委派（工作或学校帐户）|User.ReadWrite、User.ReadWrite.All             |
 |委派 (个人帐户)       |User.ReadWrite、User.ReadWrite.All             |
-|Application                       |User.ReadWrite、User.ReadWrite.All             |
+|应用程序                       |User.ReadWrite、User.ReadWrite.All             |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,11 +52,11 @@ PATCH /settings/regionalAndLanguageSettings
 ## <a name="request-body"></a>请求正文
  **PUT**：在请求正文中，提供 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象。
  
- **PATCH**：仅提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了实现最佳性能，不得添加未变化的现有值。
+ **PATCH：** 仅提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了实现最佳性能，不得添加未变化的现有值。
  
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 200 响应代码和更新 **的 regionalAndLanguageSettings** 对象。
+如果成功，此方法返回 200 响应代码和更新的 **regionalAndLanguageSettings** 对象。
 
 ## <a name="example"></a>示例
 
@@ -142,8 +142,6 @@ Content-type: application/json
 下面展示了示例响应。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "put_regionalAndLanguageSettings"
 } -->
 ```http
@@ -203,8 +201,6 @@ Content-type: application/json
 下面展示了示例响应。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "patch_regionalAndLanguageSettings"
 } -->
 ```http

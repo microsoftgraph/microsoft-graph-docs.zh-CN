@@ -1,27 +1,27 @@
 ---
 title: 删除 teamsApp
-description: '从组织的应用程序目录中删除 Teams 应用 (租户应用程序目录) 。 '
+description: '从Teams应用程序目录中从组织的应用程序目录中删除 (应用程序) 。 '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bbaf69d70a73626a550356e0ca235d693be7f3a6
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 9952dabb38b1f9849b5df3b3fff3fafdf029c971
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471661"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787728"
 ---
 # <a name="delete-teamsapp"></a>删除 teamsApp
 
 命名空间：microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
-### <a name="delete-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用
+### <a name="delete-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
 
-从 [组织](../resources/teamsapp.md) 的应用程序目录中删除应用程序 (租户应用程序目录) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
+从 [租户](../resources/teamsapp.md) 应用程序目录组织的应用程序目录中 (应用程序) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
 
-您还可以使用此 API 从审阅过程中删除已提交的应用。
+您还可以使用此 API 从评价过程中删除已提交的应用。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ ms.locfileid: "50471661"
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-若要删除已提交但尚未批准的应用：
+若要删除已提交但尚未批准的应用，请运行：
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
@@ -60,7 +60,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 请勿提供此方法的请求正文。
 
->**注意：** 使用从列表已发布 [应用调用](./appcatalogs-list-teamsapps.md) 返回的 ID 引用要删除的应用。 请勿使用 zip 应用包清单中的 ID。
+>**注意：** 使用从列表已发布 [的应用](./appcatalogs-list-teamsapps.md) 调用返回的 ID 来引用你要删除的应用。 请勿使用 zip 应用包清单中的 ID。
 
 ## <a name="response"></a>响应
 
@@ -103,9 +103,7 @@ DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http

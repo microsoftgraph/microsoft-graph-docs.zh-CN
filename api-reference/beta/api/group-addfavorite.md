@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9d69dc471b6de7685efdae7075558abb34eabf0f
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1f8c0b327fabd60f52747cc7c78ff398709fe3ff
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681926"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786970"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 
@@ -82,8 +82,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/addFavorite
 下面展示了示例响应。
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 200 OK

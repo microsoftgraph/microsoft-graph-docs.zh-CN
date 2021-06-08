@@ -1,31 +1,31 @@
 ---
-title: educationSubmission： unsubmit
-description: '一个操作，指示学生希望在工作分配在打开后进行提交。 仅学生可以执行此操作。 '
+title: educationSubmission：未提交
+description: '一种操作，指示学生想要在作业提交后进行作业提交。 此操作仅能由学生执行。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 24868993badf2b0788e35f015e8ceea0ca7361d0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 23f6a2ec01dde64ec12ff8f3a378c40b1b3fd3cb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955413"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787273"
 ---
-# <a name="educationsubmission-unsubmit"></a>educationSubmission： unsubmit
+# <a name="educationsubmission-unsubmit"></a>educationSubmission：未提交
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一个操作，指示学生希望在工作分配在打开后进行提交。 仅学生可以执行此操作。 这会将提交的状态从 "已提交" 更改为 "正在运行"。 在提交过程中，所有资源都将从 submittedResources 复制到 workingResources 存储桶。 教师将查看用于评分的工作资源列表。
+一种操作，指示学生想要在作业提交后进行作业提交。 此操作仅能由学生执行。 这会将提交状态从"已提交"更改为"正在工作"。 在提交过程中，所有资源都将从 submittedResources 复制到 workingResources 存储桶。 教师将查看工作资源列表进行评分。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -33,7 +33,6 @@ ms.locfileid: "48955413"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -82,9 +81,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

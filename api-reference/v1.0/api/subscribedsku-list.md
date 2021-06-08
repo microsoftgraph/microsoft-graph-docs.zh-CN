@@ -5,12 +5,12 @@ localization_priority: Priority
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 584519cde56062b687b1a10fc2f0fa16b064b557
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3a3ce01c2d507d949888ab30f1931b8e721a4fe3
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52034586"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787117"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
@@ -34,7 +34,7 @@ ms.locfileid: "52034586"
 GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法 **不支持** [OData 查询参数](/graph/query-parameters) 来帮助自定义响应，例如，此处$filter不支持此功能。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a2e6791392330b8b2d2b59a61e2e5d84098dc9d8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9495685dda154160176279e769b3bcbae7bae0e6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447694"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787686"
 ---
 # <a name="delete-permissiongrantpolicy"></a>删除 permissionGrantPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50447694"
 
 删除 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50447694"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.ReadWrite.PermissionGrant |
+| 应用程序                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -90,9 +90,7 @@ DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-cust
 ### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy"
+  "blockType": "response"
 } -->
 
 ```http

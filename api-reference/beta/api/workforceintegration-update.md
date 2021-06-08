@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2da287f8b78beae39ce5842307c08ff15ef78007
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c62a27e7c0a019023bea7549523dc8b9de7582c1
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054677"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787994"
 ---
 # <a name="update-workforceintegration"></a>更新工作人员重新参与
 
@@ -53,7 +53,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 |apiVersion|Int32|用于回叫 URL 的 API 版本。 从 1 开始。|
 |displayName|String|员工集成的名称。|
 |加密|workforceIntegrationEncryption|员工集成加密资源。 |
-|isActive|布尔值|指示此员工集成当前是否处于活动状态且可用。|
+|isActive|Boolean|指示此员工集成当前是否处于活动状态且可用。|
 |支持|string| 可能的值是 `none` `shift` `swapRequest` 、、、、、。 `openshift` `openShiftRequest` `userShiftPreferences` 如果选择多个值，则所有值必须以大写字母开头。|
 |supportedEntities|string| 此属性 **将替换** v1.0 中的 supports。 我们建议你使用此属性，而不是 **支持**。 **目前，supports** 属性在 beta 版中仍受支持。 可能的值是 `none` `shift` `swapRequest` 、、、、、。 `openshift` `openShiftRequest` `userShiftPreferences` 如果选择多个值，则所有值必须以大写字母开头。|
 |url|String| 班次服务中回调的员工集成 URL。 |
@@ -233,6 +233,119 @@ HTTP/1.1 200 OK
 }
 ```
 
+### <a name="example-4-shifts-synchronous-call-back-to-the-workforce-integration-endpoint-when-enabled-for-real-time-notifications-on-timecard-changes"></a>示例 4：启用 timeCard 更改时实时通知时，将同步调用移回员工集成终结点。
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。 
+```
+POST https://foobarWorkforceIntegration.com/foobar/v1/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/update
+Accept-Language: en-us
+X-MS-WFMPassthrough: foobarvalue
+Content-type: application/json
+{
+   "requests":[
+      {
+         "id":"1",
+         "method":"POST",
+         "url":"/timecards",
+         "headers":{
+            "X-MS-Transaction-ID":"1"
+         },
+         "body":{
+            "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
+            "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
+            "createdDateTime":"2019-03-18T00:00:00.000Z",
+            "createdBy":{
+               "user":{
+                  "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
+                  "displayName":"Dwight Schrute"
+               }
+            },
+            "lastModifiedDateTime":"2019-03-18T00:00:00.000Z",
+            "lastModifiedBy":{
+               "user":{
+                  "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
+                  "displayName":"Dwight Schrute"
+               }
+            },
+            "state":"onBreak",
+            "clockIn":{
+               "dateTime":"2019-03-18T00:00:00.000Z",
+               "atApprovedLocation":true,
+               "notes":null
+            },
+            "clockOut":null,
+            "breaks":[
+               {
+                  "id":"string",
+                  "notes":{
+                     "content":"Lunch break",
+                     "contentType":"text"
+                  },
+                  "start":{
+                     "dateTime":"2019-03-18T00:00:00.000Z",
+                     "atApprovedLocation":true,
+                     "notes":{
+                        "content":"Started my break 5 minutes early",
+                        "contentType":"text"
+                     }
+                  },
+                  "end":null
+               }
+            ],
+            "notes":null,
+            "originalEntry":{
+               "clockIn":{
+                  "dateTime":"2019-03-18T00:00:00.000Z",
+                  "atApprovedLocation":true,
+                  "notes":null
+               },
+               "clockOut":null,
+               "breaks":[
+                  {
+                     "id":"4591109b-a618-3e0d-e6a0-d42b25b7231f",
+                     "notes":{
+                        "content":"Lunch break",
+                        "contentType":"text"
+                     },
+                     "start":{
+                        "dateTime":"2019-03-18T00:00:00.000Z",
+                        "atApprovedLocation":true,
+                        "notes":{
+                           "content":"Started my break 5 minutes early",
+                           "contentType":"text"
+                        }
+                     },
+                     "end":null
+                  }
+               ]
+            }
+         }
+      }
+   ]
+}
+
+```
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+  "responses":[
+    {
+      "id": "1",
+      "status": 200,
+      "body":{
+        "eTag": "4000ee23-0000-0700-0000-5d1415f60000",
+        "error": null
+      }
+    }
+  ]
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

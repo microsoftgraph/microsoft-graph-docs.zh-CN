@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 36b8a21589bdfd1687939eb636bf5de254d37bab
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 89ba1ec44f41abe1309355c47daeabdd6603ca25
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680736"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787560"
 ---
 # <a name="update-group"></a>更新组
 
@@ -48,7 +48,7 @@ PATCH /groups/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|默认值为“`false`”。 指示组织外部人员是否可以向该组发送邮件。|
+|allowExternalSenders|Boolean|默认值为 `false`。指示组织外部人员是否可以向该组发送邮件。|
 |autoSubscribeNewMembers|Boolean|默认值为“`false`”。 指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 当组上的 **subscriptionEnabled** 设置为 `false` 时，**autoSubscribeNewMembers** 不能为 `true`。|
 |说明|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
@@ -122,9 +122,7 @@ Content-length: 211
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http

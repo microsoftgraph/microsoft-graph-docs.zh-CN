@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5a006e25737abc2bc30b63e029991e8203ff47e0
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 39e1787ba3a88a0988977cb3c34d9575f608980a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681240"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786944"
 ---
 # <a name="update-group"></a>更新组
 
@@ -56,7 +56,7 @@ PATCH /groups/{id}
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
 |groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified，** 则组是一Microsoft 365组;否则，它是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
-|mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
+|mailNickname|String|组的邮件别名。创建组时必须指定此属性。 |
 |securityEnabled|Boolean|指定组是否是安全组，包括Microsoft 365组。 |
 |visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|
 
@@ -120,11 +120,9 @@ Content-length: 211
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http
@@ -179,9 +177,7 @@ Content-length: 211
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http

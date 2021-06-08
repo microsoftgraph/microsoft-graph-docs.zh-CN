@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 713a1f8e4abdf23d9278d5616ba1aca326d9286c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a047967c1b6d1aaadaef56f22390ac8f1b2a1d31
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042357"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787005"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -99,11 +99,9 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP 201 Created
@@ -152,11 +150,9 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP 201 Created

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f45cd696bbd5926927e43902c3cdfcdbc013f4d2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c01c18fe86a7d6b93e9900976386a1a7597900e8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137261"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788036"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal：添加所有者
 
@@ -89,9 +89,7 @@ Content-length: 30
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

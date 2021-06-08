@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 10b3ecd3115b24a6bc614e83a11b48ee12e280d9
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: fae9ef835de3b42a6862258b1d7600f500247850
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575222"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787054"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication： calculate
 
@@ -95,9 +95,7 @@ Content-length: 48
 以下示例显示了相应的响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 
 ```http

@@ -1,18 +1,18 @@
 ---
-title: openShiftChangeRequest： approve
+title: openShiftChangeRequest：approve
 description: 批准 openShiftChangeRequest 请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d78d71d961fc820fd5cb7e4965f3e4ee545646d5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: db80db3f4cf3a588280398abc7e1d9798f503a2c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448167"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787630"
 ---
-# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest： approve
+# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest：approve
 
 命名空间：microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "50448167"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Schedule.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问不是其成员组的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -103,8 +103,7 @@ Content-type: application/json
 下面展示了示例响应。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

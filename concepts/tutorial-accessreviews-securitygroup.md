@@ -4,12 +4,12 @@ description: 使用访问评审 API 查看对安全组的访问权限
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b88c135c488b332814105dcab992e3a2a4ac465b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b3a7ee94f045eb7eb587b58fc6220c304c2b81ff
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751130"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787075"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>教程：使用访问评审 API 查看对安全组的访问权限
 
@@ -49,7 +49,10 @@ ms.locfileid: "52751130"
 通过运行下面的请求三次，每次更改 **displayName、mailNickname** 和 **userPrincipalName** 属性，创建三个新的测试用户。 记录 **其 ID。**
 
 ### <a name="request"></a>请求
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-createUser"
+}-->
 ```http
 POST /users
 Content-Type: application/json
@@ -67,6 +70,11 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -87,12 +95,17 @@ Content-type: application/json
 创建一个名为 **"生成安全** 组"的安全组，该组是本教程中访问评审的目标。 为此组分配两个组所有者和两个成员。 这些成员将是组所有者审查的主题。
 
 ### <a name="request"></a>请求
+
 在此调用中，替换：
 + `010b2de0-0ed4-4ece-bfa2-22fff71d0497` 以及 `b828cc0e-4240-46ed-bb25-888744487e2d` 两 **个** 组所有者的 ID。
   + 其中一 **个 ID** 属于你在步骤 1 中创建的用户之一。
   + 另一个是你的 **id**。若要检索 **id，** 请运行 `GET` `https://graph.microsoft.com/beta/me` 。
 + `43b12b0c-ee2c-4257-96fe-505d823e06ab``859924d0-7115-422a-9ee8-ea8c0c014707`以及两个组的成员的 ID。 这些是在步骤 1 中创建的其他两个成员。
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-creategroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
@@ -116,6 +129,12 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -130,7 +149,7 @@ Content-type: application/json
 ```
 在响应中，记录新组的 **ID，** 以在本教程的稍后部分使用它。
 
-## <a name="step-3-create-an-access-review"></a>步骤 3：创建访问评审
+## <a name="step-3-create-an-access-review-for-the-security-group"></a>步骤 3：为安全组创建访问评审
 
 使用下列设置为安全组的成员创建访问评审：
 + 这是一个自我审阅的访问评审。 在这种情况下，被审阅的用户将自行证明其访问组的需求。
@@ -138,6 +157,7 @@ Content-type: application/json
 + 审阅范围仅限于构建 **安全组 的成员**。
 
 ### <a name="request"></a>请求
+
 在此调用中，替换以下内容：
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c`具有 **"生成****安全组"的 ID。**
 + 作用域指定将审阅应用于"生成安全"组 **的所有组的成员**。 有关配置范围的更多选项，请参阅另 [请参阅部分](#see-also) 。
@@ -145,6 +165,10 @@ Content-type: application/json
 
 如果未能指定 **reviewers** 属性的值，则此访问评审被配置为具有审阅者的成员的自我审阅。
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-create_accessReviewScheduleDefinition"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
@@ -191,6 +215,11 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -245,8 +274,13 @@ Content-type: application/json
 以下查询列出了访问评审定义的所有实例。 由于在步骤 3 中创建了一次访问评审，因此请求仅返回其 **id** 与访问定义的 id 相同的一 **个实例**。
 
 ### <a name="request"></a>请求
+
 在此调用中， `d7286a17-3a01-406a-b872-986b6b40317c` 将 替换为步骤 3 中返回的访问评审定义的 ID。
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstance"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances
 ```
@@ -255,6 +289,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 在此响应中， **访问** 评审实例的状态是 `InProgress` **，因为 startDateTime** 已过去 **，endDateTime** 在将来。 如果 **startDateTime** 在将来，则状态将为 `NotStarted` 。 另一方面，如果 **endDateTime** 过去，状态将为 `Completed` 。
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -281,8 +321,13 @@ Content-type: application/json
 您有兴趣做出有关访问评审实例的决策。
 
 ### <a name="request"></a>请求
+
 在此调用中， `d7286a17-3a01-406a-b872-986b6b40317c` 将 替换为步骤 3 中返回的访问评审定义的 ID。
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstanceDecisionItem"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances/d7286a17-3a01-406a-b872-986b6b40317c/decisions
 ```
@@ -291,6 +336,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 以下响应显示为评价实例做出的决定。
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -431,13 +482,22 @@ Content-type: application/json
 ### <a name="delete-the-security-group"></a>删除安全组
 
 #### <a name="request"></a>请求
+
 在此调用中，将 `825f1b5e-6fb2-4d9a-b393-d491101acc0c` 替换为"生成 **安全****组"的 ID。**
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c
 ```
 
 #### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 
 ```http
 HTTP/1.1 204 No Content
@@ -449,27 +509,42 @@ Content-type: text/plain
 在此调用中， `d7286a17-3a01-406a-b872-986b6b40317c` 将 替换为 **访问** 评审定义的 ID。 由于访问评审计划定义是访问评审的蓝图，删除该定义将删除与访问评审相关的设置、实例和决策。
 
 #### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_accessReviewScheduleDefinition"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c
 ```
 
 #### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
 ### <a name="delete-the-three-test-users"></a>删除三个测试用户
-
-#### <a name="request"></a>请求
 在此调用中， `43b12b0c-ee2c-4257-96fe-505d823e06ab` 将 替换为 **测试** 用户的 ID。 对另外两个用户的 **ID** 重复这两次以删除它们。
 
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06ab
 ```
 
 #### <a name="response"></a>响应
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain

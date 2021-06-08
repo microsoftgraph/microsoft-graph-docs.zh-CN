@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 04be28bbf0522d43133399f1ec9c9d26bcdba265
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 2d68bed903409fcc20b333e95245e8e15764b348
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777122"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787612"
 ---
 # <a name="update-printsettings"></a>更新 printSettings
 命名空间：microsoft.graph
@@ -51,7 +51,7 @@ PATCH /print/settings
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|指定是否对租户启用文档转换。 如果启用文档转换，则通用打印服务将自动将文档转换为与打印机模式兼容的格式 (例如，XPS 转换为 PDF) 进行打印。|
+|documentConversionEnabled|布尔值|指定是否对租户启用文档转换。 如果启用文档转换，则通用打印服务将自动将文档转换为与打印机模式兼容的格式 (例如，XPS 转换为 PDF) 进行打印。|
 
 ## <a name="response"></a>响应
 
@@ -98,8 +98,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printSettings"
+  "truncated": true
 }
 -->
 ``` http

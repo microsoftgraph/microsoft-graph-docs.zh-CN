@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 843eb3d27e8765d0d95fb8ee86c11b0f1deae5bb
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 09d1a760954a88f1201bd21e7ea0971028da2c50
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946581"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787035"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -88,9 +88,7 @@ Content-length: 30
 以下示例显示了相应的响应。 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content
@@ -138,9 +136,7 @@ Content-length: 30
 以下示例显示了相应的响应。 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

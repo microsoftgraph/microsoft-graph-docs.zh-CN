@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 249f5022d3a7dd9170ab35e66c1ecf0e7c0dd99e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1885fab70ab539290045242c1e43d69f214e61fb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131948"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787210"
 ---
 # <a name="serviceprincipal-deletepasswordsinglesignoncredentials"></a>servicePrincipal：deletePasswordSingleSignOnCredentials
 
@@ -28,10 +28,10 @@ ms.locfileid: "50131948"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All |
 
 > [!NOTE]
-> 用户可以为自己创建凭据。 服务主体所有者和具有以下角色的管理员可以为任何用户或组创建凭据：GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解更多信息，请参阅 [目录角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+> 用户可以为自己创建凭据。 具有以下角色的服务主体所有者和管理员可以为任何用户或组创建凭据：GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解更多信息，请参阅 [目录角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/deletePasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串|此凭据集所属的用户或组的 ID。|
+|id|String|此凭据集所属的用户或组的 ID。|
 
 ## <a name="response"></a>响应
 
@@ -103,9 +103,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

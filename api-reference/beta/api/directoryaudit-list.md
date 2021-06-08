@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 92c77a811eacc6af18d48324f70392c30313f1a2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3f326f2b8089c4213b4b13edc25ce89eb32696a7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046893"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787034"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -128,8 +128,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
-```
-```json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{

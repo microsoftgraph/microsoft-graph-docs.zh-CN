@@ -5,12 +5,12 @@ author: bhartono
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d7b36a41982cae853db646bc28e0d5996a22913f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2bf40e04e4d25b3fb4c8f97ebd61e18893f1b17d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950038"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787476"
 ---
 # <a name="add-member-to-a-chat"></a>向聊天添加成员
 
@@ -101,8 +101,7 @@ content-type: application/json
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime"
 }
 -->
 ```http
@@ -110,7 +109,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>示例 2：向 Microsoft Teams 聊天添加单个成员，不共享聊天历史记录
+### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>示例 2：将单个成员添加到聊天Microsoft Teams，不共享聊天历史记录
 
 #### <a name="request"></a>请求
 
@@ -160,8 +159,7 @@ Content-type: application/json
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime"
 }
 -->
 ```http
@@ -169,7 +167,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>示例 3：将单个成员添加到 Microsoft Teams 聊天，共享聊天的整个历史记录
+### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>示例 3：将单个成员添加到Microsoft Teams聊天，共享聊天的整个历史记录
 
 #### <a name="request"></a>请求
 
@@ -220,8 +218,7 @@ content-type: application/json
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
 }
 -->
 ```http

@@ -5,18 +5,18 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e01eaecc95638c3fbda9d21466a7868ae75b7a56
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a10dbde99b62cebf99f82c9ac67743943f83a63
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978284"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787714"
 ---
 # <a name="delete-timeoff"></a>删除 timeOff
 
 命名空间：microsoft.graph
 
-从[计划](../resources/schedule.md)中删除[timeOff](../resources/timeoff.md)实例。
+从计划 [中删除 timeOff](../resources/timeoff.md) [实例](../resources/schedule.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,11 +24,11 @@ ms.locfileid: "47978284"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -94,8 +94,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOf
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

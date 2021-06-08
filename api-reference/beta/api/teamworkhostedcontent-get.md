@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be9585253f695c9fae9dddf123ad2490d9765da5
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 6317cac369ad8d7bb29ed83c7e2c5ce9a0ca5f5f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921706"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788001"
 ---
 # <a name="get-teamworkhostedcontent"></a>获取 teamworkHostedContent
 
@@ -22,7 +22,7 @@ ms.locfileid: "51921706"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="permissions-for-app-icon-in-app-catalog"></a>应用程序目录中应用程序图标的权限
 | 权限类型                        | 权限（从最低特权到最高特权）                      |
@@ -63,7 +63,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-bytes-of-the-hosted-content-of-the-color-icon-of-a-teams-app-in-the-catalog"></a>示例 1：获取目录中 Teams 应用的颜色图标的托管内容的字节数
+### <a name="example-1-get-the-bytes-of-the-hosted-content-of-the-color-icon-of-a-teams-app-in-the-catalog"></a>示例 1：获取目录中应用程序颜色图标Teams内容的字节数
 
 #### <a name="request"></a>请求
 
@@ -120,7 +120,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-bytes-of-the-hosted-content-of-the-outline-icon-of-a-teams-app-in-the-catalog"></a>示例 2：获取目录中 Teams 应用的大纲图标的托管内容的字节数
+### <a name="example-2-get-the-bytes-of-the-hosted-content-of-the-outline-icon-of-a-teams-app-in-the-catalog"></a>示例 2：获取目录中应用程序大纲图标Teams内容的字节数
 
 #### <a name="request"></a>请求
 
@@ -161,9 +161,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 响应包含正文中托管内容的字节。 `content-type` header 指定托管内容类型。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.teamworkHostedContent"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -172,5 +170,5 @@ Content-type: image/png
 
 ## <a name="see-also"></a>另请参阅
 
-- [获取 Teams 应用的图标](teamsappicon-get.md)
+- [获取应用Teams图标](teamsappicon-get.md)
 - [列出目录中的应用](appcatalogs-list-teamsapps.md)

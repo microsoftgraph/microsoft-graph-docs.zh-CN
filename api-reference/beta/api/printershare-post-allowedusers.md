@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c3c170c05d8dfe18a228456de26c3bbce4dabc2a
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: a40a26372457faaaa18b27778235bd8de4d60ef6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765941"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787399"
 ---
 # <a name="create-alloweduser-for-printershare"></a>为 printerShare 创建 allowedUser
 
@@ -21,7 +21,7 @@ ms.locfileid: "51765941"
 授予指定用户向关联的 printerShare 提交打印 [作业的权限](../resources/printershare.md)。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "51765941"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -90,9 +90,7 @@ Content-length: 66
 ### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -1,16 +1,16 @@
 ---
 title: 获取 directoryAudit
-description: 介绍从 microsoft Graph API (beta) beta 版本 (directoryAudit 资源) 。
+description: 介绍从 Microsoft Graph API (beta 版本) directoryAudit (实体的 get) 。
 localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8542daa3ad66c37d3f46702d19542ba3fc9bcefa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d603045143ae379f55ed56dd1cd69be74946b1ed
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130956"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787047"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130956"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取特定的 Azure Active Directory 审核日志项。 这包括 Azure Active Directory 中各种服务生成的 审核日志 项，如用户、应用程序、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
+获取特定的Azure Active Directory 审核日志项。 这包括 Azure Active Directory 中各种服务生成的 审核日志 项，如用户、应用程序、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 
@@ -55,7 +55,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [directoryAudit](../resources/directoryaudit.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [directoryAudit](../resources/directoryaudit.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -104,8 +104,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
-```
-```json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{

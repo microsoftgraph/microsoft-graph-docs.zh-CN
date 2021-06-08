@@ -1,18 +1,18 @@
 ---
-title: timeOffRequest：拒绝
+title: timeOffRequest： decline
 description: 拒绝 timeoffrequest 对象。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9fb4432cc9cf05689ec26a6b8ebe8b0447f33ca6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0f745bea1f16680861c92fa8b4a5c18025c425da
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981352"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787315"
 ---
-# <a name="timeoffrequest-decline"></a>timeOffRequest：拒绝
+# <a name="timeoffrequest-decline"></a>timeOffRequest： decline
 
 命名空间：microsoft.graph
 
@@ -28,9 +28,9 @@ ms.locfileid: "48981352"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 计划的所有写。 *  |
+|应用程序 | Schedule.ReadWrite.All*  |
 
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
+>\***重要提示：** 应用程序权限目前仅为个人预览版，不可公开使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +61,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 
 ## <a name="examples"></a>示例
 
-下面是一个如何调用此 API 的示例。
+下面是如何调用此 API 的示例。
 
 ### <a name="request"></a>请求
 
@@ -104,9 +104,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

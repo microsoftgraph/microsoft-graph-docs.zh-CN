@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 216da34bb6900d246f990529c88bc398cc1cdcc7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1851af949207a00d3fd3429723397597bd51dce5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50775072"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787176"
 ---
 # <a name="restart-synchronizationjob"></a>重新启动 synchronizationJob
 
@@ -27,7 +27,7 @@ ms.locfileid: "50775072"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All  | 
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -97,9 +97,7 @@ Content-type: application/json
 响应示例如下所示。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

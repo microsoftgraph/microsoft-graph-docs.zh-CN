@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 28e8fdd96bcbdc5b9542d42d8a24d8f5cf4e4da3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 210c098f5e8e5b536879eb0f00c07470d9e22a20
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433857"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787675"
 ---
 # <a name="update-permissiongrantpolicy"></a>更新 permissionGrantPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50433857"
 
 更新  [permissionGrantPolicy 的属性](../resources/permissiongrantpolicy.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50433857"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.ReadWrite.PermissionGrant |
+| 应用程序                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,12 +50,12 @@ PATCH /policies/permissionGrantPolicies/{id}
 
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
-| displayName | String |权限显示名称策略的权限。|
-| 说明 |String| 权限授予策略的说明。|
+| displayName | String |权限授予策略的显示名称。|
+| 说明 |String| 权限授予策略的描述。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应代码，并且不会在响应正文中返回任何内容。
+如果成功，此方法返回 `204 No Content` 响应代码，不会在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 
@@ -100,10 +100,7 @@ Content-Type: application/json
 ### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy",
-  "isCollection": false
+  "blockType": "response"
 } -->
 
 ```http
