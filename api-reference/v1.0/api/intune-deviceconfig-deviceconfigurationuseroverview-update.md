@@ -5,29 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 010e77ee0751118fa6eb3ed9fbca1d5b8dbeaa64
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b91c8ff52a39c6810a833042f7ed5d6e78a910d6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066871"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760620"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>更新 deviceConfigurationUserOverview
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 |:---|:---|:---|
 |id|String|实体的键。|
 |pendingCount|Int32|待定用户的数量|
-|notApplicableCount|Int32|不适用的用户数|
+|notApplicableCount|Int32|不适用用户的数量|
 |successCount|Int32|成功用户的数量|
 |errorCount|Int32|错误用户的数量|
 |failedCount|Int32|失败用户的数量|
@@ -105,11 +105,6 @@ Content-Length: 331
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
 
 
 

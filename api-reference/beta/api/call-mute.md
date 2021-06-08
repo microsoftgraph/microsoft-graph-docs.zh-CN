@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d378c1e0b726bc371e0f7ada73de4cc8cebd99ac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c681698b34395fda542a96f6a94941a8e3f25a74
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047635"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786234"
 ---
 # <a name="call-mute"></a>call： mute
 
@@ -115,14 +115,7 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.muteParticipantOperation",
-  "truncated": true
-}-->
-```json
 {
   "@odata.type": "#microsoft.graph.muteParticipantOperation",
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#muteParticipantOperation",

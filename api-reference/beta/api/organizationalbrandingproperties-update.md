@@ -5,12 +5,12 @@ localization_priority: Normal
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f11a94aee5a81022c9b6700c3f9d5796172187cf
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d06a40b6d13ec7063af4403829a25f38da46fd87
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680827"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785919"
 ---
 # <a name="update-organizationalbrandingproperties"></a>更新 organizationalBrandingProperties
 
@@ -106,12 +106,10 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>响应
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -139,12 +137,10 @@ Content-Type: image/jpeg
 ```
 
 #### <a name="response"></a>响应
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -172,12 +168,10 @@ Content-Language: fr
 ```
 
 #### <a name="response"></a>响应
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -227,12 +221,10 @@ Content-Language: fr
 
 
 #### <a name="response"></a>响应
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http

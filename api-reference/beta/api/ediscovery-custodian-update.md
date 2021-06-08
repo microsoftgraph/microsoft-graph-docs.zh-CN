@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 82a5a1c401c3d9c1fdcd90d7d0f5bdda10d68982
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 051c7db53f9d949018583fcb2f6a1e44ce2eddb9
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773184"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786010"
 ---
 # <a name="update-custodian"></a>更新保管人
 
@@ -28,7 +28,7 @@ ms.locfileid: "50773184"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -103,9 +103,7 @@ Content-length: 254
 ### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.custodian"
+  "blockType": "response"
 }
 -->
 

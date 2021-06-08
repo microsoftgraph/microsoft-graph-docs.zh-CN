@@ -1,26 +1,26 @@
 ---
-title: 调用： logTeleconferenceDeviceQuality
+title: call： logTeleconferenceDeviceQuality
 description: 记录视频电话会议设备质量数据。
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d0cae26a29e6aa6cbcfcc140b079590a4ebfa4d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a6cbacb3ce97ca1b9b09b12e0185757d5c8392ac
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966329"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786045"
 ---
-# <a name="call-logteleconferencedevicequality"></a>调用： logTeleconferenceDeviceQuality
+# <a name="call-logteleconferencedevicequality"></a>call： logTeleconferenceDeviceQuality
 
 命名空间：microsoft.graph
 
 记录视频电话会议设备质量数据。
 
-云 Video 互操作 (CVI) bot 代表视频电话会议 (VTC) 设备，并充当会议呼叫中的 VTC 设备的后端代理。 由于 CVI bot 位于 VTC 和 Microsoft 团队基础结构的中间作为 VTC 代理，因此它具有两个媒体支线。 一个媒体条在 CVI bot 和团队基础结构之间，例如团队会议服务器或团队客户端。 其他媒体腿位于 CVI bot 和 VTC 设备之间。 
+云视频互操作 (CVI) 机器人代表视频电话会议 (VTC) 设备，并充当电话会议中 VTC 设备的后端到后端代理。 由于 CVI 机器人位于 VTC 中间，Microsoft Teams作为 VTC 代理，因此它具有两个媒体段。 一个媒体段位于 CVI 自动程序Teams基础结构之间，例如Teams会议服务器或 Teams 客户端。 另一个媒体段位于 CVI 机器人和 VTC 设备之间。 
 
-第三方合作伙伴拥有 VTC 媒体腿，并且团队基础结构无法访问第三方呼叫线路的质量数据。  此方法仅供 CVI 合作伙伴提供其媒体质量数据。
+第三方合作伙伴拥有 VTC 媒体段，Teams基础结构无法访问第三方呼叫通道的质量数据。  此方法仅供 CVI 合作伙伴提供其媒体质量数据。
 
 ## <a name="permissions"></a>权限
 
@@ -45,7 +45,7 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 | 名称          | 说明   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}。必需。 |
-| 用户代理    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 必需。|
+| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 必填。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -53,7 +53,7 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|品质|[teleconferenceDeviceQuality](../resources/teleconferencedevicequality.md)|VTC 媒体腿的质量数据。|
+|quality|[teleconferenceDeviceQuality](../resources/teleconferencedevicequality.md)|VTC 媒体段的质量数据。|
 
 ## <a name="response"></a>响应
 
@@ -186,8 +186,7 @@ Content-type: application/json
 下面展示了示例响应。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

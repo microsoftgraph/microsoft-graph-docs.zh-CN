@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: fc8cd5289c014627fabcd4a5f8aa55279ebb4a90
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 77114f38265e4a7ad494cc8fb743f6c55961774a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547118"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760125"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 
@@ -85,7 +85,7 @@ Azure AD 使用自适应机器学习算法和启发，检测表明帐户可能�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解到如何[使用 Azure AD REST API](/graph/api/resources/azure-ad-overview。
+- 了解到如何[使用 Azure AD REST API](/graph/api/resources/azure-ad-overview)。
 - 使用 Azure AD 对 Microsoft Graph [进行身份验证](./auth/index.yml)。
 - 将 [Azure AD 登录](https://azure.microsoft.com/develop/identity/signin/)集成到应用或网站中。
 - 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。

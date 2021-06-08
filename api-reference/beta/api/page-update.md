@@ -1,16 +1,16 @@
 ---
 title: 更新页面
-description: 更新 OneNote 页面的内容。
+description: 更新页面OneNote内容。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 4f3b8d219249b578f1876b1b30df7f3c7d2487b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6f0fb24188beb64502d2ef91c389f66677465fe
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004590"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785135"
 ---
 # <a name="update-page"></a>更新页面
 
@@ -18,13 +18,13 @@ ms.locfileid: "48004590"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 OneNote 页面的内容。
+更新页面OneNote内容。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请注意，ReadWrite，All    |
+|委派（工作或学校帐户） | Notes.ReadWrite、Notes.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | Notes.ReadWrite    |
 |应用程序 | Notes.ReadWrite.All |
 
@@ -43,7 +43,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [patchContentCommand](../resources/patchcontentcommand.md) 对象的数组，这些对象代表页面的更改。 有关详细信息和示例，请参阅 [更新 OneNote 页面内容](/graph/onenote-update-page)。
+在请求正文中，提供一个 [patchContentCommand](../resources/patchcontentcommand.md) 对象数组，这些对象代表对页面的更改。 有关详细信息和示例，请参阅更新OneNote[页面内容](/graph/onenote-update-page)。
 
 ## <a name="response"></a>响应
 
@@ -93,9 +93,7 @@ Content-length: 312
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenotePage"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

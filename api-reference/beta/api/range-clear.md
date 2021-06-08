@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 743b26a826db6ecef062e74f64e72f6d55b3b75b
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: cc737b9a1f07ce8274fe3ac7ed2ccd105802d24d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577140"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786134"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -97,9 +97,7 @@ Content-length: 32
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

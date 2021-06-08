@@ -1,16 +1,16 @@
 ---
 title: bookingBusiness：取消发布
-description: 使此业务的计划页面对外部客户不可用。
+description: 使此业务的计划页对外部客户不可用。
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ce60406347dbf6e0d0964976929614c696fd04b7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 52886df6aebcab14bbf8b2983e21e0866d56b403
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960564"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786255"
 ---
 # <a name="bookingbusiness-unpublish"></a>bookingBusiness：取消发布
 
@@ -18,9 +18,9 @@ ms.locfileid: "48960564"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使此业务的计划页面对外部客户不可用。
+使此业务的计划页对外部客户不可用。
 
-将 **isPublished** 属性设置为 false，并将 **publicUrl** 属性设置为 null。
+将 **isPublished** 属性设置为 false，将 **publicUrl** 属性设置为 null。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ POST /bookingBusinesses/{id}/unpublish
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
+下面是如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
@@ -82,9 +82,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 ##### <a name="response"></a>响应
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

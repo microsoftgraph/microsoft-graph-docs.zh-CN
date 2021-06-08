@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 42ad70594dfc5f5c0491b88c95d88e19e226ec1c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 31d855f21164f933fe27acc824759cee08e16c16
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720177"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786066"
 ---
 # <a name="timeoffrequest-resource-type"></a>timeOffRequest 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50720177"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一种要休息的班次 [请求类型](../resources/timeoff.md)。
+表示一种班次请求采取 [时间Off](../resources/timeoff.md)。
 
 ## <a name="methods"></a>方法
 

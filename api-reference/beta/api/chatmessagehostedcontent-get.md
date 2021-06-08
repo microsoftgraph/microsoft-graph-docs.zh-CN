@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4755bf2ddc8ff776e300e307a4fe838f27a6fe36
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 5a2729a3c78c1931afc57b308418a86ea06c446c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696084"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786181"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 
@@ -181,7 +181,12 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 ```http
 HTTP/1.1 200 OK
-content-type: image/png
+Content-type: image/jpeg
+Content-length: 201
+
+{
+  "id": "id-value"
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

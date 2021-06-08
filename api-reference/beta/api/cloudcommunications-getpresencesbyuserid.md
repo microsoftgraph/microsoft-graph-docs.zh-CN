@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: a3c6b0fe4d223ef458aad7d9b271cfdee37e590c
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 909643577a93429a06e6569c3d6280c69ffacd1e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796526"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786168"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 
@@ -20,7 +20,7 @@ ms.locfileid: "49796526"
 
 获取 [多个](../resources/presence.md) 用户状态信息。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 调用这些 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
@@ -52,7 +52,7 @@ POST /communications/getPresencesByUserId
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和状态](../resources/presence.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [presence](../resources/presence.md) 对象集合。
 
 
 ## <a name="examples"></a>示例
@@ -109,8 +109,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
-```
-```json
+
 {
   "value": [{
       "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",

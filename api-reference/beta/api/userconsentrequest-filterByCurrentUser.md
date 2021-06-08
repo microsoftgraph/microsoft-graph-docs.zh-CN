@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 939e0c113f2ff5935c89530b304c3ad95b4e46e7
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 34336862c6eb598bf69d74a819e017c6dfcf94dc
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698074"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759936"
 ---
 # <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest：filterByCurrentUser
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "51698074"
 
 检索用于访问 [指定应用程序的 userConsentRequest](../resources/userconsentrequest.md) 对象的集合，当前用户是该应用的审阅者。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -42,7 +42,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |on|consentRequestFilterByCurrentUserOptions|筛选以查询 appConsentRequest 对象的 userConsentRequest 对象，当前用户是该对象的审阅者。 允许的值为 `reviewer` 。 必填。|
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,36 +5,31 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 132df7b422981428f86d7cd2a5511103f7f8f085
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b37bff6583be471b8f7d8c8a672e90e561853b0
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069041"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760118"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 工作日的可能值
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|日|0|星期日。|
-|星期一|1 |星期一。|
-|2001|2 |星期二。|
-|星期三|第三章|星期三。|
-|星期三|4 |星期四。|
-|之前|5 |星期五。|
-|星期六|6 |星期六。|
-
-
-
-
-
+|sunday|0|星期日。|
+|monday|1|星期一。|
+|tuesday|2|星期二。|
+|星期三|3|星期三。|
+|thursday|4 |星期四。|
+|星期五|5 |星期五。|
+|saturday|6 |星期六。|
 
 
 

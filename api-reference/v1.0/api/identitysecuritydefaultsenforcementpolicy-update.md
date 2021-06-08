@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ac9cf9e456f5a4bb00450ca0a7f90801c64c444b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 110c74817316f9fb88b4f343b85d61b81ef9a726
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441821"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52783615"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>更新 identitySecurityDefaultsEnforcementPolicy
 
@@ -49,7 +49,7 @@ PATCH /policies/identitySecurityDefaultsEnforcementPolicy
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|isEnabled|Boolean|如果设置为 true，则为租户启用 Azure Active Directory 安全默认值。|
+|isEnabled|Boolean|如果设置为 true，Azure Active Directory租户启用安全默认值。|
 
 ## <a name="response"></a>响应
 
@@ -100,9 +100,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.identitySecurityDefaultsEnforcementPolicy"
+  "blockType": "response"
 } -->
 
 ```http

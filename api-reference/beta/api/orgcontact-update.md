@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 85b08d815b742a0b4117c7dd0ae786da979f92dc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 26396518b40023e7a4b5666fb1d00b4effd83546
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447824"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785240"
 ---
 # <a name="update-orgcontact"></a>更新 orgcontact
 
@@ -19,14 +19,14 @@ ms.locfileid: "50447824"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 orgcontact 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ PATCH /contacts/{id}
 |城市|String||
 |country|String||
 |department|String||
-|onPremisesSyncEnabled|布尔||
+|onPremisesSyncEnabled|Boolean||
 |displayName|String||
 |givenName|String||
 |jobTitle|String||
@@ -108,9 +108,7 @@ Content-length: 222
 ### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.orgContact"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

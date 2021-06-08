@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a82e647f8c2db6859142c5de5cba619371248add
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 18efb45241a4e37588a2a5d2a13283b051293945
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475421"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760726"
 ---
 # <a name="list-taughtclasses"></a>列出更新类
 
@@ -18,7 +18,7 @@ ms.locfileid: "52475421"
 
 获取 [educationUser](../resources/educationclass.md) 所拥有的 [educationClass 资源](../resources/educationuser.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{educationClassId}/members/{educationUserId}/taughtClasses
+GET https://graph.microsoft.com/v1.0/education/users/{educationUserId}/taughtClasses
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-educationclass-csharp-snippets.md)]

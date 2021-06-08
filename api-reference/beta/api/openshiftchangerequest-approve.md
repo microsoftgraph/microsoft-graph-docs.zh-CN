@@ -1,18 +1,18 @@
 ---
-title: openShiftChangeRequest： approve
+title: openShiftChangeRequest：approve
 description: 批准开放临时请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a6ce178eb59045d572bed00d790c2405be349e5a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 769665c9a65229d33e287fcf7660157c5aa0b425
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447875"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785949"
 ---
-# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest： approve
+# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest：approve
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "50447875"
 
 批准 [openshiftchangerequest](../resources/openshiftchangerequest.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50447875"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -102,9 +102,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

@@ -1,30 +1,30 @@
 ---
 title: iosHomeScreenFolderPage 资源类型
-description: 包含主屏幕上的应用的文件夹
+description: 主页上包含应用和 Web 剪辑的文件夹的页面。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e60e0365656a9b1dee0bb78022edeaeef7e5e6f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a8fc93d365dc842886f3346b86ff632f3ced7cb
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984430"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760062"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>iosHomeScreenFolderPage 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含主屏幕上的应用的文件夹
+主页上包含应用和 Web 剪辑的文件夹的页面。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|文件夹页的名称|
-|应用|[iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md) 集合|要在文件夹内的页面上显示的应用的集合。 该集合最多可包含 500 个元素。|
+|应用|[iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md) 集合|要显示在文件夹内的页面上的应用和 Web 剪辑列表。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,11 +49,6 @@ ms.locfileid: "47984430"
   ]
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bbcca2707223f53b59d1b3d5d2ceb75ba08c57a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d53407d5ec380e7bfe11d50f6871eb6bbfb87aa
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091318"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760207"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Apple 推送通知证书。
 
@@ -35,6 +35,7 @@ Apple 推送通知证书。
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
+|certificateSerialNumber|String|证书序列号。 此属性是只读的。|
 |证书|String|尚未记录|
 
 ## <a name="relationships"></a>关系
@@ -56,14 +57,10 @@ Apple 推送通知证书。
   "topicIdentifier": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",
+  "certificateSerialNumber": "String",
   "certificate": "String"
 }
 ```
-
-
-
-
-
 
 
 

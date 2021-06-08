@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6bc8388702e4bd577b6f001c5a26b7feb416c657
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 034e8299ec1a5a05f1fa307f0196aed2113aebbc
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035937"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786073"
 ---
 # <a name="remove-owner"></a>删除所有者
 
@@ -86,9 +86,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

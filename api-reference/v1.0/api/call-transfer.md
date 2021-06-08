@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bccf7cb35d23c658e85539cb2a8bde7775e3ee15
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 2214d4276fc16c198ced411fe125e13389be3480
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666742"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52784911"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -110,8 +110,7 @@ Content-Length: 430
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -299,8 +298,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -477,8 +475,7 @@ Content-Length: 430
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -661,8 +658,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted

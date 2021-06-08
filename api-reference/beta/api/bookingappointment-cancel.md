@@ -1,31 +1,31 @@
 ---
-title: bookingAppointment：取消
-description: 在指定的 bookingbusiness 中取消指定的 bookingAppointment，并向相关的 customer 和教职员工成员发送一封邮件。
+title: bookingAppointment： cancel
+description: 取消指定 bookingbusiness 中的指定 bookingAppointment，并将消息发送给涉及的客户和员工成员。
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8ee50f707970f0bab9c36b5c17dfc01454ff1ae1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4d05157faf95beaf6dab95742314472586f00063
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960972"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786269"
 ---
-# <a name="bookingappointment-cancel"></a>bookingAppointment：取消
+# <a name="bookingappointment-cancel"></a>bookingAppointment： cancel
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[bookingbusiness](../resources/bookingbusiness.md)中取消指定的[bookingAppointment](../resources/bookingappointment.md) ，并向相关的 customer 和教职员工成员发送一封邮件。
+取消指定 bookingbusiness 中的指定[bookingAppointment，](../resources/bookingbusiness.md)并将消息发送给涉及的客户和员工成员。 [](../resources/bookingappointment.md)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment，全部，全部登记，全部，预订。 All   |
+|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -45,15 +45,15 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|向客户确认约会已被取消的消息。|
+|cancellationMessage|String|向客户确认约会已取消的消息。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 
-如果您尝试取消不 exisit 的约会，则此方法将返回 `HTTP 404 Not found` 。
+如果您尝试取消未取消的约会，此方法将返回 `HTTP 404 Not found` 。
 
 ## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
+下面是如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
@@ -92,9 +92,7 @@ Content-type: application/json
 ##### <a name="response"></a>响应
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

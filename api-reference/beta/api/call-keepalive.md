@@ -1,31 +1,31 @@
 ---
 title: call： keepAlive
-description: 每15至45分钟向此 API 发出一次请求，以确保正在进行的呼叫仍处于活动状态。
+description: 每隔 15 到 45 分钟对此 API 提出请求，以确保正在进行的调用保持活动状态。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fdaef71a600a22a8a2a6d11709994f452f9c9430
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ecb8ea8721e6ccc737e6a5f477b274be4300d370
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959690"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786237"
 ---
 # <a name="call-keepalive"></a>call： keepAlive
 
 命名空间：microsoft.graph
 
-每15至45分钟向此 API 发出一次请求，以确保正在进行的呼叫仍处于活动状态。 在45分钟内未收到此请求的呼叫被视为非活动状态，随后将结束。
+每隔 15 到 45 分钟对此 API 提出请求，以确保正在进行的调用保持活动状态。 在 45 分钟内未收到此请求的呼叫被视为非活动状态，随后将结束。
 
-必须在前一个请求的45分钟内或开始呼叫开始时至少执行一次成功的请求。
+必须在上一个请求或调用开始后 45 分钟内至少提出一个成功请求。
 
-建议您在每15分钟 () 发送较短时间间隔的请求。 确保这些请求成功，以阻止调用超时和结束。
+我们建议您以较短的时间间隔发送请求， (15 分钟) 。 确保这些请求成功防止呼叫超时和结束。
 
-尝试向已结束的呼叫发送请求将导致 `404 Not-Found` 错误。 应在应用程序一侧清理与此呼叫相关的资源。
+尝试向已结束的呼叫发送请求将导致 `404 Not-Found` 错误。 与调用相关的资源应在应用程序端清理。
 
 ## <a name="permissions"></a>权限
-若要调用此 API，可能需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+调用此 API 可能需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/keepAlive
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-此方法返回一个 `200 OK` HTTP 响应代码。
+此方法返回 `200 OK` HTTP 响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -89,9 +89,7 @@ POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-95
 以下示例显示了相应的响应。
 <!-- {
   "blockType": "response",
-  "name": "keep-alive",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "name": "keep-alive"
 } -->
 ```http
 HTTP/1.1 200 OK

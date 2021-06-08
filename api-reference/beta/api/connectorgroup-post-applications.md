@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1c117153bff6ee7864eb174c38014f4adc939dee
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ccf3255a5d8aa7416560848a0915cdb78aa77764
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129567"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786150"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>将 connectorGroup 分配给应用程序
 
@@ -27,7 +27,7 @@ ms.locfileid: "50129567"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。  |
+|应用程序 | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -89,9 +89,7 @@ Content-length: 30
 下面展示了示例响应。 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

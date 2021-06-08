@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c04e51966e18d58809e9a9671cd20ee82e05fd2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd161c1ff6165e81e24d9692c9f60aa881e2408c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984507"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760083"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 本主题提供由 iosGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
 
@@ -53,12 +53,12 @@ ms.locfileid: "47984507"
 |appsVisibilityList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|可见性列表中的应用列表（可见/可启动应用列表或隐藏/不可启动应用列表，由 AppsVisibilityListType 控制）（iOS 9.3 及更高版本）。 该集合最多可包含 10000 个元素。|
 |appsVisibilityListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|位于 AppsVisibilityList 中的列表类型。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
 |appStoreBlockAutomaticDownloads|Boolean|指示设备处于监督模式时是否阻止自动下载在其他设备上购买的应用（iOS 9.0 及更高版本）。|
-|appStoreBlocked|Boolean|指示是否阻止用户使用 App Store。|
+|appStoreBlocked|Boolean|指示是否阻止用户使用 App Store。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |appStoreBlockInAppPurchases|Boolean|指示是否阻止用户进行应用内购买。|
 |appStoreBlockUIAppInstallation|Boolean|指示是否阻止 App Store 应用，而不通过主机应用限制安装。 仅适用于监督模式（iOS 9.0 及更高版本）。|
 |appStoreRequirePassword|Boolean|指示使用 App Store 时是否需要密码。|
 |bluetoothBlockModification|Boolean|指示设备处于监督模式时是否允许修改蓝牙设置（iOS 10.0 及更高版本）。|
-|cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|
+|cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |cellularBlockDataRoaming|Boolean|指示是否阻止数据漫游。|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|指示漫游时是否阻止全局背景提取。|
 |cellularBlockPerAppDataModification|Boolean|指示设备处于监督模式时是否允许更改手机应用数据使用设置。|
@@ -80,24 +80,24 @@ ms.locfileid: "47984507"
 |documentsBlockUnmanagedDocumentsInManagedApps|Boolean|指示是否阻止用户查看托管应用中的非托管文档。|
 |emailInDomainSuffixes|String 集合|缺少匹配任何这些字符串的后缀的电子邮件地址将被视为超出域范围。|
 |enterpriseAppBlockTrust|Boolean|指示是否阻止用户信任企业应用。|
-|enterpriseAppBlockTrustModification|Boolean|指示是否阻止用户修改企业应用信任设置。|
-|faceTimeBlocked|Boolean|指示是否阻止用户使用 FaceTime。|
-|findMyFriendsBlocked|Boolean|指示设备处于监督模式时是否阻止查找我的好友。|
-|gamingBlockGameCenterFriends|Boolean|指示是否阻止用户在 Game Center 中拥有好友。|
-|gamingBlockMultiplayer|Boolean|指示是否阻止用户使用多人游戏。|
+|enterpriseAppBlockTrustModification|Boolean|\[已弃用 \] 配置此设置，将值设置为"true"对设备没有影响。|
+|faceTimeBlocked|Boolean|指示是否阻止用户使用 FaceTime。 需要适用于 iOS 13 及更高版本的受监督设备。|
+|findMyFriendsBlocked|Boolean|指示设备在监督模式下时是否阻止对"查找我的好友"的更改。|
+|gamingBlockGameCenterFriends|Boolean|指示是否阻止用户在 Game Center 中拥有好友。 需要适用于 iOS 13 及更高版本的受监督设备。|
+|gamingBlockMultiplayer|Boolean|指示是否阻止用户使用多人游戏。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |gameCenterBlocked|Boolean|指示设备处于监督模式时是否阻止用户使用 Game Center。|
 |hostPairingBlocked|Boolean|指示 iOS 设备处于监督模式时是否允许主机配对控制 iOS 设备可以与之配对的设备。|
 |iBooksStoreBlocked|Boolean|指示设备处于监督模式时是否阻止用户使用 iBooks Store。|
 |iBooksStoreBlockErotica|Boolean|指示是否阻止用户从已标记为情色的 iBookstore 下载媒体。|
-|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户将其在 iOS 设备上启动的工作继续到另一个 iOS 或 macOS 设备。|
-|iCloudBlockBackup|Boolean|指示是否阻止 iCloud 备份。|
-|iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。|
+|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户继续在 iOS 设备上启动的工作到其他 iOS 或 macOS 设备。|
+|iCloudBlockBackup|Boolean|指示是否阻止 iCloud 备份。 需要适用于 iOS 13 及更高版本的受监督设备。|
+|iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。需要适用于 iOS 13 及更高版本的受监督设备。|
 |iCloudBlockManagedAppsSync|Boolean|指示是否阻止托管应用云同步。|
 |iCloudBlockPhotoLibrary|Boolean|指示是否阻止 iCloud 照片库。|
 |iCloudBlockPhotoStreamSync|Boolean|指示是否阻止 iCloud 照片流同步。|
 |iCloudBlockSharedPhotoStream|Boolean|指示是否阻止共享照片流。|
 |iCloudRequireEncryptedBackup|Boolean|指示是否要求加密备份到 iCloud 的数据。|
-|iTunesBlockExplicitContent|Boolean|指示是否阻止用户访问 iTunes 和 App Store 中的显式内容。|
+|iTunesBlockExplicitContent|Boolean|指示是否阻止用户访问 iTunes 和 App Store 中的显式内容。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |iTunesBlockMusicService|Boolean|指示设备处于监督模式时是否阻止音乐服务并将音乐应用恢复为经典模式（iOS 9.3 及更高版本和 MacOS 10.12 及更高版本）。|
 |iTunesBlockRadio|Boolean|指示设备处于监督模式时是否阻止用户使用 iTunes Radio（iOS 9.3 及更高版本）。|
 |keyboardBlockAutoCorrect|Boolean|指示设备处于监督模式时是否阻止键盘自动更正（iOS 8.1.3 及更高版本）。|
@@ -107,17 +107,17 @@ ms.locfileid: "47984507"
 |keyboardBlockSpellCheck|Boolean|指示设备处于监督模式时是否阻止键盘拼写检查（iOS 8.1.3 及更高版本）。|
 |kioskModeAllowAssistiveSpeak|Boolean|指示在展台模式下是否允许辅助朗读。|
 |kioskModeAllowAssistiveTouchSettings|Boolean|指示在展台模式下是否允许访问辅助触摸设置。|
-|kioskModeAllowAutoLock|Boolean|指示在展台模式下是否允许设备自动锁定。|
+|kioskModeAllowAutoLock|Boolean|指示在展台模式下是否允许设备自动锁定。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockAutoLock。|
 |kioskModeAllowColorInversionSettings|Boolean|指示在展台模式下是否允许访问颜色反转设置。|
-|kioskModeAllowRingerSwitch|Boolean|指示在展台模式下是否允许使用响铃开关。|
-|kioskModeAllowScreenRotation|Boolean|指示在展台模式下是否允许屏幕旋转。|
-|kioskModeAllowSleepButton|Boolean|指示在展台模式下是否允许使用睡眠按钮。|
-|kioskModeAllowTouchscreen|Boolean|指示在展台模式下是否允许使用触摸屏。|
+|kioskModeAllowRingerSwitch|Boolean|指示在展台模式下是否允许使用响铃开关。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockRingerSwitch。|
+|kioskModeAllowScreenRotation|Boolean|指示在展台模式下是否允许屏幕旋转。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockScreenRotation。|
+|kioskModeAllowSleepButton|Boolean|指示在展台模式下是否允许使用睡眠按钮。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockSleepButton。|
+|kioskModeAllowTouchscreen|Boolean|指示在展台模式下是否允许使用触摸屏。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockTouchscreen。|
 |kioskModeAllowVoiceOverSettings|Boolean|指示在展台模式下是否允许访问语音插入设置。|
-|kioskModeAllowVolumeButtons|Boolean|指示在展台模式下是否允许使用音量按钮。|
+|kioskModeAllowVolumeButtons|Boolean|指示在展台模式下是否允许使用音量按钮。 对于操作系统默认设置，此属性的功能是多余的，并且已弃用。 请改为使用 KioskModeBlockVolumeButtons。|
 |kioskModeAllowZoomSettings|Boolean|指示在展台模式下是否允许访问缩放设置。|
 |kioskModeAppStoreUrl|String|指向 App Store 中要用于展台模式的应用的 URL。 如果 KioskModeManagedAppId 未知，请使用此方法。|
-|kioskModeBuiltInAppId|String|用于展台模式的内置应用程序的 ID。 在未设置 KioskModeManagedAppId 和 KioskModeAppStoreUrl 时使用。|
+|kioskModeBuiltInAppId|String|用于展台模式的内置应用的 ID。 在未设置 KioskModeManagedAppId 和 KioskModeAppStoreUrl 时使用。|
 |kioskModeRequireAssistiveTouch|Boolean|指示在展台模式下是否要求辅助触摸。|
 |kioskModeRequireColorInversion|Boolean|指示在展台模式下是否要求颜色反转。|
 |kioskModeRequireMonoAudio|Boolean|指示在展台模式下是否要求单声道音频。|
@@ -151,14 +151,14 @@ ms.locfileid: "47984507"
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
 |passcodeMinimumCharacterSetCount|Int32|密码必须包含的字符集数。 有效值为 0 至 4|
 |passcodePreviousPasscodeBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
-|passcodeSignInFailureCountBeforeWipe|Int32|擦除设备前允许登录失败的次数。 有效值为 4 至 11|
+|passcodeSignInFailureCountBeforeWipe|Int32|擦除设备前允许登录失败的次数。 有效值为 2 至 11|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passcodeRequired|Boolean|指示是否需要密码。|
 |podcastsBlocked|Boolean|指示在受监督的设备上是否阻止用户使用播客（iOS 8.0 及更高版本）。|
-|safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。|
+|safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |safariBlockJavaScript|Boolean|指示在 Safari 中是否阻止 JavaScript。|
 |safariBlockPopups|Boolean|指示在 Safari 中是否阻止弹出窗口。|
-|safariBlocked|Boolean|指示是否阻止用户使用 Safari。|
+|safariBlocked|Boolean|指示是否阻止用户使用 Safari。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Safari 的 Cookie 设置。 可取值为：`browserDefault`、`blockAlways`、`allowCurrentWebSite`、`allowFromWebsitesVisited`、`allowAlways`。|
 |safariManagedDomains|String 集合|与此处列出的模式匹配的 URL 将被视为托管。|
 |safariPasswordAutoFillDomains|String 集合|用户只能通过匹配此处列出的模式的 URL 将密码保存在 Safari 中。 适用于处于监督模式下的设备（iOS 9.3 及更高版本）。|
@@ -171,14 +171,14 @@ ms.locfileid: "47984507"
 |spotlightBlockInternetResults|Boolean|指示是否阻止 Spotlight 搜索在受监督的设备上返回 Internet 搜索结果。|
 |voiceDialingBlocked|Boolean|指示是否阻止语音拨号。|
 |wallpaperBlockModification|Boolean|指示是否允许在受监督的设备上修改墙纸（iOS 9.0 及更高版本）。|
-|wiFiConnectOnlyToConfiguredNetworks|Boolean|指示设备处于监督模式时是否强制设备仅使用配置文件中的 Wi-Fi 网络。|
+|wiFiConnectOnlyToConfiguredNetworks|Boolean|指示设备处于监督模式时是否强制设备仅使用配置文件中的 Wi-Fi 网络。 适用于运行 iOS 和 iPadOS 版本 14.4 及更早版本的设备。 运行 14.5+ 的设备应该使用设置"WiFiConnectToAllowedNetworksOnlyForced"。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|设备配置设备状态概述 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|设备配置用户状态概述 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|设备配置设置状态设备摘要 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -414,11 +414,6 @@ ms.locfileid: "47984507"
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
-
-
-
-
-
 
 
 

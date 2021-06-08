@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 下载 DriveItem 的主要流（文件）的内容。 只能下载具有 file 属性的 driveItem。
 doc_type: apiPageType
-ms.openlocfilehash: 212f11a6d76853e3ab3a7f0e23fd4812b260b496
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 524f9b44f0281be0b5731762b0d7654ae73984c3
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240309"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786034"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 
@@ -88,7 +88,7 @@ GET /me/drive/items/{item-id}/content
 
 预先身份验证的下载 URL 仅在较短的一段时间 （几分钟后）内有效，不需要 `Authorization` 标头即可下载。
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found

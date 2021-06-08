@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7dbaded456e4f4df9874635a27b7f46d0ca7a2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c3478e7fc67f288102e313f44bf08b55e01f222
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094300"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760305"
 ---
 # <a name="vpplicensingtype-resource-type"></a>vppLicensingType 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS 批量采购程序 (Vpp) 许可类型的属性。
 
@@ -43,11 +43,6 @@ ms.locfileid: "48094300"
   "supportsDeviceLicensing": true
 }
 ```
-
-
-
-
-
 
 
 

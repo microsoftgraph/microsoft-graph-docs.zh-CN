@@ -1,26 +1,26 @@
 ---
-title: 页面： copyToSection
-description: 将页面复制到特定分区。
+title: page： copyToSection
+description: 将页面复制到特定节。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 521ad56d93a667e6043ca6f833cc2dfb747d69f3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 665d244248c8af3a4ce3b5b01151d3debe196d92
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964410"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785233"
 ---
-# <a name="page-copytosection"></a>页面： copyToSection
+# <a name="page-copytosection"></a>page： copyToSection
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将页面复制到特定分区。
+将页面复制到特定节。
 
-对于复制操作，请遵循异步调用模式：首先调用复制操作，然后轮询操作终结点以获取结果。
+对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,18 +46,18 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供一个 JSON 对象，其中包含您的操作所需的参数。
+在请求正文中，提供包含操作所需参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 SharePoint 网站时使用。|
-|siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 SharePoint 网站时使用。|
-|groupId|String|要复制到的组的 id。 仅在复制到 Microsoft 365 组时使用。|
-|id|String|必填。 目标部分的 id。|
+|siteCollectionId|String|要复制到SharePoint网站的 ID。 仅在复制到网站时SharePoint使用。|
+|siteId|String|要复制到SharePoint Web 的 ID。 仅在复制到网站时SharePoint使用。|
+|groupId|String|要复制到的组的 ID。 仅在复制到组时Microsoft 365使用。|
+|id|String|必填。 目标节的 ID。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询 Operation-Location 终结点以 [获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法返回 响应 `202 Accepted` 代码和 `Operation-Location` 标头。 轮询Operation-Location [终结点，获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -101,9 +101,7 @@ Content-length: 52
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

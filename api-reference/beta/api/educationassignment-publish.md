@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f395fe73db248cefc63600b546c7a09cf12cfdd4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ac840109209b2a8ec5081d55abc31e1fac92d965
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951753"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785996"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment： publish
 
@@ -82,9 +82,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 响应示例如下所示。 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

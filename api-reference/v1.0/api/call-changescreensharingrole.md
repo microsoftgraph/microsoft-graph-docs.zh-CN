@@ -1,24 +1,24 @@
 ---
-title: 调用： changeScreenSharingRole
+title: call： changeScreenSharingRole
 description: 允许应用程序与组呼叫的参与者共享屏幕内容。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b6620eb941ef2b3a18bb15f756263c09388df84d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2defaeb01463fbaed957990716d2870844345088
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966376"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786052"
 ---
-# <a name="call-changescreensharingrole"></a>调用： changeScreenSharingRole
+# <a name="call-changescreensharingrole"></a>call： changeScreenSharingRole
 
 命名空间：microsoft.graph
 
 允许应用程序与组呼叫的参与者共享屏幕内容。
 
-> **注意：** 只有使用应用程序托管媒体的组调用才支持这种情况。
+> **注意：** 这仅适用于使用媒体的组App-Hosted支持。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,10 +46,10 @@ POST /communications/calls/{id}/changeScreenSharingRole
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|role|String|可能的值为： "查看器"、"共享资源"|
+|role|String|可能的值包括："viewer"和"sharer"|
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回 `202 Accepted` 响应代码，并且所有参与者都将收到名单更新。
+如果成功，此方法将返回 `202 Accepted` 响应代码，所有参与者都将收到名单更新。
 
 ## <a name="example"></a>示例
 
@@ -95,14 +95,13 @@ Content-Length: 24
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>通知-名单随参与者发送屏幕共享视频而更新
-记下 `direction: sendOnly` 媒体流上的属性。
+##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>通知 - 使用参与者发送屏幕共享视频更新名单
+记下 `direction: sendOnly` 媒体流上的 属性。
 
 ```http
 POST https://bot.contoso.com/api/calls

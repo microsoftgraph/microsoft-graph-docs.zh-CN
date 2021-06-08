@@ -5,12 +5,12 @@ author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 682a43113d46509b8db5ae18ce01f749cc2836f3
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3401626f73355a2f1095389c578c8abac96cdf64
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958235"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786297"
 ---
 # <a name="add-app-to-chat"></a>将应用添加到聊天
 
@@ -50,7 +50,7 @@ POST /chats/{chat-id}/installedApps
 
 ## <a name="request-body"></a>请求正文
 
-请求正文应包含目录应用的生成应用 ID。 有关详细信息，请参阅 [teamsApp 属性](../resources/teamsapp.md#properties)。
+请求正文应包含目录应用的生成应用 ID，请参阅[teamsApp 属性](../resources/teamsapp.md#properties)。
 
 ## <a name="response"></a>响应
 
@@ -100,8 +100,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.teamsAppInstallation"
+  "truncated": true
 } -->
 
 ```http

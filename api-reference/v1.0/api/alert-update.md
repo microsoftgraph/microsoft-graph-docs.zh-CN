@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 863496528fdcd60d501fbc9c38e8fbb6ed1884dc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 005ac06ab2c4783f22a7eef0ddca85e771245fbc
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054656"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52784960"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -56,7 +56,7 @@ PATCH /security/alerts/{alert_id}
 | comments          | 字符串集合                                                      | 针对客户警报管理的警报 (分析员) 。 此方法只能使用下列值更新 comments 字段 `Closed in IPC` `Closed in MCAS` ：、。 |
 | 反馈          | alertFeedback                                                          | 分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 |
 | status            | alertStatus                                                            | 警报生命周期状态 (阶段) 。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 |
-| tags              | 字符串集合                                                      | 可应用于警报并可以作为筛选器条件的用户可定义标签 (例如，"HVA"、"SAW) " |
+| tags              | String collection                                                      | 可应用于警报并可以作为筛选器条件的用户可定义标签 (例如，"HVA"、"SAW) " |
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。 **提供程序和供应商字段是必需的。** |
 
 ## <a name="response"></a>响应
@@ -126,9 +126,7 @@ Content-type: application/json
 下面是成功响应的示例。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.alert"
+  "blockType": "response"
 } -->
 
 ```http

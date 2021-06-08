@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e61d48031530cb1d80a2e3bd45165befefcafd9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 02196fab37f28a2ab8f669ff4427d7512a0f0348
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054775"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786323"
 ---
 # <a name="create-or-replace-schedule"></a>创建或替换日程安排
 
@@ -61,7 +61,9 @@ PUT /teams/{teamId}/schedule
 
 如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/schedule.md) 代码和 schedule 对象。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+
+### <a name="example-1-update-a-schedule"></a>示例 1：更新计划
 
 #### <a name="request"></a>请求
 
@@ -97,8 +99,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
-
 
 #### <a name="response"></a>响应
 
@@ -127,6 +127,75 @@ Content-length: 401
   "swapShiftsRequestsEnabled": true,
   "offerShiftRequestsEnabled": true,
   "timeOffRequestsEnabled": true
+}
+```
+
+### <a name="example-2-enable-location-detection-for-time-clock"></a>示例 2：为时间时钟启用位置检测
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "team-put-schedule"
+}-->
+```http
+PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
+
+{
+   "enabled":true,
+   "timeZone":"America/Chicago",
+   "provisionStatus":"Completed",
+   "provisionStatusCode":null,
+   "openShiftsEnabled":true,
+   "swapShiftsRequestsEnabled":true,
+   "offerShiftRequestsEnabled":true,
+   "timeOffRequestsEnabled":true,
+   "timeClockEnabled":true,
+   "timeClockSettings":{
+      "approvedLocation":{
+         "altitude":1024.13,
+         "latitude":26.13246,
+         "longitude":24.34616
+      }
+   }
+} 
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schedule"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 401
+
+{
+   "enabled":true,
+   "timeZone":"America/Chicago",
+   "provisionStatus":"Completed",
+   "provisionStatusCode":null,
+   "openShiftsEnabled":true,
+   "swapShiftsRequestsEnabled":true,
+   "offerShiftRequestsEnabled":true,
+   "timeOffRequestsEnabled":true,
+   "timeClockEnabled":true,
+   "timeClockSettings":{
+      "approvedLocation":{
+         "altitude":1024.13,
+         "latitude":26.13246,
+         "longitude":24.34616
+      }
+   }
 }
 ```
 

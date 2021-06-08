@@ -1,16 +1,16 @@
 ---
 title: user： exportPersonalData
-description: 提交由公司管理员提出的数据策略操作请求以导出组织用户的数据。
+description: 提交由公司管理员提出的数据策略操作请求，以导出组织用户的数据。
 localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bf03a21660a29172d1b55364bbb14d7770414f4a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c829ead807e87c3a11289beeb5edb122cce40ac2
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721752"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786094"
 ---
 # <a name="user-exportpersonaldata"></a>user： exportPersonalData
 
@@ -18,7 +18,7 @@ ms.locfileid: "50721752"
 
 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -27,7 +27,7 @@ ms.locfileid: "50721752"
 |委派（个人 Microsoft 帐户） |  不适用  |
 |应用程序 | User.Export.All 和 User.Read.All |
 
->**注意：** 只有在使用委派权限时，公司管理员才能执行导出。
+>**注意：** 使用委派权限时，只有公司管理员才能执行导出。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,15 +45,15 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明 |
 |:---------------|:--------|:----------|
-|storageLocation|String|这是一个共享访问签名 (SAS) URL 到 Azure 存储帐户，数据应导出到其中。|
+|storageLocation|String|这是一个共享访问签名 (SAS) URL Azure 存储帐户，将数据导出到其中。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 响应包含以下标头。
+如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 该响应包含以下标头。
 
 | 名称       | 说明 |
 |:---------------|:----------|
-| Location  | 用于检查请求状态的 URL。 |
-| Retry-After  | 时间段（以秒表示）。 请求建立者应在提交检查状态的请求后等待很长时间。 |
+| Location  | 检查请求状态的 URL。 |
+| Retry-After  | 时间段（以秒表示）。 请求建立者应在提交检查状态的请求后等待此时间。 |
 
 
 ## <a name="example"></a>示例
@@ -101,9 +101,7 @@ Content-length: 48
 ```
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

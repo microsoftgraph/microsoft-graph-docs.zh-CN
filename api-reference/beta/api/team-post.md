@@ -5,12 +5,12 @@ author: anandjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d0193d0b6e9b3c002762f13b27b2c6839ca2f7d0
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: a854d8209ce119aa9f97103dcd3f7032ff173680
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996141"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786353"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -104,8 +104,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "name": "create_team_post",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post"
 }-->
 
 ```http
@@ -170,8 +169,7 @@ Content-Type: application/json
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_minimal",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_minimal"
 }-->
 
 ```http
@@ -299,8 +297,7 @@ Content-Type: application/json
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_full_payload",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_full_payload"
 }-->
 
 ```http
@@ -360,8 +357,7 @@ Content-Type: application/json
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
-  "name": "create_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_from_group"
 }-->
 
 ```http
@@ -441,8 +437,7 @@ Content-Type: application/json
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_group"
 }-->
 
 ```http
@@ -455,7 +450,7 @@ Content-Length: 0
 
 ### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a>示例 6：创建具有非标准基本模板类型的团队
 
-基本模板类型是 Microsoft 为特定行业创建的特殊模板。 这些基本模板通常包含商店中不提供的专有应用以及 Microsoft Teams 模板中尚未单独支持的团队属性。
+基本模版是 Microsoft 为具体行业开发的特殊模版。这些基本模板通常包含商店中不提供的专有应用以及 Microsoft Teams 模板中尚未单独支持的团队属性。
 
 若要从非标准基本模板创建团队，你要将请求正文中的 `template@odata.bind` 属性从 `standard` 更改为指向你要创建的特定基本模板。
 
@@ -501,8 +496,7 @@ Content-Type: application/json
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_non_standard",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_non_standard"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -582,7 +576,6 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard2",
-  "@odata.type": "microsoft.graph.team"
 }-->
 
 ```http

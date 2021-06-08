@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f291fbb34f5fa412fb6da172dd196c766a7327a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22c1c6e2ba205c705baabc6bc7643848f7f12686
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091395"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759950"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -26,7 +26,7 @@ ms.locfileid: "48091395"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|每周的计划安装日期。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
+|scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|计划的安装日（按周）。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
 |scheduledInstallTime|TimeOfDay|一天中的计划安装时间|
 
 ## <a name="relationships"></a>关系
@@ -46,11 +46,6 @@ ms.locfileid: "48091395"
   "scheduledInstallTime": "String (time of day)"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,24 +1,24 @@
 ---
 title: androidWorkProfileCompliancePolicy 资源类型
-description: 此类包含适用于 Android 工作配置文件的合规性设置。
+description: 此类包含 Android 工作配置文件的合规性设置。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7c6d7d8d05d35085c1d4f268f4ba5ec45c3ba5c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c0c70336daefd5bb5cf95875f8ef64f340a9e0c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041510"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760277"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>androidWorkProfileCompliancePolicy 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-此类包含适用于 Android 工作配置文件的合规性设置。
+此类包含 Android 工作配置文件的合规性设置。
 
 
 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
@@ -27,10 +27,10 @@ ms.locfileid: "48041510"
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 androidWorkProfileCompliancePolicies](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) 集合|列出 [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) 对象的属性和关系。|
-|[获取 androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|读取 [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) 对象的属性和关系。|
+|[获取 androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|读取 [androidWorkProfileCompliancePolicy 对象的属性和](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) 关系。|
 |[创建 androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-create.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|创建新的 [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) 对象。|
 |[删除 androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete.md)|无|删除 [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)。|
-|[更新 androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-update.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|更新 [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) 对象的属性。|
+|[更新 androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-update.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|更新 [androidWorkProfileCompliancePolicy 对象](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -114,11 +114,6 @@ ms.locfileid: "48041510"
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
-
-
-
-
 
 
 

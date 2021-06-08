@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 68654adf5bba14c98b19acab47880008c4d18b08
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 2b5857f70136b804494825eb7cb66945d2b1a452
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241306"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785254"
 ---
 # <a name="update-deployment"></a>更新部署
 命名空间：microsoft.graph.windowsUpdates
@@ -52,7 +52,7 @@ PATCH /admin/windows/updates/deployments/{deploymentId}
 |属性|类型|说明|
 |:---|:---|:---|
 |state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|部署的执行状态。|
-|设置|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|设置管理如何部署部署的特定部署中指定的策略 `content` 。|
+|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|设置管理如何部署部署的特定部署中指定的策略 `content` 。|
 
 
 ## <a name="response"></a>响应
@@ -70,7 +70,7 @@ PATCH /admin/windows/updates/deployments/{deploymentId}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_deployment",
+  "name": "update_deployment_1",
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
@@ -149,7 +149,7 @@ Content-Type: application/json
 #### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
-  "name": "update_deployment",
+  "name": "update_deployment_2",
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->

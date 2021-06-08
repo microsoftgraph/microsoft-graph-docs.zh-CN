@@ -5,29 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b26db969076896a8fb45dbe8d2c06894e50d0a9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fe39b333f9768837c9ddafd808d33aa67af6ecb2
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009623"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760396"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,6 +56,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
+|certificateSerialNumber|String|证书序列号。 此属性是只读的。|
 |证书|String|尚未记录|
 
 
@@ -70,13 +71,14 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 271
+Content-length: 336
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
   "appleIdentifier": "Apple Identifier value",
   "topicIdentifier": "Topic Identifier value",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
@@ -86,7 +88,7 @@ Content-length: 271
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 384
+Content-Length: 449
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -95,14 +97,10 @@ Content-Length: 384
   "topicIdentifier": "Topic Identifier value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
-
-
-
-
-
 
 
 

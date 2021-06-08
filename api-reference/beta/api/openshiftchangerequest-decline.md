@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 480987fdc6e9b1dc9d3c52bfd47d3737928dff40
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 64a54cba75b1f71e4bce43ca8bced4e2bb5841e8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447861"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785940"
 ---
 # <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest： decline
 
@@ -20,7 +20,7 @@ ms.locfileid: "50447861"
 
 拒绝 [openshiftchangerequest](../resources/openshiftchangerequest.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50447861"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/dec
 
 | 参数    | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|message|String|自定义拒绝消息。|
+|message|String|自定义拒绝邮件。|
 
 ## <a name="response"></a>响应
 
@@ -101,9 +101,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http
