@@ -1,36 +1,36 @@
 ---
-title: offerShiftRequest：拒绝
-description: 拒绝促销活动请求。
+title: offerShiftRequest： decline
+description: 拒绝产品/服务班次请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a09a74645abf8fd9c6bc537246d6b96d91e9d546
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 366fa33786deaeefe12beced8fdda66e61fe7f4f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981292"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786486"
 ---
-# <a name="offershiftrequest-decline"></a><span data-ttu-id="46175-103">offerShiftRequest：拒绝</span><span class="sxs-lookup"><span data-stu-id="46175-103">offerShiftRequest: decline</span></span>
+# <a name="offershiftrequest-decline"></a><span data-ttu-id="4417b-103">offerShiftRequest： decline</span><span class="sxs-lookup"><span data-stu-id="4417b-103">offerShiftRequest: decline</span></span>
 
-<span data-ttu-id="46175-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="46175-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4417b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4417b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="46175-105">拒绝 [offershiftrequest](../resources/offershiftrequest.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="46175-105">Decline an [offershiftrequest](../resources/offershiftrequest.md) object.</span></span>
+<span data-ttu-id="4417b-105">拒绝 [offershiftrequest](../resources/offershiftrequest.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4417b-105">Decline an [offershiftrequest](../resources/offershiftrequest.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="46175-106">权限</span><span class="sxs-lookup"><span data-stu-id="46175-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4417b-106">权限</span><span class="sxs-lookup"><span data-stu-id="4417b-106">Permissions</span></span>
 
-<span data-ttu-id="46175-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="46175-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4417b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4417b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="46175-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="46175-109">Permission type</span></span>                        | <span data-ttu-id="46175-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="46175-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4417b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4417b-109">Permission type</span></span>                        | <span data-ttu-id="4417b-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4417b-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="46175-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="46175-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="46175-112">Schedule。 All，Group. 所有</span><span class="sxs-lookup"><span data-stu-id="46175-112">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="46175-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="46175-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46175-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="46175-114">Not supported.</span></span> |
-| <span data-ttu-id="46175-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="46175-115">Application</span></span>                            | <span data-ttu-id="46175-116">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="46175-116">Schedule.ReadWrite.All</span></span> |
+| <span data-ttu-id="4417b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4417b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4417b-112">Schedule.ReadWrite.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4417b-112">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="4417b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4417b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4417b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4417b-114">Not supported.</span></span> |
+| <span data-ttu-id="4417b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4417b-115">Application</span></span>                            | <span data-ttu-id="4417b-116">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4417b-116">Schedule.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="46175-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="46175-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4417b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4417b-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,32 +38,32 @@ ms.locfileid: "48981292"
 POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="46175-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="46175-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4417b-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4417b-118">Request headers</span></span>
 
-| <span data-ttu-id="46175-119">名称</span><span class="sxs-lookup"><span data-stu-id="46175-119">Name</span></span>          | <span data-ttu-id="46175-120">说明</span><span class="sxs-lookup"><span data-stu-id="46175-120">Description</span></span>   |
+| <span data-ttu-id="4417b-119">名称</span><span class="sxs-lookup"><span data-stu-id="4417b-119">Name</span></span>          | <span data-ttu-id="4417b-120">说明</span><span class="sxs-lookup"><span data-stu-id="4417b-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="46175-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="46175-121">Authorization</span></span> | <span data-ttu-id="46175-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="46175-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="46175-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="46175-124">Content-type</span></span> | <span data-ttu-id="46175-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="46175-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="4417b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4417b-121">Authorization</span></span> | <span data-ttu-id="4417b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4417b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4417b-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="4417b-124">Content-type</span></span> | <span data-ttu-id="4417b-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="4417b-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="46175-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="46175-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4417b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4417b-127">Request body</span></span>
 
-<span data-ttu-id="46175-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="46175-128">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="4417b-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="4417b-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="46175-129">参数</span><span class="sxs-lookup"><span data-stu-id="46175-129">Parameter</span></span>    | <span data-ttu-id="46175-130">类型</span><span class="sxs-lookup"><span data-stu-id="46175-130">Type</span></span>        | <span data-ttu-id="46175-131">描述</span><span class="sxs-lookup"><span data-stu-id="46175-131">Description</span></span> |
+| <span data-ttu-id="4417b-129">参数</span><span class="sxs-lookup"><span data-stu-id="4417b-129">Parameter</span></span>    | <span data-ttu-id="4417b-130">类型</span><span class="sxs-lookup"><span data-stu-id="4417b-130">Type</span></span>        | <span data-ttu-id="4417b-131">描述</span><span class="sxs-lookup"><span data-stu-id="4417b-131">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="46175-132">message</span><span class="sxs-lookup"><span data-stu-id="46175-132">message</span></span>|<span data-ttu-id="46175-133">String</span><span class="sxs-lookup"><span data-stu-id="46175-133">String</span></span>|<span data-ttu-id="46175-134">在拒绝时发送自定义邮件。</span><span class="sxs-lookup"><span data-stu-id="46175-134">Custom message sent on decline.</span></span>|
+|<span data-ttu-id="4417b-132">message</span><span class="sxs-lookup"><span data-stu-id="4417b-132">message</span></span>|<span data-ttu-id="4417b-133">String</span><span class="sxs-lookup"><span data-stu-id="4417b-133">String</span></span>|<span data-ttu-id="4417b-134">拒绝发送的自定义邮件。</span><span class="sxs-lookup"><span data-stu-id="4417b-134">Custom message sent on decline.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="46175-135">响应</span><span class="sxs-lookup"><span data-stu-id="46175-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4417b-135">响应</span><span class="sxs-lookup"><span data-stu-id="4417b-135">Response</span></span>
 
-<span data-ttu-id="46175-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="46175-p104">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="4417b-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="4417b-p104">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="46175-138">示例</span><span class="sxs-lookup"><span data-stu-id="46175-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4417b-138">示例</span><span class="sxs-lookup"><span data-stu-id="4417b-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="46175-139">请求</span><span class="sxs-lookup"><span data-stu-id="46175-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="4417b-139">请求</span><span class="sxs-lookup"><span data-stu-id="4417b-139">Request</span></span>
 
-<span data-ttu-id="46175-140">以下示例显示了一个请求。</span><span class="sxs-lookup"><span data-stu-id="46175-140">The following example shows a request.</span></span>
+<span data-ttu-id="4417b-140">以下示例显示了一个请求。</span><span class="sxs-lookup"><span data-stu-id="4417b-140">The following example shows a request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="46175-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="46175-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4417b-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="4417b-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "offershiftrequest_decline"
@@ -77,32 +77,30 @@ Content-type: application/json
   "message": "Sorry, you can't offer this shift."
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="46175-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="46175-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4417b-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4417b-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-decline-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="46175-143">C#</span><span class="sxs-lookup"><span data-stu-id="46175-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4417b-143">C#</span><span class="sxs-lookup"><span data-stu-id="4417b-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/offershiftrequest-decline-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="46175-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="46175-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4417b-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4417b-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/offershiftrequest-decline-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="46175-145">Java</span><span class="sxs-lookup"><span data-stu-id="46175-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4417b-145">Java</span><span class="sxs-lookup"><span data-stu-id="4417b-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/offershiftrequest-decline-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="46175-146">响应</span><span class="sxs-lookup"><span data-stu-id="46175-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="4417b-146">响应</span><span class="sxs-lookup"><span data-stu-id="4417b-146">Response</span></span>
 
-<span data-ttu-id="46175-147">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="46175-147">The following example shows the response.</span></span>
+<span data-ttu-id="4417b-147">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="4417b-147">The following example shows the response.</span></span>
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

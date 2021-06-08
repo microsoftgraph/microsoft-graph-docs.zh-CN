@@ -5,30 +5,30 @@ description: 取消关注用户的网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 229c22d25087846e3c67a103ca48384171385e35
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: daacd9a7ce66b337ba97c6c7c0953825e13b7ea5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473686"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786648"
 ---
-# <a name="unfollow-site"></a><span data-ttu-id="ffd91-103">取消关注网站</span><span class="sxs-lookup"><span data-stu-id="ffd91-103">Unfollow site</span></span> 
+# <a name="unfollow-site"></a><span data-ttu-id="6ab93-103">取消关注网站</span><span class="sxs-lookup"><span data-stu-id="6ab93-103">Unfollow site</span></span> 
 
-<span data-ttu-id="ffd91-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ffd91-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6ab93-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6ab93-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ffd91-105">取消关注用户 [网站或](../resources/site.md) 多个网站。</span><span class="sxs-lookup"><span data-stu-id="ffd91-105">Unfollow a user's [site](../resources/site.md) or multiple sites.</span></span>
+<span data-ttu-id="6ab93-105">取消关注 [用户网站或多个](../resources/site.md) 网站。</span><span class="sxs-lookup"><span data-stu-id="6ab93-105">Unfollow a user's [site](../resources/site.md) or multiple sites.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ffd91-106">权限</span><span class="sxs-lookup"><span data-stu-id="ffd91-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6ab93-106">权限</span><span class="sxs-lookup"><span data-stu-id="6ab93-106">Permissions</span></span>
 
-<span data-ttu-id="ffd91-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ffd91-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6ab93-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6ab93-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="ffd91-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="ffd91-109">Permission type</span></span>             | <span data-ttu-id="ffd91-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ffd91-110">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="6ab93-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="6ab93-109">Permission type</span></span>             | <span data-ttu-id="6ab93-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6ab93-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="ffd91-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ffd91-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ffd91-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffd91-112">Sites.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="ffd91-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ffd91-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ffd91-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="ffd91-114">Not supported.</span></span>                              |
-| <span data-ttu-id="ffd91-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="ffd91-115">Application</span></span>                            | <span data-ttu-id="ffd91-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffd91-116">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="6ab93-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6ab93-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="6ab93-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ab93-112">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="6ab93-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6ab93-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ab93-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="6ab93-114">Not supported.</span></span>                              |
+| <span data-ttu-id="6ab93-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="6ab93-115">Application</span></span>                            | <span data-ttu-id="6ab93-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ab93-116">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="ffd91-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ffd91-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6ab93-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6ab93-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,28 +36,28 @@ ms.locfileid: "50473686"
 POST /users/{user-id}/followedSites/remove
 ```
 
-## <a name="request-body"></a><span data-ttu-id="ffd91-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="ffd91-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6ab93-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="6ab93-118">Request body</span></span>
 
-<span data-ttu-id="ffd91-119">在请求正文中，提供包含下表中提到的 id 参数的 JSON 对象的数组。</span><span class="sxs-lookup"><span data-stu-id="ffd91-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
+<span data-ttu-id="6ab93-119">在请求正文中，提供 JSON 对象数组以及下表中提到的 id 参数。</span><span class="sxs-lookup"><span data-stu-id="6ab93-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
 
 
-| <span data-ttu-id="ffd91-120">名称</span><span class="sxs-lookup"><span data-stu-id="ffd91-120">Name</span></span>                 | <span data-ttu-id="ffd91-121">值</span><span class="sxs-lookup"><span data-stu-id="ffd91-121">Value</span></span>  | <span data-ttu-id="ffd91-122">说明</span><span class="sxs-lookup"><span data-stu-id="ffd91-122">Description</span></span>                                                            |
+| <span data-ttu-id="6ab93-120">名称</span><span class="sxs-lookup"><span data-stu-id="6ab93-120">Name</span></span>                 | <span data-ttu-id="6ab93-121">值</span><span class="sxs-lookup"><span data-stu-id="6ab93-121">Value</span></span>  | <span data-ttu-id="6ab93-122">说明</span><span class="sxs-lookup"><span data-stu-id="6ab93-122">Description</span></span>                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   <span data-ttu-id="ffd91-123">id</span><span class="sxs-lookup"><span data-stu-id="ffd91-123">id</span></span>                 | <span data-ttu-id="ffd91-124">string</span><span class="sxs-lookup"><span data-stu-id="ffd91-124">string</span></span> | <span data-ttu-id="ffd91-125">项的[唯一标识符](../resources/site.md#id-property)。</span><span class="sxs-lookup"><span data-stu-id="ffd91-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
+|   <span data-ttu-id="6ab93-123">id</span><span class="sxs-lookup"><span data-stu-id="6ab93-123">id</span></span>                 | <span data-ttu-id="6ab93-124">string</span><span class="sxs-lookup"><span data-stu-id="6ab93-124">string</span></span> | <span data-ttu-id="6ab93-125">项的[唯一标识符](../resources/site.md#id-property)。</span><span class="sxs-lookup"><span data-stu-id="6ab93-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="ffd91-126">响应</span><span class="sxs-lookup"><span data-stu-id="ffd91-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6ab93-126">响应</span><span class="sxs-lookup"><span data-stu-id="6ab93-126">Response</span></span>
 
-* <span data-ttu-id="ffd91-127">如果请求成功，此方法将返回 `204` 无内容的状态代码。</span><span class="sxs-lookup"><span data-stu-id="ffd91-127">If the request is successful, this method returns a `204` status code with no content.</span></span>  
-* <span data-ttu-id="ffd91-128">如果在取消关注任何指定网站时发生错误，此方法将返回状态代码，响应正文将包含一组包含错误对象和 siteId 的条目，这些条目指示哪些网站无法取消 `207` 安装[](/graph/errors)。</span><span class="sxs-lookup"><span data-stu-id="ffd91-128">If an error occured while unfollowing any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.</span></span>
+* <span data-ttu-id="6ab93-127">如果请求成功，此方法返回 `204` 无内容的状态代码。</span><span class="sxs-lookup"><span data-stu-id="6ab93-127">If the request is successful, this method returns a `204` status code with no content.</span></span>  
+* <span data-ttu-id="6ab93-128">如果在取消关注任何指定网站时发生错误，此方法将返回状态代码，响应正文将包含一组包含 error 对象和 `207` siteId 的条目，[](/graph/errors)这些条目指示哪些网站无法取消处理。</span><span class="sxs-lookup"><span data-stu-id="6ab93-128">If an error occured while unfollowing any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ffd91-129">示例</span><span class="sxs-lookup"><span data-stu-id="ffd91-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6ab93-129">示例</span><span class="sxs-lookup"><span data-stu-id="6ab93-129">Example</span></span>
 
-<span data-ttu-id="ffd91-130">以下示例演示如何取消关注多个网站。</span><span class="sxs-lookup"><span data-stu-id="ffd91-130">The following example shows how to unfollow multiple sites.</span></span>
+<span data-ttu-id="6ab93-130">以下示例演示如何取消关注多个网站。</span><span class="sxs-lookup"><span data-stu-id="6ab93-130">The following example shows how to unfollow multiple sites.</span></span>
 
-### <a name="request"></a><span data-ttu-id="ffd91-131">请求</span><span class="sxs-lookup"><span data-stu-id="ffd91-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6ab93-131">请求</span><span class="sxs-lookup"><span data-stu-id="6ab93-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="ffd91-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="ffd91-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6ab93-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="6ab93-132">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -76,36 +76,36 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ffd91-133">C#</span><span class="sxs-lookup"><span data-stu-id="ffd91-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6ab93-133">C#</span><span class="sxs-lookup"><span data-stu-id="6ab93-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ffd91-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ffd91-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6ab93-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6ab93-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ffd91-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ffd91-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6ab93-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6ab93-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/unfollow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ffd91-136">Java</span><span class="sxs-lookup"><span data-stu-id="ffd91-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6ab93-136">Java</span><span class="sxs-lookup"><span data-stu-id="6ab93-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unfollow-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ffd91-137">响应</span><span class="sxs-lookup"><span data-stu-id="ffd91-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6ab93-137">响应</span><span class="sxs-lookup"><span data-stu-id="6ab93-137">Response</span></span>
 
-<span data-ttu-id="ffd91-138">如果成功，它将返回以下 JSON 响应。</span><span class="sxs-lookup"><span data-stu-id="ffd91-138">If successful, it returns the following JSON response.</span></span> 
+<span data-ttu-id="6ab93-138">如果成功，它将返回以下 JSON 响应。</span><span class="sxs-lookup"><span data-stu-id="6ab93-138">If successful, it returns the following JSON response.</span></span> 
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<span data-ttu-id="ffd91-139">如果发生错误，它将返回以下 JSON 响应</span><span class="sxs-lookup"><span data-stu-id="ffd91-139">If an error occured, it returns the following JSON response</span></span> 
+<span data-ttu-id="6ab93-139">如果发生错误，它将返回以下 JSON 响应</span><span class="sxs-lookup"><span data-stu-id="6ab93-139">If an error occured, it returns the following JSON response</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
