@@ -3,12 +3,12 @@ title: 将 Microsoft Graph Toolkit与 Angular
 description: 在应用程序应用程序中Graph Toolkit Microsoft Angular入门。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 1390b29c94fef292433e1e422fa5c44fd480e1eb
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: b1985598985f85c0f33676fee49656324c65c7c5
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579884"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813185"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>将 Microsoft Graph Toolkit与 Angular
 
@@ -17,7 +17,7 @@ ms.locfileid: "52579884"
 ## <a name="add-the-microsoft-graph-toolkit"></a>添加 Microsoft Graph Toolkit
 
 首先，你需要通过将 添加到 中的 在 Angular 应用程序中启用 `CUSTOM_ELEMENT_SCHEMA` 自定义 `@NgModule() decorator` 元素 `app.module.ts` 。 以下示例显示了具体的操作方法：
-```ts
+```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -33,7 +33,7 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 接下来，通过Graph Toolkit npm 包将 Microsoft 加载项添加到项目中：
-```bash
+```Command Line
 npm install @microsoft/mgt
 ```
 ## <a name="initialize-a-provider"></a>初始化提供程序
@@ -46,7 +46,7 @@ Microsoft Graph Toolkit提供程序支持对组件的 Microsoft Graph进行身�
 
 导入提供程序，将其设置为在应用程序初始化时进行初始化。 将 `<YOUR-CLIENT-ID>` 替换为应用程序的客户端 ID。
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
 import { Providers, Msal2Provider } from '@microsoft/mgt';
 
@@ -95,7 +95,7 @@ export class AppComponent implements OnInit {
 
 导入 `TemplateHelper` 并使用 `.setBindingSyntax()` 方法设置自定义绑定语法。
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
 import { Providers, Msal2Provider, TemplateHelper } from '@microsoft/mgt';
 

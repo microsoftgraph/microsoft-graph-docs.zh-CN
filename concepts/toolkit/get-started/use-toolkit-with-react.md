@@ -3,12 +3,12 @@ title: 将 Microsoft Graph Toolkit与 React
 description: 在应用程序应用程序中Graph Toolkit Microsoft React入门。
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: a1eaf17b4d4b12e04c11941ab25c5e2bdfd6d57a
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 0c06566824c6da06490f83693aedd7ef40ae282b
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579772"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813070"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>将 Microsoft Graph Toolkit与 React
 
@@ -26,31 +26,31 @@ Microsoft Graph Toolkit 是一组 Web 组件，可简化连接到 Microsoft Grap
 
 通过运行React创建新的应用程序应用程序。 这将使用 TypeScript React一个新的应用，这将帮助你编写更可靠的代码并避免运行时错误。
 
-```cmd
+```Command Line
 npx create-react-app my-m365-app --template typescript --use-npm
 ```
 
 将工作目录更改为新创建的应用。
 
-```cmd
+```Command Line
 cd my-m365-app
 ```
 
 接下来，安装 `mgt-react` npm 包，其中包含 Microsoft Graph Toolkit React组件。
 
-```cmd
+```Command Line
 npm i @microsoft/mgt-react
 ```
 
 同时安装 `mgt-msal2-provider` `mgt-element` 和 npm 包，其中包含 MSAL 2.0 身份验证提供程序。
 
-```cmd
+```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
 ```
 
 确认你可以运行该应用。
 
-```cmd
+```Command Line
 npm start
 ```
 
@@ -77,14 +77,14 @@ npm start
 
 1. 在代码编辑器中，打开 **"src/index"。** 文件，并添加到导入列表，添加：
 
-    ```tsx
+    ```TypeScript
     import { Providers } from '@microsoft/mgt-element';
     import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
 1. 最后一 `import` 个语句之后，使用 MSAL Graph Toolkit Microsoft 应用程序。
 
-    ```tsx
+    ```TypeScript
     Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID'
     });
@@ -127,13 +127,13 @@ npm start
 
 1. 在代码编辑器中，打开 **src/App.tsx** 文件，并添加到导入列表添加：
 
-    ```tsx
+    ```TypeScript
     import { Login } from '@microsoft/mgt-react';
     ```
 
 1. 在 函数中，将 子句的内容替换为基本结构，包括 `App` `return` Microsoft Graph Toolkit 登录组件：
 
-    ```tsx
+    ```TypeScript
     <div className="App">
       <header>
         <Login />
@@ -142,7 +142,7 @@ npm start
     ```
 
 通过这些更改 **，src/App.tsx** 文件将如下所示。
-```tsx
+```TypeScript
 
 import { Login } from '@microsoft/mgt-react';
 import React from 'react';
@@ -180,7 +180,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 1. 在代码编辑器中，打开 **src/index.tsx** 文件，并更新提供程序初始化代码。
 
-    ```tsx
+    ```TypeScript
     Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID',
       scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
@@ -197,19 +197,19 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 1. 在代码编辑器中，打开 **src/App.tsx** 文件并扩展现有 React `import` 语句。
 
-    ```tsx
+    ```TypeScript
     import React, { useState, useEffect } from 'react';
     ```
 
 1. 通过将 `Provider` 和 `ProviderState` 类型添加到 `mgt-element` 导入，从 导入 。
 
-    ```tsx
+    ```TypeScript
     import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
 1. 添加名为 的自定义函数，以在应用程序中跟踪 `useIsSignedIn` 用户的登录状态。
 
-    ```tsx
+    ```TypeScript
     function useIsSignedIn(): [boolean] {
       const [isSignedIn, setIsSignedIn] = useState(false);
     
@@ -239,7 +239,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 1. 在代码编辑器中，打开 **src/App.tsx** 文件，在 **App** 函数内添加：
 
-    ```tsx
+    ```TypeScript
     const [isSignedIn] = useIsSignedIn();
     ```
 
@@ -247,7 +247,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 1. 使用附加和 Microsoft `return` Graph Toolkit 组件扩展 `div` 子句的内容。
 
-    ```tsx
+    ```TypeScript
     <div>
       {isSignedIn &&
         <Agenda />}
@@ -256,7 +256,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 通过这些更改 **，src/App.tsx** 文件应如下所示。
 
-```tsx
+```TypeScript
 import { Providers, ProviderState } from '@microsoft/mgt';
 import { Agenda, Login } from '@microsoft/mgt-react';
 import React, { useState, useEffect } from 'react';

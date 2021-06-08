@@ -1,29 +1,31 @@
 ---
 title: aadUserNotificationRecipient 资源类型
-description: 表示在 Microsoft 团队活动源中发送的通知的 Azure Active Directory (Azure AD) 用户收件人。
+description: 表示 Azure AD Azure Active Directory (订阅) 订阅源中发送的通知的用户Microsoft Teams收件人。
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 118951336a031548a557f94df8b2b2068e415408
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: ec8e05a09af27ca6092da24e13a604fdd7e013f4
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377515"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813193"
 ---
 # <a name="aadusernotificationrecipient-resource-type"></a>aadUserNotificationRecipient 资源类型
 
 命名空间：microsoft.graph
 
-表示在 Microsoft 团队活动源中发送的通知的 Azure Active Directory (Azure AD) 用户收件人。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+表示 Azure AD Azure Active Directory (订阅) 订阅源中发送的通知的用户Microsoft Teams收件人。
 
 继承自 [teamworkNotificationRecipient](teamworknotificationrecipient.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|描述|
 |:---|:---|:---|
-|userId|字符串|Azure AD 用户标识符。 使用 [List users](../api/user-list.md) 方法获取此 ID。|
+|userId|String|Azure AD 用户标识符。 使用 [List users](../api/user-list.md) 方法可获取此 ID。|
 
 ## <a name="relationships"></a>关系
 无。

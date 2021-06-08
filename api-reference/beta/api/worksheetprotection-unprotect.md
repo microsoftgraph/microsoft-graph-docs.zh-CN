@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a55ddc339261c95733a6719a88a73bf24c00855f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 06e4ac3bcff556b99521f672722cd99608e074ae
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787693"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813050"
 ---
 # <a name="workbookworksheetprotection-unprotect"></a>workbookWorksheetProtection：unprotect
 
@@ -19,7 +19,7 @@ ms.locfileid: "52787693"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 解除工作表保护
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -42,52 +42,27 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/unpro
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
-
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|password|string|可选。工作表保护密码。|
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
 
-# <a name="http"></a>[HTTP](#tab/http)
+### <a name="request"></a>请求
+下面展示了示例请求。
+
 <!-- {
   "blockType": "request",
   "name": "workbookworksheetprotection_unprotect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
-Content-type: application/json
-Content-length: 34
-
-{
-  "password": "password-value"
-}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/workbookworksheetprotection-unprotect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/workbookworksheetprotection-unprotect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/workbookworksheetprotection-unprotect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+### <a name="response"></a>响应
+下面展示了示例响应。 
 <!-- {
   "blockType": "response"
 } -->
