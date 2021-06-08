@@ -5,30 +5,30 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 223fffce4f607004897360c2653dc8327c166255
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6e40a6361ec5f72c936f4b8151e001308e48be2b
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448073"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787153"
 ---
-# <a name="update-permissiongrantpolicy"></a><span data-ttu-id="fafbb-103">更新 permissionGrantPolicy</span><span class="sxs-lookup"><span data-stu-id="fafbb-103">Update permissionGrantPolicy</span></span>
+# <a name="update-permissiongrantpolicy"></a><span data-ttu-id="e1640-103">更新 permissionGrantPolicy</span><span class="sxs-lookup"><span data-stu-id="e1640-103">Update permissionGrantPolicy</span></span>
 
-<span data-ttu-id="fafbb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fafbb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e1640-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e1640-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="fafbb-105">更新  [permissionGrantPolicy 的属性](../resources/permissiongrantpolicy.md)。</span><span class="sxs-lookup"><span data-stu-id="fafbb-105">Update properties of a  [permissionGrantPolicy](../resources/permissiongrantpolicy.md).</span></span>
+<span data-ttu-id="e1640-105">更新  [permissionGrantPolicy 的属性](../resources/permissiongrantpolicy.md)。</span><span class="sxs-lookup"><span data-stu-id="e1640-105">Update properties of a  [permissionGrantPolicy](../resources/permissiongrantpolicy.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fafbb-106">权限</span><span class="sxs-lookup"><span data-stu-id="fafbb-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e1640-106">权限</span><span class="sxs-lookup"><span data-stu-id="e1640-106">Permissions</span></span>
 
-<span data-ttu-id="fafbb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fafbb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e1640-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e1640-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fafbb-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="fafbb-109">Permission type</span></span>                        | <span data-ttu-id="fafbb-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fafbb-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e1640-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e1640-109">Permission type</span></span>                        | <span data-ttu-id="e1640-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e1640-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="fafbb-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fafbb-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="fafbb-112">Policy.ReadWrite.PermissionGrant</span><span class="sxs-lookup"><span data-stu-id="fafbb-112">Policy.ReadWrite.PermissionGrant</span></span> |
-| <span data-ttu-id="fafbb-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fafbb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fafbb-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="fafbb-114">Not supported.</span></span> |
-| <span data-ttu-id="fafbb-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="fafbb-115">Application</span></span>                            | <span data-ttu-id="fafbb-116">Policy.ReadWrite.PermissionGrant</span><span class="sxs-lookup"><span data-stu-id="fafbb-116">Policy.ReadWrite.PermissionGrant</span></span> |
+| <span data-ttu-id="e1640-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e1640-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="e1640-112">Policy.ReadWrite.PermissionGrant</span><span class="sxs-lookup"><span data-stu-id="e1640-112">Policy.ReadWrite.PermissionGrant</span></span> |
+| <span data-ttu-id="e1640-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e1640-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1640-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e1640-114">Not supported.</span></span> |
+| <span data-ttu-id="e1640-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e1640-115">Application</span></span>                            | <span data-ttu-id="e1640-116">Policy.ReadWrite.PermissionGrant</span><span class="sxs-lookup"><span data-stu-id="e1640-116">Policy.ReadWrite.PermissionGrant</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fafbb-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fafbb-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e1640-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e1640-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,33 +36,33 @@ ms.locfileid: "50448073"
 PATCH /policies/permissionGrantPolicies/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fafbb-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="fafbb-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e1640-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="e1640-118">Request headers</span></span>
 
-| <span data-ttu-id="fafbb-119">名称</span><span class="sxs-lookup"><span data-stu-id="fafbb-119">Name</span></span>           | <span data-ttu-id="fafbb-120">说明</span><span class="sxs-lookup"><span data-stu-id="fafbb-120">Description</span></span>                |
+| <span data-ttu-id="e1640-119">名称</span><span class="sxs-lookup"><span data-stu-id="e1640-119">Name</span></span>           | <span data-ttu-id="e1640-120">说明</span><span class="sxs-lookup"><span data-stu-id="e1640-120">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="fafbb-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="fafbb-121">Authorization</span></span>  | <span data-ttu-id="fafbb-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="fafbb-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="e1640-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e1640-121">Authorization</span></span>  | <span data-ttu-id="e1640-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e1640-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="fafbb-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="fafbb-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e1640-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="e1640-124">Request body</span></span>
 
-<span data-ttu-id="fafbb-125">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="fafbb-125">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="fafbb-126">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="fafbb-126">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="fafbb-127">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="fafbb-127">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="e1640-125">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="e1640-125">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="e1640-126">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="e1640-126">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="e1640-127">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="e1640-127">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="fafbb-128">属性</span><span class="sxs-lookup"><span data-stu-id="fafbb-128">Property</span></span>     | <span data-ttu-id="fafbb-129">类型</span><span class="sxs-lookup"><span data-stu-id="fafbb-129">Type</span></span> |<span data-ttu-id="fafbb-130">说明</span><span class="sxs-lookup"><span data-stu-id="fafbb-130">Description</span></span>|
+| <span data-ttu-id="e1640-128">属性</span><span class="sxs-lookup"><span data-stu-id="e1640-128">Property</span></span>     | <span data-ttu-id="e1640-129">类型</span><span class="sxs-lookup"><span data-stu-id="e1640-129">Type</span></span> |<span data-ttu-id="e1640-130">说明</span><span class="sxs-lookup"><span data-stu-id="e1640-130">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="fafbb-131">displayName</span><span class="sxs-lookup"><span data-stu-id="fafbb-131">displayName</span></span> | <span data-ttu-id="fafbb-132">String</span><span class="sxs-lookup"><span data-stu-id="fafbb-132">String</span></span> |<span data-ttu-id="fafbb-133">权限显示名称策略的权限。</span><span class="sxs-lookup"><span data-stu-id="fafbb-133">The display name for the permission grant policy.</span></span>|
-| <span data-ttu-id="fafbb-134">说明</span><span class="sxs-lookup"><span data-stu-id="fafbb-134">description</span></span> |<span data-ttu-id="fafbb-135">String</span><span class="sxs-lookup"><span data-stu-id="fafbb-135">String</span></span>| <span data-ttu-id="fafbb-136">权限授予策略的说明。</span><span class="sxs-lookup"><span data-stu-id="fafbb-136">The description for the permission grant policy.</span></span>|
+| <span data-ttu-id="e1640-131">displayName</span><span class="sxs-lookup"><span data-stu-id="e1640-131">displayName</span></span> | <span data-ttu-id="e1640-132">String</span><span class="sxs-lookup"><span data-stu-id="e1640-132">String</span></span> |<span data-ttu-id="e1640-133">权限授予策略的显示名称。</span><span class="sxs-lookup"><span data-stu-id="e1640-133">The display name for the permission grant policy.</span></span>|
+| <span data-ttu-id="e1640-134">说明</span><span class="sxs-lookup"><span data-stu-id="e1640-134">description</span></span> |<span data-ttu-id="e1640-135">String</span><span class="sxs-lookup"><span data-stu-id="e1640-135">String</span></span>| <span data-ttu-id="e1640-136">权限授予策略的描述。</span><span class="sxs-lookup"><span data-stu-id="e1640-136">The description for the permission grant policy.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="fafbb-137">响应</span><span class="sxs-lookup"><span data-stu-id="fafbb-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e1640-137">响应</span><span class="sxs-lookup"><span data-stu-id="e1640-137">Response</span></span>
 
-<span data-ttu-id="fafbb-138">如果成功，此方法将返回 `204 No Content` 响应代码，并且不会在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="fafbb-138">If successful, this method returns a `204 No Content` response code and does not return anything in the response body.</span></span>
+<span data-ttu-id="e1640-138">如果成功，此方法返回 `204 No Content` 响应代码，不会在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="e1640-138">If successful, this method returns a `204 No Content` response code and does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="fafbb-139">示例</span><span class="sxs-lookup"><span data-stu-id="fafbb-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e1640-139">示例</span><span class="sxs-lookup"><span data-stu-id="e1640-139">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="fafbb-140">请求</span><span class="sxs-lookup"><span data-stu-id="fafbb-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e1640-140">请求</span><span class="sxs-lookup"><span data-stu-id="e1640-140">Request</span></span>
 
-<span data-ttu-id="fafbb-141">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fafbb-141">The following is an example of the request.</span></span>
+<span data-ttu-id="e1640-141">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e1640-141">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="fafbb-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="fafbb-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e1640-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="e1640-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_permissiongrantpolicy"
@@ -76,32 +76,29 @@ Content-Type: application/json
   "displayName": "Custom permission grant policy"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="fafbb-143">C#</span><span class="sxs-lookup"><span data-stu-id="fafbb-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e1640-143">C#</span><span class="sxs-lookup"><span data-stu-id="e1640-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permissiongrantpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fafbb-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fafbb-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e1640-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e1640-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permissiongrantpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fafbb-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fafbb-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e1640-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e1640-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permissiongrantpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="fafbb-146">Java</span><span class="sxs-lookup"><span data-stu-id="fafbb-146">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e1640-146">Java</span><span class="sxs-lookup"><span data-stu-id="e1640-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-permissiongrantpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="fafbb-147">响应</span><span class="sxs-lookup"><span data-stu-id="fafbb-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e1640-147">响应</span><span class="sxs-lookup"><span data-stu-id="e1640-147">Response</span></span>
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy",
-  "isCollection": false
+  "blockType": "response"
 } -->
 
 ```http
