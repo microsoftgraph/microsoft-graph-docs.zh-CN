@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8c8865470e67418e877d130ea9143631a5398e92
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ad8601e45044a2e2ae247d9e2de28eb2e58dc8e5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129042"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786595"
 ---
 # <a name="application-removepassword"></a>application： removePassword
 
@@ -101,9 +101,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordCredential"
+  "blockType": "response"
 } -->
 
 ```http

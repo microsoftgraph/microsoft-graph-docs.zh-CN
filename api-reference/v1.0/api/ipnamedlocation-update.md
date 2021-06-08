@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6bd0c99094741b9d015ec5878afa819fe8794889
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: aaaacbda839d3296be0621b3294b85ddbe3c63b4
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051352"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786669"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
@@ -113,9 +113,7 @@ Content-type: application/json
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ipNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

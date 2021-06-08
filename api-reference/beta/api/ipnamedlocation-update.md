@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 68f93b8975145493d0968132804f718509ada3ee
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3afd3800d462936686197fb86e1b1e458ab7997c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038514"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786921"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
@@ -53,7 +53,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|String|位置的可读名称。|
 |ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (1.2.3.4/32) IETF RFC5962 中任何允许的 IPv6 格式。|
-|isTrusted|布尔值|如果此 `true` 位置是显式信任的，则值为 。|
+|isTrusted|Boolean|如果此 `true` 位置是显式信任的，则值为 。|
 
 ## <a name="response"></a>响应
 
@@ -114,9 +114,7 @@ Content-type: application/json
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ipNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

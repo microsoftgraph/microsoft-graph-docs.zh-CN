@@ -6,12 +6,12 @@ title: 转换为其他格式
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c11a954ad735cc8baf133442b865adbf1b758669
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f6343e3b0ce7ba9eb114e6eeadc6040341fb5c47
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963724"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786816"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -19,8 +19,7 @@ ms.locfileid: "48963724"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 检索特定格式的项的内容。
-并非所有文件都可转换成全部格式。
+使用此 API 检索特定格式的项的内容。 并非所有文件都可转换成全部格式。
 
 若要下载原始格式的项目，请参阅[下载项内容](driveitem-get-content.md)。
 
@@ -95,7 +94,7 @@ GET /drive/items/{item-id}/content?format={format}
 
 已预先验证的 URL 仅在短期（几分钟）内有效，无需 `Authorization` 头即可访问。
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found

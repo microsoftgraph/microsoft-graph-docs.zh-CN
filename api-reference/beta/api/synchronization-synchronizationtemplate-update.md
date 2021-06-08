@@ -1,16 +1,16 @@
 ---
 title: 更新 synchronizationTemplate
-description: 更新 () 与给定应用程序关联的同步模板。
+description: 更新 () 应用程序关联的同步模板。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 133f503ee6361619581cea058fbf3a47a8c7de01
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 190124afb29909b6780963d9778cf02453ff0457
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722018"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786907"
 ---
 # <a name="update-synchronizationtemplate"></a>更新 synchronizationTemplate
 
@@ -18,9 +18,9 @@ ms.locfileid: "50722018"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 () 与给定应用程序关联的同步模板。
+更新 () 应用程序关联的同步模板。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ PATCH applications/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象以替换现有模板。 确保提供了所有属性。 将清除缺少的属性。
+在请求正文中，提供 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象以替换现有模板。 确保提供了所有属性。 缺少的属性将被清除。
 
 ### <a name="response"></a>响应
 
@@ -54,7 +54,7 @@ PATCH applications/{id}/synchronization/templates/{templateId}
 ##### <a name="request"></a>请求
 请求示例如下所示。 
 
->**注意：** 为了可读性，缩短了此处所示的请求对象。 在实际调用中包括所有属性。
+>**注意：** 为了可读性，缩短了此处显示的请求对象。 在实际调用中包括所有属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -94,9 +94,7 @@ Content-type: application/json
 ##### <a name="response"></a>响应
 响应示例如下所示。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationTemplate"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

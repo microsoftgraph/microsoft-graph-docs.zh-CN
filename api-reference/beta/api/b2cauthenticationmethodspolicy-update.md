@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f2da149c32e10c0871decf1f8be96144b66b173a
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: b4f85da6545e430ee2a04fabd4e3aa16a3062457
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996120"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786837"
 ---
 # <a name="update-b2cauthenticationmethodspolicy"></a>更新 b2cAuthenticationMethodsPolicy
 
@@ -107,9 +107,7 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.b2cauthenticationmethodspolicy"
+  "blockType": "response"
 } -->
 
 ```http

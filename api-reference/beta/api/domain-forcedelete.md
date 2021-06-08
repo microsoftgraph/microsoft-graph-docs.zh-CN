@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: efa4cca2c8413abb2a3ae65995973f4d3d5bc4db
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 47f81a25fc29f6a7eb0bb79c0f4d84e37825183a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436566"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786823"
 ---
 # <a name="domain-forcedelete"></a>域：forceDelete
 
@@ -20,7 +20,7 @@ ms.locfileid: "50436566"
 
 使用异步操作删除域。
 
-在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange** 作为预配服务的任何引用。
+在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange设置服务** 的任何引用。
 
 以下操作作为此操作的一部分执行：
 
@@ -34,9 +34,9 @@ ms.locfileid: "50436566"
 
 * 如果要重命名的应用程序之一是多租户应用，则返回错误。
 
-域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证删除域，可以执行 [获取域](domain-get.md)。 如果已成功删除域，响应中将返回 404 HTTP 响应代码。
+域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证是否删除域，可以执行获取 [域](domain-get.md)。 如果成功删除域，响应中将返回 404 HTTP 响应代码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,7 +45,7 @@ ms.locfileid: "50436566"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.ReadWrite.All |
+|应用程序 | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -69,7 +69,7 @@ POST /domains/{id}/forceDelete
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|disableUserAccounts|布尔| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，则不允许用户登录。<br>*True* (默认值) - 禁用作为此操作的一部分重命名的用户帐户。<br>*False* - 不会禁用作为此操作的一部分重命名的用户帐户。 |
+|disableUserAccounts|Boolean| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，将不允许用户登录。<br>*为* (默认) - 已禁用作为此操作的一部分重命名的用户帐户。<br>*False* - 不会禁用作为此操作的一部分重命名的用户帐户。 |
 
 ## <a name="response"></a>响应
 
@@ -114,9 +114,7 @@ Content-length: 33
 ### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

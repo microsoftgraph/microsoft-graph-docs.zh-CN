@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8637e16e686ddbd87476646636a414c0c09bee34
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 7f83ce0b5cf4565897245647a0e1f41e428b8e1d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067171"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786753"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
@@ -132,9 +132,7 @@ Content-type: application/json
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
-```
 
-```json
 {
   "value": [
     {

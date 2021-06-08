@@ -1,18 +1,18 @@
 ---
-title: offerShiftRequest：拒绝
-description: 拒绝促销活动请求。
+title: offerShiftRequest： decline
+description: 拒绝产品/服务班次请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 54c33624d924f9f424a99ff0668f8c1f7dd9c37a
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 9cdb5fbe381008b4146d649fb862b25a3687c251
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313672"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786330"
 ---
-# <a name="offershiftrequest-decline"></a>offerShiftRequest：拒绝
+# <a name="offershiftrequest-decline"></a>offerShiftRequest： decline
 
 命名空间：microsoft.graph
 
@@ -24,7 +24,7 @@ ms.locfileid: "48313672"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
+| 委派（工作或学校帐户）     | Schedule.ReadWrite.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Schedule.ReadWrite.All |
 
@@ -49,7 +49,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 
 | 参数    | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|message|String|在拒绝时发送自定义邮件。|
+|message|String|拒绝发送的自定义邮件。|
 
 ## <a name="response"></a>响应
 
@@ -103,8 +103,7 @@ Content-type: application/json
 以下示例显示了相应的响应。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

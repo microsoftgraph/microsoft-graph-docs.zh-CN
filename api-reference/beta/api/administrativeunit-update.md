@@ -1,25 +1,25 @@
 ---
-title: 更新管理单元
+title: 更新 administrativeunit
 description: 更新 administrativeUnit 对象的属性。
 author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 83c3d4205d99386a2a95a20bacfb45b4df8d8d27
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c02cb7944672c64f20768ed0edc0ca254564fc62
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438750"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786606"
 ---
-# <a name="update-administrativeunit"></a>更新管理单元
+# <a name="update-administrativeunit"></a>更新 administrativeunit
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [administrativeUnit 对象](../resources/administrativeunit.md) 的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -27,7 +27,7 @@ ms.locfileid: "50438750"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|应用程序 | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ PATCH /administrativeUnits/{id}
 |displayName|string|管理单元的显示名称。|
 |visibility|string|管理单元的可见性。 如果未设置，则默认值为"public"。 可以设置为"HiddenMembership"，这将对非成员隐藏成员身份。|
 
-由于 **administrativeUnit** 资源 [](/graph/extensibility-overview)支持扩展，因此可以使用该操作在现有 administrativeUnit 实例中扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
+由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有 `PATCH` **administrativeUnit** 实例中扩展的自定义属性中您自己的特定于应用的数据。
 
 ## <a name="response"></a>响应
 
@@ -100,9 +100,7 @@ Content-length: 114
 ##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

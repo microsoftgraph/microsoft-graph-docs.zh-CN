@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5827219409f49e5e27eed9539c23609cf126bf02
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2f7d5b1189689beeb4f67445c94bec4fb8379d9d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437245"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786493"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
@@ -20,7 +20,7 @@ ms.locfileid: "50437245"
 
 更新 [countryNamedLocation 对象](../resources/countryNamedLocation.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50437245"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
+| 应用程序                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,9 +51,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区和/或地区列表。|
+|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区列表。|
 |displayName|String|位置的可读名称。|
-|includeUnknownCountriesAndRegions|布尔|该值是未映射到一个或多个国家/地区的 IP 地址应 `true` 包含在命名位置中。|
+|includeUnknownCountriesAndRegions|Boolean|该值是未映射到国家/地区或地区的 IP 地址应包含在 `true` 命名位置中。|
 
 ## <a name="response"></a>响应
 
@@ -109,9 +109,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.countryNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

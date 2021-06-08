@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9ad6a27bdf7cceedf0f53cb68f253e8292f7dd96
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3a8f6b637d46a7cc10d026da942c33444b643845
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775400"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786711"
 ---
 # <a name="table-delete"></a>Table: delete
 
@@ -26,7 +26,7 @@ ms.locfileid: "50775400"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -84,9 +84,7 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

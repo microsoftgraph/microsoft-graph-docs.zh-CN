@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 805ad8068418d50e6cfc4a6e395a150782cb1aab
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 08f6c51413f751a0ce5a2818969e253d32f5e2fe
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436622"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786830"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
@@ -20,16 +20,16 @@ ms.locfileid: "50436622"
 
 更新特定目录设置对象的属性。
 
-> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Update groupSettings。*
+> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Update groupSettings*。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -97,9 +97,7 @@ Content-length: 178
 
 ##### <a name="response"></a>响应
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directorysetting"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 OK

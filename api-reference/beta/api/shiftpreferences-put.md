@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 12eb1020f2daad820d9fbbf9fe20005e8ec00447
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3a209d5266fb841cff4011255be98ac6d9fe6771
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945799"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786725"
 ---
 # <a name="update-shiftpreferences"></a>更新 shiftPreferences
 
@@ -112,8 +112,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

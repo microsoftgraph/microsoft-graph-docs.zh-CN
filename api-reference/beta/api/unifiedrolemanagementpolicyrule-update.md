@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5c5e8fe49f4d88d07c5627b55db6fd0f5e3839e8
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 948f39bc48a3bd673935989b6d0f359c7dd24ba4
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682283"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786437"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>更新 unifiedRoleManagementPolicyRule
 命名空间：microsoft.graph
@@ -105,8 +105,7 @@ Content-length: 170
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
+  "truncated": true
 }
 -->
 ```http

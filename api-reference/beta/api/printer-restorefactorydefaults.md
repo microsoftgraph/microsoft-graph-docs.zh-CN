@@ -1,33 +1,33 @@
 ---
-title: 打印机： restoreFactoryDefaults
+title: printer： restoreFactoryDefaults
 description: 重置打印机的默认设置。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 962e8df0d6afd29921ac60969c0585adb1035bef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 87e31568dcbe17ec4bd5e3017e852fb17c6f9989
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979787"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786452"
 ---
-# <a name="printer-restorefactorydefaults"></a>打印机： restoreFactoryDefaults
+# <a name="printer-restorefactorydefaults"></a>printer： restoreFactoryDefaults
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [打印机](../resources/printer.md)的默认设置还原为制造商指定的值。
+将 [打印机](../resources/printer.md)的默认设置还原到制造商指定的值。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 完全控制和所有打印机。 |
+|委派（工作或学校帐户）| Printer.ReadWrite.All、Printer.FullControl.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 不支持。 |
 
@@ -83,9 +83,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 ### <a name="response"></a>响应
 下面展示了示例响应。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

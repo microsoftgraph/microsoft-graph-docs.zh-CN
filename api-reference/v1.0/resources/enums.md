@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: b6bffb41090b9c9beffd4e559256cb519870eeb2
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 0905b424a69d1214c65a39873595192b38303787
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241154"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786614"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -438,6 +438,26 @@ ms.locfileid: "52241154"
 |一些|
 |unknownFutureValue|
 
+### <a name="workforceintegrationencryptionprotocol-values"></a>workforceIntegrationEncryptionProtocol 值
+
+| 成员
+|:----------------------------
+|sharedSecret
+|unknownFutureValue
+
+### <a name="workforceintegrationsupportedentities-values"></a>workforceIntegrationSupportedEntities 值
+
+|成员|
+|:---|
+|无|
+|Shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+
 ### <a name="timezonestandard-values"></a>timeZoneStandard 值
 
 | 成员
@@ -653,10 +673,10 @@ ms.locfileid: "52241154"
 | doNotForward
 | followUp
 | fyi
-| forward
+| 转发
 | noResponseNecessary
 | 阅读
-| reply
+| 回复
 | replyToAll
 | review
 
@@ -722,7 +742,7 @@ ms.locfileid: "52241154"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | 参考
 
 
@@ -1150,7 +1170,7 @@ ms.locfileid: "52241154"
 
 | 成员             | 值 | 说明        |
 |:-------------------|:------|:-------------------|
-| 垃圾邮件               | 1     | 垃圾邮件威胁。       |
+| 垃圾邮件 (spam)               | 1     | 垃圾邮件威胁。       |
 | 仿冒           | 2     | 网络钓鱼威胁。   |
 | 恶意软件            | 3     | 恶意软件威胁。    |
 | unknownFutureValue | 4      | sentinel 成员。 |

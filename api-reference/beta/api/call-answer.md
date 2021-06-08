@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 658682377ed2539894f232df32748bd6073cd3e4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3735532ec12a1b11fad67aa6f1a19fe629324b62
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437847"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786578"
 ---
 # <a name="call-answer"></a>call： answer
 
@@ -18,20 +18,20 @@ ms.locfileid: "50437847"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使机器人能够应答传入 [呼叫](../resources/call.md)。 传入呼叫请求可以是来自组呼叫或对等呼叫的参与者的邀请。 如果收到组呼叫邀请，通知将包含 [chatInfo 和](../resources/chatinfo.md) [meetingInfo](../resources/meetinginfo.md) 参数。
+使机器人能够应答传入 [呼叫](../resources/call.md)。 传入呼叫请求可以是来自组呼叫参与者的邀请或对等呼叫。 如果收到组呼叫邀请，通知将包含 [chatInfo](../resources/chatinfo.md) 和 [meetingInfo](../resources/meetinginfo.md) 参数。
 
-机器人应先应答、[拒绝](./call-reject.md)[或重定向](./call-redirect.md)呼叫，然后再呼叫退出。当前超时值为 15 秒。 对于常规方案，当前超时值为 15 秒，基于策略的录制方案为 5 秒。
+机器人预期在呼叫退出[之前](./call-reject.md)应答、拒绝[](./call-redirect.md)或重定向呼叫。当前超时值为 15 秒。 对于常规方案，当前超时值为 15 秒，基于策略的录制方案为 5 秒。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 无需任何权限来应答对等呼叫。 需要以下权限之一才能加入组呼叫。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                 |
 | :-------------- | :-----------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                        |
 | 委派（个人 Microsoft 帐户） | 不支持                        |
-| Application     | Calls.JoinGroupCalls.All 或 Calls.JoinGroupCallsasGuest.All |
+| 应用程序     | Calls.JoinGroupCalls.All 或 Calls.JoinGroupCallsasGuest.All |
 
-> **注意：** 对于使用应用程序托管媒体的呼叫，还需要 Calls.AccessMedia.All 权限。 必须至少具有以下权限之一，以确保对传入呼叫通知中的通知进行解密 `source` ：Calls.AccessMedia.All、Calls.Initiate。全部，Calls.InitiateGroupCall.All、Calls.JoinGroupCall.All、Calls.JoinGroupCallAsGuest.All。 `source`传入呼叫通知中的呼叫者信息。 如果没有至少其中一个权限， `source` 则保留加密状态。
+> **注意：** 对于使用应用程序托管媒体的呼叫，还需要 Calls.AccessMedia.All 权限。 必须至少具有以下权限之一才能确保传入呼叫通知中的 解密 `source` ：Calls.AccessMedia.All、Calls.Initiate。全部，Calls.InitiateGroupCall.All、Calls.JoinGroupCall.All、Calls.JoinGroupCallAsGuest.All。 `source`是传入呼叫通知中的呼叫者信息。 如果没有其中至少一个权限， `source` 将保持加密状态。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {"blockType": "ignored" } -->
@@ -52,13 +52,13 @@ POST /communications/calls/{id}/answer
 
 | 参数           | 类型                                                                                                                                 | 说明                                                                                                                                                                                                         |
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
-| callbackUri         | String                                                                                                                               | 允许机器人为并发呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。 |
-| acceptedModalities  | 字符串集合                                                                                                                    | 接受形式列表。 可能的值是： `audio` ， `video` `videoBasedScreenSharing` 。 应答呼叫时必需。                                                                                      |
+| callbackUri         | String                                                                                                                               | 允许机器人为并发呼叫提供特定的回调 URI 以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。 |
+| acceptedModalities  | String collection                                                                                                                    | 接受形式列表。 可能的值是 `audio` `video` `videoBasedScreenSharing` ：、、。 应答呼叫时必需。                                                                                      |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | 媒体配置。 必需。                                                                                                                                                                                 |
-| participantCapacity | Int                                                                                                                                  | 对于基于 Teams 策略的录制方案，应用程序可以处理呼叫 [的参与者](/MicrosoftTeams/teams-recording-policy) 数量。                                                     |
+| participantCapacity | Int                                                                                                                                  | 对于基于策略的录制方案，应用程序可以处理Teams[的数量](/MicrosoftTeams/teams-recording-policy)。                                                     |
 
 ## <a name="response"></a>响应
-此方法返回响应 `202 Accepted` 代码。
+此方法返回 响应 `202 Accepted` 代码。
 
 ## <a name="examples"></a>示例
 以下示例演示如何调用此 API。
@@ -88,7 +88,7 @@ Content-Length: 211
   "participantCapacity": 200
 }
 ```
-此 blob 是媒体会话的序列化配置，该配置从媒体 SDK 生成。
+此 blob 是由媒体 SDK 生成的媒体会话的序列化配置。
 
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
@@ -113,9 +113,7 @@ Content-Length: 211
 下面是一个响应示例。 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -223,9 +221,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>响应
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -392,9 +388,7 @@ Content-Type: application/json
 ##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -462,12 +456,12 @@ Content-Type: application/json
 
 ### <a name="example-3-answer-a-policy-based-recording-call"></a>示例 3：应答基于策略的录制呼叫
 
-在基于 [策略的录制方案](/microsoftteams/teams-recording-policy)下，在策略下的参与者加入呼叫之前，传入呼叫通知将发送到与该策略关联的机器人。
-可以在 **botData** 属性下找到联接信息。 然后，机器人可以选择应答呼叫并 [相应地更新录制](call-updaterecordingstatus.md) 状态。
+在基于 [策略的录制](/microsoftteams/teams-recording-policy)方案下，在策略下的参与者加入呼叫之前，传入呼叫通知将发送到与该策略关联的机器人。
+可以在 **botData** 属性下找到加入信息。 然后，机器人可以选择应答呼叫 [并相应地更新录制](call-updaterecordingstatus.md) 状态。
 
-当在基于策略的录制通知请求中指定时，属于同一策略组的后续参与者加入事件将发送为 `participantCpapacity` `Answer` [participantJoiningNotification，](../resources/participantJoiningNotification.md)而不是新的传入呼叫通知，直到当前呼叫实例处理的参与者数达到中指定的号码。 `participantCapacity`
+当在基于策略的录制通知的请求中指定时，属于同一策略组的后续参与者加入事件将发送为 `participantCpapacity` `Answer` [participantJoiningNotification，](../resources/participantJoiningNotification.md)而不是新的传入呼叫通知，直到当前呼叫实例处理的参与者数达到 中指定的号码。 `participantCapacity`
 
-下面是自动程序在这种情况下将收到的传入呼叫通知的示例。
+下面是机器人在这种情况下将收到的传入呼叫通知的示例。
 
 ```json
 {

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2c2c1c8ee36b5f9a397ac333f0a2478b483301ec
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 40da1c7711f51220eb511f7270707a3a88803684
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576860"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786865"
 ---
 # <a name="tablesort-reapply"></a>TableSort: reapply
 
@@ -84,9 +84,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

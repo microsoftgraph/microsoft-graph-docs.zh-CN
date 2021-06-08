@@ -1,16 +1,16 @@
 ---
 title: 向聊天添加成员
-description: 将 conversationMember 添加到聊天中。
+description: 向聊天中添加 conversationMember。
 author: bhartono
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f3fe6c34d81e34f614f914780886902a8bf563c2
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: d5355d04f573d368052be374cc0ddc57b16b1247
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843769"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786543"
 ---
 # <a name="add-member-to-a-chat"></a>向聊天添加成员
 
@@ -18,9 +18,9 @@ ms.locfileid: "49843769"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [conversationMember](../resources/conversationmember.md) 添加到 [聊天中](../resources/chat.md)。
+将 [conversationMember](../resources/conversationmember.md) 添加到 [聊天](../resources/chat.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ POST /chats/{chat-id}/members
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回响应代码和位置标头，该标头提供新创建的成员 `201 Created` 对象的 URL 路径。
+如果成功，此方法返回 响应代码和 Location 标头，这些响应代码和位置标头提供指向新创建的成员 `201 Created` 对象的 URL 路径。
 
 ## <a name="examples"></a>示例
 
@@ -104,8 +104,7 @@ content-type: application/json
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime"
 }
 -->
 ```http
@@ -113,7 +112,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>示例 2：向 Microsoft Teams 聊天添加单个成员，不共享聊天历史记录
+### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>示例 2：将单个成员添加到聊天Microsoft Teams，不共享聊天历史记录
 
 #### <a name="request"></a>请求
 
@@ -165,8 +164,7 @@ Content-type: application/json
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime"
 }
 -->
 ```http
@@ -174,7 +172,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>示例 3：向 Microsoft Teams 聊天添加单个成员，共享聊天的整个历史记录
+### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>示例 3：将单个成员添加到Microsoft Teams聊天，共享聊天的整个历史记录
 
 #### <a name="request"></a>请求
 
@@ -226,8 +224,7 @@ content-type: application/json
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
 }
 -->
 ```http

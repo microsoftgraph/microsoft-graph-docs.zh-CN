@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d5b39a4c10f077ff71c2e8288000efe76c83f655
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1c9fc6fa0ca837c83e90172fa49eca287c98a42f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682363"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786683"
 ---
 # <a name="update-unifiedroleeligibilityschedulerequest"></a>更新 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph
@@ -126,8 +126,7 @@ Content-length: 467
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
+  "truncated": true
 }
 -->
 ```http

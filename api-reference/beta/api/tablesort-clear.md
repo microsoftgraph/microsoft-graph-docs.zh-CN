@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3e2e6e30fa0fe457c4ee603d06d02d2f8940e782
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 42577eef5fad03b74175f860cb9ea7b6a997d942
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575341"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786872"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear
 
@@ -84,9 +84,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d0ff440b19aaef21d3f33f6dff9e767d6b08a820
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a429e08171c90b1e8c3307eaf1696c6f3016bbda
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038899"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786655"
 ---
 # <a name="update-securescorecontrolprofile"></a>更新 secureScoreControlProfile
 
@@ -115,9 +115,7 @@ Content-type: application/json
 
 下面是成功响应的示例。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "blockType": "response"
 } -->
 
 ```http

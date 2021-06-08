@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 5ec48c1a177e38c009e31111549bcda684e02abd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 814106eed33c422282e76f5ed08961e0ed5a5a23
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051338"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786346"
 ---
 # <a name="add-named-item"></a>添加已命名项
 
@@ -100,7 +100,7 @@ Content-length: 54
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -131,10 +131,7 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Warning: NamedItemcollection_add/value:
-      Schemas type was 'Custom' which is not supported. Add a resource type to the definition of property: value"
-  ],
+  "suppressions": [],
   "tocPath": ""
 }-->
 

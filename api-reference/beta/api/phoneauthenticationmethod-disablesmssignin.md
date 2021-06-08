@@ -1,16 +1,16 @@
 ---
 title: phoneAuthenticationMethod：disableSmsSignIn
-description: 禁用移动电话的短信登录
+description: 禁用短信手机登录
 localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5e4c55d5765108d7878d95712e9ea350e1b9d364
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 00141db043825d96611eaae156adb2bbf2e48503
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957470"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786467"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod：disableSmsSignIn
 
@@ -18,13 +18,13 @@ ms.locfileid: "50957470"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-禁用现有电话号码的短信 `mobile` 登录。 
+禁用短信电话号码的 `mobile` 登录。 
 
 >**注意：** 此号码将不再可用于短信登录，从而可能阻止用户登录。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="permissions-acting-on-self"></a>自行操作的权限
 
@@ -111,9 +111,7 @@ POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-75
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

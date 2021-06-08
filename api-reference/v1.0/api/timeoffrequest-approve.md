@@ -1,18 +1,18 @@
 ---
-title: timeOffRequest：批准
-description: 批准 timeoffrequest 对象。
+title: timeOffRequest： approve
+description: 批准 timeoffrequest 对象。"
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dd12448bf0e20824c7b3baa67caddfbe42f0595e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 375b6f45b0b7c587e29e401def8d6da40423c40c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023042"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786641"
 ---
-# <a name="timeoffrequest-approve"></a>timeOffRequest：批准
+# <a name="timeoffrequest-approve"></a>timeOffRequest： approve
 
 命名空间：microsoft.graph
 
@@ -24,11 +24,11 @@ ms.locfileid: "48023042"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -104,8 +104,7 @@ Content-type: application/json
 下面展示了示例响应。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

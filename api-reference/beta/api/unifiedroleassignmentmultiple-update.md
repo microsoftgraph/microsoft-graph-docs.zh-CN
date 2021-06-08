@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5bd8485a9b01890420d47e95d976b84b0807b488
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 656addb026493a442e52f0db7a841f3b523f6566
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054747"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786453"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>更新 unifiedRoleAssignmentMultiple
 
@@ -18,20 +18,35 @@ ms.locfileid: "52054747"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有的 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。 使用此角色更新角色分配Microsoft Intune。 请注意 [，unifiedRoleAssignment](../resources/unifiedroleassignment.md) 不支持更新。
+更新 RBAC [提供程序的现有 unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。 
+
+目前支持以下 RBAC 提供程序：
+- 云电脑 
+- Intune (设备) 
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+相比之下 [，unifiedRoleAssignment](../resources/unifiedroleassignment.md) 不支持更新。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。 
 
-| 权限类型 | 权限（从最低特权到最高特权） |
-|:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | DeviceManagementRBAC.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | DeviceManagementRBAC.ReadWrite.All |
+|支持的提供程序      | 委派（工作或学校帐户）  | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.ReadWrite.All | 不支持。 | CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.ReadWrite.All | 不支持。| DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
+若要更新云电脑提供商的现有 unfiedRoleAssignmentMultiple：
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /roleManagement/cloudPC/roleAssignments
+```
+
+若要更新 Intune 提供程序的现有 unfiedRoleAssignmentMultiple：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -55,6 +70,7 @@ PATCH /roleManagement/deviceManagement/roleAssignments
 
 ## <a name="example"></a>示例
 
+### <a name="example-1-update-an-existing-unfiedroleassignmentmultiple-in-an-intune-provider"></a>示例 1：更新 Intune 提供程序中的现有 unfiedRoleAssignmentMultiple
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
@@ -99,9 +115,7 @@ Content-type: application/json
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignmentMultiple"
+  "blockType": "response"
 } -->
 
 ```http
@@ -109,6 +123,56 @@ HTTP/1.1 204 OK
 
 ```
 
+## <a name="example-2-update-an-existing-unfiedroleassignmentmultiple-in-a-cloud-pc-provider"></a>示例 2：更新云电脑提供商中的现有 unfiedRoleAssignmentMultiple
+
+### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096
+Content-type: application/json
+
+{
+    "displayName": "NewName",
+    "description": "A new roleAssignment"
+}
+```
+
+
+### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentMultiple"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleAssignments/$entity",
+    "id": "dbe9d288-fd87-41f4-b33d-b498ed207096",
+    "description": "A new roleAssignment",
+    "displayName": "NewName",
+    "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+    "principalIds": [
+        "0aeec2c1-fee7-4e02-b534-6f920d25b300",
+        "2d5386a7-732f-44db-9cf8-f82dd2a1c0e0"
+    ],
+    "directoryScopeIds": [
+        "/"
+    ],
+    "appScopeIds": []
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 79b2e56cdb0e7e6ad4acf09625af54e413291b08
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 38e11a23d2652063593dcfd5efc328dce06c649b
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773653"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786809"
 ---
 # <a name="update-case"></a>更新案例
 
@@ -28,7 +28,7 @@ ms.locfileid: "50773653"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,8 +50,8 @@ PATCH /compliance/ediscovery/cases/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|字符串|案例描述。|
-|displayName|字符串|大小写名称。|
+|说明|String|案例描述。|
+|displayName|String|大小写名称。|
 |externalId|String|客户参考的外部案例编号。|
 
 ## <a name="response"></a>响应
@@ -105,9 +105,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.case"
+  "blockType": "response"
 } -->
 
 ```http

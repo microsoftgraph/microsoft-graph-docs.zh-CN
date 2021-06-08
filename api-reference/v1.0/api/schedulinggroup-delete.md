@@ -5,19 +5,19 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fde2023fd8d345dce36e4d6bd6b9e361ff159d22
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 09d54084537636fb41aff7f5557b05e0d6d8fbe7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311922"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786306"
 ---
 # <a name="delete-schedulinggroup"></a>删除 schedulingGroup
 
 命名空间：microsoft.graph
 
-通过设置 [schedulingGroup](../resources/schedulinggroup.md) 的 **isActive** 属性将其标记为非活动状态。
-此方法不会从计划中删除 [schedulingGroup](../resources/schedulinggroup.md) 。 分配给计划组的现有 [班次](../resources/shift.md) 实例仍为组的一部分。
+通过设置 [schedulingGroup](../resources/schedulinggroup.md) 的 isActive 属性，将其 **标记为非** 活动状态。
+此方法不会从计划中删除[schedulingGroup。](../resources/schedulinggroup.md) 分配给 [计划](../resources/shift.md) 组的现有班次实例仍属于该组。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "48311922"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
+|委派（工作或学校帐户） | Schedule.ReadWrite.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule.ReadWrite.All |
 
@@ -92,8 +92,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

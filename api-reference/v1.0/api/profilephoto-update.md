@@ -1,16 +1,16 @@
 ---
 title: 更新 profilephoto
-description: 更新已登录 **用户**、指定 **组** 或 **联系人** 的照片。 自此处起
+description: 更新已登录的用户照片 **用户**、 **组** 或 **联系人**。因为有
 localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8797b12d070b582a551486ac25678c4f1794adf5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b4b3ef3e40f540c0ad3a8cfb75631e7069976b7f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048664"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786315"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -29,7 +29,7 @@ ms.locfileid: "52048664"
 - **组** 的个人资料照片 - Group.ReadWrite.All
 - **联系人** 的照片 - Contacts.ReadWrite
 
-> **注意** 若要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。
+> **注意** 要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。若要了解详细信息，请参阅 [无需已登录用户即可访问](/graph/auth-v2-service)。
 
 > **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
@@ -95,11 +95,9 @@ Binary data for the image
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.profilePhoto"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1d001949ac60b8d3c6335bf4a6e79cba5488c072
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 9ec5fd97ee1c747553752abced48efd0743bc65e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202259"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786690"
 ---
 # <a name="update-team"></a>更新团队
 
@@ -32,7 +32,7 @@ ms.locfileid: "51202259"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -104,9 +104,7 @@ Content-length: 211
 
 #### <a name="response"></a>响应
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

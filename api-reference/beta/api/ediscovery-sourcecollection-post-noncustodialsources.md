@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 0d9735e9d20ab6428e9ba8c539fa1f5771c2b8c7
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: b6d3dde3e779aad317e3d2827e602d5097300d22
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52266908"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786788"
 ---
 # <a name="add-noncustodialdatasource"></a>添加 noncustodialDataSource
 
@@ -106,8 +106,7 @@ Content-length: 206
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.noncustodialDataSource"
+  "truncated": true
 }
 -->
 

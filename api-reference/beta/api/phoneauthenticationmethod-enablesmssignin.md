@@ -1,16 +1,16 @@
 ---
 title: phoneAuthenticationMethod：enableSmsSignIn
-description: 为移动电话启用短信登录。
+description: 为短信启用登录。
 localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: def7c4409ea38adf1764a7b3f1adf1d9280b992a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1452d3e3e1c93def07dce3b6ee78a996c374ae0c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957310"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786466"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod：enableSmsSignIn
 
@@ -18,15 +18,15 @@ ms.locfileid: "50957310"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为现有电话号码启用短信 `mobile` 登录。 要成功启用：
+启用短信电话号码的登录 `mobile` 。 要成功启用：
 
 * 手机必须具有 `"phoneType": "mobile"` 。
-* 手机在短信登录系统中必须是唯一 (其他人也不得使用该号码) 。
-* 必须在身份验证方法策略中为用户启用短信 [登录](/azure/active-directory/authentication/concept-authentication-methods) 。
+* 手机在登录短信必须是唯一 (其他人也不得使用该号码) 。
+* 必须在身份验证方法策略短信用户[登录](/azure/active-directory/authentication/concept-authentication-methods)。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="permissions-acting-on-self"></a>自行操作的权限
 
@@ -113,9 +113,7 @@ POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-75
 
 下面展示了示例响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

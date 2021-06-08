@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 255e68a14fcddd3227fbad92663f6f6c347a7003
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ea59f56666c56397ac8077da3b215f7d5e53e1d6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043743"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786774"
 ---
 # <a name="add-teacher"></a>添加教师
 
@@ -92,9 +92,7 @@ Content-length: 508
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationUser"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

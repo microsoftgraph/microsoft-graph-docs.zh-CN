@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: de0cbeb3e3992f72c469604c4127a197a25a7058
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 0b3077567710db0c4489bb25cf6a509454427379
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575208"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786430"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 
@@ -83,9 +83,7 @@ POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotT
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

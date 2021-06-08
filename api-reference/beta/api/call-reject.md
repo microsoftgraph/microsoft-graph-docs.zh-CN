@@ -1,28 +1,28 @@
 ---
-title: 呼叫：拒绝
-description: 启用机器人以拒绝传入呼叫。
+title: call： reject
+description: 使机器人能够拒绝传入呼叫。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b5f1faaf6aa7be24ff6ab4287b9a8c89c014df6d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e734ae62b669b178b81fcb0f63db96d734591d9f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959502"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786564"
 ---
-# <a name="call-reject"></a>呼叫：拒绝
+# <a name="call-reject"></a>call： reject
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-启用机器人以拒绝传入呼叫。 传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。 如果收到某个组呼叫邀请，则通知将包含 **chatInfo** 和 **meetingInfo** 参数。
+使机器人能够拒绝传入呼叫。 传入呼叫请求可以是来自组呼叫参与者的邀请或对等呼叫。 如果收到组呼叫邀请，通知将包含 **chatInfo** 和 **meetingInfo** 参数。
 
-在呼叫超时之前，机器人应应答或拒绝呼叫。当前超时值为15秒。
+机器人预期在呼叫退出之前应答或拒绝呼叫。当前超时值为 15 秒。
 
-此 API 不会结束已应答的现有呼叫。 使用 [删除呼叫](../api/call-delete.md) 结束呼叫。
+此 API 不会结束已应答的现有调用。 使用 [删除呼叫](../api/call-delete.md) 结束呼叫。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,16 +52,16 @@ POST /communications/calls/{id}/reject
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|reason|String|拒绝原因。 可能的值 `None` 为 `Busy` 和 `Forbidden` |
-|callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。|
+|reason|String|拒绝原因。 可能的值是 `None` 、 `Busy` 和 `Forbidden` |
+|callbackUri|String|这允许机器人为当前呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
-下面的示例演示如何调用此 API。
+以下示例显示如何调用此 API。
 
-### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>示例1：拒绝传入呼叫并使用 ' 占线 ' 原因
+### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>示例 1：拒绝具有"Busy"原因的传入呼叫
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,17 +100,15 @@ Content-Length: 24
 ##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-2-reject-an-incoming-call-with-none-reason"></a>示例2：拒绝具有 "无" 原因的传入呼叫
+### <a name="example-2-reject-an-incoming-call-with-none-reason"></a>示例 2：拒绝具有"无"原因的传入呼叫
 
-##### <a name="notification---incoming"></a>通知传入
+##### <a name="notification---incoming"></a>通知 - 传入
 
 ```http
 POST https://bot.contoso.com/api/call
@@ -201,15 +199,13 @@ Content-Length: 24
 
 ##### <a name="response"></a>响应
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a>通知-已删除
+##### <a name="notification---deleted"></a>通知 - 已删除
 
 ```http
 POST https://bot.contoso.com/api/calls

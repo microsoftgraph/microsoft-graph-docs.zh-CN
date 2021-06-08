@@ -1,18 +1,18 @@
 ---
-title: 调用： changeScreenSharingRole
+title: call： changeScreenSharingRole
 description: 允许应用程序与组呼叫的参与者共享屏幕内容。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d030adbe4ccaf4d0f92e69a402b6a089d92ba211
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5239d0c2929f43d457253268d190c1ae68e87870
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959772"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786571"
 ---
-# <a name="call-changescreensharingrole"></a>调用： changeScreenSharingRole
+# <a name="call-changescreensharingrole"></a>call： changeScreenSharingRole
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "48959772"
 
 允许应用程序与组呼叫的参与者共享屏幕内容。
 
-> **注意：** 只有使用 App-Hosted 媒体的组调用才支持此类型。
+> **注意：** 这仅适用于使用媒体的组App-Hosted支持。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,10 +50,10 @@ POST /communications/calls/{id}/changeScreenSharingRole
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|role|String|可能的值为： "查看器"、"共享资源"|
+|role|String|可能的值包括："viewer"和"sharer"|
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回 `202 Accepted` 响应代码，并且所有参与者都将收到名单更新。
+如果成功，此方法将返回 `202 Accepted` 响应代码，所有参与者都将收到名单更新。
 
 ## <a name="example"></a>示例
 
@@ -98,15 +98,13 @@ Content-Length: 24
 下面是一个响应示例。 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>通知-名单随参与者发送屏幕共享视频而更新
-记下 `direction: sendOnly` 媒体流上的属性。
+##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>通知 - 使用参与者发送屏幕共享视频更新名单
+记下 `direction: sendOnly` 媒体流上的 属性。
 
 ```http
 POST https://bot.contoso.com/api/calls

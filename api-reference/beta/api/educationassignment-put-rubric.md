@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b4ab5909a9c45947fe4f1622bb4f819fc7f3e9e5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9ac7a6384d06784e6faa98f482a270e067021292
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044219"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786767"
 ---
 # <a name="create-educationrubric"></a>创建 educationRubric
 
@@ -98,9 +98,7 @@ Content-type: application/json
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationRubric"
+  "blockType": "response"
 } -->
 
 ```http

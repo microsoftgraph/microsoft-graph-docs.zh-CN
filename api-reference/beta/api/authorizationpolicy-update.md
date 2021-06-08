@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6b56548645503fc6bc3577fdb38749b7b8a2d210
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 723f8b174a256cc3b739922101f897067594bd43
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231937"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786851"
 ---
 # <a name="update-authorizationpolicy"></a>更新 authorizationPolicy
 
@@ -52,7 +52,7 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|  
 |displayName|String| 此策略的显示名称。 |  
-|说明|String| 此策略的说明。 |  
+|description|String| 此策略的说明。 |  
 |guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 请参阅 [列出 unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) 以查找可用角色模板的列表。 目前仅支持用户角色 () 、来宾用户 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` () 和受限来宾用户 `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 | 
 |enabledPreviewFeatures|集合 (字符串) | 租户上启用专用预览的功能列表。 | 
 |blockMsolPowerShell|Boolean| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接 或 Microsoft Graph。 | 
@@ -92,9 +92,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -146,9 +144,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -197,9 +193,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -251,9 +245,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -303,9 +295,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -358,9 +348,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -413,9 +401,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationpolicy"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 769ebef6e056a9b2e345d7afad772f8893b50dda
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: ec275176c609218eabe7bf15f3a99c162930a5ed
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703494"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786627"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>列出 accessReviewScheduleDefinition
 
@@ -57,16 +57,16 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |值|说明|
 |:---     |:---       |
-|`/groups`  |列出各个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组的定义) 。|
-|`/groups/{group id}`  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。|
-|`./members`  |列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。|
-|`accessPackageAssignments`  |列出访问包上的每个 accessReviewScheduleDefinition。|
-|`roleAssignmentScheduleInstances`  |列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。|
+|/groups  |列出各个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组的定义) 。|
+|/groups/{group id}  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。|
+|./members  |列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。|
+|accessPackageAssignments  |列出访问包上的每个 accessReviewScheduleDefinition。|
+|roleAssignmentScheduleInstances  |列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。|
 
 `$filter` **accessReviewInactiveUserQueryScope** 或 **principalResourceMembershipScope 不支持查询参数**。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 无。
 
 ## <a name="request-body"></a>请求正文

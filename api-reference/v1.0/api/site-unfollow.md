@@ -5,18 +5,18 @@ description: 取消关注用户的网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 229c22d25087846e3c67a103ca48384171385e35
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: daacd9a7ce66b337ba97c6c7c0953825e13b7ea5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473686"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786648"
 ---
 # <a name="unfollow-site"></a>取消关注网站 
 
 命名空间：microsoft.graph
 
-取消关注用户 [网站或](../resources/site.md) 多个网站。
+取消关注 [用户网站或多个](../resources/site.md) 网站。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ POST /users/{user-id}/followedSites/remove
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供包含下表中提到的 id 参数的 JSON 对象的数组。 
+在请求正文中，提供 JSON 对象数组以及下表中提到的 id 参数。 
 
 
 | 名称                 | 值  | 说明                                                            |
@@ -47,8 +47,8 @@ POST /users/{user-id}/followedSites/remove
 
 ## <a name="response"></a>响应
 
-* 如果请求成功，此方法将返回 `204` 无内容的状态代码。  
-* 如果在取消关注任何指定网站时发生错误，此方法将返回状态代码，响应正文将包含一组包含错误对象和 siteId 的条目，这些条目指示哪些网站无法取消 `207` 安装[](/graph/errors)。
+* 如果请求成功，此方法返回 `204` 无内容的状态代码。  
+* 如果在取消关注任何指定网站时发生错误，此方法将返回状态代码，响应正文将包含一组包含 error 对象和 `207` siteId 的条目，[](/graph/errors)这些条目指示哪些网站无法取消处理。
 
 ## <a name="example"></a>示例
 
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 如果成功，它将返回以下 JSON 响应。 
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content

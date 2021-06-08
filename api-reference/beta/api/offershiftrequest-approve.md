@@ -1,18 +1,18 @@
 ---
-title: offerShiftRequest：批准
+title: offerShiftRequest： approve
 description: 批准 offershiftrequest 对象。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 323e18df4287b29531448ba168cbfc94c645fd06
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b2a3ef65cbf138547acbed15f1fbae884467bbc7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981306"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786479"
 ---
-# <a name="offershiftrequest-approve"></a>offerShiftRequest：批准
+# <a name="offershiftrequest-approve"></a>offerShiftRequest： approve
 
 命名空间：microsoft.graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "48981306"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
+| 委派（工作或学校帐户）     | Schedule.ReadWrite.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Schedule.ReadWrite.All |
 
@@ -100,9 +100,7 @@ Content-type: application/json
 
 以下示例显示了相应的响应。
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http
