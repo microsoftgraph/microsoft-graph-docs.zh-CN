@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 879a0b1f74fa08e0ae66e5aaf5ab45b9d96de397
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 502bb1d376ca7534bcf967acfa5030e44540f86c
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469743"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788134"
 ---
 # <a name="accessreviewinstancedecisionitemresource-resource-type"></a>accessReviewInstanceDecisionItemResource 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "51469743"
 |:---|:---|:---|
 |displayName|String|资源的显示名称|
 |id|String|资源 ID|
-|type|String|资源的类型。 类型包括：Group、ServicePrincipal、DirectoryRole、AzureRole、AccessPackageAssignmentPolicy。|
+|type|String|资源的类型。 类型包括 `Group` `ServicePrincipal` `DirectoryRole` ：、、、、。 `AzureRole` `AccessPackageAssignmentPolicy`|
 
 ## <a name="relationships"></a>关系
 无。

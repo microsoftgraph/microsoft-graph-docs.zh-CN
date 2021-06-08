@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1e57436cc396b78a8697516702004c7ea4f6d666
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 76ce049fc30ae48a03e18dae92cad63f6fb80f14
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231979"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788127"
 ---
 # <a name="update-authorizationpolicy"></a>更新 authorizationPolicy
 
@@ -49,13 +49,13 @@ PATCH /policies/authorizationPolicy
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|allowedToSignUpEmailBasedSubscriptions|Boolean| 指示用户是否可以注册基于电子邮件的订阅。 |
-|allowedToUseSSPR|Boolean| 指示租户Self-Serve是否可以使用密码重置功能。 |
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| 指示用户是否可以通过电子邮件验证加入租户。 |
+|allowedToSignUpEmailBasedSubscriptions|布尔值| 指示用户是否可以注册基于电子邮件的订阅。 |
+|allowedToUseSSPR|布尔值| 指示租户Self-Serve是否可以使用密码重置功能。 |
+|allowEmailVerifiedUsersToJoinOrganization|布尔值| 指示用户是否可以通过电子邮件验证加入租户。 |
 |allowInvitesFrom|allowInvitesFrom|指示谁可以邀请外部用户加入组织。 可取值为：`none`、`adminsAndGuestInviters`、`adminsGuestInvitersAndAllMembers`、`everyone`。  `everyone` 是除美国政府以外的所有云环境的默认设置。 有关详细信息，请参阅此表中的允许 [值](../resources/authorizationpolicy.md#allowinvitesfrom-values)。 |
-|blockMsolPowerShell|Boolean| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接 或 Microsoft Graph。 |
+|blockMsolPowerShell|布尔值| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接 或 Microsoft Graph。 |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| 指定默认用户角色的某些可自定义权限。 |
-|说明|String| 此策略的说明。|
+|description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 |
 |guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 当前支持以下角色：用户角色 () 、来宾用户 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` () 和受限来宾 `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 |
 
@@ -110,9 +110,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -163,9 +161,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -218,9 +214,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -271,9 +265,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -326,9 +318,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -383,9 +373,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 下面展示了示例响应。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationpolicy"
+  "blockType": "response"
 } -->
 
 ```http
