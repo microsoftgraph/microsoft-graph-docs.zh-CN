@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2126d80e2ab573161280f2624034b80b41fe36b9
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 59b73642b781877a942d5e70e654955ced0a86d6
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766069"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813207"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -47,7 +47,8 @@ ms.locfileid: "51766069"
 |[获取频道中的选项卡](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到频道的特定选项卡。|
 |[更新频道中的选项卡](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | 更新频道中的选项卡的属性。|
 |[从频道中删除选项卡](../api/channel-delete-tabs.md) | 无 | 从频道中删除（取消固定）选项卡。|
-
+|[预配频道电子邮件地址](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| 预配电子邮件地址。|
+|[删除频道电子邮件地址](../api/channel-removeemail.md) | 无 | 删除电子邮件地址。|
 
 ## <a name="properties"></a>属性
 
@@ -55,9 +56,9 @@ ms.locfileid: "51766069"
 |:---------------|:--------|:----------|
 |说明|String|频道的可选文本描述。|
 |displayName|String|在 Microsoft Teams 中呈现在用户面前的频道名称。|
-|id|String|频道的唯一标识符。 只读。|
+|id|String|频道的唯一标识符。只读。|
 |isFavoriteByDefault|Boolean|指示是否应对团队的所有成员将频道自动标记到“收藏夹”。 仅可使用“[创建团队](../api/team-post.md)”以编程方式设置。 默认值：`false`。|
-|email|String| 用于向频道发送邮件的电子邮件地址。 只读。|
+|email|String| 用于向频道发送邮件的电子邮件地址。只读。|
 |webUrl|String|将转到 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|频道的类型。 可在创建期间设置，但不可更改。 默认：标准。|
 |createdDateTime|dateTimeOffset|只读。 创建频道的时间戳。|
@@ -79,9 +80,9 @@ ms.locfileid: "51766069"
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md) 集合|频道中的所有消息集合。 一种导航属性。 可为 NULL。|
-|选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|
-|成员|[conversationMember](conversationmember.md) 集合|与频道关联的成员资格记录的集合。|
+|messages|[chatMessage](chatmessage.md) 集合|频道中所有消息的集合。一种导航属性。可为 Null。|
+|选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中所有选项卡的集合。一种导航属性。|
+|members|[conversationMember](conversationmember.md) 集合|与频道关联的成员资格记录的集合。|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 |
 
@@ -108,7 +109,7 @@ ms.locfileid: "51766069"
   "webUrl": "string",
   "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)",
-  "moderationSettings": "channelModerationSettings"
+  "moderationSettings": { "@odata.type": "microsoft.graph.channelModerationSettings" }
 }
 ```
 

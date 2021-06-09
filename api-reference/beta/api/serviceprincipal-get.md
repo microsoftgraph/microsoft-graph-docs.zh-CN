@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 025c8feb69a439a26cdbcd1beda4e0d7d6f48c46
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0e1e943e7f476090c82bf3b6c0bf52277b7a226b
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051933"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813067"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -107,6 +107,7 @@ Content-type: application/json
         "applicationTemplateId": null,
         "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
         "appRoleAssignmentRequired": false,
+        "disabledByMicrosoftStatus": null,
         "displayName": "foo",
         "errorUrl": null,
         "homepage": null,

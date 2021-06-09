@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8924c536510d7fd13496096a7e803cc4f896ec9a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f944ff27beffd0bb375d8197f4424f3f6fce4f8b
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050603"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813198"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -101,6 +101,7 @@ Content-length: 1044
     "applicationTemplateId": null,
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
+    "disabledByMicrosoftStatus": null,
     "displayName": "Display name",
     "isDeviceOnlyAuthSupported": null,
     "groupMembershipClaims": null,

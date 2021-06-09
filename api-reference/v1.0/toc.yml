@@ -1087,7 +1087,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -4902,7 +4902,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -5173,7 +5173,7 @@ items:
                 href: api/contact-delta.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -5519,7 +5519,7 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -5735,34 +5735,34 @@ items:
                 href: api/channel-patch.md
               - name: 删除频道
                 href: api/channel-delete.md
-              - name: 列出成员
-                href: api/channel-list-members.md
               - name: 添加成员
                 href: api/channel-post-members.md
-              - name: 获取成员
-                href: api/channel-get-members.md
-              - name: 更新成员角色
-                href: api/channel-update-members.md
-              - name: 删除成员
-                href: api/channel-delete-members.md
               - name: 频道完整迁移
                 href: api/channel-completemigration.md
-              - name: 获取文件文件夹
-                href: api/channel-get-filesfolder.md
-              - name: 列出频道消息
-                href: api/channel-list-messages.md
-              - name: 获取频道消息 delta
-                href: api/chatmessage-delta.md
               - name: 获取通道消息
                 href: api/chatmessage-get.md
-              - name: 列出消息回复
-                href: api/chatmessage-list-replies.md
+              - name: 获取频道消息 delta
+                href: api/chatmessage-delta.md
+              - name: 获取文件文件夹
+                href: api/channel-get-filesfolder.md
+              - name: 获取成员
+                href: api/channel-get-members.md
               - name: 获取消息回复
                 href: api/chatmessage-get.md
-              - name: 发送消息
-                href: api/channel-post-messages.md
+              - name: 列出频道消息
+                href: api/channel-list-messages.md
+              - name: 列出成员
+                href: api/channel-list-members.md
+              - name: 列出消息回复
+                href: api/chatmessage-list-replies.md
+              - name: 删除成员
+                href: api/channel-delete-members.md
               - name: 回复消息
                 href: api/chatmessage-post-replies.md
+              - name: 发送消息
+                href: api/channel-post-messages.md
+              - name: 更新成员角色
+                href: api/channel-update-members.md
               - name: 更新邮件
                 href: api/chatmessage-update.md
           - name: 聊天
