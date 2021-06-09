@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 09d1a760954a88f1201bd21e7ea0971028da2c50
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7ba6d589702034ca2463386a700560ba42d9dcaa
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787035"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854186"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -19,7 +19,10 @@ ms.locfileid: "52787035"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的目录角色成员。
-## <a name="permissions"></a>权限
+
+你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,7 +34,8 @@ ms.locfileid: "52787035"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{id}/members/$ref
+POST /directoryRoles/{role-objectId}/members/$ref
+POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -85,7 +89,6 @@ Content-length: 30
 ---
 
 #### <a name="response"></a>响应
-以下示例显示了相应的响应。 
 
 <!-- {
   "blockType": "response"
@@ -133,7 +136,6 @@ Content-length: 30
 
 
 #### <a name="response"></a>响应
-以下示例显示了相应的响应。 
 
 <!-- {
   "blockType": "response"
@@ -141,6 +143,34 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No content
 ```
+
+### <a name="example-3-add-a-new-member-to-a-directory-role-using-role-templateid"></a>示例 3：使用角色 templateId 向目录角色添加新成员
+#### <a name="request"></a>请求
+在此请求中，将 替换为要分配给用户或目录对象的目录角色的 `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **roleTemplateId** 的值。 将 `bb165b45-151c-4cf6-9911-cd7188912848` 替换为 **用户** 或目录对象的 id 值。 
+
+<!-- {
+  "blockType": "request",
+  "name": "create_directoryobject_from_directoryrole_2_templateId"
+}-->
+```http
+POST https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=88d8e3e3-8f55-4a1e-953a-9b9898b8876b/members/$ref
+Content-type: application/json
+Content-length: 30
+
+{
+    "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/bb165b45-151c-4cf6-9911-cd7188912848"
+}
+```
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No content
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

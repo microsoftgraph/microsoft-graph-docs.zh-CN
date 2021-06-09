@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9425849444a31454e3a98fcd2fbabd8a04184938
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c1f61ba3ca3d282003d191df2d7a22e44ee68a8b
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046823"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854187"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -19,7 +19,10 @@ ms.locfileid: "52046823"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索分配给目录角色的用户列表。只能将用户分配给目录角色。
-## <a name="permissions"></a>权限
+
+你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -34,7 +37,8 @@ ms.locfileid: "52046823"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{id}/members
+GET /directoryRoles/{role-objectId}/members
+GET /directoryRoles/roleTemplateId={role-templateId}/members
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -49,8 +53,11 @@ GET /directoryRoles/{id}/members
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-the-members-of-a-directory-role-using-role-objectid"></a>示例 1：使用 role objectId 获取目录角色的成员
+
+#### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -59,7 +66,7 @@ GET /directoryRoles/{id}/members
   "name": "get_directoryrole_members"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/{id}/members
+GET https://graph.microsoft.com/beta/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda/members
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-csharp-snippets.md)]
@@ -79,8 +86,8 @@ GET https://graph.microsoft.com/beta/directoryRoles/{id}/members
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+#### <a name="response"></a>响应
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,12 +97,61 @@ GET https://graph.microsoft.com/beta/directoryRoles/{id}/members
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "businessPhones":["000-000-0000"],
+      "displayName":"Adele Vance",
+      "givenName":"Adele",
+      "jobTitle":null,
+      "mail":"AdeleV@contoso.com",
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Vance",
+      "userPrincipalName":"AdeleV@contoso.com"
+    }
+  ]
+}
+```
+
+### <a name="example-2-get-the-members-of-a-directory-role-using-role-templateid"></a>示例 2：使用角色 templateId 获取目录角色的成员
+
+#### <a name="request"></a>请求
+下面是一个请求示例。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryrole_members_templateId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf/members
+```
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "businessPhones":["000-000-0000"],
+      "displayName":"Adele Vance",
+      "givenName":"Adele",
+      "jobTitle":null,
+      "mail":"AdeleV@contoso.com",
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Vance",
+      "userPrincipalName":"AdeleV@contoso.com"
     }
   ]
 }

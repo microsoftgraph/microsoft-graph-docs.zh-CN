@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 406c0646a3d9dbac3f31dd2bd075a40e1678a415
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f327c47c36bf2b26fe50eeb4b2d511f157c8006d
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046809"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854207"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -19,7 +19,7 @@ ms.locfileid: "52046809"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出租户中激活的目录角色。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/directoryRoles
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,15 +88,30 @@ GET https://graph.microsoft.com/beta/directoryRoles
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 187
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryRoles",
   "value": [
     {
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "roleTemplateId": "roleTemplateId-value",
-      "id": "id-value"
+      "id": "9ed3a0c4-53e1-498c-ab4d-2473476fde14",
+      "deletedDateTime": null,
+      "description": "Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.",
+      "displayName": "Global Administrator",
+      "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10"
+    },
+    {
+      "id": "f8e85ed8-f66f-4058-b170-3efae8b9c6e5",
+      "deletedDateTime": null,
+      "description": "Device Administrators",
+      "displayName": "Azure AD Joined Device Local Administrator",
+      "roleTemplateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8"
+    },
+    {
+      "id": "fe8f10bf-c9c2-47eb-95cb-c26cc85f1830",
+      "deletedDateTime": null,
+      "description": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
+      "displayName": "Directory Readers",
+      "roleTemplateId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
     }
   ]
 }
