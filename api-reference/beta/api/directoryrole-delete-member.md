@@ -5,91 +5,120 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2e5082488dbed8452abeecae904751ae3dff6dde
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3f23ed30b7681ec51a1763eed9d621d67a4c4f19
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436839"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854194"
 ---
-# <a name="remove-directory-role-member"></a><span data-ttu-id="95264-103">删除目录角色成员</span><span class="sxs-lookup"><span data-stu-id="95264-103">Remove directory role member</span></span>
+# <a name="remove-directory-role-member"></a><span data-ttu-id="1e306-103">删除目录角色成员</span><span class="sxs-lookup"><span data-stu-id="1e306-103">Remove directory role member</span></span>
 
-<span data-ttu-id="95264-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="95264-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1e306-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1e306-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="95264-105">从 directoryRole 中删除成员。</span><span class="sxs-lookup"><span data-stu-id="95264-105">Remove a member from a directoryRole.</span></span>
+<span data-ttu-id="1e306-105">从 directoryRole 中删除成员。</span><span class="sxs-lookup"><span data-stu-id="1e306-105">Remove a member from a directoryRole.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="95264-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="95264-106">Permissions</span></span>
+<span data-ttu-id="1e306-106">你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。</span><span class="sxs-lookup"><span data-stu-id="1e306-106">You can use both the object ID and template ID of the **directoryRole** with this API.</span></span> <span data-ttu-id="1e306-107">内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。</span><span class="sxs-lookup"><span data-stu-id="1e306-107">The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.</span></span> <span data-ttu-id="1e306-108">有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)</span><span class="sxs-lookup"><span data-stu-id="1e306-108">For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).</span></span>
 
-<span data-ttu-id="95264-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="95264-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1e306-109">Permissions</span><span class="sxs-lookup"><span data-stu-id="1e306-109">Permissions</span></span>
+
+<span data-ttu-id="1e306-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1e306-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="95264-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="95264-109">Permission type</span></span>      | <span data-ttu-id="95264-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="95264-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1e306-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="1e306-112">Permission type</span></span>      | <span data-ttu-id="1e306-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1e306-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="95264-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="95264-111">Delegated (work or school account)</span></span> | <span data-ttu-id="95264-112">RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="95264-112">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="95264-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="95264-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95264-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="95264-114">Not supported.</span></span>    |
-|<span data-ttu-id="95264-115">Application</span><span class="sxs-lookup"><span data-stu-id="95264-115">Application</span></span> | <span data-ttu-id="95264-116">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="95264-116">RoleManagement.ReadWrite.Directory</span></span> |
+|<span data-ttu-id="1e306-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1e306-114">Delegated (work or school account)</span></span> | <span data-ttu-id="1e306-115">RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1e306-115">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="1e306-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1e306-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e306-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="1e306-117">Not supported.</span></span>    |
+|<span data-ttu-id="1e306-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="1e306-118">Application</span></span> | <span data-ttu-id="1e306-119">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="1e306-119">RoleManagement.ReadWrite.Directory</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="95264-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="95264-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1e306-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1e306-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="95264-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="95264-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1e306-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="1e306-121">Request headers</span></span>
 
-| <span data-ttu-id="95264-119">名称</span><span class="sxs-lookup"><span data-stu-id="95264-119">Name</span></span>       | <span data-ttu-id="95264-120">类型</span><span class="sxs-lookup"><span data-stu-id="95264-120">Type</span></span> | <span data-ttu-id="95264-121">说明</span><span class="sxs-lookup"><span data-stu-id="95264-121">Description</span></span>|
+| <span data-ttu-id="1e306-122">名称</span><span class="sxs-lookup"><span data-stu-id="1e306-122">Name</span></span>       | <span data-ttu-id="1e306-123">类型</span><span class="sxs-lookup"><span data-stu-id="1e306-123">Type</span></span> | <span data-ttu-id="1e306-124">说明</span><span class="sxs-lookup"><span data-stu-id="1e306-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="95264-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="95264-122">Authorization</span></span>  | <span data-ttu-id="95264-123">string</span><span class="sxs-lookup"><span data-stu-id="95264-123">string</span></span>  | <span data-ttu-id="95264-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="95264-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1e306-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="1e306-125">Authorization</span></span>  | <span data-ttu-id="1e306-126">string</span><span class="sxs-lookup"><span data-stu-id="1e306-126">string</span></span>  | <span data-ttu-id="1e306-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1e306-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="95264-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="95264-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1e306-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="1e306-129">Request body</span></span>
 
-<span data-ttu-id="95264-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="95264-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="1e306-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1e306-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="95264-128">响应</span><span class="sxs-lookup"><span data-stu-id="95264-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1e306-131">响应</span><span class="sxs-lookup"><span data-stu-id="1e306-131">Response</span></span>
 
-<span data-ttu-id="95264-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="95264-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="1e306-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="1e306-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="95264-131">示例</span><span class="sxs-lookup"><span data-stu-id="95264-131">Example</span></span>
+## <a name="examples"></a><span data-ttu-id="1e306-134">示例</span><span class="sxs-lookup"><span data-stu-id="1e306-134">Examples</span></span>
 
-##### <a name="request"></a><span data-ttu-id="95264-132">请求</span><span class="sxs-lookup"><span data-stu-id="95264-132">Request</span></span>
+### <a name="example-1-remove-directory-role-member-using-role-objectid"></a><span data-ttu-id="1e306-135">示例 1：使用 role objectId 删除目录角色成员</span><span class="sxs-lookup"><span data-stu-id="1e306-135">Example 1: Remove directory role member using role objectId</span></span>
 
-<span data-ttu-id="95264-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="95264-133">Here is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="1e306-136">请求</span><span class="sxs-lookup"><span data-stu-id="1e306-136">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="95264-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="95264-134">HTTP</span></span>](#tab/http)
+<span data-ttu-id="1e306-137">本示例中，将 替换为目录角色的 id 值和希望从目录角色中取消分配的用户或目录对象的 `f8e85ed8-f66f-4058-b170-3efae8b9c6e5`  `bb165b45-151c-4cf6-9911-cd7188912848` **id** 值。</span><span class="sxs-lookup"><span data-stu-id="1e306-137">In this example, replace `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` with the **id** value of the directory role and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of the user or directory object that you wish to unassign from the directory role.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="1e306-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="1e306-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_directoryobject_from_directoryrole"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/directoryRoles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3efae8b9c6e5/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
-# <a name="c"></a>[<span data-ttu-id="95264-135">C#</span><span class="sxs-lookup"><span data-stu-id="95264-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1e306-139">C#</span><span class="sxs-lookup"><span data-stu-id="1e306-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="95264-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="95264-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1e306-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1e306-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directoryobject-from-directoryrole-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="95264-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="95264-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1e306-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1e306-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directoryobject-from-directoryrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="95264-138">Java</span><span class="sxs-lookup"><span data-stu-id="95264-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="1e306-142">Java</span><span class="sxs-lookup"><span data-stu-id="1e306-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-directoryrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="95264-139">响应</span><span class="sxs-lookup"><span data-stu-id="95264-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1e306-143">响应</span><span class="sxs-lookup"><span data-stu-id="1e306-143">Response</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
-<span data-ttu-id="95264-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="95264-140">Here is an example of the response.</span></span> 
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-remove-directory-role-member-using-role-templateid"></a><span data-ttu-id="1e306-144">示例 2：使用角色 templateId 删除目录角色成员</span><span class="sxs-lookup"><span data-stu-id="1e306-144">Example 2: Remove directory role member using role templateId</span></span>
+
+#### <a name="request"></a><span data-ttu-id="1e306-145">请求</span><span class="sxs-lookup"><span data-stu-id="1e306-145">Request</span></span>
+
+<span data-ttu-id="1e306-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1e306-146">Here is an example of the request.</span></span> <span data-ttu-id="1e306-147">将 `9f06204d-73c1-4d4c-880a-6edb90606fd8` 替换为 roleTemplateId 的值和 `bb165b45-151c-4cf6-9911-cd7188912848` directory 对象的用户的 **id** 值。</span><span class="sxs-lookup"><span data-stu-id="1e306-147">Replace `9f06204d-73c1-4d4c-880a-6edb90606fd8` with the value of your roleTemplateId and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user of directory object.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_directoryobject_from_directoryrole_templateId"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-73c1-4d4c-880a-6edb90606fd8/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
+```
+
+
+#### <a name="response"></a><span data-ttu-id="1e306-148">响应</span><span class="sxs-lookup"><span data-stu-id="1e306-148">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
