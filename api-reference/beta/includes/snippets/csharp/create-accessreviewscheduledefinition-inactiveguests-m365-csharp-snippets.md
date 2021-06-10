@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c84a51eb0b4d2d5136389dc3cbca30c16ad1d694
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: f14e3306c04c3c78960c229a1335728c403b67ea
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664590"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871377"
 ---
 ```csharp
 
@@ -55,7 +55,7 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
             Pattern = new RecurrencePattern
             {
                 Type = RecurrencePatternType.AbsoluteMonthly,
-                DayOfMonth = "5",
+                DayOfMonth = 5,
                 Interval = 3
             },
             Range = new RecurrenceRange

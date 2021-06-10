@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9aca20afb9db6076904adff5d63c9f8d60fa0aa1
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 5e55221445899d81788c9d91e6b7e2900e3ead53
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50791094"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871504"
 ---
 ```javascript
 
@@ -21,7 +21,9 @@ const educationAssignment = {
     contentType: 'Text',
     content: 'Read chapters 1 through 3'
   },
-  dueDateTime: '2014-02-01T00:00:00Z'
+  dueDateTime: '2014-02-01T00:00:00Z',
+  addedStudentAction: 'none',
+  addToCalendarAction: 'studentsAndPublisher',
 };
 
 await client.api('/education/classes/11021/assignments/19002')

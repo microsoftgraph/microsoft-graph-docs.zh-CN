@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 143c4e81530e18f81d08f2cb7c0b06ffcc53317d
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: f5b09279cb8221d3f367bb568832e7e234b5ee97
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48616679"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871440"
 ---
 ```objc
 
@@ -23,6 +23,8 @@ MSGraphEducationItemBody *instructions = [[MSGraphEducationItemBody alloc] init]
 [instructions setContent:@"Read chapters 1 through 3"];
 [educationAssignment setInstructions:instructions];
 [educationAssignment setDueDateTime: "2014-02-01T00:00:00Z"];
+[educationAssignment setAddedStudentAction: [MSGraphEducationAddedStudentAction none]];
+[educationAssignment setAddToCalendarAction: [MSGraphEducationAddToCalendarOptions studentsAndPublisher]];
 
 NSError *error;
 NSData *educationAssignmentData = [educationAssignment getSerializedDataWithError:&error];
