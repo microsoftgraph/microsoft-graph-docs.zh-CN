@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f423c9caa5a9d0c99343e8e77cd8ef7140cf1d59
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 701c9dd745db81b2b36e496e6ab3c1dd4c336a00
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50791372"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870372"
 ---
 ```javascript
 
@@ -15,11 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const unprotect = {
-  password: 'password-value'
-};
-
 await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect')
-    .post(unprotect);
+    .post();
 
 ```

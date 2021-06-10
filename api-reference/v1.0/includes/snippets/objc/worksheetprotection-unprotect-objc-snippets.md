@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 854c2ddf324218b34b118e7887431a63c1bdddb2
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 3e2cca4354d34af218832c10308a5aebda6de0bf
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48615744"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870365"
 ---
 ```objc
 
@@ -14,15 +14,6 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect"]]];
 [urlRequest setHTTPMethod:@"POST"];
-[urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-
-NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
-
-NSString *password = @"password-value";
-payloadDictionary[@"password"] = password;
-
-NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
-[urlRequest setHTTPBody:data];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

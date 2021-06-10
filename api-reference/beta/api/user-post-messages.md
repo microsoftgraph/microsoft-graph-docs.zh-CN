@@ -1,50 +1,50 @@
 ---
 title: 创建邮件
-description: 创建 JSON 或 MIME 格式的新邮件草稿。
+description: 采用 JSON 或 MIME 格式创建新邮件的草稿。
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: acb10508eec31e39d5f631aee91dc3b85f964d3d
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 4305a14ba2726102427c4f0b4c733656be2fd03b
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645568"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52868908"
 ---
-# <a name="create-message"></a><span data-ttu-id="2fffc-103">创建邮件</span><span class="sxs-lookup"><span data-stu-id="2fffc-103">Create Message</span></span>
+# <a name="create-message"></a><span data-ttu-id="a2a89-103">创建邮件</span><span class="sxs-lookup"><span data-stu-id="a2a89-103">Create Message</span></span>
 
-<span data-ttu-id="2fffc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2fffc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a2a89-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a2a89-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2fffc-105">创建 JSON 或 MIME 格式的新邮件草稿。</span><span class="sxs-lookup"><span data-stu-id="2fffc-105">Create a draft of a new message in either JSON or MIME format.</span></span>
+<span data-ttu-id="a2a89-105">采用 JSON 或 MIME 格式创建新邮件的草稿。</span><span class="sxs-lookup"><span data-stu-id="a2a89-105">Create a draft of a new message in either JSON or MIME format.</span></span>
 
-<span data-ttu-id="2fffc-106">使用 JSON 格式时，可以：</span><span class="sxs-lookup"><span data-stu-id="2fffc-106">When using JSON format, you can:</span></span>
-- <span data-ttu-id="2fffc-107">包括附件[](../resources/attachment.md)。</span><span class="sxs-lookup"><span data-stu-id="2fffc-107">Include an [attachment](../resources/attachment.md).</span></span>
-- <span data-ttu-id="2fffc-108">使用 [提及](../resources/mention.md) 功能在新邮件中呼叫其他用户。</span><span class="sxs-lookup"><span data-stu-id="2fffc-108">Use a [mention](../resources/mention.md) to call out another user in the new message.</span></span>
-- <span data-ttu-id="2fffc-109">[稍后](../api/message-update.md) 更新草稿以将内容添加到 **正文或更改** 其他邮件属性。</span><span class="sxs-lookup"><span data-stu-id="2fffc-109">[Update](../api/message-update.md) the draft later to add content to the **body** or change other message properties.</span></span>
+<span data-ttu-id="a2a89-106">使用 JSON 格式时，可以：</span><span class="sxs-lookup"><span data-stu-id="a2a89-106">When using JSON format, you can:</span></span>
+- <span data-ttu-id="a2a89-107">包括附件[](../resources/attachment.md)。</span><span class="sxs-lookup"><span data-stu-id="a2a89-107">Include an [attachment](../resources/attachment.md).</span></span>
+- <span data-ttu-id="a2a89-108">使用 [提及](../resources/mention.md) 功能在新邮件中呼叫其他用户。</span><span class="sxs-lookup"><span data-stu-id="a2a89-108">Use a [mention](../resources/mention.md) to call out another user in the new message.</span></span>
+- <span data-ttu-id="a2a89-109">随后 [更新](../api/message-update.md)草稿以将内容添加到 **正文**，或更改其他邮件属性。</span><span class="sxs-lookup"><span data-stu-id="a2a89-109">[Update](../api/message-update.md) the draft later to add content to the **body** or change other message properties.</span></span>
 
-<span data-ttu-id="2fffc-110">使用 MIME 格式时：</span><span class="sxs-lookup"><span data-stu-id="2fffc-110">When using MIME format:</span></span>
-- <span data-ttu-id="2fffc-111">在请求正文中提供适用的 [Internet](https://tools.ietf.org/html/rfc2076) 邮件头和 [MIME](https://tools.ietf.org/html/rfc2045)内容，这些内容均以 **base64** 格式进行编码。</span><span class="sxs-lookup"><span data-stu-id="2fffc-111">Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.</span></span>
-- <span data-ttu-id="2fffc-112">将任何附件和 S/MIME 属性添加到 MIME 内容。</span><span class="sxs-lookup"><span data-stu-id="2fffc-112">Add any attachments and S/MIME properties to the MIME content.</span></span>
+<span data-ttu-id="a2a89-110">使用 MIME 格式时：</span><span class="sxs-lookup"><span data-stu-id="a2a89-110">When using MIME format:</span></span>
+- <span data-ttu-id="a2a89-111">提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。</span><span class="sxs-lookup"><span data-stu-id="a2a89-111">Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.</span></span>
+- <span data-ttu-id="a2a89-112">向 MIME 内容添加任何附件和 S/MIME 属性。</span><span class="sxs-lookup"><span data-stu-id="a2a89-112">Add any attachments and S/MIME properties to the MIME content.</span></span>
 
-<span data-ttu-id="2fffc-113">默认情况下，此操作将草稿保存在"草稿"文件夹中。</span><span class="sxs-lookup"><span data-stu-id="2fffc-113">By default, this operation saves the draft in the Drafts folder.</span></span>
+<span data-ttu-id="a2a89-113">默认情况下，此操作将草稿保存在“草稿”文件夹中。</span><span class="sxs-lookup"><span data-stu-id="a2a89-113">By default, this operation saves the draft in the Drafts folder.</span></span>
 
-<span data-ttu-id="2fffc-114">[在](/graph/api-reference/beta/api/message-send.md) 后续操作中发送草稿邮件。</span><span class="sxs-lookup"><span data-stu-id="2fffc-114">[Send](/graph/api-reference/beta/api/message-send.md) the draft message in a subsequent operation.</span></span>
+<span data-ttu-id="a2a89-114">在后续操作中[发送](/graph/api-reference/beta/api/message-send.md)草稿消息。</span><span class="sxs-lookup"><span data-stu-id="a2a89-114">[Send](/graph/api-reference/beta/api/message-send.md) the draft message in a subsequent operation.</span></span>
 
-<span data-ttu-id="2fffc-115">或者，[在单个操作中](../api/user-sendmail.md)发送新邮件，或创建转发草稿，以[](../api/message-createforward.md)[答复](../api/message-createreply.md)或[全部](../api/message-createreplyall.md)答复现有邮件。</span><span class="sxs-lookup"><span data-stu-id="2fffc-115">Alternatively, [send a new message](../api/user-sendmail.md) in a single action, or create a draft [to forward](../api/message-createforward.md), [to reply](../api/message-createreply.md) or [to reply-all](../api/message-createreplyall.md) to an existing message.</span></span>
+<span data-ttu-id="a2a89-115">或者，[在单个操作中](../api/user-sendmail.md)发送新邮件，或创建转发草稿，以[](../api/message-createforward.md)[答复](../api/message-createreply.md)或[全部](../api/message-createreplyall.md)答复现有邮件。</span><span class="sxs-lookup"><span data-stu-id="a2a89-115">Alternatively, [send a new message](../api/user-sendmail.md) in a single action, or create a draft [to forward](../api/message-createforward.md), [to reply](../api/message-createreply.md) or [to reply-all](../api/message-createreplyall.md) to an existing message.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2fffc-116">权限</span><span class="sxs-lookup"><span data-stu-id="2fffc-116">Permissions</span></span>
-<span data-ttu-id="2fffc-117">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="2fffc-117">One of the following permissions are required to call this API.</span></span> <span data-ttu-id="2fffc-118">若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2fffc-118">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a2a89-116">权限</span><span class="sxs-lookup"><span data-stu-id="a2a89-116">Permissions</span></span>
+<span data-ttu-id="a2a89-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a2a89-p101">One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2fffc-119">权限类型</span><span class="sxs-lookup"><span data-stu-id="2fffc-119">Permission type</span></span>      | <span data-ttu-id="2fffc-120">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2fffc-120">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a2a89-119">权限类型</span><span class="sxs-lookup"><span data-stu-id="a2a89-119">Permission type</span></span>      | <span data-ttu-id="a2a89-120">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a2a89-120">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2fffc-121">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2fffc-121">Delegated (work or school account)</span></span> | <span data-ttu-id="2fffc-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2fffc-122">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="2fffc-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2fffc-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2fffc-124">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2fffc-124">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="2fffc-125">应用程序</span><span class="sxs-lookup"><span data-stu-id="2fffc-125">Application</span></span> | <span data-ttu-id="2fffc-126">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2fffc-126">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="a2a89-121">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a2a89-121">Delegated (work or school account)</span></span> | <span data-ttu-id="a2a89-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a2a89-122">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="a2a89-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a2a89-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a2a89-124">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a2a89-124">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="a2a89-125">应用程序</span><span class="sxs-lookup"><span data-stu-id="a2a89-125">Application</span></span> | <span data-ttu-id="a2a89-126">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a2a89-126">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2fffc-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2fffc-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a2a89-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a2a89-127">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages
@@ -52,36 +52,36 @@ POST /users/{id|userPrincipalName}/messages
 POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
-## <a name="request-headers"></a><span data-ttu-id="2fffc-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="2fffc-128">Request headers</span></span>
-| <span data-ttu-id="2fffc-129">名称</span><span class="sxs-lookup"><span data-stu-id="2fffc-129">Name</span></span>       | <span data-ttu-id="2fffc-130">类型</span><span class="sxs-lookup"><span data-stu-id="2fffc-130">Type</span></span> | <span data-ttu-id="2fffc-131">说明</span><span class="sxs-lookup"><span data-stu-id="2fffc-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a2a89-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="a2a89-128">Request headers</span></span>
+| <span data-ttu-id="a2a89-129">名称</span><span class="sxs-lookup"><span data-stu-id="a2a89-129">Name</span></span>       | <span data-ttu-id="a2a89-130">类型</span><span class="sxs-lookup"><span data-stu-id="a2a89-130">Type</span></span> | <span data-ttu-id="a2a89-131">说明</span><span class="sxs-lookup"><span data-stu-id="a2a89-131">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="2fffc-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="2fffc-132">Authorization</span></span>  | <span data-ttu-id="2fffc-133">string</span><span class="sxs-lookup"><span data-stu-id="2fffc-133">string</span></span>  | <span data-ttu-id="2fffc-134">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="2fffc-134">Bearer {token}.</span></span>|
-| <span data-ttu-id="2fffc-135">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2fffc-135">Content-Type</span></span> | <span data-ttu-id="2fffc-136">string</span><span class="sxs-lookup"><span data-stu-id="2fffc-136">string</span></span>  | <span data-ttu-id="2fffc-p102">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="2fffc-p102">Nature of the data in the body of an entity. Required. </span></span><br/> <span data-ttu-id="2fffc-139">用于 `application/json` JSON 对象和 `text/plain` MIME 内容</span><span class="sxs-lookup"><span data-stu-id="2fffc-139">Use `application/json` for a JSON object and `text/plain` for MIME content</span></span> |
+| <span data-ttu-id="a2a89-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="a2a89-132">Authorization</span></span>  | <span data-ttu-id="a2a89-133">string</span><span class="sxs-lookup"><span data-stu-id="a2a89-133">string</span></span>  | <span data-ttu-id="a2a89-134">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="a2a89-134">Bearer {token}.</span></span>|
+| <span data-ttu-id="a2a89-135">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a2a89-135">Content-Type</span></span> | <span data-ttu-id="a2a89-136">string</span><span class="sxs-lookup"><span data-stu-id="a2a89-136">string</span></span>  | <span data-ttu-id="a2a89-p102">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="a2a89-p102">Nature of the data in the body of an entity. Required. </span></span><br/> <span data-ttu-id="a2a89-139">用于 `application/json` JSON 对象和 `text/plain` MIME 内容</span><span class="sxs-lookup"><span data-stu-id="a2a89-139">Use `application/json` for a JSON object and `text/plain` for MIME content</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2fffc-140">请求正文</span><span class="sxs-lookup"><span data-stu-id="2fffc-140">Request body</span></span>
-<span data-ttu-id="2fffc-141">使用 JSON 格式时，提供 message 对象的 JSON [表示](../resources/message.md) 形式。</span><span class="sxs-lookup"><span data-stu-id="2fffc-141">When using JSON format, provide a JSON representation of the [message](../resources/message.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a2a89-140">请求正文</span><span class="sxs-lookup"><span data-stu-id="a2a89-140">Request body</span></span>
+<span data-ttu-id="a2a89-141">使用 JSON 格式时，提供 message 对象的 JSON [表示](../resources/message.md) 形式。</span><span class="sxs-lookup"><span data-stu-id="a2a89-141">When using JSON format, provide a JSON representation of the [message](../resources/message.md) object.</span></span>
 
-<span data-ttu-id="2fffc-142">指定 MIME 格式的正文时，向 MIME 内容提供适用的 Internet 邮件头 ("收件人"、"抄送"、"密件抄送"、"主题") ，请求正文中均以 **base64** 格式编码。</span><span class="sxs-lookup"><span data-stu-id="2fffc-142">When specifying the body in MIME format, provide the MIME content with the applicable Internet message headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.</span></span>
+<span data-ttu-id="a2a89-142">当指定 MIME 格式的正文时，请提供 MIME 内容与适用的 Internet 邮件头（“收件人”、“抄送”、“密件抄送”、“主题”）所有内容在请求正文中编码为 **base64** 格式。</span><span class="sxs-lookup"><span data-stu-id="a2a89-142">When specifying the body in MIME format, provide the MIME content with the applicable Internet message headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.</span></span>
 
-<span data-ttu-id="2fffc-143">若要使用 **提及** 功能在新邮件中呼叫其他用户，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="2fffc-143">To use **mention** to call out another user in the new message:</span></span>
-- <span data-ttu-id="2fffc-144">在请求 **正文中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。</span><span class="sxs-lookup"><span data-stu-id="2fffc-144">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
-- <span data-ttu-id="2fffc-145">对于 **mentions** 属性中的每个提及，必须指定 **提及的** 属性。</span><span class="sxs-lookup"><span data-stu-id="2fffc-145">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
+<span data-ttu-id="a2a89-143">若要使用 **提及** 功能在新邮件中呼叫其他用户，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="a2a89-143">To use **mention** to call out another user in the new message:</span></span>
+- <span data-ttu-id="a2a89-144">在请求 **正文中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。</span><span class="sxs-lookup"><span data-stu-id="a2a89-144">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
+- <span data-ttu-id="a2a89-145">对于 **mentions** 属性中的每个提及，必须指定 **提及的** 属性。</span><span class="sxs-lookup"><span data-stu-id="a2a89-145">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
 
-<span data-ttu-id="2fffc-146">由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。</span><span class="sxs-lookup"><span data-stu-id="2fffc-146">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
+<span data-ttu-id="a2a89-146">由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。</span><span class="sxs-lookup"><span data-stu-id="a2a89-146">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="2fffc-147">响应</span><span class="sxs-lookup"><span data-stu-id="2fffc-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a2a89-147">响应</span><span class="sxs-lookup"><span data-stu-id="a2a89-147">Response</span></span>
 
-<span data-ttu-id="2fffc-148">如果成功，此方法在响应 `201 Created` 正文中返回 [响应](../resources/message.md) 代码和 message 对象。</span><span class="sxs-lookup"><span data-stu-id="2fffc-148">If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="a2a89-148">如果成功，此方法在响应 `201 Created` 正文中返回 [响应](../resources/message.md) 代码和 message 对象。</span><span class="sxs-lookup"><span data-stu-id="a2a89-148">If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.</span></span>
 
-<span data-ttu-id="2fffc-149">如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息："MIME 内容的 `400 Bad request` base64 字符串无效"。</span><span class="sxs-lookup"><span data-stu-id="2fffc-149">If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".</span></span>
+<span data-ttu-id="a2a89-149">如果请求正文包含错误的 MIME 内容，此方法将返回 `400 Bad request` 和以下错误消息：“无效的 base64 字符串 MIME 内容”。</span><span class="sxs-lookup"><span data-stu-id="a2a89-149">If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2fffc-150">示例</span><span class="sxs-lookup"><span data-stu-id="2fffc-150">Examples</span></span>
-### <a name="example-1-create-a-message-draft-in-json-format"></a><span data-ttu-id="2fffc-151">示例 1：创建 JSON 格式的邮件草稿</span><span class="sxs-lookup"><span data-stu-id="2fffc-151">Example 1: Create a message draft in JSON format</span></span>
-#### <a name="request"></a><span data-ttu-id="2fffc-152">请求</span><span class="sxs-lookup"><span data-stu-id="2fffc-152">Request</span></span>
-<span data-ttu-id="2fffc-153">下面是一个请求创建新邮件草稿的示例。</span><span class="sxs-lookup"><span data-stu-id="2fffc-153">Here is an example of the request to create a draft of a new message.</span></span>
+## <a name="examples"></a><span data-ttu-id="a2a89-150">示例</span><span class="sxs-lookup"><span data-stu-id="a2a89-150">Examples</span></span>
+### <a name="example-1-create-a-message-draft-in-json-format"></a><span data-ttu-id="a2a89-151">示例 1：创建 JSON 格式的邮件草稿</span><span class="sxs-lookup"><span data-stu-id="a2a89-151">Example 1: Create a message draft in JSON format</span></span>
+#### <a name="request"></a><span data-ttu-id="a2a89-152">请求</span><span class="sxs-lookup"><span data-stu-id="a2a89-152">Request</span></span>
+<span data-ttu-id="a2a89-153">下面是一个请求创建新邮件草稿的示例。</span><span class="sxs-lookup"><span data-stu-id="a2a89-153">Here is an example of the request to create a draft of a new message.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2fffc-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="2fffc-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a2a89-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="a2a89-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -106,27 +106,27 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2fffc-155">C#</span><span class="sxs-lookup"><span data-stu-id="2fffc-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a2a89-155">C#</span><span class="sxs-lookup"><span data-stu-id="a2a89-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2fffc-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2fffc-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a2a89-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a2a89-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2fffc-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2fffc-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a2a89-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a2a89-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2fffc-158">Java</span><span class="sxs-lookup"><span data-stu-id="2fffc-158">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a2a89-158">Java</span><span class="sxs-lookup"><span data-stu-id="a2a89-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="2fffc-159">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2fffc-159">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-#### <a name="response"></a><span data-ttu-id="2fffc-160">响应</span><span class="sxs-lookup"><span data-stu-id="2fffc-160">Response</span></span>
-<span data-ttu-id="2fffc-p103">这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="2fffc-p103">Here is an example of the response. Note: The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="a2a89-159">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a2a89-159">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+#### <a name="response"></a><span data-ttu-id="a2a89-160">响应</span><span class="sxs-lookup"><span data-stu-id="a2a89-160">Response</span></span>
+<span data-ttu-id="a2a89-p103">这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a2a89-p103">Here is an example of the response. Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -195,13 +195,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-draft-message-that-includes-an--mention"></a><span data-ttu-id="2fffc-163">示例 2：创建包含 @-mention 的草稿邮件</span><span class="sxs-lookup"><span data-stu-id="2fffc-163">Example 2: Create a draft message that includes an @-mention</span></span>
-#### <a name="request"></a><span data-ttu-id="2fffc-164">请求</span><span class="sxs-lookup"><span data-stu-id="2fffc-164">Request</span></span>
-<span data-ttu-id="2fffc-165">下一个示例显示 Randi Welch 发往 Samantha 一份草稿电子邮件。</span><span class="sxs-lookup"><span data-stu-id="2fffc-165">The next example shows a draft email by Randi Welch to Samantha Booth.</span></span> <span data-ttu-id="2fffc-166">邮件还包括另一个用户 Dana Swope 的提及。</span><span class="sxs-lookup"><span data-stu-id="2fffc-166">The message also includes a mention of another user, Dana Swope.</span></span>
+### <a name="example-2-create-a-draft-message-that-includes-an--mention"></a><span data-ttu-id="a2a89-163">示例 2：创建包含 @-mention 的草稿邮件</span><span class="sxs-lookup"><span data-stu-id="a2a89-163">Example 2: Create a draft message that includes an @-mention</span></span>
+#### <a name="request"></a><span data-ttu-id="a2a89-164">请求</span><span class="sxs-lookup"><span data-stu-id="a2a89-164">Request</span></span>
+<span data-ttu-id="a2a89-165">下一个示例显示 Randi Welch 发往 Samantha 一份草稿电子邮件。</span><span class="sxs-lookup"><span data-stu-id="a2a89-165">The next example shows a draft email by Randi Welch to Samantha Booth.</span></span> <span data-ttu-id="a2a89-166">邮件还包括另一个用户 Dana Swope 的提及。</span><span class="sxs-lookup"><span data-stu-id="a2a89-166">The message also includes a mention of another user, Dana Swope.</span></span>
 
-<span data-ttu-id="2fffc-167">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2fffc-167">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+<span data-ttu-id="a2a89-167">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a2a89-167">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2fffc-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="2fffc-168">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a2a89-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="a2a89-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_with_mentions_from_user"
@@ -230,19 +230,19 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2fffc-169">C#</span><span class="sxs-lookup"><span data-stu-id="2fffc-169">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a2a89-169">C#</span><span class="sxs-lookup"><span data-stu-id="a2a89-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-with-mentions-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2fffc-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2fffc-170">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a2a89-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a2a89-170">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-with-mentions-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2fffc-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2fffc-171">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a2a89-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a2a89-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-with-mentions-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2fffc-172">Java</span><span class="sxs-lookup"><span data-stu-id="2fffc-172">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a2a89-172">Java</span><span class="sxs-lookup"><span data-stu-id="a2a89-172">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-with-mentions-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -250,8 +250,8 @@ Content-type: application/json
 
 
 
-#### <a name="response"></a><span data-ttu-id="2fffc-173">响应</span><span class="sxs-lookup"><span data-stu-id="2fffc-173">Response</span></span>
-<span data-ttu-id="2fffc-p105">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2fffc-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="a2a89-173">响应</span><span class="sxs-lookup"><span data-stu-id="a2a89-173">Response</span></span>
+<span data-ttu-id="a2a89-p105">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a2a89-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -310,11 +310,11 @@ Content-type: application/json
 
 ```
 
-### <a name="example-3-create-a-draft-message-that-includes-custom-internet-message-headers"></a><span data-ttu-id="2fffc-177">示例 3：创建包含自定义 Internet 邮件头的草稿邮件</span><span class="sxs-lookup"><span data-stu-id="2fffc-177">Example 3: Create a draft message that includes custom Internet message headers</span></span>
-#### <a name="request"></a><span data-ttu-id="2fffc-178">请求</span><span class="sxs-lookup"><span data-stu-id="2fffc-178">Request</span></span>
+### <a name="example-3-create-a-draft-message-that-includes-custom-internet-message-headers"></a><span data-ttu-id="a2a89-177">示例 3：创建包含自定义 Internet 邮件头的草稿邮件</span><span class="sxs-lookup"><span data-stu-id="a2a89-177">Example 3: Create a draft message that includes custom Internet message headers</span></span>
+#### <a name="request"></a><span data-ttu-id="a2a89-178">请求</span><span class="sxs-lookup"><span data-stu-id="a2a89-178">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2fffc-179">HTTP</span><span class="sxs-lookup"><span data-stu-id="2fffc-179">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a2a89-179">HTTP</span><span class="sxs-lookup"><span data-stu-id="a2a89-179">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -348,27 +348,27 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2fffc-180">C#</span><span class="sxs-lookup"><span data-stu-id="2fffc-180">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a2a89-180">C#</span><span class="sxs-lookup"><span data-stu-id="a2a89-180">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-with-headers-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2fffc-181">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2fffc-181">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a2a89-181">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a2a89-181">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-with-headers-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2fffc-182">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2fffc-182">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a2a89-182">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a2a89-182">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-with-headers-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2fffc-183">Java</span><span class="sxs-lookup"><span data-stu-id="2fffc-183">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a2a89-183">Java</span><span class="sxs-lookup"><span data-stu-id="a2a89-183">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-with-headers-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="2fffc-184">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2fffc-184">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-#### <a name="response"></a><span data-ttu-id="2fffc-185">响应</span><span class="sxs-lookup"><span data-stu-id="2fffc-185">Response</span></span>
-<span data-ttu-id="2fffc-186">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2fffc-186">Here is an example of the response.</span></span> <span data-ttu-id="2fffc-187">注意：默认情况下，POST 响应中不会返回 Internet 邮件标头。</span><span class="sxs-lookup"><span data-stu-id="2fffc-187">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="2fffc-188">为简洁起见，也可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="2fffc-188">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="2fffc-189">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2fffc-189">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="a2a89-184">在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a2a89-184">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+#### <a name="response"></a><span data-ttu-id="a2a89-185">响应</span><span class="sxs-lookup"><span data-stu-id="a2a89-185">Response</span></span>
+<span data-ttu-id="a2a89-186">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a2a89-186">Here is an example of the response.</span></span> <span data-ttu-id="a2a89-187">注意：默认情况下，POST 响应中不会返回 Internet 邮件标头。</span><span class="sxs-lookup"><span data-stu-id="a2a89-187">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="a2a89-188">为简洁起见，也可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a2a89-188">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="a2a89-189">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a2a89-189">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -436,11 +436,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-a-message-draft-in-mime-format"></a><span data-ttu-id="2fffc-190">示例 4：创建 MIME 格式的邮件草稿</span><span class="sxs-lookup"><span data-stu-id="2fffc-190">Example 4: Create a message draft in MIME format</span></span>
-#### <a name="request"></a><span data-ttu-id="2fffc-191">请求</span><span class="sxs-lookup"><span data-stu-id="2fffc-191">Request</span></span>
+### <a name="example-4-create-a-message-draft-in-mime-format"></a><span data-ttu-id="a2a89-190">示例 4：创建 MIME 格式的邮件草稿</span><span class="sxs-lookup"><span data-stu-id="a2a89-190">Example 4: Create a message draft in MIME format</span></span>
+#### <a name="request"></a><span data-ttu-id="a2a89-191">请求</span><span class="sxs-lookup"><span data-stu-id="a2a89-191">Request</span></span>
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_create_draft_mime_beta"
 }-->
 
@@ -458,8 +458,9 @@ cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRv
 ```
 
-#### <a name="response"></a><span data-ttu-id="2fffc-192">响应</span><span class="sxs-lookup"><span data-stu-id="2fffc-192">Response</span></span>
-<span data-ttu-id="2fffc-193">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2fffc-193">Here is an example of the response.</span></span>
+
+#### <a name="response"></a><span data-ttu-id="a2a89-192">响应</span><span class="sxs-lookup"><span data-stu-id="a2a89-192">Response</span></span>
+<span data-ttu-id="a2a89-193">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a2a89-193">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -528,7 +529,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="2fffc-194">如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息。</span><span class="sxs-lookup"><span data-stu-id="2fffc-194">If the request body includes malformed MIME content, this method returns the following error message.</span></span>
+<span data-ttu-id="a2a89-194">如果请求正文包含错误的 MIME 内容，此方法返回以下错误消息。</span><span class="sxs-lookup"><span data-stu-id="a2a89-194">If the request body includes malformed MIME content, this method returns the following error message.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -544,11 +545,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="2fffc-195">另请参阅</span><span class="sxs-lookup"><span data-stu-id="2fffc-195">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a2a89-195">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a2a89-195">See also</span></span>
 
-- [<span data-ttu-id="2fffc-196">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="2fffc-196">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="2fffc-197">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="2fffc-197">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="2fffc-198">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="2fffc-198">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="a2a89-196">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="a2a89-196">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="a2a89-197">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="a2a89-197">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="a2a89-198">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="a2a89-198">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
