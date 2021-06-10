@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 29f7b96946f948d9327d6ec891b958321ac85487
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 3ba7d5be91c2fdc98efdd23c95a596370ae19dc2
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645372"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870407"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -26,10 +26,10 @@ ms.locfileid: "52645372"
 - 您可以 [稍后](../api/message-update.md) 更新草稿以将回复内容添加到 **正文或更改** 其他邮件属性。
 
 使用 MIME 格式时：
-- 在请求正文中提供适用的 [Internet](https://tools.ietf.org/html/rfc2076) 邮件头和 [MIME](https://tools.ietf.org/html/rfc2045)内容，这些内容均以 **base64** 格式进行编码。
-- 将任何附件和 S/MIME 属性添加到 MIME 内容。
+- 提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。
+- 向 MIME 内容添加任何附件和 S/MIME 属性。
 
-[在](../api/message-send.md) 后续操作中发送草稿邮件。
+在后续操作中[发送](../api/message-send.md)草稿消息。
 
 或者， [在单个操作中](../api/message-reply.md) 回复邮件。
 
@@ -54,10 +54,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | 名称       | 类型 | 说明| 
 |:---------------|:--------|:----------
 | Authorization  | string  | Bearer {token}。必需。|
-| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容。|
+| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 对 JSON 对象使用 `application/json`，对 MIME 内容使用 `text/plain`。|
 
 ## <a name="request-body"></a>请求正文
-使用 JSON 格式时，请提供具有以下参数的 JSON 对象。
+使用 JSON 格式时，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -69,7 +69,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
-如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息："MIME 内容的 `400 Bad request` base64 字符串无效"。
+如果请求正文包含错误的 MIME 内容，此方法将返回 `400 Bad request` 和以下错误消息：“无效的 base64 字符串 MIME 内容”。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-create-a-draft-in-json-format-to-reply-to-an-existing-message"></a>示例 1：创建 JSON 格式的草稿以答复现有邮件
@@ -172,8 +172,9 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-draft-message-in-mime-format-to-reply-to-an-existing-message"></a>示例 2：创建 MIME 格式的草稿邮件以答复现有邮件
 ##### <a name="request"></a>请求
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createReply_mime_v1"
 }-->
 
@@ -259,7 +260,7 @@ Content-Type: application/json
 
 ```
 
-如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息。
+如果请求正文包含错误的 MIME 内容，此方法返回以下错误消息。
 
 <!-- { "blockType": "ignored" } -->
 

@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bcdad066124d06d93e2c1149d97dc99c8a36aa2e
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: ea606755d08c751207143408a895aad25ba32a6b
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523448"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854234"
 ---
 # <a name="get-member-of-channel"></a>获取频道的成员
 
@@ -102,15 +102,16 @@ Content-type: application/json
 Content-length: 201
 
 {
-"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
-"@odata.type": "#microsoft.graph.aadUserConversationMember",
-"id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
-"roles": ["owner"],
-"displayName": "John Doe",
-"userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-"email": null
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+   "@odata.type":"#microsoft.graph.aadUserConversationMember",
+   "id":"ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+   "roles":[
+      "owner"
+   ],
+   "displayName":"John Doe",
+   "userId":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+   "email":null
 }
-
 ```
 
 ## <a name="see-also"></a>另请参阅

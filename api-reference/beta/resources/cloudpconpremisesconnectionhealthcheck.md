@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: adc215b32635476320913b2d14aac33ec6ccfc95
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: c322d0af4e255d9438c651d81328c887da1b19a5
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241147"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870638"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>cloudPcOnPremisesConnectionHealthCheck 资源类型
 
@@ -32,13 +32,13 @@ ms.locfileid: "52241147"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|此显示名称检查项目的详细信息。|
+|displayName|String|此显示名称检查项目的详细信息。|
 |状态|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|运行状况检查项目的状态。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
 |startDateTime|DateTimeOffset|运行状况检查项目的开始时间。 只读。|
 |endDateTime|DateTimeOffset|运行状况检查项目的结束时间。 只读。|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|此运行状况检查期间发生的错误类型。|
-|recommendedAction|字符串|修复相应错误的推荐操作。|
-|additionalDetails|字符串|有关运行状况检查或建议操作的其他详细信息。|
+|recommendedAction|String|修复相应错误的推荐操作。|
+|additionalDetails|String|有关运行状况检查或建议操作的其他详细信息。|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>cloudPcOnPremisesConnectionHealthCheckErrorType 值
 
@@ -52,11 +52,14 @@ ms.locfileid: "52241147"
 |adJoinCheckOrganizationalUnitIncorrectFormat|由于指定组织单位的格式不正确，活动域加入检查失败。 示例格式："OU=OU1，OU=OU2，OU=OU3，DC=DC1"。|
 |adJoinCheckAccessDenied|活动域加入检查失败，因为当委派了控制权的非管理员用户尝试将计算机对象加入域控制器时，访问被拒绝。 请为客户分配正确的权限，以将计算机对象加入域。 所需的权限：创建计算机对象、删除计算机对象。|
 |adJoinCheckUnknownError|由于未知错误，活动域加入检查失败。 请联系客户支持。|
-|endpointConnectivityCheckUrlNotWhitelisted|终结点连接检查失败，因为 URL 不在网络防火墙设置中的 allowlist 上。 请将 URL 添加到网络防火墙设置的允许列表。 有关 [URL 信息，请参阅](/azure/virtual-desktop/safe-url-list) 所需的 URL 列表。|
+|endpointConnectivityCheckCloudPcUrlNotAllowListed|终结点连接检查失败，因为 CPC 设置脚本存储 URL 不在网络防火墙设置中的允许列表中。 请将 URL 添加到允许的网络防火墙设置列表中。 可以在其他信息中找到 URL。|
+|endpointConnectivityCheckWVDUrlNotAllowListed|终结点连接检查失败，因为 WVD URL 不在网络防火墙设置中的允许列表中。 请将 URL 添加到允许的网络防火墙设置列表中。|
+|endpointConnectivityCheckIntuneUrlNotAllowListed|终结点连接检查失败，因为 Intune URL 不在网络防火墙设置中的允许列表上。 请将 URL 添加到允许的网络防火墙设置列表中。|
 |endpointConnectivityCheckUnknownError|由于未知错误，终结点连接检查失败。 请联系客户支持。|
 |aadConnectivityCheckUnknownError|由于Azure Active Directory未知，连接检查失败。 请联系客户支持。|
 |resourceAvailabilityCheckNoSubnetIP|资源可用性检查失败，因为子网中没有任何可用的 IP 地址。 请释放部分或更改为其他子网，然后重试。|
 |resourceAvailabilityCheckSubscriptionDisabled|由于已禁用 Azure 订阅，资源可用性检查失败。 请重新启用订阅。|
+|resourceAvailabilityCheckUnsupportedVNetRegion|所选 vNet 不在受支持的 Azure 区域。|
 |resourceAvailabilityCheckUnknownError|由于未知错误，资源可用性检查失败。 请联系客户支持。|
 |permissionCheckNoSubscriptionReaderRole|Cloud PC服务主体对指定的 Azure 订阅没有读者权限。 请与订阅所有者合作，在 azure 角色分配服务主体的 Azure 订阅Cloud PC读者。|
 |permissionCheckNoResourceGroupOwnerRole|Cloud PC服务主体对指定的资源组没有所有者权限。 Please work with the subscription owner to add owner 角色分配 on the resource group for the Cloud PC service principal.|

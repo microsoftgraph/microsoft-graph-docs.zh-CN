@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c5f074b99260154db0d5e9f725a2082c4980af91
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 42932d1d058fa7970d444376553a0ae683dc9e2e
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448560"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854255"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
@@ -18,8 +18,7 @@ ms.locfileid: "50448560"
 
 从 [directoryRole 中删除成员](../resources/directoryrole.md)。
 
-> [!Note]
-> 你可以使用此 API 同时使用 **directoryRole** 的对象 ID 和模板 ID。 内置角色的模板 ID 不可变，可在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
+你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
 
 ## <a name="permissions"></a>权限
 
@@ -37,7 +36,8 @@ ms.locfileid: "50448560"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -58,9 +58,9 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 
 ### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>示例 1：使用 role objectId 删除目录角色成员
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
-下面是一个请求示例。
+本示例中，将 替换为目录角色的 id 值和希望从目录角色中取消分配的用户或目录对象的 `f8e85ed8-f66f-4058-b170-3efae8b9c6e5`  `bb165b45-151c-4cf6-9911-cd7188912848` **id** 值。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -69,7 +69,7 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{user-id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3efae8b9c6e5/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-objectid-csharp-snippets.md)]
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{
 ---
 
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面是一个响应示例。 
 <!-- {
@@ -104,9 +104,9 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>示例 2：使用角色 templateId 删除目录角色成员
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
-下面是一个请求示例。
+下面是一个请求示例。 将 `9f06204d-73c1-4d4c-880a-6edb90606fd8` 替换为 roleTemplateId 的值和 `bb165b45-151c-4cf6-9911-cd7188912848` directory 对象的用户的 **id** 值。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -115,7 +115,7 @@ HTTP/1.1 204 No Content
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-templateId}/members/{user-id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-73c1-4d4c-880a-6edb90606fd8/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-templateid-csharp-snippets.md)]
@@ -136,7 +136,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-temp
 ---
 
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面是一个响应示例。 
 <!-- {

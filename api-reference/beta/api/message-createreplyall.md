@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9eac6d007e77d6e4e840299d8ac50530dd3172b3
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: cef801909486fae04f958311696dbdedca14ae03
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645575"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870764"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -26,15 +26,15 @@ ms.locfileid: "52645575"
 - 您可以 [稍后](../api/message-update.md) 更新草稿邮件。
 
 使用 MIME 格式时：
-- 在请求正文中提供适用的 [Internet](https://tools.ietf.org/html/rfc2076) 邮件头和 [MIME](https://tools.ietf.org/html/rfc2045)内容，这些内容均以 **base64** 格式进行编码。
-- 将任何附件和 S/MIME 属性添加到 MIME 内容。
+- 提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。
+- 向 MIME 内容添加任何附件和 S/MIME 属性。
 
-[在](../api/message-send.md) 后续操作中发送草稿邮件。
+在后续操作中[发送](../api/message-send.md)草稿消息。
 
 或者， [在单个操作中全部](../api/message-replyall.md) 答复邮件。
 
 ## <a name="permissions"></a>权限
-若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,10 +54,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | 名称       | 类型 | 说明| 
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容。 |
+| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 对 JSON 对象使用 `application/json`，对 MIME 内容使用 `text/plain`。 |
 
 ## <a name="request-body"></a>请求正文
-使用 JSON 格式时，请提供具有以下参数的 JSON 对象。
+使用 JSON 格式时，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -70,7 +70,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
-如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息："MIME 内容的 `400 Bad request` base64 字符串无效"。
+如果请求正文包含错误的 MIME 内容，此方法将返回 `400 Bad request` 和以下错误消息：“无效的 base64 字符串 MIME 内容”。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-create-a-draft-in-json-format-to-reply-all-to-an-existing-message"></a>示例 1：创建 JSON 格式的草稿以全部答复现有邮件
@@ -165,8 +165,9 @@ Content-type: application/json
 ```
 
 ### <a name="example-2-create-a-draft-using-mime-format-to-reply-all-to-an-existing-message"></a>示例 2：使用 MIME 格式创建草稿以全部答复现有邮件
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createreplyall_mime_beta"
 }-->
 
@@ -176,6 +177,7 @@ Content-Type: text/plain
 
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
 ```
+
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 
@@ -247,7 +249,7 @@ Content-type: application/json
 
 ```
 
-如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息。
+如果请求正文包含错误的 MIME 内容，此方法返回以下错误消息。
 
 <!-- { "blockType": "ignored" } -->
 

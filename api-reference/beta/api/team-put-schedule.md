@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 02196fab37f28a2ab8f669ff4427d7512a0f0348
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 9915162629098679263162bd7fc2f71bed43ff33
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786323"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870617"
 ---
 # <a name="create-or-replace-schedule"></a>创建或替换日程安排
 
@@ -99,6 +99,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### <a name="response"></a>响应
 
@@ -138,7 +139,7 @@ Content-length: 401
 
 <!-- {
   "blockType": "request",
-  "name": "team-put-schedule"
+  "name": "team-put-schedule-2"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule

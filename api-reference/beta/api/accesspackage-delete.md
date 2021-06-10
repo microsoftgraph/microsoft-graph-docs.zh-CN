@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a5a147cd09f044cafdc7738581bb9b52b6ddf66d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 710bbd3e015af5109b95905d6db68061de1506f5
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439847"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52868866"
 ---
 # <a name="delete-accesspackage"></a>删除 accessPackage
 
@@ -20,7 +20,10 @@ ms.locfileid: "50439847"
 
 删除 [accessPackage](../resources/accesspackage.md) 对象。
 
-## <a name="permissions"></a>Permissions
+如果访问包有任何 **accessPackageAssignment**，则不能删除该访问包。 若要删除访问包 [，请首先](accesspackageassignment-list.md) 查询是否有带筛选器的分配，以指示特定访问包，例如 `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` ：。 若要详细了解如何删除仍处于已传递状态的工作分配，请参阅删除 [工作分配](accesspackageassignmentrequest-post.md#example-4-remove-an-assignment)。
+
+
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +31,7 @@ ms.locfileid: "50439847"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +45,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackages/{id}
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0e03857b003033b0cf0edf87f38cfc830c3245d0
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 460e09371869fec98b24bd81dc5ab44cc8b199b8
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645617"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870386"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -18,7 +18,7 @@ ms.locfileid: "52645617"
 
 使用 JSON 或 MIME 格式发送请求正文中指定的邮件。
 
-使用 JSON 格式时，可以在同一 **sendMail** 操作调用中包含[文件附件](../resources/fileattachment.md)。
+使用 JSON 格式时，可以在同一 **sendMail** 操作调用中包含 [文件附件](../resources/fileattachment.md)。
 
 使用 MIME 格式时：
 - 提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。
@@ -288,7 +288,7 @@ HTTP/1.1 202 Accepted
 #### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_send_mime_beta"
 }-->
 
@@ -306,6 +306,7 @@ cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
 
 ```
+
 #### <a name="response"></a>响应
 下面是一个响应示例。
 

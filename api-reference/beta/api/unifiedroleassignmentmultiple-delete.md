@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 85d721888b3f64f77533e6c83c53c84c943ec824
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 14ae5e8c899378e76fb201856bea2929a0ba3168
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444852"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870057"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>删除 unifiedRoleAssignmentMultiple
 
@@ -18,20 +18,33 @@ ms.locfileid: "50444852"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。 这适用于支持多个主体和范围的 RBAC 应用程序。 Microsoft Intune 就是这样的应用程序。
+删除 RBAC 提供程序的 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。 
 
-## <a name="permissions"></a>Permissions
+这适用于支持多个主体和范围的 RBAC 应用程序。 目前支持以下 RBAC 提供程序：
+- 云电脑 
+- Intune (设备) 
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-| 权限类型 | 权限（从最低特权到最高特权） |
-|:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | DeviceManagementRBAC.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | DeviceManagementRBAC.ReadWrite.All |
+## <a name="permissions"></a>权限
+
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。 
+
+|支持的提供程序      | 委派（工作或学校帐户）  | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.ReadWrite.All | 不支持。 | CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.ReadWrite.All | 不支持。| DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
+若要删除云电脑提供商的 unifiedRoleAssignmentMultiple：
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/cloudPC/roleAssignments/{id}
+```
+
+若要删除 Intune 提供程序的 unifiedRoleAssignmentMultiple：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -53,6 +66,8 @@ DELETE /roleManagement/deviceManagement/roleAssignments/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
+
+### <a name="example-1-delete-a-unifiedroleassignmentmultiple-in-an-intune-provider"></a>示例 1：删除 Intune 提供程序中的 unifiedRoleAssignmentMultiple
 
 ### <a name="request"></a>请求
 
@@ -90,6 +105,51 @@ DELETE https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssi
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-delete-a-unifiedroleassignmentmultiple-in-a-cloud-pc-provider"></a>示例 2：删除云电脑提供商中的 unifiedRoleAssignmentMultiple
+
+### <a name="request"></a>请求
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delete_unifiedroleassignmentMultiple_cloudpc"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/id
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroleassignmentmultiple-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-unifiedroleassignmentmultiple-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-unifiedroleassignmentmultiple-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroleassignmentmultiple-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",

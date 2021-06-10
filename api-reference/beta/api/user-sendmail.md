@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5ee3bc0682f6611a06cb5e24e66b2c665a0be123
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: eb97568e946bf1b145391c7c875500b05a3b93a6
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645638"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52868887"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -23,15 +23,15 @@ ms.locfileid: "52645638"
 使用 JSON 格式时，可以[包括附件并使用](../resources/attachment.md)[提及](../resources/mention.md)功能在新邮件中呼叫其他用户。
 
 使用 MIME 格式时：
-- 在请求正文中提供适用的 [Internet](https://tools.ietf.org/html/rfc2076) 邮件头和 [MIME](https://tools.ietf.org/html/rfc2045)内容，这些内容均以 **base64** 格式进行编码。
-- 将任何附件和 S/MIME 属性添加到 MIME 内容。
+- 提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。
+- 向 MIME 内容添加任何附件和 S/MIME 属性。
 
-此方法将邮件保存在"已发送 **的项目"** 文件夹中。
+此方法将邮件保存在 **“已发送邮件”** 文件夹中。
 
-或者， [创建草稿邮件以](../api/user-post-messages.md) 稍后发送。
+或者，[创建草稿邮件](../api/user-post-messages.md)稍后发送。
 
 ## <a name="permissions"></a>权限
-若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -50,10 +50,10 @@ POST /users/{id | userPrincipalName}/sendMail
 | 名称       | 类型 | 说明| 
 |:---------------|:--------|:----------
 | Authorization  | string  | Bearer {token}。必需。|
-| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容。|
+| Content-Type | string  | 实体正文中的数据性质。必需。<br/> 对 JSON 对象使用 `application/json`，对 MIME 内容使用 `text/plain`。|
 
 ## <a name="request-body"></a>请求正文
-使用 JSON 格式时，请提供具有以下参数的 JSON 对象。
+使用 JSON 格式时，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -64,13 +64,13 @@ POST /users/{id | userPrincipalName}/sendMail
 - 在请求 **正文中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。
 - 对于 **mentions** 属性中的每个提及，必须指定 **提及的** 属性。
 
-指定 MIME 格式的正文时，在请求正文中将 MIME 内容作为 **base64** 编码的字符串提供。 不包括参数。
+当指定 MIME 格式的正文时，请在请求正文中提供 MIME 内容为 **base64 编码的字符串**。 不包括参数。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息："MIME 内容的 `400 Bad request` base64 字符串无效"。
+如果请求正文包含错误的 MIME 内容，此方法将返回 `400 Bad request` 和以下错误消息：“无效的 base64 字符串 MIME 内容”。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-send-a-new-email-using-json-format"></a>示例 1：使用 JSON 格式发送新电子邮件
@@ -349,7 +349,7 @@ HTTP/1.1 202 Accepted
 #### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_send_mime_beta"
 }-->
 
@@ -366,6 +366,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
 cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
 ```
+
 #### <a name="response"></a>响应
 下面是一个响应示例。
 
@@ -378,7 +379,7 @@ OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
 HTTP/1.1 202 Accepted
 ```
 
-如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息。
+如果请求正文包含错误的 MIME 内容，此方法返回以下错误消息。
 
 <!-- { "blockType": "ignored" } -->
 

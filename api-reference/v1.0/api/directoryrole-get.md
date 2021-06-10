@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b0917837174f0b4fa2bb7c7f0ea6f5879df1b2a1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c03985f37fe7ce58ccf1aec30a2b95f282d16820
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442031"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854248"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
@@ -18,8 +18,7 @@ ms.locfileid: "50442031"
 
 检索 [directoryRole 对象](../resources/directoryrole.md) 的属性。 角色必须在租户中激活，以成功响应。
 
-> [!Note]
-> 你可以使用此 API 同时使用 **directoryRole** 的对象 ID 和模板 ID。 内置角色的模板 ID 不可变，可在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
+你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,10 +32,11 @@ ms.locfileid: "50442031"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{id}
+GET /directoryRoles/{role-objectId}
+GET /directoryRoles/roleTemplateId={role-templateId}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+例如， **此方法不支持** 任何 [OData](/graph/query-parameters) 查询参数来帮助自定义响应 (，例如，本文不支持 `$filter`) 。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -51,8 +51,8 @@ GET /directoryRoles/{id}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryRole](../resources/directoryrole.md) 对象。
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-definition-of-a-directory-role-using-objectid"></a>示例 1：使用 objectId 获取目录角色的定义
-##### <a name="request"></a>请求
+### <a name="example-1-get-the-definition-of-a-directory-role-using-role-objectid"></a>示例 1：使用 role objectId 获取目录角色的定义
+#### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -103,8 +103,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-directory-role-using-templateid"></a>示例 2：使用 templateId 获取目录角色的定义
-##### <a name="request"></a>请求
+### <a name="example-2-get-the-definition-of-a-directory-role-using-role-templateid"></a>示例 2：使用角色 templateId 获取目录角色的定义
+#### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da
 ---
 
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {

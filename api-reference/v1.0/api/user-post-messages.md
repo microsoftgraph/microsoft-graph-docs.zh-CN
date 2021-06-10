@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9d10c07c433b3d8456c574519aa497fc163dde09
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 6419ec8bef225964b5797e84cce0f3ecf7609b30
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645631"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870393"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -33,7 +33,7 @@ ms.locfileid: "52645631"
 或者，通过一次操作[发送新邮件](../api/user-sendmail.md) ，或创建一个草稿以[转发](../api/message-createforward.md)、[答复](../api/message-createreply.md)和[答复所有](../api/message-createreplyall.md)现有邮件。
 
 ## <a name="permissions"></a>权限
-调用此 API 需要下列权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -304,8 +304,9 @@ Content-type: application/json
 ### <a name="example-3-create-a-new-message-draft-using-mime-format"></a>示例 3：使用 MIME 格式创建新邮件草稿
 #### <a name="request"></a>请求
 
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_create_draft_mime_v1"
 }-->
 
@@ -316,6 +317,7 @@ Content-type: text/plain
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
 
 ```
+
 
 #### <a name="response"></a>响应
 下面是一个响应示例。

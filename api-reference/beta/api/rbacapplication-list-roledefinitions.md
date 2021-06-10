@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49530ee33fe0d3c8c6f32429de38daa47166568e
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 04a34aec3c611e5cf178910b7a8513a048fb797e
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241133"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52869131"
 ---
 # <a name="list-unifiedroledefinitions"></a>列出 unifiedRoleDefinitions
 
@@ -18,22 +18,42 @@ ms.locfileid: "52241133"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取提供商的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。
+获取 RBAC [提供程序的 unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。
+
+目前支持以下 RBAC 提供程序：
+- 云电脑 
+- Intune (设备) 
+- Azure AD (目录)  
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。 
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|支持的提供程序      | 委派（工作或学校帐户）  | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.Read.All、CloudPC.ReadWrite.All | 不支持。 | CloudPC.Read.All、CloudPC.ReadWrite.All |
+| 设备管理 | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All | 不支持。 | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
+| 目录 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All | 不支持。| RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+
 
 ## <a name="http-request"></a>HTTP 请求
 
+列出云电脑提供商的角色定义：
 <!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/cloudPC/roleDefinitions
+```
 
+列出设备管理提供程序的角色定义：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/deviceManagement/roleDefinitions
+```
+
+列出目录提供程序的角色定义：
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/directory/roleDefinitions
 ```
@@ -55,9 +75,11 @@ GET /roleManagement/directory/roleDefinitions
 
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象集合。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-list-role-definitions-for-a-directory-provider"></a>示例 1：列出目录提供程序的角色定义
+
+#### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -65,32 +87,32 @@ GET /roleManagement/directory/roleDefinitions
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roledefinitions"
+  "name": "get_roledefinitions_directory"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -98,6 +120,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 <!-- {
   "blockType": "response",
+  "name": "get_roledefinitions_directory",
   "truncated": true,
   "@odata.type": "microsoft.graph.unifiedRoleDefinition",
   "isCollection": true
@@ -199,6 +222,130 @@ Content-type: application/json
     ]
 }
 ```
+
+### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a>示例 2：列出云电脑提供商的角色定义
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_cloudpc"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "name": "get_roledefinitions_cloudpc",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleDefinitions",
+    "value": [
+        {
+            "id": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+            "description": "Cloud PC Administrator has read and write access to all Cloud PC features located within the Cloud PC blade.",
+            "displayName": "Cloud PC Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+            "version": null,
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "Microsoft.CloudPC/CloudPCs/Read",
+                        "Microsoft.CloudPC/CloudPCs/Reprovision",
+                        "Microsoft.CloudPC/DeviceImages/Create",
+                        "Microsoft.CloudPC/DeviceImages/Delete",
+                        "Microsoft.CloudPC/DeviceImages/Read",
+                        "Microsoft.CloudPC/OnPremisesConnections/Create",
+                        "Microsoft.CloudPC/OnPremisesConnections/Delete",
+                        "Microsoft.CloudPC/OnPremisesConnections/Read",
+                        "Microsoft.CloudPC/OnPremisesConnections/Update",
+                        "Microsoft.CloudPC/OnPremisesConnections/RunHealthChecks",
+                        "Microsoft.CloudPC/OnPremisesConnections/UpdateAdDomainPassword",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Assign",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Create",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Delete",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Read",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Update",
+                        "Microsoft.CloudPC/RoleAssignments/Create",
+                        "Microsoft.CloudPC/RoleAssignments/Update",
+                        "Microsoft.CloudPC/RoleAssignments/Delete",
+                        "Microsoft.CloudPC/Roles/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+            "description": "Cloud PC Reader has read access to all Cloud PC features located within the Cloud PC blade.",
+            "displayName": "Cloud PC Reader",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+            "version": null,
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "Microsoft.CloudPC/CloudPCs/Read",
+                        "Microsoft.CloudPC/DeviceImages/Read",
+                        "Microsoft.CloudPC/OnPremisesConnections/Read",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Read",
+                        "Microsoft.CloudPC/Roles/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

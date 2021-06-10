@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2860e1c0d6293f13fa07df26e7b9493501ac8185
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 878c99489b2faf1c4c079958491b64366945a67c
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448553"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854241"
 ---
 # <a name="list-members-of-a-directory-role"></a>列出目录角色的成员
 
@@ -18,8 +18,7 @@ ms.locfileid: "50448553"
 
 检索分配给目录角色的主体列表。 
 
-> [!Note]
-> 你可以使用此 API 同时使用 **directoryRole** 的对象 ID 和模板 ID。 内置角色的模板 ID 不可变，可在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
+你可以将 **directoryRole** 的对象 ID 和模板 ID 用于此 API。 内置角色的模板 ID 是不可可变的，可以在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,7 +35,8 @@ ms.locfileid: "50448553"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{id}/members
+GET /directoryRoles/{role-objectId}/members
+GET /directoryRoles/roleTemplateId={role-templateId}/members
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -53,9 +53,9 @@ GET /directoryRoles/{id}/members
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-members-of-a-directory-role-using-objectid"></a>示例 1：使用 objectId 获取目录角色的成员
+### <a name="example-1-get-the-members-of-a-directory-role-using-role-objectid"></a>示例 1：使用 role objectId 获取目录角色的成员
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e495
 
 ---
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -100,19 +100,19 @@ Content-type: application/json
   "value": [
     {
       "businessPhones":["000-000-0000"],
-      "displayName":"First Last",
-      "givenName":"First",
+      "displayName":"Adele Vance",
+      "givenName":"Adele",
       "jobTitle":null,
-      "mail":"first@example.com",
+      "mail":"AdeleV@contoso.com",
       "officeLocation":null,
       "preferredLanguage":"en-US",
-      "surname":"Last",
-      "userPrincipalName":"first@example.com"
+      "surname":"Vance",
+      "userPrincipalName":"AdeleV@contoso.com"
     }
   ]
 }
 ```
-### <a name="example-2-get-the-members-of-a-directory-role-using-templateid"></a>示例 2：使用 templateId 获取目录角色的成员
+### <a name="example-2-get-the-members-of-a-directory-role-using-role-templateid"></a>示例 2：使用角色 templateId 获取目录角色的成员
 
 ##### <a name="request"></a>请求
 
@@ -159,14 +159,14 @@ Content-type: application/json
   "value": [
     {
       "businessPhones":["000-000-0000"],
-      "displayName":"First Last",
-      "givenName":"First",
+      "displayName":"Adele Vance",
+      "givenName":"Adele",
       "jobTitle":null,
-      "mail":"first@example.com",
+      "mail":"AdeleV@contoso.com",
       "officeLocation":null,
       "preferredLanguage":"en-US",
-      "surname":"Last",
-      "userPrincipalName":"first@example.com"
+      "surname":"Vance",
+      "userPrincipalName":"AdeleV@contoso.com"
     }
   ]
 }

@@ -5,16 +5,18 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 69d04f6ccd5e537c97854abcb1cf2a9c24820a87
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 83f570301afe4a20aab6f77375e7a575df016d56
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575705"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870484"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含相关的工作簿对象，如工作表、表、区域等。
 
@@ -32,11 +34,11 @@ ms.locfileid: "50575705"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|names|[workbookNamedItem](workbooknameditem.md) 集合 |表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
+|names|[workbookNamedItem](workbooknameditem.md) 集合 |代表工作簿范围内命名项目的集合， (范围和常量) 。 只读。|
 |表格|[workbookTable](workbooktable.md) 集合 |表示与工作簿关联的表的集合。只读。|
-|Worksheets|[workbookWorksheet](workbookworksheet.md) 集合 |表示与工作簿关联的工作表的集合。 只读。|
-|workbbookApplication|[workbookApplication](workbookapplication.md) |代表管理工作簿的 Excel workbookApplication。|
-|operations|[workbookOperation](workbookoperation.md) 集合|工作簿操作的状态。 不支持获取操作集合，但如果响应中返回 `Location` 标头，可以获取长时间运行操作的状态。 只读。 可为空。|
+|Worksheets|[workbookWorksheet](workbookworksheet.md) 集合 |表示与工作簿关联的工作表的集合。只读。|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |表示Excel工作簿的工作簿应用程序。|
+|operations|[workbookOperation](workbookoperation.md) 集合|工作簿操作的状态。 不支持获取操作集合，但如果响应中返回 `Location` 标头，可以获取长时间运行操作的状态。 只读。 可为 NULL。|
 
 ## <a name="functions"></a>函数
 
@@ -117,10 +119,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 
 {
-"values" :  [
-        { "address": "Sheet2!A1:A5" },
-        { "address": "Sheet2!B1:B5" },
-      ] 
+   "values":[
+      {
+         "address":"Sheet2!A1:A5"
+      },
+      {
+         "address":"Sheet2!B1:B5"
+      }
+   ]
 }
 ```
 
