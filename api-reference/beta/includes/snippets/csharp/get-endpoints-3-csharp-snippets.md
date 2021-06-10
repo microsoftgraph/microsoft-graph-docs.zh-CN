@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e1ee423c6474b8459494e12275a3a3c9e2c9d27c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ee78ac01de0a4fb772c67120e39d9adbf7d679af
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953178"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871505"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var dailyPrintUsageSummariesByPrinter = await graphClient.Print.Reports.DailyPrintUsageSummariesByPrinter
+var dailyPrintUsageByPrinter = await graphClient.Print.Reports.DailyPrintUsageByPrinter
     .Request()
     .GetAsync();
 

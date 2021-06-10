@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8f5157eec4042474be32e3f5d97f799769118d32
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3e734df7e0bd5e6deb41e4500975a592b3f27a3f
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470316"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871468"
 ---
 ```objc
 
@@ -18,6 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphEducationAssignmentDefaults *educationAssignmentDefaults = [[MSGraphEducationAssignmentDefaults alloc] init];
 [educationAssignmentDefaults setAddedStudentAction: [MSGraphEducationAddedStudentAction assignIfOpen]];
+[educationAssignmentDefaults setAddToCalendarAction: [MSGraphEducationAddToCalendarOptions studentsAndTeamOwners]];
 [educationAssignmentDefaults setNotificationChannelUrl:@"https://graph.microsoft.com/beta/teams('id')/channels('id')"];
 
 NSError *error;
