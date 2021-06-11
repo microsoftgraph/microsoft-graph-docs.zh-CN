@@ -1,16 +1,16 @@
 ---
 title: audioConferencing 资源类型
 description: 表示联机会议的电话访问信息。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 43332de03467b4a5cf9d9cc867718ceafd8c4e82
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 5f0c9338aefa592ed030585a6b0342d03e7717d0
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080146"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896695"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
 
@@ -27,9 +27,9 @@ ms.locfileid: "52080146"
 | dialinUrl                   | String            | 指向包含拨入信息且可从外部访问的网页的 URL。 |
 | conferenceId                | String            | 联机会议的会议 ID。                                       |
 | tollFreeNumber (弃用)  | String            | 连接到音频会议提供商的免费电话号码。           |
-| tollFreeNumbers             | String collection | 会议邀请中显示的免费电话号码列表。            |
+| tollFreeNumbers             | 字符串集合 | 会议邀请中显示的免费电话号码列表。            |
 | tollNumber (弃用)      | String            | 连接到音频会议提供商的收费号码。                |
-| tollNumbers                 | String collection | 会议邀请中显示的收费号码列表。                 |
+| tollNumbers                 | 字符串集合 | 会议邀请中显示的收费号码列表。                 |
 
 > [!CAUTION]
 >

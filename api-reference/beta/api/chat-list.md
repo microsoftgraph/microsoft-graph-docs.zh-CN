@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 86aeafca89c7ce491923961a87673b855f088fc5
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: b680759fe15219148dbc75aaf785f3ee22a46717
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696034"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896506"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -118,21 +118,24 @@ Content-type: application/json
             "topic": "Meeting chat sample",
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
-            "chatType": "meeting"
+            "chatType": "meeting",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
             "id": "19:561082c0f3f847a58069deb8eb300807@thread.v2",
             "topic": "Group chat sample",
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
-            "chatType": "group"
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
             "id": "19:d74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
             "topic": null,
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
-            "chatType": "oneOnOne"
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         }
     ]
 }
@@ -203,6 +206,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
                 {
@@ -237,6 +241,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A561082c0f3f847a58069deb8eb300807%40thread.v2')/members",
             "members": [
                 {
@@ -287,6 +292,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
                 {
@@ -376,6 +382,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
                 {
@@ -410,6 +417,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
                 {

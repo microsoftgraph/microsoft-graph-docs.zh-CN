@@ -1,16 +1,16 @@
 ---
 title: meetingParticipants 资源类型
 description: 会议参与者。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 93ca3d73518f9739cc3115c80efd2aec551629b5
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 8ee5cf115a80c642f5442230d7111dfaeffca930
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944161"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896618"
 ---
 # <a name="meetingparticipants-resource-type"></a>meetingParticipants 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 获取 onlineMeeting
 description: 检索 onlineMeeting 对象的属性和关系。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 189be333a66291073fcb7ed78d878d2a9d0ba61a
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: ba5a1a874431b2cd543ac35057c29127896e1f52
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665328"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896674"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 

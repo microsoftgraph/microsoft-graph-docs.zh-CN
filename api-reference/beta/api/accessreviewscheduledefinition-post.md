@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba1ce2b94cef8b37da03c655ccc2a687c2557cfd
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 5246033739817a76f7e4bb142a88e45bd1559f83
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780832"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896184"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -57,7 +57,7 @@ POST /identityGovernance/accessReviews/definitions
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (审阅用户自己的访问权限或) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
-
+| additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) 集合| 定义要接收访问评审进度通知的其他用户或组成员的列表。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
@@ -97,7 +97,7 @@ Content-type: application/json
       "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
       "queryType": "MicrosoftGraph"
     }
-  ],
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,
@@ -173,7 +173,7 @@ Content-type: application/json
       "queryType": "MicrosoftGraph",
       "queryRoot": "decisions"
     }
-  ],
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,

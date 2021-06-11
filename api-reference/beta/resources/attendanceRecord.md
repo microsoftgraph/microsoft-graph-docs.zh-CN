@@ -1,16 +1,16 @@
 ---
 title: attendanceRecord 资源类型
 description: 包含与与会者报告中的与会者记录关联的信息。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 025c878d8778604bab34dda15f6ab0fa2c541151
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 20beeca97c790b8743c9038e7fddf0b5c6f69534
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882646"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896499"
 ---
 # <a name="attendancerecord-resource-type"></a>attendanceRecord 资源类型
 

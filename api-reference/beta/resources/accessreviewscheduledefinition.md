@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 06556bfdbcad8c422e4e8e522163437c9c7fa9c6
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 249be37b4f1192b51e11f5a32bcaff80d768e545
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579905"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896261"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>accessReviewScheduleDefinition 资源类型
 
@@ -52,6 +52,7 @@ accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreview
 | backupReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者，但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。 支持 `$select`。 <br>**注意：** 此属性已被 **fallbackReviewers 取代**。 但是，指定 **backupReviewers** 或 **fallbackReviewers** 会自动向另一个属性填充相同的值。|
 | fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者，但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。 支持 `$select`。|
 | instances |[accessReviewInstance](../resources/accessreviewinstance.md) 集合|  此访问评审系列的访问评审实例集。 不重复的访问评审将只有一个实例;否则，每个重复周期都有一个实例。 |
+| additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) 集合| 定义要接收访问评审进度通知的其他用户或组成员的列表。 |
 
 ## <a name="relationships"></a>关系
 

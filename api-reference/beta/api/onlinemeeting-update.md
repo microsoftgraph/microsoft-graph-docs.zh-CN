@@ -1,16 +1,16 @@
 ---
 title: 更新 onlineMeeting
 description: 更新联机会议的属性。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0781be9d2dcc289fe99aeb92f31f3e55ea273730
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 64b979f6c9c2859b441526d26ff8029eed6c4491
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241063"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896667"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 

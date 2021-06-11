@@ -1,16 +1,16 @@
 ---
 title: onlineMeeting：createOrGet
 description: 使用自定义指定的外部 ID 创建联机会议。 如果外部 ID 已存在，此 API 将返回具有该外部 ID 的 onlineMeeting 对象。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3256e99798de12d4a79da37888551d562ed6027e
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 87d51c5796d220cf6ea2fb3fcba629e0fe0b0305
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869860"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896555"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting：createOrGet
 
@@ -48,7 +48,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
 > [!NOTE]
-> `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明                 |
@@ -207,7 +207,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-create-or-get-an-online-meeting-in-a-microsoft-teams-channel-with-an-external-id"></a>示例 2：使用外部 ID 在 Microsoft Teams 频道创建或获取联机会议
+### <a name="example-2-create-or-get-an-online-meeting-in-a-microsoft-teams-channel-with-an-external-id"></a>示例 2：在具有外部 ID 的 Microsoft Teams 频道创建或获取联机会议
 
 #### <a name="request"></a>请求
 

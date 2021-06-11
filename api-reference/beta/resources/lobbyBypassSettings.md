@@ -1,16 +1,16 @@
 ---
 title: lobbyBypassSettings 资源类型
 description: 指定哪些参与者可以绕过会议厅。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: fbf6aada6f4a748a615f660e4a3ec62322116bdc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c6d530765e1bc356486f0b8893c69c445c07181f
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962096"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896681"
 ---
 # <a name="lobbybypasssettings-resource-type"></a>lobbyBypassSettings 资源类型
 

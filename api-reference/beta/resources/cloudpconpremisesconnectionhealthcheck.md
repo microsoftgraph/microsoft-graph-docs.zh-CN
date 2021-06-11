@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: c322d0af4e255d9438c651d81328c887da1b19a5
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 29a01ee72c0dbfcb64572393681bb6920b65e434
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870638"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896520"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>cloudPcOnPremisesConnectionHealthCheck 资源类型
 
@@ -65,6 +65,7 @@ ms.locfileid: "52870638"
 |permissionCheckNoResourceGroupOwnerRole|Cloud PC服务主体对指定的资源组没有所有者权限。 Please work with the subscription owner to add owner 角色分配 on the resource group for the Cloud PC service principal.|
 |permissionCheckNoVNetContributorRole|Cloud PC服务主体对指定的虚拟网络没有网络参与者权限。 请与订阅所有者合作，为服务主体角色分配网络Cloud PC参与者。 |
 |permissionCheckUnknownError|由于未知错误，权限检查失败。 请联系客户支持。|
+|internalServerErrorUnableToRunDscScript|无法在运行状况检查期间运行 DSC 脚本。 该服务需要访问 WinRM 才能成功预配云电脑。 请确保没有任何组策略或相关配置阻止使用 PowerShell/DSC。|
 |internalServerUnknownError|由于内部服务器错误未知，运行状况检查失败。 请联系客户支持。|
 
 ## <a name="relationships"></a>关系

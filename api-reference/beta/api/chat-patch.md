@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: afab926568c7fab65395f2291c218002b31bcd5e
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: cd906d473977987fc3859aee05d9b88b321cac60
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872889"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896471"
 ---
 # <a name="update-chat"></a>更新聊天
 命名空间：microsoft.graph
@@ -45,18 +45,18 @@ PATCH /chats/{chat-id}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供聊天对象的 JSON [表示形式](../resources/chat.md) 。
+在请求正文中，提供 chat 对象的 JSON [表示](../resources/chat.md) 形式。
 
 下表显示了可用于此操作的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|topic|String|聊天的标题。 只能为 chatType 值为 .的 **聊天设置** `group` 此值。|
+|topic|String|聊天的标题。 只能为 chatType 值为 的 **聊天设置** 此值 `group` 。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK response` 代码和更新的聊天资源。
+如果成功，此方法在响应 `200 OK response` 正文中返回代码和更新的聊天资源。
 
 ## <a name="examples"></a>示例
 
@@ -114,7 +114,8 @@ Content-Type: application/json
     "topic": "Group chat title update",
     "createdDateTime": "2020-12-04T23:11:16.175Z",
     "lastUpdatedDateTime": "2020-12-04T23:12:19.943Z",
-    "chatType": "group"
+    "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A1c5b01696d2e4a179c292bc9cf04e63b@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 

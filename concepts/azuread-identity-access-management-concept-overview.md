@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 77114f38265e4a7ad494cc8fb743f6c55961774a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e15685f1cf561713b25dc70b87264edd36168067
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760125"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870757"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 
@@ -20,7 +20,7 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 
 ## <a name="why-use-the-azure-ad-apis"></a>为什么使用 Azure AD API？
 
-超过 1,500 万个组织使用 Azure AD，同时订阅 Microsoft 云服务，如 Microsoft 365、Microsoft Azure、企业移动性套件或 Microsoft 365。
+超过 1,500 万个组织在订阅 Microsoft 云服务（如 Microsoft 365、Microsoft Azure 和企业移动性套件）的同时使用 Azure AD。
 
 企业开发者使用 Microsoft Graph 集成 Azure AD 标识管理和其他服务，以实现管理工作流的自动化，例如员工入职和离职、个人资料维护、许可证部署等。
 

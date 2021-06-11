@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fa93e28abb0f4f65938093416276de043db27d7f
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: a596cf7bc5a33cb64f61778f501604ea350ccc5a
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061803"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896660"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -65,6 +65,7 @@ ms.locfileid: "52061803"
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  上次更改聊天的日期和时间或成员列表。 只读。|
 | chatType| [chatType](../resources/chat.md#chattype-values) | 指定聊天类型。 可能的值是： `group` 和 `oneOnOne` `meeting` 。|
+|  webUrl          |   string                  |  一个超链接，将转到聊天Microsoft Teams。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。     |
 
 ### <a name="chattype-values"></a>chatType 值 
 
@@ -100,7 +101,8 @@ ms.locfileid: "52061803"
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "String",
+  "webUrl": "string"
 }
 ```
 

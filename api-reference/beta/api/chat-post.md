@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c14e6e186c0bcd82c6a0b7c0a99db18ba61247c6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a1fc781b35a144057c2d6f3baae3c718b86a30e0
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872896"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896492"
 ---
 # <a name="create-chat"></a>创建聊天
 命名空间：microsoft.graph
@@ -45,19 +45,19 @@ POST /chats
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供聊天对象的 JSON [表示形式](../resources/chat.md) 。
+在请求正文中，提供 chat 对象的 JSON [表示](../resources/chat.md) 形式。
 
 下表列出了创建聊天对象所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |topic| (可选) 字符串|聊天的标题。 只有在聊天类型为时，才能提供聊天 `group` 标题。|
 |chatType|[chatType](../resources/chat.md#chattype-values)| 指定聊天类型。 可能的值是： `group` 和 `oneOnOne` 。 |
-|members|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 必须在此列表中指定将参与聊天的每个用户（包括发起创建请求的用户）。|
+|members|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 必须在此列表中指定将参与聊天的每一个用户（包括发起创建请求的用户）。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 201 创建的响应代码和新建的聊天资源。
+如果成功，此方法在响应正文中返回 201 Created 响应代码和新建的聊天资源。
 
 ## <a name="examples"></a>示例
 
@@ -129,7 +129,8 @@ Content-Type: application/json
     "topic": null,
     "createdDateTime": "2020-12-04T23:10:28.51Z",
     "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
-    "chatType": "oneOnOne"
+    "chatType": "oneOnOne",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 
@@ -207,7 +208,8 @@ Content-Type: application/json
     "topic": "Group chat title",
     "createdDateTime": "2020-12-04T23:11:16.175Z",
     "lastUpdatedDateTime": "2020-12-04T23:11:16.175Z",
-    "chatType": "group"
+    "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A1c5b01696d2e4a179c292bc9cf04e63b@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 

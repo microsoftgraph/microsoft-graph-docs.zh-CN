@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0d74b4624833ca8c6a9feecf824f6e4346ca952c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d891343bdc08b29db6a8680d84bb6f12e70b23ea
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437441"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896296"
 ---
 # <a name="list-connectedorganizations"></a>列出 connectedOrganizations
 
@@ -20,7 +20,7 @@ ms.locfileid: "50437441"
 
 检索 [connectedOrganization 对象](../resources/connectedorganization.md) 的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50437441"
 |:---|:---|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +41,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要仅检索具有特定组织连接显示名称，请添加 `$filter=displayName eq 'Name'` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要仅检索具有特定服务连接的显示名称，请添加 `$filter=displayName eq 'Name'` 。 同样，若要仅检索具有特定租户的标识源的已连接组织，请添加 `$filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq '72f988bf-86f1-41af-91ab-2d7cd011db47')` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -53,7 +53,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [connectedOrganization](../resources/connectedorganization.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [connectedOrganization](../resources/connectedorganization.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

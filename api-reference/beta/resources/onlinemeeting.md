@@ -1,16 +1,16 @@
 ---
 title: onlineMeeting 资源类型
 description: 包含有关会议的信息。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 7204f651865328b7cfb9a03a70f6e9d80b912788
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: eb06cbe770a7f461ed28fe267e2763aa0124d57e
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754481"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896709"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "52754481"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                             | 返回类型                       | 说明                                                                                                       |
 | :----------------------------------------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
@@ -32,7 +32,7 @@ ms.locfileid: "52754481"
 
 ## <a name="properties"></a>属性
 
-| 属性              | 类型                                          | Description                                                                                                                                                                                                                                                 |
+| 属性              | 类型                                          | 说明                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| 指定可在会议中成为演示者的人。 可能的值为 `everyone` `organization` `roleIsPresenter` 、、、 `organizer` 和 `unknownFutureValue` 。                                                                                                    |
 | allowAttendeeToEnableCamera | Boolean | 指示与会者是否可以打开其相机。 |
@@ -70,7 +70,7 @@ ms.locfileid: "52754481"
 
 ### <a name="onlinemeetingpresenters-values"></a>onlineMeetingPresenters 值
 
-| 值              | Description                                                   |
+| 值              | 说明                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | everyone           | 每个人都是演示者 (这是默认选项) 。             |
 | 组织       | 组织者组织中的每个人都是演示者。          |
@@ -83,7 +83,7 @@ ms.locfileid: "52754481"
 
 ### <a name="meetingchatmode-values"></a>meetingChatMode 值
 
-| 值              | Description                                                            |
+| 值              | 说明                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
 | 已启用            | 会议聊天已启用。                                               |
 | disabled           | 会议聊天被禁用。                                              |

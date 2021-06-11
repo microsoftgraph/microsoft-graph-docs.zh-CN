@@ -5,19 +5,19 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a0420289c1fc8191c30433d1d4c797b24e349405
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 49cd8ffdf9fa2cda030024b3d2ac687d0da4789f
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475314"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896604"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>获取 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性和关系，该对象代表 Azure AD 租户的 Microsoft Authenticator 身份验证方法策略。
+检索[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Azure AD 租户的 Microsoft Authenticator 身份验证方法策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/mic
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -101,7 +101,19 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
     "id": "129ae788-e788-129a-88e7-9a1288e79a12",
-    "state": "String"
+    "state": "String",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets", 
+    "includeTargets": [ 
+        { 
+            "targetType": "group", 
+            "id": "5c6226ca-d325-4972-9fa8-1861c91f74c0", 
+            "isRegistrationRequired": false, 
+            "authenticationMode": "any", 
+            "numberMatchingRequiredState": "default",
+            "displayLocationInformationRequiredState": "default",
+            "displayAppInformationRequiredState": "default"
+        } 
+    ] 
   }
 }
 ```

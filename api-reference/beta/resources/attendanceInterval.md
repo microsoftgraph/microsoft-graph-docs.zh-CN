@@ -1,16 +1,16 @@
 ---
 title: attendanceInterval 资源类型
 description: 包含与 attendanceRecord 中的出席间隔关联的信息。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d1746adc802534f72aa9d139c6a16d8da62dd9fd
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 13b4e20a5233b865dd5417eed4d159bce07c8717
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882656"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896513"
 ---
 # <a name="attendanceinterval-resource-type"></a>attendanceInterval 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 删除 onlineMeeting
 description: 删除联机会议。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe6d17b3da60904283066cbd893b5ed075389a5d
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 991e8f70e2505b230c7091695abe2c594a274fee
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869741"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896534"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -46,7 +46,7 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId
 ```
 
 > [!NOTE]
-> - `userId`是 Azure 用户管理门户中的[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 
 ## <a name="request-headers"></a>请求标头

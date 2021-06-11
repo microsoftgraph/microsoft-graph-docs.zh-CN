@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 2b44da1d94f23d3155b1eafa94c49310fc2a2569
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8831b252e587be1d5368b6a0d6e8f933a3a6174b
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787567"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896569"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -311,20 +311,12 @@ ms.locfileid: "52787567"
 |passwordlessCapable|
 |mfaCapable|
 
-### <a name="authenticatorappfeaturesettings-values"></a>authenticatorAppFeatureSettings 值 
-
-
-
-|成员|
-|:---|
-|requireNumberMatching|
-|unknownFutureValue|
 
 ### <a name="authmethodstype-values"></a>authMethodsType 值 
 
 |成员|
 |:---|
-|电子邮件|
+|email|
 |mobileSMS|
 |mobilePhone|
 |officePhone|
@@ -472,7 +464,7 @@ ms.locfileid: "52787567"
 
 |成员|
 |:---|
-|电子邮件|
+|email|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -578,7 +570,7 @@ ms.locfileid: "52787567"
 
 |成员|
 |:---|
-|电子邮件|
+|email|
 |mobileSMS|
 |mobileCall|
 |officePhone|
@@ -797,7 +789,7 @@ ms.locfileid: "52787567"
 |:--------------
 | 通话
 | 聊天
-| 电子邮件
+| email
 | 焦点
 | meeting
 
@@ -805,7 +797,7 @@ ms.locfileid: "52787567"
 
 |成员|
 |:---|
-|电子邮件|
+|email|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -1281,7 +1273,7 @@ ms.locfileid: "52787567"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
@@ -1839,7 +1831,7 @@ ms.locfileid: "52787567"
 | 成员  | 值 | 说明                          |
 | :------ | :---- | :----------------------------------- |
 | default | 0     | 内容是文件或非电子邮件类型。 |
-| 电子邮件   | 1     | 内容是电子邮件。                 |
+| email   | 1     | 内容是电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
 

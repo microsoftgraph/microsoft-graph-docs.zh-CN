@@ -1,23 +1,23 @@
 ---
 title: 允许应用程序代表用户访问联机会议
 description: 了解如何配置应用程序以代表用户访问联机会议。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: ff14ae4506cc19adf58ab61cde436a0252bd6f5c
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: fa3771c1325f0c2a5f10b425e2eca51e9d1534ac
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920395"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896702"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问联机会议
 
-在某些情况下，例如对于在服务器上运行的后台服务或守护程序应用，在没有登录用户的情况下运行，应用可以代表用户调用 Microsoft Graph 来采取措施。 例如，应用可能需要调用 Microsoft Graph，根据已发布的计划安排多个会议， (课程) 外部计划工具。 在这些情况下，应用程序代表的用户将被标识为会议组织者。
+在某些情况下，例如对于在服务器上运行的后台服务或守护程序应用，在没有登录用户的情况下运行，应用可以调用 Microsoft Graph 代表用户采取措施。 例如，应用可能需要致电 Microsoft Graph，根据发布的计划（如课程 (或外部计划) 安排多个会议。 在这些情况下，应用程序代表的用户将被标识为会议组织者。
 
 希望允许应用程序代表用户访问联机会议资源的管理员可以使用 **New-CsApplicationAccessPolicy** 和 **Grant-CsApplicationAccessPolicy** PowerShell cmdlet 配置访问控制。 本文介绍了配置应用程序访问策略的基本步骤。
 
-这些步骤特定于联机会议，不适用于其他 Microsoft Graph 资源。
+这些步骤特定于联机会议，不适用于其他 Microsoft Graph资源。
 
 ## <a name="configure-application-access-policy"></a>配置应用程序访问策略
 
@@ -28,7 +28,7 @@ ms.locfileid: "51920395"
     - 在 [Azure 应用注册门户](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)中标识应用的应用程序（客户端）ID。
     - 在 Azure 用户管理门户 (用户) 标识 [用户对象 ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
 
-2. 使用管理员帐户连接到 Skype for Business PowerShell。 有关详细信息，请参阅使用 PowerShell 管理[Skype for Business Online。](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
+2. 连接管理员Skype for Business PowerShell。 有关详细信息，请参阅[使用 PowerShell Skype for Business Online。](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
 
 3. 创建包含应用 ID 列表的应用程序访问策略。
 
@@ -48,7 +48,7 @@ ms.locfileid: "51920395"
 
 > [!NOTE]
 > - _Identity_ 指创建策略时的策略名称，但在授予策略时指用户 ID。
-> - 对应用程序访问策略的更改最多可能需要 30 分钟才能在 Microsoft Graph REST API 调用中生效。
+> - 对应用程序访问策略的更改最多可能需要 30 分钟，才能在 Microsoft Graph REST API 调用中生效。
 
 ## <a name="supported-permissions-and-additional-resources"></a>受支持的权限和其他资源
 
