@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 74c512d20ac141dede8957f2cc0a1ad878622888
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: fe6503f19eab554d69f5573fd161edd9723cf3c3
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696015"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896611"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -144,7 +144,8 @@ Content-type: application/json
     "topic": null,
     "createdDateTime": "2019-04-18T23:51:42.099Z",
     "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z",
-    "chatType": "oneOnOne"
+    "chatType": "oneOnOne",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34"
 }
 ```
 
@@ -199,6 +200,7 @@ Content-type: application/json
     "createdDateTime": "2021-04-06T19:49:52.431Z",
     "lastUpdatedDateTime": "2021-04-21T17:13:44.033Z",
     "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ab8577894a63548969c5c92bb9c80c5e1%40thread.v2')/members",
     "members": [
         {
