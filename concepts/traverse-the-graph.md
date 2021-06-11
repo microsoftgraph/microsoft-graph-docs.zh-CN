@@ -3,12 +3,12 @@ title: 通过导航 Microsoft Graph 访问数据和方法
 description: 除了使用 Microsoft Graph API 读取和写入数据，还可以使用大量的请求模式遍历 Microsoft Graph 中的资源。元数据文档还可帮助你了解 Microsoft Grap 中资源和关系的数据模型。
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 22f396f3ceb050f0802ac77e51e5445f5f4c871c
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 49d93659c17400aba84f1ed427648965856faef2
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288487"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896653"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>通过导航 Microsoft Graph 访问数据和方法
 
@@ -19,14 +19,15 @@ ms.locfileid: "48288487"
 在服务根处发布元数据文档 ($metadata)。可以通过以下 URL 查看 v1.0 和试用版的 Microsoft Graph API 服务文档。
 
 **Microsoft Graph API v1.0 元数据**
-```
-    https://graph.microsoft.com/v1.0/$metadata
+
+```msgraph-interactive
+https://graph.microsoft.com/v1.0/$metadata
 ```
 
 **Microsoft Graph API beta 元数据**
 
-```
-    https://graph.microsoft.com/beta/$metadata
+```msgraph-interactive
+https://graph.microsoft.com/beta/$metadata
 ```
 
 元数据允许你查看并了解 Microsoft Graph 数据模型，包括实体类型、复杂类型、组成在请求和响应数据包中表示的资源的枚举。 
@@ -37,23 +38,23 @@ ms.locfileid: "48288487"
 
 > [!NOTE]
 > - 在使用资源 ID 时，应保持与其从 Microsoft Graph API 返回时相同的大小写。
-> - 假设资源 ID、分配的值和其他 base-64 编码的值_区分大小写_。
-> - 假设路径 URL 资源名称、查询参数、操作、函数名称及其请求正文参数（包括任何 API 属性名称和值）均_不区分大小写_。
+> - 假设资源 ID、分配的值和其他 base-64 编码的值 _区分大小写_。
+> - 假设路径 URL 资源名称、查询参数、操作、函数名称及其请求正文参数（包括任何 API 属性名称和值）均 _不区分大小写_。
 
 ## <a name="view-a-collection-of-resources"></a>查看资源集合
 
-Microsoft Graph 允许用户使用 HTTP `GET` 查询来查看租户中的资源。 查询响应包括每个资源的属性。 实体资源均由其 ID 标识。 资源 ID 的格式可以是 GUID，并且通常根据资源类型而变化。
+Microsoft Graph 让用户使用 HTTP `GET` 查询查看租户中的资源。查询响应包括每个资源的属性。实体资源是由其 ID 识别的。资源 ID 的格式可以是 GUID，通常根据资源类型而变化。
 
-例如，可以获取在租户中定义的[用户](/graph/api/resources/user?view=graph-rest-1.0)资源集合：
+例如，可以获取在租户中定义的[用户](/graph/api/resources/user)资源集合：
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 如果成功，将会收到 200 OK 响应，其中包含有效负载中的 **user** 资源的集合。每个用户都由 **id** 属性标识，并附带其默认属性。为简单起见，下面所示的有效负载将被截断。
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -94,16 +95,16 @@ Content-type: application/json
 }
 ```
 
-Microsoft Graph 还允许用户通过浏览不同资源之间的关系来查看集合。例如，通过用户的 **mailFolders** 导航属性，可以查询用户邮箱中的 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) 资源的集合：
+Microsoft Graph 还允许用户通过浏览不同资源之间的关系来查看集合。例如，通过用户的 **mailFolders** 导航属性，可以查询用户邮箱中的 [mailFolder](/graph/api/resources/mailfolder) 资源的集合：
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-如果成功，将会收到 200 OK 响应，其中包含有效负载中的 [mailFolder](/graph/api/resources/user?view=graph-rest-1.0) 资源的集合。每个 **mailFolder** 都由 **id** 属性标识，并附带其属性。为简单起见，下面所示的有效负载将被截断。
+如果成功，将会收到 200 OK 响应，其中包含有效负载中的 [mailFolder](/graph/api/resources/user) 资源的集合。每个 **mailFolder** 都由 **id** 属性标识，并附带其属性。为简单起见，下面所示的有效负载将被截断。
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -143,18 +144,18 @@ Content-type: application/json
 
 ## <a name="view-a-specific-resource-from-a-collection-by-id"></a>按 ID 查看集合中的特定资源
 
-继续使用**用户**作为示例 - 要查看有关用户的信息，则使用 HTTP GET 请求根据用户 ID 获取特定用户。 对于**用户**实体，可以使用 **id** 或 **userPrincipalName** 属性作为标识符。
+继续以 **用户** 为例 - 若要查看用户的信息，请使用 HTTPS GET 请求，通过用户的 ID 来获取特定的用户。对于 **用户** 实体，则可以使用 **id** 或 **userPrincipalName** 属性作为标识。
 
 以下请求示例使用 **userPrincipalName** 值作为用户 ID。
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 如果成功，便会收到“200 正常”响应，其中包含有效负载中的用户资源表示，如下所示。
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 982
@@ -174,16 +175,16 @@ content-length: 982
 ```
 
 ## <a name="read-specific-properties-of-a-resource"></a>读取资源的特定属性
-若要仅检索用户的传记数据（如用户提供的_本人简介_描述和技能集），则可以在上一个请求中添加 [$select](query-parameters.md) 查询参数，如以下示例所示。
+若要仅检索用户的传记数据（如用户提供的 _本人简介_ 描述和技能集），则可以在上一个请求中添加 [$select](query-parameters.md) 查询参数，如以下示例所示。
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 成功的响应返回 200 OK 状态和有效负载，如下所示。
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 169
@@ -206,14 +207,14 @@ content-length: 169
 
 例如，要查询已登录用户的驱动器项目姓名，你可以提交以下 HTTPS GET 请求：
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 成功的响应返回 200 OK 状态代码，以及仅包含共享文件名称的有效负载，如以下示例所示。
 
-```no-highlight
+```
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/drive/root/children(name,type)",
   "value": [
@@ -236,14 +237,14 @@ Authorization : Bearer {access_token}
 ## <a name="traverse-from-one-resource-to-another-via-relationship"></a>通过关系从某个资源遍历到其他资源
 经理与向其报告的其他用户保持 **directReports** 关系。若要查询用户的直接下属列表，则你可以使用以下 HTTPS GET 请求，通过关系遍历，导航到预期目标。
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 成功响应返回“200 正常”状态和有效负载，如下所示。
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 152
@@ -262,7 +263,7 @@ content-length: 152
 同样地，可以根据关系导航至相关资源。例如，借助 user-messages 关系，可以从 Azure Active Directory (Azure AD) 用户遍历到 Outlook 邮件集。下面的示例显示如何在 REST API 调用中执行此操作：
 
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
 Authorization : Bearer {access_token}
 ```
@@ -271,7 +272,7 @@ Authorization : Bearer {access_token}
 成功响应返回“200 正常”状态和有效负载，如下所示。
 
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 odata-version: 4.0
@@ -307,9 +308,9 @@ content-length: 147
 通过转到元数据、查找 `EntityType`，并查看该 `EntityType` 的每个 `NavigationProperty`，可以查看给定资源上的所有关系。
 
 ## <a name="call-actions-and-functions"></a>调用操作和函数
-Microsoft Graph 还支持_操作_和_函数_以并不仅仅是创建、读取、更新和删除 (CRUD) 操作的方式来操作资源。 它们通常采用 HTTPS POST 请求的形式以便输入操作或函数参数。 例如，以下操作允许已登录用户 (`me`) 发送电子邮件。
+Microsoft Graph 还支持 _操作_ 和 _函数_，以操作资源的方式，而不是简单的创建、读取、更新和删除 (CRUD) 操作。它们通常以 HTTPS POST 请求的形式出现，以便为操作或函数接收参数。例如，以下操作让登录的用户 (`me`) 发送电子邮件。
 
-```no-highlight
+```
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer {access_token}
 content-type: application/json
