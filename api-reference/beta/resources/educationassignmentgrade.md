@@ -1,16 +1,16 @@
 ---
 title: educationAssignmentGrade 资源类型
-description: " 但是，所有类型的评分 (分数、通过/失败等) 是此类的子类"
+description: 表示 **提交上的 Grade** 对象。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 84baeb3a0e3efeee0e5f7e7f6f7d5f6d8f285f59
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 39b415fd459b832ac3a7bfb2d66daf32d584d634
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722452"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911338"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>educationAssignmentGrade 资源类型
 
@@ -18,7 +18,9 @@ ms.locfileid: "50722452"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表 **提交上的 Grade** 对象。 这是一个永远不会实例化抽象类型;但是，所有类型的评分 (点、通过/失败等) 是此资源类型的子类。 此对象还跟踪谁正在评分。 This is used in the **submission.grade** property.
+表示 **提交上的 Grade** 对象。 
+
+这是永远不会实例化抽象类型;但是，所有评分类型 (点、通过/失败等) 是此资源类型的子类。 此对象还跟踪进行评分的人。 this is used in the **submission.grade** property.
 
 
 ## <a name="properties"></a>属性

@@ -5,14 +5,14 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9ac7a6384d06784e6faa98f482a270e067021292
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7723f95da14bfd32cfb75eff64f193085ac3cff3
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786767"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911898"
 ---
-# <a name="create-educationrubric"></a>创建 educationRubric
+# <a name="attach-educationrubric-to-an-educationassignment"></a>将 educationRubric 附加到 educationAssignment
 
 命名空间：microsoft.graph
 
@@ -98,11 +98,16 @@ Content-type: application/json
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationRubric"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
+
+{
+}
 ```
 
 

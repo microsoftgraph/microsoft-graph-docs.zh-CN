@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 8831b252e587be1d5368b6a0d6e8f933a3a6174b
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: d2a4b3885d00da58144d73655ae8e705608bb139
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896569"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912031"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -817,6 +817,7 @@ ms.locfileid: "52896569"
 |list|
 |listItem|
 |drive|
+|unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType 值
 

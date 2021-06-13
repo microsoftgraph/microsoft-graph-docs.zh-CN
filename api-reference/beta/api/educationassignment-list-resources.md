@@ -1,24 +1,24 @@
 ---
-title: 列出 educationAssignmentResources
-description: 获取与此工作分配关联的所有资源。
+title: 列出作业资源
+description: 获取与工作分配关联的所有资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b788f254972832832336d5b7b69d8b6b8ec085cd
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 6999b9795315c913cf23514e8e806701cd1591e0
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061691"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911933"
 ---
-# <a name="list-educationassignmentresources"></a>列出 educationAssignmentResources
+# <a name="list-assignment-resources"></a>列出作业资源
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取与此工作分配关联的所有资源。
+获取与工作分配关联的所有资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,9 +27,7 @@ ms.locfileid: "52061691"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application* | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
-
-*应用程序权限当前仅适用于个人预览版客户。
+|应用程序 | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

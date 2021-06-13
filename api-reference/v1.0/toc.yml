@@ -447,7 +447,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1087,7 +1087,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -4048,6 +4048,18 @@ items:
                 href: api/educationclass-post-members.md
               - name: 删除成员
                 href: api/educationclass-delete-members.md
+              - name: 列出课程分配
+                href: api/educationclass-list-assignments.md
+              - name: 创建作业
+                href: api/educationclass-post-assignment.md
+              - name: 获取分配设置
+                href: api/educationassignmentsettings-get.md
+              - name: 获取工作分配默认值
+                href: api/educationassignmentdefaults-get.md
+              - name: 列出类别
+                href: api/educationclass-list-categories.md
+              - name: 创建类别
+                href: api/educationclass-post-category.md
           - name: 用户
             href: resources/educationuser.md
             items:
@@ -4059,12 +4071,128 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
+              - name: 获取目录用户
+                href: api/educationuser-get-user.md
               - name: 获取用户更改
                 href: api/educationuser-delta.md
               - name: 列出课程
                 href: api/educationuser-list-classes.md
+              - name: List rubrics
+                href: api/educationuser-list-rubrics.md
               - name: 列出课程
                 href: api/educationuser-list-taughtclasses.md
+              - name: 创建 rubric
+                href: api/educationuser-post-rubrics.md
+          - name: 作业
+            href: resources/educationassignment.md
+            items:
+              - name: 创建作业
+                href: api/educationclass-post-assignment.md
+              - name: 获取作业
+                href: api/educationassignment-get.md
+              - name: 更新作业
+                href: api/educationassignment-update.md
+              - name: 删除作业
+                href: api/educationassignment-delete.md
+              - name: 设置工作分配资源文件夹
+                href: api/educationassignment-setupresourcesfolder.md
+              - name: 发布作业
+                href: api/educationassignment-publish.md
+              - name: 列出作业资源
+                href: api/educationassignment-list-resources.md
+              - name: 创建作业资源
+                href: api/educationassignment-post-resource.md
+              - name: 获取作业资源
+                href: api/educationassignmentresource-get.md
+              - name: 从作业中删除资源
+                href: api/educationassignmentresource-delete.md
+              - name: 列出作业提交
+                href: api/educationassignment-list-submissions.md
+              - name: 获取工作分配附加的分项
+                href: api/educationassignment-get-rubric.md
+              - name: 列出类别
+                href: api/educationassignment-list-categories.md
+              - name: 添加类别
+                href: api/educationassignment-post-categories.md
+              - name: 删除类别
+                href: api/educationassignment-remove-category.md
+              - name: 将重度附加到工作分配
+                href: api/educationassignment-put-rubric.md
+              - name: 删除工作分配中的分项
+                href: api/educationassignment-delete-rubric.md
+          - name: 工作分配设置
+            href: resources/educationassignmentsettings.md
+            items:
+              - name: 获取分配设置
+                href: api/educationassignmentsettings-get.md
+              - name: 更新分配设置
+                href: api/educationassignmentsettings-update.md
+          - name: 工作分配默认值
+            href: resources/educationassignmentdefaults.md
+            items:
+              - name: 获取工作分配默认值
+                href: api/educationassignmentdefaults-get.md
+              - name: 更新工作分配默认值
+                href: api/educationassignmentdefaults-update.md
+          - name: 类别
+            href: resources/educationcategory.md
+            items:
+              - name: 创建类别
+                href: api/educationclass-post-category.md
+              - name: 获取类别
+                href: api/educationcategory-get.md
+              - name: 删除类别
+                href: api/educationcategory-delete.md
+          - name: Rubric
+            href: resources/educationrubric.md
+            items:
+              - name: 创建 rubric
+                href: api/educationuser-post-rubrics.md
+              - name: 获取 rubric
+                href: api/educationrubric-get.md
+              - name: 更新 rubric
+                href: api/educationrubric-update.md
+              - name: 删除 rubric
+                href: api/educationrubric-delete.md
+          - name: 提交
+            href: resources/educationsubmission.md
+            items:
+              - name: 列出提交资源
+                href: api/educationsubmission-list-resources.md
+              - name: 添加提交资源
+                href: api/educationsubmission-post-resources.md
+              - name: 获取提交资源
+                href: api/educationsubmissionresource-get.md
+              - name: 删除提交资源
+                href: api/educationsubmissionresource-delete.md
+              - name: 获取提交内容
+                href: api/educationsubmission-get.md
+              - name: 设置提交资源文件夹
+                href: api/educationsubmission-setupresourcesfolder.md
+              - name: 提交提交内容
+                href: api/educationsubmission-submit.md
+              - name: 不提交提交内容
+                href: api/educationsubmission-unsubmit.md
+              - name: 列出已提交的资源
+                href: api/educationsubmission-list-submittedresources.md
+              - name: 列出结果
+                href: api/educationsubmission-list-outcomes.md
+              - name: 获取已提交的资源
+                href: api/educationsubmittedsubmissionresource-get.md
+              - name: 返回提交
+                href: api/educationsubmission-return.md
+          - name: 结果
+            items:
+              - name: 结果
+                href: resources/educationoutcome.md
+              - name: 反馈结果类型
+                href: resources/educationfeedbackoutcome.md
+              - name: Points 结果类型
+                href: resources/educationpointsoutcome.md
+              - name: Rubric 结果类型
+                href: resources/educationrubricoutcome.md
+              - name: 更新结果
+                href: api/educationoutcome-update.md
       - name: 扩展
         items:
           - name: 开放扩展
@@ -4789,7 +4917,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 许可请求
                 href: resources/consentrequests-root.md
@@ -4902,7 +5030,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -5173,7 +5301,7 @@ items:
                 href: api/contact-delta.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -5519,7 +5647,7 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
-              - name: Permissions
+              - name: 权限
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限

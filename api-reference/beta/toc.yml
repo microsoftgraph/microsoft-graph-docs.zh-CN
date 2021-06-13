@@ -503,7 +503,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1262,9 +1262,9 @@ items:
                 href: api/event-delta.md
               - name: 提醒视图
                 href: api/user-reminderview.md
-          - name: Category
+          - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -9809,7 +9809,7 @@ items:
               - name: 列出类别
                 href: api/educationassignment-list-categories.md
               - name: 添加类别
-                href: api/educationassignment-add-categories.md
+                href: api/educationassignment-post-categories.md
               - name: 删除类别
                 href: api/educationassignment-remove-category.md
               - name: 将重度附加到工作分配
@@ -9830,7 +9830,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: 更新工作分配默认值
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: 类别
             href: resources/educationcategory.md
             items:
               - name: 创建类别
@@ -10765,7 +10765,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: 添加
                         href: api/emailauthenticationmethod-post.md
-                  - name: Password
+                  - name: 密码
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: 列表
@@ -11433,7 +11433,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -11937,7 +11937,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -12534,7 +12534,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -13105,7 +13105,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: Permissions
+              - name: 权限
                 items:
                   - name: 权限
                     href: resources/permission.md
@@ -13219,7 +13219,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -14011,7 +14011,7 @@ items:
                     href: api/attachment-delete.md
               - name: 类别
                 items:
-                  - name: Category
+                  - name: 类别
                     href: resources/outlookcategory.md
                   - name: 列出类别
                     href: api/outlookuser-list-mastercategories.md

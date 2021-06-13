@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 5543c4c14e492a8b35e0d656bab5a3065b6ac913
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 357a4b02bfb60f8960368be2951155b607333831
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546936"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911296"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -72,8 +72,8 @@ ms.locfileid: "52546936"
 | Teams **callRecord**    | 4230 分钟（不到 3 天）  |
 | Teams **chatMessage**    | 60 分钟（1 小时）  |
 | 组 **对话** | 4230 分钟（不到 3 天）    |
-| OneDrive **driveItem**    | 4230 分钟（不到 3 天）    |
-| SharePoint **列表**    | 4230 分钟（不到 3 天）    |
+| OneDrive **driveItem**    | 30 天 (42300 分钟)     |
+| SharePoint **列表**    | 30 天 (42300 分钟)     |
 | Outlook **邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
 | **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
 | **状态**        | 60 分钟（1 小时） |

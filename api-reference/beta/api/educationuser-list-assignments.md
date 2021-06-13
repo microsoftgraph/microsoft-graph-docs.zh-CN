@@ -1,24 +1,26 @@
 ---
-title: 列出作业
-description: 返回分配给用户的所有课程的工作分配列表。 此实用工具命名空间允许呼叫者在一次呼叫中查找学生的所有作业，而不必从每个班级请求作业。 工作分配列表包含从类命名空间内获取工作分配的详细信息所需的内容。 对分配执行的其他所有操作都应使用类命名空间。
+title: 列出用户的分配
+description: 返回分配给用户的所有课程的工作分配列表。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 682a03d4785184132c8a5aff3044f9ff9f2a4670
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 2d92a6f32a3b986f9fb0e3b24b6537897f23ca2c
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52118870"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911765"
 ---
-# <a name="list-assignments"></a>列出作业
+# <a name="list-assignments-of-a-user"></a>列出用户的分配
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回分配给用户的所有课程的工作分配列表。 此实用工具命名空间允许呼叫者在一次呼叫中查找学生的所有作业，而不必从每个班级请求作业。 工作分配列表包含从类命名空间内获取工作分配的详细信息所需的内容。 对分配执行的其他所有操作都应使用类命名空间。
+返回分配给用户的所有课程的工作分配列表。 
+
+此实用工具命名空间允许呼叫者在一次呼叫中查找学生的所有作业，而不必从每个班级请求作业。 工作分配列表包含从类命名空间内获取工作分配的详细信息所需的内容。 对分配执行的其他所有操作都应使用类命名空间。
 
 ## <a name="permissions"></a>权限
 
@@ -58,12 +60,14 @@ GET /education/users/{id}/assignments
 
 ##### <a name="request"></a>请求
 下面展示了示例请求。
+
 <!-- {
   "blockType": "ignored",
-  "name": "get_assignments"
+  "name": "get_me_assignments"
 }-->
+
 ```http 
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
+GET https://graph.microsoft.com/beta/education/me/assignments
 ```
 
 ##### <a name="response"></a>响应

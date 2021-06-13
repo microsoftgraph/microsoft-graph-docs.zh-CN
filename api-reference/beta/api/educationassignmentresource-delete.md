@@ -1,16 +1,16 @@
 ---
 title: 删除 educationAssignmentResource
-description: .
+description: 删除附加到工作分配的特定资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a7f7646474f9c26557a46b46d08cf40fe3241558
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7e853534998978f89e44cbd8f657a56250c599a0
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966467"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911903"
 ---
 # <a name="delete-educationassignmentresource"></a>删除 educationAssignmentResource
 
@@ -18,14 +18,14 @@ ms.locfileid: "48966467"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从工作分配中删除资源。 只有课堂中的教师才能删除资源。 向学生发布分配后，教师将无法删除标记为 "distributeToStudents" 的资源。
+删除附加到工作分配的特定资源。 只有班级中的教师可以删除资源。 向学生发布作业后，教师无法删除标记为"distributeToStudents"的资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -52,6 +52,7 @@ DELETE /education/classes/{id}/assignments/{id}/resources/{id}
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationassignmentresource"

@@ -1,18 +1,18 @@
 ---
-title: 列出 educationCategories
+title: 列出 assignmentCategories
 description: 检索类别对象的列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b4f821313796382b2bb7c9d5620dee96f463b227
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 3f7851e746cb87905768604610cd17d036cc963c
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061789"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911828"
 ---
-# <a name="list-educationcategories"></a>列出 educationCategories
+# <a name="list-assignmentcategories"></a>列出 assignmentCategories
 
 命名空间：microsoft.graph
 
@@ -28,9 +28,7 @@ ms.locfileid: "52061789"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
-| Application*                           | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
-
-*应用程序权限当前仅适用于个人预览版客户。
+| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -64,12 +62,13 @@ GET /education/classes/{id}/assignmentCategories
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_assignments"
+  "blockType": "request",
+  "sampleKeys": ["4797d052-ebf5-4018-a088-e11adc6b2cbb"],
+  "name": "get_class_categories"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories
+GET https://graph.microsoft.com/beta/education/classes/4797d052-ebf5-4018-a088-e11adc6b2cbb/assignmentCategories
 ```
 
 ##### <a name="response"></a>响应
@@ -79,7 +78,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": true
@@ -91,13 +90,17 @@ Content-type: application/json
 Content-length: 218
 
 {
-    "value": [{
-        "displayName": "Quizzes",
-        "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
-    }, {
-        "displayName": "Homework",
-        "id": "3943e9ea-c69b-4dc9-9674-5f24168cee35"
-    }]
+    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('4797d052-ebf5-4018-a088-e11adc6b2cbb')/assignmentCategories",
+    "value": [
+      {
+          "displayName": "Quizzes",
+          "id": "f997a279-6bcf-429e-b1d0-d2320c4b84ab"
+      },
+      {
+          "displayName": "Homework",
+          "id": "9b8f8f88-ddfc-4aad-9fe9-280513fffc74"
+      }
+    ]
 }
 ```
 

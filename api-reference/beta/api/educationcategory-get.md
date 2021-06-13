@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fed72875c029c2080af7f8e2133a2f2a6d94b3ba
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 3d7e64b947d1cd9ffbfa2ad666fbfb3a9c711ebd
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061782"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911877"
 ---
 # <a name="get-educationcategory"></a>获取 educationCategory
 
@@ -28,9 +28,7 @@ ms.locfileid: "52061782"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
-| Application*                           | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
-
-*应用程序权限当前仅适用于个人预览版客户。
+| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -62,12 +60,13 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 下面展示了示例请求。
 <!-- {
-  "blockType": "ignored",
-  "name": "get_assignments"
+  "blockType": "request",
+  "sampleKeys": ["dacbf757-888d-42ae-b701-5e57cec300ae"],
+  "name": "get_class_category"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories/{id}
+GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5e57cec300ae/assignmentCategories/7f64924d-4cdb-4e54-8c37-c0f3d46f0747
 ```
 
 ##### <a name="response"></a>响应
@@ -77,7 +76,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": false
@@ -89,8 +88,9 @@ Content-type: application/json
 Content-length: 85
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes/dacbf757-888d-42ae-b701-5e57cec300ae/assignmentCategories/$entity",
     "displayName": "Quizzes",
-    "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
+    "id": "7f64924d-4cdb-4e54-8c37-c0f3d46f0747"
 }
 ```
 

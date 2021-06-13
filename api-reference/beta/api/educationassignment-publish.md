@@ -1,16 +1,16 @@
 ---
 title: educationAssignment： publish
-description: 此操作将工作分配的状态从原始草稿状态更改为已发布状态。 只有课堂中的教师才能进行此呼叫。 当作业在草稿状态时，学生将看不到作业，也不会看到任何提交对象。 调用此 API 时，将创建提交对象，作业将显示在学生列表中。
+description: 此操作将工作分配的状态从原始草稿状态更改为已发布状态。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac840109209b2a8ec5081d55abc31e1fac92d965
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 3badfbf152188a0a999c41f1bcb2edffce3bf9f9
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785996"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911919"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment： publish
 
@@ -18,7 +18,9 @@ ms.locfileid: "52785996"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作将工作分配的状态从原始草稿状态更改为已发布状态。 只有课堂中的教师才能进行此呼叫。 当作业在草稿状态时，学生将看不到作业，也不会看到任何提交对象。 调用此 API 时，将创建提交对象，作业将显示在学生列表中。
+此操作将工作分配的状态从原始草稿状态更改为已发布状态。 
+
+只有课堂中的教师才能进行此呼叫。 当作业在草稿状态时，学生将看不到作业，也不会看到任何提交对象。 调用此 API 时，将创建提交对象，作业将显示在学生列表中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

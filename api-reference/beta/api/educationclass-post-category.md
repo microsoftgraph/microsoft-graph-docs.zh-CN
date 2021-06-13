@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ae7983dc59bdb0ce756c0eb26f29f51a2c962fa1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bf0fb3c2459fba0c309e37149e0f87013ff12449
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043834"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911772"
 ---
 # <a name="create-educationcategory"></a>创建 educationCategory
 
@@ -52,11 +52,12 @@ POST /education/classes/{id}/assignmentCategories
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
+  "sampleKeys": ["9a5e4047-c1dc-4243-9628-580d3c64b80c"],
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11019/assignmentCategories
+POST https://graph.microsoft.com/beta/education/classes/9a5e4047-c1dc-4243-9628-580d3c64b80c/assignmentCategories
 Content-type: application/json
 Content-length: 33
 
@@ -72,7 +73,7 @@ Content-length: 33
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory"
 } -->
@@ -82,6 +83,7 @@ Content-type: application/json
 Content-length: 85
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('9a5e4047-c1dc-4243-9628-580d3c64b80c')/assignmentCategories/$entity",
     "displayName": "Quizzes",
     "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
 }

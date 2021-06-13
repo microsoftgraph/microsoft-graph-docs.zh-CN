@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8fdf11ab9792609813a92aef1c42f79b0cba3b48
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 619938b8550647acfe10f648a20460fe9c7554aa
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52119010"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911944"
 ---
 # <a name="remove-educationrubric-from-educationassignment"></a>从 educationAssignment 中删除 educationRubric
 
@@ -18,7 +18,8 @@ ms.locfileid: "52119010"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[educationAssignment](../resources/educationassignment.md)中删除[educationRubric。](../resources/educationrubric.md)  这不会删除项目本身。
+从[educationAssignment 中删除 educationRubric。](../resources/educationrubric.md) [](../resources/educationassignment.md)
+此方法不会删除测试点本身。
 
 ## <a name="permissions"></a>权限
 
@@ -59,6 +60,7 @@ DELETE /education/classes/{id}/assignments/{id}/rubric/$ref
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationrubric_from_educationassignment"
@@ -89,8 +91,6 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
-
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

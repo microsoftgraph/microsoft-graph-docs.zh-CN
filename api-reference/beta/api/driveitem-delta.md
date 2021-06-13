@@ -6,14 +6,14 @@ title: 同步驱动器的内容
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b4d92ef19b683294dafac90b3c6bb6805d9f565e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 483bfdcdd08c5d01f69d1b12455e64b903d9fac8
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963812"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912073"
 ---
-# <a name="track-changes-for-a-drive"></a>跟踪驱动器的更改
+# <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
 命名空间：microsoft.graph
 
@@ -69,8 +69,8 @@ GET /users/{userId}/drive/root/delta
 
 | 名称                 | 值  | 说明                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的一个 URL。                                        |
-| **@odata.deltaLink** | url    | 返回当前所有更改后返回的 URL，而不是 **@odata.nextLink** 。用于在将来读取下一组更改。  |
+| **@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的 URL。                                        |
+| **@odata.deltaLink** | url    | 返回当前所有更改后返回的 URL，而不是 **@odata.nextLink**。用于在将来读取下一组更改。  |
 
 ## <a name="example-initial-request"></a>示例（初始请求）
 
@@ -138,7 +138,7 @@ Content-type: application/json
 }
 ```
 
-此响应包含第一页的更改， **@odata.nextLink** 属性指示当前的项目集中有更多项目。在检索完所有项目页之前，你的应用程序应继续请求 **@odata.nextLink** 的 URL 值。
+此响应包含第一页的更改，**@odata.nextLink** 属性指示当前的项目集中有更多项目。在检索完所有项目页之前，你的应用程序应继续请求 **@odata.nextLink** 的 URL 值。
 
 ## <a name="example-last-page-in-a-set"></a>示例（集中的最后一页）
 
@@ -220,8 +220,8 @@ Content-type: application/json
 如果应用只需了解更改，不需要了解现有项，这将非常有用。
 若要检索最新的 deltaLink，请使用查询字符串参数 `?token=latest` 调用 `delta`。
 
->**注意：** 如果您尝试在文件夹或驱动器中维护项目的完整本地表示形式，则必须使用 `delta` 进行初始枚举。
-`children`如果在枚举过程中发生任何写入操作，则不能保证其他方法（例如，对文件夹的集合进行分页）返回每个单个项。 使用 `delta` 是保证您已阅读您所需的所有数据的唯一方法。
+>**注意：** 如果尝试维护文件夹或驱动器中项的完整本地表示形式，则必须用于初始 `delta` 枚举。
+如果枚举期间发生任何写入操作，则不能保证其他方法（如分页浏览文件夹集合）返回每个 `children` 项。 `delta`使用 是保证已读取所有所需的数据的唯一方法。
 
 ### <a name="request"></a>请求
 
@@ -269,9 +269,7 @@ Content-type: application/json
 
 * 增量源显示每项的最新状态，而不是每个更改的最新状态。如果项目重命名两次，它只显示一次并且使用最新名称。
 * 出于各种原因，同一项可能在增量源中出现不止一次。你应使用最后一次出现的项目。
-* 项目中的 `parentReference` 属性将不包括 **路径** 的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。 **使用增量时应始终按 id 跟踪项目** 。
-* 在 OneDrive for Business 和 SharePoint 中，仅驱动器内的 `root` 文件夹支持 `delta`，其他文件夹并不支持。
-
+* 项目中的 `parentReference` 属性将不包括 **路径** 的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。**使用增量时应始终按 id 跟踪项目**。
 * Delta 查询不会返回某些 DriveItem 属性，具体取决于操作和服务类型，如下表所示。
 
     **OneDrive for Business**
@@ -291,7 +289,7 @@ Content-type: application/json
 
 ## <a name="scanning-permissions-hierarchies"></a>扫描权限层次结构
 
-默认情况下，增量查询响应将包含查询中所有项目的发生了更改的共享信息，即使这些项目从其父级继承了权限，本身没有直接的共享更改。 这通常会导致后续调用，以获取每个项目的权限详细信息，而不只是其共享信息已更改的权限。 通过向增量查询请求添加 `Prefer: hierarchicalsharing` 标头，能够帮助你更好地了解权限更改的发生方式。
+默认情况下，增量查询响应将包含查询中所有项目的发生了更改的共享信息，即使这些项目从其父级继承了权限，本身没有直接的共享更改。 这通常会导致后续调用，获取每个项目的权限详细信息，而不只是共享信息发生更改的项目。 通过向增量查询请求添加 `Prefer: hierarchicalsharing` 标头，能够帮助你更好地了解权限更改的发生方式。
 
 如果提供了 `Prefer: hierarchicalsharing` 标头，将返回以下对象的共享信息：权限层次结构的根以及明确具有共享更改的项目。 如果共享更改是从某个项目中删除共享，你会发现一个空的共享 facet，用以区分从其父级继承的项目和唯一但没有共享链接的项目。 你还将在未共享用于建立初始作用域的权限层次结构的根处看到这个空的共享 facet。
 

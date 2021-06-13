@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 82ad4f009ca76625c148e8a42e58385195466fbb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 18ddcd32a2ab4a8d44505adbc92445a0feeae8b6
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095539"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911317"
 ---
 # <a name="educationcategory-resource-type"></a>educationCategory 资源类型
 
@@ -33,8 +33,8 @@ ms.locfileid: "48095539"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串|类别的唯一标识符。|
-|displayName|字符串|类别的唯一标识符。|
+|id|String|类别的唯一标识符。|
+|displayName|String|类别的唯一标识符。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -50,8 +50,8 @@ ms.locfileid: "48095539"
 
 ```json
 {
-  "id": "String (timestamp)",
-  "displayName": "String (timestamp)",
+  "id": "String (identifier)",
+  "displayName": "String",
 }
 
 ```

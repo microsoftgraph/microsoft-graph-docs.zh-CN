@@ -1,24 +1,26 @@
 ---
-title: 列出作业
-description: 检索分配对象的列表。 允许教师或使用应用程序权限执行的应用程序查看课程的所有作业对象。 学生只能看到分配给他们的作业。
+title: 列出课程分配
+description: 检索分配对象的列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c88d274a92b0d6b2546fa64e349620af7d7f9353
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 4e648f9f1b40445c1c98c7b6054b67705308bdcb
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061796"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911849"
 ---
-# <a name="list-assignments"></a>列出作业
+# <a name="list-class-assignments"></a>列出课程分配
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索分配对象的列表。 允许教师或使用应用程序权限执行的应用程序查看课程的所有作业对象。 学生只能看到分配给他们的作业。
+检索分配对象的列表。 
+
+教师或使用应用程序权限执行的应用程序可以看到课程的所有作业对象。 学生只能看到分配给他们的作业。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +30,7 @@ ms.locfileid: "52061796"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
-| Application*                           | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
-
-*应用程序权限当前仅适用于个人预览版客户。
+| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 

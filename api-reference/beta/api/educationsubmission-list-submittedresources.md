@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 861ee3371517d95e89c9077d6e139202d370a917
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 72b342b1f8655dded60ba50575da02cea074cb73
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061838"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911758"
 ---
 # <a name="list-submittedresources"></a>列出 submittedResources
 
@@ -27,9 +27,7 @@ ms.locfileid: "52061838"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application* | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
-
-*应用程序权限当前仅适用于个人预览版客户。
+|应用程序 | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +54,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
   "name": "get_submittedresources"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submittedResources
+GET https://graph.microsoft.com/beta/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/submissions/fbe51c90-78b7-418a-b5f3-871bf8d8d21e/submittedResources
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -66,7 +64,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource",
+  "@odata.type": "microsoft.graph.educationResource",
   "isCollection": true
 } -->
 ```http
@@ -101,8 +99,7 @@ Content-length: 1045
               }
           },
           "link": "https://www.microsoft.com"
-      },
-      "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource" 
+      }
     }
   ]
 }

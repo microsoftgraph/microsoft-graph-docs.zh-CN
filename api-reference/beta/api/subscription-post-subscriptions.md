@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 7fe6db48038b68d7d2bfe507af60a26846962832
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b471d13836faa74ba6f77ab395e9a8ad3c87e4ad
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054873"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911864"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -59,6 +59,8 @@ ms.locfileid: "52054873"
 其他限制适用于 OneDrive 项目的订阅。 这些限制适用于订阅的创建和管理（获取、更新和删除）。
 
 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+
+OneDrive for Business 和 SharePoint 支持发送 **driveItem** 上发生的安全事件的应用程序通知。 若要订阅这些事件，请向 `prefer:includesecuritywebhooks` 请求中添加 标头以创建订阅。 创建订阅后，当项目权限更改时，您将收到通知。 此标头适用于用户帐户SharePoint OneDrive for Business但不适用于使用者OneDrive帐户。
 
 ### <a name="contact-event-and-message"></a>联系人、事件和消息
 

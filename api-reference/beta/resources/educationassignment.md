@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5578a8c92f8d580cbc8b23ba3963a890ac681ccc
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 7dc6f2bbf33fb10b7578c0f056a393ef567a4320
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781070"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911961"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "52781070"
 |[获取作业](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |读取 **educationAssignment** 对象的属性和关系。|
 |[更新](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |更新 **educationAssignment** 对象。 |
 |[删除](../api/educationassignment-delete.md) | 无 |删除 **educationAssignment** 对象。 |
-|[添加类别](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | 将 **属于课程的 educationCategory** 分配给此作业。|
+|[添加类别](../api/educationassignment-post-categories.md) |[educationCategory](educationcategory.md) | 将 **属于课程的 educationCategory** 分配给此作业。|
 |[删除类别](../api/educationassignment-remove-category.md) |无| 从此作业中删除属于课程的 **educationCategory。**|
 |[附加度分](../api/educationassignment-put-rubric.md)|无|将现有 **educationRubric** 附加到此作业。|
 |[删除 rubric](../api/educationassignment-delete-rubric.md)|无|从此 **作业分离 educationRubric。**|
@@ -71,9 +71,9 @@ ms.locfileid: "52781070"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|resources|[educationAssignmentResource](educationassignmentresource.md) 集合| 学习与此分配关联的对象。  只有教师可以修改此列表。 可为空。|
-|提交|[educationSubmission](educationsubmission.md) 集合| 发布后，每个学生都有一个表示其工作和成绩的提交对象。  只读。 可为空。|
-|categories|[educationCategory](educationcategory.md) 集合| 设置后，使用户能够轻松查找给定类型的工作分配。  只读。 可为空。|
+|resources|[educationAssignmentResource](educationassignmentresource.md) 集合| 学习与此分配关联的对象。  只有教师可以修改此列表。 可为 NULL。|
+|提交|[educationSubmission](educationsubmission.md) 集合| 发布后，每个学生都有一个表示其工作和成绩的提交对象。  只读。 可为 NULL。|
+|categories|[educationCategory](educationcategory.md) 集合| 设置后，使用户能够轻松查找给定类型的工作分配。  只读。 可为 NULL。|
 |rubric|[educationRubric](educationrubric.md)|设置后，此工作分配附加的评分标准。|
 
 ## <a name="json-representation"></a>JSON 表示形式

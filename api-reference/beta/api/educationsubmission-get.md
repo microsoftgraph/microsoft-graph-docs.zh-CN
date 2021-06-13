@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bc1b2bbddc20c6cc1160aedd0da9d7a219bd7311
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: da48bae6a610d7d14c34071ac487c1ffd0a8043c
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780797"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911814"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -18,7 +18,11 @@ ms.locfileid: "52780797"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定提交。 提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 只有分配提交的学生才能查看和修改提交。 具有应用程序权限的教师或应用程序具有所有提交的完全访问权限。
+检索特定提交。
+
+提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 
+
+只有 **assignedTo** 学生才能查看和修改提交。 具有应用程序权限的教师或应用程序具有所有提交的完全访问权限。
 
 教师的成绩和反馈是与此 [对象关联的 educationOutcome](../resources/educationoutcome.md) 的一部分。 只有具有应用程序权限的教师或应用程序才能添加或更改成绩和反馈。 在作业发布之前，学生将看不到成绩或反馈。
 

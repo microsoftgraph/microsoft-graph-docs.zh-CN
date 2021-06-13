@@ -1,16 +1,16 @@
 ---
 title: 创建 educationAssignment
-description: '创建新的工作分配。 只有班级中的教师才能创建作业。 作业从草稿状态开始，这意味着在调用发布之前，学生不会看到作业。  '
+description: 创建新工作分配。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 86d9fe375222b25ade87663e64af5c51f7e92904
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c15bca046a08b62ff9a3d6cc75631e6a9110ef34
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043848"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911779"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 
@@ -18,7 +18,9 @@ ms.locfileid: "52043848"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的工作分配。 只有班级中的教师才能创建作业。 作业从草稿状态开始，这意味着在调用发布之前，学生不会看到作业。  
+创建新工作分配。 
+
+只有班级中的教师才能创建作业。 作业从"草稿"状态开始，这意味着学生在发布之前不会看到作业。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
