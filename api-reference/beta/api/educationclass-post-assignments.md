@@ -1,55 +1,57 @@
 ---
 title: 创建 educationAssignment
-description: '创建新的工作分配。 只有班级中的教师才能创建作业。 作业从草稿状态开始，这意味着在调用发布之前，学生不会看到作业。  '
+description: 创建新工作分配。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 86d9fe375222b25ade87663e64af5c51f7e92904
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c15bca046a08b62ff9a3d6cc75631e6a9110ef34
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043848"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911779"
 ---
-# <a name="create-educationassignment"></a><span data-ttu-id="95856-105">创建 educationAssignment</span><span class="sxs-lookup"><span data-stu-id="95856-105">Create educationAssignment</span></span>
+# <a name="create-educationassignment"></a><span data-ttu-id="01075-103">创建 educationAssignment</span><span class="sxs-lookup"><span data-stu-id="01075-103">Create educationAssignment</span></span>
 
-<span data-ttu-id="95856-106">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="95856-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="01075-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="01075-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="95856-107">创建新的工作分配。</span><span class="sxs-lookup"><span data-stu-id="95856-107">Creates a new assignment.</span></span> <span data-ttu-id="95856-108">只有班级中的教师才能创建作业。</span><span class="sxs-lookup"><span data-stu-id="95856-108">Only teachers in a class can create an assignment.</span></span> <span data-ttu-id="95856-109">作业从草稿状态开始，这意味着在调用发布之前，学生不会看到作业。</span><span class="sxs-lookup"><span data-stu-id="95856-109">Assignments start in the Draft state, which means that students will not see the assignment until publish is called.</span></span>  
+<span data-ttu-id="01075-105">创建新工作分配。</span><span class="sxs-lookup"><span data-stu-id="01075-105">Create a new assignment.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="95856-110">权限</span><span class="sxs-lookup"><span data-stu-id="95856-110">Permissions</span></span>
-<span data-ttu-id="95856-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="95856-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="01075-106">只有班级中的教师才能创建作业。</span><span class="sxs-lookup"><span data-stu-id="01075-106">Only teachers in a class can create an assignment.</span></span> <span data-ttu-id="01075-107">作业从"草稿"状态开始，这意味着学生在发布之前不会看到作业。</span><span class="sxs-lookup"><span data-stu-id="01075-107">Assignments start in the Draft state, which means that students will not see the assignment until publication.</span></span>
 
-|<span data-ttu-id="95856-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="95856-113">Permission type</span></span>      | <span data-ttu-id="95856-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="95856-114">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="01075-108">权限</span><span class="sxs-lookup"><span data-stu-id="01075-108">Permissions</span></span>
+<span data-ttu-id="01075-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="01075-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="01075-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="01075-111">Permission type</span></span>      | <span data-ttu-id="01075-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="01075-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="95856-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="95856-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="95856-116">EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="95856-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="95856-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="95856-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="95856-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="95856-118">Not supported.</span></span>  |
-|<span data-ttu-id="95856-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="95856-119">Application</span></span> | <span data-ttu-id="95856-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="95856-120">Not supported.</span></span> | 
+|<span data-ttu-id="01075-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="01075-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="01075-114">EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="01075-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="01075-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="01075-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="01075-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="01075-116">Not supported.</span></span>  |
+|<span data-ttu-id="01075-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="01075-117">Application</span></span> | <span data-ttu-id="01075-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="01075-118">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="95856-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="95856-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="01075-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="01075-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments
 ```
-## <a name="request-headers"></a><span data-ttu-id="95856-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="95856-122">Request headers</span></span>
-| <span data-ttu-id="95856-123">标头</span><span class="sxs-lookup"><span data-stu-id="95856-123">Header</span></span>       | <span data-ttu-id="95856-124">值</span><span class="sxs-lookup"><span data-stu-id="95856-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="01075-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="01075-120">Request headers</span></span>
+| <span data-ttu-id="01075-121">标头</span><span class="sxs-lookup"><span data-stu-id="01075-121">Header</span></span>       | <span data-ttu-id="01075-122">值</span><span class="sxs-lookup"><span data-stu-id="01075-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="95856-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="95856-125">Authorization</span></span>  | <span data-ttu-id="95856-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="95856-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="95856-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="95856-128">Content-Type</span></span>  | <span data-ttu-id="95856-129">application/json</span><span class="sxs-lookup"><span data-stu-id="95856-129">application/json</span></span>  |
+| <span data-ttu-id="01075-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="01075-123">Authorization</span></span>  | <span data-ttu-id="01075-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="01075-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="01075-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="01075-126">Content-Type</span></span>  | <span data-ttu-id="01075-127">application/json</span><span class="sxs-lookup"><span data-stu-id="01075-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="95856-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="95856-130">Request body</span></span>
-<span data-ttu-id="95856-131">在请求正文中，提供 [educationAssignment](../resources/educationassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="95856-131">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="01075-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="01075-128">Request body</span></span>
+<span data-ttu-id="01075-129">在请求正文中，提供 [educationAssignment](../resources/educationassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="01075-129">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="95856-132">响应</span><span class="sxs-lookup"><span data-stu-id="95856-132">Response</span></span>
-<span data-ttu-id="95856-133">如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="95856-133">If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="01075-130">响应</span><span class="sxs-lookup"><span data-stu-id="01075-130">Response</span></span>
+<span data-ttu-id="01075-131">如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="01075-131">If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="95856-134">示例</span><span class="sxs-lookup"><span data-stu-id="95856-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="95856-135">请求</span><span class="sxs-lookup"><span data-stu-id="95856-135">Request</span></span>
-<span data-ttu-id="95856-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="95856-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="01075-132">示例</span><span class="sxs-lookup"><span data-stu-id="01075-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="01075-133">请求</span><span class="sxs-lookup"><span data-stu-id="01075-133">Request</span></span>
+<span data-ttu-id="01075-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="01075-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_educationassignment_from_educationclass"
@@ -77,12 +79,12 @@ Content-length: 279
       "allowStudentsToAddResourcesToSubmission": true
 }
 ```
-<span data-ttu-id="95856-137">在请求正文中，提供 [educationAssignment](../resources/educationassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="95856-137">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
+<span data-ttu-id="01075-135">在请求正文中，提供 [educationAssignment](../resources/educationassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="01075-135">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="95856-138">响应</span><span class="sxs-lookup"><span data-stu-id="95856-138">Response</span></span>
-<span data-ttu-id="95856-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="95856-139">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="01075-136">响应</span><span class="sxs-lookup"><span data-stu-id="01075-136">Response</span></span>
+<span data-ttu-id="01075-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="01075-137">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="95856-140">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="95856-140">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="01075-138">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="01075-138">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
