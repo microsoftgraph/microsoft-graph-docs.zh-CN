@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 0905b424a69d1214c65a39873595192b38303787
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1db4fbafde269d5e53799ec986ccd6c6631970ae
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786614"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911611"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -22,6 +22,7 @@ ms.locfileid: "52786614"
 |:---|
 |reviewer|
 |unknownFutureValue|
+
 ### <a name="externalemailotpstate-values"></a>externalEmailOtpState 值
 
 |成员|
@@ -29,6 +30,14 @@ ms.locfileid: "52786614"
 |default|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### <a name="educationaddedstudentaction-values"></a>educationAddedStudentAction 值
+
+|成员|
+|:---|
+|无|
+|assignIfOpen|
 |unknownFutureValue|
 
 ### <a name="authenticatorappcontexttype-values"></a>authenticatorAppContextType 值
@@ -742,7 +751,7 @@ ms.locfileid: "52786614"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 

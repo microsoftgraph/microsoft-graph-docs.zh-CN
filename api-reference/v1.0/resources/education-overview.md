@@ -5,12 +5,12 @@ localization_priority: Priority
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 1bfe49d6841142794a5b3a60b0de84eaff4290d4
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: f0959157ac4f436fe47aa0164cfb4a8fb91b086b
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231530"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911298"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
@@ -72,6 +72,35 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [获取学校的用户](../api/educationschool-list-users.md)
 
 <!-- Should you list delete scenarios here as well? -->
+
+## <a name="assignments"></a>作业
+
+可以使用与作业相关的教育 API 与 Microsoft Teams 中的作业集成。 Microsoft 365 教育版中的 Microsoft Teams 基于同一教育 API，并提供了使用 API 执行哪些操作的用例。 应用可以使用这些 API 在整个作业生命周期内与作业进行交互。 
+
+作业 API 提供以下关键资源：
+
+- [educationAssignment](educationassignment.md) - 作业 API 的核心对象。 是指将任务或工作单元分配给课程中的学生或团队成员，作为其学习的一部分。
+- [educationSubmission](educationsubmission.md) - 是指个人（或组）提交作业的资源以及该作业的相关成绩和反馈。
+- [educationResource](educationresource.md) - 是指正在分配或提交的学习对象。 **educationResource** 与 **educationAssignment** 和/或 **educationSubmission** 相关联。
+
+作业 API 支持以下方案：
+
+- [创建作业](../api/educationclass-post-assignment.md)
+- [发布作业](../api/educationassignment-publish.md)
+- [创建作业资源](../api/educationassignment-post-resource.md)
+- [创建提交资源](../api/educationsubmission-post-resources.md)
+- [提交作业](../api/educationsubmission-submit.md)
+- [取消提交作业](../api/educationsubmission-unsubmit.md)
+- [将成绩和反馈返回给学生](../api/educationsubmission-return.md)
+- [获取作业详细信息](../api/educationuser-list-assignments.md)
+
+以下是与作业相关的教育 API 的一些常见用例。
+
+| 用例                    | 说明                                                                                                         | 另请参阅                                                          |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
+| 创建作业          | 外部系统可以创建课堂作业并将资源附加到作业。                   | [创建作业](../api/educationassignment-post-resource.md) |
+| 阅读作业信息 | 分析应用可以获取有关作业和学生提交（包括日期和成绩）的信息。 | [获取作业](../api/educationassignment-get.md)               |
+| 跟踪学生作业提交   | 应用可为教师提供仪表板，显示有多少学生提交的作业需要评分。           | [提交资源](educationsubmission.md)                     |
 
 ## <a name="whats-new"></a>最近更新
 

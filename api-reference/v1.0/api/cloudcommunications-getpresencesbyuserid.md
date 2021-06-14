@@ -1,16 +1,16 @@
 ---
 title: cloudCommunications：getPresencesByUserId
 description: 获取多个用户状态信息。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 61ce51d3fe7d85c2a5d086938c38f45827c2515e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 33a57e99e97deae7a919a19f9cd49fca5775f964
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787644"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896646"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 193e0233f5b10fe254f093b1b1f366496a27b7ff
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ee3d517a79a968ae6c48c04b5268ed631af5d9a0
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958657"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871620"
 ---
 ```javascript
 
@@ -51,7 +51,8 @@ const call = {
   mediaConfig: {
     '@odata.type': '#microsoft.graph.appHostedMediaConfig',
     blob: '<Media Session Configuration>'
-  }
+  },
+  tenantId: 'aa67bd4c-8475-432d-bd41-39f255720e0a'
 };
 
 await client.api('/communications/calls')

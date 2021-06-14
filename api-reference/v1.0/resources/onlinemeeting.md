@@ -1,16 +1,16 @@
 ---
 title: onlineMeeting 资源类型
 description: 包含有关会议的信息。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 4e04e9f6d40be4e4ed9a432be6cc449c690790a7
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 9de25fd3f9f014627b7fcb32e4a16814e82be1e3
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869853"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896485"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 

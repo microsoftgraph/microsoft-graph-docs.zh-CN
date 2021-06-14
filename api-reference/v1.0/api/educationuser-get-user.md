@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 728e848e07a176ad43e1ddea1edfee3218ae3764
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 2fb5da61a1450b25166f86a0a64baf15b1e0f559
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231883"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912059"
 ---
 # <a name="get-educationuser"></a>获取 educationUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "52231883"
 
 检索与此 **educationUser** 对应的简单目录 **user**。
 
->**注意：** 如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...beta/education/me/schools` 资源。
+>**注意：** 如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...v1.0/education/me/schools` 资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要一组权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
