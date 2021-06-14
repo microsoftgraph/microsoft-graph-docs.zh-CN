@@ -1,77 +1,77 @@
 ---
 title: 创建 onlineMeeting
 description: 代表请求正文中指定的用户创建联机会议。
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 035bc01bce48624ce066e339e7f1bc8a10864ae6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 00cb4cedca7085b4673ade851d47d50340404c2c
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039984"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896590"
 ---
-# <a name="create-onlinemeeting"></a><span data-ttu-id="b2b0b-103">创建 onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="b2b0b-103">Create onlineMeeting</span></span>
+# <a name="create-onlinemeeting"></a><span data-ttu-id="4b4b3-103">创建 onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="4b4b3-103">Create onlineMeeting</span></span>
 
-<span data-ttu-id="b2b0b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b2b0b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4b4b3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4b4b3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b2b0b-105">代表用户使用用户令牌中的对象 ID (OID) 创建联机会议。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-105">Create an online meeting on behalf of a user by using the object ID (OID) in the user token.</span></span>
+<span data-ttu-id="4b4b3-105">代表用户使用用户令牌中的对象 ID (OID) 创建联机会议。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-105">Create an online meeting on behalf of a user by using the object ID (OID) in the user token.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="b2b0b-106">会议不会显示在用户的日历上。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-106">The meeting does not show up on the user's calendar.</span></span>
+> <span data-ttu-id="4b4b3-106">会议不会显示在用户的日历上。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-106">The meeting does not show up on the user's calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b2b0b-107">权限</span><span class="sxs-lookup"><span data-stu-id="b2b0b-107">Permissions</span></span>
-<span data-ttu-id="b2b0b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4b4b3-107">权限</span><span class="sxs-lookup"><span data-stu-id="4b4b3-107">Permissions</span></span>
+<span data-ttu-id="4b4b3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b2b0b-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b2b0b-110">Permission type</span></span>                        | <span data-ttu-id="b2b0b-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b2b0b-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4b4b3-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4b4b3-110">Permission type</span></span>                        | <span data-ttu-id="4b4b3-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4b4b3-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="b2b0b-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b2b0b-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="b2b0b-113">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b2b0b-113">OnlineMeetings.ReadWrite</span></span>                    |
-| <span data-ttu-id="b2b0b-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b2b0b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b2b0b-115">不支持</span><span class="sxs-lookup"><span data-stu-id="b2b0b-115">Not Supported</span></span>                               |
-| <span data-ttu-id="b2b0b-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b2b0b-116">Application</span></span>                            | <span data-ttu-id="b2b0b-117">OnlineMeetings.ReadWrite.All\*</span><span class="sxs-lookup"><span data-stu-id="b2b0b-117">OnlineMeetings.ReadWrite.All\*</span></span>               |
+| <span data-ttu-id="4b4b3-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4b4b3-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="4b4b3-113">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4b4b3-113">OnlineMeetings.ReadWrite</span></span>                    |
+| <span data-ttu-id="4b4b3-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4b4b3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4b4b3-115">不支持</span><span class="sxs-lookup"><span data-stu-id="4b4b3-115">Not Supported</span></span>                               |
+| <span data-ttu-id="4b4b3-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4b4b3-116">Application</span></span>                            | <span data-ttu-id="4b4b3-117">OnlineMeetings.ReadWrite.All\*</span><span class="sxs-lookup"><span data-stu-id="4b4b3-117">OnlineMeetings.ReadWrite.All\*</span></span>               |
 
 > [!IMPORTANT]
-> <span data-ttu-id="b2b0b-118">\* 管理员必须创建[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)并将其授予用户，才能授权在此策略中配置的应用代表该用户（在请求路径中指定的用户 ID）创建联机会议。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-118">\* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).</span></span>
+> <span data-ttu-id="4b4b3-118">\* 管理员必须创建[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)并将其授予用户，才能授权在此策略中配置的应用代表该用户（在请求路径中指定的用户 ID）创建联机会议。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-118">\* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b2b0b-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b2b0b-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4b4b3-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4b4b3-119">HTTP request</span></span>
 
-<span data-ttu-id="b2b0b-120">使用委派令牌时的请求：</span><span class="sxs-lookup"><span data-stu-id="b2b0b-120">Request when using a delegated token:</span></span>
+<span data-ttu-id="4b4b3-120">使用委派令牌时的请求：</span><span class="sxs-lookup"><span data-stu-id="4b4b3-120">Request when using a delegated token:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
 ```
 
-<span data-ttu-id="b2b0b-121">使用应用程序令牌时的请求：</span><span class="sxs-lookup"><span data-stu-id="b2b0b-121">Request when using an application token:</span></span>
+<span data-ttu-id="4b4b3-121">使用应用程序令牌时的请求：</span><span class="sxs-lookup"><span data-stu-id="4b4b3-121">Request when using an application token:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
-> <span data-ttu-id="b2b0b-122">`userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-122">`userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span></span> <span data-ttu-id="b2b0b-123">有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-123">See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).</span></span>
+> <span data-ttu-id="4b4b3-122">`userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-122">`userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span></span> <span data-ttu-id="4b4b3-123">有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-123">See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b2b0b-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="b2b0b-124">Request headers</span></span>
-| <span data-ttu-id="b2b0b-125">名称</span><span class="sxs-lookup"><span data-stu-id="b2b0b-125">Name</span></span>          | <span data-ttu-id="b2b0b-126">说明</span><span class="sxs-lookup"><span data-stu-id="b2b0b-126">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="4b4b3-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="4b4b3-124">Request headers</span></span>
+| <span data-ttu-id="4b4b3-125">名称</span><span class="sxs-lookup"><span data-stu-id="4b4b3-125">Name</span></span>          | <span data-ttu-id="4b4b3-126">说明</span><span class="sxs-lookup"><span data-stu-id="4b4b3-126">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="b2b0b-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="b2b0b-127">Authorization</span></span> | <span data-ttu-id="b2b0b-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b2b0b-130">Content-type</span><span class="sxs-lookup"><span data-stu-id="b2b0b-130">Content-type</span></span>  | <span data-ttu-id="b2b0b-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="b2b0b-p104">application/json. Required.</span></span> |
-| <span data-ttu-id="b2b0b-133">Accept-Language</span><span class="sxs-lookup"><span data-stu-id="b2b0b-133">Accept-Language</span></span>  | <span data-ttu-id="b2b0b-134">语言。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-134">Language.</span></span> <span data-ttu-id="b2b0b-135">可选。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-135">Optional.</span></span> |
+| <span data-ttu-id="4b4b3-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="4b4b3-127">Authorization</span></span> | <span data-ttu-id="4b4b3-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4b4b3-130">Content-type</span><span class="sxs-lookup"><span data-stu-id="4b4b3-130">Content-type</span></span>  | <span data-ttu-id="4b4b3-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="4b4b3-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="4b4b3-133">Accept-Language</span><span class="sxs-lookup"><span data-stu-id="4b4b3-133">Accept-Language</span></span>  | <span data-ttu-id="4b4b3-134">语言。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-134">Language.</span></span> <span data-ttu-id="4b4b3-135">可选。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-135">Optional.</span></span> |
 
-<span data-ttu-id="b2b0b-136">如果请求包含 `Accept-Language` HTTP 标头，`joinInformation` 的 `content` 将采用 `Accept-Language` 标头中指定的语言和区域设置变量中。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-136">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="b2b0b-137">默认内容将为英语。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-137">The default content will be in English.</span></span>
+<span data-ttu-id="4b4b3-136">如果请求包含 `Accept-Language` HTTP 标头，`joinInformation` 的 `content` 将采用 `Accept-Language` 标头中指定的语言和区域设置变量中。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-136">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="4b4b3-137">默认内容将为英语。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-137">The default content will be in English.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="b2b0b-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="b2b0b-138">Request body</span></span>
-<span data-ttu-id="b2b0b-139">在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-139">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4b4b3-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="4b4b3-138">Request body</span></span>
+<span data-ttu-id="4b4b3-139">在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-139">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b2b0b-140">响应</span><span class="sxs-lookup"><span data-stu-id="b2b0b-140">Response</span></span>
-<span data-ttu-id="b2b0b-141">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-141">If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4b4b3-140">响应</span><span class="sxs-lookup"><span data-stu-id="4b4b3-140">Response</span></span>
+<span data-ttu-id="4b4b3-141">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-141">If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b2b0b-142">示例</span><span class="sxs-lookup"><span data-stu-id="b2b0b-142">Examples</span></span> 
+## <a name="examples"></a><span data-ttu-id="4b4b3-142">示例</span><span class="sxs-lookup"><span data-stu-id="4b4b3-142">Examples</span></span> 
 
-<span data-ttu-id="b2b0b-143">以下示例会使用用户令牌创建一个联机会议。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-143">The following example creates an online meeting with a user token.</span></span>
+<span data-ttu-id="4b4b3-143">以下示例会使用用户令牌创建一个联机会议。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-143">The following example creates an online meeting with a user token.</span></span>
 
-### <a name="request"></a><span data-ttu-id="b2b0b-144">请求</span><span class="sxs-lookup"><span data-stu-id="b2b0b-144">Request</span></span>
+### <a name="request"></a><span data-ttu-id="4b4b3-144">请求</span><span class="sxs-lookup"><span data-stu-id="4b4b3-144">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="b2b0b-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="b2b0b-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4b4b3-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="4b4b3-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-onlinemeeting-user-token"
@@ -86,28 +86,28 @@ Content-Type: application/json
   "subject":"User Token Meeting"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="b2b0b-146">C#</span><span class="sxs-lookup"><span data-stu-id="b2b0b-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4b4b3-146">C#</span><span class="sxs-lookup"><span data-stu-id="4b4b3-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-user-token-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b2b0b-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b2b0b-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4b4b3-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4b4b3-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-user-token-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b2b0b-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b2b0b-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4b4b3-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4b4b3-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-user-token-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b2b0b-149">Java</span><span class="sxs-lookup"><span data-stu-id="b2b0b-149">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4b4b3-149">Java</span><span class="sxs-lookup"><span data-stu-id="4b4b3-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-onlinemeeting-user-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b2b0b-150">响应</span><span class="sxs-lookup"><span data-stu-id="b2b0b-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="4b4b3-150">响应</span><span class="sxs-lookup"><span data-stu-id="4b4b3-150">Response</span></span>
 
-> <span data-ttu-id="b2b0b-151">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-151">**Note:** The response object shown here might be shortened for readability.</span></span> 
+> <span data-ttu-id="4b4b3-151">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-151">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -153,7 +153,7 @@ Content-Type: application/json
 }
 ```
 > [!NOTE]
-> <span data-ttu-id="b2b0b-152">如果指定了 'Accept-Language: ja' 来指示日语，则响应将包括以下内容。</span><span class="sxs-lookup"><span data-stu-id="b2b0b-152">If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
+> <span data-ttu-id="4b4b3-152">如果指定了 'Accept-Language: ja' 来指示日语，则响应将包括以下内容。</span><span class="sxs-lookup"><span data-stu-id="4b4b3-152">If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
 
 ```json
     "joinInformation": {
