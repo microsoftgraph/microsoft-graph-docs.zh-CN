@@ -4,12 +4,12 @@ description: Microsoft Graph 中用于访问敏感数据的 Microsoft Teams API 
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 65c70c196540f18e74dfab05b4a94ecfab5fe25f
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: dd4b2a85fd0ab3b9fbceb993cfd72ef5bf19f48b
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697990"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941429"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Microsoft Teams 中的受保护 API
 
@@ -29,8 +29,6 @@ Microsoft Graph 中用于访问敏感数据的 Microsoft Teams API 被视为受�
 * 使用[应用程序权限](auth/auth-concepts.md#microsoft-graph-permissions)[创建新聊天消息订阅](/graph/api/subscription-post-subscriptions)
 * 使用[应用程序权限](auth/auth-concepts.md#microsoft-graph-permissions)的[列出所有托管内容](/graph/api/chatmessage-list-hostedcontents)
 * 使用[应用程序权限](auth/auth-concepts.md#microsoft-graph-permissions)的[获取托管内容](/graph/api/chatmessagehostedcontent-get)
-* 使用[应用程序权限](auth/auth-concepts.md#microsoft-graph-permissions)的[列出聊天成员](/graph/api/conversationmember-list)
-* 使用[应用程序权限](auth/auth-concepts.md#microsoft-graph-permissions)的[获取聊天成员](/graph/api/conversationmember-get)
 
 >[!NOTE]
 >[发送消息](/graph/api/channel-post-messages) API 不受保护。

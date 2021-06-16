@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ec413303365d97a2683997939e20820ed9205f84
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: fa7f18c075b7369f7672b25c85c264549a753ec8
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577826"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896625"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "50577826"
 |:---------------|:--------|:----------|
 |names|[workbookNamedItem](nameditem.md) 集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
 |表格|[workbookTable](table.md) 集合|表示与工作簿关联的表的集合。只读。|
-|Worksheets|[workbookWorksheet](worksheet.md) 集合|表示与工作簿关联的工作表的集合。 只读。|
+|Worksheets|[workbookWorksheet](worksheet.md) 集合|表示与工作簿关联的工作表的集合。只读。|
 |operations|[workbookOperation](workbookoperation.md) 集合|工作簿操作的状态。 不支持获取操作集合，但如果响应中返回 `Location` 标头，可以获取长时间运行操作的状态。 只读。|
 
 ## <a name="functions"></a>函数
@@ -53,7 +53,7 @@ _重要说明_：
 
 1. 要查找的值（亦称为“查阅值”）。
 2. 查阅值所在的区域。 请注意，查阅值应始终位于区域中的第一列，这样 VLOOKUP 才能正常运行。 例如，如果查阅值位于单元格 C2，那么区域应从 C 列开始。
-3. 包含返回值的区域的列号。 例如，如果指定 B2: D11 作为区域，应将 B 计为第一列，将 C 计为第二列，依此类推。
+3. 区域中包含返回值的列号。例如，如果指定 B2: D11 作为区域，那么应该将 B 算作第一列，C 作为第二列，以此类推。
 4. （可选）如果想要近似匹配，可指定 TRUE；如果想要返回值的完全匹配，则可指定 FALSE。
  如果未指定，默认值始终为 TRUE 或近似匹配。
 
@@ -117,10 +117,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 
 {
-"values" :  [
-        { "address": "Sheet2!A1:A5" },
-        { "address": "Sheet2!B1:B5" },
-      ] 
+   "values":[
+      {
+         "address":"Sheet2!A1:A5"
+      },
+      {
+         "address":"Sheet2!B1:B5"
+      }
+   ]
 }
 ```
 

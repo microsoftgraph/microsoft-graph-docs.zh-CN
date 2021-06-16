@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
 doc_type: apiPageType
-ms.openlocfilehash: f247e643d29e0e7e4b601cbf284a94310c49b5d7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bcf638e5217768012a7e361ebed3cd760ac079c0
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240351"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911310"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -67,8 +67,8 @@ GET /users/{userId}/drive/root/delta
 
 | 名称                 | 值  | 说明                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的一个 URL。                                        |
-| **\@odata.deltaLink** | url    | 在当前所有更改返回后返回一个 URL，而不是 **\@odata.nextLink**。 用于在将来读取下一组更改。  |
+| **\@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的 URL。                                        |
+| **\@odata.deltaLink** | url    | 返回当前所有更改后返回 URL，而不是 **\@odata.nextLink**。用于在将来读取下一组更改。  |
 
 ## <a name="example-initial-request"></a>示例（初始请求）
 
@@ -136,8 +136,7 @@ Content-type: application/json
 }
 ```
 
-此响应包含第一页的更改，**\@odata.nextLink** 属性指示当前的项目集中有更多项目。
-你的应用程序应继续请求 **\@odata.nextLink** 的 URL 值，直至检索完所有项目页。
+此响应包含第一页的更改，**\@odata.nextLink** 属性指示当前的项目集中有更多项目。在检索完所有项目页之前，你的应用程序应继续请求 **\@odata.nextLink** 的 URL 值。
 
 ## <a name="example-last-page-in-a-set"></a>示例（集中的最后一页）
 
@@ -216,8 +215,7 @@ Content-type: application/json
 
 在某些情况下，请求当前 deltaLink 值可能非常有用（无需首先枚举驱动器中已有的所有项）。
 
-如果应用只需了解更改，不需要了解现有项，这将非常有用。
-若要检索最新的 deltaLink，请使用查询字符串参数 `?token=latest` 调用 `delta`。
+如果应用只需了解更改，不需要了解现有项，这将非常有用。若要检索最新的 deltaLink，请使用查询字符串参数 `?token=latest` 调用 `delta`。
 
 **注意：若要尝试保持文件夹或驱动器中项的完整本地表示形式，必须使用 `delta` 进行初始枚举。如果在枚举期间发生任何写入操作，无法确保其他方法（如通过文件夹的 `children` 集合分页）返回所有项。使用 `delta` 是确保已读取所需全部数据的唯一方法。**
 
@@ -268,8 +266,6 @@ Content-type: application/json
 * 增量源显示每项的最新状态，而不是每个更改的最新状态。如果项目重命名两次，它只显示一次并且使用最新名称。
 * 出于各种原因，同一项可能在增量源中出现不止一次。你应使用最后一次出现的项目。
 * 项目中的 `parentReference` 属性将不包括 **路径** 的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。**使用增量时应始终按 id 跟踪项目**。
-* 在 OneDrive for Business 和 SharePoint 中，仅驱动器内的 `root` 文件夹支持 `delta`，其他文件夹并不支持。
-
 * Delta 查询不会返回某些 DriveItem 属性，具体取决于操作和服务类型，如下表所示。
 
     **OneDrive for Business**

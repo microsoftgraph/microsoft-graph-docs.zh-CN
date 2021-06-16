@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: b471d13836faa74ba6f77ab395e9a8ad3c87e4ad
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: f87f448e4a1dfc2544eb229e16bb674ba3627e26
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911864"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941499"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -31,11 +31,14 @@ ms.locfileid: "52911864"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | 不支持 | 不支持 | CallRecords.Read.All  |
+|[channels](../resources/channel.md) (/teams/getAllChannels – 组织中所有频道)  | 不支持  | 不支持 | Channel.ReadBasic.All、ChannelSettings.Read.All |
+|[频道 (](../resources/channel.md) /teams/{id}/channels)  | Channel.ReadBasic.All、ChannelSettings.Read.All  | 不支持 | Channel.ReadBasic.All、ChannelSettings.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All | 不支持 | ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members)  | TeamMember.Read.All | 不支持 | TeamMember.Read.All |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
@@ -47,6 +50,8 @@ ms.locfileid: "52911864"
 |[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
+|[teams](../resources/team.md) (/teams – 组织内部的所有)  | 不支持 | 不支持 | Team.ReadBasic.All、TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id})  | Team.ReadBasic.All、TeamSettings.Read.All | 不支持 | Team.ReadBasic.All、TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -152,8 +157,10 @@ Content-type: application/json
 | 资源类型 | 示例 |
 |:------ |:----- |
 |[通话记录](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[频道](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[聊天消息](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[联系人](../resources/contact.md)|`me/contacts`|
+|[ConversationMember](../resources/conversationmember.md)|`/teams/{id}/members`|
 |[对话](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[驱动器](../resources/driveitem.md)|`me/drive/root`|
 |[事件](../resources/event.md)|`me/events`|
@@ -163,6 +170,7 @@ Content-type: application/json
 |[状态](../resources/presence.md)| `/communications/presences/{id}` (单个用户) ， (`/communications/presences?$filter=id in ({id},{id}…)` 多个) |
 |[打印机](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
+|[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[用户](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|

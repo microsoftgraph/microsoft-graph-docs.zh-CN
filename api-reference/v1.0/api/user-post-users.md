@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d0d3501916a2c2a2f5a08881c8e6be8ba4384823
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 88cc987d63914f3c6fa6b361e6536f3ceb2629d9
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053760"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912024"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -48,7 +48,7 @@ POST /users
 
 在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。
 
-下表列出了创建用户时所需的属性。 如果要为正在创建的用户包括 **identities** 属性，并非所有列出的属性都是必需的。 对于 [B2C 本地帐户标识](../resources/objectidentity.md)，只需要 **passwordProfile**，且 **passwordPolicy** 必须设置为 `DisablePasswordExpiration`。 对于社交标识，则无需任何属性。
+下表列出了创建用户时所需的属性。 如果要为正在创建的用户包括 **identities** 属性，并非所有列出的属性都是必需的。 对于 [B2C 本地帐户标识](../resources/objectidentity.md)，只需要 **passwordProfile**，且 **passwordPolicies** 必须设置为 `DisablePasswordExpiration`。 对于社交标识，则无需任何属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -56,7 +56,7 @@ POST /users
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。 对于 Azure B2C 租户，**forceChangePasswordNextSignIn** 属性应设置为 `false`，并且应在第一次登录时使用自定义策略强制重置密码。|
 |userPrincipalName |string |用户主体名称 (someuser@contoso.com)。|
 
 由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
@@ -74,7 +74,7 @@ POST /users
 
 #### <a name="request"></a>请求
 
-下面是一个请求示例。
+下面是一个请求示例。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -120,7 +120,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

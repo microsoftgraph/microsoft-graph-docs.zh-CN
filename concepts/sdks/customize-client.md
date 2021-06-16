@@ -3,12 +3,12 @@ title: 自定义 Microsoft Graph SDK 服务客户端
 description: 提供有关如何更改 Microsoft Graph SDK 服务客户端的默认行为的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: a2750babd35f1e3fd5f361ae43009eaa25eefe87
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: d68a8c3b3d1dcd70026217bdbaf99f6a099862d5
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911653"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941541"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>自定义 Microsoft Graph SDK 服务客户端
 
@@ -160,12 +160,20 @@ var credential = new ClientSecretCredential(
     options
 );
 
-// Create a new Microsoft.Graph.HttpProvider using the
-// proxied HttpClientHandler
-var httpProvider = new HttpProvider(handler, true);
-
 var scopes = new[] { "https://graph.microsoft.com/.default" };
-var graphClient = new GraphServiceClient(credential, scopes, httpProvider);
+
+// This example works with Microsoft.Graph 4+
+var httpClient = GraphClientFactory.Create(new TokenCredentialAuthProvider(credential, scopes), proxy: new WebProxy(new Uri(proxyAddress)));
+
+GraphServiceClient graphClient = new(httpClient);
+
+/* For Microsoft.Graph version < 4, you'll need to implement an authHandler. Please note
+/* that Microsoft.Graph.Auth is deemphasized and will not leave the preview state.
+
+var httpProvider = new HttpProvider(handler, true);
+GraphServiceClient graphClient = new(authHandler, httpProvider);
+
+*/
 ```
 
 ## <a name="typescript"></a>[TypeScript](#tab/typeScript)

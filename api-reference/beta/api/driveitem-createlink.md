@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
 description: 可以使用 createLink 操作通过共享链接共享 DriveItem。
-ms.date: 09/10/2017
-title: 使用链接共享文件
+title: driveItem： createLink
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f3097040c6a5a28ea354b7b282bd15cfbe5aeb87
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a6f3c172efdec9decf2f054a8afbb8d7ccf53034
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963882"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941471"
 ---
-# <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
+# <a name="driveitem-createlink"></a>driveItem： createLink
 
 命名空间：microsoft.graph
 
@@ -21,7 +20,7 @@ ms.locfileid: "48963882"
 
 可以使用 **createLink** 操作通过共享链接共享 [DriveItem](../resources/driveitem.md)。
 
-如果调用应用程序指定的链接类型尚不存在， **CreateLink** 操作将创建新的共享链接。如果应用程序指定的共享链接类型已存在，则返回现有的共享链接。
+如果调用应用程序指定的链接类型尚不存在，**CreateLink** 操作将创建新的共享链接。如果应用程序指定的共享链接类型已存在，则返回现有的共享链接。
 
 DriveItem 资源从其上级继承共享权限。
 
@@ -46,19 +45,24 @@ POST /me/drive/items/{itemId}/createLink
 POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
+## <a name="request-headers"></a>请求标头
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+|Content-Type|application/json. Required.|
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
 
 请求正文定义应用程序正在请求的共享链接的属性。
 请求应为具有以下属性的 JSON 对象。
 
 |   属性                 |  类型  |                                 说明                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
-|类型               | string | 要创建的共享链接的类型。 "查看"、"编辑" 或 "嵌入"。                                    |
-|password           | string | 由创建者设置的共享链接的密码。 可选和 OneDrive 仅限个人版。         |
-|expirationDateTime | string | 格式为 Yyyy-mm-ddthh： MM： ssZ 的字符串表示该权限的过期时间。 |
-|scope              | string | 可选。 要创建的链接的范围。 "匿名" 或 "组织"。                              |
-
+|type|String|可选。要创建的共享链接的类型。   |
+|scope|String|可选。 要创建的链接的范围。 匿名、组织或用户。|
+|expirationDateTime|DateTimeOffset|可选。 DateTime 格式为 yyyy-MM-ddTHH：mm：ssZ 的 String 表示权限的过期时间。|
+|密码|String|可选。创建者设置的共享链接的密码。|
+|recipients|[driveRecipient](../resources/driverecipient.md) 集合|可选。 将接收共享链接访问权限的收件人的集合。|
 
 ### <a name="link-types"></a>链接类型
 
@@ -66,20 +70,24 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | 类型值 | 说明                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| view     | 创建到 DriveItem 的只读链接。                                                        |
-| edit     | 创建到 DriveItem 的读写链接。                                                       |
-| 嵌入    | 创建到 DriveItem 的可嵌入链接。 此选项仅适用于 OneDrive 个人版中的文件。 |
+| view           | 创建指向 Item 的只读链接。                                                                        |
+| review         | 创建指向"项目"的审阅链接。 此选项仅适用于 OneDrive for Business 和 SharePoint。                   |
+| edit           | 创建指向 Item 的读写链接。                                                                       |
+| 嵌入          | 创建到 Item 的可嵌入链接。                                                                      |
+| blocksDownload | 创建阻止下载到项目的只读链接。 此选项仅适用于 OneDrive for Business 和 SharePoint。  |
+| createOnly     | 创建指向"项"的仅上载链接。 此选项仅适用于 OneDrive for Business 和 SharePoint 中的文件夹。             |
+| addressBar     | 为新建的文件创建浏览器地址栏中显示的默认链接。 仅适用于 OneDrive for Business 和 SharePoint。 组织管理员配置此链接类型是否受支持，以及此链接类型支持哪些功能。 |
+| adminDefault   | 创建到 DriveItem 的默认链接，该链接由组织的管理员确定。 仅适用于 OneDrive for Business 和 SharePoint。 该策略由管理员为组织强制执行 |
 
 ### <a name="scope-types"></a>范围类型
 
 **scope** 参数允许使用以下值。
-如果未指定 **scope** 参数，则为组织创建默认的链接类型。
 
 | 值          | 说明
 |:---------------|:------------------------------------------------------------
-| 匿名    | 拥有该链接的任何人都可以访问，无需登录。 这可能包括组织外部的人员。 管理员可能会禁用匿名链接支持。
+| anonymous    | 拥有该链接的任何人都可以访问，无需登录。 这可能包括组织外部的人员。 管理员可能会禁用匿名链接支持。
 | 组织 | 登录到组织（租户）的任何人都可以使用该链接获取访问权限。 仅适用于 OneDrive for Business 和 SharePoint。
-
+| users        | 收件人集合中的特定人员可以使用链接获取访问权限。 仅适用于 OneDrive for Business 和 SharePoint。
 
 ## <a name="response"></a>响应
 
@@ -87,30 +95,36 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 如果已经为此项目创建新的共享链接，则响应为 `201 Created`；如果返回现有链接，则为 `200 OK`。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
+### <a name="example-1-create-an-anonymous-sharing-link"></a>示例 1：创建匿名共享链接
 下面的示例请求为在用户的 OneDrive 中按 {itemId} 指定的 DriveItem 创建共享链接。
 共享链接配置为只读并且可由具有该链接的任何用户使用。
 
-### <a name="request"></a>请求
-
-
-# <a name="http"></a>[HTTP](#tab/http)
+#### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "driveItem_createlink",
+  "sampleKeys": ["01G7ZEPNWQ6DTNTJHHJFBYZD47OAVFOO46"]
 }-->
 
 ```http
 POST /me/drive/items/{itemId}/createLink
-Content-type: application/json
+Content-Type: application/json
+Content-length: 212
 
 {
   "type": "view",
-  "password": "ThisIsMyPrivatePassword",
-  "scope": "anonymous"
+  "scope": "anonymous",
+  "password": "String",
+  "recipients": [
+    {
+      "@odata.type": "microsoft.graph.driveRecipient"
+    }
+  ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-createlink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -130,9 +144,14 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>响应
-
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permission"
+}
+-->
 
 ```http
 HTTP/1.1 201 Created
@@ -154,17 +173,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="creating-company-sharable-links"></a>创建公司可共享的链接
+### <a name="example-2-creating-company-sharable-links"></a>示例 2：创建公司可共享链接
 
 OneDrive for Business 和 SharePoint 都支持公司可共享的链接。
 此类链接与匿名链接类似，只不过仅适用于拥有组织的成员。
 若要创建公司可共享的链接，请使用值为 `organization` 的 **scope** 参数。
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create-link-scoped",
+  "scopes": "files.readwrite service.sharepoint",
+  "sampleKeys": ["01G7ZEPNWQ6DTNTJHHJFBYZD47OAVFOO46"]
+ } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -194,7 +216,7 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -217,17 +239,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="creating-embeddable-links"></a>创建可嵌入的链接
+### <a name="example-3-creating-embeddable-links"></a>示例 3：创建可嵌入链接
 
 使用 `embed` 链接类型时，可以在 `<iframe>` HTML 元素中嵌入返回的 webUrl。创建嵌入链接时，`webHtml` 属性包含 `<iframe>` 的 HTML 代码以托管内容。
 
-**注意：** 仅 OneDrive 个人版支持嵌入链接。
+>**注意：** 仅 OneDrive 个人版支持嵌入链接。
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create-embedded-link",
+  "scopes": "files.readwrite service.onedrive",
+  "sampleKeys": ["01G7ZEPNWQ6DTNTJHHJFBYZD47OAVFOO46"]
+} -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -256,7 +281,7 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -281,6 +306,7 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>注解
 
+* 若要基于组织的默认策略和呼叫者对 listItem 的权限创建链接，请省略 scope 和 type 参数
 * 使用此操作创建的链接不会过期，除非对组织强制执行了默认过期策略。
 * 链接在项的共享权限中可见，可以由该项的所有者删除。
 * 除非项已被签出，否则链接始终指向该项的最新版本（仅限 SharePoint）。
@@ -296,5 +322,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

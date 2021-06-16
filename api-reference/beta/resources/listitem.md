@@ -6,12 +6,12 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 226213d1361c78f592f92ddfe9b6f52c4f3defd0
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: ad1e278f31bbeb0bc079f1ad2a6345d9b260cdec
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714296"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941464"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
 
@@ -21,7 +21,7 @@ ms.locfileid: "49714296"
 
 表示 SharePoint [列表][]中的项目。
 
-SharePoint 文档库中的所有项目都可以表示为 **listItem** 或 [driveItem][] 资源。
+SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveItem][] 资源。
 
 该列表中的列值可通过 `fieldValueSet` 字典获得。
 
@@ -40,13 +40,15 @@ SharePoint 文档库中的所有项目都可以表示为 **listItem** 或 [drive
 | [删除][]                     | DELETE /items/{item-id}
 | [更新][]                     | PATCH /items/{item-id}
 | [更新列值][Update] | PATCH /items/{item-id}/fields
+| [createLink][CreateLink]       | POST /items/{itemId}/createLink
 
-[获取]: ../api/listitem-get.md
+[Get]: ../api/listitem-get.md
 [获取分析结果]: ../api/itemanalytics-get.md
 [按间隔获取活动]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
 [删除]: ../api/listitem-delete.md
 [更新]: ../api/listitem-update.md
+[CreateLink]: ../api/listitem-createlink.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,7 +58,7 @@ SharePoint 文档库中的所有项目都可以表示为 **listItem** 或 [drive
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
+  "@odata.type&quot;: &quot;microsoft.graph.listItem"
 }-->
 
 ```json
@@ -81,7 +83,7 @@ SharePoint 文档库中的所有项目都可以表示为 **listItem** 或 [drive
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
+  "webUrl&quot;: &quot;url"
 }
 ```
 
@@ -141,7 +143,7 @@ SharePoint 文档库中的所有项目都可以表示为 **listItem** 或 [drive
   "section": "documentation",
   "tocPath": "Resources/ListItem",
   "tocBookmarks": {
-    "ListItem": "#"
+    "ListItem&quot;: &quot;#"
   },
   "suppressions": []
 }

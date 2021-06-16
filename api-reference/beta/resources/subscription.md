@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 357a4b02bfb60f8960368be2951155b607333831
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: b71be9d9f69c3ee533ac4d1fc9da208840499a12
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911296"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941254"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -22,12 +22,15 @@ ms.locfileid: "52911296"
 
 - Microsoft Graph 安全性 API 中的[警报][]。
 - Microsoft Teams 中的通话或会议后生成的 [callRecord][]。
+- 频道[中的](./channel.md)Microsoft Teams。
 - 通过 Microsoft Teams 中的团队或频道发送的 [chatMessage][]。
 - Microsoft 365 组中的[对话][]。
+- 对话[组中的 conversationMember](./conversationmember.md) Microsoft 365组。
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容。
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
 - [用户][]状态Microsoft Teams。
+- [Microsoft Teams。](./team.md)
 - Azure Active Directory 中的[用户][]或[组][]。
 - [打印机][] (当打印机的打印作业进入”JobFetchable”状态时 - 准备好提取打印) 和通用打印中的 [printTaskDefinition][]。 有关详细信息，请参阅 [订阅云打印 API 中的更改通知](/graph/universal-print-webhook-notifications)。
 - 用户[在任务][]中的微软待办。
@@ -70,12 +73,15 @@ ms.locfileid: "52911296"
 |:--------------------|:-------------------------|
 | 安全 **警报**     | 43200分钟（不到 30 天）  |
 | Teams **callRecord**    | 4230 分钟（不到 3 天）  |
+| Teams **频道**    | 60 分钟（1 小时）  |
 | Teams **chatMessage**    | 60 分钟（1 小时）  |
+| Teams **conversationMember**    | 60 分钟（1 小时）  |
+| Teams **团队**    | 60 分钟（1 小时）  |
 | 组 **对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 30 天 (42300 分钟)     |
 | SharePoint **列表**    | 30 天 (42300 分钟)     |
 | Outlook **邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
-| **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
+| **用户**、**组**、其他目录资源   | 41760 分钟 (29 天以内)     |
 | **状态**        | 60 分钟（1 小时） |
 | 打印 **打印机** | 4230 分钟（不到 3 天）    |
 | 打印 **printTaskDefinition** | 4230 分钟（不到 3 天）    |

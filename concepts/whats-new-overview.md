@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 9f737e169557413e6e112592a882cef051942fbb
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 075b3aec5ebf315b338e0aeb4d349711dab13890
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781164"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912038"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -16,6 +16,11 @@ ms.locfileid: "52781164"
 
 > [!IMPORTANT]
 > 处于 _预览_ 状态的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。不要在生产应用中使用预览功能。
+
+## <a name="june-2021-new-and-generally-available"></a>2021 年 6 月：新版本和正式发布版本
+
+### <a name="education"></a>教育版
+教育版[分配服务](/graph/api/resources/educationassignment?view=graph-rest-1.0&preserve-view=true)的 API 现已正式发布。 
 
 ## <a name="june-2021-new-in-preview-only"></a>2021 年 6 月：预览版新增功能
 

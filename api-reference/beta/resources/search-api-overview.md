@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 070d799c80fd9d10916d9adfb3a48a9d033883af
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 13e60e5000db9a3cb4ef540970564e1a52ab2871
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067038"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911660"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -108,7 +108,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 在实际搜索查询字符串（**查询** 请求正文的 **查询** 属性）中的 KQL 语法中，指定自由文本关键字、运算符（例如 `AND`、`OR`）和属性限制。 语法和命令取决于在同一 **查询** 请求主体中指向的实体类型（在 **entityTypes** 属性中）。
 
-可搜索的属性各不相同，具体取决于实体类型。 有关详细信息，请参阅：
+可搜索的属性各不相同，具体取决于实体类型。有关详细信息，请参阅：
 
 - [电子邮件属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [站点属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
@@ -192,6 +192,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 | [searchHit](./searchhit.md)        | 删除属性 | **_sortField** | 不适用 |
 | [searchHit](./searchhit.md)        | 重命名属性 | **_source** | **resource** |
 | [searchHit](./searchhit.md)        | 重命名属性 | **_summary**  | **summary**  |
+| [entityTypes](./enums.md)          | 重命名枚举值 | **unknownfuturevalue**  | **unknownFutureValue**  |
 
 ## <a name="see-also"></a>另请参阅
 

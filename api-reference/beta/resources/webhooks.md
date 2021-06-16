@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph API 获取更改通知
-description: 向客户端传递更改通知。
+description: 为客户提供更改通知。
 localization_priority: Normal
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 941189d27c01222309a8011fe7701d811ac46a7c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b08b1e3232998eff678ffbf7852a144f641f84e1
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468682"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941522"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -36,8 +36,11 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | Outlook 个人[联系人][] | 对用户邮箱中的所有个人联系人更改：<br>`/users/{id}/contacts` | 否 |
 | 安全[警报][] | 对特定警报更改：<br>`/security/alerts/{id}` <br>对已筛选的警报更改：<br> `/security/alerts/?$filter`| 否 |
 | Teams [callRecord][] | 更改 _所有_ 呼叫记录： `/communications/callRecords` | 否 |
+| Teams[频道][] | 更改所有团队中的频道：<br>`/teams/getAllChannels` <br>对特定团队中的频道的更改：<br>`/teams/{id}/channels` | 是 |
 | Teams [chatmessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
-| Teams [状态][] | 对单个用户状态所做的更改： `/communications/presences/{id}` <br> 对多个用户状态所做的更改：<br> `/communications/presences?$filter=id in ({id},{id}...)` | 是 |
+| Teams [conversationMember][] | 对特定团队中的成员身份的更改：<br>`/teams/{id}/members` | 是 |
+| Teams[状态][] | 对单个用户状态所做的更改： `/communications/presences/{id}` <br> 对多个用户状态所做的更改：<br> `/communications/presences?$filter=id in ({id},{id}...)` | 是 |
+| Teams[团队][] | 对租户中任何团队的更改：<br>`/teams` <br>对特定团队的更改：<br>`/teams/{id}` | 是 |
 | [todoTask][] | 对特定任务列表中所有任务的更改：<br>`/me/todo/lists/{todoTaskListId}/tasks` | 否 |
 | [用户][] | 对所有用户更改：<br>`/users` <br>对特定用户更改：<br>`/users/{id}`| 否 |
 
@@ -50,9 +53,9 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 
 | 权限类型                        | 支持的资源类型                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| 委派 - 工作或学校帐户     | [alert][]、 [contact][]、 [conversation][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [presence][]、 [chatMessage][] (preview) ， [todoTask][] |
+| 委派 - 工作或学校帐户     | [alert][]、 [channel][]、 [contact][]、 [conversation][]、 [conversationMember][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [presence][]、 [chatMessage][] (preview) ， [team][]， [todoTask][] |
 | 委派 - 个人 Microsoft 帐户 | [contact][]、 [driveItem][]、 [list][]、 [event][]、 [message][]、[todoTask][]                                     |
-| Application                            | [alert][]、 [contact][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [callRecord][]、 [chatMessage][]、 [printer][]、 [printTaskDefinition][]|
+| 应用程序                            | [alert][]、 [channel][]、 [contact][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [callRecord][]、 [chatMessage][]、 [conversationMember][]、 [printer][]、 [printTaskDefinition][]、 [team][] |
 
 ## <a name="see-also"></a>另请参阅
 
@@ -66,6 +69,8 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [chatMessage]: ./chatmessage.md
 [contact]: ./contact.md
 [对话]: ./conversation.md
+[conversationMember]: ./conversationmember.md
+[频道]: ./channel.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md
 [site]: ./site.md
@@ -78,5 +83,6 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [状态]: ./presence.md
 [打印机]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[团队]: ./team.md
 [todoTask]: ./todoTask.md
 
