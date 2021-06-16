@@ -3,18 +3,18 @@ title: 自定义 Microsoft Graph SDK 服务客户端
 description: 提供有关如何更改 Microsoft Graph SDK 服务客户端的默认行为的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: a2750babd35f1e3fd5f361ae43009eaa25eefe87
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: d68a8c3b3d1dcd70026217bdbaf99f6a099862d5
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911653"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941541"
 ---
-# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="4d05b-103">自定义 Microsoft Graph SDK 服务客户端</span><span class="sxs-lookup"><span data-stu-id="4d05b-103">Customize the Microsoft Graph SDK service client</span></span>
+# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="7bbfd-103">自定义 Microsoft Graph SDK 服务客户端</span><span class="sxs-lookup"><span data-stu-id="7bbfd-103">Customize the Microsoft Graph SDK service client</span></span>
 
-<span data-ttu-id="4d05b-104">Microsoft Graph SDK 客户端配置了一组默认的中间件，允许 SDK 与 Microsoft Graph终结点通信。</span><span class="sxs-lookup"><span data-stu-id="4d05b-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="4d05b-105">此默认集是可自定义的，允许您更改客户端的行为。</span><span class="sxs-lookup"><span data-stu-id="4d05b-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="4d05b-106">例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。</span><span class="sxs-lookup"><span data-stu-id="4d05b-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="4d05b-107">可以添加和删除中间件组件。</span><span class="sxs-lookup"><span data-stu-id="4d05b-107">You can add and remove middleware components.</span></span> <span data-ttu-id="4d05b-108">需要注意的是，中间件组件的运行顺序非常重要。</span><span class="sxs-lookup"><span data-stu-id="4d05b-108">It is important to note that the order in which middleware components run is significant.</span></span>
+<span data-ttu-id="7bbfd-104">Microsoft Graph SDK 客户端配置了一组默认的中间件，允许 SDK 与 Microsoft Graph终结点通信。</span><span class="sxs-lookup"><span data-stu-id="7bbfd-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="7bbfd-105">此默认集是可自定义的，允许您更改客户端的行为。</span><span class="sxs-lookup"><span data-stu-id="7bbfd-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="7bbfd-106">例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。</span><span class="sxs-lookup"><span data-stu-id="7bbfd-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="7bbfd-107">可以添加和删除中间件组件。</span><span class="sxs-lookup"><span data-stu-id="7bbfd-107">You can add and remove middleware components.</span></span> <span data-ttu-id="7bbfd-108">需要注意的是，中间件组件的运行顺序非常重要。</span><span class="sxs-lookup"><span data-stu-id="7bbfd-108">It is important to note that the order in which middleware components run is significant.</span></span>
 
-## <a name="c"></a>[<span data-ttu-id="4d05b-109">C#</span><span class="sxs-lookup"><span data-stu-id="4d05b-109">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="7bbfd-109">C#</span><span class="sxs-lookup"><span data-stu-id="7bbfd-109">C#</span></span>](#tab/csharp)
 
 ```csharp
 var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
@@ -38,7 +38,7 @@ var messages = await customGraphClient.Me.Messages.Request()
     .GetAsync();
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="4d05b-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="4d05b-110">TypeScript</span></span>](#tab/typeScript)
+## <a name="typescript"></a>[<span data-ttu-id="7bbfd-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="7bbfd-110">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Create a custom auth provider
@@ -69,7 +69,7 @@ let response: PageCollection = await client
   .get();
 ```
 
-### <a name="simpleauthproviderts"></a><span data-ttu-id="4d05b-111">SimpleAuthProvider.ts</span><span class="sxs-lookup"><span data-stu-id="4d05b-111">SimpleAuthProvider.ts</span></span>
+### <a name="simpleauthproviderts"></a><span data-ttu-id="7bbfd-111">SimpleAuthProvider.ts</span><span class="sxs-lookup"><span data-stu-id="7bbfd-111">SimpleAuthProvider.ts</span></span>
 
 ```typescript
 import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
@@ -87,7 +87,7 @@ export default class SimpleAuthProvider implements AuthenticationProvider {
 }
 ```
 
-### <a name="customlogginghandlerts"></a><span data-ttu-id="4d05b-112">CustomLoggingHandler.ts</span><span class="sxs-lookup"><span data-stu-id="4d05b-112">CustomLoggingHandler.ts</span></span>
+### <a name="customlogginghandlerts"></a><span data-ttu-id="7bbfd-112">CustomLoggingHandler.ts</span><span class="sxs-lookup"><span data-stu-id="7bbfd-112">CustomLoggingHandler.ts</span></span>
 
 ```typescript
 import { Context, Middleware } from "@microsoft/microsoft-graph-client";
@@ -105,7 +105,7 @@ export default class CustomLoggingHandler implements Middleware {
 }
 ```
 
-## <a name="java"></a>[<span data-ttu-id="4d05b-113">Java</span><span class="sxs-lookup"><span data-stu-id="4d05b-113">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="7bbfd-113">Java</span><span class="sxs-lookup"><span data-stu-id="7bbfd-113">Java</span></span>](#tab/java)
 
 ```java
 // you can configure any OkHttpClient option and add interceptors
@@ -124,12 +124,12 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ---
 
-## <a name="configuring-the-http-proxy-for-the-client"></a><span data-ttu-id="4d05b-114">为客户端配置 HTTP 代理</span><span class="sxs-lookup"><span data-stu-id="4d05b-114">Configuring the HTTP proxy for the client</span></span>
+## <a name="configuring-the-http-proxy-for-the-client"></a><span data-ttu-id="7bbfd-114">为客户端配置 HTTP 代理</span><span class="sxs-lookup"><span data-stu-id="7bbfd-114">Configuring the HTTP proxy for the client</span></span>
 
-<span data-ttu-id="4d05b-115">某些环境要求客户端应用程序在可以访问公共 Internet 之前使用 HTTP 代理。</span><span class="sxs-lookup"><span data-stu-id="4d05b-115">Some environments require client applications to use a HTTP proxy before they can access the public internet.</span></span> <span data-ttu-id="4d05b-116">本部分演示如何为 Microsoft SDK 配置Graph代理。</span><span class="sxs-lookup"><span data-stu-id="4d05b-116">This section shows how to configure the proxy for the Microsoft Graph SDKs.</span></span>
+<span data-ttu-id="7bbfd-115">某些环境要求客户端应用程序在可以访问公共 Internet 之前使用 HTTP 代理。</span><span class="sxs-lookup"><span data-stu-id="7bbfd-115">Some environments require client applications to use a HTTP proxy before they can access the public internet.</span></span> <span data-ttu-id="7bbfd-116">本部分演示如何为 Microsoft SDK 配置Graph代理。</span><span class="sxs-lookup"><span data-stu-id="7bbfd-116">This section shows how to configure the proxy for the Microsoft Graph SDKs.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-## <a name="c"></a>[<span data-ttu-id="4d05b-117">C#</span><span class="sxs-lookup"><span data-stu-id="4d05b-117">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="7bbfd-117">C#</span><span class="sxs-lookup"><span data-stu-id="7bbfd-117">C#</span></span>](#tab/csharp)
 
 ```csharp
 // URI to proxy
@@ -160,15 +160,23 @@ var credential = new ClientSecretCredential(
     options
 );
 
-// Create a new Microsoft.Graph.HttpProvider using the
-// proxied HttpClientHandler
-var httpProvider = new HttpProvider(handler, true);
-
 var scopes = new[] { "https://graph.microsoft.com/.default" };
-var graphClient = new GraphServiceClient(credential, scopes, httpProvider);
+
+// This example works with Microsoft.Graph 4+
+var httpClient = GraphClientFactory.Create(new TokenCredentialAuthProvider(credential, scopes), proxy: new WebProxy(new Uri(proxyAddress)));
+
+GraphServiceClient graphClient = new(httpClient);
+
+/* For Microsoft.Graph version < 4, you'll need to implement an authHandler. Please note
+/* that Microsoft.Graph.Auth is deemphasized and will not leave the preview state.
+
+var httpProvider = new HttpProvider(handler, true);
+GraphServiceClient graphClient = new(authHandler, httpProvider);
+
+*/
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="4d05b-118">TypeScript</span><span class="sxs-lookup"><span data-stu-id="4d05b-118">TypeScript</span></span>](#tab/typeScript)
+## <a name="typescript"></a>[<span data-ttu-id="7bbfd-118">TypeScript</span><span class="sxs-lookup"><span data-stu-id="7bbfd-118">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Create a credential from @azure/identity package
@@ -203,7 +211,7 @@ const client = MicrosoftGraph.Client.initWithMiddleware({
 });
 ```
 
-## <a name="java"></a>[<span data-ttu-id="4d05b-119">Java</span><span class="sxs-lookup"><span data-stu-id="4d05b-119">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="7bbfd-119">Java</span><span class="sxs-lookup"><span data-stu-id="7bbfd-119">Java</span></span>](#tab/java)
 
 ```Java
 final int proxyPort = 8080;
@@ -258,6 +266,6 @@ final GraphServiceClient graphServiceClient =
 ```
 
 > [!NOTE]
-> <span data-ttu-id="4d05b-120">有关 Azure Identity 代理配置详细信息，请参阅 [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions)。</span><span class="sxs-lookup"><span data-stu-id="4d05b-120">For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).</span></span>
+> <span data-ttu-id="7bbfd-120">有关 Azure Identity 代理配置详细信息，请参阅 [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions)。</span><span class="sxs-lookup"><span data-stu-id="7bbfd-120">For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).</span></span>
 
 ---
