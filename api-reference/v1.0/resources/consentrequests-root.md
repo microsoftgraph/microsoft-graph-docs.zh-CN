@@ -1,27 +1,27 @@
 ---
-title: Azure Active Directory 同意请求
+title: Azure Active Directory同意请求
 description: 使用 Azure AD 同意请求来管理尝试访问需要管理员同意的应用的用户的请求工作流。
 localization_priority: Normal
 author: psignoret
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: d9d19a3756ac39fef061584e97ad55e4a4c12aff
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: e39a1c71064282f3422a3bc48e3d019a852dbb95
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698046"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971368"
 ---
-# <a name="azure-active-directory-consent-requests"></a>Azure Active Directory 同意请求
+# <a name="azure-active-directory-consent-requests"></a>Azure Active Directory同意请求
 
 命名空间：microsoft.graph
 
-Azure Active Directory (Azure AD) 同意请求可帮助你管理尝试访问需要管理员审批的应用的用户的请求工作流。
+Azure Active Directory (Azure AD) 请求可帮助你管理尝试访问需要管理员批准的应用的用户的请求工作流。
 
 若要允许用户请求其未经授权应用程序的访问权限或管理员同意以向自己授予同意，请首先启用同意请求工作流。 
 
 >[!NOTE]
->当前 API 仅限于配置工作流、读取请求列表和拒绝请求。 目前，没有任何方法可用于以编程方式批准请求。 但是，请求的内容可用于重新创建可用于授予管理员同意和批准请求的 URL。
+>当前 API 仅限于配置工作流和读取请求列表。 目前，没有任何方法可用于以编程方式批准或拒绝请求。 但是，请求的内容可用于重新创建可用于授予管理员同意和批准请求的 URL。
 
 同意请求资源类型包括：
 
@@ -51,8 +51,7 @@ Azure Active Directory (Azure AD) 同意请求可帮助你管理尝试访问需�
 
 | 操作 | 委派权限 | 呼叫用户的必需目录角色 |
 |:------------------|:------------|:--------------------------------------------|
-| 阅读 | ConsentRequest.Read.All、ConsentRequest.ReadWrite.All | 全局管理员、全局读者、云应用管理员和应用程序管理员 |
-| 更新 | ConsentRequest.ReadWrite.All |全局管理员 |
+| 读取 | ConsentRequest.Read.All、ConsentRequest.ReadWrite.All | 全局管理员、全局读者、云应用管理员和应用程序管理员 |
 
 ## <a name="see-also"></a>另请参阅
 

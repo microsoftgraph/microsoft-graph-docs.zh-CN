@@ -5,12 +5,12 @@ author: bhartono
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2bf40e04e4d25b3fb4c8f97ebd61e18893f1b17d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ff7681c0e62be91dd46a8482880ca595f8e6b96e
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787476"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971431"
 ---
 # <a name="add-member-to-a-chat"></a>向聊天添加成员
 
@@ -24,9 +24,9 @@ ms.locfileid: "52787476"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| ChatMember.ReadWrite |
+|委派（工作或学校帐户）| ChatMember.ReadWrite、Chat.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|应用程序| ChatMember.ReadWrite.All、Chat.ReadWrite.All |
 
 <!-- { "blockType": "ignored"} -->
 ```http

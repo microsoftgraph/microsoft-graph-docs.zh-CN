@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9c0b801492fb0970ae97f9a48d806dc3dc2eff74
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: cc6f5bcd883cc6f289444f253be29c12efcce2c0
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52695950"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971389"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -26,7 +26,7 @@ ms.locfileid: "52695950"
 |:---------------------------------------|:--------------------------------------------|
 |委派（工作或学校帐户）| ChannelMessage.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All |
+|应用程序| ChannelMessage.Read.Group*、ChannelMessage.Read.All |
 
 ### <a name="permissions-for-chat"></a>聊天权限
 

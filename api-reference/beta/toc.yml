@@ -982,7 +982,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出 transitive memberOf
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1708,7 +1708,7 @@ items:
               - name: 删除
                 href: api/bookingstaffmember-delete.md
       - name: 设备和应用
-        expanded: true
+        expanded: false
         items:
           - name: 云打印
             items:
@@ -4231,7 +4231,7 @@ items:
                     href: resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md
                   - name: BitLocker 恢复选项
                     href: resources/intune-deviceconfig-bitlockerrecoveryoptions.md
-                  - name: BitLocker密码轮换类型
+                  - name: BitLocker 恢复密码轮换类型
                     href: resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md
                   - name: BitLocker 可移动驱动器策略
                     href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
@@ -6826,7 +6826,7 @@ items:
                         href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
                       - name: 更新
                         href: api/intune-fencing-circulargeofencemanagementcondition-update.md
-                  - name: Cloud PC连接问题
+                  - name: 云电脑连接问题
                     href: resources/intune-devices-cloudpcconnectivityissue.md
                     items:
                       - name: 列表
@@ -7898,7 +7898,7 @@ items:
                     href: resources/intune-devices-revokeapplevpplicensesactionresult.md
                   - name: 角色范围标记信息
                     href: resources/intune-auditing-rolescopetaginfo.md
-                  - name: 旋转BitLocker键设备操作结果
+                  - name: 旋转 BitLocker 密钥设备操作结果
                     href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
                   - name: 安全基线类别状态摘要
                     href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
@@ -9513,14 +9513,14 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: 更新
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
-          - name: 'Cloud PC (预览) '
+          - name: '云电脑 (预览) '
             items:
               - name: 虚拟终结点
                 href: resources/virtualendpoint.md
                 items:
                   - name: 获取有效权限
                     href: api/virtualendpoint-geteffectivepermissions.md
-              - name: Cloud PC
+              - name: 云电脑
                 href: resources/cloudpc.md
                 items:
                   - name: 列表
@@ -9529,7 +9529,7 @@ items:
                     href: api/cloudpc-get.md
                   - name: 重新设置
                     href: api/cloudpc-reprovision.md
-              - name: Cloud PC设备映像
+              - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
                 items:
                   - name: 列表
@@ -9542,7 +9542,7 @@ items:
                     href: api/cloudpcdeviceimage-delete.md
                   - name: 获取源图像
                     href: api/cloudpcdeviceimage-getsourceimages.md
-              - name: Cloud PC本地连接
+              - name: 云电脑本地连接
                 href: resources/cloudpconpremisesconnection.md
                 items:
                   - name: 列表
@@ -9559,7 +9559,7 @@ items:
                     href: api/cloudpconpremisesconnection-runhealthcheck.md
                   - name: 更新 Active Directory 域密码
                     href: api/cloudpconpremisesconnection-updateaddomainpassword.md
-              - name: Cloud PC预配策略
+              - name: 云电脑预配策略
                 href: resources/cloudpcprovisioningpolicy.md
                 items:
                   - name: 列表
@@ -10312,9 +10312,9 @@ items:
                     href: api/administrativeunit-get-scopedrolemembers.md
                   - name: 删除作用域角色管理员
                     href: api/administrativeunit-delete-scopedrolemembers.md
-              - name: 'BitLocker预览 (恢复密钥) '
+              - name: 'BitLocker 恢复密钥 (预览) '
                 items:
-                  - name: BitLocker恢复密钥
+                  - name: BitLocker 恢复密钥
                     href: resources/bitlockerrecoverykey.md
                   - name: 列表
                     href: api/bitlocker-list-recoverykeys.md
@@ -11433,7 +11433,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -12285,7 +12285,7 @@ items:
                     href: api/languageproficiency-update.md
                   - name: 删除
                     href: api/languageproficiency-delete.md
-              - name: Names
+              - name: 名称
                 items:
                   - name: 人员姓名
                     href: resources/personname.md
@@ -13195,6 +13195,8 @@ items:
                 href: api/itemanalytics-get.md
               - name: 按间隔获取活动
                 href: api/itemactivity-getbyinterval.md
+              - name: 创建共享链接
+                href: api/listitem-createlink.md
           - name: 页面
             items:
               - name: 网站页面

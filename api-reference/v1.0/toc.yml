@@ -1274,7 +1274,7 @@ items:
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
       - name: 设备和应用
-        expanded: true
+        expanded: false
         items:
           - name: 云打印
             items:
@@ -4917,7 +4917,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 许可请求
                 href: resources/consentrequests-root.md

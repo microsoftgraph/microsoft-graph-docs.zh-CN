@@ -1,16 +1,16 @@
 ---
 title: 向聊天添加选项卡
-description: '将 (固定) 选项卡添加到指定的聊天中。 '
+description: '将 (固定) 选项卡添加到指定聊天。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dfe95846bc117285e9b75afc29af2e7315be53dc
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: f422823b8646bd695c94640b15f456e3e372e0d5
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689640"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971256"
 ---
 # <a name="add-tab-to-chat"></a>向聊天添加选项卡
 
@@ -18,7 +18,7 @@ ms.locfileid: "49689640"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 (固定) [选项卡](../resources/teamstab.md) 添加到指定的 [聊天中](../resources/chat.md)。 相应的应用必须已安装 [在聊天中](../api/chat-list-installedapps.md)。
+将 (固定) [选项卡](../resources/teamstab.md) 添加到指定的 [聊天中](../resources/chat.md)。 相应的应用必须已安装 [在聊天 中](../api/chat-list-installedapps.md)。
 
 > **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上选项卡将添加到会议。
 
@@ -29,8 +29,9 @@ ms.locfileid: "49689640"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.Create、TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-| 应用程序                            | TeamsTab.Create、TeamsTab.ReadWriteForChat.All、TeamsTab.ReadWrite.All |
+| 应用程序                            | TeamsTab.Create.Chat、TeamsTab.ReadWrite.Chat、TeamsTab.Create、TeamsTab.ReadWriteForChat.All、TeamsTab.ReadWrite.All |
 
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +50,7 @@ POST /chats/{chat-id}/tabs
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在正文中 `201 Created` 返回响应代码和 [teamsTab](../resources/teamstab.md) 资源的实例。
+如果成功，此方法在 `201 Created` 正文中返回 响应代码和 [teamsTab](../resources/teamstab.md) 资源的实例。
 
 ## <a name="example"></a>示例
 

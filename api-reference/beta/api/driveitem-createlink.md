@@ -58,7 +58,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 |   属性                 |  类型  |                                 说明                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
-|type|String|可选。要创建的共享链接的类型。   |
+|type|字符串|可选。要创建的共享链接的类型。   |
 |scope|String|可选。 要创建的链接的范围。 匿名、组织或用户。|
 |expirationDateTime|DateTimeOffset|可选。 DateTime 格式为 yyyy-MM-ddTHH：mm：ssZ 的 String 表示权限的过期时间。|
 |密码|String|可选。创建者设置的共享链接的密码。|
