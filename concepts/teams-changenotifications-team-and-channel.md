@@ -12,23 +12,23 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/15/2021
 ms.locfileid: "52941549"
 ---
-# <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a><span data-ttu-id="92423-103">使用 Microsoft Graph 获取团队和频道的更改通知</span><span class="sxs-lookup"><span data-stu-id="92423-103">Get change notifications for teams and channels using Microsoft Graph</span></span>
+# <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a><span data-ttu-id="bdb4b-103">使用 Microsoft Graph 获取团队和频道的更改通知</span><span class="sxs-lookup"><span data-stu-id="bdb4b-103">Get change notifications for teams and channels using Microsoft Graph</span></span>
 
-<span data-ttu-id="92423-104">通过更改通知，可以订阅对团队和频道所做的更改（创建、更新和删除）。</span><span class="sxs-lookup"><span data-stu-id="92423-104">Change notifications enable you to subscribe to changes (create, update, and delete) to teams and channels.</span></span> <span data-ttu-id="92423-105">每当创建、更新或删除团队或频道时，你都可以收到通知。</span><span class="sxs-lookup"><span data-stu-id="92423-105">You can get notified whenever a team or channel is created, updated, or deleted.</span></span> <span data-ttu-id="92423-106">你还可以在通知中获取资源数据，因此避免调用 API 来获取有效负载。</span><span class="sxs-lookup"><span data-stu-id="92423-106">You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.</span></span>
+<span data-ttu-id="bdb4b-104">通过更改通知，可以订阅对团队和频道所做的更改（创建、更新和删除）。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-104">Change notifications enable you to subscribe to changes (create, update, and delete) to teams and channels.</span></span> <span data-ttu-id="bdb4b-105">每当创建、更新或删除团队或频道时，你都可以收到通知。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-105">You can get notified whenever a team or channel is created, updated, or deleted.</span></span> <span data-ttu-id="bdb4b-106">你还可以在通知中获取资源数据，因此避免调用 API 来获取有效负载。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-106">You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.</span></span>
 
-## <a name="subscribe-to-changes-in-any-team-at-tenant-level"></a><span data-ttu-id="92423-107">订阅租户级别上任何团队中的更改</span><span class="sxs-lookup"><span data-stu-id="92423-107">Subscribe to changes in any team at tenant level</span></span>
+## <a name="subscribe-to-changes-in-any-team-at-tenant-level"></a><span data-ttu-id="bdb4b-107">订阅租户级别上任何团队中的更改</span><span class="sxs-lookup"><span data-stu-id="bdb4b-107">Subscribe to changes in any team at tenant level</span></span>
 
-<span data-ttu-id="92423-108">要获取与租户中的任何团队相关的所有更改（创建、更新和删除）的更改通知，请订阅 `/teams`。</span><span class="sxs-lookup"><span data-stu-id="92423-108">To get change notifications for all changes (create, update, and delete) related to any team in a tenant, subscribe to `/teams`.</span></span> <span data-ttu-id="92423-109">此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="92423-109">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
+<span data-ttu-id="bdb4b-108">要获取与租户中的任何团队相关的所有更改（创建、更新和删除）的更改通知，请订阅 `/teams`。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-108">To get change notifications for all changes (create, update, and delete) related to any team in a tenant, subscribe to `/teams`.</span></span> <span data-ttu-id="bdb4b-109">此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-109">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
 
-### <a name="permissions"></a><span data-ttu-id="92423-110">权限</span><span class="sxs-lookup"><span data-stu-id="92423-110">Permissions</span></span>
+### <a name="permissions"></a><span data-ttu-id="bdb4b-110">权限</span><span class="sxs-lookup"><span data-stu-id="bdb4b-110">Permissions</span></span>
 
-|<span data-ttu-id="92423-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="92423-111">Permission type</span></span>      | <span data-ttu-id="92423-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92423-112">Permissions (from least to most privileged)</span></span>              | <span data-ttu-id="92423-113">支持的版本</span><span class="sxs-lookup"><span data-stu-id="92423-113">Supported versions</span></span> |
+|<span data-ttu-id="bdb4b-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="bdb4b-111">Permission type</span></span>      | <span data-ttu-id="bdb4b-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-112">Permissions (from least to most privileged)</span></span>              | <span data-ttu-id="bdb4b-113">支持的版本</span><span class="sxs-lookup"><span data-stu-id="bdb4b-113">Supported versions</span></span> |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|<span data-ttu-id="92423-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92423-114">Delegated (work or school account)</span></span> | <span data-ttu-id="92423-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-115">Not supported.</span></span> | <span data-ttu-id="92423-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-116">Not supported.</span></span> |
-|<span data-ttu-id="92423-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92423-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92423-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-118">Not supported.</span></span>    | <span data-ttu-id="92423-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-119">Not supported.</span></span> |
-|<span data-ttu-id="92423-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="92423-120">Application</span></span> | <span data-ttu-id="92423-121">Team.ReadBasic.All，TeamSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="92423-121">Team.ReadBasic.All, TeamSettings.Read.All</span></span>   | <span data-ttu-id="92423-122">beta 版</span><span class="sxs-lookup"><span data-stu-id="92423-122">beta</span></span>|
+|<span data-ttu-id="bdb4b-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-114">Delegated (work or school account)</span></span> | <span data-ttu-id="bdb4b-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-115">Not supported.</span></span> | <span data-ttu-id="bdb4b-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-116">Not supported.</span></span> |
+|<span data-ttu-id="bdb4b-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bdb4b-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-118">Not supported.</span></span>    | <span data-ttu-id="bdb4b-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-119">Not supported.</span></span> |
+|<span data-ttu-id="bdb4b-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="bdb4b-120">Application</span></span> | <span data-ttu-id="bdb4b-121">Team.ReadBasic.All，TeamSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="bdb4b-121">Team.ReadBasic.All, TeamSettings.Read.All</span></span>   | <span data-ttu-id="bdb4b-122">beta 版</span><span class="sxs-lookup"><span data-stu-id="bdb4b-122">beta</span></span>|
 
-### <a name="example"></a><span data-ttu-id="92423-123">示例</span><span class="sxs-lookup"><span data-stu-id="92423-123">Example</span></span>
+### <a name="example"></a><span data-ttu-id="bdb4b-123">示例</span><span class="sxs-lookup"><span data-stu-id="bdb4b-123">Example</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -46,20 +46,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-changes-in-a-particular-team"></a><span data-ttu-id="92423-124">订阅特定团队中的更改</span><span class="sxs-lookup"><span data-stu-id="92423-124">Subscribe to changes in a particular team</span></span>
+## <a name="subscribe-to-changes-in-a-particular-team"></a><span data-ttu-id="bdb4b-124">订阅特定团队中的更改</span><span class="sxs-lookup"><span data-stu-id="bdb4b-124">Subscribe to changes in a particular team</span></span>
 
 
-<span data-ttu-id="92423-125">要获取与租户中特定团队相关的所有更改的更改通知，请订阅 `/teams/{id}`。</span><span class="sxs-lookup"><span data-stu-id="92423-125">To get change notifications for all changes related to a particular team in a tenant, subscribe to `/teams/{id}`.</span></span> <span data-ttu-id="92423-126">此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="92423-126">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
+<span data-ttu-id="bdb4b-125">要获取与租户中特定团队相关的所有更改的更改通知，请订阅 `/teams/{id}`。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-125">To get change notifications for all changes related to a particular team in a tenant, subscribe to `/teams/{id}`.</span></span> <span data-ttu-id="bdb4b-126">此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-126">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
 
-### <a name="permissions"></a><span data-ttu-id="92423-127">权限</span><span class="sxs-lookup"><span data-stu-id="92423-127">Permissions</span></span>
+### <a name="permissions"></a><span data-ttu-id="bdb4b-127">权限</span><span class="sxs-lookup"><span data-stu-id="bdb4b-127">Permissions</span></span>
 
-|<span data-ttu-id="92423-128">权限类型</span><span class="sxs-lookup"><span data-stu-id="92423-128">Permission type</span></span>      | <span data-ttu-id="92423-129">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92423-129">Permissions (from least to most privileged)</span></span>              | <span data-ttu-id="92423-130">支持的版本</span><span class="sxs-lookup"><span data-stu-id="92423-130">Supported versions</span></span> |
+|<span data-ttu-id="bdb4b-128">权限类型</span><span class="sxs-lookup"><span data-stu-id="bdb4b-128">Permission type</span></span>      | <span data-ttu-id="bdb4b-129">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-129">Permissions (from least to most privileged)</span></span>              | <span data-ttu-id="bdb4b-130">支持的版本</span><span class="sxs-lookup"><span data-stu-id="bdb4b-130">Supported versions</span></span> |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|<span data-ttu-id="92423-131">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92423-131">Delegated (work or school account)</span></span> | <span data-ttu-id="92423-132">Team.ReadBasic.All，TeamSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="92423-132">Team.ReadBasic.All, TeamSettings.Read.All</span></span> | <span data-ttu-id="92423-133">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-133">Not supported.</span></span> |
-|<span data-ttu-id="92423-134">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92423-134">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92423-135">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-135">Not supported.</span></span>    | <span data-ttu-id="92423-136">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-136">Not supported.</span></span> |
-|<span data-ttu-id="92423-137">应用程序</span><span class="sxs-lookup"><span data-stu-id="92423-137">Application</span></span> | <span data-ttu-id="92423-138">Team.ReadBasic.All，TeamSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="92423-138">Team.ReadBasic.All, TeamSettings.Read.All</span></span>    | <span data-ttu-id="92423-139">beta 版</span><span class="sxs-lookup"><span data-stu-id="92423-139">beta</span></span> |
+|<span data-ttu-id="bdb4b-131">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-131">Delegated (work or school account)</span></span> | <span data-ttu-id="bdb4b-132">Team.ReadBasic.All，TeamSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="bdb4b-132">Team.ReadBasic.All, TeamSettings.Read.All</span></span> | <span data-ttu-id="bdb4b-133">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-133">Not supported.</span></span> |
+|<span data-ttu-id="bdb4b-134">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-134">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bdb4b-135">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-135">Not supported.</span></span>    | <span data-ttu-id="bdb4b-136">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-136">Not supported.</span></span> |
+|<span data-ttu-id="bdb4b-137">应用程序</span><span class="sxs-lookup"><span data-stu-id="bdb4b-137">Application</span></span> | <span data-ttu-id="bdb4b-138">Team.ReadBasic.All，TeamSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="bdb4b-138">Team.ReadBasic.All, TeamSettings.Read.All</span></span>    | <span data-ttu-id="bdb4b-139">beta 版</span><span class="sxs-lookup"><span data-stu-id="bdb4b-139">beta</span></span> |
 
-### <a name="example"></a><span data-ttu-id="92423-140">示例</span><span class="sxs-lookup"><span data-stu-id="92423-140">Example</span></span>
+### <a name="example"></a><span data-ttu-id="bdb4b-140">示例</span><span class="sxs-lookup"><span data-stu-id="bdb4b-140">Example</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -78,21 +78,21 @@ Content-Type: application/json
 ```
 
 
-## <a name="subscribe-to-changes-in-any-channel-at-tenant-level"></a><span data-ttu-id="92423-141">订阅租户级别上任何频道中的更改</span><span class="sxs-lookup"><span data-stu-id="92423-141">Subscribe to changes in any channel at tenant level</span></span>
+## <a name="subscribe-to-changes-in-any-channel-at-tenant-level"></a><span data-ttu-id="bdb4b-141">订阅租户级别上任何频道中的更改</span><span class="sxs-lookup"><span data-stu-id="bdb4b-141">Subscribe to changes in any channel at tenant level</span></span>
 
-<span data-ttu-id="92423-142">要获取与租户中任何频道相关的所有更改（创建、更新和删除）的更改通知，请订阅 `/teams/getAllChannels`。</span><span class="sxs-lookup"><span data-stu-id="92423-142">To get change notifications for all changes (create, update, and delete) related to any channel in a tenant, subscribe to `/teams/getAllChannels`.</span></span> <span data-ttu-id="92423-143">此资源支持在通知中 [包括资源数据](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="92423-143">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
+<span data-ttu-id="bdb4b-142">要获取与租户中任何频道相关的所有更改（创建、更新和删除）的更改通知，请订阅 `/teams/getAllChannels`。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-142">To get change notifications for all changes (create, update, and delete) related to any channel in a tenant, subscribe to `/teams/getAllChannels`.</span></span> <span data-ttu-id="bdb4b-143">此资源支持在通知中 [包括资源数据](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-143">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
 
-><span data-ttu-id="92423-144">**注意：** 不支持专用频道。</span><span class="sxs-lookup"><span data-stu-id="92423-144">**Note:** Private channels aren't supported.</span></span>
+><span data-ttu-id="bdb4b-144">**注意：** 不支持专用频道。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-144">**Note:** Private channels aren't supported.</span></span>
 
-### <a name="permissions"></a><span data-ttu-id="92423-145">权限</span><span class="sxs-lookup"><span data-stu-id="92423-145">Permissions</span></span>
+### <a name="permissions"></a><span data-ttu-id="bdb4b-145">权限</span><span class="sxs-lookup"><span data-stu-id="bdb4b-145">Permissions</span></span>
 
-|<span data-ttu-id="92423-146">权限类型</span><span class="sxs-lookup"><span data-stu-id="92423-146">Permission type</span></span>      | <span data-ttu-id="92423-147">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92423-147">Permissions (from least to most privileged)</span></span>              | <span data-ttu-id="92423-148">支持的版本</span><span class="sxs-lookup"><span data-stu-id="92423-148">Supported versions</span></span> |
+|<span data-ttu-id="bdb4b-146">权限类型</span><span class="sxs-lookup"><span data-stu-id="bdb4b-146">Permission type</span></span>      | <span data-ttu-id="bdb4b-147">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-147">Permissions (from least to most privileged)</span></span>              | <span data-ttu-id="bdb4b-148">支持的版本</span><span class="sxs-lookup"><span data-stu-id="bdb4b-148">Supported versions</span></span> |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|<span data-ttu-id="92423-149">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92423-149">Delegated (work or school account)</span></span> | <span data-ttu-id="92423-150">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-150">Not supported.</span></span> | <span data-ttu-id="92423-151">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-151">Not supported.</span></span> |
-|<span data-ttu-id="92423-152">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92423-152">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92423-153">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-153">Not supported.</span></span>    | <span data-ttu-id="92423-154">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-154">Not supported.</span></span> |
-|<span data-ttu-id="92423-155">应用程序</span><span class="sxs-lookup"><span data-stu-id="92423-155">Application</span></span> | <span data-ttu-id="92423-156">Channel.ReadBasic.All，ChannelSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="92423-156">Channel.ReadBasic.All, ChannelSettings.Read.All</span></span> | <span data-ttu-id="92423-157">beta 版</span><span class="sxs-lookup"><span data-stu-id="92423-157">beta</span></span> |
+|<span data-ttu-id="bdb4b-149">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-149">Delegated (work or school account)</span></span> | <span data-ttu-id="bdb4b-150">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-150">Not supported.</span></span> | <span data-ttu-id="bdb4b-151">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-151">Not supported.</span></span> |
+|<span data-ttu-id="bdb4b-152">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-152">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bdb4b-153">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-153">Not supported.</span></span>    | <span data-ttu-id="bdb4b-154">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-154">Not supported.</span></span> |
+|<span data-ttu-id="bdb4b-155">应用程序</span><span class="sxs-lookup"><span data-stu-id="bdb4b-155">Application</span></span> | <span data-ttu-id="bdb4b-156">Channel.ReadBasic.All，ChannelSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="bdb4b-156">Channel.ReadBasic.All, ChannelSettings.Read.All</span></span> | <span data-ttu-id="bdb4b-157">beta 版</span><span class="sxs-lookup"><span data-stu-id="bdb4b-157">beta</span></span> |
 
-### <a name="example"></a><span data-ttu-id="92423-158">示例</span><span class="sxs-lookup"><span data-stu-id="92423-158">Example</span></span>
+### <a name="example"></a><span data-ttu-id="bdb4b-158">示例</span><span class="sxs-lookup"><span data-stu-id="bdb4b-158">Example</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -110,20 +110,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a><span data-ttu-id="92423-159">订阅特定团队的任何频道中的更改</span><span class="sxs-lookup"><span data-stu-id="92423-159">Subscribe to changes in any channel of a particular team</span></span>
+## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a><span data-ttu-id="bdb4b-159">订阅特定团队的任何频道中的更改</span><span class="sxs-lookup"><span data-stu-id="bdb4b-159">Subscribe to changes in any channel of a particular team</span></span>
 
 
-<span data-ttu-id="92423-160">要获取与特定团队中任何频道相关的所有更改的更改通知，请订阅 `/teams/{id}/channels`。</span><span class="sxs-lookup"><span data-stu-id="92423-160">To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{id}/channels`.</span></span> <span data-ttu-id="92423-161">此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="92423-161">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
+<span data-ttu-id="bdb4b-160">要获取与特定团队中任何频道相关的所有更改的更改通知，请订阅 `/teams/{id}/channels`。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-160">To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{id}/channels`.</span></span> <span data-ttu-id="bdb4b-161">此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-161">This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.</span></span>
 
-### <a name="permissions"></a><span data-ttu-id="92423-162">权限</span><span class="sxs-lookup"><span data-stu-id="92423-162">Permissions</span></span>
+### <a name="permissions"></a><span data-ttu-id="bdb4b-162">权限</span><span class="sxs-lookup"><span data-stu-id="bdb4b-162">Permissions</span></span>
 
-|<span data-ttu-id="92423-163">权限类型</span><span class="sxs-lookup"><span data-stu-id="92423-163">Permission type</span></span>      | <span data-ttu-id="92423-164">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92423-164">Permissions (from least to most privileged)</span></span>              | <span data-ttu-id="92423-165">支持的版本</span><span class="sxs-lookup"><span data-stu-id="92423-165">Supported versions</span></span> |
+|<span data-ttu-id="bdb4b-163">权限类型</span><span class="sxs-lookup"><span data-stu-id="bdb4b-163">Permission type</span></span>      | <span data-ttu-id="bdb4b-164">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-164">Permissions (from least to most privileged)</span></span>              | <span data-ttu-id="bdb4b-165">支持的版本</span><span class="sxs-lookup"><span data-stu-id="bdb4b-165">Supported versions</span></span> |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|<span data-ttu-id="92423-166">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92423-166">Delegated (work or school account)</span></span> | <span data-ttu-id="92423-167">Channel.ReadBasic.All，ChannelSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="92423-167">Channel.ReadBasic.All, ChannelSettings.Read.All</span></span> | <span data-ttu-id="92423-168">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-168">Not supported.</span></span> |
-|<span data-ttu-id="92423-169">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92423-169">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92423-170">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-170">Not supported.</span></span>    | <span data-ttu-id="92423-171">不支持。</span><span class="sxs-lookup"><span data-stu-id="92423-171">Not supported.</span></span> |
-|<span data-ttu-id="92423-172">应用程序</span><span class="sxs-lookup"><span data-stu-id="92423-172">Application</span></span> | <span data-ttu-id="92423-173">Channel.ReadBasic.All，ChannelSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="92423-173">Channel.ReadBasic.All, ChannelSettings.Read.All</span></span>   | <span data-ttu-id="92423-174">beta 版</span><span class="sxs-lookup"><span data-stu-id="92423-174">beta</span></span> |
+|<span data-ttu-id="bdb4b-166">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-166">Delegated (work or school account)</span></span> | <span data-ttu-id="bdb4b-167">Channel.ReadBasic.All，ChannelSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="bdb4b-167">Channel.ReadBasic.All, ChannelSettings.Read.All</span></span> | <span data-ttu-id="bdb4b-168">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-168">Not supported.</span></span> |
+|<span data-ttu-id="bdb4b-169">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bdb4b-169">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bdb4b-170">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-170">Not supported.</span></span>    | <span data-ttu-id="bdb4b-171">不支持。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-171">Not supported.</span></span> |
+|<span data-ttu-id="bdb4b-172">应用程序</span><span class="sxs-lookup"><span data-stu-id="bdb4b-172">Application</span></span> | <span data-ttu-id="bdb4b-173">Channel.ReadBasic.All，ChannelSettings.Read.All</span><span class="sxs-lookup"><span data-stu-id="bdb4b-173">Channel.ReadBasic.All, ChannelSettings.Read.All</span></span>   | <span data-ttu-id="bdb4b-174">beta 版</span><span class="sxs-lookup"><span data-stu-id="bdb4b-174">beta</span></span> |
 
-### <a name="example"></a><span data-ttu-id="92423-175">示例</span><span class="sxs-lookup"><span data-stu-id="92423-175">Example</span></span>
+### <a name="example"></a><span data-ttu-id="bdb4b-175">示例</span><span class="sxs-lookup"><span data-stu-id="bdb4b-175">Example</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -142,9 +142,9 @@ Content-Type: application/json
 ```
 
 
-### <a name="notifications-with-resource-data"></a><span data-ttu-id="92423-176">包含资源数据的通知</span><span class="sxs-lookup"><span data-stu-id="92423-176">Notifications with resource data</span></span>
+### <a name="notifications-with-resource-data"></a><span data-ttu-id="bdb4b-176">包含资源数据的通知</span><span class="sxs-lookup"><span data-stu-id="bdb4b-176">Notifications with resource data</span></span>
 
-<span data-ttu-id="92423-177">对于包含资源数据的通知，负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="92423-177">For notifications with resource data, the payload looks like the following.</span></span> <span data-ttu-id="92423-178">此有效负载用于团队中的属性更改。</span><span class="sxs-lookup"><span data-stu-id="92423-178">This payload is for a property change in a team.</span></span>
+<span data-ttu-id="bdb4b-177">对于包含资源数据的通知，负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-177">For notifications with resource data, the payload looks like the following.</span></span> <span data-ttu-id="bdb4b-178">此有效负载用于团队中的属性更改。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-178">This payload is for a property change in a team.</span></span>
 
 ```json
 {
@@ -173,9 +173,9 @@ Content-Type: application/json
 
 
 
-<span data-ttu-id="92423-179">已解密的通知有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="92423-179">The decrypted notification payload looks like the following.</span></span> <span data-ttu-id="92423-180">有效负载符合 [团队](/graph/api/resources/team?preserve-view=true) 架构。</span><span class="sxs-lookup"><span data-stu-id="92423-180">The payload conforms to the [teams](/graph/api/resources/team?preserve-view=true) schema.</span></span> <span data-ttu-id="92423-181">该有效负载类似于 GET 操作返回的负载。</span><span class="sxs-lookup"><span data-stu-id="92423-181">The payload is similar to that returned by GET operations.</span></span>
+<span data-ttu-id="bdb4b-179">已解密的通知有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-179">The decrypted notification payload looks like the following.</span></span> <span data-ttu-id="bdb4b-180">有效负载符合 [团队](/graph/api/resources/team?preserve-view=true) 架构。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-180">The payload conforms to the [teams](/graph/api/resources/team?preserve-view=true) schema.</span></span> <span data-ttu-id="bdb4b-181">该有效负载类似于 GET 操作返回的负载。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-181">The payload is similar to that returned by GET operations.</span></span>
 
-><span data-ttu-id="92423-182">**注意：** [discoverySettings](/graph/api/resources/teamdiscoverysettings?preserve-view=true) 和 [classSettings](/graph/api/resources/teamclasssettings?preserve-view=true) 不会在有效负载数据中公开。</span><span class="sxs-lookup"><span data-stu-id="92423-182">**Note:** [discoverySettings](/graph/api/resources/teamdiscoverysettings?preserve-view=true) and [classSettings](/graph/api/resources/teamclasssettings?preserve-view=true) aren't exposed in payload data.</span></span>
+><span data-ttu-id="bdb4b-182">**注意：** [discoverySettings](/graph/api/resources/teamdiscoverysettings?preserve-view=true) 和 [classSettings](/graph/api/resources/teamclasssettings?preserve-view=true) 不会在有效负载数据中公开。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-182">**Note:** [discoverySettings](/graph/api/resources/teamdiscoverysettings?preserve-view=true) and [classSettings](/graph/api/resources/teamclasssettings?preserve-view=true) aren't exposed in payload data.</span></span>
 
 ```json
 {
@@ -218,7 +218,7 @@ Content-Type: application/json
 ```
 
 
-<span data-ttu-id="92423-183">对于包含资源数据的通知，有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="92423-183">For notifications with resource data, the payload looks like the following.</span></span> <span data-ttu-id="92423-184">此有效负载用于频道中的属性更改。</span><span class="sxs-lookup"><span data-stu-id="92423-184">This payload is for a property change in a channel.</span></span>
+<span data-ttu-id="bdb4b-183">对于包含资源数据的通知，有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-183">For notifications with resource data, the payload looks like the following.</span></span> <span data-ttu-id="bdb4b-184">此有效负载用于频道中的属性更改。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-184">This payload is for a property change in a channel.</span></span>
 
 ```json
 {
@@ -246,7 +246,7 @@ Content-Type: application/json
 ```
   
 
-<span data-ttu-id="92423-185">已解密的通知有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="92423-185">The decrypted notification payload looks like the following.</span></span> <span data-ttu-id="92423-186">有效负载符合 [频道](/graph/api/resources/channel?preserve-view=true) 架构。</span><span class="sxs-lookup"><span data-stu-id="92423-186">The payload conforms to the [channel](/graph/api/resources/channel?preserve-view=true) schema.</span></span> <span data-ttu-id="92423-187">该负载类似于 GET 操作返回的负载。</span><span class="sxs-lookup"><span data-stu-id="92423-187">The payload is similar to that returned by GET operations.</span></span>
+<span data-ttu-id="bdb4b-185">已解密的通知有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-185">The decrypted notification payload looks like the following.</span></span> <span data-ttu-id="bdb4b-186">有效负载符合 [频道](/graph/api/resources/channel?preserve-view=true) 架构。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-186">The payload conforms to the [channel](/graph/api/resources/channel?preserve-view=true) schema.</span></span> <span data-ttu-id="bdb4b-187">该负载类似于 GET 操作返回的负载。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-187">The payload is similar to that returned by GET operations.</span></span>
 
 ```json
 {
@@ -263,11 +263,11 @@ Content-Type: application/json
 ```
 
 
-### <a name="notifications-without-resource-data"></a><span data-ttu-id="92423-188">不含资源数据的通知</span><span class="sxs-lookup"><span data-stu-id="92423-188">Notifications without resource data</span></span>
+### <a name="notifications-without-resource-data"></a><span data-ttu-id="bdb4b-188">不含资源数据的通知</span><span class="sxs-lookup"><span data-stu-id="bdb4b-188">Notifications without resource data</span></span>
 
-<span data-ttu-id="92423-189">不含资源数据的通知为你提供了足够的信息来进行 GET 调用以获取消息内容。</span><span class="sxs-lookup"><span data-stu-id="92423-189">Notifications without resource data give you enough information to make GET calls to get the message content.</span></span> <span data-ttu-id="92423-190">订阅不含资源数据的通知不需要加密证书（因为不会发送实际资源数据）。</span><span class="sxs-lookup"><span data-stu-id="92423-190">Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).</span></span>
+<span data-ttu-id="bdb4b-189">不含资源数据的通知为你提供了足够的信息来进行 GET 调用以获取消息内容。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-189">Notifications without resource data give you enough information to make GET calls to get the message content.</span></span> <span data-ttu-id="bdb4b-190">订阅不含资源数据的通知不需要加密证书（因为不会发送实际资源数据）。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-190">Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).</span></span>
 
-<span data-ttu-id="92423-191">对于不包含资源数据的通知，有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="92423-191">For notifications without resource data, the payload looks like the following.</span></span> <span data-ttu-id="92423-192">此有效负载用于团队中的属性更改。</span><span class="sxs-lookup"><span data-stu-id="92423-192">This payload is for a property change in a team.</span></span>
+<span data-ttu-id="bdb4b-191">对于不包含资源数据的通知，有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-191">For notifications without resource data, the payload looks like the following.</span></span> <span data-ttu-id="bdb4b-192">此有效负载用于团队中的属性更改。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-192">This payload is for a property change in a team.</span></span>
 
 ```json
 {
@@ -285,12 +285,12 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="92423-193">**resource** 和 **@odata.id** 属性可用于对 Microsoft Graph 进行调用以获取消息负载。</span><span class="sxs-lookup"><span data-stu-id="92423-193">The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message.</span></span> <span data-ttu-id="92423-194">GET 调用将始终返回消息的当前状态。</span><span class="sxs-lookup"><span data-stu-id="92423-194">GET calls will always return the current state of the message.</span></span> <span data-ttu-id="92423-195">如果在发送通知和检索消息之间更改了消息，则该操作将返回更新的消息。</span><span class="sxs-lookup"><span data-stu-id="92423-195">If the message is changed between when the notification is sent and when the message is retrieved, the operation will return the updated message.</span></span>
+<span data-ttu-id="bdb4b-193">**resource** 和 **@odata.id** 属性可用于对 Microsoft Graph 进行调用以获取消息负载。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-193">The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message.</span></span> <span data-ttu-id="bdb4b-194">GET 调用将始终返回消息的当前状态。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-194">GET calls will always return the current state of the message.</span></span> <span data-ttu-id="bdb4b-195">如果在发送通知和检索消息之间更改了消息，则该操作将返回更新的消息。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-195">If the message is changed between when the notification is sent and when the message is retrieved, the operation will return the updated message.</span></span>
 
 
-><span data-ttu-id="92423-196">**注意：** 有效负载中不返回频道电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="92423-196">**Note:** Channel email address isn't returned in the payload.</span></span>
+><span data-ttu-id="bdb4b-196">**注意：** 有效负载中不返回频道电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-196">**Note:** Channel email address isn't returned in the payload.</span></span>
 
-<span data-ttu-id="92423-197">对于不包含资源数据的通知，有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="92423-197">For notifications without resource data, the payload looks like the following.</span></span> <span data-ttu-id="92423-198">此有效负载用于团队中的属性更改。</span><span class="sxs-lookup"><span data-stu-id="92423-198">This payload is for a property change in a team.</span></span>
+<span data-ttu-id="bdb4b-197">对于不包含资源数据的通知，有效负载如下所示。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-197">For notifications without resource data, the payload looks like the following.</span></span> <span data-ttu-id="bdb4b-198">此有效负载用于团队中的属性更改。</span><span class="sxs-lookup"><span data-stu-id="bdb4b-198">This payload is for a property change in a team.</span></span>
 
 ```json
 {
@@ -307,6 +307,6 @@ Content-Type: application/json
 ```
 
 
-## <a name="see-also"></a><span data-ttu-id="92423-199">另请参阅</span><span class="sxs-lookup"><span data-stu-id="92423-199">See also</span></span>
-- [<span data-ttu-id="92423-200">Microsoft Graph 更改通知</span><span class="sxs-lookup"><span data-stu-id="92423-200">Microsoft Graph change notifications</span></span>](webhooks.md)
-- [<span data-ttu-id="92423-201">Microsoft Teams API 概述</span><span class="sxs-lookup"><span data-stu-id="92423-201">Microsoft Teams API overview</span></span>](teams-concept-overview.md)
+## <a name="see-also"></a><span data-ttu-id="bdb4b-199">另请参阅</span><span class="sxs-lookup"><span data-stu-id="bdb4b-199">See also</span></span>
+- [<span data-ttu-id="bdb4b-200">Microsoft Graph 更改通知</span><span class="sxs-lookup"><span data-stu-id="bdb4b-200">Microsoft Graph change notifications</span></span>](webhooks.md)
+- [<span data-ttu-id="bdb4b-201">Microsoft Teams API 概述</span><span class="sxs-lookup"><span data-stu-id="bdb4b-201">Microsoft Teams API overview</span></span>](teams-concept-overview.md)
