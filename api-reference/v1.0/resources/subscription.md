@@ -1,22 +1,22 @@
 ---
 title: 订阅资源类型
-description: 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，支持订阅以下资源：
+description: 订阅允许客户端应用接收有关 Microsoft Graph 数据更改的通知。目前，支持订阅以下资源：
 localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: c47c4d7df11599a5983f5610ef3bfd29c80eee5b
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: ea456442a4fdc8936d8ff82ac8019bdf788953ab
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911289"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941415"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
 命名空间：microsoft.graph
 
-借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，支持订阅以下资源：
+订阅允许客户端应用接收有关 Microsoft Graph 数据更改的通知。目前，支持订阅以下资源：
 
 - Microsoft Graph 安全性 API 中的[警报][]。
 - Microsoft Teams 中的通话或会议后生成的 [callRecord][]。
@@ -45,10 +45,10 @@ ms.locfileid: "52911289"
 | 属性 | 类型 | 说明 | 支持的资源 |
 |:---------|:-----|:------------|:--------------|
 | changeType | string | 必填。 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 | 全部 |
-| notificationUrl | string | 必填。 将接收变更通知的终结点 URL。 该 URL 必须使用 HTTPS 协议。 | 全部 |
+| notificationUrl | string | 必填。将接收变更通知的终结点 URL。该 URL 必须使用 HTTPS 协议。 | 全部 |
 | lifecycleNotificationUrl | string | 接收生命周期通知（包括 `subscriptionRemoved` 和 `missed` 通知）的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-lifecycle)有关 Outlook 资源如何使用生命周期通知的详细信息。 | 全部 |
 | resource | string | 必需。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。| 全部 |
-| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 | 全部 |
+| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必填。指定 webhook 订阅过期的日期和时间。时间使用 UTC 格式，也可以是从订阅创建（因订阅资源不同而异）开始的一段时间。请参阅下表，了解支持的最长订阅有效期。 | 全部 |
 | clientState | string | 可选。 指定服务为每个变更通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个变更通知一起接收的 `clientState` 属性值，客户端可以检查变更通知是否是由服务发送。 | 全部 |
 | id | string | 订阅的唯一标识符。只读。 | 全部 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 | 全部 |
@@ -71,7 +71,7 @@ ms.locfileid: "52911289"
 | OneDrive **driveItem**    | 42300 分钟（不到 30 天）    |
 | SharePoint **列表**    | 42300 分钟（不到 30 天）    |
 | Outlook **邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
-| **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
+| **用户**、**组**、其他目录资源   | 4230 分钟（不到 29 天）    |
 | 打印 **打印机** | 4230 分钟（不到 3 天）    |
 | 打印 **printTaskDefinition** | 4230 分钟（不到 3 天）    |
 

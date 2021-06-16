@@ -5,18 +5,18 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fda7792cab92391aba441ec62004ffb604f3ac3c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 769e3f9fcb5c14731db311f049afbc7a9982c0d6
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469442"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941450"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
 Microsoft Graph API 使用 Webhook 机制将更改通知传递到客户端。客户端是用于配置自身的 URL 以接收更改通知的 Web 服务。客户端应用使用更改通知在更改时更新其状态。
 
-Microsoft Graph 接受订阅请求之后，将更改通知推送到订阅中指定的 URL。 然后应用根据其业务逻辑执行操作。 例如，它提取更多数据、更新缓存和视图等。
+Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中指定的 URL。然后应用程序根据其业务逻辑执行操作。例如，它获取更多数据，更新缓存和视图等。
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
@@ -44,8 +44,11 @@ Microsoft Graph 接受订阅请求之后，将更改通知推送到订阅中指�
 - 安全[警报][]
 - SharePoint [列表][]
 - Teams [callRecord][]
+- Teams [频道][]
 - Teams [chatMessage][]
+- Teams [conversationMember][]
 - Teams [状态][]（预览版）
+- Teams [团队][]
 - [todoTask][]（预览版）
 - [用户][]
 
@@ -119,7 +122,7 @@ Microsoft Graph 接受订阅请求之后，将更改通知推送到订阅中指�
 
 ### <a name="creating-a-subscription"></a>创建订阅
 
-创建订阅是开始接收资源更改通知的第一步。 订阅流程如下所示：
+创建订阅是开始接收资源变更通知的第一步。订阅流程如下所示：
 
 1. 客户端发送特定资源的订阅 (POST) 请求。
 
@@ -291,9 +294,11 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 |:-----|:-----|:-----|
 |[警报][] | 少于 3 分钟 | 5 分钟 |
 |[callRecord][] | 少于 15 分钟 | 60 分钟 |
+|[频道][] | 少于 10 秒 | 60 分钟 |
 |[chatMessage][] | 少于 10 秒 | 1 分钟 |
 |[联系人][] | 未知 | 未知 |
 |[对话][] | 未知 | 未知 |
+|[conversationMember][] | 少于 10 秒 | 60 分钟 |
 |[driveItem][] | 小于 1 分钟 | 5 分钟 |
 |[事件][] | 未知 | 未知 |
 |[组][] | 少于 2 分钟 | 15 分钟 |
@@ -302,6 +307,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 |[状态][]（预览版） | 少于 10 秒 | 1 分钟 |
 |[打印机][] | 小于 1 分钟 | 5 分钟 |
 |[printTaskDefinition][] | 小于 1 分钟 | 5 分钟 |
+|[团队][] | 少于 10 秒 | 60 分钟 |
 |[todoTask][] | 少于 2 分钟 | 15 分钟 |
 |[用户][] | 少于 2 分钟 | 15 分钟 |
 
@@ -332,3 +338,6 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [打印机]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
+[频道]: /graph/api/resources/channel
+[conversationMember]: /graph/api/resources/conversationmember
+[团队]: /graph/api/resources/team

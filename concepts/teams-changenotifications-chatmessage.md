@@ -5,18 +5,16 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2e5490549e4ff204957c46e5da39a5516ed7d866
-ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
+ms.openlocfilehash: 78718b1b486231ae2549323433312aa878806210
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51594859"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941422"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
-更改通知使你能够订阅对[频道](/graph/api/resources/channel?preserve-view=true)或[聊天](/graph/api/resources/chat?preserve-view=true)中[消息](/graph/api/resources/chatMessage?preserve-view=true)的更改（创建、更新和删除）。 更改通知允许你维护[订阅](/graph/api/resources/webhooks?preserve-view=true)，从而提供低延迟模式。 你还可以在通知中获取资源数据，因此避免调用 API 来获取有效负载。
-
->**注意：** 订阅的最长持续时间为 60 分钟；但是，订阅可以续订，直至呼叫方有权访问资源。
+更改通知使你能够订阅频道或聊天中消息的更改（创建、更新和删除）。 更改通知允许你维护订阅，从而提供低延迟模式。 你还可以在通知中获取资源数据，因此避免调用 API 来获取有效负载。
 
 ## <a name="subscribe-to-changes-at-the-tenant-level"></a>订阅租户级别的更改
 
