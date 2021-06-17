@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1297f7434c7eba8c2145ad31a8c94a7b3a3fb1e8
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: da8bfda45b92b748deda845d7202347888e72241
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507295"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971299"
 ---
 # <a name="list-channels"></a>列出频道
 
@@ -32,7 +32,7 @@ ms.locfileid: "51507295"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,11 @@ GET /teams/{team-id}/channels
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+
+### <a name="use-select-for-better-performance"></a>使用 $select 提高性能
+填充通道的 **电子邮件** 和 **moderationSettings** 属性是一项代价高昂的操作，会导致性能降低。 使用 `$select` 排除 **电子邮件** 和 **moderationSettings** 属性，以提高性能。
+
 
 ## <a name="request-headers"></a>请求标头
 
