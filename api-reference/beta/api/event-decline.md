@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8d3aab12dcc48fc16a5d57fbc7a06f64c422c962
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7d6c89e6b143373e6e1e3822a192dd443ecf7bd9
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436265"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992287"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -20,10 +20,10 @@ ms.locfileid: "50436265"
 
 拒绝用户日历 [中指定](../resources/event.md) 事件 [的邀请](../resources/calendar.md)。
 
-如果事件允许新时间的建议，在拒绝事件时，被邀请者可以选择通过包含 **建议的NewTime** 参数来建议备选时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅["建议新的会议时间"。](/graph/outlook-calendar-meeting-proposals)
+如果事件允许针对新时间的建议，在拒绝事件时，被邀请者可以选择通过包含 **proposedNewTime** 参数来建议备选时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -73,9 +73,9 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-如果发生以下一个或两种情况，此操作将返回 HTTP 400：
+如果发生以下一个或两个情况，此操作将返回 HTTP 400：
 
-- 包含 **proposedNewTime** 参数， **但事件的 allowNewTimeProposals** **属性为** `false` 。 
+- **包含 proposedNewTime** 参数，但 **事件的 allowNewTimeProposals** 属性 **为** `false` 。 
 - 包含 **proposedNewTime** 参数，但 **sendResponse** 参数设置为 `false` 。
 
 ## <a name="example"></a>示例
@@ -122,6 +122,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-decline-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-decline-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

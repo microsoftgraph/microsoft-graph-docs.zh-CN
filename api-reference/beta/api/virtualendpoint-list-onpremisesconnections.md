@@ -1,16 +1,16 @@
 ---
-title: 列出 cloudPcOnPremisesConnection
+title: 列出 cloudPcOnPremisesConnections
 description: 获取 cloudPcOnPremisesConnection 对象及其属性的列表。
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 758d4a3f19b58276357350d61dca5693445b64f2
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 4382453196900685363d72aa514b67cf98d94b1e
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547653"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992840"
 ---
 # <a name="list-onpremisesconnections"></a>列出 onPremisesConnections
 
@@ -22,7 +22,7 @@ ms.locfileid: "52547653"
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7119d25f25b0e4f382a077ca6a1264dc22e11d5b
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 56d7ea203f4ed72f45a3650197c1484f817567e6
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765900"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992308"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>resourceSpecificPermissionGrant 资源类型
 
@@ -26,6 +26,7 @@ resourceSpecificPermissionGrant 声明已授予特定 AzureAD 应用的权限，
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |
 |[聊天的列表权限授予](../api/chat-list-permissiongrants.md)   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出特定聊天中已授予的权限。  |
 |[列出组的权限授予](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出特定组中已授予的权限。 |
+|[列出团队的权限授予](../api/team-list-permissiongrants.md)   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出特定团队已授予的权限。  |
 
 ## <a name="properties"></a>属性
 
@@ -33,11 +34,11 @@ resourceSpecificPermissionGrant 声明已授予特定 AzureAD 应用的权限，
 | :-------------- | :------------ | :------------------------------------------------------------------------------------ |
 | id              | string        | 特定于资源的权限授予的唯一标识符。 只读。           |
 | deletedDateTime | dateTimeOffset| 未使用。                                                                             |
-| clientId        | 字符串        | 已授予访问权限的 Azure AD 应用的 ID。 只读。                            |
-| clientAppId     | 字符串        | 已授予访问权限的 Azure AD 应用的服务主体的 ID。 只读。   |
-| resourceAppId   | 字符串        | 托管资源的 Azure AD 应用的 ID。 只读。                        |
-| permissionType  | 字符串        | 权限的类型。 可能的值是：`Application`、`Delegated`。 只读。 |
-| permission      | 字符串        | 权限的名称。 只读。                                                |
+| clientId        | string        | 已授予访问权限的 Azure AD 应用的 ID。 只读。                            |
+| clientAppId     | string        | 已授予访问权限的 Azure AD 应用的服务主体的 ID。 只读。   |
+| resourceAppId   | string        | 托管资源的 Azure AD 应用的 ID。 只读。                        |
+| permissionType  | string        | 权限的类型。 可能的值是：`Application`、`Delegated`。 只读。 |
+| permission      | string        | 权限的名称。 只读。                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

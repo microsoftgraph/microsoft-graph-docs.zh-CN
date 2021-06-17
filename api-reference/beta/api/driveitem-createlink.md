@@ -5,12 +5,12 @@ title: driveItem： createLink
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b471e95a07a0f7ec8c375d098b3875b8951e893e
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: e65cdc780b5c38441471dd14292f0420bf0ca629
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971084"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52990729"
 ---
 # <a name="driveitem-createlink"></a>driveItem： createLink
 
@@ -58,7 +58,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 |   属性                 |  类型  |                                 说明                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
-|type|字符串|可选。要创建的共享链接的类型。   |
+|type|String|可选。要创建的共享链接的类型。   |
 |scope|String|可选。 要创建的链接的范围。 匿名、组织或用户。|
 |expirationDateTime|DateTimeOffset|可选。 DateTime 格式为 yyyy-MM-ddTHH：mm：ssZ 的 String 表示权限的过期时间。|
 |密码|String|可选。创建者设置的共享链接的密码。|
@@ -126,19 +126,19 @@ Content-length: 212
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/item-createlink-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/driveitem-createlink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/item-createlink-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitem-createlink-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/item-createlink-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/driveitem-createlink-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/item-createlink-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/driveitem-createlink-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

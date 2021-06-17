@@ -1,16 +1,16 @@
 ---
 title: 更新 administrativeunit
 description: 更新 administrativeUnit 对象的属性。
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c02cb7944672c64f20768ed0edc0ca254564fc62
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8f5974a1f0e599bd47708e50c6c551d151e9acb2
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786606"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991888"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 

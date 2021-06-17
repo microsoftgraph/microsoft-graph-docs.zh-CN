@@ -5,12 +5,12 @@ author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a83c9cf192d5c30ccdc8c3a88d5ac5c699e6d971
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f24a896c68ae0fc4a73208929ca0029c8eeb18f8
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775855"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971340"
 ---
 # <a name="get-installed-app-in-chat"></a>获取聊天中安装的应用
 
@@ -28,7 +28,9 @@ ms.locfileid: "50775855"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsAppInstallation.ReadForChat、TeamsAppInstallation.ReadWriteSelfForChat、TeamsAppInstallation.ReadWriteForChat |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation.ReadForChat.All、TeamsAppInstallation.ReadWriteSelfForChat.All、TeamsAppInstallation.ReadWriteForChat.All
+|应用程序 | TeamsAppInstallation.Read.Chat *、Chat.Manage.Chat*、TeamsAppInstallation.ReadForChat.All、TeamsAppInstallation.ReadWriteSelfForChat.All、TeamsAppInstallation.ReadWriteForChat.All |
+
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 

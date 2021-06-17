@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fe6503f19eab554d69f5573fd161edd9723cf3c3
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 90ee56388849759d6371e29c49461a94936788be
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896611"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971319"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -29,7 +29,9 @@ ms.locfileid: "52896611"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|应用程序 | ChatSettings.Read.Chat *、ChatSettings.ReadWrite.Chat*、Chat.Manage.Chat*、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
+
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 

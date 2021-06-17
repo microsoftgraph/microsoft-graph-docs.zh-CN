@@ -1,16 +1,16 @@
 ---
-title: 获取 cloudPCs
+title: 获取 cloudPC
 description: 查看 cloudPC 对象的属性和关系。
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 2f49264854b1a25c6aaed9b2bc4680bdd61f40ac
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0470f6000ed7699b10288407a9d92ca74cc8177e
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786517"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52990845"
 ---
 # <a name="get-cloudpc"></a>获取 cloudPC
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dc5e4cc41baeb705a1fb01354ce78f1d380c33cc
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 0df8120ec4b8b4a7580b75df46023432425c85b8
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636937"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992233"
 ---
 ```csharp
 
@@ -29,8 +29,8 @@ var proposedNewTime = new TimeSlot
     }
 };
 
-await graphClient.Me.Events["{id}"]
-    .TentativelyAccept(proposedNewTime,sendResponse,comment)
+await graphClient.Me.Events["{event-id}"]
+    .TentativelyAccept(comment,sendResponse,proposedNewTime)
     .Request()
     .PostAsync();
 

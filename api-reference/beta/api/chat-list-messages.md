@@ -5,12 +5,12 @@ localization_priority: Priority
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 91f45f57fab749e0f9ec47937bd8b8897b55cea4
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 0acd5466ff17fca1090d491708ce231f37a31f3c
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696119"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971291"
 ---
 # <a name="list-messages-in-a-chat"></a>列出聊天中的消息
 
@@ -30,7 +30,9 @@ ms.locfileid: "52696119"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Chat.Read、Chat.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Chat.Read.All、Chat.ReadWrite.All |
+|应用程序 | ChatMessage.Read.Chat*、Chat.Read.All、Chat.ReadWrite.All |
+
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

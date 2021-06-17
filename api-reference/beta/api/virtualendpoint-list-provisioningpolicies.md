@@ -1,16 +1,16 @@
 ---
-title: 列出 cloudPcProvisioningPolicy
+title: 列出 cloudPcProvisioningPolicies
 description: 查看所有云电脑预配策略的属性和关系。
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e7d1090af54f82e730b20238ddb4e26c8e5a31de
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: fb98af7ff5c97b78e0c1ba76ecc307813db36e6d
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547644"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992826"
 ---
 # <a name="list-provisioningpolicies"></a>列出 provisioningPolicies
 
@@ -22,7 +22,7 @@ ms.locfileid: "52547644"
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

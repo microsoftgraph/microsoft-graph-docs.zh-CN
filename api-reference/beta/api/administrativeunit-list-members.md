@@ -1,16 +1,16 @@
 ---
 title: 列出成员
 description: 使用此 API 获取管理单元 (组) 成员列表。
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 294cbdb96f44de5028e2f41fdb9c2c7caf9d186b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7bc9d19dc3680c011f5bbb763fee5d8d6ac47669
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048258"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991979"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -59,7 +59,7 @@ GET /administrativeUnits/{id}/members/$ref
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 ```
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
  
 ```http
 HTTP/1.1 200 OK
@@ -91,7 +91,7 @@ Content-length: 100
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
  
 ```http
 HTTP/1.1 200 OK

@@ -505,10 +505,19 @@ items:
                 href: webhooks-with-resource-data.md
               - name: 获取通过不同方式传送的通知
                 href: change-notifications-delivery.md
-              - name: 获取聊天和信道消息的更改通知
-                href: teams-changenotifications-chatmessage.md
-              - name: 更改云打印通知
+              - name: 更改云打印的通知
                 href: universal-print-webhook-notifications.md
+              - name: 在 Microsoft Teams 更改通知
+                displayName: Change notifications in Microsoft Teams
+                items:
+                  - name: 概述
+                    href: change-notification-in-microsoft-teams-overview.md
+                  - name: 聊天和频道消息
+                    href: teams-changenotifications-chatmessage.md
+                  - name: Teams 和频道
+                    href: teams-changenotifications-team-and-channel.md
+                  - name: 团队成员资格
+                    href: teams-changenotifications-teamMembership.md
           - name: 更改跟踪
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2d4060489167c438077e85800e04c2973adf6a58
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 36786332fdbd0b84a6107106cf346153f8be55c8
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436139"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992238"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -18,11 +18,11 @@ ms.locfileid: "50436139"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-暂时接受用户 [日历](../resources/event.md) 中的指定 [事件](../resources/calendar.md)。
+暂时接受用户 [日历中的](../resources/event.md) 指定 [事件](../resources/calendar.md)。
 
-如果事件允许新时间的建议，则当对事件做出暂定响应时，被邀请者可以选择通过包含 **建议的NewTime** 参数来建议备选时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅["建议新的会议时间"。](/graph/outlook-calendar-meeting-proposals)
+如果事件允许针对新时间的建议，则当对事件做出暂定响应时，被邀请者可以选择通过包含 **proposedNewTime** 参数来建议备选时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -65,15 +65,15 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-如果发生以下一个或两种情况，此操作将返回 HTTP 400：
+如果发生以下一个或两个情况，此操作将返回 HTTP 400：
 
-- 包含 **proposedNewTime** 参数， **但事件的 allowNewTimeProposals** **属性为** `false` 。 
+- **包含 proposedNewTime** 参数，但 **事件的 allowNewTimeProposals** 属性 **为** `false` 。 
 - 包含 **proposedNewTime** 参数，但 **sendResponse** 参数设置为 `false` 。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ### <a name="request"></a>请求
-在下面的示例中，登录用户对指定事件做出暂定响应，将 **sendResponse** 参数设置为 true，并包含 **proposedNewTime** 参数中的备用时间。
+在下面的示例中，登录用户对指定事件做出暂定响应，将 **sendResponse** 参数设置为 true，并包括 **proposedNewTime** 参数中的备选时间。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-tentativelyaccept-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-tentativelyaccept-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
