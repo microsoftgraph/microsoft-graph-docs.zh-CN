@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a2729a3c78c1931afc57b308418a86ea06c446c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ea203243d7eb2fb5903c7cf61670d55f829963ce
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786181"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971079"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 
@@ -30,7 +30,7 @@ ms.locfileid: "52786181"
 |:---------------------------------------|:--------------------------------------------|
 |委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.Read.WriteAll |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
+|应用程序| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 ### <a name="permissions-for-chat"></a>聊天权限
 
@@ -38,7 +38,7 @@ ms.locfileid: "52786181"
 |:---------------------------------------|:--------------------------------------------|
 |委派（工作或学校帐户）| Chat.Read、Chat.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| Chat.Read.All、Chat.ReadWrite.All|
+|应用程序| ChatMessage.Read.Chat*、Chat.Read.All、Chat.ReadWrite.All|
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 

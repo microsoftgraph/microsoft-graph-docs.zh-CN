@@ -5,12 +5,12 @@ title: driveItem： createLink
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a6f3c172efdec9decf2f054a8afbb8d7ccf53034
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: b471e95a07a0f7ec8c375d098b3875b8951e893e
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941471"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971084"
 ---
 # <a name="driveitem-createlink"></a>driveItem： createLink
 
@@ -18,7 +18,7 @@ ms.locfileid: "52941471"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以使用 **createLink** 操作通过共享链接共享 [DriveItem](../resources/driveitem.md)。
+可以使用 **createLink** 操作通过共享链接共享 [driveItem。](../resources/driveitem.md)
 
 如果调用应用程序指定的链接类型尚不存在，**CreateLink** 操作将创建新的共享链接。如果应用程序指定的共享链接类型已存在，则返回现有的共享链接。
 
@@ -70,14 +70,14 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | 类型值 | 说明                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| view           | 创建指向 Item 的只读链接。                                                                        |
-| review         | 创建指向"项目"的审阅链接。 此选项仅适用于 OneDrive for Business 和 SharePoint。                   |
-| edit           | 创建指向 Item 的读写链接。                                                                       |
-| 嵌入          | 创建到 Item 的可嵌入链接。                                                                      |
-| blocksDownload | 创建阻止下载到项目的只读链接。 此选项仅适用于 OneDrive for Business 和 SharePoint。  |
-| createOnly     | 创建指向"项"的仅上载链接。 此选项仅适用于 OneDrive for Business 和 SharePoint 中的文件夹。             |
+| view           | 创建到 **driveItem** 的只读链接。                                                                        |
+| review         | 创建 **driveItem 的审阅链接**。 此选项仅适用于 OneDrive for Business 和 SharePoint。                   |
+| edit           | 创建到 **driveItem** 的读写链接。                                                                       |
+| 嵌入          | 创建 **driveItem** 的可嵌入链接。                                                                      |
+| blocksDownload | 创建阻止下载到 **driveItem** 的只读链接。 此选项仅适用于 OneDrive for Business 和 SharePoint。  |
+| createOnly     | 创建 **driveItem** 的仅上载链接。 此选项仅适用于 OneDrive for Business 和 SharePoint 中的文件夹。             |
 | addressBar     | 为新建的文件创建浏览器地址栏中显示的默认链接。 仅适用于 OneDrive for Business 和 SharePoint。 组织管理员配置此链接类型是否受支持，以及此链接类型支持哪些功能。 |
-| adminDefault   | 创建到 DriveItem 的默认链接，该链接由组织的管理员确定。 仅适用于 OneDrive for Business 和 SharePoint。 该策略由管理员为组织强制执行 |
+| adminDefault   | 创建到 **driveItem** 的默认链接，该链接由组织的管理员确定。 仅适用于 OneDrive for Business 和 SharePoint。 该策略由管理员为组织强制执行 |
 
 ### <a name="scope-types"></a>范围类型
 
@@ -93,12 +93,12 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 如果成功，此方法将在响应正文中返回单个 [Permission](../resources/permission.md) 资源，此响应正文表示请求的共享权限。
 
-如果已经为此项目创建新的共享链接，则响应为 `201 Created`；如果返回现有链接，则为 `200 OK`。
+如果为 `201 Created` **driveItem** 创建了新的共享链接，或者返回了现有链接， `200 OK` 则响应将为 。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-create-an-anonymous-sharing-link"></a>示例 1：创建匿名共享链接
-下面的示例请求为在用户的 OneDrive 中按 {itemId} 指定的 DriveItem 创建共享链接。
+以下示例请求为用户的 OneDrive 中的 {itemId} 指定的 **driveItem** 创建共享OneDrive。
 共享链接配置为只读并且可由具有该链接的任何用户使用。
 
 #### <a name="request"></a>请求
@@ -306,15 +306,15 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>注解
 
-* 若要基于组织的默认策略和呼叫者对 listItem 的权限创建链接，请省略 scope 和 type 参数
+* 若要根据组织的默认策略和呼叫者对 **driveItem** 的权限创建链接，请省略 scope 和 type 参数
 * 使用此操作创建的链接不会过期，除非对组织强制执行了默认过期策略。
-* 链接在项的共享权限中可见，可以由该项的所有者删除。
-* 除非项已被签出，否则链接始终指向该项的最新版本（仅限 SharePoint）。
+* 链接在 **driveItem** 的共享权限中可见，并且可以通过 **driveItem** 的所有者删除。
+* 链接始终指向 **driveItem** 的当前版本，除非仅将 **driveItem** (SharePoint签出) 。
 
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create a new sharing link for an item.",
+  "description": "Create a new sharing link for a driveItem.",
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
   "tocPath": "Sharing/Create link",

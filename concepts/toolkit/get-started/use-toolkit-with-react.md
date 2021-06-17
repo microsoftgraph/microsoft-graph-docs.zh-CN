@@ -3,12 +3,12 @@ title: 将 Microsoft Graph Toolkit与 React
 description: 在应用程序应用程序中Graph Toolkit Microsoft React入门。
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 0c06566824c6da06490f83693aedd7ef40ae282b
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 876d8674013f1b673208e358d7d0902cb930f638
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813070"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971438"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>将 Microsoft Graph Toolkit与 React
 
@@ -237,7 +237,13 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 现在，在应用程序中跟踪用户的登录状态，可以在用户登录后显示其日历。
 
-1. 在代码编辑器中，打开 **src/App.tsx** 文件，在 **App** 函数内添加：
+1. 在代码编辑器中，打开 **src/App.tsx** 文件，然后使用"议程"组件 `import` 扩展 **组件** 语句。
+
+    ```TypeScript
+    import { Agenda, Login } from '@microsoft/mgt-react';
+    ```
+
+1. 接下来，在 **App** 函数内，添加：
 
     ```TypeScript
     const [isSignedIn] = useIsSignedIn();

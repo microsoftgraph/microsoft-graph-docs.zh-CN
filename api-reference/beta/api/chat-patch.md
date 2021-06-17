@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cd906d473977987fc3859aee05d9b88b321cac60
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 26ba26e65a96bac04aa418d418b4588ff53f0ffd
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896471"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971053"
 ---
 # <a name="update-chat"></a>更新聊天
 命名空间：microsoft.graph
@@ -26,7 +26,9 @@ ms.locfileid: "52896471"
 |:---|:---|
 |委派（工作或学校帐户）|Chat.ReadWrite|
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 不支持。 |
+|应用程序 | ChatSettings.ReadWrite.Chat*、Chat.ReadWrite.All |
+
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 

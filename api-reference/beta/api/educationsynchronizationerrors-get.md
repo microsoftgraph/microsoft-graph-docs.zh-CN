@@ -5,16 +5,18 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d652938060bd577a00f1f22c3ce8cb5d5cc8160d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6bcf581d70d3c214bc18904d73ba5a69a1321824
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043162"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971060"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取验证期间和/或同步租户中的特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 期间生成的错误。
 

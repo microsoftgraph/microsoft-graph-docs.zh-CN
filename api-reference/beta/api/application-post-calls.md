@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 565faea0b932e9a74bceebe20f72d02636f886bc
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 16c76c5a42e4ec49023fe4f7a4310cb7482433e1
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664529"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971074"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -607,8 +607,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
         "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-        "displayName": "Bob",
-        "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
+        "displayName": "Bob"
       }
     },
     "allowConversationWithoutHost": true

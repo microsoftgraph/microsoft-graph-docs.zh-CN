@@ -3,12 +3,12 @@ title: 创建 Microsoft Graph 客户端
 description: 说明如何创建客户端，以使用客户端呼叫 Microsoft Graph。 包含如何设置身份验证和选择主权云。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: f32a779ac57d88da1ea66820a2b5a0bb30cbb89e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0256ad20b3078c081102221189a12e27432df058
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953353"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971358"
 ---
 # <a name="create-a-microsoft-graph-client"></a>创建 Microsoft Graph 客户端
 
@@ -33,16 +33,18 @@ GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-    redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
+/**
+* Create an authProvider to authenticate againt the Microsoft Graph API.
+* You can use the TokenCredentialAuthenticationProvider instance with @azure/identity library or
+* you can authentication using any MSAL auth library with a custom authentication provider.
+*/
+const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, { scopes: [scopes] });
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider,
+});
 ```
 
 # <a name="java"></a>[Java](#tab/Java)

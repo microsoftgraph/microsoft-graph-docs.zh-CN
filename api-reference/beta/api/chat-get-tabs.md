@@ -5,12 +5,12 @@ author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d0cdba3257a6008005597dcc7c9f6a1cc60bdf06
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 891bb59e4c2000f73c454e66e9b1b1398b22bb1c
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775841"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971326"
 ---
 # <a name="get-tab-in-chat"></a>在聊天中获取选项卡
 
@@ -27,8 +27,9 @@ ms.locfileid: "50775841"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
+|应用程序 | TeamsTab.Read.Chat、TeamsTab.ReadWrite.Chat、TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 

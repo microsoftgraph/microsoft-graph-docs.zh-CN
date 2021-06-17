@@ -5,12 +5,12 @@ author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d7d1b1a169e1ba1bc2b9e6b9ad518c2ac4fa48eb
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a778d235a58a948d99543b540f9b6343a44e7e7c
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775715"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971263"
 ---
 # <a name="update-tab-in-chat"></a>聊天中的"更新"选项卡
 
@@ -30,8 +30,9 @@ ms.locfileid: "50775715"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
+|应用程序 | TeamsTab.ReadWrite.Chat*、TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 
