@@ -5,40 +5,40 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9915162629098679263162bd7fc2f71bed43ff33
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 4fcde2a694646bcdb363c23315a77a931072ed24
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870617"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992436"
 ---
-# <a name="create-or-replace-schedule"></a><span data-ttu-id="5060c-103">创建或替换日程安排</span><span class="sxs-lookup"><span data-stu-id="5060c-103">Create or replace schedule</span></span>
+# <a name="create-or-replace-schedule"></a><span data-ttu-id="7d2df-103">创建或替换日程安排</span><span class="sxs-lookup"><span data-stu-id="7d2df-103">Create or replace schedule</span></span>
 
-<span data-ttu-id="5060c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5060c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7d2df-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7d2df-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5060c-105">创建或替换 [schedule](../resources/schedule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5060c-105">Create or replace a [schedule](../resources/schedule.md) object.</span></span>
+<span data-ttu-id="7d2df-105">创建或替换 [schedule](../resources/schedule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7d2df-105">Create or replace a [schedule](../resources/schedule.md) object.</span></span>
 
-<span data-ttu-id="5060c-106">计划创建过程符合针对基于资源的长时间运行的操作的 One API 准则 ([RELO) 。 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)</span><span class="sxs-lookup"><span data-stu-id="5060c-106">The schedule creation process conforms to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).</span></span>
-<span data-ttu-id="5060c-107">当客户端使用 PUT 方法时，如果已设置计划，则操作将替换计划;否则，操作将在后台启动计划预配过程。</span><span class="sxs-lookup"><span data-stu-id="5060c-107">When clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.</span></span>
+<span data-ttu-id="7d2df-106">计划创建过程符合针对基于资源的长时间运行的操作的 One API 准则 ([RELO) 。 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)</span><span class="sxs-lookup"><span data-stu-id="7d2df-106">The schedule creation process conforms to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).</span></span>
+<span data-ttu-id="7d2df-107">当客户端使用 PUT 方法时，如果已设置计划，则操作将替换计划;否则，操作将在后台启动计划预配过程。</span><span class="sxs-lookup"><span data-stu-id="7d2df-107">When clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.</span></span>
 
-<span data-ttu-id="5060c-108">在计划预配期间，客户端可以使用 [GET 方法](schedule-get.md) 获取计划并查看 属性，了解 `provisionStatus` 预配的当前状态。</span><span class="sxs-lookup"><span data-stu-id="5060c-108">During schedule provisioning, clients can use the [GET method](schedule-get.md) to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.</span></span> <span data-ttu-id="5060c-109">如果设置失败，客户端可以从 属性获取其他 `provisionStatusCode` 信息。</span><span class="sxs-lookup"><span data-stu-id="5060c-109">If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.</span></span>
+<span data-ttu-id="7d2df-108">在计划预配期间，客户端可以使用 [GET 方法](schedule-get.md) 获取计划并查看 属性，了解 `provisionStatus` 预配的当前状态。</span><span class="sxs-lookup"><span data-stu-id="7d2df-108">During schedule provisioning, clients can use the [GET method](schedule-get.md) to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.</span></span> <span data-ttu-id="7d2df-109">如果设置失败，客户端可以从 属性获取其他 `provisionStatusCode` 信息。</span><span class="sxs-lookup"><span data-stu-id="7d2df-109">If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.</span></span>
 
-<span data-ttu-id="5060c-110">客户端还可以检查计划的配置。</span><span class="sxs-lookup"><span data-stu-id="5060c-110">Clients can also inspect the configuration of the schedule.</span></span>
+<span data-ttu-id="7d2df-110">客户端还可以检查计划的配置。</span><span class="sxs-lookup"><span data-stu-id="7d2df-110">Clients can also inspect the configuration of the schedule.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="5060c-111">权限</span><span class="sxs-lookup"><span data-stu-id="5060c-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d2df-111">权限</span><span class="sxs-lookup"><span data-stu-id="7d2df-111">Permissions</span></span>
 
-<span data-ttu-id="5060c-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5060c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d2df-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7d2df-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5060c-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="5060c-114">Permission type</span></span>      | <span data-ttu-id="5060c-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5060c-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7d2df-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="7d2df-114">Permission type</span></span>      | <span data-ttu-id="7d2df-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7d2df-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5060c-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5060c-116">Delegated (work or school account)</span></span> | <span data-ttu-id="5060c-117">Schedule.ReadWrite.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5060c-117">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5060c-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5060c-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5060c-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="5060c-119">Not supported.</span></span>    |
-|<span data-ttu-id="5060c-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="5060c-120">Application</span></span> | <span data-ttu-id="5060c-121">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5060c-121">Schedule.ReadWrite.All</span></span> |
+|<span data-ttu-id="7d2df-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7d2df-116">Delegated (work or school account)</span></span> | <span data-ttu-id="7d2df-117">Schedule.ReadWrite.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d2df-117">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7d2df-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7d2df-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d2df-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="7d2df-119">Not supported.</span></span>    |
+|<span data-ttu-id="7d2df-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="7d2df-120">Application</span></span> | <span data-ttu-id="7d2df-121">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d2df-121">Schedule.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5060c-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5060c-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d2df-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7d2df-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,30 +46,30 @@ ms.locfileid: "52870617"
 PUT /teams/{teamId}/schedule
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5060c-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="5060c-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7d2df-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="7d2df-123">Request headers</span></span>
 
-| <span data-ttu-id="5060c-124">标头</span><span class="sxs-lookup"><span data-stu-id="5060c-124">Header</span></span>       | <span data-ttu-id="5060c-125">值</span><span class="sxs-lookup"><span data-stu-id="5060c-125">Value</span></span> |
+| <span data-ttu-id="7d2df-124">标头</span><span class="sxs-lookup"><span data-stu-id="7d2df-124">Header</span></span>       | <span data-ttu-id="7d2df-125">值</span><span class="sxs-lookup"><span data-stu-id="7d2df-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="5060c-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="5060c-126">Authorization</span></span>  | <span data-ttu-id="5060c-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5060c-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="5060c-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5060c-129">Content-Type</span></span>  | <span data-ttu-id="5060c-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="5060c-p105">application/json. Required.</span></span>  |
+| <span data-ttu-id="7d2df-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d2df-126">Authorization</span></span>  | <span data-ttu-id="7d2df-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7d2df-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7d2df-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7d2df-129">Content-Type</span></span>  | <span data-ttu-id="7d2df-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="7d2df-p105">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="5060c-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="5060c-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d2df-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="7d2df-132">Request body</span></span>
 
-<span data-ttu-id="5060c-133">在请求正文中，提供 schedule 对象的 JSON [表示](../resources/schedule.md) 形式。</span><span class="sxs-lookup"><span data-stu-id="5060c-133">In the request body, supply a JSON representation of a [schedule](../resources/schedule.md) object.</span></span>
+<span data-ttu-id="7d2df-133">在请求正文中，提供 schedule 对象的 JSON [表示](../resources/schedule.md) 形式。</span><span class="sxs-lookup"><span data-stu-id="7d2df-133">In the request body, supply a JSON representation of a [schedule](../resources/schedule.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5060c-134">响应</span><span class="sxs-lookup"><span data-stu-id="5060c-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7d2df-134">响应</span><span class="sxs-lookup"><span data-stu-id="7d2df-134">Response</span></span>
 
-<span data-ttu-id="5060c-135">如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/schedule.md) 代码和 schedule 对象。</span><span class="sxs-lookup"><span data-stu-id="5060c-135">If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.</span></span>
+<span data-ttu-id="7d2df-135">如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/schedule.md) 代码和 schedule 对象。</span><span class="sxs-lookup"><span data-stu-id="7d2df-135">If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5060c-136">示例</span><span class="sxs-lookup"><span data-stu-id="5060c-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7d2df-136">示例</span><span class="sxs-lookup"><span data-stu-id="7d2df-136">Examples</span></span>
 
-### <a name="example-1-update-a-schedule"></a><span data-ttu-id="5060c-137">示例 1：更新计划</span><span class="sxs-lookup"><span data-stu-id="5060c-137">Example 1: Update a schedule</span></span>
+### <a name="example-1-update-a-schedule"></a><span data-ttu-id="7d2df-137">示例 1：更新计划</span><span class="sxs-lookup"><span data-stu-id="7d2df-137">Example 1: Update a schedule</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5060c-138">请求</span><span class="sxs-lookup"><span data-stu-id="5060c-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7d2df-138">请求</span><span class="sxs-lookup"><span data-stu-id="7d2df-138">Request</span></span>
 
-<span data-ttu-id="5060c-139">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5060c-139">The following is an example of the request.</span></span>
+<span data-ttu-id="7d2df-139">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7d2df-139">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5060c-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="5060c-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7d2df-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="7d2df-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team-put-schedule"
@@ -83,29 +83,29 @@ Content-type: application/json
   "timeZone": "America/Chicago"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="5060c-141">C#</span><span class="sxs-lookup"><span data-stu-id="5060c-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7d2df-141">C#</span><span class="sxs-lookup"><span data-stu-id="7d2df-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-put-schedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5060c-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5060c-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7d2df-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7d2df-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-put-schedule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5060c-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5060c-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7d2df-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7d2df-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/team-put-schedule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5060c-144">Java</span><span class="sxs-lookup"><span data-stu-id="5060c-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7d2df-144">Java</span><span class="sxs-lookup"><span data-stu-id="7d2df-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="5060c-145">响应</span><span class="sxs-lookup"><span data-stu-id="5060c-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7d2df-145">响应</span><span class="sxs-lookup"><span data-stu-id="7d2df-145">Response</span></span>
 
-<span data-ttu-id="5060c-146">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5060c-146">The following is an example of the response.</span></span> 
+<span data-ttu-id="7d2df-146">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7d2df-146">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="5060c-147">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="5060c-147">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="7d2df-147">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="7d2df-147">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -131,12 +131,14 @@ Content-length: 401
 }
 ```
 
-### <a name="example-2-enable-location-detection-for-time-clock"></a><span data-ttu-id="5060c-148">示例 2：为时间时钟启用位置检测</span><span class="sxs-lookup"><span data-stu-id="5060c-148">Example 2: Enable location detection for time clock</span></span>
+### <a name="example-2-enable-location-detection-for-time-clock"></a><span data-ttu-id="7d2df-148">示例 2：为时间时钟启用位置检测</span><span class="sxs-lookup"><span data-stu-id="7d2df-148">Example 2: Enable location detection for time clock</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5060c-149">请求</span><span class="sxs-lookup"><span data-stu-id="5060c-149">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7d2df-149">请求</span><span class="sxs-lookup"><span data-stu-id="7d2df-149">Request</span></span>
 
-<span data-ttu-id="5060c-150">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5060c-150">The following is an example of the request.</span></span>
+<span data-ttu-id="7d2df-150">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7d2df-150">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="7d2df-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="7d2df-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team-put-schedule-2"
@@ -163,12 +165,30 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
    }
 } 
 ```
+# <a name="c"></a>[<span data-ttu-id="7d2df-152">C#</span><span class="sxs-lookup"><span data-stu-id="7d2df-152">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-put-schedule-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="5060c-151">响应</span><span class="sxs-lookup"><span data-stu-id="5060c-151">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="7d2df-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7d2df-153">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-put-schedule-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="5060c-152">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5060c-152">The following is an example of the response.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="7d2df-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7d2df-154">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-put-schedule-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="5060c-153">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="5060c-153">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="java"></a>[<span data-ttu-id="7d2df-155">Java</span><span class="sxs-lookup"><span data-stu-id="7d2df-155">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="7d2df-156">响应</span><span class="sxs-lookup"><span data-stu-id="7d2df-156">Response</span></span>
+
+<span data-ttu-id="7d2df-157">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7d2df-157">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="7d2df-158">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="7d2df-158">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
