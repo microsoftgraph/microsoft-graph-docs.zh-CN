@@ -5,54 +5,54 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 883adacbd02bf42c6eabdef9bedb597b1ea7ad3e
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 542cd22e805c9ea12029ba864300f91108699a2d
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52695978"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971445"
 ---
-# <a name="get-chatmessage-in-a-channel-or-chat"></a><span data-ttu-id="10794-103">在频道或聊天中获取 chatMessage</span><span class="sxs-lookup"><span data-stu-id="10794-103">Get chatMessage in a channel or chat</span></span>
+# <a name="get-chatmessage-in-a-channel-or-chat"></a><span data-ttu-id="c2a97-103">在频道或聊天中获取 chatMessage</span><span class="sxs-lookup"><span data-stu-id="c2a97-103">Get chatMessage in a channel or chat</span></span>
 
-<span data-ttu-id="10794-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="10794-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c2a97-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c2a97-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="10794-105">在[频道](../resources/channel.md)或[聊天](../resources/chat.md)中检索单一[消息](../resources/chatmessage.md)或[消息回复](../resources/chatmessage.md)。</span><span class="sxs-lookup"><span data-stu-id="10794-105">Retrieve a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="c2a97-105">在[频道](../resources/channel.md)或[聊天](../resources/chat.md)中检索单一[消息](../resources/chatmessage.md)或[消息回复](../resources/chatmessage.md)。</span><span class="sxs-lookup"><span data-stu-id="c2a97-105">Retrieve a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="10794-106">权限</span><span class="sxs-lookup"><span data-stu-id="10794-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c2a97-106">权限</span><span class="sxs-lookup"><span data-stu-id="c2a97-106">Permissions</span></span>
 
-<span data-ttu-id="10794-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="10794-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c2a97-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c2a97-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="permissions-for-channel"></a><span data-ttu-id="10794-109">频道权限</span><span class="sxs-lookup"><span data-stu-id="10794-109">Permissions for channel</span></span>
+### <a name="permissions-for-channel"></a><span data-ttu-id="c2a97-109">频道权限</span><span class="sxs-lookup"><span data-stu-id="c2a97-109">Permissions for channel</span></span>
 
-| <span data-ttu-id="10794-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="10794-110">Permission type</span></span>                        | <span data-ttu-id="10794-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="10794-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c2a97-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="c2a97-110">Permission type</span></span>                        | <span data-ttu-id="c2a97-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c2a97-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-|<span data-ttu-id="10794-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="10794-112">Delegated (work or school account)</span></span>| <span data-ttu-id="10794-113">ChannelMessage.Read.All、Group.Read.All、Group.Read.WriteAll</span><span class="sxs-lookup"><span data-stu-id="10794-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span></span> |
-|<span data-ttu-id="10794-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="10794-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="10794-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="10794-115">Not supported.</span></span>|
-|<span data-ttu-id="10794-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="10794-116">Application</span></span>| <span data-ttu-id="10794-117">ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10794-117">ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="c2a97-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c2a97-112">Delegated (work or school account)</span></span>| <span data-ttu-id="c2a97-113">ChannelMessage.Read.All、Group.Read.All、Group.Read.WriteAll</span><span class="sxs-lookup"><span data-stu-id="c2a97-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span></span> |
+|<span data-ttu-id="c2a97-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c2a97-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c2a97-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c2a97-115">Not supported.</span></span>|
+|<span data-ttu-id="c2a97-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="c2a97-116">Application</span></span>| <span data-ttu-id="c2a97-117">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c2a97-117">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
-### <a name="permissions-for-chat"></a><span data-ttu-id="10794-118">聊天权限</span><span class="sxs-lookup"><span data-stu-id="10794-118">Permissions for chat</span></span>
+### <a name="permissions-for-chat"></a><span data-ttu-id="c2a97-118">聊天权限</span><span class="sxs-lookup"><span data-stu-id="c2a97-118">Permissions for chat</span></span>
 
-| <span data-ttu-id="10794-119">权限类型</span><span class="sxs-lookup"><span data-stu-id="10794-119">Permission type</span></span>                        | <span data-ttu-id="10794-120">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="10794-120">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c2a97-119">权限类型</span><span class="sxs-lookup"><span data-stu-id="c2a97-119">Permission type</span></span>                        | <span data-ttu-id="c2a97-120">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c2a97-120">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-|<span data-ttu-id="10794-121">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="10794-121">Delegated (work or school account)</span></span>| <span data-ttu-id="10794-122">Chat.Read、Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="10794-122">Chat.Read, Chat.ReadWrite</span></span>|
-|<span data-ttu-id="10794-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="10794-123">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="10794-124">不支持。</span><span class="sxs-lookup"><span data-stu-id="10794-124">Not supported.</span></span>|
-|<span data-ttu-id="10794-125">应用程序</span><span class="sxs-lookup"><span data-stu-id="10794-125">Application</span></span>| <span data-ttu-id="10794-126">Chat.Read.All、Chat.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10794-126">Chat.Read.All, Chat.ReadWrite.All</span></span>|
+|<span data-ttu-id="c2a97-121">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c2a97-121">Delegated (work or school account)</span></span>| <span data-ttu-id="c2a97-122">Chat.Read、Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c2a97-122">Chat.Read, Chat.ReadWrite</span></span>|
+|<span data-ttu-id="c2a97-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c2a97-123">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c2a97-124">不支持。</span><span class="sxs-lookup"><span data-stu-id="c2a97-124">Not supported.</span></span>|
+|<span data-ttu-id="c2a97-125">应用程序</span><span class="sxs-lookup"><span data-stu-id="c2a97-125">Application</span></span>| <span data-ttu-id="c2a97-126">Chat.Read.All、Chat.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c2a97-126">Chat.Read.All, Chat.ReadWrite.All</span></span>|
 
-> <span data-ttu-id="10794-127">**注意**：标有 \* 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。</span><span class="sxs-lookup"><span data-stu-id="10794-127">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="c2a97-127">**注意**：标有 \* 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。</span><span class="sxs-lookup"><span data-stu-id="c2a97-127">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="10794-128">在使用应用程序权限调用此 API 之前，你必须先请求访问权限。</span><span class="sxs-lookup"><span data-stu-id="10794-128">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="10794-129">有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。</span><span class="sxs-lookup"><span data-stu-id="10794-129">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
+> <span data-ttu-id="c2a97-128">在使用应用程序权限调用此 API 之前，你必须先请求访问权限。</span><span class="sxs-lookup"><span data-stu-id="c2a97-128">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="c2a97-129">有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。</span><span class="sxs-lookup"><span data-stu-id="c2a97-129">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="10794-130">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="10794-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c2a97-130">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c2a97-130">HTTP request</span></span>
 
-<span data-ttu-id="10794-131">**获取频道中的消息**</span><span class="sxs-lookup"><span data-stu-id="10794-131">**Get message in a channel**</span></span>
+<span data-ttu-id="c2a97-131">**获取频道中的消息**</span><span class="sxs-lookup"><span data-stu-id="c2a97-131">**Get message in a channel**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
 ```
 
-<span data-ttu-id="10794-132">**获取聊天中的消息**</span><span class="sxs-lookup"><span data-stu-id="10794-132">**Get message in a chat**</span></span>
+<span data-ttu-id="c2a97-132">**获取聊天中的消息**</span><span class="sxs-lookup"><span data-stu-id="c2a97-132">**Get message in a chat**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}
@@ -60,29 +60,29 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}
 GET /me/chats/{chat-id}/messages/{message-id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="10794-133">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="10794-133">Optional query parameters</span></span>
-<span data-ttu-id="10794-134">此运营商不支持通过 [OData 查询参数](/graph/query-parameters) 来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="10794-134">This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c2a97-133">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c2a97-133">Optional query parameters</span></span>
+<span data-ttu-id="c2a97-134">此运营商不支持通过 [OData 查询参数](/graph/query-parameters) 来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c2a97-134">This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="10794-135">请求标头</span><span class="sxs-lookup"><span data-stu-id="10794-135">Request headers</span></span>
-| <span data-ttu-id="10794-136">标头</span><span class="sxs-lookup"><span data-stu-id="10794-136">Header</span></span>       | <span data-ttu-id="10794-137">值</span><span class="sxs-lookup"><span data-stu-id="10794-137">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c2a97-135">请求标头</span><span class="sxs-lookup"><span data-stu-id="c2a97-135">Request headers</span></span>
+| <span data-ttu-id="c2a97-136">标头</span><span class="sxs-lookup"><span data-stu-id="c2a97-136">Header</span></span>       | <span data-ttu-id="c2a97-137">值</span><span class="sxs-lookup"><span data-stu-id="c2a97-137">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="10794-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="10794-138">Authorization</span></span>  | <span data-ttu-id="10794-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="10794-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c2a97-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="c2a97-138">Authorization</span></span>  | <span data-ttu-id="c2a97-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c2a97-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="10794-141">请求正文</span><span class="sxs-lookup"><span data-stu-id="10794-141">Request body</span></span>
-<span data-ttu-id="10794-142">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="10794-142">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c2a97-141">请求正文</span><span class="sxs-lookup"><span data-stu-id="c2a97-141">Request body</span></span>
+<span data-ttu-id="c2a97-142">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c2a97-142">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10794-143">响应</span><span class="sxs-lookup"><span data-stu-id="10794-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c2a97-143">响应</span><span class="sxs-lookup"><span data-stu-id="c2a97-143">Response</span></span>
 
-<span data-ttu-id="10794-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/chatmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="10794-144">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="c2a97-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/chatmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c2a97-144">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="10794-145">示例</span><span class="sxs-lookup"><span data-stu-id="10794-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c2a97-145">示例</span><span class="sxs-lookup"><span data-stu-id="c2a97-145">Examples</span></span>
 
-### <a name="example-1-get-a-message-in-a-chat"></a><span data-ttu-id="10794-146">示例 1：获取聊天中的消息。</span><span class="sxs-lookup"><span data-stu-id="10794-146">Example 1: Get a message in a chat</span></span>
-#### <a name="request"></a><span data-ttu-id="10794-147">请求</span><span class="sxs-lookup"><span data-stu-id="10794-147">Request</span></span>
-<span data-ttu-id="10794-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="10794-148">The following is an example of the request.</span></span>
+### <a name="example-1-get-a-message-in-a-chat"></a><span data-ttu-id="c2a97-146">示例 1：获取聊天中的消息。</span><span class="sxs-lookup"><span data-stu-id="c2a97-146">Example 1: Get a message in a chat</span></span>
+#### <a name="request"></a><span data-ttu-id="c2a97-147">请求</span><span class="sxs-lookup"><span data-stu-id="c2a97-147">Request</span></span>
+<span data-ttu-id="c2a97-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c2a97-148">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="10794-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="10794-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c2a97-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="c2a97-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagechannel_1"
@@ -90,27 +90,27 @@ GET /me/chats/{chat-id}/messages/{message-id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces/messages/1612289992105
 ```
-# <a name="c"></a>[<span data-ttu-id="10794-150">C#</span><span class="sxs-lookup"><span data-stu-id="10794-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c2a97-150">C#</span><span class="sxs-lookup"><span data-stu-id="c2a97-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="10794-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="10794-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c2a97-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2a97-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="10794-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="10794-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c2a97-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c2a97-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="10794-153">Java</span><span class="sxs-lookup"><span data-stu-id="10794-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c2a97-153">Java</span><span class="sxs-lookup"><span data-stu-id="c2a97-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="10794-154">响应</span><span class="sxs-lookup"><span data-stu-id="10794-154">Response</span></span>
-<span data-ttu-id="10794-155">以下示例显示了相应的响应。`chatId`</span><span class="sxs-lookup"><span data-stu-id="10794-155">The following example shows the response.`chatId`</span></span> <span data-ttu-id="10794-156">标识包含此消息的[聊天](../resources/chat.md)。</span><span class="sxs-lookup"><span data-stu-id="10794-156">identifies the [chat](../resources/chat.md) that contains this message.</span></span>
+#### <a name="response"></a><span data-ttu-id="c2a97-154">响应</span><span class="sxs-lookup"><span data-stu-id="c2a97-154">Response</span></span>
+<span data-ttu-id="c2a97-155">以下示例显示了相应的响应。`chatId`</span><span class="sxs-lookup"><span data-stu-id="c2a97-155">The following example shows the response.`chatId`</span></span> <span data-ttu-id="c2a97-156">标识包含此消息的[聊天](../resources/chat.md)。</span><span class="sxs-lookup"><span data-stu-id="c2a97-156">identifies the [chat](../resources/chat.md) that contains this message.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -159,12 +159,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-message-in-a-channel"></a><span data-ttu-id="10794-157">示例 2：获取频道中的消息。</span><span class="sxs-lookup"><span data-stu-id="10794-157">Example 2: Get a message in a channel</span></span>
-#### <a name="request"></a><span data-ttu-id="10794-158">请求</span><span class="sxs-lookup"><span data-stu-id="10794-158">Request</span></span>
-<span data-ttu-id="10794-159">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="10794-159">The following is an example of the request.</span></span>
+### <a name="example-2-get-a-message-in-a-channel"></a><span data-ttu-id="c2a97-157">示例 2：获取频道中的消息。</span><span class="sxs-lookup"><span data-stu-id="c2a97-157">Example 2: Get a message in a channel</span></span>
+#### <a name="request"></a><span data-ttu-id="c2a97-158">请求</span><span class="sxs-lookup"><span data-stu-id="c2a97-158">Request</span></span>
+<span data-ttu-id="c2a97-159">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c2a97-159">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="10794-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="10794-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c2a97-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="c2a97-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagechannel_2"
@@ -172,27 +172,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1614618259349
 ```
-# <a name="c"></a>[<span data-ttu-id="10794-161">C#</span><span class="sxs-lookup"><span data-stu-id="10794-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c2a97-161">C#</span><span class="sxs-lookup"><span data-stu-id="c2a97-161">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="10794-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="10794-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c2a97-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2a97-162">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="10794-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="10794-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c2a97-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c2a97-163">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="10794-164">Java</span><span class="sxs-lookup"><span data-stu-id="10794-164">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c2a97-164">Java</span><span class="sxs-lookup"><span data-stu-id="c2a97-164">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="10794-165">响应</span><span class="sxs-lookup"><span data-stu-id="10794-165">Response</span></span>
-<span data-ttu-id="10794-166">以下示例显示了相应的响应。`channelIdentity`</span><span class="sxs-lookup"><span data-stu-id="10794-166">The following example shows the response.`channelIdentity`</span></span> <span data-ttu-id="10794-167">标识包含此消息的[团队](../resources/team.md)和[频道](../resources/channel.md)。</span><span class="sxs-lookup"><span data-stu-id="10794-167">identifies the [team](../resources/team.md) and [channel](../resources/channel.md) that contains this message.</span></span>
+#### <a name="response"></a><span data-ttu-id="c2a97-165">响应</span><span class="sxs-lookup"><span data-stu-id="c2a97-165">Response</span></span>
+<span data-ttu-id="c2a97-166">以下示例显示了相应的响应。`channelIdentity`</span><span class="sxs-lookup"><span data-stu-id="c2a97-166">The following example shows the response.`channelIdentity`</span></span> <span data-ttu-id="c2a97-167">标识包含此消息的[团队](../resources/team.md)和[频道](../resources/channel.md)。</span><span class="sxs-lookup"><span data-stu-id="c2a97-167">identifies the [team](../resources/team.md) and [channel](../resources/channel.md) that contains this message.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -244,12 +244,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-reply-to-a-message-in-a-channel"></a><span data-ttu-id="10794-168">示例 3：获取对频道中的消息回复</span><span class="sxs-lookup"><span data-stu-id="10794-168">Example 3: Get reply to a message in a channel</span></span>
-#### <a name="request"></a><span data-ttu-id="10794-169">请求</span><span class="sxs-lookup"><span data-stu-id="10794-169">Request</span></span>
-<span data-ttu-id="10794-170">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="10794-170">The following is an example of the request.</span></span>
+### <a name="example-3-get-reply-to-a-message-in-a-channel"></a><span data-ttu-id="c2a97-168">示例 3：获取对频道中的消息回复</span><span class="sxs-lookup"><span data-stu-id="c2a97-168">Example 3: Get reply to a message in a channel</span></span>
+#### <a name="request"></a><span data-ttu-id="c2a97-169">请求</span><span class="sxs-lookup"><span data-stu-id="c2a97-169">Request</span></span>
+<span data-ttu-id="c2a97-170">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c2a97-170">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="10794-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="10794-171">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c2a97-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="c2a97-171">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagechannel_3"
@@ -257,27 +257,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1612509044972/replies/1613671348387
 ```
-# <a name="c"></a>[<span data-ttu-id="10794-172">C#</span><span class="sxs-lookup"><span data-stu-id="10794-172">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c2a97-172">C#</span><span class="sxs-lookup"><span data-stu-id="c2a97-172">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="10794-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="10794-173">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c2a97-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2a97-173">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="10794-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="10794-174">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c2a97-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c2a97-174">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="10794-175">Java</span><span class="sxs-lookup"><span data-stu-id="10794-175">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c2a97-175">Java</span><span class="sxs-lookup"><span data-stu-id="c2a97-175">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="10794-176">响应</span><span class="sxs-lookup"><span data-stu-id="10794-176">Response</span></span>
-<span data-ttu-id="10794-177">以下示例显示了相应的响应。`replyToId`</span><span class="sxs-lookup"><span data-stu-id="10794-177">The following example shows the response.`replyToId`</span></span> <span data-ttu-id="10794-178">包含根消息的 `id`。</span><span class="sxs-lookup"><span data-stu-id="10794-178">contains the `id` of the root message.</span></span>
+#### <a name="response"></a><span data-ttu-id="c2a97-176">响应</span><span class="sxs-lookup"><span data-stu-id="c2a97-176">Response</span></span>
+<span data-ttu-id="c2a97-177">以下示例显示了相应的响应。`replyToId`</span><span class="sxs-lookup"><span data-stu-id="c2a97-177">The following example shows the response.`replyToId`</span></span> <span data-ttu-id="c2a97-178">包含根消息的 `id`。</span><span class="sxs-lookup"><span data-stu-id="c2a97-178">contains the `id` of the root message.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -330,11 +330,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="10794-179">另请参阅</span><span class="sxs-lookup"><span data-stu-id="10794-179">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c2a97-179">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c2a97-179">See also</span></span>
 
-- [<span data-ttu-id="10794-180">列出频道中的消息</span><span class="sxs-lookup"><span data-stu-id="10794-180">List messages in a channel</span></span>](channel-list-messages.md)
-- [<span data-ttu-id="10794-181">列出聊天中的消息</span><span class="sxs-lookup"><span data-stu-id="10794-181">List messages in a chat</span></span>](chat-list-messages.md)
-- [<span data-ttu-id="10794-182">在频道或聊天中发送消息</span><span class="sxs-lookup"><span data-stu-id="10794-182">Send message in a channel or a chat</span></span>](chatmessage-post.md)
+- [<span data-ttu-id="c2a97-180">列出频道中的消息</span><span class="sxs-lookup"><span data-stu-id="c2a97-180">List messages in a channel</span></span>](channel-list-messages.md)
+- [<span data-ttu-id="c2a97-181">列出聊天中的消息</span><span class="sxs-lookup"><span data-stu-id="c2a97-181">List messages in a chat</span></span>](chat-list-messages.md)
+- [<span data-ttu-id="c2a97-182">在频道或聊天中发送消息</span><span class="sxs-lookup"><span data-stu-id="c2a97-182">Send message in a channel or a chat</span></span>](chatmessage-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
