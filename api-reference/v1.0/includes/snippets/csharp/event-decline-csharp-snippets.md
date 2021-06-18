@@ -1,22 +1,36 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fd49d5e09242ead3a138a58f66b4896e77edd605
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 886346fb8eb527c56cf7dfa1136a8f6a89ae7d04
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44338997"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "53005969"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var comment = "comment-value";
+var comment = "I won't be able to make this week. How about next week?";
 
 var sendResponse = true;
 
-await graphClient.Me.Events["{id}"]
-    .Decline(null,sendResponse,comment)
+var proposedNewTime = new TimeSlot
+{
+    Start = new DateTimeTimeZone
+    {
+        DateTime = "2019-12-02T18:00:00",
+        TimeZone = "Pacific Standard Time"
+    },
+    End = new DateTimeTimeZone
+    {
+        DateTime = "2019-12-02T19:00:00",
+        TimeZone = "Pacific Standard Time"
+    }
+};
+
+await graphClient.Me.Events["{event-id}"]
+    .Decline(comment,sendResponse,proposedNewTime)
     .Request()
     .PostAsync();
 

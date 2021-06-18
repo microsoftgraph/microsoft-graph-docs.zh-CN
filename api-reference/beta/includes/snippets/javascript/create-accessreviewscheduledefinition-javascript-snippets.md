@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ced8e164b46b1d9d4a1ddf4e0891680c5fe25c1e
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 3a3c7aae29f76e6e23b93c9d0339c5abc35fc274
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664585"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "53006013"
 ---
 ```javascript
 
@@ -28,7 +28,7 @@ const accessReviewScheduleDefinition = {
       query: '/users/398164b1-5196-49dd-ada2-364b49f99b27',
       queryType: 'MicrosoftGraph'
     }
-  ],
+  ],  
   settings: {
     mailNotificationsEnabled: true,
     reminderNotificationsEnabled: true,

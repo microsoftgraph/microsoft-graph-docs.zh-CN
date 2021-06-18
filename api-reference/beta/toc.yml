@@ -558,7 +558,7 @@ items:
                 href: api/group-list-owners.md
               - name: List photos
                 href: api/group-list-photos.md
-              - name: 列出权限授予
+              - name: List permission grants
                 href: api/group-list-permissiongrants.md
               - name: 永久删除组
                 href: api/directory-deleteditems-delete.md
@@ -9523,9 +9523,9 @@ items:
               - name: 云电脑
                 href: resources/cloudpc.md
                 items:
-                  - name: 列表
+                  - name: 列出云电脑
                     href: api/virtualendpoint-list-cloudpcs.md
-                  - name: 获取
+                  - name: 获取云电脑
                     href: api/cloudpc-get.md
                   - name: 重新设置
                     href: api/cloudpc-reprovision.md
@@ -9574,6 +9574,21 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Assign
                     href: api/cloudpcprovisioningpolicy-assign.md
+              - name: 云电脑用户设置
+                href: resources/cloudpcusersetting.md
+                items:
+                  - name: 列表
+                    href: api/virtualendpoint-list-usersettings.md
+                  - name: 获取
+                    href: api/cloudpcusersetting-get.md
+                  - name: 创建
+                    href: api/virtualendpoint-post-usersettings.md
+                  - name: 更新
+                    href: api/cloudpcusersetting-update.md
+                  - name: 删除
+                    href: api/cloudpcusersetting-delete.md
+                  - name: Assign
+                    href: api/cloudpcusersetting-assign.md
               - name: 角色管理
                 href: resources/rolemanagement.md
                 items:
@@ -13430,6 +13445,8 @@ items:
                 href: api/profilephoto-update.md
               - name: 团队完整迁移
                 href: api/team-completemigration.md
+              - name: List permission grants
+                href: api/team-list-permissiongrants.md
           - name: 组（团队）
             href: resources/group.md
             items:
@@ -13551,6 +13568,8 @@ items:
                 href: api/chat-post-messages.md
               - name: 获取用户和应用之间的聊天
                 href: api/userscopeteamsappinstallation-get-chat.md
+              - name: List permission grants
+                href: api/chat-list-permissiongrants.md
           - name: 聊天消息
             href: resources/chatmessage.md
             items:
@@ -13885,6 +13904,8 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: 创建笔记本
                 href: api/onenote-post-notebooks.md
+          - name: 特定于资源的权限授予
+            href: resources/resourcespecificpermissiongrant.md
       - name: 待办任务
         displayName: Microsoft To Do
         items:

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a14acbee82771dfcbe5825cea44697ccc7fecce1
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 48b809f15b57d1d352821df14f706b1d6259e276
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48607187"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "53005851"
 ---
 ```objc
 
@@ -17,9 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphDirectoryRole *directoryRole = [[MSGraphDirectoryRole alloc] init];
-[directoryRole setDescription:@"description-value"];
-[directoryRole setDisplayName:@"displayName-value"];
-[directoryRole setRoleTemplateId:@"roleTemplateId-value"];
+[directoryRole setRoleTemplateId:@"fe930be7-5e62-47db-91af-98c3a49a38b1"];
 
 NSError *error;
 NSData *directoryRoleData = [directoryRole getSerializedDataWithError:&error];
