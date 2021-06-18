@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d5a0015ae6c98e2a8a3355f0602027f15751c21e
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: dcfd47deabe9f711bbbbca59c7c7c4b23651f3d3
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941443"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52993545"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -50,8 +50,8 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| 描述是否应当将作业分发给在作业发布日期之后添加的学生。|
-|allowLateSubmissions|Boolean| 学生是否可以在截止日期后发送提交。|
-|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
+|allowLateSubmissions|布尔| 学生是否可以在截止日期后发送提交。|
+|allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 指示向学生发布作业的日期。 |
 |assignTo|educationAssignmentRecipient| 获得作业的学生。|
 |closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，它必须大于或等于 dueDateTime。|
@@ -69,6 +69,8 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
@@ -88,6 +90,24 @@ Content-length: 279
   "dueDateTime": "2014-02-01T00:00:00Z"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 下面展示了示例响应。 

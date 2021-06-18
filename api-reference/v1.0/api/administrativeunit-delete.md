@@ -1,16 +1,16 @@
 ---
 title: 删除 administrativeUnit
 description: 删除 administrativeUnit。
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 79739889099924555d5282689ea0baa310bc2844
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d1cc62238330a2d5af8133606fd3207abc30e6ec
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054222"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991580"
 ---
 # <a name="delete-administrativeunit"></a>删除 administrativeUnit
 
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a5b883c4b25b24f51defcc7d13a8f8e657e2ad48
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 7d107b7ceff798875244740ebbe8c7e68322480b
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912272"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52993405"
 ---
 # <a name="create-educationsubmissionresource"></a>创建 educationSubmissionResource
 
@@ -51,6 +51,8 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationsubmissionresource_from_educationsubmission"
@@ -88,6 +90,24 @@ Content-length: 1097
   "@odata.type": "microsoft.graph.educationResource"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationsubmissionresource-from-educationsubmission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationsubmissionresource-from-educationsubmission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationsubmissionresource-from-educationsubmission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationsubmissionresource-from-educationsubmission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 下面展示了示例响应。 

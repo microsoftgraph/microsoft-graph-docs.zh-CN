@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fe61a015ab88e5e3c562b8837d57b997400f8ed3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 731ebcb9ab27baf4ea30553d4f6a598d61e37d59
+ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755628"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53010189"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置访问评审的范围
 
@@ -133,7 +133,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root?view=graph
 
 **principalResourceMembershipsScope** 公开 **principalScopes** 和 **resourceScopes** 属性，以支持 **针对 accessReviewScheduleDefinition** 作用域的更定制的配置选项。 这包括查看多个主体或主体组对多个资源的访问权限。
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-an-application"></a>示例 1：查看所有非活动来宾用户对应用程序的访问权限
+### <a name="example-1-review-access-of-all-inactive-guest-users-to-groups"></a>示例 1：查看所有非活动来宾用户对组的访问权限
 
 ```http
 "scope": {
@@ -149,7 +149,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root?view=graph
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/servicePrincipals/{serviceprincipal id}",
+            "query": "/groups",
             "queryType": "MicrosoftGraph"
         }
     ]

@@ -1,16 +1,16 @@
 ---
 title: 获取 scopedRoleMember
 description: 检索特定的 scopedRoleMembership 资源。
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 51eb720d2898273aad30ebf335402be3f0c75549
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c6e0e3de92ee350a17b1821e7c567dbaa1792f9d
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054215"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991533"
 ---
 # <a name="get-a-scopedrolemember"></a>获取 scopedRoleMember
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRo
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

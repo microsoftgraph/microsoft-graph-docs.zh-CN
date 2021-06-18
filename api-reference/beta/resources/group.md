@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c03088614c32a7428355f37ec0b8f8fb5b1b49b4
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 96bf370d642890b1330bc4e7c05179005253fa1e
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941261"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992406"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -86,7 +86,7 @@ ms.locfileid: "52941261"
 | [列出线程](../api/group-list-threads.md) | [conversationThread](conversationthread.md) 集合 | 获取组的所有线程。 |
 | [更新线程](../api/group-update-thread.md) | 无 | 更新 thread 对象的属性。 |
 | [删除线程](../api/group-delete-thread.md) | 无 | 删除 thread 对象 |
-| [List acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“接受的发件人”列表中的用户或组列表。 |
+| [List acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) 集合 | 获取此组的“接受的发件人”列表中的用户或组列表。 |
 | [添加 acceptedSender](../api/group-post-acceptedsenders.md) | [directoryObject](directoryobject.md) | 将用户或组添加到 acceptSenders 集合。 |
 | [删除 acceptedSender](../api/group-delete-acceptedsenders.md) | [directoryObject](directoryobject.md) | 从 acceptedSenders 集合中删除用户或组。 |
 | [List rejectedSenders](../api/group-list-rejectedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“遭拒的发件人”列表中的用户或组列表。 |
@@ -100,6 +100,7 @@ ms.locfileid: "52941261"
 | **其他组资源** |||
 | [List photos](../api/group-list-photos.md) | [profilePhoto](photo.md) 集合 | 获取组的个人资料照片集合。 |
 | [List plannerPlans](../api/plannergroup-list-plans.md) | [plannerPlan](plannerplan.md) 集合 | 获取组拥有的 Planner 计划。 |
+| [List permissionGrants](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出已授予应用访问组的权限。 |
 | **用户设置** |||
 | [addFavorite](../api/group-addfavorite.md) | 无 | 将组添加到登录用户的收藏夹组列表中。仅支持 Microsoft 365 组。 |
 | [removeFavorite](../api/group-removefavorite.md) | 无 | 从登录用户收藏夹组列表中删除组。仅支持 Microsoft 365 组。 |
@@ -139,11 +140,11 @@ ms.locfileid: "52941261"
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 <br><br>默认情况下返回。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为 `On` 或 `Paused`。 <br><br>默认情况下返回。 |
 |membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |描述基于规则的动态组的处理状态。 该属性 `null` 针对非基于规则的动态组或如果动态组处理已暂停。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 只读。 |
-|onPremisesDomainName|字符串|包含从本地目录同步的本地 **域 FQDN**（也称为 **dnsDomainName**）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认返回。只读。 |
+|onPremisesDomainName|String|包含从本地目录同步的本地 **域 FQDN**（也称为 **dnsDomainName**）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认返回。只读。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 只读。 支持 `$filter`。|
-|onPremisesNetBiosName|字符串|包含从本地目录同步的本地 **netBios 名称**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认返回。只读。 |
+|onPremisesNetBiosName|String|包含从本地目录同步的本地 **netBios 名称**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认返回。只读。 |
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>默认情况下返回。|
-|onPremisesSamAccountName|字符串|包含从本地目录同步的本地 **SAM 帐户名**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认返回。只读。 |
+|onPremisesSamAccountName|String|包含从本地目录同步的本地 **SAM 帐户名**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认返回。只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认返回。只读。 |
 |onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 `true`；如果此组最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 `$filter`。|
 |preferredDataLocation|String|组的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认情况下返回。|
@@ -189,7 +190,7 @@ ms.locfileid: "52941261"
 |membersWithLicenseErrors|[user](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。只读。|
 |onenote|[onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) collection|组的所有者。所有者是一组允许修改此对象的非管理员用户。HTTP 方法：GET（支持所有组），POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）只读。可为 Null。|
-|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|已授予组对特定应用程序的权限。|
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|已授予针对组的特定应用程序的权限。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片。 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
 |planner|[plannerGroup](plannergroup.md)| 组可以使用的选择性计划程序服务。只读。可为 null。 |

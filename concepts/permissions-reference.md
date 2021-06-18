@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 508ccb2add627da88656577b54618ec0fd91f097
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: efd2f192fdaf5338b7f97483aca7d93f861ecb02
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629481"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971410"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -506,7 +506,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 | _ChannelSettings.Read.All_ | 读取所有频道的名称、说明和设置。 | 在没有登录用户的情况下读取所有频道名称、频道说明和频道设置。| 是 | 否 |
 | _ChannelSettings.ReadWrite.All_ | 读取和写入所有频道的名称、说明和设置。 | 在没有登录用户的情况下读取和写入所有频道的名称、说明和设置。| 是 | 否 |
 
-## <a name="chats-permissions"></a>聊天权限
+## <a name="chat-permissions"></a>聊天权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
@@ -525,6 +525,22 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 |_Chat.UpdatePolicyViolation.All_ |标记违反策略的聊天消息 |允许应用更新 Microsoft Teams 一对一聊天或群组聊天消息，方法是通过修补数据丢失保护 (DLP) 策略违反属性集来处理 DLP 处理的输出。 | 是 | 否 |
 
 > **注意：** 对于频道中的消息，请参阅 [ChannelMessage 权限](#channel-message-permissions)。
+
+## <a name="chat-resource-specific-consent-permissions"></a>聊天资源特定的同意权限
+
+| 权限                     | 显示字符串                                                | 说明  | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
+| _ChatSettings.Read.Chat_         | 读取此聊天的设置。                                    | 允许应用在没有登录用户的情况下读取此聊天的设置。 |否 | 否 |
+| _ChatSettings.ReadWrite.Chat_    | 读取和写入此聊天的设置。                          | 允许应用在没有登录用户的情况下读取和写入此聊天的设置。 |否 | 否 |
+| _ChatMessage.Read.Chat_          | 读取此聊天的消息。                                    | 允许应用在没有登录用户的情况下读取此聊天的消息。 |否 | 否 |
+| _ChatMember.Read.Chat_           | 读取此聊天的成员。                                     | 允许应用在没有登录用户的情况下读取此聊天的成员。 |否 | 否 |
+| _Chat.Manage.Chat_               | 管理此聊天。                                             | 允许应用在没有登录用户的情况下管理聊天、聊天成员并授予对聊天数据的访问权限。  |否 | 否 |
+| _TeamsTab.Read.Chat_             | 读取此聊天的选项卡。                                        | 允许应用在没有登录用户的情况下读取此聊天的选项卡。 |否 | 否 |
+| _TeamsTab.Create.Chat_           | 在此聊天中创建选项卡。                                     | 允许应用在没有登录用户的情况下在此聊天中创建选项卡。 |否 | 否 |
+| _TeamsTab.Delete.Chat_           | 删除此聊天的选项卡。                                      | 允许应用在没有登录用户的情况下删除此聊天的选项卡。 |否 | 否 |
+| _TeamsTab.ReadWrite.Chat_        | 管理此聊天的选项卡。                                      | 允许应用在没有登录用户的情况下管理此聊天的选项卡。 |否 | 否 |
+| _TeamsAppInstallation.Read.Chat_ | 读取此聊天中安装了哪些应用。                   | 允许应用在没有登录用户的情况下读取此聊天中安装的 Teams 应用以及授予每个应用的权限。  |否 | 否 |
+| _OnlineMeeting.ReadBasic.Chat_   | 读取与此聊天关联的会议的基本属性。 | 允许应用在没有登录用户的情况下读取与此聊天关联的会议的基本属性（例如名称、日程安排、组织者和加入链接）。 |否 | 否 |
 
 ## <a name="chatmessage-permissions-private-preview"></a>ChatMessage 权限（[个人预览版](#permissions-availability-status)）
 
@@ -1981,19 +1997,20 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | TeamSettings.Read.Group | 读取此团队设置。 | 在没有登录用户的情况下读取此团队的设置。 |否 | 否 |
 | TeamSettings.ReadWrite.Group | 更新此团队的设置。 | 在没有登录用户的情况下读取和编写此团队的设置。 |否 | 否 |
-| ChannelSettings.Read.Group | 读取此团队频道的名称、说明和设置。 | 在没有登录用户的情况下读取此组的频道名称、频道说明和频道设置。 |否 | 否 |
-| ChannelSettings.ReadWrite.Group | 更新此团队频道的名称、说明和设置。| 在没有登录用户的情况下更新此组的频道名称、频道说明和频道设置。 |否 | 否 |
+| ChannelSettings.Read.Group | 读取此团队频道的名称、说明和设置。 | 在没有登录用户的情况下读取此团队的频道名称、频道说明和频道设置。 |否 | 否 |
+| ChannelSettings.ReadWrite.Group | 更新此团队频道的名称、说明和设置。| 在没有登录用户的情况下更新此团队的频道名称、频道说明和频道设置。 |否 | 否 |
 |Channel.Create.Group | 在这个团队中创建频道。 | 在没有登录用户的情况下在此团队中创建频道。 |否 | 否 |
 |Channel.Delete.Group | 删除此团队的频道。 | 在没有登录用户的情况下删除此团队的频道。 |否 | 否 |
-|ChannelMessage.Read.Group | 读取团队频道消息。 | 允许应用在没有登录的用户的情况下读取此组的频道消息。 |否 | 否 |
-|TeamsAppInstallation.Read.Group | 查看此团队中已安装的应用。 | 在没有登录的用户的情况下，查看此组中安装的应用。 |否 | 否 |
+|ChannelMessage.Read.Group | 读取团队频道消息。 | 允许应用在没有登录用户的情况下读取此团队的频道消息。 |否 | 否 |
+|TeamsAppInstallation.Read.Group | 查看此团队中已安装的应用。 | 在没有登录用户的情况下查看此团队中安装的应用。 |否 | 否 |
 |TeamsTab.Read.Group | 读取此团队的选项卡。 | 在没有登录用户的情况下读取此团队的选项卡。 |否 | 否 |
 |TeamsTab.Create.Group | 在此团队中创建选项卡。 | 在没有登录用户的情况下在此团队中创建选项卡。 |否 | 否 |
-|TeamsTab.ReadWrite.Group | 更新此团队的选项卡。 | 在没有已登录用户的情况下更新此团队的选项卡。 |否 | 否 |
-|TeamsTab.Delete.Group | 删除此团队的选项卡。 | 在没有已登录用户的情况下删除此团队的选项卡。 |否 | 否 |
+|TeamsTab.ReadWrite.Group | 更新此团队的选项卡。 | 在没有登录用户的情况下更新此团队的选项卡。 |否 | 否 |
+|TeamsTab.Delete.Group | 删除此团队的选项卡。 | 在没有登录用户的情况下删除此团队的选项卡。 |否 | 否 |
 |TeamMember.Read.Group | 读取此团队的成员。 | 在没有已登录用户的情况下读取此团队的成员。 |否 | 否 |
 |Member.Read.Group | 读取此组的成员。| 在没有已登录用户的情况下读取此团队的成员。 |否 | 否 |
 |Owner.Read.Group| 读取此组的所有者。    | 在没有已登录用户的情况下读取此团队的所有者。 |否 | 否 |
+|File.Read.Group| 读取此团队的文件和文件夹。 | **有限支持** <br/> （预览）在没有登录用户的情况下读取此团队的文件和文件夹。 | 否 | 否 |
 
 ## <a name="teams-settings-permissions"></a>Teams 设置权限
 

@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 11802b1b2fadfc717a123db31ad91436183442ed
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 7c251885de43022f8e3065c7004dab33d4fa78a8
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912357"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992969"
 ---
 # <a name="update-educationassignmentsettings"></a>更新 educationAssignmentSettings
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|指示是否显示打开的庆祝动画。 的值 `true` 指示不会显示动画。 默认值为 `false`。|
+|submissionAnimationDisabled|布尔|指示是否显示打开的庆祝动画。 的值 `true` 指示不会显示动画。 默认值为 `false`。|
 
 
 
@@ -61,6 +61,8 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationassignmentsettings"
@@ -75,6 +77,24 @@ Content-length: 114
   "submissionAnimationDisabled": true
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignmentsettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignmentsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignmentsettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

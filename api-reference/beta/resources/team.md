@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9a6be14dfb3de975e51f76a15b964a068fefe731
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 159502c1076aa9f076f0c50768405bbd64612ebc
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679888"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991216"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -48,6 +48,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[获取团队中安装的应用](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取团队中安装的指定应用。|
 |[升级团队中安装的应用](../api/team-teamsappinstallation-upgrade.md) | 无 | 将团队中安装的应用程序升级到最新版本。|
 |[从团队中删除应用](../api/team-delete-installedapps.md) | 无 | 从团队中删除（卸载）应用。|
+|[List permission grants](../api/team-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出已授予应用访问团队的权限。|
 
 ## <a name="properties"></a>属性
 
@@ -93,6 +94,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 | 
 |schedule|[日程安排](schedule.md)| 此团队的排班安排。|
 |template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](/MicrosoftTeams/get-started-with-teams-templates)。 |
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合| 已授予应用访问团队的权限集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

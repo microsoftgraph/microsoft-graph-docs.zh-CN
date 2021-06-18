@@ -1,16 +1,16 @@
 ---
 title: 删除 scopedRoleMember
 description: 从管理单元中删除作用域角色成员。
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 35f2b5bb820de626fc264c1a6766925cb598a0d8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 47d4d6064d51ba068e55ef0308d7d69c90c20c65
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050652"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991594"
 ---
 # <a name="remove-a-scopedrolemember"></a>删除 scopedRoleMember
 
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scope
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

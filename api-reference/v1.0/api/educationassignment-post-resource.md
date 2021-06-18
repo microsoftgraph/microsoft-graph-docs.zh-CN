@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 20719f61e7b01c42bd6615ef2c0bb032fe8b5c36
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 2febd840a6ba93f28f38d66d94a2e8f69a526ca2
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912288"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992787"
 ---
 # <a name="create-educationassignmentresource"></a>创建 educationAssignmentResource
 
@@ -53,6 +53,8 @@ POST /education/classes/{id}/assignments/{id}/resources
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
@@ -73,6 +75,24 @@ Content-length: 212
 }
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationassignmentresource-from-educationassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationassignmentresource-from-educationassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationassignmentresource-from-educationassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationassignmentresource-from-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 在请求正文中，提供 [educationAssignmentResource](../resources/educationassignmentresource.md) 对象的 JSON 表示形式。
 
 ### <a name="response"></a>响应

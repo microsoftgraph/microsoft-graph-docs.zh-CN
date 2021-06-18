@@ -1,16 +1,16 @@
 ---
 title: 添加成员
 description: 使用此 API 将用户或 (组的成员) 管理单元。
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8fac296f9bf281a1ef3140f469dfd80f7c0a935b
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 634013e968b5fc69c2565848bf85e343f03b2f4f
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202140"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991489"
 ---
 # <a name="add-a-member"></a>添加成员
 

@@ -2,15 +2,15 @@
 title: administrativeUnit 资源类型
 description: 管理单元为用户和组目录对象提供概念容器。
 localization_priority: Normal
-author: anandyadavMSFT
+author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b1210ab3493910f251379185beb5d478cfb72716
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ed3559a0345c2ca1ca190d6ed08c1cec542837fe
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962012"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991167"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "50962012"
 
 管理单元为用户和组目录对象提供概念容器。 使用管理单元，公司管理员现在可以将管理职责委派给区域管理员或部门管理员，以管理管理单元中包含的用户和组或范围所包含的用户和组。
 
-来看一个示例。 假设 Contoso Corp 由两个部门（一个东海岸分部和一个东海岸部门）负责。 Contoso 的目录角色的范围为整个租户。 Contoso 公司管理员 Lee 希望委派管理责任，但将其范围划分到东海岸部门或东海岸分部。  Lee 可以创建 *一个"东海岸* "管理单元，并可以将所有"东海岸"用户放入此管理单元中。  同样，Lee 可以创建一 *个"东海岸管理单元"。*  现在，Lee 可以开始将管理职责委派给其他人，但作用域为自己创建的新管理单元。 Lee 将 Jennifer 设置在一个支持 *人员管理员* 角色 **中** ，该角色的作用范围为 *"东海岸"管理单元*。  这允许 Jennifer 重置任何用户的密码，但只有在这些用户位于 *东海岸管理单元时。*  同样，Lee 将 Dave 设置在 *一个用户帐户管理员* 角色中，该角色的作用范围为"*东海岸"管理单元*。   这允许 Dave 更新用户、分配许可证和重置任何用户的密码，但只有在这些用户位于东海岸管理 *单元中时。* 有关视频概述，请参阅 [Azure Active Directory 管理单元简介](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)。
+来看一个示例。 Imagine Contoso Corp 由两个部门（一个东海岸分部和一个东海岸部门）负责。 Contoso 的目录角色的范围为整个租户。 Contoso 公司管理员 Lee 希望委派管理责任，但将其范围划分到东海岸部门或东海岸分部。  Lee 可以创建 *一个"东海岸* "管理单元，并可以将所有"东海岸"用户放入此管理单元中。  同样，Lee 可以创建一 *个"东海岸管理单元"。*  现在，Lee 可以开始将管理职责委派给其他人，但作用域为自己创建的新管理单元。 Lee 将 Jennifer 设置在一个支持 *人员管理员* 角色 **中** ，该角色的作用范围为 *"东海岸"管理单元*。  这允许 Jennifer 重置任何用户的密码，但只有在这些用户位于 *东海岸管理单元时。*  同样，Lee 将 Dave 设置在 *一个用户帐户管理员* 角色中，该角色的作用范围为"*东海岸"管理单元*。   这允许 Dave 更新用户、分配许可证和重置任何用户的密码，但只有在这些用户位于东海岸管理 *单元中时。* 有关视频概述，请参阅管理单元[Azure Active Directory简介](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)。
 
 
 本主题提供 administrativeUnit 实体公开的已声明属性和导航属性的说明，以及可在 administrativeUnits 资源上调用的操作和函数。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法   | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -54,7 +54,7 @@ ms.locfileid: "50962012"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为此管理单元定义的开放扩展集合。 可为 Null。|
-|members|[directoryObject](directoryobject.md) collection|是此管理单元的成员的用户和组。 HTTP 方法：GET (list members) 、POST (add members) 、DELETE (remove members) 。|
+|members|[directoryObject](directoryobject.md) 集合|是此管理单元的成员的用户和组。 HTTP 方法：GET (list members) 、POST (add members) 、DELETE (remove members) 。|
 |scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的作用域角色成员。  HTTP 方法：GET (list scopedRoleMemberships) ，POST (add scopedRoleMembership) ， DELETE (remove scopedRoleMembership) 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

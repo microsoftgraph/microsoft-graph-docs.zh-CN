@@ -1,16 +1,16 @@
 ---
 title: 列出 scopedRoleMembers
 description: 检索 scopedRoleMembership 资源的列表。
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ea7e032f89ef4c2a04db1d8c4beab15ef757d117
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bb2400902b47f206d5826f3475d59b7d6294daa6
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050631"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991524"
 ---
 # <a name="list-scopedrolemembers"></a>列出 scopedRoleMembers
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRo
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

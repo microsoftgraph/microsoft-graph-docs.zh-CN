@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a8b840ee58c7432362a3e8b25b88b85758b42bc8
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 5a6648fae6d50205c1f1885c20e8fdbc86356a2f
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473615"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "53006028"
 ---
 ```objc
 
@@ -17,11 +17,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAccessPackageAssignmentRequest *accessPackageAssignmentRequest = [[MSGraphAccessPackageAssignmentRequest alloc] init];
-[accessPackageAssignmentRequest setRequestType:@"UserAdd"];
+[accessPackageAssignmentRequest setRequestType:@"AdminRemove"];
 MSGraphAccessPackageAssignment *accessPackageAssignment = [[MSGraphAccessPackageAssignment alloc] init];
-[accessPackageAssignment setAccessPackageId:@"a914b616-e04e-476b-aa37-91038f0b165b"];
+[accessPackageAssignment setId:@"a6bb6942-3ae1-4259-9908-0133aaee9377"];
 [accessPackageAssignmentRequest setAccessPackageAssignment:accessPackageAssignment];
-[accessPackageAssignmentRequest setJustification:@"Need access to New Hire access package"];
 
 NSError *error;
 NSData *accessPackageAssignmentRequestData = [accessPackageAssignmentRequest getSerializedDataWithError:&error];
