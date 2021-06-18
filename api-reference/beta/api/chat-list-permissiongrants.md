@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0646058d7cf06d9847037e4682f846fa17f0d49c
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: f66f1fd083560d98cccbce1f58f9e43ef9634b37
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971270"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52990838"
 ---
 # <a name="list-permissiongrants-of-a-chat"></a>聊天的列表权限权限
 
@@ -144,3 +144,7 @@ Content-type: application/json
    ]
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+- [列出团队的权限授予](team-list-permissionGrants.md)
+- [组的列表权限管理](group-list-permissionGrants.md)
