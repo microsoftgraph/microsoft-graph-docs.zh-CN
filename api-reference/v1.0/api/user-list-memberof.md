@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a845964fdc1ae223b50cc2421bf725782bbc07de
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 9b1c8a790fabc0efcc0f4ce5a7e6852f5428326b
+ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679517"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53010204"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -23,7 +23,7 @@ ms.locfileid: "52679517"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | GroupMember.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 

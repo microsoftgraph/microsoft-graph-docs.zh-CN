@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: efd2f192fdaf5338b7f97483aca7d93f861ecb02
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 968b1c38ce21c380116995ef7908abf9be1d0553
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971410"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991174"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -653,7 +653,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 |_Device.ReadWrite.All_ |读取和写入设备 |支持应用程序读取和写入所有设备属性，而无需有登录用户。不得创建设备、删除设备或更新设备备用安全标识符。 |是 |
 
 > [!NOTE]
-> 2020 年 12 月 3 日之前，当授予应用程序权限 *Device.Read.All* 时， [设备管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) 目录角色也分配给了应用程序的服务主体。 撤销关联的应用程序权限后，不会自动删除此目录角色分配。 为确保删除应用程序对设备的读写权限，客户还必须删除授予该应用程序的所有相关目录角色。
+> 2020 年 12 月 3 日之前，当应用程序权限 *Device.Read.All* 被授予时，[设备管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles)目录角色也被分配给了应用程序的服务主体。 撤销关联的应用程序权限后，不会自动删除此目录角色分配。 为确保删除应用程序对设备的读写权限，客户还必须删除授予该应用程序的所有相关目录角色。
 > 
 > 禁用此行为的服务更新于 2020 年 12 月 3 日开始推出。 部署到所有客户，2021 年 1 月 11 日完成。 授予应用程序权限后，系统不再自动分配目录角色。
 

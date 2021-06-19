@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eb16c50cc0a858091488ebf7ffe13879c7cb4763
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 258659da2ad842971043d76ec52888bfd15a236e
+ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289243"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53010183"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 
@@ -33,24 +33,21 @@ Microsoft Graph 中的教育版 API 可增强 Microsoft 365 资源和与教育�
 
 ### <a name="use-microsoft-teams-to-create-class-assignments-in-an-assignments-tab"></a>使用 Microsoft Teams 在“作业”选项卡中创建课程作业
 
+可以使用与作业相关的教育 API 与 Microsoft Teams 中的作业集成。 Microsoft 365 教育版中的 Microsoft Teams 基于同一教育 API，并提供了使用 API 执行哪些操作的用例。 应用可以使用这些 API 在整个作业生命周期内与作业进行交互。
 
-可使用作业 API 创建 Web 应用来管理课程作业，然后在新自定义选项卡上将应用集成到 Microsoft Teams。  
+作业 API 提供以下关键资源：
 
-Microsoft 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内容和应用整合到教室这一个位置中。 Microsoft Teams 提供了[一组丰富的扩展点](/microsoftteams/platform/concepts/apps/apps-overview)，包括创建选项卡、连接器和自动程序。 这些扩展点可以在 Microsoft Graph 中调用教育版 API 以处理作业和提交。 通过启用具备任何其他 Microsoft Graph API 以及作业和提交 API 的扩展点来构建更全面的体验。
-
-对于教育版，Microsoft Teams 自定义选项卡应用在教育课堂（团队）上下文中打开，在此环境中，管理端到端作业流（从创建和分发到评分和反馈）别具意义。 这只是有关 Microsoft Teams 如何节省时间和简化日常后勤的一个示例，以便教育工作者可以更多地将重心放在他们的学生身上。
-
-下图显示了**科学-生物学科 1**课程“作业”自定义选项卡中用于管理作业的 Web 应用。
-
-![Microsoft Teams 中面向“科学-生物学科”课程的“作业”选项卡屏幕截图](images/assignmentsinteams.png)
+[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-1.0) - 作业 API 的核心对象。 是指将任务或工作单元分配给课程中的学生或团队成员，作为其学习的一部分。
+•   [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-1.0) - 是指个人（或组）提交作业的资源以及该作业的相关成绩和反馈。
+•   [educationResource](/graph/api/resources/educationresource?view=graph-rest-1.0) - 是指正在分配或提交的学习对象。 **educationResource** 与 **educationAssignment** 和/或 **educationSubmission** 相关联。
 
 
 通过作业 API，你的应用可以与 Microsoft Teams 之外的作业服务进行交互。 Microsoft Teams 将处理分发、截止日期和评分，而系统可以为学生提供丰富的学习体验。
 以下是由作业 API 启用的几个方案示例：
 
-- [添加到应用程序的作业链接](/graph/api/educationclass-post-assignments?view=graph-rest-beta) 
-- [对于链接到应用程序的作业，将成绩等结果分配给各个学生](/graph/api/educationoutcome-update?view=graph-rest-beta)
-- [创建学生仪表板以显示哪些作业何时截止](/graph/api/educationclass-list-assignments?view=graph-rest-beta)
+- [添加到应用程序的作业链接](/graph/api/educationclass-post-assignments?view=graph-rest-1.0) 
+- [对于链接到应用程序的作业，将成绩等结果分配给各个学生](/graph/api/educationoutcome-update?view=graph-rest-1.0)
+- [创建学生仪表板以显示哪些作业何时截止](/graph/api/educationclass-list-assignments?view=graph-rest-1.0)
 
 
 ### <a name="enable-school-admins-to-manage-identity-and-roster-sync-using-school-data-sync-management-preview"></a>使学校管理员能够使用学校数据同步管理（预览版）管理标识和名单同步
@@ -73,7 +70,7 @@ Microsoft 365 中的 Microsoft Teams 是一个数字中心，它可将对话、�
 
 - 若要开始使用教育版 API，请参阅：
   - [使用名单 API](/graph/api/resources/education-overview?view=graph-rest-1.0)
-  - [使用作业 API](/graph/api/resources/educationassignment?view=graph-rest-beta)
+  - [使用作业 API](/graph/api/resources/educationassignment?view=graph-rest-1.0)
   - [使用 SDS 管理 API](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中试用教育版 API。
 - 浏览下面的教育相关示例：
