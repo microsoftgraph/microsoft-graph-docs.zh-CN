@@ -4,16 +4,16 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 51bf43360c3580011ab39e2c385b4c23d3bfc5a1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1bfa039dc133ccd215a3f43780ddb1523e8dafdc
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962411"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030255"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
-Microsoft Graph 支持可选的查询参数，可用于指定和控制响应中返回的数据量。 对准确查询参数的支持因 API 操作不同而不同，并且可能会在 v1.0 和数据终结点之间不同，具体取决于 API。 
+Microsoft Graph 支持可选的查询参数，可用于指定和控制响应中返回的数据量。 对准确查询参数的支持因 API 操作不同而不同，并且可能会在 v1.0 和数据终结点之间不同，具体取决于 API。
 
 > [!TIP] 
 > 在 beta 终结点上，`$` 前缀是可选的。 例如，可使用 `filter` 来代替 `$filter`。 在 v1 终结点上, `$`前缀仅对 API 的一个子集是可选的。 为简单起见, 如果使用 v1 终结点, 请始终包含`$`。
@@ -54,6 +54,7 @@ Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询�
 
 | 名称                     | 说明 | 示例 
 |:-------------------------|:------------|:---------|
+| [$count](/graph/api/user-list#example-3-get-only-a-count-of-users)| 检索集合的整数总计。 | `GET /users/$count` <br> `GET /groups/{id}/members/$count`|
 | [$ref](/graph/api/group-post-members) | 更新实体成员身份至集合。 | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | 检索或更新项的二进制值。 | `GET /me/photo/$value` |
 
@@ -83,7 +84,12 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 ## <a name="count-parameter"></a>count 参数
 
-使用 `$count` 查询参数以包括集合中项总数的计数，以及从 Microsoft Graph 返回的数据值页。 
+使用 `$count` 查询参数以包括集合中项总数的计数，以及从 Microsoft Graph 返回的数据值页。
+
+> [!NOTE]
+> `$count` 还可以用作 [URL 段](#other-odata-url-capabilities) 以检索集合的整数总计。 在派生自[directoryObject](/graph/api/resources/directoryobject)的资源上，它仅在[高级查询](/graph/aad-advanced-queries)中受支持。 请参阅[Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+>
+> Azure AD B2C 租户不支持使用`$count`。
 
 例如，下面的请求返回当前用户的 **contact** 集合，以及 `@odata.count` 属性中 **contact** 集合内的项数。
 
@@ -93,14 +99,13 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
-
-`$count`查询参数支持这些资源集合和它们的关系派生[自directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta&preserve-view=true)：
-- [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)
-- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
-- [设备](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true)
-- [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
-- [用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)。
+`$count`查询参数支持这些资源集合和派生自[directoryObject](/graph/api/resources/directoryobject)的关系，而且仅在[高级查询](/graph/filter-directory-objects)中支持:
+- [application](/graph/api/resources/application)
+- [orgContact](/graph/api/resources/orgcontact)
+- [设备](/graph/api/resources/device)
+- [组](/graph/api/resources/group)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [用户](/graph/api/resources/user)
 
 ## <a name="expand-parameter"></a>expand 参数
 
@@ -124,9 +129,10 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [在 Graph 浏览器中试调用][expand-example]
 
-> **注意：** 并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 **directReports**、**manager** 和 **memberOf** 关系，但无法扩展其 **events**、**messages** 或 **photo** 关系。并非所有资源或关系都支持对扩展项使用 `$select`。 
+> [!NOTE]
+> 并不是所有关系和资源都支持 `$expand` 查询参数。 例如，可以展开一个用户的 **directReports**、 **manager** 和 **memberOf** 关系，但不能展开其 **events**、 **messages** 或 **photos** 关系。 并非所有资源或关系都支持在扩展项上使用 `$select`。 
 > 
-> 使用从 [directoryObject](/graph/api/resources/directoryobject) 派生的 Azure AD 资源（如[user](/graph/api/resources/user) 和 [group](/graph/api/resources/group)），`$expand` 仅支持 `beta`，并且通常最多为扩展关系返回 20 个项。
+> 使用派生自 [directoryObject](/graph/api/resources/directoryobject) 的 Azure AD 资源(如[user](/graph/api/resources/user) 和 [group](/graph/api/resources/group))，`$expand` 通常最多为扩展关系返回 20 个项，并且没有 [@odata.nextLink](./paging.md)。 请参阅更多 [已知问题](known-issues.md#query-parameter-limitations)。
 
 ## <a name="filter-parameter"></a>filter 参数
 
@@ -151,27 +157,74 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 - l匿名函数运算符 any `any`
 - l匿名函数运算符 all `all`
 - 开头为 `startsWith`
-- 结尾为 `endsWith`
+- 以`endsWith`结尾(仅在[高级查询](/graph/aad-advanced-queries)中)
+- 包含`contains`
 
-> **注意：** 对这些运算符的支持因实体而异。 有关详细信息，请参阅特定实体文档。 
->
-> 所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
+> **注意:** 对这些运算符的支持因实体而异，某些属性仅在[高级查询](/graph/aad-advanced-queries)中支持`$filter`。 有关详细信息，请参阅特定实体文档。
 
-有关一些用法示例的信息，请参阅下表。 如需了解 `$filter` 语法的更多详情，请参阅 [OData 协议][odata-filter]。  
-下表展示了一些使用 `$filter` 查询参数的示例。
+### <a name="filter-using-lambda-operators"></a>使用 lambda 运算符进行筛选
+
+OData 定义 `any` 和 `all` 运算符以评估多值属性的匹配项，即基元值(如 **字符串** 类型或实体集合)的集合。
+
+`any`运算符以迭代方式将布尔表达式应用于集合的每个成员，如果集合的 *任何成员* 的表达式为`true`，则返回`true`;否则返回`false`。 以下是`any`运算符的语法:
+
+```http
+$filter=param/any(var:var/subparam eq 'value-to-match')
+```
+
+其中
++ *param* 是包含值集合或实体集合的属性。
++ *var:var* 是一个范围变量，用于在迭代期间保存集合的当前元素。 此变量几乎可以被命名为任何内容，例如， *adele:adele* 或 *x:x*。
++ 当查询应用于实体集合时，*subparam* 是必需的。 它表示正在匹配其值的复杂类型的属性。
++ *value-to-match* 表示要与之匹配的集合的成员。
+
+例如，用户资源的 **assignedLicenses** 属性可以包含 **assignedLicense** 对象的集合，一个包含两个属性 **skuId** 和 **disabledPlans** 的复杂类型。 以下查询仅检索具有由 **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`标识的已分配许可证的用户。
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
+```
+
+用户资源的 **imAddresses** 属性可以包含基元类型 **string** 的集合。 以下查询仅检索 imAddress 为 `admin@contoso.com`的用户。
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=imAddresses/any(s:s eq 'admin@contoso.com')
+```
+
+若要对 `any` 子句内表达式的结果求反，请使用 `NOT` 运算符，而不是 `ne` 运算符。 例如，以下查询仅检索未分配 `admin@contoso.com` 的 **imAddress** 的用户。
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@m365x435773.onmicrosoft.com')&$count=true
+```
+
+`all`运算符以迭代方式将布尔表达式应用于集合的每个成员，如果集合的 *所有成员* 的表达式为`true`，则返回`true`;否则返回`false`。 任何属性都不支持它。
+
+### <a name="examples-using-the-filter-query-operator"></a>使用筛选器查询运算符的示例
+
+下表展示了一些使用 `$filter` 查询参数的示例。 如需了解 `$filter` 语法的更多详情，请参阅 [OData 协议][odata-filter]。
 
 > **注意：** 单击示例可以在 [Graph 浏览器][graph-explorer]中试调用。
 
 | 说明 | 示例
 |:------------|:--------|
-| 跨多个属性获取名为 Mary 的用户。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
-| 获取邮件域等于“hotmail.com”的所有用户 | [`https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
-| 获取 2017 年 7 月 1 日之后开始的所有登录用户的事件。 | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
-| 获取登录用户收到的来自特定地址的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
-| 获取登录用户在 2017 年 4 月收到的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
-| 获取登录用户收件箱中的所有未读邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| 列出组织中的所有 Microsoft 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
-| 使用 OData 转换可实现显示名称以“ a”开头（包括返回的对象数）的组中的临时成员资格。 | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
+| 跨多个属性获取名为 Mary 的用户。 | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) `../users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')` |
+| 获取邮件域等于“hotmail.com”的所有用户 | 
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@hotmail.com')`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
+| 获取 2017 年 7 月 1 日之后开始的所有登录用户的事件。 | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) `../me/events?$filter=start/dateTime ge '2017-07-01T08:00'` |
+| 获取登录用户收到的来自特定地址的所有电子邮件。 | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) `../me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'` |
+| 获取登录用户在 2017 年 4 月收到的所有电子邮件。 | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) `../me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01` |
+| 获取登录用户收件箱中的所有未读邮件。 | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) `../me/mailFolders/inbox/messages?$filter=isRead eq false` |
+| 获取零售和销售部门中的所有用户。 | 
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail'%2C%20'Sales')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `../users?$filter=department in ('Retail', 'Sales')`| 
+| 列出具有处于挂起状态的特定服务计划的用户。 | 
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
+| 列出组织中的所有非 Microsoft 365 组。 | 
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true` |
+| 列出其公司名称不是未定义(即，不是 `null` 值)或 Microsoft 的所有用户。 | 
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
+| 列出其公司名称是未定义或 Microsoft 的所有用户。 | 
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
+| 使用 OData 转换可实现显示名称以“ a”开头(包括返回的对象数)的组中的临时成员资格。 | 
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
 
 ## <a name="format-parameter"></a>format 参数
 
@@ -189,7 +242,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 ## <a name="orderby-parameter"></a>orderby 参数
 
-使用 `$orderby` 查询参数指定从 Microsoft Graph 返回的项的排序顺序。
+使用 `$orderby` 查询参数指定从 Microsoft Graph 返回的项的排序顺序。 默认顺序为升序。
 
 例如，以下请求返回按用户显示名称进行排序的组织中的用户：
 
@@ -205,9 +258,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 ```
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
 
-若要以升序或降序对结果进行排序，请向字段名称追加 `asc` 或 `desc`，并用空格隔开。例如，`?$orderby=name%20desc`。
+若要以升序或降序对结果进行排序，请向字段名称追加 `asc` 或 `desc`，并用空格隔开。例如，`?$orderby=name%20desc`。 如果未指定排序顺序，则推断默认值(升序)。
 
-通过一些 API，可以对多个属性的结果进行排序。 例如，以下请求首先按发件人名称以降序（Z 到 A）排序用户收件箱中的邮件，然后按主题以升序（默认）排序邮件。
+通过一些 API，可以对多个属性的结果进行排序。例如，以下请求首先按发件人名称以降序(Z 到 A)排序用户收件箱中的邮件，然后按主题以升序(默认)排序邮件。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
@@ -215,7 +268,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-> **注意：** 如果指定 $filter，服务器会推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter` 获取消息，因为服务器始终会推断 `$filter` 结果的排序顺序，必须[以特定的方式指定属性](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query)。
+> **注意:** 如果指定 `$filter`，服务器会推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter` 获取消息，因为服务器始终会推断 `$filter` 结果的排序顺序，必须[以特定的方式指定属性](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query)。
 
 
 下面的示例展示了如何按 **subject** 和 **importance** 属性筛选查询，再按 **subject**、**importance** 和 **receivedDateTime** 属性进行降序排序。
@@ -226,179 +279,16 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
-> **注意：** 对于以下 AD 资源及其从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta&preserve-view=true) 派生的关系，在 Beta 终结点上支持组合 `$orderby` 和 `$filter` 查询参数：
->
->- [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)
->- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
->- [设备](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true)
->- [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)
->- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
->- [用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
->
-> 若要将`$orderby``$filter`、或`$filter`与`endsWith`一，则需要：
->
-> - 将 `$count=true` 添加到查询参数
-> - 添加 `ConsistencyLevel: eventual` 请求标题
->
-> 有关更多信息，请参见[可选用户查询参数](/graph/api/user-list?view=graph-rest-beta&preserve-view=true#optional-query-parameters)。
+> [!NOTE] 
+> 目录对象支持组合 `$orderby` 和 `$filter` 查询参数。 请参阅[Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 ## <a name="search-parameter"></a>search 参数
 
-使用 `$search` 查询参数限制与搜索条件匹配的请求结果。
-
-### <a name="using-search-on-message-collections"></a>对 message 集合使用 $search
-
-可根据特定邮件属性值搜索邮件。 搜索结果按邮件发送日期和时间进行排序。 `$search` 请求最多可返回 250 个结果。
-
-如果确实要搜索邮件，且仅指定值，而未指定特定邮件属性，搜索依据为默认搜索属性 **from**、**subject** 和 **body**。
-
-下面的示例返回登录用户收件箱中三个默认搜索属性中有任意一个包含“pizza”的所有邮件：
-
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
-```
-
-[在 Graph 浏览器中试调用][search-example]
-
-也可以指定下表中的邮件属性名来搜索邮件，这些属性名可由关键字查询语言 (KQL) 语法识别。 这些属性名对应于 Microsoft Graph **message** 实体中定义的属性。 Outlook 和其他 Microsoft 365 应用程序（如 SharePoint）支持 KQL 语法，从而为数据存储提供了方便使用的公共发现域。
-
-
-| 可搜索的电子邮件属性                | 说明 | 示例 
-|:-------------------------|:------------|:---------|
-| **attachment**           | 电子邮件附件的文件名。|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
-| **bcc**           | 电子邮件的 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
-| **body**           | 电子邮件正文。|[`me/messages?$search="body:excitement"`][search-body-example]
-| **cc**           | 电子邮件的 **cc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
-| **from**           | 电子邮件的发件人，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
-| **hasAttachment** | 如果电子邮件附件不是内联附件，则为 true；否则，为 false。 |[`me/messages?$search="hasAttachments:true"`][search-from-example]
-| **importance**           | 发件人在发送邮件时可以指定的电子邮件重要性。 可取值包括 `low`、`medium` 或 `high`。|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **Kind**           | 邮件类型。 可取值包括 `contacts`、`docs`、`email`、`faxes`、`im`、`journals`、`meetings`、`notes`、`posts`、`rssfeeds`、`tasks` 或 `voicemail`。|[`me/messages?$search="kind:voicemail"`][search-kind-example]
-| **participants**           | 电子邮件的 **from**、**to**、**cc** 和 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="participants:danas"`][search-part-example]
-| **received**           | 收件人接收电子邮件的日期。|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
-| **recipients**           | 电子邮件的 **to**、**cc** 和 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
-| **sent**           | 发件人发送电子邮件的日期。|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
-| **size**           | 邮件大小（以字节为单位）。|[`me/messages?$search="size:1..500000"`][search-size-example]
-| **subject**           | 电子邮件主题行中的文本。 .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
-| **to**           | 电子邮件的 **to** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
-
-
-若要详细了解 可搜索的电子邮件属性、KQL 语法、受支持的运算符和搜索技巧，请参阅以下文章：
-
-- [Exchange 中的可搜索属性](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
-
-- [关键字查询语言 (KQL) 语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
-
-- [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators)
-
-### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
-
-可以使用 Microsoft Graph People API 检索与用户相关度最高的人员。 相关性由用户的通信和协作模式及业务关系决定。 People API 支持 `$search` 查询参数。 `$search` 请求最多可返回 250 个结果。
-
-人员搜索就是按 [person](/graph/api/resources/person) 资源的 **displayName** 和 **emailAddress** 属性进行搜索。
-
-以下请求在已登录用户的 **人员** 集合中的每个人员的 **displayName** 和 **emailAddress** 属性中，为名为“Irene McGowen”的人员执行搜索。 由于一个名为“Irene McGowan”的人员与登录用户相关，因此返回了“Irene McGowan”的信息。
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
-```
-
-以下示例显示了相应的响应。 
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
-       }
-   ]
-}
-```
-
-若要了解有关 People API 的详细信息，请参阅[获取相关人员的信息](./people-example.md#search-people)。  
-
-### <a name="using-search-on-directory-object-collections"></a>在目录对象集合上使用 $search
-
-可使用 `$search` 查询参数来使用标记筛选结果。 标记化搜索的工作原理是提取输入和输出字符串中的单词，并使用空格、数字、不同的大小写和符号分隔这些词，如下所示：
-
-* **空格**：`hello world` => `hello`、 `world`
-* **不同的大小写**⁽¹⁾：`HelloWorld` 或 `helloWORLD` => `hello`、`world`
-* **符号**⁽⁾：`hello.world` => `hello`、`.`、`world`， `helloworld`
-* **数字**：`hello123world` => `hello`、`123`、 `world`
-
-⁽¹⁾ 目前，标记化仅在大小写从小写转换为大写时才有效，因此 `HELLOworld` 被视为一个标记：`helloworld`，`HelloWORld` 是两个标记：`hello`、`world`。 ⁽²⁾ 标记化逻辑还会合并仅由符号分隔的单词；例如，搜索 `helloworld` 将找到 `hello-world` 和 `hello.world`。
-
-> **注意**：标记化后，标记将独立于原始大小写进行匹配，并且将以任何顺序匹配。
-> `$search` 目录对象集合上的查询参数 **需要** 特殊的请求标头：`ConsistencyLevel: eventual`。
-
-标记化搜索支持仅适用于 **displayName** 和 **description** 字段。 任何字段都可以放入 `$search`；非 **displayName** 和 **description** 的字段默认为 `$filter` startswith 行为。 例如：
-
-`https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
-
-这将查找显示名称看起来像 "OneVideo" 的所有组。 也可与`$search`配合使用`$filter`。 例如：
-
-`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
-
-这将查找显示名称类似于“OneVideo”的所有启用邮件的组。 结果是根据逻辑结合（"AND"）和`$filter`整个查询`$search`来限制。 搜索文本基于大小写进行标记，但是匹配以不区分大小写的方式执行。 例如，“OneVideo”将被分割成两个输入标记“one”和“video”，但是匹配不区分大小写的属性。
-
-搜索的语法遵循以下规则：
-
-* 通用格式：$search="clause1" \[AND \| OR\] "\[clauseX\]"\.
-* 支持任何子句。 支持适用于优先级的括号。
-* 每个子句的语法是："\<property>:\<text to search>"。
-* 必须在子句中指定属性名称。 可以在中使用的任何属性`$filter`也可以在内使用 `$search`。 根据属性的不同，如果属性不支持搜索，那么搜索行为要么是“search”，要么是“start with”。
-* 必须将完整子句部分置于双引号内。
-* 必须将逻辑运算符 "AND" 和 "OR" 置于双引号之外。 它们必须处于大写形式。
-* 考虑到整个子句部分需要放在双引号内，如果包含双引号和反斜杠，则需要使用反斜杠对其进行转义。 无需转义其他字符。
-
-下表显示了一些示例。
-
-| 对象类 | 说明 | 示例 |
-| ------------ | ----------- | ------- |
-| 用户 | 通讯簿显示用户的名称。 | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
-| 用户 | 通讯簿显示用户的名称或邮件。 | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
-| Group | 通讯簿显群组的名称或说明。 | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
-| Group | 通讯簿在启用邮件组上显示名称。 | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
-
-你在 `$search` 中提供的字符串输入以及可搜索属性都按空格、不同的大小写和字符类型（数字和特殊字符）划分为多个部分。
+使用 `$search` 查询参数限制与搜索条件匹配的请求结果。 它的语法和行为因 API 操作而异。 若要查看不同资源之间 `$search` 的语法，请参阅 [使用$search查询参数匹配搜索条件](/graph/search-query-parameter)。
 
 ## <a name="select-parameter"></a>select 参数
 
-使用 `$select` 查询参数返回一组不同于单个资源的默认集或资源集合的属性。 使用 $select，可以指定默认属性的子集或超集。
+使用 `$select` 查询参数返回一组不同于单个资源的默认集或资源集合的属性。 使用 `$select`，可以指定默认属性的子集或超集。
 
 例如，检索登录用户的邮件时，可以指定仅返回 **from** 和 **subject** 属性：
 
@@ -422,12 +312,16 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 [在 Graph 浏览器中试调用][skip-example]
 
 > **注意：** 一些 Microsoft Graph API 使用 `$skip` 实现分页，如 Outlook 邮件和日历（**message**、**event** 和 **calendar**）。 当查询结果跨多个页面时，这些 API 会返回 `@odata:nextLink` 属性，具有包含 `$skip` 参数的 URL。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
+>
+> 默认情况下，针对目录对象的高级查询所需的 **ConsistencyLevel** 标头不包含在后续页面请求中。 必须在后续页面中显式设置它。
 
 ## <a name="skiptoken-parameter"></a>skipToken 参数
 
 由于服务器端分页或由于使用 [`$top`](#top-parameter) 参数来限制响应的页面大小，致使一些请求返回多页数据。 许多 Microsoft Graph API 使用 `skipToken` 查询参数来引用结果的后续页面。  
 `$skiptoken` 参数包含引用下一页结果的不透明令牌，并在响应的 `@odata.nextLink` 属性中提供的 URL 中返回。 若要了解详细信息，请参阅[分页](./paging.md)。
-> **注意**：如果你使用的是 OData 计数（在查询字符串中添加 `$count=true`），则 `@odata.count` 属性将仅在第一页中出现。
+> **注意**:如果对目录对象的查询使用 OData 计数(在查询字符串中添加 `$count=true`)，则 `@odata.count` 属性将仅在第一页中出现。
+>
+> 默认情况下，针对目录对象的高级查询所需的 **ConsistencyLevel** 标头不包含在后续页面请求中。 必须在后续页面中显式设置它。
 
 ## <a name="top-parameter"></a>top 参数
 
@@ -445,6 +339,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 [在 Graph 浏览器中试调用][top-example]
 
+> 默认情况下，针对目录对象的高级查询所需的 **ConsistencyLevel** 标头不包含在后续页面请求中。 必须在后续页面中显式设置它。
 
 ## <a name="error-handling-for-query-parameters"></a>查询参数的错误处理
 
@@ -503,6 +398,6 @@ https://graph.microsoft.com/beta/me?$expand=photo
 
 
 
-## <a name="see-also"></a>另请参阅
-
+- [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)
 - [查询参数限制](known-issues.md#query-parameter-limitations)
+- [使用$search查询参数匹配搜索条件](/graph/search-query-parameter)

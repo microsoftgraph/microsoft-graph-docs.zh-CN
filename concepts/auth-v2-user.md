@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 82fd2766fa86935cd52e47f7c1669ce3cbfecaf9
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: bd9087759a6b466f5d2c1ba3b8957c17545b1755
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781056"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030857"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
@@ -52,7 +52,7 @@ ms.locfileid: "52781056"
 // Line breaks for legibility only
 
 https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
-client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+client_id=11111111-1111-1111-1111-111111111111
 &response_type=code
 &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &response_mode=query
@@ -115,12 +115,12 @@ POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
-client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+client_id=11111111-1111-1111-1111-111111111111
 &scope=user.read%20mail.read
 &code=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq3n8b2JRLk4OxVXr...
 &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &grant_type=authorization_code
-&client_secret=JqQX2PNo9bpM0uEihUPzyrh    // NOTE: Only required for web apps
+&client_secret=jXoM3iz...    // NOTE: Only required for web apps
 ```
 
 | 参数     | 必需              | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -209,12 +209,12 @@ POST /common/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
-client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+client_id=11111111-1111-1111-1111-111111111111
 &scope=user.read%20mail.read
 &refresh_token=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq...
 &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &grant_type=refresh_token
-&client_secret=JqQX2PNo9bpM0uEihUPzyrh      // NOTE: Only required for web apps
+&client_secret=jXoM3iz...      // NOTE: Only required for web apps
 ```
 
 | 参数     | 必需              | 说明                                                                                                                                                                                                                                                                                                         |

@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 275d21c3bd34fc8a5049c4db8fb1e2c7521b3a81
-ms.sourcegitcommit: ecf7867ef7957b847b7530089ce30e107750adac
+ms.openlocfilehash: 77e913732dd0ad9f7094ec778f71a0eb2b8e0fe8
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698009"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030248"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -783,7 +783,7 @@ v1.0 中 [ shifts API](/graph/api/resources/shift?view=graph-rest-1.0&preserve-v
 - 在 **resourceProvisioningOptions** 属性中指定要提供的资源，这些资源通常不属于默认 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)创建的一部分。 当前支持使用 Microsoft Teams 功能将组作为[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)进行配置。
 
 ### <a name="identity-and-access"></a>身份和访问
-- 获取从 [directoryObject]() 派生的实体集合时，请应用 OData 系统查询选项（`$count`、`$filter`、`$search`）。 你可以 [在这些实体的 **displayName** 和 **description** 属性中搜索特定标记](./query-parameters.md#using-search-on-directory-object-collections)，并使用 OData 强制转换将 **directoryObject** 的结果修剪为特定的派生类型。 有关详细信息，请参阅[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/zh-CN/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)。
+- 获取从 [directoryObject](/graph/api/resources/directoryObject) 派生的实体集合时，请应用 OData 系统查询选项（`$count`、`$filter`、`$search`）。 你可以 [在这些实体的 **displayName** 和 **description** 属性中搜索特定标记](/graph/search-query-parameter#using-search-on-directory-object-collections)，并使用 OData 强制转换将 **directoryObject** 的结果修剪为特定的派生类型。 有关详细信息，请参阅[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/zh-CN/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)。
 - 作为 [身份保护 API](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) 的一部分，请使用 **riskEventType** 属性来 [获取检测到的风险类型](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true)或 [获取用户历史记录中的风险类型](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true)。不要使用 **riskType** 属性，因为它已被弃用。
 - 在 [条件集](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true)的 **clientAppTypes** 属性中为 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true)指定客户端应用程序类型。
 - 使用 `EntitlementManagement.Read.All` 的委派权限允许应用代表已登录的用户请求读取访问包及相关权利管理资源。

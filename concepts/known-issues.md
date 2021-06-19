@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 20d9d3cb70ad1ea8a4b5647f683bbb01dcfb3e4c
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: 1adf4a4f756be0ce4f8e338ee016bbb3d3059177
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100063"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030773"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -184,12 +184,6 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * 跟踪关系更改时，OData 上下文有时无法正确返回。
 * 架构扩展（旧版）未使用 $select 语句返回，而是在无 $select 的情况下返回。
 * 客户端无法跟踪开放扩展或已注册的架构扩展的更改。
-
-## <a name="devices-and-apps--device-updates-windows-updates"></a>设备和应用|设备更新（Windows 更新）
-
-### <a name="making-a-request-for-the-first-time"></a>首次提出请求
-
-首次调用 Windows 个更新 API 时，可能会收到 `401 Unauthorized` 答复。 如果应用的服务主体在租户中尚不存在，并且需要时间来完成配置，则会发生此错误。 请在大约 24 小时后再试。
 
 ## <a name="extensions"></a>扩展
 
@@ -387,8 +381,9 @@ Microsoft Graph 允许 **userPrincipalName** 以美元 (`$`) 字符开头。 但
 * `@odata.bind` 不受支持。这意味着开发人员将无法在组上适当设置 **acceptedSenders** 或 **rejectedSenders** 导航属性。
 * 使用极少的元数据时，非包容导航（如邮件）上不存在 `@odata.id`。
 * `$expand`:
-  * 不支持 `nextLink`
-  * 不支持 1 级以上扩展
+  * 最多返回 20 个对象。
+  * 不支持 `@odata.nextLink`。
+  * 不支持 1 级以上扩展。
   * 不支持其他参数（`$filter`、`$select`）
 * `$filter`:
   * `/attachments` 终结点不支持筛选器。 如果存在，将忽略 `$filter` 参数。
@@ -396,6 +391,11 @@ Microsoft Graph 允许 **userPrincipalName** 以美元 (`$`) 字符开头。 但
 * `$search`:
   * 全文搜索仅对实体子集（如邮件）可用。
   * 不支持跨工作负载搜索。
+  * Azure AD B2C 租户不支持搜索。
+* `$count`:
+  * 不支持 Azure AD B2C 租户。
+  * 在针对目录资源进行查询时使用 `$count=true` 查询字符串时， `@odata.count` 属性将仅出现在分页数据的第一页中。
+* 请求中指定的查询参数可能会自行失败。 不支持的查询参数以及不支持的查询参数组合的情况就是如此。
 
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>只有 Office 365 REST 或 Azure AD Graph API 才具有的功能
