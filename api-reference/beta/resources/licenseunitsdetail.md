@@ -4,13 +4,13 @@ description: '**subscribedSku** 实体的 prepaidUnits 属性为 **licenseUnitsD
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: directory-management
-author: jpettere
-ms.openlocfilehash: 3cc2ba98b0d221774ea1700c279a115a68494580
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+author: michaelcurnutt
+ms.openlocfilehash: 0f2f069cbbff191cefcdc8b735b2847b48a8f2ed
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720513"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030780"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "50720513"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**subscribedSku** 实体的 [prepaidUnits](subscribedsku.md) 属性为 **licenseUnitsDetail** 类型。
+**subscribedSku** 实体的 [prepaidUnits](subscribedsku.md) 属性为 **licenseUnitsDetail** 类型。 有关订阅进度状态详细信息，请参阅如果我 [的订阅过期，如何？](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:-------------|:-----|:----------|
-|已启用|Int32| 启用的单位数。 |
-|已挂起|Int32| 挂起的单位数。 |
-|警告|Int32| 警告状态的单位数。 |
+|已启用|Int32| 为服务 SKU 的活动订阅启用的单位数。 |
+|已挂起|Int32| 由于服务 SKU 的订阅已取消而暂停的单位数。 无法分配单位，但仍可以在删除之前将其重新激活。 |
+|警告|Int32| 警告状态的单位数。 当服务 SKU 订阅已过期时，客户有一个宽限期来续订其订阅，然后取消订阅 (移动到暂停状态) 。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

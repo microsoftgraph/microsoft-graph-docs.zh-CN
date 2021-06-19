@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ff7170a8058be986c7af6b7c2ebd53f47b7ffb82
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d41247ebb88e4941556408fe6fbebbabc54ff8d
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433115"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030899"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 
@@ -31,13 +31,13 @@ ms.locfileid: "50433115"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |appliesTo|String| 例如，“用户”或“公司”。 |
-|capabilityStatus|String| 可取值为：`Enabled`、`Warning`、`Suspended`、`Deleted`、`LockedOut`。 |
+|capabilityStatus|String| 可取值为：`Enabled`、`Warning`、`Suspended`、`Deleted`、`LockedOut`。 capabilityStatus 表示 `Enabled` **预付费Units** 属性至少启用了 1 个单位，并且客户 `LockedOut` 已取消订阅。 |
 |consumedUnits|Int32| 已分配的许可证数量。 |
 |id|String| 订阅的 sku 对象的唯一标识符。 键，不可为 null。 |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| 有关预付许可证的数量和状态的信息。 |
 |servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 有关 SKU 可用服务计划的信息。 不可为 null |
 |skuId|Guid| 服务 SKU 的唯一标识符 (GUID)。 |
-|skuPartNumber|String| SKU 商品编号；例如：“AAD_PREMIUM”或“RMSBASIC”。 若要获取组织已获取的商业订阅的列表，请参阅[List subscribedSkus。](../api/subscribedsku-list.md) |
+|skuPartNumber|String| SKU 商品编号；例如：“AAD_PREMIUM”或“RMSBASIC”。 若要获取组织已获取的商业订阅的列表，请参阅 [List subscribedSkus](../api/subscribedsku-list.md)。 |
 
 ## <a name="relationships"></a>关系
 无

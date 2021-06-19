@@ -1,16 +1,16 @@
 ---
 title: principalResourceMembershipsScope 资源类型
-description: 允许选择范围查看所选主体对选定资源的访问权限。
+description: 允许选择访问评审作用域，以检查所选主体对选定资源的访问权限。
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b22c52c0bf71f1a1169d51e2e6fd3e8ac10e99d9
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: d2706246089bcc6a26e2ec8ca3cd115edd18e10a
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579891"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030843"
 ---
 # <a name="principalresourcemembershipsscope-resource-type"></a>principalResourceMembershipsScope 资源类型
 
@@ -26,8 +26,8 @@ principalResourceMembershipsScope 是 [accessReviewScope](accessreviewscope.md) 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) 集合|定义要包含在访问评审中的主体范围。|
-|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) 集合|定义将检查其访问权限的资源的范围。|
+|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) 集合|定义访问评审中审查其资源访问权限的主体的范围。|
+|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) 集合|定义审查其访问权限的资源的范围。|
 
 还必须使用值 **指定 @odata.type** 类型属性 `#microsoft.graph.principalResourceMembershipsScope` 。 有关使用 **principalResourceMembershipsScope** 的范围配置选项的详细信息，请参阅使用 Microsoft Graph API 配置访问 [评审定义的范围](/graph/accessreviews-scope-concept)。 
 

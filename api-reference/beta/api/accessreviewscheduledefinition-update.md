@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0fe437806ee9fdb71535c16dab8c7ff07f631f39
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: be3b7603419d616ef9ea9e4da94fdb8942dc36f3
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579632"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030444"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>更新 accessReviewScheduleDefinition
 
@@ -55,7 +55,9 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 | descriptionForAdmins | String | 提供给管理员评价的上下文。 |
 | descriptionForReviewers | String | 提供给审阅者的审阅上下文。 |
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
-| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评论是自 (审阅用户自己的访问权限或) 。 Reviewers 属性仅在分配了单个用户为审阅者时可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 | 
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。 只有在 **将** 单个用户分配为审阅者时，审阅者属性才可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
+|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|用于定义回退审阅者列表的审阅者范围的集合，如果从指定的审阅者列表中找不到用户，将通知这些审阅者采取措施。 当组所有者指定为审阅者，但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。|
+| backupReviewers (弃用) |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此属性已被 **fallbackReviewers 取代**。 但是，指定 **backupReviewers** 或 **fallbackReviewers** 会自动向另一个属性填充相同的值。 |
 
 **PUT** 请求希望传入完整的对象，其中包括所有可写属性，而不只是要更新的属性。
 

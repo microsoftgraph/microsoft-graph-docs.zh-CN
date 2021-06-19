@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0655b0acd7dbd32b0ae4aae5337422f26f9c7c96
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c59b08c3a451d54a03502b28d2f05350f38e126f
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048391"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030486"
 ---
 # <a name="stop-accessreviewinstance"></a>停止访问ReviewInstance
 
@@ -18,7 +18,10 @@ ms.locfileid: "52048391"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-停止当前处于活动状态 [的 accessReviewInstance](../resources/accessreviewinstance.md)。 若要阻止定期访问评审启动将来的实例，请更新该检查[](accessreviewscheduledefinition-update.md)以更改其计划的结束日期。  在访问评审停止后，审阅者无法再提供输入，并且可以应用访问评审决策。
+停止当前处于活动状态 [的 accessReviewInstance](../resources/accessreviewinstance.md)。 访问评审实例停止后，实例状态将为 ，审阅者无法再提供输入，并且可以 `Completed` 应用访问评审决策。
+
+停止实例将影响未来的实例。 若要防止定期访问评审启动将来的实例，请 [更新计划定义](accessreviewscheduledefinition-update.md) 以更改其计划的结束日期。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

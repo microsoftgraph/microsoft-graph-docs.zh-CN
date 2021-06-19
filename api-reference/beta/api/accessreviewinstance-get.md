@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dffd394e5724a3954324432abccd15f8a9be9318
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bd333a0620b8825400f89338112060c48611f302
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048426"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030738"
 ---
 # <a name="get-accessreviewinstance"></a>获取 accessReviewInstance
 
@@ -38,6 +38,10 @@ ms.locfileid: "52048426"
 ```http
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+
 ## <a name="request-headers"></a>请求标头
 无。
 

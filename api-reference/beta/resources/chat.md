@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a596cf7bc5a33cb64f61778f501604ea350ccc5a
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 70f9569a609699036a5e27cdaf47faf622a572d2
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896660"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030850"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "52896660"
 
 > **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则列出的一些方法将可传递影响会议。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |  方法       |  返回类型  | 说明| 
 |:---------------|:--------|:----------|
@@ -46,13 +46,16 @@ ms.locfileid: "52896660"
 |[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联会议 (中安装) 。|
 |[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和相关会议 (安装的应用的) 。|
 |[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (和) 会议记录中删除 (卸载) 。|
-|[列出权限授予](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出已授予此聊天中的应用的权限。|
+|[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出已授予此聊天中的应用的权限。|
 | **选项卡** |||
 |[列出聊天中的选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到聊天 (关联的会议选项卡) 。|
 |[在聊天中获取选项卡](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到聊天组和关联 (的特定选项卡) 。|
 |[向聊天添加选项卡](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 将 (固定) 选项卡添加到聊天 (关联的会议) 。|
 |[聊天中的"更新"选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天记录和相关会议 (选项卡) 。|
 |[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (和) 会议记录中删除 (取消固定选项卡) 。|
+| **操作** |||
+|[列出聊天操作](../api/chat-list-operations.md) | [teamsAsyncOperation](teamsAsyncOperation.md) 集合 | 获取在聊天中运行或运行的异步操作列表。|
+|[获取聊天操作](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | 获取在聊天中运行或运行的单个异步操作。|
 
 >**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 ID，以及从具有应用程序权限的 [/chats/getAllMessages](../api/subscription-post-subscriptions.md) 更改通知获取。
 
@@ -84,6 +87,7 @@ ms.locfileid: "52896660"
 | members | [conversationMember](conversationmember.md) 集合 | 聊天中所有成员的集合。 可为 Null。 |
 | messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有消息的集合。 可为 NULL。 |
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合| 授予聊天应用的权限集合。|
+| operations | [teamsAsyncOperation](teamsasyncoperation.md) 集合 | 在聊天中运行Teams运行的所有异步操作的集合。 可为 Null。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

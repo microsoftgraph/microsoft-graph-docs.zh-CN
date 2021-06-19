@@ -4,12 +4,12 @@ description: 使用访问评审 API 查看对安全组的访问权限
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b3a7ee94f045eb7eb587b58fc6220c304c2b81ff
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e57fb73c119f36dd0cdb50746910463cfa336d3c
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787075"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030269"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>教程：使用访问评审 API 查看对安全组的访问权限
 
@@ -24,7 +24,7 @@ ms.locfileid: "52787075"
 
 若要完成本教程，需要以下资源和权限：
 
-+ 启用 Azure AD 或 EMS E5 许可证高级版 Azure AD 租户。
++ 启用许可证或 EMS E5 Azure AD Premium P2正常工作的 Azure AD 租户。
 + 以用户[Graph](https://developer.microsoft.com/graph/graph-explorer)登录资源管理器全局管理员角色。
   + [可选]启动新的 **隐身** 或 **InPrivate** 浏览器会话或在匿名浏览器中启动会话。 你将在本教程的稍后部分登录。
 + 以下委派权限 `AccessReview.ReadWrite.All` `Group.ReadWrite.All` ：、。
@@ -36,7 +36,7 @@ ms.locfileid: "52787075"
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
 2. 滚动浏览这些权限的权限列表：
-   + AccessReviews (3) ，展开，然后选择 **AccessReviews.ReadWrite.All**。
+   + AccessReview (3) ，展开，然后选择 **AccessReview.ReadWrite.All**。
    + 将 (2) ，展开，然后选择 **Group.ReadWrite.All。**
   
     选择 **"** 同意"，然后在弹出窗口中选择"代表你的组织同意"，然后选择"接受"接受权限同意。
@@ -557,4 +557,7 @@ Content-type: text/plain
 + [使用 Microsoft Graph API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)
 + [访问评审概述和许可证要求](/azure/active-directory/governance/access-reviews-overview)
 + [创建对应用程序应用程序的组&评审](/azure/active-directory/governance/create-access-review)
-
++ [访问评审 API 参考](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [创建 accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
++ [列出 accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
++ [列出 accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2fdb5a3aed85629fb7c880f7a22229d1ae83ba62
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: b29e9790fc9a6a43dd7f36b0f91fcd94b903bd60
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579646"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030448"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>获取 accessReviewScheduleDefinition
 
@@ -38,6 +38,10 @@ ms.locfileid: "52579646"
 ```http
 GET /identityGovernance/accessReviews/definitions/{review-id}
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `$select` 使用 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+
 ## <a name="request-headers"></a>请求标头
 无。
 

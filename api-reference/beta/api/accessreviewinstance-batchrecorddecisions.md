@@ -1,32 +1,32 @@
 ---
 title: accessReviewInstance：batchRecordDecisions
-description: 可模拟审阅者分批审阅所有 accessReviewInstanceDecisionItems。
+description: 使审阅者可以分批查看所有 accessReviewInstanceDecisionItem 对象。
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a8bd6778d54100340b0c846230fd8b91b696f1fb
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: ab7e7e3580275aa127bbb01e34484a823d4b01bf
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507460"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030745"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance：batchRecordDecisions
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-允许审阅者使用 、或两者成批查看所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) `principalId` `resourceId` 对象。
+允许审阅者使用 **principalId** **、resourceId** 或两者成批查看所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|AccessReviews.ReadWrite.All|
+|委派（工作或学校帐户）|AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|AccessReviews.ReadWrite.All|
+|应用程序|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,9 +51,9 @@ POST /me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisi
 
 |参数|类型|说明|
 |:---|:---|:---|
-| decision  | 字符串 | 被审阅实体的访问决策。 可取值为：`Approve`、`Deny`、`NotReviewed`、`DontKnow`。 必填。  |
-|  justification | 字符串 | 提供给管理员评价的上下文。 如果 **justificationRequiredOnApproval** `True` 位于 **accessReviewScheduleDefinition 上，则是必需的**。  |
-|principalId|字符串|如果提供，将在此批处理中检查具有匹配 **principalId** 的所有 **accessReviewInstanceDecisionItems。** 如果未提供，将 **检查所有 principalId。**|
+| decision  | String | 被审阅实体的访问决策。 可取值为：`Approve`、`Deny`、`NotReviewed`、`DontKnow`。 必填。  |
+|  justification | String | 提供给管理员评价的上下文。 如果 **justificationRequiredOnApproval** `True` 位于 **accessReviewScheduleDefinition 上，则是必需的**。  |
+|principalId|String|如果提供，将在此批处理中检查具有匹配 **principalId** 的所有 **accessReviewInstanceDecisionItems。** 如果未提供，将 **检查所有 principalId。**|
 |resourceId|String|如果提供，将在此批处理中检查具有匹配 **resourceId** 的所有 **accessReviewInstanceDecisionItems。** 如果未提供，将 **检查所有 resourceId。**|
 
 
@@ -75,7 +75,6 @@ POST /me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisi
 ``` http
 POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisions
 Content-Type: application/json
-Content-length: 113
 
 {
   "decision": "Approve",
