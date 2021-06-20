@@ -503,7 +503,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -936,7 +936,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 增量
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -10289,7 +10289,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -11466,6 +11466,8 @@ items:
                         href: api/accessreviewscheduledefinition-delete.md
                       - name: 更新
                         href: api/accessreviewscheduledefinition-update.md
+                      - name: 按当前用户筛选
+                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
                   - name: 访问评审实例
                     href: resources/accessreviewinstance.md
                     items:
@@ -11473,7 +11475,9 @@ items:
                         href: api/accessreviewinstance-list.md
                       - name: 获取
                         href: api/accessreviewinstance-get.md
-                      - name: 列出待审批
+                      - name: 按当前用户筛选
+                        href: api/accessreviewinstance-filterbycurrentuser.md
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: 发送提醒
                         href: api/accessreviewinstance-sendreminder.md
@@ -11485,12 +11489,20 @@ items:
                         href: api/accessreviewinstance-applydecisions.md
                       - name: 批处理记录决策
                         href: api/accessreviewinstance-batchrecorddecisions.md
+                      - name: 重置决策
+                        href: api/accessreviewinstance-resetdecisions.md
+                      - name: 列出决策
+                        href: api/accessreviewinstance-list-decisions.md
                   - name: 访问评审实例决策项
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
                       - name: 列表
                         href: api/accessreviewinstancedecisionitem-list.md
-                      - name: 列出待审批
+                      - name: 获取
+                        href: api/accessreviewinstancedecisionitem-get.md
+                      - name: 按当前用户筛选
+                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+                      - name: '列出已 (审批) '
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
@@ -13236,7 +13248,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -13570,6 +13582,10 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: List permission grants
                 href: api/chat-list-permissiongrants.md
+              - name: 列出操作
+                href: api/chat-list-operations.md
+              - name: 获取操作
+                href: api/teamsasyncoperation-get.md
           - name: 聊天消息
             href: resources/chatmessage.md
             items:
