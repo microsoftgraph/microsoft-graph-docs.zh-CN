@@ -5,12 +5,12 @@ localization_priority: Priority
 author: eketo-msft
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 4a61c570974edcfc1431af211e131c24cfec6589
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 9caae60a2eb82acd82101f3ee9c723b8c0545e39
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911646"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030955"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "52911646"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|forceChangePasswordNextSignIn|Boolean| 如果用户在下次登录时必须更改密码，则为 `true`；否则为 `false`。 |
+|forceChangePasswordNextSignIn|Boolean| 如果用户在下次登录时必须更改密码，则为 `true`；否则为 `false`。 如未设置，默认值为 `false`。 **注意：** 对于 Azure B2C 租户，设置为`false`，并在首次登录时改为使用自定义策略和用户流强制重置密码。 请参阅[首次登录时强制密码重置](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon)。|
 |forceChangePasswordNextSignInWithMfa|Boolean| 如果为 `true`，则在下次登录时，用户必须先执行多重身份验证 (MFA)，然后才会被强制更改密码。 该行为与 **forceChangePasswordNextSignIn** 相同，除了在更改密码之前用户必须先执行多重身份验证。 密码更改后，此属性将自动重置为 `false`。 如未设置，默认值为 `false`。 |
 |密码|String|用户的密码。创建用户时此属性是必需的。此属性可以更新，但用户在下次登录时必须更改密码。密码必须满足用户的 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 
