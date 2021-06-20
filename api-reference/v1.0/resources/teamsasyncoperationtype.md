@@ -1,16 +1,16 @@
 ---
 title: teamsAsyncOperationType 枚举类型
-description: TeamsAsyncOperation 的类型。 将在此处添加成员，因为支持更多的异步操作。
+description: teamsAsyncOperation 的类型。 由于支持更多异步操作，因此将在此处添加成员。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: b1be58a7db420446cbe309c78ba26c01ec0bf2c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 701b6402baf5b64ef0257dd1242dd2f2c8fccb16
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983961"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030395"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 枚举类型
 
@@ -18,16 +18,14 @@ ms.locfileid: "47983961"
 
 
 
-[TeamsAsyncOperation](teamsasyncoperation.md)的类型。 将在此处添加成员，因为支持更多的异步操作。
+[teamsAsyncOperation 的类型](teamsasyncoperation.md)。 由于支持更多异步操作，因此将在此处添加成员。
 
 ## <a name="members"></a>成员
 
 | 成员 | 值| 说明 |
 |:---------------|:--------|:----------|
 |无效|0|值无效。|
-|cloneTeam|1 |克隆团队的操作。|
-|archiveTeam|2 |存档团队的操作。|
-|unarchiveTeam|第三章|还原存档团队的操作。|
-|createTeam|第三章|从头开始创建团队的操作。|
-
-
+|cloneTeam|1|克隆团队的操作。|
+|archiveTeam|2|存档团队的操作。|
+|unarchiveTeam|3|还原存档团队的操作。|
+|createTeam|4 |从头开始创建团队的操作。|

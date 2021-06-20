@@ -5,12 +5,12 @@ author: anandab
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4d04333818fa57664664675feb4683465c4b63c6
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 44f07661309da100ef65cf691ccfe30261467d52
+ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941549"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53025017"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>使用 Microsoft Graph 获取团队和频道的更改通知
 
@@ -26,7 +26,7 @@ ms.locfileid: "52941549"
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |委派（工作或学校帐户） | 不支持。 | 不支持。 |
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | Team.ReadBasic.All，TeamSettings.Read.All   | beta 版|
+|应用程序 | Team.ReadBasic.All，TeamSettings.Read.All，TeamSettings.ReadWrite.All   | beta 版|
 
 ### <a name="example"></a>示例
 
@@ -49,15 +49,17 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-a-particular-team"></a>订阅特定团队中的更改
 
 
-要获取与租户中特定团队相关的所有更改的更改通知，请订阅 `/teams/{id}`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
+要获取与租户中特定团队相关的所有更改的更改通知，请订阅 `/teams/{team-id}`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
 
 ### <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|委派（工作或学校帐户） | Team.ReadBasic.All，TeamSettings.Read.All | 不支持。 |
+|委派（工作或学校帐户） | Team.ReadBasic.All，TeamSettings.Read.All，TeamSettings.ReadWrite.All | beta 版 |
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | Team.ReadBasic.All，TeamSettings.Read.All    | beta 版 |
+|应用程序 | TeamSettings.Read.Group *、TeamSettings.ReadWrite.Group*、Team.ReadBasic.All、TeamSettings.Read.All、TeamSettings.ReadWrite.All    | beta 版 |
+
+>**注意：** 带有 * 标记的权限作为 [ 资源特定的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
 ### <a name="example"></a>示例
 
@@ -68,7 +70,7 @@ Content-Type: application/json
 {
   "changeType": "deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}",
+  "resource": "/teams/{team-id}",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -90,7 +92,7 @@ Content-Type: application/json
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |委派（工作或学校帐户） | 不支持。 | 不支持。 |
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | Channel.ReadBasic.All，ChannelSettings.Read.All | beta 版 |
+|应用程序 | Channel.ReadBasic.All、ChannelSettings.Read.All、ChannelSettings.ReadWrite.All | beta 版 |
 
 ### <a name="example"></a>示例
 
@@ -113,15 +115,17 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a>订阅特定团队的任何频道中的更改
 
 
-要获取与特定团队中任何频道相关的所有更改的更改通知，请订阅 `/teams/{id}/channels`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
+要获取与特定团队中任何频道相关的所有更改的更改通知，请订阅 `/teams/{team-id}/channels`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
 
 ### <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|委派（工作或学校帐户） | Channel.ReadBasic.All，ChannelSettings.Read.All | 不支持。 |
+|委派（工作或学校帐户） | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All | beta 版 |
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | Channel.ReadBasic.All，ChannelSettings.Read.All   | beta 版 |
+|应用程序 | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All   | beta 版 |
+
+>**注意：** 带有 * 标记的权限作为 [ 资源特定的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
 ### <a name="example"></a>示例
 
@@ -132,7 +136,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels",
+  "resource": "/teams/{team-id}/channels",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",

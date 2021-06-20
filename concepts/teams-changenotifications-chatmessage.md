@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 78718b1b486231ae2549323433312aa878806210
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 39c06e6509eb7e855a3774d223119c6b6b1e0866
+ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941422"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53025031"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 
 ## <a name="subscribe-to-messages-in-a-channel"></a>订阅频道中的消息
 
-若要跟踪频道中的消息和回复，可在频道级别创建更改通知订阅。 为此，请订阅 `/teams{id}/channels/{id}/messages`。 此资源支持在 *仅限应用程序模式* 下 [包括通知中的资源数据](webhooks-with-resource-data.md)。
+若要跟踪频道中的消息和回复，可在频道级别创建更改通知订阅。 为此，请订阅 `/teams/{team-id}/channels/{channel-id}/messages`。 此资源支持在 *仅限应用程序模式* 下 [包括通知中的资源数据](webhooks-with-resource-data.md)。
 
 频道级别订阅还支持通过 `$search` 查询参数进行基于关键字的搜索。
 
@@ -92,9 +92,9 @@ Content-Type: application/json
 |:--------------------|:---------------------------------------------------------|:--------------------|
 |委派（工作或学校帐户） | ChannelMessage.Read.All | beta, v1.0 |
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | ChannelMessage.Read.All, ChannelMessage.Read.Group* | beta, v1.0 |
+|应用程序 | ChannelMessage.Read.Group*、ChannelMessage.Read.All  | beta 版 v1.0 |
 
->**注意：** ChannelMessage.Read.Group 作为 [资源特定许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)的一部分受支持。
+>**注意：** 带有 * 标记的权限作为 [ 资源特定的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
 ### <a name="example-1-subscribe-to-all-messages-and-replies-in-a-channel"></a>示例 1：订阅频道中的所有消息（和回复）
 
@@ -105,7 +105,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages",
+  "resource": "/teams/{team-id}/channels/{channel-id}/messages",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -125,7 +125,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages?$search=Hello",
+  "resource": "/teams/{team-id}/channels/{channel-id}/messages?$search=Hello",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -143,7 +143,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages",
+  "resource": "/teams/{team-id}/channels/{channel-id}/messages",
   "includeResourceData": false,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
@@ -161,7 +161,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
+  "resource": "/teams/{team-id}/channels/{channel-id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
   "includeResourceData": false,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
@@ -170,7 +170,7 @@ Content-Type: application/json
 
 ## <a name="subscribe-to-messages-in-a-chat"></a>订阅聊天中的消息
 
-若要跟踪聊天中的消息，你可以在聊天级别创建更改通知订阅。 为此，请订阅 `/chats{id}/messages`。 此资源支持在 *仅限应用程序模式* 下 [包括通知中的资源数据](webhooks-with-resource-data.md)。
+若要跟踪聊天中的消息，你可以在聊天级别创建更改通知订阅。 为此，请订阅 `/chats/{chat-id}/messages`。 此资源支持在 *仅限应用程序模式* 下 [包括通知中的资源数据](webhooks-with-resource-data.md)。
 
 聊天级别订阅还支持通过 `$search` 查询参数进行基于关键字的搜索。
 
@@ -182,7 +182,9 @@ Content-Type: application/json
 |:--------------------|:---------------------------------------------------------|:---------------------|
 |委派（工作或学校帐户） | Chat.Read | beta, v1.0 |
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | Chat.Read.All | beta, v1.0 |
+|应用程序 | ChatMessage.Read.Chat*、Chat.Read.All | beta 版 v1.0 |
+
+>**注意：** 带有标记 * 的权限当前仅作为 beta 版本的特定于 [ 资源的许可 ](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>示例 1：订阅聊天中的消息
 
@@ -193,7 +195,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages",
+  "resource": "/chats/{chat-id}/messages",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -213,7 +215,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages?$search=Hello",
+  "resource": "/chats/{chat-id}/messages?$search=Hello",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -230,7 +232,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages",
+  "resource": "/chats/{chat-id}/messages",
   "includeResourceData": false,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
@@ -248,7 +250,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
+  "resource": "/chats/{chat-id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
   "includeResourceData": false,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secretClientState}"

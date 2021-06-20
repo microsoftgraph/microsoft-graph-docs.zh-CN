@@ -447,7 +447,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -512,7 +512,7 @@ items:
                 href: api/group-list-owners.md
               - name: List photos
                 href: api/group-list-photos.md
-              - name: 列出权限授予
+              - name: List permission grants
                 href: api/group-list-permissiongrants.md
               - name: 删除收藏夹
                 href: api/group-removefavorite.md
@@ -4309,7 +4309,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -4722,7 +4722,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: 删除本地化
                     href: api/organizationalbrandingpropertieslocalization-delete.md
-              - name: 策略
+              - name: Policy
                 href: resources/policy-overview.md
                 items:
                   - name: 基于活动的超时策略
@@ -4919,6 +4919,60 @@ items:
                         href: api/identityapiconnector-delete.md
           - name: 管控
             items:
+              - name: 访问审查
+                href: resources/accessreviewsv2-root.md
+                items:
+                  - name: 访问评审计划定义
+                    href: resources/accessreviewscheduledefinition.md
+                    items:
+                      - name: 列表
+                        href: api/accessreviewscheduledefinition-list.md
+                      - name: 列表实例
+                        href: api/accessreviewscheduledefinition-list-instances.md
+                      - name: 获取
+                        href: api/accessreviewscheduledefinition-get.md
+                      - name: 创建
+                        href: api/accessreviewscheduledefinition-post.md
+                      - name: 删除
+                        href: api/accessreviewscheduledefinition-delete.md
+                      - name: 更新
+                        href: api/accessreviewscheduledefinition-update.md
+                      - name: 按当前用户筛选
+                        href: api/accessreviewscheduledefinition-filterbycurrentuser.md
+                  - name: 访问评审实例
+                    href: resources/accessreviewinstance.md
+                    items:
+                      - name: 列表
+                        href: api/accessreviewinstance-list.md
+                      - name: 列出决策
+                        href: api/accessreviewinstance-list-decisions.md
+                      - name: 获取
+                        href: api/accessreviewinstance-get.md
+                      - name: 接受建议
+                        href: api/accessreviewinstance-acceptrecommendations.md
+                      - name: 应用决策
+                        href: api/accessreviewinstance-applydecisions.md
+                      - name: 批处理记录决策
+                        href: api/accessreviewinstance-batchrecorddecisions.md
+                      - name: 按当前用户筛选
+                        href: api/accessreviewinstance-filterbycurrentuser.md
+                      - name: 重置决策
+                        href: api/accessreviewinstance-resetdecisions.md
+                      - name: 发送提醒
+                        href: api/accessreviewinstance-sendreminder.md
+                      - name: 停止
+                        href: api/accessreviewinstance-stop.md
+                  - name: 访问评审实例决策项
+                    href: resources/accessreviewinstancedecisionitem.md
+                    items:
+                      - name: 获取
+                        href: api/accessreviewinstancedecisionitem-get.md
+                      - name: 列出
+                        href: api/accessreviewinstancedecisionitem-list.md
+                      - name: 更新
+                        href: api/accessreviewinstancedecisionitem-update.md
+                      - name: 按当前用户筛选
+                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
               - name: 许可请求
                 href: resources/consentrequests-root.md
                 items:
@@ -4929,15 +4983,15 @@ items:
                         href: api/adminconsentrequestpolicy-get.md
                       - name: 更新
                         href: api/adminconsentrequestpolicy-update.md
-                  - name: 应用同意请求
-                    href: resources/appconsentrequest.md
-                    items:
-                      - name: 列表
-                        href: api/appconsentrequest-list.md
-                      - name: 获取
-                        href: api/appconsentrequest-get.md
-                      - name: 按当前用户筛选
-                        href: api/appconsentrequest-filterByCurrentUser.md
+                      - name: 应用同意请求
+                        href: resources/appconsentrequest.md
+                        items:
+                          - name: 列表
+                            href: api/appconsentrequest-list.md
+                          - name: 获取
+                            href: api/appconsentrequest-get.md
+                          - name: 按当前用户筛选
+                            href: api/appconsentrequest-filterByCurrentUser.md
                   - name: 用户同意请求
                     href: resources/userconsentrequest.md
                     items:

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fa14a26c97e6d352d55c0cdcfc1f78e7ef272ec0
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 9b132ea523eee7b9ef51afcbf6199c38a8427b4c
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680589"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030892"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -118,16 +118,75 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-   "value":[
-      {
-         "id":"11111111-2222-3333-4444-555555555555",
-         "mail":"group1@contoso.com",
-         "mailEnabled":true,
-         "mailNickname":"ContosoGroup1",
-         "securityEnabled":true
-      }
-   ]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+  "value": [
+    {
+      "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-12-22T02:21:05Z",
+      "description": "Self help community for golf",
+      "displayName": "Golf Assist",
+      "expirationDateTime": null,
+      "groupTypes": [
+        "Unified"
+      ],
+      "isAssignableToRole": null,
+      "mail": "golfassist@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "golfassist",
+      "membershipRule": null,
+      "membershipRuleProcessingState": null,
+      "onPremisesLastSyncDateTime": null,
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesSyncEnabled": null,
+      "preferredDataLocation": "CAN",
+      "preferredLanguage": null,
+      "proxyAddresses": [
+        "smtp:golfassist@contoso.onmicrosoft.com",
+        "SMTP:golfassist@contoso.com"
+      ],
+      "renewedDateTime": "2018-12-22T02:21:05Z",
+      "resourceBehaviorOptions": [],
+      "resourceProvisioningOptions": [],
+      "securityEnabled": false,
+      "theme": null,
+      "visibility": "Public",
+      "onPremisesProvisioningErrors": []
+    },
+    {
+      "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-11-19T20:29:40Z",
+      "description": "Talk about golf",
+      "displayName": "Golf Discussion",
+      "expirationDateTime": null,
+      "groupTypes": [],
+      "isAssignableToRole": null,
+      "mail": "golftalk@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "golftalk",
+      "membershipRule": null,
+      "membershipRuleProcessingState": null,
+      "onPremisesLastSyncDateTime": null,
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesSyncEnabled": null,
+      "preferredDataLocation": "CAN",
+      "preferredLanguage": null,
+      "proxyAddresses": [
+        "smtp:golftalk@contoso.onmicrosoft.com",
+        "SMTP:golftalk@contoso.com"
+      ],
+      "renewedDateTime": "2018-11-19T20:29:40Z",
+      "resourceBehaviorOptions": [],
+      "resourceProvisioningOptions": [],
+      "securityEnabled": false,
+      "theme": null,
+      "visibility": null,
+      "onPremisesProvisioningErrors": []
+    }
+  ]
 }
 ```
 

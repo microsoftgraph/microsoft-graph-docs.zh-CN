@@ -5,12 +5,12 @@ author: anandab
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8f9d0a654f3105c7d365bc92f774ab66be34f35d
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 4e8d403354c16f7f11fd4c7dcf6b756f83242cda
+ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971460"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53025024"
 ---
 # <a name="get-change-notifications-for-changes-in-teams-membership-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 成员资格更改的更改通知
 
@@ -18,15 +18,17 @@ ms.locfileid: "52971460"
 
 ## <a name="subscribe-to-changes-in-membership-of-a-particular-team"></a>订阅特定团队的成员资格更改
 
-若要获取特定团队中成员资格更改的更改通知，请订阅 `/teams/{id}/members`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
+若要获取特定团队中成员资格更改的更改通知，请订阅 `/teams/{team-id}/members`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
 
 #### <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|委派（工作或学校帐户） | TeamMember.Read.All | 不支持。 |
+|委派（工作或学校帐户） | TeamMember.Read.All, TeamMember.ReadWrite.All | beta 版 |
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
-|应用程序 | TeamMember.Read.All   | beta 版 |
+|应用程序 | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | beta 版 |
+
+>**注意：** 带有 * 标记的权限作为 [ 资源特定的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
 #### <a name="example"></a>示例
 
@@ -37,7 +39,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/members",
+  "resource": "/teams/{team-id}/members",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
