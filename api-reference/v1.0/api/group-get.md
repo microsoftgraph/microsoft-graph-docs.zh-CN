@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 46c50e3ec6d3e646ff4102472687b5bacee3bb1f
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 63860da9bcb2c87c30577ce34f067f315efe15e9
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682024"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030934"
 ---
 # <a name="get-group"></a>获取组
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 #### <a name="response"></a>响应
 下面是一个响应示例。它仅包括默认属性。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。在实际调用中将返回每个组的所有默认属性。
 
 <!-- {
   "blockType": "response",
@@ -117,6 +117,7 @@ Content-type: application/json
     "groupTypes": [
         "Unified"
     ],
+    "isAssignableToRole": null,
     "mail": "library2@contoso.com",
     "mailEnabled": true,
     "mailNickname": "library",

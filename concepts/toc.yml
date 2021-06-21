@@ -485,8 +485,15 @@ items:
             href: traverse-the-graph.md
           - name: 分页
             href: paging.md
-          - name: 使用查询参数
-            href: query-parameters.md
+          - name: 查询参数
+            displayName: OData query parameters
+            items:
+              - name: 使用查询参数
+                href: query-parameters.md
+              - name: 使用搜索查询参数
+                href: search-query-parameter.md
+              - name: 高级查询功能
+                href: aad-advanced-queries.md
           - name: 批处理
             displayName: Batch requests
             href: json-batching.md
