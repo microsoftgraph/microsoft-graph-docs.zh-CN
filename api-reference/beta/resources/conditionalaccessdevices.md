@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 94115e97c597bc34f03d843b8098f707ed39cd51
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: cbb542420228a4a383dea4e165323fbb6e8abb17
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761805"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082354"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>conditionalAccessDevices 资源类型
 
@@ -24,10 +24,11 @@ ms.locfileid: "50761805"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeDevices | 字符串集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
-| excludeDevices | 字符串集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 |
-| includeDeviceStates (弃) | 字符串集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
-| excludeDeviceStates (弃) | 字符串集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 |
+| includeDevices | String 集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 如果设置了 *deviceFIlter，则不能* 设置。 |
+| excludeDevices | String 集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 如果设置了 **deviceFIlter，则不能** 设置。 |
+| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | 定义要包含/排除设备的动态设备语法规则的筛选器。 筛选器可以使用设备属性 (例如扩展属性) /排除它们。 如果设置了 **includeDevices** 或 **excludeDevices，则不能** 设置。 |
+| includeDeviceStates (弃) | String 集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
+| excludeDeviceStates (弃) | String 集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 |
 
 ## <a name="relationships"></a>关系
 
@@ -41,7 +42,8 @@ ms.locfileid: "50761805"
   "blockType": "resource",
   "optionalProperties": [
     "includeDevices",
-    "excludeDevices"
+    "excludeDevices",
+    "deviceFilter"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessDevices",
   "baseType": null
@@ -50,7 +52,8 @@ ms.locfileid: "50761805"
 ```json
 {
   "includeDevices": [ "String" ],
-  "excludeDevices": [ "String" ]
+  "excludeDevices": [ "String" ],
+  "deviceFilter": {"@odata.type": "microsoft.graph.conditionalAccessFilter"}
 }
 ```
 

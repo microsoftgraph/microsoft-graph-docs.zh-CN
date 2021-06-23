@@ -3,12 +3,12 @@ title: Microsoft 服务中的登录Graph Toolkit
 description: 登录组件是一个按钮和飞出控件，用于简化Microsoft 标识平台身份验证。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: ea7df01c77900eecc415b3670db0ea2736447d8c
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 1042201492720dce92016a13bd7bbd8477ce2d2c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781077"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082151"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的登录Graph Toolkit
 
@@ -22,7 +22,7 @@ ms.locfileid: "52781077"
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
 
 ## <a name="using-the-control-without-an-authentication-provider"></a>在没有身份验证提供程序的情况下使用控件
 
@@ -82,6 +82,8 @@ mgt-login {
 | `loginFailed` | 用户已取消登录过程或无法登录。|
 | `logoutInitiated` | 用户开始注销 - 可取消。 |
 | `logoutCompleted` | 用户已退出。 |
+
+有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 

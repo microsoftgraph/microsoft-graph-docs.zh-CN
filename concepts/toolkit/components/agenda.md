@@ -3,12 +3,12 @@ title: Microsoft 计划中的议程Graph Toolkit
 description: mgt-agenda Web 组件用于表示用户或组日历中的事件。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7de172c514aea12e0f57541649b6e98ca1ded2df
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 394f5dee6c8bf6f81b68d3b0b8c8cb1d73ef06ef
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781098"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082333"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft 计划中的议程Graph Toolkit
 
@@ -20,7 +20,7 @@ Web `mgt-agenda` 组件表示用户或组日历中的事件。 默认情况下�
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -131,7 +131,9 @@ mgt-agenda {
 
 | 事件 | 说明 |
 | --- | --- |
-| eventClick | 用户单击或点击事件。|
+| `eventClick` | 用户单击或点击事件。|
+
+有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 

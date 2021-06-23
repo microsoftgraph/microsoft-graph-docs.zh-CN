@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 9312293426789302de6c0e57792bc86fadff77f0
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: eab9b1041a78ac5b497174febe33d0db3d5ac566
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563830"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082263"
 ---
 # <a name="cloudpcmanagementassignmenttarget-resource-type"></a>cloudPcManagementAssignmentTarget 资源类型
 
@@ -20,9 +20,10 @@ ms.locfileid: "49563830"
 
 赋值目标的基类型。
 
-[CloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md)资源。 表示工作分配目标组，继承自此基本类型 **cloudPcManagementAssignmentTarget**。
+[cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md)资源（表示工作分配目标组）继承自此基类型。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
 ## <a name="properties"></a>属性
 
 不适用。

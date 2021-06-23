@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 86671d0fce531445ac32a370d2e69ba813cc4e22
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 46d9877b8a17056aee84f1216c4f38227bdc097c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546824"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082193"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy：assign
 
@@ -22,7 +22,7 @@ ms.locfileid: "52546824"
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,12 +54,9 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 在请求正文中，提供 [cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) 对象的 JSON 表示形式。
 
-下表显示创建 [cloudPcProvisioningPolicyAssignment 时所需的属性](../resources/cloudpcprovisioningpolicyassignment.md)。
-
-|属性|类型|说明|
+|参数|类型|说明|
 |:---|:---|:---|
-|id|String|预配策略分配的 ID。 如果 target 是用户组，则 ID 显示为 {policyId}_{groupId}。 |
-|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|预配策略的分配目标。 目前，唯一支持的目标为用户组。|
+|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) 集合 | 要分配给相应目标组的云电脑预配策略资源的集合。 目前Microsoft 365 Azure AD 中的安全组和安全组。 |
 
 ## <a name="response"></a>响应
 
@@ -108,7 +105,6 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

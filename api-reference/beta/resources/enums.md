@@ -5,16 +5,39 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: a26fba741bfe080ac5779c7c39c49b47a9427211
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 445569bf34eb2d826660fdd1b88143b04213836e
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060507"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082277"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="filtermode-values"></a>filterMode 值
+
+|成员|
+|:---|
+|include|
+|exclude|
+
+### <a name="lifecycleeventtype-values"></a>lifecycleEventType 值
+
+|成员|
+|:---|
+|错过|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### <a name="changetype-values"></a>changeType 值
+
+|成员|
+|:---|
+|已创建|
+|updated|
+|deleted|
 
 ### <a name="countrylookupmethodtype-values"></a>countryLookupMethodType 值
 
@@ -76,7 +99,7 @@ ms.locfileid: "53060507"
 |整数|
 |参考|
 |二进制|
-|Boolean|
+|布尔值|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -1274,7 +1297,7 @@ ms.locfileid: "53060507"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | 参考
 
 
@@ -2268,3 +2291,4 @@ ms.locfileid: "53060507"
 |成员| 值 | 说明               |
 |:---|:---- | :------------------------ |
 |standard| 0     |标记的默认类型。 具有权限的成员可以在团队中管理标准类型的标记。|
+

@@ -3,12 +3,12 @@ title: Microsoft 服务中的文件列表Graph Toolkit
 description: 文件列表组件用于通过显示文件图标和名称来显示文件列表
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: cfd4543cad98864a423699e4ed6cde7dc82ee6fb
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 89f60020fb1db75ed4e79a7402b0aa0518146130
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781091"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082172"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件列表Graph Toolkit
 
@@ -20,7 +20,7 @@ ms.locfileid: "52781091"
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list--file-list&source=docs" height="250"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list--file-list&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-file-list--file-list&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -138,7 +138,9 @@ mgt-file-list {
 
 | 事件 | 说明 |
 | ----- | ----------- |
-| itemClick | 在用户单击文件时触发。 返回文件详细信息。 |
+| `itemClick` | 在用户单击文件时触发。 返回文件详细信息。 |
+
+有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 

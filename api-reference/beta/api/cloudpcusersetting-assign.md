@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 987ecf4ee31b2ade7baf08246542b13d14a3a6da
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 66da3f668cc25807ece4a63e51dabe3f5436cf7d
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993643"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082088"
 ---
 # <a name="cloudpcusersetting-assign"></a>cloudPcUserSetting：assign
 
@@ -54,11 +54,9 @@ POST /deviceManagement/virtualEndpoint/userSettings/{id}/assign
 
 在请求正文中，提供 [cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) 对象的 JSON 表示形式。
 
-下表显示创建 [cloudPcUserSettingAssignment 时所需的属性](../resources/cloudpcusersettingassignment.md)。
-
-|属性|类型|说明|
+|参数|类型|说明|
 |:---|:---|:---|
-|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|预配策略的分配目标。 目前，唯一支持的目标为用户组。|
+|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) 集合 | 要分配给相应目标组的云电脑用户设置资源的集合。 目前Microsoft 365 Azure AD 中的安全组和安全组。 |
 
 ## <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3c2830f53c7060ff96e164c127afb83072b96c86
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 49cdea1b601e33210bc2861ee350086377fe05f8
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785870"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082382"
 ---
 # <a name="list-cloudpcs"></a>列出 cloudPCs
 
@@ -114,20 +114,20 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPC",
       "id": "662009bc-7732-4f6f-8726-25883518ffff",
-      "displayName": "Display Name value",
-      "imageDisplayName": "Image Display Name value",
+      "displayName": "Demo-1",
+      "imageDisplayName": "Windows-10 19h1-evd",
       "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fffff",
-      "managedDeviceName": "Managed Device Name value",
+      "managedDeviceName": "A00002GI001",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
-      "provisioningPolicyName": "Provisioning Policy Name value",
-      "onPremisesConnectionName": "On-premises connection Name value",
+      "provisioningPolicyName": "HR provisioning policy",
+      "onPremisesConnectionName": "on-Premises connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "status": "provisioned",
-      "userPrincipalName": "User Principal Name value",
+      "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
       "statusDetails": null,
-      "gracePeriodEndDateTime": "Grace Period End Date Time value "
+      "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
     }
   ]
 }

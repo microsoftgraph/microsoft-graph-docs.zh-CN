@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 0470f6000ed7699b10288407a9d92ca74cc8177e
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: ad63ff3f4d152005624872f94482b44cb862ef9f
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990845"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082214"
 ---
 # <a name="get-cloudpc"></a>获取 cloudPC
 
@@ -113,31 +113,31 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.cloudPC",
     "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
-    "displayName": "Display Name value",
-    "imageDisplayName": "Image Display Name value",
+    "displayName": "Demo-0",
+    "imageDisplayName": "Windows-10 19h1-evd",
     "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",  
-    "managedDeviceName": "Device Name value",
+    "managedDeviceName": "A00002GI001",
     "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
-    "provisioningPolicyName": "Provisioning Policy Name value",
-    "onPremisesConnectionName": "On-premises connection Name value",
+    "provisioningPolicyName": "Marketing provisioning policy",
+    "onPremisesConnectionName": "on-Premises connection for Marketing",
     "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
     "servicePlanName": "standard",
     "status": "failed",
     "statusDetails": {
     "@odata.type": "microsoft.graph.cloudPcStatusDetails",
-    "code": "Sample code",
-    "message": "Sample message",
+    "code": "internalServerError",
+    "message": "There was an internal server error. Please contact support xxx.",
     "additionalInformation": [
         {
           "@odata.type": "microsoft.graph.keyValuePair",
-          "name": "Name value",
-          "value": "Sample value"
+          "name": "correlationId",
+          "value": "52367774-cfb7-4e9c-ab51-1b864c31f2d1"
         }
       ]
     },
-    "userPrincipalName": "User Principal Name value",
+    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
-    "gracePeriodEndDateTime": "Grace Period End Date Time value "
+    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
   }
 }
 ```

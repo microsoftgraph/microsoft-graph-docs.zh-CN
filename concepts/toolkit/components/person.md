@@ -3,12 +3,12 @@ title: Microsoft 服务中的人员Graph Toolkit
 description: 人员组件用于通过使用联系人的照片、姓名和/或电子邮件地址来显示此人或联系人。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3020c652fa08c78fecd53469af0e21622f9afcff
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 7f35b5c1a3ef764995d319e9e603489b50a1fe2c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780993"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082046"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
@@ -22,7 +22,7 @@ ms.locfileid: "52780993"
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
 
 ## <a name="setting-the-person-details"></a>设置人员详细信息
 
@@ -118,9 +118,11 @@ mgt-person {
 
 | 事件 | 详情 | 说明 |
 | --- | --- | --- |
-| line1clicked | 详细信息包含各自的 `person` 对象 | 在单击第 1 行时触发。 |
-| line2clicked | 详细信息包含各自的 `person` 对象 | 在单击第 2 行时触发。 |
-| line3clicked | 详细信息包含各自的 `person` 对象 | 在单击第 3 行时触发。 |
+| `line1clicked` | 详细信息包含各自的 `person` 对象 | 在单击第 1 行时触发。 |
+| `line2clicked` | 详细信息包含各自的 `person` 对象 | 在单击第 2 行时触发。 |
+| `line3clicked` | 详细信息包含各自的 `person` 对象 | 在单击第 3 行时触发。 |
+
+有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 

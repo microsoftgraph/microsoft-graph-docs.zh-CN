@@ -3,12 +3,12 @@ title: Microsoft 服务中的任务Graph Toolkit
 description: 任务组件使用户能够查看、添加、删除、完成或编辑任务。 它适用于 Microsoft Planner 中的任何任务。
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 65fc01d5b2cc5db6f6236bb64b7372522c4d61be
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 3b3476751798dd5569218ec6acc6d09a91112fe6
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780986"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082032"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的任务Graph Toolkit
 
@@ -22,7 +22,7 @@ ms.locfileid: "52780986"
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-tasks--tasks&source=docs" height="500"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-tasks--tasks&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-tasks--tasks&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -119,12 +119,15 @@ mgt-tasks {
 ````
 
 ## <a name="events"></a>活动
+
 | 事件 | 详情 | 说明 |
 | --- | --- | --- |
-| taskAdded | 详细信息包含各自的 `task` 对象 | 新建任务后触发。 |
-| taskChanged | 详细信息包含各自的 `task` 对象 | 更改任务元数据（如标记已完成）时触发。 |
-| taskClick | 详细信息包含各自的 `task` 对象 | 当用户单击或点击任务时触发。 |
-| taskRemoved | 详细信息包含各自的 `task` 对象 | 删除现有任务后触发。 |
+| `taskAdded` | 详细信息包含各自的 `task` 对象 | 新建任务后触发。 |
+| `taskChanged` | 详细信息包含各自的 `task` 对象 | 更改任务元数据（如标记已完成）时触发。 |
+| `taskClick` | 详细信息包含各自的 `task` 对象 | 当用户单击或点击任务时触发。 |
+| `taskRemoved` | 详细信息包含各自的 `task` 对象 | 删除现有任务后触发。 |
+
+有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 

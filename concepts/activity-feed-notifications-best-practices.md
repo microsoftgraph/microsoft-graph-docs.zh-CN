@@ -4,12 +4,12 @@ description: 本文提供了在 Microsoft Graph 中处理活动源通知的最�
 author: KirtiPereira
 localization_priority: Normal
 ms.prod: teamwork
-ms.openlocfilehash: cfb62de20bfa74ccc91ce99189cf5be5a9dc1787
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 52a207c780922079731091b6dea11050fd38faeb
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060622"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082067"
 ---
 # <a name="best-practices-for-using-microsoft-teams-activity-feed-notifications"></a>使用活动源Microsoft Teams的最佳实践
 
@@ -18,7 +18,7 @@ ms.locfileid: "53060622"
 * 请求通知响应
 * 创建有关外部事件的通知
 
-下图显示了活动源通知在Teams。
+下图显示了活动源通知中Teams：
 
 ![显示活动Teams视图的桌面应用屏幕截图。](./images/activity-feed-notification.png)
 
@@ -32,7 +32,7 @@ ms.locfileid: "53060622"
 
 Microsoft Teams以活动源和 Toast 格式显示通知。 用户通过聊天、频道、会议或其他应用接收来自多个源的通知。 若要增强用户体验，请应用以下建议：
 
-* 本地化通知 toast 或源中的内容。 本地化仅在应用内容本地化 [时发生](/platform/concepts/build-and-test/apps-localization)。
+* 本地化通知 toast 或源中的内容。 本地化仅在应用内容本地化 [时发生](/microsoftteams/platform/concepts/build-and-test/apps-localization)。
 * 为活动类型提供适当的标题 **和说明**。 使用短标题，如 **@mention****和通知**。 避免使用长标题，例如"提到 **的用户"活动和** " **创建后"活动**。
 * 通知应传达与用户相关的重要信息。 例如 *，在 一个销售票证分配给你* 时，是一条相关消息; *Joni 未离开* 销售团队。
 * 避免发送本质上是促销性的通知，例如尝试循环 *应用中的新功能*。

@@ -3,12 +3,12 @@ title: 微软待办 Microsoft Graph Toolkit
 description: 利用微软待办组件，用户可以查看、添加、删除、完成或编辑任务。 它适用于 Microsoft 微软待办 中微软待办。
 localization_priority: Normal
 author: shweaver-MSFT
-ms.openlocfilehash: 3eb91bc23f1159e08749b6e6b073939bacca0c5c
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 907d6d18380debb6e08d612d5f1d5bebec6746ec
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781000"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082018"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>微软待办 Microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ ms.locfileid: "52781000"
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo--tasks&source=docs" height="500"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo--tasks&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-todo--tasks&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -101,10 +101,12 @@ mgt-todo {
 
 | 事件 | 详情 | 说明 |
 | --- | --- | --- |
-| taskAdded | 详细信息包含各自的 `task` 对象 | 新建任务后触发。 |
-| taskChanged | 详细信息包含各自的 `task` 对象 | 更改任务元数据（如标记已完成）时触发。 |
-| taskClick | 详细信息包含各自的 `task` 对象 | 当用户单击或点击任务时触发。 |
-| taskRemoved | 详细信息包含各自的 `task` 对象 | 删除现有任务后触发。 |
+| `taskAdded` | 详细信息包含各自的 `task` 对象 | 新建任务后触发。 |
+| `taskChanged` | 详细信息包含各自的 `task` 对象 | 更改任务元数据（如标记已完成）时触发。 |
+| `taskClick` | 详细信息包含各自的 `task` 对象 | 当用户单击或点击任务时触发。 |
+| `taskRemoved` | 详细信息包含各自的 `task` 对象 | 删除现有任务后触发。 |
+
+有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 

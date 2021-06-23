@@ -3,12 +3,12 @@ title: 获取 Microsoft Graph Toolkit
 description: Get 组件允许你直接在 HTML 中从 Microsoft Graph GET 查询。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 55fc5da7697523fbb08c69a2a995170be5b35a21
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: fefbbf9eb944494923a25f5d2a9699b03e5c9919
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781084"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082312"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>获取 Microsoft Graph Toolkit
 
@@ -20,7 +20,7 @@ ms.locfileid: "52781084"
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-get--get-email&source=docs" height="500"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
 
 ## <a name="properties-and-attributes"></a>属性和属性
 
@@ -40,15 +40,18 @@ ms.locfileid: "52781084"
 | 不适用 |error| 如果请求失败，Microsoft Graph只读错误。 |
 
 ## <a name="methods"></a>方法
+
 | 方法 | 说明 |
 | --- | --- |
 | refresh (force？：boolean)  | 调用 方法以刷新数据。 默认情况下，UI 仅在数据发生更改时更新。 传递 `true` 以强制组件更新。  |
 
-
 ## <a name="events"></a>活动
+
 | 事件 | 详情 | 说明 |
 | --- | --- | --- |
-| dataChange | 详细信息包含 `response` 和 `error` 对象。 | 响应或错误更改时触发。 |
+| `dataChange` | 详细信息包含 `response` 和 `error` 对象。 | 响应或错误更改时触发。 |
+
+有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 

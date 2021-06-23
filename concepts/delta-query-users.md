@@ -4,12 +4,12 @@ description: Delta 查询可通过调用一系列 delta 函数查询用户的添
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e6efc0d7a5c63471b257acfc9a3e2e228176cf12
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 39253f03175c9c33c6e358afc2e629a77e449a0c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598246"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082060"
 ---
 # <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 
@@ -19,10 +19,10 @@ ms.locfileid: "46598246"
 
 ## <a name="tracking-user-changes"></a>跟踪用户更改
 
-跟踪用户更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与[列出用户](/graph/api/user-list?view=graph-rest-1.0)的方式非常相似，除了要包括以下内容：
+跟踪用户更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与 [列出用户](/graph/api/user-list?view=graph-rest-1.0)的方式非常相似，除了要包括以下内容：
 
 - **delta** 函数。
-- 上一个 GET **delta** 函数调用的[状态令牌](./delta-query-overview.md)（_deltaToken_ 或 _skipToken_）。
+- 上一个 GET **delta** 函数调用的 [状态令牌](./delta-query-overview.md)（_deltaToken_ 或 _skipToken_）。
 
 ## <a name="example"></a>示例
 
@@ -197,7 +197,7 @@ Content-type: application/json
 }
 ```
 
-上面示例响应的一些注意事项如下：
+上一个示例响应的一些注意事项如下：
 
 - 如果用户遭删除，项中包含注释：`@removed` 值为 `"reason": "changed"`。
 

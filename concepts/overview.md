@@ -4,12 +4,12 @@ description: Microsoft Graph 是 Microsoft 365 中数据和智能的网关。Mic
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 669b45d3074b77f7b9a916564235b6f9d35850a9
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: abdb8320086a5ddf7d82d8ed42346779c5af35c0
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666189"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082368"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
@@ -131,7 +131,7 @@ Microsoft Graph 连接器创建与外部数据源的连接、对数据编制索�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 查看某些[精选应用场景](https://developer.microsoft.com/graph/examples)。
+- 查看一些[合作伙伴解决方案](https://developer.microsoft.com/graph/partners)。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的示例请求。
 - 使用[快速入门](https://developer.microsoft.com/graph/quick-start)设置即可运行的示例应用。
 - 在目录的 **了解** 下，阅读有关你可在应用场景中使用的服务和功能。

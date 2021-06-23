@@ -3,12 +3,12 @@ title: People-Picker组件
 description: 您可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 36a8208b2425bc74922427f7ffcb4c6ec3a10788
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: f8899a4bfdf86d07bb5efa19c269b0907ceae319
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780741"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082326"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit 中的组件
 
@@ -20,7 +20,7 @@ ms.locfileid: "52780741"
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -80,6 +80,8 @@ ms.locfileid: "52780741"
 | 事件 | 说明 |
 | --- | --- |
 | `selectionChanged` | 用户在选定/选取的人列表中添加或删除了人员。|
+
+有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="css-custom-properties"></a>CSS 自定义属性
 

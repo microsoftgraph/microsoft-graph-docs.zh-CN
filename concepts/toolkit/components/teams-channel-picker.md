@@ -3,12 +3,12 @@ title: Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
 description: 可以使用 mgt-teams-channel-picker 从 Microsoft 网站搜索与用户关联的Graph。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: aaa89b9fab5d9e29c35b7d2cabb0a494ca97d4b3
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: ad196cc17b70f42cd571bf5805e2aa4eb2cfe90e
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579940"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082025"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
 
@@ -20,7 +20,7 @@ ms.locfileid: "52579940"
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
 
 ## <a name="getting-the-selected-channel"></a>获取所选频道
 
@@ -77,9 +77,12 @@ mgt-teams-channel-picker {
 ```
 
 ## <a name="events"></a>活动
+
 | 事件 | 详情 | 说明 |
 | --- | --- | --- |
-| selectionChanged | 详细信息包含 `{channel : ` [MicrosoftGraph.Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph.Team 当前选定的项](/graph/api/resources/team)`}` | 当用户在选择频道时更改时触发。 |
+| `selectionChanged` | 详细信息包含 `{channel : ` [MicrosoftGraph.Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph.Team 当前选定的项](/graph/api/resources/team)`}` | 当用户在选择频道时更改时触发。 |
+
+有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 
