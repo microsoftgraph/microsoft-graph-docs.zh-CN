@@ -5,34 +5,34 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 987ecf4ee31b2ade7baf08246542b13d14a3a6da
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 66da3f668cc25807ece4a63e51dabe3f5436cf7d
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993643"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082088"
 ---
-# <a name="cloudpcusersetting-assign"></a><span data-ttu-id="c85c5-103">cloudPcUserSetting：assign</span><span class="sxs-lookup"><span data-stu-id="c85c5-103">cloudPcUserSetting: assign</span></span>
+# <a name="cloudpcusersetting-assign"></a><span data-ttu-id="a827c-103">cloudPcUserSetting：assign</span><span class="sxs-lookup"><span data-stu-id="a827c-103">cloudPcUserSetting: assign</span></span>
 
-<span data-ttu-id="c85c5-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c85c5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a827c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a827c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c85c5-105">将 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 分配给用户组。</span><span class="sxs-lookup"><span data-stu-id="c85c5-105">Assign a [cloudPcUserSetting](../resources/cloudpcusersetting.md) to user groups.</span></span>
+<span data-ttu-id="a827c-105">将 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 分配给用户组。</span><span class="sxs-lookup"><span data-stu-id="a827c-105">Assign a [cloudPcUserSetting](../resources/cloudpcusersetting.md) to user groups.</span></span>
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a><span data-ttu-id="c85c5-106">权限</span><span class="sxs-lookup"><span data-stu-id="c85c5-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a827c-106">权限</span><span class="sxs-lookup"><span data-stu-id="a827c-106">Permissions</span></span>
 
-<span data-ttu-id="c85c5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c85c5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a827c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a827c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c85c5-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c85c5-109">Permission type</span></span>|<span data-ttu-id="c85c5-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c85c5-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="a827c-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a827c-109">Permission type</span></span>|<span data-ttu-id="a827c-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a827c-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c85c5-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c85c5-111">Delegated (work or school account)</span></span>|<span data-ttu-id="c85c5-112">CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c85c5-112">CloudPC.ReadWrite.All</span></span>|
-|<span data-ttu-id="c85c5-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c85c5-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c85c5-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="c85c5-114">Not supported.</span></span>|
-|<span data-ttu-id="c85c5-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="c85c5-115">Application</span></span>|<span data-ttu-id="c85c5-116">CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c85c5-116">CloudPC.ReadWrite.All</span></span>|
+|<span data-ttu-id="a827c-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a827c-111">Delegated (work or school account)</span></span>|<span data-ttu-id="a827c-112">CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a827c-112">CloudPC.ReadWrite.All</span></span>|
+|<span data-ttu-id="a827c-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a827c-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a827c-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="a827c-114">Not supported.</span></span>|
+|<span data-ttu-id="a827c-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a827c-115">Application</span></span>|<span data-ttu-id="a827c-116">CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a827c-116">CloudPC.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c85c5-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c85c5-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a827c-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a827c-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -43,30 +43,28 @@ ms.locfileid: "52993643"
 POST /deviceManagement/virtualEndpoint/userSettings/{id}/assign
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c85c5-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="c85c5-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a827c-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="a827c-118">Request headers</span></span>
 
-|<span data-ttu-id="c85c5-119">名称</span><span class="sxs-lookup"><span data-stu-id="c85c5-119">Name</span></span>|<span data-ttu-id="c85c5-120">说明</span><span class="sxs-lookup"><span data-stu-id="c85c5-120">Description</span></span>|
+|<span data-ttu-id="a827c-119">名称</span><span class="sxs-lookup"><span data-stu-id="a827c-119">Name</span></span>|<span data-ttu-id="a827c-120">说明</span><span class="sxs-lookup"><span data-stu-id="a827c-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="c85c5-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="c85c5-121">Authorization</span></span>|<span data-ttu-id="c85c5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c85c5-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="c85c5-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c85c5-124">Content-Type</span></span>|<span data-ttu-id="c85c5-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="c85c5-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="a827c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a827c-121">Authorization</span></span>|<span data-ttu-id="a827c-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a827c-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="a827c-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a827c-124">Content-Type</span></span>|<span data-ttu-id="a827c-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="a827c-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c85c5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="c85c5-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a827c-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="a827c-127">Request body</span></span>
 
-<span data-ttu-id="c85c5-128">在请求正文中，提供 [cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c85c5-128">In the request body, supply a JSON representation of the [cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) object.</span></span>
+<span data-ttu-id="a827c-128">在请求正文中，提供 [cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a827c-128">In the request body, supply a JSON representation of the [cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) object.</span></span>
 
-<span data-ttu-id="c85c5-129">下表显示创建 [cloudPcUserSettingAssignment 时所需的属性](../resources/cloudpcusersettingassignment.md)。</span><span class="sxs-lookup"><span data-stu-id="c85c5-129">The following table shows the properties that are required when you create the [cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md).</span></span>
-
-|<span data-ttu-id="c85c5-130">属性</span><span class="sxs-lookup"><span data-stu-id="c85c5-130">Property</span></span>|<span data-ttu-id="c85c5-131">类型</span><span class="sxs-lookup"><span data-stu-id="c85c5-131">Type</span></span>|<span data-ttu-id="c85c5-132">说明</span><span class="sxs-lookup"><span data-stu-id="c85c5-132">Description</span></span>|
+|<span data-ttu-id="a827c-129">参数</span><span class="sxs-lookup"><span data-stu-id="a827c-129">Parameter</span></span>|<span data-ttu-id="a827c-130">类型</span><span class="sxs-lookup"><span data-stu-id="a827c-130">Type</span></span>|<span data-ttu-id="a827c-131">说明</span><span class="sxs-lookup"><span data-stu-id="a827c-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c85c5-133">target</span><span class="sxs-lookup"><span data-stu-id="c85c5-133">target</span></span>|[<span data-ttu-id="c85c5-134">cloudPcManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="c85c5-134">cloudPcManagementAssignmentTarget</span></span>](../resources/cloudpcmanagementassignmenttarget.md)|<span data-ttu-id="c85c5-135">预配策略的分配目标。</span><span class="sxs-lookup"><span data-stu-id="c85c5-135">The assignment target for the provisioning policy.</span></span> <span data-ttu-id="c85c5-136">目前，唯一支持的目标为用户组。</span><span class="sxs-lookup"><span data-stu-id="c85c5-136">Currently, the only target supported is a user group.</span></span>|
+|<span data-ttu-id="a827c-132">assignments</span><span class="sxs-lookup"><span data-stu-id="a827c-132">assignments</span></span>|<span data-ttu-id="a827c-133">[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) 集合</span><span class="sxs-lookup"><span data-stu-id="a827c-133">[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection</span></span> | <span data-ttu-id="a827c-134">要分配给相应目标组的云电脑用户设置资源的集合。</span><span class="sxs-lookup"><span data-stu-id="a827c-134">The collection of cloud PC user setting resources each to be assigned to the corresponding target group.</span></span> <span data-ttu-id="a827c-135">目前Microsoft 365 Azure AD 中的安全组和安全组。</span><span class="sxs-lookup"><span data-stu-id="a827c-135">Only Microsoft 365 groups and security groups in Azure AD are currently supported.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="c85c5-137">响应</span><span class="sxs-lookup"><span data-stu-id="c85c5-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a827c-136">响应</span><span class="sxs-lookup"><span data-stu-id="a827c-136">Response</span></span>
 
-<span data-ttu-id="c85c5-138">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="c85c5-138">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="a827c-137">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="a827c-137">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c85c5-139">示例</span><span class="sxs-lookup"><span data-stu-id="c85c5-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a827c-138">示例</span><span class="sxs-lookup"><span data-stu-id="a827c-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="c85c5-140">请求</span><span class="sxs-lookup"><span data-stu-id="c85c5-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a827c-139">请求</span><span class="sxs-lookup"><span data-stu-id="a827c-139">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "cloudpcusersetting_assign"
@@ -91,7 +89,7 @@ Content-length: 254
 ```
 
 
-### <a name="response"></a><span data-ttu-id="c85c5-141">响应</span><span class="sxs-lookup"><span data-stu-id="c85c5-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a827c-140">响应</span><span class="sxs-lookup"><span data-stu-id="a827c-140">Response</span></span>
 
 <!-- {
   "blockType": "response",
