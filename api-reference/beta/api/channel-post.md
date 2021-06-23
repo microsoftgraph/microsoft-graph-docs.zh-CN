@@ -2,15 +2,15 @@
 title: 创建频道
 description: 在团队中创建新频道，如请求正文中指定。
 localization_priority: Normal
-author: laujan
+author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6c9f10269f9e1181ebadc03fb6b9463598b9815
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: cca7ba2cfd6f69c6bbfda080c94c31013018657e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201121"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059922"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -32,7 +32,7 @@ ms.locfileid: "51201121"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 > **注意**：将来，Microsoft 可能会要求你或你的客户根据使用团队合作导入的数据量支付额外的费用。Migrate.All 和/或 [迁移 API。](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 

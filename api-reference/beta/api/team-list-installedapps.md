@@ -1,16 +1,16 @@
 ---
 title: 列出团队中的应用
 description: 检索指定团队中安装的应用列表。
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 09f278087073b70fc66fb052c8178f1fbbc37807
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2ca5f691395e38665f57713de0af632b21049f1d
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962783"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060464"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -229,7 +229,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 在示例中，Teams 应用的清单 ID 为 `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee` 。
+下面展示了示例请求。 在示例中，应用清单 ID Teams为 `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

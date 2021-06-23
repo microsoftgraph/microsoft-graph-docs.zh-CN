@@ -1,16 +1,16 @@
 ---
 title: '更新频道 '
 description: 更新指定频道的属性。
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8527ae77c6198aea615aff8add5a569dc563bafa
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 33088ea188b1ac1efa1247770b3e0a044c13764e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786213"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059938"
 ---
 # <a name="update-channel"></a>更新频道 
 

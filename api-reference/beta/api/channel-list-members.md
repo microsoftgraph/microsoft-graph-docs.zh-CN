@@ -1,16 +1,16 @@
 ---
 title: 列出频道成员
 description: 列出频道成员。
-author: laujan
+author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 35609562fa86a32f02149f8814017cee47a1c99f
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: e42992cfc8c0c1368e822860cf42aac7987a881b
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690191"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059948"
 ---
 # <a name="list-members-of-channel"></a>列出频道成员
 
@@ -23,7 +23,7 @@ ms.locfileid: "49690191"
 > [!NOTE]
 > 必须将由服务器返回的会员资格 ID 视为不透明字符串。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
 >
-> 成员资格结果将来可能会映射到来自不同租户的用户，如响应中所示。 客户端不应假定所有成员都仅来自当前租户。
+> 未来，成员资格结果可以映射到来自不同租户的用户，如响应中所示。客户端不应假定所有成员仅来自当前租户。
 
 ## <a name="permissions"></a>权限
 

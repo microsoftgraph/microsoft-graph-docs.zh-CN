@@ -5,33 +5,30 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 731ebcb9ab27baf4ea30553d4f6a598d61e37d59
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: a4ed9b17d8d2b831071dc8f24e8330e595b543dc
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010189"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060292"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置访问评审的范围
 
-Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 允许你以编程方式查看用户、服务主体或组对 Azure AD 资源的访问权限。
+Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你以编程方式查看用户、服务主体或组对 Azure AD 资源的访问权限。
 
-> [!NOTE]
-> 访问[评审 API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)仅适用于 Microsoft Graph beta 终结点。 请勿在生产应用中使用它，因为它可能会随时更改，恕不另行通知。
-
-要审阅的资源在访问评审 [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true)资源的 **scope** 属性中配置。 此属性的类型为 [accessReviewScope，](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true)这是一个抽象类型，继承自以下资源，可用于配置将针对其访问的资源或资源组。
+要审阅的资源在访问评审 [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition)资源的 **scope** 属性中配置。 此属性的类型为 [accessReviewScope，](/graph/api/resources/accessreviewscope)这是一个抽象类型，继承自以下资源，可用于配置将针对其访问的资源或资源组。
 
 |资源|说明|示例场景|
 |:---    |:---       |:---             |
-|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true)|最适用于查看有权访问资源或相关资源组的完整主体集或子集。|<ul><li>分配给组的用户的成员身份。</li><li>来宾用户访问一个组。</li><li>来宾用户访问租户Microsoft 365组。</li><li>分配给特权角色的服务主体。</li><li>对权利管理访问包的用户和服务主体访问权限。</li></ul>|
-|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope?view=graph-rest-beta&preserve-view=true)|继承自 accessReviewQueryScope。 仅在查看非活动用户时使用。 非活动状态由 **inactiveDuration 属性** 指定。 |<ul><li>仅非活动用户的组成员身份。</li><ul>|
-|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope?view=graph-rest-beta&preserve-view=true)|最适用于查看主体对配置唯一主体和资源池的资源的访问权限。|<ul><li>查看跨 1 个组和 1 个特权 Azure AD 角色Microsoft 365 *3* 个特定主体的访问权限。</li><ul>|
+|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|最适用于查看有权访问资源或相关资源组的完整主体集或子集。|<ul><li>分配给组的用户的成员身份。</li><li>来宾用户访问一个组。</li><li>来宾用户访问租户Microsoft 365组。</li><li>分配给特权角色的服务主体。</li><li>对权利管理访问包的用户和服务主体访问权限。</li></ul>|
+|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|继承自 accessReviewQueryScope。 仅在查看非活动用户时使用。 非活动状态由 **inactiveDuration 属性** 指定。 |<ul><li>仅非活动用户的组成员身份。</li><ul>|
+|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|最适用于查看主体对配置唯一主体和资源池的资源的访问权限。|<ul><li>查看跨 1 个组和 1 个特权 Azure AD 角色Microsoft 365 *3* 个特定主体的访问权限。</li><ul>|
 
 本文将使用这些类型的 accessReviewScope 将各种 Azure AD 资源配置为访问评审的范围。 这可以帮助您自动执行主动审阅并控制对组织中资源的访问权限。  
 
 ## <a name="use-accessreviewqueryscope-to-configure-scope"></a>使用 accessReviewQueryScope 配置作用域
 
-若要使用 **accessReviewQueryScope** 类型配置范围，请设置其 **query、queryRoot** 和 **queryType** 属性的值。  有关这些属性的说明，请参阅 [accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true) 资源类型。
+若要使用 **accessReviewQueryScope** 类型配置范围，请设置其 **query、queryRoot** 和 **queryType** 属性的值。  有关这些属性的说明，请参阅 [accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope) 资源类型。
 
 ### <a name="example-1-review-all-users-assigned-to-a-group"></a>示例 1：查看分配给组的所有用户
 
@@ -124,7 +121,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root?view=graph
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/beta/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.servicePrincipal') and roleDefinitionId eq '{role ID}')",
+    "query": "/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.servicePrincipal') and roleDefinitionId eq '{role ID}')",
     "queryType": "MicrosoftGraph"
 }
 ```

@@ -1,16 +1,16 @@
 ---
 title: 向团队添加应用
 description: 将应用安装到指定的团队。
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 93610704438fef36cabaa4d14e33e05a69a183bc
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 1c48946e507e6bc25c8dc0516b21d8abd653a20f
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690328"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060437"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
@@ -18,7 +18,7 @@ ms.locfileid: "49690328"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [应用](../resources/teamsapp.md) 安装到指定的 [团队](../resources/team.md)。
+将 [应用安装到](../resources/teamsapp.md) 指定的 [团队](../resources/team.md)。
 
 ## <a name="permissions"></a>权限
 

@@ -1,16 +1,16 @@
 ---
 title: 获取团队成员
 description: 获取团队成员。
-author: laujan
+author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e54d47c404fc0075217d6bf93a76e73715c69f7e
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 6a12455b9fb2d51c13dc725ec509542136affa1e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754098"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060320"
 ---
 # <a name="get-member-of-team"></a>获取团队成员
 

@@ -1,16 +1,16 @@
 ---
 title: 更新团队中的成员
 description: 更新团队中成员的角色。
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 41896d37cd8c73d61fac04c3a4386b54f38a2d7a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 81aad9adb2630d14f7813d8296e7a13ea6515edf
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954041"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060527"
 ---
 # <a name="update-member-in-team"></a>更新团队中的成员
 

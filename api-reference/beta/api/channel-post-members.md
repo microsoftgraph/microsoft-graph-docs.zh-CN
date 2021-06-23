@@ -1,16 +1,16 @@
 ---
 title: 向频道添加成员
 description: 向频道添加成员。
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a5c0e929e68aef53a2e42270078fd5a388488643
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d4276eea6e094f43b10a1c392b57ac14cd310cc1
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948359"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059932"
 ---
 # <a name="add-member-to-channel"></a>向频道添加成员
 
@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|用户的角色。 必须为空 `owner` 。|
-|用户|[用户](../resources/user.md)|要添加到频道的用户。|
+|用户|[user](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 

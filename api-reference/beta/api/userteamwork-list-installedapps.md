@@ -1,16 +1,16 @@
 ---
 title: 列出为用户安装的应用
 description: 检索在指定用户的个人范围内安装的应用列表。
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2a55262100d528a36fc04d82d49134dda7ef40c1
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: c44574fce35ba76be30a0a452efb96bcd6f6b641
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696289"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060490"
 ---
 # <a name="list-apps-installed-for-user"></a>列出为用户安装的应用
 

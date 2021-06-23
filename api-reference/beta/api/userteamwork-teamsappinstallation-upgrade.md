@@ -1,16 +1,16 @@
 ---
 title: teamsAppInstallation：升级
 description: 在用户的个人范围内升级应用安装
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1dd9a390203658a2f7f284023a05ed0e166e5839
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 8c087d6676c2829e3796f5f6f3e2fee0b596f966
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696273"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060576"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 

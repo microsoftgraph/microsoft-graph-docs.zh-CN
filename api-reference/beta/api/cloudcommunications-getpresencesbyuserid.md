@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 909643577a93429a06e6569c3d6280c69ffacd1e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0a545df4e1195d057e5155ab18f5bcfe17de9102
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786168"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059913"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 
@@ -111,25 +111,26 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
-  "value": [{
-      "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-      "availability": "Busy",
-      "activity": "InAMeeting",
-      "outOfOfficeSettings": {
-        "message": null,
-        "isOutOfOffice": false
+   "value":[
+      {
+         "id":"fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+         "availability":"Busy",
+         "activity":"InAMeeting",
+         "outOfOfficeSettings":{
+            "message":null,
+            "isOutOfOffice":false
+         }
+      },
+      {
+         "id":"66825e03-7ef5-42da-9069-724602c31f6b",
+         "availability":"Away",
+         "activity":"Away",
+         "outOfOfficeSettings":{
+            "message":null,
+            "isOutOfOffice":true
+         }
       }
-    },
-    {
-      "id": "66825e03-7ef5-42da-9069-724602c31f6b",
-      "availability": "Away",
-      "activity": "Away",
-      "outOfOfficeSettings": {
-        "message": null,
-        "isOutOfOffice": true
-      }
-    }
-  ]
+   ]
 }
 ```
 

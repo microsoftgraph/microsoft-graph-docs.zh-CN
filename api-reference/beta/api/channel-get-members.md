@@ -1,16 +1,16 @@
 ---
 title: 获取频道的成员
 description: 获取频道的成员。
-author: laujan
+author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5102bfd273be2e8b5f2ff0c20c63e48c0449c16f
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: a1e1b1e8e7ee0053663c24a68eacc72704b08e2e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854178"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059952"
 ---
 # <a name="get-member-of-channel"></a>获取频道的成员
 

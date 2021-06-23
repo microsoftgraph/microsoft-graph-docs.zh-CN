@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d2a4b3885d00da58144d73655ae8e705608bb139
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: a26fba741bfe080ac5779c7c39c49b47a9427211
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912031"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060507"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -810,13 +810,13 @@ ms.locfileid: "52912031"
 |成员|
 |:---|
 |event|
-|message|
+|消息|
 |driveItem|
 |externalItem|
 |网站|
 |list|
 |listItem|
-|drive|
+|驱动器|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType 值
@@ -1716,7 +1716,7 @@ ms.locfileid: "52912031"
 
 |成员|
 |:---|
-|message|
+|消息|
 
 ### <a name="chatmessageimportance-values"></a>chatMessageImportance 值
 
@@ -1792,7 +1792,7 @@ ms.locfileid: "52912031"
 | 成员       |
 |:--------------|
 |event|
-|message|
+|消息|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2213,7 +2213,7 @@ ms.locfileid: "52912031"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|team      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
+|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2262,3 +2262,9 @@ ms.locfileid: "52912031"
 |:---|
 |principal|
 |unknownFutureValue|
+
+### <a name="teamworktagtype-values"></a>teamworkTagType 值
+
+|成员| 值 | 说明               |
+|:---|:---- | :------------------------ |
+|standard| 0     |标记的默认类型。 具有权限的成员可以在团队中管理标准类型的标记。|

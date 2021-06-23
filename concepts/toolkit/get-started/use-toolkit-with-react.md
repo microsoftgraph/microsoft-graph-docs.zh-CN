@@ -3,12 +3,12 @@ title: 将 Microsoft Graph Toolkit与 React
 description: 在应用程序应用程序中Graph Toolkit Microsoft React入门。
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 54bdde286933610feb637026be5a7385ab848c48
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 6618599b767f5c7ebe3d0469aed012c81125738e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030948"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060494"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>将 Microsoft Graph Toolkit与 React
 
@@ -19,9 +19,9 @@ Microsoft Graph Toolkit 是一组 Web 组件，可简化连接到 Microsoft Grap
 本文介绍使用 Microsoft Graph Toolkit创建应用并React应用并连接到Microsoft 365。 完成这些步骤后，你将拥有一个React应用，该应用显示当前登录用户即将从 Microsoft 365。
 
 > [!TIP]
-> 还可以按照本教程作为交互式代码教程。 Fore details， see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).
+> 还可以按照本教程作为交互式代码教程。 有关详细信息，请参阅初学者[GitHub存储库](https://github.com/microsoftgraph/mgt-react-codetour)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 若要按照本文中的步骤操作，你需要一个Microsoft 365和一些工具。 有关详细信息，请参阅 [入门](./overview.md)。
 
@@ -323,6 +323,6 @@ export default App;
 ## <a name="next-steps"></a>后续步骤
 
 - 请参阅[Microsoft Graph Toolkit](../overview.md)中Graph Toolkit。
-- 尝试在运动场中的 [组件](https://mgt.dev)。
-- 在 Stack [Overflow 上提问](https://aka.ms/mgt-question)。
-- 报告 Bug 或将功能请求[保留GitHub。](https://aka.ms/mgt)
+- 在[样本](https://mgt.dev)中试用组件。
+- 在 [Stack Overflow](https://aka.ms/mgt-question) 上提问。
+- 在 [GitHub](https://aka.ms/mgt) 上报告 bug 或提出功能请求。

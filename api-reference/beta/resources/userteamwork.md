@@ -1,16 +1,16 @@
 ---
 title: userTeamwork 资源类型
 description: '可供用户使用的 Microsoft Teams 功能的容器。 '
-author: clearab
+author: akjo
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2802689810c03a4ce9931cc0c4f478d1674cfc2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ef5bb1ddf0944e7d61ab5321ae50e766713326c
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057756"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060441"
 ---
 # <a name="userteamwork-resource-type"></a>userTeamwork 资源类型
 

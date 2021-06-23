@@ -1,16 +1,16 @@
 ---
 title: teamsAppInstallation：升级
 description: 升级团队中的应用安装
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1be01afcd09e7870af75b4c3a5b4eb9a481bc78c
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 63bef7174f222ad3b854aa7d5b9f0f247a5fb95f
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691060"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060534"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 

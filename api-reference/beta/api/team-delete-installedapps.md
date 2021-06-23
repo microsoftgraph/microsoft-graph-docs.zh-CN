@@ -1,16 +1,16 @@
 ---
 title: 从团队中删除应用
 description: 从指定团队卸载应用。
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a03b60bf665ed4111b50392500bfe70049aadfe4
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 7828241bdcf74aae2f2267cd1c3d0b6ece826ecc
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690692"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059448"
 ---
 # <a name="remove-app-from-team"></a>从团队中删除应用
 

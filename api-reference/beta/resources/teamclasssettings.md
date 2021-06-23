@@ -1,16 +1,16 @@
 ---
 title: teamClassSettings 资源类型
-description: 表示特定于类型为 "类" 的团队的设置。
+description: 表示特定于类类型的团队的设置。
 localization_priority: Normal
-author: clearab
+author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 97a20a312f899db5334003edb1b739bdc3b9e346
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 10ba45299a8c0d1b28b855aad3a2321930f618e9
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046669"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060474"
 ---
 # <a name="teamclasssettings-resource-type"></a>teamClassSettings 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48046669"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 [团队](team.md)的特定于类的属性。 仅当团队代表班级时可用。
+表示团队的特定于类 [的属性](team.md)。 仅当团队代表班级时可用。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|notifyGuardiansAboutAssignments|Boolean|如果设置为 `true` ，则允许将每周分配摘要电子邮件发送给父/监护人，前提是租户管理员已启用全局设置。|
+|notifyGuardiansAboutAssignments|Boolean|如果设置为 ，则允许向家长/监护人发送每周作业摘要电子邮件，但租户管理员已全局启用 `true` 该设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

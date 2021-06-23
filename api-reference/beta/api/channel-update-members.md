@@ -1,16 +1,16 @@
 ---
 title: 更新频道中的成员
 description: 更新频道中成员的角色。
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 35bc88f95fa279c5a49d81de9a66005a0e3cc66f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f94bb69d314eba40ce4ee4c68f1c784b9685c8ad
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948223"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059919"
 ---
 # <a name="update-member-in-channel"></a>更新频道中的成员
 

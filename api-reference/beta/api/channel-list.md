@@ -1,16 +1,16 @@
 ---
 title: 列出频道
 description: 检索此团队中的频道列表。
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: da8bfda45b92b748deda845d7202347888e72241
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: c864e2dd8da2dbf3e5239ecbaa747c28fb96c05e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971299"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059963"
 ---
 # <a name="list-channels"></a>列出频道
 

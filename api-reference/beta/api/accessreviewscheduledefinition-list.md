@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bbc014075f1dc72970ef64add9555d6067cbe0f0
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: a2d29f6e1f3aa848b60351ed4972ab5b4f06cfd2
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870022"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059988"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>列出 accessReviewScheduleDefinition
 
@@ -66,7 +66,7 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 `$filter` **accessReviewInactiveUserQueryScope** 或 **principalResourceMembershipScope 不支持查询参数**。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 无。
 
 ## <a name="request-body"></a>请求正文
@@ -127,10 +127,12 @@ Content-type: application/json
             "id": "98dcebed-c7f6-46f4-bcf3-4a3fccdb3e2a",
             "displayName": "Access Review",
             "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
                 "queryType": "MicrosoftGraph"
             },
             "instanceEnumerationScope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b",
                 "queryType": "MicrosoftGraph"
             },

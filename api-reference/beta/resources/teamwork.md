@@ -1,16 +1,16 @@
 ---
 title: teamwork 资源类型
 description: 可供组织使用的 Microsoft Teams 功能的容器。
-author: clearab
+author: akjo
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1d44520fd680bbfb67d4a756b24e1533a64041b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 439a4c5234d6442c2394dc8154b08d7cce2e5c69
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046333"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060445"
 ---
 # <a name="teamwork-resource-type"></a>teamwork 资源类型
 
