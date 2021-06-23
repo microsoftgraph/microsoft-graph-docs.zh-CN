@@ -3,89 +3,89 @@ title: 将 Microsoft Graph Toolkit与 React
 description: 在应用程序应用程序中Graph Toolkit Microsoft React入门。
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 54bdde286933610feb637026be5a7385ab848c48
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 6618599b767f5c7ebe3d0469aed012c81125738e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030948"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060494"
 ---
-# <a name="use-the-microsoft-graph-toolkit-with-react"></a><span data-ttu-id="149e1-103">将 Microsoft Graph Toolkit与 React</span><span class="sxs-lookup"><span data-stu-id="149e1-103">Use the Microsoft Graph Toolkit with React</span></span>
+# <a name="use-the-microsoft-graph-toolkit-with-react"></a><span data-ttu-id="6dcc9-103">将 Microsoft Graph Toolkit与 React</span><span class="sxs-lookup"><span data-stu-id="6dcc9-103">Use the Microsoft Graph Toolkit with React</span></span>
 
-<span data-ttu-id="149e1-104">Microsoft Graph Toolkit 是一组 Web 组件，可简化连接到 Microsoft Graph并让你专注于应用程序。</span><span class="sxs-lookup"><span data-stu-id="149e1-104">Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead.</span></span> <span data-ttu-id="149e1-105">Microsoft Graph Toolkit作为一组通过 npm 包分发的常规 `@microsoft/mgt` Web 组件提供。</span><span class="sxs-lookup"><span data-stu-id="149e1-105">Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt` npm package.</span></span>
+<span data-ttu-id="6dcc9-104">Microsoft Graph Toolkit 是一组 Web 组件，可简化连接到 Microsoft Graph并让你专注于应用程序。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-104">Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead.</span></span> <span data-ttu-id="6dcc9-105">Microsoft Graph Toolkit作为一组通过 npm 包分发的常规 `@microsoft/mgt` Web 组件提供。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-105">Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt` npm package.</span></span>
 
-<span data-ttu-id="149e1-106">如果你使用 React 生成应用，可以使用 包 ，它将 Microsoft [ `@microsoft/mgt-react` ](./mgt-react.md)Graph Toolkit Web 组件包装在 React 组件中，并更轻松地传递复杂数据。</span><span class="sxs-lookup"><span data-stu-id="149e1-106">If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.</span></span>
+<span data-ttu-id="6dcc9-106">如果你使用 React 生成应用，可以使用 包 ，它将 Microsoft [ `@microsoft/mgt-react` ](./mgt-react.md)Graph Toolkit Web 组件包装在 React 组件中，并更轻松地传递复杂数据。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-106">If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.</span></span>
 
-<span data-ttu-id="149e1-107">本文介绍使用 Microsoft Graph Toolkit创建应用并React应用并连接到Microsoft 365。</span><span class="sxs-lookup"><span data-stu-id="149e1-107">This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365.</span></span> <span data-ttu-id="149e1-108">完成这些步骤后，你将拥有一个React应用，该应用显示当前登录用户即将从 Microsoft 365。</span><span class="sxs-lookup"><span data-stu-id="149e1-108">After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.</span></span>
+<span data-ttu-id="6dcc9-107">本文介绍使用 Microsoft Graph Toolkit创建应用并React应用并连接到Microsoft 365。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-107">This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365.</span></span> <span data-ttu-id="6dcc9-108">完成这些步骤后，你将拥有一个React应用，该应用显示当前登录用户即将从 Microsoft 365。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-108">After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="149e1-109">还可以按照本教程作为交互式代码教程。</span><span class="sxs-lookup"><span data-stu-id="149e1-109">You can also follow this tutorial as an interactive code tour.</span></span> <span data-ttu-id="149e1-110">Fore details， see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).</span><span class="sxs-lookup"><span data-stu-id="149e1-110">Fore details, see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).</span></span>
+> <span data-ttu-id="6dcc9-109">还可以按照本教程作为交互式代码教程。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-109">You can also follow this tutorial as an interactive code tour.</span></span> <span data-ttu-id="6dcc9-110">有关详细信息，请参阅初学者[GitHub存储库](https://github.com/microsoftgraph/mgt-react-codetour)。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-110">For details, see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="149e1-111">先决条件</span><span class="sxs-lookup"><span data-stu-id="149e1-111">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6dcc9-111">必备条件</span><span class="sxs-lookup"><span data-stu-id="6dcc9-111">Prerequisites</span></span>
 
-<span data-ttu-id="149e1-112">若要按照本文中的步骤操作，你需要一个Microsoft 365和一些工具。</span><span class="sxs-lookup"><span data-stu-id="149e1-112">To follow the steps in this article, you'll need a Microsoft 365 development environment and a few tools.</span></span> <span data-ttu-id="149e1-113">有关详细信息，请参阅 [入门](./overview.md)。</span><span class="sxs-lookup"><span data-stu-id="149e1-113">For details, see [getting started](./overview.md).</span></span>
+<span data-ttu-id="6dcc9-112">若要按照本文中的步骤操作，你需要一个Microsoft 365和一些工具。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-112">To follow the steps in this article, you'll need a Microsoft 365 development environment and a few tools.</span></span> <span data-ttu-id="6dcc9-113">有关详细信息，请参阅 [入门](./overview.md)。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-113">For details, see [getting started](./overview.md).</span></span>
 
-## <a name="create-a-react-app"></a><span data-ttu-id="149e1-114">创建React应用</span><span class="sxs-lookup"><span data-stu-id="149e1-114">Create a React app</span></span>
+## <a name="create-a-react-app"></a><span data-ttu-id="6dcc9-114">创建React应用</span><span class="sxs-lookup"><span data-stu-id="6dcc9-114">Create a React app</span></span>
 
-<span data-ttu-id="149e1-115">通过运行React创建新的应用程序应用程序。</span><span class="sxs-lookup"><span data-stu-id="149e1-115">Create a new React app by running the following command.</span></span> <span data-ttu-id="149e1-116">这将使用 TypeScript React一个新的应用，这将帮助你编写更可靠的代码并避免运行时错误。</span><span class="sxs-lookup"><span data-stu-id="149e1-116">This will create a new React app using TypeScript, which will help you write more robust code and avoid runtime errors.</span></span>
+<span data-ttu-id="6dcc9-115">通过运行React创建新的应用程序应用程序。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-115">Create a new React app by running the following command.</span></span> <span data-ttu-id="6dcc9-116">这将使用 TypeScript React一个新的应用，这将帮助你编写更可靠的代码并避免运行时错误。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-116">This will create a new React app using TypeScript, which will help you write more robust code and avoid runtime errors.</span></span>
 
 ```Command Line
 npx create-react-app my-m365-app --template typescript --use-npm
 ```
 
-<span data-ttu-id="149e1-117">将工作目录更改为新创建的应用。</span><span class="sxs-lookup"><span data-stu-id="149e1-117">Change the working directory to the newly created app.</span></span>
+<span data-ttu-id="6dcc9-117">将工作目录更改为新创建的应用。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-117">Change the working directory to the newly created app.</span></span>
 
 ```Command Line
 cd my-m365-app
 ```
 
-<span data-ttu-id="149e1-118">接下来，安装 `mgt-react` npm 包，其中包含 Microsoft Graph Toolkit React组件。</span><span class="sxs-lookup"><span data-stu-id="149e1-118">Next, install the `mgt-react` npm package, which contains the Microsoft Graph Toolkit React components.</span></span>
+<span data-ttu-id="6dcc9-118">接下来，安装 `mgt-react` npm 包，其中包含 Microsoft Graph Toolkit React组件。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-118">Next, install the `mgt-react` npm package, which contains the Microsoft Graph Toolkit React components.</span></span>
 
 ```Command Line
 npm i @microsoft/mgt-react
 ```
 
-<span data-ttu-id="149e1-119">同时安装 `mgt-msal2-provider` `mgt-element` 和 npm 包，其中包含 MSAL 2.0 身份验证提供程序。</span><span class="sxs-lookup"><span data-stu-id="149e1-119">Install the `mgt-msal2-provider` and `mgt-element` npm package as well, which contains the MSAL 2.0 auth provider.</span></span>
+<span data-ttu-id="6dcc9-119">同时安装 `mgt-msal2-provider` `mgt-element` 和 npm 包，其中包含 MSAL 2.0 身份验证提供程序。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-119">Install the `mgt-msal2-provider` and `mgt-element` npm package as well, which contains the MSAL 2.0 auth provider.</span></span>
 
 ```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
 ```
 
-<span data-ttu-id="149e1-120">确认你可以运行该应用。</span><span class="sxs-lookup"><span data-stu-id="149e1-120">Confirm that you can run the app.</span></span>
+<span data-ttu-id="6dcc9-120">确认你可以运行该应用。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-120">Confirm that you can run the app.</span></span>
 
 ```Command Line
 npm start
 ```
 
-<span data-ttu-id="149e1-121">你应该能够通过 在浏览器中打开你的应用 `http://localhost:3000` 。</span><span class="sxs-lookup"><span data-stu-id="149e1-121">You should be able to open your app in the browser via `http://localhost:3000`.</span></span>
+<span data-ttu-id="6dcc9-121">你应该能够通过 在浏览器中打开你的应用 `http://localhost:3000` 。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-121">You should be able to open your app in the browser via `http://localhost:3000`.</span></span>
 
 [!INCLUDE [AAD with implicit flow app registration](../includes/aad-app-registration-spa.md)]
 
-## <a name="connect-react-app-to-microsoft-365"></a><span data-ttu-id="149e1-122">连接 React应用Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="149e1-122">Connect React app to Microsoft 365</span></span>
+## <a name="connect-react-app-to-microsoft-365"></a><span data-ttu-id="6dcc9-122">连接 React应用Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="6dcc9-122">Connect React app to Microsoft 365</span></span>
 
-<span data-ttu-id="149e1-123">现在，你已经使用 Azure AD Azure Active Directory (注册) ，你可以将 React 应用连接到 Microsoft 365。</span><span class="sxs-lookup"><span data-stu-id="149e1-123">Now that you have registered your application with Azure Active Directory (Azure AD), you can connect the React app to Microsoft 365.</span></span> <span data-ttu-id="149e1-124">首先，允许用户使用其 Microsoft 帐户登录应用。</span><span class="sxs-lookup"><span data-stu-id="149e1-124">First, allow users to sign in to the app using their Microsoft account.</span></span>
+<span data-ttu-id="6dcc9-123">现在，你已经使用 Azure AD Azure Active Directory (注册) ，你可以将 React 应用连接到 Microsoft 365。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-123">Now that you have registered your application with Azure Active Directory (Azure AD), you can connect the React app to Microsoft 365.</span></span> <span data-ttu-id="6dcc9-124">首先，允许用户使用其 Microsoft 帐户登录应用。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-124">First, allow users to sign in to the app using their Microsoft account.</span></span>
 
-### <a name="copy-the-azure-ad-application-registration-id"></a><span data-ttu-id="149e1-125">复制 Azure AD 应用程序注册 ID</span><span class="sxs-lookup"><span data-stu-id="149e1-125">Copy the Azure AD application registration ID</span></span>
+### <a name="copy-the-azure-ad-application-registration-id"></a><span data-ttu-id="6dcc9-125">复制 Azure AD 应用程序注册 ID</span><span class="sxs-lookup"><span data-stu-id="6dcc9-125">Copy the Azure AD application registration ID</span></span>
 
-1. <span data-ttu-id="149e1-126">在 Azure 门户中，转到应用程序注册。</span><span class="sxs-lookup"><span data-stu-id="149e1-126">In the Azure Portal, go to your application registration.</span></span>
-1. <span data-ttu-id="149e1-127">验证是否位于"概述 **"** 页上。</span><span class="sxs-lookup"><span data-stu-id="149e1-127">Verify that you are on the **Overview** page.</span></span>
-1. <span data-ttu-id="149e1-128">从 **Essentials** 部分，复制 Application **(client) ID** 属性的值</span><span class="sxs-lookup"><span data-stu-id="149e1-128">From the **Essentials** section, copy the value of the **Application (client) ID** property</span></span>
+1. <span data-ttu-id="6dcc9-126">在 Azure 门户中，转到应用程序注册。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-126">In the Azure Portal, go to your application registration.</span></span>
+1. <span data-ttu-id="6dcc9-127">验证是否位于"概述 **"** 页上。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-127">Verify that you are on the **Overview** page.</span></span>
+1. <span data-ttu-id="6dcc9-128">从 **Essentials** 部分，复制 Application **(client) ID** 属性的值</span><span class="sxs-lookup"><span data-stu-id="6dcc9-128">From the **Essentials** section, copy the value of the **Application (client) ID** property</span></span>
 
-### <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a><span data-ttu-id="149e1-129">配置 Microsoft Graph Toolkit身份验证提供程序</span><span class="sxs-lookup"><span data-stu-id="149e1-129">Configure the Microsoft Graph Toolkit authentication provider</span></span>
+### <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a><span data-ttu-id="6dcc9-129">配置 Microsoft Graph Toolkit身份验证提供程序</span><span class="sxs-lookup"><span data-stu-id="6dcc9-129">Configure the Microsoft Graph Toolkit authentication provider</span></span>
 
-<span data-ttu-id="149e1-130">接下来，配置 Microsoft Graph Toolkit使用的身份验证提供程序。</span><span class="sxs-lookup"><span data-stu-id="149e1-130">Next, configure the authentication provider that the Microsoft Graph Toolkit should use.</span></span> <span data-ttu-id="149e1-131">在这种情况下，你将使用 MSAL，这是生成独立应用程序的好默认值。</span><span class="sxs-lookup"><span data-stu-id="149e1-131">In this case, you'll use MSAL, which is a good default for building standalone applications.</span></span> <span data-ttu-id="149e1-132">如果使用扩展点中的任意扩展点Microsoft 365，Teams或SharePoint[提供程序。](../providers/providers.md)</span><span class="sxs-lookup"><span data-stu-id="149e1-132">If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).</span></span>
+<span data-ttu-id="6dcc9-130">接下来，配置 Microsoft Graph Toolkit使用的身份验证提供程序。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-130">Next, configure the authentication provider that the Microsoft Graph Toolkit should use.</span></span> <span data-ttu-id="6dcc9-131">在这种情况下，你将使用 MSAL，这是生成独立应用程序的好默认值。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-131">In this case, you'll use MSAL, which is a good default for building standalone applications.</span></span> <span data-ttu-id="6dcc9-132">如果使用扩展点中的任意扩展点Microsoft 365，Teams或SharePoint[提供程序。](../providers/providers.md)</span><span class="sxs-lookup"><span data-stu-id="6dcc9-132">If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).</span></span>
 
 >[!NOTE] 
-><span data-ttu-id="149e1-133">如果当前正在使用 MSAL 提供程序，并且要更新到 MSAL 2 提供程序，请按照 [MSAL 2](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) 提供程序文章中的步骤操作。</span><span class="sxs-lookup"><span data-stu-id="149e1-133">If you are currently using MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.</span></span>
+><span data-ttu-id="6dcc9-133">如果当前正在使用 MSAL 提供程序，并且要更新到 MSAL 2 提供程序，请按照 [MSAL 2](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) 提供程序文章中的步骤操作。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-133">If you are currently using MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.</span></span>
 
-1. <span data-ttu-id="149e1-134">在代码编辑器中，打开 **"src/index"。**</span><span class="sxs-lookup"><span data-stu-id="149e1-134">In the code editor, open the **src/index.**</span></span> <span data-ttu-id="149e1-135">文件，并添加到导入列表，添加：</span><span class="sxs-lookup"><span data-stu-id="149e1-135">file, and to the list of imports, add:</span></span>
+1. <span data-ttu-id="6dcc9-134">在代码编辑器中，打开 **"src/index"。**</span><span class="sxs-lookup"><span data-stu-id="6dcc9-134">In the code editor, open the **src/index.**</span></span> <span data-ttu-id="6dcc9-135">文件，并添加到导入列表，添加：</span><span class="sxs-lookup"><span data-stu-id="6dcc9-135">file, and to the list of imports, add:</span></span>
 
     ```TypeScript
     import { Providers } from '@microsoft/mgt-element';
     import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
-1. <span data-ttu-id="149e1-136">最后一 `import` 个语句之后，使用 MSAL Graph Toolkit Microsoft 应用程序。</span><span class="sxs-lookup"><span data-stu-id="149e1-136">After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.</span></span>
+1. <span data-ttu-id="6dcc9-136">最后一 `import` 个语句之后，使用 MSAL Graph Toolkit Microsoft 应用程序。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-136">After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.</span></span>
 
     ```TypeScript
     Providers.globalProvider = new Msal2Provider({
@@ -93,9 +93,9 @@ npm start
     });
     ```
 
-    <span data-ttu-id="149e1-137">将 属性的值替换为之前在 Azure 门户中 `clientId` `Application (client) ID` 复制的属性的值。</span><span class="sxs-lookup"><span data-stu-id="149e1-137">Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Azure Portal.</span></span>
+    <span data-ttu-id="6dcc9-137">将 属性的值替换为之前在 Azure 门户中 `clientId` `Application (client) ID` 复制的属性的值。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-137">Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Azure Portal.</span></span>
 
-<span data-ttu-id="149e1-138">通过这些更改 **，src/index.tsx** 文件将如下所示。</span><span class="sxs-lookup"><span data-stu-id="149e1-138">With these changes, the **src/index.tsx** file will look like the following.</span></span>
+<span data-ttu-id="6dcc9-138">通过这些更改 **，src/index.tsx** 文件将如下所示。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-138">With these changes, the **src/index.tsx** file will look like the following.</span></span>
 
   ```tsx
   import React from 'react';
@@ -124,17 +124,17 @@ npm start
   serviceWorker.unregister();
   ```
 
-### <a name="add-the-sign-in-button"></a><span data-ttu-id="149e1-139">添加"登录"按钮</span><span class="sxs-lookup"><span data-stu-id="149e1-139">Add the Sign in button</span></span>
+### <a name="add-the-sign-in-button"></a><span data-ttu-id="6dcc9-139">添加"登录"按钮</span><span class="sxs-lookup"><span data-stu-id="6dcc9-139">Add the Sign in button</span></span>
 
-<span data-ttu-id="149e1-140">添加 **登录** Microsoft Graph Toolkit React组件，该组件将显示"登录"按钮，用户可以使用它的 Microsoft 帐户登录你的应用。</span><span class="sxs-lookup"><span data-stu-id="149e1-140">Add the **Login** Microsoft Graph Toolkit React component, which will display the **Sign in** button people can use to sign in with their Microsoft account to your app.</span></span>
+<span data-ttu-id="6dcc9-140">添加 **登录** Microsoft Graph Toolkit React组件，该组件将显示"登录"按钮，用户可以使用它的 Microsoft 帐户登录你的应用。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-140">Add the **Login** Microsoft Graph Toolkit React component, which will display the **Sign in** button people can use to sign in with their Microsoft account to your app.</span></span>
 
-1. <span data-ttu-id="149e1-141">在代码编辑器中，打开 **src/App.tsx** 文件，并添加到导入列表添加：</span><span class="sxs-lookup"><span data-stu-id="149e1-141">In the code editor, open the **src/App.tsx** file, and to the list of imports add:</span></span>
+1. <span data-ttu-id="6dcc9-141">在代码编辑器中，打开 **src/App.tsx** 文件，并添加到导入列表添加：</span><span class="sxs-lookup"><span data-stu-id="6dcc9-141">In the code editor, open the **src/App.tsx** file, and to the list of imports add:</span></span>
 
     ```TypeScript
     import { Login } from '@microsoft/mgt-react';
     ```
 
-1. <span data-ttu-id="149e1-142">在 函数中，将 子句的内容替换为基本结构，包括 `App` `return` Microsoft Graph Toolkit 登录组件：</span><span class="sxs-lookup"><span data-stu-id="149e1-142">In the `App` function, replace the contents of the `return` clause with the basic structure including the Microsoft Graph Toolkit Login component:</span></span>
+1. <span data-ttu-id="6dcc9-142">在 函数中，将 子句的内容替换为基本结构，包括 `App` `return` Microsoft Graph Toolkit 登录组件：</span><span class="sxs-lookup"><span data-stu-id="6dcc9-142">In the `App` function, replace the contents of the `return` clause with the basic structure including the Microsoft Graph Toolkit Login component:</span></span>
 
     ```TypeScript
     <div className="App">
@@ -144,7 +144,7 @@ npm start
     </div>
     ```
 
-<span data-ttu-id="149e1-143">通过这些更改 **，src/App.tsx** 文件将如下所示。</span><span class="sxs-lookup"><span data-stu-id="149e1-143">With these changes, the **src/App.tsx** file will look like the following.</span></span>
+<span data-ttu-id="6dcc9-143">通过这些更改 **，src/App.tsx** 文件将如下所示。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-143">With these changes, the **src/App.tsx** file will look like the following.</span></span>
 ```TypeScript
 
 import { Login } from '@microsoft/mgt-react';
@@ -164,24 +164,24 @@ function App() {
 export default App;
 ```
 
-### <a name="test-signing-in-to-your-application"></a><span data-ttu-id="149e1-144">测试应用程序登录</span><span class="sxs-lookup"><span data-stu-id="149e1-144">Test signing in to your application</span></span>
+### <a name="test-signing-in-to-your-application"></a><span data-ttu-id="6dcc9-144">测试应用程序登录</span><span class="sxs-lookup"><span data-stu-id="6dcc9-144">Test signing in to your application</span></span>
 
-<span data-ttu-id="149e1-145">你现在应该能够使用 Microsoft 帐户登录应用程序。</span><span class="sxs-lookup"><span data-stu-id="149e1-145">You should now be able to sign in to your application with your Microsoft account.</span></span>
+<span data-ttu-id="6dcc9-145">你现在应该能够使用 Microsoft 帐户登录应用程序。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-145">You should now be able to sign in to your application with your Microsoft account.</span></span>
 
-1. <span data-ttu-id="149e1-146">返回到运行应用React浏览器。</span><span class="sxs-lookup"><span data-stu-id="149e1-146">Go back to the browser where your React app is running.</span></span> <span data-ttu-id="149e1-147">现在应该会看到" **登录"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="149e1-147">You should now see a **Sign in** button.</span></span>
-1. <span data-ttu-id="149e1-148">单击" **登录** "按钮时，系统将提示你使用 Microsoft 帐户登录 (可以使用与使用) 访问 Azure 门户的帐户相同的帐户。</span><span class="sxs-lookup"><span data-stu-id="149e1-148">When you click the **Sign in** button, you will be prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure Portal with).</span></span>
-1. <span data-ttu-id="149e1-149">因为这是你第一次使用此 Azure AD 应用程序，你需要同意在组织中使用它。</span><span class="sxs-lookup"><span data-stu-id="149e1-149">Because this is the first time you're using this Azure AD application, you need to consent its use in your organization.</span></span>
-1. <span data-ttu-id="149e1-150">登录后，你将被重定向到你的React应用。</span><span class="sxs-lookup"><span data-stu-id="149e1-150">After signing in, you will be redirected to your React app.</span></span> <span data-ttu-id="149e1-151">请注意 **，"登录**"按钮已更改，显示用户的名称React显示使用 Microsoft Microsoft 365 检索到的用户 ![ ](../images/mgt-react-userinfo.png) Graph Toolkit。</span><span class="sxs-lookup"><span data-stu-id="149e1-151">Notice that the **Sign in** button changed to show your user's name ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).</span></span>
+1. <span data-ttu-id="6dcc9-146">返回到运行应用React浏览器。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-146">Go back to the browser where your React app is running.</span></span> <span data-ttu-id="6dcc9-147">现在应该会看到" **登录"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-147">You should now see a **Sign in** button.</span></span>
+1. <span data-ttu-id="6dcc9-148">单击" **登录** "按钮时，系统将提示你使用 Microsoft 帐户登录 (可以使用与使用) 访问 Azure 门户的帐户相同的帐户。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-148">When you click the **Sign in** button, you will be prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure Portal with).</span></span>
+1. <span data-ttu-id="6dcc9-149">因为这是你第一次使用此 Azure AD 应用程序，你需要同意在组织中使用它。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-149">Because this is the first time you're using this Azure AD application, you need to consent its use in your organization.</span></span>
+1. <span data-ttu-id="6dcc9-150">登录后，你将被重定向到你的React应用。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-150">After signing in, you will be redirected to your React app.</span></span> <span data-ttu-id="6dcc9-151">请注意 **，"登录**"按钮已更改，显示用户的名称React显示使用 Microsoft Microsoft 365 检索到的用户 ![ ](../images/mgt-react-userinfo.png) Graph Toolkit。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-151">Notice that the **Sign in** button changed to show your user's name ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).</span></span>
 
-## <a name="load-data-from-microsoft-365"></a><span data-ttu-id="149e1-152">从服务器加载Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="149e1-152">Load data from Microsoft 365</span></span>
+## <a name="load-data-from-microsoft-365"></a><span data-ttu-id="6dcc9-152">从服务器加载Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="6dcc9-152">Load data from Microsoft 365</span></span>
 
-<span data-ttu-id="149e1-153">Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加载了数据。</span><span class="sxs-lookup"><span data-stu-id="149e1-153">Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data.</span></span> <span data-ttu-id="149e1-154">本示例中，将显示登录人的日历。</span><span class="sxs-lookup"><span data-stu-id="149e1-154">In this example, you'll show the signed in person's calendar.</span></span>
+<span data-ttu-id="6dcc9-153">Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加载了数据。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-153">Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data.</span></span> <span data-ttu-id="6dcc9-154">本示例中，将显示登录人的日历。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-154">In this example, you'll show the signed in person's calendar.</span></span>
 
-### <a name="specify-permissions-needed-for-your-application"></a><span data-ttu-id="149e1-155">指定应用程序所需的权限</span><span class="sxs-lookup"><span data-stu-id="149e1-155">Specify permissions needed for your application</span></span>
+### <a name="specify-permissions-needed-for-your-application"></a><span data-ttu-id="6dcc9-155">指定应用程序所需的权限</span><span class="sxs-lookup"><span data-stu-id="6dcc9-155">Specify permissions needed for your application</span></span>
 
-<span data-ttu-id="149e1-156">您必须先指定Microsoft 365访问用户数据的权限范围列表，然后才能从应用程序加载数据。</span><span class="sxs-lookup"><span data-stu-id="149e1-156">Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data.</span></span> <span data-ttu-id="149e1-157">这些范围因要显示的信息类型而不同。</span><span class="sxs-lookup"><span data-stu-id="149e1-157">These scopes differ depending on what kind of information you want to show.</span></span> <span data-ttu-id="149e1-158">在这种情况下，您需要访问人员日历，以及访问日历中也显示的人的信息的基本访问权限。</span><span class="sxs-lookup"><span data-stu-id="149e1-158">In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar.</span></span> <span data-ttu-id="149e1-159">可以在 Microsoft Graph API 文档中找到每个[API 所需的范围](/graph/api/overview)。</span><span class="sxs-lookup"><span data-stu-id="149e1-159">You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).</span></span>
+<span data-ttu-id="6dcc9-156">您必须先指定Microsoft 365访问用户数据的权限范围列表，然后才能从应用程序加载数据。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-156">Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data.</span></span> <span data-ttu-id="6dcc9-157">这些范围因要显示的信息类型而不同。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-157">These scopes differ depending on what kind of information you want to show.</span></span> <span data-ttu-id="6dcc9-158">在这种情况下，您需要访问人员日历，以及访问日历中也显示的人的信息的基本访问权限。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-158">In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar.</span></span> <span data-ttu-id="6dcc9-159">可以在 Microsoft Graph API 文档中找到每个[API 所需的范围](/graph/api/overview)。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-159">You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).</span></span>
 
-1. <span data-ttu-id="149e1-160">在代码编辑器中，打开 **src/index.tsx** 文件，并更新提供程序初始化代码。</span><span class="sxs-lookup"><span data-stu-id="149e1-160">In the code editor, open the **src/index.tsx** file, and update the provider initialization code.</span></span>
+1. <span data-ttu-id="6dcc9-160">在代码编辑器中，打开 **src/index.tsx** 文件，并更新提供程序初始化代码。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-160">In the code editor, open the **src/index.tsx** file, and update the provider initialization code.</span></span>
 
     ```TypeScript
     Providers.globalProvider = new Msal2Provider({
@@ -190,27 +190,27 @@ export default App;
     });
     ```
 
-### <a name="show-users-data-after-signing-in"></a><span data-ttu-id="149e1-161">登录后显示用户数据</span><span class="sxs-lookup"><span data-stu-id="149e1-161">Show user's data after signing in</span></span>
+### <a name="show-users-data-after-signing-in"></a><span data-ttu-id="6dcc9-161">登录后显示用户数据</span><span class="sxs-lookup"><span data-stu-id="6dcc9-161">Show user's data after signing in</span></span>
 
-<span data-ttu-id="149e1-162">接下来，扩展应用程序以显示来自用户日历的数据。</span><span class="sxs-lookup"><span data-stu-id="149e1-162">Next, extend the application to show data from the user's calendar.</span></span> <span data-ttu-id="149e1-163">只有在用户登录后，才能访问此信息。</span><span class="sxs-lookup"><span data-stu-id="149e1-163">You can access this information only after the user has signed in.</span></span> <span data-ttu-id="149e1-164">为此，你需要跟踪用户的登录状态，在用户使用其 Microsoft 帐户登录后显示日历数据。</span><span class="sxs-lookup"><span data-stu-id="149e1-164">To do this, you will need to track the  user's sign in state and show the calendar data after the user has signed in with their Microsoft account.</span></span>
+<span data-ttu-id="6dcc9-162">接下来，扩展应用程序以显示来自用户日历的数据。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-162">Next, extend the application to show data from the user's calendar.</span></span> <span data-ttu-id="6dcc9-163">只有在用户登录后，才能访问此信息。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-163">You can access this information only after the user has signed in.</span></span> <span data-ttu-id="6dcc9-164">为此，你需要跟踪用户的登录状态，在用户使用其 Microsoft 帐户登录后显示日历数据。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-164">To do this, you will need to track the  user's sign in state and show the calendar data after the user has signed in with their Microsoft account.</span></span>
 
-#### <a name="track-users-sign-in-state"></a><span data-ttu-id="149e1-165">跟踪用户的登录状态</span><span class="sxs-lookup"><span data-stu-id="149e1-165">Track user's sign in state</span></span>
+#### <a name="track-users-sign-in-state"></a><span data-ttu-id="6dcc9-165">跟踪用户的登录状态</span><span class="sxs-lookup"><span data-stu-id="6dcc9-165">Track user's sign in state</span></span>
 
-<span data-ttu-id="149e1-166">若要跟踪应用程序中的用户登录状态，你需要将 React 和挂钩与提供程序 `useState` `useEffect` 事件处理程序结合使用。</span><span class="sxs-lookup"><span data-stu-id="149e1-166">To track the user's sign in state in your application, you will use the React `useState` and `useEffect` hooks in combination with provider event handlers.</span></span>
+<span data-ttu-id="6dcc9-166">若要跟踪应用程序中的用户登录状态，你需要将 React 和挂钩与提供程序 `useState` `useEffect` 事件处理程序结合使用。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-166">To track the user's sign in state in your application, you will use the React `useState` and `useEffect` hooks in combination with provider event handlers.</span></span>
 
-1. <span data-ttu-id="149e1-167">在代码编辑器中，打开 **src/App.tsx** 文件并扩展现有 React `import` 语句。</span><span class="sxs-lookup"><span data-stu-id="149e1-167">In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.</span></span>
+1. <span data-ttu-id="6dcc9-167">在代码编辑器中，打开 **src/App.tsx** 文件并扩展现有 React `import` 语句。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-167">In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.</span></span>
 
     ```TypeScript
     import React, { useState, useEffect } from 'react';
     ```
 
-1. <span data-ttu-id="149e1-168">通过将 `Provider` 和 `ProviderState` 类型添加到 `mgt-element` 导入，从 导入 。</span><span class="sxs-lookup"><span data-stu-id="149e1-168">Import the `Provider` and `ProviderState` types from `mgt-element`, by adding to imports.</span></span>
+1. <span data-ttu-id="6dcc9-168">通过将 `Provider` 和 `ProviderState` 类型添加到 `mgt-element` 导入，从 导入 。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-168">Import the `Provider` and `ProviderState` types from `mgt-element`, by adding to imports.</span></span>
 
     ```TypeScript
     import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
-1. <span data-ttu-id="149e1-169">添加名为 的自定义函数，以在应用程序中跟踪 `useIsSignedIn` 用户的登录状态。</span><span class="sxs-lookup"><span data-stu-id="149e1-169">Add a custom function named `useIsSignedIn` that enables tracking the user's sign in state in your application.</span></span>
+1. <span data-ttu-id="6dcc9-169">添加名为 的自定义函数，以在应用程序中跟踪 `useIsSignedIn` 用户的登录状态。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-169">Add a custom function named `useIsSignedIn` that enables tracking the user's sign in state in your application.</span></span>
 
     ```TypeScript
     function useIsSignedIn(): [boolean] {
@@ -234,27 +234,27 @@ export default App;
     }
     ```
 
-<span data-ttu-id="149e1-170">此函数执行两项操作。</span><span class="sxs-lookup"><span data-stu-id="149e1-170">This function does two things.</span></span> <span data-ttu-id="149e1-171">首先，使用React `useState` 挂钩，它可以在组件内启用跟踪状态。</span><span class="sxs-lookup"><span data-stu-id="149e1-171">First, using the React `useState` hook, it enables tracking state inside your component.</span></span> <span data-ttu-id="149e1-172">只要状态发生更改，React将重新呈现组件。</span><span class="sxs-lookup"><span data-stu-id="149e1-172">Whenever the state changes, React will re-render your component.</span></span> <span data-ttu-id="149e1-173">其次，使用 React 挂钩，它通过跟踪 Microsoft Graph Toolkit 提供程序中的更改并在必要时更新组件来扩展 `useEffect` 组件的生命周期。</span><span class="sxs-lookup"><span data-stu-id="149e1-173">Second, using the React `useEffect` hook, it extends the component's lifecycle by tracking changes in the Microsoft Graph Toolkit provider and updating the component if necessary.</span></span>
+<span data-ttu-id="6dcc9-170">此函数执行两项操作。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-170">This function does two things.</span></span> <span data-ttu-id="6dcc9-171">首先，使用React `useState` 挂钩，它可以在组件内启用跟踪状态。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-171">First, using the React `useState` hook, it enables tracking state inside your component.</span></span> <span data-ttu-id="6dcc9-172">只要状态发生更改，React将重新呈现组件。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-172">Whenever the state changes, React will re-render your component.</span></span> <span data-ttu-id="6dcc9-173">其次，使用 React 挂钩，它通过跟踪 Microsoft Graph Toolkit 提供程序中的更改并在必要时更新组件来扩展 `useEffect` 组件的生命周期。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-173">Second, using the React `useEffect` hook, it extends the component's lifecycle by tracking changes in the Microsoft Graph Toolkit provider and updating the component if necessary.</span></span>
 
-#### <a name="load-users-calendar-if-user-is-signed-in"></a><span data-ttu-id="149e1-174">如果用户已登录，则加载用户的日历</span><span class="sxs-lookup"><span data-stu-id="149e1-174">Load user's calendar if user is signed in</span></span>
+#### <a name="load-users-calendar-if-user-is-signed-in"></a><span data-ttu-id="6dcc9-174">如果用户已登录，则加载用户的日历</span><span class="sxs-lookup"><span data-stu-id="6dcc9-174">Load user's calendar if user is signed in</span></span>
 
-<span data-ttu-id="149e1-175">现在，在应用程序中跟踪用户的登录状态，可以在用户登录后显示其日历。</span><span class="sxs-lookup"><span data-stu-id="149e1-175">Now that you track the user's sign in state in your application, you can show their calendar after they signed in.</span></span>
+<span data-ttu-id="6dcc9-175">现在，在应用程序中跟踪用户的登录状态，可以在用户登录后显示其日历。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-175">Now that you track the user's sign in state in your application, you can show their calendar after they signed in.</span></span>
 
-1. <span data-ttu-id="149e1-176">在代码编辑器中，打开 **src/App.tsx** 文件，然后使用"议程"组件 `import` 扩展 **组件** 语句。</span><span class="sxs-lookup"><span data-stu-id="149e1-176">In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Agenda** component.</span></span>
+1. <span data-ttu-id="6dcc9-176">在代码编辑器中，打开 **src/App.tsx** 文件，然后使用"议程"组件 `import` 扩展 **组件** 语句。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-176">In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Agenda** component.</span></span>
 
     ```TypeScript
     import { Agenda, Login } from '@microsoft/mgt-react';
     ```
 
-1. <span data-ttu-id="149e1-177">接下来，在 **App** 函数内，添加：</span><span class="sxs-lookup"><span data-stu-id="149e1-177">Next, inside the **App** function, add:</span></span>
+1. <span data-ttu-id="6dcc9-177">接下来，在 **App** 函数内，添加：</span><span class="sxs-lookup"><span data-stu-id="6dcc9-177">Next, inside the **App** function, add:</span></span>
 
     ```TypeScript
     const [isSignedIn] = useIsSignedIn();
     ```
 
-    <span data-ttu-id="149e1-178">这将定义一个布尔常量，该常量可用于确定用户当前是否已 `isSignedIn` 登录到您的应用程序。</span><span class="sxs-lookup"><span data-stu-id="149e1-178">This defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.</span></span>
+    <span data-ttu-id="6dcc9-178">这将定义一个布尔常量，该常量可用于确定用户当前是否已 `isSignedIn` 登录到您的应用程序。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-178">This defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.</span></span>
 
-1. <span data-ttu-id="149e1-179">使用附加和 Microsoft `return` Graph Toolkit 组件扩展 `div` 子句的内容。</span><span class="sxs-lookup"><span data-stu-id="149e1-179">Extend the contents of the `return` clause with an additional `div` and the Microsoft Graph Toolkit Agenda component.</span></span>
+1. <span data-ttu-id="6dcc9-179">使用附加和 Microsoft `return` Graph Toolkit 组件扩展 `div` 子句的内容。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-179">Extend the contents of the `return` clause with an additional `div` and the Microsoft Graph Toolkit Agenda component.</span></span>
 
     ```TypeScript
     <div>
@@ -263,7 +263,7 @@ export default App;
     </div>
     ```
 
-<span data-ttu-id="149e1-180">通过这些更改 **，src/App.tsx** 文件应如下所示。</span><span class="sxs-lookup"><span data-stu-id="149e1-180">With these changes, the **src/App.tsx** file should look like the following.</span></span>
+<span data-ttu-id="6dcc9-180">通过这些更改 **，src/App.tsx** 文件应如下所示。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-180">With these changes, the **src/App.tsx** file should look like the following.</span></span>
 
 ```TypeScript
 import { Providers, ProviderState } from '@microsoft/mgt';
@@ -310,19 +310,19 @@ function App() {
 export default App;
 ```
 
-### <a name="test-showing-users-calendar-after-they-signed-in"></a><span data-ttu-id="149e1-181">在用户登录后显示用户日历的测试</span><span class="sxs-lookup"><span data-stu-id="149e1-181">Test showing user's calendar after they signed in</span></span>
+### <a name="test-showing-users-calendar-after-they-signed-in"></a><span data-ttu-id="6dcc9-181">在用户登录后显示用户日历的测试</span><span class="sxs-lookup"><span data-stu-id="6dcc9-181">Test showing user's calendar after they signed in</span></span>
 
-<span data-ttu-id="149e1-182">通过这些更改，使用 Microsoft 帐户登录应用程序后，应该可以看到日历。</span><span class="sxs-lookup"><span data-stu-id="149e1-182">With these changes, after signing in to your application with your Microsoft account, you should see your calendar.</span></span>
+<span data-ttu-id="6dcc9-182">通过这些更改，使用 Microsoft 帐户登录应用程序后，应该可以看到日历。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-182">With these changes, after signing in to your application with your Microsoft account, you should see your calendar.</span></span>
 
-1. <span data-ttu-id="149e1-183">To see the changes， close the browser and open it again， and go to `http://localhost:3000` .</span><span class="sxs-lookup"><span data-stu-id="149e1-183">To see the changes, close the browser and open it again, and go to `http://localhost:3000`.</span></span> <span data-ttu-id="149e1-184">这样做是因为你更改了 属性的值，这会影响从 `scopes` Azure AD 请求的访问令牌。</span><span class="sxs-lookup"><span data-stu-id="149e1-184">You do this because you changed the value of the `scopes` property, which affects the access token that you request from Azure AD.</span></span>
-1. <span data-ttu-id="149e1-185">选择 **"登录"** 按钮，然后使用你的 Microsoft 帐户登录。</span><span class="sxs-lookup"><span data-stu-id="149e1-185">Choose the **Sign In** button and sign in using your Microsoft account.</span></span> <span data-ttu-id="149e1-186">请注意同意提示中请求的权限列表的新增内容。</span><span class="sxs-lookup"><span data-stu-id="149e1-186">Notice the additions to the list of permissions requested in the consent prompt.</span></span> <span data-ttu-id="149e1-187">这是因为在 属性中包含了其他 `scope` 权限。</span><span class="sxs-lookup"><span data-stu-id="149e1-187">This is because you included additional permissions in the `scope` property.</span></span>
-1. <span data-ttu-id="149e1-188">同意使用应用程序后，应看到有关当前用户及其日历的信息。</span><span class="sxs-lookup"><span data-stu-id="149e1-188">After consenting to the use of the application, you should see information about the current user and their calendar.</span></span>
+1. <span data-ttu-id="6dcc9-183">To see the changes， close the browser and open it again， and go to `http://localhost:3000` .</span><span class="sxs-lookup"><span data-stu-id="6dcc9-183">To see the changes, close the browser and open it again, and go to `http://localhost:3000`.</span></span> <span data-ttu-id="6dcc9-184">这样做是因为你更改了 属性的值，这会影响从 `scopes` Azure AD 请求的访问令牌。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-184">You do this because you changed the value of the `scopes` property, which affects the access token that you request from Azure AD.</span></span>
+1. <span data-ttu-id="6dcc9-185">选择 **"登录"** 按钮，然后使用你的 Microsoft 帐户登录。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-185">Choose the **Sign In** button and sign in using your Microsoft account.</span></span> <span data-ttu-id="6dcc9-186">请注意同意提示中请求的权限列表的新增内容。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-186">Notice the additions to the list of permissions requested in the consent prompt.</span></span> <span data-ttu-id="6dcc9-187">这是因为在 属性中包含了其他 `scope` 权限。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-187">This is because you included additional permissions in the `scope` property.</span></span>
+1. <span data-ttu-id="6dcc9-188">同意使用应用程序后，应看到有关当前用户及其日历的信息。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-188">After consenting to the use of the application, you should see information about the current user and their calendar.</span></span>
 
 ![已完成的应用](../images/mgt-finished-app.png)
 
-## <a name="next-steps"></a><span data-ttu-id="149e1-190">后续步骤</span><span class="sxs-lookup"><span data-stu-id="149e1-190">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="6dcc9-190">后续步骤</span><span class="sxs-lookup"><span data-stu-id="6dcc9-190">Next steps</span></span>
 
-- <span data-ttu-id="149e1-191">请参阅[Microsoft Graph Toolkit](../overview.md)中Graph Toolkit。</span><span class="sxs-lookup"><span data-stu-id="149e1-191">See [what's in the Microsoft Graph Toolkit](../overview.md).</span></span>
-- <span data-ttu-id="149e1-192">尝试在运动场中的 [组件](https://mgt.dev)。</span><span class="sxs-lookup"><span data-stu-id="149e1-192">Try out the components in the [playground](https://mgt.dev).</span></span>
-- <span data-ttu-id="149e1-193">在 Stack [Overflow 上提问](https://aka.ms/mgt-question)。</span><span class="sxs-lookup"><span data-stu-id="149e1-193">Ask a question on [Stack Overflow](https://aka.ms/mgt-question).</span></span>
-- <span data-ttu-id="149e1-194">报告 Bug 或将功能请求[保留GitHub。](https://aka.ms/mgt)</span><span class="sxs-lookup"><span data-stu-id="149e1-194">Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).</span></span>
+- <span data-ttu-id="6dcc9-191">请参阅[Microsoft Graph Toolkit](../overview.md)中Graph Toolkit。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-191">See [what's in the Microsoft Graph Toolkit](../overview.md).</span></span>
+- <span data-ttu-id="6dcc9-192">在[样本](https://mgt.dev)中试用组件。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-192">Try out the components in the [playground](https://mgt.dev).</span></span>
+- <span data-ttu-id="6dcc9-193">在 [Stack Overflow](https://aka.ms/mgt-question) 上提问。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-193">Ask a question on [Stack Overflow](https://aka.ms/mgt-question).</span></span>
+- <span data-ttu-id="6dcc9-194">在 [GitHub](https://aka.ms/mgt) 上报告 bug 或提出功能请求。</span><span class="sxs-lookup"><span data-stu-id="6dcc9-194">Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).</span></span>
