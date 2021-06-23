@@ -1,16 +1,16 @@
 ---
 title: 从团队中删除应用
 description: 从指定团队卸载应用。
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d51730971ad26bb7f5de5479d4c95aaa874fd00
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 768c7e58ff55ff01b48462c3ff621a95f066a247
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690647"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059456"
 ---
 # <a name="remove-app-from-team"></a>从团队中删除应用
 
@@ -28,7 +28,7 @@ ms.locfileid: "49690647"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteForTeam、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

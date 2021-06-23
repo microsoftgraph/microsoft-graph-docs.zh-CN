@@ -2,15 +2,15 @@
 title: aadUserConversationMember 资源类型
 description: 表示聊天或频道中的 Azure Active Directory 用户。
 localization_priority: Priority
-author: laujan
+author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: aeb5dd5e21019b06f8757b37505d6e5e9f1a4354
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 6632dad56f76b4747285eb1df9f69046b1de3cc1
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777389"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060297"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>aadUserConversationMember 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "50777389"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 只读。 用户的唯一 ID。|
+|id|String| 只读。用户的唯一 ID。|
 |displayName| string | 用户的显示名称。 |
 |角色| string 集合 | 该用户的角色。 |
 |userId| string | 用户的 GUID。 |

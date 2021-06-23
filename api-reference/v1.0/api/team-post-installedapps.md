@@ -1,22 +1,22 @@
 ---
 title: 向团队添加应用
 description: 将应用安装到指定的团队。
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 19aa219296109199e0603856605b90758253698a
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 2131639eaf6b5ecda41b764a17049c4b61347d1e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691007"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059381"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
 命名空间：microsoft.graph
 
-将 [应用](../resources/teamsapp.md) 安装到指定的 [团队](../resources/team.md)。
+将 [应用安装到](../resources/teamsapp.md) 指定的 [团队](../resources/team.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "49691007"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteForTeam、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /teams/{team-id}/installedApps
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|teamsApp|字符串|要添加的应用的 ID。|
+|teamsApp|String|要添加的应用的 ID。|
 
 ## <a name="response"></a>响应
 

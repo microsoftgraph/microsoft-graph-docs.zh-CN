@@ -2,15 +2,15 @@
 title: conversationMember 资源类型
 description: 表示对话中的用户。
 localization_priority: Normal
-author: laujan
+author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 14a70fcc6492ec143fa2f4e892438805d3526d60
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c82f7e1ec927c73ad41771fc00e013dda1755a80
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777718"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060306"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "50777718"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 只读。 用户的唯一 ID。|
+|id|String| 只读。用户的唯一 ID。|
 |displayName| string | 用户的显示名称。 |
 |角色| string 集合 | 该用户的角色。 |
 |visibleHistoryStartDateTime| DateTimeOffset | 表示对话历史久远程度的时间戳与对话成员共享。 此属性只对聊天成员可设置。 |

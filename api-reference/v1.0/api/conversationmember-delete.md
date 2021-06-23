@@ -1,22 +1,22 @@
 ---
 title: 删除 conversationMember
 description: 从频道中删除 conversationMember。
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 05dd3377e5a3161a38d9db1d56de7bba7ccf9af4
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 2b0489387f4822296788c417536332c2fef387ad
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848323"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060597"
 ---
 # <a name="delete-conversationmember"></a>删除 conversationMember
 
 命名空间：microsoft.graph
 
-从[频道](../resources/channel.md)中删除[conversationMember](../resources/conversationmember.md) 。
+从频道[中删除 conversationMember。](../resources/conversationmember.md) [](../resources/channel.md)
 
 
 ## <a name="permissions"></a>权限

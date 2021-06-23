@@ -1,16 +1,16 @@
 ---
 title: 为用户卸载应用
 description: 卸载指定用户的个人范围内的应用。
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d80f0e6010f1ee7961c2efdc85bf0ed6b1b8a69f
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: b8bee27b4179cad4d2451ec61fda7e8304142de9
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696252"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060325"
 ---
 # <a name="uninstall-app-for-user"></a>为用户卸载应用
 

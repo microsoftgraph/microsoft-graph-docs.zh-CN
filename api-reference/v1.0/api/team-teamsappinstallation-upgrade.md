@@ -1,22 +1,22 @@
 ---
-title: teamsAppInstallation：升级
+title: teamsAppInstallation in team： upgrade
 description: 升级团队中的应用安装
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1cab650a63c88762e3aa08d77c8e720b47d3751d
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 4c3df922e9fc15238bb5531fc38a935f613b1c98
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690511"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060021"
 ---
-# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
+# <a name="teamsappinstallation-in-team-upgrade"></a>teamsAppInstallation in team： upgrade
 
 命名空间：microsoft.graph
 
-将[团队中的应用](../resources/teamsappinstallation.md)[安装升级到](../resources/team.md)应用的最新版本。
+将 [团队中的](../resources/teamsappinstallation.md) 应用 [安装升级到](../resources/team.md) 应用的最新版本。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "49690511"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteForTeam、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | TeamsAppInstallation.ReadWriteForTeam.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

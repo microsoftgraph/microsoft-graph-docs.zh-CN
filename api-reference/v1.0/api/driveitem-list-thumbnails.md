@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 检索 DriveItem 资源的 ThumbnailSet 资源集合。
 doc_type: apiPageType
-ms.openlocfilehash: 9746221fe0aed4b606019250bd63f65d3972ebc3
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 63ee68ade1a314a34cbb5ee778e5eccaec413a62
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293041"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059367"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -57,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 此方法支持使用 `$select`[OData 查询参数](/graph/query-parameters)自定义响应。
 
-此外，此方法还支持通过追加查询参数来检索具有原始方向 EXIF 值且没有应用旋转的 `originalOrientation=true` 缩略图。
+此外，此方法还支持通过追加查询参数来检索包含原始方向 EXIF 值且没有应用旋转的 `originalOrientation=true` 缩略图。
 目前仅 OneDrive 个人版支持此操作。
 
 ## <a name="response"></a>响应
@@ -315,7 +315,7 @@ Content-type: application/json
 <!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
-GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
+GET /me/drive/items/{item-id}/thumbnails?select=c300x400_crop
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-custom-size-csharp-snippets.md)]
@@ -348,7 +348,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "0",
-      "c300x400_Crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
+      "c300x400_crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
     }
   ]
 }
@@ -361,7 +361,7 @@ Content-Type: application/json
 | 缩略图标识符 | 分辨率             | 纵横比 | 说明                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | c300x400             | 300x400 像素框 | 原始大小     | 生成适应在 300x400 像素框中显示的缩略图，纵横比不变                                                                 |
-| c300x400_Crop        | 300x400                | 已裁剪      | 生成 300x400 像素缩略图。 具体方式为，重设图像大小以填充 300x400 框，并裁剪超出框外的内容。 |
+| c300x400_crop        | 300x400                | 已裁剪      | 生成 300x400 像素缩略图。 具体方式为，重设图像大小以填充 300x400 框，并裁剪超出框外的内容。 |
 
 **注意：** 返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。
 在某些情况下，如果缩略图已经存在并且可以轻松缩放来匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。
@@ -390,6 +390,6 @@ SharePoint Server 2016 不支持缩略图。
   "section": "documentation",
   "suppressions": [
   ],
-  "tocPath": "Items/Thumbnails"
+  "tocPath&quot;: &quot;Items/Thumbnails"
 } -->
 

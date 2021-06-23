@@ -5,16 +5,31 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 1db4fbafde269d5e53799ec986ccd6c6631970ae
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 0e16144337b2130925ce455f5bfba9127728a0fe
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911611"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082305"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="lifecycleeventtype-values"></a>lifecycleEventType 值
+
+|成员|
+|:---|
+|错过|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### <a name="changetype-values"></a>changeType 值
+
+|成员|
+|:---|
+|clientIpAddress|
+|authenticatorApp提供|
 
 ### <a name="consentrequestfilterbycurrentuseroptions-values"></a>consentRequestFilterByCurrentUserOptions 值 
 
@@ -342,7 +357,7 @@ ms.locfileid: "52911611"
 |:---|
 |无|
 |SecurityGroup|
-|全部|
+|所有|
 
 ### <a name="recipientscopetype-values"></a>recipientScopeType 值
 
@@ -751,7 +766,7 @@ ms.locfileid: "52911611"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | 参考
 
 

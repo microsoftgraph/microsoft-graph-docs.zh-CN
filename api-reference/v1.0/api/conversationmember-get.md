@@ -1,16 +1,16 @@
 ---
 title: 获取 conversationMember
 description: 检索聊天或频道成员。
-author: laujan
+author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5b2f03bfc9375b38a4901d7f9a24e315420066ec
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 8467e8ba0b32179da555f04cf94421bf0ea44a5d
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941247"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060611"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 

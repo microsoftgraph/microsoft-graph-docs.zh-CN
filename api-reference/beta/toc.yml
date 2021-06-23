@@ -1828,7 +1828,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -10289,7 +10289,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -13611,6 +13611,25 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: 获取托管内容
                 href: api/chatmessagehostedcontent-get.md
+          - name: 标记
+            href: resources/teamworktag.md
+            items:
+              - name: 列出
+                href: api/teamworktag-list.md
+              - name: 创建
+                href: api/teamworktag-post.md
+              - name: 获取
+                href: api/teamworktag-get.md
+              - name: 更新
+                href: api/teamworktag-update.md
+              - name: 删除
+                href: api/teamworktag-delete.md
+              - name: 列出成员
+                href: api/teamworktagmember-list.md
+              - name: 获取成员
+                href: api/teamworktagmember-get.md
+              - name: 删除成员
+                href: api/teamworktagmember-delete.md
           - name: 应用
             items:
               - name: 目录中的应用程序

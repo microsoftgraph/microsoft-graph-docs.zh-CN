@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: ea456442a4fdc8936d8ff82ac8019bdf788953ab
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 8debe063c768c66061e16fd89a2e46f6bc7b6d9b
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941415"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082284"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -44,21 +44,21 @@ ms.locfileid: "52941415"
 
 | 属性 | 类型 | 说明 | 支持的资源 |
 |:---------|:-----|:------------|:--------------|
-| changeType | string | 必填。 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 | 全部 |
-| notificationUrl | string | 必填。将接收变更通知的终结点 URL。该 URL 必须使用 HTTPS 协议。 | 全部 |
-| lifecycleNotificationUrl | string | 接收生命周期通知（包括 `subscriptionRemoved` 和 `missed` 通知）的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-lifecycle)有关 Outlook 资源如何使用生命周期通知的详细信息。 | 全部 |
-| resource | string | 必需。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。| 全部 |
-| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必填。指定 webhook 订阅过期的日期和时间。时间使用 UTC 格式，也可以是从订阅创建（因订阅资源不同而异）开始的一段时间。请参阅下表，了解支持的最长订阅有效期。 | 全部 |
-| clientState | string | 可选。 指定服务为每个变更通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个变更通知一起接收的 `clientState` 属性值，客户端可以检查变更通知是否是由服务发送。 | 全部 |
-| id | string | 订阅的唯一标识符。只读。 | 全部 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 | 全部 |
+| changeType | string | 必填。 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 | 全部 |
+| clientState | string | 可选。 指定服务为每个变更通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个变更通知一起接收的 `clientState` 属性值，客户端可以检查变更通知是否是由服务发送。 | 全部 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果此应用使用委派权限来创建订阅，则此字段包含该应用代表其调用的已登录用户的 ID。 如果此应用使用应用程序权限，则此字段包含对应于该应用的服务主体的 ID。 只读。 | 全部 |
-| includeResourceData | 布尔值 | 设置为 `true` 时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（例如聊天消息的内容）。 可选。 | 全部 |
 | encryptionCertificate | string | 带有公钥的证书 的base64 编码表示形式，用于对更改通知中的资源数据进行加密。 可选。 **includeResourceData** 为 true 时是必需的。 | 全部 |
 | encryptionCertificateId | string | 应用程序提供的自定义标识符，以帮助识别解密资源数据所需的证书。 可选的。| 全部 |
+| expirationDateTime | DateTimeOffset | 必填。指定 webhook 订阅过期的日期和时间。时间使用 UTC 格式，也可以是从订阅创建（因订阅资源不同而异）开始的一段时间。请参阅下表，了解支持的最长订阅有效期。 | 全部 |
+| id | string | 订阅的唯一标识符。只读。 | 全部 |
+| includeResourceData | 布尔值 | 设置为 `true` 时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（例如聊天消息的内容）。 可选。 | 全部 |
 | latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl** 指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 | 全部 |
+| lifecycleNotificationUrl | string | 接收生命周期通知（包括 `subscriptionRemoved` 和 `missed` 通知）的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-lifecycle)有关 Outlook 资源如何使用生命周期通知的详细信息。 | 全部 |
 | notificationContentType | 字符串 | MS Graph 所需的内容类型为更改支持的资源类型变更通知。 默认内容类型为“application/json”内容类型。 | 全部 |
 | notificationQueryOptions | 字符串 | 用于指定目标资源值的 OData 查询选项。 当资源达到与此处所提供的查询选项相匹配的状态时，客户端会收到通知。 有了订阅创建有效负载中的新属性以及所有现有属性后，每当资源达到 “notificationQueryOptions” 属性中提到的所需状态时，Webhook 就会发送通知，例如当打印作业完成时、当打印作业资源 `isFetchable` 属性值变为 true 时，等等。 | [通用打印服务](/graph/universal-print-webhook-notifications) |
+| notificationUrl | string | 必填。将接收变更通知的终结点 URL。该 URL 必须使用 HTTPS 协议。 | 全部 |
+| resource | string | 必需。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。| 全部 |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
 

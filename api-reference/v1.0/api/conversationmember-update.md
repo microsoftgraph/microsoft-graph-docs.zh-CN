@@ -1,16 +1,16 @@
 ---
 title: 更新 conversationMember
 description: 更新团队或频道中 conversationMember 的角色。
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 974ae555623975c3a6a58aa9f75a5db8702d4f0d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 094027c7c62e6077c3eced8e713cfe16e84c3444
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048776"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060585"
 ---
 # <a name="update-conversationmember"></a>更新 conversationMember
 

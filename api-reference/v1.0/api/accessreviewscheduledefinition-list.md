@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dd60a89a7aeb43c4817fa9b67bcf3886425f166a
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 7ee213732d115429d7e069fe1b7cfe8f981e5148
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031054"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059377"
 ---
 # <a name="list-accessreviewscheduledefinitions"></a>列出 accessReviewScheduleDefinitions
 命名空间：microsoft.graph
@@ -107,10 +107,12 @@ Content-type: application/json
             "id": "98dcebed-c7f6-46f4-bcf3-4a3fccdb3e2a",
             "displayName": "Access Review",
             "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
                 "queryType": "MicrosoftGraph"
             },
             "instanceEnumerationScope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b",
                 "queryType": "MicrosoftGraph"
             },
