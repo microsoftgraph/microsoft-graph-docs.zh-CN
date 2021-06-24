@@ -5,54 +5,55 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d682128fb6f50155b7748edb1b4987368e2df5b0
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 5ca3d7d267551bdeebb7a34a1624a4f1a4caea3f
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870218"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107611"
 ---
-# <a name="educationassignment-setupresourcesfolder"></a><span data-ttu-id="ffa46-103">educationAssignment： setUpResourcesFolder</span><span class="sxs-lookup"><span data-stu-id="ffa46-103">educationAssignment: setUpResourcesFolder</span></span>
+# <a name="educationassignment-setupresourcesfolder"></a><span data-ttu-id="17c1c-103">educationAssignment： setUpResourcesFolder</span><span class="sxs-lookup"><span data-stu-id="17c1c-103">educationAssignment: setUpResourcesFolder</span></span>
 
-<span data-ttu-id="ffa46-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ffa46-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="17c1c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="17c1c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ffa46-105">创建一SharePoint文件夹，以上传给定[educationAssignment 的文件](../resources/educationassignment.md)。</span><span class="sxs-lookup"><span data-stu-id="ffa46-105">Create a SharePoint folder to upload files for a given [educationAssignment](../resources/educationassignment.md).</span></span> 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ffa46-106">教师确定要上载到作业文件夹中的资源。</span><span class="sxs-lookup"><span data-stu-id="ffa46-106">The teacher determines the resources to upload in the assignment's folder.</span></span> 
+<span data-ttu-id="17c1c-105">创建一SharePoint文件夹，以上传给定[educationAssignment 的文件](../resources/educationassignment.md)。</span><span class="sxs-lookup"><span data-stu-id="17c1c-105">Create a SharePoint folder to upload files for a given [educationAssignment](../resources/educationassignment.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="ffa46-107">权限</span><span class="sxs-lookup"><span data-stu-id="ffa46-107">Permissions</span></span>
-<span data-ttu-id="ffa46-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ffa46-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="17c1c-106">教师确定要上载到作业文件夹中的资源。</span><span class="sxs-lookup"><span data-stu-id="17c1c-106">The teacher determines the resources to upload in the assignment's folder.</span></span> 
 
-|<span data-ttu-id="ffa46-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ffa46-110">Permission type</span></span>      | <span data-ttu-id="ffa46-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ffa46-111">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="17c1c-107">权限</span><span class="sxs-lookup"><span data-stu-id="17c1c-107">Permissions</span></span>
+<span data-ttu-id="17c1c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="17c1c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="17c1c-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="17c1c-110">Permission type</span></span>      | <span data-ttu-id="17c1c-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="17c1c-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ffa46-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ffa46-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="ffa46-113">EduAssignments.ReadBasic、EduAssignments.Read</span><span class="sxs-lookup"><span data-stu-id="ffa46-113">EduAssignments.ReadBasic, EduAssignments.Read</span></span>  |
-|<span data-ttu-id="ffa46-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ffa46-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="ffa46-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ffa46-115">Not supported.</span></span>  |
-|<span data-ttu-id="ffa46-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ffa46-116">Application</span></span> | <span data-ttu-id="ffa46-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="ffa46-117">Not supported.</span></span> | 
+|<span data-ttu-id="17c1c-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="17c1c-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="17c1c-113">EduAssignments.ReadBasic、EduAssignments.Read</span><span class="sxs-lookup"><span data-stu-id="17c1c-113">EduAssignments.ReadBasic, EduAssignments.Read</span></span>  |
+|<span data-ttu-id="17c1c-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="17c1c-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="17c1c-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="17c1c-115">Not supported.</span></span>  |
+|<span data-ttu-id="17c1c-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="17c1c-116">Application</span></span> | <span data-ttu-id="17c1c-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="17c1c-117">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="ffa46-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ffa46-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="17c1c-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="17c1c-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
-
 ```
-## <a name="request-headers"></a><span data-ttu-id="ffa46-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="ffa46-119">Request headers</span></span>
-| <span data-ttu-id="ffa46-120">标头</span><span class="sxs-lookup"><span data-stu-id="ffa46-120">Header</span></span>       | <span data-ttu-id="ffa46-121">值</span><span class="sxs-lookup"><span data-stu-id="ffa46-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="17c1c-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="17c1c-119">Request headers</span></span>
+| <span data-ttu-id="17c1c-120">标头</span><span class="sxs-lookup"><span data-stu-id="17c1c-120">Header</span></span>       | <span data-ttu-id="17c1c-121">值</span><span class="sxs-lookup"><span data-stu-id="17c1c-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="ffa46-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ffa46-122">Authorization</span></span>  | <span data-ttu-id="ffa46-p102">持有者 `{token}`。必需。</span><span class="sxs-lookup"><span data-stu-id="ffa46-p102">Bearer `{token}`. Required.</span></span>  |
+| <span data-ttu-id="17c1c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="17c1c-122">Authorization</span></span>  | <span data-ttu-id="17c1c-p102">持有者 `{token}`。必需。</span><span class="sxs-lookup"><span data-stu-id="17c1c-p102">Bearer `{token}`. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ffa46-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="ffa46-125">Request body</span></span>
-<span data-ttu-id="ffa46-126">你需要提供一个空 json `{}` 作为此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ffa46-126">You need to provide an empty json `{}` as request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="ffa46-127">响应</span><span class="sxs-lookup"><span data-stu-id="ffa46-127">Response</span></span>
-<span data-ttu-id="ffa46-128">如果成功，此方法在请求正文中返回 200 Ok 响应代码和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 对象。</span><span class="sxs-lookup"><span data-stu-id="ffa46-128">If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="17c1c-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="17c1c-125">Request body</span></span>
+<span data-ttu-id="17c1c-126">你需要提供一个空 json `{}` 作为此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="17c1c-126">You need to provide an empty json `{}` as request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="17c1c-127">响应</span><span class="sxs-lookup"><span data-stu-id="17c1c-127">Response</span></span>
+<span data-ttu-id="17c1c-128">如果成功，此方法在请求正文中返回 200 Ok 响应代码和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 对象。</span><span class="sxs-lookup"><span data-stu-id="17c1c-128">If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ffa46-129">示例</span><span class="sxs-lookup"><span data-stu-id="ffa46-129">Example</span></span>
-<span data-ttu-id="ffa46-130">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="ffa46-130">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="17c1c-129">示例</span><span class="sxs-lookup"><span data-stu-id="17c1c-129">Example</span></span>
+<span data-ttu-id="17c1c-130">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="17c1c-130">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="ffa46-131">请求</span><span class="sxs-lookup"><span data-stu-id="ffa46-131">Request</span></span>
-<span data-ttu-id="ffa46-132">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="ffa46-132">The following is an example of a request.</span></span>
+### <a name="request"></a><span data-ttu-id="17c1c-131">请求</span><span class="sxs-lookup"><span data-stu-id="17c1c-131">Request</span></span>
+<span data-ttu-id="17c1c-132">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="17c1c-132">The following is an example of a request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="ffa46-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="ffa46-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="17c1c-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="17c1c-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationassignment_setupresourcesfolder"
@@ -64,27 +65,27 @@ Content-type: application/json
 {
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ffa46-134">C#</span><span class="sxs-lookup"><span data-stu-id="ffa46-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="17c1c-134">C#</span><span class="sxs-lookup"><span data-stu-id="17c1c-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-setupresourcesfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ffa46-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ffa46-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="17c1c-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="17c1c-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-setupresourcesfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ffa46-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ffa46-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="17c1c-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="17c1c-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-setupresourcesfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ffa46-137">Java</span><span class="sxs-lookup"><span data-stu-id="ffa46-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="17c1c-137">Java</span><span class="sxs-lookup"><span data-stu-id="17c1c-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-setupresourcesfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ---
-### <a name="response"></a><span data-ttu-id="ffa46-138">响应</span><span class="sxs-lookup"><span data-stu-id="ffa46-138">Response</span></span>
-<span data-ttu-id="ffa46-139">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="ffa46-139">The following is an example of a response.</span></span> 
+### <a name="response"></a><span data-ttu-id="17c1c-138">响应</span><span class="sxs-lookup"><span data-stu-id="17c1c-138">Response</span></span>
+<span data-ttu-id="17c1c-139">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="17c1c-139">The following is an example of a response.</span></span> 
 
 <!-- {
   "blockType": "response",
