@@ -428,8 +428,13 @@ items:
             href: teams-licenses.md
           - name: 使用机器人发送主动邮件
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: 发送活动源通知
+          - name: 活动源通知
             href: teams-send-activityfeednotifications.md
+            items:
+              - name: 发送活动源通知
+                href: teams-send-activityfeednotifications.md
+              - name: 最佳做法
+                href: activity-feed-notifications-best-practices.md
       - name: 待办任务
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -701,6 +706,8 @@ items:
                 href: toolkit/customize-components/style.md
               - name: 组件模板化
                 href: toolkit/customize-components/templates.md
+              - name: 正在处理事件
+                href: toolkit/customize-components/events.md
               - name: 在组件中缓存 Microsoft Graph 调用
                 href: toolkit/customize-components/cache.md
               - name: 本地化组件
