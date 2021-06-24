@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 95d0839341f158821eeb51f9aea252155462241d
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 2014b20abe0cdcc37c4bca2f1341aabe425b556c
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335665"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108878"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -41,7 +41,9 @@ ms.locfileid: "52335665"
 GET /users/{id | userPrincipalName}
 ```
 
-请注意，当 **userPrincipalName** 以 `$` 字符开头时，请删除 `/users` 后的斜杠 （/），并将 **userPrincipalName** 括在圆括号和单引号中。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#users)。
+>**注意：**
+> + 当 **userPrincipalName** 以 `$` 字符开头时，请删除 `/users` 后的斜杠 (/)，并将 **userPrincipalName** 放在圆括号和单引号中。例如 `/users('$AdeleVance@contoso.com')`。有关详细信息，请参阅“[已知问题](/graph/known-issues#users)”列表。
+> + 要使用 **userPrincipalName** 查询 B2B 用户，请对哈希 (#) 字符进行编码。 也就是说，将 `#` 符号替换为 `%23`。 例如，`/users/AdeleVance_adatum.com%23EXT%23@contoso.com`。
 
 对于登录用户：
 <!-- { "blockType": "ignored" } -->

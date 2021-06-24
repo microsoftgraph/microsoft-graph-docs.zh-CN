@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 883f23823c58b87e4969b10c96fde63be08058e9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 213860aa7a5b93247b1e98de8da2ace8528cd111
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046907"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107646"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -24,7 +24,7 @@ ms.locfileid: "52046907"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="for-applications"></a>对于应用程序：
 
@@ -61,7 +61,18 @@ GET /directory/deletedItems/microsoft.graph.user
 此 API 当前支持检索应用程序的对象类型 (microsoft.graph.application) 、组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 删除的项目。 类型指定为 URI 的必需部分。 不支持在没有类型的情况下调用 GET /directory/deleteditems。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$orderBy` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 
+
+### <a name="examples-using-the-orderby-odata-query-parameter"></a>使用 OData $orderBy参数的示例
+
+`$orderBy`在已删除的对象类型的 **deletedDateTime** **、displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将 [](/graph/aad-advanced-queries)高级查询参数 (**ConsistencyLevel** 标头设置为 ，并 `true` 添加 `$count=true` 查询字符串) 。
+
+| OData 转换 | 支持属性$orderBy | 示例 |
+| :--- | :--- | :--- |
+| microsoft.graph.user | deletedDateTime、displayName、userPrincipalName | /directory/deletedItems/microsoft.graph.user？$orderBy=userPrincipalName |
+| microsoft.graph.group | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.group？$orderBy=deletedDateTime asc&$count=true |
+| microsoft.graph.application | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.application？$orderBy=displayName |
+| microsoft.graph.device | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.device？$orderBy=deletedDateTime&$count=true |
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
