@@ -21,7 +21,7 @@ ms.locfileid: "53109075"
 
 此操作提供租户的所有订阅服务的运行状况报告。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

@@ -25,7 +25,7 @@ ms.locfileid: "53108724"
 |:-------------|:------------|:------------|
 |state|printerProcessingState|当前处理状态。 下表介绍了有效值。 只读。|
 |详细信息|printerProcessingStateDetail 集合|描述打印机为何当前状态的详细信息列表。 下表介绍了有效值。 只读。|
-|说明|字符串|打印机当前处理状态可读的说明。 只读。|
+|说明|String|打印机当前处理状态可读的说明。 只读。|
 
 ### <a name="printerprocessingstate-values"></a>printerProcessingState 值
 
