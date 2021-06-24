@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 984fff26922d2300b94af69f3263e2beaeab82f8
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: 13323ebf6560fc54c8fc22e26c4d6e97d6678d73
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703592"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108864"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -36,12 +36,15 @@ ms.locfileid: "52703592"
 |[添加架构扩展值](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |[创建 organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 通过发布到品牌集合创建新的 organizationalBrandingProperties。 |
 |[进行品牌打造](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) 集合 | 获取 organizationalBrandingProperties 对象集合。 |
+|[进行品牌打造](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) 集合 | 获取 organizationalBrandingProperties 对象的集合。 |
+|[activateService](../api/organization-activateservice.md) | 无 |  为组织激活服务。 |
 
-## <a name="properties"></a>属性 
+## <a name="properties"></a>属性
+
 | 属性 | 类型   | 说明 |
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 与租户相关的服务计划的集合。不可为空。 |
-| businessPhones | 字符串集合 | 组织的电话号码。 虽然这是字符串集合，但是只能为该属性设置一个号码。 |
+| businessPhones | String collection | 组织的电话号码。虽然这是字符串集合，但是只能为该属性设置一个号码。 |
 | 城市 | String | 组织地址所在的城市名称。 |
 | country | String | 组织地址所在的国家/地区名称。 |
 | countryLetterCode | String | 组织所在的国家/地区缩写。 |
@@ -72,8 +75,8 @@ ms.locfileid: "52703592"
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) 集合| 用于管理基于证书的身份验证配置的导航属性。 只能在集合中创建 certificateBasedAuthConfiguration 的单个实例。  |
 |extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展集合。 可为 NULL。| 
-|organizationalbranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) 集合| 为组织打造品牌。 可为 Null。|
-|settings|[organizationSettings](organizationsettings.md) | 检索 organizationSettings 对象的属性和关系。 可为 Null。|
+|organizationalbranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) 集合| 为组织打造品牌。可以为 null。|
+|设置|[organizationSettings](organizationsettings.md) | 检索 organizationSettings 对象的属性和关系。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ca939f59db77c8f9aab4d004f716ab2bd74623ee
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f776bd5ac5dad802a8c977cbe32842e619c74434
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052556"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107758"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -23,7 +23,7 @@ ms.locfileid: "52052556"
 
 ### <a name="batch-request"></a>批量请求
 
-也可以选择从网站中退出多个Delve并通过批处理请求禁用他们对整个组织的内容相关性的贡献。
+也可以选择退出通过批处理请求Delve用户。
 若要了解更多信息，请参阅 [JSON 批处理](/graph/json-batching)。
 
 >**重要** 提示：只有组织管理 [角色](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) 组的成员才能更新多个用户。 
@@ -65,7 +65,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|布尔值|设置为 true 将禁用委派对[Trending](../resources/insights-trending.md) API 的访问，并禁用用户对 Office Delve 中的文档的访问。 设置为 true 还会影响 Microsoft 365 中显示的内容的相关性-例如，SharePoint 主页中的"建议网站"和"发现"OneDrive for Business显示不太相关的结果。 此设置反映控件在[控件Office Delve。](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)|
+|contributionToContentDiscoveryDisabled|布尔值|设置为 true 可禁止用户Office Delve文档。 此设置反映控件在[控件Office Delve。](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)|
 
 ## <a name="example"></a>示例 
 
@@ -85,7 +85,7 @@ Content-length: 37
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK

@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 445569bf34eb2d826660fdd1b88143b04213836e
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 4bc5577cb6788467060874b4701e9d561731ac39
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082277"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107730"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -95,7 +95,7 @@ ms.locfileid: "53082277"
 
 |成员|
 |:---|
-|String|
+|字符串|
 |整数|
 |参考|
 |二进制|
@@ -2284,6 +2284,73 @@ ms.locfileid: "53082277"
 |成员|
 |:---|
 |principal|
+|unknownFutureValue|
+
+### <a name="posttype-values"></a>postType 值 
+
+|成员|
+|:---|
+|regular|
+|quick|
+|strategic|
+|unknownFutureValue|
+
+### <a name="servicehealthclassificationtype-values"></a>serviceHealthClassificationType 值 
+
+|成员|
+|:---|
+|advisory|
+|incident|
+|unknownFutureValue|
+
+### <a name="servicehealthorigin-values"></a>serviceHealthOrigin 值 
+
+|成员|
+|:---|
+|microsoft|
+|thirdParty|
+|customer|
+|unknownFutureValue|
+
+### <a name="servicehealthstatus-values"></a>serviceHealthStatus 值 
+
+|成员|
+|:---|
+|serviceOperational|
+|正在调查|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|已解决|
+|mitigatedExternal|
+|已缓解|
+|resolvedExternal|
+|confirmed|
+|reported|
+|unknownFutureValue|
+
+### <a name="serviceupdatecategory-values"></a>serviceUpdateCategory 值 
+
+|成员|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### <a name="serviceupdateseverity-values"></a>serviceUpdateSeverity 值 
+
+|成员|
+|:---|
+|normal|
+|high|
+|critical|
 |unknownFutureValue|
 
 ### <a name="teamworktagtype-values"></a>teamworkTagType 值
