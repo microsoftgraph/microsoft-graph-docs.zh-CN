@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4b0dda9e32a80e1a34d29974705ebc6444562532
-ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
+ms.openlocfilehash: 653fe685f1e5ad871f8b01a932cfb00adc4f3592
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53025045"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060004"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -527,6 +527,8 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 > **注意：** 对于频道中的消息，请参阅 [ChannelMessage 权限](#channel-message-permissions)。
 
 ## <a name="chat-resource-specific-consent-permissions"></a>聊天资源特定的同意权限
+
+#### <a name="application-permissions"></a>应用程序权限
 
 | 权限                     | 显示字符串                                                | 说明  | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
@@ -1996,6 +1998,8 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 
 ## <a name="team-resource-specific-consent-permissions"></a>团队资源特定的同意权限
 
+#### <a name="application-permissions"></a>应用程序权限
+
 | 权限 | 显示字符串 | 说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamSettings.Read.Group_ | 读取此团队设置。 | 在没有登录用户的情况下读取此团队的设置。 |否 | 否 |
@@ -2050,6 +2054,15 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | _TeamsTab.Read.All_ | 读取 Microsoft Teams 中的选项卡。 | 在没有登录用户的情况下，读取 Microsoft Teams 中任何团队内的选项卡的名称和设置。 这不会授予访问选项卡中的内容的权限。 | 是 | 否 |
 | _TeamsTab.ReadWrite.All_ | 读取和写入 Microsoft Teams 中的选项卡。 | 在没有登录用户的情况下读取和写入 Microsoft Teams 中任何团队内的选项卡。 这不会授予访问选项卡中的内容的权限。 | 是 | 否 |
 | _TeamsTab.Create_ | 在Microsoft Teams 中创建选项卡。 | 允许用户在没有登录用户的情况下在 Microsoft Teams 中的任何团队内创建选项卡。 这不会授予在选项卡创建后读取、修改或删除这些选项卡的权限，也不会授予访问选项卡中的内容的权限。 | 是 | 否 |
+
+## <a name="teams-tag-permissions"></a>Teams 标记权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkTag.ReadWrite_| 读取和写入 Microsoft Teams 中的标记。 | 在没有登录用户的情况下读取和写入 Microsoft Teams 中任何团队内的标记。  | 是 | 否 |
+| _TeamworkTag.Read_ | 读取 Microsoft Teams 中的标记。 | 在没有登录用户的情况下读取 Microsoft Teams 中任何团队内的选项卡。 | 是 | 否 |
 
 ## <a name="terms-of-use-permissions"></a>使用条款权限
 

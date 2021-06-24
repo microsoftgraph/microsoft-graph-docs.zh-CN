@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: adaf070c491810ad2467985a3a50509b3b9f82c3
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 8eac2d77ffa5fa0f3be9a57e86fd4f490d66e583
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547595"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059531"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -33,10 +33,11 @@ Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特�
 |[call](../resources/call.md)| [应答](../api/call-answer.md)、[拒绝](../api/call-reject.md)、[重定向](../api/call-redirect.md)、[静音](../api/call-mute.md)、[取消静音](../api/call-unmute.md)、[更改屏幕共享角色](../api/call-changescreensharingrole.md)、[列出参与者](../api/call-list-participants.md)、[邀请参与者](../api/participant-invite.md)、[将所有参与者静音](../api/participant-muteall.md) |
 |[日程安排](../resources/schedule.md)| [创建或替换](../api/team-put-schedule.md)、[获取](../api/schedule-get.md)、[共享](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [创建](../api/schedule-post-schedulinggroups.md)、[列出](../api/schedule-list-schedulinggroups.md)、[获取](../api/schedulinggroup-get.md)、[替换](../api/schedulinggroup-put.md)、[删除](../api/schedulinggroup-delete.md) |
-|activityFeedNotification| [向聊天范围内的用户发送通知](../api/chat-sendactivitynotification.md)，[向团队范围内的用户发送通知](../api/team-sendactivitynotification.md)，[向个人范围内的用户发送通知](../api/userteamwork-sendactivitynotification.md)|
 |[shift](../resources/shift.md)| [创建](../api/schedule-post-shifts.md)、[列出](../api/schedule-list-shifts.md)、[获取](../api/shift-get.md)、[替换](../api/shift-put.md)、[删除](../api/shift-delete.md) |
 |[timeOff](../resources/timeoff.md)| [创建](../api/schedule-post-timesoff.md)、[列出](../api/schedule-list-timesoff.md)、[获取](../api/timeoff-get.md)、[替换](../api/timeoff-put.md)、[删除](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [创建](../api/schedule-post-timeoffreasons.md)、[列出](../api/schedule-list-timeoffreasons.md)、[获取](../api/timeoffreason-get.md)、[替换](../api/timeoffreason-put.md)、[删除](../api/timeoffreason-delete.md) |
+|[标记](../resources/teamworkTag.md)|[列出](../api/teamworkTag-list.md)、 [创建](../api/teamworkTag-post.md)、 [获取](../api/teamworkTag-get.md)、 [更新](../api/teamworkTag-update.md)、 [删除](../api/teamworkTag-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[列出](../api/teamworkTagMember-list.md)、 [获取](../api/teamworkTagMember-get.md)、 [删除](../api/teamworkTagMember-delete.md)|
 
 ## <a name="microsoft-teams-limits"></a>Microsoft Teams 限制
 
