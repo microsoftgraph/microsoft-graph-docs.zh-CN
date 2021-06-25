@@ -312,8 +312,9 @@ items:
           - name: 见解
             items:
               - name: Office Graph见解
-                href: resources/officegraphinsights.md
                 items:
+                  - name: Office Graph见解
+                    href: resources/officegraphinsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
                   - name: 列出趋势
@@ -443,6 +444,14 @@ items:
                 href: api/todotasklist-list-tasks.md
               - name: 列出任务列表
                 href: api/todo-list-lists.md
+          - name: 用户设置
+            items:
+              - name: 用户设置
+                href: resources/usersettings.md
+              - name: 获取设置
+                href: api/usersettings-get.md
+              - name: 更新设置
+                href: api/usersettings-update.md
       - name: 组
         items:
           - name: 概述
@@ -4309,7 +4318,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -4430,6 +4439,10 @@ items:
                     href: api/directoryrole-post-members.md
                   - name: 删除成员
                     href: api/directoryrole-delete-member.md
+                  - name: 列出作用域内的成员
+                    href: api/directoryrole-list-scopedmembers.md
+                  - name: 获取 Delta
+                    href: api/directoryrole-delta.md
               - name: 目录角色模板
                 href: resources/directoryroletemplate.md
                 items:
@@ -4917,7 +4930,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -5288,8 +5301,14 @@ items:
               - name: 列出人员
                 href: api/user-list-people.md
           - name: 见解
-            href: resources/officegraphinsights.md
             items:
+              - name: Office Graph见解
+                href: resources/officegraphinsights.md
+              - name: 共享的内容
+                href: resources/insights-shared.md
+                items:
+                  - name: 共享的列表
+                    href: api/insights-list-shared.md
               - name: 趋势
                 href: resources/insights-trending.md
                 items:
@@ -5300,11 +5319,6 @@ items:
                 items:
                   - name: 使用的列表
                     href: api/insights-list-used.md
-              - name: 共享的内容
-                href: resources/insights-shared.md
-                items:
-                  - name: 共享的列表
-                    href: api/insights-list-shared.md
       - name: 个人联系人
         href: resources/contact.md
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
