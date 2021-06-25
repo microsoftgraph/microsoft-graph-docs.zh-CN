@@ -5,12 +5,12 @@ description: 获取一个 signIn 对象，该对象包含租户的所有Azure Ac
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: cb002faa818ee63f53282b9fb165339b20f4e484
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: d9cf2f0e6a03a490c1818712bf230120ff37311f
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474078"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129487"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -30,7 +30,15 @@ ms.locfileid: "52474078"
 | 委派（个人 Microsoft 帐户） | 不支持 |
 | 应用程序 | AuditLog.Read.All、Directory.Read.All | 
 
-此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
+应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
+
+除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
++ 全局管理员
++ 全局读取者
++ 报告读取者
++ 安全管理员
++ 安全操作员
++ 安全读取者
 
 ## <a name="http-request"></a>HTTP 请求
 

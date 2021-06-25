@@ -5,12 +5,12 @@ description: 获取租户租户中的用户登录Azure Active Directory列表。
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 868ffd2896f0bca155660b697c3ad64e0c6ec6ab
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: c85788d7ee1023e8f21097561105d7715f2074cd
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240557"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129488"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -30,7 +30,15 @@ ms.locfileid: "52240557"
 | 委派（个人 Microsoft 帐户） | 不支持 |
 | 应用程序 | AuditLog.Read.All、Directory.Read.All | 
 
-此外，应用必须正确注册到Azure Active Directory。
+应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
+
+除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
++ 全局管理员
++ 全局读取者
++ 报告读取者
++ 安全管理员
++ 安全操作员
++ 安全读取者
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
