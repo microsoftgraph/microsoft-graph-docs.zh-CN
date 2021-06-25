@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: b5654e2b010b5cacd2f5a0ddfa2d95256abb1b02
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: d862c60eb6f7e0443178a8bc40bd220799981624
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082319"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129430"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "53082319"
 | clientState | string | 订阅请求请求中发送的 **clientState** (（如果有) ）。 最大长度为 255 个字符。 客户端可以通过比较 **clientState** 属性的值来检查更改通知是否来自服务。 与订阅一起发送的 **clientState** 属性的值与每次更改通知时收到的 **clientState** 属性的值进行比较。 可选。 |
 | encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) |  (预览) 更改通知附加的加密内容。 仅在订阅 **请求期间定义了 encryptionCertificate** 和 **includeResourceData** 且资源支持它时提供。 可选。 |
 | id | string | 通知的唯一 ID。 可选。 |
-| lifecycleEvent | lifecycleEventType| 如果当前通知是生命周期通知，则生命周期通知的类型。 可选。 支持的值是 `missed` `removed` `reauthorizationRequired` 、、。 |
+| lifecycleEvent | lifecycleEventType| 如果当前通知是生命周期通知，则生命周期通知的类型。 可选。 支持的值是 `missed` `subscriptionRemoved` `reauthorizationRequired` 、、。 |
 | resource | string | 发出更改通知的资源相对于 的 `https://graph.microsoft.com` URI。 必填。 |
 | resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必填。 |
 | subscriptionExpirationDateTime | DateTimeOffset | 订阅的过期时间。 必填。 |

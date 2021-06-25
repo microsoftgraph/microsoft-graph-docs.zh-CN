@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 42932d1d058fa7970d444376553a0ae683dc9e2e
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: e03fb736cdd1dce8ca89335d87e9bd6bc65ddc4b
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854255"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118663"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
@@ -36,8 +36,8 @@ ms.locfileid: "52854255"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
-DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
+DELETE /directoryRoles/{role-id}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -56,7 +56,7 @@ DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>示例 1：使用 role objectId 删除目录角色成员
+### <a name="example-1-remove-directory-role-member-using-role-id"></a>示例 1：使用角色 ID 删除目录角色成员
 
 #### <a name="request"></a>请求
 
@@ -91,8 +91,6 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 
 
 #### <a name="response"></a>响应
-
-下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -102,11 +100,11 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>示例 2：使用角色 templateId 删除目录角色成员
+### <a name="example-2-remove-directory-role-member-using-roletemplateid"></a>示例 2：使用 roleTemplateId 删除目录角色成员
 
 #### <a name="request"></a>请求
 
-下面是一个请求示例。 将 `9f06204d-73c1-4d4c-880a-6edb90606fd8` 替换为 roleTemplateId 的值和 `bb165b45-151c-4cf6-9911-cd7188912848` directory 对象的用户的 **id** 值。
+下面展示了示例请求。 将 `9f06204d-73c1-4d4c-880a-6edb90606fd8` 替换为 roleTemplateId 的值和 `bb165b45-151c-4cf6-9911-cd7188912848` directory 对象的用户的 **id** 值。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -137,8 +135,6 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-7
 
 
 #### <a name="response"></a>响应
-
-下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true

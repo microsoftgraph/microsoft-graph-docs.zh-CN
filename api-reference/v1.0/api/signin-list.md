@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8ee9f01bf2b7f590332abcd726e3d6d21b506125
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 5bbd66efa246a0c3bbfdabe4a083a74443486ad2
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241126"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129451"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -27,6 +27,16 @@ ms.locfileid: "52241126"
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All  |
+
+应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
+
+除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
++ 全局管理员
++ 全局读取者
++ 报告读取者
++ 安全管理员
++ 安全操作员
++ 安全读取者
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: identity-and-access-reports
 author: besiler
-ms.openlocfilehash: b8b53037c70ff68523f51dd266da69518a1cc57a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 78afd6477988a546c7c0e2b8db34f8933423107f
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133042"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129468"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 
@@ -77,7 +77,7 @@ Azure AD 提供以下三种类型的活动报告：
 ## <a name="next-steps"></a>后续步骤
 
 - [注册你的应用程序](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)以满足报告先决条件。 
-- 了解[审核日志](/azure/active-directory/active-directory-reporting-api-audit-samples)和[登录示例](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples)。  
+- 要了解如何在使用证书进行身份验证时检索审核日志，请参阅 [教程：使用带有证书的 Azure Active Directory 报告 API 获取数据](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates)。  
 - 审查 [directoryAudit](directoryaudit.md) 资源和操作。
 - 审查 [signIn](signin.md) 资源和操作。 
 - 审查 [provisioningObjectSummary](provisioningobjectsummary.md) 资源。

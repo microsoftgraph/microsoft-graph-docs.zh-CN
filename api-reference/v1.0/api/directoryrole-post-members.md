@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ae03863fd35d7438a5fa3b9ff2ae0bfa90e41dce
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: cfb6a722b50e16f3a0e51dbad5705409a1d96009
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854164"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118691"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -32,8 +32,8 @@ ms.locfileid: "52854164"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{role-objectId}/members/$ref
-POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
+POST /directoryRoles/{role-id}/members/$ref
+POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,7 +51,7 @@ POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>示例 1：使用 role objectId 向目录角色添加新成员
+### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-id"></a>示例 1：使用角色 ID 向目录角色添加新成员
 
 在此请求中，将 替换为要分配给用户或目录对象的目录角色 `fe8f10bf-c9c2-47eb-95cb-c26cc85f1830` 的 **id** 值。 将 `15c1a2d5-9101-44b2-83ab-885db8a647ca` 替换为 **用户** 或目录对象的 id 值。 
 
@@ -101,7 +101,7 @@ Content-type: text/plain
 
 ```
 
-### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>示例 2：使用角色 templateId 向目录角色添加新成员
+### <a name="example-2-add-a-new-member-to-a-directory-role-using-roletemplateid"></a>示例 2：使用 roleTemplateId 向目录角色添加新成员
 
 在此请求中，将 替换为要分配给用户或目录对象的目录角色的 `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **roleTemplateId** 的值。 将 `bb165b45-151c-4cf6-9911-cd7188912848` 替换为 **用户** 或目录对象的 id 值。 
 

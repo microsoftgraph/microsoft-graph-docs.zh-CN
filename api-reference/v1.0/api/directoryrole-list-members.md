@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 878c99489b2faf1c4c079958491b64366945a67c
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: 51e9a1fec22df0abf326a21f1cd7309e343fc152
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854241"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118635"
 ---
 # <a name="list-members-of-a-directory-role"></a>列出目录角色的成员
 
@@ -35,11 +35,11 @@ ms.locfileid: "52854241"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-objectId}/members
-GET /directoryRoles/roleTemplateId={role-templateId}/members
+GET /directoryRoles/{role-id}/members
+GET /directoryRoles/roleTemplateId={roleTemplateId}/members
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -53,7 +53,7 @@ GET /directoryRoles/roleTemplateId={role-templateId}/members
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-members-of-a-directory-role-using-role-objectid"></a>示例 1：使用 role objectId 获取目录角色的成员
+### <a name="example-1-get-the-members-of-a-directory-role-using-role-id"></a>示例 1：使用角色 ID 获取目录角色的成员
 
 #### <a name="request"></a>请求
 
@@ -112,7 +112,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-members-of-a-directory-role-using-role-templateid"></a>示例 2：使用角色 templateId 获取目录角色的成员
+### <a name="example-2-get-the-members-of-a-directory-role-using-roletemplateid"></a>示例 2：使用 roleTemplateId 获取目录角色的成员
 
 ##### <a name="request"></a>请求
 

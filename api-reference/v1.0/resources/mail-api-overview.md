@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: c268558a3b9185b06b729855c763ff3357944f27
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 87919f9abccb7b90f4c0e947aac6e63e31323082
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645582"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118572"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
@@ -81,5 +81,5 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 - 向下钻取[邮件](../resources/message.md)和 [mailFolder](../resources/mailfolder.md) 资源的[方法](../resources/message.md#methods)、[属性](../resources/message.md#properties)和[关系](../resources/message.md#relationships)。
 - 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
 
-需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
+需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/partners)。
 

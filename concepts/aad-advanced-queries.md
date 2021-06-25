@@ -4,12 +4,12 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6abf5bedf3dab7bf6bf525a27aa5d7b2c3e7b281
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 7ecd514de1d1be4fea7606b62ca7060e6c15ba08
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031390"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118645"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
@@ -82,8 +82,8 @@ ConsistencyLevel: eventual
 
 下表汇总了[users](/graph/api/resources/user)目录对象的属性对`$filter`运算符的支持。
 
-- ![需要高级查询参数。](/graph/images/advanced-query-parameters/advanced.png) 默认情况下，该属性支持 `$filter` 使用运算符。
-- ![默认情况下有效。 不需要高级查询参数。](/graph/images/advanced-query-parameters/default.png) 特定的 `$filter` 运算符需要 *高级查询参数*:
+- ![默认情况下有效。 不需要高级查询参数。](/graph/images/advanced-query-parameters/default.png) 默认情况下，该属性支持`$filter`使用运算符。
+- ![需要高级查询参数。](/graph/images/advanced-query-parameters/advanced.png) 特定的 `$filter` 运算符需要 *高级查询参数*:
   - `ConsistencyLevel=eventual` 标头
   - `$count=true` 查询字符串
 - 空白单元格表示该属性不支持 `$filter` 使用运算符。

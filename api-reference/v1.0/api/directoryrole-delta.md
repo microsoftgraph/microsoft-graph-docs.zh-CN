@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2f7c0a90cc9c7e0f06e16740eeed1f001791b1ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 177c875f204a4019884fb025a2f06dc365e4a63b
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050526"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118642"
 ---
 # <a name="directoryrole-delta"></a>directoryRole： delta
 
@@ -70,7 +70,7 @@ GET /directoryRoles/delta
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [directoryRole](../resources/directoryrole.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [directoryRole](../resources/directoryrole.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
 - 如果 `nextLink` 返回 URL，则会话中有其他要检索的数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
 
@@ -78,7 +78,7 @@ GET /directoryRoles/delta
 
 ### <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -109,9 +109,9 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 ---
 
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -123,14 +123,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryRoles",
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/directoryRoles/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles",
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/directoryRoles/delta?$skiptoken=pkXMyA5aFCIMmH1Kk1XEAnf2X-fodqXKXF03gYPQknSHRxogVsxvSq_26nhos-O2-shortened",
   "value": [
-      {
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "roleTemplateId": "roleTemplateId-value",
-      "id": "id-value"
+    {
+      "description": "Device Administrators",
+      "displayName": "Azure AD Joined Device Local Administrator",
+      "roleTemplateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+      "id": "f8e85ed8-f66f-4058-b170-3efae8b9c6e5",
+      "members@delta": [
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "bb165b45-151c-4cf6-9911-cd7188912848",
+          "@removed": {
+            "reason": "deleted"
+          }
+        }
+      ]
     }
   ]
 }
