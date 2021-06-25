@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph 中的 Microsoft Bookings API
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: Microsoft Bookings 可让企业组织和小型企业所有者以最少量的设置管理客户预订和信息。
 localization_priority: Priority
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 588b7728a29e6eae3e4378da009c907b92ad32f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c21cb95d140fa41711264ec0e6c71b7828b5a709
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071869"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118656"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的 Microsoft Bookings API
 
@@ -41,7 +41,7 @@ Content-Type: application/json
     "displayName":"Contoso"
 }
 ```
-使用 POST 响应中返回的新 **bookingBusiness** 的 **id** 属性继续[自定义](../api/bookingbusiness-update.md)企业设置，并为企业添加员工和服务。
+使用 POST 响应中返回的新 **bookingBusiness** 的 **id** 属性继续 [自定义](../api/bookingbusiness-update.md)企业设置，并为企业添加员工和服务。
 
 3. 为企业添加各个员工：
 <!-- { "blockType": "ignored" } -->
@@ -102,7 +102,7 @@ Authorization: Bearer {access token}
 ## <a name="see-also"></a>另请参阅
 
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
-- 请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
+- 请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/partners)。
 - 了解如何在 Microsoft Graph 中选择[权限](/graph/permissions-reference)。
 
 

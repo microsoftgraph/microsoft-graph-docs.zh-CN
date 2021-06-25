@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 65ebf958eb36006bd0d2ff8fb5b2cbf121253e1a
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 6f8d3e643417aedd7eaead7ccfe6aa5fb3b05405
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921821"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118462"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -39,7 +39,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 |[Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 | [Microsoft Cloud App Security](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Microsoft Defender 高级威胁防护](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Azure 高级威胁防护](/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) **_| <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) _</p> | <p align="center">&#x2713;</p> |
+|[Azure 高级威胁防护](/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) ***| <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |Microsoft 365 <ul><li> [默认](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>自定义警报</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure 信息保护](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**（预览版）**| <p align="center">&#x2713;</p> | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](/azure/sentinel/quickstart-get-visibility)**（预览版）**| <p align="center">&#x2713;</p> | <p align="center">在 Azure Sentinel 中不受支持 </p> | <p align="center">&#x2713;</p> |
@@ -115,13 +115,13 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 
 ## <a name="next-steps"></a>后续步骤
 
-Microsoft Graph 安全性 API 可以为你提供使用 Microsoft 和合作伙伴的不同安全解决方案的新方式。 请按照以下步骤开始操作：
+Microsoft Graph 安全性 API 可以为你提供使用 Microsoft 和合作伙伴的不同安全解决方案的新方式。请按照以下步骤操作开始使用：
 
 - 深入了解[警报](alert.md)、[tiIndicator](tiindicator.md)（预览版）、[securityAction](securityaction.md)（预览版）、[secureScore](securescores.md) 和 [secureScoreControlProfiles](securescorecontrolprofiles.md)。
 - 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。 在“**示例查询**”中，选择“**显示更多示例**”并将“安全类别”设为“**开启**”。
 - 请尝试[订阅和接收实体变更通知](/graph/webhooks)。
 
-需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
+需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/partners)。
 
 ## <a name="see-also"></a>另请参阅
 

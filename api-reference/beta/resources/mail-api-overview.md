@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 67251a9d2121ca8d9f569051649c79f9fd71ec74
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 0552264b3400daebbb8764c231cace5df315b899
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645316"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118453"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
@@ -49,7 +49,7 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 |:----------|:---------------|:---------|
 | **以用户为中心的操作** | | |
 | 起草、阅读、答复、转发、发送、更新或删除邮件 | [邮件](../resources/message.md) | [邮件的方法](../resources/message.md#methods) |
-| 代表邮箱所有者委托其他用户发送邮件 | [message](../resources/message.md) | 设置 [邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
+| 代表邮箱所有者委托其他用户发送邮件 | [邮件](../resources/message.md) | 设置 [邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [重点收件箱](../resources/manage-focused-inbox.md) |
 | 查询邮件并在搜索文件夹中获取邮件  | [mailSearchFolder](../resources/mailsearchfolder.md) | [mailSearchFolder 的方法](../resources/mailsearchfolder.md#methods) |
 | 获取邮件或邮件附件的 MIME 内容 | [message](../resources/message.md) | [获取 MIME 内容](/graph/outlook-get-mime-message) |
@@ -85,6 +85,6 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 - 向下钻取[邮件](../resources/message.md)和 [mailFolder](../resources/mailfolder.md) 资源的[方法](../resources/message.md#methods)、[属性](../resources/message.md#properties)和[关系](../resources/message.md#relationships)。
 - 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
 
-需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
+需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/partners)。
 
 

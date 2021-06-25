@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 997882a9385d9fa3c9f474b9d4fa6efc930af21f
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 905afd750bce1976a25cd5e759df4659cbcb5fe0
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991716"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118530"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
@@ -34,8 +34,8 @@ ms.locfileid: "52991716"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-objectId}
-GET /directoryRoles/roleTemplateId={role-templateId}
+GET /directoryRoles/{role-id}
+GET /directoryRoles/roleTemplateId={roleTemplateId}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 例如， **此方法不支持** 任何 [OData](/graph/query-parameters) 查询参数来帮助自定义响应 (，例如，本文不支持 `$filter`) 。
@@ -53,9 +53,9 @@ GET /directoryRoles/roleTemplateId={role-templateId}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryRole](../resources/directoryrole.md) 对象。
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-definition-of-a-directory-role-using-role-objectid"></a>示例 1：使用 role objectId 获取目录角色的定义
+### <a name="example-1-get-the-definition-of-a-directory-role-using-role-id"></a>示例 1：使用角色 ID 获取目录角色的定义
 #### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -105,9 +105,9 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-get-the-definition-of-a-directory-role-using-role-templateid"></a>示例 2：使用角色 templateId 获取目录角色的定义
+### <a name="example-2-get-the-definition-of-a-directory-role-using-roletemplateid"></a>示例 2：使用 roleTemplateId 获取目录角色的定义
 #### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 
 
 

@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 1bfa039dc133ccd215a3f43780ddb1523e8dafdc
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 9272ebca7680456bef5f05ffe6a5258a4a184a45
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030255"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118535"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -160,7 +160,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 - 以`endsWith`结尾(仅在[高级查询](/graph/aad-advanced-queries)中)
 - 包含`contains`
 
-> **注意:** 对这些运算符的支持因实体而异，某些属性仅在[高级查询](/graph/aad-advanced-queries)中支持`$filter`。 有关详细信息，请参阅特定实体文档。
+> **注意:** 对这些运算符的支持因实体而异，某些属性仅在 [高级查询](/graph/aad-advanced-queries)中支持`$filter`。 有关详细信息，请参阅特定实体文档。
 
 ### <a name="filter-using-lambda-operators"></a>使用 lambda 运算符进行筛选
 
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/beta/users?$filter=imAddresses/any(s:s eq 'admin
 若要对 `any` 子句内表达式的结果求反，请使用 `NOT` 运算符，而不是 `ne` 运算符。 例如，以下查询仅检索未分配 `admin@contoso.com` 的 **imAddress** 的用户。
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@m365x435773.onmicrosoft.com')&$count=true
+GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@contoso.com')&$count=true
 ```
 
 `all`运算符以迭代方式将布尔表达式应用于集合的每个成员，如果集合的 *所有成员* 的表达式为`true`，则返回`true`;否则返回`false`。 任何属性都不支持它。

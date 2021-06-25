@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1743ee7027d2afd0651b4216975a8acad74e24b0
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: aec2f698c947a74f2814c4e91f350b612fa0600c
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991751"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118582"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
@@ -38,8 +38,8 @@ ms.locfileid: "52991751"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
-DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
+DELETE /directoryRoles/{role-id}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -102,11 +102,11 @@ DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>示例 2：使用角色 templateId 删除目录角色成员
+### <a name="example-2-remove-directory-role-member-using-roletemplateid"></a>示例 2：使用 roleTemplateId 删除目录角色成员
 
 #### <a name="request"></a>请求
 
-下面是一个请求示例。 将 `9f06204d-73c1-4d4c-880a-6edb90606fd8` 替换为 roleTemplateId 的值和 `bb165b45-151c-4cf6-9911-cd7188912848` directory 对象的用户的 **id** 值。
+下面展示了示例请求。 将 `9f06204d-73c1-4d4c-880a-6edb90606fd8` 替换为 roleTemplateId 的值和 `bb165b45-151c-4cf6-9911-cd7188912848` directory 对象的用户的 **id** 值。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

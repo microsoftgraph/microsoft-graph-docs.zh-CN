@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 653fe685f1e5ad871f8b01a932cfb00adc4f3592
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 15bac110263b04378d44e5fb92fbce55163aedc2
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060004"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108717"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1776,6 +1776,25 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 - _SecurityEvents.Read.All_：从对租户可用的所有许可安全提供程序中读取所有安全警报的列表 (`GET /beta/security/alerts`)
 - _SecurityEvents.ReadWrite.All_：更新或读取对租户可用的所有许可安全提供程序中的安全警报 (`PATCH /beta/security/alerts/{id}`)
+
+---
+
+## <a name="service-communications-permissions"></a>服务通信权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串  | 说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ServiceHealth.Read.All_ | 读取服务运行状况 | 允许此应用代表登录用户读取租户的服务运行状况信息。 服务运行状况信息可能包括服务问题或服务运行状况概述。 | 是 | 是 |
+| _ServiceMessage.Read.All_ | 读取服务消息 | 允许此应用代表已登录的用户读取租户的服务公告消息。 消息可能包含有关新增或已更改功能的信息。 | 是 | 是 |
+| _ServiceMessageViewpoint.Write_ | 在服务公告中更新用户状态 | 允许应用代表登录的用户更新服务公告消息的用户状态。 消息状态可以标记为已读、存档或收藏。 | 是 | 是 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串  | 说明 | 需经过管理员同意 |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ServiceHealth.Read.All_ | 读取服务运行状况 | 允许此应用在没有已登录用户的情况下读取租户的服务运行状况信息。 服务运行状况信息可能包括服务问题或服务运行状况概述。 | 是 |
+| _ServiceMessage.Read.All_ | 读取服务消息 | 允许此应用在没有已登录用户的情况下读取租户的服务公告消息。 消息可能包含有关新增或已更改功能的信息。 | 是 |
 
 ---
 
