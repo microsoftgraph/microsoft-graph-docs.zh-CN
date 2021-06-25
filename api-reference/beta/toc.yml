@@ -326,15 +326,16 @@ items:
           - name: 见解
             items:
               - name: 项目见解
-                href: resources/iteminsights.md
                 items:
+                  - name: '预览版 (项) '
+                    href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
                   - name: 列出趋势
                     href: api/insights-list-trending.md
                   - name: 使用的列表
                     href: api/insights-list-used.md
-              - name: 控制对项目见解的访问
+              - name: '组织控制 (预览) '
                 items:
                   - name: 项目见解设置
                     href: resources/iteminsightssettings.md
@@ -342,6 +343,14 @@ items:
                     href: api/iteminsightssettings-get.md
                   - name: 更新
                     href: api/iteminsightssettings-update.md
+              - name: '用户控件 (预览) '
+                items:
+                  - name: 用户见解设置
+                    href: resources/userinsightssettings.md
+                  - name: 获取
+                    href: api/userinsightssettings-get.md
+                  - name: 更新
+                    href: api/userinsightssettings-update.md
           - name: 邮件
             items:
               - name: 邮件
@@ -1453,6 +1462,10 @@ items:
                 href: api/presence-get.md
               - name: 获取多个用户状态
                 href: api/cloudcommunications-getpresencesbyuserid.md
+              - name: 设置状态
+                href: api/presence-setpresence.md
+              - name: 清除状态
+                href: api/presence-clearpresence.md
       - name: 合规性分数（预览版）
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
@@ -1828,7 +1841,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -10420,8 +10433,10 @@ items:
                     href: api/directoryrole-post-members.md
                   - name: 删除成员
                     href: api/directoryrole-delete-member.md
-                  - name: 列出作用域内管理员
-                    href: api/directoryrole-list-scopedadministrators.md
+                  - name: 列出作用域内的成员
+                    href: api/directoryrole-list-scopedmembers.md
+                  - name: 获取 Delta
+                    href: api/directoryrole-delta.md
               - name: 目录角色模板
                 href: resources/directoryroletemplate.md
                 items:
@@ -10490,6 +10505,8 @@ items:
                     href: api/organization-get.md
                   - name: 更新组织详细信息
                     href: api/organization-update.md
+                  - name: 激活服务
+                    href: api/organization-activateservice.md
               - name: 组织设置
                 href: resources/organizationSettings.md
                 items:
@@ -11448,7 +11465,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -12481,11 +12498,11 @@ items:
               - name: 删除
                 href: api/profilecardproperty-delete.md
           - name: 见解
-            href: resources/iteminsights.md
             items:
               - name: 项目见解
-                href: resources/iteminsights.md
                 items:
+                  - name: '预览版 (项) '
+                    href: resources/iteminsights.md
                   - name: 共享的内容
                     href: resources/insights-shared.md
                     items:
@@ -12501,14 +12518,22 @@ items:
                     items:
                       - name: 使用的列表
                         href: api/insights-list-used.md
-              - name: 控制对项目见解的访问
-                items:
-                  - name: 项目见解设置
-                    href: resources/iteminsightssettings.md
-                  - name: 获取
-                    href: api/iteminsightssettings-get.md
-                  - name: 更新
-                    href: api/iteminsightssettings-update.md
+                  - name: '组织控制 (预览) '
+                    items:
+                      - name: 项目见解设置
+                        href: resources/iteminsightssettings.md
+                      - name: 获取
+                        href: api/iteminsightssettings-get.md
+                      - name: 更新
+                        href: api/iteminsightssettings-update.md
+                  - name: '用户控件 (预览) '
+                    items:
+                      - name: 用户见解设置
+                        href: resources/userinsightssettings.md
+                      - name: 获取
+                        href: api/userinsightssettings-get.md
+                      - name: 更新
+                        href: api/userinsightssettings-update.md
           - name: '提及 (预览) '
             href: resources/mention.md
           - name: 分析（预览版）
@@ -13095,6 +13120,47 @@ items:
                 href: api/tiindicator-deletetiindicatorsbyexternalid.md
           - name: 错误
             href: resources/security-error-codes.md
+      - name: '服务运行状况和通信 (预览) '
+        items:
+          - name: 概述
+            href: resources/service-communications-api-overview.md
+          - name: 服务通知
+            href: resources/serviceannouncement.md
+          - name: 服务运行状况
+            href: resources/servicehealth.md
+            items:
+              - name: 列表运行状况概述
+                href: api/serviceannouncement-list-healthoverviews.md
+              - name: 获取服务运行状况
+                href: api/servicehealth-get.md
+          - name: 服务运行状况问题
+            href: resources/servicehealthissue.md
+            items:
+              - name: 列出问题
+                href: api/serviceannouncement-list-issues.md
+              - name: 获取问题
+                href: api/servicehealthissue-get.md
+              - name: 获取事后评审报告
+                href: api/servicehealthissue-incidentreport.md
+          - name: 服务更新消息
+            href: resources/serviceupdatemessage.md
+            items:
+              - name: 列出邮件
+                href: api/serviceannouncement-list-messages.md
+              - name: 获取邮件
+                href: api/serviceupdatemessage-get.md
+              - name: 标记读取状态
+                href: api/serviceupdatemessage-markread.md
+              - name: 标记未读状态
+                href: api/serviceupdatemessage-markunread.md
+              - name: 存档状态
+                href: api/serviceupdatemessage-archive.md
+              - name: 未存档状态
+                href: api/serviceupdatemessage-unarchive.md
+              - name: 标记收藏夹状态
+                href: api/serviceupdatemessage-favorite.md
+              - name: 删除收藏夹状态
+                href: api/serviceupdatemessage-unfavorite.md
       - name: 网站和列表
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
@@ -13102,7 +13168,7 @@ items:
             href: resources/sharepoint.md
           - name: 网站
             items:
-              - name: Site
+              - name: 网站
                 href: resources/site.md
               - name: 获取站点
                 href: api/site-get.md
