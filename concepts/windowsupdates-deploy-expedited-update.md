@@ -5,47 +5,47 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 9b8f3d341f94c0c2309e9c2674cfee41ddc34a9b
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 58dfdb7a260d2381b05332914fe71f9948c87e17
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067661"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151592"
 ---
-# <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a><span data-ttu-id="c5230-103">使用 Windows Update for Business 部署服务部署快速安全更新</span><span class="sxs-lookup"><span data-stu-id="c5230-103">Deploy an expedited security update using the Windows Update for Business deployment service</span></span>
+# <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a><span data-ttu-id="5afee-103">使用 Windows Update for Business 部署服务部署快速安全更新</span><span class="sxs-lookup"><span data-stu-id="5afee-103">Deploy an expedited security update using the Windows Update for Business deployment service</span></span>
 
-<span data-ttu-id="c5230-104">使用 Windows Update for Business 部署服务，Windows Azure AD 租户中的设备部署更新。</span><span class="sxs-lookup"><span data-stu-id="c5230-104">With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant.</span></span> <span data-ttu-id="c5230-105">如今，部署服务[支持部署](windowsupdates-deployments.md)Windows 10更新和加速安全更新。</span><span class="sxs-lookup"><span data-stu-id="c5230-105">Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10 feature updates and expedited security updates.</span></span> <span data-ttu-id="c5230-106">本主题重点介绍快速安全更新的部署。</span><span class="sxs-lookup"><span data-stu-id="c5230-106">This topic focuses on deployments of expedited security updates.</span></span> <span data-ttu-id="c5230-107">有关部署功能更新的信息，请参阅 [部署功能更新](windowsupdates-deploy-update.md)。</span><span class="sxs-lookup"><span data-stu-id="c5230-107">For information on deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).</span></span>
+<span data-ttu-id="5afee-104">使用 Windows Update for Business 部署服务，Windows Azure AD 租户中的设备部署更新。</span><span class="sxs-lookup"><span data-stu-id="5afee-104">With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant.</span></span> <span data-ttu-id="5afee-105">如今，部署服务[支持部署](windowsupdates-deployments.md)Windows 10更新和加速安全更新。</span><span class="sxs-lookup"><span data-stu-id="5afee-105">Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10 feature updates and expedited security updates.</span></span> <span data-ttu-id="5afee-106">本主题重点介绍快速安全更新的部署。</span><span class="sxs-lookup"><span data-stu-id="5afee-106">This topic focuses on deployments of expedited security updates.</span></span> <span data-ttu-id="5afee-107">有关部署功能更新的信息，请参阅 [部署功能更新](windowsupdates-deploy-update.md)。</span><span class="sxs-lookup"><span data-stu-id="5afee-107">For information on deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).</span></span>
 
-<span data-ttu-id="c5230-108">安装安全更新会覆盖Windows更新的延迟策略，以便尽快安装更新。</span><span class="sxs-lookup"><span data-stu-id="c5230-108">Expediting a security update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible.</span></span> <span data-ttu-id="c5230-109">当出现关键安全事件并且需要比正常情况更快速地部署最新更新时，它非常有用。</span><span class="sxs-lookup"><span data-stu-id="c5230-109">It can be useful when critical security events arise and you need to deploy the latest updates more rapidly than normal.</span></span> <span data-ttu-id="c5230-110">但是，虽然它可以帮助实现针对特定安全更新的合规性目标，但它并非旨在每月使用一次。</span><span class="sxs-lookup"><span data-stu-id="c5230-110">However, while it can help to achieve compliance targets against a specific security update, it is not designed to be used every month.</span></span> <span data-ttu-id="c5230-111">相反，请考虑使用 [更新的合规性截止时间](https://docs.microsoft.com/windows/deployment/update/wufb-compliancedeadlines)。</span><span class="sxs-lookup"><span data-stu-id="c5230-111">Instead, consider using [compliance deadlines for updates](https://docs.microsoft.com/windows/deployment/update/wufb-compliancedeadlines).</span></span>
+<span data-ttu-id="5afee-108">安装安全更新会覆盖Windows更新的延迟策略，以便尽快安装更新。</span><span class="sxs-lookup"><span data-stu-id="5afee-108">Expediting a security update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible.</span></span> <span data-ttu-id="5afee-109">当出现关键安全事件并且需要比正常情况更快速地部署最新更新时，它非常有用。</span><span class="sxs-lookup"><span data-stu-id="5afee-109">It can be useful when critical security events arise and you need to deploy the latest updates more rapidly than normal.</span></span> <span data-ttu-id="5afee-110">但是，虽然它可以帮助实现针对特定安全更新的合规性目标，但它并非旨在每月使用一次。</span><span class="sxs-lookup"><span data-stu-id="5afee-110">However, while it can help to achieve compliance targets against a specific security update, it is not designed to be used every month.</span></span> <span data-ttu-id="5afee-111">相反，请考虑使用 [更新的合规性截止时间](https://docs.microsoft.com/windows/deployment/update/wufb-compliancedeadlines)。</span><span class="sxs-lookup"><span data-stu-id="5afee-111">Instead, consider using [compliance deadlines for updates](https://docs.microsoft.com/windows/deployment/update/wufb-compliancedeadlines).</span></span>
 
-<span data-ttu-id="c5230-112">将加速安全更新部署到设备时，Windows更新会向设备提供最新的适用更新（如果设备尚未收到具有指定发布日期的更新）。</span><span class="sxs-lookup"><span data-stu-id="c5230-112">When you deploy an expedited security update to a device, Windows Update offers the latest applicable update to the device if it has not yet received the update with the specified release date.</span></span> <span data-ttu-id="c5230-113">例如，如果将 2021 Windows 10 2021 年 4 月 13 日发布的更新安全更新部署到当前没有更新的设备，则设备将收到快速更新。</span><span class="sxs-lookup"><span data-stu-id="c5230-113">For example, if you deploy the Windows 10 security update released on April 13, 2021 to a device that does not currently have the update, the device receives an expedited update.</span></span> <span data-ttu-id="c5230-114">如果设备已具有指定的更新或更新版本，则它不会收到加速更新。</span><span class="sxs-lookup"><span data-stu-id="c5230-114">If the device already has the specified update or newer, it does not receive an expedited update.</span></span>
+<span data-ttu-id="5afee-112">将加速安全更新部署到设备时，Windows更新会向设备提供最新的适用更新（如果设备尚未收到具有指定发布日期的更新）。</span><span class="sxs-lookup"><span data-stu-id="5afee-112">When you deploy an expedited security update to a device, Windows Update offers the latest applicable update to the device if it has not yet received the update with the specified release date.</span></span> <span data-ttu-id="5afee-113">例如，如果将 2021 Windows 10 2021 年 4 月 13 日发布的更新安全更新部署到当前没有更新的设备，则设备将收到快速更新。</span><span class="sxs-lookup"><span data-stu-id="5afee-113">For example, if you deploy the Windows 10 security update released on April 13, 2021 to a device that does not currently have the update, the device receives an expedited update.</span></span> <span data-ttu-id="5afee-114">如果设备已具有指定的更新或更新版本，则它不会收到加速更新。</span><span class="sxs-lookup"><span data-stu-id="5afee-114">If the device already has the specified update or newer, it does not receive an expedited update.</span></span>
 
-<span data-ttu-id="c5230-115">加速安全更新还具有以下特征：</span><span class="sxs-lookup"><span data-stu-id="c5230-115">Expedited security updates also have the following characteristics:</span></span>
+<span data-ttu-id="5afee-115">加速安全更新还具有以下特征：</span><span class="sxs-lookup"><span data-stu-id="5afee-115">Expedited security updates also have the following characteristics:</span></span>
 
-* <span data-ttu-id="c5230-116">更新立即启动，而不是等待下一次定期更新扫描，默认情况下每 22 小时进行一次。</span><span class="sxs-lookup"><span data-stu-id="c5230-116">The update starts right away rather than waiting for the next regular update scan, which occurs once every 22 hours by default.</span></span>
-* <span data-ttu-id="c5230-117">更新将尽快下载和安装。</span><span class="sxs-lookup"><span data-stu-id="c5230-117">The update downloads and installs as quickly as possible.</span></span>
-* <span data-ttu-id="c5230-118">更新过程会覆盖配置的设备策略设置，例如，在设备被强制重启之前几天。</span><span class="sxs-lookup"><span data-stu-id="c5230-118">The update process overrides configured device policy settings, such as days until the device is forced to restart.</span></span> <span data-ttu-id="c5230-119">安装快速更新后，设备将返回到当前策略设置。</span><span class="sxs-lookup"><span data-stu-id="c5230-119">After the expedited update is installed, the device returns to the current policy settings.</span></span>
+* <span data-ttu-id="5afee-116">更新立即启动，而不是等待下一次定期更新扫描，默认情况下每 22 小时进行一次。</span><span class="sxs-lookup"><span data-stu-id="5afee-116">The update starts right away rather than waiting for the next regular update scan, which occurs once every 22 hours by default.</span></span>
+* <span data-ttu-id="5afee-117">更新将尽快下载和安装。</span><span class="sxs-lookup"><span data-stu-id="5afee-117">The update downloads and installs as quickly as possible.</span></span>
+* <span data-ttu-id="5afee-118">更新过程会覆盖配置的设备策略设置，例如，在设备被强制重启之前几天。</span><span class="sxs-lookup"><span data-stu-id="5afee-118">The update process overrides configured device policy settings, such as days until the device is forced to restart.</span></span> <span data-ttu-id="5afee-119">安装快速更新后，设备将返回到当前策略设置。</span><span class="sxs-lookup"><span data-stu-id="5afee-119">After the expedited update is installed, the device returns to the current policy settings.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="c5230-120">先决条件</span><span class="sxs-lookup"><span data-stu-id="c5230-120">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5afee-120">先决条件</span><span class="sxs-lookup"><span data-stu-id="5afee-120">Prerequisites</span></span>
 
-* <span data-ttu-id="c5230-121">设备满足 [部署服务的先决条件](windowsupdates-concept-overview.md#prerequisites)。</span><span class="sxs-lookup"><span data-stu-id="c5230-121">Devices meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).</span></span>
-* <span data-ttu-id="c5230-122">设备已安装[KB4023057 - Windows 10 Update Service](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a)组件更新 (更新) 。</span><span class="sxs-lookup"><span data-stu-id="c5230-122">Devices have installed the update described in [KB4023057 - Update for Windows 10 Update Service components](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a) (or newer).</span></span>
+* <span data-ttu-id="5afee-121">设备满足 [部署服务的先决条件](windowsupdates-concept-overview.md#prerequisites)。</span><span class="sxs-lookup"><span data-stu-id="5afee-121">Devices meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).</span></span>
+* <span data-ttu-id="5afee-122">设备已安装[KB4023057 - Windows 10 Update Service](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a)组件更新 (更新) 。</span><span class="sxs-lookup"><span data-stu-id="5afee-122">Devices have installed the update described in [KB4023057 - Update for Windows 10 Update Service components](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a) (or newer).</span></span>
 
-## <a name="step-1-optional-get-a-list-of-expeditable-updates"></a><span data-ttu-id="c5230-123">步骤 1： (可选) 获取可安装更新的列表</span><span class="sxs-lookup"><span data-stu-id="c5230-123">Step 1: (Optional) Get a list of expeditable updates</span></span>
+## <a name="step-1-optional-get-a-list-of-expeditable-updates"></a><span data-ttu-id="5afee-123">步骤 1： (可选) 获取可安装更新的列表</span><span class="sxs-lookup"><span data-stu-id="5afee-123">Step 1: (Optional) Get a list of expeditable updates</span></span>
 
-<span data-ttu-id="c5230-124">你可以查询部署服务目录，获取更新列表，这些更新可以加速到设备作为部署中的内容。</span><span class="sxs-lookup"><span data-stu-id="c5230-124">You can query the deployment service catalog to get a list of updates that can be expedited to devices as content in a deployment.</span></span>
+<span data-ttu-id="5afee-124">你可以查询部署服务目录，获取更新列表，这些更新可以加速到设备作为部署中的内容。</span><span class="sxs-lookup"><span data-stu-id="5afee-124">You can query the deployment service catalog to get a list of updates that can be expedited to devices as content in a deployment.</span></span>
 
-<span data-ttu-id="c5230-125">安全更新由 [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) 类型表示 **，qualityUpdateClassification** 为 `security` 。</span><span class="sxs-lookup"><span data-stu-id="c5230-125">Security updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type, with a **qualityUpdateClassification** of `security`.</span></span> <span data-ttu-id="c5230-126">所有Windows 10分类为安全更新的更新质量更新都可以加速，并且使用设置为 的 **isExpeditable** 属性进行 `true` 标记以标识它们。</span><span class="sxs-lookup"><span data-stu-id="c5230-126">All Windows 10 quality updates that are classified as security updates can be expedited and are tagged with the **isExpeditable** property set to `true` to identify them.</span></span>
+<span data-ttu-id="5afee-125">安全更新由 [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) 类型表示 **，qualityUpdateClassification** 为 `security` 。</span><span class="sxs-lookup"><span data-stu-id="5afee-125">Security updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type, with a **qualityUpdateClassification** of `security`.</span></span> <span data-ttu-id="5afee-126">所有Windows 10分类为安全更新的更新质量更新都可以加速，并且使用设置为 的 **isExpeditable** 属性进行 `true` 标记以标识它们。</span><span class="sxs-lookup"><span data-stu-id="5afee-126">All Windows 10 quality updates that are classified as security updates can be expedited and are tagged with the **isExpeditable** property set to `true` to identify them.</span></span>
 
-<span data-ttu-id="c5230-127">下面是一个查询所有 Windows 10 安全更新的示例，这些安全更新可通过部署服务作为快速更新进行部署。</span><span class="sxs-lookup"><span data-stu-id="c5230-127">Below is an example of querying for all Windows 10 security updates that can be deployed as expedited updates by the deployment service.</span></span> <span data-ttu-id="c5230-128">Microsoft 建议只显示三个最新更新，因此该示例包括 `$top=3` 。</span><span class="sxs-lookup"><span data-stu-id="c5230-128">Microsoft recommends to only show the three most current updates, so the example includes `$top=3`.</span></span>
+<span data-ttu-id="5afee-127">下面是一个查询所有 Windows 10 安全更新的示例，这些安全更新可通过部署服务作为快速更新进行部署。</span><span class="sxs-lookup"><span data-stu-id="5afee-127">Below is an example of querying for all Windows 10 security updates that can be deployed as expedited updates by the deployment service.</span></span> <span data-ttu-id="5afee-128">Microsoft 建议只显示三个最新更新，因此该示例包括 `$top=3` 。</span><span class="sxs-lookup"><span data-stu-id="5afee-128">Microsoft recommends to only show the three most current updates, so the example includes `$top=3`.</span></span>
 
-### <a name="request"></a><span data-ttu-id="c5230-129">请求</span><span class="sxs-lookup"><span data-stu-id="c5230-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5afee-129">请求</span><span class="sxs-lookup"><span data-stu-id="5afee-129">Request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=3&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc
 ```
 
-### <a name="response"></a><span data-ttu-id="c5230-130">响应</span><span class="sxs-lookup"><span data-stu-id="c5230-130">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5afee-130">响应</span><span class="sxs-lookup"><span data-stu-id="5afee-130">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -84,20 +84,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="step-2-create-a-deployment"></a><span data-ttu-id="c5230-131">步骤 2：创建部署</span><span class="sxs-lookup"><span data-stu-id="c5230-131">Step 2: Create a deployment</span></span>
+## <a name="step-2-create-a-deployment"></a><span data-ttu-id="5afee-131">步骤 2：创建部署</span><span class="sxs-lookup"><span data-stu-id="5afee-131">Step 2: Create a deployment</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c5230-132">首次在租户中部署快速安全更新时，在为组织配置服务时，你可能会遇到最多一天的延迟。</span><span class="sxs-lookup"><span data-stu-id="c5230-132">The first time you deploy an expedited security update in your tenant, you may experience up to a one-day delay while the service is configured for your organization.</span></span> <span data-ttu-id="c5230-133">此延迟不适用于后续部署或功能更新部署，将在将来的更新中予以解决。</span><span class="sxs-lookup"><span data-stu-id="c5230-133">This delay does not apply to subsequent deployments or deployments of feature updates, and will be addressed in a future update.</span></span>
+> <span data-ttu-id="5afee-132">首次在租户中部署快速安全更新时，在为组织配置服务时，你可能会遇到最多一天的延迟。</span><span class="sxs-lookup"><span data-stu-id="5afee-132">The first time you deploy an expedited security update in your tenant, you may experience up to a one-day delay while the service is configured for your organization.</span></span> <span data-ttu-id="5afee-133">此延迟不适用于后续部署或功能更新部署，将在将来的更新中予以解决。</span><span class="sxs-lookup"><span data-stu-id="5afee-133">This delay does not apply to subsequent deployments or deployments of feature updates, and will be addressed in a future update.</span></span>
 
-<span data-ttu-id="c5230-134">[部署](/graph/api/resources/windowsupdates-deployment)指定要部署的内容、如何以及何时部署内容以及目标设备。</span><span class="sxs-lookup"><span data-stu-id="c5230-134">A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices.</span></span> <span data-ttu-id="c5230-135">对于质量更新，使用目标合规性日期指定内容。</span><span class="sxs-lookup"><span data-stu-id="c5230-135">For quality updates, the content is specified using a target compliance date.</span></span> <span data-ttu-id="c5230-136">创建部署后，将自动将部署访问群体创建为关系。</span><span class="sxs-lookup"><span data-stu-id="c5230-136">When a deployment is created, a deployment audience is automatically created as a relationship.</span></span>
+<span data-ttu-id="5afee-134">[部署](/graph/api/resources/windowsupdates-deployment)指定要部署的内容、如何以及何时部署内容以及目标设备。</span><span class="sxs-lookup"><span data-stu-id="5afee-134">A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices.</span></span> <span data-ttu-id="5afee-135">对于质量更新，使用目标合规性日期指定内容。</span><span class="sxs-lookup"><span data-stu-id="5afee-135">For quality updates, the content is specified using a target compliance date.</span></span> <span data-ttu-id="5afee-136">创建部署后，将自动将部署访问群体创建为关系。</span><span class="sxs-lookup"><span data-stu-id="5afee-136">When a deployment is created, a deployment audience is automatically created as a relationship.</span></span>
 
-<span data-ttu-id="c5230-137">将加速安全更新部署到设备时，Windows更新会提供一个更新，将设备超过指定的最低合规性级别。</span><span class="sxs-lookup"><span data-stu-id="c5230-137">When you deploy an expedited security update to a device, Windows Update offers an update that brings the device above the minimum compliance level specified.</span></span> <span data-ttu-id="c5230-138">根据每个设备扫描和更新时间，某些设备可能会收到更新 (例如，如果有比所需最低合规性级别) 更新更新的更新，但所有设备都符合指定的安全更新合规性标准。</span><span class="sxs-lookup"><span data-stu-id="c5230-138">Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices meet the specified security update compliance standard.</span></span> <span data-ttu-id="c5230-139">这种提供最新适用更新的行为（由设置为默认值的属性 **equivalentContent** 指示）有助于尽可能确保设备安全，并阻止设备在几天后收到快速更新，然后收到另一个 `latestSecurity` 定期更新。</span><span class="sxs-lookup"><span data-stu-id="c5230-139">This behavior of offering the latest applicable update, indicated by the property **equivalentContent** being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.</span></span>
+<span data-ttu-id="5afee-137">将加速安全更新部署到设备时，Windows更新会提供一个更新，将设备超过指定的最低合规性级别。</span><span class="sxs-lookup"><span data-stu-id="5afee-137">When you deploy an expedited security update to a device, Windows Update offers an update that brings the device above the minimum compliance level specified.</span></span> <span data-ttu-id="5afee-138">根据每个设备扫描和更新时间，某些设备可能会收到更新 (例如，如果有比所需最低合规性级别) 更新更新的更新，但所有设备都符合指定的安全更新合规性标准。</span><span class="sxs-lookup"><span data-stu-id="5afee-138">Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices meet the specified security update compliance standard.</span></span> <span data-ttu-id="5afee-139">这种提供最新适用更新的行为（由设置为默认值的属性 **equivalentContent** 指示）有助于尽可能确保设备安全，并阻止设备在几天后收到快速更新，然后收到另一个 `latestSecurity` 定期更新。</span><span class="sxs-lookup"><span data-stu-id="5afee-139">This behavior of offering the latest applicable update, indicated by the property **equivalentContent** being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.</span></span>
 
-<span data-ttu-id="c5230-140">可以使用部署用户体验设置中的 **属性 daysUntilForcedReboot** 配置 [设备重启](/graph/api/resources/windowsupdates-userexperiencesettings) 宽限期。</span><span class="sxs-lookup"><span data-stu-id="c5230-140">You can configure the device restart grace period using the property **daysUntilForcedReboot** in the [user experience settings](/graph/api/resources/windowsupdates-userexperiencesettings) of the deployment.</span></span> <span data-ttu-id="c5230-141">宽限期设置安装后用户可以控制设备重启时间的时间量。</span><span class="sxs-lookup"><span data-stu-id="c5230-141">The grace period sets the amount of time after installation that the user can control the timing of when the device restarts.</span></span> <span data-ttu-id="c5230-142">如果设备在宽限期到期时尚未重新启动，则会自动重新启动。</span><span class="sxs-lookup"><span data-stu-id="c5230-142">If the device has not restarted by the time the grace period expires, it restarts automatically.</span></span>
+<span data-ttu-id="5afee-140">可以使用部署用户体验设置中的 **属性 daysUntilForcedReboot** 配置 [设备重启](/graph/api/resources/windowsupdates-userexperiencesettings) 宽限期。</span><span class="sxs-lookup"><span data-stu-id="5afee-140">You can configure the device restart grace period using the property **daysUntilForcedReboot** in the [user experience settings](/graph/api/resources/windowsupdates-userexperiencesettings) of the deployment.</span></span> <span data-ttu-id="5afee-141">宽限期设置安装后用户可以控制设备重启时间的时间量。</span><span class="sxs-lookup"><span data-stu-id="5afee-141">The grace period sets the amount of time after installation that the user can control the timing of when the device restarts.</span></span> <span data-ttu-id="5afee-142">如果设备在宽限期到期时尚未重新启动，则会自动重新启动。</span><span class="sxs-lookup"><span data-stu-id="5afee-142">If the device has not restarted by the time the grace period expires, it restarts automatically.</span></span>
 
-<span data-ttu-id="c5230-143">下面是为快速质量更新创建部署的示例。</span><span class="sxs-lookup"><span data-stu-id="c5230-143">Below is an example of creating a deployment for an expedited quality update.</span></span> <span data-ttu-id="c5230-144">目标设备在下一步中指定。</span><span class="sxs-lookup"><span data-stu-id="c5230-144">The targeted devices are specified in the next step.</span></span>
+<span data-ttu-id="5afee-143">下面是为快速质量更新创建部署的示例。</span><span class="sxs-lookup"><span data-stu-id="5afee-143">Below is an example of creating a deployment for an expedited quality update.</span></span> <span data-ttu-id="5afee-144">目标设备在下一步中指定。</span><span class="sxs-lookup"><span data-stu-id="5afee-144">The targeted devices are specified in the next step.</span></span>
 
-### <a name="request"></a><span data-ttu-id="c5230-145">请求</span><span class="sxs-lookup"><span data-stu-id="c5230-145">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5afee-145">请求</span><span class="sxs-lookup"><span data-stu-id="5afee-145">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c5230-146">响应</span><span class="sxs-lookup"><span data-stu-id="c5230-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5afee-146">响应</span><span class="sxs-lookup"><span data-stu-id="5afee-146">Response</span></span>
 
 ```http
 HTTP/1.1 201 Created
@@ -158,15 +158,15 @@ Content-Type: application/json
 }
 ```
 
-## <a name="step-3-assign-devices-to-the-deployment-audience"></a><span data-ttu-id="c5230-147">步骤 3：将设备分配给部署访问群体</span><span class="sxs-lookup"><span data-stu-id="c5230-147">Step 3: Assign devices to the deployment audience</span></span>
+## <a name="step-3-assign-devices-to-the-deployment-audience"></a><span data-ttu-id="5afee-147">步骤 3：将设备分配给部署访问群体</span><span class="sxs-lookup"><span data-stu-id="5afee-147">Step 3: Assign devices to the deployment audience</span></span>
 
-<span data-ttu-id="c5230-148">创建部署后，你可以将设备分配给部署 [访问群体](/graph/api/resources/windowsupdates-deploymentaudience)。</span><span class="sxs-lookup"><span data-stu-id="c5230-148">After a deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience).</span></span> <span data-ttu-id="c5230-149">设备可以直接分配，或通过可 [更新的资产组进行分配](/graph/api/resources/windowsupdates-updatableassetgroup)。</span><span class="sxs-lookup"><span data-stu-id="c5230-149">Devices can be assigned directly, or via [updatable asset groups](/graph/api/resources/windowsupdates-updatableassetgroup).</span></span> <span data-ttu-id="c5230-150">成功更新部署访问群体后，Windows更新开始根据部署设置向相关设备提供更新。</span><span class="sxs-lookup"><span data-stu-id="c5230-150">Once the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.</span></span>
+<span data-ttu-id="5afee-148">创建部署后，你可以将设备分配给部署 [访问群体](/graph/api/resources/windowsupdates-deploymentaudience)。</span><span class="sxs-lookup"><span data-stu-id="5afee-148">After a deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience).</span></span> <span data-ttu-id="5afee-149">成功更新部署访问群体后，Windows更新开始根据部署设置向相关设备提供更新。</span><span class="sxs-lookup"><span data-stu-id="5afee-149">When the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.</span></span>
 
-<span data-ttu-id="c5230-151">当设备添加到部署访问群体的成员或排除集合时 (将自动注册服务，即 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象在部署访问群体中) 。</span><span class="sxs-lookup"><span data-stu-id="c5230-151">Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).</span></span>
+<span data-ttu-id="5afee-150">在将设备添加到部署访问群体的成员或排除集合时 (会自动向服务注册设备 (也就是说，如果 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象) 。</span><span class="sxs-lookup"><span data-stu-id="5afee-150">Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).</span></span>
 
-<span data-ttu-id="c5230-152">下面是添加可更新资源组和 Azure AD 设备作为部署受众成员的示例，同时还排除特定的 Azure AD 设备。</span><span class="sxs-lookup"><span data-stu-id="c5230-152">Below is an example of adding updatable asset groups and Azure AD devices as members of the deployment audience, while also excluding a specific Azure AD device.</span></span>
+<span data-ttu-id="5afee-151">以下示例演示如何将 Azure AD 设备添加为部署访问群体的成员。</span><span class="sxs-lookup"><span data-stu-id="5afee-151">The following example shows how to add Azure AD devices as members of the deployment audience.</span></span>
 
-### <a name="request"></a><span data-ttu-id="c5230-153">请求</span><span class="sxs-lookup"><span data-stu-id="c5230-153">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5afee-152">请求</span><span class="sxs-lookup"><span data-stu-id="5afee-152">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
@@ -175,19 +175,13 @@ Content-type: application/json
 {
     "addMembers": [
         {
-            "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-            "id": "String (identifier)"
-        },
-        {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
-        }
-    ],
-    "addExclusions": [
+        },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
@@ -196,16 +190,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c5230-154">响应</span><span class="sxs-lookup"><span data-stu-id="c5230-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5afee-153">响应</span><span class="sxs-lookup"><span data-stu-id="5afee-153">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-## <a name="during-a-deployment"></a><span data-ttu-id="c5230-155">部署期间</span><span class="sxs-lookup"><span data-stu-id="c5230-155">During a deployment</span></span>
+## <a name="during-a-deployment"></a><span data-ttu-id="5afee-154">部署期间</span><span class="sxs-lookup"><span data-stu-id="5afee-154">During a deployment</span></span>
 
-<span data-ttu-id="c5230-156">在部署过程中，可以通过更新部署的状态来暂停部署，也可以更新其访问群体成员和排除项。</span><span class="sxs-lookup"><span data-stu-id="c5230-156">While a deployment is in progress, you can pause the deployment by updating its **state**, as well as update its audience members and exclusions.</span></span>
+<span data-ttu-id="5afee-155">在部署过程中，可以通过更新部署的状态来暂停部署，也可以更新其访问群体成员和排除项。</span><span class="sxs-lookup"><span data-stu-id="5afee-155">While a deployment is in progress, you can pause the deployment by updating its **state**, as well as update its audience members and exclusions.</span></span>
 
-## <a name="after-a-deployment"></a><span data-ttu-id="c5230-157">部署后</span><span class="sxs-lookup"><span data-stu-id="c5230-157">After a deployment</span></span>
+## <a name="after-a-deployment"></a><span data-ttu-id="5afee-156">部署后</span><span class="sxs-lookup"><span data-stu-id="5afee-156">After a deployment</span></span>
 
-<span data-ttu-id="c5230-158">在最初向部署访问群体分配的所有设备都提供更新后，由于设备连接等因素，并非所有设备都启动或完成了更新。</span><span class="sxs-lookup"><span data-stu-id="c5230-158">After all devices assigned to a deployment audience have been initially offered the update, it is possible that not all devices have started or completed the update, due to factors like device connectivity.</span></span> <span data-ttu-id="c5230-159">只要部署仍然存在，它就会继续确保Windows只要重新连接，就会向分配的设备提供更新。</span><span class="sxs-lookup"><span data-stu-id="c5230-159">As long as the deployment still exists, it continues to make sure that Windows Update is offering the update to the assigned devices whenever they reconnect.</span></span>
+<span data-ttu-id="5afee-157">在最初向部署访问群体分配的所有设备都提供更新后，由于设备连接等因素，并非所有设备都启动或完成了更新。</span><span class="sxs-lookup"><span data-stu-id="5afee-157">After all devices assigned to a deployment audience have been initially offered the update, it is possible that not all devices have started or completed the update, due to factors like device connectivity.</span></span> <span data-ttu-id="5afee-158">只要部署仍然存在，它就会继续确保Windows只要重新连接，就会向分配的设备提供更新。</span><span class="sxs-lookup"><span data-stu-id="5afee-158">As long as the deployment still exists, it continues to make sure that Windows Update is offering the update to the assigned devices whenever they reconnect.</span></span>
