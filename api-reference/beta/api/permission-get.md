@@ -6,12 +6,12 @@ title: 获取权限
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: cfbe2c7f7ac87fc49bc510a6f8dbdb351a04aecc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2613eb4e260d3ead63d2619f15ca43521744aec5
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973005"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151648"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -24,8 +24,6 @@ ms.locfileid: "48973005"
 项的有效权限有两个来源：直接对项本身设置权限，或从项上级继承权限。
 
 调用方可以检查 `inheritedFrom` 属性来区分是否为继承权限。此属性是引用继承其权限的上级的 [ItemReference](../resources/itemreference.md) 资源。
-
-对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](/SharePoint/sites/user-permissions-and-permission-levels#section1)。
 
 ## <a name="permissions"></a>权限
 

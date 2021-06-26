@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4d3df34faed6599a4d2d61fabf6e6de349c75180
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a50e24fec7c80b66eaf9ab58027cc2b3cb8814ec
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52266890"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151550"
 ---
 # <a name="list-updatableassets"></a>列出 updatableAssets
 命名空间：microsoft.graph.windowsUpdates
@@ -106,10 +106,6 @@ Content-Type: application/json
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-      "id": "5c55730b-730b-5c55-0b73-555c0b73555c"
-    },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "983f03cd-03cd-983f-cd03-3f98cd033f98",

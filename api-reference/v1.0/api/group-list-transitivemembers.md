@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 31fd82f4d632c63e3cac52a3792053de0eea531d
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bd3d6d8bbb301d29458770458529446e560f3be1
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682514"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151634"
 ---
 # <a name="list-group-transitive-members"></a>List group transitive members
 
@@ -28,7 +28,7 @@ ms.locfileid: "52682514"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
->**注意：** 若要列出隐藏成员资格组的成员，需要 Member.Read.Hidden 权限。
+>**注意：** 若要列出隐藏成员资格组的成员， *需要 Member.Read.Hidden* 权限。
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -43,6 +43,8 @@ GET /groups/{id}/transitiveMembers
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 可使用“**displayName**”和“**说明**”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+
+若要筛选 OData 类型（如 或 ）上的结果， `microsoft.graph.user` `microsoft.graph.group` 必须使用 [高级查询参数](/graph/aad-advanced-queries)。 即，将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -129,7 +131,7 @@ Content-type: application/json
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_group_transitivemembers_count"
 }-->
 
@@ -150,18 +152,79 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
 ```
 
 `893`
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 3：使用 OData cast 和 $search 获取显示名称包含字母"tier"（包括返回对象计数）的组的成员身份
+### <a name="example-3-use-the-microsoftgraphgroup-odata-cast-to-get-only-members-that-are-groups"></a>示例 3：使用 microsoft.graph.group OData 转换仅获取作为组的成员
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
+  "name": "get_group_transitivemembers_odataCast"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/{id}/transitivemembers/microsoft.graph.group?$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.count": 2,
+  "value": [
+    {
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/4d0ef681-e88f-42a3-a2db-e6bf1e249e10/Microsoft.DirectoryServices.Group",
+      "id": "4d0ef681-e88f-42a3-a2db-e6bf1e249e10",
+      "organizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+      "description": null,
+      "displayName": "Executives",
+      "groupTypes": [],
+      "mail": "Executives@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Executives",
+    },
+    {
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/d9fb0c47-c783-40a1-bce1-53b52ada51fc/Microsoft.DirectoryServices.Group",
+      "id": "d9fb0c47-c783-40a1-bce1-53b52ada51fc",
+      "organizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+      "displayName": "Project Falcon",
+      "groupTypes": [],
+      "mail": "Falcon@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Falcon",
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 OData cast 和 $search 获取显示名称包含字母"tier"（包括返回对象计数）的组的成员身份
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
   "name": "get_tier_count"
 }-->
 ```msgraph-interactive
@@ -197,14 +260,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 强制转换$filter获取组的用户成员资格，显示名称以"A"开头（包括返回的对象计数）
+
+### <a name="example-5-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 OData 强制转换$filter获取组的用户成员资格，组显示名称以"A"开头（包括返回的对象计数）
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_a_count"
 }-->
 
@@ -240,6 +304,9 @@ Content-type: application/json
   ]
 }
 ```
+
+
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

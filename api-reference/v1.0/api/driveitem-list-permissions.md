@@ -6,18 +6,18 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 列出 driveItem 上的有效共享权限。
 doc_type: apiPageType
-ms.openlocfilehash: a89dc20289ee86933d4eee0c217f769b9fbd426e
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d1e245cdc879d79145924185026f90e3510288df
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240274"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151543"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出 driveItem 上的共享权限
 
 命名空间：microsoft.graph
 
-列出 [driveItem](../resources/driveitem.md)上的有效共享权限。
+列出 [driveItem](../resources/driveitem.md)的有效共享权限。
 
 ## <a name="access-to-sharing-permissions"></a>访问共享权限
 
@@ -70,8 +70,6 @@ DriveItem 的有效共享权限可能有两个来源：
 * 从 DriveItem 的上级继承的共享权限
 
 调用方可以通过检查 **inheritedFrom** 属性来区分是否为继承权限。此属性是引用从中继承该权限的上级的 [**itemReference**](../resources/itemreference.md) 资源。
-
-对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](/SharePoint/sites/user-permissions-and-permission-levels#section1)。
 
 ## <a name="example"></a>示例
 
@@ -158,7 +156,7 @@ Content-Type: application/json
 
 ## <a name="error-responses"></a>错误响应
 
-请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+请阅读 [错误响应][error-response] 主题，了解有关如何返回错误的详细信息。
 
 [error-response]: /graph/errors
 

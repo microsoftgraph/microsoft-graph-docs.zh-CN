@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: c04a5c25ed5cd21f09f5f44066737a0337259663
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 155c5d83c33a5276a127d33684cd8724d65ddf79
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107807"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151620"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue：incidentReport
 命名空间：microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53107807"
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|ServiceHealth.Read.All|
-|委派（个人 Microsoft 帐户）|ServiceHealth.Read.All|
+|委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求

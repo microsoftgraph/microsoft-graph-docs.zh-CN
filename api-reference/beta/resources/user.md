@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: a30a6a3fbc51cca11544e4a40d9c998a160e1890
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: f81c28b15720f494c51ab2893193a4cd107aa1ca
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911664"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118446"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -166,16 +166,16 @@ ms.locfileid: "52911664"
 | ageGroup | [ageGroup](#agegroup-values) | 设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`和 `in`）。 |
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | 已分配给用户的许可证，包括继承的（基于组的）许可证。 <br><br>不可为 null。 支持 `$filter`（`eq` 和 `NOT`）。 |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | 分配给该用户的计划。只读。不可为 null。<br><br>支持 `$filter`（`eq` 和 `NOT`）。 |
-| birthday | DateTimeOffset | 用户的生日。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 |
+| birthday | DateTimeOffset | 用户的生日。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` <br><br>仅在 `$select` 上返回。 |
 | businessPhones | String collection | 用户的电话号码。仅可以为此属性设置一个数字。<br><br>对于从本地目录同步的用户而言为只读。 支持 `$filter`（`eq` 和 `NOT`）。|
 | 城市 | String | 用户所在的城市。最大长度为 128 个字符。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 | companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`和 `in`）。|
 | country | String | 用户所在的国家/地区;例如， `US` 或 `UK`。 最大长度为 128 个字符。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
-| createdDateTime | DateTimeOffset | 创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`和 `in` 运算符） `$orderBy`。 |
+| createdDateTime | DateTimeOffset | 创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`和 `in` 运算符）。 |
 | creationType | 字符串 | 指示创建的用户帐户是普通学校或工作帐户 (`null`)、外部帐户 (`Invitation`)、Azure Active Directory B2C 租户的本地帐户 (`LocalAccount`) 还是使用电子邮件验证的自助注册帐户 (`EmailVerified`)。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`和 `in`）。 |
-| deletedDateTime | DateTimeOffset | 删除用户的日期和时间。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、和 `in`） `$orderBy`。 |
-| department | String | 用户工作部门的名称。 最大长度为 64 个字符。<br><br>支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`和 `in` 运算符）。 |
+| deletedDateTime | DateTimeOffset | 删除用户的日期和时间。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le` 和 `in`）。 |
+| 部门 | String | 用户工作部门的名称。 最大长度为 64 个字符。<br><br>支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`和 `in` 运算符）。 |
 | displayName | String | 用户通讯簿中显示的名称。通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。最大长度为 256 个字符。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`、 `$orderBy`和 `$search`。|
 | employeeHireDate | DateTimeOffset | 聘请用户或用户将开始工作（如是未来招聘）的日期和时间。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`）。|
 | employeeId | String | 由组织分配给该用户的员工标识符。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`）。|

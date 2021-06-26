@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 9b8f3d341f94c0c2309e9c2674cfee41ddc34a9b
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 58dfdb7a260d2381b05332914fe71f9948c87e17
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067661"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151592"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务部署快速安全更新
 
@@ -160,11 +160,11 @@ Content-Type: application/json
 
 ## <a name="step-3-assign-devices-to-the-deployment-audience"></a>步骤 3：将设备分配给部署访问群体
 
-创建部署后，你可以将设备分配给部署 [访问群体](/graph/api/resources/windowsupdates-deploymentaudience)。 设备可以直接分配，或通过可 [更新的资产组进行分配](/graph/api/resources/windowsupdates-updatableassetgroup)。 成功更新部署访问群体后，Windows更新开始根据部署设置向相关设备提供更新。
+创建部署后，你可以将设备分配给部署 [访问群体](/graph/api/resources/windowsupdates-deploymentaudience)。 成功更新部署访问群体后，Windows更新开始根据部署设置向相关设备提供更新。
 
-当设备添加到部署访问群体的成员或排除集合时 (将自动注册服务，即 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象在部署访问群体中) 。
+在将设备添加到部署访问群体的成员或排除集合时 (会自动向服务注册设备 (也就是说，如果 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象) 。
 
-下面是添加可更新资源组和 Azure AD 设备作为部署受众成员的示例，同时还排除特定的 Azure AD 设备。
+以下示例演示如何将 Azure AD 设备添加为部署访问群体的成员。
 
 ### <a name="request"></a>请求
 
@@ -175,19 +175,13 @@ Content-type: application/json
 {
     "addMembers": [
         {
-            "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-            "id": "String (identifier)"
-        },
-        {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
-        }
-    ],
-    "addExclusions": [
+        },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"

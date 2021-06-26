@@ -6,12 +6,12 @@ localization_priority: Normal
 description: 返回特定 permission 资源的有效共享权限。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a63a84a7c9d78d0a17ae3dc21d72f90c2b1e111f
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3fb5c236faa4d5b16d00cc583b7d0173cbd7d56f
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239798"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151501"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -22,8 +22,6 @@ ms.locfileid: "50239798"
 项的有效权限有两个来源：直接对项本身设置权限，或从项上级继承权限。
 
 调用方可以检查 `inheritedFrom` 属性来区分是否为继承权限。此属性是引用继承其权限的上级的 [ItemReference](../resources/itemreference.md) 资源。
-
-对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](/SharePoint/sites/user-permissions-and-permission-levels#section1)。
 
 ## <a name="permissions"></a>权限
 
@@ -119,7 +117,7 @@ Content-type: application/json
 
 ### <a name="error-responses"></a>错误响应
 
-请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+请阅读 [错误响应][error-response] 主题，了解有关如何返回错误的详细信息。
 
 [error-response]: /graph/errors
 

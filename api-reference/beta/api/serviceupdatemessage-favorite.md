@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5838b8c395db539f06aad31ef7794eda2f8587ad
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 619053e68a7d5633d095223bca4ddda604f49083
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107779"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151739"
 ---
 # <a name="serviceupdatemessage-favorite"></a>serviceUpdateMessage： favorite
 命名空间：microsoft.graph
@@ -25,8 +25,8 @@ ms.locfileid: "53107779"
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|ServiceMessageViewpoint.Write|
-|委派（个人 Microsoft 帐户）|ServiceMessageViewpoint.Write|
-|应用|不支持|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /admin/serviceAnnouncement/messages/favorite
 
 |参数|类型|说明|
 |:---|:---|:---|
-|messageIds|String 集合|要另存为收藏夹的邮件 ID 的列表。|
+|messageIds|String collection|要另存为收藏夹的邮件 ID 的列表。|
 
 ## <a name="response"></a>响应
 

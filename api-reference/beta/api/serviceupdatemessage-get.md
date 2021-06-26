@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 40507d50252fb8cbc09201bef828d9411f5cd06a
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 63a9342d7c1db2f8716d5f4e255e91630287ba1f
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109078"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151732"
 ---
 # <a name="get-serviceupdatemessage"></a>获取 serviceUpdateMessage
 命名空间：microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53109078"
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|ServiceMessage.Read.All|
-|委派（个人 Microsoft 帐户）|ServiceMessage.Read.All|
+|委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求

@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 2492a447aa26bbc3de6835a76c5876e55cac774c
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 86a10a5b8b6878faad92e48132ab9283039ee3e6
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067671"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151424"
 ---
 # <a name="enroll-in-update-management-by-the-windows-update-for-business-deployment-service"></a>通过 Windows Update for Business 部署服务注册更新管理
 
@@ -112,7 +112,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-可以通过删除设备对象从服务中完全注销设备。 当设备注销时，该服务将自动取消注册所有更新类别的管理，并删除所有部署访问群体 [和 updatableAsset](/graph/api/resources/windowsupdates-updatableasset) 组。
+可以通过删除设备对象从服务中完全注销设备。 当设备注销时，该服务会自动注销所有更新类别的管理，并且从每个 [deploymentAudience](/graph/api/resources/windowsupdates-deploymentaudience) 和 [updatableAssetGroup](/graph/api/resources/windowsupdates-updatableassetgroup)中删除该设备。
 
 ### <a name="request"></a>请求
 

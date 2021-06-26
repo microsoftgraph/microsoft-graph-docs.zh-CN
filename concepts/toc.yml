@@ -352,7 +352,9 @@ items:
             href: people-example.md
           - name: 自定义个人资料卡片（预览）
             href: add-properties-profilecard.md
-          - name: 自定义见解隐私（预览）
+          - name: 项见解概述
+            href: item-insights-overview.md
+          - name: 自定义项见解隐私（预览）
             href: insights-customize-item-insights-privacy.md
       - name: 个人联系人
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
@@ -403,6 +405,8 @@ items:
             href: information-protection-overview.md
           - name: 合作伙伴机遇
             href: security-partner-overview.md
+      - name: 服务运行状况和通信（预览）
+        href: service-communications-concept-overview.md
       - name: 网站和列表
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
