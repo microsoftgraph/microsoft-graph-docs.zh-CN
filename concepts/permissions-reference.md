@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 15bac110263b04378d44e5fb92fbce55163aedc2
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 6460c9de594a84b21d2f7c3898291705aaf665a5
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108717"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151606"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1662,17 +1662,24 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据 | 允许应用代表登录用户读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 | 否 |
-| _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
-| _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据 | 允许应用代表登录用户阅读和管理您公司目录基于角色的访问控制 （RBAC） 设置。这包括发送目录角色和管理目录角色成员身份，以及阅读目录角色模板、目录角色和成员身份。 | 是 | 否 |
+| _RoleAssignmentSchedule.Read.Directory_ | 读取公司目录中所有活动的角色分配。 | 允许应用代表已登录的用户读取公司目录中活动的基于角色的访问控制 (RBAC) 分配。这包括读取目录角色模板和目录角色。 | 是 | 否 |
+| _RoleEligibilitySchedule.Read.Directory_ | 读取公司目录中所有符合条件的角色分配。 | 允许应用代表已登录的用户读取公司目录中符合条件的基于角色的访问控制 (RBAC) 分配。这包括读取目录角色模板和目录角色。 | 是 | 否 |
+| _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据。 | 允许应用代表登录用户读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 | 否 |
+| _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据。 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
+| _RoleManagementPolicy.Read.Directory_ | 读取公司目录中所有特权角色分配的策略。 | 允许应用代表已登录的用户读取公司目录中具有特权的基于角色的访问控制 (RBAC) 分配策略。 | 是 | 否 |
+| _RoleAssignmentSchedule.ReadWrite.Directory_ | 读取、更新和删除公司目录中所有活动的角色分配。 | 允许应用代表已登录用户读取和管理公司目录中活动的基于角色的访问控制 （RBAC） 分配。这包括管理目录角色成员身份，以及阅读目录角色模板、目录角色和活动的成员身份。 | 是 | 否 |
+| _RoleEligibilitySchedule.ReadWrite.Directory_ | 读取、更新和删除公司目录中所有符合资格的角色分配。 | 允许应用代表登录用户阅读和管理您公司目录基于角色的访问控制 （RBAC） 分配。这包括发送目录角色和管理目录角色成员身份，以及阅读目录角色模板、目录角色和成员身份。 | 是 | 否 |
+| _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据。 | 允许应用代表登录用户阅读和管理您公司目录基于角色的访问控制 （RBAC） 设置。这包括发送目录角色和管理目录角色成员身份，以及阅读目录角色模板、目录角色和成员身份。 | 是 | 否 |
+| _RoleManagementPolicy.ReadWrite.Directory_ | 读取、更新和删除公司目录中所有特权角色分配的策略。 | 允许应用代表已登录的用户读取和管理公司目录的基于角色的访问控制 (RBAC) 分配。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据 | 允许应用在没有登录用户的情况下读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 |
-| _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 |
-| _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据 | 允许应用无需登录用户即可读取和管理公司目录基于角色的访问控制 (RBAC) 设置。这包括发送目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 |
+| _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据。 | 允许应用在没有登录用户的情况下读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 |
+| _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据。 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 |
+| _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据。 | 允许应用无需登录用户即可读取和管理公司目录基于角色的访问控制 (RBAC) 设置。这包括发送目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 |
+
 
 ### <a name="remarks"></a>说明
 使用 _RoleManagement.Read.Directory_ 权限，应用程序可以读取 directoryRoles 和 directoryRoleTemplates。 这包括读取目录角色的成员身份信息。
