@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: c9949c74636a73e83463d1531c7c164e66287b29
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 4ab0fa060940a6e4e08751c029f63ca80c6ec39a
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082270"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162215"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "53082270"
 - 频道[中的](./channel.md)Microsoft Teams。
 - 通过 Microsoft Teams 中的团队或频道发送的 [chatMessage][]。
 - Microsoft 365 组中的[对话][]。
-- 对话[组中的 conversationMember](./conversationmember.md) Microsoft 365组。
+- 团队、频道或聊天中的[conversationMember](./conversationmember.md) Microsoft Teams。
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容。
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
@@ -65,7 +65,7 @@ ms.locfileid: "53082270"
 | notificationContentType | 字符串 | MS Graph 所需的内容类型为更改支持的资源类型变更通知。 默认内容类型为“application/json”内容类型。 | 全部 |
 | notificationQueryOptions | 字符串 | 用于指定目标资源值的 OData 查询选项。 当资源达到与此处所提供的查询选项相匹配的状态时，客户端会收到通知。 有了订阅创建有效负载中的新属性以及所有现有属性后，每当资源达到 “notificationQueryOptions” 属性中提到的所需状态时，Webhook 就会发送通知，例如当打印作业完成时、当打印作业资源 `isFetchable` 属性值变为 true 时，等等。 | [通用打印服务](/graph/universal-print-webhook-notifications) |
 | notificationUrl | string | 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必填。 | 全部 |
-| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必填。 | 所有 |
+| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必填。 | 全部 |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
 
