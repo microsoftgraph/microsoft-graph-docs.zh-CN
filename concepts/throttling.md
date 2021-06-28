@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 88bbdf56f1ef59fe1e805437b34d46f7e8927613
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 482b4cd4dba1c3cf7e2f726820480bd5e990df35
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580982"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151508"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -186,7 +186,7 @@ Outlook 服务提供以下资源。
 上述限制适用于下列资源:  
 onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
 
-可在 [OneNote API 限制及避免方法](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/) 中找到有关最佳做法的附加信息。  
+可在 [OneNote API 限制及避免方法](https://developer.microsoft.com/zh-CN/office/blogs/onenote-api-throttling-and-how-to-avoid-it/) 中找到有关最佳做法的附加信息。  
 
 > **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
@@ -341,7 +341,7 @@ aadUserConversationMember、appCatalogs、changeTrackedEntity、channel、chatMe
 
 ##### <a name="throttled-responses-requests"></a>受限制的响应请求
 
-- **x-ms-throttle-scope** - eg. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`（）。 指示采用下列格式 `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>` 的限制范围：
+- **x-ms-throttle-scope** - eg. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. 指示采用下列格式 `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>` 的限制范围：
   - 范围：（字符串，必填）
     - Tenant_Application - 当前应用程序对特定租户的所有请求。
     - 租户 - 当前租户的所有请求，与应用程序无关。
@@ -503,13 +503,13 @@ planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTa
 
 ### <a name="assignment-service-limits"></a>作业服务限制
 
-下列的限制适用于关于作业服务测试版 API 的请求：
+下列的限制适用于关于作业服务 API 的请求:
 
 | 请求类型                 | 每个租户每个应用限制     | 所有应用的每个租户的使用限制 |
 |---------------------------|------------------------------|----------------------------|
 | 任何         | 每 10 秒 5000 个请求   | 每 10 秒 15000 个请求 |
 | 获取/作业  | 每 10 秒 50 个请求 | 每 10 秒 150 个请求 |  
 
-前面的限制适用于以下资源：[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
-[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
-[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)
+前面的限制适用于以下资源：[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest)
