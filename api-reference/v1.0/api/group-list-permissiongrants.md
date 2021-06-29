@@ -5,18 +5,18 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 87d93d45630ea1c0358767653cb81445723fe138
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 1f0b26b455a004192c329bf26804631c13fed1ce
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961389"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162180"
 ---
 # <a name="list-permissiongrants-of-a-group"></a>组的列表权限管理
 
 命名空间：microsoft.graph
 
-列出 [组或组上](../resources/resourcespecificpermissiongrant.md) 特定 [权限](../resources/group.md)。 这是 Azure AD 应用列表，这些应用有权访问组以及每个应用具有的访问权限类型。
+列出 [组](../resources/group.md) 的所有 [特定于资源的权限授予](../resources/resourcespecificpermissiongrant.md)。此列表指定有权访问 **组** 的 Azure AD 应用，以及每个应用具有的相应类型的特定于资源的访问权限。
 
 ## <a name="permissions"></a>权限
 

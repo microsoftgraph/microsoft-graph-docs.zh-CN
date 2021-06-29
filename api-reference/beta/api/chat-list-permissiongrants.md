@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f66f1fd083560d98cccbce1f58f9e43ef9634b37
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 258bc1132f8a8f030a148b43a4ba04b1ebbba0eb
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990838"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162236"
 ---
 # <a name="list-permissiongrants-of-a-chat"></a>聊天的列表权限权限
 
@@ -18,7 +18,7 @@ ms.locfileid: "52990838"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [聊天](../resources/chat.md) 中列出[ 特定于资源的授予权限](../resources/resourcespecificpermissiongrant.md)。这是 Azure AD 应用列表，这些应用有权访问聊天以及每个应用具有的访问权限类型。
+列出 [聊天](../resources/chat.md) 的所有 [特定于资源的权限授予](../resources/resourcespecificpermissiongrant.md)。此列表指定有权访问 **聊天** 的 Azure AD 应用，以及每个应用具有的相应类型的特定于资源的访问权限。
 
 ## <a name="permissions"></a>权限
 
