@@ -28,6 +28,11 @@ items:
         href: /graph/paging?context=graph/api/1.0
       - name: 使用查询参数
         href: /graph/query-parameters?context=graph/api/1.0
+        items:
+          - name: 使用搜索查询参数
+            href: /graph/search-query-parameter?context=graph/api/1.0
+          - name: 高级查询功能
+            href: /graph/aad-advanced-queries?context=graph/api/1.0
       - name: 批处理
         displayName: Batch requests
         href: /graph/json-batching?context=graph/api/1.0
@@ -353,7 +358,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -4318,7 +4323,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -4930,7 +4935,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -5757,7 +5762,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
