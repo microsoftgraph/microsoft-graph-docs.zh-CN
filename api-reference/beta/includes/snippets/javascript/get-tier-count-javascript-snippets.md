@@ -1,0 +1,26 @@
+---
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f1f59405d24d5931f2af08a0b919d88f91fb4473
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53207176"
+---
+```javascript
+
+const options = {
+    authProvider,
+};
+
+const client = Client.init(options);
+
+let user = await client.api('/groups/{id}/transitiveMembers/microsoft.graph.user')
+    .version('beta')
+    .header('ConsistencyLevel','eventual')
+    .search('displayName:tier')
+    .select('displayName,id')
+    .orderby('displayName')
+    .get();
+
+```
