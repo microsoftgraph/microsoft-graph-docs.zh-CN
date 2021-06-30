@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3a3c7aae29f76e6e23b93c9d0339c5abc35fc274
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 8c9f15e754c3b66a0d60b6edafa76933c0f66c15
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "53006013"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211822"
 ---
 ```javascript
 
@@ -20,6 +20,7 @@ const accessReviewScheduleDefinition = {
   descriptionForAdmins: 'New scheduled access review',
   descriptionForReviewers: 'If you have any questions, contact jerry@contoso.com',
   scope: {
+    '@odata.type': '#microsoft.graph.accessReviewQueryScope',
     query: '/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers',
     queryType: 'MicrosoftGraph'
   },

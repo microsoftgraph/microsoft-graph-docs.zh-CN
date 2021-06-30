@@ -5,12 +5,12 @@ author: anniecolonna
 localization_priority: Normal
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 0a5e008e32565675982ec7d120be3d6d3bad98ed
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 36d28aa71dd2c6946d3a1b8227e2873788a700cc
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060661"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210072"
 ---
 # <a name="list-teamworktags"></a>列出团队合作标记
 命名空间：microsoft.graph
@@ -61,6 +61,8 @@ GET /teams/{team-Id}/tags
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamworktag"
@@ -69,6 +71,24 @@ GET /teams/{team-Id}/tags
 ``` http
 GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamworktag-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamworktag-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamworktag-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamworktag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应
@@ -76,7 +96,8 @@ GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.teamworkTag)"
+  "@odata.type": "microsoft.graph.teamworkTag",
+  "isCollection": true
 }
 -->
 ``` http
@@ -84,26 +105,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-        "@odata.type": "#microsoft.graph.teamworkTag",
-        "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
-        "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
-        "displayName": "Finance",
-        "description": "Finance Team for Mach 8 Project",
-        "memberCount": 2,
-        "tagType": "standard"
-    },
-    {
-        "@odata.type": "#microsoft.graph.teamworkTag",
-        "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjIzk3ZjYyMzQ0LTU3ZGMtNDA5Yy04OGFkLWM0YWYxNDE1OGZmNQ==",
-        "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
-        "displayName": "Legal",
-        "description": "Legal experts, ask us your legal questions",
-        "memberCount": 4,
-        "tagType": "standard"
-    }
-  ]
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.teamworkTag",
+         "id":"MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
+         "teamId":"53c53217-fe77-4383-bc5a-ed4937a1aecd",
+         "displayName":"Finance",
+         "description":"Finance Team for Mach 8 Project",
+         "memberCount":2,
+         "tagType":"standard"
+      },
+      {
+         "@odata.type":"#microsoft.graph.teamworkTag",
+         "id":"MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjIzk3ZjYyMzQ0LTU3ZGMtNDA5Yy04OGFkLWM0YWYxNDE1OGZmNQ==",
+         "teamId":"53c53217-fe77-4383-bc5a-ed4937a1aecd",
+         "displayName":"Legal",
+         "description":"Legal experts, ask us your legal questions",
+         "memberCount":4,
+         "tagType":"standard"
+      }
+   ]
 }
 ```
 

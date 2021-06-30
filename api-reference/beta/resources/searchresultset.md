@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5d17791a618f1d587520f23524da9ce19241d3b1
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: ee5ac6d892b6562ca5c1053b474135f1dd745ba5
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067864"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210204"
 ---
 # <a name="searchresultset-resource-type"></a>searchResultSet 资源类型
 
@@ -25,7 +25,8 @@ ms.locfileid: "52067864"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |hitsContainers|[searchHitsContainer](searchhitscontainer.md) 集合|搜索结果的集合。|
-|searchTerms|字符串集合|包含初始搜索查询中发送的搜索词。|
+|searchTerms|String collection|包含初始搜索查询中发送的搜索词。|
+|resultTemplates|[resultTemplate](resultTemplate.md) 集合|resultTemplateIds 和关联值的字典，其中包括结果模板的名称和 JSON 架构。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,7 +44,8 @@ ms.locfileid: "52067864"
 ```json
 {
   "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
-  "searchTerms": ["String"]
+  "searchTerms": ["String"],
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}]
 }
 ```
 

@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 58dfdb7a260d2381b05332914fe71f9948c87e17
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: d64cb09545d1ce664b017ba3fcbcd5989d0f2a25
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151592"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210190"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务部署快速安全更新
 
@@ -85,9 +85,6 @@ Content-Type: application/json
 ```
 
 ## <a name="step-2-create-a-deployment"></a>步骤 2：创建部署
-
-> [!NOTE]
-> 首次在租户中部署快速安全更新时，在为组织配置服务时，你可能会遇到最多一天的延迟。 此延迟不适用于后续部署或功能更新部署，将在将来的更新中予以解决。
 
 [部署](/graph/api/resources/windowsupdates-deployment)指定要部署的内容、如何以及何时部署内容以及目标设备。 对于质量更新，使用目标合规性日期指定内容。 创建部署后，将自动将部署访问群体创建为关系。
 

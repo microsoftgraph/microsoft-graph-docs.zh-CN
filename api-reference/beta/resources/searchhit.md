@@ -1,16 +1,16 @@
 ---
 title: searchHit 资源类型
-description: SearchHit 实体的说明
+description: searchHit 实体的说明
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c140a30d4e77840b1fd7c7ccceec16e0554cd855
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 7c546483eea81e7d89a3a87ba5b8c0eb0ff48783
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193608"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210330"
 ---
 # <a name="searchhit-resource-type"></a>searchHit 资源类型
 
@@ -20,22 +20,23 @@ ms.locfileid: "48193608"
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-代表搜索结果列表中的单个结果。
+表示搜索结果列表中的单个结果。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hitId|字符串|项的内部标识符。|
+|hitId|String|项的内部标识符。|
 |排名|Int32|结果的排名或顺序。|
-|contentSource|字符串|**ExternalItem**所属的内容源的名称。|
-|摘要|字符串|如果摘要可用，则为结果摘要。|
-|resource|[实体](entity.md)|搜索结果的基本 Microsoft Graph 表示形式。|
-|_id (已弃用) |字符串| 重命名为 **hitId**。 项的内部标识符。|
-|_score (已弃用) |Int32|重命名为 **rank**。 结果的分数或顺序。|
-|_summary (已弃用) |字符串|重命名为 **摘要**。  (如果摘要可用) 的结果摘要。|
-|_sortField (已弃用) |字符串|此属性已被删除。|
-|_source (已弃用) |[实体](entity.md)|重命名为 **资源**。 搜索结果的基础图形表示形式。|
+|contentSource|String|**externalItem** 是 的内容源的名称。|
+|摘要|String|结果摘要（如果摘要可用）。|
+|resultTemplateId|String|用于呈现搜索结果的结果模板的 ID。 此 ID 必须映射到 **resultTemplates** 字典（也包含在 [searchresponse](searchresponse.md) 中）中的显示布局。|
+|resource|[实体](entity.md)|基础 Microsoft Graph搜索结果的表示形式。|
+|_id (弃用) |String| 重命名为 **hitId**。 项的内部标识符。|
+|_score (弃用) |Int32|重命名为 **排名**。 结果的分数或顺序。|
+|_summary (弃用) |String|重命名为 **摘要**。 如果摘要可用， (结果摘要) 。|
+|_sortField (弃用) |String|此属性已删除。|
+|_source (弃用) |[实体](entity.md)|重命名为 **资源**。 基础Graph搜索结果的表示形式。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -55,6 +56,7 @@ ms.locfileid: "48193608"
   "hitId": "String",
   "rank": 1,
   "summary": "String",
+  "resultTemplateId": "String",
   "contentSource": "String",
   "resource": { "@odata.type": "microsoft.graph.entity" },
   "_id": "String",

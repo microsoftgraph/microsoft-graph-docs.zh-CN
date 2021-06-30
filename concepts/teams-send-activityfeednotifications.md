@@ -4,12 +4,12 @@ description: 使用应用和 microsoft graph Microsoft Teams活动Teams源通知
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 37358a7359236159063bcb3edc1d61c0af5cb180
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 5923b706321c9180fba8833aab029bf2396ecaff
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060578"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210197"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>向用户发送活动源通知Microsoft Teams
 
@@ -91,7 +91,7 @@ ms.locfileid: "53060578"
 |:---|:---|:---|
 |类型|string|活动的类型。 这需在特定的清单中是唯一的。|
 |说明|string|可读简短说明。 这将在客户端上Microsoft Teams显示。|
-|templateText|string|活动通知的模板文本。 可以通过封装 中的参数来声明参数 `{}` 。|
+|templateText|字符串|活动通知的模板文本。 可以通过封装 中的参数来声明参数 `{}` 。|
 
 >**注意：** `actor` 是一个始终采用调用方名称的特殊参数。 在委派呼叫中 `actor` ， 是用户名。 在仅应用程序调用中，它采用应用程序Teams的名称。
 
@@ -241,6 +241,137 @@ Content-Type: application/json
             "value": "6788662"
         }
     ]
+}
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-the-team-members-about-an-event"></a>示例 4：向团队成员通知事件
+
+此示例演示如何向所有团队成员发送活动源通知。 本示例向团队成员通知新事件。 
+
+> **注意：** 向所有团队成员发送通知的能力当前仅在 beta 版中可用。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": "Teams webUrl"
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.teamMembersNotificationRecipient",
+        "teamId": "7155e3c8-175e-4311-97ef-572edc3aa3db"
+    }
+}
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-5-notify-the-channel-members-about-an-event"></a>示例 5：通知频道成员事件
+
+此示例演示如何向所有频道成员发送活动源通知。 此示例向频道成员通知新事件。 
+
+> **注意：** 向所有频道成员发送通知的能力当前仅在 beta 版中可用。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": "Teams webUrl"
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.channelMembersNotificationRecipient",
+        "teamId": "7155e3c8-175e-4311-97ef-572edc3aa3db",
+        "channelId": "19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2"
+    }
+}
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-6-notify-the-chat-members-about-an-event"></a>示例 6：向聊天成员通知事件
+
+此示例演示如何向所有聊天成员发送活动源通知。 此示例向聊天成员通知新事件。 
+
+> **注意：** 向所有聊天成员发送通知的能力当前仅在 beta 版中可用。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": "Teams webUrl"
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.chatMembersNotificationRecipient",
+        "chatId": "19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"
+    }
 }
 ```
 

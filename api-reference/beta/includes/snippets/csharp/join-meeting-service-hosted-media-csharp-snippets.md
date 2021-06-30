@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3fb3710806a85def726dc2b24b6adc7620a108c6
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 324e5ca615385336836194371599d420060e0a43
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472276"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211881"
 ---
 ```csharp
 
@@ -49,7 +49,7 @@ var call = new Call
                 DisplayName = "Bob",
                 AdditionalData = new Dictionary<string, object>()
                 {
-                    {"tenantId", "86dc81db-c112-4228-9222-63f3esaa1edb"}
+                    {"tenantId", "aa67bd4c-8475-432d-bd41-39f255720e0a"}
                 }
             }
         },
