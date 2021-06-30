@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 02140f99accf36bfac156996e83bd75de2bb3b19
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 984c7667ceb2a28de189230952e5333f273cce24
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107822"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208249"
 ---
 # <a name="presence-clearpresence"></a>presence： clearPresence
 
@@ -49,7 +49,7 @@ POST /users/{userId}/presence/clearPresence
 
 | 参数 | 类型   | 说明                                   |
 | :-------- | :----- | :-------------------------------------------- |
-| sessionId | string | 应用程序状态会话的 ID。 |
+| sessionId | 字符串 | 应用程序状态会话的 ID。 |
 
 
 > [!IMPORTANT]
@@ -66,6 +66,8 @@ POST /users/{userId}/presence/clearPresence
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "clear--presence"
@@ -79,6 +81,24 @@ Content-Type: application/json
   "sessionId": "22553876-f5ab-4529-bffb-cfe50aa89f87"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/clear--presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/clear--presence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/clear--presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

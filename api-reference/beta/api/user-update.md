@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9dbe503e1ec5c4ed39f524f530aaf07b4be3f914
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: 40e918c718e880d2d3d843b374428ac1e1aec5eb
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010218"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53207138"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -30,7 +30,7 @@ ms.locfileid: "53010218"
 |应用程序 | User.ReadWrite.All、User.ManageIdentities.All、Directory.ReadWrite.All |
 
 >[!NOTE]
-> - 更新 **passwordProfile** 属性时，需要以下权限：Directory.AccessAsUser.All。
+> - 更新 **passwordProfile 属性** 时，需要以下权限 *：Directory.AccessAsUser.All*。
 > - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 内置角色帮助人员（密码）](/azure/active-directory/roles/permissions-reference)。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
 > - 个人 Microsoft 帐户必须绑定到 AAD 租户，才能使用 User.ReadWrite 对个人 Microsoft 帐户的委派权限更新配置文件。
 > - 更新 **identities** 属性需要 User.ManageIdentities.All 权限。 此外，不允许将 [B2C 本地帐户](../resources/objectidentity.md)添加到现有 **user** 对象，除非 **user** 对象已包含本地帐户标识。
@@ -53,7 +53,7 @@ PATCH /users/{id | userPrincipalName}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | 设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](../resources/user.md#legal-age-group-property-definitions)以了解详细信息。 |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |birthday|DateTimeOffset|用户的生日。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
@@ -80,7 +80,7 @@ PATCH /users/{id | userPrincipalName}
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。 如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，必须在创建新用户帐户时指定此属性。 **重要说明：** 指定此属性时不能使用 **$** 和 **_** 字符。                            |
 |otherMails|String |用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。|
 |passwordPolicies|String|指定用户的密码策略。 此值表示枚举，其中一个可能 `DisableStrongPassword`为枚举值，允许指定超过默认策略的密码。 `DisablePasswordExpiration` 也可以指定 。 可同时指定两者;例如： `DisablePasswordExpiration, DisableStrongPassword`。|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。 *若要更新此属性，需要 Directory.AccessAsUser.All* 权限。|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。 需要 *Directory.AccessAsUser.All* 权限才能更新此属性。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
 |preferredLanguage|String|用户的首选语言。 应遵循 ISO 639-1 代码;例如， `en-US`。|
@@ -200,6 +200,37 @@ Content-type: application/json
 #### <a name="response"></a>响应
 
 以下示例显示了相应的响应。
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>示例 3：更新用户的 passwordProfile 以重置其密码
+
+以下示例显示重置其他用户密码的请求。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "update_user_passwordProfile"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+  "passwordProfile": {
+    "forceChangePasswordNextSignIn": false,
+    "password": "xWwvJ]6NMw+bWH-d"
+  }
+}
+```
+
+
+#### <a name="response"></a>响应
 <!-- {
   "blockType": "response"
 } -->

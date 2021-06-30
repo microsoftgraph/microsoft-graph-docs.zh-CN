@@ -5,17 +5,19 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 46b653f3d69111043c41ec0a83907ce041c10a81
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e16d6aade57dfb10f4cd387d9d6719c85c2c3b79
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954085"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53209336"
 ---
 # <a name="team-sendactivitynotification"></a>team：sendActivityNotification
 命名空间：microsoft.graph
 
-在团队范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅 [发送 Teams 活动通知](/graph/teams-send-activityfeednotifications)。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+在团队范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,20 +52,20 @@ POST /teams/{teamId}/sendActivityNotification
 |参数|类型|说明|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
-|activityType|String|活动类型。 这必须在 Teams 应用清单 [中声明](/microsoftteams/platform/overview)。|
+|activityType|String|活动类型。 这必须在应用清单[Teams声明](/microsoftteams/platform/overview)。|
 |chainId|Int64|可选。 用于替代上一个通知。 在后续 `chainId` 请求中使用相同的方法替代上一个通知。|
-|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams 将只显示前 150 个字符。|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在 Teams 应用清单 中对应的活动源条目中定义的 `activityType` 模板 [变量的值](/microsoftteams/platform/overview)。|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|通知的收件人。 仅支持 Azure AD 用户。 另请参阅 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md)。 |
+|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams显示前 150 个字符。|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与应用程序Teams `activityType` [相对应](/microsoftteams/platform/overview)。|
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|通知的收件人。 另请参阅 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) [、teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md)和 [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md)。 |
 
 将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityUrl` ：
 
-- [team](../resources/team.md)
+- [团队](../resources/team.md)
 - [频道](../resources/channel.md)
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **注意：** 实体 url 必须相同或 url 中团队的子资源。 此外 [，Teams 应用](/microsoftteams/platform/overview) 必须安装在团队中。
+> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams](/microsoftteams/platform/overview)应用必须安装在团队中。
 
 ## <a name="response"></a>响应
 
@@ -209,7 +211,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>示例 3：使用自定义主题通知用户事件
 
-如前面的示例中所示，你可以链接到团队的不同方面。 但是，如果你希望链接到不是团队的一部分或不是由 Microsoft Graph 表示的方面，或者想要自定义名称，你可以将 的源设置为 并传递其自定义 `topic` `text` 值。 `webUrl` 将 source 设置为 时 `topic` 是必需的 `text` 。
+如前面的示例中所示，你可以链接到团队的不同方面。 但是，如果要链接到不是团队的一部分或不是由 Microsoft Graph 表示的方面，或者希望自定义名称，可以将 的源设置为 并传递其自定义 `topic` `text` 值。 `webUrl` 将 source 设置为 时 `topic` 是必需的 `text` 。
 
 #### <a name="request"></a>请求
 
@@ -263,6 +265,103 @@ Content-Type: application/json
 
 ---
 
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-the-team-members-about-pending-finance-approval-requests"></a>示例 4：通知团队成员有关待处理的财务审批请求
+
+此示例演示如何向所有团队成员发送活动源通知。 此示例与前面的示例类似。 但是，在这种情况下， 是 `recipient` [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md)。 请注意， `teamId` 中指定的 `recipient` 必须与请求 URL `teamId` 中指定的 匹配。
+
+> **注意：** 向所有团队成员发送通知的能力仅限于拥有 10，000 个成员或更少成员的团队。 如果团队超过 10，000 个成员，则任何团队成员均不会收到通知。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_4"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.teamMembersNotificationRecipient",
+        "teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-5-notify-the-channel-members-about-pending-finance-approval-requests"></a>示例 5：通知频道成员有关待处理的财务审批请求
+
+此示例演示如何向所有频道成员发送活动源通知。 此示例与上一个示例类似。 但是，在这种情况下， 是 `recipient` [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md)。 请注意， `teamId` 中指定的 `recipient` 必须与请求 URL `teamId` 中指定的 匹配。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_5"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.channelMembersNotificationRecipient",
+        "teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7",
+        "channelId": "19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2"
+    },
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
 
 #### <a name="response"></a>响应
 <!-- {

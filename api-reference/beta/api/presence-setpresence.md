@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: d403cf8e828ecebb1e08164657ac1adb8191f57f
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 1e7e90b90ad92ca62327ad9c356fa1d870c7ecbd
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107812"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208280"
 ---
 # <a name="presence-setpresence"></a>presence： setPresence
 
@@ -62,9 +62,9 @@ POST /users/{userId}/presence/setPresence
 
 | 参数          | 类型     | 说明                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | string   | 应用程序状态会话的 ID。                                                          |
-| availability       | string   | 基本状态信息。                                                                         |
-| 活动           | string   | 可用性的补充信息。                                                          |
+| sessionId          | 字符串   | 应用程序状态会话的 ID。                                                          |
+| availability       | 字符串   | 基本状态信息。                                                                         |
+| 活动           | 字符串   | 可用性的补充信息。                                                          |
 | expirationDuration | duration | 应用状态会话的过期时间。 该值以 ISO 8601 格式表示持续时间。 |
 
 > [!IMPORTANT]
@@ -88,6 +88,8 @@ POST /users/{userId}/presence/setPresence
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "set-presence"
@@ -104,6 +106,24 @@ Content-Type: application/json
   "expirationDuration": "PT1H"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/set-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/set-presence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/set-presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/set-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

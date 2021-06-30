@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4b63cec31041f141c7807f61953beaba36845073
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 109a761f876018cbfce9d94da74e96724b01f17c
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751571"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53207033"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "52751571"
 
 > **注意**：此资源支持订阅更改 (使用更改通知创建、) 和 [删除更改](../resources/webhooks.md)。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatMessage)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -56,9 +56,9 @@ ms.locfileid: "52751571"
 |:---------------|:--------|:----------|
 |id|String| 只读。 消息的唯一 ID。|
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而仅适用于 chats)  |
-|from|[identitySet](identityset.md)| 只读。 聊天消息的发送者的详细信息。|
+|起始数量|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| 只读。 聊天消息的发送者的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
-|messageType|string|聊天消息的类型。 可能的值是 `message` ：。|
+|messageType|字符串|聊天消息的类型。 可能的值是 `message` ：。|
 |createdDateTime|dateTimeOffset|创建聊天消息的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 创建聊天消息的时间戳 (设置) 修改，包括添加或删除回应时。 |
 |lastEditedDateTime|dateTimeOffset|只读。 编辑聊天消息的时间戳。 在用户界面中触发"已编辑Teams标记。 如果未进行编辑，则值为 `null` 。|
@@ -72,7 +72,7 @@ ms.locfileid: "52751571"
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此聊天消息的反应 (例如，如) 。|
 |区域设置|string|客户端设置的聊天消息区域设置。 始终设置为 `en-us`。|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序中数据丢失防护设置的策略违反 () 属性。|
-|chatId|string|如果消息是在聊天中发送的，则代表聊天的标识。|
+|chatId|字符串|如果消息是在聊天中发送的，则代表聊天的标识。|
 |channelIdentity|[channelIdentity](channelidentity.md)|如果消息是在频道中发送的，则代表频道的标识。|
 |webUrl|string|只读。 指向邮件中Microsoft Teams。|
 ## <a name="relationships"></a>关系
@@ -110,7 +110,7 @@ ms.locfileid: "52751571"
 {
   "id": "string (identifier)",
   "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.identitySet"},
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
   "etag": "string",
   "messageType": "string",
   "createdDateTime": "string (timestamp)",

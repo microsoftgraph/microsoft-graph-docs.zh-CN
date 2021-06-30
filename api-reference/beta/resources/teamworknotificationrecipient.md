@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a9cccfe34c728877fe9b859f29361560bfff388f
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: dcfaa0b8d94d3e3724a398e370c5d5626c9fb404
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813032"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208202"
 ---
 # <a name="teamworknotificationrecipient-resource-type"></a>teamworkNotificationRecipient 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "52813032"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在活动源中发送的通知Microsoft Teams收件人。 另请参阅 [aadUserNotificationRecipient](aadusernotificationrecipient.md)。
+表示在活动源中发送的通知Microsoft Teams收件人。 另请参阅[aadUserNotificationRecipient](aadusernotificationrecipient.md) [、teamMembersNotificationRecipient、channelMembersNotificationRecipient](teammembersnotificationrecipient.md)和[chatMembersNotificationRecipient](chatmembersnotificationrecipient.md)。 [](channelmembersnotificationrecipient.md)
 
 ## <a name="properties"></a>属性
 无。

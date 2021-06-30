@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: f66b37ee9f9ae69f5f0ccb1f4a2f45f3a3522163
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 64e3e74102551a91f99120c7384a482f0b07e304
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582240"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208139"
 ---
 # <a name="chatmessagereaction-resource-type"></a>chatMessageReaction 资源类型
 
@@ -27,8 +27,8 @@ ms.locfileid: "51582240"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|reactionType|字符串|支持的值包括 `like` `angry` `sad` `laugh` 、、、、、。 `heart` `surprised` |
-|user|[identitySet](identityset.md)|对邮件做出响应的用户。|
+|reactionType|String|支持的值包括 `like` `angry` `sad` `laugh` 、、、、、。 `heart` `surprised` |
+|user|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|对邮件做出响应的用户。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -47,7 +47,7 @@ ms.locfileid: "51582240"
 {
   "createdDateTime": "String (timestamp)",
   "reactionType": "String",
-  "user": {"@odata.type": "microsoft.graph.identitySet"}
+  "user": {"@odata.type": "microsoft.graph.chatMessageReactionIdentitySet"}
 }
 ```
 
