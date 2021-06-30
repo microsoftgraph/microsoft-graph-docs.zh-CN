@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: b152563f0104c32b78d9ea237ce5bf585597ec49
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 732d6487bc73cf9cdf0f70168d00d4b0e13ce45e
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645512"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208832"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述
 
@@ -62,6 +62,8 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
   - [搜索外部内容](search-concept-custom-types.md)（预览版）
   - [排序搜索结果](search-concept-sort.md)（预览版）
   - [改进搜索结果](search-concept-aggregation.md)（预览版）
+  - [请求拼写更正](search-concept-speller.md) （预览版）
+  - [搜索显示布局](search-concept-display-layout.md) （预览版）
   
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
 - 从 GitHub 下载[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)。
