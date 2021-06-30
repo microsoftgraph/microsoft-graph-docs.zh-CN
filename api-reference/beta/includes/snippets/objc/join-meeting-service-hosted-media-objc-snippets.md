@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ba4ecc50dd93a9ff7cb835adeefdea445f6c04cc
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 84de55f4a87f6baad7986aa769257be5e048861b
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472275"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211928"
 ---
 ```objc
 
@@ -41,8 +41,8 @@ MSGraphMeetingInfo *meetingInfo = [[MSGraphMeetingInfo alloc] init];
 MSGraphIdentitySet *organizer = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"];
+[user setTenantId:@"aa67bd4c-8475-432d-bd41-39f255720e0a"];
 [user setDisplayName:@"Bob"];
-[user setTenantId:@"86dc81db-c112-4228-9222-63f3esaa1edb"];
 [organizer setUser:user];
 [meetingInfo setOrganizer:organizer];
 [meetingInfo setAllowConversationWithoutHost: true];

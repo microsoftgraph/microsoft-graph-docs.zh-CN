@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2d274b4aaee83f749622c5e02d518f9f94402bc9
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: bc0b9dc25af8c32b31d9997a3f717ff99fdbd94a
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52663974"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211917"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let authenticationContextClassReferences = await client.api('/identity/conditionalAccess/authenticationContextClassReferences')
+let authenticationContextClassReference = await client.api('/identity/conditionalAccess/authenticationContextClassReferences/c1')
     .version('beta')
     .get();
 

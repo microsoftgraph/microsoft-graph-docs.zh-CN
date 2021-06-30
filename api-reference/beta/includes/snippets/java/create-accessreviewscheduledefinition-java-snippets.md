@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1cc2218ea580aa21bf6371cddc16caa187a9cb9d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 2c6d68652ed015caf6f6628510bef7b7860d49ca
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664589"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211901"
 ---
 ```java
 
@@ -15,7 +15,7 @@ AccessReviewScheduleDefinition accessReviewScheduleDefinition = new AccessReview
 accessReviewScheduleDefinition.displayName = "Test create";
 accessReviewScheduleDefinition.descriptionForAdmins = "New scheduled access review";
 accessReviewScheduleDefinition.descriptionForReviewers = "If you have any questions, contact jerry@contoso.com";
-AccessReviewScope scope = new AccessReviewScope();
+AccessReviewQueryScope scope = new AccessReviewQueryScope();
 scope.query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers";
 scope.queryType = "MicrosoftGraph";
 accessReviewScheduleDefinition.scope = scope;

@@ -1,20 +1,20 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 191cb6b1a6ccce935baeaf7624de5bac7ca0e1f0
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 955f1427f757ae73b5ae881e8f834882f8611d60
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473942"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211909"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AccessPackageFilterByCurrentUserCollectionPage filterByCurrentUser = graphClient.identityGovernance().entitlementManagement().accessPackages()
-    .filterByCurrentUser(AccessPackageFilterByCurrentUserParameterSet
+AccessPackageAssignmentRequestFilterByCurrentUserCollectionPage filterByCurrentUser = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests()
+    .filterByCurrentUser(AccessPackageAssignmentRequestFilterByCurrentUserParameterSet
         .newBuilder()
-        .withOn('allowedRequestor')
+        .withOn('target')
         .build())
     .buildRequest()
     .get();
