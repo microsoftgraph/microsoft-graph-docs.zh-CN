@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 74b2644d5be0b0dd9f2c86bd5e2ef23d9e9b1886
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 35ce3435e25254bb326a719eca9b52f6619c47f8
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50800083"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211870"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let thumbnails = await client.api('/me/drive/items/{item-id}/thumbnails?select=c300x400_Crop')
+let thumbnails = await client.api('/me/drive/items/{item-id}/thumbnails?select=c300x400_crop')
     .get();
 
 ```

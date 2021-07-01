@@ -5,86 +5,88 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73fbe33f5849699672ef30cecec2c99e07a0c127
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 89edaefbdd73649be42d20b9b680c1e1acf9c2a0
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582920"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53207739"
 ---
-# <a name="send-chatmessage-in-a-channel-or-a-chat"></a><span data-ttu-id="5134a-103">在频道或聊天中发送 chatMessage</span><span class="sxs-lookup"><span data-stu-id="5134a-103">Send chatMessage in a channel or a chat</span></span>
+# <a name="send-chatmessage-in-a-channel-or-a-chat"></a><span data-ttu-id="6af5d-103">在频道或聊天中发送 chatMessage</span><span class="sxs-lookup"><span data-stu-id="6af5d-103">Send chatMessage in a channel or a chat</span></span>
 
-<span data-ttu-id="5134a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5134a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6af5d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6af5d-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="5134a-105">在指定的频道或聊天中[发送新的](../resources/channel.md)[chatMessage。](../resources/chatmessage.md) [](../resources/chat.md)</span><span class="sxs-lookup"><span data-stu-id="5134a-105">Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="6af5d-105">在指定的频道或聊天中[发送新的](../resources/channel.md)[chatMessage。](../resources/chatmessage.md) [](../resources/chat.md)</span><span class="sxs-lookup"><span data-stu-id="6af5d-105">Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
 
-> <span data-ttu-id="5134a-106">**注意**：不建议使用此 API 进行数据迁移。</span><span class="sxs-lookup"><span data-stu-id="5134a-106">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="5134a-107">它不具有典型迁移所需的吞吐量。</span><span class="sxs-lookup"><span data-stu-id="5134a-107">It does not have the throughput necessary for a typical migration.</span></span>
+> <span data-ttu-id="6af5d-106">**注意**：不建议使用此 API 进行数据迁移。</span><span class="sxs-lookup"><span data-stu-id="6af5d-106">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="6af5d-107">它不具有典型迁移所需的吞吐量。</span><span class="sxs-lookup"><span data-stu-id="6af5d-107">It does not have the throughput necessary for a typical migration.</span></span>
 
-> <span data-ttu-id="5134a-108">**注意**：使用 Microsoft Teams [](/legal/microsoft-apis/terms-of-use)作为 microsoft Teams 日志文件。</span><span class="sxs-lookup"><span data-stu-id="5134a-108">**Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="5134a-109">仅发送用户将阅读的邮件。</span><span class="sxs-lookup"><span data-stu-id="5134a-109">Only send messages that people will read.</span></span>
+> <span data-ttu-id="6af5d-108">**注意**：使用安全工具 [作为](/legal/microsoft-apis/terms-of-use)Microsoft Teams违反日志文件。</span><span class="sxs-lookup"><span data-stu-id="6af5d-108">**Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="6af5d-109">仅发送用户将阅读的邮件。</span><span class="sxs-lookup"><span data-stu-id="6af5d-109">Only send messages that people will read.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5134a-110">权限</span><span class="sxs-lookup"><span data-stu-id="5134a-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6af5d-110">权限</span><span class="sxs-lookup"><span data-stu-id="6af5d-110">Permissions</span></span>
 
-<span data-ttu-id="5134a-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5134a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6af5d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6af5d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="permissions-for-channel"></a><span data-ttu-id="5134a-113">频道权限</span><span class="sxs-lookup"><span data-stu-id="5134a-113">Permissions for channel</span></span>
-| <span data-ttu-id="5134a-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="5134a-114">Permission type</span></span>                        | <span data-ttu-id="5134a-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5134a-115">Permissions (from least to most privileged)</span></span> |
+### <a name="permissions-for-channel"></a><span data-ttu-id="6af5d-113">频道权限</span><span class="sxs-lookup"><span data-stu-id="6af5d-113">Permissions for channel</span></span>
+| <span data-ttu-id="6af5d-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="6af5d-114">Permission type</span></span>                        | <span data-ttu-id="6af5d-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6af5d-115">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5134a-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5134a-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="5134a-117">ChannelMessage.Send</span><span class="sxs-lookup"><span data-stu-id="5134a-117">ChannelMessage.Send</span></span> |
-| <span data-ttu-id="5134a-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5134a-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5134a-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="5134a-119">Not supported.</span></span> |
-| <span data-ttu-id="5134a-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="5134a-120">Application</span></span>                            | <span data-ttu-id="5134a-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="5134a-121">Not supported.</span></span> |
+| <span data-ttu-id="6af5d-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6af5d-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="6af5d-117">ChannelMessage.Send</span><span class="sxs-lookup"><span data-stu-id="6af5d-117">ChannelMessage.Send</span></span> |
+| <span data-ttu-id="6af5d-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6af5d-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6af5d-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="6af5d-119">Not supported.</span></span> |
+| <span data-ttu-id="6af5d-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="6af5d-120">Application</span></span>                            | <span data-ttu-id="6af5d-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="6af5d-121">Not supported.</span></span> |
 
-### <a name="permissions-for-chat"></a><span data-ttu-id="5134a-122">聊天权限</span><span class="sxs-lookup"><span data-stu-id="5134a-122">Permissions for chat</span></span>
-| <span data-ttu-id="5134a-123">权限类型</span><span class="sxs-lookup"><span data-stu-id="5134a-123">Permission type</span></span>                        | <span data-ttu-id="5134a-124">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5134a-124">Permissions (from least to most privileged)</span></span> |
+### <a name="permissions-for-chat"></a><span data-ttu-id="6af5d-122">聊天权限</span><span class="sxs-lookup"><span data-stu-id="6af5d-122">Permissions for chat</span></span>
+| <span data-ttu-id="6af5d-123">权限类型</span><span class="sxs-lookup"><span data-stu-id="6af5d-123">Permission type</span></span>                        | <span data-ttu-id="6af5d-124">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6af5d-124">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5134a-125">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5134a-125">Delegated (work or school account)</span></span>     | <span data-ttu-id="5134a-126">ChatMessage.Send、Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5134a-126">ChatMessage.Send, Chat.ReadWrite</span></span> |
-| <span data-ttu-id="5134a-127">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5134a-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5134a-128">不支持。</span><span class="sxs-lookup"><span data-stu-id="5134a-128">Not supported.</span></span> |
-| <span data-ttu-id="5134a-129">应用程序</span><span class="sxs-lookup"><span data-stu-id="5134a-129">Application</span></span>                            | <span data-ttu-id="5134a-130">不支持。</span><span class="sxs-lookup"><span data-stu-id="5134a-130">Not supported.</span></span> |
+| <span data-ttu-id="6af5d-125">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6af5d-125">Delegated (work or school account)</span></span>     | <span data-ttu-id="6af5d-126">ChatMessage.Send、Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6af5d-126">ChatMessage.Send, Chat.ReadWrite</span></span> |
+| <span data-ttu-id="6af5d-127">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6af5d-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6af5d-128">不支持。</span><span class="sxs-lookup"><span data-stu-id="6af5d-128">Not supported.</span></span> |
+| <span data-ttu-id="6af5d-129">应用程序</span><span class="sxs-lookup"><span data-stu-id="6af5d-129">Application</span></span>                            | <span data-ttu-id="6af5d-130">不支持。</span><span class="sxs-lookup"><span data-stu-id="6af5d-130">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5134a-131">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5134a-131">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6af5d-131">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6af5d-131">HTTP request</span></span>
 
-<span data-ttu-id="5134a-132">**在频道中发送消息**</span><span class="sxs-lookup"><span data-stu-id="5134a-132">**Sending message in a channel**</span></span>
+<span data-ttu-id="6af5d-132">**在频道中发送消息**</span><span class="sxs-lookup"><span data-stu-id="6af5d-132">**Sending message in a channel**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
-<span data-ttu-id="5134a-133">**在频道中发送回复**</span><span class="sxs-lookup"><span data-stu-id="5134a-133">**Sending replies in a channel**</span></span>
+<span data-ttu-id="6af5d-133">**在频道中发送回复**</span><span class="sxs-lookup"><span data-stu-id="6af5d-133">**Sending replies in a channel**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
-<span data-ttu-id="5134a-134">**在聊天中发送消息**</span><span class="sxs-lookup"><span data-stu-id="5134a-134">**Sending message in a chat**</span></span>
+<span data-ttu-id="6af5d-134">**在聊天中发送消息**</span><span class="sxs-lookup"><span data-stu-id="6af5d-134">**Sending message in a chat**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /chats/{chat-id}/messages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5134a-135">请求标头</span><span class="sxs-lookup"><span data-stu-id="5134a-135">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6af5d-135">请求标头</span><span class="sxs-lookup"><span data-stu-id="6af5d-135">Request headers</span></span>
 
-| <span data-ttu-id="5134a-136">名称</span><span class="sxs-lookup"><span data-stu-id="5134a-136">Name</span></span>          | <span data-ttu-id="5134a-137">说明</span><span class="sxs-lookup"><span data-stu-id="5134a-137">Description</span></span>   |
+| <span data-ttu-id="6af5d-136">名称</span><span class="sxs-lookup"><span data-stu-id="6af5d-136">Name</span></span>          | <span data-ttu-id="6af5d-137">说明</span><span class="sxs-lookup"><span data-stu-id="6af5d-137">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="5134a-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="5134a-138">Authorization</span></span> | <span data-ttu-id="5134a-139">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="5134a-139">Bearer {code}.</span></span> <span data-ttu-id="5134a-140">必需。</span><span class="sxs-lookup"><span data-stu-id="5134a-140">Required.</span></span> |
-| <span data-ttu-id="5134a-141">Content-type</span><span class="sxs-lookup"><span data-stu-id="5134a-141">Content-type</span></span> | <span data-ttu-id="5134a-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="5134a-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="6af5d-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="6af5d-138">Authorization</span></span> | <span data-ttu-id="6af5d-139">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="6af5d-139">Bearer {code}.</span></span> <span data-ttu-id="6af5d-140">必需。</span><span class="sxs-lookup"><span data-stu-id="6af5d-140">Required.</span></span> |
+| <span data-ttu-id="6af5d-141">Content-type</span><span class="sxs-lookup"><span data-stu-id="6af5d-141">Content-type</span></span> | <span data-ttu-id="6af5d-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="6af5d-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5134a-144">请求正文</span><span class="sxs-lookup"><span data-stu-id="5134a-144">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6af5d-144">请求正文</span><span class="sxs-lookup"><span data-stu-id="6af5d-144">Request body</span></span>
 
-<span data-ttu-id="5134a-145">在请求正文中，提供 [chatMessage](../resources/chatmessage.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5134a-145">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="5134a-146">只有 body 属性是必需的;其他属性是可选的。</span><span class="sxs-lookup"><span data-stu-id="5134a-146">Only the body property is mandatory; other properties are optional.</span></span>
+<span data-ttu-id="6af5d-145">在请求正文中，提供 [chatMessage](../resources/chatmessage.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6af5d-145">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="6af5d-146">只有 body 属性是必需的;其他属性是可选的。</span><span class="sxs-lookup"><span data-stu-id="6af5d-146">Only the body property is mandatory; other properties are optional.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="5134a-147">响应</span><span class="sxs-lookup"><span data-stu-id="5134a-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6af5d-147">响应</span><span class="sxs-lookup"><span data-stu-id="6af5d-147">Response</span></span>
 
-<span data-ttu-id="5134a-148">如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [chatMessage](../resources/chatmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5134a-148">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="6af5d-148">如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [chatMessage](../resources/chatmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="6af5d-148">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5134a-149">示例</span><span class="sxs-lookup"><span data-stu-id="5134a-149">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="6af5d-149">示例</span><span class="sxs-lookup"><span data-stu-id="6af5d-149">Examples</span></span>
 
-<span data-ttu-id="5134a-150">在下面的示例中，URL 可以使用所述的[HTTP](#http-request)语法向聊天[](chat-post-messages.md)发送消息、向频道发送消息或向[](channel-post-messages.md)频道[发送回复](chatmessage-post-replies.md)。</span><span class="sxs-lookup"><span data-stu-id="5134a-150">In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-messages.md), [send a message to a channel](channel-post-messages.md), or [send reply to a channel](chatmessage-post-replies.md).</span></span>
+<span data-ttu-id="6af5d-150">在下面的示例中，URL 可以使用所述的[HTTP](#http-request)语法向聊天[](chat-post-messages.md)发送消息、向频道发送消息或向[](channel-post-messages.md)频道[发送回复](chatmessage-post-replies.md)。</span><span class="sxs-lookup"><span data-stu-id="6af5d-150">In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-messages.md), [send a message to a channel](channel-post-messages.md), or [send reply to a channel](chatmessage-post-replies.md).</span></span>
 
-### <a name="example-1-send-a-hello-world-message-in-a-channel"></a><span data-ttu-id="5134a-151">示例 1：在频道中发送 Hello World 消息</span><span class="sxs-lookup"><span data-stu-id="5134a-151">Example 1: Send a Hello World message in a channel</span></span>
+### <a name="example-1-send-a-hello-world-message-in-a-channel"></a><span data-ttu-id="6af5d-151">示例 1：在频道中发送 Hello World 消息</span><span class="sxs-lookup"><span data-stu-id="6af5d-151">Example 1: Send a Hello World message in a channel</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5134a-152">请求</span><span class="sxs-lookup"><span data-stu-id="5134a-152">Request</span></span>
-<span data-ttu-id="5134a-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5134a-153">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6af5d-152">请求</span><span class="sxs-lookup"><span data-stu-id="6af5d-152">Request</span></span>
+<span data-ttu-id="6af5d-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6af5d-153">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="6af5d-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="6af5d-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_1"
@@ -99,10 +101,28 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="6af5d-155">C#</span><span class="sxs-lookup"><span data-stu-id="6af5d-155">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="5134a-154">响应</span><span class="sxs-lookup"><span data-stu-id="5134a-154">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="6af5d-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6af5d-156">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="5134a-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5134a-155">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="6af5d-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6af5d-157">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="6af5d-158">Java</span><span class="sxs-lookup"><span data-stu-id="6af5d-158">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="6af5d-159">响应</span><span class="sxs-lookup"><span data-stu-id="6af5d-159">Response</span></span>
+
+<span data-ttu-id="6af5d-160">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6af5d-160">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -154,11 +174,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-mentions-a-user-in-a-channel-message"></a><span data-ttu-id="5134a-156">示例 2：@mentions频道消息中通知用户</span><span class="sxs-lookup"><span data-stu-id="5134a-156">Example 2: @mentions a user in a channel message</span></span>
+### <a name="example-2-mentions-a-user-in-a-channel-message"></a><span data-ttu-id="6af5d-161">示例 2：@mentions频道消息中通知用户</span><span class="sxs-lookup"><span data-stu-id="6af5d-161">Example 2: @mentions a user in a channel message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5134a-157">请求</span><span class="sxs-lookup"><span data-stu-id="5134a-157">Request</span></span>
-<span data-ttu-id="5134a-158">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5134a-158">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6af5d-162">请求</span><span class="sxs-lookup"><span data-stu-id="6af5d-162">Request</span></span>
+<span data-ttu-id="6af5d-163">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6af5d-163">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="6af5d-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="6af5d-164">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_2"
@@ -187,10 +209,28 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="6af5d-165">C#</span><span class="sxs-lookup"><span data-stu-id="6af5d-165">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="5134a-159">响应</span><span class="sxs-lookup"><span data-stu-id="5134a-159">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="6af5d-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6af5d-166">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="5134a-160">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5134a-160">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="6af5d-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6af5d-167">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="6af5d-168">Java</span><span class="sxs-lookup"><span data-stu-id="6af5d-168">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="6af5d-169">响应</span><span class="sxs-lookup"><span data-stu-id="6af5d-169">Response</span></span>
+
+<span data-ttu-id="6af5d-170">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6af5d-170">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -256,13 +296,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-send-message-containing-cards"></a><span data-ttu-id="5134a-161">示例 3：发送包含卡片的邮件</span><span class="sxs-lookup"><span data-stu-id="5134a-161">Example 3: Send message containing cards</span></span>
+### <a name="example-3-send-message-containing-cards"></a><span data-ttu-id="6af5d-171">示例 3：发送包含卡片的邮件</span><span class="sxs-lookup"><span data-stu-id="6af5d-171">Example 3: Send message containing cards</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5134a-162">请求</span><span class="sxs-lookup"><span data-stu-id="5134a-162">Request</span></span>
-<span data-ttu-id="5134a-163">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5134a-163">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6af5d-172">请求</span><span class="sxs-lookup"><span data-stu-id="6af5d-172">Request</span></span>
+<span data-ttu-id="6af5d-173">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6af5d-173">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="5134a-164">**注意：** 附件的 ID 必须是唯一的，并且可以是随机生成的新 GUID。</span><span class="sxs-lookup"><span data-stu-id="5134a-164">**Note:** The attachment's ID must be unique and can be a new randomly generated GUID.</span></span> <span data-ttu-id="5134a-165">但是，附件的 ID 在 _body_ 和 attachments 元素中 _必须_ 相同。</span><span class="sxs-lookup"><span data-stu-id="5134a-165">However, the attachment's ID must be the same in the _body_ and _attachments_ elements.</span></span>
+> <span data-ttu-id="6af5d-174">**注意：** 附件的 ID 必须是唯一的，并且可以是随机生成的新 GUID。</span><span class="sxs-lookup"><span data-stu-id="6af5d-174">**Note:** The attachment's ID must be unique and can be a new randomly generated GUID.</span></span> <span data-ttu-id="6af5d-175">但是，附件的 ID 在 _body_ 和 attachments 元素中 _必须_ 相同。</span><span class="sxs-lookup"><span data-stu-id="6af5d-175">However, the attachment's ID must be the same in the _body_ and _attachments_ elements.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="6af5d-176">HTTP</span><span class="sxs-lookup"><span data-stu-id="6af5d-176">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_3"
@@ -289,10 +331,28 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="6af5d-177">C#</span><span class="sxs-lookup"><span data-stu-id="6af5d-177">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="5134a-166">响应</span><span class="sxs-lookup"><span data-stu-id="5134a-166">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="6af5d-178">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6af5d-178">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="5134a-167">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5134a-167">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="6af5d-179">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6af5d-179">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="6af5d-180">Java</span><span class="sxs-lookup"><span data-stu-id="6af5d-180">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="6af5d-181">响应</span><span class="sxs-lookup"><span data-stu-id="6af5d-181">Response</span></span>
+
+<span data-ttu-id="6af5d-182">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6af5d-182">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -352,13 +412,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-send-a-message-with-file-attachment-in-it"></a><span data-ttu-id="5134a-168">示例 4：发送包含文件附件的邮件</span><span class="sxs-lookup"><span data-stu-id="5134a-168">Example 4: Send a message with file attachment in it</span></span>
+### <a name="example-4-send-a-message-with-file-attachment-in-it"></a><span data-ttu-id="6af5d-183">示例 4：发送包含文件附件的邮件</span><span class="sxs-lookup"><span data-stu-id="6af5d-183">Example 4: Send a message with file attachment in it</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5134a-169">请求</span><span class="sxs-lookup"><span data-stu-id="5134a-169">Request</span></span>
-<span data-ttu-id="5134a-170">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5134a-170">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6af5d-184">请求</span><span class="sxs-lookup"><span data-stu-id="6af5d-184">Request</span></span>
+<span data-ttu-id="6af5d-185">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6af5d-185">The following is an example of the request.</span></span>
 
-><span data-ttu-id="5134a-171">**注意：** 文件必须已经在 SharePoint 中。</span><span class="sxs-lookup"><span data-stu-id="5134a-171">**Note:** The file must already be in SharePoint.</span></span> <span data-ttu-id="5134a-172">若要查找文件属性，请获取 **文件的 driveItem。**</span><span class="sxs-lookup"><span data-stu-id="5134a-172">To find the file properties, GET the **driveItem** for the file.</span></span> <span data-ttu-id="5134a-173">例如，/drives/{id}/items/{id}。</span><span class="sxs-lookup"><span data-stu-id="5134a-173">For example, /drives/{id}/items/{id}.</span></span> <span data-ttu-id="5134a-174">附件 ID 是 **driveItem** 的 **eTag** 中的 GUID，附件 contentURL 是 **driveItem** 文件夹的 **webUrl** 加上 **driveItem** 的名称，附件名称是 **driveItem** 的名称。 </span><span class="sxs-lookup"><span data-stu-id="5134a-174">Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.</span></span>
+><span data-ttu-id="6af5d-186">**注意：** 该文件必须已SharePoint。</span><span class="sxs-lookup"><span data-stu-id="6af5d-186">**Note:** The file must already be in SharePoint.</span></span> <span data-ttu-id="6af5d-187">若要查找文件属性，请获取 **文件的 driveItem。**</span><span class="sxs-lookup"><span data-stu-id="6af5d-187">To find the file properties, GET the **driveItem** for the file.</span></span> <span data-ttu-id="6af5d-188">例如，/drives/{id}/items/{id}。</span><span class="sxs-lookup"><span data-stu-id="6af5d-188">For example, /drives/{id}/items/{id}.</span></span> <span data-ttu-id="6af5d-189">附件 ID 是 **driveItem** 的 **eTag** 中的 GUID，附件 contentURL 是 **driveItem** 文件夹的 **webUrl** 加上 **driveItem** 的名称，附件名称是 **driveItem** 的名称。 </span><span class="sxs-lookup"><span data-stu-id="6af5d-189">Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="6af5d-190">HTTP</span><span class="sxs-lookup"><span data-stu-id="6af5d-190">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_4"
@@ -382,10 +444,28 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="6af5d-191">C#</span><span class="sxs-lookup"><span data-stu-id="6af5d-191">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="5134a-175">响应</span><span class="sxs-lookup"><span data-stu-id="5134a-175">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="6af5d-192">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6af5d-192">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="5134a-176">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5134a-176">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="6af5d-193">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6af5d-193">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="6af5d-194">Java</span><span class="sxs-lookup"><span data-stu-id="6af5d-194">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="6af5d-195">响应</span><span class="sxs-lookup"><span data-stu-id="6af5d-195">Response</span></span>
+
+<span data-ttu-id="6af5d-196">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6af5d-196">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -445,15 +525,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-send-inline-images-along-with-the-message"></a><span data-ttu-id="5134a-177">示例 5：随邮件一起发送内嵌图像</span><span class="sxs-lookup"><span data-stu-id="5134a-177">Example 5: Send inline images along with the message</span></span>
+### <a name="example-5-send-inline-images-along-with-the-message"></a><span data-ttu-id="6af5d-197">示例 5：随邮件一起发送内嵌图像</span><span class="sxs-lookup"><span data-stu-id="6af5d-197">Example 5: Send inline images along with the message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5134a-178">请求</span><span class="sxs-lookup"><span data-stu-id="5134a-178">Request</span></span>
-<span data-ttu-id="5134a-179">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5134a-179">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6af5d-198">请求</span><span class="sxs-lookup"><span data-stu-id="6af5d-198">Request</span></span>
+<span data-ttu-id="6af5d-199">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6af5d-199">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="5134a-180">**注意：\*\*\*\*hostedContents** 集合中的 **temporaryId** 是一个随机 ID，但在整个 **body** 和 **hostedContents** 元素中必须相同。</span><span class="sxs-lookup"><span data-stu-id="5134a-180">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements.</span></span> <span data-ttu-id="5134a-181"> (注意 **temporaryId** 设置为 **1，** 正文中的引用设置为 `../hostedContents/1/$value` .) </span><span class="sxs-lookup"><span data-stu-id="5134a-181">(Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)</span></span>
+> <span data-ttu-id="6af5d-200">**注意：\*\*\*\*hostedContents** 集合中的 **temporaryId** 是一个随机 ID，但在整个 **body** 和 **hostedContents** 元素中必须相同。</span><span class="sxs-lookup"><span data-stu-id="6af5d-200">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements.</span></span> <span data-ttu-id="6af5d-201"> (注意 **temporaryId** 设置为 **1，** 正文中的引用设置为 `../hostedContents/1/$value` .) </span><span class="sxs-lookup"><span data-stu-id="6af5d-201">(Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)</span></span>
 
-<span data-ttu-id="5134a-182">**contentBytes** 必须设置为二进制字符串 Base64 编码字节。</span><span class="sxs-lookup"><span data-stu-id="5134a-182">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="5134a-183">为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="5134a-183">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
+<span data-ttu-id="6af5d-202">**contentBytes** 必须设置为二进制字符串 Base64 编码字节。</span><span class="sxs-lookup"><span data-stu-id="6af5d-202">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="6af5d-203">为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="6af5d-203">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="6af5d-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="6af5d-204">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_5"
@@ -476,10 +558,28 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="6af5d-205">C#</span><span class="sxs-lookup"><span data-stu-id="6af5d-205">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="5134a-184">响应</span><span class="sxs-lookup"><span data-stu-id="5134a-184">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="6af5d-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6af5d-206">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="5134a-185">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5134a-185">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="6af5d-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6af5d-207">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="6af5d-208">Java</span><span class="sxs-lookup"><span data-stu-id="6af5d-208">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="6af5d-209">响应</span><span class="sxs-lookup"><span data-stu-id="6af5d-209">Response</span></span>
+
+<span data-ttu-id="6af5d-210">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6af5d-210">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -527,15 +627,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-send-a-card-with-inline-images"></a><span data-ttu-id="5134a-186">示例 6：发送包含内联图像的卡片</span><span class="sxs-lookup"><span data-stu-id="5134a-186">Example 6: Send a card with inline images</span></span>
+### <a name="example-6-send-a-card-with-inline-images"></a><span data-ttu-id="6af5d-211">示例 6：发送包含内联图像的卡片</span><span class="sxs-lookup"><span data-stu-id="6af5d-211">Example 6: Send a card with inline images</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5134a-187">请求</span><span class="sxs-lookup"><span data-stu-id="5134a-187">Request</span></span>
-<span data-ttu-id="5134a-188">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5134a-188">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="6af5d-212">请求</span><span class="sxs-lookup"><span data-stu-id="6af5d-212">Request</span></span>
+<span data-ttu-id="6af5d-213">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6af5d-213">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="5134a-189">**注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。</span><span class="sxs-lookup"><span data-stu-id="5134a-189">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements.</span></span> <span data-ttu-id="5134a-190"> (请注意 **，temporaryId** 设置为 **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) </span><span class="sxs-lookup"><span data-stu-id="5134a-190">(Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)</span></span>
+> <span data-ttu-id="6af5d-214">**注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。</span><span class="sxs-lookup"><span data-stu-id="6af5d-214">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements.</span></span> <span data-ttu-id="6af5d-215"> (请注意 **，temporaryId** 设置为 **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) </span><span class="sxs-lookup"><span data-stu-id="6af5d-215">(Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)</span></span>
 
-<span data-ttu-id="5134a-191">**contentBytes** 必须设置为二进制字符串 Base64 编码字节。</span><span class="sxs-lookup"><span data-stu-id="5134a-191">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="5134a-192">为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="5134a-192">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
+<span data-ttu-id="6af5d-216">**contentBytes** 必须设置为二进制字符串 Base64 编码字节。</span><span class="sxs-lookup"><span data-stu-id="6af5d-216">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="6af5d-217">为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="6af5d-217">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="6af5d-218">HTTP</span><span class="sxs-lookup"><span data-stu-id="6af5d-218">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_6"
@@ -569,8 +671,26 @@ Content-type: application/json
     }]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="6af5d-219">C#</span><span class="sxs-lookup"><span data-stu-id="6af5d-219">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="5134a-193">响应</span><span class="sxs-lookup"><span data-stu-id="5134a-193">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="6af5d-220">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6af5d-220">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="6af5d-221">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6af5d-221">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-6-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="6af5d-222">Java</span><span class="sxs-lookup"><span data-stu-id="6af5d-222">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="6af5d-223">响应</span><span class="sxs-lookup"><span data-stu-id="6af5d-223">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -631,9 +751,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5134a-194">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5134a-194">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6af5d-224">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6af5d-224">See also</span></span>
 
-- [<span data-ttu-id="5134a-195">卡参考</span><span class="sxs-lookup"><span data-stu-id="5134a-195">Cards reference</span></span>](/microsoftteams/platform/concepts/cards/cards-reference)
+- [<span data-ttu-id="6af5d-225">卡参考</span><span class="sxs-lookup"><span data-stu-id="6af5d-225">Cards reference</span></span>](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
