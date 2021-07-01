@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: 使用特殊集合可以按名称访问特殊文件夹。
-ms.date: 09/10/2017
 title: 获取特殊文件夹
 localization_priority: Normal
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: d6c419e462cc9c038408ec165a13ce1241da1062
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 48a20da153eaf1e74d34b2ecfa3b7c30f8a794aa
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964047"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236177"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
 
@@ -66,16 +65,7 @@ GET /me/drive/special/{name}
 
 
 ### <a name="special-folder-names"></a>特殊文件夹名称
-
-以下是 OneDrive 和 OneDrive for Business 中可用的特殊文件夹名称。
-
-| 名称        | 文件夹 ID    | 说明                                                              |
-|:------------|:-------------|:-------------------------------------------------------------------------|
-| Documents   | `documents`  | “文档”文件夹。                                                    |
-| Photos      | `photos`     | “照片”文件夹。                                                       |
-| Camera Roll | `cameraroll` | “本机照片备份”文件夹。                                           |
-| App Root    | `approot`    | 应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中 |
-| Music       | `music`      | “音乐”文件夹。                                                        |
+[!INCLUDE [files-special-folder-list](../includes/files-special-folder-list.md)]
 
 
 ### <a name="optional-query-parameters"></a>可选的查询参数

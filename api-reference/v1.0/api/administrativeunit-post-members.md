@@ -5,12 +5,12 @@ author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 634013e968b5fc69c2565848bf85e343f03b2f4f
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 4b744c9ebce925277d09cae0b49272c6e4d01598
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991489"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210428"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -39,6 +39,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
+| Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 `id` 要[添加的用户、](../resources/user.md)[组](../resources/group.md)或[directoryObject](../resources/directoryobject.md)的 。

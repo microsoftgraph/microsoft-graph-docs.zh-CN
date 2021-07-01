@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 27ac5bb349ad8ada5cc079331cfb23e3c08e87bf
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 72fb366eaddad82273cc43aa280bde810a8259b7
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067220"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236262"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -138,7 +138,6 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 <!-- Need to update the destination page titles and URLs as Matt's v-team finalize on the examples and featured scenarios content 
 -->
 
-- 请参阅基于 Microsoft Graph 服务构建的创造性解决方案[示例](https://developer.microsoft.com/graph/examples)，可帮助解决实际客户问题。
 - 在目录的 **了解** 部分，阅读有关 _你_ 可在应用场景中使用的服务和功能。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的示例请求。
 - 使用[快速入门](https://developer.microsoft.com/graph/quick-start)设置一个即可运行的示例应用。

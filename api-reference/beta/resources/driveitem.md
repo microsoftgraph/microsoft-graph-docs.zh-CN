@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: driveItem 资源代表文件、文件夹或存储在驱动器中的 其他项。
-ms.date: 09/10/2017
-title: DriveItem
+title: driveItem
 localization_priority: Normal
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 7810850e8968a8985cc611930088c5dbec817484
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 1be483b8309944c1a323c7274efe55b04feb6c3d
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714297"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236248"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -21,7 +20,7 @@ ms.locfileid: "49714297"
 
 **driveItem** 资源代表文件、文件夹或存储在驱动器中的 其他项。
 
-OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** 资源返回。 SharePoint 文档库中的项目可以表示为 [listItem 或][] **driveItem** 资源。
+OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** 资源返回。 SharePoint 文档库中的项目可以表示为 [listItem][] 或 **driveItem** 资源。
 
 **driveItem** 资源的寻址方式主要有两种：
 
@@ -49,7 +48,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
+       "sharepointIds", "source", "media"],
        "keyProperty": "id", "openType": true } -->
 
 ```json
@@ -64,6 +63,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "media": { "@odata.type": "microsoft.graph.media" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
@@ -74,6 +74,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
+  "source": { "@odata.type": "microsoft.graph.driveItemSource" },
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "video": { "@odata.type": "microsoft.graph.video" },
   "webDavUrl": "string",
@@ -126,10 +127,11 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | lastModifiedBy       | [identitySet][]    | 上次修改项目的用户、设备和应用程序的标识。只读。
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
+| media                | [media][]          | 有关音频或 (项的媒体) 的信息。 读写。 仅在 OneDrive for Business 和 SharePoint。
 | name                 | String             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
-| pendingOperations    | [pendingOperations][] | 如果存在，则指示可能影响 driveItem 状态一个或多个操作正在等待完成。 只读。
+| pendingOperations    | [pendingOperations][] | 如果存在，则指示可能影响 driveItem 状态的一个或多个操作正在等待完成。 只读。
 | photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
@@ -139,6 +141,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
+| source               | [driveItemSource][]| 有关驱动器项源的信息。 只读。 仅在 OneDrive for Business 和 SharePoint。
 | video                | [video][]          | 视频元数据（如果此项是一个视频）。只读。
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
 | WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。
@@ -191,7 +194,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | [更新项目](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
 | [上载内容](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
 | [下载内容](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [下载特定格式文件][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
+| [下载特定文件格式][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [删除项](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
 | [还原项目](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
 | [移动项目](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
@@ -209,7 +212,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | [预览项目][item-preview]                             | `POST /drive/items/{item-id}/preview`
 | [签入](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
 | [签出](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [撤销授予](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
+| [撤销授权](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
 
 [item-preview]: ../api/driveitem-preview.md
 [获取分析结果]: ../api/itemanalytics-get.md
@@ -223,6 +226,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 [baseItem]: baseitem.md
 [Deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
+[driveItemSource]: driveItemSource.md
 [driveItemVersion]: driveitemversion.md
 [File]: file.md
 [fileSystemInfo]: filesysteminfo.md
@@ -238,6 +242,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 [geoCoordinates]: geocoordinates.md
 [List activities]: ../api/activities-list.md
 [listItem]: listitem.md
+[media]: media.md
 [package]: package.md
 [权限]: permission.md
 [pendingOperations]: pendingoperations.md
@@ -265,7 +270,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
   "section": "documentation",
   "tocPath": "Items",
   "tocBookmarks": {
-    "Resources/Item": "#"
+    "Resources/Item&quot;: &quot;#"
   },
   "suppressions": []
 }

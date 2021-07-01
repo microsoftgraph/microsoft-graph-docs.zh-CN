@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 70f9569a609699036a5e27cdaf47faf622a572d2
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 50b6d517775e4ef956211882fd58baefc7f5b78d
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030850"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236171"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "53030850"
 
 > **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则列出的一些方法将可传递影响会议。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 |  方法       |  返回类型  | 说明| 
 |:---------------|:--------|:----------|
@@ -53,7 +53,7 @@ ms.locfileid: "53030850"
 |[向聊天添加选项卡](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 将 (固定) 选项卡添加到聊天 (关联的会议) 。|
 |[聊天中的"更新"选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天记录和相关会议 (选项卡) 。|
 |[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (和) 会议记录中删除 (取消固定选项卡) 。|
-| **操作** |||
+| **Operations** |||
 |[列出聊天操作](../api/chat-list-operations.md) | [teamsAsyncOperation](teamsAsyncOperation.md) 集合 | 获取在聊天中运行或运行的异步操作列表。|
 |[获取聊天操作](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | 获取在聊天中运行或运行的单个异步操作。|
 
@@ -68,16 +68,17 @@ ms.locfileid: "53030850"
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  上次更改聊天的日期和时间或成员列表。 只读。|
 | chatType| [chatType](../resources/chat.md#chattype-values) | 指定聊天类型。 可能的值是： `group` 和 `oneOnOne` `meeting` 。|
-|  webUrl          |   string                  |  一个超链接，将转到聊天Microsoft Teams。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。     |
+| 一个|[chatViewpoint](../resources/chatviewpoint.md)|表示有关聊天的特定于呼叫者的信息，例如上次消息读取日期和时间。 只有在委托上下文中提出请求时，才填充此属性。|
+| webUrl| String | 一个超链接，将转到聊天Microsoft Teams。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 
 ### <a name="chattype-values"></a>chatType 值 
 
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的;无法删除/添加成员。|
-|group               | 1     | 指示聊天是群聊。 可以针对 (聊天类型更新至少两) 名单大小。 稍后可以删除/添加成员。|
-|meeting             | 2     | 指示聊天与联机会议相关联。 此类聊天仅在创建联机会议时创建。|
-|unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
+|group               | 1      | 指示聊天是群聊。 可以针对 (聊天类型更新至少两) 名单大小。 稍后可以删除/添加成员。|
+|meeting             | 2      | 指示聊天与联机会议相关联。 此类聊天仅在创建联机会议时创建。|
+|unknownFutureValue  | 3      | Sentinel 值，用于指示未来值。 |
 
 ## <a name="relationships"></a>关系
 
@@ -87,7 +88,8 @@ ms.locfileid: "53030850"
 | members | [conversationMember](conversationmember.md) 集合 | 聊天中所有成员的集合。 可为 Null。 |
 | messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有消息的集合。 可为 NULL。 |
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合| 授予聊天应用的权限集合。|
-| operations | [teamsAsyncOperation](teamsasyncoperation.md) 集合 | 在聊天中运行Teams运行的所有异步操作的集合。 可为 Null。 |
+| operations | [teamsAsyncOperation](teamsasyncoperation.md) 集合 | 在聊天中运行Teams运行的所有异步操作的集合。 可为 Null。 
+| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| 预览聊天中发送的最后一条消息。 如果聊天中未发送任何消息，则其为 Null。 目前，仅 [列表聊天](../api/chat-list.md) 操作支持此属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -106,6 +108,9 @@ ms.locfileid: "53030850"
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
   "chatType": "String",
+  "chatViewpoint": {
+    "@odata.type": "microsoft.graph.chatViewpoint"
+  },
   "webUrl": "string"
 }
 ```

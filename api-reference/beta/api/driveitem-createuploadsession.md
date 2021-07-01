@@ -1,27 +1,18 @@
 ---
-author: JeremyKelley
-description: 通过创建上传会话，使应用可以上传最大大小的文件。
-ms.date: 09/10/2017
-title: 可恢复的文件上传
-localization_priority: Normal
-ms.prod: sharepoint
-doc_type: apiPageType
-ms.openlocfilehash: 5730bb9ecd59adc14d375f73794d9a34b464a831
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982096"
+author：一位用户，作者：一位用户，她介绍："创建上传会话，以允许应用上传最大文件大小的文件。"
+title： driveItem： createUploadSession localization_priority： Normal ms.prod： "sites-and-lists" doc_type： apiPageType
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
+# <a name="driveitem-createuploadsession"></a>driveItem：createUploadSession
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过创建上传会话，使应用可以上传最大大小的文件。上传会话使应用可以在连续的 API 请求中上传多个范围的文件，这样一来，如果在上传过程中连接断开，应用也可以继续传输文件。
+通过创建上传会话，使应用可以上传最大大小的文件。
 
-若要使用上传会话上传文件，请执行以下两个步骤：
+上传会话允许应用在连续的 API 请求中上传文件范围，从而允许在上传正在进行时连接中断时恢复传输。
+
+若要使用上载会话上载文件：
 
 1. [创建上载会话](#create-an-upload-session)
 2. [将字节上传到上传会话](#upload-bytes-to-the-upload-session)
@@ -41,7 +32,7 @@ ms.locfileid: "47982096"
 要开始上载大文件，你的应用程序必须先请求新的上载会话。
 这可以创建一个临时存储位置，在上载完成之前保存文件字节数。
 上载最后一个字节后，上载会话即完成，最终文件会出现在目标文件夹中。
-或者，可以将最终文件创建推迟到目标中，直到您显式发出请求来完成上载，方法是 `deferCommit` 在请求参数中设置该属性。
+或者，你可以通过在请求参数中设置 `deferCommit` 属性来推迟目标位置中的文件的最终创建，直到你显式发出完成上传的请求。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -58,7 +49,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>请求正文
 
 无需请求正文。
-但是，可以在请求正文中指定属性，提供有关要上载的文件的其他数据，并自定义上传操作的语义。
+但是，你可以在请求正文中指定属性，以提供有关正在上传的文件的其他数据，并自定义上传操作的语义。
 
 例如， `item` 属性允许设置以下参数：
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
@@ -66,12 +57,14 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
+  "driveItemSource": { "@odata.type": "microsoft.graph.driveItemSource" },
   "fileSize": 1234,
-  "name": "filename.txt"
+  "name": "filename.txt",
+  "mediaSource": { "@odata.type": "microsoft.graph.mediaSource" }
 }
 ```
 
-下面的示例控制是否已采用 filename 的行为，还指定在发出显式完成请求之前不应创建最终文件：
+下面的示例控制文件名已被使用时的行为，并指定在发出显式完成请求之前，不应创建最终文件：
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -93,8 +86,8 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
-| 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关要上载的文件的数据
-| deferCommit          | Boolean                       | 如果设置为 true，则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for Business 上。
+| 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关正在上传的文件的数据
+| deferCommit          | 布尔值                       | 如果设置为 true，则需要发出显式请求才能在目标位置中进行文件的最终创建。 仅适用于 OneDrive for Business。
 
 ### <a name="request"></a>请求
 
@@ -121,7 +114,7 @@ Content-Type: application/json
 
 此资源详细说明了应将文件的字节范围上传到哪里以及上传会话何时到期。
 
-如果指定了该 `fileSize` 参数，但超过了可用配额， `507 Insufficent Storage` 将返回响应，并且不会创建上载会话。
+如果已指定 `fileSize` 参数，并且超出了可用配额，则将返回 `507 Insufficent Storage` 响应，并且不会创建上传会话。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -144,7 +137,7 @@ Content-Type: application/json
 必须按顺序上传文件的片段。
 不按顺序上载文件的片段将导致错误。
 
-**注意：** 如果应用将一个文件拆分为多个字节范围，则每个字节范围的大小**必须**是 320 KiB（327,680 个字节）的倍数。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
+**注意：** 如果应用将一个文件拆分为多个字节范围，则每个字节范围的大小 **必须** 是 320 KiB（327,680 个字节）的倍数。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
 
 ### <a name="example"></a>示例
 
@@ -213,14 +206,14 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>完成文件
 
-如果 `deferCommit` 为 false 或未设置，则在将文件的最后一个字节范围放入上载 URL 时，将自动完成上载。
+如果 `deferCommit` 为 false 或未设置，则在将文件的最终字节范围放入上传 URL 时，将自动完成上传。
 
-如果 `deferCommit` 为 true，则可以通过两种方式显式完成上载：
-- 将文件的最后一个字节范围放入上载 URL 后，将最后一个 POST 请求发送到包含零长度内容的上载 URL (当前仅在 OneDrive for Business 和 SharePoint) 上受支持。
-- 将文件的最后一个字节范围放入上载 URL 后，发送最终的 PUT 请求，方式与您 [处理上载错误](#handle-upload-errors) (当前仅在 OneDrive 个人) 上受支持。
+如果 `deferCommit` 为 true，则可通过以下两种方式显式完成上传：
+- 将文件的最终字节范围放入上传 URL 后，将最终的 POST 请求发送到内容长度为零的上传 URL（当前仅在 OneDrive for Business 和 SharePoint 中受支持）。
+- 将文件的最终字节范围放入上传 URL 后，以[处理上传错误](#handle-upload-errors)的相同方式发送最终 PUT 请求（目前仅在 OneDrive Personal 中受支持）。
 
 
-上载完成后，服务器将使用或发出响应最终请求 `HTTP 201 Created` `HTTP 200 OK` 。
+上传完成后，服务器将使用 `HTTP 201 Created` 或 `HTTP 200 OK` 响应最终请求。
 响应正文还会包括 **driveItem** 的默认属性集，用来表示已完成的文件。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
@@ -407,8 +400,10 @@ Content-Type: application/json
 
 请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
+[driveItemSource]: ../resources/driveItemSource.md
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
+[mediaSource]: ../resources/mediaSource.md
 
 <!--
 {

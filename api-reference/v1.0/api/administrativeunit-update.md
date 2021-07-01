@@ -5,12 +5,12 @@ author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2453c8fb3d151d0d2546736cc341917c4ae174a3
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 0921bc6366d34278d23701d11ddb21bf0793d219
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991475"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208209"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -38,6 +38,7 @@ PATCH /directory/administrativeUnits/{id}
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
+| Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 

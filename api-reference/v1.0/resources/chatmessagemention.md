@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7af1260cbddfcecef21fc85ccf057c028681b061
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 2891a555666f7265050ec4e9b12f4d8f02500c4f
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582758"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53206991"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention 资源类型
 
@@ -36,12 +36,11 @@ ms.locfileid: "51582758"
 有关示例的更完整上下文，请参阅 [列表频道消息回复](../api/chatmessage-list-replies.md#example)。
 
 ## <a name="properties"></a>属性
-
-| 属性| 类型|说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|Int32|指定的 **chatMessage** 中提及的实体的索引。 匹配邮件正文中相应标记中的 `<at id="{index}">` {index} 值。|
-|mentionText|string|用于表示提及的字符串。 例如，用户的显示名称，一个团队名称。|
-|提及|[identitySet](identityset.md)|已 (用户、应用程序、团队或频道) 实体。  如果它是已注册的频道或团队@mentioned identitySet 包含一个提供团队/频道 ID 的对话属性，以及一个代表团队或频道的 **conversationIdentityType** 属性。|
+|mentionText|字符串|用于表示提及的字符串。 例如，用户的显示名称，一个团队名称。|
+|提及|[chatMessageIdentitySet](chatmessagementionedidentityset.md)|包含 (用户、应用程序、团队或频道) 实体@mentioned。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -57,7 +56,7 @@ ms.locfileid: "51582758"
 {
   "id": 1024,
   "mentionText": "string",
-  "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
+  "mentioned": {"@odata.type": "microsoft.graph.chatMessageMentionedIdentitySet"}
  }
 ```
 
@@ -73,3 +72,5 @@ ms.locfileid: "51582758"
   "suppressions": []
 }
 -->
+
+
