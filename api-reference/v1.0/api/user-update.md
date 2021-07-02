@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f237507efefdcbec91c1d42e52a094b0fb841083
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: e0dc12ea65ade7ed838a16645b414752ac0b1971
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010211"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208951"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -193,6 +193,38 @@ Content-type: application/json
 #### <a name="response"></a>响应
 
 以下示例显示了相应的响应。
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+
+### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>示例 3：更新用户的 passwordProfile 以重置其密码
+
+下列示例展示重置其他用户密码的请求。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "update_user_passwordProfile"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/users/{id}
+Content-type: application/json
+
+{
+  "passwordProfile": {
+    "forceChangePasswordNextSignIn": false,
+    "password": "xWwvJ]6NMw+bWH-d"
+  }
+}
+```
+
+
+#### <a name="response"></a>响应
 <!-- {
   "blockType": "response"
 } -->
