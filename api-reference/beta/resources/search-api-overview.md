@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 13e60e5000db9a3cb4ef540970564e1a52ab2871
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: af390733e61d14cc411c583fccce7399bef5a39f
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911660"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53209931"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -41,6 +41,7 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 |[使用聚合优化结果](#refine-results-using-aggregations)| **聚合** |
 |[使用连接器搜索导入的自定义类型](/graph/search-concept-custom-types)| **contentSources** |
 |[请求拼写更正](#request-spelling-correction)| **queryAlterationOptions** |
+|[搜索显示布局](#search-display-layout)（预览版）| **resultTemplateOptions**
 
 ## <a name="scope-search-based-on-entity-types"></a>根据实体类型限定搜索范围
 
@@ -152,6 +153,14 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 有关如何使用拼写更正的示例，请参见[请求拼写更正](/graph/search-concept-speller)。
 
+## <a name="search-display-layout"></a>搜索显示布局
+
+借助搜索 API，可以使用 IT 管理员为每个连接器配置的显示布局或结果模板，呈现来自[连接器](/microsoftsearch/connectors-overview)的搜索结果。 结果模板为[自适应卡片](https://adaptivecards.io/)，是布局和数据的语义上有意义的组合。
+
+若要在 [searchresponse](searchresponse.md) 中获取结果模板，必须将在 [searchRequest](./searchrequest.md)中，将 [resultTemplateOptions](./resulttemplateoption.md) 中定义的 **enableResultTemplate** 属性设置为 **true**。 响应包括每个 [搜索命中](./searchhit.md)的 **resultTemplateId**，它映射到包含在响应中的 **resultTemplates** 中包含的显示布局之一。
+
+相关示例，请参阅[使用搜索显示布局](/graph/search-concept-display-layout)。 
+
 ## <a name="error-handling"></a>错误处理
 
 搜索 API 将返回由 [OData 错误对象定义](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse)所定义的错误响应，其中每个是包含代码和消息的 JSON 对象。
@@ -204,6 +213,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
   - [排序搜索结果](/graph/search-concept-sort)
   - [改进搜索结果](/graph/search-concept-aggregation)
   - [请求拼写更正](/graph/search-concept-speller)
+  - [用户搜索显示布局](/graph/search-concept-display-layout)
 
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
 

@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e6402ba7d99110597c15c401c3b8a6d6bc704fb1
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 2611f3d60d93b8f142c9d6454f8525dbe18b9721
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060332"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236255"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
