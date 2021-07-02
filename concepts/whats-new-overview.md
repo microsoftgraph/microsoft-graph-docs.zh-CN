@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 42beebafd90b752548e6be81963c8c7bc484de39
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: b2e5cbb811e7e606fd57a9c967c40bc3956a2c58
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162201"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236211"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -52,10 +52,10 @@ ms.locfileid: "53162201"
 - 现在，教师还可以在发布作业时设置日历的默认行为。 教师可以通过使用 [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) 资源的 **addToCalendarAction** 属性来控制作业默认的日历行为。
 
 ### <a name="groups"></a>组
-通过设置 [isAssignableToRole](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) 属性，允许在创建时为 Azure AD 角色分配一个 **组**。 如果设置此属性，则可以方便地管理个人的角色。符合条件的人员可以加入组，并且默认情况下，为加入组的每个新用户分配角色，而不必为每个用户分配角色。 
+允许通过设置 **isAssignableToRole** 属性在创建时向 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) 分配 Azure AD 角色。如果设置此属性，则可以方便地管理个人的角色 - 合格人员可以加入组，而不必为每个人分配角色，默认情况下，为组分配角色将为加入组的每个新成员分配角色。 
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-使用 [计划定义](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true)的 **additionalNotificationRecipients** 属性，将用户或组成员设置为获取关于[访问评审](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)进度的通知。
+通过使用 [ 计划定义](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) 的 **additionalNotificationRecipients** 属性，将用户或组成员设置为接收 [访问评审](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 进度的通知。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 使用 [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta&preserve-view=true) 的 **deviceFilter** 属性定义筛选器，动态包含或排除设备。
@@ -111,7 +111,7 @@ Azure AD 预配服务和其相关属性执行的向[列表](/graph/api/provision
   - 读写操作和 [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) 的[分配](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true)方法。
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
-Intune beta 版每月更新。 设置 2021 年 6 月的 **日期** 筛选器，并查找具有相同标题的部分。
+Beta 版本的 Intune 月度更新。将 **日期** 筛选器设置为 2021 年 6 月，并查找具有此相同标题的部分。
 
 ### <a name="education"></a>教育版
 - [设置 SharePoint 资源文件夹](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true)，以在同一位置上​​传和存储所有基于文件的资源，从而进行 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true)。
