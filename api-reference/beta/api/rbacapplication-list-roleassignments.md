@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2877f9bca06eed962257e2c8c43c5f776d06ff76
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: bd7ae545174addab12ffe5afecaa83ccb7f7d06d
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241140"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317215"
 ---
 # <a name="list-unifiedroleassignments"></a>列出 unifiedRoleAssignments
 
@@ -20,17 +20,23 @@ ms.locfileid: "52241140"
 
 获取提供商的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象列表。
 
+目前支持以下 RBAC 提供程序：
+- Azure AD (目录) 
+- Azure AD (授权) 
+
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+
+|支持的提供程序      | 委派（工作或学校帐户）  | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| 目录 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All | 不支持。| RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+| 权利管理 | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All | 不支持。 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
+
+列出目录提供程序的角色分配：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,6 +44,16 @@ ms.locfileid: "52241140"
 GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
 
 GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+```
+
+列出权利管理提供程序的角色分配：
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
 ## <a name="query-parameters"></a>查询参数

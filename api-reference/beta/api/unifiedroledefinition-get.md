@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 71948e099507bf081739dbef9f4e07d43f358af9
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 07b9aff276c46fbdcca56b365d11e7ac12066408
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870316"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317075"
 ---
 # <a name="get-unifiedroledefinition"></a>获取 unifiedRoleDefinition
 
@@ -23,19 +23,21 @@ ms.locfileid: "52870316"
 目前支持以下 RBAC 提供程序：
 - 云电脑 
 - Intune (设备) 
-- Azure AD (目录)  
+- directory (Azure AD directory roles) 
+- 授权管理 (Azure AD 权利管理) 
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。 
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。 
 
 |支持的提供程序      | 委派（工作或学校帐户）  | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | CloudPC.Read.All、CloudPC.ReadWrite.All | 不支持。 | CloudPC.Read.All、CloudPC.ReadWrite.All |
+| 云电脑 | CloudPC.Read.All、CloudPC.ReadWrite.All | 不支持。 | CloudPC.Read.All、CloudPC.ReadWrite.All |
 | 设备管理 | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All | 不支持。 | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
 | 目录 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All | 不支持。| RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+| 权利管理 | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All | 不支持。 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,6 +58,13 @@ GET /roleManagement/deviceManagement/roleDefinitions/{id}
 
 ```http
 GET /roleManagement/directory/roleDefinitions/{id}
+```
+
+获取权利管理提供程序的角色定义：
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -492,6 +501,53 @@ Content-type: application/json
     ]
 }
 ```
+
+## <a name="example-5-get-the-definition-of-a-built-in-role-for-the-entitlement-management-provider"></a>示例 5：获取权利管理提供程序的内置角色的定义
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_built-in_entitlementmanagement_role_unifiedroledefinition"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDefinitions/ba92d953-d8e0-4e39-a797-0cbedb0a89e8
+```
+
+
+#### <a name="response"></a>响应
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleDefinitions/$entity",
+    "id": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+    "displayName": "Catalog creator",
+    "description": "Catalog creator",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "templateId": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+    "version": "1.0",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.entitlementManagement/AccessPackageCatalog/Create"
+            ]
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

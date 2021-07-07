@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b35008f93cd4e7457ef83a2bc800423755157f59
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 8deeafa852b69af919fb79b43acaa5b588bdcd35
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681163"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316697"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "52681163"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将组添加到生命周期策略。
+将特定组添加到生命周期策略。 只有在 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)的 **managedGroupTypes** 属性设置为 时，此操作才将组生命周期策略限制到一组 `Selected` 组。
 
 ## <a name="permissions"></a>权限
 
@@ -49,11 +49,15 @@ POST /groupLifecyclePolicies/{id}/addGroup
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|groupId|Guid| 要添加到策略的组的 ID。 |
+|groupId|String| 要添加到策略的组的标识符。 |
+
+当 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)的 **managedGroupTypes** 属性设置为 时，您最多可以将 `Selected` 500 个组添加到列表中。 如果需要添加 500 多个组 [，groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)的 **managedGroupTypes** 属性必须设置为 `All` 。
+
+每个请求只能添加一个组。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码。 如果组已添加到策略，便会在响应正文中返回 **true** 值。 否则，响应正文中返回 **false** 值。
+如果成功，此方法返回 `200 OK` 响应代码。 如果组已添加到策略，响应 `true` 正文中将返回一个值。 否则， `false` 在响应正文中返回值。
 
 ## <a name="example"></a>示例
 

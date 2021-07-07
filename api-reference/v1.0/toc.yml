@@ -461,7 +461,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1334,7 +1334,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -5001,15 +5001,15 @@ items:
                         href: api/adminconsentrequestpolicy-get.md
                       - name: 更新
                         href: api/adminconsentrequestpolicy-update.md
-                      - name: 应用同意请求
-                        href: resources/appconsentrequest.md
-                        items:
-                          - name: 列表
-                            href: api/appconsentrequest-list.md
-                          - name: 获取
-                            href: api/appconsentrequest-get.md
-                          - name: 按当前用户筛选
-                            href: api/appconsentrequest-filterByCurrentUser.md
+                  - name: 应用同意请求
+                    href: resources/appconsentrequest.md
+                    items:
+                      - name: 列表
+                        href: api/appconsentrequest-list.md
+                      - name: 获取
+                        href: api/appconsentrequest-get.md
+                      - name: 按当前用户筛选
+                        href: api/appconsentrequest-filterByCurrentUser.md
                   - name: 用户同意请求
                     href: resources/userconsentrequest.md
                     items:
@@ -5762,7 +5762,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 创建计划

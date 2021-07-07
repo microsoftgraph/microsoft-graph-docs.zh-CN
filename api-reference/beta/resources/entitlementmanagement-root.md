@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: f4723923a6b05b13fb8076b3e69ccbf0c1295f4f
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 4ec0d13dd91ee55d886bcf13d0d8a0d227b2a558
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298557"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317103"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权利管理 API
 
@@ -36,17 +36,19 @@ Azure Active Directory (Azure AD) 权限管理可帮助你管理内部用户以�
 - [entitlementManagementSettings：Azure](entitlementmanagementsettings.md)AD 权利管理的租户范围设置。
 - [approval](approval.md)：表示与访问包请求相关的决策。
 
+此外，可通过权利管理角色定义管理特定于权利管理的角色的角色 [分配](unifiedroledefinition.md)。
+
 有关介绍如何使用权利管理创建内部用户可以自助请求的资源包的教程，请参阅使用 Microsoft Graph [API 创建访问包](/graph/tutorial-access-package-api)。
 
-请注意，授权管理功能（包括 API）包含在 Azure AD 高级版 P2 中。 使用权利管理的租户必须拥有有效的已购买或试用 Azure AD 高级版 P2 或 EMS E5 订阅。
+请注意，权利管理功能（包括 API）包含在Azure AD Premium P2。 使用权利管理的租户必须拥有有效的已购买或试用Azure AD Premium P2 EMS E5 订阅。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 下表列出了可用于与权利管理相关资源进行交互的方法。
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-| [获取](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取 **entitlementManagementSettings 对象** 的属性。 |
+| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取 **entitlementManagementSettings 对象** 的属性。 |
 | [更新](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 更新 **entitlementManagementSettings 对象** 的属性。 |
 | [列出 accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) 集合 | 检索 **accessPackage 对象** 的列表。 |
 | [创建 accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | 创建新的 **accessPackage** 对象。 |
@@ -86,8 +88,8 @@ Azure Active Directory (Azure AD) 权限管理可帮助你管理内部用户以�
 | [获取 connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | 读取 **connectedOrganization 对象的属性和** 关系。 |
 | [更新 connectedOrganization](../api/connectedorganization-update.md) |无 | 更新 **connectedOrganization**。 |
 | [删除 connectedOrganization](../api/connectedorganization-delete.md) |无 | 删除 **connectedOrganization**。 |
-|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 **connectedOrganization 的内部发起人** 的列表。 |
-|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 **connectedOrganization 的外部发起** 人的列表。 |
+|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 **connectedOrganization 的内部发起人** 的列表。 |
+|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 **connectedOrganization 的外部发起** 人的列表。 |
 |[添加 internalSponsors](../api/connectedorganization-post-internalsponsors.md) | 无 | 将用户或组添加到 **connectedOrganization 的内部发起** 人。 |
 |[添加 externalSponsors](../api/connectedorganization-post-externalsponsors.md) | 无 | 将用户或组添加到 **connectedOrganization 的外部** 发起人。 |
 |[删除 internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | 无 | 从 **connectedOrganization 的内部发起人中删除用户或** 组。 |

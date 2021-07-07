@@ -6,12 +6,12 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9bc255a0bcddadbbf9190decc2d429eb88e91e67
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 30d26dfd3e140f302c6535cd6603a90568dbb567
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964553"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317096"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -28,7 +28,7 @@ ms.locfileid: "50964553"
 **注意：** 此测试版只允许导航列表，不允许创建或更新列表。
 但是，可以创建或更新[列表项][listItem]。
 
-下面的所有示例都与网站相关，例如：`https://graph.microsoft.com/beta/sites/{site-id}`。
+下面的所有示例都相对于网站，例如， `https://graph.microsoft.com/beta/sites/{site-id}` 。
 
 | 常见任务               | HTTP 方法
 |:--------------------------|:------------------------------
@@ -41,7 +41,7 @@ ms.locfileid: "50964553"
 | [创建列表项][]      | POST /lists/{list-id}
 | [获取最近的活动][] | GET /lists/{list-id}/activities
 | [获取 WebSocket 频道][] | GET /lists/{list-id}/subscriptions/socketIo
-|[列出内容类型][]          | GET /lists/{list-id}/contentTypes
+|[列表内容类型][]          | GET /lists/{list-id}/contentTypes
 |[从网站添加内容类型副本][] | POST /lists/{list-id}/contentTypes/addCopy
 |[List columns][]               | GET /lists/{list-id}/columns
 |[创建列][]              | POST /lists/{list-id}/columns
@@ -55,7 +55,7 @@ ms.locfileid: "50964553"
 [创建列表项]: ../api/listitem-create.md
 [获取最近的活动]: ../api/activities-list.md
 [获取 WebSocket 频道]: ../api/subscriptions-socketio.md
-[列出内容类型]: ../api/list-list-contenttypes.md
+[列表内容类型]: ../api/list-list-contenttypes.md
 [从网站添加内容类型副本]: ../api/contenttype-addCopy.md
 [List columns]: ../api/list-list-columns.md
 [创建列]: ../api/list-post-columns.md
@@ -79,7 +79,7 @@ ms.locfileid: "50964553"
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts ..."
   },
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
@@ -93,7 +93,7 @@ ms.locfileid: "50964553"
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
-  "webUrl": "url to visit the list in a browser"
+  "webUrl&quot;: &quot;url to visit the list in a browser"
 }
 ```
 
@@ -154,7 +154,7 @@ ms.locfileid: "50964553"
   "section": "documentation",
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
-    "Lists": "#"
+    "Lists&quot;: &quot;#"
   },
   "suppressions": []
 }

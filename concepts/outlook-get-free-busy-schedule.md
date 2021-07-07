@@ -4,12 +4,12 @@ description: 在工作或学校设置中，一种常见方案是查看用户何�
 author: tariq-sharif
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: efee992ee099327e72f3e726a2f9eeb346e8b436
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: d3d8379f05d6e19505bdf3c45cca0863a685423d
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771832"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317129"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>获取用户和资源的忙/闲日程安排
 
@@ -123,7 +123,7 @@ Content-type: application/json
 
 ```
 
-除了 Alex 的忙/闲日程安排和工作时间之外， **getSchedule** 还返回 **availabilityView** ，这是 Alex 这一天状态的合并视图。 此合并视图是一个字符串，其中包含这一天的所有时间段，每个时间段都使用以下约定指明 Alex 的状态： 
+除了 Alex 的忙/闲日程安排和工作时间之外，**getSchedule** 还返回 **availabilityView**，这是 Alex 这一天状态的合并视图。 此合并视图是一个字符串，其中包含这一天的所有时间段，每个时间段都使用以下约定指明 Alex 的状态： 
 
 - `0`= 空闲
 - `1`= 暂定
@@ -166,11 +166,11 @@ Content-type: application/json
 
 
 ## <a name="event-data-returned"></a>返回的事件数据
-要使应用能够获取忙/闲信息， **getSchedule** 所需的最低特权权限为 Calendars.Read。 根据应用方案，这可由已登录用户或管理员同意授予。
+要使应用能够获取忙/闲信息，**getSchedule** 所需的最低特权权限为 Calendars.Read。 根据应用方案，这可由已登录用户或管理员同意授予。
 
 虽然借助同意后授予的权限，应用可通过 Outlook 在所请求用户的日历上使用 **getSchedule** 但所请求的用户可控制该 **getSchedule** 返回的事件数据（若有）。 
 
-例如， **getSchedule** 可返回所请求用户的忙/闲状态和工作时间，还能返回事件的 **subject** 、 **location** 和 **isPrivate** ，但前提是：
+例如，**getSchedule** 可返回所请求用户的忙/闲状态和工作时间，还能返回事件的 **subject**、**location** 和 **isPrivate**，但前提是：
 
 - 事件被标记为低敏感度级别（`normal` 或 `personal`），且符合以下一个或多个条件：
 
@@ -181,7 +181,7 @@ Content-type: application/json
 
 ## <a name="time-zone-representation"></a>时区表示
 默认情况下，返回的日程安排项的开始时间和结束时间都采用 UTC。 可使用 `Prefer` 头指定适合应用的时区。 例如： 
-```
+``` http
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 

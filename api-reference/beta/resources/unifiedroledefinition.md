@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e9f44d194eb2eebf961abf40d49aac302f9db4b5
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 804315ae2ae4b803088a419913ca91c11a8e51c4
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239777"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316494"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>unifiedRoleDefinition 资源类型
 
@@ -18,9 +18,20 @@ ms.locfileid: "52239777"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-unifiedRoleDefinition 是列出可以执行的操作（如读取、写入和删除）的权限集合。
+表示列出操作（如读取、写入和删除）的权限集合，这些操作可在 RBAC 角色管理中由 RBAC Microsoft 365[执行](rolemanagement.md)。
 
-## <a name="methods"></a>方法
+目前支持以下 RBAC 提供程序：
+- 云电脑 
+- Intune (设备) 
+- Azure AD (目录)  
+- Azure AD (授权) 
+
+> [!NOTE]
+> 云电脑和权利管理 RBAC 提供程序当前仅支持[列表和](../api/rbacapplication-list-roledefinitions.md)[获取](../api/unifiedroledefinition-get.md)操作。
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -35,12 +46,12 @@ unifiedRoleDefinition 是列出可以执行的操作（如读取、写入和删�
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|字符串| unifiedRoleDefinition 的说明。 **isBuiltIn** 为 true 时为只读。 |
-|displayName|字符串| unifiedRoleDefinition 的 显示名称。 **isBuiltIn** 为 true 时为只读。 必需。  仅 `$filter` (`eq` `startsWith` 和运算符) 。|
+|displayName|字符串| unifiedRoleDefinition 的 显示名称。 **isBuiltIn** 为 true 时为只读。 必需项。  仅 `$filter` (`eq` `startsWith` 和运算符) 。|
 |id|字符串| unifiedRoleDefinition 的唯一标识符。 键，不可为 null，只读。  仅 `$filter` (`eq` 运算符) 。 |
 |isBuiltIn|Boolean| 指示 unifiedRoleDefinition 是否属于产品或自定义中包含的默认集的标志。 只读。  仅 `$filter` (`eq` 运算符) 。|
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则角色不能用于分配。 **isBuiltIn** 为 true 时为只读。 |
 |resourceScopes|String collection| 角色定义授予的作用域权限列表适用。 当前仅 `/` 受支持。 isBuiltIn 为 true 时为只读。 **请勿使用。这将很快被弃用。将作用域附加到角色分配** | 
-|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) 集合| 角色中包含的权限列表。 **isBuiltIn** 为 true 时为只读。 必需。 |
+|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) 集合| 角色中包含的权限列表。 **isBuiltIn** 为 true 时为只读。 必需项。 |
 |templateId|字符串| 可以在 isBuiltIn 为 false 时设置的自定义模板标识符。 如果一个标识符在不同目录之间需要相同，则通常使用此标识符。 **isBuiltIn** 为 true 时为只读。 |
 |version|String| 指示 unifiedRoleDefinition 的版本。 **isBuiltIn** 为 true 时为只读。|
 

@@ -1,23 +1,20 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7cbc133c3abfe2e7362e0b9381bb96e792c87a12
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 6f014f894c4e5af06c73cc85801e9be7f5b82a95
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52266909"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53319498"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 NoncustodialDataSource noncustodialDataSource = new NoncustodialDataSource();
-noncustodialDataSource.applyHoldToSource = true;
-UserSource dataSource = new UserSource();
-dataSource.email = "adelev@contoso.com";
-noncustodialDataSource.dataSource = dataSource;
+noncustodialDataSource.additionalDataManager().put("@odata.id", new JsonPrimitive("https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246"));
 
-graphClient.compliance().ediscovery().cases("5b840b94-f821-4c4a-8cad-3a90062bf51a").noncustodialDataSources()
+graphClient.compliance().ediscovery().cases("06d52284-ed81-49b8-904a-b863d3164731").sourceCollections("12aab1671c834213a84ba219c06f4c5a").noncustodialSources().references()
     .buildRequest()
     .post(noncustodialDataSource);
 

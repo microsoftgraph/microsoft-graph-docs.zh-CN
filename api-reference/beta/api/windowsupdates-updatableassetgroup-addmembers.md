@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: dbb5cd4c156940379eaf114235099d9fd53fb08f
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 99d56de596cb28f21bffdd915911fd6ca6c9417f
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067875"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316475"
 ---
 # <a name="updatableassetgroup-addmembers"></a>updatableAssetGroup：addMembers
 命名空间：microsoft.graph.windowsUpdates
@@ -41,7 +41,7 @@ ms.locfileid: "52067875"
 }
 -->
 ``` http
-POST /updatableAssetGroup/{updatableAssetGroupId}/addMembers
+POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -72,7 +72,7 @@ POST /updatableAssetGroup/{updatableAssetGroupId}/addMembers
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/addMembers
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers
 Content-Type: application/json
 
 {

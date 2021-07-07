@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 732388c3fe262baa7475152c7817549bf2681408
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 0124a08657202ebfa61c5207b0db244dc059ecc0
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52266910"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53319493"
 ---
 ```javascript
 
@@ -16,14 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const noncustodialDataSource = {
-    applyHoldToSource: true,
-    dataSource: {
-        '@odata.type': 'microsoft.graph.ediscovery.userSource',
-        email: 'adelev@contoso.com'
-    }
+    '@odata.id': 'https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246'
 };
 
-await client.api('/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/noncustodialDataSources')
+await client.api('/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/sourceCollections/12aab1671c834213a84ba219c06f4c5a/noncustodialSources/$ref')
     .version('beta')
     .post(noncustodialDataSource);
 

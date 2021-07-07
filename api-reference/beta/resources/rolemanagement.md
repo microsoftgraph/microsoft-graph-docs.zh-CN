@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 241de0b72a9ffad507975fca408fe49f0b0a90f0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 42cad38bf690b6bb6958cfde99282f049a1a1d10
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440122"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317019"
 ---
 # <a name="rolemanagement-resource-type"></a>roleManagement 资源类型
 
@@ -18,11 +18,21 @@ ms.locfileid: "50440122"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表 Microsoft 365 RBAC 角色管理实体。 提供对 RBAC 提供程序中出现的角色定义和角色分配的访问权限。 目前， (支持 Azure AD) 和 deviceManagement (Intune) 目录。 
+表示一Microsoft 365 RBAC 角色管理实体，该实体提供对各种 RBAC 提供程序显示的角色定义和角色分配的访问权限。 
 
+统一角色管理 API 当前支持以下 RBAC Microsoft 365：
+- 云电脑 
+- Intune (设备) 
+- directory (Azure AD directory roles) 
+- 授权管理 (Azure AD 权利管理) 
+ 
 有关详细信息，请参阅： 
+* [Microsoft 365中的角色，包括 Azure AD、特定于服务和跨服务的角色](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
 * [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
-* [使用 Microsoft Intune (基于角色) RBAC](/mem/intune/fundamentals/role-based-access-control)
+* [Azure AD 权利管理中的委派和角色](/azure/active-directory/governance/entitlement-management-delegate)。
+* [Microsoft Intune 中的基于角色的访问控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>Methods
 
@@ -36,8 +46,10 @@ ms.locfileid: "50440122"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|目录|[rbacApplication](rbacapplication.md)| 只读。 可为 NULL。|
-|deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| 只读。可为空。|
+|cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)|提供对云电脑 RBAC 提供程序的角色定义和角色分配的访问权限。 只读。 可为 Null。|
+|deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| 提供对 Intune RBAC 提供程序的角色定义和角色分配的访问权限。 只读。 可为 Null。|
+|directory|[rbacApplication](rbacapplication.md)|提供对 Azure AD RBAC 提供程序的角色定义和角色分配的访问权限。 只读。 可为 Null。|
+|entitlementManagement|[rbacApplication](rbacapplication.md)| 提供对 Azure AD 权利管理的角色定义和角色分配的访问权限。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

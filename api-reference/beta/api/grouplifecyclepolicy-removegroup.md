@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cca6d211de7b26efc45cad4826d1070646a6f137
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: e081dcbfa268999598c8cfa13b4cd1acd53ec6ee
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681118"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316669"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -49,11 +49,11 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|groupId|Guid| 要从策略中删除的组的 ID。|
+|groupId|String| 要从策略中删除的组的标识符。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码。 如果已从策略中删除组，响应正文中返回 **true** 值。 否则，响应正文中返回 **false** 值。
+如果成功，此方法返回 `200 OK` 响应代码。 如果从策略中删除组，响应 `true` 正文中将返回一个值。 否则， `false` 在响应正文中返回值。
 
 ## <a name="example"></a>示例
 

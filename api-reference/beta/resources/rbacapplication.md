@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c3833d07e0fb9758cc8f4f5418f725889fd784dc
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 9636f113222bbbe6a754c2977e08273d140a6086
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760923"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317194"
 ---
 # <a name="rbacapplication-resource-type"></a>rbacApplication 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "50760923"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于 Microsoft 365 RBAC 提供程序的统一角色定义和角色分配的角色管理容器。 目前，"目录"是唯一受支持的 RBAC 应用程序。
+用于统一角色定义的角色管理容器和用于 RBAC Microsoft 365角色分配。 目前，目录和权利管理是唯一受支持的 RBAC 应用程序。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

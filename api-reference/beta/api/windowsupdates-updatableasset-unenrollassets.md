@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 3e714d403fdc6423053bd958201abd3e95352f0f
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 8f32ca029e94da476eb1b6c491057a3d4343b523
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067329"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317187"
 ---
 # <a name="updatableasset-unenrollassets"></a>updatableAsset：unenrollAssets
 命名空间：microsoft.graph.windowsUpdates
@@ -37,7 +37,7 @@ ms.locfileid: "52067329"
 }
 -->
 ``` http
-POST /updatableAssetGroup/members/unenrollAssets
+POST /admin/windows/updates/updatableAssets/unenrollAssets
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -71,7 +71,7 @@ POST /updatableAssetGroup/members/unenrollAssets
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/members/unenrollAssets
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/unenrollAssets
 Content-Type: application/json
 
 {
