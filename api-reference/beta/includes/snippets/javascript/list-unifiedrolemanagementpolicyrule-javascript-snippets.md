@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 574bd8c6b80217bc1b71da3b115c1339be6d7dbb
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 53edb31258bb8338cd3bebc3d5abf1f6fac91795
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52668563"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53319533"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let rules = await client.api('/policies/roleManagementPolicies/ba9cc2d6-c2d6-ba9c-d6c2-9cbad6c29cba/rules')
+let rules = await client.api('/policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules')
     .version('beta')
     .get();
 

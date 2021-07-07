@@ -5,86 +5,94 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 04a34aec3c611e5cf178910b7a8513a048fb797e
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 3b49093e1eeba4618bc36737e789a9484c5a5142
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869131"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317208"
 ---
-# <a name="list-unifiedroledefinitions"></a><span data-ttu-id="832e2-103">列出 unifiedRoleDefinitions</span><span class="sxs-lookup"><span data-stu-id="832e2-103">List unifiedRoleDefinitions</span></span>
+# <a name="list-unifiedroledefinitions"></a><span data-ttu-id="c5e91-103">列出 unifiedRoleDefinitions</span><span class="sxs-lookup"><span data-stu-id="c5e91-103">List unifiedRoleDefinitions</span></span>
 
-<span data-ttu-id="832e2-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="832e2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c5e91-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c5e91-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="832e2-105">获取 RBAC [提供程序的 unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="832e2-105">Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider.</span></span>
+<span data-ttu-id="c5e91-105">获取 RBAC [提供程序的 unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="c5e91-105">Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider.</span></span>
 
-<span data-ttu-id="832e2-106">目前支持以下 RBAC 提供程序：</span><span class="sxs-lookup"><span data-stu-id="832e2-106">The following RBAC providers are currently supported:</span></span>
-- <span data-ttu-id="832e2-107">云电脑</span><span class="sxs-lookup"><span data-stu-id="832e2-107">cloud PC</span></span> 
-- <span data-ttu-id="832e2-108">Intune (设备) </span><span class="sxs-lookup"><span data-stu-id="832e2-108">device management (Intune)</span></span>
-- <span data-ttu-id="832e2-109">Azure AD (目录) </span><span class="sxs-lookup"><span data-stu-id="832e2-109">directory (Azure AD)</span></span> 
+<span data-ttu-id="c5e91-106">目前支持以下 RBAC 提供程序：</span><span class="sxs-lookup"><span data-stu-id="c5e91-106">The following RBAC providers are currently supported:</span></span>
+- <span data-ttu-id="c5e91-107">云电脑</span><span class="sxs-lookup"><span data-stu-id="c5e91-107">cloud PC</span></span> 
+- <span data-ttu-id="c5e91-108">Intune (设备) </span><span class="sxs-lookup"><span data-stu-id="c5e91-108">device management (Intune)</span></span>
+- <span data-ttu-id="c5e91-109">Azure AD (目录) </span><span class="sxs-lookup"><span data-stu-id="c5e91-109">directory (Azure AD)</span></span> 
+- <span data-ttu-id="c5e91-110">Azure AD (授权) </span><span class="sxs-lookup"><span data-stu-id="c5e91-110">entitlement management (Azure AD)</span></span>
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a><span data-ttu-id="832e2-110">权限</span><span class="sxs-lookup"><span data-stu-id="832e2-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c5e91-111">权限</span><span class="sxs-lookup"><span data-stu-id="c5e91-111">Permissions</span></span>
 
-<span data-ttu-id="832e2-111">根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。</span><span class="sxs-lookup"><span data-stu-id="832e2-111">Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API.</span></span> <span data-ttu-id="832e2-112">若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。</span><span class="sxs-lookup"><span data-stu-id="832e2-112">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).</span></span> 
+<span data-ttu-id="c5e91-112">根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。</span><span class="sxs-lookup"><span data-stu-id="c5e91-112">Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API.</span></span> <span data-ttu-id="c5e91-113">若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c5e91-113">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).</span></span> 
 
-|<span data-ttu-id="832e2-113">支持的提供程序</span><span class="sxs-lookup"><span data-stu-id="832e2-113">Supported provider</span></span>      | <span data-ttu-id="832e2-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="832e2-114">Delegated (work or school account)</span></span>  | <span data-ttu-id="832e2-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="832e2-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="832e2-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="832e2-116">Application</span></span> |
+|<span data-ttu-id="c5e91-114">支持的提供程序</span><span class="sxs-lookup"><span data-stu-id="c5e91-114">Supported provider</span></span>      | <span data-ttu-id="c5e91-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c5e91-115">Delegated (work or school account)</span></span>  | <span data-ttu-id="c5e91-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c5e91-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c5e91-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="c5e91-117">Application</span></span> |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| <span data-ttu-id="832e2-117">Cloud PC</span><span class="sxs-lookup"><span data-stu-id="832e2-117">Cloud PC</span></span> | <span data-ttu-id="832e2-118">CloudPC.Read.All、CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="832e2-118">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> | <span data-ttu-id="832e2-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="832e2-119">Not supported.</span></span> | <span data-ttu-id="832e2-120">CloudPC.Read.All、CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="832e2-120">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> |
-| <span data-ttu-id="832e2-121">设备管理</span><span class="sxs-lookup"><span data-stu-id="832e2-121">Device management</span></span> | <span data-ttu-id="832e2-122">DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="832e2-122">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> | <span data-ttu-id="832e2-123">不支持。</span><span class="sxs-lookup"><span data-stu-id="832e2-123">Not supported.</span></span> | <span data-ttu-id="832e2-124">DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="832e2-124">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> |
-| <span data-ttu-id="832e2-125">目录</span><span class="sxs-lookup"><span data-stu-id="832e2-125">Directory</span></span> | <span data-ttu-id="832e2-126">RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="832e2-126">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> | <span data-ttu-id="832e2-127">不支持。</span><span class="sxs-lookup"><span data-stu-id="832e2-127">Not supported.</span></span>| <span data-ttu-id="832e2-128">RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="832e2-128">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="c5e91-118">云电脑</span><span class="sxs-lookup"><span data-stu-id="c5e91-118">Cloud PC</span></span> | <span data-ttu-id="c5e91-119">CloudPC.Read.All、CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5e91-119">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> | <span data-ttu-id="c5e91-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="c5e91-120">Not supported.</span></span> | <span data-ttu-id="c5e91-121">CloudPC.Read.All、CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5e91-121">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> |
+| <span data-ttu-id="c5e91-122">设备管理</span><span class="sxs-lookup"><span data-stu-id="c5e91-122">Device management</span></span> | <span data-ttu-id="c5e91-123">DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5e91-123">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> | <span data-ttu-id="c5e91-124">不支持。</span><span class="sxs-lookup"><span data-stu-id="c5e91-124">Not supported.</span></span> | <span data-ttu-id="c5e91-125">DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5e91-125">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> |
+| <span data-ttu-id="c5e91-126">目录</span><span class="sxs-lookup"><span data-stu-id="c5e91-126">Directory</span></span> | <span data-ttu-id="c5e91-127">RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c5e91-127">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> | <span data-ttu-id="c5e91-128">不支持。</span><span class="sxs-lookup"><span data-stu-id="c5e91-128">Not supported.</span></span>| <span data-ttu-id="c5e91-129">RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5e91-129">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="c5e91-130">权利管理</span><span class="sxs-lookup"><span data-stu-id="c5e91-130">Entitlement management</span></span> | <span data-ttu-id="c5e91-131">EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5e91-131">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span> | <span data-ttu-id="c5e91-132">不支持。</span><span class="sxs-lookup"><span data-stu-id="c5e91-132">Not supported.</span></span> | <span data-ttu-id="c5e91-133">不支持。</span><span class="sxs-lookup"><span data-stu-id="c5e91-133">Not supported.</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="832e2-129">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="832e2-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c5e91-134">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c5e91-134">HTTP request</span></span>
 
-<span data-ttu-id="832e2-130">列出云电脑提供商的角色定义：</span><span class="sxs-lookup"><span data-stu-id="832e2-130">To list role definitions for a cloud PC provider:</span></span>
+<span data-ttu-id="c5e91-135">列出云电脑提供商的角色定义：</span><span class="sxs-lookup"><span data-stu-id="c5e91-135">To list role definitions for a cloud PC provider:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions
 ```
 
-<span data-ttu-id="832e2-131">列出设备管理提供程序的角色定义：</span><span class="sxs-lookup"><span data-stu-id="832e2-131">To list role definitions for a device management provider:</span></span>
+<span data-ttu-id="c5e91-136">列出设备管理提供程序的角色定义：</span><span class="sxs-lookup"><span data-stu-id="c5e91-136">To list role definitions for a device management provider:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleDefinitions
 ```
 
-<span data-ttu-id="832e2-132">列出目录提供程序的角色定义：</span><span class="sxs-lookup"><span data-stu-id="832e2-132">To list role definitions for a directory provider:</span></span>
+<span data-ttu-id="c5e91-137">列出目录提供程序的角色定义：</span><span class="sxs-lookup"><span data-stu-id="c5e91-137">To list role definitions for a directory provider:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/directory/roleDefinitions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="832e2-133">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="832e2-133">Optional query parameters</span></span>
-<span data-ttu-id="832e2-134">此方法支持 `$filter` 对 、 `id` 和 `displayName` 属性使用查询 `isBuiltIn` 参数。</span><span class="sxs-lookup"><span data-stu-id="832e2-134">This method supports `$filter` query parameter on `id`, `displayName`, and `isBuiltIn` properties.</span></span> <span data-ttu-id="832e2-135">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="832e2-135">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="c5e91-138">列出权利管理提供程序的角色定义：</span><span class="sxs-lookup"><span data-stu-id="c5e91-138">To list role definitions for the entitlement management provider:</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions
+```
 
-## <a name="request-headers"></a><span data-ttu-id="832e2-136">请求标头</span><span class="sxs-lookup"><span data-stu-id="832e2-136">Request headers</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c5e91-139">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c5e91-139">Optional query parameters</span></span>
+<span data-ttu-id="c5e91-140">此方法支持 `$filter` 对 、 `id` 和 `displayName` 属性使用查询 `isBuiltIn` 参数。</span><span class="sxs-lookup"><span data-stu-id="c5e91-140">This method supports `$filter` query parameter on `id`, `displayName`, and `isBuiltIn` properties.</span></span> <span data-ttu-id="c5e91-141">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="c5e91-141">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-| <span data-ttu-id="832e2-137">名称</span><span class="sxs-lookup"><span data-stu-id="832e2-137">Name</span></span>      |<span data-ttu-id="832e2-138">说明</span><span class="sxs-lookup"><span data-stu-id="832e2-138">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c5e91-142">请求标头</span><span class="sxs-lookup"><span data-stu-id="c5e91-142">Request headers</span></span>
+
+| <span data-ttu-id="c5e91-143">名称</span><span class="sxs-lookup"><span data-stu-id="c5e91-143">Name</span></span>      |<span data-ttu-id="c5e91-144">说明</span><span class="sxs-lookup"><span data-stu-id="c5e91-144">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="832e2-139">Authorization</span><span class="sxs-lookup"><span data-stu-id="832e2-139">Authorization</span></span> | <span data-ttu-id="832e2-140">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="832e2-140">Bearer {token}</span></span> |
+| <span data-ttu-id="c5e91-145">Authorization</span><span class="sxs-lookup"><span data-stu-id="c5e91-145">Authorization</span></span> | <span data-ttu-id="c5e91-146">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="c5e91-146">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="832e2-141">请求正文</span><span class="sxs-lookup"><span data-stu-id="832e2-141">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c5e91-147">请求正文</span><span class="sxs-lookup"><span data-stu-id="c5e91-147">Request body</span></span>
 
-<span data-ttu-id="832e2-142">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="832e2-142">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c5e91-148">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c5e91-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="832e2-143">响应</span><span class="sxs-lookup"><span data-stu-id="832e2-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c5e91-149">响应</span><span class="sxs-lookup"><span data-stu-id="c5e91-149">Response</span></span>
 
-<span data-ttu-id="832e2-144">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="832e2-144">If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects in the response body.</span></span>
+<span data-ttu-id="c5e91-150">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="c5e91-150">If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="832e2-145">示例</span><span class="sxs-lookup"><span data-stu-id="832e2-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c5e91-151">示例</span><span class="sxs-lookup"><span data-stu-id="c5e91-151">Examples</span></span>
 
-### <a name="example-1-list-role-definitions-for-a-directory-provider"></a><span data-ttu-id="832e2-146">示例 1：列出目录提供程序的角色定义</span><span class="sxs-lookup"><span data-stu-id="832e2-146">Example 1: List role definitions for a directory provider</span></span>
+### <a name="example-1-list-role-definitions-for-a-directory-provider"></a><span data-ttu-id="c5e91-152">示例 1：列出目录提供程序的角色定义</span><span class="sxs-lookup"><span data-stu-id="c5e91-152">Example 1: List role definitions for a directory provider</span></span>
 
-#### <a name="request"></a><span data-ttu-id="832e2-147">请求</span><span class="sxs-lookup"><span data-stu-id="832e2-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c5e91-153">请求</span><span class="sxs-lookup"><span data-stu-id="c5e91-153">Request</span></span>
 
-<span data-ttu-id="832e2-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="832e2-148">The following is an example of the request.</span></span>
+<span data-ttu-id="c5e91-154">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c5e91-154">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="832e2-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="832e2-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c5e91-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="c5e91-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roledefinitions_directory"
@@ -93,30 +101,30 @@ GET /roleManagement/directory/roleDefinitions
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 ```
-# <a name="c"></a>[<span data-ttu-id="832e2-150">C#</span><span class="sxs-lookup"><span data-stu-id="832e2-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c5e91-156">C#</span><span class="sxs-lookup"><span data-stu-id="c5e91-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="832e2-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="832e2-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c5e91-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c5e91-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="832e2-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="832e2-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c5e91-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c5e91-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="832e2-153">Java</span><span class="sxs-lookup"><span data-stu-id="832e2-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c5e91-159">Java</span><span class="sxs-lookup"><span data-stu-id="c5e91-159">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="832e2-154">响应</span><span class="sxs-lookup"><span data-stu-id="832e2-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c5e91-160">响应</span><span class="sxs-lookup"><span data-stu-id="c5e91-160">Response</span></span>
 
-<span data-ttu-id="832e2-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="832e2-155">The following is an example of the response.</span></span>
+<span data-ttu-id="c5e91-161">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c5e91-161">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="832e2-156">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="832e2-156">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="c5e91-162">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c5e91-162">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -223,14 +231,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a><span data-ttu-id="832e2-157">示例 2：列出云电脑提供商的角色定义</span><span class="sxs-lookup"><span data-stu-id="832e2-157">Example 2: List role definitions for a cloud PC provider</span></span>
+### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a><span data-ttu-id="c5e91-163">示例 2：列出云电脑提供商的角色定义</span><span class="sxs-lookup"><span data-stu-id="c5e91-163">Example 2: List role definitions for a cloud PC provider</span></span>
 
-#### <a name="request"></a><span data-ttu-id="832e2-158">请求</span><span class="sxs-lookup"><span data-stu-id="832e2-158">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c5e91-164">请求</span><span class="sxs-lookup"><span data-stu-id="c5e91-164">Request</span></span>
 
-<span data-ttu-id="832e2-159">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="832e2-159">The following is an example of the request.</span></span>
+<span data-ttu-id="c5e91-165">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c5e91-165">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="832e2-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="832e2-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c5e91-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="c5e91-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roledefinitions_cloudpc"
@@ -239,30 +247,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 ```
-# <a name="c"></a>[<span data-ttu-id="832e2-161">C#</span><span class="sxs-lookup"><span data-stu-id="832e2-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c5e91-167">C#</span><span class="sxs-lookup"><span data-stu-id="c5e91-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-cloudpc-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="832e2-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="832e2-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c5e91-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c5e91-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-cloudpc-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="832e2-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="832e2-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c5e91-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c5e91-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-cloudpc-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="832e2-164">Java</span><span class="sxs-lookup"><span data-stu-id="832e2-164">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c5e91-170">Java</span><span class="sxs-lookup"><span data-stu-id="c5e91-170">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-cloudpc-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="832e2-165">响应</span><span class="sxs-lookup"><span data-stu-id="832e2-165">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c5e91-171">响应</span><span class="sxs-lookup"><span data-stu-id="c5e91-171">Response</span></span>
 
-<span data-ttu-id="832e2-166">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="832e2-166">The following is an example of the response.</span></span>
+<span data-ttu-id="c5e91-172">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c5e91-172">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="832e2-167">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="832e2-167">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="c5e91-173">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c5e91-173">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -339,6 +347,78 @@ Content-type: application/json
                         "Microsoft.CloudPC/Roles/Read"
                     ],
                     "condition": null
+                }
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-3-list-role-definitions-for-the-entitlement-management-provider"></a><span data-ttu-id="c5e91-174">示例 3：列出权利管理提供程序的角色定义</span><span class="sxs-lookup"><span data-stu-id="c5e91-174">Example 3: List role definitions for the entitlement management provider</span></span>
+
+#### <a name="request"></a><span data-ttu-id="c5e91-175">请求</span><span class="sxs-lookup"><span data-stu-id="c5e91-175">Request</span></span>
+
+<span data-ttu-id="c5e91-176">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c5e91-176">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_entitlementmanagement"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDefinitions
+```
+
+#### <a name="response"></a><span data-ttu-id="c5e91-177">响应</span><span class="sxs-lookup"><span data-stu-id="c5e91-177">Response</span></span>
+
+<span data-ttu-id="c5e91-178">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c5e91-178">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="c5e91-179">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c5e91-179">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "name": "get_roledefinitions_entitlementmanagement",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleDefinitions",
+    "value": [
+        {
+            "id": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "displayName": "Catalog owner",
+            "description": "Catalog owner",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/allTasks"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "displayName": "Catalog reader",
+            "description": "Catalog reader",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/Read"
+                    ]
                 }
             ]
         }

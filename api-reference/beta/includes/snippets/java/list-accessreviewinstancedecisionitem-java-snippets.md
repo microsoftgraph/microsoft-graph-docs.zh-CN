@@ -1,20 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c07343d64a9225a763979b4fa1d4f458cfc33ed7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 279c599cda1eaf598e1aa85dc4f8aa5ec437b6f6
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50973251"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53319502"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AccessReviewInstanceDecisionItemCollectionPage decisions = graphClient.identityGovernance().accessReviews().definitions("60860cdd-fb4d-4054-91ba-444404f3baa6").instances("14444cdb-6a18-4c08-ba2c-48c02f0a0138").decisions()
+AccessReviewInstanceDecisionItemCollectionPage decisions = graphClient.identityGovernance().accessReviews().definitions("16d424f6-0100-4bf1-9ebc-fe009c5e5006").instances("bb14c722-51b8-4962-9bd2-1d96ba773d80").decisions()
     .buildRequest()
-    .skip(0)
-    .top(100)
     .get();
 
 ```

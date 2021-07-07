@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: aaf1435c1a4c771bcb30a6aa17985e87a662665a
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 5c57e7b6f56e0662638f3edccb75531683c8363d
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51573144"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317121"
 ---
 ```csharp
 
@@ -13,29 +13,33 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var topic = new TeamworkActivityTopic
 {
-    Source = TeamworkActivityTopicSource.Text,
-    Value = "Deployment Approvals Channel",
-    WebUrl = "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000"
+    Source = TeamworkActivityTopicSource.EntityUrl,
+    Value = "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
 };
 
-var activityType = "deploymentApprovalRequired";
+var activityType = "pendingFinanceApprovalRequests";
 
 var previewText = new ItemBody
 {
-    Content = "New deployment requires your approval"
+    Content = "Internal spending team has a pending finance approval requests"
+};
+
+var recipient = new TeamMembersNotificationRecipient
+{
+    TeamId = "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
 };
 
 var templateParameters = new List<KeyValuePair>()
 {
     new KeyValuePair
     {
-        Name = "deploymentId",
-        Value = "6788662"
+        Name = "pendingRequestCount",
+        Value = "5"
     }
 };
 
-await graphClient.Users["{user-id}"].Teamwork
-    .SendActivityNotification(topic,activityType,null,previewText,templateParameters)
+await graphClient.Teams["{team-id}"]
+    .SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
     .Request()
     .PostAsync();
 
