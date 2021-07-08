@@ -5,28 +5,28 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c877c30ed016a83a9c1da8019a33467e232fc110
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 39c7129513cbc5815dad48841f6284ae307aed0c
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680092"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334680"
 ---
-# <a name="unifiedroleeligibilityschedulerequest-cancel"></a><span data-ttu-id="501bb-103">unifiedRoleEligibilityScheduleRequest：cancel</span><span class="sxs-lookup"><span data-stu-id="501bb-103">unifiedRoleEligibilityScheduleRequest: cancel</span></span>
-<span data-ttu-id="501bb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="501bb-104">Namespace: microsoft.graph</span></span>
+# <a name="unifiedroleeligibilityschedulerequest-cancel"></a><span data-ttu-id="a5727-103">unifiedRoleEligibilityScheduleRequest：cancel</span><span class="sxs-lookup"><span data-stu-id="a5727-103">unifiedRoleEligibilityScheduleRequest: cancel</span></span>
+<span data-ttu-id="a5727-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a5727-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="501bb-105">立即取消 [unifiedRoleEligibilityScheduleRequest，](../resources/unifiedroleeligibilityschedulerequest.md) 并要求系统在 30 天后自动删除已取消的请求。</span><span class="sxs-lookup"><span data-stu-id="501bb-105">Immediately cancel a [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) and have the system automatically delete the cancelled request after 30 days.</span></span>
+<span data-ttu-id="a5727-105">立即取消 [unifiedRoleEligibilityScheduleRequest，](../resources/unifiedroleeligibilityschedulerequest.md) 并要求系统在 30 天后自动删除已取消的请求。</span><span class="sxs-lookup"><span data-stu-id="a5727-105">Immediately cancel a [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) and have the system automatically delete the cancelled request after 30 days.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="501bb-106">权限</span><span class="sxs-lookup"><span data-stu-id="501bb-106">Permissions</span></span>
-<span data-ttu-id="501bb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="501bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a5727-106">权限</span><span class="sxs-lookup"><span data-stu-id="a5727-106">Permissions</span></span>
+<span data-ttu-id="a5727-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a5727-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="501bb-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="501bb-109">Permission type</span></span>|<span data-ttu-id="501bb-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="501bb-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="a5727-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a5727-109">Permission type</span></span>|<span data-ttu-id="a5727-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a5727-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="501bb-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="501bb-111">Delegated (work or school account)</span></span>|<span data-ttu-id="501bb-112">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="501bb-112">PrivilegedAccess.ReadWrite.AzureAD</span></span>|
-|<span data-ttu-id="501bb-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="501bb-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="501bb-114">不支持</span><span class="sxs-lookup"><span data-stu-id="501bb-114">Not supported</span></span>|
-|<span data-ttu-id="501bb-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="501bb-115">Application</span></span>|<span data-ttu-id="501bb-116">不支持</span><span class="sxs-lookup"><span data-stu-id="501bb-116">Not supported</span></span>|
+|<span data-ttu-id="a5727-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a5727-111">Delegated (work or school account)</span></span>|<span data-ttu-id="a5727-112">RoleEligibilitySchedule.ReadWrite.Directory、RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="a5727-112">RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory</span></span> |
+|<span data-ttu-id="a5727-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a5727-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a5727-114">不支持</span><span class="sxs-lookup"><span data-stu-id="a5727-114">Not supported</span></span>|
+|<span data-ttu-id="a5727-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a5727-115">Application</span></span>|<span data-ttu-id="a5727-116">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="a5727-116">RoleManagement.ReadWrite.Directory</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="501bb-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="501bb-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a5727-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a5727-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -36,23 +36,23 @@ ms.locfileid: "52680092"
 POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}/cancel
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="501bb-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="501bb-118">Request headers</span></span>
-|<span data-ttu-id="501bb-119">名称</span><span class="sxs-lookup"><span data-stu-id="501bb-119">Name</span></span>|<span data-ttu-id="501bb-120">说明</span><span class="sxs-lookup"><span data-stu-id="501bb-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a5727-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="a5727-118">Request headers</span></span>
+|<span data-ttu-id="a5727-119">名称</span><span class="sxs-lookup"><span data-stu-id="a5727-119">Name</span></span>|<span data-ttu-id="a5727-120">说明</span><span class="sxs-lookup"><span data-stu-id="a5727-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="501bb-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="501bb-121">Authorization</span></span>|<span data-ttu-id="501bb-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="501bb-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="a5727-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5727-121">Authorization</span></span>|<span data-ttu-id="a5727-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a5727-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="501bb-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="501bb-124">Request body</span></span>
-<span data-ttu-id="501bb-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="501bb-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a5727-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="a5727-124">Request body</span></span>
+<span data-ttu-id="a5727-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a5727-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="501bb-126">响应</span><span class="sxs-lookup"><span data-stu-id="501bb-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a5727-126">响应</span><span class="sxs-lookup"><span data-stu-id="a5727-126">Response</span></span>
 
-<span data-ttu-id="501bb-127">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="501bb-127">If successful, this action returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="a5727-127">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="a5727-127">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="501bb-128">示例</span><span class="sxs-lookup"><span data-stu-id="501bb-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a5727-128">示例</span><span class="sxs-lookup"><span data-stu-id="a5727-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="501bb-129">请求</span><span class="sxs-lookup"><span data-stu-id="501bb-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a5727-129">请求</span><span class="sxs-lookup"><span data-stu-id="a5727-129">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="501bb-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="501bb-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a5727-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="a5727-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "unifiedroleeligibilityschedulerequest_cancel"
@@ -61,19 +61,19 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 ``` http
 POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}/cancel
 ```
-# <a name="c"></a>[<span data-ttu-id="501bb-131">C#</span><span class="sxs-lookup"><span data-stu-id="501bb-131">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a5727-131">C#</span><span class="sxs-lookup"><span data-stu-id="a5727-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleeligibilityschedulerequest-cancel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="501bb-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="501bb-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a5727-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a5727-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroleeligibilityschedulerequest-cancel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="501bb-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="501bb-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a5727-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a5727-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/unifiedroleeligibilityschedulerequest-cancel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="501bb-134">Java</span><span class="sxs-lookup"><span data-stu-id="501bb-134">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a5727-134">Java</span><span class="sxs-lookup"><span data-stu-id="a5727-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroleeligibilityschedulerequest-cancel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -81,8 +81,8 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySc
 
 
 
-### <a name="response"></a><span data-ttu-id="501bb-135">响应</span><span class="sxs-lookup"><span data-stu-id="501bb-135">Response</span></span>
-<span data-ttu-id="501bb-136">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="501bb-136">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="a5727-135">响应</span><span class="sxs-lookup"><span data-stu-id="a5727-135">Response</span></span>
+<span data-ttu-id="a5727-136">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a5727-136">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
