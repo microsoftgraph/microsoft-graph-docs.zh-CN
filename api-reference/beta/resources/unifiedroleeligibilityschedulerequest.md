@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 622bce02829cc245d0cbdb859a6c56b1f88a3ea5
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 5058d77a14ec009f60d5c4d6f4c8ae29b46f393b
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547125"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334442"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-resource-type"></a>unifiedRoleEligibilityScheduleRequest 资源类型
 
@@ -30,7 +30,6 @@ ms.locfileid: "52547125"
 |[列出 unifiedRoleEligibilityScheduleRequests](../api/unifiedroleeligibilityschedulerequest-list.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 集合|获取 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象及其属性的列表。|
 |[创建 unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|创建新的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象。|
 |[获取 unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-get.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|读取 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象的属性和关系。|
-|[更新 unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-update.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|更新 [unifiedRoleEligibilityScheduleRequest 对象](../resources/unifiedroleeligibilityschedulerequest.md) 的属性。|
 |[filterByCurrentUser](../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 集合|获取与特定用户相关的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象及其属性的列表。|
 |[取消](../api/unifiedroleeligibilityschedulerequest-cancel.md)|无|立即取消 [unifiedRoleEligibilityScheduleRequest，](../resources/unifiedroleeligibilityschedulerequest.md) 并标记为在 30 天内删除|
 
@@ -41,7 +40,7 @@ ms.locfileid: "52547125"
 |appScopeId|String|当分配范围特定于应用时，特定于应用的范围的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 对租户范围范围使用"/"。 应用程序作用域是仅由此应用程序定义和理解的范围。|
 |directoryScopeId|String|表示工作分配范围的目录对象的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 应用程序作用域是仅由此应用程序定义和理解的范围。|
 |id|String|unifiedRoleEligibilityScheduleRequest 的唯一标识符。|
-|isValidationOnly|Boolean|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
+|isValidationOnly|布尔|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
 |justification|String|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
 |principalId|String| 要授予分配的主体的 Objectid。|
 |roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的 ID。 只读。|

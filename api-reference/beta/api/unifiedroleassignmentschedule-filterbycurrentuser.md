@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2ec3668023e3fcda0e402d07ba64dea957720675
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bc80dc68d8ff4133d481b23295f4826d85075213
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679860"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334484"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule：filterByCurrentUser
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "52679860"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|PrivilegedAccess.ReadWrite.AzureAD|
+|委派（工作或学校帐户）|RoleAssignmentSchedule.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleAssignmentSchedule.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|PrivilegedAccess.Read.AzureAD|
+|应用程序|RoleManagement.Read.All、RoleManagement.Read.Directory、RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 

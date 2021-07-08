@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e90157f8139de8524bcf497c7aa0c9c496aceac7
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: e6af591272ea3c1631107485609b7c43fcec59cd
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209692"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316522"
 ---
 # <a name="create-group"></a>创建组
 
@@ -59,7 +59,7 @@ POST /groups
 | mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
 | mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 必填。 |
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
-| owners | string collection | 此属性表示创建时指定的组所有者。可选。 |
+| owners | string collection | 此属性表示创建时指定的组所有者。  除非已在 **成员** 属性中指定，否则不会自动将所有者添加为组成员。 可选。 |
 | members | 字符串集合 | 此属性表示创建时指定的组成员。可选。 |
 |visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
@@ -281,7 +281,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 必须为调用的用户分配 *Directory.AccessAsUser.All* 权限才能设置 **isAssignableToRole** 属性。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,13 +1,13 @@
 ---
 title: 在 Outlook 日历上找到可能的会议时间
-description: '在工作场所或学校，寻找开会的公共时间和场所经常会产生开销。 Microsoft Graph 应用程序可使用 '
+description: '在工作区或学校中，查找共同的见面时间和地点通常会产生开销。Microsoft Graph 应用程序可以使用 '
 localization_priority: Priority
-ms.openlocfilehash: 3ae59b778cc26b47c2254d5c52d7da0f3d5fc8e1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 972a22ed302b824c3b4d147338badcfb72c30c6a
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897209"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317026"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>在 Outlook 日历上找到可能的会议时间
 
@@ -16,7 +16,7 @@ ms.locfileid: "44897209"
 **FindMeetingTimes** 操作使你可以指定条件，如会议日期/时间范围、持续时间、可选或必选的与会者，以及活动性质 (**activityDomain**)。该操作考虑到与会者和组织者正常的工作计划和忙/闲状态，并建议适合参与者和活动类型的时间。例如，建议列表会首先列出组织者和与会者工作时间经常发生的与工作相关的活动的建议，以及所需与会者的位置的建议。
 
 在 Microsoft 365 中，可以为每个邮箱配置工作时间和时区。**FindMeetingTimes** 操作处理组织者和与会者之间的时区变化。默认情况下，**findMeetingTimes** 返回 UTC 格式的建议。你可以使用下列请求头，让 **findMeetingTimes** 返回以特定时区表达的建议。
-```
+``` http
 Prefer: outlook.timezone="{time-zone-string}}"
 ```
 

@@ -3,12 +3,12 @@ title: Microsoft 服务中的任务Graph Toolkit
 description: 任务组件使用户能够查看、添加、删除、完成或编辑任务。 它适用于 Microsoft Planner 中的任何任务。
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 3b3476751798dd5569218ec6acc6d09a91112fe6
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 35191c778c957c1c9c6c316fb4755b57e6690ff2
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082032"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334736"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的任务Graph Toolkit
 
@@ -36,8 +36,8 @@ ms.locfileid: "53082032"
 | target-id="planner_id/folder_id"| targetId | 一个字符串 ID，用于将任务接口锁定为提供的规划器或文件夹 ID。 |
 | target-bucket-id="bucket_id" |targetBucketId  | 一个字符串 ID，用于将任务接口锁定为 Planner (提供的Data-Source ID) 。 |
 | group-id | groupId  | 用于将任务接口锁定为组 ID 的字符串 ID。 |
-| 不适用 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
-| 不适用 | taskFilter  | 可选函数，用于筛选向用户显示的任务。 |
+| 无 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
+| 无 | taskFilter  | 可选函数，用于筛选向用户显示的任务。 |
 
 以下示例仅显示来自 ID *为 12345* 的 Planner 中的任务，并且不允许用户创建新任务。
 
@@ -120,12 +120,12 @@ mgt-tasks {
 
 ## <a name="events"></a>活动
 
-| 事件 | 详情 | 说明 |
-| --- | --- | --- |
-| `taskAdded` | 详细信息包含各自的 `task` 对象 | 新建任务后触发。 |
-| `taskChanged` | 详细信息包含各自的 `task` 对象 | 更改任务元数据（如标记已完成）时触发。 |
-| `taskClick` | 详细信息包含各自的 `task` 对象 | 当用户单击或点击任务时触发。 |
-| `taskRemoved` | 详细信息包含各自的 `task` 对象 | 删除现有任务后触发。 |
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`taskAdded` | 新建任务后触发 | 新创建的任务，可以是 [plannerTask](/graph/api/resources/plannertask) [我们的 outlookTask](/graph/api/resources/outlooktask) | 否 | 否 | 是
+`taskChanged` | 更改任务元数据（如标记已完成）时触发 | 更新的任务，可以是 [plannerTask](/graph/api/resources/plannertask) [我们的 outlookTask](/graph/api/resources/outlooktask) | 否 | 否 | 否
+`taskClick` | 当用户单击或点击任务时触发 | `task` 属性与选定的 [plannerTask](/graph/api/resources/plannertask) 我们的 [outlookTask](/graph/api/resources/outlooktask) | 否 | 否 | 否
+`taskRemoved` | 删除现有任务后触发 | `task` 属性与选定的 [plannerTask](/graph/api/resources/plannertask) 我们的 [outlookTask](/graph/api/resources/outlooktask) | 否 | 否 | 否
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 

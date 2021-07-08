@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a38003382a59cd647c37033d20942ea92b1d2b16
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 7f1321f36a4670adff4ed6474fd1dd71ccf9e5f4
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679659"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334666"
 ---
 # <a name="get-unifiedroleeligibilityschedulerequest"></a>获取 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "52679659"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|PrivilegedAccess.ReadWrite.AzureAD|
+|委派（工作或学校帐户）|RoleEligibilitySchedule.Read.Directory、RoleManagement.Read.Directory、RoleManagement.Read.All、RoleEligibilitySchedule.ReadWrite.Directory、RoleManagement.ReadWrite.Directory |
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|PrivilegedAccess.Read.AzureAD|
+|应用程序|RoleManagement.Read.Directory、RoleManagement.Read.All、RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP 请求
 

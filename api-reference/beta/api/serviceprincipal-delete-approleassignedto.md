@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8983149857caaf80602da99b835d4a63a36e25ae
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 9fd6c2d8297e62e7f2ce9eeaea47e98428e441ad
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317082"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334589"
 ---
 # <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>删除为服务主体授予的 appRoleAssignment
 
@@ -69,7 +69,7 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
 
 此示例中 为资源服务主体的 `{resource-SP-id}` ID，是 appRoleAssignment 对象的 ID，该对象表示用户、组或客户端服务主体的 `{appRoleAssignment-id}` 分配。

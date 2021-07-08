@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 804315ae2ae4b803088a419913ca91c11a8e51c4
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 1b0c80a5844abd5ce5fbbce477841d59f2859af4
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316494"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334561"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>unifiedRoleDefinition 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "53316494"
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -45,14 +45,14 @@ ms.locfileid: "53316494"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|字符串| unifiedRoleDefinition 的说明。 **isBuiltIn** 为 true 时为只读。 |
-|displayName|字符串| unifiedRoleDefinition 的 显示名称。 **isBuiltIn** 为 true 时为只读。 必需项。  仅 `$filter` (`eq` `startsWith` 和运算符) 。|
-|id|字符串| unifiedRoleDefinition 的唯一标识符。 键，不可为 null，只读。  仅 `$filter` (`eq` 运算符) 。 |
+|说明|String| unifiedRoleDefinition 的说明。 **isBuiltIn** 为 true 时为只读。 |
+|displayName|String| unifiedRoleDefinition 的 显示名称。 **isBuiltIn** 为 true 时为只读。 必填。  仅 `$filter` (`eq` `startsWith` 和运算符) 。|
+|id|String| unifiedRoleDefinition 的唯一标识符。 键，不可为 null，只读。  仅 `$filter` (`eq` 运算符) 。 |
 |isBuiltIn|Boolean| 指示 unifiedRoleDefinition 是否属于产品或自定义中包含的默认集的标志。 只读。  仅 `$filter` (`eq` 运算符) 。|
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则角色不能用于分配。 **isBuiltIn** 为 true 时为只读。 |
 |resourceScopes|String collection| 角色定义授予的作用域权限列表适用。 当前仅 `/` 受支持。 isBuiltIn 为 true 时为只读。 **请勿使用。这将很快被弃用。将作用域附加到角色分配** | 
-|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) 集合| 角色中包含的权限列表。 **isBuiltIn** 为 true 时为只读。 必需项。 |
-|templateId|字符串| 可以在 isBuiltIn 为 false 时设置的自定义模板标识符。 如果一个标识符在不同目录之间需要相同，则通常使用此标识符。 **isBuiltIn** 为 true 时为只读。 |
+|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) 集合| 角色中包含的权限列表。 **isBuiltIn** 为 true 时为只读。 必填。 |
+|templateId|String| 可以在 isBuiltIn 为 false 时设置的自定义模板标识符。 如果一个标识符在不同目录之间需要相同，则通常使用此标识符。 **isBuiltIn** 为 true 时为只读。 |
 |version|String| 指示 unifiedRoleDefinition 的版本。 **isBuiltIn** 为 true 时为只读。|
 
 ## <a name="relationships"></a>关系

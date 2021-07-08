@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 802bafec30aebea3f40cdfb539be7b87c9749d32
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 87e47177645e22f74ec6de73c8c006c400def928
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680108"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334540"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>创建 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "52680108"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|PrivilegedAccess.ReadWrite.AzureAD|
+|委派（工作或学校帐户）|RoleEligibilitySchedule.ReadWrite.Directory、RoleManagement.ReadWrite.Directory |
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|不支持|
 
@@ -57,7 +57,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 |roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的 ID。 只读。|
 |directoryScopeId|String|表示工作分配范围的目录对象的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 应用程序作用域是仅由此应用程序定义和理解的范围。|
 |appScopeId|String|当分配范围特定于应用时，特定于应用的范围的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 对租户范围范围使用"/"。 应用程序作用域是仅由此应用程序定义和理解的范围。|
-|isValidationOnly|Boolean|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
+|isValidationOnly|布尔|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
 |targetScheduleId|String|附加到工作分配的计划对象的 ID。|
 |justification|String|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。|

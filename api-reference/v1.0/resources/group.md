@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 00330f087e61a2c10bdfe602571680be532d08c3
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: a64a3285557544c286118c838735d137d0e1cc5b
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030801"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317229"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -129,7 +129,7 @@ ms.locfileid: "53030801"
 |hideFromAddressLists |Boolean |如果该组未显示在 Outlook UI 的某些部分中（“**通讯簿**”中、用于选择邮件收件人的地址列表中以及用于搜索组的“**浏览组**”中），则为 true；否则为 false。 默认值为 `false`。 <br><br>仅在 `$select` 上返回。 仅支持"获取组 API"（`GET /groups/{ID}`）。|
 |hideFromOutlookClients |Boolean |如果该组未显示在 Outlook 客户端（如 Outlook for Windows 和 Outlook 网页版）中，则为 true；否则为 false。 默认值为 `false`。 <br><br>仅在 `$select` 上返回。 仅支持"获取组 API"（`GET /groups/{ID}`）。|
 |id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
-|isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。<br><br>此属性只能在创建组时设置，并且不可变。 只有全局管理员和特权角色管理员角色可以设置此属性。 有关更多信息，请参见[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认情况下返回。|
+|isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。<br><br>此属性只能在创建组时设置，并且不可变。 如果设置为 `true`，则 **securityEnabled** 属性也必须设置为 `true`，并且该组不能是动态组（即，**groupTypes** 不能包含 `DynamicMembership`）。 只有全局管理员和特权角色管理员角色中的调用方可以设置此属性。 调用方还必须分配有 *Directory.AccessAsUser.All* 权限才能设置此属性。 有关更多信息，请参阅[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认情况下返回。|
 |isSubscribedByMail|Boolean|指示登录用户是否订阅接收电子邮件对话。 默认值为 `true`。 <br><br>仅在 `$select` 上返回。 仅支持"获取组 API"（`GET /groups/{ID}`）。 |
 |licenseProcessingState|String|指示对所有组成员的组许可证分配的状态。 默认值为 `false`。 只读。 可能的值是：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。<br><br>仅在 `$select` 上返回。 只读。|
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 `$filter`。|

@@ -3,12 +3,12 @@ title: Microsoft 服务中的文件列表Graph Toolkit
 description: 文件列表组件用于通过显示文件图标和名称来显示文件列表
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 89f60020fb1db75ed4e79a7402b0aa0518146130
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 816ea4b76a08d089e419aad2a126b7b39c2727b1
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082172"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334778"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件列表Graph Toolkit
 
@@ -136,9 +136,9 @@ mgt-file-list {
 
 ## <a name="events"></a>活动
 
-| 事件 | 说明 |
-| ----- | ----------- |
-| `itemClick` | 在用户单击文件时触发。 返回文件详细信息。 |
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`itemClick` | 在用户单击文件时触发。 | 所选 [文件](/graph/api/resources/driveItem) | 否 | 否 | 是，使用自定义 **文件** 模板
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bf1f30f336347bbac1bf5903c8275de773c32532
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: f1d874ee77733d81da3a94f448f57675c15062bc
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870568"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317040"
 ---
 # <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>删除为服务主体授予的 appRoleAssignment
 
@@ -33,7 +33,7 @@ ms.locfileid: "52870568"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principal-id}
+DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
 
 > [!NOTE]
@@ -60,35 +60,17 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principal-id}
 下面是从资源服务主体角色分配应用程序请求的示例。
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_delete_approleassignedto"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principalId}
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignedto-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-delete-approleassignedto-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delete-approleassignedto-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-approleassignedto-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-此示例中， 将是资源服务主体的 ID，并且将是分配的用户、组或客户端 `{resource-SP-id}` `{principalId}` 服务主体的 ID。
+此示例中 为资源服务主体的 `{resource-SP-id}` ID，是 appRoleAssignment 对象的 ID，该对象表示用户、组或客户端服务主体的 `{appRoleAssignment-id}` 分配。
 
 ### <a name="response"></a>响应
 

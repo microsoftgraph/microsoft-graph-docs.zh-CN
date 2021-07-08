@@ -3,12 +3,12 @@ title: 获取 Microsoft Graph Toolkit
 description: Get 组件允许你直接在 HTML 中从 Microsoft Graph GET 查询。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: fefbbf9eb944494923a25f5d2a9699b03e5c9919
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 8ffb4da00b0d96f29747e7415878146cd80d08cf
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082312"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334771"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>获取 Microsoft Graph Toolkit
 
@@ -36,8 +36,8 @@ ms.locfileid: "53082312"
 | 启用缓存 | cacheEnabled | 可选属性，类型为 Boolean。 设置后，它指示将缓存来自资源的响应。 Overriden if `refresh()` is called or if is in `pollingRate` use. 默认值为“`false`”。 |
 | cache-invalidation-period | cacheInvalidationPeriod | 可选毫秒数。 如果与 一起设置 ，则此值将修改缓存达到其无效时段 `cacheEnabled` 前的延迟。 默认值为 `0` ，将使用默认无效时段。 |
 | type | type | 预期响应的可选类型。 默认值为“`json`”。 仅在 (终结点上支持或 `json` `image` 支持 `/photo/value$`) 。 |
-| 不适用 | 响应 | 如果请求成功，Microsoft Graph只读响应。  |
-| 不适用 |error| 如果请求失败，Microsoft Graph只读错误。 |
+| 无 | 响应 | 如果请求成功，Microsoft Graph只读响应。  |
+| 无 |error| 如果请求失败，Microsoft Graph只读错误。 |
 
 ## <a name="methods"></a>方法
 
@@ -47,9 +47,12 @@ ms.locfileid: "53082312"
 
 ## <a name="events"></a>活动
 
-| 事件 | 详情 | 说明 |
-| --- | --- | --- |
-| `dataChange` | 详细信息包含 `response` 和 `error` 对象。 | 响应或错误更改时触发。 |
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`dataChange` | 在组件加载其数据后触发。 | `{ response: any, error: any }`. `response`属性包含从 Microsoft Graph。 `error`属性包含有关发生错误的信息 | 否 | 否 | 是
+
+> [!TIP]
+> 有关 属性中返回的数据详细信息，请参阅你在 Get 组件的 属性中使用的 `response` API 的 `resource` API 引用。
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
@@ -62,7 +65,7 @@ ms.locfileid: "53082312"
 | default | 来自 Microsoft Graph。 | 需要默认模板才能呈现来自 Microsoft Graph。 |
 | 值 | 返回的数组的数据 `value` 项 | 当预期来自图形的响应包含项目数组（如消息、文件或用户）时，请使用模板而不是 `value` `default` **模板**。   将自动 `value` 为资源返回的每个项目重复模板。 模板还会在准备好项目后立即开始呈现 (`value` 默认模板) 。|
 | error | Microsoft 错误Graph。 | 如果提出请求出错，将使用此模板。 |
-| loading | 不适用 | 请求时使用此模板。 |
+| loading | 无 | 请求时使用此模板。 |
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 

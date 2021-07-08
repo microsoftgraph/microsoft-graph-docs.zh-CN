@@ -3,12 +3,12 @@ title: Microsoft 服务中的人员Graph Toolkit
 description: 人员组件用于通过使用联系人的照片、姓名和/或电子邮件地址来显示此人或联系人。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7f35b5c1a3ef764995d319e9e603489b50a1fe2c
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: af3b3fd628303980558c4e8ab195f806927d2f5a
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082046"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334743"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
@@ -116,11 +116,11 @@ mgt-person {
 
 从组件中触发以下事件。
 
-| 事件 | 详情 | 说明 |
-| --- | --- | --- |
-| `line1clicked` | 详细信息包含各自的 `person` 对象 | 在单击第 1 行时触发。 |
-| `line2clicked` | 详细信息包含各自的 `person` 对象 | 在单击第 2 行时触发。 |
-| `line3clicked` | 详细信息包含各自的 `person` 对象 | 在单击第 3 行时触发。 |
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`line1clicked` | 单击 line1 时触发 | `person`可以是用户、[](/graph/api/resources/user)[](/graph/api/resources/person)用户或联系人Graph包含用户照片 URL 的其他[](/graph/api/resources/contact)属性 `personImage` 的对象 | 否 | 否 | 是，除非您覆盖默认模板
+`line2clicked` | 单击第 2 行时触发 | `person`可以是用户、[](/graph/api/resources/user)[](/graph/api/resources/person)用户或联系人Graph包含用户照片 URL 的其他[](/graph/api/resources/contact)属性 `personImage` 的对象 | 否 | 否 | 是，除非您覆盖默认模板
+`line3clicked` | 单击第 3 行时触发 | `person`可以是用户、[](/graph/api/resources/user)[](/graph/api/resources/person)用户或联系人Graph包含用户照片 URL 的其他[](/graph/api/resources/contact)属性 `personImage` 的对象 | 否 | 否 | 是，除非您覆盖默认模板
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 

@@ -3,12 +3,12 @@ title: Microsoft 计划中的议程Graph Toolkit
 description: mgt-agenda Web 组件用于表示用户或组日历中的事件。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 394f5dee6c8bf6f81b68d3b0b8c8cb1d73ef06ef
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: a5f11214869c8f8bdc96a88613a40e9164c8fe32
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082333"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334785"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft 计划中的议程Graph Toolkit
 
@@ -129,9 +129,9 @@ mgt-agenda {
 
 从控件中触发以下事件。
 
-| 事件 | 说明 |
-| --- | --- |
-| `eventClick` | 用户单击或点击事件。|
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`eventClick` | 用户单击或点击事件。 | 选定 [事件](/graph/api/resources/event) | 否 | 否 | 是，使用自定义 **事件** 模板
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 

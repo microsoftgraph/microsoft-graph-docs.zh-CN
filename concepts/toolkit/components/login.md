@@ -3,12 +3,12 @@ title: Microsoft 服务中的登录Graph Toolkit
 description: 登录组件是一个按钮和飞出控件，用于简化Microsoft 标识平台身份验证。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 1042201492720dce92016a13bd7bbd8477ce2d2c
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 5dd610407fde25089a9c323b6b0cfb7965d33671
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082151"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334764"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的登录Graph Toolkit
 
@@ -75,13 +75,13 @@ mgt-login {
 
 从控件中触发以下事件。
 
-| 事件 | 说明 |
-| --- | --- |
-| `loginInitiated` | 用户单击登录按钮以启动登录过程 - 可取消。|
-| `loginCompleted` | 登录过程成功，用户现已登录。 |
-| `loginFailed` | 用户已取消登录过程或无法登录。|
-| `logoutInitiated` | 用户开始注销 - 可取消。 |
-| `logoutCompleted` | 用户已退出。 |
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`loginInitiated` | 用户单击登录按钮以启动登录过程 | 无 | 是 | 否 | 是
+`loginCompleted` | 登录过程成功，用户现在已登录 | 无 | 否 | 否 | 是
+`loginFailed` | 用户已取消登录过程或无法登录 | 无 | 否 | 否 | 是
+`logoutInitiated` | 用户开始注销 | 无 | 是 | 否 | 是
+`logoutCompleted` | 用户已登录 | 无 | 否 | 否 | 是
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 

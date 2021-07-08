@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4102ece8a559161e5813e175d81a62a4c7ce9843
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 9e5315a58adc5c6b4447b725ee7315d390d18904
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787413"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334715"
 ---
 # <a name="update-unifiedroledefinition"></a>更新 unifiedRoleDefinition
 
@@ -29,12 +29,28 @@ ms.locfileid: "52787413"
 
 ## <a name="permissions"></a>权限
 
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。 
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解 [更多信息（包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前要谨慎操作），请搜索权限参考 [中的以下权限](/graph/permissions-reference)。 
 
 |支持的提供程序      | 委派（工作或学校帐户）  | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
 | 设备管理 | DeviceManagementRBAC.ReadWrite.All | 不支持。 | DeviceManagementRBAC.ReadWrite.All |
 | 目录 | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All | 不支持。| RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+
+### <a name="for-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  DeviceManagementRBAC.ReadWrite.All   |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | DeviceManagementRBAC.ReadWrite.All |
+
+### <a name="for-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All   |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -3,12 +3,12 @@ title: Person-Card Microsoft Graph Toolkit 中的组件
 description: Person-Card组件是显示与人员相关详细信息的组件。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 23f26927935af3f3123e4f812853475cb8a0a9dc
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 58efcb2c1ca7ec1e366340b1dcbe199fe054c7b8
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082039"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334750"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card Microsoft Graph Toolkit 中的组件
 
@@ -133,9 +133,9 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 
 从组件中触发以下事件。
 
-| 事件 | 说明 |
-| --- | --- |
-| `expanded` | 用户已打开卡片的展开详细信息部分。 |
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`expanded` | 用户已打开卡片的展开详细信息部分 | 无 | 否 | 是 | 是，除非您覆盖默认模板
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 

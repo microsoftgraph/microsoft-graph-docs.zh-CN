@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 96f2df7f928ba516d4cd0278bc560983cd355893
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 9be84ab8688aa8bc1ad047c2776f30a030611298
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475526"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334799"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
 
@@ -50,7 +50,7 @@ repository {
 
 dependency {
     // Include the sdk as a dependency
-    implementation 'com.microsoft.graph:microsoft-graph:3.+'
+    implementation 'com.microsoft.graph:microsoft-graph:4.+'
     // Include Azure identity for authentication
     implementation 'com.azure:azure-identity:1.+'
 }
@@ -64,7 +64,7 @@ dependency {
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>[3.3,)</version>
+    <version>[4.0,)</version>
 </dependency>
 <dependency>
     <groupId>com.azure</groupId>

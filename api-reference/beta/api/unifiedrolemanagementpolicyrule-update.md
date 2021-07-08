@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 948f39bc48a3bd673935989b6d0f359c7dd24ba4
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4d70b105f3516547c851e8be21be18b15009439a
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786437"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334694"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>更新 unifiedRoleManagementPolicyRule
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "52786437"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|PrivilegedAccess.ReadWrite.AzureAD|
+|委派（工作或学校帐户）|RoleManagementPolicy.ReadWrite.Directory、RoleManagement.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|不支持|
 

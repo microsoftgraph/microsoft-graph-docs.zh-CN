@@ -3,12 +3,12 @@ title: Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
 description: 可以使用 mgt-teams-channel-picker 从 Microsoft 网站搜索与用户关联的Graph。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: ad196cc17b70f42cd571bf5805e2aa4eb2cfe90e
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: cd27db315de6b46c10c18e300ddb899ea042e428
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082025"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334729"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
 
@@ -78,21 +78,20 @@ mgt-teams-channel-picker {
 
 ## <a name="events"></a>活动
 
-| 事件 | 详情 | 说明 |
-| --- | --- | --- |
-| `selectionChanged` | 详细信息包含 `{channel : ` [MicrosoftGraph.Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph.Team 当前选定的项](/graph/api/resources/team)`}` | 当用户在选择频道时更改时触发。 |
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | 在用户更改频道选择时触发 | 当前选择的项目作为 `{ channel: ` [频道](/graph/api/resources/channel) `, team: ` [团队](/graph/api/resources/team)`}` | 否 | 否 | 是
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
 ## <a name="templates"></a>模板
 
- `mgt-teams-channel-picker` 支持 [多个](../customize-components/templates.md) 模板，您可以使用这些模板替换组件的某些部分。 若要指定模板，请包含组件 `<template>` 中的元素，将值 `data-type` 设置为以下值之一。
+`mgt-teams-channel-picker` 支持 [多个](../customize-components/templates.md) 模板，您可以使用这些模板替换组件的某些部分。 若要指定模板，请包含组件 `<template>` 中的元素，将值 `data-type` 设置为以下值之一。
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
 | loading | null：无数据 | 向 Microsoft 请求时用于呈现文件选取器Graph模板。 |
 | error | null：无数据| 当用户搜索未返回任何用户时所使用的模板。 |
-
 
 以下示例演示如何使用 `error` 模板。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: 1733aa15f6989aaef1bb2c80d469f47d6ad86e2c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 578b2792a815dd0c7cd5dad4fc77d9c96319045a
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136540"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334582"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty 资源类型
 
@@ -29,8 +29,8 @@ ms.locfileid: "50136540"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | 受支持的资源实例： [邮件](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、 [事件](../resources/event.md)、 [日历](../resources/calendar.md)、 [联系人](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [Outlook](../resources/outlooktask.md)任务或 Outlook 任务 [文件夹](../resources/outlooktaskfolder.md)， 但不是组 [帖子](../resources/post.md)。 | 在新建或现有的支持资源实例中创建 **singleValueLegacyExtendedProperty**。 |
-|[获取](../api/singlevaluelegacyextendedproperty-get.md) |一个或一个受支持的资源实例 ([message，](../resources/message.md) [mailFolder，](../resources/mailfolder.md) [event，](../resources/event.md) [calendar，](../resources/calendar.md) [contact，](../resources/contact.md) [contactFolder，](../resources/contactfolder.md) [Outlook task，](../resources/outlooktask.md) [Outlook task folder，](../resources/outlooktaskfolder.md)or group [post](../resources/post.md)) ， or one such instance expanded with a [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) object. |使用 `$expand` 或 `$filter` 获取具有扩展属性的资源实例。|
+|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | [](../resources/post.md)受支持的资源实例：message、mailFolder、event、calendar、contact、contactFolder、Outlook [](../resources/event.md) [](../resources/mailfolder.md) [task](../resources/outlooktask.md)或 Outlook [task folder](../resources/outlooktaskfolder.md)，但不是组 post 。 [](../resources/message.md) [](../resources/calendar.md) [](../resources/contact.md) [](../resources/contactfolder.md) | 在新建或现有的支持资源实例中创建 **singleValueLegacyExtendedProperty**。 |
+|[获取](../api/singlevaluelegacyextendedproperty-get.md) |支持的资源实例 ([](../resources/message.md)message、mailFolder、event、calendar、contact、contactFolder、Outlook [](../resources/contactfolder.md) [](../resources/contact.md) [](../resources/mailfolder.md) [](../resources/event.md) [task、Outlook](../resources/outlooktask.md) [task folder](../resources/outlooktaskfolder.md)或 group [post](../resources/post.md)) 或一个此类实例（使用[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)对象扩展）的一个或一个集合。 [](../resources/calendar.md) |使用 `$expand` 或 `$filter` 获取具有扩展属性的资源实例。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -59,7 +59,6 @@ ms.locfileid: "50136540"
   "id": "string (identifier)",
   "value": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

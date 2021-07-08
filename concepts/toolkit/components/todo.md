@@ -3,12 +3,12 @@ title: 微软待办 Microsoft Graph Toolkit
 description: 利用微软待办组件，用户可以查看、添加、删除、完成或编辑任务。 它适用于 Microsoft 微软待办 中微软待办。
 localization_priority: Normal
 author: shweaver-MSFT
-ms.openlocfilehash: 907d6d18380debb6e08d612d5f1d5bebec6746ec
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 94bdbf1777a4ebe6c60d91c227c805c2edf53809
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082018"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334722"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>微软待办 Microsoft Graph Toolkit
 
@@ -33,8 +33,8 @@ ms.locfileid: "53082018"
 | hide-options | hideOptions | 用于显示或隐藏任务中的选项的布尔值。 默认值为“`false`”。
 | initial-id="folder_id" | initialId | 一个字符串 ID，用于将最初显示的文件夹设置为提供的 ID。 |
 | target-id="folder_id"| targetId | 一个字符串 ID，用于将任务接口锁定为所提供的文件夹 ID。 |
-| 不适用 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
-| 不适用 | taskFilter  | 可选函数，用于筛选向用户显示的任务。 |
+| 无 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
+| 无 | taskFilter  | 可选函数，用于筛选向用户显示的任务。 |
 
 以下示例只显示 ID 为 *12345* 的文件夹中的任务，并且不允许用户创建新任务。
 
@@ -99,12 +99,9 @@ mgt-todo {
 
 从组件中触发以下事件。
 
-| 事件 | 详情 | 说明 |
-| --- | --- | --- |
-| `taskAdded` | 详细信息包含各自的 `task` 对象 | 新建任务后触发。 |
-| `taskChanged` | 详细信息包含各自的 `task` 对象 | 更改任务元数据（如标记已完成）时触发。 |
-| `taskClick` | 详细信息包含各自的 `task` 对象 | 当用户单击或点击任务时触发。 |
-| `taskRemoved` | 详细信息包含各自的 `task` 对象 | 删除现有任务后触发。 |
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`taskClick` | 当用户单击或点击任务时触发 | 选定的 [任务](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/66a5bbb6591e6260e95dbc00c0d06bcbe8dcef38/packages/mgt-components/src/components/mgt-todo/graph.todo.ts#L41) | 否 | 否 | 否
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 

@@ -3,12 +3,12 @@ title: People-Picker组件
 description: 您可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: f8899a4bfdf86d07bb5efa19c269b0907ceae319
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 690e117064a43a65ea125e4e0d67a12daae185ae
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082326"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334757"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit 中的组件
 
@@ -77,9 +77,9 @@ ms.locfileid: "53082326"
 
 从组件中触发以下事件。
 
-| 事件 | 说明 |
-| --- | --- |
-| `selectionChanged` | 用户在选定/选取的人列表中添加或删除了人员。|
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | 用户在已选择/已选取人员列表中添加或删除了人员 | 选定人员数组，其中人员可以是包含Graph [URL](/graph/api/resources/user)的其他属性的用户、[](/graph/api/resources/person)人员或[](/graph/api/resources/contact) `personImage` 联系人 | 否 | 否 | 是，除非您覆盖默认模板
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 

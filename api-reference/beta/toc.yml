@@ -517,7 +517,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -901,7 +901,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: 从代理组中删除
                     href: api/publishedresource-delete-agentgroups.md
-              - name: 连接器
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: 列表
@@ -950,7 +950,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 增量
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -1640,7 +1640,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
-      - name: 客户预订（预览版）
+      - name: 客户预订（预览）
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: 概述
@@ -1768,7 +1768,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -9619,6 +9619,33 @@ items:
               - name: 角色管理
                 href: resources/rolemanagement.md
                 items:
+                  - name: 角色管理策略
+                    href: resources/unifiedRoleManagementPolicy.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedrolemanagementpolicy-list.md
+                      - name: 获取
+                        href: api/unifiedrolemanagementpolicy-get.md
+                      - name: 列出有效规则
+                        href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+                      - name: 列出规则
+                        href: api/unifiedrolemanagementpolicy-list-rules.md
+                  - name: 角色管理策略分配
+                    href: resources/unifiedRoleManagementPolicyAssignment.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedRoleManagementPolicyAssignment-list.md
+                      - name: 获取
+                        href: api/unifiedRoleManagementPolicyAssignment-get.md
+                  - name: 角色管理策略规则
+                    href: resources/unifiedRoleManagementPolicyRule.md
+                    items:
+                      - name: 列表
+                        href: api/unifiedRoleManagementPolicyRule-list.md
+                      - name: 获取
+                        href: api/unifiedRoleManagementPolicyRule-get.md
+                      - name: 更新
+                        href: api/unifiedRoleManagementPolicyRule-update.md
                   - name: 角色定义
                     href: resources/unifiedroledefinition.md
                     items:
@@ -10638,8 +10665,6 @@ items:
                         href: api/unifiedroleassignmentschedulerequest-get.md
                       - name: 创建
                         href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
-                      - name: 更新
-                        href: api/unifiedroleassignmentschedulerequest-update.md
                       - name: 取消
                         href: api/unifiedroleassignmentschedulerequest-cancel.md
                       - name: 按当前用户筛选
@@ -10653,8 +10678,6 @@ items:
                         href: api/unifiedroleeligibilityschedulerequest-get.md
                       - name: 创建
                         href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
-                      - name: 更新
-                        href: api/unifiedroleeligibilityschedulerequest-update.md
                       - name: 取消
                         href: api/unifiedroleeligibilityschedulerequest-cancel.md
                       - name: 按当前用户筛选
@@ -11238,33 +11261,6 @@ items:
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: 从排除项中删除
                             href: api/permissiongrantpolicy-delete-excludes.md
-                  - name: 角色管理策略
-                    href: resources/unifiedRoleManagementPolicy.md
-                    items:
-                      - name: 列表
-                        href: api/unifiedrolemanagementpolicy-list.md
-                      - name: 获取
-                        href: api/unifiedrolemanagementpolicy-get.md
-                      - name: 列出有效规则
-                        href: api/unifiedrolemanagementpolicy-list-effectiverules.md
-                      - name: 列出规则
-                        href: api/unifiedrolemanagementpolicy-list-rules.md
-                  - name: 角色管理策略分配
-                    href: resources/unifiedRoleManagementPolicyAssignment.md
-                    items:
-                      - name: 列表
-                        href: api/unifiedRoleManagementPolicyAssignment-list.md
-                      - name: 获取
-                        href: api/unifiedRoleManagementPolicyAssignment-get.md
-                  - name: 角色管理策略规则
-                    href: resources/unifiedRoleManagementPolicyRule.md
-                    items:
-                      - name: 列表
-                        href: api/unifiedRoleManagementPolicyRule-list.md
-                      - name: 获取
-                        href: api/unifiedRoleManagementPolicyRule-get.md
-                      - name: 更新
-                        href: api/unifiedRoleManagementPolicyRule-update.md
                   - name: 令牌颁发策略
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -13182,7 +13178,7 @@ items:
             href: resources/sharepoint.md
           - name: 网站
             items:
-              - name: 网站
+              - name: Site
                 href: resources/site.md
               - name: 获取站点
                 href: api/site-get.md
@@ -13328,7 +13324,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -13379,7 +13375,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划

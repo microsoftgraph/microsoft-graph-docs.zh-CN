@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7f83ce0b5cf4565897245647a0e1f41e428b8e1d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: f2e3fa1aff81051820fda4444a55d9916e99128b
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786753"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334575"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
@@ -159,14 +159,15 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>另请参阅
+
 - 搜索 [邮件](/graph/search-concept-messages)
 - 搜索 [日历事件](/graph/search-concept-events)
+- 搜索 [人员](/graph/search-concept-person)
 - 搜索网站[SharePoint OneDrive (、列表和网站) ](/graph/search-concept-files)
 - 搜索[连接器 (Graph自定义) ](/graph/search-concept-custom-types)数据
 - [对](/graph/search-concept-sort) 搜索结果进行排序
 - 使用 [聚合](/graph/search-concept-aggregations) 优化搜索结果
 - 在 [搜索结果中启用](/graph/search-concept-speller) 拼写更正
-
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -177,5 +178,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
