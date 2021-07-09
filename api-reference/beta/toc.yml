@@ -219,6 +219,8 @@ items:
                 href: api/user-update.md
               - name: 删除用户
                 href: api/user-delete.md
+              - name: 更改密码
+                href: api/user-changepassword.md
               - name: 获取 Delta
                 href: api/user-delta.md
               - name: 刷新令牌无效
@@ -380,7 +382,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1640,7 +1642,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
-      - name: 客户预订（预览）
+      - name: 客户预订（预览版）
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: 概述
@@ -1768,7 +1770,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: 重定向
+                  - name: Redirect
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -1846,7 +1848,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -10343,7 +10345,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -10834,7 +10836,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: 添加
                         href: api/emailauthenticationmethod-post.md
-                  - name: 密码
+                  - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: 列表
@@ -12353,7 +12355,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: 注释
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -13375,7 +13377,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
@@ -13775,7 +13777,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
