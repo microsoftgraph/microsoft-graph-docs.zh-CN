@@ -391,6 +391,8 @@ items:
                 href: search-concept-aggregation.md
               - name: 请求拼写更正（预览）
                 href: search-concept-speller.md
+              - name: 搜索人员（预览）
+                href: search-concept-person.md
       - name: 安全性
         items:
           - name: 概述

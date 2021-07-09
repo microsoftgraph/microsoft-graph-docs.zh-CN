@@ -5,30 +5,30 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 89ba1ec44f41abe1309355c47daeabdd6603ca25
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7064d412b776f33c30b87dde34d79a167aa6a636
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787560"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317089"
 ---
-# <a name="update-group"></a><span data-ttu-id="a4f67-103">更新组</span><span class="sxs-lookup"><span data-stu-id="a4f67-103">Update group</span></span>
+# <a name="update-group"></a><span data-ttu-id="601f3-103">更新组</span><span class="sxs-lookup"><span data-stu-id="601f3-103">Update group</span></span>
 
-<span data-ttu-id="a4f67-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a4f67-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="601f3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="601f3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a4f67-105">更新 group 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="a4f67-105">Update the properties of a group object.</span></span>
+<span data-ttu-id="601f3-105">更新 group 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="601f3-105">Update the properties of a group object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a4f67-106">权限</span><span class="sxs-lookup"><span data-stu-id="a4f67-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="601f3-106">权限</span><span class="sxs-lookup"><span data-stu-id="601f3-106">Permissions</span></span>
 
-<span data-ttu-id="a4f67-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a4f67-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="601f3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="601f3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a4f67-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a4f67-109">Permission type</span></span>      | <span data-ttu-id="a4f67-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a4f67-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="601f3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="601f3-109">Permission type</span></span>      | <span data-ttu-id="601f3-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="601f3-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a4f67-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a4f67-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a4f67-112">Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a4f67-112">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
-|<span data-ttu-id="a4f67-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a4f67-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a4f67-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="a4f67-114">Not supported.</span></span>    |
-|<span data-ttu-id="a4f67-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a4f67-115">Application</span></span> | <span data-ttu-id="a4f67-116">Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a4f67-116">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="601f3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="601f3-111">Delegated (work or school account)</span></span> | <span data-ttu-id="601f3-112">Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="601f3-112">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
+|<span data-ttu-id="601f3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="601f3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="601f3-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="601f3-114">Not supported.</span></span>    |
+|<span data-ttu-id="601f3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="601f3-115">Application</span></span> | <span data-ttu-id="601f3-116">Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="601f3-116">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a4f67-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a4f67-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="601f3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="601f3-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,47 +36,47 @@ ms.locfileid: "52787560"
 PATCH /groups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a4f67-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="a4f67-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="601f3-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="601f3-118">Request headers</span></span>
 
-| <span data-ttu-id="a4f67-119">名称</span><span class="sxs-lookup"><span data-stu-id="a4f67-119">Name</span></span>       | <span data-ttu-id="a4f67-120">类型</span><span class="sxs-lookup"><span data-stu-id="a4f67-120">Type</span></span> | <span data-ttu-id="a4f67-121">说明</span><span class="sxs-lookup"><span data-stu-id="a4f67-121">Description</span></span>|
+| <span data-ttu-id="601f3-119">名称</span><span class="sxs-lookup"><span data-stu-id="601f3-119">Name</span></span>       | <span data-ttu-id="601f3-120">类型</span><span class="sxs-lookup"><span data-stu-id="601f3-120">Type</span></span> | <span data-ttu-id="601f3-121">说明</span><span class="sxs-lookup"><span data-stu-id="601f3-121">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="a4f67-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4f67-122">Authorization</span></span>  | <span data-ttu-id="a4f67-123">string</span><span class="sxs-lookup"><span data-stu-id="a4f67-123">string</span></span>  | <span data-ttu-id="a4f67-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a4f67-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="601f3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="601f3-122">Authorization</span></span>  | <span data-ttu-id="601f3-123">string</span><span class="sxs-lookup"><span data-stu-id="601f3-123">string</span></span>  | <span data-ttu-id="601f3-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="601f3-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a4f67-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a4f67-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="601f3-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="601f3-126">Request body</span></span>
 
-<span data-ttu-id="a4f67-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="a4f67-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="601f3-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="601f3-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="a4f67-130">属性</span><span class="sxs-lookup"><span data-stu-id="a4f67-130">Property</span></span>   | <span data-ttu-id="a4f67-131">类型</span><span class="sxs-lookup"><span data-stu-id="a4f67-131">Type</span></span> |<span data-ttu-id="a4f67-132">说明</span><span class="sxs-lookup"><span data-stu-id="a4f67-132">Description</span></span>|
+| <span data-ttu-id="601f3-130">属性</span><span class="sxs-lookup"><span data-stu-id="601f3-130">Property</span></span>   | <span data-ttu-id="601f3-131">类型</span><span class="sxs-lookup"><span data-stu-id="601f3-131">Type</span></span> |<span data-ttu-id="601f3-132">说明</span><span class="sxs-lookup"><span data-stu-id="601f3-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a4f67-133">allowExternalSenders</span><span class="sxs-lookup"><span data-stu-id="a4f67-133">allowExternalSenders</span></span>|<span data-ttu-id="a4f67-134">Boolean</span><span class="sxs-lookup"><span data-stu-id="a4f67-134">Boolean</span></span>|<span data-ttu-id="a4f67-p104">默认值为 `false`。指示组织外部人员是否可以向该组发送邮件。</span><span class="sxs-lookup"><span data-stu-id="a4f67-p104">Default is `false`. Indicates whether people external to the organization can send messages to the group.</span></span>|
-|<span data-ttu-id="a4f67-137">autoSubscribeNewMembers</span><span class="sxs-lookup"><span data-stu-id="a4f67-137">autoSubscribeNewMembers</span></span>|<span data-ttu-id="a4f67-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="a4f67-138">Boolean</span></span>|<span data-ttu-id="a4f67-139">默认值为“`false`”。</span><span class="sxs-lookup"><span data-stu-id="a4f67-139">Default is `false`.</span></span> <span data-ttu-id="a4f67-140">指示添加到组中的新成员是否将自动订阅接收电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="a4f67-140">Indicates whether new members added to the group will be auto-subscribed to receive email notifications.</span></span> <span data-ttu-id="a4f67-141">当组上的 **subscriptionEnabled** 设置为 `false` 时，**autoSubscribeNewMembers** 不能为 `true`。</span><span class="sxs-lookup"><span data-stu-id="a4f67-141">**autoSubscribeNewMembers** can't be `true` when **subscriptionEnabled** is set to `false` on the group.</span></span>|
-|<span data-ttu-id="a4f67-142">说明</span><span class="sxs-lookup"><span data-stu-id="a4f67-142">description</span></span>|<span data-ttu-id="a4f67-143">String</span><span class="sxs-lookup"><span data-stu-id="a4f67-143">String</span></span>|<span data-ttu-id="a4f67-144">可选的组说明。</span><span class="sxs-lookup"><span data-stu-id="a4f67-144">An optional description for the group.</span></span> |
-|<span data-ttu-id="a4f67-145">displayName</span><span class="sxs-lookup"><span data-stu-id="a4f67-145">displayName</span></span>|<span data-ttu-id="a4f67-146">String</span><span class="sxs-lookup"><span data-stu-id="a4f67-146">String</span></span>|<span data-ttu-id="a4f67-p106">组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。</span><span class="sxs-lookup"><span data-stu-id="a4f67-p106">The display name for the group. This property is required when a group is created and it cannot be cleared during updates.</span></span> |
-|<span data-ttu-id="a4f67-149">groupTypes</span><span class="sxs-lookup"><span data-stu-id="a4f67-149">groupTypes</span></span>|<span data-ttu-id="a4f67-150">String collection</span><span class="sxs-lookup"><span data-stu-id="a4f67-150">String collection</span></span>|<span data-ttu-id="a4f67-151">指定组类型及其成员身份。</span><span class="sxs-lookup"><span data-stu-id="a4f67-151">Specifies the group type and its membership.</span></span>  <br><br><span data-ttu-id="a4f67-152">如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。</span><span class="sxs-lookup"><span data-stu-id="a4f67-152">If the collection contains **Unified** then the group is a Microsoft 365 group; otherwise it's a security group.</span></span>  <br><br><span data-ttu-id="a4f67-153">如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。</span><span class="sxs-lookup"><span data-stu-id="a4f67-153">If the collection includes **DynamicMembership**, the group has dynamic membership; otherwise, membership is static.</span></span> |
-|<span data-ttu-id="a4f67-154">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="a4f67-154">mailEnabled</span></span>|<span data-ttu-id="a4f67-155">布尔</span><span class="sxs-lookup"><span data-stu-id="a4f67-155">Boolean</span></span>|<span data-ttu-id="a4f67-156">指定是否为启用邮件的组。</span><span class="sxs-lookup"><span data-stu-id="a4f67-156">Specifies whether the group is mail-enabled.</span></span>|
-|<span data-ttu-id="a4f67-157">mailNickname</span><span class="sxs-lookup"><span data-stu-id="a4f67-157">mailNickname</span></span>|<span data-ttu-id="a4f67-158">String</span><span class="sxs-lookup"><span data-stu-id="a4f67-158">String</span></span>|<span data-ttu-id="a4f67-p107">组的邮件别名。创建组时必须指定此属性。</span><span class="sxs-lookup"><span data-stu-id="a4f67-p107">The mail alias for the group. This property must be specified when a group is created.</span></span> |
-|<span data-ttu-id="a4f67-161">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="a4f67-161">securityEnabled</span></span>|<span data-ttu-id="a4f67-162">布尔</span><span class="sxs-lookup"><span data-stu-id="a4f67-162">Boolean</span></span>|<span data-ttu-id="a4f67-163">指定是否为安全组。</span><span class="sxs-lookup"><span data-stu-id="a4f67-163">Specifies whether the group is a security group.</span></span> |
-|<span data-ttu-id="a4f67-164">visibility</span><span class="sxs-lookup"><span data-stu-id="a4f67-164">visibility</span></span>|<span data-ttu-id="a4f67-165">String</span><span class="sxs-lookup"><span data-stu-id="a4f67-165">String</span></span>|<span data-ttu-id="a4f67-166">指定 Microsoft 365 组的可见性。</span><span class="sxs-lookup"><span data-stu-id="a4f67-166">Specifies the visibility of a Microsoft 365 group.</span></span> <span data-ttu-id="a4f67-167">可能的是包括：**专用**、**公用** 或为空（解释为 **公用**）。</span><span class="sxs-lookup"><span data-stu-id="a4f67-167">The possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).</span></span>|
+|<span data-ttu-id="601f3-133">allowExternalSenders</span><span class="sxs-lookup"><span data-stu-id="601f3-133">allowExternalSenders</span></span>|<span data-ttu-id="601f3-134">Boolean</span><span class="sxs-lookup"><span data-stu-id="601f3-134">Boolean</span></span>|<span data-ttu-id="601f3-p104">默认值为 `false`。指示组织外部人员是否可以向该组发送邮件。</span><span class="sxs-lookup"><span data-stu-id="601f3-p104">Default is `false`. Indicates whether people external to the organization can send messages to the group.</span></span>|
+|<span data-ttu-id="601f3-137">autoSubscribeNewMembers</span><span class="sxs-lookup"><span data-stu-id="601f3-137">autoSubscribeNewMembers</span></span>|<span data-ttu-id="601f3-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="601f3-138">Boolean</span></span>|<span data-ttu-id="601f3-139">默认值为“`false`”。</span><span class="sxs-lookup"><span data-stu-id="601f3-139">Default is `false`.</span></span> <span data-ttu-id="601f3-140">指示添加到组中的新成员是否将自动订阅接收电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="601f3-140">Indicates whether new members added to the group will be auto-subscribed to receive email notifications.</span></span> <span data-ttu-id="601f3-141">当组上的 **subscriptionEnabled** 设置为 `false` 时，**autoSubscribeNewMembers** 不能为 `true`。</span><span class="sxs-lookup"><span data-stu-id="601f3-141">**autoSubscribeNewMembers** can't be `true` when **subscriptionEnabled** is set to `false` on the group.</span></span>|
+|<span data-ttu-id="601f3-142">说明</span><span class="sxs-lookup"><span data-stu-id="601f3-142">description</span></span>|<span data-ttu-id="601f3-143">String</span><span class="sxs-lookup"><span data-stu-id="601f3-143">String</span></span>|<span data-ttu-id="601f3-144">可选的组说明。</span><span class="sxs-lookup"><span data-stu-id="601f3-144">An optional description for the group.</span></span> |
+|<span data-ttu-id="601f3-145">displayName</span><span class="sxs-lookup"><span data-stu-id="601f3-145">displayName</span></span>|<span data-ttu-id="601f3-146">String</span><span class="sxs-lookup"><span data-stu-id="601f3-146">String</span></span>|<span data-ttu-id="601f3-p106">组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。</span><span class="sxs-lookup"><span data-stu-id="601f3-p106">The display name for the group. This property is required when a group is created and it cannot be cleared during updates.</span></span> |
+|<span data-ttu-id="601f3-149">groupTypes</span><span class="sxs-lookup"><span data-stu-id="601f3-149">groupTypes</span></span>|<span data-ttu-id="601f3-150">String collection</span><span class="sxs-lookup"><span data-stu-id="601f3-150">String collection</span></span>|<span data-ttu-id="601f3-151">指定组类型及其成员身份。</span><span class="sxs-lookup"><span data-stu-id="601f3-151">Specifies the group type and its membership.</span></span>  <br><br><span data-ttu-id="601f3-152">如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。</span><span class="sxs-lookup"><span data-stu-id="601f3-152">If the collection contains **Unified** then the group is a Microsoft 365 group; otherwise it's a security group.</span></span>  <br><br><span data-ttu-id="601f3-153">如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。</span><span class="sxs-lookup"><span data-stu-id="601f3-153">If the collection includes **DynamicMembership**, the group has dynamic membership; otherwise, membership is static.</span></span> |
+|<span data-ttu-id="601f3-154">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="601f3-154">mailEnabled</span></span>|<span data-ttu-id="601f3-155">布尔</span><span class="sxs-lookup"><span data-stu-id="601f3-155">Boolean</span></span>|<span data-ttu-id="601f3-156">指定是否为启用邮件的组。</span><span class="sxs-lookup"><span data-stu-id="601f3-156">Specifies whether the group is mail-enabled.</span></span>|
+|<span data-ttu-id="601f3-157">mailNickname</span><span class="sxs-lookup"><span data-stu-id="601f3-157">mailNickname</span></span>|<span data-ttu-id="601f3-158">String</span><span class="sxs-lookup"><span data-stu-id="601f3-158">String</span></span>|<span data-ttu-id="601f3-p107">组的邮件别名。创建组时必须指定此属性。</span><span class="sxs-lookup"><span data-stu-id="601f3-p107">The mail alias for the group. This property must be specified when a group is created.</span></span> |
+|<span data-ttu-id="601f3-161">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="601f3-161">securityEnabled</span></span>|<span data-ttu-id="601f3-162">布尔</span><span class="sxs-lookup"><span data-stu-id="601f3-162">Boolean</span></span>|<span data-ttu-id="601f3-163">指定是否为安全组。</span><span class="sxs-lookup"><span data-stu-id="601f3-163">Specifies whether the group is a security group.</span></span> |
+|<span data-ttu-id="601f3-164">visibility</span><span class="sxs-lookup"><span data-stu-id="601f3-164">visibility</span></span>|<span data-ttu-id="601f3-165">String</span><span class="sxs-lookup"><span data-stu-id="601f3-165">String</span></span>|<span data-ttu-id="601f3-p108">指定 Microsoft 365 组的可见性。可能的值是：**专用**、**公用** 或空（解释为 **公用**）。</span><span class="sxs-lookup"><span data-stu-id="601f3-p108">Specifies the visibility of a Microsoft 365 group. The possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).</span></span>|
 
-> <span data-ttu-id="a4f67-168">**注意：**</span><span class="sxs-lookup"><span data-stu-id="a4f67-168">**Note:**</span></span>
+> <span data-ttu-id="601f3-168">**注意：**</span><span class="sxs-lookup"><span data-stu-id="601f3-168">**Note:**</span></span>
 >
-> - <span data-ttu-id="a4f67-169">可以通过在 **补丁请求中指定** 自动更新 **autoSubendalNewMembers** ，而不包括上表中其他属性。</span><span class="sxs-lookup"><span data-stu-id="a4f67-169">You can update **allowExternalSenders** and **autoSubscribeNewMembers** by specifying them in their own PATCH request, without including the other properties in the table above.</span></span>
-> - <span data-ttu-id="a4f67-p109">只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#groups)。</span><span class="sxs-lookup"><span data-stu-id="a4f67-p109">Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](/graph/known-issues#groups) for examples.</span></span>
-> - <span data-ttu-id="a4f67-173">在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。</span><span class="sxs-lookup"><span data-stu-id="a4f67-173">The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).</span></span>
+> - <span data-ttu-id="601f3-169">要更新以下特定于 Exchange 的属性，必须在它们自己的 PATCH 请求中指定它们，但不包括上表中列出的其他属性：**allowExternalSenders**、**autoSubscribeNewMembers**、**hideFromAddressLists**、**hideFromOutlookClients**、**isSubscribedByMail**、**unseenCount**。</span><span class="sxs-lookup"><span data-stu-id="601f3-169">To update the following Exchange-specific properties, you must specify them in their own PATCH request, without including the other properties listed in the table above: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.</span></span>
+> - <span data-ttu-id="601f3-p109">只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#groups)。</span><span class="sxs-lookup"><span data-stu-id="601f3-p109">Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](/graph/known-issues#groups) for examples.</span></span>
+> - <span data-ttu-id="601f3-173">在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。</span><span class="sxs-lookup"><span data-stu-id="601f3-173">The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).</span></span>
 
-## <a name="response"></a><span data-ttu-id="a4f67-174">响应</span><span class="sxs-lookup"><span data-stu-id="a4f67-174">Response</span></span>
+## <a name="response"></a><span data-ttu-id="601f3-174">响应</span><span class="sxs-lookup"><span data-stu-id="601f3-174">Response</span></span>
 
-<span data-ttu-id="a4f67-175">如果成功， 此方法返回 `204 No Content` 响应代码 - 更新下列属性时除了 `200 OK` 响应代码：**allowEx在alSenders**、 **autoSubendNewMembers**， **HideFromAddressList**， **hideFromOutlookClients**， **isSubeendByMail**， **unseenCount**。</span><span class="sxs-lookup"><span data-stu-id="a4f67-175">If successful, this method returns a `204 No Content` response code—except a `200 OK` response code when updating the following properties: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.</span></span>
+<span data-ttu-id="601f3-175">如果成功， 此方法返回 `204 No Content` 响应代码 - 更新下列属性时除了 `200 OK` 响应代码：**allowEx在alSenders**、 **autoSubendNewMembers**， **HideFromAddressList**， **hideFromOutlookClients**， **isSubeendByMail**， **unseenCount**。</span><span class="sxs-lookup"><span data-stu-id="601f3-175">If successful, this method returns a `204 No Content` response code—except a `200 OK` response code when updating the following properties: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a4f67-176">示例</span><span class="sxs-lookup"><span data-stu-id="a4f67-176">Example</span></span>
+## <a name="example"></a><span data-ttu-id="601f3-176">示例</span><span class="sxs-lookup"><span data-stu-id="601f3-176">Example</span></span>
 
-<span data-ttu-id="a4f67-177">以下示例演示如何更新组。</span><span class="sxs-lookup"><span data-stu-id="a4f67-177">The following example shows how to update a group.</span></span>
+<span data-ttu-id="601f3-177">以下示例演示如何更新组。</span><span class="sxs-lookup"><span data-stu-id="601f3-177">The following example shows how to update a group.</span></span>
 
-### <a name="request"></a><span data-ttu-id="a4f67-178">请求</span><span class="sxs-lookup"><span data-stu-id="a4f67-178">Request</span></span>
+### <a name="request"></a><span data-ttu-id="601f3-178">请求</span><span class="sxs-lookup"><span data-stu-id="601f3-178">Request</span></span>
 
-<span data-ttu-id="a4f67-179">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a4f67-179">The following is an example of the request.</span></span>
+<span data-ttu-id="601f3-179">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="601f3-179">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a4f67-180">HTTP</span><span class="sxs-lookup"><span data-stu-id="a4f67-180">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="601f3-180">HTTP</span><span class="sxs-lookup"><span data-stu-id="601f3-180">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -85,41 +85,39 @@ PATCH /groups/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{id}
 Content-type: application/json
-Content-length: 211
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "description": "Library Assist",
+  "displayName": "Library Assist",
   "groupTypes": [
-    "groupTypes-value"
+    "Unified"
   ],
-  "mail": "mail-value",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "mailNickname": "library-help"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a4f67-181">C#</span><span class="sxs-lookup"><span data-stu-id="a4f67-181">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="601f3-181">C#</span><span class="sxs-lookup"><span data-stu-id="601f3-181">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a4f67-182">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a4f67-182">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="601f3-182">JavaScript</span><span class="sxs-lookup"><span data-stu-id="601f3-182">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a4f67-183">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a4f67-183">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="601f3-183">Objective-C</span><span class="sxs-lookup"><span data-stu-id="601f3-183">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="a4f67-184">Java</span><span class="sxs-lookup"><span data-stu-id="a4f67-184">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="601f3-184">Java</span><span class="sxs-lookup"><span data-stu-id="601f3-184">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a4f67-185">响应</span><span class="sxs-lookup"><span data-stu-id="a4f67-185">Response</span></span>
+### <a name="response"></a><span data-ttu-id="601f3-185">响应</span><span class="sxs-lookup"><span data-stu-id="601f3-185">Response</span></span>
 
-<span data-ttu-id="a4f67-186">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a4f67-186">The following is an example of the response.</span></span>
+<span data-ttu-id="601f3-186">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="601f3-186">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response"
