@@ -5,19 +5,23 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: b4071981912d6d34bf138d2eb932774d1fd175fc
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 2fbe216e4f37df197934611e60478df9dda71387
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151760"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351137"
 ---
 # <a name="list-deployment-audience-exclusions"></a>列出部署访问群体排除项
+
 命名空间：microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出从[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)中排除的[updatableAsset](../resources/windowsupdates-updatableasset.md)资源。
+
+> [!NOTE]
+> 此 API 具有 [与](/Graph/known-issues#accessing-and-updating-deployment-audiences) 通过 Intune 创建的部署相关的已知问题。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +30,7 @@ ms.locfileid: "53151760"
 |:---|:---|
 |委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

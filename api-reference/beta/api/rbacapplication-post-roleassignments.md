@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: aafcc34d288dcce1bcd0970802472a2e2e565e83
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: a7587bf4dea653b86b4f93632e5719bcec4aaaaa
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317201"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351102"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -24,10 +24,21 @@ ms.locfileid: "53317201"
 
 根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
-|支持的提供程序      | 委派（工作或学校帐户）  | 委派（个人 Microsoft 帐户） | 应用程序 |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| 目录 | RoleManagement.ReadWrite.Directory | 不支持。| RoleManagement.ReadWrite.Directory |
-| 权利管理 | EntitlementManagement.ReadWrite.All | 不支持。 | 不支持。 |
+### <a name="for-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  RoleManagement.ReadWrite.Directory   |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | RoleManagement.ReadWrite.Directory |
+
+### <a name="for-entitlement-management-provider"></a>对于权利管理提供程序
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） |  EntitlementManagement.ReadWrite.All   |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +67,7 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（如 ）或特定于应用程序的范围（ `directoryScopeId` 如 `appScopeId` ）。 Azure AD 范围的示例包括租户 (/") 、管理单元或应用程序。 有关详细信息，请参阅 [appScope](../resources/appscope.md)。
+在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（如 **directoryScopeId）** 或特定于应用程序的范围（如 **appScopeId）。** Azure AD 范围的示例包括租户 ("/") 、管理单元或应用程序。 权利管理使用租户 ("/") 访问包目录范围。 有关详细信息，请参阅 [appScope](../resources/appscope.md)。
 
 ## <a name="response"></a>响应
 
@@ -200,6 +211,55 @@ Content-type: application/json
 }
 ```
 
+
+### <a name="example-3-create-a-role-assignment-at-access-package-catalog-scope"></a>示例 3：在角色分配包目录范围创建应用程序
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment3_from_rbacapplication"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAssignments
+Content-type: application/json
+
+{
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleAssignments/$entity",
+    "id": "f3092518-7874-462e-93e9-0cd6c11ffc52",
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -209,5 +269,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

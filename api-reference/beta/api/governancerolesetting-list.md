@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 753ffc488c67091ae1364a8cd898b294261a7b41
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 89241c003ca538da0c368bb75d9ae239ba779b07
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435768"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350662"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435768"
 
 检索资源上的 [governanceRoleSettings](../resources/governancerolesetting.md) 集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -43,11 +43,11 @@ ms.locfileid: "50435768"
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroup |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，此 API 要求请求者至少对资源角色分配一个权限。
+除了权限范围之外，此 API 要求请求程序至少具有一角色分配资源访问权限。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -66,10 +66,10 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` [一个响应代码和 governanceRoleSetting](../resources/governancerolesetting.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 governanceRoleSetting](../resources/governancerolesetting.md) 对象集合。
 
 ## <a name="example"></a>示例
-此示例显示管理员如何列出资源 Wingtip Toys - Prod 的角色设置。 
+此示例演示管理员如何列出资源 Wingtip Toys - Prod 的角色设置。 
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"

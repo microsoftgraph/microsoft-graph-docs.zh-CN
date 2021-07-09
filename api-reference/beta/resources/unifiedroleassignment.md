@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c52e6bb05c9258680a36f04ad428c24a3a2829fc
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 16e03168f9eee4af8c6e69c7ee4fb774494643b4
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239959"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350997"
 ---
 # <a name="unifiedroleassignment-resource-type"></a>unifiedRoleAssignment 资源类型
 
@@ -39,7 +39,7 @@ unifiedRoleAssignment 用于授予对资源的访问权限。 它表示分配给
 |roleDefinitionId|字符串| 分配所针对的 unifiedRoleDefinition 的标识符。 只读。 仅 `$filter` (`eq` 运算符) 。 |
 |principalId|字符串| 分配授予的主体的标识符。 仅 `$filter` (`eq` 运算符) 。 |
 |directoryScopeId|字符串|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 应用程序作用域是仅由此应用程序定义和理解的范围。|
-|appScopeId|字符串|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 应用程序作用域是仅由此应用程序定义和理解的范围。|
+|appScopeId|字符串|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 应用程序作用域是仅由此应用程序定义和理解的范围。  对于权利管理提供程序，使用应用程序范围指定目录，例如 `/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997` 。|
 |resourceScope|字符串| unifiedRoleAssignment 适用的范围。 这 `/` 适用于服务范围。 **请勿使用。此属性将很快弃用。**|
 
 ## <a name="relationships"></a>关系
@@ -90,4 +90,3 @@ unifiedRoleAssignment 用于授予对资源的访问权限。 它表示分配给
   "section": "documentation",
   "tocPath": ""
 }-->
-

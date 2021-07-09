@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1b6138bc52e5686af94a94cfa13762b71a6242c4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d34a04d0f8eb3bdff16befd43870b75d473a8d0c
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945688"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350976"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>entitlementManagementSettings 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "50945688"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示控制 [Azure AD 权利管理行为的设置](entitlementmanagement-root.md)。
+表示控制 [Azure AD 权利管理行为的设置](entitlementmanagement-root.md)。  此资源不包括目录创建者设置;若要查看或更改目录创建者角色成员身份，请使用角色 [分配](unifiedroleassignment.md) API 和权利管理 RBAC 提供程序。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取 **entitlementManagementSettings 对象** 的属性。 |
+| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取 **entitlementManagementSettings 对象** 的属性。 |
 | [更新](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 更新 **entitlementManagementSettings 对象** 的属性。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|externalUserLifecycleAction|String|、 `None` `BlockSignIn` 或 `BlockSignInAndDelete` 之一。 |
+|externalUserLifecycleAction|字符串|、 `None` `BlockSignIn` 或 `BlockSignInAndDelete` 之一。 |
 |daysUntilExternalUserDeletedAfterBlocked|Int64|如果 **externalUserLifecycleAction** 为 ，则外部用户在删除其帐户之前被阻止 `BlockSignInAndDelete` 登录的天数。|
 
 ## <a name="relationships"></a>关系

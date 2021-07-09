@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: af390733e61d14cc411c583fccce7399bef5a39f
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0b15c7ceb87af0fa1d7deede3e583cc75f2a898e
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209931"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334008"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -58,6 +58,7 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 |[listItem](listitem.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint 和 OneDrive | 列表项。 请注意，文件和文件夹也作为列表项返回；**driveItem** 是 **driveItem** 的超类。 |
 |[网站](site.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint | SharePoint 中的网站。|
 |[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph 连接器| 所有内容通过 Microsoft Graph 连接器 API 摄取。|
+|[人员](person.md)|People.Read|Exchange Online|组织中的个人联系人、联系人或可寻址对象。|
 
 ## <a name="page-search-results"></a>页面搜索结果
 
@@ -92,7 +93,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 ## <a name="get-selected-properties"></a>获取选定属性
 
-搜索实体类型，如 **message**、**event**、**drive**、**driveItem**、**list**、**listItem**、**site**、**externalItem**，可以在 **fields** 属性中包含特定的实体属性，以便在搜索结果中返回。 这类似于使用 [OData 系统查询选项，REST 请求中的 $select](/graph/query-parameters#select-parameter)。 搜索 API 技术上不支持这些查询选项，因为会在文章正文中表达该行为。
+搜索实体类型，如 **消息**、**事件**、**驱动**、**driveItem**、**列表**、**listItem**、**网站**、**externalItem** 或 **人员**，可以在 **字段** 属性中包含特定的实体属性，以便在搜索结果中返回。 这类似于使用 [OData 系统查询选项，REST 请求中的 $select](/graph/query-parameters#select-parameter)。 搜索 API 技术上不支持这些查询选项，因为会在文章正文中表达该行为。
 
 对于所有这些实体类型，指定 **fields** 属性可减少响应中返回的属性数，从而通过网络优化负载。
 
@@ -119,7 +120,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 响应中的搜索结果按以下默认排序顺序排列：
 
 - **message** 和 **event** 按日期进行排序。
-- 所有 SharePoint、OneDrive 和连接器类型按相关性排序。
+- 所有 SharePoint、OneDrive 人员和连接器类型都按相关性排序。
 
 [query](../api/search-query.md) 方法可通过在 `requests` 参数中指定 **sortProperties** 来自定义搜索顺序，后者是 [searchRequest](./searchrequest.md) 对象的集合。 这可用于指定一个或多个可排序的属性列表和排序顺序。
 
@@ -174,13 +175,13 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 - 定义 **查询** 方法，以允许一次传递一个或多个 **searchRequest** 实例的集合。 但是，该服务当前仅支持一次传递一个 [searchRequest](./searchrequest.md)。
 
 - [searchRequest](./searchrequest.md) 资源支持一次传递多个类型的实体。 但是，目前仅支持 SharePoint 和 OneDrive entityTypes 的组合为：**driveItem**、**drive**、**site**、**list**、**listItem**。
-当前不支持任何涉及 **message**、**event**、Sharepoint 和 OneDrive 类型或 **externalItem** 的组合。  
+当前不支持任何涉及 **消息**、**事件**、**p人员**、Sharepoint 和 OneDrive 类型或 **externalItem** 的组合。  
 
 - 仅当将 **entityType** 指定为 `externalItem` 时，定义要使用的连接的 **contentSource** 属性才适用。
 
-- 搜索 API 不支持 **message**、**event** 或 **externalItem** 的自定义排序。
+- 搜索 API 不支持 **消息**、**事件**、**人员**、或 **externalItem** 的自定义排序。
 
-- 搜索 API 不支持 **message**、**event**、**site** 或 **drive** 的聚合。
+- 搜索 API 不支持 **消息**、**事件**、**网站**、**人员** 或 **驱动** 的聚合。
 
 - SharePoint 搜索中的自定义设置（如自定义搜索架构或结果源）可能会干扰 Microsoft 搜索 API 的操作。
 
@@ -208,6 +209,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 - 了解有关几个关键用例的详细信息：
   - [搜索 Outlook 邮件](/graph/search-concept-messages)
   - [搜索日历事件](/graph/search-concept-events)
+  - [搜索人员](/graph/search-concept-person)  
   - [SharePoint 和 OneDrive 中的搜索内容](/graph/search-concept-files)
   - [使用连接器搜索导入的自定义类型](/graph/search-concept-custom-types)
   - [排序搜索结果](/graph/search-concept-sort)
@@ -215,7 +217,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
   - [请求拼写更正](/graph/search-concept-speller)
   - [用户搜索显示布局](/graph/search-concept-display-layout)
 
-- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
+- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 中浏览搜索 API。
 
 ## <a name="whats-new"></a>最近更新
 

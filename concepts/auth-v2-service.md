@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: cb1156ce758b55cc6087097838f183e9148f6091
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 0fba65fb040ca210b5d9a9fe82e9510b5586c4b6
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780720"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53333966"
 ---
 # <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 
@@ -138,7 +138,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 | 租户        | 必需  | 需要从中请求权限的目录租户。它可以 GUID 或友好名称格式显示。
 | client_id     | 必需  | 注册应用时由 [Azure 应用注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配的应用程序 ID。
 | 范围         | 必需  | 为此请求中的 `scope` 参数传递的值应为所需资源的资源标识符（应用程序 ID URI），带有 `.default` 后缀。 对于 Microsoft Graph，值为 `https://graph.microsoft.com/.default`。 此值会通知 Microsoft 标识平台终结点你在应用注册门户为应用配置的所有应用程序权限，它应该为与你要使用的资源关联的应用颁发令牌。
-| client_secret | 必需  | 你在应用注册门户中为应用生成的应用程序密码。
+| client_secret | 必需  | 在应用注册门户中为应用生成的应用程序密码。请确保它已进行 URL 编码。
 | grant_type    | 必需  | 必须是 `client_credentials`。
 
 #### <a name="token-response"></a>令牌响应

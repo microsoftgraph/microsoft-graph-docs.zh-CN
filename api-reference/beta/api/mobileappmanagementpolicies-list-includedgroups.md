@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8c7af8b03a42050b423dd4533ae28a432523a907
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: d69156b2614b17037a6eba473d00e7d333868d6c
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547345"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351067"
 ---
 # <a name="list-includedgroups"></a>列出 includedGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "52547345"
 
 获取包含在移动应用管理策略中的组列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "52547345"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.All|
 |委派（个人 Microsoft 帐户） | 不支持。|
-|应用程序 | 不支持。|
+|Application | 不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,7 +66,7 @@ GET /policies/mobileAppManagementPolicies/{id}/includedGroups
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/policies/mobileAppManagementPoliciesab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups
+GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups
 ```
 
 ### <a name="response"></a>响应

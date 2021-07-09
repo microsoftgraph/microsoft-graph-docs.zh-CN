@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 3f01060b80c9f50712014a16987d519d19b5bf91
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 109643587c07939fabf34eb37dc8dc4ca93914a1
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435922"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350787"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435922"
 
 检索 [governanceRoleAssignment 的属性和关系](../resources/governanceroleassignment.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -43,20 +43,20 @@ ms.locfileid: "50435922"
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroup |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-1. 获取[资源上的 governanceRoleAssignment](../resources/governanceroleassignment.md)
+1. 获取[资源的 governanceRoleAssignment](../resources/governanceroleassignment.md)
 
     *注意：除了权限范围之外，它要求请求者至少对资源角色分配一个权限。* 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments/{id}
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
-2. 获取[我的 governanceRoleAssignment](../resources/governanceroleassignment.md)
+2. 获取[mine 的 governanceRoleAssignment](../resources/governanceroleassignment.md)
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'{myId}'
 ```
@@ -72,7 +72,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码 [和 governanceRoleAssignment](../resources/governanceroleassignment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [governanceRoleAssignment](../resources/governanceroleassignment.md) 对象。
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",
