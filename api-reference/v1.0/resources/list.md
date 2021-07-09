@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: 4079320ef785dbdb3c1367fad92cda46eab0b4fa
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 0f7c8600b8a4d8f41e6dd6e6ad4240252c004bbf
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239364"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317005"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -58,7 +58,7 @@ ms.locfileid: "50239364"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.list"
+  "@odata.type&quot;: &quot;microsoft.graph.list"
 }-->
 
 ```json
@@ -71,7 +71,7 @@ ms.locfileid: "50239364"
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
@@ -87,7 +87,7 @@ ms.locfileid: "50239364"
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "webUrl": "url to visit the list in a browser"
+  "webUrl&quot;: &quot;url to visit the list in a browser"
 }
 ```
 
@@ -99,7 +99,7 @@ ms.locfileid: "50239364"
 |:-----------------|:---------------------------------|:---------------------------
 | **displayName**  | string                           | 列表的可显示标题。
 | **list**         | [listInfo][]                     | 提供关于列表的其他详细信息。
-| **system**       | [systemFacet][]                  | 如果存在，则表示这是系统管理的列表。 只读。
+| **system**       | [systemFacet][]                  | 如果存在，则表示这是系统管理的列表。只读。
 
 以下属性继承自 **[baseItem][]**。
 
@@ -107,11 +107,11 @@ ms.locfileid: "50239364"
 |:-------------------------|:------------------|:------------------------------
 | **id**                   | string            | 项的唯一标识符。只读。
 | **名称**                 | string            | 项目名称。
-| **createdBy**            | [identitySet][]   | 此项的创建者的标识。 只读。
+| **createdBy**            | [identitySet][]   | 此项的创建者的标识。只读。
 | **createdDateTime**      | DateTimeOffset    | 创建项目的日期和时间。只读。
 | **说明**          | string            | 项目的描述性文本。
 | **eTag**                 | string            | 该项目的 ETag。只读。                                                          |
-| **lastModifiedBy**       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
+| **lastModifiedBy**       | [identitySet][]   | 此项最后一个修饰符的标识。只读。
 | **lastModifiedDateTime** | DateTimeOffset    | 上次修改项目的日期和时间。只读。
 | **parentReference**      | [itemReference][] | 父信息（如果此项具有父级）。读写。
 | **sharepointIds**        | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
@@ -150,7 +150,7 @@ ms.locfileid: "50239364"
   "section": "documentation",
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
-    "Lists": "#"
+    "Lists&quot;: &quot;#"
   }
 } -->
 

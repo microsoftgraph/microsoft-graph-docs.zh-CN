@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 89ba1ec44f41abe1309355c47daeabdd6603ca25
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7064d412b776f33c30b87dde34d79a167aa6a636
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787560"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317089"
 ---
 # <a name="update-group"></a>更新组
 
@@ -56,11 +56,11 @@ PATCH /groups/{id}
 |mailEnabled|布尔|指定是否为启用邮件的组。|
 |mailNickname|String|组的邮件别名。创建组时必须指定此属性。 |
 |securityEnabled|布尔|指定是否为安全组。 |
-|visibility|String|指定 Microsoft 365 组的可见性。 可能的是包括：**专用**、**公用** 或为空（解释为 **公用**）。|
+|visibility|String|指定 Microsoft 365 组的可见性。可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|
 
 > **注意：**
 >
-> - 可以通过在 **补丁请求中指定** 自动更新 **autoSubendalNewMembers** ，而不包括上表中其他属性。
+> - 要更新以下特定于 Exchange 的属性，必须在它们自己的 PATCH 请求中指定它们，但不包括上表中列出的其他属性：**allowExternalSenders**、**autoSubscribeNewMembers**、**hideFromAddressLists**、**hideFromOutlookClients**、**isSubscribedByMail**、**unseenCount**。
 > - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#groups)。
 > - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。
 
@@ -85,17 +85,15 @@ PATCH /groups/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{id}
 Content-type: application/json
-Content-length: 211
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "description": "Library Assist",
+  "displayName": "Library Assist",
   "groupTypes": [
-    "groupTypes-value"
+    "Unified"
   ],
-  "mail": "mail-value",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "mailNickname": "library-help"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
