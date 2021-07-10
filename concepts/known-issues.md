@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 1adf4a4f756be0ce4f8e338ee016bbb3d3059177
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 257d8966eabe2428072f470f290816a1c9c2e35d
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030773"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351106"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -184,6 +184,15 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * 跟踪关系更改时，OData 上下文有时无法正确返回。
 * 架构扩展（旧版）未使用 $select 语句返回，而是在无 $select 的情况下返回。
 * 客户端无法跟踪开放扩展或已注册的架构扩展的更改。
+
+## <a name="devices-and-apps--device-updates-windows-updates"></a>设备和应用|设备更新（Windows 更新）
+
+### <a name="accessing-and-updating-deployment-audiences"></a>正在访问和更新部署访问群体
+
+当前不支持访问和更新通过 Intune 创建的 **部署** 资源上的部署访问群体。
+
+* [列出部署访问群体成员](/graph/api/windowsupdates-deploymentaudience-list-members) 和 [列出部署访问群体排除项](/graph/api/windowsupdates-deploymentaudience-list-exclusions) 返回 `404 Not Found`。
+* [更新部署访问群体成员和排除项](/graph/api/windowsupdates-deploymentaudience-updateaudience) 或 [按 ID 更新](/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid) 返回 `202 Accepted`，但不更新访问群体。
 
 ## <a name="extensions"></a>扩展
 

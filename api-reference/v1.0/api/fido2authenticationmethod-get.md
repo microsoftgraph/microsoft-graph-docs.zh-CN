@@ -5,19 +5,19 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b641e1c2afdbf01a3999c50f76497ac7a1417382
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: e4b5d5602c99b4a0c637f00a9bb638d456e8a3fd
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467958"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350990"
 ---
 # <a name="get-fido2authenticationmethod"></a>获取 fido2AuthenticationMethod
 命名空间：microsoft.graph
 
 检索用户的单个 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,8 +50,8 @@ ms.locfileid: "51467958"
 }
 -->
 ``` http
-GET /me/authentication/fido2AuthenticationMethod/{id}
-GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id}
+GET /me/authentication/fido2Methods/{id}
+GET /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id
 ### <a name="request"></a>请求
 
 ``` http
-GET https://graph.microsoft.com/v1.0/me/authentication/fido2AuthenticationMethod/-2_GRUg2-HYz6_1YG4YRAQ2
+GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods/-2_GRUg2-HYz6_1YG4YRAQ2
 ```
 
 ### <a name="response"></a>响应

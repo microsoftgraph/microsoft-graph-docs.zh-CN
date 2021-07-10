@@ -1,58 +1,102 @@
-| 属性                        | eq                   | ne                | NOT               | ge                   | le                   | in                   | startsWith           | 空值          |
-|---------------------------------|----------------------|-------------------|-------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| accountEnabled                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| ageGroup                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| assignedLicenses                | ![默认值。][default] |                   | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| assignedPlans                   | ![默认值。][default] |                   | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| businessPhones                  | ![默认值。][default] |                   | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| 城市                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| companyName                     | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| consentProvidedForMinor         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| 国家/地区                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| createdDateTime                 | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |                      |                      |
-| creationType                    | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| deletedDateTime                 | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |                      |                      |
-| 部门                      | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| displayName                     | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| employeeHireDate                | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| employeeId                      | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] | ![默认值。][default] |
-| employeeHireDate                | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| employeeOrgData                 | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| employeeType                    | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |
-| externalUserState               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| externalUserStateChangeDateTime | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| faxNumber                       | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| givenName                       | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| id                              | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| 身份                      | ![默认值。][default] |                   |                   |                      |                      |                      |                      |                      |
-| imAddresses                     | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| infoCatalogs                    | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| isResourceAccount               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| jobTitle                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| 邮件                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
-| mailNickname                    | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| mobilePhone                     | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| officeLocation                  | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| onPremisesExtensionAttributes   | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| onPremisesImmutableId           | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| onPremisesLastSyncDateTime      | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| onPremisesSamAccountName        | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |
-| onPremisesSecurityIdentifier    | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      | ![高级。][AQP]    |
-| onPremisesSyncEnabled           | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| onPremisesUserPrincipalName     | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
-| otherMails                      | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
-| passwordPolicies                | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      | ![高级。][AQP]    |
-| postalCode                      | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| preferredLanguage               | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| proxyAddresses                  | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] | ![高级。][AQP]    |
-| showInAddressList               | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![高级。][AQP]    |                      |                      |
-| signInActivity                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      |                      |                      |
-| 州                           | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| streetAddress                   | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| 姓氏                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| usageLocation                   | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
-| userPrincipalName               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
-| userType                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      | ![高级。][AQP]    |
+| 属性                                               | eq                   | ne                | NOT               | ge                   | le                   | in                   | startsWith           | 空值          |
+|--------------------------------------------------------|----------------------|-------------------|-------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
+| accountEnabled                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
+| ageGroup                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
+| alternativeNames                                       | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| alternativeSecurityIds {identityProvider}              | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| applicationTemplateId                                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      | ![高级。][AQP]    |                      |
+| appOwnerOrganizationId                                 | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| appRoleAssignmentRequired                              | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
+| approximateLastSignInDateTime                          | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      |                      | ![高级。][AQP]    |
+| assignedLicenses {skuId}（组）                      | ![默认值。][default] |                   |                   |                      |                      |                      |                      |                      |
+| assignedLicenses {skuId}（用户）                       | ![默认值。][default] |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| assignedPlans {capabilityStatus}                       | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| assignedPlans {service}                                | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| assignedPlans {servicePlanId}                          | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| businessPhones                                         | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      | ![高级。][AQP]    |                      |
+| 城市                                                   | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| 分类                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| companyName                                            | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
+| consentProvidedForMinor                                | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
+| 国家/地区                                                | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| createdDateTime                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |                      | ![高级。][AQP]    |
+| creationType                                           | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
+| customerId                                             | ![默认值。][default] |                   |                   | ![默认值。][default] | ![默认值。][default] |                      |                      |                      |
+| defaultDomainName                                      | ![默认值。][default] |                   |                   | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| deletedDateTime                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |                      |                      |
+| 部门                                             | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| 说明                                            | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      | ![高级。][AQP]    |                      |
+| deviceId                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      | ![高级。][AQP]    |                      |
+| disabledByMicrosoftStatus                              | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
+| displayName                                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| employeeHireDate                                       | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
+| employeeId                                             | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| employeeOrgData {costCenter}                           | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
+| employeeOrgData {division}                             | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
+| employeeType                                           | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |
+| expirationDateTime                                     | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
+| externalUserState                                      | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
+| faxNumber                                              | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
+| givenName                                              | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| hasMembersWithLicenseErrors                            | ![默认值。][default] |                   |                   |                      |                      |                      |                      | ![默认值。][default] |
+| id                                                     | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
+| identifierUris                                         | ![默认值。][default] | ![高级。][AQP] |                   | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| identities {issuer}                                    | ![默认值。][default] |                   |                   |                      |                      |                      |                      | ![默认值。][default] |
+| imAddresses                                            | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| 信息 {logoUrl}                                         |                      |                   |                   |                      |                      |                      |                      | ![高级。][AQP]    |
+| 信息 {termsOfServiceUrl}                               | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| infoCatalogs                                           | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| isAssignableToRole                                     | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
+| isCompliant                                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
+| isManaged                                              | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
+| isResourceAccount                                      | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
+| jobTitle                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| keyCredentials {endDateTime}                           | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| 邮件                                                   | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| mailEnabled                                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
+| mailNickname                                           | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| mdmAppId                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      | ![高级。][AQP]    |                      |
+| membershipRule                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| mobilePhone                                            | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
+| officeLocation                                         | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
+| onPremisesExtensionAttributes {extensionAttribute1-15} | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      | ![高级。][AQP]    |
+| onPremisesImmutableId                                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
+| onPremisesLastSyncDateTime                             | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |                      |
+| onPremisesProvisioningErrors {category}                | ![默认值。][default] |                   | ![高级。][AQP] |                      |                      |                      |                      |                      |
+| onPremisesProvisioningErrors {propertyCausingError}    | ![默认值。][default] |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| onPremisesSamAccountName                               | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |
+| onPremisesSecurityIdentifier                           |                      |                   |                   |                      |                      |                      |                      | ![高级。][AQP]    |
+| onPremisesSyncEnabled                                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
+| onPremisesUserPrincipalName                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
+| operatingSystem                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] | ![高级。][AQP]    |
+| operatingSystemVersion                                 | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] | ![高级。][AQP]    |
+| otherMails                                             | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
+| passwordPolicies                                       |                      | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      | ![高级。][AQP]    |
+| passwordProfile {forceChangePasswordNextSignIn}        | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![高级。][AQP]    |                      | ![高级。][AQP]    |
+| passwordProfile {forceChangePasswordNextSignInWithMfa} | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![高级。][AQP]    |                      | ![高级。][AQP]    |
+| physicalIds                                            | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| postalCode                                             | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
+| preferredLanguage                                      | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
+| provisionedPlans {provisioningStatus}（用户）           | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| provisionedPlans {service}（用户）                      | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| proxyAddresses                                         | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| publisherDomain                                        | ![默认值。][default] | ![高级。][AQP] |                   | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| renewedDateTime                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |                      |
+| requiredResourceAccess {resourceAppId}                 | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
+| roleTemplateId                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      | ![高级。][AQP]    |                      |
+| securityEnabled                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
+| servicePrincipalNames                                  | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| showInAddressList                                      | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![高级。][AQP]    |                      |                      |
+| signInActivity                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      |                      |                      |
+| signInAudience                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
+| 州                                                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| 街道                                                 |                      |                   |                   |                      |                      |                      |                      |                      |
+| streetAddress                                          | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
+| 姓氏                                                | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| 标记                                                   | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
+| usageLocation                                          | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
+| userPrincipalName                                      | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
+| userType                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      | ![高级。][AQP]    |
 
 
 [AQP]: /graph/images/advanced-query-parameters/advanced.png

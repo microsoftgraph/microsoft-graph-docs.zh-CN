@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6460c9de594a84b21d2f7c3898291705aaf665a5
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 3f16aa9536fa780022cd596e849539488a7ff92d
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151606"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350675"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1499,7 +1499,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | 权限 | 显示字符串 | 说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:---------- |:-------------- |:----------- |:---------------------- |:----------------- |
 | _PrivilegedAccess.ReadWrite.AzureAD_ |为目录读取和写入 Privileged Identity Management 数据  | 允许应用读取和写入 Azure AD 的 Privileged Identity Management API。 | 是 | 否 |
-| _PrivilegedAccess.ReadWrite.AzureADGroups_ |为特权范文组读取和写入 Privileged Identity Management 数据 | 允许应用读取和写入组的 Privileged Identity Management API 的权限。 | 是 | 否 |
+| _PrivilegedAccess.ReadWrite.AzureADGroup_ |为特权范文组读取和写入 Privileged Identity Management 数据 | 允许应用读取和写入组的 Privileged Identity Management API 的权限。 | 是 | 否 |
 | _PrivilegedAccess.ReadWrite.AzureResources_ |为 Azure 资源读取和写入 Privileged Identity Management 数据 | 允许应用读取和写入 Azure 资源的 Privileged Identity Management API。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -1507,7 +1507,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | 权限 | 显示字符串 | 说明 | 需经过管理员同意 |
 |:---------- |:-------------- |:----------- |:---------------------- |
 | _PrivilegedAccess.Read.AzureAD_ |为目录读取 Privileged Identity Management 数据  | 允许应用读取 Azure AD 的 Privileged Identity Management API 的权限。 | 是 |
-| _PrivilegedAccess.Read.AzureADGroups_ |读取特权访问组的 Privileged Identity Management 数据 | 允许应用读取组的 Privileged Identity Management API 的权限。 | 是 |
+| _PrivilegedAccess.Read.AzureADGroup_ |读取特权访问组的 Privileged Identity Management 数据 | 允许应用读取组的 Privileged Identity Management API 的权限。 | 是 |
 | _PrivilegedAccess.Read.AzureADResources_ |读取 Azure 资源的 Privileged Identity Management 数据 | 允许应用读取 Azure AD 资源的 Privileged Identity Management API 的权限。 | 是 |
 
 ---

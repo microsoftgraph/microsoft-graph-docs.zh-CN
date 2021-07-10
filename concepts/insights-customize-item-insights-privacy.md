@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 501e051fa63d2b68952a7c346f8c21dab34f5d8e
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: d9026a93ed8db63bec26dbbfc755b1b6a5799836
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108843"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350908"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
 
@@ -41,7 +41,7 @@ ms.locfileid: "53108843"
 下一部分介绍管理中心的使用，然后是有关 PowerShell cmdlet 的部分。 如果正在使用 REST API，请跳过下一部分，并继续 [使用 REST API 配置项目见解](#configure-item-insights-using-rest-api)。 有关详细信息，请参阅 [读取](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) 或 [更新](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST 操作。
 
 ### <a name="how-to-configure-item-insights-settings-via-microsoft-admin-center"></a>如何通过 Microsoft 管理中心配置项目见解设置？
-拥有 _全局管理员角色_ 的管理员可以通过切换来调整项见解隐私设置。 若要执行这一操作，请在 Micrsofot 365 管理中心展开“**设置**”，选择“**搜索和智能**”，并在“**项目见解**”下选择“**更改设置**”。
+拥有 _全局管理员角色_ 的管理员可以通过切换来调整项见解隐私设置。 要执行这一操作，请在 Micrsofot 365 管理中心展开“**设置**”，选择“**搜索和智能**”，并在“**项目见解**”下选择“**更改设置**”。
 ![图像](https://user-images.githubusercontent.com/54312959/117024482-b39eca00-ad02-11eb-9a11-e6a01039822e.png)
 
 

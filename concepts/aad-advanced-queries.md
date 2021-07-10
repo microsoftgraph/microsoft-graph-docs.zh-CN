@@ -4,12 +4,12 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7ecd514de1d1be4fea7606b62ca7060e6c15ba08
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: e8a6c4a3a2d37eafeaee85f7778baa68bad97357
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118645"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351285"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
@@ -73,7 +73,7 @@ ConsistencyLevel: eventual
 
 目录对象的属性对查询参数的支持行为各不相同。 以下是目录对象的常见应用场景:
 
-+ 跨目录资源的同名属性支持相同的 `$filter` 运算符。 例如，**application**、**group**、**organization** 和 **user** 资源中提供了 **createdDateTime** 属性。 默认情况下，它支持 `eq`、 `ge`和 `le` 运算符，并且仅在高级查询中支持 `in`、 `ne`和 `NOT` 运算符。
++ 除另有指示外，跨目录资源的同名属性支持相同的 `$filter` 运算符。 例如，**application**、**group**、**organization** 和 **user** 资源中提供了 **createdDateTime** 属性。 默认情况下，它支持 `eq`、 `ge`和 `le` 运算符，并且仅在高级查询中支持 `in`、 `ne`和 `NOT` 运算符。
 + 仅有 **mail** 和 **userPrincipalName** 属性支持`endsWith`运算符。
 + 默认情况下支持的查询也适用于高级查询。
 + 仅在高级查询中支持 `NOT` 和 `ne` 求反运算符。 

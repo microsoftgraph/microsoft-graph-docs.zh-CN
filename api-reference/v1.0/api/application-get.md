@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f944ff27beffd0bb375d8197f4424f3f6fce4f8b
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: b5dcf3845e8477f5b3795b481b97cfad988e09c9
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813198"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351305"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -33,7 +33,7 @@ ms.locfileid: "52813198"
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 检索特定应用程序属性。 
 
 ## <a name="request-headers"></a>请求标头
 | 名称           | 说明                |
