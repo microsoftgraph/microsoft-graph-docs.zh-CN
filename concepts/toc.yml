@@ -530,12 +530,16 @@ items:
                 items:
                   - name: 概述
                     href: change-notification-in-microsoft-teams-overview.md
-                  - name: 聊天和频道消息
-                    href: teams-changenotifications-chatmessage.md
                   - name: Teams 和频道
                     href: teams-changenotifications-team-and-channel.md
                   - name: 团队成员资格
                     href: teams-changenotifications-teamMembership.md
+                  - name: 聊天和频道消息
+                    href: teams-changenotifications-chatmessage.md
+                  - name: 聊天
+                    href: teams-changenotifications-chat.md
+                  - name: 团队成员身份
+                    href: teams-changenotifications-chatMembership.md
           - name: 更改跟踪
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
