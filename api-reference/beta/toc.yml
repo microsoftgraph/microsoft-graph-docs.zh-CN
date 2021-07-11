@@ -519,7 +519,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -1848,7 +1848,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -9562,6 +9562,8 @@ items:
                     href: api/cloudpcdeviceimage-delete.md
                   - name: 获取源图像
                     href: api/cloudpcdeviceimage-getsourceimages.md
+                  - name: 重新加载
+                    href: api/cloudpcdeviceimage-reupload.md
               - name: 云电脑本地连接
                 href: resources/cloudpconpremisesconnection.md
                 items:
@@ -13326,7 +13328,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -13377,7 +13379,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
