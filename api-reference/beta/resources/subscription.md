@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 4ab0fa060940a6e4e08751c029f63ca80c6ec39a
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: 183812b655aa62ce48b405fccfaf3b4b8841117f
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162215"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366960"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -23,6 +23,7 @@ ms.locfileid: "53162215"
 - Microsoft Graph 安全性 API 中的[警报][]。
 - Microsoft Teams 中的通话或会议后生成的 [callRecord][]。
 - 频道[中的](./channel.md)Microsoft Teams。
+- 聊天[中的](./chat.md)Microsoft Teams。
 - 通过 Microsoft Teams 中的团队或频道发送的 [chatMessage][]。
 - Microsoft 365 组中的[对话][]。
 - 团队、频道或聊天中的[conversationMember](./conversationmember.md) Microsoft Teams。
@@ -74,6 +75,7 @@ ms.locfileid: "53162215"
 | 安全 **警报**     | 43200分钟（不到 30 天）  |
 | Teams **callRecord**    | 4230 分钟（不到 3 天）  |
 | Teams **频道**    | 60 分钟（1 小时）  |
+| Teams **聊天** | 60 分钟（1 小时） |
 | Teams **chatMessage**    | 60 分钟（1 小时）  |
 | Teams **conversationMember**    | 60 分钟（1 小时）  |
 | Teams **团队**    | 60 分钟（1 小时）  |

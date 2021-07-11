@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d27457c3aab9876bc26d95ad2e5f52a1b11bdb79
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 99b46758ac6535aa847dc2b97571c0edde3e48b9
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975335"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366987"
 ---
 # <a name="get-schema"></a>获取架构
 
@@ -20,9 +20,7 @@ ms.locfileid: "48975335"
 
 检索[externalConnection](../resources/externalconnection.md)[架构](../resources/schema.md)的属性。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,7 +54,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [架构](../resources/schema.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和[](../resources/schema.md)请求的架构对象。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b4617596a10a85a4378b1e7ad4c4ca94fb16ffac
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 170c3fb87903e6f2f66fe910d80ca8f4a6e87b50
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491004"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366793"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -22,9 +22,7 @@ ms.locfileid: "51491004"
 
 此 API 可用于创建自定义项。 在 JSON 正文中包括 属性 `@odata.type` ，指定要创建的类型。 包含 [externalConnection](../resources/externalconnection.md) 的架构 [必须已](../resources/schema.md) 注册相应类型。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

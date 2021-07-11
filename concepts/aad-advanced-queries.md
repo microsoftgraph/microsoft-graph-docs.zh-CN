@@ -4,12 +4,12 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e8a6c4a3a2d37eafeaee85f7778baa68bad97357
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 03210e9c46776c4fbc92057870737a87c7e47371
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351285"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366513"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
@@ -36,7 +36,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
   "name": "get_users_not_enabled"
 } -->
 ```msgraph-interactive
-https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -202,4 +202,4 @@ Content-type: application/json
 
 - [使用查询参数自定义响应](/graph/query-parameters)
 - [查询参数限制](known-issues.md#query-parameter-limitations)
-- [使用$search查询参数匹配搜索条件](/graph/aad-advanced-queries)
+- [使用$search查询参数匹配搜索条件](/graph/search-query-parameter)

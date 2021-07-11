@@ -1,16 +1,16 @@
 ---
 title: acl 资源类型
-description: 由 Microsoft Search externalConnection 编制索引的项的访问控制项。
+description: 由 externalConnection 索引的项的访问控制Microsoft 搜索项。
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6d390ac0fee3063bd8f0d292d14e04b2616c1d00
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d4c3f3cc72c7fde56665c33561fa435e76842eb1
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193531"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366590"
 ---
 # <a name="acl-resource-type"></a>acl 资源类型
 
@@ -18,18 +18,16 @@ ms.locfileid: "48193531"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-由 Microsoft Search [externalConnection](externalconnection.md)编制索引的项的访问控制项。
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+由[externalConnection](externalconnection.md)索引的项的访问控制Microsoft 搜索项。
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型   | 描述                                        |
+| 属性       | 类型   | 说明                                        |
 |:---------------|:-------|:---------------------------------------------------|
-| accessType     | 字符串 | 授予对标识的访问权限。 可取值为：`grant`、`deny`。 |
-| identitySource | 字符串 | 标识源。 可能的值为 `azureActiveDirectory` 或 `external` 。           |
-| type           | 字符串 | 标识的类型。 可能的值为： `user` 、 `group` 、、 `everyone` `everyoneExceptGuests` 如果 identitySource 是， `azureActiveDirectory` 并且只有 `group` identitySource 是 `external` 。 |
-| value          | String | 标识的唯一标识符。 对于 Azure Active Directory 标识， `value` 将设置为用户、组或租户的类型为 user、group 和 everyone 的对象标识符 (和 everyoneExceptGuests) 分别。 如果将外部组 `value` 设置为 [EXTERNALGROUP](externalgroup.md)的 ID。|
+| accessType     | String | 授予标识的访问权限。 可取值为：`grant`、`deny`。 |
+| identitySource | String | 标识的来源。 可能的值为 `azureActiveDirectory` 或 `external`。           |
+| type           | String | 标识的类型。 可能的值为 `user` `group` `everyone` `everyoneExceptGuests` ：、，如果 identitySource 为 且 `azureActiveDirectory` 只是 `group` identitySource 为 `external` 。 |
+| value          | String | 标识的唯一标识。 如果Azure Active Directory，则分别设置为类型为 user、group 和 everyone (和 everyoneExceptGuests 的用户、组或租户) `value` 标识符。 对于外部组 `value` ，设置为 [externalGroup](externalgroup.md)的 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

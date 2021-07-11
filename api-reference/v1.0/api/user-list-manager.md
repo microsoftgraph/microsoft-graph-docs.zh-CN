@@ -1,16 +1,16 @@
 ---
 title: 列出经理
-description: 获取用户的经理。 返回指定为用户经理的用户或联系人。
+description: 获取用户的经理。返回指定为用户经理的用户或联系人。
 localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 151e738e2766c7bcc0fc35443a8e8c0a2cdc65ce
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f120af7868c5a55895e4c3d700b7276d6220cd1f
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474093"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351322"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -54,6 +54,7 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 > + 值 `n` 为 `$levels` （以 `max` 返回所有经理）或 1 到 1000 之间的数字。  
 > + 如果未指定 `$levels` 参数，将仅返回直属经理。  
 > + 您可以指定 `$select` 内部 `$expand` 单个经理的属性。 参数 `$levels` 必需： `$expand=manager($levels=max;$select=id,displayName)`
+> + 若要选择扩展的管理器的属性，必须将`$count=true`参数添加到查询以及标头`ConsistencyLevel=eventual`。 可以在示例 2 中看到此实现过程。
 
 ## <a name="request-headers"></a>请求标头
 

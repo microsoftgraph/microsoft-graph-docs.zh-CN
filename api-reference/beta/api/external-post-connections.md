@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9f5b8381e999429fb29e718b199596d3f987a415
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cc1ae2ff41d86d741f45d25c2b53f83ab95ec069
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965705"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366907"
 ---
 # <a name="create-connection"></a>Create Connection
 
@@ -20,9 +20,7 @@ ms.locfileid: "48965705"
 
 创建新的 [externalConnection](../resources/externalconnection.md)。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,7 +51,7 @@ POST /external/connections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [externalConnection](../resources/externalconnection.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和新的 [externalConnection](../resources/externalconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 

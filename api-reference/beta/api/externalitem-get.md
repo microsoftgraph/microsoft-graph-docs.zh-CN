@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a504455b1f898d675474406e249e2637c12e1c69
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2c0bdc7d44e2d9fb5c317ab2eb1cbc71cca76031
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192191"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366749"
 ---
 # <a name="get-externalitem"></a>获取 externalItem
 
@@ -18,13 +18,11 @@ ms.locfileid: "48192191"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [externalitem](../resources/externalitem.md) 对象的属性和关系。
+获取 [externalitem 对象的属性和](../resources/externalitem.md) 关系。
 
-此 API 是为诊断目的而提供的。 不应将其用于任何其他用途。 对此 API 的重复请求可能会导致 `429` 出现 HTTP 错误。
+此 API 仅供诊断使用。 它不能用于任何其他目的。 对此 API 的重复请求可能会导致 `429` HTTP 错误。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,14 +42,14 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 描述                                         |
+| 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | string | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
+| connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnection.md) |
+| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalitem.md)。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持用于自定义响应的可选查询参数。
+此方法不支持自定义响应的可选查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -65,7 +63,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [externalItem](../resources/externalitem.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [externalItem](../resources/externalitem.md) 对象。
 
 ## <a name="example"></a>示例
 

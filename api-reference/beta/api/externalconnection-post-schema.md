@@ -1,16 +1,16 @@
 ---
 title: 创建架构
-description: 为 Microsoft Search 连接创建架构。
+description: 为连接创建Microsoft 搜索架构。
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 27820a392d0a37363f447609713f86df1affef15
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b6656dc04a69c75b4803df59ee9387c4ca0fa72d
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965586"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366764"
 ---
 # <a name="create-schema"></a>创建架构
 
@@ -18,11 +18,9 @@ ms.locfileid: "48965586"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为 Microsoft Search [连接](../resources/externalconnection.md)创建架构。
+为连接创建Microsoft 搜索[架构](../resources/externalconnection.md)。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,22 +44,22 @@ POST /external/connections/{id}/schema
 |:----------------------|:-------------------------------------------------------------------|
 | Authorization         | Bearer {token}。必需。                                          |
 | Content-Type          | application/json. Required.                                        |
-| 首选：响应-async | 使用此来导致请求以异步方式执行。 可选。 |
+| Prefer：respond-async | 使用它会导致请求异步执行。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [架构](../resources/schema.md) 对象的 JSON 表示形式。
+在请求正文中，提供架构对象的 JSON [表示](../resources/schema.md) 形式。
 
-注册自定义项目架构时， `schema` 对象的 `baseType` 属性必须设置为 `microsoft.graph.externalItem` ，并且必须包含 `properties` 属性。 该 `properties` 对象必须至少包含一个属性，最多为64。
+注册自定义项架构时， `schema` 对象必须将 `baseType` 属性设置为 `microsoft.graph.externalItem` ，并且必须包含 `properties` 属性。 `properties`对象必须至少包含一个属性，最多包含 64 个属性。
 
 ## <a name="response"></a>响应
 
-在 `Prefer: respond-async` 请求中包含标头的情况下，如果成功，此方法将在 `202 Accepted` 响应标头中返回响应代码和 URL， `Location` 该 URL 可用于 [获取操作状态](../api/connectionoperation-get.md)。
+在请求中包含 标头后，如果成功，此方法在响应标头中返回 响应代码和 `Prefer: respond-async` `202 Accepted` URL，可用于 `Location` [获取操作状态](../api/connectionoperation-get.md)。
 
-如果在 `Prefer: respond-async` 请求中不包含标头，则此方法在 `201 Created` 响应正文中返回响应代码和新 [架构](../resources/schema.md) 对象。
+如果请求中不包含 标头，如果成功，此方法在响应正文中返回 响应 `Prefer: respond-async` `201 Created` 代码和新[](../resources/schema.md)架构对象。
 
 > [!NOTE]
-> 创建架构是一个容易导致网关超时的长时间运行的过程。 我们建议使用 `Prefer: respond-async` 标头以避免超时错误。
+> 创建架构是一个长时间运行的过程，容易出现网关超时。 我们建议使用 `Prefer: respond-async` 标头以避免超时错误。
 
 ## <a name="examples"></a>示例
 

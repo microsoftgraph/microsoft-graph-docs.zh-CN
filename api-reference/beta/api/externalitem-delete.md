@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 143b2d266eeea7a7b776f3f75e8005740b4c498e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2506d03831637d27ebe3b874361f650e843f1cf4
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954585"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366799"
 ---
 # <a name="delete-externalitem"></a>删除 externalItem
 
@@ -20,9 +20,7 @@ ms.locfileid: "48954585"
 
 删除 [externalitem](../resources/externalitem.md)。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,8 +42,8 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | string | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
+| connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnection.md) |
+| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalitem.md)。 |
 
 ## <a name="request-headers"></a>请求标头
 

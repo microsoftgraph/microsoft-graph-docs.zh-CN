@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7e2b6418c9dcbdc89fc7701302ddf28a780cb6d0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f6de3acfbdc71a83e087c58f11b8d93d7fbc5452
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954655"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366785"
 ---
 # <a name="update-connection"></a>更新连接
 
@@ -18,11 +18,9 @@ ms.locfileid: "48954655"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [externalConnection](../resources/externalconnection.md)的属性。
+更新 [externalConnection 的属性](../resources/externalconnection.md)。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,9 +51,9 @@ PATCH /external/connections/{id}
 
 | 属性      | 类型                                           | 说明 |
 |:--------------|:-----------------------------------------------|:------------|
-| configuration | [configuration](../resources/configuration.md) | 指定允许管理连接和索引连接中的内容的其他应用程序 Id。 |
-| 说明   | String                                         | Microsoft 365 管理中心显示的连接的说明。 |
-| name          | String                                         | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 |
+| configuration | [configuration](../resources/configuration.md) | 指定允许管理连接和索引连接内容的其他应用程序 ID。 |
+| 说明   | String                                         | 网站中显示的连接Microsoft 365 管理中心。 |
+| name          | String                                         | 要显示名称中显示的连接的Microsoft 365 管理中心。 最大长度为 128 个字符。 |
 
 ## <a name="response"></a>响应
 

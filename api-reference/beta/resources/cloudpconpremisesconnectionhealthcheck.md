@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: b1b1010c22bed8de73b5d3fa2caf680f26091d00
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: bdc9d440b31a650f69d16a0eab0db46f5265dfb5
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351088"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366753"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>cloudPcOnPremisesConnectionHealthCheck 资源类型
 
@@ -32,13 +32,13 @@ ms.locfileid: "53351088"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|此显示名称检查项目的详细信息。|
+|displayName|String|此显示名称检查项目的详细信息。|
 |状态|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|运行状况检查项目的状态。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
 |startDateTime|DateTimeOffset|运行状况检查项目的开始时间。 只读。|
 |endDateTime|DateTimeOffset|运行状况检查项目的结束时间。 只读。|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|此运行状况检查期间发生的错误类型。|
-|recommendedAction|字符串|修复相应错误的推荐操作。|
-|additionalDetails|字符串|有关运行状况检查或建议操作的其他详细信息。|
+|recommendedAction|String|修复相应错误的推荐操作。|
+|additionalDetails|String|有关运行状况检查或建议操作的其他详细信息。|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>cloudPcOnPremisesConnectionHealthCheckErrorType 值
 
@@ -63,6 +63,9 @@ ms.locfileid: "53351088"
 |resourceAvailabilityCheckNoSubnetIP|提供的子网没有可用的 IP 地址。 请确保本地网络连接中提供的子网具有足够的可用 IP 地址。 请展开当前选定的子网或选择要用于设置的不同子网。|
 |resourceAvailabilityCheckSubscriptionDisabled|提供的 Azure 订阅已禁用。 请确保 Azure 订阅已启用且可用于预配。|
 |resourceAvailabilityCheckAzurePolicyViolation|找不到提供的 Azure 订阅。 请确保 Azure 订阅可用于预配。|
+|resourceAvailabilityCheckSubscriptionNotFound|无法访问提供的 Azure 订阅。 请确保 Azure 订阅可用于预配。|
+|resourceAvailabilityCheckSubscriptionTransferred|无法访问提供的 Azure 订阅。 请确保 Azure 订阅可用于预配。|
+|resourceAvailabilityCheckGeneralSubscriptionError|Azure 策略限制资源的创建。 请确保没有限制在订阅和/或资源组中创建资源的 Azure 策略。|
 |resourceAvailabilityCheckUnsupportedVNetRegion|所选 vNet 位于不受支持的区域。 请确保所选 vNet 位于受支持的区域。|
 |resourceAvailabilityCheckUnknownError|由于未知错误，Azure 资源的资源可用性检查失败。 请确保所有 Azure 资源都满足先决条件。|
 |permissionCheckNoSubscriptionReaderRole|云电脑服务主体对 Azure 订阅的权限不足。 请确保云电脑服务主体对订阅具有 *读者* 权限。|

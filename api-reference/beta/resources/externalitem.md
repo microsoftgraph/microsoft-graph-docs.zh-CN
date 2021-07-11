@@ -1,16 +1,16 @@
 ---
 title: externalItem 资源类型
-description: 添加到 Microsoft Graph 连接中的项。
+description: 添加到 Microsoft Graph项。
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 63f0285427a17280169d31a35c3a622d38a6a8c6
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 7c570a7e4754724ca4239b7e3dbe128d09db9d75
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161698"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366526"
 ---
 # <a name="externalitem-resource-type"></a>externalItem 资源类型
 
@@ -18,9 +18,7 @@ ms.locfileid: "50161698"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加到 Microsoft Graph 连接 [中的项](externalconnection.md)。 
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+添加到 Microsoft Graph[项](externalconnection.md)。 
 
 ## <a name="methods"></a>方法
 
@@ -35,9 +33,9 @@ ms.locfileid: "50161698"
 
 | 属性   | 类型                     | 说明                          |
 |:-----------|:-------------------------|:-------------------------------------|
-| acl        | [acl](acl.md) 集合 | 访问控制项数组。 每个条目指定授予用户或组的访问权限。 必需。 |
-| content    | [externalItemContent](externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本是全文索引。 可选。 |
-| id         | String                   | 开发人员提供包含外部Connection 中的项的唯一[ID。](externalconnection.md) 必须为字母数字，最多为 128 个字符。 必需。 |
+| acl        | [acl](acl.md) 集合 | 访问控制项数组。 每个条目指定授予用户或组的访问权限。 必填。 |
+| content    | [externalItemContent](externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本已编制全文索引。 可选。 |
+| id         | String                   | 开发人员提供的项目在包含[externalConnection 中的唯一 ID。](externalconnection.md) 必须为字母数字，最多为 128 个字符。 必填。 |
 | properties | Object                   | 具有项目属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的架构。 [](schema.md) 必填。 |
 
 ## <a name="relationships"></a>关系

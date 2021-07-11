@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5080add76aca68a280719a40c0bc02fef5e74064
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ede0058fd04db947d65da16f806321221be08f50
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054649"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350948"
 ---
 # <a name="list-applications"></a>列出应用程序
 

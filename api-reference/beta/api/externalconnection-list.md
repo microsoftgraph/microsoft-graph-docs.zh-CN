@@ -1,16 +1,16 @@
 ---
 title: 列出连接
-description: 检索 externalConnections 的列表。
+description: 检索 externalConnections 列表。
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b70e1fc69c5897e8209633e5b5ce0f35cb7fb41a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ad7b47f18f68a4c8feb9432518f1bf66f58eaa6c
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965628"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366765"
 ---
 # <a name="list-connections"></a>列出连接
 
@@ -18,11 +18,9 @@ ms.locfileid: "48965628"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [externalConnections](../resources/externalconnection.md)的列表。
+检索 [externalConnections 的列表](../resources/externalconnection.md)。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,7 +54,7 @@ GET /external/connections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [externalConnection](../resources/externalconnection.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [externalConnection](../resources/externalconnection.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

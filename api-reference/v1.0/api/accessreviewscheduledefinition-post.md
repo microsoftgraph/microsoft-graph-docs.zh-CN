@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0aa38fcbd99bc2618310f456fc970c5311a5dc32
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0f5c1f1e6bb9f0f204a1db7222c6b656eed77333
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208553"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366602"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -49,8 +49,8 @@ POST /identityGovernance/accessReviews/definitions
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
 | displayName | String | 访问评审系列的名称。 必填。|
-| descriptionForAdmins | 字符串 | 提供给管理员评价的上下文。 必填。 |
-  descriptionForReviewers | 字符串 | 提供给审阅者的审阅上下文。 必填。 |
+| descriptionForAdmins | string | 提供给管理员评价的上下文。 必填。 |
+  descriptionForReviewers | string | 提供给审阅者的审阅上下文。 必填。 |
 | 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中查看的用户范围。 请参阅  [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 必填。| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
@@ -264,7 +264,7 @@ Content-type: application/json
     "recurrence": {
       "pattern": {
         "type": "absoluteMonthly",
-        "dayOfMonth": "5",
+        "dayOfMonth": 5,
         "interval": 3
       },
       "range": {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 53a52e4af74fcf8ee0528dbd3ac31f56a93a3d13
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f709d05f1b93b3443dffc5171da6deb39dadc187
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957546"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366574"
 ---
 # <a name="get-connectionoperation"></a>获取 connectionOperation
 
@@ -18,11 +18,9 @@ ms.locfileid: "48957546"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [connectionOperation](../resources/connectionoperation.md)的属性。
+检索 [connectionOperation 的属性](../resources/connectionoperation.md)。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +50,7 @@ GET /external/connections/{connection-id}/operations/{operation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [connectionOperation](../resources/connectionoperation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [connectionOperation](../resources/connectionoperation.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9ced9d8f2f504ffd9c26629dcea06c4c8cf4e806
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c862a6139f4f24a9207e7387913ec0fc5b04e8e6
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954557"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366786"
 ---
 # <a name="update-externalitem"></a>更新 externalitem
 
@@ -18,11 +18,9 @@ ms.locfileid: "48954557"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [externalitem](../resources/externalitem.md)的属性。
+更新 [externalitem 的属性](../resources/externalitem.md)。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,8 +42,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | string | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
+| connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnection.md) |
+| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalitem.md)。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -56,25 +54,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 现有属性 (排除 `properties` 请求正文中不包含的对象) 中的属性将保留其以前的值，或根据其他属性值的更改重新计算这些属性。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
+在请求正文中，提供应更新的相关字段的值。 现有 (不包括请求正文) 对象对象中的属性将保留其以前的值或根据其他属性值的更改 `properties` 重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
 | 属性   | 类型                                  | 说明               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [acl](../resources/acl.md) 集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 |
-| content    | [externalItemContent](../resources/externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本为全文检索的文本。 |
-| properties | Object                                | 包含项属性的属性包。 属性必须符合为[externalConnection](../resources/externalconnection.md)定义的[架构](../resources/schema.md)。 |
+| acl        | [acl](../resources/acl.md) 集合 | 访问控制项数组。 每个条目指定授予用户或组的访问权限。 |
+| content    | [externalItemContent](../resources/externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本已编制全文索引。 |
+| properties | Object                                | 具有项目属性的属性包。 属性必须符合为[externalConnection](../resources/externalconnection.md)定义的架构。 [](../resources/schema.md) |
 
 ### <a name="updating-the-acl-collection"></a>更新 acl 集合
 
-如果该 `acl` 属性包含在更新请求中，则将使用请求中包含的集合覆盖现有的 ACL 集合。
+如果属性包含在更新请求中，则现有 ACL 集合将被请求中包含的集合 `acl` 覆盖。
 
 ### <a name="updating-the-properties-object"></a>更新 properties 对象
 
-如果该 `properties` 属性包含在更新请求中，则现有属性包将被请求中包含的值覆盖。
+如果属性包含在更新请求中，则现有属性包将被请求 `properties` 中包含的值覆盖。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [externalItem](../resources/externalitem.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [externalItem](../resources/externalitem.md) 对象。
 
 ## <a name="examples"></a>示例
 
