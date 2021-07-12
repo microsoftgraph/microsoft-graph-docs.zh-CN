@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 9272ebca7680456bef5f05ffe6a5258a4a184a45
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: a30b4576740147ab6456d55ee5e123b12ec411cc
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118535"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366504"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -93,11 +93,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 例如，下面的请求返回当前用户的 **contact** 集合，以及 `@odata.count` 属性中 **contact** 集合内的项数。
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
-
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 `$count`查询参数支持这些资源集合和派生自[directoryObject](/graph/api/resources/directoryobject)的关系，而且仅在[高级查询](/graph/filter-directory-objects)中支持:
 - [application](/graph/api/resources/application)
@@ -111,23 +109,20 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 许多 Microsoft Graph 资源都会公开资源的已声明属性以及与其他资源的关系。 这些关系也称为引用属性或导航属性，它们可以引用单个资源或资源集合。 例如，用户的邮件文件夹、管理者和直接下属都将作为关系公开。 
 
-通常情况下，可以在单个请求中查询资源属性或其关系之一，但不能同时查询。可以使用 `$expand` 查询字符串参数以包含结果中单个关系（导航属性）引用的扩展资源或集合。
+通常情况下，可以在单个请求中查询资源属性或其关系之一，但不能同时查询。 可以使用 `$expand` 查询字符串参数以包含结果中单个关系（导航属性）引用的扩展资源或集合。 在单个请求中只能扩展一个关系。
 
 以下示例在驱动器中获取根驱动器信息以及顶级子项：
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
 使用一些资源集合，还可以添加 `$select` 参数，指定要在扩展资源中返回的属性。下面的示例执行与上一示例几乎相同的查询，不同之处在于使用 [`$select`](#select-parameter) 语句将为扩展子项返回的属性限制为 **id** 和 **name** 属性。
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
-
-[在 Graph 浏览器中试调用][expand-example]
 
 > [!NOTE]
 > 并不是所有关系和资源都支持 `$expand` 查询参数。 例如，可以展开一个用户的 **directReports**、 **manager** 和 **memberOf** 关系，但不能展开其 **events**、 **messages** 或 **photos** 关系。 并非所有资源或关系都支持在扩展项上使用 `$select`。 
@@ -140,25 +135,20 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 以下例子可用于查找显示名称以子母“J”开头的用户，请使用 `startsWith`。
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 ```
 
-[在 Graph 浏览器中试调用][filter-example]
-
 对 `$filter` 运算符的支持因 Microsoft Graph API 不同而异。 通常支持下列逻辑运算符：
 
-- 等于 `eq`/不等于 `ne`
-- 小于 `lt`/大于 `gt`
-- 小于或等于 `le`/大于或等于 `ge`
-- 和 `and`/或 `or`
-- 属于 `in`
-- 否定式 `not`
-- l匿名函数运算符 any `any`
-- l匿名函数运算符 all `all`
-- 开头为 `startsWith`
-- 以`endsWith`结尾(仅在[高级查询](/graph/aad-advanced-queries)中)
-- 包含`contains`
+| 运算符类型 | 运算符 |
+| --- | --- |
+| 相等运算符 | <ul><li> 等于 `eq` </li><li> 不等于 `ne`</li><li> 否定式 `not`</li><li> 在 `in` 内</li></ul> |
+| 关系运算符 | <ul><li> 小于 `lt` </li><li> 大于 `gt`</li><li> 小于或等于 `le`</li><li> 大于或等于 `ge`</li></ul> |
+| Lambda 运算符 | <ul><li> 任何 `any` </li><li> 全部 `all`</li></ul>|
+| 条件运算符 | <ul><li> 和 `and` </li><li> 或 `or`</li> |
+| 函数 | <ul><li> 开头为 `startsWith` </li><li> 结尾为 `endsWith`</li><li> 包含`contains`</li></ul>|
+
 
 > **注意:** 对这些运算符的支持因实体而异，某些属性仅在 [高级查询](/graph/aad-advanced-queries)中支持`$filter`。 有关详细信息，请参阅特定实体文档。
 
@@ -232,11 +222,10 @@ GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'a
 
 例如，下面的请求以 json 格式返回组织中的用户：
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
 
-[在 Graph 浏览器中试调用][format-example]
 
 > **注意：**`$format` 查询参数支持许多格式（例如，atom、xml 和 json），但可能无法返回所有格式的结果。
 
@@ -246,38 +235,33 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 例如，以下请求返回按用户显示名称进行排序的组织中的用户：
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
-[在 Graph 浏览器中试调用][orderby-example]
 
 还可以按复杂类型实体进行排序。下面的请求获取邮件，并按 **from** 属性的 **address** 字段（复杂类型为 **emailAddress**）进行排序：
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
 
 若要以升序或降序对结果进行排序，请向字段名称追加 `asc` 或 `desc`，并用空格隔开。例如，`?$orderby=name%20desc`。 如果未指定排序顺序，则推断默认值(升序)。
 
 通过一些 API，可以对多个属性的结果进行排序。例如，以下请求首先按发件人名称以降序(Z 到 A)排序用户收件箱中的邮件，然后按主题以升序(默认)排序邮件。
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
-
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 > **注意:** 如果指定 `$filter`，服务器会推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter` 获取消息，因为服务器始终会推断 `$filter` 结果的排序顺序，必须[以特定的方式指定属性](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query)。
 
 
 下面的示例展示了如何按 **subject** 和 **importance** 属性筛选查询，再按 **subject**、**importance** 和 **receivedDateTime** 属性进行降序排序。
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
 > [!NOTE] 
 > 目录对象支持组合 `$orderby` 和 `$filter` 查询参数。 请参阅[Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
@@ -292,11 +276,10 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 例如，检索登录用户的邮件时，可以指定仅返回 **from** 和 **subject** 属性：
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-[在 Graph 浏览器中试调用][select-example]
 
 > **重要说明：** 一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
 >
@@ -306,10 +289,10 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 使用 `$skip` 查询参数设置要在集合开头跳过的项数。例如，以下请求返回按照创建日期排序的用户的事件，从集合中的第 21 个事件开始：
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
-[在 Graph 浏览器中试调用][skip-example]
+
 
 > **注意：** 一些 Microsoft Graph API 使用 `$skip` 实现分页，如 Outlook 邮件和日历（**message**、**event** 和 **calendar**）。 当查询结果跨多个页面时，这些 API 会返回 `@odata:nextLink` 属性，具有包含 `$skip` 参数的 URL。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
 >
@@ -333,11 +316,10 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 例如，以下列表 [请求](/graph/api/user-list-messages) 返回用户邮箱中的前五条消息：
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-[在 Graph 浏览器中试调用][top-example]
 
 > 默认情况下，针对目录对象的高级查询所需的 **ConsistencyLevel** 标头不包含在后续页面请求中。 必须在后续页面中显式设置它。
 
@@ -368,36 +350,9 @@ https://graph.microsoft.com/beta/me?$expand=photo
 [odata-filter]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
 [count-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0
-[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups?$expand=members&method=GET&version=v1.0
-[filter-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0
-[format-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0
-[orderby-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0
-[search-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0
-[select-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0
-[skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
-[top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
-[search-att-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22attachment%3Aapi-catalog%2Emd%22&method=GET&version=v1.0
-[search-bcc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22bcc%3Asamanthab%40contoso%2Ecom%22%26$select=subject,bccRecipients&method=GET&version=v1.0
-[search-body-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22body%3Aexcitement%22&method=GET&version=v1.0
-[search-cc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22cc%3Adanas%22%26$select=subject,ccRecipients&method=GET&version=v1.0
-[search-from-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22from%3Arandiw%22%26$select=subject,from&method=GET&version=v1.0
-[search-hasatt-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22hasAttachments=true%22&method=GET&version=v1.0
-[search-imp-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22importance%3Ahigh%22%26$select=subject,importance&method=GET&version=v1.0
-[search-kind-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22kind%3Avoicemail%22&method=GET&version=v1.0
-[search-part-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22participants%3Adanas%22&method=GET&version=v1.0
-
-[search-rcvd-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22received%3A07/23/2018%22%26$select=subject,receivedDateTime&method=GET&version=v1.0
-
-[search-rcpts-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22recipients%3Arandiw%22%26$select=subject,toRecipients,ccRecipients,bccRecipients&method=GET&version=v1.0
-[search-sent-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22sent%3A07/23/2018%22%26$select=subject,sentDateTime&method=GET&version=v1.0
-[search-size-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22size%3A1%2E%2E500000%22&method=GET&version=v1.0
-
-[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.0
-[search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
-
-
+## <a name="see-also"></a>另请参阅
 
 - [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)
-- [查询参数限制](known-issues.md#query-parameter-limitations)
 - [使用$search查询参数匹配搜索条件](/graph/search-query-parameter)
+- [查询参数限制](known-issues.md#query-parameter-limitations)

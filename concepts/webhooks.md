@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 769e3f9fcb5c14731db311f049afbc7a9982c0d6
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 5f25acf793d2b8bda00e298665ae8f9766f410b4
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941450"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366882"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -45,6 +45,7 @@ Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中�
 - SharePoint [列表][]
 - Teams [callRecord][]
 - Teams [频道][]
+- Teams [聊天][]
 - Teams [chatMessage][]
 - Teams [conversationMember][]
 - Teams [状态][]（预览版）
@@ -112,7 +113,7 @@ Microsoft Graph 接受订阅请求之后，它将更改通知推送到订阅中�
 
 ## <a name="subscription-lifetime"></a>订阅生命周期
 
-订阅的生命周期有限。 应用需要在订阅到期前续订订阅。 否则，需要新建订阅。 有关最长有效期的列表，请参阅[每个资源类型的最长订阅有效期](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type)。
+订阅的生命周期有限。 应用需要在订阅到期前续订订阅。 否则，需要新建订阅。 有关最长有效期的列表，请参阅[每个资源类型的最长订阅有效期](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type)。
 
 应用还可以随时取消订阅，以停止接收更改通知。
 
@@ -151,13 +152,13 @@ Content-Type: application/json
 }
 ```
 
-`changeType`、`notificationUrl`、`resource` 和 `expirationDateTime` 属性是必需的。 如需属性定义和值，请参阅[订阅资源类型](/graph/api/resources/subscription?view=graph-rest-1.0)。
+`changeType`、`notificationUrl`、`resource` 和 `expirationDateTime` 属性是必需的。 如需属性定义和值，请参阅[订阅资源类型](/graph/api/resources/subscription)。
 
 `resource` 属性指定要被监视以进行更改的资源。 例如，可以创建特定邮件文件夹的订阅：`me/mailFolders('inbox')/messages`，或代表由管理员同意的用户：`users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`。
 
 虽然不需要 `clientState`，但必须包括它才能符合我们建议的更改通知处理过程。 通过设置此属性后，可以确认收到的更改通知来自 Microsoft Graph 服务。 因此，该属性的值应保密，并且只有你的应用程序和 Microsoft Graph 服务知道。
 
-如果成功，Microsoft Graph 将在正文中返回 `201 Created` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。
+如果成功，Microsoft Graph 将在正文中返回 `201 Created` 代码和 [subscription](/graph/api/resources/subscription) 对象。
 
 > **注意：** 传递通知时，**notificationURL** 属性中包含的任何查询字符串参数都将包含在 HTTP POST 请求中。
 
@@ -207,7 +208,7 @@ Content-Type: application/json
 }
 ```
 
-如果成功，Microsoft Graph 将在正文中返回 `200 OK` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。 subscription 对象包括新的 `expirationDateTime` 值。
+如果成功，Microsoft Graph 将在正文中返回 `200 OK` 代码和 [subscription](/graph/api/resources/subscription) 对象。 subscription 对象包括新的 `expirationDateTime` 值。
 
 ### <a name="deleting-a-subscription"></a>删除订阅
 
@@ -295,6 +296,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 |[警报][] | 少于 3 分钟 | 5 分钟 |
 |[callRecord][] | 少于 15 分钟 | 60 分钟 |
 |[频道][] | 少于 10 秒 | 60 分钟 |
+|[聊天][] | 少于 10 秒 | 60 分钟 |
 |[chatMessage][] | 少于 10 秒 | 1 分钟 |
 |[联系人][] | 未知 | 未知 |
 |[对话][] | 未知 | 未知 |
@@ -315,23 +317,23 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 ## <a name="see-also"></a>另请参阅
 
-- [订阅资源类型](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [获取订阅](/graph/api/subscription-get?view=graph-rest-1.0)
-- [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) 资源类型
-- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) 资源类型
+- [订阅资源类型](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true)
+- [获取订阅](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true)
+- [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true)
+- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) 资源类型
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) 资源类型
 - [更改通知和更改跟踪教程](/learn/modules/msgraph-changenotifications-trackchanges)
 - [生命周期通知](./webhooks-lifecycle.md)
 
-[联系人]: /graph/api/resources/contact?view=graph-rest-1.0
-[对话]: /graph/api/resources/conversation?view=graph-rest-1.0
-[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
-[事件]: /graph/api/resources/event?view=graph-rest-1.0
-[组]: /graph/api/resources/group?view=graph-rest-1.0
-[邮件]: /graph/api/resources/message?view=graph-rest-1.0
-[用户]: /graph/api/resources/user?view=graph-rest-1.0
-[警报]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[联系人]: /graph/api/resources/contact
+[对话]: /graph/api/resources/conversation
+[driveItem]: /graph/api/resources/driveitem
+[事件]: /graph/api/resources/event
+[组]: /graph/api/resources/group
+[邮件]: /graph/api/resources/message
+[用户]: /graph/api/resources/user
+[警报]: /graph/api/resources/alert
+[callRecord]: /graph/api/resources/callrecords-callrecord
 [状态]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [列表]: /graph/api/resources/list
@@ -339,5 +341,6 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
 [频道]: /graph/api/resources/channel
+[聊天]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [团队]: /graph/api/resources/team

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: ad686ca82ee430fcc1bbd9420b6aea9148472341
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 6415e6199234587ddc126fd59d017963afcbd250
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813046"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366589"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -74,17 +74,18 @@ ms.locfileid: "52813046"
 | appId | String | Azure AD 分配给应用程序的唯一标识符。不可为 Null。只读。 |
 |applicationTemplateId | String | 应用程序模板的唯一标识符。 |
 | appRoles | [appRole](approle.md) 集合 | 分配给应用程序的角色的集合。 使用[应用角色分配](approleassignment.md)，可将这些角色分配给与其他应用程序关联的用户、组或服务主体。 不可为空。 |
-| createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
+| createdDateTime | DateTimeOffset | 注册应用程序的日期和时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 <br><br> 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）和 `$orderBy`。 |
 | deletedDateTime | DateTimeOffset | 删除应用程序的日期和时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
-| disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册应用程序。 可能值是：`null` (默认值)、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement` (原因可能包括可疑、滥用或恶意活动，或违反 Microsoft 服务协议)。 |
-| displayName | String | 应用程序的显示名称。 |
+| 说明 | String | 应用程序的可选说明。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）和 `$search`。 |
+| disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册应用程序。 可能值是：`null` (默认值)、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement` (原因可能包括可疑、滥用或恶意活动，或违反 Microsoft 服务协议)。 <br><br> 支持 `$filter`（`eq`、`ne`、`NOT`）。 |
+| displayName | String | 应用程序的显示名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith`）、`$search` 和 `$orderBy`。 |
 | groupMembershipClaims | String | 配置应用程序所需的用户访问令牌或 OAuth 2.0 访问令牌中颁发的 `groups` 声明。 若要设置此属性，请使用以下字符串值之一： `None`、 `SecurityGroup` （适用于安全组和 Azure AD 角色）、 `All` （此方法获取登录用户包括的所有安全组、通讯组和 Azure AD 目录角色）。 |
-| id | String | 应用程序的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 |
-| identifierUris | String collection | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的`any` 运算符。 不可为空。 |
-| info | [informationalUrl](informationalurl.md) | 应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 |
+| id | String | 应用程序的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
+| identifierUris | String collection | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的`any` 运算符。 不可为空。 <br><br>支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。|
+| info | [informationalUrl](informationalurl.md) | 应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`）。 |
 | isDeviceOnlyAuthSupported | 布尔值 | 指定此应用程序是否支持在无用户的情况下进行设备身份验证。 默认值为 `false`。  |
 | isFallbackPublicClient | Boolean | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false`，这意味着，回退应用程序类型为机密客户端，例如 Web 应用。 某些情况下，Azure AD 无法确定客户端应用程序类型。 例如，在未指定重定向 URI 的情况下配置应用程序的 [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) 流。 在这种情况下，Azure AD 将基于此属性的值解释应用程序类型。|
-| keyCredentials | [keyCredential](keycredential.md) 集合 | 与应用程序关联的密钥凭据集合。不可为 Null。 |
+| keyCredentials | [keyCredential](keycredential.md) 集合 | 与应用程序关联的密钥凭据集合。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。|
 | logo | Stream | 应用程序的主徽标。不可为 Null。 |
 | notes | String | 与应用程序管理相关的备注。 |
 | oauth2RequiredPostResponse | Boolean | 指定在 OAuth 2.0 令牌请求过程中，Azure AD 是否允许与 GET 请求相反的 POST 请求。 默认值为 `false`，即指定只允许 GET 请求。 |
@@ -93,11 +94,11 @@ ms.locfileid: "52813046"
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |指定应用程序的家长控制设置。 |
 | passwordCredentials | [passwordCredential](passwordcredential.md) 集合|与应用程序关联的密码凭据集合。不可为 Null。|
 | publicClient | [publicClientApplication](publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
-| publisherDomain | String | 应用程序的已验证发布者域。只读。|
-| requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的 OAuth 权限范围和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 不可为空。|
-| signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值有： `AzureADMyOrg`、 `AzureADMultipleOrgs`、 `AzureADandPersonalMicrosoftAccount`、 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。|
+| publisherDomain | String | 应用程序的已验证发布者域。 只读。 支持 `$filter` （`eq`、 `ne`、 `ge`、 `le`、 `startsWith`）。|
+| requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的 OAuth 权限范围和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 不可为 null。 <br><br>支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。|
+| signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值有： `AzureADMyOrg`、 `AzureADMultipleOrgs`、 `AzureADandPersonalMicrosoftAccount`、 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`）。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
-| 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。|
+| 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。|
 | tokenEncryptionKeyId |Guid|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定已验证的应用程序发布者。|
 | 唯一名称 | String | 可指定给应用程序作为替代标识符的唯一标识符。不可变。只读。 |
@@ -121,8 +122,8 @@ ms.locfileid: "52813046"
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
 |extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为空。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) 集合|只读。可为 Null。|
-|owners|[directoryObject](directoryobject.md) collection|拥有此应用程序的 Directory 对象。只读。可为 Null。|
-|tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) 集合|为此应用分配的 tokenLifetimePolicies。|
+|owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。 只读。 可为 NULL。 支持 `$expand`。|
+|tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) 集合|为此应用分配的 tokenLifetimePolicies。 支持 `$expand`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
