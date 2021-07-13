@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c53f900db5f53d3e4cff2d0de17c808b9f80d3a2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 193e257656abbcc13ea54099cd8d09897ffdb340
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048608"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401011"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>列出 accessPackageAssignmentRequests
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索每个请求的访问包，请包括在 `$expand=accessPackage` 查询中。  若要仅检索特定访问包的请求，在查询中包括筛选器（如 `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` ）。  若要检索结果分配，请包括在 `$expand=accessPackageAssignment` 查询中。
+此方法支持 `$expand` 和 `$filter` OData 查询参数来帮助自定义响应。 例如，若要检索每个请求的访问包，请包括在 `$expand=accessPackage` 查询中。  若要仅检索特定访问包的请求，在查询中包括筛选器（如 `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` ）。  若要检索结果分配，请包括在 `$expand=accessPackageAssignment` 查询中。  若要获取有关请求程序的详细信息，请包含 `$expand=requestor` 到查询中。
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
@@ -131,5 +131,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

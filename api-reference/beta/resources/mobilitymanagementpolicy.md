@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 7f0c073d0737c634872009fffa5425ffe74f4e54
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 6c2035d96293a28f4d8289606df709fc64d9c3e7
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547403"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401538"
 ---
 # <a name="mobilitymanagementpolicy-resource-type"></a>mobilityManagementPolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "52547403"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD 中，移动管理策略表示 MDM 或 MAM (移动管理自动注册) 配置。 这些策略仅适用于基于 Windows 10 操作系统及其派生 (Surface Hub、Hololens 等) 。 [自动注册](https://docs.microsoft.com/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal)使组织能够自动将设备注册到所选移动管理应用程序中，作为[Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)加入或[Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register)注册过程的一部分，Windows 10注册。
+在 Azure AD 中，移动管理策略表示 MDM 或 MAM (移动管理自动注册) 配置。 这些策略仅适用于基于 Windows 10 操作系统及其派生 (Surface Hub、Hololens 等) 。 [自动注册](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal)使组织能够自动将设备注册到所选移动管理应用程序中，作为[Azure AD](/azure/active-directory/devices/concept-azure-ad-join)加入或[Azure AD](/azure/active-directory/devices/concept-azure-ad-register)注册过程的一部分，Windows 10注册。
 
 ## <a name="methods"></a>方法
 
@@ -47,6 +47,7 @@ ms.locfileid: "52547403"
 |discoveryUrl|String|移动管理应用程序的发现 URL。|
 |displayName|String|移动管理应用程序的显示名称。|
 |id|String|移动管理应用程序的对象 ID。|
+|isValid|布尔|策略是否有效。 无效的策略可能无法更新，应删除。|
 |termsOfUseUrl|String|移动管理应用程序的使用条款 URL。|
 
 ## <a name="relationships"></a>关系
@@ -74,6 +75,7 @@ ms.locfileid: "52547403"
   "description": "String",
   "discoveryUrl": "String",
   "displayName": "String",
+  "isValid": "Boolean",
   "termsOfUseUrl": "String"
 }
 ```

@@ -1,22 +1,23 @@
 ---
-title: 将 identityProvider 添加到 b2xIdentityUserFlow
-description: 在 b2xIdentityUserFlow 中添加 identityProvider。
+title: '将 identityProvider 添加到 b2xIdentityUserFlow (弃) '
+description: 在 b2xIdentityUserFlow 中添加 identityProvider (弃) 。
 localization_priority: Normal
 doc_type: apiPageType
-author: jkdouglas
+author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: e4cf7e701787a18a85890dff29c321f643db20dd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 60309219aa24ad4d2aee58b877a324ce1d32aa8b
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047943"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400906"
 ---
-# <a name="add-identityprovider-to-a-b2xidentityuserflow"></a>将 identityProvider 添加到 b2xIdentityUserFlow
+# <a name="add-identityprovider-to-a-b2xidentityuserflow-deprecated"></a>将 identityProvider 添加到 b2xIdentityUserFlow (弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 更新 [b2xIdentityUserFlow 对象中的标识](../resources/b2xidentityuserflow.md) 提供程序。
 
@@ -64,8 +65,6 @@ POST /identity/b2xUserFlows/{id}/identityProviders/$ref
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_b2xuserflows_identityprovider"
@@ -81,24 +80,6 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-b2xuserflows-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-b2xuserflows-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-b2xuserflows-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-identityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 
@@ -112,5 +93,3 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

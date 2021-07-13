@@ -1,22 +1,22 @@
 ---
 title: 获取最近的用户活动
-description: " API。 该服务将查询最新的 historyItems，然后拉取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动将不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还会对响应应用额外的筛选，以便仅返回由应用程序创建的活动。 如果用户特别活跃并且其他应用程序已创建更新的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。"
+description: " API。 该服务将查询最新的 historyItems，然后提取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还将对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。"
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 8a6b72fbe2041faf909dc3a2429d8891c5859261
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 429eda595702f315bed329ffe329068d7c16b8c8
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292327"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401344"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
 命名空间：microsoft.graph
 
-获取给定用户的最近活动。 此 OData 函数包含一些默认行为，使其像"最近使用的"API 一样运行。 该服务将查询最新的 [historyItems，](../resources/projectrome-historyitem.md)然后拉取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动将不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还会对响应应用额外的筛选，以便仅返回由应用程序创建的活动。 如果用户特别活跃，并且其他应用程序已创建更新的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。
+获取给定用户的最近活动。 此 OData 函数包含一些默认行为，可使其像"最近使用的"API 一样运行。 该服务将查询最新的 [historyItems](../resources/projectrome-historyitem.md)，然后拉取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还将对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。
 
 ## <a name="permissions"></a>权限
 
@@ -40,13 +40,13 @@ GET /me/activities/recent
 
 此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 支持以下查询参数：
 
-- $expand **网站导航属性** 。
+- $expand **historyItems 导航属性** 。
 - $top限制页面的最大项目数。
 - $filter活动或 **historyItems** 的 **lastModifiedDateTime** 属性（如果展开）。 
 
-以下是使用 URL 编码支持的查询的一些示例。
+下面是使用 URL 编码的受支持查询的一些示例。
 
-```
+```http
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
 
 /me/activities/recent?$filter=lastModifiedDateTime%20lt%202018-01-16T01:03:21.347Z%20and%20lastModifiedDateTime%20gt%202018-01-03T01:03:21.347Z
@@ -62,7 +62,7 @@ GET /me/activities/recent
 
 ## <a name="request-body"></a>请求正文
 
-不要指定请求正文。
+不指定请求正文。
 
 ## <a name="response"></a>响应
 
@@ -118,48 +118,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(userActivity)",
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
-    "value": [{
-        "@odata.type": "#microsoft.graph.userActivity",
-        "activitySourceHost": "https://www.contoso.com",
-        "createdDateTime": "2018-02-26T18:34:29.592Z",
-        "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
-        "id": "5347642601316252694",
-        "appActivityId": "/article?12345",
-        "visualElements": {
-            "attribution": {
-              "iconUrl": "https://www.contoso.com/icon",
-              "alternateText": "Contoso, Ltd.",
-              "addImageQuery": false,
-              },
-            "displayText": "Contoso How-To: How to Tie a Reef Knot",
-            "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-            "backgroundColor": "#ff0000",
-            "content": {
-              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-              "type": "AdaptiveCard",
-              "body":
-              [{
-                  "type": "TextBlock",
-                  "text": "Contoso MainPage"
-              }]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(userActivity)",
+   "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.userActivity",
+         "activitySourceHost":"https://www.contoso.com",
+         "createdDateTime":"2018-02-26T18:34:29.592Z",
+         "lastModifiedDateTime":"2018-02-26T18:34:29.607Z",
+         "id":"5347642601316252694",
+         "appActivityId":"/article?12345",
+         "visualElements":{
+            "attribution":{
+               "iconUrl":"https://www.contoso.com/icon",
+               "alternateText":"Contoso, Ltd.",
+               "addImageQuery":false
+            },
+            "displayText":"Contoso How-To: How to Tie a Reef Knot",
+            "description":"How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+            "backgroundColor":"#ff0000",
+            "content":{
+               "$schema":"https://adaptivecards.io/schemas/adaptive-card.json",
+               "type":"AdaptiveCard",
+               "body":[
+                  {
+                     "type":"TextBlock",
+                     "text":"Contoso MainPage"
+                  }
+               ]
             }
-        },
-        "activationUrl": "https://www.contoso.com/article?id=12345",
-        "appDisplayName": "Contoso, Ltd.",
-        "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "https://www.contoso.com/article?id=12345",
-        "contentUrl": "https://www.contoso.com/article?id=12345",
-        "contentInfo": {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "author": "John Doe",
-            "name": "How to Tie a Reef Knot"
-        },
-        "expirationDateTime": "2018-03-28T18:34:29.607Z",
-        "status": "updated"
-    }]
+         },
+         "activationUrl":"https://www.contoso.com/article?id=12345",
+         "appDisplayName":"Contoso, Ltd.",
+         "userTimezone":"Africa/Casablanca",
+         "fallbackUrl":"https://www.contoso.com/article?id=12345",
+         "contentUrl":"https://www.contoso.com/article?id=12345",
+         "contentInfo":{
+            "@context":"https://schema.org",
+            "@type":"Article",
+            "author":"John Doe",
+            "name":"How to Tie a Reef Knot"
+         },
+         "expirationDateTime":"2018-03-28T18:34:29.607Z",
+         "status":"updated"
+      }
+   ]
 }
 ```
 

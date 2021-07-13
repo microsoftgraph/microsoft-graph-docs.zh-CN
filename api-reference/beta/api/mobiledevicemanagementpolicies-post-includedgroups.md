@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 70edcaff04cba6e49f5ff992899d140b8c75c6c9
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: cce0d4d98ca36506297780f424f371ca31b3e5d0
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547325"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401426"
 ---
 # <a name="add-includedgroups"></a>添加 includedGroups
 
@@ -20,13 +20,13 @@ ms.locfileid: "52547325"
 
 添加要包含在移动应用管理策略中的组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.All|
+|委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.MobilityManagement|
 |委派（个人 Microsoft 帐户） | 不支持。|
 |应用程序 | 不支持。|
 

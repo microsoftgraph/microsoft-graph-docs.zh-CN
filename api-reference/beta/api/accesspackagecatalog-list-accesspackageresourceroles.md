@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 29e83c3254cfa4931f3faeb869d6312335565019
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2facea352db9eb04265aaf6b86e77b89249631c3
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048566"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400997"
 ---
 # <a name="list-accesspackageresourceroles"></a>列出 accessPackageResourceRoles
 
@@ -18,7 +18,7 @@ ms.locfileid: "52048566"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索[accessPackageResource 的 accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象列表。 [](../resources/accesspackageresource.md)  然后，调用方可以使用此角色列表来选择角色，随后创建 [accessPackageResourceRoleScope 时需要此角色](accesspackage-post-accesspackageresourcerolescopes.md)。
+在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索[accessPackageResource 的 accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象列表。 [](../resources/accesspackageresource.md) 资源应该已经通过创建 [accessPackageResourceRequest](accesspackageresourcerequest-post.md)添加到目录中。 然后，调用方可以使用此角色列表来选择角色，随后创建 [accessPackageResourceRoleScope 时需要此角色](accesspackage-post-accesspackageresourcerolescopes.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -58,7 +58,9 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-retrieving-the-roles-of-a-resource-for-a-group"></a>示例 1：检索组的资源的角色
+
+#### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -90,7 +92,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -120,6 +122,63 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-retrieve-the-roles-of-a-resource-for-a-sharepoint-online-site"></a>示例 2：检索 SharePoint Online 网站的资源角色
+
+这是检索资源的角色以获取每个角色的 **originId** 的示例。  在将 SharePoint Online 网站作为资源添加到目录后，这将使用，因为需要角色的 **originId** 才能将角色添加到访问包。
+
+#### <a name="request"></a>请求
+
+下面是一个请求示例，用于检索特定资源 **53c71803-a0a8-4777-aecc-075de8ee3991** 的角色，该资源具有 **SharePointOnline** 的 **originSystem，** 位于目录 **beedadfe-01d5-4025-910b-84abb9369997 中**。
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_accesspackageresourceroles2"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/beedadfe-01d5-4025-910b-84abb9369997/accessPackageResourceRoles?$filter=(originSystem+eq+%27SharePointOnline%27+and+accessPackageResource/id+eq+%2753c71803-a0a8-4777-aecc-075de8ee3991%27)&$select=displayName,originId
+```
+
+
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。  **displayName** 与网站的 SharePoint Online 视图中显示的相同 **，originId** 是由 SharePoint Online 为角色建立的基础标识符。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRole",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+        "displayName": "Contributors",
+        "originId": "4"
+    },
+    {
+        "displayName": "Creators",
+        "originId": "3"
+    },
+    {
+        "displayName": "Viewers",
+        "originId": "5"
+    }
+  ]
+}
+```
+
+
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -129,5 +188,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

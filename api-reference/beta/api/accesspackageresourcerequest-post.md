@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e0d85470f8217887364d8c37e760945205edec51
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f4cec8ead5d678e937b2648089593950fb104ff5
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048524"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401004"
 ---
 # <a name="create-accesspackageresourcerequest"></a>创建 accessPackageResourceRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "52048524"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象，以请求向访问包目录添加资源，或者从目录中删除资源。
+创建新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象，以请求向访问包目录添加资源，或者从目录中删除资源。  必须先将资源包含在访问包目录中，然后才能将资源的角色添加到访问包中。
 
 ## <a name="permissions"></a>权限
 
@@ -64,7 +64,7 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-accesspackageresourcerequest"></a>示例 1：创建 accessPackageResourceRequest
+### <a name="example-1-create-an-accesspackageresourcerequest-for-adding-a-site-as-a-resource"></a>示例 1：创建 accessPackageResourceRequest 以将网站添加为资源
 
 #### <a name="request"></a>请求
 
@@ -140,7 +140,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-accesspackageresourcerequest-for-a-resource-and-assign-an-accesspackageresourceenvironment-using-odatabind"></a>示例 2：为资源创建 accessPackageResourceRequest，然后使用 @odata.bind 分配 accessPackageResourceEnvironment
+### <a name="example-2-create-an-accesspackageresourcerequest-for-adding-a-site-as-a-resource-and-assign-an-accesspackageresourceenvironment-using-odatabind"></a>示例 2：创建 accessPackageResourceRequest 以将网站添加为资源，然后使用 @odata.bind 分配 accessPackageResourceEnvironment
 
 #### <a name="request"></a>请求
 
@@ -218,7 +218,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-an-accesspackageresourcerequest-for-a-resource-and-assign-an-accesspackageresourceenvironment-using-originid"></a>示例 3：为资源创建 accessPackageResourceRequest，然后使用 originId 分配 accessPackageResourceEnvironment
+### <a name="example-3-create-an-accesspackageresourcerequest-for-adding-a-site-as-a-resource-and-assign-an-accesspackageresourceenvironment-using-originid"></a>示例 3：创建 accessPackageResourceRequest 以将网站添加为资源，然后使用 originId 分配 accessPackageResourceEnvironment
 
 #### <a name="request"></a>请求
 
@@ -298,6 +298,106 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-4-create-an-accesspackageresourcerequest-for-adding-a-group-as-a-resource"></a>示例 4：创建 accessPackageResourceRequest 以将组添加为资源
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests4"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+
+  "catalogId":"beedadfe-01d5-4025-910b-84abb9369997",
+  "requestType": "AdminAdd",
+  "accessPackageResource": {
+     "originId": "c6294667-7348-4f5a-be73-9d2c65f574f3",
+     "originSystem": "AadGroup"
+  }
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "catalogId": "beedadfe-01d5-4025-910b-84abb9369997",
+  "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
+  "requestType": "AdminAdd",
+  "requestState": "Delivered",
+  "requestStatus": "Fulfilled"
+}
+```
+
+### <a name="example-5-create-an-accesspackageresourcerequest-for-removing-a-resource"></a>示例 5：创建用于删除资源的 accessPackageResourceRequest
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests5"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+  "catalogId": "beedadfe-01d5-4025-910b-84abb9369997",
+  "requestType": "AdminRemove",
+  "accessPackageResource": {
+    "id": "354078e5-dbce-4894-8af4-0ab274d41662"
+  }
+}
+
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "catalogId": "beedadfe-01d5-4025-910b-84abb9369997",
+  "id": "65c3340d-defb-49a9-8930-63841fda0e68",
+  "requestType": "AdminRemove",
+  "requestState": "Delivered",
+  "requestStatus": "Fulfilled"
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

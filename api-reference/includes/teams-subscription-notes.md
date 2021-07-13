@@ -2,12 +2,12 @@
 author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
-ms.openlocfilehash: f2def5f5a22267146d5b3005cd2f9be82e1d0db9
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f3854b06c7d4dc584a922f9c454947785b74947f
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50243135"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53005775"
 ---
 <!-- markdownlint-disable MD041-->
 
@@ -19,7 +19,4 @@ ms.locfileid: "50243135"
 
 > **注意：** 
 >
->`/teams/getAllMessages` 和 `/chats/getAllMessages` 可供拥有 [所需许可证](https://aka.ms/teams-changenotification-licenses) 的用户使用。
-将来，Microsoft 可能需要你或你的客户根据通过 API 访问的数据量支付额外费用。
->
->`/chats/getAllMessages` 仅返回租户拥有的聊天中的消息。 如果聊天线程是由租户外部用户发起，则该聊天线程不属于租户，并且不会创建更改通知。
+>`/teams/getAllMessages` 和 `/chats/getAllMessages` 可供具有所需 [许可证](https://aka.ms/teams-changenotification-licenses) 的用户使用。将来，Microsoft 可能会要求你或你的客户根据通过 API 访问的数据量支付额外费用。

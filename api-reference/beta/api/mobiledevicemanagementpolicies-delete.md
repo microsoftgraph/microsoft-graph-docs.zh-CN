@@ -1,0 +1,85 @@
+---
+title: 删除 mobileDeviceManagementPolicy
+description: 删除移动设备管理策略。
+author: michaelrm97
+localization_priority: Normal
+ms.prod: directory-management
+doc_type: apiPageType
+ms.openlocfilehash: 800cec45f578e97286982303a0e81d5b16895098
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401679"
+---
+# <a name="delete-mobiledevicemanagementpolicy"></a>删除 mobileDeviceManagementPolicy
+
+命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+删除 [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) 对象。
+
+> [!NOTE]
+> 只有在策略不再有效时，才支持此操作;即 **isValid** 属性为 false 时，指示与此策略的应用程序关联的服务主体已删除。
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型|权限（从最低特权到最高特权）|
+|:---|:---|
+|委派（工作或学校帐户）|Policy.ReadWrite.MobilityManagement|
+|委派（个人 Microsoft 帐户） | 不支持。|
+|应用程序 | 不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+DELETE /policies/mobileDeviceManagementPolicies/{id}
+```
+
+## <a name="request-headers"></a>请求标头
+
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_mobilitymanagementpolicy"
+}
+-->
+
+``` http
+DELETE https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020
+```
+
+### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```

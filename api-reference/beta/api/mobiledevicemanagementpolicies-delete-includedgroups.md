@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4cbbc8255d5a404cd339036aed25c13255f819ca
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 5fb051f94ec95d5fea05b19a9273a3ec6cf0d349
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210414"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401605"
 ---
 # <a name="delete-includedgroup"></a>删除 includedGroup
 
@@ -26,7 +26,7 @@ ms.locfileid: "53210414"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Policy.ReadWrite.All|
+|委派（工作或学校帐户）|Policy.ReadWrite.MobilityManagement|
 |委派（个人 Microsoft 帐户） | 不支持。|
 |应用程序 | 不支持。|
 

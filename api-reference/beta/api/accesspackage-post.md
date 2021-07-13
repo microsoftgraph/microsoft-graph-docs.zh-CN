@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e6f6a80316bbdf12792bb47078be7f4e3ca9b48c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ccbe9c22f04087431ba0b4ae4df53eca1ff76a04
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048643"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400955"
 ---
 # <a name="create-accesspackage"></a>创建 accessPackage
 
@@ -19,6 +19,9 @@ ms.locfileid: "52048643"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的 [accessPackage](../resources/accesspackage.md) 对象。
+
+访问包将添加到现有的 [accessPackageCatalog](../resources/accesspackagecatalog.md)。 创建访问包后，可以创建 [accessPackageAssignmentPolicies，](../resources/accesspackageassignmentpolicy.md) 以指定如何向访问包分配用户。
+
 
 ## <a name="permissions"></a>权限
 
@@ -43,7 +46,7 @@ POST /identityGovernance/entitlementManagement/accessPackages
 | 名称          | 说明   |
 |:--------------|:--------------|
 | Authorization | 持有者 \{token\}。必需。 |
-| Content-Type  | application/json  |
+| Content-type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 

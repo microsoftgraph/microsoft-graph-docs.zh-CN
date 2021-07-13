@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: bdc9d440b31a650f69d16a0eab0db46f5265dfb5
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 3b3c2b47dd09c12a07d3adeec74b93a985701e34
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366753"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400871"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>cloudPcOnPremisesConnectionHealthCheck 资源类型
 
@@ -71,6 +71,7 @@ ms.locfileid: "53366753"
 |permissionCheckNoSubscriptionReaderRole|云电脑服务主体对 Azure 订阅的权限不足。 请确保云电脑服务主体对订阅具有 *读者* 权限。|
 |permissionCheckNoResourceGroupOwnerRole|云电脑服务主体对 Azure 资源组的权限不足。 请确保云电脑服务主体对资源组具有所有者权限。 |
 |permissionCheckNoVNetContributorRole|云电脑服务主体在 Azure vNet 上没有足够的权限。 请确保云电脑服务在 vNet 上具有网络参与者权限。|
+|permissionCheckNoResourceGroupNetworkContributorRole|云电脑服务主体对 Azure 资源组的权限不足。 请确保应用程序对资源组具有网络参与者权限。|
 |permissionCheckUnknownError|云电脑服务主体没有足够的权限。 请确保向云电脑服务主体授予了足够的 Azure 权限。|
 |internalServerErrorDeploymentCanceled|部署已取消。 请稍后重试。 如果问题仍然存在，请联系支持人员。|
 |internalServerErrorAllocateResourceFailed|资源分配失败。 请稍后重试。 如果问题仍然存在，请联系支持人员。|

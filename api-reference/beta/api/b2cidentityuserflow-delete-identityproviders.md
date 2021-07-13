@@ -1,22 +1,23 @@
 ---
-title: 从 b2cIdentityUserFlow 中删除 identityProvider
-description: 从 b2cIdentityUserFlow 中删除 identityProvider。
+title: '从 b2cIdentityUserFlow 中删除 identityProvider (弃) '
+description: '从 b2cIdentityUserFlow 中删除 identityProvider。  (已弃) '
 localization_priority: Normal
 doc_type: apiPageType
-author: jkdouglas
+author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 290a2e7597f0211bf4aefbda70273efb5003aa69
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a6d825cd474a38176256e0e18dd6b77d1345a64b
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944870"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400990"
 ---
-# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow"></a>从 b2cIdentityUserFlow 中删除 identityProvider
+# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow-deprecated"></a>从 b2cIdentityUserFlow 中删除已弃 (identityProvider) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 从 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象中删除标识提供程序。 有关可用于用户流的标识提供程序详细信息，请参阅 [identityProviders](../resources/identityprovider.md) API 参考。
 
@@ -33,7 +34,7 @@ ms.locfileid: "50944870"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -63,8 +64,6 @@ DELETE /identity/b2cUserFlows/{id}/identityProviders/{id}/$ref
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_b2xUserFlows_identityProviders_1"
@@ -74,24 +73,6 @@ DELETE /identity/b2cUserFlows/{id}/identityProviders/{id}/$ref
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/identityProviders/Facebook-OAUTH/$ref
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-identityproviders-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-identityproviders-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-b2xuserflows-identityproviders-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-b2xuserflows-identityproviders-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 
@@ -105,5 +86,3 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSign
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

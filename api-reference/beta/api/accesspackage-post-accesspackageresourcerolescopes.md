@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ffaedc45cc512b554fda3ce4dd06794fba716b16
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 484ceb349acd3c431e02c08fa82e7bfce1bec41a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439805"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400969"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>创建 accessPackageResourceRoleScope
 
@@ -18,9 +18,9 @@ ms.locfileid: "50439805"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [accessPackageResourceRoleScope，](../resources/accesspackageresourcerolescope.md) 用于向访问包添加资源角色。  访问包资源必须已存在于访问包目录中。  对此访问包的任何后续访问包分配请求都将包含此资源角色。  
+创建新的 [accessPackageResourceRoleScope，](../resources/accesspackageresourcerolescope.md) 以将资源角色添加到访问包。 访问包资源（对于组、应用或 SharePoint Online 网站）必须已存在于访问包目录中，并且资源角色的 **originId** 从资源角色列表中 [检索](accesspackagecatalog-list-accesspackageresourceroles.md)。 将资源角色作用域添加到访问包后，用户通过任何当前和将来的访问包分配接收此资源角色。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439805"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,17 +47,19 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象的 JSON 表示形式。  在对象中包括 [与 accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [accessPackageResourceScope 的关系](../resources/accesspackageresourcescope.md)。  
+在请求正文中，提供 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象的 JSON 表示形式。  在 对象中包括与 [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [accessPackageResourceScope 的关系](../resources/accesspackageresourcescope.md)。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象。
+如果成功，此方法在响应正文中返回 200 系列响应代码和新 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-add-group-membership-as-a-resource-role-to-an-access-package"></a>示例 1：将组成员身份作为资源角色添加到访问包
 
-下面展示了示例请求。
+#### <a name="request"></a>请求
+
+下面展示了示例请求。  组的访问包资源必须已添加到包含此访问包的访问包目录中。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -100,7 +102,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -126,6 +128,58 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-add-a-sharepoint-online-site-role-to-an-access-package"></a>示例 2：将 SharePoint Online 网站角色添加到访问包
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。  网站的访问包资源必须已添加到包含此访问包的访问包目录中。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackage2"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+    "accessPackageResourceRole": {
+        "originId": "4",
+        "originSystem": "SharePointOnline",
+        "accessPackageResource": {
+            "id": "53c71803-a0a8-4777-aecc-075de8ee3991"
+        }
+    },
+    "accessPackageResourceScope": {
+        "id": "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
+        "originId": "https://microsoft.sharepoint.com/portals/Community",
+        "originSystem": "SharePointOnline"
+    }
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+   "id": "6646a29e-da03-49f6-bcd9-dec124492de3_5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33"
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -135,5 +189,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

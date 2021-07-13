@@ -1,22 +1,23 @@
 ---
-title: 列出 b2xIdentityUserFlow 中所有 identityProviders
-description: 列出 b2xIdentityUserFlow 中所有 identityProviders。
+title: '列出 b2xIdentityUserFlow 中所有已弃 (identityProviders) '
+description: 列出 b2xIdentityUserFlow 中所有已弃 (identityProviders) 。
 localization_priority: Normal
 doc_type: apiPageType
-author: jkdouglas
+author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 283a294bcaf54eb1f41064c4cb5aa60e3e6f8b72
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 28265310a7dd0ff111babb89f218797ba194e03f
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625740"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400920"
 ---
-# <a name="list-all-identityproviders-in-a-b2xidentityuserflow"></a>列出 b2xIdentityUserFlow 中所有 identityProviders
+# <a name="list-all-identityproviders-in-a-b2xidentityuserflow-deprecated"></a>列出 b2xIdentityUserFlow 中所有已弃 (identityProviders) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 获取 [b2xIdentityUserFlow 对象中的标识](../resources/b2xidentityuserflow.md) 提供程序。
 
@@ -28,12 +29,12 @@ ms.locfileid: "50625740"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application| IdentityUserFlow.ReadWrite.All|
+|应用程序| IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,7 +56,7 @@ GET /identity/b2xUserFlows/{id}/identityProviders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [identityProviders](../resources/identityprovider.md) 的响应代码和 JSON 表示形式。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [identityProviders](../resources/identityprovider.md) 的 JSON 表示形式。
 
 ## <a name="example"></a>示例
 
@@ -63,8 +64,6 @@ GET /identity/b2xUserFlows/{id}/identityProviders
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_b2xUserFlow_list_identityProviders"
@@ -74,24 +73,6 @@ GET /identity/b2xUserFlows/{id}/identityProviders
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-b2xuserflow-list-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-b2xuserflow-list-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-b2xuserflow-list-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-b2xuserflow-list-identityproviders-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 
@@ -126,5 +107,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

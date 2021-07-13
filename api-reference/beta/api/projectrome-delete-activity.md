@@ -1,16 +1,16 @@
 ---
 title: 删除活动
-description: 删除应用程序的现有用户活动。
+description: 删除应用的现有用户活动。
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: e6a8b4d70c6066b46be28af98b2ee94a943ab766
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d30fda3d79a7afe6f370a735f6ed6e331fba714b
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968955"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401517"
 ---
 # <a name="delete-an-activity"></a>删除活动
 
@@ -18,7 +18,7 @@ ms.locfileid: "48968955"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除应用程序的现有用户活动。
+删除应用的现有用户活动。
 
 ## <a name="permissions"></a>权限
 
@@ -51,13 +51,13 @@ DELETE /me/activities/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应代码（如果活动已删除）。
+如果成功，如果 `204 No Content` 活动被删除，此方法将返回 响应代码。
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-下面是一个请求示例。
+下面展示了示例请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,9 +88,9 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",

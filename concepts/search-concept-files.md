@@ -1,15 +1,15 @@
 ---
-title: 使用 Microsoft 搜索 API 在 Microsoft Graph搜索文件
+title: 使用 Microsoft Microsoft 搜索中的 Graph API 搜索文件
 description: 可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 SharePoint。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: dc9d27255ca5306abf85462ca8e5715fe2345dac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 93dca7b4c431140646ee22ae6772448e0554e35a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048650"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401335"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 搜索 OneDrive 和 SharePoint
 
@@ -363,7 +363,7 @@ Content-type: application/json
 
 可以在响应中指定希望返回的字段，作为 [响应中 searchHit](/graph/api/resources/searchhit)对象的 **fields** 子属性的一部分。 这是一种通过线路减少响应或请求一些不是开箱即用架构一部分的特定属性的方法。
 
-请注意，属性选择仅适用于 **listItem，** 因为这是 Microsoft SharePoint中唯一Graph自定义属性的实体。
+请注意，SharePoint中自定义属性的属性选择仅适用于 **listItem，** 因为这是 Microsoft SharePoint 中唯一Graph支持自定义属性的 Graph 实体。
 
 若要检索 **driveItem** 的自定义属性，请改为查询 **listItem。**
 

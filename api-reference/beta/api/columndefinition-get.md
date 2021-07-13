@@ -5,12 +5,12 @@ description: " 获取网站、列表或内容类型列。"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 3a2e1421c92b1634ea57cbedb74c2e3244d85924
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f2e9bbca28dd0096401a2c59b92d5a26e35ee75e
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952231"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401391"
 ---
 # <a name="get-columndefinition"></a>获取 columnDefinition
 命名空间：microsoft.graph
@@ -101,7 +101,7 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
   
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 
   
 
@@ -137,7 +137,7 @@ Content-type: application/json
 
 [list]: ../resources/list.md
 
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
 [contentType]: ../resources/contentType.md
   
