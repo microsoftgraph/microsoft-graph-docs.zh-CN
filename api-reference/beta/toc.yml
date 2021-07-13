@@ -952,7 +952,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 增量
+              - name: delta
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -1848,7 +1848,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -10602,6 +10602,8 @@ items:
                     href: api/mobiledevicemanagementpolicies-get.md
                   - name: 更新
                     href: api/mobiledevicemanagementpolicies-update.md
+                  - name: 删除
+                    href: api/mobiledevicemanagementpolicies-delete.md
                   - name: 列出包含的组
                     href: api/mobiledevicemanagementpolicies-list-includedgroups.md
                   - name: 添加包含的组
@@ -10614,6 +10616,8 @@ items:
                     href: api/mobileappmanagementpolicies-get.md
                   - name: 更新
                     href: api/mobileappmanagementpolicies-update.md
+                  - name: 删除
+                    href: api/mobileappmanagementpolicies-delete.md
                   - name: 列出包含的组
                     href: api/mobileappmanagementpolicies-list-includedgroups.md
                   - name: 添加包含的组
@@ -11374,10 +11378,16 @@ items:
                       - name: 删除
                         href: api/b2cidentityuserflow-delete.md
                       - name: 列出标识提供程序
-                        href: api/b2cidentityuserflow-list-identityproviders.md
+                        href: api/b2cidentityuserflow-list-userflowidentityproviders.md
                       - name: 添加标识提供者
-                        href: api/b2cidentityuserflow-post-identityproviders.md
+                        href: api/b2cidentityuserflow-userflowidentityproviders-update.md
                       - name: 删除标识提供者
+                        href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
+                      - name: '列出已 (标识提供程序) '
+                        href: api/b2cidentityuserflow-list-identityproviders.md
+                      - name: '添加已 (标识提供程序) '
+                        href: api/b2cidentityuserflow-post-identityproviders.md
+                      - name: '删除已 (标识提供程序) '
                         href: api/b2cidentityuserflow-delete-identityproviders.md
                       - name: 列表用户属性作业
                         href: api/b2cidentityuserflow-list-userattributeassignments.md
@@ -11404,10 +11414,16 @@ items:
                       - name: 删除
                         href: api/b2xidentityuserflow-delete.md
                       - name: 列出标识提供程序
-                        href: api/b2xidentityuserflow-list-identityproviders.md
+                        href: api/b2xidentityuserflow-list-userflowidentityproviders.md
                       - name: 添加标识提供者
+                        href: api/b2xidentityuserflow-userflowidentityproviders-update.md
+                      - name: 删除标识提供程序
+                        href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
+                      - name: '列出已 (标识提供程序) '
+                        href: api/b2xidentityuserflow-list-identityproviders.md
+                      - name: '添加已 (标识提供程序) '
                         href: api/b2xidentityuserflow-post-identityproviders.md
-                      - name: 删除标识提供者
+                      - name: '删除已 (标识提供程序) '
                         href: api/b2xidentityuserflow-delete-identityproviders.md
                       - name: 列表用户属性作业
                         href: api/b2xidentityuserflow-list-userattributeassignments.md
@@ -11479,7 +11495,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -11665,6 +11681,20 @@ items:
                         href: api/accesspackage-delete.md
                       - name: 按当前用户筛选
                         href: api/accesspackage-filterbycurrentuser.md
+                      - name: 列出不兼容的访问包
+                        href: api/accesspackage-list-incompatibleaccesspackages.md
+                      - name: 添加不兼容的访问包
+                        href: api/accesspackage-post-incompatibleaccesspackage.md
+                      - name: 删除不兼容的访问包
+                        href: api/accesspackage-delete-incompatibleaccesspackage.md
+                      - name: 列出不兼容的组
+                        href: api/accesspackage-list-incompatiblegroups.md
+                      - name: 添加不兼容的组
+                        href: api/accesspackage-post-incompatiblegroup.md
+                      - name: 删除不兼容的组
+                        href: api/accesspackage-delete-incompatiblegroup.md
+                      - name: 列出与
+                        href: api/accesspackage-list-accesspackagesincompatiblewith.md
                   - name: 访问包分配
                     href: resources/accesspackageassignment.md
                     items:
