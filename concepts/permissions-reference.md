@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3f16aa9536fa780022cd596e849539488a7ff92d
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 2ffa8a0d1bc6359ec5a7424674a297e8763c989d
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350675"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401489"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1723,10 +1723,11 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 ## <a name="search-permissions"></a>搜索权限
 
 #### <a name="application-permissions"></a>应用程序权限
-
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ExternalItem.ReadWrite.All_ | 读取和写入外部数据 | 允许应用使用 Microsoft Graph 连接器索引 API 进行外部写入。 | 是 | 否 |
+| _ExternalConnection.ReadWrite.OwnedBy_ | 读取和写入外部连接和连接设置 | 允许应用在没有已登录用户的情况下读取和写入外部连接及其设置。 应用只能读取和写入其授权的外部连接，也可以创建新的外部连接。 | 是 | 否 |
+| _ExternalItem.ReadWrite.OwnedBy_ | 读取和写入外部项目 | 允许应用在没有已登录用户的情况下读取和写入外部项目。 应用只能读取获得授权的连接的外部项目。 | 是 | 否 |
+| _ExternalItem.ReadWrite.All_ | 读取和写入所有外部项目 | 允许应用在没有已登录用户的情况下读取和写入所有外部项目。 | 是 | 否 |
 
 #### <a name="delegated-permissions"></a>委派权限
 
