@@ -1497,7 +1497,7 @@ items:
                     href: api/ediscovery-case-close.md
                   - name: 重新打开
                     href: api/ediscovery-case-reopen.md
-                  - name: 删除
+                  - name: Delete
                     href: api/ediscovery-case-delete.md
               - name: Custodian
                 href: resources/ediscovery-custodian.md
@@ -1728,7 +1728,7 @@ items:
               - name: 删除
                 href: api/bookingstaffmember-delete.md
       - name: 设备和应用
-        expanded: false
+        expanded: true
         items:
           - name: 云打印
             items:
@@ -9255,7 +9255,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: 列表
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 删除
+                      - name: Delete
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理脚本
                     href: resources/intune-shared-devicemanagementscript.md
@@ -9763,6 +9763,177 @@ items:
                         href: api/windowsupdates-updatableassetgroup-removemembers.md
                       - name: 按 ID 删除成员
                         href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
+          - name: '多租户管理 (预览) '
+            items:
+              - name: 托管租户
+                href: resources/managedtenants-managedtenant.md
+              - name: 聚合策略合规性
+                href: resources/managedtenants-aggregatedpolicycompliance.md
+                items:
+                  - name: 列出聚合的策略合规性
+                    href: api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md
+              - name: 云电脑连接
+                href: resources/managedtenants-cloudpcconnection.md
+                items:
+                  - name: 列出云电脑连接
+                    href: api/managedtenants-managedtenant-list-cloudpcconnections.md
+                  - name: 获取云电脑连接
+                    href: api/managedtenants-cloudpcconnection-get.md
+              - name: 云电脑设备
+                href: resources/managedtenants-cloudpcdevice.md
+                items:
+                  - name: 列出云电脑设备
+                    href: api/managedtenants-managedtenant-list-cloudpcdevices.md
+                  - name: 获取云电脑设备
+                    href: api/managedtenants-cloudpcdevice-get.md
+              - name: 云电脑概述
+                href: resources/managedtenants-cloudpcoverview.md
+                items:
+                  - name: 列出云电脑概述
+                    href: api/managedtenants-managedtenant-list-cloudpcsoverview.md
+                  - name: 获取云电脑概述
+                    href: api/managedtenants-cloudpcoverview-get.md
+              - name: 条件访问策略覆盖范围
+                href: resources/managedtenants-conditionalaccesspolicycoverage.md
+                items:
+                  - name: 列出条件访问范围
+                    href: api/managedtenants-managedtenant-list-conditionalaccesspolicycoverages.md
+                  - name: 获取条件访问策略覆盖范围
+                    href: api/managedtenants-conditionalaccesspolicycoverage-get.md
+              - name: 凭据用户注册摘要
+                href: resources/managedtenants-credentialuserregistrationssummary.md
+                items:
+                  - name: 列出凭据用户注册摘要
+                    href: api/managedtenants-managedtenant-list-credentialuserregistrationssummaries.md
+                  - name: 获取凭据用户注册摘要
+                    href: api/managedtenants-credentialuserregistrationssummary-get.md
+              - name: 设备符合性策略设置状态摘要
+                href: resources/managedtenants-devicecompliancepolicysettingstatesummary.md
+                items:
+                  - name: 列出设备合规性策略设置状态摘要
+                    href: api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md
+                  - name: 获取设备符合性策略设置状态摘要
+                    href: api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
+              - name: 托管设备合规性
+                href: resources/managedtenants-manageddevicecompliance.md
+                items:
+                  - name: 列出托管设备合规性
+                    href: api/managedtenants-managedtenant-list-manageddevicecompliances.md
+                  - name: 获取托管设备合规性
+                    href: api/managedtenants-manageddevicecompliance-get.md
+              - name: 托管设备合规性趋势
+                href: resources/managedtenants-manageddevicecompliancetrend.md
+                items:
+                  - name: 列出托管设备合规性趋势
+                    href: api/managedtenants-managedtenant-list-manageddevicecompliancetrends.md
+                  - name: 获取托管设备合规性趋势
+                    href: api/managedtenants-manageddevicecompliancetrend-get.md
+              - name: 管理操作
+                href: resources/managedtenants-managementaction.md
+                items:
+                  - name: 列表管理操作
+                    href: api/managedtenants-managedtenant-list-managementactions.md
+                  - name: 获取管理操作
+                    href: api/managedtenants-managementaction-get.md
+                  - name: 应用管理操作
+                    href: api/managedtenants-managementaction-apply.md
+              - name: 管理操作租户部署状态
+                href: resources/managedtenants-managementactiontenantdeploymentstatus.md
+                items:
+                  - name: 列出管理操作部署状态
+                    href: api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses.md
+                  - name: 获取管理操作部署状态
+                    href: api/managedtenants-managementactiontenantdeploymentstatus-get.md
+                  - name: 更改管理操作部署状态
+                    href: api/managedtenants-managementactiontenantdeploymentstatus-changedeploymentstatus.md
+              - name: 管理意图
+                href: resources/managedtenants-managementintent.md
+                items:
+                  - name: 列出管理意图
+                    href: api/managedtenants-managedtenant-list-managementintents.md
+                  - name: 获取管理意图
+                    href: api/managedtenants-managementintent-get.md
+              - name: 管理模板
+                href: resources/managedtenants-managementtemplate.md
+                items:
+                  - name: 列出管理模板
+                    href: api/managedtenants-managedtenant-list-managementtemplates.md
+                  - name: 获取管理模板
+                    href: api/managedtenants-managementtemplate-get.md
+              - name: 有风险的用户
+                href: resources/managedtenants-riskyuser.md
+                items:
+                  - name: 列出有风险的用户
+                    href: api/managedtenants-managedtenant-list-riskyusers.md
+                  - name: 获取有风险的用户
+                    href: api/managedtenants-riskyuser-get.md
+              - name: 租户自定义信息
+                href: resources/managedtenants-tenantcustomizedinformation.md
+                items:
+                  - name: 列出租户自定义信息
+                    href: api/managedtenants-managedtenant-list-tenantscustomizedinformation.md
+                  - name: 获取租户自定义信息
+                    href: api/managedtenants-tenantcustomizedinformation-get.md
+                  - name: 更新租户自定义信息
+                    href: api/managedtenants-tenantcustomizedinformation-update.md
+              - name: 租户详细信息
+                href: resources/managedtenants-tenantdetailedinformation.md
+                items:
+                  - name: 列出租户详细信息
+                    href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
+                  - name: 获取租户详细信息
+                    href: api/managedtenants-tenantdetailedinformation-get.md
+              - name: 租户
+                href: resources/managedtenants-tenant.md
+                items:
+                  - name: 列出租户
+                    href: api/managedtenants-managedtenant-list-tenants.md
+                  - name: 获取租户
+                    href: api/managedtenants-tenant-get.md
+                  - name: 载出租户
+                    href: api/managedtenants-tenant-offboardtenant.md
+                  - name: 重置租户载入状态
+                    href: api/managedtenants-tenant-resettenantonboardingstatus.md
+              - name: 租户组
+                href: resources/managedtenants-tenantgroup.md
+                items:
+                  - name: 列出租户组
+                    href: api/managedtenants-managedtenant-list-tenantgroups.md
+                  - name: 获取租户组
+                    href: api/managedtenants-tenantgroup-get.md
+                  - name: 搜索租户
+                    href: api/managedtenants-tenantgroup-tenantsearch.md
+              - name: 租户标记
+                href: resources/managedtenants-tenanttag.md
+                items:
+                  - name: 列出租户标记
+                    href: api/managedtenants-managedtenant-list-tenanttags.md
+                  - name: 创建租户标记
+                    href: api/managedtenants-managedtenant-post-tenanttags.md
+                  - name: 获取租户标记
+                    href: api/managedtenants-tenanttag-get.md
+                  - name: 更新租户标记
+                    href: api/managedtenants-tenanttag-update.md
+                  - name: 删除租户标记
+                    href: api/managedtenants-tenanttag-delete.md
+                  - name: 分配租户标记
+                    href: api/managedtenants-tenanttag-assigntag.md
+                  - name: 未分配租户标记
+                    href: api/managedtenants-tenanttag-unassigntag.md
+              - name: Windows 设备恶意软件状态
+                href: resources/managedtenants-windowsdevicemalwarestate.md
+                items:
+                  - name: 列出Windows恶意软件状态
+                    href: api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
+                  - name: 获取Windows恶意软件状态
+                    href: api/managedtenants-windowsdevicemalwarestate-get.md
+              - name: Windows 保护状态
+                href: resources/managedtenants-windowsprotectionstate.md
+                items:
+                  - name: 列出Windows保护状态
+                    href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
+                  - name: 获取Windows保护状态
+                    href: api/managedtenants-windowsprotectionstate-get.md
       - name: 教育
         items:
           - name: 概述
@@ -11383,9 +11554,9 @@ items:
                         href: api/b2cidentityuserflow-userflowidentityproviders-update.md
                       - name: 删除标识提供者
                         href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
-                      - name: '列出已 (标识提供程序) '
+                      - name: 列出标识提供者（已弃用）
                         href: api/b2cidentityuserflow-list-identityproviders.md
-                      - name: '添加已 (标识提供程序) '
+                      - name: 添加标识提供者（已弃用）
                         href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: '删除已 (标识提供程序) '
                         href: api/b2cidentityuserflow-delete-identityproviders.md
@@ -11419,11 +11590,11 @@ items:
                         href: api/b2xidentityuserflow-userflowidentityproviders-update.md
                       - name: 删除标识提供程序
                         href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
-                      - name: '列出已 (标识提供程序) '
+                      - name: 列出标识提供者（已弃用）
                         href: api/b2xidentityuserflow-list-identityproviders.md
-                      - name: '添加已 (标识提供程序) '
+                      - name: 添加标识提供者（已弃用）
                         href: api/b2xidentityuserflow-post-identityproviders.md
-                      - name: '删除已 (标识提供程序) '
+                      - name: 删除标识提供者（已弃用）
                         href: api/b2xidentityuserflow-delete-identityproviders.md
                       - name: 列表用户属性作业
                         href: api/b2xidentityuserflow-list-userattributeassignments.md
@@ -11493,7 +11664,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: 删除
+                      - name: Delete
                         href: api/identityapiconnector-delete.md
           - name: 治理
             items:
@@ -13242,7 +13413,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: 权限
+              - name: Permissions
                 items:
                   - name: 权限
                     href: resources/permission.md

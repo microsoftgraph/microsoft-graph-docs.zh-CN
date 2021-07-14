@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 732d6487bc73cf9cdf0f70168d00d4b0e13ce45e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 061252bb8006cbb3ce195ea656c7dbc50334f66a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208832"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401307"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述
 
@@ -40,6 +40,7 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
 
 - Outlook 电子邮件[邮件](/graph/api/resources/message)和日历[事件](/graph/api/resources/event)对象
 - SharePoint 和 OneDrive 文件和文件夹（[driveItem](/graph/api/resources/driveitem)）， [列表](/graph/api/resources/list)， [listItems](/graph/api/resources/listitem)， [网站](/graph/api/resources/site)和[驱动器](/graph/api/resources/drive)
+- 组织中与用户最相关的[人员](/graph/api/resources/person)
 - 通过图形连接器平台摄取的内容： [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)（预览版）
 
 ## <a name="api-reference"></a>API 参考
@@ -60,10 +61,12 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
   - [搜索日历事件](search-concept-events.md)
   - [SharePoint 和 OneDrive 中的搜索内容](search-concept-files.md)
   - [搜索外部内容](search-concept-custom-types.md)（预览版）
+  - [搜索人员](search-concept-person.md)（预览）
   - [排序搜索结果](search-concept-sort.md)（预览版）
   - [改进搜索结果](search-concept-aggregation.md)（预览版）
   - [请求拼写更正](search-concept-speller.md) （预览版）
   - [搜索显示布局](search-concept-display-layout.md) （预览版）
+ 
   
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
 - 从 GitHub 下载[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)。
