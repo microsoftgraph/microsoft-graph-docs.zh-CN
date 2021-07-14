@@ -463,7 +463,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -1290,7 +1290,7 @@ items:
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
       - name: 设备和应用
-        expanded: false
+        expanded: true
         items:
           - name: 云打印
             items:
@@ -4742,7 +4742,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: 删除本地化
                     href: api/organizationalbrandingpropertieslocalization-delete.md
-              - name: Policy
+              - name: 策略
                 href: resources/policy-overview.md
                 items:
                   - name: 基于活动的超时策略
@@ -4935,9 +4935,9 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: 删除
+                      - name: Delete
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -5722,7 +5722,7 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -5764,7 +5764,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
