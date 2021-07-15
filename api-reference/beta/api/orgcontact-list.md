@@ -5,60 +5,60 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: afc6c26238f3f63b71d5c4b1cb0fae28316daa39
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b848c97277882b9f925117f6765c41c050cb7b0b
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055524"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430289"
 ---
-# <a name="list-orgcontacts"></a><span data-ttu-id="4603d-103">List orgContacts</span><span class="sxs-lookup"><span data-stu-id="4603d-103">List orgContacts</span></span>
+# <a name="list-orgcontacts"></a><span data-ttu-id="551ef-103">List orgContacts</span><span class="sxs-lookup"><span data-stu-id="551ef-103">List orgContacts</span></span>
 
-<span data-ttu-id="4603d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4603d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="551ef-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="551ef-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4603d-105">获取该组织的组织联系人列表。</span><span class="sxs-lookup"><span data-stu-id="4603d-105">Get the list of organizational contacts for this organization.</span></span>
+<span data-ttu-id="551ef-105">获取该组织的组织联系人列表。</span><span class="sxs-lookup"><span data-stu-id="551ef-105">Get the list of organizational contacts for this organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4603d-106">权限</span><span class="sxs-lookup"><span data-stu-id="4603d-106">Permissions</span></span>
-<span data-ttu-id="4603d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4603d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="551ef-106">权限</span><span class="sxs-lookup"><span data-stu-id="551ef-106">Permissions</span></span>
+<span data-ttu-id="551ef-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="551ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4603d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4603d-109">Permission type</span></span>      | <span data-ttu-id="4603d-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4603d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="551ef-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="551ef-109">Permission type</span></span>      | <span data-ttu-id="551ef-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="551ef-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4603d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4603d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4603d-112">OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4603d-112">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="4603d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4603d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4603d-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4603d-114">Not supported.</span></span>    |
-|<span data-ttu-id="4603d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4603d-115">Application</span></span> | <span data-ttu-id="4603d-116">OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4603d-116">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="551ef-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="551ef-111">Delegated (work or school account)</span></span> | <span data-ttu-id="551ef-112">OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="551ef-112">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="551ef-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="551ef-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="551ef-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="551ef-114">Not supported.</span></span>    |
+|<span data-ttu-id="551ef-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="551ef-115">Application</span></span> | <span data-ttu-id="551ef-116">OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="551ef-116">OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4603d-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4603d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="551ef-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="551ef-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /contacts
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4603d-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4603d-118">Optional query parameters</span></span>
-<span data-ttu-id="4603d-119">此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`</span><span class="sxs-lookup"><span data-stu-id="4603d-119">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="4603d-120">`$search`可以用在 **displayName** 属性。</span><span class="sxs-lookup"><span data-stu-id="4603d-120">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="4603d-121">为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。</span><span class="sxs-lookup"><span data-stu-id="4603d-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="4603d-122">在添加或更新项目与在索引中可用之间可能会稍有延迟。</span><span class="sxs-lookup"><span data-stu-id="4603d-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="551ef-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="551ef-118">Optional query parameters</span></span>
+<span data-ttu-id="551ef-119">此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="551ef-119">This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span> <span data-ttu-id="551ef-120">只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。</span><span class="sxs-lookup"><span data-stu-id="551ef-120">Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`.</span></span> <span data-ttu-id="551ef-121">有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。</span><span class="sxs-lookup"><span data-stu-id="551ef-121">For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4603d-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="4603d-123">Request headers</span></span>
-| <span data-ttu-id="4603d-124">名称</span><span class="sxs-lookup"><span data-stu-id="4603d-124">Name</span></span>       | <span data-ttu-id="4603d-125">说明</span><span class="sxs-lookup"><span data-stu-id="4603d-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="551ef-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="551ef-122">Request headers</span></span>
+| <span data-ttu-id="551ef-123">名称</span><span class="sxs-lookup"><span data-stu-id="551ef-123">Name</span></span>       | <span data-ttu-id="551ef-124">说明</span><span class="sxs-lookup"><span data-stu-id="551ef-124">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="4603d-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="4603d-126">Authorization</span></span>  | <span data-ttu-id="4603d-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4603d-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4603d-129">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="4603d-129">ConsistencyLevel</span></span> | <span data-ttu-id="4603d-130">最终。</span><span class="sxs-lookup"><span data-stu-id="4603d-130">eventual.</span></span> <span data-ttu-id="4603d-131">当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。</span><span class="sxs-lookup"><span data-stu-id="4603d-131">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="4603d-132">它使用的索引可能与对象的最新更改不同步。</span><span class="sxs-lookup"><span data-stu-id="4603d-132">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="551ef-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="551ef-125">Authorization</span></span>  | <span data-ttu-id="551ef-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="551ef-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="551ef-128">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="551ef-128">ConsistencyLevel</span></span> | <span data-ttu-id="551ef-129">最终。</span><span class="sxs-lookup"><span data-stu-id="551ef-129">eventual.</span></span> <span data-ttu-id="551ef-130">当使用 `$search` 或 `$filter` 的特定用法时，需要此标头和 `$count`。</span><span class="sxs-lookup"><span data-stu-id="551ef-130">This header and `$count` are required when using `$search`, or in specific usage of `$filter`.</span></span> <span data-ttu-id="551ef-131">有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。</span><span class="sxs-lookup"><span data-stu-id="551ef-131">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4603d-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="4603d-133">Request body</span></span>
-<span data-ttu-id="4603d-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4603d-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="551ef-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="551ef-132">Request body</span></span>
+<span data-ttu-id="551ef-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="551ef-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4603d-135">响应</span><span class="sxs-lookup"><span data-stu-id="4603d-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="551ef-134">响应</span><span class="sxs-lookup"><span data-stu-id="551ef-134">Response</span></span>
 
-<span data-ttu-id="4603d-136">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [orgContact](../resources/orgcontact.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="4603d-136">If successful, this method returns a `200 OK` response code and a collection of [orgContact](../resources/orgcontact.md) objects in the response body.</span></span>
+<span data-ttu-id="551ef-135">如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [orgContact](../resources/orgcontact.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="551ef-135">If successful, this method returns a `200 OK` response code and a collection of [orgContact](../resources/orgcontact.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4603d-137">示例</span><span class="sxs-lookup"><span data-stu-id="4603d-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="551ef-136">示例</span><span class="sxs-lookup"><span data-stu-id="551ef-136">Examples</span></span>
 
-### <a name="example-1-get-organizational-contacts-for-an-organization"></a><span data-ttu-id="4603d-138">示例 1：获取组织的组织联系人</span><span class="sxs-lookup"><span data-stu-id="4603d-138">Example 1: Get organizational contacts for an organization</span></span>
+### <a name="example-1-get-organizational-contacts-for-an-organization"></a><span data-ttu-id="551ef-137">示例 1：获取组织的组织联系人</span><span class="sxs-lookup"><span data-stu-id="551ef-137">Example 1: Get organizational contacts for an organization</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4603d-139">请求</span><span class="sxs-lookup"><span data-stu-id="4603d-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="551ef-138">请求</span><span class="sxs-lookup"><span data-stu-id="551ef-138">Request</span></span>
 
-<span data-ttu-id="4603d-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4603d-140">Here is an example of the request.</span></span>
+<span data-ttu-id="551ef-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="551ef-139">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4603d-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="4603d-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="551ef-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="551ef-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_orgcontact"
@@ -66,28 +66,28 @@ GET /contacts
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts
 ```
-# <a name="c"></a>[<span data-ttu-id="4603d-142">C#</span><span class="sxs-lookup"><span data-stu-id="4603d-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="551ef-141">C#</span><span class="sxs-lookup"><span data-stu-id="551ef-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-orgcontact-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4603d-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4603d-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="551ef-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="551ef-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-orgcontact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4603d-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4603d-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="551ef-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="551ef-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-orgcontact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4603d-145">Java</span><span class="sxs-lookup"><span data-stu-id="4603d-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="551ef-144">Java</span><span class="sxs-lookup"><span data-stu-id="551ef-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-orgcontact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="4603d-146">响应</span><span class="sxs-lookup"><span data-stu-id="4603d-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="551ef-145">响应</span><span class="sxs-lookup"><span data-stu-id="551ef-145">Response</span></span>
 
-<span data-ttu-id="4603d-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4603d-147">Here is an example of the response.</span></span> 
-><span data-ttu-id="4603d-148">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4603d-148">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="551ef-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="551ef-146">Here is an example of the response.</span></span> 
+><span data-ttu-id="551ef-147">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="551ef-147">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -132,11 +132,11 @@ Content-length: 222
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-organizational-contacts"></a><span data-ttu-id="4603d-149">示例 2：仅获取组织联系人的计数</span><span class="sxs-lookup"><span data-stu-id="4603d-149">Example 2: Get only a count of organizational contacts</span></span>
+### <a name="example-2-get-only-a-count-of-organizational-contacts"></a><span data-ttu-id="551ef-148">示例 2：仅获取组织联系人的计数</span><span class="sxs-lookup"><span data-stu-id="551ef-148">Example 2: Get only a count of organizational contacts</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4603d-150">请求</span><span class="sxs-lookup"><span data-stu-id="4603d-150">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="551ef-149">请求</span><span class="sxs-lookup"><span data-stu-id="551ef-149">Request</span></span>
 
-<span data-ttu-id="4603d-151">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4603d-151">The following is an example of the request.</span></span>
+<span data-ttu-id="551ef-150">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="551ef-150">The following is an example of the request.</span></span> <span data-ttu-id="551ef-151">此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$count`。</span><span class="sxs-lookup"><span data-stu-id="551ef-151">This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request.</span></span> <span data-ttu-id="551ef-152">有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。</span><span class="sxs-lookup"><span data-stu-id="551ef-152">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -147,9 +147,9 @@ GET https://graph.microsoft.com/beta/contacts/$count
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="4603d-152">响应</span><span class="sxs-lookup"><span data-stu-id="4603d-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="551ef-153">响应</span><span class="sxs-lookup"><span data-stu-id="551ef-153">Response</span></span>
 
-<span data-ttu-id="4603d-153">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4603d-153">The following is an example of the response.</span></span>
+<span data-ttu-id="551ef-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="551ef-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -160,18 +160,19 @@ ConsistencyLevel: eventual
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+893
 ```
 
-<span data-ttu-id="4603d-154">893</span><span class="sxs-lookup"><span data-stu-id="4603d-154">893</span></span>
 
-### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="4603d-155">示例 3：使用 $filter 和 $top 获取一个组织联系人，显示名称以"a"开头（包括返回的对象计数）</span><span class="sxs-lookup"><span data-stu-id="4603d-155">Example 3: Use $filter and $top to get one organizational contact with a display name that starts with 'a' including a count of returned objects</span></span>
+### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="551ef-155">示例 3：使用 $filter 和 $top 获取一个组织联系人，显示名称以"a"开头（包括返回的对象计数）</span><span class="sxs-lookup"><span data-stu-id="551ef-155">Example 3: Use $filter and $top to get one organizational contact with a display name that starts with 'a' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4603d-156">请求</span><span class="sxs-lookup"><span data-stu-id="4603d-156">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="551ef-156">请求</span><span class="sxs-lookup"><span data-stu-id="551ef-156">Request</span></span>
 
-<span data-ttu-id="4603d-157">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4603d-157">The following is an example of the request.</span></span>
+<span data-ttu-id="551ef-157">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="551ef-157">The following is an example of the request.</span></span> <span data-ttu-id="551ef-158">此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为请求同时具有 `$orderBy` 和 `$filter` 查询参数。</span><span class="sxs-lookup"><span data-stu-id="551ef-158">This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request has both the `$orderBy` and `$filter` query parameters.</span></span> <span data-ttu-id="551ef-159">有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。</span><span class="sxs-lookup"><span data-stu-id="551ef-159">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
@@ -179,10 +180,10 @@ GET https://graph.microsoft.com/beta/contacts?$filter=startswith(displayName,'A'
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="4603d-158">响应</span><span class="sxs-lookup"><span data-stu-id="4603d-158">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="551ef-160">响应</span><span class="sxs-lookup"><span data-stu-id="551ef-160">Response</span></span>
 
-<span data-ttu-id="4603d-159">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4603d-159">The following is an example of the response.</span></span>
-><span data-ttu-id="4603d-160">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4603d-160">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="551ef-161">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="551ef-161">The following is an example of the response.</span></span>
+><span data-ttu-id="551ef-162">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="551ef-162">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -207,14 +208,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="4603d-161">示例 4：使用 $search 获取显示名称包含字母"wa"的组织联系人，包括返回的对象计数</span><span class="sxs-lookup"><span data-stu-id="4603d-161">Example 4: Use $search to get organizational contacts with display names that contain the letters 'wa' including a count of returned objects</span></span>
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="551ef-163">示例 4：使用 $search 获取显示名称包含字母"wa"的组织联系人，包括返回的对象计数</span><span class="sxs-lookup"><span data-stu-id="551ef-163">Example 4: Use $search to get organizational contacts with display names that contain the letters 'wa' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4603d-162">请求</span><span class="sxs-lookup"><span data-stu-id="4603d-162">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="551ef-164">请求</span><span class="sxs-lookup"><span data-stu-id="551ef-164">Request</span></span>
 
-<span data-ttu-id="4603d-163">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4603d-163">The following is an example of the request.</span></span>
+<span data-ttu-id="551ef-165">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="551ef-165">The following is an example of the request.</span></span> <span data-ttu-id="551ef-166">此请求需要 **将 ConsistencyLevel** 标头设置为 `eventual` ，因为 `$search` 查询 `$count=true` 字符串位于请求中。</span><span class="sxs-lookup"><span data-stu-id="551ef-166">This request requires the **ConsistencyLevel** header set to `eventual` because `$search` and the `$count=true` query string is in the request.</span></span> <span data-ttu-id="551ef-167">有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。</span><span class="sxs-lookup"><span data-stu-id="551ef-167">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_phone_count"
 }-->
 ```msgraph-interactive
@@ -222,10 +223,10 @@ GET https://graph.microsoft.com/beta/contacts?$search="displayName:wa"&$count=tr
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="4603d-164">响应</span><span class="sxs-lookup"><span data-stu-id="4603d-164">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="551ef-168">响应</span><span class="sxs-lookup"><span data-stu-id="551ef-168">Response</span></span>
 
-<span data-ttu-id="4603d-165">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4603d-165">The following is an example of the response.</span></span>
-><span data-ttu-id="4603d-166">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4603d-166">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="551ef-169">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="551ef-169">The following is an example of the response.</span></span>
+><span data-ttu-id="551ef-170">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="551ef-170">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
