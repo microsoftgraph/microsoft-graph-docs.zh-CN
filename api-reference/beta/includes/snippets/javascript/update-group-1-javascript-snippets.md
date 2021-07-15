@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f776d5457ae8a24fe05b5ec67d5b4e3543dd90b9
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: f3133ba36d9d3b17733597107950f02ec1609155
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52476773"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53444801"
 ---
 ```javascript
 
@@ -16,8 +16,8 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-   description: 'description-value',
-   displayName: 'displayName-value'
+   description: 'Contoso Life v2.0',
+   displayName: 'Contoso Life Renewed'
 };
 
 await client.api('/groups/{id}')
