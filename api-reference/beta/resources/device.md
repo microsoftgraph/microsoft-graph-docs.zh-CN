@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 123b7ee034d4bcfce643b4279d976df004e92a8a
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 437e02f3a57cd93d9ee5e01ff310d681e5a04934
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366528"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430219"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -30,8 +30,8 @@ ms.locfileid: "53366528"
 |[列出设备](../api/device-list.md) | [设备](device.md) 集合| 检索目录中的注册设备列表。 |
 |[更新设备](../api/device-update.md) | [设备](device.md)  |更新设备对象的属性。 |
 |[删除设备](../api/device-delete.md) | 无 |删除设备对象。 |
-|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其直接成员组。 |
-|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其中一个成员的组。 此操作是可传递的。 |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备是其直接成员组。 |
+|[列出 transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备是其中一个成员的组。 此操作是可传递的。 |
 |[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) 集合| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
 |[列表 usageRights](../api/device-list-usagerights.md) | [usageRight](usageright.md) 集合 | 获取授予设备的使用权限的集合。|
@@ -43,25 +43,29 @@ ms.locfileid: "53366528"
 |[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 
 ## <a name="properties"></a>属性
+
+> [!IMPORTANT]
+> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 默认值为“`true`”。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
+|accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 默认值为“`true`”。 支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) 集合| 仅供内部使用。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。 |
 |approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 支持 `$filter` `eq` `ne` `NOT` `ge` (、、、、) `le` 和 `$orderBy` 。 |
 |complianceExpirationDateTime|DateTimeOffset| 不再认为设备合规的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 |deviceCategory|String|由 Intune 设置的用户定义属性，用于将设备自动添加到组并简化设备的管理。|
-|deviceId|String| 由 Azure 设备注册服务在注册时设置的标识符。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。 |
+|deviceId|String| 由 Azure 设备注册服务在注册时设置的标识符。 支持 `$filter`（`eq`、`ne`、`NOT`、`startsWith`）。 |
 |deviceMetadata|String| 仅供内部使用。 设置为 `null` 。 |
 |deviceOwnership|String|设备的所有权。 此属性由 Intune 设置。 可取值为：`unknown`、`company`、`personal`。|
 |deviceVersion|Int32| 仅供内部使用。 |
-|displayName|String| 设备显示名称。 必需。 支持 `$filter` `eq` `ne` `NOT` (、、、、、、) 、 `ge` `le` `in` 和 `startsWith` `$search` `$orderBy` 。  |
+|displayName|String| 设备显示名称。 必需。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith`）、`$search` 和 `$orderBy`。  |
 |domainName|String|加入混合 Azure AD 的设备本地域名。 此属性由 Intune 设置。|
 |enrollmentProfileName|String|适用于设备的注册配置文件。 例如， `Apple Device Enrollment Profile` `Device enrollment - Corporate device identifiers` 、 或 `Windows Autopilot profile name` 。 此属性由 Intune 设置。|
 |enrollmentType|String|设备的注册类型。 此属性由 Intune 设置。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
 |id|String|设备唯一标识符。 继承自 [directoryObject](directoryobject.md)。 密钥，不可为 NULL。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
-|isCompliant|Boolean|`true` 如果设备符合移动设备管理 (MDM) 策略;否则为 `false` 。 只读。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 支持 `$filter` （`eq`、 `ne`、 `NOT`）。|
-|isManaged|Boolean|`true` 如果设备由移动设备管理或 MDM (管理) 应用;否则为 `false` 。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 支持 `$filter` （`eq`、 `ne`、 `NOT`）。 |
-|isRooted|Boolean|`true` 如果设备具有 root 权限; `false` 如果设备已越狱。 这只能由 Intune 更新。|
+|isCompliant|Boolean|`true` 如果设备符合移动设备管理 (MDM) 策略;否则为 `false` 。 只读。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 支持 `$filter`（`eq`、`ne`、`NOT`）。|
+|isManaged|Boolean|`true` 如果设备由移动设备管理或 MDM (管理) 应用;否则为 `false` 。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 支持 `$filter`（`eq`、`ne`、`NOT`）。 |
+|isRooted|布尔|`true` 如果设备具有 root 权限; `false` 如果设备已越狱。 这只能由 Intune 更新。|
 |managementType|String|设备的管理通道。  此属性由 Intune 设置。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`。|
 |manufacturer|String| 设备的制造商。 只读。 |
 |mdmAppId|String|用于向 MDM 中注册设备的应用程序标识符。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
@@ -69,8 +73,8 @@ ms.locfileid: "53366528"
 |onPremisesLastSyncDateTime|DateTimeOffset|最后一次将对象与本地目录同步的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z` 为只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。 |
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
 |operatingSystem|String| 设备上操作系统的类型。 必需。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `startsWith`）。 |
-|operatingSystemVersion|String| 设备的操作系统版本。 必填。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `startsWith`）。 |
-|physicalIds|String collection| 仅供内部使用。 不可为 null。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `startsWith`）。 |
+|operatingSystemVersion|String| 设备的操作系统版本。 必需项。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `startsWith`）。 |
+|physicalIds|String collection| 仅供内部使用。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。 |
 |profileType|String|设备的配置文件类型。 可能的值 `RegisteredDevice` ： (默认值 `SecureVM`) 、、、、。 `Printer` `Shared` `IoT`|
 |registrationDateTime|DateTimeOffset|注册设备的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |systemLabels|String collection| 系统应用于设备的标签列表。 |
@@ -88,10 +92,10 @@ ms.locfileid: "53366528"
 |:---------------|:--------|:----------|
 | 命令 | [命令](command.md) 集合 | 发送到此设备的命令集。|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。 |
-|memberOf|[directoryObject](directoryobject.md) collection|此设备是其中一个成员的组。 只读。 可为 NULL。 支持 `$expand`。 |
+|memberOf|[directoryObject](directoryobject.md) 集合|此设备是其中一个成员的组。 只读。 可为 NULL。 支持 `$expand`。 |
 |registeredOwners|[directoryObject](directoryobject.md) 集合| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 NULL。 支持 `$expand`。 |
 |registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 NULL。 支持 `$expand`。 |
-|transitiveMemberOf |[directoryObject](directoryobject.md) collection| 此设备是其中一个成员的组。 此操作是可传递的。 支持 `$expand`。  |
+|transitiveMemberOf |[directoryObject](directoryobject.md) 集合| 此设备是其中一个成员的组。 此操作是可传递的。 支持 `$expand`。  |
 |usageRights|[usageRight](usageright.md) 集合|表示已授予设备的使用权限。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
