@@ -234,9 +234,6 @@ items:
                 href: windowsupdates-schedule-deployment.md
               - name: 管理监视规则
                 href: windowsupdates-manage-monitoring-rules.md
-          - name: 多租户管理（预览）
-            displayName: Microsoft 365 Lighthouse
-            href: managedtenants-concept-overview.md
       - name: 教育
         items:
           - name: 概述

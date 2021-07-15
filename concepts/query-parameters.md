@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a30b4576740147ab6456d55ee5e123b12ec411cc
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 2cf22e03f4134c1e4612433bf8190e89eea97bbf
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366504"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53440665"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 使用 `$count` 查询参数以包括集合中项总数的计数，以及从 Microsoft Graph 返回的数据值页。
 
 > [!NOTE]
-> `$count` 还可以用作 [URL 段](#other-odata-url-capabilities) 以检索集合的整数总计。 在派生自[directoryObject](/graph/api/resources/directoryobject)的资源上，它仅在[高级查询](/graph/aad-advanced-queries)中受支持。 请参阅[Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+> `$count` 还可以用作 [URL 段](#other-odata-url-capabilities) 以检索集合的整数总计。 在派生自[directoryObject](/graph/api/resources/directoryobject)的资源上，它仅适用于高级查询。 请参阅[Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 >
 > Azure AD B2C 租户不支持使用`$count`。
 
@@ -133,7 +133,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 使用 `$filter` 查询参数，以仅检索集合的子集。 `$filter`查询参数还可以用于检索关系，例如members、memberOf、transitiveMembers和transitiveMemberOf。 例如，获取我所属的所有安全组。
 
-以下例子可用于查找显示名称以子母“J”开头的用户，请使用 `startsWith`。
+以下示例查找显示名称以字母“J”开头的用户:
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
@@ -154,7 +154,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 
 ### <a name="filter-using-lambda-operators"></a>使用 lambda 运算符进行筛选
 
-OData 定义 `any` 和 `all` 运算符以评估多值属性的匹配项，即基元值(如 **字符串** 类型或实体集合)的集合。
+OData 定义 `any` 和 `all` 运算符以评估多值属性的匹配项，即基元值(如字符串 类型或实体集合)的集合。
 
 `any`运算符以迭代方式将布尔表达式应用于集合的每个成员，如果集合的 *任何成员* 的表达式为`true`，则返回`true`;否则返回`false`。 以下是`any`运算符的语法:
 
@@ -168,22 +168,24 @@ $filter=param/any(var:var/subparam eq 'value-to-match')
 + 当查询应用于实体集合时，*subparam* 是必需的。 它表示正在匹配其值的复杂类型的属性。
 + *value-to-match* 表示要与之匹配的集合的成员。
 
-例如，用户资源的 **assignedLicenses** 属性可以包含 **assignedLicense** 对象的集合，一个包含两个属性 **skuId** 和 **disabledPlans** 的复杂类型。 以下查询仅检索具有由 **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`标识的已分配许可证的用户。
+例如，用户资源的 **imAddresses** 属性包含基元类型 String 的集合。 以下查询仅检索 imAddress 为 `admin@contoso.com`的用户。
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
+GET https://graph.microsoft.com/v1.0/users?$filter=imAddresses/any(s:s eq 'admin@contoso.com')
 ```
 
-用户资源的 **imAddresses** 属性可以包含基元类型 **string** 的集合。 以下查询仅检索 imAddress 为 `admin@contoso.com`的用户。
+用户资源的 **assignedLicenses** 属性包含 **assignedLicense** 对象的集合，一个包含两个属性 **skuId** 和 **disabledPlans** 的复杂类型。 以下查询仅检索具有由 **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`标识的已分配许可证的用户。
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=imAddresses/any(s:s eq 'admin@contoso.com')
+GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
 ```
 
 若要对 `any` 子句内表达式的结果求反，请使用 `NOT` 运算符，而不是 `ne` 运算符。 例如，以下查询仅检索未分配 `admin@contoso.com` 的 **imAddress** 的用户。
+>**注意:** 对于像用户这样的目录对象，`NOT` 和 `ne` 运算符仅在 [高级查询](/graph/aad-advanced-queries) 中受支持。
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@contoso.com')&$count=true
+GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
+ConsistencyLevel: eventual
 ```
 
 `all`运算符以迭代方式将布尔表达式应用于集合的每个成员，如果集合的 *所有成员* 的表达式为`true`，则返回`true`;否则返回`false`。 任何属性都不支持它。
@@ -206,13 +208,13 @@ GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'a
 | 获取零售和销售部门中的所有用户。 | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail'%2C%20'Sales')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `../users?$filter=department in ('Retail', 'Sales')`| 
 | 列出具有处于挂起状态的特定服务计划的用户。 | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
 | 列出组织中的所有非 Microsoft 365 组。 | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true` |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
 | 列出其公司名称不是未定义(即，不是 `null` 值)或 Microsoft 的所有用户。 | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
 | 列出其公司名称是未定义或 Microsoft 的所有用户。 | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
 | 使用 OData 转换可实现显示名称以“ a”开头(包括返回的对象数)的组中的临时成员资格。 | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`。 这是一个[高级查询](/graph/aad-advanced-queries)。 |
 
@@ -328,7 +330,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 如果不支持指定的查询参数，某些请求将返回错误消息。例如，不能对 `user/photo` 关系使用 `$expand`。 
 
 ```http
-https://graph.microsoft.com/beta/me?$expand=photo
+https://graph.microsoft.com/v1.0/me?$expand=photo
 ```
 
 ```json
@@ -349,7 +351,16 @@ https://graph.microsoft.com/beta/me?$expand=photo
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
+
 [count-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0
+[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups?$expand=members&method=GET&version=v1.0
+[filter-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0
+[format-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0
+[orderby-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0
+[search-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0
+[select-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0
+[skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
+[top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
 ## <a name="see-also"></a>另请参阅
 

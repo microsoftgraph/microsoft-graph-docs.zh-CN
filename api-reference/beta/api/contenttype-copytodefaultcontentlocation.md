@@ -5,12 +5,12 @@ description: 将文件复制到内容类型中的默认内容位置。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: afe4a5aebe4e19dd3957e0be0cca334a33035981
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 744000abf5e216bb2fe82644b9600ce1be5730f5
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201986"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439351"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType：copyToDefaultContentLocation
 命名空间：microsoft.graph
@@ -57,8 +57,8 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 
 |参数|类型|说明|
 |-|-|-|
-|sourceFile| [itemReference](../resources/itemreference.md) |有关需要复制到默认内容位置的源文件的元数据。 必需。|
-|destinationFileName| 字符串 |目标文件名。 
+|sourceFile| [itemReference](../resources/itemreference.md) |有关需要复制到默认内容位置的源文件的元数据。 必需项。|
+|destinationFileName| string |目标文件名。 |
 
 ## <a name="response"></a>响应
 

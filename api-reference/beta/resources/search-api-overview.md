@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 0b15c7ceb87af0fa1d7deede3e583cc75f2a898e
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 6b937c93e431501da3ad578135577d942c5d4b37
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334008"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401342"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -97,9 +97,9 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 对于所有这些实体类型，指定 **fields** 属性可减少响应中返回的属性数，从而通过网络优化负载。
 
-**listItem** 和 **externalItem** 实体是唯一支持的实体，可用于获取架构中配置的扩展字段。 无法从所有其他实体检索扩展属性。 例如，如果在搜索架构中创建了 **externalItem** 的字段，或者 **listItem** 上有自定义列，则可以从搜索中检索这些属性。 若要检索文件的扩展属性，请在请求中指定 **listItem** 类型。
+**listItem** 和 **externalItem** 实体是唯一受支持的实体，可用于获取架构中配置的扩展可检索字段。 无法使用搜索 API 从所有其他实体检索扩展属性。 例如，如果在搜索架构中创建了 **externalItem** 的可检索字段，或者在 **listItem** 上有可检索自定义列，则可以从搜索中检索这些属性。 若要检索文件的扩展属性，请在请求中指定 **listItem** 类型。
 
-如果请求中指定的 **fields** 在架构中不存在，则在响应中将不会返回这些字段。 请求中的无效字段将忽略静默。
+如果请求中指定的 **字段** 在架构中不存在，或者未标记为可检索，则在响应中将不会返回这些字段。 请求中的无效字段将忽略静默。
 
 如果你在请求中未指定任何 **字段**，则将获得所有类型的默认属性集。 对于扩展属性，在请求中未传递任何 **字段** 时，**listItem** 和 **externalItem** 的行为不同：
 

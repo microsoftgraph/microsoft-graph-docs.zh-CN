@@ -4,12 +4,12 @@ description: 使用应用和 microsoft graph Microsoft Teams活动Teams源通知
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5923b706321c9180fba8833aab029bf2396ecaff
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 01e029092994c75ee5a787e830f6458755b3024b
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210197"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53429967"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>向用户发送活动源通知Microsoft Teams
 
@@ -91,7 +91,7 @@ ms.locfileid: "53210197"
 |:---|:---|:---|
 |类型|string|活动的类型。 这需在特定的清单中是唯一的。|
 |说明|string|可读简短说明。 这将在客户端上Microsoft Teams显示。|
-|templateText|字符串|活动通知的模板文本。 可以通过封装 中的参数来声明参数 `{}` 。|
+|templateText|string|活动通知的模板文本。 可以通过封装 中的参数来声明参数 `{}` 。|
 
 >**注意：** `actor` 是一个始终采用调用方名称的特殊参数。 在委派呼叫中 `actor` ， 是用户名。 在仅应用程序调用中，它采用应用程序Teams的名称。
 
@@ -232,7 +232,7 @@ Content-Type: application/json
         "content": "New deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -419,4 +419,4 @@ Microsoft Teams用户可以自定义其订阅源中作为横幅显示的通知�
 
 ## <a name="see-also"></a>另请参阅
 
-[使用活动源Microsoft Teams的最佳实践](activity-feed-notifications-best-practices.md)。
+[使用活动源Microsoft Teams的最佳实践](teams-activity-feed-notifications-best-practices.md)。

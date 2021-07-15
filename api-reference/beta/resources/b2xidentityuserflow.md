@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 733a3b242b6c81c7ef111ccc95e9fec151e6405d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: b84c9208ac6e1661e130f04642027e7304c7c459
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516435"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401628"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>b2xIdentityUserFlow 资源类型
 
@@ -26,18 +26,21 @@ ms.locfileid: "50516435"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出用户流](../api/identitycontainer-list-b2xuserflows.md)|b2xIdentityUserFlow 集合|检索所有自助式注册用户流。|
-|[获取用户流](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|检索自助式注册用户流的属性。|
-|[创建用户流](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|创建新的自助式注册用户流。|
-|[删除用户流](../api/b2xidentityuserflow-delete.md)|无|删除自助式注册用户流。|
-|[列出标识提供者](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md)集合 |检索自助式注册用户流中所有标识提供程序。|
-|[添加标识提供者](../api/b2xidentityuserflow-post-identityproviders.md)|无|向自助式注册用户流添加标识提供程序。|
-|[删除标识提供者](../api/b2xidentityuserflow-delete-identityproviders.md)|无|从自助式注册用户流中删除标识提供程序。|
-|[列表用户属性作业](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 集合|检索自助式注册用户流中的所有用户属性分配。|
-|[创建用户属性作业](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|在自助式注册用户流中创建用户属性分配。|
-|[列出语言](../api/b2xidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 集合|检索自助式注册用户流内的所有语言。|
-|[获取用户流的 API 连接器配置](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| 获取自助式注册用户流中使用的 API 连接器的配置。 此方法不支持 $expand 查询参数。|
-|[在用户流中配置 API 连接器](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|无| 通过更新 apiConneconfiguration 属性的 [apiConneconfiguration](../resources/userflowapiconnectorconfiguration.md) API 连接器。|
+|[列出用户流](../api/identitycontainer-list-b2xuserflows.md)|b2xIdentityUserFlow 集合|检索所有 B2X 用户流。|
+|[获取用户流](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|检索 B2X 用户流的属性。|
+|[创建用户流](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|新建 B2X 用户流。|
+|[删除用户流](../api/b2xidentityuserflow-delete.md)|无|删除 B2X 用户流。|
+|[列出标识提供者](../api/b2xidentityuserflow-list-userflowidentityproviders.md)|[identityProvider](../resources/identityproviderbase.md)集合 |检索 B2X 用户流中的所有标识提供者。|
+|[添加标识提供者](../api/b2xidentityuserflow-userflowidentityproviders-update.md)|无|向 B2X 用户流添加标识提供者。|
+|[删除标识提供者](../api/b2xidentityuserflow-delete-userflowidentityproviders.md)|无|从 B2X 用户流中删除标识提供者。|
+|[列出标识提供者](../api/b2xidentityuserflow-list-identityproviders.md)（已弃用）|[identityProvider](../resources/identityProvider.md)集合 |检索 B2X 用户流中的所有标识提供者。|
+|[添加标识提供者](../api/b2xidentityuserflow-post-identityproviders.md)（已弃用）|无|向 B2X 用户流添加标识提供者。|
+|[删除标识提供者](../api/b2xidentityuserflow-delete-identityproviders.md)（已弃用）|无|从 B2X 用户流中删除标识提供者。|
+|[列出用户属性作业](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 集合|从 B2C 用户流中检索所有用户属性作业。|
+|[创建用户属性作业](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|在 B2C 用户流中创建一个用户属性作业。|
+|[列表语言](../api/b2xidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 集合|检索 B2X 用户流中的所有语言。|
+|[获取用户流的 API 连接器配置](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| 获取用户流中所使用的 API 连接器的配置。 此方法不支持 $expand 查询参数。|
+|[在用户流中配置 API 连接器](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|无| 通过更新 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 属性，在用户流中按照特定步骤配置 API 连接器。|
 
 ## <a name="properties"></a>属性
 
@@ -52,7 +55,8 @@ ms.locfileid: "50516435"
 
 | 关系       | 类型  |说明|
 |:---------------|:--------|:----------|
-|identityProviders|[identityProvider](../resources/identityprovider.md)集合 |用户流中包含的标识提供者。|
+|userflowIdentityProviders|[identityProviderBase](../resources/identityproviderbase.md) 集合|用户流中包含的标识提供者。|
+|identityProviders（已弃用）|[identityProvider](../resources/identityprovider.md)集合 |用户流中包含的标识提供者。|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 集合|包含在用户流内的用户属性作业。|
 |语言|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 集合|用户流中的支持自定义的语言。 默认情况下，自助式注册用户流中启用了语言自定义。 无法在自助式注册用户流中创建自定义语言。|
 
@@ -72,6 +76,7 @@ ms.locfileid: "50516435"
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
+    "userflowIdentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],

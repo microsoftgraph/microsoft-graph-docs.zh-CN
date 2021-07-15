@@ -4,20 +4,20 @@ description: 可以使用 Microsoft 搜索 API 搜索与自己相关的人员。
 author: acsehi
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: b9e53fadf7df205c315daf090350e7b4748b9025
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 0540ee40c672af4305a396b7348d7d87276c0ce7
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334814"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443114"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-people-preview"></a>使用 Microsoft Microsoft 搜索 中的 Graph API 搜索预览 (人员) 
 
-Microsoft Graph应用程序可以使用搜索 API 检索与用户最相关的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员可以是本地联系人，也可以来自组织目录，也可以来自最近通信的人。 除了生成此见解外，搜索还提供模糊匹配搜索支持以及检索与登录用户组织中其他用户相关的用户列表的能力。
+Microsoft Graph应用程序可以使用 Microsoft 搜索 API 检索与用户最相关的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员可以是本地联系人，也可以来自组织目录，也可以来自最近通信的人。 除了生成此见解外，搜索还提供模糊匹配搜索支持以及检索与登录用户组织中其他用户相关的用户列表的能力。
 
 ## <a name="example-search-person-by-name"></a>示例：按姓名搜索人员
 
-以下请求根据通信和协作模式以及业务关系获取与已登录用户最相关的人员。
+以下请求根据通信和协作模式以及业务关系，获取与登录用户最相关的人员。
 
 ### <a name="request"></a>请求
 

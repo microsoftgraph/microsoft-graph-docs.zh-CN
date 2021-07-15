@@ -5,12 +5,12 @@ author: bhartono
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ff7681c0e62be91dd46a8482880ca595f8e6b96e
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: f326c9d9c46d9de7b66ffccc10c44eef1b0ffa0b
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971431"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430002"
 ---
 # <a name="add-member-to-a-chat"></a>向聊天添加成员
 
@@ -70,7 +70,8 @@ content-type: application/json
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
+    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z",
+    "roles": ["owner"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -128,7 +129,8 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+    "roles": ["owner"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -187,7 +189,8 @@ content-type: application/json
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z"
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+    "roles": ["owner"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
