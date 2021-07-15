@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 02bde925291b580186247a23f8bc3398d5ca0c2f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a0cf83ea366e8d2c03c8f3d28f4262bfc9616d65
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786059"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430268"
 ---
 # <a name="call-answer"></a>call： answer
 
@@ -48,9 +48,10 @@ POST /communications/calls/{id}/answer
 
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |允许机器人为当前呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。    |
-|acceptedModalities|String collection                         |接受形式列表。 可取值为：`audio`、`video`、`videoBasedScreenSharing`。 应答呼叫时必需。 |
+|callbackUri       |String                                    |允许机器人为并发呼叫提供特定的回调 URI 以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。    |
+|acceptedModalities|字符串集合                         |接受形式列表。 可取值为：`audio`、`video`、`videoBasedScreenSharing`。 应答呼叫时必需。 |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |媒体配置。  (必需)                                                                                                             |
+| participantCapacity | Int | 对于基于策略的录制方案，应用程序可以处理Teams[的数量](/MicrosoftTeams/teams-recording-policy)。                                                     |
 
 ## <a name="response"></a>响应
 此方法返回 响应 `202 Accepted` 代码。
@@ -80,7 +81,8 @@ Content-Length: 211
   },
   "acceptedModalities": [
     "audio"
-  ]
+  ],
+  "participantCapacity": 200
 }
 ```
 此 blob 是由媒体 SDK 生成的媒体会话的序列化配置。
@@ -437,6 +439,8 @@ Content-Type: application/json
 
 在基于 [策略的录制](/microsoftteams/teams-recording-policy)方案下，在策略下的参与者加入呼叫之前，传入呼叫通知将发送到与该策略关联的机器人。
 可以在 **botData** 属性下找到加入信息。 然后，机器人可以选择应答呼叫 [并相应地更新录制](call-updaterecordingstatus.md) 状态。
+
+当在基于策略的录制通知的请求中指定时，属于同一策略组的后续参与者加入事件将发送为 `participantCapacity` `Answer` [participantJoiningNotification，](../resources/participantJoiningNotification.md)而不是新的传入呼叫通知，直到当前呼叫实例处理的参与者数达到 中指定的号码。 `participantCapacity`
 
 下面是机器人在这种情况下将收到的传入呼叫通知的示例。
 

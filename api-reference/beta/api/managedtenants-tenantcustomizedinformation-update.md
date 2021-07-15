@@ -5,12 +5,12 @@ author: isaiahwilliams
 localization_priority: Normal
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: c9d3c5a812364c5dd8999f89edd4c7ed411db0ab
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 3f43e7e3f543c0a74b27a3594f573d4fe3cc68c6
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402086"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53441799"
 ---
 # <a name="update-tenantcustomizedinformation"></a>更新 tenantCustomizedInformation
 命名空间：microsoft.graph.managedTenants
@@ -63,6 +63,8 @@ PATCH /tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCu
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tenantcustomizedinformation"
@@ -84,6 +86,24 @@ Content-length: 278
   "website": "String"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-tenantcustomizedinformation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tenantcustomizedinformation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-tenantcustomizedinformation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tenantcustomizedinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -1,16 +1,16 @@
 ---
 author: swapnil1993
 title: 删除 contentType
-description: 从 sharepoint 列表或网站中删除内容类型。
+description: 从列表或网站SharePoint内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 62ff8164a4deca10cc26d22556a00fd207e56fb0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9597f4b66a070ee40199b39f8accc8b3ab9f5c0e
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946999"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439376"
 ---
 # <a name="delete-contenttype"></a>删除 contentType
 命名空间：microsoft.graph
@@ -98,4 +98,4 @@ HTTP/1.1 204 No Content
 
 [list]: ../resources/list.md
 [contentType]: ../resources/contentType.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md

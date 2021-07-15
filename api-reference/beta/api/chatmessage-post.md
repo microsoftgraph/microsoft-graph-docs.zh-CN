@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 58af5006d1a12fd957d73b3d1e81c282b57c2be9
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 24264a76e2c9aecab988a81348265eb72a73196c
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351151"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430121"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -33,14 +33,14 @@ ms.locfileid: "53351151"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-for-chat"></a>聊天权限
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | ChatMessage.Send、Chat.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -749,6 +749,321 @@ Content-type: application/json
         }
     ],
     "mentions": [],
+    "reactions": []
+}
+```
+
+### <a name="example-7--mention-a-channel-in-a-channel-message"></a>示例 7：@mention消息中的频道
+
+#### <a name="request"></a>请求
+下面展示了示例请求。 若要了解如何获取团队中的频道列表，请参阅 [列出频道](../api/channel-list.md)。
+
+> 注意 **：conversationIdentityType** 必须设置为 `channel` @mention通道。
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_atmentionchannel"
+}-->
+```http
+POST https://graph.microsoft.com/beta/teams/68a3e365-f7d9-4a56-b499-24332a9cc572/channels/19:0b50940236084d258c97b21bd01917b0@thread.skype/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+    },
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "General",
+            "mentioned": {
+                "conversation": {
+                    "id": "19:0b50940236084d258c97b21bd01917b0@thread.skype",
+                    "displayName": "General",
+                    "conversationIdentityType": "channel"
+                }
+            }
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('68a3e365-f7d9-4a56-b499-24332a9cc572')/channels('19%3A0b50940236084d258c97b21bd01917b0%40thread.skype')/messages/$entity",
+    "id": "1625727486746",
+    "replyToId": null,
+    "etag": "1625727486746",
+    "messageType": "message",
+    "createdDateTime": "2021-07-08T06:58:06.746Z",
+    "lastModifiedDateTime": "2021-07-08T06:58:06.746Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A0b50940236084d258c97b21bd01917b0%40thread.skype/1625727486746?groupId=68a3e365-f7d9-4a56-b499-24332a9cc572&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1625727486746&parentMessageId=1625727486746",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+    },
+    "channelIdentity": {
+        "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+        "channelId": "19:0b50940236084d258c97b21bd01917b0@thread.skype"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "General",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "user": null,
+                "tag": null,
+                "conversation": {
+                    "id": "19:0b50940236084d258c97b21bd01917b0@thread.skype",
+                    "displayName": "General",
+                    "conversationIdentityType": "channel"
+                }
+            }
+        }
+    ],
+    "reactions": []
+}
+```
+
+### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中通知团队
+
+#### <a name="request"></a>请求
+下面展示了示例请求。
+
+> 注意 **：conversationIdentityType** 必须设置为@mention `team` 团队。
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_atmentionteam"
+}-->
+```http
+POST https://graph.microsoft.com/beta/teams/68a3e365-f7d9-4a56-b499-24332a9cc572/channels/19:0b50940236084d258c97b21bd01917b0@thread.skype/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+    },
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "GraphTesting",
+            "mentioned": {
+                "conversation": {
+                    "id": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+                    "displayName": "GraphTesting",
+                    "conversationIdentityType": "team"
+                }
+            }
+        }
+    ],
+    "reactions": []
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('68a3e365-f7d9-4a56-b499-24332a9cc572')/channels('19%3A0b50940236084d258c97b21bd01917b0%40thread.skype')/messages/$entity",
+    "id": "1625727671938",
+    "replyToId": null,
+    "etag": "1625727671938",
+    "messageType": "message",
+    "createdDateTime": "2021-07-08T07:01:11.938Z",
+    "lastModifiedDateTime": "2021-07-08T07:01:11.938Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A0b50940236084d258c97b21bd01917b0%40thread.skype/1625727671938?groupId=68a3e365-f7d9-4a56-b499-24332a9cc572&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1625727671938&parentMessageId=1625727671938",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+    },
+    "channelIdentity": {
+        "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+        "channelId": "19:0b50940236084d258c97b21bd01917b0@thread.skype"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "GraphTesting",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "user": null,
+                "tag": null,
+                "conversation": {
+                    "id": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+                    "displayName": "GraphTesting",
+                    "conversationIdentityType": "team"
+                }
+            }
+        }
+    ],
+    "reactions": []
+}
+```
+
+### <a name="example-9--mention-a-tag-in-a-channel-message"></a>示例 9：@mention消息中的标记
+
+#### <a name="request"></a>请求
+下面展示了示例请求。 若要了解如何获取团队中的标记列表，请参阅 [List teamworkTags](../api/teamworktag-list.md)。
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_atmentiontag"
+}-->
+```http
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>"
+    },
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "TestTag",
+            "mentioned": {
+                "tag": {
+                    "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM2OGEzZTM2NS1mN2Q5LTRhNTYtYjQ5OS0yNDMzMmE5Y2M1NzIjI3RTMERJZ1Z1ZQ==",
+                    "displayName": "TestTag"
+                }
+            }
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1625726986373",
+    "replyToId": null,
+    "etag": "1625726986373",
+    "messageType": "message",
+    "createdDateTime": "2021-07-08T06:49:46.373Z",
+    "lastModifiedDateTime": "2021-07-08T06:49:46.373Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1625726986373?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1625726986373&parentMessageId=1625726986373",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "TestTag",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "user": null,
+                "conversation": null,
+                "tag": {
+                    "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM2OGEzZTM2NS1mN2Q5LTRhNTYtYjQ5OS0yNDMzMmE5Y2M1NzIjI3RTMERJZ1Z1ZQ==",
+                    "displayName": "TestTag"
+                }
+            }
+        }
+    ],
     "reactions": []
 }
 ```

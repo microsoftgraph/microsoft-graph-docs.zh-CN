@@ -5,12 +5,12 @@ description: 检查内容类型中心网站中内容类型的发布状态。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 150caec3be0740d82563e280e6425d0d3b827ecd
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: e61d488dddc9797c3f0623a3e534f54b1bab4708
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770570"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439407"
 ---
 # <a name="contenttype-ispublished"></a>contentType： isPublished
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50770570"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.FullControl.All    |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|Application | Sites.FullControl.All |
+|应用程序 | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -35,7 +35,7 @@ ms.locfileid: "50770570"
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
->**注意：** siteId 表示内容类型中心网站。
+>**注意**_：siteId_ 表示内容类型中心网站。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -43,7 +43,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 |Authorization|Bearer {token}。必需。|
 
 ## <a name="response"></a>响应
-如果成功，此调用将返回 响应和指定内容类型的发布状态 `200 OK` 的布尔值。
+如果成功，此调用将返回 响应和一个布尔值，该值指定 `200 OK` 内容类型的发布状态。
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

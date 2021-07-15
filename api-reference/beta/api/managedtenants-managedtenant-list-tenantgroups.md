@@ -5,12 +5,12 @@ author: isaiahwilliams
 localization_priority: Normal
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 11bb89e594308fad86f61c2d9d1d422e684c48ee
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: c60e656951890cbe6319b1949926a14a5437fe92
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402353"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53440491"
 ---
 # <a name="list-tenantgroups"></a>列出 tenantGroups
 命名空间：microsoft.graph.managedTenants
@@ -56,6 +56,8 @@ GET /tenantRelationships/managedTenants/tenantGroups
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tenantgroup"
@@ -64,6 +66,24 @@ GET /tenantRelationships/managedTenants/tenantGroups
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGroups
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tenantgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tenantgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tenantgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tenantgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

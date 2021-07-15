@@ -5,12 +5,12 @@ author: isaiahwilliams
 localization_priority: Normal
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 7ecb462727541ab591e921ff9cac5cbafcac612c
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 65da1a66a6a423d3df8859d1cf74d16d03f6ded6
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402026"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53441473"
 ---
 # <a name="list-cloudpcdevices"></a>列出 cloudPcDevices
 命名空间：microsoft.graph.managedTenants
@@ -56,6 +56,8 @@ GET /tenantRelationships/managedTenants/cloudPcDevices
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_cloudpcdevice"
@@ -64,6 +66,24 @@ GET /tenantRelationships/managedTenants/cloudPcDevices
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcDevices
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcdevice-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcdevice-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-cloudpcdevice-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcdevice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

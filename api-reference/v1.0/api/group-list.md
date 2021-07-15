@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9b132ea523eee7b9ef51afcbf6199c38a8427b4c
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: bc3415ab5bc2610341a6f5c9645cc93b2defbee2
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030892"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430170"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -36,28 +36,24 @@ GET /groups
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
 若要仅列出 Microsoft 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-可以使用 OData 查询选项 `$orderby`，按 **displayName** 值对组织中的组进行排序，如下面的示例所示：
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
-```
+`$search`查询参数仅支持对 **displayName** 和 **说明** 字段进行标记化，并且需要 **ConsistencyLevel** 标头。 **displayName** 和 **说明以外的字段** 默认为`$filter``startswith`行为。
 
-你还可以使用 `$count` 和 `$search` 查询参数来限制响应。 `$search` 查询参数仅支持对 **displayName** 和 **说明** 字段进行标记化。 其他字段默认为 `$filter` 行为。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
-
-有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+有关 OData 查询选项的详细信息，请参阅 [ OData 查询参数](/graph/query-parameters)。 有关使用 **ConsistencyLevel** 和`$count`的详细信息，请参阅 [ Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
+| ConsistencyLevel | 最终。 当使用 `$search` 或 `$filter` 的特定用法时，需要此标头和 `$count`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -192,12 +188,12 @@ Content-type: application/json
 
 ### <a name="example-2-get-a-filtered-list-of-groups-including-the-count-of-returned-objects"></a>示例 2：获取组的筛选列表（包括返回的对象数）
 
-下面展示了示例请求。
+下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$count`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 #### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_groups_withlicenseerrors_count"
 }-->
 ```msgraph-interactive
@@ -239,7 +235,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$count`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 <!-- {
   "blockType": "ignored",
@@ -268,10 +264,10 @@ Content-type: text/plain
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为请求同时具有 `$orderBy` 和 `$filter` 查询参数。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
@@ -311,10 +307,10 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
@@ -355,7 +351,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 <!-- {
   "blockType": "request",

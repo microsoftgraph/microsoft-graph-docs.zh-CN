@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 061252bb8006cbb3ce195ea656c7dbc50334f66a
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 3a6c02b4f70cce4ac44090f5981372096fa17bce
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401307"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443124"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述
 
@@ -36,19 +36,19 @@ Microsoft 搜索 API 提供一个统一的搜索终结点，让你使用该终�
 
 ## <a name="what-data-can-i-add-or-access-by-using-the-microsoft-search-api"></a>使用 Microsoft 搜索 API 可以添加或访问哪些数据？
 
-Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
+Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容： 
 
-- Outlook 电子邮件[邮件](/graph/api/resources/message)和日历[事件](/graph/api/resources/event)对象
-- SharePoint 和 OneDrive 文件和文件夹（[driveItem](/graph/api/resources/driveitem)）， [列表](/graph/api/resources/list)， [listItems](/graph/api/resources/listitem)， [网站](/graph/api/resources/site)和[驱动器](/graph/api/resources/drive)
-- 组织中与用户最相关的[人员](/graph/api/resources/person)
-- 通过图形连接器平台摄取的内容： [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)（预览版）
+- Outlook 电子邮件 [消息](/graph/api/resources/message) 和日历 [事件](/graph/api/resources/event) 资源。
+- SharePoint 和 OneDrive 文件和文件夹 ([driveItem](/graph/api/resources/driveitem) 资源)、[列表](/graph/api/resources/list)、[listItem](/graph/api/resources/listitem)、[网站](/graph/api/resources/site) 和 [驱动器](/graph/api/resources/drive) 资源。
+- 组织中与用户最相关的 [人员](/graph/api/resources/person) 资源。
+- 通过 Microsoft Graph 连接器平台引入的内容: [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 资源。
 
 ## <a name="api-reference"></a>API 参考
 
 在查找此服务的 API 参考？
 
-- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-1.0)（v1.0版本）
-- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta)（预览版）
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)（v1.0版本）
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)（预览版）
 - [使用 Microsoft 搜索 API 索引数据](/graph/api/resources/indexing-api-overview)（预览版）
 
 ## <a name="next-steps"></a>后续步骤
@@ -60,7 +60,7 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
   - [搜索 Outlook 邮件](search-concept-messages.md)
   - [搜索日历事件](search-concept-events.md)
   - [SharePoint 和 OneDrive 中的搜索内容](search-concept-files.md)
-  - [搜索外部内容](search-concept-custom-types.md)（预览版）
+  - [搜索外部内容](search-concept-custom-types.md)
   - [搜索人员](search-concept-person.md)（预览）
   - [排序搜索结果](search-concept-sort.md)（预览版）
   - [改进搜索结果](search-concept-aggregation.md)（预览版）

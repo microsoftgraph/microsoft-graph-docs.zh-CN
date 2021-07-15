@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 72fb366eaddad82273cc43aa280bde810a8259b7
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 97ec3f5ea6ffa7faefb891b2df719cea1866cbda
+ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236262"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401872"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -87,7 +87,8 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |:-----------|:--------------------|:-----------|:----------------|
 | 云打印 | 通用打印 | 通用打印是基于 Microsoft 365 云的打印基础设施，可以为用户提供易用、丰富且安全的打印体验，并为 IT 人员减少管理方面的工作。 | [使用通用打印 API 进行云打印](universal-print-concept-overview.md) |
 |公司设备和应用管理 | Intune | 注册和配置设备，并管理组织中的移动应用程序。 | [Intune 设备和应用概述](intune-concept-overview.md) |
-| 设备更新 | 适用于企业的 Windows 更新部署服务 | 可控制对从 Windows 更新网站传送内容的批准、计划、监测和防护。 | [Microsoft Graph 中的 Windows 更新](windowsupdates-concept-overview.md)
+| 设备更新（预览） | 适用于企业的 Windows 更新部署服务 | 可控制对从 Windows 更新网站传送内容的批准、计划、监测和防护。 | [Microsoft Graph 中的 Windows 更新](windowsupdates-concept-overview.md) |
+| 多租户管理（预览） | Microsoft 365 Lighthouse | 允许托管服务提供商 (MSP) 远程管理多个客户租户的合规性和威胁，并帮助租户设备处于健康和安全的状态。 | [使用 Microsoft 365 Lighthouse 的多租户管理](managedtenants-concept-overview.md) |
 
 
 ## <a name="security"></a>安全性

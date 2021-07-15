@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3b69c2a597b58ca047726eec1af11b4be3d322a3
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 213a21c9185ed70b9466e02efa93c444b62913f2
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944230"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53444789"
 ---
 ```csharp
 
@@ -13,8 +13,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var group = new Group
 {
-    Description = "description-value",
-    DisplayName = "displayName-value"
+    Description = "Contoso Life v2.0",
+    DisplayName = "Contoso Life Renewed"
 };
 
 await graphClient.Groups["{group-id}"]

@@ -5,12 +5,12 @@ description: 将内容类型与中心网站列表关联。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: dbddfcd4f2f3fc94c9be4ebf30aeb0c8522ea855
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 89d80568ea0d0099e54d2d912bb7acb32c31f307
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947013"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439460"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType：associateWithHubSites
 
@@ -19,7 +19,7 @@ ms.locfileid: "50947013"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 将 [内容类型][contentType] 与中心网站列表关联。
 
->**注意：** 此功能仅限于拥有 SharePoint Syntex 许可证的租户。
+>**注意：** 此功能仅限于拥有许可证的SharePoint Syntex租户。
   
 
 ## <a name="permissions"></a>权限  
@@ -42,7 +42,7 @@ ms.locfileid: "50947013"
 }
 -->
 ```http
-POST /sites/id/contentTypes/id/associateWithHubSites
+POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -58,8 +58,8 @@ POST /sites/id/contentTypes/id/associateWithHubSites
 
 |参数|类型|说明|
 |-|-|-|
-|hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的主要 URL 列表。 必填。|
-|propagateToExistingLists| Boolean |如果为 ，内容类型将强制应用于中心网站中的现有列表;否则，将 `true` 仅应用于新创建的列表。 
+|hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的主要 URL 列表。 必需项。|
+|propagateToExistingLists| 布尔 |如果为 ，内容类型将强制应用于中心网站中的现有列表;否则，将 `true` 仅应用于新创建的列表。 
 
 ## <a name="response"></a>响应
 

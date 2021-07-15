@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: aa62b54767720b8ed6c5382db4232ec4bd109f7d
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: dd51efc4c446449c8f09b89df0c977f5cc7ada65
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351319"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401542"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -67,10 +67,10 @@ ms.locfileid: "53351319"
 | **目录对象**|||
 | [activateServicePlan](../api/user-activateserviceplan.md) | 无 | 为给定给定用户或`servicePlanId``skuId`许可证和[服务](user.md)。 |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
-| [checkMemberGroups](../api/user-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
-| [getByIds](../api/directoryobject-getbyids.md) | String collection | 返回 ID 列表中指定的目录对象。 |
+| [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
 | [getMemberGroups](../api/user-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/user-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
 | [Get transitiveReports](../api/user-get-transitivereports.md) | 整数 | 从 transitiveReports 导航属性获取用户的可传递报表计数。 |
@@ -160,6 +160,9 @@ ms.locfileid: "53351319"
 
 
 ## <a name="properties"></a>属性
+
+> [!IMPORTANT]
+> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 | 属性       | 类型    | 说明 |
 |:---------------|:--------|:------------|
@@ -315,7 +318,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |photos|[photo](photo.md) 集合| 只读。可为 Null。|
 |planner|[plannerUser](planneruser.md)| 用户可以使用的选择性计划程序服务。 只读。 可为空。 |
 |个人资料 |[个人资料](profile.md) | 表示在租户中描述用户的属性。 |
-|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。 只读。 可为 NULL。 支持 `$expand`。|
+|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为空。支持 `$expand`。|
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 此用户的作用域角色管理单位成员身份。 只读。 可为空。|
 |settings|[userSettings](usersettings.md) | 只读。可为 Null。|
 |团队合作|[userTeamwork](userteamwork.md)| 用户可以使用的Microsoft Teams功能的容器。 只读。 可为空。|

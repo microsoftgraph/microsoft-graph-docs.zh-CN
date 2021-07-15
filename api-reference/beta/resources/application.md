@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 6415e6199234587ddc126fd59d017963afcbd250
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 5302b0f082520925149d7437d6fe1b3530b6cb56
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366589"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430100"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -66,6 +66,9 @@ ms.locfileid: "53366589"
 |[取消设置已验证发布者](../api/application-unsetverifiedpublisher.md)| 无 | 取消设置应用程序的已验证发布者。|
 
 ## <a name="properties"></a>属性
+
+> [!IMPORTANT]
+> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 | 属性 | 类型 | Description |
 |:---------------|:--------|:----------|

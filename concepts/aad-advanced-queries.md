@@ -4,18 +4,18 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 03210e9c46776c4fbc92057870737a87c7e47371
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: eb8b5b7b8438f900535efd6ce625059919d76952
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366513"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443198"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
 随着 Azure AD 在稳定性、可用性和性能方面不断提供更多功能和改进，Microsoft Graph 也在不断改进和扩展以便高效访问数据。 一个途径是 Microsoft Graph 对各种 Azure AD 对象及其属性的高级查询功能加强支持。 例如，在 2020 年 10 月，为 `$filter` 查询参数上添加了 **Not** (`NOT`)、**Not equals** (`ne`) 和 **Ends with** (`endsWith`) 运算符。
 
-Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了进一步支持某些属性的查询功能，这些属性现在在单独的服务器中编制索引。 这种单独的索引使 Azure AD 可以增加支持并提高查询请求的性能。 然而，这些高级查询功能在默认情况下不可用，但是，请求者还必须将 **ConsistencyLevel** 标头设置为 `eventual` *和* (`$search`除外)，并使用 `$count` 查询参数(作为 [URL 段](/graph/query-parameters#other-odata-url-capabilities) 或 `$count=true` 查询字符串)。 **ConsistencyLevel** 标头和`$count`被称为 *高级查询参数*。
+Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了进一步支持某些属性的查询功能，这些属性现在在单独的服务器中编制索引。 这种单独的索引使 Azure AD 可以增加支持并提高查询请求的性能。 然而，这些高级查询功能在默认情况下不可用，但是，请求者还必须将 **ConsistencyLevel** 标头设置为 `eventual` *和* (`$search`除外)，并使用 `$count` 查询参数。 **ConsistencyLevel** 标头和`$count`被称为 *高级查询参数*。
 
 例如，如果只想检索非活动用户帐户，则可以运行使用 `$filter` 查询参数的查询之一。
 
@@ -63,7 +63,7 @@ ConsistencyLevel: eventual
 | 将 `$filter` 与 `ne` 和 `NOT` 运算符结合使用                           | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`                     |
 | 将 `$filter` 与 `NOT` 和 `startsWith` 运算符结合使用                   | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                |
 | 将 OData 强制转换与其他查询参数一起使用                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                             |
 
 > [!NOTE]
@@ -115,7 +115,7 @@ https://graph.microsoft.com/v1.0/users/$count
 }
 ```
 
-派生自 [directoryObject](/graph/api/resources/directoryobject)的 Azure AD 资源中的`$search`仅适用于高级查询。 如果未指定 **ConsistencyLevel** 标头，则请求将返回错误。
+对于目录对象， `$search` 仅适用于高级查询。 如果未指定 **ConsistencyLevel** 标头，则请求将返回错误。
 
 ```http
 https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
@@ -138,7 +138,7 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 如果 URL 中的属性或查询参数仅在高级查询中受支持，但缺少 **ConsistencyLevel** 标头或 `$count=true` 查询字符串，则请求将返回错误。
 
 ```http
-https://graph.microsoft.com/beta/users?$filter=endsWith(mail,'@outlook.com')
+https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 ```
 
 ```json

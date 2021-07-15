@@ -234,6 +234,9 @@ items:
                 href: windowsupdates-schedule-deployment.md
               - name: 管理监视规则
                 href: windowsupdates-manage-monitoring-rules.md
+          - name: 多租户管理（预览）
+            displayName: Microsoft 365 Lighthouse
+            href: managedtenants-concept-overview.md
       - name: 教育
         items:
           - name: 概述
@@ -385,14 +388,16 @@ items:
                 href: search-concept-files.md
               - name: 搜索连接器
                 href: search-concept-custom-types.md
+              - name: 搜索人员（预览）
+                href: search-concept-person.md
               - name: 排序搜索结果（预览）
                 href: search-concept-sort.md
               - name: 改进搜索结果（预览）
                 href: search-concept-aggregation.md
               - name: 请求拼写更正（预览）
                 href: search-concept-speller.md
-              - name: 搜索人员（预览）
-                href: search-concept-person.md
+              - name: 搜索显示布局（预览版）
+                href: search-concept-display-layout.md
       - name: 安全性
         items:
           - name: 概述
