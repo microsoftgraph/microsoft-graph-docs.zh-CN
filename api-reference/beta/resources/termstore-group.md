@@ -4,13 +4,13 @@ title: 组资源类型
 doc_type: resourcePageType
 description: 表示在术语库中使用的组。
 localization_priority: Normal
-ms.prod: Sharepoint
-ms.openlocfilehash: 1249f94b96e0c6ff7251a2a97f4885a21258aaeb
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.prod: taxonomy
+ms.openlocfilehash: ec2e9609b2de278d2596d42b18cae2fe450efd86
+ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473463"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456357"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "51473463"
 | 方法                                                   | 返回类型       |    说明
 |:---------------------------------------------------------|:------------------|:---------------------
 | [创建组](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | 在术语库创建 [组]。
-| [Get group](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | 检索术语库中的组 [数据]。
+| [Get group](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | 检索术语库中的组 [数据]。
 | [删除组](../api/termstore-group-delete.md)                     | 无 |  删除术语库中的 [组]。
 
 ## <a name="properties"></a>属性
@@ -88,7 +88,7 @@ ms.locfileid: "51473463"
   "section": "documentation",
   "tocPath": "TermGroup",
   "tocBookmarks": {
-    "Resources/termStore.group": "#"
+    "Resources/termStore.group&quot;: &quot;#"
   },
   "suppressions": []
 }

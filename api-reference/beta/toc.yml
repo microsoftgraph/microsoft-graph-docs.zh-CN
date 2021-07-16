@@ -9763,7 +9763,7 @@ items:
                         href: api/windowsupdates-updatableassetgroup-removemembers.md
                       - name: 按 ID 删除成员
                         href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
-          - name: '多租户管理 (预览) '
+          - name: 多租户管理（预览）
             items:
               - name: 托管租户
                 href: resources/managedtenants-managedtenant.md
@@ -11558,13 +11558,13 @@ items:
                         href: api/b2cidentityuserflow-list-identityproviders.md
                       - name: 添加标识提供者（已弃用）
                         href: api/b2cidentityuserflow-post-identityproviders.md
-                      - name: '删除已 (标识提供程序) '
+                      - name: 删除标识提供者（已弃用）
                         href: api/b2cidentityuserflow-delete-identityproviders.md
-                      - name: 列表用户属性作业
+                      - name: 列出用户属性作业
                         href: api/b2cidentityuserflow-list-userattributeassignments.md
                       - name: 创建用户属性作业
                         href: api/b2cidentityuserflow-post-userattributeassignments.md
-                      - name: 列出语言
+                      - name: 列表语言
                         href: api/b2cidentityuserflow-list-languages.md
                       - name: 创建语言
                         href: api/b2cidentityuserflow-put-languages.md
@@ -11596,11 +11596,11 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者（已弃用）
                         href: api/b2xidentityuserflow-delete-identityproviders.md
-                      - name: 列表用户属性作业
+                      - name: 列出用户属性作业
                         href: api/b2xidentityuserflow-list-userattributeassignments.md
                       - name: 创建用户属性作业
                         href: api/b2xidentityuserflow-post-userattributeassignments.md
-                      - name: 列出语言
+                      - name: 列表语言
                         href: api/b2xidentityuserflow-list-languages.md
                       - name: 获取 API 连接器配置
                         href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
@@ -11666,7 +11666,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Delete
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -13413,7 +13413,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: Permissions
+              - name: 权限
                 items:
                   - name: 权限
                     href: resources/permission.md
@@ -13535,7 +13535,7 @@ items:
                   - name: 创建
                     href: api/termstore-group-post.md
                   - name: 获取
-                    href: api/termstore-store-get-group.md
+                    href: api/termstore-group-get.md
                   - name: 删除
                     href: api/termstore-group-delete.md
                   - name: 列出

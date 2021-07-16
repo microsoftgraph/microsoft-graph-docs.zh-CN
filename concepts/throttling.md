@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 482b4cd4dba1c3cf7e2f726820480bd5e990df35
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 6b812bed46b7f389b0796dc2f79a54282e886dbe
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151508"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430198"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -170,7 +170,7 @@ Outlook 服务提供以下资源。
 
 ### <a name="cloud-communication-service-limits"></a>云通信服务限制
 
-| 资源      | 每个租户每个应用限制    |
+| 资源      | 每个应用的限制    |
 | -------------- | ------------ |
 | [通话](/graph/api/resources/call) | 每月10,000 通通话和 100 通并发通话   |
 | [会议信息](/graph/api/resources/meetinginfo)   | 每月每位用家会有 2000 则会议 |

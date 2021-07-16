@@ -4,12 +4,12 @@ description: Microsoft Graph 支持 $search OData 查询参数，以便限制请
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c552f510eb65370cd331784c98ea7359b278a56d
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 6e158d1d631536b11799b0b638b018dbbc98ef94
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53367008"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443107"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>使用搜索查询参数匹配搜索条件
 
@@ -37,21 +37,21 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 | 可搜索的电子邮件属性                | 说明 | 示例 
 |:-------------------------|:------------|:---------|
-| **attachment**           | 电子邮件附件的文件名。|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
-| **bcc**           | 电子邮件的 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
-| **body**           | 电子邮件正文。|[`me/messages?$search="body:excitement"`][search-body-example]
-| **cc**           | 电子邮件的 **cc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
-| **from**           | 电子邮件的发件人，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
-| **hasAttachment** | 如果电子邮件附件不是内联附件，则为 true；否则，为 false。 |[`me/messages?$search="hasAttachments:true"`][search-from-example]
-| **importance**           | 发件人在发送邮件时可以指定的电子邮件重要性。 可取值包括 `low`、`medium` 或 `high`。|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **Kind**           | 邮件类型。 可取值包括 `contacts`、`docs`、`email`、`faxes`、`im`、`journals`、`meetings`、`notes`、`posts`、`rssfeeds`、`tasks` 或 `voicemail`。|[`me/messages?$search="kind:voicemail"`][search-kind-example]
-| **participants**           | 电子邮件的 **from**、**to**、**cc** 和 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="participants:danas"`][search-part-example]
-| **received**           | 收件人接收电子邮件的日期。|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
-| **recipients**           | 电子邮件的 **to**、**cc** 和 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
-| **sent**           | 发件人发送电子邮件的日期。|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
-| **size**           | 邮件大小（以字节为单位）。|[`me/messages?$search="size:1..500000"`][search-size-example]
-| **subject**           | 电子邮件主题行中的文本。|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
-| **to**           | 电子邮件的 **to** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
+| **attachment**           | 电子邮件附件的文件名。|[GET][search-att-example] `../me/messages?$search="attachment:api-catalog.md"`
+| **bcc**           | 电子邮件的 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[GET][search-bcc-example] `../me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`
+| **body**           | 电子邮件正文。|[GET][search-body-example] `../me/messages?$search="body:excitement"`
+| **cc**           | 电子邮件的 **cc** 字段，可指定为 SMTP 地址、显示名称或别名。|[GET][search-cc-example] `../me/messages?$search="cc:danas"&$select=subject,ccRecipients`
+| **from**           | 电子邮件的发件人，可指定为 SMTP 地址、显示名称或别名。| [GET][search-from-example] `../me/messages?$search="from:randiw"&$select=subject,from`
+| **hasAttachment** | 如果电子邮件附件不是内联附件，则为 true；否则，为 false。 | [GET][search-from-example] `../me/messages?$search="hasAttachments:true"`
+| **importance**           | 发件人在发送邮件时可以指定的电子邮件重要性。 可取值包括 `low`、`medium` 或 `high`。|[GET][search-imp-example] `../me/messages?$search="importance:high"&$select=subject,importance`
+| **Kind**           | 邮件类型。 可取值包括 `contacts`、`docs`、`email`、`faxes`、`im`、`journals`、`meetings`、`notes`、`posts`、`rssfeeds`、`tasks` 或 `voicemail`。| [GET][search-kind-example] `../me/messages?$search="kind:voicemail"`
+| **participants**           | 电子邮件的 **from**、**to**、**cc** 和 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。| [GET][search-part-example] `../me/messages?$search="participants:danas"`
+| **received**           | 收件人接收电子邮件的日期。| [GET][search-rcvd-example] `../me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`
+| **recipients**           | 电子邮件的 **to**、**cc** 和 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。| [GET][search-rcpts-example] `../me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`
+| **sent**           | 发件人发送电子邮件的日期。|[GET][search-sent-example] `../me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`
+| **size**           | 邮件大小（以字节为单位）。|[GET][search-size-example] `../me/messages?$search="size:1..500000"`
+| **subject**           | 电子邮件主题行中的文本。|[GET][search-sbj-example] `../me/messages?$search="subject:has"&$select=subject`
+| **to**           | 电子邮件的 **to** 字段，可指定为 SMTP 地址、显示名称或别名。|[GET][search-to-example]`.../me/messages?$search="to:randiw"&$select=subject,toRecipients`
 
 
 若要详细了解 可搜索的电子邮件属性、KQL 语法、受支持的运算符和搜索技巧，请参阅以下文章：
@@ -136,13 +136,13 @@ Content-type: application/json
 
 > **注意**：标记化后，标记将独立于原始大小写进行匹配，并且将以任何顺序匹配。
 
-标记化搜索仅适用于 **displayName** 和 **description** 字段。 任何字符串类型的字段都可以放入 `$search`；非 **displayName** 和 **description** 的字段将默认遵循 `$filter` `startswith` 行为。 例如：
+标记化搜索仅适用于 **displayName** 和 **description** 字段。 字符串类型的任何字段都可以放入 `$search`; **displayName** 和 **说明之外的字段** 默认为 `$filter` `startswith` 行为。 例如：
 
-`https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
+`https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo"`
 
 这将查找显示名称看起来像 "OneVideo" 的所有组。 也可与`$search`配合使用`$filter`。 例如：
 
-`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
+`https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
 
 这将查找显示名称类似于“OneVideo”的所有启用邮件的组。 结果是根据逻辑结合（"AND"）和`$filter`整个查询`$search`来限制。 搜索文本基于大小写进行标记，但是匹配以不区分大小写的方式执行。 例如，“OneVideo”将被分割成两个输入标记“one”和“video”，但是匹配不区分大小写的属性。
 
@@ -161,17 +161,14 @@ Content-type: application/json
 | 对象类 | 说明 | 示例 |
 | ------------ | ----------- | ------- |
 | 用户 | 通讯簿显示用户的名称。 | 
-  [
-  https://graph.microsoft.com/beta/users?$search="displayName:Guthr"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$search="displayName:Guthr"`  |
 | 用户 | 通讯簿显示用户的名称或邮件。 | 
-  [
-  https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22%20OR%20%22mail%3AGuthr%22&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22%20OR%20%22mail%3AGuthr%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$search="displayName:Guthr" OR "mail:Guthr"` |
 | Group | 通讯簿显群组的名称或说明。 | 
-  [
-  https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24search%3D%22description%3AOne%22%20AND%20(%22displayName%3AVideo%22%20OR%20%22displayName%3ADrive%22)&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24search%3D%22description%3AOne%22%20AND%20(%22displayName%3AVideo%22%20OR%20%22displayName%3ADrive%22)&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive"` |
 | Group | 通讯簿在启用邮件组上显示名称。 | 
-  [
-  https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DmailEnabled%20eq%20true%26%24search%3D%22displayName%3AOneVideo%22&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DmailEnabled%20eq%20true%26%24search%3D%22displayName%3AOneVideo%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+
 
 你在 `$search` 中提供的字符串输入以及可搜索属性都按空格、不同的大小写和字符类型（数字和特殊字符）划分为多个部分。
 

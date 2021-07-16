@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 63d509637131a74ddef4555eec22982d6922bf68
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 7144cf8fed8cd8dfe19b8d271fa560a37326c97c
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366973"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53428841"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -86,7 +86,7 @@ ms.locfileid: "53366973"
 | [列出线程](../api/group-list-threads.md) | [conversationThread](conversationthread.md) 集合 | 获取组的所有线程。 |
 | [更新线程](../api/group-update-thread.md) | 无 | 更新 thread 对象的属性。 |
 | [删除线程](../api/group-delete-thread.md) | 无 | 删除 thread 对象 |
-| [List acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“接受的发件人”列表中的用户或组列表。 |
+| [List acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) 集合 | 获取此组的“接受的发件人”列表中的用户或组列表。 |
 | [添加 acceptedSender](../api/group-post-acceptedsenders.md) | [directoryObject](directoryobject.md) | 将用户或组添加到 acceptSenders 集合。 |
 | [删除 acceptedSender](../api/group-delete-acceptedsenders.md) | [directoryObject](directoryobject.md) | 从 acceptedSenders 集合中删除用户或组。 |
 | [List rejectedSenders](../api/group-list-rejectedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“遭拒的发件人”列表中的用户或组列表。 |
@@ -111,6 +111,9 @@ ms.locfileid: "53366973"
 | [resetUnseenCount](../api/group-resetunseencount.md) | 无 | 将登录用户自上次访问后未查看的所有帖子的 unseenCount 重置为 0。仅支持 Microsoft 365 组。 |
 
 ## <a name="properties"></a>属性
+
+> [!IMPORTANT]
+> 仅当使用设置为 `eventual` 和 `$count` 的 **ConsistencyLevel** 标头时，才支持 `$filter` 和 `$search` 查询参数的特定用法。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -189,7 +192,7 @@ ms.locfileid: "53366973"
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户、联系人和组。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。 支持 `$expand`。|
 |membersWithLicenseErrors|[user](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。只读。|
 |onenote|[onenote](onenote.md)| 只读。|
-|owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。 支持 `$expand`。|
+|owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）只读。空。支持 `$expand`。|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|已授予针对组的特定应用程序的权限。支持 `$expand`。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片。 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
