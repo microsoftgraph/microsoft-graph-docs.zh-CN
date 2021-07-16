@@ -234,6 +234,9 @@ items:
                 href: windowsupdates-schedule-deployment.md
               - name: 管理监视规则
                 href: windowsupdates-manage-monitoring-rules.md
+          - name: 多租户管理（预览）
+            displayName: Microsoft 365 Lighthouse
+            href: managedtenants-concept-overview.md
       - name: 教育
         items:
           - name: 概述
@@ -442,7 +445,7 @@ items:
               - name: 发送活动源通知
                 href: teams-send-activityfeednotifications.md
               - name: 最佳做法
-                href: activity-feed-notifications-best-practices.md
+                href: teams-activity-feed-notifications-best-practices.md
       - name: 待办任务
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -527,11 +530,10 @@ items:
                 href: change-notifications-delivery.md
               - name: 更改云打印的通知
                 href: universal-print-webhook-notifications.md
-              - name: 在 Microsoft Teams 更改通知
-                displayName: Change notifications in Microsoft Teams
+              - name: 在 Microsoft Teams 中更改通知
                 items:
                   - name: 概述
-                    href: change-notification-in-microsoft-teams-overview.md
+                    href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Teams 和频道
                     href: teams-changenotifications-team-and-channel.md
                   - name: 团队成员资格
