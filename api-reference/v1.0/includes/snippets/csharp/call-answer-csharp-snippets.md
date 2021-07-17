@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 551cad07566193a6460496ecdb0f7bedea70abde
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 863d6531274a9296a9361c015a2e86aecf0c1c52
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50784622"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53444955"
 ---
 ```csharp
 
@@ -24,7 +24,7 @@ var acceptedModalities = new List<Modality>()
 };
 
 await graphClient.Communications.Calls["{call-id}"]
-    .Answer(callbackUri,mediaConfig,acceptedModalities)
+    .Answer(callbackUri,mediaConfig,acceptedModalities,null)
     .Request()
     .PostAsync();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 006d57ba2e599e4e73dc5fd189a39b38a68b0dc8
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 6bf1ae44525ff7e43c7d74a907c80195c5bc9bdf
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208552"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53440502"
 ---
 ```javascript
 
@@ -51,7 +51,7 @@ const accessReviewScheduleDefinition = {
     recurrence: {
       pattern: {
         type: 'absoluteMonthly',
-        dayOfMonth: '5',
+        dayOfMonth: 5,
         interval: 3
       },
       range: {

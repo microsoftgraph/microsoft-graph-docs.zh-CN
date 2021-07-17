@@ -6,46 +6,45 @@ title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1c8559fdc469823b3218a8af93ccda0d10ec357b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 342e7432b000b5ee6632b55857369ad70cad77e6
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475707"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466926"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="e32e0-104">在网站的网站页面列表中列出页面</span><span class="sxs-lookup"><span data-stu-id="e32e0-104">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="00855-104">在网站的网站页面列表中列出页面</span><span class="sxs-lookup"><span data-stu-id="00855-104">List the pages in the site pages list of a site</span></span>
 
-<span data-ttu-id="e32e0-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e32e0-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="00855-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="00855-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e32e0-106">从网站网站中的网站页面[列表中获取][] [sitePage][]对象[的集合][]。</span><span class="sxs-lookup"><span data-stu-id="e32e0-106">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="e32e0-107">将返回网站中所有页面 (分页) 。</span><span class="sxs-lookup"><span data-stu-id="e32e0-107">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="00855-106">从网站网站中的网站页面[列表中获取][] [sitePage][]对象[的集合][]。</span><span class="sxs-lookup"><span data-stu-id="00855-106">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="00855-107">将返回网站中所有页面 (分页) 。</span><span class="sxs-lookup"><span data-stu-id="00855-107">All pages in the site are returned (with pagination).</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="e32e0-111">权限</span><span class="sxs-lookup"><span data-stu-id="e32e0-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="00855-111">权限</span><span class="sxs-lookup"><span data-stu-id="00855-111">Permissions</span></span>
 
-<span data-ttu-id="e32e0-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e32e0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="00855-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="00855-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e32e0-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="e32e0-114">Permission type</span></span>      | <span data-ttu-id="e32e0-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e32e0-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="00855-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="00855-114">Permission type</span></span>      | <span data-ttu-id="00855-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="00855-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e32e0-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e32e0-116">Delegated (work or school account)</span></span> | <span data-ttu-id="e32e0-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e32e0-117">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e32e0-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e32e0-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e32e0-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="e32e0-119">Not supported.</span></span>    |
-|<span data-ttu-id="e32e0-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="e32e0-120">Application</span></span> | <span data-ttu-id="e32e0-121">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e32e0-121">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="00855-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="00855-116">Delegated (work or school account)</span></span> | <span data-ttu-id="00855-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="00855-117">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="00855-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="00855-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="00855-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="00855-119">Not supported.</span></span>    |
+|<span data-ttu-id="00855-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="00855-120">Application</span></span> | <span data-ttu-id="00855-121">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="00855-121">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e32e0-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e32e0-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="00855-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="00855-122">HTTP request</span></span>
 
 ```msgraph-interactive
 GET /sites/{site-id}/pages
-
 ```
 
-## <a name="example"></a><span data-ttu-id="e32e0-123">示例</span><span class="sxs-lookup"><span data-stu-id="e32e0-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="00855-123">示例</span><span class="sxs-lookup"><span data-stu-id="00855-123">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e32e0-124">请求</span><span class="sxs-lookup"><span data-stu-id="e32e0-124">Request</span></span>
+### <a name="request"></a><span data-ttu-id="00855-124">请求</span><span class="sxs-lookup"><span data-stu-id="00855-124">Request</span></span>
 
 <!-- 
 { 
@@ -60,7 +59,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="e32e0-125">响应</span><span class="sxs-lookup"><span data-stu-id="e32e0-125">Response</span></span>
+### <a name="response"></a><span data-ttu-id="00855-125">响应</span><span class="sxs-lookup"><span data-stu-id="00855-125">Response</span></span>
 
 <!-- 
 { 

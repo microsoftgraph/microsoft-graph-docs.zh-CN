@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6d5b0b5632edf3c03368d37bc35b5d472f2f6368
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 90751b869c2f28a84da5ef8db2cdf0c1f7a734bf
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208572"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53440512"
 ---
 ```java
 
@@ -45,7 +45,7 @@ settings.instanceDurationInDays = 3;
 PatternedRecurrence recurrence = new PatternedRecurrence();
 RecurrencePattern pattern = new RecurrencePattern();
 pattern.type = RecurrencePatternType.ABSOLUTE_MONTHLY;
-pattern.dayOfMonth = "5";
+pattern.dayOfMonth = 5;
 pattern.interval = 3;
 recurrence.pattern = pattern;
 RecurrenceRange range = new RecurrenceRange();

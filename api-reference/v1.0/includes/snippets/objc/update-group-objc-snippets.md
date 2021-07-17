@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7b987c3a03b5bcf3122c4419be6e4ec99921e9dd
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 7f45af93cb5c56341be4ecaccf2019ea23c8dbd6
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48622192"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53444658"
 ---
 ```objc
 
@@ -17,14 +17,13 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphGroup *group = [[MSGraphGroup alloc] init];
-[group setDescription:@"description-value"];
-[group setDisplayName:@"displayName-value"];
+[group setDescription:@"Library Assist"];
+[group setDisplayName:@"Library Assist"];
 NSMutableArray *groupTypesList = [[NSMutableArray alloc] init];
-[groupTypesList addObject: @"groupTypes-value"];
+[groupTypesList addObject: @"Unified"];
 [group setGroupTypes:groupTypesList];
-[group setMail:@"mail-value"];
 [group setMailEnabled: true];
-[group setMailNickname:@"mailNickname-value"];
+[group setMailNickname:@"library-help"];
 
 NSError *error;
 NSData *groupData = [group getSerializedDataWithError:&error];
