@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 724110fb32fc225cc9fb0617c97ce2a7b752a6b6
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: d4cac5a2b0d7b5d9c2e6a969da7e8c05c85322fb
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401559"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467132"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -911,7 +911,7 @@ ms.locfileid: "53401559"
 | 父级             | 0     | 用户的父级。                       |
 | relative           | 1     | 用户的相对。                     |
 | aide               | 2     | 用户的助手。                         |
-| 一个             | 3     | 用户的 <3> <2> <2>。                       |
+| 一个             | 3     | 用户的。                       |
 | 保护者           | 4      | 用户的保护者。                     |
 | Child              | 5      | 用户的子级。                        |
 | other              | 6      | 与用户未指定的关系。 |
@@ -1309,7 +1309,7 @@ ms.locfileid: "53401559"
 |:-------------------------
 | 替换
 | Append
-| 删除
+| Delete
 | Insert
 | Prepend
 
@@ -1780,7 +1780,7 @@ ms.locfileid: "53401559"
 | 无   | 0     |
 | 添加    | 1     |
 | 更新 | 2     |
-| 删除 | 4      |
+| Delete | 4      |
 
 ### <a name="chatmessagetype-values"></a>chatMessageType 值
 
@@ -2005,7 +2005,7 @@ ms.locfileid: "53401559"
 |成员|值|
 |:---|:---|
 |无|0|
-|高|1|
+|High|1|
 |低|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>threatAssessmentContentType 值
@@ -2154,20 +2154,6 @@ ms.locfileid: "53401559"
 | 已建议              | 1     | 由系统自动创建的已连接组织具有此状态值。 它们不包含在具有请求者作用域类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。   |
 | unknownFutureValue    | 2     | sentinel 成员。                                                                                                                                                                                                 |
 
-### <a name="identitysourcetype-values"></a>identitySourceType 值
-
-|成员|
-|:---|
-|azureActiveDirectory|
-|external|
-
-### <a name="externalgroupmembertype-values"></a>externalGroupMemberType 值
-
-|成员|
-|:---|
-|用户|
-|group|
-
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType 值
 
 | 成员                | 值 | 说明                         |
@@ -2187,15 +2173,6 @@ ms.locfileid: "53401559"
 | custom                | 2     | 此用户流属性类型表示它是由用户创建的   |
 |必需|3||
 | unknownFutureValue    | 4      | sentinel 成员。                                                 |
-
-### <a name="connectionstate-values"></a>connectionState 值
-
-|成员|
-|:---|
-|draft|
-|ready|
-|已过时|
-|limitExceeded|
 
 ### <a name="permissionclassificationtype-values"></a>permissionClassificationType 值
 
@@ -2457,7 +2434,7 @@ ms.locfileid: "53401559"
 |成员|
 |:---|
 |团队|
-|频道|
+|channel|
 |聊天|
 |unknownFutureValue|
 

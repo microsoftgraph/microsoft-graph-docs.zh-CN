@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 32e93a6aa60793ba4fd30977d030dd2263a8c4c9
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 36de78af3061a489a2cc8027c18185d302c62ba5
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298339"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466942"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -52,7 +52,7 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |:---|:---|:---|
 |displayName|String|策略显示名称。|
 |说明|String|策略的说明。|
-|canExtend|Boolean|指示用户是否可以在审批后延长访问包分配持续时间。|
+|canExtend|布尔|指示用户是否可以在审批后延长访问包分配持续时间。|
 |durationInDays|Int32|此策略中的分配在到期之前持续等待的天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who从此策略请求此访问包。|
@@ -101,7 +101,7 @@ Content-length: 1000
         "approvalStages": [{
                 "approvalStageTimeOutInDays": 14,
                 "isApproverJustificationRequired": true,
-                "isEscalationEnabled": true,
+                "isEscalationEnabled": false,
                 "escalationTimeInMinutes": 11520,
                 "primaryApprovers": [{
                         "@odata.type": "#microsoft.graph.groupMembers",
@@ -116,9 +116,6 @@ Content-length: 1000
                 ]
             }
         ]
-    },
-    "accessReviewSettings": {
-        "isEnabled": false
     },
     "questions": [{
         "isRequired": false,

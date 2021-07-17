@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 284467e4831af802699816f7a1c95195fffa9112
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0cb8f21b9428eb204947e9e085a6ff3c9c5abf7e
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208567"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53440500"
 ---
 ```objc
 
@@ -50,7 +50,7 @@ MSGraphAccessReviewScheduleSettings *settings = [[MSGraphAccessReviewScheduleSet
 MSGraphPatternedRecurrence *recurrence = [[MSGraphPatternedRecurrence alloc] init];
 MSGraphRecurrencePattern *pattern = [[MSGraphRecurrencePattern alloc] init];
 [pattern setType: [MSGraphRecurrencePatternType absoluteMonthly]];
-[pattern setDayOfMonth:@"5"];
+[pattern setDayOfMonth: 5];
 [pattern setInterval: 3];
 [recurrence setPattern:pattern];
 MSGraphRecurrenceRange *range = [[MSGraphRecurrenceRange alloc] init];

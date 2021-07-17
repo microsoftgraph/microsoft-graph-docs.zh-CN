@@ -5,12 +5,12 @@ description: 发布内容类型中心网站中的内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 2137c9fe371103d68785e67cfc815a15dba2ec54
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d69cbdabbb82612945dc6df85617e50bc2ca5b2c
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770437"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467083"
 ---
 # <a name="contenttype-publish"></a>contentType： publish
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50770437"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.FullControl.All    |
 |委派（个人 Microsoft 帐户） | Sites.FullControl.All    |
-|Application | Sites.FullControl.All |
+|应用程序 | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +38,7 @@ ms.locfileid: "50770437"
 POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
 
->**注意：** siteId 表示内容类型中心网站。
+>**注意：** `siteId` 表示内容类型中心网站。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|

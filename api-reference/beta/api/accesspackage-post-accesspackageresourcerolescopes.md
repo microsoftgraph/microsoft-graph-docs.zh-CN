@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 93b7e33bd072d4e92d15125a4009d5f33477326e
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 6b4abe2f9c2c0060e97560a26c22d19ed53e01b7
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439875"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466958"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>创建 accessPackageResourceRoleScope
 
@@ -47,7 +47,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象的 JSON 表示形式。  在 对象中包括与 [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [accessPackageResourceScope 的关系](../resources/accesspackageresourcescope.md)。
+在请求正文中，提供 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象的 JSON 表示形式。  在 对象中包括[与 accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象的关系（可以从列出目录中资源的访问包资源角色的请求[](accesspackagecatalog-list-accesspackageresourceroles.md)获取）和[accessPackageResourceScope](../resources/accesspackageresourcescope.md)对象（可以从请求获取，以使用 列出[访问](accesspackagecatalog-list-accesspackageresources.md)包资源 `$expand=accessPackageResourceScopes` ）
 
 ## <a name="response"></a>响应
 
@@ -59,7 +59,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。  组的访问包资源必须已添加到包含此访问包的访问包目录中。
+下面展示了示例请求。  在此请求之前，该组的访问包资源必须已添加到包含此访问包的访问 `1d08498d-72a1-403f-8511-6b1f875746a0` `b31fe1f1-3651-488f-bd9a-1711887fd4ca` 包目录中。  资源可以通过创建访问包资源请求 添加到 [目录中](accesspackageresourcerequest-post.md)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

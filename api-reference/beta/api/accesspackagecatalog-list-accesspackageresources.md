@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: be2ad10b946574ca48b93ada1d7833262f127059
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3aaeddef635a80bb8a54d3680281b8b9edae98ae
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048559"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466943"
 ---
 # <a name="list-accesspackageresources"></a>列出 accessPackageResources
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 OData 查询参数来帮助自定义响应。 例如，若要检索每个资源的访问包资源范围和环境，请包括在 `$expand=accessPackageResourceScopes,accessPackageResourceEnvironment` 查询中。 若要检索资源的可用角色，请包含 `$expand=accessPackageResourceRoles` 。 若要仅检索应用程序的资源，而不是检索组或网站的资源，请 `$filter=resourceType eq 'Application'` 包括在查询中。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -60,7 +60,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面是一个请求示例，使用筛选器选择特定类型的资源并 `$expand` 返回每个资源的资源范围。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -69,7 +69,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources?$filter=resourceType eq 'Application'&$expand=accessPackageResourceScopes
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageresources-csharp-snippets.md)]
@@ -115,11 +115,23 @@ Content-type: application/json
       "description": "Example application",
       "url": "https://myapps.microsoft.com/example.com/signin/Faculty%20cafeteria%20ordering/f1e3b407-942d-4934-9a3f-cef1975cb988/",
       "resourceType": "Application",
-      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e"
+      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+      "accessPackageResourceScopes": [
+         {
+            "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
+            "displayName": "Root",
+            "description": "Root Scope",
+            "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+            "originSystem": "AadApplication",
+            "isRootScope": true
+         }
+      ]
     }
   ]
 }
 ```
+
+https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/e71fafe7-9ccb-4c5a-a7b3-77ec35e83e3c/accessPackageResources
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

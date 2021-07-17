@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e045a8235d377759c85663674a2f111968520f51
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 707d3e7a11983f2ecc1ec9df9703582b01f33e2b
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048615"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466955"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>创建 accessPackageAssignmentPolicy
 
@@ -318,7 +318,7 @@ Content-type: application/json
         "approvalStages": [{
                 "approvalStageTimeOutInDays": 14,
                 "isApproverJustificationRequired": true,
-                "isEscalationEnabled": true,
+                "isEscalationEnabled": false,
                 "escalationTimeInMinutes": 11520,
                 "primaryApprovers": [{
                         "@odata.type": "#microsoft.graph.groupMembers",
@@ -333,9 +333,6 @@ Content-type: application/json
                 ]
             }
         ]
-    },
-    "accessReviewSettings": {
-        "isEnabled": false
     },
     "questions": [{
         "isRequired": false,

@@ -4,12 +4,12 @@ description: 了解如何配置应用程序以代表用户访问联机会议。
 author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: fa3771c1325f0c2a5f10b425e2eca51e9d1534ac
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 331a3873aa619c6f86fc8109fc6f572d990f9686
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896702"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467167"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问联机会议
 
@@ -44,6 +44,13 @@ ms.locfileid: "52896702"
 
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
+   ```
+5.  (可选) 向整个租户授予策略。 这适用于未分配应用程序访问策略的用户。 有关详细信息，请参阅 另请参阅 部分中的 cmdlet[链接。](#see-also)
+
+   运行以下 cmdlet，替换 **PolicyName** 参数。
+
+   ```powershell
+   Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Global
    ```
 
 > [!NOTE]
