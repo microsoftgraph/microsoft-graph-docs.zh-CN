@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: dd51efc4c446449c8f09b89df0c977f5cc7ada65
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 3fdde34ec80f1436a28a8b015f91eddff615ea44
+ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401542"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456420"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -218,7 +218,7 @@ ms.locfileid: "53401542"
 | onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
 | onPremisesUserPrincipalName | String | 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 | otherMails | 字符串集合 | 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。<br>注意：虽然此属性可以包含重音字符，但可能会导致用户访问第一方应用程序出现问题。<br><br>支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
-| passwordPolicies | String | 指定用户的密码策略。 此值表示枚举，其中一个可能 `DisableStrongPassword`为枚举值，允许指定超过默认策略的密码。 `DisablePasswordExpiration` 也可以指定 。 可同时指定两者;例如： `DisablePasswordExpiration, DisableStrongPassword`。<br><br>支持 `$filter`（`ne`、`NOT`）。|
+| passwordPolicies | String | 指定用户的密码策略。 此值表示枚举，其中一个可能 `DisableStrongPassword`为枚举值，允许指定超过默认策略的密码。 `DisablePasswordExpiration` 也可以指定 。 可同时指定两者;例如： `DisablePasswordExpiration, DisableStrongPassword`。 有关默认密码策略的详细信息，请参阅 [Azure AD pasword 策略](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)。 <br><br>支持 `$filter`（`ne`、`NOT`）。|
 | passwordProfile | [passwordProfile](passwordprofile.md) | 指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。 **注意：** 对于 Azure B2C 租户， **forceChangePasswordNextSignIn** 属性应设置为 `false` ，并且应在第一次登录时使用自定义策略和用户流强制重置密码。 请参阅 [首次登录时强制重置](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。|
 | pastProjects | String collection | 供用户枚举其过去项目的列表。 <br><br>仅在 `$select` 上返回。 |
 | postalCode | String | 用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。最大长度为 40 个字符。<br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|

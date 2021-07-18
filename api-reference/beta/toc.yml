@@ -13174,68 +13174,62 @@ items:
                 href: resources/searchresponse.md
               - name: 查询数据
                 href: api/search-query.md
-          - name: 索引（预览）
+          - name: 索引
             items:
               - name: 概述
                 href: resources/indexing-api-overview.md
               - name: 外部连接
                 items:
                   - name: 外部连接
-                    href: resources/externalconnection.md
+                    href: resources/externalconnectors-externalconnection.md
                   - name: 列出外部连接
-                    href: api/externalconnection-list.md
-                  - name: 获取外部连接
-                    href: api/externalconnection-get.md
+                    href: api/externalconnectors-externalconnection-list.md
                   - name: 创建外部连接
-                    href: api/external-post-connections.md
+                    href: api/externalconnectors-external-post-connections.md
+                  - name: 获取外部连接
+                    href: api/externalconnectors-externalconnection-get.md
                   - name: 更新外部连接
-                    href: api/externalconnection-update.md
+                    href: api/externalconnectors-externalconnection-update.md
                   - name: 删除外部连接
-                    href: api/externalconnection-delete.md
-                  - name: 创建架构
-                    href: api/externalconnection-post-schema.md
+                    href: api/externalconnectors-externalconnection-delete.md
                   - name: 获取操作
-                    href: api/connectionoperation-get.md
-                  - name: 创建外部项
-                    href: api/externalconnection-put-items.md
+                    href: api/externalconnectors-connectionoperation-get.md
               - name: 架构
                 items:
                   - name: 架构
-                    href: resources/schema.md
-                  - name: 获取架构
-                    href: api/schema-get.md
+                    href: resources/externalconnectors-schema.md
                   - name: 创建架构
-                    href: api/externalconnection-post-schema.md
+                    href: api/externalconnectors-externalconnection-post-schema.md
+                  - name: 获取架构
+                    href: api/externalconnectors-schema-get.md
               - name: 外部项
                 items:
                   - name: 外部项
-                    href: resources/externalitem.md
-                  - name: 创建
-                    href: api/externalconnection-put-items.md
-                  - name: 获取
-                    href: api/externalitem-get.md
-                  - name: 更新
-                    href: api/externalitem-update.md
-                  - name: 删除
-                    href: api/externalitem-delete.md
+                    href: resources/externalconnectors-externalitem.md
+                  - name: 创建外部项
+                    href: api/externalconnectors-externalconnection-put-items.md
+                  - name: 获取外部项
+                    href: api/externalconnectors-externalitem-get.md
+                  - name: 更新外部项
+                    href: api/externalconnectors-externalitem-update.md
+                  - name: 删除外部项
+                    href: api/externalconnectors-externalitem-delete.md
               - name: 外部组
                 items:
                   - name: 外部组
-                    href: resources/externalgroup.md
-                  - name: 创建
-                    href: api/externalconnection-post-groups.md
-                  - name: 删除
-                    href: api/externalgroup-delete.md
-                  - name: 创建成员
-                    href: api/externalgroup-post-members.md
+                    href: resources/externalconnectors-externalgroup.md
+                  - name: 创建外部组
+                    href: api/externalconnectors-externalconnection-post-groups.md
+                  - name: 删除外部组
+                    href: api/externalconnectors-externalgroup-delete.md
               - name: 外部组的成员
                 items:
                   - name: 外部组的成员
-                    href: resources/externalgroupmember.md
-                  - name: 创建
-                    href: api/externalgroup-post-members.md
-                  - name: 删除
-                    href: api/externalgroupmember-delete.md
+                    href: resources/externalconnectors-externalgroupmember.md
+                  - name: 创建外部组的成员
+                    href: api/externalconnectors-externalgroup-post-members.md
+                  - name: 删除外部组的成员
+                    href: api/externalconnectors-externalgroupmember-delete.md
       - name: 安全性
         displayname: 'Security API, Microsoft Graph Security API'
         items:
