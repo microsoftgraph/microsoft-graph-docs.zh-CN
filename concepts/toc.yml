@@ -378,26 +378,24 @@ items:
         items:
           - name: 概述
             href: search-concept-overview.md
-          - name: 查询
-            items:
-              - name: 搜索邮件
-                href: search-concept-messages.md
-              - name: 搜索事件
-                href: search-concept-events.md
-              - name: OneDrive 和 SharePoint 中的搜索内容
-                href: search-concept-files.md
-              - name: 搜索连接器
-                href: search-concept-custom-types.md
-              - name: 搜索人员（预览）
-                href: search-concept-person.md
-              - name: 排序搜索结果（预览）
-                href: search-concept-sort.md
-              - name: 改进搜索结果（预览）
-                href: search-concept-aggregation.md
-              - name: 请求拼写更正（预览）
-                href: search-concept-speller.md
-              - name: 搜索显示布局（预览版）
-                href: search-concept-display-layout.md
+          - name: 搜索邮件
+            href: search-concept-messages.md
+          - name: 搜索事件
+            href: search-concept-events.md
+          - name: OneDrive 和 SharePoint 中的搜索内容
+            href: search-concept-files.md
+          - name: 搜索连接器
+            href: search-concept-custom-types.md
+          - name: 搜索人员（预览版）
+            href: search-concept-person.md
+          - name: 排序搜索结果（预览）
+            href: search-concept-sort.md
+          - name: 改进搜索结果（预览）
+            href: search-concept-aggregation.md
+          - name: 请求拼写更正（预览）
+            href: search-concept-speller.md
+          - name: 搜索显示布局（预览版）
+            href: search-concept-display-layout.md
       - name: 安全性
         items:
           - name: 概述
