@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 90351fc6a4e74adaf6b443ec9d81e38cf4e8bec0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7c310d24c8c01b1f3349bda51498582741cd0280
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949771"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581656"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var name = "test5";
 
-var reference = "=Sheet1!$F$15:$N$27";
+var reference = JsonDocument.Parse(@"""=Sheet1!$F$15:$N$27""");
 
 var comment = "Comment for the named item";
 

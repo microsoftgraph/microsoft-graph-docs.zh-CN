@@ -5,18 +5,19 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 11c793a01cd1b0027e12cd831984dc30cd04961c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 95f452483e4ff1503208c9b4bbd67ceb6129df73
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945660"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "53580777"
 ---
-# <a name="identityprovider-resource-type"></a>identityProvider 资源类型
-
+# <a name="identityprovider-resource-type-deprecated"></a>identityProvider 资源类型（已弃用）
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 对 Azure Active Directory 租户和 Azure AD B2C 租户都标识具有[外部标识](/azure/active-directory/external-identities/)的身份提供程序。
 
@@ -28,8 +29,7 @@ ms.locfileid: "50945660"
 
 在 Azure AD B2C 租户中配置身份提供程序，用户可在应用程序中使用社交帐户或自定义 OpenID Connect 支持的提供程序进行注册和登录。 例如，应用程序可使用 Azure AD B2C 让用户能够通过 Facebook 帐户或他们自己的符合 OIDC 协议的自定义身份提供程序注册服务。
 
-
-如果是具有 `OpenIDConnect` 且为 `type` 的自定义 OpenID Connect 身份提供程序， 则使用 [openIdConnectProvider](../resources/openidconnectprovider.md) 资源类型表示，该资源类型将继承自身份提供程序资源类型。 
+如果是具有 `OpenIDConnect` 且为 `type` 的自定义 OpenID Connect 身份提供程序， 则使用 [openIdConnectProvider](../resources/openidconnectprovider.md) 资源类型表示，该资源类型将继承自身份提供程序资源类型。
 
 ## <a name="methods"></a>方法
 
@@ -49,7 +49,7 @@ ms.locfileid: "50945660"
 |clientId|字符串|使用身份提供程序注册应用时获取的应用客户端 ID。 这是必填字段。  必填。 不可为空。|
 |clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 这是只读的。 读取操作将返回 `****`。 这是必填字段。 必填。 不可为空。|
 |id|字符串|标识提供程序的 ID。|
-|name|字符串|标识提供程序的显示名称。 不可为空。|
+|name|字符串|标识提供程序的显示名称。不可为 null。|
 |type|字符串|身份提供程序类型是必填字段。 对于 B2B 方案： `Google`， `Facebook`。 对于 B2C 方案： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、`QQ`、 `WeChat`、 `OpenIDConnect`。 不可为空。|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>获取客户端 ID 和密码的位置

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 31ae4f9ffad6f85466af0adede65c683499e06bd
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 98aa1b5a97fd1a05749b6baed25e5c6720a9af49
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921456"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579244"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -100,8 +100,6 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 ---
 
 
----
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
@@ -161,8 +159,6 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 ---
 
 
----
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
@@ -184,7 +180,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-retrieve-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 3：仅为 Azure AD B2C (检索特定的 **OpenID Connect** 标识) 
+### <a name="example-3-retrieve-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 3：仅为 **Azure AD** B2C (检索特定 OpenID 连接标识提供程序) 
 
 #### <a name="request"></a>请求
 
@@ -219,8 +215,6 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm
 
 ---
 
-
----
 
 #### <a name="response"></a>响应
 
@@ -291,8 +285,6 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OI
 
 ---
 
-
----
 
 #### <a name="response"></a>响应
 

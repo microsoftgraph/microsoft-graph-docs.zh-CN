@@ -1418,7 +1418,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -4564,6 +4564,13 @@ items:
                 items:
                   - name: 概述
                     href: resources/authenticationmethodspolicies-overview.md
+                  - name: 身份验证方法策略
+                    href: resources/authenticationmethodspolicy.md
+                    items:
+                      - name: 获取
+                        href: api/authenticationmethodspolicy-get.md
+                      - name: 更新
+                        href: api/authenticationmethodspolicy-update.md
                   - name: FIDO2 策略
                     href: resources/fido2authenticationmethodconfiguration.md
                     items:
@@ -4704,17 +4711,38 @@ items:
                       - name: 消除
                         href: api/riskyuser-dismiss.md
               - name: 标识提供程序
-                href: resources/identityprovider.md
                 items:
-                  - name: 列出标识提供程序
+                  - name: 标识提供程序基础
+                    href: resources/identityproviderbase.md
+                  - name: 内置标识提供程序
+                    href: resources/builtinidentityprovider.md
+                  - name: 社会标识提供程序
+                    href: resources/socialidentityprovider.md
+                  - name: 列出
+                    href: api/identityproviderbase-list.md
+                  - name: 创建
+                    href: api/identityproviderbase-post-identityproviders.md
+                  - name: 获取
+                    href: api/identityproviderbase-get.md
+                  - name: 更新
+                    href: api/identityproviderbase-update.md
+                  - name: 删除
+                    href: api/identityproviderbase-delete.md
+                  - name: 列出可用的提供程序类型
+                    href: api/identityproviderbase-list-availableprovidertypes.md
+              - name: '已 (标识提供程序) '
+                items:
+                  - name: 标识提供程序类型
+                    href: resources/identityprovider.md
+                  - name: 列出
                     href: api/identityprovider-list.md
-                  - name: 创建标识提供程序
+                  - name: 创建
                     href: api/identityprovider-post-identityproviders.md
-                  - name: 获取标识提供程序
+                  - name: 获取
                     href: api/identityprovider-get.md
-                  - name: 更新标识提供程序
+                  - name: 更新
                     href: api/identityprovider-update.md
-                  - name: 删除标识提供程序
+                  - name: 删除
                     href: api/identityprovider-delete.md
                   - name: 列出可用的提供程序类型
                     href: api/identityprovider-list-availableprovidertypes.md
@@ -4742,7 +4770,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: 删除本地化
                     href: api/organizationalbrandingpropertieslocalization-delete.md
-              - name: 策略
+              - name: Policy
                 href: resources/policy-overview.md
                 items:
                   - name: 基于活动的超时策略
@@ -4935,7 +4963,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Delete
+                      - name: 删除
                         href: api/identityapiconnector-delete.md
           - name: 管控
             items:
@@ -4947,8 +4975,6 @@ items:
                     items:
                       - name: 列表
                         href: api/accessreviewscheduledefinition-list.md
-                      - name: 列表实例
-                        href: api/accessreviewscheduledefinition-list-instances.md
                       - name: 获取
                         href: api/accessreviewscheduledefinition-get.md
                       - name: 创建

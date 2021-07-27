@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 47e136bc63cd7b95bdcf3778047eb77db58c8de0
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 2f7f8fd855ad406d5422806c1e6ef1bc6649a78b
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921380"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579223"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 命名空间：microsoft.graph
@@ -63,11 +63,11 @@ GET /identity/identityProviders
 
 对于 Azure AD B2C 租户，此方法在响应正文中返回 响应代码和 `200 OK` socialIdentityProvider、openIdConnectIdentityProvider 和/或[appleIdentityProvider](../resources/appleidentityprovider.md)对象的集合[](../resources/socialidentityprovider.md)[](../resources/openidconnectidentityprovider.md)。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
 ### <a name="example-1-list-all-identityprovider-configured-in-an-azure-ad-tenant"></a>示例 1：列出在 Azure AD 租户中配置的所有 **identityProvider**
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 下面展示了示例请求。
 
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -139,7 +139,7 @@ Content-Type: application/json
 
 ### <a name="example-2-list-all-identityprovider-configured-in-an-azure-ad-b2c-tenant"></a>示例 2：列出在 Azure AD B2C 租户中配置的所有 **identityProvider**
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 下面展示了示例请求。
 
 <!-- {
@@ -152,7 +152,7 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

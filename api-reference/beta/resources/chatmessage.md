@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 109a761f876018cbfce9d94da74e96724b01f17c
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c3a1a0f8ce7fe1635a731a411525c9bcc47b8aad
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207033"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533197"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -58,7 +58,7 @@ ms.locfileid: "53207033"
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而仅适用于 chats)  |
 |起始数量|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| 只读。 聊天消息的发送者的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
-|messageType|字符串|聊天消息的类型。 可能的值是 `message` ：。|
+|messageType|string|聊天消息的类型。 可能的值包括 `message`、`unknownFutureValue`、`systemEventMessage`。|
 |createdDateTime|dateTimeOffset|创建聊天消息的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 创建聊天消息的时间戳 (设置) 修改，包括添加或删除回应时。 |
 |lastEditedDateTime|dateTimeOffset|只读。 编辑聊天消息的时间戳。 在用户界面中触发"已编辑Teams标记。 如果未进行编辑，则值为 `null` 。|
@@ -72,9 +72,10 @@ ms.locfileid: "53207033"
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此聊天消息的反应 (例如，如) 。|
 |区域设置|string|客户端设置的聊天消息区域设置。 始终设置为 `en-us`。|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序中数据丢失防护设置的策略违反 () 属性。|
-|chatId|字符串|如果消息是在聊天中发送的，则代表聊天的标识。|
+|chatId|string|如果消息是在聊天中发送的，则代表聊天的标识。|
 |channelIdentity|[channelIdentity](channelidentity.md)|如果消息是在频道中发送的，则代表频道的标识。|
 |webUrl|string|只读。 指向邮件中Microsoft Teams。|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|只读。  如果存在，表示聊天、频道或团队中发生的事件的详细信息，例如，已添加成员等。 对于事件消息 **，messageType** 属性将设置为 `systemEventMessage` 。|
 ## <a name="relationships"></a>关系
 
 | 关系   | 类型    | 说明 |
@@ -128,7 +129,10 @@ ms.locfileid: "53207033"
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "chatId": "string",
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "webUrl": "string"
+  "webUrl": "string",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

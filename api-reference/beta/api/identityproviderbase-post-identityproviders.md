@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 6f9a25193b5fb0a385d818c4c066ef885edf1f47
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 1ad1da3a7e43d0d77f35efa15157078e9e3386ab
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579727"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533798"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 命名空间：microsoft.graph
@@ -64,7 +64,7 @@ POST /identity/identityProviders
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |clientId|字符串|向标识提供程序注册应用程序时，获取应用程序的客户端标识符。|
-|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回 `****`。|
+|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回"\*\*\*\*"。|
 |displayName|字符串|标识提供程序的显示名称。|
 |identityProviderType|String|对于 B2B 方案，可能的值为： `Google`、 `Facebook`。 对于 B2C 方案，可能的值： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、 `QQ`、 `WeChat`。|
 
@@ -147,6 +147,8 @@ Content-length: 154
 
 ---
 
+
+---
 
 #### <a name="response"></a>响应
 
@@ -231,6 +233,7 @@ Content-type: application/json
 ---
 
 
+---
 
 #### <a name="response"></a>响应
 

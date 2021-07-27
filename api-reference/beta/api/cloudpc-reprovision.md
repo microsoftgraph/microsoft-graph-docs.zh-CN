@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 97c80333b61bed09e3747e7732ab778810b0c7fd
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 483a58ca7c753ec0ee8e5a2f2465b8b4cad870b3
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546866"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533801"
 ---
 # <a name="cloudpc-reprovision"></a>cloudPC：重新设置
 
@@ -21,7 +21,7 @@ ms.locfileid: "52546866"
 重新设置特定的云电脑。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

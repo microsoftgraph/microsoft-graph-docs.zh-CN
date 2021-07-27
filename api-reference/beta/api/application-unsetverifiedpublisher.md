@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7560d9935a2cf35bcf67637ce2353932ba522d2b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8fd70a3c84889862244437973cc6e4d6712beee2
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759914"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578825"
 ---
 # <a name="application-unsetverifiedpublisher"></a>application：unsetVerifiedPublisher
 
@@ -18,7 +18,7 @@ ms.locfileid: "50759914"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消设置之前在[应用程序上设置的 verifiedPublisher](../resources/verifiedPublisher.md) ，删除所有已验证的发布者属性。 [](../resources/application.md) 有关详细信息，请参阅 [发布者验证](/azure/active-directory/develop/publisher-verification-overview)。
+取消设置之前在[应用程序上设置的 verifiedPublisher](../resources/verifiedPublisher.md) ，删除所有已验证的发布者属性。 [](../resources/application.md) 有关详细信息，请参阅验证[Publisher验证](/azure/active-directory/develop/publisher-verification-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -72,6 +72,14 @@ POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-unsetverifiedpublisher-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/application-unsetverifiedpublisher-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-unsetverifiedpublisher-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

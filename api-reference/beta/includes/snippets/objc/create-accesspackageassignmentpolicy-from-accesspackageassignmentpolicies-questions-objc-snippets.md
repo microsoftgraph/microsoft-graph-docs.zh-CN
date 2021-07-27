@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3daa8c0789930c15ee525c5bf19ae22cc3d3fe54
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: a5d5ce0ec5d04e0e5dc53e75a14d94b322b81780
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753027"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581616"
 ---
 ```objc
 
@@ -36,7 +36,7 @@ NSMutableArray *approvalStagesList = [[NSMutableArray alloc] init];
 MSGraphApprovalStage *approvalStages = [[MSGraphApprovalStage alloc] init];
 [approvalStages setApprovalStageTimeOutInDays: 14];
 [approvalStages setIsApproverJustificationRequired: true];
-[approvalStages setIsEscalationEnabled: true];
+[approvalStages setIsEscalationEnabled: false];
 [approvalStages setEscalationTimeInMinutes: 11520];
 NSMutableArray *primaryApproversList = [[NSMutableArray alloc] init];
 MSGraphUserSet *primaryApprovers = [[MSGraphUserSet alloc] init];
@@ -51,9 +51,6 @@ MSGraphUserSet *primaryApprovers = [[MSGraphUserSet alloc] init];
 [approvalStagesList addObject: approvalStages];
 [requestApprovalSettings setApprovalStages:approvalStagesList];
 [accessPackageAssignmentPolicy setRequestApprovalSettings:requestApprovalSettings];
-MSGraphAssignmentReviewSettings *accessReviewSettings = [[MSGraphAssignmentReviewSettings alloc] init];
-[accessReviewSettings setIsEnabled: false];
-[accessPackageAssignmentPolicy setAccessReviewSettings:accessReviewSettings];
 NSMutableArray *questionsList = [[NSMutableArray alloc] init];
 MSGraphAccessPackageQuestion *questions = [[MSGraphAccessPackageQuestion alloc] init];
 [questions setIsRequired: false];

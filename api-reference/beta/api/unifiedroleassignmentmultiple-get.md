@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6b1aeecdae5b36e4c10768ee37b1505aba25687b
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 1ac14a035dc723c59534d5a3e8bb979aff8d4e39
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334498"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534072"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>获取 unifiedRoleAssignmentMultiple
 
@@ -52,7 +52,7 @@ For other Microsoft 365 applications (like Azure AD) ， use [unifiedRoleAssignm
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取云电脑提供商的 unifiedRoleAssignmentMultiple 的属性和关系：
+若要获取云电脑提供商的 unifiedRoleAssignmentMultiple 的属性和关系，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleAssignments/{id}
@@ -374,7 +374,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-a-roleassignmentmultiple-in-a-cloud-pc-provider-with-expand"></a>示例 5：在云电脑提供商获取 roleAssignmentMultiple `$expand`
+### <a name="example-5-get-a-roleassignmentmultiple-in-a-cloud-pc-provider-with-expand"></a>示例 5：获取云电脑提供商中具有的 roleAssignmentMultiple `$expand`
 
 #### <a name="request"></a>请求
 

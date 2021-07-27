@@ -2,16 +2,16 @@
 author: rahmit
 description: 在网站的网站页面列表中创建新的 sitePage。
 ms.date: 05/07/2018
-title: 在 SharePoint 网站中创建新页面
+title: 在网站中新建SharePoint页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cc9b7a997602252aa58f94178b30fa719bc9ee11
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3094f5f42a56b5666c9aa0108de1840277ea876a
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475751"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534163"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站的网站页面列表中创建页面
 
@@ -19,7 +19,7 @@ ms.locfileid: "50475751"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在网站的网站页面[列表中创建新的][] [sitePage。][] [][]
+在网站 中的网站页面[列表中创建新的][] [sitePage。][] [][]
 
 ## <a name="permissions"></a>权限
 
@@ -65,7 +65,9 @@ Content-Type: application/json
     "webParts": [
         {
             "type": "rte",
-            "innerHTML": "<p>Here are the team's upcoming events:</p>"
+            "data": {
+                "innerHTML": "<p>Here are the team's upcoming events:</p>"
+            }
         },
         {
             "type": "d1d91016-032f-456d-98a4-721247c305e8",
@@ -201,7 +203,7 @@ Content-type: application/json
 
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 
 <!--

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c183cd97377004d60485dcacf0bf372f8957f0b8
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 4997df77a23d31e199f3c8b2221fde754d42e988
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439674"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578901"
 ---
 # <a name="add-a-userflowidentityprovider"></a>添加 userFlowIdentityProvider
 
@@ -77,7 +77,8 @@ PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_sig
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}",
+  "@odata.type": "#microsoft.graph.identityProvider"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

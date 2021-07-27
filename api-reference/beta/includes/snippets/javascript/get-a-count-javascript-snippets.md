@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 580627dc6703d53cb367bd24b6bf52da5c1ef19e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
-ms.translationtype: MT
+ms.openlocfilehash: f8fb0dd9bbfe448d7f29d210de464e50171dd5b7
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207174"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579338"
 ---
 ```javascript
 
@@ -15,11 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-let user = await client.api('/groups/{id}/transitiveMembers/microsoft.graph.user')
+let groups = await client.api('/groups')
     .version('beta')
     .header('ConsistencyLevel','eventual')
     .filter('startswith(displayName, \'a\')')
     .orderby('displayName')
+    .top(1)
     .get();
 
 ```

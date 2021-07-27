@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c6ed4e11508d429e42cf86dfdbb211f75b5cabac
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dd1b7e1f747d097d952a205032797f30b7924692
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50805854"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579839"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/identityProviders/Amazon-OAuth')
+await client.api('/identity/identityProviders/{id}')
     .delete();
 
 ```

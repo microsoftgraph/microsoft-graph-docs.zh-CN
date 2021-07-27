@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1b0c80a5844abd5ce5fbbce477841d59f2859af4
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: be8c37fcc5014abedaeb63ff061d4ac4cca68add
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334561"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533876"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>unifiedRoleDefinition 资源类型
 

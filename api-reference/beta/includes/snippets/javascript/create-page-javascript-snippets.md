@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4304567652cee3f8ac5032a911de6af83fa24f94
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1002f69770bc9c61669f630164bb018815abb690
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50804953"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581300"
 ---
 ```javascript
 
@@ -25,7 +25,9 @@ const sitePage = {
     webParts: [
         {
             type: 'rte',
-            innerHTML: '<p>Here are the team\'s upcoming events:</p>'
+            data: {
+                innerHTML: '<p>Here are the team\'s upcoming events:</p>'
+            }
         },
         {
             type: 'd1d91016-032f-456d-98a4-721247c305e8',

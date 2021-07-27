@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2182a28723f14b96f29dc2af7baf54856c0a8b4a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4760609d94ee126ca6d64f8b4eda66573e45def5
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50796086"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581470"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var workbookNamedItem = new WorkbookNamedItem
     Type = "type-value",
     Scope = "scope-value",
     Comment = "comment-value",
-    Value = JToken.Parse("{}"),
+    Value = JsonDocument.Parse("{}"),
     Visible = true
 };
 

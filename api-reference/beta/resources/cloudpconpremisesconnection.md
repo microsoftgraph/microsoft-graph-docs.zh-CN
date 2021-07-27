@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 7090679e0f35f182c7966fc9810b4698d090e002
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 58a33ac3215053792132adc6de3963ca4fbcd8da
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870645"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534198"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>cloudPcOnPremisesConnection 资源类型
 
@@ -51,7 +51,7 @@ ms.locfileid: "52870645"
 |subnetId|String|目标子网的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
 |healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|在本地连接上完成的最新运行状况检查的状态。 例如，如果状态为"passed"，则本地连接已通过服务运行的所有检查。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|连接运行状况检查的详细信息和相应结果。 仅在 上返回 `$select` 。有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取本地连接的选定属性，包括 [healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
-|inUse|布尔|如果 `true` 为 ，则使用内部部署连接。 如果 `false` 为 ，则不使用连接。 不能删除使用的连接。 仅在 `$select` 上返回。 有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取本地连接的选定属性，包括 [healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
+|inUse|Boolean|如果 `true` 为 ，则使用内部部署连接。 如果 `false` 为 ，则不使用连接。 不能删除使用的连接。 仅在 `$select` 上返回。 有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取本地连接的选定属性，包括 [healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md)。 只读。|
 
 ### <a name="cloudpconpremisesconnectionstatus-values"></a>cloudPcOnPremisesConnectionStatus 值
 

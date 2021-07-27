@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 88242f2ad57062a0bad58154e5931ff796936873
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8ed07ff1cb4be803cd0ea8e4a4d43323862d1daf
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50982453"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581189"
 ---
 ```java
 
@@ -13,6 +13,8 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 AccessPackageResourceCollectionPage accessPackageResources = graphClient.identityGovernance().entitlementManagement().accessPackageCatalogs("{id}").accessPackageResources()
     .buildRequest()
+    .filter("resourceType eq 'Application'")
+    .expand("accessPackageResourceScopes")
     .get();
 
 ```

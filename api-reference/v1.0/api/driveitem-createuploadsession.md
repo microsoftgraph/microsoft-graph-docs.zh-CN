@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 通过创建上传会话，使应用可以上传最大大小的文件。
 doc_type: apiPageType
-ms.openlocfilehash: 4a70e038838366b656a4d38d4d118f255794660e
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 422f3068c2854a847d79d6dcb940c44cc49aaa07
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292187"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53441818"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -55,8 +55,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ### <a name="request-body"></a>请求正文
 
-无需请求正文。
-但是，你可以在请求正文中指定属性，以提供有关正在上传的文件的其他数据，并自定义上传操作的语义。
+不需要任何请求正文。但是，你可以在请求正文中指定属性，以提供有关正在上传的文件的其他数据，并自定义上传操作的语义。
 
 例如， `item` 属性允许设置以下参数：
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
@@ -92,7 +91,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
 | 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关正在上传的文件的数据
-| deferCommit          | 布尔值                       | 如果设置为 true，则需要发出显式请求才能在目标位置中进行文件的最终创建。 仅适用于 OneDrive for Business。
+| deferCommit          | 布尔值                       | 如果设置为 true，则需要发出显式请求才能在目标位置中进行文件的最终创建。仅在 OneDrive for Business 上。
 
 ### <a name="request"></a>请求
 
@@ -247,7 +246,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
 
-```
+```http
 POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 0
 ```
@@ -321,7 +320,7 @@ HTTP/1.1 204 No Content
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
-```
+```http
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
 
@@ -414,6 +413,6 @@ Content-Type: application/json
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
   ],
-  "section": "documentation"
+  "section&quot;: &quot;documentation"
 } -->
 

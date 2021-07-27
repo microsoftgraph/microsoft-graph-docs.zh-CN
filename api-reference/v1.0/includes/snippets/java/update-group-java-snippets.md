@@ -1,25 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c9bbe203c7cce861b63434b44c899cb9df44f758
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 970394e4001a10fb5834e7d5f77e358f139b94c2
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50979835"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53444890"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Group group = new Group();
-group.description = "description-value";
-group.displayName = "displayName-value";
+group.description = "Library Assist";
+group.displayName = "Library Assist";
 LinkedList<String> groupTypesList = new LinkedList<String>();
-groupTypesList.add("groupTypes-value");
+groupTypesList.add("Unified");
 group.groupTypes = groupTypesList;
-group.mail = "mail-value";
 group.mailEnabled = true;
-group.mailNickname = "mailNickname-value";
+group.mailNickname = "library-help";
 
 graphClient.groups("{id}")
     .buildRequest()

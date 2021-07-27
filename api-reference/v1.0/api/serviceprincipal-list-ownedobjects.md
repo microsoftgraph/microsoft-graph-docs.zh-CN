@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 2f6bbfa13edd0fe5bb2f29bd2597dfe5ec443846
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ccd97635feaa070c2b63628513b9e6023e10bbf9
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053823"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580959"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： ownedObjects 列表
 
@@ -25,7 +25,7 @@ ms.locfileid: "52053823"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | Application.Read.All、Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/ownedObjects
 
 ### <a name="response"></a>响应
 下面是一个响应示例。 
->注意：为了提高可读性，可能缩短了此处显示的响应对象。
+>注意：为了提高可读性，可能缩短此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 8debe063c768c66061e16fd89a2e46f6bc7b6d9b
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 358cff788e5b055f93080c20872b972aa82b1799
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082284"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443212"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -23,10 +23,11 @@ ms.locfileid: "53082284"
 - 通过 Microsoft Teams 中的团队或频道发送的 [chatMessage][]。
 - Microsoft 365 组中的[对话][]。
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容。
+- Azure Active Directory 中的 [组][]。
 - SharePoint [site][]下的[list][]。
 - Outlook 中的[邮件][]、[事件][]或[联系人][]。
 - [打印机][] (当打印机的打印作业进入”JobFetchable”状态时 - 准备好提取打印) 和通用打印中的 [printTaskDefinition][]。 有关详细信息，请参阅 [订阅云打印 API 中的更改通知](/graph/universal-print-webhook-notifications)。
-- Azure Active Directory 中的[用户][]或[组][]。
+- 在 Azure Active Directory 中的 [用户][]。
 
 查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
 

@@ -2,19 +2,20 @@
 title: 创建 identityProvider
 description: 新建 identityProvider
 localization_priority: Priority
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1e5e0a13b0518fc734f1c2d8d1fd40fa41833f71
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fac9a583737b991e9f2b060a05eb64a893dde9cc
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434242"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533995"
 ---
-# <a name="create-identityprovider"></a>创建 identityProvider
-
+# <a name="create-identityprovider-deprecated"></a>创建 identityProvider（已弃用）
 命名空间：microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 通过指定显示名称、identityProvider 类型、客户端 ID 和客户端密码，创建新的 [identityProvider](../resources/identityprovider.md)。
 
@@ -50,8 +51,8 @@ POST /identityProviders
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
-|clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
+|clientId|字符串|应用程序的客户端 ID。这是向标识提供程序注册应用程序时获取的客户端 ID。|
+|clientSecret|字符串|应用程序的客户端密码。这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|字符串|标识提供程序的显示名称。|
 |type|字符串|标识提供程序类型。 它必须是 B2C 方案的下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook<li/>GitHub<li/>Twitter<li/>微博<li/>QQ<li/>微信</ul>在 B2B 中，它只能是 Google|
 
@@ -93,6 +94,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -102,6 +104,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
-

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a2aae5af8fe679ae5db8f730d56ff71b1cae2d12
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 24c66df549f53cb34eae77f54110a42375de7117
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53444396"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581515"
 ---
 ```java
 
@@ -19,13 +19,15 @@ mediaConfig.blob = "<Media Session Configuration Blob>";
 LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
 acceptedModalitiesList.add(Modality.AUDIO);
 
+int participantCapacity = 200;
+
 graphClient.communications().calls("{id}")
     .answer(CallAnswerParameterSet
         .newBuilder()
         .withCallbackUri(callbackUri)
         .withMediaConfig(mediaConfig)
         .withAcceptedModalities(acceptedModalitiesList)
-        .withParticipantCapacity(null)
+        .withParticipantCapacity(participantCapacity)
         .build())
     .buildRequest()
     .post();

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4e0a821420ccac7de9fb4bc055d5d9dddb11969c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 207829aca980064e0a995db2b22472c9841fead9
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046501"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579419"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -36,10 +36,8 @@ ms.locfileid: "52046501"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{id}/domainNameReferences
+GET /domains/{domain-id}/domainNameReferences
 ```
-
-> 对于 {id}，请使用其完全限定的域名指定该域。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -91,7 +89,7 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 
 
 ##### <a name="response"></a>响应
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,17 +101,45 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
   "value": [
     {
-        "odata.type": "Microsoft.DirectoryServices.User",
-        "objectType": "User",
-        "objectId": "567a0db6-289c-43f7-a650-2645c03cbbbb",
-        "accountEnabled": true,
-        "displayName": "TestUser1",
-        "facsimileTelephoneNumber": null,
-        "mailNickname": "testuser1",
-        "mobile": null,
-        "userPrincipalName": "testuser1@contoso.com"
+      "@odata.type": "#microsoft.graph.user",
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f/Microsoft.DirectoryServices.User",
+      "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "accountEnabled": true,
+      "city": "Nairobi",
+      "createdDateTime": "2021-04-14T05:26:16Z",
+      "country": "Kenya",
+      "displayName": "Adele Vance",
+      "givenName": "Adele",
+      "mail": "AdeleV@Contoso.com",
+      "mailNickname": "AdeleV"
+    },
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/eac82bd3-931c-4d47-9e68-735595a8eb8a/Microsoft.DirectoryServices.Group",
+      "id": "eac82bd3-931c-4d47-9e68-735595a8eb8a",
+      "createdDateTime": "2021-04-14T06:59:47Z",
+      "createdByAppId": "00000005-0000-0ff1-ce00-000000000000",
+      "organizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+      "description": "Contribute your ideas and ask your questions to our leadership team. And tune in for regular Employee Q & A live events. You can learn more about what",
+      "displayName": "CEO Connection",
+      "expirationDateTime": "2021-10-11T06:59:47Z",
+      "groupTypes": [
+        "Unified"
+      ],
+      "mail": "ceoconnection@Contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "ceoconnection",
+      "resourceBehaviorOptions": [
+        "CalendarMemberReadOnly"
+      ],
+      "visibility": "Public",
+      "writebackConfiguration": {
+        "isEnabled": null,
+        "onPremisesGroupType": null
+      }
     }
   ]
 }

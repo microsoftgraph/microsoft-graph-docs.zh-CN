@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3174401b2d25bf2c7c00f0cffca2c048af7deca6
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: d422a39a0b25b772d7fa6d514d6ad3d617ca6708
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546117"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533211"
 ---
 # <a name="channel-getallmessages"></a>频道：getAllMessages
 
@@ -122,6 +122,7 @@ HTTP/1.1 200 OK
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3Ad5d2708d408c41d98424c1c354c19db3%40thread.tacv2/1616990417393?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990417393&parentMessageId=1616990417393",
             "policyViolation": null,
+            "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
@@ -161,6 +162,7 @@ HTTP/1.1 200 OK
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616990171266?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990171266&parentMessageId=1616990032035",
             "policyViolation": null,
+            "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,

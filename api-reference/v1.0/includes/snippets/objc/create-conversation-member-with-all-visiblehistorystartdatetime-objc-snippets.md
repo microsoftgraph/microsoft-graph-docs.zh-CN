@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 84f0745709981871346d64ca8787159f13bbf478
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 43423199ec3749139b59f2d675eda2e2a4b78335
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950044"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581068"
 ---
 ```objc
 
@@ -18,6 +18,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphConversationMember *conversationMember = [[MSGraphConversationMember alloc] init];
 [conversationMember setVisibleHistoryStartDateTime: "0001-01-01T00:00:00Z"];
+NSMutableArray *rolesList = [[NSMutableArray alloc] init];
+[rolesList addObject: @"owner"];
+[conversationMember setRoles:rolesList];
 
 NSError *error;
 NSData *conversationMemberData = [conversationMember getSerializedDataWithError:&error];

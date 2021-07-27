@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 10dbc449706859a3bcfda35d32c78f1292e38adc
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: ee465cb848c9934abce6e7d7fa21bac70a283576
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753040"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581405"
 ---
 ```csharp
 
@@ -36,7 +36,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
             {
                 ApprovalStageTimeOutInDays = 14,
                 IsApproverJustificationRequired = true,
-                IsEscalationEnabled = true,
+                IsEscalationEnabled = false,
                 EscalationTimeInMinutes = 11520,
                 PrimaryApprovers = new List<UserSet>()
                 {
@@ -53,10 +53,6 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
                 }
             }
         }
-    },
-    AccessReviewSettings = new AssignmentReviewSettings
-    {
-        IsEnabled = false
     },
     Questions = new List<AccessPackageQuestion>()
     {

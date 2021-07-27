@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 71c6d58e9ad70773df39adc7d2a91393d64cd460
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: a2cb3323314e486c6adb6d0dec29c9e0b36bac37
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491059"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581015"
 ---
 # <a name="identityproviderbase-resource-type"></a>identityProviderBase 资源类型
 命名空间：microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "51491059"
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|字符串|标识提供程序的 ID。|
+|id|String|标识提供程序的标识符。|
 |displayName|字符串|标识提供程序的显示名称。|
 
 ## <a name="json-representation"></a>JSON 表示形式

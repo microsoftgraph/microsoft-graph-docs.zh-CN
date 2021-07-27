@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 8eac2d77ffa5fa0f3be9a57e86fd4f490d66e583
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: a6911dddb813f69bca802a6e84ab4eae0a484ef9
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059531"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534479"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -37,7 +37,7 @@ Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特�
 |[timeOff](../resources/timeoff.md)| [创建](../api/schedule-post-timesoff.md)、[列出](../api/schedule-list-timesoff.md)、[获取](../api/timeoff-get.md)、[替换](../api/timeoff-put.md)、[删除](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [创建](../api/schedule-post-timeoffreasons.md)、[列出](../api/schedule-list-timeoffreasons.md)、[获取](../api/timeoffreason-get.md)、[替换](../api/timeoffreason-put.md)、[删除](../api/timeoffreason-delete.md) |
 |[标记](../resources/teamworkTag.md)|[列出](../api/teamworkTag-list.md)、 [创建](../api/teamworkTag-post.md)、 [获取](../api/teamworkTag-get.md)、 [更新](../api/teamworkTag-update.md)、 [删除](../api/teamworkTag-delete.md)|
-|[tagMember](../resources/teamworkTagMember.md)|[列出](../api/teamworkTagMember-list.md)、 [获取](../api/teamworkTagMember-get.md)、 [删除](../api/teamworkTagMember-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[列出](../api/teamworkTagMember-list.md)、[创建](../api/teamworkTagMember-post.md)、[获取](../api/teamworkTagMember-get.md)、[删除](../api/teamworkTagMember-delete.md)|
 
 ## <a name="microsoft-teams-limits"></a>Microsoft Teams 限制
 

@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 0e5c2750b71cea6e6810ef1f5573591fdd81039c
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: e86ef311b62b961f9760ac07f987ef7b029b16cf
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401321"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534037"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -171,10 +171,10 @@ ms.locfileid: "53401321"
 |lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>仅在 `$select` 上返回。|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。只读。<br><br>仅在 `$select` 上返回。|
-|mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。<br>注意：虽然此属性可以包含重音字符，但若使用可能导致用户访问其他 Microsoft 应用程序时遇到问题。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 虽然此属性可以包含重音字符，但若使用可能导致用户访问其他 Microsoft 应用程序时遇到问题。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`）。|
+|mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。<br>对此属性进行更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 此属性不能包含突出字符。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`）。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。<br><br>仅在 `$select` 上返回。|
 |mailNickname|String|用户的邮件别名。创建用户时必须指定此属性。最大长度为 64 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|mobilePhone|String|用户的主要移动电话号码。 本地目录同步的用户为只读。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
+|mobilePhone|String|用户的主要移动电话号码。 本地目录同步的用户为只读。 最大长度为 64 个字符。 <br><br>默认返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 |mySite|String|用户个人网站的 URL。 <br><br>仅在 `$select` 上返回。|
 |officeLocation|String|用户公司地点的办公室位置。 <br><br>默认返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |onPremisesDistinguishedName|String| 包含本地 Active Directory `distinguished name` 或 `DN`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 <br><br>仅在 `$select` 上返回。 |
@@ -187,8 +187,8 @@ ms.locfileid: "53401321"
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。<br><br>仅在 `$select` 上返回。 |
 |onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 只读。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
 |onPremisesUserPrincipalName|String| 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|otherMails|字符串集合| 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。 <br>注意：虽然此属性可以包含重音字符，但可能会导致用户访问第一方应用程序出现问题。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|passwordPolicies|String|指定用户的密码策略。 此值表示枚举，其中一个可能 `DisableStrongPassword`为枚举值，允许指定超过默认策略的密码。 `DisablePasswordExpiration` 也可以指定 。 可同时指定两者;例如： `DisablePasswordExpiration, DisableStrongPassword`。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`ne`、`NOT`）。|
+|otherMails|字符串集合| 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。 <br>注意：此属性不能包含突出字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|passwordPolicies|String|指定用户的密码策略。 此值表示枚举，其中一个可能 `DisableStrongPassword`为枚举值，允许指定超过默认策略的密码。 `DisablePasswordExpiration` 也可以指定 。 可同时指定两者;例如： `DisablePasswordExpiration, DisableStrongPassword`。 <br><br>仅在 `$select` 上返回。 有关默认密码策略的详细信息，请参阅 [Azure AD pasword 策略](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)。 支持 `$filter`（`ne`、`NOT`）。|
 |passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。 **注意：** 对于 Azure B2C 租户， **forceChangePasswordNextSignIn** 属性应设置为 `false` ，并且应在第一次登录时使用自定义策略和用户流强制重置密码。 请参阅 [首次登录时强制重置](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon)。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。 <br><br>仅在 `$select` 上返回。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。最大长度为 40 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
@@ -204,9 +204,9 @@ ms.locfileid: "53401321"
 |signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。 <br><br>仅在 `$select` 上返回。|
 |state|String|用户地址中的省/市/自治区或省。 最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |streetAddress|String|用户公司地点的街道地址。 最大长度为 1024 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|surname|String|用户的姓氏。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|surname|String|用户的姓氏。 最大长度为 64 个字符。 <br><br>默认返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括： `US`、 `JP`和 `GB`。 不可为 null。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|userPrincipalName|String|用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：虽然此属性可以包含重音字符，但可能会导致用户访问第一方应用程序出现问题。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`） 和 `$orderBy`。
+|userPrincipalName|String|用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：此属性不能包含突出字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`） 和 `$orderBy`。
 |userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。          |
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
@@ -275,16 +275,16 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |licenseDetails|[licenseDetails](licensedetails.md) 集合|此用户的许可证详细信息集合。只读。|
 |mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。 只读。 （HTTP 方法：GET、PUT、DELETE） 支持 `$expand`。|
-|memberOf|[directoryObject](directoryobject.md) collection|用户所属的组和目录角色。 只读。 可为 NULL。 支持 `$expand`。 |
+|memberOf|[directoryObject](directoryobject.md) collection|用户所属的组和目录角色。 只读。 可为空。 支持 `$expand`。 |
 |messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[onenote](onenote.md)| 只读。|
 |outlook|[outlookUser](outlookuser.md)| 只读。|
-|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。 只读。 可为 NULL。 支持 `$expand`。|
-|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。 只读。 可为 NULL。 支持 `$expand`。|
+|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。 只读。 可为空。 支持 `$expand`。|
+|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。 只读。 可为空。 支持 `$expand`。|
 |people|[person](person.md) 集合| 与用户相关的人员。只读。可以为 null。
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
 |planner|[plannerUser](planneruser.md)| 对于用户可能存在的 Planner 资源入口点。只读。|
-|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。 只读。 可为 NULL。 支持 `$expand`。|
+|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为空。支持 `$expand`。|
 |todo|[todo](todo.md)|表示用户可以使用的微软待办服务。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
