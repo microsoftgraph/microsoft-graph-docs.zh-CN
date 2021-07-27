@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7bb155d8774ad74f760ed62d94d5f44bb1d07d03
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ab2c4657d913985244ffe9d422859f0680a322de
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042938"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533286"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -96,13 +96,16 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
+Content-length: 450
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "status": "inProgress",
-    "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
+    "lastSynchronizationDateTime": "2021-07-13T20:55:17.6475128Z",
+    "lastActivityDateTime": "2021-07-13T20:55:17.6475128Z",
+    "errorCount": 0,
+    "statusMessage": "Processed 0 in the last hour.\r\nUpdated 0 in the last hour."
 }
 ```
 

@@ -1,15 +1,15 @@
 ---
 title: Intune 设备和应用 API 概述
 description: 'Microsoft Intune 可帮助企业管理组织内的设备和应用。 你可以使用 Microsoft Graph 中的 Intune API 来管理设备和应用，甚至可以在使用首选工具时配置 Intune。 '
-author: rolyon
+author: dougeby
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: a3fa7e8dcd60a5070e7f52a307d355e0e0df4d04
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 384c05e6067d7e38d4f873ed1ef4605cdf0dec09
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288347"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534142"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Intune 设备和应用 API 概述
 
@@ -61,4 +61,4 @@ Intune API 可用于执行下列应用管理任务：
 - 了解如何使用 [PowerShell Intune 示例](https://github.com/microsoftgraph/powershell-intune-samples)执行常见任务。
 - 了解如何[使用 Intune REST API](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)。
 - 有关 Intune API 中新增功能的信息，请参阅[更改日志](changelog.md)。
-- 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。
+- 浏览[资源](https://developer.microsoft.com/graph/gallery/)以了解有关如何使用 Microsoft Graph 的详细信息。

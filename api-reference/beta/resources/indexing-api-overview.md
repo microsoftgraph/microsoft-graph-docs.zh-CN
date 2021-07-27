@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 69a1c99af429b93d7fbddbea4e76523b281541d7
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 37e98b3cebd75f08a4193c312994af7c697a0bab
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366961"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467104"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>使用 Microsoft 搜索 API 为数据编制索引
 
@@ -24,30 +24,28 @@ ms.locfileid: "53366961"
 
 此部分中的 API 用例涉及到构建 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)，其中包括以下主要步骤：
 
-1. 与外部数据源[建立连接](../api/external-post-connections.md)。
-2. [创建并注册架构](../api/externalconnection-post-schema.md)，以描述类型及外部数据的索引编制方式。
-3. 将数据作为外部项[编制索引](../api/externalconnection-put-items.md)。
+1. 与外部数据源[建立连接](../api/externalconnectors-external-post-connections.md)。
+2. [创建并注册架构](../api/externalconnectors-externalconnection-post-schema.md)，以描述类型及外部数据的索引编制方式。
+3. 将数据作为外部项[编制索引](../api/externalconnectors-externalconnection-put-items.md)。
 
 | 用例                                        | REST 资源                              | 另请参阅 |
 |:-------------------------------------------------|:--------------------------------------------|:--|
 | **配置操作**                        |                                             |   |
-| 建立、更新或删除连接           | [externalConnection](externalconnection.md) | [externalConnection 方法](externalconnection.md#methods) |
-| 注册外部数据的架构          | [schema](schema.md)                         | [schema 方法](schema.md#methods) |
+| 建立、更新或删除连接           | [externalConnection](externalconnectors-externalconnection.md) | [externalConnection 方法](externalconnectors-externalconnection.md#methods) |
+| 注册外部数据的架构          | [schema](externalconnectors-schema.md)                         | [schema 方法](externalconnectors-schema.md#methods) |
 | **为操作编制索引**                             |                                             |   |
-| 在索引中添加、更新或删除自定义项 | [externalItem](externalitem.md)             | [externalItem 方法](externalItem.md#methods) |
+| 在索引中添加、更新或删除自定义项 | [externalItem](externalconnectors-externalitem.md)             | [externalItem 方法](externalconnectors-externalitem.md#methods) |
 
 ## <a name="known-limitations"></a>已知限制
 
 当前已知的限制如下：
 
 - 组织最多可有 10 个连接。
-- 仅支持 Azure Active Directory 标识。
 - 每秒只能创建 4 个 `externalItem` 资源项。
 - 应用程序最多可对一个连接执行 4 个并行操作。
 - 连接的容量限制为 70 万个项，或约 70 GB 的数据。
 - `externalItem` 实体的最大大小为 4 MB。
 - 不支持对结果进行排序。
-- 最多可以进行结果排名。
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
@@ -55,7 +53,8 @@ ms.locfileid: "53366961"
 ## <a name="next-steps"></a>后续步骤
 
 - 请参阅 [Microsoft 搜索 API 概述](/graph/search-concept-overview)。
-- 向下钻取 [externalConnection](externalconnection.md)、[schema](schema.md) 和[externalItem](externalitem.md) 资源的方法、属性和关系。
+- 向下钻取 [externalConnection](externalconnectors-externalconnection.md)、[schema](externalconnectors-schema.md) 和[externalItem](externalconnectors-externalitem.md) 资源的方法、属性和关系。
+- 查看 [Microsoft Graph postman 集合](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) （[了解更多](https://developer.microsoft.com/zh-CN/graph/blogs/postman-collections)）
 - 查看 GitHub 中的[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)。
 
 

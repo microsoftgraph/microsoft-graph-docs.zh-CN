@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3f37d57516d78c1f9027346633213b7520d35dd8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eba6d573f22e07c125349efb72667e458642e7e7
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053326"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534528"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>创建 cloudPcOnPremisesConnection
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 306fe76ba5c1fc6d84e77b5f34b2be313170219b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 9573a886df93138f4fa57fd4cc2648071c196877
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50805107"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581216"
 ---
 ```csharp
 
@@ -23,7 +23,7 @@ var criteria = new WorkbookFilterCriteria
         Index = 99
     },
     DynamicCriteria = "dynamicCriteria-value",
-    Values = JToken.Parse("{}"),
+    Values = JsonDocument.Parse("{}"),
     FilterOn = "filterOn-value"
 };
 

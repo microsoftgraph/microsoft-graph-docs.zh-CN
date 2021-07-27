@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 257d8966eabe2428072f470f290816a1c9c2e35d
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: c884f16ac2128286ece218ffb110b0c74933c7a1
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351106"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579328"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -346,6 +346,9 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="missing-properties-for-chat-members"></a>聊天成员缺少属性
 在某些情况下，聊天中`tenantId` / `email` / `displayName`成员的个人属性可能不会填充到请求`GET /chats/chat-id/members``GET /chats/chat-id/members/membership-id`中。
+
+### <a name="missing-properties-in-the-list-of-teams-that-a-user-has-joined"></a>用户已加入的团队列表中缺少属性
+目前，[我/joinedTeams](/graph/api/user-list-joinedteams) API 调用仅返回 [团队](/graph/api/resources/team)的 **id**、**displayName** 和 **说明** 属性。 若要获取所有属性，请使用[获取团队](/graph/api/team-get)操作。
 
 ## <a name="users"></a>用户
 

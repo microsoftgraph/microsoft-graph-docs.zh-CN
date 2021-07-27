@@ -2,19 +2,20 @@
 title: 删除 identityProvider
 description: 删除现有的 identityProvider
 localization_priority: Priority
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a4eec34a7e0e2a357606af3b485577ce04b78ce3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 72a59ad093fd43ebd457a8d22a9f0229a6120e15
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434284"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534570"
 ---
-# <a name="delete-identityprovider"></a>删除 identityProvider
-
+# <a name="delete-identityprovider-deprecated"></a>删除 identityProvider（已弃用）
 命名空间：microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 删除现有的 [identityProvider](../resources/identityprovider.md)。
 
@@ -57,33 +58,14 @@ DELETE /identityProviders/{id}
 
 ##### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-identityprovider"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ##### <a name="response"></a>响应
 

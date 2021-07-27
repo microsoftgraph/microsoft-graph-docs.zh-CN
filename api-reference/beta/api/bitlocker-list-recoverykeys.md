@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7e4fbd5a2a4c1b76ca985cb17e5c6799cb4f41c5
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 5f3820783530836a6b4afaf0637f69e95090fee7
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240971"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533232"
 ---
 # <a name="list-recoverykeys"></a>列出 recoveryKeys
 命名空间：microsoft.graph
@@ -40,7 +40,7 @@ ms.locfileid: "52240971"
 * 全局读取者
 
 ## <a name="http-request"></a>HTTP 请求
-若要获取租户内BitLocker密钥的列表：
+若要获取租户内的 BitLocker 密钥列表，请进行以下操作：
 
 <!-- {
   "blockType": "ignored"
@@ -50,7 +50,7 @@ ms.locfileid: "52240971"
 GET /informationProtection/bitlocker/recoveryKeys
 ```
 
-若要获取租户中BitLocker设备 ID 筛选的密钥 **列表**：
+若要获取按设备 ID 筛选的租户内的 BitLocker 密钥 **列表：**
 
 <!-- {
   "blockType": "ignored"
@@ -69,8 +69,8 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|ocp-client-name|执行 API 调用的客户端应用程序的名称。 必需。|
-|ocp-client-version|执行 API 调用的客户端应用程序的版本。 必需。|
+|ocp-client-name|执行 API 调用的客户端应用程序的名称。 此标头用于调试目的。 可选。|
+|ocp-client-version|执行 API 调用的客户端应用程序的版本。 此标头用于调试目的。 可选。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -82,7 +82,7 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ## <a name="examples"></a>示例
 
 ### <a name="example-1"></a>示例 1
-检索租户BitLocker密钥的列表。
+检索租户中的 BitLocker 密钥列表。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 ```
 ### <a name="example-2"></a>示例 2
-检索按设备BitLocker筛选的密钥 **列表**。
+检索按设备 ID 筛选的 BitLocker **密钥列表**。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 476f9a0dc37d919ea2977602298a4b438bbd1956
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 6d888d8755ca39fd4cfb7e9b8d4c93c18bfcb487
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334568"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534079"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>删除 unifiedRoleAssignmentMultiple
 

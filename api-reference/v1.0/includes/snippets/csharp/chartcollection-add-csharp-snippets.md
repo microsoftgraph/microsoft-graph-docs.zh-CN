@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b2c5e80e3ea773e19c1acc77d7087934a20efa83
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4d72c3861909edae72fba3d92d7880bc230a3f88
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50796283"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581094"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var type = "ColumnStacked";
 
-var sourceData = "A1:B1";
+var sourceData = JsonDocument.Parse(@"""A1:B1""");
 
 var seriesBy = "Auto";
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: a7824399593efcfab1cc3a623a606f4546915228
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 172c90d4f80d6cd4be833b2d78e9e6084d610057
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047285"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534009"
 ---
 # <a name="chatmessage-delta"></a>chatMessage：delta
 
@@ -22,7 +22,7 @@ ms.locfileid: "52047285"
 
 > **请注意：** 增量查询将仅返回过去 8 个月内的邮件。 要检索时间更早的邮件，可使用 [GET /teams/{team-id}/channels/{channel-id}/messages](channel-list-messages.md)。
 
-增量查询既支持可检索指定频道中的所有消息的完全同步，也支持可检索自上次同步后频道中添加或发生变化的消息的增量同步。 通常情况下，开始时会执行一次完全同步，随后会定期获取相应消息视图的增量更改。
+Delta 查询既支持可检索指定频道中所有消息的完全同步，也支持可检索自上次同步后频道中添加或更改的消息的增量同步。通常情况下，开始时会执行一次完全同步，然后会定期获取相应消息视图的增量更改。
 
 若要获取消息的回复，请使用[列出消息回复](chatmessage-list-replies.md)或[获取消息回复](chatmessage-get.md)操作。
 
@@ -105,7 +105,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 
 #### <a name="initial-request"></a>初始请求
 
-本示例中，频道消息正在进行首次同步，因此初始同步请求未包含任何状态令牌。 这一轮将返回此日历视图中的所有事件。
+在该示例中，由于频道消息为首次同步，因此第一个同步请求不含任何状态令牌。这一轮将返回该日历视图中的所有事件。
 
 请求指定可选请求标头 odata.top，每次返回 2 个事件。
 
@@ -171,6 +171,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1606515483514?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1606515483514&parentMessageId=1606515483514",
             "policyViolation": null,
+            "eventDetail": null,
             "id": "1606515483514",
             "from": {
                 "application": null,
@@ -210,6 +211,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1606691795113?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1606691795113&parentMessageId=1606691795113",
             "policyViolation": null,
+            "eventDetail": null,
             "id": "1606691795113",
             "from": {
                 "application": null,

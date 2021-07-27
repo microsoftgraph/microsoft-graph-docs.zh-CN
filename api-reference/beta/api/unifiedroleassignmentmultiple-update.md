@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3423c216e9b0c5b6928d0473c1e7db021e1344c9
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 2925431e15516e678bb60d61e6c9ef4f4bb7fea9
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334491"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534065"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>更新 unifiedRoleAssignmentMultiple
 

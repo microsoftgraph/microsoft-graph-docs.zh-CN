@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 50f396d2c2937fef071e607e1521c1aa3c0a657c
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: e71209c4878e2eb02543d09341ffa4d408906322
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696238"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580910"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -29,21 +29,19 @@ ms.locfileid: "52696238"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Team.ReadBasic.All、 TeamSettings.Read.All、 TeamSettings.ReadWrite.All、 User.Read.All、 User.ReadWrite.All、 Directory.Read.All、 Directory.ReadWrite.All |
 
-> 使用用户委派的权限时，此操作仅适用于“me”用户。 
-> 使用应用程序权限时，此操作通过指定特定用户 ID 而适用于所有用户。（使用应用程序权限时，不支持“me”别名）
+> **注意：** 目前，使用用户委派的权限时，此操作仅适用于“`me`”用户。 使用应用程序权限时，此操作通过指定特定用户 ID 而适用于所有用户 ID。（使用应用程序权限时，不支持“`me`”别名）。 有关详细信息，请参阅[已知问题](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/joinedTeams
-or
 GET /users/{id | user-principal-name}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-目前不支持 [OData 查询参数](/graph/query-parameters)。
+此运营商当前不支持通过 [OData 查询参数](/graph/query-parameters) 来自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -54,10 +52,14 @@ GET /users/{id | user-principal-name}/joinedTeams
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象集合。
+如果成功，此方法在响应正文中返回`200 OK`响应代码和[team](../resources/team.md)对象集合。
+
+> [!Note]
+> 目前，此 API 调用仅返回 [团队](../resources/team.md)的 **id**、**displayName** 和 **说明** 属性。 若要获取所有属性，请使用“[获取团队](../api/team-get.md)”操作。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams)。
+
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+以下示例显示了一个请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -86,7 +88,9 @@ GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ---
 
 ##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+以下示例显示了相应的响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,18 +104,22 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "31aa74dd-dd65-43ac-8c4e-0ec1ae5a8ee1"
+      "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
+      "displayName": "Contoso Team",
+      "description": "This is a Contoso team, used to showcase the range of properties supported by this API"
     }
   ]
 }
 ```
 
 ## <a name="see-also"></a>另请参阅
-[列出所有团队](/graph/teams-list-all-teams)
+- [列出所有团队](/graph/teams-list-all-teams)
+- [获取团队](../api/team-get.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List joinedTeams",
   "keywords": "",
@@ -119,4 +127,5 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
   ]
-}-->
+}
+-->

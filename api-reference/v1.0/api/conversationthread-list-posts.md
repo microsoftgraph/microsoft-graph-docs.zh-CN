@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e2e641a6524a08a328fe6cfb7b879a9b8fb5e09a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2b94e15009738abce83eb8a4386be552c21f67bc
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053228"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579548"
 ---
 # <a name="list-posts"></a>列出帖子
 
@@ -30,8 +30,8 @@ ms.locfileid: "52053228"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/threads/{id}/posts
-GET /groups/{id}/conversations/{id}/threads/{id}/posts
+GET /groups/{groupId}/threads/{threadId}/posts
+GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -57,7 +57,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
   "name": "get_posts"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
+GET https://graph.microsoft.com/v1.0/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/threads/AAQkADI5YzgxODgyLTExZDgtNDhkMS1iZDRjLTBhZGZiN2ExYWQxNwMkABAADW7fw6FZNEuyjrGA9R8SshAADW7fw6FZNEuyjrGA9R8Ssg==/posts
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-posts-csharp-snippets.md)]
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,30 +88,35 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 523
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('02f3bafb-448c-487c-88c2-5fd65ce49a41')/threads('AAQkADI5YzgxODgyLTExZDgtNDhkMS1iZDRjLTBhZGZiN2ExYWQxNwMkABAADW7fw6FZNEuyjrGA9R8SshAADW7fw6FZNEuyjrGA9R8Ssg%3D%3D')/posts",
   "value": [
     {
+      "@odata.etag": "W/\"CQAAABYAAACWM1XFF4buR6Xp/9aBq6+wAAAAAAEK\"",
+      "id": "AAMkADI5YzgxODgyLTExZDgtNDhkMS1iZDRjLTBhZGZiN2ExYWQxNwBGAAAAAAAmtAlgzc6xQZmiHzuqNLQ8BwCWM1XFF4buR6Xp-9aBq6_wAAAAAAEMAACWM1XFF4buR6Xp-9aBq6_wAAAAAAk9AAA=",
+      "createdDateTime": "2021-04-14T07:01:07Z",
+      "lastModifiedDateTime": "2021-04-14T07:01:08Z",
+      "changeKey": "CQAAABYAAACWM1XFF4buR6Xp/9aBq6+wAAAAAAEK",
+      "categories": [],
+      "receivedDateTime": "2021-04-14T07:01:07Z",
+      "hasAttachments": false,
       "body": {
-        "contentType": "",
-        "content": "content-value"
+        "contentType": "html",
+        "content": "<html><body><div><div style=\"direction:ltr;\"><table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" id=\"x_bodyTable\" style=\"vertical-align:top;width:100%;height:100%;border-spacing:0;border-collapse:collapse;margin:0;padding:0;border-width:0;box-sizing:border-box;\"><tr style=\"vertical-align:top;margin:0;padding:0;border-width:0;box-sizing:border-box;\"><td id=\"x_bodyCell\" style=\"vertical-align:top;direction:ltr;width:100%;height:100%;margin:0;padding:0;border-width:0;box-sizing:border-box;\"><table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" id=\"x_content\" style=\"font-family:Segoe UI,Tahoma,Microsoft Sans Serif,Verdana,sans-serif;vertical-align:top;border-spacing:0;border-collapse:collapse;margin:0;padding:0;border-width:0;box-sizing:border-box;\"><tr style=\"vertical-align:top;margin:0;padding:0;border-width:0;box-sizing:border-box;\"><td style=\"font-family:Segoe UI,Tahoma,Microsoft Sans Serif,Verdana,sans-serif;vertical-align:top;height:64px;margin:0;padding:0 0 20px 0;border-width:0;box-sizing:border-box;\"><div style=\"color:#0072C6;font-size:18pt;vertical-align:top;margin:0;padding:0;border-width:0;box-sizing:border-box;\">Welcome to the Contoso Life group...."
       },
-      "receivedDateTime": "datetime-value",
-      "hasAttachments": true,
       "from": {
         "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
+          "name": "Contoso Life",
+          "address": "contosolife@M365x435773.onmicrosoft.com"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
+          "name": "Contoso Life",
+          "address": "contosolife@M365x435773.onmicrosoft.com"
         }
-      },
-      "conversationThreadId": "conversationThreadId-value"
+      }
     }
   ]
 }

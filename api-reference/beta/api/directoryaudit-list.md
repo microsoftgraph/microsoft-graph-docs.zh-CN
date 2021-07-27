@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3f326f2b8089c4213b4b13edc25ce89eb32696a7
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 63b29589d1aef21b8d832bb7b2e329d6f4eaee69
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787034"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579405"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -26,9 +26,9 @@ ms.locfileid: "52787034"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AuditLog.Read.All |
+|委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用 | AuditLog.Read.All | 
+|应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
 
 此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 

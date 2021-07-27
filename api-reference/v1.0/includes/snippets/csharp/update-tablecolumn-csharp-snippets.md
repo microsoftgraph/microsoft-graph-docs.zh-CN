@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fa34be3df0d340c018978e753bbc8feefa215ccd
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 0cdef9c781e71c99775d5a381f1ec9b3761fe6d2
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50786575"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581078"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var workbookTableColumn = new WorkbookTableColumn
 {
     Name = "name-value",
     Index = 99,
-    Values = "values-value"
+    Values = JsonDocument.Parse(@"""values-value""")
 };
 
 await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns["{workbookTableColumn-id}"]

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d603045143ae379f55ed56dd1cd69be74946b1ed
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6079c58dc4ba17cb185ed365ada24c902f310069
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787047"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579321"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -26,9 +26,9 @@ ms.locfileid: "52787047"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AuditLog.Read.All |
+|委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用 | AuditLog.Read.All | 
+|应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
 
 此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
@@ -43,7 +43,7 @@ GET /auditLogs/directoryAudits/{id}
 
 此方法支持 OData 查询参数来帮助自定义响应。 有关如何使用此参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|

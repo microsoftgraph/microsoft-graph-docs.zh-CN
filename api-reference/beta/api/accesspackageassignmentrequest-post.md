@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d455bde8192cfd37713d32f10e5bb8d8b908cec0
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: e2146c1c2a465ee1377cfa805884d87e49ecc267
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868873"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579398"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>创建 accessPackageAssignmentRequest
 
@@ -159,19 +159,24 @@ Content-type: application/json
         "assignmentPolicyId": "2264bf65-76ba-417b-a27d-54d291f0cbc8",
         "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
     },
-    "answers": [{
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Arizona",
-        "answeredQuestion": {
-            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Arizona",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                "id": "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Need access to marketing campaign material",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "id": "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
+            }
         }
-    }, {
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Need access to marketing campaign material",
-        "answeredQuestion": {
-            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
-        }
-    }]
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -216,64 +221,81 @@ Content-type: application/json
     "requestState": "Submitted",
     "requestStatus": "Accepted",
     "isValidationOnly": false,
-    "answers": [{
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Arizona",
-        "answeredQuestion": {
-            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
-            "isRequired": false,
-            "text": {
-                "defaultText": "what state are you from?",
-                "localizedTexts": [{
-                    "text": "¿De qué estado eres?",
-                    "languageCode": "es"
-                }]
-            },
-            "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-            "choices": [{
-                "actualValue": "AZ",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "Arizona",
-                        "languageCode": "es"
-                    }]
-                }
-            }, {
-                "actualValue": "CA",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "California",
-                        "languageCode": "es"
-                    }]
-                }
-            }, {
-                "actualValue": "OH",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "Ohio",
-                        "languageCode": "es"
-                    }]
-                }
-            }],
-            "allowsMultipleSelection": false
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Arizona",
+            "answeredQuestion": {
+                "id": "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
+                "isRequired": false,
+                "text": {
+                    "defaultText": "what state are you from?",
+                    "localizedTexts": [
+                        {
+                            "text": "¿De qué estado eres?",
+                            "languageCode": "es"
+                        }
+                    ]
+                },
+                "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                "choices": [
+                    {
+                        "actualValue": "AZ",
+                        "displayValue": {
+                            "localizedTexts": [
+                                {
+                                    "text": "Arizona",
+                                    "languageCode": "es"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "actualValue": "CA",
+                        "displayValue": {
+                            "localizedTexts": [
+                                {
+                                    "text": "California",
+                                    "languageCode": "es"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "actualValue": "OH",
+                        "displayValue": {
+                            "localizedTexts": [
+                                {
+                                    "text": "Ohio",
+                                    "languageCode": "es"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "allowsMultipleSelection": false
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Need access to marketing campaign material",
+            "answeredQuestion": {
+                "id": "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
+                "isRequired": false,
+                "text": {
+                    "defaultText": "Who is your manager?",
+                    "localizedTexts": [
+                        {
+                            "text": "por qué necesita acceso a este paquete",
+                            "languageCode": "es"
+                        }
+                    ]
+                },
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "isSingleLineQuestion": false
+            }
         }
-    }, {
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Need access to marketing campaign material",
-        "answeredQuestion": {
-            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
-            "isRequired": false,
-            "text": {
-                "defaultText": "Who is your manager?",
-                "localizedTexts": [{
-                    "text": "por qué necesita acceso a este paquete",
-                    "languageCode": "es"
-                }]
-            },
-            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-            "isSingleLineQuestion": false
-        }
-    }]
+    ]
 }
 ```
 ### <a name="example-3-request-a-package-and-provide-a-justification"></a>示例 3：请求包并提供理由

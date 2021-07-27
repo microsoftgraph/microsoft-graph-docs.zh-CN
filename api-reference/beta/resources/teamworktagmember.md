@@ -5,12 +5,12 @@ author: anniecolonna
 localization_priority: Normal
 ms.prod: teamwork
 doc_type: resourcePageType
-ms.openlocfilehash: 73666dd19720e6d8882bb16fd90c612097e41d10
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: b8e6d70a8249168383f2bc1b0e6d8884525855ec
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059872"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534514"
 ---
 # <a name="teamworktagmember-resource-type"></a>teamworkTagMember 资源类型
 
@@ -23,8 +23,9 @@ ms.locfileid: "53059872"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 teamworkTagMembers](../api/teamworktagmember-list.md)|**teamworkTagMember** 集合|获取团队中标准标记的成员及其属性的列表。|
-|[获取 teamworkTagMember](../api/teamworktagmember-get.md)|**teamworkTagMember**|获取团队中标准标记的成员的属性和关系。|
+|[列出 teamworkTagMembers](../api/teamworktagmember-list.md)|[**teamworkTagMember**](teamworktagmember.md) 集合|获取团队中标准标记的成员及其属性的列表。|
+|[创建 teamworkTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|创建新的 **teamworkTagMember** 对象。|
+|[获取 teamworkTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|获取团队中标准标记的成员的属性和关系。|
 |[删除 teamworkTagMember](../api/teamworktagmember-delete.md)|无|从团队中的标准标记中删除成员。|
 
 ## <a name="properties"></a>属性

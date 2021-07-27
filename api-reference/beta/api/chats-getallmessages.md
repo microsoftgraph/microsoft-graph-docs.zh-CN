@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 18c6ec164d21c1efab249560f3c866fab5fabeb4
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 540d08db7e19bdac4bbb8960d0470f3b41df308e
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52695929"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533960"
 ---
 # <a name="chats-getallmessages"></a>聊天： getAllMessages
 
@@ -101,6 +101,7 @@ Content-length: 347
          "webUrl":null,
          "channelIdentity":null,
          "policyViolation":null,
+         "eventDetail": null,
          "from":{
             "application":null,
             "device":null,

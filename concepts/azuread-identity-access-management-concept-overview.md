@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e15685f1cf561713b25dc70b87264edd36168067
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 6aabd013bd7a0c17a2d22f5cbbf87eb8b32286e3
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870757"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534044"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 
@@ -36,7 +36,7 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 
 - 查找和管理组织中用户的[用户配置文件](/graph/api/resources/user)信息（例如，姓名、照片、电子邮件地址、职务、办公地点等）。
 - 为组织中的项目和团队创建[组](/graph/api/resources/groups-overview)。 从组中添加和删除成员，以控制对资源的访问权限。 （动态组可根据用户属性值自动更改成员身份。）
-- 要控制访问权限，你可以在组列表中检查[可传递成员资格](/graph/api/user-checkmembergroups)，或从[常规资源 ID](/graph/api/directoryobject-getbyids) 列表中获取指定类型的所有资源（如用户或组）。
+- 可以在组列表中检查[可传递成员资格](/graph/api/user-checkmembergroups)，或从[常规资源 ID](/graph/api/directoryobject-getbyids) 列表中获取指定类型的所有资源（如用户或组）以控制访问权限。
 
 ### <a name="manage-directory-roles"></a>管理目录角色
 

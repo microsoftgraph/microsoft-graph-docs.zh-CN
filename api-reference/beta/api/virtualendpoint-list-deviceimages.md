@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 9a125cbd111a4646f6f7a07ddd4a44b6aab34053
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: dd5d6ea1f3363963fdb978766d788c167437bd66
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547020"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534086"
 ---
 # <a name="list-deviceimages"></a>列出 deviceImages
 
@@ -18,11 +18,11 @@ ms.locfileid: "52547020"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的属性和关系， (上传到) 操作系统映像。
+列出 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的属性和关系 (上传到云) 操作系统映像。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

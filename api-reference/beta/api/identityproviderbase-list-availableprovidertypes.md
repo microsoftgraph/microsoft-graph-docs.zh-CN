@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0ef9e0bb23109f41854c7c12b76e144ad6110ace
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 90a41009b1ec41387d639e2f293ce81c6954b803
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546243"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579730"
 ---
 # <a name="list-availableprovidertypes"></a>列出 availableProviderTypes
 
@@ -20,7 +20,7 @@ ms.locfileid: "52546243"
 
 检索目录中可用的所有标识提供程序类型。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -60,7 +60,7 @@ GET /identity/identityProviders/availableProviderTypes
 
 ### <a name="example-1-list-all-identityprovider-available-in-an-azure-ad-directory"></a>示例 1：列出 Azure AD 目录中可用的所有 **identityProvider**
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -92,13 +92,11 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 ---
 
 
----
-
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -124,7 +122,7 @@ Content-Type: application/json
 
 ### <a name="example-2-list-all-identityprovider-available-in-an-azure-ad-b2c-directory"></a>示例 2：列出 Azure AD B2C 目录中可用的所有 **identityProvider**
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -156,13 +154,11 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 ---
 
 
----
-
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

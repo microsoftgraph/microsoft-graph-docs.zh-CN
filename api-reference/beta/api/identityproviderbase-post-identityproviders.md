@@ -5,15 +5,14 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: f3ed5525db1da61b467e78959771677b9862a52d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 6f9a25193b5fb0a385d818c4c066ef885edf1f47
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664694"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579727"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
-
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -65,7 +64,7 @@ POST /identity/identityProviders
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |clientId|字符串|向标识提供程序注册应用程序时，获取应用程序的客户端标识符。|
-|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回"\*\*\*\*"。|
+|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回 `****`。|
 |displayName|字符串|标识提供程序的显示名称。|
 |identityProviderType|String|对于 B2B 方案，可能的值为： `Google`、 `Facebook`。 对于 B2C 方案，可能的值： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、 `QQ`、 `WeChat`。|
 
@@ -148,8 +147,6 @@ Content-length: 154
 
 ---
 
-
----
 
 #### <a name="response"></a>响应
 
@@ -234,7 +231,6 @@ Content-type: application/json
 ---
 
 
----
 
 #### <a name="response"></a>响应
 
@@ -279,8 +275,6 @@ Content-type: application/json
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_applemanagedidentityprovider_from_identityproviderbase"
@@ -301,15 +295,6 @@ Content-length: 154
   "certificateData": "******"
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-applemanagedidentityprovider-from-identityproviderbase-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-applemanagedidentityprovider-from-identityproviderbase-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>响应

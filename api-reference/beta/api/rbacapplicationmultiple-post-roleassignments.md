@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9883ea3666b22ddaa21de349b56e361a02d99396
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 4f01f0ad367362110366f297f6175b6943980fcf
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334603"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533307"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>创建 unifiedRoleAssignmentMultiple
 
@@ -227,7 +227,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-a-role-assignment-for-a-cloud-pc-provider"></a>示例 3：角色分配云电脑提供商
+### <a name="example-3-create-a-role-assignment-for-a-cloud-pc-provider"></a>示例 3：创建角色分配云电脑提供商的云解决方案
 
 #### <a name="request"></a>请求
 

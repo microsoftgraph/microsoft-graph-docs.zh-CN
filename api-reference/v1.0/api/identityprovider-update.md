@@ -2,19 +2,20 @@
 title: 更新 identityProvider
 description: 更新现有 identityProvider 中的属性
 localization_priority: Priority
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bb4695068871c2c741a1f1aa699b36a688e22b6e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 191d936e71e725964f125aaa6b6ab1e8f276b957
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441835"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580567"
 ---
-# <a name="update-identityprovider"></a>更新 identityProvider
-
+# <a name="update-identityprovider-deprecated"></a>更新 identityProvider （已弃用）
 命名空间：microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 更新现有 [identityProvider](../resources/identityprovider.md) 中的属性。
 
@@ -50,8 +51,8 @@ PATCH /identityProviders/{id}
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
-|clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
+|clientId|字符串|应用程序的客户端 ID。这是向标识提供程序注册应用程序时获取的客户端 ID。|
+|clientSecret|字符串|应用程序的客户端密码。这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|字符串|标识提供程序的显示名称。|
 
 ## <a name="response"></a>响应
@@ -70,6 +71,7 @@ PATCH /identityProviders/{id}
   "blockType": "request",
   "name": "update-identityprovider"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 Content-type: application/json
@@ -119,4 +121,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

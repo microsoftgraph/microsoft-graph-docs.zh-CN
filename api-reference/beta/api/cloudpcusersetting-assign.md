@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 5279a630f3ba9eeb684a98552e8f0184ab441098
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 7e2835e3882705a123626d84395e29d7f402628e
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207104"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533433"
 ---
 # <a name="cloudpcusersetting-assign"></a>cloudPcUserSetting：assign
 

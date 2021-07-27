@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 6e262fe507565932979b993cbe31e501d1a35dfb
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: d29dbae8dbbc33f73d2d2cd4e61715fb5a36f5c5
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788092"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579522"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -26,7 +26,7 @@ ms.locfileid: "52788092"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用 | AuditLog.Read.All |
+|应用程序 | AuditLog.Read.All 和 Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

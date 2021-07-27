@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2139fc87f3d80b1499b2c1219099e704ddbb8c5f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 97b3a38f4b05fb979b5cd154c1622f878db912fb
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50791559"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581332"
 ---
 ```javascript
 
@@ -17,6 +17,8 @@ const client = Client.init(options);
 
 let accessPackageResources = await client.api('/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources')
     .version('beta')
+    .filter('resourceType eq \'Application\'')
+    .expand('accessPackageResourceScopes')
     .get();
 
 ```

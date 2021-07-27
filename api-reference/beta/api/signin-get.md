@@ -5,12 +5,12 @@ description: 获取一个 signIn 对象，该对象包含租户的所有Azure Ac
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: d9cf2f0e6a03a490c1818712bf230120ff37311f
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: 70691669c6047473c2ee98ed9c2c9e810bc061f0
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129487"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579755"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -26,9 +26,9 @@ ms.locfileid: "53129487"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-| 委派（工作或学校帐户） | AuditLog.Read.All、Directory.Read.All |
+| 委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| 应用程序 | AuditLog.Read.All、Directory.Read.All | 
+| 应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
 
 应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
 
@@ -38,7 +38,7 @@ ms.locfileid: "53129487"
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全读取者
++ 安全信息读取者
 
 ## <a name="http-request"></a>HTTP 请求
 

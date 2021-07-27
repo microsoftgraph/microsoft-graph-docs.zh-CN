@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 935dd01d22afd6b6ef916a328c40b4fa08d978fd
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 7494ab6f2fa18135e72bdfdf68bb183be05cff94
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546397"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533727"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>更新 cloudPcProvisioningPolicy
 
@@ -22,7 +22,7 @@ ms.locfileid: "52546397"
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

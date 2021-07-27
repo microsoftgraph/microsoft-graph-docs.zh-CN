@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6b937c93e431501da3ad578135577d942c5d4b37
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: c53cc0df5c9aefb6a42b5a28d6341f37b0f3d287
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401342"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467097"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -57,7 +57,7 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 |[列表](list.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint 和 OneDrive | 列表。 请注意，文档库也作为列表返回。 |
 |[listItem](listitem.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint 和 OneDrive | 列表项。 请注意，文件和文件夹也作为列表项返回；**driveItem** 是 **driveItem** 的超类。 |
 |[网站](site.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint | SharePoint 中的网站。|
-|[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph 连接器| 所有内容通过 Microsoft Graph 连接器 API 摄取。|
+|[externalItem](externalconnectors-externalitem.md)|ExternalItem.Read.All| Microsoft Graph 连接器| 所有内容通过 Microsoft Graph 连接器 API 摄取。|
 |[人员](person.md)|People.Read|Exchange Online|组织中的个人联系人、联系人或可寻址对象。|
 
 ## <a name="page-search-results"></a>页面搜索结果
@@ -142,7 +142,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 返回包含 [searchBucket](searchBucket.md) 对象的集合的响应后，可将搜索请求精确到 [searchBucket](searchBucket.md)中包含的匹配元素。 为实现此操作，可将 **aggregationFilters** 属性中的 **aggregationsFilterToken** 值返回到后续 [searchRequest](./searchrequest.md)中。
 
-聚合目前仅支持在以下 SharePoint 和 OneDrive 类型上的任何可细化属性：[driveItem](driveitem.md)、[listItem](listitem.md)、[列表](list.md)、[网站](site.md)以及在Microsoft Graph 连接器上的 [externalItem](externalItem.md)。
+聚合目前仅支持在以下 SharePoint 和 OneDrive 类型上的任何可细化属性：[driveItem](driveitem.md)、[listItem](listitem.md)、[列表](list.md)、[网站](site.md)以及在Microsoft Graph 连接器上的 [externalItem](externalconnectors-externalitem.md)。
 
 请参阅[优化搜索结果](/graph/search-concept-aggregation) ，显示使用聚合增强和缩小搜索结果的示例。
 

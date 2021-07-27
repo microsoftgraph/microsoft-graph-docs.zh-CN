@@ -5,12 +5,12 @@ author: anniecolonna
 localization_priority: Normal
 ms.prod: teamwork
 doc_type: resourcePageType
-ms.openlocfilehash: fc732ce340f8ab8a3460c16900c4aff2d381744e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 677ddc348d1cd3ae152d7b777a6b29319839266c
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059881"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533897"
 ---
 # <a name="teamworktag-resource-type"></a>teamworkTag 资源类型
 
@@ -27,13 +27,14 @@ ms.locfileid: "53059881"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出团队合作标记](../api/teamworktag-list.md)|**teamworkTag** 集合|获取 **teamworkTag 对象** 及其属性的列表。|
-|[创建团队合作标记](../api/teamworktag-post.md)|**teamworkTag**|创建新的 **团队合作标记** 对象。|
-|[获取团队合作标记](../api/teamworktag-get.md)|**teamworkTag**|读取团队合作Tag 对象 **的属性和** 关系。|
-|[更新团队合作标记](../api/teamworktag-update.md)|**teamworkTag**|更新团队合作 **Tag 对象** 的属性。|
+|[列出团队合作标记](../api/teamworktag-list.md)|[**teamworkTag**](teamworktag.md) 集合|获取 **teamworkTag 对象** 及其属性的列表。|
+|[创建团队合作标记](../api/teamworktag-post.md)|[**teamworkTag**](teamworktag.md)|创建新的 **团队合作标记** 对象。|
+|[获取团队合作标记](../api/teamworktag-get.md)|[**teamworkTag**](teamworktag.md)|读取团队合作Tag 对象 **的属性和** 关系。|
+|[更新团队合作标记](../api/teamworktag-update.md)|[**teamworkTag**](teamworktag.md)|更新团队合作 **Tag 对象** 的属性。|
 |[删除团队合作标记](../api/teamworktag-delete.md)|无|删除 **团队合作标记** 对象。|
-|[列出 teamworkTagMembers](../api/teamworktagmember-list.md)|**teamworkTagMember** 集合|获取团队中标准标记的成员及其属性的列表。|
-|[获取 teamworkTagMember](../api/teamworktagmember-get.md)|**teamworkTagMember**|获取团队中标准标记的成员的属性和关系。|
+|[列出 teamworkTagMembers](../api/teamworktagmember-list.md)|[**teamworkTagMember**](teamworktagmember.md) 集合|获取团队中标准标记的成员及其属性的列表。|
+|[创建 teamworkTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|创建新的 **teamworkTagMember** 对象。|
+|[获取 teamworkTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|获取团队中标准标记的成员的属性和关系。|
 |[删除 teamworkTagMember](../api/teamworktagmember-delete.md)|无|从团队中的标准标记中删除成员。|
 
 ## <a name="properties"></a>属性

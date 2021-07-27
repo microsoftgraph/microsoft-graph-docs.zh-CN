@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6b812bed46b7f389b0796dc2f79a54282e886dbe
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 82abc2a316fc3a5d14902089802862165081fada
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430198"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53578942"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -465,31 +465,46 @@ planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTa
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
-### <a name="identity-and-access-audit-logs-service-limits"></a>标识和访问审核日志的服务限制
-
-[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
-
 ### <a name="identity-providers-service-limits"></a>身份提供程序的服务限制
 
 [!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
 
 ### <a name="intune-service-limits"></a>Intune服务限制
 
+[!INCLUDE [Intune  tunnel throttling documentation](../includes/throttling-intune-throttling-tunnel.md)]
+[!INCLUDE [Intune android for work throttling documentation](../includes/throttling-intune-android-for-work.md)]
 [!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
+[!INCLUDE [Intune auditing throttling documentation](../includes/throttling-intune-auditing.md)]
 [!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
+[!INCLUDE [Intune bundles throttling documentation](../includes/throttling-intune-bundles.md)]
+[!INCLUDE [Intune chromebook sync throttling documentation](../includes/throttling-intune-chromebook-sync.md)]
 [!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
+[!INCLUDE [Intune device config V2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
 [!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
 [!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
+[!INCLUDE [Intune device intent throttling documentation](../includes/throttling-intune-device-intent.md)]
 [!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
+[!INCLUDE [Intune endpoint protection throttling documentation](../includes/throttling-intune-endpoint-protection.md)]
 [!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
+[!INCLUDE [Intune fencing throttling documentation](../includes/throttling-intune-fencing.md)]
+[!INCLUDE [Intune GPAnalytics throttling documentation](../includes/throttling-intune-gpanalytics.md)]
 [!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
 [!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
+[!INCLUDE [Intune ODJ throttling documentation](../includes/throttling-intune-odj.md)]
+[!INCLUDE [Intune partner integration throttling documentation](../includes/throttling-intune-partner-integration.md)]
 [!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
 [!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
 [!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
+[!INCLUDE [Intune telephony throttling documentation](../includes/throttling-intune-telephony.md)]
 [!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
 [!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
+[!INCLUDE [Intune unlock throttling documentation](../includes/throttling-intune-unlock.md)]
+[!INCLUDE [Intune updates throttling documentation](../includes/throttling-intune-updates.md)]
 [!INCLUDE [Intune wip throttling documentation](../includes/throttling-intune-wip.md)]
+
+### <a name="multi-service-limits"></a>多服务限制
+
+[!INCLUDE [Multi tenant platform throttling documentation](../includes/throttling-multi-tenant-platform.md)]
 
 ### <a name="skype-service-limits"></a>Skype 服务限制
 

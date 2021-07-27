@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 017ffbff5dd32c03b86e2d238af2ae502128890b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d06761729031af132cd5f2785d881cdd4c385c9d
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50793095"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581553"
 ---
 ```javascript
 
@@ -34,7 +34,7 @@ const accessPackageAssignmentPolicy = {
         approvalStages: [{
                 approvalStageTimeOutInDays: 14,
                 isApproverJustificationRequired: true,
-                isEscalationEnabled: true,
+                isEscalationEnabled: false,
                 escalationTimeInMinutes: 11520,
                 primaryApprovers: [{
                         '@odata.type': '#microsoft.graph.groupMembers',
@@ -49,9 +49,6 @@ const accessPackageAssignmentPolicy = {
                 ]
             }
         ]
-    },
-    accessReviewSettings: {
-        isEnabled: false
     },
     questions: [{
         isRequired: false,

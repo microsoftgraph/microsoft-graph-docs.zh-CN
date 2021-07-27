@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e7da8717b9dcbf34d40de5bbcb08247d80d04514
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 3db7f2b479bb00f07dc11a64d058a59d2cc02168
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547090"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534156"
 ---
 # <a name="create-cloudpcdeviceimage"></a>创建 cloudPcDeviceImage
 
@@ -22,7 +22,7 @@ ms.locfileid: "52547090"
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

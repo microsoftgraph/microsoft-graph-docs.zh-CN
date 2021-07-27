@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: dde09b5c9f3fe346a305bdce5876c38f9411e700
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 2e95db65d320426f49e92c2b76bc7129545dc553
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031042"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53547536"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>accessReviewScheduleDefinition 资源类型
 
@@ -22,7 +22,7 @@ accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreview
 
 继承自 [实体](../resources/entity.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 集合 | 列出每个 accessReviewScheduleDefinition。 结果中不包括关联的 accessReviewInstance 对象。 |
@@ -31,16 +31,15 @@ accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreview
 |[删除 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | 无。 | 删除具有指定 id 的 accessReviewScheduleDefinition。  |
 |[更新 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | 无。 | 使用指定的 id 更新 accessReviewScheduleDefinition **的属性**。 |
 |[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合|检索调用用户作为一个或多个实例的审阅者的所有定义。|
-|[列出实例](../api/accessreviewscheduledefinition-list-instances.md)|[accessReviewInstance](../resources/accessreviewinstance.md) 集合|从实例导航属性获取 accessReviewInstance 资源。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-| id | String | 访问评审的功能分配的唯一标识符。 支持 `$select`。 只读。|
-| displayName | String   | 访问评审系列的名称。 支持 `$select` 和 `$orderBy`。 创建时为必需项。 |
+| id | 字符串 | 访问评审的功能分配的唯一标识符。 支持 `$select`。 只读。|
+| displayName | 字符串   | 访问评审系列的名称。 支持 `$select` 和 `$orderBy`。 创建时为必需项。 |
 | createdDateTime  |DateTimeOffset  | 创建访问评审系列时时间戳。 支持 `$select` 和 `$orderBy`。 只读。 |
 | lastModifiedDateTime | DateTimeOffset   | 上次修改访问评审系列的时间戳。 支持 `$select`。 只读。|
-| 状态  |String   | 此只读字段指定访问评审的状态。 典型状态包括 `Initializing` `NotStarted` `Starting` `InProgress` 、、、、、、 `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。  <br>仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。 |
+| status  |字符串   | 此只读字段指定访问评审的状态。 典型状态包括 `Initializing` `NotStarted` `Starting` `InProgress` 、、、、、、 `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。  <br>仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。 |
 | descriptionForAdmins  |string  |  评价创建者提供的用于向管理员提供评论的更多上下文的说明。 支持 `$select`。 |
 | descriptionForReviewers |string | 审阅创建者提供的说明，用于向审阅者提供审阅的更多上下文。 审阅者将在发送给他们请求审阅的电子邮件中看到此说明。 支持 `$select`。 |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | 创建此评价的用户。 只读。 |
