@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: fb98af7ff5c97b78e0c1ba76ecc307813db36e6d
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 1e363698ad649116c67ab3dcf117b8b0978068a8
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992826"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534535"
 ---
 # <a name="list-provisioningpolicies"></a>列出 provisioningPolicies
 

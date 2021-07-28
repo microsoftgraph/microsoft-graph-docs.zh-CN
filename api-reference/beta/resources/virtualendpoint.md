@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 215179905a9affc9d9c31770511ebbdf22d865ba
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 929b6e1c404dad30d6009264ed8e6eb27985c9e8
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208188"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533263"
 ---
 # <a name="virtualendpoint-resource-type"></a>virtualEndpoint 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "53208188"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 API 用于管理云电脑的容器。
+表示用于管理云电脑的 API 的容器。
 
 使用云电脑 API 为组织的员工预配和管理虚拟桌面。 将它与 [Intune API](../resources/intune-graph-overview.md) 结合使用，以管理物理和虚拟终结点。
 
@@ -27,7 +27,7 @@ ms.locfileid: "53208188"
 
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取有效权限](../api/virtualendpoint-geteffectivepermissions.md)|String collection|查看当前经过身份验证的用户的有效权限。|
+|[获取有效权限](../api/virtualendpoint-geteffectivepermissions.md)|字符串集合|查看当前经过身份验证的用户的有效权限。|
 |[列出 cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) 集合|列出 [cloudPC 对象的属性和](../resources/cloudpc.md) 关系。|
 |[列出 deviceImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 集合|列出 [cloudPcDeviceImage 对象的属性和](../resources/cloudpcdeviceimage.md) 关系。|
 |[创建 cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|创建新的 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。|
@@ -51,7 +51,7 @@ ms.locfileid: "53208188"
 |:---|:---|:---|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) 集合|云托管虚拟桌面。|
 |deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 集合|云电脑上的图像资源。|
-|onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 集合|一组已定义的 Azure 资源信息，可用于为云电脑建立本地网络连接。|
+|onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 集合|一个定义的 Azure 资源信息集合，可用于为云电脑建立本地网络连接。|
 |provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 集合|云电脑预配策略。|
 |userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) 集合|云电脑用户设置。 |
 |auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) 集合|云电脑审核事件。|

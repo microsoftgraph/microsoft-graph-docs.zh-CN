@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 4056229ecb748ff9c99a3b332298d32e67fdaf66
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: d458e6ad07603a9929d7271478aa87d2d46b9e4f
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921225"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579237"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 命名空间：microsoft.graph
@@ -62,7 +62,7 @@ PATCH /identity/identityProviders/{id}
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |clientId|字符串|向标识提供程序注册应用程序时，获取应用程序的客户端标识符。|
-|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回"\*\*\*\*"。|
+|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回 `****`。|
 |displayName|字符串|标识提供程序的显示名称。|
 
 ### <a name="openidconnectidentityprovider-object"></a>openIdConnectIdentityProvider 对象
@@ -74,7 +74,7 @@ PATCH /identity/identityProviders/{id}
 |displayName|字符串|标识提供程序的显示名称。|
 |domainHint|String|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别和使用声明。 此复杂类型捕获该映射。|
-|metadataUrl|String|OpenID Connect 标识提供程序的元数据文档的 URL。 每个 OpenID Connect 标识提供程序都描述一个元数据文档，该文档包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID Connect 元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID Connect 标识提供程序的元数据 URL。|
+|metadataUrl|String|OpenID 元数据文档的 URL 连接提供程序。 每个 OpenID 连接标识提供程序都描述一个元数据文档，其中包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。|
 |responseMode|String|响应模式定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可能的值 `form_post` `query` ：、。|
 |responseType|String|响应类型描述在初始调用中发送回自定义标识提供程序authorization_endpoint类型。 可能的值 `code` `id_token` `token` ：、、。|
 |scope|String|范围定义要从自定义标识提供程序收集的信息和权限。|
@@ -112,9 +112,9 @@ PATCH /identity/identityProviders/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
-Content-length: 41
 
 {
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "clientSecret": "1111111111111"
 }
 ```
@@ -137,8 +137,6 @@ Content-length: 41
 ---
 
 
----
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
@@ -152,7 +150,7 @@ Content-length: 41
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 2：仅为 Azure AD B2C (特定 **OpenID Connect** 标识提供程序) 
+### <a name="example-2-update-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 2：仅为 Azure AD B2C 连接更新特定 **OpenID** (标识) 
 
 #### <a name="request"></a>请求
 
@@ -193,8 +191,6 @@ Content-length: 41
 
 ---
 
-
----
 
 #### <a name="response"></a>响应
 
@@ -250,8 +246,6 @@ Content-length: 41
 
 ---
 
-
----
 
 #### <a name="response"></a>响应
 

@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3c39431d7523d54e86b6a0b1e48d4163fb9b0024
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f69186936bcf8043eff233bc8616538a492a021e
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50981698"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579840"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.identityProviders("Amazon-OAuth")
+graphClient.identity().identityProviders("{id}")
     .buildRequest()
     .delete();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a810786ed450910eeaa47e79c67368e4ba07d6de
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dd6796c1eac626f0b3d25c44c87ae50a1bc9a770
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50789898"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581279"
 ---
 ```csharp
 
@@ -14,6 +14,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversationMember = new AadUserConversationMember
 {
     VisibleHistoryStartDateTime = DateTimeOffset.Parse("0001-01-01T00:00:00Z"),
+    Roles = new List<String>()
+    {
+        "owner"
+    },
     AdditionalData = new Dictionary<string, object>()
     {
         {"user@odata.bind", "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"}

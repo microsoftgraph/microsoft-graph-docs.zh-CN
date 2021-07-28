@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: cc5534413efc4eb423a070e89013a8199bd4a7d6
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
-ms.translationtype: MT
+ms.openlocfilehash: 9bff250aa507457618ba74433b316915e9bdb8bc
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207173"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579360"
 ---
 ```java
 
@@ -14,10 +14,11 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
 
-UserCollectionPage user = graphClient.groups("{id}").transitiveMembers().microsoft.graph.user()
+GroupCollectionPage groups = graphClient.groups()
     .buildRequest( requestOptions )
     .filter("startswith(displayName, 'a')")
     .orderBy("displayName")
+    .top(1)
     .get();
 
 ```

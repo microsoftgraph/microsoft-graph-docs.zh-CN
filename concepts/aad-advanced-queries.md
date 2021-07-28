@@ -4,12 +4,12 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: eb8b5b7b8438f900535efd6ce625059919d76952
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 5b076b047d06b81428dbbce83e152c23e677eb24
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443198"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534184"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
@@ -80,10 +80,10 @@ ConsistencyLevel: eventual
   + 支持 `eq` 运算符的所有属性也支持 `ne` 或 `NOT` 运算符。
   + 当`eq`运算符的计算结果为 `true`时，`ne`运算符求反。 对于使用 `any` lambda 运算符的查询，请使用 `NOT` 运算符。 请参阅[使用 lambda 运算符的筛选器](/graph/query-parameters#filter-using-lambda-operators)。
 
-下表汇总了[users](/graph/api/resources/user)目录对象的属性对`$filter`运算符的支持。
+下表汇总了所有目录对象的属性对 `$filter` 运算符的支持。
 
 - ![默认情况下有效。 不需要高级查询参数。](/graph/images/advanced-query-parameters/default.png) 默认情况下，该属性支持`$filter`使用运算符。
-- ![需要高级查询参数。](/graph/images/advanced-query-parameters/advanced.png) 特定的 `$filter` 运算符需要 *高级查询参数*:
+- ![需要高级查询参数。](/graph/images/advanced-query-parameters/advanced.png) 特定的 `$filter` 运算符需要 *高级查询参数*，即：
   - `ConsistencyLevel=eventual` 标头
   - `$count=true` 查询字符串
 - 空白单元格表示该属性不支持 `$filter` 使用运算符。

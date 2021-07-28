@@ -5,12 +5,12 @@ localization_priority: Priority
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b422776a8fac5d51376f721af95e5bd9f74fe7eb
-ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
+ms.openlocfilehash: a25d1af0bad65dcb3e8e7a29aa9152bf59af212f
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53456400"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580796"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -77,7 +77,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages
   "blockType": "request",
   "name": "get_listchannelmessages_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -1,53 +1,53 @@
 ---
 title: openIdConnectIdentityProvider 资源类型
-description: 表示 Azure Active Directory B2C 租户中的 OpenIDConnect 标识提供程序。
+description: 表示 B2C 租户中的 OpenIDConnect Azure Active Directory提供程序。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 990deba52cc4c3ff66f4dd36f0fb795497b97af4
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: bbdbb83f6fd1eef7acb4cadeaca174b1e45ddbfb
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491101"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580896"
 ---
 # <a name="openidconnectidentityprovider-resource-type"></a>openIdConnectIdentityProvider 资源类型
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure Active Directory B2C 租户中的 OpenID Connect 标识提供程序。
+表示 B2C 连接中的 OpenID Azure Active Directory标识提供程序。
 
-通过配置 B2C 租户中的 OpenID Connect 提供程序，用户可以在应用程序中使用其自定义标识提供程序进行注册和登录。
+通过配置 B2C 连接中的 OpenID 提供程序，用户可以使用应用程序中的自定义标识提供程序进行注册和登录。
 
-此类型将继承自 [identityProviderBase](../resources/identityproviderbase.md)。
+此类型将从 [identityProviderBase](../resources/identityproviderbase.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|[identityProviderBase](../resources/identityproviderbase.md)  集合|检索在租户中配置的所有标识提供程序，包括 OpenID Connect 标识提供程序。|
-|[创建](../api/identityproviderbase-post-identityproviders.md)|openIdConnectIdentityProvider|创建新的 OpenID Connect 标识提供程序。|
-|[获取](../api/identityproviderbase-get.md) |openIdConnectIdentityProvider|检索 OpenID Connect 标识提供程序的属性。|
-|[更新](../api/identityproviderbase-update.md)|无|更新 OpenID Connect 标识提供程序。|
-|[删除](../api/identityproviderbase-delete.md)|无|删除 OpenID Connect 标识提供程序。|
+|[List](../api/identityproviderbase-list.md)|[identityProviderBase](../resources/identityproviderbase.md)  集合|检索在租户中配置的所有标识提供程序，包括 OpenID 连接提供程序。|
+|[Create](../api/identityproviderbase-post-identityproviders.md)|openIdConnectIdentityProvider|创建新的 OpenID 连接标识提供程序。|
+|[Get](../api/identityproviderbase-get.md) |openIdConnectIdentityProvider|检索 OpenID 属性连接提供程序。|
+|[更新](../api/identityproviderbase-update.md)|无|更新 OpenID 连接标识提供程序。|
+|[删除](../api/identityproviderbase-delete.md)|无|删除 OpenID 连接标识提供程序。|
 |[列出可用的提供程序类型](../api/identityproviderbase-list-availableprovidertypes.md)|String 集合|检索租户中所有可用的标识提供程序类型。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|字符串|使用身份提供程序注册应用时获取的应用客户端 ID。 必需。|
-|clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 clientSecret 依赖于 **responseType**。 <ul><li>当 **responseType** `code` 为 时，身份验证代码交换需要密码。</li><li>当 **responseType** `id_token` 为密码时不是必需的，因为没有代码交换。 授权id_token返回授权请求。</li></ul> 这是只读的。 读取操作返回" \* \* \* \* "。|
+|clientId|字符串|使用身份提供程序注册应用时获取的应用客户端 ID。 必填。|
+|clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 clientSecret 依赖于 **responseType**。 <ul><li>当 **responseType** `code` 为 时，身份验证代码交换需要密码。</li><li>当 **responseType** `id_token` 为密码时不是必需的，因为没有代码交换。 授权id_token返回授权请求。</li></ul> 这是只读的。 读取操作返回 `****`。|
 |id|String|标识提供程序的标识符。必填。 继承自 [identityProviderBase](../resources/identityproviderbase.md)。 只读。|
 |displayName|字符串|标识提供程序的显示名称。 |
-|claimsMapping|[claimsMapping](claimsmapping.md)|OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别和使用声明。 此复杂类型捕获该映射。 必需。|
+|claimsMapping|[claimsMapping](claimsmapping.md)|OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别和使用声明。 此复杂类型捕获该映射。 必填。|
 |domainHint|String|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
-|metadataUrl|String|OpenID Connect 标识提供程序的元数据文档的 URL。 每个 OpenID Connect 标识提供程序都描述一个元数据文档，该文档包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID Connect 元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID Connect 标识提供程序的元数据 URL。 只读。 必需。|
-|responseMode|String|响应模式定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可能的值 `form_post` `query` ：、。 必需。|
-|responseType|String|响应类型描述在初始调用中发送回自定义标识提供程序authorization_endpoint类型。 可能的值 `code` `id_token` `token` ：、、。  必需。|
-|scope|String|范围定义要从自定义标识提供程序收集的信息和权限。 OpenID Connect 请求必须包含 openid 范围值才能从标识提供程序接收 ID 令牌。 如果没有 ID 令牌，用户将无法使用自定义标识提供程序登录到 Azure AD B2C。 其他范围可以追加，用空格分隔。 有关范围限制的更多详细信息，请参阅 [RFC6749 第 3.3 节](https://tools.ietf.org/html/rfc6749#section-3.3)。 必需。|
+|metadataUrl|String|OpenID 元数据文档的 URL 连接提供程序。 每个 OpenID 连接标识提供程序都描述一个元数据文档，其中包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。 只读。 必填。|
+|responseMode|String|响应模式定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可能的值 `form_post` `query` ：、。 必填。|
+|responseType|String|响应类型描述在初始调用中发送回自定义标识提供程序authorization_endpoint类型。 可能的值 `code` `id_token` `token` ：、、。  必填。|
+|scope|String|范围定义要从自定义标识提供程序收集的信息和权限。 OpenID 连接请求必须包含 openid 范围值才能从标识提供程序接收 ID 令牌。 如果没有 ID 令牌，用户将无法使用自定义标识提供程序登录到 Azure AD B2C。 其他范围可以追加，用空格分隔。 有关范围限制的更多详细信息，请参阅 [RFC6749 第 3.3 节](https://tools.ietf.org/html/rfc6749#section-3.3)。 必填。|
 
 ### <a name="responsemode-value"></a>responseMode 值
 |值|说明|

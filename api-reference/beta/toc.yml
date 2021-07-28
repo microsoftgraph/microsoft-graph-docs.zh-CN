@@ -83,6 +83,8 @@ items:
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
       - name: 使用 Postman
         href: /graph/use-postman?context=graph/api/beta
+      - name: 系统邮件
+        href: /graph/system-messages?context=graph/api/beta
   - name: 迁移
     expanded: false
     items:
@@ -1497,7 +1499,7 @@ items:
                     href: api/ediscovery-case-close.md
                   - name: 重新打开
                     href: api/ediscovery-case-reopen.md
-                  - name: Delete
+                  - name: 删除
                     href: api/ediscovery-case-delete.md
               - name: Custodian
                 href: resources/ediscovery-custodian.md
@@ -1848,7 +1850,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -9255,7 +9257,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: 列表
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Delete
+                      - name: 删除
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理脚本
                     href: resources/intune-shared-devicemanagementscript.md
@@ -9883,7 +9885,7 @@ items:
                     href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
                   - name: 获取租户详细信息
                     href: api/managedtenants-tenantdetailedinformation-get.md
-              - name: 租户
+              - name: Tenant
                 href: resources/managedtenants-tenant.md
                 items:
                   - name: 列出租户
@@ -11664,7 +11666,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload客户端证书
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Delete
+                      - name: 删除
                         href: api/identityapiconnector-delete.md
           - name: 管控
             items:
@@ -12432,7 +12434,7 @@ items:
                     href: api/useraccountinformation-update.md
                   - name: 删除
                     href: api/useraccountinformation-delete.md
-              - name: Addresses
+              - name: 地址
                 items:
                   - name: 项目地址
                     href: resources/itemaddress.md
@@ -13901,6 +13903,8 @@ items:
                 href: api/teamworktag-delete.md
               - name: 列出成员
                 href: api/teamworktagmember-list.md
+              - name: 创建成员
+                href: api/teamworktagmember-post.md
               - name: 获取成员
                 href: api/teamworktagmember-get.md
               - name: 删除成员

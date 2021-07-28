@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f0491ed8e17728a366e416467445bbbb134f5e1f
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 7b4ddfd7a1e6676befd58845cfe3373db978649c
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580869"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53547565"
 ---
 # <a name="get-authenticationmethodspolicy"></a>获取 authenticationMethodsPolicy
 命名空间：microsoft.graph
@@ -39,7 +39,7 @@ GET /policies/authenticationMethodsPolicy
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法不支持任何可选的查询参数。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -55,8 +55,6 @@ GET /policies/authenticationMethodsPolicy
 
 ### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_authenticationmethodspolicy"
@@ -65,24 +63,6 @@ GET /policies/authenticationMethodsPolicy
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationmethodspolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-authenticationmethodspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-authenticationmethodspolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-authenticationmethodspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 
 ### <a name="response"></a>响应

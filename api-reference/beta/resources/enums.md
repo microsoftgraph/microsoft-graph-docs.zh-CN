@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d4cac5a2b0d7b5d9c2e6a969da7e8c05c85322fb
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: d628a45b99d5fe9fb0416820e34ecf296e740f79
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467132"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533904"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -124,7 +124,7 @@ ms.locfileid: "53467132"
 
 |成员|
 |:---|
-|全部 |
+|all|
 |浏览器|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -146,7 +146,7 @@ ms.locfileid: "53467132"
 |整数|
 |参考|
 |二进制|
-|布尔|
+|Boolean|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -456,7 +456,7 @@ ms.locfileid: "53467132"
 
 |成员|
 |:---|
-|全部 |
+|all|
 |privilegedAdmin|
 |admin|
 |用户|
@@ -466,7 +466,7 @@ ms.locfileid: "53467132"
 
 |成员|
 |:---|
-|全部 |
+|all|
 |成员|
 |来宾|
 |unknownFutureValue|
@@ -886,7 +886,7 @@ ms.locfileid: "53467132"
 |网站|
 |list|
 |listItem|
-|drive|
+|驱动器|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType 值
@@ -1069,7 +1069,7 @@ ms.locfileid: "53467132"
 |:-------------------------
 | 无
 | contactsOnly
-| 全部 
+| all
 
 
 ### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus 值
@@ -1112,15 +1112,17 @@ ms.locfileid: "53467132"
 
 ### <a name="educationsynchronizationstatus-values"></a>educationSynchronizationStatus 值
 
-| 成员             | 值 |
-| :----------------- | :---- |
-| paused             | 0     |
-| inProgress         | 1     |
-| success            | 2     |
-| error              | 3     |
-| validationError    | 4      |
-| quarantined        | 5      |
-| unknownFutureValue | 6      |
+| 成员             |
+| :----------------- |
+| paused             |
+| inProgress         |
+| success            |
+| error              |
+| validationError    |
+| quarantined        |
+| unknownFutureValue |
+| 提取         |
+| 验证         |
 
 ### <a name="educationexternalsource-values"></a>educationExternalSource 值
 
@@ -1309,7 +1311,7 @@ ms.locfileid: "53467132"
 |:-------------------------
 | 替换
 | Append
-| Delete
+| 删除
 | Insert
 | Prepend
 
@@ -1461,7 +1463,7 @@ ms.locfileid: "53467132"
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11     |
+| preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13    |
 | preset14 | 14     |
@@ -1572,7 +1574,7 @@ ms.locfileid: "53467132"
 | 无              | 8      | REG_NONE注册表值类型。                |
 | qword             | 9      | REG_QWORD注册表值类型。               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN注册表值类型。 |
-| sz                | 11     | REG_SZ注册表值类型。                  |
+| sz                | 11    | REG_SZ注册表值类型。                  |
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
 
@@ -1644,7 +1646,7 @@ ms.locfileid: "53467132"
 
 |成员|
 |:---|
-|全部 |
+|all|
 |任意|
 
 ### <a name="risklevel-values"></a>riskLevel 值
@@ -1780,13 +1782,15 @@ ms.locfileid: "53467132"
 | 无   | 0     |
 | 添加    | 1     |
 | 更新 | 2     |
-| Delete | 4      |
+| 删除 | 4      |
 
 ### <a name="chatmessagetype-values"></a>chatMessageType 值
 
 |成员|
 |:---|
 |message|
+|unknownFutureValue|
+|systemEventMessage|
 
 ### <a name="chatmessageimportance-values"></a>chatMessageImportance 值
 
@@ -1997,7 +2001,7 @@ ms.locfileid: "53467132"
 |windows|
 |windowsPhone|
 |macOS|
-|全部 |
+|all|
 |unknownFutureValue|
 
 ### <a name="priority-values"></a>优先级值
@@ -2005,7 +2009,7 @@ ms.locfileid: "53467132"
 |成员|值|
 |:---|:---|
 |无|0|
-|High|1|
+|高|1|
 |低|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>threatAssessmentContentType 值
@@ -2070,7 +2074,7 @@ ms.locfileid: "53467132"
 | firstTimeSender       | 8      | 因第一次发送者被阻止。   |
 | autoPurgeToInbox      | 9      | TimeTravel 将邮件移动到收件箱。   |
 | autoPurgeToJunk       | 10     | TimeTravel 将邮件移动到垃圾邮件。    |
-| autoPurgeToDeleted    | 11     | TimeTravel 要删除的移动消息。 |
+| autoPurgeToDeleted    | 11    | TimeTravel 要删除的移动消息。 |
 | 出站              | 12     | 出站邮件。                      |
 | notJunk               | 13    | 允许，因为不是垃圾邮件。              |
 | junk                  | 14     | 因垃圾邮件被阻止。                |
@@ -2253,14 +2257,14 @@ ms.locfileid: "53467132"
 |成员|
 |:---|
 |无|
-|全部 |
+|all|
 |selected|
 
 ### <a name="teamsappinstallationscope-values"></a>teamsAppInstallationScope 值
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
+|team      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2433,7 +2437,7 @@ ms.locfileid: "53467132"
 
 |成员|
 |:---|
-|团队|
+|team|
 |channel|
 |聊天|
 |unknownFutureValue|
@@ -2451,3 +2455,21 @@ ms.locfileid: "53467132"
 |phoneUser|
 |unknownFutureValue|
 
+### <a name="callrecordingstatus-values"></a>callRecordingStatus 值 
+
+|成员|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### <a name="teamworkcalleventtype-values"></a>teamworkCallEventType 值 
+
+|成员|
+|:---|
+|通话|
+|meeting|
+|screenShare|
+|unknownFutureValue|

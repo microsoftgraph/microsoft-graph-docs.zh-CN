@@ -1,41 +1,52 @@
 ---
 title: policyRoot 资源类型
-description: unifiedRoleManagementPolicy 和 unifiedRoleManagementPolicyAssignment 的新导航属性绑定到 policyRoot。
+description: 公开策略单一元素的导航属性的资源类型。
 author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3827440befd26fb584addd0d6af520a6498c11dd
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: b8d24c506934dddaa875d3cdd80808be7b918f57
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680723"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53547529"
 ---
 # <a name="policyroot-resource-type"></a>policyRoot 资源类型
 
 命名空间：microsoft.graph
 
-unifiedRoleManagementPolicy 和 unifiedRoleManagementPolicyAssignment 的新导航属性绑定到 policyRoot。
+公开策略单一元素的导航属性的资源类型。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|说明|
-|:---|:---|:---|
-|[列出 roleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 集合|从 roleManagementPolicies 导航属性获取 unifiedRoleManagementPolicy 资源。|
-|[列出 roleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 集合|从 roleManagementPolicyAssignments 导航属性获取 unifiedRoleManagementPolicyAssignment 资源。|
+无
 
-<!--
-## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+## <a name="properties"></a>属性
+无
 
 
-## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|roleManagementPolicies|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) collection|Represents the role management policies.|
-|roleManagementPolicyAssignments|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) collection|Represents the role management policy assignments.|
--->
+## <a name="relationships"></a>关系
+| 关系                              | 类型                                                                                                      | 说明                                                                                                                                                          |
+|:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | 身份验证方法以及允许使用它们登录并执行 Azure AD (MFA) 中的多重Azure Active Directory (身份验证) 。 |
+| authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | 外部用户的自助注册体验的策略配置。                                                                                   |
+| b2cAuthenticationMethodsPolicy            | [b2cAuthenticationMethodsPolicy](b2cauthenticationmethodspolicy.md)                                       | 用于定义最终用户如何通过本地帐户注册的 Azure AD B2C 策略。                                                                                     |
+| activityBasedTimeoutPolicies              | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) 集合                                    | 控制应用程序的 Web 会话的空闲时间的策略。                                                                                        |
+| authorizationPolicy                       | [authorizationPolicy](authorizationpolicy.md) 集合                                                  | 控制 Azure AD 授权设置的策略。                                                                                                            |
+| claimsMappingPolicies                     | [claimsMappingPolicy](claimsmappingpolicy.md) 集合                                                  | WS-Fed、SAML、OAuth 2.0 和 OpenID 连接协议声明映射策略，用于颁发给特定应用程序的令牌。                                   |
+| homeRealmDiscoveryPolicies                | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合                                        | 用于控制联盟用户的 Azure AD 身份验证行为的策略。                                                                                          |
+| permissionGrantPolicies                   | [permissionGrantPolicy](permissiongrantpolicy.md) 集合                                              | 指定可授予同意的条件的策略。                                                                                         |
+| tokenIssuancePolicies                     | [tokenIssuancePolicy](tokenissuancepolicy.md) 集合                                                  | 指定 Azure AD 颁发的 SAML 令牌特征的策略。                                                                                     |
+| tokenLifetimePolicies                     | [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合                                                  | 控制 JWT 访问令牌、ID 令牌或 Azure AD 颁发的 SAML 1.1/2.0 令牌的生命周期的策略。                                                |
+| featureRolloutPolicies                    | [featureRolloutPolicy](featurerolloutpolicy.md) 集合                                                | 与目录对象关联的功能推出策略。                                                                                                       |
+| accessReviewPolicy                        | [accessReviewPolicy](accessreviewpolicy.md)                                                               | 包含目录级别访问评审设置的策略。                                                                                                     |
+| adminConsentRequestPolicy                 | [adminConsentRequestPolicy](adminconsentrequestpolicy.md)                                                 | 创建和管理整个租户的同意请求的策略。                                                                                  |
+| conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | 定义访问方案的自定义规则。                                                                                                                     |
+| identitySecurityDefaultsEnforcementPolicy | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md)                 | 表示用于防范常见攻击的安全默认值的策略。                                                                                |
+| mobileAppManagementPolicies               | [mobilityManagementPolicy](mobilitymanagementpolicy.md) 集合                                        | 定义移动管理自动注册配置的策略 (MDM 或 MAM) 应用程序。                                                            |
+| roleManagementPolicies                    | [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 集合                     | 表示角色管理策略。                                                                                                                             |
+| roleManagementPolicyAssignments           | [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 集合 | 表示角色管理策略分配。                                                                                                                   |
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

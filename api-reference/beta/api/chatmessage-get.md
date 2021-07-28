@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 82bd85c18d936136d24ce82ee1343d553fa6ae77
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 456dea5464d005af0ffc7c1621366e59f1aa8c41
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971107"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533869"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>在频道或聊天中获取 chatMessage
 
@@ -141,6 +141,7 @@ Content-type: application/json
     "webUrl": null,
     "channelIdentity": null,
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -222,6 +223,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1614618259349?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1614618259349&parentMessageId=1614618259349",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -308,6 +310,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1613671348387?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1613671348387&parentMessageId=1612509044972",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,

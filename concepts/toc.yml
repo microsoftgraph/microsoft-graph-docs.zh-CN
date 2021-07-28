@@ -243,6 +243,8 @@ items:
             href: education-concept-overview.md
           - name: 评分标准
             href: education-rubric-overview.md
+          - name: 上传文件
+            href: education-upload-resource-overview.md
       - name: 文件
         href: onedrive-concept-overview.md
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
@@ -444,6 +446,8 @@ items:
                 href: teams-send-activityfeednotifications.md
               - name: 最佳做法
                 href: teams-activity-feed-notifications-best-practices.md
+          - name: 系统邮件
+            href: system-messages.md
       - name: 待办任务
         href: todo-concept-overview.md
         displayName: Microsoft To Do

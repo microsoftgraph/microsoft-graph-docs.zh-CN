@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 534e2b14e7df4f8b571e14e1238ad6ed03d96a67
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 0772bfcb3ca6050ec9d920fef24613555e30f6db
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082158"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534030"
 ---
 # <a name="cloudpcusersetting-resource-type"></a>cloudPcUserSetting 资源类型
 
@@ -37,8 +37,8 @@ ms.locfileid: "53082158"
 |:---|:---|:---|
 |id|String|云电脑用户设置的唯一标识符。 只读。|
 |displayName|String|用户界面中显示的设置名称。 |
-|localAdminEnabled|布尔值|指示是否已启用本地管理员选项。 默认值为 `false`。 若要启用本地管理员选项，将设置更改为 `true` 。 如果启用了本地管理员选项，最终用户可以是云电脑设备的管理员。 |
-|selfServiceEnabled|布尔值|指示是否已启用自助服务选项。 默认值为 `false`。 若要启用自助服务选项，将设置更改为 `true` 。如果启用自助服务选项，则允许最终用户执行一些自助服务操作，例如通过最终用户门户升级云电脑。|
+|localAdminEnabled|Boolean|指示是否已启用本地管理员选项。 默认值为 `false`。 若要启用本地管理员选项，将设置更改为 `true` 。 如果启用了本地管理员选项，最终用户可以是云电脑设备的管理员。 |
+|selfServiceEnabled|Boolean|指示是否已启用自助服务选项。 默认值为 `false`。 若要启用自助服务选项，将设置更改为 `true` 。如果启用自助服务选项，则允许最终用户执行一些自助服务操作，例如通过最终用户门户升级云电脑。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设置的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。 |
 |createdDateTime|DateTimeOffset|创建设置的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。 |
 

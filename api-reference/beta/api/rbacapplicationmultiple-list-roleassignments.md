@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 72c1c5f711148651b8faef38efb7d4d0d21cf432
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 0ee5cb37fab90b3a92d20b83047f8610453ee84f
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334617"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534002"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>列出 unifiedRoleAssignmentMultiple
 

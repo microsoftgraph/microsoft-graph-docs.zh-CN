@@ -192,7 +192,7 @@ ms.locfileid: "53428841"
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户、联系人和组。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。 支持 `$expand`。|
 |membersWithLicenseErrors|[user](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。只读。|
 |onenote|[onenote](onenote.md)| 只读。|
-|owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）只读。空。支持 `$expand`。|
+|owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）只读。可为空。支持 `$expand`。|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|已授予针对组的特定应用程序的权限。支持 `$expand`。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片。 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|

@@ -2,14 +2,14 @@
 author: isabelleatmsft
 ms.topic: include
 ms.date: 02/08/2021
-ms.openlocfilehash: 76340f3f12ecd68f6bf72550cc5761f35613a19f
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 7d977684274ddfebe7530f4b5ca114d282670bc5
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579253"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533940"
 ---
 <!-- markdownlint-disable MD041-->
 
 >[!NOTE]
->本部分中的访问评审 API 是推荐的访问评审 API。 较旧版本 [的访问评审 API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true)将弃用。
+>这是访问评审的推荐 API。 访问评审 API [的](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) 以前版本已弃用。

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 50154654835d1137db49f9f5690115c05ea7e0c1
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 83dfce84c3a1c911d51ca7cf66d864945f3391f9
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53367001"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533918"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>cloudPcDeviceImage 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "53367001"
 |osBuildNumber|String|映像的操作系统生成版本。 例如：1909。|
 |operatingSystem|String|映像的操作系统。 例如：Windows 10 企业版。|
 |lastModifiedDateTime|DateTimeOffset|上次修改图像的数据和时间。 时间以 ISO 8601 格式显示，协调世界时 (UTC) 时间。 例如，2014 年 1 月 1 日午夜 UTC 显示为"2014-01-01T00：00：00Z"。|
-|状态|cloudPcDeviceImageStatus|云电脑上映像的状态。 可取值为：`pending`、`ready`、`failed`。|
+|status|cloudPcDeviceImageStatus|云电脑上映像的状态。 可取值为：`pending`、`ready`、`failed`。|
 |statusDetails|cloudPcDeviceImageStatusDetails|图像状态的详细信息，指示上传失败的原因（如果适用）。 可能的值为： `internalServerError`、 `sourceImageNotFound`、 `osVersionNotSupported`和 `sourceImageInvalid`。|
 
 ### <a name="cloudpcdeviceimagestatus-values"></a>cloudPcDeviceImageStatus 值
@@ -52,7 +52,7 @@ ms.locfileid: "53367001"
 |成员|说明|
 |:---|:---|
 |pending|图像上载正在进行中。|
-|ready|该映像已准备好在云 PC 上使用。|
+|ready|该映像已准备好在云电脑使用。|
 |failed|无法上载图像。 |
 
 ### <a name="cloudpcdeviceimagestatusdetails-values"></a>cloudPcDeviceImageStatusDetails 值

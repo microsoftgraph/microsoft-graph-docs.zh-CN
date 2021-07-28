@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 4b0640cd6843873d720ddc6547e15beb89f7f0f8
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 02a0d7df33fd630c2bd2b7faf15d5043a1d0eafc
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439525"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578894"
 ---
 # <a name="update-a-userflowidentityprovider"></a>更新 userFlowIdentityProvider
 
@@ -77,7 +77,8 @@ PATCH https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Test/userflow
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test"
+  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test",
+  "@odata.type": "#microsoft.graph.identityProvider"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

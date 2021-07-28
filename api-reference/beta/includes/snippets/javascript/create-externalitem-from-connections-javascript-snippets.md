@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fe855a236146234237bc86afbf514be1dda7be12
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 725cca5225bcc2d18e93e27ac7334c19cfa9f9e5
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51573176"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581550"
 ---
 ```javascript
 
@@ -16,7 +16,6 @@ const options = {
 const client = Client.init(options);
 
 const externalItem = {
-  '@odata.type': 'microsoft.graph.externalItem',
   acl: [
     {
       type: 'user',

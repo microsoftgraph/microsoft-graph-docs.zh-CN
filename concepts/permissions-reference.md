@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 2ffa8a0d1bc6359ec5a7424674a297e8763c989d
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: a98c092294f28b32ba5fc8a747b1ff9aad1ee17a
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401489"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580417"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -231,6 +231,7 @@ _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_ 仅对工�
 | _Application.Read.All_ | 读取应用程序 | 允许此应用代表已登录的用户读取应用程序和服务主体。 | 是 |
 | _Application.ReadWrite.All_ | 读取和写入所有应用 |  允许此应用代表已登录的用户创建、读取、更新和删除应用程序和服务主体。 | 是 |
 | _AppRoleAssignment.ReadWrite.All_ | 管理应用权限授予和应用角色分配 | 允许应用代表已登录用户管理任何 API（包括 Microsoft Graph）的应用程序权限授予和任何应用的应用程序分配。 | 是 |
+| _DelegatedPermissionGrant.ReadWrite.All_ | 管理委派权限授予 | 允许应用代表已登录用户管理任何 API（包括 Microsoft Graph）委托的权限授予。 | 是 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -240,6 +241,7 @@ _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_ 仅对工�
 | _Application.ReadWrite.All_ | 读取和写入所有应用 | 允许调用应用在没有登录用户的情况下创建和管理（读取、更新、更新应用程序密码和删除）应用程序和服务主体。  不允许管理对用户或组的同意授权或应用程序分配。 | 是 |
 | _Application.ReadWrite.OwnedBy_ | 管理此应用创建或拥有的应用 | 允许调用应用在没有登录用户的情况下创建其他应用程序和服务主体，以及完全管理这些应用程序和服务主体（读取、更新、更新应用程序密码和删除）。  它无法更新任何不是其所有者的应用程序。 不允许管理对用户或组的同意授权或应用程序分配。 | 是 |
 | _AppRoleAssignment.ReadWrite.All_ | 管理应用权限授予和应用角色分配 | 允许应用在没有登录用户的情况下管理任何 API（包括 Microsoft Graph）的应用程序权限授予和任何应用的应用程序分配。 | 是 |
+| _DelegatedPermissionGrant.ReadWrite.All_ | 管理所有委托的权限授予 | 允许应用在没有已登录用户的情况下，授予或吊销任何 API（包括 Microsoft Graph）委托的权限。 | 是 |
 
 ### <a name="remarks"></a>备注
 

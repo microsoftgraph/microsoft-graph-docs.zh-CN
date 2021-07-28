@@ -2,19 +2,20 @@
 title: identityProvider 资源类型
 description: 表示 Azure Active Directory (Azure AD) 标识提供程序。
 localization_priority: Priority
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c03d1a47925456038ebaf24b96d93e73d844f16c
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 769310747aa83f30597d725757aadb3f8262270e
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882192"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534486"
 ---
-# <a name="identityprovider-resource-type"></a>identityProvider 资源类型
-
+# <a name="identityprovider-resource-type-deprecated"></a>identityProvider 资源类型（已弃用）
 命名空间：microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 表示 Azure Active Directory (Azure AD) 标识提供程序。 标识提供者 **Microsoft**、 **Google**、 **Facebook**、 **Amazon**、  **LinkedIn** 或 **Twitter**。 以下标识提供者为预览版： **微博**、 **QQ**、 **微信**、 **GitHub** 以及任何 OpenID Connect 支持的提供商。 
 
@@ -42,7 +43,7 @@ ms.locfileid: "51882192"
 |clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。 必填。 不可为空。|
 |clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。 这是只读的。 读取操作将返回“`****`”。  必填。 不可为空。|
 |id|字符串|标识提供程序的 ID。|
-|name|字符串|标识提供程序的显示名称。 不可为空。|
+|name|字符串|标识提供程序的显示名称。不可为 null。|
 |type|字符串|身份提供程序类型是必填字段。 对于 B2B 方案： `Google`， `Facebook`。 对于 B2C 方案： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、`QQ`、 `WeChat`、 `OpenIDConnect`。 不可为空。|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>获取客户端 ID 和密码的位置
@@ -67,4 +68,3 @@ ms.locfileid: "51882192"
     "clientSecret": "String"
 }
 ```
-

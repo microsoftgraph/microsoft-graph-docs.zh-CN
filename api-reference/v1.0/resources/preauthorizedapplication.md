@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 276b6f618b01d80fd66fda40c0b617a8fd01a6ac
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 9b82d18f769ddb9e1b0291a48ce506d414b88367
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760972"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580196"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preAuthorizedApplication 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50760972"
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |appId|String| 应用程序的唯一标识符。 |
-|delegatedPermissionIds|字符串集合| 应用程序所需的 [oauth2PermissionScopes 的唯](permissionscope.md) 一标识符。 |
+|permissionIds|字符串集合| 应用程序所需的 [oauth2PermissionScopes 的唯](permissionscope.md) 一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
