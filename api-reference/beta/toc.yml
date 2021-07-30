@@ -384,7 +384,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -521,7 +521,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -796,7 +796,7 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: 还原已删除的应用程序
                 href: api/directory-deleteditems-restore.md
-              - name: 证书&密码
+              - name: 证书和密码
                 items:
                   - name: 添加密码
                     href: api/application-addpassword.md
@@ -10901,6 +10901,36 @@ items:
                         href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
           - name: 身份和登录
             items:
+              - name: '应用程序身份验证方法策略 (预览) '
+                items:
+                  - name: 概述
+                    href: resources/applicationAuthMethodPolicy.md
+                  - name: 租户应用管理策略
+                    items:
+                      - name: 概述
+                        href: resources/tenantAppManagementPolicy.md
+                      - name: 获取
+                        href: api/tenantAppManagementPolicy-get.md
+                      - name: 更新
+                        href: api/tenantAppManagementPolicy-update.md
+                  - name: 应用管理策略
+                    items:
+                      - name: 概述
+                        href: resources/appManagementPolicy.md
+                      - name: 列表
+                        href: api/appManagementPolicy-list.md
+                      - name: 获取
+                        href: api/appManagementPolicy-get.md
+                      - name: 创建
+                        href: api/appManagementPolicy-post.md
+                      - name: 更新
+                        href: api/appManagementPolicy-update.md
+                      - name: 删除
+                        href: api/appManagementPolicy-delete.md
+                      - name: Create appliesTo
+                        href: api/appManagementPolicy-post-appliesTo.md
+                      - name: List appliesTo
+                        href: api/appManagementPolicy-list-appliesTo.md
               - name: 身份验证事件策略
                 items:
                   - name: 身份验证事件策略
@@ -11668,7 +11698,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -12560,7 +12590,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注释
+              - name: 备注
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -13525,7 +13555,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -13978,7 +14008,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

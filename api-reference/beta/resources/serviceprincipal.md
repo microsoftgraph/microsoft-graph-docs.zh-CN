@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 23b8155781e1d6a32140adb403f9fd6bd446cb83
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: cd6351c7a052c92a3e88ac33703e2cca8bfd0021
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53428813"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660329"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -126,13 +126,14 @@ ms.locfileid: "53428813"
 |servicePrincipalType|String|标识服务主体是表示应用程序还是托管标识。 这是由 Azure AD 内部设置的。 对于表示 [应用程序](./application.md)的服务主体，此选项设置为“__Application__”。 对于表示 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，此选项设置为“__ManagedIdentity__”。|
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。只读。 <br><br>支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（多租户）中拥有 Microsoft 工作或学校帐户的用户。</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li><li>`PersonalMicrosoftAccount`：仅限拥有个人 Microsoft 帐户的用户。</li></ul> |
 |tags|String collection| 可用于对服务主体进行分类和识别的自定义字符串。不可为空。<br><br>支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。|
-|tokenEncryptionKeyId|String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+|tokenEncryptionKeyId|字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定该服务主体代表的应用程序的已验证发布者。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
+|appManagementPolicies|[appManagementPolicy](../resources/appManagementPolicy.md) 集合| 应用到此服务主体的 appManagementPolicy。|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|此应用或服务的应用角色分配，已授予用户、组和其他服务主体。支持 `$expand`。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|另一个应用或服务的应用角色分配，已授予此服务主体的。 支持 `$expand`。|
 |claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) 集合|为此服务主体分配的 claimsMappingPolicies。 支持 `$expand`。|
