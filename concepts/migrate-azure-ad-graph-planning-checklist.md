@@ -4,18 +4,19 @@ description: 将应用从 Azure AD Graph迁移到 Microsoft Graph
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 84d486cd64d838a00998179a25dbba3ea35738eb
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 0ff4d78ff297870f328acd78ac66d5db8f243207
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546929"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660273"
 ---
 # <a name="app-migration-planning-checklist"></a>应用迁移规划清单
 
-> [!Important]
-> Azure AD Graph API 现已弃用。 我们将继续提供技术支持和安全更新，但不再提供功能更新。
-> 从 2022 年 6 月 30 开始，我们将停止对 Azure AD Graph将不再提供技术支持或安全更新。 在此时间Graph使用 Azure AD 应用的应用将不再收到来自 Azure AD Graph响应。
+> [!WARNING]
+> **Azure AD Graph已弃用**。 为了避免功能丢失，在 2022 年 6 月 30 日之前，将应用程序迁移到 Microsoft Graph，Azure AD Graph API 终结点将停止响应请求。
+>
+> Microsoft 将继续提供技术支持，并应用 Azure AD Graph修补程序，直到 2022 年 6 月 30 日，所有功能和支持都将结束。 如果在 2022 年 6 月 30 Graph无法将应用程序迁移到 Microsoft Graph，则其功能和稳定性会面临风险。
 
 使用以下清单规划迁移。
 

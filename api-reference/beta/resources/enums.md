@@ -5,16 +5,24 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d628a45b99d5fe9fb0416820e34ecf296e740f79
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: aeb34a1494a4cc48a5b5c44d5ccfa8f540b4505c
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533904"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660322"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="appcredentialrestrictiontype-values"></a>appCredentialRestrictionType 值
+
+|成员|
+|:-----|
+|passwordAddition|
+|passwordLifetime|
+|unknownFutureValue|
 
 ### <a name="synchronizationsecret-values"></a>synchronizationSecret 值
 
@@ -142,11 +150,11 @@ ms.locfileid: "53533904"
 
 |成员|
 |:---|
-|String|
+|字符串|
 |整数|
 |参考|
 |二进制|
-|Boolean|
+|布尔|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -386,7 +394,7 @@ ms.locfileid: "53533904"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobileSMS|
 |mobilePhone|
 |officePhone|
@@ -534,7 +542,7 @@ ms.locfileid: "53533904"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -640,7 +648,7 @@ ms.locfileid: "53533904"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobileSMS|
 |mobileCall|
 |officePhone|
@@ -859,7 +867,7 @@ ms.locfileid: "53533904"
 |:--------------
 | 通话
 | 聊天
-| email
+| 电子邮件
 | 焦点
 | meeting
 
@@ -867,7 +875,7 @@ ms.locfileid: "53533904"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -886,7 +894,7 @@ ms.locfileid: "53533904"
 |网站|
 |list|
 |listItem|
-|驱动器|
+|drive|
 |unknownFutureValue|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType 值
@@ -1444,7 +1452,7 @@ ms.locfileid: "53533904"
 | home
 | 工时
 | 博客
-| 个人资料
+| profile
 
 
 ### <a name="categorycolor-values"></a>categoryColor 值
@@ -1569,7 +1577,7 @@ ms.locfileid: "53533904"
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN注册表值类型。 |
 | dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN注册表值类型。    |
 | expandSz          | 5      | REG_EXPAND_SZ注册表值类型。           |
-| link              | 6      | REG_LINK注册表值类型。                |
+| 链接              | 6      | REG_LINK注册表值类型。                |
 | multiSz           | 7      | REG_MULTI_SZ注册表值类型。            |
 | 无              | 8      | REG_NONE注册表值类型。                |
 | qword             | 9      | REG_QWORD注册表值类型。               |
@@ -1906,7 +1914,7 @@ ms.locfileid: "53533904"
 | 成员  | 值 | 说明                          |
 | :------ | :---- | :----------------------------------- |
 | default | 0     | 内容是文件或非电子邮件类型。 |
-| email   | 1     | 内容是电子邮件。                 |
+| 电子邮件   | 1     | 内容是电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
 
@@ -2009,7 +2017,7 @@ ms.locfileid: "53533904"
 |成员|值|
 |:---|:---|
 |无|0|
-|高|1|
+|High|1|
 |低|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>threatAssessmentContentType 值
