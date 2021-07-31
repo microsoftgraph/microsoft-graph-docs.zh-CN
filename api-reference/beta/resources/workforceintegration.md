@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 12aa4a6ac8fd72f20a0019a95eeb20196b1ed3bf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7e53497b3edb017a9c1e7ada7493bc5fa4505680
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787651"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665884"
 ---
 # <a name="workforceintegration-resource-type"></a>workforceIntegration 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "52787651"
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
 | [List](../api/workforceintegration-list.md) | [workforceIntegration](workforceintegration.md) 集合 | 获取与此 **计划关联的 workforceIntegration** 对象列表。|
-| [创建](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | 创建新的 **workforceIntegration** 对象。|
-| [获取](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | 读取 **workforceIntegration** 对象的属性和关系。 |
+| [Create](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | 创建新的 **workforceIntegration** 对象。|
+| [Get](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | 读取 **workforceIntegration** 对象的属性和关系。 |
 | [更新](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | 更新 **一个 workforceIntegration** 对象。 |
 | [删除](../api/workforceintegration-delete.md) | 无 | 删除 **一个 workforceIntegration** 对象。 |
 
@@ -38,8 +38,8 @@ ms.locfileid: "52787651"
 |displayName|String|员工集成的名称。|
 |加密|[workforceIntegrationEncryption](workforceintegrationencryption.md)|员工集成加密资源。|
 |isActive|Boolean|指示此员工集成当前是否处于活动状态且可用。|
-|支持|string| 同步更改通知支持的 Shifts 实体。 班次将调用此处添加的这些实体上客户端更改时提供的 URL。 默认情况下，更改通知不支持任何实体。 可能的值为 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 、、、、、、、 `offerShiftRequest` `timeCard` `timeOffReason` 和 `timeOff` `timeOffRequest` `unknownFutureValue` 。 如果选择多个值，则所有值必须以大写字母开头。|
-|supportedEntities|string| 此属性 **将替换** v1.0 中的 supports。 我们建议你使用此属性，而不是 **支持**。 **目前，supports** 属性在 beta 版中仍受支持。 可能的值为 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 、、、、、、、 `offerShiftRequest` `timeCard` `timeOffReason` 和 `timeOff` `timeOffRequest` `unknownFutureValue` 。 如果选择多个值，则所有值必须以大写字母开头。|
+|支持|workforceIntegrationSupportedEntities | 同步更改通知支持的 Shifts 实体。 班次将调用此处添加的这些实体上客户端更改时提供的 URL。 默认情况下，更改通知不支持任何实体。 <br><br>可能的值包括 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` ：、、、、、、、。 `offerShiftRequest` `unknownFutureValue` `timeCard` `timeOffReason` `timeOff` `timeOffRequest` 请注意，必须使用请求标头获取此可发展枚举中的以下值 `Prefer: include-unknown-enum-members` [](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `timeCard` `timeOffReason` ：、、、。 `timeOff` `timeOffRequest` <br><br>如果选择多个值，则所有值必须以大写字母开头。|
+|supportedEntities|workforceIntegrationSupportedEntities | 此属性在 v1.0 中已替换支持。  我们建议你使用此属性，而不是 **支持**。 **目前，supports** 属性在 beta 版中仍受支持。 <br><br>可能的值包括 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` ：、、、、、、、。 `offerShiftRequest` `unknownFutureValue` `timeCard` `timeOffReason` `timeOff` `timeOffRequest` 请注意，必须使用请求标头获取此可发展枚举中的以下值 `Prefer: include-unknown-enum-members` [](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `timeCard` `timeOffReason` ：、、、。 `timeOff` `timeOffRequest` <br><br>如果选择多个值，则所有值必须以大写字母开头。|
 |url|String| 用于从 Shifts 服务进行回调的员工集成 URL。|
 
 ## <a name="relationships"></a>关系
@@ -65,6 +65,7 @@ ms.locfileid: "52787651"
   "encryption": {"@odata.type": "microsoft.graph.workforceIntegrationEncryption"},
   "isActive": true,
   "supports": "string",
+  "supportedEntities": "string",
   "url": "String"
 }
 ```

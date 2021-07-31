@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: aeb34a1494a4cc48a5b5c44d5ccfa8f540b4505c
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: 3aeaa5d297ccab533f970f39dc6567873bd1bc5a
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660322"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665863"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -150,11 +150,11 @@ ms.locfileid: "53660322"
 
 |成员|
 |:---|
-|字符串|
+|String|
 |整数|
 |参考|
 |二进制|
-|布尔|
+|Boolean|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -1797,6 +1797,8 @@ ms.locfileid: "53660322"
 |成员|
 |:---|
 |message|
+|chatEvent |
+|键入 |
 |unknownFutureValue|
 |systemEventMessage|
 
@@ -1810,11 +1812,12 @@ ms.locfileid: "53660322"
 
 ### <a name="channelmembershiptype-values"></a>channelMembershipType 值
 
-| 成员             | 值 |
-| :----------------- | :---- |
-| standard           | 0     |
-| private            | 1     |
-| unknownFutureValue | 2     |
+| 成员             | 
+| :----------------- | 
+| standard           | 
+| private            | 
+| unknownFutureValue | 
+| shared             |
 
 ### <a name="stagedfeaturename-values"></a>stagedFeatureName 值
 
@@ -2249,6 +2252,7 @@ ms.locfileid: "53660322"
 |:---|
 |group|
 |unknownFutureValue|
+|roster|
 
 ### <a name="plannerplancontexttype-values"></a>plannerPlanContextType 值 
 

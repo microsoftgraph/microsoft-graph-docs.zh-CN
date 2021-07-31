@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: c3a1a0f8ce7fe1635a731a411525c9bcc47b8aad
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: dfe27d512e583f27f75625c8668d1e7c60c046d6
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533197"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665770"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -58,7 +58,7 @@ ms.locfileid: "53533197"
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而仅适用于 chats)  |
 |起始数量|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| 只读。 聊天消息的发送者的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
-|messageType|string|聊天消息的类型。 可能的值包括 `message`、`unknownFutureValue`、`systemEventMessage`。|
+|messageType|chatMessageType|聊天消息的类型。 可能的值包括 `message`、`chatEvent`、`typing`、`unknownFutureValue`、`systemEventMessage`。 请注意，您必须使用此可发展枚举中的请求标头获取以下 `Prefer: include-unknown-enum-members` [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `systemEventMessage` ：。|
 |createdDateTime|dateTimeOffset|创建聊天消息的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 创建聊天消息的时间戳 (设置) 修改，包括添加或删除回应时。 |
 |lastEditedDateTime|dateTimeOffset|只读。 编辑聊天消息的时间戳。 在用户界面中触发"已编辑Teams标记。 如果未进行编辑，则值为 `null` 。|

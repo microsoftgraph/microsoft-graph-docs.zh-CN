@@ -4,12 +4,12 @@ description: 介绍如何将 Azure Active Directory (Azure AD) 应用迁移到�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 3f8129c434ba8a2d7c9455f3dbfad216fb216399
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: 5ea9944a23ffdf849d97bd116b730413cdd0100d
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100105"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665849"
 ---
 # <a name="deploy-test-and-extend"></a>部署、测试和扩展
 
@@ -48,7 +48,7 @@ ms.locfileid: "52100105"
     Microsoft Graph提供对更多服务的访问权限，而不只是 Azure Active Directory。 这也是提供[服务Microsoft 365 API 网关](./index.yml)。
     定期检查新的数据集和功能。  
 
-    - 看一看[可以使用 Microsoft Graph](https://developer.microsoft.com/graph/examples)
+    - 查看一些 [合作伙伴解决方案](https://developer.microsoft.com/graph/partners)。
     - 浏览[Microsoft Graph](https://developer.microsoft.com/graph/blogs)博客，获取有关 Microsoft Graph和一些出色的学习系列的最新新闻。
     - 更改 [日志总结了](/graph/changelog) 服务和文档更新。 遵循这些更新将有助于你跟踪 /beta (预览版中引入的新 API) 以及已提升为 v1.0 (GA) 。  这些新 API 可以为你提供向应用添加更多价值和新体验的新方式。  
 
