@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: fa9ce48f9b0dd0dd1869a1e31937b70cf4edb975
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 67e49c7cf9a23bbdfd0547e7b593c5a948359413
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720149"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665716"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
 
@@ -20,7 +20,7 @@ conversationThread 是 [帖子](post.md) 集合。
 
 最后一个帖子收件人集合聚合了整个线程的收件人。线程的收件人集合可以不断扩大。从线程中移除某个收件人时将创建一个新的线程。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -35,15 +35,15 @@ conversationThread 是 [帖子](post.md) 集合。
 ## <a name="properties"></a>属性
 | 属性              | 类型                                 | 说明                                                                                                                                                                                      |
 |:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                    | 字符串                               | 只读。                                                                                                                                                                                       |
-| toRecipients          | [recipient](recipient.md) collection | 收件人：线程的收件人。                                                                                                                                                               |
-| ccRecipients          | [recipient](recipient.md) collection | 抄送：线程的收件人。                                                                                                                                                               |
-| topic                 | String                               | 对话的主题。在创建对话时可设置此属性，但无法对其进行更新。                                                                              |
-| hasAttachments        | Boolean                              | 指示此线程中的任意帖子是否至少具有一个附件。                                                                                                               |
-| lastDeliveredDateTime | DateTimeOffset                       | 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` |
-| uniqueSenders         | String collection                    | 向此线程发送邮件的所有用户。                                                                                                                                                |
-| preview               | String                               | 此对话中最新文章正文的简短摘要。                                                                                                                           |
-| isLocked              | Boolean                              | 指示线程是否已锁定。                                                                                                                                                               |
+| id                    | String                               | 只读。 <br/><br/>默认情况下返回。                                                                                                                                                                                      |
+| toRecipients          | [recipient](recipient.md) collection | 收件人：线程的收件人。 <br/><br/>仅在 $select 上返回。                                                                                                                                                              |
+| ccRecipients          | [recipient](recipient.md) collection | 抄送：线程的收件人。 <br/><br/>仅在 $select 上返回。                                                                                                                                                               |
+| topic                 | String                               | 对话的主题。在创建对话时可设置此属性，但无法对其进行更新。 <br/><br/>默认情况下返回。                                                                              |
+| hasAttachments        | Boolean                              | 指示此线程中的任意帖子是否至少具有一个附件。 <br/><br/>默认情况下返回。                                                                                                              |
+| lastDeliveredDateTime | DateTimeOffset                       | 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。<br/><br/>默认情况下返回。 |
+| uniqueSenders         | String collection                    | 向此线程发送邮件的所有用户。 <br/><br/>默认情况下返回。                                                                                                                                               |
+| preview               | String                               | 此对话中最新文章正文的简短摘要。 <br/><br/>默认情况下返回。                                                                                                                           |
+| isLocked              | Boolean                              | 指示线程是否已锁定。 <br/><br/>默认情况下返回。                                                                                                                                                              |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

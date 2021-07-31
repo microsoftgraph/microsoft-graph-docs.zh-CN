@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 895ddba84728ebbc012a457890d43854268e7465
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 26fc51e2d8cff05a57955b437a93c1afac3f6f0b
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443191"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665776"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -157,7 +157,7 @@ ms.locfileid: "53443191"
 |windows|
 |windowsPhone|
 |macOS|
-|全部 |
+|all|
 |unknownFutureValue|
 
 ### <a name="signinfrequencytype-values"></a>signinFrequencyType 值
@@ -200,7 +200,7 @@ ms.locfileid: "53443191"
 
 |成员|
 |:---|
-|全部 |
+|all|
 |浏览器|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -364,7 +364,7 @@ ms.locfileid: "53443191"
 |:---|
 |无|
 |SecurityGroup|
-|所有|
+|全部|
 
 ### <a name="recipientscopetype-values"></a>recipientScopeType 值
 
@@ -524,7 +524,7 @@ ms.locfileid: "53443191"
 |:-------------------------
 | 无
 | contactsOnly
-| 全部 
+| all
 
 
 ### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus 值
@@ -738,7 +738,7 @@ ms.locfileid: "53443191"
 |:-------------------------
 | 替换
 | Append
-| Delete
+| 删除
 | Insert
 | Prepend
 
@@ -871,7 +871,7 @@ ms.locfileid: "53443191"
 | home
 | 工时
 | 博客
-| 个人资料
+| profile
 
 
 ### <a name="categorycolor-values"></a>categoryColor 值
@@ -890,7 +890,7 @@ ms.locfileid: "53443191"
 | preset8  | 8 
 | preset9  | 9 
 | preset10 | 10 
-| preset11 | 11 
+| preset11 | 11
 | preset12 | 12 
 | preset13 | 13
 | preset14 | 14 
@@ -1004,12 +1004,12 @@ ms.locfileid: "53443191"
 |dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN注册表值类型。|
 |dwordBigEndian|4 | REG_DWORD_BIG_ENDIAN注册表值类型。|
 |expandSz|5 | REG_EXPAND_SZ注册表值类型。|
-|link|6 | REG_LINK注册表值类型。|
+|链接|6 | REG_LINK注册表值类型。|
 |multiSz|7 | REG_MULTI_SZ注册表值类型。|
 |无|8 | REG_NONE注册表值类型。|
 |qword|9 | REG_QWORD注册表值类型。|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN注册表值类型。|
-|sz|11 | REG_SZ注册表值类型。|
+|sz|11| REG_SZ注册表值类型。|
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
 
@@ -1244,11 +1244,20 @@ ms.locfileid: "53443191"
 | firstTimeSender       | 8      | 因第一次发送者被阻止。   |
 | autoPurgeToInbox      | 9      | TimeTravel 将邮件移动到收件箱。   |
 | autoPurgeToJunk       | 10     | TimeTravel 将邮件移动到垃圾邮件。    |
-| autoPurgeToDeleted    | 11     | TimeTravel 要删除的移动消息。 |
+| autoPurgeToDeleted    | 11    | TimeTravel 要删除的移动消息。 |
 | 出站              | 12     | 出站邮件。                      |
 | notJunk               | 13    | 允许，因为不是垃圾邮件。              |
 | junk                  | 14     | 因垃圾邮件被阻止。                |
 | unknownFutureValue    | 15    | sentinel 成员。                  |
+
+### <a name="chatmessagetype-values"></a>chatMessageType 值
+
+| 值 |
+|:-----------------|
+| message |
+| chatEvent |
+| 键入 |
+| unknownFutureValue |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>chatMessagePolicyViolationDlpActionType 值
 
@@ -1529,7 +1538,7 @@ ms.locfileid: "53443191"
 
 |成员|
 |:---|
-|团队|
+|team|
 |channel|
 |聊天|
 |unknownFutureValue|

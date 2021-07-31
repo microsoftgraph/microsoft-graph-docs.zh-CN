@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 637e18d2751ee528331771f11f41fc893770ad09
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: e8c05e82ccf92a46f9d3e511de000d2d36cd38db
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158931"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665870"
 ---
 # <a name="workforceintegration-resource-type"></a>workforceIntegration 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "50158931"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [创建](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | 创建新的 **workforceIntegration** 对象。|
-| [列表](../api/workforceintegration-list.md) | [workforceIntegration](workforceintegration.md) 集合 | 获取与此 **计划关联的 workforceIntegration** 对象列表。|
+| [Create](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | 创建新的 **workforceIntegration** 对象。|
+| [List](../api/workforceintegration-list.md) | [workforceIntegration](workforceintegration.md) 集合 | 获取与此 **计划关联的 workforceIntegration** 对象列表。|
 | [Get](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | 读取 **workforceIntegration** 对象的属性和关系。 |
-| [更新](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | 更新 **workforceIntegration** 对象。 |
+| [更新](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | 更新 **一个 workforceIntegration** 对象。 |
 | [删除](../api/workforceintegration-delete.md) | 无 | 删除 **一个 workforceIntegration** 对象。 |
 
 ## <a name="properties"></a>属性
@@ -35,9 +35,9 @@ ms.locfileid: "50158931"
 |apiVersion|Int32|用于回叫 URL 的 API 版本。 从 1 开始。|
 |displayName|String|员工集成的名称。|
 |加密|[workforceIntegrationEncryption](workforceintegrationencryption.md)|员工集成加密资源。|
-|isActive|布尔值|指示此员工集成当前是否处于活动状态且可用。|
-|supportedEntities|string| 同步更改通知支持的 Shifts 实体。 Shifts 将调用此处添加的实体上的客户端更改时提供的 URL。 默认情况下，更改通知不支持任何实体。 可能的值是： `none` `shift` ， ， ， `swapRequest` `openshift` ， `openShiftRequest``userShiftPreferences`|
-|url|String| 来自班次服务的回调的员工集成 URL。|
+|isActive|Boolean|指示此员工集成当前是否处于活动状态且可用。|
+|supportedEntities|workforceIntegrationSupportedEntities | 同步更改通知支持的 Shifts 实体。 班次将调用此处添加的这些实体上客户端更改时提供的 URL。 默认情况下，更改通知不支持任何实体。 可取值为：`none`、`shift`、`swapRequest`、`userShiftPreferences`、`openshift`、`openShiftRequest`、`offerShiftRequest`、`unknownFutureValue`。|
+|url|String| 用于从 Shifts 服务进行回调的员工集成 URL。|
 
 ## <a name="relationships"></a>关系
 
