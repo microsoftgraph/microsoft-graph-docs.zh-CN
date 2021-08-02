@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2611f3d60d93b8f142c9d6454f8525dbe18b9721
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 84c8018283e8933f9a9ecb125e343d699159f6ab
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236255"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665730"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -60,7 +60,7 @@ ms.locfileid: "53236255"
 |isFavoriteByDefault|Boolean|指示是否应对团队的所有成员将频道自动标记到“收藏夹”。 仅可使用“[创建团队](../api/team-post.md)”以编程方式设置。 默认值：`false`。|
 |email|String| 用于向频道发送邮件的电子邮件地址。只读。|
 |webUrl|String|将转到 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
-|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|频道的类型。 可在创建期间设置，但不可更改。 默认：标准。|
+|membershipType|channelMembershipType|频道的类型。 可在创建期间设置，但不可更改。 可能的值包括 `standard`、`private`、`unknownFutureValue`、`shared`。 默认值为 `standard`。 请注意，必须使用 `Prefer: include-unknown-enum-members` 请求标头获取此 [可进化枚举](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) 中的以下值: `shared`。|
 |createdDateTime|dateTimeOffset|只读。 创建频道的时间戳。|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|配置频道审核，以控制谁能在此频道中发起新帖子并回复帖子的设置。|
 
