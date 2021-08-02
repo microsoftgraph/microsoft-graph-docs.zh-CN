@@ -4,12 +4,12 @@ description: 'Microsoft 提供了拓展新式工作与新式生活的服务和�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: c114b84871960c4ee890966ef4428d618a88e960
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 5a60675944cb4b78baadf85a554fd2782fa6d2f6
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761140"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665737"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>使用 Microsoft Graph 可覆盖的用户
 
@@ -23,7 +23,7 @@ Microsoft 提供了拓展新式工作与新式生活的服务和解决方案。
 
 ## <a name="connect-to-work-services"></a>连接到工作服务
 
-使用 Microsoft Graph 可访问拥有企业版或教育版 Microsoft 365 服务许可证的用户和组织。 这些 Microsoft 365 服务包括：
+使用 Microsoft Graph 可访问拥有企业版或教育版 Microsoft 365 服务许可证的用户和组织。这些 Microsoft 365 服务包括:
 
 - Microsoft 365
 - 企业移动性 + 安全性
@@ -33,7 +33,7 @@ Microsoft 提供了拓展新式工作与新式生活的服务和解决方案。
 
 ### <a name="worldwide-multigeo-and-national-clouds"></a>全球云、多地区云和区域云
 
-Microsoft Graph 中的服务是 Microsoft 全球云的一部分。 此外，Microsoft 还提供：
+Microsoft Graph 中的服务是 Microsoft 全球云的一部分。此外，Microsoft 还提供:
 
 - 多地区功能 - 适用于其现有租户内有多个地理区域和/或国家/地区的跨国组织。
 - 区域云部署 - 适用于美国政府、德国，以及由世纪互联在中国运营的 Azure 和 Microsoft 365。
@@ -46,7 +46,7 @@ Microsoft Graph 中的服务是 Microsoft 全球云的一部分。 此外，Micr
 
 ## <a name="next-steps"></a>后续步骤
 
-- 查看某些[精选方案](https://developer.microsoft.com/graph/examples)。
+- 查看一些[合作伙伴解决方案](https://developer.microsoft.com/graph/partners)。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的示例请求。
 - 使用[快速入门](https://developer.microsoft.com/graph/quick-start)设置即可运行的示例应用。
 - 在目录的 **了解** 下，阅读有关你可在应用场景中使用的服务和功能。
