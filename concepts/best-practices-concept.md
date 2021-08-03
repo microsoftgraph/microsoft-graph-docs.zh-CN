@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: d6227c3bb90e620d741f387978f84ac12c171e19
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 35102a852ce3cc6fba92c83fe9e38756beb94e54
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920031"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665723"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -33,7 +33,7 @@ ms.locfileid: "51920031"
 
 在应用中适用以下面向许可和授权的最佳做法：
 
-- **使用最小特权**。 只请求绝对必要的权限，并且只在需要时请求。 对于应用程序调用的 API，查看方法主题中的权限部分（例如，查看[创建用户](/graph/api/user-post-users?view=graph-rest-1.0)），然后选择最小特权权限。 有关权限的完整列表，请参阅[权限引用](permissions-reference.md)。
+- **使用最小特权**。 只请求绝对必要的权限，并且只在需要时请求。 对于应用程序调用的 API，查看方法主题中的权限部分（例如，查看[创建用户](/graph/api/user-post-users)），然后选择最小特权权限。 有关权限的完整列表，请参阅[权限引用](permissions-reference.md)。
 
 - **根据应用场景使用正确的权限类型**。 如果你正在构建交互式应用程序，其中存在一个已登录用户，那么应用程序应使用 *委派* 权限，在此权限中，应用程序被授权在调用 Microsoft Graph 时充当已登录用户。 但是，如果应用程序在没有已登录用户的情况下运行（如后台服务或守护程序），那么应用程序应使用应用程序权限。
 
@@ -85,12 +85,16 @@ GET https://graph.microsoft.com/v1.0/me/messages
 |限制|429|由于各种原因，API 可能会随时受限，因此，应用程序必须 **始终** 准备好处理 429 响应。 此错误响应包括 HTTP 响应头中的“重试后”字段。 使用“重试后”延迟退出请求是从限制中恢复的最快方法。 有关详细信息，请参阅[限制](throttling.md)。|
 |服务不可用| 503 | 这可能是因为服务繁忙。 应部署类似于 429 的退出策略。 此外，应 **始终** 通过新 HTTP 连接发出新的重试请求。|
 
-### <a name="evolvable-enums"></a>进化型枚举
+### <a name="handling-future-members-in-evolvable-enumerations"></a>处理可演化枚举中的未来成员
 
-向现有枚举添加成员可能会造成客户端应用程序中断。 对于 Microsoft Graph 中的一些较新的枚举，可以使用一种机制来添加新成员，而不会导致重大变更。 在这些较新的枚举中，将显示一个常见的 *sentinel* 成员，称为 `unknownFutureValue`，它划分已知和未知枚举成员。 已知成员的数量将少于 sentinel 成员，而未知成员的值将更大。
-默认情况下，Microsoft Graph 不会返回未知成员。 但是，如果编写的应用程序旨在处理未知成员外观，那么它可以通过 HTTP *首选* 请求头选择加入以接受未知枚举成员。
+在现有的枚举中添加成员会破坏已在使用这些枚举的应用程序。 可演化枚举是 Microsoft Graph API 用来向现有枚举添加新成员的机制，而不会对应用程序造成破坏性改变。
 
->**注意：** 如果应用程序准备处理未知枚举成员，它应通过使用 HTTP *首选* 请求头选择加入：`Prefer: include-unknown-enum-members`。
+可演化的枚举具有一个名为 `unknownFutureValue` 的常见 _Sentinel_ 成员，其划分了最初在枚举中已定义的已知成员和随后添加的或将来要定义的未知成员。 在内部，将已知成员映射为小于 sentinel 成员的数值，而未知成员则大于 sentinel 成员。 可演化枚举的文档按照升序列出了可能的 _字符串_ 值: 已知成员，其次是 `unknownFutureValue`，其次是未知成员。 与其他类型的枚举一样，应 _始终_ 通过其 _字符串_ 值引用可演化枚举的成员。
+
+默认情况下，GET 操作仅返回可演化枚举类型属性的已知成员，应用程序只需要处理已知成员。 如果设计的应用程序也能处理未知成员，则可以通过使用 HTTP `Prefer` 请求标头来选择接收这些成员:
+```
+Prefer: include-unknown-enum-members
+```
 
 
 ## <a name="storing-data-locally"></a>在本地存储数据
@@ -123,7 +127,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 如果应用程序需要了解数据变化，只要你所感兴趣的数据发生更改，就会获得 webhook 通知。 这比简单地定期轮询更为有效。
 
-使用 [webhook 通知](/graph/api/resources/webhooks?view=graph-rest-1.0)，在数据发生变化时获得推送通知。
+使用 [webhook 通知](/graph/api/resources/webhooks)，在数据发生变化时获得推送通知。
 
 如果应用程序需要在本地缓存或存储 Microsoft Graph 数据，并使这些数据保持最新，或者出于其他原因需要跟踪数据变化，则应使用增量查询。 这样可以避免应用程序过度计算，以检索应用程序已有的数据，并最小化网络流量和降低达到限制阈值的可能性。
 
@@ -131,9 +135,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 ### <a name="using-webhooks-and-delta-query-together"></a>结合使用 webhook 和增量查询
 
-webhook 和增量查询通常结合使用效果更佳，因为如果单独使用增量查询，则需要找出正确的轮询间隔，间隔过短可能会导致空响应进而浪费资源，而间隔过长可能最终会获得陈旧数据。 如果使用 webhook 通知作为触发增量查询调用的触发器，将会两全其美。
+webhook 和增量查询通常结合使用效果更佳，因为如果单独使用增量查询，则需要找出正确的轮询间隔，间隔过短可能会导致空响应进而浪费资源，而间隔过长可能最终会获得陈旧数据。如果使用 webhook 通知作为触发器来进行 delta 查询调用，则能得到两方面的好处。
 
-使用 [webhook 通知](/graph/api/resources/webhooks?view=graph-rest-1.0)作为触发器以触发增量查询调用。 此外，还应确保应用程序有一个支持轮询阈值，以防触发通知。
+使用 [webhook 通知](/graph/api/resources/webhooks)作为触发器以触发增量查询调用。 此外，还应确保应用程序有一个支持轮询阈值，以防触发通知。
 
 ### <a name="batching"></a>批处理
 
