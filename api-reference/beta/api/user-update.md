@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b7920abc59b3d67da54ff4f880df373afb34e46b
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: bffb926816fe80741903bb0c80b5e6e9e3abd302
+ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316634"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726752"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -53,25 +53,25 @@ PATCH /users/{id | userPrincipalName}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
+|accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 创建用户时此属性是必需的。    |
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | 设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](../resources/user.md#legal-age-group-property-definitions)以了解详细信息。 |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |birthday|DateTimeOffset|用户的生日。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|businessPhones| String collection | 用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
+|businessPhones| String collection | 用户的电话号码。 **注意：** 虽然这是一个字符串集合，但只能为此属性设置一个数字。|
 |城市|String|用户所在的城市。|
 | companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。 |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](../resources/user.md#legal-age-group-property-definitions)以了解详细信息。 |
-|country|String|用户所在的国家/地区；例如，“美国”或“英国”。|
+|country|String|用户所在的国家/地区;例如， `US` 或 `UK`。|
 |department|String|用户工作部门的名称。|
-|displayName|String|用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 支持 `$filter` 和 `$orderby`。|
+|displayName|String|用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。|
 |employeeId|String|由组织分配给该用户的员工标识符。|
-| employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。 仅在 `$select` 上返回。 支持带 `eq` 运算符的 `$filter`。|
+| employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。|
 |givenName|String|用户的名。|
-|hireDate|DateTimeOffset|用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|hireDate|DateTimeOffset|用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对标识 **的任何** 更新都将替换整个集合，并且必须在集合中提供 userPrincipalName **signInType** 标识。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
-|mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 <br><br>默认情况下返回。 支持 `$filter`。|
+|mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。 对于 Azure AD B2C 帐户，此属性最多只能使用唯一 SMTP 地址更新十次。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。|
 |mailNickname|String|用户的邮件别名。创建用户时必须指定此属性。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
@@ -91,7 +91,7 @@ PATCH /users/{id | userPrincipalName}
 |streetAddress|String|用户公司地点的街道地址。|
 |surname|String|用户的姓氏。|
 |usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括： `US`、 `JP`和 `GB`。 不可为 null。|
-|userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
+|userPrincipalName|String|用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。
 |userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。          |
 
 由于 **用户** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作在现有用户实例的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
