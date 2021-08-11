@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ef54e2a53cb9293859ca40043733286dbb59b9d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 428c4c9d9b625063f3bba685610742d510f3e8c9597e1bb5a4a0270945431579
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130679"
 ---
 # <a name="update-devicemanagementpartner"></a>更新 deviceManagementPartner
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb96a239ff31a0d6843b690d063361a65099e65e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 67eeb0f0f4be456b5c4c56df1e84a428e72bf7effe96290171c47ead7135df19
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760020"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192465"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>mediaContentRatingIreland 资源类型
 

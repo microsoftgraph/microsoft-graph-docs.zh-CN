@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 147697685f58723d940102333abd9ffc378bee28
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 4d5f01d3532e6b0022c10947ea36b19c2152fb36409a27cf58898006f5f016ef
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912313"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202425"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>educationAssignmentIndividualRecipient 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "52912313"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|recipients|字符串集合|收件人的 ID 集合。|
+|recipients|String collection|收件人的 ID 集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c44cf824227557f0416b68b6fce262852b68b967
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 51f9748294432b30db1dbbc6bce054a9ec4362967df02efc2880dd08e5c0c7fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232200"
 ---
 # <a name="delete-mobileappassignment"></a>删除 mobileAppAssignment
 

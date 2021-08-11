@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d4e0d00fe59f74b0b53d116c5b2a34f73b94edcd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0ae8cdf484fe5772a19779721ee3c78ca9e2528d6b643eb9fbc057675e34a3cf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189994"
 ---
 # <a name="create-multi-value-extended-property"></a>创建多值扩展属性
 
@@ -23,9 +23,9 @@ ms.locfileid: "50130541"
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
-- [事件](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [邮件](../resources/message.md)
+- [message](../resources/message.md)
 
 以及以下组资源：
 
@@ -36,12 +36,12 @@ ms.locfileid: "50130541"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据要创建扩展属性的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据在 中创建扩展属性的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
 | 组 [日历](../resources/calendar.md) | Group.ReadWrite.All | 不支持 | 不支持 |
@@ -132,7 +132,7 @@ PATCH /groups/{id}/events/{id}
 |id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
 
-在新建资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合外，请提供该资源实例的 JSON 表示形式， (即消息 [、mailFolder](../resources/mailfolder.md) [、event](../resources/event.md)等) 。 [](../resources/message.md)
+在新建资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合之外，请提供该资源实例的 JSON 表示形式 (即消息 [、mailFolder、event](../resources/mailfolder.md)等 ) 。 [](../resources/event.md) [](../resources/message.md)
 
 
 ## <a name="response"></a>响应

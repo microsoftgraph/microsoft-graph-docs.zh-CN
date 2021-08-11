@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 25f907aa8c7e5b47960bb3a482b9745c488d16a9
-ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
+ms.openlocfilehash: bc1974925713354484ea3998d394b9a212432caec2b2f56d12ee7072bb825f97
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51836982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152003"
 ---
 # <a name="spaapplication-resource-type"></a>spaApplication 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "51836982"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| redirectUris | String 集合 | 指定用于登录的用户令牌的 URL，或发送 OAuth 2.0 授权代码和访问令牌的重定向 URI。 |
+| redirectUris | String collection | 指定用于登录的用户令牌的 URL，或发送 OAuth 2.0 授权代码和访问令牌的重定向 URI。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

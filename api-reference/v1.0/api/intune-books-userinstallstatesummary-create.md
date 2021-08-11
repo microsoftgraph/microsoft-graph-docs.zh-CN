@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2d4f9508607a7b9dba368f5ba0db6efdd774f0b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: afdd049f2e5bd4c9822db25e04e0b8b50da6e840d65c1c6b254ed844af4d073c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52750306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197441"
 ---
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
 

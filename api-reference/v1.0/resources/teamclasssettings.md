@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 49952343d6d420b77a09cca928486c22e621d408
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 5a28eb208ea36091b272bd38815a6b8bfb3839cbc84fe9c47075f2c85a863e32
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059973"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228973"
 ---
 # <a name="teamclasssettings-resource-type"></a>teamClassSettings 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "53059973"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|notifyGuardiansAboutAssignments|布尔值|如果设置为 ，则允许向家长/监护人发送每周作业摘要电子邮件，但租户管理员已全局启用 `true` 该设置。|
+|notifyGuardiansAboutAssignments|Boolean|如果设置为 ，则允许向家长/监护人发送每周作业摘要电子邮件，但租户管理员已全局启用 `true` 该设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

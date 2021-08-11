@@ -5,12 +5,12 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7a48059cf4341281336fb20e69ca4bfb53154ea8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5a9f52ad13b2c0d12b2040f306ad23d74d5b18fa87c7fd15d1142df969147fd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032829"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218826"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
 

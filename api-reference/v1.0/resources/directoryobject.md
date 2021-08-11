@@ -5,12 +5,12 @@ localization_priority: Priority
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 83750686b4075f7577e88e1e6107dd2f2a5f4d2f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f814ee80e857528686dbc432ce926b8a8eb636bd433042aeeb015727353b02c3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202446"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "50439903"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String|对象的全局唯一标识符。 例如，12345678-9abc-def0-1234-56789abcde。 **id** 属性的值通常（但不总是）用 GUID 表示；将它视为不透明标识符，不要总将它视为 GUID。 键。 不可为 null。 只读。|
+|id|String|对象的唯一标识符。例如，12345678-9 abc-def0-1234-56789 abcde。**id** 属性的值通常（但不总是）用 GUID 表示；将它视为不透明标识符，不要总将它视为 GUID。不可为 null。只读。|
 
 ## <a name="relationships"></a>关系
 

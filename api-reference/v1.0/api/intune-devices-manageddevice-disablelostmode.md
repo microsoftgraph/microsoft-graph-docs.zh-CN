@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7f5b875d42d5fe0a3cfe6b4401b0f9902a0925d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c76391d97d220b2e5cec69dc73765dd8020296b3fa37d662528684cf0e88e2e3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52745833"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252387"
 ---
 # <a name="disablelostmode-action"></a>disableLostMode 操作
 

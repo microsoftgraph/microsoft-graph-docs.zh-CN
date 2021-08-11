@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04742d586039bf341eee75013100bb74db0e38f3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6a20f7e18298c952708cef1ad6f566ab3402ca4767678419d86a6c852b2acd43
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219162"
 ---
 # <a name="list-editionupgradeconfigurations"></a>列出 editionUpgradeConfigurations
 

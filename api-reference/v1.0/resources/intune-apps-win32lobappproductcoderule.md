@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb77116ce3498023e011d83c6214c3050eaf1124
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8cba65fe4c56e5365ceaddc47b1d1c3ceb8b1c170f16924a726da42dd0b7c165
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52742998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135195"
 ---
 # <a name="win32lobappproductcoderule-resource-type"></a>win32LobAppProductCodeRule 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "52742998"
 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|指示规则用途的规则类型。 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)。 可取值为：`detection`、`requirement`。|
 |productCode|String|应用的产品代码。|

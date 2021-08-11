@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b60abaad3c1558021927a61a01921cb27d7f2761
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 24c489a721d5ca7a768a45b3772299ea741fda7b92f24786af5c438d8dac49e0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547265"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152241"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "52547265"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|事件在相应月份的多少号发生。 如果 **type** 为 `absoluteMonthly` 或 `absoluteYearly`，此为必需属性。 |
 |daysOfWeek|dayOfWeek 集合|事件在星期几（一系列值）发生。 可取值包括：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 <br>如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，且 **daysOfWeek** 指定超过一天，事件遵循相应模式的第一天规则。 <br> 如果 **type** 为 `weekly`、`relativeMonthly` 或 `relativeYearly`，此为必需属性。|

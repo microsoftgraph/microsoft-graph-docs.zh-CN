@@ -4,12 +4,12 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1000172e015ad8a48da906e38be32eca0fdf6662
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: c745fd304e01efe2ce3804c08befab682cec4b1369e41d9b334bda006361c50b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124038"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>针对 OneNote API 开发人员的品牌准则 
  
@@ -73,8 +73,7 @@ ms.locfileid: "51920199"
 
   ![用白色和品牌颜色背景显示首选品牌颜色的徽标](images/onenotelogobgs.png)
  
-在颜色受限的环境中和在单色设计中，徽标可以显示为黑色。 但是，徽标永远不能以灰色显示。
-<!--or white?-->
+在颜色受限的环境中或在单色设计中，徽标可以显示为黑色。但是，徽标永远不能以灰色显示。<!--or white?-->
 
 <a name="do-nots"></a>
 

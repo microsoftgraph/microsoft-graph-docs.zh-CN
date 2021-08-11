@@ -5,12 +5,12 @@ author: yizhenww
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 675b7cd1df35b25e3414f36a4dd04e389e05b192
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 79f7f4b00aa8e549090ec06b5a22b522b9d966af86df02caf40762b0f661246a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189476"
 ---
 # <a name="invitenewbotresponse-resource-type"></a>inviteNewBotResponse 资源类型
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dd640e3ddef6b88f17449c31611ad6bd956ca0b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aea3bcbcae882ff58f664f325efdfa9490773bde7d746af3a5341d6e0f288ef6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078974"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134978"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "48078974"
 
 | 属性        | 类型    | 说明|
 |:----------------|:--------|:----------|
-| initiator     | [identitySet](identitySet.md) | 录制发起人的标识。 |
-| recordingStatus | String | 可能的值包括： `unknown` 、 `notRecording` 、 `recording` 或 `failed` 。 |
+| initiator     | [identitySet](identitySet.md) | 录制发起人的身份。 |
+| recordingStatus | String | 可能的值是 `unknown` `notRecording` ：、、 `recording` 或 `failed` 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3800d9d14e106c9e1263106fa9e3aa7619d82bb4
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7ec903899ee1b2b0dcec74500346676334e6c9b020de8bc1fd47e57f34dc9cdf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756840"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130644"
 ---
 # <a name="get-roleassignment"></a>获取 roleAssignment
 

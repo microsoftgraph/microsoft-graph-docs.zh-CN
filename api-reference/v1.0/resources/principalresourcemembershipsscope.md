@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: dc6c81092ce08ba49e4adde28b0376a17d6ccf0d
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 494e4c24f0fa912190e60b74fdc1c39e09bb3dc32f8590b30e7391e770eb0d0d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196556"
 ---
 # <a name="principalresourcemembershipsscope-resource-type"></a>principalResourceMembershipsScope 资源类型
 

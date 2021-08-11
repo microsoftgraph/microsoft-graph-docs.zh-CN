@@ -1,21 +1,21 @@
 ---
-title: riskyUser：confirmComprom工
-description: 确认用户遭到入侵
+title: riskyUser：confirmComprom一
+description: 确认用户受到威胁
 author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 193baf4a8e450f0fc05812da8cb48440ebfccab1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 743279c5bc7b79b7da3f508d9f8fc1cc89a434aaf052421915a5952f57912e84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124652"
 ---
-# <a name="riskyuser-confirmcompromised"></a>riskyUser：confirmComprom工
+# <a name="riskyuser-confirmcompromised"></a>riskyUser：confirmComprom一
 命名空间：microsoft.graph
 
->**注意：** riskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意：** riskyUsers API 需要一个Azure AD Premium P2许可证。
 
 确认一个或多个 [riskyUser](../resources/riskyuser.md) 对象受到威胁。 此操作将目标用户的风险级别设置得较高。
 
@@ -51,7 +51,7 @@ POST /identityProtection/riskyUsers/confirmCompromised
 
 |参数|类型|说明|
 |:---|:---|:---|
-|userIds|String collection|指定在请求正文中要消除的风险用户 ID。|
+|userIds|String collection|在请求正文中指定要消除的风险用户 ID。|
 
 
 

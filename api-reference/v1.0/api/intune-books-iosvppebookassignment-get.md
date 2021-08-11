@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6a235952ee32ea8db9dada6e05ea8b516f04490
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 50fd038f07df3149eda7f47bd59a2ae48726b158081e888ac8d03ca33734d4c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758419"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190204"
 ---
 # <a name="get-iosvppebookassignment"></a>获取 iosVppEBookAssignment
 

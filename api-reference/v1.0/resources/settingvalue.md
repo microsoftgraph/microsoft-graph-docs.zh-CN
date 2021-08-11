@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 171b08d4542af6900dcb6549527e956c4395c947
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: b2128c754c3ae30b0ffd0a4be142a1b361ababe049b09e2336e92b8fa3186a90
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149644"
 ---
 # <a name="settingvalue-resource-type"></a>settingValue 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "52547041"
 
 ### <a name="properties"></a>属性
 
-| 属性 | 类型 | 描述 |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|name|字符串| [groupSettingTemplate](groupsettingtemplate.md) (定义的设置) 。 |
+|name|String| [groupSettingTemplate](groupsettingtemplate.md) (定义的设置) 。 |
 |value|String| 设置的值。 |
 
 ### <a name="json-representation"></a>JSON 表示形式

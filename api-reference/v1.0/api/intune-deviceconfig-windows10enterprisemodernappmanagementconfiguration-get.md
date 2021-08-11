@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fbda8e4ea8fbc94f2437b87f0655c9729d498bf
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5d507ab084b0fd5f69f0b5ceca58087b4f8e1bfa5d050cd8804822558880fb53
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760529"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121709"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>获取 windows10EnterpriseModernAppManagementConfiguration
 

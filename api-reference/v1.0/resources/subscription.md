@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 358cff788e5b055f93080c20872b972aa82b1799
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: b85956c3cf9cadbcbfd347cc50d33df6735c3a7894306fde8399196058caf8e1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443212"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196528"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 

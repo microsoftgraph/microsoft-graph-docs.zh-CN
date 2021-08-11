@@ -1,25 +1,25 @@
 ---
 title: planner 资源类型
-description: 规划 **器** 资源是 Planner 对象模型的入口点。 它返回一个单一 **规划器** 资源。  它不包含任何可用属性。
+description: Planner 资源是 Planner 对象模型的入口点。 它返回单一规划 **器** 资源。  它不包含任何可用属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 8fc5f91dd8da85b259dd792a0926311d57098ee9
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 430235e1a69a50b6c7cc3031cfd4bc3efd605f1c57333da2e427eb6c3f34905e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470674"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218441"
 ---
 # <a name="planner-resource-type"></a>planner 资源类型
 
 命名空间：microsoft.graph
 
-规划 **器** 资源是 Planner 对象模型的入口点。 它返回一个单一 **规划器** 资源。  它不包含任何可用属性。
+Planner 资源是 Planner 对象模型的入口点。 它返回单一规划 **器** 资源。  它不包含任何可用属性。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -50,7 +50,7 @@ ms.locfileid: "50470674"
 
 ## <a name="example"></a>示例
 
-**规划器** 资源位于图形的根目录下。
+规划 **器** 资源位于图形的根目录。
 
 <!--{
   "blockType": "request"

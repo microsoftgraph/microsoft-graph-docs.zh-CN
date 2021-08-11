@@ -1,29 +1,29 @@
 ---
 title: plannerProgressTaskBoardTaskFormat 资源类型
-description: '**PlannerProgressTaskBoardTaskFormat**资源表示用于在任务板的 "进度" 视图中按任务对象的 "百分比" 字段组织的视图（包含未启动的列、"正在进行" 和 "完成") ）在任务 (板的 "进度" 视图中正确呈现任务的信息。 每个任务都有一个与之关联的 **plannerProgressTaskBoardTaskFormat** 对象。'
+description: '**plannerProgressTaskBoardTaskFormat** 资源表示用于在任务板 (的"进度"视图中正确呈现任务的信息 (该视图按任务对象上 PercentComplete 字段的状态组织，包含"未启动"、正在进行和完成) 的列。 每个任务都有一个 **与之关联的 plannerProgressTaskBoardTaskFormat** 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 0c08fed11b53610c06b27b9fa9d5e898b2f0620d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9715fb55187a3d48ea8d21f5bd088dbfb2e08f189ed9c96e66e747c100a1272f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037360"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218434"
 ---
 # <a name="plannerprogresstaskboardtaskformat-resource-type"></a>plannerProgressTaskBoardTaskFormat 资源类型
 
 命名空间：microsoft.graph
 
-**PlannerProgressTaskBoardTaskFormat**资源表示用于在任务板的 "进度" 视图中按任务对象的 "百分比" 字段组织的视图（包含未启动的列、"正在进行" 和 "完成") ）在任务 (板的 "进度" 视图中正确呈现任务的信息。 每个 [任务](plannertask.md) 都有一个与之关联的 **plannerProgressTaskBoardTaskFormat** 对象。
+**plannerProgressTaskBoardTaskFormat** 资源表示用于在任务板 (的"进度"视图中正确呈现任务的信息 (该视图按任务对象上 PercentComplete 字段的状态组织，包含"未启动"、正在进行和完成) 的列。 每个 [任务](plannertask.md) 都有一个 **与之关联的 plannerProgressTaskBoardTaskFormat** 对象。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat-get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |读取 **plannerProgressTaskBoardTaskFormat** 对象的属性和关系。|
+|[获取 plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat-get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |读取 **plannerProgressTaskBoardTaskFormat 对象的属性和** 关系。|
 |[更新](../api/plannerprogresstaskboardtaskformat-update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |更新 **plannerProgressTaskBoardTaskFormat** 对象。 |
 
 ## <a name="properties"></a>属性

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b1dbebd30fecd15a916eef554bbdffd27b435f3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: faa7bcd53c53884283d65a8bc736d5b1ddaf38851a9a3a80f5aca8df48610024
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230555"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier 资源类型
 
@@ -24,7 +24,7 @@ iOS 应用的标识符。
 继承自 [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |bundleId|String|应用的标识符，如应用商店中指定。|
 

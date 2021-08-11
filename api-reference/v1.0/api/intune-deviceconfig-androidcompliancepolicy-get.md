@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 264d5c8cc11f405e814f2c8835e73c941aa023ad
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 06fcaf36815e08a230449755b683d6c592d7de6a4c42f3de91fb4f423e1da632
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224108"
 ---
 # <a name="get-androidcompliancepolicy"></a>获取 androidCompliancePolicy
 

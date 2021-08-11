@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: search
 author: emzho
-ms.openlocfilehash: 925851bb97f49f757923112902d0b0ea89b2fc5a
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: eccaf6a2da52defaed37bca914322b8961d22b23389db9bcec4c85dbc5ef0560
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467297"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130301"
 ---
 # <a name="external-connectors-enum-values"></a>外部连接器枚举值
 

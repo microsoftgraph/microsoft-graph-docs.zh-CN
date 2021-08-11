@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2e95db65d320426f49e92c2b76bc7129545dc553
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: 9e2ee2d4296855d7f8fdf5ccd5a46252d7a3a7c70bdff83199c6aed51a7667e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53547536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121422"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>accessReviewScheduleDefinition 资源类型
 
@@ -35,11 +35,11 @@ accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreview
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-| id | 字符串 | 访问评审的功能分配的唯一标识符。 支持 `$select`。 只读。|
-| displayName | 字符串   | 访问评审系列的名称。 支持 `$select` 和 `$orderBy`。 创建时为必需项。 |
+| id | String | 访问评审的功能分配的唯一标识符。 支持 `$select`。 只读。|
+| displayName | String   | 访问评审系列的名称。 支持 `$select` 和 `$orderBy`。 创建时为必需项。 |
 | createdDateTime  |DateTimeOffset  | 创建访问评审系列时时间戳。 支持 `$select` 和 `$orderBy`。 只读。 |
 | lastModifiedDateTime | DateTimeOffset   | 上次修改访问评审系列的时间戳。 支持 `$select`。 只读。|
-| status  |字符串   | 此只读字段指定访问评审的状态。 典型状态包括 `Initializing` `NotStarted` `Starting` `InProgress` 、、、、、、 `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。  <br>仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。 |
+| status  |String   | 此只读字段指定访问评审的状态。 典型状态包括 `Initializing` `NotStarted` `Starting` `InProgress` 、、、、、、 `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。  <br>仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。 |
 | descriptionForAdmins  |string  |  评价创建者提供的用于向管理员提供评论的更多上下文的说明。 支持 `$select`。 |
 | descriptionForReviewers |string | 审阅创建者提供的说明，用于向审阅者提供审阅的更多上下文。 审阅者将在发送给他们请求审阅的电子邮件中看到此说明。 支持 `$select`。 |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | 创建此评价的用户。 只读。 |

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1805ac2b5dfcbc5d747ad4bbe2e362900ee347d8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5fe9d86c46b82b73493a6af94b877d4f614275aea25f655677f8c44e7f656de6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232270"
 ---
 # <a name="list-macosofficesuiteapps"></a>列出 macOSOfficeSuiteApps
 

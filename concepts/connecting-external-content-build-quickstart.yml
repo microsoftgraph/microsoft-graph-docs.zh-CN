@@ -11,12 +11,12 @@ metadata:
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:.NET Core, C
   ms.prod: search
-  ms.openlocfilehash: 1c5ee6e10ecacb2e55e8dfe46c52aab2d8a2be09
-  ms.sourcegitcommit: 4602b5e2e74df6a0f77cf1c8b2a7f70fe86f262f
+  ms.openlocfilehash: b48216fe6c477b258c2968d54132aeaccd652bfefa583f597234feef60c3bf29
+  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/27/2021
-  ms.locfileid: "52689682"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "54152044"
 items:
 - title: 生成首个自定义 Microsoft Graph 连接器
   durationInMinutes: 10

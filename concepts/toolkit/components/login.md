@@ -3,12 +3,12 @@ title: Microsoft 服务中的登录Graph Toolkit
 description: 登录组件是一个按钮和飞出控件，用于简化Microsoft 标识平台身份验证。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 5dd610407fde25089a9c323b6b0cfb7965d33671
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 5b4c3b01053d9011d553a57fadecf560eddf80b3d143744d40b1dab167f1f040
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202019"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的登录Graph Toolkit
 

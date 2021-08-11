@@ -3,12 +3,12 @@ title: 处理 Microsoft 组件公开Graph Toolkit事件
 description: 许多 Microsoft Graph Toolkit组件发出自定义事件。 将事件处理程序附加到这些事件后，你可以响应它们并控制应用的行为。
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: f20de269ed7f304f9c1d7198475b6fdb81b709c7
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: a1258391ab657cd8759d87d786d7f6f7cc29d8fd020ad146ecdfda0bd74e5696
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251566"
 ---
 # <a name="handle-events-exposed-by-microsoft-graph-toolkit-components"></a>处理 Microsoft 组件公开Graph Toolkit事件
 

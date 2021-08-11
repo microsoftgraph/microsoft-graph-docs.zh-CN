@@ -5,19 +5,19 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fac6527f330bfc6f45e3a6acc773ac4323fcea75
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6a209a07e8246e345a550e106e76a27cc51020c74abd4eb1d1ee7e8c69c47193
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959450"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155370"
 ---
 # <a name="get-riskyuser"></a>获取 riskyUser
 命名空间：microsoft.graph
 
 读取 [riskyUser](../resources/riskyuser.md) 对象的属性和关系。
 
->**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意：** 使用 riskyUsers API 需要Azure AD Premium P2许可证。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。

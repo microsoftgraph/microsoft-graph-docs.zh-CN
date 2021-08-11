@@ -1,22 +1,22 @@
 ---
 title: OneNoteResource 资源类型
-description: 'OneNote 页面上的图像或其他文件资源。 '
+description: '页面图像或其他文件OneNote资源。 '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: df3a11007de41b2ec503e8dd54cd6d0a1a7ee071
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39945f3086c8470dcbccc9d11a242d71df2a99dfd99977f147b2fcd180d69d24
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218413"
 ---
 # <a name="onenoteresource-resource-type"></a>OneNoteResource 资源类型
 
 命名空间：microsoft.graph
 
-OneNote 页面上的图像或其他文件资源。
+页面图像或其他文件OneNote资源。
 
 您可以获取资源的二进制数据，但不支持获取资源对象或资源集合的 JSON 表示形式。
 
@@ -35,19 +35,19 @@ OneNote 页面上的图像或其他文件资源。
 }
 ```
 
-通过向资源的终结点发送 GET 请求获取特定资源的二进制数据 `content` ：
+通过向资源的终结点发送 GET 请求，获取特定资源的二进制 `content` 数据：
 
 ```
 GET ../onenote/resources/{id}/content
 ```
 
-当您使用以下请求获取页面的 HTML 内容时，将返回文件的资源 URI：
+当您通过以下请求获取页面的 HTML 内容时，将返回文件的资源 URI：
 
 ```
 GET ../onenote/pages/{id}/content
 ```
 
-在页面 HTML 中， `img` 标记包含属性中的原始图像资源 `data-fullres-src` 和属性中优化的图像的终结点 `src` ：
+在页面 HTML 中，标记包括 属性中原始图像资源的终结点和 属性 `img` `data-fullres-src` 中的优化 `src` 图像：
 ```
 <img
     src="image-resource-url"
@@ -56,7 +56,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-一个 `object` 代表文件（如 PDF、.docx 和 PNG）的标记 () 在属性中包含文件资源的终结点 `data` ：
+一个 (表示 PDF、DOCX 和 PNG 等文件的标记) 属性中包含 `object` 文件资源的 `data` 终结点：
 
 ```
 <object
@@ -70,7 +70,7 @@ GET ../onenote/pages/{id}/content
 | 属性             | 类型            | 说明
 |:---------------------|:----------------|:---------------------------------
 | content              | 流          | 内容流
-| contentUrl           |  (url 的字符串)     | 用于下载内容的 URL
+| contentUrl           | 字符串 (url)     | 用于下载内容的 URL
 
 ## <a name="relationships"></a>关系
 无。

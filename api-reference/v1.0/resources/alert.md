@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0501a7622a9a687a436a886f94dfe7228417efc8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 2726eeac1a1b355a27ba45f998a463c3fc8ecbc4855c5caee9b58c8528f825f2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721843"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126709"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "50721843"
 | activityGroupName    | 字符串                                                       | 此警报归因于的活动组（攻击者）的名称或别名。                                                                                                                                                                                                                          |
 | assignedTo           | String                                                       | 分配警报的分析员名称，用于分类、调查或修复（支持[更新](../api/alert-update.md)）。                                                                                                                                                                  |
 | azureSubscriptionId  | 字符串                                                       | Azure 订阅 ID，如果此警报与 Azure 资源相关时显示。                                                                                                                                                                                                                        |
-| azureTenantId        | 字符串                                                       | Azure Active Directory 租户 ID。 必需。                                                                                                                                                                                                                                                          |
+| azureTenantId        | 字符串                                                       | Azure Active Directory 租户 ID。必需。                                                                                                                                                                                                                                                          |
 | “类别”             | 字符串                                                       | 警报的类别（例如，credentialTheft、ransomware 等）。                                                                                                                                                                                                                              |
 | closedDateTime       | DateTimeOffset                                               | 警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z` （支持 [更新](../api/alert-update.md)）。                    |
 | cloudAppStates       | [cloudAppSecurityState](cloudappsecuritystate.md) 集合 | 提供程序生成的与此警报相关的云应用程序的安全相关状态信息。                                                                                                                                                                                 |
@@ -56,7 +56,7 @@ ms.locfileid: "50721843"
 | processes            | [process](process.md) 集合                             | 提供程序生成的与此警报相关的流程的安全相关状态信息。                                                                                                                                                                                |
 | recommendedActions   | 字符串集合                                            | 供应商/提供程序建议对警报采取的措施（例如，隔离计算机、enforce2FA、重新映像主机）。                                                                                                                                                                     |
 | registryKeyStates    | [registryKeyState](registrykeystate.md) 集合           | 提供程序生成的与此警报相关的注册表项的安全相关状态信息。                                                                                                                                                                                       |
-| securityResources    | [securityResource](securityResource.md) collection           | 与当前警报相关的资源。 例如，对于某些警报，可能有 Azure 资源值。                                                                                                                                                                                             |
+| securityResources    | [securityResource](securityResource.md) collection           | 与当前警报相关的资源。例如，对于某些警报，可能有 Azure 资源值。                                                                                                                                                                                             |
 | severity             | alertSeverity                                                | 警报严重性 - 由供应商/提供程序设置。 可取值为：`unknown`、`informational`、`low`、`medium`、`high`。 必需。                                                                                                                                                                         |
 | sourceMaterials      | 字符串集合                                            | 与警报相关的源材料的超链接 (URI)，例如，提供程序的警报或日志搜索的用户界面等。                                                                                                                                                                 |
 | status               | alertStatus                                                  | 警告生命周期的状态（阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 （支持[更新](../api/alert-update.md)）。 必需。                                                                                                                                         |
@@ -64,7 +64,7 @@ ms.locfileid: "50721843"
 | title                | String                                                       | 警报标题。 必需。                                                                                                                                                                                                                                                                               |
 | 触发器             | [alertTrigger](alerttrigger.md) 集合                   | 有关触发警报的特定属性的安全相关信息（警报中显示的属性）。 警报可能包含有关多个用户、主机、文件、ip 地址的信息。 此字段指示哪些属性触发警报生成。                    |
 | userStates           | [userSecurityState](usersecuritystate.md) 集合         | 提供程序生成的与此警报相关的用户帐户的安全相关状态信息。                                                                                                                                                                                       |
-| vendorInformation    | [securityVendorInformation](securityvendorinformation.md)    | 包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。 必需。                                                                                                |
+| vendorInformation    | [securityVendorInformation](securityvendorinformation.md)    | 包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。必需。                                                                                                |
 | vulnerabilityStates  | [vulnerabilityState](vulnerabilitystate.md) 集合       | 威胁智能，属于与此警报相关的一个或多个漏洞。                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>关系

@@ -5,18 +5,18 @@ localization_priority: Priority
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: conceptualPageType
-ms.openlocfilehash: 1fae5e12218fa7c661c93d4dd34a4c04937bdf1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1a0f9663f1d233b8bc156b05108cc07273d79a783d963ad3389240f817c7d4ae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54222691"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>使用 Microsoft Graph 中的 SharePoint 网站
 
 Microsoft Graph 中的 SharePoint API 支持以下核心情形：
 
-* 访问 SharePoint **网站**、**列表**和**驱动器**（文档库）
+* 访问 SharePoint **网站**、**列表** 和 **驱动器**（文档库）
 * 支持对 **site** 资源进行只读访问（无法创建新网站）
 * 支持对 **lists**、**listItems** 和 **driveItems** 进行读写访问
 * 用 SharePoint ID、URL 或相对路径表示的 Address 资源

@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 82b622838ddd5e7fb8c00a969184bdd729926b23
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d54cab6905142282890f60042802c9f8060330bbffb5923505b5bae1a6cd9b45
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235301"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "50961081"
 
 表示处于风险中的 Azure AD 用户。 Azure AD 根据各种信号和机器学习持续评估用户风险。 此 API 为 Azure AD 中所有处于风险中的用户提供编程访问权限。
 
-有关风险事件详细信息，请参阅 Azure [Active Directory Identity Protection。](/azure/active-directory/identity-protection/overview-identity-protection)
+有关风险事件详细信息，请参阅Azure Active Directory [Identity Protection。](/azure/active-directory/identity-protection/overview-identity-protection)
 
->**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意：** 使用 riskyUsers API 需要Azure AD Premium P2许可证。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 riskyUsers](../api/riskyuser-list.md)|[riskyUser](../resources/riskyuser.md) 集合|获取 **riskyUser** 对象及其属性的列表。|

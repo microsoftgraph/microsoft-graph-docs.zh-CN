@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 899559ae3f8eed6af898782d0f6632c7ba596723
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 35e6fb35bf3cd55f67e8f91019ed20b8c7113ea97affd77fd7dc2329f8157229
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52742767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126520"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52742767"
 法国电视内容分级标签
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视显示内容|
 |allBlocked|1|不允许任何电视展示内容|

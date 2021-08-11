@@ -1,16 +1,16 @@
 ---
 title: invitationParticipantInfo 资源类型
-description: '**InvitationParticipant**用于表示与对话邀请关联的一组标识，并提供其他邀请参数。'
+description: '**InvitationParticipant** 用于表示与对话邀请关联的一组标识，并提供其他邀请参数。'
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2425f7ebd6ac516a9100605c9ebfe47f1b87a114
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b8432cf28dd078add91b517f75bc33a71fc4e8134ecff8155c97cc0acc887c8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202243"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "47984248"
 
 | 属性                           | 类型                          | 说明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| 窃取                           | [identitySet](identityset.md) | 与此邀请关联的 [了解 identityset](identityset.md) 。                   |
-| replacesCallId                     | String                        | 可选。 目标标识当前是其一部分的调用。 添加参与者后，将删除此呼叫。 |
+| identity                           | [identitySet](identityset.md) | 与此[邀请关联的 identitySet。](identityset.md)                   |
+| replacesCallId                     | String                        | 可选。 目标标识当前属于的呼叫。 添加参与者后，将放弃此调用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0afea2548acf6a036fa222211c6f52bd0e04ca43
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 1d1a87bc5bc1fa7da7acb3500da88bda50b15b866bf980063eedfc481b443ff5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135349"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 

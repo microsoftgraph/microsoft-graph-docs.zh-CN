@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bff42d331ac2fe67bdca2193a4ab8ad230b36113
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7788e45bd7d0f444f174cda613c05804ca7558d55a0656a2cc7f7e9e85608abc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197056"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9f63b671135edceb715aa4b3641b4bf189b74a33
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: d30821011aacc0ed0b7643237b745d2f0bec962d4fad53f1f195de2224021890
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202439"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>domainDnsTxtRecord 资源类型
 
@@ -24,12 +24,12 @@ ms.locfileid: "50761379"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 分配给此实体的唯一标识符。 不可为空，只读。 |
+|id|String| 分配给此实体的唯一标识符。 不可为空，只读。 |
 |isOptional|Boolean| 如果为 false，则客户必须在 DNS 主机上配置 TXT 记录，Microsoft Online Services该域正常运行。 |
-|label|字符串| 在 DNS 主机上配置TXT 记录的名称属性时要使用的值。|
-|recordType|字符串| DNS 记录的类型。 该值始终为 *Txt*。 键 |
-|supportedService|字符串| 依赖此 TXT 记录的 Microsoft Online Service 或功能。</br></br>可以是下列值之一：null、Email、Sharepoint、EmailInternalRelayOnly、OfficeCommunicationsOnline、SharePointDefaultDomain、FullRedelegation、SharePointPublic、OrgIdAuthentication、Yammer、Intune            |
-|text|字符串| 在 DNS 主机上配置 *文本* 属性时所使用的值。 |
+|标签|String| 在 DNS 主机上配置TXT 记录的名称属性时要使用的值。|
+|recordType|String| DNS 记录的类型。 该值始终为 *Txt*。 键 |
+|supportedService|String| 依赖此 TXT 记录的 Microsoft Online Service 或功能。</br></br>可以是下列值之一：null、Email、Sharepoint、EmailInternalRelayOnly、OfficeCommunicationsOnline、SharePointDefaultDomain、FullRedelegation、SharePointPublic、OrgIdAuthentication、Yammer、Intune            |
+|text|String| 在 DNS 主机上配置 *文本* 属性时所使用的值。 |
 |ttl|Int32| 在 DNS 主机上配置 MX 记录的 ttl (*ttl*) 时要使用的值。 不可为 null |
 
 ## <a name="relationships"></a>关系

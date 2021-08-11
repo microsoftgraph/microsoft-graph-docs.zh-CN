@@ -7,12 +7,12 @@ metadata:
   ms.topic: landing-page
   author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 902050d00365db897a4068649584aa5cbd13c3e7
-  ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+  ms.openlocfilehash: ab2e5d5fb291203557fa94900d75099e562398e468f89fd7a3e71e9a60c9bedc
+  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "52546978"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "54157884"
 landingContent:
 - title: 生成首个服务器端应用
   linkLists:

@@ -5,12 +5,12 @@ description: site 资源提供 Sharepoint 网站的元数据和关系。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: d9015326d4a1f6ea49abbbd6b14731ebbdc78b56
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b0ce021bbc07170879a11cab2d23a66efc45b82d9881d5157bcc9d44d34549e0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239329"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126275"
 ---
 # <a name="site-resource"></a>site 资源
 
@@ -93,7 +93,7 @@ ms.locfileid: "50239329"
 | **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
 | **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
 | **lists**         | Collection([list][])             | 此网站下方的列表集合。
-| **权限**   | 集合([权限][])         | 与网站关联的权限。 可为空。
+| **权限**   | 集合([权限][])         | 与网站关联的权限。空。
 | **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
 | **onenote**       | [onenote][]                      | 调用 OneNote 服务执行笔记本相关操作。
 

@@ -5,22 +5,22 @@ description: EditAction 对象提供有关编辑项目的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 5ac5c4b463bcb4c1276cc9eabf148b07b8c08be5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 59fb67f45d40f585029264a936237aa66b9009927852f3c6f886c7ca820fc38f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149966"
 ---
 # <a name="editaction-resource-type"></a>editAction 资源类型
 
 命名空间：microsoft.graph
 
-itemActivity 上 **存在 editAction** [][activity]资源指示活动已编辑项目。
+[**itemActivity**][activity]上 **存在 editAction** 资源指示活动已编辑项目。
 
 **注意**：此资源当前为空。 将来，可能会用其他属性填充它。
 
->**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅适用于SharePoint OneDrive for Business。
 
 [activity]: itemactivity.md
 
@@ -33,7 +33,7 @@ itemActivity 上 **存在 editAction** [][activity]资源指示活动已编辑�
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.editAction"
+  "@type&quot;: &quot;microsoft.graph.editAction"
 }-->
 
 ```json

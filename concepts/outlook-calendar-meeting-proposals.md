@@ -4,12 +4,12 @@ description: 在 Outlook 中，会议组织者可以允许被邀请者建议备�
 author: harini84
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a09c7bec65c69cd1f5058cae5eddc1b99a22e694
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 6beba6c1c2c19515ade8123069feed83951fa903febdcb39acabff60f678dab1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157947"
 ---
 # <a name="propose-new-meeting-times-in-outlook"></a>在 Outlook 中建议新的会议时间
 

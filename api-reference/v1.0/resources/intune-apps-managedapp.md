@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4fbb934f3bb52c1980908c1595c2252800c465e3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 1043a3bd70603543c5286927c43d00085b704e62b3060c0490af317bfe1796fa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756048"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189693"
 ---
 # <a name="managedapp-resource-type"></a>managedApp 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "52756048"
 
 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedApps](../api/intune-apps-managedapp-list.md)|[managedApp](../resources/intune-apps-managedapp.md) 集合|列出 [managedApp](../resources/intune-apps-managedapp.md) 对象的属性和关系。|
 |[Get managedApp](../api/intune-apps-managedapp-get.md)|[managedApp](../resources/intune-apps-managedapp.md)|读取 [managedApp](../resources/intune-apps-managedapp.md) 对象的属性和关系。|
@@ -50,7 +50,7 @@ ms.locfileid: "52756048"
 |version|String|应用程序的版本。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|

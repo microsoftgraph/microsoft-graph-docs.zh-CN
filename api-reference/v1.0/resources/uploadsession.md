@@ -3,21 +3,21 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-description: UploadSession 资源提供有关如何将大文件上载到 OneDrive、OneDrive for Business 或 SharePoint 文档库或作为 Outlook 事件和邮件对象的文件附件的信息。
+description: UploadSession 资源提供有关如何将大文件上载到 OneDrive、OneDrive for Business 或 SharePoint 文档库，或作为文件附件上载到 Outlook 事件和邮件对象的信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0104b9349427b07ffef570d66b98720155bd7728
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 08401209a720aeead1ce23d13179aabedd26320952ca0fa34aba878373ef218f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235266"
 ---
 # <a name="uploadsession-resource-type"></a>uploadSession 资源类型
 
 命名空间：microsoft.graph
 
-**uploadSession** 资源提供有关如何将大文件上载到 OneDrive、OneDrive for Business 或 SharePoint 文档库，或以附件方式 [上载到](event.md)Outlook 事件和 [邮件](message.md)项目的信息。
+**uploadSession** 资源提供有关如何将大文件上载到 OneDrive、OneDrive for Business 或 SharePoint 文档库，或将 Outlook [事件](event.md)和邮件项目作为附件上载的信息。 [](message.md)
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,12 +43,12 @@ ms.locfileid: "50239469"
 | 属性       | 类型              |说明
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | 以 UTC 表示的上载会话过期的日期和时间。在此过期时间之前必须上载完整的文件文件。
-| nextExpectedRanges | String collection | 字节范围集合，文件服务器缺失。 这些区域索引均从零开始，格式为“开始-结束”（例如，“0-26”指示该文件的前 27 个字节)。 当将文件作为 Outlook 附件而不是范围集合上载时，此属性始终指示单个值"{start}"，即文件中应开始下一次上载的位置。
+| nextExpectedRanges | String collection | 字节范围集合，文件服务器缺失。 这些区域索引均从零开始，格式为“开始-结束”（例如，“0-26”指示该文件的前 27 个字节)。 将文件作为附件Outlook，而不是范围集合时，此属性始终指示单个值"{start}"，即文件中下一次上传应开始的位置。
 | uploadUrl          | String            | 接受文件字节范围的 PUT 请求的 URL 端点。
 
 ## <a name="see-also"></a>另请参阅
 
-- [将大文件作为附件附加到 Outlook 邮件和事件 ](/graph/outlook-large-attachments)
+- [将大文件附加到Outlook附件的邮件和事件](/graph/outlook-large-attachments)
 - [通过上传会话上传大文件](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

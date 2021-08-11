@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3d3d09635bbe69d787d684b346d460854df4413e
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: cc6b456842b7a2256f96f84ab809a4b5d2e2ba3f4b69d8ec18d70cf06af4faa1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129629"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Excel 工作簿和图表 API 概述
 
@@ -37,7 +37,7 @@ Excel 还是一款出色的存储和跟踪数据的工具。 如果信息存储�
 >**注意：** Excel REST API 仅支持 Office Open XML 文件格式的工作簿（扩展名为 `.xlsx` 的文件）。 不支持扩展名为 `.xls` 的工作簿。 
 
 ### <a name="using-the-excel-rest-api"></a>使用 Excel REST API
-你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。 `Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。 你可以通过标识文件在该 URL 中的位置，借助 Drive API 访问工作簿。 例如：
+可以使用 Microsoft Graph，使 Web 和移动应用程序可以读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。可以通过识别文件在该 URL 中的位置，借助 驱动器 API 访问工作簿。例如：
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`
 

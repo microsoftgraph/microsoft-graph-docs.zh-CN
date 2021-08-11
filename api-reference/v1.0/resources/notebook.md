@@ -1,22 +1,22 @@
 ---
 title: 笔记本资源类型
-description: OneNote 笔记本。
+description: 一OneNote笔记本。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: f8562670441c756e5263511304225440ec063a9a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: ac3a433e3fa0e13beefb83a4525cb5975c9dfbe56d1c668c7bd8931982e84425
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721899"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189448"
 ---
 # <a name="notebook-resource-type"></a>笔记本资源类型
 
 命名空间：microsoft.graph
 
-OneNote 笔记本。
+一OneNote笔记本。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -55,16 +55,16 @@ OneNote 笔记本。
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |createdDateTime|DateTimeOffset|笔记本的创建日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|id|字符串|笔记本的唯一标识符。 只读。|
+|id|String|笔记本的唯一标识符。 只读。|
 |isDefault|Boolean|指示这是否是用户的默认笔记本。 只读。|
 |isShared|Boolean|指明笔记本是否为共享。 如果是，笔记本的内容可供所有者以外的用户查看。 只读。|
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改笔记本的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|links|[NotebookLinks](notebooklinks.md)|用于打开笔记本的链接。 链接 `oneNoteClientURL` 将在 OneNote 本机客户端中打开笔记本（如果已安装）。 该 `oneNoteWebURL` 链接在 OneNote 网页中打开笔记本。|
-|displayName|字符串|笔记本的名称。|
-|sectionGroupsUrl|字符串|导航属性的 `sectionGroups` URL，可返回笔记本中所有节组。 只读。|
-|sectionsUrl|字符串|导航属性的 `sections` URL，可返回笔记本中所有节。 只读。|
-|self|字符串|终结点，您可在此处获取关于笔记本的详细信息。 只读。|
+|links|[NotebookLinks](notebooklinks.md)|用于打开笔记本的链接。 如果 `oneNoteClientURL` 已安装，该链接将在OneNote客户端中打开笔记本。 该 `oneNoteWebURL` 链接将在页面打开笔记本OneNote web 版。|
+|displayName|String|笔记本的名称。|
+|sectionGroupsUrl|String|导航属性的 `sectionGroups` URL，可返回笔记本中所有节组。 只读。|
+|sectionsUrl|String|导航属性的 `sections` URL，可返回笔记本中所有节。 只读。|
+|self|String|终结点，您可在此处获取关于笔记本的详细信息。 只读。|
 |userRole|onenoteUserRole|可取值为：`Owner`、`Contributor`、`Reader`、`None`。 所有者表示对笔记本的所有者级别访问权限。 参与者表示笔记本的读/写访问权限。 Reader 表示对笔记本的只读访问权限。 只读。|
 
 ## <a name="relationships"></a>关系

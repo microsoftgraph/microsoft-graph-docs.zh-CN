@@ -1,32 +1,32 @@
 ---
 title: inviteParticipantsOperation 资源类型
-description: 表示长时间运行的参与者邀请操作的状态，通过调用参与者-邀请 API 触发。
+description: 表示长时间运行的参与者邀请操作的状态，由对参与者邀请 API 的调用触发。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7e729a572ceb69f59ed6cc00cd0a2e132765ed8a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9aa707a68cccb7424cb6a2eabaa455ece784730478ce2469b3e2f70c40e5297e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196976"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>inviteParticipantsOperation 资源类型
 
 命名空间：microsoft.graph
 
-表示长时间运行的参与者邀请操作的状态，通过调用参与者-邀请 API 触发。
+表示长时间运行的参与者邀请操作的状态，由对参与者邀请 API 的调用触发。
 
 ## <a name="properties"></a>属性
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 适用                  | String                      | 客户端上下文。                                                                                                                               |
-| id                             | String                      | 服务器操作 id。只读。                                                                                              |
+| clientContext                  | String                      | 客户端上下文。                                                                                                                               |
+| id                             | String                      | 服务器操作 ID。只读。                                                                                              |
 | participants | [invitationParticipantInfo](invitationParticipantInfo.md) 集合 | 要邀请的参与者。 |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                             |
-| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                  |
+| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

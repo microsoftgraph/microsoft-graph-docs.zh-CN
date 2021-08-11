@@ -4,12 +4,12 @@ description: '通知是与应用程序用户再次交互的最有效的方式之
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 3cbeedfae4e47ac388b60d150505e247534ee68a
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 8dc5ef886106ca4d966e0a94ae2915040cfb5d1f1ea66d041d136db5bb7951e0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149526"
 ---
 # <a name="integrate-with-microsoft-graph-notifications"></a>与 Microsoft Graph 通知集成
 

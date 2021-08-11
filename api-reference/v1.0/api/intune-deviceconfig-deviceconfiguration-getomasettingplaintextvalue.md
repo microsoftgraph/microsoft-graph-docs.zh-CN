@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4662cf110a95bfaf718e2d9ed0756d2329bcd996
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d8e1f068b2c88260f8424ae2b089b79be9b1dd6e1b6b386917d96956462afd70
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753047"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121730"
 ---
 # <a name="getomasettingplaintextvalue-function"></a>getOmaSettingPlainTextValue 函数
 

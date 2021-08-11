@@ -4,12 +4,12 @@ description: 在 Outlook 中，日历所有者可与其他用户共享日历，�
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 06e11f11b9c25e3392075e027278558d1330d51e
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 308381b951371943dea2c88a29a299f5190eab5bb99bca8b8a196acc5884023b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126037"
 ---
 # <a name="get-shared-or-delegated-outlook-calendar-and-its-events"></a>获取共享或委托的 Outlook 日历及其事件
 

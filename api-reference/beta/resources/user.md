@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: c5e8b3441974d498f6d28787d4a0eb76f23092f7
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 360fc76c189cbdd68a5e0d6c746f71301c868640
+ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534149"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726717"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -201,7 +201,7 @@ ms.locfileid: "53534149"
 | lastPasswordChangeDateTime | DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 <br><br>仅在 `$select` 上返回。  |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) 集合 | 此用户的许可证分配状态。只读。<br><br>仅在 `$select` 上返回。 |
-| mail | String | 用户的 SMTP 地址，例如， `admin@contoso.com`。 对此属性进行更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 此属性不能包含突出字符。 <br><br> 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`）。 |
+| mail | String | 用户的 SMTP 地址，例如， `admin@contoso.com`。 对此属性进行更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 对于 Azure AD B2C 帐户，此属性最多可以使用唯一的 SMTP 地址更新 10 次。 此属性不能包含突出字符。 <br><br> 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`）。 |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 `$select` 上返回。 |
 | mailNickname | String | 用户的邮件别名。创建用户时必须指定此属性。最大长度为 64 个字符。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 | mobilePhone | String | 用户的主要移动电话号码。 本地目录同步的用户为只读。 <br><br> 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
@@ -226,7 +226,7 @@ ms.locfileid: "53534149"
 | preferredLanguage | String | 用户的首选语言。 应遵循 ISO 639-1 代码;例如， `en-US`。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 `$select` 上返回。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 为用户设置的计划。 只读。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。|
-| proxyAddresses | String collection | 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 只读，不可为 Null。 <br><br>支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `startsWith`）。 |
+| proxyAddresses | String collection | 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。  对于 Azure AD B2C 帐户，此属性有 10 个唯一地址的限制。 只读，不可为 Null。 <br><br>支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `startsWith`）。 |
 | refreshTokensValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) 进行重置。|
 | responsibilities | String collection | 供用户枚举其职责的列表。 <br><br>仅在 `$select` 上返回。 |
 | schools | String collection | 供用户枚举其学习过的学校列表。 <br><br>仅在 `$select` 上返回。 |
@@ -305,13 +305,13 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |joinedGroups|[group](group.md) 集合| 只读。可为 Null。|
 |mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。 只读。 （HTTP 方法：GET、PUT、DELETE） 支持 `$expand`。|
-|memberOf|[directoryObject](directoryobject.md) 集合|用户所属的所有组、目录角色和管理单元。 只读。 可为空。 支持 `$expand`。 |
+|memberOf|[directoryObject](directoryobject.md) 集合|用户所属的所有组、目录角色和管理单元。 只读。 可为 NULL。 支持 `$expand`。 |
 |joinedTeams|[团队](team.md) 集合|用户是成员的 Microsoft Teams 团队。只读。空。|
 |messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[onenote](onenote.md)| 只读。|
 |outlook|[outlookUser](outlookuser.md)| 用户可以选择性 Outlook 服务。只读。空。|
-|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。 只读。 可为空。 支持 `$expand`。|
-|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。 只读。 可为空。 支持 `$expand`。|
+|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。 只读。 可为 NULL。 支持 `$expand`。|
+|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。 只读。 可为 NULL。 支持 `$expand`。|
 |pendingAccessReviewInstances|[accessReviewInstance](accessreviewinstance.md) | 用于获取等待审阅者批准的访问审阅列表的导航属性。 |
 |people|[person](person.md) 集合| 只读。与用户最相关的人员。该集合按其与用户的相关性排序，相关性由用户的通信、协作和业务关系决定。人脉是邮件、联系人和社交网络中的信息聚合。|
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|

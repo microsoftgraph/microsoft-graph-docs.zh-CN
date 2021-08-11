@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: bd0f9dbf5ad50636d313ebac562a80246b7e80a1
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: 8c4afa7a3822927ebeb3d91a6ecd8e439c5032c3ba5b1fd87a13b119d15e112f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703473"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130329"
 ---
 # <a name="entity-resource-type"></a>实体资源类型
 

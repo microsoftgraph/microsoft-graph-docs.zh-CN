@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17fd67b43e9d51b9de6a04476a0271ca99aba12b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f38a1e77ec6a26d2378a7c4e52d60384cb5b0301f4422e371480ff359a7baa30
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752607"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155587"
 ---
 # <a name="list-remoteassistancepartners"></a>列出 remoteAssistancePartners
 

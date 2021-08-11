@@ -3,7 +3,7 @@
 
 Microsoft Graph 连接器允许你将你自己的数据添加到 Microsoft Graph，并可以支持各种Microsoft 365体验。
 
-此 .NET Core 应用程序演示如何使用 Microsoft Graph 连接器 API 创建客户连接器并使用它来支持 Microsoft 搜索。 本教程使用 Contoso 设备修复组织的示例数据设备部件清单。
+此 .NET Core 应用程序演示如何使用 Microsoft Graph 连接器 API 创建客户连接器并使用它来Microsoft 搜索。 本教程使用 Contoso 设备修复组织的示例数据设备部件清单。
 
 ## <a name="how-does-the-sample-work"></a>示例如何工作？
 

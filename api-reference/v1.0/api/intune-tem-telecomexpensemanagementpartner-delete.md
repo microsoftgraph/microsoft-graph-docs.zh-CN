@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 98aa109145085dec37f4144caef295a871eb9e9d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8c8949a46b0b8207300a64ff2b94f1d54d4a7309536e5316e13a6072ec739cd4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52743089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223828"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>删除 telecomExpenseManagementPartner
 

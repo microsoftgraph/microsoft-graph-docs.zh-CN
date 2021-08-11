@@ -1,22 +1,22 @@
 ---
 title: insightIdentity
-description: 包含共享项目的属性的复杂类型。
+description: 包含共享项的属性的复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: f4b8bc6b66598753c0755d249ab37283810e8db7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 393a6c1f7fbd1a7fffac667afcf054cdc6b54d55576ffb220df6437166827622
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054866"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229254"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
 命名空间：microsoft.graph
 
-包含 [sharedInsight](insights-shared.md) 项目的属性的复杂类型。 
+包含 [sharedInsight 项的属性的复杂](insights-shared.md) 类型。 
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -39,7 +39,7 @@ ms.locfileid: "48054866"
 
 | 属性              | 类型          | 说明  |
 | -------------         |-----------    | -------------|
-| displayName       | String          | 共享项目的用户的显示名称。 |
-| id              | String        | 共享项的用户的 id。     |
+| displayName       | String          | 共享显示名称的用户的行数。 |
+| id              | String        | 共享项的用户的 ID。     |
 | address             | String      | 共享项目的用户的电子邮件地址。  |
 

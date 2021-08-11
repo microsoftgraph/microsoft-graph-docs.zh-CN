@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 45ba2e17024a4635f5d0eb8d3b01050bbf5f6867
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: aaeee96030aabef77d7ab1d6b8f5495672d1c60c51496ffdbf9a9adb7985a0d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231948"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 
@@ -77,8 +77,8 @@ CSV 文件包含下面的列标题。
 - Yammer 非活跃
 - Teams 活跃
 - Teams 非活跃
-- Office 365 活动版
-- Office 365 非活动
+- Office 365活动
+- Office 365非活动
 - 报表周期
 
 ## <a name="example"></a>示例

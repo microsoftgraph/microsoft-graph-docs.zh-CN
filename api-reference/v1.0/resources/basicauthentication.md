@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9bb61e297a6a668631da654383e13ee1dbf8ef79
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 361d7f98f2d594ab6193103f9a67b969cbfe6d0cb1b97cd229b89ba9449402e3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126674"
 ---
 # <a name="basicauthentication-resource-type"></a>basicAuthentication 资源类型
 

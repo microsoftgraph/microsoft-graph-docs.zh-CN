@@ -4,12 +4,12 @@ description: 了解如何配置应用程序以代表用户访问联机会议。
 author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 331a3873aa619c6f86fc8109fc6f572d990f9686
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 6856e35fa9bad4f220b10e5a8c945f91ae4a2ff6a43c65ed5fe7af34ce69ded5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235175"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问联机会议
 

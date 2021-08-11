@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b448d95d4aa25717e313d92f8b2a4e035228cf1a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b2d16b3ff47a95809a741acde277f91555c63b954d57f0d6214aa24b1e5392b3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135069"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>deviceManagementReportStatus 枚举类型
 
