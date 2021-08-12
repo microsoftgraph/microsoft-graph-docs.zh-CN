@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 40f5a7ec777e17b1b19c7f33f354c607f53b5480
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 898cf2d0532dfb9475acb69fe340169b262c78181d43207cc2f5493f41d3e61d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212775"
 ---
 # <a name="get-authenticationmethod"></a>获取 authenticationMethod
 

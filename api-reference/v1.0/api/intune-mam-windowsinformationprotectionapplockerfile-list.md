@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bab4ec76fd290fa4a21d117082afc1abe4dbfcbc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 33b71bd298e7750b4df18e4b6f540621290c943b71ba4f88ac6154d519ce5717
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751487"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225886"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>列出 windowsInformationProtectionAppLockerFiles
 

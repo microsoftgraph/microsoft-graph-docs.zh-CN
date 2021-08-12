@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4bc695bf8874915a4adfb6691b88f75856527dd
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: cdb6f75c2d22f23f21a80958c92d768790c267a9f037a1d7d2b286aea07cad99
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175677"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 

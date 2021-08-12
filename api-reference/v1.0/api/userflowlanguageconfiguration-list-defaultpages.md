@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2d45a865d9ee8c1bbd852bd282d1092ba0297937
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 7ae6d3610cb3e4af5b99c2ff0873215a4375c251da3e003097cd733408d0bc66
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252198"
 ---
 # <a name="list-defaultpages"></a>列出 defaultPages
 
@@ -31,7 +31,7 @@ ms.locfileid: "51882815"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

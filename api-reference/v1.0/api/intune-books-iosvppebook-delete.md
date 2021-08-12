@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 982a8f3ecd321b4d5ea70609472d72ff1d4d34e1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 1911edd025385f2f4eb4ecb143aa5bae4d807333cb59fe0b9f07066b2bcd4fed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121821"
 ---
 # <a name="delete-iosvppebook"></a>删除 iosVppEBook
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c674186befbb6a24c41cd8741f554876a17a4394
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: fe2cb3a1b899fb1aa9cef1fdc863a7d4432ead8877fed92bb0a53e40b62dd455
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221143"
 ---
 # <a name="workbookoperation-resource-type"></a>workbookOperation 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "50158945"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取 workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | 获取操作 `{operation-id}` 。 |
+| [获取 workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | 使用 获取 操作 `{operation-id}` 。 |
 
 
 ## <a name="properties"></a>属性

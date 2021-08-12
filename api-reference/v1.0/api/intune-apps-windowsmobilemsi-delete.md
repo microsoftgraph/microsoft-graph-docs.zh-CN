@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bdfb9d090c175e00e88b70533d42d7d9ff43692
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f49cc23af11e4c233b66f669bc7bb62554e17ef8cfbf71363de4c943ad339311
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135867"
 ---
 # <a name="delete-windowsmobilemsi"></a>删除 windowsMobileMSI
 

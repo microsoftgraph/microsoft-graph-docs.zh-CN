@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 43aa45bd8880a89869f19ca6905a35f9057a5b19
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a43f93ccb9c73a321d26b7fda8a37faccecaa5fb2c23ddca3c276b48b12e140
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037085"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205171"
 ---
 # <a name="range-resource-type"></a>区域资源类型
 
@@ -67,7 +67,7 @@ ms.locfileid: "48037085"
 |rowHidden|boolean|表示当前区域中的所有行是否隐藏。|
 |rowIndex|int|返回区域中第一个单元格的行编号。从零开始编制索引。只读。|
 |text|Json|指定区域的文本值。文本值与单元格宽度无关。在 Excel UI 中替代 # 符号不会影响 API 返回的文本值。只读。|
-|valueTypes|Json|表示每个单元格的数据类型。 可取值包括：`Unknown`、`Empty`、`String`、`Integer`、`Double`、`Boolean`、`Error`。 只读。|
+|valueTypes|Json|表示每个单元格的数据类型。可能的值是：`Unknown`、`Empty`、`String`、`Integer`、`Double`、`Boolean`、`Error`。只读。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="relationships"></a>关系

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c0e880b8afebdfccab426fbe80966cc3f828a19
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 174c275ed02e1494cc43e7626b0c1df6c19bbe7f5512063a5be700599aa74eac
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205715"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52755922"
 表示托管应用程序列表中的应用
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |name|String|应用程序名称|
 |publisher|String|应用程序发布者|

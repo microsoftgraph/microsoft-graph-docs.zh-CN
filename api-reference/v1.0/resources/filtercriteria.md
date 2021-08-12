@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 38553e51abf8be80740e7eaeded1eb7b17705173
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ddec29fc07cdb4a561ec3cbb0860a1026de17d637f80cc98f64cf63986400922
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178470"
 ---
 # <a name="filtercriteria-resource-type"></a>FilterCriteria 资源类型
 

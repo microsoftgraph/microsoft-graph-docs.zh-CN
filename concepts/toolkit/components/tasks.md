@@ -3,12 +3,12 @@ title: Microsoft 服务中的任务Graph Toolkit
 description: 任务组件使用户能够查看、添加、删除、完成或编辑任务。 它适用于 Microsoft Planner 中的任何任务。
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 35191c778c957c1c9c6c316fb4755b57e6690ff2
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: c28db228e40a6661fc5cb48bb86b961ba7f6871a91987e5255212463dc3c09d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186879"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的任务Graph Toolkit
 
@@ -36,8 +36,8 @@ ms.locfileid: "53334736"
 | target-id="planner_id/folder_id"| targetId | 一个字符串 ID，用于将任务接口锁定为提供的规划器或文件夹 ID。 |
 | target-bucket-id="bucket_id" |targetBucketId  | 一个字符串 ID，用于将任务接口锁定为 Planner (提供的Data-Source ID) 。 |
 | group-id | groupId  | 用于将任务接口锁定为组 ID 的字符串 ID。 |
-| 无 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
-| 无 | taskFilter  | 可选函数，用于筛选向用户显示的任务。 |
+| 不适用 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
+| 不适用 | taskFilter  | 可选函数，用于筛选向用户显示的任务。 |
 
 以下示例仅显示来自 ID *为 12345* 的 Planner 中的任务，并且不允许用户创建新任务。
 

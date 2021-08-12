@@ -6,12 +6,12 @@ localization_priority: Normal
 description: SharingInvitation 资源将邀请相关的数据项分组到一个结构中。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f90382fa2f65ed2c56afc53ef0a142913eb05579
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: eaf917ccdd64a50dab9cdf6f2ed477716c18a0185be03812793d115247e17e93
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134936"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
 
@@ -59,6 +59,6 @@ ms.locfileid: "50240078"
   "description": "The sharing invitation facet describes details of a sharing invitation associated with a permission.",
   "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/SharingInvitation"
+  "tocPath&quot;: &quot;Facets/SharingInvitation"
 } -->
 

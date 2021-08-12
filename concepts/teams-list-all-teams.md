@@ -4,12 +4,12 @@ description: '列出所有团队 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8bacd936f67c0ba02ba547104eb9a7983017cbe8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e2a8e451cc44ef38effabb5a9061e8185a582a3d32a418d2cac40cb5c2a431c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225682"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>列出组织中 Microsoft Teams 的所有团队
 

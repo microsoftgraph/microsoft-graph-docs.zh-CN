@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 7755779218b7120e24cc25f6e0a5a97d4c42db5d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 2322a2425170a930dfaca30224601c01388063dd8d50203c950d1f3b9d5131ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229295"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord 资源类型
 
@@ -24,16 +24,16 @@ ms.locfileid: "50761196"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 分配给此实体的唯一标识符。 不可为空，只读。|
+|id|String| 分配给此实体的唯一标识符。 不可为空，只读。|
 |isOptional|Boolean| 如果为 false，则客户必须在 DNS 主机上配置 SRV 记录，Microsoft Online Services该域正常运行。 |
-|label|字符串| 在 DNS 主机上配置 SRV 记录的名称属性时所使用的值。 |
-|nameTarget|字符串| 在 DNS 主机上配置 SRV 记录的 *Target* 属性时要使用的值。 |
+|标签|String| 在 DNS 主机上配置 SRV 记录的名称属性时所使用的值。 |
+|nameTarget|String| 在 DNS 主机上配置 SRV 记录的 *Target* 属性时要使用的值。 |
 |端口|Int32| 在 DNS 主机上配置 SRV 记录的 *端口* 属性时要使用的值。 |
 |priority|Int32| 在 DNS 主机上配置SRV 记录的优先级属性时要使用的值。 |
-|协议|字符串| 在 DNS 主机上配置SRV 记录的协议属性时要使用的值。 |
-|recordType|字符串|  DNS 记录的类型。 该值始终为 *Srv*。 键 |
+|协议|String| 在 DNS 主机上配置SRV 记录的协议属性时要使用的值。 |
+|recordType|String|  DNS 记录的类型。 该值始终为 *Srv*。 键 |
 |service|String| 在 DNS 主机上配置SRV 记录的服务属性时要使用的值。 |
-|supportedService|字符串| 依赖此 SRV 记录的 Microsoft Online Service 或功能。</br></br>可以是下列值之一：null、Email、Sharepoint、EmailInternalRelayOnly、OfficeCommunicationsOnline、SharePointDefaultDomain、FullRedelegation、SharePointPublic、OrgIdAuthentication、Yammer、Intune            |
+|supportedService|String| 依赖此 SRV 记录的 Microsoft Online Service 或功能。</br></br>可以是下列值之一：null、Email、Sharepoint、EmailInternalRelayOnly、OfficeCommunicationsOnline、SharePointDefaultDomain、FullRedelegation、SharePointPublic、OrgIdAuthentication、Yammer、Intune            |
 |ttl|Int32| 在 DNS 主机上配置 SRV 记录 *(ttl*) 时要使用的值。 不可为 null |
 |weight|Int32| 在 DNS 主机上配置 SRV 记录的 *weight* 属性时要使用的值。 |
 

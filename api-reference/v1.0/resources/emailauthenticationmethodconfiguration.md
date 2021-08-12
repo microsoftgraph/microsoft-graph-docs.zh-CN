@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 06b7159cd14df1ee5826f4d11275e44f7819008a
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: cd05c9fdbfaa15a24419635e529dcbc82d72a4234fc16c70c0d8a617d17ae729
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231820"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212128"
 ---
 # <a name="emailauthenticationmethodconfiguration-resource-type"></a>emailAuthenticationMethodConfiguration 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "52231820"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|身份验证方法策略标识符。 继承自 [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)。|
-|状态|authenticationMethodState|指示是否启用此身份验证方法。 可取值为：`enabled`、`disabled`。|
+|state|authenticationMethodState|指示是否启用此身份验证方法。 可取值为：`enabled`、`disabled`。|
 |allowExternalIdToUseEmailOtp|externalEmailOtpState|确定外部用户是否可以使用电子邮件 OTP 进行身份验证。 可取值为：`default`、`enabled`、`disabled`、`unknownFutureValue`。 从 2021 年 10 开始，不使用公共预览的州中的租户将自动启用电子邮件 `default` OTP。|
 
 ## <a name="relationships"></a>关系

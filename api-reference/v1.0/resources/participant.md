@@ -5,27 +5,27 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 99f165f2f3e99ab424a318b053a060ccda8fdc1c
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 0e4da220f260ff6f130ac3f632ea2496d9bb24b7e5b12530d16afed2b42e94ae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152339"
 ---
 # <a name="participant-resource-type"></a>参与者资源类型
 
 命名空间：microsoft.graph
 
-代表通话中的参与者。
+表示呼叫中的参与者。
 
 ## <a name="methods"></a>方法
 
 | 方法                                                 | 返回类型                                                 | 说明                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
-| [列出参与者](../api/participant-get.md)          | [参与者](participant.md)                               | 检索呼叫 **中的参与者** 对象列表。 |
-| [获取参与者](../api/participant-get.md)           | [参与者](participant.md)                               | 读取参与者 **对象** 的属性。 |
-| [删除参与者](../api/participant-delete.md)         | 无   | 删除通话中的参与者。                  |
-| [邀请](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | 邀请参与者加入通话。              |
+| [列出参与者](../api/participant-get.md)          | [参与者](participant.md)                               | 检索调用 **中的参与者** 对象列表。 |
+| [获取参与者](../api/participant-get.md)           | [参与者](participant.md)                               | 读取 participant **对象** 的属性。 |
+| [删除参与者](../api/participant-delete.md)         | 无   | 删除呼叫中的参与者。                  |
+| [邀请](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | 邀请参与者加入呼叫。              |
 | [参与者静音](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | 将呼叫中的参与者静音。                  |
 
 ## <a name="properties"></a>属性
@@ -36,7 +36,7 @@ ms.locfileid: "49943715"
 | info                 | [participantInfo](participantinfo.md)    | 有关参与者的信息。                          |
 | isInLobby            | Boolean                                  | `true` 如果参与者在大厅中。                          |
 | isMuted              | Boolean                                  | `true` 如果参与者在客户端或服务器 (静音，则) 。    |
-| mediaStreams         | [mediaStream](mediastream.md) 集合 | 媒体流的列表。                                   |
+| mediaStreams         | [mediaStream](mediastream.md) 集合 | 媒体流列表。                                   |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | 有关参与者是否具有录制功能的信息。 |
 
 ## <a name="relationships"></a>关系

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 51806154a36433ee054250bc1c306b64953a8766
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 15d845c6de9e5b40abd3648e6dddfcf5e2e6c334e0acb3d23204b0a79c7ee1f6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211862"
 ---
 # <a name="muteparticipantoperation-resource-type"></a>MuteParticipantOperation 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "47967371"
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 适用                  | String                      | 唯一的客户端上下文字符串。 最多可以有256个字符。                                                                               |
+| clientContext                  | String                      | 唯一的客户端上下文字符串。 最多可包含 256 个字符。                                                                               |
 | id                             | String                      | 服务器操作 ID。 只读。                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                            |
-| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
+| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
 
 ## <a name="relationships"></a>关系
 无。

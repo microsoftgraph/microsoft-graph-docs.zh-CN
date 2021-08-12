@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 475ca1ce45426cb6cc412c495874eea3e73a4ae7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1a6c0bfd43cd414e0a8c5ecfb706c40436df404b0eab94c53dff18fc089305c5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039235"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130630"
 ---
 # <a name="create-openshiftchangerequest"></a>创建 openShiftChangeRequest
 

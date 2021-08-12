@@ -4,18 +4,18 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: f3e40662d2e750514ef6c71b3faa604e13ccc773
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 176fb6ee82f73c8cc6dc703f55bb68b388dcb1aa1dac3bea01410a7d19ccd099
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171950"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>使用 Microsoft Graph 获取 OneNote 内容和结构
 
 **适用于**：OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
-若要获取 OneNote 内容和结构，请向目标终结点发送 GET 请求。 例如：
+若要获取 OneNote 内容和结构，请向目标终结点发送 GET 请求。例如:
 
 `GET ../onenote/pages/{id}`
 
@@ -463,7 +463,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 ### <a name="filter--select--orderby"></a>filter & select & orderby   
 
-获取在节名中包含术语 *spring* 的所有节的名称和 **pagesUrl** 链接。 按照最后修改日期对节进行排序。
+获取节名称中包含术语 *spring* 的所有节的名称和 **pagesUrl** 链接。按最后修改的日期对节进行排序。
 
 ```
 [GET] ../sections?filter=contains(tolower(name),'spring')&select=name,pagesUrl&orderby=lastModifiedTime desc
@@ -550,20 +550,20 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 ## <a name="supported-odata-query-string-options"></a>受支持的 OData 查询字符串选项
 
-向 Microsoft Graph 发送 GET 请求时，可以使用 OData 查询字符串选项来自定义查询并仅获取所需的信息。 它们可以通过减少对该服务的调用数量以及响应有效负载的大小来提高性能。
+在将 GET 请求发送到 Microsoft Graph 时，可以使用 OData 查询字符串选项来自定义查询并获取所需信息。它们还可以通过减少对服务的调用量和减少响应负载的大小来提高性能。
 
 > **注意：** 为了增强可读性，本文中的示例不使用 URL 查询字符串中空格所需的 %20 百分比编码：`filter=isDefault%20eq%20true`
  
 | 查询选项 | 示例和说明 |  
 |------|------|  
 | count | <p>`count=true`</p><p>集合中的实体计数。在响应的 **\@odata.count** 属性中返回此值。</p> |  
-| expand | <p>`expand=sections,sectionGroups`</p><p>要在响应中返回内联的导航属性。 **expand** 表达式支持以下属性：<br /> - 页面：**parentNotebook**、**parentSection**<br /> - 节：**parentNotebook**、**parentSectionGroup**<br /> - 节组：**sections**、**sectionGroups**、**parentNotebook**、**parentSectionGroup**<br /> - 笔记本：**sections**、**sectionGroups**</p><p>默认情况下，页面的 GET 请求同时展开 **parentSection** 并选择该节的 **id**、**name** 和 **self** 属性。节和节组的默认 GET 请求扩展 **parentNotebook** 和 **parentSectionGroup**，并选择父项的 **id**、**name** 和 **self** 属性。</p><p>可用于单个实体或集合。<br />使用逗号分隔多个属性。<br />属性名区分大小写。</p> |   
+| expand | <p>`expand=sections,sectionGroups`</p><p>要在响应中内嵌返回的导航属性。**expand** 表达式支持以下属性:<br /> - 页面：**parentNotebook**、**parentSection**<br /> - 节：**parentNotebook**、**parentSectionGroup**<br /> - 节组：**sections**、**sectionGroups**、**parentNotebook**、**parentSectionGroup**<br /> - 笔记本：**sections**、**sectionGroups**</p><p>默认情况下，页面的 GET 请求同时展开 **parentSection** 并选择该节的 **id**、**name** 和 **self** 属性。节和节组的默认 GET 请求扩展 **parentNotebook** 和 **parentSectionGroup**，并选择父项的 **id**、**name** 和 **self** 属性。</p><p>可用于单个实体或集合。<br />使用逗号分隔多个属性。<br />属性名区分大小写。</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>是否在结果集中包含条目的布尔表达式。 支持以下 OData 运算符和函数：<br /> - 比较运算符：**eq**、**ne**、**gt**、**ge**、**lt**、**le**<br /> - 逻辑运算符：**and**、**or**、**not**<br /> - 字符串函数：**contains**、**endswith**、**startswith**、**length**、**indexof**、**substring**、**tolower**、**toupper**、**trim**、**concat**</p><p>[属性](#onenote-entity-properties)名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br /><br />**示例**：`filter=tolower(name) eq 'spring'`</p> |  
-| orderby | <p>`orderby=title,createdTime desc`</p><p>作为排序依据的 [属性](#onenote-entity-properties)，具有可选的 **asc**（默认）或 **desc** 的排序顺序。您可以按请求集合中实体的任意属性进行排序。</p><p>笔记本、节组和节的默认排序顺序为 `name asc`，页面的默认排序顺序为 `lastModifiedTime desc`（最后修改的页面排第一）。</p><p>用逗号隔开多个属性，并按想要应用属性的顺序列出它们。 属性名区分大小写。</p> |  
-| search | <p>`search=cell div`</p><p>仅适用于消费者笔记本。</p><p>要在页面标题、页面正文、图像替换文字、图像 OCR 文本中搜索的术语或短语。默认情况下，搜索查询返回按相关性排序的结果。</p><p>OneNote 使用必应全文搜索来支持短语搜索、词干分解、拼写宽容、相关性和排名、断字、多语言以及其他全文搜索功能。 搜索字符串不区分大小写。</p><p>仅适用于用户拥有的笔记本中的页面。 已编入索引的内容具有私密性，只有所有者才能访问。 受密码保护的页面未编入索引。 仅适用于 `pages` 终结点。</p> |  
+| orderby | <p>`orderby=title,createdTime desc`</p><p>作为排序依据的 [属性](#onenote-entity-properties)，具有可选的 **asc**（默认）或 **desc** 的排序顺序。您可以按请求集合中实体的任意属性进行排序。</p><p>笔记本、节组和节的默认排序顺序为 `name asc`，页面的默认排序顺序为 `lastModifiedTime desc`（最后修改的页面排第一）。</p><p>用逗号隔开多个属性，并按您想要应用属性的顺序列出它们。属性名称区分大小写。</p> |  
+| search | <p>`search=cell div`</p><p>仅适用于消费者笔记本。</p><p>要在页面标题、页面正文、图像替换文字、图像 OCR 文本中搜索的术语或短语。默认情况下，搜索查询返回按相关性排序的结果。</p><p>OneNote 使用必应全文搜索来支持短语搜索、词干分解、拼写宽容、相关性和排名、断字、多语言以及其他全文搜索功能。搜索字符串不区分大小写。</p><p>仅适用于用户拥有的笔记本中的页面。 已编入索引的内容具有私密性，只有所有者才能访问。 受密码保护的页面未编入索引。 仅适用于 `pages` 终结点。</p> |  
 | select | <p>`select=id,title`</p><p>要返回的[属性](#onenote-entity-properties)。 可用于单个实体或集合。 使用逗号分隔多个属性。 属性名区分大小写。</p> |  
-| skip | <p>`skip=10`</p><p>结果集中要跳过的条目数量。 通常用于对结果分页。</p> |  
-| top | <p>`top=50`</p><p>结果集中要返回的条目数量，最多可达 100 个条目。 默认值为 20。</p> |  
+| skip | <p>`skip=10`</p><p>结果集中要跳过的条目数量。通常用于分页结果。</p> |  
+| top | <p>`top=50`</p><p>结果集中要返回的条目数量，最多可达 100 个条目。默认值为 20。</p> |  
 
 Microsoft Graph 还提供 `pagelevel` 查询字符串选项，可使用该选项获取父节内页面的级别和顺序。 仅适用于特定节中页面的查询或特定页面中的查询。 
 
@@ -661,7 +661,7 @@ not | `not contains(tolower(title),'school')` |
 | 成功代码 | 200 HTTP 状态代码。 |  
 | 响应正文 | JSON 格式、页面 HTML 或文件资源二进制数据中的实体或实体集的 OData 表示形式。  |  
 | 错误 | 如果请求失败，API 将在响应正文的 **\@api.diagnostics** 对象中返回 [错误](onenote-error-codes.md)。 |  
-| X-CorrelationId 标头 | 唯一标识该请求的 GUID。 在与 Microsoft 支持部门协作来解决问题时，可以使用此值和日期标头值。 |  
+| X-CorrelationId 标头 | 唯一标识请求的 GUID。在与 Microsoft 支持部门协作来解决问题时，可以使用此值和日期标头值。 |  
 
 
 <a name="root-url"></a>

@@ -1,22 +1,22 @@
 ---
 title: servicePlanInfo 资源类型
-description: 包含有关与订阅的 SKU 关联的服务计划的信息。 subscribedSku 实体的 **servicePlans** 属性是 **servicePlanInfo 的集合**。
+description: 包含与订阅的 SKU 相关的服务计划有关的信息。**subscribedSku** 实体的 servicePlans 属性是一个 **servicePlanInfo** 集合。
 localization_priority: Normal
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 68dd5a4af0b6406ef9e230e0d9ac848532db7e09
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 11ab4116f357f188e5bb99ef7a98ebc4dc7bce3edafb1508dd9b4d1b9c42c69b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721787"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177973"
 ---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo 资源类型
 
 命名空间：microsoft.graph
 
-包含有关与订阅的 SKU 关联的服务计划的信息。 [subscribedSku](subscribedsku.md)实体的 **servicePlans** 属性是 **servicePlanInfo 的集合**。
+包含与订阅的 SKU 相关的服务计划有关的信息。**subscribedSku** 实体的 [servicePlans](subscribedsku.md) 属性是一个 **servicePlanInfo** 集合。
 
 
 ## <a name="properties"></a>属性

@@ -5,12 +5,12 @@ description: 表示 SharePoint 列表中的项目。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7e9e7b00ee87127b7844d2d7208d63c8e4fb6af5
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 9fdce383b28ee71a682e920011787b191012e1a52ef013aa585fac244dad2c04
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130021"
 ---
 # <a name="listitem-resource"></a>listItem 资源
 
@@ -62,11 +62,11 @@ SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveIte
 |:---------------------|:------------------|:----------------------------------
 | id                   | string            | 项的唯一标识符。只读。
 | name                 | string            | 项目名称/标题。
-| createdBy            | [identitySet][]   | 此项的创建者的标识。 只读。
+| createdBy            | [identitySet][]   | 此项的创建者的标识。只读。
 | createdDateTime      | DateTimeOffset    | 创建项目的日期和时间。只读。
 | 说明          | string            | 项目的描述性文本。
 | eTag                 | 字符串            | 该项目的 ETag。只读。                                                          |
-| lastModifiedBy       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
+| lastModifiedBy       | [identitySet][]   | 此项最后一个修饰符的标识。只读。
 | lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。
 | sharepointIds        | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
@@ -104,7 +104,7 @@ SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveIte
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
+  "@odata.type&quot;: &quot;microsoft.graph.listItem"
 }-->
 
 ```json
@@ -129,7 +129,7 @@ SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveIte
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
+  "webUrl&quot;: &quot;url"
 }
 ```
 
@@ -140,7 +140,7 @@ SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveIte
   "section": "documentation",
   "tocPath": "Resources/listItem",
   "tocBookmarks": {
-    "ListItem": "#"
+    "ListItem&quot;: &quot;#"
   }
 } -->
 

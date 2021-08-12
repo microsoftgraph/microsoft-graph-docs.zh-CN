@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Priority
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: a6bbc9b2b6be0d3d61655160bc935ed498d6cdf7
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: e5e28602f2a8c3b057984af75d06e5f8cbde20de822f39dca146ccc1e6dc981e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189175"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>使用微软待办 API
 

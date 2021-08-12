@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af4bb76068a446dc1d0f306673a5a7af66b5849d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5368e166b08c7a4ba87a60b34f9ddf6703e5873774d765a942259e2dbe4b5572
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52743026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238074"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52743026"
 应用配置密钥类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |stringType|0|尚未记录|
 |integerType|1|尚未记录|

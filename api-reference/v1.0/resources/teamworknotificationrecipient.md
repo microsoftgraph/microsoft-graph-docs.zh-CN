@@ -1,22 +1,22 @@
 ---
 title: teamworkNotificationRecipient 资源类型
-description: 表示在 Microsoft Teams 活动源中发送的通知的收件人。
+description: 表示在活动源中发送的通知Microsoft Teams收件人。
 author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1706b3744566c527dba874de4cea53cf07464d00
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 77ee747b57df3c0a2360b8d2011b94710dee62ca1f2d15730e36064f2458c14e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182348"
 ---
 # <a name="teamworknotificationrecipient-resource-type"></a>teamworkNotificationRecipient 资源类型
 
 命名空间：microsoft.graph
 
-表示在 Microsoft Teams 活动源中发送的通知的收件人。 另请参阅 [aadUserNotificationRecipient](aadusernotificationrecipient.md)。
+表示在活动源中发送的通知Microsoft Teams收件人。 另请参阅 [aadUserNotificationRecipient](aadusernotificationrecipient.md)。
 
 ## <a name="properties"></a>属性
 无。

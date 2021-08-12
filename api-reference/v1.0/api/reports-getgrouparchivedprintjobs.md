@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 2f4a5861e55377548244971edb4c4e02056b55e9
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 649dfc0dc7933bc8610620c8880c24141e35066e8e851f8133776eedeac1f349
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155398"
 ---
 # <a name="reportroot-getgrouparchivedprintjobs"></a>reportRoot： getGroupArchivedPrintJobs
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "50517244"
 
 获取特定组的已存档打印作业的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -42,11 +42,11 @@ GET /reports/getGroupArchivedPrintJobs
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数     | 类型                 | 是否必需？ | Description                                                          |
+| 参数     | 类型                 | 是否必需？ | 说明                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `groupId`     | `Edm.String`         | 是       | 要返回其数据的组的 ID。                              |
-| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期 (包含) 数据时间段的包含日期。 |
-| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含) 数据的时间段的包含日期。   |
+| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期包含 (数据) 时间段的包含时间（含这两者）。 |
+| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期包括 (数据) 时间段的包含时间（含这两者）。   |
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -58,7 +58,7 @@ GET /reports/getGroupArchivedPrintJobs
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回响应 `200 OK` 代码和 [archivedPrintJob](../resources/archivedprintjob.md) 集合。
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) 集合。
 
 ## <a name="examples"></a>示例
 

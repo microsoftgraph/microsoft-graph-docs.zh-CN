@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 777bdb87eb47b624c67b06c0a7065a2fe07c6103
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ee332ae68b48e1cb53ebe33d0f357c41ed9178e5463bc31dd5b8ea7a9ad57fdc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758720"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185234"
 ---
 # <a name="delete-deviceinstallstate"></a>删除 deviceInstallState
 

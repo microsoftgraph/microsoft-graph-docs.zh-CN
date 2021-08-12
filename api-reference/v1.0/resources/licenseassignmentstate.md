@@ -1,38 +1,38 @@
 ---
 title: licenseAssignmentState 资源类型
-description: User 实体的 **licenseAssignmentStates** 属性是 **licenseAssignmentState** 对象的集合。 它提供了对用户的许可证分配的详细信息。
+description: user 实体的 **licenseAssignmentStates** 属性是 **licenseAssignmentState** 对象的集合。 它提供有关向用户分配的许可证的详细信息。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b26ab4be63cbb40929dbea3f40522ee4c6b7ff70
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 64acc65a2316e017165feb6aad21c6cf788a8bed87fbb8d0479152960f6fd824
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174995"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState 资源类型
 
 命名空间：microsoft.graph
 
 
-[User](user.md)实体的**LicenseAssignmentStates**属性是**licenseAssignmentState**对象的集合。 它提供了对用户的许可证分配的详细信息。 详细信息包括以下信息：  
+user 实体的 **licenseAssignmentStates** 属性是 **licenseAssignmentState** 对象的集合。 [](user.md) 它提供有关向用户分配的许可证的详细信息。 详细信息包括如下信息：  
 
-- 为用户禁用了哪些计划
-- 是否将许可证直接分配给用户或从组继承。
+- 为用户禁用的计划
+- 许可证是直接分配给用户还是从组继承
 - 工作分配的当前状态
-- 如果工作分配状态为错误，则为错误详细信息 
+- 工作分配状态为"错误"时的错误详细信息 
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignedByGroup|string|分配此许可证的组的 id。 如果分配是直接分配的许可证，则此字段将为 Null。 只读。|
-|disabledPlans|集合（字符串）|此工作分配中禁用的服务计划。 只读。|
-|error|字符串|许可证分配失败错误。 如果许可证分配成功，则此字段将为 Null。 只读。 可能的值： `CountViolation` 、、、、 `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` 和 `Others` 。 有关如何识别和解决许可证分配错误的详细信息，请参阅 [此处](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
-|skuId|字符串|此 SKU 的唯一标识符。 只读。|
-|state|String|指示此工作分配的当前状态。 只读。 可能的值： Active、ActiveWithError、Disabled 和 Error。|
+|assignedByGroup|string|分配此许可证的组的 ID。 如果分配是直接分配的许可证，则此字段将为 Null。 只读。|
+|disabledPlans|集合（字符串）|在此分配中禁用的服务计划。 只读。|
+|error|String|许可证分配失败错误。 如果许可证分配成功，则此字段将为 Null。 只读。 可能的值 `CountViolation` `MutuallyExclusiveViolation` `DependencyViolation` ：、、、、 `ProhibitedInUsageLocationViolation` `UniquenessViolation` 和 `Others` 。 若要详细了解如何识别和解决许可证分配错误，请参阅 [此处](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
+|skuId|String|此 SKU 的唯一标识符。 只读。|
+|state|String|指示此工作分配的当前状态。 只读。 可能的值：Active、ActiveWithError、Disabled 和 Error。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

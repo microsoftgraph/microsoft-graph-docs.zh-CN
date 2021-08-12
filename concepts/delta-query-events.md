@@ -4,12 +4,12 @@ description: '日历视图是默认日历中特定日期/时间范围内的事�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3720cf3fc263ba3cf9a63b2a5fbd3ad19480d555
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 78a27c86623f5a608894bcbe69849b0568b18c1d0423adb046e887d7f2204519
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177838"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>获取日历视图中事件的增量更改 
 
@@ -17,15 +17,15 @@ ms.locfileid: "46598554"
 
 > **注意** 前者（对日历中的事件进行增量更改，而不受固定的开始日期和结束日期范围的约束）的功能目前仅在 beta 版中可用。 有关更多信息，请参阅 [delta](/graph/api/event-delta?view=graph-rest-beta) 函数。
 
-日历视图是某个日期/递减范围 (../me/calendarview) 内来自默认日历、用户的其他某个指定日历或者组日历的事件集合。 返回的事件可能包括定期系列事件的单个实例、发生次数和例外情况。 借助增量数据，可以维护和同步用户事件的本地存储，而无需每次都从服务器提取整组用户事件。
+日历视图是一个日期/时间范围内事件的集合 (.../me/calendarview)，这些事件来自默认日历或用户的其他指定日历，或来自组日历。返回的事件可能包括单一的实例，或重复发生系列的发生次数和例外情况。Delta 数据使你能够维护和同步一个用户事件的本地存储，而不必每次都从服务器上获取用户的整个事件集。
 
 增量查询既支持可检索指定日历视图中的所有事件的完全同步，也支持可检索自上次同步后日历视图中发生变化的事件的增量同步。通常情况下，开始时会执行一次完全同步，随后会定期获取相应日历视图的增量更改。 
 
 ## <a name="track-event-changes-in-a-calendar-view"></a>跟踪日历视图中的事件更改
 
-在日历视图中对事件执行增量查询专门针对你指定的日历和日期/时间范围。 若要跟踪多个日历中的更改，需要单独跟踪各个日历。 
+日历视图中事件的 Delta 查询是针对指定的日历和日期/时间范围的。若要跟踪多个日历的变化，则需要单独跟踪每个日历。 
 
-跟踪日历视图中的事件更改通常需要使用 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数按轮发出一个或多个 GET 请求。 初始 GET 请求非常类似于[列出 calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0)，区别在于要添加 **delta** 函数。 下面是登录用户的默认日历中，“日历”视图的初始 GET 增量请求：
+跟踪日历视图中的事件更改通常需要使用 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数按轮发出一个或多个 GET 请求。 初始 GET 请求非常类似于 [列出 calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0)，区别在于要添加 **delta** 函数。 下面是登录用户的默认日历中，“日历”视图的初始 GET 增量请求：
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -36,7 +36,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 - `nextLink`（包含具有 **delta** 函数调用和 _skipToken_ 的 URL），或 
 - `deltaLink`（包含具有 **delta** 函数调用和 _deltaToken_ 的 URL）。
 
-这些令牌是[状态令牌](delta-query-overview.md#state-tokens)，负责对 _startDateTime_、_endDateTime_ 参数以及初始增量查询 GET 请求中的其他任何查询参数进行编码。 在后续请求中，无需包括这些参数，因为它们已在令牌中编码。
+这些令牌是 [状态令牌](delta-query-overview.md#state-tokens)，负责对 _startDateTime_、_endDateTime_ 参数以及初始增量查询 GET 请求中的其他任何查询参数进行编码。 在后续请求中，无需包括这些参数，因为它们已在令牌中编码。
 
 状态令牌对客户端完全不透明。若要继续一轮事件更改跟踪，只需将最后一个 GET 请求返回的 `nextLink` 或 `deltaLink` URL 复制并应用到同一日历视图的下一个 **delta** 函数调用即可。响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `deltaLink` URL，并在开始下一轮时使用。
 
@@ -68,7 +68,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 ### <a name="step-1-sample-initial-request"></a>第 1 步：示例第一个请求
 
-在该示例中，由于登录用户的默认日历中的指定日历视图为首次同步，因此第一个同步请求不含任何状态令牌。 这一轮将返回此日历视图中的所有事件。
+在该示例中，是第一次同步登录用户默认日历中的指定日历视图，所以初始同步请求不包括任何状态标记。这一轮将返回该日历视图中的所有事件。
 
 第一个请求指定以下内容：
 

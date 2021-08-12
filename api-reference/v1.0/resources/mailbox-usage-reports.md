@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sarahwxy
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: d460f2c72878065abdd1df2fa58dc0eb8f4d411b
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 0f7f516fcfd1c018f53d0d34cb4c0374cf93b44d08e59f1ab0e0d3471166dfbc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223359"
 ---
 # <a name="mailbox-usage-reports"></a>邮箱使用情况报表
 

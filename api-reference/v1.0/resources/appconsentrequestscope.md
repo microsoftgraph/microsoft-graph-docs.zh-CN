@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 644ce45997d155a8c3a0bc893af910301e5ba22c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: d0ad4b765d37192986bfafa3330b916cd49c2545e9888f14f2bd8e242df6018d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141838"
 ---
 # <a name="appconsentrequestscope-resource-type"></a>appConsentRequestScope 资源类型
 

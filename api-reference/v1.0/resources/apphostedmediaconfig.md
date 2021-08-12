@@ -1,28 +1,28 @@
 ---
 title: appHostedMediaConfig 资源类型
-description: 由应用程序托管的媒体堆栈。
+description: 应用程序托管的媒体堆栈。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f3d4f2eda3d3fa1a7e8fe206190d30ec79179a00
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5f40e1a29969f20046ba8f4439177b7a1b8209c2db36b14ac388b16639bbc4a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041615"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205953"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>appHostedMediaConfig 资源类型
 
 命名空间：microsoft.graph
 
-由应用程序托管的媒体堆栈。
+应用程序托管的媒体堆栈。
 
 ## <a name="properties"></a>属性
 
 | 属性                          | 类型    | 说明                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| 块                              | String  | 由智能媒体代理生成的媒体配置 blob。    |
+| blob                              | String  | 由智能媒体代理生成的媒体配置 blob。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

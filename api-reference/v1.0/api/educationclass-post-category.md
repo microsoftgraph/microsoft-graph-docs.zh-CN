@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b6a2c92740db75350b5c1cefcd35c2b50723b55c
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 3677ad2537eebd5b305ed69e147e42b6a0a84ad6f4f00a3d4f2ae8cd50ba66d1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130938"
 ---
 # <a name="create-educationcategory"></a>创建 educationCategory
 

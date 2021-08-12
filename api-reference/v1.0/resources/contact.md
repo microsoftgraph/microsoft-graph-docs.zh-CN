@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 91ce5d0c21d0b9dc700e2669efe881488d79257d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 2b07870ca74ed077030b0159c8892d98a3f398ea12bfd325f382b7c8134dc429
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235693"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -49,7 +49,7 @@ ms.locfileid: "50721997"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |assistantName|String|联系人助理的姓名。|
-|birthday|DateTimeOffset|联系人的生日。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|联系人的公司地址。|
 |businessHomePage|String|联系人的公司主页。|
 |businessPhones|String collection|联系人的公司电话号码。|
@@ -57,7 +57,7 @@ ms.locfileid: "50721997"
 |changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |children|String collection|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
-|createdDateTime|DateTimeOffset|创建联系人的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |department|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。 可以在[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在[更新](../api/contact-update.md)操作中将其作为 displayName。|
 |emailAddresses|[EmailAddress](emailaddress.md) 集合|联系人的电子邮件地址。|
@@ -70,7 +70,7 @@ ms.locfileid: "50721997"
 |imAddresses|String collection|联系人的即时消息 (IM) 地址。|
 |initials|String|联系人的姓名缩写。|
 |jobTitle|String|联系人的职务。|
-|lastModifiedDateTime|DateTimeOffset|修改联系人的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|lastModifiedDateTime|DateTimeOffset|修改联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |manager|String|联系人经理的姓名。
 |middleName|String|联系人的中间名。|
 |mobilePhone|String|联系人的移动电话号码。|

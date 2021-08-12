@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: conceptualPageType
-ms.openlocfilehash: 217e3461c2f14490c0a1ffcf633b513464f1baf1
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: e10532bddb3b06c336c6283ffbc4551dce0a5c9a154206c5e4668e435aab04ea
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759487"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216530"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 

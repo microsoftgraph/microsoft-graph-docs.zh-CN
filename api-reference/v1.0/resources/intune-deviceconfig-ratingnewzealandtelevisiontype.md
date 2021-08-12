@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fac3907b8e1e7aff85a5b16462b8707a9bb89afa
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9ffdd6fe331278727a1c9b952b62b5efab22d3895ba4866315ddbd8db0eec744
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752355"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223485"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752355"
 新西兰的电视内容分级标签
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视显示内容|
 |allBlocked|1|不允许任何电视展示内容|

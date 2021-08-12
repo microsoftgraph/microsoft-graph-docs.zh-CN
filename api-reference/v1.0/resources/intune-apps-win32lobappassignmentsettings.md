@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d76e189d684999e3922b625def26d4d0cfcb6a3e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a21b5f49c66da3e4334941200c06275516ff4c45895f572608abb4a5d0c87b0c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169632"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>win32LobAppAssignmentSettings 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "52752208"
 继承自 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |通知|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|此应用分配的通知状态。 可取值为：`showAll`、`showReboot`、`hideAll`。|
 |restartSettings|[win32LobAppRestartSettings](../resources/intune-apps-win32lobapprestartsettings.md)|要应用于此应用分配的重启设置。|

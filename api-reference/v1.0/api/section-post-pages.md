@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 90a4d8ea2ab37126540627927fa4380f9e7807b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4116ecffd4c758a76b29d85eddecb37a7299f05efd9f7a213450b887f7befc4c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175411"
 ---
 # <a name="create-page"></a>创建页面
 

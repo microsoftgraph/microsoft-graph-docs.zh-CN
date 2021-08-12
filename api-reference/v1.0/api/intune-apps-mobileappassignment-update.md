@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cdc8e0145a782cc9a5eb87756542e8a7c5efcfb7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6d9d52163f9a0a7bc271ccaa391553851e02152fbd6c279929b7276bf887b1c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54200045"
 ---
 # <a name="update-mobileappassignment"></a>更新 mobileAppAssignment
 

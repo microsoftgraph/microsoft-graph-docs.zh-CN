@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 98b75f278e33f56cf726a18c266000b06d817a6f
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: a8cd51524647c3fc34be1619cc0c61e433e4031ab805c4269e309e0502e1fae6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225669"
 ---
 # <a name="windows-updates-api-overview"></a>Windows更新 API 概述
 
@@ -30,7 +30,7 @@ IT 专业人员和管理工具供应商都可以使用部署服务：
 
 若要使用部署服务，组织必须拥有以下订阅之一：
 * Windows 10 企业版E3 或 E5 (包含在 Microsoft 365 F3、E3 或 E5) 
-* Windows 10 教育版A3 或 A5 (A3 或 A5 Microsoft 365中) 
+* Windows 10 教育版A3 或 A5 (包含在 Microsoft 365 A3 或 A5) 
 * Windows虚拟桌面访问 E3 或 E5
 * Microsoft 365 商业高级版
 
@@ -52,7 +52,7 @@ IT 专业人员和管理工具供应商都可以使用部署服务：
 详细了解部署服务：
 * [软件更新](windowsupdates-software-updates.md)
 * [部署](windowsupdates-deployments.md)
-* [计划部署](windowsupdates-schedule-deployment.md)
+* [安排部署](windowsupdates-schedule-deployment.md)
 
 ## <a name="immediately-deploy-an-update-when-critical-needs-arise"></a>出现关键需求时立即部署更新
 

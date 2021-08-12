@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f257cbce968a97b692993f51faf6794dd0210ae1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3a7ecf285d68f3f130d45d7daf2ee2b53cf268d6d4187f84fd403dd7c0bac8f4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247149"
 ---
 # <a name="create-localizednotificationmessage"></a>创建 localizedNotificationMessage
 

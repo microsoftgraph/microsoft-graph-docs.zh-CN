@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ecdca46463b608b3aa2cacd55c4f4cbe00afe0c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b9275a8579186e0d41bfa5df641456365f6a4147217d5587d82a25cc650319ce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752986"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250495"
 ---
 # <a name="updatedeviceproperties-action"></a>updateDeviceProperties 操作
 

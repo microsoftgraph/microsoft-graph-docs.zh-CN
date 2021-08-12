@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 087ce45bc618667ec66dc6d03618d41919248515
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 919a314ba92d324abec407f50a0c6793576b53a3af943a48769519095f76464b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52745728"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209257"
 ---
 # <a name="get-manageddeviceoverview"></a>获取 managedDeviceOverview
 

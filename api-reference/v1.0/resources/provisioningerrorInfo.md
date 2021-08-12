@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a682e176b40d58e2dc0a794b58b8561f8948d5a5
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: de8804ab2ae1e1e8f9516e25c0f0a5522d86a0ff2c3722fb9c10e47bc575869c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205196"
 ---
 # <a name="provisioningerrorinfo-resource-type"></a>provisioningErrorInfo 资源类型
 
@@ -21,13 +21,13 @@ ms.locfileid: "52547153"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|additionalDetails|字符串|出现错误时的其他详细信息。|
+|additionalDetails|String|出现错误时的其他详细信息。|
 |errorCategory|provisioningStatusErrorCategory|对错误代码进行分类。 可能的值是 `failure` `nonServiceFailure` `success` 、、、、 `unknownFutureValue`|
-|errorCode|String|发生任何错误时的唯一错误代码。 [了解更多](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
-|reason|字符串|总结状态并说明状态发生的原因。|
-|recommendedAction|字符串|提供相应错误的解决方法。|
+|errorCode|String|发生任何错误时的唯一错误代码。 [了解详细信息](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|reason|String|总结状态并说明状态发生的原因。|
+|recommendedAction|String|提供相应错误的解决方法。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

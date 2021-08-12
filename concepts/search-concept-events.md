@@ -1,15 +1,15 @@
 ---
-title: 在 Microsoft Graph 中使用 Microsoft Search API 搜索日历事件
-description: 您可以在用户自己的日历中进行搜索。
+title: 使用 Microsoft Microsoft 搜索中的 Graph API 搜索日历事件
+description: 您可以在用户自己的日历中搜索。
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: bedad2dcf94df6024bcba7f0760dbe5c1cf97c18
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 277c46e6298aa532d300b23fcba707c678e38e035007d2ef63fa249951afa633
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49521906"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171971"
 ---
 # <a name="use-the-microsoft-search-api-to-search-calendar-events"></a>使用 Microsoft 搜索 API 搜索日历事件
 
@@ -21,7 +21,7 @@ ms.locfileid: "49521906"
 
 ### <a name="request"></a>请求
 
-本示例将在用户的日历中搜索关键字 "contoso"，并返回最大25个结果。
+本示例在用户的日历中搜索关键字"contoso"，最多返回 25 个结果。
 
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
@@ -96,9 +96,9 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-- 您只能访问登录用户自己的邮箱。 不支持搜索委派的邮箱。
-- 对于事件， [searchHitsContainer](/graph/api/resources/searchhitscontainer)类型的 **total** 属性包含页面上的结果数，而不是匹配结果的总数。
-- 事件不支持排序结果。 请求中的 sort 子句将在响应中返回错误的请求错误代码。
+- 只能访问登录用户自己的邮箱。 不支持搜索委派邮箱。
+- 对于事件[，searchHitsContainer](/graph/api/resources/searchhitscontainer)类型的 total 属性包含页面上的结果数，而不是匹配结果的总数。 
+- 事件不支持对结果进行排序。 请求中的 sort 子句将在响应中返回错误请求错误代码。
 
 ## <a name="next-steps"></a>后续步骤
 

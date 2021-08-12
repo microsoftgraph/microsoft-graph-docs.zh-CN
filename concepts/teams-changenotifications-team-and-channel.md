@@ -5,12 +5,12 @@ author: anandab
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 44f07661309da100ef65cf691ccfe30261467d52
-ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
+ms.openlocfilehash: 8d26a1c291fb7fb6120ceb360ca78c780f7f950b426f8e49b4a01787fc754a89
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53025017"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249053"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>使用 Microsoft Graph 获取团队和频道的更改通知
 

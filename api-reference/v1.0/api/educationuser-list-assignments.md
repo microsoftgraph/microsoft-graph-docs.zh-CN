@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4d64a865bf6554cfb9c1a7e2abea812e6ba0b8e4
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 2fe8ef64558eec89f7e31b47f7625b696bf7e959064f0a135726f33a9cac44bd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197567"
 ---
 # <a name="list-assignments-of-a-user"></a>列出用户的分配
 

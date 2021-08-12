@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c49dca3637734bafafefa597a59ead5e7526f8b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c5beee4571b1781b8bd602268ee7b78faf9aca5a3f7a90bf74486d63349860fd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756959"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160315"
 ---
 # <a name="list-managedappoperations"></a>列出 managedAppOperations
 

@@ -4,12 +4,12 @@ description: q=excelstarter)。
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 0f78069ae88cfcc7ac7ab18cd17f0ace61d24631
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 60f9b32cc6f769b309d64d5661781840b878e36605e63757f04b9538f170a428
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806728"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134810"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>使用 Microsoft Graph 将数据写入 Excel 工作簿
 
@@ -17,7 +17,7 @@ Excel REST API 提供了一种简单的、独立于平台的方法将信息上�
 
 > **注意：** 这三个示例将数据写入名为 **demo.xlsx** 的 Excel 工作簿。 它们都提供了此工作簿，以便你可以将其上传到你自己的 OneDrive，不过，你也可以使用 Microsoft Graph 将文件上传到 OneDrive。 如果有意了解 REST 调用，你需要将任何类型的文件上传到你的 OneDrive 根文件夹，请参阅 [Microsoft Graph Excel REST API ASP.NET 待办事项列表示例](https://github.com/microsoftgraph/aspnet-todo-rest-sample)。
 
-这三个 Excel 入门版示例均执行相同的操作：检索登录用户的名称和地址，并将这两条信息添加到 demo.xlsx**** 工作簿中的新行。 你可以通过将信息添加到代表你想要添加的一行或多行的二维数组中来修改示例，以添加额外的行。
+这三个 Excel 入门版示例均执行相同的操作：检索登录用户的名称和地址，并将这两条信息添加到 demo.xlsx 工作簿中的新行。 你可以通过将信息添加到代表你想要添加的一行或多行的二维数组中来修改示例，以添加额外的行。
 
 ## <a name="add-a-row-or-rows-to-an-excel-workbook-with-a-single-rest-request"></a>使用单个 REST 请求将一行或多行添加到 Excel 工作簿
 

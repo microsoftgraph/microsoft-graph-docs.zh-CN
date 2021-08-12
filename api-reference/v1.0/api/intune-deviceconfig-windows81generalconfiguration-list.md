@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b85c7685c00c3a58180e8e8811eae7970a54867f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b49bc3f2ae11005b31797aea494132df376a190e28b473c654a93ac7bc9bb18f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197329"
 ---
 # <a name="list-windows81generalconfigurations"></a>列出 windows81GeneralConfigurations
 

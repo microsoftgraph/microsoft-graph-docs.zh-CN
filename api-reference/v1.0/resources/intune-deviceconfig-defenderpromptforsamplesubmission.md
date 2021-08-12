@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c2e038ab28632c790e5ffaa4f6e1ccb3b4415a5f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 880dd675b0384e7b98a7fdffb4a9a641f91e47f8b99acfcef57a8896643ea0a6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752369"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159979"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752369"
 提示用户提交示例的可能值。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义，默认值，无意图。|
 |alwaysPrompt|1|始终提示。|

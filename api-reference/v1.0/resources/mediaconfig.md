@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c838baf0a05f57ebf7f80b962d4b4d06daa06452
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a50f98b747a8a41ab4d8efecf9a7cb1d3910494041c2fb6c09185b3e1c4bcd71
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965538"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141446"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 

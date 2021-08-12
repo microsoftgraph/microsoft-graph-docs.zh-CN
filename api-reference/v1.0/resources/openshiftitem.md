@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d3e68f5cb558b67f92ed4107e8fb947cb7c300ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6c0a25ff8384b1312153cf19fa88f118aca9c9838057cba759ca60c3032a5a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152346"
 ---
 # <a name="openshiftitem-resource-type"></a>openShiftItem 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48028243"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|openSlotCount|Int32| 给定的打开班次的槽数的计数。|
+|openSlotCount|Int32| 给定打开班次的槽数计数。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
