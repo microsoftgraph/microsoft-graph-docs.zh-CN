@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c85c8237f179fd6be2add02263c9d6d040a71849
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d3204213fe70fa66cd9fac569a5c4629a414a780b65e8e8d6f238b901a4a2ec
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018303"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205820"
 ---
 # <a name="filter-resource-type"></a>筛选器资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "48018303"
 
 | 名称 | 类型   |说明|
 |:---------------|:--------|:----------|
-|条件|[WorkbookFilterCriteria](filtercriteria.md)|给定列上当前应用的筛选器。 只读。|
+|条件|[WorkbookFilterCriteria](filtercriteria.md)|给定列上当前应用的筛选器。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

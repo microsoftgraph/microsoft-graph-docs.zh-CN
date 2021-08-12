@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9c7a1eabedaafca99fc908ed1dd194751a00500
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: dc455366a64d37a887ae1e43edde7b95d3dc481b2d7925caa43c37756505a065
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752285"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155097"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752285"
 包含 Android 移动应用需要的最低操作系统的属性。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |v4_0|布尔值|版本 4.0 或更高版本。|
 |v4_0_3|布尔值|版本 4.0.3 或更高版本。|

@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 9de25fd3f9f014627b7fcb32e4a16814e82be1e3
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 5b0d34c005e1d3ea2fa40e85176506d718be9488ddc9f737b24f9d9359406a20
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896485"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169401"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 

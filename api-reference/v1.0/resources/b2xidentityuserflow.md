@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 650bd158bda9c257fc277a9b251e68a90713b7e0
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 211e727719494125641d4467798576a9859b2eda8d176ecd091d8b027c225da5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147012"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>b2xIdentityUserFlow 资源类型
 

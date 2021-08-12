@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ce65847d6ddbb0a8db0c1277e38753ecab7080e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df629e7fce25638dce64dbec6914026a36c42e8b88f98d7348832eb040afb87f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015139"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235245"
 ---
 # <a name="workbookoperationerror-resource-type"></a>workbookOperationError 资源类型
 

@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 018359ab0dd6702a2fda40bf5f0b29c639211f4a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8bb7a1d0750c6712fada9d3180280180299d85b4cd3bf0539be8b14880222f18
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719302"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182369"
 ---
 # <a name="schedulinggroup-resource-type"></a>schedulingGroup 资源类型
 
@@ -32,11 +32,11 @@ ms.locfileid: "50719302"
 |名称          |类型           |说明                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            | `string`      |**schedulingGroup** 的 ID。|
-| displayName   | `string`      | **schedulingGroup** 的显示名称。 必填。 |
-| isActive          |`bool`      | 指示在新建实体或更新现有实体时是否可以使用 `schedulingGroup`。 必需。 |
-| userIds       | `collection(string)`    |  属于 **schedulingGroup** 成员的用户 ID 的列表。 必填。 |
-| createdDateTime       |`DateTimeOffset`        |此 **schedulingGroup** 的首次创建时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
-| lastModifiedDateTime      |`DateTimeOffset`        |此 **schedulingGroup** 的最后更新时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
+| displayName   | `string`      | **schedulingGroup** 的显示名称。必需。 |
+| isActive          |`bool`      | 指示在新建实体或更新现有实体时是否可以使用 `schedulingGroup`。必需。 |
+| userIds       | `collection(string)`    |  属于 **schedulingGroup** 成员的用户 ID 的列表。必需。 |
+| createdDateTime       |`DateTimeOffset`        |首次创建此 **schedulingGroup** 的时间戳。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z` |
+| lastModifiedDateTime      |`DateTimeOffset`        |首次更新此 **schedulingGroup** 的时间戳。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z` |
 | lastModifiedBy        | [identitySet](identityset.md) |最后更新此 **schedulingGroup** 的标识。|
 
 ## <a name="json-representation"></a>JSON 表示形式

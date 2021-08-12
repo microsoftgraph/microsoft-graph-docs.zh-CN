@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: c86be5481f1642833d660f9889c00ea7025fa4e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29bbff1ab114a0f7e4f94df0ce47c8a09a37f8b13afc47f0ef98632b3d5b87c3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037645"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184527"
 ---
 # <a name="using-order-hints-in-planner"></a>使用规划器中的排序提示
 

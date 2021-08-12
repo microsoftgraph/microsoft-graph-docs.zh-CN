@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a4536607c4723a9e16d77e045e17bd151da50d36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad8cbd941b1af5a3a694be308ea2b5c0065a5e05b2f58b02c98c5e8d7bc26398
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246617"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder 资源类型
 
@@ -32,9 +32,9 @@ ms.locfileid: "48090926"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
-|id|string|表示边框标识符。 可能的值为：、、、、、、 `EdgeTop` `EdgeBottom` `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` 。 只读。|
-|sideIndex|string|指示边框的特定边的常量值。 可能的值为：、、、、、、 `EdgeTop` `EdgeBottom` `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` 。 只读。|
-|style|string|线条样式的常量之一，指定边框的线条样式。 可能的值为：、、、、、、 `None` `Continuous` `Dash` `DashDot` `DashDotDot` `Dot` `Double` `SlantDashDot` 。|
+|id|string|表示边框标识符。 可能的值是 `EdgeTop` `EdgeBottom` ：、、、、、、、。 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` 只读。|
+|sideIndex|string|指示边框的特定边的常量值。 可能的值是 `EdgeTop` `EdgeBottom` ：、、、、、、、。 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` 只读。|
+|style|string|线条样式的常量之一，指定边框的线条样式。 可能的值是 `None` `Continuous` ：、、、、、、、。 `Dash` `DashDot` `DashDotDot` `Dot` `Double` `SlantDashDot`|
 |weight|string|指定区域周围的边框的粗细。 可能的值包括 `Hairline`、`Thin`、`Medium`、`Thick`。|
 
 ## <a name="relationships"></a>关系

@@ -3,12 +3,12 @@ title: 将 Android 应用与用户通知客户端 SDK 相集成
 description: 将 Android 应用与用户通知客户端 SDK 相集成
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: c56aef1befa98c2082d3476900a8e40c4034653f
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 720991eb253a9f1a23ff0299997e99c9c24345439d2f85c897a0e758e346a79a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211703"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>将 Android 应用与用户通知客户端 SDK 相集成
 
@@ -49,7 +49,7 @@ ms.locfileid: "48288677"
 
 ![Android 应用的更新通知流](images/notifications-notification-update-android.png)
 
-请注意，流的第二部分与用于处理新传入通知的流相似。 这是设计使然 - 设计的 SDK 编程模式使应用程序客户端可以相似的方式处理所有类型的用户通知数据更改（新传入的通知、通知状态更改、已删除的通知）。  
+请注意，流程的第二部分与处理新传入通知的流程类似。这是设计使然 - 设计的 SDK 编程模式使应用程序客户端可以相似的方式处理所有类型的用户通知数据更改 (新传入的通知、通知状态更改、已删除的通知)。  
 
 该图显示了以下步骤：
 
@@ -104,7 +104,7 @@ dependencies {
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
-接着，转至你希望找到连接设备功能的活动类。 导入以下命名空间。
+接着，转至所希望找到连接设备功能的活动类。导入以下命名空间。
 
 ```java
 import com.microsoft.connecteddevices;

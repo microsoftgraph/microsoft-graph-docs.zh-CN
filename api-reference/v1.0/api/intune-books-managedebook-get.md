@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 354cfbee964449195b4cc6a4260c7effb798d25f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d03af4d5fad43262314b2f8c6055e7e298bdb6cef6f293d98cbb25ebe94f4526
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758468"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252589"
 ---
 # <a name="get-managedebook"></a>获取 managedEBook
 

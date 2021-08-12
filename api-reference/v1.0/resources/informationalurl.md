@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d249c150870a3a7149b92ad7aab55a84c23896dd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e0c60cdde2d636321f3777b4b41bdf11bfe1da69d3303169f4fce1a3a71b3acc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178386"
 ---
 # <a name="informationalurl-resource-type"></a>informationalUrl 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "50132102"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|logoUrl|String|应用程序徽标的 CDN URL，只读。|
-|marketingUrl|String| 指向应用程序的营销页面的链接。 例如，https://www.contoso.com/app/marketing |
+|logoUrl|String|CDN指向应用程序徽标的 URL，只读。|
+|marketingUrl|String| 链接到应用程序的营销页面。 例如，https://www.contoso.com/app/marketing |
 |privacyStatementUrl|String| 指向应用程序隐私声明的链接。 例如，https://www.contoso.com/app/privacy |
-|supportUrl|String| 指向应用程序的支持页的链接。 例如，https://www.contoso.com/app/support |
+|supportUrl|String| 链接到应用程序的支持页面。 例如，https://www.contoso.com/app/support |
 |termsOfServiceUrl|String| 指向应用程序的服务声明条款的链接。 例如，https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>JSON 表示形式

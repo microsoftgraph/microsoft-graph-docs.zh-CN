@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bdcdf2e01dc73599b3fb63abcaa8e8844b79bcde
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: c70433fe800c38b139b5f9f6ad050ab06254f067674cc203e592c82cb51b8a59
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249207"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
 

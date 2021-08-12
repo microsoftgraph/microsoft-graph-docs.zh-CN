@@ -4,18 +4,18 @@ description: 订阅更改通知的应用可能会删除其订阅并错过一些�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bf870eecce08d61b6ad80ce774ed2b97af3ce3b2
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 0f0fd13d70089ddbb378b1baf97c01e1240bb36366680bc009d3f6d6a9f7b952
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921688"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159650"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>减少缺失订阅和更改通知
 
 订阅更改通知的应用可能会删除其订阅并错过一些更改通知。 应用程序应实现逻辑以进行检测并恢复丢失的内容，以及恢复连续更改通知流程。
 
-某些事件可能导致订阅被删除。 这些事件包括：
+某些事件可能导致订阅被删除。这些事件包括:
 
 - 用户的密码已重置
 - 用户的设备不合规
@@ -153,7 +153,7 @@ Content-Type: application/json
 ### <a name="actions-to-take"></a>要采取的操作
 
 1. 通过使用 `202 - Accepted` 来响应 POST 调用，[确认](webhooks.md#change-notifications)收到生命周期通知。
-    - 如果忽略这些信号，则无需执行其他任何操作。 或者：
+    - 如果忽略这些信号，则无需执行其他任何操作。否则:
 2. [验证](webhooks.md#change-notifications)生命周期通知的真实性。
 3. 执行资源的完整数据重新同步，以标识未作为通知发送的更改。 
 
@@ -177,12 +177,12 @@ Content-Type: application/json
     请注意，更改通知流可能会持续一段时间，为你提供额外的响应时间。 但是更改通知传递将最终暂停，直至执行了所需操作。
 
 3. 采用以下两种方法之一来响应此生命周期通知：
-    - 重新授权订阅。 这不会延长订阅的到期日期。
-    - 续订订阅。 这将重新授权并延长到期日期。
+    - 重新授权订阅。这不会延长订阅的到期日期。
+    - 续订订阅。这会重新授权并延长到期日期。
 
     注意：两项操作都要求提供有效的身份验证令牌，类似于[新建订阅](webhooks.md#creating-a-subscription)或[到期前续订订阅](webhooks.md#renewing-a-subscription)。
 
-4. 如果成功重新授权或续订订阅，更改通知将继续。 否则，更改通知保持暂停。
+4. 如果成功重新授权或续订订阅，更改通知将继续。否则，更改通知将保持暂停。
 
 ### <a name="reauthorizationrequired-notification-example"></a>reauthorizationRequired 通知示例
 
@@ -252,11 +252,11 @@ Content-Type: application/json
 
 将来，Microsoft Graph 将添加更多类型的订阅生命周期通知。 它们将被发布到相同的终结点：**lifecycleNotificationUrl**，但是它们在 **lifecycleEvent** 下将具有不同的值，并且可能包含稍微不同的模式和属性，这些模式和属性特定于将为其发布的方案。
 
-你应该以前瞻性的方式实现代码，以便在 Microsoft Graph 引入新类型的生命周期通知时不会中断。 建议使用以下方法：
+你应该以前瞻性的方式实现代码，以便在 Microsoft Graph 引入新类型的生命周期通知时不会出错。建议使用以下方法:
 
 1. 使用 **lifecycleEvent** 属性将每个生命周期通知显式标识为你支持的事件。 例如，查找 `"lifecycleEvent": "subscriptionRemoved"` 属性标识特定事件并处理它。
 
-2. 注意有关新方案的生命周期通知公告。 将来可能会有更多类型的生命周期通知。
+2. 请留意新方案的通知公告。将来可能会有更多类型的生命周期通知。
 
 3. 在你的应用中，忽略应用无法识别的任何生命周期通知，并记录它们以获得认知。
 

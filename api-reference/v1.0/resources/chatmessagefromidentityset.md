@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 30b8c8add62c94ff16fe5e560a78ec5c9c95627d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 58f5654dc8019950134c25cdc50529b29032d8870462d46a46481b489f4ba15a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211075"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192577"
 ---
 # <a name="chatmessagefromidentityset-resource-type"></a>chatMessageFromIdentitySet 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "53211075"
 |:---|:---|:---|
 |application|[Identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 如果存在，表示应用程序 (例如，自动程序) 发送消息。|
 |设备|[identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 未使用。|
-|user|[identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 如果存在，表示发送消息的用户。|
+|用户|[identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 如果存在，表示发送消息的用户。|
 
 ## <a name="relationships"></a>关系
 无。

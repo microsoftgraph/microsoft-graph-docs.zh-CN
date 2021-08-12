@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 880ca55e273c1bcaccb494eb3583103496f890ab
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: eba7ef5b7251712da0c91ecc9f006bbf3e1c5e80eaa86c1ea53942e815c9df4b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962418"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124001"
 ---
 # <a name="toneinfo-resource-type"></a>toneInfo 资源类型
 

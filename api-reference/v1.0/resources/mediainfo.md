@@ -1,28 +1,28 @@
 ---
 title: mediaInfo 资源类型
-description: 在提示操作中使用的媒体信息。
+description: 提示操作中使用的媒体信息。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8e2f5a0d59f06449d122f4ca2db582afa4da9c39
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d3a03604a608963c3d5ead22b523f0b8ce3d0979aa34666f4470bad5b61fad1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141425"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 
 命名空间：microsoft.graph
 
-在提示操作中使用的媒体信息。
+提示操作中使用的媒体信息。
 
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                      |
 |:---------------|:--------|:---------------------------------|
-| resourceId     | String  | 可选。 用于唯一标识资源。 如果传入，则会将提示 uri 作为密钥缓存在此 resourceId 中。 |
-| url            | String  | 将播放的提示的路径。 目前仅支持 ( .wav) 格式、单通道、16位样本以及 16000 (16KHz) 采样速率。 |
+| resourceId     | String  | 可选。 用于唯一标识资源。 如果传入，提示 uri 将针对此 resourceId 缓存为密钥。 |
+| uri            | String  | 将播放的提示的路径。 当前仅支持 Wave 文件 (.wav) 格式、单通道、16 位样本，采样率为 16，000 (16KHz) 。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

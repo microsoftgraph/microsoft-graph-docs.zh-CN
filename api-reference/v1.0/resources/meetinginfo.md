@@ -1,24 +1,24 @@
 ---
 title: meetingInfo 资源类型
-description: 指定用于创建或加入会议的会议信息。
+description: 为创建或加入会议而指定的会议信息。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cb79cae4f413e3d027b8dbbcccc621ba9b3b8233
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab866ada9fa4b886cbd90cb999132ff13b48d74437f11710a43aee31ba7857fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020543"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126408"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo 资源类型
 
 命名空间：microsoft.graph
 
-这是一个包含会议特定信息的抽象类。
+这是包含会议特定信息的抽象类。
  
-若要加入现有会议，必须将 [organizerMeetingInfo](organizermeetinginfo.md) 与 [chatInfo](./chatinfo.md)或仅指定 [tokenMeetingInfo](tokenmeetinginfo.md)一起指定。
+若要加入现有会议，必须将 [organizerMeetingInfo](organizermeetinginfo.md) 与 [chatInfo](./chatinfo.md)结合使用，或仅指定 [tokenMeetingInfo](tokenmeetinginfo.md)。
 
 
 ## <a name="derived-types"></a>派生类型
@@ -26,7 +26,7 @@ ms.locfileid: "48020543"
 | 类型                                                 | 说明                                                         |
 |:-----------------------------------------------------|:--------------------------------------------------------------------|
 | [organizerMeetingInfo](./organizermeetinginfo.md)    | 有关会议组织者的详细信息                          |
-| [tokenMeetingInfo](tokenmeetinginfo.md)              | 包含有关会议的信息的加密令牌  |
+| [tokenMeetingInfo](tokenmeetinginfo.md)              | 包含有关会议信息的加密令牌  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

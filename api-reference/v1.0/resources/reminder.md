@@ -1,27 +1,27 @@
 ---
 title: 提醒资源类型
-description: 用户日历中的事件提醒。
+description: 用户日历中事件的提醒。
 localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4e5343299e424d299328ec531ed7c3a52fbc4be2
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 8a60e6eb0ebdd91540fafc5c579ec6992428bd13fc2edae8668f5878205c54aa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184499"
 ---
 # <a name="reminder-resource-type"></a>提醒资源类型
 
 命名空间：microsoft.graph
 
-用户[日历](calendar.md)中的[事件](event.md)提醒。
+用户日历[中事件的](event.md)[提醒](calendar.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|changeKey|String|标识提醒的版本。每次提醒更改时， **changeKey** 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
+|changeKey|String|标识提醒的版本。每次提醒更改时，**changeKey** 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。|
 |eventId|String|事件的唯一 ID。只读。|
 |eventLocation|[位置](location.md)|事件的位置。|

@@ -1,30 +1,30 @@
 ---
 title: tokenMeetingInfo 资源类型
-description: TokenMeetingInfo 类型。
+description: tokenMeetingInfo 类型。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5ac5e8303b0326e4c540757b7564edc55945cfc8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 269cd5589539cb63b20d61e5103a273a083882a4ffa89446e1c6629444d1b9c5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159860"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo 资源类型
 
 命名空间：microsoft.graph
 
-这是允许你加入现有会议的令牌信息。 这是作为传入呼叫通知的一部分获取的。 
+这是允许你加入现有会议令牌信息。 这是作为传入呼叫通知的一部分获取的。 
 
-在断开呼叫的情况下，此信息可以帮助您重新加入该呼叫。
+如果呼叫断开，此信息可以帮助您重新加入该呼叫。
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型    | 说明                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| 令牌                        | String  | 用于加入呼叫的令牌。                                                 |
+| 令牌                        | String  | 用于加入调用的令牌。                                                 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

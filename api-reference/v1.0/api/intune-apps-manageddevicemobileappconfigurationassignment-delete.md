@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44f333ba5a7c8cbf9e5812011b99440783edfa1d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c10e553dfc0e09fc7b676feaf9f88817d914bf864037865967f8a6bb4c9fbb4b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759887"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164060"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>删除 managedDeviceMobileAppConfigurationAssignment
 

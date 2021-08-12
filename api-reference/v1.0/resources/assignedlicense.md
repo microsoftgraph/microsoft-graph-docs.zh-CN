@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: c5aceba073cf7962b7b1caeb9a25a1936d5d4248
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: db2d164f076722abd2006408147c4dda3d3df128578d030b8454b7ed6395fba4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546957"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141845"
 ---
 # <a name="assignedlicense-resource-type"></a>assignedLicense 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "52546957"
 表示分配给用户的许可证。**用户** 实体的 [AssignedLicenses](user.md) 属性是一个 **assignedLicense** 集合。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |disabledPlans|Guid 集合|已禁用的计划的唯一标识符的集合。|
 |skuId|Guid|此 SKU 的唯一标识符。|

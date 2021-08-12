@@ -4,12 +4,12 @@ metadata:
   description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
   author: jasonjoh
   localization_priority: Normal
-  ms.openlocfilehash: e8feaa7fbe64147e0b4ba6fe3cfa4bf6432fc0f4
-  ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+  ms.openlocfilehash: eacd894355f2ae9d298f797d00e14f02aa026786ad93efe39f07bbbda764c058
+  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/30/2021
-  ms.locfileid: "53211157"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "54182257"
 title: Microsoft Graph 快速入门 FAQ
 summary: >
   此 FAQ 解答了与 [Microsoft Graph 快速启动](https://developer.microsoft.com/graph/quick-start)相关的问题。

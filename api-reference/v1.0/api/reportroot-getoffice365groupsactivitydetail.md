@@ -1,26 +1,26 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityDetail'
-description: 按组获取有关 Microsoft 365 组活动的详细信息。
+description: 获取有关按组Microsoft 365组活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 059a2b3bfb35545df66ea68015f5b68354e332e6
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 9c6875bfb4cc37bb9ea65e6a51f6bf926517ec0ae3a19723983ea8f42914f83d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238326"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
 命名空间：microsoft.graph
 
-按组获取有关 Microsoft 365 组活动的详细信息。
+获取有关按组Microsoft 365组活动的详细信息。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - Microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报告 -](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)Microsoft 365组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

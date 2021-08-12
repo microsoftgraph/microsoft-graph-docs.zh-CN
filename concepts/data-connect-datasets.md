@@ -4,12 +4,12 @@ description: 介绍可与 Microsoft Graph 数据连接结合使用的受支持�
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 0a260d43f00d90b46a876acf8a40c0600c041967
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6b6d4db9b15fdf3ba56b565af98532d197ceb8032ab1ff173837e28e7fd7c7da
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534549"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189147"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Microsoft Graph 数据连接支持的数据集、区域和接收器
 

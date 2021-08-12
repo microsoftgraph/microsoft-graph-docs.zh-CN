@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8305269c50e4f57c877fe50a4231f25e64561dcb
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6152c5c7d99c0eea87b39471082205f8e72f0cf350a2c1447e2a2cee69d9f4ed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225907"
 ---
 # <a name="resetpasscode-action"></a>resetPasscode 操作
 

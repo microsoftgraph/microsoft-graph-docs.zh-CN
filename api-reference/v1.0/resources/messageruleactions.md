@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 52ed8905f3120d17bf6c9c19d76ae9a2bcf5f77c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 96e6005a4297eafc1cf5905d9ad0b60c3c43bfeef496fa529bf6261d7233dd0c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136050"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235399"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions 资源类型
 

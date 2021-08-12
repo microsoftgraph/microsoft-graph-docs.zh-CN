@@ -5,12 +5,12 @@ description: MentionAction 对象提供有关在活动期间被提及者的信�
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: bc876f05949beb09b3e495a8b9b0536070b352cb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bdcef79492604aa5ee2afae0897361eb41dd6889229b4b41259cc3d47f72bf92
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238384"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152381"
 ---
 # <a name="mentionaction-resource-type"></a>mentionAction 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50238384"
 
 **MentionAction** 资源提供了有关提到人员的 [活动][]的信息。
 
->**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅适用于SharePoint OneDrive for Business。
 
 [活动]: itemactivity.md
 
@@ -35,7 +35,7 @@ ms.locfileid: "50238384"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.mentionAction"
+  "@type&quot;: &quot;microsoft.graph.mentionAction"
 }-->
 
 ```json

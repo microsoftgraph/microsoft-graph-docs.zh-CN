@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c58b8c2838f89360ab19e33c009946b23f3189d5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8e08313273e44d3da7a01a9559e7b13391c3f30da7f327893d6e7918d533fa6b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209068"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>更新 mobileThreatDefenseConnector
 

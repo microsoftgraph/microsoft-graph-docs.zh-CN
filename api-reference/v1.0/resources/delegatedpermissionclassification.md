@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: ff9f4ca394e2065c69fd7cd08a19d60817fc4f99
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a7842eb4efdd54f63743a786b0be28990dee609a27fa960bfa38ac2e476921ed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146991"
 ---
 # <a name="delegatedpermissionclassification-resource-type"></a>delegatedPermissionClassification 资源类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "50761756"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| id | 字符串 | **delegatedPermissionClassification 项的唯一** 标识符。 不可为 null。 只读。 |
+| id | String | **delegatedPermissionClassification 项的唯一** 标识符。 不可为 null。 只读。 |
 | classification | permissionClassificationType | 给定的分类值。 可能的值 `low` ：。 不支持 `$filter`。 |
 | permissionId | Guid | [servicePrincipal](servicePrincipal.md) ( **oauth2PermissionScopes** 集合) 委派权限的唯一标识符 id。 创建时为必需项。 不支持 `$filter`。 |
-| permissionName | 字符串 | 声明值 ([servicePrincipal](servicePrincipal.md)) **oauth2PermissionScopes** 集合中列出的委派权限的值。  不支持 `$filter`。 |
+| permissionName | String | 声明值 ([servicePrincipal](servicePrincipal.md)) **oauth2PermissionScopes** 集合中列出的委派权限的值。  不支持 `$filter`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

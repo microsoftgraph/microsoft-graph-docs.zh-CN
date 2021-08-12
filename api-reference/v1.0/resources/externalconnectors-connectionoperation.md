@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: f81300c0fd2f895daccb816c86cdd7151c803b2d
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 7cf9310eef057bbd4bcda57273089f05a24501986c90b6bffbc072d39932cac2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121282"
 ---
 # <a name="connectionoperation-resource-type"></a>connectionOperation 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "53467276"
 |:---|:---|:---|
 |error|publicError| 如果 `status` 为 `failed` ，则提供有关导致失败的错误的详细信息。|
 |id|String| connectionOperation 的唯一标识符。 只读。 |
-|状态|microsoft.graph.externalConnectors.connectionOperationStatus| 指示异步操作的状态。 可取值为：`unspecified`、`inprogress`、`completed`、`failed`、`unknownFutureValue`。|
+|status|microsoft.graph.externalConnectors.connectionOperationStatus| 指示异步操作的状态。 可取值为：`unspecified`、`inprogress`、`completed`、`failed`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 无。

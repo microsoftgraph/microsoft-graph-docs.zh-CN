@@ -5,17 +5,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 author: jewan-microsoft
 doc_type: conceptualPageType
-ms.openlocfilehash: 3931fb9a327f682765b3795adbe90c4398cb38d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1821fd27b0f0f860f21a99952989febff1df2bb591183199e8567330da05ae64
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079107"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141418"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>在 Microsoft Graph 中使用文件
 
-可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。
-通过Microsoft Graph，你可以使用存储在Microsoft 365中的文件构建各种体验，从简单的存储用户文档到复杂的文件共享场景均可。
+可使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用。通过 Microsoft Graph，可以使用存储在 Microsoft 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。
 
 Microsoft Graph 公开可用于文件的两个资源类型：
 
@@ -54,40 +53,39 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 **驱动器** 和 **DriveItem** 资源通过三种不同的方式公开数据：
 
 * _属性_（像 **id** 和 **name**）公开简单的值（字符串、数字、布尔值）。
-* _Facet_（像**文件**和**照片**）公开复杂的值。存在的**文件**或**文件夹** Facet 表示 **DriveItem** 的行为和属性。
-* _引用_（像**子项**和**缩略图**）指向其他资源的集合。
+* _Facet_（像 **文件** 和 **照片**）公开复杂的值。存在的 **文件** 或 **文件夹** Facet 表示 **DriveItem** 的行为和属性。
+* _引用_（像 **子项** 和 **缩略图**）指向其他资源的集合。
 
 ## <a name="commonly-accessed-resources"></a>经常访问的资源
 
-文件交互的大多数 API 请求将使用以下其中一种基础资源来访问**驱动器**或 **DriveItem**。
+文件交互的大多数 API 请求将使用以下其中一种基础资源来访问 **驱动器** 或 **DriveItem**。
 
 | 路径                               | 资源
 |------------------------------------|-----------------------------------------
 | `/me/drive`                        | 用户的 OneDrive
 | `/me/drives`                       | 枚举用户可用的 OneDrive 资源。
-| `/drives/{drive-id}`               | 通过驱动器 ID 访问特定**驱动器**。
-| `/drives/{drive-id}/root/children` | 枚举特定**驱动器**根目录中的 **DriveItem** 资源。
+| `/drives/{drive-id}`               | 通过驱动器 ID 访问特定 **驱动器**。
+| `/drives/{drive-id}/root/children` | 枚举特定 **驱动器** 根目录中的 **DriveItem** 资源。
 | `/me/drive/items/{item-id}`        | 通过其唯一 ID 访问用户 OneDrive 中的 **DriveItem**。
 | `/me/drive/special/{special-id}`   | 通过其已知名称访问用户 OneDrive 中的特殊（命名）文件夹。
 | `/users/{user-id}/drive`           | 通过使用用户的唯一标识符访问另一个用户的 OneDrive 。
 | `/groups/{group-id}/drive`         | 通过组的唯一 ID 访问组的默认文档库。
 | `/shares/{share-id}`               | 通过其 **sharedId** 或共享 URL 访问 **DriveItem**。
-| `/sites/{site-id}/drive`           | 访问给定 [SharePoint][] [网站][]的默认**驱动器**（文档库）
-| `/sites/{site-id}/drives`          | 枚举给定 [SharePoint][] [网站][]下的**驱动器**（文档库）
+| `/sites/{site-id}/drive`           | 访问给定 [SharePoint][] [网站][]的默认 **驱动器**（文档库）
+| `/sites/{site-id}/drives`          | 枚举给定 [SharePoint][] [网站][]下的 **驱动器**（文档库）
 
-除了通过唯一 ID 在**驱动器**内查找 **DriveItem**，应用还可以通过已知资源中的相对路径查找 **DriveItem**。要使用路径进行查找，请使用冒号 (`:`) 字符对相对路径转义。此表提供了通过不同的方法使用冒号字符来按路径查找项目的示例。
+除了通过唯一 ID 在 **驱动器** 内查找 **DriveItem**，应用还可以通过已知资源中的相对路径查找 **DriveItem**。要使用路径进行查找，请使用冒号 (`:`) 字符对相对路径转义。此表提供了通过不同的方法使用冒号字符来按路径查找项目的示例。
 
 | 路径 | 资源 |
 |---|---|
 | `/me/drive/root:/path/to/file` | 通过相对于用户的 OneDrive 根文件夹的路径访问 **DriveItem**。 |
-| `/me/drive/items/{item-id}:/path/to/file` | 通过相对于另一项的路径访问 **DriveItem**（具有**文件夹** facet 的 **DriveItem**）。 |
+| `/me/drive/items/{item-id}:/path/to/file` | 通过相对于另一项的路径访问 **DriveItem**（具有 **文件夹** facet 的 **DriveItem**）。 |
 | `/me/drive/root:/path/to/folder:/children` | 通过相对于用户的 OneDrive 根文件夹的路径列出 **DriveItem** 的子项。 |
 | `/me/drive/items/{item-id}:/path/to/folder:/children` | 按照相对于另一项的路径列出 **DriveItem** 的子项。 |
 
 ## <a name="drive-resource"></a>驱动器资源
 
-[驱动器资源](drive.md) 是用户的 OneDrive 或 [SharePoint][] 文档库内的顶级对象。
-几乎所有的文件操作都从查找特定驱动器资源开始。
+[驱动器资源](drive.md) 是用户的 OneDrive 或[ SharePoint][] 文档库内的顶级对象。几乎所有的文件操作都从查找特定驱动器资源开始。
 
 可以通过驱动器的唯一 ID 或 [用户](user.md)、[组](group.md) 或组织的默认驱动器查找驱动器资源。 
 
@@ -97,11 +95,11 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 
 DriveItems 拥有多个 _Facet_，可提供有关项目标识和功能的数据。
 
-具有**文件夹** Facet 的 DriveItem 充当项目的容器，并且具有指向文件夹下的项目集合的**子项**引用。
+具有 **文件夹** Facet 的 DriveItem 充当项目的容器，并且具有指向文件夹下的项目集合的 **子项** 引用。
 
 ## <a name="shared-folders-and-remote-items"></a>共享文件夹和远程项目
 
-OneDrive 个人版用户可以向他们自己的 OneDrive 中添加其他驱动器的一个或多个共享项目。这些共享项目在具有 [remoteItem](remoteitem.md) facet 的**子项**集合中显示为 **DriveItem**。
+OneDrive 个人版用户可以向他们自己的 OneDrive 中添加其他驱动器的一个或多个共享项目。这些共享项目在具有 [remoteItem](remoteitem.md) facet 的 **子项** 集合中显示为 **DriveItem**。
 
 有关使用共享文件夹和远程项目的详细信息，请参阅 [Remote items and shared folders](remoteitem.md)（远程项目和共享文件夹）。
 

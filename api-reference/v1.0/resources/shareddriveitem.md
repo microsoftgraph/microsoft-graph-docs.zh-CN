@@ -6,12 +6,12 @@ localization_priority: Normal
 description: 使用 Shares API 访问共享的 driveItem 时，返回 sharedDriveItem 资源。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9b00703b1fea7689eae942ffb790e8d65672b89b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: da14e18c21f122646c7b7b86f3bc9e5401a60d8882762c4e4e096beecfda2cd6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251748"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
@@ -52,7 +52,7 @@ ms.locfileid: "50238874"
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | String                        | 要访问的内容的唯一标识符。              |
-| 名称     | String                        | 共享项的显示名称。                             |
+| name     | String                        | 共享项的显示名称。                             |
 | 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
 ## <a name="relationships"></a>关系
@@ -62,8 +62,8 @@ ms.locfileid: "50238874"
 | **driveItem**     | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**
 | **list**          | [**list**][list]        | 用于访问基础 **list**
 | **listItem**      | [**listItem**][listItem]    | 用于访问基础 **listItem**
-| **权限**    | [**权限**][permission] | 用于访问 **表示** 基础共享链接的权限
-| **网站**          | [**网站**][site]        | 用于访问基础 **site**
+| **permission**    | [**permission**][permission] | 用于访问 **表示** 基础共享链接的权限
+| **site**          | [**site**][site]        | 用于访问基础 **site**
 
 另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
 

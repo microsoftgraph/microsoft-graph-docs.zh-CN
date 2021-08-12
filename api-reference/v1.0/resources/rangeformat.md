@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f78b0cfbbf709c7b398560c80282dc9ed2985092
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4c8b8ea8cbfe49a02226ac938f06587cbb5d9288e1ab7a53c3276f96591be444
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037064"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174883"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "48037064"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |columnWidth|double|获取或设置区域内的所有列的宽度。如果列宽不统一，则返回 NULL。|
-|horizontalAlignment|string|表示指定对象的水平对齐方式。 可能的值为：、、、、、、 `General` `Left` `Center` `Right` `Fill` `Justify` `CenterAcrossSelection` `Distributed` 。|
+|horizontalAlignment|string|表示指定对象的水平对齐方式。 可能的值是 `General` `Left` ：、、、、、、、。 `Center` `Right` `Fill` `Justify` `CenterAcrossSelection` `Distributed`|
 |rowHeight|double|获取或设置区域中所有行的高度。如果行高不统一，则返回 NULL。|
 |verticalAlignment|string|表示指定对象的垂直对齐方式。 可能的值包括 `Top`、`Center`、`Bottom`、`Justify`、`Distributed`。|
 |wrapText|boolean|指示 Excel 是否将对象中的文本换行。指示整个区域不具有统一换行设置的空值|
@@ -45,7 +45,7 @@ ms.locfileid: "48037064"
 |borders|[WorkbookRangeBorder](rangeborder.md) 集合|应用于所选的整个区域的 border 对象的集合。只读。|
 |fill|[WorkbookRangeFill](rangefill.md)|返回在整个区域内定义的 fill 对象。只读。|
 |font|[WorkbookRangeFont](rangefont.md)|返回在所选的整个区域内定义的 font 对象。只读。|
-|protection|[WorkbookFormatProtection](formatprotection.md)|返回某一区域的格式 protection 对象。 只读。|
+|protection|[WorkbookFormatProtection](formatprotection.md)|返回某一区域的格式保护对象。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

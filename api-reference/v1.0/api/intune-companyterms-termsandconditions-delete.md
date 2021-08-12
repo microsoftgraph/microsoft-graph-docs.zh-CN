@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53828552ac563c672c663b80aaf6e63d67c76ef8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 335dfe71744bba65d14565a0c1630bf598e47091af8966a0450c45b06e69f983
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135776"
 ---
 # <a name="delete-termsandconditions"></a>删除 termsAndConditions
 

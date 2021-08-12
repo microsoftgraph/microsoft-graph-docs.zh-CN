@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 385af6c31033ceabf1293c29e9127187cf879d64
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0c50576b203254517d0718fc32d7322a42eb67b9160b848081f687fc35c0748a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182600"
 ---
 # <a name="attachmentitem-resource-type"></a>attachmentItem 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "50135777"
 |attachmentType|String| 附件的类型。 可取值为：`file`、`item`、`reference`。 此为必需属性。|
 |contentType|String|附件中数据的性质。 可选。|
 |isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。 可选。|
-|name|String|附件的显示名称。 它可以是一个描述性字符串，不一定就是实际的文件名。 必填。|
+|name|String|附件的显示名称。 这可以是描述性字符串，无需是实际的文件名。 必填。|
 |size|Int64|附件大小，以字节为单位。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式

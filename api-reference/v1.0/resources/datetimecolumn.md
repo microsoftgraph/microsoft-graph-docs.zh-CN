@@ -6,12 +6,12 @@ localization_priority: Normal
 description: columnDefinition 资源上的 dateTimeColumn 指示该列的值为日期或时间。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 28639277416b4bcea3caf641413078e355ff9de7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3554591146fefe3355dd06edb057de0bfd3214faf0c2c1e4262aae9a361e7227
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150022"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn 资源类型
 

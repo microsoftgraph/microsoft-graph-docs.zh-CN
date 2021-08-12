@@ -3,12 +3,12 @@ title: Microsoft Graph Toolkit
 description: 开始在应用程序中Graph Toolkit Microsoft 应用。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 68260cf83f0e9bec34d2c3b23911d04c53143e76
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 0fc7e189dca2585720e5be31546426ccbcd46482a77121c92d5ee4970bc9e92b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629152"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54214780"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
 

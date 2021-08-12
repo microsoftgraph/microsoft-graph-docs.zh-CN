@@ -1,15 +1,15 @@
 ---
 title: 获取组的增量更改
-description: 使用 delta 查询，可通过一系列 delta 函数调用来查询组的添加、删除或更新。 delta 查询可便于发现组的更改
+description: Delta 查询允许你通过一系列 Delta 函数调用来查询对组的添加、删除或更新。Delta 查询可便于发现组的更改
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 947ffe713d02eb55d8fa2630ad31406ef84e70fc
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 4fc09f8005e72480e6b716ebdacc6a7f0242a80ef4f01f2311205e32f0c1e6c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598253"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189140"
 ---
 # <a name="get-incremental-changes-for-groups"></a>获取组的增量更改
 
@@ -19,10 +19,10 @@ ms.locfileid: "46598253"
 
 ## <a name="tracking-group-changes"></a>跟踪组更改
 
-跟踪组更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与[列出组](/graph/api/group-list?view=graph-rest-1.0)的方式非常相似，除了要包括以下内容：
+跟踪组更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与 [列出组](/graph/api/group-list?view=graph-rest-1.0)的方式非常相似，除了要包括以下内容：
 
 - **delta** 函数。
-- 上一个 GET **delta** 函数调用的[状态令牌](./delta-query-overview.md)（*deltaToken* 或 *skipToken*）。
+- 上一个 GET **delta** 函数调用的 [状态令牌](./delta-query-overview.md)（*deltaToken* 或 *skipToken*）。
 
 ## <a name="example"></a>示例
 
@@ -85,7 +85,7 @@ Content-type: application/json
 }
 ```
 
->**注意：**`members@delta` 属性包含在第一个组对象 (TestGroup1) 中，并包含此组的两个当前成员。 TestGroup2 不包含此属性，因为组中没有任何成员。
+>**注意：**`members@delta` 属性包含在第一个组对象 (TestGroup1) 中并包含该组的两个当前成员。 TestGroup2 不包含此属性，因为组中没有任何成员。
 
 ## <a name="nextlink-request"></a>nextLink 请求
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 5020a8b56e6746e7c154af229113029c3f7731c0
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 1e6fc028a90013c9defebd944bb4efdd5b25f21f6272d7126590c447cef828c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184459"
 ---
 <!---<author of this doc: rsamai>--->
 

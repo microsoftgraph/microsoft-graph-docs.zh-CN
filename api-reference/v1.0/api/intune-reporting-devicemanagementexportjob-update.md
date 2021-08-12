@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aac5f773d14a22d1aea76319138e500028454ead
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e8a510a2dbe9d80305e04d729f3aae718918194114f80e08cb14bfb26010f089
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748917"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249424"
 ---
 # <a name="update-devicemanagementexportjob"></a>更新 deviceManagementExportJob
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报告的格式。 可取值为：`csv`、`pdf`。|
 |snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration ID。 如果指定了 sessionId，则 Filter、Select 和 OrderBy 将应用于 sessionId 表示的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
 |localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|配置所请求的导出作业的本地化方式。 可取值为：`localizedValuesAsAdditionalColumn`、`replaceLocalizableValues`。|
-|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |url|String|导出报告的临时位置|
 |requestDateTime|DateTimeOffset|请求导出报告的时间|
 |expirationDateTime|DateTimeOffset|导出报告的过期时间|

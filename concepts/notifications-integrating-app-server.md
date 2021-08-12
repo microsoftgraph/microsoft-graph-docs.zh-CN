@@ -4,12 +4,12 @@ description: '将应用程序服务设置为通过 Microsoft Graph 向不同客�
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: cf14534fe2f789165a3580da833b3d49d803a2ca
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 11cceb203b654113e16c2b7a1e9f461ea1bbac27342b15626754ccd5c6ccdbd2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174722"
 ---
 # <a name="create-and-send-a-notification-from-your-app-service"></a>通过应用程序服务创建和发送通知
 

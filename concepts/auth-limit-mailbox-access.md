@@ -4,12 +4,12 @@ description: 若要将应用程序权限界定为特定 Exchange Online 邮箱�
 author: abheek-das
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: e9f6b63f64981a49c655208c45ef9754324d5ae4
-ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
+ms.openlocfilehash: 54f899f9a4b1f7fba71acaa476f994b742ad58a6cfa3cc51d18adb42ee1a3c50
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53456427"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141215"
 ---
 # <a name="limiting-application-permissions-to-specific-exchange-online-mailboxes"></a>将应用程序权限限制为特定 Exchange Online 邮箱 
 

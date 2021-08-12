@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 5bbbaa40cc1fdc35441a2ab1e13c94a2a29719fa
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 5121552aae73abce1e13280b0211db7b7467bfc3e676337bded6f933aadc22fd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202096"
 ---
 # <a name="usersettings-resource-type"></a>userSettings 资源类型
 

@@ -5,12 +5,12 @@ author: arvindmicrosoft
 localization_priority: Priority
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5dfd34bb7defd6f525a5869221ce2c0215826da6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2da9393f7c374e96f540efad3ed7e2aeb1ce6cd077b44e0beb6495a12148daad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432863"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237577"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API 概述（预览版）
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 4a797126a1dc6bc5fbecc9aad050711b499945ff
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: ec5ce984ac98c34c219e87e956a3e102ca5834ad39c748f17af33fcb1db79740
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196542"
 ---
 # <a name="searchrequest-resource-type"></a>searchRequest 资源类型
 
@@ -34,7 +34,7 @@ JSON blob 包含响应中预期的资源类型、基础源、分页参数、排�
 |fields|String collection |包含为 **entityTypes** 中指定的每个资源对象返回的字段，允许自定义默认情况下返回的字段，包括其他字段，如 SharePoint 和 OneDrive。 可选。|
 |起始数量|Int32|指定搜索结果的偏移量。 偏移量 0 返回第一个结果。 可选。|
 |查询|[searchQuery](searchquery.md)|包含查询词。 必填。|
-|size|Int32|要检索的页面的大小。 可选。|
+|大小|Int32|要检索的页面的大小。 可选。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

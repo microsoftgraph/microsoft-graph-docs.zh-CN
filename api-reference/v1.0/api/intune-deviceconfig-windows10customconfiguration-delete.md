@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e822a3313ca73635aefe6150747d569d4658d275
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7d66eaafb1ad1d534246f8abdcb307c9bf732e9286bcc807184010868124ec84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52747380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54234167"
 ---
 # <a name="delete-windows10customconfiguration"></a>删除 windows10CustomConfiguration
 

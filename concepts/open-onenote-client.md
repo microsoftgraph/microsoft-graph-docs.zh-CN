@@ -3,18 +3,18 @@ title: 打开 OneNote 客户端
 description: '可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。 '
 author: Jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: d9f4ec45e79ed0526b4d02a6c3f676944384ab46
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: ada371ab457e4bd5c760770dbdc2baaea8557efeef14a5fe1ddb37c2f4c33059
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778290"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123903"
 ---
 # <a name="open-the-onenote-client"></a>打开 OneNote 客户端
 
 可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。 
 
-**links** 属性是一个 JSON 对象，它包含两个 URL。 Url 将在 OneNote 客户端应用程序中或在 web 上的 OneNote 中打开页面或笔记本。
+**links** 属性是一个 JSON 对象，它包含两个 URL。 URL 将在客户端应用程序中或OneNote打开页面或OneNote web 版。
 
 ```json
 { 
@@ -36,7 +36,7 @@ ms.locfileid: "35778290"
 
 - **oneNoteWebUrl** 
 
-  - 如果设备上的默认浏览器支持, 则在 web 上打开 OneNote。 
+  - 如果OneNote web 版默认浏览器支持，则打开该窗口。 
   - 使用浏览器语言设置。
 
 
@@ -96,7 +96,7 @@ OneNote API 在以下操作的 HTTP 响应中返回 **links** 属性：
 
 <br/>
 
-分析响应中的 URL 后，可以通过使用以下代码打开 OneNote。 使用`oneNoteClientUrl`打开已安装的 onenote 客户端`oneNoteWebURL`或打开 web 上的 onenote。
+分析响应中的 URL 后，可以通过使用以下代码打开 OneNote。 用于 `oneNoteClientUrl` 打开已安装的 OneNote 客户端或 `oneNoteWebURL` 打开OneNote web 版。
 
 ```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
@@ -164,7 +164,7 @@ public ApiResponse getResponse() throws Exception {
 
 <br/>
 
-通过使用响应属性, 应用可以在 web 上打开 OneNote, 如以下示例所示。
+通过使用响应属性，你的应用可以打开OneNote web 版，如以下示例所示。
 
 ```java 
 if (response.getResponseCode() == 201) {

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a67f425e110def02b995b9fe24b218b35f28e88
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d5d5925068d7279f690ae09107fc0da19de1b715384cda17386cad0681507a33
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225809"
 ---
 # <a name="list-compliancemanagementpartners"></a>列出 complianceManagementPartners
 

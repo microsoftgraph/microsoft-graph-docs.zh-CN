@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9801d47906b3480bb8f13653441593256c71209
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 19e0d5bd227879ecbbc84cce427bbb51f2228b3385305ca532f15aff19ae87e4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138883"
 ---
 # <a name="update-managediosstoreapp"></a>更新 managedIOSStoreApp
 

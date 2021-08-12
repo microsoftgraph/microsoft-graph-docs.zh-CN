@@ -3,12 +3,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.topic: include
-ms.openlocfilehash: 94f5606f6bdf5382d35eab5864cb7ea76a1be702
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 56fa438a671d0e712bd73d25774b246daea6ea7e51b1fa0281f15dde554051c3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44894935"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184374"
 ---
 <!-- markdownlint-disable MD041-->
 

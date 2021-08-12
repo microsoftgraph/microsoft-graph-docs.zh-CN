@@ -5,12 +5,12 @@ localization_priority: Normal
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 28ec2a0acaba340d27a9a83a1ac9ecc5b215bfbd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 907f4d41bcfdee7f4d536829f1e21e661f8649c216544504dc6476fccdf8e314
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172020"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList： delta
 

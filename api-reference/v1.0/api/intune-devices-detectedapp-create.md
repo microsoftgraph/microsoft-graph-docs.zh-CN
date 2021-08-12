@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4542c9e675751cd20f2cd5739ae73b4110f97ef9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f3469747ec3e4fd210b5dc660b3d9e210f594faa0f2c0423b284d307d2e2dbc5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138764"
 ---
 # <a name="create-detectedapp"></a>创建 detectedApp
 

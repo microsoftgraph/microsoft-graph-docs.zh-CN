@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 092e8636769b7f1e663ec224609226fc6147de31
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: dac123522e191c065de86160c658f4bc700c7b9b165fb5c0d8f46839eaa066b6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212422"
 ---
 # <a name="list-organizations"></a>列出 organizations
 

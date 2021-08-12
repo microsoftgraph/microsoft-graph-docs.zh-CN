@@ -5,12 +5,12 @@ author: Jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 933c37df5b02eef73c44e5dcff0386fef06e49f3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 3e92e05d109ed767db75f015c28ce26049cff5e8b085686ed609d355131fe9d7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208697"
 ---
 # <a name="onenote-api-overview"></a>OneNote API 概述
 
@@ -99,6 +99,6 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 
 使用 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)在你自己的 OneNote 笔记本中试用 OneNote API。
 
-若要在 Graph 浏览器中进行 OneNote API 调用，请选择左侧栏中的“显示更多示例”****。 使用菜单将 OneNote 切换至“打开”****。 还需要启用相应的权限。 在左侧菜单中的帐户名称中，选择“修改权限”****。 有关 OneNote 权限的详细信息，请参阅[笔记权限](permissions-reference.md#notes-permissions)。
+若要在 Graph 浏览器中进行 OneNote API 调用，请选择左侧栏中的“显示更多示例”。 使用菜单将 OneNote 切换至“打开”。 还需要启用相应的权限。 在左侧菜单中的帐户名称中，选择“修改权限”。 有关 OneNote 权限的详细信息，请参阅[笔记权限](permissions-reference.md#notes-permissions)。
 
 若要开始在 Microsoft Graph 中使用 OneNote API，请参阅 [OneNote 参考内容](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)。

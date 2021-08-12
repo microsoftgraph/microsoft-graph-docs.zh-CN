@@ -1,36 +1,36 @@
 ---
 title: hostSecurityState 资源类型
-description: 包含有关主机 (的状态信息，包括设备、计算机等) 。
+description: 包含有关主机 (状态信息，包括设备、计算机等) 。
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2d8543512162398f38f9ddb74cf72f57171c58f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20de01e91abbc2e3cf568a8898b79680e73188e549ffd306abf4f7aed092b16b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184891"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostSecurityState 资源类型
 
 命名空间：microsoft.graph
 
-包含有关主机 (的状态信息，包括设备、计算机等) 。
+包含有关主机 (状态信息，包括设备、计算机等) 。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|域名|String|主机 FQDN (完全限定的域名)  (例如， `machine.company.com`) 。|
-|isAzureAadJoined|Boolean|如此如果主机已加入域到 Azure Active Directory 域服务。|
-|isAzureAadRegistered|Boolean|如果主机注册到 Azure Active Directory 设备注册 (BYOD 设备-即不是由企业) 完全管理的，则该属性值为 True。|
-|isHybridAzureDomainJoined|Boolean|如此如果主机已加入域到本地 Active Directory 域。|
-|netBiosName|String|本地主机名，不包含 DNS 域名。|
-|os|String|主机操作系统。  (例如，Windows10、MacOS、RHEL 等 ) 。|
-|privateIpAddress|String|专用 (不可路由) IPv4 或 IPv6 地址 (请参阅在发出警报时) [RFC 1918](https://tools.ietf.org/html/rfc1918) 。|
-|publicIpAddress|String|可公开路由的 IPv4 或 IPv6 地址 (请参阅 [RFC 1918](https://tools.ietf.org/html/rfc1918)) 警报时间。|
-|riskScore|String|主机的提供程序生成/计算的风险分数。  建议的值范围为0-1，这相当于一个百分比。|
+|fqdn|String|主机 FQDN (完全限定的域名)  (例如 `machine.company.com` ，) 。|
+|isAzureAadJoined|Boolean|如果主机已加入域服务，Azure Active Directory True。|
+|isAzureAadRegistered|Boolean|如此 如果在 BYOD 设备Azure Active Directory注册 (注册的主机 -即，不是完全由企业或) 。|
+|isHybridAzureDomainJoined|Boolean|如果主机已加入本地 Active Directory 域，则其为 True。|
+|netBiosName|String|本地主机名，不带 DNS 域名。|
+|os|String|主机操作系统。  (例如，Windows10、MacOS、RHEL 等) 。|
+|privateIpAddress|String|专用 (IPv4) IPv6 地址不可路由 (请参阅警报时) [RFC 1918](https://tools.ietf.org/html/rfc1918) 地址。|
+|publicIpAddress|String|可公开路由的 IPv4 或 IPv6 (请参阅警报时) [RFC 1918](https://tools.ietf.org/html/rfc1918) 地址。|
+|riskScore|String|提供商生成/计算的主机风险评分。  建议的值范围为 0-1，等于百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

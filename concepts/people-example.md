@@ -5,12 +5,12 @@ ms.date: 4/9/2019
 author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 0a519fa3b7f6604e5cb0165909b0f754462ccae0
-ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
+ms.openlocfilehash: 2eda6a2dae70429e6467337ac75a10dde278aca4318bbe98e65daeca155be22e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816187"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235114"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
 
@@ -485,7 +485,7 @@ Content-type: application/json
 
 可以使用 *$select* 参数选择一个或多个字段，限制从服务器返回的数据量。始终会返回 `@odata.id` 字段。
 
-以下示例将响应限制为 10 个相关度最高人员的 **displayName** 和 **scoredEmailAddresses** 。
+以下示例将响应限制为 10 个相关度最高人员的 **displayName** 和 **scoredEmailAddresses**。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses
@@ -537,7 +537,7 @@ Content-type: application/json
 
 可以使用 *$filter* 参数将响应限制为记录中包含指定条件的那些人员。
 
-以下查询将响应限制为包含 **personType** 属性的 **person** 实例，该属性将 **person** 分配为 **类** ，将 **organizationUser** 分配为 **子类** 。
+以下查询将响应限制为包含 **personType** 属性的 **person** 实例，该属性将 **person** 分配为 **类**，将 **organizationUser** 分配为 **子类**。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$filter=personType/class eq 'Person' and personType/subclass eq 'OrganizationUser'
@@ -664,7 +664,7 @@ Content-type: application/json
 
 可以结合 *$select* 和 *$filter* 参数创建自定义用户相关人员列表，并且只获取应用程序需要的字段。
 
-以下示例获取显示名称等于指定名称的人员的 **displayName** 和 **scoredEmailAddresses** 。在本示例中，只返回显示名称等于“Lorrie Frye”的人员。
+以下示例获取显示名称等于指定名称的人员的 **displayName** 和 **scoredEmailAddresses**。在本示例中，只返回显示名称等于“Lorrie Frye”的人员。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'

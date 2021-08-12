@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08d6b6171bc646feb97752c918f59c5bbb1c3938
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ddcbdc59e0d02162b6a468bff137e5948c30eb82e11a215cab5ba0fbe2e2a2d5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759154"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247177"
 ---
 # <a name="delete-windowsphone81compliancepolicy"></a>删除 windowsPhone81CompliancePolicy
 

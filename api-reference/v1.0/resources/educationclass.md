@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 528ea878ad5ed507c83a750d617209b4cde3d589
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 3d1d6eb24e9d9b21ed8e828488ae306ec5c4bae549e51ecf0e69d63c5319e3a5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160056"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "52231516"
 | [Get educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | 读取 [educationClass](../resources/educationclass.md) 对象的属性和关系。 |
 | [更新 educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | 更新 [educationClass 对象](../resources/educationclass.md) 的属性。                 |
 | [删除 educationClass](../api/educationclass-delete.md) | 无                                                        | 删除 [educationClass](../resources/educationclass.md) 对象。                                  |
-| [增量](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) 集合 | 获取资源集合的增量更改。                                                  |
+| [delta](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) 集合 | 获取资源集合的增量更改。                                                  |
 
 ## <a name="properties"></a>属性
 

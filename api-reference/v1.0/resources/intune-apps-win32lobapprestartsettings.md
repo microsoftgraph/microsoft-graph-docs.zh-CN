@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1db011486f1ec26afcc7e045afd2e1be1b553ec7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3f786a52c2a572ccaa1ba1fd7bea9e0c1f6b2358f238144f638c94dc6c48efde
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757828"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175250"
 ---
 # <a name="win32lobapprestartsettings-resource-type"></a>win32LobAppRestartSettings 资源类型
 

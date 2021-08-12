@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 2158986ccae423614c8af3e54bc79a2f019102a0
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: e3f43f4ff8ebe464814e6b6c68fec7b1d7c71fd724e81ca8998bd5230e7f3f8a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180892"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -28,7 +28,7 @@ ms.locfileid: "53030284"
 访问评审功能（包括 API）仅在用户或 EMS E5 订阅的有效购买或试用Azure AD Premium P2可用。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 下表列出了可用于与访问评审相关资源进行交互的方法。
 
@@ -61,7 +61,7 @@ ms.locfileid: "53030284"
 
 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:------------------|:------------|:--------------------------------------------|
-| 读取 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读者或用户管理员 |
+| 阅读 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读者或用户管理员 |
 | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |
 
 此外，作为访问评审的分配审阅者的用户可以管理其决策，而无需担任目录角色。

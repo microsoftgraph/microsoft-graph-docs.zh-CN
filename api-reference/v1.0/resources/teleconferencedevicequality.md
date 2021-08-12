@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 455a69257e880c71c28fa7968e5e8294075437e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 655ebbbc65f62ec3ace0640ed012b2d89bc0e6adb8242218ae223f57ab36d34f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086275"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218392"
 ---
 # <a name="teleconferencedevicequality-resource-type"></a>teleconferenceDeviceQuality 资源类型
 
@@ -22,16 +22,16 @@ ms.locfileid: "48086275"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|callChainId|Guid|会议中所有参与者调用的唯一标识符，或在 P2P 呼叫中两个参与者呼叫的唯一标识符。 需要从 `Microsoft.Graph.Call.CallChainId` 复制它。|
-|cloudServiceDeploymentEnvironment|String|部署服务的地理区域，例如 `ProdNoam` 。|
-|cloudServiceDeploymentId|String|由 Azure 分配的唯一部署标识符。|
+|callChainId|Guid|会议中所有参与者呼叫的唯一标识符，或 P2P 呼叫中两个参与者呼叫的唯一标识符。 需要从 `Microsoft.Graph.Call.CallChainId` 复制它。|
+|cloudServiceDeploymentEnvironment|String|部署服务的地理位置区域，例如 `ProdNoam` 。|
+|cloudServiceDeploymentId|String|Azure 分配的唯一部署标识符。|
 |cloudServiceInstanceName|String|Azure 部署的云服务实例名称，例如 `FrontEnd_IN_3` 。|
 |cloudServiceName|String|Azure 部署的云服务名称，例如 `contoso.cloudapp.net` 。|
-|deviceDescription|String|任何其他说明，如 `VTC Bldg 30/21` 。|
+|deviceDescription|String|任何其他说明，例如 `VTC Bldg 30/21` 。|
 |deviceName|String|用户媒体代理名称，例如 `Cisco SX80` 。|
-|mediaLegId|Guid|会议中参与者的特定媒体腿的唯一标识符。  如果发生 retargeting，一个参与者可以有多个媒体支线标识符。 CVI 合作伙伴将分配此值。|
+|mediaLegId|Guid|会议参与者的特定媒体段的唯一标识符。  如果发生重定向，一个参与者可以有多个媒体脚标识符。 CVI 合作伙伴分配此值。|
 |mediaQualityList|[teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md) 集合|媒体会话中的媒体质量列表 (呼叫) ，例如音频质量、视频质量和/或屏幕共享质量。|
-|participantId|Guid|会议中的特定参与者的唯一标识符。 CVI 合作伙伴需要复制 `Call.MyParticipantId` 到此属性。|
+|participantId|Guid|会议特定参与者的唯一标识符。 CVI 合作伙伴需要复制到 `Call.MyParticipantId` 此属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

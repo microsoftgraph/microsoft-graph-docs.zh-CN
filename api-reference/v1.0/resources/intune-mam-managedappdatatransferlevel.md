@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ae05c95833af2489e38b7eb4f3b8c5074dbc9c95
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 55bc0aeaa9eb2d55f2972bcbe1e987e0d4f277c2e4bc89ece1cc6aa4aceb5de6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231598"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>managedAppDataTransferLevel 枚举类型
 

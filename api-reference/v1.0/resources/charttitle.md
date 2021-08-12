@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b6325656dcf11a4b448506f829c3aaae88100ce6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3fc42cb04a12dbe1c8a792c4d9c6af4ad8e5ff0f68b8dd8fe2402990909db26b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178540"
 ---
 # <a name="charttitle-resource-type"></a>ChartTitle 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "48059220"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartTitleFormat](charttitleformat.md)|表示图表标题的格式，包括填充和字体格式。 只读。|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|表示图表标题的格式，包括填充和字体格式。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

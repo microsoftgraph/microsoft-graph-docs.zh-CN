@@ -5,20 +5,20 @@ description: accessAction 对象提供有关项目访问的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 22c859eec8ffeb065b6b134f4925b7612372465b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d11b385f7e5684d10ae58f6fa28811173ed39fc3cb841b94319d55ceb46a760b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230842"
 ---
 # <a name="accessaction-resource-type"></a>accessAction 资源类型
 
 命名空间：microsoft.graph
 
-itemActivity 上 **存在 accessAction** [][activity]资源表示活动访问项目。
+[**itemActivity**][activity]上 **存在 accessAction** 资源指示活动已访问项目。
 
->**注意：** Access 活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** Access 活动记录当前仅适用于 SharePoint 和 OneDrive for Business。
 
 [activity]: itemactivity.md
 
@@ -31,7 +31,7 @@ itemActivity 上 **存在 accessAction** [][activity]资源表示活动访问项
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.accessAction"
+  "@type&quot;: &quot;microsoft.graph.accessAction"
 }-->
 
 ```json

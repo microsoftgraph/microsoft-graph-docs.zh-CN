@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7d1293b42108b785848b2e351186020e06d46ca4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1733a1cc102257345b609b34d40f44d972393cbacc37e321eac437b1a6da734b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163696"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 

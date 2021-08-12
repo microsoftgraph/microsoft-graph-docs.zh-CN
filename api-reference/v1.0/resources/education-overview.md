@@ -5,12 +5,12 @@ localization_priority: Priority
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: f0959157ac4f436fe47aa0164cfb4a8fb91b086b
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: f9d75ee57396aebe2f15518f3d12c675edf7d217fa0609f08af1af6428e12338
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146970"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 

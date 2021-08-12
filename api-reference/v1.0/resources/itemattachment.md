@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: outlook
 author: abheek-das
 doc_type: resourcePageType
-ms.openlocfilehash: 9d5bde50858ddbb177db1b3588165eea30a66f43
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 07bf925b83be912f0ed50fb072fb2deadc59e0e18729c13ea76acd975a9193ba
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129714"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192220"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
