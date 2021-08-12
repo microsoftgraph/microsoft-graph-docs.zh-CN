@@ -1,16 +1,16 @@
 ---
 title: printUsageByUser 资源类型
-description: 描述用户指定的时间段的打印活动 (usageDate) 。
+description: 描述指定时间段内用户的打印活动 (usageDate) 。
 author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c478a4f9827de96d4db0da5d8533628bd8468d98
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: eae95a17032ca69a9856ee44377bef0aeb733cb0babfbfa66b0b2fdd9b3c9d51
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54222726"
 ---
 # <a name="printusagebyuser-resource-type"></a>printUsageByUser 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "50517260"
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-描述用户指定的时间段的打印活动 (usageDate) 。
+描述指定时间段内用户的打印活动 (usageDate) 。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 | [列出 (每天) ](../api/reportroot-list-dailyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | 获取每日打印使用情况摘要的列表，按用户分组。 |
-| [列出 (每月) ](../api/reportroot-list-monthlyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | 获取按用户分组的每月打印使用情况摘要列表。 |
-| [获取](../api/printusagebyuser-get.md) | [printUsageByUser](printusagebyuser.md) | 读取 printUsageByUser 对象的属性和关系。 |
+| [列出 (月) ](../api/reportroot-list-monthlyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | 获取按用户分组的每月打印使用情况摘要列表。 |
+| [Get](../api/printusagebyuser-get.md) | [printUsageByUser](printusagebyuser.md) | 读取 printUsageByUser 对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -33,9 +33,9 @@ ms.locfileid: "50517260"
 |id|String|此使用率摘要的 ID。|
 |userPrincipalName|String|这些统计信息所代表的用户的 UPN。|
 |usageDate|日期|与这些统计信息关联的日期。|
-|completedBlackAndWhiteJobCount|Int64|在关联日期代表用户完成的黑白打印作业的数量。|
-|completedColorJobCount|Int64|在关联日期代表用户完成的颜色打印作业数。|
-|incompleteJobCount|Int64|在关联日期代表用户排队但未完成的打印作业数。|
+|completedBlackAndWhiteJobCount|Int64|在关联的日期代表用户完成的黑白打印作业数。|
+|completedColorJobCount|Int64|在关联的日期代表用户完成的颜色打印作业数。|
+|incompleteJobCount|Int64|代表用户（但不在关联日期）排队的打印作业数。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

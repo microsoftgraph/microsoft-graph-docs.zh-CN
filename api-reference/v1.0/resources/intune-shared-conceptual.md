@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 0af56b1ec3014fdee14dc4b70d3c14208321581a
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 17b635a37ea7d4842d3acc303124112bcecaebf06252735a79d9c6d03fe1a347
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184541"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>共享资源Microsoft Intune
 

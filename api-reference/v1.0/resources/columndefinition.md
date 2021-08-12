@@ -6,12 +6,12 @@ localization_priority: Normal
 description: 下面是 ColumnDefinition 资源的 JSON 表示形式。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 83f278123a8153629593c54604ce1285a48439a7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4beefa8523898b4770de217a895426e9cc1f5cf91edbc6835b677d450ffc4943
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126667"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition 资源
 
@@ -68,7 +68,7 @@ ms.locfileid: "50239239"
 | **hidden**              | boolean | 指定列是否显示在用户界面中。
 | **id**                  | string  | 列的唯一标识符。
 | **indexed**             | boolean | 指定列值是否可用于排序和搜索。
-| **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
+| **名称**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
 | **readOnly**            | bool    | 指定是否可以修改列值。
 | **required**            | boolean | 指定列值是否不可选。
 
@@ -84,14 +84,14 @@ ms.locfileid: "50239239"
 | **currency**      | [currencyColumn][]      | 此列存储货币值。
 | **dateTime**      | [dateTimeColumn][]      | 此列存储日期时间值。
 | **defaultValue**  | [defaultColumnValue][]  | 此列的默认值。
-| **geolocation**   | [geolocationColumn][]   | 此列存储地理位置。
+| **地理位置**   | [geolocationColumn][]   | 此列存储地理位置。
 | **lookup**        | [lookupColumn][]        | 从网站中的另一个源查找此列的数据。
 | **number**        | [numberColumn][]        | 此列存储数值。
 | **personOrGroup** | [personOrGroupColumn][] | 此列存储个人或组值。
 | **text**          | [textColumn][]          | 此列存储文本值。
 
 注意：这些属性对应于 SharePoint 的 [SPFieldType][] 枚举。
-虽然以上表示最常见的字段类型，但此 API 仍缺少一些。
+虽然上面表示的是最常见的字段类型，但此 API 仍缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
 ## <a name="remarks"></a>备注

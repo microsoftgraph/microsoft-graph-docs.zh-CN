@@ -3,12 +3,12 @@ title: Microsoft 服务中的文件Graph Toolkit
 description: 文件组件用于通过显示图标和名称来显示文件
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 314f08d396421c3b0afe0cf049e91cca9daa03fd
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: a5e3569822d01c06d881070b56653f5bd2e2a89f2905c787699caa926c9b98b6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196325"
 ---
 # <a name="file-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件Graph Toolkit
 
@@ -20,7 +20,7 @@ File 组件用于表示 OneDrive 或 SharePoint 中的单个文件[/](/graph/one
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-file--file&source=docs" height="250"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-file--file&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-file--file&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -145,7 +145,7 @@ mgt-file {
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|备注|
+|对象存储|缓存数据|说明|
 |---------|-----------|-------|
 |`driveFiles`|按驱动器 ID 列出文件|提供时 `driveId` 使用|
 |`groupFiles`|按组 ID 列出文件|提供时 `groupId` 使用|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83d642101b73ddb82765e8c2ec51d7205a48f3ab
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 41da1c174c5e9a50a4c4b1d74896fdda4146bfb5540a3595d7a8f7f1f53845f6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209229"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -51,7 +51,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |assignments|[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) 集合|尚未记录|
 

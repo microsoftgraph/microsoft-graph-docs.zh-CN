@@ -4,12 +4,12 @@ description: 了解用于管理外部项权限的外部组。
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 8a0ae00e7fc4d1509c29bfb204aae0ab3166970e
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 369ca51c3a7e344d21bf92eaa3ab3985c4f6875227962555f564ff7049a5bbeb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129687"
 ---
 # <a name="use-external-groups-to-manage-permissions-to-microsoft-graph-connector-data-sources"></a>使用外部组管理对 Microsoft Graph连接器数据源的权限
 

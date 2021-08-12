@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b701d1b501f89a177801c7de3219b8efbe297d63
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f7023374949fd5d3874036c8754e0e9d83729e5b43293ffef16e90196f23a07d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167560"
 ---
 # <a name="create-androidlobapp"></a>创建 androidLobApp
 

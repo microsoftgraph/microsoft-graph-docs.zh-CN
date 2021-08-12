@@ -1,13 +1,13 @@
 ---
 author: jasonjoh
 ms.topic: include
-ms.openlocfilehash: 03e950d200446c8f9105a7b3105e90e1f92173fd
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 43f227c70197832d567f045a3f986b0262d23d4ca7f1a5800bbec1eece6ff25a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50243077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243601"
 ---
 <!-- markdownlint-disable MD041 -->
 
-默认情况下，当项目从一个容器 (（如文件夹或日历文件夹）移动到另一个容器) 此值。 若要更改此行为，请使用 `Prefer: IdType="ImmutableId"` 标头。 有关详细信息 [，请参阅](/graph/outlook-immutable-id) 获取 Outlook 资源的不可变标识符。
+默认情况下，当项目从一个容器（如文件夹 (日历）移动到另一个容器时，) 更改。 若要更改此行为，请使用 `Prefer: IdType="ImmutableId"` 标头。 有关详细信息[，请参阅获取Outlook资源的](/graph/outlook-immutable-id)不可变标识符。

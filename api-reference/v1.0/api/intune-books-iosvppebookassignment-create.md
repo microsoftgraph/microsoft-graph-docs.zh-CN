@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 38014d5ad851f44555dd637f62ae4923c12ee4bb
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 1bdaeea581d54307caa0a8b06b8c47c3099851aefce27472a9ae2a909fb9aef6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758439"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190211"
 ---
 # <a name="create-iosvppebookassignment"></a>创建 iosVppEBookAssignment
 

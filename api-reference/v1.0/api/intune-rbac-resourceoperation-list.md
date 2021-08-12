@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 425f2349f1aed73c94e1463989e4545aca7d2f7f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c68f1e48e04d1a4d4abbf706768eea063251b5da1da1574c76d3258e7947ab52
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243803"
 ---
 # <a name="list-resourceoperations"></a>列出 resourceOperations
 

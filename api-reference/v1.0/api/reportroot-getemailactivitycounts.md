@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 00072b3010caf2948bb85356eaab12a2973ce0ac
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 322bcb2d346bc05abd589a9519853b4cea68f508e727e1adc3f9f197577b531d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250299"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 

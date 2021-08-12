@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a1ab83dfa3e3da64935a8c3976f12ffd1faf2e3c
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: a65a5a88e2c0951c9b292140ca6a071b788651c8a0dcbebbb22eab5205407b64
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629383"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169436"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 

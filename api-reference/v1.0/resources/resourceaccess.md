@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: bad89764571b6ab3a2770432a950428fec0d9407
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 0d5c8a60b1080b1e605dde754d8007cf15b36b129d276a6b2d9f87421ba9ef25
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761302"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243308"
 ---
 # <a name="resourceaccess-resource-type"></a>resourceAccess 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50761302"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|Guid|资源应用程序公开其中一个 [oauth2PermissionScopes](permissionscope.md) 或 [appRole](approle.md) 实例的唯一标识符。|
-|type|字符串|指定 id **属性引用** [oauth2PermissionScopes](permissionscope.md) 还是 [appRole](approle.md)。 可能的值为 `Scope` 或 `Role`。|
+|type|String|指定 id **属性引用** [oauth2PermissionScopes](permissionscope.md) 还是 [appRole](approle.md)。 可能的值为 `Scope` 或 `Role`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

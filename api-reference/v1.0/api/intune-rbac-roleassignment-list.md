@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47ce26b97bf12040e1b732e655aa4095e01bb3d0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4a98155caeb73acf94c9ebbfc497e2f936c35cf2746c9fa23ba88da28adc9e2b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756826"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143862"
 ---
 # <a name="list-roleassignments"></a>列出 roleAssignments
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66df710aabe463433a5cdc265c75a0502391a20c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a6558cb289eba481b718462ec8aa5504bc0a2fc0bed7d96c93386279bac54c55
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54170067"
 ---
 # <a name="delete-androidstoreapp"></a>删除 androidStoreApp
 

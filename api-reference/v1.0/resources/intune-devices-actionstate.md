@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f805b39ac3954981c368ac79e566d3dc4fc218c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e2ef36e340fd6595c3cdd41f339c2e21cb7ab5bb5e8fa30712a3ed7d6e73d73c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192437"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 

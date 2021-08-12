@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8bb91dae367f9f9c95465aed0f8c71a26aaddd1a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f69409c3bcab7eaa91e08341f5b81074589ca64e7fb83c56b48f30e451fc736f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163612"
 ---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "48014999"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|选项|[workbookWorksheetProtectionOptions](worksheetprotectionoptions.md)|工作表保护选项。 只读。|
+|选项|[workbookWorksheetProtectionOptions](worksheetprotectionoptions.md)|工作表保护选项。只读。|
 |protected|boolean|表示该工作表是否受保护。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,19 +5,19 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d03d2199d11b2b9f285d8a425e01c70a6a49da35
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8abd44ce7da658d58b648ec622a06b7e33c98927f89e35971016e0bd305fcbda
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440085"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130539"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser： dismiss
 命名空间：microsoft.graph
 
->**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意：** 使用 riskyUsers API 需要Azure AD Premium P2许可证。
 
-消除一个或多个 [riskyUser 对象](../resources/riskyuser.md) 的风险。 此操作将目标用户的风险级别设置为"无"。
+消除一个或多个 [riskyUser 对象](../resources/riskyuser.md) 的风险。 此操作将目标用户的风险级别设定为无。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。

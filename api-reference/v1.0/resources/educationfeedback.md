@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 471c55668e7849f55d5a7623f86bc1f07fc6e537
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 87aba918c8766434c3bfc18e3020c2d05517d612887179f04c3bf3a427be1aef
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218735"
 ---
 # <a name="educationfeedback-resource-type"></a>educationFeedback 资源类型
 

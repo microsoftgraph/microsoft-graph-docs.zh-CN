@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: aa8fa5ddea9c8e0df8eb8bf81558840392bdd306
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 1423ee1de0330cfcfb9322bd324065fd8c31da7a27d65b77648669565cd339b9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53367016"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165509"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>使用 Microsoft Graph 获取聊天成员资格的更改通知
 

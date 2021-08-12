@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa30fcb276661e3a673c1942c4d35cc71ca41e6b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d381f8f9d25da07ce5ab52d05a90add1519e3e2fa695caf8a94b50b9bb1bc7bb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759475"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184814"
 ---
 # <a name="auditresource-resource-type"></a>auditResource 资源类型
 

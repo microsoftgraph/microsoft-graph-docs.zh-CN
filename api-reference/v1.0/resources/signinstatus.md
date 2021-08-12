@@ -1,22 +1,22 @@
 ---
 title: signInStatus 资源类型
-description: 提供登录状态 (登录成功) 失败状态
+description: 提供登录状态 (登录的成功) 失败状态
 localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 37eb91434fd7a5fb0dc65f5c7203effd42f3878e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 350ed66245164b5745d7b6f0bc962ebab5b1b4e46e8d7fc6b9a5c45b17ccc3a1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54222670"
 ---
 # <a name="signinstatus-resource-type"></a>signInStatus 资源类型
 
 命名空间：microsoft.graph
 
-提供登录状态 (登录的成功) 失败状态。
+提供登录的登录 (登录) 失败或失败状态。
 
 ## <a name="properties"></a>属性
 

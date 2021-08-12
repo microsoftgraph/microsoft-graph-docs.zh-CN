@@ -1,26 +1,26 @@
 ---
 title: feedbackTokenSet 资源类型
-description: FeedbackTokenSet 类型
+description: feedbackTokenSet 类型
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0e978bc25615d3fe0f4f39e0e1c5f50d3d5b2ffb
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 054b77c64f61bd100db45ce6ed83772fd6e1fd2c0d502a4e6f578058ec8f097f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601333"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205932"
 ---
 # <a name="feedbacktokenset-resource-type"></a>feedbackTokenSet 资源类型
 
 命名空间：microsoft.graph.callRecords
 
-这是一 _种开放类型_ ，表示此终结点的用户为会话提供的一组反馈令牌。 这是一组布尔属性。 属性名称不应依赖，因为它们可能会根据向用户提供的令牌而发生变化。
+这是一 _个开放_ 类型，表示此终结点的用户为会话提供的反馈令牌集。 这是一组布尔属性。 不应依赖属性名称，因为它们可能会根据提供给用户的令牌而更改。
 
 ## <a name="properties"></a>属性
 
-将不会记录显式属性名称，因为反馈令牌名称可能会更改，因此这是 [开放类型](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4)。
+由于反馈令牌名称可以更改，因此不会记录显式属性名称，因此这是一个 [开放类型](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4)。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

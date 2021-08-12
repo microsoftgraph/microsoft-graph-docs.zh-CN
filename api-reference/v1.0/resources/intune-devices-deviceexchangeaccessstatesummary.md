@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee3f6ddb47025dfc4ff29305f45538cf23bfa8c6
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5b9f22f1b49fd081716272ac3b58a030fb95d3ca39b0072a9702398533ef72fd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237675"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52754586"
 设备 Exchange 访问状态摘要
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |allowedDeviceCount|Int32|Exchange 访问状态为允许的设备总数。|
 |blockedDeviceCount|Int32|Exchange 访问状态为阻止的设备总数。|

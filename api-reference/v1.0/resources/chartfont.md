@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3862a6273e9dfca4df6bb412afcc061b057e617c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6743b12dc266ab967eb2f9693b693efcac9722a5166a02a1041974afc2b81e06
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069195"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223667"
 ---
 # <a name="chartfont-resource-type"></a>ChartFont 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "48069195"
 |italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字体大小（例如 11）|
-|underline|string|应用于字体的下划线类型。 可能的值为： `None` 、 `Single` 。|
+|underline|string|应用于字体的下划线类型。 可能的值是 `None` `Single` ：、。|
 
 ## <a name="relationships"></a>关系
 无

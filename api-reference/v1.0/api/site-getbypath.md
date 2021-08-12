@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: 按路径获取 SharePoint 网站
+title: 按SharePoint获取网站
 localization_priority: Normal
 ms.prod: sharepoint
 description: 检索网站资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: 2b4323788a12a1107777a8176fb04b4357ee44f3
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 33f1d31188e679ffdc271604f016fe5849a9075bad9add8929ea6bd872bc4b50
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155293"
 ---
 # <a name="get-a-site-resource-by-path"></a>按路径获取网站资源
 
@@ -19,7 +19,7 @@ ms.locfileid: "50292586"
 
 检索 [网站][]资源的属性和关系。**网站** 资源表示 SharePoint 中的团队网站。
 
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 
 除了可以[按 ID 检索网站](site-get.md)外，还可以按相对服务器 URL 路径检索网站。
 

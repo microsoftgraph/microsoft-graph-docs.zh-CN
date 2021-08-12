@@ -5,12 +5,12 @@ localization_priority: Normal
 author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 21a49f360ac18ad42ce5530a8cfcbcbea1876bc0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1aabcf259d2d185d24b07e25b79d97e928ee245fd4f11acd848bc4f4a1ed646
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180584"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
 
@@ -40,9 +40,9 @@ ms.locfileid: "48072856"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|createdDateTime| DateTimeOffset |操作的开始时间。|
-|lastActionDateTime| DateTimeOffset |操作的上一操作的时间。|
-|status|operationStatus|操作的当前状态： `notStarted` 、 `running` 、 `completed` 、 `failed` |
+|createdDateTime| DateTimeOffset |操作开始时间。|
+|lastActionDateTime| DateTimeOffset |操作的最后一个操作的时间。|
+|status|operationStatus|操作的当前状态 `notStarted` ：、 `running` `completed``failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

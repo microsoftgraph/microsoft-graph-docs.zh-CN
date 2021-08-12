@@ -1,22 +1,22 @@
 ---
 title: applicationEnforcedRestrictionsSessionControl 资源类型
-description: 强制实施应用程序限制的会话控制。
+description: 强制执行应用程序限制的会话控制。
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 130644ebf0d72b4870dc78e64455c2dfab446ae5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: eabfdcc57439e2d254acc9ae5eeec2f613197f669f2ff68cd2ecf8bbc6bc98cb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134965"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252156"
 ---
 # <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>applicationEnforcedRestrictionsSessionControl 资源类型
 
 命名空间：microsoft.graph
 
-强制实施应用程序限制的会话控制。 继承自 [条件访问会话控件](conditionalaccesssessioncontrol.md)。
+强制执行应用程序限制的会话控制。 继承自 [条件访问会话控件](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 

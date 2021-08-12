@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a0b4e045e405ec0b433d4268d4221e648402332f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 02d5d67f6ecfdecc3e52c117ecc853d9c98a9158167c2537062500fcd25f1d50
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752103"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180717"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752103"
 德国电视内容分级标签
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视显示内容|
 |allBlocked|1|不允许任何电视展示内容|

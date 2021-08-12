@@ -3,12 +3,12 @@ title: Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
 description: 可以使用 mgt-teams-channel-picker 从 Microsoft 网站搜索与用户关联的Graph。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: cd27db315de6b46c10c18e300ddb899ea042e428
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: d3e35e5ee45943f5d1e81e1cbd96a4e3497dbf790b8feb7b082bb68c5f6281f2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251601"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
 

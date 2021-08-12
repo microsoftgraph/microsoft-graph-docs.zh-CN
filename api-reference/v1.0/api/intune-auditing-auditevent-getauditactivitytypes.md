@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab1fbd9114b6809c1805a66c1e19307863d9ca10
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 724e23587b7d48cc8e0617cd0613f4de015d6ef606a8d38dfc26c730736feb08
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751765"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250649"
 ---
 # <a name="getauditactivitytypes-function"></a>getAuditActivityTypes 函数
 

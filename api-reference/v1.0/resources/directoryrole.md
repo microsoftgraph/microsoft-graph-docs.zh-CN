@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4ed98c9fef582d2299fb9ed63f2474b0a3903611
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: b54b743addeae4b8ff171da68079f487279234ac5d8d65b47271bca16b872840
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146984"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "53118677"
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 |成员|[directoryObject](directoryobject.md) 集合|是此目录角色成员的用户。HTTP 方法：GET、POST、DELETE。只读。可为 NULL。|
-|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此目录角色的成员，其作用域为 [管理单元](administrativeunit.md)。 只读。 可为 Null。|
+|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此目录角色的成员，其作用域为 [管理单元](administrativeunit.md)。只读。空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

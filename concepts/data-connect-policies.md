@@ -4,12 +4,12 @@ description: 介绍支持的策略以及如何为组织分配 ISV 访问 SKU。
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: b550976f6fde1af5335fb328a9aaef8f48dea33d
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 904890023526fac2d33d51347de53d4afc7bec46c9ef62479a32ebe9874561ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246400"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-billing"></a>Microsoft Graph 数据连接策略和计费
 

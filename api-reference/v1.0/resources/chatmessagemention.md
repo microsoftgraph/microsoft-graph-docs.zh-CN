@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2891a555666f7265050ec4e9b12f4d8f02500c4f
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: ed22514c0da50b3dfc6ec62c79c26858d4c0051ed0fcc16a485d937573cf6a6d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53206991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238158"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "53206991"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|Int32|指定的 **chatMessage** 中提及的实体的索引。 匹配邮件正文中相应标记中的 `<at id="{index}">` {index} 值。|
-|mentionText|字符串|用于表示提及的字符串。 例如，用户的显示名称，一个团队名称。|
+|mentionText|string|用于表示提及的字符串。 例如，用户的显示名称，一个团队名称。|
 |提及|[chatMessageIdentitySet](chatmessagementionedidentityset.md)|包含 (用户、应用程序、团队或频道) 实体@mentioned。|
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9e7a9e4c36823ae1b66eedaf342f6fa6574fab8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d970eeb5717066e8af280c33e22a1a2fe5e441e3a7c8e4a95d30858000ed3b38
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54187257"
 ---
 # <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>更新 androidWorkProfileGeneralDeviceConfiguration
 

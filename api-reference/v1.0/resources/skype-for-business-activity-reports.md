@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 1394ea6008d2514e091fa773db632f80d56e4b6e
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 4b7f5c244fec894feb0cb7708e5b373019b1d7e90daadf4e46b899f61ed09848
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202124"
 ---
 # <a name="skype-for-business-activity-reports"></a>Skype for Business 活动报告
 
@@ -25,6 +25,6 @@ Skype for Business 活动报表可用于获取整个组织中活动的详细信�
 | 函数                                 | 返回类型 | 说明                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [获取用户详细信息](../api/reportroot-getskypeforbusinessactivityuserdetail.md) | Stream      | 获取用户执行的 Skype for Business 活动的详细信息。 |
-| [获取活动数](../api/reportroot-getskypeforbusinessactivitycounts.md) | Stream      | 获取通过 Skype for Business 组织并参与在组织中召开的会议会话的用户数趋势。 报表还包含对等会话数。 |
-| [获取用户数](../api/reportroot-getskypeforbusinessactivityusercounts.md) | Stream      | 获取通过 Skype for Business 组织并参与在组织中召开的会议会话的唯一用户数趋势。 报表还包含对等会话数。 |
+| [获取活动数](../api/reportroot-getskypeforbusinessactivitycounts.md) | Stream      | 获取通过 Skype for Business 组织并参与在组织中召开的会议会话的用户数趋势。报表还包含对等会话数。 |
+| [获取用户数](../api/reportroot-getskypeforbusinessactivityusercounts.md) | Stream      | 获取通过 Skype for Business 组织并参与在组织中召开的会议会话的唯一用户数趋势。报表还包含对等会话数。 |
 

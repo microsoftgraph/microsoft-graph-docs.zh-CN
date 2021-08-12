@@ -4,12 +4,12 @@ description: 微软待办提供一种管理任务和计划日常工作的简单�
 author: avijityadav
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 34dc63ab14bc6cc1a2c118e6a77f9f6cc597bccc
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 0d93ba100fb48d2c6e833582a7f8238a5e51800e6b92d56ed4707e2aad2d8499
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245393"
 ---
 # <a name="to-do-api-overview"></a>微软待办 API 概述
 微软待办提供了一种简单的方法便于用户管理其任务和计划日常工作。 任务以任务列表形式组织，可以从任何设备跨微软待办客户端、Outlook 和 Teams 访问。
@@ -27,7 +27,7 @@ ms.locfileid: "48796743"
 微软待办是 Microsoft 365 中唯一存放个人任务的位置。 因此，它与 Microsoft 365 中心、Outlook 和 Teams 紧密集成。 在这些产品中创建的任务将与微软待办同步，以便你可以跨设备访问和管理它们。 微软待办集成可以帮助你吸引数百万使用微软待办的用户将 Outlook 和 Teams 中的任务收集到一个集成视图中。  
 
 ### <a name="support-task-completion-using-linked-resources"></a>支持使用链接的资源完成任务
-微软待办提供了一个称为“ _链接的资源_ ”的新实体，你可以使用该实体创建可链接回其原始源的任务。 可通过创建链接到你的产品或服务的任务，使用此功能在你的工作流中无缝集成微软待办。 
+微软待办提供了一个称为“_链接的资源_”的新实体，你可以使用该实体创建可链接回其原始源的任务。 可通过创建链接到你的产品或服务的任务，使用此功能在你的工作流中无缝集成微软待办。 
 
 ## <a name="common-to-do-api-operations"></a>常用微软待办 API 操作
 

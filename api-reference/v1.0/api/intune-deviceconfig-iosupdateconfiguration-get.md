@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1defe40f48531ad463f7c1dcd4400350cef78edc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bd6aa4613a9fab677042e2d1dcc22e80a5086eb707244a8608c4ece4d3f87989
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756321"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155727"
 ---
 # <a name="get-iosupdateconfiguration"></a>获取 iosUpdateConfiguration
 

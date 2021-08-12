@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e118c11fbf6acc6656408c4d2085e3038732325
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2c73ce1f13a64d89933ef1f66530e4a920c0659ac330427dcc38529252e07e7a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757477"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163941"
 ---
 # <a name="getcachedreport-action"></a>getCachedReport 操作
 

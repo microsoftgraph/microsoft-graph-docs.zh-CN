@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f82b072cac7e3a27697e1145b314b8cd9d4e4ea9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f1580c5fbec459008cd67316471151cf121167fca6e4bbafef608cd4838d374f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249634"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>删除 deviceConfigurationDeviceStatus
 

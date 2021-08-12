@@ -1,28 +1,28 @@
 ---
 title: shiftPreferences 资源类型
-description: 表示计划中用户的已分配班次的可用性。
+description: 表示在日程安排中向用户分配班次的可用性。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c1f2b4acdc61fcf7889ea0b9dd1046aff112c9e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b807ba99eb811fb534276ae8ff7b4e180a3c94818fc00b5e57e111a6f75bf62
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970661"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230429"
 ---
 # <a name="shiftpreferences-resource-type"></a>shiftPreferences 资源类型
 
 命名空间：microsoft.graph
 
-表示 [计划](schedule.md)中用户的已分配班次的可用性。
+表示在日程安排中分配班次的用户 [的可用性](schedule.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | 读取 **shiftPreferences** 对象的属性和关系。 |
+| [Get](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | 读取 **shiftPreferences 对象的属性和** 关系。 |
 | [更新](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | 更新 **shiftPreferences** 对象。 |
 
 ## <a name="properties"></a>属性
@@ -30,11 +30,11 @@ ms.locfileid: "47970661"
 |属性          |类型           |说明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id | `Edm.String` | 实体的标识符。 |
-| @odata.etag | `Edm.String` | 实体的更改键。 |
-| availability | [shiftAvailability](shiftavailability.md) 集合 | 用户计划的工作及其定期模式的可用性。 |
-| createdDateTime | `Edm.DateTimeOffset` | 创建实体时对应的时间戳。 |
-| lastModifiedDateTime | `Edm.DateTimeOffset` | 上次修改实体时对应的时间戳。 |
-| lastModifiedBy | [identitySet](identityset.md) | 上次修改实体的人员的标识。 |
+| @odata.etag | `Edm.String` | 实体更改键。 |
+| availability | [shiftAvailability](shiftavailability.md) 集合 | 计划工作的用户的可用性及其定期模式。 |
+| createdDateTime | `Edm.DateTimeOffset` | 与实体创建时间相对应的时间戳。 |
+| lastModifiedDateTime | `Edm.DateTimeOffset` | 与实体上次修改时间相对应的时间戳。 |
+| lastModifiedBy | [identitySet](identityset.md) | 上次修改实体的人的标识。 |
 
 ## <a name="relationships"></a>关系
 

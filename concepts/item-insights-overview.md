@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 03620c9958cf9c2af3c61ff511e8beaa35a540f8
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 0733e572035d07a0960d00dc8d80921c8674d382a0ff6a18fab5cb66507d6ca9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230310"
 ---
 # <a name="overview-of-item-insights"></a>项见解概述
 项见解是基于你在 Microsoft 365 中的协作工作，向你和与你协作的人员提供的以用户为中心的建议。
@@ -35,7 +35,7 @@ Microsoft 365 是面向全球的生产力云，其中许多功能都是围绕你
 ![项见解支持在 Delve 和 Outlook Mobile 中的发现](images/discover-Delve-OutlookMobile.PNG)
 
 ### <a name="recent-files-in-card-based-interfaces"></a>基于卡片的界面中最近使用的文件 
-在基于卡片的界面（如 Delve、Microsoft 365 应用中的角色卡片和必应工作结果中的人员卡片）中，项见解将显示你最近修改的或与查看你个人资料的人员（有权访问该内容）共享的 OneDrive、SharePoint 或 Outlook 文件。 这种个性化见解可帮助你的同事节省搜索合适人员或信息的时间。  
+在基于卡片的界面（如 Delve、Microsoft 365 应用中的角色卡片和必应工作结果中的人员卡片）中，项见解将显示你最近修改的或与查看你个人资料的人员（有权访问该内容）共享的 OneDrive、SharePoint 或 Outlook 文件。这种个性化见解可帮助你的同事节省搜索合适人员或信息的时间。  
 ![项见解在基于卡片的界面中支持最近使用的文件](images/Recent-files-in-card-based-interfaces.PNG)
 
 ## <a name="microsoft-runs-on-trust"></a>Microsoft 基于信任运行
@@ -46,7 +46,7 @@ Microsoft 不会使用你在专用空间中工作的活动来为其他人计算�
 最后，你的同事只能看到基于他们已有权访问的内容而生成的建议。 如果 Alice 与 Robert 协作编写文档，Alice 和 Robert 都可以基于此协作工作获取建议。 没有该文档访问权限的 Kate 看不到与此文件或 Alice 和 Robert 之间的协作相关联的建议。 此规则适用于组织中的所有用户。 在我们的示例中包括了 Kate 的经理和管理员，他们也看不到基于他们无权访问的内容的建议。 
 
 ## <a name="disabling-item-insights"></a>禁用项见解
-通过允许 Microsoft 根据共享工作区中的信号计算项见解，可以将活动和内容转换为可用的建议，并使此知识易于被你和组织中的同事发现和使用。 这样做有助于提高整个组织的生产力。  
+通过允许 Microsoft 根据共享工作区中的信号计算项见解，可以将活动和内容转换为可用的建议，并使此知识易于被你和组织中的同事发现和使用。这样做的话，你可以帮助提高整个组织的工作效率。  
 
 即使 Microsoft 从不披露你的私人文档，并且仅使用用户已有权访问的内容的见解，但在某些情况下，不良用户发现内容的风险会超过可能的好处。 在这些情况下，应考虑关闭项见解。 请记住，禁用项见解不是一种安全措施，你应当始终首先查看工作模式，并确保已按预期配置安全访问。 如果要降低内容和活动的可发现性，可以通过使用 [MyAccount 中“设置和隐私”下提供的切换](https://myaccount.microsoft.com/settingsandprivacy/privacy) 禁用项见解。  
 ![MyAccount 中的项见解切换](images/item-insights-toggle-in-MyAccount.PNG)

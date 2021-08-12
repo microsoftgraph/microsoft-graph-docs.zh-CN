@@ -1,29 +1,29 @@
 ---
 title: plannerBucketTaskBoardTaskFormat 资源类型
-description: '**PlannerBucketTaskBoardTaskFormat**资源表示用于在任务板的 bucket 视图中正确呈现任务的信息，该信息是按分配给) 的存储桶中的任务组织的视图 (。 每个任务都有一个与之关联的 **plannerBucketTaskBoardTaskFormat** 对象。'
+description: '**plannerBucketTaskBoardTaskFormat** 资源表示用于在任务板的存储桶视图中正确呈现任务的信息 (该视图按分配给) 的存储桶中的任务组织。 每个任务都有一个 **与之关联的 plannerBucketTaskBoardTaskFormat** 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1bd9282a137640af0abc1fd590ac5a87c18ea94e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38e159858591f7e1725c455e07162f9e0f10bbd1f8fc8d8bcfe974e952c95ae6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037498"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178113"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>plannerBucketTaskBoardTaskFormat 资源类型
 
 命名空间：microsoft.graph
 
-**PlannerBucketTaskBoardTaskFormat**资源表示用于在任务板的 bucket 视图中正确呈现任务的信息，该信息是按分配给) 的存储桶中的任务组织的视图 (。 每个 [任务](plannertask.md) 都有一个与之关联的 **plannerBucketTaskBoardTaskFormat** 对象。
+**plannerBucketTaskBoardTaskFormat** 资源表示用于在任务板的存储桶视图中正确呈现任务的信息 (该视图按分配给) 的存储桶中的任务组织。 每个 [任务](plannertask.md) 都有一个 **与之关联的 plannerBucketTaskBoardTaskFormat** 对象。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |读取 **plannerBucketTaskBoardTaskFormat** 对象的属性和关系。|
+|[获取 plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |读取 **plannerBucketTaskBoardTaskFormat 对象的属性和** 关系。|
 |[更新](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |更新 **plannerBucketTaskBoardTaskFormat** 对象。 |
 
 ## <a name="properties"></a>属性

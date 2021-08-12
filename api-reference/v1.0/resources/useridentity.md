@@ -1,22 +1,22 @@
 ---
 title: userIdentity 资源类型
-description: 在 Azure AD 审核日志中，这表示启动或受审核活动影响的用户信息。
+description: 在 Azure AD 审核日志，这表示启动或受审核活动影响的用户信息。
 localization_priority: Normal
 author: dhanyahk
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 814b7106bf738711099d6d6e8d5e821b7b638318
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 37fe5dce01b14735b791ed86954afc25a6ea4bcf369227c4b99868b2ecf36b29
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230394"
 ---
 # <a name="useridentity-resource-type"></a>userIdentity 资源类型
 
 命名空间：microsoft.graph
 
-在 Azure AD 审核日志中，这表示启动或受审核活动影响的用户信息。
+在 Azure AD 审核日志，这表示启动或受审核活动影响的用户信息。
 
 ## <a name="properties"></a>属性
 

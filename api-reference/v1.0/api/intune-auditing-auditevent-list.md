@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f4cc59d8bcfaa266ff9239df74b704994ddc209c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 118641fd8f00d37fe49f3290eb2e564131da9d7948f7eeb3300438f1a089c8b7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757465"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238683"
 ---
 # <a name="list-auditevents"></a>列出 auditEvents
 

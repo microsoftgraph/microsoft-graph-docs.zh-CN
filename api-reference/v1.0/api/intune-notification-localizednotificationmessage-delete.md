@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daf21f1850c52824b6594d319df738ba5fb3b128
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3bc2303a6dfeb70fe268c1caedb2f65b12644956d3aba5640c4fa82a7228b7bd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185094"
 ---
 # <a name="delete-localizednotificationmessage"></a>删除 localizedNotificationMessage
 

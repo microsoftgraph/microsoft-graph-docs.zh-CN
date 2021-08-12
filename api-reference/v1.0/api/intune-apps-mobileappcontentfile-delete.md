@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c018db3aefce51ef0b2c8ed38ebb28aa27bac760
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 20401e5206774830d9ba60395c14c59989635990f6e5080021182d1dbeee65a6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54187313"
 ---
 # <a name="delete-mobileappcontentfile"></a>删除 mobileAppContentFile
 

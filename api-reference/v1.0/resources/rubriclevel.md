@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b4cbd952d8c5bed366d6cfbbda5920d7eddba97d
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: ef944854949e590abc5a3455cc9683d18f069ebb932be337eb6351d64899fd09
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249130"
 ---
 # <a name="rubriclevel-resource-type"></a>rubricLevel 资源类型
 

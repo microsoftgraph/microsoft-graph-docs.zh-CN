@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 750b525ec0cdf7c28213787920c8164f7fcb1ac5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ea46b5e9327c751bd3866c5f11c291f374f59a7758a7f6e30c72d3cbc886d1c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252366"
 ---
 # <a name="import-action"></a>导入操作
 

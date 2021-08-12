@@ -132,4 +132,4 @@
 
     ![显示数据工厂服务的 Azure 门户 UI 的屏幕截图，其中请求的加载状态设置为"RequestingConsent"。](images/data-connect-adf-wait-for-approval.png)
 
-1. 此时，活动运行在内部暂停，直到有人通过管理中心或 PowerShell Microsoft 365批准同意请求。
+1. 此时，活动运行在内部暂停，直到有人通过 Microsoft 365 管理中心 或 PowerShell 手动批准同意请求。

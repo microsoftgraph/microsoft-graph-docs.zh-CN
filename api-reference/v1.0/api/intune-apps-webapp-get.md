@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ab4128f6eaf5e1e4a17cad928a934b18b5ee019
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d0cf49db5399bffb32c19c6efd50e5fabfad482d0105d0eafc141fe1abcfd2d9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754047"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224136"
 ---
 # <a name="get-webapp"></a>获取 webApp
 

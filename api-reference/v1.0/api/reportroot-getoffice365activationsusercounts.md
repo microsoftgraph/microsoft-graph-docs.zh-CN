@@ -1,26 +1,26 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
-description: 获取已启用的用户数，以及已激活桌面或设备或共享计算机上的 Office 订阅的用户数。
+description: 获取在桌面、设备或共享计算机上启用了 Office订阅的用户数。
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 07f3583aacdd246b0514d60d866d177765e6bd21
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 6608fac79a7c37f27af35a375c3fe67bb77c4673d4452d1cf9944bbbb1e85a3d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192661"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
 命名空间：microsoft.graph
 
-获取已启用的用户数，以及已激活桌面或设备或共享计算机上的 Office 订阅的用户数。
+获取在桌面、设备或共享计算机上启用了 Office订阅的用户数。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 -](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)Microsoft Office激活。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报表 -](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)Microsoft Office激活。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

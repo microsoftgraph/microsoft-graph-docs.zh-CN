@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3eca83aeea75300ed9165ac822b15212c866f152
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b9d9d07a6c2382194458913217b414a30000150bf61a2e4771cb9e8a27d53b8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094090"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189273"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 

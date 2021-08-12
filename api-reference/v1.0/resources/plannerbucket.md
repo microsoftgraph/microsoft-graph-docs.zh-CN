@@ -1,22 +1,22 @@
 ---
 title: plannerBucket 资源类型
-description: 为 Microsoft 365 中的计划中的任务 ) 。 它包含在 plannerPlan 中，并且可以具有 plannerTasks 的集合。
+description: ) 中计划的任务Microsoft 365。 它包含在 plannerPlan 中，并且可以具有 plannerTasks 的集合。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9655f8ad57f200fcc1a080c5f210452ca9630441
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee603f0c19c32e26abd4a18a17b3055815460930a63dcad306c00f8e2ba89f84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037512"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154922"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket 资源类型
 
 命名空间：microsoft.graph
 
-**PlannerBucket**资源表示在 Microsoft 365 中的计划中的任务 (或 "自定义列" ) 的存储桶。 它包含在 [plannerPlan](plannerplan.md) 中，并且可以具有 [plannerTasks](plannertask.md)的集合。
+**plannerBucket** 资源表示 (中任务的存储桶) 或"自定义列Microsoft 365。 它包含在 [plannerPlan 中](plannerplan.md) ，可以有 [plannerTasks 集合](plannertask.md)。
 
 
 
@@ -24,9 +24,9 @@ ms.locfileid: "48037512"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |读取 **plannerBucket** 对象的属性和关系。|
+|[获取 plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |读取 **plannerBucket 对象的属性和** 关系。|
 |[List plannerTasks](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) 集合| 获取 **plannerTask** 对象集合。|
-|[创建](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | 创建新的 **plannerBucket** 对象。 |
+|[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | 创建新的 **plannerBucket** 对象。 |
 |[更新](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |更新 **plannerBucket** 对象。 |
 |[删除](../api/plannerbucket-delete.md) | 无 |删除 **plannerBucket** 对象。 |
 
@@ -41,7 +41,7 @@ ms.locfileid: "48037512"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 存储桶中的任务的集合。|
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为空。 存储桶中的任务集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

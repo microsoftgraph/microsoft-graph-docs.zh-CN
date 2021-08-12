@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22127742912f4eb30e51b108e12b41b6b926c1db
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f4c62bfcc23f51af4ab2172de32f182ca25c6e716d80fe77d895778adf201cf8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190224"
 ---
 # <a name="get-managedandroidstoreapp"></a>获取 managedAndroidStoreApp
 

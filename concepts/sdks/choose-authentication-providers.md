@@ -3,12 +3,12 @@ title: 选择 Microsoft Graph身份验证提供程序
 description: 了解如何为应用程序选择特定于方案的身份验证提供程序。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 45fc7cf4c142b6fe3fc3bd97cc7556e09cd51a44
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 13775e15660f6a3d355553514325c268d3f7f89af404918968d63c9b9b858a15
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547139"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236876"
 ---
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据方案选择 Microsoft Graph 身份验证提供程序
 

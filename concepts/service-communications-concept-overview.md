@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Priority
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f10aabbdbdb7028af3f16058a6137bd9da8615d6
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 58eaec75761a0062a996f60c9c59c798c8fe0ae570da300821a4bf67780c12c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208665"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>在 Microsoft Graph 中访问服务运行状况和通信的概述
 可以使用 Microsoft Graph 中的服务通信 API 访问有关 Microsoft 云服务的运行状况和消息中心帖子。 实际运行状况和帖子对应于 API 所支持且由租户订阅的 Microsoft 365 和 Dynamics 365 服务。
@@ -18,7 +18,7 @@ ms.locfileid: "53108961"
 ## <a name="why-integrate-with-service-health-and-communications-data"></a>为何与服务运行状况和通信数据集成？
 
 ### <a name="get-service-health-and-message-center-posts-for-a-tenant"></a>获取租户的服务运行状况和消息中心帖子
-客户可以获取受支持 Microsoft 服务的当前或历史运行状况数据。 当遇到 Microsoft 服务问题时，客户可以检查其运行状况，以验证是否已通过正在进行的解决方法识别问题，然后再请求支持或花费时间进行故障排除。 
+客户可以获得支持的 Microsoft 服务当前或历史健康数据。当遇到 Microsoft 服务问题时，客户可以检查其运行状况，以验证是否已通过正在进行的解决方法识别问题，然后再请求支持或花费时间进行故障排除。 
 
 客户可以定期查看消息中心帖子，以跟踪即将发布的新功能和更新以及其他重要公告。 然后，他们可以预测这些更改对用户有何影响，并制定相应的计划。
 
@@ -66,6 +66,9 @@ ms.locfileid: "53108961"
 
 ## <a name="next-steps"></a>后续步骤
 
-- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=beta) 中试用服务通信示例查询。
+- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=v1.0) 中试用服务通信示例查询。
 
-- 详细了解 [服务通信 API](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta&preserve-view=true)。
+- 了解更多关于 [V1.0 版的服务通信 API](/graph/api/resources/service-communications-api-overview?view=graph-rest-1.0&preserve-view=true) 的信息。
+
+- 了解更多关于 [Beta 版的服务通信 API](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta&preserve-view=true) 的信息。
+

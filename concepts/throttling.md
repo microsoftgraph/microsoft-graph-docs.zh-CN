@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 82abc2a316fc3a5d14902089802862165081fada
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: fe64a787247625409e0ec0343d7dfa0848d4f920452266aba57642e1bd3f12f2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53578942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196621"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -522,7 +522,8 @@ planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTa
 
 | 请求类型                 | 每个租户每个应用限制     | 所有应用的每个租户的使用限制 |
 |---------------------------|------------------------------|----------------------------|
-| 任何         | 每 10 秒 5000 个请求   | 每 10 秒 15000 个请求 |
+| 任何         | 每 10 秒 500 个请求   | 每 10 秒 1000 个请求
+|任何          | 每 3600 秒 15000 个请求|每 3600 秒 30000 个请求|
 | 获取/作业  | 每 10 秒 50 个请求 | 每 10 秒 150 个请求 |  
 
 前面的限制适用于以下资源：[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: b1fec030433734d29e5557fe238eb41a6ca545c1
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: ec8d240b79bc31df3bb4343a8bc68e7096cd344df559abb3e64638f1789ab4f1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107723"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229022"
 ---
 # <a name="printerstatus-resource-type"></a>printerStatus 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "53107723"
 |:---|:---|:---|
 |state|printerProcessingState|当前处理状态。 下表介绍了有效值。 只读。|
 |详细信息|printerProcessingStateDetail 集合|描述打印机为何当前状态的详细信息列表。 下表介绍了有效值。 只读。|
-|说明|字符串|打印机当前处理状态可读的说明。 只读。|
+|说明|String|打印机当前处理状态可读的说明。 只读。|
 
 ### <a name="printerprocessingstate-values"></a>printerProcessingState 值
 
@@ -49,7 +49,7 @@ ms.locfileid: "53107723"
 |coverOpen|6 |一个或多个覆盖已打开。|
 |interlockOpen|7 |一个或多个互锁设备已打开。|
 |outputTrayMissing|9 |缺少一个或多个输出纸盒。|
-|outputAreaFull|10  |一个或多个输出纸盒已满，无法接受更多媒体。|
+|outputAreaFull|10 |一个或多个输出纸盒已满，无法接受更多媒体。|
 |markerSupplyLow|11|一个或多个标记源 (，例如墨迹、颜色笔或功能区) 较低。|
 |markerSupplyEmpty|12 |一个或多个标记源 (，例如墨迹、颜色笔或功能区) 已耗尽。|
 |inputTrayMissing|13|一个或多个输入纸盒不在设备中。|

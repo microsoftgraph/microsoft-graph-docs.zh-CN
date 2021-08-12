@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: c884f16ac2128286ece218ffb110b0c74933c7a1
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 505705c870c32b93221ff398089b150e0a826c7d617ff62483748dcb5117f712
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163520"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 

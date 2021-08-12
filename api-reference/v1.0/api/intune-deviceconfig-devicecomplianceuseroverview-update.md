@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37737ea4c193c10ed97c0a3edf1f7a906f68b861
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 1e7156752a330d8299f5645f6a5e80c59bfca3237b49d1e0a6f6f0744d776573
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752712"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212527"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>更新 deviceComplianceUserOverview
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: d852268ee1a007b60014a224b34d12f25100fe8c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b2be1539226ac619b15e61cc7da55d3a9c844f9a47e0e60dcf6ff80914d1a12a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467965"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169345"
 ---
 # <a name="resourcedata-resource-type"></a>resourceData 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "51467965"
 
 ## <a name="properties"></a>属性
 
-对于 Outlook 资源 **，resourceData** 包含以下字段：
+对于 **Outlook，resourceData** 包含以下字段：
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|

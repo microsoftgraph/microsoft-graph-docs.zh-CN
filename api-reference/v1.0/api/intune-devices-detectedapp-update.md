@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77cd21373eb2912bbc6364a674b9f5b71ae0cbcf
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 53a6e203c6b1a57d0505b6a5d042a7b1e8b065c00b561a2888268ec8ca16318e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252408"
 ---
 # <a name="update-detectedapp"></a>更新 detectedApp
 

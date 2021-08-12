@@ -1,19 +1,19 @@
 ---
-title: 教程：使用 Microsoft Graph API 管理对 Active Directory 权利管理中资源的访问
-description: 了解如何使用 Microsoft Graph API 管理对 Active Directory (Azure AD) 权限管理的访问权限。
+title: 教程：使用 Microsoft Graph API 管理对 Active Directory 授权管理中资源的访问
+description: 了解如何使用 Microsoft (API 管理 Active Directory) Azure AD Graph资源的访问权限。
 author: davidmu1
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b27bda23d32033205c21199d27d34dd360fa380d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 196c9b7b582c17341dfd9de46389620870b666ec6a49b6fb38bf7270b9032e1a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186847"
 ---
-# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 管理对 Active Directory 权利管理中资源的访问
+# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 管理对 Active Directory 授权管理中资源的访问
 
-管理对员工需要的所有资源（如组、应用程序和网站）的访问权限是组织的一项重要功能。 您希望向员工授予高效工作所需的正确级别的访问权限，并删除不再需要的访问权限。 [Azure Active Directory (Azure AD) ](/azure/active-directory/governance/entitlement-management-overview) Microsoft Graph API 进行权利管理，使你能够管理这种类型的访问。
+管理对员工需要的所有资源（如组、应用程序和网站）的访问权限是组织的一项重要功能。 您希望向员工授予高效工作所需的正确级别的访问权限，并删除不再需要的访问权限。 [Azure Active Directory (Azure AD) ](/azure/active-directory/governance/entitlement-management-overview) Microsoft Graph API 管理权利管理，使你能够管理这种类型的访问。
 
 本教程要求你开发代码，为内部用户可以自助请求的营销活动创建一个资源包。 请求不需要审批，用户的访问权限将在 30 天后过期。 对于本教程，市场营销活动资源只是单个组的成员身份，但它可能是组、应用程序或 SharePoint Online 网站的集合。
 
@@ -226,7 +226,7 @@ Content-type: application/json
 
 ### <a name="get-catalog-resources"></a>获取目录资源
 
-在本教程的稍后步骤中，你需要分配给目录中的组资源的 ID。 此标识符表示作为目录中的资源的组，与 Microsoft Graph 中组本身的标识符不同。 这是因为目录可以具有 Microsoft Graph 中未表示的资源。
+在本教程的稍后步骤中，你需要分配给目录中的组资源的 ID。 此标识符（表示作为目录中的资源的组）与 Microsoft Graph 中的组本身标识符不同。 这是因为目录具有的资源不会在 Microsoft Graph。
 
 在请求中， **提供** 你使用的目录的 ID。 记录组目录资源的 **id** 属性的值。
 
@@ -260,7 +260,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="get-resources-roles"></a>获取资源角色
 
-访问包将用户分配给资源的角色。 组的典型角色是成员角色。 其他资源（如 SharePoint Online 网站和应用程序）可能有很多角色。 访问包中使用的组的典型角色是成员角色。 在本教程稍后将资源角色添加到访问包时，将需要成员角色。 
+访问包将用户分配给资源的角色。 组的典型角色是成员角色。 其他资源（如 SharePoint Online 网站和应用程序）可能有许多角色。 访问包中使用的组的典型角色是成员角色。 在本教程稍后将资源角色添加到访问包时，将需要成员角色。 
 
 在请求中，使用目录 **的 ID** 和您记录的目录中组资源的 **ID** 获取 Member 资源角色的 **originId。** 记录 **originId 属性的值** ，以在本教程的稍后部分使用。
 
@@ -472,7 +472,7 @@ Content-type: application/json
 
 在响应中，你可以看到"已接受 **"** 状态和"已提交 **"状态**。 记录返回的 **id** 属性的值，以稍后获取请求的状态。
 
-如果尚未这样做，请注销在 Microsoft Graph 资源管理器中使用的管理员帐户。 登录到您创建的 **Requestor1** 用户帐户。 如果密码是首次登录，将要求您更改密码。
+如果尚未这样做，请注销在 Microsoft Graph资源管理器中使用的管理员帐户。 登录到您创建的 **Requestor1** 用户帐户。 如果密码是首次登录，将要求您更改密码。
 
 #### <a name="request"></a>请求
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be0c1fef3792bb3787127f16385273e880e984ee
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c1449c18088a899e9cef546fc4433bf7843f25f86d400c88b7525eba7a7cd0c8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197462"
 ---
 # <a name="list-mobileappcontentfiles"></a>列出 mobileAppContentFiles
 

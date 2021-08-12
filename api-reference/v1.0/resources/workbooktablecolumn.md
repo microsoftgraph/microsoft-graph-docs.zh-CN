@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 85a8c4b53eb39ae440946872718447f272ef841b
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 4bf6888443ccef65cc62dc728364ab7a5228fd4c22b6e8e977702c320503264d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033909"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221122"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn 资源类型
 

@@ -5,20 +5,20 @@ description: MoveAction 对象提供有关移动项目的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2f588ecabefa1425f47d3efec6728587fb694798
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 160afbc51196c60473dc40bec7b79daab6dc39eb3f302c1a1b9689c9c25929fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189462"
 ---
 # <a name="moveaction-resource-type"></a>moveAction 资源类型
 
 命名空间：microsoft.graph
 
-itemActivity 上 **存在 moveAction** [][activity]资源表示活动移动了项目。
+[**itemActivity**][activity]上 **存在 moveAction** 资源指示活动移动了项目。
 
->**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅适用于SharePoint OneDrive for Business。
 
 [activity]: itemactivity.md
 
@@ -34,13 +34,13 @@ itemActivity 上 **存在 moveAction** [][activity]资源表示活动移动了�
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.moveAction"
+  "@type&quot;: &quot;microsoft.graph.moveAction"
 }-->
 
 ```json
 {
   "from": "string",
-  "to": "string"
+  "to&quot;: &quot;string"
 }
 ```
 

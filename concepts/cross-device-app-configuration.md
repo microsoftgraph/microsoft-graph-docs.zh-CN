@@ -3,12 +3,12 @@ title: '构建由 Project Rome 提供支持的跨设备应用 '
 description: '可以使用 Project Rome 构建无缝跨设备和平台的体验，从而为用户减少摩擦并帮助促进应用参与。 对于要使用 Project Rome API 跨设备和平台共享数据的应用程序，你需要配置跨设备应用，其中包含有关你特定于平台的应用的信息。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 7c1b93afa9f239d170475fea776bdc89e7170b0d
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: bb3b6bb5ce9cf420c647fff8e91d306e83de65193a958375cb7704af2f15b207
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216516"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>构建由 Project Rome 提供支持的跨设备应用 
 
@@ -40,7 +40,7 @@ ms.locfileid: "48289342"
 可以将跨设备应用配置作为域上的 JSON 文件或作为可通过 [Windows 开发人员中心](https://developer.microsoft.com/windows)配置的配置文件进行托管。 根据要在应用中启用的 Project Rome 功能选择托管选项。 
 
 ### <a name="windows-dev-center-profile-recommended"></a>Windows 开发人员中心配置文件（推荐） 
-可以使用 [Windows 开发人员中心](https://developer.microsoft.com/windows)中管理的跨设备应用访问所有 Project Rome 功能。 Windows 开发人员中心还提供管理任何跨设备应用配置更改的*最佳*方式。 可以更安全地将更新保存到现有配置文件，直到已准备好将更改发布到生产中。 将更改发布到开发人员中心中的现有跨设备应用时，新配置文件将在大约 **1 小时**后生效。  
+可以使用 [Windows 开发人员中心](https://developer.microsoft.com/windows)中管理的跨设备应用访问所有 Project Rome 功能。 Windows 开发人员中心还提供管理任何跨设备应用配置更改的 *最佳* 方式。 可以更安全地将更新保存到现有配置文件，直到已准备好将更改发布到生产中。 将更改发布到开发人员中心中的现有跨设备应用时，新配置文件将在大约 **1 小时** 后生效。  
 
 ### <a name="externally-hosted-json-file-limited"></a>外部托管的 JSON 文件（有限） 
 可以通过作为外部托管的 JSON 文件管理的跨设备应用在所有受支持的平台上使用以下 Project Rome 功能：  
@@ -48,7 +48,7 @@ ms.locfileid: "48289342"
 * 使用[活动源 API](/graph/api/resources/activity-feed-api-overview?view=graph-rest-1.0) 读取和写入所有平台中的用户活动
 * 使用 Project Rome SDK 写入所有平台（Windows、iOS、Android、Web）中的用户活动。
 
-如果**仅**访问这些功能，则可以将跨设备应用配置作为域上的 JSON 文件进行外部托管。
+如果 **仅** 访问这些功能，则可以将跨设备应用配置作为域上的 JSON 文件进行外部托管。
 
 ## <a name="configure-a-cross-device-app-using-the-windows-dev-center"></a>使用 Windows 开发人员中心配置跨设备应用
 跨设备应用 ID 表示为你拥有的域。 域指向作为域上托管的 JSON 文件存储或可通过 Windows 开发人员中心配置的特定于平台的应用 ID 的映射。 确定将用来表示跨设备应用 ID 的域后，将需要收集信息来配置关联的配置文件。 
@@ -59,9 +59,9 @@ ms.locfileid: "48289342"
 例如，具有一套游戏应用的应用开发人员可能会对每个游戏应用使用单独的子域，以确保每个应用仅在跨设备和平台读取数据时可以继续执行的用户活动中订阅。 另一方面，具有一套旨在协同工作的效率类应用的应用开发人员可能会对所有这些效率类应用使用单个域，以便应用能够跨设备启动该套件的成员。  
 
 #### <a name="assert-domain-ownership-with-the-windows-dev-center"></a>通过 Windows 开发人员中心声明域所有权
-使用 Windows 开发人员中心管理跨设备应用配置时，表示跨设备应用 ID 的域会作为跨设备应用配置文件的一部分进行存储，因此 Microsoft 可以确认你是域所有者。 要完成跨设备应用配置的发布，**必须验证**你的域所有权，因此最好先处理此事。如果尚未验证域，则可以保存跨设备应用详细信息并在完成此步骤后重新运行验证，以便可以发布跨设备应用。
+使用 Windows 开发人员中心管理跨设备应用配置时，表示跨设备应用 ID 的域会作为跨设备应用配置文件的一部分进行存储，因此 Microsoft 可以确认你是域所有者。 要完成跨设备应用配置的发布，**必须验证** 你的域所有权，因此最好先处理此事。 如果尚未验证域，则可以保存跨设备应用详细信息并在完成此步骤后重新运行验证，以便可以发布跨设备应用。
 
-若要声明跨设备应用的域所有权，将需要为域添加具有在开发人员中心中为你提供的唯一值的 [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) 条目。 每个跨设备应用的此值都是唯一的。 若要查找应用的唯一值，请登录到 Windows 开发人员中心，然后从左侧菜单中选择“跨设备体验”**** 以开始配置新的跨设备应用。 为新的跨设备应用提供名称后，从子菜单中选择“验证跨设备应用域”****。 此页面将显示包含唯一值  **inline** 的说明（例如，MS=95ff4557-813f-45a5-b2f6-1f94170b979f）。 确保复制整个值，包括“MS=”。
+若要声明跨设备应用的域所有权，将需要为域添加具有在开发人员中心中为你提供的唯一值的 [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) 条目。 每个跨设备应用的此值都是唯一的。 若要查找应用的唯一值，请登录到 Windows 开发人员中心，然后从左侧菜单中选择“跨设备体验”以开始配置新的跨设备应用。 为新的跨设备应用提供名称后，从子菜单中选择“验证跨设备应用域”。 此页面将显示具有唯一值内联 **(** 例如，MS=95ff4557-813f-45a5-b2f6-1f94170b979f) 。 确保复制整个值，包括“MS=”。
 
 ### <a name="step-2-collect-your-platform-specific-application-ids"></a>步骤 2：收集特定于平台的应用程序 ID
 为将使用 [Project Rome API](/graph/api/resources/project-rome-overview?view=graph-rest-1.0) 的每个应用程序和平台收集特定于平台的应用程序 ID。
@@ -72,21 +72,21 @@ ms.locfileid: "48289342"
 
 * **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
 * **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
-* **android** - 有关详细信息，请参阅[更改包名称](https://developer.android.com/studio/build/application-id.html#change_the_package_name)。 
-* **ios** - 有关详细信息，请参阅[捆绑](https://developer.apple.com/documentation/foundation/bundle)和[必需、可本地化和可编辑属性](https://help.apple.com/itunes-connect/developer/#/devfc3066644)。
-* **msa** – 登录到[应用程序注册门户](https://apps.dev.microsoft.com)。 可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
+* **android** - 有关详细信息，请参阅 [更改包名称](https://developer.android.com/studio/build/application-id.html#change_the_package_name)。 
+* **ios** - 有关详细信息，请参阅 [捆绑](https://developer.apple.com/documentation/foundation/bundle)和 [必需、可本地化和可编辑属性](https://help.apple.com/itunes-connect/developer/#/devfc3066644)。
+* **msa** – 登录到 [应用程序注册门户](https://apps.dev.microsoft.com)。 可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>步骤 3：配置对 Microsoft 帐户或 Azure AD 的支持
-若要启用跨设备体验，应用用户必须使用 [Microsoft 帐户](https://account.microsoft.com/account)或  [Azure Active Directory](/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD) 帐户进行登录。 你将提供应用 ID/客户端 ID 以在跨设备应用配置过程中支持身份验证，从而启用跨平台支持。 最多可提供 10 个实例。
+若要启用跨设备体验，应用用户必须使用[Microsoft](https://account.microsoft.com/account)帐户或 Azure AD [](/azure/active-directory/develop/active-directory-developers-guide) Azure Active Directory (帐户) 登录。 你将提供应用 ID/客户端 ID 以在跨设备应用配置过程中支持身份验证，从而启用跨平台支持。 最多可提供 10 个实例。
 
 可以通过使用你的开发人员帐户登录到[应用程序注册门户](https://apps.dev.microsoft.com)来查找现有应用 ID/客户端 ID 或预配新应用 ID/客户端 ID。 登录到门户后，可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
 
 如果正在构建将支持 Azure AD 用户的应用程序，且不使用通过[应用程序注册门户](https://apps.dev.microsoft.com)颁发的聚合应用程序 ID，则将需要为 Azure 应用的应用程序 ID 提供 GUID。 若要查找租户的 GUID，请执行以下操作： 
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。 
-2. 选择“Azure Active Directory”****。
-3. 在“管理”**** 下，选择“应用注册”****。 
-4. 从列表中选择你的应用并查看“概要”**** 下列出的应用程序 ID (GUID)。
+2. 选择“Azure Active Directory”。
+3. 在“管理”下，选择“应用注册”。 
+4. 从列表中选择你的应用并查看“概要”下列出的应用程序 ID (GUID)。
 
 ### <a name="step-4-configure-support-for-cross-platform-push-notifications-optional"></a>步骤 4：配置对跨平台推送通知的支持（可选） 
 如果已选择在 Windows 开发人员中心中配置跨设备应用，则可以通过为 Android 和 iOS 推送消息平台提供用于 API 的凭据来启用对跨平台推送通知的支持。 如果使用适用于 iOS 和 Android 的 Project Rome SDK 且希望完成的不止是发布用户活动，则需要执行以上步骤。 如果仅使用适用于 Microsoft Graph 的 Project Rome API，则无需执行此步骤。 每个平台最多可以关联 10 组凭据。 
@@ -122,12 +122,12 @@ ms.locfileid: "48289342"
 
 #### <a name="constructing-your-cross-platform-app-identifiers-file"></a>构造 cross-platform-app-identifiers 文件
 JSON 文件本身必须命名为 **cross-platform-app-identifiers** 并托管在 HTTPS 域的根目录中。 该文件的内容是应用程序的支持平台与这些平台上的应用程序 ID 之间的映射的 JSON 数组。 构造该文件时，包括将使用 Project Rome API 的每个应用程序和平台的 JSON 对象。 
- 
+ 
 该文件将允许多个 JSON 对象具有相同平台标识符。 例如，iPhone 应用和 iPad 应用应作为单独的 JSON 对象列出，每个应用的平台值均为 iOS。 以下示例中显示了 Web 平台标识符。
- 
-不需要包括所有平台的 JSON 对象。 仅包括应用程序使用 Project Rome API 的平台的 JSON 对象。例如，如果没有适用于 Android 平台的应用客户端，则不需要在 Android 文件中进行输入。
- 
-以下示例包含当前接受的所有有效平台标识符。 将删除包含无效平台值的 JSON 对象。  
+ 
+不需要包括所有平台的 JSON 对象。 仅包括应用程序使用 Project Rome API 的平台的 JSON 对象。 例如，如果没有适用于 Android 平台的应用客户端，则不需要在 Android 文件中进行输入。
+ 
+以下示例包含当前接受的所有有效平台标识符。 将删除包含无效平台值的 JSON 对象。  
 
 ```[
 {"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},
@@ -145,9 +145,9 @@ JSON 文件本身必须命名为 **cross-platform-app-identifiers** 并托管在
 
 * **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
 * **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
-* **android** - 有关详细信息，请参阅[更改包名称](https://developer.android.com/studio/build/application-id.html#change_the_package_name)。 
-* **ios** - 有关详细信息，请参阅[捆绑](https://developer.apple.com/documentation/foundation/bundle)和[必需、可本地化和可编辑属性](https://help.apple.com/itunes-connect/developer/#/devfc3066644)。
-* **msa** – 登录到[应用程序注册门户](https://apps.dev.microsoft.com)。 可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
+* **android** - 有关详细信息，请参阅 [更改包名称](https://developer.android.com/studio/build/application-id.html#change_the_package_name)。 
+* **ios** - 有关详细信息，请参阅 [捆绑](https://developer.apple.com/documentation/foundation/bundle)和 [必需、可本地化和可编辑属性](https://help.apple.com/itunes-connect/developer/#/devfc3066644)。
+* **msa** – 登录到 [应用程序注册门户](https://apps.dev.microsoft.com)。 可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>步骤 3：配置对 Microsoft 帐户或 Azure AD 的支持
 若要启用跨设备体验，应用用户必须使用 Microsoft 帐户或 Azure AD 帐户进行登录。 你将提供应用 ID/客户端 ID 以在跨设备应用配置过程中支持身份验证，从而启用跨平台支持。 最多可提供 10 个实例。
@@ -164,16 +164,16 @@ JSON 文件本身必须命名为 **cross-platform-app-identifiers** 并托管在
 ]
 ```
 
-可以通过使用你的开发人员帐户登录到 [应用程序注册门户](https://apps.dev.microsoft.com)来查找现有应用 ID/客户端 ID 或预配新应用 ID/客户端 ID。 登录后，可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。 添加用于启用对 Microsoft 帐户或 Azure AD 的支持的 ID 时使用平台类型“msa”，如前一个示例中所示。  
+可以通过使用开发人员帐户登录应用程序注册门户来查找现有应用 ID/客户端 ID [或预配新](https://apps.dev.microsoft.com) ID。 登录后，可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。 添加用于启用对 Microsoft 帐户或 Azure AD 的支持的 ID 时使用平台类型“msa”，如前一个示例中所示。  
 
->**注意：** 如果正在构建支持 Azure AD 用户的应用程序，且不使用通过 [应用程序注册门户](https://apps.dev.microsoft.com)颁发的聚合应用程序 ID，则将需要为 Azure 应用的应用程序 ID 提供 GUID。 此类型的 ID 还应配置为平台类型“msa”。 
+>**注意：** 如果你要构建支持 Azure AD 用户的应用程序，并且不使用通过应用程序注册门户颁发的聚合应用程序 ID，则需要为 [](https://apps.dev.microsoft.com)Azure 应用的应用程序 ID 提供 GUID。 此类型的 ID 还应配置为平台类型“msa”。 
 
 若要在 Azure 门户中查找租户的 GUID，请执行以下操作： 
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“Azure Active Directory”****。 
-3. 在“管理”**** 下，选择“应用注册”****。
-4. 从列表中选择你的应用。 可以在“概要”**** 下查看应用程序 ID (GUID)。
+2. 选择“Azure Active Directory”。 
+3. 在“管理”下，选择“应用注册”。
+4. 从列表中选择你的应用。 可以在“概要”下查看应用程序 ID (GUID)。
 
 #### <a name="encoding-the-cross-platform-app-identifiers-file"></a>对 cross-platform-app-identifiers 文件进行编码 
 如果未看到活动在正确的本机应用程序中跨平台恢复，或无法读取由组中的所有成员发布的活动，则可能无法正确分析 JSON 文件。 输出此文件时，请确保使用“Unicode (UTF-8 无签名) - 代码页 65001”编码保存 cross-platform-app-identifiers 文件。

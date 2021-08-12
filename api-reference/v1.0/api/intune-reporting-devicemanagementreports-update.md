@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d462f754c18c319fb0ca731b8dd51830e2d8dbc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9e37d0140a378630cf86cf43a7bcc0edb4c22d1f5d5252c3e8d9dbaa643510ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748904"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192717"
 ---
 # <a name="update-devicemanagementreports"></a>更新 deviceManagementReports
 

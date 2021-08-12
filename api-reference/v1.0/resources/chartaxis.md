@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 76bbc5f2696f966be017b798ceb065afccf3b61e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7a2672e9f581a4106b93fd63af5d025795af7afcd7f39b9b515dd1f09398090
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991948"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135328"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "47991948"
 |format|[WorkbookChartAxisFormat](chartaxisformat.md)|表示 chart 对象的格式，包括线条和字体格式。只读。|
 |majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的主要网格线的网格线对象。只读。|
 |minorGridlines|[WorkbookChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的次要网格线的网格线对象。只读。|
-|title|[WorkbookChartAxisTitle](chartaxistitle.md)|表示坐标轴标题。 只读。|
+|title|[WorkbookChartAxisTitle](chartaxistitle.md)|表示坐标轴标题。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

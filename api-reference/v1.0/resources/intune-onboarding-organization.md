@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2af65c341f665fd358d03619a3cd3606723df123
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4455f0b8961701d847a761df4c4ca124e2203f0c2363ed8d0527d4f64fdb9542
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211946"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -20,8 +20,8 @@ ms.locfileid: "52754949"
 
 组织资源表示在租户级别操作和配置的全局设置和资源的实例。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 organizations](../api/intune-onboarding-organization-list.md)|[organization](../resources/intune-onboarding-organization.md) 集合|列出 [organization](../resources/intune-onboarding-organization.md) 对象的属性和关系。|
 |[获取组织](../api/intune-onboarding-organization-get.md)|[组织](../resources/intune-onboarding-organization.md)|读取 [organization](../resources/intune-onboarding-organization.md) 对象的属性和关系。|

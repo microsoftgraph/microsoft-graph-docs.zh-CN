@@ -6,12 +6,12 @@ localization_priority: Normal
 description: 共享 资源指示 DriveItem 已与他人共享。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 13debbe04921a0eb0fdedd9f7e893fb38253e4ce
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 7dc4eb845b1458da996a0ccbd23724b502cd899c205dca4515183b74162c6f5b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251755"
 ---
 # <a name="shared-resource-type"></a>Shared 资源类型
 

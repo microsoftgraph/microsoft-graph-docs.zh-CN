@@ -5,25 +5,25 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5f5d1bb7a520d5d7f64640725a846ef5bc76a0b2
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 8e534e40b9ad273c89808409db0078c4e0a62031684c9748336afc8823a8a797
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54222649"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>swapShiftsChangeRequest 资源类型
 
 命名空间：microsoft.graph
 
-表示要与团队中的 [其他用户交换班次](../resources/shift.md) 的班次 [请求类型](../resources/team.md)。
+表示一种班次请求，用于与 [团队](../resources/shift.md) 中的其他用户交换 [班次](../resources/team.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
-| [List](../api/swapshiftschangerequest-list.md) | [swapShiftsChangeRequest 集合](swapshiftschangerequest.md) | 列出团队 **中 swapShiftsChangeRequest** 对象的属性和关系。 |
-| [创建](../api/swapshiftschangerequest-post.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | 创建 **swapShiftsChangeRequest 对象** 的实例。 |
+| [List](../api/swapshiftschangerequest-list.md) | [swapShiftsChangeRequest 的集合](swapshiftschangerequest.md) | 列出团队中 **swapShiftsChangeRequest** 对象的属性和关系。 |
+| [Create](../api/swapshiftschangerequest-post.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | 创建 **swapShiftsChangeRequest 对象** 的实例。 |
 | [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | 读取 **swapShiftsChangeRequest** 对象的属性和关系。 |
 |[批准](../api/swapshiftschangerequest-approve.md)|无|批准 **swapShiftsChangeRequest**。 |
 |[拒绝](../api/swapshiftschangerequest-decline.md)|无|拒绝 **swapShiftsChangeRequest**。|

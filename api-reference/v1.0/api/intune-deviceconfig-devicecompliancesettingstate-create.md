@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cb1deb234005cfdb7a206ddabbbc562f8e91299
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9807f3f2f1a51dc29a63511c9bf1c96791470fd0bc4d1ed288591c9dd3d8e993
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147572"
 ---
 # <a name="create-devicecompliancesettingstate"></a>创建 deviceComplianceSettingState
 

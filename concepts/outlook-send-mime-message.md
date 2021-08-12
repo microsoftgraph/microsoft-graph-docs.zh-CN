@@ -4,12 +4,12 @@ description: 电子邮件客户端可以通过 Exchange 以 MIME 邮件格式发
 author: isvargasmsft
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 2e36f84334937a6a3a68f29201c66deae554ecd8
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 2cd092bcea50b800838a64dd0f8b89eb01dbe4d5d33b9ceb26e2fee910a050fc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146158"
 ---
 # <a name="send-messages-with-mime-content"></a>使用 MIME 内容发送邮件
 

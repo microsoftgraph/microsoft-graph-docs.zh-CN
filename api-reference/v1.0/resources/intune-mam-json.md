@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eda27c8fe2c3d43ac8b421df8b1349adcdbb397b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f18c6fe75436e6a575b18c02e4e70885beeb73df66c23aa8572ea917a85074dc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754963"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230548"
 ---
 # <a name="json-resource-type"></a>Json 资源类型
 

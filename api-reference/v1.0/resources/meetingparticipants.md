@@ -1,29 +1,29 @@
 ---
 title: meetingParticipants 资源类型
-description: 会议中的参与者。
+description: 会议参与者。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ba13a5993a4969162a1b8753e6391afa01802dff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c060a26e35d6f4ff6f8031c192947869d90547888f0ddfe90153da8cebb145c2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984255"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174932"
 ---
 # <a name="meetingparticipants-resource-type"></a>meetingParticipants 资源类型
 
 命名空间：microsoft.graph
 
-会议中的参与者。
+会议参与者。
 
 ## <a name="properties"></a>属性
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | attendees | [meetingParticipantInfo](meetingparticipantinfo.md) 集合 |  |
-| 组织者 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| organizer － 组织者 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

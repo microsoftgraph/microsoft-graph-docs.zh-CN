@@ -1,22 +1,22 @@
 ---
 title: conditionalAccessSessionControl 资源类型
-description: 会话控件基类型。
+description: 会话控制基类型。
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: caf1065557299b863a02641928eb77079d05b5e1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5c3b3ccd1829abeba85ee12661224b2866541a08bbc5dc29cfcb27ea7fb7aac2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160091"
 ---
 # <a name="conditionalaccesssessioncontrol-resource-type"></a>conditionalAccessSessionControl 资源类型
 
 命名空间：microsoft.graph
 
-会话控件基类型。
+会话控制基类型。
 
 ## <a name="properties"></a>属性
 

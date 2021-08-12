@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d40cf859826d66b679e0f0ef7bc2e73c79ffac9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 84bad58447680f6c152c1490f1fe88727dd7803b1779b7c0f8ea952ed60fa90b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240608"
 ---
 # <a name="create-or-replace-schedule"></a>创建或替换日程安排
 

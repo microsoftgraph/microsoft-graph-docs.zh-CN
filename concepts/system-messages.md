@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 44c5004388c848398bc3e7e83d2c63a1644886c9
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 0bbb162f4b81abc84b847ed174fb1072313e89c1b626484c1fb2c72bc721e105
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535532"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235056"
 ---
 # <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>使用 Microsoft Graph API 获取 Microsoft Teams 的系统消息
 

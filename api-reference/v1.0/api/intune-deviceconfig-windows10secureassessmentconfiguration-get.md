@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d8d98338a52dfa593bb16a6030c8a9752544ad5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8ba8b6ff7cf5e9e228d9cd40a03208a7e6bec6735c7fb62c29fca674c319edfe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219141"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>获取 windows10SecureAssessmentConfiguration
 

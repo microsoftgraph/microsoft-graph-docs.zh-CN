@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ee72e9fa643f8219d72dd282f8c0eeddd557a789
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2804e846b95f2aad597699b4799c280101b07e9a4bea9ae5413aefade1d5c984
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066241"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146438"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "48066241"
 
 | 属性       | 类型                          | 说明                                                                                                                                                |
 |:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| countryCode    | String                        | 呼叫开始时参与者最佳估计物理位置的 ISO 3166-1 Alpha-2 国家/地区代码。 只读。                             |
-| endpointType   | String                        | 参与者正在使用的终结点的类型。 可能的值包括： `default` 、 `skypeForBusiness` 或 `skypeForBusinessVoipPhone` 。 只读。              |
-| 窃取       | [identitySet](identityset.md) | 与此参与者关联的 [了解 identityset](identityset.md) 。 只读。                                                                             |
+| countryCode    | String                        | 呼叫开始时参与者的最佳估计物理位置的 ISO 3166-1 Alpha-2 国家/地区代码。 只读。                             |
+| endpointType   | String                        | 参与者使用的终结点类型。 可能的值为： `default`、 `skypeForBusiness`或 `skypeForBusinessVoipPhone`。 只读。              |
+| identity       | [identitySet](identityset.md) | 与此[参与者关联的 identitySet。](identityset.md) 只读。                                                                             |
 | languageId     | String                        | 语言区域性字符串。 只读。                                                                                                                    |
-| 范围         | String                        | 参与者的家乡区域。 它可以是国家/地区、一个洲或更大的地理区域。 这不会根据参与者的当前物理位置而更改。 只读。 |
+| region         | String                        | 参与者的主页区域。 它可以是国家/地区、洲或较大的地理区域。 这不会根据参与者的当前物理位置而更改。 只读。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

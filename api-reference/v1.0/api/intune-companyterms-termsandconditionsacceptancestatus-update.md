@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4acda8ce8c89ec73fbe6808ba2a6242eb27acde7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e7e5ca4fb953cf048704ff42b6f95430db4af3cc11421b9e0de940ec8fffbf24
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756720"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145003"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>更新 termsAndConditionsAcceptanceStatus
 

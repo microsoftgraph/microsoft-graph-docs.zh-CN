@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a83487813061f16d796b52018eb37ba125e46715
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 1baf180f1560e89391e90b43a4c17526d66bbf54cf5d7cca411c1e8b4b946397
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232046"
 ---
 # <a name="delete-iosmanagedappprotection"></a>删除 iosManagedAppProtection
 

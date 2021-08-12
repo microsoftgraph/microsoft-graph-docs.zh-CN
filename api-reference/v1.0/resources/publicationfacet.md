@@ -5,12 +5,12 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cba39f1b9478b534c95258f2bae0ad9c6df948bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e5244d5f15c74ff41839731058282b5f68d947645c7c3650e2109932789a9a2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037100"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231507"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet 资源类型
 
