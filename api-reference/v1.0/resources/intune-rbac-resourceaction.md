@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3517a4608691b65ce33ac40b4a9d9929bd277f31
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0ed370ad21ebd913fc9076cc2fbd1629940dd2f83f25a5afabf3207d4a613233
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235427"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752432"
 资源允许和不允许的操作集。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |allowedResourceActions|字符串集合|允许的操作|
 |notAllowedResourceActions|字符串集合|不允许的操作。|

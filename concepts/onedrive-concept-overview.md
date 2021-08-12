@@ -4,12 +4,12 @@ description: OneDrive 是 Microsoft 365 的文件中心。
 localization_priority: Priority
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 59c9c711f7728b65006d1553cb9595dcecc76ed1
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 457bb9e40a1b5923580df93b29ee7a90a26885ec12933010e9d4af40ca9189e5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228924"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>OneDrive 文件存储 API 概述
 
@@ -45,7 +45,7 @@ OneDrive 中的数据受到客户信任的高级加密、合规性和安全性�
 ### <a name="bring-your-app-straight-to-users-within-onedrive"></a>在 OneDrive 中直接向用户提供你的应用
 
 OneDrive 客户可以直接在 OneDrive 中使用或启动你的应用，以打开、编辑或预览文件。
-使用 OneDrive 的[文件处理程序][]扩展，为你自己的自定义文件扩展名提供图标和预览，将你的应用添加到“新建”**** 按钮，甚至可以将你自己的自定义操作添加到菜单栏以启动应用。
+使用 OneDrive 的[文件处理程序][]扩展，为你自己的自定义文件扩展名提供图标和预览，将你的应用添加到“新建”按钮，甚至可以将你自己的自定义操作添加到菜单栏以启动应用。
 
 ### <a name="work-with-content-in-formats-your-app-understands"></a>使用应用理解的格式来处理内容
 

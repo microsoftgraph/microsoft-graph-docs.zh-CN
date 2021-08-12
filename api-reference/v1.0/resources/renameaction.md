@@ -5,20 +5,20 @@ description: renameAction 对象提供有关重命名项目的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 35e0aa9929b8e152265a5540625f5981a587edb7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: c1abe3f322f039339514aee0374c0e2e0bd4e3f62aa48534abe37856609cd975
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238650"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202131"
 ---
 # <a name="renameaction-resource-type"></a>renameAction 资源类型
 
 命名空间：microsoft.graph
 
-itemActivity 上 **存在 renameAction** [][activity]资源表示活动重命名了项目。
+[**itemActivity**][activity]上 **存在 renameAction** 资源指示活动重命名了项目。
 
->**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅适用于SharePoint OneDrive for Business。
 
 [activity]: itemactivity.md
 
@@ -34,13 +34,13 @@ itemActivity 上 **存在 renameAction** [][activity]资源表示活动重命名
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.renameAction"
+  "@type&quot;: &quot;microsoft.graph.renameAction"
 }-->
 
 ```json
 {
   "oldName": "string",
-  "newName": "string"
+  "newName&quot;: &quot;string"
 }
 ```
 

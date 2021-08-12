@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4bdd3bc460148298b91386e6ce0988f743cc78e5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c73d7e21c713d052896c8c231a0333eb10299a62778740d189fb9e66d09b5c94
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143845"
 ---
 # <a name="create-manageddevice"></a>创建 managedDevice
 

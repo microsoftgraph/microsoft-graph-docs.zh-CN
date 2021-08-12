@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5575b2dd1659e730f04b038a8b6372a7d5662c10
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: 358f73e1c5ab4cc6c440e910c15b25d8ba10401e2709da545d1bfcdecb34da3a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665887"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229387"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 

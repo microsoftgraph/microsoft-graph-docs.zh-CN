@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6f40ddf0a8ae93f39b56f57e2f97b4d1b6e08052
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ba66377b5dc3db25181a8ab922b5829f95ed7cb0e4c9d99923371657a7ec7268
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169779"
 ---
 # <a name="reportroot-getemailappusageuserdetail"></a>reportRoot: getEmailAppUsageUserDetail
 
@@ -18,9 +18,9 @@ ms.locfileid: "49981800"
 
 获取用户在不同电子邮件应用中执行的活动的详细信息。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报告 - 电子邮件应用使用情况](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报告 - 电子邮件应用使用情况](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

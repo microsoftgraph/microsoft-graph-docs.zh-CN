@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d6212553d9364c4352bf1d6796156a4020854bf1
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 49629542b36d7724b17406c14d925844873c8c964334c71b5eec81451376783c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147110"
 ---
 # <a name="approvalstage-resource-type"></a>approvalStage 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "51469527"
 |reviewResult|String|此审批记录的结果。 可能的值包括 `NotReviewed` `Approved` `Denied` ：、、。|
 |reviewedBy|[userIdentity](useridentity.md) | 审阅者的标识符。 只读。|
 |reviewedDateTime|DateTimeOffset|记录决策的日期和时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|状态|String|阶段状态。 可能的值 `InProgress` `Initializing` `Completed` ：、、、。 `Expired` 只读。|
+|status|String|阶段状态。 可能的值 `InProgress` `Initializing` `Completed` ：、、、。 `Expired` 只读。|
 
 ## <a name="relationships"></a>关系
 

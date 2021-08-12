@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76695bd597afb69708f454e39439220c83091f39
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 759552bd7af15c7764dc212dc035f02c293853c4d4dbe9e3ed906931deb38653
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175710"
 ---
 # <a name="update-user"></a>更新用户
 

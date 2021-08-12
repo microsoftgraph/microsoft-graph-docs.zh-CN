@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 1c419df1deed253092a6572236552d1a3c02783b
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: be67211beceb37e4a1c4001de5fd29b30003a10aaab8604945f1b8c8d38b39f6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665744"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126247"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 枚举类型
 

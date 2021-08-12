@@ -3,12 +3,12 @@ title: 本地化 Microsoft Graph Toolkit组件
 description: 使用 LocalizationHelper 本地化 Microsoft Graph Toolkit组件。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: d333112e77d047151aa6b030acd0ed1cea626573
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 0aeb18b5606c761b9e4e853509bd4ef0dc58682259c3bb0522b65047ed40cf7c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123889"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>本地化 Microsoft Graph Toolkit组件
 

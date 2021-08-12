@@ -1,18 +1,18 @@
 ---
-title: 将 Microsoft Graph Toolkit与管理
-description: 在"电子"应用程序中Toolkit Microsoft Graph 应用入门。
+title: 将 Microsoft Graph Toolkit与管理中心
+description: 开始在"Graph Toolkit"应用程序中使用 Microsoft 应用。
 localization_priority: Normal
 author: amrutha95
-ms.openlocfilehash: b57315e3fcc44f94cc18d3f4a93826b00a5ce4b9
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 4c415d7d99981f3bd3e10180d46a142e5f80231ed7d5222a64faaf7942a05044
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920052"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157898"
 ---
-# <a name="use-the-microsoft-graph-toolkit-with-electron"></a>将 Microsoft Graph Toolkit与管理
+# <a name="use-the-microsoft-graph-toolkit-with-electron"></a>将 Microsoft Graph Toolkit与管理中心
 
-本文介绍了使用 Microsoft Graph 应用创建Toolkit应用并连接到 Microsoft 365 的分步过程。 完成这些步骤后，你将拥有一个显示 Microsoft 365 中当前已登录用户的即将进行的约会的"展示"应用。
+本文介绍使用 Microsoft Graph Toolkit创建一个"电子数据"应用，Microsoft 365。 完成这些步骤后，你将拥有一个显示当前登录用户即将在 Microsoft 365 的约会。
 
 ## <a name="create-an-electron-app"></a>创建一个"时价"应用 
 通过克隆 [显示快速启动类型代码存储库来创建新的一个](https://github.com/electron/electron-quick-start-typescript) "显示"应用。 这将使用 TypeScript 创建一个新的"显示"应用，这将帮助你编写更可靠的代码并避免运行时错误。
@@ -28,7 +28,7 @@ cd electron-quick-start-typescript
 npm install
 ```
 
-安装"@microsoft/mgt-components"程序包，其中包含所有连接到 Microsoft Graph 的 Web 组件。
+安装"@microsoft/mgt-components"程序包，其中包含所有 Microsoft Graph连接的 Web 组件。
 
 ```cmd
 npm i @microsoft/mgt-components
@@ -50,16 +50,16 @@ npm start
 
 ### <a name="add-new-application-registration-in-azure-ad-to-get-a-client-id"></a>在 Azure AD 中添加新的应用程序注册，获取客户端 ID
 
-若要在 Azure AD (Azure Active Directory) 创建应用程序，需要添加新的应用程序注册，然后配置应用名称和重定向 URI。
+若要在 Azure AD Azure Active Directory (创建) ，需要添加新的应用程序注册，然后配置应用名称和重定向 URI。
 
 若要在 Azure AD 中创建应用，请执行以下操作：
 
-1. 转到 [Azure 门户](https://portal.azure.com)。
+1. 转到“[Azure 门户](https://portal.azure.com)”。
 1. 从菜单中，选择 **"Azure Active Directory"。**
 1. 从"Azure Active Directory"菜单中，选择 **"应用注册"。**
 1. 从顶部菜单中，选择"新建 **注册"** 按钮。
 1. 输入应用的名称;例如， `My Electron-App` 。
-1. 对于受支持的帐户类型 [](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)类型，选择任何组织目录中的帐户 (任何 Azure AD 目录 - 多租户) 和个人 Microsoft 帐户 **(例如 Skype、Xbox) 。**
+1. 对于受支持的帐户类型 [](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)类型，请选择任何组织目录中的帐户 (任何 Azure AD 目录 - 多租户) 和个人 Microsoft 帐户 (例如 **Skype、Xbox) 。**
 1. 在" **重定向 URI"** 字段中的下拉列表中，选择"公共客户端/本机 (**移动 & 桌面) "，在**"URL"字段中输入 `msal://redirect` 。
 1. 通过选择"注册" **按钮确认** 更改。
 1. 转到应用程序注册。
@@ -129,7 +129,7 @@ const mainWindow = new BrowserWindow({
  
 ### <a name="add-components-to-your-html-page"></a>将组件添加到 HTML 页面
  
-向应用添加一些内容。 现在，可以使用index.htm *页面中* 的 Microsoft Graph 工具包组件，并显示用户议程。 将 *"index.htm"页* 的内容替换为以下内容。
+向应用添加一些内容。 现在，可以使用 Graph l 页面中的 Microsoftindex.htm *工具包* 组件，并显示用户议程。 将 *"index.htm"页* 的内容替换为以下内容。
  
  ```html
 <!DOCTYPE html>
@@ -244,6 +244,6 @@ let config: MsalElectronConfig = {
 若要详细了解如何实现此操作，请参阅 [microsoft-authentication-library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) 示例。
 
 ## <a name="next-steps"></a>后续步骤
-- 尝试在运动场中的 [组件](https://mgt.dev)。
+- 在[样本](https://mgt.dev)中试用组件。
 - 在 Microsoft [问答中&问题](/answers/products/m365#microsoft-graph)。
-- 在 GitHub 上报告 Bug 或保留 [功能请求](https://aka.ms/mgt)。
+- 在 [GitHub](https://aka.ms/mgt) 上报告 bug 或提出功能请求。

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 508f8c79606ef6e9e0d3778899cb04789b9defde
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e3ef8c7dee695255c7802780f786d4555adc61dae78db191010e7e88d6e3190a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138526"
 ---
 # <a name="offershiftrequest-resource-type"></a>offerShiftRequest 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "50720800"
 
 表示向团队中的其他用户转移的请求。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
 | [List](../api/offershiftrequest-list.md) | [offerShiftRequest 集合](offershiftrequest.md) | 读取团队中 **所有 offerShiftRequest** 对象的属性和关系。 |
-| [创建](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | 创建 **offerShiftRequest 对象** 的实例。 |
-| [获取](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | 读取 **offerShiftRequest** 对象的属性和关系。 |
+| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | 创建 **offerShiftRequest 对象** 的实例。 |
+| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | 读取 **offerShiftRequest** 对象的属性和关系。 |
 |[批准](../api/offershiftrequest-approve.md)|无|批准 **offerShiftRequest**。 |
 |[拒绝](../api/offershiftrequest-decline.md)|无|拒绝 **offerShiftRequest**。 |
 
@@ -33,9 +33,9 @@ ms.locfileid: "50720800"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |recipientActionDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|recipientActionMessage|字符串| 产品/服务班次请求的收件人发送的自定义邮件。 |
-|recipientUserId|字符串| 产品/服务班次请求的收件人的用户 ID。|
-|senderShiftId|字符串| 产品/服务班次请求发件人的用户 ID。|
+|recipientActionMessage|String| 产品/服务班次请求的收件人发送的自定义邮件。 |
+|recipientUserId|String| 产品/服务班次请求的收件人的用户 ID。|
+|senderShiftId|String| 产品/服务班次请求发件人的用户 ID。|
 
 ## <a name="relationships"></a>关系
 

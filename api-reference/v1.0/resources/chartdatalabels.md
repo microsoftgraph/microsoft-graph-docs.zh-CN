@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 502f18fdf03eb28bde4b6f8620bb274f6f2052dd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ad59daf46d6b6f13c7e95ac206b6525b771b3a39f8aa4612af357ee2e634de8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252086"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "47988434"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|position|string|表示数据标签的位置的 DataLabelPosition 值。 可能的值为：、、、、、、、、、、 `None` `Center` `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom` `BestFit` `Callout` 。|
+|position|string|表示数据标签的位置的 DataLabelPosition 值。 可能的值包括 `None` `Center` `InsideEnd` `InsideBase` `OutsideEnd` `Left` ：、、、、、、、、。 `Right` `Top` `Bottom` `BestFit` `Callout`|
 |Separator|string|表示用于图表中数据标签的分隔符的字符串。|
 |showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
 |showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
@@ -41,7 +41,7 @@ ms.locfileid: "47988434"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|表示图表数据标签的格式，包括填充和字体格式。 只读。|
+|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|表示图表数据标签的格式，包括填充和字体格式。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

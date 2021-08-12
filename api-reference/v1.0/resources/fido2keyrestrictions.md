@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c1781e39952bb3bf7cfb307d06ca3167ff58a2a6
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 29ec1327da2104ba14fcfb73cd4374453417f8c2c2f5cb1b10012131918f9baa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149938"
 ---
 # <a name="fido2keyrestrictions-resource-type"></a>fido2KeyRestrictions 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "51469449"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|aaGuids|String collection|Authenticator 证明 GUID 的集合。 AADGUIDs 定义密钥类型和制造商。|
+|aaGuids|String collection|证明AUTHENTICATOR GUID 的集合。 AADGUIDs 定义密钥类型和制造商。|
 |enforcementType|fido2RestrictionEnforcementType|强制类型。 可取值为：`allow`、`block`。|
 |isEnforced|Boolean|确定是否启用配置的密钥强制。|
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2198c84468585cf4dcc9bed365df4b8016fa5ef5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c706d9cb653e2ba5475c035c95a9893dc70fe94391daa83a38c6f31f04ce059f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235534"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>managedAppPolicyDeploymentSummary 资源类型
 
@@ -20,8 +20,8 @@ ms.locfileid: "52752334"
 
 ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[Get managedAppPolicyDeploymentSummary](../api/intune-mam-managedapppolicydeploymentsummary-get.md)|[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md)|读取 [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) 对象的属性和关系。|
 |[Update managedAppPolicyDeploymentSummary](../api/intune-mam-managedapppolicydeploymentsummary-update.md)|[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md)|更新 [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) 对象的属性。|

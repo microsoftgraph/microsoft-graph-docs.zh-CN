@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a091fb23be66f476b03b725e29dced32b138c9bc
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 80d8b6c030ec609c731d45a141ace028aed96909dc685ae26ecd9bb7591d6a5d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761512"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211855"
 ---
 # <a name="policybase-resource-type"></a>policyBase 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "50761512"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| 此策略的唯一标识符。 只读。|
-|说明|字符串| 此策略的说明。|
-|displayName|字符串| 此策略的显示名称。 |
+|id|String| 此策略的唯一标识符。 只读。|
+|说明|String| 此策略的说明。|
+|displayName|String| 此策略的显示名称。 |
 
 ## <a name="relationships"></a>关系
 

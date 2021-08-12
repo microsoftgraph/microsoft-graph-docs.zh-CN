@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: acfcb3dc067f69e8cf7e3e3b9295a6e9e5c8396c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8a3fb0ced8fec9c0a2dfba0127e22e79c241ec1eb611fc3c7da45148733097d0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178617"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -31,7 +31,7 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTg0NmQ3NTctZDVkZC00YzRhL
 https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context={"Tid":"72f988bf-86f1-41af-91ab-2d7cd011db47","Oid":"4b444206-207c-42f8-92a6-e332b41c88a2"}
 ```
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                             | 返回类型                                                 | 说明                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
@@ -67,14 +67,14 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | callbackUri         | 字符串                                                                                                 | 用于传递回调的回调 URL。 必须是 `https`。                                                                                                                               |
 | callChainId         | String                                                                                                 | 一个针对会议中所有参与者的通话的唯一标识符，或一个针对 P2P 通话中两位参与者的通话的唯一标识符。  需要从 `Microsoft.Graph.Call.CallChainId` 复制它。 |
-| callRoutes         | [callRoute](callRoute.md) 集合                                                                                                 | 有关如何重定向呼叫的路由信息。 只读。                                                                                                                |
+| callRoutes         | [callRoute](callRoute.md) 集合                                                                                                 | 有关如何重定向呼叫的路由信息。只读。                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天信息。 加入会议所需的信息。                                                                                                                              |
 | direction           | callDirection                                                                                                 | 呼叫的方向。 可取值为 `incoming` 或 `outgoing`。 只读。                                                                                            |
 | id                  | 字符串                                                                                                 | 来电显示。只读。                                                                                                                                                                        |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。 必需。                                                                        |
-| mediaState          | [callMediaState](callmediastate.md)                                                                    | 只读。 通话媒体状态。 |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。必需。                                                                        |
+| mediaState          | [callMediaState](callmediastate.md)                                                                    | 只读。通话媒体状态。 |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) 或 [tokenMeetingInfo](tokenmeetinginfo.md)             | 加入会议所需的会议信息。                                                                                                            |
-transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | 通话的脚本信息。 只读。    |
+transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | 通话的脚本信息。只读。    |
 | myParticipantId     | String                                                                                                 | 只读。                                                                                                                                                                        |
 | requestedModalities | modality 集合                                                                                      | 请求模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果信息。 例如，可以保留终止原因。 只读。                                                                                                        |

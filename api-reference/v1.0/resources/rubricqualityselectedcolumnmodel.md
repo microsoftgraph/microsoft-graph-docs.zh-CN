@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9e69fa26d97684db4964ffba3d268ee1d1c11b44
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: bef762ca4928dbde1d8e15ead4520af0dd1aa36502b74a1ed6d100a2d0480c28
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911403"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246603"
 ---
 # <a name="rubricqualityselectedcolumnmodel-resource-type"></a>rubricQualitySelectedColumnModel 资源类型
 

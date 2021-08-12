@@ -4,18 +4,18 @@ description: Microsoft Graph 中的身份验证方法 API 使组织能够以编�
 author: mmcla
 localization_priority: Priority
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 36385345141daa8dc782b64fa154ef97c46b3091
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8750f56db54c1dd5c2ef8708ccd1f3b873c9ea0328517743b881f7502f299f89
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251657"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Microsoft Graph 身份验证方法 API 入门
 
 [身份验证方法](/azure/active-directory/authentication/concept-authentication-methods) 是用户在 Azure Active Directory (Azure AD) 中的身份验证方式。 Azure AD 中的身份验证方法包括密码和手机（例如，短信和语音呼叫），目前可在 Microsoft Graph 中对这些方法进行管理，此外还有 FIDO2 安全密钥和 Microsoft Authenticator 应用。 身份验证方法用于主要、双重因素和分步身份验证，此外还适用于自助式密码重置 (SSPR) 流程。
 
-可使用身份验证方法 API 来管理用户的身份验证方法。 例如，你能够：
+可使用身份验证方法 API 来管理用户的身份验证方法。例如，你可以：
 
 * 为用户添加一个电话号码，通过策略启用短信和语音呼叫身份验证后，该用户即可使用该号码进行此类身份验证
 * 更新或删除分配给用户的电话号码

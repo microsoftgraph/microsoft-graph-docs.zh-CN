@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1888bf89265ff3b62fccd0e52c10c7c7b9bdb3c5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2e5675a4b63a4842b8470f0631a1819e5dd63570a9a2252448b52abb883b8de4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180458"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>standardTimeZoneOffset 资源类型
 

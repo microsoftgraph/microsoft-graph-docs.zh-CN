@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: e39a1c71064282f3422a3bc48e3d019a852dbb95
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: fc687460d397c4f8048607e1a1434ae48a7505d3af06590995dd2f47a08340d1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212110"
 ---
 # <a name="azure-active-directory-consent-requests"></a>Azure Active Directory同意请求
 
@@ -51,7 +51,7 @@ Azure Active Directory (Azure AD) 请求可帮助你管理尝试访问需要管�
 
 | 操作 | 委派权限 | 呼叫用户的必需目录角色 |
 |:------------------|:------------|:--------------------------------------------|
-| 读取 | ConsentRequest.Read.All、ConsentRequest.ReadWrite.All | 全局管理员、全局读者、云应用管理员和应用程序管理员 |
+| 阅读 | ConsentRequest.Read.All、ConsentRequest.ReadWrite.All | 全局管理员、全局读者、云应用管理员和应用程序管理员 |
 
 ## <a name="see-also"></a>另请参阅
 

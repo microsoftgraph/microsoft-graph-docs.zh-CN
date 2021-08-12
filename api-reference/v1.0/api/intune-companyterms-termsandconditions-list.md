@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78d00f608e6ca4274e7f5753b4c7ba8e42e914bf
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4a3720e0c2e43058648d243099ef1116a63a4f7cb8c49ef85597855ea5385b42
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758412"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192990"
 ---
 # <a name="list-termsandconditionses"></a>列出 termsAndConditionses
 

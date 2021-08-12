@@ -2,12 +2,12 @@
 author: jackson-woods
 localization_priority: Priority
 ms.topic: include
-ms.openlocfilehash: 3d7cbdbbac6082982ad415aa176dc57295a8cfae
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: b7b01dc5effd29fb01297094c9945dc10e890fd98f5b97f3cdc226fb4331116a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169220"
 ---
 <!-- markdownlint-disable MD041-->
 

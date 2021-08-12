@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: bd9087759a6b466f5d2c1ba3b8957c17545b1755
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: b0b9bbb34748f59da51f196b3dd63f73f0a5d84b30041f17c5bdb1f2666dad1d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126123"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 

@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 4dd853ca32c918988f2f99e1f1238d9ac937da02
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: dbd84ff788cf79e212fa4031d85a6578d52343facdeee06a0bd5a4bde9af8fe7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467253"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249312"
 ---
 # <a name="externalitemcontent-resource-type"></a>externalItemContent 资源类型
 

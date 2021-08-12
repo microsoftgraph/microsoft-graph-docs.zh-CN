@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3053911b32e0850009adb42815114adc6c2848b2
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4c61d57519ee618ed2b5ecbe23109ad9a79b83e90f929be452528b84c3cc3c3e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130882"
 ---
 # <a name="update-ebookinstallsummary"></a>更新 eBookInstallSummary
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 87919f9abccb7b90f4c0e947aac6e63e31323082
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 1178409178057f2af104146e21083419a9bf1907a2f78247fb4a04a6976edafa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230466"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 

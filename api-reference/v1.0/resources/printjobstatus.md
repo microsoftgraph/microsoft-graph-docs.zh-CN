@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 7a6f5e0c728c1de122f9b642b9de2f1db050cf09
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: acb8b99af64a33219336972fa9df590dac602138058307fc5ca690322e4ada9b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218427"
 ---
 # <a name="printjobstatus-resource-type"></a>printJobStatus 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "50517292"
 表示打印作业的当前状态。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |state|printJobProcessingState|打印作业的当前处理状态。 下表介绍了有效值。 只读。|
 |详细信息|printJobProcessingDetail 集合|打印作业状态的其他详细信息。 下表介绍了有效值。 只读。|
@@ -30,28 +30,28 @@ ms.locfileid: "50517292"
 
 ### <a name="printjobprocessingstate-values"></a>printJobProcessingState 值
 
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|无法识别打印机报告的处理状态。|
-|挂起|1 |打印机正在挂起打印作业的处理。|
-|processing|2 |打印作业当前正由打印机处理。|
-|paused|3 |打印作业已暂停。|
-|已停止|4 |打印作业已停止，因为需要解决打印机的问题，然后作业才能继续。 可在打印机状态资源中找到详细信息。|
+|pending|1|打印作业正等待打印机进行处理。|
+|processing|2|打印作业当前正由打印机处理。|
+|paused|3|打印作业已暂停。|
+|已停止|4 |打印作业已停止，因为需要解决打印机的问题，然后作业才能继续。 有关详细信息，请参阅打印机状态资源。|
 |已完成|5 |打印作业已成功完成，不会进行进一步处理。|
 |canceled|6 |打印作业已由用户取消，不会进行进一步处理。|
-|已中止|7 |打印作业已由用户或打印机中止，不会进行进一步处理。|
+|aborted|7 |打印作业已由用户或打印机中止，不会进行进一步处理。|
 
 ### <a name="printjobprocessingdetail-values"></a>printJobProcessingDetail 值
 
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|uploadPending|0|尚未上载文档有效负载。|
-|转换|1 |正在转换文档有效负载。|
-|completedSuccessfully|2 |作业已成功完成。|
-|completedWithWarnings|3 |作业已完成，并出现警告。|
+|uploadPending|0|文档有效负载尚未上载。|
+|transforming|1|正在转换文档负载。|
+|completedSuccessfully|2|作业已成功完成。|
+|completedWithWarnings|3|作业已完成，并出现警告。|
 |completedWithErrors|4 |作业已完成，出现错误。|
-|releaseWait|5 |作业正在等待发布。|
-|解释|6 |作业正在"处理"状态，但更具体地说，正在解释文档有效负载。|
+|releaseWait|5 |作业正在等待释放。|
+|解释|6 |作业的状态为"正在处理"，但更具体地说，正在解释文档有效负载。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

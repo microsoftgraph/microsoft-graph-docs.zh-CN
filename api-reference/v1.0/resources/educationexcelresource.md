@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9345bb39f16066b4c5eee688d781e99563147ef2
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 39f74b488351ddca954db696f9c8ec3bfe5ff97b86d294b5dd2162e199d6c849
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252023"
 ---
 # <a name="educationexcelresource-resource-type"></a>educationExcelResource 资源类型
 

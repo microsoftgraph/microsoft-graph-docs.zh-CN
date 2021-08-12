@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f595ca46decf6f9463e894c270cabb705c10a21a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 5e75d6039b85a0e5fea89753d1b9a36b77cba1fb03ead4cba8888ee969d22ea8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243602"
 ---
 # <a name="eventmessageresponse-resource-type"></a>eventMessageResponse 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50721304"
 
 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -42,7 +42,7 @@ ms.locfileid: "50721304"
 |[发送](../api/message-send.md)|无|发送以前创建的邮件草稿。然后邮件保存在已发送邮件文件夹中。|
 |**附件**| | |
 |[列出附件](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) 集合| 获取 eventMessage 的所有附件。|
-|[Add attachment](../api/eventmessage-post-attachments.md) |[附件](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
+|[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取由名称标识的开放扩展。|
@@ -76,10 +76,10 @@ ms.locfileid: "50721304"
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |邮件 ID 采用 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 指定的格式。 |
 |isAllDay |Boolean|指示事件是否持续一整天。 调整此属性也需要调整 **事件的 startDateTime** 和 **endDateTime** 属性。|
-|isDelegated|布尔值|如果代理可以访问此会议请求响应，则其为 True，否则为 false。 默认为 false。|
+|isDelegated|Boolean|如果代理可以访问此会议请求响应，则其为 True，否则为 false。 默认为 false。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isOutOfDate|布尔值|指示此会议请求是否已由最新请求过时。|
+|isOutOfDate|Boolean|指示此会议请求是否已由最新请求过时。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
@@ -96,7 +96,7 @@ ms.locfileid: "50721304"
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|所请求的会议的开始时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
-|type|字符串|请求的会议类型 `singleInstance` `occurence` ：、、、。 `exception` `seriesMaster`|
+|type|String|请求的会议类型 `singleInstance` `occurence` ：、、、。 `exception` `seriesMaster`|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
 |webLink|String|要在 Outlook 网页版中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。 如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。 如果 ispopout 设置为 0，则浏览器将在 Outlook 网页版的审阅窗格中显示邮件。<br><br>如果通过 Outlook 网页版登录邮箱，该邮件将在浏览器中打开。 如果尚未使用浏览器登录，系统将提示你登录。<br><br>无法从 iFrame 中访问此 URL。|
 
@@ -105,7 +105,7 @@ ms.locfileid: "50721304"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|attachments|[附件](attachment.md)集合|邮件的 [fileAttachment](fileattachment.md) [、itemAttachment](itemattachment.md)和 [referenceAttachment](referenceattachment.md) 附件的集合。 只读。 可为空。|
+|attachments|[附件](attachment.md)集合|邮件的 [fileAttachment](fileattachment.md) [、itemAttachment](itemattachment.md)和 [referenceAttachment](referenceattachment.md) 附件的集合。 只读。 可为 NULL。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|

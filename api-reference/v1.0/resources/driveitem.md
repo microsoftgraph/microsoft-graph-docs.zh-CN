@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: DriveItem 资源类型
-description: 项目是 OneDrive API 中的主数据模型。 每项都是一个项目。
+description: 项目是 OneDrive API 中的主数据模型。每一个都是一个项。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f4fc16e311a696c10076588023945064f76ee3dc
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: c7e611b40ab2d0f770760bbedcbddaea8d0c3eecbd6efcd1c437a1ab1a9ef326
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182565"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -25,8 +25,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 * 通过 **driveItem** 唯一标识符使用 `drive/items/{item-id}` 的方式
 * 通过使用文件系统路径 `/drive/root:/path/to/file` 的方式
 
-**DriveItem** 资源具有多个建模为属性的 Facet，用于提供 driveItem 的标识和功能相关数据。
-例如：
+**DriveItem** 资源拥有作为属性进行模块化的多个 Facet，用于提供 driveItem 的标识和功能相关数据。例如：
 
 * 文件夹具有 [**folder facet**][folder]
 * 文件具有 [**file facet**][file]。
@@ -60,7 +59,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | name                 | String             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
-| pendingOperations    | [pendingOperations][] | 如果存在，则表示可能影响 driveItem 状态的一个或多个操作正在等待完成。 只读。
+| pendingOperations    | [pendingOperations][] | 如果存在，则表示可能影响 driveItem 状态的一个或多个操作正在等待完成。只读。
 | photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
@@ -83,14 +82,14 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | activities         | [itemActivity][] 集合 | 最近发生在此项上的活动的列表。
 | 分析          | [itemAnalytics][] 资源  | 此项目上发生的查看活动的相关分析。
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
-| createdByUser      | [user][]                    | 创建了项的用户的身份。 只读。
-| lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。 只读。
+| createdByUser      | [user][]                    | 创建了项的用户的身份。只读。
+| lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。只读。
 | listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 只读。 可为 null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
 | 订阅      | [订阅][]集合 | 项目上的订阅集。 仅在驱动器根目录上支持。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
 | 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 Null。
-| 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 以使用工作表的内容。 可为 Null。
+| 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 可以使用工作表的内容。可为 Null
 
 ## <a name="instance-attributes"></a>实例属性
 

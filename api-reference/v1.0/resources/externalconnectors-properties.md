@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 0bb0406f23b7516f2b1febcb45b2a4072203b874
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: ad0e57693b0ac48b5e1fa40f5fc9f0ed4cc4249409e68f678f47a8244cc105f1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467219"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124477"
 ---
 # <a name="properties-resource-type"></a>properties 资源类型
 

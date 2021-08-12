@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: aa1cb7a2bedbf6ab696b6731546eb97861bfb697
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 5e3a8e6ba1110aa9183f9ab80732e6128b4c0d1ff327ab0bc13ee71aa5b26500
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218291"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
-[Microsoft Teams](https://products.office.com/microsoft-teams) 是团队合作和智能通信的终极中心。 Microsoft Teams 基于 [Microsoft 365](https://products.office.com/) 超过 1.2 亿用户的实力和规模，提供了基于聊天的协作、会议、通话和企业语音功能。
+[Microsoft Teams](https://products.office.com/microsoft-teams) 是团队合作和智能通信的终极中心。[Microsoft Teams](https://products.office.com/) 基于超过 1.2 亿用户的 Microsoft 365 强度和规模，提供基于聊天的协作、会议、通话、企业语音功能。
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]

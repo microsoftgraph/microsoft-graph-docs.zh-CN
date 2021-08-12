@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4a3a4428f1c7be9a840b18625b788b26751eca57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f829a71905275a338e5bb76cb6e86fd9cb425b50eb7a15b1f5bbdeaf2d1f7089
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235238"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>unmuteParticipantOperation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48090632"
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 适用                  | String                      | 唯一的客户端上下文字符串。 最多可以有256个字符。                                                                               |
+| clientContext                  | String                      | 唯一的客户端上下文字符串。 最多可包含 256 个字符。                                                                               |
 | id                             | String                      | 服务器操作 ID。 只读。                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                            |
 | status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |

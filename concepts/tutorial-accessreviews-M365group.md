@@ -4,12 +4,12 @@ description: 使用访问评审 API 查看来宾对组Microsoft 365访问
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: 807518bd62c2b242548c65c3d68c119ec3fb0c5f
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: e27f8d8967bd9d3148759e692f3734e5c6018e54a01897d8d4a981c11bf8eabc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186797"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>教程：使用访问评审 API 查看来宾对组Microsoft 365访问
 

@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 3c4e358ed8d0d769aa88aa7100acb113fe2caa9a
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: a14435329e99dba4c9ec6710c36f91a05655d0e711deab3994e58d18e853253b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54151815"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Microsoft Graph 连接器概述
 

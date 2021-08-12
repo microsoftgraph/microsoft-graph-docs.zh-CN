@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4e03faaff265bf82bacf16a2db6c75e81176eafa
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: f721bac7c187aaaed9474b129abfe8cda3954bf5ee7ac1ca98f685f16818408f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152647"
 ---
 # <a name="userflow-resource-type"></a>UserFlow 资源类型
 

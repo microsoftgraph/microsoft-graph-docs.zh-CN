@@ -1,22 +1,22 @@
 ---
 title: teamsAppInstallation 资源类型
-description: 表示安装在团队中的 teamsApp 或用户的个人作用域。
+description: 表示团队中安装的 teamsApp 或用户的个人作用域。
 author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: da55c4cf7b20558258493c69c46e2b26107f4aed
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 131f809955d61ea186685df6c874464d44229bc972f82a20e12722c6f42b4e15
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141292"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
 命名空间：microsoft.graph
 
-表示 [安装在团队](teamsapp.md) 中的 [teamsApp](team.md) 或用户的个人 [作用域](user.md)。 作为应用一部分的任何机器人都将成为应用添加到的任何团队或用户个人范围的一部分。
+表示 [团队中](teamsapp.md) 安装的 [teamsApp](team.md) 或用户的个人 [作用域](user.md)。 作为应用一部分的任何机器人都将成为将应用添加到的任何团队或用户个人范围的一部分。
 
 > [!NOTE]
 > **teamsAppInstallation** 资源的 `id` 与关联 **teamsApp** 资源的 `id` 具有不同的值。
@@ -25,14 +25,14 @@ ms.locfileid: "49660070"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出在团队中安装的应用](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在团队中安装的应用。|
-|[在团队中安装应用](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取在团队中安装的指定应用。|
-|[将应用添加到团队](../api/team-post-installedapps.md) |无 | 添加 (将) 安装到团队。|
-|[升级团队中安装的应用](../api/team-teamsappinstallation-upgrade.md) | 无 | 将团队中安装的应用升级到最新版本。|
-|[从团队中删除应用](../api/team-delete-installedapps.md) | 无 | 从 (中删除) 卸载应用。|
+|[列出团队中安装的应用](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出团队中安装的应用。|
+|[获取团队中安装的应用](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取团队中安装的指定应用。|
+|[将应用添加到团队](../api/team-post-installedapps.md) |无 | 向团队添加（安装）应用程序。|
+|[升级团队中安装的应用](../api/team-teamsappinstallation-upgrade.md) | 无 | 将团队中安装的应用程序升级到最新版本。|
+|[从团队中删除应用](../api/team-delete-installedapps.md) | 无 | 从团队中删除（卸载）应用。|
 |[列出为用户安装的应用](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用。|
 |[为用户安装应用](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | 获取在用户的个人范围内安装的指定应用。 |
-|[为用户添加应用](../api/userteamwork-post-installedapps.md) | | 添加 (在) 范围内安装应用。|
+|[为用户添加应用](../api/userteamwork-post-installedapps.md) | | 添加 (在) 个人范围内安装应用。|
 |[升级为用户安装的应用](../api/userteamwork-teamsappinstallation-upgrade.md) | 无 | 将用户个人范围内安装的应用升级到最新版本。|
 |[为用户删除应用](../api/userteamwork-delete-installedapps.md) | 无 | 删除 (用户) 范围内卸载应用。|
 
@@ -41,7 +41,7 @@ ms.locfileid: "49660070"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一 ID (不是 Teams 应用 ID) 。 |
+| id                  | string   | 唯一 ID (应用TEAMS ID) 。 |
 
 ## <a name="relationships"></a>关系
 

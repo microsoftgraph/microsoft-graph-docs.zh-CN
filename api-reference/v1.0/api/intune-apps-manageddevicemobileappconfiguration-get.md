@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8243273d1f4e4cd26e366f5927c81ad1ad3fbcb7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: dfa7842aa1328e75cd756209cc6fae7b90013daa20d5a6f5e93f18614bcf47a2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164102"
 ---
 # <a name="get-manageddevicemobileappconfiguration"></a>获取 managedDeviceMobileAppConfiguration
 

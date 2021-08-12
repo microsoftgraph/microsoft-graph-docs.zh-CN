@@ -1,16 +1,16 @@
 ---
 title: DriveItemVersion 资源类型
-description: '**DriveItemVersion**资源表示 DriveItem 的特定版本。'
+description: '**DriveItemVersion** 资源表示 DriveItem 的特定版本。'
 localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 1f7c45ecc82a209094748410614d6b25993e2aa7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d015175df3f4fb91d6a91dce7cf5b10714f6d1988044e9c98c81fcd5c3dd5369
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135258"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "48018576"
   "blockType": "resource",
   "baseType": "microsoft.graph.baseItemVersion",
   "@odata.type": "microsoft.graph.driveItemVersion",
-  "@type.aka": "oneDrive.driveItemVersion"
+  "@type.aka&quot;: &quot;oneDrive.driveItemVersion"
 }-->
 
 ```json
@@ -66,7 +66,7 @@ ms.locfileid: "48018576"
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | 上次修改版本的日期和时间。 只读。                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 指示此特定版本的发布状态。 只读。 |
 | **size**                 | Int64                                                | 指示此版本项的内容流大小。  |
-| **content**              | Stream                                               | 此版本项目的内容流。                        |
+| **content**              | Stream                                               | 此版本的项的内容流。                        |
 
 <!-- {
   "type": "#page.annotation",

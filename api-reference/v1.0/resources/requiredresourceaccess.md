@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 0ca072b679a7ec3b69c311d09aaf2000f4754f19
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 24d4e48fb6a15fabb61552d1ee2f2d884f276e6a862706b290fb97c1a2a78096
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133257"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184492"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>requiredResourceAccess 资源类型
 
 命名空间：microsoft.graph
 
-指定应用程序需要访问的指定资源下的 OAuth 2.0 权限范围和应用角色集。 指定的 OAuth 2.0 权限范围可能由客户端应用程序请求 (调用资源应用程序时通过 **requiredResourceAccess**) 请求。 **应用程序实体的 requiredResourceAccess** 属性是 **Re一redResourceAccess 的集合**。 [](application.md)
+指定应用程序需要访问的指定资源下的 OAuth 2.0 权限范围和应用角色集。 指定的 OAuth 2.0 权限范围可能由客户端应用程序 (调用资源应用程序时) **requiredResourceAccess** 集合请求。 **application 实体的 requiredResourceAccess** 属性是 **Re一redResourceAccess 的集合**。 [](application.md)
 
 
 ## <a name="json-representation"></a>JSON 表示形式

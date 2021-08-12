@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee7032ff38f0be2336821d61d59a7086a9381483
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5f36dcb26da9e13998daceae1c69d3efb9ed305e6f6bbb4b4477ecadf4f3d61e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752495"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243824"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>setMobileDeviceManagementAuthority 操作
 

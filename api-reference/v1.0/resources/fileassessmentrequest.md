@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 36ace43254e440b4777609ff31378621cffa25fd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 785947f21d3ec79c7233613990cc9ebd0e6d88be0ab8fbf9b14bcd3190e3bcf6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216936"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>fileAssessmentRequest 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50952520"
 
 该文件可以是在电子邮件附件中收到的文本文件、Word 文档或二进制文件。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -38,7 +38,7 @@ ms.locfileid: "50952520"
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|提交者的预期评估。 可能的值是：`block`、`unblock`。|
 |id|String|威胁评估请求 ID 是 GUID (全局唯一) 。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
-|状态|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
+|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
 
 ## <a name="relationships"></a>关系
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0b7aa184981549f45c9c5d00e5c32cd5431123c2
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 3f3ca18320243eea6e6b1d31b32eb999cf457c99287bb5f3abc5bb2c3d78796a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126366"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange 资源类型
 
@@ -22,13 +22,13 @@ ms.locfileid: "52547258"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |endDate|Date|定期模式的停止应用日期。 会议的最后一次发生时间可能不是此日期，具体视事件的定期模式而定。 如果 **type** 为 `endDate`，此为必需属性。|
 |numberOfOccurrences|Int32|事件重复发生次数。 如果 **type** 为 `numbered`，此为必需属性，且必须为正数。|
 |recurrenceTimeZone|String |**startDate** 和 **endDate** 属性的时区。 此为可选属性。 如果未指定，使用的是事件时区。|
 |startDate|Date|定期模式的开始应用日期。 会议的第一次发生时间可能是此日期，也可能晚于此日期，具体视事件的定期模式而定。 必须与定期 [事件](event.md)的 **start** 属性值相同。 此为必需属性。|
-|type|recurrenceRangeType|定期范围。 可能的值包括 `endDate`、`noEnd`、`numbered`。 必需。|
+|type|recurrenceRangeType|定期范围。 可能的值包括 `endDate`、`noEnd`、`numbered`。 必填。|
 
 **type** 属性可用于指定不同类型的 **recurrenceRange**。 请注意每种类型的必需属性，如下表所述。
 

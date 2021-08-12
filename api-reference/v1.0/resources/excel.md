@@ -5,12 +5,12 @@ localization_priority: Priority
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 2fe503472021c26c2ec856e1b73cb9f432190891
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: a18fa805d7261aaeab58b5edcf5eeefd82e786e7153859916e97c3765fc17acb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243579"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 

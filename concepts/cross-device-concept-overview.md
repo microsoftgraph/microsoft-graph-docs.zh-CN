@@ -4,12 +4,12 @@ description: '在当今的多设备环境中，消费者使用设备的方式跨
 localization_priority: Priority
 ms.prod: project-rome
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 34e82ca45eb1093ea0e14d1123d855295d156d35
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9bde6169eef1bce46b3e2611b95e6876bef0bfd040a0c45e87bf2a5cc999a2bb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216502"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Microsoft Graph 中的跨设备体验
 

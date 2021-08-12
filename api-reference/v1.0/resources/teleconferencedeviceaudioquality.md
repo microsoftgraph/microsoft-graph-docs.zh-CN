@@ -5,18 +5,18 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 898d552e8943da11e0d57b45630bf42848f01d04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac7aa441786cb337377544704af9b35d278eeeefdc15ec81019e6c6ec07be3bd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251734"
 ---
 # <a name="teleconferencedeviceaudioquality-resource-type"></a>teleconferenceDeviceAudioQuality 资源类型
 
 命名空间：microsoft.graph
 
-表示视频电话会议设备音频质量数据。
+代表视频电话会议设备音频质量数据。
 
 ## <a name="properties"></a>属性
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 1a01418fad74d48a1697bace91833d880a94f467
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2d1b6df789f5ea472f60210a9f290f968c10a6bc1ccb7f3d481dc5ce4e6dbad8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223737"
 ---
 # <a name="apiapplication-resource-type"></a>apiApplication 资源类型
 

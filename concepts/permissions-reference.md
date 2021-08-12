@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a98c092294f28b32ba5fc8a747b1ff9aad1ee17a
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 905316d0b080d718ab44388613d7a6b10192e1c4
+ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580417"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726738"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1131,7 +1131,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1287,7 +1287,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1510,7 +1510,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 |:---------- |:-------------- |:----------- |:---------------------- |
 | _PrivilegedAccess.Read.AzureAD_ |为目录读取 Privileged Identity Management 数据  | 允许应用读取 Azure AD 的 Privileged Identity Management API 的权限。 | 是 |
 | _PrivilegedAccess.Read.AzureADGroup_ |读取特权访问组的 Privileged Identity Management 数据 | 允许应用读取组的 Privileged Identity Management API 的权限。 | 是 |
-| _PrivilegedAccess.Read.AzureADResources_ |读取 Azure 资源的 Privileged Identity Management 数据 | 允许应用读取 Azure AD 资源的 Privileged Identity Management API 的权限。 | 是 |
+| _PrivilegedAccess.Read.AzureResources_ |读取 Azure 资源的 Privileged Identity Management 数据 | 允许应用读取 Azure AD 资源的 Privileged Identity Management API 的权限。 | 是 |
 
 ---
 

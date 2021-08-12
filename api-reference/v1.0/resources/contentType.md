@@ -6,12 +6,12 @@ localization_priority: Normal
 description: ContentType 资源代表 SharePoint 中的内容类型。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f49ce9d1c656975ee02e6c1056015f7e033d57f9
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1b307fb0b11b0608c15c46b618775dcef431815c4302a092e7e89f9cb7cb5942
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238559"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229288"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
 
@@ -57,7 +57,7 @@ ms.locfileid: "50238559"
 | **hidden**        | boolean              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
 | **id**            | string               | 内容类型的唯一标识符。
 | **inheritedFrom** | [itemReference][]    | 如果此内容类型继承自另一个作用域（如某个站点），则会提供对在其中定义内容类型的项的引用。
-| **name**          | string               | 内容类型的名称。
+| **名称**          | string               | 内容类型的名称。
 | **order**         | [contentTypeOrder][] | 指定在选择 UI 中显示内容类型的顺序。
 | **parentId**      | string               | 内容类型的唯一标识符。
 | **readOnly**      | boolean              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
@@ -81,6 +81,6 @@ ms.locfileid: "50238559"
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentType"
+  "tocPath&quot;: &quot;Resources/ContentType"
 } -->
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 39a4c68f2a688564284fc6045f61b84e72b748ab
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bff1a0bf4191f86759fc70a5384fec270a90c21456ba45ae26415d24b9edf72e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155048"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52751690"
 设备注册状态。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notRegistered|0|设备未注册。|
 |registered|2|设备已注册。|

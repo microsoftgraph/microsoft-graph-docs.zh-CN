@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 345e3e81b86fe42d16f4110450120c9f225c22dd
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7681472eb3f30676b35b9501ba410b660e8006710d375679254213cee239eb31
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141306"
 ---
 # <a name="security-resource-type"></a>安全资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "50473663"
 
 安全资源是安全对象模型的入口点。 它返回单一安全资源。 它不包含任何可用属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出警报](../api/alert-list.md) | [警报](alert.md)集合 | 获取警报对象集合。 |
+| [列出警报](../api/alert-list.md) | [警报](alert.md)集合 | 获取 alert 对象集合。 |
 | [获取警报](../api/alert-get.md) | [警报](alert.md)集合 | 获取警报对象。 |
 | [更新警报](../api/alert-update.md) | [警报](alert.md)集合 | 获取警报对象。 |
 
@@ -51,7 +51,7 @@ ms.locfileid: "50473663"
 
 ## <a name="example"></a>示例
 
-安全 **资源** 位于图形的根目录下。
+**安全** 资源位于图形的根目录。
 
 <!--{
   "blockType": "request"

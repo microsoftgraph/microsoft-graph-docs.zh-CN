@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 026bbcf2bbd65ee2efe67ab3996346655acb8da0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 62ec618b40d6e746e5668b41e3b2c3f783c86fa03ecb3bd6bf0ab86a186ee4fd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251960"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "52754544"
 
 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List androidManagedAppProtections](../api/intune-mam-androidmanagedappprotection-list.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) 集合|列出 [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) 对象的属性和关系。|
 |[Get androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-get.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|读取 [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) 对象的属性和关系。|
@@ -79,7 +79,7 @@ ms.locfileid: "52754544"
 |customBrowserDisplayName|String|在 Android 上打开 Web 链接的首选自定义浏览器的友好名称。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) 集合|策略部署到的包含组和排除组列表的导航属性。 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) 集合|策略部署到的应用的列表。|

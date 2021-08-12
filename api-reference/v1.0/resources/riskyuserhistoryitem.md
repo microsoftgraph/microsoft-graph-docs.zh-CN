@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2188a3a13d36a6d224b3c8ca2a7ac297c22712ce
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c83f35d9d8d187fd3a3bb64d727261431e3b13700735c4ad618f0a01b80fc1ce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189385"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>riskyUserHistoryItem 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "50443886"
 
 继承自 [riskyUser](../resources/riskyuser.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列表历史记录](../api/riskyuser-list-history.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 集合|从历史记录导航属性获取 riskyUserHistoryItems。|
@@ -46,7 +46,7 @@ ms.locfileid: "50443886"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|历史记录|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 集合| 继承自 [riskyUser](../resources/riskyuser.md)|
+|history|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 集合| 继承自 [riskyUser](../resources/riskyuser.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

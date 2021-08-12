@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: fa7f18c075b7369f7672b25c85c264549a753ec8
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 18c6694f01c9cd3441d59935ad399372ffbb4c6b831a542a2e00a9eb2e6902f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251713"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 

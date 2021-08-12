@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8c05b0c9733515f80db0189e6f9cb7bbee6a0fd8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8bf2db054f56570c2291f6fb03c162f2572b46f7ae2810be9071bb6978719f64
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219288"
 ---
 # <a name="get-icon"></a>获取图标
 
@@ -60,7 +60,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 369ad06f9d653054c6b165b0ebc2daa3e8d402c6
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: a50d7ed083672577dcba2eaa45fc3a826d52cce017701d65694f07fefb5a4edb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216950"
 ---
 # <a name="authenticationflowspolicy-resource-type"></a>authenticationFlowsPolicy 资源类型
 

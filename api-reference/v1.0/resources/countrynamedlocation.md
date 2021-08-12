@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 531942e5026e2fc3d4d9ed3311d9130275d5a853
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 2e192661873b6e804156d413388f30fd57b7b1de62c511a2e0f029615292a47a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443163"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121274"
 ---
 # <a name="countrynamedlocation-resource-type"></a>countryNamedLocation 资源类型
 
@@ -34,12 +34,12 @@ ms.locfileid: "53443163"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区列表。|
+|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区列表。|
 |countryLookupMethod|countryLookupMethodType|确定用于确定用户所在的国家/地区的方法。 可能的值为 `clientIpAddress` 和 `authenticatorAppGps`。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
 |displayName|String|位置的可读名称。 继承自 [namedLocation](../resources/namedLocation.md)。|
 |id|String|namedLocation 对象的标识符。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|includeUnknownCountriesAndRegions|布尔|如此 如果未映射到国家/地区或地区的 IP 地址应包含在命名的位置。|
+|includeUnknownCountriesAndRegions|Boolean|如此 如果未映射到国家/地区或地区的 IP 地址应包含在命名的位置。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的上次修改日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
 
 ## <a name="relationships"></a>关系

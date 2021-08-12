@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 767076dc8c18db8503f048bb1f1d91a55d7b2114
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 87bb9c688e97cbd4e5fc82cf79e1a111c00dc9991687fd5fbe83d7b1b9c7abe8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755824"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235630"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 枚举类型
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ed632865093f40c38fcfbce21614ce98fd952c6e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: da14d59a88994748df037316291897abf725fc54de5dcb6ca2c477239eb090c9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231766"
 ---
 # <a name="win32lobappnotification-enum-type"></a>win32LobAppNotification 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752159"
 包含通知状态的值。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |showAll|0|显示所有通知。|
 |showReboot|1|只显示重启通知并禁止显示其他通知。|

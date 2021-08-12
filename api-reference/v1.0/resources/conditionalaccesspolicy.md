@@ -1,24 +1,24 @@
 ---
 title: conditionalAccessPolicy 资源类型
-description: 表示 Azure Active Directory 条件访问策略。 条件访问策略是定义访问方案的自定义规则。
+description: 表示Azure Active Directory访问策略。 条件访问策略是定义访问方案的自定义规则。
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1d9f9256a7fea09ab7219ef460ed2f2dc9154538
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1d7e21da89155fa174e4396b4807b2cde4f0b2bf18ae0e2bc19fbfcdf819279f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231871"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>conditionalAccessPolicy 资源类型
 
 命名空间：microsoft.graph
 
-表示 Azure Active Directory 条件访问策略。 条件访问策略是定义访问方案的自定义规则。 有关详细信息，请参阅条件 [访问文档](/azure/active-directory/conditional-access/)。
+表示Azure Active Directory访问策略。 条件访问策略是定义访问方案的自定义规则。 有关详细信息，请参阅条件 [访问文档](/azure/active-directory/conditional-access/)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

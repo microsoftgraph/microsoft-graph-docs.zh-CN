@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aeaa63127765d6648dc38e160a8cc1fcfb5a77d1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f063d2e5149083ce23aad5c00cfedd0ec0f8ac13000f9890ce22e4e321a7e1b5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52746211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138757"
 ---
 # <a name="list-detectedapps"></a>列出 detectedApps
 

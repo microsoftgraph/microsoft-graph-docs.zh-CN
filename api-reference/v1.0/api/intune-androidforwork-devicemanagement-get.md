@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68cc10e72e96d40805345d9b65baa526bf3bd10f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6e9c03ef72f3c495dc18bd202fb00ede2ee6ee448eb6e737b3fc8cf3ee6c19ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193081"
 ---
 # <a name="get-devicemanagement"></a>获取 deviceManagement
 

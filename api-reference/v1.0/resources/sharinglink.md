@@ -6,12 +6,12 @@ localization_priority: Normal
 description: SharingLink 资源将与链接相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: def93edc26d90d40b480243431316c60a7f34e37
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 0f3af451817cbae0c4d4930b035792482e06afac07de77f1b4ff1c975d431a06
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239805"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237535"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink 资源类型
 
@@ -49,9 +49,9 @@ ms.locfileid: "50239805"
 | application | [Identity][]  | 链接所关联的应用。
 | type        | String        | 创建的链接类型。
 | scope       | String        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
-| preventsDownload | 布尔       | 如果为 true，则用户只能使用此链接来查看 Web 上的项目，并且不能使用它下载项目的内容。 仅适用于 OneDrive for Business 和 SharePoint。
+| preventsDownload | Boolean       | 如果为 true，则用户只能使用此链接来查看 Web 上的项目，并且不能使用它下载项目的内容。 仅适用于 OneDrive for Business 和 SharePoint。
 | webHtml     | String        | 对于 `embed` 链接，此属性包含在网页上嵌入项的 `<iframe>` 元素的 HTML 代码。
-| WebUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
+| webUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
 
 [Identity]: identity.md
 

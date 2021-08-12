@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 18254f8776371871f1dc0fb5ae6ac54a51cea83b
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: beb0a9b424f1207a7cf378e6bbb17c747ca68ca50617381766ee4dc8d5232828
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467257"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180857"
 ---
 # <a name="externalconnection-resource-type"></a>externalConnection 资源类型
 
@@ -34,15 +34,15 @@ ms.locfileid: "53467257"
 |:---|:---|:---|
 |configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|指定允许管理连接和索引连接内容的其他应用程序 ID。 可选。|
 |说明|String|网站中显示的连接Microsoft 365 管理中心。 可选。|
-|id|String| 开发人员为租户内的连接提供的唯Azure Active Directory ID。 长度必须在 3 到 32 个字符之间。 只能包含字母数字字符。 不能以 `Microsoft` 或 作为下列值之一： `None` 、 、 `Directory` `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` `TaskFabric` `PowerBI` `Assistant` `TopicEngine` `MSFT_All_Connectors` 。 必需项。 |
-|name|String|要显示名称中显示的连接的Microsoft 365 管理中心。 最大长度为 128 个字符。 必需项。|
+|id|String| 开发人员为租户内的连接提供的唯Azure Active Directory ID。 长度必须在 3 到 32 个字符之间。 只能包含字母数字字符。 不能以 `Microsoft` 或 作为下列值之一： `None` 、 、 `Directory` `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` `TaskFabric` `PowerBI` `Assistant` `TopicEngine` `MSFT_All_Connectors` 。 必填。 |
+|name|String|要显示名称中显示的连接的Microsoft 365 管理中心。 最大长度为 128 个字符。 必填。|
 |state|microsoft.graph.externalConnectors.connectionState|指示连接的当前状态。 可取值为：`draft`、`ready`、`obsolete`、`limitExceeded`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |items|[microsoft.graph.externalConnectors.externalItem](../resources/externalconnectors-externalitem.md) 集合|只读。可为空。|
-|operations|[microsoft.graph.externalConnectors.connectionOperation](../resources/externalconnectors-connectionoperation.md) 集合|只读。可为 NULL。|
+|operations|[microsoft.graph.externalConnectors.connectionOperation](../resources/externalconnectors-connectionoperation.md) 集合|只读。可为 Null。|
 |schema|[microsoft.graph.externalConnectors.schema](../resources/externalconnectors-schema.md)|只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

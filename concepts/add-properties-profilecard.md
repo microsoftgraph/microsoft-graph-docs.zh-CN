@@ -5,12 +5,12 @@ author: PollyNincevic
 localization\_priority: Priority
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 527afbad1ef35e4fba9fe0360accb19ae3ae9ead
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 85ec4c8bd842b01f441ef6c34b2c7be288ec059d5a30f3d73ac796cdc64e76be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146328"
 ---
 # <a name="add-additional-properties-to-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>使用 Microsoft Graph 中的个人资料卡 API 向个人资料卡添加其他属性（预览版）
 

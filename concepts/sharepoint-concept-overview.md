@@ -4,12 +4,12 @@ description: SharePoint 是移动且智能的内部网。 借助 SharePoint，�
 localization_priority: Priority
 ms.prod: sharepoint
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7307913a1fab7cf251880c6a4edd15349af5efc7
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 1771ff2513e255fbec6a252881cf25a92fead91fe21a42820334424520a697f4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921611"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235070"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>SharePoint 网站和内容 API 概述
 

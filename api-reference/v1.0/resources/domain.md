@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 62c48eca4f3672113c9eabbee7c420f7e2c9e4c4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c832ba7b8d16964df53d9530f5aab0113afcd00f422bd701530cd4088b06f178
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141810"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50962460"
 
 表示与租户关联的域。
 
-使用域操作将域与租户关联、验证域所有权并配置受支持的服务。  域操作使注册机构能够自动执行 Microsoft 365 等服务的域关联。 例如，作为域注册的一部分，注册机构可以启用电子邮件、网站、身份验证等的虚域。
+使用域操作将域与租户关联、验证域所有权并配置受支持的服务。  域操作使注册机构能够自动执行服务（如 Microsoft 365） 的域关联。 例如，作为域注册的一部分，注册机构可以启用电子邮件、网站、身份验证等的虚域。
 
 将域与租户关联：
 
@@ -32,7 +32,7 @@ ms.locfileid: "50962460"
 
 5. [通过](../api/domain-list-serviceconfigurationrecords.md) 检索为域启用服务所需的记录列表来配置支持的服务。 使用域注册机构或 DNS 服务器配置将配置记录详细信息添加到域的区域文件。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法   | 返回类型 |说明|
 |:---------------|:--------|:----------|
@@ -53,14 +53,14 @@ ms.locfileid: "50962460"
 |authenticationType|String| 指示域的已配置的身份验证类型。 值为 或 `Managed` `Federated` 。 `Managed` 指示 Azure AD 执行用户身份验证的云托管域。 `Federated` 指示通过 Active Directory 联合身份验证服务与标识提供程序（如租户本地 Active Directory）联合身份验证。 此属性是只读的，并且不可为 null。 |
 |availabilityStatus|String| 此属性始终在使用 `null` verify 操作[](../api/domain-verify.md)时除外。 使用 [verify](../api/domain-verify.md) 操作 **时，响应** 中将返回一个域实体。 响应中 **domain** 实体的 **availabilityStatus** 属性是 `AvailableImmediately` 或 `EmailVerifiedDomainTakeoverScheduled` 。|
 |id|String| 域的完全限定名称。 键、不可变、不可为 null、唯一。 |
-|isAdminManaged|Boolean| 如果域的 DNS 记录管理已委派给 `false` Microsoft 365，则属性的值为 。 否则，值为 `true` 。 不可为 null |
+|isAdminManaged|Boolean| 属性的值是域的 DNS 记录管理是否已被委派给 `false` Microsoft 365。 否则，值为 `true` 。 不可为 null |
 |isDefault|Boolean| `true` 如果这是用于用户创建的默认域。 每个公司只有一个默认域。 不可为 null |
 |isInitial|Boolean| `true` 如果这是由用户创建的初始Microsoft Online Services (companyname.onmicrosoft.com) 。 每个公司只有一个初始域。 不可为 null |
 |isRoot|Boolean| `true` 如果域是已验证的根域。 否则 `false` ，如果域是子域或未经验证。 不可为 null |
 |isVerified|Boolean| `true` 如果域已完成域所有权验证。 不可为 null |
 |passwordNotificationWindowInDays|Int32|指定用户收到其密码将过期的通知前的天数。 如果未设置该属性，则使用默认值 14 天。|
 |passwordValidityPeriodInDays|Int32| 指定密码在必须更改之前的有效时间长度。 如果未设置该属性，则使用默认值 90 天。 |
-|supportedServices|String collection| 分配给域的功能。 可以包含 `0` 、 `1` 或更多以下值： `Email` 、 、 、 、 、 、 、 `Sharepoint` `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` 。 可以使用 Graph API 添加/删除的值包括 `Email` `OfficeCommunicationsOnline` ：、、。 `Yammer` 不可为 null|
+|supportedServices|String collection| 分配给域的功能。 可以包含 `0` 、 `1` 或更多以下值： `Email` 、 、 、 、 、 、 、 `Sharepoint` `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` 。 可以使用 API 添加/删除Graph包括 `Email` `OfficeCommunicationsOnline` `Yammer` ：、、。 不可为 null|
 |state|[domainState](domainstate.md)| 为域安排的异步操作的状态。 |
 
 ## <a name="relationships"></a>关系

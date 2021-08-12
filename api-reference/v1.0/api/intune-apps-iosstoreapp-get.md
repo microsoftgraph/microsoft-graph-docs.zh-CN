@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e308798275eab9c2c38f836083c73b2d5302d187
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 155937fb19ac26052e44b9383d13cbef9ba4101675e871d9c48bf89213bd7030
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160560"
 ---
 # <a name="get-iosstoreapp"></a>获取 iosStoreApp
 

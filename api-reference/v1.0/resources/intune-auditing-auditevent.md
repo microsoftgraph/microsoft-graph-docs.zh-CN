@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f5501db74d088283127fde36ea65275257da689
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 29832a77c0cd37d025153fa3afab8bdfb53699a73c52c1a930b6c6e44ba48bdf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756433"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182495"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent 资源类型
 

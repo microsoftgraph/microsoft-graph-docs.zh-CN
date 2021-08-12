@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0c9af600729eb6f67115437410733eafca16efcf
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: bb8862b6be2b942c99554df5d547db56c068a6cce1ea855e7df6617afd292cc7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121316"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 

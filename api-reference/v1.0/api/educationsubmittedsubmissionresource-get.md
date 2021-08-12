@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 00c9bb49c43dd809945166a6dca4a05a76a87b5f
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 28f9b6831db2560118c317e17c0340b468358f3a8da709ed51ed02600e487477
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232312"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>获取 educationSubmittedSubmissionResource
 

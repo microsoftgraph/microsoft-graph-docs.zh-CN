@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: d345886e862a0ef56454666d8ece501836aa9499
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 0319a68d51f74638f8c90238eed53a5d80b92e0990b75b45a63a9692927f79c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231584"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Microsoft Intune 中的电信费用管理
 

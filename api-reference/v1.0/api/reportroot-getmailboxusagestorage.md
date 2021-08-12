@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: edfdb4263d2d31cc5b795ca502c1ae9e57ac8454
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 9eba2ab35825721ea000addd32b4c6c8a8fbbc43c8ab714187d2a3cd0c152cc3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133059"
 ---
 # <a name="reportroot-getmailboxusagestorage"></a>reportRoot: getMailboxUsageStorage
 

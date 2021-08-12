@@ -1,26 +1,26 @@
 ---
 title: resultInfo 资源类型
-description: 这包含成功和失败的特定结果信息。
+description: 其中包含特定于成功和失败的结果信息。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 67508afcae81fe85326eb08a4cccb69b7ef440fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 37a6d7a1881a26d79df568b2fa8f81382ae8b32089ea7683d003522b82805b8c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177980"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo 资源类型
 
 命名空间：microsoft.graph
 
-这包含成功和失败的特定结果信息。 
+其中包含特定于成功和失败的结果信息。 
 
-该代码指定结果是否为一般性成功或失败。 如果代码是2xx，如果它是一个客户端错误，它是成功的，如果是5xx，则表示服务器出错。
+该代码指定结果是一般成功还是失败。 如果代码为 2xx，则成功，如果是 4xx，则它是客户端错误，如果是 5xx，则说明服务器错误。
 
-子代码提供了与成功或失败 (类型相关的补充信息，例如，呼叫转移成功) 
+子代码提供与成功或失败类型相关的补充信息 (例如呼叫转接成功) 
 
 
 ## <a name="properties"></a>属性

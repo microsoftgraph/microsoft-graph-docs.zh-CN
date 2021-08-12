@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d3b1f37e6ac5f33d6d59988054d5abfedf5e68e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc97e94b2657273a55798528991762e43ec98023ba3e861f51a0e03d3d27f13f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178127"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48066283"
 
 包含有关会议组织者的详细信息。 
 
-若要加入现有会议，必须提供 organizerMeetingInfo 和 [chatInfo](./chatinfo.md) 资源类型或 [tokenMeetingInfo](./tokenmeetinginfo.md) 资源类型的组合。
+若要加入现有会议，您必须提供 organizerMeetingInfo 和 [chatInfo](./chatinfo.md) 资源类型的组合，或者 [提供 tokenMeetingInfo](./tokenmeetinginfo.md) 资源类型本身的组合。
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                          | 说明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| 组织者                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
+| organizer － 组织者                    | [identitySet](identityset.md) | 组织者Azure Active Directory标识。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

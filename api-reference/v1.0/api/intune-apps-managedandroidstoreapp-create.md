@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8104dbc8259352d917f8b05761d06aa3f3dea805
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 22da4d9656babe2ac56d5dcbf5566f823b0c7602aded3a629f81180b961a7907
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219246"
 ---
 # <a name="create-managedandroidstoreapp"></a>创建 managedAndroidStoreApp
 

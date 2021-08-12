@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 030893ab3a5eaefad4637cfd50321f1653b41070
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 54aa4b5f948dfb2e594c6938ae4e1cebe69f7830caeb07c4874b3c219a9fb38e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154866"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty 资源类型
 

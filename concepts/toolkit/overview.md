@@ -3,12 +3,12 @@ title: Microsoft Graph Toolkit：Microsoft Graph 的 UI 组件和身份验证提
 description: Microsoft Graph Toolkit是一组身份验证提供程序和可重用的、与框架无关的 Web 组件，用于访问和使用 Microsoft Graph。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 3b9dd368f9fe565164f3025c1f3de81645ad22df
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 4997e58eb592ee7cbd8339a13c31389cdbab55818318c19087048bd9ff5905f5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205011"
 ---
 # <a name="microsoft-graph-toolkit-ui-components-and-authentication-providers-for-microsoft-graph"></a>Microsoft Graph Toolkit：Microsoft Graph 的 UI 组件和身份验证提供程序 
 
@@ -18,7 +18,7 @@ Microsoft Graph Toolkit使你能够轻松地在应用程序中Graph Microsoft �
 
 <iframe src="https://mgt.dev/iframe.html?id=samples-general--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/samples-general--login-to-show-agenda&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/samples-general--login-to-show-agenda&source=docs)
 
 ## <a name="whats-in-the-microsoft-graph-toolkit"></a>Microsoft Graph Toolkit？
 
@@ -38,7 +38,7 @@ Microsoft Graph Toolkit包括一组 Web 组件，用于由 Microsoft Graph API �
 |[个人卡片](./components/person-card.md)|在人员组件上用于显示有关用户的更多个人资料信息的飞出图。|
 |[文件](./components/file.md)|表示包含图标、文件名、作者等的文件或文件夹。|
 |[文件列表](./components/file-list.md)|显示多个文件或文件夹的列表。|
-|[获取](./components/get.md)|直接在 HTML 中对任意 Microsoft Graph API 进行 GET 查询。|
+|[Get](./components/get.md)|直接在 HTML 中对任意 Microsoft Graph API 进行 GET 查询。|
 |[通道选取器](./components/teams-channel-picker.md)|提供搜索特定Microsoft Teams以从呈现的结果列表中选择通道的能力。|
 |[待办事项](./components/todo.md)|显示并启用在任务中添加、删除、完成或编辑任务微软待办。|
 |[Tasks](./components/tasks.md)|显示并启用添加、删除、完成或编辑 Microsoft Planner 或 微软待办。|
@@ -98,6 +98,6 @@ Microsoft Graph Toolkit非常适用于希望开发连接到 Microsoft Graph 和�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 尝试在运动场中的 [组件](https://mgt.dev)。
+- 在[样本](https://mgt.dev)中试用组件。
 - [开始使用](./get-started/overview.md)Microsoft Graph Toolkit。
 - 请查看 Microsoft Graph Toolkit上的[GitHub。](https://aka.ms/mgt)

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0627c9503f7da2019c717ad66bde81a8556563d6
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8fe209faf40fdff64e25018b32dfe580cd6918e1287e830184699cc51e45d4c3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243432"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 枚举类型
 

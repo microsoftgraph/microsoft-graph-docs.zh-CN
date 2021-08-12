@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6d49f3675362c31074fb5e9cbdf79787ceb1b5af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf5e8c85f2cb368f409c864cbd07325068d0fa4f75aedebede6eae0c5c1eb8ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246659"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "48079142"
 | displayName  | String | 与地点相关联的名称。                       |
 | locationEmailAddress | String | （可选）与位置相关联的电子邮件地址。              |
 | locationUri | String | （可选）表示位置的 URI。 |
-| locationType | locationType | 位置的类型。 可能的值为：、、、、、、、、、 `default` `conferenceRoom` `homeAddress` `businessAddress` `geoCoordinates` `streetAddress` `hotel` `restaurant` `localBusiness` `postalAddress` 。 只读。|
+| locationType | locationType | 位置的类型。 可能的值包括 `default` `conferenceRoom` `homeAddress` `businessAddress` `geoCoordinates` `streetAddress` ：、、、。 `hotel` `restaurant` `localBusiness` `postalAddress` 只读。|
 | uniqueId | String | 仅供内部使用。|
 | uniqueIdType | locationUniqueIdType | 仅供内部使用。 |
 

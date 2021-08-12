@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 3e5b1b26b74938fd997cc064ee8e47d0ae8df9fc
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 79e1306e64004e4bf9057bde017d05bc10dcdd80c3c16083b0a8c679f76259c6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124659"
 ---
 # <a name="reportroot-getsharepointactivityfilecounts"></a>reportRoot: getSharePointActivityFileCounts
 
@@ -18,9 +18,9 @@ ms.locfileid: "49980876"
 
 获取与 SharePoint 网站中存储的文件进行交互的唯一许可用户数。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - SharePoint 活动](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 Microsoft 365 [reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

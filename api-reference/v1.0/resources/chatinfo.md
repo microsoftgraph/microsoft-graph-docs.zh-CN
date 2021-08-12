@@ -1,30 +1,30 @@
 ---
 title: chatInfo 资源类型
-description: 有关 Microsoft 团队中的邮件的信息。
+description: 有关邮件中Microsoft Teams。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ee55fc2f9321a5b16c3a24ec330f5966472f4f9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5ae704998bab3015c265d96c188dbcf8eba4729c4df3a1b8a72f3d5076a7f8b6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059171"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180878"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo 资源类型
 
 命名空间：microsoft.graph
 
-这包含与 Microsoft 团队会议相关的信息。
+其中包含与会议相关的Microsoft Teams信息。
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型    | 说明|
 |:--------------------|:--------|:-----------|
-| messageId           | String  | Microsoft 团队频道中的邮件的唯一标识符。 |
-| replyChainMessageId | String  | 答复邮件的 ID。 |
-| threadId            | String  | Microsoft 团队中的线程的唯一标识符。 |
+| messageId           | String  | 邮件通道中邮件的唯一Microsoft Teams标识符。 |
+| replyChainMessageId | String  | 回复邮件的 ID。 |
+| threadId            | String  | 主题中主题的唯一Microsoft Teams。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

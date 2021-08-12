@@ -1,22 +1,22 @@
 ---
 title: 创建或替换 historyItem
-description: 为现有用户活动创建新的或替换现有的历史记录项。
+description: 为现有用户活动创建新的或替换现有历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: ee46c25555e3621bd18d020bd3312bd7b1d543aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dfeb7dce28e04346e82a91feda155bc29db7013746dac44545ac7d48433d7bae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192696"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
 
 命名空间：microsoft.graph
 
-为现有用户活动创建新的或替换现有的历史记录项。
+为现有用户活动创建新的或替换现有历史记录项。
 
 ## <a name="permissions"></a>权限
 
@@ -37,7 +37,7 @@ ms.locfileid: "48083307"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Id 必须是 GUID。
+ID 需要为 GUID。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -51,7 +51,7 @@ Id 必须是 GUID。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在 `201 Created` 创建 historyItem 或 `200 OK` 替换 historyItem 时返回响应代码。
+如果成功，如果创建 `201 Created` historyItem 或 `200 OK` 替换 historyItem，此方法将返回 响应代码。
 
 ## <a name="example"></a>示例
 

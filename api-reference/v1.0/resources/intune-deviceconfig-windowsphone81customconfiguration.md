@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45ce49a666d859349231c878a8d8e6e42e4488bc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 70ff4d9fb8a51e6b4b485b0b268dc51c88397f593ed847e5dd09db45cfa3abc8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149875"
 ---
 # <a name="windowsphone81customconfiguration-resource-type"></a>windowsPhone81CustomConfiguration 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "52754600"
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List windowsPhone81CustomConfigurations](../api/intune-deviceconfig-windowsphone81customconfiguration-list.md)|[windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 集合|列出 [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 对象的属性和关系。|
 |[Get windowsPhone81CustomConfiguration](../api/intune-deviceconfig-windowsphone81customconfiguration-get.md)|[windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md)|读取 [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 对象的属性和关系。|
@@ -44,7 +44,7 @@ ms.locfileid: "52754600"
 |omaSettings|[omaSetting](../resources/intune-deviceconfig-omasetting.md) 集合|OMA 设置。 该集合最多可包含 1000 个元素。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

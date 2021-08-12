@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 5f829c767584366b3f291bf186073b40ace6ce41
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 63e25ec2725f6013d5d804407237c42afc3e68de95ea89ff81c74eaf0dedcfe4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218707"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>使用 Microsoft 搜索 API 为数据编制索引
 
