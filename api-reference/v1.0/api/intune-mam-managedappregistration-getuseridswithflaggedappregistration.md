@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d11bb49a8c85b2e63e454266112e88f2ce27b21
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c5294a39ce7ccacf80759bac5ced7b421568a3b90a23af8c057f2bfabdf7558e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756938"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233950"
 ---
 # <a name="getuseridswithflaggedappregistration-function"></a>getUserIdsWithFlaggedAppRegistration 函数
 

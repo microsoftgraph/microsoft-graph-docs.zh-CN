@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e48211ebbba3ea9439b12abb9e9144aa75b36d37
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 1d87c5453df273579c3cbb3881d17406ecb28a469941a66c80ef2226235a9648
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757120"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54234195"
 ---
 # <a name="get-devicecompliancesettingstate"></a>获取 deviceComplianceSettingState
 

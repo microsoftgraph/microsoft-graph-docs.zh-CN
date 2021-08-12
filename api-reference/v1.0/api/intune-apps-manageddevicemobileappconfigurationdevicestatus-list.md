@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 587339da630932a70cf265d7439814f3faf39ec7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9afdb42d0d58b689eb17e0c39fb278b999017dd7c73f94d30f5cce4ed92949a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247422"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>列出 managedDeviceMobileAppConfigurationDeviceStatuses
 

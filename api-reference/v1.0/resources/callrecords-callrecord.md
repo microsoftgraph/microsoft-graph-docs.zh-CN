@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c6944d6a9cad10015f20a2b168645d71349cf829
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bf1fb4b96cb063f41cb1f2590d5e389472efb18038110bd107269d66faeff44b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178547"
 ---
 # <a name="callrecord-resource-type"></a>callRecord 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50952527"
 
 表示多个参与者之间的单个对等呼叫或组呼叫，有时称为联机会议。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

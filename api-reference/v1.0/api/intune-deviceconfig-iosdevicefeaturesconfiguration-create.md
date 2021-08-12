@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f032e8946729abf02bf832f1308d186d589f65a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6b6cac92e5cac7215adb353a2322eb0416ddb71f854facd8b38387e9f41aff10
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52747989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245721"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>创建 iosDeviceFeaturesConfiguration
 

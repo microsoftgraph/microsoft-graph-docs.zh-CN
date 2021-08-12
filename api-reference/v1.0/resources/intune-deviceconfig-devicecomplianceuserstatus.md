@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bdb86b37c7196a4b57a99181f4eb8a1eed7986e8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d25e43b7fcd4b8f31a003b382cd20e8beb6a46262de62cf10726b461266ac1d9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169555"
 ---
 # <a name="devicecomplianceuserstatus-resource-type"></a>deviceComplianceUserStatus 资源类型
 

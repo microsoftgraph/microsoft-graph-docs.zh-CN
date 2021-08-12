@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 52247aa125745055f4fec5b651c8c175597d1b82
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 106505521418b4cfc41199f3b9f9c9aa46263d67d4d6f46e803f01ac0740383a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055594"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174715"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Microsoft Graph 报告 API 概述
 

@@ -1,12 +1,12 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Microsoft 365管理员能够批准或拒绝同意请求。 这可以通过管理中心Microsoft 365 PowerShell 以编程方式完成。
+Microsoft 365管理员能够批准或拒绝同意请求。 这可以通过管理中心Microsoft 365 管理 PowerShell 以编程方式完成。
 
 ## <a name="approve-consent-requests"></a>批准同意请求
 
-# <a name="microsoft-365-admin-center"></a>[Microsoft 365管理中心](#tab/Microsoft365)
+# <a name="microsoft-365-admin-center"></a>[Microsoft 365 管理中心](#tab/Microsoft365)
 
-1. 打开浏览器，然后转到你的Microsoft 365[门户。](https://admin.microsoft.com)
+1. 打开浏览器，然后转到你的Microsoft 365 管理[门户。](https://admin.microsoft.com)
 
 1. 若要批准或拒绝同意请求，请转到 [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess)。
 
@@ -14,7 +14,7 @@ Microsoft 365管理员能够批准或拒绝同意请求。 这可以通过管理
 
 1. 在" **数据访问请求"** 调用中，选择"批准 **"** 按钮。
 
-    ![Screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](images/data-connect-m365-approve.png)
+    ![显示数据访问权限请求等待许可审批的屏幕截图Microsoft 365 管理中心。](images/data-connect-m365-approve.png)
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 

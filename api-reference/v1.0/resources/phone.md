@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6740d1cd1746151d35f7627d9ab5125724adc3f0
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b34617ec60e23eba4323b3eb6c987094f1e313eda8242b0e14b51cee01cea735
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196850"
 ---
 # <a name="phone-resource-type"></a>电话资源类型
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 7f03aa980ceead767ea59f641620c212dbbfabb5
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 9ace212d96cdb2352c5febf0dc103e743a873413e2b51208f5d29d3c2f2704a8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202635"
 ---
 # <a name="reportroot-getonedriveactivityfilecounts"></a>reportRoot: getOneDriveActivityFileCounts
 
@@ -18,9 +18,9 @@ ms.locfileid: "49983011"
 
 获取对任意 OneDrive 帐户执行文件交互的唯一许可用户数。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - OneDrive for Business 活动](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 Microsoft 365 [reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

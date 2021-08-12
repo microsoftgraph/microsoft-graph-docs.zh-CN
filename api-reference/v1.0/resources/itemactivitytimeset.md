@@ -5,20 +5,20 @@ description: itemActionSet 对象提供有关在项目上发生的活动的信�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1f614c597efdb95b04c4079bd68240aa865d66dd
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1e69ac8c539dcce56f369adec3d0e634afeeece06cc0b043b48e10f681d12ad8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238671"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130077"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>itemActivityTimeSet 资源类型
 
 命名空间：microsoft.graph
 
-**itemActivityTimeSet** 资源提供有关何时 [发生项目活动][activity]的信息。
+**itemActivityTimeSet** 资源提供有关 [项目上的活动][activity]何时发生的信息。
 
->**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 项目活动记录当前仅适用于SharePoint OneDrive for Business。
 
 [activity]: itemactivity.md
 
@@ -41,7 +41,7 @@ ms.locfileid: "50238671"
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActivityTimeSet",
   "@type.aka": "oneDrive.times",
-  "@property.aka": "observedDateTime=observedTime recordedDateTime=recordedTime"
+  "@property.aka&quot;: &quot;observedDateTime=observedTime recordedDateTime=recordedTime"
 }-->
 
 ```json

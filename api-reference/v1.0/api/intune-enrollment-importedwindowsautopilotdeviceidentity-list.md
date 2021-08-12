@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65f0b42d7aae5932443460250e82ad18951eeaab
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 246c2766312007dbb1dabeaa94b8d9867403db55599ff71e58e72feca04e846c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172237"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>列表 importedWindowsAutopilotDeviceIdentities
 

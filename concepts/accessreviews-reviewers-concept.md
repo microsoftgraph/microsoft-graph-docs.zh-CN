@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 656541211226f133045a7cdbf74a72b4bcd8c369
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 1fa60cb2f9d158e590b5c82b3b457fd8a22ca3202a59f01dba00205b90723231
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249095"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 将审阅者分配给你的访问评审
 

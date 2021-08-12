@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04642566bc76c6662986eec2366fd30f2b789d84
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bc428f6d15e43dc687112d2f2c1500c3bcf8a41271e168c636e204e47fab6fc2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245630"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>删除 windowsPhone81GeneralConfiguration
 

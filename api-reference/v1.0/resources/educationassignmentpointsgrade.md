@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b624bd0e82336e4e416641240e072c8b4ac6392d
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 131aad8f86e639c4002fed73a7221bcdc1d828b6e40d7b3e534aff3ef33ca5db
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912310"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152745"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>educationAssignmentPointsGrade 资源类型
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 141228dcefa35e8195e3095996e2c3157e9771f0
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: ed657f45047bc02940f3be6969eaa8b7f2d3b5373db96ab85fc5918601456db3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645713"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129640"
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -34,7 +34,7 @@ Microsoft Graph 连接器平台提供了一种简单的方法，可将外部数�
 
 ## <a name="properties"></a>属性
 
-属性组件用于添加在 Microsoft Graph 体验中有用的项元数据。 在向该连接添加项目并将 **数据类型** 转换为[支持的数据类型](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true)前，必须[注册该架构](./connecting-external-content-manage-schema.md)。
+属性组件用于添加在 Microsoft Graph 体验中有用的项元数据。 在向该连接添加项目并将 **数据类型** 转换为 [支持的数据类型](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true)前，必须 [注册该架构](./connecting-external-content-manage-schema.md)。
 
 ![属性组件示例](./images/connectors-images/connecting-external-content-manage-items-1.png)
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0136ea6bf17a3a6e1a26a2a5fa9281a491e5ecb
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2e243d0d0864aeda88d3ed358a9117160123e1b0b42990618cdb6eb890bf7ba7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757064"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172349"
 ---
 # <a name="delete-iosupdateconfiguration"></a>删除 iosUpdateConfiguration
 

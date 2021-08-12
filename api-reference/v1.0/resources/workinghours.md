@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c6ebab4fe505e93bc9a4980aeb1e7999aa5a78f0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 775de66d328767e24a2bf7a47478cfcc2b482118e668ebf9c915eb069308f80a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473439"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182355"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 

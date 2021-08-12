@@ -4,12 +4,12 @@ description: 访问评审 API 允许你以编程方式查看对 Azure AD 资源�
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: bedcd32f7db1c2aa7926108cfeb0588bbc354474
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b22fcf84e8303f10ad6d9f0f30cf0e508db5f103aee8430c35fb9981bcaec8c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154852"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Access 审阅 API 概述
 

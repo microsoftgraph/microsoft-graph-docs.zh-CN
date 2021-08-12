@@ -5,12 +5,12 @@ author: rzhang
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b825264623eb74507e43dcd9302499811377f3fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6d3afe17198d8c9eaa4df396500582d1bc52deeb5e5acb721131a7737dac55e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178533"
 ---
 # <a name="calltranscriptioninfo-resource-type"></a>callTranscriptionInfo 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "48069244"
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | state | String | 可取值为：`notStarted`、`active`、`inactive`。 |
-| lastModifiedDateTime | 日期时间 | 以 UTC 表示的状态修改时间。 |
+| lastModifiedDateTime | 日期时间 | 以 UTC 表示的修改时间状态。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

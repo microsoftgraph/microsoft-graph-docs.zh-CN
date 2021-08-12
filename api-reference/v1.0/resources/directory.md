@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9c46e671f707a8e31c172e4a078647cd7d103d48
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e5163a50c6c16e9e2d2c6e315e3a701af6da0f88cdc555dcd6b31494ef4e98f0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130371"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -20,7 +20,7 @@ ms.locfileid: "50472732"
 
 目前，仅应用程序、组和用户资源支持已删除的项目[](application.md)功能。 [](group.md) [](user.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:------------|:------------|

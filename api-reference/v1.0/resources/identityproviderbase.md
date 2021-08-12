@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: c0fb048bd785b5dbf7d56d2d03146536c073b8ee
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 3bd8a31e7a48e70a0ccc0631d14a7c70f595d002039aa58f332a5b1657daf0bd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152682"
 ---
 # <a name="identityproviderbase-resource-type"></a>identityProviderBase 资源类型
 命名空间：microsoft.graph

@@ -5,19 +5,19 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 37edb6a3a454aa3612770746062016ea389fd9d5
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 71d3162b9abd661e0aac650477e1749d9756e6293a1b767c1b6e6aa8d253579b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54131015"
 ---
 # <a name="update-tab"></a>更新选项卡
 
 命名空间：microsoft.graph
 
 
-更新指定 [选项卡](../resources/teamstab.md)的属性。这可用于配置选项卡的内容。
+更新指定选项卡 [的属性](../resources/teamstab.md)。这可用于配置选项卡的内容。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,13 +25,13 @@ ms.locfileid: "49607328"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  TeamsTab、ReadWriteForTeam、TeamsTab、all、All、All、All |
+|委派（工作或学校帐户） |  TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab *、TeamsTab、ReadWriteForTeam、Group、all、all、all、all 和 All。 All |
+|应用程序 | TeamsTab.ReadWrite.Group*、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 ```http
@@ -45,7 +45,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [tab](../resources/teamstab.md) 对象的 JSON 表示形式。
+在请求正文中，提供 tab 对象的 JSON [表示](../resources/teamstab.md) 形式。
 
 ## <a name="response"></a>响应
 

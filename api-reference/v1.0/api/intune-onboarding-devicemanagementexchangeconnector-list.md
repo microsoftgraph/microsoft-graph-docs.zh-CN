@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6791a4f52e0b73aec1260886c3844812898eef82
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 57d13de3536a2c07849077016c5d8fcab67de864c07e7ba17a97d3153f1cb571
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249480"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>列出 deviceManagementExchangeConnectors
 

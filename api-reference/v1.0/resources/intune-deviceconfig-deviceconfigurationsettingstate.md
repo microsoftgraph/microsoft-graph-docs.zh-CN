@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4cb43529217ef6c129d06548e37800a501fcef55
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5bded3c009ca5e31dacf5250c0d1a0244c66f6ccb7b733ec7b6217ef1aa5253c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230632"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52757799"
 给定设备的设备配置设置状态。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |setting|String|报告的设置|
 |settingName|String|报告的本地化/用户友好设置名称|

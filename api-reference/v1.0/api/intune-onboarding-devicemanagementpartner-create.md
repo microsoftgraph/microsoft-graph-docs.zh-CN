@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d07b78207ef28632440588bf8e5349a0c9f36f8a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7990dd3e454c758c79517417802e869048d8c113a313ca9ed77253afa3d0a783
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167392"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 

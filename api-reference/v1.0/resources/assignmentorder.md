@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4c5faed250c07d5c4416c91a5452f1276c6b728e
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 6a68d1442135f62d7debbbed972d2187faab92188185ff5f1c6d75908ec289bd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126695"
 ---
 # <a name="assignmentorder-resource-type"></a>assignmentOrder 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "51882827"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|order|String 集合|identityUserFlowAttribute 对象标识符的列表，这些标识符确定应在用户流中收集属性的顺序。|
+|order|String collection|identityUserFlowAttribute 对象标识符的列表，这些标识符确定应在用户流中收集属性的顺序。|
 
 ## <a name="relationships"></a>关系
 

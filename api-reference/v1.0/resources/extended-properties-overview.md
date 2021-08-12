@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 1c12ecb1a73ab7458898ec8890af4a7f83f0af76
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f751abd400bf74d4c672edd2e4922f99de28b8373ab5b219eb7c56f4e8cd2e45
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134454"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141726"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 

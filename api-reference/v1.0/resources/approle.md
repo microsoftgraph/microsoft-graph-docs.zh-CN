@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 7bff67b287c12a984299045b7ac0297b253974d5
-ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
+ms.openlocfilehash: 9da5a13e8e79de7a2f4bfb3405e96d3e577a9796cc0f2845e9d8c23fd9a3f53a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51638849"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205946"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "51638849"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String 集合|通过设置为) ，指定此应用角色是否可分配给用户和组 (，或者通过设置为) 将此应用程序角色设置为 或同时将两 (分配给应用程序的 `["User"]` `["Application"]` `["User", "Application"]` (。 支持向其他应用程序的服务主体分配的应用程序角色也称为应用程序 [权限](/graph/auth/auth-concepts#microsoft-graph-permissions)。 "Application"值仅受应用程序实体上定义的 **应用角色** 支持。|
+|allowedMemberTypes|String collection|通过设置为) ，指定此应用角色是否可分配给用户和组 (，或者通过设置为) 将此应用程序角色设置为 或同时将两 (分配给应用程序的 `["User"]` `["Application"]` `["User", "Application"]` (。 支持向其他应用程序的服务主体分配的应用程序角色也称为应用程序 [权限](/graph/auth/auth-concepts#microsoft-graph-permissions)。 "Application"值仅受应用程序实体上定义的 **应用角色** 支持。|
 |说明|String|应用角色的说明。 在分配应用角色时显示，如果应用角色在同意体验期间用作应用程序权限，则显示此状态。|
 |displayName|String|应用和许可体验中显示的权限角色分配名称。|
 |id|Guid|**appRoles 集合内的唯一角色** 标识符。 创建新的应用角色时，必须提供新的 Guid 标识符。 |

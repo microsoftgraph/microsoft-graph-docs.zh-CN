@@ -4,18 +4,18 @@ description: 可以使用以下语法调用任何工作簿函数：`POST /me/dri
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 6ba9c94f78325fe855ec6f0c4b2a0dcff8de559a
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 39b93c633951ffe8997a66132a830673459776963d5d537c61aa67fb29a41fe0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491038"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205157"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>通过 Microsoft Graph 使用 Excel 工作簿函数
 
 可以使用以下语法调用任何工作簿函数：`POST /me/drive/root/workbook/functions/{function-name}`。 使用 JSON 对象提供正文中的函数参数。 该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。 `null` 的 `error` 值表示该函数执行成功。
 
-有关受支持的函数的完整列表，请参阅 [Excel.Functions 类](/javascript/api/excel/excel.functions?view=excel-js-preview)。 请参阅特定参数名称和数据类型的函数签名。
+有关受支持的函数的完整列表，请参阅[Excel。Functions 类](/javascript/api/excel/excel.functions?view=excel-js-preview)。 请参阅特定参数名称和数据类型的函数签名。
 
 _重要说明_：
 * 使用 range 对象（而不是范围地址字符串）提供范围输入参数。  
@@ -80,7 +80,7 @@ content-type: application/json;odata.metadata
 （请参阅 [MEDIAN Excel 函数](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)文档。）
 
 ##### <a name="request"></a>请求
-以下示例演示如何使用 Excel REST API 调用 函数和一 `median` 个或多个输入区域。
+以下示例演示如何使用 REST API 调用 函数和一 `median` 个或多个输入Excel范围。
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median

@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 中的活动源 API 启用跨设备体验
 description: 如果你使用活动，这些 Microsoft 体验可以开始在应用中推动交互。 此外，还可以在应用中显示这些活动，以帮助用户恢复他们之前在任何平台（包括 Windows、Android 和 iOS）、任何设备上所做的操作。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: b708a39234004d087cbcfaaeb736b70508b8c15c
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: c447d91aa981b729372cb9e4b790b5b03de756bd08f493e00f7acd1c46ba2eff
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883058"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182299"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>使用 Microsoft Graph 中的活动源 API 启用跨设备体验
 

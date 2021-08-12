@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb7cd456b3a70bff2ea9d6e1de693d14f91205b7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d4f8750d23640e01334686eeacd407cef539c8c8f6d2bdce3b977c7c6ae3e0fc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124281"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>exclusionGroupAssignmentTarget 资源类型
 

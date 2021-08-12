@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8bc4745f31d5b2a6cffe89a4fb912739212a6c3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 727d05b1819299f938c21f71e859d06e2455ebb25819bbd96c78dec746cbd753
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182341"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>WorksheetProtectionOptions 资源类型
 

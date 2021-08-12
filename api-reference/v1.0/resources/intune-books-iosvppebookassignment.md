@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6fcc47a65a521658c4cbb97eafd4e90d20f7198f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 54686cd1fa860a37d5d1c6e48a664bf5b16612c84cf680365f65e56491903e55
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52742921"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175229"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "52742921"
 
 继承自 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List iosVppEBookAssignments](../api/intune-books-iosvppebookassignment-list.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) 集合|列出 [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) 对象的属性和关系。|
 |[Get iosVppEBookAssignment](../api/intune-books-iosvppebookassignment-get.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md)|读取 [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) 对象的属性和关系。|

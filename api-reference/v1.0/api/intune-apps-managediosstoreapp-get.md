@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7878316550810a08f9d09048b0b5d1302251694d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ca6829d0c414eb35ade1829e6e8474f553c1df18104cc4927fb37025ae2ae83d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54200052"
 ---
 # <a name="get-managediosstoreapp"></a>获取 managedIOSStoreApp
 

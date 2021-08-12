@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: e791ca755b695fc8e4704b65aff98a9db934d901
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c0d24ff6dca0a8866165b40f440ecc2e0d31c1f118d3d3e8a8a41dda96f6038d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205281"
 ---
 # <a name="printconnector-resource-type"></a>printConnector 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "50517197"
 
 表示已使用通用打印订阅注册的打印连接器。 printConnector 资源可用于查看连接器状态和更新属性。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
-| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | 读取连接器对象的属性和关系。 |
+| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | 读取 connector 对象的属性和关系。 |
 | [更新连接器](../api/printconnector-update.md) | [printConnector](printconnector.md) | 更新连接器对象。 |
-| [删除连接器](../api/printconnector-delete.md) | 无 | 从通用打印服务中注销连接器。 |
+| [删除连接器](../api/printconnector-delete.md) | 无 | 从通用打印服务注销连接器。 |
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -36,7 +36,7 @@ ms.locfileid: "50517197"
 |operatingSystem|String|连接器计算机的操作系统版本。|
 |appVersion|String|连接器的版本。|
 |位置|[printerLocation](printerlocation.md)|连接器的物理和/或组织位置。|
-|registeredDateTime|DateTimeOffset|连接器注册时的日期/时间Offset。|
+|registeredDateTime|DateTimeOffset|注册连接器时的日期时间Offset。|
 |registeredBy|[userIdentity](useridentity.md)|注册连接器的用户。|
 
 ## <a name="relationships"></a>关系

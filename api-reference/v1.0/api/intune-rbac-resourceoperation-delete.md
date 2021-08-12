@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6be3d24fdb1e12f76dae3053c0b830b20fc2648d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: afd3b29d0058bcd2d478bb057de1993074535573be820965e796740feceb448e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233880"
 ---
 # <a name="delete-resourceoperation"></a>删除 resourceOperation
 

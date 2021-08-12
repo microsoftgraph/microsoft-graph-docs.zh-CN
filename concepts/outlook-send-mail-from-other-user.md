@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: becb0c4eb76e7ae337d42739f064a15b7ce233ca
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b87a274288bf2119a9fd6b46d9d300634a00e0c68cdf93c93246d9b7152e13fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235127"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>从其他用户身份发送 Outlook 邮件
 
@@ -94,7 +94,7 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 
 ## <a name="sent-items-behavior"></a>已发送邮件行为
 
-邮件发送完毕后，可将其保存至发送用户的“已发送邮件”文件夹、发件人用户的“已发送邮件”文件夹或两者。 也可以完全不保存。
+邮件发送后，可将其保存到发送用户的“已发送邮件”文件夹、发件人用户的“已发送邮件”文件夹，或同时保存到这两个位置。也可以不进行保存。
 
 > [!NOTE]
 > 如果邮件是从没有邮箱的地址（例如通讯组列表）发送，则发件人用户没有“已发送邮件”。

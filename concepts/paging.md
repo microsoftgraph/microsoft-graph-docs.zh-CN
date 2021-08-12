@@ -4,12 +4,12 @@ description: '响应中的 odata.nextLink` 属性，其中包含下一页结果�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: be2d927de3cf1f3d419d7daa5747e0cc9e70c28c
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 43a6de159a7a9d15ace7121d517767b2e15676f40b426955bd5ea518616eb282
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123896"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>在应用中对 Microsoft Graph 数据进行分页 
 

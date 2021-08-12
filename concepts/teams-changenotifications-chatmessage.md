@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 39c06e6509eb7e855a3774d223119c6b6b1e0866
-ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
+ms.openlocfilehash: 967b1bef18bd977481ae8a7542f8848281f5f227daeb41f888d1ad1cc80e3820
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53025031"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180367"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -184,7 +184,7 @@ Content-Type: application/json
 |委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
 |应用程序 | ChatMessage.Read.Chat*、Chat.Read.All | beta 版 v1.0 |
 
->**注意：** 带有标记 * 的权限当前仅作为 beta 版本的特定于 [ 资源的许可 ](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
+>**注意：** 带有标记 * 的权限当前仅作为 beta 版本的特定于 [ 资源的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>示例 1：订阅聊天中的消息
 

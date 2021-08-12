@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4d525cb092de8dcfc0bf25457f68823bf0b0730
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9349b5d977bc0cad5c0d5ca0edf3765bca07ed87b937283651bf0e8429733783
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52743215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249438"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>获取 deviceAndAppManagementRoleAssignment
 

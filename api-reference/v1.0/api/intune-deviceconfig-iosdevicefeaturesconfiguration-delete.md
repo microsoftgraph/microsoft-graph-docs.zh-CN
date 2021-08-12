@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7eb980beec118bd41f26b0ef39b2041b57bf0362
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 352058915cb3e8b5637159f7cd65367b2a209a615a39ed26d3c4b9df889e1b96
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167448"
 ---
 # <a name="delete-iosdevicefeaturesconfiguration"></a>删除 iosDeviceFeaturesConfiguration
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 095e06dc55f8528bb677051a0831ef91b82a4336
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: abd4948877c97abee1911dcbf29cf86b014942afe3fac0c5c01e99ce74d45799
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754019"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238711"
 ---
 # <a name="update-windowsuniversalappx"></a>更新 windowsUniversalAppX
 

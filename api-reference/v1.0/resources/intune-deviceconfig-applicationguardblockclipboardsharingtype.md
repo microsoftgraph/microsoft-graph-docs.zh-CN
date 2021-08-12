@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a70f654c283a32db4e89ccc1b3991ffba49fc89e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9a04ffb2c5a02ac4688f1e85457c4cfbb84257fc0c8c9c8d50c5bfaeba8fef93
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175208"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52755936"
 applicationGuardBlockClipboardSharingType 的可能值
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |blockBoth|1|阻止剪贴板从主机共享到容器以及从容器共享数据到主机|

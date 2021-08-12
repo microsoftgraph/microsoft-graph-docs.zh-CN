@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e47aa6db924d18e1c6f84bedf877722ec4e6521
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a2918d5cef37f240cfe05a9121ca5ca19ef7c8b41f134778333d71f3e86b1d55
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753788"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175754"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>创建 windowsUpdateForBusinessConfiguration
 

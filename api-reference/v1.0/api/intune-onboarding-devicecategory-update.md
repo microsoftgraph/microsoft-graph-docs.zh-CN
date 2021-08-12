@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 119dddb990bbb6db9ae6b4ec13f38b7738c7027a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 53597f3b2ba9721894ba49b410c38f0c4c909170c09d234baf80c03e3d8ebd84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245553"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
 |displayName|String|设备类别的显示名称。|
-|description|String|设备类别的可选说明。|
+|说明|String|设备类别的可选说明。|
 
 
 

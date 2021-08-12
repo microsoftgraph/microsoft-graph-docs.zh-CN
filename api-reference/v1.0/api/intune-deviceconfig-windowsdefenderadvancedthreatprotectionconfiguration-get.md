@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 919a404279330404052f605fa80436e6cb967632
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2276038e062ddb75588650862532f86a546aea9e277a115e06248869c1996ea7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759168"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54199933"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>获取 windowsDefenderAdvancedThreatProtectionConfiguration
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b66eea4b04f21f85aa38b9777a17cb73e87fe6fc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c6132f037454c5942af727446d39eb29f1b84209b53c399e70e5f652a44a9fab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138743"
 ---
 # <a name="update-organization"></a>更新组织
 

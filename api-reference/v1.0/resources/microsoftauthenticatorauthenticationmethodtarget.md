@@ -1,28 +1,28 @@
 ---
 title: microsoftAuthenticatorAuthenticationMethodTarget 资源类型
-description: 已启用使用 Microsoft Authenticator 身份验证方法策略的用户或组的集合。
+description: 启用以使用身份验证方法策略Microsoft Authenticator组的集合。
 author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 43c8e5a4ba92e838a64ec5f345ae82c744b53dee
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 5fc1f6dfd2d28e6a0e6e4643b239ed50ba41309dce90448e373f8851040a1478
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249165"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>microsoftAuthenticatorAuthenticationMethodTarget 资源类型
 命名空间：microsoft.graph
 
-在 Azure AD 中启用了使用 [Microsoft Authenticator 身份验证方法策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) 的用户或组的集合。
+在 Azure AD 中启用以使用Microsoft Authenticator[方法策略的用户](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)或组的集合。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|Azure AD 用户或组的对象 ID。|
 |authenticationMode|microsoftAuthenticatorAuthenticationMode|确定可用于登录的通知类型。 可能的值是 `any` `deviceBasedPush` ：、 (无密码) 、 `push` 。|
-|featureSettings|authenticatorAppFeatureSettings|确定应用于 Microsoft Authenticator 的其他设置。 可能的值是 `null` `requireNumberMatching` ：、 (需要匹配 MFA 通知的号码。 对于手机登录通知，此值将被忽略) 。|
+|featureSettings|authenticatorAppFeatureSettings|确定应用于其他设置Microsoft Authenticator。 可能的值是 `null` `requireNumberMatching` ：、 (需要匹配 MFA 通知的号码。 对于手机登录通知，此值将被忽略) 。|
 |isRegistrationRequired|Boolean|确定是否强制用户注册身份验证方法。 *不支持*。 |
 |shownContext|authenticatorAppContextType| (个人预览) 确定应在通知正文中向用户显示有关登录的上下文类型。 可取值为：`location`、`app`。|
 |targetType|authenticationMethodTargetType| 可取值为：`user`、`group`。|

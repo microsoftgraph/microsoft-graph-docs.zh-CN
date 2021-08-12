@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bd2038512cc1cf90dc66f9d29b6b194b44b680c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d03bfb4464ef427e7712cff172aa0ffce82a30fbde0dd697a7bab6ed62f3d03f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755250"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233810"
 ---
 # <a name="delete-devicemanagementexportjob"></a>删除 deviceManagementExportJob
 

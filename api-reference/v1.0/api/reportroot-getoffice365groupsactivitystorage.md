@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 3a2a588e026b820e9e103e98f5188e18cef0c14d
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 7b16306e3bc48b6d168fbc3141a7824b3393cf0c3cfdd808eb4d474755000b79
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124666"
 ---
 # <a name="reportroot-getoffice365groupsactivitystorage"></a>reportRoot: getOffice365GroupsActivityStorage
 
@@ -18,9 +18,9 @@ ms.locfileid: "49981982"
 
 获取跨所有组邮箱和组网站使用的总存储。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - Microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报告 -](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)Microsoft 365组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f2b1b2d50807cfc78fd89dbf124de3e809831e03
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d96a1b87fb9ead187713add6183d0de32ea21210e9ba7604582d2514c53a08f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752278"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146865"
 ---
 # <a name="macosofficesuiteapp-resource-type"></a>macOSOfficeSuiteApp 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "52752278"
 
 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List macOSOfficeSuiteApps](../api/intune-apps-macosofficesuiteapp-list.md)|[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md) 集合|列出 [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md) 对象的属性和关系。|
 |[Get macOSOfficeSuiteApp](../api/intune-apps-macosofficesuiteapp-get.md)|[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md)|读取 [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md) 对象的属性和关系。|
@@ -51,7 +51,7 @@ ms.locfileid: "52752278"
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|

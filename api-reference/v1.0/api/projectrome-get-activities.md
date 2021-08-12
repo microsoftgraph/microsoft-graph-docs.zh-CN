@@ -1,22 +1,22 @@
 ---
 title: 获取用户活动
-description: 获取给定用户的活动。 与 **最近** 的 OData 函数不同，将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
+description: 获取给定用户的活动。 与 **最近的** OData 函数不同，将返回不带历史记录的活动。 权限 UserActivity.ReadWrite.CreatedByApp 将针对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 0b2f9d7831a01760e871298b1df8de05a5b43978
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: bb099753a842b6aeef1a0c5f8353ea390ebb6de79a054db8081c72ca795a9dab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175446"
 ---
 # <a name="get-user-activities"></a>获取用户活动
 
 命名空间：microsoft.graph
 
-获取给定用户的活动。 与 **最近** 的 OData 函数不同，将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
+获取给定用户的活动。 与 **最近的** OData 函数不同，将返回不带历史记录的活动。 权限 UserActivity.ReadWrite.CreatedByApp 将针对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。
 
 ## <a name="permissions"></a>权限
 
@@ -40,11 +40,11 @@ GET /me/activities
 
 此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 支持以下查询参数：
 
-- **historyItems**导航属性的 $expand。
-- $top，以限制跨页的最大项目数。
-- 在活动或**historyItems**的**lastModifiedDateTime**属性上 $filter （如果已展开）。
+- $expand **historyItems 导航属性** 。
+- $top限制页面的最大项目数。
+- $filter活动或 **historyItems** 的 **lastModifiedDateTime** 属性（如果展开）。
 
-以下是使用 URL 编码支持的查询的一些示例：
+以下是使用 URL 编码的受支持查询的一些示例：
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -66,7 +66,7 @@ GET /me/activities
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `200 OK` 应用程序的用户活动的响应代码。
+如果成功，此方法将返回 `200 OK` 响应代码以及应用程序的用户活动。
 
 ## <a name="example"></a>示例
 

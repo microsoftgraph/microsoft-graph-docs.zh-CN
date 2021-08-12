@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 41e84491593040ff44e9f5097fd6c960f9250b45
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 440285b790e64af5c7a4764baf3176ac464fb7beedec848af444de55c432ef1d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124218"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>persistentBrowserSessionControl 资源类型
 

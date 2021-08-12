@@ -3,12 +3,12 @@ title: 结合使用 Postman 和 Microsoft Graph API
 description: 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: b5dbeb6c779bcd02cd1ae329b3b63df6c44a1da8
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 0473ef6e0ad7924a7b41889e615e6c1dedbbd989e98116a9c24ab604d186a1a6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430129"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143590"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>结合使用 Postman 和 Microsoft Graph API
 

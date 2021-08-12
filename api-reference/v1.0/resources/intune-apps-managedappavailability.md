@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5bae852784468129266ba5faf9c2d64e931c8452
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0362c5df0d17707f86ef786c1202ab5007b0acc019c0bd9d852310aba42e44dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752250"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246862"
 ---
 # <a name="managedappavailability-enum-type"></a>managedAppAvailability 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752250"
 托管 (MAM) 应用程序的可用性。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |global|0|适用于所有租户的全局可用应用。|
 |lineOfBusiness|1|组织专用的业务线应用。|

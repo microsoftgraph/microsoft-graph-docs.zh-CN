@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 709466f2c758c365c8ebb353481bcd77ad08738a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: abf4e88d4c89ac5a5a730e5a095cf3ff59c3652b81c81c2b6bfb7ebd07d64b9b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145031"
 ---
 # <a name="list-mobileappassignments"></a>列出 mobileAppAssignments
 

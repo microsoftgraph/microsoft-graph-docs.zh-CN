@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 171b53adc815638546bbdf71411c58d293c05de4
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 56fa0c8f47f9bec9e2c00cbff3423a8aed541a2709c117326d3d0a29effabc08
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467278"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141691"
 ---
 # <a name="acl-resource-type"></a>acl 资源类型
 

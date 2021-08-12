@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 26ed5f571aae84ce553dc95b04a385f7f9dd8474
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 2258ae2cd6eea21c858073903fdc6be5e9b244a32fd99d1912e546e36e58d4dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230898"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 

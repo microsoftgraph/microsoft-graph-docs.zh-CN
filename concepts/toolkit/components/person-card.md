@@ -3,12 +3,12 @@ title: Person-Card Microsoft Graph Toolkit 中的组件
 description: Person-Card组件是显示与人员相关详细信息的组件。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 58efcb2c1ca7ec1e366340b1dcbe199fe054c7b8
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 5f7232470edc576ae97fa745d4af523ec8f5e5af994b565b12c44667fecb5a8f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245357"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card Microsoft Graph Toolkit 中的组件
 
@@ -61,7 +61,7 @@ The person card contains several configurable sections for displaying person det
 | 组织 | `boolean` - 指示是否显示个人卡片组织部分。 默认值为 `true`。  |
 | mailMessages | `boolean` - 指示是否显示"人员卡片邮件"部分。 默认值为 `true`。  |
 | files | `boolean` - 指示是否显示人员卡片文件部分。 默认值为 `true`。  |
-| 个人资料 | `boolean` - 指示是否显示个人卡片配置文件部分。 默认值为 `true`。  |
+| profile | `boolean` - 指示是否显示个人卡片配置文件部分。 默认值为 `true`。  |
 
 若要禁用分区，只需在应用初始化代码中将 `false` 属性设置为 ：
 ```ts
@@ -173,7 +173,7 @@ mgt-person {
 | `showPresence` 设置为 `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | 默认值 |
 | `sections.organization` 已启用 (默认)  | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | 组织 |
 | `sections.organization.showWorksWith` 设置 (默认)  | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | 组织 |
-| `sections.mailMessages` 已启用 (默认)  | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | 邮件 |
+| `sections.mailMessages` 已启用 (默认)  | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | 消息 |
 | `sections.files` 已启用 (默认)  | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) 和 [/me/insights/used](/graph/api/insights-list-used) | 文件 |
 
 该类还公开了一个静态方法，该方法返回人员卡片根据全局人员卡片配置运行所需的 `MgtPersonCard` `getScopes` 作用域数组。
@@ -193,7 +193,7 @@ const neededScopes = MgtPersonCard.getScopes();
 > [!IMPORTANT]
 > 该 `mgt-person-card` 组件从父组件检索基本人员数据，而无需 `mgt-person` 调用 Microsoft Graph。 单独 `mgt-person-card` 使用时，它将检索必要的数据本身并缓存它。 卡片分区中显示的数据是单独检索的，不会进行缓存。
 
-|对象存储|缓存数据|备注|
+|对象存储|缓存数据|说明|
 |---------|-----------|-------|
 |`people`|人员信息|指定 `personQuery` 时使用，其值不同于 `me`|
 |`photos`|人员照片|

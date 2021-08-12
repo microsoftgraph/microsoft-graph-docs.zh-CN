@@ -1,32 +1,32 @@
 ---
 title: teamworkBot 资源类型
-description: Microsoft Teams 生态系统中的机器人。
+description: 生态系统中的自动Microsoft Teams程序。
 author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 99bdde9a4ff26945dd5aa040f2741fdf50c1273b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ccfbb82cace0f9bc38eeb3a5e49a185b12abc99376497bb900e0f150bc39b5c6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50476408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249102"
 ---
 # <a name="teamworkbot-resource-type"></a>teamworkBot 资源类型
 
 命名空间：microsoft.graph
 
-表示 Microsoft Teams 生态系统中的机器人。
+代表生态系统中的Microsoft Teams程序。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取自动程序](../api/teamworkbot-get.md)|[teamworkBot](../resources/teamworkbot.md)|读取团队合作Bot 对象 [的属性](../resources/teamworkbot.md) 和关系。|
+|[获取自动程序](../api/teamworkbot-get.md)|[teamworkBot](../resources/teamworkbot.md)|读取 [teamworkBot](../resources/teamworkbot.md) 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|与特定 [teamsAppDefinition](../resources/teamsappdefinition.md)相关联的机器人的 ID。 此值通常为 GUID。|
+|id|String|与特定 [teamsAppDefinition](../resources/teamsappdefinition.md)关联的机器人的 ID。 此值通常为 GUID。|
 
 ## <a name="relationships"></a>关系
 无。
@@ -49,8 +49,8 @@ ms.locfileid: "50476408"
 
 ## <a name="see-also"></a>另请参阅
 
-- 若要在团队中安装机器人，请参阅团队中 [列表应用的示例](../api/team-list-installedapps.md)2。 <!-- - To get bots installed in a chat, see example 2 in [List apps in chat](../api/chat-list-installedapps.md). -->
-- 若要在用户的个人范围内安装自动程序，请参阅为用户安装的列表 [应用中的示例](../api/userteamwork-list-installedapps.md)2。
+- 若要在团队中安装机器人，请参阅在团队中[列出应用中的示例 2。](../api/team-list-installedapps.md) <!-- - To get bots installed in a chat, see example 2 in [List apps in chat](../api/chat-list-installedapps.md). -->
+- 若要在用户的个人范围内安装机器人，请参阅为用户安装的列表 [应用中的示例](../api/userteamwork-list-installedapps.md)2。
 
 
 

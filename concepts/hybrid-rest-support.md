@@ -2,16 +2,16 @@
 title: 使用 REST API 访问 Exchange 混合部署中的邮箱（预览版）
 description: 在属于 Microsoft 365 的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。
 localization_priority: Priority
-ms.openlocfilehash: ba9d4d734d90b60814841a2671b087fb5095a2fd
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 87e907e5c3f13a48c2c7905d9c93c0d6c36371f2d303ff28afcb0064f6d003b9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289174"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174855"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>使用 REST API 访问 Exchange 混合部署中的邮箱（预览版）
 
-在作为 Microsoft 365 一部分的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。Exchange 本地服务器的 Exchange 2016 累积更新 3 (CU3) 于 2016 年 9 月发布，增加了对 REST API 与 Microsoft 365 集成的支持。如果你的应用使用 v1.0 的[邮件](/graph/api/resources/message?view=graph-rest-1.0)、[日历](/graph/api/resources/calendar?view=graph-rest-1.0)或[联系人](/graph/api/resources/contact?view=graph-rest-1.0) API，则只要部署满足特定的[要求](#requirements-for-the-rest-api-to-work-in-hybrid-deployments)，现在还可以在_混合_部署中找到无缝的身份验证和应用程序体验，而不论该邮箱是在本地还是在云中。 
+在作为 Microsoft 365 一部分的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。Exchange 本地服务器的 Exchange 2016 累积更新 3 (CU3) 于 2016 年 9 月发布，增加了对 REST API 与 Microsoft 365 集成的支持。如果你的应用使用 v1.0 的 [邮件](/graph/api/resources/message?view=graph-rest-1.0)、[日历](/graph/api/resources/calendar?view=graph-rest-1.0)或 [联系人](/graph/api/resources/contact?view=graph-rest-1.0) API，则只要部署满足特定的 [要求](#requirements-for-the-rest-api-to-work-in-hybrid-deployments)，现在还可以在 _混合_ 部署中找到无缝的身份验证和应用程序体验，而不论该邮箱是在本地还是在云中。 
 
 
 当 Microsoft Graph 在后台识别到一个 REST API 调用正在尝试访问混合部署中的本地邮箱时，它会将 REST 请求代理到本地 REST 终结点，然后处理此请求。此发现使得访问 REST API 成为可能。
@@ -28,7 +28,7 @@ Microsoft Graph 提供开放性（支持 JSON、OAUTH 和 ODATA 等开放标准�
 
 - 邮箱要求
 
-  - 所有将使用 REST API 的本地邮箱必须位于处于 Exchange 2016 CU3 服务器的数据库中。 
+  - 所有将使用 REST API 的本地邮箱必须位于处于 Exchange 2016 CU3 服务器的数据库中。 
 
 - 基础结构要求
 

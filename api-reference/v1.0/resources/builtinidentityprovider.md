@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 3abed0479d6746c1ba1c1279512317ab60445377
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 096574328a5dc5c1bb8c59020398c33396291afc97207a9f59408da9a8a45196
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534101"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202544"
 ---
 # <a name="builtinidentityprovider-resource-type"></a>builtInIdentityProvider 资源类型
 命名空间：microsoft.graph
@@ -33,7 +33,7 @@ ms.locfileid: "53534101"
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|标识提供程序的标识符。 继承自 [identityProviderBase](../resources/identityproviderbase.md)。 只读。|
+|id|String|标识提供程序的标识符。继承自 [identityProviderBase](../resources/identityproviderbase.md)。只读。|
 |displayName|字符串|标识提供者的显示名称。继承自 [identityProviderBase](../resources/identityproviderbase.md)。|
 |identityProviderType|字符串|标识提供程序类型。 对于 B2B 方案，可能的值： `AADSignup`、 `MicrosoftAccount`、 `EmailOTP`。 此为必需属性。|
 

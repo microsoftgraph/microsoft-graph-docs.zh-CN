@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e893d20ea33dd7a2bca13a760aceb468644cdb9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8cb4f39829155d85231f4bf8ce03c8c006bce0c17dc8ba54861231b7c570018e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160441"
 ---
 # <a name="delete-auditevent"></a>删除 auditEvent
 

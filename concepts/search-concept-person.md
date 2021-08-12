@@ -4,12 +4,12 @@ description: 可以使用 Microsoft 搜索 API 搜索与自己相关的人员。
 author: acsehi
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 0540ee40c672af4305a396b7348d7d87276c0ce7
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: ac978f09477db841e8f71a630128ba58d4f19ec2567813704a326ba49b13b818
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235091"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-people-preview"></a>使用 Microsoft Microsoft 搜索 中的 Graph API 搜索预览 (人员) 
 

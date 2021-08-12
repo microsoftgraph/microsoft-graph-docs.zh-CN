@@ -4,12 +4,12 @@ description: Microsoft Graph 是 Microsoft 365 中数据和智能的网关。Mic
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: abdb8320086a5ddf7d82d8ed42346779c5af35c0
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: d41cb1f3d2e3932c1a8b61a5d64ae6ba9d8c65230d9d872fce3e012b2aef6b19
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165541"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 

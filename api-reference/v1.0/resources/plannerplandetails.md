@@ -1,30 +1,30 @@
 ---
 title: plannerPlanDetails 资源类型
-description: '**PlannerPlanDetails**资源表示有关计划的其他信息。 每个 plan 对象都有一个详细信息对象。'
+description: '**plannerPlanDetails** 资源表示有关计划的其他信息。 每个计划对象都有一个 details 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 727da0983ddcaffb158be14a578a5a81eacecab3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db0cce3b2304011cffac694815dda19eb196e16b51f83bf79c43fb0bdfebec3a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037386"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235357"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails 资源类型
 
 命名空间：microsoft.graph
 
 
-**PlannerPlanDetails**资源表示有关计划的其他信息。 每个 [plan](plannerplan.md) 对象都有一个详细信息对象。
+**plannerPlanDetails** 资源表示有关计划的其他信息。 每个 [计划](plannerplan.md) 对象都有一个 details 对象。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |读取 **plannerPlanDetails** 对象的属性和关系。|
+|[获取 plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |读取 **plannerPlanDetails 对象的属性和** 关系。|
 |[更新](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |更新 **plannerPlanDetails** 对象。 |
 
 ## <a name="properties"></a>属性
@@ -32,7 +32,7 @@ ms.locfileid: "48037386"
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
 |id|String| 只读。 计划详细信息的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
-|sharedWith|[plannerUserIds](planneruserids.md)|与之共享此计划的用户 id 集。 如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享 [组的](group.md) 计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。 |
+|sharedWith|[plannerUserIds](planneruserids.md)|此计划共享的用户 ID 集。 如果你要利用Microsoft 365组，请使用组 API 管理组成员身份以[共享组计划](group.md)。 您还可以将组的现有成员添加到此集合中，尽管他们无需访问组所拥有的计划。 |
 
 ## <a name="relationships"></a>关系
 无

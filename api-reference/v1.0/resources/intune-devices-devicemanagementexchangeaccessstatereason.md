@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7aa61e8ecdf88663123a486cb9bccb033aeecbb5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ee0bf43c6a6a0141128f48da43fc8d4e5570e0acd7bdb85de715011435765be8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202285"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52754572"
 设备Exchange访问状态原因。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|未从用户发现任何访问Exchange|
 |unknown|1|未知访问状态原因|
@@ -33,7 +33,7 @@ ms.locfileid: "52754572"
 |other|7 |访问状态由用户Exchange|
 |compliant|8 |合规性质询授予的访问状态|
 |notCompliant|9 |合规性质询撤销的访问状态|
-|notEnrolled|10  |管理质询撤销的访问状态|
+|notEnrolled|10 |管理质询撤销的访问状态|
 |unknownLocation|12 |由于位置未知而进入访问状态|
 |mfaRequired|13|MFA 质询导致的访问状态|
 |azureADBlockDueToAccessPolicy|14 |AAD 访问策略吊销的访问状态|

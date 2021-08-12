@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2f75a0ee81f1c43923a910bd86df4828c276706e
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: ff64481140678055f8bab28f2ff4aa443689b11eec8a14d17648cf800a179996
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469106"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124561"
 ---
 # <a name="authenticationmethodtarget-resource-type"></a>authenticationMethodTarget 资源类型
 

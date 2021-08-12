@@ -1,28 +1,28 @@
 ---
 title: SubscribeToToneOperation 资源类型
-description: 描述用于接收 DTMF 声音的订阅的创建响应格式。
+description: 描述创建接收 DTMF 音的订阅的响应格式。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a53405f58c568d17d040dd7368f39cef6838510c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bcae95f7c711ee1853885e851b7f281e7f6597bd70ccd808722f75b67141a6be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169254"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>SubscribeToToneOperation 资源类型
 
 命名空间：microsoft.graph
 
-描述用于接收 DTMF 声音的订阅的创建响应格式。
+描述创建接收 DTMF 音的订阅的响应格式。
 
 ## <a name="properties"></a>属性
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 适用                  | String                      | 客户端上下文。                                                                                                                               |
+| clientContext                  | String                      | 客户端上下文。                                                                                                                               |
 | id                             | String                      | 服务器操作 ID。 只读。                                                                                             |
 | status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
 

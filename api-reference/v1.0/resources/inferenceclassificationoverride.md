@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 07bd56a197daa97f2c45baf62531ff53dee0bb1a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f9a02528f9bb781e8dd1a6f842f8d5a429160706f8fb3a3da3073358653b38cb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160063"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "50137534"
 表示来自特定发件人的传入邮件始终应如何分类的用户的替代。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -29,7 +29,7 @@ ms.locfileid: "50137534"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|inferenceClassificationType| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值是： `focused` `other` 。|
+|classifyAs|inferenceClassificationType| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值是 `focused` `other` ：、。|
 |id|string| 替代的唯一标识符。只读。|
 |senderEmailAddress|[emailAddress](emailaddress.md)|为其创建替代的发件人的电子邮件地址信息。|
 

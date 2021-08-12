@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 42369cd75b030ee7c46a6f270fcee548f42338a4
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: bf19b34143935f66ab835cd12a47881bc0b1b1b2aa1f960d1d35f4be3d2ed41a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238151"
 ---
 # <a name="chatmessagementionedidentityset-resource-type"></a>chatMessageIdentitySet 资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "53211077"
 |属性|类型|说明|
 |:---|:---|:---|
 |application|[Identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 如果存在，表示应用程序 (例如，自动程序) @mentioned消息 [中的自动程序](../resources/chatmessage.md)。|
-|对话|[teamworkConversationIdentity](../resources/teamworkconversationidentity.md)|如果存在，表示对话 (例如，团队或频道) @mentioned消息 [中](../resources/chatmessage.md)。|
+|conversation|[teamworkConversationIdentity](../resources/teamworkconversationidentity.md)|如果存在，表示对话 (例如，团队或频道) @mentioned消息 [中](../resources/chatmessage.md)。|
 |设备|[identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 由于不支持在设备上使用@mention使用。|
-|user|[identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 如果存在，表示用户@mentioned消息[中显示。](../resources/chatmessage.md)|
+|用户|[identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 如果存在，表示用户@mentioned消息[中显示。](../resources/chatmessage.md)|
 
 ## <a name="relationships"></a>关系
 无。

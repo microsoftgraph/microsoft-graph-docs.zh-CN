@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d6bd9960b4341c15c7fbbe084d7fbcb75eafdfc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0ef936cf56db56dcfb4936796c742bc9afd22398d831d9b0319305211b4abf22
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197469"
 ---
 # <a name="renewupload-action"></a>renewUpload 操作
 

@@ -4,12 +4,12 @@ description: 作为对 addKey 和 removeKey 方法的请求验证的一部分，
 localization_priority: Priority
 ms.prod: applications
 author: davidmu1
-ms.openlocfilehash: c459159c780b819589b196dcc44ee0a0cf9a65af
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: dedd2c8b3439027a02f36e5a1ba1f41bfa830708da73bd1313eacaf32c739c70
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163605"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>生成用于滚动密钥的所有权证明令牌
 

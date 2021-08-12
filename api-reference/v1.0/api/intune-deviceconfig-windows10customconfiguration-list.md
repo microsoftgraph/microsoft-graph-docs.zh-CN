@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe429488befef4c727bfd915a97dcea5dd179b4e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 004df1b3a9441eee8a275785966fce3f982db41989b492d22d20b6c005f6fda7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756202"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54199996"
 ---
 # <a name="list-windows10customconfigurations"></a>列出 windows10CustomConfigurations
 

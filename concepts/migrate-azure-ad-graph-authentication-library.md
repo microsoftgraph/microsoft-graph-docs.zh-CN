@@ -1,30 +1,30 @@
 ---
 title: 查看应用身份验证库更改
-description: 介绍如何更新身份验证库使用，以将应用从 Azure Active Directory (Azure AD) API 迁移到 Microsoft Graph API。
+description: 介绍如何更新身份验证库使用，以将应用从 Azure AD Azure Active Directory (API) 迁移到 Microsoft Graph API。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: ef49c6a3448dd63a7c933bb40748f218d6fd2db0
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f1b502c3d72fd194b809e355f09e43154ff5a4f27569c0fc534fcbfc55f11123
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760684"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163496"
 ---
 # <a name="review-app-authentication-library-changes"></a>查看应用身份验证库更改
 
 本文是步骤 *3：查看应用程序迁移*[过程的详细信息的一部分](migrate-azure-ad-graph-planning-checklist.md)。
 
-大多数应用使用身份验证库获取和管理访问令牌以调用 Microsoft Graph。  Microsoft 提供两个身份验证库：
+大多数应用使用身份验证库获取和管理访问令牌，以调用 Microsoft Graph。  Microsoft 提供两个身份验证库：
 
-- [Azure Active Directory 身份验证库 (](/azure/active-directory/develop/active-directory-authentication-libraries) ADAL) 
+- [Azure Active Directory ADAL (](/azure/active-directory/develop/active-directory-authentication-libraries)身份验证库) 
 - [MICROSOFT 身份验证库](/azure/active-directory/develop/reference-v2-libraries) (MSAL) 
 
 ## <a name="updating-adal"></a>更新 ADAL
 
 如果你的应用当前使用 ADAL，请使用两阶段迁移方法：
 
-1. 更新应用以获取 Microsoft Graph 的访问令牌。 继续使用 ADAL 执行此步骤。 更新 **resourceURL**，其中保存了表示资源 Web API 的 URI，网址为：
+1. 更新应用以获取 Microsoft Graph 的访问Graph。 继续使用 ADAL 执行此步骤。 更新 **resourceURL**，其中保存了表示资源 Web API 的 URI，网址为：
 
     `https://graph.windows.net`  
 
@@ -32,7 +32,7 @@ ms.locfileid: "50760684"
 
     `https://graph.microsoft.com`
 
-    在此更改后，新获取的令牌具有相同的作用域，但访问令牌的访问群体现在为 Microsoft Graph。  
+    在此更改后，新获取的令牌具有相同的作用域，但访问令牌的访问群体现在是 Microsoft Graph。  
 
     更新 **resourceURL** 和验证功能后，发布临时更新，让用户启动并运行。
 
@@ -56,5 +56,5 @@ var scopes = new string[] { "https://graph.microsoft.com/.default" };
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解 Azure AD Graph 和 Microsoft Graph 之间的 [.NET](migrate-azure-ad-graph-client-libraries.md) 客户端库差异。
+- 了解 Azure AD Graph 和 Microsoft Graph 之间的[.NET](migrate-azure-ad-graph-client-libraries.md)客户端库差异。
 - 再次查看 [检查](migrate-azure-ad-graph-planning-checklist.md) 表。

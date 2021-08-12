@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: c6df66260673e6319f8b91bf52c7ca351adb85a7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 05d4fd304c0cb85b9ca8d2d7aa71d6bdd90128ef42ca13b0d5ed881f70330ec9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155006"
 ---
 # <a name="mailassessmentrequest-resource-type"></a>mailAssessmentRequest 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50958071"
 
 创建邮件威胁评估请求时，邮件应由 中指定的用户接收 `recipientEmail` 。 [Mail.Read](/graph/permissions-reference#mail-permissions) (Mail.Read 或 Mail.Read.Shared) 的委派邮件权限将重新进行重新quried，以访问用户接收或其他人共享的邮件。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -40,7 +40,7 @@ ms.locfileid: "50958071"
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|提交者的预期评估。 可能的值是：`block`、`unblock`。|
 |id|String|威胁评估请求 ID 是 GUID (全局唯一) 。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
-|状态|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
+|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
 
 ## <a name="relationships"></a>关系
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 232a4eef3c8543be7d8242c0d8f87586037910fd
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c8f0178a6d2684f67b15ef953c05eed35bfcd4233b1058d3fd3d406b04b83582
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238746"
 ---
 # <a name="update-macosofficesuiteapp"></a>更新 macOSOfficeSuiteApp
 

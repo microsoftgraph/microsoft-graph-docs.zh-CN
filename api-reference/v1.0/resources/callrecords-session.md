@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 837e72c52002c0084994b74d3991c69272bdf870
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8aa0874f0f6853d49472ff756b152aee06f7504fa42a4141c110d10830ae27aa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155181"
 ---
 # <a name="session-resource-type"></a>会话资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50721801"
 
 代表User-User电话会议User-Meeting通信的一种通信方式。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

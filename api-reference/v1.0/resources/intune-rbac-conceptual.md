@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: fddf37061e1311c543e0f88db6474aa0b16c97ee
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: e127ee4653f10b680cb785eaceec814d9f75eb031f9e63bb6b33c2614fe8bc9f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205267"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 

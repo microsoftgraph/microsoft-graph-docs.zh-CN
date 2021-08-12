@@ -1,33 +1,33 @@
 ---
 title: recordOperation 资源类型
-description: 此资源类型包含与音频录音相关的信息。
+description: 此资源类型包含与音频录制有关的信息。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 508404a3360b2b59656dc31df6ec44f16f682cf4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e655765044e7ed54746efda17e4e2e1c5129d0e6ca4bbf4a692d45817034f9f7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991892"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202138"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
 命名空间：microsoft.graph
 
-此资源类型包含与音频录音相关的信息。
+此资源类型包含与音频录制有关的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 适用                  | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                                                                                                                               |
-| id                             | String                      | 服务器操作 id。只读。                                                                                              |
-| recordingAccessToken           | String                      | 检索录制所需的访问令牌。                                                                                              |
-| recordingLocation              | String                      | 录制所在的位置。                                                                                                      |
+| clientContext                  | String                      | 唯一的客户端上下文字符串。 最大限制为 256 个字符。                                                                                                                               |
+| id                             | String                      | 服务器操作 ID。只读。                                                                                              |
+| recordingAccessToken           | String                      | 检索记录所需的访问令牌。                                                                                              |
+| recordingLocation              | String                      | 录制的位置。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                              |
-| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                |
+| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                |
 
 ## <a name="relationships"></a>关系
 无

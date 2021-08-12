@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 报告 API 访问的报告数据是敏感
 author: kszb
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: ab92cc905bd384bfae17902e86070694951a3fd7
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 8f02807287771607d327c46fc27949132e6a85e313f99620c76be2107ec85996
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288250"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54151723"
 ---
 # <a name="authorization-for-apis-to-read-microsoft-365-usage-reports"></a>授权API读取Microsoft 365使用报告
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 37b1a54bf0451c283432970f6f14e01db6e94753
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 0d0862be39ca7dbaffe60b57294d407808e6c8329f9c8bd837f55b7a2bd52918
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230793"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -70,7 +70,7 @@ ms.locfileid: "52912260"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|resources|[educationAssignmentResource](educationassignmentresource.md) 集合| 学习与此分配关联的对象。  只有教师可以修改此列表。 可为 NULL。|
+|resources|[educationAssignmentResource](educationassignmentresource.md) 集合| Learning分配关联的对象。  只有教师可以修改此列表。 可为空。|
 |提交|[educationSubmission](educationsubmission.md) 集合| 发布后，每个学生都有一个表示其工作和成绩的提交对象。  只读。 可为 NULL。|
 |categories|[educationCategory](educationcategory.md) 集合| 设置后，使用户能够轻松查找给定类型的工作分配。  只读。 可为 NULL。|
 |rubric|[educationRubric](educationrubric.md)|设置后，此工作分配附加的评分标准。|

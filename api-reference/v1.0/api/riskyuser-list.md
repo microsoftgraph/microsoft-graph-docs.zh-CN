@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c0e47c6de003bdb24cea59bc0f36e76db4e68472
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f5d14ecc7a6e6f21ab784d5416c03c69284555e34d00fa6a37355a156553abec
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175432"
 ---
 # <a name="list-riskyusers"></a>列出 riskyUsers
 命名空间：microsoft.graph

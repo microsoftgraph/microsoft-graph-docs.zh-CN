@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8225a76f32fb415370ca3e5f23df0f9228fd426c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7a8c76305f614d787f4e243ff2c1fc47a02bdff927c7b44731ecdb665ac09e3c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235511"
 ---
 # <a name="mdmauthority-enum-type"></a>mdmAuthority 枚举类型
 

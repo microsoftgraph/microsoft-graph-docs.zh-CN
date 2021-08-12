@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3cc3a10d1ec19c5216ee7a23a73a0f14a84c8db
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3be233b2b438ee346b1baaf8f9a97dbdcdd5b232c7c88830120ae0b0f2b11925
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245609"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>列出 targetedManagedAppConfigurations
 

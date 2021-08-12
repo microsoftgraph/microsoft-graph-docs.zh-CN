@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91f8a088a5d814f98c4b2d0d8743e96326021689
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9e4fcb30464e067d0d1ac8756f62b55baa958ec341168bea1d01821829b892ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753566"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240846"
 ---
 # <a name="retire-action"></a>retire 操作
 

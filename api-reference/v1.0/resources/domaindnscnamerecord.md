@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2834aad1d0f46552eefbf2afba30b08f21924369
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 3b626a13af3087eb65be24d3b33958cdba3c57cd71cc402a27f8547f44e45256
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761386"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169646"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord 资源类型
 
@@ -25,12 +25,12 @@ ms.locfileid: "50761386"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|canonicalName|字符串| CNAME 记录的规范名称。 用于在 DNS 主机上配置 CNAME 记录。 |
-|id|字符串| 分配给此实体的唯一标识符。 不可为空，只读|
+|canonicalName|String| CNAME 记录的规范名称。 用于在 DNS 主机上配置 CNAME 记录。 |
+|id|String| 分配给此实体的唯一标识符。 不可为空，只读|
 |isOptional|Boolean| 如果为 false，则客户必须在 DNS 主机上配置 CNAME 记录，Microsoft Online Services该域正常运行。 不可为 null |
-|label|字符串| 在 DNS 主机上配置 CNAME 记录的 *别名/主机/* 名称时所使用的值。 |
-|recordType|字符串| DNS 记录的类型。 该值始终为 *CName*。 键|
-|supportedService|字符串| 依赖此 CNAME 记录的 Microsoft Online 服务或功能。</br></br>可以是下列值之一：null、Email、Sharepoint、EmailInternalRelayOnly、OfficeCommunicationsOnline、SharePointDefaultDomain、FullRedelegation、SharePointPublic、OrgIdAuthentication、Yammer、Intune           |
+|标签|String| 在 DNS 主机上配置 CNAME 记录的 *别名/主机/* 名称时所使用的值。 |
+|recordType|String| DNS 记录的类型。 该值始终为 *CName*。 键|
+|supportedService|String| 依赖此 CNAME 记录的 Microsoft Online 服务或功能。</br></br>可以是下列值之一：null、Email、Sharepoint、EmailInternalRelayOnly、OfficeCommunicationsOnline、SharePointDefaultDomain、FullRedelegation、SharePointPublic、OrgIdAuthentication、Yammer、Intune           |
 |ttl|Int32| 在 DNS 主机上配置 CNAME 记录的 ttl (ttl) 时要使用的值。 不可为 null |
 
 ## <a name="relationships"></a>关系

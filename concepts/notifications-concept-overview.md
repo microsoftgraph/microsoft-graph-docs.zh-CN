@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: notifications
 ms.custom: scenarios:getting-started
 author: merzink
-ms.openlocfilehash: 3bba3a668a277d919942d09fc44d7e0733a575fd
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 1ba75131bb3eae658cea7deae854e0f4628dd59cde13ddf2981eb6c3bbf82e1d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969501"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174765"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>利用 Microsoft Graph 通知实现以人为中心的通知体验
 

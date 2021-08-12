@@ -5,12 +5,12 @@ description: ItemAnalytics 对象提供有关在项目上发生的活动的分�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 96ad65ef5cc8907663a9ca67e5ea2b7546b8fa03
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3ffedd01287f66a5640fa1a1868b05c42a6750ee223bc59546241b47733f1fc4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238657"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196969"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "50238657"
 
 | 属性      | 类型                 | 说明
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | 项目生命周期分析。
+| allTime       | [itemActivityStat][] | 项目生命周期的分析。
 | lastSevenDays | [itemActivityStat][] | 过去七天的分析。
 
 [itemActivityStat]: itemactivitystat.md
@@ -38,7 +38,7 @@ ms.locfileid: "50238657"
   "blockType": "resource",
   "optionalProperties": [ ],
   "@type": "microsoft.graph.itemAnalytics",
-  "@type.aka": "oneDrive.analytics"
+  "@type.aka&quot;: &quot;oneDrive.analytics"
 }-->
 
 ```json

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: f0bf6c66de4a65ae7fd53c4bbe897e37c7bc8cb4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 1c43777895435c22970a68545b0e305710e24a67580b3b09de10b776fc243880
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126800"
 ---
 # <a name="reportroot-getemailappusageappsusercounts"></a>reportRoot: getEmailAppUsageAppsUserCounts
 
@@ -18,9 +18,9 @@ ms.locfileid: "49981807"
 
 获取每个电子邮件应用的唯一用户数。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报告 - 电子邮件应用使用情况](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报告 - 电子邮件应用使用情况](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
