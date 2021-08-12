@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e6109cbc84e3eeb5f1bb6e627b985225d77f0436
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f548b2ed0b0f99844f362260bf52d673d0930e77fbc6e06d34d83104cc2194fb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051331"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175544"
 ---
 # <a name="create-openshift"></a>创建 openShift
 

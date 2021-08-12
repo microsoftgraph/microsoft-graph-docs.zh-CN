@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f2691fc98db31d01422346bf20e10fbb876b5a1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef76471475d01d161b5cc7bcaaed8f3ebe72f1a00bdf8aa25e74798822704351
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988385"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197091"
 ---
 # <a name="chartfill-resource-type"></a>ChartFill 资源类型
 

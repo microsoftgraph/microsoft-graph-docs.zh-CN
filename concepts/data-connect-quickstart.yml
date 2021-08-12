@@ -1,8 +1,8 @@
 ### YamlMime:Tutorial
-title: 生成首个 Microsoft Graph Data 连接 应用程序
+title: 生成首个Microsoft Graph 数据连接应用程序
 metadata:
-  title: 生成首个 Microsoft Graph Data 连接 应用程序
-  description: 本教程介绍如何生成第一个 Microsoft Graph Data 连接 应用程序，用于电子邮件指标。
+  title: 生成首个Microsoft Graph 数据连接应用程序
+  description: 本教程介绍如何生成首个电子邮件Microsoft Graph 数据连接应用程序。
   audience: Developer
   level: Beginner
   displayType: one-column
@@ -10,18 +10,18 @@ metadata:
   author: fercobo-msft
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:ASP.NET
-  ms.openlocfilehash: 98127ccff39380f0d299a953b9b5abed61eedf75
-  ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+  ms.openlocfilehash: af54756e2ec275210cb621e8e118f4fdd8fbd43f1a9f10065fdd04aa300d133a
+  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/25/2021
-  ms.locfileid: "52645723"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "54146520"
 items:
-- title: 生成首个 Microsoft Graph Data 连接 应用程序
+- title: 生成首个Microsoft Graph 数据连接应用程序
   durationInMinutes: 10
   content: >
     [!INCLUDE [](data-connect-quickstart-01.md)]
-- title: 设置你的 Microsoft 365 租户并启用 Microsoft Graph Data 连接
+- title: 设置租户Microsoft 365并启用Microsoft Graph 数据连接
   durationInMinutes: 5
   content: >
     [!INCLUDE [](data-connect-quickstart-02.md)]
@@ -37,7 +37,7 @@ items:
   durationInMinutes: 15
   content: >
     [!INCLUDE [](data-connect-quickstart-05.md)]
-- title: 使用管理中心和 PowerShell Microsoft 365数据许可请求
+- title: 使用 Microsoft 365 管理 和 PowerShell 监视数据许可请求
   durationInMinutes: 5
   content: >
     [!INCLUDE [](data-connect-quickstart-06.md)]

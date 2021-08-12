@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed81c3c152b0d81cfcdf15388fdc4db3a7612052
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8d5bd5ea0914dc45f0f45549e154af11dad49f51c98b1a9eaade52b490e023ed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205729"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>officeUserCheckinSummary 资源类型
 

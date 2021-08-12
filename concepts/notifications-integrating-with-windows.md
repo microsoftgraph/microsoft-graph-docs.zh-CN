@@ -3,12 +3,12 @@ title: 将 Windows UWP 应用与用户通知客户端 SDK 相集成
 description: 将 Windows UWP 应用与用户通知客户端 SDK 相集成。
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: cc0605a1f6c8be879452a7779dfe828ffba9fafd
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 5d692ba185fed4313f0f9c8afb73f5d6d8439d254f39ea3b4ab874beec9819a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177782"
 ---
 # <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications"></a>将 Windows UWP 应用与用户通知客户端 SDK 相集成
 
@@ -64,7 +64,7 @@ ms.locfileid: "48288649"
 9. SDK 会触发事件回调，以在成功检索到更改后通知该应用。 
 10. 应用程序逻辑。 此步骤可捕获你的应用选择在事件回调内执行的操作。 通常，这会导致本地应用数据更改和本地 UI 更新。 在这种情况下，由于存在通知更新，因此应用应本地更新 UI 以反映状态更改。 例如，如果通知已标记为“已激活”，则你可以删除 Windows 操作中心内的相应定制通知弹出窗口，以实现“处理一次，每处均消除”的效果。 
 
-有关 Microsoft Graph 通知的详细信息，请参阅  [Microsoft Graph 通知概述](notifications-concept-overview.md)。 与 Microsoft Graph 通知进行端到端集成所需步骤相关的详细信息，请参阅 Microsoft Graph 通知[集成概述](notifications-integration-e2e-overview.md)。
+有关 Microsoft Graph 通知的详细信息，请参阅 [Microsoft Graph 通知概述](notifications-concept-overview.md)。 与 Microsoft Graph 通知进行端到端集成所需步骤相关的详细信息，请参阅 Microsoft Graph 通知[集成概述](notifications-integration-e2e-overview.md)。
 
 ## <a name="adding-the-sdk-to-your-project"></a>向项目添加 SDK
 

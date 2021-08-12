@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3deb1d366396bf97133b4984bda2b67609fcdee6
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 605e6cedcad0c94e9a929d17953e13bc8e5bc8999bc4f1e4ec19093045f291dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230534"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52751662"
 用于存储自定义设置的键值对
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |name|String|此键值对的名称|
 |value|String|此键值对的值|

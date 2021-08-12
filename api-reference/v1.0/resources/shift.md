@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e8c871e580818d96edcb0eae244c88c7edcc128c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: abec7f019750dbfe30335e1c8d6df3ecbb95c2d8e99a2c3720381307560ef22a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169282"
 ---
 # <a name="shift-resource-type"></a>Shift 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50721836"
 
 表示计划中的计划工作 [单位](schedule.md)。 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -32,10 +32,10 @@ ms.locfileid: "50721836"
 |名称          |类型           |说明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |班次的 **ID。**|
-| userId            |`string`      |分配给班次 的用户的 **ID。** 必需。 |
-| schedulingGroupId         |`string`      |班次属于的计划 **组的** ID。 必需。 |
-| sharedShift   |[shiftItem](shiftitem.md)  |员工 **和经理都** 可查看此班次的共享版本。 必需。 |
-| draftShift        |[shiftItem](shiftitem.md)        |经理 **可查看的此** 班次的草稿版本。 必需。 |
+| userId            |`string`      |分配给班次 的用户的 **ID。** 必填。 |
+| schedulingGroupId         |`string`      |班次属于的计划 **组的** ID。 必填。 |
+| sharedShift   |[shiftItem](shiftitem.md)  |员工 **和经理都** 可查看此班次的共享版本。 必填。 |
+| draftShift        |[shiftItem](shiftitem.md)        |经理 **可查看的此** 班次的草稿版本。 必填。 |
 | createdDateTime       |`DateTimeOffset`        |首次创建此 **班次的时间戳** 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |上次更新此 **班次的时间戳** 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedBy        | [identitySet](identityset.md)        |上次更新此班次的 **标识**。|

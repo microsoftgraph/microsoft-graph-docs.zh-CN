@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b240b9856a9efa7aaa24a070c4249c44871cfc63
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 445ac487726afaaeb33ba42cb1a217b22a6e65b35b88458bd665b6e623bb30ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250754"
 ---
 # <a name="get-iosmobileappconfiguration"></a>获取 iosMobileAppConfiguration
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 0dd339d433be593e6982b6c38818635830a2d471
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7534e538c81c543671d996c7765125eafcad9d67cddbb13ad406d06edb8b9912
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516988"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178036"
 ---
 # <a name="printserviceendpoint-resource-type"></a>printServiceEndpoint 资源类型
 
@@ -20,8 +20,8 @@ ms.locfileid: "50516988"
 
 表示打印服务实例的 URI 和标识信息。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 | [Get endpoint](../api/printserviceendpoint-get.md) | [printServiceEndpoint](printserviceendpoint.md) | 读取 endpoint 对象的属性和关系。 |
 
@@ -29,7 +29,7 @@ ms.locfileid: "50516988"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|终结点的可读显示名称。|
-|id|String|标识终结点提供的服务的唯一名称。 可能的值包括 `discovery` ： (发现服务) 、 (通知服务 `notification`) 、 (IPP 服务) 和 `ipp` (`registration` 注册服务) 。 只读。|
+|id|String|标识终结点提供的服务的唯一名称。 可能的值包括 `discovery` ： (Discovery Service) 、 (`notification` Notification Service) 、 (IPP Service) 和 `ipp` (Registration Service `registration`) 。 只读。|
 |uri|String|可用于访问服务的 URI。|
 
 

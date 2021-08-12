@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1bdb2193d1931b15ac6279ef96784d4b7ae6874
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6db80bf978923d3cf84f322aedeb48541e667776a809e0b2e82c7f28ff714515
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247226"
 ---
 # <a name="list-windows10generalconfigurations"></a>列出 windows10GeneralConfigurations
 

@@ -5,12 +5,12 @@ description: itemActivity 对象提供有关在项目上发生的活动的信息
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ef213dd50e5a6be8a96880ccd1a64f15f183f54b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 7fd7e75a7083f864ac8fbb24eae6bee3b4a41fcbf2f020fb671304c4bbe0ddce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238685"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192241"
 ---
 # <a name="itemactivity-resource-type"></a>itemActivity 资源类型
 
@@ -54,7 +54,7 @@ itemActionSet 属性中详细说明 [了 itemActivity 中][] 发生的操作。
   "optionalProperties": [ ],
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActivity",
-  "@type.aka": "oneDrive.activityEntity"
+  "@type.aka&quot;: &quot;oneDrive.activityEntity"
 }-->
 
 ```json

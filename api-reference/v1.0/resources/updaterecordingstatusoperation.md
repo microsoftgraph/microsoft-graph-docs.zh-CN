@@ -1,28 +1,28 @@
 ---
 title: updateRecordingStatusOperation 资源类型
-description: 介绍更新录制状态操作的响应格式。
+description: 描述更新录制状态操作的响应格式。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 78c5e91fa966a91bc65291fa813807cdf44ee8ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c79e97e3befcbce6b324cbaf2ac822edd9de49e1871deee815a27a4c0c62c4a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141278"
 ---
 # <a name="updaterecordingstatusoperation-resource-type"></a>updateRecordingStatusOperation 资源类型
 
 命名空间：microsoft.graph
 
-介绍更新录制状态操作的响应格式。
+描述更新录制状态操作的响应格式。
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型                        | 说明|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| 适用       | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                              |
+| clientContext       | String                      | 唯一的客户端上下文字符串。 最大限制为 256 个字符。                              |
 | id                  | String                      | 只读。                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | 结果信息。 只读。                                                 |
 | status              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b20a706c57b4482a9ad764692e849c9d6e6ec7c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 530fa87a6217524469bef1835d90be4b4f4e7ee314e38a7dc8bb558f6bad7ed0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238543"
 ---
 # <a name="get-deviceconfigurationdeviceoverview"></a>获取 deviceConfigurationDeviceOverview
 

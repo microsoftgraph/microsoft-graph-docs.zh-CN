@@ -4,16 +4,16 @@ description: 了解如何解决 Microsoft Graph 401 和 403 授权错误。
 author: davidmu1
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: ecc8929c0671cbafed4baa5fc242a9f8515c7652
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 98afbd06b1b04f2a0e046bf85dbcbecd49eedac760b702178a542f2511d9f0c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180360"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>解决 Microsoft Graph 授权错误
 
-授权错误可能是由多个不同的问题造成的，其中大多数问题会产生 403 错误(有几个例外)。 例如，以下情况可能会导致授权错误：
+授权错误可能是由于几个不同的问题造成的，其中大部分都会产生 403 错误 (少数例外)。例如，以下情况都可能导致授权错误:
 
 * 不正确的[访问令牌获取流](/azure/active-directory/develop/active-directory-authentication-scenarios)
 * 配置不当的[权限范围](/azure/active-directory/develop/active-directory-v2-scopes)

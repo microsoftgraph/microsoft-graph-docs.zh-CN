@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: RamjotSingh
-ms.openlocfilehash: c8ef68d33137b42adbec22b8231c52d05dc2eecb
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: e42eca895b00c46561673991745f9a60a1476a4f2286b0cb3b530213422620c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582772"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175327"
 ---
 # <a name="chatmessageattachment-resource-type"></a>chatMessageAttachment 资源类型
 

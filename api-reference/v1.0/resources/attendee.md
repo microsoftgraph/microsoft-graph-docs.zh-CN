@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: de52b49bfc009158da839e00bd8fb7475d588c4b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0cdbda6cf48e472e1178e8b22ba6b81b889fa60a270e2917e86a63cb1fcdbdf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163899"
 ---
 # <a name="attendee-resource-type"></a>与会者资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "47988534"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
-|proposedNewTime|[timeSlot](timeslot.md)|与会者为开始和结束会议请求建议的备用日期/时间。 如果与会者尚未建议其他时间，则 GET 事件响应中不包含此属性。|
+|proposedNewTime|[timeSlot](timeslot.md)|与会者为开始和结束会议请求建议的备用日期/时间。 如果与会者尚未建议其他时间，则此属性不包括在 GET 事件的响应中。|
 |状态|[ResponseStatus](responsestatus.md)|事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。|
 |type|String|与会者类型：`required`、`optional`、`resource`。|
 

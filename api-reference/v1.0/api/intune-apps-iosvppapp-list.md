@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a679b9b9c27a337c75d895a28584d47775342df1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 46b79185b416ed0468a5fb54ca98b49a6bdc57e1c8bac2bd185d78e11fb918f2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757302"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247436"
 ---
 # <a name="list-iosvppapps"></a>列出 iosVppApps
 

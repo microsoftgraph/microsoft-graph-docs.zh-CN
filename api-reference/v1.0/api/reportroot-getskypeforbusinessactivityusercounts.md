@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6521154a4cd07d7d993bae2ac3d3ba2863d4ba2e
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: dd1039fcf524c4936e02f8c5aa52a4369de1bb3edf31ee18249dffa68d217639
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235798"
 ---
 # <a name="reportroot-getskypeforbusinessactivityusercounts"></a>reportRoot: getSkypeForBusinessActivityUserCounts
 
@@ -20,7 +20,7 @@ ms.locfileid: "49981933"
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表 - Skype for Business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3202876069df7b324b300a397b338bbd46e14c9d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e2f201bdcbfac03615899816363fb61d5680c534dd7109afab4f45787169cdd8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175971"
 ---
 # <a name="delete-macosofficesuiteapp"></a>删除 macOSOfficeSuiteApp
 

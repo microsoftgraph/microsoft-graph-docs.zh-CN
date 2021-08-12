@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 208f4eb90763210639540c9fd15bdaec89b7466c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 870f29df417e401e2c69500f2677b9c5da95c88bb5dd57ede33aa26e125e0869
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202537"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint 资源类型
 
@@ -30,13 +30,13 @@ ms.locfileid: "47988378"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|值|Json|返回图表点的值。 只读。|
+|值|Json|返回图表点的值。只读。|
 |id|string|唯一标识符|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartPointFormat](chartpointformat.md)|封装图表点的格式属性。 只读。|
+|format|[WorkbookChartPointFormat](chartpointformat.md)|封装图表点的格式属性。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

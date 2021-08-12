@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 69870b1160078495d3b9440260aab1f231041eef
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 89214a0e9c6805adc7bafa59f12b0091c89c953d4380bf3ea9b95d89ade2973b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212135"
 ---
 # <a name="clientcertificateauthentication-resource-type"></a>clientCertificateAuthentication 资源类型
 

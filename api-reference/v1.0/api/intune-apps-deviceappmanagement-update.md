@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fd2172db8dc8b76711463e9596a29778514f157
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b780b8fc5493297d63959481d969ed2ce55928c275d7af40095f672749a7b84d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224213"
 ---
 # <a name="update-deviceappmanagement"></a>更新 deviceAppManagement
 

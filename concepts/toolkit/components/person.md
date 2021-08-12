@@ -3,12 +3,12 @@ title: Microsoft 服务中的人员Graph Toolkit
 description: 人员组件用于通过使用联系人的照片、姓名和/或电子邮件地址来显示此人或联系人。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: af3b3fd628303980558c4e8ab195f806927d2f5a
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 8bd610d6bb7b90d45c01d1eaffaaa6ca8cf220b1631558f09a4275acd5a35a4d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154817"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
@@ -232,7 +232,7 @@ MgtPerson.config.useContactApis = false;
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|备注|
+|对象存储|缓存数据|说明|
 |---------|-----------|-------|
 |`photos`|人员照片|使用 时 `avatarType` ，将 设置为 `photo` `fetchImage` ，将 设置为 `true`|
 |`presence`|人员状态|已使用， `showPresence` 设置为 `true`|

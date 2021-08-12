@@ -5,17 +5,17 @@ localization_priority: Normal
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7fb68fb65974e177e3fa55408ee1b90e59d419e9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: b815f5f1c75842939526a008e960444d475e5e54f9ce94abe16706c5c387851e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682315"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135048"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>organizationalBrandingProperties 资源类型
 
 >[!NOTE]
->添加自定义品牌打造需要Azure Active Directory 高级版 1 高级版 2 或 Basic 版本，或拥有 Microsoft 365 许可证。 有关许可和版本详细信息，请参阅注册 Azure [AD 高级版。](/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Azure AD 高级版 和 Basic 版本适用于使用全球 Azure Active Directory 中国客户。 Azure AD 高级版和 Basic 版本当前在中国由世纪网络运营的 Azure 服务中不受支持。 有关详细信息，请通过 Azure Active Directory[论坛与我们联系](https://feedback.azure.com/forums/169401-azure-active-directory/)。
+>添加自定义品牌打造需要Azure Active Directory Premium 1、高级版 2 或 Basic 版本，或拥有 Microsoft 365 许可证。 有关许可和版本的信息，请参阅注册[Azure AD Premium。](/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Azure AD Premium全球实例的 Azure Active Directory 中国客户可以使用基本Azure Active Directory。 Azure AD Premium由世纪银行在中国运营的 Azure 服务中当前不支持基本和基本版本。 有关详细信息，请通过 Azure Active Directory[论坛与我们联系](https://feedback.azure.com/forums/169401-azure-active-directory/)。
 
 包含有关组织品牌的详细信息。
 
@@ -29,8 +29,8 @@ ms.locfileid: "52682315"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [创建](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 使用 organizationalBrandingProperties 对象创建组织品牌。 |
-| [获取](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 读取 organizationalBrandingProperties 对象的属性和关系。 |
+| [Create](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 使用 organizationalBrandingProperties 对象创建组织品牌。 |
+| [Get](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 读取 organizationalBrandingProperties 对象的属性和关系。 |
 | [更新](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 更新 organizationalBrandingProperties 对象。 |
 | [删除](../api/organizationalbrandingproperties-delete.md) | 无 | 删除 organizationalBrandingProperties 对象。 |
 

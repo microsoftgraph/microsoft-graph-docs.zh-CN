@@ -6,12 +6,12 @@ localization_priority: Normal
 description: columnDefinition 资源上的 lookupColumn 指示从网站中的另一个源查找列的值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ec7da70a6f79793dbf12dbfea6c9fbfef53aaea9
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 7a619323598f3e648341ba533371f9a9c56026ab7ffa6196313aaaec13e39c74
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149756"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 

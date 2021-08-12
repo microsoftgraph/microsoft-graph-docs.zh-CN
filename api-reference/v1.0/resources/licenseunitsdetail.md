@@ -5,12 +5,12 @@ localization_priority: Normal
 author: 'michaelcurnutt '
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 523a8c65d7588a1626d085efde1beea99bdf9643
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: af038eab4589fcaf98743b34cdc1ce6f43b09bd7b511d1f3a05862862155fa32
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135062"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail 资源类型
 

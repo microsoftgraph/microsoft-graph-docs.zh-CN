@@ -5,19 +5,18 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0663f9581eb34be5c26c8666887c7c3bee7cffc1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dc651ab49af9de5cb56b03932e715a22bd61c320badf15c856c2d810b10578d7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031422"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205981"
 ---
 # <a name="get-settings"></a>获取设置
 
 命名空间：microsoft.graph
 
-读取用户和组织 [userSettings](../resources/usersettings.md) 对象。
-若要了解如何更新 [userSettings](../resources/usersettings.md) 对象的属性，请参阅[更新用户设置](usersettings-update.md)。
+读取用户和组织 [userSettings](../resources/usersettings.md) 对象若要了解如何更新 [userSettings](../resources/usersettings.md) 对象的属性，请参阅[更新用户设置](usersettings-update.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +34,7 @@ ms.locfileid: "52031422"
 GET /me/settings/
 ```
 
-具有“用户ID”或“userPrincipalName”的请求只能由用户或具有 User.ReadWrite.All 权限的用户访问。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
+具有“用户ID”或“userPrincipalName”的请求只能由用户或具有 User.ReadWrite.All 权限的用户访问。若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
@@ -59,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/me/settings
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK

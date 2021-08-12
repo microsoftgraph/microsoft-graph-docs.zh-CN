@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 37329364ccfcb4b70de04ebfe8344ea407ce2bc7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b69111bda37ce59305aaf126225f974c25721ceb7ed0ac34af71c1f9bf743438
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965517"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141432"
 ---
 # <a name="mediaprompt-resource-type"></a>mediaPrompt 资源类型
 

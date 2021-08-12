@@ -1,30 +1,30 @@
 ---
 title: commsNotification 资源类型
-description: 通信服务器发布的用于通知更改的通信通知基类型。
+description: 通信服务器发布的用于通知更改的通信通知基本类型。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2276547b99e297f1e015e12f9ed2254d3cb4632d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff7d46a6d081889897940a93d5d111ffa2956a21fc61411060cad08ed2f7d5ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252016"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
 
 命名空间：microsoft.graph
 
-通信服务器发布的用于通知更改的通信通知基类型。
+通信服务器发布的用于通知更改的通信通知基本类型。
 
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
 | changeType     | String  | 可取值为：`created`、`updated`、`deleted`。      |
-| resourceUrl       | String  | 已更改的资源的 URI。                      |
+| resourceUrl       | String  | 已更改资源的 URI。                      |
 
-> **注意：** `resourceData` 可用作其他数据。 它可以是实体，也可以是实体集合，具体取决于通知中打包的更改数。
+> **注意：** `resourceData` 作为其他数据提供。 它是实体或实体集合，具体取决于通知中打包的更改数。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

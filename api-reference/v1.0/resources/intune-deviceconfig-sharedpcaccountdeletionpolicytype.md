@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a3b4245ccf1a5a03d8b2142b65bfed69685de254
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 908112925a38143206457ac2d76266ca1cb62bb59284a15354fac808b82cc7fd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751718"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175079"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52751718"
 在共享电脑上删除帐户时的可能值。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |immediate|0|立即删除。|
 |diskSpaceThreshold|1|达到磁盘空间阈值时删除。|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e81463268c27a50ff39f802662b25e2661f5ea8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 41af58c77a41bb53ae1d8fd349161205d1b233d607e286e6481a612aa32f4380
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754823"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172195"
 ---
 # <a name="delete-devicemanagementexchangeconnector"></a>删除 deviceManagementExchangeConnector
 

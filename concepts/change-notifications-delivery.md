@@ -4,12 +4,12 @@ description: 更改通知可以通过不同的技术来传送，包括 Webhook �
 author: Jumaodhiss
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: aee486325f13f009fd7f7db09e4bc69553bc85dd
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: 025ae3d77e4cfb9bb819cdb0b9b27c3b3bb388cc8d5d4d7f8a1cde04308ec3fd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216523"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>以不同方式接收更改通知
 

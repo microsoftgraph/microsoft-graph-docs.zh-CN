@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 670f07e22b2027c74a79eaca505c624c04c19621
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e2ad772d4e41e9244b126b8df4e0052d27a3a3d20ae9db7a974b4765eb0d190d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205925"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>conditionalAccessLocations 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50132112"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeLocations | String collection | 除非明确排除，否则策略范围内的位置 `All` ID 或 `AllTrusted` 。 |
+| includeLocations | String collection | 除非明确排除 、或 ，否则策略范围内的位置 `All` `AllTrusted` ID。 |
 | excludeLocations | String collection | 从策略作用域中排除的位置 ID。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

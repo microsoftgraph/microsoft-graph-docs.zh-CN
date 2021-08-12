@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 41a878f58736f608cf9cc9f0c45867bf48669b1a
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 00a521ee9474d023bfcb5e72cc2e8ac45d270341a7e65ed29f920eaf33bc50f7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205834"
 ---
 # <a name="educationterm-resource-type"></a>educationTerm 资源类型
 

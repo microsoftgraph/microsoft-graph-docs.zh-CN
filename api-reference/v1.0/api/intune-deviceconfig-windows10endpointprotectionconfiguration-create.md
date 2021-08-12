@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3640c74a727c3137399cb53f41ddd7bdd7231c6
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: faaeee0678a61573f1af5b94dcee14a7b6f2830dffef2a41f0f646bd03ed3fb8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175761"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>创建 windows10EndpointProtectionConfiguration
 

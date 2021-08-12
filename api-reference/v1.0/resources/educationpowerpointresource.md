@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 860387ea966061077929781f667a9cac5d3d2107
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 7b06c124de0c4b040fe3a56f52f1b67c9c89d7e736381bb3c8ea4eb92e7cc452
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163808"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>educationPowerPointResource 资源类型
 

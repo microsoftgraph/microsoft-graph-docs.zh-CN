@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 76eea937b03f3eb117e6b5f870a316f268df615c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 90124b48f69dbaa053c6facd7a2bb84e5d427be0c20bdbc9017bfa8e3a800ebc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721695"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124015"
 ---
 # <a name="timeoffrequest-resource-type"></a>timeOffRequest 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "50721695"
 
 表示一种班次请求采取 [时间Off](../resources/timeoff.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | 读取 **timeOffRequest** 对象的属性和关系。 |
+| [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | 读取 **timeOffRequest** 对象的属性和关系。 |
 | [List](../api/timeoffrequest-list.md) | [timeOffRequest](timeoffrequest.md) 集合 | 获取此 **计划中的 timeOffRequest** 对象列表。|
 | [删除](../api/timeoffrequest-delete.md) | 无 | 删除 **timeOffRequest** 对象。 |
 | [批准](../api/timeoffrequest-approve.md)|无|批准请假请求。|
@@ -34,7 +34,7 @@ ms.locfileid: "50721695"
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |startDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|timeOffReasonId|字符串|请假的原因。|
+|timeOffReasonId|String|请假的原因。|
 
 ## <a name="relationships"></a>关系
 

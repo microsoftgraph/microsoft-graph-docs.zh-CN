@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 9dabfeef47a02015c3fc229920b891d05bb9f8db
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 6996c37c626722360d2577e030d95de3aa69fd2560a34b89b018224a71566006
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118666"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126303"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Microsoft 365 的使用情况报表
 

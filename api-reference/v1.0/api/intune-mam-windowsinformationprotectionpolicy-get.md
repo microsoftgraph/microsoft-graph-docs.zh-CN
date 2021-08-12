@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c27da24b45c95a664cd968cf048c76dbd02d32c9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0a2c976a870a68c14d019c35414afe4ae79dff4cb1e998469d5cba953790e565
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233914"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>获取 windowsInformationProtectionPolicy
 

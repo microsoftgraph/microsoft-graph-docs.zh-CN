@@ -4,12 +4,12 @@ description: '本文将通过一个示例逐步介绍如何使用 *架构扩展*
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 86295c9ebebb763effa1cb19aa1a2388163f295b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4c698a00ebf4579b0e2da085c617d408840bc837a74dad421fff92b31e211dc4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159819"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>使用架构扩展向组添加自定义数据 
 

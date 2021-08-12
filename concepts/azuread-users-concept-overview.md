@@ -1,26 +1,26 @@
 ---
 title: Microsoft Graph 中用户的概述
-description: 用户是 Microsoft Graph 中 Azure Active Directory (Azure AD) 工作或学校用户帐户或 Microsoft 帐户的表示形式。 Microsoft Graph 中的**用户**资源是一个中心，可以从这里访问与用户相关的关系和资源。
+description: 用户是 Microsoft Graph 中 Azure Active Directory (Azure AD) 工作或学校用户帐户或 Microsoft 帐户的表示形式。 Microsoft Graph 中的 **用户** 资源是一个中心，可以从这里访问与用户相关的关系和资源。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 026932f3f3aa3cb9912c288cbe91007905e2f51e
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: 26e3eb7fe76cfabfd1b8a7348f84e575bc3590dca4f532b7b39196bcd646ad81
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340021"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169191"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Microsoft Graph 中用户的概述
 
-用户是 Microsoft Graph 中 Azure Active Directory (Azure AD) 工作或学校用户帐户或 Microsoft 帐户的表示形式。 Microsoft Graph 中的**用户**资源是一个中心，可以从这里访问与用户相关的关系和资源。
+用户是 Microsoft Graph 中 Azure Active Directory (Azure AD) 工作或学校用户帐户或 Microsoft 帐户的表示形式。 Microsoft Graph 中的 **用户** 资源是一个中心，可以从这里访问与用户相关的关系和资源。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/TUMPipN3UFI]
 
 ## <a name="develop-user-centric-applications"></a>开发以用户为中心的应用程序
 
-你可使用 Microsoft Graph 访问与登录用户上下文相关的关系、文档、联系人和首选项。 **用户**资源提供了无需执行其他调用即可访问和操作用户资源的简单方法，可查找特定的身份验证信息，并直接对其他 Microsoft Graph 资源发出查询。
+你可使用 Microsoft Graph 访问与登录用户上下文相关的关系、文档、联系人和首选项。 **用户** 资源提供了无需执行其他调用即可访问和操作用户资源的简单方法，可查找特定的身份验证信息，并直接对其他 Microsoft Graph 资源发出查询。
 
 若要访问用户的信息和数据，你需要[以用户身份进行访问](auth-v2-user.md)。 验证应用程序并获得[管理员同意](permissions-reference.md)，即可使用和更新与用户关联的更广泛的实体。
 
@@ -52,7 +52,7 @@ ms.locfileid: "47340021"
 
 ### <a name="enrich-your-app-with-user-insights"></a>利用用户见解丰富应用
 
-通过推广最近使用的文档或热门文档以及与用户关联的联系人，最大限度地提高应用程序的关联性。 可以使用 Microsoft Graph：
+通过推广最近使用的文档或热门文档以及与用户关联的联系人，最大限度地提高应用程序的关联性。可以使用 Microsoft Graph 来：
 
 - 返回用户最近查看和修改的文档。
 - 返回有关用户活动的文档和网站。
@@ -67,7 +67,7 @@ ms.locfileid: "47340021"
 ## <a name="next-steps"></a>后续步骤
 
 - 了解有关如何[使用用户](/graph/api/resources/users?view=graph-rest-1.0)的详细信息。
-- 从 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)的**用户**资源探索自己的数据。
+- 从 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)的 **用户** 资源探索自己的数据。
 - [代表用户](auth-v2-user.md)或[作为管理员同意的守护程序或服务](auth-v2-service.md)使用 Microsoft Graph 进行身份验证。
 - 为使用 [Azure AD API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0) 的用户设置访问控制和策略。
 - 审阅应用访问用户数据所需的[权限](permissions-reference.md)。 

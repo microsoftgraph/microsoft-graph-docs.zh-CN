@@ -1,26 +1,26 @@
 ---
 title: searchEntity 资源类型
-description: 一个顶级对象，表示 Microsoft 搜索 API 终结点。
+description: 表示 API 终结点的Microsoft 搜索对象。
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 4382deb0b23d051eb7b713661c3a61035e5ceafa
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 4ef8b062b044ed08112b68c0a61c46f1147db9c751f42c7f500f269d79afea63
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163740"
 ---
 # <a name="searchentity-resource-type"></a>searchEntity 资源类型
 
 命名空间：microsoft.graph
 
-一个顶级对象，表示 Microsoft 搜索 API 终结点。 它不像 Graph 中的任何其他资源一样工作，而是用作 [查询](../api/search-query.md) 操作的定位。 
+表示 API 终结点的Microsoft 搜索对象。 它不像其他资源一样Graph，而是作为查询操作[锚](../api/search-query.md)点。 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[查询](../api/search-query.md) |[searchResponse](searchresponse.md) 集合 | 运行请求正文中指定的查询。  |
@@ -48,7 +48,7 @@ ms.locfileid: "49377972"
 
 ## <a name="next-steps"></a>后续步骤
 
-探索 [查询](../api/search-query.md) 操作。
+浏览 [查询](../api/search-query.md) 操作。
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

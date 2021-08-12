@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44adeb313b6e339dfc68af3c152d260cdabc481b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c1cd261abfbbf9f71c2f4c1e92064c0c4f31bb09a7fd91d14af45bd157ddd2a8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167532"
 ---
 # <a name="delete-iosstoreapp"></a>删除 iosStoreApp
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: adaad0a5a43e415a17c21218272b98afe3a502ec
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ef3683487e31d7c83c132089e06d6694a4cdf08a95e11366ed675ce1e365582e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753049"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135797"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>获取 windowsOfficeClientSecurityConfiguration
 

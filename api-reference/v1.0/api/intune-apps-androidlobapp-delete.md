@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aca9532bb7cdc670a7d85c3664914d76e1222dfc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 77969e19e7d808987909a55b3bf95c89b34ae85a2c74d9eacf9040d2d6bb89ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145080"
 ---
 # <a name="delete-androidlobapp"></a>删除 androidLobApp
 

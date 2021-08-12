@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01a1c4c76a6340011437d3749abbdf8982d73b65
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7646ea4c7e344e46eb6c7bb123f3538627bbfe31e57ab6ce1b4c20baa3163db6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245532"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>列出 deviceAndAppManagementRoleAssignments
 

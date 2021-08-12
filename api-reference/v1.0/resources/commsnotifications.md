@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c3d6ac676013509502dd7af0ddfee4c115aa523e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec5a1cd338a0b774f93096172dc4940defcec4efb59615172918667ddd82f8f5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235700"
 ---
 # <a name="commsnotifications-resource-type"></a>commsNotifications 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48018968"
 
 | 属性       | 类型                                                 | 说明                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| 值          | [commsNotification](commsnotification.md) 集合 | 资源中的更改通知。 |
+| 值          | [commsNotification](commsnotification.md) 集合 | 资源更改的通知。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

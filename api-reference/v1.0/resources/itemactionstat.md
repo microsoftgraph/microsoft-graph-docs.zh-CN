@@ -5,25 +5,25 @@ description: itemActionStat 对象提供有关一段时间的操作的聚合详�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 13bc306a1b14d7d59ec8eddda5b02a5cba84e649
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 595a479f98e6327f3e43c2278c646d6e570e5a290cdcae8b7151ac4162d15578
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246673"
 ---
 # <a name="itemactionstat-resource-type"></a>itemActionStat 资源类型
 
 命名空间：microsoft.graph
 
-**itemActionStat** 资源提供一段时间内某个操作聚合的详细信息。
+**itemActionStat** 资源提供有关一段时间的操作的聚合详细信息。
 
 ## <a name="properties"></a>属性
 
 | 属性    | 类型  | 说明
 |:------------|:------|:-------------------------------------------------------
 | actionCount | Int32 | 操作发生次数。 只读。
-| actorCount  | Int32 | 执行该操作不同操作者的数量。 只读。
+| actorCount  | Int32 | 执行该操作的不同操作者的数量。 只读。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

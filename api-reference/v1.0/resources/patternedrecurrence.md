@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5bc4c78a4996c6690f40de863d20ba6f2d55949a
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 2d7278edda51c783efafc4eedcf8425a91eb73204942be8fb40ed5bd61c71553
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146347"
 ---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 

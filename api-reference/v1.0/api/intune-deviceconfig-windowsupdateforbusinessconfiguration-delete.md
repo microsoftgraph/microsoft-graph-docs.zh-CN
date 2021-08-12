@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ebd3548d3c483ef9d9542805e2cf316ff6d8b1ab
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3d84600e6d2d7b709faceabd6569e59191fc12a705b51fbb589d22e0f9ba7cde
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135601"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>删除 windowsUpdateForBusinessConfiguration
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11debd48b3749e6a4d5d0e46577cbbfea8e99682
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e147492a71af3b74ffd3a76e0d2b6fc8e0ee8dc96ffd373f3e6156f683e67afc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758286"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143855"
 ---
 # <a name="delete-windows10endpointprotectionconfiguration"></a>删除 windows10EndpointProtectionConfiguration
 

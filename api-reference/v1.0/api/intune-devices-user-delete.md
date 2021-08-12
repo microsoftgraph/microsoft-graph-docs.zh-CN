@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a6bac27c0715fbb1dcaf601ec217d812e2506fa
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 43e945b83b8fd1a7c0167819557241a1e70f764a17e947f9bf481538c8e2f155
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250502"
 ---
 # <a name="delete-user"></a>删除用户
 

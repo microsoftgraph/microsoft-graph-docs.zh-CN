@@ -3,12 +3,12 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 775f2830fcb21222ea23e9837a2c2850e953d917
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: 12044df48bc7f8105fd0a6190421a8088363e02d91e4ffd52eb1e91af8f5d6a8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53578945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196624"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->

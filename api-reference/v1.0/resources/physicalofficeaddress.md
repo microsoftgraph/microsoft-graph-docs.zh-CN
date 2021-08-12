@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6ba8e82f1ba8641a0b1966586744ffd4721b9b81
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9f632fab8d5859a72eff551bba35184face6e3869255687ad9758decf3b131d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135714"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243307"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>physicalOfficeAddress 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50135714"
 |:---------------|:--------|:----------|
 |城市|String|城市。|
 |countryOrRegion|String|国家或地区。它是任意格式的字符串值，例如“United States”。|
-|officeLocation  | String | 组织联系人的办公地点，如建筑物和办公室号码。  |
+|officeLocation  | String | Office联系人的位置，例如建筑物和办公室号码。  |
 |postalCode|String|邮政编码。|
 |state|String|省/市/自治区。|
 |street|String|街道。|

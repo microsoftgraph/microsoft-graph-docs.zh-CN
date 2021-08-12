@@ -4,12 +4,12 @@ description: 为接收通过 Microsoft Graph 发送的通知，首先需要在 M
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: f975c6aebf9fa8a8dc045c4b60e1c4f21ef84c12
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e070c6a86fb3726a0d4e593f6a7d7551498b9b9be6a0ef3f9e5e9c413d737b1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216365"
 ---
 # <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>管理 Microsoft Graph 通知的应用注册和 API 权限
 
@@ -22,12 +22,12 @@ ms.locfileid: "48288362"
 有关如何注册应用的信息，请参阅[向 Microsoft 标识平台注册应用程序](auth-register-app-v2.md)。 注册应用时，请确保将应用程序 ID/客户端 ID 置于方便使用的位置。 后续在适用于 Windows、Android 或 iOS 客户端的[合作伙伴中心](https://partner.microsoft.com/)注册应用程序以获取跨设备体验时，需要此 ID。
 
 > [!NOTE]
-> 如果没有 Microsoft 帐户并想要使用此类帐户，请转至  [Microsoft 帐户](https://account.microsoft.com/account)页面。 如果正在编写需要将 Azure AD v1.0 用作工作或学校帐户的身份验证和标识框架的应用，请参阅  [Azure Active Directory 身份验证库](/azure/active-directory/develop/active-directory-authentication-libraries)。 如果你想了解或使用新聚合的 Microsoft 标识平台 (v2.0)，请参阅[比较 Microsoft 标识平台终结点和 Azure AD v1.0 终结点](/azure/active-directory/develop/azure-ad-endpoint-comparison)。
+> 如果没有 Microsoft 帐户并想要使用此类帐户，请转至 [Microsoft 帐户](https://account.microsoft.com/account) 页面。 如果正在编写需要将 Azure AD v1.0 用作工作或学校帐户的身份验证和标识框架的应用，请参阅 [Azure Active Directory 身份验证库](/azure/active-directory/develop/active-directory-authentication-libraries)。 如果你想了解或使用新聚合的 Microsoft 标识平台 (v2.0)，请参阅[比较 Microsoft 标识平台终结点和 Azure AD v1.0 终结点](/azure/active-directory/develop/azure-ad-endpoint-comparison)。
 
 
 ## <a name="app-certificates-and-secrets"></a>应用证书和密码
 
-若要使应用程序在获取身份验证令牌时对自己进行标识和身份验证，你可以转至 Azure 门户中的**证书和密码**，以上传自己的证书或创建信的客户端密码。
+若要使应用程序在获取身份验证令牌时对自己进行标识和身份验证，你可以转至 Azure 门户中的 **证书和密码**，以上传自己的证书或创建信的客户端密码。
     
 ![Azure 门户中的应用证书和密码屏幕截图](images/notifications-app-secrets.png)
     

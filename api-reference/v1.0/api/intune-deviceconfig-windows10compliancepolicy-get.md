@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 24d08fa678767952c207bb0d749ab98c5a12b9a5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a0c1882111d6dc4bfd5d7c86a55971defc9ff43d730fae0a0a6301b91a8bbd40
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249627"
 ---
 # <a name="get-windows10compliancepolicy"></a>获取 windows10CompliancePolicy
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86219ab2547bbf30bea1c5a8a6a873f83c0fbaba
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8bab6e49c2a07590316d03dc8e54e77f5e70f8200863708e07653f84cea23738
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756293"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225998"
 ---
 # <a name="list-macoscompliancepolicies"></a>列出 macOSCompliancePolicies
 

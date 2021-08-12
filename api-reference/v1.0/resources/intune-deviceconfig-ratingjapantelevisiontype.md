@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eca00b030430c664c4d441564aaa2dc1da72827f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 53144be5007a3cc4427c5e7ade7002992dbd829321820ab4d62306873ab59161
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755803"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178337"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 枚举类型
 

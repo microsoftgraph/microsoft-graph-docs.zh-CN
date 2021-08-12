@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ccaa51c84e50e2f9c5302836ffd9b92754f517fd
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: c920db8b8d3b6ea8a3c49e4a4816740d59a8e534aa542a1a906451654eaf7f6f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912353"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212109"
 ---
 # <a name="educationassignmentsettings-resource-type"></a>educationAssignmentSettings 资源类型
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e7ad1fd0ad74df9e81ceeafc599e795a91f7f68c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bc57380726d7b79a3dabf0b9e65bcaf2afeda7c9b8278ed6fdd21ad06c2802d3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54199884"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>更新 deviceAndAppManagementRoleDefinition
 

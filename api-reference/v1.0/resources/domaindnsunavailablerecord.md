@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6cb35152b6d31e313342f7bfea99bfc98c51635b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: ef1a70004e28279f80327b64edb53fd14a0b53f19717ea2f5ed96af5d0039feb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175313"
 ---
 # <a name="domaindnsunavailablerecord-resource-type"></a>domainDnsUnavailableRecord 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "50761372"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|字符串|提供返回 **DomainDnsUnavailableRecord** 实体的原因。 |
+|说明|String|提供返回 **DomainDnsUnavailableRecord** 实体的原因。 |
 
 ## <a name="relationships"></a>关系
 无

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b3caa5a9f6e64faa210f747e28d07fdf4f4ee63
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a23ecf4d06d6a0fe485bb4dc0827764899f74bbccef4af554777d20bda326d2b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145010"
 ---
 # <a name="delete-win32lobapp"></a>删除 win32LobApp
 

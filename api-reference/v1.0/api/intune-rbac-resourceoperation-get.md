@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5b22740e694b7710e546434dab366f5df23641e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ae55154667de1f81e298e4e0058ffa58796b44d8e0b8267dddd140860cca6282
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756868"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249431"
 ---
 # <a name="get-resourceoperation"></a>获取 resourceOperation
 

@@ -5,12 +5,12 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: f8797aadf7e35000d799c4c8b879ef2ed6da6409
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6e02c1fd4105e65622c6c1939ca3037e44d040d19909e8599d7af81e6dbae4f7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141831"
 ---
 # <a name="callmediastate-resource-type"></a>callMediaState 资源类型
 

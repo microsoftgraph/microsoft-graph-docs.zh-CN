@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bc6ff030c2228ae108e034eea312c57d40b9006f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9596f2b3869609ec409721d94985b57987dbd122751b523245ae188caad6cd9e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758965"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169583"
 ---
 # <a name="win32lobapprestartbehavior-enum-type"></a>win32LobAppRestartBehavior 枚举类型
 

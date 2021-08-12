@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3b4a2f582d093798145d971936ac3510813ccb0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2a902809b762cd16ab0ea3be8df6e38f5a86817194c2a0576b98b40feea6911b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245749"
 ---
 # <a name="get-officeclientconfiguration"></a>获取 officeClientConfiguration
 

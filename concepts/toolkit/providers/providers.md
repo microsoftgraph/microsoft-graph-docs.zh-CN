@@ -3,12 +3,12 @@ title: Microsoft Graph Toolkit提供程序
 description: Microsoft Graph Toolkit提供程序启用身份验证，并且 Microsoft Graph访问所有组件。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 05cbd59758b27266db7444333c72a2ba3a766ebb
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 3e64e7c5a9923be0184461ba56c6b6d995a9aad10eda2cdf94fda2b1850b0f8b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579695"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54204907"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph Toolkit提供程序
 

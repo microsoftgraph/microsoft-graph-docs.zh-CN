@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: users
 author: jpettere
-ms.openlocfilehash: 5f989325706ce45fe384370584b645959c153158
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: a7c2e798d08bf0cd2d3a49af017af1d26f054943fbf827cf6f80d0fc45345fd9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080671"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235392"
 ---
 # <a name="objectidentity-resource-type"></a>objectIdentity 资源类型
 

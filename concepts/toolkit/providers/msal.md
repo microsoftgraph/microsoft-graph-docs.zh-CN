@@ -3,12 +3,12 @@ title: MSAL 提供商
 description: MSAL 提供程序MSAL.js登录用户并获取令牌以与 Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e612e11e7b1a26765175ba10097c8e54317e9e1d
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: dc994e404767c390011c35f93a6e1a4ee6a9b41fef9dc25d0cddcc4fb25a722a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54204937"
 ---
 # <a name="msal-provider"></a>MSAL 提供商
 

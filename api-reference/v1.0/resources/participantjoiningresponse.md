@@ -5,12 +5,12 @@ author: yizhenww
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b73804f480c501d978b8ea76a9f5c49fc1eb4a67
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: ed48569a942a8b70fdf8fbbeeadb2921623f1a77db55acb948fb61d7dd778ec3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141397"
 ---
 # <a name="participantjoiningresponse-resource-type"></a>participantJoiningResponse 资源类型
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a7640decd63f59867493067325df5dc67565749
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2045716a5f866be6eb57817bdfd8fc3fef13ee462ad4bfc5d632df55de49ff6f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245651"
 ---
 # <a name="delete-sharedpcconfiguration"></a>删除 sharedPCConfiguration
 

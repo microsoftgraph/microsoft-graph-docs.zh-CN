@@ -5,12 +5,12 @@ author: anandab
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4e8d403354c16f7f11fd4c7dcf6b756f83242cda
-ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
+ms.openlocfilehash: 8d136e81c51ee470577706f1515f5950abdd58c641a30f340a62f1f9298626e1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53025024"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165502"
 ---
 # <a name="get-change-notifications-for-changes-in-teams-membership-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 成员资格更改的更改通知
 

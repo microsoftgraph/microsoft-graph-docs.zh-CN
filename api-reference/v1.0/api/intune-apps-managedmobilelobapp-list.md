@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2115b07ed07c70822e7fa0f0e1447d8d8559c885
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 48f559a93bc850f36081997cf934731ae5a4301190c93c49e3f3889828f5b9e8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754145"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202880"
 ---
 # <a name="list-managedmobilelobapps"></a>列出 managedMobileLobApps
 

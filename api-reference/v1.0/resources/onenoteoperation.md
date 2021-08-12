@@ -1,22 +1,22 @@
 ---
 title: onenoteOperation 资源类型
-description: 某些长时间运行的 OneNote 操作的状态。
+description: 某些长时间运行的操作的状态OneNote状态。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 146cfec00c630fc0abde326a57374549d7b2d378
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: dd7d6cfc797416d0cc8922dac8305617bc46c4c8d26e0e138551a0f855cadcbb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146445"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation 资源类型
 
 命名空间：microsoft.graph
 
-某些长时间运行的 OneNote 操作的状态。
+某些长时间运行的操作的状态OneNote状态。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -51,7 +51,7 @@ ms.locfileid: "50961949"
 |lastActionDateTime| DateTimeOffset |操作的最后一个操作的时间。|
 |resourceId|string|资源 ID。|
 |resourceLocation|string|对象的资源 URI。 例如，复制的页面或节的资源 URI。 |
-|状态|operationStatus|操作的当前状态 `NotStarted` `Running` ：、、、。 `Completed` `Failed` |
+|status|operationStatus|操作的当前状态 `NotStarted` `Running` ：、、、。 `Completed` `Failed` |
 |percentComplete|string|如果操作仍处于状态，则操作完成百 `running` 分比。|
 
 ## <a name="relationships"></a>关系

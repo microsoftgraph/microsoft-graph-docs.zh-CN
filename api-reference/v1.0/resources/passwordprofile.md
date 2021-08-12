@@ -5,12 +5,12 @@ localization_priority: Priority
 author: eketo-msft
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 0b74a273d4ccab75814c32bc8b185f15de02e6a3
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 7288d2f737c0e04be9919ba0b2412df2ba1ebda8c377e1c66a3d6a91992af858
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208195"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189399"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile 资源类型
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 741a486bbaae5a666cb5c7d83f2a9c954523c2ec
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 79d75b799017b2e0ae987d2bef8902d8817fba8e2e5bb602b11e4e75d97c4e7f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135391"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>帮助程序（未包含在文档中的示例）
 

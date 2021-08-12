@@ -1,16 +1,16 @@
 ---
-title: SharePoint 框架 Microsoft Graph Toolkit
+title: 用于 Microsoft Graph 工具包 的 SharePoint 框架 库
 description: 使用 SharePoint 框架 Microsoft Graph Toolkit 库在解决方案Graph Toolkit Microsoft SharePoint 框架 Microsoft。
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 5868f9fd523055d50f985f2fc8c8840563d56b28
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 6d2f354dd8913fe7cf5807bae05dde803ad74aae78243ae9bc64b5d2afd70e96
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629488"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249032"
 ---
-# <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>SharePoint 框架 Microsoft Graph Toolkit
+# <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>用于 Microsoft Graph 工具包 的 SharePoint 框架 库
 
 使用 SharePoint 框架 Microsoft Graph Toolkit 库在解决方案Graph Toolkit Microsoft SharePoint 框架 Microsoft。
 
@@ -24,7 +24,7 @@ ms.locfileid: "52629488"
 npm install @microsoft/mgt-spfx
 ```
 
-或
+或者
 
 ```bash
 yarn add @microsoft/mgt-spfx
@@ -33,9 +33,9 @@ yarn add @microsoft/mgt-spfx
 在将SharePoint 框架包部署到租户之前，你需要将SharePoint 框架 `@microsoft/mgt-spfx` 包部署到租户。 可以从项目发布部分下载与项目中使用的版本相对应的 `@microsoft/mgt-spfx` GitHub。 [](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases)
 
 >[!IMPORTANT]
->由于租户中只能安装 Microsoft Graph Toolkit 的 SharePoint 框架 库的一个版本，因此在解决方案中使用 Microsoft Graph Toolkit 之前，请确定组织或客户是否已部署并使用相同的版本的 SharePoint 框架 库。
+>由于租户中只能安装 Microsoft Graph 工具包 SharePoint 框架库的一个版本，因此在解决方案中使用 Microsoft Graph 工具包之前，请确定你的组织或客户是否已部署某 SharePoint 框架库版本并使用相同版本。
 
-## <a name="usage"></a>用法
+## <a name="usage"></a>使用情况
 
 生成SharePoint 框架 Web 部件和扩展时，请引用 Microsoft Graph Toolkit `Provider` `SharePointProvider` 和从 `@microsoft/mgt-spfx` 程序包。 这将确保您的解决方案将使用 Microsoft Graph Toolkit已在页面上注册的组件，而不是实例化自己的组件。 无论 Web 部件使用哪个 JavaScript 框架，实例化过程对于所有 Web 部件都是相同的。
 
@@ -99,12 +99,12 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 
 >[!IMPORTANT]
 > 请确保解决方案Graph Toolkit导入的所有 Microsoft 网站都来自：
-> * `@microsoft/mgt-spfx` 或 
+> * `@microsoft/mgt-spfx` 或
 > * `@microsoft/mgt-react/dist/es6/spfx`
 > 
 > 不要从任何其他 Microsoft Graph Toolkit程序包 () ，以免打包自己的工具包副本并与其他 `@microsoft/mgt-*` 共享库。
 
 ## <a name="see-also"></a>另请参阅
 
-* [使用 Microsoft SharePoint生成 web Graph Toolkit](./build-a-sharepoint-web-part.md)
+* [使用 Microsoft Graph 工具包构建 SharePoint Web 部件](./build-a-sharepoint-web-part.md)
 * [了解身份验证提供程序](../providers/providers.md)

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: f98e91da1ff46ef944b2de49add36f174673fad8
-ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
+ms.openlocfilehash: 7836685c65fddd2d35a2d9bc47493bf2f240e51653ef8a264ac868be83b02e80
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51638891"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196934"
 ---
 # <a name="permissionscope-resource-type"></a>permissionScope 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "51638891"
 
 表示委派权限 [的定义](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。
 
-委派权限可以通过需要访问令牌的客户端应用程序请求，该 API 定义了权限。 可通过 [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent)应用程序对象的 `scopes` **requiredResourceAccess**[](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)集合动态请求委派权限，使用 Microsoft 标识平台的授权请求中的 参数，或静态 [](application.md)请求。
+委派权限可以通过需要访问令牌的客户端应用程序请求，该 API 定义了权限。 可通过 application 对象的 [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent) `scopes` **requiredResourceAccess** 集合动态请求委派权限，使用对 Microsoft 标识平台 的授权 [](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)请求中的 参数，或静态 [请求](application.md)。
 
 ## <a name="properties"></a>属性
 

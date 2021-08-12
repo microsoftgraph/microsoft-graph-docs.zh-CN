@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e62c5e7fdf8b10b97938574e11ebd94c9e66789c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7029a8947015fd8bc55f8be3a1804ad7e6ed76e10549a106caff41c4a6db7c2a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121842"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 

@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 9be84ab8688aa8bc1ad047c2776f30a030611298
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 8399987c9d407f32e62700541606ccdc212f229b9e6ba17424d96668f759867d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149511"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
 

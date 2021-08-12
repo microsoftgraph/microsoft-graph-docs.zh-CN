@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 75849cd322f50974299f92c752833045a7d2bd94
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96e10a50dfa93f4a226585092c57d9ab8dbe5cb3b5e8a2593198ca32402852c4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086331"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146368"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>teleconferenceDeviceMediaQuality 资源类型
 
@@ -22,23 +22,23 @@ ms.locfileid: "48086331"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|averageInboundJitter|持续时间|平均入站流网络抖动。|
-|averageInboundPacketLossRateInPercentage|双精度|以 (0-100) 为单位的平均入站流数据包丢失率（百分比）。 例如，0.01 表示0.01%。|
-|averageInboundRoundTripDelay|持续时间|平均入站流网络往返延迟。|
-|averageOutboundJitter|持续时间|平均出站流网络抖动。|
-|averageOutboundPacketLossRateInPercentage|双精度|平均出站流数据包丢失率 (0-100) 的百分比。 例如，0.01 表示0.01%。|
-|averageOutboundRoundTripDelay|持续时间|平均出站流网络往返延迟。|
-|channelIndex|Int32|媒体的通道索引。 索引从1开始。  如果媒体会话包含3个视频形式，通道索引将为1、2和3。|
+|averageInboundJitter|期限|平均入站流网络抖动。|
+|averageInboundPacketLossRateInPercentage|双精度|0 到 100 (的平均入站流数据包丢失) 。 例如，0.01 表示 0.01%。|
+|averageInboundRoundTripDelay|期限|平均入站流网络往返延迟。|
+|averageOutboundJitter|期限|平均出站流网络抖动。|
+|averageOutboundPacketLossRateInPercentage|双精度|0 到 100 (的平均出站流数据包丢失) 。 例如，0.01 表示 0.01%。|
+|averageOutboundRoundTripDelay|期限|平均出站流网络往返延迟。|
+|channelIndex|Int32|媒体的频道索引。 索引从 1 开始。  如果媒体会话包含 3 种视频形式，则通道索引将为 1、2 和 3。|
 |inboundPackets|Int64|入站数据包的总数。|
 |localIPAddress|String|媒体会话的本地 IP 地址。|
 |localPort|Int32|本地媒体端口。|
-|maximumInboundJitter|持续时间|最大入站流网络抖动。|
-|maximumInboundPacketLossRateInPercentage|双精度|以 (0-100) 的百分比表示的最大入站流数据包丢失率。 例如，0.01 表示0.01%。|
-|maximumInboundRoundTripDelay|持续时间|入站流网络的最大往返延迟。|
-|maximumOutboundJitter|持续时间|最大出站流网络抖动。|
-|maximumOutboundPacketLossRateInPercentage|双精度|以 (0-100) 的百分比表示的最大出站流数据包丢失率。 例如，0.01 表示0.01%。|
-|maximumOutboundRoundTripDelay|持续时间|最大出站流网络往返延迟。|
-|mediaDuration|持续时间|整个模态的持续时间。 如果启用和禁用媒体多次，则 MediaDuration 将的所有持续时间的总和。|
+|maximumInboundJitter|期限|最大入站流网络抖动。|
+|maximumInboundPacketLossRateInPercentage|双精度|最大入站流数据包丢失率，以百分比表示 (0-100) 。 例如，0.01 表示 0.01%。|
+|maximumInboundRoundTripDelay|期限|最大入站流网络往返延迟。|
+|maximumOutboundJitter|期限|最大出站流网络抖动。|
+|maximumOutboundPacketLossRateInPercentage|双精度|最大出站流数据包丢失率（以百分比表示 (0-100) 。 例如，0.01 表示 0.01%。|
+|maximumOutboundRoundTripDelay|期限|最大出站流网络往返延迟。|
+|mediaDuration|期限|总形式持续时间。 如果多次启用和禁用媒体，MediaDuration 将汇总所有持续时间。|
 |networkLinkSpeedInBytes|Int64|网络链接速度（以字节为单位）|
 |outboundPackets|Int64|出站数据包的总数。|
 |remoteIPAddress|String|媒体会话的远程 IP 地址。|
@@ -50,7 +50,7 @@ ms.locfileid: "48086331"
 |:-----------------------------------------------------|:--------------------------------------------------------------------|
 | [teleconferenceDeviceAudioQuality](teleconferencedeviceaudioquality.md)    | 视频电话会议设备音频质量数据。                          |
 | [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)    | 视频电话会议设备视频质量数据。                          |
-| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | 视频电话会议设备屏幕-共享质量数据。 |
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | 视频电话会议设备屏幕共享质量数据。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
