@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27c81d59d9e5b4568a33c63cfec4447d47e897d3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8ad7741c976d80e1ff10eb73a1a6e1b4fadc7d8063c4fff9a07a728924f37511
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755138"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189700"
 ---
 # <a name="iosstoreapp-resource-type"></a>iosStoreApp 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "52755138"
 
 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List iosStoreApps](../api/intune-apps-iosstoreapp-list.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md) 集合|列出 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性和关系。|
 |[Get iosStoreApp](../api/intune-apps-iosstoreapp-get.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|读取 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性和关系。|
@@ -55,7 +55,7 @@ ms.locfileid: "52755138"
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune-apps-iosminimumoperatingsystem.md)|最低适用操作系统的值。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|

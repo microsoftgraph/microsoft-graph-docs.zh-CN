@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0478e84f3bf0679588fbc9f962b3471dec90f1d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: db733c26128388c9e338ebd1dce7d0bdf000465c9f59631eb30a80afdc66146b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223919"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>创建 importedWindowsAutopilotDeviceIdentity
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5d5b75d3062b087848f804c0f89726c67783c540
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8957acbfa1ed8eaff40fd5799471aff67bdd77bf634f9febeef9dbc7677e6589
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196451"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo 资源类型
 

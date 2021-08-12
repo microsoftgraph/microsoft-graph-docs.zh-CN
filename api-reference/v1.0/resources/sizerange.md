@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7eed9cfdd4739ee35c340d0cfeaeb8cc6d088455
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d085429fcbbb4e9be0dc18874942ad4ca131d2931eab449afade4bd381c9ee89
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126268"
 ---
 # <a name="sizerange-resource-type"></a>sizeRange 资源类型
 

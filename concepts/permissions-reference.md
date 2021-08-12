@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 905316d0b080d718ab44388613d7a6b10192e1c4
-ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
+ms.openlocfilehash: 15c44d19686b1a8bf1fe5f6bea8577be8a859b47da2d49b11b19b81fc32a0ca8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228931"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c38741d36a70c8e5da87b6af2ce7dfd0b617b3a7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: cc04d64a25c036de662d5e93810baecce6d20946c8337d837b9dc4d064520272
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209376"
 ---
 # <a name="delete-windowsuniversalappx"></a>删除 windowsUniversalAppX
 

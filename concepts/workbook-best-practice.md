@@ -1,25 +1,25 @@
 ---
-title: Microsoft Graph 中 Excel API 的最佳实践
-description: 列出 Microsoft Graph 中 Excel API 的最佳实践和示例
+title: Microsoft Excel API 的最佳实践Graph
+description: 列出 Microsoft Excel API 的最佳实践Graph
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c7e72c4c6480c75d3080d32c2984e6d0f594c409
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 2427d56fa8a95581a737fb04a3199219c6d7ba647583aa4dabd6cb898ed91984
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225592"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Graph 中处理 Excel API 的最佳实践
 
-本文提供有关在 Microsoft Graph 中使用 Excel API 的建议。
+本文提供在 Microsoft Graph 中处理 Excel API 的建议。
 
 ## <a name="manage-sessions-in-the-most-efficient-way"></a>以最有效的方式管理会话
 
-如果在一定时间内进行多个呼叫，我们建议您创建一个会话，并传递每个请求的会话 ID。 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 通过执行此操作，您可以以最有效的方式使用 Excel API。
+如果你在一定时间内进行多个呼叫，我们建议你创建一个会话，并传递每个请求的会话 ID。 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 通过执行此操作，你可以最Excel使用应用程序 API。
 
-以下示例演示如何向表中添加新编号，然后使用这种方法在工作簿中查找一条记录。
+以下示例演示如何向表中添加新数字，然后使用这种方法在工作簿中查找一条记录。
 
 ### <a name="step-1-create-a-session"></a>步骤 1：创建会话
 
@@ -124,17 +124,17 @@ Content-length: 0
 HTTP/1.1 204 No Content
 ```
 
-有关详细信息，请参阅"创建[会话"和](/graph/api/workbook-createsession?view=graph-rest-1.0)"[关闭会话"。](/graph/api/workbook-closesession?view=graph-rest-1.0)
+有关详细信息，请参阅创建[会话和](/graph/api/workbook-createsession?view=graph-rest-1.0)[关闭会话](/graph/api/workbook-closesession?view=graph-rest-1.0)。
 
 ## <a name="working-with-apis-that-take-a-long-time-to-complete"></a>使用需要很长时间才能完成的 API
 
-您可能会注意到，某些操作需要不确定的时间才能完成;例如，打开一个大型工作簿。 在等待这些请求的响应时，很容易命中超时。 为了解决此问题，我们提供长时间运行的操作模式。 使用此模式时，无需担心请求的超时。
+您可能会注意到，某些操作需要不确定的时间才能完成;例如，打开一个大型工作簿。 在等待这些请求的响应时，很容易命中超时。 为了解决此问题，我们提供长时间运行的操作模式。 使用此模式时，无需担心请求超时。
 
-目前，Microsoft Graph 中的会话创建 Excel API 已启用长时间运行的操作模式。 此模式涉及以下步骤：
+目前，Microsoft Excel API 中的会话Graph已启用长时间运行的操作模式。 此模式涉及以下步骤：
 
-1. 向请求添加一个标头，以指示创建会话时这是 `Prefer: respond-async` 一个长时间运行的操作。
-2. 长时间运行的操作将返回响应以及 `202 Accepted` 位置标头，以检索操作状态。 如果会话创建在几秒钟后完成，它将返回常规创建会话响应，而不是使用长时间运行的操作模式。
-3. 通过 `202 Accepted` 响应，您可以在指定位置检索操作状态。 操作状态值包括 `notStarted` 、 `running` 和 `succeeded` `failed` 。
+1. 向 `Prefer: respond-async` 请求添加标头，以指示在加入会话时这是一个长时间运行的操作。
+2. 长时间运行的操作将返回 响应 `202 Accepted` 以及 Location 标头，以检索操作状态。 如果会话创建在几秒后完成，它将返回常规创建会话响应，而不是使用长时间运行的操作模式。
+3. 通过 `202 Accepted` 响应，您可以在指定位置检索操作状态。 操作状态值包括 `notStarted` `running` 、、 `succeeded` 和 `failed` 。
 4. 操作完成后，可以通过成功响应中的指定 URL 获取会话创建结果。
 
 以下示例使用长时间运行的操作模式创建会话。
@@ -164,7 +164,7 @@ Content-type: application/json
 }
 ```
 
-在某些情况下，如果创建在几秒钟内成功，它不会进入长时间运行的操作模式;相反，它将作为常规创建会话返回，并且成功的请求将返回 `201 Created` 响应。
+在某些情况下，如果创建在几秒内成功，它不会进入长时间运行的操作模式;相反，它将作为常规创建会话返回，并且成功的请求将返回 `201 Created` 响应。
 
 ```http
 HTTP/1.1 201 Created
@@ -204,7 +204,7 @@ Content-type: application/json
 ### <a name="poll-status-of-the-long-running-create-session"></a>长时间运行的创建会话的轮询状态
 
 
-使用长时间运行的操作模式，可以通过以下请求获取指定位置的创建状态。 建议的轮询状态的间隔约为 30 秒。 最大间隔不应超过 4 分钟。
+使用长时间运行的操作模式，可以通过以下请求获取指定位置的创建状态。 建议的轮询状态间隔约为 30 秒。 最大间隔不应超过 4 分钟。
 
 #### <a name="request"></a>请求
 
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 
 #### <a name="response"></a>响应
 
-下面是操作状态为时的响应 `running` 。
+下面是操作的状态为 时的响应 `running` 。
 
 ```http
 HTTP/1.1 200 OK
@@ -228,7 +228,7 @@ Content-type: application/json
 }
 ```
 
-下面是操作状态为时的响应 `succeeded` 。
+下面是操作状态为 时的响应 `succeeded` 。
 
 ```http
 HTTP/1.1 200 OK
@@ -241,7 +241,7 @@ Content-type: application/json
 }
 ```
 
-下面是操作状态为时的响应 `failed` 。
+下面是操作状态为 时的响应 `failed` 。
 
 ```http
 HTTP/1.1 200 OK
@@ -271,7 +271,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-如果状态为 ，则可以通过类似于以下内容的请求获取创建的 `succeeded` `resourceLocation` 会话信息。
+状态为 `succeeded` 时，可以通过类似如下的请求获取创建的 `resourceLocation` 会话信息。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')

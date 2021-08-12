@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a3ac490e4dcd7231c8b005eeb6a259e525bbf882
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 0b7c69fb636efae5bd6e1a4ca71c9ba1b2943c20346262de20017ddea3da5849
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698039"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196500"
 ---
 # <a name="userconsentrequest-resource-type"></a>userConsentRequest 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "51698039"
 |customData|String|自由文本字段，用于定义用户同意请求的任何自定义数据。 未使用。|
 |id|String|请求的标识符。 |
 |reason|String|用户要求访问应用的理由。 仅 `$filter` (和 `eq` `$orderby`) 。  |
-|状态|String|用户的应用同意请求的状态。 可能的值是 `Initializing` ：、 `InProgress` 和 `Completed` 。 仅 `$filter` (和 `eq` `$orderby`) 。 |
+|status|String|用户的应用同意请求的状态。 可能的值是 `Initializing` ：、 `InProgress` 和 `Completed` 。 仅 `$filter` (和 `eq` `$orderby`) 。 |
 
 ## <a name="relationships"></a>关系
 

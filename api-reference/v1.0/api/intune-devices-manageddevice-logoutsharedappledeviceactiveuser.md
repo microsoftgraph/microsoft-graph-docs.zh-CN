@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: edfb812f8d5e82aa13f12f8c8851df61cfe7138d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d2c887155be880fbc24dfc5dc73f13937d5b802953b6c59629e2d6d7e6271034
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190092"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>logoutSharedAppleDeviceActiveUser 操作
 

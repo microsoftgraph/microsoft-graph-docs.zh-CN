@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8223a48591873e13894e1d68ce72d681e237cc04
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0d2d52da53ffc38c9a5ec52942f30a920a386504b436140db8b72c8807041ee3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135489"
 ---
 # <a name="create-notificationmessagetemplate"></a>创建 notificationMessageTemplate
 

@@ -1,16 +1,16 @@
 ---
-title: Microsoft Graph 模板Toolkit
+title: Microsoft Graph Toolkit
 description: 使用自定义模板修改组件的内容。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 1db3f315cd89932481a0a2325eecae19592d9276
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cf8297e5e0f70ee1014c11a3ecbfc10ed5cc0e0aa1e15c7f2bb7239545c9105e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963279"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231374"
 ---
-# <a name="templates-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 模板Toolkit
+# <a name="templates-in-the-microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
 
 大多数 Microsoft Graph Toolkit组件都支持使用自定义模板来修改组件的内容。
 
@@ -36,7 +36,7 @@ ms.locfileid: "50963279"
 </mgt-agenda>
 ```
 
-如果你使用的是 Microsoft Graph 和 React Toolkit，可以使用 React 创作模板。 有关详细信息，请参阅 [将工具包与 React 一同使用](../get-started/mgt-react.md)。
+如果你使用的是 Microsoft Graph Toolkit React组件，可以使用React模板。 有关详细信息，请参阅[将工具包与React。](../get-started/mgt-react.md)
 
 ## <a name="data-type"></a>数据类型
 

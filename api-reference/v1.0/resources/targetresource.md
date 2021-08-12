@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 148591f603a45d0e8752e4af87beaabd39152fae
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4a98ccc2bf577289e867345a256c737275a295ca0a7954d23138f1cb68d669bc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54222628"
 ---
 # <a name="targetresource-resource-type"></a>targetResource 资源类型
 

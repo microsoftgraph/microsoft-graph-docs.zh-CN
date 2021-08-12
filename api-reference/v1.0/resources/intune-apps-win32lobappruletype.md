@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0781bcba90feb81d49e158e462034a86f8e26e15
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bdbc0b1de2d9868871ce33789e8f41bb8db74a73611c5a722268ee7ec1c0d6cc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212002"
 ---
 # <a name="win32lobappruletype-enum-type"></a>win32LobAppRuleType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52755999"
 包含 Win32 LOB 应用的规则类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |detection|0|检测规则。|
 |要求|1|要求规则。|

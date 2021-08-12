@@ -1,15 +1,15 @@
 ---
 title: 整理 Outlook 邮件
-description: Outlook 允许客户按照自己喜欢的方式整理邮件，可以将所有邮件都留在同一“收件箱”文件夹中，或者在“收件箱”下的树文件夹结构中整理邮件，以满足自己的特定需要。 可以便捷地对用户邮箱中的邮件进行筛选、搜索或排序
+description: Outlook 允许客户按照自己喜欢的方式整理邮件，可以将所有邮件都留在同一“收件箱”文件夹中，或者在“收件箱”下的树文件夹结构中整理邮件，以满足自己的特定需要。可以方便地筛选、搜索、或对用户的信息进行分类。
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b9359a380547caa27e093df41195e079f0bf7f1a
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 45722dd08178598213343a9e0b03ec3aa41e3f63ea58c0a2f524bcc09a887ae1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474671"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250215"
 ---
 # <a name="organize-outlook-messages"></a>整理 Outlook 邮件
 

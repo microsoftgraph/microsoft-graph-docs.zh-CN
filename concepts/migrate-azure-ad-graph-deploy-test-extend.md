@@ -4,12 +4,12 @@ description: 介绍如何将 Azure Active Directory (Azure AD) 应用迁移到�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 5ea9944a23ffdf849d97bd116b730413cdd0100d
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: c950e8fe97fd6a7e5a269824b1745af08b256c6795bbebb9186f105550233e1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665849"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163528"
 ---
 # <a name="deploy-test-and-extend"></a>部署、测试和扩展
 

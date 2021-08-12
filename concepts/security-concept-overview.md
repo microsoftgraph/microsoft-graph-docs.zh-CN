@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 363ae9739205a6e96ff836a0190f066d919f5adf
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 459f82f08ac8024ff1773809cd860e3b13acd051c822bb181b2ddd1718dff377
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235079"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 

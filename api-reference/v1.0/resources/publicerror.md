@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: AkJo
-ms.openlocfilehash: e9f5decf8edc2ebf3e11d00eb89e68236a6a73d4
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: f378862ccd77b1a205e1997d7a5c31244717f728d60b9d8d6b505646db116a06
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138351"
 ---
 # <a name="publicerror-resource-type"></a>publicError 资源类型
 

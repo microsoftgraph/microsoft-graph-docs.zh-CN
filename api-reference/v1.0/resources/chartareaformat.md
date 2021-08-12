@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 82855d03a6dfdd23be9c1bd71a77ecee1af4f6e0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2dd257316ab63d9dcfb9c1e6af43a00145274e7fc1ddae4e1f4fea3f16a4af8d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249326"
 ---
 # <a name="chartareaformat-resource-type"></a>ChartAreaFormat 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "48032815"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|表示对象的填充格式，包括背景格式信息。只读。|
-|font|[WorkbookChartFont](chartfont.md)|表示当前对象的字体属性（字体名称、字体大小、颜色等）。 只读。|
+|font|[WorkbookChartFont](chartfont.md)|表示当前对象的字体属性（字体名称、字体大小、颜色等）。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

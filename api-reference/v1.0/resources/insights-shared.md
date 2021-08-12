@@ -1,27 +1,27 @@
 ---
 title: sharedInsight 资源类型
-description: 了解表示与用户共享的文件或由特定用户共享的文件。 支持以下共享文件：
+description: 代表与特定用户共享或由特定用户共享的文件的见解。 支持以下共享文件：
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: c78ef6c63d1970f92a2a68a91cd674d39cbce736
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 73d02b3fa6ae6a9938b6c7174bbf942dcb6ed85ef2baa48ebc9f061908a9f369
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184821"
 ---
 # <a name="sharedinsight-resource-type"></a>sharedInsight 资源类型
 
 命名空间：microsoft.graph
 
-了解表示与用户共享的文件或由特定用户共享的文件。 支持以下共享文件：
+代表与特定用户共享或由特定用户共享的文件的见解。 支持以下共享文件：
 
-- 直接在电子邮件或会议邀请中附加的文件。
-- OneDrive for Business 和 SharePoint 新式附件-存储在 OneDrive for Business 和 SharePoint 中且用户共享为电子邮件中的链接的文件。
+- 直接附加到电子邮件或会议邀请中的文件。
+- OneDrive for Business和SharePoint新式附件 - 存储在 OneDrive for Business 和 SharePoint中且用户作为电子邮件中的链接共享的文件。
 
-**注意**：我们目前正在努力使用数据填充共享 API 的结果。 发布后的第一周可能缺少一些数据。
+**注意**：我们目前正在使用数据填充共享 API 的结果。 发布后的第一周可能缺少一些数据。
 
 ## <a name="methods"></a>方法
 
@@ -34,7 +34,7 @@ ms.locfileid: "48054810"
 | 属性              | 类型                      | 说明  |
 | -------------         |---------------            | -------------|
 | id                    | String                    | 关系的唯一标识符。 只读。        |
-| lastShared            | [sharingDetail](insights-sharingdetail.md)                | 共享项目的详细信息。 只读。        |
+| lastShared            | [sharingDetail](insights-sharingdetail.md)                | 有关共享项目的详细信息。 只读。        |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 可用于在体验中可视化文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 引用共享文档的属性，例如文档的 url 和类型。 只读       |
 
@@ -42,7 +42,7 @@ ms.locfileid: "48054810"
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | 实体集合 | 用于导航到已共享的项目。 对于文件附件，类型为 *fileAttachment*。 对于链接的附件，类型为 *driveItem*。 |
+| 资源      | 实体集合 | 用于导航到共享的项目。 对于文件附件，类型为 *fileAttachment*。 对于链接附件，类型为 *driveItem*。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

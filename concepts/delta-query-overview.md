@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: cceab6a803b403560c6a72831584c99202d65618
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: adfad680436663cf13a3094c2f32cea9e97ad29bd8a09b1b4211ed26c1b2b63a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231988"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251636"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 

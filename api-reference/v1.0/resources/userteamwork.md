@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: a0084504acbe576a24dac31f77e2617ed5b2c8e9
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: dfbb9f252da794c42365e83caa1fefe54d5f98c5a4ff6d4e40f6fc32baf8a895
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059357"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129923"
 ---
 # <a name="userteamwork-resource-type"></a>userTeamwork 资源类型
 

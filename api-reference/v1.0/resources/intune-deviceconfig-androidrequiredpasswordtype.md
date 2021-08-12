@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d179666a4de9256e98c704bccd9e512d4aebd0ce
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e2148d1898979ff346a9ba6b749d9548a1a201a4c64b69620899b7f8fe12da09
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223555"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 

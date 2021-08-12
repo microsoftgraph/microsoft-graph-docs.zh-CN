@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c655b69a588ced1777221289d41175a73c696854
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 517ee0b3b24b7bde2e651aff704b729798da64a75f3377990c87df2be84f3cec
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944217"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146872"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
@@ -28,8 +28,8 @@ ms.locfileid: "51944217"
 
 ### <a name="passthrough-authentication"></a>Passthrough 身份验证
 
-* 确定在 R2 Windows Server 2012运行 [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) 代理的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/URL 上与 Azure AD 通信。
-* [下载](https://aka.ms/getauthagent) &在服务器上安装 Microsoft Azure AD Connect 身份验证代理。
+* 确定运行 R2 Windows Server 2012运行[PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta)代理的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/URL 上与 Azure AD 通信。
+* [下载](https://aka.ms/getauthagent)&在服务器上Microsoft Azure AD 连接身份验证代理。
 * 若要启用高可用性，请在其他服务器上安装其他身份验证代理，如下 [所述](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)。
 * 确保正确配置了 [智能锁定](/azure/active-directory/authentication/howto-password-smart-lockout) 设置。 这是为了确保你的用户本地 Active Directory 帐户不会被坏角色锁定。
 
@@ -39,7 +39,7 @@ ms.locfileid: "51944217"
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-* 从 [Azure](/azure/active-directory/hybrid/whatis-phs)   AD Connect 中的"可选功能"页面启用 PasswordHashSync。
+* 在 Azure AD 策略的"可选功能"页面中启用 [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)   连接。
 
 ### <a name="emailasalternateid"></a>EmailAsAlternateId
 
@@ -65,7 +65,7 @@ ms.locfileid: "51944217"
 |displayName|String|此功能显示名称策略的部署策略。|
 |功能|stagedFeatureName| 可取值为：`passthroughAuthentication`、`seamlessSso`、`passwordHashSync`、`emailAsAlternateId`、`unknownFutureValue`。|
 |id|String| 只读。|
-|isAppliedToOrganization|布尔|指示是否应当将此功能推出策略应用于整个组织。|
+|isAppliedToOrganization|Boolean|指示是否应当将此功能推出策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能推出。|
 
 ### <a name="stagedfeaturename-values"></a>stagedFeatureName 值 
@@ -82,7 +82,7 @@ ms.locfileid: "51944217"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) 集合| 可为 NULL。 指定启用该功能的 directoryObjects 列表。|
+|appliesTo|[directoryObject](directoryobject.md) collection| 可为 NULL。 指定启用该功能的 directoryObjects 列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

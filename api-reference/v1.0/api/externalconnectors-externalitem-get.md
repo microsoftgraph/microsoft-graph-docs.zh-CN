@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6defb4476d5d34b148e8e18c4757333f9bc3ca81
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 94ffc4a7e0da4f57553367df1a06ca8638d343f0af97bc5aa5281efdb92df7b1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467285"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219379"
 ---
 # <a name="get-externalitem"></a>获取 externalItem
 命名空间：microsoft.graph.externalConnectors

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0c8a45a9f3d49c671949a2b5ad3b9bd549ee8d7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f362d0a2a48c3b30c99ee847cd7a846ea64cf14c605b0fee656e9674081a6fbf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752397"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189658"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>win32LobAppFileSystemRule 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "52752397"
 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|指示规则用途的规则类型。 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)。 可取值为：`detection`、`requirement`。|
 |路径|String|要查找的文件或文件夹路径。|

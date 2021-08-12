@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2f65cfabdfff4d4892e601d7ddcf253ca6dd6dc5
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 20cbe41937ae926a1c3910b41e3041976b1d4c02c1293463d2cda2704b39f5dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982094"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143715"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -30,7 +30,7 @@ ms.locfileid: "49982094"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权API读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /reports/getMailboxUsageDetail(period='{period_value}')
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
 | Authorization | 持有者{令牌}。必需。                |
-| If-None-Match | 如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。 可选。 |
+| If-None-Match | 如果包含此请求表头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。可选。 |
 
 ## <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c94a82aae01110d9816ba0981e5aa14f3e2640b2
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 52f272f5e1de21eb1277610aebdf4510b8ce40f77a042bdf8a3e15085966834b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196507"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接概述
 
@@ -20,7 +20,7 @@ Microsoft Graph 数据连接通过智能方式大规模访问丰富数据，增�
 
 Microsoft Graph 数据连接使用 Azure 数据工厂以可配置的时间间隔将 Microsoft 365 数据复制到应用程序的存储中。 它还提供了一组工具来简化向 Microsoft Azure 传送此数据的过程，让你可以访问最适用的开发和托管工具。 数据连接还授权更精细的控制和同意模型：你可以管理数据，查看谁正在访问数据以及请求实体的特定属性。 这增强了 Microsoft Graph 模型，其授予或拒绝应用程序对整个实体的访问权限。
 
-你可以使用数据连接为你的组织启用机器学习方案。 在这些方案中，你可以创建应用程序来为利益干系人提供宝贵信息、训练机器学习模型，甚至根据采集的大量数据进行预测。
+可以使用“数据连接”来为组织实现机器学习的场景。在这些方案中，可以创建应用程序来为利益干系人提供宝贵信息、训练机器学习模型，甚至根据采集的大量数据进行预测。
 
 <!--<iframe class="video-iframe" style="width: 960px; height: 540px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false"> </iframe>-->
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f904475fdd62a40a2c771a6293973fcf1db3f7b9
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 52ab71824b44610570eafe7644580fab572207e888df9c4a347502c2d3bb31aa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126135"
 ---
 # <a name="timezonebase-resource-type"></a>timeZoneBase 资源类型
 

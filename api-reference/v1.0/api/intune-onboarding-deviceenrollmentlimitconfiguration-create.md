@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f3be4bb3cebe2e8dd08bff5764143d231680dfb
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8d50dc9735058e64f261679afd9fd80e911491ce9719f39f3f046ff9fcf776c4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52745070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185087"
 ---
 # <a name="create-deviceenrollmentlimitconfiguration"></a>创建 deviceEnrollmentLimitConfiguration
 

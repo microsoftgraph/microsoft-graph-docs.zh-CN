@@ -1,31 +1,31 @@
 ---
 title: securityVendorInformation 资源类型
-description: " subProvider = AppLocker) 。"
+description: " subProvider=AppLocker) 。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 536ed37cfe8ba190a22ef86e190af2b171d352ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a0b0d5ece58a1db1ce929b4bc72de7e8f9c1a44fdd8ccab15aee0d2c47143dcc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216551"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation 资源类型
 
 命名空间：microsoft.graph
 
-包含有关安全产品/服务供应商、提供商和 subprovider 的详细信息 (例如，供应商 = Microsoft;提供程序 = Windows Defender ATP;subProvider = AppLocker) 。
+包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息 (例如，vendor=Microsoft;provider=Windows Defender ATP;subProvider=AppLocker) 。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|provider |String|特定提供商 (产品/服务-不提供供应商公司) ;例如，WindowsDefenderATP。|
-|providerVersion|String|提供程序或 subprovider 的版本（如果存在），它将生成警报。 *Required*|
-|subProvider|String|聚合提供程序) 下的特定 subprovider (;例如，WindowsDefenderATP。|
-|提供 |String|通知供应商的名称 (例如，Microsoft、Dell、FireEye) 。 *Required*|
+|提供程序 |String|特定提供商 (/服务 - 不是供应商公司) ;例如，WindowsDefenderATP。|
+|providerVersion|String|生成警报的提供程序或子提供程序的版本（如果存在）。 *必需*|
+|subProvider|String|聚合提供程序 (下的特定子) ;例如，WindowsDefenderATP.SmartScreen。|
+|vendor |String|警报供应商的名称，例如 (Microsoft、Dell、FireEye) 。 *必需*|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

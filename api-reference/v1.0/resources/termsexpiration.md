@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: governance
 author: raprakasMSFT
 doc_type: resourcePageType
-ms.openlocfilehash: 80be295857a48854b404da59f2f8f479590fefdc
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: cd1e7f437e8bf942d69368bc4c78410eed95dd2e42ac0a0f0dd77319578d0991
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174869"
 ---
 # <a name="termsexpiration-resource-type"></a>termsExpiration 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50722530"
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
 | startDateTime|DateTimeOffset | 协议设置为对所有用户过期的 DateTime。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。|
-| frequency| 持续时间 | 表示术语在 **startDateTime** 中设置的首次过期后到期的频率。 该值以 ISO 8601 格式表示持续时间。 例如， `PT1M` 表示 1 个月的时间段。|
+| frequency| 期限 | 表示术语在 **startDateTime** 中设置的首次过期后到期的频率。 该值以 ISO 8601 格式表示持续时间。 例如， `PT1M` 表示 1 个月的时间段。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

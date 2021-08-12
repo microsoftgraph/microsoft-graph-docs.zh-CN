@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 安全性 API 访问的安全数据是很
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 2814bf52b575176c95d6ae69f46008e7a56a4cd1
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 3064f5f905503f4406f01dba0b34e243c443dafe81c4db8567c86e875abfd4e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233642"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>授权和 Microsoft Graph 安全性 API
 
@@ -46,16 +46,16 @@ Microsoft Graph 安全性 API 支持以下两种类型的授权：
 
 应用注册仅定义运行应用所需的权限。 它不对应用程序进行这些权限的授予。
 
-Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按每租户实施，并且必须在应用程序权限在应用程序注册门户中*每次更改时执行*。
+Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按每租户实施，并且必须在应用程序权限在应用程序注册门户中 *每次更改时执行*。
 
 例如，假定你拥有一个应用程序、两个 Azure AD 租户（**T1** 和 **T2**），以及两个权限（**P1** 和 **P2**）。 以下是授权过程：
 
 - 应用程序注册以请求权限 **P1**。
 - 当租户 **T1** 中的用户获取此应用程序的 Azure AD 令牌时，该令牌不包含任何权限。
 - 租户 **T1** 的 Azure AD 管理员向应用程序显式授予权限。 当租户 **T1** 中的用户获取应用程序的 Azure AD 令牌时，它将包含权限 **P1**。
-- 当租户 **T2** 中的用户获取应用程序的 Azure AD 令牌时，该令牌不包含任何权限，因为租户 **T2** 的管理员尚未向该应用程序授予权限。 权限必须按照*每个租户*和*每个应用程序*进行授予。
+- 当租户 **T2** 中的用户获取应用程序的 Azure AD 令牌时，该令牌不包含任何权限，因为租户 **T2** 的管理员尚未向该应用程序授予权限。 权限必须按照 *每个租户* 和 *每个应用程序* 进行授予。
 - 应用程序将其注册更改为现在需要权限 **P1** 和 **P2**。
-- 当租户 **T1** 中的用户获取应用程序的 Azure AD 令牌时，它仅包含权限 **P1**。 授予应用程序的权限作为授予内容快照进行记录，它们在应用程序注册（权限）更改后*不会自动更改*。
+- 当租户 **T1** 中的用户获取应用程序的 Azure AD 令牌时，它仅包含权限 **P1**。 授予应用程序的权限作为授予内容快照进行记录，它们在应用程序注册（权限）更改后 *不会自动更改*。
 - 租户 **T2** 的管理员对应用程序授予权限 **P1** 和 **P2**。 当租户 **T2** 中的用户获取应用程序的 Azure AD 令牌时，该令牌将包含权限 **P1** 和 **P2**。
 
 >**注意**：租户 **T1** 中的应用程序和租户 **T2** 中的应用程序的 Azure AD 令牌包含不同权限，因为每个租户管理员已为应用程序授予不同的权限。
@@ -123,7 +123,7 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 ## <a name="assign-azure-ad-roles-to-users"></a>向用户分配 Azure AD 角色
 
-应用程序被授予权限后，每个可以访问该应用程序的人（即 Azure AD 租户的成员）都将获得所授予的权限。 为了进一步保护敏感安全数据，Microsoft Graph 安全性 API 还要求必须为用户分配 Azure AD **安全读者**角色。 有关详细信息，请参阅 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)和 [为具有 Azure Active Directory 的用户分配管理员和非管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
+应用程序被授予权限后，每个可以访问该应用程序的人（即 Azure AD 租户的成员）都将获得所授予的权限。 为了进一步保护敏感安全数据，Microsoft Graph 安全性 API 还要求必须为用户分配 Azure AD **安全读者** 角色。 有关详细信息，请参阅 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)和 [为具有 Azure Active Directory 的用户分配管理员和非管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
 >**注意：** 必须是租户管理员才能执行此步骤。
 
@@ -156,12 +156,12 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 对于不使用任何现有库的应用程序，请参阅[代表用户获取访问权限](auth-v2-user.md)。
 
-1. 从 Azure AD 获取代码。 调用的查询包含应用程序 ID 参数、重定向 URl 和**所需的权限**。
+1. 从 Azure AD 获取代码。 调用的查询包含应用程序 ID 参数、重定向 URl 和 **所需的权限**。
 2. 使用代码获取访问令牌。
 
 如果你使用 OpenId Connect 库，请参阅[使用 Azure AD 和 OpenID Connect 进行身份验证](/azure/architecture/multitenant-identity/authenticate)并调用 `app.UseOpenIdConnectAuthentication()`。
 
->**注意：** 如果请求的是用户委派身份验证令牌，库的参数是**请求的作用域**。 请对该参数使用 User.Read，而非注册的应用程序所要求的值。 **请求的作用域**参数不影响包含在返回身份验证令牌中的权限。 这些由租户管理员授予应用程序的权限所确定。
+>**注意：** 如果请求的是用户委派身份验证令牌，库的参数是 **请求的作用域**。 请对该参数使用 User.Read，而非注册的应用程序所要求的值。 **请求的作用域** 参数不影响包含在返回身份验证令牌中的权限。 这些由租户管理员授予应用程序的权限所确定。
 
 例如，如果使用 .NET MSAL 库，请执行以下调用：
 

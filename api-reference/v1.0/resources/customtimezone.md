@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a4d05d000b2491fcc9d02b3e39bb012e6e5f023e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e059e316b3e641fd32bbf305cc619929adb09d2a6618181197775c8ca8bcc276
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121268"
 ---
 # <a name="customtimezone-resource-type"></a>customTimeZone 资源类型
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9764104cc1737effe334362f5161598957f600b3
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: 666bc50887b386265f37a752bc3b98f57db1f9ec7bbf5f188190c4859f5f08ef
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178141"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 

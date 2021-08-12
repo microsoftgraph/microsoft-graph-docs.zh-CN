@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25914b3cba48120e91352028bb51bcdee8edee2b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5e90141bf12ca7457d2cf5619bb1db17835c67d5451ebd3e3f6ca551e5d80b14
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178260"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752320"
 代理域
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |ipAddressOrFQDN|String|IP 地址或 FQDN|
 |代理|String|代理 IP 或 FQDN|

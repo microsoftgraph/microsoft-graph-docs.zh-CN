@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 0d34688bd2177ccf879c87dbac3d7d07cfd48740
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3e2a47d9570f946e66e2722d476a4fbbd302705878bce91f6713b150991e1670
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235777"
 ---
 # <a name="create-single-value-extended-property"></a>创建单值扩展属性
 
@@ -23,9 +23,9 @@ ms.locfileid: "50134818"
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
-- [事件](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [邮件](../resources/message.md)
+- [message](../resources/message.md)
 
 以及以下组资源：
 
@@ -36,12 +36,12 @@ ms.locfileid: "50134818"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据要创建扩展属性的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据在 中创建扩展属性的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
 | 组 [日历](../resources/calendar.md) | Group.ReadWrite.All | 不支持 | 不支持 |

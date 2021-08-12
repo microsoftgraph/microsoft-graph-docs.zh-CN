@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2ffa5b3f5562e83d1e1e1ef64629e39a1da41cd4
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f2217ead7547622ebf65f5f23b1e842b2528f944769300102df21d107c5a68bd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472858"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189266"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "50472858"
 | id                  | string   | 目录应用生成的应用 ID（不同于开发人员在 [Microsoft Teams 应用压缩包](/microsoftteams/platform/concepts/apps/apps-package)中提供的 ID）。 |
 | externalId          | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](/microsoftteams/platform/concepts/apps/apps-package)中提供的目录 ID。 |
 | displayName                | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](/microsoftteams/platform/concepts/apps/apps-package)中提供的目录名称。 |
-| distributionMethod  | teamsAppDistributionMethod     | 应用的分配方法。 只读。|
+| distributionMethod  | teamsAppDistributionMethod     | 应用的分配方法。只读。|
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 值
 

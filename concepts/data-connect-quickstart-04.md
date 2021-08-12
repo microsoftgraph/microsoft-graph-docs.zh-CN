@@ -32,7 +32,7 @@
         - **向：** 用户、组或服务主体分配访问权限
         - **选择** Microsoft Graph 数据连接： (之前创建的 Azure AD 应用程序的名称进行数据传输) 
 
-        ![Screenshot showing the proper 角色分配 to the application for Microsoft Graph Data 连接 in the Azure 存储 account in the Azure portal.](images/data-connect-azure-storage-role.png)
+        ![Screenshot showing the proper 角色分配 to the application for Microsoft Graph 数据连接 in the Azure 存储 account in the Azure portal.](images/data-connect-azure-storage-role.png)
 
 1. 在 **mgdcm365datastore** 帐户Azure 存储容器。
 

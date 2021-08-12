@@ -6,12 +6,12 @@ localization_priority: Normal
 description: 视频资源将与视频相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7f79ca080182a4439277c4eb32a2ccccb4df2928
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: be2c9c87be0bb7d36b5af6f1feb6dc1c8a16365d1fe062b40e65b10e026e6884
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230401"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 

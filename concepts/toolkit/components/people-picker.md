@@ -3,12 +3,12 @@ title: People-Picker组件
 description: 您可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 690e117064a43a65ea125e4e0d67a12daae185ae
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 8c42a4dbdf6881a86794594e13ec6e799fbbd8ac556a499bef868926a7d49e56
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216287"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit 中的组件
 
@@ -153,7 +153,7 @@ mgt-people-picker {
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|备注|
+|对象存储|缓存数据|说明|
 |---------|-----------|-------|
 |`groups`|组列表|设置为 `type` 时使用 `PersonType.group`|
 |`people`|人员列表|设置为 或 `type` `PersonType.person` 时使用 `PersonType.any`|

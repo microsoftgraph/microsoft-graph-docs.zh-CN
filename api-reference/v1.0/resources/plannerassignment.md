@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 2d42e98a2167fb69620ef7cc9d17cb57beffcd7d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 23677678d6f31be3ec24630947c6adc41a2e3bf8cbd35c606365d2adfd50b16d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126373"
 ---
 # <a name="plannerassignment-resource-type"></a>plannerAssignment 资源类型
 

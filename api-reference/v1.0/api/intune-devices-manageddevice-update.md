@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dcf132bafb6ca0023b7789c2c390a4a7869a3c9c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e1cbe22dd7a2db6e30f5be119d8aee32c8fdc488864b362bb99806bd588dd3b0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52745812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155699"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 98666b6fb1acf53612200c7dcb8ae2cc246cdd43
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 40ec0cf2f0fc5a67707e9f32180a47f876594bb30543f4192971a3f31c78fa6c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758398"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135748"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>删除 deviceComplianceActionItem
 

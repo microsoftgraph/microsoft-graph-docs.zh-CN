@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 0f0a1817ed0bcc215f4a8f5197166537b2aed36c
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 9e520b5fe4d777edbe0a1e7f2f5300486b1772ea3c1dcf54a718854e56bd243d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645739"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126151"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>将 Postman 与 Microsoft Graph 连接器 API 一并使用
 
@@ -23,7 +23,7 @@ ms.locfileid: "52645739"
 
 ## <a name="step-1---import-the-microsoft-graph-postman-collection"></a>步骤 1 - 导入 Microsoft Graph Postman 集合
 
-要使用"邮政编码"集合，需要将其导入到"邮政编码"工作区。 在 Web 浏览器中执行这一操作。
+要使用 Postman 集合，需要将其导入到 Postman 工作区。从 Web 浏览器执行此操作。
 
 1. 转到 [Postman](https://identity.getpostman.com/signup) 并登录。 如果已有 Postman 帐户， [登录](https://identity.getpostman.com/login)。
 
@@ -243,7 +243,7 @@ Location: https://graph.microsoft.com/beta/external/connections/contosotasks/ope
 ```
 
 > [!NOTE]
-> 注册连接架构是一个异步操作，因此在连接架构进入"完成"状态之前，请勿将项目进入连接中。 要检查连接架构状态，请执行以下请求：
+> 注册连接架构是一个异步操作，因此在连接架构进入“完成”状态之前，请勿将项目进入连接中。要检查连接架构状态，请执行以下请求：
 > ```http
 > GET /external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
 > ```

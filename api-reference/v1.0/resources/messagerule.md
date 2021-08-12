@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fb13379cbd68319ae1384f6a3b8ce2caf663c8e0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3ba5d3d0d84e58fefb27d4540bddb092b951cda00fce4443853ae81cff774e73
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159951"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
 
@@ -64,7 +64,7 @@ ms.locfileid: "50132368"
 
 ```
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) 集合 |获取为用户收件箱定义的所有 **messageRule** 对象。|

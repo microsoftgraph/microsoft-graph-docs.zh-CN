@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bd34071caf8d428847693be86eb7082e7f80e99c
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c2fd6ac45d22b9c1c77b183f7a3412b7eb3dd46b3270f1d3f5a2ea5919970bf5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171964"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>使用 Microsoft Graph 通用打印 API 上载文档
 
@@ -83,8 +83,7 @@ Content-Type: application/json
 
 ### <a name="remarks"></a>备注
 
-* 如果因客户端发送了服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。 
-  可以[请求获取上传状态](#get-the-upload-session)，以获取缺少范围的更详细列表。
+* 如果因客户端发送服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#get-the-upload-session) 以获取缺少范围的详细列表。
 * 在进行 `PUT` 调用时添加 `Authorizatio`n 标头可能会导致 `HTTP 401 Unauthorized` 响应。 授权标头和持有者令牌只应在创建上传会话时发送。 将数据上传到上传会话时，不应将其包含在内。
 
 ## <a name="completing-a-file"></a>完成文件

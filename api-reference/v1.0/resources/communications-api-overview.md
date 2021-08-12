@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: e6e6c4ba8d262ac01846b6ed06938b2c5c89350b
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: faf4e70b4d58d693d1abe3e11d93259bfa1a1d7f4c727c405fabc94acd8cbd2e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163836"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 通信 API
 

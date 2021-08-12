@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58c524307b50024c73a0520e1da104c96619f749
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ef2f3f7c721ee9f3eed88e4faab7c6c3bec4753fcd54331cb0f3717411869fac
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756769"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230492"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>deviceAndAppManagementAssignmentTarget 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52756769"
 赋值目标的基类型。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系

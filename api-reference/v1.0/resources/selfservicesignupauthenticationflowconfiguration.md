@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a235c9e9869b3e0b0c36b0369ae6163083b3cf20
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 96800f7b3ef2509cf52a302409b03cfc2d3fd62dee864da99ecf6ecf8e3bde7f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126282"
 ---
 # <a name="selfservicesignupauthenticationflowconfiguration-resource-type"></a>selfServiceSignUpAuthenticationFlowConfiguration 资源类型
 

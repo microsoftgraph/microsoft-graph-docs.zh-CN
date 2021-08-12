@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b1b0cfab88b44adaaa95b2b519ce5cc34c94d5b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 53d8181ad9a122d95cf22057b4c4a663509e530b4be08f860482100d0345ac65
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54234307"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>更新 managedDeviceMobileAppConfigurationUserStatus
 

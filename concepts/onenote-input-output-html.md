@@ -1,21 +1,21 @@
 ---
 title: OneNote 页中的输入和输出 HTML
-description: '创建或更新 OneNote 页时定义页面内容和结构的 HTML 被称为*输入 HTML*。 '
+description: '创建或更新 OneNote 页时定义页面内容和结构的 HTML 被称为 *输入 HTML*。 '
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 2ba3ce1432a2213a4ecdcfce1ab9a9c98c88c818
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 0d1aec43ad96c5d076f08928d554e639afc6f7164fde258235161ccf1433cfa3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601704"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123946"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>OneNote 页中的输入和输出 HTML
 
-[创建](onenote-create-page.md)或[更新](onenote-update-page.md) OneNote 页时定义页面内容和结构的 HTML 被称为*输入 HTML*。 
+[创建](onenote-create-page.md)或 [更新](onenote-update-page.md) OneNote 页时定义页面内容和结构的 HTML 被称为 *输入 HTML*。 
 
-[获取页面内容](onenote-get-content.md)时返回的 HTML 被称为*输出 HTML*。 输出 HTML 与输入 HTML 存在差别。
+[获取页面内容](onenote-get-content.md)时返回的 HTML 被称为 *输出 HTML*。 输出 HTML 与输入 HTML 存在差别。
 
 Microsoft Graph 中的 OneNote API 保留输入 HTML 的语义内容和基本结构，但会将其转换为一组[受支持的 HTML 元素和 CSS 属性](onenote-create-page.md#supported-html-and-css-for-onenote-pages)。 API 还添加支持 OneNote 功能的自定义属性。
  
@@ -23,7 +23,7 @@ Microsoft Graph 中的 OneNote API 保留输入 HTML 的语义内容和基本结
 
 ## <a name="body-element"></a>body 元素
 
-页面正文中的 HTML 内容表示页面内容和结构，其中包括图像和文件资源。 **body** 元素可以在输入和输出 HTML 中包含下列属性。
+页面正文中的 HTML 内容表示页面内容和结构，包括图像和文件资源。**body** 元素可以在输入和输出 HTML 中包含下列属性。
 
 #### <a name="input-attributes"></a>输入属性
 
@@ -53,14 +53,14 @@ Microsoft Graph 中的 OneNote API 保留输入 HTML 的语义内容和基本结
 | data-render-fallback | [提取](onenote-extract-data.md)失败时的回退操作：**render**（默认）或 **none** |
 | data-render-method | 要执行的[提取](onenote-extract-data.md)方法，例如：<br/>`extract.businesscard` 或 `extract.recipe` |
 | data-render-src | [提取](onenote-extract-data.md)的内容源。 |
-| style | div 的位置、大小、字体和颜色属性： <ul><li>**位置**（仅限**绝对**）、**左侧**、**顶部**和**宽度**（会为 div 自动配置高度）<br/><br/>用于创建[绝对定位](onenote-abs-pos.md) div（仅在正文设置 `data-absolute-enabled="true"` 且 div 是正文的直接子级时）。<br/><br/>示例：`<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</li><li>元素的 CSS [样式](#styles)属性。在输出 HTML 中，这些值在适当的子元素上内嵌返回。</li></ul> |
+| style | div 的位置、大小、字体和颜色属性： <ul><li>**位置**（仅限 **绝对**）、**左侧**、**顶部** 和 **宽度**（会为 div 自动配置高度）<br/><br/>用于创建[绝对定位](onenote-abs-pos.md) div（仅在正文设置 `data-absolute-enabled="true"` 且 div 是正文的直接子级时）。<br/><br/>示例：`<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</li><li>元素的 CSS [样式](#styles)属性。在输出 HTML 中，这些值在适当的子元素上内嵌返回。</li></ul> |
  
 
 Microsoft Graph 中的 OneNote API 至少在一个 div 中包装所有正文内容。 在以下情况下，API 创建一个默认 div（使用 `data-id="_default"` 设定属性）以包含正文内容：
 
-- 输入 body 元素的 **data-absolute-enabled** 属性被省略或被设置为 **false**。 在此情况下，所有正文内容都被设置为默认的 div。
+- 将输入 body 元素的 **data-absolute-enabled** 属性省略或设置为 **false**。在这种情况下，所有的正文内容都放置在默认 div 中。
 
-- 输入 body 元素的 **data-absolute-enabled** 属性为 **true**，但输入 HTML 包含的直接子级不是[绝对定位](onenote-abs-pos.md)&nbsp; **div**、**img** 或 **object** 元素。 在此情况下，不是[绝对定位](onenote-abs-pos.md)&nbsp; **div**、**img** 或 **object** 元素的直接子级被设置为默认的 div。
+- 输入 body 元素的 **data-absolute-enabled** 属性为 **true**，但输入 HTML 包含的直接子级不是 [绝对定位](onenote-abs-pos.md)  **div**、**img** 或 **object** 元素。 在此情况下，不是 [绝对定位](onenote-abs-pos.md)  **div**、**img** 或 **object** 元素的直接子级被设置为默认的 div。
 
 
 #### <a name="output-attributes"></a>输出属性
@@ -68,7 +68,7 @@ Microsoft Graph 中的 OneNote API 至少在一个 div 中包装所有正文内�
 |输出属性|说明|
 |:------|:------|
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由[对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
+| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由 [对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
 | style | div 的位置和大小属性。 |
  
 ### <a name="non-contributing-divs"></a>非贡献 div
@@ -126,7 +126,7 @@ OneNote 页上的图像由 **img** 元素表示。 **img** 元素可以在输入
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
 | data-render-src |需要 **data-render-src** 或 **src**。<br/><br/>在 OneNote 页上显示为位图图像的网页：<br/><br/> - `data-render-src="https://..."` 表示公共 URL。<br/><br/> - `data-render-src="name:BlockName"` 表示[多部分请求](/graph/api/section-post-pages?view=graph-rest-1.0#example)的“演示文稿”块中的图像部分。<br/><br/>如果网页比 OneNote 页能够忠实呈现的内容更为复杂，或者页面需要登录凭据，则此方法很有用。|
 | data-tag | 元素上的[笔记标记](onenote-note-tags.md)。 |
-| style |图像的位置和大小属性：**位置**（仅限**绝对**）、**左侧**、**顶部**、**宽度**和**高度**。<br/><br/>可在任何图像上设置大小。<br/><br/>位置属性用于创建[绝对定位](onenote-abs-pos.md)图像（仅在正文设置 `data-absolute-enabled="true"` 且图像是正文的直接子级时）。<br/><br/>示例：`<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>在输出 HTML 中，图像大小分别以 **width** 和 **height** 属性返回。 |
+| style |图像的位置和大小属性：**位置**（仅限 **绝对**）、**左侧**、**顶部**、**宽度** 和 **高度**。<br/><br/>可在任何图像上设置大小。<br/><br/>位置属性用于创建[绝对定位](onenote-abs-pos.md)图像（仅在正文设置 `data-absolute-enabled="true"` 且图像是正文的直接子级时）。<br/><br/>示例：`<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>在输出 HTML 中，图像大小分别以 **width** 和 **height** 属性返回。 |
 | src |需要 **src** 或 **data-render-src**。<br/><br/>要在 OneNote 页上呈现的图像：<br/><br/>- `src="https://..."` 表示 Internet 上公开可用图像的 URL。<br/><br/> - `src="name:BlockName"` 表示代表此图像的多部分请求中的已命名部分。|
 | width，height | 图像的宽度或高度，以不带 px 的像素为单位。 示例：`width="400"` |
  
@@ -142,11 +142,11 @@ OneNote 页上的图像由 **img** 元素表示。 **img** 元素可以在输入
 | data-index | 此图像的位置。用于支持[拆分图像](#split-images)。 |
 | data-fullres-src | 最初嵌入在页面中的图像资源版本的终结点。 |
 | data-fullres-src-type | **data-fullres-src** 资源的媒体类型，例如：`image/png` 或 `image/jpeg`。 |
-| data-options | 源类型：PDF 文件的源类型为 **printout**，而所有其他文件的源类型为 **splitimage**。仅适用于使用 **data-render-src** 属性创建的[拆分图像](#split-images)。 |
+| data-options | 源类型：PDF 文件的源类型为 **printout**，而所有其他文件的源类型为 **splitimage**。仅适用于使用 **data-render-src** 属性创建的 [拆分图像](#split-images)。 |
 | data-render-original-src | 此图像的原始源 URL，前提是该源图像来自公共 Internet，且使用 **data-render-src** 属性创建。 |
 | data-src-type | **src** 资源的媒体类型，例如：`image/png` 或 `image/jpeg`。 |
 | data-tag | 元素上的[笔记标记](onenote-note-tags.md)。 |
-| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由[对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
+| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由 [对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
 | src | 已针对 Web 浏览器以及移动设备和平板电脑外形规格进行优化的图像资源版本的终结点。 |
 | style | 此图像的位置属性。 |
 | width、height | 此图像的宽度或高度，以像素为单位。 |
@@ -200,7 +200,7 @@ OneNote 页上的图像由 **img** 元素表示。 **img** 元素可以在输入
 
 ### <a name="split-images"></a>拆分图像
 
-出于性能和呈现的考虑，使用 **data-render-src** 属性（从网页 URL 或已命名的部分）创建的图像可能被拆分为多个组件图像。 向所有组件映像分配同一 **data-id** 值。 每个组件图像均具有从零开始的数据索引属性，该属性定义原始垂直布局。
+由于性能和呈现原因，使用 **data-render-src** 属性从网页 URL 或已命名部件创建的图像可能拆分为多个组件图像。为所有组件图像分配相同的 **data-id** 值。每个组件图像都具有基于零的 data-index 属性，该属性定义原始的垂直布局。
 
 #### <a name="split-image-with-three-component-images"></a>带有三个组件图像的拆分图像
 
@@ -239,7 +239,7 @@ OneNote 页上的图像由 **img** 元素表示。 **img** 元素可以在输入
 
 OneNote 页可包含由 **iframe** 元素所表示的嵌入的视频。 
 
-> **注意：** 也可以[使用 **object** 元素附加视频文件](onenote-images-files.md#adding-files)。
+> **注意：** 也可以 [使用 **object** 元素附加视频文件](onenote-images-files.md#adding-files)。
 
 #### <a name="input-attributes"></a>输入属性
 
@@ -279,10 +279,10 @@ OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元
 
 |输入属性|说明|
 |:------|:------|
-| data | 必需。 表示[多部分请求](/graph/api/section-post-pages?view=graph-rest-1.0#example)中文件的部分的名称。 |
+| data | 必需。表示 [多部分请求](/graph/api/section-post-pages?view=graph-rest-1.0#example) 中文件的部件的名称。 |
 | data-attachment | 必需。文件名。 |
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| style | 对象的位置和大小属性：**位置**（仅限**绝对**）、**左侧**、**顶部**和**宽度**。<br/><br/>用于创建[绝对定位](onenote-abs-pos.md)对象（仅在正文设置 `data-absolute-enabled="true"` 且对象是正文的直接子级时）。<br/><br/>示例：`<object style="position:absolute;top:350px;left:300px" ... />` |
+| style | 对象的位置和大小属性：**位置**（仅限 **绝对**）、**左侧**、**顶部** 和 **宽度**。<br/><br/>用于创建[绝对定位](onenote-abs-pos.md)对象（仅在正文设置 `data-absolute-enabled="true"` 且对象是正文的直接子级时）。<br/><br/>示例：`<object style="position:absolute;top:350px;left:300px" ... />` |
 | type | 必需。<br/><br/>标准媒体文件类型。 已知文件类型显示与 OneNote 页上的文件类型相关联的图标。 已知文件类型显示通用文件图标。 |
 <!--todo: add link to known file types--> 
 
@@ -293,7 +293,7 @@ OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元
 | data | 文件资源的终结点。 |
 | data-attachment | 文件名。 |
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由[对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
+| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由 [对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
 | style | 此对象的位置属性。 |
 | type | 标准媒体文件类型。 |
  
@@ -319,7 +319,7 @@ OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元
 |输入属性|说明|
 |:------|:------|
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| data-tag | **p** 或 **h1** - **h6** 元素上的[笔记标记](onenote-note-tags.md)。 |
+| data-tag | **p** 或 **h1** - **h6** 元素上的 [笔记标记](onenote-note-tags.md)。 |
 | style | 此元素的 CSS [style](#styles) 属性。 |
  
 
@@ -328,8 +328,8 @@ OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元
 |输出属性|说明|
 |:------|:------|
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| data-tag | **p** 或 **h1** - **h6** 元素上的[笔记标记](onenote-note-tags.md)。 |
-| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由[对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
+| data-tag | **p** 或 **h1** - **h6** 元素上的 [笔记标记](onenote-note-tags.md)。 |
+| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由 [对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
 | style | 此元素的 CSS [style](#styles) 属性。 在输出 HTML 中，可能在相应的子元素或 **span** 元素上内嵌返回这些值。 |
  
 
@@ -363,7 +363,7 @@ OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元
 |输入属性|说明|
 |:------|:------|
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| data-tag | **ul**、**ol** 或 **li** 元素上的[笔记标记](onenote-note-tags.md)。 |
+| data-tag | **ul**、**ol** 或 **li** 元素上的 [笔记标记](onenote-note-tags.md)。 |
 | style | 列表或列表项的 **list-style-type** 和 CSS [style](#styles) 属性。 |
  
 
@@ -372,8 +372,8 @@ OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元
 |输出属性|说明|
 |:------|:------|
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| data-tag |  **li** 元素中的 span 上的[笔记标记](onenote-note-tags.md)。 |
-| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由[对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
+| data-tag |  **li** 元素中的 span 上的 [笔记标记](onenote-note-tags.md)。 |
+| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由 [对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
 | style | 元素的 **list-style-type** 和 CSS [style](#styles) 属性。 在输出 HTML 中，在列表项上返回列表级别设置。 不会返回默认属性。 |
  
 ### <a name="list-styles"></a>列表样式
@@ -460,7 +460,7 @@ Microsoft Graph 中的 OneNote API 支持以下列表样式：
 |输出属性|说明|
 |:------|:------|
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由[对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
+| id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由 [对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
 | style | 此元素的 CSS [style](#styles) 属性。 |
  
 
@@ -589,7 +589,7 @@ Microsoft Graph 中的 OneNote API 支持页面正文中元素的以下内联 CS
 
 这是[获取页面内容](onenote-get-content.md)时 Microsoft Graph 返回的输出 HTML。
 
-> **注意：**[创建页面](onenote-create-page.md)或[获取页面元数据](/graph/api/page-get?view=graph-rest-1.0)时，API 返回 **contentUrl** 属性中的页面的 *content* 终结点 URL。
+> **注意：**[创建页面](onenote-create-page.md)或 [获取页面元数据](/graph/api/page-get?view=graph-rest-1.0)时，API 返回 **contentUrl** 属性中的页面的 *content* 终结点 URL。
 
 ```html
 <html htmlns="https://www.w3.org/1999/xhtml" lang="en-US">

@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: eb3c5cdca8c21aaa8bc893a6e9233f42320e3da4
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: 5bc9638b40741aa84bb84f69dda75de4d1ae59c101a0afd2128f59e445bbb289
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53547564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178043"
 ---
 # <a name="policyroot-resource-type"></a>policyRoot 资源类型
 

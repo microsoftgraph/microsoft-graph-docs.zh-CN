@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52c92d372fa6734b59732bc6173e96f979c85f51
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2711545d812dbdbaa86c3223865fb4e3d027920a5f370e4fe52aa9c00497678e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175831"
 ---
 # <a name="update-ioscustomconfiguration"></a>更新 iosCustomConfiguration
 

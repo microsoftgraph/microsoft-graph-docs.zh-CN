@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dc7fbc8fa2f31cbeab5e9cc8924a617931e390fb
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: edcbec763037ae989258fde39b784c7ccf33d5732a347d2d12fefee880726192
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163731"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType 枚举类型
 

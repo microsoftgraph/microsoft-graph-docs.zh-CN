@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2aedb1869a0dee1cc9e0d13fa85ca3c06bcc1d1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 160fcb95fd8ffe4b4d0c2d4e9233afe3492ef32d27b910ee40bb7519b20e591a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032822"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121415"
 ---
 # <a name="chart-resource-type"></a>图表资源类型
 
@@ -54,7 +54,7 @@ ms.locfileid: "48032822"
 |legend|[WorkbookChartLegend](chartlegend.md)|表示图表的图例。只读。|
 |series|[WorkbookChartSeries](chartseries.md) 集合|表示单个系列或图表中的系列集合。只读。|
 |职位|[WorkbookChartTitle](charttitle.md)|表示指定图表的标题，包括标题的文本、可见性、位置和格式。只读。|
-|worksheet|[WorkbookWorksheet](worksheet.md)|包含当前 chart 的 worksheet 对象。 只读。|
+|worksheet|[WorkbookWorksheet](worksheet.md)|包含当前图表的工作表。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

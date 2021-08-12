@@ -4,12 +4,12 @@ description: 本文介绍当通过 API 发送的请求失败时，Microsoft Grap
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 47c8a56c0a6679957833a65e48c050932024b280
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 7b135cb8275367a1c425fe2ab6aa41fec728982bc5028424016561e97d5585d7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216355"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph 中的 OneNote API 错误代码
 
@@ -106,7 +106,7 @@ SharePoint 当前不可用。 请稍后重试。
 请求 URI 太长。 URI 的最大大小（包括所有参数和数据）为 16 KB 或 16,384 个字符。
 
 ### <a name="20006"></a>20006
-“演示”部分 HTML 包含未设置 src 和 **data-render-src** 属性的图像标记。 API 将忽略该**图像**标记。 
+“演示”部分 HTML 包含未设置 src 和 **data-render-src** 属性的图像标记。 API 将忽略该 **图像** 标记。 
 
 ### <a name="20007"></a>20007
 “演示文稿”部分 HTML 包含与任何允许的格式均不匹配的创建日期/时间字符串。 
@@ -243,7 +243,7 @@ PATCH 请求不包含任何操作。请参阅[更新页面内容](onenote-update
 你的请求指定的 PATCH 目标不受支持。 请参阅[更新页面内容](onenote-update-page.md)。
 
 ### <a name="20134"></a>20134
-您的请求将无效元素指定为 PATCH 操作的目标。如果目标使用 **data-id** 标识符，请确保其前缀为 # 符号。请参阅[更新页面内容](onenote-update-page.md)。
+您的请求将无效元素指定为 PATCH 操作的目标。如果目标使用 **data-id** 标识符，请确保其前缀为 # 符号。请参阅 [更新页面内容](onenote-update-page.md)。
 
 ### <a name="20135"></a>20135
 你的请求指定的实体类型不受 PATCH 操作支持。 请参阅[更新页面内容](onenote-update-page.md)。
@@ -255,13 +255,13 @@ PATCH 请求不包含任何操作。请参阅[更新页面内容](onenote-update
 目标页面不支持 PATCH 请求。
 
 ### <a name="20138"></a>20138
-PATCH 请求中的目标元素类型不支持 **append** 操作。请参阅[更新页面内容](onenote-update-page.md)。
+PATCH 请求中的目标元素类型不支持 **append** 操作。请参阅 [更新页面内容](onenote-update-page.md)。
 
 ### <a name="20139"></a>20139
-请求包含无效的 **data-tag** 属性值。请参阅[使用笔记标记](onenote-note-tags.md)。
+请求包含无效的 **data-tag** 属性值。请参阅 [使用笔记标记](onenote-note-tags.md)。
 
 ### <a name="20140"></a>20140
-你的请求包含无效的 **data-tag** 状态值。 复选框笔记标记可以包含**已完成**状态。 
+你的请求包含无效的 **data-tag** 状态值。 复选框笔记标记可以包含 **已完成** 状态。 
 
 示例：
 
@@ -333,7 +333,7 @@ OData 查询无效。
 ### <a name="20166"></a>20166
 应用程序在短时间内以用户身份发出的请求过多。 当 API 检测到应用程序使用的资源过多时，它会返回 429 状态代码和此错误，以帮助确保 OneNote API 保持稳定和可响应状态。 
 
-有关详细信息，请参阅 [Microsoft Graph 服务特定限制指南](./throttling.md#service-specific-limits)。
+有关详细信息，请参阅[Microsoft Graph服务特定限制指南](./throttling.md#service-specific-limits)。
 
 ### <a name="20168"></a>20168
 请求中指定的视频源不受支持。 请参阅[支持的视频网站](onenote-images-files.md#adding-videos)获取最新列表。
@@ -365,9 +365,9 @@ OData 查询无效。
 
 | 原因 | 解决方案 |
 |:------|:------|
-| 尚未设置用户的个人网站。 | 用户应打开 OneDrive for Business，并按照任意说明设置此网站。 如果此操作失败，则应联系其 Microsoft 365 租户管理员。 |
+| 尚未设置用户的个人网站。 | 用户应打开 OneDrive for Business，并按照任意说明设置此网站。 如果失败，他们应联系租户Microsoft 365管理员。 |
 | 当前正在设置用户的个人网站。 | 稍后再尝试请求。 |
-| 用户没有有效的 OneDrive for Business 许可证。 | 用户应联系其 Microsoft 365 租户管理员。 |
+| 用户没有有效的 OneDrive for Business 许可证。 | 用户应联系其租户Microsoft 365管理员。 |
 | 网络问题使请求无法成功发送。 | 稍后再尝试请求。 |
 
 ### <a name="30109"></a>30109

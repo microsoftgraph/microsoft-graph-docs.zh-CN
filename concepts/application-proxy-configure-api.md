@@ -5,12 +5,12 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: efc22ff03bf5b32398be6711a8f44394bf623050
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 0394220290652a8be7931b384b16dc53631048210b7d982545636bc62bd86060
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149605"
 ---
 # <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置应用程序代理
 
@@ -236,7 +236,7 @@ HTTP/1.1 204 No content
 
 ## <a name="step-4-configure-single-sign-on"></a>步骤 4：配置单一登录
 
-此应用程序使用 IWA (集成 Windows 身份验证) 。 若要配置 IWA，请为 **onPremisesPublishing** 设置单一登录属性。
+此应用程序使用 IWA Windows集成 (身份验证) 。 若要配置 IWA，请为 **onPremisesPublishing** 设置单一登录属性。
 
 #### <a name="request"></a>请求
 
