@@ -1,22 +1,22 @@
 ---
 title: sectionGroup 资源类型
-description: OneNote 笔记本中的分区组。 节组可以包含节和节组。
+description: 笔记本中的OneNote组。 节组可以包含节和节组。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 5968a327800c823cd5767a382d019fba39f66927
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 575aeb64fbb1f2ffe3df787311704f5fb4f262e6c71808b1d11c901fc2184d0c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134950"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
 命名空间：microsoft.graph
 
-OneNote 笔记本中的分区组。 节组可以包含节和节组。
+笔记本中的OneNote组。 节组可以包含节和节组。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -53,13 +53,13 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |createdDateTime|DateTimeOffset|节组的创建日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|id|字符串|节组的唯一标识符。 只读。|
+|id|String|节组的唯一标识符。 只读。|
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改节组的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-|displayName|字符串|节组的名称。|
-|sectionGroupsUrl|字符串|导航属性的 `sectionGroups` URL，该属性返回节组的所有节组。 只读。|
-|sectionsUrl|字符串|导航属性的 `sections` URL，可返回分区组内的所有节。 只读。|
-|self|字符串|终结点，您可在此处获取关于节组的详细信息。 只读。|
+|displayName|String|节组的名称。|
+|sectionGroupsUrl|String|导航属性的 `sectionGroups` URL，该属性返回节组的所有节组。 只读。|
+|sectionsUrl|String|导航属性的 `sections` URL，可返回分区组内的所有节。 只读。|
+|self|String|终结点，您可在此处获取关于节组的详细信息。 只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

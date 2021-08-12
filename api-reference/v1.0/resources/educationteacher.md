@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6e5e60f04af74cd09f893823e9544ba455b60113
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: c96e3301966f4089df2f973d4e8906b9fb010ffb2f9cd2eda81c8c543395ff2b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231841"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141733"
 ---
 # <a name="teacher-resource-type"></a>教师资源类型
 

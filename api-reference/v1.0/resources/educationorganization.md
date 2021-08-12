@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b24313b6b6061449faea0ecb4880a421a2333099
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: fa6d324602ba13ebe186bc0631de991e193d945757117217aa29296ee480ef74
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130350"
 ---
 # <a name="educationorganization-resource-type"></a>educationOrganization 资源类型
 

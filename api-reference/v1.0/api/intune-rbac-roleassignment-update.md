@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6550f0fa4f054c821482f0af00d19fc2d519263e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d3eb3a28c7430400adbc07d9bbe1ac1b49c8c46fb293d39a33c98d40ba3f85d3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756819"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185059"
 ---
 # <a name="update-roleassignment"></a>更新 roleAssignment
 

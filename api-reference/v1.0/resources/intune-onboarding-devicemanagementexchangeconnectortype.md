@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1f13c17971821cceae2d70b14a328367d918db76
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6dd1f4555184e2f555269a0b0063e2bb584257d4f86b21b9c167f2d6f5d211b4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202257"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52751578"
 连接器Exchange类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |onPremises|0|连接到本地部署Exchange环境。|
 |托管|1|连接到 O365 多租户Exchange环境|

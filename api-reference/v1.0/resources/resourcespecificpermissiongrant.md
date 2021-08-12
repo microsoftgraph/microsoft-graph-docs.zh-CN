@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2fd6e9e09a092719f20de2c34f2120537cd00606
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: 13a8f055d61037e3d346add591adfd90c6d7a5a98942e6dbd96a021ed1c2bdef
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177994"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>resourceSpecificPermissionGrant 资源类型
 
@@ -32,11 +32,11 @@ resourceSpecificPermissionGrant 声明已授予特定 AzureAD 应用的权限，
 | :-------------- | :------------ | :------------------------------------------------------------------------------------ |
 | id              | string        | 特定于资源的权限授予的唯一标识符。 只读。           |
 | deletedDateTime | dateTimeOffset| 未使用。                                                                             |
-| clientId        | 字符串        | 已授予访问权限的 Azure AD 应用的 ID。 只读。                            |
-| clientAppId     | 字符串        | 已授予访问权限的 Azure AD 应用的服务主体的 ID。 只读。   |
-| resourceAppId   | 字符串        | 托管资源的 Azure AD 应用的 ID。 只读。                        |
-| permissionType  | 字符串        | 权限的类型。 可能的值是：`Application`、`Delegated`。 只读。 |
-| permission      | 字符串        | 特定于资源的权限的名称。 只读。                                                |
+| clientId        | string        | 已授予访问权限的 Azure AD 应用的 ID。 只读。                            |
+| clientAppId     | string        | 已授予访问权限的 Azure AD 应用的服务主体的 ID。 只读。   |
+| resourceAppId   | string        | 托管资源的 Azure AD 应用的 ID。 只读。                        |
+| permissionType  | string        | 权限的类型。 可能的值是：`Application`、`Delegated`。 只读。 |
+| permission      | string        | 特定于资源的权限的名称。 只读。                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: b127de108633389342a5d21ff8fac7d5e670b395
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 82b67910881ceb6029e7c64a54dcd956bef17e74aaae44b23b5f816b8cf01ced
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163626"
 ---
 # <a name="threatassessmentresult-resource-type"></a>threatAssessmentResult 资源类型
 

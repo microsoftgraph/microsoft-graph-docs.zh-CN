@@ -3,12 +3,12 @@ title: Microsoft 服务中的文件列表Graph Toolkit
 description: 文件列表组件用于通过显示文件图标和名称来显示文件列表
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 816ea4b76a08d089e419aad2a126b7b39c2727b1
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 615adf1c889f3d4e86150e4ca2ba54713beb870cb074f6718376c4475b11fe71
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334778"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134761"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件列表Graph Toolkit
 
@@ -114,7 +114,7 @@ mgt-file-list {
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>Microsoft Graph API 和权限
 
-| 配置 | 权限 | API |
+| 配置 | Permissions | API |
 | ------------- | ----------------- | --- |
 | 默认 (未提供标识符或)  | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root/children` |
 | 提供 `{drive-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
@@ -159,7 +159,7 @@ mgt-file-list {
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|备注|
+|对象存储|缓存数据|说明|
 |---------|-----------|-------|
 |`fileLists`|文件列表列表|用于存储文件列表的默认缓存列表。|
 |`insightfileLists`|见解文件列表列表|提供时 `insightType` 使用。|

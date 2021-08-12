@@ -4,12 +4,12 @@ description: Delta 查询可通过一系列的查询文件夹中查询邮件的�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bef08802c4a917f21ffc795dcda52660f08623b8
-ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
+ms.openlocfilehash: abfbd041ccea1d6f20355cdd8c164d8cd0ac0773b73076baab56e2528675523e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235154"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>获取文件夹中邮件的增量更改
 
@@ -99,7 +99,7 @@ since the completion of the very first round.
 第一个请求指定以下内容：
 
 - `$select` 参数用于在响应中返回每个邮件的 `subject`、`sender` 和 `isRead` 属性。
-- [可选的请求标头](#optional-request-header) _odata.maxpagesize_ ，一次返回两封邮件。
+- [可选的请求标头](#optional-request-header) _odata.maxpagesize_，一次返回两封邮件。
 
 <!-- {
   "blockType": "ignored",

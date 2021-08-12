@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 06566b30e2292d6552e5c0a79281693b97ab6350
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: c3e71186ff65490e31b711ff4c05788afd565cee5c87ea225985c3ec464aaa5d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944240"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138463"
 ---
 # <a name="printerdefaults-resource-type"></a>printerDefaults 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "51944240"
 |pagesPerSheet|Int32|每张工作表上要打印的默认文档页数。
 |orientation|[printOrientation](enums.md#printorientation-values)|打印文档时使用的默认方向。 下表介绍了有效值。|
 |outputBin|String|将已完成打印放入的默认输出箱。 有关受支持的 [输出箱](printercapabilities.md) 的列表，请参阅打印机的功能。|
-|fitPdfToPage|布尔|默认 fitPdfToPage 设置。 如果为 True，将 PDF 文档的每一页都适合媒体的物理工作表;如果为 false，则打印机决定如何设置展示次数。|
+|fitPdfToPage|Boolean|默认 fitPdfToPage 设置。 如果为 True，将 PDF 文档的每一页都适合媒体的物理工作表;如果为 false，则打印机决定如何设置展示次数。|
 |multipageLayout|[printMultipageLayout](enums.md#printmultipagelayout-values)|当每张工作表打印多个页面时，对页面进行布局的默认方向。 下表介绍了有效值。|
 |colorMode|[printColorMode](enums.md#printcolormode-values)|打印文档时使用的默认颜色模式。 下表介绍了有效值。|
 |quality|[printQuality](enums.md#printquality-values)|打印文档时使用的默认质量。 下表介绍了有效值。|

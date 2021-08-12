@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b9d007c4792c68634111b21db75a22226280519
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7b806cde90cdb2c712c057276d9713261a1ee88b1fc264aab99a7e74d6d053dc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169919"
 ---
 # <a name="delete-managedmobileapp"></a>删除 managedMobileApp
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0abc05addf1516334adf8455803e4a28e0a76bba
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 14ba3b55c377556997c3d90dc91f83f76ea3fa948460a63d51cc8b231f206ea7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160532"
 ---
 # <a name="get-mobileappcontent"></a>获取 mobileAppContent
 

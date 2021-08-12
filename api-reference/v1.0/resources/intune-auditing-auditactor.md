@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ab8fc9f78fc647c82be80105cb3547e6a7a45f7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 94da9e5bebd5e5fef645fcde656a82efc3614b96d7b97f8e6d372b03cc15ea63
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175236"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 

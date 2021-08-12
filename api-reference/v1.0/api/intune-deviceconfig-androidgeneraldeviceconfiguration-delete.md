@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6294a809f452793e5ec40d972f91f8a8fc9992ec
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 643b8a88f0391e78ed7b256b623df02c7fa053464f5791f1cc25f5114ffa6103
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164011"
 ---
 # <a name="delete-androidgeneraldeviceconfiguration"></a>删除 androidGeneralDeviceConfiguration
 

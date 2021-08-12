@@ -1,27 +1,27 @@
 ---
 title: 自定义提供程序
-description: 如果您的应用程序中有现有的身份验证代码，则创建自定义提供程序以启用 Microsoft Graph 工具包组件的身份验证和图形访问。
+description: 如果应用程序中已有身份验证代码，请创建自定义提供程序，为 Microsoft Graph Toolkit组件启用身份验证和图形访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 57b7ca843f71d22992df18dc2466d0182d3fc556
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 4327bea637043fa8280bf6c39f55cdb8a0333b1c529f4994e9c8273ff0e3d99b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54204924"
 ---
 # <a name="custom-provider"></a>自定义提供程序
 
-如果您的应用程序中有现有的身份验证代码，则可以创建自定义提供程序，以启用对 microsoft Graph 工具包组件的 Microsoft Graph 的身份验证和访问权限。 有两种方法可以创建自定义提供程序：
+如果应用程序中已有身份验证代码，可以创建自定义提供程序，以启用 Microsoft Graph 组件的身份验证Graph Toolkit访问。 有两种方法可创建自定义提供程序：
 
-- `SimpleProvider`通过传入获取访问令牌的函数来创建新的
+- 通过传递 `SimpleProvider` 用于获取访问令牌的函数创建新令牌
 - 扩展 `IProvider` 抽象类
 
-本文更详细地介绍了每种方法。
+本文将更详细地介绍每种方法。
 
 ## <a name="simpleprovider"></a>SimpleProvider
 
-`SimpleProvider`通过传入将返回传入范围的访问令牌的函数来实例化类。 
+通过传入将返回传入作用域的访问令牌的函数来 `SimpleProvider` 实例化类。 
 
 ```ts
 let provider = new SimpleProvider((scopes: string[]) => {
@@ -29,10 +29,10 @@ let provider = new SimpleProvider((scopes: string[]) => {
 });
 ```
 
-此外，还可以提供 `login` `logout` 可从 [登录](../components/login.md) 组件处理登录和注销调用的可选和函数。
+此外，还可以提供可选 和 函数，用于处理登录和从 `login` `logout` [登录](../components/login.md) 组件注销调用。
 
 > [!IMPORTANT] 
-> 若要指示用户在成功登录后可以开始调用 Microsoft Graph Api 的组件，您需要调用 `Providers.setState(ProviderState.SignedIn)` 。 下面的函数中显示了这一示例 `login` 。
+> 若要向组件指示他们可以在用户成功登录后开始调用 Microsoft Graph API，你需要调用 `Providers.setState(ProviderState.SignedIn)` 。 以下函数中显示了这 `login` 一点的示例。
 
 ```ts
 function getAccessToken(scopes: string[]) {
@@ -53,7 +53,7 @@ let provider = new SimpleProvider(getAccessToken, login, logout);
 
 ### <a name="manage-state"></a>管理状态
 
-若要使组件了解提供程序的状态， `provider.setState(state: ProviderState)` 每当状态发生变化时，都需要调用方法。 例如，当用户登录后，请致电 `provider.setState(ProviderState.SignedIn)` 。 `ProviderState`枚举定义三种状态，如下所示。
+若要使组件了解提供程序的状态，则需要在状态发生更改时 `provider.setState(state: ProviderState)` 调用 方法。 例如，当用户登录后，调用 `provider.setState(ProviderState.SignedIn)` 。 枚举 `ProviderState` 定义三种状态，如下所示。
 
 ```ts
 export enum ProviderState {
@@ -69,29 +69,29 @@ export enum ProviderState {
 
 ### <a name="state"></a>状态
 
-提供程序必须跟踪身份验证状态，并在状态发生更改时更新组件。 `IProvider`类已实现 `onStateChanged(eventHandler)` 处理程序和 `state: ProviderState` 属性。 您只需在 `setState(state:ProviderState)` 实现中使用方法来更新其更改时的状态。 更新状态将触发 `stateChanged` 事件并自动更新所有组件。
+提供程序必须跟踪身份验证状态，并更新状态更改时的组件。 `IProvider`类已实现 `onStateChanged(eventHandler)` 处理程序和 `state: ProviderState` 属性。 只需在实现 `setState(state:ProviderState)` 中使用此方法，在状态发生更改时更新状态。 更新状态将启动 `stateChanged` 事件并自动更新所有组件。
 
 ### <a name="loginlogout"></a>登录/注销
 
-如果提供程序提供登录或注销功能，请实现 `login(): Promise<void>` 和 `logout(): Promise<void>` 方法。 这些方法是可选的。
+如果提供程序提供登录或注销功能，请实现 和 `login(): Promise<void>` `logout(): Promise<void>` 方法。 这些方法是可选的。
 
 ### <a name="access-token"></a>访问令牌
 
-您必须实现 `getAccessToken({'scopes': scopes[]}) : Promise<string>` 方法。 此方法用于在每次调用 Microsoft Graph 之前获取有效令牌。
+必须实现 `getAccessToken({'scopes': scopes[]}) : Promise<string>` 方法。 此方法用于获取有效的令牌之前每次调用 Microsoft Graph。
 
 ### <a name="graph"></a>Graph
 
-这些组件将 Microsoft Graph Javascript SDK 用于对 Microsoft Graph 的所有调用。 提供程序必须通过属性使 SDK 可用 `graph` 。 在构造函数中，创建一个新 `Graph` 实例，如下所示。
+这些组件使用 Microsoft Graph Javascript SDK 调用 Microsoft Graph。 提供程序必须通过 属性使 SDK `graph` 可用。 在构造函数中，创建一 `Graph` 个新实例，如下所示。
 
 ```js
 this.graph = new Graph(this);
 ```
 
-`Graph`类是 Microsoft GRAPH SDK 顶部的光包装。
+该类 `Graph` 是 Microsoft Graph SDK 顶部的浅色包装。
 
 ### <a name="example"></a>示例
 
-所有提供程序都扩展 `IProvider` 抽象类。 有关示例，请查看任何 [现有提供程序](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers)的源代码。
+所有提供程序扩展 `IProvider` 抽象类。 例如，查看任何现有提供程序的 [源代码](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers)。
 
 ## <a name="set-the-global-provider"></a>设置全局提供程序
 
@@ -103,4 +103,4 @@ import { Providers } from '@microsoft/mgt';
 Providers.globalProvider = myProvider;
 ```
 
-所有组件都将收到新的提供程序，并开始使用它。
+所有组件都将收到新提供程序的通知，并开始使用它。

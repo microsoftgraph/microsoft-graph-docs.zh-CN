@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e7b2b5404328f659512ff246ed7207be23735583
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 92e0fe018709097578df9437eaad3fd4f360c0cc4195f13db534baf84e320fd1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252674"
 ---
 # <a name="delete-tab-from-channel"></a>从频道中删除选项卡
 

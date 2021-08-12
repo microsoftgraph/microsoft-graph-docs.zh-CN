@@ -3,12 +3,12 @@ title: Microsoft 服务中的人员Graph Toolkit
 description: 可以使用 Web 组件通过用户的照片或缩写显示一组 `mgt-people` 人员或联系人。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: d169c5c51c4f846031d4519ab27a053f51c15f98
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 356b13bac27ba11c294694f8fa614af192e5871ef04433b4033d9dfd9c481330
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171957"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
@@ -22,7 +22,7 @@ ms.locfileid: "52780734"
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
-[在"打开"mgt.dev](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
 
 ## <a name="properties"></a>属性
 
@@ -109,7 +109,7 @@ mgt-people {
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|备注|
+|对象存储|缓存数据|说明|
 |---------|-----------|-------|
 |`people`|有关与查询匹配的人的信息|指定时 `resource` 使用|
 |`users`|有关与查询匹配的用户的信息|在 `groupId` 、 `userIds` 或 `peopleQueries` 未指定任何属性时使用|

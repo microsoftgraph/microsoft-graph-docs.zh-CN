@@ -1,21 +1,21 @@
 ---
 title: 使用 Microsoft Graph SDK 批处理请求
-description: 提供有关使用 Microsoft Graph SDK 创建一批 API 请求的说明。
+description: 提供有关使用 Microsoft SDK 创建一批 API Graph的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 2f9caf9ad7f20dd2b6601501fa8c6a8fb1541bde
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: d8e44f6ed2c1fe03f81150eb8dbf07140c2da513d9a6d9c192559a56362a8e43
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146151"
 ---
 # <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>使用 Microsoft Graph SDK 批处理请求
 
 [批处理](../json-batching.md) 是一种将多个请求合并到单个 HTTP 请求中的方法。 请求组合在单个 JSON 有效负载中，该负载通过 POST 发送到 `\$batch` 终结点。 Microsoft Graph SDK 具有一组类，用于简化如何创建批处理有效负载和分析批处理响应有效负载。
 
 > [!IMPORTANT]
-> 有关 Microsoft Graph 中 JSON 批处理的当前限制，请参阅 [已知问题](../known-issues.md#json-batching)。
+> 有关 Microsoft Graph JSON 批处理的当前限制，请参阅[已知问题](../known-issues.md#json-batching)。
 
 ## <a name="create-a-batch-request"></a>创建批处理请求
 

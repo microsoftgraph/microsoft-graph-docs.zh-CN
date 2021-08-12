@@ -4,12 +4,12 @@ description: 可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 Shar
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 93dca7b4c431140646ee22ae6772448e0554e35a
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 321242bd694eb244f9fe688186d91e484587466e19a1c4520f96ae96f0741ec2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401335"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182264"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 搜索 OneDrive 和 SharePoint
 

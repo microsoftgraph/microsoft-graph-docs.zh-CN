@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 31ae4dd98949938cf14c2b5d57cb8b7f9ef3c1e5
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 341bef801b8ee8a7cfc8b5176f4984251209db9e4aff05de9d983b8e06cb61fb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473981"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124463"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail 资源类型
 

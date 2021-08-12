@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: d64cb09545d1ce664b017ba3fcbcd5989d0f2a25
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: ea65dc16cd45d4b5da2ba5c850e97fd662b39bedd02eb9502e970d789ca98d0b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210190"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225662"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务部署快速安全更新
 

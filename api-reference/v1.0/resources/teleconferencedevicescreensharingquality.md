@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4485001c076fd25b4d5ab7dd7f06f7ccab4c81a4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 626d0ba55080094a609fcf4496bae520266e1537b77a83457df0042093470bb4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086268"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169233"
 ---
 # <a name="teleconferencedevicescreensharingquality-resource-type"></a>teleconferenceDeviceScreenSharingQuality 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48086268"
 
 ## <a name="properties"></a>属性
 
-**TeleconferenceDeviceScreenSharingQuality**继承[teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)中的所有属性。
+**teleconferenceDeviceScreenSharingQuality** 从 [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)继承所有属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

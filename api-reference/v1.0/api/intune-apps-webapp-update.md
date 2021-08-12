@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 798eb1c5388e75a7fa63b9f8ad79558e439c4885
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 402a1f61a72d80975502dfaf60d29ecfbfe25fb51f87280abe3e575019728fd6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52750313"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54234230"
 ---
 # <a name="update-webapp"></a>更新 webApp
 

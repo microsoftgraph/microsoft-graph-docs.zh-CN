@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 886ea3661c83d6a84f9e171a11eee927920a8077
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e01e227636f3328e4b481e59d5b4beab72c844b11cd3b4ba949fe745eb35d892
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184933"
 ---
 # <a name="segment-resource-type"></a>segment 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50722242"
 
 代表电话会议User-User通信或User-Meeting通信的一部分。 典型 VOIP 呼叫将每个会话具有一个段。 在某些情况下（如 PSTN 呼叫）中，由于连接呼叫需要其他服务器到服务器通信，因此每个会话将存在多个分段。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 不存在直接访问线段的方法。 Please use the [Get callRecord](../api/callrecords-callrecord-get.md) api with `$expand=sessions($expand=segments)` or the List [session](../api/callrecords-session-list.md) api with to get the segments for `$expand=segments` a [callRecord](callrecords-callrecord.md).
 
@@ -26,7 +26,7 @@ ms.locfileid: "50722242"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串|段的唯一标识符。 只读。|
+|id|String|段的唯一标识符。 只读。|
 |呼叫者|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|启动此段的终结点。|
 |被叫方|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|应答此段的终结点。|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|与段关联的失败信息（如果失败）。|

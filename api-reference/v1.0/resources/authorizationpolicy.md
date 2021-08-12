@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b08284d99d88ffbfa38c950062986ba72da900d5
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 87199b5896c462efdb733842cebdfdb3c09711f0cea3eb0848540bf7a4d8bddc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147061"
 ---
 # <a name="authorizationpolicy-resource-type"></a>authorizationPolicy 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "52231925"
 |说明|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 |    
 |guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 当前支持以下角色：用户角色 () 、来宾用户 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` () 和受限来宾 `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 |
-|id|String| 授权策略的 ID。 必需。 只读。| 
+|id|String| 授权策略的 ID。 必填。 只读。| 
 
 ### <a name="allowinvitesfrom-values"></a>allowInvitesFrom 值
 

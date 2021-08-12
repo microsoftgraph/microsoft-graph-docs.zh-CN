@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1260ac090561f659c4ce232c78c1e9b6e20fa5a2
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 436ae9644654a5d23a26fab2345f3fb1a926925eb5dfbed0316f90737b3013cf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138750"
 ---
 # <a name="list-localizednotificationmessages"></a>列出 localizedNotificationMessages
 

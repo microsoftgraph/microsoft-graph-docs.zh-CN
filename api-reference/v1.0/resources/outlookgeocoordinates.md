@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d7c101a1eda9524210b21873d7512d3f8fdd5580
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a7a1a31b15d4d2e4c72b6ab4a269b9b955831acf470dec2000d0ecf6c023e99
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251875"
 ---
 # <a name="outlookgeocoordinates-resource-type"></a>outlookGeoCoordinates 资源类型
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 328e241462e6829975aa57cdcd609f43e9bbee9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 352c2f849a2c22f451f01d3168268c0587d2594b62bb8cbbf66e9478807179b0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141285"
 ---
 # <a name="teamscatalogapp-resource-type"></a>teamsCatalogApp 资源类型
 

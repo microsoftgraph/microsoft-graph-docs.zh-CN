@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f33cfb4e17be05e622c5a2e9910197b6214dbe3f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f3a2f9ed32e58419048c95aca694aa0e580fb325183df693319fbde536a0464a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52743054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138673"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>获取 windowsInformationProtectionAppLearningSummary
 

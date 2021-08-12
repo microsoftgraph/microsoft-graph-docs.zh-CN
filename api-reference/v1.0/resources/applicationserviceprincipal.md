@@ -5,20 +5,20 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 35abee6b3028111ce4237828b58492a546ff5d4b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b5f864b03461fc21d8283245663786d618a2687f043901e7cb44d9a6df5421ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50476424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231885"
 ---
 # <a name="applicationserviceprincipal-resource-type"></a>applicationServicePrincipal 资源类型
 
 命名空间：microsoft.graph
 
-添加 Azure AD 应用程序库中的应用程序实例时，在目录中创建应用程序和[](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md)对象。 **applicationServicePrincipal** 表示应用程序和 **servicePrincipal** 对象的连接。 
+添加 Azure AD 应用程序库中的应用程序实例时，在目录中创建 [application](../resources/application.md) 和 [servicePrincipal](../resources/serviceprincipal.md) 对象。 **applicationServicePrincipal** 表示 **应用程序和** **servicePrincipal** 对象的连接。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 无
 

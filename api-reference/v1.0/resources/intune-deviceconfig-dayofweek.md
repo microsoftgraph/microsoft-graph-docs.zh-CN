@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b37bff6583be471b8f7d8c8a672e90e561853b0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 57b0ae8abd00b60681810e88358860b91627cccdd1d067e5ae47285657e312ce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246834"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
 

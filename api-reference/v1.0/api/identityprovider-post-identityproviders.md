@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fac9a583737b991e9f2b060a05eb64a893dde9cc
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: abe7e5a3fff0c677499d5c47a42cf2fbc43f26f9705f0e51dd108c1e1367e719
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219295"
 ---
 # <a name="create-identityprovider-deprecated"></a>创建 identityProvider（已弃用）
 命名空间：microsoft.graph
@@ -54,7 +54,7 @@ POST /identityProviders
 |clientId|字符串|应用程序的客户端 ID。这是向标识提供程序注册应用程序时获取的客户端 ID。|
 |clientSecret|字符串|应用程序的客户端密码。这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|字符串|标识提供程序的显示名称。|
-|type|字符串|标识提供程序类型。 它必须是 B2C 方案的下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook<li/>GitHub<li/>Twitter<li/>微博<li/>QQ<li/>微信</ul>在 B2B 中，它只能是 Google|
+|type|String|标识提供程序类型。它必须是 B2C 方案的下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook<li/>GitHub<li/>Twitter<li/>微博<li/>QQ<li/>微信</ul>在 B2B 中，它只能是 Google|
 
 ## <a name="response"></a>响应
 

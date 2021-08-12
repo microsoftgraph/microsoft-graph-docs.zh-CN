@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e848fc07037dc536a116a30f1906fed3754eb05e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a1af503a2ba4788f22d3c7d7a76b968d1d66c167c3138ef316d056abf2f800b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196485"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration 资源类型 (开放类型) 
 
@@ -18,17 +18,17 @@ ms.locfileid: "48086401"
 
 
 
-确定 [选项卡](teamstab.md)内容的设置。以交互方式配置选项卡时，选项卡提供程序应用程序将设置此信息。
-除了以下属性之外，一些选项卡提供程序应用程序还指定其他自定义属性。
+确定选项卡内容的 [设置](teamstab.md)。当以交互方式配置选项卡时，此信息由选项卡提供程序应用程序设置。
+除了下面的属性之外，某些选项卡提供程序应用程序还指定了其他自定义属性。
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |-|-|-|
-|  entityId   |   string |  由选项卡提供程序承载的实体的标识符。     |
-|  contentUrl |   string |  用于在团队中呈现选项卡内容的 Url。 必需。    |
-|  removeUrl  |   string |  使用团队客户端删除选项卡时，由团队客户端调用的 Url。     |
-|  websiteUrl |   string |  用于显示团队外部的选项卡内容的 Url。     |
+|  entityId   |   string |  选项卡提供程序托管的实体的标识符。     |
+|  contentUrl |   string |  用于在网站中呈现选项卡内容的Teams。 必填。    |
+|  removeUrl  |   string |  当使用 Teams 客户端删除 Tab 时，由 Teams 调用的 URL。     |
+|  websiteUrl |   string |  用于显示选项卡内容在外部的Teams。     |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

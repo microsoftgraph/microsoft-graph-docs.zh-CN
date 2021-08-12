@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9c610711f58a9d1929d0e708e127e2b337396f8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f3e1de723741a838f0c14a80e66c2f2b3460f303c98e91526031bdad9a756fa4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216810"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752194"
 包含 Win32 应用的 MSI 应用属性。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |productCode|String|MSI 产品代码。|
 |productVersion|String|MSI 产品版本。|

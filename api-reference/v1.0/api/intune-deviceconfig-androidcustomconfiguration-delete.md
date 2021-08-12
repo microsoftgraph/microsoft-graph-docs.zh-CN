@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc4f2610122db09010812650a096c0607163d682
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 97d92b244e72ceb030a9f079ac3011500ed177f085d51bcc93dc975bb73eba42
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759300"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185227"
 ---
 # <a name="delete-androidcustomconfiguration"></a>删除 androidCustomConfiguration
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 702a6aa5f5a8c7c5ce497170adb0ba92ecfc7e14
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7ceee72a757d1205a6a5df343a2376ff1842c30671cf3275c56385e4bc459b2b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52747660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54187173"
 ---
 # <a name="get-settingstatedevicesummary"></a>获取 settingStateDeviceSummary
 

@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b076b38e52bb8a7eb93a9eef35c866fc58e0e29a
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 01f6bd1f7ebc77d90cb6fbdbf5d4daf22f9dda0a7bdb663516fc51933afc8ca1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231855"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184905"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "52231855"
 | [获取 educationSchool](../api/educationschool-get.md)       | [educationSchool](../resources/educationschool.md)            | 读取 [educationSchool 对象的属性和](../resources/educationschool.md) 关系。 |
 | [更新 educationSchool](../api/educationschool-update.md) | [educationSchool](../resources/educationschool.md)            | 更新 [educationSchool 对象](../resources/educationschool.md) 的属性。                 |
 | [删除 educationSchool](../api/educationschool-delete.md) | 无                                                          | 删除 [educationSchool](../resources/educationschool.md) 对象。                                  |
-| [增量](../api/educationschool-delta.md)                   | [educationSchool](../resources/educationschool.md) 集合 | 获取资源集合的增量更改。                                                    |
+| [delta](../api/educationschool-delta.md)                   | [educationSchool](../resources/educationschool.md) 集合 | 获取资源集合的增量更改。                                                    |
 
 ## <a name="properties"></a>属性
 

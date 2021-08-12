@@ -4,12 +4,12 @@ description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源�
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 1a478adb9053face3537a445e25dd69a908b2525
-ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
+ms.openlocfilehash: 6fc4de0eba8feb09668d0b1fd5b059dc6c9f3140a02bf4f99ae31743e1a9d5f2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52732145"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157872"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
@@ -77,7 +77,7 @@ Microsoft Graph 目前支持以下两种版本：`v1.0` 和 `beta`。
 
 资源可以是实体或复杂类型，通常使用属性定义。 实体与复杂类型的不同之处在于前者始终包含 **id** 属性。
 
-你的 URL 将包含你正在请求中与之交互的资源，如`me`、**用户**、**组**、**驱动器** 和 **网站**。通常，顶级资源还包括可以用来访问其他资源的 _关系_（如 `me/messages` 或 `me/drive`）。你还可以使用 _方法_ 与资源交互；例如，要发送电子邮件，则使用 `me/sendMail`。有关详细信息，请参阅[通过导航 Microsoft Graph 访问数据和方法](traverse-the-graph.md)。
+你的 URL 将包含你正在请求中与之交互的资源，如`me`、**用户**、**组**、**驱动器** 和 **网站**。通常，顶级资源还包括可以用来访问其他资源的 _关系_（如 `me/messages` 或 `me/drive`）。你还可以使用 _方法_ 与资源交互；例如，要发送电子邮件，则使用 `me/sendMail`。有关详细信息，请参阅 [通过导航 Microsoft Graph 访问数据和方法](traverse-the-graph.md)。
 
 每个资源可能需要不同的权限来访问它。通常，你需要用来创建或更新资源的权限比读取时要求的权限更高。有关所需权限的详细信息，请参见方法引用主题。 
 

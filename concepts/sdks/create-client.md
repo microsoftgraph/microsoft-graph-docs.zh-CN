@@ -3,12 +3,12 @@ title: 创建 Microsoft Graph 客户端
 description: 说明如何创建客户端，以使用客户端呼叫 Microsoft Graph。 包含如何设置身份验证和选择主权云。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 0256ad20b3078c081102221189a12e27432df058
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: bcbe925289220390bd252bda65ee9b90c5d67d495ad932af7f7112bce062e1d4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237346"
 ---
 # <a name="create-a-microsoft-graph-client"></a>创建 Microsoft Graph 客户端
 

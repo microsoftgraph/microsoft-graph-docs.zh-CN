@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ebcf33f9e4a439a5f215558e9a476d60e2f28c9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: cacbf2a623a812d0058ed5c025fccea32a2cfc2e07651846ed336f6d1840cbd0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52744692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209096"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>获取 deviceEnrollmentPlatformRestrictionsConfiguration
 

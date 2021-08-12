@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25d6d66f8c495dc1e51e7c6d182c3eb5bf743fa0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7a1dba0814fa51ae6850d6aa39ca1fe1faf43faa7cc76a9acf059cc9f0c7bd6e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757274"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243978"
 ---
 # <a name="get-windowsuniversalappx"></a>获取 windowsUniversalAppX
 

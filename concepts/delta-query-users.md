@@ -4,12 +4,12 @@ description: Delta 查询可通过调用一系列 delta 函数查询用户的添
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 39253f03175c9c33c6e358afc2e629a77e449a0c
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: be944c68d3c21fae5c1267cf95a7a926faaa2b355e6ea96dcb160b6f55107138
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082060"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180437"
 ---
 # <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 

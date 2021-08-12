@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61f3be260aa95c35e6655339aa2912d88db853c3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d29c75803ad1cca2acedc793e923113bc58611df53b51181205b29cdf423f3d2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238571"
 ---
 # <a name="list-deviceconfigurations"></a>列出 deviceConfigurations
 

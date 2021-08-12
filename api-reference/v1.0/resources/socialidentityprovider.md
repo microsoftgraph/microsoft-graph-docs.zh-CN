@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: b26bb5ed3afe773fd572c1116465eab689a8021c
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: c5b45b142cb90eb1b7f2e43f719a2e9e9650d6b2a9917ca79c514e60a8f6fb1d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535450"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134922"
 ---
 # <a name="socialidentityprovider-resource-type"></a>socialIdentityProvider 资源类型
 命名空间：microsoft.graph
@@ -45,7 +45,7 @@ ms.locfileid: "53535450"
 |clientId|字符串|向标识提供程序注册应用程序时，已获取应用程序的客户端标识符。必需。|
 |clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回 `****`。 必需。|
 |id|String|标识提供程序的标识符。 继承自 [identityProviderBase](../resources/identityproviderbase.md)。 只读。|
-|displayName|字符串|标识提供程序的显示名称。 继承自 [identityProviderBase](../resources/identityproviderbase.md)。|
+|displayName|字符串|标识提供者的显示名称。继承自 [identityProviderBase](../resources/identityproviderbase.md)。|
 |identityProviderType|String|对于 B2B 方案，可能的值为： `Google`、 `Facebook`。 对于 B2C 方案，可能的值： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、 `QQ`、 `WeChat`。 必填。|
 
 ### <a name="where-to-get-the-client-identifier-and-secret"></a>在何处获取客户端标识符和密码

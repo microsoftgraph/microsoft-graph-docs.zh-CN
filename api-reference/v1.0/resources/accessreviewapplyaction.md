@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4a96ed1009a8af4404c50041258e784d8bd04030
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: b3ebf02cc2d5ea2c9f3ee5e64e960d2301817b9955e119a0564ce89b0ec3f9fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249333"
 ---
 # <a name="accessreviewapplyaction-resource-type"></a>accessReviewApplyAction 资源类型
 

@@ -4,12 +4,12 @@ description: Microsoft Graph 提供单一 API 终结点，以便用户能够通�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2555ae25dc7e0f9a9aacb6ba39c790479c41663c
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 411e73a84e3b96cd0053e7f9cbff5f2842e8851c44d29d8826e17b1636c84ed0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146186"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 
@@ -19,8 +19,8 @@ Microsoft Graph 提供单一 API 终结点，以便用户能够通过大量资�
 
 Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求的扩展类型：
 
-- **开放扩展** ：开发人员入门的良好方法。
-- **架构扩展** ：对于那些关心存储类型化数据，使其架构可发现和可共享，能够进行筛选以及将来能够执行输入数据验证和授权的开发人员而言，这是一种更通用的机制。
+- **开放扩展**：开发人员入门的良好方法。
+- **架构扩展**：对于那些关心存储类型化数据，使其架构可发现和可共享，能够进行筛选以及将来能够执行输入数据验证和授权的开发人员而言，这是一种更通用的机制。
 
 > **重要说明：** 不能使用扩展存储敏感的个人身份信息，例如帐户凭据、政府标识号、持卡人数据、财务帐户数据、医疗保健信息或敏感的背景信息。
 
@@ -43,7 +43,7 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 | [任务](/graph/api/resources/todotask?view=graph-rest-beta) | GA | GA |
 | [任务列表](/graph/api/resources/todotasklist?view=graph-rest-beta) | GA | GA |
 
-使用工作或学校帐户登录时，可以对所有这些资源使用扩展。 此外，使用个人帐户登录时，可以对“ **事件** ”、“ **帖子** ”、“ **组** ”、“ **邮件** ”、“ **联系人** ”和“ **用户** ”资源使用扩展。
+使用工作或学校帐户登录时，可以对所有这些资源使用扩展。 此外，使用个人帐户登录时，可以对“**事件**”、“**帖子**”、“**组**”、“**邮件**”、“**联系人**”和“**用户**”资源使用扩展。
 
 ## <a name="open-extensions"></a>开放扩展
 
@@ -54,7 +54,7 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 开放扩展及其自定义数据可通过资源实例的 **extensions** 导航属性进行访问。
 **extensionName** 属性是开放扩展中的 _预定义_ 唯一可写属性。 创建开放扩展时，必须为 **extensionName** 属性分配在租户内唯一的名称。
 
-为此，一种方法是使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_ 。例如，`Com.Contoso.ContactInfo`。
+为此，一种方法是使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_。例如，`Com.Contoso.ContactInfo`。
 
 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
 
@@ -74,8 +74,8 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 在创建架构扩展定义时，你必须提供其 **id** 的唯一名称。提供两个命名选项：
 
-- 如果已有通过租户验证的 `.com`、`.net`、`.gov`、`.edu` 或 `.org` 域，可以使用域名和架构名称定义唯一名称，格式如下：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 例如，如果虚域是 contoso.com，可以定义 `contoso_mySchema` 的 **id** 。 此为首选项。
-- 如果没有验证的虚域，则可以只设置架构名称的 **id** （不带域名称前缀），例如，`mySchema`。根据所提供的名称，Microsoft Graph 将为你分配一个字符串 ID，采用以下格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如，`extkvbmkofy_mySchema`。
+- 如果已有通过租户验证的 `.com`、`.net`、`.gov`、`.edu` 或 `.org` 域，可以使用域名和架构名称定义唯一名称，格式如下：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 例如，如果虚域是 contoso.com，可以定义 `contoso_mySchema` 的 **id**。 此为首选项。
+- 如果没有验证的虚域，则可以只设置架构名称的 **id**（不带域名称前缀），例如，`mySchema`。根据所提供的名称，Microsoft Graph 将为你分配一个字符串 ID，采用以下格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如，`extkvbmkofy_mySchema`。
 
 可以看到，在 **id** 中此唯一名称用作复杂类型名称，复杂类型将在扩展的资源实例上存储自定义数据。
 
@@ -83,7 +83,7 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 由于架构扩展可以在目标资源实例中作为复杂类型进行访问，因此可以使用下列方法，对架构扩展中的自定义数据执行 CRUD 操作：
 
-- 资源 `POST` 方法可用于在新建资源实例时指定自定义数据。 请注意， **contact** 、 **event** 、 **message** 和 **post** 资源存在一个 [已知问题](known-issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time)，即需要使用 `PATCH` 操作创建架构扩展。
+- 资源 `POST` 方法可用于在新建资源实例时指定自定义数据。 请注意，**contact**、**event**、**message** 和 **post** 资源存在一个 [已知问题](known-issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time)，即需要使用 `PATCH` 操作创建架构扩展。
 - 资源 `GET` 方法可用于读取自定义数据。
 - 使用资源 `PATCH` 方法添加或更新现有资源实例中的自定义数据。
 - 使用资源 `PATCH` 方法将复杂类型设置为 NULL，以删除资源实例中的自定义数据。
@@ -98,9 +98,9 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 |状态 |生命周期状态行为 |
 |:-------------|:------------|
-| InDevelopment | <ul><li>创建后的初始状态。所有者应用仍然在开发架构扩展。 </li><li>在此状态下，在所有者应用注册的同一目录中的任何应用程序可以使用此架构定义扩展资源实例（前提是该应用对资源拥有权限）。 </li><li>仅所有者应用可以使用增量更改来更新扩展定义或将其删除。 </li><li>所有者应用可以将扩展状态从 **开发中** 更改为 **可用** 。</li></ul> |
-| 可用 | <ul><li>架构扩展可供任意租户中的所有应用使用。 </li><li>所有者应用将扩展设置为“可用”  后，任何应用只需将自定义数据添加到扩展中指定的资源类型实例即可（只要应用拥有对相应资源的权限）。 新建实例或更新现有实例时，应用可以分配自定义数据。 </li><li>只有所有者应用，才能使用增量更改更新扩展定义。 任何应用都无法删除这种状态下的扩展定义。 </li><li>所有者应用可以将架构扩展状态从“可用”  更改为“已弃用”  。</li></ul> |
-| 不推荐使用 | <ul><li>架构扩展定义不再可供读取或修改。 </li><li>任何应用都无法查看、更新、添加新属性或删除扩展。 </li><li>但是应用仍可读取、更新或删除现有扩展 _属性值_ 。 </li></ul> |
+| InDevelopment | <ul><li>创建后的初始状态。所有者应用仍然在开发架构扩展。 </li><li>在此状态下，在所有者应用注册的同一目录中的任何应用程序可以使用此架构定义扩展资源实例（前提是该应用对资源拥有权限）。 </li><li>仅所有者应用可以使用增量更改来更新扩展定义或将其删除。 </li><li>所有者应用可以将扩展状态从 **开发中** 更改为 **可用**。</li></ul> |
+| 可用 | <ul><li>架构扩展可供任意租户中的所有应用使用。 </li><li>所有者应用将扩展设置为“可用”后，任何应用只需将自定义数据添加到扩展中指定的资源类型实例即可（只要应用拥有对相应资源的权限）。 新建实例或更新现有实例时，应用可以分配自定义数据。 </li><li>只有所有者应用，才能使用增量更改更新扩展定义。 任何应用都无法删除这种状态下的扩展定义。 </li><li>所有者应用可以将架构扩展状态从“可用”更改为“已弃用”。</li></ul> |
+| 不推荐使用 | <ul><li>架构扩展定义不再可供读取或修改。 </li><li>任何应用都无法查看、更新、添加新属性或删除扩展。 </li><li>但是应用仍可读取、更新或删除现有扩展 _属性值_。 </li></ul> |
 
 > **注意：** 其他开发人员从其他租户创建的架构扩展定义（标记为 `Available`）对所有开发人员可见（通过列出所有架构扩展）。 这不同于仅返回租户特定数据的其他 API。 另一方面，基于架构扩展定义创建的扩展数据是特定于租户的，并且只能由被显式授予权限的应用访问。 
 
@@ -120,7 +120,7 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Azure AD 目录架构扩展
 
-Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 资源中称其为 [目录架构扩展](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。你可以使用 Microsoft Graph API 来管理 [扩展属性定义](/graph/api/resources/extensionproperty?view=graph-rest-1.0)以及添加、获取、更新和删除这些扩展的属性中的 _数据_ 。
+Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 资源中称其为 [目录架构扩展](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。你可以使用 Microsoft Graph API 来管理 [扩展属性定义](/graph/api/resources/extensionproperty?view=graph-rest-1.0)以及添加、获取、更新和删除这些扩展的属性中的 _数据_。
 
 ## <a name="permissions"></a>Permissions
 
@@ -132,12 +132,12 @@ Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/re
 
 ### <a name="open-extension-limits"></a>开放扩展限制
 
-以下限制适用于目录资源（如 **user** 、 **group** 、 **device** ）：
+以下限制适用于目录资源（如 **user**、**group**、**device**）：
 
 - 每个开放扩展最多可以包含 2KB 数据（包括扩展定义本身）。
 - 应用最多可以为每个资源实例添加两个开放扩展。
 
-以下限制将应用于 Outlook 资源（如“ **邮件** ”、“ **事件** ”和“ **联系人** ”）：
+以下限制将应用于 Outlook 资源（如“**邮件**”、“**事件**”和“**联系人**”）：
 
 - 每个开放扩展存储在 [MAPI 命名的属性](/office/client-developer/outlook/mapi/mapi-named-properties)中，这是用户邮箱中的有限资源。 如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/opentypeextension?view=graph-rest-1.0)。
 

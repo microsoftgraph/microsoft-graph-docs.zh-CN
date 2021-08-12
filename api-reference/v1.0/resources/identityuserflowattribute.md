@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: af3ec2a762fc0252da929d863917ba6cd274ba95
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: f9b840a5a40e73f1e8f1168670798b3ff53059e7b0f4de5bc64b58c693853486
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152633"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>identityUserFlowAttribute 资源类型
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba26d237b6f1915e1a440931bb3289daca9fc4b0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 1c5cf7c6109a5df4d79d9d81ff4f97734d262be867318b35020d537723688348
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753657"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175740"
 ---
 # <a name="rebootnow-action"></a>rebootNow 操作
 

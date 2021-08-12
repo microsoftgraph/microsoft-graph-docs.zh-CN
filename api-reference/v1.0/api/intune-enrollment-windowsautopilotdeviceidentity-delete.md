@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc10dd42d8037deae5c622ecec347bf5e0fe623d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 00e085884370c85f0804b7e63940ebd2b4561298b817d6ecbd47f4c79b81e173
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249585"
 ---
 # <a name="delete-windowsautopilotdeviceidentity"></a>删除 windowsAutopilotDeviceIdentity
 

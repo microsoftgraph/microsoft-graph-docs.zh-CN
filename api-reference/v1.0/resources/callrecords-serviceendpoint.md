@@ -1,28 +1,28 @@
 ---
 title: serviceEndpoint 资源类型
-description: ServiceEndpoint 类型
+description: serviceEndpoint 类型
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b650b2f105a9feb2d33327a0ceef9add18716d00
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: dc51a13e8c244c8c4564dab9cf18dc5b28a450947c0ced8889aea8d6511d39a9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216943"
 ---
 # <a name="serviceendpoint-resource-type"></a>serviceEndpoint 资源类型
 
 命名空间：microsoft.graph.callRecords
 
-表示呼叫中的服务终结点。 终结点表示呼叫媒体服务器或其他服务实体。 从 [终结点](callrecords-endpoint.md) 类型继承。
+表示呼叫中的服务终结点。 终结点表示呼叫媒体服务器或其他服务实体。 继承自 [终结点](callrecords-endpoint.md) 类型。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|userAgent|[callRecords。 userAgent](callrecords-useragent.md)|此终结点报告的用户代理。|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|此终结点报告的用户代理。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 900dd49464ecd988267b9703421eca953d0f1f15
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c19175db10ddb0b9cccf76991ba90cf97fcb2a8e208e1a2c55be440e20f89170
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760691"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164024"
 ---
 # <a name="list-androidcustomconfigurations"></a>列出 androidCustomConfigurations
 

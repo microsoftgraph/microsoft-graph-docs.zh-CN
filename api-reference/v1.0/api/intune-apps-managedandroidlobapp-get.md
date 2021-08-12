@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 186143edf3b78e97c6b2b99acd23aeba1e1b46bd
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f84a6c47c6110a5a1f29ea406af92fbe788fbf3ef570b7e2d4d88e433d0fa8e5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212639"
 ---
 # <a name="get-managedandroidlobapp"></a>获取 managedAndroidLobApp
 

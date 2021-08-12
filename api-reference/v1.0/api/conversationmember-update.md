@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 094027c7c62e6077c3eced8e713cfe16e84c3444
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 7f46b4bb6797330b61e5235cf87448e6358b64a3d0dd3e553c619c2a759dce12
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060585"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160637"
 ---
 # <a name="update-conversationmember"></a>更新 conversationMember
 

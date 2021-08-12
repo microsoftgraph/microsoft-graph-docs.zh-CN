@@ -6,12 +6,12 @@ localization_priority: Normal
 description: " 或应视为集合而不是单个项目的项目集合。"
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e248c74add209690dbd7c3cc11d8056c5ca30dcc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 09a335605e4a7ed258f27c120b9fdb4ecb95a59a42ccbf0a52866c5338f25d99
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138491"
 ---
 # <a name="package-resource-type"></a>包资源类型
 

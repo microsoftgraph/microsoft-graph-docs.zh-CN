@@ -1,24 +1,24 @@
 ---
 title: 协议资源类型
-description: 表示使用 Azure AD (Azure Active Directory 创建和管理的租户可自定义) 。
+description: 表示通过 Azure AD Azure Active Directory (创建和管理的租户可自定义) 。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 045d4b9142d4bd0c4bc01392975871e0253d33c0
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: d536b29a0220f4fef8b0e1c6e81142c177b7009902770a74b82cf50bed7f56db
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212226"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
 命名空间：microsoft.graph
 
-表示使用 Azure AD (Azure Active Directory 创建和管理的租户可自定义) 。 可以使用以下方法根据你的方案创建和管理 Azure [Active Directory](/azure/active-directory/active-directory-tou) 使用条款功能。
+表示通过 Azure AD Azure Active Directory (创建和管理的租户可自定义) 。 您可以使用以下方法根据你的方案创建和管理Azure Active Directory[使用条款](/azure/active-directory/active-directory-tou)"功能。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -31,12 +31,12 @@ ms.locfileid: "50722620"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|协议的显示名称。 The 显示名称 is used for internal tracking of the agreement but is not shown to end users who view the agreement.|
-|id|字符串| 协议的标识符。 只读。|
-|isPerDeviceAcceptanceRequired|布尔值|指示最终用户是否需要在从其访问它的每个设备上接受此协议。 如果最终用户尚未在 Azure AD 中注册其设备，则要求他们这样做。|
-|isViewingBeforeAcceptanceRequired|布尔值|指示用户是否必须扩展协议才能接受。|
+|displayName|String|协议的显示名称。 The 显示名称 is used for internal tracking of the agreement but is not shown to end users who view the agreement.|
+|id|String| 协议的标识符。 只读。|
+|isPerDeviceAcceptanceRequired|Boolean|指示最终用户是否需要在从其访问它的每个设备上接受此协议。 如果最终用户尚未在 Azure AD 中注册其设备，则要求他们这样做。|
+|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须扩展协议才能接受。|
 |termsExpiration|[termsExpiration](termsexpiration.md)| 所有用户的过期日程安排和协议频率。 |
-|userReacceptRequiredFrequency|持续时间|用户必须重新接受使用条款的持续时间。 该值以 ISO 8601 格式表示持续时间。|
+|userReacceptRequiredFrequency|期限|用户必须重新接受使用条款的持续时间。 该值以 ISO 8601 格式表示持续时间。|
 
 
 ## <a name="relationships"></a>关系

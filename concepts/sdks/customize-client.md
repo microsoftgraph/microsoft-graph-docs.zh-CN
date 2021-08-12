@@ -3,12 +3,12 @@ title: 自定义 Microsoft Graph SDK 服务客户端
 description: 提供有关如何更改 Microsoft Graph SDK 服务客户端的默认行为的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: d68a8c3b3d1dcd70026217bdbaf99f6a099862d5
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: c41482fa04ce63ef976c2d9ddb26450dc0fb1f444dcaf98f183332b264b01e50
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54204973"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>自定义 Microsoft Graph SDK 服务客户端
 

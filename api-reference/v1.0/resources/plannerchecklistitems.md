@@ -1,26 +1,26 @@
 ---
 title: plannerChecklistItems 资源类型
-description: '**PlannerChecklistItemCollection**资源表示任务上的检查表项的集合。 它是开放类型。 它是任务详细信息对象的一部分。 属性-值对中的值是 checklistItem 对象。'
+description: '**plannerChecklistItemCollection** 资源表示任务上的清单项的集合。 它是"打开类型"。 它是任务详细信息对象的一部分。 属性值对中的值是 checklistItem 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 6904d473ace51363f8cd292524456b378e6f4e86
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f465adf89e9cb344013e30edccf03513f8fb96065e676ffb78d7cb8fa13f14ac
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178071"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>plannerChecklistItems 资源类型
 
 命名空间：microsoft.graph
 
-**PlannerChecklistItemCollection**资源表示任务上的检查表项的集合。 它是开放类型。 它是 [任务详细信息](plannertaskdetails.md) 对象的一部分。 属性-值对中的值是 [checklistItem](plannerchecklistitem.md) 对象。
+**plannerChecklistItemCollection** 资源表示任务上的清单项的集合。 它是"打开类型"。 它是任务详细信息 [对象的一](plannertaskdetails.md) 部分。 属性值对中的值是 [checklistItem](plannerchecklistitem.md) 对象。
 
 
 ## <a name="properties"></a>属性
-可由客户端定义打开类型的属性。 在这种情况下，客户端应将 **guid** 作为属性提供，并且它们的值必须是 [checklistItem](plannerchecklistitem.md) 对象。 示例如下所示。 若要删除检查表中的项目，请将该属性的值设置为 `null` 。
+开放类型的属性可以通过客户端定义。 在这种情况下，客户端应提供 **GUID** 作为属性，并且其值必须是 [checklistItem](plannerchecklistitem.md) 对象。 示例如下所示。 若要删除清单中的项目，将 属性的值设置为 `null` 。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

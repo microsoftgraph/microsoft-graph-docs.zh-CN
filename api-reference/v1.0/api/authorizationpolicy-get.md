@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a5a108cc74ba41cfa5ac21a362c053bfc966bf14
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cd73fae2b0ec7e16e39e0210ffeb891b7955d734c920ac52cc6f2f906bdcf2b8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052528"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167686"
 ---
 # <a name="get-authorizationpolicy"></a>获取 authorizationPolicy
 

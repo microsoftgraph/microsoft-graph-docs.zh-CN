@@ -1,26 +1,26 @@
 ---
 title: plannerAssignments 资源类型
-description: '**PlannerAssignments**资源表示 plannerTask 资源的工作分配。 此类型是开放类型。 此类型中的每个属性名称 '
+description: '**plannerAssignments** 资源表示 plannerTask 资源的工作分配。 此类型是开放类型。 此类型的每个属性名称 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: ba9240839d4541a9bd3858289a452c4176abdb09
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53926692daa00e20a9db5626bbee2dae6ddee80b1a97d847250cfc2d5a78f807
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037533"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216663"
 ---
 # <a name="plannerassignments-resource-type"></a>plannerAssignments 资源类型
 
 命名空间：microsoft.graph
 
-**PlannerAssignments**资源表示[plannerTask](plannertask.md)资源的工作分配。 此类型是开放类型。 此类型中的每个属性名称都是分配给任务的用户对象的 ID。 可以将用户分配给使用其 ID 命名的新属性的任务，并将 [plannerassignment](plannerassignment.md) 对象的 orderHint 属性填充为值。 通过将以其 ID 命名的 bookmark 设置为 null，可以从任务中取消分配工作负责人。
+**plannerAssignments** 资源表示 [plannerTask](plannertask.md)资源的工作分配。 此类型是开放类型。 此类型的每个属性名称都是任务分配到的用户对象的 ID。 可以将用户分配给任务，以创建使用其 ID 命名的新属性，并将 orderHint 属性填充为值的 [plannerassignment](plannerassignment.md) 对象。 通过使用其 ID 命名的属性设置为 null，可以从任务中取消分配被分配者。
 
 
 ## <a name="properties"></a>属性
-可由客户端定义打开类型的属性。 但在这种情况下，客户端必须提供指定用户的 Id 作为属性名称。 必须将属性设置为 **plannerAssignment** 对象，才能创建或修改工作负责人，并为 null 以删除它们。
+开放类型的属性可以通过客户端定义。 但在这种情况下，客户端必须提供分配的用户 ID 作为属性名称。 必须将属性设置为 **plannerAssignment** 对象，以创建或修改被分配者，并将 该属性设置为 null 以删除它们。
 
 示例：
 
@@ -39,7 +39,7 @@ ms.locfileid: "48037533"
     }
 }
 ```
-此示例从任务的代理人列表中删除 ID 为 ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 的用户，同时更改具有用户 ID 4e98f8f1-bb03-4015-b8e0-19bb370949d8 的受理人的订单。 如果尚未为 ID 为4e98f8f1-bb03-4015-b8e0-19bb370949d8 的用户分配该任务，则使用此值更新工作分配时，会将该任务分配给此用户。
+此示例从任务的分配者列表中删除 ID 为 ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 的用户，同时更改用户 ID 为 4e98f8f1-bb03-4015-b8e0-19bb370949d8 的被分派人的顺序。 如果任务尚未分配给 ID 为 4e98f8f1-bb03-4015-b8e0-19bb370949d8 的用户，则使用此值更新工作分配将任务分配给此用户。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

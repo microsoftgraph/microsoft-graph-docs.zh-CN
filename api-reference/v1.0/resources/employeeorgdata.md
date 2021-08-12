@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: users
 author: cmmdesai
-ms.openlocfilehash: 5e3ea0401730ffc8b15cae8c371d9352995c6f28
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e1fbbc82a4b3d9875b5e277c87d59877e162c5555b0bb2d5dcf6b0124d9227af
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180864"
 ---
 # <a name="employeeorgdata-resource-type"></a>employeeOrgData 资源类型
 

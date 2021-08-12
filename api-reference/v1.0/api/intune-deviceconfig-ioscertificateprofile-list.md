@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50ebd03e6c4ac298aae0ef3112a87eb307c1866b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4199be391dfcdf0cd75d033fa7863d6d6f29792a2c5acdf87d3cdef6fb930226
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54187215"
 ---
 # <a name="list-ioscertificateprofiles"></a>列出 iosCertificateProfiles
 

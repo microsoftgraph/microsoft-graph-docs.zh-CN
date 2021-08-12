@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1651c8b166d95b2303fb1562085a1f07e7ce515a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9a0d7230caf6a082ac3d9b94a201fe99c15c78aeb3b411e9680a5e70c23ae450
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143842"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>获取 windowsInformationProtectionAppLockerFile
 

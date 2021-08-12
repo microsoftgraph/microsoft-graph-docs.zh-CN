@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 8a1139388f5fcb17ea43cecf1cf321f490fe87c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df91bd7226426110e1c6f5ca6e1a2775676401cd3bb89b4343b1c689e423c945
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196927"
 ---
 # <a name="person-resource-type"></a>person 资源类型
 

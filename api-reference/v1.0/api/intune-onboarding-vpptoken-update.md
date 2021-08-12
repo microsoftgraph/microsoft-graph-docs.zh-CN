@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fb6a3024f87295c9cc764279a035040727243a6
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 78faa7f0b99d7c51a5b64ed57f11733f4d90b59d5f303f23c0b9fd3e5c65882e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52743306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249466"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 

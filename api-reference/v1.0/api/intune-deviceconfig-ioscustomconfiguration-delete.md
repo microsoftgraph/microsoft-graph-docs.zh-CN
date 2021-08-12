@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b30c865fa6f26f9f4a3b1560237c280bb88bcbc3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7da2b3997d7db3a6ff66cf74001d10dff5b1c2743897a902c4c3928ae3ee88ed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756363"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175852"
 ---
 # <a name="delete-ioscustomconfiguration"></a>删除 iosCustomConfiguration
 

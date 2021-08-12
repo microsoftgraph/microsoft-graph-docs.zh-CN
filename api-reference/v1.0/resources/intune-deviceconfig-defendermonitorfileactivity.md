@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a50ee70da2a36e8bdd773235ccd5e9b227a0d01f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4a9767c39db0ab49890897e03273a00ab623f1860efd92d4396bc28f21a0d874
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163787"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity 枚举类型
 

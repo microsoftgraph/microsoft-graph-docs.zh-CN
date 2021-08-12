@@ -3,19 +3,19 @@ title: 处理长时间运行的操作（测试）
 description: 本文会介绍处理长时间运行的操作。
 localization_priority: Normal
 author: daspek
-ms.openlocfilehash: 470ef7ea7fd3597bec7c22b5d97cff38a5ef5a75
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 273299b13be423cf3e6ae625226efff5fef40f8f8ba06f787d0ba9ab29ba5211
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146205"
 ---
 # <a name="working-with-long-running-actions-beta"></a>处理长时间运行的操作 (beta)
 
 
 某些 API 响应完成所需的时间不确定。
 Microsoft Graph 可能会使用长时间运行操作模式，而不是等待操作完成之后再返回响应。
-此模式为您的应用程序提供了一种在长时间运行的操作上轮询状态更新的方法，而无需等待该操作完成任何请求。
+此模式为你的应用提供了一种轮询长时间运行的操作的状态更新的方法，无需任何等待操作完成的请求。
 
 常规模式包括以下步骤：
 
@@ -31,7 +31,7 @@ Microsoft Graph 可能会使用长时间运行操作模式，而不是等待操�
 因为数据量较大，所以此请求可能需要几秒钟才能完成。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "lro-copy-item-example", "scopes": "files.readwrite" } -->
 
 ```http
@@ -45,15 +45,15 @@ Content-Type: application/json
   "name": "Copy of LargeFolder1"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -132,7 +132,7 @@ Content-type: application/json
 可以使用 resourceId 处理此新项，例如：
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lro-copy-item-example-complete",
@@ -142,15 +142,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-complete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-complete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-complete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

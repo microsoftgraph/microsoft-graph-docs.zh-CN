@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bae4703bb30f126d3369855cd98e2569b11b478c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7a87b74e6a4a9d39e6aa4b2bd900d7582e59f0f9568b58fcab856e90293e74a7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752733"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238634"
 ---
 # <a name="delete-managedebookassignment"></a>删除 managedEBookAssignment
 

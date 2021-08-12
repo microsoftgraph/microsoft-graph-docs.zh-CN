@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 769310747aa83f30597d725757aadb3f8262270e
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 87b007f65f055b94401fb4b4eb1ced4ed79104b534d3e752c2b3d7eda7ca8ac2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152719"
 ---
 # <a name="identityprovider-resource-type-deprecated"></a>identityProvider 资源类型（已弃用）
 命名空间：microsoft.graph
@@ -40,7 +40,7 @@ ms.locfileid: "53534486"
 
 |属性|类型|说明|
 |:---------------|:--------|:--------|
-|clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。 必填。 不可为空。|
+|clientId|字符串|应用程序的客户端 ID。这是向标识提供程序注册应用程序时获取的客户端 ID。必填。不可为 null。|
 |clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。 这是只读的。 读取操作将返回“`****`”。  必填。 不可为空。|
 |id|字符串|标识提供程序的 ID。|
 |name|字符串|标识提供程序的显示名称。不可为 null。|

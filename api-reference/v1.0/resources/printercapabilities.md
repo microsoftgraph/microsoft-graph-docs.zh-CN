@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: bda913275aff692df2f66472f61436665cbc3dd7
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 530c67a3779caf2557c780f6c62446ab95164151f92a68ce6946ff86bfb0d8bf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229057"
 ---
 # <a name="printercapabilities-resource-type"></a>printerCapabilities 资源类型
 
@@ -23,31 +23,31 @@ ms.locfileid: "51944224"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|contentTypes|字符串集合|受支持内容列表 (打印机) 类型的 MIME。 不保证通用打印服务支持打印所有这些 MIME 类型。|
-|isColorPrintingSupported|布尔|如此 如果打印机支持彩色打印;否则为 false。 只读。|
+|contentTypes|String collection|受支持内容列表 (打印机) 类型的 MIME。 不保证通用打印服务支持打印所有这些 MIME 类型。|
+|isColorPrintingSupported|Boolean|如此 如果打印机支持彩色打印;否则为 false。 只读。|
 |feedOrientations|printerFeedOrientation 集合|打印机支持的送纸方向列表。|
-|isPageRangeSupported|布尔|如此 如果打印机支持按页范围打印;否则为 false。|
+|isPageRangeSupported|Boolean|如此 如果打印机支持按页范围打印;否则为 false。|
 |一些|[printQuality](enums.md#printquality-values) 集合|打印机支持的打印质量。|
 |dpis|Int32 集合|打印机支持的以 DPI 表示的打印分辨率列表。|
 |duplexModes|[printDuplexMode](enums.md#printduplexmode-values) 集合|打印机支持的双面模式列表。 下表介绍了有效值。|
 |queueBufferSizeInBytes|Int32|打印机可以存储的最大打印作业队列大小。|
 |copiesPerJob|[integerRange](integerrange.md)|打印机支持每个作业的副本范围。|
 |finishings|[printFinishing](enums.md#printfinishing-values) 集合|打印机对打印文档支持的完成过程。|
-|mediaColors|字符串集合|媒体 (即纸张) 打印机支持的颜色。|
-|mediaTypes|字符串集合|打印机支持的媒体类型。|
-|mediaSizes|字符串集合|打印机支持的媒体大小。 支持 ISO 和 ANSI 媒体大小的标准大小名称。 有效值如下表 [所示](#mediasizes-values)。|
+|mediaColors|String collection|媒体 (即纸张) 打印机支持的颜色。|
+|mediaTypes|String collection|打印机支持的媒体类型。|
+|mediaSizes|String collection|打印机支持的媒体大小。 支持 ISO 和 ANSI 媒体大小的标准大小名称。 有效值如下表 [所示](#mediasizes-values)。|
 |pagesPerSheet|Int32 集合|支持对单个展示施加的输入页面数。|
 |orientations|[printOrientation](enums.md#printorientation-values) 集合|打印机支持的打印方向。 下表介绍了有效值。|
-|inputBins|字符串集合|打印机支持的输入箱。|
-|outputBins|字符串集合|打印机支持的输出箱 (纸盒) 。|
-|supportsFitPdfToPage|布尔|如此 如果打印机支持缩放 PDF 页面以匹配打印媒体大小;否则为 false。|
+|inputBins|String collection|打印机支持的输入箱。|
+|outputBins|String collection|打印机支持的输出箱 (纸盒) 。|
+|supportsFitPdfToPage|Boolean|如此 如果打印机支持缩放 PDF 页面以匹配打印媒体大小;否则为 false。|
 |multipageLayouts|[printMultipageLayout](enums.md#printmultipagelayout-values) 集合|打印机支持的演示文稿方向。 下表介绍了支持的值。|
 |colorModes|[printColorMode](enums.md#printcolormode-values) 集合|打印机支持的颜色模式。 下表介绍了有效值。|
 |topMargins|Int32 集合|打印机支持的上边距 (以) 表示。|
 |bottomMargins|Int32 集合|支持的底部边距列表 (打印机) 以百分之位表示。|
 |rightMargins|Int32 集合|打印机支持的右边距 (以) 表示。|
 |leftMargins|Int32 集合|支持的左边距列表 (打印机) 的边距。|
-|collation|布尔|如此 如果打印机支持逐份打印多页文档的副本;否则为 false。|
+|collation|Boolean|如此 如果打印机支持逐份打印多页文档的副本;否则为 false。|
 |scalings|[printScaling](enums.md#printscaling-values) 集合|支持的打印缩放。|
 
 ### <a name="mediasizes-values"></a>mediaSizes 值
