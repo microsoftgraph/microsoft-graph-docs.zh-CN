@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ab60f8f89dbbefe22c78f3bab8784ba86bf7598
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bd872964fed07d29646fd6ff31f3050eb1111ae8c3187100e140bfad9abfc1ae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52750243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224045"
 ---
 # <a name="scheduleactionsforrules-action"></a>scheduleActionsForRules 操作
 

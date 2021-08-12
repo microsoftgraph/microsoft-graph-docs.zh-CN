@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 69cd1a5f30157f9fa82222fa48f19e7501772ed6
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2710b8b9450a6e695dd931aa4f3935d71a69e21af9e24f319ccbb434c9c45f21
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755992"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252032"
 ---
 # <a name="windowsarchitecture-enum-type"></a>windowsArchitecture 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52755992"
 包含体系结构Windows属性。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|未设置标志。|
 |x86|1|是否支持 X86 Windows体系结构类型。|

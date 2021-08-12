@@ -6,12 +6,12 @@ localization_priority: Normal
 description: columnDefinition 资源上的 numberColumn 指示该列的值为数字。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 89b5c81f94895e248dfd4c5f75983bacf352f9e8
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 2a6015421b5f93b466129330462feede124b2d74182b81ac1c00d41fe02d7d87
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238629"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189420"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
 

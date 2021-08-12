@@ -6,12 +6,12 @@ localization_priority: Normal
 description: GeoCoordinates 资源基于文件中包含的元数据提供位置的地理坐标和海拔。
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b2c6fec5e27e3b8fe902b330b226fc498b09b138
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f5f61b07cf9c6940fdd56aa2f34f1fc70a8211decf3e34e19ff8eeac9e839da8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240008"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175271"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 

@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: 0f7c8600b8a4d8f41e6dd6e6ad4240252c004bbf
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 736c5d092587f5e6e57fc564bf9e5a22bc2efcea00c18bad4d4b5c7cba661971
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317005"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202236"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -123,7 +123,7 @@ ms.locfileid: "53317005"
 
 | 关系名称 | 类型                             | 说明
 |:------------------|:---------------------------------|:----------------------
-| **驱动器**         | [drive][]                        | 仅存在于文档库中。 允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。
+| **驱动器**         | [drive][]                        | 仅存在于文档库中。允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。
 | **项目**         | Collection([listItem][])         | 列表中包含的所有项。
 | **columns**       | Collection([columnDefinition][]) | 此列表的字段定义集合。
 | **contentTypes**  | Collection([contentType][])      | 此列表中出现的内容类型的集合。

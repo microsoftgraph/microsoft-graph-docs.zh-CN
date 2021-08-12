@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d4eee47b1503b8c37eb0551817725b966d492866
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: f4766138275b034f2fd5dc1980c9bb266b667cf4f68a2a437a2512fccac750e5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854122"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230709"
 ---
 # <a name="identityprotectionroot-resource-type"></a>identityProtectionRoot 资源类型
 
@@ -40,7 +40,7 @@ Operation | URL
 
 ## <a name="what-licenses-do-i-need"></a>需要哪些许可证？
 
-Azure AD Identity Protection 是一项高级功能。 你需要 Azure AD 高级版 P1 或 P2 许可证才能访问 riskDetection API (注意： P1 许可证会收到有限的) 。 riskyUsers API 仅适用于 Azure AD 高级版 P2 许可证。
+Azure AD Identity Protection 是一项高级功能。 你需要一Azure AD Premium P1或 P2 许可证才能访问 riskDetection API (注意： P1 许可证会收到有限的) 。 riskyUsers API 仅适用于Azure AD Premium P2许可证。
 
 ## <a name="see-also"></a>另请参阅
 

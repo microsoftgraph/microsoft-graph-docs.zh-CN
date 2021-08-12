@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c6d41146551586f681ebf5ed7fda735151f1efc5
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b2917825104d30813f6ad98237dd68492e4a269481d1013458edb1038208430c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212219"
 ---
 # <a name="approval-resource-type"></a>审批资源类型
 

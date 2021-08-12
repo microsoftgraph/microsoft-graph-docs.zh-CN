@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 544874a59a95f9d36eb97aa33d31386ad038030b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: dd1e6417c8d7b9f3e011b35f5aec9d9e25c78ae5e682f9da01fe3fc202912334
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757190"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192969"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>列出 androidWorkProfileCompliancePolicies
 

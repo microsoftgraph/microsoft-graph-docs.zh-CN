@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33d277dca3c17005fb442b6b144bd489499d0698
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e0ae31cf26f0014f88805229f5b4e1357e3bbee82e85ac442333e1ac5179fca7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130756"
 ---
 # <a name="get-managedappregistration"></a>获取 managedAppRegistration
 

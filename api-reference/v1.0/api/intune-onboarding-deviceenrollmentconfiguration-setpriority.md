@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ceab77d98289db2d88288c3cf01c0f4bbd2fee6
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6c3c0a57bcb6f0d0888203aa2c7917691000f0369e8f8e0296087183b0fd05ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52745077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163962"
 ---
 # <a name="setpriority-action"></a>setPriority 操作
 
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |priority|Int32|尚未记录|
 

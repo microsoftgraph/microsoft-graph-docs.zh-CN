@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eee122a411a585a40031650144a23f91221b4f06
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 475560d89b9ab1055d660ee0b82bcdc75dd3f6ef0762d8db0c2a9dc6c79b35c2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752684"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169961"
 ---
 # <a name="update-macoscompliancepolicy"></a>更新 macOSCompliancePolicy
 

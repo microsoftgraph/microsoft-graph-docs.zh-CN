@@ -6,20 +6,20 @@ localization_priority: Normal
 description: 文件资源将与文件相关的数据项分组到一个单一结构。
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c19f2afce6128c7fb29a81c6e8d8f2d1c08c7913
-ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
+ms.openlocfilehash: 57266222e9cbc2778673172b3b96a40ca4d51df466a8c90ae784d170b7e25175
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753393"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146886"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
 命名空间：microsoft.graph
 
-**文件**资源将与文件相关的数据项分组到一个单一结构。
+**文件** 资源将与文件相关的数据项分组到一个单一结构。
 
-如果 [**DriveItem**](driveitem.md) 具有非 null **文件** facet，则该项目表示一个文件。
+如果 [**DriveItem**](driveitem.md) 具有非 null **文件** Facet，则该项表示文件。
 除了其他属性，文件还具有 **content** 关系，其中包含文件字节流。
 
 ## <a name="json-representation"></a>JSON 表示形式

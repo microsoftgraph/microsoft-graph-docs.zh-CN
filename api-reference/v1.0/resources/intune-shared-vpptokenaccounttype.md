@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f874512c6ec2bfa3b0b0c56dd94dc971eafdb2cc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6e8005aa695992180e039cfc2dd7c19ba85b71bbaa1e918ef9e282dea29fc573
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754935"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180605"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>vppTokenAccountType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52754935"
 Apple Volume Purchase Program 令牌的可能类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |business|0|与业务计划关联的 Apple 批量购买计划令牌。|
 |education|1|与教育计划关联的 Apple 批量购买计划令牌。|

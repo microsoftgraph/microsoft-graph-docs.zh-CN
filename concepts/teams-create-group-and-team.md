@@ -4,12 +4,12 @@ description: '创建包含团队的组涉及以下步骤： '
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 28729e0116e0b2959690449694197ac6acbfa501
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 454466aff5a83cd9593c2a87a0c933c8ec7b0a4650d757c6754369f03eea0f4b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192768"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246372"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>使用 Microsoft Graph 创建团队和管理成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "48192768"
 
 ## <a name="initial-team-creation"></a>初始团队创建
 
-所有团队都由 Microsoft 365 组提供支持。 在通过 Microsoft Graph 创建新团队时，建立并运营团队的最快方法是设置新的 Microsoft 365 组、所有者和成员，然后将其转换为团队。
+所有团队都有 Microsoft 365 组的支持。在通过 Microsoft Graph 创建新团队时，建立并运营团队的最快方法是设置新的 Microsoft 365 组、所有者和成员，然后将其转换为团队。
 
 1. 使用“[创建组](/graph/api/group-post-groups?view=graph-rest-1.0)”操作来创建 [Microsoft 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。 你可以指定所有者和成员。 确保新创建的组拥有正确的所有者，如步骤 2 所述。
 
@@ -53,7 +53,7 @@ ms.locfileid: "48192768"
 
     以下示例显示了相应的响应。 
 
-    >**注意：** 为了提高可读性，所示的响应对象可能已缩短。 所有属性都将通过实际调用返回。
+    >**请注意:** 为了提高可读性，可能缩短了显示的响应对象。所有属性都将通过实际调用返回。
 
     ```http
     HTTP/1.1 200 OK
@@ -82,7 +82,7 @@ ms.locfileid: "48192768"
 
     以下示例显示了相应的响应。 
 
-    >**注意：** 为了提高可读性，所示的响应对象可能已缩短。 所有属性都是从实际调用返回。
+    >**请注意:** 为了提高可读性，可能缩短了显示的响应对象。所有属性都将通过实际调用返回。
 
     ```http
     HTTP/1.1 202 Accepted

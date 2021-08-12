@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6353675f67a33dcd9e6d2bbff78296f3af72011c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 415ba7fd009ae7ccc3aa7033f0e2fec8f35cd3c5906e2a3bcea2fb9420b6d451
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155741"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 

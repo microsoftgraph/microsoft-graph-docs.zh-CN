@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: ae72d196c5d27160c94e0ba0d2309b43ece06bb5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58b2ce49b337fe7b266886586dcef98b84677d6f89ef3aa58b3d714cb68d683a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169394"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 
@@ -69,7 +69,7 @@ Planner 资源会排列到基本对象和详细对象中。基本对象提供对
 
 Planner 使用 **etag** 对所有资源进行版本控制。 这些 **etag** 在每个资源上返回 `@odata.etag` 属性。 `PATCH` 和 `DELETE` 请求要求使用 `If-Match` 标头指定客户端已知的最后一个 **etag**。
 如果目标更改与相同资源上的 Planner 服务接受的较新更改不冲突，则 Planner 允许对资源的旧版本进行更改。 客户端可以通过计算顺序字符串比较中的较大 **etag** 值，确定在相同的资源中，哪个 **etag** 较新。 每个资源都有唯一的 **etag**。 不同资源的 etag 值（包括具有包含关系的 etag 值）无法比较。
-按预期，客户端应用程序需要通过读取项的最新版本处理与[错误代码](/graph/errors) **409** 和 **412** 相关的版本控制，并解决冲突的更改。
+按预期，客户端应用程序需要通过读取项的最新版本处理与 [错误代码](/graph/errors) **409** 和 **412** 相关的版本控制，并解决冲突的更改。
 
 ## <a name="common-planner-error-conditions"></a>常见的 Planner 错误条件
 

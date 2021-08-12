@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: d862c60eb6f7e0443178a8bc40bd220799981624
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: 3823bb7e35c021b35e48e38c0974293d8463ea44ebfef8447ea9120c24d8b3d7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189909"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 

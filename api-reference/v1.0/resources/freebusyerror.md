@@ -1,28 +1,28 @@
 ---
 title: freeBusyError 资源类型
-description: 表示尝试获取用户、通讯组列表或资源可用性的错误信息。
+description: 表示尝试获取用户、通讯组列表或资源的可用性的错误信息。
 localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b161d47ff7a89c79a04e9400ff0d4756692f49c9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 16bb344b432c6c5e911635ad2d8e3d2f61c1c32b2faa9f5fb167ce28028aeeef
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216908"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError 资源类型
 
 命名空间：microsoft.graph
 
-表示尝试获取用户、通讯组列表或资源可用性的错误信息。
+表示尝试获取用户、通讯组列表或资源的可用性的错误信息。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |message |String |描述错误。 |
-|responseCode |String |对用户、通讯组列表或资源的可用性进行查询的响应代码。 |
+|responseCode |String |查询用户、通讯组列表或资源的可用性的响应代码。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

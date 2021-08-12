@@ -4,12 +4,12 @@ description: 多用途 Internet 邮件扩展 (MIME) 是一种行业电子邮件�
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 48847396d14a280d5978e014bc31b10f7a77b65d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ff2724f5dd2f9325d53e5a7506887f944ba350e96d592be778e46b5c8e2dc67a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126051"
 ---
 # <a name="get-mime-content-of-a-message"></a>获取邮件的 MIME 内容
 

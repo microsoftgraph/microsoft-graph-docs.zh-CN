@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05a45d312392dd00a769298bd2b79e4124dd23f9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9e56e8639d2acc24edb94451b0ad1c1d2fe214189d8d72c2c76046287dd51576
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52750341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193039"
 ---
 # <a name="get-mobilelobapp"></a>获取 mobileLobApp
 

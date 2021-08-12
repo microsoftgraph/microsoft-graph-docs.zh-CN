@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c0ca5e88d9d4ac7d7b63dea49f8ff4aace8cc348
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5ca338e6e2d2da30e555223c3257da7d7f2f497d1a2a15a9436ed5b8568575bf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189791"
 ---
 # <a name="schema-resource-type"></a>架构资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "53467258"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|baseType|String|必须设置为 `microsoft.graph.externalConnector.externalItem`。 必需项。|
+|baseType|String|必须设置为 `microsoft.graph.externalConnector.externalItem`。 必填。|
 |properties|[property](../resources/externalconnectors-property.md) 集合|为连接中的项目定义的属性。 最小属性数为 1，最大值为 128。|
 
 ## <a name="relationships"></a>关系

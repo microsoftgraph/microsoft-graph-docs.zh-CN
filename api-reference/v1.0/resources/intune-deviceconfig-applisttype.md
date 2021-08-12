@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2b8126ded9f6d0e9f68c6a9f5e8bcbcbbb216294
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a14b0edd46e88d6203b462bf43065533d134733ebccbc4b566fd4009e1248ce1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184793"
 ---
 # <a name="applisttype-enum-type"></a>appListType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52755915"
 合规性应用列表的可能值。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|默认值，无意图。|
 |appsInListCompliant|1|该列表表示将被视为合规的应用 (只有列表上的应用符合) 。|

@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8120d5b9b40f5e2ad744b65dcf927516e1d868b8
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 77c566f959241ed88f44e43399bda58c29cfc3beb929c58564c2044a6875022e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218840"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>accessReviewScheduleSettings 资源类型
 

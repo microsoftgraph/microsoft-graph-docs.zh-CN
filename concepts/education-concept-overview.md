@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 258659da2ad842971043d76ec52888bfd15a236e
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: 5bfe1d00042ec5aae535a08552ee2d2654cf28f8c3e0aabf52ba5c9a47251779
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010183"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243264"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 

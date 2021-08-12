@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d52429fbaa641b1ee0be5208ddf7d85e0830b6c6
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 4676a5010b71b7bec5ab01350bb84a69b9dd00158c6622bf208e82a479fab868
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184513"
 ---
 # <a name="provisioningsystem-resource-type"></a>provisioningSystem 资源类型
 

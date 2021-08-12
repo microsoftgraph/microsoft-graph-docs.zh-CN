@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: aa13befe855fab8094107cee13eae28efff3e4b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0837dae4482174bb8ccab05791c61dfb17eb6c80d6e1cdc3337cdfddb6d1636b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090898"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124022"
 ---
 # <a name="use-the-microsoft-graph-threat-assessment-api"></a>使用 Microsoft Graph 威胁评估 API
 
@@ -31,7 +31,7 @@ Microsoft Graph 威胁评估 API 提供了用来列出、创建和获取威胁�
 
 ## <a name="next-steps"></a>后续步骤
 
-借助威胁评估资源和 API，可通过新方式使用 Microsoft Graph 与用户交互并管理他们的用户体验。 要了解详细信息：
+威胁评估资源和 API 提供了使用 Microsoft Graph 与用户交互及管理用户体验的新方式。若要了解详细信息：
 
 - 向下钻取[威胁评估请求](../resources/threatassessmentrequest.md)和[威胁评估结果](../resources/threatAssessmentResult.md)资源的[方法](../resources/threatassessmentrequest.md#methods)、[属性](../resources/threatassessmentrequest.md#properties)和[关系](../resources/threatassessmentrequest.md#relationships)。
 - 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。

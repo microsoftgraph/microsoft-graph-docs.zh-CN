@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 46d839c6365c148777a280d7af8a36f3bf58ccd1
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: c9e6e7eeeabc4914e8be23ca6da3ccc7c963a01f881e847c200284c2ed30f36f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582751"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169667"
 ---
 # <a name="chatmessagepolicyviolation-resource-type"></a>chatMessagePolicyViolation 资源类型
 

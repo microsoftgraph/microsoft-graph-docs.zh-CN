@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03d40f108b302e31720f97fac435001c09c6ef10
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 443ffa10f4d366c60e5b57220b4213df00be09e4d0744c85c28db1098eb69940
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249515"
 ---
 # <a name="update-managedappoperation"></a>更新 managedAppOperation
 

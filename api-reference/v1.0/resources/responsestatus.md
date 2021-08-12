@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1aebaa2672b741798a2c6bbf95c8c9d966cabfd1
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 93d464e054663ebeae53ff9f6c1e082ca660608635ee99d74cb4a9592f1981ce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169310"
 ---
 # <a name="responsestatus-resource-type"></a>responseStatus 资源类型
 

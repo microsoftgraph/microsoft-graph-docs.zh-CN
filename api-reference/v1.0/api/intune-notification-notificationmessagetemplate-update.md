@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23fc5364a39969ae137796cfc461e8cf19ae26d0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b5f3811b0e41e7c6517bbebf3599c479ecdd7a3affbfcda279feece84d8f3d30
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225858"
 ---
 # <a name="update-notificationmessagetemplate"></a>更新 notificationMessageTemplate
 

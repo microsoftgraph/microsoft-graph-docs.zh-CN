@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 413778d563abc745139936ac6ec139e7fe74893a
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 547570b70948590e72060432618005f02b8a167ba772cb39cd5290ea4134cdf8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141712"
 ---
 # <a name="extension-resource-type"></a>扩展资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "52547167"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 只读。|
+|id|String| 只读。|
 
 ## <a name="relationships"></a>关系
 无

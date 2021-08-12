@@ -6,12 +6,12 @@ localization_priority: Normal
 description: IdentitySet 资源是 标识 资源的键控集合。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e6f7aef915596e39173f286a3433e0114656e707
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f8dfa2f498d6617c3c35338bee0e2a6750ccce389c70b051f0dac2ef2077d4e3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239959"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152661"
 ---
 # <a name="identityset-resource-type"></a>IdentitySet 资源类型
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ddd48cc4aa36d893e33c256064d8dca7a0e953f1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5e852ebde50d4fc27aea76daafcec51f40c50d15a339857bcdf8f6a5b1642ac6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245623"
 ---
 # <a name="remotelock-action"></a>remoteLock 操作
 

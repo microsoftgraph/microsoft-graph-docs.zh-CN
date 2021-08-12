@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec121008661f14f00768d4c12dcf327e6abc218f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b18916271af974aec16cd6144225fe2d6416019d896f3a1c2a8d792db3b6cf7e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758022"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209075"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>列出 deviceEnrollmentWindowsHelloForBusinessConfigurations
 

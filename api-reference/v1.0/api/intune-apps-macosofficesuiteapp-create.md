@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a940af210fe5722332fab9cd79998c7b9c24b92
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e2cad2bd5ae1585d477addc9376251578ac6520eeb987e3d815896248a991245
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247450"
 ---
 # <a name="create-macosofficesuiteapp"></a>创建 macOSOfficeSuiteApp
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5def5ee6c6a97e91c9255a9808db7fc6b2fa07fc
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 41e038643deecacb094ef8927ed1229ad1b76c114cf71f60cdca027a981a7047
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243348"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "52751836"
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
 |displayName|String|设备类别的显示名称。|
-|description|String|设备类别的说明（可选）。|
+|说明|String|设备类别的说明（可选）。|
 
 ## <a name="relationships"></a>关系
 无

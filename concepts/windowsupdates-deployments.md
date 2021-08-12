@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 74cf9f7082d2f7d69f60a8edf851c881a59a67aa
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 59cceb1db6bf3d9b045d2a734ae25561ce68fedfa50e7736fa4461c667b1b05f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225627"
 ---
 # <a name="deployments-in-the-windows-update-for-business-deployment-service"></a>Windows Update for Business 部署服务中的部署
 

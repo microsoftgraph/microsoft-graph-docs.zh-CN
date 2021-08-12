@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b42ef2c3ef58d0ca5fa86dd7b3ccd43028a20b8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6682c9212a548bdb479001b07c7b65ccc166481a9539ec7080b6d3a884e61e25
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202761"
 ---
 # <a name="list-macoscustomconfigurations"></a>列出 macOSCustomConfigurations
 

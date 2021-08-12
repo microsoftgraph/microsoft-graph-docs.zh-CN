@@ -1,33 +1,33 @@
 ---
 title: relatedContact 资源类型
-description: 与为监护人、工具、医生等提供信息的 educationUser 相关的联系人记录。
+description: 与教育用户相关的联系人记录为监护人、助手、儿童等提供相关信息。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f1dd62a2727ec2cbd6a4044b84105d739bbf9c93
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 3a99702811601278c1d3bbe4413fec495b8ba2d6bd13b23dafd90b3ff86f7c19
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237528"
 ---
 # <a name="relatedcontact-resource-type"></a>relatedContact 资源类型
 
 命名空间：microsoft.graph
 
-与为监护人、工具、医生等提供信息的 [educationUser](../resources/educationuser.md) 相关的联系人记录。
+与教育用户相关的联系人 [记录为](../resources/educationuser.md) 监护人、助手、儿童等提供相关信息。
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型                  | 说明                                                                                                                               |
 | :------------ | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| id            | String                | Azure Active Directory 中的联系人的标识。                                                                                    |
-| displayName   | String                | 联系人的名称。 必需。                                                                                                            |
+| id            | String                | 联系人在内部Azure Active Directory。                                                                                    |
+| displayName   | String                | 联系人的姓名。 必填。                                                                                                            |
 | emailAddress  | String                | 联系人的主电子邮件地址。                                                                                                     |
 | mobilePhone   | String                | 联系人的移动电话号码。                                                                                                       |
-| 关系  | `contactRelationship` | 与用户的关系。 可能的值为、、、、、、 `parent` `relative` `aide` `doctor` `guardian` `child` `other` `unknownFutureValue` 。 |
-| accessConsent | 布尔值               | 指示用户是否同意访问学生数据。                                                                     |
+| 关系  | `contactRelationship` | 与用户的关系。 可能的值是 `parent` `relative` `aide` 、、、、、、、、 `doctor` `guardian` `child` `other` `unknownFutureValue` 。 |
+| accessConsent | Boolean               | 指示用户是否已同意访问学生数据。                                                                     |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

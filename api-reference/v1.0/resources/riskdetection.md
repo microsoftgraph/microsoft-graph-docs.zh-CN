@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 79052f4b57b225df6222415556939b99a81f5628
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 855d8b34da6c8cc24bd01f448164dc0b0b68b521d40c78bc6a3b06b95235423c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957987"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154880"
 ---
 # <a name="riskdetection-resource-type"></a>riskDetection 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "50957987"
 
 Azure AD 根据[](riskyuser.md)各种信号和机器学习持续评估[](signin.md)用户风险以及应用或用户登录风险。 此 API 提供对 Azure AD 环境中的所有风险检测的编程访问权限。
 
-有关风险事件详细信息，请参阅 Azure [Active Directory Identity Protection。](/azure/active-directory/identity-protection/overview-identity-protection)
+有关风险事件详细信息，请参阅Azure Active Directory [Identity Protection。](/azure/active-directory/identity-protection/overview-identity-protection)
 
 >[!NOTE]
->必须具有 Azure AD Premium P1 或 P2 许可证才能使用风险检测 API。
+>必须具有许可证Azure AD Premium P1 P2 许可证才能使用风险检测 API。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 riskDetections](../api/riskdetection-list.md)|[riskDetection](../resources/riskdetection.md) 集合|获取 [riskDetection 对象](../resources/riskdetection.md) 及其属性的列表。|

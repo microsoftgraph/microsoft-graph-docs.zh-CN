@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5b0e154beb5b8133c69392af8fa9611263c68945
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 407057446753afc0cf8f9f63ebbf4459c4106f8ec1dbcc9c49844a93e69b2388
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238116"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent 资源类型
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6726b03897cf7685e672bdba7ee0e26ed03c8677
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: fa308a6bdd84e9b8d9b35f79fb54ea70afe43c15d206b719787bb3f5edc1f810
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758825"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159965"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 枚举类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "52758825"
 |agesAbove16|7 |R16 分类仅限于 16 年及超过 16 年的人员|
 |agesAbove18|8 |R18 分类仅限于 18 年及超过 18 年的人员|
 |restricted|9 |R 分类仅限于特定访问群体|
-|agesAbove16Restricted|10  |RP16 分类要求 16 以下的查看者附带家长或成人|
+|agesAbove16Restricted|10 |RP16 分类要求 16 以下的查看者附带家长或成人|
 
 
 

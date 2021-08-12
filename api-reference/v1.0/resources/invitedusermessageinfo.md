@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5b20eb15cfc8eb2ae248d87e5ae61ffa0d5ea08d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f35cd50c66d6d34b2837911514a9ac53387915bb19cbb46c0a0b36cb708ebe4b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218455"
 ---
 # <a name="configuring-the-invitation-message"></a>配置邀请邮件
 

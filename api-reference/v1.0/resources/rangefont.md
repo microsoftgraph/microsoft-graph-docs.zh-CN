@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 95a58a62355c70b1f2588b83594ab5497ac3db49
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3754449b328f8b6d1217970b352cc11b28e998cf2e1b4f931c0f106eb97dc1ed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152263"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont 资源类型
 

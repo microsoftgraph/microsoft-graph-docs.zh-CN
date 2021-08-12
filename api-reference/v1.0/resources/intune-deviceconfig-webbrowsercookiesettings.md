@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c1c53faf7d88ec27ffd9acdbf48a8fd18ea2a8d3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 748bf63be61957ddbd9d3ac1b88813d88e3a07d94fbca2edfb6be67f9415e998
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184660"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52754683"
 Web 浏览器 Cookie 设置。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |browserDefault|0|浏览器默认值，无意图。|
 |blockAlways|1|始终阻止 Cookie。|

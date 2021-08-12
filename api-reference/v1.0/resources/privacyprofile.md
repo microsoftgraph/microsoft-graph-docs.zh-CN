@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a64defb220a6c8adc28ba06cd205c1eb70496329
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 027fd6b7d2fb9baeafe5a31fb125a75e2f4b25b6408fdf51e9c88a5cbc791639
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174897"
 ---
 # <a name="privacyprofile-resource-type"></a>privacyProfile 资源类型
 

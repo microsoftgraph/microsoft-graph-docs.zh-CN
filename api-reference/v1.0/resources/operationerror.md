@@ -5,12 +5,12 @@ localization_priority: Normal
 author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 014112d78b19ee08836139dc39d8d99b8459027b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 395b10dbfd3617cfe891854897c9d99be64ad4b76bc05776b4eab77d1847a44f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003022"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223268"
 ---
 # <a name="operationerror-resource-type"></a>operationError 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48003022"
 
 
 
-描述 [teamsAsyncOperation](teamsasyncoperation.md)中的错误。
+描述 [teamsAsyncOperation 中的错误](teamsasyncoperation.md)。
 
 ## <a name="operationerror-properties"></a>operationError 属性
 | 属性     | 类型   |说明|

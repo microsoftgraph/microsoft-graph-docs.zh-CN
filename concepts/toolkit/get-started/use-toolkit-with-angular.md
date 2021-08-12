@@ -3,12 +3,12 @@ title: 将 Microsoft Graph Toolkit与 Angular
 description: 在应用程序应用程序中Graph Toolkit Microsoft Angular入门。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: b1985598985f85c0f33676fee49656324c65c7c5
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 8cd4c8039111dbc5f764cd4e698cf02c9aa0e1e621982e13947cb62846e1ea52
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159657"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>将 Microsoft Graph Toolkit与 Angular
 
@@ -38,7 +38,7 @@ npm install @microsoft/mgt
 ```
 ## <a name="initialize-a-provider"></a>初始化提供程序
 
-Microsoft Graph Toolkit提供程序支持对组件的 Microsoft Graph进行身份验证和访问。 若要了解更多信息，请参阅 [使用提供程序](../providers/providers.md)。 使用的提供程序取决于将使用解决方案的上下文。
+Microsoft Graph 工具包提供程序为组件启用身份验证和对 Microsoft Graph 的访问。 若要了解详细信息，请参阅[使用提供程序](../providers/providers.md)。 使用的提供程序取决于将使用解决方案的上下文。
 
 以下示例演示如何添加 [MSAL 2 提供程序](../providers/msal2.md)，但您可以使用任何提供程序的相同模型。
 >[!NOTE] 
@@ -125,6 +125,6 @@ export class AppComponent implements OnInit {
 
 ## <a name="next-steps"></a>后续步骤
 - 请查看此有关生成应用应用的分步[Angular教程](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/)。
-- 尝试在运动场中的 [组件](https://mgt.dev)。
-- 在 Stack [Overflow 上提问](https://aka.ms/mgt-question)。
-- 报告 Bug 或将功能请求[保留GitHub。](https://aka.ms/mgt)
+- 在[样本](https://mgt.dev)中试用组件。
+- 在 [Stack Overflow](https://aka.ms/mgt-question) 上提问。
+- 在 [GitHub](https://aka.ms/mgt) 上报告 bug 或提出功能请求。

@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a9e48d38e7ad69d6790b3b9dddb85960c964ad91
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: c897bc970fc4527a03593a72e1ea760ab78fc696a75180e0e718a81ab90455ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882951"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150043"
 ---
 # <a name="apiauthenticationconfigurationbase-resource-type"></a>apiAuthenticationConfigurationBase 资源类型
 

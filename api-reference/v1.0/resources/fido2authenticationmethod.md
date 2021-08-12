@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1212f1e473d6f8bfe6ac06fbee0b96b12256a377
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 49e2d2c70596910494b526b3dd92e0f3ed157802a7789c68d543bc044518ceaf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152752"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>fido2AuthenticationMethod 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "52335588"
 |方法|返回类型|Description|
 |:---|:---|:---|
 |[List](../api/fido2authenticationmethod-list.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) 集合|检索用户的 fido2AuthenticationMethod 对象及其属性的列表。|
-|[获取](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|读取用户的 fido2AuthenticationMethod 对象的属性和关系。|
+|[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|读取用户的 fido2AuthenticationMethod 对象的属性和关系。|
 |[删除](../api/fido2authenticationmethod-delete.md)|无|删除用户的 fido2AuthenticationMethod 对象。|
 
 ## <a name="properties"></a>属性

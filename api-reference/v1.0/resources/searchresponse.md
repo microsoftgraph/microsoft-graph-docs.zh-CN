@@ -1,29 +1,29 @@
 ---
 title: searchResponse 资源类型
-description: SearchResponse 的说明
+description: searchResponse 的说明
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 8582da8daf604952807e05376d98dabf16267052
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: e071126b95cf0f82143c22f4523adcad640cb7df66718858a722e9f120177edc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246561"
 ---
 # <a name="searchresponse-resource-type"></a>searchResponse 资源类型
 
 命名空间：microsoft.graph
 
-表示搜索查询中的结果和用于查询的术语。 
+表示来自搜索查询的结果，以及用于查询的术语。 
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |hitsContainers|[searchHitsContainer](searchhitscontainer.md) 集合|搜索结果的集合。|
-|searchTerms|String collection|包含在初始搜索查询中发送的搜索词。|
+|searchTerms|String collection|包含初始搜索查询中发送的搜索词。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 14488ec20fd65976188583142301490314b06ccd
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 196b59b6fbe8e48643cb434d8f53c198a73c6279e1969f152e7efec9e9d97834
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225599"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Windows Update for Business 部署服务的软件更新
 
@@ -26,7 +26,7 @@ ms.locfileid: "52067663"
 
 实际上，部署服务当前仅部署在其目录中定义的功能更新和安全质量更新。 该服务当前不部署非安全质量更新或驱动程序更新。
 
-若要了解有关更新Windows 10服务的信息，请参阅服务Windows[快速指南](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)。
+若要了解有关更新Windows 10服务的信息，请参阅快速[指南Windows 即服务。](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
 ## <a name="identifying-updates-for-deployment"></a>确定部署的更新
 
@@ -73,7 +73,7 @@ Microsoft 更新目录中的更新非常具体，特定于各个产品、版本�
 | 功能更新到 Windows 10 20H1 版本 | 20H1    |
 | 功能更新到 Windows 10 版本 1909 | 1909    |
 | 功能更新到 Windows 10 版本 1903 | 1903    |
-| 功能更新到 Windows 10 版本 1809 | 1809    |
+| 要更新的功能Windows 10 版本 1809 | 1809    |
 
 确定所需版本后，使用 [featureUpdateReference](/graph/api/resources/windowsupdates-featureupdatereference) 并指定 **version** 属性将其作为内容分配给部署。
 

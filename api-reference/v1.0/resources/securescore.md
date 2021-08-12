@@ -1,22 +1,22 @@
 ---
 title: secureScore 资源类型
-description: 表示租户和控制级别上的每日记分数据的租户安全分数。
+description: 表示租户和控制级别的租户每天评分数据的安全分数。
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e4f798ae64b881c95ed4330901c0a34ba4073f0e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbc942784813545f5d276addbd4581cf30ea82c8c2d8d6cf17d5f3ef3fbc7246
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984094"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180479"
 ---
 # <a name="securescore-resource-type"></a>secureScore 资源类型
 
 命名空间：microsoft.graph
 
-表示租户和控制级别上的每日记分数据的租户安全分数。 默认情况下，将保留90天的数据。 此数据按 **createdDateTime**进行排序，从最新到最早。 这将允许您使用 $top = n 对响应进行分页，其中 n = 要检索的数据的天数。 
+表示租户和控制级别的租户每天评分数据的安全分数。 默认情况下，将存储 90 天的数据。 此数据按 **createdDateTime** 排序，从最新到最早。 这将允许您使用 $top=n 对响应进行页面响应，其中 n = 要检索的数据的天数。 
 
 
 ## <a name="methods"></a>方法
@@ -32,17 +32,17 @@ ms.locfileid: "47984094"
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|id |String|提供程序生成的 GUID/唯一标识符。 只读。 必需。|
+|id |String|提供程序生成的 GUID/唯一标识符。 只读。 必填。|
 |   azureTenantId   |   字符串  |   租户 ID 的 GUID 字符串。  |
 |   activeUserCount |   Int32   |   给定租户的活动用户计数。  |
-|   createdDateTime |   DateTimeOffset  |   创建实体的日期。  |
-|   currentScore    |   双精度  |   租户当前在指定日期的得分。    |
-|   enabledServices |   String collection   |   Microsoft 为租户提供的服务 (例如，Exchange online、Skype、Sharepoint) 。   |
+|   createdDateTime |   DateTimeOffset  |   实体的创建日期。  |
+|   currentScore    |   双精度  |   指定日期的租户当前获得分数。    |
+|   enabledServices |   String collection   |   Microsoft 为租户租户提供的服务 (例如，Exchange、Skype、Sharepoint) 。   |
 |   licensedUserCount   |   Int32   |   给定租户的许可用户计数。    |
-|   maxScore |  双精度  |   指定日期上可能的租户最大分数。    |
-|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md) 集合    |不同作用域的平均分数 (例如，行业平均值、座位) 和控制类别的平均 (标识、数据、设备、应用程序、基础结构) 在范围内。 |
+|   maxScore |  双精度  |   指定日期的租户最大可能分数。    |
+|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md) 集合    |按不同范围的分数 (例如，按行业平均值、按) 和控件类别 (标识、数据、设备、应用、基础结构) 范围内的平均分数。 |
 |   controlScores | [controlScore](controlscore.md) 集合  |   包含一组控件的租户分数。   |
-|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供商和 subprovider 的详细信息的复杂类型 (例如，供应商 = Microsoft;provider = SecureScore) 。 必需。|
+|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|复杂类型，包含有关安全产品/服务供应商、提供程序和子 (的详细信息，例如，vendor=Microsoft;provider=SecureScore) 。 必填。|
 
 
 ## <a name="relationships"></a>关系

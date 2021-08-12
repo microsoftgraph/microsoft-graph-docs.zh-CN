@@ -1,16 +1,16 @@
 ---
 title: teamsTab 资源类型
-description: 'teamsTab 是固定到团队 () 频道的选项卡。 '
+description: 'teamsTab 是固定到 (附加到) 频道的选项卡。 '
 localization_priority: Normal
 author: AkJo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8314604d6ed15eeb154ff46c8e3b90f4be4f5cde
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: e77c6c20705856700717a0312178c5d9fe330df349293920293ebc54019a7409
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231459"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "49658546"
 
 
 
-teamsTab[是固定](../resources/teamstab.md)到团队 () 频道的[](channel.md)[选项卡](team.md)。 
+teamsTab[是固定](../resources/teamstab.md)到 (附加到) 频道的[](channel.md)[选项卡](team.md)。 
 
 ## <a name="methods"></a>方法
 

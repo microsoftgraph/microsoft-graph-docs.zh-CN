@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 36626698d55fe8dc813d13d66a7fa453f8e2beae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8cb375493b018d2d6f277f2cbc7944e9d662f018e301eec551bd3b5ab648368
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251692"
 ---
 # <a name="workbookapplication-resource-type"></a>workbookApplication 资源类型
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e160dcf921b76eeedc51999c65e03ab590fd73b5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0e5c1ea32b71e795b608102271806d8b583bb39e27c8d8d8d57f4dffb10b5d11
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247156"
 ---
 # <a name="list-users"></a>列出用户
 

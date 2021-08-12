@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 10b5043cdadaaa1180e232e0776c26a60f46f507
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 65aadebaea821fd722b51587e1a504cc008ca7cacb9945a034cb877e2b92b275
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129930"
 ---
 # <a name="usersecuritystate-resource-type"></a>userSecurityState 资源类型
 
@@ -22,20 +22,20 @@ ms.locfileid: "50759494"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|aadUserId|字符串|AAD 用户对象标识符 (GUID) - 表示物理/多帐户用户实体。|
-|accountName|字符串|没有 Active Directory 域 (DNS 域的用户帐户名 -)  (也称为 `mailNickName`) 。|
+|aadUserId|String|AAD 用户对象标识符 (GUID) - 表示物理/多帐户用户实体。|
+|accountName|String|没有 Active Directory 域 (DNS 域的用户帐户名 -)  (也称为 `mailNickName`) 。|
 |domainName|String|用户帐户的 NetBIOS/Active Directory (，即域\帐户格式) 。|
 |emailRole|emailRole|对于电子邮件相关警报 - 用户帐户的电子邮件"角色"。 可取值为：`unknown`、`sender`、`recipient`。|
 |isVpn|Boolean|指示用户是否通过 VPN 登录。|
 |logonDateTime|DateTimeOffset|登录发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|logonId|字符串|用户登录 ID。|
-|logonIp|字符串|IP 地址 源自登录请求。|
-|logonLocation|字符串|位置 (IP 地址映射) 与此用户登录事件关联的 IP 地址映射。|
+|logonId|String|用户登录 ID。|
+|logonIp|String|IP 地址 源自登录请求。|
+|logonLocation|String|位置 (IP 地址映射) 与此用户登录事件关联的 IP 地址映射。|
 |logonType|logonType|用户登录方法。 可取值为：`unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
 |onPremisesSecurityIdentifier|String|Active Directory (用户) SID (本地) 安全标识符。|
-|riskScore|字符串|提供程序生成/计算用户帐户的风险评分。 建议的值范围为 0-1，等于百分比。|
-|userAccountType|userAccountSecurityType|根据 Windows 定义 (组) 用户帐户类型。 可取值为：`unknown`、`standard`、`power`、`administrator`。|
-|userPrincipalName|字符串|用户登录名 - Internet 格式： (用户帐户名) @ (用户帐户 DNS 域名) 。|
+|riskScore|String|提供程序生成/计算用户帐户的风险评分。 建议的值范围为 0-1，等于百分比。|
+|userAccountType|userAccountSecurityType|根据组 (定义的) 用户帐户Windows类型。 可取值为：`unknown`、`standard`、`power`、`administrator`。|
+|userPrincipalName|String|用户登录名 - Internet 格式： (用户帐户名) @ (用户帐户 DNS 域名) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
