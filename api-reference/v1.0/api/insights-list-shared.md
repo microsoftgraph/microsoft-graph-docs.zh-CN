@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 0b799be314ce9f2519d7174c84f9349b09bbd5c3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 05e0caa6d38276d2d40e23c854b65ee2b0687fa1a6ed2df1147e5f74a95ee459
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050421"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135972"
 ---
 # <a name="list-shared"></a>共享的列表
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK

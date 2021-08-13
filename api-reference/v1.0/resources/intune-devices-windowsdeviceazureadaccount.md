@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 402128d9f5fd312fbcd564c9e0d96e915296c356
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 975a789f5dfff1a59515ac771d41bacd6a78183f7d2fb8939149455deeb495b7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149819"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "52754984"
 继承自 [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |密码|String|尚未记录 继承自 [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |userPrincipalName|String|尚未记录|

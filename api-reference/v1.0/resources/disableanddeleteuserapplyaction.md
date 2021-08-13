@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b002784b77da1d22ef5379d86d1e6d7ce911c9b7
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 6acc3aa33c4f35f2094adc2ab294f40e23ecef55e3a475a076b2511201be1b59
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031033"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231822"
 ---
 # <a name="disableanddeleteuserapplyaction-resource-type"></a>disableAndDeleteUserApplyAction 资源类型
 

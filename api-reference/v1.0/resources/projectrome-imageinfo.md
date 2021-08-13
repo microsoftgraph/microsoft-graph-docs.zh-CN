@@ -1,30 +1,30 @@
 ---
 title: imageInfo 资源类型
-description: 一个复杂类型，用于表示 activity 对象的 visualInfo 部分中 **的属性属性** 。
+description: 表示活动对象的 visualInfo部分中的属性的复杂类型。
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: d4ed317b987d461c9ef6816e9d05aae0de358ec7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f8f4a69304412296030eb50a907bdf9ca6f6c000b16e295688c836585fbb775
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229001"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo 资源类型
 
 命名空间：microsoft.graph
 
-一个复杂类型，用于表示[activity](../resources/projectrome-activity.md)对象的[visualInfo](../resources/projectrome-visualinfo.md)部分中**的属性属性**。
+表示活动对象的[visualInfo](../resources/projectrome-visualinfo.md)部分中的[属性的复杂类型](../resources/projectrome-activity.md)。 
 
 ## <a name="properties"></a>属性
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|iconUrl | String | Optional指向代表用于生成活动的应用程序的图标的 URI|
-|alternateText | String | Optional图像的可选文本可访问内容|
-|addImageQuery | Boolean | Optional用于指示服务器能够动态呈现图像以响应参数化的参数。 例如-高对比度图像|
+|iconUrl | String | 可选;指向表示用于生成活动的应用程序的图标的 URI|
+|alternateText | String | 可选;图像可选文字辅助内容|
+|addImageQuery | Boolean | 可选;参数，用于指示服务器能够动态呈现图像以响应参数化。 例如 - 高对比度图像|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

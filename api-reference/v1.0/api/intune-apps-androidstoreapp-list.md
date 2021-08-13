@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db35dbfa796a1dabc68c1f083039dbb2106148b3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b7e97b19e4dfabe551f2600ea68d408e3491aa04ab264847bdcc42fe57d3b89c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135909"
 ---
 # <a name="list-androidstoreapps"></a>列出 androidStoreApps
 

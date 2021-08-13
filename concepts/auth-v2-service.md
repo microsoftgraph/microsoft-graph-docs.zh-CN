@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 0fba65fb040ca210b5d9a9fe82e9510b5586c4b6
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: f00aeb609b2941ef2f496fe64a80309361e8942a5ed70a83ec9950a25eb966a9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53333966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169265"
 ---
 # <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 

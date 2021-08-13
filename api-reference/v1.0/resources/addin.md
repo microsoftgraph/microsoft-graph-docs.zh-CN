@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: dcd3b36ed01d455feca2a996e740203d21d33455
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bccea3c78818a2cd4dfaf62cdb402aa695bda621f1c5a540b744f2cd3c905e84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169702"
 ---
 # <a name="addin-resource-type"></a>addIn 资源类型
 
 命名空间：microsoft.graph
 
-定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，可以呈现文件流的应用程序可能会为"FileHandler"功能配置[addIns。](/onedrive/developer/file-handlers/?view=odsp-graph-online) 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。
+定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，可以呈现文件流的应用程序可能会为 [addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) 配置其"FileHandler"功能。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

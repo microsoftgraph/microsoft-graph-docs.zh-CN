@@ -1,29 +1,29 @@
 ---
 title: fileHash 资源类型
-description: 包含有关文件哈希 (加密和位置敏感) 的状态信息。
+description: 包含有关加密和位置 (文件哈希的有状态) 。
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 412308fc20c3baee63640451bb1a2c8059e71be0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98b2e9ed0ba4ca6a7af23d1fe6cf7acb278975ccf36f45983c58aeb5d721e744
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018373"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218714"
 ---
 # <a name="filehash-resource-type"></a>fileHash 资源类型
 
 命名空间：microsoft.graph
 
-包含有关文件哈希 (加密和位置敏感) 的状态信息。
+包含有关加密和位置 (文件哈希的有状态) 。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |hashType|fileHashType|文件哈希类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph`、`peSha1`、`peSha256`。|
-|hashValue|String|文件哈希值。|
+|hashValue|String|文件哈希的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6054b86774d8332ee99e340d669528a5d4f747e7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d1ed4cbe9ab1515a09c710c8ef8bb315ce416203491d58040602fed392c342cc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121688"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>删除 windows10TeamGeneralConfiguration
 

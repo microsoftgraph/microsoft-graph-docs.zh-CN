@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 通过创建上传会话，使应用可以上传最大大小的文件。
 doc_type: apiPageType
-ms.openlocfilehash: 422f3068c2854a847d79d6dcb940c44cc49aaa07
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 4aab12632ad4c2dd6b8b23049add4de33848cf1858300411266e1f08f8a1bdcb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193137"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 

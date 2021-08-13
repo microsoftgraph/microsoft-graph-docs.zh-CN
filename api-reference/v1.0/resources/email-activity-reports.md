@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sarahwxy
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 7f0716d42d9b3e2f2fa360e065ebfd9ed7e1a4fc
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 71ca80e37d88368f8bc931e607b61612fe6ed472c4762db51b39f2505c16599f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192521"
 ---
 # <a name="email-activity-reports"></a>电子邮件活动报告
 

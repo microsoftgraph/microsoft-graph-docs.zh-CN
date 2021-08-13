@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f40d0c1e00595b70ebf30dea3c572ad364e3c668
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c57bf5d87e7081863c07e49fb682b831d8c645f109a82717529a538684b2ad1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756027"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130259"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>managedMobileLobApp 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "52756027"
 
 继承自 [managedApp](../resources/intune-apps-managedapp.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedMobileLobApps](../api/intune-apps-managedmobilelobapp-list.md)|[managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md) 集合|列出 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md) 对象的属性和关系。|
 |[Get managedMobileLobApp](../api/intune-apps-managedmobilelobapp-get.md)|[managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|读取 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md) 对象的属性和关系。|
@@ -53,7 +53,7 @@ ms.locfileid: "52756027"
 |size|Int64|总大小，包括所有已上传文件。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|

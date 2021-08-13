@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 219e8a6c269c39696f3f53e2d6f48344b8555f5c
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 34a7b756ba02773b63410d03325cd420035303305493e1e40fae832bd77ac5e9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108920"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184807"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>使用 Microsoft Intune 管理应用
 

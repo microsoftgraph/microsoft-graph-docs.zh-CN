@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 838be4b5a21e2117fd06d33c62c94f1ae6488794
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 41d29fe72dcc76e0e45e8133d4b4ecf2d5f56863ae946bc5cf0dd25759a4badd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720786"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169359"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "50720786"
 |[转发](../api/post-forward.md)|无|将帖子转发给收件人。|
 |**附件**| | |
 |[列出附件](../api/post-list-attachments.md) |[attachment](attachment.md) 集合| 获取帖子的所有附件。|
-|[Add attachment](../api/post-post-attachments.md) |[附件](attachment.md)| 将附件添加到帖子中。 |
+|[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| 将附件添加到帖子中。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取通过名称或完全限定的名称识别的一个或多个开放扩展对象。|
@@ -52,13 +52,13 @@ ms.locfileid: "50720786"
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|帖子的内容。这是默认属性。此属性可为 NULL。|
 |categories|String collection|与帖子关联的类别。|
-|changeKey|字符串|标识帖子的版本。每次帖子更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
+|changeKey|String|标识帖子的版本。每次帖子更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |conversationId|String|对话的唯一 ID。只读。|
 |conversationThreadId|字符串|对话线程的唯一 ID。只读。|
 |createdDateTime|DateTimeOffset|创建帖子时指定。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |发件人|[recipient](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
 |hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
-|id|字符串| 只读。|
+|id|String| 只读。|
 |lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |newParticipants|[recipient](recipient.md) collection|添加到此线程作为帖子一部分的对话参与者。|
 |receivedDateTime|DateTimeOffset|接收到帖子时指定。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
@@ -67,7 +67,7 @@ ms.locfileid: "50720786"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) 集合| 只读。可为 NULL。|
+|attachments|[附件](attachment.md) 集合| 只读。可为 NULL。|
 |extensions|[Extension](extension.md) 集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
 |inReplyTo|[帖子](post.md)| 只读。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|

@@ -1,15 +1,15 @@
 ---
-title: 教程：使用 Microsoft Graph API 识别和修正风险
+title: 教程：使用 Microsoft api 识别并Graph风险
 description: 了解如何使用 Microsoft Graph API 识别和修正风险。
 author: davidmu1
 localization_priority: Normal
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 85421d493e94957cc7fca5182d609b19225311e4
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 60690454c9b3b7adfc7ac256cb3e3a5ff72b6d3336404b6beefe421bb2eea8e1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760951"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221000"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 识别和修正风险
 
@@ -23,7 +23,7 @@ Azure AD Identity Protection 使组织能够深入了解基于标识的风险以
 
 若要成功完成本教程，请确保满足以下先决条件：
 
-- 必须具有 Azure AD Premium P1 或 P2 许可证才能使用风险检测 API。
+- 必须具有许可证Azure AD Premium P1 P2 许可证才能使用风险检测 API。
 - 本教程使用 Tor 浏览器匿名登录 Azure 门户。 可以使用任何匿名浏览器来完成该任务。 若要下载 Tor 浏览器，请参阅 [下载 Tor 浏览器](https://www.torproject.org/download/)。
 - 本教程的前提是使用 Microsoft Graph Explorer，但是可以使用 Postman，也可以创建自己的客户端应用程序来调用 Microsoft Graph。 如果要在本教程中调用 Microsoft Graph API，需要使用具有全局管理员角色和适当权限的帐户。 完成以下步骤以在 Microsoft Graph Explorer 中设置权限：
     1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。

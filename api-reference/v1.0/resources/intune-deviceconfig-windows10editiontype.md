@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 027df32ad8b495ac5f98ca27eae3f8bf72ee719e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5f050bd422e02a7f9bd11720770b71fc2c5f6855dc54ba88639768347d4aba9b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180633"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52755796"
 Windows 10版本类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |windows10Enterprise|0|Windows 10 企业版|
 |windows10EnterpriseN|1|Windows 10EnterpriseN|
@@ -33,7 +33,7 @@ Windows 10版本类型。
 |windows10ProfessionalN|7 |Windows 10ProfessionalN|
 |windows10ProfessionalEducation|8 |Windows 10 Professional教育|
 |windows10ProfessionalEducationN|9 |Windows 10 Professional EducationN|
-|windows10ProfessionalWorkstation|10  |Windows 10 Professional工作站|
+|windows10ProfessionalWorkstation|10 |Windows 10 Professional工作站|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional工作站 N|
 
 

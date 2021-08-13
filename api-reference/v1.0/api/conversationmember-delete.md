@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2b0489387f4822296788c417536332c2fef387ad
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: fb06950403e6f49421fdc600fd5b3d47023b00f12145bf77fab78b08b3ae3691
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172608"
 ---
 # <a name="delete-conversationmember"></a>删除 conversationMember
 

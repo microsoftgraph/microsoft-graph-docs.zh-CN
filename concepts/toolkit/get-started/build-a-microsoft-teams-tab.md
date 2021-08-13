@@ -3,16 +3,16 @@ title: 使用 Microsoft Microsoft Teams生成一个"Graph Toolkit
 description: 开始使用 Microsoft Microsoft Teams生成 Graph Toolkit。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 7bd9d989d30b7fc4286a6ca78445ffb01a772084
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 1751214a354de77edfdf730463320caf5d963a27c6cc47b553f20b61aaaa71d9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813165"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143603"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>使用 Microsoft Microsoft Teams生成一个"Graph Toolkit
 
-本主题介绍如何开始在解决方案Graph Toolkit Microsoft Microsoft Teams Microsoft 解决方案。 入门包括以下步骤：
+本主题介绍如何开始在解决方案Graph Toolkit Microsoft Microsoft Teams Microsoft 解决方案。 开始使用涉及以下步骤：
 
 1. 使用自定义选项卡Teams应用程序。
 2. 添加 Microsoft Graph Toolkit。
@@ -46,7 +46,7 @@ npm install @microsoft/mgt @microsoft/teams-js
 
 ## <a name="initialize-the-teams-provider"></a>初始化Teams提供程序
 
-Microsoft Graph Toolkit提供程序支持对组件的 Microsoft Graph进行身份验证和访问。 若要了解更多信息，请参阅 [使用提供程序](../providers/providers.md)。 Teams[提供程序](../providers/teams.md)处理所有需要通过 Teams SDK 实现的逻辑和交互来对用户进行身份验证。
+Microsoft Graph 工具包提供程序为组件启用身份验证和对 Microsoft Graph 的访问。 若要了解详细信息，请参阅[使用提供程序](../providers/providers.md)。 Teams[提供程序](../providers/teams.md)处理所有需要通过 Teams SDK 实现的逻辑和交互来对用户进行身份验证。
 
 可以选择在 HTML 或 JavaScript 代码中初始化提供程序。 
 
@@ -155,6 +155,6 @@ npm start
 
 ## <a name="next-steps"></a>后续步骤
 - 请查看此分步教程，介绍如何生成Teams[选项卡](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/)。
-- 尝试在运动场中的 [组件](https://mgt.dev)。
-- 在 Stack [Overflow 上提问](https://aka.ms/mgt-question)。
-- 报告 Bug 或将功能请求[保留GitHub。](https://aka.ms/mgt)
+- 在[样本](https://mgt.dev)中试用组件。
+- 在 [Stack Overflow](https://aka.ms/mgt-question) 上提问。
+- 在 [GitHub](https://aka.ms/mgt) 上报告 bug 或提出功能请求。

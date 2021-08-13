@@ -5,12 +5,12 @@ author: matt-steele
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 99417705f4c1c52ffce206d8cc4f39015f26b39c
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: daad7618f3f69a25242b8406a463fec39da196ad29600e671457720ad94ba286
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351277"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169221"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 
@@ -41,10 +41,10 @@ Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
 必须在 [Azure 门户](https://portal.azure.com/)中注册应用，然后它才能从 Microsoft 标识平台获取令牌。 注册会将应用与 Microsoft 标识平台相集成，并建立用于获取令牌的信息，其中包括：
 
 - **应用程序 ID**：Microsoft 标识平台分配的唯一标识符。
-- **重定向 URI/URL**：应用从 Microsoft 标识平台接收响应时要用到的一个或多个终结点。 （对于本机和移动应用，它是 Microsoft 标识平台分配的 URI。）
-- **应用程序密码**： 密码或您的应用程序使用进行 Microsoft 的标识平台身份验证一个公共/私钥对。 （不是本机或移动应用的必需项。）
+- **重定向 URI/URL**: 应用将从 Microsoft 标识平台接收响应的一个或多个终结点。(对于本机和移动应用，此为 Microsoft 标识平台分配的 URI。)
+- **应用程序密码**: 应用用于通过 Microsoft 标识平台进行身份验证的密码或公钥/私钥对。(本机或移动应用不需要。)
 
-请求中会使用在注册期间配置的属性。 例如，在以下令牌请求中：*client_id* 是 *应用程序 ID*，*redirect_uri* 是应用注册的某个 *重定向 URL*，*client_secret* 则是 *应用程序密码*。
+注册期间配置的属性应用于请求中。例如，在以下令牌请求中: *client_id* 为 *应用程序 ID*，*redirect_uri* 为应用的其中一个注册 *重定向 URI*，*client_secret* 为 *应用程密码*。
 
 ```http
 // Line breaks for legibility only
@@ -71,13 +71,13 @@ Microsoft Graph 公开可控制应用对资源（如用户、组和邮件）的�
 ### <a name="delegated-and-application-permissions"></a>委派权限和应用程序权限
 Microsoft Graph 具有两种权限类型：
 
-- **委派权限** 供已有用户登录的应用使用。 对于这些应用，用户或管理员同意应用请求的权限，并且应用可在调用 Microsoft Graph 时充当已登录的用户。 一些委派权限可由非管理用户同意，但一些特权级别更高的权限需要[管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。  
+- **委派权限** 由存在已登录用户的应用使用。对于这些应用，用户或管理员会同意应用请求的权限，且应用在调用 Microsoft Graph 时可以充当已登录用户。一些委派权限可以由非管理用户同意，但一些特权较高的权限需要 [管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。  
 
 - **应用程序权限** 由无需具有登录用户即可运行的应用使用；例如，作为后台服务或守护程序运行的应用。应用程序权限只能 [由管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
 
-_有效权限_ 是应用在向 Microsoft Graph 发出请求时具有的权限。 调用 Microsoft Graph 时，了解授予应用的委派权限及应用程序权限与其有效权限之间的区别非常重要。
+_有效权限_ 是应用在向 Microsoft Graph 发出请求时拥有的权限。需要了解授予应用的委派权限和应用程序权限之间的区别，以及调用 Microsoft Graph 时应用的有效权限。
 
-- 对于委派权限，应用的有效权限是已（通过同意）向应用授予的委派权限和当前登录用户的特权之间的交集。 应用具有的特权不得多于已登录用户。 在组织内，已登录用户的特权可由策略或在一个或多个管理员角色中的成员资格确定。 要详细了解管理员角色，请参阅 [在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假设已授予应用 *User.ReadWrite.All* 委派权限。 此权限名义上授予应用读取和更新组织中每位用户个人资料的权限。 如果已登录的用户是全局管理员，则应用可以更新组织中每个用户的配置文件。 但是，如果已登录用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。 而不会更新组织中其他用户的配置文件，因为已登录用户不具有这些特权。
+- 对于委派权限，应用的有效权限是已授予应用的委派权限(通过同意)和当前已登录用户的特权的交集。应用的特权永远不能超过已登录用户。在组织内，已登录用户的特权由一个或多个管理员角色中的策略或会员资格决定。有关管理员角色的详细信息，请参阅 [在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假定已授予应用 *User.ReadWrite.All* 委派权限。此权限名义上授予应用读取和更新组织内每个用户的配置文件的权限。如果已登录用户为全局管理员，则应用可以更新组织内每个用户的配置文件。但如果已登录用户非管理员角色，则应用只能更新已登录用户的配置文件。其将不会更新组织内其他用户的配置文件，因为已登录用户不具有这些特权。
 
 - 对于应用程序权限，应用的有效权限将是权限默示的完整级别的特权。例如，具有 *User.ReadWrite.All* 应用程序权限的应用可以更新组织中每个用户的配置文件。
 
@@ -133,7 +133,7 @@ _有效权限_ 是应用在向 Microsoft Graph 发出请求时具有的权限。
 
 Microsoft 标识平台文档中有一些文章和示例，它们专门介绍如何向 Microsoft 标识平台进行身份验证以及如何获得它的授权。
 
-- 要开始学习，最简单的是在 [Microsoft 标识平台终结点文档](/azure/active-directory/develop/active-directory-appmodel-v2-overview)。 本文中有概述链接、协议文档，以及按你正在开发的应用类型整理的不同平台的入门文章。
+- 最简单的起点在 [Microsoft 标识平台终结点文档](/azure/active-directory/develop/active-directory-appmodel-v2-overview) 中。本文包含概述、协议文档以及不同平台入门文章的链接，这些文章全部按你正在开发的应用类型进行整理。
 - 有关使用 Microsoft 标识平台保护不同应用程序类型的示例，请查看 [Microsoft 标识平台代码示例（v2.0 终结点）](/azure/active-directory/develop/sample-v2-code)。
 - 要了解客户端或服务器身份验证库列出的示例，请参阅 [Microsoft 标识平台身份验证库](/azure/active-directory/develop/active-directory-v2-libraries)。
 - 在 [Azure 代码库](https://azure.microsoft.com/resources/samples/?service=active-directory)中按平台查看 Microsoft 标识平台示例。

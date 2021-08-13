@@ -6,12 +6,12 @@ localization_priority: Priority
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c14371966d4620450c7d791a3ed90a38b12c61b
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 0d46c94d66339ad5329107e50a781d6f2f4e507d048707cced64dae35748e7da
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335604"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126387"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
@@ -19,8 +19,7 @@ ms.locfileid: "52335604"
 
 **Permission** 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。
 
-共享权限具有许多不同的形式。
-**Permission** 资源通过资源上的 facet 表示这些不同的形式。
+共享权限具有许多不同的形式。**权限** 资源通过资源上的 facet 表示这些不同的形式。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

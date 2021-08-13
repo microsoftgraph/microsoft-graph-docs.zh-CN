@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3bb159d08aaacd2abeb9f76bcf97e300c81a4382
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 34c169e2b9f3cc64c43a0e8e9fd2fe60372d734d1159b3e33206c0f30d986c3e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52747240"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219099"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>删除 windowsDefenderAdvancedThreatProtectionConfiguration
 

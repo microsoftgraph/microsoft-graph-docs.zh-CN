@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 59e1aa072d511c575bb6911e19387de753d47bee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95732a896e6f0a03e4e1633fc13d1b611315a6dc180629e48aa77c7b79bd933c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205939"
 ---
 # <a name="attendeebase-resource-type"></a>attendeeBase 资源类型
 

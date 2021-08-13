@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5f647e40c2d4d5f3ab3b5206a4b172f70463c2ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b6c99121186044820282da58ddbcf97ed28d30abbfdf9e1405140f042442a24
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032794"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135356"
 ---
 # <a name="chartaxes-resource-type"></a>ChartAxes 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "48032794"
 |:---------------|:--------|:----------|
 |categoryAxis|[WorkbookChartAxis](chartaxis.md)|表示图表中的类别轴。只读。|
 |seriesAxis|[WorkbookChartAxis](chartaxis.md)|表示三维图表的系列轴。只读。|
-|值坐标轴|[WorkbookChartAxis](chartaxis.md)|表示坐标轴中的数值轴。 只读。|
+|valueAxis|[WorkbookChartAxis](chartaxis.md)|表示坐标轴中的数值轴。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

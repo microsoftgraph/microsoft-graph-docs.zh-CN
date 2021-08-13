@@ -5,12 +5,12 @@ localization_priority: Priority
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: eba6b2af8dd6437d8996ab0bc2304c99eb7b4ac1
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: a1971825f126307417002b83f013c85c6b7014dd582c5df67b6e059d2c8a04bf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178603"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 

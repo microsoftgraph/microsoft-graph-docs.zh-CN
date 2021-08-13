@@ -1,22 +1,22 @@
 ---
 title: 工作表资源类型
-description: Excel 工作表是由单元格组成的网格。 它可以包含数据、表、图表等。
+description: Excel 工作表是由单元格组成的网格。它可以包含数据、表、图表等。
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9b71e25cc2590d599f79c199200eb2f82da603c5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41712584a612e8f9445c7bc67c25394188d3efc8e0328683a1128bbafce26605
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015027"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141264"
 ---
 # <a name="worksheet-resource-type"></a>工作表资源类型
 
 命名空间：microsoft.graph
 
-Excel 工作表是由单元格组成的网格。 它可以包含数据、表、图表等。
+Excel 工作表是由单元格组成的网格。它可以包含数据、表、图表等。
 
 
 ## <a name="methods"></a>方法
@@ -49,11 +49,11 @@ Excel 工作表是由单元格组成的网格。 它可以包含数据、表、�
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|图表|[WorkbookChart](chart.md) 集合|返回属于工作表的图表的集合。 只读。|
-|names|[WorkbookNamedItem](nameditem.md) 集合|返回与该工作表关联的名称集合。 只读。|
+|图表|[WorkbookChart](chart.md) 集合|返回属于工作表的图表的集合。只读。|
+|names|[WorkbookNamedItem](nameditem.md) 集合|返回与该工作表关联的名称集合。只读。|
 |pivotTables|[workbookPivotTable](workbookpivottable.md) 集合| 一组属于工作表的数据透视表对象。 |
 |保护|[WorkbookWorksheetProtection](worksheetprotection.md)|返回表工作表的工作表保护对象。只读。|
-|表格|[WorkbookTable](table.md) 集合|属于工作表的表的集合。 只读。|
+|表格|[WorkbookTable](table.md) 集合|属于工作表的集合。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

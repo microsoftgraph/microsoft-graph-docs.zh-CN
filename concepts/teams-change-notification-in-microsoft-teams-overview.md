@@ -5,12 +5,12 @@ author: anandab-msft
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9433a4c5ee000fa34e125440168b865f1bb16172
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 7d9973d81a01edc3571502099d2498aabbb611a6636882a04716a324a1201eee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129573"
 ---
 # <a name="change-notifications-for-microsoft-teams-resources-using-microsoft-graph"></a>使用 Microsoft Graph 更改 Microsoft Teams 资源的通知
 

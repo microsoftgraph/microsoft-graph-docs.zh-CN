@@ -4,18 +4,18 @@ description: 使用应用和 microsoft graph Microsoft Teams活动Teams源通知
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 01e029092994c75ee5a787e830f6458755b3024b
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 5f22e1cc24a2ac622cdf918f3abe6c5bba0ea699fb7d5c97bf14b59a5fee063b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53429967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174733"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>向用户发送活动源通知Microsoft Teams
 
 通过Microsoft Teams活动源，用户可以通过通知用户更改来对需要关注的项目进行分类。 可以使用 Microsoft 应用中的活动源通知 API Graph将此功能扩展到你的应用。 这允许应用提供更丰富的体验，并且通过帮助用户了解其使用的工具和工作流中的更改，从而更好地吸引用户。
 
-## <a name="understanding-the-basics-of-activity-feed-notification"></a>了解活动源通知的基础知识
+## <a name="understanding-the-basics-of-activity-feed-notification"></a>了解活动源通知的基础信息
 
 活动源Microsoft Teams由多个信息位组成，一起显示，如下图所示。
 
@@ -23,11 +23,11 @@ ms.locfileid: "53429967"
 
 这些组件包括：
 - 发起活动的人
-- 表示活动类型的图标
-- 参与者执行活动的原因
+- 代表活动类型的图标
+- 行动者执行活动的原因
 - 文本预览
 - 时间戳
-- 活动的位置
+- 活动位置
 
 以下示例演示这些组件如何一起提供有关通知的详细信息。 此示例是有关在社区中提及的用户Yammer通知。
 

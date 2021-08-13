@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3745083b404a8de6f68844af9b1767ac2319059f
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 5d28f3a2a423947eaf27a5b6878607d6efac6dda3dd6d2f01907621b17177732
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149672"
 ---
 # <a name="searchquery-resource-type"></a>searchQuery 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "49377969"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|queryString|字符串|包含搜索词的搜索查询。 此为必需属性。|
+|queryString|String|包含搜索词的搜索查询。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

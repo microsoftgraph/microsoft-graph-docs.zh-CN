@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a4145594557f526ea9dfaf70736529cd83eee5b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 14968430920366aeaf2c35a4bd135612f70358460fc0b2b1aa17608330bf8cd1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52743061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202705"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>创建 windowsInformationProtectionAppLearningSummary
 

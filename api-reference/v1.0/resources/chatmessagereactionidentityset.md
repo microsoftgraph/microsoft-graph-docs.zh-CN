@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 086cca8963bbb019ab7754a6aba3b644a5e14e2e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 59b1e110f5d74fdf4883cf7e59adfe5aacdf8b88fcd6e5e6da5728cc2e948f9a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189884"
 ---
 # <a name="chatmessagereactionidentityset-resource-type"></a>chatMessageReactionIdentitySet 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "53211071"
 |:---|:---|:---|
 |application|[Identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 未设置，因为应用程序无法对消息做出反应。|
 |设备|[identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 未设置，因为设备无法对消息做出反应。|
-|user|[identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 有关对邮件做出响应的用户的详细信息。|
+|用户|[identity](../resources/identity.md)|继承自 [identitySet](../resources/identityset.md)。 有关对邮件做出响应的用户的详细信息。|
 
 ## <a name="relationships"></a>关系
 无。

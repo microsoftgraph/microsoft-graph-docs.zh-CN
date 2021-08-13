@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 246a0236b705f98835a4c8131a04e28d3d8c846c
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 1537f68a0e2f3a1a55e7b677370bb005b3c7a60ff41f0aecf0327b987c3b9739
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53367025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129559"
 ---
 # <a name="get-change-notifications-for-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取聊天的更改通知
 

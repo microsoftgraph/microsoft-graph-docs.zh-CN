@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0ba79f634432b6f481bb94be3b70b6821fb84e7d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 493b42da4fc73d7bf0e37bb0be6f80be3754e20441568bb11d371c996819e8b4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141698"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty 资源类型
 

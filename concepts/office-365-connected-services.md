@@ -4,12 +4,12 @@ description: 你可以使用 Visual Studio 中的连接服务配置应用，从�
 localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
-ms.openlocfilehash: 95fbe544edff9543d694f5fa024929fd7e241160
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0a9dcd50126a7de5a27aadd7d47a492d2199f7b652bd5d8657e35b36b9afcef8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218322"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>使用 Microsoft Graph API 在 Visual Studio 2017 中调用 Microsoft 365 服务
 
@@ -63,7 +63,7 @@ ms.locfileid: "51921663"
  
 
 ## <a name="run-the-sample"></a>运行示例
-生成和运行示例 接下来，选择右上角的“登录”链接，然后依次选择“获取电子邮件地址”和“发送电子邮件”
+生成并运行示例。接下来，选择右上角的 **“登录”** 链接，然后依次选择 **“获取电子邮件地址”** 和 **“发送电子邮件”**。
 
 这将发送一封电子邮件，其中包含指向你的个人资料照片的链接。
 
@@ -81,7 +81,7 @@ ms.locfileid: "51921663"
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) - 对当前用户进行身份验证并初始化该示例的令牌缓存。
 
-- TokenStorage\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - 存储用户的令牌信息。 可以使用你自己的自定义令牌缓存来替换此信息。 有关详细信息，请参阅[在多租户应用程序中缓存访问令牌](/azure/architecture/multitenant-identity/token-cache)。
+- TokenStorage\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - 存储用户的令牌信息。可以使用自己的自定义令牌缓存来替换此信息。有关详细信息，请参阅[在多租户应用程序中缓存访问令牌](/azure/architecture/multitenant-identity/token-cache)。
 
 - Helpers\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) - 实施本地 IAuthProvider 接口，并获取访问令牌。 
 

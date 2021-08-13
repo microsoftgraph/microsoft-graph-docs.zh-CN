@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7d7fadabdd8bc3581a2a32b70fad2b27c71c3b5c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: d2c4bffc0de82f4bdb55186db76dc0eb0fe17ff77e3edf6cc1b0d6fddcf32d68
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469543"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202551"
 ---
 # <a name="adminconsentrequestpolicy-resource-type"></a>adminConsentRequestPolicy 资源类型
 
@@ -31,11 +31,11 @@ ms.locfileid: "51469543"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|isEnabled|Boolean|指定是启用还是禁用管理员同意请求功能。 必需。|
-|notifyReviewers|Boolean|指定审阅者是否将收到通知。 必需。|
-|remindersEnabled|Boolean|指定审阅者是否将收到提醒电子邮件。 必需。|
+|isEnabled|Boolean|指定是启用还是禁用管理员同意请求功能。 必填。|
+|notifyReviewers|Boolean|指定审阅者是否将收到通知。 必填。|
+|remindersEnabled|Boolean|指定审阅者是否将收到提醒电子邮件。 必填。|
 |requestDurationInDays|Int32|指定请求在未应用决策时自动过期之前处于活动状态的持续时间。|
-|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|管理员同意的审阅者列表。 必需。|
+|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|管理员同意的审阅者列表。 必填。|
 |version|Int32|指定此策略的版本。 更新策略时，将更新此版本。 只读。|
 
 ## <a name="relationships"></a>关系

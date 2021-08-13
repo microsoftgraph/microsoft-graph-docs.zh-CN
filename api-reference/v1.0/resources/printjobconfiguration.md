@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: f848b9274172113404a39f13e42c003643dfdf74
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 1e13d74fb7a9ed977a380050e49c8d3f267e045299474ca622aa408d738a4562
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223240"
 ---
 # <a name="printjobconfiguration-resource-type"></a>printJobConfiguration 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "51944239"
 |finishings|[printFinishing](enums.md#printfinishing-values) 集合|完成打印时使用的过程。|
 |pagesPerSheet|Int32|每张工作表上要打印的文档页数。
 |multipageLayout|[printMultipageLayout](enums.md#printmultipagelayout-values)|每张工作表打印多个页面时布局页面的方向。 下表介绍了有效值。|
-|collate|布尔|打印多页文档的多个副本时，打印机是否应该整理页面。|
+|collate|Boolean|打印多页文档的多个副本时，打印机是否应该整理页面。|
 |scaling|[printScaling](enums.md#printscaling-values)|指定打印机如何缩放文档数据以适应请求的媒体。 下表介绍了有效值。|
 
 ## <a name="relationships"></a>关系

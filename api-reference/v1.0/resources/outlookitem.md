@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 37a9d548e0eac3d07a66ca4b28c243c076a743bb
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 5f06bdc5b554d3ebc4e0d5d733db08d946b4c8615e965961dcef9d826c794009
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721535"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138498"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem 资源类型
 
@@ -44,9 +44,9 @@ ms.locfileid: "50721535"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categories|String collection|与项目关联的类别|
-|changeKey|字符串|标识项目的版本。 每次项目更改时，changeKey 也更改。 这样，Exchange 可以将更改应用于该对象的正确版本。 只读。|
+|changeKey|String|标识项目的版本。 每次项目更改时，changeKey 也更改。 这样，Exchange 可以将更改应用于该对象的正确版本。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|id|字符串| 只读。|
+|id|String| 只读。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>关系

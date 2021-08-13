@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5581d988cc47d5803e2a753182289458cbeaa747
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: fa8d162920c0a3678535ac6e8857191354216783b18ea348436b3d9681e1157f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229280"
 ---
 # <a name="property-resource-type"></a>属性资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "53665878"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|aliases|String 集合|属性的一组别名或友好名称。 最多 32 个字符。 每个字符串不得包含控制字符、空格或以下任何字符： `:` 、 、 `;` `,` 、 `(` `)` 、 `[` `]` 、 `{` 、 `}` 、 `%` `$` `+` `!` 、 `*` `=` `&` `?` `@` `#` `\` `~` `'` `"` `<` `>` `|` `` ` `` `^` 。 可选。|
+|aliases|String collection|属性的一组别名或友好名称。 最多 32 个字符。 每个字符串不得包含控制字符、空格或以下任何字符： `:` 、 、 `;` `,` 、 `(` `)` 、 `[` `]` 、 `{` 、 `}` 、 `%` `$` `+` `!` 、 `*` `=` `&` `?` `@` `#` `\` `~` `'` `"` `<` `>` `|` `` ` `` `^` 。 可选。|
 |isQueryable|Boolean|指定属性是否可查询。 可查询属性可用于关键字查询语言 [ (KQL) 查询](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。 可选。|
 |isRefinable|Boolean|指定属性是否可精简。  可精简属性可用于筛选搜索[API](search-api-overview.md)中的搜索结果，在用户体验中Microsoft 搜索精简程序控件。 可选。|
 |isRetrievable|Boolean|指定属性是否可检索。 当搜索 API 返回项目结果集可检索属性将返回在搜索记录中。 还可将可检索属性添加到用于呈现搜索结果的显示模板。 可选。|

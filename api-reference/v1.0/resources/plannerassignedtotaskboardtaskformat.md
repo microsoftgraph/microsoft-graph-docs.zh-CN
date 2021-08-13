@@ -1,29 +1,29 @@
 ---
 title: plannerAssignedToTaskBoardTaskFormat 资源类型
-description: '**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图中正确呈现任务的信息，该信息 (将任务分配给其) 的用户组织的视图。 每个任务都有一个与之关联的 **plannerAssignedToTaskBoardTaskFormat** 对象。'
+description: '**plannerAssignedToTaskBoardTaskFormat** 资源表示用于在任务板的 AssignedTo 视图中正确呈现任务的信息 (该视图由任务分配给) 的用户组织。 每个任务都有一个 **与之关联的 plannerAssignedToTaskBoardTaskFormat** 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: aca03e2a82d7fe42aa229c2f53d0c1dd066a30bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca256007f0e4b10fab53f814942736ead094555fef69b038c9680a8e08139303
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037617"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152325"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>plannerAssignedToTaskBoardTaskFormat 资源类型
 
 命名空间：microsoft.graph
 
-**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图中正确呈现任务的信息，该信息 (将任务分配给其) 的用户组织的视图。 每个 [任务](plannertask.md) 都有一个与之关联的 **plannerAssignedToTaskBoardTaskFormat** 对象。
+**plannerAssignedToTaskBoardTaskFormat** 资源表示用于在任务板的 AssignedTo 视图中正确呈现任务的信息 (该视图由任务分配给) 的用户组织。 每个 [任务](plannertask.md) 都有一个 **与之关联的 plannerAssignedToTaskBoardTaskFormat** 对象。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |读取 **plannerAssignedToTaskBoardTaskFormat** 对象的属性和关系。|
+|[获取 plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |读取 **plannerAssignedToTaskBoardTaskFormat 对象的属性和** 关系。|
 |[更新](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)  |更新 **plannerAssignedToTaskBoardTaskFormat** 对象。 |
 
 ## <a name="properties"></a>属性

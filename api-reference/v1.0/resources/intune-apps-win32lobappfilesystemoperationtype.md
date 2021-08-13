@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20189d8adc65c2f38e5cb757df0640fff1a21618
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 30ff094d5673dbd7e34f44ff669ae49079dbdc354a1e8c21518f6c44e006fb59
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169625"
 ---
 # <a name="win32lobappfilesystemoperationtype-enum-type"></a>win32LobAppFileSystemOperationType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752201"
 包含所有受支持的文件系统检测类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |exists|1|指定的文件或文件夹是否存在。|

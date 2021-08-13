@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c3bd5a0d69ab392fc55ac1f44bfbe3dc6d74ad08
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: cb97f04a311956337403b4900abda00c9acf9fbcc9c6083511616ec39056989a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235875"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -22,9 +22,7 @@ ms.locfileid: "49790613"
 
 Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
-可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。
-如果请求的大小不可用，则仍然可以获取用户已上载且可供使用的较小大小。
-例如，如果用户上传像素为 504x504 的照片，除 648x648 外的所有尺寸的照片都可供下载。
+可以获取最大可用照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。如果请求的照片大小不可用，则仍然可以获取用户已上传且可供使用的较小尺寸。例如，如果用户上传像素为 504x504 的照片，除 648x648 外的所有尺寸的照片都可供下载。
 
 ## <a name="permissions"></a>权限
 
@@ -112,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
 ##### <a name="response"></a>响应
-包含所请求照片的二进制数据。 HTTP 响应代码为 200。
+包含所请求照片的二进制数据。HTTP 响应代码为 200。
 
 ### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>示例 2：获取已登录用户的 48x48 照片
 ##### <a name="request"></a>请求
@@ -126,7 +124,7 @@ Content-Type: image/jpg
 ```
 
 ##### <a name="response"></a>响应
-包含所请求的 48x48 照片的二进制数据。 HTTP 响应代码为 200。
+包含所请求的 48x48 照片的二进制数据。HTTP 响应代码为 200。
 
 ### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>示例 3：获取已登录用户的用户照片的元数据
 ##### <a name="request"></a>请求
@@ -199,7 +197,7 @@ const attachments = [{
 
 有关此示例的实现，请参阅[用于 Node.js 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。
 
-如果想要在网页上显示图像，可以通过图像创建内存中对象，然后使该对象成为图像元素源。 以下示例演示了如何在 JavaScript 中执行此操作。
+如果想要在网页上显示图像，可以通过图像创建内存中对象，然后使该对象成为图像元素源。下面是此操作的 JavaScript 示例。
 
 ```javascript
 const url = window.URL || window.webkitURL;

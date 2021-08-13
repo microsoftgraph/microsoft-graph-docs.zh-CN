@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bd52e6857853172e43f5424b844a5345c84791c8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ed3c7af547921dc7b7745f90667f64fabedbf7e60a3308655d795c23038e16d9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055804"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121555"
 ---
 # <a name="range-offsetrange"></a>Range:OffsetRange
 
@@ -76,7 +76,7 @@ Content-length: 49
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

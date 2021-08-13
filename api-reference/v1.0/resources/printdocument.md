@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: d8ca73a6e8acfb6ac2326b171b2b8c04fed7e039
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 4e2c8359b49e2154e3f107c97edf93fc64bd394837d5cf8ca8b1daa14446b857
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169366"
 ---
 # <a name="printdocument-resource-type"></a>printDocument 资源类型
 
@@ -20,11 +20,11 @@ ms.locfileid: "50517196"
 
 表示正在打印的文档。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
-| [创建上载会话](../api/printdocument-createuploadsession.md) | [uploadSession](uploadsession.md) | 创建上载会话以迭代上载 **printDocument** 的二进制文件范围。 |
-| [下载二进制文件](../api/printdocument-get-file.md) | 下载 Url | 下载与 **printDocument 关联的二进制文件**。 |
+| [创建上传会话](../api/printdocument-createuploadsession.md) | [uploadSession](uploadsession.md) | 创建上载会话以迭代上载 printDocument 的二 **进制文件范围**。 |
+| [下载二进制文件](../api/printdocument-get-file.md) | 下载 URL | 下载与 **printDocument 关联的二进制文件**。 |
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

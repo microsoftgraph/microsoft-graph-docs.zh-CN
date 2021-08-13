@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61e79f3551f3bac80dd51ad7e90e6db8e4025976
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 48dd31807cc4169b00606da4e4998a3c4513b9c0b3f18e3e3271099717b0816b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753760"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192822"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock 操作
 

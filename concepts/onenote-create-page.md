@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 856a266a435bf0fb2146fc786ec72058e38debce
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 4bfd49759e7503992592492b17775e1d7ffb54015434dcca4a628afc0779550b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165572"
 ---
 # <a name="create-onenote-pages"></a>创建 OneNote 页
 
@@ -225,7 +225,7 @@ Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRL
 | 响应正文 | 采用 JSON 格式的新页的 OData 表示形式。 |  
 | 错误 | 如果请求失败，API 将在响应正文的 **\@api.diagnostics** 对象中返回错误。 |  
 | 位置标头 | 新页的资源 URL。 |  
-| X-CorrelationId 标头 | 唯一标识该请求的 GUID。 在与 Microsoft 支持部门协作来解决问题时，可以使用此值和日期标头值。 |  
+| X-CorrelationId 标头 | 唯一标识请求的 GUID。在与 Microsoft 支持部门协作来解决问题时，可以使用此值和日期标头值。 |  
 
 
 <a name="root-url"></a>

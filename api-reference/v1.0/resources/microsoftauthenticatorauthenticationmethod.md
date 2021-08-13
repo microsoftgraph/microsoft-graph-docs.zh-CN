@@ -1,22 +1,22 @@
 ---
 title: microsoftAuthenticatorAuthenticationMethod 资源类型
-description: 注册到用户的 Microsoft Authenticator 应用的表示形式。 Microsoft Authenticator 是一种身份验证方法。
+description: 注册到Microsoft Authenticator应用的表示形式。 Microsoft Authenticator身份验证方法。
 author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f7438ca72a4f5d4063eec0444d3b0028237083d9
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 61f263b45b8e353622f06e6912f0659e2a8e147fabe208d8ea9ea2b94f555884
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468987"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211939"
 ---
 # <a name="microsoftauthenticatorauthenticationmethod-resource-type"></a>microsoftAuthenticatorAuthenticationMethod 资源类型
 
 命名空间：microsoft.graph
 
-注册到用户的 Microsoft Authenticator 应用的表示形式。 Microsoft Authenticator 是一种身份验证方法。
+注册到Microsoft Authenticator应用的表示形式。 Microsoft Authenticator身份验证方法。
 
 继承自 [authenticationMethod](../resources/authenticationmethod.md)。
 
@@ -30,16 +30,16 @@ ms.locfileid: "51468987"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|注册此应用程序的日期和时间。 如果设备未注册无密码电话登录，则此属性为 null。|
+|createdDateTime|DateTimeOffset|注册此应用程序的日期和时间。 如果设备未注册无密码登录，则电话为空。|
 |displayName|String|注册此应用的设备的名称。|
 |id|String|此身份验证方法的唯一标识符。 继承自 [authenticationMethod](../resources/authenticationmethod.md)|
 |deviceTag|String|包含应用元数据的标记。|
-|phoneAppVersion|String|Authenticator 应用的此实例的数字版本。|
+|phoneAppVersion|String|此应用程序实例的数字Authenticator版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|设备|[设备](../resources/device.md)|Microsoft Authenticator 所在的已注册设备。 如果设备未注册无密码电话登录，则此属性为 null。|
+|设备|[设备](../resources/device.md)|注册设备所在的Microsoft Authenticator。 如果设备未注册无密码登录，则电话为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

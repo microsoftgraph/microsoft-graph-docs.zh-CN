@@ -4,12 +4,12 @@ description: 在 Windows 开发人员中心注册应用程序，使应用客户�
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: e693e3edb0f6ec718d4aed6eb976da5a6f14c736
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 1a3b55583ff2d945207b3f49f15ff055b033ec2c1420c950fe2238d7964cd768
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288369"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169134"
 ---
 # <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications"></a>载入跨设备 Microsoft Graph 通知体验
 
@@ -27,7 +27,7 @@ ms.locfileid: "48288369"
 
 ![配置新的跨设备应用注册](images/notifications-crossdevice-new-configure.png)
 
-2.  选择应用具有状态且可以接收通知的所有受支持平台。 可以从受支持平台（包括 Windows、Android 和 iOS）中进行选择，如图所示。 
+2.  选择应用具有状态且可以接收通知的所有受支持平台。 可以从受支持平台（包括 Windows、Android 和 iOS）中进行选择，如图所示。 
 
 ![设置受支持的平台类型](images/notifications-crossdevice-supported-platforms.png)
 

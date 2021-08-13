@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: e81614ba6c17955e8199e5c5aae6c643d93e9068
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 07e160d21696992588642cd904ffe1f2625c1d1af3fec8e3d56d0feaf9f5d372
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178057"
 ---
 # <a name="printer-resource-type"></a>打印机资源类型
 
@@ -28,8 +28,8 @@ ms.locfileid: "52232037"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-| [创建](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建 (通用) 新打印机进行注册。 |
-| [获取](../api/printer-get.md) | [打印机](printer.md) | 读取打印机对象的属性和关系。 |
+| [Create](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建 (通用) 新打印机进行注册。 |
+| [Get](../api/printer-get.md) | [打印机](printer.md) | 读取打印机对象的属性和关系。 |
 | [更新](../api/printer-update.md) | [打印机](printer.md) | 更新打印机对象。 |
 | [删除](../api/printer-delete.md) | 无 | 从通用打印服务中注销物理打印机。 |
 | [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | 无 | 将打印机的默认设置还原到制造商指定的值。 |
@@ -49,7 +49,7 @@ ms.locfileid: "52232037"
 |manufacturer|String|打印机报告的制造商。 继承自 [printerBase](../resources/printerbase.md)。|
 |model|String|打印机报告的型号名称。 继承自 [printerBase](../resources/printerbase.md)。|
 |registeredDateTime|DateTimeOffset|注册打印机时的日期时间Offset。 只读。|
-|状态|[printerStatus](printerstatus.md)|打印机的处理状态，包括任何错误。 继承自 [printerBase](../resources/printerbase.md)。|
+|status|[printerStatus](printerstatus.md)|打印机的处理状态，包括任何错误。 继承自 [printerBase](../resources/printerbase.md)。|
 |isShared|Boolean|如果共享打印机，则其为 True;否则为 false。 只读。|
 |hasPhysicalDevice|Boolean|如此 如果打印机具有用于打印的物理设备。 只读。|
 |isAcceptingJobs|Boolean|打印机当前是否接受新的打印作业。 继承自 [printerBase](../resources/printerbase.md)。|

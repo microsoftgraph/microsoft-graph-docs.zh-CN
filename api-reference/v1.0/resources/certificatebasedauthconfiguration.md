@@ -5,29 +5,29 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8580851fe5f2c9266659b0bf26e85a9eca07185c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2d46c8df25b46b62a0c987042178261a8b31a3c43ff8c542c8fc1234b2ed9d21
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163843"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>certificateBasedAuthConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-通过基于证书的身份验证，可以在将 Exchange Online 帐户连接到 Windows、Android 或 iOS 设备上时，使用客户端证书通过 Azure Active Directory 进行身份验证：
+使用基于证书的身份验证，Azure Active Directory在 Windows、Android 或 iOS 设备上使用客户端证书进行身份验证，Exchange Online帐户连接到：
 
 - Microsoft 移动应用程序，如 Outlook 和 Word
 - Exchange ActiveSync (EAS) 客户端
 
-配置此功能后，无需在移动设备上的某些邮件和Microsoft Office输入用户名和密码组合。
+通过配置此功能，无需在移动设备上的某些邮件Microsoft Office输入用户名和密码组合。
 
-基于证书的身份验证配置通过证书颁发机构集合提供。 证书颁发机构用于建立受信任的证书链，使客户端可以通过 Azure Active Directory 使用客户端证书进行身份验证。
+基于证书的身份验证配置通过一组证书颁发机构提供。 证书颁发机构用于建立受信任的证书链，该链使客户端Azure Active Directory客户端证书进行身份验证。
 
-了解有关 Azure [Active Directory 中基于证书的身份验证的信息](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
+详细了解 Azure Active Directory 中[基于证书的身份验证](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -37,7 +37,7 @@ ms.locfileid: "50443900"
 | [删除 certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | 无 | 删除 **certificateBasedAuthConfiguration** 对象。 |
 
 >[!NOTE]
->不支持 **更新 certificateBasedAuthConfiguration。** 若要更改 **certificateBasedAuthConfiguration，** 请首先删除并创建新的 **certificateBasedAuthConfiguration。**
+>不支持 **更新 certificateBasedAuthConfiguration。** 若要更改 **certificateBasedAuthConfiguration，** 首先删除 ，然后创建新的 **certificateBasedAuthConfiguration**。
 
 ## <a name="properties"></a>属性
 
@@ -48,7 +48,7 @@ ms.locfileid: "50443900"
 
 ## <a name="relationships"></a>关系
 
-无，
+无、
 
 ## <a name="json-representation"></a>JSON 表示形式
 

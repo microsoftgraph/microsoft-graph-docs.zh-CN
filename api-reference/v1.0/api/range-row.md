@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 24c9aa530afd08742f62be07f3639358fd7f052f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 77925cd82e8f0e10ae2f2c656e657118c517cb055f6f2fdfea681b57c9a5f4b3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055797"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169828"
 ---
 # <a name="range-row"></a>Range:Row
 
@@ -76,7 +76,7 @@ Content-length: 18
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

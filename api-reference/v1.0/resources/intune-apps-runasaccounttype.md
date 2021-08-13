@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e7b664ad021997edf6fc8ed735b3a9d4e9ca64d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 122761cd0584b78f461af210522621ae1b12acd92a35cf69d71893c9f674152c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124428"
 ---
 # <a name="runasaccounttype-enum-type"></a>runAsAccountType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "52759480"
 |成员|值|说明|
 |:---|:---|:---|
 |system|0|系统上下文|
-|user|1|用户上下文|
+|用户|1|用户上下文|
 
 
 

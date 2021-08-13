@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fdeada417253e5edd13ab2d20fa3f471788747c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 78311971ad856cd43b9ce75299960325d78f30c35fd76a1903bedd3d48659bcc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192871"
 ---
 # <a name="get-softwareupdatestatussummary"></a>获取 softwareUpdateStatusSummary
 
