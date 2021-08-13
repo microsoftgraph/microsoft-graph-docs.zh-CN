@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7a78daf6f0e1dd1cd4a271e89b19d541fbe32d0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bceac8ed16809ad99fcf479997b754a2e1c6af143e6413222531708752d342f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147005"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 

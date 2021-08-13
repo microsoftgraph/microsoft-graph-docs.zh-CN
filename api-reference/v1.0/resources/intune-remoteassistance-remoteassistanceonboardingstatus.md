@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8d63300e02f1442a38bbcda7f8e211e9356b8e57
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 04e9c73c0b0e1c6218332169bea16e3ccc2900772745008525ab1b2b031de7b8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182432"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>remoteAssistanceOnboardingStatus 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52755677"
 当前的 TeamViewer 连接器状态
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notOnboarded|0|未配置或处于活动状态的 TeamViewer 连接器时报告的状态|
 |载入|1|当系统启动 TeamViewer 连接，但服务尚未完成连接器确认时报告的状态|

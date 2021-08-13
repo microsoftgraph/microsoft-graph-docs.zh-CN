@@ -1,22 +1,22 @@
 ---
 title: incomingContext 资源类型
-description: 代表与传入呼叫相关联的上下文。
+description: 表示与传入呼叫关联的上下文。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 02bc6117ccf8a7ab0ce0bd1905883afdf61fc542
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f7409048acb19e36446b257ed32acceff76d5783f3cf4050620de3da5e11314
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054908"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231787"
 ---
 # <a name="incomingcontext-resource-type"></a>incomingContext 资源类型
 
 命名空间：microsoft.graph
 
-代表与传入呼叫相关联的上下文。
+表示与传入呼叫关联的上下文。
 
 ## <a name="properties"></a>属性
 
@@ -24,7 +24,7 @@ ms.locfileid: "48054908"
 |:----------------------|:------------------------------|:------------------------------------------------------------------------|
 | sourceParticipantId   | String                        | 触发传入呼叫的参与者的 ID。 只读。  |
 | observedParticipantId | String                        | 正在观察的参与者的 ID。 只读。         |
-| onBehalfOf            | [identitySet](identityset.md) | 代表调用所发生的标识。                   |
+| onBehalfOf            | [identitySet](identityset.md) | 代表进行呼叫的标识。                   |
 | transferor            | [identitySet](identityset.md) | 转接呼叫的标识。                                 |
 
 ## <a name="json-representation"></a>JSON 表示形式

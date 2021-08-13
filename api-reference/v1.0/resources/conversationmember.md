@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c82f7e1ec927c73ad41771fc00e013dda1755a80
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 73d7e7526c870887edbade4555b3a699e458183f3b3753176574448525997105
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155167"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 

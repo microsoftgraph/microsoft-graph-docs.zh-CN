@@ -3,12 +3,12 @@ title: 将 iOS 应用与用户通知客户端 SDK 相集成
 description: 将 iOS 应用与用户通知客户端 SDK 相集成。
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 9a89fd3080b4bcc5d16f58be35d9e339388c0e39
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: efe4505e0c56e37150f8066f9571c06f2b41797e04c1f671bb790bb27adb00b0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211724"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>将 iOS 应用与用户通知客户端 SDK 相集成
 
@@ -31,7 +31,7 @@ ms.locfileid: "48288670"
 
 该图显示了以下步骤： 
 
-1. 应用程序逻辑。 此步骤可捕获用于触发向用户发布通知的事件。 这是特定于应用的逻辑，它可以是 Microsoft Graph 中的事件或其他内容的数据更新（例如新的日历事件或任务分配），也可以是应用服务希望向用户通知的其他内容。
+1. 应用逻辑。这一步抓住了触发通知发布给用户的因素。这是特定于应用的逻辑，它可以是 Microsoft Graph 中的事件或其他内容的数据更新（例如新的日历事件或任务分配），也可以是应用服务希望向用户通知的其他内容。
 2. 应用服务器通过 Microsoft Graph 通知 API 向目标用户发布通知。 有关详细信息，请参阅[服务器端集成](notifications-integrating-app-server.md)。
 3. 在收到包含新通知的 Web 请求后，Microsoft Graph 通知会在此应用和此用户的云中安全地保留通知内容。
 4. 对于订阅接收此用户通知的每个应用客户端实例，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，应用程序是 iOS 应用，它使用[APN 后台更新通知]来发送信号。 

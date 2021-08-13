@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 937fabdba7863e209140019effe7c28458ab65c8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1054c0ef4605b21c9f90f57332ef8bf43dc70d6596c3203ed99aeaea7ff5258a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232375"
 ---
 # <a name="list-methods"></a>List 方法
 

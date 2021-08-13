@@ -1,32 +1,32 @@
 ---
 title: searchHit 资源类型
-description: SearchHit 实体的说明
+description: searchHit 实体的说明
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: bad671657e46068263d3386eb0bb04026cfaa28e
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 3cc9d069e91dd8c8d51ba6b010c2c3ccc9dad01ac01695d6782e99bffea973e3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138327"
 ---
 # <a name="searchhit-resource-type"></a>searchHit 资源类型
 
 命名空间：microsoft.graph
 
-代表搜索结果列表中的单个结果。
+表示搜索结果列表中的单个结果。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hitId|字符串|项的内部标识符。|
+|hitId|String|项的内部标识符。|
 |排名|Int32|结果的排名或顺序。|
-|contentSource|字符串|**ExternalItem** 所属的内容源的名称。|
-|摘要|字符串|如果摘要可用，则为结果摘要。|
-|resource|[实体](entity.md)|搜索结果的基本 Microsoft Graph 表示形式。|
+|contentSource|String|**externalItem** 是 的内容源的名称。|
+|摘要|String|结果摘要（如果摘要可用）。|
+|resource|[实体](entity.md)|基础 Microsoft Graph搜索结果的表示形式。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

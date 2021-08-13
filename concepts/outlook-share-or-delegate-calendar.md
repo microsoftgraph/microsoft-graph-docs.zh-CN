@@ -4,12 +4,12 @@ description: 在 Outlook 中，日历所有者可与其他用户共享日历，�
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 8bf08b8d32a53e5b309b2048060a8c64d1cb1ce7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3e86fa3ec032e17e5859bd9bb76c9db4cb91df4571e59178264e8ef1c764e3cd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237045"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>在 Outlook 中共享或委派日历
 
@@ -17,7 +17,7 @@ ms.locfileid: "50962446"
 
 所有者还可以委派其他用户来管理所有者 _主要_ 日历中的会议。 委托人是指可以查看所有信息并对非私人活动具有写入访问权限的共享者。 他们还会收到会议请求和响应，并代表所有者响应会议请求。 此外，所有者可以向委托人授予在日历上查看所有者的 _私人_ 活动的显式权限。 
 
-在日历共享或委派生效之前，所有者将向共享者或委托人发送邀请，共享者或委托人需要接受邀请，所有者也可以显式添加共享或委派日历以供访问。 可在 Outlook 客户端中进行邀请和添加共享或委派日历。 
+在日历共享或委派生效之前，所有者将向共享者或委托人发送邀请，共享者或委托人需要接受邀请，或者显式添加共享日历或委派日历以进行访问。邀请和添加共享日历或委派日历发生在 Outlook 客户端中。 
 
 在 Outlook 中设置共享或委派后，应用可使用 Microsoft Graph API 管理共享和委派。
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3b6003df060fbb657dc3c67375f2c942ad8cff57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac4acd20c47ea54a7f4eef86b0317de79e7a689d41de6414eac7535082a7bb6e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146998"
 ---
 # <a name="chartseriesformat-resource-type"></a>ChartSeriesFormat 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "48059227"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|表示图表系列的填充格式，包括背景格式信息。只读。|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|表示线条格式。 只读。|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|表示线条格式。只读。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

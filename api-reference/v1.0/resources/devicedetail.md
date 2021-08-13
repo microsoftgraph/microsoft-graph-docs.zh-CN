@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 1c48724a12f7cb29de74a965c1cbb06a44498d26
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 56522ef5ea6a3404298c776ebdbeebe97c42b2818edfd953af66b050bf793dbd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126660"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "50761210"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|浏览器|字符串|指示用于登录的浏览器信息。|
+|浏览器|String|指示用于登录的浏览器信息。|
 |deviceId|String|指用于登录的设备的唯一 ID。|
-|displayName|字符串|指用于登录的设备的名称。|
+|displayName|String|指用于登录的设备的名称。|
 |isCompliant|Boolean|指示设备是否合规。|
 |isManaged|Boolean|指示设备是否受管理。|
 |operatingSystem|String|指示用于登录的操作系统名称和版本。|

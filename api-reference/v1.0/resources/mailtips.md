@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0a2dfe421c19b49c8c7f489bef55890a058e2c40
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 893c1e558de1c7874094044890dd070a76fe4359f50ce306aafff214e55b0607
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223345"
 ---
 # <a name="mailtips-resource-type"></a>邮件提示资源类型
 

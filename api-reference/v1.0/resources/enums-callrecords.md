@@ -1,16 +1,16 @@
 ---
 title: 呼叫记录枚举值
-description: Microsoft Graph 调用记录枚举值
+description: Microsoft Graph呼叫记录枚举值
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 95007938f016ea01747efcf55472b42024458982
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 156ad1dd4eb9fd0cdf42579a0eaa064b6baf02fbbe257379fd30904ea2815918
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212100"
 ---
 # <a name="call-records-enum-values"></a>呼叫记录枚举值
 
@@ -18,19 +18,19 @@ ms.locfileid: "48018520"
 
 ### <a name="calltype-values"></a>callType 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | groupCall
 | peerToPeer
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="clientplatform-values"></a>clientPlatform 值
 
-| Member
+| 成员
 |:--------------
 | unknown
-| 时间
+| windows
 | macOS
 | iOS
 | android
@@ -39,27 +39,27 @@ ms.locfileid: "48018520"
 | roomSystem
 | surfaceHub
 | holoLens
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="failurestage-values"></a>failureStage 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | callSetup
 | midcall
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="mediastreamdirection-values"></a>mediaStreamDirection 值
 
-| Member
+| 成员
 |:--------------
 | callerToCallee
 | calleeToCaller
 
-### <a name="modality-values"></a>模态值
+### <a name="modality-values"></a>形式值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | audio
@@ -67,32 +67,32 @@ ms.locfileid: "48018520"
 | videoBasedScreenSharing
 | data
 | screenSharing
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="networkconnectiontype-values"></a>networkConnectionType 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | 有线
 | wifi
-| 流动
-| 形
-| 向 unknownfuturevalue
+| mobile
+| 隧道
+| unknownFutureValue
 
 ### <a name="productfamily-values"></a>productFamily 值
 
-| Member
+| 成员
 |:--------------
 | unknown
-| 协作
+| teams
 | skypeForBusiness
 | lync
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="servicerole-values"></a>serviceRole 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | customBot
@@ -110,38 +110,38 @@ ms.locfileid: "48018520"
 | audioTeleconferencerController
 | skypeForBusinessUnifiedCommunicationApplicationPlatform
 | responseGroupServiceAnnouncementService
-| 网
+| gateway
 | skypeTranslator
 | skypeForBusinessAttendant
 | responseGroupService
 | 语音邮件
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="userfeedbackrating-values"></a>userFeedbackRating 值
 
-| Member
+| 成员
 |:--------------
 | notRated
-| 失败
-| 比较
-| 大量
-| 比较
+| bad
+| poor
+| fair
+| good
 | 非常好
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="wifiband-values"></a>wifiBand 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | frequency24GHz
 | frequency50GHz
 | frequency60GHz
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 ### <a name="wifiradiotype-values"></a>wifiRadioType 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | wifi80211a
@@ -150,7 +150,7 @@ ms.locfileid: "48018520"
 | wifi80211n
 | wifi80211ac
 | wifi80211ax
-| 向 unknownfuturevalue
+| unknownFutureValue
 
 <!--
 {

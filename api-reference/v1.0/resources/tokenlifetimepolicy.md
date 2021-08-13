@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d143faa87af81fbaae73973510bafe3fd3ee4fcb
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 1d35f0befc6e61aafb515e19cbc777029f627989078b003d12728e034d668896
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189154"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tokenLifetimePolicy 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "52241042"
 |id|String| 此策略的唯一标识符。 只读。|
 |definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必需。|
+|displayName|String| 此策略的显示名称。 必填。|
 |isOrganizationDefault|Boolean|如果设置为 `true` ，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 `false` 。|
 
 
@@ -65,7 +65,7 @@ ms.locfileid: "52241042"
 | 属性     | 类型   |说明| 最小值 | 最大值 | 默认值|
 |:---------------|:--------|:----------|:--------|:--------|:----|
 |AccessTokenLifetime|String|控制访问令牌和 ID 令牌都被视为有效的时间。|10 分钟|1 天|1 小时|
-|版本|整数|将值设置为 1。 必需。|无|无|无|
+|版本|整数|将值设置为 1。 必填。|无|无|无|
 
 ## <a name="relationships"></a>关系
 

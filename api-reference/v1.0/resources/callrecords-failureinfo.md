@@ -1,29 +1,29 @@
 ---
 title: failureInfo 资源类型
-description: FailureInfo 类型
+description: failureInfo 类型
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f32d0b29c62ac5f3fd9b022c550d9715756adca3
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: cabfe56215863385a55ded34914f78fdd856a0d7f341ac4cde1220f37cab77fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160084"
 ---
 # <a name="failureinfo-resource-type"></a>failureInfo 资源类型
 
 命名空间：microsoft.graph.callRecords
 
-表示有关呼叫或呼叫的部分失败原因的信息。
+表示有关呼叫或部分呼叫失败的原因的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|reason|String|对呼叫或呼叫部分失败的原因进行分类。|
-|交给|callRecords。 failureStage|发生故障时的阶段。 可取值为：`unknown`、`callSetup`、`midcall`、`unknownFutureValue`。|
+|reason|String|呼叫或部分呼叫失败原因的分类。|
+|stage|microsoft.graph.callRecords.failureStage|发生故障的阶段。 可取值为：`unknown`、`callSetup`、`midcall`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

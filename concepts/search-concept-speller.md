@@ -1,19 +1,19 @@
 ---
-title: 使用 Microsoft 搜索中心中的 Microsoft Graph请求拼写更正
+title: 使用 Microsoft Microsoft 搜索 中的 Graph API 请求拼写更正
 description: 您可以使用 Microsoft 搜索 API 获取搜索查询的拼写建议或拼写修改。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 9d7f935f2de7e0777679266fc479b302fcfaf2a9
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 0ba5d3fa36deec56cc1cd2e0aef77c27a921f6a52d81257cf5b39ef524a394df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233649"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>使用 Microsoft 搜索中心中的 Microsoft 搜索 API Graph预览版 (拼写) 
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>使用 Microsoft Microsoft 搜索 中的 Graph API 请求拼写更正 (预览) 
 
-可以使用 Microsoft 搜索 API 请求拼写更正，以处理用户查询中的拼写错误与匹配内容中的正确单词之间的不匹配。 若要请求拼写更正，在查询方法的请求正文的 **queryAlterationOptions** 属性中指定 [以下](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 属性：
+您可以使用 Microsoft 搜索 API 请求拼写更正，以处理用户查询中的拼写错误与匹配内容中的正确单词之间的不匹配。 若要请求拼写更正，在查询方法的请求正文的 **queryAlterationOptions** 属性中指定 [以下](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 属性：
 
 - **enableSuggestion** 为用户查询启用/禁用拼写建议。 您可以通过传递 `true` 获取用户查询中拼写错误的建议拼写更正信息。
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0a11300891ca4b12b15de26b5be929823b4a8ddf
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: fc6669fae134a53886a425fab2635f9ef83d7c4626fcb1056a0d7cda179d932b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149854"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "52751354"
 |intuneClient|4 |Intune 客户端托管。|
 |easIntuneClient|5 |设备是 EAS 和 Intune 客户端双托管设备。|
 |configurationManagerClient|8 |设备由 Configuration Manager 管理。|
-|configurationManagerClientMdm|10  |设备由 Configuration Manager 和 MDM 管理。|
+|configurationManagerClientMdm|10 |设备由 Configuration Manager 和 MDM 管理。|
 |configurationManagerClientMdmEas|11|设备由 Configuration Manager、MDM 和 Eas 管理。|
 |unknown|16 |未知管理代理类型。|
 |jamf|32|设备属性从 Jamf 获取。|

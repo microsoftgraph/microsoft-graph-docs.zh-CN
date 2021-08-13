@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 82792a33e1adc961712a8653f8da99fbd298f7af
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 774d0f8dce0a5e1128f8e2399fb8399f5ee84b1fa28aeee9fd2a0574ae5a4100
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196962"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>permissionGrantConditionSet 资源类型
 

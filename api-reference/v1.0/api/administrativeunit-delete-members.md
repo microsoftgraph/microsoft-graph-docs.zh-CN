@@ -5,12 +5,12 @@ author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 04783b343cd304c666ee03a8872223adef13c2c1
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: ef1bcb4aab54e18dfdf7cd2fdf0360739bc8cc69e12988f851264dd75658e700
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172657"
 ---
 # <a name="remove-a-member"></a>删除成员
 

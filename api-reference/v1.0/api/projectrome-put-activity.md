@@ -1,22 +1,22 @@
 ---
 title: 创建或替换活动
-description: 为您的应用程序创建新的或替换现有的用户活动。 如果您想要在一个请求中创建用户活动及其相关的 **historyItems** ，则可以使用深层插入。
+description: 为应用创建新的或替换现有用户活动。 如果你想要在一个请求中创建用户活动及其相关的 **historyItems，** 可以使用深层插入。
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: fd407967b11d7a28f0d6275bb0d6cfa045b417a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7f8f7b3259002dedeed089a7182ad6cacc1985e8660a0667fa4141b7b884f43
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160175"
 ---
 # <a name="create-or-replace-an-activity"></a>创建或替换活动
 
 命名空间：microsoft.graph
 
-为您的应用程序创建新的或替换现有的用户活动。 如果您想要在一个请求中创建用户活动及其相关的 **historyItems** ，则可以使用 [深层插入](#example-2-deep-insert)。
+为应用创建新的或替换现有用户活动。 如果你想要在一个请求中创建用户活动及其相关的 **historyItems，** 可以使用 [深层插入](#example-2-deep-insert)。
 
 ## <a name="permissions"></a>权限
 
@@ -36,7 +36,7 @@ ms.locfileid: "48051689"
 PUT /me/activities/{appActivityId}
 ```
 
-> **注意：** URL 中的 appActivityId 需要是 URL 安全 (除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式) ，但原始 appActivityId 不必是 URL 安全的。
+> **注意：** URL 中的 appActivityId 必须为 URL 安全 (除 RFC 2396 未保留字符之外的所有字符都必须转换为其十六进制表示形式) ，但原始 appActivityId 不一定是 URL 安全字符。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -46,15 +46,15 @@ PUT /me/activities/{appActivityId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [活动](../resources/projectrome-activity.md) 对象的 JSON 表示形式。
+在请求正文中，提供活动对象的 JSON [表示](../resources/projectrome-activity.md) 形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在 `201 Created` 创建活动或替换活动时返回响应代码 `200 OK` 。
+如果成功，如果活动已创建或活动已被替换，此方法将返回 `201 Created` `200 OK` 响应代码。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-activity"></a>示例1：创建活动
+### <a name="example-1-create-an-activity"></a>示例 1：创建活动
 
 #### <a name="request"></a>请求
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
     "blockType": "ignored",
@@ -164,9 +164,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-deep-insert"></a>示例2：深层插入
+### <a name="example-2-deep-insert"></a>示例 2：深层插入
 
-本示例在一个请求中为该活动创建一个新活动和一个历史记录项。
+此示例在一个请求中为活动创建一个新活动和一个历史记录项。
 
 #### <a name="request"></a>请求
 

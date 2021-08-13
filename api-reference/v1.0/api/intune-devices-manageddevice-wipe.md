@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df60cbab44f622f4620514594202a60582a0cf76
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 13b6611514d4825b0084719932f569982d4efcb933c88016a98239389c46e08c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202740"
 ---
 # <a name="wipe-action"></a>擦除操作
 

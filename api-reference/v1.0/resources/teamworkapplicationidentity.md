@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 67e1ed4365febae44032c09d94656d2e3ac0b504
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 78f5a4c681cae391037c6dc73d7d102d94dda6ce9c349fe6d5eeeed3fd9f3d8d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249116"
 ---
 # <a name="teamworkapplicationidentity-resource-type"></a>teamworkApplicationIdentity 资源类型
 

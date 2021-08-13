@@ -1,32 +1,32 @@
 ---
 title: claimsMappingPolicy 资源类型
-description: 表示 WS-Fed、SAML、OAuth 2.0 和 OpenID Connect 协议声明映射策略，用于颁发给特定应用程序的令牌。
+description: 表示 WS-Fed、SAML、OAuth 2.0 和 OpenID 连接协议（针对颁发给特定应用程序的令牌）声明映射策略。
 localization_priority: Normal
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9d75b442d77155636cda6834abaea99f4a40a3e2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2ef027ac3729f85cc7f0e925067dd785eb10adfc86cea29435f02aecb6fc46b2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189879"
 ---
 # <a name="claimsmappingpolicy-resource-type"></a>claimsMappingPolicy 资源类型
 
 命名空间：microsoft.graph
 
-表示 WS-Fed、SAML、OAuth 2.0 和 OpenID Connect 协议声明映射策略，用于颁发给特定应用程序的令牌。 可以使用声明映射策略：
+表示 WS-Fed、SAML、OAuth 2.0 和 OpenID 连接协议（针对颁发给特定应用程序的令牌）声明映射策略。 可以使用声明映射策略：
 
 - 选择令牌中包含的声明
 - 创建不存在声明类型
 - 选择或更改特定声明发出的数据源  
 
-有关更多方案和配置详细信息，请参阅 [如何：自定义](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties)在租户中特定应用的令牌中发出的声明。
+有关更多方案和配置详细信息，请参阅如何：自定义在令牌中为租户中的特定 [应用发出的声明](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties)。
 
 继承自 [stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -42,16 +42,16 @@ ms.locfileid: "50448037"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String| 此策略的唯一标识符。 只读。|
-|definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。 有关此属性的 JSON 架构的详细信息，请参阅下文。 必需。|
+|definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必填。|
 |isOrganizationDefault|Boolean|忽略此属性。 声明映射策略只能应用于服务主体，并且不能为组织全局设置。|
 
 ### <a name="properties-of-a-claims-mapping-policy-definition"></a>声明映射策略定义的属性
 
-下面的属性构成表示声明映射策略的 JSON 对象。 此 JSON 对象 **必须转换为带** 转义引号的字符串，以插入到 **定义** 属性中。 下面显示了一些定义示例：
+下面的属性构成表示声明映射策略的 JSON 对象。 此 JSON 对象必须 **转换为** 转义为要插入到定义属性中的引号 **的** 字符串。 下面显示了一些定义示例：
 
-#### <a name="example-definition-to-include-the-employeeid-and-tenantcountry-as-claims-in-tokens"></a>示例 **：定义** 以在令牌中包括 EmployeeID 和 TenantCountry 作为声明
+#### <a name="example-definition-to-include-the-employeeid-and-tenantcountry-as-claims-in-tokens"></a>示例： **定义** 以将 EmployeeID 和 TenantCountry 作为声明包括在令牌中
 <!-- {
   "blockType": "ignored"
 }-->
@@ -94,10 +94,10 @@ ms.locfileid: "50448037"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|版本|整数|设置值 1。 必填。|
+|版本|整数|将值设置为 1。 必填。|
 |IncludeBasicClaimSet|Boolean|如果设置为 true，则基本声明集内的所有声明在受策略影响的令牌中发出。 如果设置为 false，则基本声明集内声明不在令牌中，除非它们分别添加到同一策略的 ClaimsSchema 属性中。|
-|ClaimsSchema|JSON 对象|定义除了基本声明集和核心声明集之外，受策略影响的令牌中还显示哪些声明。 对于此属性中定义的每个声明架构条目，都需要某些信息。 指定数据来自 (值或源/ID 对) ，以及声明数据作为声明类型 (发出) 。 有关详细信息，请参阅 [ClaimsSchema 定义](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema)。|
-|ClaimsTransformation|JSON 对象| 定义可应用于源数据的常见转换，以生成 ClaimsSchema 中指定的声明的输出数据。 有关详细信息，请参阅 [ClaimsTransformation 定义](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation)。|
+|ClaimsSchema|JSON 对象|定义除了基本声明集和核心声明集之外，受策略影响的令牌中还显示哪些声明。 对于此属性中定义的每个声明架构条目，都需要某些信息。 指定数据来自 (值或源/ID 对) ，以及将数据作为声明类型 (发出的声明) 。 有关详细信息，请参阅 [ClaimsSchema definition](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema)。|
+|ClaimsTransformation|JSON 对象| 定义可应用于源数据的常见转换，以生成 ClaimsSchema 中指定的声明的输出数据。 有关详细信息，请参阅 [ClaimsTransformation definition](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation)。|
 
 
 ## <a name="relationships"></a>关系

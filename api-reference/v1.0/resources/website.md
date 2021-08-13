@@ -1,22 +1,22 @@
 ---
 title: 网站资源类型
-description: 表示一个网站。
+description: 表示网站。
 localization_priority: Normal
 author: AAmatino
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fbdb96a9a19a9edef98d73916dcbd01dd6ba9e66
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6e237756f96df9ed0592ab38cf7af04e0fb43f90323e1b63ffc9902d4a329a1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196458"
 ---
 # <a name="website-resource-type"></a>网站资源类型
 
 命名空间：microsoft.graph
 
-表示一个网站。
+表示网站。
 
 
 ## <a name="properties"></a>属性
@@ -24,7 +24,7 @@ ms.locfileid: "48015237"
 |:---------------|:--------|:----------|
 |类型|websiteType| 可能的值包括 `other`、`home`、`work`、`blog`、`profile`。|
 |address|string|网站的 URL。|
-|displayName|string|网站的显示名称。|
+|displayName|string|显示名称的网站集。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

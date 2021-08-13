@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ccd278393968f9d0806a7d3f3cb280961bd178a7
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: c8781ea0a739662fdfbe1c9db46139edd7c8e23e67b973179b38862deec2694c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246701"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 

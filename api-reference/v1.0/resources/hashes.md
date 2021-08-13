@@ -6,12 +6,12 @@ title: Hashes 资源类型
 description: 哈希资源将可用哈希分组到项的单个结构中。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9b45d872966bc8eba3ef3d622b5b0e37c83122b6
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bd04ff57aff3d276655a173d123f228520a77b7d548afb9f8d75d30fd6ba4e6f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243551"
 ---
 # <a name="hashes-resource-type"></a>Hashes 资源类型
 
@@ -46,7 +46,7 @@ ms.locfileid: "50240001"
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | 文件内容的 SHA1 哈希（如果可用）。只读。 |
 | **sha256Hash**   | String | 文件内容的 SHA256 哈希 (（如果) ）。 只读。 |
-| **crc32Hash**    | String | 文件的 CRC32 值（如果可用， (以) 。 只读。            |
+| **crc32Hash**    | String | 文件的 CRC32 值以小尾数表示， (可用) 。 只读。            |
 | **quickXorHash** | String | 文件的专有哈希，可用于确定文件内容是否更改（如果存在）。只读。 |
 
 **注意：** 在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。

@@ -1,32 +1,32 @@
 ---
 title: conditionalAccessUsers 资源类型
-description: 表示策略作用域中包括和排除的用户、组和角色。
+description: 表示包含在策略作用域中和从策略作用域中排除的用户、组和角色。
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8f75eb86ab9627b2cb9d507de9321743524203b3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9f9930d1d1ac1b5d355699b893bfbf59f047162d1d0c0f39d0303a98b889ab7f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129770"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229302"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>conditionalAccessUsers 资源类型
 
 命名空间：microsoft.graph
 
-表示策略作用域中包括和排除的用户、组和角色。
+表示包含在策略作用域中和从策略作用域中排除的用户、组和角色。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeUsers | String collection | 策略范围内的用户 ID（除非明确排除）或 `None` 或 `All` `GuestsOrExternalUsers` 。 |
+| includeUsers | String collection | 除非明确排除或 或 ，否则策略范围中的用户 `None` `All` `GuestsOrExternalUsers` ID。 |
 | excludeUsers | String collection | 策略作用域中排除的用户 ID 和/或 `GuestsOrExternalUsers` 。 |
-| includeGroups | String collection | 策略作用域中的组 ID（除非明确排除）或 `All` 。 |
-| excludeGroups | String collection | 从策略作用域中排除的组 ID。 |
-| includeRoles | String collection | 策略作用域中的角色 ID（除非明确排除）或 `All` 。 |
+| includeGroups | String collection | 除非明确排除 或 ，否则策略作用域中的组 `All` ID。 |
+| excludeGroups | String collection | 策略作用域中排除的组 ID。 |
+| includeRoles | String collection | 除非明确排除 或 ，否则在策略作用域中的角色 `All` ID。 |
 | excludeRoles | String collection | 从策略作用域排除的角色 ID。 |
 
 ## <a name="relationships"></a>关系

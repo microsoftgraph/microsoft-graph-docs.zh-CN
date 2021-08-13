@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 445fc81351a1f0ca0f53a960409d6895c2413b78
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a58fe3750ada5a426eff598a7c1cfdec6a5e6d61be4e785082ea5f2c291fa533
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54144905"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>获取 deviceComplianceScheduledActionForRule
 

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 54ba109b6e4845b1faa75ef5b00a224dc8c877aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9684a6e105345cfa6a679d563b7da86c02fd4a561f437191c98ae1b9b1f14935
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126394"
 ---
 # <a name="officegraphinsights-resource-type"></a>officeGraphInsights 资源类型
 

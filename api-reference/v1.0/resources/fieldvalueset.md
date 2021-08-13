@@ -6,12 +6,12 @@ localization_priority: Normal
 description: 表示 listItem 资源中的列值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7986fdeb8ef3892ab149f14bc295929361d08971
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 2f7fbac0b9b46c1c3c892425e2c6ed6461027a0c8fb2c2f06a37faae2b7d9da7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240050"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146879"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
 

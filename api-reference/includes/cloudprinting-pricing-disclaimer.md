@@ -2,12 +2,12 @@
 author: nilakhan
 ms.topic: include
 ms.date: 05/17/2021
-ms.openlocfilehash: 6ed615d7585b9a72921e76a6e5727352b0558a87
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: db001b35862b0ca16d65e2f8d078ef1c311c2a01881c4d447c804412230a7111
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52648095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129973"
 ---
 <!-- markdownlint-disable MD041-->
 

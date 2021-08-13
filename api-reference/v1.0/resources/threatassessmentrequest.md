@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: aeb3733ed3c93896d701851a928e216a2b9c7c7d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5530b56d2d220f164f2e41561bec611b04a8e45bff94f4608b3b6c812346ea7b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216544"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>threatAssessmentRequest 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50952499"
 * File ([fileAssessmentRequest](fileAssessmentRequest.md) 资源) 
 * URL ([urlAssessmentRequest](urlAssessmentRequest.md) 资源) 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -42,7 +42,7 @@ ms.locfileid: "50952499"
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|提交者的预期评估。 可能的值是：`block`、`unblock`。|
 |id|String|威胁评估请求 ID 是 GUID (全局唯一) 。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
-|状态|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
+|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
 
 ## <a name="relationships"></a>关系
 

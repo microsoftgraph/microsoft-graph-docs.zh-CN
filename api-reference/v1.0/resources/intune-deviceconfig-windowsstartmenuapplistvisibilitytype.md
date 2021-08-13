@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f27fdb1aa6b9c16715599625b7efc142d8666899
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 76537bcf38023caf840194051bb7198db39cef2bb3713b60efec0c9dd4aa7261
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752789"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146466"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>windowsStartMenuAppListVisibilityType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "52752789"
 "开始"菜单应用列表可见性的类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义。 默认值。|
 |collapse|1|折叠"开始"菜单上的应用列表。|

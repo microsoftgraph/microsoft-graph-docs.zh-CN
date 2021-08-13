@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 6fe0d1603e2cd5b94e753b4e8d6b1a7e47b5aacf
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 34cb73b1bb0d14e7e99fb6668225c272341f48109455e3b8192f57d8feced14d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216301"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>在 OneNote 页中使用笔记标记
 

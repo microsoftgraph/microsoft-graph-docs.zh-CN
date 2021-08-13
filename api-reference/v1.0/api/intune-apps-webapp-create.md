@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14645ff86b9686ad7f270ecfead143475940bb95
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b3f8b131490521abad2409fc1406a3b595a37e6f26d66cf536c51e6717826785
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52750334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250656"
 ---
 # <a name="create-webapp"></a>创建 webApp
 

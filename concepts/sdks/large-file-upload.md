@@ -3,12 +3,12 @@ title: Upload Microsoft SDK 创建Graph文件
 description: 提供使用 Microsoft SDK 上传大Graph指南。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: b1a87c142f70f81b9e726727c6570f2cbce0f357
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 62949c1a309d307853443a898f2e39c6f2e8cc66a280367c418bfac67f6a702a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579702"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211694"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Upload Microsoft SDK 创建Graph文件
 

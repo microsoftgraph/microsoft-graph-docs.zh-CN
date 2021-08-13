@@ -1,22 +1,22 @@
 ---
 title: verifiedDomain 资源类型
-description: 指定租户的域。 **organization 实体的 verifiedDomains** 属性是 **VerifiedDomain 的集合**。
+description: 指定租户的域。**组织** 实体的 verifiedDomains 属性是一个 **VerifiedDomain** 集合。
 localization_priority: Normal
 author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 8636552fa99b3389f35f22e2edccc5d13cb06482
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: d92a342ff1b275f0df7bc8d56cd8920466b3c5c681c65ade65d4c6736fc43b9d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211808"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain 资源类型
 
 命名空间：microsoft.graph
 
-指定租户的域。 **organization 实体的 verifiedDomains** 属性是 **VerifiedDomain 的集合**。 [](organization.md)
+指定租户的域。**组织** 实体的 [verifiedDomains](organization.md) 属性是一个 **VerifiedDomain** 集合。
 
 
 ## <a name="properties"></a>属性

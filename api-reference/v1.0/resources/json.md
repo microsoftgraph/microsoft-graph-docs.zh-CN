@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cf683f0da15676c41826e2a8608fa7e1b2525942
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a97eca501f8f2b57d5ded994e76a6fcd7005adaa010c2bad8b8ca78b62b21598
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083069"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249172"
 ---
 # <a name="json-resource-type"></a>Json 资源类型
 

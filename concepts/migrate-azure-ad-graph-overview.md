@@ -4,12 +4,12 @@ description: 介绍如何将 Azure AD Azure Active Directory (API) 迁移到 Mic
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 46880f0bd12fa894555e315976213866a01428e9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 2eba88d5995d44098473ad138d65df8650cbddb350ad401f731238b8c381be2b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163514"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>将 Azure AD Graph应用迁移到 Microsoft Graph
 
@@ -43,7 +43,7 @@ Microsoft Graph提供对更多服务的访问权限，而不只是 Azure Active 
 ## <a name="frequently-asked-questions-faq"></a>常见问题 (FAQ)
 
 ### <a name="is-azure-ad-graph-aad-graph-deprecated"></a>Azure AD Graph (AAD Graph) 是否已弃用？  
-是。 从 2020 年 6 月 30 日开始，我们将不再向 AAD Graph。 2022 年 6 月 30 日前，我们将继续添加关键安全修补程序。 2022 年 6 月 30 日之后，API 将不再正常工作。
+能。 从 2020 年 6 月 30 日开始，我们将不再向 AAD Graph。 2022 年 6 月 30 日前，我们将继续添加关键安全修补程序。 2022 年 6 月 30 日之后，API 将不再正常工作。
 
 ### <a name="how-do-i-know-which-of-my-apps-are-using-aad-graph"></a>如何知道哪些应用程序正在使用 AAD Graph？  
 必须注册应用程序，以使用 AAD Graph。  你可以查看 Azure 租户门户上的应用注册页面，以查看给定应用程序是否注册为使用 AAD Graph。

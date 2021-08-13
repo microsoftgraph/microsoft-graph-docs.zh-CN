@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 664240e8682038aef6795601e580feb833dfcfa4
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f63aebfcae2a1ff2c42d25aff9c57135af45412484bf628ac1d85477efe126f0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757708"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185241"
 ---
 # <a name="list-androidlobapps"></a>列出 androidLobApps
 

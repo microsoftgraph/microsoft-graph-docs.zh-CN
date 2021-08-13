@@ -3,12 +3,12 @@ title: 使用 Microsoft 网站生成 web Graph Toolkit
 description: 开始使用 Microsoft Graph Toolkit 构建 Web Graph Toolkit。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: a4716b97eb3bbb9e64160d1bda3e44f32705403f
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 9890a042ce08533ce17c014a0815f1f63dbfdd46739f4f4af284bf87706124d4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082144"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236855"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>使用 Microsoft 网站生成 web Graph Toolkit
 
@@ -20,7 +20,7 @@ Microsoft Graph Toolkit入门包括以下步骤：
 3. 添加组件。
 4. 测试应用程序。
 
-## <a name="add-the-microsoft-graph-toolkit-to-your-project"></a>将 Microsoft Graph Toolkit添加到你的项目
+## <a name="add-the-microsoft-graph-toolkit-to-your-project"></a>将 Microsoft Graph 工具包添加到项目
 可以在应用程序中使用 Microsoft Graph Toolkit，方法为通过 unpkg (直接引用加载程序) 安装 npm 包。
 
 # <a name="unpkg"></a>[unpkg](#tab/html)

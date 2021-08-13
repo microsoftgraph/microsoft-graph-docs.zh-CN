@@ -1,18 +1,18 @@
 ---
 title: 使用开放扩展向用户添加自定义数据
-description: '本文将通过一个示例逐步介绍如何使用*开放扩展*。 '
+description: '本文将通过一个示例逐步介绍如何使用 *开放扩展*。 '
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 81c1d77ecc2e57dec9ae18bf298d7390b71651dc
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f64269b32074909d4f03c3e060de9f00001b57e8e94ff4052e44a40221a15b14
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249067"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>使用开放扩展向用户添加自定义数据
-本文将通过一个示例逐步介绍如何使用*开放扩展*。 
+本文将通过一个示例逐步介绍如何使用 *开放扩展*。 
 
 假设你正在构建一个可在许多不同客户端平台（例如桌面和移动设备）上使用的应用程序。你希望让用户配置自己的 UI 体验，这样无论用户使用何种设备登录你的应用都能获得相同的体验。这是对大多数应用的常见要求。 
 

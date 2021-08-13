@@ -6,12 +6,12 @@ localization_priority: Normal
 description: ItemReference 资源提供通过 API 寻址 DriveItem 所需的必要信息。
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: dd24f0d1fc0a5f5db576f5eea89b8205ff55b2b7
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: bbd491fb47404ad0ae58f3a0e10964e90a1c710198733ac6994db15848f9b00b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141530"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
@@ -53,12 +53,12 @@ ms.locfileid: "49714254"
 | 路径          | String            | 可用于导航到该项的路径。只读。
 | shareId       | String            | 可通过 [Shares][] API 访问的共享资源的唯一标识符。
 | sharepointIds | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
-| siteId        | String            | 对于 OneDrive for Business 和 SharePoint，此属性表示包含 driveItem 资源的父文档库的网站的 ID。 该值与该网站资源的 ID [属性][] 相同。 它是一 [个不透明的字符串，由网站的三个](/graph/api/resources/site#id-property) 标识符组成。 <br>对于 OneDrive，不填充此属性。
+| siteId        | String            | 对于 OneDrive for Business 和 SharePoint，此属性表示包含 driveItem 资源的父文档库的网站的 ID。 该值与该网站资源的 id 属性 [相同][] 。 它是一 [个不透明的字符串，由网站的三个](/graph/api/resources/site#id-property) 标识符组成。 <br>对于OneDrive，不填充此属性。
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares-get.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 
 ## <a name="remarks"></a>注解
 

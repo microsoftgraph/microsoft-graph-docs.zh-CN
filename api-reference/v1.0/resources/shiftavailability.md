@@ -1,30 +1,30 @@
 ---
 title: shiftAvailability 资源类型
-description: 用户计划的工作及其定期模式的可用性。
+description: 计划工作的用户的可用性及其定期模式。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 653d2be96fb0585c39fc7991c3972207fd7dcf9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1c75c5496df6e8d858be74b8001c57fe16de0b3d44a98d4229e1ad09ab77f8c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174876"
 ---
 # <a name="shiftavailability-resource-type"></a>shiftAvailability 资源类型
 
 命名空间：microsoft.graph
 
-要安排的用户在 [班次](shift.md) 和定期模式中的可用性。
+要安排排班的用户的可用性及其定期模式。 [](shift.md)
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)| 指定定期模式 |
-|因此|[timeRange](timerange.md) 集合|用户首选)  (s 的时间段。|
-|timeZone|String|指定所指定时间的时区。 |
+|timeSlots|[timeRange](timerange.md) 集合|时间段 (用户) 首选。|
+|timeZone|String|指定指定时间时区。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

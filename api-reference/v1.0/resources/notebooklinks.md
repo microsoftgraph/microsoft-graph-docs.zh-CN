@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 4600877834a27c2f70ff0dea616ee53134135f18
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 68e86841a08adab548a94dea13be83faec1460601bf3ac66a5d334ca54d1622c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251890"
 ---
 # <a name="notebooklinks-resource-type"></a>notebookLinks 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "48043834"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端，则在其中打开笔记本。|
-|oneNoteWebUrl|[externalLink](externallink.md)|在 OneNote 中的 web 上打开笔记本。|
+|oneNoteWebUrl|[externalLink](externallink.md)|在"页面"中OneNote web 版。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

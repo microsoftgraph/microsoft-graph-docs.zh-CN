@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: fed271e2b94d787a9f0822ea7630d9b53c67185b
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: d4f80c6cf33a6b53bbbf08c7c81e7efcbcff4c9587aadf0e919a960819307880
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169088"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -81,7 +81,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 | 分析（预览版） | MyAnalytics | 使用高级分析和机器学习技巧，提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 
 
-## <a name="device-management"></a>设备管理
+## <a name="device-and-app-management"></a>设备和应用管理
 
 |功能     |支持服务  |说明 |详细信息 |
 |:-----------|:--------------------|:-----------|:----------------|
@@ -89,6 +89,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |公司设备和应用管理 | Intune | 注册和配置设备，并管理组织中的移动应用程序。 | [Intune 设备和应用概述](intune-concept-overview.md) |
 | 设备更新（预览） | 适用于企业的 Windows 更新部署服务 | 可控制对从 Windows 更新网站传送内容的批准、计划、监测和防护。 | [Microsoft Graph 中的 Windows 更新](windowsupdates-concept-overview.md) |
 | 多租户管理（预览） | Microsoft 365 Lighthouse | 允许托管服务提供商 （MSP） 远程管理多个客户租户以进行合规性和威胁检测，并帮助使租户设备处于正常且安全的状态。 | [使用 Microsoft 365 Lighthouse 的多租户管理](managedtenants-concept-overview.md) |
+| 服务运行状况和通信 | Microsoft 365 和 Dynamics 365 服务 | 提供访问健康状态和关于 Microsoft 云服务的消息中心帖子。 使用服务通信 API 的值得注意的示例是 Microsoft 365 管理中心。 | [在 Microsoft Graph 中访问服务健康和通信](service-communications-concept-overview.md) |
 
 
 ## <a name="security"></a>安全性

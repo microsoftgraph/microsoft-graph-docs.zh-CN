@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 58b0a80a7e9a8864b13e36e2cef8355c46fd340d
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 4373475c4219c05b1bdf7ea741c0ed6526253d234da916e0760a3ed46fee3312
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582742"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169660"
 ---
 # <a name="chatmessagepolicytip-resource-type"></a>chatMessagePolicyTip 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "51582742"
 |:---------------|:--------|:----------|
 |complianceUrl|string|用户可以访问的 URL 来阅读有关组织的数据丢失防护策略的信息。  (，有关用户不应在聊天内容中说出内容) |
 |generalText|string|向邮件发件人显示的解释性文本。|
-|matchedConditionDescriptions|string 集合|邮件中由数据丢失防护应用检测到的不正确数据的列表。 每个 DLP 应用都定义自己的条件，例如"信用卡号"和"社会保险号"。|
+|matchedConditionDescriptions|字符串集合|邮件中由数据丢失防护应用检测到的不正确数据的列表。 每个 DLP 应用都定义自己的条件，例如"信用卡号"和"社会保险号"。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

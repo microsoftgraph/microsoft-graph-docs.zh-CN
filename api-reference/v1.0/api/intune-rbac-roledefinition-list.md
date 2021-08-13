@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c431954e4ed9dcecd26b43127c05fa353644393d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b2ddbb5c3c8cd00f92459920c2f9a3514cacb952748eec9327694f551c67130e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757884"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208991"
 ---
 # <a name="list-roledefinitions"></a>列出 roleDefinitions
 

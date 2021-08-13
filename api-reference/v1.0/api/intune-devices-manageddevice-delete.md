@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5beb70362ed90a3d9dfd3574aaac25cfcc1bdc69
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d937aeb3272675f56646a85d3778558262a0440c89010e5ba7d067b5e590da9b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52745854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209285"
 ---
 # <a name="delete-manageddevice"></a>删除 managedDevice
 

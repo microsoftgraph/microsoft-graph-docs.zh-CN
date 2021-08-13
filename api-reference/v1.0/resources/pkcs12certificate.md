@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 60350908901293ec9bf090c9e2bc174d70c922e5
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 273a1810a11e87c1981f7db2570e1773349435e981f9199b22017a35ced5b6e3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882394"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159822"
 ---
 # <a name="pkcs12certificate-resource-type"></a>pkcs12Certificate 资源类型
 

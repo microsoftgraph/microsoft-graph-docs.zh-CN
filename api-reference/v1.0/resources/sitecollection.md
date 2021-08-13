@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: siteCollection 资源提供有关网站集的详细信息。
 doc_type: resourcePageType
-ms.openlocfilehash: 1e80ad630fd1ac823ce76c44c3b789b0986d031f
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 196958674462095b8b47f82d07ac4fa7a885243b240473444c30b24014578c18
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251741"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection 资源
 
@@ -46,7 +46,7 @@ ms.locfileid: "50239434"
 |:---------------------|:---------|:---------------------------------------------------
 | **主机名称**         | string   | 网站集的主机名称。只读。
 | **dataLocationCode** | string   | 此网站集所在的地理区域代码。 只读。
-| **根**             | [根][] | 如果存在，则指示这是 SharePoint 中的根网站集。 只读。
+| **根**             | [根][] | 如果存在，则指示这是网站集中的根SharePoint。 只读。
 
 [root]: root.md
 
@@ -57,6 +57,6 @@ ms.locfileid: "50239434"
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Facets/SiteCollection"
+  "tocPath&quot;: &quot;Facets/SiteCollection"
 }-->
 

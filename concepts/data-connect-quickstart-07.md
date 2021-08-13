@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-在此部分中，我们将生成第一 ASP.NET 应用程序，用于处理已导出的 Microsoft Graph 数据连接数据。
+在此部分中，我们将生成首个 ASP.NET 项目应用程序，以处理Microsoft Graph 数据连接的数据。
 
 ## <a name="create-a-new-aspnet-project"></a>新建项目 ASP.NET 项目
 

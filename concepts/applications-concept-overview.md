@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d99f20d5bbf748030576e1cdc28fabb5f666bee0
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 61ba87e0e65618d7b7ac6a4e4ce9ec46897bb073a51cd515a916450f4a9c193a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760824"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174862"
 ---
 # <a name="applications-api-overview"></a>应用程序 API 概述
 
