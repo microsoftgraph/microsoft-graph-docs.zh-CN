@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2aa7b2b4493947c29a2161218f1b3fd7f10ca8d8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c1c10d5358a74700f068bc7cdcd1043438a2bf53c61b8643a0167280565ef88f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748916"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252289"
 ---
 # <a name="getcompliancepolicynoncompliancesummaryreport-action"></a>getCompliancePolicyNonComplianceSummaryReport 操作
 

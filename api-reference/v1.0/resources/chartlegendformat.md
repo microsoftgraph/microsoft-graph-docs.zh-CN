@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f4d018fd01a9ad9899eefcb663b0860096567c84
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b3a16f0917e4c0c02021c3d8c3fe403bea9a6ee87dff52fbb0ce799bf4a4efe0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243621"
 ---
 # <a name="chartlegendformat-resource-type"></a>ChartLegendFormat 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "47988391"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|表示对象的填充格式，包括背景格式信息。只读。|
-|font|[WorkbookChartFont](chartfont.md)|表示图表图例的字体属性，例如字体名称、字体大小、颜色等。 只读。|
+|font|[WorkbookChartFont](chartfont.md)|表示图表图例的字体属性，例如字体名称、字体大小、颜色等。只读。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

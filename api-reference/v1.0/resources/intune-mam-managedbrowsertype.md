@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98768a3fe6a7f7e10814ac3391d75f0c827ce40a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c95373700da015c838ed789729ae4412d0007db787ae09c186123cd81ce97dd5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243362"
 ---
 # <a name="managedbrowsertype-enum-type"></a>managedBrowserType 枚举类型
 

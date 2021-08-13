@@ -1,16 +1,16 @@
 ---
 title: 获取 multiValueLegacyExtendedProperty
-description: expand'。
+description: expand'.
 localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 7662a756b3e0ff944f67f17c6e9ef35bbf7c930c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9fe5cfa98a97db07ab1dac6ce03504d5f768651da93404dda3e4b4eee798b75f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250376"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>获取 multiValueLegacyExtendedProperty
 
@@ -25,9 +25,9 @@ ms.locfileid: "50136876"
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
-- [事件](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [邮件](../resources/message.md)
+- [message](../resources/message.md)
 
 以及以下组资源：
 
@@ -42,15 +42,15 @@ ms.locfileid: "50136876"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [日历](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [事件](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
 | 组 [日历](../resources/calendar.md) | Group.Read.All | 不支持 | 不支持 |
 | 组 [事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | 组[帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 
 ## <a name="http-request"></a>HTTP 请求
 

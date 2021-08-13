@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0a5298bdb60e58ca6ad30f0baaf924e6ecc58ea
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2ccfd51b0bbf9e01637f5a31be40eef4f6a4daf9f3dd02b125ccd81c4463fecf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249647"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>删除 managedDeviceMobileAppConfigurationDeviceStatus
 

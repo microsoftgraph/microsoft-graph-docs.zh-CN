@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f3af631bc0c49d6b0ea2a71325df2b559917a2e2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a549ff8eb6890b700e3e29f6a159d078135c0739ddd7bac8e056c92cf0cc48df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247072"
 ---
 # <a name="get-history"></a>获取历史记录
 命名空间：microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "50959520"
 读取 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象的属性和关系。
 
 
->**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意：** 使用 riskyUsers API 需要Azure AD Premium P2许可证。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。

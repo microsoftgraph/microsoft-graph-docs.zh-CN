@@ -4,12 +4,12 @@ description: 在支持联机会议提供程序的机构中，管理员可以设�
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 44cdb700a59054fb1e339c080d8909a14cfa8ce3
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 337cc8e89b40a40a41b336ddd178eb97a3ced8c5abe90e211fce74e779b4bca2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240532"
 ---
 # <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>在 Outlook 日历中将事件启用为联机会议 
 

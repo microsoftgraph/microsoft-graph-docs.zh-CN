@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 07fc0bb3c1d26aedecbc49fd839fe3801c9d6651
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: f9a0c2a50fedebed708010788d115c333d04c7a564609c2e84f4a1a717195291
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245812"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 

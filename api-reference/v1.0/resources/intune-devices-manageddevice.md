@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 718a19f8e2e423ce86abdb78bca6cc8a94b10762
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 11c403f1d64d6cb13684952b93c28d495c5bcf9b563acda42a4859d10322fedf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755768"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246764"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -20,8 +20,8 @@ ms.locfileid: "52755768"
 
 通过 Intune 托管或预注册的设备
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedDevices](../api/intune-devices-manageddevice-list.md)|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|列出 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。|
 |[Get managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|读取 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。|
@@ -104,7 +104,7 @@ ms.locfileid: "52755768"
 |physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|设备类别|
 

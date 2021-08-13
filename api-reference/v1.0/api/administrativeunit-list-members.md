@@ -5,12 +5,12 @@ author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6eca10c34ea8750a356a584aac8c09e2e6006a6b
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: b78c06f7b43e4a6f8774093a0d4e4d0a697406775bdb09fbfdaa9fa1d24208fb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248332"
 ---
 # <a name="list-members"></a>列出成员
 

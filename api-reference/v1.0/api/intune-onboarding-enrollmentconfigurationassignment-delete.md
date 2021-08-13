@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f68215015717fb81e8edad2845ac8465f72ca9e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0ffadabbe0d44e8b98a51b4f86dfb501e9f65a84c74170c875a937489bb08ebc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243845"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>删除 enrollmentConfigurationAssignment
 
