@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph API 配置访问评审的范围
-description: 了解如何使用 Microsoft 应用商店中的访问评审 API Graph Azure AD 资源的访问权限。
+description: 了解如何使用 Microsoft Graph访问 Azure AD 资源的访问权限。
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 268e9ce5a364e23551fd8140456ce245f6613ff75e878940feb467b9b5bd0de6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d820996945b0d03f3f11f1052d246f33a9a05595
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129713"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336640"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置访问评审的范围
 
@@ -20,7 +20,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
 
 |资源|说明|示例场景|
 |:---    |:---       |:---             |
-|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|最适用于查看有权访问资源或相关资源组的完整主体集或子集。|<ul><li>分配给组的用户的成员身份。</li><li>来宾用户访问一个组。</li><li>来宾用户访问租户Microsoft 365组。</li><li>分配给特权角色的服务主体。</li><li>对权利管理访问包的用户和服务主体访问权限。</li></ul>|
+|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|最适用于查看有权访问资源或相关资源组的完整主体集或子集。|<ul><li>分配给组的用户的成员身份。</li><li>来宾用户访问一个组。</li><li>来宾用户访问租户中Microsoft 365组。</li><li>分配给特权角色的服务主体。</li><li>对权利管理访问包的用户和服务主体访问权限。</li></ul>|
 |[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|继承自 accessReviewQueryScope。 仅在查看非活动用户时使用。 非活动状态由 **inactiveDuration 属性** 指定。 |<ul><li>仅非活动用户的组成员身份。</li><ul>|
 |[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|最适用于查看主体对配置唯一主体和资源池的资源的访问权限。|<ul><li>查看跨 1 个组和 1 个特权 Azure AD 角色Microsoft 365 *3* 个特定主体的访问权限。</li><ul>|
 
@@ -74,7 +74,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
 }
 ```
 
-由于此审阅应用于所有Microsoft 365组，因此请配置 **instanceEnumerationScope** 以指定Microsoft 365组。
+由于此审阅适用于所有Microsoft 365组，因此请配置 **instanceEnumerationScope** 以指定Microsoft 365组。
 
 ### <a name="example-4-review-access-of-all-inactive-guest-users-to-all-groups"></a>示例 4：查看所有非活动来宾用户对全部组的访问权限
 
@@ -87,7 +87,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
 }
 ```
 
-由于此审阅适用于非活动用户，因此请使用 **accessReviewInactiveUsersQueryScope** 资源并使用值 指定 **@odata.type** 类型属性 `#microsoft.graph.accessReviewInactiveUsersQueryScope` 。
+由于此审阅适用于非活动用户，请使用 **accessReviewInactiveUsersQueryScope** 资源并使用值 **指定 @odata.type** 类型属性 `#microsoft.graph.accessReviewInactiveUsersQueryScope` 。
 
 ### <a name="example-5-review-of-all-inactive-guest-users-assigned-to-all-teams"></a>示例 5：查看分配给所有团队的所有非活动来宾用户
 
@@ -116,7 +116,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
 }
 ```
 
-### <a name="example-7-review-of-service-principals-assigned-to-privileged-roles"></a>示例 7：检查分配给特权角色的服务主体 
+### <a name="example-7-review-of-all-service-principals-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>示例 7：检查分配给特权角色的所有服务主体 (包括的所有活动分配和符合条件的) 
 
 ```http
 "scope": {
@@ -125,12 +125,42 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
     "queryType": "MicrosoftGraph"
 }
 ```
+    
+### <a name="example-8-review-of-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>示例 8：查看分配给特权角色的所有用户 (包括的所有活动分配和符合条件的) 
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleDefinitions/{role ID}",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### <a name="example-9-review-of-all-users-with-eligible-assignment-to-a-privileged-role"></a>示例 9：检查具有特权角色的合格分配权限的所有用户
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleEligibilityScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### <a name="example-10-review-of-all-users-with-active-assignment-to-a-privileged-role"></a>示例 10：检查所有具有特权角色的活动分配的用户
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(assignmentType eq 'Assigned' and isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
 
 ## <a name="use-principalresourcemembershipsscope-to-configure-scope"></a>使用 principalResourceMembershipsScope 配置作用域
 
 **principalResourceMembershipsScope** 公开 **principalScopes** 和 **resourceScopes** 属性，以支持 **针对 accessReviewScheduleDefinition** 作用域的更定制的配置选项。 这包括查看多个主体或主体组对多个资源的访问权限。
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-groups"></a>示例 1：查看所有非活动来宾用户对组的访问权限
+### <a name="example-1-review-access-of-all-inactive-guest-users-to-all-groups"></a>示例 1：查看所有非活动来宾用户对全部组的访问权限
 
 ```http
 "scope": {

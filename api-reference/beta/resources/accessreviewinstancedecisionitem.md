@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7a5e1731b289a24ea3f3bd4fc12a39914773da89
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: d7f8ec5bd5b0a12069589ca80de632054e9e8d5d
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030759"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367077"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "53030759"
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 >[!NOTE]
->属性 `target` 将在 v1.0 中弃用，并替换为 属性 `principal` 和 `resource` 。
+>属性 `target` 将在 v1.0 中弃用，并替换为 和 `principal` `resource` 属性。
 
 表示有关审阅 [实例](accessreviewsv2-root.md) 的 Azure AD 访问评审决定。 此决定表示确定用户或服务主体对给定访问评审实例 [的访问权限](accessreviewinstance.md)。
 
@@ -47,10 +47,10 @@ ms.locfileid: "53030759"
 |justification|String|审阅者做出决策时留下的理由。|
 | target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | 此特定决策的目标。 决策目标可以是不同类型的 ，每个类型都有其自己的特定属性。 请参阅 [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)。 只读。|
 |principal|[identity](../resources/identity.md)|访问评审中的每个决策项表示主体对资源的访问权限。 此属性表示主体的详细信息。 例如，如果某个决策项表示用户"Bob"对组"Sales"的访问权限 - 主体为"Bob"，资源为"Sales"。 主体可以是两种类型 - userIdentity 和 servicePrincipalIdentity。 支持 `$select`。 只读。|
-|principalLink|String|链接到主体对象。 例如：`https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`。 只读。|
+|principalLink|字符串|链接到主体对象。 例如：`https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`。 只读。|
 |建议|String|针对基于上次交互式登录租户的审批决策的系统生成的建议。 如果登录是自审查开始起 30 天内，建议批准。 如果登录自审查开始超过 30 天，建议拒绝。 否则，建议不可用。 可能的值 `Approve` ：、 `Deny` 或 `NoInfoAvailable` 。 仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。|
-|resource|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|访问评审中的每个决策项表示主体对资源的访问权限。 此属性表示资源的详细信息。 例如，如果决策项表示用户"Bob"对组"销售"的访问权限 - 主体为 Bob，资源为"Sales"。 资源可以是多种类型的。 请参阅 [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)。 只读。|
-|resourceLink|String|指向资源的链接。 例如，`https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`。 支持 `$select`。 只读。|
+|资源|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|访问评审中的每个决策项表示主体对资源的访问权限。 此属性表示资源的详细信息。 例如，如果决策项表示用户"Bob"对组"销售"的访问权限 - 主体为 Bob，资源为"Sales"。 资源可以是多种类型的。 请参阅 [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)。 只读。|
+|resourceLink|字符串|指向资源的链接。 例如，`https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`。 支持 `$select`。 只读。|
 |reviewedBy|[userIdentity](../resources/useridentity.md)| 审阅者的标识符。 支持 `$select`。 只读。|
 |reviewedDateTime|DateTimeOffset| 发生审阅决策的时间戳。 支持 `$select`。 只读。|
 

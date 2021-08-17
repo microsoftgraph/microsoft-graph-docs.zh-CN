@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cfaf2631a247bbfdf7ec884b69129fb17c5fb52f
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 9aeadf5717cf71d52299ef46322a1c151d8fa4bb
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666434"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258801"
 ---
 # <a name="create-devicemanagementconfigurationcategory"></a>创建 deviceManagementConfigurationCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "52666434"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,15 +54,15 @@ POST /deviceManagement/configurationCategories
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|项的标识符|
-|说明|String|项目说明|
+|description|字符串|项目说明|
 |helpText|String|项目的帮助文本|
 |name|String|项目名称|
-|displayName|String|项目的显示名称|
+|displayName|字符串|项目的显示名称|
 |平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`。|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`。|
-|parentCategoryId|String|类别的父 ID。|
-|rootCategoryId|String|类别的根 ID。|
+|parentCategoryId|字符串|类别的父 ID。|
+|rootCategoryId|字符串|类别的根 ID。|
 |childCategoryIds|String collection|类别的子 ID 列表。|
 
 

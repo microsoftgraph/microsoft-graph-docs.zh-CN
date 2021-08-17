@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2d35d04c243469eb72cb0ad85cb269d7de32a4b0642dfb3489963f6f2a294813
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 57d5bf64069d0799514eafc78fbfb5d221ccf82b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195585"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250898"
 ---
 # <a name="serviceupdatemessageviewpoint-resource-type"></a>serviceUpdateMessageViewpoint 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54195585"
 |属性|类型|说明|
 |:---|:---|:---|
 |isArchived|Boolean|指示用户是否已存档邮件。|
-|isFavorited|Boolean|指示用户是否将邮件标记为收藏夹。|
+|isFavorited|布尔值|指示用户是否将邮件标记为收藏夹。|
 |isRead|Boolean|指示用户是否阅读邮件。|
 
 ## <a name="relationships"></a>关系

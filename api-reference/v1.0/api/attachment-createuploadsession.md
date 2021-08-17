@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8475327164c92ee0720a2236ca41294e6b8ff472
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c9eb3eba452a5da377a9bc00fd1be527aeb5aa20
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051625"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250902"
 ---
 # <a name="attachment-createuploadsession"></a>attachment： createUploadSession
 
@@ -18,7 +18,7 @@ ms.locfileid: "52051625"
 
 创建允许应用迭代上载文件范围的上载会话，以便将文件附加到指定的Outlook项。 项目可以是消息[或](../resources/message.md)[事件](../resources/event.md)。
 
-如果文件大小在 3 MB 到 150 MB 之间，则使用该方法附加文件。 若要附加小于 3 MB 的文件，请对 Outlook 项目的附件导航属性执行一个操作;请参阅如何为邮件或 `POST` [事件执行该操作](event-post-attachments.md)。  [](message-post-attachments.md) 
+如果文件大小在 3 MB 到 150 MB 之间，则使用该方法附加文件。 若要附加小于 3 MB 的文件，请对 Outlook 项目的 attachments 导航属性执行一个操作;请参阅如何为邮件或 `POST` [事件执行该操作](event-post-attachments.md)。  [](message-post-attachments.md) 
 
 作为响应的一部分，此操作返回可用于后续顺序查询的上载 `PUT` URL。 通过每个操作的请求 `PUT` 标头，可以指定要上载的字节的准确范围。 这允许恢复传输，以防在上载过程中网络连接中断。 
 
@@ -35,7 +35,7 @@ ms.locfileid: "52051625"
 > Exchange Online管理员可自定义邮箱的邮件大小Microsoft 365，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何自定义 [最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) 以支持大于租户默认限制的附件。 
 
 > [!IMPORTANT] 
-> 如果将大文件 [附加到](/graph/known-issues#attaching-large-files-to-messages) 共享或委派邮箱中的邮件或事件，请注意已知问题。
+> 如果要将大 [文件附加到](/graph/known-issues#attaching-large-files-to-messages) 共享或委派邮箱中的邮件或事件，请注意已知问题。
 
 ## <a name="permissions"></a>权限
 
@@ -54,6 +54,7 @@ ms.locfileid: "52051625"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/events/{id}/attachments/createUploadSession
 ```
 
 若要创建用于将文件附加到邮件的上载 **会话：** 
@@ -61,9 +62,10 @@ POST /me/events/{id}/attachments/createUploadSession
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSession
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
@@ -76,11 +78,11 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项目的属性。 至少应指定附件 `file` () 、名称和文件大小。|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项目的属性。 至少应指定附件 () 、名称和文件大小 `file` 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [uploadSession](../resources/uploadsession.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [uploadSession](../resources/uploadsession.md) 对象。
 
 >**注意**： 
 >

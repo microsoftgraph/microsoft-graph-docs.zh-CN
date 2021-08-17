@@ -5,47 +5,47 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2a408fb7d8471ab8215d357d5736234d50c8a9a0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d7fa88899d2bfe3ef24b527baad3337647d51e69299bc092d72f7a0667955c9a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283383"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124778"
 ---
 # <a name="devicetypes-enum-type"></a>deviceTypes 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|desktop|0|Desktop.|
-|windowsRT|1|WindowsRT.|
-|winMO6|双面|WinMO6.|
-|nokia|第三章|Nokia.|
-|windowsPhone|4 |Windows phone。|
-|mac|5 |Mac.|
-|winCE|6 |WinCE.|
-|winEmbedded|7 |WinEmbedded.|
-|iPhone|8 |iPhone.|
-|iPad|9 |版.|
-|iPod|10  |iPodTouch.|
-|android|11 |Android.|
-|iSocConsumer|12 |iSocConsumer.|
-|unix|13 |Unix.|
+|desktop|0|桌面。|
+|windowsRT|1 |WindowsRT。|
+|winMO6|2 |WinMO6。|
+|nokia|3 |Nokia。|
+|windowsPhone|4 |Windows电话。|
+|mac|5 |Mac。|
+|winCE|6 |WinCE。|
+|winEmbedded|7 |WinEmbedded。|
+|iPhone|8 |iPhone。|
+|iPad|9 |iPad。|
+|iPod|10 |iPodTouch。|
+|android|11 |Android。|
+|iSocConsumer|12 |iSocConsumer。|
+|unix|13 |Unix。|
 |macMDM|14 |使用内置 MDM 代理的 Mac OS X 客户端。|
-|holoLens|15 |表示别致的 Windows 10 goggles。|
+|holoLens|15 |表示奇特Windows 10式切换。|
 |surfaceHub|16 |Surface HUB 设备。|
-|androidForWork|17 |适用于工作设备的 Android。|
-|androidEnterprise|18 |Android 企业版设备。|
-|blackberry|100|Blackberry.|
-|palm|101|Palm.|
+|androidForWork|17 |Android for work 设备。|
+|androidEnterprise|18 |Android 企业设备。|
+|blackberry|100|Blackberry。|
+|9.0|101|手心。|
 |unknown|255|表示设备类型未知。|
 
 

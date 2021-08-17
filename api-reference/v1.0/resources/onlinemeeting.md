@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5b0d34c005e1d3ea2fa40e85176506d718be9488ddc9f737b24f9d9359406a20
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c0930a48d0586a5b6c8b128e1f25102e20bf773
+ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169401"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "58350987"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54169401"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                             | 返回类型                       | 说明                                                                                                  |
 | :----------------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
@@ -33,17 +33,21 @@ ms.locfileid: "54169401"
 | 属性              | 类型                                          | 说明                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | 指定可在会议中成为演示者的人。 下表列出了可能的值。                          |
+| allowAttendeeToEnableCamera     | 布尔值                       | 指示与会者是否可以打开其相机。                          |
+| allowAttendeeToEnableMic     | 布尔值                       | 指示与会者是否可以打开其麦克风。                          |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | 指定会议聊天的模式。 |
+| allowTeamworkReactions | 布尔值 | 指示是否Teams会议的反应。 |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (拨入) 联机会议的信息。 只读。                                                   |
 | chatInfo              | [chatInfo](chatinfo.md)                       | 与此联机会议关联的聊天信息。                                                                  |
-| creationDateTime      | 日期时间                                      | 会议创建时间（UTC）。 只读。                                                                               |
-| endDateTime           | 日期时间                                      | 会议结束时间（UTC）。                                                                                               |
+| creationDateTime      | 日期/时间                                      | 会议创建时间（UTC）。 只读。                                                                               |
+| endDateTime           | 日期/时间                                      | 会议结束时间（UTC）。                                                                                               |
 | id                    | String                                        | 与联机会议关联的默认 ID。 只读。                                                              |
-| isEntryExitAnnounced  | Boolean                                       | 呼叫者加入或离开时是否宣布。                                                                     |
+| isEntryExitAnnounced  | 布尔值                                       | 指示呼叫者加入或离开时是否宣布。                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | 请求 HTTP 标头中指定的语言和区域设置变量中的 `Accept-Language` 联接信息。 只读。 |
 | joinWebUrl            | String                                        | 联机会议加入 URL。 只读。                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。                       |
-| startDateTime         | 日期时间                                      | 会议开始时间（UTC）。                                                                                             |
+| startDateTime         | 日期/时间                                      | 会议开始时间（UTC）。                                                                                             |
 | subject               | String                                        | 联机会议的主题。                                                                                         |
 | videoTeleconferenceId | String                                        | 视频电话会议 ID。 只读。                                                                                  |
 
@@ -56,6 +60,18 @@ ms.locfileid: "54169401"
 | roleIsPresenter    | 只有其角色为演示者的参与者是演示者。 |
 | organizer － 组织者          | 只有组织者是演示者。                           |
 | unknownFutureValue | 不知情未来值。                                          |
+
+> [!NOTE]
+> 如果 **allowedPresenters** 的值设置为 ，则使用 `roleIsPresenter` [meetingParticipantInfo](../resources/meetingparticipantinfo.md)角色属性指定每个会议参与者 **的会议** 角色。
+
+### <a name="meetingchatmode-values"></a>meetingChatMode 值
+
+| 值              | 说明                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| 已启用            | 会议聊天已启用。                                               |
+| disabled           | 会议聊天被禁用。                                              |
+| limited            | 会议聊天已启用，但仅在会议呼叫期间启用。 |
+| unknownFutureValue | 未知未来值。                                                  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -80,7 +96,11 @@ ms.locfileid: "54169401"
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String"
+  "allowedPresenters": "String",
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean"
 }
 ```
 

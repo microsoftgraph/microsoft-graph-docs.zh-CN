@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8c70c89d35101e6170f27d9032759cbabadcaf556c680b14f6155a0ee66954b7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1686ebac67e5f8865328e90d77607851fa6de20
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205862"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367028"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "54205862"
 包装器将 **添加 distributeForStudentWork** 属性，并指示此资源将复制到学生提交。  如果未复制对象，则每个学生将在作业中看到指向资源的链接。 学生将无法更新此资源。 这是教师向学生发的讲义，没有要打开的讲义。 如果分配了资源，则每个学生都将在提交的资源列表中收到此资源的副本。 每个学生将能够修改其副本并提交它进行评分。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -31,9 +31,9 @@ ms.locfileid: "54205862"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|指示是否应该将此资源复制到每个学生提交以进行修改和提交。|
+|distributeForStudentWork|布尔值|指示是否应该将此资源复制到每个学生提交以进行修改和提交。 必需|
 |id|String| 此资源的 ID。 只读。|
-|resource|[educationResource](educationresource.md)|与此工作分配关联的 Resource 对象。|
+|资源|[educationResource](educationresource.md)|已与此工作分配关联的 Resource 对象。|
 
 ## <a name="relationships"></a>关系
 无。

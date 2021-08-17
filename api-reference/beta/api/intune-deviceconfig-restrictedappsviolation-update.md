@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6a8e4ec2166cb982b6cbbcae32cc554795b3b4b
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: eb9af387c90d291010f7650cd83b6f78d6623da6
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52663899"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257643"
 ---
 # <a name="update-restrictedappsviolation"></a>更新 restrictedAppsViolation
 
@@ -54,13 +54,13 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
-|userId|String|用户唯一标识符，必须为 Guid|
+|userId|字符串|用户唯一标识符，必须为 Guid|
 |userName|String|用户名|
 |managedDeviceId|String|托管设备唯一标识符，必须为 Guid|
 |deviceName|String|设备名称|
-|deviceConfigurationId|String|设备配置文件的唯一标识符，必须为 Guid|
+|deviceConfigurationId|字符串|设备配置文件的唯一标识符，必须为 Guid|
 |deviceConfigurationName|String|设备配置文件名称|
-|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`androidAOSP`、`all`。|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`androidAOSP`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) 集合|违反的受限应用列表|
 

@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 64b979f6c9c2859b441526d26ff8029eed6c4491
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 90b9aeb3a428c90d19d1161ebc12fcad9bbd0cf4
+ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896667"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "58351008"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -50,7 +50,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称          | 说明                 |
 | :------------ | :-------------------------- |
 | Authorization | Bearer {token}。必需。   |
@@ -60,18 +60,27 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 下表列出了可更新的属性。 在请求正文中，仅包括需要更新的属性，但以下例外：
 
 - 更新联机会议开始或结束日期/时间始终需要请求正文中的 **startDateTime** 和 **endDateTime** 属性。
-- **无法** 更新 **参与者属性** 的 organizer 字段。 创建会议后，不能修改会议的组织者。
-- 更新 **参与者属性** 的 **attendees** 字段（如向会议添加或删除与会者）始终需要请求正文中与会者的完整列表。
+- **参与者** 属性的 **组织者** 字段无法更新。 创建会议后，无法修改会议的组织者。
+- 更新 **参与者属性** 的 **attendees** 字段（如添加或删除会议与会者）始终需要请求正文中的与会者的完整列表。
 
-| 属性             | 类型                                                         | 说明                                                                                                                                    |
-|----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| startDateTime        | 日期时间                                                     | 会议开始时间（UTC）。                                                                                                                 |
-| endDateTime          | 日期时间                                                     | 会议结束时间（UTC）。                                                                                                                   |
-| subject              | String                                                       | 联机会议的主题。                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | 与联机会议关联的参与者。 仅与会者可以更新。                                            |
-| isEntryExitAnnounced | Boolean                                                      | 呼叫者加入或离开时是否宣布。                                                                                         |
-| lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | 指定哪些参与者可以绕过会议厅。                                                                                     |
-| allowedPresenters    | onlineMeetingPresenters                                      | 指定可在会议中成为演示者的人。 可能的值包括 everyone、organization、roleIsPresenter、organizer 和 unknownFutureValue。 |
+最后一列指示更新此属性是否将生效进行中的会议。
+
+| 属性                    | 类型                                                       | 说明                                                                         | 是否适用于进行中的会议？    |
+|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
+| startDateTime               | 日期/时间                                                   | 会议开始时间（UTC）。                                                      | 否                           |
+| endDateTime                 | 日期/时间                                                   | 会议结束时间（UTC）。                                                        | 否                           |
+| subject                     | String                                                     | 联机会议的主题。                                                  | 否                           |
+| participants                | [meetingParticipants](../resources/meetingparticipants.md) | 与联机会议关联的参与者。 仅与会者可以更新。 | 否                           |
+| isEntryExitAnnounced        | 布尔值                                                    | 呼叫者加入或离开时是否宣布。                              | 是                          |
+| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                          | 是                          |
+| allowedPresenters           | onlineMeetingPresenters                                    | 指定可在会议中成为演示者的人。                                      | 是，除非值为 `roleIsPresenter` |
+| allowAttendeeToEnableCamera | 布尔值                                                    | 指示与会者是否可以打开其相机。                               | 是                          |
+| allowAttendeeToEnableMic    | 布尔值                                                    | 指示与会者是否可以打开其麦克风。                           | 是                          |
+| allowMeetingChat            | meetingChatMode                                            | 指定会议聊天的模式。                                                 | 是                          |
+| allowTeamworkReactions      | 布尔值                                                    | 指示是否Teams会议的反应。                      | 是                          |
+
+> [!NOTE]
+> 有关 **allowedPresenters** 和 **allowMeetingChat** 的可能值的列表，请参阅 [onlineMeeting](../resources/onlinemeeting.md)。
 
 ## <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
@@ -82,7 +91,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 #### <a name="request"></a>请求
 
-> **注意：** 为了可读性，会议 ID 已被截断。
+> **注意：** 会议 ID 已缩短，可读。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -172,7 +181,7 @@ Content-Type: application/json
 ```
 
 #### <a name="example-2-update-the-lobbybypasssettings"></a>示例 2：更新 lobbyBypassSettings
-> **注意：** 为了可读性，会议 ID 已被截断。
+> **注意：** 会议 ID 已缩短，可读。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
