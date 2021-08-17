@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d617546464b1333af2b535bbc1c17f61fa03386
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: cc55258ce11e3196126097b9442aeb53b43184a9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146543"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262289"
 ---
 # <a name="update-datasharingconsent"></a>更新 dataSharingConsent
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51146543"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,7 +56,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |id|String|数据共享许可 ID|
 |serviceDisplayName|String|服务显示名称流|
 |termsUrl|String|数据共享同意的 TermsUrl|
-|granted|Boolean|数据共享同意的授予状态|
+|granted|布尔值|数据共享同意的授予状态|
 |grantDateTime|DateTimeOffset|为此帐户授予许可的时间|
 |grantedByUpn|String|授予此帐户同意的用户的 Upn|
 |grantedByUserId|String|授予此帐户同意的用户的 UserId|

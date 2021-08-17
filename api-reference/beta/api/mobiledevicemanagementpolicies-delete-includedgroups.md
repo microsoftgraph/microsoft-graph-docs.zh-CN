@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5fb051f94ec95d5fea05b19a9273a3ec6cf0d349
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: b6a397bb5e514271ae90dd692ee3a7231b200ee161a9b85319a5101547bedae7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57332893"
 ---
 # <a name="delete-includedgroup"></a>删除 includedGroup
 

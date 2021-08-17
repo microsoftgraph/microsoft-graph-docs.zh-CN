@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8f016f2cac14552513e1c521fd3e73630108010f
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
-ms.translationtype: MT
+ms.openlocfilehash: 979ecbda35883f3363796335b6327e6b8b4403cc
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53581305"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368846"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups?$filter=startswith(displayName,%20'a')&$count=true&$top=1&$orderby=displayName"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName"]]];
 [urlRequest setHTTPMethod:@"GET"];
 [urlRequest setValue:@"eventual" forHTTPHeaderField:@"ConsistencyLevel"];
 
@@ -21,7 +21,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
         NSError *jsonError = nil;
         MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphGroup *group = [[MSGraphGroup alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphOrgContact *orgContact = [[MSGraphOrgContact alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

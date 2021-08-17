@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a54b9a8bacb0d8c99d8e7cb038166175ecc0bd00
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 58b549e640704aa3ca33119f081c170bf62b2476
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665523"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262979"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
@@ -58,8 +58,8 @@ POST /deviceManagement/deviceManagementScripts
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备管理脚本的唯一标识符。|
-|displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
+|displayName|字符串|设备管理脚本的名称。|
+|description|String|设备管理脚本的可选说明。|
 |scriptContent|二进制|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
@@ -110,6 +110,9 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

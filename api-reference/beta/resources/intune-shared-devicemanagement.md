@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1423a165bb66e89dbb67b40aa97c2d1dddb395b7
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 0849f6352c13eae8b2ca2835bf8f1f223c018bd4
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665565"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264981"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -39,12 +39,12 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 - 远程访问
 - 远程协助合作伙伴
 - 基于角色的访问控制 (RBAC) 策略
-- Reporting
+- 报表
 - 电信业务管理合作伙伴
 - 事件疑难解答
 - Windows信息保护摘要
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-shared-devicemanagement-get.md)|读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。|
@@ -93,12 +93,16 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |androidForWorkAppConfigurationSchemas|[androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md) 集合|Android for Work 应用配置架构实体。|
 |androidForWorkEnrollmentProfiles|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) 集合|Android for Work 注册配置文件实体。|
 |androidForWorkSettings|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Android for Work 设置单例实体。|
-|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|单一的 Android 托管存储帐户企业设置实体。|
+|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|单一 Android 托管存储帐户企业设置实体。|
 |androidManagedStoreAppConfigurationSchemas|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) 集合|Android Enterprise应用配置架构实体。|
 |**审核**|
 |auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) 集合|审核事件|
 |**公司条款**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 集合|与公司的设备管理关联的条款和条件。|
+|**配置策略**|
+|configurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-deviceManagementConfigurationPolicy.md) 集合|所有配置策略的列表|
+|configurationSettings|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-deviceManagementConfigurationSettingDefinition.md) 集合|所有 ConfigurationSettings 的列表|
+|configurationCategories|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-deviceManagementConfigurationCategory.md) 集合|所有配置类别的列表|
 |**公司注册**|
 |enrollmentProfiles|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) 集合|注册配置文件。|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 集合|导入的 Apple 设备标识。|
@@ -142,6 +146,7 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md) 集合|用户体验分析设备启动历史记录|
 |userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md) 集合|用户体验分析设备启动过程|
 |userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md) 集合|用户体验分析设备启动过程性能|
+|**注册**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 集合|每个租户多个 DEP 令牌的集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|导入的设备标识。|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) 集合|导入的 Windows AutoPilot 设备的集合。|
@@ -155,6 +160,9 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 集合|与公司设备管理相关的管理条件声明。|
 |**组策略分析**|
 |groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) 集合|组策略迁移报告的列表。|
+|**MicrosoftTunnel**|
+|microsoftTunnelConfigurations|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsoftTunnelConfiguration.md) 集合|与帐户关联的 MicrosoftTunnelConfiguration 设置的集合。|
+|microsoftTunnelSites|[microsoftTunnelSite](../resources/intune-mstunnel-microsoftTunnelSite.md) 集合|与帐户关联的 MicrosoftTunnelSite 设置的集合。|
 |**通知**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) 集合|通知消息模板。|
 |**载入**|
@@ -187,7 +195,7 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|报告单一ton|
 |**软件更新**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 集合|Windows 功能更新配置文件的集合|
-|**电信费用 (TEM)**|
+|**电信费用管理 (TEM)**|
 |telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 集合|电信费用管理合作伙伴。|
 |**疑难解答**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|租户的故障排除事件列表。|

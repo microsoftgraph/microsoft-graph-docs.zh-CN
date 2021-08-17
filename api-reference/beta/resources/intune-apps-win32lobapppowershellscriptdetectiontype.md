@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0cd50a6c1ab03cfe3a09859baadd8ec62c5ec667
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c5eb99d48ac73a0b4d955259ed84012a4fa230f05c92302eca1bc0a4c961bb44
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49273912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190694"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>win32LobAppPowerShellScriptDetectionType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,12 +26,12 @@ ms.locfileid: "49273912"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|字符串|1|输出数据类型为 string。|
-|dateTime|双面|输出数据类型为 "日期时间"。|
-|integer|第三章|输出数据类型为 integer。|
-|float|4 |输出数据类型为 float。|
-|version|5 |输出数据类型为版本。|
-|布尔值|6 |输出数据类型为布尔值。|
+|string|1 |输出数据类型字符串。|
+|dateTime|2 |输出数据类型是日期时间。|
+|integer|3 |输出数据类型是整数。|
+|float|4 |输出数据类型浮点。|
+|version|5 |输出数据类型版本。|
+|boolean|6 |输出数据类型布尔值。|
 
 
 

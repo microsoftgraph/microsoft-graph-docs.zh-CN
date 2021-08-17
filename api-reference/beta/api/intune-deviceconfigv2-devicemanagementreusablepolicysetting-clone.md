@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01e3920ec436f172d95f2b007a8871fa3f5ea769
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 4105d686c631129dc27208e85a2121bfa2551a08
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665425"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262826"
 ---
 # <a name="clone-action"></a>clone 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "52665425"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|**TODO： Determine AppOnly scopes **|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

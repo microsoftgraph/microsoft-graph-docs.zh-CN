@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45ddfa25929e4ec536d88ba128acc78813354d22
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 029aa3949f1f20f29b77f3031876563805e88202
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51123453"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264225"
 ---
 # <a name="list-applevpptokentroubleshootingevents"></a>列出 appleVppTokenTroubleshootingEvents
 
 命名空间：microsoft.graph
-
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,7 +55,7 @@ GET /deviceManagement/troubleshootingEvents
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>响应
