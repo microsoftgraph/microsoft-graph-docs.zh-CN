@@ -5,12 +5,12 @@ author: isaiahwilliams
 localization_priority: Normal
 ms.prod: microsoft-365-lighthouse
 doc_type: enumTypes
-ms.openlocfilehash: 8cc2d6e1e95d4b780dd164187e0c8c87f6b11f80
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f1d906e2693725898be14d0480afcc26ac8331ca4720c67db42342a14772b700
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402241"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203321"
 ---
 # <a name="multi-tenant-management-enumeration-values"></a>多租户管理枚举值
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bbfa30131d2f17ab046f2ef6c1b997c8fca739b4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a536f0a1da21b0e56ce1c7cb5a8b37fd97569769a22c99f02c6d5efafb3157c3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139724"
 ---
 # <a name="get-trustframeworkpolicy"></a>获取 trustFrameworkPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50444922"
 
 检索现有 [trustFrameworkPolicy 的内容](../resources/trustframeworkpolicy.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50444922"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）| Policy.Read.All、Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|Policy.Read.All、Policy.ReadWrite.TrustFramework|
+|应用程序|Policy.Read.All、Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -55,13 +55,13 @@ GET /trustFramework/policies/{id}/$value
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 的响应代码和 XML 表示形式。  
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 的 XML 表示形式。  
 
 >**注意：** 响应内容类型将为 `application/xml` 。
 
 ## <a name="example"></a>示例
 
-下面的示例检索特定的 **trustFrameworkPolicy**。
+以下示例检索特定的 **trustFrameworkPolicy**。
 
 ##### <a name="request"></a>请求
 

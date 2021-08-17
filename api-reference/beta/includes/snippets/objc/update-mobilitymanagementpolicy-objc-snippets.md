@@ -1,25 +1,25 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: de618a799c45d9ed381ab82da23a958dcfc657e1
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 0044e6d989561cd01ba17a8f8958369d1ebe55a7
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440346"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368850"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphMobilityManagementPolicy *mobilityManagementPolicy = [[MSGraphMobilityManagementPolicy alloc] init];
-[mobilityManagementPolicy setComplianceUrl:@"https://portal.uem.contoso.com/?portalAction=Compliance"];
-[mobilityManagementPolicy setDiscoveryUrl:@"https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc"];
-[mobilityManagementPolicy setTermsOfUseUrl:@"https://portal.uem.contoso.com/TermsofUse.aspx"];
+[mobilityManagementPolicy setComplianceUrl:@"https://portal.mg.contoso.com/?portalAction=Compliance"];
+[mobilityManagementPolicy setDiscoveryUrl:@"https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc"];
+[mobilityManagementPolicy setTermsOfUseUrl:@"https://portal.mg.contoso.com/TermsofUse.aspx"];
 
 NSError *error;
 NSData *mobilityManagementPolicyData = [mobilityManagementPolicy getSerializedDataWithError:&error];

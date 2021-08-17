@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 839a494f77405e2b7ef3f77cd7a6c6899cdeea3adb09c6fa7cbf08565bdd0262
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2dfac44b206a9cfa11e3d6b3a27d4d2284493698
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130112"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264799"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54130112"
 
 充当所有设备管理功能的容器的单例实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-onboarding-devicemanagement-get.md)|[deviceManagement](../resources/intune-onboarding-devicemanagement.md)|读取 [deviceManagement](../resources/intune-onboarding-devicemanagement.md) 对象的属性和关系。|
@@ -30,7 +30,7 @@ ms.locfileid: "54130112"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|String|此实体的唯一标识符|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户网页版门户的外观时使用的数据。|
 
 ## <a name="relationships"></a>关系

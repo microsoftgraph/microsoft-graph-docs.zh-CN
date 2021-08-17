@@ -1,36 +1,36 @@
 ---
 title: eapType 枚举类型
-description: 可扩展的身份验证协议 (EAP) 配置类型。
+description: 可扩展身份验证协议 (EAP) 配置类型。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2922a05eed1a45f9021a9c57b6b5cacfcf73847c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bfdfb466f7efd736b261db94212541b7168fa95f6b5a7b09b90f5996e6a6ec1a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294709"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145423"
 ---
 # <a name="eaptype-enum-type"></a>eapType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-可扩展的身份验证协议 (EAP) 配置类型。
+可扩展身份验证协议 (EAP) 配置类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|eapTls|13 |EAP-Transport (EAP-TLS) 的层安全性。|
-|超越|17 | (LEAP) 的轻型可扩展身份验证协议。|
-|eapSim|18 |适用于 GSM 订阅者标识模块 (EAP-SIM) 的 EAP。|
-|eapTtls| 21|EAP-Tunneled (EAP-TTLS) 的传输层安全性。|
-|peap|word| (PEAP) 的受保护的可扩展身份验证协议。|
-|eapFast|43|通过安全隧道 (EAP-FAST) EAP-Flexible 身份验证。|
+|eapTls|13 |EAP-Transport EAP-TLS (层安全性) 。|
+|leap|17 |轻型可扩展身份验证协议 (LEAP) 。|
+|eapSim|18 |用于 GSM 订阅者标识模块的 EAP (EAP-SIM) 。|
+|eapTtls| 21|EAP-Tunneled EAP-TTLS (传输层安全性) 。|
+|peap|25|PEAP (受保护的可扩展) 。|
+|eapFast|43|EAP-Flexible EAP- (安全隧道进行身份验证FAST) 。|
 
 
 

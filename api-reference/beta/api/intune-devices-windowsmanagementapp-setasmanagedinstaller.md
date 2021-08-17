@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3193c67d583ab3e90d9f708489d8d40bdb14173
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 53f8ca1f89f49bad540f0fb90b5093c39b9b88f354b4e7ceb8473b404483474c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664825"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54191436"
 ---
 # <a name="setasmanagedinstaller-action"></a>setAsManagedInstaller 操作
 

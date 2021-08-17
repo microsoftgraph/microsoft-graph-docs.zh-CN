@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e90ced56c6831005d9d878bcec6ab613e8060c8
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ce7c73102d6e4e54591f81834036c8e7f6100b68
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158029"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264743"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyosversion"></a>创建 userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51158029"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,13 +56,13 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByO
 |id|String|用户体验分析应用版本性能对象的唯一标识符。|
 |osVersion|String|应用程序的 os 版本。|
 |osBuildNumber|String|应用程序的操作系统内部版本号。|
-|activeDeviceCount|Int32|应用处于活动状态的设备数。 有效值 -2147483648 到 2147483647|
+|activeDeviceCount|Int32|应用处于活动状态的设备数。 有效值 -2147483648 to 2147483647|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
 |appPublisher|String|应用程序的发布者。|
-|appUsageDuration|Int32|应用程序的总使用时间（分钟）。 有效值 -2147483648 到 2147483647|
-|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 到 2147483647|
-|meanTimeToFailureInMinutes|Int32|应用失败平均时间（分钟）。 有效值 -2147483648 到 2147483647|
+|appUsageDuration|Int32|应用程序的总使用时间（分钟）。 有效值 -2147483648 to 2147483647|
+|appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 to 2147483647|
+|meanTimeToFailureInMinutes|Int32|应用失败平均时间（分钟）。 有效值 -2147483648 to 2147483647|
 
 
 

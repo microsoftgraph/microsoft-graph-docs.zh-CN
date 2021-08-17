@@ -5,38 +5,38 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf4609ed78c0596e217f6a8af48bf169fe2b29f4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 32a2533cc87c3615eddd6600356321a4c777c7e6dd3d51950628712e22279de3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145416"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>deviceConfigurationUserStateSummary 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取 deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|读取 [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) 对象的属性和关系。|
-|[更新 deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|更新 [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) 对象的属性。|
+|[获取 deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|读取 [deviceConfigurationUserStateSummary 对象的属性和](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) 关系。|
+|[更新 deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|更新 [deviceConfigurationUserStateSummary 对象](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|unknownUserCount|Int32|未知用户的数量|
-|notApplicableUserCount|Int32|不适用的用户数|
-|compliantUserCount|Int32|合规用户数|
-|remediatedUserCount|Int32|已修正用户的数量|
-|nonCompliantUserCount|Int32|不符合的用户数|
+|unknownUserCount|Int32|未知用户数|
+|notApplicableUserCount|Int32|不适用用户的数量|
+|compliantUserCount|Int32|兼容用户数|
+|remediatedUserCount|Int32|已修复用户数|
+|nonCompliantUserCount|Int32|不相容用户数|
 |errorUserCount|Int32|错误用户数|
 |conflictUserCount|Int32|冲突用户数|
 

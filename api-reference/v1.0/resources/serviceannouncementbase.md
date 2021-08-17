@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5e1c8783615645461d3dc7bafdb403e52c94cf4bebd3f7e8cc5d6bbd3d1aec0a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f5f1beb5918833703fbbff48ba991b850bcd1ceb
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195589"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266903"
 ---
 # <a name="serviceannouncementbase-resource-type"></a>serviceAnnouncementBase 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54195589"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|详细信息|collection ([keyValuePair](../resources/keyvaluepair.md)) |有关服务事件的其他详细信息。 此属性不支持筛选器。|
+|详细信息|集合 ([keyValuePair](../resources/keyvaluepair.md)) |有关服务事件的其他详细信息。 此属性不支持筛选器。|
 |endDateTime|DateTimeOffset|服务事件的结束时间。|
 |id|String|服务事件的 ID。|
 |lastModifiedDateTime|DateTimeOffset|服务事件的上次修改时间。|

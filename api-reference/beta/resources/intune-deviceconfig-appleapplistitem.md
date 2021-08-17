@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a95905ef8076883ebdeea4a5ea6973017e511fee
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a8e88bae9f25bc2268d1dca43c7d33dcb1c928f638a9b59135e3ec5dcdb61373
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213205"
 ---
 # <a name="appleapplistitem-resource-type"></a>appleAppListItem 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,12 +26,12 @@ ms.locfileid: "49283747"
 继承自 [appListItem](../resources/intune-deviceconfig-applistitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|name|字符串|从[AppListItem](../resources/intune-deviceconfig-applistitem.md)继承的应用程序名称|
-|发布者|String|从[AppListItem](../resources/intune-deviceconfig-applistitem.md)继承的应用程序的发布者|
-|appStoreUrl|String|继承自[appListItem](../resources/intune-deviceconfig-applistitem.md)的应用程序的存储 URL|
-|appId|String|从[AppListItem](../resources/intune-deviceconfig-applistitem.md)继承的应用程序的应用程序或捆绑包标识符|
+|name|String|应用程序名称 继承自 [appListItem](../resources/intune-deviceconfig-applistitem.md)|
+|发布者|String|应用程序的发布者 继承自 [appListItem](../resources/intune-deviceconfig-applistitem.md)|
+|appStoreUrl|String|应用程序的应用商店 URL 继承自 [appListItem](../resources/intune-deviceconfig-applistitem.md)|
+|appId|String|应用程序的应用程序或捆绑包标识符 继承自 [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 
 ## <a name="relationships"></a>关系
 无

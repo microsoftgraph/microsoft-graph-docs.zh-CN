@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f59b6f589ba1f654a31ac7d3f0eb6a0f50f7334d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 47604faa0cb5417c527c3fad559d7d9e3244249f1e0d74055f11c869abf014e5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145157"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,10 +25,10 @@ ms.locfileid: "49272155"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|才|0|合作伙伴不可用。|
-|可用|1|合作伙伴可用。|
-|enabled|双面|启用合作伙伴。|
-|无|第三章|合作伙伴无响应。|
+|不可用|0|合作伙伴不可用。|
+|可用|1 |合作伙伴可用。|
+|enabled|2 |启用合作伙伴。|
+|unresponsive|3 |合作伙伴无响应。|
 
 
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4feb39e67d4a1a824e72400dd66f4a12cb60e6b5
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: bcf805e8d12855155f36c38a083620d3ae6f775a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51210761"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368865"
 ---
 ```java
 
@@ -21,13 +21,13 @@ accessPackageAssignmentRequest.accessPackageAssignment = accessPackageAssignment
 LinkedList<AccessPackageAnswer> answersList = new LinkedList<AccessPackageAnswer>();
 AccessPackageAnswerString answers = new AccessPackageAnswerString();
 answers.value = "Arizona";
-AccessPackageQuestion answeredQuestion = new AccessPackageQuestion();
+AccessPackageMultipleChoiceQuestion answeredQuestion = new AccessPackageMultipleChoiceQuestion();
 answeredQuestion.id = "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF";
 answers.answeredQuestion = answeredQuestion;
 answersList.add(answers);
 AccessPackageAnswerString answers1 = new AccessPackageAnswerString();
 answers1.value = "Need access to marketing campaign material";
-AccessPackageQuestion answeredQuestion1 = new AccessPackageQuestion();
+AccessPackageTextInputQuestion answeredQuestion1 = new AccessPackageTextInputQuestion();
 answeredQuestion1.id = "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA";
 answers1.answeredQuestion = answeredQuestion1;
 answersList.add(answers1);

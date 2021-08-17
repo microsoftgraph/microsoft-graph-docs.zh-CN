@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d1aaec016c95845c0f33ede2f413811a58fa44c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c0375cd8386f6d33bb785c9d2e1713786ebe48f0a0cbcff33843553c4c160b54
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156889"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54142671"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>更新 deviceManagementExchangeOnPremisesPolicy
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,10 +55,10 @@ PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPr
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|尚未记录|
-|notificationContent|Binary|将发送给此策略隔离的用户的通知文本。 这是 UTF8 编码的字节数组 HTML。|
-|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Exchange 中的默认访问状态。 此规则全局应用于整个 Exchange 组织。 可取值为：`none`、`allow`、`block`、`quarantine`。|
-|accessRules|[deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md) 集合|Exchange 中的设备访问规则列表。 访问规则全局应用于整个 Exchange 组织|
-|knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md) 集合|Exchange 已知的设备类列表|
+|notificationContent|二进制|将发送给此策略隔离的用户的通知文本。 这是 UTF8 编码的字节数组 HTML。|
+|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|默认访问状态Exchange。 此规则全局应用于整个Exchange组织。 可取值为：`none`、`allow`、`block`、`quarantine`。|
+|accessRules|[deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md) 集合|设备访问规则列表中Exchange。 访问规则全局应用于整个Exchange组织|
+|knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md) 集合|已知设备类Exchange|
 
 
 
