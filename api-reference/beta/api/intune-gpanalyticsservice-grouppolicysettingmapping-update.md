@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82575a97badaba93f179c841502727e07ebff0af
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f73f00d1d323a3bc48824aaada4591f6f2cb01d6790c3e0fa850eaf7b8fab35a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51149826"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157015"
 ---
 # <a name="update-grouppolicysettingmapping"></a>更新 groupPolicySettingMapping
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,23 +57,23 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |parentId|String|组策略设置的父 ID。|
 |childIdList|String collection|组策略设置的子 ID 列表。|
 |settingName|String|此组策略设置的名称。|
-|settingValue|String|此组策略设置的值。|
-|settingValueType|String|此组策略设置的值类型。|
+|settingValue|字符串|此组策略设置的值。|
+|settingValueType|字符串|此组策略设置的值类型。|
 |settingDisplayName|String|此显示名称策略设置的成员。|
 |settingDisplayValue|String|此组策略设置的显示值。|
 |settingDisplayValueType|String|此组策略设置的显示值类型。|
 |settingValueDisplayUnits|String|此组策略设置值的显示单位|
-|settingCategory|String|组策略设置位于的类别。|
+|settingCategory|字符串|组策略设置位于的类别。|
 |mdmCspName|String|此组策略设置映射到的云解决方案提供商名称。|
 |mdmSettingUri|String|此组策略设置映射到的 MDM CSP URI。|
 |mdmMinimumOSVersion|Int32|此 mdm 设置支持的最低操作系统版本。|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|设置类型 (安全或 admx) 组策略。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
-|isMdmSupported|Boolean|指示 Intune 是否支持该设置|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|设置类型 (策略的安全性) admx。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
+|isMdmSupported|布尔值|指示 Intune 是否支持该设置|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示设置在 Mdm 中是否受支持。 可取值为：`unknown`、`supported`、`unsupported`、`deprecated`。|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置的范围。 可取值为：`unknown`、`device`、`user`。|
 |intuneSettingUriList|String collection|此组策略设置映射到的 Intune 设置 URI 列表|
-|intuneSettingDefinitionId|String|Intune 设置定义 ID|
-|admxSettingDefinitionId|String|Admx 组策略 ID|
+|intuneSettingDefinitionId|字符串|Intune 设置定义 ID|
+|admxSettingDefinitionId|字符串|Admx 组策略 ID|
 
 
 

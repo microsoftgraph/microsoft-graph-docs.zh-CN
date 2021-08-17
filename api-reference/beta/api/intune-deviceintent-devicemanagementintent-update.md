@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c801fe8c2f6ecb6cd64d8aef5f9748f3cbc1ddf3
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c71ddecdce69d701c9060f2f8bff12f1adedec5876265104189fe4b733308159
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54166524"
 ---
 # <a name="update-devicemanagementintent"></a>更新 deviceManagementIntent
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,11 +54,11 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|意图 ID|
-|displayName|String|给定用户显示名称|
-|说明|String|用户给定的说明|
+|displayName|字符串|给定用户显示名称|
+|description|String|用户给定的说明|
 |isAssigned|Boolean|表示是否将意图分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意图时|
-|templateId|String|此意图的模板 ID 是 (（如果有) |
+|templateId|字符串|此意图的模板 ID 是 (（如果有) |
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
