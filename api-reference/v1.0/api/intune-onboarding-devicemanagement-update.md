@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9361d5ef6fd6f0d9c176e45274143f99e81271b704713c0c63c063d4ab7fdaf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0c3a1c9b3e6f2b211e41e4406215b826d0e8ab10
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155601"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256581"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|String|此实体的唯一标识符|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。|
 
 

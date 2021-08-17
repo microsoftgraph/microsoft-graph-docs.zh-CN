@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a752cb3262d4ca8899660e0de50b637315680ab
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c6ff3461af66448223f2f2ec28ff158d9504ddd111a5a7a5dcab8d8001986e31
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158883"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54131659"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>创建 windowsInformationProtectionDeviceRegistration
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,11 +54,11 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userId|String|与此设备注册记录关联的 UserId。|
+|userId|字符串|与此设备注册记录关联的 UserId。|
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
-|deviceType|String|设备类型，例如，Windows 笔记本电脑 VS Windows 手机。|
-|deviceMacAddress|String|设备 Mac 地址。|
+|deviceType|String|设备类型，例如，Windows笔记本电脑 VS Windows电话。|
+|deviceMacAddress|字符串|设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|设备的上次签入时间。|
 
 

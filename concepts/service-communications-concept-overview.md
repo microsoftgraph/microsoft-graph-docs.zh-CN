@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Priority
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 58eaec75761a0062a996f60c9c59c798c8fe0ae570da300821a4bf67780c12c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db7005e9bfddd141a429c2d85320f9e1dd1d3666
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208665"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255168"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>在 Microsoft Graph 中访问服务运行状况和通信的概述
 可以使用 Microsoft Graph 中的服务通信 API 访问有关 Microsoft 云服务的运行状况和消息中心帖子。 实际运行状况和帖子对应于 API 所支持且由租户订阅的 Microsoft 365 和 Dynamics 365 服务。

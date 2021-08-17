@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 362e85ddd5ceb9727aabf398509a852282c3ef4a
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: 9553accf83925e1ab33c36f353a7ca74da6ad623
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660373"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262388"
 ---
 # <a name="create-appmanagementpolicy"></a>创建 appManagementPolicy
 
@@ -51,7 +51,7 @@ POST /policies/appManagementPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应有效负载中返回包含 `201 Created` [新 appManagementPolicy ](../resources/appmanagementpolicy.md) 对象的 响应代码。
+如果成功，此方法在响应有效负载中返回包含新 `201 Created` [appManagementPolicy ](../resources/appmanagementpolicy.md) 对象的 响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -60,9 +60,11 @@ POST /policies/appManagementPolicies
 下面展示了示例请求。 此请求创建了具有以下设置的应用管理策略：
 
 - 启用策略。
-- 阻止在 UTC 时间上午 10：37 之后为应用和服务主体创建新密码。
+- 阻止在 UTC 时间 2019 年 10 月 10-19 日上午 10：37 之后为应用和服务主体创建新密码。
 - 将 UTC 时间 2019-10-19 日上午 10：37 创建的应用和服务主体的密码密码限制为少于 XX 天。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_appManagementPolicy"
@@ -92,6 +94,24 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 }
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-appmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-appmanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-appmanagementpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

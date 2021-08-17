@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0b7d2f1ffdbe7dba4fbde09d80883fa60b5abaa
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: bdb3e1f825c075e52ef9e7706bf96ea6013d1f15
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153732"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263973"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>getManagementConditionsForPlatform 函数
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 
 |属性|类型|说明|
 |:---|:---|:---|
-|平台|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|尚未记录|
+|平台|[devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|尚未记录|
 
 
 

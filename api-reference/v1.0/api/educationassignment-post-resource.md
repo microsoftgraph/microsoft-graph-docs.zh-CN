@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2febd840a6ba93f28f38d66d94a2e8f69a526ca2
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 4a973b2e2791360bacd2c38bdfc41e5c8bae6ef3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992787"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264393"
 ---
 # <a name="create-educationassignmentresource"></a>创建 educationAssignmentResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "52992787"
 
 创建工作 [分配资源](../resources/educationassignmentresource.md)。 
 
-每个资源都有一@odata.type 属性来指示要创建的资源类型。 
+每个资源都有一@odata.type 属性，用于指示要创建的资源类型。 
 
 [!IMPORTANT] 
 Upload创建资源之前，将基于 `resourcesFolder` 文件的资源指定给工作分配。 
@@ -117,7 +117,7 @@ Content-length: 229
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
-    "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
+    "@odata.type": "#microsoft.graph.educationLinkResource"
   }
 }
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 34a7b756ba02773b63410d03325cd420035303305493e1e40fae832bd77ac5e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d9c33c540aa764566fc90fab1fa4ca4e2c6d9eb
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184807"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262149"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>使用 Microsoft Intune 管理应用
 
@@ -72,13 +72,6 @@ ms.locfileid: "54184807"
 - [移动应用安装时间设置](intune-apps-mobileappinstalltimesettings.md)
 - [移动应用发布状态](intune-apps-mobileapppublishingstate.md)
 - [移动 LOB 应用](intune-apps-mobilelobapp.md)
-- [Office 客户端签入状态](intune-cirrus-officeclientcheckinstatus.md)
-- [Office 客户端配置](intune-cirrus-officeclientconfiguration.md)
-- [Office 客户端配置分配](intune-cirrus-officeclientconfigurationassignment.md)
-- [Office 配置](intune-cirrus-officeconfiguration.md)
-- [Office 配置分配目标](intune-cirrus-officeconfigurationassignmenttarget.md)
-- [Office 配置组分配目标](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
-- [Office 用户签入摘要](intune-cirrus-officeusercheckinsummary.md)
 - [按帐户类型运行](intune-apps-runasaccounttype.md)
 - [用户安装状态摘要](intune-books-userinstallstatesummary.md)
 - [VPP 授权类型](intune-apps-vpplicensingtype.md)
@@ -108,6 +101,4 @@ ms.locfileid: "54184807"
 - [Windows 设备类型](intune-apps-windowsdevicetype.md)
 - [Windows 最低操作系统](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
-- [Windows Office 客户端配置](intune-cirrus-windowsofficeclientconfiguration.md)
-- [Windows Office 客户端安全配置](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Windows 通用 AppX](intune-apps-windowsuniversalappx.md)

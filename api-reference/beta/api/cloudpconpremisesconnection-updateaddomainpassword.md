@@ -1,16 +1,16 @@
 ---
 title: cloudPcOnPremisesConnection：updateAdDomainPassword
-description: 为成功的 onPremisesConnection 更新 AD 域密码。
+description: 更新 AD 域密码，以成功使用 onPremisesConnection。
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6a7420574c8dc1a4231f9854a10b76b7291b3ad4
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 9298b09db0d3016f8bbc117fdf9adfe56b7ac94e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546831"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262972"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection：updateAdDomainPassword
 命名空间：microsoft.graph
@@ -21,7 +21,7 @@ ms.locfileid: "52546831"
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -53,7 +53,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomai
 
 |参数|类型|说明|
 |:---|:---|:---|
-|adDomainPassword|String|与 adDomainUsername 关联的密码|
+|adDomainPassword|字符串|与 **adDomainUsername 关联的密码**。|
 
 
 
