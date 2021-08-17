@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ba082150ea5b032a4621bfea33b7d85f5ad2a16
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ae59954fbdc06b559827650934e6bb0526fa9dca
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51126380"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248249"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>创建 windowsManagementAppHealthState
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51126380"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,12 +53,12 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Windows 管理应用运行状况状态的唯一标识符。 此属性是只读的。|
-|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
-|installedVersion|String|Windows 管理应用安装的版本。|
-|lastCheckInDateTime|DateTimeOffset|Windows 管理应用上次签入时间。|
-|deviceName|String|安装 Windows 管理应用的设备的名称。|
-|deviceOSVersion|String|安装了 Windows 管理应用的设备的 Windows 10 操作系统版本。|
+|id|String|管理应用Windows状态的唯一标识符。 此属性是只读的。|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
+|installedVersion|字符串|Windows管理应用安装的版本。|
+|lastCheckInDateTime|DateTimeOffset|Windows管理应用上次签入时间。|
+|deviceName|String|安装了管理应用Windows的名称。|
+|deviceOSVersion|String|Windows 10安装了管理应用Windows操作系统版本。|
 
 
 

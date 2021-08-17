@@ -1,22 +1,22 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 13997875bf1ca21fcc6cc8798d5d01e7b48db469
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 95e7fa12f25c8fbb1f10a38d2a409316452bc2ed
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440347"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368851"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 MobilityManagementPolicy mobilityManagementPolicy = new MobilityManagementPolicy();
-mobilityManagementPolicy.complianceUrl = "https://portal.uem.contoso.com/?portalAction=Compliance";
-mobilityManagementPolicy.discoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc";
-mobilityManagementPolicy.termsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx";
+mobilityManagementPolicy.complianceUrl = "https://portal.mg.contoso.com/?portalAction=Compliance";
+mobilityManagementPolicy.discoveryUrl = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc";
+mobilityManagementPolicy.termsOfUseUrl = "https://portal.mg.contoso.com/TermsofUse.aspx";
 
-graphClient.policies().mobileDeviceManagementPolicies("ab90bacf-55a3-4a3e-839a-aa4b74e4f020")
+graphClient.policies().mobileAppManagementPolicies("ab90bacf-55a3-4a3e-839a-aa4b74e4f020")
     .buildRequest()
     .patch(mobilityManagementPolicy);
 

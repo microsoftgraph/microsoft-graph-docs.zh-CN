@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a4f4e96c4b08eed4584d6357a8c903c080b2d16d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 89cc776f932a4b9c0559c130e8c1bdf583eaca1e
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52750369"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58366636"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource 资源类型
 
@@ -23,17 +23,17 @@ ms.locfileid: "52750369"
 
 ## <a name="methods"></a>Methods
 
-| 方法           | 返回类型    |Description|
+| 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |读取 **educationAssignmentResource 对象的属性和** 关系。|
 |[删除](../api/educationassignmentresource-delete.md) | 无 |删除 **educationAssignmentResource** 对象。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|指示是否应该将此资源复制到每个学生提交以进行修改和提交。|
+|distributeForStudentWork|布尔值|指示是否应该将此资源复制到每个学生提交以进行修改和提交。 必需|
 |id|String| 此资源的 ID。 只读。|
-|resource|[educationResource](educationresource.md)|与此工作分配关联的 Resource 对象。|
+|资源|[educationResource](educationresource.md)|已与此工作分配关联的 Resource 对象。|
 
 ## <a name="relationships"></a>关系
 无。

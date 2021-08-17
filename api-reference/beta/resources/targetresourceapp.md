@@ -1,20 +1,20 @@
 ---
 title: targetResourceApp 资源类型
-description: 指示作为审核活动的一部分被管理员添加、更新或删除的应用程序对象。 派生自 targetResource 资源。
+description: 指示管理员在审核活动中添加、更新或删除的应用对象。 派生自 targetResource 资源。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: SarahBar
-ms.openlocfilehash: a34e235cb89688b003691b5c50c5012e617c16a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a961d5136b517fbfd4b6018edf601cb9d0d6daa59feb16b038b02b9669e35fc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54200311"
 ---
 # <a name="targetresourceapp-resource-type"></a>targetResourceApp 资源类型
 
-命名空间： microsoft. graph 指示作为审核活动的一部分被管理员添加、更新或删除的应用程序对象。 派生自 [targetResource](targetresource.md) 资源。
+命名空间：microsoft.graph 指示管理员作为审核活动的一部分添加、更新或删除的应用对象。 派生自 [targetResource](targetresource.md) 资源。
 
 
 

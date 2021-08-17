@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7bbd7d35373caaaf9a463955fa3de09025839e38
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 736725bf74dbb946796c5319b4dac4fb2d899812
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130761"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257844"
 ---
 # <a name="update-devicecompliancescriptrunsummary"></a>更新 deviceComplianceScriptRunSummary
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51130761"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,10 +54,10 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备合规性脚本运行摘要实体的密钥。 此属性是只读的。|
-|noIssueDetectedDeviceCount|Int32|检测脚本未发现问题且设备正常运行的设备数量。 有效值 -2147483648 到 2147483647|
-|issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数量。 有效值 -2147483648 到 2147483647|
-|detectionScriptErrorDeviceCount|Int32|检测脚本执行遇到错误且未完成的设备数量。 有效值 -2147483648 到 2147483647|
-|detectionScriptPendingDeviceCount|Int32|尚未运行最新版本的设备合规性脚本的设备数量。 有效值 -2147483648 到 2147483647|
+|noIssueDetectedDeviceCount|Int32|检测脚本未发现问题且设备正常运行的设备数量。 有效值 -2147483648 to 2147483647|
+|issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数量。 有效值 -2147483648 to 2147483647|
+|detectionScriptErrorDeviceCount|Int32|检测脚本执行遇到错误且未完成的设备数量。 有效值 -2147483648 to 2147483647|
+|detectionScriptPendingDeviceCount|Int32|尚未运行最新版本的设备合规性脚本的设备数量。 有效值 -2147483648 to 2147483647|
 |lastScriptRunDateTime|DateTimeOffset|脚本跨所有设备的上次运行时间|
 
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bcb708ef7276d67c05ff9289b70f06bf330f9353
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: a4774bc424a3486e68d79022969f72c6e68eefc0
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440345"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368849"
 ---
 ```csharp
 
@@ -13,12 +13,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mobilityManagementPolicy = new MobilityManagementPolicy
 {
-    ComplianceUrl = "https://portal.uem.contoso.com/?portalAction=Compliance",
-    DiscoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc",
-    TermsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx"
+    ComplianceUrl = "https://portal.mg.contoso.com/?portalAction=Compliance",
+    DiscoveryUrl = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc",
+    TermsOfUseUrl = "https://portal.mg.contoso.com/TermsofUse.aspx"
 };
 
-await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"]
+await graphClient.Policies.MobileAppManagementPolicies["{mobilityManagementPolicy-id}"]
     .Request()
     .UpdateAsync(mobilityManagementPolicy);
 

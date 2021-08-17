@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e2146c1c2a465ee1377cfa805884d87e49ecc267
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 999adc6cf936f1e94a5c45bf4ca79c4841a9f4b3d6316f798a8ca377b308323d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579398"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56902795"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>创建 accessPackageAssignmentRequest
 
@@ -137,7 +137,7 @@ Content-type: application/json
 ### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>示例 2：用户请求程序包并回答需要审批的问题
 #### <a name="request"></a>请求
 
-下面是请求的一个示例，请求者向审批者提供了答案以帮助他们做出决策。
+下面是一个请求示例，请求者向审批者提供了答案以帮助他们做出决策。
  
 
 
