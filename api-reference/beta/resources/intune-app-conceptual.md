@@ -1,15 +1,15 @@
 ---
-title: 如何使用 Microsoft Intune 保护公司应用数据 - Microsoft Graph API
-description: 列出用于 Intune 终结点的 Microsoft Graph API (REST) 管理租户组织的应用及其策略。
+title: 如何使用 Microsoft Microsoft Intune API 保护公司Graph数据
+description: 列出管理Graph应用及其策略的适用于 Intune 终结点的 Microsoft (API) REST) 。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0faa6c3b62a865c027d1ece4e5b34915f2da996b
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 3ab2c83a2aea69f91e46045e82f19eb975c56b0c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863974"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266476"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -21,7 +21,7 @@ ms.locfileid: "51863974"
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
-你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此，你可以使用它在设备管理解决方案中注册设备或不注册设备来保护公司的数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
+你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此，你可以使用它在设备管理解决方案中注册设备或不注册设备来保护公司数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
 
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 
@@ -77,6 +77,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [iOS VPP 应用撤销许可证操作结果](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP 电子书](intune-books-iosvppebook.md)
 - [iOS VPP 电子书分配](intune-books-iosvppebookassignment.md)
+- [键/值对](intune-androidforwork-keyvaluepair.md)
 - [macOS LOB 应用](intune-apps-macoslobapp.md)
 - [macOS LOB 子应用](intune-apps-macoslobchildapp.md)
 - [macOS mdatp 应用](intune-apps-macosmdatpapp.md)
@@ -125,10 +126,11 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [移动应用取代类型](intune-apps-mobileappsupersedencetype.md)
 - [移动包含的应用](intune-apps-mobilecontainedapp.md)
 - [移动 LOB 应用](intune-apps-mobilelobapp.md)
-- [Office 产品 ID](intune-apps-officeproductid.md)
+- [Office产品 ID](intune-apps-officeproductid.md)
 - [Office 套件应用](intune-apps-officesuiteapp.md)
 - [Office 套件安装进度显示级别](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Office 更新通道](intune-apps-officeupdatechannel.md)
+- [生成的应用状态](intune-apps-resultantappstate.md)
 - [生成的应用状态详情](intune-apps-resultantappstatedetail.md)
 - [Symantec 代码签名证书](intune-apps-symanteccodesigningcertificate.md)
 - [用户应用安装状态](intune-apps-userappinstallstatus.md)

@@ -5,22 +5,22 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 13a8f055d61037e3d346add591adfd90c6d7a5a98942e6dbd96a021ed1c2bdef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 221576c08af5e97979d2a42e8dc0cce483e3bf35
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177994"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264155"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>resourceSpecificPermissionGrant 资源类型
 
 命名空间：microsoft.graph
 
-resourceSpecificPermissionGrant 声明已授予特定 AzureAD 应用的权限，该权限适用于 Microsoft Graph 中的资源实例。
+声明已授予特定 Azure AD 应用的权限，用于 Microsoft Graph。
 
 有关授予应用同意访问资源的特定实例的权限，请参阅特定于 [资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |  方法                                                                   |  返回类型                                                                     | 说明                                                  | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |

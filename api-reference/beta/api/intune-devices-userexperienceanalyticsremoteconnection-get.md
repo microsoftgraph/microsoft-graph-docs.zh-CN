@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75b1d1c409bb657bb9c4783f3475a3061b48d211
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 1cfd6fa07f6a45badedda538744ccb61fc9eec54
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51157826"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264099"
 ---
 # <a name="get-userexperienceanalyticsremoteconnection"></a>获取 userExperienceAnalyticsRemoteConnection
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51157826"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRem
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 573
+Content-Length: 671
 
 {
   "value": {
@@ -78,13 +78,15 @@ Content-Length: 573
     "deviceName": "Device Name value",
     "model": "Model value",
     "virtualNetwork": "Virtual Network value",
+    "manufacturer": "Manufacturer value",
     "deviceCount": 11,
     "cloudPcRoundTripTime": 6.666666666666667,
     "cloudPcSignInTime": 5.666666666666667,
     "remoteSignInTime": 5.333333333333333,
     "coreBootTime": 4.0,
     "coreSignInTime": 4.666666666666667,
-    "cloudPcFailurePercentage": 8.0
+    "cloudPcFailurePercentage": 8.0,
+    "userPrincipalName": "User Principal Name value"
   }
 }
 ```

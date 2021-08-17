@@ -4,12 +4,12 @@ description: 说明 SDK 已经可用，以及 SDK 所支持的平台及其对于
 localization_priority: Normal
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4ed94a23159dea8b11fbae94e29777ce4f21f2d7c13e2c1755d18a4509d3f46d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 088fe89df25088a07012bcfb8535e51c68e93680
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174694"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264316"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Microsoft Graph SDK 概述
 
@@ -34,6 +34,7 @@ SDK 当前支持以下语言和平台：
 - [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)
 - [Java](https://developer.microsoft.com/en-us/graph/get-started/java)
 - [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
+- [PowerShell](/graph/powershell/get-started)
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
 - [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 

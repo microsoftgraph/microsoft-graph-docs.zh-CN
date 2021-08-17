@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ad9f8f88d41642dea3090cc05eb8f07f10a10aa
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ef29c201e23c9c857a2cf2a5d5952a94b71ee0e5
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153690"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263966"
 ---
 # <a name="create-managementconditionstatement"></a>创建 managementConditionStatement
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,13 +55,13 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
-|displayName|String|管理员定义的管理条件声明的名称。|
-|说明|String|管理员定义的管理条件声明的说明。|
+|displayName|字符串|管理员定义的管理条件声明的名称。|
+|description|String|管理员定义的管理条件声明的说明。|
 |createdDateTime|DateTimeOffset|创建管理条件语句的时间。 生成的服务器端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件语句的时间。 更新的服务器端。|
 |表达式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|用于评估管理条件语句是否被激活/停用的管理条件语句表达式。|
 |eTag|String|管理条件声明的 ETag。 更新的服务器端。|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) 集合|此管理条件声明的适用平台。
+|applicablePlatforms|[devicePlatformType](../resources/intune-fencing-deviceplatformtype.md) 集合|此管理条件声明的适用平台。
 这是通过查看与管理条件声明关联的管理条件并查找适用平台的交集得出的。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 
 

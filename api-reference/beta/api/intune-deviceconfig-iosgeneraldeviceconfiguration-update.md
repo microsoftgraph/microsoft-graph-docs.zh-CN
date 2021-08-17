@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: febd45d2e3682584890a7aacc18e9701bb147b9f
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 85a90fd74553e06f26a2915b605f7e590b54ece0
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665390"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262569"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>更新 iosGeneralDeviceConfiguration
 
@@ -55,16 +55,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对作用域用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountBlockModification|Boolean|指示设备处于监督模式时是否允许帐户修改。|
 |activationLockAllowWhenSupervised|Boolean|指示设备处于监督模式时是否允许激活锁定。|
@@ -155,7 +155,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskModeBlockVolumeButtons|Boolean|指示在展台模式下是否阻止音量按钮。|
 |kioskModeAllowZoomSettings|Boolean|指示在展台模式下是否允许访问缩放设置。|
 |kioskModeAppStoreUrl|String|指向 App Store 中要用于展台模式的应用的 URL。 如果 KioskModeManagedAppId 未知，请使用此方法。|
-|kioskModeBuiltInAppId|String|用于展台模式的内置应用的 ID。 在未设置 KioskModeManagedAppId 和 KioskModeAppStoreUrl 时使用。|
+|kioskModeBuiltInAppId|字符串|用于展台模式的内置应用的 ID。 在未设置 KioskModeManagedAppId 和 KioskModeAppStoreUrl 时使用。|
 |kioskModeRequireAssistiveTouch|Boolean|指示在展台模式下是否要求辅助触摸。|
 |kioskModeRequireColorInversion|Boolean|指示在展台模式下是否要求颜色反转。|
 |kioskModeRequireMonoAudio|Boolean|指示在展台模式下是否要求单声道音频。|
@@ -213,21 +213,21 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |voiceDialingBlocked|Boolean|指示是否阻止语音拨号。|
 |wallpaperBlockModification|Boolean|指示是否允许在受监督的设备上修改墙纸（iOS 9.0 及更高版本）。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|指示设备处于监督模式时是否强制设备仅使用配置文件中的 Wi-Fi 网络。 适用于运行 iOS 和 iPadOS 版本 14.4 及更早版本的设备。 运行 14.5+ 的设备应该使用设置"WiFiConnectToAllowedNetworksOnlyForced"。|
-|classroomForceRequestPermissionToLeaveClasses|布尔值|指示通过 Classroom 参加非托管课程的学生在尝试离开 iOS 11.3 及更高版本的 (课程时是否将请求教师) 。|
+|classroomForceRequestPermissionToLeaveClasses|布尔值|指示在尝试从 iOS 11.3 及更高版本的 iOS 11.3 (课程时，通过 Classroom 注册非托管课程的学生是否将请求教师) 。|
 |keychainBlockCloudSync|布尔值|指示是否阻止 iCloud 密钥链同步。 需要适用于 iOS 13 及更高版本的受监督设备。|
 |pkiBlockOTAUpdates|布尔值|指示是否阻止非空 PKI 更新。 如果此限制设置为 false，将不会在 iOS 7.0 (禁用 CRL 和 OCSP 检查) 。|
 |privacyForceLimitAdTracking|布尔值|指示广告跟踪是否受限。 (iOS 7.0 及更高版本) 。|
-|enterpriseBookBlockBackup|布尔值|指示是否阻止Enterprise备份书籍。|
-|enterpriseBookBlockMetadataSync|布尔值|指示是否阻止Enterprise备注和突出显示同步。|
-|airPrintBlocked|布尔值|指示 iOS 11.0 (是否阻止 AirPrint) 。|
-|airPrintBlockCredentialsStorage|布尔值|指示在 iOS 11.0 及更高版本 (是否阻止用于 Airprint 的用户名和密码的密钥链) 。|
-|airPrintForceTrustedTLS|布尔值|指示在 iOS 11.0 及更高版本中，TLS 打印通信 (信任证书) 。|
+|enterpriseBookBlockBackup|布尔值|指示是否Enterprise备份书籍。|
+|enterpriseBookBlockMetadataSync|布尔值|指示是否阻止Enterprise便笺和突出显示同步。|
+|airPrintBlocked|布尔值|指示在 iOS 11.0 (或更高版本中是否阻止 AirPrint) 。|
+|airPrintBlockCredentialsStorage|布尔值|指示 iOS 11.0 及更高版本中是否阻止用于 Airprint 的用户名和密码 (密钥链) 。|
+|airPrintForceTrustedTLS|布尔值|指示 iOS 11.0 及更高版本的 TLS 打印通信 (信任证书) 。|
 |airPrintBlockiBeaconDiscovery|布尔值|指示是否阻止 iBeacon 发现 AirPrint 打印机。 这可以防止恶意的 AirPrint 蓝牙信号对 iOS 11.0 (及更高版本的网络通信进行网络钓鱼) 。|
-|filesNetworkDriveAccessBlocked|布尔值|指示设备是否可以使用 SMB 协议中的服务器消息块访问网络 (或其他) 资源。 适用于运行 iOS 和 iPadOS 版本 13.0 及更高版本的设备。|
+|filesNetworkDriveAccessBlocked|布尔值|指示设备是否可以使用 SMB 协议的服务器消息块访问网络 (或其他) 资源。 适用于运行 iOS 和 iPadOS 版本 13.0 及更高版本的设备。|
 |filesUsbDriveAccessBlocked|布尔值|指示具有访问权限的设备能否连接到 USB 驱动器上并打开文件。 适用于运行 iOS 和 iPadOS 版本 13.0 及更高版本的设备。|
 |wifiPowerOnForced|布尔值|指示设备是否Wi-Fi保持打开状态，即使设备处于飞行模式。 适用于运行 iOS 和 iPadOS 版本 13.0 及更高版本的设备。|
 |blockSystemAppRemoval|布尔值|指示在受监督的设备 (iOS 11.0 及更高版本上是否阻止从设备删除系统) 。|
-|vpnBlockCreation|布尔值|指示在 iOS 11.0 (或更高版本中是否阻止创建 VPN) 。|
+|vpnBlockCreation|布尔值|指示在 iOS 11.0 (或更高版本中是否阻止 VPN 配置的) 。|
 |appRemovalBlocked|布尔值|指示是否允许删除应用。|
 |usbRestrictedModeBlocked|布尔值|指示是否允许在 iOS 11.4.1 (设备锁定时连接到 USB) 。|
 |passwordBlockAutoFill|布尔值|指示是否允许在 iOS 12.0 (自动填充密码) 。|
@@ -237,17 +237,18 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |contactsAllowManagedToUnmanagedWrite|布尔值|指示托管应用是否可以将联系人写入 iOS 12.0 及更高版本 (非托管联系人) 。|
 |contactsAllowUnmanagedToManagedRead|布尔值|指示非托管应用是否可以从 iOS 12.0 (或更高版本的托管联系人帐户) 。|
 |cellularBlockPersonalHotspotModification|布尔值|指示是否阻止用户修改 iOS 12.2 (或更高版本的个人热点) 。|
-|continuousPathKeyboardBlocked|布尔值|指示在 iOS 13 或更高版本的设备受监督时 (连续路径) 。|
-|findMyDeviceInFindMyAppBlocked|布尔值|指示在 iOS 13 或更高版本中监督设备时 (查找我的) 。|
+|continuousPathKeyboardBlocked|布尔值|指示在 iOS 13 或更高版本的设备受 (时是否阻止连续路径) 。|
+|findMyDeviceInFindMyAppBlocked|布尔值|指示在 iOS 13 或更高版本中监督设备时是否 (查找我的) 。|
 |findMyFriendsInFindMyAppBlocked|布尔值|指示在 iOS 13 或更高版本中监督设备时是否 (查找我的好友) 。|
 |iTunesBlocked|布尔值|指示是否阻止 iTunes 应用。 需要适用于 iOS 13 及更高版本的受监督设备。|
-|sharedDeviceBlockTemporarySessions|布尔值|指示是否阻止 iOS 13.4 或更高版本上的共享 iPad (临时) 。|
+|sharedDeviceBlockTemporarySessions|布尔值|指示是否阻止共享 iPad 上的临时会话 (iOS 13.4 或更高版本) 。|
 |appClipsBlocked|布尔值|阻止用户添加任何应用剪辑并删除设备上的任何现有应用剪辑。|
 |applePersonalizedAdsBlocked|布尔值|如果为 true，限制 Apple 个性化广告。 在 iOS 14 及更高版本中可用。|
 |nfcBlocked|Boolean|禁用 NFC 以防止设备与其他支持 NFC 的设备配对。 适用于运行 14.2 及更高版本的 iOS/iPadOS 设备。|
 |autoUnlockBlocked|布尔值|阻止用户使用 Apple Watch 解锁其设备。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
 |unpairedExternalBootToRecoveryAllowed|布尔值|允许用户使用未配对的设备将设备启动到恢复模式。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
 |onDeviceOnlyDictationForced|布尔值|禁用与 Siri 服务器的连接，以便用户不能使用 Siri 听写文本。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
+|wiFiConnectToAllowedNetworksOnlyForced|布尔值|要求设备使用Wi-Fi配置文件设置的网络。 适用于运行 iOS 和 iPadOS 版本 14.5 及更高版本的设备。|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|在展台模式下运行的应用类型。 可取值为：`notConfigured`、`appStoreApp`、`managedApp`、`builtInApp`。|
 
 
@@ -262,7 +263,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10776
+Content-length: 10827
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -557,6 +558,7 @@ Content-length: 10776
   "autoUnlockBlocked": true,
   "unpairedExternalBootToRecoveryAllowed": true,
   "onDeviceOnlyDictationForced": true,
+  "wiFiConnectToAllowedNetworksOnlyForced": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -566,7 +568,7 @@ Content-length: 10776
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10948
+Content-Length: 10999
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -864,6 +866,7 @@ Content-Length: 10948
   "autoUnlockBlocked": true,
   "unpairedExternalBootToRecoveryAllowed": true,
   "onDeviceOnlyDictationForced": true,
+  "wiFiConnectToAllowedNetworksOnlyForced": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```

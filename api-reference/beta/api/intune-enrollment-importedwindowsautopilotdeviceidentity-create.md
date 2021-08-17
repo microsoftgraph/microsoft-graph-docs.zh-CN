@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c39fed44dd8d4d7f0516f2215534ed861e13ec4
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 0e206786e6a37e8693ab3fc2714af825fbf090ab5dd8015351ac579ce1dd3cb7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51149861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54173889"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>创建 importedWindowsAutopilotDeviceIdentity
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,13 +54,13 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|groupTag|String|Windows autopilot 设备的组标记。|
+|groupTag|String|autopilot Windows组标记。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
-|importId|String|Windows autopilot 设备的导入 ID。|
+|importId|String|autopilot 设备的Windows ID。|
 |hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
-|assignedUserPrincipalName|String|将分配设备的用户的 UPN|
+|assignedUserPrincipalName|字符串|将分配设备的用户的 UPN|
 
 
 

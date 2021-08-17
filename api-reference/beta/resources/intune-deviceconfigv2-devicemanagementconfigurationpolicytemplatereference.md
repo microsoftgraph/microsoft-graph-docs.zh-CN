@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff61ac1e881ec6bb40750d9cb43d80c6722dd79e
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: e6ff9ea314ee7dee3e53e6c043ef4dc99083d5cc5b091d9981868ef6a33a52fb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148069"
 ---
 # <a name="devicemanagementconfigurationpolicytemplatereference-resource-type"></a>deviceManagementConfigurationPolicyTemplateReference 资源类型
 
@@ -25,10 +25,10 @@ ms.locfileid: "52666497"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|templateId|String|模板 ID|
+|templateId|字符串|模板 ID|
 |templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|引用的模板的模板系列。 此属性是只读的。 可取值为：`none`、`endpointSecurityAntivirus`、`endpointSecurityDiskEncryption`、`endpointSecurityFirewall`、`endpointSecurityEndpointDetectionAndResponse`、`endpointSecurityAttackSurfaceReduction`、`endpointSecurityAccountProtection`、`endpointSecurityApplicationControl`。|
 |templateDisplayName|String|模板显示 引用的模板的名称。 此属性是只读的。|
-|templateDisplayVersion|String|模板显示 引用的模板的版本。 此属性是只读的。|
+|templateDisplayVersion|字符串|模板显示 引用的模板的版本。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 无

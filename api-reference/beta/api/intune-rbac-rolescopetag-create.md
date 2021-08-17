@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7d02eb907ee0fbedde3240906277601eca8601e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 6c6f2ec200e4b50c6a88d7ec50d5be674345c3d221d4be41803f28b4282595a9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54136812"
 ---
 # <a name="create-rolescopetag"></a>创建 roleScopeTag
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,8 +55,8 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。|
-|displayName|String|角色作用域标记的显示或友好名称。|
-|说明|String|角色作用域标记的说明。|
+|displayName|字符串|角色作用域标记的显示或友好名称。|
+|description|String|角色作用域标记的说明。|
 |isBuiltIn|Boolean|角色作用域标记的说明。|
 
 

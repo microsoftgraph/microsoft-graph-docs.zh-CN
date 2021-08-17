@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af10809804f933b9a049ae37dad4aecfa2bf0c9e
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: d2beea28e8e6c5ef9165cb42058cf72733ed49ca
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666231"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264260"
 ---
 # <a name="update-userexperienceanalyticsscorehistory"></a>更新 userExperienceAnalyticsScoreHistory
 
@@ -27,9 +27,9 @@ ms.locfileid: "52666231"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -60,6 +60,10 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 |coreBootScore|Int32|用户体验分析设备核心启动分数。 分数范围为 0-100，100 是理想分数。|
 |coreSigninScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
 |recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
+|appHealthOverallScore|Int32|用户体验分析应用运行状况总体分数。|
+|startupTotalDevices|Int32|用户体验分析类别启动性能的总设备计数。|
+|recommendedSoftwareTotalDevices|Int32|用户体验分析类别推荐软件的总设备计数。|
+|appHealthTotalDevices|Int32|用户体验分析类别应用运行状况的总设备计数。|
 |restartScore|Int32|重启分数。 分数将在 0-100 之间，100 是理想分数，0 表示重启过多。 有效值为 0 到 9999999|
 
 
@@ -74,7 +78,7 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyticsScoreHistoryId}
 Content-type: application/json
-Content-length: 289
+Content-length: 422
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -84,6 +88,10 @@ Content-length: 289
   "coreBootScore": 13,
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
+  "appHealthOverallScore": 5,
+  "startupTotalDevices": 3,
+  "recommendedSoftwareTotalDevices": 15,
+  "appHealthTotalDevices": 5,
   "restartScore": 12
 }
 ```
@@ -93,7 +101,7 @@ Content-length: 289
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 338
+Content-Length: 471
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -104,6 +112,10 @@ Content-Length: 338
   "coreBootScore": 13,
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
+  "appHealthOverallScore": 5,
+  "startupTotalDevices": 3,
+  "recommendedSoftwareTotalDevices": 15,
+  "appHealthTotalDevices": 5,
   "restartScore": 12
 }
 ```

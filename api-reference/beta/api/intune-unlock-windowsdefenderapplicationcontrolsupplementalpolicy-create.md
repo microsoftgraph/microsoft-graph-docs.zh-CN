@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 770872828ea9aecc3dea90195150ab68dd2e4c2b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f70163997f92e0b5822d95f11c8589643be185709013bc75b72a65a202ca1136
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54195328"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>创建 windowsDefenderApplicationControlSupplementalPolicy
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,10 +54,10 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|WindowsDefenderApplicationControl 补充策略的密钥。|
-|displayName|String|WindowsDefenderApplicationControl 显示名称策略的一部分。|
-|说明|String|WindowsDefenderApplicationControl 补充策略的说明。|
-|content|Binary|采用字节数组格式的 WindowsDefenderApplicationControl 补充策略内容。|
-|contentFileName|String|WindowsDefenderApplicationControl 补充策略内容的文件名。|
+|displayName|字符串|WindowsDefenderApplicationControl 显示名称策略的一部分。|
+|description|String|WindowsDefenderApplicationControl 补充策略的说明。|
+|content|二进制|采用字节数组格式的 WindowsDefenderApplicationControl 补充策略内容。|
+|contentFileName|字符串|WindowsDefenderApplicationControl 补充策略内容的文件名。|
 |version|String|WindowsDefenderApplicationControl 补充策略的版本。|
 |creationDateTime|DateTimeOffset|上载 WindowsDefenderApplicationControl 补充策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 WindowsDefenderApplicationControl 补充策略的日期和时间。|

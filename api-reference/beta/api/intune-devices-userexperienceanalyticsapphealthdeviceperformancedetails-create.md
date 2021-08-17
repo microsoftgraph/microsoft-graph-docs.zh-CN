@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2073878214b09a4ad2a00700e826ab992e9ba44
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4c0ee58fd0b836076b8f2f946232a09dcfe38790
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51136074"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262798"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformancedetails"></a>创建 userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51136074"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -55,8 +55,10 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 |:---|:---|:---|
 |id|String|用户体验分析设备性能对象的唯一标识符。|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
-|eventType|String|事件的类型。|
+|eventType|字符串|事件的类型。|
 |appDisplayName|String|发生事件的应用程序的友好名称。|
+|appPublisher|String|应用程序的发布者。|
+|appVersion|字符串|应用程序的版本。|
 |deviceId|String|设备的 ID。|
 |deviceDisplayName|String|设备的名称。|
 
@@ -72,13 +74,15 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 Content-type: application/json
-Content-length: 325
+Content-length: 405
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformanceDetails",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "eventType": "Event Type value",
   "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appVersion": "App Version value",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
@@ -89,7 +93,7 @@ Content-length: 325
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 374
+Content-Length: 454
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformanceDetails",
@@ -97,6 +101,8 @@ Content-Length: 374
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "eventType": "Event Type value",
   "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appVersion": "App Version value",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
