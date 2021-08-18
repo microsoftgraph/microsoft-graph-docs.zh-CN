@@ -4,12 +4,12 @@ description: 订阅更改通知的应用可能会删除其订阅并错过一些�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 0f0fd13d70089ddbb378b1baf97c01e1240bb36366680bc009d3f6d6a9f7b952
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 29b769e9f3a5020f272152e86436f419206029b9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159650"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264631"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>减少缺失订阅和更改通知
 
@@ -50,6 +50,7 @@ ms.locfileid: "54159650"
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",

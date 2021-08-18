@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76d8c9b985a3ca30f0d2a0a4144128d0e7a1baff
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: c89efaac6ff65f82c09ed787a9ed879d50e429386e61092021a9aff817a7724a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244846"
 ---
 # <a name="devicemanagementconfigurationsettinginstancetemplate-resource-type"></a>deviceManagementConfigurationSettingInstanceTemplate 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "51868451"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|settingInstanceTemplateId|String|设置实例模板 ID|
+|settingInstanceTemplateId|字符串|设置实例模板 ID|
 |settingDefinitionId|String|设置定义 ID|
 |isRequired|Boolean|指示策略是否必须指定此设置。|
 

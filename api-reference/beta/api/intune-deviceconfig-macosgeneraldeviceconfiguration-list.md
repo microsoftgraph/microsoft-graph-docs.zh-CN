@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7fa467c7766ce4a05065f5ad9da8df74d3004d3
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d66195a0dc9e4834c1351f87faa3ba85f97f9679
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51137222"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263784"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>列出 macOSGeneralDeviceConfigurations
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5369
+Content-Length: 5418
 
 {
   "value": [
@@ -128,9 +128,6 @@ Content-Length: 5369
       "passwordMaximumAttemptCount": 11,
       "passwordMinutesUntilFailedLoginReset": 4,
       "keychainBlockCloudSync": true,
-      "airPrintBlocked": true,
-      "airPrintForceTrustedTLS": true,
-      "airPrintBlockiBeaconDiscovery": true,
       "safariBlockAutofill": true,
       "cameraBlocked": true,
       "iTunesBlockMusicService": true,
@@ -201,7 +198,11 @@ Content-Length: 5369
             }
           ]
         }
-      ]
+      ],
+      "addingGameCenterFriendsBlocked": true,
+      "gameCenterBlocked": true,
+      "multiplayerGamingBlocked": true,
+      "wallpaperModificationBlocked": true
     }
   ]
 }

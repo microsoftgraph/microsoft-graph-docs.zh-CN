@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cef0dd74416c4fbcef83ebe10109795ba41986c1
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 0f9f5e5f6bc8ff43a3bac407858c1d41ff06f27d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665586"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255576"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevice-resource-type"></a>userExperienceAnalyticsWorkFromAnywhereDevice 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "52665586"
 
 用户体验分析设备：从任何位置工作的报告
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsWorkFromAnywhereDevices](../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-list.md)|[userExperienceAnalyticsWorkFromAnywhereDevice](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md) 集合|列出 [userExperienceAnalyticsWorkFromAnywhereDevice](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md) 对象的属性和关系。|
@@ -39,7 +39,7 @@ ms.locfileid: "52665586"
 |serialNumber|String|用户体验随设备序列号随处工作。|
 |manufacturer|String|用户体验从任何设备制造商处工作。|
 |model|String|用户体验从任何设备型号开始工作。|
-|ownership|String|用户体验从任何设备所有权开始工作。|
+|ownership|字符串|用户体验从任何设备所有权开始工作。|
 |managedBy|String|用户体验从设备的任何管理代理工作。|
 |autoPilotRegistered|布尔值|用户体验从 intune 设备的 autopilotRegistered 的任何位置工作。|
 |autoPilotProfileAssigned|布尔值|用户体验分析从 intune 设备的 autopilotProfileAssigned 的任何位置工作。|
@@ -48,6 +48,19 @@ ms.locfileid: "52665586"
 |azureAdJoinType|String|用户体验从任何设备的 azure Ad joinType 工作。|
 |osDescription|String|用户体验从任何设备的操作系统说明工作。|
 |osVersion|String|用户体验从任何设备的操作系统版本工作。|
+|tenantAttached|布尔值|用户体验从任何设备的 tenantAttached 工作。|
+|compliancePolicySetToIntune|布尔值|用户体验从任何设备的 compliancePolicySetToIntune 工作。|
+|otherWorkloadsSetToIntune|布尔值|用户体验从任何设备的其他WorkloadsSetToIntune 工作。|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|用户体验从设备的任何 Windows 升级资格状态工作。 可取值为：`upgraded`、`unknown`、`notCapable`、`capable`。|
+|ramCheckFailed|布尔值|用户体验分析是否从任何设备 RAM 硬件检查失败，设备无法升级到最新版本的 Windows|
+|storageCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时存储硬件检查是否失败。|
+|processorCoreCountCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件核心计数检查是否失败。|
+|processorSpeedCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件速度检查是否失败。|
+|tpmCheckFailed|布尔值|用户体验从任何设备工作，"受信任的平台模块 (TPM) 设备升级到 Windows 的最新版本的硬件检查失败。|
+|secureBootCheckFailed|布尔值|用户体验适用于任何设备，安全启动硬件检查是否因设备升级到最新版本的 Windows 而失败。|
+|processorFamilyCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件系列检查是否失败。|
+|processor64BitCheckFailed|布尔值|用户体验适用于任何设备，处理器硬件 64 位体系结构检查是否失败，设备无法升级到最新版本的 Windows。|
+|osCheckFailed|布尔值|用户体验适用于任何设备，操作系统检查是否失败，设备是否升级到最新版本的 Windows。|
 
 ## <a name="relationships"></a>关系
 无
@@ -76,7 +89,20 @@ ms.locfileid: "52665586"
   "azureAdDeviceId": "String",
   "azureAdJoinType": "String",
   "osDescription": "String",
-  "osVersion": "String"
+  "osVersion": "String",
+  "tenantAttached": true,
+  "compliancePolicySetToIntune": true,
+  "otherWorkloadsSetToIntune": true,
+  "upgradeEligibility": "String",
+  "ramCheckFailed": true,
+  "storageCheckFailed": true,
+  "processorCoreCountCheckFailed": true,
+  "processorSpeedCheckFailed": true,
+  "tpmCheckFailed": true,
+  "secureBootCheckFailed": true,
+  "processorFamilyCheckFailed": true,
+  "processor64BitCheckFailed": true,
+  "osCheckFailed": true
 }
 ```
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e878a43325dcad36f615f8eefc41e74f6a85fd3
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 69953655c507550ebc4ffe731880f2530272059e7c2a5f50a08e3c5b2aa654df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51864856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231318"
 ---
 # <a name="update-microsofttunnelserver"></a>更新 microsoftTunnelServer
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -49,12 +49,12 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) 对象的 JSON 表示形式。
 
-下表显示创建 [microsoftTunnelServer 时所需的属性](../resources/intune-mstunnel-microsofttunnelserver.md)。
+下表显示创建 [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelServer 的 ID|
-|displayName|String|MicrosoftTunnelServer 的显示名称|
+|displayName|字符串|MicrosoftTunnelServer 的显示名称|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|MicrosoftTunnelServer 的运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`、`warning`、`offline`、`upgradeInProgress` 或 `upgradeFailed`。|
 |lastCheckinDateTime|DateTimeOffset|MicrosoftTunnelServer 上次签入时间|
 

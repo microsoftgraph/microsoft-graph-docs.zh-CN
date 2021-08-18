@@ -1,16 +1,16 @@
 ---
 title: accessPackage 资源类型
-description: 访问包定义资源角色的集合，以及一个或多个用户如何访问这些资源的策略。
+description: 访问包定义资源角色的集合，以及一个或多个用户可以如何访问这些资源的策略。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: faef8ab32caa9e065f264eed6a8ad862ef6f8dd0
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 95bf04ace23b6340fcef3c0945fad1bd221e8a12
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256154"
 ---
 # <a name="accesspackage-resource-type"></a>accessPackage 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "53401496"
 
 若要将用户分配给访问包，请创建引用访问包和访问包分配策略的[accessPackageAssignmentRequest。](../api/accesspackageassignmentrequest-post.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -38,11 +38,12 @@ ms.locfileid: "53401496"
 | [列出 incompatibleAccessPackages](../api/accesspackage-list-incompatibleaccesspackages.md) | [accessPackage](accesspackage.md) 集合 | 检索此访问包 **的不兼容 accesspackage** 对象的列表。 |
 | [将 accessPackage 添加到 incompatibleAccessPackages](../api/accesspackage-post-incompatibleaccesspackage.md) | 无 | 添加一个链接以指示另一 **个 accesspackage** 与指定的访问包不兼容。 |
 | [从 incompatibleAccessPackages 中删除 accessPackage](../api/accesspackage-delete-incompatibleaccesspackage.md) | 无 | 删除指示 **accesspackage 不兼容** 的链接。 |
-| [列出 incompatibleGroups](../api/accesspackage-list-incompatiblegroups.md) | [group](group.md) 集合 | 检索此 **访问包的** 不兼容组对象的列表。 |
+| [列出 incompatibleGroups](../api/accesspackage-list-incompatiblegroups.md) | [组](group.md) 集合 | 检索此 **访问包的** 不兼容组对象的列表。 |
 | [将组添加到 incompatibleGroups](../api/accesspackage-post-incompatiblegroup.md) | 无 | 添加链接以指示组的成员身份 **与** 指定的访问包不兼容。 |
 | [从 incompatibleGroups 中删除组](../api/accesspackage-delete-incompatiblegroup.md) | 无 | 删除指示组成员身份 **不兼容** 的链接。|
 | [列出 accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [accessPackage](accesspackage.md) 集合 | 检索  **accesspackage 对象** 的列表，这些对象将此访问包列出为不兼容。 |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[accessPackage](../resources/accesspackage.md) 集合|检索在已登录用户上筛选的 **accessPackage** 对象列表。|
+| [getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md) | [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) 集合 | 检索具有请求要求的 **accessPackageAssignmentRequestRequirement** 对象的列表。 |
 
 ## <a name="properties"></a>属性
 
@@ -52,10 +53,10 @@ ms.locfileid: "53401496"
 |createdBy|String|创建此资源的主题的用户或标识的 UPN。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |说明|String|访问包的说明。|
-|displayName|String|访问显示名称的组。|
+|displayName|字符串|访问显示名称的组。|
 |id|String| 只读。|
 |IsHidden|布尔值|访问包是否对请求程序隐藏。|
-|isRoleScopesVisible|布尔|指示角色作用域是否可见。|
+|isRoleScopesVisible|布尔值|指示角色作用域是否可见。|
 |modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 
@@ -63,12 +64,12 @@ ms.locfileid: "53401496"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) 集合| 只读。可为 Null。|
-|accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| 只读。可为 Null。|
+|accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) 集合| 只读。可为空。|
+|accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| 只读。可为空。|
 |accessPackageResourceRoleScopes|[accessPackageResourceRoleScope](accesspackageresourcerolescope.md) 集合| 可为 NULL。|
 | incompatibleAccessPackages | [accessPackage](accesspackagecatalog.md) 集合 | 为其分配用户不符合资格分配此访问包的访问包。 |
 | accessPackagesIncompatibleWith | [accessPackage](accesspackagecatalog.md) 集合 | 与此包不兼容的访问包。 只读。 |
-| incompatibleGroups | [group](group.md) 集合 | 其成员无资格分配此访问包的组。 |
+| incompatibleGroups | [组](group.md) 集合 | 其成员无资格分配此访问包的组。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

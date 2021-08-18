@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: f091e20a056d6145fde5ecf98d5133926a1b9c1e6405cc0b5ab64cffeb8134c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 94d8444f9f131adc74f6d521ea50dbe59fd57817
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230681"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264323"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "54230681"
 - [检测到的应用](intune-devices-detectedapp.md)
 - [设备操作结果](intune-devices-deviceactionresult.md)
 - [设备类别](intune-devices-devicecategory.md)
-- [设备注册类型](intune-devices-deviceenrollmenttype.md)
+- [设备注册类型](intune-shared-deviceenrollmenttype.md)
 - [设备 Exchange 访问状态摘要](intune-devices-deviceexchangeaccessstatesummary.md)
 - [设备地理位置](intune-devices-devicegeolocation.md)
 - [设备运行状况证明状态](intune-devices-devicehealthattestationstate.md)

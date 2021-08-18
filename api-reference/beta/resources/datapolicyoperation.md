@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f12d83ace221a64754e4227ff292e780abf7ea82
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7ba0c3dc3bab79023a530a075f0640c2aba58751030363c1f537c7ef033a5870
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253325"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
@@ -32,9 +32,9 @@ ms.locfileid: "50962628"
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|表示此数据策略操作的请求使用 ISO 8601 格式以 UTC 时间完成的时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 Null，直到操作完成。|
 |id|String| 此操作的唯一键。 |
-|状态|dataPolicyOperationStatus| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
+|status|dataPolicyOperationStatus| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
 |storageLocation|String|导出请求将数据导出到的 URL 位置。|
-|userId|String|操作所针对的用户的 ID。|
+|userId|字符串|要执行该操作的用户的 ID。|
 |submittedDateTime|DateTimeOffset|表示使用 ISO 8601 格式提交此数据操作请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |progress|双精度|指定操作的进度。|
 

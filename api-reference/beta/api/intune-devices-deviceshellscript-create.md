@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7941779b023bc81dc1a1db9e8a89158822ad9bbd
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d31f471f8d6d6b8ca0918310f9d975f13b7a8d4d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150267"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254417"
 ---
 # <a name="create-deviceshellscript"></a>创建 deviceShellScript
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51150267"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,13 +53,13 @@ POST /deviceManagement/deviceShellScripts
 
 |属性|类型|说明|
 |:---|:---|:---|
-|executionFrequency|持续时间|脚本运行的间隔。 如果未定义，脚本将运行一次|
+|executionFrequency|期限|脚本运行的间隔。 如果未定义，脚本将运行一次|
 |retryCount|Int32|脚本失败时重试次数|
-|blockExecutionNotifications|Boolean|不通知用户正在执行脚本|
+|blockExecutionNotifications|布尔值|不通知用户正在执行脚本|
 |id|String|设备管理脚本的唯一标识符。|
-|displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
-|scriptContent|Binary|脚本内容。|
+|displayName|字符串|设备管理脚本的名称。|
+|description|String|设备管理脚本的可选说明。|
+|scriptContent|二进制|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|

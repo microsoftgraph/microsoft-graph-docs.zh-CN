@@ -1,15 +1,15 @@
 ---
-title: Microsoft Intune 中的设备管理 - Microsoft Graph API
-description: 列出定义Graph组织的设备的 Microsoft (REST) Intune 终结点 API。
+title: Microsoft Intune中的设备管理 - Microsoft Graph API
+description: 列出定义Graph组织的设备的适用于 Intune 终结点 (REST) 的 Microsoft 应用 API。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 99dd9b1abd5353f6d8e4ca30aaac48e54bd296b7
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 97d5a44d72db940197e53f5c713f7a4734011c75
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666273"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265408"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -22,6 +22,7 @@ ms.locfileid: "52666273"
 - [激活设备 esim 操作结果](intune-devices-activatedeviceesimactionresult.md)
 - [管理员同意](intune-devices-adminconsent.md)
 - [管理员许可状态](intune-devices-adminconsentstate.md)
+- [允许的远程协助操作](intune-remoteassistance-allowedremoteassistanceactions.md)
 - [应用日志集下载详情](intune-devices-applogcollectiondownloaddetails.md)
 - [应用日志集请求](intune-devices-applogcollectionrequest.md)
 - [应用日志解密算法](intune-devices-applogdecryptionalgorithm.md)
@@ -38,7 +39,7 @@ ms.locfileid: "52666273"
 - [机箱类型](intune-devices-chassistype.md)
 - [Chrome o 的 device 属性](intune-devices-chromeosdeviceproperty.md)
 - [循环 geofence 管理条件](intune-fencing-circulargeofencemanagementcondition.md)
-- [Cloud PC连接问题](intune-devices-cloudpcconnectivityissue.md)
+- [云电脑连接问题](intune-devices-cloudpcconnectivityissue.md)
 - [Comanaged 设备摘要](intune-devices-comanageddevicessummary.md)
 - [托管符合条件的设备](intune-devices-comanagementeligibledevice.md)
 - [托管符合条件的设备摘要](intune-devices-comanagementeligibledevicessummary.md)
@@ -62,6 +63,8 @@ ms.locfileid: "52666273"
 - [设备自定义属性 shell 脚本](intune-devices-devicecustomattributeshellscript.md)
 - [设备自定义属性值类型](intune-devices-devicecustomattributevaluetype.md)
 - [设备注册失败原因](intune-troubleshooting-deviceenrollmentfailurereason.md)
+- [设备注册类型](intune-devices-deviceenrollmenttype.md)
+- [设备注册类型](intune-devices-deviceenrollmenttype.md)
 - [设备 Exchange 访问状态摘要](intune-devices-deviceexchangeaccessstatesummary.md)
 - [设备地理位置](intune-devices-devicegeolocation.md)
 - [Device Guard 本地系统颁发机构 Credential Guard 状态](intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)
@@ -133,7 +136,7 @@ ms.locfileid: "52666273"
 - [设备管理设置整数约束](intune-deviceintent-devicemanagementsettingintegerconstraint.md)
 - [设备管理设置配置文件约束](intune-deviceintent-devicemanagementsettingprofileconstraint.md)
 - [设备管理设置正则表达式约束](intune-deviceintent-devicemanagementsettingregexconstraint.md)
-- [设备管理设置所需的约束](intune-deviceintent-devicemanagementsettingrequiredconstraint.md)
+- [设备管理设置必需约束](intune-deviceintent-devicemanagementsettingrequiredconstraint.md)
 - [设备管理设置 sddl 约束](intune-deviceintent-devicemanagementsettingsddlconstraint.md)
 - [设备管理设置字符串长度约束](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
 - [设备管理设置 xml 约束](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
@@ -149,9 +152,12 @@ ms.locfileid: "52666273"
 - [设备管理疑难解答事件](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [设备管理意图值类型](intune-deviceintent-devicemanangementintentvaluetype.md)
 - [设备操作系统摘要](intune-devices-deviceoperatingsystemsummary.md)
+- [设备平台类型](intune-fencing-deviceplatformtype.md)
 - [设备保护概述](intune-devices-deviceprotectionoverview.md)
 - [设备注册状态](intune-devices-deviceregistrationstate.md)
 - [设备 shell 脚本](intune-devices-deviceshellscript.md)
+- [设备类型](intune-devices-devicetype.md)
+- [设备类型](intune-devices-devicetype.md)
 - [磁盘类型](intune-devices-disktype.md)
 - [嵌入式 SIM 卡激活代码](intune-esim-embeddedsimactivationcode.md)
 - [嵌入式 SIM 卡激活代码池](intune-esim-embeddedsimactivationcodepool.md)
@@ -165,6 +171,7 @@ ms.locfileid: "52666273"
 - [见解值双倍](intune-devices-insightvaluedouble.md)
 - [见解价值 int](intune-devices-insightvalueint.md)
 - [联接类型](intune-devices-jointype.md)
+- [键/值对](intune-troubleshooting-keyvaluepair.md)
 - [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
 - [位置管理条件](intune-fencing-locationmanagementcondition.md)
@@ -181,6 +188,7 @@ ms.locfileid: "52666273"
 - [托管设备远程操作](intune-devices-manageddeviceremoteaction.md)
 - [托管设备汇总应用状态](intune-troubleshooting-manageddevicesummarizedappstate.md)
 - [托管安装程序状态](intune-devices-managedinstallerstatus.md)
+- [管理代理类型](intune-devices-managementagenttype.md)
 - [管理条件](intune-fencing-managementcondition.md)
 - [管理条件表达式](intune-fencing-managementconditionexpression.md)
 - [管理条件表达式模型](intune-fencing-managementconditionexpressionmodel.md)
@@ -203,18 +211,25 @@ ms.locfileid: "52666273"
 - [网络管理条件](intune-fencing-networkmanagementcondition.md)
 - [通知邮件模板](intune-notification-notificationmessagetemplate.md)
 - [通知模板品牌选项](intune-notification-notificationtemplatebrandingoptions.md)
+- [操作系统升级资格](intune-devices-operatingsystemupgradeeligibility.md)
 - [操作系统版本计数](intune-devices-osversioncount.md)
 - [平台类型](intune-esim-platformtype.md)
+- [策略平台类型](intune-deviceintent-policyplatformtype.md)
 - [修正状态](intune-devices-remediationstate.md)
 - [远程操作](intune-devices-remoteaction.md)
 - [远程操作审核](intune-devices-remoteactionaudit.md)
 - [远程协助载入状态](intune-remoteassistance-remoteassistanceonboardingstatus.md)
 - [远程协助合作伙伴](intune-remoteassistance-remoteassistancepartner.md)
+- [远程协助设置](intune-remoteassistance-remoteassistancesettings.md)
+- [远程协助状态](intune-remoteassistance-remoteassistancestate.md)
 - [远程锁定操作结果](intune-devices-remotelockactionresult.md)
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
+- [生成的应用状态](intune-troubleshooting-resultantappstate.md)
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
 - [角色范围标记信息](intune-auditing-rolescopetaginfo.md)
-- [旋转BitLocker键设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [旋转 BitLocker 密钥设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [运行状态](intune-devices-runstate.md)
+- [运行状态](intune-devices-runstate.md)
 - [安全基线类别状态摘要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
 - [安全基线参与策略](intune-deviceintent-securitybaselinecontributingpolicy.md)
@@ -228,6 +243,8 @@ ms.locfileid: "52666273"
 - [一元管理条件表达式运算符类型](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [用户体验分析应用运行状况应用性能（按应用版本）](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
+- [用户体验分析应用运行状况应用性能（按应用版本详细信息）](intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md)
+- [用户体验分析应用运行状况应用性能（按应用版本设备 ID）](intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid.md)
 - [用户体验分析应用运行状况应用性能（按版本）](intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)
 - [用户体验分析应用运行状况应用程序性能](intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)
 - [用户体验分析应用运行状况设备模型性能](intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md)
@@ -237,6 +254,7 @@ ms.locfileid: "52666273"
 - [用户体验分析 autopilot 设备摘要](intune-devices-userexperienceanalyticsautopilotdevicessummary.md)
 - [用户体验分析基线](intune-devices-userexperienceanalyticsbaseline.md)
 - [用户体验分析类别](intune-devices-userexperienceanalyticscategory.md)
+- [用户体验分析云标识设备摘要](intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)
 - [用户体验分析云管理设备摘要](intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)
 - [用户体验分析设备性能](intune-devices-userexperienceanalyticsdeviceperformance.md)
 - [用户体验分析设备分数](intune-devices-userexperienceanalyticsdevicescores.md)
@@ -263,6 +281,7 @@ ms.locfileid: "52666273"
 - [用户体验分析Windows 10设备摘要](intune-devices-userexperienceanalyticswindows10devicessummary.md)
 - [用户体验分析从任何设备运行](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [用户体验分析从任意位置设备运行摘要](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
+- [用户体验分析从任何硬件准备情况指标开始工作](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)
 - [用户体验分析从任何位置工作指标](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)
