@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8166c5215ab83a8f756a13234bad9bf9121fdbd4
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: c6104a142c76439bd3ad8ba9eaa2863bf2067b5e8096f278e5c1fad59367bf32
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868027"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147964"
 ---
 # <a name="userexperienceanalyticsnotautopilotreadydevice-resource-type"></a>userExperienceAnalyticsNotAutopilotReadyDevice 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用户体验分析 设备未准备好 Windows autopilot。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsNotAutopilotReadyDevices](../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-list.md)|[userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md) 集合|列出 [userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md) 对象的属性和关系。|
@@ -40,10 +40,10 @@ ms.locfileid: "51868027"
 |manufacturer|String|intune 设备的制造商。|
 |model|String|intune 设备的型号。|
 |managedBy|String|intune 设备的托管者。|
-|autoPilotRegistered|Boolean|intune 设备的 autopilotRegistered。|
-|autoPilotProfileAssigned|Boolean|intune 设备的 autopilotProfileAssigned。|
-|azureAdRegistered|Boolean|intune 设备的 azureAdRegistered。|
-|azureAdJoinType|String|intune 设备的 azure Ad joinType。|
+|autoPilotRegistered|布尔值|intune 设备的 autopilotRegistered。|
+|autoPilotProfileAssigned|布尔值|intune 设备的 autopilotProfileAssigned。|
+|azureAdRegistered|布尔值|intune 设备的 azureAdRegistered。|
+|azureAdJoinType|字符串|intune 设备的 azure Ad joinType。|
 
 ## <a name="relationships"></a>关系
 无

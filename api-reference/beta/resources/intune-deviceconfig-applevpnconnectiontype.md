@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8ce68a0c9fda0bde6dec8035fb788c55920775f
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: c8a4eb4d765957a56fd99e476837e59516076a9cf2a47007e3790387815ccdab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190638"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -34,14 +34,14 @@ Apple VPN 连接类型。
 |ciscoIPSec|6 |Cisco (IPSec) 。|
 |citrix|7 |Citrix。|
 |ciscoAnyConnectV2|8 |Cisco AnyConnect V2。|
-|paloAltoGlobalProtect|9 |Palo Alto Networks GlobalProtect。|
-|zscalerPrivateAccess|10  |Zscaler Private Access。|
+|paloAltoGlobalProtect|9 |Palo Alto Networks GlobalProtect.|
+|zscalerPrivateAccess|10 |Zscaler 专用访问。|
 |f5Access2018|11 |F5 Access 2018。|
 |citrixSso|12 |Citrix Sso。|
 |paloAltoGlobalProtectV2|13 |Palo Alto Networks GlobalProtect V2。|
 |ikEv2|14 |IKEv2。|
 |alwaysOn|15 |AlwaysOn。|
-|microsoftTunnel|16 |Microsoft 隧道。|
+|microsoftTunnel|16 |Microsoft Tunnel。|
 |netMotionMobility|17 |NetMotion Mobility。|
 |microsoftProtect|18 |Microsoft 保护。|
 

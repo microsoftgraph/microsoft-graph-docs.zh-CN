@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 177aa30f633b4a9cdf8c6637fdf383fe3e758af5
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: fdb3f967d91e484d8512dfd58fa8693e9bcefe2becf9fe461ef603060e567e9c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133008"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149203"
 ---
 # <a name="update-managedebookcategory"></a>更新 managedEBookCategory
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,13 +55,13 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|String|电子图书类别的名称。|
+|displayName|字符串|电子图书类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|ManagedEBookCategory 上次修改的日期和时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [managedEBookCategory](../resources/intune-books-managedebookcategory.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [managedEBookCategory](../resources/intune-books-managedebookcategory.md) 对象。
 
 ## <a name="example"></a>示例
 

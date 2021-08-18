@@ -1,40 +1,40 @@
 ---
 title: vppTokenRevokeLicensesActionResult 资源类型
-description: 在 Apple Volume Purchase Program 令牌上执行的吊销许可证操作的状态。
+description: 对 Apple Volume Purchase Program 令牌执行的撤销许可证操作的状态。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 867d8c450ad199251a5a99b96b74eff01275845b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fc6a3566682755707a7c6b5675c6daa8a829d86e36a59001a3a845375c5f9242
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259555"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172790"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-在 Apple Volume Purchase Program 令牌上执行的吊销许可证操作的状态。
+对 Apple Volume Purchase Program 令牌执行的撤销许可证操作的状态。
 
 
 继承自 [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|actionName|String|从[VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)继承的操作名称|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|继承自 [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|startDateTime|DateTimeOffset|从[VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)继承的操作的开始时间|
-|lastUpdatedDateTime|DateTimeOffset|上次更新操作状态的时间从[VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)继承|
-|totalLicensesCount|Int32|试图吊销的许可证数量的计数。|
-|failedLicensesCount|Int32|无法撤消的许可证数量的计数。|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|吊销许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate`。|
+|actionName|String|操作名称 继承自 [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|操作的状态 继承自 [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|startDateTime|DateTimeOffset|操作启动时间 继承自 [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|lastUpdatedDateTime|DateTimeOffset|上次更新操作状态的时间 继承自 [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|totalLicensesCount|Int32|尝试撤销的许可证数量计数。|
+|failedLicensesCount|Int32|未能撤销的许可证数量计数。|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|撤销许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate`。|
 
 ## <a name="relationships"></a>关系
 无

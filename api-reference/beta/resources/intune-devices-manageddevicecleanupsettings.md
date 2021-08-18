@@ -1,31 +1,31 @@
 ---
 title: managedDeviceCleanupSettings 资源类型
-description: 定义当管理员想要清理设备时的规则。
+description: 在管理员希望清理设备时定义规则。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 062f8a428155a7246e9ac6a372d95aa7ebe42717
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f229595c9de6ae310a6e2f95bbdfcdf96fc5e92805f97f89aae847a436335098
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148027"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>managedDeviceCleanupSettings 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-定义当管理员想要清理设备时的规则。
+在管理员希望清理设备时定义规则。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|deviceInactivityBeforeRetirementInDays|字符串|设备未联系 Intune 的天数。|
+|deviceInactivityBeforeRetirementInDays|String|设备未与 Intune 联系的天数。|
 
 ## <a name="relationships"></a>关系
 无
