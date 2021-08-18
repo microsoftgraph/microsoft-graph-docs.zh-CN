@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f8ca45d9cc8efc61a67708ca3595f1b4856e393
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3ad5567211e021e98da47ca7c3b38f65175f26b712e8302d34d5d9abc1147622
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122969"
 ---
 # <a name="create-remoteassistancepartner"></a>创建 remoteAssistancePartner
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,7 +54,7 @@ POST /deviceManagement/remoteAssistancePartners
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|合作伙伴的唯一标识符。|
-|displayName|String|合作伙伴的显示名称。|
+|displayName|字符串|合作伙伴的显示名称。|
 |onboardingUrl|String|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|当前 TeamViewer 连接器状态的友好说明。 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|

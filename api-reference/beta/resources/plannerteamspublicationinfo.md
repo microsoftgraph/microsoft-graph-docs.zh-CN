@@ -5,27 +5,27 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9db73bb5a914a848f3e19e079321681b22510e8e
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 7cf298b4e9933e3019a72b0750cf01a95c2bf892609f3b601c0742eaf3b9e27d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883235"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244293"
 ---
 # <a name="plannerteamspublicationinfo-resource-type"></a>plannerTeamsPublicationInfo 资源类型
 
 命名空间：microsoft.graph
 
-包含有关创建 [plannerTask](plannertask.md)的发布过程的详细信息。 发布过程基于模板创建任务副本。 这些任务在多个计划中创建，并且用户具有受限权限;例如，无法删除它们，并且可能会阻止用户编辑某些字段。 出版物用于在整个组织中分发任务并集中跟踪任务的进度。
+包含有关创建 [plannerTask](plannertask.md)的发布过程的详细信息。 发布过程基于模板创建任务副本。 这些任务在多个计划中创建，并且具有针对用户的受限权限;例如，无法删除这些字段，并且可能会阻止用户编辑某些字段。 发布用于在整个组织中分发任务并集中跟踪其进度。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|lastModifiedDateTime|DateTimeOffset|上次由发布过程修改此任务的日期和时间。 只读。 |
-|publicationId|String| 出版物的标识符。 只读。|
-|publishedToPlanId|String|plannerPlan **此任务最初** 放置的标识符。 只读。 |
+|lastModifiedDateTime|DateTimeOffset|发布过程上次修改此任务的日期和时间。 只读。 |
+|publicationId|字符串| 出版物的标识符。 只读。|
+|publishedToPlanId|字符串|plannerPlan 此任务最初放置的标识符。 只读。 |
 |publishingTeamId|String| 启动发布 [过程的](team.md) 团队的标识符。 只读。|
-|publishingTeamName|String|启动显示名称流程的团队的订阅。 此显示名称仅供参考，可能不会表示团队的最新版本名称。 只读。 |
+|publishingTeamName|字符串|启动显示名称流程的团队的组组。 此显示名称仅供参考，可能并不代表团队最新的名称。 只读。 |
 
 ## <a name="relationships"></a>关系
 无。

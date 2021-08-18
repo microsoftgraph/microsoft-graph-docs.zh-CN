@@ -5,25 +5,25 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4132bf41a3081bc9b5234cfcd0066508baf1dee
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c391eb6269f87b50e4c7dac567a9c3ca9ba6a6b8e5806c48017a63089c4b45a6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295409"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243096"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含某个设备的书籍安装摘要的属性。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 eBookInstallSummary](../api/intune-books-ebookinstallsummary-get.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|读取 [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) 对象的属性和关系。|
 |[更新 eBookInstallSummary](../api/intune-books-ebookinstallsummary-update.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|更新 [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) 对象的属性。|
@@ -31,7 +31,7 @@ ms.locfileid: "49295409"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |installedDeviceCount|Int32|已成功安装此书籍的设备数量。|
 |failedDeviceCount|Int32|未能成功安装此书籍的设备数量。|
 |notInstalledDeviceCount|Int32|未安装此书籍的设备数量。|

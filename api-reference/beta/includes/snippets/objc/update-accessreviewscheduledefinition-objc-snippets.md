@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。请勿修改
-ms.openlocfilehash: ae36a0a782250c9ee41cff2cafdf740613cd591f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 8ead342c607d71a9841fb107ecf14dd07d894b2a
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221780"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384067"
 ---
 ```objc
 
@@ -14,6 +14,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04444aa6"]]];
 [urlRequest setHTTPMethod:@"PUT"];
+[urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAccessReviewScheduleDefinition *accessReviewScheduleDefinition = [[MSGraphAccessReviewScheduleDefinition alloc] init];
 [accessReviewScheduleDefinition setId:@"60860cdd-fb4d-4054-91ba-f75e04444aa6"];

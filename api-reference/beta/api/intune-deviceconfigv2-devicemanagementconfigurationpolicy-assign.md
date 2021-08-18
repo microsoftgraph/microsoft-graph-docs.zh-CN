@@ -1,18 +1,18 @@
 ---
-title: 设备管理配置策略分配操作
+title: assign 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c92091d06a7ad872e4e8853bd85521be61a4adb9
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 31772c6e9589f2cf6e8ad6824177d89128be379e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666132"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263770"
 ---
-# <a name="device-management-configuration-policy-assign-action"></a>设备管理配置策略分配操作
+# <a name="assign-action"></a>分配操作
 
 命名空间：microsoft.graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "52666132"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -69,7 +69,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assign
 
 Content-type: application/json
-Content-length: 524
+Content-length: 593
 
 {
   "assignments": [
@@ -81,7 +81,9 @@ Content-length: 524
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
         "collectionId": "Collection Id value"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }
@@ -92,7 +94,7 @@ Content-length: 524
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 518
+Content-Length: 587
 
 {
   "value": [
@@ -104,7 +106,9 @@ Content-Length: 518
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
         "collectionId": "Collection Id value"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }

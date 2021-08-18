@@ -3,14 +3,74 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 606f1b526ff6e97025e3b9f6987f2feeae130e7221a3527f1bd3106c43abb2df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4240678b35a4a309c5d3d53bed7b2955c16cb84e
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204906"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336861"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="june-2021-new-and-generally-available"></a>2021 年 6 月：新版本和正式发布版本
+
+### <a name="applications"></a>应用程序
+获取或设置 [应用程序](/graph/api/resources/application)或 [servicePrincipal](/graph/api/resources/serviceprincipal) 的状态，以确定 Microsoft 是否已通过 **disabledByMicrosoftStatus** 属性禁用应用程序。 禁用原因包括可疑、滥用或恶意活动，或违反 Microsoft 服务协议。
+
+### <a name="change-notifications"></a>更改通知
+在以下资源过期之前，已延长订阅的最大长度：
+- OneDrive [driveItem](/graph/api/resources/driveitem) 和 SharePoint [列表](/graph/api/resources/list)从 3 天延长至 30 天。
+- [组](/graph/api/resources/group)、[用户](/graph/api/resources/user)或其他目录资源，从 3 天延长至 29 天。
+
+### <a name="change-tracking"></a>更改跟踪
+移除了 Microsoft OneDrive for Business 和 SharePoint 中，非根文件夹中的更改跟踪限制。
+
+### <a name="education"></a>教育版
+教育版[分配服务](/graph/api/resources/educationassignment)的 API 现已正式发布。 
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+[访问评审](/graph/api/resources/accessreviewsv2-root) API 的 GA。 查看[概述](accessreviews-overview.md)和教程，以[评审对安全组的访问权限](tutorial-accessreviews-securitygroup.md)，以及[对 Microsoft 365 组的访问权限](tutorial-accessreviews-m365group.md)。 请注意，[旧访问评审 API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) 已被弃用，并将在 2023 年 5 月停止返回数据。
+
+
+## <a name="june-2021-new-in-preview-only"></a>2021 年 6 月：预览版新增功能
+
+### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
+分别通过 **allowAttendeeToEnableCamera** 和 **allowAttendeeToEnableMic** 启用和禁用与会者打开摄像头和麦克风，在 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) 中自定义音频和视频控件。
+
+### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
+- [分配](/graph/api/cloudpcusersetting-assign?view=graph-rest-beta&preserve-view=true)和管理 [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true)，为云电脑上的用户启用本地管理员或自助服务选项。 当前可在组级别（属于 Microsoft 365 组或安全组的用户）进行分配。
+- [获取](/graph/api/cloudpc-get?view=graph-rest-beta&preserve-view=true) [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) 的几个新属性：预配策略的名称和预配期间使用的本地连接的名称，以及执行重新预配或取消预配的宽限期的结束日期/时间。
+- 对[本地连接](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true)进行[运行状况检查](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true)时，支持更多状态和错误类型。
+
+### <a name="education"></a>教育
+- 现在，教师可以在发布作业时选择日历的默认行为。 教师可以通过使用 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 资源的 **addToCalendarAction** 属性来控制作业的日历行为。
+- 现在，教师还可以在发布作业时设置日历的默认行为。 教师可以通过使用 [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) 资源的 **addToCalendarAction** 属性来控制作业默认的日历行为。
+
+### <a name="groups"></a>组
+允许通过设置 **isAssignableToRole** 属性在创建时向 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) 分配 Azure AD 角色。如果设置此属性，则可以方便地管理个人的角色 - 合格人员可以加入组，而不必为每个人分配角色，默认情况下，为组分配角色将为加入组的每个新成员分配角色。 
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+通过使用 [ 计划定义](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) 的 **additionalNotificationRecipients** 属性，将用户或组成员设置为接收 [访问评审](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 进度的通知。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+使用 [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta&preserve-view=true) 的 **deviceFilter** 属性定义筛选器，动态包含或排除设备。
+
+### <a name="sites-and-lists"></a>网站和列表
+通过调用 [createLink](/graph/api/listitem-createlink?view=graph-rest-beta&preserve-view=true)，为 [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) 创建或获取现有的 [sharingLink](/graph/api/resources/sharinglink?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="teamwork"></a>团队合作
+- 通过 webUrl 属性 [获取](/graph/api/chat-get?view=graph-rest-beta&preserve-view=true)[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)的 **非跳转 URL**。
+- [订阅[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)、[conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) 或[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)资源的更改通知。](/graph/webhooks?view=graph-rest-beta&preserve-view=true)
+- 将带有 API 的[特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)权限，用于[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)、[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)、[chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true)、[chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta&preserve-view=true) 或[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)。
+- 获取[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)的[特定于资源的权限授予](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true)列表，该列表指定团队的应用，以及相应的已获得授权的特定于资源的权限。
+- [获取](/graph/api/teamsasyncoperation-get?view=graph-rest-beta&preserve-view=true)具体的[异步操作](/graph/api/resources/teamsasyncoperation?view=graph-rest-beta&preserve-view=true)，或[列出](/graph/api/chat-list-operations?view=graph-rest-beta&preserve-view=true)在[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)上运行的所有异步操作。
+- 可在[创建聊天](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true)时指定[Teams 应用](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true)。
+- 使用一个操作 [provisionEmail](/graph/api/channel-provisionemail?view=graph-rest-beta&preserve-view=true) 获取 [频道的电子邮件地址](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) (如果存在)，或者另创建一个。使用 [removeEmail](/graph/api/channel-removeemail?view=graph-rest-beta&preserve-view=true) 操作删除电子邮件地址。
+
+### <a name="teamwork--shifts"></a>团队合作 | 倒班
+- 支持 [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true)、[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true)、[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true) 和 [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) 实体发送同步更改通知。
+- 支持管理[工时记录卡](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true)资源和常见功能，例如，[上班打卡](/graph/api/timecard-clockin?view=graph-rest-beta&preserve-view=true)、[下班打卡](/graph/api/timecard-clockout?view=graph-rest-beta&preserve-view=true)、[开始休息](/graph/api/timecard-startbreak?view=graph-rest-beta&preserve-view=true)、[结束休息](/graph/api/timecard-endbreak?view=graph-rest-beta&preserve-view=true)、[确认](/graph/api/timecard-confirm?view=graph-rest-beta&preserve-view=true)和[替班](/graph/api/timecard-replace?view=graph-rest-beta&preserve-view=true)。
+
 
 ## <a name="may-2021-new-and-generally-available"></a>2021 年 5 月：新版本和正式发布版本
 
@@ -834,7 +894,7 @@ v1.0 中的[位置 API](/graph/api/resources/place) 的正式版 - 在生产应�
 v1.0 中的 Intune [5 月](changelog.md#may-2020)更新。
 
 ### <a name="graph-explorer"></a>Graph 浏览器
-[Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)中的许多新功能可用于增强沙箱中的学习和原型制作。例如：
+[Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer)中的许多新功能可用于增强沙箱中的学习和原型制作。例如：
 - 在 C#、Java、JavaScript 和 Objective C 中查看与你输入的 REST API 查询相对应的代码段。
 - 登录租户、查看访问令牌并将其复制到你喜欢的 REST 客户端应用程序。
 
@@ -891,7 +951,7 @@ v1.0 中 [ shifts API](/graph/api/resources/shift?view=graph-rest-1.0&preserve-v
 - 在 **resourceProvisioningOptions** 属性中指定要提供的资源，这些资源通常不属于默认 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)创建的一部分。 当前支持使用 Microsoft Teams 功能将组作为[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)进行配置。
 
 ### <a name="identity-and-access"></a>身份和访问
-- 获取从 [directoryObject](/graph/api/resources/directoryObject) 派生的实体集合时，请应用 OData 系统查询选项（`$count`、`$filter`、`$search`）。 你可以 [在这些实体的 **displayName** 和 **description** 属性中搜索特定标记](/graph/search-query-parameter#using-search-on-directory-object-collections)，并使用 OData 强制转换将 **directoryObject** 的结果修剪为特定的派生类型。 有关详细信息，请参阅[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/zh-CN/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)。
+- 获取从 [directoryObject](/graph/api/resources/directoryObject) 派生的实体集合时，请应用 OData 系统查询选项（`$count`、`$filter`、`$search`）。 你可以 [在这些实体的 **displayName** 和 **description** 属性中搜索特定标记](/graph/search-query-parameter#using-search-on-directory-object-collections)，并使用 OData 强制转换将 **directoryObject** 的结果修剪为特定的派生类型。 有关详细信息，请参阅[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)。
 - 作为 [身份保护 API](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) 的一部分，请使用 **riskEventType** 属性来 [获取检测到的风险类型](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true)或 [获取用户历史记录中的风险类型](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true)。不要使用 **riskType** 属性，因为它已被弃用。
 - 在 [条件集](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true)的 **clientAppTypes** 属性中为 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true)指定客户端应用程序类型。
 - 使用 `EntitlementManagement.Read.All` 的委派权限允许应用代表已登录的用户请求读取访问包及相关权利管理资源。
@@ -1270,7 +1330,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 - [附件](/graph/api/resources/attachment?view=graph-rest-1.0&preserve-view=true)
 - [联系人](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
-- [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
+- [事件](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
 - [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true)
 - [邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)
 - [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0&preserve-view=true)

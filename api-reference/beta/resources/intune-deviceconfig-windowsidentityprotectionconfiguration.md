@@ -1,67 +1,67 @@
 ---
 title: windowsIdentityProtectionConfiguration 资源类型
-description: 此实体提供 Windows Hello 企业版公开的已声明方法、属性和关系的说明。
+description: 此实体提供由 Windows Hello for Business 公开的已声明方法、属性和关系的说明。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a6c913bbd2822c09c7aeb38b746e44971cf895f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 594417da4102653e4d7c1e4d7653c84967cb83431935585874761c7e6d6da599
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164305"
 ---
 # <a name="windowsidentityprotectionconfiguration-resource-type"></a>windowsIdentityProtectionConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-此实体提供 Windows Hello 企业版公开的已声明方法、属性和关系的说明。
+此实体提供由 Windows Hello for Business 公开的已声明方法、属性和关系的说明。
 
 
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsIdentityProtectionConfigurations](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-list.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) 集合|列出 [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) 对象的属性和关系。|
 |[获取 windowsIdentityProtectionConfiguration](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-get.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|读取 [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) 对象的属性和关系。|
 |[创建 windowsIdentityProtectionConfiguration](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-create.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|创建新的 [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) 对象。|
 |[删除 windowsIdentityProtectionConfiguration](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-delete.md)|无|删除 [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)。|
-|[更新 windowsIdentityProtectionConfiguration](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-update.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|更新 [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) 对象的属性。|
+|[更新 windowsIdentityProtectionConfiguration](../api/intune-deviceconfig-windowsidentityprotectionconfiguration-update.md)|[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)|更新 [windowsIdentityProtectionConfiguration 对象](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|useSecurityKeyForSignin|Boolean|用于将 Windows Hello 安全密钥启用为登录凭据的布尔值。|
-|enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|用于在 Windows Hello 人脸身份验证中为面部功能识别启用增强型反欺骗的布尔值。|
-|pinMinimumLength|Int32|整数值，用于设置 Windows Hello 企业版 PIN 所需的最小字符数。 有效值为4到127，且小于或等于最大 PIN 的值集。 有效值为4至127|
-|pinMaximumLength|Int32|整数值，用于设置允许的工作 PIN 的最大字符数。 有效值为4到127，并大于或等于最小 PIN 的值集。 有效值为4至127|
-|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置 Windows Hello 企业版 PIN 中的大写字符的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
-|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置 Windows Hello 企业版 PIN 中的小写字符的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
-|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|控制在 Windows Hello 企业版 PIN 中使用特殊字符的功能。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
-|pinExpirationInDays|Int32|Integer 值指定在系统要求用户更改 PIN 之前可以使用 PIN 的时间段 (以天为单位) 。 有效值为0至730，含0到。 有效值为 0 至 730|
-|pinPreviousBlockCount|Int32|控制阻止用户使用过去的 Pin 的功能。 必须在0和50之间设置此值（包括这两个值），并且用户的当前 PIN 包含在该计数中。 如果设置为0，则不存储以前的 Pin。 PIN 历史记录不会通过 PIN 重置来保留。 有效值为 0 至 50|
-|pinRecoveryEnabled|Boolean|允许用户使用 Windows Hello 企业版 PIN 恢复服务更改其 PIN 的布尔值。|
-|securityDeviceRequired|Boolean|控制是否需要受信任的平台模块 (TPM) 来设置 Windows Hello 企业版。 TPM 在其他设备上不能使用存储在其上的数据带来额外的安全性优势。 如果设置为 False，即使没有可用的 TPM，所有设备也可以预配 Windows Hello 企业版。|
-|unlockWithBiometricsEnabled|Boolean|控制使用生物特征手势（如面孔和指纹）作为 Windows Hello 企业版 PIN 的替代方法。  如果设置为 False，则不允许使用生物特征手势。 用户仍必须在发生故障时将 PIN 配置为备份。|
-|useCertificatesForOnPremisesAuthEnabled|Boolean|使 Windows Hello 企业版能够使用证书对本地资源进行身份验证的布尔值。|
-|windowsHelloForBusinessBlocked|Boolean|一个布尔值，它将 Windows Hello 企业版作为登录 Windows 的方法来阻止。|
+|useSecurityKeyForSignin|布尔值|用于启用安全密钥作为Windows Hello凭据的布尔值。|
+|enhancedAntiSpoofingForFacialFeaturesEnabled|布尔值|用于启用增强的反欺骗的布尔值，用于在面部身份验证上识别面部Windows Hello功能。|
+|pinMinimumLength|Int32|整数值，用于设置企业 PIN Windows Hello所需的最少字符数。 有效值为 4 到 127（含 4 和 127）以及小于或等于为最大 PIN 设置的值。 有效值为 4 至 127|
+|pinMaximumLength|Int32|用于设置工作 PIN 允许的最大字符数的整数值。 有效值为 4 到 127（含 4 和 127）并且大于或等于为最小 PIN 设置的值。 有效值为 4 至 127|
+|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置企业 PIN 中大写Windows Hello的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
+|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置企业 PIN 中小Windows Hello字符的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
+|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|控制在适用于企业 PIN 的 Windows Hello 中使用特殊字符的能力。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
+|pinExpirationInDays|Int32|Integer 值指定在系统 (PIN) 之前可以使用 PIN 的时间段（以天为单位）。 有效值为 0 到 730（含 0 和 730）。 有效值为 0 至 730|
+|pinPreviousBlockCount|Int32|控制阻止用户使用过去 PIN 的能力。 这必须在 0 和 50 之间（包含 0 和 50）进行设置，并且用户的当前 PIN 包含在该计数中。 如果设置为 0，则不存储以前的 PIN。 PIN 历史记录不会通过 PIN 重置保留。 有效值为 0 至 50|
+|pinRecoveryEnabled|布尔值|允许用户使用 Windows Hello FOR Business PIN 恢复服务更改其 PIN 的布尔值。|
+|securityDeviceRequired|Boolean|控制是否需要受信任的平台模块 (TPM) 来预配 Windows Hello for Business。 TPM 提供了额外的安全优势，因为存储在 TPM 上的数据不能用于其他设备。 如果设置为 False，则所有设备都可以预配Windows Hello，即使不存在可用 TPM。|
+|unlockWithBiometricsEnabled|Boolean|控制生物识别手势（如人脸和指纹）的使用，以替代 Windows Hello FOR Business PIN。  如果设置为 False，则不允许生物识别手势。 用户仍必须将 PIN 配置为备份，以防发生故障。|
+|useCertificatesForOnPremisesAuthEnabled|布尔值|使企业Windows Hello使用证书对本地资源进行身份验证的布尔值。|
+|windowsHelloForBusinessBlocked|Boolean|阻止将 Windows Hello For Business 作为登录方法的布尔值Windows。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -69,7 +69,7 @@ ms.locfileid: "49272573"
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|设备配置设备状态概述 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|设备配置用户状态概述 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|设备配置设置状态设备摘要 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|

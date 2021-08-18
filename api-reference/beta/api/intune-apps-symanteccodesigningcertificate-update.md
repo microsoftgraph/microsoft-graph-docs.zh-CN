@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc1edeade6d629fa2eecd1fb6bb7b29eb96a5619
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 1f884923fb5d61c0a97adf167db7fe05a4b6b6c7db80fe95a0dce18031fc5ad1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51139389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177532"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>更新 symantecCodeSigningCertificate
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,8 +54,8 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|Binary|Windows Symantec Code-Signing采用原始数据格式的证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|已设置或未预配证书状态。 可取值为：`notProvisioned`、`provisioned`。|
+|content|二进制|The Windows Symantec Code-Signing Certificate in the raw data format.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|已设置或未预配证书状态。 可取值为：`notProvisioned`、`provisioned`。|
 |密码|String|.pfx 文件所需的密码。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的 Subject 值。|

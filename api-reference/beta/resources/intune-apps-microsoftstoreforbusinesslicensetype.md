@@ -5,28 +5,28 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 43418942857aa6dc3a909c5cd4575cd705f682c3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 52b475ac629863d55d4b16287249f212c9f477d39176209a8549c461c615dc23
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49281136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240090"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>microsoftStoreForBusinessLicenseType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|脱机|0|尚未记录|
-|隐私声明|1|尚未记录|
+|offline|0|尚未记录|
+|online|1 |尚未记录|
 
 
 

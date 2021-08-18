@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6448bbc89ebe8357fa14a375f82fb73938f6634
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 80e8cf9265df96f7b4540070982bf730679a5301
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146747"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264526"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevicessummary-resource-type"></a>userExperienceAnalyticsWorkFromAnywhereDevicesSummary 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,7 +27,8 @@ ms.locfileid: "51146747"
 |:---|:---|:---|
 |autopilotDevicesSummary|[userExperienceAnalyticsAutopilotDevicesSummary](../resources/intune-devices-userexperienceanalyticsautopilotdevicessummary.md)|来自任何 Autopilot 设备的工作值摘要。|
 |cloudManagementDevicesSummary|[userExperienceAnalyticsCloudManagementDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)|用户体验从任意位置云管理设备摘要工作。|
-|windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|用户体验分析可随时随地使用 Windows 10 设备摘要。|
+|windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|用户体验分析从任意位置到设备Windows 10工作。|
+|cloudIdentityDevicesSummary|[userExperienceAnalyticsCloudIdentityDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)|用户体验分析从任意位置云标识设备摘要工作。|
 
 ## <a name="relationships"></a>关系
 无
@@ -56,6 +57,10 @@ ms.locfileid: "51146747"
   "windows10DevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsWindows10DevicesSummary",
     "unsupportedOSversionDeviceCount": 1024
+  },
+  "cloudIdentityDevicesSummary": {
+    "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
+    "deviceWithoutCloudIdentityCount": 1024
   }
 }
 ```

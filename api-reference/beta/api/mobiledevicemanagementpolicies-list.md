@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 727a325a1b5a38cf1396983d9dd78b72b571ce1b
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: fc9d05a4bf39b0e36a7e358a0126c07f1029ee4d7c8f3590c7bc6ddd123a959f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57219541"
 ---
 # <a name="list-mobiledevicemanagementpolicies"></a>列出 mobileDeviceManagementPolicies
 

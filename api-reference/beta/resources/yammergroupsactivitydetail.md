@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: cb4f04b04d59a5b14185e82d47c5366f3e2890e4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 7c3b10b7b96c40ae7b7404eee2c9af99ea4bc2d602c93f9f6c68ef2ed7ad8cbe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176083"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>yammerGroupsActivityDetail 资源类型
 
@@ -21,18 +21,18 @@ ms.locfileid: "49982339"
 | 属性           | 类型    |
 | :----------------- | :------ |
 | reportRefreshDate  | 日期    |
-| groupDisplayName   | String  |
-| isDeleted          | Boolean |
-| ownerPrincipalName | String  |
+| groupDisplayName   | 字符串  |
+| isDeleted          | 布尔值 |
+| ownerPrincipalName | 字符串  |
 | lastActivityDate   | 日期    |
-| groupType          | String  |
-| office365Connected | Boolean |
+| groupType          | 字符串  |
+| office365Connected | 布尔值 |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
 | readCount          | Int64   |
 | likedCount         | Int64   |
-| networkDisplayName | String  |
-| reportPeriod       | String  |
+| networkDisplayName | 字符串  |
+| reportPeriod       | 字符串  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

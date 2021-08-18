@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39de4f02a19e514c91ba4eec21620900d0898192
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 1219e8696be6d65fc520057bb7956163816988ff
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128129"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264624"
 ---
 # <a name="update-devicecompliancesettingstate"></a>更新 deviceComplianceSettingState
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,12 +54,12 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|设备平台类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 、|
+|platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|设备平台类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 、|
 |setting|String|设置类名和属性名。|
 |settingName|String|报告的设置名称|
 |deviceId|String|报告的设备 ID|
 |deviceName|String|报告的设备名称|
-|userId|String|报告的用户 ID|
+|userId|字符串|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
 |userName|String|报告的用户名|
 |userPrincipalName|String|报告的用户主体名称|

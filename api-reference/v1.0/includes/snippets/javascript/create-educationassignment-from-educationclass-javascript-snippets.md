@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4ec4ec587b7f7807667a22f28b61bee84c7a49797c652eb74fc873c22bf56373
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 39b3eed8108bed4dc5129d7ddbc0943e0605fba4
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57221426"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58385521"
 ---
 ```javascript
 
@@ -23,11 +23,11 @@ const educationAssignment = {
       content: 'Read chapters 1 through 3'
     },
       grading: {
-        '@odata.type': 'educationAssignmentPointsGradeType',
+        '@odata.type': '#microsoft.graph.educationAssignmentPointsGradeType',
         maxPoints: 100
       },
       assignTo: {
-        '@odata.type': 'educationAssignmentClassRecipient'
+        '@odata.type': '#microsoft.graph.educationAssignmentClassRecipient'
       },
       status: 'draft',
       allowStudentsToAddResourcesToSubmission: true

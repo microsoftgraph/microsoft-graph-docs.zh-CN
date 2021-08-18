@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a0c85c4aaac82583acda75158ec73c31d2d91837
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 72e7b5dbd518019664b5b52c65ded1746218f338
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993074"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367231"
 ---
 # <a name="list-class-assignments"></a>列出课程分配
 
@@ -28,7 +28,7 @@ ms.locfileid: "52993074"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
-| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
+| 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

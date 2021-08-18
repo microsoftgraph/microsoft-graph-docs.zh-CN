@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5e3a8e6ba1110aa9183f9ab80732e6128b4c0d1ff327ab0bc13ee71aa5b26500
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4554c065d342e2d3eb7fdc3234e6f9046aeda437
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218291"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264148"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
@@ -46,7 +46,7 @@ ms.locfileid: "54218291"
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>创建和管理多个团队和渠道
 
 使用 Microsoft Graph，可以轻松地创建大型团队并使用用户和渠道对其进行填充，方法是自动化创建和管理[团队](/graph/api/resources/team)、[渠道](/graph/api/resources/channel)、[选项卡](/graph/api/resources/teamstab)和[应用](/graph/api/resources/teamsapp)。
-Microsoft Graph 还允许用户[查找](teams-list-all-teams.md)和[存档](/graph/api/team-archive)不再使用的团队。 此 API 与构建 [Microsoft Teams 管理中心](/microsoftteams/enable-features-office-365)和 [Teams PowerShell commandlets](/microsoftteams/teams-powershell-overview) 的 API 相同。
+Microsoft Graph 还允许用户[查找](teams-list-all-teams.md)和[存档](/graph/api/team-archive)不再使用的团队。 此 API 与构建[ Microsoft Teams 管理中心](/microsoftteams/enable-features-office-365)和[ Teams PowerShell cmdlets ](/microsoftteams/teams-powershell-overview)的 API 相同。
 
 ### <a name="deploy-apps-to-teams"></a>向团队部署应用
 
