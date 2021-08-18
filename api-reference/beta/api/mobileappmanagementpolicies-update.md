@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fe577a8c27b7c32e320416da74a4fa34fabb3339
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 06e52397e879148ca9a30ec840e507ab7dff3aaddd8366e1fccde3ecdd7ec40a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57221372"
 ---
 # <a name="update-mobileappmanagementpolicy"></a>更新 mobileAppManagementPolicy
 
@@ -57,7 +57,7 @@ PATCH /policies/mobileAppManagementPolicies/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |appliesTo|policyScope|确定此策略设置应用于的组。 可能的值是 `none` `all` `selected` **：、、重要：** `selected` 指定此属性时不能使用。 使用 [includedGroups](../api/mobileappmanagementpolicies-post-includedgroups.md) 添加特定组。|
-|complianceUrl|String|移动管理应用程序的合规性 URL|
+|complianceUrl|字符串|移动管理应用程序的合规性 URL|
 |discoveryUrl|String|移动管理应用程序的发现 URL|
 |termsOfUseUrl|String|移动管理应用程序的使用条款 URL|
 

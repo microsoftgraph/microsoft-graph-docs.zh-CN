@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 21466e44dc0945a8449311dd3e20d085c124cda6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 1c5e11c7fc95f2666a4d96c8764823b7c7257d36
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156959"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263945"
 ---
 # <a name="list-grouppolicyuploadeddefinitions"></a>列出 groupPolicyUploadedDefinitions
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 547
+Content-Length: 620
 
 {
   "value": [
@@ -79,7 +79,9 @@ Content-Length: 547
       "categoryPath": "Category Path value",
       "supportedOn": "Supported On value",
       "policyType": "admxIngested",
+      "hasRelatedDefinitions": true,
       "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+      "version": "Version value",
       "id": "a5f83119-3119-a5f8-1931-f8a51931f8a5",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
     }

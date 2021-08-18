@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 02a0d7df33fd630c2bd2b7faf15d5043a1d0eafc
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 2cbd29378ec3418d39705e0a5cda33bc168f9789fde2d27e5d1241fbf8e4cf17
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57105865"
 ---
 # <a name="update-a-userflowidentityprovider"></a>更新 userFlowIdentityProvider
 

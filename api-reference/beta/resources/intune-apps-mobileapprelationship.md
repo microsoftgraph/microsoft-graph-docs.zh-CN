@@ -5,38 +5,38 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22af70876075aa12b5493cfa413c79bd2c71c7cf
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ee9793d2f505394f3188368bc812b79a741decb30a95f27cfbd522af5df6141e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217191"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236547"
 ---
 # <a name="mobileapprelationship-resource-type"></a>mobileAppRelationship 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 描述两个移动应用程序之间的关系。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 mobileAppRelationships](../api/intune-apps-mobileapprelationship-list.md)|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|列出 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 对象的属性和关系。|
-|[获取 mobileAppRelationship](../api/intune-apps-mobileapprelationship-get.md)|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|读取 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 对象的属性和关系。|
+|[列出 mobileAppRelationships](../api/intune-apps-mobileapprelationship-list.md)|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|列出 [mobileAppRelationship 对象的属性和](../resources/intune-apps-mobileapprelationship.md) 关系。|
+|[获取 mobileAppRelationship](../api/intune-apps-mobileapprelationship-get.md)|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|读取 [mobileAppRelationship 对象的属性和](../resources/intune-apps-mobileapprelationship.md) 关系。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|关系实体 id。|
-|targetId|String|目标移动应用程序的应用程序 id。|
-|targetDisplayName|String|目标移动应用程序的显示名称。|
-|targetDisplayVersion|String|目标移动应用程序的显示版本。|
-|targetPublisher|String|目标移动应用程序的发布者。|
-|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|表示目标是父项还是子项的关系的类型。 可取值为：`child`、`parent`。|
+|id|String|关系实体 ID。|
+|targetId|String|目标移动应用的应用 ID。|
+|targetDisplayName|String|目标移动应用显示名称。|
+|targetDisplayVersion|String|目标移动应用的显示版本。|
+|targetPublisher|String|目标移动应用的发布者。|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|关系类型，指示目标是父对象还是子级。 可取值为：`child`、`parent`。|
 
 ## <a name="relationships"></a>关系
 无

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20cb05e52b7b065f2cbf1768895e9686bd4a49d0
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e47152888dc97f9d7cd810fde9e0769203af2ee6b788b90f931a047159e6177d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211014"
 ---
 # <a name="create-devicemanagementintent"></a>创建 deviceManagementIntent
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,11 +54,11 @@ POST /deviceManagement/intents
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|意图 ID|
-|displayName|String|给定用户显示名称|
-|说明|String|用户给定的说明|
+|displayName|字符串|给定用户显示名称|
+|description|String|用户给定的说明|
 |isAssigned|Boolean|表示是否将意图分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意图时|
-|templateId|String|此意图的模板 ID 是 (（如果有) |
+|templateId|字符串|此意图的模板 ID 是 (（如果有) |
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 

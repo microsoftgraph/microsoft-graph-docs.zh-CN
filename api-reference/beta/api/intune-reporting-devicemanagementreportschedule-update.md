@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e1466e9a24ba3cd4021ed7d8aa59897af017354
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: fc8444ac4dea7f196bc2da4effd66b6da92cb0b9fa7d5eac704f07a5a650fee4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134373"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54188013"
 ---
 # <a name="update-devicemanagementreportschedule"></a>更新 deviceManagementReportSchedule
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 |reportScheduleName|String|计划的名称|
 |subject|String|已送达的计划报告的主题|
 |电子邮件|String collection|将计划报告传递到的电子邮件|
-|定期|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
+|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告交付开始的时间|
 |endDateTime|DateTimeOffset|计划报告传递结束的时间|
 |userId|String|创建报告的用户的 ID|

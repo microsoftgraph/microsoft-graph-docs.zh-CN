@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: da48bae6a610d7d14c34071ac487c1ffd0a8043c
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 64abb166e4b13a1c72fbcba7350b42047d957050
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911814"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367091"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -33,7 +33,7 @@ ms.locfileid: "52911814"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
+|应用程序 | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 ---
 
 ### <a name="response"></a>响应
-下面展示了示例响应。 
+下面介绍响应示例。 
 
 >**注意：** 为了可读性，可能会缩短此处所示的响应对象。 
 >

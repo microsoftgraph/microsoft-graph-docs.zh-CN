@@ -5,12 +5,12 @@ author: madansr7
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c3a705a567e4692d07220398317cc36c2bab71a6
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: c34d9c285b4add5976603f8b9dafa4c67dd94b7d
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660387"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336868"
 ---
 # <a name="appmanagementpolicy-resource-type"></a>appManagementPolicy 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "53660387"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对特定应用程序和服务主体的应用管理操作强制实施限制。 如果未为应用程序或服务主体配置此资源，则限制默认为 [tenantAppManagementPolicy 对象中的](tenantappmanagementpolicy.md) 设置。
+对特定应用程序和服务主体的应用管理操作的限制。 如果未为应用程序或服务主体配置此资源，则限制默认为 [tenantAppManagementPolicy 对象中的](tenantappmanagementpolicy.md) 设置。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                         | 返回类型                                                                | Description                                                                                                            |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
@@ -28,7 +28,7 @@ ms.locfileid: "53660387"
 | [Create](../api/appManagementPolicy-post.md)    | [appManagementPolicy](../resources/appManagementPolicy.md) | 创建可分配给应用程序或服务主体对象的应用管理策略。                   |
 | [Get](../api/appManagementPolicy-get.md)       | [appManagementPolicy](../resources/appManagementPolicy.md) | 获取单个应用管理策略对象。                                                                            |
 | [更新](../api/appManagementPolicy-update.md) | 无                                                                       | 更新应用管理策略。                                                                                      |
-| [删除](../api/appManagementPolicy-delete.md) | 无                                                                       | 从 appManagementPolicies 中的策略集合中删除应用管理策略。                             |
+| [Delete](../api/appManagementPolicy-delete.md) | 无                                                                       | 从 appManagementPolicies 中的策略集合中删除应用管理策略。                             |
 | [List appliesTo](../api/appManagementPolicy-list-appliesTo.md)| [appManagementPolicy](../resources/appManagementPolicy.md)|返回应用了策略的应用程序和服务主体的列表。 |
 | [Assign appliesTo](../api/appManagementPolicy-post-appliesTo.md)| 无 |返回应用了策略的应用程序和服务主体的列表。 |
 
@@ -37,8 +37,8 @@ ms.locfileid: "53660387"
 | 属性     | 类型                                                        | 说明                                                            |
 | :----------- | :---------------------------------------------------------- | :--------------------------------------------------------------------- |
 | id           | 字符串                                                      | 策略标识符。                                                 |
-| displayName  | 字符串                                                      | 策略显示名称。 继承自 [policyBase](policybase.md)。                                        |
-| 说明  | 字符串                                                      | 策略的说明。 继承自 [policyBase](policybase.md)。                                         |
+| displayName  | String                                                      | 策略显示名称。 继承自 [policyBase](policybase.md)。                                        |
+| description  | String                                                      | 策略的说明。 继承自 [policyBase](policybase.md)。                                         |
 | isEnabled    | Boolean                                                     | 表示是否启用策略。                                      |
 | 限制 | [appManagementConfiguration](appManagementConfiguration.md) | 应用于应用程序或服务主体对象的限制。 |
 
