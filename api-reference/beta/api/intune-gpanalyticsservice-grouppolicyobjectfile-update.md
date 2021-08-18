@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efe599f7b894629ca4b1b1d5c2d3492b76bc9b9e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 124de6b8daeb388868f29514b1c810156d55abc24242be027da413e9e5fef1c4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158960"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164711"
 ---
 # <a name="update-grouppolicyobjectfile"></a>更新 groupPolicyObjectFile
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|尚未记录|
-|groupPolicyObjectId|Guid|GPO Xml 内容的组策略对象 GUID|
+|groupPolicyObjectId|Guid|来自 GPO Xml 内容的组策略对象 GUID|
 |ouDistinguishedName|String|OU 的可分辨名称。|
 |createdDateTime|DateTimeOffset|首次上载 GroupPolicy 的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyObjectFile 的日期和时间。|

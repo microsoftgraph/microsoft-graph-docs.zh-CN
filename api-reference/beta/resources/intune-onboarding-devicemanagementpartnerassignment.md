@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f0cda49b654313ec4d69e810033ae681b8ac2645
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ee082d4d760944d8b2d3ca7fcee9a0f9c4585bda4aa53a94b9f88f8c62778e8b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157538"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224514"
 ---
 # <a name="devicemanagementpartnerassignment-resource-type"></a>deviceManagementPartnerAssignment 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "50157538"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|面向要通过合作伙伴注册的设备的用户组。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|面向通过合作伙伴注册的设备的用户组。|
 
 ## <a name="relationships"></a>关系
 无

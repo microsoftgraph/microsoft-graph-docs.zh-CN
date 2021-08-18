@@ -1,32 +1,32 @@
 ---
 title: roleScopeTagInfo 资源类型
-description: 包含 Role Scope Tag 对象的属性的类。
+description: 一个包含 Role Scope Tag 对象属性的类。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a661c7e2dae97ccdc947604c197bb1a3c683146d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 31e57b1b3f8550e0ac58d31eca0745f48330dadd57e428b59cdfb356e0b95865
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295416"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224885"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>roleScopeTagInfo 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含 Role Scope Tag 对象的属性的类。
+一个包含 Role Scope Tag 对象属性的类。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|范围标记显示名称。|
-|roleScopeTagId|字符串|范围标记 Id。|
+|displayName|String|范围标记显示名称。|
+|roleScopeTagId|String|范围标记 ID。|
 
 ## <a name="relationships"></a>关系
 无

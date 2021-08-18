@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a965fa5e70c2182c54a9c67ba4aa9144e56ea4e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 02ea0cf60ba1a2b667619e676385bd0a45748cdaf61945c039b249d03ff0944e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54195881"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>更新 iosEasEmailProfileConfiguration
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,44 +55,44 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对作用域用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|usernameSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|在设备上安装之前从 AAD 中选取并注入到此配置文件中的用户名属性。 继承自 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
+|usernameSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|从 AAD 中选取并注入此配置文件的 Username 属性，在设备上安装之前。 继承自 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |usernameAADSource|[usernameSource](../resources/intune-deviceconfig-usernamesource.md)|AAD 字段的名称，该字段将用于检索电子邮件配置文件的 UserName。 继承自 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)。 可取值为：`userPrincipalName`、`primarySmtpAddress`、`samAccountName`。|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|UserDomainname 属性，在设备上安装之前从 AAD 中选取并注入到此配置文件中。 继承自 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)。 可取值为：`fullDomainName`、`netBiosDomainName`。|
-|customDomainName|String|在设备上安装之前生成电子邮件配置文件时使用的自定义域名值。 继承自 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
+|customDomainName|字符串|在设备上安装之前生成电子邮件配置文件时所使用的自定义域名值。 继承自 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|String|帐户名称。|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|此电子邮件配置文件的身份验证方法。 可取值为：`usernameAndPassword`、`certificate`、`derivedCredential`。|
-|blockMovingMessagesToOtherEmailAccounts|Boolean|指示是否阻止将邮件移动到其他电子邮件帐户。|
-|blockSendingEmailFromThirdPartyApps|Boolean|指示是否阻止从第三方应用发送电子邮件。|
-|blockSyncingRecentlyUsedEmailAddresses|Boolean|指示是否阻止同步最近使用的电子邮件地址，例如 - 撰写新电子邮件时。|
+|blockMovingMessagesToOtherEmailAccounts|布尔值|指示是否阻止将邮件移动到其他电子邮件帐户。|
+|blockSendingEmailFromThirdPartyApps|布尔值|指示是否阻止从第三方应用发送电子邮件。|
+|blockSyncingRecentlyUsedEmailAddresses|布尔值|指示是否阻止同步最近使用的电子邮件地址，例如 - 撰写新电子邮件时。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|电子邮件应同步回的持续时间。 . 可取值为：`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth` 或 `unlimited`。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|从 AAD 中选取并注入到此配置文件中的电子邮件属性，在设备上安装之前。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
-|easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|要同步的 Exchange 数据。可能的值是 `none` `calendars` `contacts` ：、、、、、。 `email` `notes` `reminders`|
-|easServicesUserOverrideEnabled|Boolean|允许用户更改同步设置。|
-|hostName|String|使用本机 (连接到) URL 的 Exchange 位置。|
-|requireSmime|Boolean|指示是否使用 S/MIME 证书。|
-|smimeEnablePerMessageSwitch|Boolean|指示是否允许未加密的电子邮件。|
-|smimeEncryptByDefaultEnabled|Boolean|如果设置为 true，则默认启用 S/MIME 加密。|
-|smimeSigningEnabled|Boolean|如果设置为 true，则为此帐户启用 S/MIME 签名|
-|smimeSigningUserOverrideEnabled|Boolean|如果设置为 true，用户可以打开或关闭 S/MIME 签名。|
-|smimeEncryptByDefaultUserOverrideEnabled|Boolean|如果设置为 true，用户可以默认切换加密设置。|
-|smimeSigningCertificateUserOverrideEnabled|Boolean|如果设置为 true，则用户可以选择签名标识。|
-|smimeEncryptionCertificateUserOverrideEnabled|Boolean|如果设置为 true，则用户可以选择 S/MIME 加密标识。 |
-|requireSsl|Boolean|指示是否使用 SSL。|
-|useOAuth|Boolean|指定连接是否应该使用 OAuth 进行身份验证。|
+|easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|Exchange要同步的数据。可能的值是 `none` `calendars` `contacts` ：、、、、、。 `email` `notes` `reminders`|
+|easServicesUserOverrideEnabled|布尔值|允许用户更改同步设置。|
+|hostName|String|Exchange本地 (连接到) URL 的位置。|
+|requireSmime|布尔值|指示是否使用 S/MIME 证书。|
+|smimeEnablePerMessageSwitch|布尔值|指示是否允许未加密的电子邮件。|
+|smimeEncryptByDefaultEnabled|布尔值|如果设置为 true，则默认启用 S/MIME 加密。|
+|smimeSigningEnabled|布尔值|如果设置为 true，则为此帐户启用 S/MIME 签名|
+|smimeSigningUserOverrideEnabled|布尔值|如果设置为 true，用户可以打开或关闭 S/MIME 签名。|
+|smimeEncryptByDefaultUserOverrideEnabled|布尔值|如果设置为 true，用户可以默认切换加密设置。|
+|smimeSigningCertificateUserOverrideEnabled|布尔值|如果设置为 true，则用户可以选择签名标识。|
+|smimeEncryptionCertificateUserOverrideEnabled|布尔值|如果设置为 true，则用户可以选择 S/MIME 加密标识。 |
+|requireSsl|布尔值|指示是否使用 SSL。|
+|useOAuth|布尔值|指定连接是否应该使用 OAuth 进行身份验证。|
 |signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|签署此电子邮件配置文件的证书类型。 可取值为：`none`、`certificate`、`derivedCredential`。|
 |encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|加密 此电子邮件配置文件的证书类型。 可取值为：`none`、`certificate`、`derivedCredential`。|
-|perAppVPNProfileId|String|用于从本机Per-App客户端访问电子邮件的邮箱 VPN 策略的配置文件 ID|
+|perAppVPNProfileId|String|用于从本机Per-App访问电子邮件的邮箱 VPN 策略的配置文件 ID|
 
 
 

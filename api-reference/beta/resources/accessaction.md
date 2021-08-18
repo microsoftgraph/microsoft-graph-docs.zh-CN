@@ -6,12 +6,12 @@ title: AccessAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 1c01a989b56e78beccb09930ac67ba262fa374f5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 372caa82e979cdb2e76e1ee327119cc0bf607480e6713311cacdf7fc6ba89223
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246309"
 ---
 # <a name="accessaction-resource-type"></a>accessAction 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "50945721"
 
 [**itemActivity**][activity]上 **存在 accessAction** 资源指示活动已访问项目。
 
->**注意：** 访问活动记录目前仅在 SharePoint 和 OneDrive for Business 上可用。
+>**注意：** 访问活动记录当前仅适用于 SharePoint 和 OneDrive for Business。
 
 [activity]: itemactivity.md
 
@@ -34,7 +34,7 @@ ms.locfileid: "50945721"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.accessAction"
+  "@type&quot;: &quot;microsoft.graph.accessAction"
 }-->
 
 ```json

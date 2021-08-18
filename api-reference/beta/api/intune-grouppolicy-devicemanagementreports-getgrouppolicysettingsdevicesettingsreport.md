@@ -1,18 +1,18 @@
 ---
-title: 列出 iosLobAppProvisioningConfigurationPolicySetItems
-description: 列出 iosLobAppProvisioningConfigurationPolicySetItem 对象的属性和关系。
+title: getGroupPolicySettingsDeviceSettingsReport 操作
+description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f58815007b39e3f2624817329f3f82c45dcefc8c747a99664e0220245c18fa5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6707eb2c21e784bc152dd1c03b5259091d2f12da
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203916"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263398"
 ---
-# <a name="list-ioslobappprovisioningconfigurationpolicysetitems"></a>列出 iosLobAppProvisioningConfigurationPolicySetItems
+# <a name="getgrouppolicysettingsdevicesettingsreport-action"></a>getGroupPolicySettingsDeviceSettingsReport 操作
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "54203916"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [iosLobAppProvisioningConfigurationPolicySetItem 对象的属性和](../resources/intune-policyset-ioslobappprovisioningconfigurationpolicysetitem.md) 关系。
+尚未记录
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "54203916"
 }
 -->
 ``` http
-GET /deviceAppManagement/policySets/{policySetId}/items
+POST /deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,17 +47,54 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供参数的 JSON 表示形式。
+
+下表显示了可用于此操作的参数。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|name|String|尚未记录|
+|select|String collection|尚未记录|
+|search|String|尚未记录|
+|groupBy|String collection|尚未记录|
+|orderBy|String collection|尚未记录|
+|skip|Int32|尚未记录|
+|top|Int32|尚未记录|
+|sessionId|String|尚未记录|
+|filter|String|尚未记录|
+
+
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [iosLobAppProvisioningConfigurationPolicySetItem](../resources/intune-policyset-ioslobappprovisioningconfigurationpolicysetitem.md) 对象集合。
+如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 Stream。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
+
+Content-type: application/json
+Content-length: 278
+
+{
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
+}
 ```
 
 ### <a name="response"></a>响应
@@ -65,25 +102,10 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 582
+Content-Length: 115
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfigurationPolicySetItem",
-      "id": "6a978d58-8d58-6a97-588d-976a588d976a",
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "payloadId": "Payload Id value",
-      "itemType": "Item Type value",
-      "displayName": "Display Name value",
-      "status": "validating",
-      "errorCode": "unauthorized",
-      "guidedDeploymentTags": [
-        "Guided Deployment Tags value"
-      ]
-    }
-  ]
+  "value": "Z2V0R3JvdXBQb2xpY3lTZXR0aW5nc0RldmljZVNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDYzMDIzNDI3MQ=="
 }
 ```
 

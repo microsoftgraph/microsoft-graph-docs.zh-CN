@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 246ec711489fa02bdbe1827290e7000b78caaad1
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 828d8f497adefe493c2d780d7bf721fcd41a109927d4337294d7ca170f2903a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51145843"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54207864"
 ---
 # <a name="create-enrollmentprofile"></a>创建 enrollmentProfile
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,12 +54,12 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|displayName|String|配置文件的名称|
-|说明|String|配置文件的说明|
-|requiresUserAuthentication|Boolean|指示配置文件是否要求用户身份验证|
+|displayName|字符串|配置文件的名称|
+|description|String|配置文件的说明|
+|requiresUserAuthentication|布尔值|指示配置文件是否要求用户身份验证|
 |configurationEndpointUrl|String|用于注册的配置终结点 URL|
-|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是公司门户进行身份验证。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示注册助手注册的设备需要公司门户|
+|enableAuthenticationViaCompanyPortal|布尔值|指示使用 Apple Setup Assistant 进行身份验证，而不是公司门户。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔值|指示公司门户注册的设备上需要安装|
 
 
 

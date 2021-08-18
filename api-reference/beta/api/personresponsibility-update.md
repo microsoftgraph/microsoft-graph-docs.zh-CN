@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 62948aa9accfa79997e9a119f32d200cca507051
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 72b48d0e21f0efdb0faa58dbd8079462fba9a05b9b924eaee226770e9adea36d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150827"
 ---
 # <a name="update-personresponsibility"></a>更新 personResponsibility
 命名空间：microsoft.graph
@@ -51,18 +51,18 @@ PATCH /users/{id | userPrincipalName}/responsibilities/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|collaborationTags|String collection|包含用户与兴趣相关联的体验方案标记。 集合中允许的值是： `askMeAbout` ， `ableToMentor` ， `wantsToLearn` `wantsToImprove` 。|
+|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|collaborationTags|String collection|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
 |description|String|责任说明。|
-|displayName|String|包含责任的友好名称。 |
-|推断|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|WebUrl|String|包含指向有关该责任的网页或资源的链接。|
+|displayName|String|包含该责任的友好名称。 |
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|WebUrl|String|包含指向有关责任的网页或资源的链接。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [personResponsibility](../resources/personresponsibility.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [personResponsibility](../resources/personresponsibility.md) 对象。
 
 ## <a name="examples"></a>示例
 

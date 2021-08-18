@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92502321dc3d8eedb27abe595dc81f3dd0a94519
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: cef07bb5e03e645f5166bd1b8cf69bbbb880d05fc9b35b0fb3031077f73260e9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51140299"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211490"
 ---
 # <a name="update-macosvppappassignedlicense"></a>更新 macOsVppAppAssignedLicense
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/
 |:---|:---|:---|
 |id|String|实体的键。|
 |userEmailAddress|String|用户电子邮件地址。|
-|userId|String|用户 ID。|
+|userId|字符串|用户 ID。|
 |userName|String|用户名。|
 |userPrincipalName|String|用户主体名称。|
 

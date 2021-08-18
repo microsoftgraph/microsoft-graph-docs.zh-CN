@@ -1,31 +1,31 @@
 ---
 title: androidPermissionAction 资源类型
-description: 在请求该权限时，Android 应用程序权限和适用于 Android 的操作之间的映射应采取的操作。
+description: Android 应用权限与 Android 在请求该权限时应执行的操作之间的映射。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76090d450332b0c5656ee122a7338180fa692811
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a1d686d85cb4bbe7979a6e3bcdac453c0f9ebfedd017ed61829dbbf24d5e61f6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231918"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242120"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-在请求该权限时，Android 应用程序权限和适用于 Android 的操作之间的映射应采取的操作。
+Android 应用权限与 Android 在请求该权限时应执行的操作之间的映射。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|拒绝|String|Android 权限字符串，在官方 Android 文档中定义。  示例 "android.permission.READ_CONTACTS"。|
+|permission|字符串|Android 权限字符串，在官方 Android 文档中定义。  示例"android.permission.READ_CONTACTS"。|
 |action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Android 权限操作的类型。 可取值为：`prompt`、`autoGrant`、`autoDeny`。|
 
 ## <a name="relationships"></a>关系
