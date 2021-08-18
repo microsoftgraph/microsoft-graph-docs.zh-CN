@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a8bb9fc598613d48ac6b9bb34aa02d24872e6300
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d51cbda73ca41d58795ef09c23cc1e644e59f60e8d0833f692ebcfb396489e98
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241217"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>trustFrameworkPolicy 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "50442738"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-表示信任[框架](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom)策略[ (在](/azure/active-directory-b2c/active-directory-b2c-overview-custom)[Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview)) 自定义策略策略。 信任框架策略可完全控制用户旅程。 使用它：
+表示信任[框架](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom)策略[ (B2C](/azure/active-directory-b2c/active-directory-b2c-overview)中[也称为) ](/azure/active-directory-b2c/active-directory-b2c-overview-custom)策略Azure Active Directory策略。 信任框架策略可完全控制用户旅程。 使用它：
 
 * 完全自定义注册和登录体验。
-* 联合到任何 SAML、Open ID Connect 或 OAuth2 标识提供程序。
+* 联合到任何 SAML、开放 ID 连接或 OAuth2 标识提供程序。
 * 通过调用 REST 终结点与其他系统或用户数据存储集成。
 * 转换声明并自定义颁发给信赖方应用程序的令牌。
 
-有关详细信息，请参阅 [Azure Active Directory B2C 中的自定义策略](/azure/active-directory-b2c/active-directory-b2c-overview-custom)。
+有关详细信息，请参阅[B2C 中的Azure Active Directory策略](/azure/active-directory-b2c/active-directory-b2c-overview-custom)。
 
 ## <a name="methods"></a>Methods
 
@@ -64,7 +64,7 @@ ms.locfileid: "50442738"
 
 ## <a name="see-also"></a>另请参阅
 
-- [有关架构元素信息的 trustFrameworkPolicy](/azure/active-directory-b2c/trustframeworkpolicy) 架构。
+- [有关架构元素的信息，请参阅 trustFrameworkPolicy](/azure/active-directory-b2c/trustframeworkpolicy) 架构。
 - [trustFrameworkPolicy.xsd](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)
 
 

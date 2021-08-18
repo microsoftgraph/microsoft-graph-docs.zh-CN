@@ -6,18 +6,18 @@ title: ItemReference
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sharepoint
-ms.openlocfilehash: 52cf21a4bb6d387da2c50a7ad28ab49c1b9e70ea
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: e98131cb91562bc7f0b4974383693246826ebd85046c64150cffa4d398d4a932
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714331"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248297"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
 命名空间：microsoft.graph
 
-**ItemReference** 资源提供通过 API 处理 [driveItem](driveitem.md)所需的信息。
+**ItemReference** 资源提供通过 API 处理 [driveItem](driveitem.md)所必需的信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -53,12 +53,12 @@ ms.locfileid: "49714331"
 | 路径          | String            | 可用于导航到该项的路径。只读。
 | shareId       | String            | 可通过 [Shares][] API 访问的共享资源的唯一标识符。
 | sharepointIds | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
-| siteId        | String            | 对于 OneDrive for Business 和 SharePoint，此属性表示包含 driveItem 资源的父文档库的网站的 ID。 该值与该网站资源的 ID [属性][] 相同。 它是一 [个不透明的字符串，由网站的三个](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) 标识符组成。 <br>对于 OneDrive，不填充此属性。
+| siteId        | String            | 对于 OneDrive for Business 和 SharePoint，此属性表示包含 driveItem 资源的父文档库的网站的 ID。 该值与该网站资源的 id 属性 [相同][] 。 它是一 [个不透明的字符串，由网站的三个](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) 标识符组成。 <br>对于OneDrive，不填充此属性。
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares-get.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 
 ## <a name="remarks"></a>注解
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
-  "tocPath": "Resources/ItemReference"
+  "tocPath&quot;: &quot;Resources/ItemReference"
 } -->
 
 

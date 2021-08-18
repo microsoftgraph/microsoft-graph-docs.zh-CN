@@ -5,25 +5,25 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5004a7b5d7ee1c38e559c41a86155cd89506af3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e8a16f01ae9ad794cd10a3f9b3d281262e408f077bfdbaa65d4fe164a0f3cfd3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49281010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227650"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含与给定 mobileAppContent 版本关联的单个安装程序文件的属性。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List mobileAppContentFiles](../api/intune-apps-mobileappcontentfile-list.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 集合|列出 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象的属性和关系。|
 |[Get mobileAppContentFile](../api/intune-apps-mobileappcontentfile-get.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)|读取 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象的属性和关系。|
@@ -34,11 +34,11 @@ ms.locfileid: "49281010"
 |[renewUpload 操作](../api/intune-apps-mobileappcontentfile-renewupload.md)|无|续订应用程序文件上传的 SAS URI。|
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |azureStorageUri|String|Azure 存储 URI。|
 |isCommitted|Boolean|指示文件是否已提交的值。|
-|id|字符串|文件 ID。|
+|id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
 |name|字符串|文件名称。|
 |size|Int64|加密前的文件大小。|
@@ -46,8 +46,8 @@ ms.locfileid: "49281010"
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|Boolean|一个指示文件是否为框架文件的值。|
-|isDependency|Boolean|内容文件是否依赖于主要内容文件。|
+|isFrameworkFile|布尔值|一个值，指示文件是否是框架文件。|
+|isDependency|布尔值|内容文件是否依赖于主内容文件。|
 
 ## <a name="relationships"></a>关系
 无

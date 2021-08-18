@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34c27b7e5e7dcba3a56e29b3165e1a2f5a609509
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 48a0f286c30048fd4ef7d265505d64d77f206ca55a0d2b872a926855e4150d54
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216141"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236407"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>deviceConfigurationUserOverview 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceConfigurationUserOverview](../api/intune-deviceconfig-deviceconfigurationuseroverview-get.md)|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|读取 [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) 对象的属性和关系。|
@@ -33,7 +33,7 @@ ms.locfileid: "49216141"
 |:---|:---|:---|
 |id|String|实体的键。|
 |pendingCount|Int32|待定用户的数量|
-|notApplicableCount|Int32|不适用的用户数|
+|notApplicableCount|Int32|不适用用户的数量|
 |successCount|Int32|成功用户的数量|
 |errorCount|Int32|错误用户的数量|
 |failedCount|Int32|失败用户的数量|

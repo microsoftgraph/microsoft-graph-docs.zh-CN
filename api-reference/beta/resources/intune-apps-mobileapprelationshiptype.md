@@ -1,32 +1,32 @@
 ---
 title: mobileAppRelationshipType 枚举类型
-description: 指示关系的目标是关系中的父级还是子级。
+description: 指示关系的目标是关系的父项还是子级。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: feb1d9e8469bc7880a0e63698dc6595f4673894c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2d800df1e8ac3f758d0435ba6cbea9fb1a23193b68a048405739af32e2476dc3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49261081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245154"
 ---
 # <a name="mobileapprelationshiptype-enum-type"></a>mobileAppRelationshipType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-指示关系的目标是关系中的父级还是子级。
+指示关系的目标是关系的父项还是子级。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|Child|0|指示关系的目标是关系中的子级。|
-|父级|1|指示关系的目标是关系中的父级。|
+|Child|0|指示关系的目标为关系中的子级。|
+|父级|1 |指示关系的目标为关系中的父级。|
 
 
 

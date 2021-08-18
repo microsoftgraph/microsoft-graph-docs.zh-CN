@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eec6a97c73f707743d607414c47b939e0e5cb388
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 283023d8860302823d8858290b44b4f543ad2ca2db215d2200200572d4d43e96
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54215529"
 ---
 # <a name="create-pfxrecryptionrequest"></a>创建 pfxRecryptionRequest
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -59,7 +59,7 @@ POST /pfxRecryptionRequests
 |profileId|Guid|尚未记录|
 |thumbprint|String|尚未记录|
 |deviceKeyThumbprint|String|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |sourceType|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|

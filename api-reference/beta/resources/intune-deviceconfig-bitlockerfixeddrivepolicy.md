@@ -5,29 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 323d45fb8109820a74f6b0394431a297ed2618e6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4b6e0186583ecb906d7afd37557b3ecb822e54d5702e8c8033e62096dda2a2e9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165796"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>bitLockerFixedDrivePolicy 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 BitLocker 固定驱动器策略。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|选择固定驱动器的加密方法。 可取值为：`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256`|
-|requireEncryptionForWriteAccess|Boolean|此策略设置确定固定数据驱动器在计算机上是否可写，是否需要 BitLocker 保护。|
-|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|通过此策略设置，您可以控制在缺少所需凭据的情况中恢复受 BitLocker 保护的固定数据驱动器的方式。 启用 BitLocker 时，将应用此策略设置。|
+|requireEncryptionForWriteAccess|Boolean|此策略设置确定是否需要 BitLocker 保护才能在计算机上写入固定数据驱动器。|
+|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|此策略设置允许你控制在没有所需凭据的情况下如何恢复受 BitLocker 保护的固定数据驱动器。 当你打开 BitLocker 时，将应用此策略设置。|
 
 ## <a name="relationships"></a>关系
 无

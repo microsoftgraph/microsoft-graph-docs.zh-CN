@@ -5,25 +5,25 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90b9eaff6f291205acc559101e8ff4f64a33c8c8
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 0b1b4dd5a247bb94fefd4063f70cd219c27fd1e55169350db35474caf6b94ac1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150358"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含设备管理脚本的设备运行状态的属性。
 
-## <a name="methods"></a>方法
-|方法|返回类型|Description|
+## <a name="methods"></a>Methods
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementScriptDeviceStates](../api/intune-devices-devicemanagementscriptdevicestate-list.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) 集合|列出 [deviceManagementScriptDeviceState 对象的属性和](../resources/intune-devices-devicemanagementscriptdevicestate.md) 关系。|
 |[获取 deviceManagementScriptDeviceState](../api/intune-devices-devicemanagementscriptdevicestate-get.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|读取 [deviceManagementScriptDeviceState 对象的属性和](../resources/intune-devices-devicemanagementscriptdevicestate.md) 关系。|
@@ -35,14 +35,14 @@ ms.locfileid: "51611928"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备管理脚本设备状态实体的键。 此属性是只读的。|
-|runState|[runState](../resources/intune-devices-runstate.md)|设备管理脚本的最新运行状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本的最新运行状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |resultMessage|String|执行输出的详细信息。|
 |lastStateUpdateDateTime|DateTimeOffset|设备管理脚本执行的最新时间。|
 |errorCode|Int32|与设备管理脚本的错误执行相对应的错误代码。|
 |errorDescription|String|与设备管理脚本的错误执行相对应的错误描述。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|执行设备管理脚本的托管设备。|
 

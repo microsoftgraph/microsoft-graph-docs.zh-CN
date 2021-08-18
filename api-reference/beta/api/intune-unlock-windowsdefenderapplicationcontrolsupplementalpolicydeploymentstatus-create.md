@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8015cf75440757f5926838694a8cec7a5ea81dcb
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ae000ea64ff06d9b6991b2169435b6a69479e59ccf2b106f6437b2f3bb73b65b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54207248"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>创建 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,12 +57,12 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 |deviceName|String|设备名称。|
 |deviceId|String|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期时间。|
-|osVersion|String|Windows 操作系统版本。|
-|osDescription|String|Windows OS 版本说明。|
+|osVersion|String|Windows操作系统版本。|
+|osDescription|String|Windows操作系统版本说明。|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|策略的部署状态。 可取值为：`unknown`、`success`、`tokenError`、`notAuthorizedByToken`、`policyNotFound`。|
 |userName|String|此设备的用户的名称。|
-|userPrincipalName|String|用户主体名称。|
-|policyVersion|String|WindowsDefenderApplicationControl 补充策略的可读版本。|
+|userPrincipalName|字符串|用户主体名称。|
+|policyVersion|字符串|WindowsDefenderApplicationControl 补充策略的可读版本。|
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 73e743bc6409f762a7898ec8037633c7bc3f00e4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: a25061ccea7c6971625a96e9ececd60b3f87a9f4817c1aee4c8892385a6c7d55
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981849"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248976"
 ---
 # <a name="emailactivityuserdetail-resource-type"></a>emailActivityUserDetail 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "49981849"
 | :---------------- | :---------------- |
 | reportRefreshDate | 日期              |
 | userPrincipalName | String            |
-| displayName       | String            |
-| isDeleted         | Boolean           |
+| displayName       | 字符串            |
+| isDeleted         | 布尔值           |
 | deletedDate       | 日期              |
 | lastActivityDate  | 日期              |
 | sendCount         | Int64             |

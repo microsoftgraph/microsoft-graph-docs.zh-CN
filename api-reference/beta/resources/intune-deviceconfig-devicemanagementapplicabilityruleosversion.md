@@ -5,29 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99476ad2b42caf10d64f26ccd5725655ae8cac34
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1f5dcb07caf8a9a92835b4019515fbc3cb90f24ef6d3aca94d2ed0cdaaa9f317
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283467"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242942"
 ---
 # <a name="devicemanagementapplicabilityruleosversion-resource-type"></a>deviceManagementApplicabilityRuleOsVersion 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|minOSVersion|字符串|适用性规则的最小 OS 版本。|
-|maxOSVersion|字符串|适用性规则的最大 OS 版本。|
-|name|字符串|对象的名称。|
+|minOSVersion|String|适用性规则最低操作系统版本。|
+|maxOSVersion|String|适用性规则的最大操作系统版本。|
+|name|String|对象的名称。|
 |ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|适用性规则类型。 可取值为：`include`、`exclude`。|
 
 ## <a name="relationships"></a>关系

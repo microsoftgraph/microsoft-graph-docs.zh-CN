@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d76d96acf8dc96275902d1fba30f8ba6f49cc088
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2f6a7d25551f386d17d8882f9c693079e0a5b788de3af2de868ce9ede56d4c4c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245035"
 ---
 # <a name="devicecompliancescriptvalidationresult-resource-type"></a>deviceComplianceScriptValidationResult 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "50154276"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|规则|[deviceComplianceScriptRule](../resources/intune-deviceconfig-devicecompliancescriptrule.md) 集合|从 json 分析规则。|
+|规则|[deviceComplianceScriptRule](../resources/intune-deviceconfig-devicecompliancescriptrule.md) 集合|从 json 解析的规则。|
 |scriptErrors|[deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md) 集合|脚本的 json 错误。|
 |ruleErrors|[deviceComplianceScriptRuleError](../resources/intune-deviceconfig-devicecompliancescriptruleerror.md) 集合|规则脚本的 json 错误。|
 

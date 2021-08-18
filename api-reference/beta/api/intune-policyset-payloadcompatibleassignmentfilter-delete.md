@@ -1,18 +1,18 @@
 ---
-title: 删除 windowsPhoneEASEmailProfileConfiguration
-description: 删除 windowsPhoneEASEmailProfileConfiguration。
+title: 删除 payloadCompatibleAssignmentFilter
+description: 删除 payloadCompatibleAssignmentFilter。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03a5d86f58b7946c2a258eadd3fa1dc262eeef2037857e225e8807941b9fb45c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 719f58e9aad7e27101cf63cb999fb07cf61baed0
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149035"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263530"
 ---
-# <a name="delete-windowsphoneeasemailprofileconfiguration"></a>删除 windowsPhoneEASEmailProfileConfiguration
+# <a name="delete-payloadcompatibleassignmentfilter"></a>删除 payloadCompatibleAssignmentFilter
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "54149035"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md)。
+删除 [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,9 +37,7 @@ ms.locfileid: "54149035"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+DELETE /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -59,7 +57,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 ```
 
 ### <a name="response"></a>响应
