@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1c1b31413c19436c7dceb34a2055a238fe5881a
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: d1bf94f10b164e13600989b6fed982f6426a505a9f952ff67a1aa97dc4843da5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156196"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>deviceHealthScriptRunSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "52665229"
 
 包含设备管理脚本的运行摘要的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceHealthScriptRunSummary](../api/intune-devices-devicehealthscriptrunsummary-get.md)|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|读取 [deviceHealthScriptRunSummary 对象的属性和](../resources/intune-devices-devicehealthscriptrunsummary.md) 关系。|

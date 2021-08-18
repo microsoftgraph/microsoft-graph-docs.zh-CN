@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d624863a07309b3962122fb93a1ebbaea895a44b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 091ac9a6513dc97c80560009b219a5c57d3da14a2808fac1477607f98d5aae47
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226385"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213121"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>userExperienceAnalyticsInsight 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,10 +25,10 @@ ms.locfileid: "49226385"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|userExperienceAnalyticsMetricId|String|用户体验分析洞察力的唯一标识符。|
-|insightId|String|用户体验分析洞察力的唯一标识符。|
-|values|[userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md) 集合|用户体验分析洞察力的价值。|
-|severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|用户体验分析洞察力的价值。 可取值为：`none`、`informational`、`warning`、`error`。|
+|userExperienceAnalyticsMetricId|字符串|用户体验分析见解的唯一标识符。|
+|insightId|String|用户体验分析见解的唯一标识符。|
+|values|[userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md) 集合|用户体验分析见解的价值。|
+|severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|用户体验分析见解的价值。 可取值为：`none`、`informational`、`warning`、`error`。|
 
 ## <a name="relationships"></a>关系
 无

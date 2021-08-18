@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d27825f33e3afa65ad7b89b24c940e9a8a29634e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9537b8ce7d677d6430a8690916996f3e80f2dd9c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952801"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263805"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
 
@@ -43,16 +43,16 @@ ms.locfileid: "50952801"
 |invitedUserDisplayName|String|被邀请的用户的显示名称。|
 |invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。 必需。 电子邮件地址中不允许使用以下特殊字符：<br><ul><li>波形符 (~)</li><li>感叹号 (`!`)</li><li>@ 符号 (`@`)</li><li>井号 (`#`)</li><li>美元符号 (`$`)</li><li>百分号 (`%`)</li><li>扬抑符 (`^`)</li><li>与号 (`&`)</li><li>星号 (`*`)</li><li>圆括号 (`( )`)</li><li>连字符 (`-`)</li><li>加号 (`+`)</li><li>等号 (`=`)</li><li>方括号 (`[ ]`)</li><li>大括号 (`{ }`)</li><li>反斜杠 (`\`)</li><li>斜杠符号 (`/`)</li><li>竖线 (`|`)</li><li>分号 (`;`)</li><li>冒号 (`:`)</li><li>引号 (`"`)</li><li>尖括号 (`< >`)</li><li>问号 (`?`)</li><li>逗号 (`,`)</li></ul><br>但是，存在下列例外情况：<br><ul><li>允许在用户名中的任何位置使用句点 (`.`) 或连字符 (`-`)，但名称的开头或结尾除外。</li><li>允许在用户名中的任何位置使用下划线 (`_`)。 这包括名称的开头或结尾。</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
-|sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
+|sendInvitationMessage|Boolean|指示是否应该向被邀请的用户发送电子邮件。 默认值为 `false`。|
 |inviteRedirectUrl|String|兑现邀请后，用户应被重定向至的 URL。必填。|
-|inviteRedeemUrl|String|用户可用于兑换邀请的 URL。 只读。|
-|invitedUserType|String|被邀请的用户的 userType。 默认情况下，这是 `Guest` 。 你可以像 `Member` 你是公司管理员一样进行邀请。 |
-|状态|String|邀请的状态。 可能的值 `PendingAcceptance` `Completed` ：、、 `InProgress` 和 `Error`|
+|inviteRedeemUrl|String|用户用于兑现邀请的 URL。只读。|
+|invitedUserType|String|被邀请的用户的 userType。 默认情况下，此操作为 `Guest`。 你可以像 `Member` 你是公司管理员一样进行邀请。 |
+|status|String|邀请的状态。 可能的值 `PendingAcceptance` `Completed` ：、、 `InProgress` 和 `Error`|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|invitedUser|[用户](user.md)|创建为邀请创建进程组成部分的用户。只读|
+|invitedUser|[user](user.md)|创建为邀请创建进程组成部分的用户。只读|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

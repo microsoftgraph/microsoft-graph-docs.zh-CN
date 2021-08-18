@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b2df26a5aa357d1ebfe6a125049e3a69b1022ae
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: beb73b0ab45b9bcf22be49fb1f0c65bd83d2b1278126c6c57679305044aa0ff7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51141804"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156910"
 ---
 # <a name="update-windowsinformationprotectionwipeaction"></a>更新 windowsInformationProtectionWipeAction
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,9 +54,9 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|状态|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|status|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |targetedUserId|String|此擦除操作所针对的 UserId。|
-|targetedDeviceRegistrationId|String|此擦除操作所针对的 DeviceRegistrationId。|
+|targetedDeviceRegistrationId|字符串|此擦除操作所针对的 DeviceRegistrationId。|
 |targetedDeviceName|String|目标设备名称。|
 |targetedDeviceMacAddress|String|目标设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|此擦除操作针对的设备的最后签入时间。|

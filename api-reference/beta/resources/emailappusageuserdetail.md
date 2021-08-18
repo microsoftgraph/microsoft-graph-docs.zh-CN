@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fb6dded6e7c86644191f1d941900050813b84594
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: dce83b17f029bec2bf8977d0e863dcdb5c7fc4e1a9c5dea731b654d5ce6ab9f3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54210069"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>emailAppUsageUserDetail 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "49981814"
 | :---------------- | :---------------- |
 | reportRefreshDate | 日期              |
 | userPrincipalName | String            |
-| displayName       | String            |
-| isDeleted         | Boolean           |
+| displayName       | 字符串            |
+| isDeleted         | 布尔值           |
 | deletedDate       | 日期              |
 | lastActivityDate  | 日期              |
 | mailForMac        | String collection |
@@ -35,7 +35,7 @@ ms.locfileid: "49981814"
 | pop3App           | String collection |
 | imap4App          | String collection |
 | smtpApp           | String collection |
-| reportPeriod      | String            |
+| reportPeriod      | 字符串            |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

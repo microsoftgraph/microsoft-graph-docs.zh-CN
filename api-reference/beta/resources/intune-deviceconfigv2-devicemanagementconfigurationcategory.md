@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14610b5bc87a1da11492decb122ee85b065b0c10
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: fb269ed4d4b047b060e5bd6b5685293069d9cc8fce8a11fcced9b711456a083c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153032"
 ---
 # <a name="devicemanagementconfigurationcategory-resource-type"></a>deviceManagementConfigurationCategory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "52665082"
 
 设备管理配置策略
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementConfigurationCategories](../api/intune-deviceconfigv2-devicemanagementconfigurationcategory-list.md)|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 集合|列出 [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象的属性和关系。|
@@ -35,15 +35,15 @@ ms.locfileid: "52665082"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|项的标识符|
-|说明|String|项目说明|
+|description|字符串|项目说明|
 |helpText|String|项目的帮助文本|
 |name|String|项目名称|
-|displayName|String|项目的显示名称|
+|displayName|字符串|项目的显示名称|
 |平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`。|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`。|
-|parentCategoryId|String|类别的父 ID。|
-|rootCategoryId|String|类别的根 ID。|
+|parentCategoryId|字符串|类别的父 ID。|
+|rootCategoryId|字符串|类别的根 ID。|
 |childCategoryIds|String collection|类别的子 ID 列表。|
 
 ## <a name="relationships"></a>关系

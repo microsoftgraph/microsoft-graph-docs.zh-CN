@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 1fa60cb2f9d158e590b5c82b3b457fd8a22ca3202a59f01dba00205b90723231
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e5e1f67b7b76e0a9e9ae48b2fc286ad3eca603b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249095"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266714"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 将审阅者分配给你的访问评审
 
@@ -77,6 +77,17 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
 ]
 ```
 由于 `./manager` 是相对查询，因此请用值 指定 **queryRoot** 属性 `decisions` 。
+
+### <a name="example-5-application-owners-as-reviewers"></a>示例 5：作为审阅者的应用程序所有者
+
+```http
+"reviewers": [
+    {
+        "query": "/servicePrincipals/{id}/owners",
+        "queryType": "MicrosoftGraph"
+    }
+]
+```
 
 ## <a name="see-also"></a>另请参阅
 

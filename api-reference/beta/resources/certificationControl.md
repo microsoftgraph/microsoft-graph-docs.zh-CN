@@ -1,26 +1,26 @@
 ---
 title: " certificationControl 资源类型"
-description: 此资源包含与安全分数控制相关联的合规性认证数据。
+description: 此资源包含与安全分数控制关联的合规性认证数据。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 4f2be439f1b286a8d916fe80a7b4fcb4f6d60071
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae7634ed168870bd03282a9a20dc9cba536db0635d750d07d17407f85a9e8c8e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016819"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164354"
 ---
 #  <a name="certificationcontrol-resource-type"></a>certificationControl 资源类型
 
 命名空间：microsoft.graph
 
-包含与安全得分控制相关联的合规性认证数据。
+包含与安全分数控制关联的合规性认证数据。
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|name | string | 证书控制名称 |
+|name | string | 认证控制名称 |
 |url | string | Microsoft 服务信任门户的 URL |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1543bb29e379458b15a7ebb915e0e32d4c6bacc2
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 6bc01c429a78b4d32ac31b7eec9f8df5ddf4ad0929ea2e85ab83c4f50e572b0c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54207724"
 ---
 # <a name="update-pfxusercertificate"></a>更新 pfxUserCertificate
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -64,7 +64,7 @@ PATCH /pfxUserCertificates/{pfxUserCertificatesId}
 |providerName|String|尚未记录|
 |encryptionKeyName|String|尚未记录|
 |paddingScheme|Int32|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |intendedPurpose|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |isDeleted|Boolean|尚未记录|

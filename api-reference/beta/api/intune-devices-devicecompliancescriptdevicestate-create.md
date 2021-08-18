@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dcb977cc83eedeab5c0a8f8ac1cb3ccc96d8f32
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: db9325e7fbcaf030b9774026a469744ed6b97981
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611851"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264449"
 ---
 # <a name="create-devicecompliancescriptdevicestate"></a>创建 deviceComplianceScriptDeviceState
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51611851"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,8 +58,8 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/device
 |lastStateUpdateDateTime|DateTimeOffset|执行设备合规性脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|下一次执行设备合规性脚本的时间戳|
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
-|scriptOutput|String|检测脚本的输出|
-|scriptError|String|检测脚本中的错误|
+|scriptOutput|字符串|检测脚本的输出|
+|scriptError|字符串|检测脚本中的错误|
 
 
 

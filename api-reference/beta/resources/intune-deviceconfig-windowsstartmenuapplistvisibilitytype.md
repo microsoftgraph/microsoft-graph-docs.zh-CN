@@ -1,34 +1,34 @@
 ---
 title: windowsStartMenuAppListVisibilityType 枚举类型
-description: "\"开始\" 菜单应用程序列表可见性的类型。"
+description: "\"开始\"菜单应用列表可见性的类型。"
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c9110b09e5d7bbfc7f63e2db95d998639625c45b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e75cae7b54406e60fcefb6189446ed67e05537d39829ed9850dcd633e47935e9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164234"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>windowsStartMenuAppListVisibilityType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-"开始" 菜单应用程序列表可见性的类型。
+"开始"菜单应用列表可见性的类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|定制|0|用户定义。 默认值。|
-|折叠|1|折叠 "开始" 菜单上的 "应用" 列表。|
-|删除|双面|从 "开始" 菜单中完全删除应用列表。|
-|disableSettingsApp|4 |禁用相应的切换 (折叠或删除 "设置" 应用中的) 。|
+|userDefined|0|用户定义。 默认值。|
+|collapse|1 |折叠"开始"菜单上的应用列表。|
+|remove|2 |从"开始"菜单完全删除应用列表。|
+|disableSettingsApp|4 |禁用应用 (折叠) 删除设置切换。|
 
 
 
