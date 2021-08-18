@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9975317c49562efbae19c290ca0aa34792be28d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fb152b6c47e1c0fa4a87e503f6e9c1ec591c3054da9446d11c52be1fe194fef0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232641"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "49272526"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|名|字符串|将锁定到此展台配置的 AD 组的名称|
+|groupName|字符串|将锁定到此展台配置的 AD 组的名称|
 
 ## <a name="relationships"></a>关系
 无

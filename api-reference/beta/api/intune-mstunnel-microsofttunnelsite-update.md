@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74a0396c4627a8c7f4e496df78964de0ff2965cd
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 4271cf24080835c7a2cfa411c164020865c98e53b47f3dbb9250fbc6cea54a5a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213835"
 ---
 # <a name="update-microsofttunnelsite"></a>更新 microsoftTunnelSite
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,10 +54,10 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelSite 的 ID|
-|displayName|String|MicrosoftTunnelSite 的显示名称|
-|说明|String|MicrosoftTunnelSite 的说明|
+|displayName|字符串|MicrosoftTunnelSite 的显示名称|
+|description|String|MicrosoftTunnelSite 的说明|
 |publicAddress|String|MicrosoftTunnelSite 的公共域名或 IP 地址|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 34d7d669ae47339041e7a2f03c6e0fd0611aa953
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a03c8a22a07a46f59b69e925a7d69b2b0c1da1d37ae26e5ca6a7a383172a9797
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208826"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236106"
 ---
 # <a name="manageddevicearchitecture-enum-type"></a>managedDeviceArchitecture 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,9 +26,9 @@ ms.locfileid: "49208826"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知体系结构|
-|系列|1|系列|
-|x64|双面|X64|
-|整理|第三章|整理|
+|x86|1 |X86|
+|x64|2 |X64|
+|arm|3 |ARM|
 |arM64|4 |ARM64|
 
 

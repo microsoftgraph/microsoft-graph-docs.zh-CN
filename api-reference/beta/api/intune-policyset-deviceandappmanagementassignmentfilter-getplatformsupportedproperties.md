@@ -1,18 +1,18 @@
 ---
-title: getPolicySummary 函数
+title: getPlatformSupportedProperties 函数
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8167b6cb20c49354de6fc0a803787d487d7407124904b7df0aee6f8a5137d3ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 71449fa497fbf16abec74124f7c936b66939dd10
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263344"
 ---
-# <a name="getpolicysummary-function"></a>getPolicySummary 函数
+# <a name="getplatformsupportedproperties-function"></a>getPlatformSupportedProperties 函数
 
 命名空间：microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "54235007"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "54235007"
 }
 -->
 ``` http
-GET /deviceManagement/configManagerCollections/getPolicySummary
+GET /deviceManagement/assignmentFilters/getPlatformSupportedProperties
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -52,19 +52,19 @@ GET /deviceManagement/configManagerCollections/getPolicySummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|policyId|String|尚未记录|
+|平台|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [configManagerPolicySummary。](../resources/intune-partnerintegration-configmanagerpolicysummary.md)
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [assignmentFilterSupportedProperty](../resources/intune-policyset-assignmentfiltersupportedproperty.md) 集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configManagerCollections/getPolicySummary(policyId='parameterValue')
+GET https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/getPlatformSupportedProperties(platform='parameterValue')
 ```
 
 ### <a name="response"></a>响应
@@ -72,18 +72,24 @@ GET https://graph.microsoft.com/beta/deviceManagement/configManagerCollections/g
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 276
+Content-Length: 407
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.configManagerPolicySummary",
-    "targetedDeviceCount": 3,
-    "compliantDeviceCount": 4,
-    "nonCompliantDeviceCount": 7,
-    "failedDeviceCount": 1,
-    "pendingDeviceCount": 2,
-    "enforcedDeviceCount": 3
-  }
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.assignmentFilterSupportedProperty",
+      "dataType": "Data Type value",
+      "isCollection": true,
+      "name": "Name value",
+      "propertyRegexConstraint": "Property Regex Constraint value",
+      "supportedOperators": [
+        "equals"
+      ],
+      "supportedValues": [
+        "Supported Values value"
+      ]
+    }
+  ]
 }
 ```
 

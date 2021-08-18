@@ -2,12 +2,12 @@
 author: AshleyYangSZ
 ms.topic: include
 ms.date: 12/12/2020
-ms.openlocfilehash: 5b6dea7d60b4ea28c86fe889a355f57c1ef4ab73
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: c94d53b72f81113ac7a305cadb20cd080cffa26c2578ce5deb9c3e2028e8e4d2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57158308"
 ---
 <!-- markdownlint-disable MD041-->
 

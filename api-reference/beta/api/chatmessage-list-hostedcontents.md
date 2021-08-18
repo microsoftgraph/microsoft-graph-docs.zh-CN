@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 79e020bb53c995ac1afe2d53dc4b0b367d42a201
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 5ff56f4181211eff40f2d1a808245e6707eb1573
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971102"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384173"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -26,9 +26,9 @@ ms.locfileid: "52971102"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.Read.WriteAll |
+|委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 
 ### <a name="permissions-for-chat"></a>聊天权限
 
@@ -36,9 +36,9 @@ ms.locfileid: "52971102"
 |:---------------------------------------|:--------------------------------------------|
 |委派（工作或学校帐户）| Chat.Read、Chat.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChatMessage.Read.Chat*、Chat.Read.All、Chat.ReadWrite.All|
+|应用程序| ChatMessage.Read.Chat、Chat.Read.All、Chat.ReadWrite.All|
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**_：ChannelMessage.Read.Group_ 和 _ChatMessage.Read.Chat_ 权限使用 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 > **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
 
@@ -183,7 +183,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 > **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
 
@@ -251,7 +251,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 > **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
 

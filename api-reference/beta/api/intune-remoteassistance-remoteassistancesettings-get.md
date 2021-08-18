@@ -1,18 +1,18 @@
 ---
-title: getPolicySummary 函数
-description: 尚未记录
+title: 获取 remoteAssistanceSettings
+description: 读取 remoteAssistanceSettings 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8167b6cb20c49354de6fc0a803787d487d7407124904b7df0aee6f8a5137d3ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9566280b205b11dddb750df269310d2bf4e6467c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265460"
 ---
-# <a name="getpolicysummary-function"></a>getPolicySummary 函数
+# <a name="get-remoteassistancesettings"></a>获取 remoteAssistanceSettings
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "54235007"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+读取 [remoteAssistanceSettings 对象的属性和](../resources/intune-remoteassistance-remoteassistancesettings.md) 关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,8 +37,11 @@ ms.locfileid: "54235007"
 }
 -->
 ``` http
-GET /deviceManagement/configManagerCollections/getPolicySummary
+GET /deviceManagement/remoteAssistanceSettings
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -47,24 +50,17 @@ GET /deviceManagement/configManagerCollections/getPolicySummary
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求 URL 中，提供以下查询参数（含值）。
-下表显示了可用于此函数的参数。
-
-|属性|类型|说明|
-|:---|:---|:---|
-|policyId|String|尚未记录|
-
-
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [configManagerPolicySummary。](../resources/intune-partnerintegration-configmanagerpolicysummary.md)
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [remoteAssistanceSettings](../resources/intune-remoteassistance-remoteassistancesettings.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configManagerCollections/getPolicySummary(policyId='parameterValue')
+GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistanceSettings
 ```
 
 ### <a name="response"></a>响应
@@ -72,17 +68,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/configManagerCollections/g
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 276
+Content-Length: 227
 
 {
   "value": {
-    "@odata.type": "microsoft.graph.configManagerPolicySummary",
-    "targetedDeviceCount": 3,
-    "compliantDeviceCount": 4,
-    "nonCompliantDeviceCount": 7,
-    "failedDeviceCount": 1,
-    "pendingDeviceCount": 2,
-    "enforcedDeviceCount": 3
+    "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
+    "id": "cfef360e-360e-cfef-0e36-efcf0e36efcf",
+    "remoteAssistanceState": "disabled",
+    "allowSessionsToUnenrolledDevices": true
   }
 }
 ```

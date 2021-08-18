@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e75644c57fdee030bd0fc8858d49ed7f0625dbe2
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 6b78971f3f0045e05c90ffa1b4d45ad7c70c785bbc25811934350fa0d0a70c92
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51145451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213841"
 ---
 # <a name="update-devicemanagementpartner"></a>更新 deviceManagementPartner
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|合作伙伴应用类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
 |singleTenantAppId|String|合作伙伴单个租户应用 ID|
-|displayName|String|合作伙伴显示名称|
+|displayName|字符串|合作伙伴显示名称|
 |isConfigured|Boolean|是否配置了设备管理合作伙伴|
 |whenPartnerDevicesWillBeRemoved|DateTimeOffset|将删除 PartnerDevices 的 DateTime（UTC 时间）。 这将很快成为删除。|
 |whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|将 PartnerDevices 标记为"不兼容"的 DateTime（UTC 时间）。 这将很快成为删除。|
