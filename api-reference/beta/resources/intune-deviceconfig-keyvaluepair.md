@@ -1,18 +1,18 @@
 ---
-title: deviceManagementConstraint 资源类型
-description: 约束的基本实体
+title: keyValuePair 资源类型
+description: 用于存储自定义设置的键值对
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0be7abce5b8e0ad4d75ee6e45389f21ab553e35c35b491cfd75e82d63da60cf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4b86c1cbfcee4519d93bdfa704bc5d283343342c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182845"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255290"
 ---
-# <a name="devicemanagementconstraint-resource-type"></a>deviceManagementConstraint 资源类型
+# <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,11 +20,13 @@ ms.locfileid: "54182845"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-约束的基本实体
+用于存储自定义设置的键值对
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
+|name|String|此键值对的名称|
+|value|String|此键值对的值|
 
 ## <a name="relationships"></a>关系
 无
@@ -33,12 +35,14 @@ ms.locfileid: "54182845"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.deviceManagementConstraint"
+  "@odata.type": "microsoft.graph.keyValuePair"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceManagementConstraint"
+  "@odata.type": "#microsoft.graph.keyValuePair",
+  "name": "String",
+  "value": "String"
 }
 ```
 

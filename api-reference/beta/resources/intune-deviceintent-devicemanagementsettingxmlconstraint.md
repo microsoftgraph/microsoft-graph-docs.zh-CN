@@ -1,26 +1,26 @@
 ---
 title: deviceManagementSettingXmlConstraint 资源类型
-description: 强制设置的约束是格式良好的 XML
+description: 强制设置的约束格式为 XML 格式良好
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ad2c069b198971d7bf99f98e50c5c89b5733e10
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9de3c015470c8425bd076ee39655ed10a6085829a5d6d1ea54a55f893c4925bc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49209575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185787"
 ---
 # <a name="devicemanagementsettingxmlconstraint-resource-type"></a>deviceManagementSettingXmlConstraint 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-强制设置的约束是格式良好的 XML
+强制设置的约束格式为 XML 格式良好
 
 
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
