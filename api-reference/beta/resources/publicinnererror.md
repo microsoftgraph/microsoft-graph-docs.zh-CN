@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e8380e8836076687a2d6ab3e8a0a4a53b8bd6964
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 9d0d14ffb803a084db080dc986ceb0dc83f14619dd3230b68aacf07401f13543
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139114"
 ---
 # <a name="publicinnererror-resource-type"></a>publicInnerError 资源类型
 

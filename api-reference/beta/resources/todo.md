@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: aa468c6d6556ad70d3650e40fb3fd01c46ccdb35
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89bbdd1bd3d91c5114850ffad8afc3aeec90e8bf3bbfb0b65e540444c2022b7b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971473"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246008"
 ---
 # <a name="todo-resource-type"></a>todo 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "47971473"
 
 表示用户可以使用的微软待办服务。
 
-继承自 [entity](../resources/entity.md)。
+继承自 [实体](../resources/entity.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出列表](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) 集合 | 获取用户邮箱中的所有任务列表。 |
@@ -32,7 +32,7 @@ ms.locfileid: "47971473"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|lists|[todoTaskList](../resources/todotasklist.md) 集合| "用户" 邮箱中的任务列表。 |
+|lists|[todoTaskList](../resources/todotasklist.md) 集合| 用户邮箱中的任务列表。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

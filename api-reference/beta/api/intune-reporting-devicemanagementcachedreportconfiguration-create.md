@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9df14360ac503b20eaf881fb37a79c111c8c2c2a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 62e166075dfa03c45457b080bb0c8a6e8e13d2ab0e8a19b6d6339508687c7db4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51124601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54191191"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>创建 deviceManagementCachedReportConfiguration
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,12 +54,12 @@ POST /deviceManagement/reports/cachedReportConfigurations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|此实体的唯一标识符|
-|reportName|String|报告的名称|
+|reportName|字符串|报告的名称|
 |filter|String|创建报表时应用的筛选器。|
 |select|String collection|从报表选择的列|
 |orderBy|String collection|报告中列的排序|
 |metadata|String|与报告关联的呼叫者管理的元数据|
-|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |lastRefreshDateTime|DateTimeOffset|上次刷新缓存报告的时间|
 |expirationDateTime|DateTimeOffset|缓存报告的过期时间|
 

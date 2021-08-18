@@ -1,26 +1,26 @@
 ---
 title: loggedOnUser 资源类型
-description: 登录用户
+description: 已登录用户
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 994946d9dcd7abf3f2f57df652321a61dd71dd47
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 528180642b3c851b9fb1b98567d44ef1ff6958816f7eb122b4526257c2f7a790
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249935"
 ---
 # <a name="loggedonuser-resource-type"></a>loggedOnUser 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-登录用户
+已登录用户
 
 ## <a name="properties"></a>属性
 |属性|类型|描述|

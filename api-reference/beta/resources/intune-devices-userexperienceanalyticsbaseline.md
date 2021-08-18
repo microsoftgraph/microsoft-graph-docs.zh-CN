@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d33eec55a5e7309a0ed80fd7fcf4d62b780a1f8
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4eae89f2fc1690fc7dc1239d7b73de8b970400aa114b20d9a3ed11201af11cf1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51141447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251265"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>userExperienceAnalyticsBaseline 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用户体验分析基线实体包含比较用户体验分析分数的基线值。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsBaselines](../api/intune-devices-userexperienceanalyticsbaseline-list.md)|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 集合|列出 [userExperienceAnalyticsBaseline 对象的属性和](../resources/intune-devices-userexperienceanalyticsbaseline.md) 关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "51141447"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析基线的唯一标识符。|
-|displayName|String|用户体验分析基线的名称。|
+|displayName|字符串|用户体验分析基线的名称。|
 |overallScore|Int32|用户体验分析基线的整体分数。|
 |isBuiltIn|Boolean|表示当前比较基准是商业中值基线还是自定义比较基准。|
 |createdDateTime|DateTimeOffset|创建自定义比较基准的日期。|

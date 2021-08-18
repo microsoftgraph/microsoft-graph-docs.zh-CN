@@ -5,12 +5,12 @@ title: mediaSource 资源类型
 localization_priority: Normal
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: c0b2f93095d7e7a4b9176073cc8688b5eb473cd3
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 32e9fc10fe9795af0393e67b2ce2e2eef827ee7a12140c37e129180589bbe359
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193410"
 ---
 # <a name="mediasource-resouce-type"></a>mediaSource 资源类型
 

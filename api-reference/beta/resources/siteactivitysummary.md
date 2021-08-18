@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: ce2d4806dd8c2e8367bf5a9c075fab84e3c17900
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d8b9777c55e7a88b01f49bbaf8c522886b9b7900568735b6aada75cab0b781e9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248304"
 ---
 # <a name="siteactivitysummary-resource-type"></a>siteActivitySummary 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "47985690"
 | :---------------- | :----- |
 | reportRefreshDate | 日期   |
 | viewedOrEdited    | Int64  |
-| 保持            | Int64  |
+| 已同步            | Int64  |
 | sharedInternally  | Int64  |
 | sharedExternally  | Int64  |
 | reportDate        | 日期   |
-| reportPeriod      | String |
+| reportPeriod      | 字符串 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
