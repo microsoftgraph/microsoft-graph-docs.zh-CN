@@ -5,30 +5,30 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: effb06c3ef0ff9a800f1eb4f375c9a8a9cb0215c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 700afa068019a28f628fe6b3b7ded991abb5fae0a644ad46dfe3ddf1fee0c6d3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153200"
 ---
 # <a name="androidusernamesource-enum-type"></a>androidUsernameSource 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android 用户名源。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |username|0|用户名。|
-|userPrincipalName|1|用户主体名称。|
-|samAccountName|双面|用户 sam 帐户名称。|
-|primarySmtpAddress|第三章|主 SMTP 地址。|
+|userPrincipalName|1 |用户主体名称。|
+|samAccountName|2 |用户 sam 帐户名。|
+|primarySmtpAddress|3 |主 SMTP 地址。|
 
 
 

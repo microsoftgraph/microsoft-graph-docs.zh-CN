@@ -1,26 +1,26 @@
 ---
 title: keyBooleanValuePair 资源类型
-description: 带有字符串键和布尔值的键-值对。
+description: 具有字符串键和布尔值的键值对。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d034eea836ed59eecfa712b80d5cadcbb01ea12
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3a4e3e036e5811070ab945ebf47ee1fbd8b7928e664fee70bb23a62905870af4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49269208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203048"
 ---
 # <a name="keybooleanvaluepair-resource-type"></a>keyBooleanValuePair 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-带有字符串键和布尔值的键-值对。
+具有字符串键和布尔值的键值对。
 
 
 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)
@@ -28,8 +28,8 @@ ms.locfileid: "49269208"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|Key|字符串|键/值对的字符串键。 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
-|value|Boolean|键/值对的布尔值。|
+|Key|String|键值对的字符串键。 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|value|Boolean|键值对的布尔值。|
 
 ## <a name="relationships"></a>关系
 无

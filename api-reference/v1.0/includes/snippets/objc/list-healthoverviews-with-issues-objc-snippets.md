@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f22b93e395775952a604aa60f81f3454d08589e3c314cd21e79b254d59e010d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
-ms.translationtype: HT
+ms.openlocfilehash: ce70827eab657faf167a855886176ce56b1ca2a3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57107035"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58259135"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/{id}/members"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/admin/serviceAnnouncement/healthOverviews?$expand=issues"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
@@ -20,7 +20,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
         NSError *jsonError = nil;
         MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphDirectoryObject *directoryObject = [[MSGraphDirectoryObject alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphServiceHealth *serviceHealth = [[MSGraphServiceHealth alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

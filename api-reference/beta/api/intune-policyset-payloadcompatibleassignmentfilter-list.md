@@ -1,18 +1,18 @@
 ---
-title: 列出 groupPolicyPresentationValueLists
-description: 列出 groupPolicyPresentationValueList 对象的属性和关系。
+title: 列出 payloadCompatibleAssignmentFilters
+description: 列出 payloadCompatibleAssignmentFilter 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2f3ae188ccd9bb3cc844d3000c9d4c8ebd9569f6ef840900c39edec47d8386e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9719d4e0601388740a744474fc142db1b124778c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210650"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263357"
 ---
-# <a name="list-grouppolicypresentationvaluelists"></a>列出 groupPolicyPresentationValueLists
+# <a name="list-payloadcompatibleassignmentfilters"></a>列出 payloadCompatibleAssignmentFilters
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "54210650"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [groupPolicyPresentationValueList 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) 关系。
+列出 [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "54210650"
 }
 -->
 ``` http
-GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues
+GET /deviceManagement/assignmentFilters
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -50,14 +50,14 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues
+GET https://graph.microsoft.com/beta/deviceManagement/assignmentFilters
 ```
 
 ### <a name="response"></a>响应
@@ -65,22 +65,23 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 566
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.groupPolicyPresentationValueList",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "@odata.type": "#microsoft.graph.payloadCompatibleAssignmentFilter",
+      "id": "6d189738-9738-6d18-3897-186d3897186d",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "id": "1dbb7865-7865-1dbb-6578-bb1d6578bb1d",
-      "values": [
-        {
-          "@odata.type": "microsoft.graph.keyValuePair",
-          "name": "Name value",
-          "value": "Value value"
-        }
-      ]
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "platform": "androidForWork",
+      "rule": "Rule value",
+      "roleScopeTags": [
+        "Role Scope Tags value"
+      ],
+      "payloadType": "enrollmentRestrictions"
     }
   ]
 }

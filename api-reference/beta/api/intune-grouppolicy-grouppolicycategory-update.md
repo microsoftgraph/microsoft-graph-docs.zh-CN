@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a70edcb1f05ceb19a7dbb7a65d2d4b501a724dc
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 47daa98e79f31b638ef5136d671b0c58d4fd192ac7d6f348ab6f22ad7331c58b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54168400"
 ---
 # <a name="update-grouppolicycategory"></a>更新 groupPolicyCategory
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -56,9 +56,9 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|类别名称的字符串 id 显示名称|
-|isRoot|Boolean|定义类别是否属于根类别|
-|id|String|实体的键。|
+|displayName|String|类别名称的字符串显示名称|
+|isRoot|布尔值|定义类别是否属于根类别|
+|id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 

@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6cc7b00e0220a0337547ac994b266ce951961c9
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 55c5484f482cda8d1f7f16deeebaeb81793d9389
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51151856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260857"
 ---
 # <a name="create-mobileappintentandstate"></a>创建 mobileAppIntentAndState
 
 命名空间：microsoft.graph
-
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +53,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 |:---|:---|:---|
 |id|String|对象的 UUID|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
-|userId|String|尝试注册设备的用户的标识符。|
+|userId|字符串|尝试注册设备的用户的标识符。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) 集合|租户的有效负载意图和状态列表。|
 
 
@@ -68,7 +66,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
+POST https://graph.microsoft.com/v1/users/{usersId}/mobileAppIntentAndStates
 Content-type: application/json
 Content-length: 831
 
