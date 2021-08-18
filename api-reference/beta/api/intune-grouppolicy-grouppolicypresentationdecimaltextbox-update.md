@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0bc44a9a058951e2525b2f9b6c43f3fe990d2694
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3118117719dffe8b01b979e778a855fdf1ce53fc384608a55bae184a90a0685c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51149644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153970"
 ---
 # <a name="update-grouppolicypresentationdecimaltextbox"></a>更新 groupPolicyPresentationDecimalTextBox
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,13 +54,13 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |属性|类型|说明|
 |:---|:---|:---|
-|label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|标签|字符串|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|一个无符号整数，指定小数文本框的初始值。 默认值为 1。|
-|spin|Boolean|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
+|spin|布尔值|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数，指定旋转控件更改的增量。 默认值为 1。|
-|必需|Boolean|要求在参数框中输入值。 默认值为 false。|
+|必需|布尔值|要求在参数框中输入值。 默认值为 false。|
 |minValue|Int64|一个无符号整数，指定允许的最小值。 默认值为 0。|
 |maxValue|Int64|一个无符号整数，指定允许的最大值。 默认值为 9999。|
 

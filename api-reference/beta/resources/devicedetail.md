@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3fb6b338793b77e3079922cd8c372e402488a22c
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 00859ab80f022464be57b38cc62e9ab1a6c1b5a4444f7d066ffd7c06d84a63e8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761126"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213436"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "50761126"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|浏览器|String|指示用于登录的浏览器信息。|
+|浏览器|字符串|指示用于登录的浏览器信息。|
 |deviceId|String|引用用于登录的设备的唯一 ID。|
 |displayName|String|指用于登录的设备的名称。|
 |isCompliant|Boolean|指示设备是否符合要求。|

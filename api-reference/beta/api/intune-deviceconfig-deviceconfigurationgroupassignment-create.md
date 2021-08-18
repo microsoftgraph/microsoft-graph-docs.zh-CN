@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23cddf27e1622dcf6a661f8fcbbf24f49b436aba
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8a6b1105ae2158be8478c8e54b8da49e5e2c8f0e2effdeb4b6ac42c7be9447bd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128073"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211210"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>创建 deviceConfigurationGroupAssignment
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -64,7 +64,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|String|面向设备配置的 AAD 组的 ID。|
-|excludeGroup|Boolean|指示是否应排除此组。 应包含组的默认值|
+|excludeGroup|布尔值|指示是否应排除此组。 应包含组的默认值|
 
 
 

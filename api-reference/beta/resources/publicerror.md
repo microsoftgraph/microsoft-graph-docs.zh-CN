@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: AkJo
-ms.openlocfilehash: 65a75b6eb2756b92f9da6386390fae3b254f818b
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 605999722a36952420a126b8ab80ad183c500bbfce5dfa0c671cdaed6c2e06e6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145136"
 ---
 # <a name="publicerror-resource-type"></a>publicError 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "49660084"
 |code|string| 表示错误代码。
 |详细信息|[publicErrorDetail](publicerrordetail.md) 集合|错误的详细信息。|
 |innerError|[publicInnerError](publicinnererror.md)|内部错误的详细信息。|
-|message|字符串| 针对开发人员的未本地化邮件。
+|message|字符串| 针对开发人员的非本地化邮件。
 |target|String|错误的目标值。|
 
 ## <a name="relationships"></a>关系

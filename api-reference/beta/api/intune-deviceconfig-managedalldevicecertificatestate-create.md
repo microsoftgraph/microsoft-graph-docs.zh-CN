@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f240bde656806928dd03d478acb26c73bcfe8d0
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: cc988f4d2ad4bca73aea99aa7401f506ce22fcd8ea9786261af372562f6e3cdb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51155195"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54162317"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>创建 managedAllDeviceCertificateState
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -56,13 +56,13 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |id|String|实体的键。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤销状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改撤消状态的时间|
-|managedDeviceDisplayName|String|设备显示名称|
-|userPrincipalName|String|用户主体名称|
+|managedDeviceDisplayName|字符串|设备显示名称|
+|userPrincipalName|字符串|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
-|certificateIssuerName|String|颁发者|
+|certificateIssuerName|字符串|颁发者|
 |certificateThumbprint|String|指纹|
 |certificateSerialNumber|String|序列号|
-|certificateSubjectName|String|证书主题名称|
+|certificateSubjectName|字符串|证书主题名称|
 |certificateKeyUsages|Int32|密钥用法|
 |certificateExtendedKeyUsages|String|增强型密钥使用|
 |certificateIssuanceDateTime|DateTimeOffset|发布日期|

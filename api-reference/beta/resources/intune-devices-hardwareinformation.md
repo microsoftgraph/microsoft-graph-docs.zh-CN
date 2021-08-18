@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e17df5baad3df0237218f314cdb1c5ee99f03c6
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: a1d8a94e44663bd6070d9b6f9d50a3fed7db9e22d12dcb70bc1cf9400f5342a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868174"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148055"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "51868174"
 |batterySerialNumber|String|设备当前电池的序列号|
 |batteryHealthPercentage|Int32|设备的当前电池运行状况百分比。 有效值为 0 至 100|
 |batteryChargeCycles|Int32|设备当前电池经过的充电周期数。 有效值为 0 到 2147483647|
-|isSharedDevice|Boolean|共享 iPad|
+|isSharedDevice|布尔值|共享iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) 集合|共享 Apple 设备的所有用户|
 |tpmSpecificationVersion|String|指定规范版本的字符串。|
 |operatingSystemEdition|String|指定操作系统版本的字符串。|
@@ -51,12 +51,12 @@ ms.locfileid: "51868174"
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|基于虚拟化的安全状态。 . 可取值为：`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements` 或 `other`。|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发 (LSA) 凭据保护状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
 |osBuildNumber|String|Android 设备上的操作系统内部版本号|
-|operatingSystemProductType|Int32|指定 Windows 操作系统 ProductType 的 Int。 此处的更多详细信息 https://go.microsoft.com/fwlink/?linkid=2126950 。 有效值为 0 到 2147483647|
+|operatingSystemProductType|Int32|指定操作系统 ProductType Windows的 Int。 此处的更多详细信息 https://go.microsoft.com/fwlink/?linkid=2126950 。 有效值为 0 到 2147483647|
 |ipAddressV4|String|IPAddressV4|
 |subnetAddress|String|SubnetAddress|
 |esimIdentifier|String|eSIM 标识符|
 |systemManagementBIOSVersion|String|SMBIOS 报告的 BIOS 版本|
-|tpmManufacturer|String|唯一命名 TPM 制造商的标识信息|
+|tpmManufacturer|字符串|唯一命名 TPM 制造商的标识信息|
 |tpmVersion|String|制造商指定的 TPM 版本|
 
 ## <a name="relationships"></a>关系

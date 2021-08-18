@@ -1,26 +1,26 @@
 ---
 title: edgeHomeButtonOpensCustomURL 资源类型
-description: 显示 "主页" 按钮;单击 "主页" 按钮，将加载特定的 URL。
+description: 显示"开始"按钮;单击"开始"按钮加载特定 URL。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fdf8771dec9bd27a74f3a3e0f60d2106733d5c8c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3e61160451a7e3c5d72c1cb389cbbf78aa5bd760cd127ab2435b088cb8f32b32
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199145"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209915"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>edgeHomeButtonOpensCustomURL 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-显示 "主页" 按钮;单击 "主页" 按钮，将加载特定的 URL。
+显示"开始"按钮;单击"开始"按钮加载特定 URL。
 
 
 继承自 [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)

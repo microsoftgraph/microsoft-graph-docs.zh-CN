@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 10bd4b5a9064036e6e3d40fb4ac6334f8aada1d9
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 20f740973297343e90b0258002d1de4b9ab82c02aaf2e27bb17ded121d01fc0f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51142952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159425"
 ---
 # <a name="update-userappinstallstatus"></a>更新 userAppInstallStatus
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |:---|:---|:---|
 |id|String|实体的键。|
 |userName|String|用户名。|
-|userPrincipalName|String|用户主体名称。|
+|userPrincipalName|字符串|用户主体名称。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|
 |notInstalledDeviceCount|Int32|未安装设备的计数。|
