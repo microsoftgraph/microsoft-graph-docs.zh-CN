@@ -5,12 +5,12 @@ author: isaiahwilliams
 localization_priority: Normal
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 4bf69df3ea977391a7f504f64d683e9ace789b65
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: c46250a275581068b031b5a6f9357543d93821a48e36950353863897503c8869
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209586"
 ---
 # <a name="tenantrelationship-resource-type"></a>tenantRelationship 资源类型
 

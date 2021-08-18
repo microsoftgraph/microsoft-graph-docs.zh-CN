@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4794efda5df6bcb4904afe297704c86379aaa8ed
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 733478d2624089ae2b35011348c1c9ce84657315513b5d39848f1a7745eca2ae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227370"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>configurationManagerClientHealthState 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "49231029"
 |:---|:---|:---|
 |state|[configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md)|当前配置管理器客户端状态。 可取值为：`unknown`、`installed`、`healthy`、`installFailed`、`updateFailed`、`communicationError`。|
 |errorCode|Int32|失败状态的错误代码。|
-|lastSyncDateTime|DateTimeOffset|与 configuration manager 管理点进行上一次同步的日期/时间。|
+|lastSyncDateTime|DateTimeOffset|上次与配置管理器管理点同步的日期/时间。|
 
 ## <a name="relationships"></a>关系
 无

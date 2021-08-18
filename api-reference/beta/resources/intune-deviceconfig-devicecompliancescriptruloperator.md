@@ -1,26 +1,26 @@
 ---
 title: deviceComplianceScriptRulOperator 枚举类型
-description: 规则运算符。
+description: 规则的运算符。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20046651a39e0ffd6826f49043c0f71cb80b5ccb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a5d43040b2c76a03ab4a04fc55dfc77a00085676e1cccd56eb044616962f5ff8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160198"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231024"
 ---
 # <a name="devicecompliancescriptruloperator-enum-type"></a>deviceComplianceScriptRulOperator 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-规则运算符。
+规则的运算符。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
@@ -35,7 +35,7 @@ ms.locfileid: "50160198"
 |between|7 |Between 运算符。|
 |notBetween|8 |NotBetween 运算符。|
 |greaterEquals|9 |GreaterEquals 运算符。|
-|lessEquals|10  |LessEquals 运算符。|
+|lessEquals|10 |LessEquals 运算符。|
 |dayTimeBetween|11 |DayTimeBetween 运算符。|
 |beginsWith|12 |BeginsWith 运算符。|
 |notBeginsWith|13 |NotBeginsWith 运算符。|

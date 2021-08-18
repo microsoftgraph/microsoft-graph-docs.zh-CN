@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae2fd38c576d2d85f4d07137a17e3a20be78ccff
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: eea147f3e9382828c906887bbf87e17866b7b3db2aca3375dd1a34c915554f9b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159383"
 ---
 # <a name="create-managedebookcategory"></a>创建 managedEBookCategory
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|String|电子图书类别的名称。|
+|displayName|字符串|电子图书类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|ManagedEBookCategory 上次修改的日期和时间。|
 
 

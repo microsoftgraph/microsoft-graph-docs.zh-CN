@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a328938975b67ebce005f3cee05fb753f051ad49
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 65de2d32ef56117c410909468302c4e841c760c4
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665509"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253479"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>restrictedAppsViolation 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "52665509"
 
 每个用户的设备违反受限制的应用配置文件
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 restrictedAppsViolations](../api/intune-deviceconfig-restrictedappsviolation-list.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) 集合|列出 [restrictedAppsViolation 对象的属性和](../resources/intune-deviceconfig-restrictedappsviolation.md) 关系。|
-|[获取 restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-get.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|读取 [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) 对象的属性和关系。|
+|[获取 restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-get.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|读取 [restrictedAppsViolation 对象的属性和](../resources/intune-deviceconfig-restrictedappsviolation.md) 关系。|
 |[创建 restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-create.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|创建新的 [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) 对象。|
 |[删除 restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-delete.md)|无|删除 [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)。|
 |[更新 restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-update.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|更新 [restrictedAppsViolation 对象](../resources/intune-deviceconfig-restrictedappsviolation.md) 的属性。|
@@ -35,13 +35,13 @@ ms.locfileid: "52665509"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
-|userId|String|用户唯一标识符，必须为 Guid|
+|userId|字符串|用户唯一标识符，必须为 Guid|
 |userName|String|用户名|
 |managedDeviceId|String|托管设备唯一标识符，必须为 Guid|
 |deviceName|String|设备名称|
 |deviceConfigurationId|String|设备配置文件的唯一标识符，必须为 Guid|
 |deviceConfigurationName|String|设备配置文件名称|
-|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`androidAOSP`、`all`。|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`androidAOSP`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) 集合|违反的受限应用列表|
 

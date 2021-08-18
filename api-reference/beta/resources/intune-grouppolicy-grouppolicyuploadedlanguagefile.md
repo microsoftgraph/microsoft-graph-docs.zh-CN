@@ -1,34 +1,34 @@
 ---
 title: groupPolicyUploadedLanguageFile 资源类型
-description: 实体表示管理员上载的 ADML (管理模板语言) XML 文件。
+description: 实体表示管理员上载 (XML) 一种 ADML 管理模板语言。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf5bef8faadac012df13a8a31cfaac3a5dc94ed2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c77b9f6fab6bbd1127aff4abc0176a9298f6e6a2955f69a2781c9f22f63069f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49298104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122360"
 ---
 # <a name="grouppolicyuploadedlanguagefile-resource-type"></a>groupPolicyUploadedLanguageFile 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-实体表示管理员上载的 ADML (管理模板语言) XML 文件。
+实体表示管理员上载 (XML) 一种 ADML 管理模板语言。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|fileName|String|上传的 ADML 文件的文件名。|
-|languageCode|字符串|上传的 ADML 文件的语言代码。|
-|content|Binary|已上载的 ADML 文件的内容。|
-|id|字符串|实体的键。|
+|fileName|String|已上载的 ADML 文件的文件名。|
+|languageCode|字符串|上载的 ADML 文件的语言代码。|
+|content|二进制|上载的 ADML 文件的内容。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 488c71fd7f242604a2bcd8bbdcc2ca7f526bd4d7
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: a7fa81700aa71a076da45b7703f1f638987a4f1b9aa107409bf8fb4934b90d1d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666843"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182908"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluedefinitiontemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueDefinitionTemplate 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "52666843"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|minValue|Int32|整数设置最小值。 有效值 -2147483648 到 2147483647|
-|maxValue|Int32|整数设置最大值。 有效值 -2147483648 到 2147483647|
+|minValue|Int32|整数设置最小值。 有效值 -2147483648 2147483647|
+|maxValue|Int32|整数设置最大值。 有效值 -2147483648 2147483647|
 
 ## <a name="relationships"></a>关系
 无
